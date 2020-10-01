@@ -6,7 +6,8 @@
     "plugin:prettier/recommended",
     "prettier/standard",
     "prettier/react",
-    "plugin:@typescript-eslint/eslint-recommended"
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:jsx-a11y/recommended"
   ],
   "env": {
     "node": true
@@ -23,6 +24,9 @@
       "version": "16"
     }
   },
+  "plugins": [
+    "jsx-a11y"
+  ],
   "rules": {
     "space-before-function-paren": 0,
     "react/prop-types": 0,
