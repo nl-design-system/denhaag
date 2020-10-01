@@ -1,20 +1,30 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# nlds-react-components
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+> A library of React components for the Design System of The Netherlands
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+[![NPM](https://img.shields.io/npm/v/nlds-react-components.svg)](https://www.npmjs.com/package/nlds-react-components) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+## Install
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+```bash
+npm install --save nlds-react-components
+```
+
+## Usage
+
+```tsx
+import React, { Component } from 'react'
+
+import MyComponent from 'nlds-react-components'
+import 'nlds-react-components/dist/index.css'
+
+class Example extends Component {
+  render() {
+    return <MyComponent />
+  }
+}
+```
+
+## License
+
+MIT © [jeroen-rysst](https://github.com/jeroen-rysst)
