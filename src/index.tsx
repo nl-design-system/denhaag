@@ -1,10 +1,8 @@
-import * as React from 'react'
-import styles from './styles.module.css'
+import { Button as nldsButton } from './components/Button/Button'
+import { ButtonProps as nldsButtonProps } from './components/Button/Button'
 
-interface Props {
-  text: string
-}
-
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+/**
+ * Primary UI component for user interaction
+ */
+export const Button = nldsButton;
+export type ButtonProps = nldsButtonProps;
