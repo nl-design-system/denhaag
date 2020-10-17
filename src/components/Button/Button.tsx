@@ -9,24 +9,24 @@ export interface ButtonProps {
   /**
    * Color for the component
    */
-  color: "primary" | "secondary" | "default" | undefined;
+  color?: 'primary' | 'secondary' | 'default';
   /**
    * Disables Button
    */
-  disabled: true | undefined;
+  disabled?: boolean;
   /** 
    * Button variant
    */
-  variant: "outlined" | "contained" | "text" | undefined;
+  variant?: 'outlined' | 'contained' | 'text';
   children: ReactNode;
 }
 
-export { Button };
+//export { Button };
 
 /**
  * Primary UI component for user interaction
  */ 
-const Button:React.FC<ButtonProps> = ({
+export const Button: React.FC<ButtonProps> = ({
   color,
   variant,
   onClick,

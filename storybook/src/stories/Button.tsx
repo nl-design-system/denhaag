@@ -1,48 +1,40 @@
-import React from 'react';
-import './button.css';
+import { Button as MaterialButton } from "@material-ui/core";
+import React, { ReactNode } from "react";
 
 export interface ButtonProps {
   /**
-   * Is this the principal call to action on the page?
-   */
-  primary?: boolean;
-  /**
-   * What background color to use
-   */
-  backgroundColor?: string;
-  /**
-   * How large should the button be?
-   */
-  size?: 'small' | 'medium' | 'large';
-  /**
-   * Button contents
-   */
-  label: string;
-  /**
-   * Optional click handler
+   * Simple click handler
    */
   onClick?: () => void;
+  /**
+   * Color for the component
+   */
+  color?: 'primary' | 'secondary' | 'default';
+  /**
+   * Disables Button
+   */
+  disabled?: boolean;
+  /** 
+   * Button variant
+   */
+  variant?: 'outlined' | 'contained' | 'text';
+  children: ReactNode;
 }
 
 /**
  * Primary UI component for user interaction
  */
 export const Button: React.FC<ButtonProps> = ({
-  primary = false,
-  size = 'medium',
-  backgroundColor,
-  label,
+  color = "default",
+  variant = "contained",
+  onClick,
+  disabled = false,
+  children,
   ...props
 }) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
-    <button
-      type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-      style={{ backgroundColor }}
-      {...props}
-    >
-      {label}
-    </button>
+    <MaterialButton onClick={onClick} variant={variant} color={color} disabled={disabled} {...props}>
+      {children}
+    </MaterialButton>
   );
 };
