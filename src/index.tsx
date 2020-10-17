@@ -1,5 +1,4 @@
-import { Button, ButtonProps } from './components/Button/Button';
-//import { Button } from '@material-ui/core'
+import { Button, ButtonProps } from './components/Button';
 
 /**
  * Primary UI component for user interaction
