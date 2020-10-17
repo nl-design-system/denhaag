@@ -1,8 +1,7 @@
-import { Button as nldsButton } from './components/Button/Button'
-import { ButtonProps as nldsButtonProps } from './components/Button/Button'
+import { Button, ButtonProps } from './components/Button/Button';
+//import { Button } from '@material-ui/core'
 
 /**
  * Primary UI component for user interaction
  */
-export const Button = nldsButton;
-export type ButtonProps = nldsButtonProps;
+export { Button, ButtonProps };

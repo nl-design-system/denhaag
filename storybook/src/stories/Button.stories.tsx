@@ -3,15 +3,29 @@ import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 import { action } from '@storybook/addon-actions';
 import { Button, ButtonProps } from 'nlds-react-components';
-
+//import { Button, ButtonProps } from './Button';
 
 export default {
-  title: 'Example/Button',
+  title: 'Components/Button',
   component: Button,
 } as Meta;
 
 const Template: Story<ButtonProps> = (args: any) => <Button {...args}>Button</Button>;
 
+/**
+ * Default button
+ */
+export const Default = Template.bind({});
+Default.args = {
+  onClick: () => { action('Primary button clicked') },
+  color: 'default',
+  variant: 'contained',
+  disabled: undefined,
+};
+
+/**
+ * Primary Button
+ */
 export const Primary : Story<ButtonProps> = Template.bind({});
 Primary.args = {
   onClick: () => {action('Primary button clicked')},
@@ -19,9 +33,23 @@ Primary.args = {
   variant: 'contained',
 };
 
+/**
+ * Secondary Button
+ */
 export const Secondary: Story<ButtonProps> = Template.bind({});
 Secondary.args = {
   onClick: () => {action('Secondary button clicked')},
   color: 'secondary',
   variant: 'contained',
+};
+
+/**
+ * Disabled Button
+ */
+export const Disabled: Story<ButtonProps> = Template.bind({});
+Disabled.args = {
+  onClick: () => { action('Secondary button clicked') },
+  color: 'default',
+  variant: 'contained',
+  disabled: true,
 };
