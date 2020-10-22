@@ -12,14 +12,13 @@ export default {
 const Template: Story<ButtonProps> = (args: any) => <Button {...args}>Button</Button>;
 
 /**
- * Default button
+ * Default Button
  */
 export const Default = Template.bind({});
 Default.args = {
-  onClick: () => { action('Primary button clicked') },
+  onClick: () => { action('Default button clicked') },
   color: 'default',
   variant: 'contained',
-  disabled: false,
 };
 
 /**
@@ -29,7 +28,7 @@ export const Primary : Story<ButtonProps> = Template.bind({});
 Primary.args = {
   onClick: () => {action('Primary button clicked')},
   color: 'primary',
-  variant: 'contained',
+  variant: 'contained'
 };
 
 /**
@@ -47,7 +46,7 @@ Secondary.args = {
  */
 export const Disabled: Story<ButtonProps> = Template.bind({});
 Disabled.args = {
-  onClick: () => { action('Secondary button clicked') },
+  onClick: () => {action('Secondary button clicked')},
   color: 'default',
   variant: 'contained',
   disabled: true,
