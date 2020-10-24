@@ -3,13 +3,13 @@ import React, { ReactElement } from "react";
 
 export interface FormControlLabelProps {
   /**
-  * A control instance, it can be a Radio, a Switch or a Checkbox
-  */
-  control: ReactElement;
+   * A control instance, it can be a Radio, a Switch or a Checkbox
+   */
+  control: ReactElement
   /**
    * The label to display for the component
    */
-  label: string;
+  label: string
 }
 
 /**
@@ -19,10 +19,8 @@ export const FormControlLabel: React.FC<FormControlLabelProps> = ({
   control,
   label
 }) => {
-  return (
-    <MaterialFormControlLabel control={control} label={label}/>
-  )
-};
+  return <MaterialFormControlLabel control={control} label={label} />
+}
 
 /**
  * Default export for FormControlLabel
