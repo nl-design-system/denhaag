@@ -3,15 +3,15 @@ import React from "react";
 
 export interface CheckboxProps {
     /**
-     * If true the component is checked.
+     * If true the Checkbox is checked.
      */
     checked?: boolean;
     /**
-     * The color of the component.
+     * Color for the component.
      */
     color?: 'default' | 'primary' | 'secondary';
     /**
-     * If true, the component will be disabled
+     * Disables Checkbox
      */
     disabled?: boolean;
 }
