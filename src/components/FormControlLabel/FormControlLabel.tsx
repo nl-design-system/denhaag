@@ -1,5 +1,5 @@
 import { FormControlLabel  as MaterialFormControlLabel } from "@material-ui/core";
-import React, { ReactNode, ReactElement } from "react";
+import React, { ReactElement } from "react";
 
 export interface FormControlLabelProps {
   onClick?: () => void;
