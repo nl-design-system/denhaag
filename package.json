@@ -63,7 +63,8 @@
     "react-is": "^16.13.1",
     "react-scripts": "^3.4.1",
     "storybook": "^6.0.26",
-    "typescript": "^3.7.5"
+    "typescript": "^3.7.5",
+    "lerna": "^3.22.1"
   },
   "files": [
     "dist"
