@@ -13,7 +13,7 @@ export interface FormControlLabelProps {
 }
 
 /**
- * FormcontrolLabels allow the developer to add a label to some components
+ * FormControlLabels allow the developer to add a label to some components
  */
 export const FormControlLabel: React.FC<FormControlLabelProps> = ({
   control,
