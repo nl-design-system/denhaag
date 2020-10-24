@@ -2,8 +2,13 @@ import { FormControlLabel  as MaterialFormControlLabel } from "@material-ui/core
 import React, { ReactElement } from "react";
 
 export interface FormControlLabelProps {
-  onClick?: () => void;
+  /**
+  * A control instance, it can be a Radio, a Switch or a Checkbox
+  */
   control: ReactElement;
+  /**
+   * The label to display for the component
+   */
   label: string;
 }
 
