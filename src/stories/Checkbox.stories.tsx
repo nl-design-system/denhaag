@@ -3,13 +3,18 @@ import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 import { action } from '@storybook/addon-actions';
 import { Checkbox, CheckboxProps } from '../components/Checkbox';
+import { FormControlLabel } from '../components/FormControlLabel';
 
 export default {
   title: 'Components/Checkbox',
   component: Checkbox,
 } as Meta;
 
-const Template: Story<CheckboxProps> = (args: any) => <Checkbox {...args}>Checkbox</Checkbox>;
+const Template: Story<CheckboxProps> = (args: any) =>
+  <FormControlLabel
+    label="Checkbox"
+    control={<Checkbox {...args}/>}
+  />;
 
 /**
  * Default Checkbox
