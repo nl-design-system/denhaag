@@ -1,10 +1,10 @@
-import React, { ElementType } from 'react'
+import React, { ElementType, ReactElement } from 'react'
 import MaterialGridList from '@material-ui/core/GridList'
 
 export interface GridListProps {
   cellHeight: number | 'auto'
 
-  children: GridListTileComponent
+  children: ReactElement
 
   classes: object
 
