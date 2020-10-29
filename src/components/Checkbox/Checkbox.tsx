@@ -34,3 +34,8 @@ export const Checkbox: React.FC<CheckboxProps> = ({
       <MaterialCheckbox checked={checked} color={color} disabled={disabled} onChange={onChange} {...props} />
     );
 };
+
+/**
+ * Default export for Checkbox
+ */
+export default Checkbox;

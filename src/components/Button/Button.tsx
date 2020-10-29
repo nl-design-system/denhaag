@@ -38,3 +38,8 @@ export const Button: React.FC<ButtonProps> = ({
     </MaterialButton>
   );
 };
+
+/**
+ * Default export for Button
+ */
+export default Button;
