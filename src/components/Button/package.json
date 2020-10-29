@@ -1,6 +1,9 @@
 {
   "name": "nlds-react-components-button",
   "version": "0.1.0",
+  "description": "A Button component",
+  "author": "Municipality of The Hague",
+  "license": "MIT",
   "dependencies": {
     "@material-ui/core": "^4"
   }
