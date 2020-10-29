@@ -1,6 +1,6 @@
 import { Button, ButtonProps } from './components/Button/Button';
-import { Checkbox } from './components/Checkbox/Checkbox';
-import { FormControlLabel } from './components/FormControlLabel/FormControlLabel'
+import { Checkbox, CheckboxProps } from './components/Checkbox/Checkbox';
+import { FormControlLabel, FormControlLabelProps } from './components/FormControlLabel/FormControlLabel'
 
 /**
  * Primary UI component for user interaction
@@ -8,5 +8,7 @@ import { FormControlLabel } from './components/FormControlLabel/FormControlLabel
 export { Button,
           ButtonProps,
           Checkbox,
-          FormControlLabel
+          CheckboxProps,
+          FormControlLabel,
+          FormControlLabelProps
         };
