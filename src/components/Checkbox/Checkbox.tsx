@@ -14,6 +14,10 @@ export interface CheckboxProps {
      * Disables Checkbox
      */
     disabled?: boolean;
+    /**
+     * Callback fired when the state is changed.
+     */
+    onChange?: () => void;
 }
 
 /**
@@ -23,9 +27,10 @@ export const Checkbox: React.FC<CheckboxProps> = ({
     checked,
     color = "default",
     disabled,
+    onChange,
     ...props
 }) => {
     return (
-        <MaterialCheckbox color={color} disabled={disabled} checked={checked} {...props} />
+      <MaterialCheckbox checked={checked} color={color} disabled={disabled} onChange={onChange} {...props} />
     );
 };
