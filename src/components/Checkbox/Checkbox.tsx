@@ -1,19 +1,23 @@
-import { Checkbox as MaterialCheckbox } from "@material-ui/core";
+import MaterialCheckbox from "@material-ui/core/Checkbox";
 import React from "react";
 
 export interface CheckboxProps {
     /**
-     * If true the component is checked.
+     * If true the Checkbox is checked.
      */
     checked?: boolean;
     /**
-     * The color of the component.
+     * Color for the component.
      */
     color?: 'default' | 'primary' | 'secondary';
     /**
-     * If true, the component will be disabled
+     * Disables Checkbox
      */
     disabled?: boolean;
+    /**
+     * Callback fired when the state is changed.
+     */
+    onChange?: () => void;
 }
 
 /**
@@ -23,9 +27,15 @@ export const Checkbox: React.FC<CheckboxProps> = ({
     checked,
     color = "default",
     disabled,
+    onChange,
     ...props
 }) => {
     return (
-        <MaterialCheckbox color={color} disabled={disabled} checked={checked} {...props} />
+      <MaterialCheckbox checked={checked} color={color} disabled={disabled} onChange={onChange} {...props} />
     );
 };
+
+/**
+ * Default export for Checkbox
+ */
+export default Checkbox;

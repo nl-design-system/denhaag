@@ -1,4 +1,4 @@
-import { FormControlLabel  as MaterialFormControlLabel } from "@material-ui/core";
+import MaterialFormControlLabel from "@material-ui/core/FormControlLabel";
 import React, { ReactElement } from "react";
 
 export interface FormControlLabelProps {
@@ -13,7 +13,7 @@ export interface FormControlLabelProps {
 }
 
 /**
- * FormcontrolLabels allow the developer to add a label to some components
+ * FormControlLabels allow the developer to add a label to some components
  */
 export const FormControlLabel: React.FC<FormControlLabelProps> = ({
   control,
@@ -23,3 +23,8 @@ export const FormControlLabel: React.FC<FormControlLabelProps> = ({
     <MaterialFormControlLabel control={control} label={label}/>
   )
 };
+
+/**
+ * Default export for FormControlLabel
+ */
+export default FormControlLabel;
