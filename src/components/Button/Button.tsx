@@ -1,4 +1,4 @@
-import { Button as MaterialButton } from "@material-ui/core";
+import MaterialButton from "@material-ui/core/Button";
 import React, { ReactNode } from "react";
 
 export interface ButtonProps {

@@ -1,4 +1,4 @@
-import { Checkbox as MaterialCheckbox } from "@material-ui/core";
+import MaterialCheckbox from "@material-ui/core/Checkbox";
 import React from "react";
 
 export interface CheckboxProps {
