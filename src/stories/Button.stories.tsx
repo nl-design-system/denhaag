@@ -1,7 +1,9 @@
 import React from 'react'
 // also exported from '@storybook/react' if you can deal with breaking changes in 6.1
 import { Story, Meta } from '@storybook/react/types-6-0'
-import Button, { ButtonProps } from '../components/Button/Button'
+import { action } from '@storybook/addon-actions'
+import { Button } from '..'
+import { ButtonProps } from '../components/Button/Button'
 
 export default {
   title: 'Components/Button',
@@ -29,6 +31,9 @@ Default.args = {
  */
 export const Primary: Story<ButtonProps> = Template.bind({})
 Primary.args = {
+  onClick: () => {
+    action('Primary button clicked')
+  },
   color: 'primary',
   variant: 'contained'
 }
@@ -38,6 +43,9 @@ Primary.args = {
  */
 export const Secondary: Story<ButtonProps> = Template.bind({})
 Secondary.args = {
+  onClick: () => {
+    action('Secondary button clicked')
+  },
   color: 'secondary',
   variant: 'contained'
 }
@@ -47,6 +55,9 @@ Secondary.args = {
  */
 export const Disabled: Story<ButtonProps> = Template.bind({})
 Disabled.args = {
+  onClick: () => {
+    action('Secondary button clicked')
+  },
   color: 'default',
   variant: 'contained',
   disabled: true
