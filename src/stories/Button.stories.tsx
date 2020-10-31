@@ -34,8 +34,29 @@ Primary.args = {
 export const Secondary: Story<ButtonProps> = Template.bind({});
 Secondary.args = {
   color: 'secondary',
-  variant: 'contained',
-};
+/**
+ * Small button
+ */
+export const Small: Story<ButtonProps> = Template.bind({})
+Small.args = {
+  size: 'small'
+}
+
+/**
+ * Medium button
+ */
+export const Medium: Story<ButtonProps> = Template.bind({})
+Medium.args = {
+  size: 'medium'
+}
+
+/**
+ * Large button
+ */
+export const Large: Story<ButtonProps> = Template.bind({})
+Large.args = {
+  size: 'large'
+}
 
 /**
  * Disabled Button

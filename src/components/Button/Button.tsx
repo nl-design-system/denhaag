@@ -11,6 +11,9 @@ export interface ButtonProps {
    */
   color?: 'primary' | 'secondary' | 'default';
   /**
+   * Size of the component
+   */
+  size?: 'small' | 'medium' | 'large'
    * Disables Button
    */
   disabled?: boolean;
@@ -28,16 +31,24 @@ export const Button: React.FC<ButtonProps> = ({
   color = "default",
   variant = "contained",
   onClick,
+  size,
   disabled = false,
   children,
   ...props
 }) => {
   return (
-    <MaterialButton onClick={onClick} variant={variant} color={color} disabled={disabled} {...props}>
+    <MaterialButton
+      onClick={onClick}
+      variant={variant}
+      color={color}
+      size={size}
+      disabled={disabled}
+      {...props}
+    >
       {children}
     </MaterialButton>
-  );
-};
+  )
+}
 
 /**
  * Default export for Button
