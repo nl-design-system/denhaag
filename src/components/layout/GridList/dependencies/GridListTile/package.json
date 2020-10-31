@@ -1,0 +1,7 @@
+{
+  "name": "nlds-react-components-gridlisttile",
+  "version": "0.1.0",
+  "dependencies": {
+    "@material-ui/core": "^4.11.0"
+  }
+}
