@@ -34,6 +34,23 @@ Primary.args = {
 export const Secondary: Story<ButtonProps> = Template.bind({});
 Secondary.args = {
   color: 'secondary',
+
+/**
+ * Outlined Button
+ */
+export const Outlined: Story<ButtonProps> = Template.bind({})
+Outlined.args = {
+  variant: 'outlined'
+}
+
+/**
+ * Text button
+ */
+export const Text: Story<ButtonProps> = Template.bind({})
+Text.args = {
+  variant: 'text'
+}
+
 /**
  * Small button
  */
