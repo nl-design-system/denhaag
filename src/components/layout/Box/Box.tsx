@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import React, { ElementType, ReactElement } from 'react'
 import MaterialBox from '@material-ui/core/Box'
 
 export interface BoxProps {
@@ -11,6 +11,11 @@ export interface BoxProps {
    * A boolean indicating whether the Box element should recycle it's children.
    */
   clone: boolean
+
+  /**
+   * The component used for the root node. Either a string to use a HTMl element or a component.
+   */
+  component: ElementType
 }
 
 /**
@@ -19,5 +24,11 @@ export interface BoxProps {
  * @constructor Constructs an instance of Box.
  */
 export const Box: React.FC<BoxProps> = (props: BoxProps) => {
-  return <MaterialBox clone={props.clone}>{props.children}</MaterialBox>
-}
+  return (
+    <MaterialBox component={props.component} clone={props.clone}>
+      {props.children}
+    </MaterialBox>
+  )
+};
+
+export default Box;

@@ -5,7 +5,7 @@ export interface GridListTileProps {
   /**
    * Can take any element as child, but preferably an image.
    */
-  children: ReactElement
+  children: ReactElement[] | ReactElement
 
   /**
    * Overrides or extends the styles applied to the component.

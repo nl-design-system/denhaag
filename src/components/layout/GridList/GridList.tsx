@@ -15,7 +15,7 @@ export interface GridListProps {
   /**
    * Overrides or extends the styles applied to the component.
    */
-  classes: object
+  classes?: object
 
   /**
    * Number of columns.
@@ -34,7 +34,7 @@ export interface GridListProps {
 }
 
 /**
- * Grid List displays a collection of images in n organised grid.
+ * Grid List displays a collection of images in an organised grid.
  * @param props The properties of the GridList.
  * @constructor Constructs an instance of GridList.
  */
