@@ -35,12 +35,10 @@ export interface ContainerProps {
 
 /**
  * The container allows developers to center content horizontally.
- * @param props the properties of the ContainerComponent.
- * @constructor Constructs an instance of ContainerComponent.
+ * @param props the properties of the Container.
+ * @constructor Constructs an instance of Container.
  */
-export const ContainerComponent: React.FC<ContainerProps> = (
-  props: ContainerProps
-) => {
+export const Container: React.FC<ContainerProps> = (props: ContainerProps) => {
   return (
     <MaterialContainer
       classes={props.classes}
