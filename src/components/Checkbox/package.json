@@ -1,0 +1,11 @@
+{
+  "name": "nlds-react-components-checkbox",
+  "version": "0.1.0",
+  "description": "A Checkbox component",
+  "author": "Municipality of The Hague",
+  "license": "MIT",
+  "dependencies": {
+    "@material-ui/core": "^4",
+    "nlds-react-components-formcontrollabel": "^0.1"
+  }
+}
