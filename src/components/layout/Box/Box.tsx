@@ -29,6 +29,6 @@ export const Box: React.FC<BoxProps> = (props: BoxProps) => {
       {props.children}
     </MaterialBox>
   )
-};
+}
 
-export default Box;
+export default Box

@@ -1,5 +1,5 @@
-import MaterialButton from "@material-ui/core/Button";
-import React, { ReactNode } from "react";
+import MaterialButton from '@material-ui/core/Button'
+import React, { ReactNode } from 'react'
 
 export interface ButtonProps {
   /**
@@ -42,13 +42,10 @@ export const Button: React.FC<ButtonProps> = ({
     >
       {children}
     </MaterialButton>
-  );
-};
+  )
+}
 
 /**
  * Default export for Button
  */
-export default Button;
-
-  )
-}
+export default Button

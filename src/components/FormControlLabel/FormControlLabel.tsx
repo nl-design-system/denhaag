@@ -1,5 +1,5 @@
-import MaterialFormControlLabel from "@material-ui/core/FormControlLabel";
-import React, { ReactElement } from "react";
+import MaterialFormControlLabel from '@material-ui/core/FormControlLabel'
+import React, { ReactElement } from 'react'
 
 export interface FormControlLabelProps {
   /**
@@ -25,4 +25,4 @@ export const FormControlLabel: React.FC<FormControlLabelProps> = ({
 /**
  * Default export for FormControlLabel
  */
-export default FormControlLabel;
+export default FormControlLabel
