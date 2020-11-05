@@ -47,3 +47,5 @@ export const GridListTile: React.FC<GridListTileProps> = (
     </MaterialGridListTile>
   )
 }
+
+export default GridListTile

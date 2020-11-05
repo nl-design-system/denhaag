@@ -51,3 +51,5 @@ export const GridList: React.FC<GridListProps> = (props: GridListProps) => {
     </MaterialGridList>
   )
 }
+
+export default GridList

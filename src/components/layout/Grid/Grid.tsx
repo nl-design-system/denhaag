@@ -113,3 +113,5 @@ export const Grid: React.FC<GridProps> = (props: GridProps) => {
     </MaterialGrid>
   )
 }
+
+export default Grid

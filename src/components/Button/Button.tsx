@@ -44,3 +44,5 @@ export const Button: React.FC<ButtonProps> = ({
     </MaterialButton>
   )
 }
+
+export default Button

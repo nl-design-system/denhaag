@@ -21,3 +21,5 @@ export const FormControlLabel: React.FC<FormControlLabelProps> = ({
 }) => {
   return <MaterialFormControlLabel control={control} label={label} />
 }
+
+export default FormControlLabel

@@ -51,3 +51,5 @@ export const Container: React.FC<ContainerProps> = (props: ContainerProps) => {
     </MaterialContainer>
   )
 }
+
+export default Container
