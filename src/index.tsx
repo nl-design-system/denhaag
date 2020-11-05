@@ -8,6 +8,7 @@ import {
   FormControlLabel,
   FormControlLabelProps
 } from './components/FormControlLabel/FormControlLabel'
+import { Hidden } from './components/layout/Hidden/Hidden'
 
 /**
  * Primary UI component for user interaction
@@ -22,5 +23,6 @@ export {
   Box,
   Container,
   Grid,
-  GridList
+  GridList,
+  Hidden
 }

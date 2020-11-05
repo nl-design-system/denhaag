@@ -19,7 +19,7 @@ export interface HiddenProps {
   initialWidth: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
 
   /**
-   * Hide te given breakpoint(s).
+   * Hide the given breakpoint(s).
    */
   only:
     | 'xs'
@@ -33,14 +33,41 @@ export interface HiddenProps {
    * If true, screens of that size and smaller will be hidden.
    */
   lgDown: boolean
+  /**
+   * If true, screens of that size and smaller will be hidden.
+   */
   lgUp: boolean
+  /**
+   * If true, screens of that size and smaller will be hidden.
+   */
   mdDown: boolean
+  /**
+   * If true, screens of that size and smaller will be hidden.
+   */
   mdUp: boolean
+  /**
+   * If true, screens of that size and smaller will be hidden.
+   */
   smDown: boolean
+  /**
+   * If true, screens of that size and smaller will be hidden.
+   */
   smUp: boolean
+  /**
+   * If true, screens of that size and smaller will be hidden.
+   */
   xlDown: boolean
+  /**
+   * If true, screens of that size and smaller will be hidden.
+   */
   xlUp: boolean
+  /**
+   * If true, screens of that size and smaller will be hidden.
+   */
   xsDown: boolean
+  /**
+   * If true, screens of that size and smaller will be hidden.
+   */
   xsUp: boolean
 }
 
