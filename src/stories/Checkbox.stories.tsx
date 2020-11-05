@@ -1,50 +1,48 @@
-import React from 'react';
+import React from 'react'
 // also exported from '@storybook/react' if you can deal with breaking changes in 6.1
-import { Story, Meta } from '@storybook/react/types-6-0';
-import { Checkbox, CheckboxProps } from '../components/Checkbox/Checkbox';
-import { FormControlLabel } from '../components/FormControlLabel/FormControlLabel';
+import { Story, Meta } from '@storybook/react/types-6-0'
+import Checkbox, { CheckboxProps } from '../components/Checkbox/Checkbox'
+import { FormControlLabel } from '../components/FormControlLabel/FormControlLabel'
 
 export default {
   title: 'Components/Checkbox',
-  component: Checkbox,
-} as Meta;
+  component: Checkbox
+} as Meta
 
-const Template: Story<CheckboxProps> = (args: any) =>
-  <FormControlLabel
-    label="Checkbox"
-    control={<Checkbox {...args}/>}
-  />;
+const Template: Story<CheckboxProps> = (args: any) => (
+  <FormControlLabel label='Checkbox' control={<Checkbox {...args} />} />
+)
 
 /**
  * Default Checkbox
  */
-export const Default : Story<CheckboxProps> = Template.bind({});
+export const Default: Story<CheckboxProps> = Template.bind({})
 Default.args = {
   disabled: false
-};
+}
 
 /**
  * Primary Checkbox
  */
-export const Primary : Story<CheckboxProps> = Template.bind({});
+export const Primary: Story<CheckboxProps> = Template.bind({})
 Primary.args = {
   color: 'primary',
-  disabled: false,
-};
+  disabled: false
+}
 
 /**
  * Secondary Checkbox
  */
-export const Secondary: Story<CheckboxProps> = Template.bind({});
+export const Secondary: Story<CheckboxProps> = Template.bind({})
 Secondary.args = {
   color: 'secondary',
-  disabled: false,
-};
+  disabled: false
+}
 
 /**
  * Disabled Checkbox
  */
-export const Disabled : Story<CheckboxProps> = Template.bind({});
+export const Disabled: Story<CheckboxProps> = Template.bind({})
 Disabled.args = {
-  disabled: true,
-};
+  disabled: true
+}
