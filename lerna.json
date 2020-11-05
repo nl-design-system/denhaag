@@ -2,7 +2,7 @@
   "npmClient": "yarn",
   "packages": [
     "src/components/*",
-    "src/components/layout/*",
+    "src/components/*/*",
     "src/components"
   ],
   "useWorkspaces": true,
