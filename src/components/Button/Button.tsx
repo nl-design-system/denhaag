@@ -11,6 +11,11 @@ export interface ButtonProps {
    */
   color?: 'primary' | 'secondary' | 'default'
   /**
+   * The url to link to when the button is clicked.
+   * If defined, an a element will be used as the root node.
+   */
+  href?: string
+  /**
    * Size of the component
    */
   size?: 'small' | 'medium' | 'large'
@@ -33,6 +38,7 @@ export const Button: React.FC<ButtonProps> = ({
   variant = 'contained',
   onClick,
   size,
+  href,
   disabled = false,
   children,
   ...props
@@ -43,6 +49,7 @@ export const Button: React.FC<ButtonProps> = ({
       variant={variant}
       color={color}
       size={size}
+      href={href}
       disabled={disabled}
       {...props}
     >
