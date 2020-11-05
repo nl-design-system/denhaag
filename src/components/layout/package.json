@@ -5,10 +5,9 @@
   "author": "Municipality of The Hague",
   "license": "MIT",
   "dependencies": {
-    "@material-ui/core": "^4.11.0",
-    "nlds-react-components-box": "^0.1",
-    "nlds-react-components-container": "^0.1",
-    "nlds-react-components-grid": "^0.1",
-    "nlds-react-components-gridlist": "^0.1"
+        "nlds-react-components-box": "^0.1.0",
+        "nlds-react-components-container": "^0.1.0",
+        "nlds-react-components-grid": "^0.1.0",
+        "nlds-react-components-gridlist": "^0.1.0"
   }
 }

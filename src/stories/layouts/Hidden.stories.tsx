@@ -1,6 +1,6 @@
 import React from 'react'
-import { Hidden, HiddenProps } from '../../components/layout/Hidden/Hidden'
 import { Meta, Story } from '@storybook/react'
+import { Hidden, HiddenProps } from '../..'
 
 export default {
   title: 'Components/Layout/Hidden',

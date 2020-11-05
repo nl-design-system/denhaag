@@ -1,14 +1,17 @@
-import { Box } from './components/layout/Box/Box'
-import { Container } from './components/layout/Container/Container'
-import { Grid } from './components/layout/Grid/Grid'
-import { GridList } from './components/layout/GridList/GridList'
 import { Button, ButtonProps } from './components/Button/Button'
 import { Checkbox, CheckboxProps } from './components/Checkbox/Checkbox'
 import {
   FormControlLabel,
   FormControlLabelProps
 } from './components/FormControlLabel/FormControlLabel'
-import { Hidden } from './components/layout/Hidden/Hidden'
+import { Box, BoxProps } from './components/layout/box/Box'
+import {
+  Container,
+  ContainerProps
+} from './components/layout/container/Container'
+import { Grid, GridProps } from './components/layout/grid/Grid'
+import { GridList, GridListProps } from './components/layout/gridlist/GridList'
+import { Hidden, HiddenProps } from './components/layout/hidden/Hidden'
 
 /**
  * Primary UI component for user interaction
@@ -21,8 +24,13 @@ export {
   FormControlLabel,
   FormControlLabelProps,
   Box,
+  BoxProps,
   Container,
+  ContainerProps,
   Grid,
+  GridProps,
   GridList,
-  Hidden
+  GridListProps,
+  Hidden,
+  HiddenProps
 }

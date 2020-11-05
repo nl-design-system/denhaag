@@ -1,13 +1,13 @@
 import React from 'react'
+import { Meta, Story } from '@storybook/react'
+import { IconButton } from '@material-ui/core'
+import InfoIcon from '@material-ui/icons/Info'
 import {
   GridListTileBar,
   GridListTileBarProps
-} from '../../components/layout/GridList/dependencies/GridListTileBar/GridListTileBar'
-import { Meta, Story } from '@storybook/react'
-import { GridList } from '../../components/layout/GridList/GridList'
-import { GridListTile } from '../../components/layout/GridList/dependencies/GridListTile/GridListTile'
-import { IconButton } from '@material-ui/core'
-import InfoIcon from '@material-ui/icons/Info'
+} from '../../components/layout/gridlist/dependencies/gridlisttilebar/GridListTileBar'
+import GridListTile from '../../components/layout/gridlist/dependencies/gridlisttile/GridListTile'
+import { GridList } from '../..'
 
 export default {
   title: 'Components/Layout/GridList/GridListTile/GridListTileBar',
