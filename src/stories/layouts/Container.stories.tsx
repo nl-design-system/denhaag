@@ -1,6 +1,7 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
-import { Container, ContainerProps } from '../..'
+import { Container } from '../..'
+import { ContainerProps } from '../../components/layout/Container/Container'
 
 export default {
   title: 'Components/Layout/Container',
