@@ -1,7 +1,7 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
 import { GridList, GridListProps } from '../..'
-import { GridListTile } from '../../components/layout/gridlist/dependencies/gridlisttile/GridListTile'
+import { GridListTile } from '../../components/layout/GridList/dependencies/GridListTile/GridListTile'
 
 export default {
   title: 'Components/Layout/GridList',

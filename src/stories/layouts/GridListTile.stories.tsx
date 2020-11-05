@@ -3,7 +3,7 @@ import { Meta, Story } from '@storybook/react'
 import {
   GridListTile,
   GridListTileProps
-} from '../../components/layout/gridlist/dependencies/gridlisttile/GridListTile'
+} from '../../components/layout/GridList/dependencies/GridListTile/GridListTile'
 import { GridList } from '../..'
 
 export default {

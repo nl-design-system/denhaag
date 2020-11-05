@@ -28,13 +28,13 @@ export interface ContainerProps {
   fixed: boolean
 
   /**
-   * Determine the maximum width of the container. When false, no max-width is set.
+   * Determine the maximum width of the Container. When false, no max-width is set.
    */
   maxWidth: 'lg' | 'md' | 'sm' | 'xl' | 'xs' | false
 }
 
 /**
- * The container allows developers to center content horizontally.
+ * The Container allows developers to center content horizontally.
  * @param props the properties of the Container.
  * @constructor Constructs an instance of Container.
  */

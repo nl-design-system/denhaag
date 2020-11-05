@@ -34,7 +34,7 @@ export interface GridProps {
   component: ElementType
 
   /**
-   * if true, the Grid component will have the flex container behaviour.
+   * if true, the Grid component will have the flex Container behaviour.
    */
   container: boolean
 
@@ -69,7 +69,7 @@ export interface GridProps {
   xs: boolean | 'auto' | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12
 
   /**
-   * Defines the space between the type item component. Can only be used on a type container component.
+   * Defines the space between the type item component. Can only be used on a type Container component.
    */
   spacing: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
 

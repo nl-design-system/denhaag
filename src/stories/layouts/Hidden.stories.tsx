@@ -14,7 +14,7 @@ const Template: Story<HiddenProps> = (args: any) => (
 )
 
 /**
- * Default hidden
+ * Default Hidden
  */
 export const Default = Template.bind({})
 Default.args = {

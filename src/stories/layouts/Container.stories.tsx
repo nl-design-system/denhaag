@@ -12,7 +12,7 @@ const Template: Story<ContainerProps> = (args: any) => (
 )
 
 /**
- * Default container
+ * Default Container
  */
 export const Default = Template.bind({})
 Default.args = {

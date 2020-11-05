@@ -38,7 +38,7 @@ Default.args = {
 }
 
 /**
- * Grid with container behaviour.
+ * Grid with Container behaviour.
  */
 export const ContainerGrid = Template.bind({})
 ContainerGrid.args = {

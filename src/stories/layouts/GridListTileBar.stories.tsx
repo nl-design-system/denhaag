@@ -5,8 +5,8 @@ import InfoIcon from '@material-ui/icons/Info'
 import {
   GridListTileBar,
   GridListTileBarProps
-} from '../../components/layout/gridlist/dependencies/gridlisttilebar/GridListTileBar'
-import GridListTile from '../../components/layout/gridlist/dependencies/gridlisttile/GridListTile'
+} from '../../components/layout/GridList/dependencies/GridListTileBar/GridListTileBar'
+import GridListTile from '../../components/layout/GridList/dependencies/GridListTile/GridListTile'
 import { GridList } from '../..'
 
 export default {

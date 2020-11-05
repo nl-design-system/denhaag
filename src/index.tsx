@@ -4,14 +4,14 @@ import {
   FormControlLabel,
   FormControlLabelProps
 } from './components/FormControlLabel/FormControlLabel'
-import { Box, BoxProps } from './components/layout/box/Box'
+import { Box, BoxProps } from './components/layout/Box/Box'
 import {
   Container,
   ContainerProps
-} from './components/layout/container/Container'
-import { Grid, GridProps } from './components/layout/grid/Grid'
-import { GridList, GridListProps } from './components/layout/gridlist/GridList'
-import { Hidden, HiddenProps } from './components/layout/hidden/Hidden'
+} from './components/layout/Container/Container'
+import { Grid, GridProps } from './components/layout/Grid/Grid'
+import { GridList, GridListProps } from './components/layout/GridList/GridList'
+import { Hidden, HiddenProps } from './components/layout/Hidden/Hidden'
 
 /**
  * Primary UI component for user interaction

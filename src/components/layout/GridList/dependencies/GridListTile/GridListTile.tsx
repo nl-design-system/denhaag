@@ -13,7 +13,7 @@ export interface GridListTileProps {
   classes?: object
 
   /**
-   * Width of tile in number of grid cells.
+   * Width of tile in number of Grid cells.
    */
   cols: number
 
@@ -23,7 +23,7 @@ export interface GridListTileProps {
   component: ElementType
 
   /**
-   * Height of the tile in number of grid cells.
+   * Height of the tile in number of Grid cells.
    */
   rows: number
 }
