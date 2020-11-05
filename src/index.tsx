@@ -1,14 +1,14 @@
-import * as React from 'react'
-import styles from './styles.module.css'
+import { Button, ButtonProps } from './components/Button/Button';
+import { Checkbox, CheckboxProps } from './components/Checkbox/Checkbox';
+import { FormControlLabel, FormControlLabelProps } from './components/FormControlLabel/FormControlLabel'
 
-interface Props {
-  text: string
-}
-
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
-
-export const ImageComponent = () => {
-  return <img className={styles.test} alt='Just testing mate' />
-}
+/**
+ * Primary UI component for user interaction
+ */
+export { Button,
+          ButtonProps,
+          Checkbox,
+          CheckboxProps,
+          FormControlLabel,
+          FormControlLabelProps
+        };
