@@ -114,4 +114,7 @@ export const Grid: React.FC<GridProps> = (props: GridProps) => {
   )
 }
 
+/**
+ * Default export for Grid
+ */
 export default Grid

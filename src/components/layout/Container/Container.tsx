@@ -52,4 +52,7 @@ export const Container: React.FC<ContainerProps> = (props: ContainerProps) => {
   )
 }
 
+/**
+ * Default export for Container
+ */
 export default Container

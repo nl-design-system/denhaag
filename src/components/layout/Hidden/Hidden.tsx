@@ -94,3 +94,8 @@ export const Hidden: React.FC<HiddenProps> = (props: HiddenProps) => {
     </MaterialHidden>
   )
 }
+
+/**
+ * Default export for Hidden
+ */
+export default Hidden

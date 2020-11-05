@@ -31,4 +31,7 @@ export const Box: React.FC<BoxProps> = (props: BoxProps) => {
   )
 }
 
+/**
+ * Default export for Box
+ */
 export default Box

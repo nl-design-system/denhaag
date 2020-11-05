@@ -1,5 +1,5 @@
 {
-  "name": "nlds-react-components-gridlisttilebar",
+  "name": "nlds-react-components-grid_list_tile_bar",
   "version": "0.1.0",
   "dependencies": {
     "@material-ui/core": "^4.11.0"

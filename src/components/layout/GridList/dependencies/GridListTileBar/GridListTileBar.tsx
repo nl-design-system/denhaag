@@ -53,4 +53,7 @@ export const GridListTileBar: React.FC<GridListTileBarProps> = (
   )
 }
 
+/**
+ * Default export for GridListTileBar
+ */
 export default GridListTileBar
