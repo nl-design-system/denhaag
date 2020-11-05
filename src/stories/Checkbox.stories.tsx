@@ -18,7 +18,7 @@ const Template: Story<CheckboxProps> = (args: any) => (
  */
 export const Default: Story<CheckboxProps> = Template.bind({})
 Default.args = {
-  disabled: false
+  color: 'default'
 }
 
 /**
@@ -26,8 +26,7 @@ Default.args = {
  */
 export const Primary: Story<CheckboxProps> = Template.bind({})
 Primary.args = {
-  color: 'primary',
-  disabled: false
+  color: 'primary'
 }
 
 /**
@@ -35,8 +34,34 @@ Primary.args = {
  */
 export const Secondary: Story<CheckboxProps> = Template.bind({})
 Secondary.args = {
-  color: 'secondary',
-  disabled: false
+  color: 'secondary'
+}
+
+/**
+ * Default Checked Checkbox
+ */
+export const CheckedByDefault: Story<CheckboxProps> = Template.bind({})
+CheckedByDefault.args = {
+  defaultChecked: true,
+  color: 'default'
+}
+
+/**
+ * Small Checkbox
+ */
+export const Small: Story<CheckboxProps> = Template.bind({})
+Small.args = {
+  size: 'small',
+  color: 'default'
+}
+
+/**
+ * Indeterminate Checkbox
+ */
+export const Indeterminate: Story<CheckboxProps> = Template.bind({})
+Indeterminate.args = {
+  indeterminate: true,
+  color: 'default'
 }
 
 /**
@@ -44,5 +69,6 @@ Secondary.args = {
  */
 export const Disabled: Story<CheckboxProps> = Template.bind({})
 Disabled.args = {
-  disabled: true
+  disabled: true,
+  color: 'default'
 }
