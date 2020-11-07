@@ -1,14 +1,15 @@
 import React, { ElementType, ReactElement } from 'react'
-import MaterialGridList from '@material-ui/core/GridList'
+// TODO:: Change import from GridList to ImageList
+import MaterialImageList from '@material-ui/core/GridList'
 
-export interface GridListProps {
+export interface ImageListProps {
   /**
    * Number of pixels for one cell height. Set auto for children to define the height.
    */
   cellHeight: number | 'auto'
 
   /**
-   * Grid Tiles which will be in GridList.
+   * List Items which will be in ImageList.
    */
   children: ReactElement
 
@@ -34,13 +35,13 @@ export interface GridListProps {
 }
 
 /**
- * Grid List displays a collection of images in an organised Grid.
- * @param props The properties of the GridList.
- * @constructor Constructs an instance of GridList.
+ * Image List displays a collection of images in an organised Grid.
+ * @param props The properties of the ImageList.
+ * @constructor Constructs an instance of ImageList.
  */
-export const GridList: React.FC<GridListProps> = (props: GridListProps) => {
+export const ImageList: React.FC<ImageListProps> = (props: ImageListProps) => {
   return (
-    <MaterialGridList
+    <MaterialImageList
       cellHeight={props.cellHeight}
       classes={props.classes}
       cols={props.cols}
@@ -48,11 +49,11 @@ export const GridList: React.FC<GridListProps> = (props: GridListProps) => {
       spacing={props.spacing}
     >
       {props.children}
-    </MaterialGridList>
+    </MaterialImageList>
   )
 }
 
 /**
- * Default export for GridList
+ * Default export for ImageList
  */
-export default GridList
+export default ImageList

@@ -1,7 +1,8 @@
 import React, { ElementType, ReactElement } from 'react'
-import MaterialGridListTile from '@material-ui/core/GridListTile'
+// TODO:: Change import from GridListTile to ImageListItem
+import MaterialImageListItem from '@material-ui/core/GridListTile'
 
-export interface GridListTileProps {
+export interface ImageListItemProps {
   /**
    * Can take any element as child, but preferably an image.
    */
@@ -30,25 +31,25 @@ export interface GridListTileProps {
 
 /**
  * Used in the Grid to align items and enforce layouts.
- * @param props The properties of GridListTile.
- * @constructor Constructs an instance of GridListTile.
+ * @param props The properties of ImageListItem.
+ * @constructor Constructs an instance of ImageListItem.
  */
-export const GridListTile: React.FC<GridListTileProps> = (
-  props: GridListTileProps
+export const ImageListItem: React.FC<ImageListItemProps> = (
+  props: ImageListItemProps
 ) => {
   return (
-    <MaterialGridListTile
+    <MaterialImageListItem
       classes={props.classes}
       cols={props.cols}
       component={props.component}
       rows={props.rows}
     >
       {props.children}
-    </MaterialGridListTile>
+    </MaterialImageListItem>
   )
 }
 
 /**
- * Default export for GridListTile
+ * Default export for ImageListItem
  */
-export default GridListTile
+export default ImageListItem

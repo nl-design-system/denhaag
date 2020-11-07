@@ -1,7 +1,8 @@
 import React, { ReactElement } from 'react'
-import MaterialGridListTileBar from '@material-ui/core/GridListTileBar'
+// TODO:: Change import from GridListTileBar to ImageListItemBar
+import MaterialImageListItemBar from '@material-ui/core/GridListTileBar'
 
-export interface GridListTileBarProps {
+export interface ImageListItemBarProps {
   /**
    * An IconButton element to be used as a secondary action target.
    */
@@ -34,15 +35,15 @@ export interface GridListTileBarProps {
 }
 
 /**
- * GridListTileBar proviedes an overlay to GridListTile, accomodating a title, subtitle and action button.
- * @param props The properties of GridListTileBar.
- * @constructor Constructs an instance of GridListTileBar.
+ * ImageListItemBar provides an overlay to ImageListTile, accommodating a title, subtitle and action button.
+ * @param props The properties of ImageListItemBar.
+ * @constructor Constructs an instance of ImageListItemBar.
  */
-export const GridListTileBar: React.FC<GridListTileBarProps> = (
-  props: GridListTileBarProps
+export const ImageListItemBar: React.FC<ImageListItemBarProps> = (
+  props: ImageListItemBarProps
 ) => {
   return (
-    <MaterialGridListTileBar
+    <MaterialImageListItemBar
       title={props.title}
       titlePosition={props.titlePosition}
       subtitle={props.subtitle}
@@ -54,6 +55,6 @@ export const GridListTileBar: React.FC<GridListTileBarProps> = (
 }
 
 /**
- * Default export for GridListTileBar
+ * Default export for ImageListItemBar
  */
-export default GridListTileBar
+export default ImageListItemBar
