@@ -1,27 +1,27 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
-import { ImageList } from '../..'
-import { ImageListItem, ImageListItemProps } from '../../components/layout/ImageList/dependencies/ImageListItem/ImageListItem'
+import { GridList } from '../..'
+import { GridListTile, GridListTileProps } from '../../components/layout/GridList/dependencies/GridListTile/GridListTile'
 
 export default {
-  title: 'Components/Layout/ImageList/ImageListItem',
-  component: ImageListItem
+  title: 'Components/Layout/GridList/GridListTile',
+  component: GridListTile
 } as Meta
 
-const Template: Story<ImageListItemProps> = (args: any) => (
-  <ImageList cellHeight={180} cols={2} component='ul' spacing={4}>
-    <ImageListItem {...args}>
+const Template: Story<GridListTileProps> = (args: any) => (
+  <GridList cellHeight={180} cols={2} component='ul' spacing={4}>
+    <GridListTile {...args}>
       <p>
         This is a GridListTile. It belongs inside a GridList element.
         <br />
         Usually this would contain an image.
       </p>
-    </ImageListItem>
-  </ImageList>
+    </GridListTile>
+  </GridList>
 )
 
 /**
- * A default implementation of the ImageListItem.
+ * A default implementation of the GridListTile.
  */
 export const Default = Template.bind({})
 Default.args = {

@@ -4,7 +4,7 @@ import FormControlLabel from './components/FormControlLabel/FormControlLabel'
 import Box from './components/layout/Box/Box'
 import Container from './components/layout/Container/Container'
 import Grid from './components/layout/Grid/Grid'
-import ImageList from './components/layout/ImageList/ImageList'
+import GridList from './components/layout/GridList/GridList'
 import Hidden from './components/layout/Hidden/Hidden'
 
 /**
@@ -17,6 +17,6 @@ export {
   Box,
   Container,
   Grid,
-  ImageList,
+  GridList,
   Hidden
 }

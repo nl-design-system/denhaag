@@ -3,33 +3,33 @@ import { Meta, Story } from '@storybook/react'
 import { IconButton } from '@material-ui/core'
 import InfoIcon from '@material-ui/icons/Info'
 import {
-  ImageListItemBar,
-  ImageListItemBarProps
-} from '../../components/layout/ImageList/dependencies/ImageListItemBar/ImageListItemBar'
-import ImageListItem from '../../components/layout/ImageList/dependencies/ImageListItem/ImageListItem'
-import { ImageList } from '../..'
+  GridListTileBar,
+  GridListTileBarProps
+} from '../../components/layout/GridList/dependencies/GridListTileBar/GridListTileBar'
+import GridListTile from '../../components/layout/GridList/dependencies/GridListTile/GridListTile'
+import { GridList } from '../..'
 
 export default {
-  title: 'Components/Layout/ImageList/ImageListItem/ImageListItemBar',
-  component: ImageListItemBar
+  title: 'Components/Layout/GridList/GridListTile/GridListTileBar',
+  component: GridListTileBar
 } as Meta
 
-const Template: Story<ImageListItemBarProps> = (args: any) => (
-  <ImageList cellHeight={180} cols={2} component='ul' spacing={4}>
-    <ImageListItem cols={1} component='li' rows={1}>
+const Template: Story<GridListTileBarProps> = (args: any) => (
+  <GridList cellHeight={180} cols={2} component='ul' spacing={4}>
+    <GridListTile cols={1} component='li' rows={1}>
       <img
         src='https://ciconiaconsort.nl/wp-content/uploads/2016/02/Gemeente-Den-Haag-logo2-640x612.jpg'
         alt='The Hague municipality emblem'
         width={250}
         height={250}
       />
-      <ImageListItemBar {...args} />
-    </ImageListItem>
-  </ImageList>
+      <GridListTileBar {...args} />
+    </GridListTile>
+  </GridList>
 )
 
 /**
- * Default implementation of ImageListItemBar.
+ * Default implementation of GridListTileBar.
  */
 export const Default = Template.bind({})
 Default.args = {
@@ -39,8 +39,8 @@ Default.args = {
     </IconButton>
   ),
   actionPosition: 'right',
-  title: 'ImageListItemBar',
-  subtitle: 'I am a ImageListItemBar!',
+  title: 'GridListTileBar',
+  subtitle: 'I am a GridListTileBar!',
   titlePosition: 'bottom'
 }
 
@@ -55,8 +55,8 @@ TopPosition.args = {
     </IconButton>
   ),
   actionPosition: 'right',
-  title: 'ImageListItemBar',
-  subtitle: 'I am ImageListItemBar!',
+  title: 'GridListTileBar',
+  subtitle: 'I am GridListTileBar!',
   titlePosition: 'top'
 }
 
@@ -71,7 +71,7 @@ ButtonLeft.args = {
     </IconButton>
   ),
   actionPosition: 'left',
-  title: 'ImageListItemBar',
-  subtitle: 'I am ImageListItemBar!',
+  title: 'GridListTileBar',
+  subtitle: 'I am GridListTileBar!',
   titlePosition: 'bottom'
 }

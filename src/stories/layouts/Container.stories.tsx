@@ -37,8 +37,8 @@ NoPadding.args = {
 /**
  * Container with width fixed to min-width of the breakpoint.
  */
-export const FixedWith = Template.bind({})
-FixedWith.args = {
+export const FixedWidth = Template.bind({})
+FixedWidth.args = {
   component: 'div',
   disableGutters: false,
   fixed: true,
