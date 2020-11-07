@@ -12,7 +12,6 @@
     "src/components/*",
     "src/components/*/*",
     "src/components/*/*/*",
-    "src/components/*/*/*/*",
     "src/components"
   ],
   "private": true,
