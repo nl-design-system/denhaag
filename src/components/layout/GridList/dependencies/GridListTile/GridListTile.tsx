@@ -1,5 +1,4 @@
 import React, { ElementType, ReactElement } from 'react'
-// TODO:: Change import from GridListTile to GridListTile
 import MaterialGridListTile from '@material-ui/core/GridListTile'
 
 export interface GridListTileProps {

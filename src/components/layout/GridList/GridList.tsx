@@ -1,5 +1,4 @@
 import React, { ElementType, ReactElement } from 'react'
-// TODO:: Change import from GridList to GridList
 import MaterialGridList from '@material-ui/core/GridList'
 
 export interface GridListProps {
@@ -9,7 +8,7 @@ export interface GridListProps {
   cellHeight: number | 'auto'
 
   /**
-   * List Items which will be in GridList.
+   * List Tiles which will be in GridList.
    */
   children: ReactElement
 
@@ -35,7 +34,7 @@ export interface GridListProps {
 }
 
 /**
- * Image List displays a collection of images in an organised Grid.
+ * Grid List displays a collection of images in an organised Grid.
  * @param props The properties of the GridList.
  * @constructor Constructs an instance of GridList.
  */

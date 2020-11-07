@@ -1,5 +1,4 @@
 import React, { ReactElement } from 'react'
-// TODO:: Change import from GridListTileBar to GridListTileBar
 import MaterialGridListTileBar from '@material-ui/core/GridListTileBar'
 
 export interface GridListTileBarProps {
