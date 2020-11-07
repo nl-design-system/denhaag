@@ -13,5 +13,6 @@ export {
   CheckboxProps,
   FormControlLabel,
   FormControlLabelProps,
-  FormGroup
+  FormGroup,
+  FormGroupProps
 }
