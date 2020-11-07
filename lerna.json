@@ -2,6 +2,8 @@
   "npmClient": "yarn",
   "packages": [
     "src/components/*",
+    "src/components/*/*",
+    "src/components/*/*/*",
     "src/components"
   ],
   "useWorkspaces": true,
