@@ -51,6 +51,46 @@ Secondary.args = {
 }
 
 /**
+ * Outlined Button
+ */
+export const Outlined: Story<ButtonProps> = Template.bind({})
+Outlined.args = {
+  variant: 'outlined'
+}
+
+/**
+ * Text button
+ */
+export const Text: Story<ButtonProps> = Template.bind({})
+Text.args = {
+  variant: 'text'
+}
+
+/**
+ * Small button
+ */
+export const Small: Story<ButtonProps> = Template.bind({})
+Small.args = {
+  size: 'small'
+}
+
+/**
+ * Medium button
+ */
+export const Medium: Story<ButtonProps> = Template.bind({})
+Medium.args = {
+  size: 'medium'
+}
+
+/**
+ * Large button
+ */
+export const Large: Story<ButtonProps> = Template.bind({})
+Large.args = {
+  size: 'large'
+}
+
+/**
  * Disabled Button
  */
 export const Disabled: Story<ButtonProps> = Template.bind({})

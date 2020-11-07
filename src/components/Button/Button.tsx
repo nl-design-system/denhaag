@@ -1,4 +1,4 @@
-import { Button as MaterialButton } from '@material-ui/core'
+import MaterialButton from '@material-ui/core/Button'
 import React, { ReactNode } from 'react'
 
 export interface ButtonProps {
@@ -10,6 +10,15 @@ export interface ButtonProps {
    * Color for the component
    */
   color?: 'primary' | 'secondary' | 'default'
+  /**
+   * The url to link to when the button is clicked.
+   * If defined, an a element will be used as the root node.
+   */
+  href?: string
+  /**
+   * Size of the component
+   */
+  size?: 'small' | 'medium' | 'large'
   /**
    * Disables Button
    */
@@ -28,6 +37,8 @@ export const Button: React.FC<ButtonProps> = ({
   color = 'default',
   variant = 'contained',
   onClick,
+  size,
+  href,
   disabled = false,
   children,
   ...props
@@ -37,6 +48,8 @@ export const Button: React.FC<ButtonProps> = ({
       onClick={onClick}
       variant={variant}
       color={color}
+      size={size}
+      href={href}
       disabled={disabled}
       {...props}
     >
@@ -45,4 +58,7 @@ export const Button: React.FC<ButtonProps> = ({
   )
 }
 
+/**
+ * Default export for Button
+ */
 export default Button

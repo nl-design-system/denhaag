@@ -1,4 +1,4 @@
-import { FormControlLabel as MaterialFormControlLabel } from '@material-ui/core'
+import MaterialFormControlLabel from '@material-ui/core/FormControlLabel'
 import React, { ReactElement } from 'react'
 
 export interface FormControlLabelProps {
