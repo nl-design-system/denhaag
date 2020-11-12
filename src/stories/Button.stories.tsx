@@ -4,9 +4,13 @@ import { Story, Meta } from '@storybook/react/types-6-0'
 import { action } from '@storybook/addon-actions'
 import { Button } from '..'
 import { ButtonProps } from '../components/Button/Button'
+import pkg from '../components/Button/package.json'
 
 export default {
   title: 'Components/Button',
+  parameters: {
+    componentSubtitle: pkg.version
+  },
   component: Button
 } as Meta
 
