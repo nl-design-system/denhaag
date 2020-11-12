@@ -4,9 +4,13 @@ import { Story, Meta } from '@storybook/react/types-6-0'
 import Checkbox, { CheckboxProps } from '../components/Checkbox/Checkbox'
 import FormControlLabel from '../components/FormControlLabel/FormControlLabel'
 import FormGroup, { FormGroupProps } from '../components/FormGroup/FormGroup'
+import pkg from '../components/FormGroup/package.json'
 
 export default {
   title: 'Forms/FormGroup',
+  parameters: {
+    componentSubtitle: pkg.version
+  },
   component: FormGroup
 } as Meta
 
