@@ -1,5 +1,5 @@
 import MaterialFormGroup from '@material-ui/core/FormGroup'
-import React, { ReactElement } from 'react'
+import React from 'react'
 
 export interface FormGroupProps {
   /**
