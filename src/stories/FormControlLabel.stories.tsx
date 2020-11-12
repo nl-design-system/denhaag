@@ -3,9 +3,13 @@ import React from 'react'
 import { Story, Meta } from '@storybook/react/types-6-0'
 import Checkbox from '../components/Checkbox/Checkbox'
 import FormControlLabel, {FormControlLabelProps} from '../components/FormControlLabel/FormControlLabel'
+import pkg from '../components/FormControlLabel/package.json'
 
 export default {
   title: 'Forms/FormControlLabel',
+  parameters: {
+    componentSubtitle: pkg.version
+  },
   component: FormControlLabel
 }
 
