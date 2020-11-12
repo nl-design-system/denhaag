@@ -3,9 +3,13 @@ import { Meta, Story } from '@storybook/react'
 import { GridList } from '../..'
 import { GridListTile } from '../../components/layout/GridListTile/GridListTile'
 import { GridListProps } from '../../components/layout/GridList/GridList'
+import pkg from '../../components/layout/GridList/package.json'
 
 export default {
   title: 'Components/Layout/GridList',
+  parameters: {
+    componentSubtitle: `${pkg.version} - ${pkg.name}`
+  },
   component: GridList
 } as Meta
 

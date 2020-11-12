@@ -2,10 +2,14 @@ import React from 'react'
 import { Meta, Story } from '@storybook/react'
 import { Container } from '../..'
 import { ContainerProps } from '../../components/layout/Container/Container'
+import pkg from '../../components/layout/Container/package.json'
 
 export default {
   title: 'Components/Layout/Container',
-  component: Container
+  component: Container,
+  parameters: {
+    componentSubtitle: `${pkg.version} - ${pkg.name}`
+  },
 } as Meta
 
 const Template: Story<ContainerProps> = (args: any) => (

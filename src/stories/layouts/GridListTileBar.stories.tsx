@@ -8,9 +8,13 @@ import {
 } from '../../components/layout/GridListTileBar/GridListTileBar'
 import GridListTile from '../../components/layout/GridListTile/GridListTile'
 import { GridList } from '../..'
+import pkg from '../../components/layout/GridListTileBar/package.json'
 
 export default {
   title: 'Components/Layout/GridList/GridListTile/GridListTileBar',
+  parameters: {
+    componentSubtitle: `${pkg.version} - ${pkg.name}`
+  },
   component: GridListTileBar
 } as Meta
 
