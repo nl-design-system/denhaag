@@ -1,0 +1,10 @@
+{
+  "name": "nlds-react-components-box",
+  "version": "0.1.0",
+  "description": "A Box component",
+  "author": "Municipality of The Hague",
+  "license": "MIT",
+  "dependencies": {
+    "@material-ui/core": "^4"
+  }
+}
