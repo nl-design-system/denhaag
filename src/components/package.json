@@ -6,8 +6,10 @@
   "license": "MIT",
   "dependencies": {
     "nlds-react-components-button": "^0.1.0",
+    "nlds-react-components-card": "^0.1.0",
     "nlds-react-components-checkbox": "^0.1.0",
     "nlds-react-components-formcontrollabel": "^0.1.0",
-    "nlds-react-components-layout": "^0.1.0"
+    "nlds-react-components-layout": "^0.1.0",
+    "nlds-react-components-paper": "^0.1.0"
   }
 }
