@@ -9,7 +9,7 @@ import pkg from '../components/Button/package.json'
 export default {
   title: 'Components/Button',
   parameters: {
-    componentSubtitle: pkg.version
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
   component: Button
 } as Meta
