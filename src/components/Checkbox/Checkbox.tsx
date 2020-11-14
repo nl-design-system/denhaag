@@ -4,6 +4,8 @@ import React from 'react'
 export interface CheckboxProps {
   /**
    * If `true` the Checkbox is checked.
+   * See https://github.com/mui-org/material-ui/blob/master/docs/src/pages/components/checkboxes/Checkboxes.tsx
+   * For an example on the needed state machine to use this property.
    */
   checked?: boolean
   /**
