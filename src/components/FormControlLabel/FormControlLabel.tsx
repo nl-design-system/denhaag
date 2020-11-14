@@ -39,26 +39,19 @@ export interface FormControlLabelProps {
 /**
  * FormControlLabels allow the developer to add a label to some components
  */
-export const FormControlLabel: React.FC<FormControlLabelProps> = ({
-  checked,
-  classes,
-  control,
-  disabled,
-  label,
-  labelPlacement,
-  onChange,
-  value
-}) => {
+export const FormControlLabel: React.FC<FormControlLabelProps> = (
+  props: FormControlLabelProps
+) => {
   return (
     <MaterialFormControlLabel
-      checked={checked}
-      classes={classes}
-      control={control}
-      disabled={disabled}
-      label={label}
-      labelPlacement={labelPlacement}
-      onChange={onChange}
-      value={value}
+      checked={props.checked}
+      classes={props.classes}
+      control={props.control}
+      disabled={props.disabled}
+      label={props.label}
+      labelPlacement={props.labelPlacement}
+      onChange={props.onChange}
+      value={props.value}
     />
   )
 }
