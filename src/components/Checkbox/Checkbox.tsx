@@ -39,27 +39,17 @@ export interface CheckboxProps {
 /**
  * Checkboxes allow the user to select one or more items from a set.
  */
-export const Checkbox: React.FC<CheckboxProps> = ({
-  checked,
-  defaultChecked,
-  indeterminate,
-  inputProps,
-  color,
-  size,
-  disabled,
-  onChange,
-  ...props
-}) => {
+export const Checkbox: React.FC<CheckboxProps> = (props: CheckboxProps) => {
   return (
     <MaterialCheckbox
-      checked={checked}
-      defaultChecked={defaultChecked}
-      indeterminate={indeterminate}
-      inputProps={inputProps}
-      color={color}
-      size={size}
-      disabled={disabled}
-      onChange={onChange}
+      checked={props.checked}
+      defaultChecked={props.defaultChecked}
+      indeterminate={props.indeterminate}
+      inputProps={props.inputProps}
+      color={props.color}
+      size={props.size}
+      disabled={props.disabled}
+      onChange={props.onChange}
       {...props}
     />
   )
