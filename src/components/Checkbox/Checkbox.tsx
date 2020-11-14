@@ -3,15 +3,15 @@ import React from 'react'
 
 export interface CheckboxProps {
   /**
-   * If true the Checkbox is checked.
+   * If `true` the Checkbox is checked.
    */
   checked?: boolean
   /**
-   * If true then Checkbox will be checked by default.
+   * If `true` then Checkbox will be checked by default.
    */
   defaultChecked?: boolean
   /**
-   * If true, the component appears indeterminate.
+   * If `true`, the component appears indeterminate.
    */
   indeterminate?: boolean
   /**
