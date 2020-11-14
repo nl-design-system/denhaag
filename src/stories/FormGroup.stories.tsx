@@ -9,7 +9,7 @@ import pkg from '../components/FormGroup/package.json'
 export default {
   title: 'Forms/FormGroup',
   parameters: {
-    componentSubtitle: pkg.version
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
   component: FormGroup
 } as Meta

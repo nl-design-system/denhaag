@@ -8,7 +8,7 @@ import pkg from '../components/Checkbox/package.json'
 export default {
   title: 'Components/Checkbox',
   parameters: {
-    componentSubtitle: pkg.version
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
   component: Checkbox
 } as Meta
