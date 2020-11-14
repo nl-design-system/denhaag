@@ -1,0 +1,11 @@
+{
+  "name": "nlds-react-components-navigation",
+  "version": "0.1.0",
+  "dependencies": {
+    "@material-ui/core": "^4",
+    "nlds-react-components-drawer": "^0.1.0",
+    "nlds-react-components-menu": "^0.1.0",
+    "nlds-react-components-stepper": "^0.1.0",
+    "nlds-react-components-tabs": "^0.1.0"
+  }
+}
