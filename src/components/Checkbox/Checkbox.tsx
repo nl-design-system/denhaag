@@ -15,6 +15,10 @@ export interface CheckboxProps {
    */
   indeterminate?: boolean
   /**
+   * Attributes applied to the `input` element.
+   */
+  inputProps?: object
+  /**
    * Color for the component.
    */
   color?: 'default' | 'primary' | 'secondary'
@@ -39,6 +43,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
   checked,
   defaultChecked,
   indeterminate,
+  inputProps,
   color,
   size,
   disabled,
@@ -50,6 +55,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
       checked={checked}
       defaultChecked={defaultChecked}
       indeterminate={indeterminate}
+      inputProps={inputProps}
       color={color}
       size={size}
       disabled={disabled}
