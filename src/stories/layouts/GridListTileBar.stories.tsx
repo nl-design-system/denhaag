@@ -13,7 +13,7 @@ import pkg from '../../components/layout/GridListTileBar/package.json'
 export default {
   title: 'Components/Layout/GridList/GridListTile/GridListTileBar',
   parameters: {
-    componentSubtitle: `${pkg.version} - ${pkg.name}`
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
   component: GridListTileBar
 } as Meta

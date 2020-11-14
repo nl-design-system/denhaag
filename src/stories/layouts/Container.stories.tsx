@@ -8,7 +8,8 @@ export default {
   title: 'Components/Layout/Container',
   component: Container,
   parameters: {
-    componentSubtitle: `${pkg.version} - ${pkg.name}`
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
+
   }
 } as Meta
 
@@ -20,7 +21,6 @@ const Template: Story<ContainerProps> = (args: any) => (
  * Default Container
  */
 export const Default = Template.bind({})
-Default.args = {}
 
 /**
  * Container without left and right padding.

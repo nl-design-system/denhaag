@@ -8,7 +8,7 @@ import pkg from '../../components/layout/GridList/package.json'
 export default {
   title: 'Components/Layout/GridList',
   parameters: {
-    componentSubtitle: `${pkg.version} - ${pkg.name}`
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
   component: GridList
 } as Meta
@@ -33,4 +33,3 @@ const Template: Story<GridListProps> = (args: any) => (
  * Implementation of a GridList.
  */
 export const Default = Template.bind({})
-Default.args = {}

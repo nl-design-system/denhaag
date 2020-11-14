@@ -7,7 +7,7 @@ import pkg from '../../components/layout/Hidden/package.json'
 export default {
   title: 'Components/Layout/Hidden',
   parameters: {
-    componentSubtitle: `${pkg.version} - ${pkg.name}`
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
   component: Hidden
 } as Meta
@@ -22,4 +22,3 @@ const Template: Story<HiddenProps> = (args: any) => (
  * Default Hidden
  */
 export const Default = Template.bind({})
-Default.args = {}

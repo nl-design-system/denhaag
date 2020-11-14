@@ -7,7 +7,7 @@ import pkg from '../../components/layout/Box/package.json'
 export default {
   title: 'Components/Layout/Box',
   parameters: {
-    componentSubtitle: `${pkg.version} - ${pkg.name}`
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
   component: Box
 } as Meta
@@ -22,4 +22,3 @@ const Template: Story<BoxProps> = (args: any) => (
  * Implementation of Box
  */
 export const Default = Template.bind({})
-Default.args = {}

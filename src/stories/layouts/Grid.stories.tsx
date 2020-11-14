@@ -7,7 +7,7 @@ import pkg from '../../components/layout/Grid/package.json'
 export default {
   title: 'Components/Layout/Grid',
   parameters: {
-    componentSubtitle: `${pkg.version} - ${pkg.name}`
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
   component: Grid
 } as Meta
@@ -24,7 +24,6 @@ const Template: Story<GridProps> = (args: any) => (
  * A default implementation of Grid.
  */
 export const Default = Template.bind({})
-Default.args = {}
 
 /**
  * Grid with Container behaviour.
