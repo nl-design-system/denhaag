@@ -13,7 +13,7 @@ export default {
 } as Meta
 
 const Template: Story<GridListTileProps> = (args: any) => (
-  <GridList cellHeight={180} cols={2} component='ul' spacing={4}>
+  <GridList>
     <GridListTile {...args}>
       <p>
         This is a GridListTile. It belongs inside a GridList element.
@@ -28,8 +28,4 @@ const Template: Story<GridListTileProps> = (args: any) => (
  * A default implementation of the GridListTile.
  */
 export const Default = Template.bind({})
-Default.args = {
-  cols: 1,
-  component: 'li',
-  rows: 1
-}
+Default.args = {}

@@ -22,16 +22,4 @@ const Template: Story<HiddenProps> = (args: any) => (
  * Default Hidden
  */
 export const Default = Template.bind({})
-Default.args = {
-  implementation: 'js',
-  lgDown: false,
-  lgUp: false,
-  mdDown: false,
-  mdUp: false,
-  smDown: false,
-  smUp: false,
-  xlDown: false,
-  xlUp: false,
-  xsDown: false,
-  xsUp: false
-}
+Default.args = {}

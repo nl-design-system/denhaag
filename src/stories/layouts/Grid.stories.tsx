@@ -24,44 +24,14 @@ const Template: Story<GridProps> = (args: any) => (
  * A default implementation of Grid.
  */
 export const Default = Template.bind({})
-Default.args = {
-  alignContent: 'stretch',
-  alignItems: 'stretch',
-  component: 'div',
-  container: false,
-  direction: 'row',
-  item: false,
-  justify: 'flex-start',
-  lg: false,
-  md: false,
-  sm: false,
-  xl: false,
-  xs: false,
-  spacing: 0,
-  wrap: 'wrap',
-  zeroMinWidth: false
-}
+Default.args = {}
 
 /**
  * Grid with Container behaviour.
  */
 export const ContainerGrid = Template.bind({})
 ContainerGrid.args = {
-  alignContent: 'stretch',
-  alignItems: 'stretch',
-  component: 'div',
   container: true,
-  direction: 'row',
-  item: false,
-  justify: 'flex-start',
-  lg: false,
-  md: false,
-  sm: false,
-  xl: false,
-  xs: false,
-  spacing: 0,
-  wrap: 'wrap',
-  zeroMinWidth: false
 }
 
 /**
@@ -69,19 +39,5 @@ ContainerGrid.args = {
  */
 export const ZeroMinWidthGrid = Template.bind({})
 ZeroMinWidthGrid.args = {
-  alignContent: 'stretch',
-  alignItems: 'stretch',
-  component: 'div',
-  container: false,
-  direction: 'row',
-  item: false,
-  justify: 'flex-start',
-  lg: false,
-  md: false,
-  sm: false,
-  xl: false,
-  xs: false,
-  spacing: 0,
-  wrap: 'wrap',
   zeroMinWidth: true
 }

@@ -9,7 +9,7 @@ export default {
   component: Container,
   parameters: {
     componentSubtitle: `${pkg.version} - ${pkg.name}`
-  },
+  }
 } as Meta
 
 const Template: Story<ContainerProps> = (args: any) => (
@@ -20,22 +20,14 @@ const Template: Story<ContainerProps> = (args: any) => (
  * Default Container
  */
 export const Default = Template.bind({})
-Default.args = {
-  component: 'div',
-  disableGutters: false,
-  fixed: false,
-  maxWidth: 'lg'
-}
+Default.args = {}
 
 /**
  * Container without left and right padding.
  */
 export const NoPadding = Template.bind({})
 NoPadding.args = {
-  component: 'div',
-  disableGutters: true,
-  fixed: false,
-  maxWidth: 'lg'
+  disableGutters: true
 }
 
 /**
@@ -43,8 +35,5 @@ NoPadding.args = {
  */
 export const FixedWidth = Template.bind({})
 FixedWidth.args = {
-  component: 'div',
-  disableGutters: false,
-  fixed: true,
-  maxWidth: 'lg'
+  fixed: true
 }

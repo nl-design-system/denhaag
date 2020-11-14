@@ -44,10 +44,10 @@ export const GridListTileBar: React.FC<GridListTileBarProps> = (
   return (
     <MaterialGridListTileBar
       title={props.title}
-      titlePosition={props.titlePosition}
+      titlePosition={props.titlePosition ?? 'bottom'}
       subtitle={props.subtitle}
       actionIcon={props.actionIcon}
-      actionPosition={props.actionPosition}
+      actionPosition={props.actionPosition ?? 'right'}
       classes={props.classes}
     />
   )

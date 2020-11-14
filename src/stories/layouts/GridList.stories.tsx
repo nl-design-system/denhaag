@@ -33,9 +33,4 @@ const Template: Story<GridListProps> = (args: any) => (
  * Implementation of a GridList.
  */
 export const Default = Template.bind({})
-Default.args = {
-  cellHeight: 180,
-  cols: 2,
-  component: 'ul',
-  spacing: 4
-}
+Default.args = {}

@@ -10,12 +10,12 @@ export interface BoxProps {
   /**
    * A boolean indicating whether the Box element should recycle it's children.
    */
-  clone: boolean
+  clone?: boolean
 
   /**
    * The component used for the root node. Either a string to use a HTMl element or a component.
    */
-  component: ElementType
+  component?: ElementType
 }
 
 /**
@@ -25,7 +25,7 @@ export interface BoxProps {
  */
 export const Box: React.FC<BoxProps> = (props: BoxProps) => {
   return (
-    <MaterialBox component={props.component} clone={props.clone}>
+    <MaterialBox component={props.component ?? 'div'} clone={props.clone ?? false}>
       {props.children}
     </MaterialBox>
   )

@@ -22,7 +22,4 @@ const Template: Story<BoxProps> = (args: any) => (
  * Implementation of Box
  */
 export const Default = Template.bind({})
-Default.args = {
-  clone: false,
-  component: 'div'
-}
+Default.args = {}

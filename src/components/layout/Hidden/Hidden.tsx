@@ -10,7 +10,7 @@ export interface HiddenProps {
   /**
    * Specify which implementation to use. 'js' is default.
    */
-  implementation: 'js' | 'css'
+  implementation?: 'js' | 'css'
 
   /**
    * Sets the initial width of the component.
@@ -32,43 +32,43 @@ export interface HiddenProps {
   /**
    * If true, screens of that size and smaller will be hidden.
    */
-  lgDown: boolean
+  lgDown?: boolean
   /**
    * If true, screens of that size and smaller will be hidden.
    */
-  lgUp: boolean
+  lgUp?: boolean
   /**
    * If true, screens of that size and smaller will be hidden.
    */
-  mdDown: boolean
+  mdDown?: boolean
   /**
    * If true, screens of that size and smaller will be hidden.
    */
-  mdUp: boolean
+  mdUp?: boolean
   /**
    * If true, screens of that size and smaller will be hidden.
    */
-  smDown: boolean
+  smDown?: boolean
   /**
    * If true, screens of that size and smaller will be hidden.
    */
-  smUp: boolean
+  smUp?: boolean
   /**
    * If true, screens of that size and smaller will be hidden.
    */
-  xlDown: boolean
+  xlDown?: boolean
   /**
    * If true, screens of that size and smaller will be hidden.
    */
-  xlUp: boolean
+  xlUp?: boolean
   /**
    * If true, screens of that size and smaller will be hidden.
    */
-  xsDown: boolean
+  xsDown?: boolean
   /**
    * If true, screens of that size and smaller will be hidden.
    */
-  xsUp: boolean
+  xsUp?: boolean
 }
 
 /**
@@ -79,16 +79,16 @@ export interface HiddenProps {
 export const Hidden: React.FC<HiddenProps> = (props: HiddenProps) => {
   return (
     <MaterialHidden
-      implementation={props.implementation}
+      implementation={props.implementation ?? 'js'}
       initialWidth={props.initialWidth}
       only={props.only}
-      lgDown={props.lgDown}
-      lgUp={props.lgUp}
-      mdDown={props.mdDown}
-      mdUp={props.mdUp}
-      smDown={props.smDown}
-      xlDown={props.xlDown}
-      xsUp={props.xsUp}
+      lgDown={props.lgDown ?? false}
+      lgUp={props.lgUp ?? false}
+      mdDown={props.mdDown ?? false}
+      mdUp={props.mdUp ?? false}
+      smDown={props.smDown ?? false}
+      xlDown={props.xlDown ?? false}
+      xsUp={props.xsUp ?? false}
     >
       {props.children}
     </MaterialHidden>
