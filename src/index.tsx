@@ -1,5 +1,6 @@
 import Button from './components/Button/Button'
 import Checkbox from './components/Checkbox/Checkbox'
+import Switch from './components/forms/Switch/Switch'
 import FormControlLabel from './components/FormControlLabel/FormControlLabel'
 import Box from './components/layout/Box/Box'
 import Container from './components/layout/Container/Container'
@@ -13,6 +14,7 @@ import Hidden from './components/layout/Hidden/Hidden'
 export {
   Button,
   Checkbox,
+  Switch,
   FormControlLabel,
   Box,
   Container,
