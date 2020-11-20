@@ -8,7 +8,7 @@ import pkg from '../components/DatePicker/package.json'
 export default {
   title: 'Components/DatePicker',
   parameters: {
-    componentSubtitle: pkg.version
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
   component: DatePicker
 } as Meta
