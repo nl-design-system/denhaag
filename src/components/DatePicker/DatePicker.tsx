@@ -7,24 +7,12 @@ export interface DatePickerProps {
   onChange: () => void
 }
 
-export interface PickersUtilsProviderProps {
-  utils: any
-  children: ReactNode
-}
-
 export const DatePicker: React.FC<DatePickerProps> = ({
   value,
   onChange,
   ...props
 }) => {
-  return <MaterialDatePicker value={value} onChange={onChange} />
-}
-
-export const PickersUtilsProvider: React.FC<PickersUtilsProviderProps> = ({
-  utils,
-  children
-}) => {
-  return <MuiPickersUtilsProvider utils={utils} children={children} />
+  return <MaterialDatePicker value={value} onChange={onChange} {...props} />
 }
 
 export default DatePicker
