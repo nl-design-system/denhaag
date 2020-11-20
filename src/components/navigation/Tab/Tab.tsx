@@ -1,5 +1,5 @@
-import React, { ElementType } from 'react'
-import MaterialTab from '@material-ui/core/Tabs'
+import React, { ElementType, ReactElement } from 'react'
+import MaterialTab from '@material-ui/core/Tab'
 
 export interface TabsProps {
   /**
@@ -31,7 +31,7 @@ export interface TabsProps {
   /**
    * The icon element.
    */
-  icon: ElementType
+  icon: ReactElement
 
   /**
    * The label element.
@@ -42,7 +42,7 @@ export interface TabsProps {
    * You can provide your own value.
    * Otherwise, we fallback to the child position index.
    */
-  value: any
+  value?: any
 
   /**
    * Tab labels appear in a single row.
@@ -57,7 +57,20 @@ export interface TabsProps {
  * @constructor Construct an instance of Tab.
  */
 export const Tab: React.FC<TabsProps> = (props: TabsProps) => {
-  return <MaterialTab />
+  return (
+    <MaterialTab
+      classes={props.classes}
+      disabled={props.disabled ?? false}
+      disableFocusRipple={props.disableFocusRipple ?? false}
+      disableRipple={props.disableRipple}
+      icon={props.icon}
+      label={props.label}
+      value={props.value}
+      wrapped={props.wrapped ?? false}
+    >
+      {props.children}
+    </MaterialTab>
+  )
 }
 
 export default Tab
