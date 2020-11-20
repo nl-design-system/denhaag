@@ -1,35 +1,57 @@
-import { Checkbox as MaterialCheckbox } from '@material-ui/core'
+import MaterialCheckbox from '@material-ui/core/Checkbox'
 import React from 'react'
 
 export interface CheckboxProps {
   /**
-   * If true the Checkbox is checked.
+   * If `true` the Checkbox is checked.
+   * See https://github.com/mui-org/material-ui/blob/master/docs/src/pages/components/checkboxes/Checkboxes.tsx
+   * For an example on the needed state machine to use this property.
    */
   checked?: boolean
+  /**
+   * If `true` then Checkbox will be checked by default.
+   */
+  defaultChecked?: boolean
+  /**
+   * If `true`, the component appears indeterminate.
+   */
+  indeterminate?: boolean
+  /**
+   * Attributes applied to the `input` element.
+   */
+  inputProps?: object
   /**
    * Color for the component.
    */
   color?: 'default' | 'primary' | 'secondary'
   /**
+   * Size of the component.
+   */
+  size?: 'small' | 'medium'
+  /**
    * Disables Checkbox
    */
   disabled?: boolean
+  /**
+   * Callback fired when the state is changed.
+   */
+  onChange?: () => void
 }
 
 /**
  * Checkboxes allow the user to select one or more items from a set.
  */
-export const Checkbox: React.FC<CheckboxProps> = ({
-  checked,
-  color = 'default',
-  disabled,
-  ...props
-}) => {
+export const Checkbox: React.FC<CheckboxProps> = (props: CheckboxProps) => {
   return (
     <MaterialCheckbox
-      color={color}
-      disabled={disabled}
-      checked={checked}
+      checked={props.checked}
+      defaultChecked={props.defaultChecked}
+      indeterminate={props.indeterminate}
+      inputProps={props.inputProps}
+      color={props.color}
+      size={props.size}
+      disabled={props.disabled}
+      onChange={props.onChange}
       {...props}
     />
   )
