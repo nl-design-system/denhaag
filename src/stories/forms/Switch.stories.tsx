@@ -18,6 +18,7 @@ const Template: Story<SwitchProps> = (args: any) => {
  */
 export const Default: Story<SwitchProps> = Template.bind({})
 Default.args = {
+  color: 'default',
   disabled: false
 }
 
