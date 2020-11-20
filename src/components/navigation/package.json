@@ -4,10 +4,21 @@
   "dependencies": {
     "@material-ui/core": "^4",
     "nlds-react-components-drawer": "^0.1.0",
+    "nlds-react-components-menu": "^0.1.0",
+    "nlds-react-components-menuitem": "^0.1.0",
+    "nlds-react-components-menulist": "^0.1.0",
     "nlds-react-components-popover": "^0.1.0",
     "nlds-react-components-popper": "^0.1.0",
     "nlds-react-components-stepper": "^0.1.0",
     "nlds-react-components-mobilestepper": "^0.1.0",
-    "nlds-react-components-tabs": "^0.1.0"
+    "nlds-react-components-step": "^0.1.0",
+    "nlds-react-components-stepbutton": "^0.1.0",
+    "nlds-react-components-stepconnector": "^0.1.0",
+    "nlds-react-components-stepcontent": "^0.1.0",
+    "nlds-react-components-stepicon": "^0.1.0",
+    "nlds-react-components-steplabel": "^0.1.0",
+    "nlds-react-components-tabs": "^0.1.0",
+    "nlds-react-components-tab": "^0.1.0",
+    "nlds-react-components-tabscrollbutton": "^0.1.0"
   }
 }
