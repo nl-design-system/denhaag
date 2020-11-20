@@ -6,7 +6,7 @@ export interface MenuProps {
    * A HTML element, or a function that returns it.
    * It's used to set the position of the menu.
    */
-  anchorEl: HTMLElement
+  anchorEl: HTMLElement | null
 
   /**
    * If true (Default) will focus the [role="menu"] if no focusable child is found.
@@ -19,7 +19,7 @@ export interface MenuProps {
   /**
    * Override or extend the styles applied to the component.
    */
-  classes: object
+  classes?: object
 
   /**
    * Menu contents, normally MenuItems.
