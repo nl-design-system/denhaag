@@ -8,7 +8,7 @@ import pkg from '../components/Checkbox/package.json'
 export default {
   title: 'Components/Checkbox',
   parameters: {
-    componentSubtitle: pkg.version
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
   component: Checkbox
 } as Meta
@@ -21,9 +21,6 @@ const Template: Story<CheckboxProps> = (args: any) => (
  * Default Checkbox
  */
 export const Default: Story<CheckboxProps> = Template.bind({})
-Default.args = {
-  color: 'default'
-}
 
 /**
  * Primary Checkbox
@@ -46,8 +43,7 @@ Secondary.args = {
  */
 export const CheckedByDefault: Story<CheckboxProps> = Template.bind({})
 CheckedByDefault.args = {
-  defaultChecked: true,
-  color: 'default'
+  defaultChecked: true
 }
 
 /**
@@ -55,8 +51,7 @@ CheckedByDefault.args = {
  */
 export const Small: Story<CheckboxProps> = Template.bind({})
 Small.args = {
-  size: 'small',
-  color: 'default'
+  size: 'small'
 }
 
 /**
@@ -64,8 +59,7 @@ Small.args = {
  */
 export const Indeterminate: Story<CheckboxProps> = Template.bind({})
 Indeterminate.args = {
-  indeterminate: true,
-  color: 'default'
+  indeterminate: true
 }
 
 /**
@@ -73,6 +67,5 @@ Indeterminate.args = {
  */
 export const Disabled: Story<CheckboxProps> = Template.bind({})
 Disabled.args = {
-  disabled: true,
-  color: 'default'
+  disabled: true
 }

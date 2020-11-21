@@ -8,7 +8,7 @@ import pkg from '../components/FormControlLabel/package.json'
 export default {
   title: 'Forms/FormControlLabel',
   parameters: {
-    componentSubtitle: pkg.version
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
   component: FormControlLabel
 }
