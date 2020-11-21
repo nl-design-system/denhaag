@@ -1,11 +1,12 @@
 {
   "name": "nlds-react-components-pickers",
   "version": "0.1.0",
-  "description": "A library of React components for the Design System of The Netherlands",
+  "description": "A collection of Pickers",
   "author": "Municipality of The Hague",
   "license": "MIT",
   "dependencies": {
-    "nlds-react-components-datepicker": "^0.1",
-    "nlds-react-components-pickersutilsprovider": "^0.1"
+    "nlds-react-components-pickers-datepicker": "^0.1.0",
+    "nlds-react-components-pickers-utilsprovider": "^0.1.0",
+    "nlds-react-components-pickers-basedatepickerprops": "^0.1.0"
   }
 }
