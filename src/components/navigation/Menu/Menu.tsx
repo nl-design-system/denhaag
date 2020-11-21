@@ -83,7 +83,7 @@ export interface MenuProps {
   /**
    * classes prop applied to the Popover element.
    */
-  PopoverClasses: object
+  PopoverClasses?: object
 
   /**
    * The length of the transition in ms, or 'auto'

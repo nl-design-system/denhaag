@@ -5,7 +5,7 @@ export interface StepLabelProps {
   /**
    * Override or extend the styles applied to the component.
    */
-  classes: object
+  classes?: object
 
   /**
    * In most cases will simply be a string containing a title for the label.
@@ -36,12 +36,12 @@ export interface StepLabelProps {
   /**
    * The component to render in place of the StepIcon.
    */
-  StepIconComponent: ElementType
+  StepIconComponent?: ElementType
 
   /**
    * Props applied to the StepIcon element.
    */
-  StepIconProps: object
+  StepIconProps?: object
 }
 
 /**

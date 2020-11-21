@@ -5,7 +5,7 @@ export interface StepContentProps {
   /**
    * Override or extend the styles applied to the component.
    */
-  classes: object
+  classes?: object
 
   /**
    * Step content.

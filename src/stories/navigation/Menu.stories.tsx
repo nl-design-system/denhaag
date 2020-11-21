@@ -3,40 +3,52 @@ import { Meta, Story } from '@storybook/react'
 import { Menu } from '../..'
 import { MenuProps } from '../../components/navigation/Menu/Menu'
 import MenuItem from '../../components/navigation/MenuItem/MenuItem'
+import pkg from '../../components/navigation/Menu/package.json'
 
 export default {
   title: 'Components/Navigation/Menu',
+  parameters: {
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
+  },
   component: Menu
 } as Meta
 
-// @ts-ignore
-// eslint-disable-next-line no-unused-vars
-const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null)
+let opened = true
 
 const Template: Story<MenuProps> = (args: any) => (
-  // <div>
-  //   <button onClick={(event) => setAnchorEl(event.currentTarget)}>
-  //     Click me to open!
-  //   </button>
   <Menu {...args}>
-    <MenuItem dense={false}>
+    <MenuItem dense={false} onClick={() => (opened = false)}>
+      <p>
+        The "open" property is set to true to force the menu to be visible for
+        demo purposes.
+      </p>
+    </MenuItem>
+    <MenuItem dense={false} onClick={() => (opened = false)}>
       <span>Click me!</span>
     </MenuItem>
-    <MenuItem dense={false}>
+    <MenuItem dense={false} onClick={() => (opened = false)}>
       <span>Or me!</span>
     </MenuItem>
-    <MenuItem dense={false}>
+    <MenuItem dense={false} onClick={() => (opened = false)}>
       <span>Or me!</span>
     </MenuItem>
   </Menu>
-  // </div>
 )
 
 /**
- * Implementation of Menu
+ * Default implementation of the Menu component.
+ * "open" property is set to true to force the menu's visibility for demo purposes.
  */
 export const Default = Template.bind({})
 Default.args = {
-  anchorEl: anchorEl,
-  PopoverClasses: {}
+  open: opened
+}
+
+/**
+ * Menu implemented with 'Menu' variant.
+ */
+export const MenuVariant = Template.bind({})
+MenuVariant.args = {
+  open: opened,
+  variant: 'menu'
 }

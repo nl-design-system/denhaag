@@ -20,7 +20,7 @@ export interface MenuItemProps {
   /**
    * If true, compact vertical padding designed for keyboard and mouse input will be used.
    */
-  dense: boolean
+  dense?: boolean
 
   /**
    * If true, the left and right padding is removed.
@@ -31,6 +31,11 @@ export interface MenuItemProps {
    * classes prop applied to the ListItem element.
    */
   ListItemClasses?: object
+
+  /**
+   * Callback fired when the item is clicked.
+   */
+  onClick?: () => void
 }
 
 /**
@@ -46,6 +51,7 @@ export const MenuItem: React.FC<MenuItemProps> = (props: MenuItemProps) => {
       dense={props.dense}
       disableGutters={props.disableGutters ?? false}
       ListItemClasses={props.ListItemClasses}
+      onClick={props.onClick}
     >
       {props.children}
     </MaterialMenuItem>

@@ -1,13 +1,7 @@
-import React, { ElementType, ReactElement } from 'react'
+import React, { ReactElement } from 'react'
 import MaterialTab from '@material-ui/core/Tab'
 
 export interface TabsProps {
-  /**
-   * This prop isn't supported.
-   * Use the component prop if you need to change the children structure.
-   */
-  children: ElementType
-
   /**
    * Override or extend the styles applied to the component.
    */
@@ -26,23 +20,23 @@ export interface TabsProps {
   /**
    * If true, the ripple effect will be disabled.
    */
-  disableRipple: boolean
+  disableRipple?: boolean
 
   /**
    * The icon element.
    */
-  icon: ReactElement
+  icon?: ReactElement
 
   /**
    * The label element.
    */
-  label: ElementType
+  label: React.ReactNode
 
   /**
    * You can provide your own value.
    * Otherwise, we fallback to the child position index.
    */
-  value?: any
+  value: any
 
   /**
    * Tab labels appear in a single row.
@@ -67,9 +61,7 @@ export const Tab: React.FC<TabsProps> = (props: TabsProps) => {
       label={props.label}
       value={props.value}
       wrapped={props.wrapped ?? false}
-    >
-      {props.children}
-    </MaterialTab>
+    />
   )
 }
 

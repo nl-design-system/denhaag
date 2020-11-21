@@ -15,6 +15,8 @@ import Popper from './components/navigation/Popper/Popper'
 import Tabs from './components/navigation/Tabs/Tabs'
 import Drawer from './components/navigation/Drawer/Drawer'
 import SwipeableDrawer from './components/navigation/SwipeableDrawer/SwipeableDrawer'
+import MenuItem from './components/navigation/MenuItem/MenuItem'
+import MenuList from './components/navigation/MenuList/MenuList'
 
 /**
  * Primary UI component for user interaction
@@ -30,6 +32,8 @@ export {
   GridList,
   Hidden,
   Menu,
+  MenuItem,
+  MenuList,
   Stepper,
   MobileStepper,
   Popover,

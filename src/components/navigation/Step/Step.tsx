@@ -5,12 +5,12 @@ export interface StepProps {
   /**
    * Override or extend the styles applied to the component.
    */
-  classes: object
+  classes?: object
 
   /**
    * Should be Step sub-components such as StepLabel, StepContent.
    */
-  children: ReactElement
+  children: ReactElement[]
 
   /**
    * Sets the step as active.

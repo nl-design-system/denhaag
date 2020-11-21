@@ -5,17 +5,17 @@ export interface TabsProps {
   /**
    * Override or extend the styles applied to the component.
    */
-  classes: object
+  classes?: object
 
   /**
    * The content of the component
    */
-  children: ReactElement
+  children: ReactElement[]
 
   /**
    * Callback fired when the component mounts.
    */
-  action: () => void
+  action?: () => void
 
   /**
    * The label for the Tabs as a string.
@@ -91,7 +91,7 @@ export interface TabsProps {
    * The value of the currently selected Tab.
    * If you don't want any selected Tab, you can set this property to false.
    */
-  value: any
+  value: any | false
 
   /**
    * Determines additional display behavior of the tabs:
