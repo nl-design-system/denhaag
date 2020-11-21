@@ -1,5 +1,6 @@
 import Button from './components/Button/Button'
 import Checkbox from './components/Checkbox/Checkbox'
+import TextField from './components/forms/TextField/TextField'
 import FormControlLabel from './components/FormControlLabel/FormControlLabel'
 import FormGroup from './components/FormGroup/FormGroup'
 import Box from './components/layout/Box/Box'
@@ -14,6 +15,7 @@ import Hidden from './components/layout/Hidden/Hidden'
 export {
   Button,
   Checkbox,
+  TextField,
   FormControlLabel,
   FormGroup,
   Box,

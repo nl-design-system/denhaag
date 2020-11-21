@@ -1,0 +1,10 @@
+{
+  "name": "nlds-react-components-forms",
+  "version": "0.1.0",
+  "description": "A package containing all the forms components",
+  "author": "Municipality of The Hague",
+  "license": "MIT",
+  "dependencies": {
+    "nlds-react-components-textfield": "^0.1.0"
+  }
+}
