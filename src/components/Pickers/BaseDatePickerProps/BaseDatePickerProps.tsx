@@ -1,7 +1,17 @@
 import { ParsableDate } from '@material-ui/pickers/constants/prop-types'
 import { DateIOType } from '@material-ui/pickers/typings/BasePicker'
-import { IconButtonProps, PopoverProps } from '@material-ui/core'
-import { ReactElement, ReactNode } from 'react'
+import {
+  IconButtonProps,
+  PopoverProps,
+  TextFieldProps
+} from '@material-ui/core'
+import {
+  ReactElement,
+  ReactNode,
+  ComponentClass,
+  FunctionComponent
+} from 'react'
+import { ToolbarComponentProps } from '@material-ui/pickers/Picker/Picker'
 
 export interface BaseDatePickerProps {
   /**
@@ -165,6 +175,19 @@ export interface BaseDatePickerProps {
    * Compare dates by the exact timestamp, instead of start/end of date
    */
   strictCompareDates?: boolean
+  /**
+   * Override input component
+   */
+  TextFieldComponent:
+    | ComponentClass<TextFieldProps, any>
+    | FunctionComponent<TextFieldProps>
+  /**
+   * Component that will replace default toolbar renderer
+   */
+  ToolbarComponent:
+    | ComponentClass<ToolbarComponentProps, any>
+    | FunctionComponent<ToolbarComponentProps>
+
   /**
    * Picker container option
    */

@@ -6,6 +6,10 @@ export interface PickersUtilsProviderProps {
   children: ReactNode
 }
 
+/**
+ * Utils provider for pickers
+ * @param props
+ */
 export const PickersUtilsProvider: React.FC<PickersUtilsProviderProps> = (
   props: PickersUtilsProviderProps
 ) => {
