@@ -1,6 +1,6 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
-import pkg from '../../components/package.json'
+import pkg from '../../components/forms/Switch/package.json'
 import Switch, { SwitchProps } from '../../components/forms/Switch/Switch'
 import { FormControlLabel } from '../../components/FormControlLabel/FormControlLabel'
 
@@ -16,7 +16,7 @@ const Template: Story<SwitchProps> = (args: any) => {
   return (
     <div>
       <FormControlLabel
-        label='Default checked switch'
+        label='Checked switch'
         control={<Switch defaultChecked {...args} />}
       />
       <FormControlLabel
