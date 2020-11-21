@@ -1,5 +1,5 @@
 import { DatePicker as MaterialDatePicker } from '@material-ui/pickers'
-import { DateIOType } from '@material-ui/pickers/typings/BasePicker'
+import { MaterialUiPickersDate as DateIOType } from '@material-ui/pickers/typings/date'
 import React, { ReactNode } from 'react'
 import BaseDatePickerProps from '../BaseDatePickerProps/BaseDatePickerProps'
 import { InputAdornmentProps, IconButtonProps } from '@material-ui/core'

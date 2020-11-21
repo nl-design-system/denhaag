@@ -1,5 +1,5 @@
 import { ParsableDate } from '@material-ui/pickers/constants/prop-types'
-import { DateIOType } from '@material-ui/pickers/typings/BasePicker'
+import { MaterialUiPickersDate as DateIOType } from '@material-ui/pickers/typings/date'
 import {
   IconButtonProps,
   PopoverProps,
