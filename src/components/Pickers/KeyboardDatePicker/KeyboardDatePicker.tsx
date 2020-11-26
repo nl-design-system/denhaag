@@ -40,7 +40,7 @@ export interface KeyboardDatePickerProps extends BaseDatePickerProps {
   /**
    * Custom formatter to be passed into Rifm component
    */
-  rifmFormatter: (str: string) => string
+  rifmFormatter?: (str: string) => string
 }
 
 export const KeyboardDatePicker: React.FC<KeyboardDatePickerProps> = (

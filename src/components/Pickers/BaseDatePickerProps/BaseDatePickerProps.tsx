@@ -178,13 +178,13 @@ export interface BaseDatePickerProps {
   /**
    * Override input component
    */
-  TextFieldComponent:
+  TextFieldComponent?:
     | ComponentClass<TextFieldProps, any>
     | FunctionComponent<TextFieldProps>
   /**
    * Component that will replace default toolbar renderer
    */
-  ToolbarComponent:
+  ToolbarComponent?:
     | ComponentClass<ToolbarComponentProps, any>
     | FunctionComponent<ToolbarComponentProps>
 
