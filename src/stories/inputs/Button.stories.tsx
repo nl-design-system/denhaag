@@ -6,7 +6,7 @@ import { ButtonProps } from '../../components/inputs/Button/Button'
 import pkg from '../../components/inputs/Button/package.json'
 
 export default {
-  title: 'Components/Button',
+  title: 'Components/Inputs/Button',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`
   },

@@ -5,7 +5,7 @@ import Switch, { SwitchProps } from '../../components/inputs/Switch/Switch'
 import { FormControlLabel } from '../../components/inputs/FormControlLabel/FormControlLabel'
 
 export default {
-  title: 'Components/Forms/Switch',
+  title: 'Components/Inputs/Switch',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`
   },

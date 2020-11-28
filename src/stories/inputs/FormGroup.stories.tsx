@@ -7,7 +7,7 @@ import FormGroup, { FormGroupProps } from '../../components/inputs/FormGroup/For
 import pkg from '../../components/inputs/FormGroup/package.json'
 
 export default {
-  title: 'Forms/FormGroup',
+  title: 'Forms/Inputs/FormGroup',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`
   },

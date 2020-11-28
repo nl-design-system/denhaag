@@ -6,7 +6,7 @@ import FormControlLabel from '../../components/inputs/FormControlLabel/FormContr
 import pkg from '../../components/inputs/Checkbox/package.json'
 
 export default {
-  title: 'Components/Checkbox',
+  title: 'Components/Inputs/Checkbox',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
