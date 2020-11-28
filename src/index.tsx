@@ -1,4 +1,4 @@
-import Button from './components/forms/Button/Button'
+import Button from './components/input/Button/Button'
 import Checkbox from './components/input/Checkbox/Checkbox'
 import Switch from './components/input/Switch/Switch'
 import FormControlLabel from './components/input/FormControlLabel/FormControlLabel'
