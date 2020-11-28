@@ -5,12 +5,12 @@ export interface AccordionDetailsProps {
   /**
    * Override or extend the styles applied to the component.
    */
-  classes: object
+  classes?: object
 
   /**
    * The content of the component
    */
-  children: ReactElement
+  children: ReactElement[] | ReactElement
 }
 
 /**

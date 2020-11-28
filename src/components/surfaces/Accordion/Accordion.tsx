@@ -10,7 +10,7 @@ export interface AccordionProps {
   /**
    * The content of the component
    */
-  children: ReactElement
+  children: ReactElement[]
 
   /**
    * If true, expands the Accordion by default.

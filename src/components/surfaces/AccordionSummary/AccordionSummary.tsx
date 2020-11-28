@@ -20,7 +20,7 @@ export interface AccordionSummaryProps {
   /**
    * Props applied to the IconButton element wrapping the expand icon.
    */
-  IconButtonProps: object
+  IconButtonProps?: object
 }
 
 /**
