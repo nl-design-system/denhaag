@@ -23,9 +23,7 @@ export interface FormGroupProps {
 export const FormGroup: React.FC<FormGroupProps> = (props: FormGroupProps) => {
   return (
     <MaterialFormGroup
-      children={props.children}
-      classes={props.classes}
-      row={props.row}
+      {...props}
     />
   )
 }
