@@ -1,34 +1,44 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
-import TextField, { TextFieldProps } from '../../components/forms/TextField/TextField'
+import pkg from '../../components/forms/TextField/package.json'
+import { TextField } from '../../index'
+import { BaseTextFieldProps } from '../../components/forms/TextField/BaseTextFieldProps'
 
 export default {
   title: 'Components/Forms/TextField',
-  component: TextField
+  parameters: {
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
+  },
+  component: TextField,
+  argTypes: {
+    variant: {
+      table: { disable: true }
+    }
+  }
 } as Meta
 
-const Template: Story<TextFieldProps> = (args: TextFieldProps) => {
+const Template: Story<BaseTextFieldProps> = (args: BaseTextFieldProps) => {
   return <TextField {...args} />
 }
 
 /**
  * Default TextField
  */
-export const Default: Story<TextFieldProps> = Template.bind({})
+export const Default: Story<BaseTextFieldProps> = Template.bind({})
 Default.args = {
   label: 'Default text field'
 }
 /**
  * Primary TextField
  */
-export const Primary: Story<TextFieldProps> = Template.bind({})
+export const Primary: Story<BaseTextFieldProps> = Template.bind({})
 Primary.args = {
   label: 'Primary text field'
 }
 /**
  * Secondary TextField
  */
-export const Secondary: Story<TextFieldProps> = Template.bind({})
+export const Secondary: Story<BaseTextFieldProps> = Template.bind({})
 Secondary.args = {
   label: 'Secondary text field',
   color: 'secondary'
@@ -36,7 +46,7 @@ Secondary.args = {
 /**
  * Disabled TextField
  */
-export const Disabled: Story<TextFieldProps> = Template.bind({})
+export const Disabled: Story<BaseTextFieldProps> = Template.bind({})
 Disabled.args = {
   label: 'Disabled text field',
   disabled: true
@@ -63,7 +73,7 @@ const currencies = [
   }
 ]
 
-export const Select = (props: TextFieldProps) => (
+export const Select = (props: BaseTextFieldProps) => (
   <TextField
     select
     SelectProps={{ native: true }}
