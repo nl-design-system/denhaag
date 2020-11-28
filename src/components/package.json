@@ -10,6 +10,7 @@
     "nlds-react-components-formcontrollabel": "^0.1.0",
     "nlds-react-components-layout": "^0.1.0",
     "nlds-react-components-switch": "^0.1.0",
-    "nlds-react-components-formgroup": "^0.1.0"
+    "nlds-react-components-formgroup": "^0.1.0",
+    "nlds-react-components-forms": "^0.1.0"
   }
 }
