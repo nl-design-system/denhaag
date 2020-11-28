@@ -41,11 +41,6 @@ export interface AccordionProps {
   square?: boolean
 
   /**
-   * The component used for the collapse effect.
-   */
-  TransitionComponent?: any
-
-  /**
    * Props applied to the Transition element.
    */
   TransitionProps?: object

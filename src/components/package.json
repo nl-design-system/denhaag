@@ -12,7 +12,6 @@
     "nlds-react-components-switch": "^0.1.0",
     "nlds-react-components-formgroup": "^0.1.0",
     "nlds-react-components-forms": "^0.1.0",
-    "nlds-react-components-surfaces": "^0.1.0",
-    "nlds-react-components-utils": "^0.1.0"
+    "nlds-react-components-surfaces": "^0.1.0"
   }
 }
