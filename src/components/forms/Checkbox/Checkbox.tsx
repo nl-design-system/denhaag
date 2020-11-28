@@ -44,14 +44,6 @@ export interface CheckboxProps {
 export const Checkbox: React.FC<CheckboxProps> = (props: CheckboxProps) => {
   return (
     <MaterialCheckbox
-      checked={props.checked}
-      defaultChecked={props.defaultChecked}
-      indeterminate={props.indeterminate}
-      inputProps={props.inputProps}
-      color={props.color}
-      size={props.size}
-      disabled={props.disabled}
-      onChange={props.onChange}
       {...props}
     />
   )
