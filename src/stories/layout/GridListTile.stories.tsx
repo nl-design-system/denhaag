@@ -1,7 +1,10 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
 import { GridList } from '../..'
-import { GridListTile, GridListTileProps } from '../../components/layout/GridListTile/GridListTile'
+import {
+  GridListTile,
+  GridListTileProps
+} from '../../components/layout/GridListTile/GridListTile'
 import pkg from '../../components/layout/GridListTile/package.json'
 
 export default {
@@ -15,11 +18,13 @@ export default {
 const Template: Story<GridListTileProps> = (args: any) => (
   <GridList>
     <GridListTile {...args}>
-      <p>
-        This is a GridListTile. It belongs inside a GridList element.
-        <br />
-        Usually this would contain an image.
-      </p>
+      <p>This is a GridListTile.</p>
+    </GridListTile>
+    <GridListTile {...args}>
+      <p>GridListTile components belong inside a GridList element.</p>
+    </GridListTile>
+    <GridListTile {...args}>
+      <p>Usually, GridListTile components would contain an image.</p>
     </GridListTile>
   </GridList>
 )

@@ -37,14 +37,7 @@ export const GridListTile: React.FC<GridListTileProps> = (
   props: GridListTileProps
 ) => {
   return (
-    <MaterialGridListTile
-      classes={props.classes}
-      cols={props.cols ?? 1}
-      component={props.component ?? 'li'}
-      rows={props.rows ?? 1}
-    >
-      {props.children}
-    </MaterialGridListTile>
+    <MaterialGridListTile {...props}>{props.children}</MaterialGridListTile>
   )
 }
 

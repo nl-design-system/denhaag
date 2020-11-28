@@ -90,28 +90,7 @@ export interface GridProps {
  * @constructor Constructs an instance of Grid.
  */
 export const Grid: React.FC<GridProps> = (props: GridProps) => {
-  return (
-    <MaterialGrid
-      alignContent={props.alignContent ?? 'stretch'}
-      alignItems={props.alignItems ?? 'stretch'}
-      classes={props.classes}
-      component={props.component ?? 'div'}
-      container={props.container ?? false}
-      direction={props.direction ?? 'row'}
-      item={props.item ?? false}
-      justify={props.justify ?? 'flex-start'}
-      lg={props.lg ?? false}
-      md={props.md ?? false}
-      sm={props.sm ?? false}
-      xl={props.xl ?? false}
-      xs={props.xs ?? false}
-      spacing={props.spacing ?? 0}
-      wrap={props.wrap ?? 'wrap'}
-      zeroMinWidth={props.zeroMinWidth ?? false}
-    >
-      {props.children}
-    </MaterialGrid>
-  )
+  return <MaterialGrid {...props}>{props.children}</MaterialGrid>
 }
 
 /**

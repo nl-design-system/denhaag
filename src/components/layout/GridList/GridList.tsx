@@ -10,7 +10,7 @@ export interface GridListProps {
   /**
    * List Tiles which will be in GridList.
    */
-  children: ReactElement
+  children: ReactElement[]
 
   /**
    * Overrides or extends the styles applied to the component.
@@ -39,17 +39,7 @@ export interface GridListProps {
  * @constructor Constructs an instance of GridList.
  */
 export const GridList: React.FC<GridListProps> = (props: GridListProps) => {
-  return (
-    <MaterialGridList
-      cellHeight={props.cellHeight ?? 180}
-      classes={props.classes}
-      cols={props.cols ?? 2}
-      component={props.component ?? 'ul'}
-      spacing={props.spacing ?? 4}
-    >
-      {props.children}
-    </MaterialGridList>
-  )
+  return <MaterialGridList {...props}>{props.children}</MaterialGridList>
 }
 
 /**

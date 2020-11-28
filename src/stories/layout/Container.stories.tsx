@@ -9,7 +9,6 @@ export default {
   component: Container,
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`
-
   }
 } as Meta
 

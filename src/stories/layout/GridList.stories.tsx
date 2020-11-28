@@ -15,15 +15,15 @@ export default {
 
 const Template: Story<GridListProps> = (args: any) => (
   <GridList {...args}>
-    <GridListTile cols={1} component='li' rows={1}>
-      <p>This is a tile inside a GridList.</p>
+    <GridListTile>
+      <p>This is a GridListTile inside a GridList.</p>
     </GridListTile>
-    <GridListTile cols={1} component='li' rows={1}>
+    <GridListTile>
       <img
         src='https://ciconiaconsort.nl/wp-content/uploads/2016/02/Gemeente-Den-Haag-logo2-640x612.jpg'
         alt='The Hague municipality emblem'
-        width={180}
-        height={180}
+        width={150}
+        height={150}
       />
     </GridListTile>
   </GridList>

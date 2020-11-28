@@ -24,11 +24,7 @@ export interface BoxProps {
  * @constructor Constructs an instance of Box.
  */
 export const Box: React.FC<BoxProps> = (props: BoxProps) => {
-  return (
-    <MaterialBox component={props.component ?? 'div'} clone={props.clone ?? false}>
-      {props.children}
-    </MaterialBox>
-  )
+  return <MaterialBox {...props}>{props.children}</MaterialBox>
 }
 
 /**

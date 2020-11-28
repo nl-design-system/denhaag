@@ -39,17 +39,7 @@ export interface ContainerProps {
  * @constructor Constructs an instance of Container.
  */
 export const Container: React.FC<ContainerProps> = (props: ContainerProps) => {
-  return (
-    <MaterialContainer
-      classes={props.classes}
-      component={props.component ?? 'div'}
-      fixed={props.fixed ?? false}
-      maxWidth={props.maxWidth ?? 'lg'}
-      disableGutters={props.disableGutters ?? false}
-    >
-      {props.children}
-    </MaterialContainer>
-  )
+  return <MaterialContainer {...props}>{props.children}</MaterialContainer>
 }
 
 /**

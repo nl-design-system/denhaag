@@ -19,13 +19,13 @@ export default {
 } as Meta
 
 const Template: Story<GridListTileBarProps> = (args: any) => (
-  <GridList>
-    <GridListTile>
+  <GridList cols={5}>
+    <GridListTile cols={1} rows={2}>
       <img
         src='https://ciconiaconsort.nl/wp-content/uploads/2016/02/Gemeente-Den-Haag-logo2-640x612.jpg'
         alt='The Hague municipality emblem'
-        width={250}
-        height={250}
+        width={150}
+        height={150}
       />
       <GridListTileBar {...args} />
     </GridListTile>

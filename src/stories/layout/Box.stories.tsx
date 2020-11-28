@@ -14,7 +14,7 @@ export default {
 
 const Template: Story<BoxProps> = (args: any) => (
   <Box {...args}>
-    <p>Box</p>
+    <p>This is a Box component.</p>
   </Box>
 )
 
