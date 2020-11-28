@@ -33,13 +33,15 @@ export interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
-export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
+export const Button: React.FC<ButtonProps> = ({
+  children,
+  ...props
+}) => {
   return (
-    <MaterialButton
-      {...props}
-    >
-      {children}
-    </MaterialButton>
+    <MaterialButton {...props}
+      >
+        {children}
+      </MaterialButton>
   )
 }
 
