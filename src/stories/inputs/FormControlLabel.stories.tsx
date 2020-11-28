@@ -6,7 +6,7 @@ import FormControlLabel, { FormControlLabelProps } from '../../components/inputs
 import pkg from '../../components/inputs/FormControlLabel/package.json'
 
 export default {
-  title: 'Forms/FormControlLabel',
+  title: 'Forms/Inputs/FormControlLabel',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
