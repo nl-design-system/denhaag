@@ -18,13 +18,22 @@ export default {
 const Template: Story<GridListTileProps> = (args: any) => (
   <GridList>
     <GridListTile {...args}>
-      <p>This is a GridListTile.</p>
+      <img
+        src='https://support.image-line.com/innovaeditor/assets/KnowledgeBase/flStudio11Demo[1].png'
+        alt='A picture of a square block with the word demo written in neon blue on the top.'
+      />
     </GridListTile>
     <GridListTile {...args}>
-      <p>GridListTile components belong inside a GridList element.</p>
+      <img
+        src='https://mentorphiledotcom.files.wordpress.com/2018/09/livedemo-1.png'
+        alt='Picture for demonstrating the GridListTile component.'
+      />
     </GridListTile>
     <GridListTile {...args}>
-      <p>Usually, GridListTile components would contain an image.</p>
+      <img
+        src='https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/Demos.jpg/1200px-Demos.jpg'
+        alt='A picture of four cassette tapes for demonstrating the GridListTile component.'
+      />
     </GridListTile>
   </GridList>
 )
