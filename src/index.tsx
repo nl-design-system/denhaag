@@ -8,6 +8,7 @@ import Container from './components/layout/Container/Container'
 import Grid from './components/layout/Grid/Grid'
 import GridList from './components/layout/GridList/GridList'
 import Hidden from './components/layout/Hidden/Hidden'
+import TextField from './components/input/TextField/TextField'
 
 /**
  * Primary UI component for user interaction
