@@ -12,6 +12,13 @@ const Template: Story<TextFieldProps> = (args: TextFieldProps) => {
 }
 
 /**
+ * Default TextField
+ */
+export const Default: Story<TextFieldProps> = Template.bind({})
+Default.args = {
+  label: 'Default text field'
+}
+/**
  * Primary TextField
  */
 export const Primary: Story<TextFieldProps> = Template.bind({})
@@ -25,22 +32,6 @@ export const Secondary: Story<TextFieldProps> = Template.bind({})
 Secondary.args = {
   label: 'Secondary text field',
   color: 'secondary'
-}
-/**
- * Outlined TextField
- */
-export const Outlined: Story<TextFieldProps> = Template.bind({})
-Outlined.args = {
-  label: 'Outlined text field',
-  variant: 'outlined'
-}
-/**
- * Filled TextField
- */
-export const Filled: Story<TextFieldProps> = Template.bind({})
-Filled.args = {
-  label: 'Filled text field',
-  variant: 'filled'
 }
 /**
  * Disabled TextField
