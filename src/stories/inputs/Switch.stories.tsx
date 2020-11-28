@@ -1,11 +1,11 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
-import pkg from '../../components/inputs/Switch/package.json'
-import Switch, { SwitchProps } from '../../components/inputs/Switch/Switch'
-import { FormControlLabel } from '../../components/inputs/FormControlLabel/FormControlLabel'
+import pkg from '../../components/input/Switch/package.json'
+import Switch, { SwitchProps } from '../../components/input/Switch/Switch'
+import { FormControlLabel } from '../../components/input/FormControlLabel/FormControlLabel'
 
 export default {
-  title: 'Components/Inputs/Switch',
+  title: 'Components/Input/Switch',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
