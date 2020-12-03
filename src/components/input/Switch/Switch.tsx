@@ -1,4 +1,4 @@
-import { Switch as MaterialSwitch } from '@material-ui/core'
+import MaterialSwitch from '@material-ui/core/Switch'
 import React from 'react'
 
 export interface SwitchProps {
