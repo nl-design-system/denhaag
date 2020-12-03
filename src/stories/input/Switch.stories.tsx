@@ -12,7 +12,7 @@ export default {
   component: Switch
 } as Meta
 
-const Template: Story<SwitchProps> = (args: any, secondaryArgs: any) => {
+const Template: Story<SwitchProps> = (args: any) => {
   return (
     <div>
       <FormControlLabel label='Switch' control={<Switch {...args} />} />
