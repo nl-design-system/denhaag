@@ -37,12 +37,7 @@ export const TabScrollButton: React.FC<TabScrollButtonProps> = (
   props: TabScrollButtonProps
 ) => {
   return (
-    <MaterialTabScrollButton
-      classes={props.classes}
-      direction={props.direction}
-      disabled={props.disabled}
-      orientation={props.orientation}
-    >
+    <MaterialTabScrollButton {...props}>
       {props.children}
     </MaterialTabScrollButton>
   )

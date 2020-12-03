@@ -50,17 +50,7 @@ export interface StepLabelProps {
  * @constructor Constructs an instance of StepLabel.
  */
 export const StepLabel: React.FC<StepLabelProps> = (props: StepLabelProps) => {
-  return (
-    <MaterialStepLabel
-      classes={props.classes}
-      disabled={props.disabled ?? false}
-      optional={props.optional}
-      error={props.error ?? false}
-      icon={props.icon}
-      StepIconComponent={props.StepIconComponent}
-      StepIconProps={props.StepIconProps}
-    />
-  )
+  return <MaterialStepLabel {...props} />
 }
 
 export default StepLabel

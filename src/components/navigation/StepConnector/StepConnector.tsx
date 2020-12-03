@@ -16,7 +16,7 @@ export interface StepConnectorProps {
 export const StepConnector: React.FC<StepConnectorProps> = (
   props: StepConnectorProps
 ) => {
-  return <MaterialStepConnector classes={props.classes} />
+  return <MaterialStepConnector {...props} />
 }
 
 export default StepConnector

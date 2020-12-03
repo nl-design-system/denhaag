@@ -45,18 +45,7 @@ export interface StepperProps {
  * @constructor Constructs an instance of Stepper.
  */
 export const Stepper: React.FC<StepperProps> = (props: StepperProps) => {
-  return (
-    <MaterialStepper
-      classes={props.classes}
-      activeStep={props.activeStep ?? 0}
-      alternativeLabel={props.alternativeLabel ?? false}
-      connector={props.connector}
-      nonLinear={props.nonLinear ?? false}
-      orientation={props.orientation ?? 'horizontal'}
-    >
-      {props.children}
-    </MaterialStepper>
-  )
+  return <MaterialStepper {...props}>{props.children}</MaterialStepper>
 }
 
 export default Stepper

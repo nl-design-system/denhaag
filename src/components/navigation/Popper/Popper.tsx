@@ -71,22 +71,7 @@ export interface PopperProps {
 }
 
 export const Popper: React.FC<PopperProps> = (props: PopperProps) => {
-  return (
-    <MaterialPopper
-      anchorEl={props.anchorEl}
-      container={props.container}
-      disablePortal={props.disablePortal ?? false}
-      keepMounted={props.keepMounted ?? false}
-      modifiers={props.modifiers}
-      open={props.open}
-      placement={props.placement ?? 'bottom'}
-      popperOptions={props.popperOptions ?? {}}
-      popperRef={props.popperRef}
-      transition={props.transition ?? false}
-    >
-      {props.children}
-    </MaterialPopper>
-  )
+  return <MaterialPopper {...props}>{props.children}</MaterialPopper>
 }
 
 export default Popper

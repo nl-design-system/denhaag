@@ -78,7 +78,7 @@ export interface MenuProps {
   /**
    * If true, the menu is visible.
    */
-  open?: boolean
+  open: boolean
 
   /**
    * classes prop applied to the Popover element.
@@ -105,27 +105,7 @@ export interface MenuProps {
  * @constructor Constructs an instance of Menu.
  */
 export const Menu: React.FC<MenuProps> = (props: MenuProps) => {
-  return (
-    <MaterialMenu
-      classes={props.classes}
-      anchorEl={props.anchorEl}
-      disableAutoFocusItem={props.disableAutoFocusItem ?? false}
-      MenuListProps={props.MenuListProps ?? {}}
-      onClose={props.onClose}
-      onExit={props.onExit}
-      onExited={props.onExited}
-      onExiting={props.onExiting}
-      onEnter={props.onEnter}
-      onEntering={props.onEntering}
-      onEntered={props.onEntered}
-      open={props.open ?? false}
-      PopoverClasses={props.PopoverClasses}
-      transitionDuration={props.transitionDuration ?? 'auto'}
-      variant={props.variant ?? 'selectedMenu'}
-    >
-      {props.children}
-    </MaterialMenu>
-  )
+  return <MaterialMenu {...props}>{props.children}</MaterialMenu>
 }
 
 export default Menu

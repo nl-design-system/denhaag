@@ -43,17 +43,7 @@ export interface StepProps {
  * @constructor Constructs an instance of Step.
  */
 export const Step: React.FC<StepProps> = (props: StepProps) => {
-  return (
-    <MaterialStep
-      active={props.active ?? false}
-      classes={props.classes}
-      completed={props.completed ?? false}
-      disabled={props.disabled ?? false}
-      expanded={props.expanded ?? false}
-    >
-      {props.children}
-    </MaterialStep>
-  )
+  return <MaterialStep {...props}>{props.children}</MaterialStep>
 }
 
 export default Step

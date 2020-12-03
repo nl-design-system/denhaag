@@ -1,6 +1,5 @@
 import React, { ReactElement } from 'react'
 import MaterialSwipeableDrawer from '@material-ui/core/SwipeableDrawer'
-import { duration } from '@material-ui/core'
 
 export interface SwipeableDrawerProps {
   /**
@@ -77,28 +76,7 @@ export const SwipeableDrawer: React.FC<SwipeableDrawerProps> = (
   props: SwipeableDrawerProps
 ) => {
   return (
-    <MaterialSwipeableDrawer
-      disableBackdropTransition={props.disableBackdropTransition ?? false}
-      disableDiscovery={props.disableDiscovery ?? false}
-      disableSwipeToOpen={
-        props.disableDiscovery ??
-        (typeof navigator !== 'undefined' &&
-          /iPad|iPhone|iPod/.test(navigator.userAgent))
-      }
-      hysteresis={props.hysteresis ?? 0.52}
-      minFlingVelocity={props.minFlingVelocity ?? 450}
-      onClose={props.onClose}
-      onOpen={props.onOpen}
-      open={props.open}
-      SwipeAreaProps={props.SwipeAreaProps}
-      swipeAreaWidth={props.swipeAreaWidth ?? 20}
-      transitionDuration={
-        props.transitionDuration ?? {
-          enter: duration.enteringScreen,
-          exit: duration.leavingScreen
-        }
-      }
-    >
+    <MaterialSwipeableDrawer {...props}>
       {props.children}
     </MaterialSwipeableDrawer>
   )

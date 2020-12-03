@@ -39,17 +39,7 @@ export interface MenuListProps {
  * @constructor Constructs an instance of MenuList.
  */
 export const MenuList: React.FC<MenuListProps> = (props: MenuListProps) => {
-  return (
-    <MaterialMenuList
-      autoFocus={props.autoFocus ?? false}
-      autoFocusItem={props.autoFocusItem ?? false}
-      disabledItemsFocusable={props.disabledItemsFocusable ?? false}
-      disableListWrap={props.disableListWrap ?? false}
-      variant={props.variant ?? 'selectedMenu'}
-    >
-      {props.children}
-    </MaterialMenuList>
-  )
+  return <MaterialMenuList {...props}>{props.children}</MaterialMenuList>
 }
 
 export default MenuList

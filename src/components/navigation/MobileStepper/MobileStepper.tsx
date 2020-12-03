@@ -51,18 +51,7 @@ export interface MobileStepperProps {
 export const MobileStepper: React.FC<MobileStepperProps> = (
   props: MobileStepperProps
 ) => {
-  return (
-    <MaterialMobileStepper
-      classes={props.classes}
-      backButton={props.backButton}
-      nextButton={props.nextButton}
-      steps={props.steps}
-      activeStep={props.activeStep ?? 0}
-      LinearProgressProps={props.LinearProgressProps}
-      position={props.position ?? 'bottom'}
-      variant={props.variant ?? 'dots'}
-    />
-  )
+  return <MaterialMobileStepper {...props} />
 }
 
 export default MobileStepper

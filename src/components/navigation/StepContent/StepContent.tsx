@@ -45,16 +45,7 @@ export interface StepContentProps {
 export const StepContent: React.FC<StepContentProps> = (
   props: StepContentProps
 ) => {
-  return (
-    <MaterialStepContent
-      classes={props.classes}
-      TransitionComponent={props.TransitionComponent}
-      transitionDuration={props.transitionDuration ?? 'auto'}
-      TransitionProps={props.TransitionProps}
-    >
-      {props.children}
-    </MaterialStepContent>
-  )
+  return <MaterialStepContent {...props}>{props.children}</MaterialStepContent>
 }
 
 export default StepContent

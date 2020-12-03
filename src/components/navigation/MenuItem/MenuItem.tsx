@@ -44,18 +44,7 @@ export interface MenuItemProps {
  * @constructor Constructs an instance of MenuItem.
  */
 export const MenuItem: React.FC<MenuItemProps> = (props: MenuItemProps) => {
-  return (
-    <MaterialMenuItem
-      classes={props.classes}
-      component={props.component ?? 'li'}
-      dense={props.dense}
-      disableGutters={props.disableGutters ?? false}
-      ListItemClasses={props.ListItemClasses}
-      onClick={props.onClick}
-    >
-      {props.children}
-    </MaterialMenuItem>
-  )
+  return <MaterialMenuItem {...props}>{props.children}</MaterialMenuItem>
 }
 
 export default MenuItem

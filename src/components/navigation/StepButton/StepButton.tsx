@@ -31,15 +31,7 @@ export interface StepButtonProps {
 export const StepButton: React.FC<StepButtonProps> = (
   props: StepButtonProps
 ) => {
-  return (
-    <MaterialStepButton
-      classes={props.classes}
-      icon={props.icon}
-      optional={props.optional}
-    >
-      {props.children}
-    </MaterialStepButton>
-  )
+  return <MaterialStepButton {...props}>{props.children}</MaterialStepButton>
 }
 
 export default StepButton

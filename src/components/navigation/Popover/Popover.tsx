@@ -1,4 +1,4 @@
-import React, { ElementType, ReactElement } from 'react'
+import React, { ReactElement } from 'react'
 import MaterialPopover from '@material-ui/core/Popover'
 
 export interface PopoverProps {
@@ -98,7 +98,7 @@ export interface PopoverProps {
   /**
    * Props applied to the Paper element.
    */
-  PaperProps?: { component?: ElementType }
+  PaperProps?: object
 
   /**
    * This is the point on the popover which will attach to the anchor's origin.
@@ -128,36 +128,7 @@ export interface PopoverProps {
  * @constructor Constructs an instance of Popover.
  */
 export const Popover: React.FC<PopoverProps> = (props: PopoverProps) => {
-  return (
-    <MaterialPopover
-      action={props.action}
-      anchorEl={props.anchorEl}
-      anchorOrigin={
-        props.anchorOrigin ?? { vertical: 'top', horizontal: 'left' }
-      }
-      anchorPosition={props.anchorPosition}
-      anchorReference={props.anchorReference ?? 'anchorEl'}
-      classes={props.classes}
-      elevation={props.elevation ?? 8}
-      getContentAnchorEl={props.getContentAnchorEl}
-      marginThreshold={props.marginThreshold ?? 16}
-      onClose={props.onClose}
-      onEnter={props.onEnter}
-      onEntered={props.onEntered}
-      onEntering={props.onEntering}
-      onExit={props.onExit}
-      onExited={props.onExited}
-      onExiting={props.onExiting}
-      open={props.open}
-      transformOrigin={
-        props.transformOrigin ?? { vertical: 'top', horizontal: 'left' }
-      }
-      transitionDuration={props.transitionDuration ?? 'auto'}
-      TransitionProps={props.TransitionProps ?? {}}
-    >
-      {props.children}
-    </MaterialPopover>
-  )
+  return <MaterialPopover {...props}>{props.children}</MaterialPopover>
 }
 
 export default Popover

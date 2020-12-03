@@ -34,15 +34,7 @@ export interface StepIconProps {
  * @constructor Constructs an instance of StepIcon.
  */
 export const StepIcon: React.FC<StepIconProps> = (props: StepIconProps) => {
-  return (
-    <MaterialStepIcon
-      classes={props.classes}
-      icon={props.icon}
-      active={props.active ?? false}
-      completed={props.completed ?? false}
-      error={props.error ?? false}
-    />
-  )
+  return <MaterialStepIcon {...props} />
 }
 
 export default StepIcon
