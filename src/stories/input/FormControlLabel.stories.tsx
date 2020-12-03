@@ -11,7 +11,7 @@ export default {
     componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
   component: FormControlLabel
-}
+} as Meta
 
 const Template: Story<FormControlLabelProps> = (args: any) => (
   <FormControlLabel
