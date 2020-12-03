@@ -1,7 +1,7 @@
 import React from 'react'
 // also exported from '@storybook/react' if you can deal with breaking changes in 6.1
 import { Story, Meta } from '@storybook/react/types-6-0'
-import { DatePicker, DatePickerProps } from '../components/Pickers/DatePicker/DatePicker'
+import  DatePicker, { DatePickerProps } from '../components/Pickers/DatePicker/DatePicker'
 import { PickersUtilsProvider } from '../components/Pickers/PickersUtilsProvider/PickersUtilsProvider'
 import DateFnsUtils from '@date-io/date-fns'
 import pkg from '../components/Pickers/DatePicker/package.json'
@@ -16,7 +16,7 @@ export default {
 
 const Template: Story<DatePickerProps> = (args: any) => (
   <PickersUtilsProvider utils={DateFnsUtils}>
-    <DatePicker value='1970-01-01' onChange={null} />
+    <DatePicker {...args } />
   </PickersUtilsProvider>
 )
 
@@ -24,4 +24,29 @@ const Template: Story<DatePickerProps> = (args: any) => (
  * Default Checkbox
  */
 export const Default: Story<DatePickerProps> = Template.bind({})
-Default.args = {}
+Default.args = {
+  value: '1970-01-01',
+  onChange: null,
+  variant: "dialog"
+}
+
+/**
+ * Inline Checkbox
+ */
+export const Inline: Story<DatePickerProps> = Template.bind({})
+Inline.args = {
+  value: '1970-01-01',
+  onChange: null,
+  variant: "inline"
+}
+
+/**
+ * Inline Checkbox
+ */
+export const Static: Story<DatePickerProps> = Template.bind({})
+Static.args = {
+  value: '1970-01-01',
+  onChange: null,
+  variant: "static"
+}
+
