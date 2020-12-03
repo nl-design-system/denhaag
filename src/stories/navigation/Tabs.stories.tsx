@@ -16,8 +16,6 @@ export default {
   component: Tabs
 } as Meta
 
-const [value, setValue] = React.useState('1')
-
 const TemplateWithState = (props: TabsProps) => {
   return (
     <div>
@@ -29,24 +27,28 @@ const TemplateWithState = (props: TabsProps) => {
             <Tab label='Third tab' value={3} />
           </Tabs>
         </AppBar>
+        <TabPanel value='1'>Item One</TabPanel>
+        <TabPanel value='2'>Item Two</TabPanel>
+        <TabPanel value='3'>Item Three</TabPanel>
       </TabContext>
-      <TabPanel value='1'>Item One</TabPanel>
-      <TabPanel value='2'>Item Two</TabPanel>
-      <TabPanel value='3'>Item Three</TabPanel>
     </div>
   )
 }
 
-const Template: Story<TabsProps> = (args: any) => (
-  <TemplateWithState
-    // @ts-ignore
-    onChange={(event: object, value: any) => {
-      setValue(value)
-    }}
-    value={value}
-    {...args}
-  />
-)
+const Template: Story<TabsProps> = (args: any) => {
+  const [value, setValue] = React.useState(1)
+  return (
+    <TemplateWithState
+      // @ts-ignore
+      onChange={(event: object, value: any) => {
+        console.log(value)
+        setValue(value)
+      }}
+      value={value}
+      {...args}
+    />
+  )
+}
 
 /**
  * Implementation of Tabs
