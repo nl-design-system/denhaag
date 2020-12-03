@@ -1,7 +1,6 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
-import { Container } from '../..'
-import { ContainerProps } from '../../components/layout/Container/Container'
+import Container, { ContainerProps } from '../../components/layout/Container/Container'
 import pkg from '../../components/layout/Container/package.json'
 
 export default {
