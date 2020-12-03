@@ -5,8 +5,8 @@
   "author": "Municipality of The Hague",
   "license": "MIT",
   "dependencies": {
-    "@material-ui/core": "^4",
-    "nlds-react-components-formcontrollabel": "^0.1",
-    "nlds-react-components-formgroup": "^0.1"
+    "@material-ui/core": "^4.11.2",
+    "nlds-react-components-formcontrollabel": "^0.1.0",
+    "nlds-react-components-formgroup": "^0.1.0"
   }
 }

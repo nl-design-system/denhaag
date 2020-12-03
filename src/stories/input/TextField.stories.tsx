@@ -1,11 +1,11 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
-import pkg from '../../components/forms/TextField/package.json'
+import pkg from '../../components/input/TextField/package.json'
 import { TextField } from '../../index'
-import { BaseTextFieldProps } from '../../components/forms/TextField/BaseTextFieldProps'
+import { BaseTextFieldProps } from '../../components/input/TextField/BaseTextFieldProps'
 
 export default {
-  title: 'Components/Forms/TextField',
+  title: 'Components/Input/TextField',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
