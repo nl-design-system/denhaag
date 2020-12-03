@@ -6,7 +6,7 @@ import GridListTileBar, { GridListTileBarProps } from '../../components/layout/G
 import GridListTile from '../../components/layout/GridListTile/GridListTile'
 import GridList from '../../components/layout/GridList/GridList'
 import pkg from '../../components/layout/GridListTileBar/package.json'
-import imageFile from '../assets/logo.png'
+import imageFile from '../assets/logo.svg'
 
 export default {
   title: 'Components/Layout/GridList/GridListTile/GridListTileBar',
