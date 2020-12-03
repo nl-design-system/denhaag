@@ -9,6 +9,7 @@ import Container from './components/layout/Container/Container'
 import Grid from './components/layout/Grid/Grid'
 import GridList from './components/layout/GridList/GridList'
 import Hidden from './components/layout/Hidden/Hidden'
+import Typography from './components/datadisplay/Typography/Typography'
 
 /**
  * Primary UI component for user interaction
@@ -24,5 +25,6 @@ export {
   Container,
   Grid,
   GridList,
-  Hidden
+  Hidden,
+  Typography
 }

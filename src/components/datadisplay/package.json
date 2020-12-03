@@ -1,0 +1,8 @@
+{
+  "name": "nlds-react-components-datadisplay",
+  "version": "0.1.0",
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "nlds-react-components-typography": "^0.1.0"
+  }
+}
