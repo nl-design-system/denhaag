@@ -33,3 +33,11 @@ export const DenseMenu = Template.bind({})
 DenseMenu.args = {
   dense: true
 }
+
+/**
+ * Implementation without gutters
+ */
+export const DisabledGutter = Template.bind({})
+DisabledGutter.args = {
+  disableGutters: true
+}

@@ -38,6 +38,16 @@ const Template: Story<StepperProps> = (args: any) => (
           </p>
         </StepContent>
       </Step>
+      <Step>
+        <StepLabel>
+          <p>Third Step in a Stepper!</p>
+        </StepLabel>
+        <StepContent>
+          <p>
+            This is the third Step component of many in a Stepper component.
+          </p>
+        </StepContent>
+      </Step>
     </Stepper>
   </div>
 )
@@ -58,4 +68,13 @@ export const VerticalOrientation = Template.bind({})
 VerticalOrientation.args = {
   activeStep: 0,
   orientation: 'vertical'
+}
+
+/**
+ * Alternatively labeled Stepper.
+ */
+export const AlternativeLabel = Template.bind({})
+AlternativeLabel.args = {
+  activeStep: 0,
+  alternativeLabel: true
 }

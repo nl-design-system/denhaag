@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react'
 import MaterialTab from '@material-ui/core/Tab'
 
-export interface TabsProps {
+export interface TabProps {
   /**
    * Override or extend the styles applied to the component.
    */
@@ -50,7 +50,7 @@ export interface TabsProps {
  * @param props The properties of a Tab component.
  * @constructor Construct an instance of Tab.
  */
-export const Tab: React.FC<TabsProps> = (props: TabsProps) => {
+export const Tab: React.FC<TabProps> = (props: TabProps) => {
   return <MaterialTab {...props} />
 }
 

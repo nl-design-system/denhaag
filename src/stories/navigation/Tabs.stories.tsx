@@ -6,6 +6,7 @@ import pkg from '../../components/navigation/Tabs/package.json'
 import Tab from '../../components/navigation/Tab/Tab'
 import TabPanel from '@material-ui/lab/TabPanel'
 import { TabContext } from '@material-ui/lab'
+import { AppBar } from '@material-ui/core'
 
 export default {
   title: 'Components/Navigation/Tabs',
@@ -46,14 +47,20 @@ const Template: Story<TabsProps> = (args: any) => {
 
   return (
     <TabContext value={args.value.toString()}>
-      <Tabs {...args}>
-        <Tab label='First tab' value={1} />
-        <Tab label='Second tab' value={2} />
-        <Tab label='Third tab' value={3} />
-      </Tabs>
+      <AppBar position='static'>
+        <Tabs {...args}>
+          <Tab label='First tab' value={1} />
+          <Tab label='Second tab' value={2} />
+          <Tab label='Third tab' value={3} />
+          <Tab label='Fourth tab' value={4} />
+          <Tab label='Fifth tab' value={5} />
+        </Tabs>
+      </AppBar>
       <TabPanel value='1'>Item One</TabPanel>
       <TabPanel value='2'>Item Two</TabPanel>
       <TabPanel value='3'>Item Three</TabPanel>
+      <TabPanel value='4'>Item Four</TabPanel>
+      <TabPanel value='5'>Item Five</TabPanel>
     </TabContext>
   )
 }
@@ -63,3 +70,27 @@ const Template: Story<TabsProps> = (args: any) => {
  */
 export const Default = Template.bind({})
 Default.args = {}
+
+/**
+ * Implementation of Tabs with vertical orientation
+ */
+export const VerticalOrientation = Template.bind({})
+VerticalOrientation.args = {
+  orientation: 'vertical'
+}
+
+/**
+ * Implementation of Tabs with secondary coloured text
+ */
+export const SecondaryColouredText = Template.bind({})
+SecondaryColouredText.args = {
+  textColor: 'secondary'
+}
+
+/**
+ * Implementation of Tabs with a secondary coloured indicator
+ */
+export const SecondaryColouredIndicator = Template.bind({})
+SecondaryColouredIndicator.args = {
+  indicatorColor: 'secondary'
+}
