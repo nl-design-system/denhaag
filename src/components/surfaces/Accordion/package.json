@@ -2,7 +2,7 @@
   "name": "nlds-react-components-accordion",
   "version": "0.1.0",
   "author": "Municipality of The Hague",
-  "description": "An Accordion component",
+  "description": "An Accordion component.",
   "license": "MIT",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
