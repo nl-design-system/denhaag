@@ -108,28 +108,7 @@ export interface TabsProps {
  * @constructor Constructs an instance of Tabs.
  */
 export const Tabs: React.FC<TabsProps> = (props: TabsProps) => {
-  return (
-    <MaterialTabs
-      classes={props.classes}
-      aria-label={props.ariaLabel}
-      aria-labelledby={props.ariaLabelledBy}
-      centered={props.centered ?? false}
-      component={props.component ?? 'div'}
-      indicatorColor={props.indicatorColor ?? 'secondary'}
-      onChange={props.onChange}
-      orientation={props.orientation ?? 'horizontal'}
-      ScrollButtonComponent={props.ScrollButtonComponent}
-      scrollButtons={props.scrollButtons ?? 'auto'}
-      selectionFollowsFocus={props.selectionFollowsFocus}
-      TabIndicatorProps={props.TabIndicatorProps ?? {}}
-      TabScrollButtonProps={props.TabScrollButtonProps}
-      textColor={props.textColor ?? 'inherit'}
-      value={props.value}
-      variant={props.variant ?? 'standard'}
-    >
-      {props.children}
-    </MaterialTabs>
-  )
+  return <MaterialTabs {...props}>{props.children}</MaterialTabs>
 }
 
 export default Tabs

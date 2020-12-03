@@ -16,37 +16,48 @@ export default {
   component: Tabs
 } as Meta
 
-const TemplateWithState = (props: TabsProps) => {
-  return (
-    <div>
-      <TabContext value={props.value}>
-        <AppBar>
-          <Tabs {...props}>
-            <Tab label='First tab' value={1} />
-            <Tab label='Second tab' value={2} />
-            <Tab label='Third tab' value={3} />
-          </Tabs>
-        </AppBar>
-        <TabPanel value='1'>Item One</TabPanel>
-        <TabPanel value='2'>Item Two</TabPanel>
-        <TabPanel value='3'>Item Three</TabPanel>
-      </TabContext>
-    </div>
-  )
-}
+// const TemplateWithState = (props: TabsProps) => {
+//   return (
+//     <div>
+//       <TabContext value={props.value.toString()}>
+//         <AppBar>
+//           <Tabs {...props}>
+//             <Tab label='First tab' value={1} />
+//             <Tab label='Second tab' value={2} />
+//             <Tab label='Third tab' value={3} />
+//           </Tabs>
+//         </AppBar>
+//         <TabPanel value='1'>Item One</TabPanel>
+//         <TabPanel value='2'>Item Two</TabPanel>
+//         <TabPanel value='3'>Item Three</TabPanel>
+//       </TabContext>
+//     </div>
+//   )
+// }
 
 const Template: Story<TabsProps> = (args: any) => {
   const [value, setValue] = React.useState(1)
+
+  // @ts-ignore
+  args.onChange = (event: object, newValue: number) => {
+    alert(newValue)
+    setValue(newValue)
+  }
+  args.value = value
+
   return (
-    <TemplateWithState
-      // @ts-ignore
-      onChange={(event: object, value: any) => {
-        console.log(value)
-        setValue(value)
-      }}
-      value={value}
-      {...args}
-    />
+    <TabContext value={args.value.toString()}>
+      <AppBar>
+        <Tabs {...args}>
+          <Tab label='First tab' value={1} />
+          <Tab label='Second tab' value={2} />
+          <Tab label='Third tab' value={3} />
+        </Tabs>
+      </AppBar>
+      <TabPanel value='1'>Item One</TabPanel>
+      <TabPanel value='2'>Item Two</TabPanel>
+      <TabPanel value='3'>Item Three</TabPanel>
+    </TabContext>
   )
 }
 
@@ -54,6 +65,4 @@ const Template: Story<TabsProps> = (args: any) => {
  * Implementation of Tabs
  */
 export const Default = Template.bind({})
-Default.args = {
-  // onChange: handleChange
-}
+Default.args = {}
