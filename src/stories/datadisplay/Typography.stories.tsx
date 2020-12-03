@@ -9,7 +9,7 @@ export default {
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
-  Component: Typography
+  component: Typography
 } as Meta
 
 const Template: Story<TypographyProps> = (args: any) => (

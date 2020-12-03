@@ -10,7 +10,7 @@ export interface TypographyProps {
   /**
    * The content of the component.
    */
-  children: ReactNode[]
+  children: ReactNode[] | ReactNode
 
   /**
    * Override or extend the styles applied to the component.
