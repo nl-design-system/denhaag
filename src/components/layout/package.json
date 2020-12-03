@@ -1,0 +1,15 @@
+{
+  "name": "nlds-react-components-layout",
+  "version": "0.1.0",
+  "description": "A package containing all the layout components",
+  "author": "Municipality of The Hague",
+  "license": "MIT",
+  "dependencies": {
+    "nlds-react-components-box": "^0.1.0",
+    "nlds-react-components-container": "^0.1.0",
+    "nlds-react-components-grid": "^0.1.0",
+    "nlds-react-components-gridlist": "^0.1.0",
+    "nlds-react-components-gridlisttile": "^0.1.0",
+    "nlds-react-components-gridlisttilebar": "^0.1.0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "nlds-react-components-gridlisttilebar",
+  "author": "Municipality of The Hague",
+  "description": "A GridListTileBar component",
+  "version": "0.1.0",
+  "license": "MIT",
+  "dependencies": {
+    "@material-ui/core": "^4.11.2"
+  }
+}
