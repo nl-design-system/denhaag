@@ -6,7 +6,6 @@ import pkg from '../../components/navigation/Tabs/package.json'
 import Tab from '../../components/navigation/Tab/Tab'
 import TabPanel from '@material-ui/lab/TabPanel'
 import { TabContext } from '@material-ui/lab'
-import { AppBar } from '@material-ui/core'
 
 export default {
   title: 'Components/Navigation/Tabs',
@@ -36,24 +35,22 @@ export default {
 // }
 
 const Template: Story<TabsProps> = (args: any) => {
-  const [value, setValue] = React.useState(1)
+  // @ts-ignore
+  const [value, setValue] = React.useState(2)
 
   // @ts-ignore
-  args.onChange = (event: object, newValue: number) => {
-    alert(newValue)
+  args.onChange = (event: React.ChangeEvent<{}>, newValue: number) => {
     setValue(newValue)
   }
   args.value = value
 
   return (
     <TabContext value={args.value.toString()}>
-      <AppBar>
-        <Tabs {...args}>
-          <Tab label='First tab' value={1} />
-          <Tab label='Second tab' value={2} />
-          <Tab label='Third tab' value={3} />
-        </Tabs>
-      </AppBar>
+      <Tabs {...args}>
+        <Tab label='First tab' value={1} />
+        <Tab label='Second tab' value={2} />
+        <Tab label='Third tab' value={3} />
+      </Tabs>
       <TabPanel value='1'>Item One</TabPanel>
       <TabPanel value='2'>Item Two</TabPanel>
       <TabPanel value='3'>Item Three</TabPanel>

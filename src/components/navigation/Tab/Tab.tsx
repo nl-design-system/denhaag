@@ -51,18 +51,7 @@ export interface TabsProps {
  * @constructor Construct an instance of Tab.
  */
 export const Tab: React.FC<TabsProps> = (props: TabsProps) => {
-  return (
-    <MaterialTab
-      classes={props.classes}
-      disabled={props.disabled ?? false}
-      disableFocusRipple={props.disableFocusRipple ?? false}
-      disableRipple={props.disableRipple}
-      icon={props.icon}
-      label={props.label}
-      value={props.value}
-      wrapped={props.wrapped ?? false}
-    />
-  )
+  return <MaterialTab {...props} />
 }
 
 export default Tab

@@ -47,7 +47,7 @@ export interface TabsProps {
    * @param event The event source of the callback
    * @param value Defaults to the index of the child (number)
    */
-  onChange: (event: object, value: any) => void
+  onChange?: (event: React.ChangeEvent<{}>, value: number) => void
 
   /**
    * The tabs orientation (layout flow direction).
