@@ -10,7 +10,7 @@ export interface ContainerProps {
   /**
    * The component to use as the root component. Either a string to use a DOM element or a component
    */
-  component: ElementType
+  component?: ElementType
 
   /**
    * The content of the component
@@ -20,17 +20,17 @@ export interface ContainerProps {
   /**
    * Indicate whether the left and right padding of the component should be removed.
    */
-  disableGutters: boolean
+  disableGutters?: boolean
 
   /**
    * Sets the max-width to match the min-width.
    */
-  fixed: boolean
+  fixed?: boolean
 
   /**
    * Determine the maximum width of the Container. When false, no max-width is set.
    */
-  maxWidth: 'lg' | 'md' | 'sm' | 'xl' | 'xs' | false
+  maxWidth?: 'lg' | 'md' | 'sm' | 'xl' | 'xs' | false
 }
 
 /**
@@ -39,17 +39,7 @@ export interface ContainerProps {
  * @constructor Constructs an instance of Container.
  */
 export const Container: React.FC<ContainerProps> = (props: ContainerProps) => {
-  return (
-    <MaterialContainer
-      classes={props.classes}
-      component={props.component}
-      fixed={props.fixed}
-      maxWidth={props.maxWidth}
-      disableGutters={props.disableGutters}
-    >
-      {props.children}
-    </MaterialContainer>
-  )
+  return <MaterialContainer {...props}>{props.children}</MaterialContainer>
 }
 
 /**

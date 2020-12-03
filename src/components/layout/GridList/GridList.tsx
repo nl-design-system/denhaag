@@ -5,12 +5,12 @@ export interface GridListProps {
   /**
    * Number of pixels for one cell height. Set auto for children to define the height.
    */
-  cellHeight: number | 'auto'
+  cellHeight?: number | 'auto'
 
   /**
    * List Tiles which will be in GridList.
    */
-  children: ReactElement
+  children: ReactElement[]
 
   /**
    * Overrides or extends the styles applied to the component.
@@ -20,17 +20,17 @@ export interface GridListProps {
   /**
    * Number of columns.
    */
-  cols: number | 2
+  cols?: number | 2
 
   /**
    * The component used for the root node. Either a string to use a HTMl element or a component.
    */
-  component: ElementType
+  component?: ElementType
 
   /**
    * Number of pixels for the spacing between tiles.
    */
-  spacing: number
+  spacing?: number
 }
 
 /**
@@ -39,17 +39,7 @@ export interface GridListProps {
  * @constructor Constructs an instance of GridList.
  */
 export const GridList: React.FC<GridListProps> = (props: GridListProps) => {
-  return (
-    <MaterialGridList
-      cellHeight={props.cellHeight}
-      classes={props.classes}
-      cols={props.cols}
-      component={props.component}
-      spacing={props.spacing}
-    >
-      {props.children}
-    </MaterialGridList>
-  )
+  return <MaterialGridList {...props}>{props.children}</MaterialGridList>
 }
 
 /**

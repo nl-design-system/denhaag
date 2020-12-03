@@ -15,17 +15,17 @@ export interface GridListTileProps {
   /**
    * Width of tile in number of Grid cells.
    */
-  cols: number
+  cols?: number
 
   /**
    * The component used for the root node. Either a string to use a HTML element or a component.
    */
-  component: ElementType
+  component?: ElementType
 
   /**
    * Height of the tile in number of Grid cells.
    */
-  rows: number
+  rows?: number
 }
 
 /**
@@ -37,14 +37,7 @@ export const GridListTile: React.FC<GridListTileProps> = (
   props: GridListTileProps
 ) => {
   return (
-    <MaterialGridListTile
-      classes={props.classes}
-      cols={props.cols}
-      component={props.component}
-      rows={props.rows}
-    >
-      {props.children}
-    </MaterialGridListTile>
+    <MaterialGridListTile {...props}>{props.children}</MaterialGridListTile>
   )
 }
 

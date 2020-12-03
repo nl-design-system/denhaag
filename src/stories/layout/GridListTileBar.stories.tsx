@@ -8,20 +8,24 @@ import {
 } from '../../components/layout/GridListTileBar/GridListTileBar'
 import GridListTile from '../../components/layout/GridListTile/GridListTile'
 import { GridList } from '../..'
+import pkg from '../../components/layout/GridListTileBar/package.json'
 
 export default {
   title: 'Components/Layout/GridList/GridListTile/GridListTileBar',
+  parameters: {
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
+  },
   component: GridListTileBar
 } as Meta
 
 const Template: Story<GridListTileBarProps> = (args: any) => (
-  <GridList cellHeight={180} cols={2} component='ul' spacing={4}>
-    <GridListTile cols={1} component='li' rows={1}>
+  <GridList cols={5}>
+    <GridListTile cols={1} rows={2}>
       <img
         src='https://ciconiaconsort.nl/wp-content/uploads/2016/02/Gemeente-Den-Haag-logo2-640x612.jpg'
         alt='The Hague municipality emblem'
-        width={250}
-        height={250}
+        width={150}
+        height={150}
       />
       <GridListTileBar {...args} />
     </GridListTile>
@@ -38,10 +42,8 @@ Default.args = {
       <InfoIcon />
     </IconButton>
   ),
-  actionPosition: 'right',
   title: 'GridListTileBar',
-  subtitle: 'I am a GridListTileBar!',
-  titlePosition: 'bottom'
+  subtitle: 'I am a GridListTileBar!'
 }
 
 /**
@@ -54,7 +56,6 @@ TopPosition.args = {
       <InfoIcon />
     </IconButton>
   ),
-  actionPosition: 'right',
   title: 'GridListTileBar',
   subtitle: 'I am GridListTileBar!',
   titlePosition: 'top'
@@ -72,6 +73,5 @@ ButtonLeft.args = {
   ),
   actionPosition: 'left',
   title: 'GridListTileBar',
-  subtitle: 'I am GridListTileBar!',
-  titlePosition: 'bottom'
+  subtitle: 'I am GridListTileBar!'
 }
