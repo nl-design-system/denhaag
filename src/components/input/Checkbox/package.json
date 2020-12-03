@@ -6,6 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "@material-ui/core": "^4",
-    "nlds-react-components-formcontrollabel": "^0.1"
+    "nlds-react-components-formcontrollabel": "^0.1",
+    "nlds-react-components-formgroup": "^0.1"
   }
 }

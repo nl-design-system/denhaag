@@ -15,7 +15,7 @@ export interface GridListTileBarProps {
   /**
    * Overrides or extends the styles applied to the component.
    */
-  classes: object
+  classes?: object
 
   /**
    * String or element serving as subtitle.
@@ -41,16 +41,7 @@ export interface GridListTileBarProps {
 export const GridListTileBar: React.FC<GridListTileBarProps> = (
   props: GridListTileBarProps
 ) => {
-  return (
-    <MaterialGridListTileBar
-      title={props.title}
-      titlePosition={props.titlePosition}
-      subtitle={props.subtitle}
-      actionIcon={props.actionIcon}
-      actionPosition={props.actionPosition}
-      classes={props.classes}
-    />
-  )
+  return <MaterialGridListTileBar {...props} />
 }
 
 /**
