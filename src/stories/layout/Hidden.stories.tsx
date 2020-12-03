@@ -1,7 +1,6 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
-import { Hidden } from '../..'
-import { HiddenProps } from '../../components/layout/Hidden/Hidden'
+import Hidden, { HiddenProps } from '../../components/layout/Hidden/Hidden'
 import pkg from '../../components/layout/Hidden/package.json'
 
 export default {
