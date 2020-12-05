@@ -20,7 +20,7 @@ export interface BaseDatePickerProps {
   onChange: (date: any) => void
 
   /**
-   * Picker value
+   * DatePicker value
    */
   value: any
   /**
