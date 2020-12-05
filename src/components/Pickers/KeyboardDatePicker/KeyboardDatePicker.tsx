@@ -7,6 +7,8 @@ import { InputAdornmentProps, IconButtonProps } from '@material-ui/core'
 export interface KeyboardDatePickerProps extends BaseDatePickerProps {
   /**
    * 	Keyboard onChange callback
+   * @param date The Date value of the DatePicker
+   * @param value The string value of the DatePicker
    */
   onChange: (date: DateIOType, value?: string | null) => void
 

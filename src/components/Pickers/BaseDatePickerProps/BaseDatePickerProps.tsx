@@ -16,6 +16,7 @@ import { ToolbarComponentProps } from '@material-ui/pickers/Picker/Picker'
 export interface BaseDatePickerProps {
   /**
    * Onchange callback @DateIOType
+   * @param date The Date value of the DatePicker
    */
   onChange: (date: any) => void
 
