@@ -143,6 +143,9 @@ export interface SelectProps {
   value?: unknown
 }
 
+/**
+ * Select components are used for collecting user provided information from a list of options.
+ */
 export const Select: React.FC<SelectProps> = (props: SelectProps) => {
   return <MaterialSelect {...props} />
 }
