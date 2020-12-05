@@ -27,7 +27,6 @@ const Template: Story<ButtonGroupProps> = (args: any) => (
  * Implementation of ButtonGroup
  */
 export const Default = Template.bind({})
-Default.args = {}
 
 /**
  * All buttons disabled
