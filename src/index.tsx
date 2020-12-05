@@ -1,4 +1,5 @@
 import Button from './components/input/Button/Button'
+import ButtonGroup from './components/input/ButtonGroup/ButtonGroup'
 import Checkbox from './components/input/Checkbox/Checkbox'
 import Switch from './components/input/Switch/Switch'
 import FormControlLabel from './components/input/FormControlLabel/FormControlLabel'
@@ -16,6 +17,7 @@ import TextField from './components/input/TextField/TextField'
  */
 export {
   Button,
+  ButtonGroup,
   Checkbox,
   Switch,
   TextField,
