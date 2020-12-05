@@ -1,4 +1,4 @@
-import React, { ReactElement, ReactNode } from 'react'
+import React from 'react'
 import MaterialAccordionSummary from '@material-ui/core/AccordionSummary'
 
 export interface AccordionSummaryProps {
@@ -10,12 +10,12 @@ export interface AccordionSummaryProps {
   /**
    * The content of the component
    */
-  children: ReactElement
+  children?: React.ReactNode
 
   /**
    * The icon to display as the expand indicator.
    */
-  expandIcon: ReactNode
+  expandIcon: React.ReactNode
 
   /**
    * Props applied to the IconButton element wrapping the expand icon.

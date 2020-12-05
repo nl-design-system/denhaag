@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import React from 'react'
 import MaterialAccordion from '@material-ui/core/Accordion'
 
 export interface AccordionProps {
@@ -10,7 +10,7 @@ export interface AccordionProps {
   /**
    * The content of the component
    */
-  children: ReactElement[]
+  children: NonNullable<React.ReactNode>
 
   /**
    * If true, expands the Accordion by default.

@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import React from 'react'
 import MaterialAccordionDetails from '@material-ui/core/AccordionDetails'
 
 export interface AccordionDetailsProps {
@@ -10,7 +10,7 @@ export interface AccordionDetailsProps {
   /**
    * The content of the component
    */
-  children: ReactElement[] | ReactElement
+  children?: React.ReactNode
 }
 
 /**

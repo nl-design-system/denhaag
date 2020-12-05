@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import React from 'react'
 import MaterialAccordionActions from '@material-ui/core/AccordionActions'
 
 export interface AccordionActionsProps {
@@ -10,7 +10,7 @@ export interface AccordionActionsProps {
   /**
    * The content of the component
    */
-  children: ReactElement
+  children?: React.ReactNode
 
   /**
    * If true, the actions do not have additional margin.
