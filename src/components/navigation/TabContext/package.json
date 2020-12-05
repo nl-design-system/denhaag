@@ -1,0 +1,7 @@
+{
+  "name": "nlds-react-components-tabcontext",
+  "version": "0.1.0",
+  "dependencies": {
+    "@material-ui/lab": "^4.0.0-alpha.57"
+  }
+}

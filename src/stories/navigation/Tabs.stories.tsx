@@ -50,7 +50,6 @@ const Template: Story<TabsProps> = (args: any) => {
  * Implementation of Tabs
  */
 export const Default = Template.bind({})
-Default.args = {}
 
 /**
  * Implementation of Tabs with vertical orientation

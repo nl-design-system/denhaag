@@ -24,7 +24,6 @@ const Template: Story<MenuItemProps> = (args: any) => (
  * Implementation of MenuItem
  */
 export const Default = Template.bind({})
-Default.args = {}
 
 /**
  * Implementation with compact virtual padding.

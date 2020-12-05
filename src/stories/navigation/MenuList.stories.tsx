@@ -24,7 +24,6 @@ const Template: Story<MenuListProps> = (args: any) => (
  * Implementation of MenuList
  */
 export const Default = Template.bind({})
-Default.args = {}
 
 /**
  * Implementation of MenuList with menu variant.
