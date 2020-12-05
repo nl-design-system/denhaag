@@ -1,0 +1,10 @@
+{
+  "name": "nlds-react-components-tabscrollbutton",
+  "description": "A TabScrollButton component",
+  "author": "Municipality of The Hague",
+  "license": "MIT",
+  "version": "0.1.0",
+  "dependencies": {
+    "@material-ui/core": "^4.11.0"
+  }
+}
