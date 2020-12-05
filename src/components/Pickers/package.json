@@ -5,8 +5,8 @@
   "author": "Municipality of The Hague",
   "license": "MIT",
   "dependencies": {
-    "nlds-react-components-pickers-datepicker": "^0.1.0",
-    "nlds-react-components-pickers-utilsprovider": "^0.1.0",
-    "nlds-react-components-pickers-basedatepickerprops": "^0.1.0"
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/pickers": "^3.2.0",
+    "nlds-react-components-pickers-utilsprovider": "^0.1.0"
   }
 }
