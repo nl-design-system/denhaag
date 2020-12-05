@@ -19,9 +19,11 @@
     "nlds-react-components-stepcontent": "^0.1.0",
     "nlds-react-components-stepicon": "^0.1.0",
     "nlds-react-components-steplabel": "^0.1.0",
-    "nlds-react-components-tabcontext": "^0.1.0",
-    "nlds-react-components-tabs": "^0.1.0",
     "nlds-react-components-tab": "^0.1.0",
+    "nlds-react-components-tabcontext": "^0.1.0",
+    "nlds-react-components-tablist": "^0.1.0",
+    "nlds-react-components-tabpanel": "^0.1.0",
+    "nlds-react-components-tabs": "^0.1.0",
     "nlds-react-components-tabscrollbutton": "^0.1.0"
   }
 }

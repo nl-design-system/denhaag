@@ -1,11 +1,13 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
-import { Stepper } from '../..'
-import { StepperProps } from '../../components/navigation/Stepper/Stepper'
-import pkg from '../../components/navigation/Stepper/package.json'
+import {
+  Stepper,
+  StepperProps
+} from '../../components/navigation/Stepper/Stepper'
 import Step from '../../components/navigation/Step/Step'
 import StepLabel from '../../components/navigation/StepLabel/StepLabel'
 import StepContent from '../../components/navigation/StepContent/StepContent'
+import pkg from '../../components/navigation/Stepper/package.json'
 
 export default {
   title: 'Components/navigation/Stepper',

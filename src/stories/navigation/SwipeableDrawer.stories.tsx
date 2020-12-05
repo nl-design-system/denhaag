@@ -1,7 +1,10 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
-import { Button, SwipeableDrawer } from '../..'
-import { SwipeableDrawerProps } from '../../components/navigation/SwipeableDrawer/SwipeableDrawer'
+import {
+  SwipeableDrawer,
+  SwipeableDrawerProps
+} from '../../components/navigation/SwipeableDrawer/SwipeableDrawer'
+import Button from '../../components/input/Button/Button'
 import pkg from '../../components/navigation/SwipeableDrawer/package.json'
 
 export default {

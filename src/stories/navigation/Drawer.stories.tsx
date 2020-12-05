@@ -1,7 +1,7 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
-import { Button, Drawer } from '../..'
-import { DrawerProps } from '../../components/navigation/Drawer/Drawer'
+import { Drawer, DrawerProps } from '../../components/navigation/Drawer/Drawer'
+import Button from '../../components/input/Button/Button'
 import pkg from '../../components/navigation/Drawer/package.json'
 
 export default {

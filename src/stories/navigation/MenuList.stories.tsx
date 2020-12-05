@@ -1,7 +1,10 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
-import { MenuItem, MenuList } from '../..'
-import { MenuListProps } from '../../components/navigation/MenuList/MenuList'
+import {
+  MenuList,
+  MenuListProps
+} from '../../components/navigation/MenuList/MenuList'
+import MenuItem from '../../components/navigation/MenuItem/MenuItem'
 import pkg from '../../components/navigation/MenuList/package.json'
 
 export default {

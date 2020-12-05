@@ -1,10 +1,10 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
-import { Tabs } from '../..'
 import Tab, { TabProps } from '../../components/navigation/Tab/Tab'
 import pkg from '../../components/navigation/Tab/package.json'
-import { TabContext } from '@material-ui/lab'
-import TabPanel from '@material-ui/lab/TabPanel'
+import TabContext from '../../components/navigation/TabContext/TabContext'
+import Tabs from '../../components/navigation/Tabs/Tabs'
+import TabPanel from '../../components/navigation/TabPanel/TabPanel'
 
 export default {
   title: 'Components/Navigation/Tabs/Tab',
