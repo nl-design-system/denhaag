@@ -1,11 +1,11 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
-import pkg from '../../components/forms/Switch/package.json'
-import Switch, { SwitchProps } from '../../components/forms/Switch/Switch'
-import { FormControlLabel } from '../../components/FormControlLabel/FormControlLabel'
+import pkg from '../../components/input/Switch/package.json'
+import Switch, { SwitchProps } from '../../components/input/Switch/Switch'
+import { FormControlLabel } from '../../components/input/FormControlLabel/FormControlLabel'
 
 export default {
-  title: 'Components/Forms/Switch',
+  title: 'Components/Input/Switch',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
@@ -15,14 +15,7 @@ export default {
 const Template: Story<SwitchProps> = (args: any) => {
   return (
     <div>
-      <FormControlLabel
-        label='Checked switch'
-        control={<Switch defaultChecked {...args} />}
-      />
-      <FormControlLabel
-        label='Unchecked switch'
-        control={<Switch {...args} />}
-      />
+      <FormControlLabel label='Switch' control={<Switch {...args} />} />
     </div>
   )
 }
@@ -31,6 +24,14 @@ const Template: Story<SwitchProps> = (args: any) => {
  * Default Switch
  */
 export const Default: Story<SwitchProps> = Template.bind({})
+
+/**
+ * Default Checked Switch
+ */
+export const DefaultChecked: Story<SwitchProps> = Template.bind({})
+DefaultChecked.args = {
+  defaultChecked: true
+}
 
 /**
  * Primary Switch

@@ -1,8 +1,7 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
-import { GridList } from '../..'
-import {
-  GridListTile,
+import { GridList } from '../../components/layout/GridList/GridList'
+import GridListTile, {
   GridListTileProps
 } from '../../components/layout/GridListTile/GridListTile'
 import pkg from '../../components/layout/GridListTile/package.json'
@@ -19,13 +18,13 @@ const Template: Story<GridListTileProps> = (args: any) => (
   <GridList>
     <GridListTile {...args}>
       <img
-        src='https://support.image-line.com/innovaeditor/assets/KnowledgeBase/flStudio11Demo[1].png'
+        src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Philadelphia_from_South_Street_Bridge_July_2016_panorama_3.jpg/1280px-Philadelphia_from_South_Street_Bridge_July_2016_panorama_3.jpg'
         alt='A picture of a square block with the word demo written in neon blue on the top.'
       />
     </GridListTile>
     <GridListTile {...args}>
       <img
-        src='https://mentorphiledotcom.files.wordpress.com/2018/09/livedemo-1.png'
+        src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Lagoon_Nebula.jpg/1024px-Lagoon_Nebula.jpg'
         alt='Picture for demonstrating the GridListTile component.'
       />
     </GridListTile>

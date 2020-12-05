@@ -34,27 +34,14 @@ export interface ButtonProps {
  * Primary UI component for user interaction
  */
 export const Button: React.FC<ButtonProps> = ({
-  color = 'default',
-  variant = 'contained',
-  onClick,
-  size,
-  href,
-  disabled = false,
   children,
   ...props
 }) => {
   return (
-    <MaterialButton
-      onClick={onClick}
-      variant={variant}
-      color={color}
-      size={size}
-      href={href}
-      disabled={disabled}
-      {...props}
-    >
-      {children}
-    </MaterialButton>
+    <MaterialButton {...props}
+      >
+        {children}
+      </MaterialButton>
   )
 }
 

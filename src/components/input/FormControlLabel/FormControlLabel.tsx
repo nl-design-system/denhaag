@@ -13,7 +13,7 @@ export interface FormControlLabelProps {
   /**
    *A control instance, it can be a Radio, a Switch or a Checkbox.
    */
-  control: ReactElement
+  control: ReactElement<any, any>
   /**
    * If true, the component will be disabled.
    */
@@ -21,7 +21,7 @@ export interface FormControlLabelProps {
   /**
    * The label to display for the component.
    */
-  label?: string
+  label: string
   /**
    * The position of the label.
    */
@@ -44,14 +44,7 @@ export const FormControlLabel: React.FC<FormControlLabelProps> = (
 ) => {
   return (
     <MaterialFormControlLabel
-      checked={props.checked}
-      classes={props.classes}
-      control={props.control}
-      disabled={props.disabled}
-      label={props.label}
-      labelPlacement={props.labelPlacement}
-      onChange={props.onChange}
-      value={props.value}
+    {...props}
     />
   )
 }
