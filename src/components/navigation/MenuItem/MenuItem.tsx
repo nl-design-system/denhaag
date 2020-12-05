@@ -1,11 +1,11 @@
-import React, { ElementType, ReactElement } from 'react'
+import React, { ElementType } from 'react'
 import MaterialMenuItem from '@material-ui/core/MenuItem'
 
 export interface MenuItemProps {
   /**
    * Menu item contents.
    */
-  children: ReactElement | ReactElement[]
+  children?: React.ReactNode
 
   /**
    * Override or extend the styles applied to the component.

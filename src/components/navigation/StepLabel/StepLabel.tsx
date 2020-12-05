@@ -1,5 +1,6 @@
-import React, { ElementType, ReactElement } from 'react'
+import React from 'react'
 import MaterialStepLabel from '@material-ui/core/StepLabel'
+import { StepIconProps } from '../StepIcon/StepIcon'
 
 export interface StepLabelProps {
   /**
@@ -10,7 +11,7 @@ export interface StepLabelProps {
   /**
    * In most cases will simply be a string containing a title for the label.
    */
-  children: ReactElement
+  children?: React.ReactNode
 
   /**
    * Mark the step as disabled, will also disable the button if StepLabelButton is a child of StepLabel.
@@ -21,7 +22,7 @@ export interface StepLabelProps {
   /**
    * The optional node to display.
    */
-  optional?: ReactElement
+  optional?: React.ReactNode
 
   /**
    * Mark the step as failed.
@@ -31,17 +32,17 @@ export interface StepLabelProps {
   /**
    * The label displayed in the step icon.
    */
-  icon?: ReactElement
+  icon?: React.ReactNode
 
   /**
    * The component to render in place of the StepIcon.
    */
-  StepIconComponent?: ElementType
+  StepIconComponent?: React.ElementType
 
   /**
    * Props applied to the StepIcon element.
    */
-  StepIconProps?: object
+  StepIconProps?: Partial<StepIconProps>
 }
 
 /**

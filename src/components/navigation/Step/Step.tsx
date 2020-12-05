@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import React from 'react'
 import MaterialStep from '@material-ui/core/Step'
 
 export interface StepProps {
@@ -10,7 +10,7 @@ export interface StepProps {
   /**
    * Should be Step sub-components such as StepLabel, StepContent.
    */
-  children: ReactElement[] | ReactElement
+  children: React.ReactNode
 
   /**
    * Sets the step as active.

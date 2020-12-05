@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import React from 'react'
 import MaterialStepIcon from '@material-ui/core/StepIcon'
 
 export interface StepIconProps {
@@ -25,7 +25,7 @@ export interface StepIconProps {
   /**
    * The label displayed in the step icon.
    */
-  icon: ReactElement
+  icon: React.ReactNode
 }
 
 /**

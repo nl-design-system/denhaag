@@ -1,4 +1,4 @@
-import React, { ReactElement, RefObject } from 'react'
+import React, { RefObject } from 'react'
 import MaterialPopper from '@material-ui/core/Popper'
 
 export interface PopperProps {
@@ -10,7 +10,7 @@ export interface PopperProps {
   /**
    * Popper render function or node.
    */
-  children: ReactElement | ReactElement[]
+  children?: React.ReactNode
 
   /**
    * A HTML element, component instance, or function that returns either.

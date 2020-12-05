@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import React from 'react'
 import MaterialTabScrollButton from '@material-ui/core/TabScrollButton'
 
 export interface TabScrollButtonProps {
@@ -10,7 +10,7 @@ export interface TabScrollButtonProps {
   /**
    * The content of the component
    */
-  children: ReactElement
+  children?: React.ReactNode
 
   /**
    * Which direction should the button indicate?

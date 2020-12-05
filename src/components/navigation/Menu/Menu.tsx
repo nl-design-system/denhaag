@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import React from 'react'
 import MaterialMenu from '@material-ui/core/Menu'
 
 export interface MenuProps {
@@ -24,7 +24,7 @@ export interface MenuProps {
   /**
    * Menu contents, normally MenuItems.
    */
-  children: ReactElement | ReactElement[]
+  children?: React.ReactNode
 
   /**
    * When opening the menu will not focus the active item but the [role="menu"] unless autoFocus is also set to false.

@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import React from 'react'
 import MaterialDrawer from '@material-ui/core/Drawer'
 
 export interface DrawerProps {
@@ -10,7 +10,7 @@ export interface DrawerProps {
   /**
    * The contents of the drawer.
    */
-  children: ReactElement | ReactElement[]
+  children?: React.ReactNode
 
   /**
    * Override or extend the styles applied to the component.

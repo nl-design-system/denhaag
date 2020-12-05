@@ -1,11 +1,11 @@
-import React, { ElementType } from 'react'
+import React from 'react'
 import MaterialTabList from '@material-ui/lab/TabList'
 
 export interface TabListProps {
   /**
    * The contents of the component.
    */
-  children: Array<ElementType>
+  children: React.ReactElement[]
 }
 
 /**

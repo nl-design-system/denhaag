@@ -1,4 +1,4 @@
-import React, { ElementType, ReactElement } from 'react'
+import React from 'react'
 import MaterialTabs from '@material-ui/core/Tabs'
 
 export interface TabsProps {
@@ -10,7 +10,7 @@ export interface TabsProps {
   /**
    * The content of the component
    */
-  children: ReactElement[] | ReactElement
+  children?: React.ReactNode
 
   /**
    * Callback fired when the component mounts.
@@ -35,7 +35,7 @@ export interface TabsProps {
   /**
    * The component used for the root node. Either a string to use a HTML element or a component.
    */
-  component?: ElementType
+  component?: React.ReactNode
 
   /**
    * Determines the color of the indicator.
@@ -57,7 +57,7 @@ export interface TabsProps {
   /**
    * The component used to render the scroll buttons.
    */
-  ScrollButtonComponent?: ElementType
+  ScrollButtonComponent?: React.ElementType
 
   /**
    * Determine behavior of scroll buttons when tabs are set to scroll:

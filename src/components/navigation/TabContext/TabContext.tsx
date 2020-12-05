@@ -1,11 +1,11 @@
-import React, { ReactElement } from 'react'
+import React from 'react'
 import MaterialTabContext from '@material-ui/lab/TabContext'
 
 export interface TabContextProps {
   /**
    * The content of the component.
    */
-  children: ReactElement | ReactElement[]
+  children?: React.ReactNode
 
   /**
    * The value of the currently selected Tab.

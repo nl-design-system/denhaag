@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import React from 'react'
 import MaterialPopover from '@material-ui/core/Popover'
 
 export interface PopoverProps {
@@ -33,7 +33,7 @@ export interface PopoverProps {
   /**
    * The content of the component.
    */
-  children: ReactElement | ReactElement[]
+  children?: React.ReactNode
 
   /**
    * Override or extend the styles applied to the component.

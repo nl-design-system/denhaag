@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import React from 'react'
 import MaterialMobileStepper from '@material-ui/core/MobileStepper'
 
 export interface MobileStepperProps {
@@ -15,7 +15,7 @@ export interface MobileStepperProps {
   /**
    * A back button element. For instance, it can be a Button or an IconButton.
    */
-  backButton: ReactElement
+  backButton: React.ReactNode
 
   /**
    * Props applied to the LinearProgress element.
@@ -25,7 +25,7 @@ export interface MobileStepperProps {
   /**
    * A next button element. For instance, it can be a Button or an IconButton.
    */
-  nextButton: ReactElement
+  nextButton: React.ReactNode
 
   /**
    * Set the positioning type.

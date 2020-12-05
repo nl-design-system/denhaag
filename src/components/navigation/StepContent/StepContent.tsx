@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import React from 'react'
 import MaterialStepContent from '@material-ui/core/StepContent'
 
 export interface StepContentProps {
@@ -10,7 +10,7 @@ export interface StepContentProps {
   /**
    * Step content.
    */
-  children: ReactElement | ReactElement[]
+  children?: React.ReactNode
 
   /**
    * The component used for the transition.

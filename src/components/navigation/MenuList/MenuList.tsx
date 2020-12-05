@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import React from 'react'
 import MaterialMenuList from '@material-ui/core/MenuList'
 
 export interface MenuListProps {
@@ -15,7 +15,7 @@ export interface MenuListProps {
   /**
    * MenuList contents, normally MenuItems.
    */
-  children: ReactElement | ReactElement[]
+  children?: React.ReactNode
 
   /**
    * If true, will allow focus on disabled items.

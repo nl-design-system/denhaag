@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import React from 'react'
 import MaterialStepper from '@material-ui/core/Stepper'
 
 export interface StepperProps {
@@ -10,7 +10,7 @@ export interface StepperProps {
   /**
    * The content of the component
    */
-  children: ReactElement | ReactElement[]
+  children?: React.ReactNode
 
   /**
    * Set the active step (zero based index). Set to -1 to disable all the steps.
@@ -26,7 +26,7 @@ export interface StepperProps {
   /**
    * An element to be placed between each step.
    */
-  connector?: ReactElement
+  connector?: React.ReactElement
 
   /**
    * If set the Stepper will not assist in controlling steps for linear flow.

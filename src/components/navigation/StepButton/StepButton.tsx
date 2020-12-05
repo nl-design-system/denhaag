@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import React from 'react'
 import MaterialStepButton from '@material-ui/core/StepButton'
 
 export interface StepButtonProps {
@@ -10,17 +10,17 @@ export interface StepButtonProps {
   /**
    * The content of the component
    */
-  children: ReactElement | ReactElement[]
+  children?: React.ReactNode
 
   /**
    * The icon displayed by the step label.
    */
-  icon: ReactElement
+  icon?: React.ReactNode
 
   /**
    * The optional node to display.
    */
-  optional?: ReactElement
+  optional?: React.ReactNode
 }
 
 /**
