@@ -10,6 +10,7 @@ import Grid from './components/layout/Grid/Grid'
 import GridList from './components/layout/GridList/GridList'
 import Hidden from './components/layout/Hidden/Hidden'
 import Accordion from './components/surfaces/Accordion/Accordion'
+import AppBar from './components/surfaces/AppBar/AppBar'
 import Typography from './components/datadisplay/Typography/Typography'
 import TextField from './components/input/TextField/TextField'
 import Menu from './components/navigation/Menu/Menu'
@@ -50,5 +51,6 @@ export {
   Drawer,
   SwipeableDrawer,
   Accordion,
+  AppBar,
   Typography
 }
