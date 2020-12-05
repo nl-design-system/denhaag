@@ -10,6 +10,7 @@ import GridList from './components/layout/GridList/GridList'
 import Hidden from './components/layout/Hidden/Hidden'
 import Accordion from './components/surfaces/Accordion/Accordion'
 import Typography from './components/datadisplay/Typography/Typography'
+import Divider from './components/datadisplay/Divider/Divider'
 import TextField from './components/input/TextField/TextField'
 
 /**
@@ -28,5 +29,6 @@ export {
   GridList,
   Hidden,
   Accordion,
-  Typography
+  Typography,
+  Divider
 }
