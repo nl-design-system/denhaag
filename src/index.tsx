@@ -2,6 +2,7 @@ import Button from './components/input/Button/Button'
 import ButtonGroup from './components/input/ButtonGroup/ButtonGroup'
 import Checkbox from './components/input/Checkbox/Checkbox'
 import Switch from './components/input/Switch/Switch'
+import Select from './components/input/Select/Select'
 import FormControlLabel from './components/input/FormControlLabel/FormControlLabel'
 import FormGroup from './components/input/FormGroup/FormGroup'
 import Box from './components/layout/Box/Box'
@@ -32,6 +33,7 @@ export {
   ButtonGroup,
   Checkbox,
   Switch,
+  Select,
   TextField,
   FormControlLabel,
   FormGroup,

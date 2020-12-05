@@ -1,0 +1,9 @@
+{
+  "name": "nlds-react-components-inputlabel",
+  "version": "0.1.0",
+  "description": "An InputLabel component",
+  "author": "Municipality of The Hague",
+  "dependencies": {
+    "@material-ui/core": "^4.11.2"
+  }
+}
