@@ -15,14 +15,7 @@ export default {
 const Template: Story<SwitchProps> = (args: any) => {
   return (
     <div>
-      <FormControlLabel
-        label='Checked switch'
-        control={<Switch defaultChecked {...args} />}
-      />
-      <FormControlLabel
-        label='Unchecked switch'
-        control={<Switch {...args} />}
-      />
+      <FormControlLabel label='Switch' control={<Switch {...args} />} />
     </div>
   )
 }
@@ -31,6 +24,14 @@ const Template: Story<SwitchProps> = (args: any) => {
  * Default Switch
  */
 export const Default: Story<SwitchProps> = Template.bind({})
+
+/**
+ * Default Checked Switch
+ */
+export const DefaultChecked: Story<SwitchProps> = Template.bind({})
+DefaultChecked.args = {
+  defaultChecked: true
+}
 
 /**
  * Primary Switch

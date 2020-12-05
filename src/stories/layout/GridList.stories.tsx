@@ -1,9 +1,9 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
-import { GridList } from '../..'
 import { GridListTile } from '../../components/layout/GridListTile/GridListTile'
-import { GridListProps } from '../../components/layout/GridList/GridList'
+import GridList, { GridListProps } from '../../components/layout/GridList/GridList'
 import pkg from '../../components/layout/GridList/package.json'
+import imageFile from '../assets/logo.svg'
 
 export default {
   title: 'Components/Layout/GridList',
@@ -20,7 +20,7 @@ const Template: Story<GridListProps> = (args: any) => (
     </GridListTile>
     <GridListTile>
       <img
-        src='https://ciconiaconsort.nl/wp-content/uploads/2016/02/Gemeente-Den-Haag-logo2-640x612.jpg'
+        src={imageFile}
         alt='The Hague municipality emblem'
         width={150}
         height={150}

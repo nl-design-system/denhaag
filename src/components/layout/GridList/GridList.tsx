@@ -20,7 +20,7 @@ export interface GridListProps {
   /**
    * Number of columns.
    */
-  cols?: number | 2
+  cols?: number
 
   /**
    * The component used for the root node. Either a string to use a HTMl element or a component.
