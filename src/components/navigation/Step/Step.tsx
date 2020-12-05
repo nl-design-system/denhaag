@@ -10,7 +10,7 @@ export interface StepProps {
   /**
    * Should be Step sub-components such as StepLabel, StepContent.
    */
-  children: ReactElement[]
+  children: ReactElement[] | ReactElement
 
   /**
    * Sets the step as active.

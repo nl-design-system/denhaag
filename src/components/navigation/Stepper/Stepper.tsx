@@ -10,7 +10,7 @@ export interface StepperProps {
   /**
    * The content of the component
    */
-  children: ReactElement
+  children: ReactElement | ReactElement[]
 
   /**
    * Set the active step (zero based index). Set to -1 to disable all the steps.

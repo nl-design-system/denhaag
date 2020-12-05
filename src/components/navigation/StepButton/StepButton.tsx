@@ -10,7 +10,7 @@ export interface StepButtonProps {
   /**
    * The content of the component
    */
-  children: ReactElement
+  children: ReactElement | ReactElement[]
 
   /**
    * The icon displayed by the step label.

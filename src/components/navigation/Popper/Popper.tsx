@@ -10,7 +10,7 @@ export interface PopperProps {
   /**
    * Popper render function or node.
    */
-  children: ReactElement
+  children: ReactElement | ReactElement[]
 
   /**
    * A HTML element, component instance, or function that returns either.

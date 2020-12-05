@@ -24,7 +24,7 @@ export interface MenuProps {
   /**
    * Menu contents, normally MenuItems.
    */
-  children: ReactElement
+  children: ReactElement | ReactElement[]
 
   /**
    * When opening the menu will not focus the active item but the [role="menu"] unless autoFocus is also set to false.

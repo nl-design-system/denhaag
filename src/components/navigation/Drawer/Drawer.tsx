@@ -10,7 +10,7 @@ export interface DrawerProps {
   /**
    * The contents of the drawer.
    */
-  children: ReactElement
+  children: ReactElement | ReactElement[]
 
   /**
    * Override or extend the styles applied to the component.

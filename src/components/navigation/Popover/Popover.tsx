@@ -33,7 +33,7 @@ export interface PopoverProps {
   /**
    * The content of the component.
    */
-  children: ReactElement
+  children: ReactElement | ReactElement[]
 
   /**
    * Override or extend the styles applied to the component.

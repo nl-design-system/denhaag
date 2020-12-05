@@ -15,7 +15,7 @@ export interface MenuListProps {
   /**
    * MenuList contents, normally MenuItems.
    */
-  children: ReactElement
+  children: ReactElement | ReactElement[]
 
   /**
    * If true, will allow focus on disabled items.

@@ -16,28 +16,9 @@ export default {
   component: Tabs
 } as Meta
 
-// const TemplateWithState = (props: TabsProps) => {
-//   return (
-//     <div>
-//       <TabContext value={props.value.toString()}>
-//         <AppBar>
-//           <Tabs {...props}>
-//             <Tab label='First tab' value={1} />
-//             <Tab label='Second tab' value={2} />
-//             <Tab label='Third tab' value={3} />
-//           </Tabs>
-//         </AppBar>
-//         <TabPanel value='1'>Item One</TabPanel>
-//         <TabPanel value='2'>Item Two</TabPanel>
-//         <TabPanel value='3'>Item Three</TabPanel>
-//       </TabContext>
-//     </div>
-//   )
-// }
-
 const Template: Story<TabsProps> = (args: any) => {
   // @ts-ignore
-  const [value, setValue] = React.useState(2)
+  const [value, setValue] = React.useState(1)
 
   // @ts-ignore
   args.onChange = (event: React.ChangeEvent<{}>, newValue: number) => {

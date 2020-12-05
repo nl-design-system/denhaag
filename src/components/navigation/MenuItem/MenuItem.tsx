@@ -5,7 +5,7 @@ export interface MenuItemProps {
   /**
    * Menu item contents.
    */
-  children: ReactElement
+  children: ReactElement | ReactElement[]
 
   /**
    * Override or extend the styles applied to the component.

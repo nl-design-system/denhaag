@@ -10,7 +10,7 @@ export interface StepContentProps {
   /**
    * Step content.
    */
-  children: ReactElement
+  children: ReactElement | ReactElement[]
 
   /**
    * The component used for the transition.

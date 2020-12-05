@@ -10,7 +10,7 @@ export interface TabsProps {
   /**
    * The content of the component
    */
-  children: ReactElement[]
+  children: ReactElement[] | ReactElement
 
   /**
    * Callback fired when the component mounts.

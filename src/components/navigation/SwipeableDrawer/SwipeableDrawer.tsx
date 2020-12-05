@@ -5,7 +5,7 @@ export interface SwipeableDrawerProps {
   /**
    * The content of the component.
    */
-  children: ReactElement
+  children: ReactElement | ReactElement[]
 
   /**
    * Disable the backdrop transition.
