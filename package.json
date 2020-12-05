@@ -39,7 +39,7 @@
     "@babel/preset-env": "^7.12.1",
     "@babel/preset-react": "^7.12.1",
     "@storybook/addon-actions": "^6.1.1",
-    "@storybook/addon-essentials": "^6.1.1",
+    "@storybook/addon-essentials": "^6.1.9",
     "@storybook/addon-links": "^6.1.1",
     "@storybook/react": "^6.1.1",
     "@testing-library/jest-dom": "^4.2.4",

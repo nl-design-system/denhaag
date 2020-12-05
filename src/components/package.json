@@ -6,6 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "nlds-react-components-input": "^0.1.0",
-    "nlds-react-components-layout": "^0.1.0"
+    "nlds-react-components-layout": "^0.1.0",
+    "nlds-react-components-datadisplay": "^0.1.0"
   }
 }
