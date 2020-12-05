@@ -10,13 +10,13 @@ export interface HiddenProps {
   /**
    * Specify which implementation to use. 'js' is default.
    */
-  implementation: 'js' | 'css'
+  implementation?: 'js' | 'css'
 
   /**
    * Sets the initial width of the component.
    * Can be used when choosing the 'js' implementation with server side rendering.
    */
-  initialWidth: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
+  initialWidth?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
 
   /**
    * Hide the given breakpoint(s).
@@ -32,43 +32,52 @@ export interface HiddenProps {
   /**
    * If true, screens of that size and smaller will be hidden.
    */
-  lgDown: boolean
+  lgDown?: boolean
+
+  /**
+   * If true, screens of that size and larger will be hidden.
+   */
+  lgUp?: boolean
+
   /**
    * If true, screens of that size and smaller will be hidden.
    */
-  lgUp: boolean
+  mdDown?: boolean
+
+  /**
+   * If true, screens of that size and larger will be hidden.
+   */
+  mdUp?: boolean
+
   /**
    * If true, screens of that size and smaller will be hidden.
    */
-  mdDown: boolean
+  smDown?: boolean
+
+  /**
+   * If true, screens of that size and larger will be hidden.
+   */
+  smUp?: boolean
+
   /**
    * If true, screens of that size and smaller will be hidden.
    */
-  mdUp: boolean
+  xlDown?: boolean
+
+  /**
+   * If true, screens of that size and larger will be hidden.
+   */
+  xlUp?: boolean
+
   /**
    * If true, screens of that size and smaller will be hidden.
    */
-  smDown: boolean
+  xsDown?: boolean
+
   /**
-   * If true, screens of that size and smaller will be hidden.
+   * If true, screens of that size and larger will be hidden.
    */
-  smUp: boolean
-  /**
-   * If true, screens of that size and smaller will be hidden.
-   */
-  xlDown: boolean
-  /**
-   * If true, screens of that size and smaller will be hidden.
-   */
-  xlUp: boolean
-  /**
-   * If true, screens of that size and smaller will be hidden.
-   */
-  xsDown: boolean
-  /**
-   * If true, screens of that size and smaller will be hidden.
-   */
-  xsUp: boolean
+  xsUp?: boolean
 }
 
 /**
@@ -77,22 +86,7 @@ export interface HiddenProps {
  * @constructor Constructs an instance of Hidden.
  */
 export const Hidden: React.FC<HiddenProps> = (props: HiddenProps) => {
-  return (
-    <MaterialHidden
-      implementation={props.implementation}
-      initialWidth={props.initialWidth}
-      only={props.only}
-      lgDown={props.lgDown}
-      lgUp={props.lgUp}
-      mdDown={props.mdDown}
-      mdUp={props.mdUp}
-      smDown={props.smDown}
-      xlDown={props.xlDown}
-      xsUp={props.xsUp}
-    >
-      {props.children}
-    </MaterialHidden>
-  )
+  return <MaterialHidden {...props}>{props.children}</MaterialHidden>
 }
 
 /**
