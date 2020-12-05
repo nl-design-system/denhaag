@@ -21,9 +21,8 @@ export interface SelectProps {
 
   /**
    * The default element value. Use when the component is not controlled.
-   * @document
    */
-  defaultValue?: unknown
+  defaultValue?: any
 
   /**
    * If `true`, a value is displayed even if no items are selected.
@@ -140,7 +139,7 @@ export interface SelectProps {
    * If the value is not an object, the string representation must match with the string representation of the option in order to be selected.
    * @document
    */
-  value?: unknown
+  value?: any
 }
 
 /**

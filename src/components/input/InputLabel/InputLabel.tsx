@@ -1,6 +1,4 @@
-import MaterialInputLabel, {
-  InputLabelClassKey
-} from '@material-ui/core/InputLabel'
+import MaterialInputLabel, { InputLabelClassKey } from '@material-ui/core/InputLabel'
 import React from 'react'
 import { FormLabelProps, StandardProps } from '@material-ui/core'
 
@@ -53,7 +51,7 @@ export interface InputLabelProps
 export const InputLabel: React.FC<InputLabelProps> = (
   props: InputLabelProps
 ) => {
-  return <MaterialInputLabel {...props} />
+  return <MaterialInputLabel {...props}>{props.children}</MaterialInputLabel>
 }
 
 /**
