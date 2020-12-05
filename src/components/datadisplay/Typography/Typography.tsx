@@ -1,4 +1,4 @@
-import React, { ElementType, ReactNode } from 'react'
+import React from 'react'
 import MaterialTypography from '@material-ui/core/Typography'
 
 export interface TypographyProps {
@@ -10,7 +10,7 @@ export interface TypographyProps {
   /**
    * The content of the component.
    */
-  children: ReactNode[] | ReactNode
+  children?: React.ReactNode
 
   /**
    * Override or extend the styles applied to the component.
@@ -35,7 +35,7 @@ export interface TypographyProps {
    * Either a string to use a HTML element or a component.
    * Overrides the behavior of the variantMapping prop.
    */
-  component: ElementType
+  component: React.ElementType
 
   /**
    * Controls the display type
