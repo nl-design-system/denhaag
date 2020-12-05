@@ -1,4 +1,5 @@
 import Button from './components/input/Button/Button'
+import ButtonGroup from './components/input/ButtonGroup/ButtonGroup'
 import Checkbox from './components/input/Checkbox/Checkbox'
 import Switch from './components/input/Switch/Switch'
 import Select from './components/input/Select/Select'
@@ -30,6 +31,7 @@ import MenuList from './components/navigation/MenuList/MenuList'
  */
 export {
   Button,
+  ButtonGroup,
   Checkbox,
   Switch,
   Select,
