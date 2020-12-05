@@ -69,7 +69,7 @@ StaticPosition.args = {
 /**
  * A statically coloured AppBar
  */
-export const PrimaryColoured = Template.bind({})
-PrimaryColoured.args = {
-  color: 'primary'
+export const SecondaryColoured = Template.bind({})
+SecondaryColoured.args = {
+  color: 'secondary'
 }
