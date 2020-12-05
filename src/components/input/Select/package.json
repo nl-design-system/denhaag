@@ -1,0 +1,10 @@
+{
+  "name": "nlds-react-components-select",
+  "version": "0.1.0",
+  "description": "A Select component",
+  "author": "Municipality of The Hague",
+  "license": "MIT",
+  "dependencies": {
+    "@material-ui/core": "^4.11.2"
+  }
+}
