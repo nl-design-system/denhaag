@@ -16,19 +16,25 @@ export default {
   component: DatePicker
 } as Meta
 
-const Template: Story<DatePickerProps> = (args: any) => (
-  <PickersUtilsProvider utils={DateFnsUtils}>
-    <DatePicker {...args} />
-  </PickersUtilsProvider>
-)
+const Template: Story<DatePickerProps> = (args: any) => {
+  const [value, setValue] = React.useState('1970-01-01')
+  args.onChange = (newValue: any) => {
+    setValue(newValue)
+  }
+  args.value = value
+
+  return (
+    <PickersUtilsProvider utils={DateFnsUtils}>
+      <DatePicker {...args} />
+    </PickersUtilsProvider>
+  )
+}
 
 /**
- * Default Checkbox
+ * Default Datepicker
  */
 export const Default: Story<DatePickerProps> = Template.bind({})
 Default.args = {
-  value: '1970-01-01',
-  onChange: null,
   variant: 'dialog'
 }
 
@@ -37,8 +43,6 @@ Default.args = {
  */
 export const Inline: Story<DatePickerProps> = Template.bind({})
 Inline.args = {
-  value: '1970-01-01',
-  onChange: null,
   variant: 'inline'
 }
 
@@ -47,7 +51,5 @@ Inline.args = {
  */
 export const Static: Story<DatePickerProps> = Template.bind({})
 Static.args = {
-  value: '1970-01-01',
-  onChange: null,
   variant: 'static'
 }

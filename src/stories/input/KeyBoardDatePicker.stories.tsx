@@ -17,14 +17,24 @@ export default {
   component: KeyboardDatePicker
 } as Meta
 
-const Template: Story<KeyboardDatePickerProps> = (args: any) => (
-  <PickersUtilsProvider utils={DateFnsUtils}>
-    <KeyboardDatePicker value='1970-01-01' onChange={null} />
-  </PickersUtilsProvider>
-)
+const Template: Story<KeyboardDatePickerProps> = (args: any) => {
+  const [value, setValue] = React.useState('1970-01-01')
+  args.onChange = (newValue: any) => {
+    setValue(newValue)
+  }
+  args.value = value
+
+  return (
+    <PickersUtilsProvider utils={DateFnsUtils}>
+      <KeyboardDatePicker {...args} />
+    </PickersUtilsProvider>
+  )
+}
 
 /**
- * Default Checkbox
+ * Default KeyboardDatePicker
  */
-export const Default: Story<DatePickerProps> = Template.bind({})
-Default.args = {}
+export const Default: Story<KeyboardDatePickerProps> = Template.bind({})
+Default.args = {
+  clearable: true
+}
