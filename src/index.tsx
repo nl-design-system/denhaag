@@ -13,6 +13,7 @@ import Hidden from './components/layout/Hidden/Hidden'
 import Accordion from './components/surfaces/Accordion/Accordion'
 import AppBar from './components/surfaces/AppBar/AppBar'
 import Typography from './components/datadisplay/Typography/Typography'
+import Divider from './components/datadisplay/Divider/Divider'
 import TextField from './components/input/TextField/TextField'
 import Menu from './components/navigation/Menu/Menu'
 import Stepper from './components/navigation/Stepper/Stepper'
@@ -54,5 +55,6 @@ export {
   SwipeableDrawer,
   Accordion,
   AppBar,
-  Typography
+  Typography,
+  Divider
 }
