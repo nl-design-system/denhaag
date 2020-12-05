@@ -1,4 +1,4 @@
-import { MuiPickersUtilsProvider } from '@material-ui/pickers'
+import { MuiPickersUtilsProvider as MaterialPickersUtilsProvider } from '@material-ui/pickers/MuiPickersUtilsProvider'
 import React, { ReactNode } from 'react'
 
 export interface PickersUtilsProviderProps {
@@ -14,7 +14,9 @@ export const PickersUtilsProvider: React.FC<PickersUtilsProviderProps> = (
   props: PickersUtilsProviderProps
 ) => {
   return (
-    <MuiPickersUtilsProvider utils={props.utils} children={props.children} />
+    <MaterialPickersUtilsProvider utils={props.utils}>
+      {props.children}
+    </MaterialPickersUtilsProvider>
   )
 }
 
