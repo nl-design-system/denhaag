@@ -1,4 +1,4 @@
-import { DatePicker as MaterialDatePicker } from '@material-ui/pickers'
+import { KeyboardDatePicker as MaterialDatePicker } from '@material-ui/pickers'
 import { MaterialUiPickersDate as DateIOType } from '@material-ui/pickers/typings/date'
 import React, { ReactNode } from 'react'
 import BaseDatePickerProps from '../BaseDatePickerProps/BaseDatePickerProps'
