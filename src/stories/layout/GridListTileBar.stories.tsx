@@ -2,13 +2,11 @@ import React from 'react'
 import { Meta, Story } from '@storybook/react'
 import { IconButton } from '@material-ui/core'
 import InfoIcon from '@material-ui/icons/Info'
-import {
-  GridListTileBar,
-  GridListTileBarProps
-} from '../../components/layout/GridListTileBar/GridListTileBar'
+import GridListTileBar, { GridListTileBarProps } from '../../components/layout/GridListTileBar/GridListTileBar'
 import GridListTile from '../../components/layout/GridListTile/GridListTile'
-import { GridList } from '../..'
+import GridList from '../../components/layout/GridList/GridList'
 import pkg from '../../components/layout/GridListTileBar/package.json'
+import imageFile from '../assets/logo.svg'
 
 export default {
   title: 'Components/Layout/GridList/GridListTile/GridListTileBar',
@@ -22,7 +20,7 @@ const Template: Story<GridListTileBarProps> = (args: any) => (
   <GridList cols={5}>
     <GridListTile cols={1} rows={2}>
       <img
-        src='https://ciconiaconsort.nl/wp-content/uploads/2016/02/Gemeente-Den-Haag-logo2-640x612.jpg'
+        src={imageFile}
         alt='The Hague municipality emblem'
         width={150}
         height={150}
