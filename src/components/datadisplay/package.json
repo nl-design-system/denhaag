@@ -5,6 +5,8 @@
   "license": "MIT",
   "version": "0.1.0",
   "dependencies": {
-    "nlds-react-components-typography": "^0.1.0"
+    "nlds-react-components-typography": "^0.1.0",
+    "nlds-react-components-divider": "^0.1.0",
+    "nlds-react-components-badge": "^0.1.0"
   }
 }

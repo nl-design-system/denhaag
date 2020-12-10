@@ -1,6 +1,8 @@
 import Button from './components/input/Button/Button'
+import ButtonGroup from './components/input/ButtonGroup/ButtonGroup'
 import Checkbox from './components/input/Checkbox/Checkbox'
 import Switch from './components/input/Switch/Switch'
+import Select from './components/input/Select/Select'
 import FormControlLabel from './components/input/FormControlLabel/FormControlLabel'
 import FormGroup from './components/input/FormGroup/FormGroup'
 import Box from './components/layout/Box/Box'
@@ -9,7 +11,9 @@ import Grid from './components/layout/Grid/Grid'
 import GridList from './components/layout/GridList/GridList'
 import Hidden from './components/layout/Hidden/Hidden'
 import Accordion from './components/surfaces/Accordion/Accordion'
+import AppBar from './components/surfaces/AppBar/AppBar'
 import Typography from './components/datadisplay/Typography/Typography'
+import Divider from './components/datadisplay/Divider/Divider'
 import TextField from './components/input/TextField/TextField'
 import Menu from './components/navigation/Menu/Menu'
 import Stepper from './components/navigation/Stepper/Stepper'
@@ -27,8 +31,10 @@ import MenuList from './components/navigation/MenuList/MenuList'
  */
 export {
   Button,
+  ButtonGroup,
   Checkbox,
   Switch,
+  Select,
   TextField,
   FormControlLabel,
   FormGroup,
@@ -48,5 +54,7 @@ export {
   Drawer,
   SwipeableDrawer,
   Accordion,
-  Typography
+  AppBar,
+  Typography,
+  Divider
 }

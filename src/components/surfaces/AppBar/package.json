@@ -1,0 +1,9 @@
+{
+  "name": "nlds-react-components-appbar",
+  "author": "Municipality of The Hague",
+  "description": "An AppBar component",
+  "version": "0.1.0",
+  "dependencies": {
+    "@material-ui/core": "^4.11.0"
+  }
+}
