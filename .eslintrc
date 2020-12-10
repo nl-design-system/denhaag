@@ -25,7 +25,8 @@
     }
   },
   "plugins": [
-    "jsx-a11y"
+    "jsx-a11y",
+    "@typescript-eslint"
   ],
   "rules": {
     "space-before-function-paren": 0,
@@ -33,6 +34,8 @@
     "react/jsx-handler-names": 0,
     "react/jsx-fragments": 0,
     "react/no-unused-prop-types": 0,
-    "import/export": 0
+    "import/export": 0,
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error"
   }
 }
