@@ -1,16 +1,8 @@
 import React from 'react'
 import MaterialStepContent from '@material-ui/core/StepContent'
+import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
 
-export interface StepContentProps {
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes?: object
-
-  /**
-   * Step content.
-   */
-  children?: React.ReactNode
+export interface StepContentProps extends ComponentBaseProps {
 
   /**
    * The component used for the transition.

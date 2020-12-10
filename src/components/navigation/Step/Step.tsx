@@ -1,17 +1,8 @@
 import React from 'react'
 import MaterialStep from '@material-ui/core/Step'
+import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
 
-export interface StepProps {
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes?: object
-
-  /**
-   * Should be Step sub-components such as StepLabel, StepContent.
-   */
-  children: React.ReactNode
-
+export interface StepProps extends ComponentBaseProps {
   /**
    * Sets the step as active.
    * Is passed to child components.

@@ -1,18 +1,9 @@
 import React from 'react'
 import MaterialStepLabel from '@material-ui/core/StepLabel'
 import { StepIconProps } from '../StepIcon/StepIcon'
+import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
 
-export interface StepLabelProps {
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes?: object
-
-  /**
-   * In most cases will simply be a string containing a title for the label.
-   */
-  children?: React.ReactNode
-
+export interface StepLabelProps extends ComponentBaseProps {
   /**
    * Mark the step as disabled, will also disable the button if StepLabelButton is a child of StepLabel.
    * Is passed to child components.

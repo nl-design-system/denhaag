@@ -1,16 +1,12 @@
 import React, { RefObject } from 'react'
 import MaterialPopper from '@material-ui/core/Popper'
+import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
 
-export interface PopperProps {
+export interface PopperProps extends ComponentBaseProps {
   /**
    * A HTML element, referenceObject, or a function that returns either.
    */
   anchorEl: HTMLElement
-
-  /**
-   * Popper render function or node.
-   */
-  children?: React.ReactNode
 
   /**
    * A HTML element, component instance, or function that returns either.
