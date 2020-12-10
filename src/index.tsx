@@ -1,6 +1,7 @@
 import Button from './components/input/Button/Button'
 import ButtonGroup from './components/input/ButtonGroup/ButtonGroup'
 import Checkbox from './components/input/Checkbox/Checkbox'
+import Radio from './components/input/Radio/Radio'
 import Switch from './components/input/Switch/Switch'
 import Select from './components/input/Select/Select'
 import FormControlLabel from './components/input/FormControlLabel/FormControlLabel'
@@ -25,7 +26,6 @@ import Drawer from './components/navigation/Drawer/Drawer'
 import SwipeableDrawer from './components/navigation/SwipeableDrawer/SwipeableDrawer'
 import MenuItem from './components/navigation/MenuItem/MenuItem'
 import MenuList from './components/navigation/MenuList/MenuList'
-
 /**
  * Primary UI component for user interaction
  */
@@ -33,6 +33,7 @@ export {
   Button,
   ButtonGroup,
   Checkbox,
+  Radio,
   Switch,
   Select,
   TextField,
