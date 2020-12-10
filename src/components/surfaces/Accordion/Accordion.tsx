@@ -1,16 +1,12 @@
 import React from 'react'
 import MaterialAccordion from '@material-ui/core/Accordion'
+import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
 
-export interface AccordionProps {
+export interface AccordionProps extends ComponentBaseProps {
   /**
-   * Override or extend the styles applied to the component.
+   * Content of the component.
    */
-  classes?: object
-
-  /**
-   * The content of the component
-   */
-  children: NonNullable<React.ReactNode>
+  children: React.ReactElement
 
   /**
    * If true, expands the Accordion by default.

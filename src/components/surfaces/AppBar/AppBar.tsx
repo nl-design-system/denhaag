@@ -1,17 +1,8 @@
 import React from 'react'
 import MaterialAppBar from '@material-ui/core/AppBar'
+import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
 
-export interface AppBarProps {
-  /**
-   * The content of the component.
-   */
-  children?: React.ReactNode
-
-  /**
-   * Override or extend the styles of the component.
-   */
-  classes?: object
-
+export interface AppBarProps extends ComponentBaseProps {
   /**
    * The color of the component. It supports those theme colors that make sense for this component.
    */

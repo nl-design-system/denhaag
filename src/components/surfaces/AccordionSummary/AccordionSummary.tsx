@@ -1,16 +1,8 @@
 import React from 'react'
 import MaterialAccordionSummary from '@material-ui/core/AccordionSummary'
+import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
 
-export interface AccordionSummaryProps {
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes?: object
-
-  /**
-   * The content of the component
-   */
-  children?: React.ReactNode
+export interface AccordionSummaryProps extends ComponentBaseProps {
 
   /**
    * The icon to display as the expand indicator.
