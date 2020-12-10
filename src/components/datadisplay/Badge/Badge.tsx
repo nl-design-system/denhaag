@@ -1,7 +1,8 @@
 import React from 'react'
 import MaterialBadge from '@material-ui/core/Badge'
+import BaseDataDisplayProps from '../BaseDataDisplayProps/BaseDataDisplayProps'
 
-export interface BadgeProps {
+export interface BadgeProps extends BaseDataDisplayProps {
   /**
    * The anchor of the badge.
    */
@@ -13,26 +14,10 @@ export interface BadgeProps {
   badgeContent?: React.ReactNode
 
   /**
-   * The content of the component.
-   */
-  children?: React.ReactNode
-
-  /**
-   * Override or extend the styles of the component.
-   */
-  classes: object
-
-  /**
    * The color of the component.
    * It supports those theme colors that make sense for this component.
    */
   color?: 'default' | 'error' | 'primary' | 'secondary'
-
-  /**
-   * The component used for the root node.
-   * Either a string to use a HTML element or a component.
-   */
-  component?: React.ElementType
 
   /**
    * If true, the badge will be invisible.
