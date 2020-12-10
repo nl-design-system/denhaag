@@ -27,7 +27,7 @@ export interface RadioProps {
    */
   checked?: boolean
   /**
-   * The Color of the component. @default 'secondary'.
+   * The Color of the component.
    */
   color?: 'primary' | 'secondary' | 'default'
   /**
@@ -43,7 +43,7 @@ export interface RadioProps {
    */
   required?: boolean
   /**
-   * The size of the radio button. @default 'medium'.
+   * The size of the radio button.
    */
   size?: 'medium' | 'small'
   /**
