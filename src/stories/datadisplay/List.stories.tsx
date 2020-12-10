@@ -24,7 +24,6 @@ export default {
 const Template: Story<ListProps> = (args: any) => (
   <List
     {...args}
-    subheader={<ListSubheader component='div'>Nested Subheader</ListSubheader>}
   >
     <ListItem dense button>
       <ListItemIcon>
@@ -53,3 +52,27 @@ const Template: Story<ListProps> = (args: any) => (
  */
 export const Default = Template.bind({})
 Default.args = {}
+
+/**
+ * Dense variant of List component
+ */
+export const Dense = Template.bind({})
+Dense.args = {
+  dense: true
+}
+
+/**
+ * Variant of List component with padding disabled
+ */
+export const PaddingDisabled = Template.bind({})
+PaddingDisabled.args = {
+  disablePadding: true
+}
+
+/**
+ * Variant of List component with Subheader
+ */
+export const Subheader = Template.bind({})
+Subheader.args = {
+  subheader: <ListSubheader component='div'>Nested Subheader</ListSubheader>
+}
