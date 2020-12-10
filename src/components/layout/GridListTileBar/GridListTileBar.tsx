@@ -1,11 +1,11 @@
-import React, { ReactElement } from 'react'
+import React from 'react'
 import MaterialGridListTileBar from '@material-ui/core/GridListTileBar'
 
 export interface GridListTileBarProps {
   /**
    * An IconButton element to be used as a secondary action target.
    */
-  actionIcon: ReactElement
+  actionIcon: React.ReactNode
 
   /**
    * Position of secondary action button.
@@ -20,12 +20,12 @@ export interface GridListTileBarProps {
   /**
    * String or element serving as subtitle.
    */
-  subtitle: ReactElement | string
+  subtitle: React.ReactNode | string
 
   /**
    * Title to be displayed on tile.
    */
-  title: ReactElement | string
+  title: React.ReactNode | string
 
   /**
    * Position of the title bar.

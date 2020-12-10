@@ -1,7 +1,8 @@
-import React, { ElementType, ReactElement } from 'react'
+import React from 'react'
 import MaterialGrid from '@material-ui/core/Grid'
+import BaseLayoutProps from '../BaseLayoutProps/BaseLayoutProps'
 
-export interface GridProps {
+export interface GridProps extends BaseLayoutProps {
   /**
    * Defines the align-content style property, irrespective of screen dimensions.
    */
@@ -17,21 +18,6 @@ export interface GridProps {
    * Defines the align-items style property, irrespective of screen dimensions.
    */
   alignItems?: 'flex-start' | 'center' | 'flex-end' | 'stretch' | 'baseline'
-
-  /**
-   * The content of the Grid component.
-   */
-  children: ReactElement
-
-  /**
-   * Overrides or extends the styles applied to the component.
-   */
-  classes?: object
-
-  /**
-   * The component used for the root node. Either a string to use a HTML element or a component.
-   */
-  component?: ElementType
 
   /**
    * if true, the Grid component will have the flex Container behaviour.
