@@ -5,6 +5,9 @@ import {
   PopoverProps,
   TextFieldProps
 } from '@material-ui/core'
+
+import { DialogProps } from '@material-ui/core/Dialog/Dialog'
+
 import {
   ReactElement,
   ReactNode,
@@ -38,6 +41,26 @@ export interface BaseDatePickerProps {
    * Auto accept date on selection
    */
   AutoOk?: boolean
+
+  /**
+   * "CANCEL" label message
+   */
+  cancelLabel?: ReactNode
+
+  /**
+   * Show clear action in picker dialog
+   */
+  clearable?: boolean
+
+  /**
+   * "CLEAR" label message
+   */
+  clearLabel?: ReactNode
+
+  /**
+   * Props to be passed directly to material-ui Dialog
+   */
+  DialogProps?: Partial<DialogProps>
 
   /**
    * Disable picker and text field
@@ -130,6 +153,11 @@ export interface BaseDatePickerProps {
   minDateMessage?: ReactNode
 
   /**
+   * "OK" label message
+   */
+  okLabel?: ReactNode
+
+  /**
    * Callback fired when date is accepted
    */
   onAccept?: (date: DateIOType) => void
@@ -210,6 +238,11 @@ export interface BaseDatePickerProps {
   shouldDisableDate?: (date: DateIOType) => boolean
 
   /**
+   * If true today button will be displayed **Note** that clear button has higher priority
+   */
+  showTodayButton?: boolean
+
+  /**
    * Compare dates by the exact timestamp, instead of start/end of date
    */
   strictCompareDates?: boolean
@@ -220,6 +253,11 @@ export interface BaseDatePickerProps {
   TextFieldComponent?:
     | ComponentClass<TextFieldProps, any>
     | FunctionComponent<TextFieldProps>
+
+  /**
+   * "TODAY" label message
+   */
+  todayLabel?: ReactNode
 
   /**
    * Component that will replace default toolbar renderer
