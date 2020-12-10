@@ -12,8 +12,11 @@ import GridList from './components/layout/GridList/GridList'
 import Hidden from './components/layout/Hidden/Hidden'
 import Accordion from './components/surfaces/Accordion/Accordion'
 import AppBar from './components/surfaces/AppBar/AppBar'
+import Card from './components/surfaces/Card/Card'
+import Paper from './components/surfaces/Paper/Paper'
 import Typography from './components/datadisplay/Typography/Typography'
 import Divider from './components/datadisplay/Divider/Divider'
+import List from './components/datadisplay/List/List'
 import TextField from './components/input/TextField/TextField'
 import Menu from './components/navigation/Menu/Menu'
 import Stepper from './components/navigation/Stepper/Stepper'
@@ -55,6 +58,9 @@ export {
   SwipeableDrawer,
   Accordion,
   AppBar,
+  Card,
+  Paper,
   Typography,
-  Divider
+  Divider,
+  List
 }

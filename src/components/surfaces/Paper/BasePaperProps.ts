@@ -1,11 +1,14 @@
-import MaterialPaper from '@material-ui/core/Paper'
 import React from 'react'
 
-export interface PaperProps {
+export interface BasePaperProps {
   /**
    * The content of the component.
    */
   children?: React.ReactNode
+  /**
+   * Override or extend the styles applied to the component.
+   */
+  classes?: object
   /**
    * The component used for the root node.
    * Either a string to use a HTML element or a component.
@@ -25,32 +28,3 @@ export interface PaperProps {
    */
   variant?: 'elevation' | 'outlined'
 }
-
-/**
- * Primary UI component for user interaction
- */
-export const Paper: React.FC<PaperProps> = ({
-  component = 'div',
-  elevation = 1,
-  square = false,
-  variant = 'elevation',
-  children,
-  ...props
-}) => {
-  return (
-    <MaterialPaper
-      component={component}
-      elevation={elevation}
-      square={square}
-      variant={variant}
-      {...props}
-    >
-      {children}
-    </MaterialPaper>
-  )
-}
-
-/**
- * Default export for Paper
- */
-export default Paper

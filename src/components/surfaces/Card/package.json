@@ -1,0 +1,14 @@
+{
+  "name": "nlds-react-components-card",
+  "version": "0.1.0",
+  "description": "A Card component",
+  "author": "Municipality of The Hague",
+  "license": "MIT",
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "nlds-react-components-paper": "^0.1.0",
+    "nlds-react-components-cardactions": "^0.1.0",
+    "nlds-react-components-cardcontent": "^0.1.0",
+    "nlds-react-components-cardheader": "^0.1.0"
+  }
+}
