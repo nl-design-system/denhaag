@@ -1,6 +1,5 @@
 import React from 'react'
-// also exported from '@storybook/react' if you can deal with breaking changes in 6.1
-import { Story, Meta } from '@storybook/react/types-6-0'
+import { Story, Meta } from '@storybook/react'
 import DatePicker, {
   DatePickerProps
 } from '../../components/input/Pickers/DatePicker/DatePicker'
@@ -9,7 +8,7 @@ import DateFnsUtils from '@date-io/date-fns'
 import pkg from '../../components/input/Pickers/package.json'
 
 export default {
-  title: 'Components/Pickers/DatePicker',
+  title: 'Components/Input/DatePicker',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
@@ -34,9 +33,6 @@ const Template: Story<DatePickerProps> = (args: any) => {
  * Default Datepicker
  */
 export const Default: Story<DatePickerProps> = Template.bind({})
-Default.args = {
-  variant: 'dialog'
-}
 
 /**
  * Inline Checkbox

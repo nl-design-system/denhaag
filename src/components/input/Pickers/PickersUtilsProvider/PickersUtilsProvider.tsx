@@ -14,7 +14,7 @@ export const PickersUtilsProvider: React.FC<PickersUtilsProviderProps> = (
   props: PickersUtilsProviderProps
 ) => {
   return (
-    <MaterialPickersUtilsProvider utils={props.utils}>
+    <MaterialPickersUtilsProvider {...props}>
       {props.children}
     </MaterialPickersUtilsProvider>
   )
