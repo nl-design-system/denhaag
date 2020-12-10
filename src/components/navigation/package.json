@@ -4,6 +4,7 @@
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/lab": "^4.0.0-alpha.57",
+    "nlds-react-components-componentbaseprops": "^0.1.0",
     "nlds-react-components-drawer": "^0.1.0",
     "nlds-react-components-swipeabledrawer": "^0.1.0",
     "nlds-react-components-menu": "^0.1.0",

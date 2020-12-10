@@ -6,6 +6,7 @@
   "version": "0.1.0",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
+    "nlds-react-components-componentbaseprops": "^0.1.0",
     "nlds-react-components-menuitem": "^0.1.0",
     "nlds-react-components-menulist": "^0.1.0",
     "nlds-react-components-popover": "^0.1.0",
