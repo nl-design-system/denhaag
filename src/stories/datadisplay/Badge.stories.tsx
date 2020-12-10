@@ -31,8 +31,8 @@ Default.args = {
  */
 export const PrimaryColoured = Template.bind({})
 PrimaryColoured.args = {
-  ...Default.args,
-  color: 'primary'
+  color: 'primary',
+  ...Default.args
 }
 
 /**
@@ -40,8 +40,8 @@ PrimaryColoured.args = {
  */
 export const CircleOverlap = Template.bind({})
 CircleOverlap.args = {
-  ...Default.args,
-  overlap: 'circle'
+  overlap: 'circle',
+  ...PrimaryColoured.args
 }
 
 /**
@@ -49,6 +49,6 @@ CircleOverlap.args = {
  */
 export const DotVariant = Template.bind({})
 DotVariant.args = {
-  ...PrimaryColoured.args,
-  variant: 'dot'
+  variant: 'dot',
+  ...PrimaryColoured.args
 }
