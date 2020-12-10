@@ -4,6 +4,9 @@ import { Radio } from '../..'
 import { RadioProps } from '../../components/input/Radio/Radio'
 import pkg from '../../components/input/Radio/package.json'
 
+import ThumbDownIcon from '@material-ui/icons/ThumbDown'
+import ThumbUpIcon from '@material-ui/icons/ThumbUp'
+
 export default {
   title: 'Components/Input/Radio',
   parameters: {
@@ -14,4 +17,24 @@ export default {
 
 const Template: Story<RadioProps> = (args: any) => <Radio {...args} />
 
-export const Default = Template.bind({})
+export const Default: Story<RadioProps> = Template.bind({})
+Default.args = {
+  color: 'default',
+  size: 'medium'
+}
+
+export const Primary: Story<RadioProps> = Template.bind({})
+Primary.args = {
+  color: 'primary'
+}
+
+export const Secondary: Story<RadioProps> = Template.bind({})
+Secondary.args = {
+  color: 'secondary'
+}
+
+export const Icons: Story<RadioProps> = Template.bind({})
+Icons.args = {
+  icon: <ThumbDownIcon />,
+  checkedIcon: <ThumbUpIcon />
+}
