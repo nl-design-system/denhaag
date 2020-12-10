@@ -1,6 +1,5 @@
 import React from 'react'
-// also exported from '@storybook/react' if you can deal with breaking changes in 6.1
-import { Story, Meta } from '@storybook/react/types-6-0'
+import { Story, Meta } from '@storybook/react'
 import {
   KeyboardDatePicker,
   KeyboardDatePickerProps
@@ -10,7 +9,7 @@ import DateFnsUtils from '@date-io/date-fns'
 import pkg from '../../components/input/Pickers/package.json'
 
 export default {
-  title: 'Components/Pickers/KeyboardDatePicker',
+  title: 'Components/Input/KeyboardDatePicker',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
