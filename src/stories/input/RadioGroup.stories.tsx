@@ -22,10 +22,8 @@ const Template: Story<RadioGroupProps> = (args: any) => (
     </RadioGroup>)
 
 export const Default: Story<RadioGroupProps> = Template.bind({})
-Default.args = {}
 
 export const Primary: Story<RadioGroupProps> = Template.bind({})
-Primary.args = {}
 
 export const SelectDefault: Story<RadioGroupProps> = Template.bind({})
 SelectDefault.args = {
