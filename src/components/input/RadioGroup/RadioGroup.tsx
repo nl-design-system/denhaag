@@ -8,8 +8,9 @@ export interface RadioGroupProps {
   children?: React.ReactNode
 
   /**
-   * The default `input` element value. Use when the component is not controlled.
-   * Using this you can set select which of the radio subcomponents should be checked.
+   * The default `input` element value. Use when the component is not
+   * controlled. Using this you can set select which of the radio subcomponents
+   * should be checked.
    */
   defaultValue?: Array<string> | number | string
 
@@ -21,12 +22,10 @@ export interface RadioGroupProps {
 
   /**
    * **Signature**: `function(event: object) => void`
-   * The event source of the callback. You can pull out the new
-   * value by accessing `event.target.value` (string). You can
-   * pull out the new checked state by accessing
-   * `event.target.checked` (boolean).
+   * The event source of the callback. You can pull out the new value by
+   * accessing `event.target.value` (string).
    */
-  onChange?: () => void
+  onChange?: (event: object) => void
 
   /**
    * Value of the selected radio button. The DOM API casts this to a string.
@@ -42,7 +41,7 @@ export interface RadioGroupProps {
 export const RadioGroup: React.FC<RadioGroupProps> = (
   props: RadioGroupProps
 ) => {
-  return <MaterialRadioGroup {...props} />
+  return <MaterialRadioGroup {...props}>{props.children}</MaterialRadioGroup>
 }
 
 /**
