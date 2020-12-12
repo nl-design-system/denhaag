@@ -4,6 +4,11 @@ import BaseDataDisplayProps from '../BaseDataDisplayProps/BaseDataDisplayProps'
 
 export interface DividerProps extends BaseDataDisplayProps {
   /**
+   * @ignore
+   */
+  children?: React.ReactNode
+
+  /**
    * Absolutely position the element.
    */
   absolute?: boolean

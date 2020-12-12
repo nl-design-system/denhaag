@@ -4,6 +4,11 @@ import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
 
 export interface TabContextProps extends ComponentBaseProps {
   /**
+   * @ignore
+   */
+  classes?: object
+
+  /**
    * The value of the currently selected Tab.
    */
   value: string

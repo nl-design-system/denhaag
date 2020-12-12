@@ -4,6 +4,11 @@ import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
 
 export interface PopperProps extends ComponentBaseProps {
   /**
+   * @ignore
+   */
+  classes?: object
+
+  /**
    * A HTML element, referenceObject, or a function that returns either.
    */
   anchorEl: HTMLElement

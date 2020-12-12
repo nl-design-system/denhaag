@@ -4,6 +4,11 @@ import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
 
 export interface MenuListProps extends ComponentBaseProps {
   /**
+   * @ignore
+   */
+  classes?: object
+
+  /**
    * If true, will focus the [role="menu"] container and move into tab order.
    */
   autoFocus?: boolean

@@ -3,6 +3,10 @@ import MaterialSwipeableDrawer from '@material-ui/core/SwipeableDrawer'
 import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
 
 export interface SwipeableDrawerProps extends ComponentBaseProps {
+  /**
+   * @ignore
+   */
+  classes?: object
 
   /**
    * Disable the backdrop transition.

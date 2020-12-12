@@ -6,7 +6,7 @@ export interface ContainerProps extends BaseLayoutProps {
   /**
    * Contents of the Container component
    */
-  children: React.ReactElement
+  children: NonNullable<React.ReactNode>
 
   /**
    * Indicate whether the left and right padding of the component should be removed.
