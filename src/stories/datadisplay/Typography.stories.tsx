@@ -1,7 +1,9 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
-import { Typography } from '../..'
-import { TypographyProps } from '../../components/datadisplay/Typography/Typography'
+import {
+  Typography,
+  TypographyProps
+} from '../../components/datadisplay/Typography/Typography'
 import pkg from '../../components/datadisplay/Typography/package.json'
 
 export default {
@@ -23,7 +25,6 @@ const Template: Story<TypographyProps> = (args: any) => (
  * Implementation of Typography
  */
 export const Default = Template.bind({})
-Default.args = {}
 
 /**
  * Heading variant
