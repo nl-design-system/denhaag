@@ -12,6 +12,7 @@ import Checkbox from './components/input/Checkbox/Checkbox'
 import FormControlLabel from './components/input/FormControlLabel/FormControlLabel'
 import FormGroup from './components/input/FormGroup/FormGroup'
 import Radio from './components/input/Radio/Radio'
+import RadioGroup from './components/input/RadioGroup/RadioGroup'
 import Select from './components/input/Select/Select'
 import Switch from './components/input/Switch/Switch'
 import TextField from './components/input/TextField/TextField'
@@ -56,6 +57,7 @@ export {
   FormControlLabel,
   FormGroup,
   Radio,
+  RadioGroup,
   Select,
   Switch,
   TextField,
