@@ -1,15 +1,8 @@
 import MaterialFormGroup from '@material-ui/core/FormGroup'
 import React from 'react'
+import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
 
-export interface FormGroupProps {
-  /**
-   * The content of the component.
-   */
-  children?: any
-  /**
-   * Override or extend the style apllied to the component.
-   */
-  classes?: object
+export interface FormGroupProps extends ComponentBaseProps {
   /**
    * Display groups of elements in a compact row.
    */
@@ -21,11 +14,7 @@ export interface FormGroupProps {
  *  It provides compact row layout. For the Radio, you should be using the RadioGroup component instead of this one.
  */
 export const FormGroup: React.FC<FormGroupProps> = (props: FormGroupProps) => {
-  return (
-    <MaterialFormGroup
-      {...props}
-    />
-  )
+  return <MaterialFormGroup {...props}>{props.children}</MaterialFormGroup>
 }
 
 /**

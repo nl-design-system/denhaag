@@ -1,4 +1,6 @@
-import MaterialInputLabel, { InputLabelClassKey } from '@material-ui/core/InputLabel'
+import MaterialInputLabel, {
+  InputLabelClassKey
+} from '@material-ui/core/InputLabel'
 import React from 'react'
 import { FormLabelProps, StandardProps } from '@material-ui/core'
 
