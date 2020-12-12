@@ -1,5 +1,6 @@
 import React from 'react'
 import { Story, Meta } from '@storybook/react/types-6-0'
+import { FormControlLabel } from '../../components/input/FormControlLabel/FormControlLabel'
 import { Radio } from '../..'
 import { RadioProps } from '../../components/input/Radio/Radio'
 import pkg from '../../components/input/Radio/package.json'
@@ -15,7 +16,13 @@ export default {
   component: Radio
 } as Meta
 
-const Template: Story<RadioProps> = (args: any) => <Radio {...args} />
+const Template: Story<RadioProps> = (args: any) => {
+  return (
+    <div>
+      <FormControlLabel label='Radio' control={<Radio {...args} />} />
+    </div>
+  )
+}
 
 export const Default: Story<RadioProps> = Template.bind({})
 Default.args = {

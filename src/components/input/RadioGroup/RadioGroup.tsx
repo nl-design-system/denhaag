@@ -14,7 +14,7 @@ export interface RadioGroupProps {
   defaultValue?: Array<string> | number | string
 
   /**
-   * The name used to reference the value of the control. 
+   * The name used to reference the value of the control.
    * If you don't provide this prop, it falls back to a randomly generated name.
    */
   name?: string
@@ -39,7 +39,9 @@ export interface RadioGroupProps {
   row?: boolean
 }
 
-export const RadioGroup: React.FC<RadioGroupProps> = (props) => {
+export const RadioGroup: React.FC<RadioGroupProps> = (
+  props: RadioGroupProps
+) => {
   return <MaterialRadioGroup {...props} />
 }
 
