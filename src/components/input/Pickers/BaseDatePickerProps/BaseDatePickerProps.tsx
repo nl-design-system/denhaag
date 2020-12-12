@@ -27,6 +27,7 @@ export interface BaseDatePickerProps {
    * DatePicker value
    */
   value: any
+
   /**
    * Enables keyboard listener for moving between days in calendar
    */
