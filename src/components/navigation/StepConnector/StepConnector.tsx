@@ -1,13 +1,8 @@
 import React from 'react'
 import MaterialStepConnector from '@material-ui/core/StepConnector'
-import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
+import { ComponentBaseClassesProps } from '../../ComponentBaseProps/ComponentBaseProps'
 
-export interface StepConnectorProps extends ComponentBaseProps {
-  /**
-   * @ignore
-   */
-  children?: React.ReactNode
-}
+export interface StepConnectorProps extends ComponentBaseClassesProps {}
 
 /**
  * Represents a connector between two Step components in a Stepper component.

@@ -3,7 +3,6 @@ import MaterialAccordionActions from '@material-ui/core/AccordionActions'
 import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
 
 export interface AccordionActionsProps extends ComponentBaseProps {
-
   /**
    * If true, the actions do not have additional margin.
    */

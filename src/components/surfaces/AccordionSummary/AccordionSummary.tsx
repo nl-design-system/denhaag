@@ -3,7 +3,6 @@ import MaterialAccordionSummary from '@material-ui/core/AccordionSummary'
 import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
 
 export interface AccordionSummaryProps extends ComponentBaseProps {
-
   /**
    * The icon to display as the expand indicator.
    */

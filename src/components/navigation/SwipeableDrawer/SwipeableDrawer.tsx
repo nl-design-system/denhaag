@@ -1,13 +1,8 @@
 import React from 'react'
 import MaterialSwipeableDrawer from '@material-ui/core/SwipeableDrawer'
-import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
+import { ComponentBaseChildrenProps } from '../../ComponentBaseProps/ComponentBaseProps'
 
-export interface SwipeableDrawerProps extends ComponentBaseProps {
-  /**
-   * @ignore
-   */
-  classes?: object
-
+export interface SwipeableDrawerProps extends ComponentBaseChildrenProps {
   /**
    * Disable the backdrop transition.
    */
