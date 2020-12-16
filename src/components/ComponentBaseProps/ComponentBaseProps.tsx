@@ -11,3 +11,17 @@ export default interface ComponentBaseProps {
    */
   classes?: object
 }
+
+export interface ComponentBaseChildrenProps {
+  /**
+   * The contents of the component.
+   */
+  children?: React.ReactNode
+}
+
+export interface ComponentBaseClassesProps {
+  /**
+   * Override or extend the styles applied to the component.
+   */
+  classes?: object
+}

@@ -3,7 +3,6 @@ import MaterialButtonGroup from '@material-ui/core/ButtonGroup'
 import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
 
 export interface ButtonGroupProps extends ComponentBaseProps {
-
   /**
    * The color of the component.
    */

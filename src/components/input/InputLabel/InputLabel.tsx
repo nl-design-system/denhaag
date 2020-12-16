@@ -3,14 +3,11 @@ import MaterialInputLabel, {
 } from '@material-ui/core/InputLabel'
 import React from 'react'
 import { FormLabelProps, StandardProps } from '@material-ui/core'
+import { ComponentBaseChildrenProps } from '../../ComponentBaseProps/ComponentBaseProps'
 
 export interface InputLabelProps
-  extends StandardProps<FormLabelProps, InputLabelClassKey> {
-  /**
-   * The contents of the `InputLabel`.
-   */
-  children?: React.ReactNode
-
+  extends StandardProps<FormLabelProps, InputLabelClassKey>,
+    ComponentBaseChildrenProps {
   color?: FormLabelProps['color']
 
   /**

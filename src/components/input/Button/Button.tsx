@@ -1,7 +1,8 @@
 import MaterialButton from '@material-ui/core/Button'
 import React from 'react'
+import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
 
-export interface ButtonProps {
+export interface ButtonProps extends ComponentBaseProps {
   /**
    * Simple click handler
    */
@@ -32,11 +33,6 @@ export interface ButtonProps {
    * Button variant
    */
   variant?: 'outlined' | 'contained' | 'text'
-
-  /**
-   * Content of the component.
-   */
-  children?: React.ReactNode
 }
 
 /**

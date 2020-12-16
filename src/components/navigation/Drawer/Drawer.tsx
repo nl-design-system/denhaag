@@ -37,7 +37,7 @@ export interface DrawerProps extends ComponentBaseProps {
   /**
    * Props applied to the Slide element.
    */
-  SlideProps: object
+  SlideProps?: object
 
   /**
    * The duration for the transition, in milliseconds.
