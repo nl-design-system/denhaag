@@ -1,8 +1,8 @@
 import React from 'react'
 import MaterialMobileStepper from '@material-ui/core/MobileStepper'
-import { ComponentBaseChildrenProps } from '../../ComponentBaseProps/ComponentBaseProps'
+import { BaseComponentChildrenProps } from '../../BaseComponentProps/BaseComponentProps'
 
-export interface MobileStepperProps extends ComponentBaseChildrenProps {
+export interface MobileStepperProps extends BaseComponentChildrenProps {
   /**
    * Set the active step (zero based index). Set to -1 to disable all the steps.
    */

@@ -1,8 +1,8 @@
 import React, { ElementType } from 'react'
 import MaterialMenuItem from '@material-ui/core/MenuItem'
-import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
+import BaseComponentProps from '../../BaseComponentProps/BaseComponentProps'
 
-export interface MenuItemProps extends ComponentBaseProps {
+export interface MenuItemProps extends BaseComponentProps {
   /**
    * The component used for the root node.
    */

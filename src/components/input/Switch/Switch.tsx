@@ -1,8 +1,8 @@
 import MaterialSwitch from '@material-ui/core/Switch'
-import { ComponentBaseClassesProps } from '../../ComponentBaseProps/ComponentBaseProps'
+import { BaseComponentClassesProps } from '../../BaseComponentProps/BaseComponentProps'
 import React from 'react'
 
-export interface SwitchProps extends ComponentBaseClassesProps {
+export interface SwitchProps extends BaseComponentClassesProps {
   /**
    * If true the Switch is turned on
    */

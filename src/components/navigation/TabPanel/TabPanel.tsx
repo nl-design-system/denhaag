@@ -1,8 +1,8 @@
 import React from 'react'
 import MaterialTabPanel from '@material-ui/lab/TabPanel'
-import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
+import BaseComponentProps from '../../BaseComponentProps/BaseComponentProps'
 
-export interface TabPanelProps extends ComponentBaseProps {
+export interface TabPanelProps extends BaseComponentProps {
   /**
    * The value of the corresponding Tab.
    * Must use the index of the Tab when no value was passed to Tab

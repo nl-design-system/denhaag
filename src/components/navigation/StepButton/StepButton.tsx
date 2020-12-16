@@ -1,8 +1,8 @@
 import React from 'react'
 import MaterialStepButton from '@material-ui/core/StepButton'
-import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
+import BaseComponentProps from '../../BaseComponentProps/BaseComponentProps'
 
-export interface StepButtonProps extends ComponentBaseProps {
+export interface StepButtonProps extends BaseComponentProps {
   /**
    * The icon displayed by the step label.
    */

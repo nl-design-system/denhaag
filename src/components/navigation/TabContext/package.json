@@ -6,6 +6,6 @@
   "version": "0.1.0",
   "dependencies": {
     "@material-ui/lab": "^4.0.0-alpha",
-    "nlds-react-components-componentbaseprops": "^0.1.0"
+    "nlds-react-components-basecomponentprops": "^0.1.0"
   }
 }

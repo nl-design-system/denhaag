@@ -1,8 +1,8 @@
 import React from 'react'
 import MaterialStepIcon from '@material-ui/core/StepIcon'
-import { ComponentBaseClassesProps } from '../../ComponentBaseProps/ComponentBaseProps'
+import { BaseComponentClassesProps } from '../../BaseComponentProps/BaseComponentProps'
 
-export interface StepIconProps extends ComponentBaseClassesProps {
+export interface StepIconProps extends BaseComponentClassesProps {
   /**
    * Whether this step is active.
    */

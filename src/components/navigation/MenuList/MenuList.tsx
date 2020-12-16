@@ -1,8 +1,8 @@
 import React from 'react'
 import MaterialMenuList from '@material-ui/core/MenuList'
-import { ComponentBaseChildrenProps } from '../../ComponentBaseProps/ComponentBaseProps'
+import { BaseComponentChildrenProps } from '../../BaseComponentProps/BaseComponentProps'
 
-export interface MenuListProps extends ComponentBaseChildrenProps {
+export interface MenuListProps extends BaseComponentChildrenProps {
   /**
    * If true, will focus the [role="menu"] container and move into tab order.
    */

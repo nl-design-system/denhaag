@@ -1,8 +1,8 @@
 import React, { RefObject } from 'react'
 import MaterialPopper from '@material-ui/core/Popper'
-import { ComponentBaseChildrenProps } from '../../ComponentBaseProps/ComponentBaseProps'
+import { BaseComponentChildrenProps } from '../../BaseComponentProps/BaseComponentProps'
 
-export interface PopperProps extends ComponentBaseChildrenProps {
+export interface PopperProps extends BaseComponentChildrenProps {
   /**
    * A HTML element, referenceObject, or a function that returns either.
    */

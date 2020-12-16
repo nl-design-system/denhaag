@@ -1,8 +1,8 @@
 import React from 'react'
 import MaterialStepContent from '@material-ui/core/StepContent'
-import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
+import BaseComponentProps from '../../BaseComponentProps/BaseComponentProps'
 
-export interface StepContentProps extends ComponentBaseProps {
+export interface StepContentProps extends BaseComponentProps {
   /**
    * The component used for the transition.
    */

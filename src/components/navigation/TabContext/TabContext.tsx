@@ -1,8 +1,8 @@
 import React from 'react'
 import MaterialTabContext from '@material-ui/lab/TabContext'
-import { ComponentBaseChildrenProps } from '../../ComponentBaseProps/ComponentBaseProps'
+import { BaseComponentChildrenProps } from '../../BaseComponentProps/BaseComponentProps'
 
-export interface TabContextProps extends ComponentBaseChildrenProps {
+export interface TabContextProps extends BaseComponentChildrenProps {
   /**
    * The value of the currently selected Tab.
    */

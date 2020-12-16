@@ -6,6 +6,6 @@
   "license": "MIT",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
-    "nlds-react-components-componentbaseprops": "^0.1.0"
+    "nlds-react-components-basecomponentprops": "^0.1.0"
   }
 }

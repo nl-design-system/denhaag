@@ -1,8 +1,8 @@
 import React from 'react'
 import MaterialTabScrollButton from '@material-ui/core/TabScrollButton'
-import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
+import BaseComponentProps from '../../BaseComponentProps/BaseComponentProps'
 
-export interface TabScrollButtonProps extends ComponentBaseProps {
+export interface TabScrollButtonProps extends BaseComponentProps {
   /**
    * Which direction should the button indicate?
    */

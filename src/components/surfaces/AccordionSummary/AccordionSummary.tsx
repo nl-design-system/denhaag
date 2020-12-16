@@ -1,8 +1,8 @@
 import React from 'react'
 import MaterialAccordionSummary from '@material-ui/core/AccordionSummary'
-import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
+import BaseComponentProps from '../../BaseComponentProps/BaseComponentProps'
 
-export interface AccordionSummaryProps extends ComponentBaseProps {
+export interface AccordionSummaryProps extends BaseComponentProps {
   /**
    * The icon to display as the expand indicator.
    */

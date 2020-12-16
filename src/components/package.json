@@ -11,6 +11,6 @@
     "nlds-react-components-surfaces": "^0.1.0",
     "nlds-react-components-datadisplay": "^0.1.0",
     "nlds-react-components-pickers": "^0.1.0",
-    "nlds-react-components-componentbaseprops": "^0.1.0"
+    "nlds-react-components-basecomponentprops": "^0.1.0"
   }
 }

@@ -1,8 +1,8 @@
 import React from 'react'
 import MaterialAccordionDetails from '@material-ui/core/AccordionDetails'
-import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
+import BaseComponentProps from '../../BaseComponentProps/BaseComponentProps'
 
-export interface AccordionDetailsProps extends ComponentBaseProps {}
+export interface AccordionDetailsProps extends BaseComponentProps {}
 
 /**
  * Displays details of an Accordion component.
