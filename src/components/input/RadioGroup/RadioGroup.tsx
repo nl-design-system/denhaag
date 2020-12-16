@@ -1,12 +1,8 @@
 import MaterialRadioGroup from '@material-ui/core/RadioGroup'
 import React from 'react'
+import { BaseChildrenProps } from '../../BaseProps/BaseProps'
 
-export interface RadioGroupProps {
-  /**
-   * The children of the component. (for instance, Radio components)
-   */
-  children?: React.ReactNode
-
+export interface RadioGroupProps extends BaseChildrenProps {
   /**
    * The default `input` element value. Use when the component is not
    * controlled. Using this you can set select which of the radio subcomponents
