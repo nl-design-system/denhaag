@@ -2,7 +2,7 @@
   "name": "nlds-react-components-baselayoutprops",
   "version": "0.1.0",
   "dependencies": {
-    "nlds-react-components-basecomponentprops": "^0.1.0"
+    "nlds-react-components-baseprops": "^0.1.0"
   },
   "peerDependencies": {
     "react": "^16.13.0"

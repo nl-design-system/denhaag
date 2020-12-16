@@ -1,8 +1,8 @@
 import MaterialCheckbox from '@material-ui/core/Checkbox'
 import React from 'react'
-import { BaseComponentClassesProps } from '../../BaseComponentProps/BaseComponentProps'
+import { BaseClassesProps } from '../../BaseProps/BaseProps'
 
-export interface CheckboxProps extends BaseComponentClassesProps {
+export interface CheckboxProps extends BaseClassesProps {
   /**
    * If `true` the Checkbox is checked.
    * See https://github.com/mui-org/material-ui/blob/master/docs/src/pages/components/checkboxes/Checkboxes.tsx

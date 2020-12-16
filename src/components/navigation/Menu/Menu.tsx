@@ -1,8 +1,8 @@
 import React from 'react'
 import MaterialMenu from '@material-ui/core/Menu'
-import BaseComponentProps from '../../BaseComponentProps/BaseComponentProps'
+import BaseProps from '../../BaseProps/BaseProps'
 
-export interface MenuProps extends BaseComponentProps {
+export interface MenuProps extends BaseProps {
   /**
    * A HTML element, or a function that returns it.
    * It's used to set the position of the menu.

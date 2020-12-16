@@ -1,10 +1,10 @@
 import React from 'react'
-import BaseComponentProps, {
-  BaseComponentChildrenProps,
-  BaseComponentClassesProps
-} from '../../BaseComponentProps/BaseComponentProps'
+import BaseProps, {
+  BaseChildrenProps,
+  BaseClassesProps
+} from '../../BaseProps/BaseProps'
 
-export default interface BaseDataDisplayProps extends BaseComponentProps {
+export default interface BaseDataDisplayProps extends BaseProps {
   /**
    * The component used for the root node.
    * Either a string to use a HTML element or a component.
@@ -13,8 +13,7 @@ export default interface BaseDataDisplayProps extends BaseComponentProps {
   component?: React.ElementType
 }
 
-export interface BaseDataDisplayChildrenProps
-  extends BaseComponentChildrenProps {
+export interface BaseDataDisplayChildrenProps extends BaseChildrenProps {
   /**
    * The component used for the root node.
    * Either a string to use a HTML element or a component.
@@ -23,7 +22,7 @@ export interface BaseDataDisplayChildrenProps
   component?: React.ElementType
 }
 
-export interface BaseDataDisplayClassesProps extends BaseComponentClassesProps {
+export interface BaseDataDisplayClassesProps extends BaseClassesProps {
   /**
    * The component used for the root node.
    * Either a string to use a HTML element or a component.

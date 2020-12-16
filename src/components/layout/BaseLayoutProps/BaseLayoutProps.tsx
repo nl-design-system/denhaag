@@ -1,10 +1,10 @@
 import React from 'react'
-import BaseComponentProps, {
-  BaseComponentChildrenProps,
-  BaseComponentClassesProps
-} from '../../BaseComponentProps/BaseComponentProps'
+import BaseProps, {
+  BaseChildrenProps,
+  BaseClassesProps
+} from '../../BaseProps/BaseProps'
 
-export default interface BaseLayoutProps extends BaseComponentProps {
+export default interface BaseLayoutProps extends BaseProps {
   /**
    * The component to use as the root component. Either a string to use a DOM element or a component
    */
@@ -18,14 +18,14 @@ export interface BaseLayoutComponentProps {
   component?: React.ElementType
 }
 
-export interface BaseLayoutChildrenProps extends BaseComponentChildrenProps {
+export interface BaseLayoutChildrenProps extends BaseChildrenProps {
   /**
    * The component to use as the root component. Either a string to use a DOM element or a component
    */
   component?: React.ElementType
 }
 
-export interface BaseLayoutClassesProps extends BaseComponentClassesProps {
+export interface BaseLayoutClassesProps extends BaseClassesProps {
   /**
    * The component to use as the root component. Either a string to use a DOM element or a component
    */

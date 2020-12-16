@@ -1,8 +1,8 @@
 import React from 'react'
 import MaterialTabs from '@material-ui/core/Tabs'
-import BaseComponentProps from '../../BaseComponentProps/BaseComponentProps'
+import BaseProps from '../../BaseProps/BaseProps'
 
-export interface TabsProps extends BaseComponentProps {
+export interface TabsProps extends BaseProps {
   /**
    * Callback fired when the component mounts.
    */

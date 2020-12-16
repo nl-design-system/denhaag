@@ -1,8 +1,8 @@
 import MaterialFormControlLabel from '@material-ui/core/FormControlLabel'
 import React, { ReactElement } from 'react'
-import { BaseComponentClassesProps } from '../../BaseComponentProps/BaseComponentProps'
+import { BaseClassesProps } from '../../BaseProps/BaseProps'
 
-export interface FormControlLabelProps extends BaseComponentClassesProps {
+export interface FormControlLabelProps extends BaseClassesProps {
   /**
    * If true, the component appears selected.
    */

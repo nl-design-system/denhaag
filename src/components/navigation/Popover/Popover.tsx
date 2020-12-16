@@ -1,8 +1,8 @@
 import React from 'react'
 import MaterialPopover from '@material-ui/core/Popover'
-import BaseComponentProps from '../../BaseComponentProps/BaseComponentProps'
+import BaseProps from '../../BaseProps/BaseProps'
 
-export interface PopoverProps extends BaseComponentProps {
+export interface PopoverProps extends BaseProps {
   /**
    * A ref for imperative actions.
    */

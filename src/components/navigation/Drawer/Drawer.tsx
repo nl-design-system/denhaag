@@ -1,8 +1,8 @@
 import React from 'react'
 import MaterialDrawer from '@material-ui/core/Drawer'
-import BaseComponentProps from '../../BaseComponentProps/BaseComponentProps'
+import BaseProps from '../../BaseProps/BaseProps'
 
-export interface DrawerProps extends BaseComponentProps {
+export interface DrawerProps extends BaseProps {
   /**
    * Side from which the drawer will appear.
    */

@@ -5,9 +5,9 @@ import {
   SelectProps
 } from '@material-ui/core'
 import React from 'react'
-import { BaseComponentClassesProps } from '../../BaseComponentProps/BaseComponentProps'
+import { BaseClassesProps } from '../../BaseProps/BaseProps'
 
-export interface BaseTextFieldProps extends BaseComponentClassesProps {
+export interface BaseTextFieldProps extends BaseClassesProps {
   /**
    * This prop helps users to fill forms faster, especially on mobile devices.
    * The name can be confusing, as it's more like an autofill.

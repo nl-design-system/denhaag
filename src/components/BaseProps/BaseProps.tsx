@@ -3,7 +3,7 @@ import React from 'react'
 /**
  * An interface which supplies the most standard properties of each component.
  */
-export default interface BaseComponentProps {
+export default interface BaseProps {
   /**
    * The contents of the component.
    */
@@ -18,7 +18,7 @@ export default interface BaseComponentProps {
 /**
  * An interface which supplies only the 'children' property.
  */
-export interface BaseComponentChildrenProps {
+export interface BaseChildrenProps {
   /**
    * The contents of the component.
    */
@@ -28,7 +28,7 @@ export interface BaseComponentChildrenProps {
 /**
  * An interface which supplies only the 'classes' property.
  */
-export interface BaseComponentClassesProps {
+export interface BaseClassesProps {
   /**
    * Override or extend the styles applied to the component.
    */

@@ -1,8 +1,8 @@
 import React from 'react'
 import MaterialAccordionActions from '@material-ui/core/AccordionActions'
-import BaseComponentProps from '../../BaseComponentProps/BaseComponentProps'
+import BaseProps from '../../BaseProps/BaseProps'
 
-export interface AccordionActionsProps extends BaseComponentProps {
+export interface AccordionActionsProps extends BaseProps {
   /**
    * If true, the actions do not have additional margin.
    */

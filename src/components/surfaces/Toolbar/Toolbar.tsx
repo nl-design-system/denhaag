@@ -1,8 +1,8 @@
 import React from 'react'
 import MaterialToolbar from '@material-ui/core/Toolbar'
-import BaseComponentProps from '../../BaseComponentProps/BaseComponentProps'
+import BaseProps from '../../BaseProps/BaseProps'
 
-export interface ToolbarProps extends BaseComponentProps {
+export interface ToolbarProps extends BaseProps {
   /**
    * The component used for the root node. Either a string to use a HTML element or a component.
    */

@@ -1,8 +1,8 @@
 import React from 'react'
 import MaterialStep from '@material-ui/core/Step'
-import BaseComponentProps from '../../BaseComponentProps/BaseComponentProps'
+import BaseProps from '../../BaseProps/BaseProps'
 
-export interface StepProps extends BaseComponentProps {
+export interface StepProps extends BaseProps {
   /**
    * Sets the step as active.
    * Is passed to child components.

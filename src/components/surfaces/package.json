@@ -10,7 +10,7 @@
     "nlds-react-components-accordionactions": "^0.1.0",
     "nlds-react-components-accordionsummary": "^0.1.0",
     "nlds-react-components-appbar": "^0.1.0",
-    "nlds-react-components-basecomponentprops": "^0.1.0",
+    "nlds-react-components-baseprops": "^0.1.0",
     "nlds-react-components-toolbar": "^0.1.0"
   }
 }

@@ -1,8 +1,8 @@
 import MaterialFormGroup from '@material-ui/core/FormGroup'
 import React from 'react'
-import BaseComponentProps from '../../BaseComponentProps/BaseComponentProps'
+import BaseProps from '../../BaseProps/BaseProps'
 
-export interface FormGroupProps extends BaseComponentProps {
+export interface FormGroupProps extends BaseProps {
   /**
    * Display groups of elements in a compact row.
    */

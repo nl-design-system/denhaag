@@ -1,8 +1,8 @@
 import React from 'react'
 import MaterialStepper from '@material-ui/core/Stepper'
-import BaseComponentProps from '../../BaseComponentProps/BaseComponentProps'
+import BaseProps from '../../BaseProps/BaseProps'
 
-export interface StepperProps extends BaseComponentProps {
+export interface StepperProps extends BaseProps {
   /**
    * Set the active step (zero based index). Set to -1 to disable all the steps.
    */

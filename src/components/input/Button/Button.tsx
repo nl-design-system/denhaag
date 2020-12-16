@@ -1,8 +1,8 @@
 import MaterialButton from '@material-ui/core/Button'
 import React from 'react'
-import BaseComponentProps from '../../BaseComponentProps/BaseComponentProps'
+import BaseProps from '../../BaseProps/BaseProps'
 
-export interface ButtonProps extends BaseComponentProps {
+export interface ButtonProps extends BaseProps {
   /**
    * Simple click handler
    */

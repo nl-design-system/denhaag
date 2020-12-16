@@ -1,8 +1,8 @@
 import React, { ReactElement } from 'react'
 import MaterialTab from '@material-ui/core/Tab'
-import BaseComponentProps from '../../BaseComponentProps/BaseComponentProps'
+import BaseProps from '../../BaseProps/BaseProps'
 
-export interface TabProps extends BaseComponentProps {
+export interface TabProps extends BaseProps {
   /**
    * If true, the tab will be disabled.
    */
