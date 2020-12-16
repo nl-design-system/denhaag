@@ -1,7 +1,8 @@
 import React from 'react'
 import MaterialPopover from '@material-ui/core/Popover'
+import BaseProps from '../../BaseProps/BaseProps'
 
-export interface PopoverProps {
+export interface PopoverProps extends BaseProps {
   /**
    * A ref for imperative actions.
    */
@@ -29,16 +30,6 @@ export interface PopoverProps {
    * This determines which anchor prop to refer to to set the position of the popover.
    */
   anchorReference?: 'anchorEl' | 'anchorPosition' | 'none'
-
-  /**
-   * The content of the component.
-   */
-  children?: React.ReactNode
-
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes: object
 
   /**
    * The elevation of the popover.

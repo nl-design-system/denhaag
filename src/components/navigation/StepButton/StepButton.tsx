@@ -1,17 +1,8 @@
 import React from 'react'
 import MaterialStepButton from '@material-ui/core/StepButton'
+import BaseProps from '../../BaseProps/BaseProps'
 
-export interface StepButtonProps {
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes: object
-
-  /**
-   * The content of the component
-   */
-  children?: React.ReactNode
-
+export interface StepButtonProps extends BaseProps {
   /**
    * The icon displayed by the step label.
    */

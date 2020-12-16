@@ -10,6 +10,7 @@
     "nlds-react-components-navigation": "^0.1.0",
     "nlds-react-components-surfaces": "^0.1.0",
     "nlds-react-components-datadisplay": "^0.1.0",
-    "nlds-react-components-pickers": "^0.1.0"
+    "nlds-react-components-pickers": "^0.1.0",
+    "nlds-react-components-baseprops": "^0.1.0"
   }
 }

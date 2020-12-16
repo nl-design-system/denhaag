@@ -1,26 +1,12 @@
-import React, { ElementType, ReactElement } from 'react'
+import React from 'react'
 import MaterialGridListTile from '@material-ui/core/GridListTile'
+import BaseLayoutProps from '../BaseLayoutProps/BaseLayoutProps'
 
-export interface GridListTileProps {
-  /**
-   * Can take any element as child, but preferably an image.
-   */
-  children: ReactElement[] | ReactElement
-
-  /**
-   * Overrides or extends the styles applied to the component.
-   */
-  classes?: object
-
+export interface GridListTileProps extends BaseLayoutProps {
   /**
    * Width of tile in number of Grid cells.
    */
   cols?: number
-
-  /**
-   * The component used for the root node. Either a string to use a HTML element or a component.
-   */
-  component?: ElementType
 
   /**
    * Height of the tile in number of Grid cells.

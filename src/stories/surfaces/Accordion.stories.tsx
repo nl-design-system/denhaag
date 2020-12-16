@@ -1,7 +1,9 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
-import { Accordion } from '../..'
-import { AccordionProps } from '../../components/surfaces/Accordion/Accordion'
+import {
+  Accordion,
+  AccordionProps
+} from '../../components/surfaces/Accordion/Accordion'
 import pkg from '../../components/surfaces/Accordion/package.json'
 import AccordionSummary from '../../components/surfaces/AccordionSummary/AccordionSummary'
 import { ExpandMore } from '@material-ui/icons'
@@ -34,7 +36,6 @@ const Template: Story<AccordionProps> = (args: any) => (
  * Implementation of Accordion
  */
 export const Default = Template.bind({})
-Default.args = {}
 
 /**
  * A tab which is expanded by default

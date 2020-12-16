@@ -1,22 +1,12 @@
 import React from 'react'
 import MaterialDivider from '@material-ui/core/Divider'
+import { BaseDataDisplayClassesProps } from '../BaseDataDisplayProps/BaseDataDisplayProps'
 
-export interface DividerProps {
+export interface DividerProps extends BaseDataDisplayClassesProps {
   /**
    * Absolutely position the element.
    */
   absolute?: boolean
-
-  /**
-   * Override or extend the styles of the component.
-   */
-  classes: object
-
-  /**
-   * The component used for the root node.
-   * Either a string to use a HTML element or a component.
-   */
-  component?: React.ElementType
 
   /**
    * If true, a vertical divider will have the correct height when used in flex container.
