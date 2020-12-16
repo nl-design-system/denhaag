@@ -1,21 +1,12 @@
 import React from 'react'
 import MaterialDrawer from '@material-ui/core/Drawer'
+import BaseProps from '../../BaseProps/BaseProps'
 
-export interface DrawerProps {
+export interface DrawerProps extends BaseProps {
   /**
    * Side from which the drawer will appear.
    */
   anchor?: 'bottom' | 'left' | 'right' | 'top'
-
-  /**
-   * The contents of the drawer.
-   */
-  children?: React.ReactNode
-
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes?: object
 
   /**
    * The elevation of the drawer.
@@ -46,7 +37,7 @@ export interface DrawerProps {
   /**
    * Props applied to the Slide element.
    */
-  SlideProps: object
+  SlideProps?: object
 
   /**
    * The duration for the transition, in milliseconds.

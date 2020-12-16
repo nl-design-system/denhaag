@@ -19,19 +19,19 @@ const Template: Story<GridListTileProps> = (args: any) => (
     <GridListTile {...args}>
       <img
         src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Philadelphia_from_South_Street_Bridge_July_2016_panorama_3.jpg/1280px-Philadelphia_from_South_Street_Bridge_July_2016_panorama_3.jpg'
-        alt='A picture of a square block with the word demo written in neon blue on the top.'
+        alt='A square block with the word demo written in neon blue on the top.'
       />
     </GridListTile>
     <GridListTile {...args}>
       <img
         src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Lagoon_Nebula.jpg/1024px-Lagoon_Nebula.jpg'
-        alt='Picture for demonstrating the GridListTile component.'
+        alt='Content for demonstrating the GridListTile component.'
       />
     </GridListTile>
     <GridListTile {...args}>
       <img
         src='https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/Demos.jpg/1200px-Demos.jpg'
-        alt='A picture of four cassette tapes for demonstrating the GridListTile component.'
+        alt='Four cassette tapes for demonstrating the GridListTile component.'
       />
     </GridListTile>
   </GridList>

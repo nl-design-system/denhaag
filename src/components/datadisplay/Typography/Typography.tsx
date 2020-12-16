@@ -1,21 +1,12 @@
 import React from 'react'
 import MaterialTypography from '@material-ui/core/Typography'
+import BaseDataDisplayProps from '../BaseDataDisplayProps/BaseDataDisplayProps'
 
-export interface TypographyProps {
+export interface TypographyProps extends BaseDataDisplayProps {
   /**
    * Set the text-align on the component.
    */
   align?: 'inherit' | 'left' | 'center' | 'right' | 'justify'
-
-  /**
-   * The content of the component.
-   */
-  children?: React.ReactNode
-
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes?: object
 
   /**
    * The color of the component.
@@ -29,13 +20,6 @@ export interface TypographyProps {
     | 'textPrimary'
     | 'textSecondary'
     | 'error'
-
-  /**
-   * The component used for the root node.
-   * Either a string to use a HTML element or a component.
-   * Overrides the behavior of the variantMapping prop.
-   */
-  component?: React.ElementType
 
   /**
    * Controls the display type

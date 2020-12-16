@@ -1,22 +1,8 @@
-import React, { ElementType, ReactElement } from 'react'
+import React from 'react'
 import MaterialBox from '@material-ui/core/Box'
+import { BaseLayoutChildrenProps } from '../BaseLayoutProps/BaseLayoutProps'
 
-export interface BoxProps {
-  /**
-   * Any other element which will be wrapped in the Box component.
-   */
-  children?: ReactElement
-
-  /**
-   * A boolean indicating whether the Box element should recycle it's children.
-   */
-  clone?: boolean
-
-  /**
-   * The component used for the root node. Either a string to use a HTMl element or a component.
-   */
-  component?: ElementType
-}
+export interface BoxProps extends BaseLayoutChildrenProps {}
 
 /**
  * Box allows developers to wrap most of the CSS Utility needs.

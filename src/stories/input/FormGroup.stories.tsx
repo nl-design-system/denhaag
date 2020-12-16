@@ -1,9 +1,11 @@
 import React from 'react'
 // also exported from '@storybook/react' if you can deal with breaking changes in 6.1
 import { Story, Meta } from '@storybook/react/types-6-0'
-import Checkbox, { CheckboxProps } from '../../components/input/Checkbox/Checkbox'
+import Checkbox from '../../components/input/Checkbox/Checkbox'
 import FormControlLabel from '../../components/input/FormControlLabel/FormControlLabel'
-import FormGroup, { FormGroupProps } from '../../components/input/FormGroup/FormGroup'
+import FormGroup, {
+  FormGroupProps
+} from '../../components/input/FormGroup/FormGroup'
 import pkg from '../../components/input/FormGroup/package.json'
 
 export default {

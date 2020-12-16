@@ -1,21 +1,12 @@
-import React, { ElementType, ReactElement } from 'react'
+import React from 'react'
 import MaterialContainer from '@material-ui/core/Container'
+import BaseLayoutProps from '../BaseLayoutProps/BaseLayoutProps'
 
-export interface ContainerProps {
+export interface ContainerProps extends BaseLayoutProps {
   /**
-   * Overrides or extends the styles applied to the component.
+   * Contents of the Container component
    */
-  classes: object
-
-  /**
-   * The component to use as the root component. Either a string to use a DOM element or a component
-   */
-  component?: ElementType
-
-  /**
-   * The content of the component
-   */
-  children: ReactElement
+  children: NonNullable<React.ReactNode>
 
   /**
    * Indicate whether the left and right padding of the component should be removed.

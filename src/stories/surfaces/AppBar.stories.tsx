@@ -44,9 +44,7 @@ const Template: Story<AppBarProps> = (args: any) => {
         >
           <MenuIcon />
         </IconButton>
-        <Typography variant='h6'>
-          News
-        </Typography>
+        <Typography variant='h6'>News</Typography>
       </Toolbar>
       <Button>I am a button!</Button>
     </AppBar>

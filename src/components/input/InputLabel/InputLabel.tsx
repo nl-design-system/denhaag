@@ -1,14 +1,12 @@
-import MaterialInputLabel, { InputLabelClassKey } from '@material-ui/core/InputLabel'
+import MaterialInputLabel from '@material-ui/core/InputLabel'
 import React from 'react'
-import { FormLabelProps, StandardProps } from '@material-ui/core'
+import { FormLabelProps } from '@material-ui/core'
+import BaseProps from '../../BaseProps/BaseProps'
 
-export interface InputLabelProps
-  extends StandardProps<FormLabelProps, InputLabelClassKey> {
+export interface InputLabelProps extends BaseProps {
   /**
-   * The contents of the `InputLabel`.
+   * The color of the component. It supports those theme colors that make sense for this component.
    */
-  children?: React.ReactNode
-
   color?: FormLabelProps['color']
 
   /**

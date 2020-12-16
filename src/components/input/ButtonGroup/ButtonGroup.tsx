@@ -1,17 +1,8 @@
 import React from 'react'
 import MaterialButtonGroup from '@material-ui/core/ButtonGroup'
+import BaseProps from '../../BaseProps/BaseProps'
 
-export interface ButtonGroupProps {
-  /**
-   * The content of the component.
-   */
-  children?: React.ReactNode
-
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes?: object
-
+export interface ButtonGroupProps extends BaseProps {
   /**
    * The color of the component.
    */
