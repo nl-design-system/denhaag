@@ -2,7 +2,9 @@ import React from 'react'
 import { Meta, Story } from '@storybook/react'
 import { IconButton } from '@material-ui/core'
 import InfoIcon from '@material-ui/icons/Info'
-import GridListTileBar, { GridListTileBarProps } from '../../components/layout/GridListTileBar/GridListTileBar'
+import GridListTileBar, {
+  GridListTileBarProps
+} from '../../components/layout/GridListTileBar/GridListTileBar'
 import GridListTile from '../../components/layout/GridListTile/GridListTile'
 import GridList from '../../components/layout/GridList/GridList'
 import pkg from '../../components/layout/GridListTileBar/package.json'

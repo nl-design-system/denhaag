@@ -29,7 +29,7 @@ export const Default = Template.bind({})
  */
 export const ContainerGrid = Template.bind({})
 ContainerGrid.args = {
-  container: true,
+  container: true
 }
 
 /**

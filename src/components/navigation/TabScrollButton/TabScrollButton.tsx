@@ -3,7 +3,6 @@ import MaterialTabScrollButton from '@material-ui/core/TabScrollButton'
 import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
 
 export interface TabScrollButtonProps extends ComponentBaseProps {
-
   /**
    * Which direction should the button indicate?
    */

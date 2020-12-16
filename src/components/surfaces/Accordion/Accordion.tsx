@@ -1,12 +1,16 @@
 import React from 'react'
 import MaterialAccordion from '@material-ui/core/Accordion'
-import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
 
-export interface AccordionProps extends ComponentBaseProps {
+export interface AccordionProps {
   /**
    * Content of the component.
    */
   children: React.ReactElement
+
+  /**
+   * Override or extend the styles applied to the component.
+   */
+  classes?: object
 
   /**
    * If true, expands the Accordion by default.
@@ -29,7 +33,7 @@ export interface AccordionProps extends ComponentBaseProps {
    * @param event The event source of the callback.
    * @param expanded The expanded state of the Accordion.
    */
-  onChange?: (event: object, expanded: boolean) => void
+  onChange?: (event: React.ChangeEvent<{}>, expanded: boolean) => void
 
   /**
    * If true, rounded corners are disabled.

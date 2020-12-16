@@ -3,7 +3,6 @@ import MaterialTabs from '@material-ui/core/Tabs'
 import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
 
 export interface TabsProps extends ComponentBaseProps {
-
   /**
    * Callback fired when the component mounts.
    */

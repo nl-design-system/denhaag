@@ -3,7 +3,6 @@ import MaterialTab from '@material-ui/core/Tab'
 import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
 
 export interface TabProps extends ComponentBaseProps {
-
   /**
    * If true, the tab will be disabled.
    */

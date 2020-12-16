@@ -3,7 +3,6 @@ import MaterialMenuItem from '@material-ui/core/MenuItem'
 import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
 
 export interface MenuItemProps extends ComponentBaseProps {
-
   /**
    * The component used for the root node.
    */

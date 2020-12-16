@@ -3,7 +3,6 @@ import MaterialDivider from '@material-ui/core/Divider'
 import BaseDataDisplayProps from '../BaseDataDisplayProps/BaseDataDisplayProps'
 
 export interface DividerProps extends BaseDataDisplayProps {
-
   /**
    * Absolutely position the element.
    */

@@ -3,7 +3,6 @@ import MaterialStepButton from '@material-ui/core/StepButton'
 import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
 
 export interface StepButtonProps extends ComponentBaseProps {
-
   /**
    * The icon displayed by the step label.
    */

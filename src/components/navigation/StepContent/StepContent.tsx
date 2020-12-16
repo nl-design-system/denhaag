@@ -3,7 +3,6 @@ import MaterialStepContent from '@material-ui/core/StepContent'
 import ComponentBaseProps from '../../ComponentBaseProps/ComponentBaseProps'
 
 export interface StepContentProps extends ComponentBaseProps {
-
   /**
    * The component used for the transition.
    */
