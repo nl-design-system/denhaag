@@ -1,8 +1,8 @@
 import React from 'react'
 import MaterialDivider from '@material-ui/core/Divider'
-import BaseDataDisplayProps from '../BaseDataDisplayProps/BaseDataDisplayProps'
+import { BaseDataDisplayClassesProps } from '../BaseDataDisplayProps/BaseDataDisplayProps'
 
-export interface DividerProps extends BaseDataDisplayProps {
+export interface DividerProps extends BaseDataDisplayClassesProps {
   /**
    * Absolutely position the element.
    */

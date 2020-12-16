@@ -1,11 +1,8 @@
 import React from 'react'
 import MaterialBadge from '@material-ui/core/Badge'
 import BaseDataDisplayProps from '../BaseDataDisplayProps/BaseDataDisplayProps'
-import { ComponentBaseChildrenProps } from '../../ComponentBaseProps/ComponentBaseProps'
 
-export interface BadgeProps
-  extends BaseDataDisplayProps,
-    ComponentBaseChildrenProps {
+export interface BadgeProps extends BaseDataDisplayProps {
   /**
    * The anchor of the badge.
    */
