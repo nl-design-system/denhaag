@@ -3,7 +3,7 @@ import React from 'react'
 /**
  * An interface which supplies the most standard properties of each component.
  */
-export default interface ComponentBaseProps extends React.HTMLAttributes<any> {
+export default interface ComponentBaseProps {
   /**
    * The contents of the component.
    */
@@ -18,7 +18,7 @@ export default interface ComponentBaseProps extends React.HTMLAttributes<any> {
 /**
  * An interface which supplies only the 'children' property.
  */
-export interface ComponentBaseChildrenProps extends React.HTMLAttributes<any> {
+export interface ComponentBaseChildrenProps {
   /**
    * The contents of the component.
    */
@@ -28,7 +28,7 @@ export interface ComponentBaseChildrenProps extends React.HTMLAttributes<any> {
 /**
  * An interface which supplies only the 'classes' property.
  */
-export interface ComponentBaseClassesProps extends React.HTMLAttributes<any> {
+export interface ComponentBaseClassesProps {
   /**
    * Override or extend the styles applied to the component.
    */
