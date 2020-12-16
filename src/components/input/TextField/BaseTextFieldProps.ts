@@ -2,20 +2,12 @@ import {
   FormHelperTextProps,
   InputLabelProps,
   PropTypes,
-  SelectProps,
-  StandardProps
+  SelectProps
 } from '@material-ui/core'
-import { FormControlProps } from '@material-ui/core/FormControl'
-import { TextFieldClassKey } from '@material-ui/core/TextField/TextField'
 import React from 'react'
+import { ComponentBaseClassesProps } from '../../ComponentBaseProps/ComponentBaseProps'
 
-export interface BaseTextFieldProps
-  extends StandardProps<
-    FormControlProps,
-    TextFieldClassKey,
-    // event handlers are declared on derived interfaces
-    'onChange' | 'onBlur' | 'onFocus' | 'defaultValue'
-  > {
+export interface BaseTextFieldProps extends ComponentBaseClassesProps {
   /**
    * This prop helps users to fill forms faster, especially on mobile devices.
    * The name can be confusing, as it's more like an autofill.
@@ -27,11 +19,6 @@ export interface BaseTextFieldProps
    * If `true`, the `input` element will be focused during the first mount.
    */
   autoFocus?: boolean
-
-  /**
-   * @ignore
-   */
-  children?: React.ReactNode
 
   /**
    * The color of the component. It supports those theme colors that make sense for this component. The default color is 'primary'
