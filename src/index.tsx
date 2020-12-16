@@ -3,6 +3,8 @@
  */
 import Typography from './components/datadisplay/Typography/Typography'
 import Divider from './components/datadisplay/Divider/Divider'
+import Badge from './components/datadisplay/Badge/Badge'
+
 /**
  * Input components
  */
@@ -16,6 +18,7 @@ import RadioGroup from './components/input/RadioGroup/RadioGroup'
 import Select from './components/input/Select/Select'
 import Switch from './components/input/Switch/Switch'
 import TextField from './components/input/TextField/TextField'
+
 /**
  * Layout components
  */
@@ -24,6 +27,7 @@ import Container from './components/layout/Container/Container'
 import Grid from './components/layout/Grid/Grid'
 import GridList from './components/layout/GridList/GridList'
 import Hidden from './components/layout/Hidden/Hidden'
+
 /**
  * Navigation components
  */
@@ -37,6 +41,7 @@ import Popper from './components/navigation/Popper/Popper'
 import Stepper from './components/navigation/Stepper/Stepper'
 import SwipeableDrawer from './components/navigation/SwipeableDrawer/SwipeableDrawer'
 import Tabs from './components/navigation/Tabs/Tabs'
+
 /**
  * Surface components
  */
@@ -50,6 +55,7 @@ export {
   // Data display
   Divider,
   Typography,
+  Badge,
   // Input
   Button,
   ButtonGroup,
