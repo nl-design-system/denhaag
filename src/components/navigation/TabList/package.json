@@ -5,7 +5,7 @@
   "license": "MIT",
   "version": "0.1.0",
   "dependencies": {
-    "@material-ui/lab": "^4.0.0-alpha.57",
+    "@material-ui/lab": "^4.0.0-alpha",
     "nlds-react-components-componentbaseprops": "^0.1.0"
   }
 }
