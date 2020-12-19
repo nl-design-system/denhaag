@@ -1,0 +1,146 @@
+# Contributing
+
+## Code of Conduct
+
+We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community. Read [our Code of Conduct](CODE_OF_CONDUCT.md) if you haven't already.
+
+## TL;DR
+
+Before you make a commit or PR, run `yarn lint` and `yarn test` to see if everything is in order.
+Many things can be fixed automatically using `yarn lint-fix`. Make separate commits for separate purposes.
+When you make a PR you will need to sign our [Contributor License Agreement](CLA.md), so first check with your employer if you need to.
+
+## Foundation for Public Code
+
+As an open-source project, to ensure the code remains readable and inviting to contributors, all written code must adhere to the Foundation for Public Code’s [Standard for Public Code](https://standard.publiccode.net/). The criteria to which the code must adhere can be found [here](https://standard.publiccode.net/criteria/). These criteria concern code as well as the repository itself and the surrounding documentation. For convenience, all criteria relevant for contributors are listed below, with their respective links to the standard as defined by the Foundation for Public Code.
+
+* **[Document the code](https://standard.publiccode.net/criteria/documenting.html)**
+  <br />
+  *See the Code docs section for more information on documentation.*
+  * All functionality of the codebase MUST be described in language clearly understandable for those that understand the purpose of the code.
+  * The documentation of the codebase MUST contain:
+    * a description of how to install and run the source code;
+    * examples demonstrating the key functionality.
+
+* **[Maintain version control](https://standard.publiccode.net/criteria/version-control-and-history.html)**
+  * Version control MUST be maintained for all written code.
+  * All decisions MUST be documented using commit messages, so that components can be versioned accordingly. If a contribution stems from an issue or discussion, they MUST always be linked.
+  * Component versioning is done through Lerna, by maintainers of the repository. Collaborators do not need to increment versions.
+
+* **[Use a coherent style](https://standard.publiccode.net/criteria/style.html)**
+  * All written code must adhere to the defined code style and should pass automated tests on style. Code should contain inline comments and documentation for non-trivial sections.
+  * Consult this document as well as the JavaScript Standard Style and the provided linters in the project to ensure your code complies.
+
+* **[Use plain English](https://standard.publiccode.net/criteria/understandable-english-first.html)**
+  * All code and documentation MUST be in English.
+  * There SHOULD be no acronyms, abbreviations, puns or legal/domain specific terms in the codebase without an explanation preceding it or a link to an explanation.
+  * Documentation SHOULD aim for lower secondary education reading level, as recommended by the Web Content Accessibility Guidelines 2.
+
+## Code Style
+
+The project uses the following tools to automate checking and fixing code style rules:
+
+- [StandardJS](https://standardjs.com/) ([rules](https://standardjs.com/rules.html))
+- [EditorConfig](https://editorconfig.org)
+- [npm-package-json-lint](https://npmpackagejsonlint.org/) ([rules](https://npmpackagejsonlint.org/docs/en/rules))
+- [Prettier](https://prettier.io)
+- [stylelint](https://stylelint.io/) ([rules](https://stylelint.io/user-guide/rules/list))
+
+Check if there are plugins available for your code editor of choice, to enable these tools during development.
+
+## Code docs
+Code docs must be comprehensive and to the point.
+They must clearly explain the purpose, context or functionality of the line of code.
+```js
+  /**
+   * If true the Checkbox is checked.
+   */
+  checked?: boolean
+```
+## Typescript coding style
+
+Changes to NLDS React Component Library code must conform to the JavaScript Standard Style.
+The project has linters set up to verify the code style. Use the `yarn lint` or `yarn lint:ts` command to check your changes and ensure they conform to the standard.
+
+When defining an export for a component, add a named export as well as a default export:
+```jsx
+ export const Button: React.FC<...
+```
+```jsx
+ export default Button
+```
+
+The component library uses Material UI components underwater by providing wrapper components.
+When making a wrapper component, the component properties will need to be passed to the original Material UI component.
+To keep the codebase compact and readable, use the following syntax when passing properties:
+```jsx
+export const Switch: React.FC<SwitchProps> = (props: SwitchProps) => {
+  return <MaterialSwitch {...props} />
+}
+```
+If the value of a specific property should be defined or overwritten, use the following syntax:
+```jsx
+export const Switch: React.FC<SwitchProps> = (props: SwitchProps) => {
+  return <MaterialSwitch color=”primary” {...props} />
+}
+```
+
+## Defining dependency versions
+To define a dependency version in the package.json file, use the following format:
+```json
+ "@material-ui/core": "^4.0.0"
+```
+The major, minor and patch version should be defined.
+This versioning system is also enforced with the `yarn lint:package` command.
+
+## Naming conventions
+
+### Folder names
+All folder names should use lowercase, except for folders containing a component. Folders containing a component should use PascalCasing and have the same name as the component. See the following example:
+```
+ src/components/layout/Box
+ src/components/layout/Box.tsx
+```
+
+### Typescript file names
+For typescript files, use PascalCasing. See the following example:
+```
+ GridList.tsx
+```
+The `<ComponentName>.stories.tsx` file for each component should have the same name as the component. See the following example:
+```
+ GridList.stories.tsx
+```
+
+### Grouped components
+Components belonging to a common group should reside in a common folder under the ‘components’ folder.
+For example, layout components are grouped together under a ‘layout’ folder:
+```
+src
+  components
+    layout
+      Box
+      Container
+      Grid
+      GridList
+      GridListTitle
+      GridListTitleBar
+      Hiiden
+```
+Components that are grouped should also have their respective `.stories.tsx` files grouped in a `/src/stories/<group-name>` folder.
+
+### Dependent components
+Components that are only used as a dependency by a different component, have their own folder on the same level. See; `GridList`, `GridListTile`, `GridListTileBar` in the image above.
+
+### Variable names
+Variable names should use camelCasing as indicated by StandardJS.
+Use concise variable names.
+
+| Don't   | Do                |
+|:--------|:------------------|
+| `bgCol` | `backgroundColor` |
+| `t`     | `timer`           |
+
+### CSS names
+
+CSS class names, custom property names and keyframe names al must start with the prefix `nlds-` followed by one or more [0-9a-z-]. This is also enforced by the linter via the `yarn lint:css` command.
