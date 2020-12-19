@@ -1,0 +1,16 @@
+{
+  "name": "nlds-react-components-list",
+  "description": "A List component",
+  "author": "Municipality of The Hague",
+  "version": "0.1.0",
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "nlds-react-components-listitem": "^0.1.0",
+    "nlds-react-components-listitemavatar": "^0.1.0",
+    "nlds-react-components-listitemsecondaryaction": "^0.1.0",
+    "nlds-react-components-listitemicon": "^0.1.0",
+    "nlds-react-components-listitemtext": "^0.1.0",
+    "nlds-react-components-listsubheader": "^0.1.0",
+    "nlds-react-components-baseprops": "^0.1.0"
+  }
+}
