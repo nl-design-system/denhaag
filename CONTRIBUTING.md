@@ -43,13 +43,19 @@ For convenience, all criteria relevant for contributors are listed below, with t
 
 The project uses the following tools to automate checking and fixing code style rules:
 
-- [StandardJS](https://standardjs.com/) ([rules](https://standardjs.com/rules.html))
-- [EditorConfig](https://editorconfig.org)
-- [npm-package-json-lint](https://npmpackagejsonlint.org/) ([rules](https://npmpackagejsonlint.org/docs/en/rules))
-- [Prettier](https://prettier.io)
-- [stylelint](https://stylelint.io/) ([rules](https://stylelint.io/user-guide/rules/list))
+* [StandardJS](https://standardjs.com/) ([rules](https://standardjs.com/rules.html))
+* [EditorConfig](https://editorconfig.org)
+* [npm-package-json-lint](https://npmpackagejsonlint.org/) ([rules](https://npmpackagejsonlint.org/docs/en/rules))
+* [Prettier](https://prettier.io)
+* [stylelint](https://stylelint.io/) ([rules](https://stylelint.io/user-guide/rules/list))
 
-Check if there are plugins available for your code editor of choice, to enable these tools during development.
+Check of there are plugins available for your code editor of choice, to enable these tools during development.
+That way you won't find yourself alerted by Husky and lint-staged to fix formatting issues, just when you are about to commit your code.
+
+For automating checks:
+
+* [Husky](https://github.com/typicode/husky): automatically install Git hooks
+* [lint-staged](https://github.com/okonet/lint-staged): quickly run code style checks for only the files that are staged in Git
 
 ## Code docs
 Code docs must be comprehensive and to the point.
