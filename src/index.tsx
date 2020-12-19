@@ -5,6 +5,8 @@ import Typography from './components/datadisplay/Typography/Typography'
 import Divider from './components/datadisplay/Divider/Divider'
 import List from './components/datadisplay/List/List'
 import Badge from './components/datadisplay/Badge/Badge'
+import Avatar from './components/datadisplay/Avatar/Avatar'
+import AvatarGroup from './components/datadisplay/AvatarGroup/AvatarGroup'
 
 /**
  * Input components
@@ -59,6 +61,8 @@ export {
   Divider,
   Typography,
   Badge,
+  Avatar,
+  AvatarGroup,
   // Input
   List,
   Button,
