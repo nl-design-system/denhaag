@@ -1,17 +1,8 @@
 import React from 'react'
 import MaterialTabPanel from '@material-ui/lab/TabPanel'
+import BaseProps from '../../BaseProps/BaseProps'
 
-export interface TabPanelProps {
-  /**
-   * The content of the component.
-   */
-  children?: React.ReactNode
-
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes?: object
-
+export interface TabPanelProps extends BaseProps {
   /**
    * The value of the corresponding Tab.
    * Must use the index of the Tab when no value was passed to Tab

@@ -1,17 +1,8 @@
 import React from 'react'
 import MaterialAccordionActions from '@material-ui/core/AccordionActions'
+import BaseProps from '../../BaseProps/BaseProps'
 
-export interface AccordionActionsProps {
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes?: object
-
-  /**
-   * The content of the component
-   */
-  children?: React.ReactNode
-
+export interface AccordionActionsProps extends BaseProps {
   /**
    * If true, the actions do not have additional margin.
    */

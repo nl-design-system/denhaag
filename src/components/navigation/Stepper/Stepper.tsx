@@ -1,17 +1,8 @@
 import React from 'react'
 import MaterialStepper from '@material-ui/core/Stepper'
+import BaseProps from '../../BaseProps/BaseProps'
 
-export interface StepperProps {
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes: object
-
-  /**
-   * The content of the component
-   */
-  children?: React.ReactNode
-
+export interface StepperProps extends BaseProps {
   /**
    * Set the active step (zero based index). Set to -1 to disable all the steps.
    */

@@ -1,17 +1,8 @@
 import React from 'react'
 import MaterialAccordionDetails from '@material-ui/core/AccordionDetails'
+import BaseProps from '../../BaseProps/BaseProps'
 
-export interface AccordionDetailsProps {
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes?: object
-
-  /**
-   * The content of the component
-   */
-  children?: React.ReactNode
-}
+export interface AccordionDetailsProps extends BaseProps {}
 
 /**
  * Displays details of an Accordion component.

@@ -1,17 +1,8 @@
 import React from 'react'
 import MaterialTabs from '@material-ui/core/Tabs'
+import BaseProps from '../../BaseProps/BaseProps'
 
-export interface TabsProps {
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes?: object
-
-  /**
-   * The content of the component
-   */
-  children?: React.ReactNode
-
+export interface TabsProps extends BaseProps {
   /**
    * Callback fired when the component mounts.
    */

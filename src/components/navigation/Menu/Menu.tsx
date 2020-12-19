@@ -1,7 +1,8 @@
 import React from 'react'
 import MaterialMenu from '@material-ui/core/Menu'
+import BaseProps from '../../BaseProps/BaseProps'
 
-export interface MenuProps {
+export interface MenuProps extends BaseProps {
   /**
    * A HTML element, or a function that returns it.
    * It's used to set the position of the menu.
@@ -15,16 +16,6 @@ export interface MenuProps {
    * This has severe accessibility implications and should only be considered if you manage focus otherwise.
    */
   autoFocus?: boolean
-
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes?: object
-
-  /**
-   * Menu contents, normally MenuItems.
-   */
-  children?: React.ReactNode
 
   /**
    * When opening the menu will not focus the active item but the [role="menu"] unless autoFocus is also set to false.

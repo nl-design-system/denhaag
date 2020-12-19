@@ -8,6 +8,7 @@
     "nlds-react-components-typography": "^0.1.0",
     "nlds-react-components-divider": "^0.1.0",
     "nlds-react-components-badge": "^0.1.0",
+    "nlds-react-components-baseprops": "^0.1.0",
     "nlds-react-components-list": "^0.1.0",
     "nlds-react-components-listitem": "^0.1.0",
     "nlds-react-components-listitemavatar": "^0.1.0",

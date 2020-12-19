@@ -1,12 +1,8 @@
-import React, { ReactElement } from 'react'
+import React from 'react'
 import MaterialHidden from '@material-ui/core/Hidden'
+import BaseProps from '../../BaseProps/BaseProps'
 
-export interface HiddenProps {
-  /**
-   * The content of the component.
-   */
-  children: ReactElement
-
+export interface HiddenProps extends BaseProps {
   /**
    * Specify which implementation to use. 'js' is default.
    */
