@@ -1,0 +1,16 @@
+{
+  "name": "nlds-react-components-surfaces",
+  "version": "0.1.0",
+  "author": "Municipality of The Hague",
+  "description": "A package containing all the surface components.",
+  "license": "MIT",
+  "dependencies": {
+    "nlds-react-components-accordion": "^0.1.0",
+    "nlds-react-components-accordiondetails": "^0.1.0",
+    "nlds-react-components-accordionactions": "^0.1.0",
+    "nlds-react-components-accordionsummary": "^0.1.0",
+    "nlds-react-components-appbar": "^0.1.0",
+    "nlds-react-components-baseprops": "^0.1.0",
+    "nlds-react-components-toolbar": "^0.1.0"
+  }
+}

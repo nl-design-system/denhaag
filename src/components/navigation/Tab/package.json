@@ -1,0 +1,12 @@
+{
+  "name": "nlds-react-components-tab",
+  "description": "A Tab component",
+  "author": "Municipality of The Hague",
+  "license": "MIT",
+  "version": "0.1.0",
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "nlds-react-components-baseprops": "^0.1.0",
+    "nlds-react-components-tabscrollbutton": "^0.1.0"
+  }
+}

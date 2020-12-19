@@ -1,7 +1,9 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
 import pkg from '../../components/input/TextField/package.json'
-import TextField, { TextFieldProps } from '../../components/input/TextField/TextField'
+import TextField, {
+  TextFieldProps
+} from '../../components/input/TextField/TextField'
 
 export default {
   title: 'Components/Input/TextField',
