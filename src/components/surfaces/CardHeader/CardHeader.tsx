@@ -1,24 +1,24 @@
 import React from 'react'
 import MaterialCardHeader from '@material-ui/core/CardHeader'
-import { TypographyProps } from 'nlds-react-components-typography'
+import BaseProps from '../../BaseProps/BaseProps'
+import { TypographyProps } from '../../datadisplay/Typography/Typography'
 
-export interface CardHeaderProps {
+export interface CardHeaderProps extends BaseProps {
   /**
    * The action to display in the card header.
    */
   action?: React.ReactNode
+
   /**
    * The Avatar for the Card Header.
    */
   avatar?: React.ReactNode
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes?: object
+
   /**
    * The component to use as the root component. Either a string to use a DOM element or a component
    */
   component?: React.ElementType
+
   /**
    * If `true`, `subheader` and `title` won't be wrapped by a Typography component.
    * This can be useful to render an alternative Typography variant by wrapping
@@ -26,36 +26,34 @@ export interface CardHeaderProps {
    * with the Typography component.
    */
   disableTypography?: boolean
+
   /**
    * The content of the component.
    */
   subheader?: React.ReactNode
+
   /**
    * These props will be forwarded to the subheader
    * (as long as disableTypography is not `true`).
    */
   subheaderTypographyProps?: TypographyProps
+
   /**
    * The content of the Card Title.
    */
   title?: React.ReactNode
+
   /**
    * These props will be forwarded to the title
    * (as long as disableTypography is not `true`).
    */
   titleTypographyProps?: TypographyProps
-  /**
-   * The content of the component.
-   */
-  children?: React.ReactNode
 }
 
 /**
  * Primary UI component for user interaction
  */
-export const CardHeader: React.FC<CardHeaderProps> = (
-  props: CardHeaderProps
-) => {
+export const CardHeader: React.FC<CardHeaderProps> = (props: CardHeaderProps) => {
   return <MaterialCardHeader {...props}>{props.children}</MaterialCardHeader>
 }
 

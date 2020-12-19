@@ -9,6 +9,7 @@
     "nlds-react-components-paper": "^0.1.0",
     "nlds-react-components-cardactions": "^0.1.0",
     "nlds-react-components-cardcontent": "^0.1.0",
-    "nlds-react-components-cardheader": "^0.1.0"
+    "nlds-react-components-cardheader": "^0.1.0",
+    "nlds-react-components-baseprops": "^0.1.0"
   }
 }

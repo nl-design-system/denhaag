@@ -11,6 +11,7 @@
     "nlds-react-components-listitemsecondaryaction": "^0.1.0",
     "nlds-react-components-listitemicon": "^0.1.0",
     "nlds-react-components-listitemtext": "^0.1.0",
-    "nlds-react-components-listsubheader": "^0.1.0"
+    "nlds-react-components-listsubheader": "^0.1.0",
+    "nlds-react-components-baseprops": "^0.1.0"
   }
 }

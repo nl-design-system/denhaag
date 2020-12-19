@@ -1,15 +1,8 @@
 import React from 'react'
 import MaterialCardActions from '@material-ui/core/CardActions'
+import BaseProps from '../../BaseProps/BaseProps'
 
-export interface CardActionProps {
-  /**
-   * The content of the component.
-   */
-  children?: React.ReactNode
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes?: object
+export interface CardActionProps extends BaseProps {
   /**
    * If `true`, the actions do not have additional margin.
    */
@@ -19,9 +12,7 @@ export interface CardActionProps {
 /**
  * Primary UI component for user interaction
  */
-export const CardActions: React.FC<CardActionProps> = (
-  props: CardActionProps
-) => {
+export const CardActions: React.FC<CardActionProps> = (props: CardActionProps) => {
   return <MaterialCardActions {...props}>{props.children}</MaterialCardActions>
 }
 
