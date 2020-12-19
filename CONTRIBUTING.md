@@ -2,7 +2,7 @@
 
 ## Code of Conduct
 
-We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community. Read [our Code of Conduct](CODE_OF_CONDUCT.md) if you haven't already.
+We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community. Read [our Code of Conduct](CODE_OF_CONDUCT.md) if you have not done so already.
 
 ## TL;DR
 
@@ -12,7 +12,10 @@ When you make a PR you will need to sign our [Contributor License Agreement](CLA
 
 ## Foundation for Public Code
 
-As an open-source project, to ensure the code remains readable and inviting to contributors, all written code must adhere to the Foundation for Public Code’s [Standard for Public Code](https://standard.publiccode.net/). The criteria to which the code must adhere can be found [here](https://standard.publiccode.net/criteria/). These criteria concern code as well as the repository itself and the surrounding documentation. For convenience, all criteria relevant for contributors are listed below, with their respective links to the standard as defined by the Foundation for Public Code.
+As an open-source project, to ensure the code remains readable and inviting to contributors, all written code must adhere to the Foundation for Public Code’s [Standard for Public Code](https://standard.publiccode.net/).
+The criteria to which the code must adhere can be found [here](https://standard.publiccode.net/criteria/).
+These criteria concern code as well as the repository itself and the surrounding documentation.
+For convenience, all criteria relevant for contributors are listed below, with their respective links to the standard as defined by the Foundation for Public Code.
 
 * **[Document the code](https://standard.publiccode.net/criteria/documenting.html)**
   <br />
@@ -136,10 +139,10 @@ Components that are only used as a dependency by a different component, have the
 Variable names should use camelCasing as indicated by StandardJS.
 Use concise variable names.
 
-| Don't   | Do                |
-|:--------|:------------------|
-| `bgCol` | `backgroundColor` |
-| `t`     | `timer`           |
+| <span style="color:red">Do not use</span> | <span style="color:green">Do use</span> |
+|:------------------------------------------|:----------------------------------------|
+| `bgCol`                                   | `backgroundColor`                       |
+| `t`                                       | `timer`                                 |
 
 ### CSS names
 
