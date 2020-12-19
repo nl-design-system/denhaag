@@ -50,7 +50,7 @@ The project uses the following tools to automate checking and fixing code style 
 * [stylelint](https://stylelint.io/) ([rules](https://stylelint.io/user-guide/rules/list))
 
 Check of there are plugins available for your code editor of choice, to enable these tools during development.
-That way you won't find yourself alerted by Husky and lint-staged to fix formatting issues, just when you are about to commit your code.
+That way you will not find yourself alerted by Husky and lint-staged to fix formatting issues, just when you are about to commit your code.
 
 For automating checks:
 
