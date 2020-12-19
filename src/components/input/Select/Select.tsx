@@ -3,8 +3,9 @@ import React from 'react'
 import { InputProps } from '@material-ui/core/Input'
 import { SelectInputProps } from '@material-ui/core/Select/SelectInput'
 import { MenuProps } from '@material-ui/core'
+import BaseProps from '../../BaseProps/BaseProps'
 
-export interface SelectProps {
+export interface SelectProps extends BaseProps {
   /**
    * If `true`, the width of the popover will automatically be set according to the items inside the
    * menu, otherwise it will be at least the width of the select input.
@@ -146,7 +147,7 @@ export interface SelectProps {
  * Select components are used for collecting user provided information from a list of options.
  */
 export const Select: React.FC<SelectProps> = (props: SelectProps) => {
-  return <MaterialSelect {...props} />
+  return <MaterialSelect {...props}>{props.children}</MaterialSelect>
 }
 
 /**

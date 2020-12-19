@@ -1,9 +1,9 @@
 import { MuiPickersUtilsProvider as MaterialPickersUtilsProvider } from '@material-ui/pickers'
-import React, { ReactNode } from 'react'
+import React from 'react'
 
 export interface PickersUtilsProviderProps {
   utils: any
-  children: ReactNode
+  children: React.ReactNode
 }
 
 /**

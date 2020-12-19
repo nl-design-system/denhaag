@@ -23,11 +23,18 @@
     "build": "microbundle-crl --no-compress --format modern,cjs",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
     "prepare": "run-s build",
-    "test": "run-s test:unit test:lint test:build",
+    "test": "run-s test:unit lint test:build",
     "test:build": "run-s build",
-    "test:lint": "eslint *",
     "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
+    "lint": "npm-run-all --continue-on-error lint:* && lerna run lint",
+    "lint:css": "stylelint **/*.css",
+    "lint:ts": "ts-standard **/*.{ts,tsx}",
+    "lint:package": "npmPkgJsonLint **/package.json",
+    "lint-fix": "npm-run-all --continue-on-error lint-fix:* prettier",
+    "lint-fix:css": "stylelint --fix **/*.css",
+    "lint-fix:ts": "ts-standard --fix **/*.{ts,tsx}",
+    "prettier": "prettier --write .",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -57,18 +64,12 @@
     "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.7.0",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-config-standard-react": "^9.2.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.17.0",
-    "eslint-plugin-standard": "^4.0.1",
     "gh-pages": "^2.2.0",
     "jest": "^26.6.1",
     "lerna": "^3.22.1",
     "microbundle-crl": "^0.13.10",
+    "npm-package-json-lint": "^5.1.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.4",
     "react": "^16.13.1",
@@ -76,7 +77,11 @@
     "react-is": "^16.13.1",
     "react-scripts": "^3.4.1",
     "react-test-renderer": "^17.0.1",
+    "standard": "^16.0.3",
     "storybook": "^6.1.1",
+    "stylelint": "^13.8.0",
+    "stylelint-config-standard": "^20.0.0",
+    "ts-standard": "^10.0.0",
     "typescript": "^3.7.5"
   },
   "files": [
@@ -85,7 +90,8 @@
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
-    "@material-ui/lab": "^4.0.0-alpha.57",
-    "yarn-outdated-formatter": "^2.2.0"
+    "yarn-outdated-formatter": "^2.2.0",
+    "@material-ui/lab": "^4.0.0-alpha",
+    "@material-ui/pickers": "^3.2.10"
   }
 }

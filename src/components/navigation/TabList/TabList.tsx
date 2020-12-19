@@ -1,12 +1,8 @@
 import React from 'react'
 import MaterialTabList from '@material-ui/lab/TabList'
+import { BaseChildrenProps } from '../../BaseProps/BaseProps'
 
-export interface TabListProps {
-  /**
-   * The contents of the component.
-   */
-  children: React.ReactElement[]
-}
+export interface TabListProps extends BaseChildrenProps {}
 
 /**
  * Wraps Tab components in a single list.

@@ -1,12 +1,8 @@
 import React from 'react'
 import MaterialStepIcon from '@material-ui/core/StepIcon'
+import { BaseClassesProps } from '../../BaseProps/BaseProps'
 
-export interface StepIconProps {
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes: object
-
+export interface StepIconProps extends BaseClassesProps {
   /**
    * Whether this step is active.
    */

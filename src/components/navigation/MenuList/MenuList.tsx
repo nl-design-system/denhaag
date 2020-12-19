@@ -1,7 +1,8 @@
 import React from 'react'
 import MaterialMenuList from '@material-ui/core/MenuList'
+import { BaseChildrenProps } from '../../BaseProps/BaseProps'
 
-export interface MenuListProps {
+export interface MenuListProps extends BaseChildrenProps {
   /**
    * If true, will focus the [role="menu"] container and move into tab order.
    */
@@ -11,11 +12,6 @@ export interface MenuListProps {
    * If true, will focus the first menuitem if variant="menu" or selected item if variant="selectedMenu".
    */
   autoFocusItem?: boolean
-
-  /**
-   * MenuList contents, normally MenuItems.
-   */
-  children?: React.ReactNode
 
   /**
    * If true, will allow focus on disabled items.
