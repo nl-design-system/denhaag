@@ -5,8 +5,8 @@ import Typography from './components/datadisplay/Typography/Typography'
 import Divider from './components/datadisplay/Divider/Divider'
 import List from './components/datadisplay/List/List'
 import Badge from './components/datadisplay/Badge/Badge'
-import Avatar from './components/datadisplay/Avatar/Avatar'
-import AvatarGroup from './components/datadisplay/AvatarGroup/AvatarGroup'
+// import Avatar from './components/datadisplay/Avatar/Avatar'
+// import AvatarGroup from './components/datadisplay/AvatarGroup/AvatarGroup'
 
 /**
  * Input components
@@ -20,7 +20,7 @@ import Radio from './components/input/Radio/Radio'
 import RadioGroup from './components/input/RadioGroup/RadioGroup'
 import Select from './components/input/Select/Select'
 import Switch from './components/input/Switch/Switch'
-import IconButton from './components/input/IconButton/IconButton'
+// import IconButton from './components/input/IconButton/IconButton'
 
 import TextField from './components/input/TextField/TextField'
 /**
@@ -62,8 +62,8 @@ export {
   Divider,
   Typography,
   Badge,
-  Avatar,
-  AvatarGroup,
+  // Avatar,
+  // AvatarGroup,
   // Input
   List,
   Button,
@@ -75,7 +75,7 @@ export {
   RadioGroup,
   Select,
   Switch,
-  IconButton,
+  // IconButton,
   // Layout
   TextField,
   Box,
