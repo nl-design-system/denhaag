@@ -22,7 +22,6 @@ const Template: Story<PaperProps> = (args: any) => (
  * Implementation of Paper.
  */
 export const Default = Template.bind({})
-Default.args = {}
 
 /**
  * A Paper component which is outlined instead of elevated.
@@ -37,7 +36,7 @@ Outlined.args = {
  */
 export const Squared = Template.bind({})
 Squared.args = {
-  squared: true
+  square: true
 }
 
 /**

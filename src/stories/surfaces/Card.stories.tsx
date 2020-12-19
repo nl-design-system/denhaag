@@ -57,7 +57,6 @@ const Template: Story<CardProps> = (args: any) => (
  * Implementation of Card
  */
 export const Default = Template.bind({})
-Default.args = {}
 
 /**
  * Raised variant of Card component

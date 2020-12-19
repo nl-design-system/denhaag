@@ -25,7 +25,7 @@ const Template: Story<ListProps> = (args: any) => (
   <List
     {...args}
   >
-    <ListItem dense button>
+    <ListItem dense>
       <ListItemIcon>
         <Checkbox />
       </ListItemIcon>
@@ -51,7 +51,6 @@ const Template: Story<ListProps> = (args: any) => (
  * Implementation of List.
  */
 export const Default = Template.bind({})
-Default.args = {}
 
 /**
  * Dense variant of List component
