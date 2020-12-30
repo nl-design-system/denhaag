@@ -134,7 +134,7 @@ src
       GridList
       GridListTitle
       GridListTitleBar
-      Hiiden
+      Hidden
 ```
 Components that are grouped should also have their respective `.stories.tsx` files grouped in a `/src/stories/<group-name>` folder.
 
