@@ -20,8 +20,8 @@ const Template: Story<AvatarProps> = (args: any) => (
  */
 export const Default = Template.bind({})
 Default.args = {
-  src: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/c1/c103da350e94ed6b0ef07583c4cb619f9deb6295_full.jpg",
-  alt: "Grechanyuk model"
+  src: "https://c1.staticflickr.com/9/8486/8245351490_2746ef972c_b.jpg",
+  alt: "Planet Earth",
 }
 
 /**
