@@ -20,6 +20,10 @@ import Radio from './components/input/Radio/Radio'
 import RadioGroup from './components/input/RadioGroup/RadioGroup'
 import Select from './components/input/Select/Select'
 import Switch from './components/input/Switch/Switch'
+import DatePicker from './components/input/Pickers/DatePicker/DatePicker'
+import KeyboardDatePicker from './components/input/Pickers/KeyboardDatePicker/KeyboardDatePicker'
+import PickersUtilsProvider from './components/input/Pickers/PickersUtilsProvider/PickersUtilsProvider'
+
 // import IconButton from './components/input/IconButton/IconButton'
 
 import TextField from './components/input/TextField/TextField'
@@ -75,6 +79,9 @@ export {
   RadioGroup,
   Select,
   Switch,
+  DatePicker,
+  KeyboardDatePicker,
+  PickersUtilsProvider,
   // IconButton,
   // Layout
   TextField,
