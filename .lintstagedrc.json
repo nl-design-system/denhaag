@@ -1,0 +1,5 @@
+{
+  "package.json": "npmPkgJsonLint",
+  "*.{ts,tsx}": "ts-standard",
+  "*.css": "stylelint"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "nlds-react-component-avatargroup",
+  "description": "An AvatarGroup component",
+  "author": "Municipality of The Hague",
+  "version": "0.1.0",
+  "dependencies": {
+    "@material-ui/lab": "^4.0.0-alpha",
+    "nlds-react-components-baseprops": "^0.1.0",
+    "nlds-react-components-avatar": "^0.1.0"
+  }
+}
