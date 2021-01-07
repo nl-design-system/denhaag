@@ -62,6 +62,11 @@ Start by filling it with the following information:
   "description": "A short description of the component",
   "author": "Municipality of The Hague",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gemeente-DenHaag/nlds-react-components.git"
+  },
+  "bugs": "https://github.com/Gemeente-DenHaag/nlds-react-components/issues",
   "dependencies": {
     "@material-ui/core": "^4.11.0"
   }

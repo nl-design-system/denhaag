@@ -1,6 +1,14 @@
 {
   "name": "nlds-react-components-baseprops",
+  "description": "A package containing properties used in other components",
+  "author": "Municipality of The Hague",
+  "license": "MIT",
   "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gemeente-DenHaag/nlds-react-components.git"
+  },
+  "bugs": "https://github.com/Gemeente-DenHaag/nlds-react-components/issues",
   "peerDependencies": {
     "react": "^16.13.0"
   }
