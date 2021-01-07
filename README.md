@@ -39,7 +39,9 @@ class Example extends Component {
 ### Folder structure
 The project folders are structured in the following way:
 The `src` folder houses both our `components` and our storybook `stories`, these are both in their own folders.
+Our components are sorted into several categories, where each category has its own parent folder.
 All of our components are their own package and managed with lerna, docs are available [here](https://lerna.js.org/).
+Similarly, each category is its own package managed with lerna.
 
 ### Adding components
 #### Storybook
@@ -61,15 +63,19 @@ Start by filling it with the following information:
   "author": "Municipality of The Hague",
   "license": "MIT",
   "dependencies": {
-    "@material-ui/core": "^4"
+    "@material-ui/core": "^4.11.0"
   }
 }
 ```
 _Don't forget to add all needed dependencies for your component to the dependencies section of the component's `package.json`._
 
-We will also need to add our component to the meta-package which installs all of the nlds react components. We can do this by adding it to the list of dependencies.
-The file we need is located here: `src/components/package.json`\
+We will also need to add our component to the meta-package which installs all of the nlds react components in the same category. We can do this by adding it to the list of dependencies.
+The file we need is located here: `src/components/[CATEGORY]/package.json`\
 An entry should be structured like this:
 ```json
-"nlds-react-component-component_name": "^0.1"
+"nlds-react-component-component_name": "^0.1.0"
 ```
+Similarly, if you create a new category we need to add the category package to the list of dependencies in the meta-package which installs all of the nlds react components.
+This file is located here: `src/components/package.json`\
+
+An entry should be structured in the same way as above.
