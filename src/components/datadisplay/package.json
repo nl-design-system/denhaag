@@ -1,5 +1,5 @@
 {
-  "name": "nlds-react-components-datadisplay",
+  "name": "datadisplay",
   "description": "A package containing components for displaying data",
   "author": "Municipality of The Hague",
   "license": "MIT",
@@ -10,15 +10,15 @@
   },
   "bugs": "https://github.com/Gemeente-DenHaag/nlds-react-components/issues",
   "dependencies": {
-    "nlds-react-components-typography": "^0.1.0",
-    "nlds-react-components-divider": "^0.1.0",
-    "nlds-react-components-badge": "^0.1.0",
-    "nlds-react-components-baseprops": "^0.1.0",
-    "nlds-react-components-list": "^0.1.0",
-    "nlds-react-components-listitem": "^0.1.0",
-    "nlds-react-components-listitemavatar": "^0.1.0",
-    "nlds-react-components-listitemsecondaryaction": "^0.1.0",
-    "nlds-react-components-listitemtext": "^0.1.0",
-    "nlds-react-components-listsubheader": "^0.1.0"
+    "typography": "^0.1.0",
+    "divider": "^0.1.0",
+    "badge": "^0.1.0",
+    "baseprops": "^0.1.0",
+    "list": "^0.1.0",
+    "listitem": "^0.1.0",
+    "listitemavatar": "^0.1.0",
+    "listitemsecondaryaction": "^0.1.0",
+    "listitemtext": "^0.1.0",
+    "listsubheader": "^0.1.0"
   }
 }

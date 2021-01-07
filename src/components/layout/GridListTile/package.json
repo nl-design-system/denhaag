@@ -1,5 +1,5 @@
 {
-  "name": "nlds-react-components-gridlisttile",
+  "name": "gridlisttile",
   "author": "Municipality of The Hague",
   "description": "A GridListTile component",
   "license": "MIT",
@@ -11,6 +11,6 @@
   "bugs": "https://github.com/Gemeente-DenHaag/nlds-react-components/issues",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
-    "nlds-react-components-baselayoutprops": "^0.1.0"
+    "baselayoutprops": "^0.1.0"
   }
 }

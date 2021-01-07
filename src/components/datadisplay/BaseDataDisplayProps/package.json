@@ -1,5 +1,5 @@
 {
-  "name": "nlds-react-components-basedatadisplayprops",
+  "name": "basedatadisplayprops",
   "description": "A package containing properties used in DataDisplay",
   "author": "Municipality of The Hague",
   "version": "0.1.0",
@@ -10,7 +10,7 @@
   },
   "bugs": "https://github.com/Gemeente-DenHaag/nlds-react-components/issues",
   "dependencies": {
-    "nlds-react-components-baseprops": "^0.1.0"
+    "baseprops": "^0.1.0"
   },
   "peerDependencies": {
     "react": "^16.13.0"
