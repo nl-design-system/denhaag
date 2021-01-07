@@ -1,20 +1,20 @@
 {
-  "name": "nlds-react-components-input",
+  "name": "input",
   "version": "0.1.0",
   "description": "A package containing all the forms components",
   "author": "Municipality of The Hague",
   "license": "MIT",
   "dependencies": {
-    "nlds-react-components-switch": "^0.1.0",
-    "nlds-react-components-textfield": "^0.1.0",
-    "nlds-react-components-checkbox": "^0.1.0",
-    "nlds-react-components-formcontrollabel": "^0.1.0",
-    "nlds-react-components-formgroup": "^0.1.0",
-    "nlds-react-components-button": "^0.1.0",
-    "nlds-react-components-pickers": "^0.1.0",
-    "nlds-react-components-buttongroup": "^0.1.0",
-    "nlds-react-components-select": "^0.1.0",
-    "nlds-react-components-formcontrol": "^0.1.0",
-    "nlds-react-components-baseprops": "^0.1.0"
+    "switch": "^0.1.0",
+    "textfield": "^0.1.0",
+    "checkbox": "^0.1.0",
+    "formcontrollabel": "^0.1.0",
+    "formgroup": "^0.1.0",
+    "button": "^0.1.0",
+    "pickers": "^0.1.0",
+    "buttongroup": "^0.1.0",
+    "select": "^0.1.0",
+    "formcontrol": "^0.1.0",
+    "baseprops": "^0.1.0"
   }
 }

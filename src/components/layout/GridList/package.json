@@ -1,13 +1,13 @@
 {
-  "name": "nlds-react-components-gridlist",
+  "name": "gridlist",
   "author": "Municipality of The Hague",
   "description": "A GridList component",
   "license": "MIT",
   "version": "0.1.0",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
-    "nlds-react-components-gridlisttile": "^0.1.0",
-    "nlds-react-components-gridlisttilebar": "^0.1.0",
-    "nlds-react-components-baselayoutprops": "^0.1.0"
+    "gridlisttile": "^0.1.0",
+    "gridlisttilebar": "^0.1.0",
+    "baselayoutprops": "^0.1.0"
   }
 }

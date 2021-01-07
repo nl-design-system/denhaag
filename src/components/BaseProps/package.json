@@ -1,5 +1,5 @@
 {
-  "name": "nlds-react-components-baseprops",
+  "name": "baseprops",
   "version": "0.1.0",
   "peerDependencies": {
     "react": "^16.13.0"

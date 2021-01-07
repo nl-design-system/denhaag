@@ -1,5 +1,5 @@
 {
-  "name": "nlds-react-components-pickers",
+  "name": "pickers",
   "version": "0.1.0",
   "description": "A collection of Pickers",
   "author": "Municipality of The Hague",
@@ -7,6 +7,6 @@
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/pickers": "^3.2.0",
-    "nlds-react-components-pickers-utilsprovider": "^0.1.0"
+    "pickers-utilsprovider": "^0.1.0"
   }
 }

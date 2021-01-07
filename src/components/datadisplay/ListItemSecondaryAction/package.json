@@ -1,10 +1,10 @@
 {
-  "name": "nlds-react-components-listitemsecondaryaction",
+  "name": "listitemsecondaryaction",
   "description": "A ListItemSecondaryAction component",
   "author": "Municipality of The Hague",
   "version": "0.1.0",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
-    "nlds-react-components-baseprops": "^0.1.0"
+    "baseprops": "^0.1.0"
   }
 }

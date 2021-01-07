@@ -1,11 +1,11 @@
 {
-  "name": "nlds-react-components-cardcontent",
+  "name": "cardcontent",
   "version": "0.1.0",
   "description": "A Card Content component",
   "author": "Municipality of The Hague",
   "license": "MIT",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
-    "nlds-react-components-baseprops": "^0.1.0"
+    "baseprops": "^0.1.0"
   }
 }

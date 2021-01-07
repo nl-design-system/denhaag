@@ -1,11 +1,11 @@
 {
-  "name": "nlds-react-components-stepconnector",
+  "name": "stepconnector",
   "description": "A StepConnector component",
   "author": "Municipality of The Hague",
   "license": "MIT",
   "version": "0.1.0",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
-    "nlds-react-components-baseprops": "^0.1.0"
+    "baseprops": "^0.1.0"
   }
 }

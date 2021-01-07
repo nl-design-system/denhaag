@@ -1,11 +1,11 @@
 {
-  "name": "nlds-react-components-box",
+  "name": "box",
   "version": "0.1.0",
   "description": "A Box component",
   "author": "Municipality of The Hague",
   "license": "MIT",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
-    "nlds-react-components-baselayoutprops": "^0.1.0"
+    "baselayoutprops": "^0.1.0"
   }
 }

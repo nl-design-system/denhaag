@@ -1,10 +1,10 @@
 {
-  "name": "nlds-react-components-radiogroup",
+  "name": "radiogroup",
   "version": "0.1.0",
   "description": "A RadioGroup component",
   "author": "Municipality of The Hague",
   "dependencies": {
     "@material-ui/core": "^4.11.2",
-    "nlds-react-components-baseprops": "^0.1.0"
+    "baseprops": "^0.1.0"
   }
 }

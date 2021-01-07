@@ -1,8 +1,8 @@
 {
-  "name": "nlds-react-components-basedatadisplayprops",
+  "name": "basedatadisplayprops",
   "version": "0.1.0",
   "dependencies": {
-    "nlds-react-components-baseprops": "^0.1.0"
+    "baseprops": "^0.1.0"
   },
   "peerDependencies": {
     "react": "^16.13.0"
