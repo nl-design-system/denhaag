@@ -76,6 +76,6 @@ An entry should be structured like this:
 "nlds-react-component-component_name": "^0.1.0"
 ```
 Similarly, if you create a new category we need to add the category package to the list of dependencies in the meta-package which installs all of the nlds react components.
-This file is located here: `src/components/package.json`\
+This file is located here: `src/components/package.json`
 
 An entry should be structured in the same way as above.
