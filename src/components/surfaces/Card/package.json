@@ -6,7 +6,8 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Gemeente-DenHaag/nlds-react-components.git"
+    "url": "https://github.com/Gemeente-DenHaag/nlds-react-components.git",
+    "directory": "src/components/surfaces/Card"
   },
   "bugs": "https://github.com/Gemeente-DenHaag/nlds-react-components/issues",
   "dependencies": {
