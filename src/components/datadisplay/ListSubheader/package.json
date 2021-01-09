@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/listsubheader",
   "description": "A ListSubheader component",
   "author": "Municipality of The Hague",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "license": "MIT",
   "repository": {
     "type": "git",

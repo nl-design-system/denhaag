@@ -3,7 +3,7 @@
   "description": "A MobileStepper component",
   "author": "Municipality of The Hague",
   "license": "MIT",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/Gemeente-DenHaag/nlds-react-components.git"
@@ -12,11 +12,11 @@
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "baseprops": "^0.1.0",
-    "step": "^0.1.0",
     "stepbutton": "^0.1.0",
+    "stepicon": "^0.1.0",
+    "steplabel": "^0.1.0",
     "stepconnector": "^0.1.0",
     "stepcontent": "^0.1.0",
-    "stepicon": "^0.1.0",
-    "steplabel": "^0.1.0"
+    "step": "^0.1.0"
   }
 }
