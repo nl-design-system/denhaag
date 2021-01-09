@@ -11,12 +11,12 @@
   "bugs": "https://github.com/Gemeente-DenHaag/nlds-react-components/issues",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
-    "baseprops": "^0.1.0",
-    "steplabel": "^0.1.0",
-    "stepicon": "^0.1.0",
-    "stepcontent": "^0.1.0",
-    "stepconnector": "^0.1.0",
-    "stepbutton": "^0.1.0",
-    "step": "^0.1.0"
+    "@gemeente-denhaag/baseprops": "^0.1.0",
+    "@gemeente-denhaag/steplabel": "^0.1.0",
+    "@gemeente-denhaag/stepicon": "^0.1.0",
+    "@gemeente-denhaag/stepcontent": "^0.1.0",
+    "@gemeente-denhaag/stepconnector": "^0.1.0",
+    "@gemeente-denhaag/stepbutton": "^0.1.0",
+    "@gemeente-denhaag/step": "^0.1.0"
   }
 }
