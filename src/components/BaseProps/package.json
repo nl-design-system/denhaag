@@ -1,5 +1,5 @@
 {
-  "name": "baseprops",
+  "name": "@gemeente-denhaag/baseprops",
   "description": "A package containing properties used in other components",
   "author": "Municipality of The Hague",
   "license": "MIT",

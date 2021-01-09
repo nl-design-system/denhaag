@@ -1,5 +1,5 @@
 {
-  "name": "tabpanel",
+  "name": "@gemeente-denhaag/tabpanel",
   "description": "A TabPanel component",
   "author": "Municipality of The Hague",
   "license": "MIT",

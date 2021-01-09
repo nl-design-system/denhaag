@@ -1,5 +1,5 @@
 {
-  "name": "accordionactions",
+  "name": "@gemeente-denhaag/accordionactions",
   "version": "0.1.0",
   "author": "Municipality of The Hague",
   "description": "An AccordionActions component.",

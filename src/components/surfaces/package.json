@@ -1,5 +1,5 @@
 {
-  "name": "surfaces",
+  "name": "@gemeente-denhaag/surfaces",
   "version": "0.1.0",
   "author": "Municipality of The Hague",
   "description": "A package containing all the surface components.",

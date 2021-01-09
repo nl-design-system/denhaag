@@ -1,5 +1,5 @@
 {
-  "name": "buttongroup",
+  "name": "@gemeente-denhaag/buttongroup",
   "version": "0.1.0",
   "author": "Municipality of The Hague",
   "description": "A ButtonGroup component",

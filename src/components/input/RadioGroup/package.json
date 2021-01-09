@@ -1,5 +1,5 @@
 {
-  "name": "radiogroup",
+  "name": "@gemeente-denhaag/radiogroup",
   "version": "0.1.0",
   "description": "A RadioGroup component",
   "author": "Municipality of The Hague",

@@ -1,5 +1,5 @@
 {
-  "name": "basedatadisplayprops",
+  "name": "@gemeente-denhaag/basedatadisplayprops",
   "description": "A package containing properties used in DataDisplay",
   "author": "Municipality of The Hague",
   "version": "0.1.0",

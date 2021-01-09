@@ -1,5 +1,5 @@
 {
-  "name": "stepbutton",
+  "name": "@gemeente-denhaag/stepbutton",
   "description": "A StepButton component",
   "author": "Municipality of The Hague",
   "license": "MIT",

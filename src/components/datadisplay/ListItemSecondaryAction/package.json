@@ -1,5 +1,5 @@
 {
-  "name": "listitemsecondaryaction",
+  "name": "@gemeente-denhaag/listitemsecondaryaction",
   "description": "A ListItemSecondaryAction component",
   "author": "Municipality of The Hague",
   "version": "0.1.0",

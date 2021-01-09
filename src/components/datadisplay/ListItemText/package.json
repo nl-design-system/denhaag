@@ -1,5 +1,5 @@
 {
-  "name": "listitemtext",
+  "name": "@gemeente-denhaag/listitemtext",
   "description": "A ListItemText component",
   "author": "Municipality of The Hague",
   "version": "0.1.0",

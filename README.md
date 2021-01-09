@@ -57,7 +57,7 @@ In order to create a new lerna package we need to create a package.json file for
 Start by filling it with the following information:
 ```json
 {
-  "name": "nlds-react-components-component_name",
+  "name": "@gemeente-denhaag/nlds-react-components-component_name",
   "version": "0.1.0",
   "description": "A short description of the component",
   "author": "Municipality of The Hague",
@@ -78,7 +78,7 @@ We will also need to add our component to the meta-package which installs all of
 The file we need is located here: `src/components/[CATEGORY]/package.json`\
 An entry should be structured like this:
 ```json
-"nlds-react-component-component_name": "^0.1.0"
+"@gemeente-denhaag/component_name": "^0.1.0"
 ```
 Similarly, if you create a new category we need to add the category package to the list of dependencies in the meta-package which installs all of the nlds react components.
 This file is located here: `src/components/package.json`

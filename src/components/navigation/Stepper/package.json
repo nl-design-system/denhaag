@@ -1,5 +1,5 @@
 {
-  "name": "stepper",
+  "name": "@gemeente-denhaag/stepper",
   "description": "A Stepper component",
   "author": "Municipality of The Hague",
   "license": "MIT",

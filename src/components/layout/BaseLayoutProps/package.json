@@ -1,5 +1,5 @@
 {
-  "name": "baselayoutprops",
+  "name": "@gemeente-denhaag/baselayoutprops",
   "description": "Properties used in layout components",
   "author": "Municipality of The Hague",
   "version": "0.1.0",

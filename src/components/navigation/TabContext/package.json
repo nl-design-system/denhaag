@@ -1,5 +1,5 @@
 {
-  "name": "tabcontext",
+  "name": "@gemeente-denhaag/tabcontext",
   "description": "A TabContext component",
   "author": "Municipality of The Hague",
   "license": "MIT",

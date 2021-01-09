@@ -1,5 +1,5 @@
 {
-  "name": "gridlisttile",
+  "name": "@gemeente-denhaag/gridlisttile",
   "author": "Municipality of The Hague",
   "description": "A GridListTile component",
   "license": "MIT",

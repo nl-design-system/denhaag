@@ -1,5 +1,5 @@
 {
-  "name": "nlds-react-components",
+  "name": "@gemeente-denhaag/nlds-react-components",
   "version": "0.1.0",
   "description": "A library of React components for the Design System of The Netherlands",
   "author": "Municipality of The Hague",

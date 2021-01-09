@@ -1,5 +1,5 @@
 {
-  "name": "textfield",
+  "name": "@gemeente-denhaag/textfield",
   "version": "0.1.0",
   "description": "A TextField component",
   "author": "Municipality of The Hague",
