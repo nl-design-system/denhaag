@@ -57,7 +57,7 @@ In order to create a new lerna package we need to create a package.json file for
 Start by filling it with the following information:
 ```json
 {
-  "name": "@gemeente-denhaag/nlds-react-components-component_name",
+  "name": "@gemeente-denhaag/component_name",
   "version": "0.1.0",
   "description": "A short description of the component",
   "author": "Municipality of The Hague",
