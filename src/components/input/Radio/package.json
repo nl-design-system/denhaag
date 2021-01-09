@@ -1,8 +1,15 @@
 {
-  "name": "nlds-react-components-radio",
+  "name": "@gemeente-denhaag/radio",
   "version": "0.1.0",
   "description": "A Radio component",
   "author": "Municipality of The Hague",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gemeente-DenHaag/nlds-react-components.git",
+    "directory": "src/components/input/Radio"
+  },
+  "bugs": "https://github.com/Gemeente-DenHaag/nlds-react-components/issues",
   "dependencies": {
     "@material-ui/core": "^4.11.2"
   }
