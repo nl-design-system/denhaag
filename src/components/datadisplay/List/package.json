@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/list",
   "description": "A List component",
   "author": "Municipality of The Hague",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -11,12 +11,12 @@
   "bugs": "https://github.com/Gemeente-DenHaag/nlds-react-components/issues",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
+    "baseprops": "^0.1.0",
     "listitem": "^0.1.0",
     "listitemavatar": "^0.1.0",
-    "listitemsecondaryaction": "^0.1.0",
     "listitemicon": "^0.1.0",
+    "listitemsecondaryaction": "^0.1.0",
     "listitemtext": "^0.1.0",
-    "listsubheader": "^0.1.0",
-    "baseprops": "^0.1.0"
+    "listsubheader": "^0.1.0"
   }
 }

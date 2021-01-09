@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/nlds-react-components",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A library of React components for the Design System of The Netherlands",
   "author": "Municipality of The Hague",
   "license": "MIT",
@@ -10,12 +10,12 @@
   },
   "bugs": "https://github.com/Gemeente-DenHaag/nlds-react-components/issues",
   "dependencies": {
+    "baseprops": "^0.1.0",
+    "datadisplay": "^0.1.0",
     "input": "^0.1.0",
     "layout": "^0.1.0",
     "navigation": "^0.1.0",
-    "surfaces": "^0.1.0",
-    "datadisplay": "^0.1.0",
     "pickers": "^0.1.0",
-    "baseprops": "^0.1.0"
+    "surfaces": "^0.1.0"
   }
 }

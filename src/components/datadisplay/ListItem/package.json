@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/listitem",
   "description": "A ListItem component",
   "author": "Municipality of The Hague",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "repository": {
     "type": "git",

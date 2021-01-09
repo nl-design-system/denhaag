@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/appbar",
   "author": "Municipality of The Hague",
   "description": "An AppBar component",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "repository": {
     "type": "git",
