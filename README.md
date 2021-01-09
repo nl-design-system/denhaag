@@ -64,7 +64,8 @@ Start by filling it with the following information:
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Gemeente-DenHaag/nlds-react-components.git"
+    "url": "https://github.com/Gemeente-DenHaag/nlds-react-components.git",
+    "directory": "{path/to/component}"
   },
   "bugs": "https://github.com/Gemeente-DenHaag/nlds-react-components/issues",
   "dependencies": {
