@@ -22,9 +22,9 @@ jobs:
 
     - name: npm install, build, and test
       run: |
-        npm install
-        npm run build --if-present
-        npm run test --if-present
+        npm install -g yarn
+        yarn install
+        yarn build-storybook
 
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v2
@@ -32,4 +32,4 @@ jobs:
         app-name: 'nldsreactstorybook-test'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_dd20270b12f945cc8377a7eb1e90cb18 }}
-        package: .
+        package: storybook-static
