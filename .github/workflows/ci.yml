@@ -1,0 +1,25 @@
+name: CI for Pull requests
+
+on:
+  pull_request:
+    branches:
+      - development
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+
+    - name: Set up Node.js version
+      uses: actions/setup-node@v1
+      with:
+        node-version: '14.x'
+
+    - name: yarn install, build storybook
+      run: |
+        npm install -g yarn
+        yarn install
+        yarn build-storybook
