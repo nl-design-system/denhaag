@@ -31,5 +31,5 @@ jobs:
       with:
         app-name: 'nldsreactstorybook-staging'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_aa9894312bac4ea492b85217a5da5b62 }}
+        publish-profile: ${{ secrets.AzureAppService_Nlds_Staging }}
         package: storybook-static
