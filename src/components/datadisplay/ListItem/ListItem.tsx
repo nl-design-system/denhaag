@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialListItem from '@material-ui/core/ListItem'
-import BaseProps from '@gemeente-denhaag/baseprops/BaseProps'
+import BaseProps from '@gemeente-denhaag/baseprops'
 import { ContainerProps } from '@gemeente-denhaag/container/Container'
 
 export interface ListItemProps extends BaseProps {

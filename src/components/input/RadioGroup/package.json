@@ -1,9 +1,11 @@
 {
   "name": "@gemeente-denhaag/radiogroup",
-  "version": "0.1.3",
   "description": "A RadioGroup component",
   "author": "Municipality of The Hague",
   "license": "MIT",
+  "main": "RadioGroup.tsx",
+  "module": "RadioGroup.tsx",
+  "version": "0.1.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/Gemeente-DenHaag/nlds-react-components.git",

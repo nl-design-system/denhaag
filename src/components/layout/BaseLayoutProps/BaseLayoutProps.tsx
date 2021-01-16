@@ -2,7 +2,7 @@ import React from 'react'
 import BaseProps, {
   BaseChildrenProps,
   BaseClassesProps
-} from '@gemeente-denhaag/baseprops/BaseProps'
+} from '@gemeente-denhaag/baseprops'
 
 export default interface BaseLayoutProps extends BaseProps {
   /**

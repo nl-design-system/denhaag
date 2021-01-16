@@ -3,6 +3,8 @@
   "description": "A Popper component",
   "author": "Municipality of The Hague",
   "license": "MIT",
+  "main": "Popper.tsx",
+  "module": "Popper.tsx",
   "version": "0.1.3",
   "repository": {
     "type": "git",

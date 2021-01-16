@@ -3,6 +3,8 @@
   "author": "Municipality of The Hague",
   "description": "A GridListTile component",
   "license": "MIT",
+  "main": "GridListTile.tsx",
+  "module": "GridListTile.tsx",
   "version": "0.1.3",
   "repository": {
     "type": "git",

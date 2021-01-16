@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialMenu from '@material-ui/core/Menu'
-import BaseProps from '@gemeente-denhaag/baseprops/BaseProps'
+import BaseProps from '@gemeente-denhaag/baseprops'
 
 export interface MenuProps extends BaseProps {
   /**

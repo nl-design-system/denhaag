@@ -3,6 +3,8 @@
   "description": "A MenuItem component",
   "author": "Municipality of The Hague",
   "license": "MIT",
+  "main": "MenuItem.tsx",
+  "module": "MenuItem.tsx",
   "version": "0.1.3",
   "repository": {
     "type": "git",

@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialGrid from '@material-ui/core/Grid'
-import BaseLayoutProps from '@gemeente-denhaag/baselayoutprops/BaseLayoutProps'
+import BaseLayoutProps from '@gemeente-denhaag/baselayoutprops'
 
 export interface GridProps extends BaseLayoutProps {
   /**

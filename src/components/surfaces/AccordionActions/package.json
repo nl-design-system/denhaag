@@ -1,9 +1,11 @@
 {
   "name": "@gemeente-denhaag/accordionactions",
-  "version": "0.1.3",
   "author": "Municipality of The Hague",
   "description": "An AccordionActions component.",
   "license": "MIT",
+  "main": "AccordionActions.tsx",
+  "module": "AccordionActions.tsx",
+  "version": "0.1.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/Gemeente-DenHaag/nlds-react-components.git",

@@ -1,5 +1,5 @@
 import React from 'react'
-import BaseProps from '@gemeente-denhaag/baseprops/BaseProps'
+import BaseProps from '@gemeente-denhaag/baseprops'
 
 export interface BasePaperProps extends BaseProps {
   /**

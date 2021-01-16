@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialDrawer from '@material-ui/core/Drawer'
-import BaseProps from '@gemeente-denhaag/baseprops/BaseProps'
+import BaseProps from '@gemeente-denhaag/baseprops'
 
 export interface DrawerProps extends BaseProps {
   /**

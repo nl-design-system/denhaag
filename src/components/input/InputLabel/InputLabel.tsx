@@ -1,7 +1,7 @@
 import MaterialInputLabel from '@material-ui/core/InputLabel'
 import React from 'react'
 import { FormLabelProps } from '@material-ui/core'
-import BaseProps from '@gemeente-denhaag/baseprops/BaseProps'
+import BaseProps from '@gemeente-denhaag/baseprops'
 
 export interface InputLabelProps extends BaseProps {
   /**

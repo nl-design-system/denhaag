@@ -3,6 +3,8 @@
   "description": "A List component",
   "author": "Municipality of The Hague",
   "version": "0.1.3",
+  "main": "List.tsx",
+  "module": "List.tsx",
   "license": "MIT",
   "repository": {
     "type": "git",

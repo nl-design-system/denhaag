@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialTabContext from '@material-ui/lab/TabContext'
-import { BaseChildrenProps } from '@gemeente-denhaag/baseprops/BaseProps'
+import { BaseChildrenProps } from '@gemeente-denhaag/baseprops'
 
 export interface TabContextProps extends BaseChildrenProps {
   /**

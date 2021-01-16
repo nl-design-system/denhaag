@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialBox from '@material-ui/core/Box'
-import { BaseLayoutChildrenProps } from '@gemeente-denhaag/baselayoutprops/BaseLayoutProps'
+import { BaseLayoutChildrenProps } from '@gemeente-denhaag/baselayoutprops'
 
 export interface BoxProps extends BaseLayoutChildrenProps {}
 
