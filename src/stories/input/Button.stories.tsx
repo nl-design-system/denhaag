@@ -4,6 +4,7 @@ import { Story, Meta } from '@storybook/react/types-6-0'
 import { Button } from '../..'
 import { ButtonProps } from '../../components/input/Button/Button'
 import pkg from '../../components/input/Button/package.json'
+import { bonkTheme } from "../../themes/BonkTheme";
 
 export default {
   title: 'Components/Input/Button',
@@ -88,5 +89,10 @@ Large.args = {
  */
 export const Disabled: Story<ButtonProps> = Template.bind({})
 Disabled.args = {
-  disabled: true
+  disabled: true,
+  classes: {
+    paletteBackground: {
+      backgroundColor: bonkTheme.palette.nlds.main
+    }
+  }
 }

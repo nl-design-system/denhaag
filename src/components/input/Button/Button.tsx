@@ -1,6 +1,7 @@
 import MaterialButton from '@material-ui/core/Button'
 import React from 'react'
 import BaseProps from '../../BaseProps/BaseProps'
+import { createMuiTheme, Theme, ThemeProvider } from "@material-ui/core";
 
 export interface ButtonProps extends BaseProps {
   /**
@@ -33,13 +34,32 @@ export interface ButtonProps extends BaseProps {
    * Button variant
    */
   variant?: 'outlined' | 'contained' | 'text'
+
+  fontFamily?: string
+
+  backgroundColor?: string
 }
+
+const theme = (props: ButtonProps): Theme => (createMuiTheme({
+  overrides: {
+    MuiButton: {
+      root: {
+        fontFamily: props.fontFamily,
+        background: props.backgroundColor
+      }
+    }
+  }
+}))
 
 /**
  * Primary UI component for user interaction
  */
 export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
-  return <MaterialButton {...props}>{props.children}</MaterialButton>
+  return (
+    <ThemeProvider theme={theme(props)}>
+      <MaterialButton color={props.color}>{props.children}</MaterialButton>
+    </ThemeProvider>
+  )
 }
 
 /**
