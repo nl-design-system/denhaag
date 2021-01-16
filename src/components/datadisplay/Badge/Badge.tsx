@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialBadge from '@material-ui/core/Badge'
-import BaseDataDisplayProps from '@gemeente-denhaag/basedatadisplayprops/BaseDataDisplayProps'
+import BaseDataDisplayProps from '@gemeente-denhaag/basedatadisplayprops'
 
 export interface BadgeProps extends BaseDataDisplayProps {
   /**
