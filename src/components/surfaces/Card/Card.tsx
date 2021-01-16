@@ -20,3 +20,7 @@ export const Card: React.FC<CardProps> = (props: CardProps) => {
  * Default export for Card
  */
 export default Card
+export * from '@gemeente-denhaag/cardactions'
+export * from '@gemeente-denhaag/cardcontent'
+export * from '@gemeente-denhaag/cardheader'
+export * from '@gemeente-denhaag/paper'

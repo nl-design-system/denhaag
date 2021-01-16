@@ -40,3 +40,9 @@ export const Stepper: React.FC<StepperProps> = (props: StepperProps) => {
 }
 
 export default Stepper
+export * from '@gemeente-denhaag/step'
+export * from '@gemeente-denhaag/stepbutton'
+export * from '@gemeente-denhaag/stepconnector'
+export * from '@gemeente-denhaag/stepcontent'
+export * from '@gemeente-denhaag/stepicon'
+export * from '@gemeente-denhaag/steplabel'

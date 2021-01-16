@@ -50,3 +50,5 @@ export const Checkbox: React.FC<CheckboxProps> = (props: CheckboxProps) => {
  * Default export for Checkbox
  */
 export default Checkbox
+export * from '@gemeente-denhaag/formcontrollabel'
+export * from '@gemeente-denhaag/formgroup'

@@ -67,3 +67,4 @@ export const ButtonGroup: React.FC<ButtonGroupProps> = (
 }
 
 export default ButtonGroup
+export * from '@gemeente-denhaag/button'

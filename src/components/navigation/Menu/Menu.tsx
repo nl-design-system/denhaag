@@ -100,3 +100,7 @@ export const Menu: React.FC<MenuProps> = (props: MenuProps) => {
 }
 
 export default Menu
+export * from '@gemeente-denhaag/menuitem'
+export * from '@gemeente-denhaag/menulist'
+export * from '@gemeente-denhaag/popover'
+export * from '@gemeente-denhaag/popper'

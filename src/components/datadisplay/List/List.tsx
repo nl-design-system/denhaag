@@ -35,3 +35,9 @@ export const List: React.FC<ListProps> = (props: ListProps) => {
 }
 
 export default List
+export * from '@gemeente-denhaag/listitem'
+export * from '@gemeente-denhaag/listitemavatar'
+export * from '@gemeente-denhaag/listitemicon'
+export * from '@gemeente-denhaag/listitemsecondaryaction'
+export * from '@gemeente-denhaag/listitemtext'
+export * from '@gemeente-denhaag/listsubheader'

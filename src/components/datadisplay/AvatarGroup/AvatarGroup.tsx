@@ -13,3 +13,4 @@ export const AvatarGroup: React.FC<AvatarGroupProps> = (props: AvatarGroupProps)
 }
 
 export default AvatarGroup
+export * from '@gemeente-denhaag/avatar'
