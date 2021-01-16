@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialMenuList from '@material-ui/core/MenuList'
-import { BaseChildrenProps } from '../../BaseProps/BaseProps'
+import { BaseChildrenProps } from '@gemeente-denhaag/baseprops/BaseProps'
 
 export interface MenuListProps extends BaseChildrenProps {
   /**

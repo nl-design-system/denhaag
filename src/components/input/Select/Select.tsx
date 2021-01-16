@@ -3,7 +3,7 @@ import React from 'react'
 import { InputProps } from '@material-ui/core/Input'
 import { SelectInputProps } from '@material-ui/core/Select/SelectInput'
 import { MenuProps } from '@material-ui/core'
-import BaseProps from '../../BaseProps/BaseProps'
+import BaseProps from '@gemeente-denhaag/baseprops/BaseProps'
 
 export interface SelectProps extends BaseProps {
   /**

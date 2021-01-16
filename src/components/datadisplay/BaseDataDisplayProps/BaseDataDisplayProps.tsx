@@ -2,7 +2,7 @@ import React from 'react'
 import BaseProps, {
   BaseChildrenProps,
   BaseClassesProps
-} from '../../BaseProps/BaseProps'
+} from '@gemeente-denhaag/baseprops/BaseProps'
 
 export default interface BaseDataDisplayProps extends BaseProps {
   /**

@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialStepContent from '@material-ui/core/StepContent'
-import BaseProps from '../../BaseProps/BaseProps'
+import BaseProps from '@gemeente-denhaag/baseprops/BaseProps'
 
 export interface StepContentProps extends BaseProps {
   /**
@@ -14,13 +14,13 @@ export interface StepContentProps extends BaseProps {
    * Set to 'auto' to automatically calculate transition time based on height.
    */
   transitionDuration?:
-    | 'auto'
-    | number
-    | {
-        appear?: number
-        enter?: number
-        exit?: number
-      }
+  | 'auto'
+  | number
+  | {
+    appear?: number
+    enter?: number
+    exit?: number
+  }
 
   /**
    * Props applied to the Transition element.

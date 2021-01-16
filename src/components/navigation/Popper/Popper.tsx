@@ -1,6 +1,6 @@
 import React, { RefObject } from 'react'
 import MaterialPopper from '@material-ui/core/Popper'
-import { BaseChildrenProps } from '../../BaseProps/BaseProps'
+import { BaseChildrenProps } from '@gemeente-denhaag/baseprops/BaseProps'
 
 export interface PopperProps extends BaseChildrenProps {
   /**
@@ -37,18 +37,18 @@ export interface PopperProps extends BaseChildrenProps {
    * Popper placement.
    */
   placement?:
-    | 'bottom-end'
-    | 'bottom-start'
-    | 'bottom'
-    | 'left-end'
-    | 'left-start'
-    | 'left'
-    | 'right-end'
-    | 'right-start'
-    | 'right'
-    | 'top-end'
-    | 'top-start'
-    | 'top'
+  | 'bottom-end'
+  | 'bottom-start'
+  | 'bottom'
+  | 'left-end'
+  | 'left-start'
+  | 'left'
+  | 'right-end'
+  | 'right-start'
+  | 'right'
+  | 'top-end'
+  | 'top-start'
+  | 'top'
 
   /**
    * Options provided to the popper.js instance.

@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialCardActions from '@material-ui/core/CardActions'
-import BaseProps from '../../BaseProps/BaseProps'
+import BaseProps from '@gemeente-denhaag/baseprops/BaseProps'
 
 export interface CardActionProps extends BaseProps {
   /**

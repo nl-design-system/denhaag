@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialStepConnector from '@material-ui/core/StepConnector'
-import { BaseClassesProps } from '../../BaseProps/BaseProps'
+import { BaseClassesProps } from '@gemeente-denhaag/baseprops/BaseProps'
 
 export interface StepConnectorProps extends BaseClassesProps {}
 

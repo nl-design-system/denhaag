@@ -1,18 +1,18 @@
 import React from 'react'
 import MaterialGrid from '@material-ui/core/Grid'
-import BaseLayoutProps from '../BaseLayoutProps/BaseLayoutProps'
+import BaseLayoutProps from '@gemeente-denhaag/baselayoutprops/BaseLayoutProps'
 
 export interface GridProps extends BaseLayoutProps {
   /**
    * Defines the align-content style property, irrespective of screen dimensions.
    */
   alignContent?:
-    | 'stretch'
-    | 'center'
-    | 'flex-start'
-    | 'flex-end'
-    | 'space-between'
-    | 'space-around'
+  | 'stretch'
+  | 'center'
+  | 'flex-start'
+  | 'flex-end'
+  | 'space-between'
+  | 'space-around'
 
   /**
    * Defines the align-items style property, irrespective of screen dimensions.
@@ -38,12 +38,12 @@ export interface GridProps extends BaseLayoutProps {
    * Defines the justify-content style property, irrespective of screen dimensions.
    */
   justify?:
-    | 'flex-start'
-    | 'center'
-    | 'flex-end'
-    | 'space-between'
-    | 'space-around'
-    | 'space-evenly'
+  | 'flex-start'
+  | 'center'
+  | 'flex-end'
+  | 'space-between'
+  | 'space-around'
+  | 'space-evenly'
 
   /**
    * Defines the number of grids the component will use for each breakpoint.

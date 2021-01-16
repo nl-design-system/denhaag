@@ -1,6 +1,6 @@
 import MaterialCheckbox from '@material-ui/core/Checkbox'
 import React from 'react'
-import { BaseClassesProps } from '../../BaseProps/BaseProps'
+import { BaseClassesProps } from '@gemeente-denhaag/baseprops/BaseProps'
 
 export interface CheckboxProps extends BaseClassesProps {
   /**

@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialStepper from '@material-ui/core/Stepper'
-import BaseProps from '../../BaseProps/BaseProps'
+import BaseProps from '@gemeente-denhaag/baseprops/BaseProps'
 
 export interface StepperProps extends BaseProps {
   /**

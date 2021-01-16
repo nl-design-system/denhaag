@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialTabScrollButton from '@material-ui/core/TabScrollButton'
-import BaseProps from '../../BaseProps/BaseProps'
+import BaseProps from '@gemeente-denhaag/baseprops/BaseProps'
 
 export interface TabScrollButtonProps extends BaseProps {
   /**

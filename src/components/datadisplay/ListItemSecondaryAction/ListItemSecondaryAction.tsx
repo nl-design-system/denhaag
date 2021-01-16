@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction'
-import { BaseChildrenProps } from '../../BaseProps/BaseProps'
+import { BaseChildrenProps } from '@gemeente-denhaag/baseprops/BaseProps'
 
 export interface ListItemSecondaryActionProps extends BaseChildrenProps {}
 

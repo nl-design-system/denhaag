@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialTypography from '@material-ui/core/Typography'
-import BaseDataDisplayProps from '../BaseDataDisplayProps/BaseDataDisplayProps'
+import BaseDataDisplayProps from '@gemeente-denhaag/basedatadisplayprops/BaseDataDisplayProps'
 
 export interface TypographyProps extends BaseDataDisplayProps {
   /**
@@ -13,13 +13,13 @@ export interface TypographyProps extends BaseDataDisplayProps {
    * It supports those theme colors that make sense for this component.
    */
   color?:
-    | 'initial'
-    | 'inherit'
-    | 'primary'
-    | 'secondary'
-    | 'textPrimary'
-    | 'textSecondary'
-    | 'error'
+  | 'initial'
+  | 'inherit'
+  | 'primary'
+  | 'secondary'
+  | 'textPrimary'
+  | 'textSecondary'
+  | 'error'
 
   /**
    * Controls the display type
@@ -46,21 +46,21 @@ export interface TypographyProps extends BaseDataDisplayProps {
    * Applies the theme typography styles.
    */
   variant?:
-    | 'h1'
-    | 'h2'
-    | 'h3'
-    | 'h4'
-    | 'h5'
-    | 'h6'
-    | 'subtitle1'
-    | 'subtitle2'
-    | 'body1'
-    | 'body2'
-    | 'caption'
-    | 'button'
-    | 'overline'
-    | 'srOnly'
-    | 'inherit'
+  | 'h1'
+  | 'h2'
+  | 'h3'
+  | 'h4'
+  | 'h5'
+  | 'h6'
+  | 'subtitle1'
+  | 'subtitle2'
+  | 'body1'
+  | 'body2'
+  | 'caption'
+  | 'button'
+  | 'overline'
+  | 'srOnly'
+  | 'inherit'
 
   /**
    * The component maps the variant prop to a range of different HTML element types.

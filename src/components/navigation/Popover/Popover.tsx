@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialPopover from '@material-ui/core/Popover'
-import BaseProps from '../../BaseProps/BaseProps'
+import BaseProps from '@gemeente-denhaag/baseprops/BaseProps'
 
 export interface PopoverProps extends BaseProps {
   /**
@@ -24,7 +24,7 @@ export interface PopoverProps extends BaseProps {
   /**
    * This is the position that may be used to set the position of the popover.
    */
-  anchorPosition: { left: number; top: number }
+  anchorPosition: { left: number, top: number }
 
   /**
    * This determines which anchor prop to refer to to set the position of the popover.
@@ -103,9 +103,9 @@ export interface PopoverProps extends BaseProps {
    * Set to 'auto' to automatically calculate transition time based on height.
    */
   transitionDuration?:
-    | 'auto'
-    | number
-    | { appear?: number; enter?: number; exit?: number }
+  | 'auto'
+  | number
+  | { appear?: number, enter?: number, exit?: number }
 
   /**
    * Props applied to the Transition element.

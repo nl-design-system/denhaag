@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialContainer from '@material-ui/core/Container'
-import BaseLayoutProps from '../BaseLayoutProps/BaseLayoutProps'
+import BaseLayoutProps from '@gemeente-denhaag/baselayoutprops/BaseLayoutProps'
 
 export interface ContainerProps extends BaseLayoutProps {
   /**

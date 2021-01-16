@@ -1,7 +1,7 @@
 import React from 'react'
 import MaterialCardHeader from '@material-ui/core/CardHeader'
-import BaseProps from '../../BaseProps/BaseProps'
-import { TypographyProps } from '../../datadisplay/Typography/Typography'
+import BaseProps from '@gemeente-denhaag/baseprops/BaseProps'
+import { TypographyProps } from '@gemeente-denhaag/typography/Typography'
 
 export interface CardHeaderProps extends BaseProps {
   /**
