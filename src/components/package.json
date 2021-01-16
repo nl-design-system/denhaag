@@ -1,9 +1,11 @@
 {
   "name": "@gemeente-denhaag/nlds-react-components",
-  "version": "0.1.3",
   "description": "A library of React components for the Design System of The Netherlands",
   "author": "Municipality of The Hague",
   "license": "MIT",
+  "main": "index.tsx",
+  "module": "index.tsx",
+  "version": "0.1.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/Gemeente-DenHaag/nlds-react-components.git",
@@ -16,7 +18,6 @@
     "@gemeente-denhaag/input": "^0.1.3",
     "@gemeente-denhaag/layout": "^0.1.3",
     "@gemeente-denhaag/navigation": "^0.1.3",
-    "@gemeente-denhaag/pickers": "^0.1.3",
     "@gemeente-denhaag/surfaces": "^0.1.3"
   }
 }
