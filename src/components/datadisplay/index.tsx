@@ -1,3 +1,5 @@
+export * from '@gemeente-denhaag/avatar'
+export * from '@gemeente-denhaag/avatargroup'
 export * from '@gemeente-denhaag/badge'
 export * from '@gemeente-denhaag/baseprops'
 export * from '@gemeente-denhaag/divider'

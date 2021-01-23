@@ -20,7 +20,11 @@
     "@gemeente-denhaag/formcontrol": "^0.1.3",
     "@gemeente-denhaag/formcontrollabel": "^0.1.3",
     "@gemeente-denhaag/formgroup": "^0.1.3",
+    "@gemeente-denhaag/iconbutton": "^0.1.3",
+    "@gemeente-denhaag/inputlabel": "^0.1.3",
     "@gemeente-denhaag/pickers": "^0.1.3",
+    "@gemeente-denhaag/radio": "^0.1.3",
+    "@gemeente-denhaag/radiogroup": "^0.1.3",
     "@gemeente-denhaag/select": "^0.1.3",
     "@gemeente-denhaag/switch": "^0.1.3",
     "@gemeente-denhaag/textfield": "^0.1.3"
