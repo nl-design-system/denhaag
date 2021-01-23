@@ -33,7 +33,6 @@
   "exclude": [
     "node_modules",
     "dist",
-    "example",
-    "src/stories"
+    "example"
   ]
 }
