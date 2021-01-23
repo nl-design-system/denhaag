@@ -1,5 +1,6 @@
 :root {
   --mdh-button-background-color: rgb(34, 123, 60);
+  --mdh-button-secondary-background-color: #EDBF07;
   --mdh-button-focus-background-color: #9a6f1e;
   --mdh-button-focus-text-color: white;
   --mdh-button-hover-background-color: #9a6f1e;
