@@ -4,7 +4,7 @@
   --mdh-button-focus-text-color: white;
   --mdh-button-hover-background-color: #9a6f1e;
   --mdh-button-hover-text-color: white;
-  --mdh-button-disabled-background-color: transparent;
+  --mdh-button-disabled-background-color: #666;
   --mdh-button-font-family: "TheMix", sans-serif;
 }
 

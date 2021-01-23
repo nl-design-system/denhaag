@@ -4,7 +4,7 @@ import { Story, Meta } from '@storybook/react/types-6-0'
 import { Button } from '../..'
 import { ButtonProps } from '../../components/input/Button/Button'
 import pkg from '../../components/input/Button/package.json'
-// import { StylesProvider } from '@material-ui/core/styles'
+import { makeStyles } from "@material-ui/core";
 
 export default {
   title: 'Components/Input/Button',
@@ -14,11 +14,30 @@ export default {
   component: Button
 } as Meta
 
-const Template: Story<ButtonProps> = (args: any) => (
-  // <StylesProvider injectFirst={true}>
-    <Button {...args}>Button</Button>
-  // </StylesProvider>
-)
+const useStyles = makeStyles({
+  root: {
+    backgroundColor: 'var(--mdh-button-background-color)',
+    fontFamily: 'var(--mdh-button-font-family)',
+    '&:hover': {
+      backgroundColor: 'var(--mdh-button-hover-background-color)',
+      color: 'var(--mdh-button-hover-text-color)'
+    },
+    '&:focus': {
+      backgroundColor: 'var(--mdh-button-focus-background-color)',
+      color: 'var(--mdh-button-focus-text-color)'
+    },
+    '&$disabled': {
+      backgroundColor: 'var(--mdh-button-disabled-background-color)'
+    }
+  }
+})
+
+const Template: Story<ButtonProps> = (args: any) => {
+  const classes = useStyles()
+
+  args.className = classes.root
+  return <Button {...args}>Button</Button>
+}
 
 /**
  * Default Button

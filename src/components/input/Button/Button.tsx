@@ -35,22 +35,7 @@ export interface ButtonProps extends BaseProps {
    * Button variant
    */
   variant?: 'outlined' | 'contained' | 'text'
-  //
-  // fontFamily?: string
-  //
-  // backgroundColor?: string
 }
-
-// const theme = (props: ButtonProps): Theme => (createMuiTheme({
-//   overrides: {
-//     MuiButton: {
-//       root: {
-//         fontFamily: props.fontFamily,
-//         background: props.backgroundColor
-//       }
-//     }
-//   }
-// }))
 
 /**
  * Primary UI component for user interaction
@@ -59,10 +44,7 @@ export const Button: React.FC<ButtonProps> = (
   props: ButtonProps
 ) => {
   return (
-    // <ThemeProvider theme={theme(props)}>
-      <MaterialButton {...props} className="mdh-button">{props.children}</MaterialButton>
-    // </ThemeProvider>
-    // <button {...props} className="mdh-button mdh-button--disabled">Click me!</button>
+      <MaterialButton {...props}>{props.children}</MaterialButton>
   )
 }
 
