@@ -3,6 +3,8 @@
   "description": "A Stepper component",
   "author": "Municipality of The Hague",
   "license": "MIT",
+  "main": "Stepper.tsx",
+  "module": "Stepper.tsx",
   "version": "0.1.3",
   "repository": {
     "type": "git",

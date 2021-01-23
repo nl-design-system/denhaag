@@ -3,6 +3,8 @@
   "description": "A Tabs component",
   "author": "Municipality of The Hague",
   "license": "MIT",
+  "main": "Tabs.tsx",
+  "module": "Tabs.tsx",
   "version": "0.1.3",
   "repository": {
     "type": "git",

@@ -6,14 +6,14 @@ import { InputAdornmentProps, IconButtonProps } from '@material-ui/core'
 
 export interface KeyboardDatePickerProps extends BaseDatePickerProps {
   /**
-   * 	Keyboard onChange callback
+   * Keyboard onChange callback
    * @param date The Date value of the DatePicker
    * @param value The string value of the DatePicker
    */
   onChange: (date: DateIOType, value?: string | null) => void
 
   /**
-   * 	Props to pass to keyboard input adornment
+   * Props to pass to keyboard input adornment
    */
   inputAdormentProps?: Partial<InputAdornmentProps>
 
@@ -53,9 +53,7 @@ export interface KeyboardDatePickerProps extends BaseDatePickerProps {
   rifmFormatter?: (str: string) => string
 }
 
-export const KeyboardDatePicker: React.FC<KeyboardDatePickerProps> = (
-  props: KeyboardDatePickerProps
-) => {
+export const KeyboardDatePicker: React.FC<KeyboardDatePickerProps> = (props: KeyboardDatePickerProps) => {
   return <MaterialDatePicker {...props} />
 }
 

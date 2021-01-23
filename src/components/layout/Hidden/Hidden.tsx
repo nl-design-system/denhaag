@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialHidden from '@material-ui/core/Hidden'
-import BaseProps from '../../BaseProps/BaseProps'
+import BaseProps from '@gemeente-denhaag/baseprops'
 
 export interface HiddenProps extends BaseProps {
   /**
@@ -18,12 +18,12 @@ export interface HiddenProps extends BaseProps {
    * Hide the given breakpoint(s).
    */
   only:
-    | 'xs'
-    | 'sm'
-    | 'md'
-    | 'lg'
-    | 'xl'
-    | Array<'xs' | 'sm' | 'md' | 'lg' | 'xl'>
+  | 'xs'
+  | 'sm'
+  | 'md'
+  | 'lg'
+  | 'xl'
+  | Array<'xs' | 'sm' | 'md' | 'lg' | 'xl'>
 
   /**
    * If true, screens of that size and smaller will be hidden.

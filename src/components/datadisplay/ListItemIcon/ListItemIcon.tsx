@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialListItemIcon from '@material-ui/core/ListItemIcon'
-import BaseProps from '../../BaseProps/BaseProps'
+import BaseProps from '@gemeente-denhaag/baseprops'
 
 export interface ListItemIconProps extends BaseProps {}
 

@@ -3,6 +3,8 @@
   "description": "A StepConnector component",
   "author": "Municipality of The Hague",
   "license": "MIT",
+  "main": "StepConnector.tsx",
+  "module": "StepConnector.tsx",
   "version": "0.1.3",
   "repository": {
     "type": "git",

@@ -3,6 +3,8 @@
   "description": "A ListItemSecondaryAction component",
   "author": "Municipality of The Hague",
   "version": "0.1.3",
+  "main": "ListItemSecondaryAction.tsx",
+  "module": "ListItemSecondaryAction.tsx",
   "license": "MIT",
   "repository": {
     "type": "git",

@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialSwipeableDrawer from '@material-ui/core/SwipeableDrawer'
-import { BaseChildrenProps } from '../../BaseProps/BaseProps'
+import { BaseChildrenProps } from '@gemeente-denhaag/baseprops'
 
 export interface SwipeableDrawerProps extends BaseChildrenProps {
   /**
@@ -60,7 +60,7 @@ export interface SwipeableDrawerProps extends BaseChildrenProps {
   /**
    * The duration for the transition, in milliseconds.
    */
-  transitionDuration?: number | { enter?: number; exit?: number }
+  transitionDuration?: number | { enter?: number, exit?: number }
 }
 
 /**
