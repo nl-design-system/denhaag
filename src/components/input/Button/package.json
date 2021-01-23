@@ -4,6 +4,9 @@
   "description": "A Button component",
   "author": "Municipality of The Hague",
   "license": "MIT",
+  "files": [
+    "button-design-tokens.module.css"
+  ],
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "nlds-react-components-baseprops": "^0.1.0"

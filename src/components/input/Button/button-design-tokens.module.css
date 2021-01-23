@@ -1,0 +1,28 @@
+:root {
+  --mdh-button-background-color: rgb(34, 123, 60);
+  --mdh-button-focus-background-color: #9a6f1e;
+  --mdh-button-focus-text-color: white;
+  --mdh-button-hover-background-color: #9a6f1e;
+  --mdh-button-hover-text-color: white;
+  --mdh-button-disabled-background-color: transparent;
+  --mdh-button-font-family: "TheMix", sans-serif;
+}
+
+.mdh-button {
+  background-color: var(--mdh-button-background-color);
+  font-family: var(--mdh-button-font-family);
+}
+
+.mdh-button--focus, .mdh-button:focus {
+  background-color: var(--mdh-button-focus-background-color);
+  color: var(--mdh-button-focus-text-color);
+}
+
+.mdh-button--hover, .mdh-button:hover {
+  background-color: var(--mdh-button-hover-background-color);
+  color: var(--mdh-button-hover-text-color);
+}
+
+.mdh-button--disabled {
+  background-color: var(--mdh-button-disabled-background-color);
+}

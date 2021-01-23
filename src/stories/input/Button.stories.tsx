@@ -4,7 +4,7 @@ import { Story, Meta } from '@storybook/react/types-6-0'
 import { Button } from '../..'
 import { ButtonProps } from '../../components/input/Button/Button'
 import pkg from '../../components/input/Button/package.json'
-import { bonkTheme } from "../../themes/BonkTheme";
+// import { StylesProvider } from '@material-ui/core/styles'
 
 export default {
   title: 'Components/Input/Button',
@@ -15,7 +15,9 @@ export default {
 } as Meta
 
 const Template: Story<ButtonProps> = (args: any) => (
-  <Button {...args}>Button</Button>
+  // <StylesProvider injectFirst={true}>
+    <Button {...args}>Button</Button>
+  // </StylesProvider>
 )
 
 /**
@@ -23,6 +25,7 @@ const Template: Story<ButtonProps> = (args: any) => (
  */
 export const Default = Template.bind({})
 Default.args = {
+  classes: {root: 'mdh-button'},
   variant: 'contained'
 }
 
@@ -90,9 +93,5 @@ Large.args = {
 export const Disabled: Story<ButtonProps> = Template.bind({})
 Disabled.args = {
   disabled: true,
-  classes: {
-    paletteBackground: {
-      backgroundColor: bonkTheme.palette.nlds.main
-    }
-  }
+  className: 'mdh-button mdh-button-disabled'
 }
