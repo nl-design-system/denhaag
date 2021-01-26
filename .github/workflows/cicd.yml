@@ -1,0 +1,51 @@
+on:
+  push:
+    branches:
+      - development
+      - master
+  pull_request:
+    branches:
+      - development
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Node.js version
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14.x'
+
+    - name: yarn install, build storybook
+      run: |
+        npm install -g yarn
+        yarn install
+        yarn build-storybook
+
+  deploy-staging:
+    if: github.ref == 'refs/heads/development'
+    runs-on: ubuntu-latest
+    steps:
+    - name: 'Deploy to Azure Web App'
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: 'nldsreactstorybook-staging'
+        slot-name: 'production'
+        publish-profile: ${{ secrets.AzureAppService_Nlds_Staging }}
+        package: storybook-static
+
+  deploy-production:
+    if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    steps:
+    - name: 'Deploy to Azure Web App'
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: 'nldsreactstorybook'
+        slot-name: 'production'
+        publish-profile: ${{ secrets.AzureAppService_Nlds_Prod }}
+        package: storybook-static
