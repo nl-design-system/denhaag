@@ -28,6 +28,7 @@ jobs:
 
   deploy-staging:
     if: github.ref == 'refs/heads/development'
+    needs: build
     runs-on: ubuntu-latest
     steps:
     - name: 'Deploy to Azure Web App'
@@ -40,6 +41,7 @@ jobs:
 
   deploy-production:
     if: github.ref == 'refs/heads/master'
+    needs: build
     runs-on: ubuntu-latest
     steps:
     - name: 'Deploy to Azure Web App'
