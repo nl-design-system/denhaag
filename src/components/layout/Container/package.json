@@ -3,6 +3,8 @@
   "description": "A Container component",
   "author": "Municipality of The Hague",
   "license": "MIT",
+  "main": "Container.tsx",
+  "module": "Container.tsx",
   "version": "0.1.3",
   "repository": {
     "type": "git",

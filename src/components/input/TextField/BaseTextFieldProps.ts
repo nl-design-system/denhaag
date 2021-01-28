@@ -5,7 +5,7 @@ import {
   SelectProps
 } from '@material-ui/core'
 import React from 'react'
-import { BaseClassesProps } from '../../BaseProps/BaseProps'
+import { BaseClassesProps } from '@gemeente-denhaag/baseprops'
 
 export interface BaseTextFieldProps extends BaseClassesProps {
   /**

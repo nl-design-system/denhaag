@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialList from '@material-ui/core/List'
-import BaseProps from '../../BaseProps/BaseProps'
+import BaseProps from '@gemeente-denhaag/baseprops'
 
 export interface ListProps extends BaseProps {
   /**
@@ -35,3 +35,9 @@ export const List: React.FC<ListProps> = (props: ListProps) => {
 }
 
 export default List
+export * from '@gemeente-denhaag/listitem'
+export * from '@gemeente-denhaag/listitemavatar'
+export * from '@gemeente-denhaag/listitemicon'
+export * from '@gemeente-denhaag/listitemsecondaryaction'
+export * from '@gemeente-denhaag/listitemtext'
+export * from '@gemeente-denhaag/listsubheader'

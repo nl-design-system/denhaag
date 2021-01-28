@@ -1,6 +1,6 @@
 import MaterialButton from '@material-ui/core/Button'
 import React from 'react'
-import BaseProps from '../../BaseProps/BaseProps'
+import BaseProps from '@gemeente-denhaag/baseprops'
 
 export interface ButtonProps extends BaseProps {
   /**

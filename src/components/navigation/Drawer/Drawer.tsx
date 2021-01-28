@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialDrawer from '@material-ui/core/Drawer'
-import BaseProps from '../../BaseProps/BaseProps'
+import BaseProps from '@gemeente-denhaag/baseprops'
 
 export interface DrawerProps extends BaseProps {
   /**
@@ -43,12 +43,12 @@ export interface DrawerProps extends BaseProps {
    * The duration for the transition, in milliseconds.
    */
   transitionDuration?:
-    | number
-    | {
-        appear?: number
-        enter?: number
-        exit?: number
-      }
+  | number
+  | {
+    appear?: number
+    enter?: number
+    exit?: number
+  }
 
   /**
    * The variant to use.

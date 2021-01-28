@@ -1,6 +1,6 @@
 import MaterialRadioGroup from '@material-ui/core/RadioGroup'
 import React from 'react'
-import { BaseChildrenProps } from '../../BaseProps/BaseProps'
+import { BaseChildrenProps } from '@gemeente-denhaag/baseprops'
 
 export interface RadioGroupProps extends BaseChildrenProps {
   /**
@@ -8,7 +8,7 @@ export interface RadioGroupProps extends BaseChildrenProps {
    * controlled. Using this you can set select which of the radio subcomponents
    * should be checked.
    */
-  defaultValue?: Array<string> | number | string
+  defaultValue?: string[] | number | string
 
   /**
    * The name used to reference the value of the control.

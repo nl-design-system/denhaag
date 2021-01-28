@@ -3,6 +3,8 @@
   "description": "A StepContent component",
   "author": "Municipality of The Hague",
   "license": "MIT",
+  "main": "StepContent.tsx",
+  "module": "StepContent.tsx",
   "version": "0.1.3",
   "repository": {
     "type": "git",

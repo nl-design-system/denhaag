@@ -1,6 +1,6 @@
 import MaterialFormGroup from '@material-ui/core/FormGroup'
 import React from 'react'
-import BaseProps from '../../BaseProps/BaseProps'
+import BaseProps from '@gemeente-denhaag/baseprops'
 
 export interface FormGroupProps extends BaseProps {
   /**

@@ -3,6 +3,8 @@
   "description": "A StepLabel component",
   "author": "Municipality of The Hague",
   "license": "MIT",
+  "main": "StepLabel.tsx",
+  "module": "StepLabel.tsx",
   "version": "0.1.3",
   "repository": {
     "type": "git",

@@ -3,6 +3,8 @@
   "description": "A TabContext component",
   "author": "Municipality of The Hague",
   "license": "MIT",
+  "main": "TabContext.tsx",
+  "module": "TabContext.tsx",
   "version": "0.1.3",
   "repository": {
     "type": "git",

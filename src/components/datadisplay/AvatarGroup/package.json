@@ -3,6 +3,8 @@
   "description": "An AvatarGroup component",
   "author": "Municipality of The Hague",
   "version": "0.1.3",
+  "main": "AvatarGroup.tsx",
+  "module": "AvatarGroup.tsx",
   "license": "MIT",
   "repository": {
     "type": "git",

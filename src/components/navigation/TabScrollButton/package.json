@@ -3,6 +3,8 @@
   "description": "A TabScrollButton component",
   "author": "Municipality of The Hague",
   "license": "MIT",
+  "main": "TabScrollButton.tsx",
+  "module": "TabScrollButton.tsx",
   "version": "0.1.3",
   "repository": {
     "type": "git",

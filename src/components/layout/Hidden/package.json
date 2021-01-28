@@ -3,6 +3,8 @@
   "description": "A Hidden component",
   "author": "Municipality of The Hague",
   "license": "MIT",
+  "main": "Hidden.tsx",
+  "module": "Hidden.tsx",
   "version": "0.1.3",
   "repository": {
     "type": "git",

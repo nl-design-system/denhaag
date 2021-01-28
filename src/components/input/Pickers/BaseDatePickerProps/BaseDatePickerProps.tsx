@@ -1,19 +1,10 @@
 import { ParsableDate } from '@material-ui/pickers/constants/prop-types'
 import { MaterialUiPickersDate as DateIOType } from '@material-ui/pickers/typings/date'
-import {
-  IconButtonProps,
-  PopoverProps,
-  TextFieldProps
-} from '@material-ui/core'
+import { IconButtonProps, PopoverProps, TextFieldProps } from '@material-ui/core'
 
 import { DialogProps } from '@material-ui/core/Dialog/Dialog'
 
-import {
-  ReactElement,
-  ReactNode,
-  ComponentClass,
-  FunctionComponent
-} from 'react'
+import { ReactElement, ReactNode, ComponentClass, FunctionComponent } from 'react'
 import { ToolbarComponentProps } from '@material-ui/pickers/Picker/Picker'
 
 export interface BaseDatePickerProps {
@@ -109,7 +100,7 @@ export interface BaseDatePickerProps {
   invalidDateMessage?: ReactNode
 
   /**
-   * 	Message displaying in text field if date is invalid (doesn't work in keyboard mode)
+   * Message displaying in text field if date is invalid (doesn't work in keyboard mode)
    */
   invalidLabel?: string
 
@@ -224,7 +215,7 @@ export interface BaseDatePickerProps {
   ) => ReactElement
 
   /**
-   * 	Props to pass to right arrow button
+   * Props to pass to right arrow button
    */
   rightArrowButtonProps?: Partial<IconButtonProps>
 
@@ -251,9 +242,7 @@ export interface BaseDatePickerProps {
   /**
    * Override input component
    */
-  TextFieldComponent?:
-    | ComponentClass<TextFieldProps, any>
-    | FunctionComponent<TextFieldProps>
+  TextFieldComponent?: ComponentClass<TextFieldProps, any> | FunctionComponent<TextFieldProps>
 
   /**
    * "TODAY" label message
@@ -263,9 +252,7 @@ export interface BaseDatePickerProps {
   /**
    * Component that will replace default toolbar renderer
    */
-  ToolbarComponent?:
-    | ComponentClass<ToolbarComponentProps, any>
-    | FunctionComponent<ToolbarComponentProps>
+  ToolbarComponent?: ComponentClass<ToolbarComponentProps, any> | FunctionComponent<ToolbarComponentProps>
 
   /**
    * Picker container option
