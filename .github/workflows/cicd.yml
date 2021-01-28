@@ -3,7 +3,6 @@ name: Build and deploy Storybook to Azure Web App
 on:
   push:
     branches:
-      - 'feature/**'
       - development
       - master
   pull_request:
