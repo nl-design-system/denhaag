@@ -51,3 +51,4 @@ jobs:
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_Nlds_Prod }}
         package: storybook-static
+        
