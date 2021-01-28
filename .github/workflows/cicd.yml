@@ -1,3 +1,5 @@
+name: Build and deploy Storybook to Azure Web App
+
 on:
   push:
     branches:
@@ -51,4 +53,3 @@ jobs:
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_Nlds_Prod }}
         package: storybook-static
-        
