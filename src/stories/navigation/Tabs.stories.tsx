@@ -19,7 +19,6 @@ const Template: Story<TabsProps> = (args: any) => {
 
   const [value, setValue] = React.useState(1)
 
-
   args.onChange = (event: React.ChangeEvent<unknown>, newValue: number) => {
     setValue(newValue)
   }
