@@ -5,7 +5,7 @@ import React from 'react'
 
 export type FormControlProps<
   D extends React.ElementType = FormControlTypeMap['defaultComponent'],
-  P = {}
+  P = unknown
 > = OverrideProps<FormControlTypeMap<P, D>, D>
 
 /**

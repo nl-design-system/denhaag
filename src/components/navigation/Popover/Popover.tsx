@@ -89,7 +89,7 @@ export interface PopoverProps extends BaseProps {
   /**
    * Props applied to the Paper element.
    */
-  PaperProps?: object
+  PaperProps?: Record<string, unknown>
 
   /**
    * This is the point on the popover which will attach to the anchor's origin.
@@ -110,7 +110,7 @@ export interface PopoverProps extends BaseProps {
   /**
    * Props applied to the Transition element.
    */
-  TransitionProps?: object
+  TransitionProps?: Record<string, unknown>
 }
 
 /**

@@ -12,7 +12,7 @@ export default interface BaseProps {
   /**
    * Override or extend the styles applied to the component.
    */
-  classes?: object
+  classes?: Record<string, unknown>
 }
 
 /**
@@ -32,5 +32,5 @@ export interface BaseClassesProps {
   /**
    * Override or extend the styles applied to the component.
    */
-  classes?: object
+  classes?: Record<string, unknown>
 }

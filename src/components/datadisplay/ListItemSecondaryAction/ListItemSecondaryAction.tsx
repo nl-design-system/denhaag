@@ -2,7 +2,7 @@ import React from 'react'
 import MaterialListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction'
 import { BaseChildrenProps } from '../../BaseProps/BaseProps'
 
-export interface ListItemSecondaryActionProps extends BaseChildrenProps {}
+export type ListItemSecondaryActionProps = BaseChildrenProps
 
 /**
  * Primary UI component for user interaction

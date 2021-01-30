@@ -21,12 +21,12 @@ export interface MenuItemProps extends BaseProps {
   /**
    * classes prop applied to the ListItem element.
    */
-  ListItemClasses?: object
+  ListItemClasses?: Record<string, unknown>
 
   /**
    * Callback fired when the item is clicked.
    */
-  onClick?: () => void
+  onClick?: (event: React.ChangeEvent<unknown>) => void
 }
 
 /**

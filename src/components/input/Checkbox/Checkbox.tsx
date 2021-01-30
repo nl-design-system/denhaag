@@ -20,7 +20,7 @@ export interface CheckboxProps extends BaseClassesProps {
   /**
    * Attributes applied to the `input` element.
    */
-  inputProps?: object
+  inputProps?: Record<string, unknown>
   /**
    * Color for the component.
    */
@@ -36,7 +36,7 @@ export interface CheckboxProps extends BaseClassesProps {
   /**
    * Callback fired when the state is changed.
    */
-  onChange?: () => void
+  onChange?: (event: React.ChangeEvent<unknown>) => void
 }
 
 /**

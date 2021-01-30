@@ -38,7 +38,7 @@ export interface TabsProps extends BaseProps {
    * @param event The event source of the callback
    * @param value Defaults to the index of the child (number)
    */
-  onChange?: (event: React.ChangeEvent<{}>, value: number) => void
+  onChange?: (event: React.ChangeEvent<unknown>, value: number) => void
 
   /**
    * The tabs orientation (layout flow direction).
@@ -66,12 +66,12 @@ export interface TabsProps extends BaseProps {
   /**
    * Props applied to the tab indicator element.
    */
-  TabIndicatorProps?: object
+  TabIndicatorProps?: Record<string, unknown>
 
   /**
    * Props applied to the TabScrollButton element.
    */
-  TabScrollButtonProps?: object
+  TabScrollButtonProps?: Record<string, unknown>
 
   /**
    * Determines the color of the Tab.

@@ -101,7 +101,7 @@ export interface SelectProps extends BaseProps {
    *
    * @param {object} event The event source of the callback.
    */
-  onClose?: (event: React.ChangeEvent<{}>) => void
+  onClose?: (event: React.ChangeEvent<unknown>) => void
 
   /**
    * Callback fired when the component requests to be opened.
@@ -109,7 +109,7 @@ export interface SelectProps extends BaseProps {
    *
    * @param {object} event The event source of the callback.
    */
-  onOpen?: (event: React.ChangeEvent<{}>) => void
+  onOpen?: (event: React.ChangeEvent<unknown>) => void
 
   /**
    * Control `select` open state.

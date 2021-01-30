@@ -15,8 +15,8 @@ export default {
 const Template: Story<DrawerProps> = (args: any) => (
   <Drawer {...args}>
     <Button>I am a Button in a Drawer component!</Button>
-    <Button>Set the "open" property to false to close me.</Button>
-    <Button>Set the "open" property to true to open me.</Button>
+    <Button>Set the &quot;open&quot; property to false to close me.</Button>
+    <Button>Set the &quot;open&quot; property to true to open me.</Button>
   </Drawer>
 )
 

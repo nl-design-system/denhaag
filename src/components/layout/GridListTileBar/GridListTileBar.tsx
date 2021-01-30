@@ -15,7 +15,7 @@ export interface GridListTileBarProps {
   /**
    * Overrides or extends the styles applied to the component.
    */
-  classes?: object
+  classes?: Record<string, unknown>
 
   /**
    * String or element serving as subtitle.

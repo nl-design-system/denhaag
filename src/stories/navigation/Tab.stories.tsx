@@ -22,8 +22,8 @@ const Template: Story<TabProps> = (args: any) => {
       <Tabs
         value={value}
         onChange={
-          // @ts-ignore
-          (event: React.ChangeEvent<{}>, newValue: number) => {
+
+          (event: React.ChangeEvent<unknown>, newValue: number) => {
             setValue(newValue)
           }
         }

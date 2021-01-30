@@ -16,7 +16,7 @@ export interface MobileStepperProps extends BaseChildrenProps {
   /**
    * Props applied to the LinearProgress element.
    */
-  LinearProgressProps?: object
+  LinearProgressProps?: Record<string, unknown>
 
   /**
    * A next button element. For instance, it can be a Button or an IconButton.

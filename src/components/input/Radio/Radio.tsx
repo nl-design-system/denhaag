@@ -8,13 +8,13 @@ export interface RadioProps {
   id?: string
 
   /**
-   * **Signature**: `function(event: object) => void`
+   * **Signature**: `function(event: React.ChangeEvent<unknown>) => void`
    * The event source of the callback. You can pull out the new
    * value by accessing `event.target.value` (string). You can
    * pull out the new checked state by accessing
    * `event.target.checked` (boolean).
    */
-  onChange?: (event: object) => void
+  onChange?: (event: React.ChangeEvent<unknown>) => void
 
   /**
    * Name attribute of the radio button.
