@@ -1,23 +1,23 @@
-import React from "react";
-import MaterialCardHeader from "@material-ui/core/CardHeader";
-import BaseProps from "../../BaseProps/BaseProps";
-import { TypographyProps } from "../../datadisplay/Typography/Typography";
+import React from 'react'
+import MaterialCardHeader from '@material-ui/core/CardHeader'
+import BaseProps from '../../BaseProps/BaseProps'
+import { TypographyProps } from '../../datadisplay/Typography/Typography'
 
 export interface CardHeaderProps extends BaseProps {
   /**
    * The action to display in the card header.
    */
-  action?: React.ReactNode;
+  action?: React.ReactNode
 
   /**
    * The Avatar for the Card Header.
    */
-  avatar?: React.ReactNode;
+  avatar?: React.ReactNode
 
   /**
    * The component to use as the root component. Either a string to use a DOM element or a component
    */
-  component?: React.ElementType;
+  component?: React.ElementType
 
   /**
    * If `true`, `subheader` and `title` won't be wrapped by a Typography component.
@@ -25,39 +25,39 @@ export interface CardHeaderProps extends BaseProps {
    * the `title` text, and optional `subheader` text
    * with the Typography component.
    */
-  disableTypography?: boolean;
+  disableTypography?: boolean
 
   /**
    * The content of the component.
    */
-  subheader?: React.ReactNode;
+  subheader?: React.ReactNode
 
   /**
    * These props will be forwarded to the subheader
    * (as long as disableTypography is not `true`).
    */
-  subheaderTypographyProps?: TypographyProps;
+  subheaderTypographyProps?: TypographyProps
 
   /**
    * The content of the Card Title.
    */
-  title?: React.ReactNode;
+  title?: React.ReactNode
 
   /**
    * These props will be forwarded to the title
    * (as long as disableTypography is not `true`).
    */
-  titleTypographyProps?: TypographyProps;
+  titleTypographyProps?: TypographyProps
 }
 
 /**
  * Primary UI component for user interaction
  */
 export const CardHeader: React.FC<CardHeaderProps> = (props: CardHeaderProps) => {
-  return <MaterialCardHeader {...props}>{props.children}</MaterialCardHeader>;
-};
+  return <MaterialCardHeader {...props}>{props.children}</MaterialCardHeader>
+}
 
 /**
  * Default export for CardHeader
  */
-export default CardHeader;
+export default CardHeader

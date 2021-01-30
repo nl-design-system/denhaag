@@ -1,22 +1,22 @@
-import React from "react";
-import MaterialCardActions from "@material-ui/core/CardActions";
-import BaseProps from "../../BaseProps/BaseProps";
+import React from 'react'
+import MaterialCardActions from '@material-ui/core/CardActions'
+import BaseProps from '../../BaseProps/BaseProps'
 
 export interface CardActionProps extends BaseProps {
   /**
    * If `true`, the actions do not have additional margin.
    */
-  disableSpacing?: boolean;
+  disableSpacing?: boolean
 }
 
 /**
  * Primary UI component for user interaction
  */
 export const CardActions: React.FC<CardActionProps> = (props: CardActionProps) => {
-  return <MaterialCardActions {...props}>{props.children}</MaterialCardActions>;
-};
+  return <MaterialCardActions {...props}>{props.children}</MaterialCardActions>
+}
 
 /**
  * Default export for CardActions
  */
-export default CardActions;
+export default CardActions

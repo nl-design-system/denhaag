@@ -1,35 +1,37 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import pkg from "../../components/datadisplay/List/package.json";
-import List, { ListProps } from "../../components/datadisplay/List/List";
-import ListItem from "../../components/datadisplay/ListItem/ListItem";
-import ListItemAvatar from "../../components/datadisplay/ListItemAvatar/ListItemAvatar";
-import ListItemIcon from "../../components/datadisplay/ListItemIcon/ListItemIcon";
-import ListItemSecondaryAction from "../../components/datadisplay/ListItemSecondaryAction/ListItemSecondaryAction";
-import ListItemText from "../../components/datadisplay/ListItemText/ListItemText";
-import ListSubheader from "../../components/datadisplay/ListSubheader/ListSubheader";
-import Checkbox from "../../components/input/Checkbox/Checkbox";
-import { IconButton, Avatar } from "@material-ui/core";
-import CommentIcon from "@material-ui/icons/Comment";
-import FolderIcon from "@material-ui/icons/Folder";
+import React from 'react'
+import { Meta, Story } from '@storybook/react'
+import pkg from '../../components/datadisplay/List/package.json'
+import List, { ListProps } from '../../components/datadisplay/List/List'
+import ListItem from '../../components/datadisplay/ListItem/ListItem'
+import ListItemAvatar from '../../components/datadisplay/ListItemAvatar/ListItemAvatar'
+import ListItemIcon from '../../components/datadisplay/ListItemIcon/ListItemIcon'
+import ListItemSecondaryAction from '../../components/datadisplay/ListItemSecondaryAction/ListItemSecondaryAction'
+import ListItemText from '../../components/datadisplay/ListItemText/ListItemText'
+import ListSubheader from '../../components/datadisplay/ListSubheader/ListSubheader'
+import Checkbox from '../../components/input/Checkbox/Checkbox'
+import { IconButton, Avatar } from '@material-ui/core'
+import CommentIcon from '@material-ui/icons/Comment'
+import FolderIcon from '@material-ui/icons/Folder'
 
 export default {
-  title: "Components/Data Display/List",
+  title: 'Components/Data Display/List',
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
-  component: List,
-} as Meta;
+  component: List
+} as Meta
 
 const Template: Story<ListProps> = (args: any) => (
-  <List {...args}>
+  <List
+    {...args}
+  >
     <ListItem dense>
       <ListItemIcon>
         <Checkbox />
       </ListItemIcon>
-      <ListItemText primary="Line item" />
+      <ListItemText primary='Line item' />
       <ListItemSecondaryAction>
-        <IconButton edge="end" aria-label="comments">
+        <IconButton edge='end' aria-label='comments'>
           <CommentIcon />
         </IconButton>
       </ListItemSecondaryAction>
@@ -40,36 +42,36 @@ const Template: Story<ListProps> = (args: any) => (
           <FolderIcon />
         </Avatar>
       </ListItemAvatar>
-      <ListItemText primary="Single-line item" secondary="Secondary text" />
+      <ListItemText primary='Single-line item' secondary='Secondary text' />
     </ListItem>
   </List>
-);
+)
 
 /**
  * Implementation of List.
  */
-export const Default = Template.bind({});
+export const Default = Template.bind({})
 
 /**
  * Dense variant of List component
  */
-export const Dense = Template.bind({});
+export const Dense = Template.bind({})
 Dense.args = {
-  dense: true,
-};
+  dense: true
+}
 
 /**
  * Variant of List component with padding disabled
  */
-export const PaddingDisabled = Template.bind({});
+export const PaddingDisabled = Template.bind({})
 PaddingDisabled.args = {
-  disablePadding: true,
-};
+  disablePadding: true
+}
 
 /**
  * Variant of List component with Subheader
  */
-export const Subheader = Template.bind({});
+export const Subheader = Template.bind({})
 Subheader.args = {
-  subheader: <ListSubheader component="div">Nested Subheader</ListSubheader>,
-};
+  subheader: <ListSubheader component='div'>Nested Subheader</ListSubheader>
+}

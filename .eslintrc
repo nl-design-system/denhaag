@@ -1,7 +1,6 @@
 {
   "parser": "@typescript-eslint/parser",
-  "extends": [
-    // !!!Keep this list in order.
+  "extends": [ // !!!Keep this list in order.
     "plugin:jsx-a11y/recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
@@ -24,7 +23,11 @@
       "version": "detect"
     }
   },
-  "plugins": ["@typescript-eslint", "jsx-a11y", "prettier"],
+  "plugins": [
+    "@typescript-eslint",
+    "jsx-a11y",
+    "prettier"
+  ],
   "rules": {
     "array-callback-return": ["error", { "checkForEach": false }],
     "block-scoped-var": "error",

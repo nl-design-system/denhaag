@@ -3,8 +3,7 @@
   "env": {
     "jest": true
   },
-  "rules": {
-    // This config is specific for TypeScript.
+  "rules": { // This config is specific for TypeScript.
     "no-undef": 0,
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": "error"
