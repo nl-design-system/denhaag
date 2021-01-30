@@ -26,7 +26,7 @@ export interface ListItemTextProps extends BaseProps {
    * These props will be forwarded to the primary typography component
    * (as long as disableTypography is not `true`).
    */
-  primaryTypographyProps?: object
+  primaryTypographyProps?: Record<string, unknown>
 
   /**
    * The secondary content element.
@@ -37,7 +37,7 @@ export interface ListItemTextProps extends BaseProps {
    * These props will be forwarded to the secondary typography component
    * (as long as disableTypography is not `true`).
    */
-  secondaryTypographyProps?: object
+  secondaryTypographyProps?: Record<string, unknown>
 }
 
 /**

@@ -21,7 +21,7 @@ export interface RadioGroupProps extends BaseChildrenProps {
    * The event source of the callback. You can pull out the new value by
    * accessing `event.target.value` (string).
    */
-  onChange?: (event: object) => void
+  onChange?: (event: React.SyntheticEvent) => void
 
   /**
    * Value of the selected radio button. The DOM API casts this to a string.

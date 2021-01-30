@@ -16,11 +16,9 @@ export default {
 } as Meta
 
 const Template: Story<TabsProps> = (args: any) => {
-  // @ts-ignore
   const [value, setValue] = React.useState(1)
 
-  // @ts-ignore
-  args.onChange = (event: React.ChangeEvent<{}>, newValue: number) => {
+  args.onChange = (_event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue)
   }
   args.value = value

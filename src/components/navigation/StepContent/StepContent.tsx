@@ -25,7 +25,7 @@ export interface StepContentProps extends BaseProps {
   /**
    * Props applied to the Transition element.
    */
-  TransitionProps?: object
+  TransitionProps?: Record<string, unknown>
 }
 
 /**

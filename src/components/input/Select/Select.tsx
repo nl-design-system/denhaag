@@ -31,7 +31,7 @@ export interface SelectProps extends BaseProps {
    * In order to display a meaningful value, a function should be passed to the `renderValue` prop which returns the value to be displayed when no items are selected.
    * You can only use it when the `native` prop is `false` (default).
    */
-  displayEmpty?: boolean
+  displayEmpty?: Record<string, unknown>
 
   /**
    * The icon that displays the arrow.
@@ -101,7 +101,7 @@ export interface SelectProps extends BaseProps {
    *
    * @param {object} event The event source of the callback.
    */
-  onClose?: (event: React.ChangeEvent<{}>) => void
+  onClose?: (event: React.SyntheticEvent) => void
 
   /**
    * Callback fired when the component requests to be opened.
@@ -109,7 +109,7 @@ export interface SelectProps extends BaseProps {
    *
    * @param {object} event The event source of the callback.
    */
-  onOpen?: (event: React.ChangeEvent<{}>) => void
+  onOpen?: (event: React.SyntheticEvent) => void
 
   /**
    * Control `select` open state.

@@ -20,7 +20,7 @@ export interface CheckboxProps extends BaseClassesProps {
   /**
    * Attributes applied to the `input` element.
    */
-  inputProps?: object
+  inputProps?: Record<string, unknown>
   /**
    * Color for the component.
    */

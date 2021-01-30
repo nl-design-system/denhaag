@@ -16,13 +16,13 @@ export interface DrawerProps extends BaseProps {
   /**
    * Props applied to the Modal element.
    */
-  ModalProps?: object
+  ModalProps?: Record<string, unknown>
 
   /**
    * Callback fired when the component requests to be closed.
    * @param event The event source of the callback.
    */
-  onClose: (event: object) => void
+  onClose: (event: React.SyntheticEvent) => void
 
   /**
    * If true, the drawer is open.
@@ -32,12 +32,12 @@ export interface DrawerProps extends BaseProps {
   /**
    * Props applied to the Paper element.
    */
-  PaperProps?: object
+  PaperProps?: Record<string, unknown>
 
   /**
    * Props applied to the Slide element.
    */
-  SlideProps?: object
+  SlideProps?: Record<string, unknown>
 
   /**
    * The duration for the transition, in milliseconds.

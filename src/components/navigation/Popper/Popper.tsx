@@ -26,7 +26,7 @@ export interface PopperProps extends BaseChildrenProps {
   /**
    * Popper.js is based on a "plugin-like" architecture, most of its features are fully encapsulated "modifiers".
    */
-  modifiers?: object
+  modifiers?: Record<string, unknown>
 
   /**
    * If true, the popper is visible.
@@ -53,7 +53,7 @@ export interface PopperProps extends BaseChildrenProps {
   /**
    * Options provided to the popper.js instance.
    */
-  popperOptions?: object
+  popperOptions?: Record<string, unknown>
 
   /**
    * A ref that points to the used popper instance.

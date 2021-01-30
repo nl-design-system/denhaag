@@ -29,7 +29,7 @@ export interface AccordionProps extends BaseProps {
    * @param event The event source of the callback.
    * @param expanded The expanded state of the Accordion.
    */
-  onChange?: (event: React.ChangeEvent<{}>, expanded: boolean) => void
+  onChange?: (event: React.SyntheticEvent, expanded: boolean) => void
 
   /**
    * If true, rounded corners are disabled.
@@ -39,7 +39,7 @@ export interface AccordionProps extends BaseProps {
   /**
    * Props applied to the Transition element.
    */
-  TransitionProps?: object
+  TransitionProps?: Record<string, unknown>
 }
 
 /**

@@ -11,7 +11,7 @@ export interface AccordionSummaryProps extends BaseProps {
   /**
    * Props applied to the IconButton element wrapping the expand icon.
    */
-  IconButtonProps?: object
+  IconButtonProps?: Record<string, unknown>
 }
 
 /**

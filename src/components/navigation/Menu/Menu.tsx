@@ -27,14 +27,14 @@ export interface MenuProps extends BaseProps {
   /**
    * Props applied to the MenuList element.
    */
-  MenuListProps?: object
+  MenuListProps?: Record<string, unknown>
 
   /**
    * Callback fired when the component requests to be closed.
    * @param event The event source of the callback.
    * @param reason Can be "escapeKeyDown", "backdropClick", "tabKeydown".
    */
-  onClose?: (event: object, reason: string) => void
+  onClose?: (event: React.SyntheticEvent, reason: string) => void
 
   /**
    * Callback fired before the Menu enters.
@@ -74,7 +74,7 @@ export interface MenuProps extends BaseProps {
   /**
    * classes prop applied to the Popover element.
    */
-  PopoverClasses?: object
+  PopoverClasses?: Record<string, unknown>
 
   /**
    * The length of the transition in ms, or 'auto'

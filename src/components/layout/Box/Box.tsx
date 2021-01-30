@@ -2,7 +2,7 @@ import React from 'react'
 import MaterialBox from '@material-ui/core/Box'
 import { BaseLayoutChildrenProps } from '../BaseLayoutProps/BaseLayoutProps'
 
-export interface BoxProps extends BaseLayoutChildrenProps {}
+export type BoxProps = BaseLayoutChildrenProps
 
 /**
  * Box allows developers to wrap most of the CSS Utility needs.

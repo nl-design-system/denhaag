@@ -34,13 +34,13 @@ export interface SwipeableDrawerProps extends BaseChildrenProps {
    * Callback fired when the component requests to be closed.
    * @param event The event source of the callback.
    */
-  onClose: (event: object) => void
+  onClose: (event: React.SyntheticEvent) => void
 
   /**
    * Callback fired when the component requests to be opened.
    * @param event The event source of the callback.
    */
-  onOpen: (event: object) => void
+  onOpen: (event: React.SyntheticEvent) => void
 
   /**
    * If true, the drawer is open.
@@ -50,7 +50,7 @@ export interface SwipeableDrawerProps extends BaseChildrenProps {
   /**
    * The element is used to intercept the touch events on the edge.
    */
-  SwipeAreaProps?: object
+  SwipeAreaProps?: Record<string, unknown>
 
   /**
    * The width of the left most (or right most) area in pixels where the drawer can be swiped open from.

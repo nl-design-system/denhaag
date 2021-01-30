@@ -14,7 +14,7 @@ export interface RadioProps {
    * pull out the new checked state by accessing
    * `event.target.checked` (boolean).
    */
-  onChange?: (event: object) => void
+  onChange?: (event: React.SyntheticEvent) => void
 
   /**
    * Name attribute of the radio button.

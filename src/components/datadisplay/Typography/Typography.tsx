@@ -65,7 +65,7 @@ export interface TypographyProps extends BaseDataDisplayProps {
   /**
    * The component maps the variant prop to a range of different HTML element types.
    */
-  variantMapping?: object
+  variantMapping?: Record<string, unknown>
 }
 
 /**

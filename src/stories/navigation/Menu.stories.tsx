@@ -18,7 +18,7 @@ const Template: Story<MenuProps> = (args: any) => (
   <Menu {...args}>
     <MenuItem dense={false} onClick={() => (opened = false)}>
       <p>
-        The "open" property is set to true to force the menu to be visible for
+        The &quot;open&quot; property is set to true to force the menu to be visible for
         demo purposes.
       </p>
     </MenuItem>
