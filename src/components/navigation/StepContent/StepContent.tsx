@@ -1,12 +1,12 @@
-import React from 'react'
-import MaterialStepContent from '@material-ui/core/StepContent'
-import BaseProps from '../../BaseProps/BaseProps'
+import React from "react";
+import MaterialStepContent from "@material-ui/core/StepContent";
+import BaseProps from "../../BaseProps/BaseProps";
 
 export interface StepContentProps extends BaseProps {
   /**
    * The component used for the transition.
    */
-  TransitionComponent?: any
+  TransitionComponent?: any;
 
   /**
    * Adjust the duration of the content expand transition.
@@ -14,18 +14,18 @@ export interface StepContentProps extends BaseProps {
    * Set to 'auto' to automatically calculate transition time based on height.
    */
   transitionDuration?:
-    | 'auto'
+    | "auto"
     | number
     | {
-        appear?: number
-        enter?: number
-        exit?: number
-      }
+        appear?: number;
+        enter?: number;
+        exit?: number;
+      };
 
   /**
    * Props applied to the Transition element.
    */
-  TransitionProps?: Record<string, unknown>
+  TransitionProps?: Record<string, unknown>;
 }
 
 /**
@@ -33,10 +33,8 @@ export interface StepContentProps extends BaseProps {
  * @param props The properties of a StepContent component.
  * @constructor Constructs an instance of StepContent.
  */
-export const StepContent: React.FC<StepContentProps> = (
-  props: StepContentProps
-) => {
-  return <MaterialStepContent {...props}>{props.children}</MaterialStepContent>
-}
+export const StepContent: React.FC<StepContentProps> = (props: StepContentProps) => {
+  return <MaterialStepContent {...props}>{props.children}</MaterialStepContent>;
+};
 
-export default StepContent
+export default StepContent;

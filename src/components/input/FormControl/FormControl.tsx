@@ -1,12 +1,12 @@
-import { FormControlTypeMap } from '@material-ui/core'
-import { OverrideProps } from '@material-ui/core/OverridableComponent'
-import MaterialFormControl from '@material-ui/core/FormControl'
-import React from 'react'
+import { FormControlTypeMap } from "@material-ui/core";
+import { OverrideProps } from "@material-ui/core/OverridableComponent";
+import MaterialFormControl from "@material-ui/core/FormControl";
+import React from "react";
 
 export type FormControlProps<
-  D extends React.ElementType = FormControlTypeMap['defaultComponent'],
+  D extends React.ElementType = FormControlTypeMap["defaultComponent"],
   P = Record<string, unknown>
-> = OverrideProps<FormControlTypeMap<P, D>, D>
+> = OverrideProps<FormControlTypeMap<P, D>, D>;
 
 /**
  * Provides context such as filled/focused/error/required for form inputs.
@@ -29,13 +29,11 @@ export type FormControlProps<
  *
  * ⚠️Only one input can be used within a FormControl.
  */
-export const FormControl: React.FC<FormControlProps> = (
-  props: FormControlProps
-) => {
-  return <MaterialFormControl {...props} />
-}
+export const FormControl: React.FC<FormControlProps> = (props: FormControlProps) => {
+  return <MaterialFormControl {...props} />;
+};
 
 /**
  * Default export for FormControl
  */
-export default FormControl
+export default FormControl;

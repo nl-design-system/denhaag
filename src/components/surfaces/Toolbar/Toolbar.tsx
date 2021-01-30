@@ -1,22 +1,22 @@
-import React from 'react'
-import MaterialToolbar from '@material-ui/core/Toolbar'
-import BaseProps from '../../BaseProps/BaseProps'
+import React from "react";
+import MaterialToolbar from "@material-ui/core/Toolbar";
+import BaseProps from "../../BaseProps/BaseProps";
 
 export interface ToolbarProps extends BaseProps {
   /**
    * The component used for the root node. Either a string to use a HTML element or a component.
    */
-  component?: React.ElementType
+  component?: React.ElementType;
 
   /**
    * If true, disables gutter padding.
    */
-  disableGutters?: boolean
+  disableGutters?: boolean;
 
   /**
    * The variant to use.
    */
-  variant?: 'regular' | 'dense'
+  variant?: "regular" | "dense";
 }
 
 /**
@@ -25,7 +25,7 @@ export interface ToolbarProps extends BaseProps {
  * @constructor Constructs an instance of Toolbar.
  */
 export const Toolbar: React.FC<ToolbarProps> = (props: ToolbarProps) => {
-  return <MaterialToolbar {...props}>{props.children}</MaterialToolbar>
-}
+  return <MaterialToolbar {...props}>{props.children}</MaterialToolbar>;
+};
 
-export default Toolbar
+export default Toolbar;

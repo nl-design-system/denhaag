@@ -1,44 +1,44 @@
-import React, { ReactElement } from 'react'
-import MaterialTab from '@material-ui/core/Tab'
-import BaseProps from '../../BaseProps/BaseProps'
+import React, { ReactElement } from "react";
+import MaterialTab from "@material-ui/core/Tab";
+import BaseProps from "../../BaseProps/BaseProps";
 
 export interface TabProps extends BaseProps {
   /**
    * If true, the tab will be disabled.
    */
-  disabled?: boolean
+  disabled?: boolean;
 
   /**
    * If true, the keyboard focus ripple will be disabled.
    */
-  disableFocusRipple?: boolean
+  disableFocusRipple?: boolean;
 
   /**
    * If true, the ripple effect will be disabled.
    */
-  disableRipple?: boolean
+  disableRipple?: boolean;
 
   /**
    * The icon element.
    */
-  icon?: ReactElement
+  icon?: ReactElement;
 
   /**
    * The label element.
    */
-  label: React.ReactNode
+  label: React.ReactNode;
 
   /**
    * You can provide your own value.
    * Otherwise, we fallback to the child position index.
    */
-  value: any
+  value: any;
 
   /**
    * Tab labels appear in a single row.
    * They can use a second line if needed.
    */
-  wrapped?: boolean
+  wrapped?: boolean;
 }
 
 /**
@@ -47,7 +47,7 @@ export interface TabProps extends BaseProps {
  * @constructor Construct an instance of Tab.
  */
 export const Tab: React.FC<TabProps> = (props: TabProps) => {
-  return <MaterialTab {...props} />
-}
+  return <MaterialTab {...props} />;
+};
 
-export default Tab
+export default Tab;

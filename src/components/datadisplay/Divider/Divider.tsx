@@ -1,32 +1,32 @@
-import React from 'react'
-import MaterialDivider from '@material-ui/core/Divider'
-import { BaseDataDisplayClassesProps } from '../BaseDataDisplayProps/BaseDataDisplayProps'
+import React from "react";
+import MaterialDivider from "@material-ui/core/Divider";
+import { BaseDataDisplayClassesProps } from "../BaseDataDisplayProps/BaseDataDisplayProps";
 
 export interface DividerProps extends BaseDataDisplayClassesProps {
   /**
    * Absolutely position the element.
    */
-  absolute?: boolean
+  absolute?: boolean;
 
   /**
    * If true, a vertical divider will have the correct height when used in flex container.
    */
-  flexItem?: boolean
+  flexItem?: boolean;
 
   /**
    * If true, the divider will have a lighter color.
    */
-  light?: boolean
+  light?: boolean;
 
   /**
    * The divider orientation.
    */
-  orientation?: 'horizontal' | 'vertical'
+  orientation?: "horizontal" | "vertical";
 
   /**
    * The variant to use.
    */
-  variant?: 'fullWidth' | 'inset' | 'middle'
+  variant?: "fullWidth" | "inset" | "middle";
 }
 
 /**
@@ -35,7 +35,7 @@ export interface DividerProps extends BaseDataDisplayClassesProps {
  * @constructor Constructs an instance of Divider.
  */
 export const Divider: React.FC<DividerProps> = (props: DividerProps) => {
-  return <MaterialDivider {...props} />
-}
+  return <MaterialDivider {...props} />;
+};
 
-export default Divider
+export default Divider;
