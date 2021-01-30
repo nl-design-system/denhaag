@@ -31,7 +31,7 @@ export interface SelectProps extends BaseProps {
    * In order to display a meaningful value, a function should be passed to the `renderValue` prop which returns the value to be displayed when no items are selected.
    * You can only use it when the `native` prop is `false` (default).
    */
-  displayEmpty?: Record<string, unknown>
+  displayEmpty?: boolean | undefined
 
   /**
    * The icon that displays the arrow.
