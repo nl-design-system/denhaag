@@ -1,8 +1,8 @@
-import React from 'react'
-import MaterialListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction'
-import { BaseChildrenProps } from '@gemeente-denhaag/baseprops'
+import React from "react";
+import MaterialListItemSecondaryAction from "@material-ui/core/ListItemSecondaryAction";
+import { BaseChildrenProps } from "@gemeente-denhaag/baseprops";
 
-export type ListItemSecondaryActionProps = BaseChildrenProps
+export type ListItemSecondaryActionProps = BaseChildrenProps;
 
 /**
  * Primary UI component for user interaction
@@ -10,7 +10,7 @@ export type ListItemSecondaryActionProps = BaseChildrenProps
 export const ListItemSecondaryAction: React.FC<ListItemSecondaryActionProps> = (
   props: ListItemSecondaryActionProps
 ) => {
-  return <MaterialListItemSecondaryAction {...props}>{props.children}</MaterialListItemSecondaryAction>
-}
+  return <MaterialListItemSecondaryAction {...props}>{props.children}</MaterialListItemSecondaryAction>;
+};
 
-export default ListItemSecondaryAction
+export default ListItemSecondaryAction;

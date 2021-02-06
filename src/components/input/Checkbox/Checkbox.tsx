@@ -1,6 +1,6 @@
-import MaterialCheckbox from '@material-ui/core/Checkbox'
-import React from 'react'
-import { BaseClassesProps } from '@gemeente-denhaag/baseprops'
+import MaterialCheckbox from "@material-ui/core/Checkbox";
+import React from "react";
+import { BaseClassesProps } from "@gemeente-denhaag/baseprops";
 
 export interface CheckboxProps extends BaseClassesProps {
   /**
@@ -8,47 +8,47 @@ export interface CheckboxProps extends BaseClassesProps {
    * See https://github.com/mui-org/material-ui/blob/master/docs/src/pages/components/checkboxes/Checkboxes.tsx
    * For an example on the needed state machine to use this property.
    */
-  checked?: boolean
+  checked?: boolean;
   /**
    * If `true` then Checkbox will be checked by default.
    */
-  defaultChecked?: boolean
+  defaultChecked?: boolean;
   /**
    * If `true`, the component appears indeterminate.
    */
-  indeterminate?: boolean
+  indeterminate?: boolean;
   /**
    * Attributes applied to the `input` element.
    */
-  inputProps?: Record<string, unknown>
+  inputProps?: Record<string, unknown>;
   /**
    * Color for the component.
    */
-  color?: 'default' | 'primary' | 'secondary'
+  color?: "default" | "primary" | "secondary";
   /**
    * Size of the component.
    */
-  size?: 'small' | 'medium'
+  size?: "small" | "medium";
   /**
    * Disables Checkbox
    */
-  disabled?: boolean
+  disabled?: boolean;
   /**
    * Callback fired when the state is changed.
    */
-  onChange?: (event: React.ChangeEvent<unknown>) => void
+  onChange?: (event: React.ChangeEvent<unknown>) => void;
 }
 
 /**
  * Checkboxes allow the user to select one or more items from a set.
  */
 export const Checkbox: React.FC<CheckboxProps> = (props: CheckboxProps) => {
-  return <MaterialCheckbox {...props} />
-}
+  return <MaterialCheckbox {...props} />;
+};
 
 /**
  * Default export for Checkbox
  */
-export default Checkbox
-export * from '@gemeente-denhaag/formcontrollabel'
-export * from '@gemeente-denhaag/formgroup'
+export default Checkbox;
+export * from "@gemeente-denhaag/formcontrollabel";
+export * from "@gemeente-denhaag/formgroup";

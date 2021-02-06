@@ -1,73 +1,68 @@
-import React from 'react'
-import { Meta, Story } from '@storybook/react'
-import { AppBar, AppBarProps } from '../../components/surfaces/AppBar/AppBar'
-import pkg from '../../components/surfaces/AppBar/package.json'
-import Toolbar from '../../components/surfaces/Toolbar/Toolbar'
-import { createStyles, IconButton, makeStyles, Theme } from '@material-ui/core'
-import MenuIcon from '@material-ui/icons/Menu'
-import Typography from '../../components/datadisplay/Typography/Typography'
-import Button from '../../components/input/Button/Button'
+import React from "react";
+import { Meta, Story } from "@storybook/react";
+import { AppBar, AppBarProps } from "../../components/surfaces/AppBar/AppBar";
+import pkg from "../../components/surfaces/AppBar/package.json";
+import Toolbar from "../../components/surfaces/Toolbar/Toolbar";
+import { createStyles, IconButton, makeStyles, Theme } from "@material-ui/core";
+import MenuIcon from "@material-ui/icons/Menu";
+import Typography from "../../components/datadisplay/Typography/Typography";
+import Button from "../../components/input/Button/Button";
 
 export default {
-  title: 'Components/Surfaces/AppBar',
+  title: "Components/Surfaces/AppBar",
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
   },
-  component: AppBar
-} as Meta
+  component: AppBar,
+} as Meta;
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      flexGrow: 1
+      flexGrow: 1,
     },
     menuButton: {
-      marginRight: theme.spacing(2)
+      marginRight: theme.spacing(2),
     },
     title: {
-      flexGrow: 1
-    }
+      flexGrow: 1,
+    },
   })
-)
+);
 
 const Template: Story<AppBarProps> = (args: any) => {
-  const classes = useStyles()
+  const classes = useStyles();
 
   return (
     <AppBar {...args}>
       <Toolbar>
-        <IconButton
-          edge='start'
-          className={classes.menuButton}
-          color='inherit'
-          aria-label='menu'
-        >
+        <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
           <MenuIcon />
         </IconButton>
-        <Typography variant='h6'>News</Typography>
+        <Typography variant="h6">News</Typography>
       </Toolbar>
       <Button>I am a button!</Button>
     </AppBar>
-  )
-}
+  );
+};
 
 /**
  * Implementation of AppBar
  */
-export const Default = Template.bind({})
+export const Default = Template.bind({});
 
 /**
  * Statically positioned AppBar
  */
-export const StaticPosition = Template.bind({})
+export const StaticPosition = Template.bind({});
 StaticPosition.args = {
-  position: 'static'
-}
+  position: "static",
+};
 
 /**
  * A statically coloured AppBar
  */
-export const SecondaryColoured = Template.bind({})
+export const SecondaryColoured = Template.bind({});
 SecondaryColoured.args = {
-  color: 'secondary'
-}
+  color: "secondary",
+};

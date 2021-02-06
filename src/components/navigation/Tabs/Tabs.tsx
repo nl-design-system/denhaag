@@ -1,54 +1,54 @@
-import React from 'react'
-import MaterialTabs from '@material-ui/core/Tabs'
-import BaseProps from '@gemeente-denhaag/baseprops'
+import React from "react";
+import MaterialTabs from "@material-ui/core/Tabs";
+import BaseProps from "@gemeente-denhaag/baseprops";
 
 export interface TabsProps extends BaseProps {
   /**
    * Callback fired when the component mounts.
    */
-  action?: () => void
+  action?: () => void;
 
   /**
    * The label for the Tabs as a string.
    */
-  ariaLabel?: string
+  ariaLabel?: string;
 
   /**
    * An id or list of ids separated by a space that label the Tabs.
    */
-  ariaLabelledBy?: string
+  ariaLabelledBy?: string;
 
   /**
    * If true, the tabs will be centered. This property is intended for large views.
    */
-  centered?: boolean
+  centered?: boolean;
 
   /**
    * The component used for the root node. Either a string to use a HTML element or a component.
    */
-  component?: React.ReactNode
+  component?: React.ReactNode;
 
   /**
    * Determines the color of the indicator.
    */
-  indicatorColor?: 'primary' | 'secondary'
+  indicatorColor?: "primary" | "secondary";
 
   /**
    * Callback fired when the value changes.
    * @param event The event source of the callback
    * @param value Defaults to the index of the child (number)
    */
-  onChange?: (event: React.ChangeEvent<unknown>, value: number) => void
+  onChange?: (event: React.ChangeEvent<unknown>, value: number) => void;
 
   /**
    * The tabs orientation (layout flow direction).
    */
-  orientation?: 'horizontal' | 'vertical'
+  orientation?: "horizontal" | "vertical";
 
   /**
    * The component used to render the scroll buttons.
    */
-  ScrollButtonComponent?: React.ElementType
+  ScrollButtonComponent?: React.ElementType;
 
   /**
    * Determine behavior of scroll buttons when tabs are set to scroll:
@@ -56,33 +56,33 @@ export interface TabsProps extends BaseProps {
    * - desktop will only present them on medium and larger viewports.
    * - on will always present them. - off will never present them.
    */
-  scrollButtons?: 'auto' | 'desktop' | 'off' | 'on'
+  scrollButtons?: "auto" | "desktop" | "off" | "on";
 
   /**
    * If true the selected tab changes on focus.
    */
-  selectionFollowsFocus?: boolean
+  selectionFollowsFocus?: boolean;
 
   /**
    * Props applied to the tab indicator element.
    */
-  TabIndicatorProps?: Record<string, unknown>
+  TabIndicatorProps?: Record<string, unknown>;
 
   /**
    * Props applied to the TabScrollButton element.
    */
-  TabScrollButtonProps?: Record<string, unknown>
+  TabScrollButtonProps?: Record<string, unknown>;
 
   /**
    * Determines the color of the Tab.
    */
-  textColor?: 'inherit' | 'primary' | 'secondary'
+  textColor?: "inherit" | "primary" | "secondary";
 
   /**
    * The value of the currently selected Tab.
    * If you don't want any selected Tab, you can set this property to false.
    */
-  value: any | false
+  value: any | false;
 
   /**
    * Determines additional display behavior of the tabs:
@@ -90,7 +90,7 @@ export interface TabsProps extends BaseProps {
    *  - fullWidth will make the tabs grow to use all the available space, which should be used for small views, like on mobile.
    *  - standard will render the default state.
    */
-  variant?: 'fullWidth' | 'scrollable' | 'standard'
+  variant?: "fullWidth" | "scrollable" | "standard";
 }
 
 /**
@@ -99,9 +99,9 @@ export interface TabsProps extends BaseProps {
  * @constructor Constructs an instance of Tabs.
  */
 export const Tabs: React.FC<TabsProps> = (props: TabsProps) => {
-  return <MaterialTabs {...props}>{props.children}</MaterialTabs>
-}
+  return <MaterialTabs {...props}>{props.children}</MaterialTabs>;
+};
 
-export default Tabs
-export * from '@gemeente-denhaag/tab'
-export * from '@gemeente-denhaag/tabscrollbutton'
+export default Tabs;
+export * from "@gemeente-denhaag/tab";
+export * from "@gemeente-denhaag/tabscrollbutton";
