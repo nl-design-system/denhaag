@@ -1,4 +1,4 @@
-# nlds-react-components
+# mdh-component-library
 
 > A library of React components for the Design System of The Netherlands
 
