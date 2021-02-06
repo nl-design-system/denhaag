@@ -5,7 +5,7 @@
   "version": "0.1.3",
   "main": "AvatarGroup.tsx",
   "module": "AvatarGroup.tsx",
-  "license": "EUPL",
+  "license": "EUPL-1.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/Gemeente-DenHaag/mijndenhaag-component-library.git",

@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/button",
   "description": "A Button component",
   "author": "Municipality of The Hague",
-  "license": "EUPL",
+  "license": "EUPL-1.2",
   "main": "Button.tsx",
   "module": "Button.tsx",
   "version": "0.1.3",

@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/stepbutton",
   "description": "A StepButton component",
   "author": "Municipality of The Hague",
-  "license": "EUPL",
+  "license": "EUPL-1.2",
   "main": "StepButton.tsx",
   "module": "StepButton.tsx",
   "version": "0.1.3",

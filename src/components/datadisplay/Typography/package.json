@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/typography",
   "description": "A Typography component",
   "author": "Municipality of The Hague",
-  "license": "EUPL",
+  "license": "EUPL-1.2",
   "main": "Typography.tsx",
   "module": "Typography.tsx",
   "version": "0.1.3",

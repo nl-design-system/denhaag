@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/steplabel",
   "description": "A StepLabel component",
   "author": "Municipality of The Hague",
-  "license": "EUPL",
+  "license": "EUPL-1.2",
   "main": "StepLabel.tsx",
   "module": "StepLabel.tsx",
   "version": "0.1.3",

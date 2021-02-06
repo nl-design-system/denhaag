@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/drawer",
   "description": "A Drawer component",
   "author": "Municipality of The Hague",
-  "license": "EUPL",
+  "license": "EUPL-1.2",
   "main": "Drawer.tsx",
   "module": "Drawer.tsx",
   "version": "0.1.3",

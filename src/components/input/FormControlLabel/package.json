@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/formcontrollabel",
   "description": "A FormControlLabel component",
   "author": "Municipality of The Hague",
-  "license": "EUPL",
+  "license": "EUPL-1.2",
   "main": "FormControlLabel.tsx",
   "module": "FormControlLabel.tsx",
   "version": "0.1.3",

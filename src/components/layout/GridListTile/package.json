@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/gridlisttile",
   "author": "Municipality of The Hague",
   "description": "A GridListTile component",
-  "license": "EUPL",
+  "license": "EUPL-1.2",
   "main": "GridListTile.tsx",
   "module": "GridListTile.tsx",
   "version": "0.1.3",

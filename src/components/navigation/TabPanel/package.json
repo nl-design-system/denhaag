@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/tabpanel",
   "description": "A TabPanel component",
   "author": "Municipality of The Hague",
-  "license": "EUPL",
+  "license": "EUPL-1.2",
   "main": "TabPanel.tsx",
   "module": "TabPanel.tsx",
   "version": "0.1.3",

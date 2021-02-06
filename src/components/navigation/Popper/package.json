@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/popper",
   "description": "A Popper component",
   "author": "Municipality of The Hague",
-  "license": "EUPL",
+  "license": "EUPL-1.2",
   "main": "Popper.tsx",
   "module": "Popper.tsx",
   "version": "0.1.3",

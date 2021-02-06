@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/stepper",
   "description": "A Stepper component",
   "author": "Municipality of The Hague",
-  "license": "EUPL",
+  "license": "EUPL-1.2",
   "main": "Stepper.tsx",
   "module": "Stepper.tsx",
   "version": "0.1.3",

@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/swipeabledrawer",
   "description": "A SwipeableDrawer component",
   "author": "Municipality of The Hague",
-  "license": "EUPL",
+  "license": "EUPL-1.2",
   "main": "SwipeableDrawer.tsx",
   "module": "SwipeableDrawer.tsx",
   "version": "0.1.3",

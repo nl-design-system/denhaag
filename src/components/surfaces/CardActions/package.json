@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/cardactions",
   "description": "A Card Actions component",
   "author": "Municipality of The Hague",
-  "license": "EUPL",
+  "license": "EUPL-1.2",
   "main": "CardActions.tsx",
   "module": "CardActions.tsx",
   "version": "0.1.3",

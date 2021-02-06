@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/divider",
   "description": "A Divider component",
   "author": "Municipality of The Hague",
-  "license": "EUPL",
+  "license": "EUPL-1.2",
   "main": "Divider.tsx",
   "module": "Divider.tsx",
   "version": "0.1.3",

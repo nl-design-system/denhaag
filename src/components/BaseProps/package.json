@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/baseprops",
   "description": "A package containing properties used in other components",
   "author": "Municipality of The Hague",
-  "license": "EUPL",
+  "license": "EUPL-1.2",
   "main": "BaseProps.tsx",
   "module": "BaseProps.tsx",
   "version": "0.1.3",

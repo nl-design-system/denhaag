@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/navigation",
   "description": "Navigation components",
   "author": "Municipality of The Hague",
-  "license": "EUPL",
+  "license": "EUPL-1.2",
   "main": "index.tsx",
   "module": "index.tsx",
   "version": "0.1.3",

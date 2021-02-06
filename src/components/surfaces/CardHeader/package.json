@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/cardheader",
   "description": "A Card Header component",
   "author": "Municipality of The Hague",
-  "license": "EUPL",
+  "license": "EUPL-1.2",
   "main": "CardHeader.tsx",
   "module": "CardHeader.tsx",
   "version": "0.1.3",

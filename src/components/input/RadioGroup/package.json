@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/radiogroup",
   "description": "A RadioGroup component",
   "author": "Municipality of The Hague",
-  "license": "EUPL",
+  "license": "EUPL-1.2",
   "main": "RadioGroup.tsx",
   "module": "RadioGroup.tsx",
   "version": "0.1.3",

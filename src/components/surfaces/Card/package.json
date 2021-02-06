@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/card",
   "description": "A Card component",
   "author": "Municipality of The Hague",
-  "license": "EUPL",
+  "license": "EUPL-1.2",
   "main": "Card.tsx",
   "module": "Card.tsx",
   "version": "0.1.3",

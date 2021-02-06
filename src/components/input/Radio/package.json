@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/radio",
   "description": "A Radio component",
   "author": "Municipality of The Hague",
-  "license": "EUPL",
+  "license": "EUPL-1.2",
   "main": "Radio.tsx",
   "module": "Radio.tsx",
   "version": "0.1.3",

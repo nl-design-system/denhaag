@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/stepicon",
   "description": "A StepIcon component",
   "author": "Municipality of The Hague",
-  "license": "EUPL",
+  "license": "EUPL-1.2",
   "main": "StepIcon.tsx",
   "module": "StepIcon.tsx",
   "version": "0.1.3",

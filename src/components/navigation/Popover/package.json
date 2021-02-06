@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/popover",
   "description": "A Popover component",
   "author": "Municipality of The Hague",
-  "license": "EUPL",
+  "license": "EUPL-1.2",
   "main": "Popover.tsx",
   "module": "Popover.tsx",
   "version": "0.1.3",

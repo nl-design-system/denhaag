@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/toolbar",
   "description": "Toolbar component",
   "author": "Municipality of The Hague",
-  "license": "EUPL",
+  "license": "EUPL-1.2",
   "main": "Toolbar.tsx",
   "module": "Toolbar.tsx",
   "version": "0.1.3",

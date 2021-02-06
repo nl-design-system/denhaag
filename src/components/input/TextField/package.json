@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/textfield",
   "description": "A TextField component",
   "author": "Municipality of The Hague",
-  "license": "EUPL",
+  "license": "EUPL-1.2",
   "main": "TextField.tsx",
   "module": "TextField.tsx",
   "version": "0.1.3",

@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/select",
   "description": "A Select component",
   "author": "Municipality of The Hague",
-  "license": "EUPL",
+  "license": "EUPL-1.2",
   "main": "Select.tsx",
   "module": "Select.tsx",
   "version": "0.1.3",
