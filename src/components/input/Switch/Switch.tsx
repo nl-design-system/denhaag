@@ -1,32 +1,32 @@
-import MaterialSwitch from '@material-ui/core/Switch'
-import { BaseClassesProps } from '@gemeente-denhaag/baseprops'
-import React from 'react'
+import MaterialSwitch from "@material-ui/core/Switch";
+import { BaseClassesProps } from "@gemeente-denhaag/baseprops";
+import React from "react";
 
 export interface SwitchProps extends BaseClassesProps {
   /**
    * If true the Switch is turned on
    */
-  checked?: boolean
+  checked?: boolean;
   /**
    * Color for the component.
    */
-  color?: 'default' | 'primary' | 'secondary'
+  color?: "default" | "primary" | "secondary";
   /**
    * Disables the component
    */
-  disabled?: boolean
+  disabled?: boolean;
   /**
    * [Attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Attributes) applied to the `input` element.
    */
-  inputProps?: React.InputHTMLAttributes<HTMLInputElement>
+  inputProps?: React.InputHTMLAttributes<HTMLInputElement>;
   /**
    * If `true`, the `input` element will be required.
    */
-  required?: boolean
+  required?: boolean;
   /**
    * Attributes applied to the `input` element.
    */
-  defaultChecked?: boolean
+  defaultChecked?: boolean;
   /**
    * Callback fired when the state is changed.
    *
@@ -34,20 +34,17 @@ export interface SwitchProps extends BaseClassesProps {
    * You can pull out the new value by accessing `event.target.value` (string).
    * You can pull out the new checked state by accessing `event.target.checked` (boolean).
    */
-  onChange?: (
-    event: React.ChangeEvent<HTMLInputElement>,
-    checked: boolean
-  ) => void
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>, checked: boolean) => void;
 }
 
 /**
  * Switches allow a user to toggle the state of a setting on or off.
  */
 export const Switch: React.FC<SwitchProps> = (props: SwitchProps) => {
-  return <MaterialSwitch {...props} />
-}
+  return <MaterialSwitch {...props} />;
+};
 
 /**
  * Default export for Switch
  */
-export default Switch
+export default Switch;

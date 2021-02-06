@@ -1,66 +1,66 @@
-import React from 'react'
-import MaterialSwipeableDrawer from '@material-ui/core/SwipeableDrawer'
-import { BaseChildrenProps } from '@gemeente-denhaag/baseprops'
+import React from "react";
+import MaterialSwipeableDrawer from "@material-ui/core/SwipeableDrawer";
+import { BaseChildrenProps } from "@gemeente-denhaag/baseprops";
 
 export interface SwipeableDrawerProps extends BaseChildrenProps {
   /**
    * Disable the backdrop transition.
    */
-  disableBackdropTransition?: boolean
+  disableBackdropTransition?: boolean;
 
   /**
    * If true, touching the screen near the edge of the drawer will not slide in the drawer
    * a bit to promote accidental discovery of the swipe gesture.
    */
-  disableDiscovery?: boolean
+  disableDiscovery?: boolean;
 
   /**
    * If true, swipe to open is disabled.
    */
-  disableSwipeToOpen?: boolean
+  disableSwipeToOpen?: boolean;
 
   /**
    * Affects how far the drawer must be opened/closed to change his state.
    */
-  hysteresis?: number
+  hysteresis?: number;
 
   /**
    * Defines, from which (average) velocity on,
    * the swipe is defined as complete although hysteresis isn't reached.
    */
-  minFlingVelocity?: number
+  minFlingVelocity?: number;
 
   /**
    * Callback fired when the component requests to be closed.
    * @param event The event source of the callback.
    */
-  onClose: (event: object) => void
+  onClose: (event: React.ChangeEvent<unknown>) => void;
 
   /**
    * Callback fired when the component requests to be opened.
    * @param event The event source of the callback.
    */
-  onOpen: (event: object) => void
+  onOpen: (event: React.ChangeEvent<unknown>) => void;
 
   /**
    * If true, the drawer is open.
    */
-  open: boolean
+  open: boolean;
 
   /**
    * The element is used to intercept the touch events on the edge.
    */
-  SwipeAreaProps?: object
+  SwipeAreaProps?: Record<string, unknown>;
 
   /**
    * The width of the left most (or right most) area in pixels where the drawer can be swiped open from.
    */
-  swipeAreaWidth?: number
+  swipeAreaWidth?: number;
 
   /**
    * The duration for the transition, in milliseconds.
    */
-  transitionDuration?: number | { enter?: number, exit?: number }
+  transitionDuration?: number | { enter?: number; exit?: number };
 }
 
 /**
@@ -68,14 +68,8 @@ export interface SwipeableDrawerProps extends BaseChildrenProps {
  * @param props The properties of a SwipeableDrawer component.
  * @constructor Constructs an instance of SwipeableDrawer.
  */
-export const SwipeableDrawer: React.FC<SwipeableDrawerProps> = (
-  props: SwipeableDrawerProps
-) => {
-  return (
-    <MaterialSwipeableDrawer {...props}>
-      {props.children}
-    </MaterialSwipeableDrawer>
-  )
-}
+export const SwipeableDrawer: React.FC<SwipeableDrawerProps> = (props: SwipeableDrawerProps) => {
+  return <MaterialSwipeableDrawer {...props}>{props.children}</MaterialSwipeableDrawer>;
+};
 
-export default SwipeableDrawer
+export default SwipeableDrawer;
