@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialAccordionDetails from '@material-ui/core/AccordionDetails'
-import BaseProps from '../../BaseProps/BaseProps'
+import BaseProps from '@gemeente-denhaag/baseprops'
 
 export type AccordionDetailsProps = BaseProps
 

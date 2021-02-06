@@ -3,6 +3,8 @@
   "description": "A StepIcon component",
   "author": "Municipality of The Hague",
   "license": "MIT",
+  "main": "StepIcon.tsx",
+  "module": "StepIcon.tsx",
   "version": "0.1.3",
   "repository": {
     "type": "git",

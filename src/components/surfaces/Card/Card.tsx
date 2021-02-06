@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialCard from '@material-ui/core/Card'
-import { BasePaperProps } from '../Paper/BasePaperProps'
+import { BasePaperProps } from '@gemeente-denhaag/paper/BasePaperProps'
 
 export interface CardProps extends BasePaperProps {
   /**
@@ -20,3 +20,7 @@ export const Card: React.FC<CardProps> = (props: CardProps) => {
  * Default export for Card
  */
 export default Card
+export * from '@gemeente-denhaag/cardactions'
+export * from '@gemeente-denhaag/cardcontent'
+export * from '@gemeente-denhaag/cardheader'
+export * from '@gemeente-denhaag/paper'

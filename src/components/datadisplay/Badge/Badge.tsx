@@ -1,12 +1,12 @@
 import React from 'react'
 import MaterialBadge from '@material-ui/core/Badge'
-import BaseDataDisplayProps from '../BaseDataDisplayProps/BaseDataDisplayProps'
+import BaseDataDisplayProps from '@gemeente-denhaag/basedatadisplayprops'
 
 export interface BadgeProps extends BaseDataDisplayProps {
   /**
    * The anchor of the badge.
    */
-  anchorOrigin?: { horizontal: 'left' | 'right'; vertical: 'bottom' | 'top' }
+  anchorOrigin?: { horizontal: 'left' | 'right', vertical: 'bottom' | 'top' }
 
   /**
    * The content rendered within the badge.

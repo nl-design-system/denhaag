@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialTabs from '@material-ui/core/Tabs'
-import BaseProps from '../../BaseProps/BaseProps'
+import BaseProps from '@gemeente-denhaag/baseprops'
 
 export interface TabsProps extends BaseProps {
   /**
@@ -103,3 +103,5 @@ export const Tabs: React.FC<TabsProps> = (props: TabsProps) => {
 }
 
 export default Tabs
+export * from '@gemeente-denhaag/tab'
+export * from '@gemeente-denhaag/tabscrollbutton'

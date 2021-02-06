@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialAvatarGroup from '@material-ui/lab/AvatarGroup'
-import BaseProps from '../../BaseProps/BaseProps'
+import BaseProps from '@gemeente-denhaag/baseprops'
 
 export interface AvatarGroupProps extends BaseProps {
   max?: number
@@ -13,3 +13,4 @@ export const AvatarGroup: React.FC<AvatarGroupProps> = (props: AvatarGroupProps)
 }
 
 export default AvatarGroup
+export * from '@gemeente-denhaag/avatar'

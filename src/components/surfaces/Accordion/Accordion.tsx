@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialAccordion from '@material-ui/core/Accordion'
-import BaseProps from '../../BaseProps/BaseProps'
+import BaseProps from '@gemeente-denhaag/baseprops'
 
 export interface AccordionProps extends BaseProps {
   /**
@@ -52,3 +52,6 @@ export const Accordion: React.FC<AccordionProps> = (props: AccordionProps) => {
 }
 
 export default Accordion
+export * from '@gemeente-denhaag/accordionactions'
+export * from '@gemeente-denhaag/accordiondetails'
+export * from '@gemeente-denhaag/accordionsummary'

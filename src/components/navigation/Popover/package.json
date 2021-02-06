@@ -3,6 +3,8 @@
   "description": "A Popover component",
   "author": "Municipality of The Hague",
   "license": "MIT",
+  "main": "Popover.tsx",
+  "module": "Popover.tsx",
   "version": "0.1.3",
   "repository": {
     "type": "git",

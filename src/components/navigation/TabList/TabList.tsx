@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialTabList from '@material-ui/lab/TabList'
-import { BaseChildrenProps } from '../../BaseProps/BaseProps'
+import { BaseChildrenProps } from '@gemeente-denhaag/baseprops'
 
 export type TabListProps = BaseChildrenProps
 

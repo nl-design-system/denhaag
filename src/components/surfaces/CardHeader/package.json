@@ -1,9 +1,11 @@
 {
   "name": "@gemeente-denhaag/cardheader",
-  "version": "0.1.3",
   "description": "A Card Header component",
   "author": "Municipality of The Hague",
   "license": "MIT",
+  "main": "CardHeader.tsx",
+  "module": "CardHeader.tsx",
+  "version": "0.1.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/Gemeente-DenHaag/nlds-react-components.git",

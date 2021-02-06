@@ -1,9 +1,11 @@
 {
   "name": "@gemeente-denhaag/layout",
-  "version": "0.1.3",
   "description": "A package containing all the layout components",
   "author": "Municipality of The Hague",
   "license": "MIT",
+  "main": "index.tsx",
+  "module": "index.tsx",
+  "version": "0.1.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/Gemeente-DenHaag/nlds-react-components.git",
@@ -17,6 +19,7 @@
     "@gemeente-denhaag/grid": "^0.1.3",
     "@gemeente-denhaag/gridlist": "^0.1.3",
     "@gemeente-denhaag/gridlisttile": "^0.1.3",
-    "@gemeente-denhaag/gridlisttilebar": "^0.1.3"
+    "@gemeente-denhaag/gridlisttilebar": "^0.1.3",
+    "@gemeente-denhaag/hidden": "^0.1.3"
   }
 }

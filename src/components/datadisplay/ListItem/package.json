@@ -3,6 +3,8 @@
   "description": "A ListItem component",
   "author": "Municipality of The Hague",
   "version": "0.1.3",
+  "main": "ListItem.tsx",
+  "module": "ListItem.tsx",
   "license": "MIT",
   "repository": {
     "type": "git",

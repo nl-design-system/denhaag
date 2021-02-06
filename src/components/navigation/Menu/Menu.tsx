@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialMenu from '@material-ui/core/Menu'
-import BaseProps from '../../BaseProps/BaseProps'
+import BaseProps from '@gemeente-denhaag/baseprops'
 
 export interface MenuProps extends BaseProps {
   /**
@@ -80,9 +80,9 @@ export interface MenuProps extends BaseProps {
    * The length of the transition in ms, or 'auto'
    */
   transitionDuration?:
-    | 'auto'
-    | number
-    | { appear?: number; enter?: number; exit?: number }
+  | 'auto'
+  | number
+  | { appear?: number, enter?: number, exit?: number }
 
   /**
    * The variant to use.
@@ -100,3 +100,7 @@ export const Menu: React.FC<MenuProps> = (props: MenuProps) => {
 }
 
 export default Menu
+export * from '@gemeente-denhaag/menuitem'
+export * from '@gemeente-denhaag/menulist'
+export * from '@gemeente-denhaag/popover'
+export * from '@gemeente-denhaag/popper'

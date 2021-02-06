@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialListSubheader from '@material-ui/core/ListSubheader'
-import BaseProps from '../../BaseProps/BaseProps'
+import BaseProps from '@gemeente-denhaag/baseprops'
 
 export interface ListSubheaderProps extends BaseProps {
   /**

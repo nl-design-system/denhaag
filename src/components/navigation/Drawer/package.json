@@ -3,6 +3,8 @@
   "description": "A Drawer component",
   "author": "Municipality of The Hague",
   "license": "MIT",
+  "main": "Drawer.tsx",
+  "module": "Drawer.tsx",
   "version": "0.1.3",
   "repository": {
     "type": "git",

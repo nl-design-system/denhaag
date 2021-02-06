@@ -3,6 +3,8 @@
   "description": "A ListItemAvatar component",
   "author": "Municipality of The Hague",
   "version": "0.1.3",
+  "main": "ListItemAvatar.tsx",
+  "module": "ListItemAvatar.tsx",
   "license": "MIT",
   "repository": {
     "type": "git",

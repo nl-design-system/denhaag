@@ -3,6 +3,8 @@
   "description": "A package containing properties used in DataDisplay",
   "author": "Municipality of The Hague",
   "version": "0.1.3",
+  "main": "BaseDataDisplayProps.tsx",
+  "module": "BaseDataDisplayProps.tsx",
   "license": "MIT",
   "repository": {
     "type": "git",

@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialIconButton from '@material-ui/core/IconButton'
-import BaseProps from '../../BaseProps/BaseProps'
+import BaseProps from '@gemeente-denhaag/baseprops'
 
 export interface IconButtonProps extends BaseProps {
   /**
@@ -8,9 +8,9 @@ export interface IconButtonProps extends BaseProps {
    * It supports those theme colors that make sense for this component.
    */
   color?: 'default'
-    | 'inherit'
-    | 'primary'
-    | 'secondary'
+  | 'inherit'
+  | 'primary'
+  | 'secondary'
 
   /**
    * If true, the button will be disabled.
