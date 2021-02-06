@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/paper",
   "description": "A Paper component",
   "author": "Municipality of The Hague",
-  "license": "MIT",
+  "license": "EUPL",
   "main": "Paper.tsx",
   "module": "Paper.tsx",
   "version": "0.1.3",

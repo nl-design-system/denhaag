@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/inputlabel",
   "description": "An InputLabel component",
   "author": "Municipality of The Hague",
-  "license": "MIT",
+  "license": "EUPL",
   "main": "InputLabel.tsx",
   "module": "InputLabel.tsx",
   "version": "0.1.3",

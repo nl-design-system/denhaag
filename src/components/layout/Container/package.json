@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/container",
   "description": "A Container component",
   "author": "Municipality of The Hague",
-  "license": "MIT",
+  "license": "EUPL",
   "main": "Container.tsx",
   "module": "Container.tsx",
   "version": "0.1.3",

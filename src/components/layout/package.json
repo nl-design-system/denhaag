@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/layout",
   "description": "A package containing all the layout components",
   "author": "Municipality of The Hague",
-  "license": "MIT",
+  "license": "EUPL",
   "main": "index.tsx",
   "module": "index.tsx",
   "version": "0.1.3",

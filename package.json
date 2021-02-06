@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "A library of React components for the Design System of The Netherlands",
   "author": "Municipality of The Hague",
-  "license": "MIT",
+  "license": "EUPL",
   "repository": {
     "type": "git",
     "url": "https://github.com/Gemeente-DenHaag/mijndenhaag-component-library.git"

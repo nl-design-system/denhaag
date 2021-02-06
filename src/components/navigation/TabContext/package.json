@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/tabcontext",
   "description": "A TabContext component",
   "author": "Municipality of The Hague",
-  "license": "MIT",
+  "license": "EUPL",
   "main": "TabContext.tsx",
   "module": "TabContext.tsx",
   "version": "0.1.3",

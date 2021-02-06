@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/grid",
   "description": "A Grid component",
   "author": "Municipality of The Hague",
-  "license": "MIT",
+  "license": "EUPL",
   "main": "Grid.tsx",
   "module": "Grid.tsx",
   "version": "0.1.3",

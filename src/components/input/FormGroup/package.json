@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/formgroup",
   "description": "A FormGroup component",
   "author": "Municipality of The Hague",
-  "license": "MIT",
+  "license": "EUPL",
   "main": "FormGroup.tsx",
   "module": "FormGroup.tsx",
   "version": "0.1.3",

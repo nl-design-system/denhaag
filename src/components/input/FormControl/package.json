@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/formcontrol",
   "description": "A FormControl component",
   "author": "Municipality of The Hague",
-  "license": "MIT",
+  "license": "EUPL",
   "main": "FormControl.tsx",
   "module": "FormControl.tsx",
   "version": "0.1.3",

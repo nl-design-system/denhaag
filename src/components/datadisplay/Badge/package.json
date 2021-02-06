@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/badge",
   "description": "A Badge component",
   "author": "Municipality of The Hague",
-  "license": "MIT",
+  "license": "EUPL",
   "main": "Badge.tsx",
   "module": "Badge.tsx",
   "version": "0.1.3",

@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/box",
   "description": "A Box component",
   "author": "Municipality of The Hague",
-  "license": "MIT",
+  "license": "EUPL",
   "main": "Box.tsx",
   "module": "Box.tsx",
   "version": "0.1.3",

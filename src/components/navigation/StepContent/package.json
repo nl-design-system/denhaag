@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/stepcontent",
   "description": "A StepContent component",
   "author": "Municipality of The Hague",
-  "license": "MIT",
+  "license": "EUPL",
   "main": "StepContent.tsx",
   "module": "StepContent.tsx",
   "version": "0.1.3",

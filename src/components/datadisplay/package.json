@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/datadisplay",
   "description": "A package containing components for displaying data",
   "author": "Municipality of The Hague",
-  "license": "MIT",
+  "license": "EUPL",
   "main": "index.tsx",
   "module": "index.tsx",
   "version": "0.1.3",

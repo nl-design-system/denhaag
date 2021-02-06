@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/buttongroup",
   "author": "Municipality of The Hague",
   "description": "A ButtonGroup component",
-  "license": "MIT",
+  "license": "EUPL",
   "main": "ButtonGroup.tsx",
   "module": "ButtonGroup.tsx",
   "version": "0.1.3",

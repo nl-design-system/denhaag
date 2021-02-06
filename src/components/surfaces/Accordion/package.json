@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/accordion",
   "author": "Municipality of The Hague",
   "description": "An Accordion component.",
-  "license": "MIT",
+  "license": "EUPL",
   "main": "Accordion.tsx",
   "module": "Accordion.tsx",
   "version": "0.1.3",

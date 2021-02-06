@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/switch",
   "description": "A Switch component",
   "author": "Municipality of The Hague",
-  "license": "MIT",
+  "license": "EUPL",
   "main": "Switch.tsx",
   "module": "Switch.tsx",
   "version": "0.1.3",

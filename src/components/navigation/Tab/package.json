@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/tab",
   "description": "A Tab component",
   "author": "Municipality of The Hague",
-  "license": "MIT",
+  "license": "EUPL",
   "main": "Tab.tsx",
   "module": "Tab.tsx",
   "version": "0.1.3",

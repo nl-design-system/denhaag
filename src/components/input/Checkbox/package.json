@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/checkbox",
   "description": "A Checkbox component",
   "author": "Municipality of The Hague",
-  "license": "MIT",
+  "license": "EUPL",
   "main": "Checkbox.tsx",
   "module": "Checkbox.tsx",
   "version": "0.1.3",

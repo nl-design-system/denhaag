@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/mijndenhaag-component-library",
   "description": "A library of React components for the Design System of The Netherlands",
   "author": "Municipality of The Hague",
-  "license": "MIT",
+  "license": "EUPL",
   "main": "index.tsx",
   "module": "index.tsx",
   "version": "0.1.3",

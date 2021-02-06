@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/appbar",
   "author": "Municipality of The Hague",
   "description": "An AppBar component",
-  "license": "MIT",
+  "license": "EUPL",
   "main": "AppBar.tsx",
   "module": "AppBar.tsx",
   "version": "0.1.3",

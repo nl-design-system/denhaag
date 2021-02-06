@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/iconbutton",
   "description": "An IconButton component",
   "author": "Municipality of The Hague",
-  "license": "MIT",
+  "license": "EUPL",
   "main": "IconButton.tsx",
   "module": "IconButton.tsx",
   "version": "0.1.3",

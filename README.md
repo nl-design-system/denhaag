@@ -61,7 +61,7 @@ Start by filling it with the following information:
   "version": "0.1.0",
   "description": "A short description of the component",
   "author": "Municipality of The Hague",
-  "license": "MIT",
+  "license": "EUPL",
   "repository": {
     "type": "git",
     "url": "https://github.com/Gemeente-DenHaag/mijndenhaag-component-library.git",

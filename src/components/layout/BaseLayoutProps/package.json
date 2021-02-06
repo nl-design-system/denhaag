@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/baselayoutprops",
   "description": "Properties used in layout components",
   "author": "Municipality of The Hague",
-  "license": "MIT",
+  "license": "EUPL",
   "main": "BaseLayoutProps.tsx",
   "module": "BaseLayoutProps.tsx",
   "version": "0.1.3",

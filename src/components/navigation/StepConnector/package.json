@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/stepconnector",
   "description": "A StepConnector component",
   "author": "Municipality of The Hague",
-  "license": "MIT",
+  "license": "EUPL",
   "main": "StepConnector.tsx",
   "module": "StepConnector.tsx",
   "version": "0.1.3",

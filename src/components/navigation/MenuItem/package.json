@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/menuitem",
   "description": "A MenuItem component",
   "author": "Municipality of The Hague",
-  "license": "MIT",
+  "license": "EUPL",
   "main": "MenuItem.tsx",
   "module": "MenuItem.tsx",
   "version": "0.1.3",

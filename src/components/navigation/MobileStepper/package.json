@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/mobilestepper",
   "description": "A MobileStepper component",
   "author": "Municipality of The Hague",
-  "license": "MIT",
+  "license": "EUPL",
   "main": "MobileStepper.tsx",
   "module": "MobileStepper.tsx",
   "version": "0.1.3",

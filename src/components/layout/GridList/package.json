@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/gridlist",
   "author": "Municipality of The Hague",
   "description": "A GridList component",
-  "license": "MIT",
+  "license": "EUPL",
   "main": "GridList.tsx",
   "module": "GridList.tsx",
   "version": "0.1.3",

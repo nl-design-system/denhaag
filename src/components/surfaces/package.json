@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/surfaces",
   "author": "Municipality of The Hague",
   "description": "A package containing all the surface components.",
-  "license": "MIT",
+  "license": "EUPL",
   "main": "index.tsx",
   "module": "index.tsx",
   "version": "0.1.3",
