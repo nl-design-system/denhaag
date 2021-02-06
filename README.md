@@ -1,13 +1,13 @@
-# mdh-component-library
+# mijndenhaag-component-library
 
 > A library of React components for the Design System of The Netherlands
 
-[![NPM](https://img.shields.io/npm/v/nlds-react-components.svg)](https://www.npmjs.com/package/nlds-react-components) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/mijndenhaag-component-library.svg)](https://www.npmjs.com/package/mijndenhaag-component-library) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install trigger ci
 
 ```bash
-npm install --save nlds-react-components
+npm install --save mijndenhaag-component-library
 ```
 
 ## Usage
@@ -15,8 +15,8 @@ npm install --save nlds-react-components
 ```tsx
 import React, { Component } from 'react'
 
-import MyComponent from 'nlds-react-components'
-import 'nlds-react-components/dist/index.css'
+import MyComponent from 'mijndenhaag-component-library'
+import 'mijndenhaag-component-library/dist/index.css'
 
 class Example extends Component {
   render() {
@@ -64,10 +64,10 @@ Start by filling it with the following information:
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Gemeente-DenHaag/nlds-react-components.git",
+    "url": "https://github.com/Gemeente-DenHaag/mijndenhaag-component-library.git",
     "directory": "{path/to/component}"
   },
-  "bugs": "https://github.com/Gemeente-DenHaag/nlds-react-components/issues",
+  "bugs": "https://github.com/Gemeente-DenHaag/mijndenhaag-component-library/issues",
   "dependencies": {
     "@material-ui/core": "^4.11.0"
   }

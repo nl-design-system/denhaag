@@ -1,5 +1,5 @@
 Copyright (C) 2021 Gemeente Den Haag (https://denhaag.nl)
-mdh-component-library
+mijndenhaag-component-library
 
 This software is licensed under the European Public License (EUPL)
 The license is available in the 22 official languages of the EU. The English version is included here.
