@@ -1,31 +1,31 @@
-import React from 'react'
-import MaterialStep from '@material-ui/core/Step'
-import BaseProps from '@gemeente-denhaag/baseprops'
+import React from "react";
+import MaterialStep from "@material-ui/core/Step";
+import BaseProps from "@gemeente-denhaag/baseprops";
 
 export interface StepProps extends BaseProps {
   /**
    * Sets the step as active.
    * Is passed to child components.
    */
-  active?: boolean
+  active?: boolean;
 
   /**
    * Mark the step as completed.
    * Is passed to child components.
    */
-  completed?: boolean
+  completed?: boolean;
 
   /**
    * Mark the step as disabled,
    * will also disable the button if StepButton is a child of Step.
    * Is passed to child components.
    */
-  disabled?: boolean
+  disabled?: boolean;
 
   /**
    * Expand the step.
    */
-  expanded?: boolean
+  expanded?: boolean;
 }
 
 /**
@@ -34,7 +34,7 @@ export interface StepProps extends BaseProps {
  * @constructor Constructs an instance of Step.
  */
 export const Step: React.FC<StepProps> = (props: StepProps) => {
-  return <MaterialStep {...props}>{props.children}</MaterialStep>
-}
+  return <MaterialStep {...props}>{props.children}</MaterialStep>;
+};
 
-export default Step
+export default Step;

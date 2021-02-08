@@ -1,27 +1,27 @@
-import React from 'react'
-import MaterialStepIcon from '@material-ui/core/StepIcon'
-import { BaseClassesProps } from '@gemeente-denhaag/baseprops'
+import React from "react";
+import MaterialStepIcon from "@material-ui/core/StepIcon";
+import { BaseClassesProps } from "@gemeente-denhaag/baseprops";
 
 export interface StepIconProps extends BaseClassesProps {
   /**
    * Whether this step is active.
    */
-  active?: boolean
+  active?: boolean;
 
   /**
    * Mark the step as completed. Is passed to child components.
    */
-  completed?: boolean
+  completed?: boolean;
 
   /**
    * Mark the step as failed.
    */
-  error?: boolean
+  error?: boolean;
 
   /**
    * The label displayed in the step icon.
    */
-  icon: React.ReactNode
+  icon: React.ReactNode;
 }
 
 /**
@@ -30,7 +30,7 @@ export interface StepIconProps extends BaseClassesProps {
  * @constructor Constructs an instance of StepIcon.
  */
 export const StepIcon: React.FC<StepIconProps> = (props: StepIconProps) => {
-  return <MaterialStepIcon {...props} />
-}
+  return <MaterialStepIcon {...props} />;
+};
 
-export default StepIcon
+export default StepIcon;

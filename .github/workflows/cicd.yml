@@ -15,18 +15,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-    - name: Set up Node.js version
-      uses: actions/setup-node@v2
+      - name: Set up Node.js version
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14.x"
+
+      - name: yarn install, build storybook
+        run: |
+          npm install -g yarn
+          yarn install
+          yarn build-storybook
+
+    - name: Upload storybook
+      uses: actions/upload-artifact@v2
       with:
-        node-version: '14.x'
-
-    - name: yarn install, build storybook
-      run: |
-        npm install -g yarn
-        yarn install
-        yarn build-storybook
+        name: storybook
+        path: storybook-static
 
   deploy-staging:
     needs: build
@@ -34,6 +40,11 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - name: Download storybook
+      uses: actions/download-artifact@v2
+      with:
+        name: storybook
+
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v2
       with:
@@ -48,6 +59,11 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - name: Download storybook
+      uses: actions/download-artifact@v2
+      with:
+        name: storybook
+        
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v2
       with:
