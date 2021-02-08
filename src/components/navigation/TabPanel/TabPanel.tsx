@@ -1,13 +1,13 @@
-import React from 'react'
-import MaterialTabPanel from '@material-ui/lab/TabPanel'
-import BaseProps from '../../BaseProps/BaseProps'
+import React from "react";
+import MaterialTabPanel from "@material-ui/lab/TabPanel";
+import BaseProps from "@gemeente-denhaag/baseprops";
 
 export interface TabPanelProps extends BaseProps {
   /**
    * The value of the corresponding Tab.
    * Must use the index of the Tab when no value was passed to Tab
    */
-  value: string
+  value: string;
 }
 
 /**
@@ -16,7 +16,7 @@ export interface TabPanelProps extends BaseProps {
  * @constructor Constructs an instance of TabPanel.
  */
 export const TabPanel: React.FC<TabPanelProps> = (props: TabPanelProps) => {
-  return <MaterialTabPanel {...props}>{props.children}</MaterialTabPanel>
-}
+  return <MaterialTabPanel {...props}>{props.children}</MaterialTabPanel>;
+};
 
-export default TabPanel
+export default TabPanel;

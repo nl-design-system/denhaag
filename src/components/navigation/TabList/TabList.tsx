@@ -1,8 +1,8 @@
-import React from 'react'
-import MaterialTabList from '@material-ui/lab/TabList'
-import { BaseChildrenProps } from '../../BaseProps/BaseProps'
+import React from "react";
+import MaterialTabList from "@material-ui/lab/TabList";
+import { BaseChildrenProps } from "@gemeente-denhaag/baseprops";
 
-export interface TabListProps extends BaseChildrenProps {}
+export type TabListProps = BaseChildrenProps;
 
 /**
  * Wraps Tab components in a single list.
@@ -10,7 +10,7 @@ export interface TabListProps extends BaseChildrenProps {}
  * @constructor Constructs an instance of TabList.
  */
 export const TabList: React.FC<TabListProps> = (props: TabListProps) => {
-  return <MaterialTabList {...props}>{props.children}</MaterialTabList>
-}
+  return <MaterialTabList {...props}>{props.children}</MaterialTabList>;
+};
 
-export default TabList
+export default TabList;
