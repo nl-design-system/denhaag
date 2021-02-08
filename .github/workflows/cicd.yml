@@ -1,3 +1,5 @@
+name: Build and deploy Storybook to Azure Web App
+
 on:
   push:
     branches:
@@ -26,26 +28,46 @@ jobs:
           yarn install
           yarn build-storybook
 
+    - name: Upload storybook
+      uses: actions/upload-artifact@v2
+      with:
+        name: storybook
+        path: storybook-static
+
   deploy-staging:
+    needs: build
     if: github.ref == 'refs/heads/development'
     runs-on: ubuntu-latest
+    
     steps:
-      - name: "Deploy to Azure Web App"
-        uses: azure/webapps-deploy@v2
-        with:
-          app-name: "nldsreactstorybook-staging"
-          slot-name: "production"
-          publish-profile: ${{ secrets.AzureAppService_Nlds_Staging }}
-          package: storybook-static
+    - name: Download storybook
+      uses: actions/download-artifact@v2
+      with:
+        name: storybook
+
+    - name: 'Deploy to Azure Web App'
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: 'nldsreactstorybook-staging'
+        slot-name: 'production'
+        publish-profile: ${{ secrets.AzureAppService_Nlds_Staging }}
+        package: storybook-static
 
   deploy-production:
+    needs: build
     if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
+    
     steps:
-      - name: "Deploy to Azure Web App"
-        uses: azure/webapps-deploy@v2
-        with:
-          app-name: "nldsreactstorybook"
-          slot-name: "production"
-          publish-profile: ${{ secrets.AzureAppService_Nlds_Prod }}
-          package: storybook-static
+    - name: Download storybook
+      uses: actions/download-artifact@v2
+      with:
+        name: storybook
+        
+    - name: 'Deploy to Azure Web App'
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: 'nldsreactstorybook'
+        slot-name: 'production'
+        publish-profile: ${{ secrets.AzureAppService_Nlds_Prod }}
+        package: storybook-static
