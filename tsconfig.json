@@ -2,10 +2,7 @@
   "compilerOptions": {
     "outDir": "dist",
     "module": "esnext",
-    "lib": [
-      "dom",
-      "esnext"
-    ],
+    "lib": ["dom", "esnext"],
     "moduleResolution": "node",
     "jsx": "react",
     "sourceMap": true,
@@ -27,13 +24,6 @@
     "resolveJsonModule": true,
     "noEmit": true
   },
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "example",
-    "src/stories"
-  ]
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "example", "src/stories"]
 }

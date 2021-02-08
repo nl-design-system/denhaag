@@ -15,18 +15,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-    - name: Set up Node.js version
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14.x'
+      - name: Set up Node.js version
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14.x"
 
-    - name: yarn install, build storybook
-      run: |
-        npm install -g yarn
-        yarn install
-        yarn build-storybook
+      - name: yarn install, build storybook
+        run: |
+          npm install -g yarn
+          yarn install
+          yarn build-storybook
 
     - name: Upload storybook
       uses: actions/upload-artifact@v2
