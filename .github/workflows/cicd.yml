@@ -44,6 +44,7 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: storybook
+        path: storybook-static
 
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v2
@@ -63,6 +64,7 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: storybook
+        path: storybook-static
 
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v2
