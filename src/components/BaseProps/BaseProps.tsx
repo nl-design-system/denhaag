@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 /**
  * An interface which supplies the most standard properties of each component.
@@ -7,12 +7,12 @@ export default interface BaseProps {
   /**
    * The contents of the component.
    */
-  children?: React.ReactNode
+  children?: React.ReactNode;
 
   /**
    * Override or extend the styles applied to the component.
    */
-  classes?: object
+  classes?: Record<string, unknown>;
 }
 
 /**
@@ -22,7 +22,7 @@ export interface BaseChildrenProps {
   /**
    * The contents of the component.
    */
-  children?: React.ReactNode
+  children?: React.ReactNode;
 }
 
 /**
@@ -32,5 +32,5 @@ export interface BaseClassesProps {
   /**
    * Override or extend the styles applied to the component.
    */
-  classes?: object
+  classes?: Record<string, unknown>;
 }
