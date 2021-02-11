@@ -1,69 +1,66 @@
-import React from 'react'
-import { Meta, Story } from '@storybook/react'
-import {
-  ButtonGroup,
-  ButtonGroupProps
-} from '../../components/input/ButtonGroup/ButtonGroup'
-import pkg from '../../components/input/ButtonGroup/package.json'
-import Button from '../../components/input/Button/Button'
+import React from "react";
+import { Meta, Story } from "@storybook/react";
+import { ButtonGroup, ButtonGroupProps } from "../../components/input/ButtonGroup/ButtonGroup";
+import pkg from "../../components/input/ButtonGroup/package.json";
+import Button from "../../components/input/Button/Button";
 
 export default {
-  title: 'Components/Input/ButtonGroup',
+  title: "Components/Input/ButtonGroup",
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
   },
-  component: ButtonGroup
-} as Meta
+  component: ButtonGroup,
+} as Meta;
 
 const Template: Story<ButtonGroupProps> = (args: any) => (
   <ButtonGroup {...args}>
     <Button>Button</Button>
-    <Button color='primary'>I am primary coloured.</Button>
-    <Button size='large'>I am size large.</Button>
+    <Button color="primary">I am primary coloured.</Button>
+    <Button size="large">I am size large.</Button>
   </ButtonGroup>
-)
+);
 
 /**
  * Implementation of ButtonGroup
  */
-export const Default = Template.bind({})
+export const Default = Template.bind({});
 
 /**
  * All buttons disabled
  */
-export const DisabledGroup = Template.bind({})
+export const DisabledGroup = Template.bind({});
 DisabledGroup.args = {
-  disabled: true
-}
+  disabled: true,
+};
 
 /**
  * Buttons take up full width of the container.
  */
-export const FullWidth = Template.bind({})
+export const FullWidth = Template.bind({});
 FullWidth.args = {
-  fullWidth: true
-}
+  fullWidth: true,
+};
 
 /**
  * Buttons are coloured as secondary
  */
-export const SecondaryColoured = Template.bind({})
+export const SecondaryColoured = Template.bind({});
 SecondaryColoured.args = {
-  color: 'secondary'
-}
+  color: "secondary",
+};
 
 /**
  * Buttons are aligned vertically
  */
-export const VerticalOriented = Template.bind({})
+export const VerticalOriented = Template.bind({});
 VerticalOriented.args = {
-  orientation: 'vertical'
-}
+  orientation: "vertical",
+};
 
 /**
  * Textual variant
  */
-export const Textual = Template.bind({})
+export const Textual = Template.bind({});
 Textual.args = {
-  variant: 'text'
-}
+  variant: "text",
+};
