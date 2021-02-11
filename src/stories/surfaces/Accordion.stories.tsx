@@ -1,19 +1,22 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import { Accordion, AccordionProps } from "../../components/surfaces/Accordion/Accordion";
-import pkg from "../../components/surfaces/Accordion/package.json";
-import AccordionSummary from "../../components/surfaces/AccordionSummary/AccordionSummary";
-import { ExpandMore } from "@material-ui/icons";
-import { Typography } from "@material-ui/core";
-import AccordionDetails from "../../components/surfaces/AccordionDetails/AccordionDetails";
+import React from 'react'
+import { Meta, Story } from '@storybook/react'
+import {
+  Accordion,
+  AccordionProps
+} from '../../components/surfaces/Accordion/Accordion'
+import pkg from '../../components/surfaces/Accordion/package.json'
+import AccordionSummary from '../../components/surfaces/AccordionSummary/AccordionSummary'
+import { ExpandMore } from '@material-ui/icons'
+import { Typography } from '@material-ui/core'
+import AccordionDetails from '../../components/surfaces/AccordionDetails/AccordionDetails'
 
 export default {
-  title: "Components/Surfaces/Accordion",
+  title: 'Components/Surfaces/Accordion',
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
-  component: Accordion,
-} as Meta;
+  component: Accordion
+} as Meta
 
 const Template: Story<AccordionProps> = (args: any) => (
   <Accordion {...args}>
@@ -22,38 +25,38 @@ const Template: Story<AccordionProps> = (args: any) => (
     </AccordionSummary>
     <AccordionDetails>
       <Typography>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo
-        lobortis eget.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        malesuada lacus ex, sit amet blandit leo lobortis eget.
       </Typography>
     </AccordionDetails>
   </Accordion>
-);
+)
 
 /**
  * Implementation of Accordion
  */
-export const Default = Template.bind({});
+export const Default = Template.bind({})
 
 /**
  * A tab which is expanded by default
  */
-export const DefaultExpanded = Template.bind({});
+export const DefaultExpanded = Template.bind({})
 DefaultExpanded.args = {
-  defaultExpanded: true,
-};
+  defaultExpanded: true
+}
 
 /**
  * A disabled Accordion
  */
-export const Disabled = Template.bind({});
+export const Disabled = Template.bind({})
 Disabled.args = {
-  disabled: true,
-};
+  disabled: true
+}
 
 /**
  * An Accordion component with square edges.
  */
-export const Squared = Template.bind({});
+export const Squared = Template.bind({})
 Squared.args = {
-  square: true,
-};
+  square: true
+}

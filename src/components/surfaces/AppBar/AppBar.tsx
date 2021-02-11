@@ -1,19 +1,19 @@
-import React from "react";
-import MaterialAppBar from "@material-ui/core/AppBar";
-import BaseProps from "@gemeente-denhaag/baseprops";
+import React from 'react'
+import MaterialAppBar from '@material-ui/core/AppBar'
+import BaseProps from '@gemeente-denhaag/baseprops'
 
 export interface AppBarProps extends BaseProps {
   /**
    * The color of the component. It supports those theme colors that make sense for this component.
    */
-  color?: "default" | "inherit" | "primary" | "secondary" | "transparent";
+  color?: 'default' | 'inherit' | 'primary' | 'secondary' | 'transparent'
 
   /**
    * The positioning type.
    * The behavior of the different options is described in the MDN web docs.
    * **Note**: sticky is not universally supported and will fall back to static when unavailable.
    */
-  position?: "absolute" | "fixed" | "relative" | "static" | "sticky";
+  position?: 'absolute' | 'fixed' | 'relative' | 'static' | 'sticky'
 }
 
 /**
@@ -22,7 +22,7 @@ export interface AppBarProps extends BaseProps {
  * @constructor Constructs an instance of AppBar.
  */
 export const AppBar: React.FC<AppBarProps> = (props: AppBarProps) => {
-  return <MaterialAppBar {...props}>{props.children}</MaterialAppBar>;
-};
+  return <MaterialAppBar {...props}>{props.children}</MaterialAppBar>
+}
 
-export default AppBar;
+export default AppBar

@@ -1,6 +1,6 @@
-import React from "react";
-import MaterialListItemText from "@material-ui/core/ListItemText";
-import BaseProps from "@gemeente-denhaag/baseprops";
+import React from 'react'
+import MaterialListItemText from '@material-ui/core/ListItemText'
+import BaseProps from '@gemeente-denhaag/baseprops'
 
 export interface ListItemTextProps extends BaseProps {
   /**
@@ -9,42 +9,42 @@ export interface ListItemTextProps extends BaseProps {
    * the `children` (or `primary`) text, and optional `secondary` text
    * with the Typography component.
    */
-  disableTypography?: boolean;
+  disableTypography?: boolean
 
   /**
    * If `true`, the children will be indented.
    * This should be used if there is no left avatar or left icon.
    */
-  inset?: boolean;
+  inset?: boolean
 
   /**
    * The main content element.
    */
-  primary?: React.ReactNode;
+  primary?: React.ReactNode
 
   /**
    * These props will be forwarded to the primary typography component
    * (as long as disableTypography is not `true`).
    */
-  primaryTypographyProps?: Record<string, unknown>;
+  primaryTypographyProps?: object
 
   /**
    * The secondary content element.
    */
-  secondary?: React.ReactNode;
+  secondary?: React.ReactNode
 
   /**
    * These props will be forwarded to the secondary typography component
    * (as long as disableTypography is not `true`).
    */
-  secondaryTypographyProps?: Record<string, unknown>;
+  secondaryTypographyProps?: object
 }
 
 /**
  * Primary UI component for user interaction
  */
 export const ListItemText: React.FC<ListItemTextProps> = (props: ListItemTextProps) => {
-  return <MaterialListItemText {...props}>{props.children}</MaterialListItemText>;
-};
+  return <MaterialListItemText {...props}>{props.children}</MaterialListItemText>
+}
 
-export default ListItemText;
+export default ListItemText

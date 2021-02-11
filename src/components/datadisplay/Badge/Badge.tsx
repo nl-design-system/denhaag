@@ -1,48 +1,48 @@
-import React from "react";
-import MaterialBadge from "@material-ui/core/Badge";
-import BaseDataDisplayProps from "@gemeente-denhaag/basedatadisplayprops";
+import React from 'react'
+import MaterialBadge from '@material-ui/core/Badge'
+import BaseDataDisplayProps from '@gemeente-denhaag/basedatadisplayprops'
 
 export interface BadgeProps extends BaseDataDisplayProps {
   /**
    * The anchor of the badge.
    */
-  anchorOrigin?: { horizontal: "left" | "right"; vertical: "bottom" | "top" };
+  anchorOrigin?: { horizontal: 'left' | 'right', vertical: 'bottom' | 'top' }
 
   /**
    * The content rendered within the badge.
    */
-  badgeContent?: React.ReactNode;
+  badgeContent?: React.ReactNode
 
   /**
    * The color of the component.
    * It supports those theme colors that make sense for this component.
    */
-  color?: "default" | "error" | "primary" | "secondary";
+  color?: 'default' | 'error' | 'primary' | 'secondary'
 
   /**
    * If true, the badge will be invisible.
    */
-  invisible?: boolean;
+  invisible?: boolean
 
   /**
    * Max count to show.
    */
-  max?: number;
+  max?: number
 
   /**
    * Wrapped shape the badge should overlap.
    */
-  overlap?: "circle" | "rectangle";
+  overlap?: 'circle' | 'rectangle'
 
   /**
    * Controls whether the badge is hidden when badgeContent is zero.
    */
-  showZero?: boolean;
+  showZero?: boolean
 
   /**
    * The variant to use.
    */
-  variant?: "dot" | "standard";
+  variant?: 'dot' | 'standard'
 }
 
 /**
@@ -51,7 +51,7 @@ export interface BadgeProps extends BaseDataDisplayProps {
  * @constructor Constructs an instance of Badge.
  */
 export const Badge: React.FC<BadgeProps> = (props: BadgeProps) => {
-  return <MaterialBadge {...props}>{props.children}</MaterialBadge>;
-};
+  return <MaterialBadge {...props}>{props.children}</MaterialBadge>
+}
 
-export default Badge;
+export default Badge

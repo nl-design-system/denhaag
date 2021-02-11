@@ -1,16 +1,16 @@
-import MaterialSelect from "@material-ui/core/Select";
-import React from "react";
-import { InputProps } from "@material-ui/core/Input";
-import { SelectInputProps } from "@material-ui/core/Select/SelectInput";
-import { MenuProps } from "@material-ui/core";
-import BaseProps from "@gemeente-denhaag/baseprops";
+import MaterialSelect from '@material-ui/core/Select'
+import React from 'react'
+import { InputProps } from '@material-ui/core/Input'
+import { SelectInputProps } from '@material-ui/core/Select/SelectInput'
+import { MenuProps } from '@material-ui/core'
+import BaseProps from '@gemeente-denhaag/baseprops'
 
 export interface SelectProps extends BaseProps {
   /**
    * If `true`, the width of the popover will automatically be set according to the items inside the
    * menu, otherwise it will be at least the width of the select input.
    */
-  autoWidth?: boolean;
+  autoWidth?: boolean
 
   /**
    * The option elements to populate the select with.
@@ -18,12 +18,12 @@ export interface SelectProps extends BaseProps {
    *
    * ⚠️The `MenuItem` elements **must** be direct descendants when `native` is false.
    */
-  children?: React.ReactNode;
+  children?: React.ReactNode
 
   /**
    * The default element value. Use when the component is not controlled.
    */
-  defaultValue?: any;
+  defaultValue?: any
 
   /**
    * If `true`, a value is displayed even if no items are selected.
@@ -31,59 +31,59 @@ export interface SelectProps extends BaseProps {
    * In order to display a meaningful value, a function should be passed to the `renderValue` prop which returns the value to be displayed when no items are selected.
    * You can only use it when the `native` prop is `false` (default).
    */
-  displayEmpty?: boolean | undefined;
+  displayEmpty?: boolean
 
   /**
    * The icon that displays the arrow.
    */
-  IconComponent?: React.ElementType;
+  IconComponent?: React.ElementType
 
   /**
    * The `id` of the wrapper element or the `select` element when `native`.
    */
-  id?: string;
+  id?: string
 
   /**
    * An `Input` element; does not have to be a material-ui specific `Input`.
    */
-  input?: React.ReactElement<any, any>;
+  input?: React.ReactElement<any, any>
 
   /**
    * [Attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Attributes) applied to the `input` element.
    * When `native` is `true`, the attributes are applied on the `select` element.
    */
-  inputProps?: InputProps["inputProps"];
+  inputProps?: InputProps['inputProps']
 
   /**
    * See [OutlinedInput#label](/api/outlined-input/#props)
    */
-  label?: React.ReactNode;
+  label?: React.ReactNode
 
   /**
    * The ID of an element that acts as an additional label. The Select will
    * be labelled by the additional label and the selected value.
    */
-  labelId?: string;
+  labelId?: string
 
   /**
    * See [OutlinedInput#label](/api/outlined-input/#props)
    */
-  labelWidth?: number;
+  labelWidth?: number
 
   /**
    * Props applied to the [`Menu`](/api/menu/) element.
    */
-  MenuProps?: Partial<MenuProps>;
+  MenuProps?: Partial<MenuProps>
 
   /**
    * If `true`, `value` must be an array and the menu will support multiple selections.
    */
-  multiple?: boolean;
+  multiple?: boolean
 
   /**
    * If `true`, the component will be using a native `select` element.
    */
-  native?: boolean;
+  native?: boolean
 
   /**
    * Callback function fired when a menu item is selected.
@@ -93,7 +93,7 @@ export interface SelectProps extends BaseProps {
    * @param {object} [child] The react element that was selected when `native` is `false` (default).
    * @document
    */
-  onChange?: SelectInputProps["onChange"];
+  onChange?: SelectInputProps['onChange']
 
   /**
    * Callback fired when the component requests to be closed.
@@ -101,7 +101,7 @@ export interface SelectProps extends BaseProps {
    *
    * @param {object} event The event source of the callback.
    */
-  onClose?: (event: React.ChangeEvent<unknown>) => void;
+  onClose?: (event: React.ChangeEvent<{}>) => void
 
   /**
    * Callback fired when the component requests to be opened.
@@ -109,13 +109,13 @@ export interface SelectProps extends BaseProps {
    *
    * @param {object} event The event source of the callback.
    */
-  onOpen?: (event: React.ChangeEvent<unknown>) => void;
+  onOpen?: (event: React.ChangeEvent<{}>) => void
 
   /**
    * Control `select` open state.
    * You can only use it when the `native` prop is `false` (default).
    */
-  open?: boolean;
+  open?: boolean
 
   /**
    * Render the selected value.
@@ -124,12 +124,12 @@ export interface SelectProps extends BaseProps {
    * @param {any} value The `value` provided to the component.
    * @returns {ReactNode}
    */
-  renderValue?: (value: SelectProps["value"]) => React.ReactNode;
+  renderValue?: (value: SelectProps['value']) => React.ReactNode
 
   /**
    * Props applied to the clickable div element.
    */
-  SelectDisplayProps?: React.HTMLAttributes<HTMLDivElement>;
+  SelectDisplayProps?: React.HTMLAttributes<HTMLDivElement>
 
   /**
    * The input value. Providing an empty string will select no options.
@@ -140,17 +140,17 @@ export interface SelectProps extends BaseProps {
    * If the value is not an object, the string representation must match with the string representation of the option in order to be selected.
    * @document
    */
-  value?: any;
+  value?: any
 }
 
 /**
  * Select components are used for collecting user provided information from a list of options.
  */
 export const Select: React.FC<SelectProps> = (props: SelectProps) => {
-  return <MaterialSelect {...props}>{props.children}</MaterialSelect>;
-};
+  return <MaterialSelect {...props}>{props.children}</MaterialSelect>
+}
 
 /**
  * Default export for Select
  */
-export default Select;
+export default Select

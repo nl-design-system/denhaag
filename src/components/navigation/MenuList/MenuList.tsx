@@ -1,32 +1,32 @@
-import React from "react";
-import MaterialMenuList from "@material-ui/core/MenuList";
-import { BaseChildrenProps } from "@gemeente-denhaag/baseprops";
+import React from 'react'
+import MaterialMenuList from '@material-ui/core/MenuList'
+import { BaseChildrenProps } from '@gemeente-denhaag/baseprops'
 
 export interface MenuListProps extends BaseChildrenProps {
   /**
    * If true, will focus the [role="menu"] container and move into tab order.
    */
-  autoFocus?: boolean;
+  autoFocus?: boolean
 
   /**
    * If true, will focus the first menuitem if variant="menu" or selected item if variant="selectedMenu".
    */
-  autoFocusItem?: boolean;
+  autoFocusItem?: boolean
 
   /**
    * If true, will allow focus on disabled items.
    */
-  disabledItemsFocusable?: boolean;
+  disabledItemsFocusable?: boolean
 
   /**
    * If true, the menu items will not wrap focus.
    */
-  disableListWrap?: boolean;
+  disableListWrap?: boolean
 
   /**
    * The variant to use.
    */
-  variant?: "menu" | "selectedMenu";
+  variant?: 'menu' | 'selectedMenu'
 }
 
 /**
@@ -35,7 +35,7 @@ export interface MenuListProps extends BaseChildrenProps {
  * @constructor Constructs an instance of MenuList.
  */
 export const MenuList: React.FC<MenuListProps> = (props: MenuListProps) => {
-  return <MaterialMenuList {...props}>{props.children}</MaterialMenuList>;
-};
+  return <MaterialMenuList {...props}>{props.children}</MaterialMenuList>
+}
 
-export default MenuList;
+export default MenuList
