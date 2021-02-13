@@ -85,7 +85,7 @@ Start by filling it with the following information:
 
 _Don't forget to add all needed dependencies for your component to the dependencies section of the component's `package.json`._
 
-We will also need to add our component to the meta-package which installs all of the nlds react components in the same category. We can do this by adding it to the list of dependencies.
+We will also need to add our component to the meta-package which installs all of the Den Haag react components in the same category. We can do this by adding it to the list of dependencies.
 The file we need is located here: `src/components/[CATEGORY]/package.json`\
 An entry should be structured like this:
 
@@ -93,7 +93,7 @@ An entry should be structured like this:
 "@gemeente-denhaag/{component_name}": "^0.1.0"
 ```
 
-Similarly, if you create a new category we need to add the category package to the list of dependencies in the meta-package which installs all of the nlds react components.
+Similarly, if you create a new category we need to add the category package to the list of dependencies in the meta-package which installs all of the Den Haag react components.
 This file is located here: `src/components/package.json`
 
 An entry should be structured in the same way as above.
