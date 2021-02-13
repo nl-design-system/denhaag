@@ -19,7 +19,7 @@ export interface ListItemProps extends BaseProps {
    * If `true`, the list item will be a button (using `ButtonBase`). Props intended
    * for `ButtonBase` can then be applied to `ListItem`.
    */
-  button?: false;
+  button?: any;
 
   /**
    * The component used for the root node.
