@@ -1,0 +1,7 @@
+:root {
+  --mdh-radio-primary-colour: rgb(34, 123, 60);
+  --mdh-radio-secondary-colour: #EDBF07;
+  --mdh-radio-hover-colour: #9a6f1e;
+  --mdh-radio-focus-colour: #9a6f1e;
+  --mdh-radio-disabled-colour: #666;
+}

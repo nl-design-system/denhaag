@@ -1,5 +1,6 @@
 import MaterialRadio from '@material-ui/core/Radio'
 import React from 'react'
+import { useStyles } from './style'
 
 export interface RadioProps {
   /**
@@ -68,7 +69,16 @@ export interface RadioProps {
 }
 
 export const Radio: React.FC<RadioProps> = (props: RadioProps) => {
-  return <MaterialRadio {...props} />
+  const classes = useStyles()
+  const classKeys = {
+    colorPrimary: classes.colorPrimary,
+    colorSecondary: classes.colorSecondary,
+    colorDefault: classes.colorDefault,
+    disabled: classes.disabled,
+    checked: classes.checked
+  }
+
+  return <MaterialRadio classes={classKeys} {...props} />
 }
 
 /**
