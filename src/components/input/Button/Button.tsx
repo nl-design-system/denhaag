@@ -2,7 +2,7 @@ import MaterialButton from '@material-ui/core/Button'
 import React from 'react'
 import BaseProps from '../../BaseProps/BaseProps'
 import './button-design-tokens.module.css'
-// import { createMuiTheme, Theme, ThemeProvider } from "@material-ui/core";
+import { useStyles } from './style'
 
 export interface ButtonProps extends BaseProps {
   /**
@@ -40,11 +40,25 @@ export interface ButtonProps extends BaseProps {
 /**
  * Primary UI component for user interaction
  */
-export const Button: React.FC<ButtonProps> = (
-  props: ButtonProps
-) => {
+export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
+  const classes = useStyles()
+  const classKeys = {
+    contained: classes.contained,
+    containedPrimary: classes.containedPrimary,
+    containedSecondary: classes.containedSecondary,
+    disabled: classes.disabled,
+    outlined: classes.outlined,
+    outlinedPrimary: classes.outlinedPrimary,
+    outlinedSecondary: classes.outlinedSecondary,
+    text: classes.text,
+    textPrimary: classes.textPrimary,
+    textSecondary: classes.textSecondary
+  }
+
   return (
-      <MaterialButton {...props}>{props.children}</MaterialButton>
+    <MaterialButton classes={classKeys} {...props}>
+      {props.children}
+    </MaterialButton>
   )
 }
 
