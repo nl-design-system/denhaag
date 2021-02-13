@@ -25,7 +25,7 @@ const Template: Story<ListProps> = (args: any) => (
   <List {...args}>
     <ListItem dense>
       <ListItemIcon>
-        <Checkbox checked />
+        <Checkbox />
       </ListItemIcon>
       <ListItemText primary="Line item" />
       <ListItemSecondaryAction>
