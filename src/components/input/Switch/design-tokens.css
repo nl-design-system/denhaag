@@ -1,0 +1,9 @@
+:root {
+  --mdh-switch-primary-colour: rgb(34, 123, 60);
+  --mdh-switch-secondary-colour: #EDBF07;
+  --mdh-switch-hover-colour: #9a6f1e;
+  --mdh-switch-focus-colour: #9a6f1e;
+  --mdh-switch-disabled-colour: #666;
+  --mdh-switch-unchecked-track-background-colour: var(--mdh-switch-primary-colour);
+  --mdh-switch-checked-track-background-colour: var(--mdh-switch-secondary-colour);
+}

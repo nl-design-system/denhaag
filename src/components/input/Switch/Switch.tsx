@@ -1,6 +1,7 @@
 import MaterialSwitch from '@material-ui/core/Switch'
 import { BaseClassesProps } from '../../BaseProps/BaseProps'
 import React from 'react'
+import { useStyles } from './style'
 
 export interface SwitchProps extends BaseClassesProps {
   /**
@@ -44,7 +45,16 @@ export interface SwitchProps extends BaseClassesProps {
  * Switches allow a user to toggle the state of a setting on or off.
  */
 export const Switch: React.FC<SwitchProps> = (props: SwitchProps) => {
-  return <MaterialSwitch {...props} />
+  const classes = useStyles();
+  const classKeys = {
+    colorPrimary: classes.colorPrimary,
+    colorSecondary: classes.colorSecondary,
+    checked: classes.checked,
+    disabled: classes.disabled,
+    track: classes.track
+  }
+
+  return <MaterialSwitch classes={classKeys} {...props} />
 }
 
 /**
