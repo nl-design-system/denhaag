@@ -2,13 +2,11 @@
 
 version 1.00 / 01-12-2020
 
-// TODO: Replace `{{license}}` with actual license of the repository.
-
-This text of this document is licensed under the {{license}} license.
+This text of this document is licensed under the EUPL-1.2 license.
 
 ---
 
-The Municipality of The Hague (hereinafter: The Hague) and the NL Design System Community (hereinafter: the Community) would like to utilise the knowledge of third parties in developing digital resources that could contribute to a Design System for the public sector (hereinafter referred to collectively as: the Digital Resources).
+The ©Gemeente Den Haag (hereinafter: The Hague) and the NL Design System Community (hereinafter: the Community) would like to utilise the knowledge of third parties in developing digital resources that could contribute to a Design System for the public sector (hereinafter referred to collectively as: the Digital Resources).
 
 You (hereinafter: the Contributor) wish to contribute to the development of the Digital Resources, for example in the form of new or an adaptation of existing software, designs, documentation, digital files and/or other works to which intellectual property rights can attach (hereinafter: the Contributions).
 
