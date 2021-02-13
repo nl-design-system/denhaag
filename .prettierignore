@@ -7,7 +7,5 @@ CHANGELOG.md
 package.json
 package-lock.json
 storybook-static
-
-#Husky
 .husky
-
+lerna-debug.log
