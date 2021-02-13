@@ -1,13 +1,13 @@
-# mijndenhaag-component-library
+# denhaag-component-library
 
-> A library of React components for the Design System of The Netherlands
+> A library of React components for the municipality of The Hague
 
-[![NPM](https://img.shields.io/npm/v/mijndenhaag-component-library.svg)](https://www.npmjs.com/package/mijndenhaag-component-library) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/denhaag-component-library.svg)](https://www.npmjs.com/package/denhaag-component-library) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install trigger ci
 
 ```bash
-npm install --save mijndenhaag-component-library
+npm install --save denhaag-component-library
 ```
 
 ## Usage
@@ -15,8 +15,8 @@ npm install --save mijndenhaag-component-library
 ```tsx
 import React, { Component } from "react";
 
-import MyComponent from 'mijndenhaag-component-library'
-import 'mijndenhaag-component-library/dist/index.css'
+import MyComponent from 'denhaag-component-library'
+import 'denhaag-component-library/dist/index.css'
 
 class Example extends Component {
   render() {
@@ -73,10 +73,10 @@ Start by filling it with the following information:
   "license": "EUPL-1.2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Gemeente-DenHaag/mijndenhaag-component-library.git",
+    "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
     "directory": "{path/to/component}"
   },
-  "bugs": "https://github.com/Gemeente-DenHaag/mijndenhaag-component-library/issues",
+  "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
   "dependencies": {
     "@material-ui/core": "^4.11.0"
   }
