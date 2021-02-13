@@ -1,12 +1,18 @@
 {
-  "name": "nlds-react-components-pickers-utilsprovider",
-  "version": "0.1.0",
+  "name": "@gemeente-denhaag/pickers-utilsprovider",
+  "version": "0.1.3",
   "description": "A Utilsprovider for pickers",
   "author": "Municipality of The Hague",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gemeente-DenHaag/nlds-react-components.git",
+    "directory": "src/components/input/Pickers/UtilsProvider"
+  },
+  "bugs": "https://github.com/Gemeente-DenHaag/nlds-react-components/issues",
   "dependencies": {
-    "@material-ui/pickers": "^3.2.10",
     "@date-io/date-fns": "^1.3.13",
+    "@material-ui/pickers": "^3.2.10",
     "date-fns": "^2.16.1"
   }
 }

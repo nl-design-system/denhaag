@@ -1,8 +1,5 @@
-import React from 'react'
-import BaseProps, {
-  BaseChildrenProps,
-  BaseClassesProps
-} from '../../BaseProps/BaseProps'
+import React from "react";
+import BaseProps, { BaseChildrenProps, BaseClassesProps } from "@gemeente-denhaag/baseprops";
 
 export default interface BaseDataDisplayProps extends BaseProps {
   /**
@@ -10,7 +7,7 @@ export default interface BaseDataDisplayProps extends BaseProps {
    * Either a string to use a HTML element or a component.
    * Overrides the behavior of the variantMapping prop.
    */
-  component?: React.ElementType
+  component?: React.ElementType;
 }
 
 export interface BaseDataDisplayChildrenProps extends BaseChildrenProps {
@@ -19,7 +16,7 @@ export interface BaseDataDisplayChildrenProps extends BaseChildrenProps {
    * Either a string to use a HTML element or a component.
    * Overrides the behavior of the variantMapping prop.
    */
-  component?: React.ElementType
+  component?: React.ElementType;
 }
 
 export interface BaseDataDisplayClassesProps extends BaseClassesProps {
@@ -28,5 +25,5 @@ export interface BaseDataDisplayClassesProps extends BaseClassesProps {
    * Either a string to use a HTML element or a component.
    * Overrides the behavior of the variantMapping prop.
    */
-  component?: React.ElementType
+  component?: React.ElementType;
 }

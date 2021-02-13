@@ -1,217 +1,208 @@
-import { ParsableDate } from '@material-ui/pickers/constants/prop-types'
-import { MaterialUiPickersDate as DateIOType } from '@material-ui/pickers/typings/date'
-import {
-  IconButtonProps,
-  PopoverProps,
-  TextFieldProps
-} from '@material-ui/core'
+import { ParsableDate } from "@material-ui/pickers/constants/prop-types";
+import { MaterialUiPickersDate as DateIOType } from "@material-ui/pickers/typings/date";
+import { IconButtonProps, PopoverProps, TextFieldProps } from "@material-ui/core";
 
-import { DialogProps } from '@material-ui/core/Dialog/Dialog'
+import { DialogProps } from "@material-ui/core/Dialog/Dialog";
 
-import {
-  ReactElement,
-  ReactNode,
-  ComponentClass,
-  FunctionComponent
-} from 'react'
-import { ToolbarComponentProps } from '@material-ui/pickers/Picker/Picker'
+import { ReactElement, ReactNode, ComponentClass, FunctionComponent } from "react";
+import { ToolbarComponentProps } from "@material-ui/pickers/Picker/Picker";
 
 export interface BaseDatePickerProps {
   /**
    * Onchange callback @DateIOType
    * @param date The Date value of the DatePicker
    */
-  onChange: (date: any) => void
+  onChange: (date: any) => void;
 
   /**
    * DatePicker value
    */
-  value: any
+  value: any;
 
   /**
    * Enables keyboard listener for moving between days in calendar
    */
-  allowKeyBoardControl?: boolean
+  allowKeyBoardControl?: boolean;
 
   /**
    * To animate scrolling to current year (using scrollIntoView)
    */
-  animateYearScrolling?: boolean
+  animateYearScrolling?: boolean;
 
   /**
    * Auto accept date on selection
    */
-  AutoOk?: boolean
+  AutoOk?: boolean;
 
   /**
    * "CANCEL" label message
    */
-  cancelLabel?: ReactNode
+  cancelLabel?: ReactNode;
 
   /**
    * Show clear action in picker dialog
    */
-  clearable?: boolean
+  clearable?: boolean;
 
   /**
    * "CLEAR" label message
    */
-  clearLabel?: ReactNode
+  clearLabel?: ReactNode;
 
   /**
    * Props to be passed directly to material-ui Dialog
    */
-  DialogProps?: Partial<DialogProps>
+  DialogProps?: Partial<DialogProps>;
 
   /**
    * Disable picker and text field
    */
-  disabled?: boolean
+  disabled?: boolean;
 
   /**
    * Disables future dates
    */
-  disableFuture?: boolean
+  disableFuture?: boolean;
 
   /**
    * Disables past dates
    */
-  disablePast?: boolean
+  disablePast?: boolean;
 
   /**
    * Hide toolbar and show only date/time views
    */
-  disableToolbar?: boolean
+  disableToolbar?: boolean;
 
   /**
    * Message displaying in text field, if null passed (doesn't work in keyboard mode)
    */
-  emptyLabel?: string
+  emptyLabel?: string;
 
   /**
    * Format string
    */
-  format?: string
+  format?: string;
 
   /**
    * Date that will be initially highlighted if null was passed
    */
-  initialFocusedDate?: ParsableDate
+  initialFocusedDate?: ParsableDate;
 
   /**
    * Pass material-ui text field variant down, bypass internal variant prop
    */
-  inputVariant?: 'standard' | 'outlined' | 'filled'
+  inputVariant?: "standard" | "outlined" | "filled";
 
   /**
    * Message, appearing when date cannot be parsed
    */
-  invalidDateMessage?: ReactNode
+  invalidDateMessage?: ReactNode;
 
   /**
-   * 	Message displaying in text field if date is invalid (doesn't work in keyboard mode)
+   * Message displaying in text field if date is invalid (doesn't work in keyboard mode)
    */
-  invalidLabel?: string
+  invalidLabel?: string;
 
   /**
    * Dynamic formatter of text field value
    */
-  labelFunc?: (date: DateIOType, invalidLabel: string) => string
+  labelFunc?: (date: DateIOType, invalidLabel: string) => string;
 
   /**
    * Props to pass to left arrow button
    */
-  leftArrowButtonProps?: Partial<IconButtonProps>
+  leftArrowButtonProps?: Partial<IconButtonProps>;
 
   /**
    * Left arrow icon
    */
-  leftArrowIcon?: ReactNode
+  leftArrowIcon?: ReactNode;
 
   /**
    * Custom loading indicator
    */
-  loadingIndicator?: ReactElement
+  loadingIndicator?: ReactElement;
 
   /**
    * Max selectable date
    */
-  maxDate?: ParsableDate
+  maxDate?: ParsableDate;
 
   /**
    * Error message, shown if date is more then maximal date
    */
-  maxDateMessage?: ReactNode
+  maxDateMessage?: ReactNode;
 
   /**
    * Min selectable date
    */
-  minDate?: ParsableDate
+  minDate?: ParsableDate;
 
   /**
    * Error message, showf if date is less than minimal date
    */
-  minDateMessage?: ReactNode
+  minDateMessage?: ReactNode;
 
   /**
    * "OK" label message
    */
-  okLabel?: ReactNode
+  okLabel?: ReactNode;
 
   /**
    * Callback fired when date is accepted
    */
-  onAccept?: (date: DateIOType) => void
+  onAccept?: (date: DateIOType) => void;
 
   /**
    * On close callback
    */
-  onClose?: () => void
+  onClose?: () => void;
 
   /**
    * Callback fired when new error should be displayed (!! This is a side effect. Be careful if you want to rerender the component)
    */
-  onError?: (error: ReactNode, value: DateIOType) => void
+  onError?: (error: ReactNode, value: DateIOType) => void;
 
   /**
    * Callback firing on month change. Return promise to render spinner till it will not be resolved
    */
-  onMonthChange?: (date: DateIOType) => void
+  onMonthChange?: (date: DateIOType) => void;
 
   /**
    * Callback fired when the picker is opened
    */
-  onOpen?: () => void
+  onOpen?: () => void;
 
   /**
    * Callback fired when the year changes
    */
-  onYearChange?: (date: DateIOType) => void
+  onYearChange?: (date: DateIOType) => void;
 
   /**
    * Controls picker open state
    */
-  open?: boolean
+  open?: boolean;
 
   /**
    * First view to show in DatePicker
    */
-  openTo?: 'date' | 'year' | 'month'
+  openTo?: "date" | "year" | "month";
 
   /**
    * Force rendering in particular orientation
    */
-  orientation?: 'portrait' | 'landscape'
+  orientation?: "portrait" | "landscape";
 
   /**
    * Popover props passed to material-ui Popover (with variant="inline")
    */
-  PopoverProps?: Partial<PopoverProps>
+  PopoverProps?: Partial<PopoverProps>;
 
   /**
    * Make picker readonly
    */
-  readOnly?: boolean
+  readOnly?: boolean;
 
   /**
    * Custom renderer for day
@@ -221,61 +212,57 @@ export interface BaseDatePickerProps {
     selectedDate: DateIOType,
     dayInCurrentMonth: boolean,
     dayComponent: ReactElement
-  ) => ReactElement
+  ) => ReactElement;
 
   /**
-   * 	Props to pass to right arrow button
+   * Props to pass to right arrow button
    */
-  rightArrowButtonProps?: Partial<IconButtonProps>
+  rightArrowButtonProps?: Partial<IconButtonProps>;
 
   /**
    * Right arrow icon
    */
-  rightArrowIcon?: ReactNode
+  rightArrowIcon?: ReactNode;
 
   /**
    * Disable specific date
    */
-  shouldDisableDate?: (date: DateIOType) => boolean
+  shouldDisableDate?: (date: DateIOType) => boolean;
 
   /**
    * If true today button will be displayed **Note** that clear button has higher priority
    */
-  showTodayButton?: boolean
+  showTodayButton?: boolean;
 
   /**
    * Compare dates by the exact timestamp, instead of start/end of date
    */
-  strictCompareDates?: boolean
+  strictCompareDates?: boolean;
 
   /**
    * Override input component
    */
-  TextFieldComponent?:
-    | ComponentClass<TextFieldProps, any>
-    | FunctionComponent<TextFieldProps>
+  TextFieldComponent?: ComponentClass<TextFieldProps, any> | FunctionComponent<TextFieldProps>;
 
   /**
    * "TODAY" label message
    */
-  todayLabel?: ReactNode
+  todayLabel?: ReactNode;
 
   /**
    * Component that will replace default toolbar renderer
    */
-  ToolbarComponent?:
-    | ComponentClass<ToolbarComponentProps, any>
-    | FunctionComponent<ToolbarComponentProps>
+  ToolbarComponent?: ComponentClass<ToolbarComponentProps, any> | FunctionComponent<ToolbarComponentProps>;
 
   /**
    * Picker container option
    */
-  variant?: 'dialog' | 'inline' | 'static'
+  variant?: "dialog" | "inline" | "static";
 
   /**
    * Array of views to show
    */
-  views?: Array<'year' | 'date' | 'month'>
+  views?: Array<"year" | "date" | "month">;
 }
 
-export default BaseDatePickerProps
+export default BaseDatePickerProps;

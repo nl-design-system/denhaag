@@ -1,17 +1,25 @@
 {
-  "name": "nlds-react-components-mobilestepper",
+  "name": "@gemeente-denhaag/mobilestepper",
   "description": "A MobileStepper component",
   "author": "Municipality of The Hague",
   "license": "MIT",
-  "version": "0.1.0",
+  "main": "MobileStepper.tsx",
+  "module": "MobileStepper.tsx",
+  "version": "0.1.3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gemeente-DenHaag/nlds-react-components.git",
+    "directory": "src/components/navigation/MobileStepper"
+  },
+  "bugs": "https://github.com/Gemeente-DenHaag/nlds-react-components/issues",
   "dependencies": {
-    "@material-ui/core": "^4.11.0",
-    "nlds-react-components-baseprops": "^0.1.0",
-    "nlds-react-components-stepbutton": "^0.1.0",
-    "nlds-react-components-stepicon": "^0.1.0",
-    "nlds-react-components-steplabel": "^0.1.0",
-    "nlds-react-components-stepconnector": "^0.1.0",
-    "nlds-react-components-stepcontent": "^0.1.0",
-    "nlds-react-components-step": "^0.1.0"
+    "@gemeente-denhaag/baseprops": "^0.1.3",
+    "@gemeente-denhaag/step": "^0.1.3",
+    "@gemeente-denhaag/stepbutton": "^0.1.3",
+    "@gemeente-denhaag/stepconnector": "^0.1.3",
+    "@gemeente-denhaag/stepcontent": "^0.1.3",
+    "@gemeente-denhaag/stepicon": "^0.1.3",
+    "@gemeente-denhaag/steplabel": "^0.1.3",
+    "@material-ui/core": "^4.11.0"
   }
 }

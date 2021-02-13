@@ -1,8 +1,8 @@
-import React from 'react'
-import MaterialBox from '@material-ui/core/Box'
-import { BaseLayoutChildrenProps } from '../BaseLayoutProps/BaseLayoutProps'
+import React from "react";
+import MaterialBox from "@material-ui/core/Box";
+import { BaseLayoutChildrenProps } from "@gemeente-denhaag/baselayoutprops";
 
-export interface BoxProps extends BaseLayoutChildrenProps {}
+export type BoxProps = BaseLayoutChildrenProps;
 
 /**
  * Box allows developers to wrap most of the CSS Utility needs.
@@ -10,10 +10,10 @@ export interface BoxProps extends BaseLayoutChildrenProps {}
  * @constructor Constructs an instance of Box.
  */
 export const Box: React.FC<BoxProps> = (props: BoxProps) => {
-  return <MaterialBox {...props}>{props.children}</MaterialBox>
-}
+  return <MaterialBox {...props}>{props.children}</MaterialBox>;
+};
 
 /**
  * Default export for Box
  */
-export default Box
+export default Box;

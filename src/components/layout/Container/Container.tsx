@@ -1,27 +1,27 @@
-import React from 'react'
-import MaterialContainer from '@material-ui/core/Container'
-import BaseLayoutProps from '../BaseLayoutProps/BaseLayoutProps'
+import React from "react";
+import MaterialContainer from "@material-ui/core/Container";
+import BaseLayoutProps from "@gemeente-denhaag/baselayoutprops";
 
 export interface ContainerProps extends BaseLayoutProps {
   /**
    * Contents of the Container component
    */
-  children: NonNullable<React.ReactNode>
+  children: NonNullable<React.ReactNode>;
 
   /**
    * Indicate whether the left and right padding of the component should be removed.
    */
-  disableGutters?: boolean
+  disableGutters?: boolean;
 
   /**
    * Sets the max-width to match the min-width.
    */
-  fixed?: boolean
+  fixed?: boolean;
 
   /**
    * Determine the maximum width of the Container. When false, no max-width is set.
    */
-  maxWidth?: 'lg' | 'md' | 'sm' | 'xl' | 'xs' | false
+  maxWidth?: "lg" | "md" | "sm" | "xl" | "xs" | false;
 }
 
 /**
@@ -30,10 +30,10 @@ export interface ContainerProps extends BaseLayoutProps {
  * @constructor Constructs an instance of Container.
  */
 export const Container: React.FC<ContainerProps> = (props: ContainerProps) => {
-  return <MaterialContainer {...props}>{props.children}</MaterialContainer>
-}
+  return <MaterialContainer {...props}>{props.children}</MaterialContainer>;
+};
 
 /**
  * Default export for Container
  */
-export default Container
+export default Container;
