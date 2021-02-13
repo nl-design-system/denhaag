@@ -6,3 +6,8 @@ dist
 CHANGELOG.md
 package.json
 package-lock.json
+storybook-static
+
+#Husky
+.husky
+
