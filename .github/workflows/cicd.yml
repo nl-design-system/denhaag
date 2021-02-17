@@ -49,9 +49,9 @@ jobs:
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'nldsreactstorybook-staging'
+        app-name: 'dhreactstorybook-staging'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_Nlds_Staging }}
+        publish-profile: ${{ secrets.AZUREAPPSERVICE_DHSTORYBOOK_STAGING }}
         package: storybook-static
 
   deploy-production:
@@ -69,7 +69,7 @@ jobs:
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'nldsreactstorybook'
+        app-name: 'dhreactstorybook'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_Nlds_Prod }}
+        publish-profile: ${{ secrets.AZUREAPPSERVICE_DHSTORYBOOK_PROD }}
         package: storybook-static

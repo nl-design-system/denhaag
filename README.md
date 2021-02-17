@@ -1,13 +1,13 @@
-# nlds-react-components
+# denhaag-component-library
 
-> A library of React components for the Design System of The Netherlands
+> A library of React components for the municipality of The Hague
 
-[![NPM](https://img.shields.io/npm/v/nlds-react-components.svg)](https://www.npmjs.com/package/nlds-react-components) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/denhaag-component-library.svg)](https://www.npmjs.com/package/denhaag-component-library) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install trigger ci
 
 ```bash
-npm install --save nlds-react-components
+npm install --save denhaag-component-library
 ```
 
 ## Usage
@@ -15,8 +15,8 @@ npm install --save nlds-react-components
 ```tsx
 import React, { Component } from "react";
 
-import MyComponent from "nlds-react-components";
-import "nlds-react-components/dist/index.css";
+import MyComponent from 'denhaag-component-library'
+import 'denhaag-component-library/dist/index.css'
 
 class Example extends Component {
   render() {
@@ -70,13 +70,13 @@ Start by filling it with the following information:
   "version": "0.1.0",
   "description": "A short description of the component",
   "author": "Municipality of The Hague",
-  "license": "MIT",
+  "license": "EUPL-1.2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Gemeente-DenHaag/nlds-react-components.git",
+    "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
     "directory": "{path/to/component}"
   },
-  "bugs": "https://github.com/Gemeente-DenHaag/nlds-react-components/issues",
+  "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
   "dependencies": {
     "@material-ui/core": "^4.11.0"
   }
@@ -85,7 +85,7 @@ Start by filling it with the following information:
 
 _Don't forget to add all needed dependencies for your component to the dependencies section of the component's `package.json`._
 
-We will also need to add our component to the meta-package which installs all of the nlds react components in the same category. We can do this by adding it to the list of dependencies.
+We will also need to add our component to the meta-package which installs all of the Den Haag react components in the same category. We can do this by adding it to the list of dependencies.
 The file we need is located here: `src/components/[CATEGORY]/package.json`\
 An entry should be structured like this:
 
@@ -93,7 +93,7 @@ An entry should be structured like this:
 "@gemeente-denhaag/{component_name}": "^0.1.0"
 ```
 
-Similarly, if you create a new category we need to add the category package to the list of dependencies in the meta-package which installs all of the nlds react components.
+Similarly, if you create a new category we need to add the category package to the list of dependencies in the meta-package which installs all of the Den Haag react components.
 This file is located here: `src/components/package.json`
 
 An entry should be structured in the same way as above.
