@@ -9,7 +9,7 @@
   --mdh-button-font-family: "TheMix", sans-serif;
 }
 
-.mdh-button {
+/* .mdh-button {
   background-color: var(--mdh-button-background-color);
   font-family: var(--mdh-button-font-family);
 }
@@ -26,4 +26,4 @@
 
 .mdh-button--disabled {
   background-color: var(--mdh-radio-disabled-color);
-}
+} */
