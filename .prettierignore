@@ -2,10 +2,10 @@
 node_modules
 
 # Ignore generated files
+*.log
 .husky
 CHANGELOG.md
 dist
-lerna-debug.log
 package-lock.json
 package.json
 storybook-static
