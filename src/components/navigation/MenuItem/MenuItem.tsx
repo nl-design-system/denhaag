@@ -27,6 +27,11 @@ export interface MenuItemProps extends BaseProps {
    * Callback fired when the item is clicked.
    */
   onClick?: (event: React.ChangeEvent<unknown>) => void;
+
+  /**
+   * The value assigned to the MenuItem.
+   */
+  value?: string | ReadonlyArray<string> | number;
 }
 
 /**
