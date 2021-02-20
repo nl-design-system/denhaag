@@ -4,7 +4,7 @@ import { Accordion, AccordionProps } from "../../components/Accordion/Accordion"
 import pkg from "../../components/Accordion/package.json";
 import AccordionSummary from "../../components/AccordionSummary/AccordionSummary";
 import { ExpandMore } from "@material-ui/icons";
-import { Typography } from "@material-ui/core";
+import { Typography } from "../../components/Typography";
 import AccordionDetails from "../../components/AccordionDetails/AccordionDetails";
 
 export default {

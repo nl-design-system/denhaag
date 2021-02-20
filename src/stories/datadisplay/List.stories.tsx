@@ -9,7 +9,8 @@ import ListItemSecondaryAction from "../../components/ListItemSecondaryAction/Li
 import ListItemText from "../../components/ListItemText/ListItemText";
 import ListSubheader from "../../components/ListSubheader/ListSubheader";
 import Checkbox from "../../components/Checkbox/Checkbox";
-import { IconButton, Avatar } from "@material-ui/core";
+import IconButton from "../../components/IconButton";
+import Avatar from "../../components/Avatar";
 import CommentIcon from "@material-ui/icons/Comment";
 import FolderIcon from "@material-ui/icons/Folder";
 
