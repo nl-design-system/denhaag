@@ -5,8 +5,8 @@ import Typography from "./components/Typography/Typography";
 import Divider from "./components/Divider/Divider";
 import List from "./components/List/List";
 import Badge from "./components/Badge/Badge";
-// import Avatar from './components/Avatar/Avatar'
-// import AvatarGroup from './components/AvatarGroup/AvatarGroup'
+import Avatar from "./components/Avatar/Avatar";
+import AvatarGroup from "./components/AvatarGroup/AvatarGroup";
 
 /**
  * Input components
@@ -24,7 +24,7 @@ import DatePicker from "./components/Pickers/DatePicker/DatePicker";
 import KeyboardDatePicker from "./components/Pickers/KeyboardDatePicker/KeyboardDatePicker";
 import PickersUtilsProvider from "./components/Pickers/PickersUtilsProvider/PickersUtilsProvider";
 
-// import IconButton from './components/input/IconButton/IconButton'
+import IconButton from "./components/IconButton/IconButton";
 
 import TextField from "./components/TextField/TextField";
 /**
@@ -66,8 +66,8 @@ export {
   Divider,
   Typography,
   Badge,
-  // Avatar,
-  // AvatarGroup,
+  Avatar,
+  AvatarGroup,
   // Input
   List,
   Button,
@@ -82,7 +82,7 @@ export {
   DatePicker,
   KeyboardDatePicker,
   PickersUtilsProvider,
-  // IconButton,
+  IconButton,
   // Layout
   TextField,
   Box,
