@@ -1,8 +1,8 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import pkg from "../../components/surfaces/Paper/package.json";
-import Paper, { PaperProps } from "../../components/surfaces/Paper/Paper";
-import Typography from "../../components/datadisplay/Typography/Typography";
+import pkg from "../../components/Paper/package.json";
+import Paper, { PaperProps } from "../../components/Paper/Paper";
+import Typography from "../../components/Typography/Typography";
 
 export default {
   title: "Components/Surfaces/Paper",

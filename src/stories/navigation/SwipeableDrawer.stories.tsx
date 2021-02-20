@@ -1,8 +1,8 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { SwipeableDrawer, SwipeableDrawerProps } from "../../components/navigation/SwipeableDrawer/SwipeableDrawer";
-import Button from "../../components/input/Button/Button";
-import pkg from "../../components/navigation/SwipeableDrawer/package.json";
+import { SwipeableDrawer, SwipeableDrawerProps } from "../../components/SwipeableDrawer/SwipeableDrawer";
+import Button from "../../components/Button/Button";
+import pkg from "../../components/SwipeableDrawer/package.json";
 
 export default {
   title: "Components/Navigation/SwipeableDrawer",

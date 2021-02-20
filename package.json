@@ -14,9 +14,7 @@
   "source": "src/index.tsx",
   "workspaces": [
     "src/components/*",
-    "src/components/*/*",
-    "src/components/*/*/*",
-    "src/components"
+    "src/components/*/*"
   ],
   "private": true,
   "engines": {

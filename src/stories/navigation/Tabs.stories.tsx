@@ -1,11 +1,11 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { Tabs, TabsProps } from "../../components/navigation/Tabs/Tabs";
-import pkg from "../../components/navigation/Tabs/package.json";
-import Tab from "../../components/navigation/Tab/Tab";
-import TabContext from "../../components/navigation/TabContext/TabContext";
+import { Tabs, TabsProps } from "../../components/Tabs/Tabs";
+import pkg from "../../components/Tabs/package.json";
+import Tab from "../../components/Tab/Tab";
+import TabContext from "../../components/TabContext/TabContext";
 import { AppBar } from "@material-ui/core";
-import TabPanel from "../../components/navigation/TabPanel/TabPanel";
+import TabPanel from "../../components/TabPanel/TabPanel";
 
 export default {
   title: "Components/Navigation/Tabs",

@@ -1,8 +1,8 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { ButtonGroup, ButtonGroupProps } from "../../components/input/ButtonGroup/ButtonGroup";
-import pkg from "../../components/input/ButtonGroup/package.json";
-import Button from "../../components/input/Button/Button";
+import { ButtonGroup, ButtonGroupProps } from "../../components/ButtonGroup/ButtonGroup";
+import pkg from "../../components/ButtonGroup/package.json";
+import Button from "../../components/Button/Button";
 
 export default {
   title: "Components/Input/ButtonGroup",
