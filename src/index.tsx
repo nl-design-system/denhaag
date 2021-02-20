@@ -39,16 +39,16 @@ import Hidden from "./components/Hidden/Hidden";
 /**
  * Navigation components
  */
-import Drawer from "./components/navigation/Drawer/Drawer";
-import Menu from "./components/navigation/Menu/Menu";
-import MenuItem from "./components/navigation/MenuItem/MenuItem";
-import MenuList from "./components/navigation/MenuList/MenuList";
-import MobileStepper from "./components/navigation/MobileStepper/MobileStepper";
-import Popover from "./components/navigation/Popover/Popover";
-import Popper from "./components/navigation/Popper/Popper";
-import Stepper from "./components/navigation/Stepper/Stepper";
-import SwipeableDrawer from "./components/navigation/SwipeableDrawer/SwipeableDrawer";
-import Tabs from "./components/navigation/Tabs/Tabs";
+import Drawer from "./components/Drawer/Drawer";
+import Menu from "./components/Menu/Menu";
+import MenuItem from "./components/MenuItem/MenuItem";
+import MenuList from "./components/MenuList/MenuList";
+import MobileStepper from "./components/MobileStepper/MobileStepper";
+import Popover from "./components/Popover/Popover";
+import Popper from "./components/Popper/Popper";
+import Stepper from "./components/Stepper/Stepper";
+import SwipeableDrawer from "./components/SwipeableDrawer/SwipeableDrawer";
+import Tabs from "./components/Tabs/Tabs";
 /**
  * Surface components
  */
