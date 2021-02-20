@@ -2,9 +2,10 @@ import React from "react";
 import { Meta } from "@storybook/react";
 import pkg from "../../components/input/Select/package.json";
 import Select, { SelectProps } from "../../components/input/Select/Select";
-import { createStyles, makeStyles, MenuItem, Theme } from "@material-ui/core";
+import { createStyles, makeStyles, Theme } from "@material-ui/core";
 import FormControl from "../../components/input/FormControl/FormControl";
 import InputLabel from "../../components/input/InputLabel/InputLabel";
+import MenuItem from "../../components/navigation/MenuItem/MenuItem";
 
 export default {
   title: "Components/Input/Select",
