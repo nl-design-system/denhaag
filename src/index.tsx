@@ -30,12 +30,12 @@ import TextField from "./components/TextField/TextField";
 /**
  * Layout components
  */
-import Box from "./components/layout/Box/Box";
-import Container from "./components/layout/Container/Container";
-import Grid from "./components/layout/Grid/Grid";
-import GridList from "./components/layout/GridList/GridList";
+import Box from "./components/Box/Box";
+import Container from "./components/Container/Container";
+import Grid from "./components/Grid/Grid";
+import GridList from "./components/GridList/GridList";
 
-import Hidden from "./components/layout/Hidden/Hidden";
+import Hidden from "./components/Hidden/Hidden";
 /**
  * Navigation components
  */
