@@ -1,12 +1,12 @@
 /**
  * Data display components
  */
-import Typography from "./components/datadisplay/Typography/Typography";
-import Divider from "./components/datadisplay/Divider/Divider";
-import List from "./components/datadisplay/List/List";
-import Badge from "./components/datadisplay/Badge/Badge";
-// import Avatar from './components/datadisplay/Avatar/Avatar'
-// import AvatarGroup from './components/datadisplay/AvatarGroup/AvatarGroup'
+import Typography from "./components/Typography/Typography";
+import Divider from "./components/Divider/Divider";
+import List from "./components/List/List";
+import Badge from "./components/Badge/Badge";
+// import Avatar from './components/Avatar/Avatar'
+// import AvatarGroup from './components/AvatarGroup/AvatarGroup'
 
 /**
  * Input components
