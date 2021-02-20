@@ -49,6 +49,8 @@ import Popper from "./components/Popper/Popper";
 import Stepper from "./components/Stepper/Stepper";
 import SwipeableDrawer from "./components/SwipeableDrawer/SwipeableDrawer";
 import Tabs from "./components/Tabs/Tabs";
+import Link from "./components/Link/Link";
+
 /**
  * Surface components
  */
@@ -100,6 +102,7 @@ export {
   Popper,
   Stepper,
   SwipeableDrawer,
+  Link,
   // Surface
   Tabs,
   Accordion,

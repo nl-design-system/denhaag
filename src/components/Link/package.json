@@ -1,0 +1,18 @@
+{
+  "name": "@gemeente-denhaag/link",
+  "description": "A Link component",
+  "author": "Municipality of The Hague",
+  "license": "EUPL-1.2",
+  "main": "Link.tsx",
+  "module": "Link.tsx",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
+    "directory": "src/components/link"
+  },
+  "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
+  "dependencies": {
+    "@material-ui/core": "^4.11.0"
+  }
+}
