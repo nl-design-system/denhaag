@@ -6,7 +6,7 @@ import CardActions from "../../components/CardActions/CardActions";
 import CardContent from "../../components/CardContent/CardContent";
 import CardHeader from "../../components/CardHeader/CardHeader";
 import Typography from "../../components/Typography/Typography";
-import { Avatar, IconButton } from "@material-ui/core";
+import { Avatar, IconButton } from "../../";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import ShareIcon from "@material-ui/icons/Share";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
