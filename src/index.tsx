@@ -53,10 +53,10 @@ import Tabs from "./components/Tabs/Tabs";
  * Surface components
  */
 
-import Accordion from "./components/surfaces/Accordion/Accordion";
-import AppBar from "./components/surfaces/AppBar/AppBar";
-import Card from "./components/surfaces/Card/Card";
-import Paper from "./components/surfaces/Paper/Paper";
+import Accordion from "./components/Accordion/Accordion";
+import AppBar from "./components/AppBar/AppBar";
+import Card from "./components/Card/Card";
+import Paper from "./components/Paper/Paper";
 
 /**
  * Primary UI component for user interaction
