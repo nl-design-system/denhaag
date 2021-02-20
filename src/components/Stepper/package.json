@@ -5,7 +5,7 @@
   "license": "EUPL-1.2",
   "main": "Stepper.tsx",
   "module": "Stepper.tsx",
-  "version": "0.1.4",
+  "version": "0.1.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
@@ -13,13 +13,13 @@
   },
   "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "^0.1.4",
-    "@gemeente-denhaag/step": "^0.1.4",
-    "@gemeente-denhaag/stepbutton": "^0.1.4",
-    "@gemeente-denhaag/stepconnector": "^0.1.4",
-    "@gemeente-denhaag/stepcontent": "^0.1.4",
-    "@gemeente-denhaag/stepicon": "^0.1.4",
-    "@gemeente-denhaag/steplabel": "^0.1.4",
+    "@gemeente-denhaag/baseprops": "^0.1.3",
+    "@gemeente-denhaag/step": "^0.1.3",
+    "@gemeente-denhaag/stepbutton": "^0.1.3",
+    "@gemeente-denhaag/stepconnector": "^0.1.3",
+    "@gemeente-denhaag/stepcontent": "^0.1.3",
+    "@gemeente-denhaag/stepicon": "^0.1.3",
+    "@gemeente-denhaag/steplabel": "^0.1.3",
     "@material-ui/core": "^4.11.0"
   }
 }
