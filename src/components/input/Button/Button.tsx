@@ -33,6 +33,11 @@ export interface ButtonProps extends BaseProps {
    * Button variant
    */
   variant?: "outlined" | "contained" | "text";
+
+  /**
+   * HTML type prop
+   */
+  type?: "button" | "submit" | "reset";
 }
 
 /**
