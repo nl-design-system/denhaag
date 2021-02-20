@@ -11,22 +11,22 @@ import Badge from "./components/Badge/Badge";
 /**
  * Input components
  */
-import Button from "./components/input/Button/Button";
-import ButtonGroup from "./components/input/ButtonGroup/ButtonGroup";
-import Checkbox from "./components/input/Checkbox/Checkbox";
-import FormControlLabel from "./components/input/FormControlLabel/FormControlLabel";
-import FormGroup from "./components/input/FormGroup/FormGroup";
-import Radio from "./components/input/Radio/Radio";
-import RadioGroup from "./components/input/RadioGroup/RadioGroup";
-import Select from "./components/input/Select/Select";
-import Switch from "./components/input/Switch/Switch";
-import DatePicker from "./components/input/Pickers/DatePicker/DatePicker";
-import KeyboardDatePicker from "./components/input/Pickers/KeyboardDatePicker/KeyboardDatePicker";
-import PickersUtilsProvider from "./components/input/Pickers/PickersUtilsProvider/PickersUtilsProvider";
+import Button from "./components/Button/Button";
+import ButtonGroup from "./components/ButtonGroup/ButtonGroup";
+import Checkbox from "./components/Checkbox/Checkbox";
+import FormControlLabel from "./components/FormControlLabel/FormControlLabel";
+import FormGroup from "./components/FormGroup/FormGroup";
+import Radio from "./components/Radio/Radio";
+import RadioGroup from "./components/RadioGroup/RadioGroup";
+import Select from "./components/Select/Select";
+import Switch from "./components/Switch/Switch";
+import DatePicker from "./components/Pickers/DatePicker/DatePicker";
+import KeyboardDatePicker from "./components/Pickers/KeyboardDatePicker/KeyboardDatePicker";
+import PickersUtilsProvider from "./components/Pickers/PickersUtilsProvider/PickersUtilsProvider";
 
 // import IconButton from './components/input/IconButton/IconButton'
 
-import TextField from "./components/input/TextField/TextField";
+import TextField from "./components/TextField/TextField";
 /**
  * Layout components
  */
