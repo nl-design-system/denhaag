@@ -4,7 +4,7 @@ import { Tabs, TabsProps } from "../../components/Tabs/Tabs";
 import pkg from "../../components/Tabs/package.json";
 import Tab from "../../components/Tab/Tab";
 import TabContext from "../../components/TabContext/TabContext";
-import { AppBar } from "@material-ui/core";
+import { AppBar } from "../../";
 import TabPanel from "../../components/TabPanel/TabPanel";
 
 export default {
