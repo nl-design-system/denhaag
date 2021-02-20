@@ -2,10 +2,10 @@ import React from "react";
 import { Meta, Story } from "@storybook/react";
 import { IconButton } from "@material-ui/core";
 import InfoIcon from "@material-ui/icons/Info";
-import GridListTileBar, { GridListTileBarProps } from "../../components/layout/GridListTileBar/GridListTileBar";
-import GridListTile from "../../components/layout/GridListTile/GridListTile";
-import GridList from "../../components/layout/GridList/GridList";
-import pkg from "../../components/layout/GridListTileBar/package.json";
+import GridListTileBar, { GridListTileBarProps } from "../../components/GridListTileBar/GridListTileBar";
+import GridListTile from "../../components/GridListTile/GridListTile";
+import GridList from "../../components/GridList/GridList";
+import pkg from "../../components/GridListTileBar/package.json";
 import imageFile from "../assets/logo.svg";
 
 export default {

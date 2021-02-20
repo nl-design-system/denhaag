@@ -3,10 +3,10 @@ import { Story, Meta } from "@storybook/react";
 import {
   KeyboardDatePicker,
   KeyboardDatePickerProps,
-} from "../../components/input/Pickers/KeyboardDatePicker/KeyboardDatePicker";
-import { PickersUtilsProvider } from "../../components/input/Pickers/PickersUtilsProvider/PickersUtilsProvider";
+} from "../../components/Pickers/KeyboardDatePicker/KeyboardDatePicker";
+import { PickersUtilsProvider } from "../../components/Pickers/PickersUtilsProvider/PickersUtilsProvider";
 import DateFnsUtils from "@date-io/date-fns";
-import pkg from "../../components/input/Pickers/package.json";
+import pkg from "../../components/Pickers/package.json";
 
 export default {
   title: "Components/Input/KeyboardDatePicker",

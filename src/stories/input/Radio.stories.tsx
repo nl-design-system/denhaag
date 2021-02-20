@@ -1,9 +1,9 @@
 import React from "react";
 import { Story, Meta } from "@storybook/react/types-6-0";
-import { FormControlLabel } from "../../components/input/FormControlLabel/FormControlLabel";
+import { FormControlLabel } from "../../components/FormControlLabel/FormControlLabel";
 import { Radio } from "../..";
-import { RadioProps } from "../../components/input/Radio/Radio";
-import pkg from "../../components/input/Radio/package.json";
+import { RadioProps } from "../../components/Radio/Radio";
+import pkg from "../../components/Radio/package.json";
 
 import ThumbDownIcon from "@material-ui/icons/ThumbDown";
 import ThumbUpIcon from "@material-ui/icons/ThumbUp";

@@ -1,7 +1,7 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { Divider, DividerProps } from "../../components/datadisplay/Divider/Divider";
-import pkg from "../../components/datadisplay/Divider/package.json";
+import { Divider, DividerProps } from "../../components/Divider/Divider";
+import pkg from "../../components/Divider/package.json";
 import { List, ListItem, ListItemIcon, ListItemText } from "@material-ui/core";
 import InboxIcon from "@material-ui/icons/Inbox";
 import DraftsIcon from "@material-ui/icons/Drafts";
