@@ -28,9 +28,9 @@ class Example extends Component {
 }
 ```
 
-## Develop
+### Develop
 
-### Setting up the development environment
+#### Setting up the development environment
 
 1. Clone this repository
 2. Install npm go [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) for instructions. Make sure to install version `14` or higher.
