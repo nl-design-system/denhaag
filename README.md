@@ -6,11 +6,14 @@
 
 ## Install trigger ci
 
+## 🚀 Getting started
+### Install component library
+
 ```bash
-npm install --save denhaag-component-library
+yarn add @gemeente-denhaag/denhaag-component-library
 ```
 
-## Usage
+### Usage
 
 ```tsx
 import React, { Component } from "react";
@@ -38,7 +41,7 @@ class Example extends Component {
 yarn install
 ```
 
-### Folder structure
+#### Folder structure
 
 The project folders are structured in the following way:
 The `src` folder houses both our `components` and our storybook `stories`, these are both in their own folders.
@@ -46,9 +49,9 @@ Our components are sorted into several categories, where each category has its o
 All of our components are their own package and managed with lerna, docs are available [here](https://lerna.js.org/).
 Similarly, each category is its own package managed with lerna.
 
-### Adding components
+#### Adding components
 
-#### Storybook
+##### Storybook
 
 In order to test components we use storybook.\
 To run storybook locally we start it with the following command:
@@ -59,7 +62,7 @@ yarn storybook
 
 We don't need to re-run the command over-and-over because storybook should detect changed files ✨automagically✨ and refresh the displayed components.
 
-#### Creating a new package for a new component
+##### Creating a new package for a new component
 
 In order to create a new lerna package we need to create a package.json file for it inside it's folder.
 Start by filling it with the following information:
@@ -97,3 +100,8 @@ Similarly, if you create a new category we need to add the category package to t
 This file is located here: `src/components/package.json`
 
 An entry should be structured in the same way as above.
+
+## ❗ Reporting issues
+Our public issue tracker is located [here](https://github.com/Gemeente-DenHaag/denhaag-component-library/issues).
+Before reporting an issue make sure to check if a similar issue already exists.
+When reporting an issue give detailed information about the issue and how to reproduce it if applicable.
