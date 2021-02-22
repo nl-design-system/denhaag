@@ -8,7 +8,7 @@ We pledge to act and interact in ways that contribute to an open, welcoming, div
 
 Before you make a commit or PR, run `yarn lint` and `yarn test` to see if everything is in order.
 Many things can be fixed automatically using `yarn lint-fix`. Make separate commits for separate purposes.
-When you make a PR you will need to sign our [Contributor License Agreement](CLA.md), so first check with your employer if you need to.
+When you make a PR you will need to sign our [Contributor License Agreement](CLA.md). Make sure to check with your employer if you have permission to sign before contributing.
 
 ## Foundation for Public Code
 
