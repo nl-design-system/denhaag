@@ -15,7 +15,7 @@
   "workspaces": [
     "src/components/*",
     "src/meta-packages/*",
-    "src/*"
+    "src/"
   ],
   "private": true,
   "engines": {
