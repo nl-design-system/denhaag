@@ -1,8 +1,8 @@
 {
   "rules": {
-    "custom-property-pattern": "nlds-[a-z0-9-]+",
-    "selector-class-pattern": "nlds-[a-z0-9-]+",
-    "keyframes-name-pattern": "nlds-[a-z0-9-]+",
+    "custom-property-pattern": "mdh-[a-z0-9-]+",
+    "selector-class-pattern": "mdh-[a-z0-9-]+",
+    "keyframes-name-pattern": "mdh-[a-z0-9-]+",
     "at-rule-no-unknown": [true],
     "block-no-empty": [true],
     "color-no-invalid-hex": [true],
@@ -54,12 +54,7 @@
         "margin-bottom",
         "margin-left",
         "margin-right",
-        "margin-top",
-        "padding",
-        "padding-bottom",
-        "padding-left",
-        "padding-right",
-        "padding-top"
+        "margin-top"
       ]
     ],
     "selector-max-id": [0],

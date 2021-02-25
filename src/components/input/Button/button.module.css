@@ -1,0 +1,83 @@
+.mdh-button {
+  --mdh-button-padding-vertical: 0.6875rem;
+  --mdh-button-padding-horizontal: 1.25rem;
+  --mdh-button-border-radius: 0.1875rem;
+  --mdh-button-focus-border-color: #CCA000;
+  --mdh-button-focus-border-width: 0.125rem;
+  --mdh-button-font-family: "TheMix", sans-serif;
+
+  --mdh-button-primary-action-background-color: #248641;
+  --mdh-button-primary-action-color: #FFFFFF;
+  --mdh-button-primary-action-hover-background-color: #1D6B34;
+  --mdh-button-primary-action-hover-color: #FFFFFF;
+  --mdh-button-primary-action-disabled-background-color: #D2D2D2;
+  --mdh-button-primary-action-disabled-color: #FFFFFF;
+
+  --mdh-button-secondary-action-background-color: #FFFFFF;
+  --mdh-button-secondary-action-color: #248641;
+  --mdh-button-secondary-action-border-color: #248641;
+  --mdh-button-secondary-action-border-width: 0.0625rem;
+  --mdh-button-secondary-action-hover-background-color: #FFFFFF;
+  --mdh-button-secondary-action-hover-color: #1D6B34;
+  --mdh-button-secondary-action-hover-border-color: #1D6B34;
+  --mdh-button-secondary-action-disabled-background-color: #FFFFFF;
+  --mdh-button-secondary-action-disabled-color: #D2D2D2;
+  --mdh-button-secondary-action-disabled-border-color: #D2D2D2;
+
+  padding: var(--mdh-button-padding-vertical) var(--mdh-button-padding-horizontal);
+  border-radius: var(--mdh-button-border-radius);
+  box-shadow: none;
+  transition: none;
+}
+
+.mdh-button--primary-action {
+  background-color: var(--mdh-button-primary-action-background-color);
+  color: var(--mdh-button-primary-action-color);
+}
+
+.mdh-button--primary-action.mdh-button--hover, .mdh-button--primary-action:hover {
+  background-color: var(--mdh-button-primary-action-hover-background-color);
+  color: var(--mdh-button-primary-action-hover-color);
+}
+
+.mdh-button--primary-action.mdh-button--disabled {
+  background-color: var(--mdh-button-primary-action-disabled-background-color);
+  color: var(--mdh-button-primary-action-disabled-color);
+}
+
+.mdh-button--secondary-action {
+  background-color: var(--mdh-button-secondary-action-background-color);
+  color: var(--mdh-button-secondary-action-color);
+  border-width: var(--mdh-button-secondary-action-border-width);
+  border-style: solid;
+  border-color: var(--mdh-button-secondary-action-border-color);
+}
+
+.mdh-button--secondary-action.mdh-button--hover, .mdh-button--secondary-action:hover {
+  background-color: var(--mdh-button-primary-action-hover-background-color);
+  color: var(--mdh-button-secondary-action-hover-color);
+  border-color: var(--mdh-button-secondary-action-hover-border-color);
+}
+
+.mdh-button--secondary-action.mdh-button--disabled {
+  background-color: var(--mdh-button-primary-action-disabled-background-color);
+  color: var(--mdh-button-secondary-action-disabled-color);
+  border-color: var(--mdh-button-secondary-action-disabled-border-color);
+}
+
+.mdh-button--hover, .mdh-button:hover {
+  box-shadow: none;
+}
+
+.mdh-button--focus, .mdh-button:focus {
+  border-width: var(--mdh-button-focus-border-width);
+  border-style: solid;
+  border-color: var(--mdh-button-focus-border-color);
+  box-shadow: none;
+}
+
+
+/* EXAMPLE FOR HOW TO STYLE DEEPER INTO THE REACT COMPONENTS */
+.mdh-button__label {
+  font-size: 2rem;
+}
