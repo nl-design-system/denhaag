@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/basedatadisplayprops",
   "description": "A package containing properties used in DataDisplay",
   "author": "Municipality of The Hague",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "BaseDataDisplayProps.tsx",
   "module": "BaseDataDisplayProps.tsx",
   "license": "EUPL-1.2",
@@ -13,7 +13,7 @@
   },
   "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "^0.1.4"
+    "@gemeente-denhaag/baseprops": "^0.1.5"
   },
   "peerDependencies": {
     "react": "^16.13.0"

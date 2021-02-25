@@ -5,7 +5,7 @@
   "license": "EUPL-1.2",
   "main": "Toolbar.tsx",
   "module": "Toolbar.tsx",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "repository": {
     "type": "git",
     "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
@@ -13,7 +13,7 @@
   },
   "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "^0.1.4",
+    "@gemeente-denhaag/baseprops": "^0.1.5",
     "@material-ui/core": "^4.11.0"
   }
 }
