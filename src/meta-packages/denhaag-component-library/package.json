@@ -5,8 +5,10 @@
   "license": "EUPL-1.2",
   "main": "index.tsx",
   "module": "index.tsx",
-  "version": "0.1.4",
-  "files": ["index.tsx"],
+  "version": "0.1.5",
+  "files": [
+    "index.tsx"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
