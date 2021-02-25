@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/denhaag-component-library",
-  "description": "A library of React components for the Municipality of The Hague",
+  "description": "A library of React components for the Municipality of the Hague",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
   "main": "index.tsx",
