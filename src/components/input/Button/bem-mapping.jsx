@@ -1,4 +1,4 @@
-export const bem = {
+export const classes = {
   root: 'mdh-button',
   label: 'mdh-button__label',
   contained: 'mdh-button--primary-action',

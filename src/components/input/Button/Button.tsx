@@ -4,7 +4,7 @@ import React from 'react'
 import BaseProps from '../../BaseProps/BaseProps'
 import './button.module.css'
 import './mui-override.module.css'
-import { bem } from './bem-mapping'
+import { classes } from './bem-mapping'
 
 export interface ButtonProps extends BaseProps {
   /**
@@ -44,7 +44,7 @@ export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
 
   return (
     <StylesProvider injectFirst>
-      <MaterialButton classes={bem} onClick={onClick} variant={variant} disabled={disabled} disableRipple>
+      <MaterialButton classes={classes} onClick={onClick} variant={variant} disabled={disabled} disableRipple>
         {props.children}
       </MaterialButton>
     </StylesProvider>
