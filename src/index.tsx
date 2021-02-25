@@ -22,7 +22,7 @@ import Select from "./components/Select/Select";
 import Switch from "./components/Switch/Switch";
 import DatePicker from "./components/Pickers/DatePicker/DatePicker";
 import KeyboardDatePicker from "./components/Pickers/KeyboardDatePicker/KeyboardDatePicker";
-import PickersUtilsProvider from "./components/Pickers/PickersUtilsProvider/PickersUtilsProvider";
+import PickersUtilsProvider from "./components/PickersUtilsProvider/PickersUtilsProvider";
 
 import IconButton from "./components/IconButton/IconButton";
 
