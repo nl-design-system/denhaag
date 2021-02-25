@@ -1,4 +1,4 @@
-import MaterialButton from '@material-ui/core/Button'
+import MaterialButton, { ButtonTypeMap } from '@material-ui/core/Button'
 import { StylesProvider } from '@material-ui/core/styles'
 import React from 'react'
 import BaseProps from '../../BaseProps/BaseProps'
@@ -23,15 +23,13 @@ export interface ButtonProps extends BaseProps {
   type?: 'primary-action' | 'secondary-action'
 }
 
-type ButtonVariant = 'outlined' | 'contained'
-
 /**
  * Primary UI component for user interaction
  */
 export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
   const { onClick, disabled, type } = props
 
-  let variant: ButtonVariant
+  let variant: ButtonTypeMap["props"]["variant"]
 
   switch (type) {
     case 'secondary-action':
