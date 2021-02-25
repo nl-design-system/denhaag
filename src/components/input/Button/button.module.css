@@ -1,6 +1,6 @@
 .mdh-button {
-  --mdh-button-padding-vertical: 0.6875rem;
-  --mdh-button-padding-horizontal: 1.25rem;
+  --mdh-button-padding-inline: 1.25rem;
+  --mdh-button-padding-block: 0.6875rem;
   --mdh-button-border-radius: 0.1875rem;
   --mdh-button-focus-border-color: #CCA000;
   --mdh-button-focus-border-width: 0.125rem;
@@ -24,7 +24,10 @@
   --mdh-button-secondary-action-disabled-color: #D2D2D2;
   --mdh-button-secondary-action-disabled-border-color: #D2D2D2;
 
-  padding: var(--mdh-button-padding-vertical) var(--mdh-button-padding-horizontal);
+  padding-inline-start: var(--mdh-button-padding-inline);
+  padding-inline-end: var(--mdh-button-padding-inline);
+  padding-block-start: var(--mdh-button-padding-block);
+  padding-block-end: var(--mdh-button-padding-block);
   border-radius: var(--mdh-button-border-radius);
 }
 
@@ -64,18 +67,20 @@
 }
 
 .mdh-button--focus, .mdh-button:focus {
-  padding:
-    calc(var(--mdh-button-padding-vertical) - var(--mdh-button-focus-border-width))
-    calc(var(--mdh-button-padding-horizontal) - var(--mdh-button-focus-border-width));
+  padding-inline-start: calc(var(--mdh-button-padding-inline) - var(--mdh-button-focus-border-width));
+  padding-inline-end: calc(var(--mdh-button-padding-inline) - var(--mdh-button-focus-border-width));
+  padding-block-start: calc(var(--mdh-button-padding-block) - var(--mdh-button-focus-border-width));
+  padding-block-end: calc(var(--mdh-button-padding-block) - var(--mdh-button-focus-border-width));
   border-width: var(--mdh-button-focus-border-width);
   border-style: solid;
   border-color: var(--mdh-button-focus-border-color);
 }
 
 .mdh-button--secondary-action.mdh-button--focus, .mdh-button--secondary-action:focus {
-  padding:
-    calc(var(--mdh-button-padding-vertical) - var(--mdh-button-focus-border-width) + var(--mdh-button-secondary-action-border-width))
-    calc(var(--mdh-button-padding-horizontal) - var(--mdh-button-focus-border-width) + var(--mdh-button-secondary-action-border-width));
+  padding-inline-start: calc(var(--mdh-button-padding-inline) - var(--mdh-button-focus-border-width) + var(--mdh-button-secondary-action-border-width));
+  padding-inline-end: calc(var(--mdh-button-padding-inline) - var(--mdh-button-focus-border-width) + var(--mdh-button-secondary-action-border-width));
+  padding-block-start: calc(var(--mdh-button-padding-block) - var(--mdh-button-focus-border-width) + var(--mdh-button-secondary-action-border-width));
+  padding-block-end: calc(var(--mdh-button-padding-block) - var(--mdh-button-focus-border-width) + var(--mdh-button-secondary-action-border-width));
 }
 
 
