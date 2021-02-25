@@ -13,6 +13,7 @@
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
   "workspaces": [
+    "src/components/*",
     "src/components/*/*",
     "src/meta-packages/*/*",
     "src/*"
