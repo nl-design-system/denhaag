@@ -1,0 +1,12 @@
+.mdh-button {
+  box-shadow: none;
+  transition: none;
+}
+
+.mdh-button--hover, .mdh-button:hover {
+  box-shadow: none;
+}
+
+.mdh-button--focus, .mdh-button:focus {
+  box-shadow: none;
+}

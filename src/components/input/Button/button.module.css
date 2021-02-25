@@ -26,8 +26,6 @@
 
   padding: var(--mdh-button-padding-vertical) var(--mdh-button-padding-horizontal);
   border-radius: var(--mdh-button-border-radius);
-  box-shadow: none;
-  transition: none;
 }
 
 .mdh-button--primary-action {
@@ -65,15 +63,19 @@
   border-color: var(--mdh-button-secondary-action-disabled-border-color);
 }
 
-.mdh-button--hover, .mdh-button:hover {
-  box-shadow: none;
-}
-
 .mdh-button--focus, .mdh-button:focus {
+  padding:
+    calc(var(--mdh-button-padding-vertical) - var(--mdh-button-focus-border-width))
+    calc(var(--mdh-button-padding-horizontal) - var(--mdh-button-focus-border-width));
   border-width: var(--mdh-button-focus-border-width);
   border-style: solid;
   border-color: var(--mdh-button-focus-border-color);
-  box-shadow: none;
+}
+
+.mdh-button--secondary-action.mdh-button--focus, .mdh-button--secondary-action:focus {
+  padding:
+    calc(var(--mdh-button-padding-vertical) - var(--mdh-button-focus-border-width) + var(--mdh-button-secondary-action-border-width))
+    calc(var(--mdh-button-padding-horizontal) - var(--mdh-button-focus-border-width) + var(--mdh-button-secondary-action-border-width));
 }
 
 

@@ -23,72 +23,39 @@ const Template: Story<ButtonProps> = (args: any) => {
  */
 export const Default = Template.bind({})
 Default.args = {
-  variant: 'contained'
+  type: 'primary-action'
 }
 
 /**
- * Primary Button
+ * Primary Action Button
  */
-export const Primary: Story<ButtonProps> = Template.bind({})
-Primary.args = {
-  color: 'primary',
-  variant: 'contained'
+export const PrimaryAction: Story<ButtonProps> = Template.bind({})
+PrimaryAction.args = {
+  type: 'primary-action'
 }
 
 /**
- * Secondary Button
+ * Secondary Action Button
  */
-export const Secondary: Story<ButtonProps> = Template.bind({})
-Secondary.args = {
-  color: 'secondary',
-  variant: 'contained'
+export const SecondaryAction: Story<ButtonProps> = Template.bind({})
+SecondaryAction.args = {
+  type: 'secondary-action'
 }
 
 /**
- * Outlined Button
+ * Disabled Primary Action Button
  */
-export const Outlined: Story<ButtonProps> = Template.bind({})
-Outlined.args = {
-  variant: 'outlined'
+export const PrimaryActionDisabled: Story<ButtonProps> = Template.bind({})
+PrimaryActionDisabled.args = {
+  type: 'primary-action',
+  disabled: true
 }
 
 /**
- * Text button
+ * Disabled Secondary Action Button
  */
-export const Text: Story<ButtonProps> = Template.bind({})
-Text.args = {
-  variant: 'text'
-}
-
-/**
- * Small button
- */
-export const Small: Story<ButtonProps> = Template.bind({})
-Small.args = {
-  size: 'small'
-}
-
-/**
- * Medium button
- */
-export const Medium: Story<ButtonProps> = Template.bind({})
-Medium.args = {
-  size: 'medium'
-}
-
-/**
- * Large button
- */
-export const Large: Story<ButtonProps> = Template.bind({})
-Large.args = {
-  size: 'large'
-}
-
-/**
- * Disabled Button
- */
-export const Disabled: Story<ButtonProps> = Template.bind({})
-Disabled.args = {
-  disabled: true,
-  className: 'mdh-button mdh-button-disabled'
+export const SecondaryActionDisabled: Story<ButtonProps> = Template.bind({})
+SecondaryActionDisabled.args = {
+  type: 'secondary-action',
+  disabled: true
 }

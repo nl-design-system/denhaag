@@ -3,6 +3,7 @@ import { StylesProvider } from '@material-ui/core/styles'
 import React from 'react'
 import BaseProps from '../../BaseProps/BaseProps'
 import './button.module.css'
+import './mui-override.module.css'
 import { bem } from './bem-mapping'
 
 export interface ButtonProps extends BaseProps {
@@ -12,12 +13,6 @@ export interface ButtonProps extends BaseProps {
   onClick?: () => void
 
   /**
-   * The url to link to when the button is clicked.
-   * If defined, an a element will be used as the root node.
-   */
-  href?: string
-
-  /**
    * Disables Button
    */
   disabled?: boolean
@@ -25,16 +20,32 @@ export interface ButtonProps extends BaseProps {
   /**
    * Button variant
    */
-  variant?: 'outlined' | 'contained'
+  type?: 'primary-action' | 'secondary-action'
 }
+
+type ButtonVariant = 'outlined' | 'contained'
 
 /**
  * Primary UI component for user interaction
  */
 export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
+  const { disabled } = props
+  const { type } = props
+
+  let variant: ButtonVariant
+
+  switch (type) {
+    case 'secondary-action':
+      variant = 'outlined'
+      break
+    case 'primary-action':
+    default:
+      variant = 'contained'
+  }
+
   return (
     <StylesProvider injectFirst>
-      <MaterialButton classes={bem} disableRipple {...props}>
+      <MaterialButton classes={bem} variant={variant} disabled={disabled} disableRipple>
         {props.children}
       </MaterialButton>
     </StylesProvider>
