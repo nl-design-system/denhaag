@@ -58,7 +58,7 @@
 }
 
 .mdh-button--secondary-action.mdh-button--disabled {
-  background-color: var(--mdh-button-primary-action-disabled-background-color);
+  background-color: var(--mdh-button-secondary-action-disabled-background-color);
   color: var(--mdh-button-secondary-action-disabled-color);
   border-color: var(--mdh-button-secondary-action-disabled-border-color);
 }

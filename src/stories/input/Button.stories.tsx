@@ -23,7 +23,8 @@ const Template: Story<ButtonProps> = (args: any) => {
  */
 export const Default = Template.bind({})
 Default.args = {
-  type: 'primary-action'
+  type: 'primary-action',
+  onClick: () => { alert('clicked!') }
 }
 
 /**

@@ -29,8 +29,7 @@ type ButtonVariant = 'outlined' | 'contained'
  * Primary UI component for user interaction
  */
 export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
-  const { disabled } = props
-  const { type } = props
+  const { onClick, disabled, type } = props
 
   let variant: ButtonVariant
 
@@ -45,7 +44,7 @@ export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
 
   return (
     <StylesProvider injectFirst>
-      <MaterialButton classes={bem} variant={variant} disabled={disabled} disableRipple>
+      <MaterialButton classes={bem} onClick={onClick} variant={variant} disabled={disabled} disableRipple>
         {props.children}
       </MaterialButton>
     </StylesProvider>
