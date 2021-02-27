@@ -58,6 +58,7 @@ def update_package_json(packages, update_pairs):
     for package in packages:
         data = read_package_json(package)
         for fields, value in update_pairs:
+            fields = fields.split('.')
             data = update_dict(data, fields, value)
         write_package_json(package, data)
 
@@ -123,5 +124,6 @@ object, like \'scripts.build\' (seperated by a .)
         confirm = input('Confirm [Yn]: ')
         if confirm == 'Y':
             update_package_json(files, update_pairs)
+            break
         elif confirm == 'n':
             break
