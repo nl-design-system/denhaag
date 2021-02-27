@@ -8,7 +8,7 @@ export * from "@gemeente-denhaag/formgroup";
 export * from "@gemeente-denhaag/iconbutton";
 export * from "@gemeente-denhaag/inputlabel";
 export * from "@gemeente-denhaag/pickers";
-export * from "@gemeente-denhaag/pickers-utilsprovider"
+export * from "@gemeente-denhaag/pickers-utilsprovider";
 export * from "@gemeente-denhaag/radio";
 export * from "@gemeente-denhaag/radiogroup";
 export * from "@gemeente-denhaag/select";

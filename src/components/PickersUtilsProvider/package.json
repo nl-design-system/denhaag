@@ -7,7 +7,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
-    "directory": "src/components/input/Pickers/UtilsProvider"
+    "directory": "src/components/PickersUtilsProvider"
   },
   "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
   "dependencies": {
