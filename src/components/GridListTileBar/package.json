@@ -1,18 +1,24 @@
 {
-  "name": "@gemeente-denhaag/gridlisttilebar",
-  "author": "Municipality of The Hague",
-  "description": "A GridListTileBar component",
-  "version": "0.1.3",
-  "main": "GridListTileBar.tsx",
-  "module": "GridListTileBar.tsx",
-  "license": "EUPL-1.2",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
-    "directory": "src/components/layout/GridListTileBar"
-  },
-  "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
-  "dependencies": {
-    "@material-ui/core": "^4.11.0"
-  }
+    "author": "Municipality of The Hague",
+    "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
+    "dependencies": {
+        "@material-ui/core": "^4.11.0"
+    },
+    "description": "A GridListTileBar component",
+    "exports": "./dist/index.modern.js",
+    "license": "EUPL-1.2",
+    "main": "dist/index.js",
+    "module": "dist/index.module.js",
+    "name": "@gemeente-denhaag/gridlisttilebar",
+    "repository": {
+        "directory": "src/components/layout/GridListTileBar",
+        "type": "git",
+        "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git"
+    },
+    "scripts": {
+        "build": "microbundle-crl --no-compress --format modern,cjs"
+    },
+    "source": "src/index.tsx",
+    "types": "dist/index.d.ts",
+    "version": "0.1.3"
 }

@@ -1,19 +1,25 @@
 {
-  "name": "@gemeente-denhaag/appbar",
-  "author": "Municipality of The Hague",
-  "description": "An AppBar component",
-  "license": "EUPL-1.2",
-  "main": "AppBar.tsx",
-  "module": "AppBar.tsx",
-  "version": "0.1.3",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
-    "directory": "src/components/surfaces/AppBar"
-  },
-  "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
-  "dependencies": {
-    "@gemeente-denhaag/baseprops": "^0.1.3",
-    "@material-ui/core": "^4.11.0"
-  }
+    "author": "Municipality of The Hague",
+    "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
+    "dependencies": {
+        "@gemeente-denhaag/baseprops": "^0.1.3",
+        "@material-ui/core": "^4.11.0"
+    },
+    "description": "An AppBar component",
+    "exports": "./dist/index.modern.js",
+    "license": "EUPL-1.2",
+    "main": "dist/index.js",
+    "module": "dist/index.module.js",
+    "name": "@gemeente-denhaag/appbar",
+    "repository": {
+        "directory": "src/components/surfaces/AppBar",
+        "type": "git",
+        "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git"
+    },
+    "scripts": {
+        "build": "microbundle-crl --no-compress --format modern,cjs"
+    },
+    "source": "src/index.tsx",
+    "types": "dist/index.d.ts",
+    "version": "0.1.3"
 }
