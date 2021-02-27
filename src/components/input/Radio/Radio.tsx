@@ -1,6 +1,9 @@
 import MaterialRadio from '@material-ui/core/Radio'
 import React from 'react'
-import { useStyles } from './style'
+import { StylesProvider } from '@material-ui/core/styles'
+
+import './design-tokens.css'
+import { classes } from './bem-mapping'
 
 export interface RadioProps {
   /**
@@ -69,16 +72,12 @@ export interface RadioProps {
 }
 
 export const Radio: React.FC<RadioProps> = (props: RadioProps) => {
-  const classes = useStyles()
-  const classKeys = {
-    colorPrimary: classes.colorPrimary,
-    colorSecondary: classes.colorSecondary,
-    colorDefault: classes.colorDefault,
-    disabled: classes.disabled,
-    checked: classes.checked
-  }
 
-  return <MaterialRadio classes={classKeys} {...props} />
+  return (
+    <StylesProvider injectFirst>
+      <MaterialRadio classes={classes} {...props} />
+    </StylesProvider>
+  )
 }
 
 /**

@@ -1,7 +1,35 @@
 :root {
   --mdh-radio-primary-colour: rgb(34, 123, 60);
   --mdh-radio-secondary-colour: #EDBF07;
-  --mdh-switch-hover-colour: #9a6f1e;
+  --mdh-radio-hover-colour: #9a6f1e;
   --mdh-radio-focus-colour: #9a6f1e;
   --mdh-radio-disabled-colour: #666;
+}
+
+
+.mdh-radio-disabled {
+  color: var(--mdh-radio-disabled-colour)
+}
+
+.mdh-radio-checked.mdh-radio-primary {
+  color: var(--mdh-radio-focus-colour)
+}
+
+.mdh-radio-checked.mdh-radio-secondary {
+  color: var(--mdh-radio-focus-colour)
+}
+
+.mdh-radio-checked {
+  color: var(--mdh-radio-disabled-colour)
+}
+
+.mdh-radio-secondary {
+  color: var(--mdh-radio-secondary-colour)
+}
+
+.mdh-radio-secondary:hover {
+  color: var(--mdh-radio-focus-colour)
+}
+.mdh-radio-primary {
+  color: var(--mdh-radio-primary-colour)
 }
