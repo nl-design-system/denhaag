@@ -2,7 +2,7 @@ import BaseProps from '../BaseProps'
 import React  from 'react'
 import MaterialLink from '@material-ui/core/Link'
 
-export interface LinkProps extends BaseProps, React.AnchorHTMLAttributes<any> {
+export interface LinkProps extends BaseProps, React.AnchorHTMLAttributes<never> {
   /**
    * The color of the link.
    */
@@ -18,7 +18,7 @@ export interface LinkProps extends BaseProps, React.AnchorHTMLAttributes<any> {
    * The component used for the root node.
    * Either a string to use a HTML element or a component.
    */
-  component?: React.ElementType;
+  component?: React.ElementType
 
   /**
    * classes prop applied to the Typography element.
@@ -41,7 +41,7 @@ export interface LinkProps extends BaseProps, React.AnchorHTMLAttributes<any> {
   /**
    * The URL to which the component redirects
    */
-  href: string;
+  href: string
 
   /**
    * Applies the theme typography styles.

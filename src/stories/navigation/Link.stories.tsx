@@ -1,5 +1,5 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
+import React from "react"
+import { Meta, Story } from "@storybook/react"
 import { Link, LinkProps } from '../../components/Link'
 import pkg from "../../components/Link/package.json"
 
@@ -9,7 +9,7 @@ export default {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
   },
   component: Link,
-} as Meta;
+} as Meta
 
 const Template: Story<LinkProps> = (args: unknown) => (
   <Link {...args} target="_blank" href={'https://www.youtube.com/watch?v=2ocykBzWDiM'}>
