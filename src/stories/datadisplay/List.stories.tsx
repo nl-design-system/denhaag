@@ -1,14 +1,14 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import pkg from "../../components/datadisplay/List/package.json";
-import List, { ListProps } from "../../components/datadisplay/List/List";
-import ListItem from "../../components/datadisplay/ListItem/ListItem";
-import ListItemAvatar from "../../components/datadisplay/ListItemAvatar/ListItemAvatar";
-import ListItemIcon from "../../components/datadisplay/ListItemIcon/ListItemIcon";
-import ListItemSecondaryAction from "../../components/datadisplay/ListItemSecondaryAction/ListItemSecondaryAction";
-import ListItemText from "../../components/datadisplay/ListItemText/ListItemText";
-import ListSubheader from "../../components/datadisplay/ListSubheader/ListSubheader";
-import Checkbox from "../../components/input/Checkbox/Checkbox";
+import pkg from "../../components/List/package.json";
+import List, { ListProps } from "../../components/List/List";
+import ListItem from "../../components/ListItem/ListItem";
+import ListItemAvatar from "../../components/ListItemAvatar/ListItemAvatar";
+import ListItemIcon from "../../components/ListItemIcon/ListItemIcon";
+import ListItemSecondaryAction from "../../components/ListItemSecondaryAction/ListItemSecondaryAction";
+import ListItemText from "../../components/ListItemText/ListItemText";
+import ListSubheader from "../../components/ListSubheader/ListSubheader";
+import Checkbox from "../../components/Checkbox/Checkbox";
 import { IconButton, Avatar } from "@material-ui/core";
 import CommentIcon from "@material-ui/icons/Comment";
 import FolderIcon from "@material-ui/icons/Folder";
@@ -34,7 +34,7 @@ const Template: Story<ListProps> = (args: any) => (
         </IconButton>
       </ListItemSecondaryAction>
     </ListItem>
-    <ListItem>
+    <ListItem button>
       <ListItemAvatar>
         <Avatar>
           <FolderIcon />

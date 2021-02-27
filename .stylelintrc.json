@@ -1,8 +1,8 @@
 {
   "rules": {
-    "custom-property-pattern": "nlds-[a-z0-9-]+",
-    "selector-class-pattern": "nlds-[a-z0-9-]+",
-    "keyframes-name-pattern": "nlds-[a-z0-9-]+",
+    "custom-property-pattern": "denhaag-[a-z0-9-]+",
+    "selector-class-pattern": "denhaag-[a-z0-9-]+",
+    "keyframes-name-pattern": "denhaag-[a-z0-9-]+",
     "at-rule-no-unknown": [true],
     "block-no-empty": [true],
     "color-no-invalid-hex": [true],

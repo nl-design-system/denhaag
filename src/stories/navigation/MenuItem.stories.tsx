@@ -1,8 +1,8 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { MenuItem, MenuItemProps } from "../../components/navigation/MenuItem/MenuItem";
-import Menu from "../../components/navigation/Menu/Menu";
-import pkg from "../../components/navigation/MenuItem/package.json";
+import { MenuItem, MenuItemProps } from "../../components/MenuItem/MenuItem";
+import Menu from "../../components/Menu/Menu";
+import pkg from "../../components/MenuItem/package.json";
 
 export default {
   title: "Components/Navigation/Menu/MenuItem",

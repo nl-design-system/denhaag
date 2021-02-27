@@ -1,8 +1,8 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { GridListTile } from "../../components/layout/GridListTile/GridListTile";
-import GridList, { GridListProps } from "../../components/layout/GridList/GridList";
-import pkg from "../../components/layout/GridList/package.json";
+import { GridListTile } from "../../components/GridListTile/GridListTile";
+import GridList, { GridListProps } from "../../components/GridList/GridList";
+import pkg from "../../components/GridList/package.json";
 import imageFile from "../assets/logo.svg";
 
 export default {

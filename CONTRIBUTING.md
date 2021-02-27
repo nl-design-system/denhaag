@@ -74,7 +74,7 @@ They must clearly explain the purpose, context or functionality of the line of c
 
 ## Typescript coding style
 
-Changes to NLDS React Component Library code must conform to the JavaScript Standard Style.
+Changes to Den Haag React Component Library code must conform to the JavaScript Standard Style.
 The project has linters set up to verify the code style. Use the `yarn lint` or `yarn lint:ts` command to check your changes and ensure they conform to the standard.
 
 When defining an export for a component, add a named export as well as a default export:
@@ -177,4 +177,4 @@ Use concise variable names.
 
 ### CSS names
 
-CSS class names, custom property names and keyframe names al must start with the prefix `nlds-` followed by one or more [0-9a-z-]. This is also enforced by the linter via the `yarn lint:css` command.
+CSS class names, custom property names and keyframe names al must start with the prefix `denhaag-` followed by one or more [0-9a-z-]. This is also enforced by the linter via the `yarn lint:css` command.

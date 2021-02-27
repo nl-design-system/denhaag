@@ -2,7 +2,10 @@
 node_modules
 
 # Ignore generated files
-dist
+*.log
+.husky
 CHANGELOG.md
-package.json
+dist
 package-lock.json
+package.json
+storybook-static

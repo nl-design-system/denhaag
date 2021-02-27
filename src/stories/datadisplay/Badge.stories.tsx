@@ -1,8 +1,8 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { Badge, BadgeProps } from "../../components/datadisplay/Badge/Badge";
+import { Badge, BadgeProps } from "../../components/Badge/Badge";
 import MailIcon from "@material-ui/icons/Mail";
-import pkg from "../../components/datadisplay/Badge/package.json";
+import pkg from "../../components/Badge/package.json";
 
 export default {
   title: "Components/Data Display/Badge",
