@@ -72,7 +72,7 @@ const currencies = [
   },
 ];
 
-export const Select = (props: TextFieldProps) => (
+export const Select: React.FC<TextFieldProps> = (props: TextFieldProps) => (
   <TextField select SelectProps={{ native: true }} helperText="Please select an option" {...props}>
     {currencies.map((option) => (
       <option key={option.value} value={option.value}>
