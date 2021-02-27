@@ -21,7 +21,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: "14.x"
-          
+
       - name: yarn install, build storybook
         run: |
           npm install -g yarn
@@ -38,38 +38,38 @@ jobs:
     needs: build
     if: github.ref == 'refs/heads/development'
     runs-on: ubuntu-latest
-    
-    steps:
-    - name: Download storybook
-      uses: actions/download-artifact@v2
-      with:
-        name: storybook
-        path: storybook-static
 
-    - name: 'Deploy to Azure Web App'
-      uses: azure/webapps-deploy@v2
-      with:
-        app-name: 'dhreactstorybook-staging'
-        slot-name: 'production'
-        publish-profile: ${{ secrets.AZUREAPPSERVICE_DHSTORYBOOK_STAGING }}
-        package: storybook-static
+    steps:
+      - name: Download storybook
+        uses: actions/download-artifact@v2
+        with:
+          name: storybook
+          path: storybook-static
+
+      - name: "Deploy to Azure Web App"
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: "dhreactstorybook-staging"
+          slot-name: "production"
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_DHSTORYBOOK_STAGING }}
+          package: storybook-static
 
   deploy-production:
     needs: build
     if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
-    
-    steps:
-    - name: Download storybook
-      uses: actions/download-artifact@v2
-      with:
-        name: storybook
-        path: storybook-static
 
-    - name: 'Deploy to Azure Web App'
-      uses: azure/webapps-deploy@v2
-      with:
-        app-name: 'dhreactstorybook'
-        slot-name: 'production'
-        publish-profile: ${{ secrets.AZUREAPPSERVICE_DHSTORYBOOK_PROD }}
-        package: storybook-static
+    steps:
+      - name: Download storybook
+        uses: actions/download-artifact@v2
+        with:
+          name: storybook
+          path: storybook-static
+
+      - name: "Deploy to Azure Web App"
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: "dhreactstorybook"
+          slot-name: "production"
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_DHSTORYBOOK_PROD }}
+          package: storybook-static

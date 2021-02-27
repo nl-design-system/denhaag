@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { Typography, TypographyProps } from '../../components/Typography';
+import { Typography, TypographyProps } from "../../components/Typography";
 import pkg from "../../components/Typography/package.json";
 
 export default {

@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { Badge, BadgeProps } from '../../components/Badge';
+import { Badge, BadgeProps } from "../../components/Badge";
 import MailIcon from "@material-ui/icons/Mail";
 import pkg from "../../components/Badge/package.json";
 
