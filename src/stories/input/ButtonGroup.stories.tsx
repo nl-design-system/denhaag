@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { ButtonGroup, ButtonGroupProps } from "../../components/ButtonGroup/ButtonGroup";
+import { ButtonGroup, ButtonGroupProps } from "../../components/ButtonGroup";
 import pkg from "../../components/ButtonGroup/package.json";
 import Button from "../../components/Button/Button";
 
