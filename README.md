@@ -4,7 +4,12 @@
 
 [![NPM](https://img.shields.io/npm/v/denhaag-component-library.svg)](https://www.npmjs.com/package/denhaag-component-library) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-## Install trigger ci
+## 🥅 Goals of this codebase
+The Municipality of The Hague React UI-components library is constructed, so that re-use by other government organisations is possible with minimal effort. The UI-components are available in a basic styling and through the use of Design Tokens it is possible to give the components your own (corporate) identity. Within the Municipality of The Hague the components are used for:	
+* Corporate website (Wordpress - Open Web Concept)
+* Satelite websites (Wordpress)
+* OpenSource eForms (OpenFormulieren - Dimpact)
+* Portal (MijnDenHaag - collaboration with Amsterdam and Dimpact)
 
 ## 🚀 Getting started
 ### Install component library
