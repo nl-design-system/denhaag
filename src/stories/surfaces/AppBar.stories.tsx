@@ -1,12 +1,12 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { AppBar, AppBarProps } from "../../components/AppBar/AppBar";
+import { AppBar, AppBarProps } from "../../components/AppBar";
 import pkg from "../../components/AppBar/package.json";
 import Toolbar from "../../components/Toolbar/Toolbar";
 import IconButton from "../../components/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
-import Typography from "../../components/Typography/Typography";
-import Button from "../../components/Button/Button";
+import Typography from "../../components/Typography";
+import Button from "../../components/Button";
 
 export default {
   title: "Components/Surfaces/AppBar",

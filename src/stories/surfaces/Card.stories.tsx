@@ -1,11 +1,11 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
 import pkg from "../../components/Card/package.json";
-import Card, { CardProps } from "../../components/Card/Card";
-import CardActions from "../../components/CardActions/CardActions";
-import CardContent from "../../components/CardContent/CardContent";
-import CardHeader from "../../components/CardHeader/CardHeader";
-import Typography from "../../components/Typography/Typography";
+import Card, { CardProps } from "../../components/Card";
+import CardActions from "../../components/CardActions";
+import CardContent from "../../components/CardContent";
+import CardHeader from "../../components/CardHeader";
+import Typography from "../../components/Typography";
 import { Avatar } from "../../components/Avatar";
 import { IconButton } from "../../components/IconButton";
 import FavoriteIcon from "@material-ui/icons/Favorite";
