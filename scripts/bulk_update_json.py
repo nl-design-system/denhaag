@@ -41,6 +41,8 @@ def update_dict(result: dict, fields: list, value) -> dict:
     current_dict = result
     for i, field in enumerate(fields):
         if i == len(fields) - 1:
+            if not field or not value:
+                continue
             current_dict[field] = value
         elif not field in current_dict:
             current_dict[field] = dict()
@@ -59,6 +61,11 @@ def update_package_json(packages, update_pairs):
         data = read_package_json(package)
         for fields, value in update_pairs:
             fields = fields.split('.')
+            # values = value.split(',')
+            # if len(values) == 1:
+            #     values = values[0]
+            # else:
+            #     values = [v for v in values if v]
             data = update_dict(data, fields, value)
         write_package_json(package, data)
 

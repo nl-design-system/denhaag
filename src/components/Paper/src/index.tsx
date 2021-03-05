@@ -12,3 +12,5 @@ export const Paper: React.FC<PaperProps> = (props: PaperProps) => {
  * Default export for Paper
  */
 export default Paper;
+
+export *from "./BasePaperProps";

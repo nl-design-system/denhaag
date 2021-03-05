@@ -15,8 +15,12 @@
     "module": "dist/index.module.js",
     "source": "src/index.tsx",
     "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
     "scripts": {
-        "build": "microbundle-crl --no-compress --format modern,cjs"
+        "build": "microbundle --no-compress --format modern,cjs --tsconfig tsconfig.json",
+        "clean": "rm -rf ./dist"
     },
     "dependencies": {
         "@gemeente-denhaag/baseprops": "^0.1.3",
