@@ -4,7 +4,7 @@ import {
   KeyboardDatePicker,
   KeyboardDatePickerProps,
 } from "../../components/Pickers/KeyboardDatePicker/KeyboardDatePicker";
-import { PickersUtilsProvider } from "../../components/Pickers/PickersUtilsProvider/PickersUtilsProvider";
+import { PickersUtilsProvider } from "../../components/PickersUtilsProvider/PickersUtilsProvider";
 import DateFnsUtils from "@date-io/date-fns";
 import pkg from "../../components/Pickers/package.json";
 
