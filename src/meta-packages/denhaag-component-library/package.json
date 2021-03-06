@@ -5,7 +5,7 @@
   "license": "EUPL-1.2",
   "main": "index.tsx",
   "module": "index.tsx",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "files": [
     "index.tsx"
   ],
@@ -18,10 +18,10 @@
   "dependencies": {
     "@gemeente-denhaag/baseprops": "^0.1.3",
     "@gemeente-denhaag/datadisplay": "^0.1.3",
-    "@gemeente-denhaag/input": "^0.1.7",
+    "@gemeente-denhaag/input": "^0.1.8",
     "@gemeente-denhaag/layout": "^0.1.3",
     "@gemeente-denhaag/navigation": "^0.1.3",
-    "@gemeente-denhaag/pickers": "^0.1.9",
+    "@gemeente-denhaag/pickers": "^0.1.10",
     "@gemeente-denhaag/surfaces": "^0.1.3"
   }
 }
