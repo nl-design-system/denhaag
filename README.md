@@ -15,8 +15,8 @@ npm install --save denhaag-component-library
 ```tsx
 import React, { Component } from "react";
 
-import MyComponent from 'denhaag-component-library'
-import 'denhaag-component-library/dist/index.css'
+import MyComponent from "denhaag-component-library";
+import "denhaag-component-library/dist/index.css";
 
 class Example extends Component {
   render() {
