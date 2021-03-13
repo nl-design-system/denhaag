@@ -3,7 +3,7 @@ import { Meta, Story } from "@storybook/react";
 import { MenuItem, MenuItemProps } from "../../components/MenuItem";
 import Menu from "../../components/Menu/Menu";
 import pkg from "../../components/MenuItem/package.json";
-import Button from "@gemeente-denhaag/button";
+import Button from "../../components/button";
 
 export default {
   title: "Components/Navigation/Menu/MenuItem",
