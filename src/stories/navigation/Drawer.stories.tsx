@@ -48,7 +48,7 @@ Default.args = {
  */
 export const BottomDrawer = Template.bind({});
 BottomDrawer.args = {
-  open: true,
+  open: false,
   anchor: "bottom",
 };
 
@@ -57,7 +57,7 @@ BottomDrawer.args = {
  */
 export const TopDrawer = Template.bind({});
 TopDrawer.args = {
-  open: true,
+  open: false,
   anchor: "top",
 };
 
@@ -66,6 +66,6 @@ TopDrawer.args = {
  */
 export const RightDrawer = Template.bind({});
 RightDrawer.args = {
-  open: true,
+  open: false,
   anchor: "right",
 };
