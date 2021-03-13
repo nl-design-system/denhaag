@@ -1,7 +1,7 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { IconButton } from "../../components/IconButton";
 import InfoIcon from "@material-ui/icons/Info";
+import IconButton from "../../components/IconButton";
 import GridListTileBar, { GridListTileBarProps } from "../../components/GridListTileBar";
 import GridListTile from "../../components/GridListTile";
 import GridList from "../../components/GridList";

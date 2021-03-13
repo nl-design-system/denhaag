@@ -1,5 +1,9 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
+import FavoriteIcon from "@material-ui/icons/Favorite";
+import ShareIcon from "@material-ui/icons/Share";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import MoreVertIcon from "@material-ui/icons/MoreVert";
 import pkg from "../../components/Card/package.json";
 import Card, { CardProps } from "../../components/Card";
 import CardActions from "../../components/CardActions";
@@ -8,10 +12,6 @@ import CardHeader from "../../components/CardHeader";
 import Typography from "../../components/Typography";
 import { Avatar } from "../../components/Avatar";
 import { IconButton } from "../../components/IconButton";
-import FavoriteIcon from "@material-ui/icons/Favorite";
-import ShareIcon from "@material-ui/icons/Share";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import MoreVertIcon from "@material-ui/icons/MoreVert";
 
 export default {
   title: "Components/Surfaces/Card",

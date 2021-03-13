@@ -1,9 +1,9 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
+import { ExpandMore } from "@material-ui/icons";
 import { Accordion, AccordionProps } from "../../components/Accordion";
 import pkg from "../../components/Accordion/package.json";
 import AccordionSummary from "../../components/AccordionSummary";
-import { ExpandMore } from "@material-ui/icons";
 import { Typography } from "../../components/Typography";
 import AccordionDetails from "../../components/AccordionDetails";
 
