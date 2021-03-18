@@ -8,7 +8,9 @@ We pledge to act and interact in ways that contribute to an open, welcoming, div
 
 Before you make a commit or PR, run `yarn lint` and `yarn test` to see if everything is in order.
 Many things can be fixed automatically using `yarn lint-fix`. Make separate commits for separate purposes.
-When you make a PR you will need to sign our [Contributor License Agreement](CLA.md), so first check with your employer if you need to.
+
+## Cooperation with NL Design System
+Certain Components available in this repository may become part of the NL Design System component library. When you contribute to this project you allow your contributions to be made a part of the NL Design System component library. The NL Design System project maintainers decide which components will be included in their component library.
 
 ## Foundation for Public Code
 
