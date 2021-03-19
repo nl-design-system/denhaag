@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { MenuList, MenuListProps } from "../../components/MenuList/MenuList";
+import { MenuList, MenuListProps } from "../../components/MenuList";
 import MenuItem from "../../components/MenuItem/MenuItem";
 import pkg from "../../components/MenuList/package.json";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { AppBar, AppBarProps } from "../../components/AppBar/AppBar";
+import { AppBar, AppBarProps } from "../../components/AppBar";
 import pkg from "../../components/AppBar/package.json";
 import Toolbar from "../../components/Toolbar/Toolbar";
 import { createStyles, IconButton, makeStyles, Theme } from "@material-ui/core";

@@ -2,7 +2,7 @@ import React from "react";
 import { Meta, Story } from "@storybook/react";
 import pkg from "../../components/Switch/package.json";
 import Switch, { SwitchProps } from "../../components/Switch/Switch";
-import { FormControlLabel } from "../../components/FormControlLabel/FormControlLabel";
+import { FormControlLabel } from "../../components/FormControlLabel";
 
 export default {
   title: "Components/Input/Switch",

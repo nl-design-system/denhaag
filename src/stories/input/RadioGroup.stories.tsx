@@ -1,6 +1,6 @@
 import React from "react";
 import { Story, Meta } from "@storybook/react/types-6-0";
-import { RadioGroup, RadioGroupProps } from "../../components/RadioGroup/RadioGroup";
+import { RadioGroup, RadioGroupProps } from "../../components/RadioGroup";
 import pkg from "../../components/RadioGroup/package.json";
 import { FormControlLabel, Radio } from "../..";
 
