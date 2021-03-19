@@ -2,7 +2,7 @@
   "name": "@gemeente-denhaag/gridlisttilebar",
   "author": "Municipality of The Hague",
   "description": "A GridListTileBar component",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "main": "GridListTileBar.tsx",
   "module": "GridListTileBar.tsx",
   "license": "EUPL-1.2",
