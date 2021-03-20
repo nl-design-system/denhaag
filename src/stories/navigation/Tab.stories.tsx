@@ -1,10 +1,10 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import Tab, { TabProps } from "../../components/Tab/Tab";
+import Tab, { TabProps } from "../../components/Tab";
 import pkg from "../../components/Tab/package.json";
-import TabContext from "../../components/TabContext/TabContext";
-import Tabs from "../../components/Tabs/Tabs";
-import TabPanel from "../../components/TabPanel/TabPanel";
+import TabContext from "../../components/TabContext";
+import Tabs from "../../components/Tabs";
+import TabPanel from "../../components/TabPanel";
 
 export default {
   title: "Components/Navigation/Tabs/Tab",

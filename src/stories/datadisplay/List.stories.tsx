@@ -1,15 +1,16 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
 import pkg from "../../components/List/package.json";
-import List, { ListProps } from "../../components/List/List";
-import ListItem from "../../components/ListItem/ListItem";
-import ListItemAvatar from "../../components/ListItemAvatar/ListItemAvatar";
-import ListItemIcon from "../../components/ListItemIcon/ListItemIcon";
-import ListItemSecondaryAction from "../../components/ListItemSecondaryAction/ListItemSecondaryAction";
-import ListItemText from "../../components/ListItemText/ListItemText";
-import ListSubheader from "../../components/ListSubheader/ListSubheader";
-import Checkbox from "../../components/Checkbox/Checkbox";
-import { IconButton, Avatar } from "@material-ui/core";
+import List, { ListProps } from "../../components/List";
+import ListItem from "../../components/ListItem";
+import ListItemAvatar from "../../components/ListItemAvatar";
+import ListItemIcon from "../../components/ListItemIcon";
+import ListItemSecondaryAction from "../../components/ListItemSecondaryAction";
+import ListItemText from "../../components/ListItemText";
+import ListSubheader from "../../components/ListSubheader";
+import Checkbox from "../../components/Checkbox";
+import IconButton from "../../components/IconButton";
+import Avatar from "../../components/Avatar";
 import CommentIcon from "@material-ui/icons/Comment";
 import FolderIcon from "@material-ui/icons/Folder";
 

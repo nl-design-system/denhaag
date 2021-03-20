@@ -1,8 +1,8 @@
 import React from "react";
 import { Story, Meta } from "@storybook/react";
+import DateFnsUtils from "@date-io/date-fns";
 import DatePicker, { DatePickerProps } from "../../components/Pickers/DatePicker/DatePicker";
 import { PickersUtilsProvider } from "../../components/PickersUtilsProvider/PickersUtilsProvider";
-import DateFnsUtils from "@date-io/date-fns";
 import pkg from "../../components/Pickers/package.json";
 
 export default {

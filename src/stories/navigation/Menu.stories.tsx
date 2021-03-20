@@ -1,7 +1,7 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
 import { Menu, MenuProps } from "../../components/Menu";
-import MenuItem from "../../components/MenuItem/MenuItem";
+import MenuItem from "../../components/MenuItem";
 import pkg from "../../components/Menu/package.json";
 import Button from "../../components/Button/Button";
 
