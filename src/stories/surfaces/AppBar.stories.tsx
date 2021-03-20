@@ -50,6 +50,9 @@ const Template: Story<AppBarProps> = (args: any) => {
  * Implementation of AppBar
  */
 export const Default = Template.bind({});
+Default.args = {
+  position: "relative",
+}
 
 /**
  * Statically positioned AppBar
@@ -64,5 +67,6 @@ StaticPosition.args = {
  */
 export const SecondaryColoured = Template.bind({});
 SecondaryColoured.args = {
+  position: "static",
   color: "secondary",
 };
