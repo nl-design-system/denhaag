@@ -10,6 +10,11 @@ export default {
   title: "Components/navigation/Stepper",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
   component: Stepper,
 } as Meta;

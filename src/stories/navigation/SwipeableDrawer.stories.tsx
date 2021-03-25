@@ -8,6 +8,11 @@ export default {
   title: "Components/Navigation/SwipeableDrawer",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
   component: SwipeableDrawer,
 } as Meta;

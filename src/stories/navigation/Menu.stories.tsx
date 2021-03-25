@@ -9,6 +9,11 @@ export default {
   title: "Components/Navigation/Menu",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
   component: Menu,
 } as Meta;
@@ -17,7 +22,7 @@ const opened = false;
 
 const Template: Story<MenuProps> = (args: any) => {
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const handleClick = (event) => 
+  const handleClick = (event) =>
   {
     setAnchorEl(event.currentTarget);
   }

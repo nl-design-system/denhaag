@@ -8,6 +8,11 @@ export default {
   title: "Components/Navigation/Menu/MenuList",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
   component: MenuList,
 } as Meta;

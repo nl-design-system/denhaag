@@ -10,6 +10,11 @@ export default {
   title: "Components/Navigation/Tabs/Tab",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
   component: Tab,
 } as Meta;

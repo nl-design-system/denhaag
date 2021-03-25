@@ -7,6 +7,11 @@ export default {
   title: "Components/Navigation/Link",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
   component: Link,
 } as Meta;
