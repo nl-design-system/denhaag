@@ -1,11 +1,11 @@
 import React from "react";
 import { Meta } from "@storybook/react";
-import pkg from "../../components/Select/package.json";
-import Select, { SelectProps } from "../../components/Select/Select";
+import pkg from "@gemeente-denhaag/Select/package.json";
+import Select, { SelectProps } from "@gemeente-denhaag/Select";
 import { createStyles, makeStyles, Theme } from "@material-ui/core";
-import FormControl from "../../components/FormControl/FormControl";
-import InputLabel from "../../components/InputLabel/InputLabel";
-import MenuItem from "../../components/MenuItem/MenuItem";
+import FormControl from "@gemeente-denhaag/FormControl";
+import InputLabel from "@gemeente-denhaag/InputLabel";
+import MenuItem from "@gemeente-denhaag/MenuItem";
 
 export default {
   title: "Components/Input/Select",
