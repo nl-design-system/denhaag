@@ -1,11 +1,11 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { Accordion, AccordionProps } from "../../components/Accordion";
-import pkg from "../../components/Accordion/package.json";
-import AccordionSummary from "../../components/AccordionSummary/AccordionSummary";
+import { Accordion, AccordionProps } from "@gemeente-denhaag/Accordion";
+import pkg from "@gemeente-denhaag/Accordion/package.json";
+import AccordionSummary from "@gemeente-denhaag/AccordionSummary";
 import { ExpandMore } from "@material-ui/icons";
 import { Typography } from "@material-ui/core";
-import AccordionDetails from "../../components/AccordionDetails/AccordionDetails";
+import AccordionDetails from "@gemeente-denhaag/AccordionDetails";
 
 export default {
   title: "Components/Surfaces/Accordion",

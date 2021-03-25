@@ -1,11 +1,11 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import pkg from "../../components/Card/package.json";
-import Card, { CardProps } from "../../components/Card/Card";
-import CardActions from "../../components/CardActions/CardActions";
-import CardContent from "../../components/CardContent/CardContent";
-import CardHeader from "../../components/CardHeader/CardHeader";
-import Typography from "../../components/Typography/Typography";
+import pkg from "@gemeente-denhaag/Card/package.json";
+import Card, { CardProps } from "@gemeente-denhaag/Card";
+import CardActions from "@gemeente-denhaag/CardActions";
+import CardContent from "@gemeente-denhaag/CardContent";
+import CardHeader from "@gemeente-denhaag/CardHeader";
+import Typography from "@gemeente-denhaag/Typography";
 import { Avatar, IconButton } from "@material-ui/core";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import ShareIcon from "@material-ui/icons/Share";
