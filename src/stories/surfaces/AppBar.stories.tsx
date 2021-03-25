@@ -6,7 +6,7 @@ import Toolbar from "@gemeente-denhaag/Toolbar";
 import { IconButton } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import Typography from "@gemeente-denhaag/Typography";
-import Button from "@gemeente-denhaag/Button";
+import Button from "@gemeente-denhaag/button";
 
 export default {
   title: "Components/Surfaces/AppBar",
