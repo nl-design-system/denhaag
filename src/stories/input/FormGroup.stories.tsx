@@ -10,6 +10,11 @@ export default {
   title: "Components/Input/FormGroup",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
   component: FormGroup,
 } as Meta;

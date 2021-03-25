@@ -7,6 +7,11 @@ export default {
   title: "Components/Input/TextField",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
   component: TextField,
   argTypes: {

@@ -9,6 +9,11 @@ export default {
   title: "Components/Input/Button",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
   component: Button,
 } as Meta;

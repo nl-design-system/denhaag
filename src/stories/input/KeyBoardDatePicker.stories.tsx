@@ -12,6 +12,11 @@ export default {
   title: "Components/Input/KeyboardDatePicker",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
   component: KeyboardDatePicker,
 } as Meta;

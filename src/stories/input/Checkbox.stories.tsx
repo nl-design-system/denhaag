@@ -9,6 +9,11 @@ export default {
   title: "Components/Input/Checkbox",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
   component: Checkbox,
 } as Meta;

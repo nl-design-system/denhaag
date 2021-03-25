@@ -12,6 +12,11 @@ export default {
   title: "Components/Input/Radio",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
   component: Radio,
 } as Meta;

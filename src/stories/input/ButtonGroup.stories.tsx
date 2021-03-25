@@ -8,6 +8,11 @@ export default {
   title: "Components/Input/ButtonGroup",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
   component: ButtonGroup,
 } as Meta;

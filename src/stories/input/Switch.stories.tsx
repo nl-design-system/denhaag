@@ -8,6 +8,11 @@ export default {
   title: "Components/Input/Switch",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
   component: Switch,
 } as Meta;

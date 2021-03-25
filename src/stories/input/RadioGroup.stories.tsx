@@ -8,6 +8,11 @@ export default {
   title: "Components/Input/RadioGroup",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
   component: RadioGroup,
 } as Meta;

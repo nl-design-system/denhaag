@@ -9,6 +9,11 @@ export default {
   title: "Components/Input/FormControlLabel",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
   component: FormControlLabel,
 } as Meta;
