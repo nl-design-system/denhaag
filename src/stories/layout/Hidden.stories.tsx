@@ -7,6 +7,11 @@ export default {
   title: "Components/Layout/Hidden",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
   component: Hidden,
 } as Meta;

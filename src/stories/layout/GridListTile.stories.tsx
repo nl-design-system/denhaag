@@ -8,6 +8,11 @@ export default {
   title: "Components/Layout/GridList/GridListTile",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
   component: GridListTile,
 } as Meta;

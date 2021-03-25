@@ -12,6 +12,11 @@ export default {
   title: "Components/Layout/GridList/GridListTile/GridListTileBar",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
   component: GridListTileBar,
 } as Meta;

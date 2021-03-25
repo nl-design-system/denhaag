@@ -7,6 +7,11 @@ export default {
   title: "Components/Layout/Grid",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
   component: Grid,
 } as Meta;

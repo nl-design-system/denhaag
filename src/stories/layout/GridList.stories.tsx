@@ -9,6 +9,11 @@ export default {
   title: "Components/Layout/GridList",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
   component: GridList,
 } as Meta;

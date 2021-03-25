@@ -8,6 +8,11 @@ export default {
   component: Container,
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
 } as Meta;
 

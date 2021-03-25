@@ -7,6 +7,11 @@ export default {
   title: "Components/Layout/Box",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
   component: Box,
 } as Meta;
