@@ -12,13 +12,26 @@ export default {
   component: Drawer,
 } as Meta;
 
-const Template: Story<DrawerProps> = (args: any) => (
-  <Drawer {...args}>
-    <Button>I am a Button in a Drawer component!</Button>
-    <Button>Set the &quot;open&quot; property to false to close me.</Button>
-    <Button>Set the &quot;open&quot; property to true to open me.</Button>
-  </Drawer>
-);
+const Template: Story<DrawerProps> = (args: any) => {
+  const [state, setState] = React.useState({
+    open: args.open,
+  });
+
+  const toggleDrawer = (open: boolean) => {
+    setState({ open: open });
+  };
+
+  return (
+    <div>
+      <Button onClick={() => toggleDrawer(true)}>{args.anchor}</Button>
+      <Drawer anchor={args.anchor} open={Boolean(state.open)} onClose={() => toggleDrawer(false)}>
+        <Button>I am a Button in a Drawer component!</Button>
+        <Button>Set the &quot;open&quot; property to false to close me.</Button>
+        <Button>Set the &quot;open&quot; property to true to open me.</Button>
+      </Drawer>
+    </div>
+  );
+};
 
 /**
  * Implementation of Drawer
@@ -27,6 +40,7 @@ const Template: Story<DrawerProps> = (args: any) => (
 export const Default = Template.bind({});
 Default.args = {
   open: true,
+  anchor: "left",
 };
 
 /**
@@ -34,7 +48,7 @@ Default.args = {
  */
 export const BottomDrawer = Template.bind({});
 BottomDrawer.args = {
-  open: true,
+  open: false,
   anchor: "bottom",
 };
 
@@ -43,7 +57,7 @@ BottomDrawer.args = {
  */
 export const TopDrawer = Template.bind({});
 TopDrawer.args = {
-  open: true,
+  open: false,
   anchor: "top",
 };
 
@@ -52,6 +66,6 @@ TopDrawer.args = {
  */
 export const RightDrawer = Template.bind({});
 RightDrawer.args = {
-  open: true,
+  open: false,
   anchor: "right",
 };

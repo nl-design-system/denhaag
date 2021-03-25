@@ -1,11 +1,11 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { IconButton } from "@material-ui/core";
 import InfoIcon from "@material-ui/icons/Info";
 import GridListTileBar, { GridListTileBarProps } from "@gemeente-denhaag/GridListTileBar";
 import GridListTile from "@gemeente-denhaag/GridListTile";
 import GridList from "@gemeente-denhaag/GridList";
 import pkg from "@gemeente-denhaag/GridListTileBar/package.json";
+import IconButton from "@gemeente-denhaag/IconButton";
 import imageFile from "../assets/logo.svg";
 
 export default {

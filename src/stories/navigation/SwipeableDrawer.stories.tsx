@@ -12,12 +12,25 @@ export default {
   component: SwipeableDrawer,
 } as Meta;
 
-const Template: Story<SwipeableDrawerProps> = (args: any) => (
-  <SwipeableDrawer {...args}>
-    <p>This Drawer is swipeable, drag it to hide it.</p>
-    <Button>Push me or swipe me on a phone!</Button>
-  </SwipeableDrawer>
-);
+const Template: Story<SwipeableDrawerProps> = (args: any) => {
+  const [state, setState] = React.useState({
+    open: args.open,
+  });
+
+  const toggleDrawer = (open: boolean) => {
+    setState({ open: open });
+  };
+
+  return (
+    <div>
+      <Button onClick={() => toggleDrawer(true)}>Open Menu</Button>
+      <SwipeableDrawer {...args} open={Boolean(state.open)} onClose={() => toggleDrawer(false)}>
+        <p>This Drawer is swipeable, drag it to hide it.</p>
+        <Button>Push me or swipe me on a phone!</Button>
+      </SwipeableDrawer>
+    </div>
+  );
+};
 
 /**
  * Implementation of SwipeableDrawer

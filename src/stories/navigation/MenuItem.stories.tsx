@@ -3,6 +3,7 @@ import { Meta, Story } from "@storybook/react";
 import { MenuItem, MenuItemProps } from "@gemeente-denhaag/MenuItem";
 import Menu from "@gemeente-denhaag/Menu";
 import pkg from "@gemeente-denhaag/MenuItem/package.json";
+import Button from "@gemeente-denhaag/Button";
 
 export default {
   title: "Components/Navigation/Menu/MenuItem",
@@ -12,13 +13,27 @@ export default {
   component: MenuItem,
 } as Meta;
 
-const Template: Story<MenuItemProps> = (args: any) => (
-  <Menu open anchorEl={null}>
-    <MenuItem {...args}>
-      <p>This is a MenuItem.</p>
-    </MenuItem>
-  </Menu>
-);
+const Template: Story<MenuItemProps> = (args: any) => {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+  return (
+    <div>
+      <Button aria-controls="menu" onClick={handleClick}>
+        Click me!
+      </Button>
+      <Menu {...args} anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleClose} id="menu">
+        <MenuItem {...args}>
+          <p>This is a MenuItem.</p>
+        </MenuItem>
+      </Menu>
+    </div>
+  );
+};
 
 /**
  * Implementation of MenuItem
