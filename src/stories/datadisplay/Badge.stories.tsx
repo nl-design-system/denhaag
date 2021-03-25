@@ -8,6 +8,11 @@ export default {
   title: "Components/Data Display/Badge",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
   component: Badge,
 } as Meta;

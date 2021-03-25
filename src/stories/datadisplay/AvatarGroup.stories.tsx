@@ -8,6 +8,11 @@ export default {
   title: "Components/Data Display/AvatarGroup",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
   component: AvatarGroup,
 } as Meta;

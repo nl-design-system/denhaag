@@ -10,6 +10,11 @@ export default {
   title: "Components/Data Display/Divider",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
   component: Divider,
 } as Meta;

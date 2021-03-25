@@ -7,6 +7,11 @@ export default {
   title: "Components/Data Display/Typography",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
   component: Typography,
 } as Meta;
