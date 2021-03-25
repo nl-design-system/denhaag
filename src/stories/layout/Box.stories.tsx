@@ -1,7 +1,7 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import Box, { BoxProps } from "../../components/Box/Box";
-import pkg from "../../components/Box/package.json";
+import Box, { BoxProps } from "@gemeente-denhaag/Box";
+import pkg from "@gemeente-denhaag/Box/package.json";
 
 export default {
   title: "Components/Layout/Box",

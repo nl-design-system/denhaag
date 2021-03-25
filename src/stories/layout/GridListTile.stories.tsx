@@ -1,8 +1,8 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { GridList } from "../../components/GridList";
-import GridListTile, { GridListTileProps } from "../../components/GridListTile/GridListTile";
-import pkg from "../../components/GridListTile/package.json";
+import { GridList } from "@gemeente-denhaag/GridList";
+import GridListTile, { GridListTileProps } from "@gemeente-denhaag/GridListTile";
+import pkg from "@gemeente-denhaag/GridListTile/package.json";
 
 export default {
   title: "Components/Layout/GridList/GridListTile",
