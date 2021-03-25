@@ -1,8 +1,8 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import Avatar from "../../components/Avatar/Avatar";
-import { AvatarGroup, AvatarGroupProps } from "../../components/AvatarGroup";
-import pkg from "../../components/AvatarGroup/package.json";
+import Avatar from "@gemeente-denhaag/Avatar";
+import { AvatarGroup, AvatarGroupProps } from "@gemeente-denhaag/AvatarGroup";
+import pkg from "@gemeente-denhaag/AvatarGroup/package.json";
 
 export default {
   title: "Components/Data Display/AvatarGroup",
