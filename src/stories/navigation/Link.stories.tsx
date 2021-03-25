@@ -1,7 +1,7 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { Link, LinkProps } from "../../components/Link";
-import pkg from "../../components/Link/package.json";
+import { Link, LinkProps } from "@gemeente-denhaag/Link";
+import pkg from "@gemeente-denhaag/Link/package.json";
 
 export default {
   title: "Components/Navigation/Link",

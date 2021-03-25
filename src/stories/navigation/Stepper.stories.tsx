@@ -1,10 +1,10 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { Stepper, StepperProps } from "../../components/Stepper";
-import Step from "../../components/Step/Step";
-import StepLabel from "../../components/StepLabel/StepLabel";
-import StepContent from "../../components/StepContent/StepContent";
-import pkg from "../../components/Stepper/package.json";
+import { Stepper, StepperProps } from "@gemeente-denhaag/Stepper";
+import Step from "@gemeente-denhaag/Step";
+import StepLabel from "@gemeente-denhaag/StepLabel";
+import StepContent from "@gemeente-denhaag/StepContent";
+import pkg from "@gemeente-denhaag/Stepper/package.json";
 
 export default {
   title: "Components/navigation/Stepper",

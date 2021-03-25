@@ -1,8 +1,8 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { MenuList, MenuListProps } from "../../components/MenuList";
-import MenuItem from "../../components/MenuItem/MenuItem";
-import pkg from "../../components/MenuList/package.json";
+import { MenuList, MenuListProps } from "@gemeente-denhaag/MenuList";
+import MenuItem from "@gemeente-denhaag/MenuItem";
+import pkg from "@gemeente-denhaag/MenuList/package.json";
 
 export default {
   title: "Components/Navigation/Menu/MenuList",
