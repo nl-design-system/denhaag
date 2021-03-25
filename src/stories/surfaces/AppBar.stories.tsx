@@ -12,6 +12,11 @@ export default {
   title: "Components/Surfaces/AppBar",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
   component: AppBar,
 } as Meta;

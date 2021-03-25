@@ -8,6 +8,11 @@ export default {
   title: "Components/Surfaces/Paper",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
   component: Paper,
 } as Meta;

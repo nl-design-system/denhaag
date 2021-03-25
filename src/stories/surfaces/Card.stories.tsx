@@ -17,6 +17,11 @@ export default {
   title: "Components/Surfaces/Card",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "code"
+      }
+    }
   },
   component: Card,
 } as Meta;
