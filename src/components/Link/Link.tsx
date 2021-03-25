@@ -1,4 +1,4 @@
-import BaseProps from "../BaseProps";
+import BaseProps from "@gemeente-denhaag/baseprops";
 import React from "react";
 import MaterialLink from "@material-ui/core/Link";
 
