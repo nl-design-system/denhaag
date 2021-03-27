@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { Drawer, DrawerProps } from "../../components/Drawer";
+import Drawer, { DrawerProps } from "../../components/Drawer";
 import Button from "../../components/Button";
 import pkg from "../../components/Drawer/package.json";
 

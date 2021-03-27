@@ -1,17 +1,17 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { Divider, DividerProps } from "../../components/Divider";
+import Divider, { DividerProps } from "../../components/Divider";
 import pkg from "../../components/Divider/package.json";
-import { List, ListItem, ListItemIcon, ListItemText } from "../../components/List";
+import List, { ListItem, ListItemIcon, ListItemText } from "../../components/List";
 import InboxIcon from "@material-ui/icons/Inbox";
 import DraftsIcon from "@material-ui/icons/Drafts";
 
 export default {
   title: "Components/Data Display/Divider",
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
-  component: Divider,
+  component: Divider
 } as Meta;
 
 const Template: Story<DividerProps> = (args: any) => (
@@ -42,7 +42,7 @@ export const Default = Template.bind({});
  */
 export const InsetVariant = Template.bind({});
 InsetVariant.args = {
-  variant: "inset",
+  variant: "inset"
 };
 
 /**
@@ -50,7 +50,7 @@ InsetVariant.args = {
  */
 export const LightColoured = Template.bind({});
 LightColoured.args = {
-  light: true,
+  light: true
 };
 
 /**
@@ -58,5 +58,5 @@ LightColoured.args = {
  */
 export const AbsolutePosition = Template.bind({});
 AbsolutePosition.args = {
-  absolute: true,
+  absolute: true
 };

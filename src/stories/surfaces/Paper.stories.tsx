@@ -1,15 +1,15 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import pkg from "../../components/Paper/package.json";
 import Paper, { PaperProps } from "../../components/Paper";
 import Typography from "../../components/Typography";
+import pkg from "../../components/Paper/package.json";
 
 export default {
   title: "Components/Surfaces/Paper",
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
-  component: Paper,
+  component: Paper
 } as Meta;
 
 const Template: Story<PaperProps> = (args: any) => (
@@ -28,7 +28,7 @@ export const Default = Template.bind({});
  */
 export const Outlined = Template.bind({});
 Outlined.args = {
-  variant: "outlined",
+  variant: "outlined"
 };
 
 /**
@@ -36,7 +36,7 @@ Outlined.args = {
  */
 export const Squared = Template.bind({});
 Squared.args = {
-  square: true,
+  square: true
 };
 
 /**
@@ -44,5 +44,5 @@ Squared.args = {
  */
 export const MaxElevated = Template.bind({});
 MaxElevated.args = {
-  elevation: 24,
+  elevation: 24
 };
