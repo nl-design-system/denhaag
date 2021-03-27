@@ -1,19 +1,19 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { IconButton } from "@material-ui/core";
 import InfoIcon from "@material-ui/icons/Info";
-import GridListTileBar, { GridListTileBarProps } from "../../components/GridListTileBar/GridListTileBar";
-import GridListTile from "../../components/GridListTile/GridListTile";
-import GridList from "../../components/GridList/GridList";
+import IconButton from "../../components/IconButton";
+import GridListTileBar, { GridListTileBarProps } from "../../components/GridListTileBar";
+import GridListTile from "../../components/GridListTile";
+import GridList from "../../components/GridList";
 import pkg from "../../components/GridListTileBar/package.json";
 import imageFile from "../assets/logo.svg";
 
 export default {
   title: "Components/Layout/GridList/GridListTile/GridListTileBar",
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
-  component: GridListTileBar,
+  component: GridListTileBar
 } as Meta;
 
 const Template: Story<GridListTileBarProps> = (args: any) => (
@@ -36,7 +36,7 @@ Default.args = {
     </IconButton>
   ),
   title: "GridListTileBar",
-  subtitle: "I am a GridListTileBar!",
+  subtitle: "I am a GridListTileBar!"
 };
 
 /**
@@ -51,7 +51,7 @@ TopPosition.args = {
   ),
   title: "GridListTileBar",
   subtitle: "I am GridListTileBar!",
-  titlePosition: "top",
+  titlePosition: "top"
 };
 
 /**
@@ -66,5 +66,5 @@ ButtonLeft.args = {
   ),
   actionPosition: "left",
   title: "GridListTileBar",
-  subtitle: "I am GridListTileBar!",
+  subtitle: "I am GridListTileBar!"
 };

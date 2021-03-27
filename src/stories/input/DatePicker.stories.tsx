@@ -1,16 +1,16 @@
 import React from "react";
-import { Story, Meta } from "@storybook/react";
-import DatePicker, { DatePickerProps } from "../../components/Pickers/DatePicker/DatePicker";
-import { PickersUtilsProvider } from "../../components/PickersUtilsProvider/PickersUtilsProvider";
+import { Meta, Story } from "@storybook/react";
 import DateFnsUtils from "@date-io/date-fns";
+import DatePicker, { DatePickerProps } from "../../components/Pickers/DatePicker/DatePicker";
+import PickersUtilsProvider from "../../components/PickersUtilsProvider";
 import pkg from "../../components/Pickers/package.json";
 
 export default {
   title: "Components/Input/DatePicker",
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
-  component: DatePicker,
+  component: DatePicker
 } as Meta;
 
 const Template: Story<DatePickerProps> = (args: any) => {
@@ -37,7 +37,7 @@ export const Default: Story<DatePickerProps> = Template.bind({});
  */
 export const Inline: Story<DatePickerProps> = Template.bind({});
 Inline.args = {
-  variant: "inline",
+  variant: "inline"
 };
 
 /**
@@ -45,5 +45,5 @@ Inline.args = {
  */
 export const Static: Story<DatePickerProps> = Template.bind({});
 Static.args = {
-  variant: "static",
+  variant: "static"
 };

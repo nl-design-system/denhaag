@@ -1,18 +1,18 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { Accordion, AccordionProps } from "../../components/Accordion";
-import pkg from "../../components/Accordion/package.json";
-import AccordionSummary from "../../components/AccordionSummary/AccordionSummary";
 import { ExpandMore } from "@material-ui/icons";
-import { Typography } from "@material-ui/core";
-import AccordionDetails from "../../components/AccordionDetails/AccordionDetails";
+import Accordion, { AccordionProps } from "../../components/Accordion";
+import AccordionSummary from "../../components/AccordionSummary";
+import Typography from "../../components/Typography";
+import AccordionDetails from "../../components/AccordionDetails";
+import pkg from "../../components/Accordion/package.json";
 
 export default {
   title: "Components/Surfaces/Accordion",
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
-  component: Accordion,
+  component: Accordion
 } as Meta;
 
 const Template: Story<AccordionProps> = (args: any) => (
@@ -39,7 +39,7 @@ export const Default = Template.bind({});
  */
 export const DefaultExpanded = Template.bind({});
 DefaultExpanded.args = {
-  defaultExpanded: true,
+  defaultExpanded: true
 };
 
 /**
@@ -47,7 +47,7 @@ DefaultExpanded.args = {
  */
 export const Disabled = Template.bind({});
 Disabled.args = {
-  disabled: true,
+  disabled: true
 };
 
 /**
@@ -55,5 +55,5 @@ Disabled.args = {
  */
 export const Squared = Template.bind({});
 Squared.args = {
-  square: true,
+  square: true
 };

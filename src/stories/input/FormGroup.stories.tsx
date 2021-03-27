@@ -1,17 +1,17 @@
 import React from "react";
 // also exported from '@storybook/react' if you can deal with breaking changes in 6.1
-import { Story, Meta } from "@storybook/react/types-6-0";
+import { Meta, Story } from "@storybook/react/types-6-0";
 import Checkbox from "../../components/Checkbox/Checkbox";
-import FormControlLabel from "../../components/FormControlLabel/FormControlLabel";
-import FormGroup, { FormGroupProps } from "../../components/FormGroup/FormGroup";
+import FormControlLabel from "../../components/FormControlLabel";
+import FormGroup, { FormGroupProps } from "../../components/FormGroup";
 import pkg from "../../components/FormGroup/package.json";
 
 export default {
   title: "Components/Input/FormGroup",
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
-  component: FormGroup,
+  component: FormGroup
 } as Meta;
 
 const Template: Story<FormGroupProps> = (args: any) => (
@@ -25,5 +25,5 @@ export const Default: Story<FormGroupProps> = Template.bind({});
 
 export const Row: Story<FormGroupProps> = Template.bind({});
 Row.args = {
-  row: true,
+  row: true
 };

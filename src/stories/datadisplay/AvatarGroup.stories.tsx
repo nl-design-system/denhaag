@@ -1,15 +1,15 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import Avatar from "../../components/Avatar/Avatar";
-import { AvatarGroup, AvatarGroupProps } from "../../components/AvatarGroup";
+import Avatar from "../../components/Avatar";
+import AvatarGroup, { AvatarGroupProps } from "../../components/AvatarGroup";
 import pkg from "../../components/AvatarGroup/package.json";
 
 export default {
   title: "Components/Data Display/AvatarGroup",
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
-  component: AvatarGroup,
+  component: AvatarGroup
 } as Meta;
 
 const Template: Story<AvatarGroupProps> = (args: any) => (
@@ -33,5 +33,5 @@ export const Default = Template.bind({});
  */
 export const SmallSpacing = Template.bind({});
 SmallSpacing.args = {
-  spacing: "small",
+  spacing: "small"
 };

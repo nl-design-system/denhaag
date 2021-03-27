@@ -1,23 +1,24 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import pkg from "../../components/Card/package.json";
-import Card, { CardProps } from "../../components/Card/Card";
-import CardActions from "../../components/CardActions/CardActions";
-import CardContent from "../../components/CardContent/CardContent";
-import CardHeader from "../../components/CardHeader/CardHeader";
-import Typography from "../../components/Typography/Typography";
-import { Avatar, IconButton } from "@material-ui/core";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import ShareIcon from "@material-ui/icons/Share";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
+import Card, { CardProps } from "../../components/Card";
+import CardActions from "../../components/CardActions";
+import CardContent from "../../components/CardContent";
+import CardHeader from "../../components/CardHeader";
+import Typography from "../../components/Typography";
+import Avatar from "../../components/Avatar";
+import IconButton from "../../components/IconButton";
+import pkg from "../../components/Card/package.json";
 
 export default {
   title: "Components/Surfaces/Card",
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
-  component: Card,
+  component: Card
 } as Meta;
 
 const Template: Story<CardProps> = (args: any) => (
@@ -62,5 +63,5 @@ export const Default = Template.bind({});
  */
 export const Raised = Template.bind({});
 Raised.args = {
-  raised: true,
+  raised: true
 };

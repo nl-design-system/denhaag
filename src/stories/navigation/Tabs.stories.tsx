@@ -1,18 +1,18 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { Tabs, TabsProps } from "../../components/Tabs";
-import pkg from "../../components/Tabs/package.json";
+import Tabs, { TabsProps } from "../../components/Tabs";
 import Tab from "../../components/Tab/Tab";
-import TabContext from "../../components/TabContext/TabContext";
-import { AppBar } from "@material-ui/core";
-import TabPanel from "../../components/TabPanel/TabPanel";
+import TabContext from "../../components/TabContext";
+import AppBar from "../../components/AppBar";
+import TabPanel from "../../components/TabPanel";
+import pkg from "../../components/Tabs/package.json";
 
 export default {
   title: "Components/Navigation/Tabs",
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
-  component: Tabs,
+  component: Tabs
 } as Meta;
 
 const Template: Story<TabsProps> = (args: any) => {
@@ -53,7 +53,7 @@ export const Default = Template.bind({});
  */
 export const VerticalOrientation = Template.bind({});
 VerticalOrientation.args = {
-  orientation: "vertical",
+  orientation: "vertical"
 };
 
 /**
@@ -61,7 +61,7 @@ VerticalOrientation.args = {
  */
 export const SecondaryColouredText = Template.bind({});
 SecondaryColouredText.args = {
-  textColor: "secondary",
+  textColor: "secondary"
 };
 
 /**
@@ -69,5 +69,5 @@ SecondaryColouredText.args = {
  */
 export const SecondaryColouredIndicator = Template.bind({});
 SecondaryColouredIndicator.args = {
-  indicatorColor: "secondary",
+  indicatorColor: "secondary"
 };

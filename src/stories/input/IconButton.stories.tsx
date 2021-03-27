@@ -7,9 +7,9 @@ import pkg from "../../components/IconButton/package.json";
 export default {
   title: "Components/Input/IconButton",
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
-  component: IconButton,
+  component: IconButton
 } as Meta;
 
 const Template: Story<IconButtonProps> = (args: any) => (
@@ -28,10 +28,10 @@ export const Default = Template.bind({});
  */
 export const PrimaryColoured = Template.bind({});
 PrimaryColoured.args = {
-  color: "primary",
+  color: "primary"
 };
 
 export const SmallSized = Template.bind({});
 SmallSized.args = {
-  size: "small",
+  size: "small"
 };

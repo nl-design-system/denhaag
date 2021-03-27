@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import Box, { BoxProps } from "../../components/Box/Box";
+import Box, { BoxProps } from "../../components/Box";
 import pkg from "../../components/Box/package.json";
 
 export default {
