@@ -11,9 +11,9 @@ import imageFile from "../assets/logo.svg";
 export default {
   title: "Components/Layout/GridList/GridListTile/GridListTileBar",
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
-  component: GridListTileBar,
+  component: GridListTileBar
 } as Meta;
 
 const Template: Story<GridListTileBarProps> = (args: any) => (
@@ -36,7 +36,7 @@ Default.args = {
     </IconButton>
   ),
   title: "GridListTileBar",
-  subtitle: "I am a GridListTileBar!",
+  subtitle: "I am a GridListTileBar!"
 };
 
 /**
@@ -51,7 +51,7 @@ TopPosition.args = {
   ),
   title: "GridListTileBar",
   subtitle: "I am GridListTileBar!",
-  titlePosition: "top",
+  titlePosition: "top"
 };
 
 /**
@@ -66,5 +66,5 @@ ButtonLeft.args = {
   ),
   actionPosition: "left",
   title: "GridListTileBar",
-  subtitle: "I am GridListTileBar!",
+  subtitle: "I am GridListTileBar!"
 };

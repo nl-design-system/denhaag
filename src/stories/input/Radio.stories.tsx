@@ -1,8 +1,7 @@
 import React from "react";
-import { Story, Meta } from "@storybook/react/types-6-0";
-import { FormControlLabel } from "../../components/FormControlLabel";
-import { Radio } from "../..";
-import { RadioProps } from "../../components/Radio";
+import { Meta, Story } from "@storybook/react/types-6-0";
+import FormControlLabel from "../../components/FormControlLabel";
+import Radio, { RadioProps } from "../../components/Radio";
 import pkg from "../../components/Radio/package.json";
 
 import ThumbDownIcon from "@material-ui/icons/ThumbDown";
@@ -11,9 +10,9 @@ import ThumbUpIcon from "@material-ui/icons/ThumbUp";
 export default {
   title: "Components/Input/Radio",
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
-  component: Radio,
+  component: Radio
 } as Meta;
 
 const Template: Story<RadioProps> = (args: any) => {
@@ -27,21 +26,21 @@ const Template: Story<RadioProps> = (args: any) => {
 export const Default: Story<RadioProps> = Template.bind({});
 Default.args = {
   color: "default",
-  size: "medium",
+  size: "medium"
 };
 
 export const Primary: Story<RadioProps> = Template.bind({});
 Primary.args = {
-  color: "primary",
+  color: "primary"
 };
 
 export const Secondary: Story<RadioProps> = Template.bind({});
 Secondary.args = {
-  color: "secondary",
+  color: "secondary"
 };
 
 export const Icons: Story<RadioProps> = Template.bind({});
 Icons.args = {
   icon: <ThumbDownIcon />,
-  checkedIcon: <ThumbUpIcon />,
+  checkedIcon: <ThumbUpIcon />
 };

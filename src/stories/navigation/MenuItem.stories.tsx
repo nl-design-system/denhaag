@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { MenuItem, MenuItemProps } from "../../components/MenuItem";
+import MenuItem, { MenuItemProps } from "../../components/MenuItem";
 import Menu from "../../components/Menu";
 import pkg from "../../components/MenuItem/package.json";
 import Button from "../../components/Button/Button";
@@ -8,9 +8,9 @@ import Button from "../../components/Button/Button";
 export default {
   title: "Components/Navigation/Menu/MenuItem",
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
-  component: MenuItem,
+  component: MenuItem
 } as Meta;
 
 const Template: Story<MenuItemProps> = (args: any) => {
@@ -45,7 +45,7 @@ export const Default = Template.bind({});
  */
 export const DenseMenu = Template.bind({});
 DenseMenu.args = {
-  dense: true,
+  dense: true
 };
 
 /**
@@ -53,5 +53,5 @@ DenseMenu.args = {
  */
 export const DisabledGutter = Template.bind({});
 DisabledGutter.args = {
-  disableGutters: true,
+  disableGutters: true
 };
