@@ -1,19 +1,29 @@
 {
-  "name": "@gemeente-denhaag/baseprops",
-  "description": "A package containing properties used in other components",
-  "author": "Municipality of The Hague",
-  "license": "EUPL-1.2",
-  "main": "BaseProps.tsx",
-  "module": "BaseProps.tsx",
-  "version": "0.1.6",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
-    "directory": "src/components/BaseProps"
-  },
-  "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
-  "peerDependencies": {
-    "react": "^16.13.0"
-  },
-  "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
+    "name": "@gemeente-denhaag/baseprops",
+    "version": "0.1.6",
+    "description": "A package containing properties used in other components",
+    "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
+        "directory": "src/components/BaseProps"
+    },
+    "license": "EUPL-1.2",
+    "author": "Municipality of The Hague",
+    "exports": "./dist/index.modern.js",
+    "main": "dist/index.js",
+    "module": "dist/index.module.js",
+    "source": "src/index.tsx",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "microbundle --no-compress --format modern,cjs --tsconfig tsconfig.json",
+        "clean": "rm -rf ./dist"
+    },
+    "peerDependencies": {
+        "react": "^16.13.0"
+    },
+    "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
 }

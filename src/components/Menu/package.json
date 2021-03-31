@@ -1,24 +1,34 @@
 {
-  "name": "@gemeente-denhaag/menu",
-  "description": "A Menu component",
-  "author": "Municipality of The Hague",
-  "license": "EUPL-1.2",
-  "main": "Menu.tsx",
-  "module": "Menu.tsx",
-  "version": "0.1.6",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
-    "directory": "src/components/navigation/Menu"
-  },
-  "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
-  "dependencies": {
-    "@gemeente-denhaag/baseprops": "^0.1.6",
-    "@gemeente-denhaag/menuitem": "^0.1.6",
-    "@gemeente-denhaag/menulist": "^0.1.6",
-    "@gemeente-denhaag/popover": "^0.1.6",
-    "@gemeente-denhaag/popper": "^0.1.6",
-    "@material-ui/core": "^4.11.0"
-  },
-  "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
+    "name": "@gemeente-denhaag/menu",
+    "version": "0.1.6",
+    "description": "A Menu component",
+    "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
+        "directory": "src/components/navigation/Menu"
+    },
+    "license": "EUPL-1.2",
+    "author": "Municipality of The Hague",
+    "exports": "./dist/index.modern.js",
+    "main": "dist/index.js",
+    "module": "dist/index.module.js",
+    "source": "src/index.tsx",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "microbundle --no-compress --format modern,cjs --tsconfig tsconfig.json",
+        "clean": "rm -rf ./dist"
+    },
+    "dependencies": {
+        "@gemeente-denhaag/baseprops": "^0.1.6",
+        "@gemeente-denhaag/menuitem": "^0.1.6",
+        "@gemeente-denhaag/menulist": "^0.1.6",
+        "@gemeente-denhaag/popover": "^0.1.6",
+        "@gemeente-denhaag/popper": "^0.1.6",
+        "@material-ui/core": "^4.11.0"
+    },
+    "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
 }

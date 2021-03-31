@@ -1,22 +1,32 @@
 {
-  "name": "@gemeente-denhaag/gridlist",
-  "author": "Municipality of The Hague",
-  "description": "A GridList component",
-  "license": "EUPL-1.2",
-  "main": "GridList.tsx",
-  "module": "GridList.tsx",
-  "version": "0.1.6",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
-    "directory": "src/components/layout/GridList"
-  },
-  "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
-  "dependencies": {
-    "@gemeente-denhaag/baselayoutprops": "^0.1.6",
-    "@gemeente-denhaag/gridlisttile": "^0.1.6",
-    "@gemeente-denhaag/gridlisttilebar": "^0.1.6",
-    "@material-ui/core": "^4.11.0"
-  },
-  "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
+    "name": "@gemeente-denhaag/gridlist",
+    "version": "0.1.6",
+    "description": "A GridList component",
+    "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
+        "directory": "src/components/layout/GridList"
+    },
+    "license": "EUPL-1.2",
+    "author": "Municipality of The Hague",
+    "exports": "./dist/index.modern.js",
+    "main": "dist/index.js",
+    "module": "dist/index.module.js",
+    "source": "src/index.tsx",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "microbundle --no-compress --format modern,cjs --tsconfig tsconfig.json",
+        "clean": "rm -rf ./dist"
+    },
+    "dependencies": {
+        "@gemeente-denhaag/baselayoutprops": "^0.1.6",
+        "@gemeente-denhaag/gridlisttile": "^0.1.6",
+        "@gemeente-denhaag/gridlisttilebar": "^0.1.6",
+        "@material-ui/core": "^4.11.0"
+    },
+    "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
 }
