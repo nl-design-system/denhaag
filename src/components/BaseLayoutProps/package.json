@@ -1,6 +1,6 @@
 {
     "name": "@gemeente-denhaag/baselayoutprops",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "description": "Properties used in layout components",
     "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
     "repository": {
@@ -23,7 +23,7 @@
         "clean": "rm -rf ./dist"
     },
     "dependencies": {
-        "@gemeente-denhaag/baseprops": "^0.1.6"
+        "@gemeente-denhaag/baseprops": "^0.1.7"
     },
     "peerDependencies": {
         "react": "^16.13.0"

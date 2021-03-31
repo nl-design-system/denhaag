@@ -1,6 +1,6 @@
 {
     "name": "@gemeente-denhaag/baseprops",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "description": "A package containing properties used in other components",
     "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
     "repository": {

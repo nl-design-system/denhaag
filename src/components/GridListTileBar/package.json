@@ -1,6 +1,6 @@
 {
     "name": "@gemeente-denhaag/gridlisttilebar",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "description": "A GridListTileBar component",
     "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
     "repository": {

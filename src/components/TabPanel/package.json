@@ -1,6 +1,6 @@
 {
     "name": "@gemeente-denhaag/tabpanel",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "description": "A TabPanel component",
     "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
     "repository": {
@@ -23,7 +23,7 @@
         "clean": "rm -rf ./dist"
     },
     "dependencies": {
-        "@gemeente-denhaag/baseprops": "^0.1.6",
+        "@gemeente-denhaag/baseprops": "^0.1.7",
         "@material-ui/lab": "^4.0.0-alpha"
     },
     "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
