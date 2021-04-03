@@ -1,6 +1,7 @@
-import MaterialButton from "@material-ui/core/Button";
+import MaterialButton, { ButtonTypeMap } from "@material-ui/core/Button";
 import React from "react";
 import BaseProps from "@gemeente-denhaag/baseprops";
+import { StylesProvider } from "@material-ui/core";
 
 export interface ButtonProps extends BaseProps {
   /**
@@ -32,7 +33,7 @@ export interface ButtonProps extends BaseProps {
   /**
    * Button variant
    */
-  variant?: "outlined" | "contained" | "text";
+  variant?: "primary-action" | "secondary-action";
 
   /**
    * HTML type prop
@@ -44,7 +45,24 @@ export interface ButtonProps extends BaseProps {
  * Primary UI component for user interaction
  */
 export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
-  return <MaterialButton {...props}>{props.children}</MaterialButton>;
+  let muiVariant: ButtonTypeMap["props"]["variant"] = "outlined";
+
+  switch (props.variant) {
+    case "primary-action":
+      muiVariant = "contained";
+      break;
+    case "secondary-action":
+      muiVariant = "outlined";
+      break;
+  }
+
+  return (
+    <StylesProvider injectFirst>
+      <MaterialButton {...props} variant={muiVariant}>
+        {props.children}
+      </MaterialButton>
+    </StylesProvider>
+  );
 };
 
 /**
