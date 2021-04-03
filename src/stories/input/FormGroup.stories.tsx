@@ -12,14 +12,14 @@ export default {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "code"
+        type: "dynamic"
       }
     }
   },
   component: FormGroup,
 } as Meta;
 
-const Template: Story<FormGroupProps> = (args: any) => (
+const Template: Story<FormGroupProps> = (args: FormGroupProps) => (
   <FormGroup {...args}>
     <FormControlLabel {...args} control={<Checkbox />} label="Checkbox 1" />
     <FormControlLabel {...args} control={<Checkbox />} label="Checkbox 2" />

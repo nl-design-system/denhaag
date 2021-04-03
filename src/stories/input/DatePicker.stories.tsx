@@ -18,7 +18,7 @@ export default {
   component: DatePicker,
 } as Meta;
 
-const Template: Story<DatePickerProps> = (args: any) => {
+const Template: Story<DatePickerProps> = (args: DatePickerProps) => {
   const [value, setValue] = React.useState("1970-01-01");
   args.onChange = (newValue: any) => {
     setValue(newValue);

@@ -10,14 +10,14 @@ export default {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "code"
+        type: "dynamic"
       }
     }
   },
   component: ButtonGroup,
 } as Meta;
 
-const Template: Story<ButtonGroupProps> = (args: any) => (
+const Template: Story<ButtonGroupProps> = (args: ButtonGroupProps) => (
   <ButtonGroup {...args}>
     <Button>Button</Button>
     <Button color="primary">I am primary coloured.</Button>

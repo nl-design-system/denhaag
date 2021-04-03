@@ -17,7 +17,7 @@ export default {
   component: IconButton,
 } as Meta;
 
-const Template: Story<IconButtonProps> = (args: any) => (
+const Template: Story<IconButtonProps> = (args: IconButtonProps) => (
   <IconButton {...args}>
     <DeleteIcon />
   </IconButton>

@@ -11,14 +11,14 @@ export default {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "code"
+        type: "dynamic"
       }
     }
   },
   component: Checkbox,
 } as Meta;
 
-const Template: Story<CheckboxProps> = (args: any) => (
+const Template: Story<CheckboxProps> = (args: CheckboxProps) => (
   <FormControlLabel label="Checkbox" control={<Checkbox {...args} />} />
 );
 

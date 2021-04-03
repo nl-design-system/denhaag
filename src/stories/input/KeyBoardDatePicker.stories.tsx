@@ -21,10 +21,10 @@ export default {
   component: KeyboardDatePicker,
 } as Meta;
 
-const Template: Story<KeyboardDatePickerProps> = (args: any) => {
+const Template: Story<KeyboardDatePickerProps> = (args: KeyboardDatePickerProps) => {
   const [value, setValue] = React.useState("1970-01-01");
   args.onChange = (newValue: any) => {
-    setValue(newValue);
+    setValue(newValue.getDate().toString());
   };
   args.value = value;
 

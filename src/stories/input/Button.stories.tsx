@@ -11,14 +11,14 @@ export default {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "code"
+        type: "dynamic"
       }
     }
   },
   component: Button,
 } as Meta;
 
-const Template: Story<ButtonProps> = (args: any) => <Button {...args}>Button</Button>;
+const Template: Story<ButtonProps> = (args: ButtonProps) => <Button {...args}>Button</Button>;
 
 /**
  * Default Button

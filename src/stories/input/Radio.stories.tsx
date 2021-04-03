@@ -14,14 +14,14 @@ export default {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "code"
+        type: "dynamic"
       }
     }
   },
   component: Radio,
 } as Meta;
 
-const Template: Story<RadioProps> = (args: any) => {
+const Template: Story<RadioProps> = (args: RadioProps) => {
   return (
     <div>
       <FormControlLabel label="Radio" control={<Radio {...args} />} />

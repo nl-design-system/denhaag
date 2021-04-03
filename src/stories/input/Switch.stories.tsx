@@ -10,14 +10,14 @@ export default {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "code"
+        type: "dynamic"
       }
     }
   },
   component: Switch,
 } as Meta;
 
-const Template: Story<SwitchProps> = (args: any) => {
+const Template: Story<SwitchProps> = (args: SwitchProps) => {
   return (
     <div>
       <FormControlLabel label="Switch" control={<Switch {...args} />} />
