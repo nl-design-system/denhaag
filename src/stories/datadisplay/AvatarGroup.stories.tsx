@@ -10,14 +10,14 @@ export default {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "code"
+        type: "dynamic"
       }
     }
   },
   component: AvatarGroup,
 } as Meta;
 
-const Template: Story<AvatarGroupProps> = (args: any) => (
+const Template: Story<AvatarGroupProps> = (args: AvatarGroupProps) => (
   <AvatarGroup {...args}>
     <Avatar src={"https://c1.staticflickr.com/9/8486/8245351490_2746ef972c_b.jpg"} alt="Planet Earth" />
     <Avatar>DH</Avatar>

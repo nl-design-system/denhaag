@@ -12,14 +12,14 @@ export default {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "code"
+        type: "dynamic"
       }
     }
   },
   component: Divider,
 } as Meta;
 
-const Template: Story<DividerProps> = (args: any) => (
+const Template: Story<DividerProps> = (args: DividerProps) => (
   <List>
     <ListItem button>
       <ListItemIcon>

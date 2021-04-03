@@ -17,7 +17,7 @@ export default {
   component: Badge,
 } as Meta;
 
-const Template: Story<BadgeProps> = (args: any) => (
+const Template: Story<BadgeProps> = (args: BadgeProps) => (
   <Badge {...args}>
     <MailIcon />
   </Badge>

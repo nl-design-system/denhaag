@@ -20,14 +20,14 @@ export default {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "code"
+        type: "dynamic"
       }
     }
   },
   component: List,
 } as Meta;
 
-const Template: Story<ListProps> = (args: any) => (
+const Template: Story<ListProps> = (args: ListProps) => (
   <List {...args}>
     <ListItem dense>
       <ListItemIcon>

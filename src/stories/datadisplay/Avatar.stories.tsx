@@ -9,14 +9,14 @@ export default {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "code"
+        type: "dynamic"
       }
     }
   },
   component: Avatar,
 } as Meta;
 
-const Template: Story<AvatarProps> = (args: any) => <Avatar {...args} />;
+const Template: Story<AvatarProps> = (args: AvatarProps) => <Avatar {...args} />;
 
 /**
  * Implementation of Avatar

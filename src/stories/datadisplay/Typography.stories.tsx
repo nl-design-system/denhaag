@@ -9,14 +9,14 @@ export default {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "code"
+        type: "dynamic"
       }
     }
   },
   component: Typography,
 } as Meta;
 
-const Template: Story<TypographyProps> = (args: any) => (
+const Template: Story<TypographyProps> = (args: TypographyProps) => (
   <Typography {...args}>
     This is a bit of text inside a Typography component. Play around with the variants property to see me in different
     variants!
