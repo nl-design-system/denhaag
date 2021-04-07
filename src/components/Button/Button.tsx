@@ -2,6 +2,7 @@ import MaterialButton, { ButtonTypeMap } from "@material-ui/core/Button";
 import React from "react";
 import BaseProps from "@gemeente-denhaag/baseprops";
 import { StylesProvider } from "@material-ui/core";
+import { classes } from "./bem-mapping";
 
 export interface ButtonProps extends BaseProps {
   /**
@@ -58,7 +59,7 @@ export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
 
   return (
     <StylesProvider injectFirst>
-      <MaterialButton {...props} variant={muiVariant}>
+      <MaterialButton {...props} classes={classes} variant={muiVariant}>
         {props.children}
       </MaterialButton>
     </StylesProvider>
