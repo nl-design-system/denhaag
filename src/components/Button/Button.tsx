@@ -2,6 +2,10 @@ import MaterialButton, { ButtonTypeMap } from "@material-ui/core/Button";
 import React from "react";
 import BaseProps from "@gemeente-denhaag/baseprops";
 import { StylesProvider } from "@material-ui/core";
+import { classes } from "./bem-mapping";
+import '../../styles.module.css'
+import './mui-override.module.css';
+import './button.module.css';
 
 export interface ButtonProps extends BaseProps {
   /**
@@ -23,7 +27,7 @@ export interface ButtonProps extends BaseProps {
   /**
    * Size of the component
    */
-  size?: "small" | "medium" | "large";
+  size?: "medium" | "large";
 
   /**
    * Disables Button
@@ -45,7 +49,7 @@ export interface ButtonProps extends BaseProps {
  * Primary UI component for user interaction
  */
 export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
-  let muiVariant: ButtonTypeMap["props"]["variant"] = "outlined";
+  let muiVariant: ButtonTypeMap["props"]["variant"] = "contained";
 
   switch (props.variant) {
     case "primary-action":
@@ -58,7 +62,7 @@ export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
 
   return (
     <StylesProvider injectFirst>
-      <MaterialButton {...props} variant={muiVariant}>
+      <MaterialButton {...props} classes={classes} variant={muiVariant}>
         {props.children}
       </MaterialButton>
     </StylesProvider>
