@@ -9,11 +9,6 @@ export default {
   title: "Components/Input/DatePicker",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
-    docs: {
-      source: {
-        type: "code"
-      }
-    }
   },
   component: DatePicker,
 } as Meta;
@@ -37,18 +32,74 @@ const Template: Story<DatePickerProps> = (args: any) => {
  */
 export const Default: Story<DatePickerProps> = Template.bind({});
 
+Default.parameters = {
+  docs: {
+    source: {
+      code:
+`
+import DateFnsUtils from "@date-io/date-fns";
+
+const [value, setValue] = React.useState("1970-01-01");
+
+<PickersUtilsProvider utils={DateFnsUtils}>
+  <DatePicker value={value} onChange={(newValue: any) => {
+    setValue(newValue);
+  }} />
+</PickersUtilsProvider>
+`
+    }
+  }
+}
+
 /**
- * Inline Checkbox
+ * Inline Datepicker
  */
 export const Inline: Story<DatePickerProps> = Template.bind({});
 Inline.args = {
   variant: "inline",
 };
 
+Inline.parameters = {
+  docs: {
+    source: {
+      code:
+`
+import DateFnsUtils from "@date-io/date-fns";
+
+const [value, setValue] = React.useState("1970-01-01");
+
+<PickersUtilsProvider utils={DateFnsUtils}>
+  <DatePicker variant="inline" value={value} onChange={(newValue: any) => {
+    setValue(newValue);
+  }} />
+</PickersUtilsProvider>
+`
+    }
+  }
+}
+
 /**
- * Inline Checkbox
+ * Static Datepicker
  */
 export const Static: Story<DatePickerProps> = Template.bind({});
 Static.args = {
   variant: "static",
 };
+Static.parameters = {
+  docs: {
+    source: {
+      code:
+`
+import DateFnsUtils from "@date-io/date-fns";
+
+const [value, setValue] = React.useState("1970-01-01");
+
+<PickersUtilsProvider utils={DateFnsUtils}>
+  <DatePicker variant="static" value={value} onChange={(newValue: any) => {
+    setValue(newValue);
+  }} />
+</PickersUtilsProvider>
+`
+    }
+  }
+}
