@@ -1,0 +1,11 @@
+.mdh-card {
+    --mdh-card-border: 1px solid #D2D2D2;
+    --mdh-card-border-radius: 3px;
+    --mdh-card-box-sizing: border-box;
+    
+    --mdh-card-primary-color: #FFFFFF;
+
+    border: var(--mdh-card-border);
+    border-radius: var(--mdh-card-border-radius);
+    box-sizing: var(--mdh-card-box-sizing);
+}

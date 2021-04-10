@@ -1,0 +1,12 @@
+.mdh-card {
+  box-shadow: none;
+  transition: none;
+}
+
+.mdh-card--hover, .mdh-card:hover {
+  box-shadow: none;
+}
+
+.mdh-card--focus, .mdh-card:focus {
+  box-shadow: none;
+}
