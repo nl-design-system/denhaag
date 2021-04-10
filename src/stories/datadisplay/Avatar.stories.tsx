@@ -1,5 +1,5 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
 import { Avatar, AvatarProps } from "../../components/Avatar";
 import pkg from "../../components/Avatar/package.json";
 
