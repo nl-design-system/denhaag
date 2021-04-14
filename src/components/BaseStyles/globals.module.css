@@ -1,0 +1,61 @@
+:root {
+  /* Colors */
+  --denhaag-green-1: hsl(117, 28%, 87%);
+  --denhaag-green-2: hsl(118, 28%, 60%);
+  --denhaag-green-3: hsl(138, 58%, 33%);
+  --denhaag-green-4: hsl(138, 57%, 27%);
+  --denhaag-green-5: hsl(139, 100%, 9%);
+
+  --denhaag-blue-1: hsl(208, 76%, 92%);
+  --denhaag-blue-2: hsl(210, 64%, 80%);
+  --denhaag-blue-3: hsl(207, 80%, 35%);
+  --denhaag-blue-4: hsl(207, 87%, 27%);
+  --denhaag-blue-5: hsl(207, 93%, 16%);
+
+  --denhaag-ocher-1: hsl(50, 100%, 91%);
+  --denhaag-ocher-2: hsl(50, 100%, 76%);
+  --denhaag-ocher-3: hsl(50, 94%, 57%);
+  --denhaag-ocher-4: hsl(47, 100%, 40%);
+  --denhaag-ocher-5: hsl(47, 100%, 25%);
+
+  --denhaag-red-1: hsl(4, 100%, 92%);
+  --denhaag-red-2: hsl(5, 75%, 72%);
+  --denhaag-red-3: hsl(6, 93%, 42%);
+  --denhaag-red-4: hsl(2, 100%, 32%);
+  --denhaag-red-5: hsl(1, 100%, 16%);
+
+  --denhaag-orange-1: hsl(34, 100%, 84%);
+  --denhaag-orange-2: hsl(34, 100%, 68%);
+  --denhaag-orange-3: hsl(34, 100%, 47%);
+  --denhaag-orange-4: hsl(23, 99%, 44%);
+  --denhaag-orange-5: hsl(23, 100%, 27%);
+
+  --denhaag-grey-1: hsl(0, 0%, 95%);
+  --denhaag-grey-2: hsl(0, 0%, 82%);
+  --denhaag-grey-3: hsl(0, 0%, 48%);
+  --denhaag-grey-4: hsl(0, 0%, 29%);
+
+  --denhaag-warmgrey: hsl(40, 18%, 97%);
+
+  --denhaag-black: hsl(0, 0%, 0%);
+
+  --denhaag-white: hsl(0, 0%, 100%);
+
+  /* Font sizes */
+  font-size: 16px;
+
+  --denhaag-fontsize-xs: 0.625rem;
+  --denhaag-fontsize-s: 0.75rem;
+  --denhaag-fontsize-base: 1rem;
+  --denhaag-fontsize-lg: 1.25rem;
+  --denhaag-fontsize-xl: 1.5rem;
+  --denhaag-fontsize-2xl: 2rem;
+  --denhaag-fontsize-3xl: 3rem;
+
+  /* Borders */
+  --denhaag-border-radius: 3px;
+
+  /* Focus state */
+  --denhaag-focus-border-color: var(--denhaag-ocher-4);
+  --denhaag-focus-border: 2px dashed var(--denhaag-focus-border-color);
+}
