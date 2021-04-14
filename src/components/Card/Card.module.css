@@ -2,18 +2,31 @@
     --denhaag-card-border: 1px solid var(--denhaag-grey-2);
     --denhaag-card-border-radius: 3px;
     --denhaag-card-box-sizing: border-box;
+    --denhaag-card-height: 181px;
+    --denhaag-card-width: 352px;
+    --denhaag-card-padding-block: 24px;
     
     --denhaag-card-background-color: var(--denhaag-white);
 
     border: var(--denhaag-card-border);
     border-radius: var(--denhaag-card-border-radius);
     box-sizing: var(--denhaag-card-box-sizing);
+    height: var(--denhaag-card-height);
+    width: var(--denhaag-card-width);
+    padding-block: var(--denhaag-card-padding-block);
     background: var(--denhaag-card-background-color);
 }
 
 .denhaag-card-case {
+    --denhaag-card-case-width: 352px;
+    --denhaag-card-case-padding-block: 40px;
+
     border: var(--denhaag-card-border);
     border-radius: var(--denhaag-card-border-radius);
     box-sizing: var(--denhaag-card-box-sizing);
-    background: var(--denhaag-green-1)
+    background: var(--denhaag-green-1);
+    width: var(--denhaag-card-case-width);
+    height: var(--denhaag-card-height);
+    padding-block: var(--denhaag-card-case-padding-block);
+
 }
