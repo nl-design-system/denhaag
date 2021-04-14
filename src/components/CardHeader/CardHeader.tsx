@@ -2,6 +2,7 @@ import React from "react";
 import MaterialCardHeader from "@material-ui/core/CardHeader";
 import BaseProps from "@gemeente-denhaag/baseprops";
 import { TypographyProps } from "@gemeente-denhaag/typography";
+import { StylesProvider } from "@material-ui/core/styles";
 
 export interface CardHeaderProps extends BaseProps {
   /**
@@ -54,7 +55,12 @@ export interface CardHeaderProps extends BaseProps {
  * Primary UI component for user interaction
  */
 export const CardHeader: React.FC<CardHeaderProps> = (props: CardHeaderProps) => {
-  return <MaterialCardHeader {...props}>{props.children}</MaterialCardHeader>;
+  return (
+    <StylesProvider injectFirst>
+      <MaterialCardHeader {...props}>{props.children}</MaterialCardHeader>
+    </StylesProvider>
+  
+  );
 };
 
 /**
