@@ -1,6 +1,6 @@
 {
     "name": "@gemeente-denhaag/formcontrol",
-    "version": "0.1.7",
+    "version": "0.1.8",
     "description": "A FormControl component",
     "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
     "repository": {
