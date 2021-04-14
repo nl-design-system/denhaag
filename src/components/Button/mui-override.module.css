@@ -1,12 +1,12 @@
-.mdh-button {
+.denhaag-button {
   box-shadow: none;
   transition: none;
 }
 
-.mdh-button--hover, .mdh-button:hover {
+.denhaag-button--hover, .denhaag-button:hover {
   box-shadow: none;
 }
 
-.mdh-button--focus, .mdh-button:focus {
+.denhaag-button--focus, .denhaag-button:focus {
   box-shadow: none;
 }
