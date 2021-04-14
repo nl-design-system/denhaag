@@ -1,6 +1,6 @@
 import MaterialFormControlLabel from "@material-ui/core/FormControlLabel";
 import React, { ReactElement } from "react";
-import { BaseClassesProps } from "@gemeente-denhaag/baseprops/src";
+import { BaseClassesProps } from "@gemeente-denhaag/baseprops";
 
 export interface FormControlLabelProps extends BaseClassesProps {
   /**

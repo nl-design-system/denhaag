@@ -1,6 +1,6 @@
 import React from "react";
 import MaterialPopover from "@material-ui/core/Popover";
-import BaseProps from "@gemeente-denhaag/baseprops/src";
+import BaseProps from "@gemeente-denhaag/baseprops";
 
 export interface PopoverProps extends BaseProps {
   /**

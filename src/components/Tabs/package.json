@@ -19,7 +19,7 @@
         "dist"
     ],
     "scripts": {
-        "build": "microbundle --no-compress --format modern,cjs --tsconfig tsconfig.json",
+        "build": "microbundle --no-compress --format modern,cjs --tsconfig tsconfig.json --jsx React.createElement",
         "clean": "rm -rf ./dist"
     },
     "dependencies": {
@@ -27,6 +27,9 @@
         "@gemeente-denhaag/tab": "^0.1.7",
         "@gemeente-denhaag/tabscrollbutton": "^0.1.7",
         "@material-ui/core": "^4.11.0"
+    },
+    "peerDependencies": {
+        "react": "^16.13.1"
     },
     "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
 }

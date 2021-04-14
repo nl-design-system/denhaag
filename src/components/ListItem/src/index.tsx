@@ -1,7 +1,7 @@
 import React from "react";
 import MaterialListItem from "@material-ui/core/ListItem";
-import BaseProps from "@gemeente-denhaag/baseprops/src";
-import { ContainerProps } from "@gemeente-denhaag/container/src";
+import BaseProps from "@gemeente-denhaag/baseprops";
+import { ContainerProps } from "@gemeente-denhaag/container";
 
 export interface ListItemProps extends BaseProps {
   /**

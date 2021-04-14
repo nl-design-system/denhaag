@@ -1,6 +1,6 @@
 import React from "react";
 import MaterialHidden from "@material-ui/core/Hidden";
-import BaseProps from "@gemeente-denhaag/baseprops/src";
+import BaseProps from "@gemeente-denhaag/baseprops";
 
 export interface HiddenProps extends BaseProps {
   /**
