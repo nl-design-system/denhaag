@@ -1,45 +1,45 @@
 :root {
   /* Colors */
-  --denhaag-green-1: #D5E7D4;
-  --denhaag-green-2: #7EB57C;
-  --denhaag-green-3: #248641;
-  --denhaag-green-4: #1D6B34;
-  --denhaag-green-5: #00300F;
+  --denhaag-green-1: hsl(117, 28%, 87%);
+  --denhaag-green-2: hsl(118, 28%, 60%);
+  --denhaag-green-3: hsl(138, 58%, 33%);
+  --denhaag-green-4: hsl(138, 57%, 27%);
+  --denhaag-green-5: hsl(139, 100%, 9%);
 
-  --denhaag-blue-1: #DAEBFA;
-  --denhaag-blue-2: #ADCDED;
-  --denhaag-blue-3: #1261A3;
-  --denhaag-blue-4: #094B81;
-  --denhaag-blue-5: #032C4E;
+  --denhaag-blue-1: hsl(208, 76%, 92%);
+  --denhaag-blue-2: hsl(210, 64%, 80%);
+  --denhaag-blue-3: hsl(207, 80%, 35%);
+  --denhaag-blue-4: hsl(207, 87%, 27%);
+  --denhaag-blue-5: hsl(207, 93%, 16%);
 
-  --denhaag-ocher-1: #FFF7D1;
-  --denhaag-ocher-2: #FFEB85;
-  --denhaag-ocher-3: #F8D62D;
-  --denhaag-ocher-4: #CCA000;
-  --denhaag-ocher-5: #7D6200;
+  --denhaag-ocher-1: hsl(50, 100%, 91%);
+  --denhaag-ocher-2: hsl(50, 100%, 76%);
+  --denhaag-ocher-3: hsl(50, 94%, 57%);
+  --denhaag-ocher-4: hsl(47, 100%, 40%);
+  --denhaag-ocher-5: hsl(47, 100%, 25%);
 
-  --denhaag-red-1: #FFD7D4;
-  --denhaag-red-2: #ED8980;
-  --denhaag-red-3: #CF1C08;
-  --denhaag-red-4: #A30500;
-  --denhaag-red-5: #540200;
+  --denhaag-red-1: hsl(4, 100%, 92%);
+  --denhaag-red-2: hsl(5, 75%, 72%);
+  --denhaag-red-3: hsl(6, 93%, 42%);
+  --denhaag-red-4: hsl(2, 100%, 32%);
+  --denhaag-red-5: hsl(1, 100%, 16%);
 
-  --denhaag-orange-1: #FFDBAD;
-  --denhaag-orange-2: #FFB85E;
-  --denhaag-orange-3: #F18700;
-  --denhaag-orange-4: #E15601;
-  --denhaag-orange-5: #8C3600;
+  --denhaag-orange-1: hsl(34, 100%, 84%);
+  --denhaag-orange-2: hsl(34, 100%, 68%);
+  --denhaag-orange-3: hsl(34, 100%, 47%);
+  --denhaag-orange-4: hsl(23, 99%, 44%);
+  --denhaag-orange-5: hsl(23, 100%, 27%);
 
-  --denhaag-grey-1: #F1F1F1;
-  --denhaag-grey-2: #D2D2D2;
-  --denhaag-grey-3: #7A7A7A;
-  --denhaag-grey-4: #4B4B4B;
+  --denhaag-grey-1: hsl(0, 0%, 95%);
+  --denhaag-grey-2: hsl(0, 0%, 82%);
+  --denhaag-grey-3: hsl(0, 0%, 48%);
+  --denhaag-grey-4: hsl(0, 0%, 29%);
 
-  --denhaag-warmgrey: #F8F7F5;
+  --denhaag-warmgrey: hsl(40, 18%, 97%);
 
-  --denhaag-black: #000000;
+  --denhaag-black: hsl(0, 0%, 0%);
 
-  --denhaag-white: #FFFFFF;
+  --denhaag-white: hsl(0, 0%, 100%);
 
   /* Font sizes */
   font-size: 16px;
