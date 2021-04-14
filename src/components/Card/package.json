@@ -14,6 +14,7 @@
   "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
   "dependencies": {
     "@gemeente-denhaag/baseprops": "^0.1.6",
+    "@gemeente-denhaag/basestyles": "^0.1.0",
     "@gemeente-denhaag/cardactions": "^0.1.6",
     "@gemeente-denhaag/cardcontent": "^0.1.6",
     "@gemeente-denhaag/cardheader": "^0.1.6",

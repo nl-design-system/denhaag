@@ -59,9 +59,9 @@ const Template: Story<CardProps> = (args: any) => (
 export const Default = Template.bind({});
 
 /**
- * Raised variant of Card component
+ * Case variant of Card component
  */
-export const Raised = Template.bind({});
-Raised.args = {
-  raised: true
+export const Case = Template.bind({});
+Case.args = {
+  variant: "case"
 };
