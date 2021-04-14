@@ -1,11 +1,12 @@
-.mdh-card {
-    --mdh-card-border: 1px solid #D2D2D2;
-    --mdh-card-border-radius: 3px;
-    --mdh-card-box-sizing: border-box;
+.denhaag-card {
+    --denhaag-card-border: 1px solid hsl(0, 0%, 82%);
+    --denhaag-card-border-radius: 3px;
+    --denhaag-card-box-sizing: border-box;
     
-    --mdh-card-primary-color: #FFFFFF;
+    --denhaag-card-background-color: hsl(0, 0%, 100%);
 
-    border: var(--mdh-card-border);
-    border-radius: var(--mdh-card-border-radius);
-    box-sizing: var(--mdh-card-box-sizing);
+    border: var(--denhaag-card-border);
+    border-radius: var(--denhaag-card-border-radius);
+    box-sizing: var(--denhaag-card-box-sizing);
+    background: var(--denhaag-card-background-color);
 }

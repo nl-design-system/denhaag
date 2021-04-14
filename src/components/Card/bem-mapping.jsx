@@ -1,3 +1,3 @@
 export const classes = {
-  root: 'mdh-card'
+  root: 'denhaag-card'
 }

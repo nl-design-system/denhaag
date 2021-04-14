@@ -1,12 +1,12 @@
-.mdh-card {
+.denhaag-card {
   box-shadow: none;
   transition: none;
 }
 
-.mdh-card--hover, .mdh-card:hover {
+.denhaag-card--hover, .denhaag-card:hover {
   box-shadow: none;
 }
 
-.mdh-card--focus, .mdh-card:focus {
+.denhaag-card--focus, .denhaag-card:focus {
   box-shadow: none;
 }

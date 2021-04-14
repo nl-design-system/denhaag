@@ -1,6 +1,10 @@
 import React from "react";
 import MaterialCard from "@material-ui/core/Card";
+import { StylesProvider } from "@material-ui/core/styles";
 import { BasePaperProps } from "@gemeente-denhaag/paper/BasePaperProps";
+import './card.module.css';
+import './mui-override.module.css';
+import { classes } from './bem-mapping';
 
 export interface CardProps extends BasePaperProps {
   /**
@@ -13,7 +17,11 @@ export interface CardProps extends BasePaperProps {
  * Primary UI component for user interaction
  */
 export const Card: React.FC<CardProps> = (props: CardProps) => {
-  return <MaterialCard {...props}>{props.children}</MaterialCard>;
+  return (
+    <StylesProvider injectFirst>
+      <MaterialCard classes={classes} {...props}>{props.children}</MaterialCard>;
+    </StylesProvider>
+  )
 };
 
 /**
