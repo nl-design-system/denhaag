@@ -4,6 +4,5 @@ export const classes = {
   contained: 'denhaag-button--primary-action',
   outlined: 'denhaag-button--secondary-action',
   disabled: 'denhaag-button--disabled',
-  sizeMedium: 'denhaag-button--medium',
   sizeLarge: 'denhaag-button--large'
 }

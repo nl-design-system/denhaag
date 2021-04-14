@@ -14,11 +14,6 @@ export interface ButtonProps extends BaseProps {
   onClick?: () => void;
 
   /**
-   * Color for the component
-   */
-  color?: "primary" | "secondary" | "default";
-
-  /**
    * The url to link to when the button is clicked.
    * If defined, an a element will be used as the root node.
    */
@@ -49,6 +44,7 @@ export interface ButtonProps extends BaseProps {
  * Primary UI component for user interaction
  */
 export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
+  const sizeClass = `denhaag-button--${props.size ?? "medium"}`;
   let muiVariant: ButtonTypeMap["props"]["variant"] = "contained";
 
   switch (props.variant) {
@@ -62,7 +58,7 @@ export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
 
   return (
     <StylesProvider injectFirst>
-      <MaterialButton {...props} classes={classes} variant={muiVariant} disableRipple>
+      <MaterialButton {...props} classes={classes} className={sizeClass} variant={muiVariant} disableRipple>
         {props.children}
       </MaterialButton>
     </StylesProvider>

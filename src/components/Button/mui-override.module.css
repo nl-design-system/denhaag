@@ -1,6 +1,7 @@
 .denhaag-button {
   box-shadow: none;
   transition: none;
+  text-transform: none;
 }
 
 .denhaag-button--hover, .denhaag-button:hover {

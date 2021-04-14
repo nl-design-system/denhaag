@@ -1,7 +1,7 @@
 .denhaag-button {
-  --denhaag-button-padding-inline: 1rem;
+  --denhaag-button-padding-inline: 16px;
   --denhaag-button-border-radius: 3px;
-  --denhaag-button-padding-block: 10px;
+  --denhaag-button-padding-block: 8px;
   --denhaag-button-focus-border-style: dashed;
   --denhaag-button-focus-border-color: var(--denhaag-ocher-4);
   --denhaag-button-focus-border-width: 0.125rem;
@@ -25,13 +25,18 @@
   --denhaag-button-secondary-action-disabled-color: var(--denhaag-grey-2);
   --denhaag-button-secondary-action-disabled-border-color: var(--denhaag-grey-2);
 
+  --denhaag-button-medium-size-padding-block: var(--denhaag-button-padding-block);
+  --denhaag-button-medium-size-padding-inline: var(--denhaag-button-padding-inline);
+  --denhaag-button-large-size-padding-block: 10px;
+  --denhaag-button-large-size-padding-inline: 20px;
+
   font-family: var(--denhaag-button-font-family);
   padding-inline-start: var(--denhaag-button-padding-inline);
   padding-inline-end: var(--denhaag-button-padding-inline);
   padding-block-start: var(--denhaag-button-padding-block);
   padding-block-end: var(--denhaag-button-padding-block);
   border-radius: var(--denhaag-button-border-radius);
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 .denhaag-button--primary-action {
@@ -72,3 +77,27 @@
 .denhaag-button--focus, .denhaag-button:focus {
   outline: var(--denhaag-button-focus-border-color) var(--denhaag-button-focus-border-style) var(--denhaag-button-focus-border-width);
 }
+
+.denhaag-button--medium {
+  padding-inline: var(--denhaag-button-medium-size-padding-inline);
+  padding-block: var(--denhaag-button-medium-size-padding-block);
+  font-size: var(--denhaag-fontsize-base);
+
+}
+
+.denhaag-button--large {
+  padding-inline: var(--denhaag-button-large-size-padding-inline);
+  padding-block: var(--denhaag-button-large-size-padding-block);
+  font-size: var(--denhaag-fontsize-lg);
+}
+
+.denhaag-button--medium.denhaag-button--secondary-action {
+  padding-inline: calc(var(--denhaag-button-padding-inline) - var(--denhaag-button-secondary-action-border-width));
+  padding-block: calc(var(--denhaag-button-padding-block) - var(--denhaag-button-secondary-action-border-width));
+}
+
+.denhaag-button--large.denhaag-button--secondary-action {
+  padding-inline: calc(var(--denhaag-button-large-size-padding-inline) - var(--denhaag-button-secondary-action-border-width));
+  padding-block: calc(var(--denhaag-button-large-size-padding-block) - var(--denhaag-button-secondary-action-border-width));
+}
+
