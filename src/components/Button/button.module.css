@@ -36,7 +36,6 @@
   padding-block-start: var(--denhaag-button-padding-block);
   padding-block-end: var(--denhaag-button-padding-block);
   border-radius: var(--denhaag-button-border-radius);
-  box-sizing: border-box;
 }
 
 .denhaag-button--focus:after, .denhaag-button:focus:after {
@@ -51,6 +50,7 @@
   border-radius: var(--denhaag-border-radius);
 }
 
+/* Due to the accessibility focus outline overlapping with the border, the outline needs to be repositioned for the border variant */
 .denhaag-button--secondary-action.denhaag-button--focus:after, .denhaag-button--secondary-action:focus:after {
   top: -3px;
   bottom: -3px;

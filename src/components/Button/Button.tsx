@@ -38,6 +38,16 @@ export interface ButtonProps extends BaseProps {
    * HTML type prop
    */
   type?: "button" | "submit" | "reset";
+
+  /**
+   * Icon placed at the start of the button
+   */
+  startIcon?: React.ReactNode;
+
+  /**
+   * Icon placed at the end of the button
+   */
+  endIcon?: React.ReactNode;
 }
 
 /**
