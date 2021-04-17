@@ -39,6 +39,25 @@
   box-sizing: border-box;
 }
 
+.denhaag-button--focus:after, .denhaag-button:focus:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  border: 2px dashed var(--denhaag-ocher-4);
+  border-radius: var(--denhaag-border-radius);
+}
+
+.denhaag-button--secondary-action.denhaag-button--focus:after, .denhaag-button--secondary-action:focus:after {
+  top: -3px;
+  bottom: -3px;
+  left: -3px;
+  right: -3px;
+}
+
 .denhaag-button--primary-action {
   background-color: var(--denhaag-button-primary-action-background-color);
   color: var(--denhaag-button-primary-action-color);
@@ -72,10 +91,6 @@
   background-color: var(--denhaag-button-secondary-action-disabled-background-color);
   color: var(--denhaag-button-secondary-action-disabled-color);
   border-color: var(--denhaag-button-secondary-action-disabled-border-color);
-}
-
-.denhaag-button--focus, .denhaag-button:focus {
-  outline: var(--denhaag-button-focus-border-color) var(--denhaag-button-focus-border-style) var(--denhaag-button-focus-border-width);
 }
 
 .denhaag-button--medium {
