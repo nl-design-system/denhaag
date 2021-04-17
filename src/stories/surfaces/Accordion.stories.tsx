@@ -13,7 +13,7 @@ export default {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "code"
+        type: "dynamic"
       }
     }
   },
@@ -38,6 +38,26 @@ const Template: Story<AccordionProps> = (args: any) => (
  * Implementation of Accordion
  */
 export const Default = Template.bind({});
+Default.parameters = {
+  docs: {
+    source: {
+      // language=JS
+      code: `
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMore />}>
+            <Typography>Click me to collapse me!</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo
+              lobortis eget.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+      `
+    }
+  }
+}
 
 /**
  * A tab which is expanded by default
@@ -47,6 +67,27 @@ DefaultExpanded.args = {
   defaultExpanded: true,
 };
 
+DefaultExpanded.parameters = {
+  docs: {
+    source: {
+      // language=JS
+      code: `
+        <Accordion defaultExpanded>
+          <AccordionSummary expandIcon={<ExpandMore />}>
+            <Typography>Click me to collapse me!</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo
+              lobortis eget.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+      `
+    }
+  }
+}
+
 /**
  * A disabled Accordion
  */
@@ -55,6 +96,27 @@ Disabled.args = {
   disabled: true,
 };
 
+Disabled.parameters = {
+  docs: {
+    source: {
+      // language=JS
+      code: `
+        <Accordion disabled>
+          <AccordionSummary expandIcon={<ExpandMore />}>
+            <Typography>Click me to collapse me!</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo
+              lobortis eget.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+      `
+    }
+  }
+}
+
 /**
  * An Accordion component with square edges.
  */
@@ -62,3 +124,24 @@ export const Squared = Template.bind({});
 Squared.args = {
   square: true,
 };
+
+Squared.parameters = {
+  docs: {
+    source: {
+      // language=JS
+      code: `
+        <Accordion square>
+          <AccordionSummary expandIcon={<ExpandMore />}>
+            <Typography>Click me to collapse me!</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo
+              lobortis eget.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+      `
+    }
+  }
+}
