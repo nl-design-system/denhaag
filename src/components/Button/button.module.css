@@ -117,21 +117,12 @@
 }
 
 /* Icon styling */
-.denhaag-button__start-icon.denhaag-button__icon-size-medium {
-  font-size: var(--denhaag-fontsize-base);
-  margin-inline-end: 11.3px;
+.denhaag-button__icon-size-medium > *:first-child {
+  font-size: var(--denhaag-fontsize-lg);
 }
 
-.denhaag-button__start-icon.denhaag-button__icon-size-large {
-  font-size: var(--denhaag-fontsize-lg);
-  margin-inline-end: 12px;
+.denhaag-button__icon-size-large > *:first-child {
+  font-size: var(--denhaag-fontsize-xl);
 }
 
-.denhaag-button__end-icon.denhaag-button__icon-size-medium {
-  font-size: var(--denhaag-fontsize-base);
-  margin-inline-start: 11.3px;
-}
-.denhaag-button__end-icon.denhaag-button__icon-size-large {
-  font-size: var(--denhaag-fontsize-lg);
-  margin-inline-end: 12px;
-}
+
