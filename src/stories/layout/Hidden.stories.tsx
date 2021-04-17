@@ -9,7 +9,7 @@ export default {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "code"
+        type: "dynamic"
       }
     }
   },
@@ -18,7 +18,7 @@ export default {
 
 const Template: Story<HiddenProps> = (args: any) => (
   <Hidden {...args}>
-    <p>This text is hidden.</p>
+    <p>This text can be hidden. Set different &quot;Up&quot; and &quot;Down&quot; properties to <code>true</code> to hide this text based on screen sizes.</p>
   </Hidden>
 );
 
