@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "module": "esnext",
+    "module": "es6",
     "outDir": "dist",
     "lib": ["dom", "esnext"],
     "moduleResolution": "node",
@@ -21,8 +21,6 @@
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "noEmit": true
-  },
-  "exclude": ["dist"]
+    "resolveJsonModule": true
+  }
 }
