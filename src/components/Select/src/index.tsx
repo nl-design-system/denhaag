@@ -146,7 +146,7 @@ export interface SelectProps extends BaseProps {
 /**
  * Select components are used for collecting user provided information from a list of options.
  */
-const Select: React.FC<SelectProps> = (props: SelectProps) => {
+export const Select: React.FC<SelectProps> = (props: SelectProps) => {
   return <MaterialSelect {...props}>{props.children}</MaterialSelect>;
 };
 

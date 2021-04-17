@@ -19,7 +19,7 @@ export interface GridListTileProps extends BaseLayoutProps {
  * @param props The properties of GridListTile.
  * @constructor Constructs an instance of GridListTile.
  */
-const GridListTile: React.FC<GridListTileProps> = (props: GridListTileProps) => {
+export const GridListTile: React.FC<GridListTileProps> = (props: GridListTileProps) => {
   return <MaterialGridListTile {...props}>{props.children}</MaterialGridListTile>;
 };
 

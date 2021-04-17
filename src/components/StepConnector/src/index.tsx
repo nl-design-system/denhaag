@@ -9,7 +9,7 @@ export type StepConnectorProps = BaseClassesProps;
  * @param props The properties of a StepConnector component.
  * @constructor Constructs an instance of StepConnector.
  */
-const StepConnector: React.FC<StepConnectorProps> = (props: StepConnectorProps) => {
+export const StepConnector: React.FC<StepConnectorProps> = (props: StepConnectorProps) => {
   return <MaterialStepConnector {...props} />;
 };
 

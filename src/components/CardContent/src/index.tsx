@@ -17,7 +17,7 @@ export interface CardContentProps extends BaseProps {
 /**
  * Primary UI component for user interaction
  */
-const CardContent: React.FC<CardContentProps> = (props: CardContentProps) => {
+export const CardContent: React.FC<CardContentProps> = (props: CardContentProps) => {
   return <MaterialCardContent {...props}>{props.children}</MaterialCardContent>;
 };
 

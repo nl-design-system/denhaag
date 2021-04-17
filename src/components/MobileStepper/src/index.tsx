@@ -44,7 +44,7 @@ export interface MobileStepperProps extends BaseChildrenProps {
  * @param props The properties of a MobileStepper component.
  * @constructor Constructs an instance of MobileStepper.
  */
-const MobileStepper: React.FC<MobileStepperProps> = (props: MobileStepperProps) => {
+export const MobileStepper: React.FC<MobileStepperProps> = (props: MobileStepperProps) => {
   return <MaterialMobileStepper {...props} />;
 };
 

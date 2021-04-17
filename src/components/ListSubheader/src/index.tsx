@@ -33,7 +33,7 @@ export interface ListSubheaderProps extends BaseProps {
 /**
  * Primary UI component for user interaction
  */
-const ListSubheader: React.FC<ListSubheaderProps> = (props: ListSubheaderProps) => {
+export const ListSubheader: React.FC<ListSubheaderProps> = (props: ListSubheaderProps) => {
   return <MaterialListSubheader {...props}>{props.children}</MaterialListSubheader>;
 };
 

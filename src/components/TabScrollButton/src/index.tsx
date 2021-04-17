@@ -24,7 +24,7 @@ export interface TabScrollButtonProps extends BaseProps {
  * @param props The properties of a TabScrollButton component.
  * @constructor Constructs an instance of TabScrollButton.
  */
-const TabScrollButton: React.FC<TabScrollButtonProps> = (props: TabScrollButtonProps) => {
+export const TabScrollButton: React.FC<TabScrollButtonProps> = (props: TabScrollButtonProps) => {
   return <MaterialTabScrollButton {...props}>{props.children}</MaterialTabScrollButton>;
 };
 

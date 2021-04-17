@@ -8,7 +8,7 @@ export interface AvatarGroupProps extends BaseProps {
   spacing?: "medium" | "small" | number;
 }
 
-const AvatarGroup: React.FC<AvatarGroupProps> = (props: AvatarGroupProps) => {
+export const AvatarGroup: React.FC<AvatarGroupProps> = (props: AvatarGroupProps) => {
   return <MaterialAvatarGroup {...props}>{props.children}</MaterialAvatarGroup>;
 };
 

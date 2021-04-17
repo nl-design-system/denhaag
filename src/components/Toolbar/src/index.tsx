@@ -24,7 +24,7 @@ export interface ToolbarProps extends BaseProps {
  * @param props The properties of a Toolbar component.
  * @constructor Constructs an instance of Toolbar.
  */
-const Toolbar: React.FC<ToolbarProps> = (props: ToolbarProps) => {
+export const Toolbar: React.FC<ToolbarProps> = (props: ToolbarProps) => {
   return <MaterialToolbar {...props}>{props.children}</MaterialToolbar>;
 };
 

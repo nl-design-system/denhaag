@@ -66,7 +66,7 @@ export interface TypographyProps extends BaseDataDisplayProps {
  * @param props The properties of a Typography component.
  * @constructor Constructs an instance of Typography.
  */
-const Typography: React.FC<TypographyProps> = (props: TypographyProps) => {
+export const Typography: React.FC<TypographyProps> = (props: TypographyProps) => {
   return <MaterialTypography {...props}>{props.children}</MaterialTypography>;
 };
 

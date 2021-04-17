@@ -50,7 +50,7 @@ export interface BadgeProps extends BaseDataDisplayProps {
  * @param props The properties of a Badge component.
  * @constructor Constructs an instance of Badge.
  */
-const Badge: React.FC<BadgeProps> = (props: BadgeProps) => {
+export const Badge: React.FC<BadgeProps> = (props: BadgeProps) => {
   return <MaterialBadge {...props}>{props.children}</MaterialBadge>;
 };
 

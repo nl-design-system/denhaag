@@ -75,7 +75,7 @@ export interface HiddenProps extends BaseProps {
  * @param props The properties of Hidden.
  * @constructor Constructs an instance of Hidden.
  */
-const Hidden: React.FC<HiddenProps> = (props: HiddenProps) => {
+export const Hidden: React.FC<HiddenProps> = (props: HiddenProps) => {
   return <MaterialHidden {...props}>{props.children}</MaterialHidden>;
 };
 

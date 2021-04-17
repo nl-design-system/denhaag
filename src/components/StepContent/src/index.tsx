@@ -33,7 +33,7 @@ export interface StepContentProps extends BaseProps {
  * @param props The properties of a StepContent component.
  * @constructor Constructs an instance of StepContent.
  */
-const StepContent: React.FC<StepContentProps> = (props: StepContentProps) => {
+export const StepContent: React.FC<StepContentProps> = (props: StepContentProps) => {
   return <MaterialStepContent {...props}>{props.children}</MaterialStepContent>;
 };
 

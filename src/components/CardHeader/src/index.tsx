@@ -53,7 +53,7 @@ export interface CardHeaderProps extends BaseProps {
 /**
  * Primary UI component for user interaction
  */
-const CardHeader: React.FC<CardHeaderProps> = (props: CardHeaderProps) => {
+export const CardHeader: React.FC<CardHeaderProps> = (props: CardHeaderProps) => {
   return <MaterialCardHeader {...props}>{props.children}</MaterialCardHeader>;
 };
 

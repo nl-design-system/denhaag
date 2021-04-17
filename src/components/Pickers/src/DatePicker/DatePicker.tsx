@@ -4,7 +4,7 @@ import BaseDatePickerProps from "../BaseDatePickerProps/BaseDatePickerProps";
 
 export type DatePickerProps = BaseDatePickerProps;
 
-const DatePicker: React.FC<DatePickerProps> = (props: DatePickerProps) => {
+export const DatePicker: React.FC<DatePickerProps> = (props: DatePickerProps) => {
   return <MaterialDatePicker {...props} />;
 };
 

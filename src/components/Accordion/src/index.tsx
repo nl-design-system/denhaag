@@ -47,7 +47,7 @@ export interface AccordionProps extends BaseProps {
  * @param props The properties of an Accordion component.
  * @constructor Constructs an instance of Accordion.
  */
-const Accordion: React.FC<AccordionProps> = (props: AccordionProps) => {
+export const Accordion: React.FC<AccordionProps> = (props: AccordionProps) => {
   return <MaterialAccordion {...props}>{props.children}</MaterialAccordion>;
 };
 

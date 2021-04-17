@@ -46,7 +46,7 @@ export interface TabProps extends BaseProps {
  * @param props The properties of a Tab component.
  * @constructor Construct an instance of Tab.
  */
-const Tab: React.FC<TabProps> = (props: TabProps) => {
+export const Tab: React.FC<TabProps> = (props: TabProps) => {
   return <MaterialTab {...props} />;
 };
 

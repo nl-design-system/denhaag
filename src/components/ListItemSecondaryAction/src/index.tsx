@@ -7,7 +7,7 @@ export type ListItemSecondaryActionProps = BaseChildrenProps;
 /**
  * Primary UI component for user interaction
  */
-const ListItemSecondaryAction: React.FC<ListItemSecondaryActionProps> = (
+export const ListItemSecondaryAction: React.FC<ListItemSecondaryActionProps> = (
   props: ListItemSecondaryActionProps
 ) => {
   return <MaterialListItemSecondaryAction {...props}>{props.children}</MaterialListItemSecondaryAction>;

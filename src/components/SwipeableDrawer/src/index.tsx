@@ -68,7 +68,7 @@ export interface SwipeableDrawerProps extends BaseChildrenProps {
  * @param props The properties of a SwipeableDrawer component.
  * @constructor Constructs an instance of SwipeableDrawer.
  */
-const SwipeableDrawer: React.FC<SwipeableDrawerProps> = (props: SwipeableDrawerProps) => {
+export const SwipeableDrawer: React.FC<SwipeableDrawerProps> = (props: SwipeableDrawerProps) => {
   return <MaterialSwipeableDrawer {...props}>{props.children}</MaterialSwipeableDrawer>;
 };
 

@@ -53,7 +53,7 @@ export interface KeyboardDatePickerProps extends BaseDatePickerProps {
   rifmFormatter?: (str: string) => string;
 }
 
-const KeyboardDatePicker: React.FC<KeyboardDatePickerProps> = (props: KeyboardDatePickerProps) => {
+export const KeyboardDatePicker: React.FC<KeyboardDatePickerProps> = (props: KeyboardDatePickerProps) => {
   return <MaterialDatePicker {...props} />;
 };
 

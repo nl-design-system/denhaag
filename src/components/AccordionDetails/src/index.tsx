@@ -9,7 +9,7 @@ export type AccordionDetailsProps = BaseProps;
  * @param props The properties of an AccordionDetails component.
  * @constructor Constructs an instance of AccordionDetails.
  */
-const AccordionDetails: React.FC<AccordionDetailsProps> = (props: AccordionDetailsProps) => {
+export const AccordionDetails: React.FC<AccordionDetailsProps> = (props: AccordionDetailsProps) => {
   return <MaterialAccordionDetails {...props}>{props.children}</MaterialAccordionDetails>;
 };
 

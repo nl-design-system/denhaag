@@ -29,7 +29,7 @@ export interface StepIconProps extends BaseClassesProps {
  * @param props The properties of a StepIcon component.
  * @constructor Constructs an instance of StepIcon.
  */
-const StepIcon: React.FC<StepIconProps> = (props: StepIconProps) => {
+export const StepIcon: React.FC<StepIconProps> = (props: StepIconProps) => {
   return <MaterialStepIcon {...props} />;
 };
 

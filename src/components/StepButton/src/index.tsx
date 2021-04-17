@@ -19,7 +19,7 @@ export interface StepButtonProps extends BaseProps {
  * @param props The properties of a StepButton component.
  * @constructor Constructs an instance of StepButton.
  */
-const StepButton: React.FC<StepButtonProps> = (props: StepButtonProps) => {
+export const StepButton: React.FC<StepButtonProps> = (props: StepButtonProps) => {
   return <MaterialStepButton {...props}>{props.children}</MaterialStepButton>;
 };
 

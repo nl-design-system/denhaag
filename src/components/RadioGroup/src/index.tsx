@@ -34,7 +34,7 @@ export interface RadioGroupProps extends BaseChildrenProps {
   row?: boolean;
 }
 
-const RadioGroup: React.FC<RadioGroupProps> = (props: RadioGroupProps) => {
+export const RadioGroup: React.FC<RadioGroupProps> = (props: RadioGroupProps) => {
   return <MaterialRadioGroup {...props}>{props.children}</MaterialRadioGroup>;
 };
 

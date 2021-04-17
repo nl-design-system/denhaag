@@ -62,7 +62,7 @@ export interface LinkProps extends BaseProps, React.AnchorHTMLAttributes<never> 
  * @param props The properties of a Link component.
  * @constructor Constructs an instance of Link.
  */
-const Link: React.FC<LinkProps> = (props: LinkProps) => {
+export const Link: React.FC<LinkProps> = (props: LinkProps) => {
   return <MaterialLink {...props}>{props.children}</MaterialLink>;
 };
 

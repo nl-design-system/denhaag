@@ -46,7 +46,7 @@ export interface InputLabelProps extends BaseProps {
   shrink?: boolean;
 }
 
-const InputLabel: React.FC<InputLabelProps> = (props: InputLabelProps) => {
+export const InputLabel: React.FC<InputLabelProps> = (props: InputLabelProps) => {
   return <MaterialInputLabel {...props}>{props.children}</MaterialInputLabel>;
 };
 
