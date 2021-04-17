@@ -1,5 +1,5 @@
 import React from "react";
-import BaseProps, { BaseChildrenProps, BaseClassesProps } from "@gemeente-denhaag/baseprops/src";
+import BaseProps, { BaseChildrenProps, BaseClassesProps } from "@gemeente-denhaag/baseprops";
 
 export default interface BaseLayoutProps extends BaseProps {
   /**

@@ -1,6 +1,6 @@
 import React from "react";
 import MaterialTypography from "@material-ui/core/Typography";
-import BaseDataDisplayProps from "@gemeente-denhaag/basedatadisplayprops/src";
+import BaseDataDisplayProps from "@gemeente-denhaag/basedatadisplayprops";
 
 export interface TypographyProps extends BaseDataDisplayProps {
   /**

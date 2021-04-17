@@ -1,6 +1,6 @@
 import React from "react";
 import MaterialStepContent from "@material-ui/core/StepContent";
-import BaseProps from "@gemeente-denhaag/baseprops/src";
+import BaseProps from "@gemeente-denhaag/baseprops";
 
 export interface StepContentProps extends BaseProps {
   /**

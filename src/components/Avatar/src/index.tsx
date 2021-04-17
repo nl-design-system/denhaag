@@ -1,6 +1,6 @@
 import React from "react";
 import MaterialAvatar from "@material-ui/core/Avatar";
-import BaseProps from "@gemeente-denhaag/baseprops/src";
+import BaseProps from "@gemeente-denhaag/baseprops";
 
 export interface AvatarProps extends BaseProps {
   /**

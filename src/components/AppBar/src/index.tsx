@@ -1,6 +1,6 @@
 import React from "react";
 import MaterialAppBar from "@material-ui/core/AppBar";
-import BaseProps from "@gemeente-denhaag/baseprops/src";
+import BaseProps from "@gemeente-denhaag/baseprops";
 
 export interface AppBarProps extends BaseProps {
   /**

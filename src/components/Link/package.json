@@ -19,10 +19,13 @@
         "dist"
     ],
     "scripts": {
-        "build": "microbundle --no-compress --format modern,cjs --tsconfig tsconfig.json",
+        "build": "microbundle --no-compress --format modern,cjs --tsconfig tsconfig.json --jsx React.createElement",
         "clean": "rm -rf ./dist"
     },
     "dependencies": {
         "@material-ui/core": "^4.11.0"
+    },
+    "peerDependencies": {
+        "react": "^16.13.1"
     }
 }

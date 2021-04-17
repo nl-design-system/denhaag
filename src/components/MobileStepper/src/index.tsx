@@ -1,6 +1,6 @@
 import React from "react";
 import MaterialMobileStepper from "@material-ui/core/MobileStepper";
-import { BaseChildrenProps } from "@gemeente-denhaag/baseprops/src";
+import { BaseChildrenProps } from "@gemeente-denhaag/baseprops";
 
 export interface MobileStepperProps extends BaseChildrenProps {
   /**
