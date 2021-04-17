@@ -11,7 +11,7 @@ export default {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "code"
+        type: "dynamic"
       }
     }
   },
@@ -26,6 +26,20 @@ const Template: Story<FormControlLabelProps> = (args: any) => (
  * Default FormControlLabel
  */
 export const Default: Story<FormControlLabelProps> = Template.bind({});
+Default.parameters = {
+  docs: {
+    source: {
+      // language=HTML
+      code: `
+        <FormControlLabel
+          label="Checkbox"
+          control='{<Checkbox onChange={} />}'
+          onChange='{() => {}}'
+        />
+      `
+    }
+  }
+}
 
 /**
  * FormControlLabel with label before the FormControl
@@ -35,6 +49,22 @@ Start.args = {
   labelPlacement: "start",
 };
 
+Start.parameters = {
+  docs: {
+    source: {
+      // language=HTML
+      code: `
+        <FormControlLabel
+          label="Checkbox"
+          labelPlacement='start'
+          control='{<Checkbox onChange={} />}'
+          onChange='{() => {}}'
+        />
+      `
+    }
+  }
+}
+
 /**
  * FormControlLabel with label on top of the FormControl
  */
@@ -42,6 +72,22 @@ export const Top: Story<FormControlLabelProps> = Template.bind({});
 Top.args = {
   labelPlacement: "top",
 };
+
+Top.parameters = {
+  docs: {
+    source: {
+      // language=HTML
+      code: `
+        <FormControlLabel
+          label="Checkbox"
+          labelPlacement="top"
+          control='{<Checkbox onChange={} />}'
+          onChange='{() => {}}'
+        />
+      `
+    }
+  }
+}
 
 /**
  * FormControlLabel with label on the bottom of the FormControl
@@ -51,6 +97,22 @@ Bottom.args = {
   labelPlacement: "bottom",
 };
 
+Bottom.parameters = {
+  docs: {
+    source: {
+      // language=HTML
+      code: `
+        <FormControlLabel
+          label="Checkbox"
+          labelPlacement="bottom"
+          control='{<Checkbox onChange={} />}'
+          onChange='{() => {}}'
+        />
+      `
+    }
+  }
+}
+
 /**
  * FormControlLabel with label after the FormControl
  */
@@ -58,3 +120,19 @@ export const End: Story<FormControlLabelProps> = Template.bind({});
 End.args = {
   labelPlacement: "end",
 };
+
+End.parameters = {
+  docs: {
+    source: {
+      // language=HTML
+      code: `
+        <FormControlLabel
+          label="Checkbox"
+          labelPlacement="end"
+          control='{<Checkbox onChange={} />}'
+          onChange='{() => {}}'
+        />
+      `
+    }
+  }
+}
