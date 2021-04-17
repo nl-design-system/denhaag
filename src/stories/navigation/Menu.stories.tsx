@@ -2,7 +2,7 @@ import React from "react";
 import { Meta, Story } from "@storybook/react";
 import Menu, { MenuProps } from "../../components/Menu";
 import MenuItem from "../../components/MenuItem";
-import Button from "../../components/Button/Button";
+import Button from "../../components/Button";
 import pkg from "../../components/Menu/package.json";
 
 export default {

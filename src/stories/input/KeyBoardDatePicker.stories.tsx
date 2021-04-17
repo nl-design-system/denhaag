@@ -3,7 +3,7 @@ import { Meta, Story } from "@storybook/react";
 import {
   KeyboardDatePicker,
   KeyboardDatePickerProps
-} from "../../components/Pickers/KeyboardDatePicker/KeyboardDatePicker";
+} from "../../components/Pickers";
 import PickersUtilsProvider from "../../components/PickersUtilsProvider";
 import DateFnsUtils from "@date-io/date-fns";
 import pkg from "../../components/Pickers/package.json";
@@ -34,6 +34,4 @@ const Template: Story<KeyboardDatePickerProps> = (args: any) => {
  * Default KeyboardDatePicker
  */
 export const Default: Story<KeyboardDatePickerProps> = Template.bind({});
-Default.args = {
-  clearable: true
-};
+Default.args = {};

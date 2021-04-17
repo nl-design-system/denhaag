@@ -1,7 +1,7 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
 import Tabs, { TabsProps } from "../../components/Tabs";
-import Tab from "../../components/Tab/Tab";
+import Tab from "../../components/Tab";
 import TabContext from "../../components/TabContext";
 import AppBar from "../../components/AppBar";
 import TabPanel from "../../components/TabPanel";

@@ -2,7 +2,7 @@ import React from "react";
 import { Meta, Story } from "@storybook/react";
 import MenuIcon from "@material-ui/icons/Menu";
 import AppBar, { AppBarProps } from "../../components/AppBar";
-import Toolbar from "../../components/Toolbar/Toolbar";
+import Toolbar from "../../components/Toolbar";
 import IconButton from "../../components/IconButton";
 import Typography from "../../components/Typography";
 import Button from "../../components/Button";
