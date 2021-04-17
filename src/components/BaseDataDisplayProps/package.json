@@ -10,16 +10,16 @@
     },
     "license": "EUPL-1.2",
     "author": "Municipality of The Hague",
-    "exports": "./dist/index.modern.js",
+    "exports": "./dist/index.js",
     "main": "dist/index.js",
-    "module": "dist/index.module.js",
+    "module": "dist/index.js",
     "source": "src/index.tsx",
     "types": "dist/index.d.ts",
     "files": [
         "dist"
     ],
     "scripts": {
-        "build": "microbundle --no-compress --format modern,cjs --tsconfig tsconfig.json --jsx React.createElement",
+        "build": "tsc -b",
         "clean": "rm -rf ./dist"
     },
     "dependencies": {
