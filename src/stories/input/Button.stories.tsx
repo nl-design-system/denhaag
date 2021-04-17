@@ -2,6 +2,7 @@ import React from "react";
 import { Meta, Story } from "@storybook/react";
 import Button, { ButtonProps } from "../../components/Button";
 import pkg from "../../components/Button/package.json";
+import { ArrowBackRounded, ArrowForwardRounded } from "@material-ui/icons";
 
 export default {
   title: "Components/Input/Button",
@@ -41,6 +42,23 @@ SecondaryAction.args = {
 export const Medium: Story<ButtonProps> = Template.bind({});
 Medium.args = {
   size: "medium"
+};
+
+/**
+ * Icon left button
+ */
+export const IconLeft: Story<ButtonProps> = Template.bind({});
+IconLeft.args = {
+  startIcon: <ArrowBackRounded />
+};
+
+/**
+ * Icon right button
+ */
+export const IconRight: Story<ButtonProps> = Template.bind({});
+IconRight.args = {
+  variant: "secondary-action",
+  endIcon: <ArrowForwardRounded />
 };
 
 /**
