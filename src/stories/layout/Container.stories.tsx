@@ -28,7 +28,7 @@ export const Default = Template.bind({});
  */
 export const NoPadding = Template.bind({});
 NoPadding.args = {
-  disableGutters: true,
+  disableGutters: true
 };
 
 /**
@@ -36,5 +36,5 @@ NoPadding.args = {
  */
 export const FixedWidth = Template.bind({});
 FixedWidth.args = {
-  fixed: true,
+  fixed: true
 };

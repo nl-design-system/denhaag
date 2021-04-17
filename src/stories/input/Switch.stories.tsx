@@ -2,7 +2,7 @@ import React from "react";
 import { Meta, Story } from "@storybook/react";
 import pkg from "../../components/Switch/package.json";
 import Switch, { SwitchProps } from "../../components/Switch";
-import { FormControlLabel } from "../../components/FormControlLabel";
+import FormControlLabel from "../../components/FormControlLabel";
 
 export default {
   title: "Components/Input/Switch",
@@ -14,7 +14,7 @@ export default {
       }
     }
   },
-  component: Switch,
+  component: Switch
 } as Meta;
 
 const Template: Story<SwitchProps> = (args: any) => {
@@ -35,7 +35,7 @@ export const Default: Story<SwitchProps> = Template.bind({});
  */
 export const DefaultChecked: Story<SwitchProps> = Template.bind({});
 DefaultChecked.args = {
-  defaultChecked: true,
+  defaultChecked: true
 };
 
 /**
@@ -43,7 +43,7 @@ DefaultChecked.args = {
  */
 export const Primary: Story<SwitchProps> = Template.bind({});
 Primary.args = {
-  color: "primary",
+  color: "primary"
 };
 
 /**
@@ -51,7 +51,7 @@ Primary.args = {
  */
 export const Secondary: Story<SwitchProps> = Template.bind({});
 Secondary.args = {
-  color: "secondary",
+  color: "secondary"
 };
 
 /**
@@ -59,5 +59,5 @@ Secondary.args = {
  */
 export const Disabled: Story<SwitchProps> = Template.bind({});
 Disabled.args = {
-  disabled: true,
+  disabled: true
 };

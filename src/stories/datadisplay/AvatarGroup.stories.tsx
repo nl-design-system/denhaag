@@ -1,7 +1,7 @@
 import React from "react";
 import { Meta, Story } from '@storybook/react';
 import Avatar from "../../components/Avatar";
-import { AvatarGroup, AvatarGroupProps } from "../../components/AvatarGroup";
+import AvatarGroup, { AvatarGroupProps } from "../../components/AvatarGroup";
 import pkg from "../../components/AvatarGroup/package.json";
 
 export default {
@@ -14,7 +14,7 @@ export default {
       }
     }
   },
-  component: AvatarGroup,
+  component: AvatarGroup
 } as Meta;
 
 const Template: Story<AvatarGroupProps> = (args: AvatarGroupProps) => (
@@ -38,5 +38,5 @@ export const Default = Template.bind({});
  */
 export const SmallSpacing = Template.bind({});
 SmallSpacing.args = {
-  spacing: "small",
+  spacing: "small"
 };

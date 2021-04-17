@@ -18,7 +18,7 @@ export default {
       }
     }
   },
-  component: GridListTileBar,
+  component: GridListTileBar
 } as Meta;
 
 const Template: Story<GridListTileBarProps> = (args: any) => (
@@ -41,7 +41,7 @@ Default.args = {
     </IconButton>
   ),
   title: "GridListTileBar",
-  subtitle: "I am a GridListTileBar!",
+  subtitle: "I am a GridListTileBar!"
 };
 
 Default.parameters = {

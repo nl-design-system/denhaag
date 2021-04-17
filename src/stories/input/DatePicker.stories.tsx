@@ -8,9 +8,9 @@ import pkg from '../../components/Pickers/package.json';
 export default {
   title: "Components/Input/DatePicker",
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
-  component: DatePicker,
+  component: DatePicker
 } as Meta;
 
 const Template: Story<DatePickerProps> = (args: any) => {
@@ -56,7 +56,7 @@ const [value, setValue] = React.useState("1970-01-01");
  */
 export const Inline: Story<DatePickerProps> = Template.bind({});
 Inline.args = {
-  variant: "inline",
+  variant: "inline"
 };
 
 Inline.parameters = {
@@ -83,7 +83,7 @@ const [value, setValue] = React.useState("1970-01-01");
  */
 export const Static: Story<DatePickerProps> = Template.bind({});
 Static.args = {
-  variant: "static",
+  variant: "static"
 };
 Static.parameters = {
   docs: {

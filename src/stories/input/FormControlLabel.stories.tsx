@@ -1,6 +1,6 @@
 import React from "react";
 // also exported from '@storybook/react' if you can deal with breaking changes in 6.1
-import { Story, Meta } from "@storybook/react/types-6-0";
+import { Meta, Story } from "@storybook/react/types-6-0";
 import Checkbox from "../../components/Checkbox/Checkbox";
 import FormControlLabel, { FormControlLabelProps } from "../../components/FormControlLabel";
 import pkg from "../../components/FormControlLabel/package.json";
@@ -15,7 +15,7 @@ export default {
       }
     }
   },
-  component: FormControlLabel,
+  component: FormControlLabel
 } as Meta;
 
 const Template: Story<FormControlLabelProps> = (args: any) => (
@@ -46,7 +46,7 @@ Default.parameters = {
  */
 export const Start: Story<FormControlLabelProps> = Template.bind({});
 Start.args = {
-  labelPlacement: "start",
+  labelPlacement: "start"
 };
 
 Start.parameters = {
@@ -70,7 +70,7 @@ Start.parameters = {
  */
 export const Top: Story<FormControlLabelProps> = Template.bind({});
 Top.args = {
-  labelPlacement: "top",
+  labelPlacement: "top"
 };
 
 Top.parameters = {
@@ -94,7 +94,7 @@ Top.parameters = {
  */
 export const Bottom: Story<FormControlLabelProps> = Template.bind({});
 Bottom.args = {
-  labelPlacement: "bottom",
+  labelPlacement: "bottom"
 };
 
 Bottom.parameters = {
@@ -118,7 +118,7 @@ Bottom.parameters = {
  */
 export const End: Story<FormControlLabelProps> = Template.bind({});
 End.args = {
-  labelPlacement: "end",
+  labelPlacement: "end"
 };
 
 End.parameters = {

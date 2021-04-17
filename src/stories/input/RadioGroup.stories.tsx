@@ -1,5 +1,5 @@
 import React from "react";
-import { Story, Meta } from "@storybook/react/types-6-0";
+import { Meta, Story } from "@storybook/react/types-6-0";
 import { RadioGroup, RadioGroupProps } from "../../components/RadioGroup";
 import pkg from "../../components/RadioGroup/package.json";
 import { FormControlLabel, Radio } from "../..";
@@ -14,7 +14,7 @@ export default {
       }
     }
   },
-  component: RadioGroup,
+  component: RadioGroup
 } as Meta;
 
 const Template: Story<RadioGroupProps> = (args: any) => (
@@ -31,10 +31,10 @@ export const Primary: Story<RadioGroupProps> = Template.bind({});
 
 export const SelectDefault: Story<RadioGroupProps> = Template.bind({});
 SelectDefault.args = {
-  defaultValue: "c",
+  defaultValue: "c"
 };
 
 export const Row: Story<RadioGroupProps> = Template.bind({});
 Row.args = {
-  row: true,
+  row: true
 };

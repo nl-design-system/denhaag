@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { Link, LinkProps } from "../../components/Link";
+import Link, { LinkProps } from "../../components/Link";
 import pkg from "../../components/Link/package.json";
 
 export default {

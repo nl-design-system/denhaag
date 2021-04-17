@@ -1,11 +1,11 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
 import { ExpandMore } from "@material-ui/icons";
-import { Accordion, AccordionProps } from "../../components/Accordion";
-import pkg from "../../components/Accordion/package.json";
+import Accordion, { AccordionProps } from "../../components/Accordion";
 import AccordionSummary from "../../components/AccordionSummary";
-import { Typography } from "../../components/Typography";
+import Typography from "../../components/Typography";
 import AccordionDetails from "../../components/AccordionDetails";
+import pkg from "../../components/Accordion/package.json";
 
 export default {
   title: "Components/Surfaces/Accordion",
@@ -17,7 +17,7 @@ export default {
       }
     }
   },
-  component: Accordion,
+  component: Accordion
 } as Meta;
 
 const Template: Story<AccordionProps> = (args: any) => (
@@ -64,7 +64,7 @@ Default.parameters = {
  */
 export const DefaultExpanded = Template.bind({});
 DefaultExpanded.args = {
-  defaultExpanded: true,
+  defaultExpanded: true
 };
 
 DefaultExpanded.parameters = {
@@ -93,7 +93,7 @@ DefaultExpanded.parameters = {
  */
 export const Disabled = Template.bind({});
 Disabled.args = {
-  disabled: true,
+  disabled: true
 };
 
 Disabled.parameters = {
@@ -122,7 +122,7 @@ Disabled.parameters = {
  */
 export const Squared = Template.bind({});
 Squared.args = {
-  square: true,
+  square: true
 };
 
 Squared.parameters = {

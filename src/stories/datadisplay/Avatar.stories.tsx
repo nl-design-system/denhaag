@@ -13,7 +13,7 @@ export default {
       }
     }
   },
-  component: Avatar,
+  component: Avatar
 } as Meta;
 
 const Template: Story<AvatarProps> = (args: AvatarProps) => <Avatar {...args} />;
@@ -24,7 +24,7 @@ const Template: Story<AvatarProps> = (args: AvatarProps) => <Avatar {...args} />
 export const Default = Template.bind({});
 Default.args = {
   src: "https://c1.staticflickr.com/9/8486/8245351490_2746ef972c_b.jpg",
-  alt: "Planet Earth",
+  alt: "Planet Earth"
 };
 
 /**
@@ -32,7 +32,7 @@ Default.args = {
  */
 export const Letter = Template.bind({});
 Letter.args = {
-  children: "DH",
+  children: "DH"
 };
 
 /**
@@ -41,5 +41,5 @@ Letter.args = {
 export const Squared = Template.bind({});
 Squared.args = {
   ...Default.args,
-  variant: "square",
+  variant: "square"
 };
