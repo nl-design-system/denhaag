@@ -12,7 +12,7 @@ export default {
   component: Button
 } as Meta;
 
-const Template: Story<ButtonProps> = (args: any) => <Button {...args}>Button</Button>;
+const Template: Story<ButtonProps> = (args: any) => <Button {...args}>label</Button>;
 
 /**
  * Default Button

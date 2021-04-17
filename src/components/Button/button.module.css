@@ -115,3 +115,23 @@
   padding-inline: calc(var(--denhaag-button-large-size-padding-inline) - var(--denhaag-button-secondary-action-border-width));
   padding-block: calc(var(--denhaag-button-large-size-padding-block) - var(--denhaag-button-secondary-action-border-width));
 }
+
+/* Icon styling */
+.denhaag-button__start-icon.denhaag-button__icon-size-medium {
+  font-size: var(--denhaag-fontsize-base);
+  margin-inline-end: 11.3px;
+}
+
+.denhaag-button__start-icon.denhaag-button__icon-size-large {
+  font-size: var(--denhaag-fontsize-lg);
+  margin-inline-end: 12px;
+}
+
+.denhaag-button__end-icon.denhaag-button__icon-size-medium {
+  font-size: var(--denhaag-fontsize-base);
+  margin-inline-start: 11.3px;
+}
+.denhaag-button__end-icon.denhaag-button__icon-size-large {
+  font-size: var(--denhaag-fontsize-lg);
+  margin-inline-end: 12px;
+}
