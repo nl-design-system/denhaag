@@ -15,9 +15,6 @@
     "module": "dist/index.js",
     "source": "src/index.tsx",
     "types": "dist/index.d.ts",
-    "files": [
-        "dist"
-    ],
     "scripts": {
         "build": "tsc -b",
         "clean": "rm -rf ./dist"
