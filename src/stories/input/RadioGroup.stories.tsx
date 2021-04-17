@@ -1,16 +1,16 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react/types-6-0";
-import { RadioGroup, RadioGroupProps } from "../../components/RadioGroup";
+import RadioGroup, { RadioGroupProps } from "../../components/RadioGroup";
 import pkg from "../../components/RadioGroup/package.json";
-import FormControlLabel from "../../components/FormControlLabel"
+import FormControlLabel from "../../components/FormControlLabel";
 import Radio from "../../components/Radio";
 
 export default {
   title: "Components/Input/RadioGroup",
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
   },
-  component: RadioGroup
+  component: RadioGroup,
 } as Meta;
 
 const Template: Story<RadioGroupProps> = (args: any) => (
@@ -27,10 +27,10 @@ export const Primary: Story<RadioGroupProps> = Template.bind({});
 
 export const SelectDefault: Story<RadioGroupProps> = Template.bind({});
 SelectDefault.args = {
-  defaultValue: "c"
+  defaultValue: "c",
 };
 
 export const Row: Story<RadioGroupProps> = Template.bind({});
 Row.args = {
-  row: true
+  row: true,
 };

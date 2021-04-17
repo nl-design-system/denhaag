@@ -34,10 +34,17 @@ const List: React.FC<ListProps> = (props: ListProps) => {
   return <MaterialList {...props}>{props.children}</MaterialList>;
 };
 
+import ListItem, { ListItemProps } from "@gemeente-denhaag/listitem";
+import ListItemIcon, { ListItemIconProps } from "@gemeente-denhaag/listitemicon";
+import ListItemAvatar, { ListItemAvatarProps } from "@gemeente-denhaag/listitemavatar";
+import ListItemSecondaryAction, { ListItemSecondaryActionProps } from "@gemeente-denhaag/listitemsecondaryaction";
+import ListItemText, { ListItemTextProps } from "@gemeente-denhaag/listitemtext";
+import ListSubHeader, { ListSubheaderProps } from "@gemeente-denhaag/listsubheader";
+
 export default List;
-export * from "@gemeente-denhaag/listitem";
-export * from "@gemeente-denhaag/listitemavatar";
-export * from "@gemeente-denhaag/listitemicon";
-export * from "@gemeente-denhaag/listitemsecondaryaction";
-export * from "@gemeente-denhaag/listitemtext";
-export * from "@gemeente-denhaag/listsubheader";
+export { ListItem, ListItemProps };
+export { ListItemAvatar, ListItemAvatarProps };
+export { ListItemIcon, ListItemIconProps };
+export { ListItemSecondaryAction, ListItemSecondaryActionProps };
+export { ListItemText, ListItemTextProps };
+export { ListSubHeader, ListSubheaderProps };

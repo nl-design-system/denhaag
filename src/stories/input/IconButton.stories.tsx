@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { IconButton, IconButtonProps } from "../../components/IconButton";
+import IconButton, { IconButtonProps } from "../../components/IconButton";
 import DeleteIcon from "@material-ui/icons/Delete";
 import pkg from "../../components/IconButton/package.json";
 
