@@ -100,4 +100,3 @@
   padding-inline: calc(var(--denhaag-button-large-size-padding-inline) - var(--denhaag-button-secondary-action-border-width));
   padding-block: calc(var(--denhaag-button-large-size-padding-block) - var(--denhaag-button-secondary-action-border-width));
 }
-
