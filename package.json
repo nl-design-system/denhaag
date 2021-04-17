@@ -16,7 +16,8 @@
     "src/"
   ],
   "scripts": {
-    "build": "lerna run build --parallel",
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build",
     "build-storybook": "build-storybook",
     "clean": "lerna run clean --parallel && lerna clean",
     "lint": "npm-run-all --continue-on-error lint:* && lerna run lint",
