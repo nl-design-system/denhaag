@@ -10,7 +10,7 @@ export default {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "code"
+        type: "dynamic"
       }
     }
   },
@@ -42,5 +42,5 @@ const Template: Story<SwipeableDrawerProps> = (args: any) => {
  */
 export const Default = Template.bind({});
 Default.args = {
-  open: true,
+  open: false,
 };
