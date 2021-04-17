@@ -13,7 +13,7 @@ export interface FormGroupProps extends BaseProps {
  *  FormGroup wraps controls such as Checkbox and Switch.
  *  It provides compact row layout. For the Radio, you should be using the RadioGroup component instead of this one.
  */
-export const FormGroup: React.FC<FormGroupProps> = (props: FormGroupProps) => {
+const FormGroup: React.FC<FormGroupProps> = (props: FormGroupProps) => {
   return <MaterialFormGroup {...props}>{props.children}</MaterialFormGroup>;
 };
 

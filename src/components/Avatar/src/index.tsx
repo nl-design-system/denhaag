@@ -47,7 +47,7 @@ export interface AvatarProps extends BaseProps {
  * @param props The properties of an Avatar component.
  * @constructor Constructs an instance of Avatar.
  */
-export const Avatar: React.FC<AvatarProps> = (props: AvatarProps) => {
+const Avatar: React.FC<AvatarProps> = (props: AvatarProps) => {
   return <MaterialAvatar {...props}>{props.children}</MaterialAvatar>;
 };
 

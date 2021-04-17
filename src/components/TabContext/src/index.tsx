@@ -14,7 +14,7 @@ export interface TabContextProps extends BaseChildrenProps {
  * @param props The properties of a TabContext component.
  * @constructor Constructs an instance of TabContext.
  */
-export const TabContext: React.FC<TabContextProps> = (props: TabContextProps) => {
+const TabContext: React.FC<TabContextProps> = (props: TabContextProps) => {
   return <MaterialTabContext {...props}>{props.children}</MaterialTabContext>;
 };
 

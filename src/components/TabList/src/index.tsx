@@ -9,7 +9,7 @@ export type TabListProps = BaseChildrenProps;
  * @param props The properties of a TabList component.
  * @constructor Constructs an instance of TabList.
  */
-export const TabList: React.FC<TabListProps> = (props: TabListProps) => {
+const TabList: React.FC<TabListProps> = (props: TabListProps) => {
   return <MaterialTabList {...props}>{props.children}</MaterialTabList>;
 };
 

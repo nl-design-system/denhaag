@@ -42,7 +42,7 @@ export interface FormControlLabelProps extends BaseClassesProps {
 /**
  * FormControlLabels allow the developer to add a label to some components
  */
-export const FormControlLabel: React.FC<FormControlLabelProps> = (props: FormControlLabelProps) => {
+const FormControlLabel: React.FC<FormControlLabelProps> = (props: FormControlLabelProps) => {
   return <MaterialFormControlLabel {...props} />;
 };
 

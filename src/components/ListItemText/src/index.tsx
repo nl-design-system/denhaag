@@ -43,7 +43,7 @@ export interface ListItemTextProps extends BaseProps {
 /**
  * Primary UI component for user interaction
  */
-export const ListItemText: React.FC<ListItemTextProps> = (props: ListItemTextProps) => {
+const ListItemText: React.FC<ListItemTextProps> = (props: ListItemTextProps) => {
   return <MaterialListItemText {...props}>{props.children}</MaterialListItemText>;
 };
 

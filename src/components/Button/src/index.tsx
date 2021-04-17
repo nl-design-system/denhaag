@@ -43,7 +43,7 @@ export interface ButtonProps extends BaseProps {
 /**
  * Primary UI component for user interaction
  */
-export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
+const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
   return <MaterialButton {...props}>{props.children}</MaterialButton>;
 };
 

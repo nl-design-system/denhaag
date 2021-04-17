@@ -42,7 +42,7 @@ export interface CheckboxProps extends BaseClassesProps {
 /**
  * Checkboxes allow the user to select one or more items from a set.
  */
-export const Checkbox: React.FC<CheckboxProps> = (props: CheckboxProps) => {
+const Checkbox: React.FC<CheckboxProps> = (props: CheckboxProps) => {
   return <MaterialCheckbox {...props} />;
 };
 

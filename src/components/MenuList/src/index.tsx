@@ -34,7 +34,7 @@ export interface MenuListProps extends BaseChildrenProps {
  * @param props The properties of a MenuList component.
  * @constructor Constructs an instance of MenuList.
  */
-export const MenuList: React.FC<MenuListProps> = (props: MenuListProps) => {
+const MenuList: React.FC<MenuListProps> = (props: MenuListProps) => {
   return <MaterialMenuList {...props}>{props.children}</MaterialMenuList>;
 };
 

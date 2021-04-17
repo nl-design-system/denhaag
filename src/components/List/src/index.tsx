@@ -30,7 +30,7 @@ export interface ListProps extends BaseProps {
 /**
  * Primary UI component for user interaction
  */
-export const List: React.FC<ListProps> = (props: ListProps) => {
+const List: React.FC<ListProps> = (props: ListProps) => {
   return <MaterialList {...props}>{props.children}</MaterialList>;
 };
 

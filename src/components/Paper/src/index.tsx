@@ -4,7 +4,7 @@ import { BasePaperProps } from "./BasePaperProps";
 
 export type PaperProps = BasePaperProps;
 
-export const Paper: React.FC<PaperProps> = (props: PaperProps) => {
+const Paper: React.FC<PaperProps> = (props: PaperProps) => {
   return <MaterialPaper {...props}>{props.children}</MaterialPaper>;
 };
 

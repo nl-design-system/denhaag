@@ -60,7 +60,7 @@ export interface ButtonGroupProps extends BaseProps {
  * @param props The properties of a ButtonGroup component.
  * @constructor Constructs an instance of ButtonGroup.
  */
-export const ButtonGroup: React.FC<ButtonGroupProps> = (props: ButtonGroupProps) => {
+const ButtonGroup: React.FC<ButtonGroupProps> = (props: ButtonGroupProps) => {
   return <MaterialButtonGroup {...props}>{props.children}</MaterialButtonGroup>;
 };
 

@@ -34,7 +34,7 @@ export interface DividerProps extends BaseDataDisplayClassesProps {
  * @param props The properties of a Divider component.
  * @constructor Constructs an instance of Divider.
  */
-export const Divider: React.FC<DividerProps> = (props: DividerProps) => {
+const Divider: React.FC<DividerProps> = (props: DividerProps) => {
   return <MaterialDivider {...props} />;
 };
 

@@ -29,7 +29,7 @@ export type FormControlProps<
  *
  * ⚠️Only one input can be used within a FormControl.
  */
-export const FormControl: React.FC<FormControlProps> = (props: FormControlProps) => {
+const FormControl: React.FC<FormControlProps> = (props: FormControlProps) => {
   return <MaterialFormControl {...props} />;
 };
 

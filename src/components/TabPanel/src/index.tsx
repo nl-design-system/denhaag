@@ -15,7 +15,7 @@ export interface TabPanelProps extends BaseProps {
  * @param props The properties of a TabPanel component.
  * @constructor Constructs an instance of TabPanel.
  */
-export const TabPanel: React.FC<TabPanelProps> = (props: TabPanelProps) => {
+const TabPanel: React.FC<TabPanelProps> = (props: TabPanelProps) => {
   return <MaterialTabPanel {...props}>{props.children}</MaterialTabPanel>;
 };
 

@@ -67,7 +67,7 @@ export interface RadioProps {
   icon?: React.ReactNode;
 }
 
-export const Radio: React.FC<RadioProps> = (props: RadioProps) => {
+const Radio: React.FC<RadioProps> = (props: RadioProps) => {
   return <MaterialRadio {...props} />;
 };
 

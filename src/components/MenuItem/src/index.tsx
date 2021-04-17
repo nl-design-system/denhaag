@@ -39,7 +39,7 @@ export interface MenuItemProps extends BaseProps {
  * @param props The properties of a MenuItem component.
  * @constructor Constructs an instance of MenuItem.
  */
-export const MenuItem: React.FC<MenuItemProps> = (props: MenuItemProps) => {
+const MenuItem: React.FC<MenuItemProps> = (props: MenuItemProps) => {
   return <MaterialMenuItem {...props}>{props.children}</MaterialMenuItem>;
 };
 

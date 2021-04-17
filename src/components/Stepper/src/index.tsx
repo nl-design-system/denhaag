@@ -35,7 +35,7 @@ export interface StepperProps extends BaseProps {
  * @param props The properties of a Stepper component.
  * @constructor Constructs an instance of Stepper.
  */
-export const Stepper: React.FC<StepperProps> = (props: StepperProps) => {
+const Stepper: React.FC<StepperProps> = (props: StepperProps) => {
   return <MaterialStepper {...props}>{props.children}</MaterialStepper>;
 };
 

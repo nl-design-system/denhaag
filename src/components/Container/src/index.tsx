@@ -29,7 +29,7 @@ export interface ContainerProps extends BaseLayoutProps {
  * @param props the properties of the Container.
  * @constructor Constructs an instance of Container.
  */
-export const Container: React.FC<ContainerProps> = (props: ContainerProps) => {
+const Container: React.FC<ContainerProps> = (props: ContainerProps) => {
   return <MaterialContainer {...props}>{props.children}</MaterialContainer>;
 };
 

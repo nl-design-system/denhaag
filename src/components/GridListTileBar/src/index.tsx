@@ -38,7 +38,7 @@ export interface GridListTileBarProps {
  * @param props The properties of GridListTileBar.
  * @constructor Constructs an instance of GridListTileBar.
  */
-export const GridListTileBar: React.FC<GridListTileBarProps> = (props: GridListTileBarProps) => {
+const GridListTileBar: React.FC<GridListTileBarProps> = (props: GridListTileBarProps) => {
   return <MaterialGridListTileBar {...props} />;
 };
 

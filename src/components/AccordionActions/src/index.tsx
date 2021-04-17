@@ -9,7 +9,7 @@ export interface AccordionActionsProps extends BaseProps {
   disableSpacing?: boolean;
 }
 
-export const AccordionActions: React.FC<AccordionActionsProps> = (props: AccordionActionsProps) => {
+const AccordionActions: React.FC<AccordionActionsProps> = (props: AccordionActionsProps) => {
   return <MaterialAccordionActions {...props}>{props.children}</MaterialAccordionActions>;
 };
 

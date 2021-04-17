@@ -9,7 +9,7 @@ export type BoxProps = BaseLayoutChildrenProps;
  * @param props The properties of Box.
  * @constructor Constructs an instance of Box.
  */
-export const Box: React.FC<BoxProps> = (props: BoxProps) => {
+const Box: React.FC<BoxProps> = (props: BoxProps) => {
   return <MaterialBox {...props}>{props.children}</MaterialBox>;
 };
 

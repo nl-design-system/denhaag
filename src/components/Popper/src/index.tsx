@@ -66,7 +66,7 @@ export interface PopperProps extends BaseChildrenProps {
   transition?: boolean;
 }
 
-export const Popper: React.FC<PopperProps> = (props: PopperProps) => {
+const Popper: React.FC<PopperProps> = (props: PopperProps) => {
   return <MaterialPopper {...props}>{props.children}</MaterialPopper>;
 };
 

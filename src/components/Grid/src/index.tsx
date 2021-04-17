@@ -63,7 +63,7 @@ export interface GridProps extends BaseLayoutProps {
  * @param props The properties of the Grid.
  * @constructor Constructs an instance of Grid.
  */
-export const Grid: React.FC<GridProps> = (props: GridProps) => {
+const Grid: React.FC<GridProps> = (props: GridProps) => {
   return <MaterialGrid {...props}>{props.children}</MaterialGrid>;
 };
 

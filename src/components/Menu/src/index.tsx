@@ -92,7 +92,7 @@ export interface MenuProps extends BaseProps {
  * @param props The properties of a Menu component.
  * @constructor Constructs an instance of Menu.
  */
-export const Menu: React.FC<MenuProps> = (props: MenuProps) => {
+const Menu: React.FC<MenuProps> = (props: MenuProps) => {
   return <MaterialMenu {...props}>{props.children}</MaterialMenu>;
 };
 

@@ -42,7 +42,7 @@ export interface StepLabelProps extends BaseProps {
  * @param props The properties of a StepLabel component.
  * @constructor Constructs an instance of StepLabel.
  */
-export const StepLabel: React.FC<StepLabelProps> = (props: StepLabelProps) => {
+const StepLabel: React.FC<StepLabelProps> = (props: StepLabelProps) => {
   return <MaterialStepLabel {...props} />;
 };
 

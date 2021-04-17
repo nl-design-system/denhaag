@@ -7,7 +7,7 @@ export type ListItemIconProps = BaseProps;
 /**
  * Primary UI component for user interaction
  */
-export const ListItemIcon: React.FC<ListItemIconProps> = (props: ListItemIconProps) => {
+const ListItemIcon: React.FC<ListItemIconProps> = (props: ListItemIconProps) => {
   return <MaterialListItemIcon {...props}>{props.children}</MaterialListItemIcon>;
 };
 

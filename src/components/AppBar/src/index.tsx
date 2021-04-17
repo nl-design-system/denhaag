@@ -21,7 +21,7 @@ export interface AppBarProps extends BaseProps {
  * @param props The properties of an AppBar component.
  * @constructor Constructs an instance of AppBar.
  */
-export const AppBar: React.FC<AppBarProps> = (props: AppBarProps) => {
+const AppBar: React.FC<AppBarProps> = (props: AppBarProps) => {
   return <MaterialAppBar {...props}>{props.children}</MaterialAppBar>;
 };
 

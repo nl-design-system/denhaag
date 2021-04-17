@@ -12,7 +12,7 @@ export interface ListItemAvatarProps extends BaseProps {
 /**
  * Primary UI component for user interaction
  */
-export const ListItemAvatar: React.FC<ListItemAvatarProps> = (props: ListItemAvatarProps) => {
+const ListItemAvatar: React.FC<ListItemAvatarProps> = (props: ListItemAvatarProps) => {
   return <MaterialListItemAvatar {...props}>{props.children}</MaterialListItemAvatar>;
 };
 

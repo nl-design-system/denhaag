@@ -1,6 +1,6 @@
-import { DatePickerProps, DatePicker } from "./DatePicker/DatePicker";
+import DatePicker, { DatePickerProps } from "./DatePicker/DatePicker";
 import { BaseDatePickerProps } from "./BaseDatePickerProps/BaseDatePickerProps";
-import { KeyboardDatePickerProps, KeyboardDatePicker } from "./KeyboardDatePicker/KeyboardDatePicker";
+import KeyboardDatePicker, { KeyboardDatePickerProps } from "./KeyboardDatePicker/KeyboardDatePicker";
 
 export { BaseDatePickerProps };
 export { DatePickerProps, DatePicker };

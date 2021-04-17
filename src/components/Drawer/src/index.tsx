@@ -61,7 +61,7 @@ export interface DrawerProps extends BaseProps {
  * @param props The properties of a Drawer component.
  * @constructor Constructs an instance of Drawer.
  */
-export const Drawer: React.FC<DrawerProps> = (props: DrawerProps) => {
+const Drawer: React.FC<DrawerProps> = (props: DrawerProps) => {
   return <MaterialDrawer {...props}>{props.children}</MaterialDrawer>;
 };
 

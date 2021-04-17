@@ -19,7 +19,7 @@ export interface AccordionSummaryProps extends BaseProps {
  * @param props The properties of an AccordionSummary component.
  * @constructor Constructs an instance of AccordionSummary.
  */
-export const AccordionSummary: React.FC<AccordionSummaryProps> = (props: AccordionSummaryProps) => {
+const AccordionSummary: React.FC<AccordionSummaryProps> = (props: AccordionSummaryProps) => {
   return <MaterialAccordionSummary {...props}>{props.children}</MaterialAccordionSummary>;
 };
 

@@ -12,7 +12,7 @@ export interface CardActionProps extends BaseProps {
 /**
  * Primary UI component for user interaction
  */
-export const CardActions: React.FC<CardActionProps> = (props: CardActionProps) => {
+const CardActions: React.FC<CardActionProps> = (props: CardActionProps) => {
   return <MaterialCardActions {...props}>{props.children}</MaterialCardActions>;
 };
 

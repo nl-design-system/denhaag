@@ -40,7 +40,7 @@ export interface SwitchProps extends BaseClassesProps {
 /**
  * Switches allow a user to toggle the state of a setting on or off.
  */
-export const Switch: React.FC<SwitchProps> = (props: SwitchProps) => {
+const Switch: React.FC<SwitchProps> = (props: SwitchProps) => {
   return <MaterialSwitch {...props} />;
 };
 
