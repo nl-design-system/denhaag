@@ -1,6 +1,9 @@
 import React from "react";
 import MaterialCardContent from "@material-ui/core/CardContent";
 import BaseProps from "@gemeente-denhaag/baseprops";
+import "./mui-override.module.css";
+import { CardContentClasses } from "./bem-mapping";
+import { StylesProvider } from "@material-ui/core/styles";
 
 export interface CardContentProps extends BaseProps {
   /**
@@ -18,7 +21,11 @@ export interface CardContentProps extends BaseProps {
  * Primary UI component for user interaction
  */
 export const CardContent: React.FC<CardContentProps> = (props: CardContentProps) => {
-  return <MaterialCardContent {...props}>{props.children}</MaterialCardContent>;
+  return (
+      <StylesProvider injectFirst>
+        <MaterialCardContent classes={CardContentClasses} {...props}>{props.children}</MaterialCardContent>
+      </StylesProvider>
+  )
 };
 
 /**

@@ -1,0 +1,63 @@
+:root {
+    --denhaag-card-background-color: var(--denhaag-white);
+    --denhaag-card-border: 1px solid var(--denhaag-grey-2);
+    --denhaag-card-border-radius: 3px;
+    --denhaag-card-box-sizing: border-box;
+    --denhaag-card-height: 181px;
+    --denhaag-card-width: 352px;
+    --denhaag-card-padding-block: 24px;
+    --denhaag-card-padding-inline: 24px;
+    --denhaag-card-arrow-position: relative;
+    --denhaag-card-arrow-left: 28px;
+    --denhaag-card-arrow-right: 308px;
+    --denhaag-card-case-height: 200px;
+    --denhaag-card-case-arrow-bottom: 29px;
+    --denhaag-card-case-width: 352px;
+    --denhaag-card-case-padding-block: 40px;
+    --denhaag-card-title-padding: 0;
+    --denhaag-card-subtitle-padding: 0;
+}
+
+.denhaag-card {
+    border: var(--denhaag-card-border);
+    border-radius: var(--denhaag-card-border-radius);
+    box-sizing: var(--denhaag-card-box-sizing);
+    width: var(--denhaag-card-width);
+    height: var(--denhaag-card-height);
+    padding-block: var(--denhaag-card-padding-block);
+    padding-inline: var(--denhaag-card-padding-inline);
+    background: var(--denhaag-card-background-color);
+}
+
+.denhaag-card-case {
+    height: var(--denhaag-card-case-height);
+    padding-block: var(--denhaag-card-case-padding-block);
+    background: var(--denhaag-green-1);
+}
+
+.denhaag-card-arrow {
+    right: var(--denhaag-card-arrow-right);
+    left: var(--denhaag-card-arrow-left);
+    position: var(--denhaag-card-arrow-position);
+}
+
+.denhaag-card-case-arrow {
+    /*top: var(--denhaag-card-case-arrow-bottom);*/
+    color: var(--denhaag-green-3);
+}
+
+.denhaag-card-title {
+    color: var(--denhaag-black);
+    padding-block: var(--denhaag-card-title-padding);
+    padding-inline: var(--denhaag-card-title-padding);
+}
+
+.denhaag-card-subtitle {
+    color: var(--denhaag-gray);
+    padding-block: var(--denhaag-card-subtitle-padding);
+    padding-inline: var(--denhaag-card-subtitle-padding);
+}
+
+.denhaag-card-case-title {
+    color: var(--denhaag-green-3);
+}

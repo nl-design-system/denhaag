@@ -3,15 +3,20 @@ import MaterialCard from "@material-ui/core/Card";
 import { StylesProvider } from "@material-ui/core/styles";
 import ArrowForward from "@material-ui/icons/ArrowForward";
 import BaseProps from "@gemeente-denhaag/baseprops";
-import  "./Card.module.css";
+import  "./card.module.css";
 import "./mui-override.module.css";
 import "@gemeente-denhaag/basestyles";
 import { Typography } from "@gemeente-denhaag/typography";
-import { IconButton } from "@gemeente-denhaag/iconbutton";
-import { cardClasses, cardCaseClasses } from  "./bem-mapping";
-import { CardHeader ,
+import { cardClasses,
+          cardCaseClasses,
+          cardArrowClasses,
+          cardCaseArrowClasses,
+          cardTitleClasses,
+          cardSubtitleClasses } from  "./bem-mapping";
+import { CardHeader,
           CardContent,
           CardActions } from "@gemeente-denhaag/surfaces";
+import { Icon } from "@material-ui/core";
 
 export interface CardProps extends BaseProps {
   /**
@@ -32,16 +37,23 @@ export interface CardProps extends BaseProps {
 export const Card: React.FC<CardProps> = (props: CardProps) => {
   const muiVariant = props.raised;
   let classes;
+  let arrowClasses;
+  let titleClasses;
+  let subtitleClasses;
 
   switch (props.variant) {
-    case "basic":
-      classes = cardClasses;
-      break;
     case "case":
       classes = cardCaseClasses;
+      arrowClasses = cardCaseArrowClasses;
+      titleClasses = cardTitleClasses;
+      subtitleClasses = cardSubtitleClasses;
       break;
+    case "basic":
     default:
       classes = cardClasses;
+      arrowClasses = cardArrowClasses;
+      titleClasses = cardTitleClasses;
+      subtitleClasses = cardSubtitleClasses;
       break;
   }
 
@@ -49,16 +61,17 @@ export const Card: React.FC<CardProps> = (props: CardProps) => {
     <StylesProvider injectFirst>
       <MaterialCard classes={classes} {...muiVariant}>
         <CardHeader
+          classes={titleClasses}
           title="Shrimp and Chorizo Paella"
         />
-        <CardContent>
-          <Typography variant="body2" color="textSecondary" component="p">
+        <CardContent disableSpacing={true}>
+          <Typography variant="body2" classes={subtitleClasses} component="p">
             This impressive paella is a perfect party dish and a fun meal to cook together with your guests.
           </Typography>
           <CardActions>
-            <IconButton aria-label="ArrowRight">
+            <Icon classes={arrowClasses} aria-label="ArrowRight">
               <ArrowForward />
-            </IconButton>
+            </Icon>
           </CardActions>
         </CardContent>
       </MaterialCard>
