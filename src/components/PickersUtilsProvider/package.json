@@ -19,7 +19,7 @@
     ],
     "scripts": {
         "build": "tsc -b",
-        "clean": "yarn rimraf  dist"
+        "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
     },
     "dependencies": {
         "@date-io/date-fns": "^1.3.13",

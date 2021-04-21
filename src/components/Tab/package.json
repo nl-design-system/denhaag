@@ -19,7 +19,7 @@
     ],
     "scripts": {
         "build": "tsc -b",
-        "clean": "yarn rimraf  dist"
+        "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
     },
     "dependencies": {
         "@gemeente-denhaag/baseprops": "^0.1.7",
