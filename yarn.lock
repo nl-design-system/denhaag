@@ -3194,7 +3194,7 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@storybook/addon-actions@6.2.8":
+"@storybook/addon-actions@6.2.8", "@storybook/addon-actions@^6.2.8":
   version "6.2.8"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-6.2.8.tgz#e11d01a35e4685e692015a5051c583a0931ecd4a"
   integrity sha512-bQE9rmVGThniXWxz57Py5bqC4my7DLCK3gT4U4cXv31zH+NMlJqSNHHfHf/Ob43fTdoCyLcB3vlWsPLra7WOCg==
@@ -3315,7 +3315,7 @@
     regenerator-runtime "^0.13.7"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-links@6.2.8":
+"@storybook/addon-links@^6.2.8":
   version "6.2.8"
   resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-6.2.8.tgz#5b9a31d84d6ba93d4d05c6e4779ec99151612252"
   integrity sha512-r64VQDvWaUaBunY2mBPHYh2oEVYNycB/EH4WvXK1it3hXs1XGCIWLap4lKvIcT894XhykS8Jxx/s8SUGIvRzBA==
@@ -17731,7 +17731,7 @@ store2@^2.12.0:
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.12.0.tgz#e1f1b7e1a59b6083b2596a8d067f6ee88fd4d3cf"
   integrity sha512-7t+/wpKLanLzSnQPX8WAcuLCCeuSHoWdQuh9SB3xD0kNOM38DNf+0Oa+wmvxmYueRzkmh6IcdKFtvTa+ecgPDw==
 
-storybook@6.2.8:
+storybook@^6.2.8:
   version "6.2.8"
   resolved "https://registry.yarnpkg.com/storybook/-/storybook-6.2.8.tgz#ec70df75680451315808e0ff69475b319e417235"
   integrity sha512-Rhj6mpRiYSUBSr1B6d1ZCocLQC/HfljY8CamwKz9bgevtAULKU1gkAeQN7XJrrZmpS9RFw160Qe7nvze5wk8CA==
