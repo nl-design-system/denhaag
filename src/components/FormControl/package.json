@@ -19,7 +19,7 @@
     ],
     "scripts": {
         "build": "tsc -b",
-        "clean": "rm -rf ./dist"
+        "clean": "rm -r dist"
     },
     "dependencies": {
         "@material-ui/core": "^4.11.0"

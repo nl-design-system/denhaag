@@ -19,7 +19,7 @@
     ],
     "scripts": {
         "build": "tsc -b",
-        "clean": "rm -rf ./dist"
+        "clean": "rm -r dist"
     },
     "peerDependencies": {
         "react": "^16.13.1"

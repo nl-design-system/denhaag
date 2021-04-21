@@ -19,7 +19,7 @@
     ],
     "scripts": {
         "build": "tsc -b",
-        "clean": "rm -rf ./dist"
+        "clean": "rm -r dist"
     },
     "dependencies": {
         "@gemeente-denhaag/baseprops": "^0.1.7",
