@@ -17,7 +17,7 @@
   ],
   "scripts": {
     "build": "tsc -b",
-    "clean": "rm -r dist"
+    "clean": "yarn rimraf  dist"
   },
   "dependencies": {
     "@gemeente-denhaag/avatar": "^0.1.7",

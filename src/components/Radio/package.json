@@ -19,7 +19,7 @@
     ],
     "scripts": {
         "build": "tsc -b",
-        "clean": "rm -r dist"
+        "clean": "yarn rimraf  dist"
     },
     "dependencies": {
         "@material-ui/core": "^4.11.2"
