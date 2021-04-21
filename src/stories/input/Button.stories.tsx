@@ -2,30 +2,30 @@ import React from "react";
 import { Meta, Story } from "@storybook/react";
 import Button, { ButtonProps } from "../../components/Button";
 import pkg from "../../components/Button/package.json";
+import { ArrowBackRounded, ArrowForwardRounded } from "@material-ui/icons";
 
 export default {
   title: "Components/Input/Button",
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
-  component: Button,
+  component: Button
 } as Meta;
 
-const Template: Story<ButtonProps> = (args: any) => <Button {...args}>Button</Button>;
+const Template: Story<ButtonProps> = (args: any) => <Button {...args}>label</Button>;
 
 /**
  * Default Button
  */
 export const Default = Template.bind({});
-Default.args = {
-};
+Default.args = {};
 
 /**
  * Primary Button
  */
 export const PrimaryAction: Story<ButtonProps> = Template.bind({});
 PrimaryAction.args = {
-  variant: "primary-action",
+  variant: "primary-action"
 };
 
 /**
@@ -33,7 +33,7 @@ PrimaryAction.args = {
  */
 export const SecondaryAction: Story<ButtonProps> = Template.bind({});
 SecondaryAction.args = {
-  variant: "secondary-action",
+  variant: "secondary-action"
 };
 
 /**
@@ -41,7 +41,24 @@ SecondaryAction.args = {
  */
 export const Medium: Story<ButtonProps> = Template.bind({});
 Medium.args = {
-  size: "medium",
+  size: "medium"
+};
+
+/**
+ * Icon left button
+ */
+export const IconLeft: Story<ButtonProps> = Template.bind({});
+IconLeft.args = {
+  startIcon: <ArrowBackRounded />
+};
+
+/**
+ * Icon right button
+ */
+export const IconRight: Story<ButtonProps> = Template.bind({});
+IconRight.args = {
+  variant: "secondary-action",
+  endIcon: <ArrowForwardRounded />
 };
 
 /**
@@ -49,7 +66,7 @@ Medium.args = {
  */
 export const Large: Story<ButtonProps> = Template.bind({});
 Large.args = {
-  size: "large",
+  size: "large"
 };
 
 /**
@@ -57,5 +74,5 @@ Large.args = {
  */
 export const Disabled: Story<ButtonProps> = Template.bind({});
 Disabled.args = {
-  disabled: true,
+  disabled: true
 };
