@@ -29,7 +29,7 @@
     "unit-no-unknown": [true],
     "alpha-value-notation": ["percentage"],
     "hue-degree-notation": ["number"],
-    "color-function-notation": ["legacy"],
+    "color-function-notation": ["modern"],
     "length-zero-no-unit": [true, "custom-properties"],
     "font-weight-notation": [
       "numeric",
