@@ -1,8 +1,7 @@
-.denhaag-button {
-  --denhaag-button-padding-inline: 16px;
+:root {
   --denhaag-button-border-radius: 3px;
+  --denhaag-button-padding-inline: 16px;
   --denhaag-button-padding-block: 8px;
-  --denhaag-button-focus-border-style: dashed;
   --denhaag-button-focus-border-color: var(--denhaag-ocher-4);
   --denhaag-button-focus-border-width: 0.125rem;
   --denhaag-button-font-family: sans-serif;
@@ -29,7 +28,9 @@
   --denhaag-button-medium-size-padding-inline: var(--denhaag-button-padding-inline);
   --denhaag-button-large-size-padding-block: 10px;
   --denhaag-button-large-size-padding-inline: 20px;
+}
 
+.denhaag-button {
   font-family: var(--denhaag-button-font-family);
   padding-inline-start: var(--denhaag-button-padding-inline);
   padding-inline-end: var(--denhaag-button-padding-inline);
