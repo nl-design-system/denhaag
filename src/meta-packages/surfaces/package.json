@@ -35,6 +35,6 @@
     "@gemeente-denhaag/toolbar": "^0.1.7"
   },
   "peerDependencies": {
-    "react": "^16.13.1"
+    "react": "^17.0.1"
   }
 }

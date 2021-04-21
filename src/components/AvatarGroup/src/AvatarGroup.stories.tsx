@@ -1,7 +1,7 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
 import Avatar from "../../Avatar";
-import AvatarGroup, { AvatarGroupProps } from "./index";
+import AvatarGroup, { AvatarGroupProps } from ".";
 import pkg from "../package.json";
 
 export default {

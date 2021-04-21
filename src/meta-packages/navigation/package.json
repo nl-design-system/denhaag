@@ -47,6 +47,6 @@
     "@material-ui/lab": "^4.0.0-alpha"
   },
   "peerDependencies": {
-    "react": "^16.13.1"
+    "react": "^17.0.1"
   }
 }

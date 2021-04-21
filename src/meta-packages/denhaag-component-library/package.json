@@ -30,6 +30,6 @@
     "@gemeente-denhaag/surfaces": "^0.1.5"
   },
   "peerDependencies": {
-    "react": "^16.13.1"
+    "react": "^17.0.1"
   }
 }
