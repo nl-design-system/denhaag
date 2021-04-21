@@ -94,6 +94,7 @@
   border-color: var(--denhaag-button-secondary-action-disabled-border-color);
 }
 
+/* Size specific styling */
 .denhaag-button--medium {
   padding-inline: var(--denhaag-button-medium-size-padding-inline);
   padding-block: var(--denhaag-button-medium-size-padding-block);
@@ -101,15 +102,15 @@
 
 }
 
+.denhaag-button--medium.denhaag-button--secondary-action {
+  padding-inline: calc(var(--denhaag-button-padding-inline) - var(--denhaag-button-secondary-action-border-width));
+  padding-block: calc(var(--denhaag-button-padding-block) - var(--denhaag-button-secondary-action-border-width));
+}
+
 .denhaag-button--large {
   padding-inline: var(--denhaag-button-large-size-padding-inline);
   padding-block: var(--denhaag-button-large-size-padding-block);
   font-size: var(--denhaag-fontsize-lg);
-}
-
-.denhaag-button--medium.denhaag-button--secondary-action {
-  padding-inline: calc(var(--denhaag-button-padding-inline) - var(--denhaag-button-secondary-action-border-width));
-  padding-block: calc(var(--denhaag-button-padding-block) - var(--denhaag-button-secondary-action-border-width));
 }
 
 .denhaag-button--large.denhaag-button--secondary-action {
