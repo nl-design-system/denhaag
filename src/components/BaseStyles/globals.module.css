@@ -1,5 +1,10 @@
 :root {
-  /* Colors */
+  font-size: 16px;
+
+  /**
+   * @tokens Colors
+   * @presenter Color
+   */
   --denhaag-green-1: hsl(117 28% 87%);
   --denhaag-green-2: hsl(118 28% 60%);
   --denhaag-green-3: hsl(138 58% 33%);
@@ -41,9 +46,10 @@
 
   --denhaag-white: hsl(0 0% 100%);
 
-  /* Font sizes */
-  font-size: 16px;
-
+  /*
+   * @tokens Typography
+   * @presenter FontSize
+   */
   --denhaag-fontsize-xs: 0.625rem;
   --denhaag-fontsize-s: 0.75rem;
   --denhaag-fontsize-base: 1rem;
@@ -52,10 +58,15 @@
   --denhaag-fontsize-2xl: 2rem;
   --denhaag-fontsize-3xl: 3rem;
 
-  /* Borders */
+  /*
+   * @tokens Borders
+   * @presenter BorderRadius
+   */
   --denhaag-border-radius: 3px;
 
-  /* Focus state */
-  --denhaag-focus-border-color: var(--denhaag-ocher-4);
-  --denhaag-focus-border: 2px dashed var(--denhaag-focus-border-color);
+  /*
+   * @tokens Borders
+   * @presenter Border
+   */
+  --denhaag-focus-border: 2px dashed var(--denhaag-ocher-4);
 }
