@@ -10,8 +10,15 @@
   },
   "license": "EUPL-1.2",
   "author": "Municipality of The Hague",
-  "main": "index.tsx",
-  "module": "index.tsx",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "rm -rf ./dist"
+  },
   "dependencies": {
     "@gemeente-denhaag/avatar": "^0.1.7",
     "@gemeente-denhaag/avatargroup": "^0.1.7",
@@ -25,5 +32,8 @@
     "@gemeente-denhaag/listitemtext": "^0.1.7",
     "@gemeente-denhaag/listsubheader": "^0.1.7",
     "@gemeente-denhaag/typography": "^0.1.7"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1"
   }
 }
