@@ -4,7 +4,7 @@ import Card, { CardProps } from "../../components/Card";
 import pkg from "../../components/Card/package.json";
 
 export default {
-  title: "Components/Surfaces/Card",
+  title: "Components/Cards/Card",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`
   },
