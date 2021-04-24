@@ -39,78 +39,78 @@ const Template: Story<DividerProps> = (args: DividerProps) => (
 
 // language=JS
 const defaultCode = `
-  <List>
-    <ListItem button>
-      <ListItemIcon>
-        <InboxIcon/>
-      </ListItemIcon>
-      <ListItemText primary="I am above the divider."/>
-    </ListItem>
-    <Divider/>
-    <ListItem button>
-      <ListItemIcon>
-        <DraftsIcon/>
-      </ListItemIcon>
-      <ListItemText primary="I am under the divider."/>
-    </ListItem>
-  </List>
+<List>
+  <ListItem button>
+    <ListItemIcon>
+      <InboxIcon/>
+    </ListItemIcon>
+    <ListItemText primary="I am above the divider."/>
+  </ListItem>
+  <Divider/>
+  <ListItem button>
+    <ListItemIcon>
+      <DraftsIcon/>
+    </ListItemIcon>
+    <ListItemText primary="I am under the divider."/>
+  </ListItem>
+</List>
 `;
 
 // language=JS
 const insetCode = `
-  <List>
-    <ListItem button>
-      <ListItemIcon>
-        <InboxIcon/>
-      </ListItemIcon>
-      <ListItemText primary="I am above the divider."/>
-    </ListItem>
-    <Divider variant="inset"/>
-    <ListItem button>
-      <ListItemIcon>
-        <DraftsIcon/>
-      </ListItemIcon>
-      <ListItemText primary="I am under the divider."/>
-    </ListItem>
-  </List>
+<List>
+  <ListItem button>
+    <ListItemIcon>
+      <InboxIcon/>
+    </ListItemIcon>
+    <ListItemText primary="I am above the divider."/>
+  </ListItem>
+  <Divider variant="inset"/>
+  <ListItem button>
+    <ListItemIcon>
+      <DraftsIcon/>
+    </ListItemIcon>
+    <ListItemText primary="I am under the divider."/>
+  </ListItem>
+</List>
 `;
 
 // language=JS
 const lightCode = `
-  <List>
-    <ListItem button>
-      <ListItemIcon>
-        <InboxIcon/>
-      </ListItemIcon>
-      <ListItemText primary="I am above the divider."/>
-    </ListItem>
-    <Divider light/>
-    <ListItem button>
-      <ListItemIcon>
-        <DraftsIcon/>
-      </ListItemIcon>
-      <ListItemText primary="I am under the divider."/>
-    </ListItem>
-  </List>
+<List>
+  <ListItem button>
+    <ListItemIcon>
+      <InboxIcon/>
+    </ListItemIcon>
+    <ListItemText primary="I am above the divider."/>
+  </ListItem>
+  <Divider light/>
+  <ListItem button>
+    <ListItemIcon>
+      <DraftsIcon/>
+    </ListItemIcon>
+    <ListItemText primary="I am under the divider."/>
+  </ListItem>
+</List>
 `;
 
 // language=JS
 const absoluteCode = `
-  <List>
-    <ListItem button>
-      <ListItemIcon>
-        <InboxIcon/>
-      </ListItemIcon>
-      <ListItemText primary="I am above the divider."/>
-    </ListItem>
-    <Divider absolute/>
-    <ListItem button>
-      <ListItemIcon>
-        <DraftsIcon/>
-      </ListItemIcon>
-      <ListItemText primary="I am under the divider."/>
-    </ListItem>
-  </List>
+<List>
+  <ListItem button>
+    <ListItemIcon>
+      <InboxIcon/>
+    </ListItemIcon>
+    <ListItemText primary="I am above the divider."/>
+  </ListItem>
+  <Divider absolute/>
+  <ListItem button>
+    <ListItemIcon>
+      <DraftsIcon/>
+    </ListItemIcon>
+    <ListItemText primary="I am under the divider."/>
+  </ListItem>
+</List>
 `;
 
 /**
