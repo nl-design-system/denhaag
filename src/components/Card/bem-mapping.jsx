@@ -21,3 +21,11 @@ export const cardTitleClasses = {
 export const cardSubtitleClasses = {
   root: 'denhaag-card-subtitle'
 }
+
+export const cardCaseTitleClasses = {
+  root: 'denhaag-card-case-title'
+}
+
+export const cardCaseSubtitleClasses = {
+  root: 'denhaag-card-case-subtitle'
+}

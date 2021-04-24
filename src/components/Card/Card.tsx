@@ -8,11 +8,13 @@ import "./mui-override.module.css";
 import "@gemeente-denhaag/basestyles";
 import { Typography } from "@gemeente-denhaag/typography";
 import { cardClasses,
-          cardCaseClasses,
           cardArrowClasses,
-          cardCaseArrowClasses,
           cardTitleClasses,
-          cardSubtitleClasses } from  "./bem-mapping";
+          cardSubtitleClasses,
+          cardCaseClasses,
+          cardCaseArrowClasses,
+          cardCaseTitleClasses,
+          cardCaseSubtitleClasses } from  "./bem-mapping";
 import { CardHeader,
           CardContent,
           CardActions } from "@gemeente-denhaag/surfaces";
@@ -45,8 +47,8 @@ export const Card: React.FC<CardProps> = (props: CardProps) => {
     case "case":
       classes = cardCaseClasses;
       arrowClasses = cardCaseArrowClasses;
-      titleClasses = cardTitleClasses;
-      subtitleClasses = cardSubtitleClasses;
+      titleClasses = cardCaseTitleClasses;
+      subtitleClasses = cardCaseSubtitleClasses;
       break;
     case "basic":
     default:

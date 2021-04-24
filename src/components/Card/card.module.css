@@ -8,10 +8,9 @@
     --denhaag-card-padding-block: 24px;
     --denhaag-card-padding-inline: 24px;
     --denhaag-card-arrow-position: relative;
-    --denhaag-card-arrow-left: 28px;
-    --denhaag-card-arrow-right: 308px;
+    --denhaag-card-arrow-left: 274px;
+    --denhaag-card-arrow-right: 28px;
     --denhaag-card-case-height: 200px;
-    --denhaag-card-case-arrow-bottom: 29px;
     --denhaag-card-case-width: 352px;
     --denhaag-card-case-padding-block: 40px;
     --denhaag-card-title-padding: 0;
@@ -43,6 +42,9 @@
 
 .denhaag-card-case-arrow {
     /*top: var(--denhaag-card-case-arrow-bottom);*/
+    right: var(--denhaag-card-arrow-right);
+    left: var(--denhaag-card-arrow-left);
+    position: var(--denhaag-card-arrow-position);
     color: var(--denhaag-green-3);
 }
 
@@ -60,4 +62,12 @@
 
 .denhaag-card-case-title {
     color: var(--denhaag-green-3);
+    padding-block: var(--denhaag-card-title-padding);
+    padding-inline: var(--denhaag-card-title-padding);
+}
+
+.denhaag-card-case-subtitle {
+    color: var(--denhaag-green-3);
+    padding-block: var(--denhaag-card-subtitle-padding);
+    padding-inline: var(--denhaag-card-subtitle-padding);
 }
