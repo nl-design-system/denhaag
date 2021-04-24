@@ -80,6 +80,6 @@
     padding-inline: var(--denhaag-card-subtitle-padding);
 }
 
-.denhaag-card-case-background {
-    background-image: image(Vector16.svg);
+.denhaag-card-case-paper {
+    background-image: url("paper.svg")
 }

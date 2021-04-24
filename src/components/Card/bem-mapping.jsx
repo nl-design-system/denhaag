@@ -29,3 +29,7 @@ export const cardCaseTitleClasses = {
 export const cardCaseSubtitleClasses = {
   root: 'denhaag-card-case-subtitle'
 }
+
+export const cardCasePaper = {
+  root: 'denhaag-card-case-paper'
+}
