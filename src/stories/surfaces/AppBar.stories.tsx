@@ -37,15 +37,15 @@ const Template: Story<AppBarProps> = (args: any) => {
 
 // language=JS
 const defaultCode = `
-  <AppBar position='relative'>
-    <Toolbar>
-      <IconButton edge="start" color="inherit" aria-label="menu">
-        <MenuIcon/>
-      </IconButton>
-      <Typography variant="h6">News</Typography>
-    </Toolbar>
-    <Button>I am a button!</Button>
-  </AppBar>
+<AppBar position='relative'>
+  <Toolbar>
+    <IconButton edge="start" color="inherit" aria-label="menu">
+      <MenuIcon/>
+    </IconButton>
+    <Typography variant="h6">News</Typography>
+  </Toolbar>
+  <Button>I am a button!</Button>
+</AppBar>
 `;
 
 /**
@@ -66,15 +66,15 @@ Default.parameters = {
 
 // language=JS
 const staticCode = `
-  <AppBar position='static'>
-    <Toolbar>
-      <IconButton edge="start" color="inherit" aria-label="menu">
-        <MenuIcon/>
-      </IconButton>
-      <Typography variant="h6">News</Typography>
-    </Toolbar>
-    <Button>I am a button!</Button>
-  </AppBar>
+<AppBar position='static'>
+  <Toolbar>
+    <IconButton edge="start" color="inherit" aria-label="menu">
+      <MenuIcon/>
+    </IconButton>
+    <Typography variant="h6">News</Typography>
+  </Toolbar>
+  <Button>I am a button!</Button>
+</AppBar>
 `;
 
 /**
@@ -95,15 +95,15 @@ StaticPosition.parameters = {
 
 // language=JS
 const secondaryCode = `
-  <AppBar position='static' color={'secondary'}>
-    <Toolbar>
-      <IconButton edge="start" color="inherit" aria-label="menu">
-        <MenuIcon/>
-      </IconButton>
-      <Typography variant="h6">News</Typography>
-    </Toolbar>
-    <Button>I am a button!</Button>
-  </AppBar>
+<AppBar position='static' color={'secondary'}>
+  <Toolbar>
+    <IconButton edge="start" color="inherit" aria-label="menu">
+      <MenuIcon/>
+    </IconButton>
+    <Typography variant="h6">News</Typography>
+  </Toolbar>
+  <Button>I am a button!</Button>
+</AppBar>
 `;
 
 /**

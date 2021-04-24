@@ -36,17 +36,17 @@ const Template: Story<AccordionProps> = (args: any) => (
 
 // language=JS
 const defaultCode = `
-  <Accordion>
-    <AccordionSummary expandIcon={<ExpandMore/>}>
-      <Typography>Click me to collapse me!</Typography>
-    </AccordionSummary>
-    <AccordionDetails>
-      <Typography>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo
-        lobortis eget.
-      </Typography>
-    </AccordionDetails>
-  </Accordion>
+<Accordion>
+  <AccordionSummary expandIcon={<ExpandMore/>}>
+    <Typography>Click me to collapse me!</Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo
+      lobortis eget.
+    </Typography>
+  </AccordionDetails>
+</Accordion>
 `;
 
 /**
@@ -63,18 +63,18 @@ Default.parameters = {
 
 // language=JS
 const defaultExpandedCode = `
-  <Accordion defaultExpanded>
-    <AccordionSummary expandIcon={<ExpandMore/>}>
-      <Typography>Click me to collapse me!</Typography>
-    </AccordionSummary>
-    <AccordionDetails>
-      <Typography>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
-        leo
-        lobortis eget.
-      </Typography>
-    </AccordionDetails>
-  </Accordion>
+<Accordion defaultExpanded>
+  <AccordionSummary expandIcon={<ExpandMore/>}>
+    <Typography>Click me to collapse me!</Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+      leo
+      lobortis eget.
+    </Typography>
+  </AccordionDetails>
+</Accordion>
 `;
 
 /**
@@ -95,18 +95,18 @@ DefaultExpanded.parameters = {
 
 // language=JS
 const disabledCode = `
-  <Accordion disabled>
-    <AccordionSummary expandIcon={<ExpandMore/>}>
-      <Typography>Click me to collapse me!</Typography>
-    </AccordionSummary>
-    <AccordionDetails>
-      <Typography>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
-        leo
-        lobortis eget.
-      </Typography>
-    </AccordionDetails>
-  </Accordion>
+<Accordion disabled>
+  <AccordionSummary expandIcon={<ExpandMore/>}>
+    <Typography>Click me to collapse me!</Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+      leo
+      lobortis eget.
+    </Typography>
+  </AccordionDetails>
+</Accordion>
 `;
 
 /**
@@ -128,18 +128,18 @@ Disabled.parameters = {
 
 // language=JS
 const squaredCode = `
-  <Accordion square>
-    <AccordionSummary expandIcon={<ExpandMore/>}>
-      <Typography>Click me to collapse me!</Typography>
-    </AccordionSummary>
-    <AccordionDetails>
-      <Typography>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
-        leo
-        lobortis eget.
-      </Typography>
-    </AccordionDetails>
-  </Accordion>
+<Accordion square>
+  <AccordionSummary expandIcon={<ExpandMore/>}>
+    <Typography>Click me to collapse me!</Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+      leo
+      lobortis eget.
+    </Typography>
+  </AccordionDetails>
+</Accordion>
 `;
 
 /**
