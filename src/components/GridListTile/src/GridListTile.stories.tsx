@@ -5,11 +5,16 @@ import GridListTile, { GridListTileProps } from ".";
 import pkg from "../package.json";
 
 export default {
-  title: "Components/Layout/GridList/GridListTile",
+  title: 'Components/Layout/GridList/GridListTile',
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: 'dynamic',
+      },
+    },
   },
-  component: GridListTile
+  component: GridListTile,
 } as Meta;
 
 const Template: Story<GridListTileProps> = (args: any) => (

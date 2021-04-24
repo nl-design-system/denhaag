@@ -5,14 +5,19 @@ import pkg from "../package.json";
 import Button from "../../Button";
 
 export default {
-  title: "Components/Input/ButtonGroup",
+  title: 'Components/Input/ButtonGroup',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: 'dynamic',
+      },
+    },
   },
   component: ButtonGroup,
 } as Meta;
 
-const Template: Story<ButtonGroupProps> = (args: any) => (
+const Template: Story<ButtonGroupProps> = (args: ButtonGroupProps) => (
   <ButtonGroup {...args}>
     <Button>Button</Button>
     <Button color="primary">I am primary coloured.</Button>
@@ -46,7 +51,7 @@ FullWidth.args = {
  */
 export const SecondaryColoured = Template.bind({});
 SecondaryColoured.args = {
-  color: "secondary",
+  color: 'secondary',
 };
 
 /**
@@ -54,7 +59,7 @@ SecondaryColoured.args = {
  */
 export const VerticalOriented = Template.bind({});
 VerticalOriented.args = {
-  orientation: "vertical",
+  orientation: 'vertical',
 };
 
 /**
@@ -62,5 +67,5 @@ VerticalOriented.args = {
  */
 export const Textual = Template.bind({});
 Textual.args = {
-  variant: "text",
+  variant: 'text',
 };

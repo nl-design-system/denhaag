@@ -7,9 +7,14 @@ import pkg from "../package.json";
 import imageFile from "../../../../.storybook/stories/assets/logo.svg";
 
 export default {
-  title: "Components/Layout/GridList",
+  title: 'Components/Layout/GridList',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: 'dynamic',
+      },
+    },
   },
   component: GridList,
 } as Meta;

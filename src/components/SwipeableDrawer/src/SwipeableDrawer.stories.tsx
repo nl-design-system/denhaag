@@ -5,9 +5,14 @@ import Button from "../../Button";
 import pkg from "../package.json";
 
 export default {
-  title: "Components/Navigation/SwipeableDrawer",
+  title: 'Components/Navigation/SwipeableDrawer',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: 'dynamic',
+      },
+    },
   },
   component: SwipeableDrawer,
 } as Meta;
@@ -37,5 +42,5 @@ const Template: Story<SwipeableDrawerProps> = (args: any) => {
  */
 export const Default = Template.bind({});
 Default.args = {
-  open: true,
+  open: false,
 };

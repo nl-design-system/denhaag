@@ -6,11 +6,16 @@ import pkg from "../package.json";
 import Button from "../../Button";
 
 export default {
-  title: "Components/Navigation/Menu/MenuItem",
+  title: 'Components/Navigation/Menu/MenuItem',
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: 'dynamic',
+      },
+    },
   },
-  component: MenuItem
+  component: MenuItem,
 } as Meta;
 
 const Template: Story<MenuItemProps> = (args: any) => {
@@ -45,7 +50,7 @@ export const Default = Template.bind({});
  */
 export const DenseMenu = Template.bind({});
 DenseMenu.args = {
-  dense: true
+  dense: true,
 };
 
 /**
@@ -53,5 +58,5 @@ DenseMenu.args = {
  */
 export const DisabledGutter = Template.bind({});
 DisabledGutter.args = {
-  disableGutters: true
+  disableGutters: true,
 };

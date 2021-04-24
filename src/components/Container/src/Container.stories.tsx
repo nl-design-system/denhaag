@@ -4,10 +4,15 @@ import Container, { ContainerProps } from ".";
 import pkg from "../package.json";
 
 export default {
-  title: "Components/Layout/Container",
+  title: 'Components/Layout/Container',
   component: Container,
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: 'dynamic',
+      },
+    },
   },
 } as Meta;
 

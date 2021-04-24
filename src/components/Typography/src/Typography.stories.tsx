@@ -4,14 +4,19 @@ import Typography, { TypographyProps } from ".";
 import pkg from "../package.json";
 
 export default {
-  title: "Components/Data Display/Typography",
+  title: 'Components/Data Display/Typography',
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: 'dynamic',
+      },
+    },
   },
-  component: Typography
+  component: Typography,
 } as Meta;
 
-const Template: Story<TypographyProps> = (args: any) => (
+const Template: Story<TypographyProps> = (args: TypographyProps) => (
   <Typography {...args}>
     This is a bit of text inside a Typography component. Play around with the variants property to see me in different
     variants!
@@ -28,7 +33,7 @@ export const Default = Template.bind({});
  */
 export const Heading = Template.bind({});
 Heading.args = {
-  variant: "h1"
+  variant: 'h1',
 };
 
 /**
@@ -36,7 +41,7 @@ Heading.args = {
  */
 export const noWrap = Template.bind({});
 noWrap.args = {
-  noWrap: true
+  noWrap: true,
 };
 
 /**
@@ -44,7 +49,7 @@ noWrap.args = {
  */
 export const Centered = Template.bind({});
 Centered.args = {
-  align: "center"
+  align: 'center',
 };
 
 /**
@@ -52,5 +57,5 @@ Centered.args = {
  */
 export const Paragraphed = Template.bind({});
 Paragraphed.args = {
-  paragraph: true
+  paragraph: true,
 };

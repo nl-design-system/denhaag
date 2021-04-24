@@ -5,33 +5,77 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import pkg from "../package.json";
 
 export default {
-  title: "Components/Input/IconButton",
+  title: 'Components/Input/IconButton',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+        type: 'dynamic',
+      },
+    },
   },
   component: IconButton,
-} as Meta;
 
-const Template: Story<IconButtonProps> = (args: any) => (
+const Template: Story<IconButtonProps> = (args: IconButtonProps) => (
   <IconButton {...args}>
     <DeleteIcon />
   </IconButton>
 );
 
+// language=JS
+const defaultCode = `
+<IconButton>
+  <DeleteIcon/>
+</IconButton>
+`;
+
 /**
  * Implementation of IconButton
  */
 export const Default = Template.bind({});
+Default.parameters = {
+  docs: {
+    source: {
+      code: defaultCode,
+    },
+  },
+};
+
+//language=JS
+const primaryCode = `
+<IconButton color="primary">
+  <DeleteIcon/>
+</IconButton>
+`;
 
 /**
  * Implementation of IconButton with primary coloured components.
  */
 export const PrimaryColoured = Template.bind({});
 PrimaryColoured.args = {
-  color: "primary",
+  color: 'primary',
 };
+PrimaryColoured.parameters = {
+  docs: {
+    source: {
+      code: primaryCode,
+    },
+  },
+};
+
+// language=JS
+const smallCode = `
+<IconButton size="small">
+  <DeleteIcon/>
+</IconButton>
+`;
 
 export const SmallSized = Template.bind({});
 SmallSized.args = {
-  size: "small",
+  size: 'small',
+};
+SmallSized.parameters = {
+  docs: {
+    source: {
+      code: smallCode,
+    },
+  },
 };

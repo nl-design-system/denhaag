@@ -4,9 +4,14 @@ import Box, { BoxProps } from ".";
 import pkg from "../package.json";
 
 export default {
-  title: "Components/Layout/Box",
+  title: 'Components/Layout/Box',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: 'dynamic',
+      },
+    },
   },
   component: Box,
 } as Meta;

@@ -7,9 +7,14 @@ import StepContent from "../../StepContent";
 import pkg from "../package.json";
 
 export default {
-  title: "Components/navigation/Stepper",
+  title: 'Components/navigation/Stepper',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: 'dynamic',
+      },
+    },
   },
   component: Stepper,
 } as Meta;
@@ -60,7 +65,7 @@ Default.args = {
 export const VerticalOrientation = Template.bind({});
 VerticalOrientation.args = {
   activeStep: 0,
-  orientation: "vertical",
+  orientation: 'vertical',
 };
 
 /**

@@ -5,9 +5,14 @@ import MenuItem from "../../MenuItem";
 import pkg from "../package.json";
 
 export default {
-  title: "Components/Navigation/Menu/MenuList",
+  title: 'Components/Navigation/Menu/MenuList',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: 'dynamic',
+      },
+    },
   },
   component: MenuList,
 } as Meta;
@@ -30,5 +35,5 @@ export const Default = Template.bind({});
  */
 export const MenuVariant = Template.bind({});
 MenuVariant.args = {
-  variant: "menu",
+  variant: 'menu',
 };

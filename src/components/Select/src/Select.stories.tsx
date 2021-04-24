@@ -8,9 +8,14 @@ import InputLabel from "../../InputLabel";
 import MenuItem from "../../MenuItem";
 
 export default {
-  title: "Components/Input/Select",
+  title: 'Components/Input/Select',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: 'dynamic',
+      },
+    },
   },
   component: Select,
 } as Meta;
@@ -21,7 +26,7 @@ const useStyles = makeStyles((theme: Theme) =>
       margin: theme.spacing(1),
       minWidth: 120,
     },
-  })
+  }),
 );
 
 export function DefaultSelect(props: SelectProps): React.ReactElement {

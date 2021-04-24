@@ -6,9 +6,14 @@ import FormControlLabel from "../../FormControlLabel";
 import Radio from "../../Radio";
 
 export default {
-  title: "Components/Input/RadioGroup",
+  title: 'Components/Input/RadioGroup',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: 'dynamic',
+      },
+    },
   },
   component: RadioGroup,
 } as Meta;
@@ -27,7 +32,7 @@ export const Primary: Story<RadioGroupProps> = Template.bind({});
 
 export const SelectDefault: Story<RadioGroupProps> = Template.bind({});
 SelectDefault.args = {
-  defaultValue: "c",
+  defaultValue: 'c',
 };
 
 export const Row: Story<RadioGroupProps> = Template.bind({});

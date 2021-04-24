@@ -5,11 +5,16 @@ import Typography from "../../Typography";
 import pkg from "../package.json";
 
 export default {
-  title: "Components/Surfaces/Paper",
+  title: 'Components/Surfaces/Paper',
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: 'dynamic',
+      },
+    },
   },
-  component: Paper
+  component: Paper,
 } as Meta;
 
 const Template: Story<PaperProps> = (args: any) => (
@@ -28,7 +33,7 @@ export const Default = Template.bind({});
  */
 export const Outlined = Template.bind({});
 Outlined.args = {
-  variant: "outlined"
+  variant: 'outlined',
 };
 
 /**
@@ -36,7 +41,7 @@ Outlined.args = {
  */
 export const Squared = Template.bind({});
 Squared.args = {
-  square: true
+  square: true,
 };
 
 /**
@@ -44,5 +49,5 @@ Squared.args = {
  */
 export const MaxElevated = Template.bind({});
 MaxElevated.args = {
-  elevation: 24
+  elevation: 24,
 };

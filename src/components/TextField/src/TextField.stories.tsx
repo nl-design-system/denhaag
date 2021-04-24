@@ -4,9 +4,14 @@ import pkg from "../package.json";
 import TextField, { TextFieldProps } from ".";
 
 export default {
-  title: "Components/Input/TextField",
+  title: 'Components/Input/TextField',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: 'dynamic',
+      },
+    },
   },
   component: TextField,
   argTypes: {
@@ -25,29 +30,29 @@ const Template: Story<TextFieldProps> = (args: TextFieldProps) => {
  */
 export const Default: Story<TextFieldProps> = Template.bind({});
 Default.args = {
-  label: "Default text field",
+  label: 'Default text field',
 };
 /**
  * Primary TextField
  */
 export const Primary: Story<TextFieldProps> = Template.bind({});
 Primary.args = {
-  label: "Primary text field",
+  label: 'Primary text field',
 };
 /**
  * Secondary TextField
  */
 export const Secondary: Story<TextFieldProps> = Template.bind({});
 Secondary.args = {
-  label: "Secondary text field",
-  color: "secondary",
+  label: 'Secondary text field',
+  color: 'secondary',
 };
 /**
  * Disabled TextField
  */
 export const Disabled: Story<TextFieldProps> = Template.bind({});
 Disabled.args = {
-  label: "Disabled text field",
+  label: 'Disabled text field',
   disabled: true,
 };
 /**
@@ -55,20 +60,20 @@ Disabled.args = {
  */
 const currencies = [
   {
-    value: "USD",
-    label: "$",
+    value: 'USD',
+    label: '$',
   },
   {
-    value: "EUR",
-    label: "€",
+    value: 'EUR',
+    label: '€',
   },
   {
-    value: "BTC",
-    label: "฿",
+    value: 'BTC',
+    label: '฿',
   },
   {
-    value: "JPY",
-    label: "¥",
+    value: 'JPY',
+    label: '¥',
   },
 ];
 

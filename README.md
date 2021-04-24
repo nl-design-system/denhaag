@@ -2,7 +2,8 @@
 
 > A library of React components for the municipality of The Hague
 
-[![NPM](https://img.shields.io/npm/v/denhaag-component-library.svg)](https://www.npmjs.com/package/denhaag-component-library) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+![npm](https://img.shields.io/npm/v/@gemeente-denhaag/denhaag-component-library?logo=npm&style=flat-square)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/Gemeente-Denhaag/denhaag-component-library/Build%20and%20deploy%20Storybook%20to%20Azure%20Web%20App/master?logo=github&style=flat-square)
 
 ## 🥅 Goals of this codebase
 The Municipality of The Hague React UI-components library is constructed, so that re-use by other government organisations is possible with minimal effort. The UI-components are available in a basic styling and through the use of Design Tokens it is possible to give the components your own (corporate) identity. Within the Municipality of The Hague the components are used for:	

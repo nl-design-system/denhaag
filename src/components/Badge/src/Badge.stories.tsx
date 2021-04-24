@@ -5,14 +5,19 @@ import MailIcon from "@material-ui/icons/Mail";
 import pkg from "../package.json";
 
 export default {
-  title: "Components/Data Display/Badge",
+  title: 'Components/Data Display/Badge',
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: 'code',
+      },
+    },
   },
-  component: Badge
+  component: Badge,
 } as Meta;
 
-const Template: Story<BadgeProps> = (args: any) => (
+const Template: Story<BadgeProps> = (args: BadgeProps) => (
   <Badge {...args}>
     <MailIcon />
   </Badge>
@@ -23,7 +28,16 @@ const Template: Story<BadgeProps> = (args: any) => (
  */
 export const Default = Template.bind({});
 Default.args = {
-  badgeContent: 4
+  badgeContent: 4,
+};
+
+Default.parameters = {
+  docs: {
+    source: {
+      // language=HTML
+      code: `<Badge badgeContent={4}><MailIcon /></Badge>`,
+    },
+  },
 };
 
 /**
@@ -31,8 +45,17 @@ Default.args = {
  */
 export const PrimaryColoured = Template.bind({});
 PrimaryColoured.args = {
-  color: "primary",
-  ...Default.args
+  color: 'primary',
+  ...Default.args,
+};
+
+PrimaryColoured.parameters = {
+  docs: {
+    source: {
+      // language=HTML
+      code: `<Badge badgeContent={4} color={'primary'}><MailIcon /></Badge>`,
+    },
+  },
 };
 
 /**
@@ -40,8 +63,17 @@ PrimaryColoured.args = {
  */
 export const CircleOverlap = Template.bind({});
 CircleOverlap.args = {
-  overlap: "circle",
-  ...PrimaryColoured.args
+  overlap: 'circle',
+  ...PrimaryColoured.args,
+};
+
+CircleOverlap.parameters = {
+  docs: {
+    source: {
+      // language=HTML
+      code: `<Badge badgeContent={4} color={'primary'} overlap={'circle'}><MailIcon /></Badge>`,
+    },
+  },
 };
 
 /**
@@ -49,6 +81,14 @@ CircleOverlap.args = {
  */
 export const DotVariant = Template.bind({});
 DotVariant.args = {
-  variant: "dot",
-  ...PrimaryColoured.args
+  variant: 'dot',
+  ...PrimaryColoured.args,
+};
+
+DotVariant.parameters = {
+  docs: {
+    source: {
+      code: `<Badge badgeContent={4} color={'primary'} variant={'dot'}><MailIcon /></Badge>`,
+    },
+  },
 };
