@@ -1,166 +1,180 @@
-import React from 'react'
+import React from "react";
 // also exported from '@storybook/react' if you can deal with breaking changes in 6.1
-import { Story, Meta } from '@storybook/react/types-6-0'
-import Checkbox, { CheckboxProps } from '../../components/Checkbox'
-import FormControlLabel from '../../components/FormControlLabel'
-import pkg from '../../components/Checkbox/package.json'
+import { Story, Meta } from "@storybook/react/types-6-0";
+import Checkbox, { CheckboxProps } from "../../components/Checkbox";
+import FormControlLabel from "../../components/FormControlLabel";
+import pkg from "../../components/Checkbox/package.json";
 
 export default {
-  title: 'Components/Input/Checkbox',
+  title: "Components/Input/Checkbox",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: 'dynamic'
-      }
-    }
+        type: "dynamic",
+      },
+    },
   },
-  component: Checkbox
-} as Meta
+  component: Checkbox,
+} as Meta;
 
 const Template: Story<CheckboxProps> = (args: any) => (
-  <FormControlLabel label='Checkbox' control={<Checkbox {...args} />} />
-)
+  <FormControlLabel label="Checkbox" control={<Checkbox {...args} />} />
+);
+
+// language=JS
+const defaultCode = `
+  <FormControlLabel label='Checkbox'>
+    <Checkbox onChange='{}'/>
+  </FormControlLabel>
+`;
+
+// language=JS
+const primaryCode = `
+  <FormControlLabel label="Checkbox">
+    <Checkbox onChange="{}" color="primary"/>
+  </FormControlLabel>
+`;
+
+// language=JS
+const secondaryCode = `
+  <FormControlLabel label="Checkbox">
+    <Checkbox onChange="{}" color="secondary"/>
+  </FormControlLabel>
+`;
+
+// language=JS
+const checkedDefault = `
+  <FormControlLabel label="Checkbox">
+    <Checkbox onChange="{}" defaultChecked/>
+  </FormControlLabel>
+`;
+
+// language=JS
+const smallCode = `
+  <FormControlLabel label="Checkbox">
+    <Checkbox onChange="{}" size="small"/>
+  </FormControlLabel>
+`;
+
+// language=JS
+const indeterminateCode = `
+  <FormControlLabel label="Checkbox">
+    <Checkbox onChange="{}" indeterminate/>
+  </FormControlLabel>
+`;
+
+// language=JS
+const disabledCode = `
+  <FormControlLabel label="Checkbox">
+    <Checkbox onChange="{}" disabled/>
+  </FormControlLabel>
+`;
 
 /**
  * Default Checkbox
  */
-export const Default: Story<CheckboxProps> = Template.bind({})
+export const Default: Story<CheckboxProps> = Template.bind({});
 Default.parameters = {
   docs: {
     source: {
-      // language=HTML
-      code: `
-        <FormControlLabel label='Checkbox'>
-          <Checkbox onChange='{}' />
-        </FormControlLabel>
-      `
-    }
-  }
-}
+      code: defaultCode,
+    },
+  },
+};
 
 /**
  * Primary Checkbox
  */
-export const Primary: Story<CheckboxProps> = Template.bind({})
+export const Primary: Story<CheckboxProps> = Template.bind({});
 Primary.args = {
-  color: 'primary'
-}
+  color: "primary",
+};
 
 Primary.parameters = {
   docs: {
     source: {
-      // language=HTML
-      code: `
-        <FormControlLabel label='Checkbox'>
-          <Checkbox onChange='{}' color='primary' />
-        </FormControlLabel>
-      `
-    }
-  }
-}
+      code: primaryCode,
+    },
+  },
+};
 
 /**
  * Secondary Checkbox
  */
-export const Secondary: Story<CheckboxProps> = Template.bind({})
+export const Secondary: Story<CheckboxProps> = Template.bind({});
 Secondary.args = {
-  color: 'secondary'
-}
+  color: "secondary",
+};
 
 Secondary.parameters = {
   docs: {
     source: {
-      // language=HTML
-      code: `
-        <FormControlLabel label='Checkbox'>
-          <Checkbox onChange='{}' color='secondary' />
-        </FormControlLabel>
-      `
-    }
-  }
-}
+      code: secondaryCode,
+    },
+  },
+};
 
 /**
  * Default Checked Checkbox
  */
-export const CheckedByDefault: Story<CheckboxProps> = Template.bind({})
+export const CheckedByDefault: Story<CheckboxProps> = Template.bind({});
 CheckedByDefault.args = {
-  defaultChecked: true
-}
+  defaultChecked: true,
+};
 
 CheckedByDefault.parameters = {
   docs: {
     source: {
-      // language=HTML
-      code: `
-        <FormControlLabel label='Checkbox'>
-          <Checkbox onChange='{}' defaultChecked />
-        </FormControlLabel>
-      `
-    }
-  }
-}
+      code: checkedDefault,
+    },
+  },
+};
 
 /**
  * Small Checkbox
  */
-export const Small: Story<CheckboxProps> = Template.bind({})
+export const Small: Story<CheckboxProps> = Template.bind({});
 Small.args = {
-  size: 'small'
-}
+  size: "small",
+};
 
 Small.parameters = {
   docs: {
     source: {
-      // language=HTML
-      code: `
-        <FormControlLabel label='Checkbox'>
-          <Checkbox onChange='{}' size='small' />
-        </FormControlLabel>
-      `
-    }
-  }
-}
+      code: smallCode,
+    },
+  },
+};
 
 /**
  * Indeterminate Checkbox
  */
-export const Indeterminate: Story<CheckboxProps> = Template.bind({})
+export const Indeterminate: Story<CheckboxProps> = Template.bind({});
 Indeterminate.args = {
-  indeterminate: true
-}
+  indeterminate: true,
+};
 
 Indeterminate.parameters = {
   docs: {
     source: {
-      // language=HTML
-      code: `
-        <FormControlLabel label='Checkbox'>
-          <Checkbox onChange='{}' indeterminate />
-        </FormControlLabel>
-      `
-    }
-  }
-}
+      code: indeterminateCode,
+    },
+  },
+};
 
 /**
  * Disabled Checkbox
  */
-export const Disabled: Story<CheckboxProps> = Template.bind({})
+export const Disabled: Story<CheckboxProps> = Template.bind({});
 Disabled.args = {
-  disabled: true
-}
+  disabled: true,
+};
 
 Disabled.parameters = {
   docs: {
     source: {
-      // language=HTML
-      code: `
-        <FormControlLabel label='Checkbox'>
-          <Checkbox onChange='{}' disabled />
-        </FormControlLabel>
-      `
-    }
-  }
-}
+      code: disabledCode,
+    },
+  },
+};
