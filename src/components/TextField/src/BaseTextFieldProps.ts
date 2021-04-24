@@ -1,6 +1,6 @@
 import { FormHelperTextProps, InputLabelProps, PropTypes, SelectProps } from '@material-ui/core';
 import React from 'react';
-import { BaseClassesProps } from '@gemeente-denhaag/baseprops/src';
+import { BaseClassesProps } from '@gemeente-denhaag/baseprops';
 
 export interface BaseTextFieldProps extends BaseClassesProps {
   /**
