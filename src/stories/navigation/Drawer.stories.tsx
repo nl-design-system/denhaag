@@ -1,30 +1,30 @@
-import React from 'react'
-import { Meta, Story } from '@storybook/react'
-import { Drawer, DrawerProps } from '../../components/Drawer'
-import Button from '../../components/Button'
-import pkg from '../../components/Drawer/package.json'
+import React from "react";
+import { Meta, Story } from "@storybook/react";
+import { Drawer, DrawerProps } from "../../components/Drawer";
+import Button from "../../components/Button";
+import pkg from "../../components/Drawer/package.json";
 
 export default {
-  title: 'Components/Navigation/Drawer',
+  title: "Components/Navigation/Drawer",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: 'dynamic'
-      }
-    }
+        type: "dynamic",
+      },
+    },
   },
-  component: Drawer
-} as Meta
+  component: Drawer,
+} as Meta;
 
 const Template: Story<DrawerProps> = (args: DrawerProps) => {
   const [state, setState] = React.useState({
-    open: args.open
-  })
+    open: args.open,
+  });
 
   const toggleDrawer = (open: boolean) => {
-    setState({ open: open })
-  }
+    setState({ open: open });
+  };
 
   return (
     <div>
@@ -35,154 +35,163 @@ const Template: Story<DrawerProps> = (args: DrawerProps) => {
         <Button>Set the &quot;open&quot; property to true to open me.</Button>
       </Drawer>
     </div>
-  )
-}
+  );
+};
+
+// language=JS
+const defaultCode = `
+  const [state, setState] = React.useState({
+    open: false
+  });
+
+  const toggleDrawer = (open: boolean) => {
+    setState({ open: open });
+  }
+
+  return (
+    <div>
+      <Button onClick={() => toggleDrawer(!state.open)}>OPEN DRAWER</Button>
+      <Drawer anchor={'left'} open={state.open} onClose={() => toggleDrawer(false)}>
+        <Button>I am a Button in a Drawer component!</Button>
+        <Button>Set the &quot;open&quot; property to false to close me.</Button>
+        <Button>Set the &quot;open&quot; property to true to open me.</Button>
+      </Drawer>
+    </div>
+  );
+`;
 
 /**
  * Implementation of Drawer
  * "open" property is set to true to enforce the Drawer appearing.
  */
-export const Default = Template.bind({})
+export const Default = Template.bind({});
 Default.args = {
   open: false,
-  anchor: 'left'
-}
+  anchor: "left",
+};
 
 Default.parameters = {
   docs: {
     source: {
       // language=JS
-      code: `
-        const [state, setState] = React.useState({
-          open: false
-        });
+      code: defaultCode,
+    },
+  },
+};
 
-        const toggleDrawer = (open: boolean) => {
-          setState({ open: open });
-        }
+// language=JS
+const bottomCode = `
+  const [state, setState] = React.useState({
+    open: false
+  });
 
-        return (
-          <div>
-            <Button onClick={() => toggleDrawer(!state.open)}>OPEN DRAWER</Button>
-            <Drawer anchor={'left'} open={state.open} onClose={() => toggleDrawer(false)}>
-              <Button>I am a Button in a Drawer component!</Button>
-              <Button>Set the &quot;open&quot; property to false to close me.</Button>
-              <Button>Set the &quot;open&quot; property to true to open me.</Button>
-            </Drawer>
-          </div>
-        );
-      `
-    }
+  const toggleDrawer = (open: boolean) => {
+    setState({ open: open });
   }
-}
+
+  return (
+    <div>
+      <Button onClick={() => toggleDrawer(!state.open)}>OPEN DRAWER</Button>
+      <Drawer anchor={'bottom'} open={state.open} onClose={() => toggleDrawer(false)}>
+        <Button>I am a Button in a Drawer component!</Button>
+        <Button>Set the &quot;open&quot; property to false to close me.</Button>
+        <Button>Set the &quot;open&quot; property to true to open me.</Button>
+      </Drawer>
+    </div>
+  );
+`;
 
 /**
  * Implementation of Drawer anchored at the bottom.
  */
-export const BottomDrawer = Template.bind({})
+export const BottomDrawer = Template.bind({});
 BottomDrawer.args = {
   open: false,
-  anchor: 'bottom'
-}
+  anchor: "bottom",
+};
 
 BottomDrawer.parameters = {
   docs: {
     source: {
-      // language=JS
-      code: `
-        const [state, setState] = React.useState({
-          open: false
-        });
+      code: bottomCode,
+    },
+  },
+};
 
-        const toggleDrawer = (open: boolean) => {
-          setState({ open: open });
-        }
+// language=JS
+const topCode = `
+  const [state, setState] = React.useState({
+    open: false
+  });
 
-        return (
-          <div>
-            <Button onClick={() => toggleDrawer(!state.open)}>OPEN DRAWER</Button>
-            <Drawer anchor={'bottom'} open={state.open} onClose={() => toggleDrawer(false)}>
-              <Button>I am a Button in a Drawer component!</Button>
-              <Button>Set the &quot;open&quot; property to false to close me.</Button>
-              <Button>Set the &quot;open&quot; property to true to open me.</Button>
-            </Drawer>
-          </div>
-        );
-      `
-    }
+  const toggleDrawer = (open: boolean) => {
+    setState({ open: open });
   }
-}
+
+  return (
+    <div>
+      <Button onClick={() => toggleDrawer(!state.open)}>OPEN DRAWER</Button>
+      <Drawer anchor={'top'} open={state.open} onClose={() => toggleDrawer(false)}>
+        <Button>I am a Button in a Drawer component!</Button>
+        <Button>Set the &quot;open&quot; property to false to close me.</Button>
+        <Button>Set the &quot;open&quot; property to true to open me.</Button>
+      </Drawer>
+    </div>
+  );
+`;
 
 /**
  * Implementation of Drawer anchored at the top.
  */
-export const TopDrawer = Template.bind({})
+export const TopDrawer = Template.bind({});
 TopDrawer.args = {
   open: false,
-  anchor: 'top'
-}
-
+  anchor: "top",
+};
 TopDrawer.parameters = {
   docs: {
     source: {
       // language=JS
-      code: `
-        const [state, setState] = React.useState({
-          open: false
-        });
+      code: topCode,
+    },
+  },
+};
 
-        const toggleDrawer = (open: boolean) => {
-          setState({ open: open });
-        }
+// language=JS
+const rightCode = `
+  const [state, setState] = React.useState({
+    open: false
+  });
 
-        return (
-          <div>
-            <Button onClick={() => toggleDrawer(!state.open)}>OPEN DRAWER</Button>
-            <Drawer anchor={'top'} open={state.open} onClose={() => toggleDrawer(false)}>
-              <Button>I am a Button in a Drawer component!</Button>
-              <Button>Set the &quot;open&quot; property to false to close me.</Button>
-              <Button>Set the &quot;open&quot; property to true to open me.</Button>
-            </Drawer>
-          </div>
-        );
-      `
-    }
+  const toggleDrawer = (open: boolean) => {
+    setState({ open: open });
   }
-}
+
+  return (
+    <div>
+      <Button onClick={() => toggleDrawer(!state.open)}>OPEN DRAWER</Button>
+      <Drawer anchor={'right'} open={state.open} onClose={() => toggleDrawer(false)}>
+        <Button>I am a Button in a Drawer component!</Button>
+        <Button>Set the &quot;open&quot; property to false to close me.</Button>
+        <Button>Set the &quot;open&quot; property to true to open me.</Button>
+      </Drawer>
+    </div>
+  );
+`;
 
 /**
  * Implementation of Drawer anchored at the right.
  */
-export const RightDrawer = Template.bind({})
+export const RightDrawer = Template.bind({});
 RightDrawer.args = {
   open: false,
-  anchor: 'right'
-}
+  anchor: "right",
+};
 
 RightDrawer.parameters = {
   docs: {
     source: {
-      // language=JS
-      code: `
-        const [state, setState] = React.useState({
-          open: false
-        });
-
-        const toggleDrawer = (open: boolean) => {
-          setState({ open: open });
-        }
-
-        return (
-          <div>
-            <Button onClick={() => toggleDrawer(!state.open)}>OPEN DRAWER</Button>
-            <Drawer anchor={'right'} open={state.open} onClose={() => toggleDrawer(false)}>
-              <Button>I am a Button in a Drawer component!</Button>
-              <Button>Set the &quot;open&quot; property to false to close me.</Button>
-              <Button>Set the &quot;open&quot; property to true to open me.</Button>
-            </Drawer>
-          </div>
-        );
-      `
-    }
-  }
-}
+      code: rightCode,
+    },
+  },
+};
