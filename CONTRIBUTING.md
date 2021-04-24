@@ -180,3 +180,21 @@ Use concise variable names.
 ### CSS names
 
 CSS class names, custom property names and keyframe names al must start with the prefix `denhaag-` followed by one or more [0-9a-z-]. This is also enforced by the linter via the `yarn lint:css` command.
+
+### Installing and testing packages locally
+We have tested this using a verdaccio local registry on the PWA master and development branches.
+This can be repeated by installing verdaccio globally with `npm` and running verdaccio on the default port, navigate to http://localhost:4873 and follow instructions to login on the registry, username, password and email do not matter.
+If you have used verdaccio before, remove the content in the verdaccio/storage folder.
+
+A lerna publish will create and push tags to your remote.
+In order to test this without publishing tags and commits to the denhaag origin, create a dummy github repository and set your git remote origin to it temporarily.
+Make sure the tags that are created on publish don't exist yet in the local git registry, otherwise remove them locally: 
+
+`git tag | xargs git tag -d`
+
+Run the following command to publish a new version to the local registry (on a separate branch e.g. fix/test):
+
+`lerna publish --registry http://localhost:4873 --allow-branch fix/test --skip-git`
+
+Now you can test the packages in a new React project, or test it in the PWA. Either way make sure you specify the registry with `--registry http://localhost:4873`.
+In the PWA yarn upgrade the dependency of @gemeente-denhaag/denhaag-component-library (with the registry flag), and correct the imports.
