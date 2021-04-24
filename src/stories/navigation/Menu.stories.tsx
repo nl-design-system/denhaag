@@ -55,37 +55,37 @@ const Template: Story<MenuProps> = (args: any) => {
 
 // language=JS
 const defaultCode = `
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const handleClick = (event) => { setAnchorEl(event.currentTarget); };
-  const handleClose = () => { setAnchorEl(null); };
+const [anchorEl, setAnchorEl] = React.useState(null);
+const handleClick = (event) => { setAnchorEl(event.currentTarget); };
+const handleClose = () => { setAnchorEl(null); };
 
-  return (
-    <div>
-      <Button aria-controls='menu' onClick={handleClick}>Click me!</Button>
-      <Menu
-        open={Boolean(anchorEl)}
-        anchorEl={anchorEl}
-        onClose={handleClose}
-        id='menu'
-      >
-        <MenuItem dense={false} onClick={handleClose}>
-          <p>Set the &quot;open&quot; property to
-            <code>true</code>
-            to force the menu to open.
-          </p>
-        </MenuItem>
-        <MenuItem dense={false} onClick={handleClose}>
-          <span>Click me!</span>
-        </MenuItem>
-        <MenuItem dense={false} onClick={handleClose}>
-          <span>Or me!</span>
-        </MenuItem>
-        <MenuItem dense={false} onClick={handleClose}>
-          <span>Or me!</span>
-        </MenuItem>
-      </Menu>
-    </div>
-  );
+return (
+  <div>
+    <Button aria-controls='menu' onClick={handleClick}>Click me!</Button>
+    <Menu
+      open={Boolean(anchorEl)}
+      anchorEl={anchorEl}
+      onClose={handleClose}
+      id='menu'
+    >
+      <MenuItem dense={false} onClick={handleClose}>
+        <p>Set the &quot;open&quot; property to
+          <code>true</code>
+          to force the menu to open.
+        </p>
+      </MenuItem>
+      <MenuItem dense={false} onClick={handleClose}>
+        <span>Click me!</span>
+      </MenuItem>
+      <MenuItem dense={false} onClick={handleClose}>
+        <span>Or me!</span>
+      </MenuItem>
+      <MenuItem dense={false} onClick={handleClose}>
+        <span>Or me!</span>
+      </MenuItem>
+    </Menu>
+  </div>
+);
 `;
 
 /**
@@ -107,38 +107,38 @@ Default.parameters = {
 
 // language=JS
 const menuCode = `
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const handleClick = (event) => { setAnchorEl(event.currentTarget); };
-  const handleClose = () => { setAnchorEl(null); };
+const [anchorEl, setAnchorEl] = React.useState(null);
+const handleClick = (event) => { setAnchorEl(event.currentTarget); };
+const handleClose = () => { setAnchorEl(null); };
 
-  return (
-    <div>
-      <Button aria-controls='menu' onClick={handleClick}>Click me!</Button>
-      <Menu
-        open={Boolean(anchorEl)}
-        anchorEl={anchorEl}
-        onClose={handleClose}
-        id='menu'
-        variant='menu'
-      >
-        <MenuItem dense={false} onClick={handleClose}>
-          <p>Set the &quot;open&quot; property to
-            <code>true</code>
-            to force the menu to open.
-          </p>
-        </MenuItem>
-        <MenuItem dense={false} onClick={handleClose}>
-          <span>Click me!</span>
-        </MenuItem>
-        <MenuItem dense={false} onClick={handleClose}>
-          <span>Or me!</span>
-        </MenuItem>
-        <MenuItem dense={false} onClick={handleClose}>
-          <span>Or me!</span>
-        </MenuItem>
-      </Menu>
-    </div>
-  );
+return (
+  <div>
+    <Button aria-controls='menu' onClick={handleClick}>Click me!</Button>
+    <Menu
+      open={Boolean(anchorEl)}
+      anchorEl={anchorEl}
+      onClose={handleClose}
+      id='menu'
+      variant='menu'
+    >
+      <MenuItem dense={false} onClick={handleClose}>
+        <p>Set the &quot;open&quot; property to
+          <code>true</code>
+          to force the menu to open.
+        </p>
+      </MenuItem>
+      <MenuItem dense={false} onClick={handleClose}>
+        <span>Click me!</span>
+      </MenuItem>
+      <MenuItem dense={false} onClick={handleClose}>
+        <span>Or me!</span>
+      </MenuItem>
+      <MenuItem dense={false} onClick={handleClose}>
+        <span>Or me!</span>
+      </MenuItem>
+    </Menu>
+  </div>
+);
 `;
 
 /**

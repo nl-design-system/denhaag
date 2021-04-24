@@ -20,45 +20,45 @@ export default {
 } as Meta;
 
 const Template: Story<TabProps> = (args: any) => {
-  const [value, setValue] = React.useState(0);
+const [value, setValue] = React.useState(0);
 
-  return (
-    <TabContext value={value.toString()}>
-      <Tabs
-        value={value}
-        onChange={(event: React.ChangeEvent<unknown>, newValue: number) => {
-          setValue(newValue);
-        }}
-      >
-        <Tab {...args} />
-        <Tab label="Another tab" value={1} />
-        <Tab label="Yet another tab" value={2} />
-      </Tabs>
-      <TabPanel value="1">Item One</TabPanel>
-      <TabPanel value="2">Item Two</TabPanel>
-      <TabPanel value="3">Item Three</TabPanel>
-    </TabContext>
-  );
+return (
+  <TabContext value={value.toString()}>
+    <Tabs
+      value={value}
+      onChange={(event: React.ChangeEvent<unknown>, newValue: number) => {
+        setValue(newValue);
+      }}
+    >
+      <Tab {...args} />
+      <Tab label="Another tab" value={1} />
+      <Tab label="Yet another tab" value={2} />
+    </Tabs>
+    <TabPanel value="1">Item One</TabPanel>
+    <TabPanel value="2">Item Two</TabPanel>
+    <TabPanel value="3">Item Three</TabPanel>
+  </TabContext>
+);
 };
 
 // language=JS
 const defaultCode = `
-  const [value, setValue] = React.useState(0);
+const [value, setValue] = React.useState(0);
 
-  return (
-    <TabContext value={value.toString()}>
-      <Tabs value={value} onChange={(event: React.ChangeEvent<unknown>, newValue: number) => {
-        setValue(newValue);
-      }}>
-        <Tab label="A tab" value={0}/>
-        <Tab label="Another tab" value={1}/>
-        <Tab label="Yet another tab" value={2}/>
-      </Tabs>
-      <TabPanel value="1">Item One</TabPanel>
-      <TabPanel value="2">Item Two</TabPanel>
-      <TabPanel value="3">Item Three</TabPanel>
-    </TabContext>
-  );
+return (
+  <TabContext value={value.toString()}>
+    <Tabs value={value} onChange={(event: React.ChangeEvent<unknown>, newValue: number) => {
+      setValue(newValue);
+    }}>
+      <Tab label="A tab" value={0}/>
+      <Tab label="Another tab" value={1}/>
+      <Tab label="Yet another tab" value={2}/>
+    </Tabs>
+    <TabPanel value="1">Item One</TabPanel>
+    <TabPanel value="2">Item Two</TabPanel>
+    <TabPanel value="3">Item Three</TabPanel>
+  </TabContext>
+);
 `;
 
 /**
@@ -79,22 +79,22 @@ Default.parameters = {
 
 // language=JS
 const disabledCode = `
-  const [value, setValue] = React.useState(0);
+const [value, setValue] = React.useState(0);
 
-  return (
-    <TabContext value={value.toString()}>
-      <Tabs value={value} onChange={(event: React.ChangeEvent<unknown>, newValue: number) => {
-        setValue(newValue);
-      }}>
-        <Tab label="A disabled tab" disabled value={0}/>
-        <Tab label="Another tab" value={1}/>
-        <Tab label="Yet another tab" value={2}/>
-      </Tabs>
-      <TabPanel value="1">Item One</TabPanel>
-      <TabPanel value="2">Item Two</TabPanel>
-      <TabPanel value="3">Item Three</TabPanel>
-    </TabContext>
-  );
+return (
+  <TabContext value={value.toString()}>
+    <Tabs value={value} onChange={(event: React.ChangeEvent<unknown>, newValue: number) => {
+      setValue(newValue);
+    }}>
+      <Tab label="A disabled tab" disabled value={0}/>
+      <Tab label="Another tab" value={1}/>
+      <Tab label="Yet another tab" value={2}/>
+    </Tabs>
+    <TabPanel value="1">Item One</TabPanel>
+    <TabPanel value="2">Item Two</TabPanel>
+    <TabPanel value="3">Item Three</TabPanel>
+  </TabContext>
+);
 `;
 
 /**
@@ -116,22 +116,22 @@ Disabled.parameters = {
 
 // language=JS
 const disabledRippleCode = `
-  const [value, setValue] = React.useState(0);
+const [value, setValue] = React.useState(0);
 
-  return (
-    <TabContext value={value.toString()}>
-      <Tabs value={value} onChange={(event: React.ChangeEvent<unknown>, newValue: number) => {
-        setValue(newValue);
-      }}>
-        <Tab disableFocusRipple disableRipple label="A disabled ripple tab" value={0}/>
-        <Tab label="Another tab" value={1}/>
-        <Tab label="Yet another tab" value={2}/>
-      </Tabs>
-      <TabPanel value="1">Item One</TabPanel>
-      <TabPanel value="2">Item Two</TabPanel>
-      <TabPanel value="3">Item Three</TabPanel>
-    </TabContext>
-  );
+return (
+  <TabContext value={value.toString()}>
+    <Tabs value={value} onChange={(event: React.ChangeEvent<unknown>, newValue: number) => {
+      setValue(newValue);
+    }}>
+      <Tab disableFocusRipple disableRipple label="A disabled ripple tab" value={0}/>
+      <Tab label="Another tab" value={1}/>
+      <Tab label="Yet another tab" value={2}/>
+    </Tabs>
+    <TabPanel value="1">Item One</TabPanel>
+    <TabPanel value="2">Item Two</TabPanel>
+    <TabPanel value="3">Item Three</TabPanel>
+  </TabContext>
+);
 `;
 
 /**
@@ -155,22 +155,22 @@ DisabledRipple.parameters = {
 
 // language=JS
 const wrappedCode = `
-  const [value, setValue] = React.useState(0);
+const [value, setValue] = React.useState(0);
 
-  return (
-    <TabContext value={value.toString()}>
-      <Tabs value={value} onChange={(event: React.ChangeEvent<unknown>, newValue: number) => {
-        setValue(newValue);
-      }}>
-        <Tab wrapped label="This label is very long since it needs to be wrapped around the tab" value={0}/>
-        <Tab label="Another tab" value={1}/>
-        <Tab label="Yet another tab" value={2}/>
-      </Tabs>
-      <TabPanel value="1">Item One</TabPanel>
-      <TabPanel value="2">Item Two</TabPanel>
-      <TabPanel value="3">Item Three</TabPanel>
-    </TabContext>
-  );
+return (
+  <TabContext value={value.toString()}>
+    <Tabs value={value} onChange={(event: React.ChangeEvent<unknown>, newValue: number) => {
+      setValue(newValue);
+    }}>
+      <Tab wrapped label="This label is very long since it needs to be wrapped around the tab" value={0}/>
+      <Tab label="Another tab" value={1}/>
+      <Tab label="Yet another tab" value={2}/>
+    </Tabs>
+    <TabPanel value="1">Item One</TabPanel>
+    <TabPanel value="2">Item Two</TabPanel>
+    <TabPanel value="3">Item Three</TabPanel>
+  </TabContext>
+);
 `;
 
 /**

@@ -40,24 +40,24 @@ const Template: Story<DrawerProps> = (args: DrawerProps) => {
 
 // language=JS
 const defaultCode = `
-  const [state, setState] = React.useState({
-    open: false
-  });
+const [state, setState] = React.useState({
+  open: false
+});
 
-  const toggleDrawer = (open: boolean) => {
-    setState({ open: open });
-  }
+const toggleDrawer = (open: boolean) => {
+  setState({ open: open });
+}
 
-  return (
-    <div>
-      <Button onClick={() => toggleDrawer(!state.open)}>OPEN DRAWER</Button>
-      <Drawer anchor={'left'} open={state.open} onClose={() => toggleDrawer(false)}>
-        <Button>I am a Button in a Drawer component!</Button>
-        <Button>Set the &quot;open&quot; property to false to close me.</Button>
-        <Button>Set the &quot;open&quot; property to true to open me.</Button>
-      </Drawer>
-    </div>
-  );
+return (
+  <div>
+    <Button onClick={() => toggleDrawer(!state.open)}>OPEN DRAWER</Button>
+    <Drawer anchor={'left'} open={state.open} onClose={() => toggleDrawer(false)}>
+      <Button>I am a Button in a Drawer component!</Button>
+      <Button>Set the &quot;open&quot; property to false to close me.</Button>
+      <Button>Set the &quot;open&quot; property to true to open me.</Button>
+    </Drawer>
+  </div>
+);
 `;
 
 /**
@@ -81,24 +81,24 @@ Default.parameters = {
 
 // language=JS
 const bottomCode = `
-  const [state, setState] = React.useState({
-    open: false
-  });
+const [state, setState] = React.useState({
+  open: false
+});
 
-  const toggleDrawer = (open: boolean) => {
-    setState({ open: open });
-  }
+const toggleDrawer = (open: boolean) => {
+  setState({ open: open });
+}
 
-  return (
-    <div>
-      <Button onClick={() => toggleDrawer(!state.open)}>OPEN DRAWER</Button>
-      <Drawer anchor={'bottom'} open={state.open} onClose={() => toggleDrawer(false)}>
-        <Button>I am a Button in a Drawer component!</Button>
-        <Button>Set the &quot;open&quot; property to false to close me.</Button>
-        <Button>Set the &quot;open&quot; property to true to open me.</Button>
-      </Drawer>
-    </div>
-  );
+return (
+  <div>
+    <Button onClick={() => toggleDrawer(!state.open)}>OPEN DRAWER</Button>
+    <Drawer anchor={'bottom'} open={state.open} onClose={() => toggleDrawer(false)}>
+      <Button>I am a Button in a Drawer component!</Button>
+      <Button>Set the &quot;open&quot; property to false to close me.</Button>
+      <Button>Set the &quot;open&quot; property to true to open me.</Button>
+    </Drawer>
+  </div>
+);
 `;
 
 /**
@@ -120,24 +120,24 @@ BottomDrawer.parameters = {
 
 // language=JS
 const topCode = `
-  const [state, setState] = React.useState({
-    open: false
-  });
+const [state, setState] = React.useState({
+  open: false
+});
 
-  const toggleDrawer = (open: boolean) => {
-    setState({ open: open });
-  }
+const toggleDrawer = (open: boolean) => {
+  setState({ open: open });
+}
 
-  return (
-    <div>
-      <Button onClick={() => toggleDrawer(!state.open)}>OPEN DRAWER</Button>
-      <Drawer anchor={'top'} open={state.open} onClose={() => toggleDrawer(false)}>
-        <Button>I am a Button in a Drawer component!</Button>
-        <Button>Set the &quot;open&quot; property to false to close me.</Button>
-        <Button>Set the &quot;open&quot; property to true to open me.</Button>
-      </Drawer>
-    </div>
-  );
+return (
+  <div>
+    <Button onClick={() => toggleDrawer(!state.open)}>OPEN DRAWER</Button>
+    <Drawer anchor={'top'} open={state.open} onClose={() => toggleDrawer(false)}>
+      <Button>I am a Button in a Drawer component!</Button>
+      <Button>Set the &quot;open&quot; property to false to close me.</Button>
+      <Button>Set the &quot;open&quot; property to true to open me.</Button>
+    </Drawer>
+  </div>
+);
 `;
 
 /**
@@ -159,24 +159,24 @@ TopDrawer.parameters = {
 
 // language=JS
 const rightCode = `
-  const [state, setState] = React.useState({
-    open: false
-  });
+const [state, setState] = React.useState({
+  open: false
+});
 
-  const toggleDrawer = (open: boolean) => {
-    setState({ open: open });
-  }
+const toggleDrawer = (open: boolean) => {
+  setState({ open: open });
+}
 
-  return (
-    <div>
-      <Button onClick={() => toggleDrawer(!state.open)}>OPEN DRAWER</Button>
-      <Drawer anchor={'right'} open={state.open} onClose={() => toggleDrawer(false)}>
-        <Button>I am a Button in a Drawer component!</Button>
-        <Button>Set the &quot;open&quot; property to false to close me.</Button>
-        <Button>Set the &quot;open&quot; property to true to open me.</Button>
-      </Drawer>
-    </div>
-  );
+return (
+  <div>
+    <Button onClick={() => toggleDrawer(!state.open)}>OPEN DRAWER</Button>
+    <Drawer anchor={'right'} open={state.open} onClose={() => toggleDrawer(false)}>
+      <Button>I am a Button in a Drawer component!</Button>
+      <Button>Set the &quot;open&quot; property to false to close me.</Button>
+      <Button>Set the &quot;open&quot; property to true to open me.</Button>
+    </Drawer>
+  </div>
+);
 `;
 
 /**
