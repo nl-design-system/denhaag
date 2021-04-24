@@ -32,16 +32,16 @@ const Template: Story<GridListTileBarProps> = (args: any) => (
 
 // language=JS
 const defaultCode = `
-  <GridList cols="{5}">
-    <GridListTile cols="{1}" rows="{2}">
-      <img src="{'static/media/logo.e029b128.svg'}" alt="The Hague municipality emblem" width="{150}"
-           height="{150}"/>
-      <GridListTileBar
-        actionIcon='{<IconButton aria-label="I am an IconButton!"><InfoIcon /></IconButton>}'
-        subtitle="I am a GridListTileBar!"
-        title="GridListTileBar" />
-    </GridListTile>
-  </GridList>
+<GridList cols="{5}">
+  <GridListTile cols="{1}" rows="{2}">
+    <img src="{'static/media/logo.e029b128.svg'}" alt="The Hague municipality emblem" width="{150}"
+         height="{150}"/>
+    <GridListTileBar
+      actionIcon='{<IconButton aria-label="I am an IconButton!"><InfoIcon /></IconButton>}'
+      subtitle="I am a GridListTileBar!"
+      title="GridListTileBar" />
+  </GridListTile>
+</GridList>
 `;
 
 /**
@@ -68,17 +68,17 @@ Default.parameters = {
 
 // language=JS
 const topCode = `
-  <GridList cols="{5}">
-    <GridListTile cols="{1}" rows="{2}">
-      <img src="{'static/media/logo.e029b128.svg'}" alt="The Hague municipality emblem" width="{150}"
-           height="{150}"/>
-      <GridListTileBar
-        actionIcon='{<IconButton aria-label="I am an IconButton!"><InfoIcon /></IconButton>}'
-        subtitle="I am a GridListTileBar!"
-        title="GridListTileBar"
-        titlePosition="top"/>
-    </GridListTile>
-  </GridList>
+<GridList cols="{5}">
+  <GridListTile cols="{1}" rows="{2}">
+    <img src="{'static/media/logo.e029b128.svg'}" alt="The Hague municipality emblem" width="{150}"
+         height="{150}"/>
+    <GridListTileBar
+      actionIcon='{<IconButton aria-label="I am an IconButton!"><InfoIcon /></IconButton>}'
+      subtitle="I am a GridListTileBar!"
+      title="GridListTileBar"
+      titlePosition="top"/>
+  </GridListTile>
+</GridList>
 `;
 
 /**
@@ -99,17 +99,17 @@ TopPosition.parameters = {
 
 // language=JS
 const buttonLeftCode = `
-  <GridList cols={5}>
-    <GridListTile cols={1} rows={2}>
-      <img src={'static/media/logo.e029b128.svg'} alt="The Hague municipality emblem" width={150} height={150}/>
-      <GridListTileBar
-        actionIcon='{<IconButton aria-label="I am an IconButton!"><InfoIcon /></IconButton>}'
-        subtitle="I am a GridListTileBar!"
-        title='GridListTileBar'
-        actionPosition='left'
-      />
-    </GridListTile>
-  </GridList>
+<GridList cols={5}>
+  <GridListTile cols={1} rows={2}>
+    <img src={'static/media/logo.e029b128.svg'} alt="The Hague municipality emblem" width={150} height={150}/>
+    <GridListTileBar
+      actionIcon='{<IconButton aria-label="I am an IconButton!"><InfoIcon /></IconButton>}'
+      subtitle="I am a GridListTileBar!"
+      title='GridListTileBar'
+      actionPosition='left'
+    />
+  </GridListTile>
+</GridList>
 `;
 
 /**
