@@ -24,11 +24,11 @@ const Template: Story<FormControlLabelProps> = (args: any) => (
 
 // language=JS
 const defaultCode = `
-  <FormControlLabel
-    label="Checkbox"
-    control='{<Checkbox onChange={} />}'
-    onChange='{() => {}}'
-  />
+<FormControlLabel
+  label="Checkbox"
+  control='{<Checkbox onChange={} />}'
+  onChange='{() => {}}'
+/>
 `;
 
 /**
@@ -45,12 +45,12 @@ Default.parameters = {
 
 // language=JS
 const startCode = `
-  <FormControlLabel
-    label="Checkbox"
-    labelPlacement="start"
-    control="{<Checkbox onChange={} />}"
-    onChange="{() => {}}"
-  />
+<FormControlLabel
+  label="Checkbox"
+  labelPlacement="start"
+  control="{<Checkbox onChange={} />}"
+  onChange="{() => {}}"
+/>
 `;
 
 /**
@@ -70,12 +70,12 @@ Start.parameters = {
 
 // language=JS
 const topCode = `
-  <FormControlLabel
-    label="Checkbox"
-    labelPlacement="top"
-    control="{<Checkbox onChange={} />}"
-    onChange="{() => {}}"
-  />
+<FormControlLabel
+  label="Checkbox"
+  labelPlacement="top"
+  control="{<Checkbox onChange={} />}"
+  onChange="{() => {}}"
+/>
 `;
 
 /**
@@ -96,12 +96,12 @@ Top.parameters = {
 
 // language=JS
 const bottomCode = `
-  <FormControlLabel
-    label="Checkbox"
-    labelPlacement="bottom"
-    control="{<Checkbox onChange={} />}"
-    onChange="{() => {}}"
-  />
+<FormControlLabel
+  label="Checkbox"
+  labelPlacement="bottom"
+  control="{<Checkbox onChange={} />}"
+  onChange="{() => {}}"
+/>
 `;
 
 /**
@@ -121,12 +121,12 @@ Bottom.parameters = {
 
 // language=JS
 const endCode = `
-  <FormControlLabel
-    label="Checkbox"
-    labelPlacement="end"
-    control="{<Checkbox onChange={} />}"
-    onChange="{() => {}}"
-  />
+<FormControlLabel
+  label="Checkbox"
+  labelPlacement="end"
+  control="{<Checkbox onChange={} />}"
+  onChange="{() => {}}"
+/>
 `;
 
 /**

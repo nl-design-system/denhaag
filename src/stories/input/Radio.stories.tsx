@@ -43,10 +43,10 @@ Secondary.args = {
 
 // language=JS
 const iconCode = `
-  <FormControlLabel
-    control={<Radio checkedIcon={<ThumbUpIcon/>} icon={<ThumbDownIcon/>} onChange={() => {}}/>}
-    label="Radio"
-  />
+ <FormControlLabel
+   control={<Radio checkedIcon={<ThumbUpIcon/>} icon={<ThumbDownIcon/>} onChange={() => {}}/>}
+   label="Radio"
+ />
 `;
 
 export const Icons: Story<RadioProps> = Template.bind({});

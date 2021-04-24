@@ -62,15 +62,15 @@ Inline.args = {
 
 // language=JS
 const inlineCode = `
-  import DateFnsUtils from "@date-io/date-fns";
+import DateFnsUtils from "@date-io/date-fns";
 
-  const [value, setValue] = React.useState("1970-01-01");
+const [value, setValue] = React.useState("1970-01-01");
 
-  <PickersUtilsProvider utils={DateFnsUtils}>
-    <DatePicker variant="inline" value={value} onChange={(newValue: any) => {
-      setValue(newValue);
-    }}/>
-  </PickersUtilsProvider>
+<PickersUtilsProvider utils={DateFnsUtils}>
+  <DatePicker variant="inline" value={value} onChange={(newValue: any) => {
+    setValue(newValue);
+  }}/>
+</PickersUtilsProvider>
 `;
 
 Inline.parameters = {
@@ -83,15 +83,15 @@ Inline.parameters = {
 
 // language=JS
 const staticCode = `
-  import DateFnsUtils from "@date-io/date-fns";
+import DateFnsUtils from "@date-io/date-fns";
 
-  const [value, setValue] = React.useState("1970-01-01");
+const [value, setValue] = React.useState("1970-01-01");
 
-  <PickersUtilsProvider utils={DateFnsUtils}>
-    <DatePicker variant="static" value={value} onChange={(newValue: any) => {
-      setValue(newValue);
-    }}/>
-  </PickersUtilsProvider>
+<PickersUtilsProvider utils={DateFnsUtils}>
+  <DatePicker variant="static" value={value} onChange={(newValue: any) => {
+    setValue(newValue);
+  }}/>
+</PickersUtilsProvider>
 `;
 
 /**

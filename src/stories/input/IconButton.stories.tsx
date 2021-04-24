@@ -25,9 +25,9 @@ const Template: Story<IconButtonProps> = (args: IconButtonProps) => (
 
 // language=JS
 const defaultCode = `
-  <IconButton>
-    <DeleteIcon/>
-  </IconButton>
+<IconButton>
+  <DeleteIcon/>
+</IconButton>
 `;
 
 /**
@@ -44,9 +44,9 @@ Default.parameters = {
 
 //language=JS
 const primaryCode = `
-  <IconButton color="primary">
-    <DeleteIcon/>
-  </IconButton>
+<IconButton color="primary">
+  <DeleteIcon/>
+</IconButton>
 `;
 
 /**
@@ -66,9 +66,9 @@ PrimaryColoured.parameters = {
 
 // language=JS
 const smallCode = `
-  <IconButton size="small">
-    <DeleteIcon/>
-  </IconButton>
+<IconButton size="small">
+  <DeleteIcon/>
+</IconButton>
 `;
 
 export const SmallSized = Template.bind({});

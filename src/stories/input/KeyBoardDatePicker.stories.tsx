@@ -32,21 +32,21 @@ const Template: Story<KeyboardDatePickerProps> = (args: any) => {
 
 // language=JS
 const defaultCode = `
-  import DateFnUtils from '@date-io/date-fns';
+import DateFnUtils from '@date-io/date-fns';
 
-  const [value, setValue] = React.useState('1970-01-01');
+const [value, setValue] = React.useState('1970-01-01');
 
-  <PickersUtilsProvider utils={DateFnUtils}>
-    <KeyboardDatePicker
-      value={value}
-      onChange={
-        (newValue: any) => {
-          setValue(newValue);
-        }
+<PickersUtilsProvider utils={DateFnUtils}>
+  <KeyboardDatePicker
+    value={value}
+    onChange={
+      (newValue: any) => {
+        setValue(newValue);
       }
-      clearable
-    />
-  </PickersUtilsProvider>
+    }
+    clearable
+  />
+</PickersUtilsProvider>
 `;
 
 /**
