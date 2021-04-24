@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { GridListTile } from "../../components/GridListTile";
+import GridListTile from "../../components/GridListTile";
 import GridList, { GridListProps } from "../../components/GridList";
 import pkg from "../../components/GridList/package.json";
 import imageFile from "../assets/logo.svg";
@@ -11,11 +11,11 @@ export default {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "code"
+        type: "dynamic",
       }
     }
   },
-  component: GridList,
+  component: GridList
 } as Meta;
 
 const Template: Story<GridListProps> = (args: any) => (

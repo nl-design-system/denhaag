@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { Stepper, StepperProps } from "../../components/Stepper";
+import Stepper, { StepperProps } from "../../components/Stepper";
 import Step from "../../components/Step";
 import StepLabel from "../../components/StepLabel";
 import StepContent from "../../components/StepContent";
@@ -12,7 +12,7 @@ export default {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "code"
+        type: "dynamic"
       }
     }
   },

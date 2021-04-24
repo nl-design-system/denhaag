@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { Link, LinkProps } from "../../components/Link";
+import Link, { LinkProps } from "../../components/Link";
 import pkg from "../../components/Link/package.json";
 
 export default {
@@ -9,7 +9,7 @@ export default {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "code"
+        type: "dynamic"
       }
     }
   },
@@ -17,7 +17,7 @@ export default {
 } as Meta;
 
 const Template: Story<LinkProps> = (args: unknown) => (
-  <Link {...args} target="_blank" href={"https://www.youtube.com/watch?v=2ocykBzWDiM"}>
+  <Link {...args} target="_blank" href={"https://www.youtube.com/watch?v=dQw4w9WgXcQ&autoplay=1"}>
     Click me!
   </Link>
 );

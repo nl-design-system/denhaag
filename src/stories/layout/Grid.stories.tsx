@@ -9,11 +9,11 @@ export default {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "code"
+        type: "dynamic",
       }
     }
   },
-  component: Grid,
+  component: Grid
 } as Meta;
 
 const Template: Story<GridProps> = (args: any) => (
@@ -34,7 +34,7 @@ export const Default = Template.bind({});
  */
 export const ContainerGrid = Template.bind({});
 ContainerGrid.args = {
-  container: true,
+  container: true
 };
 
 /**
@@ -42,5 +42,5 @@ ContainerGrid.args = {
  */
 export const ZeroMinWidthGrid = Template.bind({});
 ZeroMinWidthGrid.args = {
-  zeroMinWidth: true,
+  zeroMinWidth: true
 };
