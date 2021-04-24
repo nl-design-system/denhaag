@@ -1,15 +1,20 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import Stepper, { StepperProps } from "../../components/Stepper";
-import Step from "../../components/Step";
-import StepLabel from "../../components/StepLabel";
-import StepContent from "../../components/StepContent";
-import pkg from "../../components/Stepper/package.json";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import Stepper, { StepperProps } from '../../components/Stepper';
+import Step from '../../components/Step';
+import StepLabel from '../../components/StepLabel';
+import StepContent from '../../components/StepContent';
+import pkg from '../../components/Stepper/package.json';
 
 export default {
-  title: "Components/navigation/Stepper",
+  title: 'Components/navigation/Stepper',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: 'dynamic',
+      },
+    },
   },
   component: Stepper,
 } as Meta;
@@ -60,7 +65,7 @@ Default.args = {
 export const VerticalOrientation = Template.bind({});
 VerticalOrientation.args = {
   activeStep: 0,
-  orientation: "vertical",
+  orientation: 'vertical',
 };
 
 /**

@@ -1,20 +1,25 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import Divider, { DividerProps } from "../../components/Divider";
-import pkg from "../../components/Divider/package.json";
-import List, { ListItem, ListItemIcon, ListItemText } from "../../components/List";
-import InboxIcon from "@material-ui/icons/Inbox";
-import DraftsIcon from "@material-ui/icons/Drafts";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import { Divider, DividerProps } from '../../components/Divider';
+import pkg from '../../components/Divider/package.json';
+import { List, ListItem, ListItemIcon, ListItemText } from '../../components/List';
+import InboxIcon from '@material-ui/icons/Inbox';
+import DraftsIcon from '@material-ui/icons/Drafts';
 
 export default {
-  title: "Components/Data Display/Divider",
+  title: 'Components/Data Display/Divider',
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: 'dynamic',
+      },
+    },
   },
-  component: Divider
+  component: Divider,
 } as Meta;
 
-const Template: Story<DividerProps> = (args: any) => (
+const Template: Story<DividerProps> = (args: DividerProps) => (
   <List>
     <ListItem button>
       <ListItemIcon>
@@ -32,17 +37,107 @@ const Template: Story<DividerProps> = (args: any) => (
   </List>
 );
 
+// language=JS
+const defaultCode = `
+<List>
+  <ListItem button>
+    <ListItemIcon>
+      <InboxIcon/>
+    </ListItemIcon>
+    <ListItemText primary="I am above the divider."/>
+  </ListItem>
+  <Divider/>
+  <ListItem button>
+    <ListItemIcon>
+      <DraftsIcon/>
+    </ListItemIcon>
+    <ListItemText primary="I am under the divider."/>
+  </ListItem>
+</List>
+`;
+
+// language=JS
+const insetCode = `
+<List>
+  <ListItem button>
+    <ListItemIcon>
+      <InboxIcon/>
+    </ListItemIcon>
+    <ListItemText primary="I am above the divider."/>
+  </ListItem>
+  <Divider variant="inset"/>
+  <ListItem button>
+    <ListItemIcon>
+      <DraftsIcon/>
+    </ListItemIcon>
+    <ListItemText primary="I am under the divider."/>
+  </ListItem>
+</List>
+`;
+
+// language=JS
+const lightCode = `
+<List>
+  <ListItem button>
+    <ListItemIcon>
+      <InboxIcon/>
+    </ListItemIcon>
+    <ListItemText primary="I am above the divider."/>
+  </ListItem>
+  <Divider light/>
+  <ListItem button>
+    <ListItemIcon>
+      <DraftsIcon/>
+    </ListItemIcon>
+    <ListItemText primary="I am under the divider."/>
+  </ListItem>
+</List>
+`;
+
+// language=JS
+const absoluteCode = `
+<List>
+  <ListItem button>
+    <ListItemIcon>
+      <InboxIcon/>
+    </ListItemIcon>
+    <ListItemText primary="I am above the divider."/>
+  </ListItem>
+  <Divider absolute/>
+  <ListItem button>
+    <ListItemIcon>
+      <DraftsIcon/>
+    </ListItemIcon>
+    <ListItemText primary="I am under the divider."/>
+  </ListItem>
+</List>
+`;
+
 /**
  * Implementation of Divider.
  */
 export const Default = Template.bind({});
+Default.parameters = {
+  docs: {
+    source: {
+      code: defaultCode,
+    },
+  },
+};
 
 /**
  * Divider in the inset variant.
  */
 export const InsetVariant = Template.bind({});
 InsetVariant.args = {
-  variant: "inset"
+  variant: 'inset',
+};
+InsetVariant.parameters = {
+  docs: {
+    source: {
+      code: insetCode,
+    },
+  },
 };
 
 /**
@@ -50,7 +145,14 @@ InsetVariant.args = {
  */
 export const LightColoured = Template.bind({});
 LightColoured.args = {
-  light: true
+  light: true,
+};
+LightColoured.parameters = {
+  docs: {
+    source: {
+      code: lightCode,
+    },
+  },
 };
 
 /**
@@ -58,5 +160,12 @@ LightColoured.args = {
  */
 export const AbsolutePosition = Template.bind({});
 AbsolutePosition.args = {
-  absolute: true
+  absolute: true,
+};
+AbsolutePosition.parameters = {
+  docs: {
+    source: {
+      code: absoluteCode,
+    },
+  },
 };
