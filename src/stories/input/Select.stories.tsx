@@ -1,21 +1,21 @@
-import React from "react";
-import { Meta } from "@storybook/react";
-import { createStyles, makeStyles, Theme } from "@material-ui/core";
-import pkg from "../../components/Select/package.json";
-import Select, { SelectProps } from "../../components/Select";
-import FormControl from "../../components/FormControl";
-import InputLabel from "../../components/InputLabel";
-import MenuItem from "../../components/MenuItem";
+import React from 'react';
+import { Meta } from '@storybook/react';
+import { createStyles, makeStyles, Theme } from '@material-ui/core';
+import pkg from '../../components/Select/package.json';
+import Select, { SelectProps } from '../../components/Select';
+import FormControl from '../../components/FormControl';
+import InputLabel from '../../components/InputLabel';
+import MenuItem from '../../components/MenuItem';
 
 export default {
-  title: "Components/Input/Select",
+  title: 'Components/Input/Select',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "dynamic"
-      }
-    }
+        type: 'dynamic',
+      },
+    },
   },
   component: Select,
 } as Meta;
@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme: Theme) =>
       margin: theme.spacing(1),
       minWidth: 120,
     },
-  })
+  }),
 );
 
 export function DefaultSelect(props: SelectProps): React.ReactElement {

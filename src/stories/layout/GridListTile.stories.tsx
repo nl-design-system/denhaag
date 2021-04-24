@@ -1,20 +1,20 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import GridList from "../../components/GridList";
-import GridListTile, { GridListTileProps } from "../../components/GridListTile";
-import pkg from "../../components/GridListTile/package.json";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import GridList from '../../components/GridList';
+import GridListTile, { GridListTileProps } from '../../components/GridListTile';
+import pkg from '../../components/GridListTile/package.json';
 
 export default {
-  title: "Components/Layout/GridList/GridListTile",
+  title: 'Components/Layout/GridList/GridListTile',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "dynamic",
-      }
-    }
+        type: 'dynamic',
+      },
+    },
   },
-  component: GridListTile
+  component: GridListTile,
 } as Meta;
 
 const Template: Story<GridListTileProps> = (args: any) => (

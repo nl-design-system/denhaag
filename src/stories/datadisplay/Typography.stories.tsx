@@ -1,19 +1,19 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import Typography, { TypographyProps } from "../../components/Typography";
-import pkg from "../../components/Typography/package.json";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import Typography, { TypographyProps } from '../../components/Typography';
+import pkg from '../../components/Typography/package.json';
 
 export default {
-  title: "Components/Data Display/Typography",
+  title: 'Components/Data Display/Typography',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "dynamic"
-      }
-    }
+        type: 'dynamic',
+      },
+    },
   },
-  component: Typography
+  component: Typography,
 } as Meta;
 
 const Template: Story<TypographyProps> = (args: TypographyProps) => (
@@ -33,7 +33,7 @@ export const Default = Template.bind({});
  */
 export const Heading = Template.bind({});
 Heading.args = {
-  variant: "h1"
+  variant: 'h1',
 };
 
 /**
@@ -41,7 +41,7 @@ Heading.args = {
  */
 export const noWrap = Template.bind({});
 noWrap.args = {
-  noWrap: true
+  noWrap: true,
 };
 
 /**
@@ -49,7 +49,7 @@ noWrap.args = {
  */
 export const Centered = Template.bind({});
 Centered.args = {
-  align: "center"
+  align: 'center',
 };
 
 /**
@@ -57,5 +57,5 @@ Centered.args = {
  */
 export const Paragraphed = Template.bind({});
 Paragraphed.args = {
-  paragraph: true
+  paragraph: true,
 };

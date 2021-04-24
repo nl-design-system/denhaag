@@ -1,18 +1,18 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import Tab, { TabProps } from "../../components/Tab";
-import pkg from "../../components/Tab/package.json";
-import TabContext from "../../components/TabContext";
-import Tabs from "../../components/Tabs";
-import TabPanel from "../../components/TabPanel";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import Tab, { TabProps } from '../../components/Tab';
+import pkg from '../../components/Tab/package.json';
+import TabContext from '../../components/TabContext';
+import Tabs from '../../components/Tabs';
+import TabPanel from '../../components/TabPanel';
 
 export default {
-  title: "Components/Navigation/Tabs/Tab",
+  title: 'Components/Navigation/Tabs/Tab',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "dynamic",
+        type: 'dynamic',
       },
     },
   },
@@ -20,25 +20,25 @@ export default {
 } as Meta;
 
 const Template: Story<TabProps> = (args: any) => {
-const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState(0);
 
-return (
-  <TabContext value={value.toString()}>
-    <Tabs
-      value={value}
-      onChange={(event: React.ChangeEvent<unknown>, newValue: number) => {
-        setValue(newValue);
-      }}
-    >
-      <Tab {...args} />
-      <Tab label="Another tab" value={1} />
-      <Tab label="Yet another tab" value={2} />
-    </Tabs>
-    <TabPanel value="1">Item One</TabPanel>
-    <TabPanel value="2">Item Two</TabPanel>
-    <TabPanel value="3">Item Three</TabPanel>
-  </TabContext>
-);
+  return (
+    <TabContext value={value.toString()}>
+      <Tabs
+        value={value}
+        onChange={(event: React.ChangeEvent<unknown>, newValue: number) => {
+          setValue(newValue);
+        }}
+      >
+        <Tab {...args} />
+        <Tab label="Another tab" value={1} />
+        <Tab label="Yet another tab" value={2} />
+      </Tabs>
+      <TabPanel value="1">Item One</TabPanel>
+      <TabPanel value="2">Item Two</TabPanel>
+      <TabPanel value="3">Item Three</TabPanel>
+    </TabContext>
+  );
 };
 
 // language=JS
@@ -66,7 +66,7 @@ return (
  */
 export const Default = Template.bind({});
 Default.args = {
-  label: "A tab",
+  label: 'A tab',
 };
 
 Default.parameters = {
@@ -102,7 +102,7 @@ return (
  */
 export const Disabled = Template.bind({});
 Disabled.args = {
-  label: "A disabled tab",
+  label: 'A disabled tab',
   disabled: true,
 };
 
@@ -139,7 +139,7 @@ return (
  */
 export const DisabledRipple = Template.bind({});
 DisabledRipple.args = {
-  label: "A disabled ripple tab",
+  label: 'A disabled ripple tab',
   disableRipple: true,
   disableFocusRipple: true,
 };
@@ -178,7 +178,7 @@ return (
  */
 export const Wrapped = Template.bind({});
 Wrapped.args = {
-  label: "This label is very long since it needs to be wrapped around the tab",
+  label: 'This label is very long since it needs to be wrapped around the tab',
   wrapped: true,
 };
 

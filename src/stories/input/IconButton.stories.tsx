@@ -1,20 +1,20 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import { IconButton, IconButtonProps } from "../../components/IconButton";
-import DeleteIcon from "@material-ui/icons/Delete";
-import pkg from "../../components/IconButton/package.json";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import { IconButton, IconButtonProps } from '../../components/IconButton';
+import DeleteIcon from '@material-ui/icons/Delete';
+import pkg from '../../components/IconButton/package.json';
 
 export default {
-  title: "Components/Input/IconButton",
+  title: 'Components/Input/IconButton',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "dynamic"
-      }
-    }
+        type: 'dynamic',
+      },
+    },
   },
-  component: IconButton
+  component: IconButton,
 } as Meta;
 
 const Template: Story<IconButtonProps> = (args: IconButtonProps) => (
@@ -37,9 +37,9 @@ export const Default = Template.bind({});
 Default.parameters = {
   docs: {
     source: {
-      code: defaultCode
-    }
-  }
+      code: defaultCode,
+    },
+  },
 };
 
 //language=JS
@@ -54,14 +54,14 @@ const primaryCode = `
  */
 export const PrimaryColoured = Template.bind({});
 PrimaryColoured.args = {
-  color: "primary"
+  color: 'primary',
 };
 PrimaryColoured.parameters = {
   docs: {
     source: {
-      code: primaryCode
-    }
-  }
+      code: primaryCode,
+    },
+  },
 };
 
 // language=JS
@@ -73,12 +73,12 @@ const smallCode = `
 
 export const SmallSized = Template.bind({});
 SmallSized.args = {
-  size: "small"
+  size: 'small',
 };
 SmallSized.parameters = {
   docs: {
     source: {
-      code: smallCode
-    }
-  }
+      code: smallCode,
+    },
+  },
 };

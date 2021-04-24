@@ -1,16 +1,16 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import { Drawer, DrawerProps } from "../../components/Drawer";
-import Button from "../../components/Button";
-import pkg from "../../components/Drawer/package.json";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import { Drawer, DrawerProps } from '../../components/Drawer';
+import Button from '../../components/Button';
+import pkg from '../../components/Drawer/package.json';
 
 export default {
-  title: "Components/Navigation/Drawer",
+  title: 'Components/Navigation/Drawer',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "dynamic",
+        type: 'dynamic',
       },
     },
   },
@@ -67,7 +67,7 @@ return (
 export const Default = Template.bind({});
 Default.args = {
   open: false,
-  anchor: "left",
+  anchor: 'left',
 };
 
 Default.parameters = {
@@ -107,7 +107,7 @@ return (
 export const BottomDrawer = Template.bind({});
 BottomDrawer.args = {
   open: false,
-  anchor: "bottom",
+  anchor: 'bottom',
 };
 
 BottomDrawer.parameters = {
@@ -146,7 +146,7 @@ return (
 export const TopDrawer = Template.bind({});
 TopDrawer.args = {
   open: false,
-  anchor: "top",
+  anchor: 'top',
 };
 TopDrawer.parameters = {
   docs: {
@@ -185,7 +185,7 @@ return (
 export const RightDrawer = Template.bind({});
 RightDrawer.args = {
   open: false,
-  anchor: "right",
+  anchor: 'right',
 };
 
 RightDrawer.parameters = {

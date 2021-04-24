@@ -1,18 +1,18 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import MenuList, { MenuListProps } from "../../components/MenuList";
-import MenuItem from "../../components/MenuItem";
-import pkg from "../../components/MenuList/package.json";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import MenuList, { MenuListProps } from '../../components/MenuList';
+import MenuItem from '../../components/MenuItem';
+import pkg from '../../components/MenuList/package.json';
 
 export default {
-  title: "Components/Navigation/Menu/MenuList",
+  title: 'Components/Navigation/Menu/MenuList',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "dynamic"
-      }
-    }
+        type: 'dynamic',
+      },
+    },
   },
   component: MenuList,
 } as Meta;
@@ -35,5 +35,5 @@ export const Default = Template.bind({});
  */
 export const MenuVariant = Template.bind({});
 MenuVariant.args = {
-  variant: "menu",
+  variant: 'menu',
 };

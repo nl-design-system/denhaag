@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react';
 // also exported from '@storybook/react' if you can deal with breaking changes in 6.1
-import { Meta, Story } from "@storybook/react/types-6-0";
-import Checkbox from "../../components/Checkbox/Checkbox";
-import FormControlLabel, { FormControlLabelProps } from "../../components/FormControlLabel";
-import pkg from "../../components/FormControlLabel/package.json";
+import { Meta, Story } from '@storybook/react/types-6-0';
+import Checkbox from '../../components/Checkbox/Checkbox';
+import FormControlLabel, { FormControlLabelProps } from '../../components/FormControlLabel';
+import pkg from '../../components/FormControlLabel/package.json';
 
 export default {
-  title: "Components/Input/FormControlLabel",
+  title: 'Components/Input/FormControlLabel',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "dynamic",
+        type: 'dynamic',
       },
     },
   },
@@ -58,7 +58,7 @@ const startCode = `
  */
 export const Start: Story<FormControlLabelProps> = Template.bind({});
 Start.args = {
-  labelPlacement: "start",
+  labelPlacement: 'start',
 };
 Start.parameters = {
   docs: {
@@ -83,7 +83,7 @@ const topCode = `
  */
 export const Top: Story<FormControlLabelProps> = Template.bind({});
 Top.args = {
-  labelPlacement: "top",
+  labelPlacement: 'top',
 };
 
 Top.parameters = {
@@ -109,7 +109,7 @@ const bottomCode = `
  */
 export const Bottom: Story<FormControlLabelProps> = Template.bind({});
 Bottom.args = {
-  labelPlacement: "bottom",
+  labelPlacement: 'bottom',
 };
 Bottom.parameters = {
   docs: {
@@ -134,7 +134,7 @@ const endCode = `
  */
 export const End: Story<FormControlLabelProps> = Template.bind({});
 End.args = {
-  labelPlacement: "end",
+  labelPlacement: 'end',
 };
 
 End.parameters = {

@@ -1,23 +1,23 @@
-import React from "react";
-import { Story, Meta } from "@storybook/react";
+import React from 'react';
+import { Story, Meta } from '@storybook/react';
 import {
   KeyboardDatePicker,
-  KeyboardDatePickerProps
-} from "../../components/Pickers/KeyboardDatePicker/KeyboardDatePicker";
-import { PickersUtilsProvider } from "../../components/PickersUtilsProvider";
-import DateFnsUtils from "@date-io/date-fns";
-import pkg from "../../components/Pickers/package.json";
+  KeyboardDatePickerProps,
+} from '../../components/Pickers/KeyboardDatePicker/KeyboardDatePicker';
+import { PickersUtilsProvider } from '../../components/PickersUtilsProvider';
+import DateFnsUtils from '@date-io/date-fns';
+import pkg from '../../components/Pickers/package.json';
 
 export default {
-  title: "Components/Input/KeyboardDatePicker",
+  title: 'Components/Input/KeyboardDatePicker',
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
   },
-  component: KeyboardDatePicker
+  component: KeyboardDatePicker,
 } as Meta;
 
 const Template: Story<KeyboardDatePickerProps> = (args: any) => {
-  const [value, setValue] = React.useState("1970-01-01");
+  const [value, setValue] = React.useState('1970-01-01');
   args.onChange = (newValue: any) => {
     setValue(newValue);
   };
@@ -54,12 +54,12 @@ const [value, setValue] = React.useState('1970-01-01');
  */
 export const Default: Story<KeyboardDatePickerProps> = Template.bind({});
 Default.args = {
-  clearable: true
+  clearable: true,
 };
 Default.parameters = {
   docs: {
     source: {
-      code: defaultCode
-    }
-  }
+      code: defaultCode,
+    },
+  },
 };

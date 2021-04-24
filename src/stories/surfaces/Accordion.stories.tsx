@@ -1,19 +1,19 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import { ExpandMore } from "@material-ui/icons";
-import Accordion, { AccordionProps } from "../../components/Accordion";
-import AccordionSummary from "../../components/AccordionSummary";
-import Typography from "../../components/Typography";
-import AccordionDetails from "../../components/AccordionDetails";
-import pkg from "../../components/Accordion/package.json";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import { ExpandMore } from '@material-ui/icons';
+import Accordion, { AccordionProps } from '../../components/Accordion';
+import AccordionSummary from '../../components/AccordionSummary';
+import Typography from '../../components/Typography';
+import AccordionDetails from '../../components/AccordionDetails';
+import pkg from '../../components/Accordion/package.json';
 
 export default {
-  title: "Components/Surfaces/Accordion",
+  title: 'Components/Surfaces/Accordion',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "dynamic",
+        type: 'dynamic',
       },
     },
   },

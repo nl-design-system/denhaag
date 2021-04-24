@@ -1,24 +1,24 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import MenuIcon from "@material-ui/icons/Menu";
-import { AppBar, AppBarProps } from "../../components/AppBar";
-import pkg from "../../components/AppBar/package.json";
-import Toolbar from "../../components/Toolbar/Toolbar";
-import IconButton from "../../components/IconButton";
-import Typography from "../../components/Typography";
-import Button from "../../components/Button";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import MenuIcon from '@material-ui/icons/Menu';
+import { AppBar, AppBarProps } from '../../components/AppBar';
+import pkg from '../../components/AppBar/package.json';
+import Toolbar from '../../components/Toolbar/Toolbar';
+import IconButton from '../../components/IconButton';
+import Typography from '../../components/Typography';
+import Button from '../../components/Button';
 
 export default {
-  title: "Components/Surfaces/AppBar",
+  title: 'Components/Surfaces/AppBar',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "dynamic"
-      }
-    }
+        type: 'dynamic',
+      },
+    },
   },
-  component: AppBar
+  component: AppBar,
 } as Meta;
 
 const Template: Story<AppBarProps> = (args: any) => {
@@ -53,15 +53,15 @@ const defaultCode = `
  */
 export const Default = Template.bind({});
 Default.args = {
-  position: "relative"
+  position: 'relative',
 };
 
 Default.parameters = {
   docs: {
     source: {
-      code: defaultCode
-    }
-  }
+      code: defaultCode,
+    },
+  },
 };
 
 // language=JS
@@ -82,15 +82,15 @@ const staticCode = `
  */
 export const StaticPosition = Template.bind({});
 StaticPosition.args = {
-  position: "static"
+  position: 'static',
 };
 
 StaticPosition.parameters = {
   docs: {
     source: {
-      code: staticCode
-    }
-  }
+      code: staticCode,
+    },
+  },
 };
 
 // language=JS
@@ -111,13 +111,13 @@ const secondaryCode = `
  */
 export const SecondaryColoured = Template.bind({});
 SecondaryColoured.args = {
-  position: "static",
-  color: "secondary"
+  position: 'static',
+  color: 'secondary',
 };
 SecondaryColoured.parameters = {
   docs: {
     source: {
-      code: secondaryCode
-    }
-  }
+      code: secondaryCode,
+    },
+  },
 };

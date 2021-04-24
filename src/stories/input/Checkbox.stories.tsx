@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react';
 // also exported from '@storybook/react' if you can deal with breaking changes in 6.1
-import { Story, Meta } from "@storybook/react/types-6-0";
-import Checkbox, { CheckboxProps } from "../../components/Checkbox";
-import FormControlLabel from "../../components/FormControlLabel";
-import pkg from "../../components/Checkbox/package.json";
+import { Story, Meta } from '@storybook/react/types-6-0';
+import Checkbox, { CheckboxProps } from '../../components/Checkbox';
+import FormControlLabel from '../../components/FormControlLabel';
+import pkg from '../../components/Checkbox/package.json';
 
 export default {
-  title: "Components/Input/Checkbox",
+  title: 'Components/Input/Checkbox',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "dynamic",
+        type: 'dynamic',
       },
     },
   },
@@ -88,7 +88,7 @@ Default.parameters = {
  */
 export const Primary: Story<CheckboxProps> = Template.bind({});
 Primary.args = {
-  color: "primary",
+  color: 'primary',
 };
 
 Primary.parameters = {
@@ -104,7 +104,7 @@ Primary.parameters = {
  */
 export const Secondary: Story<CheckboxProps> = Template.bind({});
 Secondary.args = {
-  color: "secondary",
+  color: 'secondary',
 };
 
 Secondary.parameters = {
@@ -136,7 +136,7 @@ CheckedByDefault.parameters = {
  */
 export const Small: Story<CheckboxProps> = Template.bind({});
 Small.args = {
-  size: "small",
+  size: 'small',
 };
 
 Small.parameters = {

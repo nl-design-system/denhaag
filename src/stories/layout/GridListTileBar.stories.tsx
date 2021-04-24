@@ -1,24 +1,24 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import InfoIcon from "@material-ui/icons/Info";
-import IconButton from "../../components/IconButton";
-import GridListTileBar, { GridListTileBarProps } from "../../components/GridListTileBar";
-import GridListTile from "../../components/GridListTile";
-import GridList from "../../components/GridList";
-import pkg from "../../components/GridListTileBar/package.json";
-import imageFile from "../assets/logo.svg";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import InfoIcon from '@material-ui/icons/Info';
+import IconButton from '../../components/IconButton';
+import GridListTileBar, { GridListTileBarProps } from '../../components/GridListTileBar';
+import GridListTile from '../../components/GridListTile';
+import GridList from '../../components/GridList';
+import pkg from '../../components/GridListTileBar/package.json';
+import imageFile from '../assets/logo.svg';
 
 export default {
-  title: "Components/Layout/GridList/GridListTile/GridListTileBar",
+  title: 'Components/Layout/GridList/GridListTile/GridListTileBar',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "dynamic"
-      }
-    }
+        type: 'dynamic',
+      },
+    },
   },
-  component: GridListTileBar
+  component: GridListTileBar,
 } as Meta;
 
 const Template: Story<GridListTileBarProps> = (args: any) => (
@@ -54,16 +54,16 @@ Default.args = {
       <InfoIcon />
     </IconButton>
   ),
-  title: "GridListTileBar",
-  subtitle: "I am a GridListTileBar!"
+  title: 'GridListTileBar',
+  subtitle: 'I am a GridListTileBar!',
 };
 
 Default.parameters = {
   docs: {
     source: {
-      code: defaultCode
-    }
-  }
+      code: defaultCode,
+    },
+  },
 };
 
 // language=JS
@@ -87,14 +87,14 @@ const topCode = `
 export const TopPosition = Template.bind({});
 TopPosition.args = {
   ...Default.args,
-  titlePosition: "top"
+  titlePosition: 'top',
 };
 TopPosition.parameters = {
   docs: {
     source: {
-      code: topCode
-    }
-  }
+      code: topCode,
+    },
+  },
 };
 
 // language=JS
@@ -118,12 +118,12 @@ const buttonLeftCode = `
 export const ButtonLeft = Template.bind({});
 ButtonLeft.args = {
   ...Default.args,
-  actionPosition: "left"
+  actionPosition: 'left',
 };
 ButtonLeft.parameters = {
   docs: {
     source: {
-      code: buttonLeftCode
-    }
-  }
+      code: buttonLeftCode,
+    },
+  },
 };

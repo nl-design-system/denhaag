@@ -1,17 +1,17 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import Box, { BoxProps } from "../../components/Box";
-import pkg from "../../components/Box/package.json";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import Box, { BoxProps } from '../../components/Box';
+import pkg from '../../components/Box/package.json';
 
 export default {
-  title: "Components/Layout/Box",
+  title: 'Components/Layout/Box',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "dynamic"
-      }
-    }
+        type: 'dynamic',
+      },
+    },
   },
   component: Box,
 } as Meta;

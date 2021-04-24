@@ -1,20 +1,20 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import ButtonGroup, { ButtonGroupProps } from "../../components/ButtonGroup";
-import pkg from "../../components/ButtonGroup/package.json";
-import Button from "../../components/Button";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import ButtonGroup, { ButtonGroupProps } from '../../components/ButtonGroup';
+import pkg from '../../components/ButtonGroup/package.json';
+import Button from '../../components/Button';
 
 export default {
-  title: "Components/Input/ButtonGroup",
+  title: 'Components/Input/ButtonGroup',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "dynamic"
-      }
-    }
+        type: 'dynamic',
+      },
+    },
   },
-  component: ButtonGroup
+  component: ButtonGroup,
 } as Meta;
 
 const Template: Story<ButtonGroupProps> = (args: ButtonGroupProps) => (
@@ -35,7 +35,7 @@ export const Default = Template.bind({});
  */
 export const DisabledGroup = Template.bind({});
 DisabledGroup.args = {
-  disabled: true
+  disabled: true,
 };
 
 /**
@@ -43,7 +43,7 @@ DisabledGroup.args = {
  */
 export const FullWidth = Template.bind({});
 FullWidth.args = {
-  fullWidth: true
+  fullWidth: true,
 };
 
 /**
@@ -51,7 +51,7 @@ FullWidth.args = {
  */
 export const SecondaryColoured = Template.bind({});
 SecondaryColoured.args = {
-  color: "secondary"
+  color: 'secondary',
 };
 
 /**
@@ -59,7 +59,7 @@ SecondaryColoured.args = {
  */
 export const VerticalOriented = Template.bind({});
 VerticalOriented.args = {
-  orientation: "vertical"
+  orientation: 'vertical',
 };
 
 /**
@@ -67,5 +67,5 @@ VerticalOriented.args = {
  */
 export const Textual = Template.bind({});
 Textual.args = {
-  variant: "text"
+  variant: 'text',
 };

@@ -1,18 +1,18 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import { Divider, DividerProps } from "../../components/Divider";
-import pkg from "../../components/Divider/package.json";
-import { List, ListItem, ListItemIcon, ListItemText } from "../../components/List";
-import InboxIcon from "@material-ui/icons/Inbox";
-import DraftsIcon from "@material-ui/icons/Drafts";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import { Divider, DividerProps } from '../../components/Divider';
+import pkg from '../../components/Divider/package.json';
+import { List, ListItem, ListItemIcon, ListItemText } from '../../components/List';
+import InboxIcon from '@material-ui/icons/Inbox';
+import DraftsIcon from '@material-ui/icons/Drafts';
 
 export default {
-  title: "Components/Data Display/Divider",
+  title: 'Components/Data Display/Divider',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "dynamic",
+        type: 'dynamic',
       },
     },
   },
@@ -130,7 +130,7 @@ Default.parameters = {
  */
 export const InsetVariant = Template.bind({});
 InsetVariant.args = {
-  variant: "inset",
+  variant: 'inset',
 };
 InsetVariant.parameters = {
   docs: {

@@ -1,17 +1,17 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import { Menu, MenuProps } from "../../components/Menu";
-import MenuItem from "../../components/MenuItem";
-import pkg from "../../components/Menu/package.json";
-import Button from "../../components/Button/Button";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import { Menu, MenuProps } from '../../components/Menu';
+import MenuItem from '../../components/MenuItem';
+import pkg from '../../components/Menu/package.json';
+import Button from '../../components/Button/Button';
 
 export default {
-  title: "Components/Navigation/Menu",
+  title: 'Components/Navigation/Menu',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "dynamic",
+        type: 'dynamic',
       },
     },
   },
@@ -147,7 +147,7 @@ return (
 export const MenuVariant = Template.bind({});
 MenuVariant.args = {
   open: opened,
-  variant: "menu",
+  variant: 'menu',
 };
 
 MenuVariant.parameters = {
