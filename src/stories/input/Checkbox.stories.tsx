@@ -24,51 +24,51 @@ const Template: Story<CheckboxProps> = (args: any) => (
 
 // language=JS
 const defaultCode = `
-  <FormControlLabel label='Checkbox'>
-    <Checkbox onChange='{}'/>
-  </FormControlLabel>
+<FormControlLabel label='Checkbox'>
+  <Checkbox onChange='{}'/>
+</FormControlLabel>
 `;
 
 // language=JS
 const primaryCode = `
-  <FormControlLabel label="Checkbox">
-    <Checkbox onChange="{}" color="primary"/>
-  </FormControlLabel>
+<FormControlLabel label="Checkbox">
+  <Checkbox onChange="{}" color="primary"/>
+</FormControlLabel>
 `;
 
 // language=JS
 const secondaryCode = `
-  <FormControlLabel label="Checkbox">
-    <Checkbox onChange="{}" color="secondary"/>
-  </FormControlLabel>
+<FormControlLabel label="Checkbox">
+  <Checkbox onChange="{}" color="secondary"/>
+</FormControlLabel>
 `;
 
 // language=JS
 const checkedDefault = `
-  <FormControlLabel label="Checkbox">
-    <Checkbox onChange="{}" defaultChecked/>
-  </FormControlLabel>
+<FormControlLabel label="Checkbox">
+  <Checkbox onChange="{}" defaultChecked/>
+</FormControlLabel>
 `;
 
 // language=JS
 const smallCode = `
-  <FormControlLabel label="Checkbox">
-    <Checkbox onChange="{}" size="small"/>
-  </FormControlLabel>
+<FormControlLabel label="Checkbox">
+  <Checkbox onChange="{}" size="small"/>
+</FormControlLabel>
 `;
 
 // language=JS
 const indeterminateCode = `
-  <FormControlLabel label="Checkbox">
-    <Checkbox onChange="{}" indeterminate/>
-  </FormControlLabel>
+<FormControlLabel label="Checkbox">
+  <Checkbox onChange="{}" indeterminate/>
+</FormControlLabel>
 `;
 
 // language=JS
 const disabledCode = `
-  <FormControlLabel label="Checkbox">
-    <Checkbox onChange="{}" disabled/>
-  </FormControlLabel>
+<FormControlLabel label="Checkbox">
+  <Checkbox onChange="{}" disabled/>
+</FormControlLabel>
 `;
 
 /**
