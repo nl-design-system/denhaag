@@ -1,6 +1,11 @@
 import React from "react";
 import MaterialCardActions from "@material-ui/core/CardActions";
 import BaseProps from "@gemeente-denhaag/baseprops";
+import "./card-actions.module.css";
+import "./mui-override.module.css";
+import "@gemeente-denhaag/basestyles";
+import { StylesProvider } from "@material-ui/core/styles";
+import { cardActionClasses } from "./bem-mapping";
 
 export interface CardActionProps extends BaseProps {
   /**
@@ -13,8 +18,12 @@ export interface CardActionProps extends BaseProps {
  * Primary UI component for user interaction
  */
 export const CardActions: React.FC<CardActionProps> = (props: CardActionProps) => {
-  return <MaterialCardActions {...props}>{props.children}</MaterialCardActions>;
-};
+  return (
+    <StylesProvider injectFirst>
+      <MaterialCardActions classes={cardActionClasses} {...props}>{props.children}</MaterialCardActions>
+    </StylesProvider>
+  );
+}
 
 /**
  * Default export for CardActions
