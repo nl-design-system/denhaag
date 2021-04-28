@@ -1,4 +1,5 @@
 :root {
+  /* Button design tokens for primary action */
   --denhaag-button-primary-action-background-color: var(--denhaag-green-3);
   --denhaag-button-primary-action-color: var(--denhaag-white);
   --denhaag-button-primary-action-hover-background-color: var(--denhaag-green-4);
@@ -6,10 +7,10 @@
   --denhaag-button-primary-action-disabled-background-color: var(--denhaag-grey-2);
   --denhaag-button-primary-action-disabled-color: var(--denhaag-white);
 
+  /* Button design tokens for secondary action */
   --denhaag-button-secondary-action-background-color: var(--denhaag-white);
   --denhaag-button-secondary-action-color: var(--denhaag-green-3);
   --denhaag-button-secondary-action-border-color: var(--denhaag-green-3);
-  --denhaag-button-secondary-action-border-width: 0.0625rem;
   --denhaag-button-secondary-action-hover-background-color: var(--denhaag-white);
   --denhaag-button-secondary-action-hover-color: var(--denhaag-green-4);
   --denhaag-button-secondary-action-hover-border-color: var(--denhaag-green-4);
@@ -61,7 +62,7 @@
 .denhaag-button--secondary-action {
   background-color: var(--denhaag-button-secondary-action-background-color);
   color: var(--denhaag-button-secondary-action-color);
-  border-width: var(--denhaag-button-secondary-action-border-width);
+  border-width: 0.0625rem;
   border-style: solid;
   border-color: var(--denhaag-button-secondary-action-border-color);
 }
@@ -87,8 +88,8 @@
 }
 
 .denhaag-button--medium.denhaag-button--secondary-action {
-  padding-inline: calc(16px - var(--denhaag-button-secondary-action-border-width));
-  padding-block: calc(8px - var(--denhaag-button-secondary-action-border-width));
+  padding-inline: calc(16px - 0.0625rem);
+  padding-block: calc(8px - 0.0625rem);
 }
 
 .denhaag-button--large {
@@ -98,8 +99,8 @@
 }
 
 .denhaag-button--large.denhaag-button--secondary-action {
-  padding-inline: calc(20px - var(--denhaag-button-secondary-action-border-width));
-  padding-block: calc(10px - var(--denhaag-button-secondary-action-border-width));
+  padding-inline: calc(20px - 0.0625rem);
+  padding-block: calc(10px - 0.0625rem);
 }
 
 /* Icon styling */
