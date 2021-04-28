@@ -1,20 +1,25 @@
 {
   "name": "@gemeente-denhaag/denhaag-component-library",
-  "description": "A library of React components for the Municipality of the Hague",
-  "author": "Municipality of The Hague",
-  "license": "EUPL-1.2",
-  "main": "index.tsx",
-  "module": "index.tsx",
   "version": "0.1.14",
-  "files": [
-    "index.tsx"
-  ],
+  "description": "A library of React components for the Municipality of the Hague",
+  "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
     "directory": "src/"
   },
-  "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
+  "license": "EUPL-1.2",
+  "author": "Municipality of The Hague",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+  },
   "dependencies": {
     "@gemeente-denhaag/baseprops": "^0.1.7",
     "@gemeente-denhaag/datadisplay": "^0.1.5",
@@ -23,5 +28,8 @@
     "@gemeente-denhaag/navigation": "^0.1.5",
     "@gemeente-denhaag/pickers": "^0.1.14",
     "@gemeente-denhaag/surfaces": "^0.1.5"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1"
   }
 }
