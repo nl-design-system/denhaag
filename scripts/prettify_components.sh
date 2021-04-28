@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Add this as a shell script to your WebStorm configurations
 # and as executable command to VS Code
 # Make sure the working directory for this command is equal to "<PROJECT_DIR>/src/components"
