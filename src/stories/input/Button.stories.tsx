@@ -3,6 +3,7 @@ import React from "react";
 import { Meta, Story } from "@storybook/react/types-6-0";
 import Button, { ButtonProps } from "../../components/Button";
 import pkg from "../../components/Button/package.json";
+import { ArrowBackRounded, ArrowForwardRounded } from "@material-ui/icons";
 
 export default {
   title: "Components/Input/Button",
@@ -12,64 +13,50 @@ export default {
   component: Button
 } as Meta;
 
-const Template: Story<ButtonProps> = (args: any) => <Button {...args}>Button</Button>;
+const Template: Story<ButtonProps> = (args: ButtonProps) => <Button {...args}>Button</Button>;
 
 /**
  * Default Button
  */
 export const Default = Template.bind({});
-Default.args = {
-  variant: "contained"
-};
+Default.args = {};
 
 /**
  * Primary Button
  */
-export const Primary: Story<ButtonProps> = Template.bind({});
-Primary.args = {
-  color: "primary",
-  variant: "contained"
+export const PrimaryAction: Story<ButtonProps> = Template.bind({});
+PrimaryAction.args = {
+  variant: "primary-action"
 };
 
 /**
  * Secondary Button
  */
-export const Secondary: Story<ButtonProps> = Template.bind({});
-Secondary.args = {
-  color: "secondary",
-  variant: "contained"
+export const SecondaryAction: Story<ButtonProps> = Template.bind({});
+SecondaryAction.args = {
+  variant: "secondary-action"
 };
 
 /**
- * Outlined Button
+ * Icon left button
  */
-export const Outlined: Story<ButtonProps> = Template.bind({});
-Outlined.args = {
-  variant: "outlined"
-};
-
-/**
- * Text button
- */
-export const Text: Story<ButtonProps> = Template.bind({});
-Text.args = {
-  variant: "text"
-};
-
-/**
- * Small button
- */
-export const Small: Story<ButtonProps> = Template.bind({});
-Small.args = {
-  size: "small"
+export const IconLeft: Story<ButtonProps> = Template.bind({});
+IconLeft.args = {
+  startIcon: <ArrowBackRounded />
 };
 
 /**
  * Medium button
  */
+export const IconRight: Story<ButtonProps> = Template.bind({});
+IconRight.args = {
+  variant: "secondary-action",
+  endIcon: <ArrowForwardRounded />
+};
+
 export const Medium: Story<ButtonProps> = Template.bind({});
 Medium.args = {
-  size: "medium"
+  size: 'medium',
 };
 
 /**
