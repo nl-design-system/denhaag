@@ -1,14 +1,19 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import Container, { ContainerProps } from "../../components/Container";
-import pkg from "../../components/Container/package.json";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import Container, { ContainerProps } from '../../components/Container';
+import pkg from '../../components/Container/package.json';
 
 export default {
-  title: "Components/Layout/Container",
+  title: 'Components/Layout/Container',
   component: Container,
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`
-  }
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: 'dynamic',
+      },
+    },
+  },
 } as Meta;
 
 const Template: Story<ContainerProps> = (args: any) => <Container {...args}>This is a container.</Container>;
@@ -23,7 +28,7 @@ export const Default = Template.bind({});
  */
 export const NoPadding = Template.bind({});
 NoPadding.args = {
-  disableGutters: true
+  disableGutters: true,
 };
 
 /**
@@ -31,5 +36,5 @@ NoPadding.args = {
  */
 export const FixedWidth = Template.bind({});
 FixedWidth.args = {
-  fixed: true
+  fixed: true,
 };
