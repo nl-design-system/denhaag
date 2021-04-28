@@ -42,9 +42,3 @@ export * from "@gemeente-denhaag/listitemtext";
 export * from "@gemeente-denhaag/listsubheader";
 
 export default List;
-// export { ListItem, ListItemProps };
-// export { ListItemAvatar, ListItemAvatarProps };
-// export { ListItemIcon, ListItemIconProps };
-// export { ListItemSecondaryAction, ListItemSecondaryActionProps };
-// export { ListItemText, ListItemTextProps };
-// export { ListSubheader, ListSubheaderProps };
