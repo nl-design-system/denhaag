@@ -1,5 +1,5 @@
 :root {
-    --denhaag-card-arrow-left: 173px;
+    --denhaag-card-arrow-left: 0;
     --denhaag-card-arrow-position: relative;
     --denhaag-card-arrow-right: 28px;
     --denhaag-card-background-color: var(--denhaag-white);
@@ -19,7 +19,8 @@
 
     --denhaag-card-case-border: 0;
     --denhaag-card-case-height: 200px;
-    --denhaag-card-case-padding-block: 40px;
+    --denhaag-card-case-padding-top: 40px;
+    --denhaag-card-case-padding-bottom: 24px;
     --denhaag-card-case-width: 352px;
 }
 
@@ -29,10 +30,13 @@
     border: var(--denhaag-card-border);
     box-sizing: var(--denhaag-card-box-sizing);
     height: var(--denhaag-card-height);
-    padding-block: var(--denhaag-card-padding-block);
+    padding-top: var(--denhaag-card-padding-block);
     padding-inline: var(--denhaag-card-padding-inline);
-    padding-bottom: 24px;
+    padding-block: var(--denhaag-card-padding-block);
     width: var(--denhaag-card-width);
+    flex-direction: column;
+    display: flex;
+    
 }
 
 .denhaag-card-case {
@@ -41,7 +45,10 @@
     border: var(--denhaag-card-case-border);
     box-sizing: var(--denhaag-card-box-sizing);
     height: var(--denhaag-card-case-height);
-    padding-block: var(--denhaag-card-case-padding-block);
+    padding-top: var(--denhaag-card-case-padding-top);
+    padding-bottom: var(--denhaag-card-case-padding-bottom);
+    flex-direction: column;
+    display: flex;
 }
 
 .denhaag-card-arrow {
@@ -67,8 +74,9 @@
 .denhaag-card-subtitle {
     color: var(--denhaag-gray);
     font-size: 16px;
-    padding-block: var(--denhaag-card-subtitle-padding);
+    padding-top: var(--denhaag-card-subtitle-padding);
     padding-inline: var(--denhaag-card-subtitle-padding);
+    flex-grow: 1;
 }
 
 .denhaag-card-case-title {
@@ -84,7 +92,8 @@
     padding-block: var(--denhaag-card-subtitle-padding);
     padding-inline: var(--denhaag-card-subtitle-padding);
     box-sizing:initial;
-    height: 44px;
+    /*flex-grow: 1;/*
+    /* height: 44px; */
 }
 
 .denhaag-card-case-paper {

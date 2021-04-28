@@ -1,7 +1,9 @@
 :root {
-    --denhaag-card-actions-padding-block: 8px; 
+    --denhaag-card-actions-padding-top: 8px; 
 }
 
 .denhaag-card-actions {
-    padding-block: var(--denhaag-card-actions-padding-block);
+    padding-top: var(--denhaag-card-actions-padding-top);
+    padding-bottom: 0;
+    justify-content: space-between;
 }
