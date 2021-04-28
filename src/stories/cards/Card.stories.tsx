@@ -3,6 +3,8 @@ import { Meta, Story } from "@storybook/react";
 import Card, { CardProps } from "../../components/Card";
 import pkg from "../../components/Card/package.json";
 
+const date = new Date("2020-01-21");
+
 export default {
   title: "Components/Cards/Card",
   parameters: {
@@ -11,8 +13,11 @@ export default {
   component: Card
 } as Meta;
 
+
 const Template: Story<CardProps> = (args: unknown) => (
-  <Card {...args} />
+  <Card {...args} title="Shrimp and Chorizo Paella" 
+    subTitle="This impressive paella is a perfect party dish and a fun meal to cook."
+    date={date}/>
 );
 
 /**

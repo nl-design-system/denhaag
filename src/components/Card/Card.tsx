@@ -31,6 +31,22 @@ export interface CardProps extends BaseProps {
    * Variant can be either `basic` or `case`
    */
   variant?: "basic" | "case";
+
+  /**
+   * Determines the title of the card
+   */
+  title: string;
+
+  /**
+   * Determines the subtitle of the card
+   */
+  subTitle?: string;
+
+  /**
+   * Determines the date shown on the card
+   */
+  date: Date;
+
 }
 
 /**
@@ -64,13 +80,16 @@ export const Card: React.FC<CardProps> = (props: CardProps) => {
       <MaterialCard classes={classes} {...muiVariant}>
         <CardHeader
           classes={titleClasses}
-          title="Shrimp and Chorizo Paella"
+          title={props.title}
         />
         <CardContent disableSpacing={true}>
           <Typography variant="body2" classes={subtitleClasses} component="p">
-            This impressive paella is a perfect party dish and a fun meal to cook together with your guests.
+            {props.subTitle}
           </Typography>
-          <CardActions>
+          <CardActions disableSpacing={true}>
+            <Typography component="div" classes={subtitleClasses}>
+              {props.date.toLocaleDateString()}
+            </Typography>
             <Icon classes={arrowClasses} aria-label="ArrowRight">
               <ArrowForward />
             </Icon>
