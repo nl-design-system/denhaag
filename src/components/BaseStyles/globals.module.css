@@ -59,6 +59,12 @@
   --denhaag-fontsize-3xl: 3rem;
 
   /*
+   * @tokens Typography
+   * @presenter FontFamily
+   */
+  --denhaag-font-family: sans-serif;
+
+  /*
    * @tokens Borders
    * @presenter BorderRadius
    */

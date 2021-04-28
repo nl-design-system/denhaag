@@ -1,11 +1,4 @@
 :root {
-  --denhaag-button-border-radius: 3px;
-  --denhaag-button-padding-inline: 16px;
-  --denhaag-button-padding-block: 8px;
-  --denhaag-button-focus-border-color: var(--denhaag-ocher-4);
-  --denhaag-button-focus-border-width: 0.125rem;
-  --denhaag-button-font-family: sans-serif;
-
   --denhaag-button-primary-action-background-color: var(--denhaag-green-3);
   --denhaag-button-primary-action-color: var(--denhaag-white);
   --denhaag-button-primary-action-hover-background-color: var(--denhaag-green-4);
@@ -23,20 +16,11 @@
   --denhaag-button-secondary-action-disabled-background-color: var(--denhaag-white);
   --denhaag-button-secondary-action-disabled-color: var(--denhaag-grey-2);
   --denhaag-button-secondary-action-disabled-border-color: var(--denhaag-grey-2);
-
-  --denhaag-button-medium-size-padding-block: var(--denhaag-button-padding-block);
-  --denhaag-button-medium-size-padding-inline: var(--denhaag-button-padding-inline);
-  --denhaag-button-large-size-padding-block: 10px;
-  --denhaag-button-large-size-padding-inline: 20px;
 }
 
 .denhaag-button {
-  font-family: var(--denhaag-button-font-family);
-  padding-inline-start: var(--denhaag-button-padding-inline);
-  padding-inline-end: var(--denhaag-button-padding-inline);
-  padding-block-start: var(--denhaag-button-padding-block);
-  padding-block-end: var(--denhaag-button-padding-block);
-  border-radius: var(--denhaag-button-border-radius);
+  font-family: var(--denhaag-font-family);
+  border-radius: var(--denhaag-border-radius);
 }
 
 .denhaag-button--focus:after, .denhaag-button:focus:after {
@@ -47,7 +31,7 @@
   bottom: -2px;
   left: -2px;
   right: -2px;
-  border: 2px dashed var(--denhaag-ocher-4);
+  border: var(--denhaag-focus-border);
   border-radius: var(--denhaag-border-radius);
 }
 
@@ -96,26 +80,26 @@
 
 /* Size specific styling */
 .denhaag-button--medium {
-  padding-inline: var(--denhaag-button-medium-size-padding-inline);
-  padding-block: var(--denhaag-button-medium-size-padding-block);
+  padding-inline: 16px;
+  padding-block: 8px;
   font-size: var(--denhaag-fontsize-base);
 
 }
 
 .denhaag-button--medium.denhaag-button--secondary-action {
-  padding-inline: calc(var(--denhaag-button-padding-inline) - var(--denhaag-button-secondary-action-border-width));
-  padding-block: calc(var(--denhaag-button-padding-block) - var(--denhaag-button-secondary-action-border-width));
+  padding-inline: calc(16px - var(--denhaag-button-secondary-action-border-width));
+  padding-block: calc(8px - var(--denhaag-button-secondary-action-border-width));
 }
 
 .denhaag-button--large {
-  padding-inline: var(--denhaag-button-large-size-padding-inline);
-  padding-block: var(--denhaag-button-large-size-padding-block);
+  padding-inline: 20px;
+  padding-block: 10px;
   font-size: var(--denhaag-fontsize-lg);
 }
 
 .denhaag-button--large.denhaag-button--secondary-action {
-  padding-inline: calc(var(--denhaag-button-large-size-padding-inline) - var(--denhaag-button-secondary-action-border-width));
-  padding-block: calc(var(--denhaag-button-large-size-padding-block) - var(--denhaag-button-secondary-action-border-width));
+  padding-inline: calc(20px - var(--denhaag-button-secondary-action-border-width));
+  padding-block: calc(10px - var(--denhaag-button-secondary-action-border-width));
 }
 
 /* Icon styling */
