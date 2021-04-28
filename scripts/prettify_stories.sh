@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 
 # Add this as a shell script to your WebStorm configurations
 # and as executable command to VS Code
