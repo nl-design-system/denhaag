@@ -2,34 +2,22 @@ export const cardClasses = {
   root: 'denhaag-card'
 }
 
-export const cardCaseClasses = {
-  root: 'denhaag-card denhaag-card-case'
-}
-
 export const cardArrowClasses = {
-  root: 'denhaag-card-arrow'
-}
-
-export const cardCaseArrowClasses = {
-  root: 'denhaag-card-arrow denhaag-card-case-arrow'
+  root: 'denhaag-card__arrow'
 }
 
 export const cardTitleClasses = {
-  root: 'denhaag-card-title'
+  root: 'denhaag-card__title'
 }
 
 export const cardSubtitleClasses = {
-  root: 'denhaag-card-subtitle'
+  root: 'denhaag-card__subtitle'
 }
 
-export const cardCaseTitleClasses = {
-  root: 'denhaag-card-case-title'
+export const cardPaperClasses = {
+  root: 'denhaag-card__paper'
 }
 
-export const cardCaseSubtitleClasses = {
-  root: 'denhaag-card-case-subtitle'
-}
-
-export const cardCasePaper = {
-  root: 'denhaag-card-case-paper'
+export const cardCaseClasses = {
+  root: 'denhaag-card denhaag-card--case'
 }

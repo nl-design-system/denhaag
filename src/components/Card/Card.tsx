@@ -3,18 +3,15 @@ import MaterialCard from "@material-ui/core/Card";
 import { StylesProvider } from "@material-ui/core/styles";
 import ArrowForward from "@material-ui/icons/ArrowForward";
 import BaseProps from "@gemeente-denhaag/baseprops";
-import  "./card.module.css";
 import "./mui-override.module.css";
+import  "./card.module.css";
 import "@gemeente-denhaag/basestyles";
 import { Typography } from "@gemeente-denhaag/typography";
 import { cardClasses,
           cardArrowClasses,
           cardTitleClasses,
           cardSubtitleClasses,
-          cardCaseClasses,
-          cardCaseArrowClasses,
-          cardCaseTitleClasses,
-          cardCaseSubtitleClasses } from  "./bem-mapping";
+          cardCaseClasses } from  "./bem-mapping";
 import { CardHeader,
           CardContent,
           CardActions } from "@gemeente-denhaag/surfaces";
@@ -55,46 +52,42 @@ export interface CardProps extends BaseProps {
 export const Card: React.FC<CardProps> = (props: CardProps) => {
   const muiVariant = props.raised;
   let classes;
-  let arrowClasses;
-  let titleClasses;
-  let subtitleClasses;
+  const arrowClasses = cardArrowClasses;
+  const titleClasses = cardTitleClasses;
+  const subtitleClasses = cardSubtitleClasses;
 
   switch (props.variant) {
     case "case":
       classes = cardCaseClasses;
-      arrowClasses = cardCaseArrowClasses;
-      titleClasses = cardCaseTitleClasses;
-      subtitleClasses = cardCaseSubtitleClasses;
       break;
     case "basic":
     default:
       classes = cardClasses;
-      arrowClasses = cardArrowClasses;
-      titleClasses = cardTitleClasses;
-      subtitleClasses = cardSubtitleClasses;
-      break;
   }
 
   return (
     <StylesProvider injectFirst>
       <MaterialCard classes={classes} {...muiVariant}>
-        <CardHeader
-          classes={titleClasses}
-          title={props.title}
-        />
-        <CardContent disableSpacing={true}>
-          <Typography variant="body2" classes={subtitleClasses} component="p">
-            {props.subTitle}
-          </Typography>
-          <CardActions disableSpacing={true}>
-            <Typography component="div" classes={subtitleClasses}>
-              {props.date.toLocaleDateString()}
+        <div className="denhaag-card__wrapper">
+          <div className="denhaag-card__background"></div>
+          <CardHeader
+            classes={titleClasses}
+            title={props.title}
+          />
+          <CardContent disableSpacing={true}>
+            <Typography variant="body2" classes={subtitleClasses} component="p">
+              {props.subTitle}
             </Typography>
-            <Icon classes={arrowClasses} aria-label="ArrowRight">
-              <ArrowForward />
-            </Icon>
-          </CardActions>
-        </CardContent>
+            <CardActions disableSpacing={true}>
+              <Typography component="div" classes={subtitleClasses}>
+                {props.date.toLocaleDateString()}
+              </Typography>
+              <Icon classes={arrowClasses} aria-label="ArrowRight">
+                <ArrowForward />
+              </Icon>
+            </CardActions>
+          </CardContent>
+        </div>
       </MaterialCard>
     </StylesProvider>
   )

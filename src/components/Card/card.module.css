@@ -19,83 +19,152 @@
 
     --denhaag-card-case-border: 0;
     --denhaag-card-case-height: 200px;
-    --denhaag-card-case-padding-top: 40px;
-    --denhaag-card-case-padding-bottom: 24px;
+    --denhaag-card-case-padding-block-start: 40px;
+    --denhaag-card-case-padding-block-end: 24px;
     --denhaag-card-case-width: 352px;
 }
 
 .denhaag-card {
+  width: var(--denhaag-card-width);
+}
+
+.denhaag-card__wrapper {
     background: var(--denhaag-card-background-color);
     border-radius: var(--denhaag-card-border-radius);
     border: var(--denhaag-card-border);
     box-sizing: var(--denhaag-card-box-sizing);
     height: var(--denhaag-card-height);
-    padding-top: var(--denhaag-card-padding-block);
     padding-inline: var(--denhaag-card-padding-inline);
     padding-block: var(--denhaag-card-padding-block);
-    width: var(--denhaag-card-width);
     flex-direction: column;
     display: flex;
-    
+
 }
 
-.denhaag-card-case {
-    background: var(--denhaag-green-1);
-    border-radius: var(--denhaag-card-border-radius);
-    border: var(--denhaag-card-case-border);
-    box-sizing: var(--denhaag-card-box-sizing);
-    height: var(--denhaag-card-case-height);
-    padding-top: var(--denhaag-card-case-padding-top);
-    padding-bottom: var(--denhaag-card-case-padding-bottom);
-    flex-direction: column;
-    display: flex;
-}
-
-.denhaag-card-arrow {
+.denhaag-card__arrow {
     left: var(--denhaag-card-arrow-left);
     position: var(--denhaag-card-arrow-position);
     right: var(--denhaag-card-arrow-right);
-    
+
 }
 
-.denhaag-card-case-arrow {
-    color: var(--denhaag-green-3);
-    left: var(--denhaag-card-arrow-left);
-    position: var(--denhaag-card-arrow-position);
-    right: var(--denhaag-card-arrow-right);
-}
-
-.denhaag-card-title {
+.denhaag-card__title {
     color: var(--denhaag-black);
     padding-block: var(--denhaag-card-title-padding);
     padding-inline: var(--denhaag-card-title-padding);
 }
 
-.denhaag-card-subtitle {
+.denhaag-card__subtitle {
     color: var(--denhaag-gray);
     font-size: 16px;
-    padding-top: var(--denhaag-card-subtitle-padding);
+    padding-block-start: var(--denhaag-card-subtitle-padding);
     padding-inline: var(--denhaag-card-subtitle-padding);
     flex-grow: 1;
 }
 
-.denhaag-card-case-title {
-    color: var(--denhaag-green-3);
-    font-weight: bold;
-    padding-block: var(--denhaag-card-title-padding);
-    padding-inline: var(--denhaag-card-title-padding);
+.denhaag-card--case {
+  position: relative;
+  background: var(--denhaag-green-2);
+  padding-block-start: 20px;
+  border-radius: var(--denhaag-card-border-radius);
 }
 
-.denhaag-card-case-subtitle {
-    color: var(--denhaag-green-3);
-    font-weight: 500;
-    padding-block: var(--denhaag-card-subtitle-padding);
-    padding-inline: var(--denhaag-card-subtitle-padding);
-    box-sizing:initial;
-    /*flex-grow: 1;/*
-    /* height: 44px; */
+.denhaag-card--case::before {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  height: 20px;
+  width: 50%;
+  background: var(--denhaag-white);
+  border-radius: 0 var(--denhaag-card-border-radius) 0 0;
 }
 
-.denhaag-card-case-paper {
-    background-image: url("paper.svg")
+.denhaag-card--case .denhaag-card__wrapper {
+  position: relative;
+  background: transparent;
+  border-radius: var(--denhaag-card-border-radius);
+  border: var(--denhaag-card-case-border);
+  box-sizing: var(--denhaag-card-box-sizing);
+  height: var(--denhaag-card-case-height);
+  padding-block-start: var(--denhaag-card-case-padding-block-start);
+  padding-block-end: var(--denhaag-card-case-padding-block-end);
+  flex-direction: column;
+  display: flex;
 }
+
+.denhaag-card--case .denhaag-card__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--denhaag-green-1);
+  transform-origin: 50% 100%;
+}
+
+.denhaag-card--case .denhaag-card__background::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -20px;
+  height: 20px;
+  width: 60%;
+  background: var(--denhaag-green-1);
+}
+
+.denhaag-card--case .denhaag-card__background::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 55%;
+  top: -21px;
+  height: 22px;
+  width: 10%;
+  background: var(--denhaag-green-1);
+  transform: skewX(30deg);
+}
+
+.denhaag-card--case .denhaag-card__arrow {
+  color: var(--denhaag-green-3);
+  left: var(--denhaag-card-arrow-left);
+  position: var(--denhaag-card-arrow-position);
+  right: var(--denhaag-card-arrow-right);
+}
+
+.denhaag-card--case .denhaag-card__title {
+  position: relative;
+  color: var(--denhaag-green-3);
+  font-weight: 700;
+  padding-block: var(--denhaag-card-title-padding);
+  padding-inline: var(--denhaag-card-title-padding);
+}
+
+.denhaag-card--case .denhaag-card__subtitle {
+  position: relative;
+  color: var(--denhaag-green-3);
+  font-weight: 500;
+  padding-block: var(--denhaag-card-subtitle-padding);
+  padding-inline: var(--denhaag-card-subtitle-padding);
+  box-sizing:initial;
+  /*flex-grow: 1;/*
+  /* height: 44px; */
+}
+
+.denhaag-card--case:hover::before {
+  top: 12px;
+  transform:rotate(-2.45deg);
+  transform-origin: right;
+}
+
+.denhaag-card--case:hover .denhaag-card__background {
+  transform: rotateX(-15deg);
+}
+
+/*
+  Example folder skew: https://codepen.io/aaroniker/pen/aPJbJz
+  Play around with perspective on the card__wrapper and mess with overflow settings to properly show
+  skew on hover
+*/
