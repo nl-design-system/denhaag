@@ -17,7 +17,7 @@ export default {
   component: Paper,
 } as Meta;
 
-const Template: Story<PaperProps> = (args: any) => (
+const Template: Story<PaperProps> = (args: PaperProps) => (
   <Paper {...args}>
     <Typography>Paper content</Typography>
   </Paper>

@@ -16,7 +16,7 @@ export default {
   component: Box,
 } as Meta;
 
-const Template: Story<BoxProps> = (args: any) => (
+const Template: Story<BoxProps> = (args: BoxProps) => (
   <Box {...args}>
     <p>This is a Box component.</p>
   </Box>

@@ -18,7 +18,7 @@ export default {
   component: MenuItem,
 } as Meta;
 
-const Template: Story<MenuItemProps> = (args: any) => {
+const Template: Story<MenuItemProps> = (args: MenuItemProps) => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);

@@ -18,7 +18,7 @@ export default {
   component: FormControlLabel,
 } as Meta;
 
-const Template: Story<FormControlLabelProps> = (args: any) => (
+const Template: Story<FormControlLabelProps> = (args: FormControlLabelProps) => (
   <FormControlLabel label="Checkbox" control={<Checkbox {...args} />} {...args} />
 );
 
