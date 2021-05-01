@@ -1,8 +1,7 @@
 declare module '*.svg' {
   import React = require('react');
-  export const ReactComponent: React.SFC<React.SVGProps<SVGSVGElement>>;
-  const src: string;
-  export default src;
+  const ReactComponent: React.FunctionElement<React.SVGProps<SVGSVGElement>>;
+  export default ReactComponent;
 }
 
 declare module '*.json' {
