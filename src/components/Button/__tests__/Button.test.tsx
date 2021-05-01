@@ -4,6 +4,9 @@ import { render, fireEvent, screen, ByRoleOptions } from '@testing-library/react
 
 import { Button } from "../src/index";
 
+import { axe, toHaveNoViolations } from 'jest-axe';
+
+
 describe('Button Unit/Dom testing', function() {
   test("button is clickable", async () => {
     let clicked = 0;
@@ -22,3 +25,17 @@ describe("Button snapshot testing", () => {
     expect(tree).toMatchSnapshot();
   });
 });
+
+expect.extend(toHaveNoViolations)
+
+it('should demonstrate this matcher`s usage with react', async () => {
+  // const table = document.createElement('table')
+
+  // const { container } = render(<Button>Click button</Button>, {
+  //   container: document.body.appendChild(table),
+  // })
+
+  render(<Button>Click button</Button>, document.body)
+  const results = await axe(document.body)
+  expect(results).toHaveNoViolations()
+})
