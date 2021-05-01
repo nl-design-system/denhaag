@@ -75,4 +75,19 @@
    * @presenter Border
    */
   --denhaag-focus-border: 2px dashed var(--denhaag-ocher-4);
+
+  /*
+   * @tokens Spacing
+   * @presenter Spacing
+   */
+  --denhaag-spacing-3xs: 0.13rem;
+  --denhaag-spacing-2xs: 0.25rem;
+  --denhaag-spacing-xs: 0.5rem;
+  --denhaag-spacing-s: 0.8rem;
+  --denhaag-spacing-m: 1rem;
+  --denhaag-spacing-l: 1.5rem;
+  --denhaag-spacing-xl: 2rem;
+  --denhaag-spacing-2xl: 2.5rem;
+  --denhaag-spacing-3xl: 3rem;
+  --denhaag-spacing-4xl: 4rem;
 }
