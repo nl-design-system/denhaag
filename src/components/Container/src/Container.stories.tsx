@@ -16,7 +16,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story<ContainerProps> = (args: any) => <Container {...args}>This is a container.</Container>;
+const Template: Story<ContainerProps> = (args: ContainerProps) => <Container {...args}>This is a container.</Container>;
 
 /**
  * Default Container
