@@ -21,7 +21,7 @@ export default {
   component: GridListTileBar,
 } as Meta;
 
-const Template: Story<GridListTileBarProps> = (args: any) => (
+const Template: Story<GridListTileBarProps> = (args: GridListTileBarProps) => (
   <GridList cols={5}>
     <GridListTile cols={1} rows={2}>
       <img src={imageFile} alt="The Hague municipality emblem" width={150} height={150} />

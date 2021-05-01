@@ -21,7 +21,7 @@ export default {
   component: AppBar,
 } as Meta;
 
-const Template: Story<AppBarProps> = (args: any) => {
+const Template: Story<AppBarProps> = (args: AppBarProps) => {
   return (
     <AppBar {...args}>
       <Toolbar>

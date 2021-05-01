@@ -26,7 +26,7 @@ export default {
   component: Card,
 } as Meta;
 
-const Template: Story<CardProps> = (args: any) => (
+const Template: Story<CardProps> = (args: CardProps) => (
   <Card {...args}>
     <CardHeader
       avatar={<Avatar aria-label="recipe">R</Avatar>}

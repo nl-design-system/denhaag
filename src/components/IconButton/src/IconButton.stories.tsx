@@ -8,11 +8,14 @@ export default {
   title: 'Components/Input/IconButton',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
         type: 'dynamic',
       },
     },
   },
   component: IconButton,
+} as Meta;
 
 const Template: Story<IconButtonProps> = (args: IconButtonProps) => (
   <IconButton {...args}>
