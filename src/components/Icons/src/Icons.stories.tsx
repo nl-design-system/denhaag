@@ -1,13 +1,11 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import SvgIcon, { SvgIconProps } from "./SvgIcon";
+import Grid from "../../Grid";
+import SvgIcon, { SvgIconProps } from ".";
+import * as Icons from ".";
 import pkg from "../package.json";
 
-import Grid from "../../Grid";
-
-import * as Icons from ".";
-
-console.log();
+const allIconNames = Object.keys(Icons).filter((iconName) => (iconName === "default" ? false : true));
 
 export default {
   title: "Components/Data Display/Icons",
@@ -19,23 +17,27 @@ export default {
       },
     },
   },
+  argTypes: {
+    component: {
+      options: allIconNames,
+      defaultValue: "ArrowLeftIcon",
+    },
+  },
   component: SvgIcon,
 } as Meta;
 
-const Template: Story<SvgIconProps> = (props: SvgIconProps) => {
-  const children = Object.keys(Icons)
-    .filter((iconName) => (iconName === "default" ? false : true))
-    .map<React.ReactElement>((iconName) => {
-      const IconElement = Icons[iconName];
-      return (
-        <Grid item xs={2} key={iconName}>
-          <div style={{ display: "flex", justifyContent: "center" }}>
-            <IconElement {...props} />
-          </div>
-          <p style={{ textAlign: "center", color: "#4B4B4B", fontFamily: "inherit" }}>{iconName}</p>
-        </Grid>
-      );
-    });
+const AllTemplate: Story<SvgIconProps> = (props: SvgIconProps) => {
+  const children = allIconNames.map<React.ReactElement>((iconName) => {
+    const IconElement = Icons[iconName];
+    return (
+      <Grid item xs={2} key={iconName}>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <IconElement {...props} />
+        </div>
+        <p style={{ textAlign: "center", color: "#4B4B4B", fontFamily: "monospace" }}>{iconName}</p>
+      </Grid>
+    );
+  });
 
   return (
     <Grid container spacing={3}>
@@ -43,25 +45,28 @@ const Template: Story<SvgIconProps> = (props: SvgIconProps) => {
     </Grid>
   );
 };
-// (
-//   // <SvgIcon component={RightArrowIcon} {...props}></SvgIcon>
-//   <Icons.CalendarIcon></Icons.CalendarIcon>
-// );
+
+const SingleTemplate: Story<SvgIconProps> = ({ component, ...props }: SvgIconProps) => {
+  if (typeof component === "string") {
+    return <SvgIcon component={Icons[component]} {...props} />;
+  } else {
+    return <SvgIcon {...props} />;
+  }
+};
 
 const defaultCode = `
-import RightArrowIcon from "./svg/arrow-right.svg";
-
-<SvgIcon component={RightArrowIcon}></SvgIcon>
+import { RightArrowIcon } from "@gemeente-denhaag/icons";
+<RightArrowIcon />
 `;
 
-/**
- * Default SvgIcon
- */
-export const Default = Template.bind({});
-Default.parameters = {
+export const AllIcons = AllTemplate.bind({});
+AllIcons.parameters = {
+  controls: { exclude: ["component", "children", "classes"] },
   docs: {
     source: {
       code: defaultCode,
     },
   },
 };
+
+export const SingleIcon = SingleTemplate.bind({});
