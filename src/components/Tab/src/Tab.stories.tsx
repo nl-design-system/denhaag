@@ -19,7 +19,7 @@ export default {
   component: Tab,
 } as Meta;
 
-const Template: Story<TabProps> = (args: any) => {
+const Template: Story<TabProps> = (args: TabProps) => {
   const [value, setValue] = React.useState(0);
 
   return (

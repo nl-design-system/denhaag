@@ -17,7 +17,7 @@ export default {
   component: MenuList,
 } as Meta;
 
-const Template: Story<MenuListProps> = (args: any) => (
+const Template: Story<MenuListProps> = (args: MenuListProps) => (
   <MenuList {...args}>
     <MenuItem>
       <p>This is a MenuItem in a MenuList.</p>

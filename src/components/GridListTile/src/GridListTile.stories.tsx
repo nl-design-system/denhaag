@@ -17,7 +17,7 @@ export default {
   component: GridListTile,
 } as Meta;
 
-const Template: Story<GridListTileProps> = (args: any) => (
+const Template: Story<GridListTileProps> = (args: GridListTileProps) => (
   <GridList>
     <GridListTile {...args}>
       <img

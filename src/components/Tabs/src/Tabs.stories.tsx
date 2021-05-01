@@ -20,7 +20,7 @@ export default {
   component: Tabs,
 } as Meta;
 
-const Template: Story<TabsProps> = (args: any) => {
+const Template: Story<TabsProps> = (args: TabsProps) => {
   const [value, setValue] = React.useState(1);
 
   args.onChange = (event: React.ChangeEvent<unknown>, newValue: number) => {
