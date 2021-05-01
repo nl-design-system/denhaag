@@ -1,6 +1,7 @@
 .denhaag-card {
   box-shadow: none;
   transition: none;
+  overflow: unset;
 }
 
 .denhaag-card--hover, .denhaag-card:hover {

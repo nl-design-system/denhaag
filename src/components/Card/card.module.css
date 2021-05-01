@@ -93,6 +93,7 @@
   padding-block-end: var(--denhaag-card-case-padding-block-end);
   flex-direction: column;
   display: flex;
+  perspective: 1800px;
 }
 
 .denhaag-card--case .denhaag-card__background {
@@ -128,7 +129,7 @@
   display: block;
   position: absolute;
   left: 55%;
-  top: -21px;
+  top: -20px;
   height: 22px;
   width: 10%;
   background: var(--denhaag-green-1);
@@ -168,7 +169,7 @@
 }
 
 .denhaag-card--case:hover .denhaag-card__background {
-  transform: rotateX(-15deg);
+  transform: rotateX(-20deg);
 }
 
 /*
