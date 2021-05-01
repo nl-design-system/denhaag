@@ -16,7 +16,7 @@ export default {
   component: Grid,
 } as Meta;
 
-const Template: Story<GridProps> = (args: any) => (
+const Template: Story<GridProps> = (args: GridProps) => (
   <Grid {...args}>
     <p>This is a grid.</p>
     <p>It can align text.</p>

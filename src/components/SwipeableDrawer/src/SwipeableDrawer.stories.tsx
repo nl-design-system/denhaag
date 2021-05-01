@@ -17,7 +17,7 @@ export default {
   component: SwipeableDrawer,
 } as Meta;
 
-const Template: Story<SwipeableDrawerProps> = (args: any) => {
+const Template: Story<SwipeableDrawerProps> = (args: SwipeableDrawerProps) => {
   const [state, setState] = React.useState({
     open: args.open,
   });

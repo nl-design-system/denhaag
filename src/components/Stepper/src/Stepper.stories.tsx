@@ -19,7 +19,7 @@ export default {
   component: Stepper,
 } as Meta;
 
-const Template: Story<StepperProps> = (args: any) => (
+const Template: Story<StepperProps> = (args: StepperProps) => (
   <div>
     <Stepper {...args}>
       <Step>

@@ -16,7 +16,7 @@ export default {
   component: Hidden,
 } as Meta;
 
-const Template: Story<HiddenProps> = (args: any) => (
+const Template: Story<HiddenProps> = (args: HiddenProps) => (
   <Hidden {...args}>
     <p>
       This text can be hidden. Set different &quot;Up&quot; and &quot;Down&quot; properties to <code>true</code> to hide

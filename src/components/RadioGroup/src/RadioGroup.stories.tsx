@@ -18,7 +18,7 @@ export default {
   component: RadioGroup,
 } as Meta;
 
-const Template: Story<RadioGroupProps> = (args: any) => (
+const Template: Story<RadioGroupProps> = (args: RadioGroupProps) => (
   <RadioGroup {...args}>
     <FormControlLabel value="a" label="A" control={<Radio color="default" />} />
     <FormControlLabel value="b" label="B" control={<Radio color="default" />} />
