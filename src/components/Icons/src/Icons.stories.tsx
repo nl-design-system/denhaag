@@ -3,7 +3,7 @@ import { Meta, Story } from "@storybook/react";
 import SvgIcon, { SvgIconProps } from "./SvgIcon";
 import pkg from "../package.json";
 
-import RightArrowIcon from "./svg/arrow-right.svg";
+import RightArrowIcon from "./svg/arrows/arrow-right.svg";
 
 export default {
   title: "Components/Data Display/Icons",
