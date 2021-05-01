@@ -1,53 +1,62 @@
-import MaterialButton from "@material-ui/core/Button";
-import React from "react";
+import MaterialSvgIcon from "@material-ui/core/SvgIcon";
+import React, { ElementType } from "react";
 import BaseProps from "@gemeente-denhaag/baseprops";
 
-export interface ButtonProps extends BaseProps {
+export interface SvgIconProps extends BaseProps {
   /**
-   * Simple click handler
+   * The color of the component. It supports those theme colors that make sense
+   * for this component. You can use the `htmlColor` prop to apply a color
+   * attribute to the SVG element.
    */
-  onClick?: () => void;
-
+  color?: "action" | "disabled" | "error" | "inherit" | "primary" | "secondary";
   /**
-   * Color for the component
+   * The component used for the root node. Either a string to use a HTML
+   * element or a component.
    */
-  color?: "primary" | "secondary" | "default";
-
+  component?: ElementType;
   /**
-   * The url to link to when the button is clicked.
-   * If defined, an a element will be used as the root node.
+   * The fontSize applied to the icon. Defaults to 24px, but can be configure
+   * to inherit font size.
    */
-  href?: string;
-
+  fontSize?: "default" | "inherit" | "large" | "small";
   /**
-   * Size of the component
+   * Applies a color attribute to the SVG element.
    */
-  size?: "small" | "medium" | "large";
-
+  htmlColor?: string;
   /**
-   * Disables Button
+   * The shape-rendering attribute. The behavior of the different options is
+   * described on the [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/shape-rendering).
+   * If you are having issues with blurry icons you should investigate this
+   * property.
    */
-  disabled?: boolean;
-
+  shapeRendering?: string;
   /**
-   * Button variant
+   * Provides a human-readable title for the element that contains it.
+   * https://www.w3.org/TR/SVG-access/#Equivalent
    */
-  variant?: "outlined" | "contained" | "text";
-
+  titleAccess?: string;
   /**
-   * HTML type prop
+   * Allows you to redefine what the coordinates without units mean inside an
+   * SVG element. For example, if the SVG element is 500 (width) by 200
+   * (height), and you pass viewBox="0 0 50 20", this means that the coordinates
+   * inside the SVG will go from the top left corner (0,0) to bottom right
+   * (50,20) and each unit will be worth 10px.
    */
-  type?: "button" | "submit" | "reset";
+  viewBox?: string;
 }
 
-/**
- * Primary UI component for user interaction
- */
-export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
-  return <MaterialButton {...props}>{props.children}</MaterialButton>;
+export const SvgIcon: React.FC<SvgIconProps> = ({
+  color = "inherit",
+  component = "svg",
+  fontSize = "default",
+  viewBox = "0 0 24 24",
+  ...props
+}: SvgIconProps) => {
+  return (
+    <MaterialSvgIcon color={color} component={component} fontSize={fontSize} viewBox={viewBox} {...props}>
+      {props.children}
+    </MaterialSvgIcon>
+  );
 };
 
-/**
- * Default export for Button
- */
-export default Button;
+export default SvgIcon;
