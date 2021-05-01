@@ -1,32 +1,22 @@
 import React from "react";
 import renderer from "react-test-renderer";
+import { render, fireEvent, screen, ByRoleOptions } from '@testing-library/react'
 
 import { Button } from "../src/index";
 
-import { shallow, mount, render } from 'enzyme';
+describe('Button Unit/Dom testing', function() {
+  test("button is clickable", async () => {
+    let clicked = 0;
+    render(<Button color="primary" onClick={() => {clicked += 1;} }>Click this</Button>)
 
-import Foo from '../Foo';
-
-describe('A suite', function() {
-  it('should render without throwing an error', function() {
-    expect(shallow(<Foo />).contains(<div className="foo">Bar</div>)).toBe(true);
-  });
-
-  it('should be selectable by class "foo"', function() {
-    expect(shallow(<Foo />).is('.foo')).toBe(true);
-  });
-
-  it('should mount in a full DOM', function() {
-    expect(mount(<Foo />).find('.foo').length).toBe(1);
-  });
-
-  it('should render to static HTML', function() {
-    expect(render(<Foo />).text()).toEqual('Bar');
+    // prefer getByRole since it uses the accessibility tree
+    fireEvent.click(screen.getByRole('button', {name: 'Click this'} as ByRoleOptions))
+    expect(clicked).toBe(1)
   });
 });
 
 
-describe("Button", () => {
+describe("Button snapshot testing", () => {
   test("renders correctly", () => {
     const tree = renderer.create(<Button>{"Test"}</Button>).toJSON();
     expect(tree).toMatchSnapshot();

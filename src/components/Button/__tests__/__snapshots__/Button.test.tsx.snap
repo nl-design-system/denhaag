@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button renders correctly 1`] = `
+exports[`Button snapshot testing renders correctly 1`] = `
 <button
   className="MuiButtonBase-root MuiButton-root MuiButton-text"
   disabled={false}
