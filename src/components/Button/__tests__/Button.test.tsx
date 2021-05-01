@@ -1,7 +1,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
 
-import { Button } from "../Button";
+import { Button } from "../src/index";
 
 import { shallow, mount, render } from 'enzyme';
 
