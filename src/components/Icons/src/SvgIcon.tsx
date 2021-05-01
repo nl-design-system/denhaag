@@ -29,7 +29,7 @@ export interface SvgIconProps extends BaseProps {
    * If you are having issues with blurry icons you should investigate this
    * property.
    */
-  shapeRendering?: string;
+  shapeRendering?: "auto" | "optimizeSpeed" | "crispEdges" | "geometricPrecision";
   /**
    * Provides a human-readable title for the element that contains it.
    * https://www.w3.org/TR/SVG-access/#Equivalent
@@ -50,10 +50,18 @@ const SvgIcon: React.FC<SvgIconProps> = ({
   component = "svg",
   fontSize = "default",
   viewBox = "0 0 24 24",
+  shapeRendering = "auto",
   ...props
 }: SvgIconProps) => {
   return (
-    <MaterialSvgIcon color={color} component={component} fontSize={fontSize} viewBox={viewBox} {...props}>
+    <MaterialSvgIcon
+      color={color}
+      component={component}
+      fontSize={fontSize}
+      viewBox={viewBox}
+      shapeRendering={shapeRendering}
+      {...props}
+    >
       {props.children}
     </MaterialSvgIcon>
   );
