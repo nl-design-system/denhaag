@@ -18,7 +18,7 @@
         "dist"
     ],
     "scripts": {
-        "build": "tsc -b",
+        "build": "tsc -b && svgo --multipass -q -r -f ./src/svg -o ./dist/svg",
         "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
     },
     "dependencies": {
