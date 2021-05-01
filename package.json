@@ -13,6 +13,7 @@
   "workspaces": [
     "src/components/*",
     "src/meta-packages/*",
+    "src/styles/*",
     "src/"
   ],
   "scripts": {
