@@ -22,9 +22,6 @@
   },
   "dependencies": {
     "@gemeente-denhaag/accordion": "^0.1.7",
-    "@gemeente-denhaag/accordionactions": "^0.1.7",
-    "@gemeente-denhaag/accordiondetails": "^0.1.7",
-    "@gemeente-denhaag/accordionsummary": "^0.1.7",
     "@gemeente-denhaag/appbar": "^0.1.7",
     "@gemeente-denhaag/baseprops": "^0.1.7",
     "@gemeente-denhaag/card": "^0.1.7",

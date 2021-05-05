@@ -1,7 +1,4 @@
 export * from "@gemeente-denhaag/accordion";
-export * from "@gemeente-denhaag/accordionactions";
-export * from "@gemeente-denhaag/accordiondetails";
-export * from "@gemeente-denhaag/accordionsummary";
 export * from "@gemeente-denhaag/appbar";
 export * from "@gemeente-denhaag/baseprops";
 export * from "@gemeente-denhaag/card";

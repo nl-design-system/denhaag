@@ -10,15 +10,6 @@
   "exclude": ["dist", "src/*.stories.tsx"],
   "references": [
     {
-      "path": "../AccordionActions"
-    },
-    {
-      "path": "../AccordionDetails"
-    },
-    {
-      "path": "../AccordionSummary"
-    },
-    {
       "path": "../BaseProps"
     }
   ]

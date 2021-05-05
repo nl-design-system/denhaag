@@ -1,19 +1,17 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
 import { ChevronDownIcon } from "@gemeente-denhaag/icons";
-import Accordion, { AccordionProps } from ".";
-import AccordionSummary from "../../AccordionSummary";
-import Typography from "../../Typography";
-import AccordionDetails from "../../AccordionDetails";
+import Typography from "@gemeente-denhaag/typography";
+import Accordion, { AccordionSummary, AccordionDetails, AccordionProps } from ".";
 import pkg from "../package.json";
 
 export default {
-  title: 'Components/Surfaces/Accordion',
+  title: "Components/Surfaces/Accordion",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: 'dynamic',
+        type: "dynamic",
       },
     },
   },

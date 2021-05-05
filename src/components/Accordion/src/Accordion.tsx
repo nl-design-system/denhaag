@@ -52,6 +52,3 @@ export const Accordion: React.FC<AccordionProps> = (props: AccordionProps) => {
 };
 
 export default Accordion;
-export * from "@gemeente-denhaag/accordionactions";
-export * from "@gemeente-denhaag/accordiondetails";
-export * from "@gemeente-denhaag/accordionsummary";
