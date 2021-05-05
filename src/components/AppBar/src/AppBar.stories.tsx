@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import MenuIcon from "@material-ui/icons/Menu";
+import { HamburgerIcon } from "@gemeente-denhaag/icons";
 import AppBar, { AppBarProps } from ".";
 import Toolbar from "../../Toolbar";
 import IconButton from "../../IconButton";
@@ -26,7 +26,7 @@ const Template: Story<AppBarProps> = (args: AppBarProps) => {
     <AppBar {...args}>
       <Toolbar>
         <IconButton edge="start" color="inherit" aria-label="menu">
-          <MenuIcon />
+          <HamburgerIcon />
         </IconButton>
         <Typography variant="h6">News</Typography>
       </Toolbar>
@@ -40,7 +40,7 @@ const defaultCode = `
 <AppBar position='relative'>
   <Toolbar>
     <IconButton edge="start" color="inherit" aria-label="menu">
-      <MenuIcon/>
+      <HamburgerIcon/>
     </IconButton>
     <Typography variant="h6">News</Typography>
   </Toolbar>
@@ -69,7 +69,7 @@ const staticCode = `
 <AppBar position='static'>
   <Toolbar>
     <IconButton edge="start" color="inherit" aria-label="menu">
-      <MenuIcon/>
+      <HamburgerIcon/>
     </IconButton>
     <Typography variant="h6">News</Typography>
   </Toolbar>
@@ -98,7 +98,7 @@ const secondaryCode = `
 <AppBar position='static' color={'secondary'}>
   <Toolbar>
     <IconButton edge="start" color="inherit" aria-label="menu">
-      <MenuIcon/>
+      <HamburgerIcon/>
     </IconButton>
     <Typography variant="h6">News</Typography>
   </Toolbar>

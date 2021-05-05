@@ -1,7 +1,7 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
 import IconButton, { IconButtonProps } from ".";
-import DeleteIcon from "@material-ui/icons/Delete";
+import { TrashIcon } from "@gemeente-denhaag/icons";
 import pkg from "../package.json";
 
 export default {
@@ -19,14 +19,14 @@ export default {
 
 const Template: Story<IconButtonProps> = (args: IconButtonProps) => (
   <IconButton {...args}>
-    <DeleteIcon />
+    <TrashIcon />
   </IconButton>
 );
 
 // language=JS
 const defaultCode = `
 <IconButton>
-  <DeleteIcon/>
+  <TrashIcon />
 </IconButton>
 `;
 
@@ -45,7 +45,7 @@ Default.parameters = {
 //language=JS
 const primaryCode = `
 <IconButton color="primary">
-  <DeleteIcon/>
+  <TrashIcon />
 </IconButton>
 `;
 
@@ -67,7 +67,7 @@ PrimaryColoured.parameters = {
 // language=JS
 const smallCode = `
 <IconButton size="small">
-  <DeleteIcon/>
+  <TrashIcon />
 </IconButton>
 `;
 

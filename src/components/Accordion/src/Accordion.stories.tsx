@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { ExpandMore } from "@material-ui/icons";
+import { ChevronDownIcon } from "@gemeente-denhaag/icons";
 import Accordion, { AccordionProps } from ".";
 import AccordionSummary from "../../AccordionSummary";
 import Typography from "../../Typography";
@@ -22,7 +22,7 @@ export default {
 
 const Template: Story<AccordionProps> = (args: any) => (
   <Accordion {...args}>
-    <AccordionSummary expandIcon={<ExpandMore />}>
+    <AccordionSummary expandIcon={<ChevronDownIcon />}>
       <Typography>Click me to collapse me!</Typography>
     </AccordionSummary>
     <AccordionDetails>
