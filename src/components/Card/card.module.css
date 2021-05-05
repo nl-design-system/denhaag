@@ -143,12 +143,20 @@
   right: var(--denhaag-card-arrow-right);
 }
 
+.denhaag-card--case:hover .denhaag-card__arrow {
+  color: var(--denhaag-green-4);
+}
+
 .denhaag-card--case .denhaag-card__title {
   position: relative;
   color: var(--denhaag-green-3);
   font-weight: 700;
   padding-block: var(--denhaag-card-title-padding);
   padding-inline: var(--denhaag-card-title-padding);
+}
+
+.denhaag-card--case:hover .denhaag-card__title {
+  color: var(--denhaag-green-4);
 }
 
 .denhaag-card--case .denhaag-card__subtitle {
@@ -160,6 +168,10 @@
   box-sizing:initial;
   /*flex-grow: 1;/*
   /* height: 44px; */
+}
+
+.denhaag-card--case:hover .denhaag-card__subtitle {
+  color: var(--denhaag-green-4);
 }
 
 .denhaag-card--case:hover::before {
