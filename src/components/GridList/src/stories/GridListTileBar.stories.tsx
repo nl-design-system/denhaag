@@ -1,20 +1,17 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
 import { CircleHelpIcon } from "@gemeente-denhaag/icons";
-import IconButton from "../../IconButton";
-import GridListTileBar, { GridListTileBarProps } from ".";
-import GridListTile from "../../GridListTile";
-import GridList from "../../GridList";
-import pkg from "../package.json";
-import imageFile from "../../../../.storybook/stories/assets/logo.svg";
+import IconButton from "@gemeente-denhaag/iconbutton";
+import GridList, { GridListTile, GridListTileBar, GridListTileBarProps } from "..";
+import pkg from "../../package.json";
 
 export default {
-  title: 'Components/Layout/GridList/GridListTile/GridListTileBar',
+  title: "Components/Layout/GridList/GridListTile/GridListTileBar",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: 'dynamic',
+        type: "dynamic",
       },
     },
   },
@@ -24,7 +21,10 @@ export default {
 const Template: Story<GridListTileBarProps> = (args: GridListTileBarProps) => (
   <GridList cols={5}>
     <GridListTile cols={1} rows={2}>
-      <img src={imageFile} alt="The Hague municipality emblem" width={150} height={150} />
+      <img
+        src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/Demos.jpg/1200px-Demos.jpg"
+        alt="Four cassette tapes for demonstrating the GridListTile component."
+      />
       <GridListTileBar {...args} />
     </GridListTile>
   </GridList>
@@ -54,8 +54,8 @@ Default.args = {
       <CircleHelpIcon />
     </IconButton>
   ),
-  title: 'GridListTileBar',
-  subtitle: 'I am a GridListTileBar!',
+  title: "GridListTileBar",
+  subtitle: "I am a GridListTileBar!",
 };
 
 Default.parameters = {
@@ -87,7 +87,7 @@ const topCode = `
 export const TopPosition = Template.bind({});
 TopPosition.args = {
   ...Default.args,
-  titlePosition: 'top',
+  titlePosition: "top",
 };
 TopPosition.parameters = {
   docs: {
@@ -118,7 +118,7 @@ const buttonLeftCode = `
 export const ButtonLeft = Template.bind({});
 ButtonLeft.args = {
   ...Default.args,
-  actionPosition: 'left',
+  actionPosition: "left",
 };
 ButtonLeft.parameters = {
   docs: {

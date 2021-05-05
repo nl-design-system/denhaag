@@ -1,18 +1,15 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import GridListTile from "../../GridListTile";
-import GridList, { GridListProps } from ".";
-import pkg from "../package.json";
-
-import imageFile from "../../../../.storybook/stories/assets/logo.svg";
+import GridList, { GridListTile, GridListProps } from "..";
+import pkg from "../../package.json";
 
 export default {
-  title: 'Components/Layout/GridList',
+  title: "Components/Layout/GridList",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: 'dynamic',
+        type: "dynamic",
       },
     },
   },
@@ -25,7 +22,10 @@ const Template: Story<GridListProps> = (args: GridListProps) => (
       <p>This is a GridListTile inside a GridList.</p>
     </GridListTile>
     <GridListTile>
-      <img src={imageFile} alt="The Hague municipality emblem" width={150} height={150} />
+      <img
+        src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/Demos.jpg/1200px-Demos.jpg"
+        alt="Four cassette tapes for demonstrating the GridListTile component."
+      />
     </GridListTile>
   </GridList>
 );
