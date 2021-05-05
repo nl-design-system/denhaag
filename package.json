@@ -34,10 +34,8 @@
     "prettier": "prettier --write .",
     "start": "microbundle watch --no-compress --format modern,cjs",
     "storybook": "start-storybook -p 6006",
-    "test": "run-s test:unit lint test:build",
-    "test:build": "run-s build",
-    "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
-    "test:watch": "react-scripts test --env=jsdom"
+    "test": "cypress run-ct",
+    "test:open": "cypress open-ct"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.2",
