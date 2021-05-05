@@ -55,6 +55,7 @@ const SingleTemplate: Story<SvgIconProps> = ({ component, ...props }: SvgIconPro
 };
 
 const defaultCode = `
+// Update RightArrowIcon to the icon you would like to use.
 import { RightArrowIcon } from "@gemeente-denhaag/icons";
 <RightArrowIcon />
 `;
@@ -70,3 +71,10 @@ AllIcons.parameters = {
 };
 
 export const SingleIcon = SingleTemplate.bind({});
+SingleIcon.parameters = {
+  docs: {
+    source: {
+      code: defaultCode,
+    },
+  },
+};
