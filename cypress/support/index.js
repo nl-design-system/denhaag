@@ -14,9 +14,9 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+import './commands';
 
-import 'cypress-axe'
+import 'cypress-axe';
 import 'cypress-plugin-snapshots/commands';
 
 // Alternatively you can use CommonJS syntax:
