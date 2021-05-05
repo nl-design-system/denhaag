@@ -29,7 +29,7 @@
     "lint:js": "eslint src/**/*.{js,jsx,ts,tsx}",
     "postinstall": "husky install",
     "postpublish": "pinst --enable",
-    "prepare": "run-s clean build",
+    "prepare": "run-s build",
     "prepublishOnly": "pinst --disable",
     "prettier": "prettier --write .",
     "start": "microbundle watch --no-compress --format modern,cjs",
@@ -41,7 +41,6 @@
   },
   "dependencies": {
     "@material-ui/core": "^4.11.2",
-    "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha",
     "@material-ui/pickers": "^3.2.10",
     "yarn-outdated-formatter": "^2.2.0"
