@@ -11,9 +11,9 @@ import { cardClasses,
           cardArrowClasses,
           cardTitleClasses,
           cardSubtitleClasses,
-          cardCaseClasses } from  "./bem-mapping";
-import { CardHeader,
-          CardContent,
+          cardCaseClasses,
+          cardCaseFocusClasses } from  "./bem-mapping";
+import { CardContent,
           CardActions } from "@gemeente-denhaag/surfaces";
 import { Icon } from "@material-ui/core";
 
@@ -70,23 +70,24 @@ export const Card: React.FC<CardProps> = (props: CardProps) => {
       <MaterialCard classes={classes} {...muiVariant}>
         <div className="denhaag-card__wrapper">
           <div className="denhaag-card__background"></div>
-          <CardHeader
-            classes={titleClasses}
-            title={props.title}
-          />
-          <CardContent disableSpacing={true}>
-            <Typography variant="body2" classes={subtitleClasses} component="p">
-              {props.subTitle}
-            </Typography>
-            <CardActions disableSpacing={true}>
-              <Typography component="div" classes={subtitleClasses}>
-                {props.date.toLocaleDateString()}
-              </Typography>
-              <Icon classes={arrowClasses} aria-label="ArrowRight">
-                <ArrowForward />
-              </Icon>
-            </CardActions>
-          </CardContent>
+              <CardContent disableSpacing={true}>
+            <div className="denhaag-card--case__text__wrapper">
+                <Typography classes={titleClasses} component="p">
+                  {props.title}
+                </Typography>
+                <Typography classes={subtitleClasses} component="p">
+                  {props.subTitle}
+                </Typography>
+            </div>
+                <CardActions disableSpacing={true}>
+                  <Typography component="div" classes={subtitleClasses}>
+                    {props.date.toLocaleDateString()}
+                  </Typography>
+                  <Icon classes={arrowClasses} aria-label="ArrowRight">
+                    <ArrowForward />
+                  </Icon>
+                </CardActions>
+              </CardContent>
         </div>
       </MaterialCard>
     </StylesProvider>
