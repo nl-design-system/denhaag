@@ -1,13 +1,10 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import Tab, { TabProps } from ".";
-import TabContext from "../../TabContext";
-import Tabs from "../../Tabs";
-import TabPanel from "../../TabPanel";
+import Tab, { TabProps, TabContext, TabPanel, Tabs } from ".";
 import pkg from "../package.json";
 
 export default {
-  title: 'Components/Navigation/Tabs/Tab',
+  title: 'Components/Navigation/Tab',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
@@ -30,13 +27,13 @@ const Template: Story<TabProps> = (args: TabProps) => {
           setValue(newValue);
         }}
       >
-        <Tab {...args} />
+        <Tab value={0} {...args} />
         <Tab label="Another tab" value={1} />
         <Tab label="Yet another tab" value={2} />
       </Tabs>
-      <TabPanel value="1">Item One</TabPanel>
-      <TabPanel value="2">Item Two</TabPanel>
-      <TabPanel value="3">Item Three</TabPanel>
+      <TabPanel value="0">Item One</TabPanel>
+      <TabPanel value="1">Item Two</TabPanel>
+      <TabPanel value="2">Item Three</TabPanel>
     </TabContext>
   );
 };
@@ -54,9 +51,9 @@ return (
       <Tab label="Another tab" value={1}/>
       <Tab label="Yet another tab" value={2}/>
     </Tabs>
-    <TabPanel value="1">Item One</TabPanel>
-    <TabPanel value="2">Item Two</TabPanel>
-    <TabPanel value="3">Item Three</TabPanel>
+    <TabPanel value="0">Item One</TabPanel>
+    <TabPanel value="1">Item Two</TabPanel>
+    <TabPanel value="2">Item Three</TabPanel>
   </TabContext>
 );
 `;

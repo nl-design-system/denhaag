@@ -47,21 +47,6 @@
     },
     {
       "path": "../../components/Tab"
-    },
-    {
-      "path": "../../components/TabContext"
-    },
-    {
-      "path": "../../components/TabList"
-    },
-    {
-      "path": "../../components/TabPanel"
-    },
-    {
-      "path": "../../components/Tabs"
-    },
-    {
-      "path": "../../components/TabScrollButton"
     }
   ]
 }

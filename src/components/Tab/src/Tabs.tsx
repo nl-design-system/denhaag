@@ -103,5 +103,3 @@ export const Tabs: React.FC<TabsProps> = (props: TabsProps) => {
 };
 
 export default Tabs;
-export * from "@gemeente-denhaag/tab";
-export * from "@gemeente-denhaag/tabscrollbutton";
