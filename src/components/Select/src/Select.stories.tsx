@@ -5,7 +5,7 @@ import pkg from "../package.json";
 import Select, { SelectProps } from ".";
 import FormControl from "../../FormControl";
 import InputLabel from "../../InputLabel";
-import MenuItem from "../../MenuItem";
+import { MenuItem } from "../../Menu";
 
 export default {
   title: 'Components/Input/Select',

@@ -19,19 +19,7 @@
       "path": "../../components/Menu"
     },
     {
-      "path": "../../components/MenuItem"
-    },
-    {
-      "path": "../../components/MenuList"
-    },
-    {
       "path": "../../components/MobileStepper"
-    },
-    {
-      "path": "../../components/Popover"
-    },
-    {
-      "path": "../../components/Popper"
     },
     {
       "path": "../../components/Step"

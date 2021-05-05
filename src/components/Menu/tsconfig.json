@@ -11,18 +11,6 @@
   "references": [
     {
       "path": "../BaseProps"
-    },
-    {
-      "path": "../MenuItem"
-    },
-    {
-      "path": "../MenuList"
-    },
-    {
-      "path": "../Popover"
-    },
-    {
-      "path": "../Popper"
     }
   ]
 }
