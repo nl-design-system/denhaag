@@ -23,18 +23,15 @@
     },
     "dependencies": {
         "@gemeente-denhaag/baseprops": "^0.1.7",
-        "@gemeente-denhaag/listitem": "^0.1.7",
-        "@gemeente-denhaag/listitemavatar": "^0.1.7",
-        "@gemeente-denhaag/listitemicon": "^0.1.7",
-        "@gemeente-denhaag/listitemsecondaryaction": "^0.1.7",
-        "@gemeente-denhaag/listitemtext": "^0.1.7",
-        "@gemeente-denhaag/listsubheader": "^0.1.7",
         "@material-ui/core": "^4.11.0"
     },
     "peerDependencies": {
         "react": "^17.0.1"
     },
     "devDependencies": {
+        "@gemeente-denhaag/avatar": "*",
+        "@gemeente-denhaag/checkbox": "*",
+        "@gemeente-denhaag/iconbutton": "*",
         "@gemeente-denhaag/icons": "*"
     },
     "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"

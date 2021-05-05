@@ -11,24 +11,6 @@
   "references": [
     {
       "path": "../BaseProps"
-    },
-    {
-      "path": "../ListItem"
-    },
-    {
-      "path": "../ListItemAvatar"
-    },
-    {
-      "path": "../ListItemIcon"
-    },
-    {
-      "path": "../ListItemSecondaryAction"
-    },
-    {
-      "path": "../ListItemText"
-    },
-    {
-      "path": "../ListSubheader"
     }
   ]
 }

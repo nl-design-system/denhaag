@@ -28,21 +28,6 @@
       "path": "../../components/List"
     },
     {
-      "path": "../../components/ListItem"
-    },
-    {
-      "path": "../../components/ListItemAvatar"
-    },
-    {
-      "path": "../../components/ListItemSecondaryAction"
-    },
-    {
-      "path": "../../components/ListItemText"
-    },
-    {
-      "path": "../../components/ListSubheader"
-    },
-    {
       "path": "../../components/Typography"
     }
   ]

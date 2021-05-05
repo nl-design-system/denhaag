@@ -1,6 +1,9 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import pkg from "../package.json";
+import Checkbox from "@gemeente-denhaag/checkbox";
+import IconButton from "@gemeente-denhaag/iconbutton";
+import Avatar from "@gemeente-denhaag/avatar";
+import { ArchiveIcon, MessageIcon } from "@gemeente-denhaag/icons";
 import List, {
   ListProps,
   ListItem,
@@ -10,10 +13,7 @@ import List, {
   ListItemText,
   ListSubheader,
 } from ".";
-import Checkbox from "../../Checkbox";
-import IconButton from "../../IconButton";
-import Avatar from "../../Avatar";
-import { ArchiveIcon, MessageIcon } from "@gemeente-denhaag/icons";
+import pkg from "../package.json";
 
 export default {
   title: "Components/Data Display/List",

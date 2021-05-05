@@ -34,11 +34,4 @@ export const List: React.FC<ListProps> = (props: ListProps) => {
   return <MaterialList {...props}>{props.children}</MaterialList>;
 };
 
-export * from "@gemeente-denhaag/listitem";
-export * from "@gemeente-denhaag/listitemicon";
-export * from "@gemeente-denhaag/listitemavatar";
-export * from "@gemeente-denhaag/listitemsecondaryaction";
-export * from "@gemeente-denhaag/listitemtext";
-export * from "@gemeente-denhaag/listsubheader";
-
 export default List;
