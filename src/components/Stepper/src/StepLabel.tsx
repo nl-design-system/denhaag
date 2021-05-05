@@ -1,7 +1,7 @@
 import React from "react";
 import MaterialStepLabel from "@material-ui/core/StepLabel";
-import { StepIconProps } from "@gemeente-denhaag/stepicon";
 import BaseProps from "@gemeente-denhaag/baseprops";
+import { StepIconProps } from "./StepIcon";
 
 export interface StepLabelProps extends BaseProps {
   /**

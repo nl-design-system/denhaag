@@ -1,9 +1,6 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import Stepper, { StepperProps } from ".";
-import Step from "../../Step";
-import StepLabel from "../../StepLabel";
-import StepContent from "../../StepContent";
+import Stepper, { Step, StepLabel, StepContent, StepperProps } from ".";
 import pkg from "../package.json";
 
 export default {

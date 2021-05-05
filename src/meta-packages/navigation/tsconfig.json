@@ -19,27 +19,6 @@
       "path": "../../components/Menu"
     },
     {
-      "path": "../../components/MobileStepper"
-    },
-    {
-      "path": "../../components/Step"
-    },
-    {
-      "path": "../../components/StepButton"
-    },
-    {
-      "path": "../../components/StepConnector"
-    },
-    {
-      "path": "../../components/StepContent"
-    },
-    {
-      "path": "../../components/StepIcon"
-    },
-    {
-      "path": "../../components/StepLabel"
-    },
-    {
       "path": "../../components/Stepper"
     },
     {
