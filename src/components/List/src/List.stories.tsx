@@ -13,16 +13,15 @@ import List, {
 import Checkbox from "../../Checkbox";
 import IconButton from "../../IconButton";
 import Avatar from "../../Avatar";
-import CommentIcon from "@material-ui/icons/Comment";
-import FolderIcon from "@material-ui/icons/Folder";
+import { ArchiveIcon, MessageIcon } from "@gemeente-denhaag/icons";
 
 export default {
-  title: 'Components/Data Display/List',
+  title: "Components/Data Display/List",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: 'dynamic',
+        type: "dynamic",
       },
     },
   },
@@ -38,14 +37,14 @@ const Template: Story<ListProps> = (args: ListProps) => (
       <ListItemText primary="Line item" />
       <ListItemSecondaryAction>
         <IconButton edge="end" aria-label="comments">
-          <CommentIcon />
+          <MessageIcon />
         </IconButton>
       </ListItemSecondaryAction>
     </ListItem>
     <ListItem button>
       <ListItemAvatar>
         <Avatar>
-          <FolderIcon />
+          <ArchiveIcon />
         </Avatar>
       </ListItemAvatar>
       <ListItemText primary="Single-line item" secondary="Secondary text" />
@@ -63,14 +62,14 @@ const defaultCode = `
     <ListItemText primary='Line item'/>
     <ListItemSecondaryAction>
       <IconButton edge='end' aria-label='comments'>
-        <CommentIcon/>
+        <MessageIcon/>
       </IconButton>
     </ListItemSecondaryAction>
   </ListItem>
   <ListItem button>
     <ListItemAvatar>
       <Avatar>
-        <FolderIcon/>
+        <ArchiveIcon/>
       </Avatar>
     </ListItemAvatar>
     <ListItemText primary='Single-line item' secondary='Secondary text'/>
@@ -88,14 +87,14 @@ const denseCode = `
     <ListItemText primary="Line item"/>
     <ListItemSecondaryAction>
       <IconButton edge="end" aria-label="comments">
-        <CommentIcon/>
+        <MessageIcon/>
       </IconButton>
     </ListItemSecondaryAction>
   </ListItem>
   <ListItem button>
     <ListItemAvatar>
       <Avatar>
-        <FolderIcon/>
+        <ArchiveIcon/>
       </Avatar>
     </ListItemAvatar>
     <ListItemText primary="Single-line item" secondary="Secondary text"/>
@@ -113,14 +112,14 @@ const paddingCode = `
     <ListItemText primary="Line item"/>
     <ListItemSecondaryAction>
       <IconButton edge="end" aria-label="comments">
-        <CommentIcon/>
+        <MessageIcon/>
       </IconButton>
     </ListItemSecondaryAction>
   </ListItem>
   <ListItem button>
     <ListItemAvatar>
       <Avatar>
-        <FolderIcon/>
+        <ArchiveIcon/>
       </Avatar>
     </ListItemAvatar>
     <ListItemText primary="Single-line item" secondary="Secondary text"/>
@@ -138,14 +137,14 @@ const subheaderCode = `
     <ListItemText primary="Line item"/>
     <ListItemSecondaryAction>
       <IconButton edge="end" aria-label="comments">
-        <CommentIcon/>
+        <MessageIcon/>
       </IconButton>
     </ListItemSecondaryAction>
   </ListItem>
   <ListItem button>
     <ListItemAvatar>
       <Avatar>
-        <FolderIcon/>
+        <ArchiveIcon/>
       </Avatar>
     </ListItemAvatar>
     <ListItemText primary="Single-line item" secondary="Secondary text"/>

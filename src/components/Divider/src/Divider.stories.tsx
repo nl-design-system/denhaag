@@ -3,8 +3,7 @@ import { Meta, Story } from "@storybook/react";
 import Divider, { DividerProps } from ".";
 import pkg from "../package.json";
 import List, { ListItem, ListItemIcon, ListItemText } from "../../List";
-import InboxIcon from "@material-ui/icons/Inbox";
-import DraftsIcon from "@material-ui/icons/Drafts";
+import { InboxIcon, EmailIcon } from "@gemeente-denhaag/icons";
 
 export default {
   title: 'Components/Data Display/Divider',
@@ -30,7 +29,7 @@ const Template: Story<DividerProps> = (args: DividerProps) => (
     <Divider {...args} />
     <ListItem button>
       <ListItemIcon>
-        <DraftsIcon />
+        <EmailIcon />
       </ListItemIcon>
       <ListItemText primary="I am under the divider." />
     </ListItem>
@@ -49,7 +48,7 @@ const defaultCode = `
   <Divider/>
   <ListItem button>
     <ListItemIcon>
-      <DraftsIcon/>
+      <EmailIcon/>
     </ListItemIcon>
     <ListItemText primary="I am under the divider."/>
   </ListItem>
@@ -68,7 +67,7 @@ const insetCode = `
   <Divider variant="inset"/>
   <ListItem button>
     <ListItemIcon>
-      <DraftsIcon/>
+      <EmailIcon/>
     </ListItemIcon>
     <ListItemText primary="I am under the divider."/>
   </ListItem>
@@ -87,7 +86,7 @@ const lightCode = `
   <Divider light/>
   <ListItem button>
     <ListItemIcon>
-      <DraftsIcon/>
+      <EmailIcon/>
     </ListItemIcon>
     <ListItemText primary="I am under the divider."/>
   </ListItem>
@@ -106,7 +105,7 @@ const absoluteCode = `
   <Divider absolute/>
   <ListItem button>
     <ListItemIcon>
-      <DraftsIcon/>
+      <EmailIcon/>
     </ListItemIcon>
     <ListItemText primary="I am under the divider."/>
   </ListItem>

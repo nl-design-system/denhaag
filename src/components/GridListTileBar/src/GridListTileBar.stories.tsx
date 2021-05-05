@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import InfoIcon from "@material-ui/icons/Info";
+import { CircleHelpIcon } from "@gemeente-denhaag/icons";
 import IconButton from "../../IconButton";
 import GridListTileBar, { GridListTileBarProps } from ".";
 import GridListTile from "../../GridListTile";
@@ -37,7 +37,7 @@ const defaultCode = `
     <img src="{'static/media/logo.e029b128.svg'}" alt="The Hague municipality emblem" width="{150}"
          height="{150}"/>
     <GridListTileBar
-      actionIcon='{<IconButton aria-label="I am an IconButton!"><InfoIcon /></IconButton>}'
+      actionIcon='{<IconButton aria-label="I am an IconButton!"><CircleHelpIcon /></IconButton>}'
       subtitle="I am a GridListTileBar!"
       title="GridListTileBar" />
   </GridListTile>
@@ -51,7 +51,7 @@ export const Default = Template.bind({});
 Default.args = {
   actionIcon: (
     <IconButton aria-label="I am an IconButton!">
-      <InfoIcon />
+      <CircleHelpIcon />
     </IconButton>
   ),
   title: 'GridListTileBar',
@@ -73,7 +73,7 @@ const topCode = `
     <img src="{'static/media/logo.e029b128.svg'}" alt="The Hague municipality emblem" width="{150}"
          height="{150}"/>
     <GridListTileBar
-      actionIcon='{<IconButton aria-label="I am an IconButton!"><InfoIcon /></IconButton>}'
+      actionIcon='{<IconButton aria-label="I am an IconButton!"><CircleHelpIcon /></IconButton>}'
       subtitle="I am a GridListTileBar!"
       title="GridListTileBar"
       titlePosition="top"/>
@@ -103,7 +103,7 @@ const buttonLeftCode = `
   <GridListTile cols={1} rows={2}>
     <img src={'static/media/logo.e029b128.svg'} alt="The Hague municipality emblem" width={150} height={150}/>
     <GridListTileBar
-      actionIcon='{<IconButton aria-label="I am an IconButton!"><InfoIcon /></IconButton>}'
+      actionIcon='{<IconButton aria-label="I am an IconButton!"><CircleHelpIcon /></IconButton>}'
       subtitle="I am a GridListTileBar!"
       title='GridListTileBar'
       actionPosition='left'
