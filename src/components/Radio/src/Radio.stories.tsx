@@ -1,19 +1,17 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react/types-6-0";
+import { ShowIcon, HideIcon } from "@gemeente-denhaag/icons";
 import FormControlLabel from "../../FormControlLabel";
 import Radio, { RadioProps } from ".";
 import pkg from "../package.json";
 
-import ThumbDownIcon from '@material-ui/icons/ThumbDown';
-import ThumbUpIcon from '@material-ui/icons/ThumbUp';
-
 export default {
-  title: 'Components/Input/Radio',
+  title: "Components/Input/Radio",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: 'dynamic',
+        type: "dynamic",
       },
     },
   },
@@ -24,32 +22,32 @@ const Template: Story<RadioProps> = (args: any) => <FormControlLabel label="Radi
 
 export const Default: Story<RadioProps> = Template.bind({});
 Default.args = {
-  color: 'default',
-  size: 'medium',
+  color: "default",
+  size: "medium",
 };
 
 export const Primary: Story<RadioProps> = Template.bind({});
 Primary.args = {
-  color: 'primary',
+  color: "primary",
 };
 
 export const Secondary: Story<RadioProps> = Template.bind({});
 Secondary.args = {
-  color: 'secondary',
+  color: "secondary",
 };
 
 // language=JS
 const iconCode = `
  <FormControlLabel
-   control={<Radio checkedIcon={<ThumbUpIcon/>} icon={<ThumbDownIcon/>} onChange={() => {}}/>}
+   control={<Radio checkedIcon={<HideIcon/>} icon={<ShowIcon/>} onChange={() => {}}/>}
    label="Radio"
  />
 `;
 
 export const Icons: Story<RadioProps> = Template.bind({});
 Icons.args = {
-  icon: <ThumbDownIcon />,
-  checkedIcon: <ThumbUpIcon />,
+  icon: <ShowIcon />,
+  checkedIcon: <HideIcon />,
 };
 Icons.parameters = {
   docs: {

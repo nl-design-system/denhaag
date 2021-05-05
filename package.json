@@ -29,7 +29,7 @@
     "lint:js": "eslint src/**/*.{js,jsx,ts,tsx}",
     "postinstall": "husky install",
     "postpublish": "pinst --enable",
-    "prepare": "run-s build",
+    "prepare": "run-s clean build",
     "prepublishOnly": "pinst --disable",
     "prettier": "prettier --write .",
     "start": "microbundle watch --no-compress --format modern,cjs",

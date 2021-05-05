@@ -1,9 +1,6 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import FavoriteIcon from "@material-ui/icons/Favorite";
-import ShareIcon from "@material-ui/icons/Share";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import MoreVertIcon from "@material-ui/icons/MoreVert";
+import { CheckCircleIcon, ShareIcon, ChevronDownIcon, SettingsIcon } from "@gemeente-denhaag/icons";
 import Card, { CardProps } from ".";
 import CardActions from "../../CardActions";
 import CardContent from "../../CardContent";
@@ -14,12 +11,12 @@ import IconButton from "../../IconButton";
 import pkg from "../package.json";
 
 export default {
-  title: 'Components/Surfaces/Card',
+  title: "Components/Surfaces/Card",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: 'dynamic',
+        type: "dynamic",
       },
     },
   },
@@ -32,7 +29,7 @@ const Template: Story<CardProps> = (args: CardProps) => (
       avatar={<Avatar aria-label="recipe">R</Avatar>}
       action={
         <IconButton aria-label="settings">
-          <MoreVertIcon />
+          <SettingsIcon />
         </IconButton>
       }
       title="Shrimp and Chorizo Paella"
@@ -46,13 +43,13 @@ const Template: Story<CardProps> = (args: CardProps) => (
     </CardContent>
     <CardActions disableSpacing>
       <IconButton aria-label="add to favorites">
-        <FavoriteIcon />
+        <CheckCircleIcon />
       </IconButton>
       <IconButton aria-label="share">
         <ShareIcon />
       </IconButton>
       <IconButton aria-label="show more">
-        <ExpandMoreIcon />
+        <ChevronDownIcon />
       </IconButton>
     </CardActions>
   </Card>
@@ -65,7 +62,7 @@ const defaultCode = `
     avatar={<Avatar aria-label='recipe'>R</Avatar>}
     action={
       <IconButton aria-label='settings'>
-        <MoreVertIcon/>
+        <SettingsIcon/>
       </IconButton>
     }
     title='Shrimp and Chorizo Paella'
@@ -78,13 +75,13 @@ const defaultCode = `
     </CardContent>
     <CardActions disableSpacing>
       <IconButton aria-label='add to favorites'>
-        <FavoriteIcon/>
+        <CheckCircleIcon/>
       </IconButton>
       <IconButton aria-label='share'>
         <ShareIcon/>
       </IconButton>
       <IconButton aria-label='show more'>
-        <ExpandMoreIcon/>
+        <ChevronDownIcon/>
       </IconButton>
     </CardActions>
   </CardHeader>
@@ -111,7 +108,7 @@ const raisedCode = `
     avatar={<Avatar aria-label='recipe'>R</Avatar>}
     action={
       <IconButton aria-label='settings'>
-        <MoreVertIcon/>
+        <SettingsIcon/>
       </IconButton>
     }
     title='Shrimp and Chorizo Paella'
@@ -125,13 +122,13 @@ const raisedCode = `
     </CardContent>
     <CardActions disableSpacing>
       <IconButton aria-label='add to favorites'>
-        <FavoriteIcon/>
+        <CheckCircleIcon/>
       </IconButton>
       <IconButton aria-label='share'>
         <ShareIcon/>
       </IconButton>
       <IconButton aria-label='show more'>
-        <ExpandMoreIcon/>
+        <ChevronDownIcon/>
       </IconButton>
     </CardActions>
   </CardHeader>
