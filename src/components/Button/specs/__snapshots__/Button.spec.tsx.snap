@@ -1,0 +1,10 @@
+exports[`Button tests > matches snapshot #0`] = `
+<button
+  class="MuiButtonBase-root MuiButton-root MuiButton-text"
+  tabindex="0"
+  type="button"
+>
+  <span class="MuiButton-label">Test button</span
+  ><span class="MuiTouchRipple-root"></span>
+</button>
+`;

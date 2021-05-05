@@ -17,6 +17,7 @@
 import './commands'
 
 import 'cypress-axe'
+import 'cypress-plugin-snapshots/commands';
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

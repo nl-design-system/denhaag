@@ -22,7 +22,12 @@ describe("Button tests", () => {
 
   it("does not violate any accessibility rules", () => {
     mount(<Button>Test button</Button>);
-    cy.injectAxe()
-    cy.checkA11y('button')
+    cy.injectAxe();
+    cy.checkA11y("button");
+  });
+
+  it("matches snapshot", () => {
+    mount(<Button>Test button</Button>);
+    cy.get("button").toMatchSnapshot();
   });
 });

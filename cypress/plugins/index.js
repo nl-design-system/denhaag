@@ -23,5 +23,8 @@ module.exports = (on, config) => {
     require('@cypress/react/plugins/react-scripts')(on, config)
   }
 
+  const { initPlugin } = require('cypress-plugin-snapshots/plugin');
+  initPlugin(on, config);
+
   return config
 }

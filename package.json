@@ -70,6 +70,7 @@
     "cross-env": "^7.0.2",
     "cypress": "^7.2.0",
     "cypress-axe": "^0.12.2",
+    "cypress-plugin-snapshots": "^1.4.4",
     "eslint": "^7.18.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",
