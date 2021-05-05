@@ -25,9 +25,6 @@
     "@gemeente-denhaag/appbar": "^0.1.7",
     "@gemeente-denhaag/baseprops": "^0.1.7",
     "@gemeente-denhaag/card": "^0.1.7",
-    "@gemeente-denhaag/cardactions": "^0.1.7",
-    "@gemeente-denhaag/cardcontent": "^0.1.7",
-    "@gemeente-denhaag/cardheader": "^0.1.7",
     "@gemeente-denhaag/paper": "^0.1.7",
     "@gemeente-denhaag/toolbar": "^0.1.7"
   },

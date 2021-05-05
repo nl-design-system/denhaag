@@ -1,17 +1,14 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
+import Typography from "@gemeente-denhaag/typography";
+import Avatar from "@gemeente-denhaag/avatar";
+import IconButton from "@gemeente-denhaag/iconbutton";
 import { CheckCircleIcon, ShareIcon, ChevronDownIcon, SettingsIcon } from "@gemeente-denhaag/icons";
-import Card, { CardProps } from ".";
-import CardActions from "../../CardActions";
-import CardContent from "../../CardContent";
-import CardHeader from "../../CardHeader";
-import Typography from "../../Typography";
-import Avatar from "../../Avatar";
-import IconButton from "../../IconButton";
-import pkg from "../package.json";
+import Card, { CardProps, CardActions, CardContent, CardHeader } from "..";
+import pkg from "../../package.json";
 
 export default {
-  title: "Components/Surfaces/Card",
+  title: "Components/Surfaces/Card/Card",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {

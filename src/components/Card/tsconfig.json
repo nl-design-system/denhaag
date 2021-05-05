@@ -7,22 +7,10 @@
     "composite": true
   },
   "include": ["src/**/*"],
-  "exclude": ["dist", "src/*.stories.tsx"],
+  "exclude": ["dist", "src/**/*.stories.tsx"],
   "references": [
     {
       "path": "../BaseProps"
-    },
-    {
-      "path": "../CardActions"
-    },
-    {
-      "path": "../CardContent"
-    },
-    {
-      "path": "../CardHeader"
-    },
-    {
-      "path": "../Paper"
     }
   ]
 }

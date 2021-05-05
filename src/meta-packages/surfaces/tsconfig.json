@@ -22,18 +22,6 @@
       "path": "../../components/Card"
     },
     {
-      "path": "../../components/CardActions"
-    },
-    {
-      "path": "../../components/CardContent"
-    },
-    {
-      "path": "../../components/CardHeader"
-    },
-    {
-      "path": "../../components/Paper"
-    },
-    {
       "path": "../../components/Toolbar"
     }
   ]
