@@ -1,7 +1,7 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
 import Badge, { BadgeProps } from ".";
-import MailIcon from "@material-ui/icons/Mail";
+import { MessageIcon } from "@gemeente-denhaag/icons";
 import pkg from "../package.json";
 
 export default {
@@ -19,7 +19,7 @@ export default {
 
 const Template: Story<BadgeProps> = (args: BadgeProps) => (
   <Badge {...args}>
-    <MailIcon />
+    <MessageIcon />
   </Badge>
 );
 
@@ -35,7 +35,7 @@ Default.parameters = {
   docs: {
     source: {
       // language=HTML
-      code: `<Badge badgeContent={4}><MailIcon /></Badge>`,
+      code: `<Badge badgeContent={4}><MessageIcon /></Badge>`,
     },
   },
 };
@@ -53,7 +53,7 @@ PrimaryColoured.parameters = {
   docs: {
     source: {
       // language=HTML
-      code: `<Badge badgeContent={4} color={'primary'}><MailIcon /></Badge>`,
+      code: `<Badge badgeContent={4} color={'primary'}><MessageIcon /></Badge>`,
     },
   },
 };
@@ -71,7 +71,7 @@ CircleOverlap.parameters = {
   docs: {
     source: {
       // language=HTML
-      code: `<Badge badgeContent={4} color={'primary'} overlap={'circle'}><MailIcon /></Badge>`,
+      code: `<Badge badgeContent={4} color={'primary'} overlap={'circle'}><MessageIcon /></Badge>`,
     },
   },
 };
@@ -88,7 +88,7 @@ DotVariant.args = {
 DotVariant.parameters = {
   docs: {
     source: {
-      code: `<Badge badgeContent={4} color={'primary'} variant={'dot'}><MailIcon /></Badge>`,
+      code: `<Badge badgeContent={4} color={'primary'} variant={'dot'}><MessageIcon /></Badge>`,
     },
   },
 };
