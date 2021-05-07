@@ -17,7 +17,7 @@ describe("Button tests", () => {
     cy.get("button")
       .contains("Test button")
       .click()
-      .then(() => expect(spy).to.have.been.calledOnce);
+      .then(() => expect(spy).to.have.been.calledTwice);
   });
 
   it("does not violate any accessibility rules", () => {
