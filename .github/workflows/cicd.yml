@@ -28,9 +28,10 @@ jobs:
           yarn install
           yarn build-storybook
 
-      - name: Cypress run
+      - name: Run Cypress component tests
         uses: cypress-io/github-action@v2
         with:
+          install: false
           record: false
           command: yarn cypress run-ct
 
