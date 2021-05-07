@@ -28,9 +28,11 @@ jobs:
           yarn install
           yarn build-storybook
 
-      - name: test
-        run: |
-          yarn test
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          record: false
+          command: yarn cypress run-ct
 
       - name: Upload storybook
         uses: actions/upload-artifact@v2
