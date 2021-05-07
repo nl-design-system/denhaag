@@ -28,6 +28,10 @@ jobs:
           yarn install
           yarn build-storybook
 
+      - name: test
+        run: |
+          yarn test
+
       - name: Upload storybook
         uses: actions/upload-artifact@v2
         with:
