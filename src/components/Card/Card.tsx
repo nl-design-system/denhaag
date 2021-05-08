@@ -66,7 +66,7 @@ export const Card: React.FC<CardProps> = (props: CardProps) => {
 
   return (
     <StylesProvider injectFirst>
-      <MaterialCard classes={classes} {...muiVariant}>
+      <MaterialCard classes={classes} {...muiVariant} tabIndex={0}>
         <div className="denhaag-card__wrapper">
           <div className="denhaag-card__background"></div>
               <CardContent disableSpacing={true}>
