@@ -199,7 +199,7 @@ PaddingDisabled.parameters = {
  */
 export const Subheader = Template.bind({});
 Subheader.args = {
-  subheader: <ListSubheader component="div">Nested Subheader</ListSubheader>,
+  subheader: <ListSubheader>Nested Subheader</ListSubheader>,
 };
 Subheader.parameters = {
   docs: {
@@ -244,7 +244,7 @@ const FigmaTemplate: Story<ListProps> = (args: ListProps) => (
  */
 export const SimpleList = FigmaTemplate.bind({});
 SimpleList.args = {
-  subheader: <ListSubheader component="div">Nested Subheader</ListSubheader>,
+  subheader: <ListSubheader>Subheader</ListSubheader>,
 };
 SimpleList.parameters = {
   docs: {
