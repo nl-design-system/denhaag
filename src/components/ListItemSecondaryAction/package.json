@@ -1,20 +1,32 @@
 {
-  "name": "@gemeente-denhaag/listitemsecondaryaction",
-  "description": "A ListItemSecondaryAction component",
-  "author": "Municipality of The Hague",
-  "version": "0.1.6",
-  "main": "ListItemSecondaryAction.tsx",
-  "module": "ListItemSecondaryAction.tsx",
-  "license": "EUPL-1.2",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
-    "directory": ""
-  },
-  "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
-  "dependencies": {
-    "@gemeente-denhaag/baseprops": "^0.1.6",
-    "@material-ui/core": "^4.11.0"
-  },
-  "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
+    "name": "@gemeente-denhaag/listitemsecondaryaction",
+    "version": "0.1.7",
+    "description": "A ListItemSecondaryAction component",
+    "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
+        "directory": ""
+    },
+    "license": "EUPL-1.2",
+    "author": "Municipality of The Hague",
+    "exports": "./dist/index.js",
+    "main": "dist/index.js",
+    "module": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc -b",
+        "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+    },
+    "dependencies": {
+        "@gemeente-denhaag/baseprops": "^0.1.7",
+        "@material-ui/core": "^4.11.0"
+    },
+    "peerDependencies": {
+        "react": "^17.0.1"
+    },
+    "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
 }
