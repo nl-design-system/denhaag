@@ -1,6 +1,7 @@
 import React from "react";
 import MaterialList from "@material-ui/core/List";
 import BaseProps from "@gemeente-denhaag/baseprops";
+import ListSubheader from "@gemeente-denhaag/listsubheader";
 
 export interface ListProps extends BaseProps {
   /**
@@ -24,14 +25,17 @@ export interface ListProps extends BaseProps {
   /**
    * The content of the subheader, normally `ListSubheader`.
    */
-  subheader: React.ReactElement<any, any>;
+  subheader: React.ElementType<typeof ListSubheader>;
 }
 
 /**
  * Primary UI component for user interaction
  */
 export const List: React.FC<ListProps> = (props: ListProps) => {
-  return <MaterialList {...props}>{props.children}</MaterialList>;
+  const subheader = (props.subheader as unknown) as React.ReactElement;
+  const materialProps = {...props, subheader};
+
+  return <MaterialList {...materialProps}>{props.children}</MaterialList>;
 };
 
 export * from "@gemeente-denhaag/listitem";
