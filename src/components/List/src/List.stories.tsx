@@ -13,7 +13,7 @@ import List, {
 import Checkbox from "../../Checkbox";
 import IconButton from "../../IconButton";
 import Avatar from "../../Avatar";
-import { ArchiveIcon, MessageIcon } from "@gemeente-denhaag/icons";
+import { ArchiveIcon, ChevronRightIcon, HouseIcon, TrashIcon } from "@gemeente-denhaag/icons";
 
 export default {
   title: "Components/Data Display/List",
@@ -37,7 +37,7 @@ const Template: Story<ListProps> = (args: ListProps) => (
       <ListItemText primary="Line item" />
       <ListItemSecondaryAction>
         <IconButton edge="end" aria-label="comments">
-          <MessageIcon />
+          <HouseIcon />
         </IconButton>
       </ListItemSecondaryAction>
     </ListItem>
@@ -202,6 +202,51 @@ Subheader.args = {
   subheader: <ListSubheader component="div">Nested Subheader</ListSubheader>,
 };
 Subheader.parameters = {
+  docs: {
+    source: {
+      // language=HTML
+      code: subheaderCode,
+    },
+  },
+};
+
+
+const FigmaTemplate: Story<ListProps> = (args: ListProps) => (
+  <List {...args}>
+    <ListItem dense>
+      <ListItemIcon >
+          <HouseIcon />
+      </ListItemIcon>
+      <ListItemText primary="List item" />
+      <ListItemSecondaryAction>
+        <IconButton color="inherit" edge="end" aria-label="comments">
+          <ChevronRightIcon />
+        </IconButton>
+      </ListItemSecondaryAction>
+    </ListItem>
+    <ListItem button>
+      <ListItemIcon >
+        <HouseIcon color="inherit" />
+      </ListItemIcon>
+      <ListItemSecondaryAction>
+        <IconButton color="inherit" edge="end" aria-label="comments">
+          <TrashIcon />
+        </IconButton>
+      </ListItemSecondaryAction>
+      <ListItemText primary="Single-line item" secondary="Secondary text" />
+    </ListItem>
+  </List>
+);
+
+
+/**
+ * Simple list
+ */
+export const SimpleList = FigmaTemplate.bind({});
+SimpleList.args = {
+  subheader: <ListSubheader component="div">Nested Subheader</ListSubheader>,
+};
+SimpleList.parameters = {
   docs: {
     source: {
       // language=HTML
