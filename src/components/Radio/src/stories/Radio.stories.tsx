@@ -1,12 +1,13 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react/types-6-0";
+import FormControlLabel from "@gemeente-denhaag/formcontrollabel";
 import { ShowIcon, HideIcon } from "@gemeente-denhaag/icons";
-import FormControlLabel from "../../FormControlLabel";
-import Radio, { RadioProps } from ".";
-import pkg from "../package.json";
+
+import Radio, { RadioProps } from "..";
+import pkg from "../../package.json";
 
 export default {
-  title: "Components/Input/Radio",
+  title: "Components/Input/Radio/Radio",
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {

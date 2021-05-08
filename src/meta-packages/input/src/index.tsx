@@ -10,7 +10,6 @@ export * from "@gemeente-denhaag/inputlabel";
 export * from "@gemeente-denhaag/pickers";
 export * from "@gemeente-denhaag/pickersutilsprovider";
 export * from "@gemeente-denhaag/radio";
-export * from "@gemeente-denhaag/radiogroup";
 export * from "@gemeente-denhaag/select";
 export * from "@gemeente-denhaag/switch";
 export * from "@gemeente-denhaag/textfield";
