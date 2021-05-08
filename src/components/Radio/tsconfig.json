@@ -8,5 +8,12 @@
   },
   "include": ["src/**/*"],
   "exclude": ["dist", "src/**/*.stories.tsx"],
-  "references": []
+  "references": [
+    {
+      "path": "../FormControlLabel"
+    },
+    {
+      "path": "../Icons"
+    }
+  ]
 }

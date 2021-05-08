@@ -75,7 +75,6 @@
       "@gemeente-denhaag/textfield": ["TextField/src/*"],
       "@gemeente-denhaag/toolbar": ["Toolbar/src/*"],
       "@gemeente-denhaag/typography": ["Typography/src/*"],
-
       "@gemeente-denhaag/datadisplay": ["datadisplay/src/*"],
       "@gemeente-denhaag/denhaag-component-library": ["denhaag-component-library/src/*"],
       "@gemeente-denhaag/input": ["input/src/*"],
@@ -90,22 +89,10 @@
       "path": "src/components/Accordion"
     },
     {
-      "path": "src/components/AccordionActions"
-    },
-    {
-      "path": "src/components/AccordionDetails"
-    },
-    {
-      "path": "src/components/AccordionSummary"
-    },
-    {
       "path": "src/components/AppBar"
     },
     {
       "path": "src/components/Avatar"
-    },
-    {
-      "path": "src/components/AvatarGroup"
     },
     {
       "path": "src/components/Badge"
@@ -130,15 +117,6 @@
     },
     {
       "path": "src/components/Card"
-    },
-    {
-      "path": "src/components/CardActions"
-    },
-    {
-      "path": "src/components/CardContent"
-    },
-    {
-      "path": "src/components/CardHeader"
     },
     {
       "path": "src/components/Checkbox"
@@ -168,16 +146,13 @@
       "path": "src/components/GridList"
     },
     {
-      "path": "src/components/GridListTile"
-    },
-    {
-      "path": "src/components/GridListTileBar"
-    },
-    {
       "path": "src/components/Hidden"
     },
     {
       "path": "src/components/IconButton"
+    },
+    {
+      "path": "src/components/Icons"
     },
     {
       "path": "src/components/InputLabel"
@@ -189,37 +164,7 @@
       "path": "src/components/List"
     },
     {
-      "path": "src/components/ListItem"
-    },
-    {
-      "path": "src/components/ListItemAvatar"
-    },
-    {
-      "path": "src/components/ListItemIcon"
-    },
-    {
-      "path": "src/components/ListItemSecondaryAction"
-    },
-    {
-      "path": "src/components/ListItemText"
-    },
-    {
-      "path": "src/components/ListSubheader"
-    },
-    {
       "path": "src/components/Menu"
-    },
-    {
-      "path": "src/components/MenuItem"
-    },
-    {
-      "path": "src/components/MenuList"
-    },
-    {
-      "path": "src/components/MobileStepper"
-    },
-    {
-      "path": "src/components/Paper"
     },
     {
       "path": "src/components/Pickers"
@@ -228,37 +173,10 @@
       "path": "src/components/PickersUtilsProvider"
     },
     {
-      "path": "src/components/Popover"
-    },
-    {
-      "path": "src/components/Popper"
-    },
-    {
       "path": "src/components/Radio"
     },
     {
-      "path": "src/components/RadioGroup"
-    },
-    {
       "path": "src/components/Select"
-    },
-    {
-      "path": "src/components/Step"
-    },
-    {
-      "path": "src/components/StepButton"
-    },
-    {
-      "path": "src/components/StepConnector"
-    },
-    {
-      "path": "src/components/StepContent"
-    },
-    {
-      "path": "src/components/StepIcon"
-    },
-    {
-      "path": "src/components/StepLabel"
     },
     {
       "path": "src/components/Stepper"
@@ -271,21 +189,6 @@
     },
     {
       "path": "src/components/Tab"
-    },
-    {
-      "path": "src/components/TabContext"
-    },
-    {
-      "path": "src/components/TabList"
-    },
-    {
-      "path": "src/components/TabPanel"
-    },
-    {
-      "path": "src/components/Tabs"
-    },
-    {
-      "path": "src/components/TabScrollButton"
     },
     {
       "path": "src/components/TextField"

@@ -10,6 +10,18 @@
   "exclude": ["dist", "src/*.stories.tsx"],
   "references": [
     {
+      "path": "../Avatar"
+    },
+    {
+      "path": "../Checkbox"
+    },
+    {
+      "path": "../IconButton"
+    },
+    {
+      "path": "../Icons"
+    },
+    {
       "path": "../BaseProps"
     }
   ]

@@ -10,6 +10,12 @@
   "exclude": ["dist", "src/*.stories.tsx"],
   "references": [
     {
+      "path": "../Icons"
+    },
+    {
+      "path": "../Typography"
+    },
+    {
       "path": "../BaseProps"
     }
   ]
