@@ -25,6 +25,7 @@
       "@gemeente-denhaag/cardheader": ["CardHeader/src/*"],
       "@gemeente-denhaag/checkbox": ["Checkbox/src/*"],
       "@gemeente-denhaag/container": ["Container/src/*"],
+      "@gemeente-denhaag/denhaagbrand":  ["DenHaagBrand/src/*"],
       "@gemeente-denhaag/divider": ["Divider/src/*"],
       "@gemeente-denhaag/drawer": ["Drawer/src/*"],
       "@gemeente-denhaag/formcontrol": ["FormControl/src/*"],
@@ -313,6 +314,9 @@
     },
     {
       "path": "src/meta-packages/surfaces"
-    }
+    },
+    {
+      "path": "src/styles/BaseStyles"
+    },
   ]
 }
