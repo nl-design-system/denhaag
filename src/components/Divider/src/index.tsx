@@ -1,6 +1,6 @@
-import React from "react";
-import MaterialDivider from "@material-ui/core/Divider";
-import { BaseDataDisplayClassesProps } from "@gemeente-denhaag/basedatadisplayprops";
+import React from 'react';
+import MaterialDivider from '@material-ui/core/Divider';
+import { BaseDataDisplayClassesProps } from '@gemeente-denhaag/basedatadisplayprops';
 
 export interface DividerProps extends BaseDataDisplayClassesProps {
   /**
@@ -21,12 +21,12 @@ export interface DividerProps extends BaseDataDisplayClassesProps {
   /**
    * The divider orientation.
    */
-  orientation?: "horizontal" | "vertical";
+  orientation?: 'horizontal' | 'vertical';
 
   /**
    * The variant to use.
    */
-  variant?: "fullWidth" | "inset" | "middle";
+  variant?: 'fullWidth' | 'inset' | 'middle';
 }
 
 /**

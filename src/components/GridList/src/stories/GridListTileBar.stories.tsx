@@ -1,17 +1,17 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import { CircleHelpIcon } from "@gemeente-denhaag/icons";
-import IconButton from "@gemeente-denhaag/iconbutton";
-import GridList, { GridListTile, GridListTileBar, GridListTileBarProps } from "..";
-import pkg from "../../package.json";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import { CircleHelpIcon } from '@gemeente-denhaag/icons';
+import IconButton from '@gemeente-denhaag/iconbutton';
+import GridList, { GridListTile, GridListTileBar, GridListTileBarProps } from '..';
+import pkg from '../../package.json';
 
 export default {
-  title: "Components/Layout/GridList/GridListTile/GridListTileBar",
+  title: 'Components/Layout/GridList/GridListTile/GridListTileBar',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "dynamic",
+        type: 'dynamic',
       },
     },
   },
@@ -54,8 +54,8 @@ Default.args = {
       <CircleHelpIcon />
     </IconButton>
   ),
-  title: "GridListTileBar",
-  subtitle: "I am a GridListTileBar!",
+  title: 'GridListTileBar',
+  subtitle: 'I am a GridListTileBar!',
 };
 
 Default.parameters = {
@@ -87,7 +87,7 @@ const topCode = `
 export const TopPosition = Template.bind({});
 TopPosition.args = {
   ...Default.args,
-  titlePosition: "top",
+  titlePosition: 'top',
 };
 TopPosition.parameters = {
   docs: {
@@ -118,7 +118,7 @@ const buttonLeftCode = `
 export const ButtonLeft = Template.bind({});
 ButtonLeft.args = {
   ...Default.args,
-  actionPosition: "left",
+  actionPosition: 'left',
 };
 ButtonLeft.parameters = {
   docs: {

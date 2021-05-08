@@ -1,6 +1,6 @@
-import React from "react";
-import MaterialMobileStepper from "@material-ui/core/MobileStepper";
-import { BaseChildrenProps } from "@gemeente-denhaag/baseprops";
+import React from 'react';
+import MaterialMobileStepper from '@material-ui/core/MobileStepper';
+import { BaseChildrenProps } from '@gemeente-denhaag/baseprops';
 
 export interface MobileStepperProps extends BaseChildrenProps {
   /**
@@ -26,7 +26,7 @@ export interface MobileStepperProps extends BaseChildrenProps {
   /**
    * Set the positioning type.
    */
-  position?: "bottom" | "static" | "top";
+  position?: 'bottom' | 'static' | 'top';
 
   /**
    * The total steps.
@@ -36,7 +36,7 @@ export interface MobileStepperProps extends BaseChildrenProps {
   /**
    * The variant to use.
    */
-  variant?: "dots" | "progress" | "text";
+  variant?: 'dots' | 'progress' | 'text';
 }
 
 /**

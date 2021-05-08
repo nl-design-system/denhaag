@@ -1,6 +1,6 @@
-import React from "react";
-import MaterialStepper from "@material-ui/core/Stepper";
-import BaseProps from "@gemeente-denhaag/baseprops";
+import React from 'react';
+import MaterialStepper from '@material-ui/core/Stepper';
+import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface StepperProps extends BaseProps {
   /**
@@ -27,7 +27,7 @@ export interface StepperProps extends BaseProps {
   /**
    * The stepper orientation (layout flow direction).
    */
-  orientation?: "horizontal" | "vertical";
+  orientation?: 'horizontal' | 'vertical';
 }
 
 /**

@@ -1,5 +1,5 @@
-import React from "react";
-import MaterialGridListTileBar from "@material-ui/core/GridListTileBar";
+import React from 'react';
+import MaterialGridListTileBar from '@material-ui/core/GridListTileBar';
 
 export interface GridListTileBarProps {
   /**
@@ -10,7 +10,7 @@ export interface GridListTileBarProps {
   /**
    * Position of secondary action button.
    */
-  actionPosition?: "left" | "right";
+  actionPosition?: 'left' | 'right';
 
   /**
    * Overrides or extends the styles applied to the component.
@@ -30,7 +30,7 @@ export interface GridListTileBarProps {
   /**
    * Position of the title bar.
    */
-  titlePosition?: "top" | "bottom";
+  titlePosition?: 'top' | 'bottom';
 }
 
 /**

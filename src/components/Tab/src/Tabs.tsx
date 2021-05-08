@@ -1,6 +1,6 @@
-import React from "react";
-import MaterialTabs from "@material-ui/core/Tabs";
-import BaseProps from "@gemeente-denhaag/baseprops";
+import React from 'react';
+import MaterialTabs from '@material-ui/core/Tabs';
+import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface TabsProps extends BaseProps {
   /**
@@ -31,7 +31,7 @@ export interface TabsProps extends BaseProps {
   /**
    * Determines the color of the indicator.
    */
-  indicatorColor?: "primary" | "secondary";
+  indicatorColor?: 'primary' | 'secondary';
 
   /**
    * Callback fired when the value changes.
@@ -43,7 +43,7 @@ export interface TabsProps extends BaseProps {
   /**
    * The tabs orientation (layout flow direction).
    */
-  orientation?: "horizontal" | "vertical";
+  orientation?: 'horizontal' | 'vertical';
 
   /**
    * The component used to render the scroll buttons.
@@ -56,7 +56,7 @@ export interface TabsProps extends BaseProps {
    * - desktop will only present them on medium and larger viewports.
    * - on will always present them. - off will never present them.
    */
-  scrollButtons?: "auto" | "desktop" | "off" | "on";
+  scrollButtons?: 'auto' | 'desktop' | 'off' | 'on';
 
   /**
    * If true the selected tab changes on focus.
@@ -76,7 +76,7 @@ export interface TabsProps extends BaseProps {
   /**
    * Determines the color of the Tab.
    */
-  textColor?: "inherit" | "primary" | "secondary";
+  textColor?: 'inherit' | 'primary' | 'secondary';
 
   /**
    * The value of the currently selected Tab.
@@ -90,7 +90,7 @@ export interface TabsProps extends BaseProps {
    *  - fullWidth will make the tabs grow to use all the available space, which should be used for small views, like on mobile.
    *  - standard will render the default state.
    */
-  variant?: "fullWidth" | "scrollable" | "standard";
+  variant?: 'fullWidth' | 'scrollable' | 'standard';
 }
 
 /**

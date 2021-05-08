@@ -1,6 +1,6 @@
-import React from "react";
-import MaterialMenuList from "@material-ui/core/MenuList";
-import { BaseChildrenProps } from "@gemeente-denhaag/baseprops";
+import React from 'react';
+import MaterialMenuList from '@material-ui/core/MenuList';
+import { BaseChildrenProps } from '@gemeente-denhaag/baseprops';
 
 export interface MenuListProps extends BaseChildrenProps {
   /**
@@ -26,7 +26,7 @@ export interface MenuListProps extends BaseChildrenProps {
   /**
    * The variant to use.
    */
-  variant?: "menu" | "selectedMenu";
+  variant?: 'menu' | 'selectedMenu';
 }
 
 /**

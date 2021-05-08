@@ -1,6 +1,6 @@
-import React from "react";
-import MaterialListItemAvatar from "@material-ui/core/ListItemAvatar";
-import BaseProps from "@gemeente-denhaag/baseprops";
+import React from 'react';
+import MaterialListItemAvatar from '@material-ui/core/ListItemAvatar';
+import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface ListItemAvatarProps extends BaseProps {
   /**

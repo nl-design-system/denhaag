@@ -1,6 +1,6 @@
-import React from "react";
-import MaterialCard from "@material-ui/core/Card";
-import { BasePaperProps } from "./BasePaperProps";
+import React from 'react';
+import MaterialCard from '@material-ui/core/Card';
+import { BasePaperProps } from './BasePaperProps';
 
 export interface CardProps extends BasePaperProps {
   /**

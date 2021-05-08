@@ -1,12 +1,12 @@
-import React from "react";
-import MaterialGridList from "@material-ui/core/GridList";
-import BaseLayoutProps from "@gemeente-denhaag/baselayoutprops";
+import React from 'react';
+import MaterialGridList from '@material-ui/core/GridList';
+import BaseLayoutProps from '@gemeente-denhaag/baselayoutprops';
 
 export interface GridListProps extends BaseLayoutProps {
   /**
    * Number of pixels for one cell height. Set auto for children to define the height.
    */
-  cellHeight?: number | "auto";
+  cellHeight?: number | 'auto';
 
   /**
    * Number of columns.

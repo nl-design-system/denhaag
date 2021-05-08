@@ -1,6 +1,6 @@
-import React from "react";
-import MaterialListItemIcon from "@material-ui/core/ListItemIcon";
-import BaseProps from "@gemeente-denhaag/baseprops";
+import React from 'react';
+import MaterialListItemIcon from '@material-ui/core/ListItemIcon';
+import BaseProps from '@gemeente-denhaag/baseprops';
 
 export type ListItemIconProps = BaseProps;
 

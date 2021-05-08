@@ -1,6 +1,6 @@
-import React from "react";
-import MaterialPopover from "@material-ui/core/Popover";
-import BaseProps from "@gemeente-denhaag/baseprops";
+import React from 'react';
+import MaterialPopover from '@material-ui/core/Popover';
+import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface PopoverProps extends BaseProps {
   /**
@@ -17,8 +17,8 @@ export interface PopoverProps extends BaseProps {
    * This is the point on the anchor where the popover's anchorEl will attach to.
    */
   anchorOrigin?: {
-    horizontal: "center" | "left" | "right" | number;
-    vertical: "bottom" | "center" | "top" | number;
+    horizontal: 'center' | 'left' | 'right' | number;
+    vertical: 'bottom' | 'center' | 'top' | number;
   };
 
   /**
@@ -29,7 +29,7 @@ export interface PopoverProps extends BaseProps {
   /**
    * This determines which anchor prop to refer to to set the position of the popover.
    */
-  anchorReference?: "anchorEl" | "anchorPosition" | "none";
+  anchorReference?: 'anchorEl' | 'anchorPosition' | 'none';
 
   /**
    * The elevation of the popover.
@@ -95,14 +95,14 @@ export interface PopoverProps extends BaseProps {
    * This is the point on the popover which will attach to the anchor's origin.
    */
   transformOrigin?: {
-    horizontal: "center" | "left" | "right" | number;
-    vertical: "bottom" | "center" | "top" | number;
+    horizontal: 'center' | 'left' | 'right' | number;
+    vertical: 'bottom' | 'center' | 'top' | number;
   };
 
   /**
    * Set to 'auto' to automatically calculate transition time based on height.
    */
-  transitionDuration?: "auto" | number | { appear?: number; enter?: number; exit?: number };
+  transitionDuration?: 'auto' | number | { appear?: number; enter?: number; exit?: number };
 
   /**
    * Props applied to the Transition element.

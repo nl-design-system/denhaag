@@ -1,6 +1,6 @@
-import MaterialSwitch from "@material-ui/core/Switch";
-import { BaseClassesProps } from "@gemeente-denhaag/baseprops";
-import React from "react";
+import MaterialSwitch from '@material-ui/core/Switch';
+import { BaseClassesProps } from '@gemeente-denhaag/baseprops';
+import React from 'react';
 
 export interface SwitchProps extends BaseClassesProps {
   /**
@@ -10,7 +10,7 @@ export interface SwitchProps extends BaseClassesProps {
   /**
    * Color for the component.
    */
-  color?: "default" | "primary" | "secondary";
+  color?: 'default' | 'primary' | 'secondary';
   /**
    * Disables the component
    */

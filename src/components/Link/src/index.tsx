@@ -1,13 +1,13 @@
 // import BaseProps from "@gemeente-denhaag/baseprops";
-import BaseProps from "@gemeente-denhaag/baseprops";
-import React from "react";
-import MaterialLink from "@material-ui/core/Link";
+import BaseProps from '@gemeente-denhaag/baseprops';
+import React from 'react';
+import MaterialLink from '@material-ui/core/Link';
 
 export interface LinkProps extends BaseProps, React.AnchorHTMLAttributes<never> {
   /**
    * The color of the link.
    */
-  color?: "initial" | "inherit" | "primary" | "secondary" | "textPrimary" | "textSecondary" | "error";
+  color?: 'initial' | 'inherit' | 'primary' | 'secondary' | 'textPrimary' | 'textSecondary' | 'error';
 
   /**
    * The component used for the root node.
@@ -23,7 +23,7 @@ export interface LinkProps extends BaseProps, React.AnchorHTMLAttributes<never> 
   /**
    * Controls when the link should have an underline.
    */
-  underline?: "none" | "hover" | "always";
+  underline?: 'none' | 'hover' | 'always';
 
   /**
    * A function fired upon clicking on the link
@@ -40,21 +40,21 @@ export interface LinkProps extends BaseProps, React.AnchorHTMLAttributes<never> 
    * Applies the theme typography styles.
    */
   variant?:
-    | "h1"
-    | "h2"
-    | "h3"
-    | "h4"
-    | "h5"
-    | "h6"
-    | "subtitle1"
-    | "subtitle2"
-    | "body1"
-    | "body2"
-    | "caption"
-    | "button"
-    | "overline"
-    | "srOnly"
-    | "inherit";
+    | 'h1'
+    | 'h2'
+    | 'h3'
+    | 'h4'
+    | 'h5'
+    | 'h6'
+    | 'subtitle1'
+    | 'subtitle2'
+    | 'body1'
+    | 'body2'
+    | 'caption'
+    | 'button'
+    | 'overline'
+    | 'srOnly'
+    | 'inherit';
 }
 
 /**

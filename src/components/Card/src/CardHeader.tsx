@@ -1,7 +1,7 @@
-import React from "react";
-import MaterialCardHeader from "@material-ui/core/CardHeader";
-import BaseProps from "@gemeente-denhaag/baseprops";
-import { TypographyProps } from "@gemeente-denhaag/typography";
+import React from 'react';
+import MaterialCardHeader from '@material-ui/core/CardHeader';
+import BaseProps from '@gemeente-denhaag/baseprops';
+import { TypographyProps } from '@gemeente-denhaag/typography';
 
 export interface CardHeaderProps extends BaseProps {
   /**

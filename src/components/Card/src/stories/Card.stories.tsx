@@ -1,19 +1,19 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import Typography from "@gemeente-denhaag/typography";
-import Avatar from "@gemeente-denhaag/avatar";
-import IconButton from "@gemeente-denhaag/iconbutton";
-import { CheckCircleIcon, ShareIcon, ChevronDownIcon, SettingsIcon } from "@gemeente-denhaag/icons";
-import Card, { CardProps, CardActions, CardContent, CardHeader } from "..";
-import pkg from "../../package.json";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import Typography from '@gemeente-denhaag/typography';
+import Avatar from '@gemeente-denhaag/avatar';
+import IconButton from '@gemeente-denhaag/iconbutton';
+import { CheckCircleIcon, ShareIcon, ChevronDownIcon, SettingsIcon } from '@gemeente-denhaag/icons';
+import Card, { CardProps, CardActions, CardContent, CardHeader } from '..';
+import pkg from '../../package.json';
 
 export default {
-  title: "Components/Surfaces/Card/Card",
+  title: 'Components/Surfaces/Card/Card',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "dynamic",
+        type: 'dynamic',
       },
     },
   },

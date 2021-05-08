@@ -1,12 +1,12 @@
-import React from "react";
-import MaterialListSubheader from "@material-ui/core/ListSubheader";
-import BaseProps from "@gemeente-denhaag/baseprops";
+import React from 'react';
+import MaterialListSubheader from '@material-ui/core/ListSubheader';
+import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface ListSubheaderProps extends BaseProps {
   /**
    * The color of the component. It supports those theme colors that make sense for this component.
    */
-  color?: "default" | "primary" | "inherit";
+  color?: 'default' | 'primary' | 'inherit';
 
   /**
    * The component used for the root node.

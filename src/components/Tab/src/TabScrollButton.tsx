@@ -1,12 +1,12 @@
-import React from "react";
-import MaterialTabScrollButton from "@material-ui/core/TabScrollButton";
-import BaseProps from "@gemeente-denhaag/baseprops";
+import React from 'react';
+import MaterialTabScrollButton from '@material-ui/core/TabScrollButton';
+import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface TabScrollButtonProps extends BaseProps {
   /**
    * Which direction should the button indicate?
    */
-  direction: "left" | "right";
+  direction: 'left' | 'right';
 
   /**
    * If true, the element will be disabled.
@@ -16,7 +16,7 @@ export interface TabScrollButtonProps extends BaseProps {
   /**
    * The tabs orientation (layout flow direction).
    */
-  orientation: "horizontal" | "vertical";
+  orientation: 'horizontal' | 'vertical';
 }
 
 /**

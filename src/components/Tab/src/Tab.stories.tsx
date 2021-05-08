@@ -1,7 +1,7 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import Tab, { TabProps, TabContext, TabPanel, Tabs } from ".";
-import pkg from "../package.json";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import Tab, { TabProps, TabContext, TabPanel, Tabs } from '.';
+import pkg from '../package.json';
 
 export default {
   title: 'Components/Navigation/Tab',

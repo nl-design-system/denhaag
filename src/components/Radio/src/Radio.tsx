@@ -1,5 +1,5 @@
-import MaterialRadio from "@material-ui/core/Radio";
-import React from "react";
+import MaterialRadio from '@material-ui/core/Radio';
+import React from 'react';
 
 export interface RadioProps {
   /**
@@ -34,7 +34,7 @@ export interface RadioProps {
   /**
    * The Color of the component.
    */
-  color?: "primary" | "secondary" | "default";
+  color?: 'primary' | 'secondary' | 'default';
 
   /**
    * If `true`, the radio but will be disabled.
@@ -54,7 +54,7 @@ export interface RadioProps {
   /**
    * The size of the radio button.
    */
-  size?: "medium" | "small";
+  size?: 'medium' | 'small';
 
   /**
    * The icon to display when the component is checked.

@@ -1,9 +1,9 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import Checkbox from "@gemeente-denhaag/checkbox";
-import IconButton from "@gemeente-denhaag/iconbutton";
-import Avatar from "@gemeente-denhaag/avatar";
-import { ArchiveIcon, MessageIcon } from "@gemeente-denhaag/icons";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import Checkbox from '@gemeente-denhaag/checkbox';
+import IconButton from '@gemeente-denhaag/iconbutton';
+import Avatar from '@gemeente-denhaag/avatar';
+import { ArchiveIcon, MessageIcon } from '@gemeente-denhaag/icons';
 import List, {
   ListProps,
   ListItem,
@@ -12,16 +12,16 @@ import List, {
   ListItemSecondaryAction,
   ListItemText,
   ListSubheader,
-} from ".";
-import pkg from "../package.json";
+} from '.';
+import pkg from '../package.json';
 
 export default {
-  title: "Components/Data Display/List",
+  title: 'Components/Data Display/List',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "dynamic",
+        type: 'dynamic',
       },
     },
   },

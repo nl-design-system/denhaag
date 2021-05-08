@@ -1,6 +1,6 @@
-import React from "react";
-import MaterialAccordionActions from "@material-ui/core/AccordionActions";
-import BaseProps from "@gemeente-denhaag/baseprops";
+import React from 'react';
+import MaterialAccordionActions from '@material-ui/core/AccordionActions';
+import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface AccordionActionsProps extends BaseProps {
   /**

@@ -1,13 +1,13 @@
-import React from "react";
-import MaterialListItem from "@material-ui/core/ListItem";
-import BaseProps from "@gemeente-denhaag/baseprops";
-import { ContainerProps } from "@gemeente-denhaag/container";
+import React from 'react';
+import MaterialListItem from '@material-ui/core/ListItem';
+import BaseProps from '@gemeente-denhaag/baseprops';
+import { ContainerProps } from '@gemeente-denhaag/container';
 
 export interface ListItemProps extends BaseProps {
   /**
    * Defines the `align-items` style property.
    */
-  alignItems?: "flex-start" | "center";
+  alignItems?: 'flex-start' | 'center';
 
   /**
    * If `true`, the list item will be focused during the first mount.

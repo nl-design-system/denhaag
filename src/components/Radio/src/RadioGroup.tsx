@@ -1,6 +1,6 @@
-import MaterialRadioGroup from "@material-ui/core/RadioGroup";
-import React from "react";
-import { BaseChildrenProps } from "@gemeente-denhaag/baseprops";
+import MaterialRadioGroup from '@material-ui/core/RadioGroup';
+import React from 'react';
+import { BaseChildrenProps } from '@gemeente-denhaag/baseprops';
 
 export interface RadioGroupProps extends BaseChildrenProps {
   /**

@@ -1,6 +1,6 @@
-import React from "react";
-import MaterialAvatar from "@material-ui/core/Avatar";
-import BaseProps from "@gemeente-denhaag/baseprops";
+import React from 'react';
+import MaterialAvatar from '@material-ui/core/Avatar';
+import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface AvatarProps extends BaseProps {
   /**
@@ -39,7 +39,7 @@ export interface AvatarProps extends BaseProps {
   /**
    * The shape of the avatar.
    */
-  variant?: "circle" | "circular" | "rounded" | "square";
+  variant?: 'circle' | 'circular' | 'rounded' | 'square';
 }
 
 /**

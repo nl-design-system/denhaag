@@ -1,6 +1,6 @@
-import React from "react";
-import MaterialToolbar from "@material-ui/core/Toolbar";
-import BaseProps from "@gemeente-denhaag/baseprops";
+import React from 'react';
+import MaterialToolbar from '@material-ui/core/Toolbar';
+import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface ToolbarProps extends BaseProps {
   /**
@@ -16,7 +16,7 @@ export interface ToolbarProps extends BaseProps {
   /**
    * The variant to use.
    */
-  variant?: "regular" | "dense";
+  variant?: 'regular' | 'dense';
 }
 
 /**

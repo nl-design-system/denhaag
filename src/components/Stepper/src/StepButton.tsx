@@ -1,6 +1,6 @@
-import React from "react";
-import MaterialStepButton from "@material-ui/core/StepButton";
-import BaseProps from "@gemeente-denhaag/baseprops";
+import React from 'react';
+import MaterialStepButton from '@material-ui/core/StepButton';
+import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface StepButtonProps extends BaseProps {
   /**

@@ -1,6 +1,6 @@
-import React from "react";
-import MaterialCardContent from "@material-ui/core/CardContent";
-import BaseProps from "@gemeente-denhaag/baseprops";
+import React from 'react';
+import MaterialCardContent from '@material-ui/core/CardContent';
+import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface CardContentProps extends BaseProps {
   /**

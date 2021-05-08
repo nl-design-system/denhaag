@@ -1,15 +1,15 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import GridList, { GridListTile, GridListProps } from "..";
-import pkg from "../../package.json";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import GridList, { GridListTile, GridListProps } from '..';
+import pkg from '../../package.json';
 
 export default {
-  title: "Components/Layout/GridList",
+  title: 'Components/Layout/GridList',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "dynamic",
+        type: 'dynamic',
       },
     },
   },
