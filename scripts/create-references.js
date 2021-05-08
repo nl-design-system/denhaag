@@ -13,7 +13,7 @@ config.references = [];
 (async function () {
   const { stdout, stderr } = await exec('yarn workspaces info --json');
 
-  const lines = stdout.split('\n');
+  const lines = stdout.split(/\r\n|\n\r|\n|\r/);
   const depthTree = lines.slice(1, lines.length - 2).join('\n');
   let workspaces = undefined;
 
