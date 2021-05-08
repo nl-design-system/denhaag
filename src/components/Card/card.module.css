@@ -42,7 +42,7 @@
     display: flex;
 }
 
-.denhaag-card--case__text__wrapper {
+.denhaag-card--case:focus .denhaag-card--case__text__wrapper {
   border: var(--denhaag-focus-border);
   border-color: var(--denhaag-focus-border-color);
 }
@@ -59,8 +59,6 @@
     padding-inline: var(--denhaag-card-title-padding);
     font-size: var(--denhaag-card-title-font-size);
     line-height: var(--denhaag-card-title-line-height);
-    border: var(--denhaag-focus-border);
-    border-color: var(--denhaag-focus-border-color);
 }
 
 .denhaag-card__subtitle {
@@ -119,6 +117,7 @@
   border-top-right-radius: var(--denhaag-card-border-radius);
   border-bottom-right-radius: var(--denhaag-card-border-radius);
   border-bottom-left-radius: var(--denhaag-card-border-radius);
+  z-index: -1;
 }
 
 .denhaag-card--case .denhaag-card__background::before {
@@ -192,9 +191,3 @@
 .denhaag-card--case:hover .denhaag-card__background {
   transform: rotateX(-20deg);
 }
-
-/*
-  Example folder skew: https://codepen.io/aaroniker/pen/aPJbJz
-  Play around with perspective on the card__wrapper and mess with overflow settings to properly show
-  skew on hover
-*/

@@ -11,8 +11,7 @@ import { cardClasses,
           cardArrowClasses,
           cardTitleClasses,
           cardSubtitleClasses,
-          cardCaseClasses,
-          cardCaseFocusClasses } from  "./bem-mapping";
+          cardCaseClasses} from  "./bem-mapping";
 import { CardContent,
           CardActions } from "@gemeente-denhaag/surfaces";
 import { Icon } from "@material-ui/core";
