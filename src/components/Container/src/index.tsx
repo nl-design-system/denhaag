@@ -1,6 +1,6 @@
-import React from "react";
-import MaterialContainer from "@material-ui/core/Container";
-import BaseLayoutProps from "@gemeente-denhaag/baselayoutprops";
+import React from 'react';
+import MaterialContainer from '@material-ui/core/Container';
+import BaseLayoutProps from '@gemeente-denhaag/baselayoutprops';
 
 export interface ContainerProps extends BaseLayoutProps {
   /**
@@ -21,7 +21,7 @@ export interface ContainerProps extends BaseLayoutProps {
   /**
    * Determine the maximum width of the Container. When false, no max-width is set.
    */
-  maxWidth?: "lg" | "md" | "sm" | "xl" | "xs" | false;
+  maxWidth?: 'lg' | 'md' | 'sm' | 'xl' | 'xs' | false;
 }
 
 /**

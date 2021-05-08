@@ -1,9 +1,9 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import Divider, { DividerProps } from ".";
-import pkg from "../package.json";
-import List, { ListItem, ListItemIcon, ListItemText } from "../../List";
-import { InboxIcon, EmailIcon } from "@gemeente-denhaag/icons";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import Divider, { DividerProps } from '.';
+import pkg from '../package.json';
+import List, { ListItem, ListItemIcon, ListItemText } from '../../List';
+import { InboxIcon, EmailIcon } from '@gemeente-denhaag/icons';
 
 export default {
   title: 'Components/Data Display/Divider',

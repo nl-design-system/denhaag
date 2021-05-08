@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 /**
  * An interface which supplies the most standard properties of each component.

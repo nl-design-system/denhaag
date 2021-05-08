@@ -1,9 +1,9 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import DateFnsUtils from "@date-io/date-fns";
-import { DatePicker, DatePickerProps } from ".";
-import PickersUtilsProvider from "../../PickersUtilsProvider";
-import pkg from "../package.json";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import DateFnsUtils from '@date-io/date-fns';
+import { DatePicker, DatePickerProps } from '.';
+import PickersUtilsProvider from '../../PickersUtilsProvider';
+import pkg from '../package.json';
 
 export default {
   title: 'Components/Input/DatePicker',

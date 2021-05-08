@@ -1,6 +1,6 @@
-import MaterialCheckbox from "@material-ui/core/Checkbox";
-import React from "react";
-import { BaseClassesProps } from "@gemeente-denhaag/baseprops";
+import MaterialCheckbox from '@material-ui/core/Checkbox';
+import React from 'react';
+import { BaseClassesProps } from '@gemeente-denhaag/baseprops';
 
 export interface CheckboxProps extends BaseClassesProps {
   /**
@@ -24,11 +24,11 @@ export interface CheckboxProps extends BaseClassesProps {
   /**
    * Color for the component.
    */
-  color?: "default" | "primary" | "secondary";
+  color?: 'default' | 'primary' | 'secondary';
   /**
    * Size of the component.
    */
-  size?: "small" | "medium";
+  size?: 'small' | 'medium';
   /**
    * Disables Checkbox
    */
@@ -50,5 +50,5 @@ export const Checkbox: React.FC<CheckboxProps> = (props: CheckboxProps) => {
  * Default export for Checkbox
  */
 export default Checkbox;
-export * from "@gemeente-denhaag/formcontrollabel";
-export * from "@gemeente-denhaag/formgroup";
+export * from '@gemeente-denhaag/formcontrollabel';
+export * from '@gemeente-denhaag/formgroup';

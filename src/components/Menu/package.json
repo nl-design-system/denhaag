@@ -6,7 +6,7 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
-        "directory": "src/components/navigation/Menu"
+        "directory": "src/components/Menu"
     },
     "license": "EUPL-1.2",
     "author": "Municipality of The Hague",
@@ -23,10 +23,6 @@
     },
     "dependencies": {
         "@gemeente-denhaag/baseprops": "^0.1.7",
-        "@gemeente-denhaag/menuitem": "^0.1.7",
-        "@gemeente-denhaag/menulist": "^0.1.7",
-        "@gemeente-denhaag/popover": "^0.1.7",
-        "@gemeente-denhaag/popper": "^0.1.7",
         "@material-ui/core": "^4.11.0"
     },
     "peerDependencies": {

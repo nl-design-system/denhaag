@@ -1,6 +1,6 @@
-import { DatePicker as MaterialDatePicker } from "@material-ui/pickers";
-import React from "react";
-import BaseDatePickerProps from "../BaseDatePickerProps/BaseDatePickerProps";
+import { DatePicker as MaterialDatePicker } from '@material-ui/pickers';
+import React from 'react';
+import BaseDatePickerProps from '../BaseDatePickerProps/BaseDatePickerProps';
 
 export type DatePickerProps = BaseDatePickerProps;
 

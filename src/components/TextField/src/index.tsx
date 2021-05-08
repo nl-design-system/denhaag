@@ -1,6 +1,6 @@
-import MaterialTextField from "@material-ui/core/TextField";
-import React from "react";
-import { StandardTextFieldProps } from "./StandardTextFieldProps";
+import MaterialTextField from '@material-ui/core/TextField';
+import React from 'react';
+import { StandardTextFieldProps } from './StandardTextFieldProps';
 
 export type TextFieldProps = StandardTextFieldProps;
 

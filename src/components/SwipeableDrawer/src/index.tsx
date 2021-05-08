@@ -1,6 +1,6 @@
-import React from "react";
-import MaterialSwipeableDrawer from "@material-ui/core/SwipeableDrawer";
-import { BaseChildrenProps } from "@gemeente-denhaag/baseprops";
+import React from 'react';
+import MaterialSwipeableDrawer from '@material-ui/core/SwipeableDrawer';
+import { BaseChildrenProps } from '@gemeente-denhaag/baseprops';
 
 export interface SwipeableDrawerProps extends BaseChildrenProps {
   /**

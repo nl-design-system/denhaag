@@ -7,6 +7,13 @@
     "composite": true
   },
   "include": ["src/**/*"],
-  "exclude": ["dist", "src/*.stories.tsx"],
-  "references": []
+  "exclude": ["dist", "src/**/*.stories.tsx"],
+  "references": [
+    {
+      "path": "../FormControlLabel"
+    },
+    {
+      "path": "../Icons"
+    }
+  ]
 }
