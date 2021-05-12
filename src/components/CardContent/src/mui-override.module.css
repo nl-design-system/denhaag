@@ -9,5 +9,5 @@
 }
 
 .denhaag-card__content:last-child {
-    padding-bottom: 0;
+    padding-block: none 0;
 }
