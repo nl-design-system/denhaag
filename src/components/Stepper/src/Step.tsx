@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import MaterialStep from '@material-ui/core/Step';
 import BaseProps from '@gemeente-denhaag/baseprops';
+import { StepContent, StepLabel } from '@material-ui/core';
+import { Typography } from '@gemeente-denhaag/typography';
+import { ChevronDownIcon, ChevronupIcon } from '@gemeente-denhaag/icons';
 
 export interface StepProps extends BaseProps {
+  label: string;
+  description?: string;
   /**
    * Sets the step as active.
    * Is passed to child components.
@@ -33,8 +38,37 @@ export interface StepProps extends BaseProps {
  * @param props The properties of a Step component.
  * @constructor Constructs an instance of Step.
  */
-export const Step: React.FC<StepProps> = (props: StepProps) => {
-  return <MaterialStep {...props}>{props.children}</MaterialStep>;
+export const Step: React.FC<StepProps> = ({ label, description, ...props }: StepProps) => {
+  const [isCollapsed, setIsCollapsed] = useState<boolean>(true);
+  const hasDescription = description !== undefined;
+
+  const toggle = () => {
+    if (hasDescription && props.active) {
+      setIsCollapsed(!isCollapsed);
+    }
+  };
+
+  return (
+    <MaterialStep onClick={toggle} {...props}>
+      <StepLabel>
+        {label}
+        {hasDescription ? isCollapsed ? <ChevronDownIcon /> : <ChevronupIcon /> : ''}
+      </StepLabel>
+      {hasDescription ? (
+        isCollapsed ? (
+          ''
+        ) : (
+          <StepContent>
+            <Typography variant="body1" component="p">
+              {description}
+            </Typography>
+          </StepContent>
+        )
+      ) : (
+        ''
+      )}
+    </MaterialStep>
+  );
 };
 
 export default Step;

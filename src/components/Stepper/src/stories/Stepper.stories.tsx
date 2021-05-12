@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Stepper, { Step, StepLabel, StepContent, StepperProps } from '..';
+import Stepper, { Step, StepperProps } from '..';
 import pkg from '../../package.json';
 
 export default {
@@ -19,30 +19,18 @@ export default {
 const Template: Story<StepperProps> = (args: StepperProps) => (
   <div>
     <Stepper {...args}>
-      <Step>
-        <StepLabel>
-          <p>First Step in a Stepper!</p>
-        </StepLabel>
-        <StepContent>
-          <p>This is the first Step component of many in a Stepper component.</p>
-        </StepContent>
-      </Step>
-      <Step>
-        <StepLabel>
-          <p>Second Step in a Stepper!</p>
-        </StepLabel>
-        <StepContent>
-          <p>This is the second Step component of many in a Stepper component.</p>
-        </StepContent>
-      </Step>
-      <Step>
-        <StepLabel>
-          <p>Third Step in a Stepper!</p>
-        </StepLabel>
-        <StepContent>
-          <p>This is the third Step component of many in a Stepper component.</p>
-        </StepContent>
-      </Step>
+      <Step
+        label="First Step in a Stepper!"
+        description="This is the first Step component of many in a Stepper component."
+      />
+      <Step
+        label="Second Step in a Stepper!"
+        description="This is the second Step component of many in a Stepper component."
+      />
+      <Step
+        label="Third Step in a Stepper!"
+        description="This is the third Step component of many in a Stepper component."
+      />
     </Stepper>
   </div>
 );
