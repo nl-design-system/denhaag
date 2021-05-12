@@ -1,5 +1,5 @@
 .denhaag-card__content {
-    padding-block: 0;
+    padding-block: 0 0;
     padding-inline: 0;
 
     display: flex;
@@ -9,5 +9,5 @@
 }
 
 .denhaag-card__content:last-child {
-    padding-block: none 0;
+    padding-block: 0 0;
 }

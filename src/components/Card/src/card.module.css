@@ -148,7 +148,7 @@
   right: var(--denhaag-card-arrow-right);
 }
 
-.denhaag-card--case:hover .denhaag-card__arrow {
+.denhaag-card--case:hover .denhaag-card__arrow, .denhaag-card--case:focus .denhaag-card__arrow {
   color: var(--denhaag-green-4);
 }
 
@@ -160,7 +160,7 @@
   padding-inline: var(--denhaag-card-title-padding);
 }
 
-.denhaag-card--case:hover .denhaag-card__title {
+.denhaag-card--case:hover .denhaag-card__title, .denhaag-card--case:focus .denhaag-card__title {
   color: var(--denhaag-green-4);
 }
 
@@ -175,16 +175,16 @@
   /* height: 44px; */
 }
 
-.denhaag-card--case:hover .denhaag-card__subtitle {
+.denhaag-card--case:hover .denhaag-card__subtitle, .denhaag-card--case:focus .denhaag-card__subtitle {
   color: var(--denhaag-green-4);
 }
 
-.denhaag-card--case:hover::before {
+.denhaag-card--case:hover::before, .denhaag-card--case:focus::before {
   top: 12px;
   transform:rotate(-2.45deg);
   transform-origin: right;
 }
 
-.denhaag-card--case:hover .denhaag-card__background {
+.denhaag-card--case:hover .denhaag-card__background, .denhaag-card--case:focus .denhaag-card__background {
   transform: rotateX(-20deg);
 }
