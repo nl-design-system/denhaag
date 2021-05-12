@@ -1,5 +1,6 @@
 .denhaag-list__itemicon {
     color: inherit;
+    min-width: 48px;
 }
 
 .denhaag-list__subheader {
