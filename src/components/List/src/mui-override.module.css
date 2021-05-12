@@ -1,3 +1,7 @@
 .denhaag-list__itemicon {
     color: inherit;
 }
+
+.denhaag-list__subheader {
+    margin-block: 12px 12px;
+}
