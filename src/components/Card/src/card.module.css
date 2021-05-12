@@ -114,9 +114,6 @@
   border-top-right-radius: var(--denhaag-card-border-radius);
   border-bottom-right-radius: var(--denhaag-card-border-radius);
   border-bottom-left-radius: var(--denhaag-card-border-radius);
-  border-top-right-radius: var(--denhaag-card-border-radius);
-  border-bottom-right-radius: var(--denhaag-card-border-radius);
-  border-bottom-left-radius: var(--denhaag-card-border-radius);
   z-index: -1;
 }
 

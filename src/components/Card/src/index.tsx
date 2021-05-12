@@ -1,7 +1,7 @@
 import React from "react";
 import MaterialCard from "@material-ui/core/Card";
 import { StylesProvider } from "@material-ui/core/styles";
-import ArrowForward from "@material-ui/icons/ArrowForward";
+import ArrowForward from "@gemeente-denhaag/icons";
 import BaseProps from "@gemeente-denhaag/baseprops";
 import "./mui-override.module.css";
 import  "./card.module.css";
