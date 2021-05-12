@@ -57,16 +57,18 @@ For example, [`svgr`](https://github.com/gregberge/svgr) is a loader for webpack
    If the file is exported from the Denhaag Figma, it should already be in the correct directory.
    Then just merge both directories.
 3. Update `index.tsx` by adding:
-   
+
    ```tsx
    import YourIconSvg from "./svg/DIR/YOURICON.svg";
    export const YourIcon: F = (props: SvgIconProps) => buildIcon(YourIconSvg, props);
    ```
+
 4. View the Storybook to see if it renders correctly.
    If the colors are incorrect, try changing the `fill` and `stroke` of the `svg` elements and its children.
    Usually these properties should have the `"none"` or `"currentColor"` value.
    Check the other icons for more details.
-   
+
    You don't need to update the Storybook story.
    The icon should be added automagically.
+
 5. Done! ✨

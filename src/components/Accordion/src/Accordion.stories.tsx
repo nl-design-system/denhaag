@@ -1,11 +1,9 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import { ChevronDownIcon } from "@gemeente-denhaag/icons";
-import Accordion, { AccordionProps } from ".";
-import AccordionSummary from "../../AccordionSummary";
-import Typography from "../../Typography";
-import AccordionDetails from "../../AccordionDetails";
-import pkg from "../package.json";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import { ChevronDownIcon } from '@gemeente-denhaag/icons';
+import Typography from '@gemeente-denhaag/typography';
+import Accordion, { AccordionSummary, AccordionDetails, AccordionProps } from '.';
+import pkg from '../package.json';
 
 export default {
   title: 'Components/Surfaces/Accordion',

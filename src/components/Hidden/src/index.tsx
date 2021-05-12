@@ -1,23 +1,23 @@
-import React from "react";
-import MaterialHidden from "@material-ui/core/Hidden";
-import BaseProps from "@gemeente-denhaag/baseprops";
+import React from 'react';
+import MaterialHidden from '@material-ui/core/Hidden';
+import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface HiddenProps extends BaseProps {
   /**
    * Specify which implementation to use. 'js' is default.
    */
-  implementation?: "js" | "css";
+  implementation?: 'js' | 'css';
 
   /**
    * Sets the initial width of the component.
    * Can be used when choosing the 'js' implementation with server side rendering.
    */
-  initialWidth?: "xs" | "sm" | "md" | "lg" | "xl";
+  initialWidth?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 
   /**
    * Hide the given breakpoint(s).
    */
-  only: "xs" | "sm" | "md" | "lg" | "xl" | Array<"xs" | "sm" | "md" | "lg" | "xl">;
+  only: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | Array<'xs' | 'sm' | 'md' | 'lg' | 'xl'>;
 
   /**
    * If true, screens of that size and smaller will be hidden.

@@ -1,6 +1,9 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import pkg from "../package.json";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import Checkbox from '@gemeente-denhaag/checkbox';
+import IconButton from '@gemeente-denhaag/iconbutton';
+import Avatar from '@gemeente-denhaag/avatar';
+import { ArchiveIcon, ChevronRightIcon, HouseIcon, TrashIcon } from '@gemeente-denhaag/icons';
 import List, {
   ListProps,
   ListItem,
@@ -9,19 +12,16 @@ import List, {
   ListItemSecondaryAction,
   ListItemText,
   ListSubheader,
-} from ".";
-import Checkbox from "../../Checkbox";
-import IconButton from "../../IconButton";
-import Avatar from "../../Avatar";
-import { ArchiveIcon, ChevronRightIcon, HouseIcon, TrashIcon } from "@gemeente-denhaag/icons";
+} from '.';
+import pkg from '../package.json';
 
 export default {
-  title: "Components/Data Display/List",
+  title: 'Components/Data Display/List',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "dynamic",
+        type: 'dynamic',
       },
     },
   },
@@ -210,12 +210,11 @@ Subheader.parameters = {
   },
 };
 
-
 const FigmaTemplate: Story<ListProps> = (args: ListProps) => (
   <List {...args}>
     <ListItem dense>
-      <ListItemIcon >
-          <HouseIcon />
+      <ListItemIcon>
+        <HouseIcon />
       </ListItemIcon>
       <ListItemText primary="List item" />
       <ListItemSecondaryAction>
@@ -225,7 +224,7 @@ const FigmaTemplate: Story<ListProps> = (args: ListProps) => (
       </ListItemSecondaryAction>
     </ListItem>
     <ListItem button>
-      <ListItemIcon >
+      <ListItemIcon>
         <HouseIcon color="inherit" />
       </ListItemIcon>
       <ListItemSecondaryAction>
@@ -237,7 +236,6 @@ const FigmaTemplate: Story<ListProps> = (args: ListProps) => (
     </ListItem>
   </List>
 );
-
 
 /**
  * Simple list

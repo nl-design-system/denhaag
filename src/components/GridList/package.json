@@ -6,7 +6,7 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
-        "directory": "src/components/layout/GridList"
+        "directory": "src/components/GridList"
     },
     "license": "EUPL-1.2",
     "author": "Municipality of The Hague",
@@ -23,12 +23,13 @@
     },
     "dependencies": {
         "@gemeente-denhaag/baselayoutprops": "^0.1.7",
-        "@gemeente-denhaag/gridlisttile": "^0.1.7",
-        "@gemeente-denhaag/gridlisttilebar": "^0.1.7",
         "@material-ui/core": "^4.11.0"
     },
     "peerDependencies": {
         "react": "^17.0.1"
+    },
+    "devDependencies": {
+        "@gemeente-denhaag/iconbutton": "*"
     },
     "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
 }

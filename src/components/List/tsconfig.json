@@ -10,25 +10,19 @@
   "exclude": ["dist", "src/*.stories.tsx"],
   "references": [
     {
+      "path": "../Avatar"
+    },
+    {
+      "path": "../Checkbox"
+    },
+    {
+      "path": "../IconButton"
+    },
+    {
+      "path": "../Icons"
+    },
+    {
       "path": "../BaseProps"
-    },
-    {
-      "path": "../ListItem"
-    },
-    {
-      "path": "../ListItemAvatar"
-    },
-    {
-      "path": "../ListItemIcon"
-    },
-    {
-      "path": "../ListItemSecondaryAction"
-    },
-    {
-      "path": "../ListItemText"
-    },
-    {
-      "path": "../ListSubheader"
     }
   ]
 }

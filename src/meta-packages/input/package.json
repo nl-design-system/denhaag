@@ -32,7 +32,6 @@
     "@gemeente-denhaag/inputlabel": "^0.1.7",
     "@gemeente-denhaag/pickers": "^0.1.14",
     "@gemeente-denhaag/radio": "^0.1.7",
-    "@gemeente-denhaag/radiogroup": "^0.1.7",
     "@gemeente-denhaag/select": "^0.1.7",
     "@gemeente-denhaag/switch": "^0.1.7",
     "@gemeente-denhaag/textfield": "^0.1.7"

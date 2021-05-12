@@ -6,13 +6,16 @@
 ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/Gemeente-Denhaag/denhaag-component-library/Build%20and%20deploy%20Storybook%20to%20Azure%20Web%20App/master?logo=github&style=flat-square)
 
 ## 🥅 Goals of this codebase
-The Municipality of The Hague React UI-components library is constructed, so that re-use by other government organisations is possible with minimal effort. The UI-components are available in a basic styling and through the use of Design Tokens it is possible to give the components your own (corporate) identity. Within the Municipality of The Hague the components are used for:	
-* Corporate website (Wordpress - Open Web Concept)
-* Satelite websites (Wordpress)
-* OpenSource eForms (OpenFormulieren - Dimpact)
-* Portal (MijnDenHaag - collaboration with Amsterdam and Dimpact)
+
+The Municipality of The Hague React UI-components library is constructed, so that re-use by other government organisations is possible with minimal effort. The UI-components are available in a basic styling and through the use of Design Tokens it is possible to give the components your own (corporate) identity. Within the Municipality of The Hague the components are used for:
+
+- Corporate website (Wordpress - Open Web Concept)
+- Satelite websites (Wordpress)
+- OpenSource eForms (OpenFormulieren - Dimpact)
+- Portal (MijnDenHaag - collaboration with Amsterdam and Dimpact)
 
 ## 🚀 Getting started
+
 ### Install component library
 
 ```bash
@@ -24,8 +27,7 @@ yarn add @gemeente-denhaag/denhaag-component-library
 ```tsx
 import React, { Component } from "react";
 
-import MyComponent from "denhaag-component-library";
-import "denhaag-component-library/dist/index.css";
+import { MyComponent } from "@gemeente-denhaag/denhaag-component-library";
 
 class Example extends Component {
   render() {
@@ -108,9 +110,11 @@ This file is located here: `src/components/package.json`
 An entry should be structured in the same way as above.
 
 ## Cooperation with NL Design System
+
 Certain Components available in this repository may become part of the NL Design System component library. When you contribute to this project you allow your contributions to be made a part of the NL Design System component library. The NL Design System project maintainers decide which components will be included in their component library.
 
 ## ❗ Reporting issues
+
 Our public issue tracker is located [here](https://github.com/Gemeente-DenHaag/denhaag-component-library/issues).
 Before reporting an issue make sure to check if a similar issue already exists.
 When reporting an issue give detailed information about the issue and how to reproduce it if applicable.

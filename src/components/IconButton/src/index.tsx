@@ -1,13 +1,13 @@
-import React from "react";
-import MaterialIconButton from "@material-ui/core/IconButton";
-import BaseProps from "@gemeente-denhaag/baseprops";
+import React from 'react';
+import MaterialIconButton from '@material-ui/core/IconButton';
+import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface IconButtonProps extends BaseProps {
   /**
    * The color of the component.
    * It supports those theme colors that make sense for this component.
    */
-  color?: "default" | "inherit" | "primary" | "secondary";
+  color?: 'default' | 'inherit' | 'primary' | 'secondary';
 
   /**
    * If true, the button will be disabled.
@@ -28,13 +28,13 @@ export interface IconButtonProps extends BaseProps {
    * If given, uses a negative margin to counteract the padding on one side (this is often helpful for aligning the left or right side of the icon with content above or below,
    * without ruining the border size and shape).
    */
-  edge?: "start" | "end" | false;
+  edge?: 'start' | 'end' | false;
 
   /**
    * The size of the button.
    * `small` is equivalent to the dense button styling.
    */
-  size?: "small" | "medium";
+  size?: 'small' | 'medium';
 }
 
 /**
@@ -42,8 +42,26 @@ export interface IconButtonProps extends BaseProps {
  * @param props The properties of an IconButton component.
  * @constructor Constructs an instance of IconButton.
  */
-export const IconButton: React.FC<IconButtonProps> = (props: IconButtonProps) => {
-  return <MaterialIconButton {...props}>{props.children}</MaterialIconButton>;
+export const IconButton: React.FC<IconButtonProps> = ({
+  color = "inherit",
+  disabled = false,
+  disableFocusRipple = false,
+  edge = false,
+  size = "medium",
+  ...props
+}: IconButtonProps) => {
+  return (
+    <MaterialIconButton
+      color={color}
+      disabled={disabled}
+      disableFocusRipple={disableFocusRipple}
+      edge={edge}
+      size={size}
+      {...props}
+    >
+      {props.children}
+    </MaterialIconButton>
+  );
 };
 
 export default IconButton;

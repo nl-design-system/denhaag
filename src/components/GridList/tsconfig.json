@@ -7,16 +7,13 @@
     "composite": true
   },
   "include": ["src/**/*"],
-  "exclude": ["dist", "src/*.stories.tsx"],
+  "exclude": ["dist", "src/**/*.stories.tsx"],
   "references": [
     {
+      "path": "../IconButton"
+    },
+    {
       "path": "../BaseLayoutProps"
-    },
-    {
-      "path": "../GridListTile"
-    },
-    {
-      "path": "../GridListTileBar"
     }
   ]
 }

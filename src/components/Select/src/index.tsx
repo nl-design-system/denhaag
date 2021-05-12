@@ -1,9 +1,9 @@
-import MaterialSelect from "@material-ui/core/Select";
-import React from "react";
-import { InputProps } from "@material-ui/core/Input";
-import { SelectInputProps } from "@material-ui/core/Select/SelectInput";
-import { MenuProps } from "@material-ui/core";
-import BaseProps from "@gemeente-denhaag/baseprops";
+import MaterialSelect from '@material-ui/core/Select';
+import React from 'react';
+import { InputProps } from '@material-ui/core/Input';
+import { SelectInputProps } from '@material-ui/core/Select/SelectInput';
+import { MenuProps } from '@material-ui/core';
+import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface SelectProps extends BaseProps {
   /**
@@ -52,7 +52,7 @@ export interface SelectProps extends BaseProps {
    * [Attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Attributes) applied to the `input` element.
    * When `native` is `true`, the attributes are applied on the `select` element.
    */
-  inputProps?: InputProps["inputProps"];
+  inputProps?: InputProps['inputProps'];
 
   /**
    * See [OutlinedInput#label](/api/outlined-input/#props)
@@ -93,7 +93,7 @@ export interface SelectProps extends BaseProps {
    * @param {object} [child] The react element that was selected when `native` is `false` (default).
    * @document
    */
-  onChange?: SelectInputProps["onChange"];
+  onChange?: SelectInputProps['onChange'];
 
   /**
    * Callback fired when the component requests to be closed.
@@ -124,7 +124,7 @@ export interface SelectProps extends BaseProps {
    * @param {any} value The `value` provided to the component.
    * @returns {ReactNode}
    */
-  renderValue?: (value: SelectProps["value"]) => React.ReactNode;
+  renderValue?: (value: SelectProps['value']) => React.ReactNode;
 
   /**
    * Props applied to the clickable div element.

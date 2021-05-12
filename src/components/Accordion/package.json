@@ -6,7 +6,7 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
-        "directory": "src/components/surfaces/Accordion"
+        "directory": "src/components/Accordion"
     },
     "license": "EUPL-1.2",
     "author": "Municipality of The Hague",
@@ -22,9 +22,6 @@
         "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
     },
     "dependencies": {
-        "@gemeente-denhaag/accordionactions": "^0.1.7",
-        "@gemeente-denhaag/accordiondetails": "^0.1.7",
-        "@gemeente-denhaag/accordionsummary": "^0.1.7",
         "@gemeente-denhaag/baseprops": "^0.1.7",
         "@material-ui/core": "^4.11.0"
     },
@@ -32,7 +29,8 @@
         "react": "^17.0.1"
     },
     "devDependencies": {
-        "@gemeente-denhaag/icons": "*"
+        "@gemeente-denhaag/icons": "*",
+        "@gemeente-denhaag/typography": "*"
     },
     "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
 }

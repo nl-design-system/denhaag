@@ -6,7 +6,7 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
-        "directory": "src/components/input/Radio"
+        "directory": "src/components/Radio"
     },
     "license": "EUPL-1.2",
     "author": "Municipality of The Hague",
@@ -28,6 +28,7 @@
         "react": "^17.0.1"
     },
     "devDependencies": {
+        "@gemeente-denhaag/formcontrollabel": "*",
         "@gemeente-denhaag/icons": "*"
     },
     "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"

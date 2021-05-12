@@ -1,11 +1,11 @@
-import { ParsableDate } from "@material-ui/pickers/constants/prop-types";
-import { MaterialUiPickersDate as DateIOType } from "@material-ui/pickers/typings/date";
-import { IconButtonProps, PopoverProps, TextFieldProps } from "@material-ui/core";
+import { ParsableDate } from '@material-ui/pickers/constants/prop-types';
+import { MaterialUiPickersDate as DateIOType } from '@material-ui/pickers/typings/date';
+import { IconButtonProps, PopoverProps, TextFieldProps } from '@material-ui/core';
 
-import { DialogProps } from "@material-ui/core/Dialog/Dialog";
+import { DialogProps } from '@material-ui/core/Dialog/Dialog';
 
-import { ReactElement, ReactNode, ComponentClass, FunctionComponent } from "react";
-import { ToolbarComponentProps } from "@material-ui/pickers/Picker/Picker";
+import { ReactElement, ReactNode, ComponentClass, FunctionComponent } from 'react';
+import { ToolbarComponentProps } from '@material-ui/pickers/Picker/Picker';
 
 export interface BaseDatePickerProps {
   /**
@@ -92,7 +92,7 @@ export interface BaseDatePickerProps {
   /**
    * Pass material-ui text field variant down, bypass internal variant prop
    */
-  inputVariant?: "standard" | "outlined" | "filled";
+  inputVariant?: 'standard' | 'outlined' | 'filled';
 
   /**
    * Message, appearing when date cannot be parsed
@@ -187,12 +187,12 @@ export interface BaseDatePickerProps {
   /**
    * First view to show in DatePicker
    */
-  openTo?: "date" | "year" | "month";
+  openTo?: 'date' | 'year' | 'month';
 
   /**
    * Force rendering in particular orientation
    */
-  orientation?: "portrait" | "landscape";
+  orientation?: 'portrait' | 'landscape';
 
   /**
    * Popover props passed to material-ui Popover (with variant="inline")
@@ -211,7 +211,7 @@ export interface BaseDatePickerProps {
     day: DateIOType,
     selectedDate: DateIOType,
     dayInCurrentMonth: boolean,
-    dayComponent: ReactElement
+    dayComponent: ReactElement,
   ) => ReactElement;
 
   /**
@@ -257,12 +257,12 @@ export interface BaseDatePickerProps {
   /**
    * Picker container option
    */
-  variant?: "dialog" | "inline" | "static";
+  variant?: 'dialog' | 'inline' | 'static';
 
   /**
    * Array of views to show
    */
-  views?: Array<"year" | "date" | "month">;
+  views?: Array<'year' | 'date' | 'month'>;
 }
 
 export default BaseDatePickerProps;

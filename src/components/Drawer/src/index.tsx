@@ -1,12 +1,12 @@
-import React from "react";
-import MaterialDrawer from "@material-ui/core/Drawer";
-import BaseProps from "@gemeente-denhaag/baseprops";
+import React from 'react';
+import MaterialDrawer from '@material-ui/core/Drawer';
+import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface DrawerProps extends BaseProps {
   /**
    * Side from which the drawer will appear.
    */
-  anchor?: "bottom" | "left" | "right" | "top";
+  anchor?: 'bottom' | 'left' | 'right' | 'top';
 
   /**
    * The elevation of the drawer.
@@ -53,7 +53,7 @@ export interface DrawerProps extends BaseProps {
   /**
    * The variant to use.
    */
-  variant?: "permanent" | "persistent" | "temporary";
+  variant?: 'permanent' | 'persistent' | 'temporary';
 }
 
 /**
