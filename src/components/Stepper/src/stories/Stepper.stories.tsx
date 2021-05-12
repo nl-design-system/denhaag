@@ -10,29 +10,28 @@ export default {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: 'dynamic',
+        type: 'code',
       },
     },
   },
   component: Stepper,
 } as Meta;
 
-const steps = [
-  {
-    label: 'First Step in a Stepper!',
-    description: 'This is the first Step component of many in a Stepper component.',
-  },
-  {
-    label: 'Second Step in a Stepper!',
-  },
-  {
-    label: 'Third Step in a Stepper!',
-    description: 'This is the third Step component of many in a Stepper component.',
-  },
-];
-
 const Template: Story<StepperProps> = () => {
   const [activeStep, setActiveStep] = useState(0);
+  const steps = [
+    {
+      label: 'First Step in a Stepper!',
+      description: 'This is the first Step component of many in a Stepper component.',
+    },
+    {
+      label: 'Second Step in a Stepper!',
+    },
+    {
+      label: 'Third Step in a Stepper!',
+      description: 'This is the third Step component of many in a Stepper component.',
+    },
+  ];
 
   const prev = () => {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
