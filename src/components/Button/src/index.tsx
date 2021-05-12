@@ -6,6 +6,7 @@ import { classes } from "./bem-mapping";
 import "@gemeente-denhaag/basestyles";
 import "./mui-override.module.css";
 import "./button.module.css";
+
 export interface ButtonProps extends BaseProps {
   /**
    * Simple click handler
