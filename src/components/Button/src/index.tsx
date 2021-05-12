@@ -1,11 +1,11 @@
-import MaterialButton, { ButtonTypeMap } from "@material-ui/core/Button";
-import React from "react";
-import BaseProps from "@gemeente-denhaag/baseprops";
-import { StylesProvider } from "@material-ui/core";
-import { classes } from "./bem-mapping";
-import "@gemeente-denhaag/basestyles";
-import "./mui-override.module.css";
-import "./button.module.css";
+import MaterialButton, { ButtonTypeMap } from '@material-ui/core/Button';
+import React from 'react';
+import BaseProps from '@gemeente-denhaag/baseprops';
+import { StylesProvider } from '@material-ui/core';
+import { classes } from './bem-mapping';
+import '@gemeente-denhaag/basestyles';
+import './mui-override.module.css';
+import './button.module.css';
 
 export interface ButtonProps extends BaseProps {
   /**
@@ -21,7 +21,7 @@ export interface ButtonProps extends BaseProps {
   /**
    * Size of the component
    */
-  size?: "medium" | "large";
+  size?: 'medium' | 'large';
 
   /**
    * Disables Button
@@ -31,12 +31,12 @@ export interface ButtonProps extends BaseProps {
   /**
    * Button variant
    */
-  variant?: "primary-action" | "secondary-action";
+  variant?: 'primary-action' | 'secondary-action';
 
   /**
    * HTML type prop
    */
-  type?: "button" | "submit" | "reset";
+  type?: 'button' | 'submit' | 'reset';
 
   /**
    * Icon placed at the start of the button
@@ -53,15 +53,15 @@ export interface ButtonProps extends BaseProps {
  * Primary UI component for user interaction
  */
 export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
-  const sizeClass = `denhaag-button--${props.size ?? "medium"}`;
-  let muiVariant: ButtonTypeMap["props"]["variant"] = "contained";
+  const sizeClass = `denhaag-button--${props.size ?? 'medium'}`;
+  let muiVariant: ButtonTypeMap['props']['variant'] = 'contained';
 
   switch (props.variant) {
-    case "primary-action":
-      muiVariant = "contained";
+    case 'primary-action':
+      muiVariant = 'contained';
       break;
-    case "secondary-action":
-      muiVariant = "outlined";
+    case 'secondary-action':
+      muiVariant = 'outlined';
       break;
   }
 
