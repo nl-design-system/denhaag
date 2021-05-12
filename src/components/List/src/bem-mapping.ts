@@ -9,3 +9,7 @@ export const listsubheader_classes = {
 export const listitem_classes = {
     root: 'denhaag-list__item'
 }
+
+export const listitemtext_classes = {
+    root: 'denhaag-list__itemtext'
+}

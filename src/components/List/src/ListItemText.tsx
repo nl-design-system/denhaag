@@ -1,15 +1,17 @@
 import React from 'react';
 import MaterialListItemText from '@material-ui/core/ListItemText';
 import BaseProps from '@gemeente-denhaag/baseprops';
+import { StylesProvider } from '@material-ui/core';
+import { listitemtext_classes as classes } from './bem-mapping';
+import './mui-override.module.css';
+
+import { Typography } from '@gemeente-denhaag/typography';
 
 export interface ListItemTextProps extends BaseProps {
   /**
-   * If `true`, the children won't be wrapped by a Typography component.
-   * This can be useful to render an alternative Typography variant by wrapping
-   * the `children` (or `primary`) text, and optional `secondary` text
-   * with the Typography component.
+   * The main content text.
    */
-  disableTypography?: boolean;
+  children?: string;
 
   /**
    * If `true`, the children will be indented.
@@ -18,33 +20,37 @@ export interface ListItemTextProps extends BaseProps {
   inset?: boolean;
 
   /**
-   * The main content element.
+   * The main content text, alias for children.
    */
-  primary?: React.ReactNode;
+  primary?: string;
+
 
   /**
-   * These props will be forwarded to the primary typography component
-   * (as long as disableTypography is not `true`).
+   * The secondary content text.
    */
-  primaryTypographyProps?: Record<string, unknown>;
+  secondary?: string;
 
-  /**
-   * The secondary content element.
-   */
-  secondary?: React.ReactNode;
-
-  /**
-   * These props will be forwarded to the secondary typography component
-   * (as long as disableTypography is not `true`).
-   */
-  secondaryTypographyProps?: Record<string, unknown>;
 }
 
 /**
  * Primary UI component for user interaction
  */
 export const ListItemText: React.FC<ListItemTextProps> = (props: ListItemTextProps) => {
-  return <MaterialListItemText {...props}>{props.children}</MaterialListItemText>;
+  const primary = <Typography>{props.primary}</Typography>;
+  const secondary = props.secondary ? <Typography>{props.secondary}</Typography> : undefined;
+  return (
+    <StylesProvider injectFirst>
+      <MaterialListItemText
+        {...props}
+        primary={primary}
+        secondary={secondary}
+        disableTypography={true}
+        classes={classes}
+      >
+        {props.children}
+      </MaterialListItemText>
+    </StylesProvider>
+  );
 };
 
 export default ListItemText;
