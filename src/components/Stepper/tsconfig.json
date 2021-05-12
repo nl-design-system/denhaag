@@ -11,24 +11,6 @@
   "references": [
     {
       "path": "../BaseProps"
-    },
-    {
-      "path": "../Step"
-    },
-    {
-      "path": "../StepButton"
-    },
-    {
-      "path": "../StepConnector"
-    },
-    {
-      "path": "../StepContent"
-    },
-    {
-      "path": "../StepIcon"
-    },
-    {
-      "path": "../StepLabel"
     }
   ]
 }

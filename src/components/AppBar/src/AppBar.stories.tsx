@@ -1,12 +1,12 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import { HamburgerIcon } from "@gemeente-denhaag/icons";
-import AppBar, { AppBarProps } from ".";
-import Toolbar from "../../Toolbar";
-import IconButton from "../../IconButton";
-import Typography from "../../Typography";
-import Button from "../../Button";
-import pkg from "../package.json";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import { HamburgerIcon } from '@gemeente-denhaag/icons';
+import AppBar, { AppBarProps } from '.';
+import Toolbar from '../../Toolbar';
+import IconButton from '../../IconButton';
+import Typography from '../../Typography';
+import Button from '../../Button';
+import pkg from '../package.json';
 
 export default {
   title: 'Components/Surfaces/AppBar',

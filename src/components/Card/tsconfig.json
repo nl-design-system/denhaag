@@ -7,22 +7,22 @@
     "composite": true
   },
   "include": ["src/**/*"],
-  "exclude": ["dist", "src/*.stories.tsx"],
+  "exclude": ["dist", "src/**/*.stories.tsx"],
   "references": [
     {
+      "path": "../Avatar"
+    },
+    {
+      "path": "../IconButton"
+    },
+    {
+      "path": "../Icons"
+    },
+    {
+      "path": "../Typography"
+    },
+    {
       "path": "../BaseProps"
-    },
-    {
-      "path": "../CardActions"
-    },
-    {
-      "path": "../CardContent"
-    },
-    {
-      "path": "../CardHeader"
-    },
-    {
-      "path": "../Paper"
     }
   ]
 }

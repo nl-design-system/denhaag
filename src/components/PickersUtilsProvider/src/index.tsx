@@ -1,5 +1,5 @@
-import { MuiPickersUtilsProvider as MaterialPickersUtilsProvider } from "@material-ui/pickers";
-import React from "react";
+import { MuiPickersUtilsProvider as MaterialPickersUtilsProvider } from '@material-ui/pickers';
+import React from 'react';
 
 export interface PickersUtilsProviderProps {
   utils: any;

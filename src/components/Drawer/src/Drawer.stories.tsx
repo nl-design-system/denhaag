@@ -1,8 +1,8 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import Drawer, { DrawerProps } from ".";
-import Button from "../../Button";
-import pkg from "../package.json";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import Drawer, { DrawerProps } from '.';
+import Button from '../../Button';
+import pkg from '../package.json';
 
 export default {
   title: 'Components/Navigation/Drawer',
