@@ -1,3 +1,5 @@
+import '@gemeente-denhaag/denhaagbrand';
+
 const tokenContext = require.context('!!raw-loader!../src', true, /.\.(css|less|scss|svg)$/);
 
 const tokenFiles = tokenContext.keys().map((filename) => {
@@ -9,5 +11,5 @@ export const parameters = {
   designToken: {
     files: tokenFiles
   },
-  format: false
+  format: false,
 };

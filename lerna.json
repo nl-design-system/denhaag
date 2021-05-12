@@ -3,8 +3,8 @@
   "useWorkspaces": true,
   "version": "independent",
   "command": {
-      "publish": {
-        "allowBranch": "development"
-      }
+    "publish": {
+      "allowBranch": "master"
     }
+  }
 }

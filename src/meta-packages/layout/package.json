@@ -1,25 +1,34 @@
 {
   "name": "@gemeente-denhaag/layout",
+  "version": "0.1.5",
   "description": "A package containing all the layout components",
-  "author": "Municipality of The Hague",
-  "license": "EUPL-1.2",
-  "main": "index.tsx",
-  "module": "index.tsx",
-  "version": "0.1.4",
+  "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
     "directory": "src/meta-packages/layout"
   },
-  "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
+  "license": "EUPL-1.2",
+  "author": "Municipality of The Hague",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+  },
   "dependencies": {
-    "@gemeente-denhaag/baselayoutprops": "^0.1.3",
-    "@gemeente-denhaag/box": "^0.1.3",
-    "@gemeente-denhaag/container": "^0.1.3",
-    "@gemeente-denhaag/grid": "^0.1.3",
-    "@gemeente-denhaag/gridlist": "^0.1.3",
-    "@gemeente-denhaag/gridlisttile": "^0.1.3",
-    "@gemeente-denhaag/gridlisttilebar": "^0.1.3",
-    "@gemeente-denhaag/hidden": "^0.1.3"
+    "@gemeente-denhaag/baselayoutprops": "^0.1.7",
+    "@gemeente-denhaag/box": "^0.1.7",
+    "@gemeente-denhaag/container": "^0.1.7",
+    "@gemeente-denhaag/grid": "^0.1.7",
+    "@gemeente-denhaag/gridlist": "^0.1.7",
+    "@gemeente-denhaag/hidden": "^0.1.7"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1"
   }
 }
