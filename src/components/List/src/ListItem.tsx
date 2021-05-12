@@ -2,6 +2,10 @@ import React from 'react';
 import MaterialListItem from '@material-ui/core/ListItem';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import { ContainerProps } from '@gemeente-denhaag/container';
+import { StylesProvider } from '@material-ui/core';
+
+import { listitem_classes as classes } from './bem-mapping';
+import './mui-override.module.css';
 
 export interface ListItemProps extends BaseProps {
   /**
@@ -68,7 +72,13 @@ export interface ListItemProps extends BaseProps {
  * Primary UI component for user interaction
  */
 export const ListItem: React.FC<ListItemProps> = (props: ListItemProps) => {
-  return <MaterialListItem {...props}>{props.children}</MaterialListItem>;
+  return (
+    <StylesProvider injectFirst>
+      <MaterialListItem {...props} classes={classes}>
+        {props.children}
+      </MaterialListItem>
+    </StylesProvider>
+  );
 };
 
 export default ListItem;

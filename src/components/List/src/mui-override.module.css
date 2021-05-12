@@ -6,3 +6,7 @@
 .denhaag-list__subheader {
     margin-block: 12px 12px;
 }
+
+.denhaag-list__item {
+    padding-block: 12px 12px;
+}
