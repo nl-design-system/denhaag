@@ -1,12 +1,18 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import MaterialStep from '@material-ui/core/Step';
 import BaseProps from '@gemeente-denhaag/baseprops';
-import { StepContent, StepLabel } from '@material-ui/core';
 import { Typography } from '@gemeente-denhaag/typography';
 import { ChevronDownIcon, ChevronupIcon } from '@gemeente-denhaag/icons';
+import { StepIcon, StepContent, StepLabel } from '.';
 
 export interface StepProps extends BaseProps {
+  /**
+   * Describes the information of the step.
+   */
   label: string;
+  /**
+   * Additional information about the step.
+   */
   description?: string;
   /**
    * Sets the step as active.
@@ -38,35 +44,33 @@ export interface StepProps extends BaseProps {
  * @param props The properties of a Step component.
  * @constructor Constructs an instance of Step.
  */
-export const Step: React.FC<StepProps> = ({ label, description, ...props }: StepProps) => {
-  const [isCollapsed, setIsCollapsed] = useState<boolean>(true);
+export const Step: React.FC<StepProps> = ({ label, description, active = false, ...props }: StepProps) => {
+  const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const hasDescription = description !== undefined;
 
   const toggle = () => {
-    if (hasDescription && props.active) {
-      setIsCollapsed(!isCollapsed);
+    if (hasDescription) {
+      setIsExpanded((prevState) => !prevState);
     }
   };
 
+  // If active has been updated, this indicates that the user is on the next
+  // step, then we want to collapse the StepContent
+  useEffect(() => {
+    setIsExpanded(false);
+  }, [active]);
+
   return (
-    <MaterialStep onClick={toggle} {...props}>
-      <StepLabel>
+    <MaterialStep onClick={toggle} expanded={isExpanded} active={active} {...props}>
+      <StepLabel StepIconComponent={StepIcon}>
         {label}
-        {hasDescription ? isCollapsed ? <ChevronDownIcon /> : <ChevronupIcon /> : ''}
+        {hasDescription && !active ? isExpanded ? <ChevronupIcon /> : <ChevronDownIcon /> : ''}
       </StepLabel>
-      {hasDescription ? (
-        isCollapsed ? (
-          ''
-        ) : (
-          <StepContent>
-            <Typography variant="body1" component="p">
-              {description}
-            </Typography>
-          </StepContent>
-        )
-      ) : (
-        ''
-      )}
+      <StepContent>
+        <Typography variant="body1" component="p">
+          {description}
+        </Typography>
+      </StepContent>
     </MaterialStep>
   );
 };
