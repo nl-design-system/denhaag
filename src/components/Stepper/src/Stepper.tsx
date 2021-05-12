@@ -15,19 +15,9 @@ export interface StepperProps extends BaseProps {
   alternativeLabel?: boolean;
 
   /**
-   * An element to be placed between each step.
-   */
-  connector?: React.ReactElement;
-
-  /**
    * If set the Stepper will not assist in controlling steps for linear flow.
    */
   nonLinear?: boolean;
-
-  /**
-   * The stepper orientation (layout flow direction).
-   */
-  orientation?: 'horizontal' | 'vertical';
 }
 
 /**
@@ -36,7 +26,11 @@ export interface StepperProps extends BaseProps {
  * @constructor Constructs an instance of Stepper.
  */
 export const Stepper: React.FC<StepperProps> = (props: StepperProps) => {
-  return <MaterialStepper {...props}>{props.children}</MaterialStepper>;
+  return (
+    <MaterialStepper orientation="vertical" connector={<React.Fragment />} {...props}>
+      {props.children}
+    </MaterialStepper>
+  );
 };
 
 export default Stepper;

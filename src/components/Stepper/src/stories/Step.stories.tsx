@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Step, StepProps, StepLabel, StepContent } from '..';
+import { Step, StepProps } from '..';
 import pkg from '../../package.json';
 
 export default {
@@ -17,14 +17,11 @@ export default {
 } as Meta;
 
 const Template: Story<StepProps> = (props: StepProps) => (
-  <Step {...props}>
-    <StepLabel>
-      <p>First Step in a Stepper!</p>
-    </StepLabel>
-    <StepContent>
-      <p>This is the first Step component of many in a Stepper component.</p>
-    </StepContent>
-  </Step>
+  <Step
+    label="First Step in a Stepper!"
+    description="This is the first Step component of many in a Stepper component."
+    {...props}
+  ></Step>
 );
 
 /**
@@ -35,21 +32,3 @@ Default.args = {
   active: true,
   completed: true,
 };
-
-// /**
-//  * Implementation of Stepper with a vertical orientation.
-//  */
-// export const VerticalOrientation = Template.bind({});
-// VerticalOrientation.args = {
-//   activeStep: 0,
-//   orientation: 'vertical',
-// };
-
-// /**
-//  * Alternatively labeled Stepper.
-//  */
-// export const AlternativeLabel = Template.bind({});
-// AlternativeLabel.args = {
-//   activeStep: 0,
-//   alternativeLabel: true,
-// };
