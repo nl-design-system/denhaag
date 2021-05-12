@@ -4,16 +4,13 @@ import MaterialStep from '@material-ui/core/Step';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import { Typography } from '@gemeente-denhaag/typography';
 import { ChevronDownIcon, ChevronUpIcon } from '@gemeente-denhaag/icons';
-import { StepIcon, StepContent, StepLabel } from '.';
 
-// styles
+import { StepIcon, StepContent, StepLabel } from '.';
 import { stepClasses } from './styles/bem-mapping';
-import '@gemeente-denhaag/denhaagbrand';
-import '@gemeente-denhaag/basestyles';
-import './styles/mui-override.module.css';
-import './styles/stepper.module.css';
 
 export interface StepProps extends BaseProps {
+  label: string;
+  description?: string;
   /**
    * Describes the information of the step.
    */
