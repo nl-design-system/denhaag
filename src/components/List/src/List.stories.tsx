@@ -210,7 +210,7 @@ Subheader.parameters = {
   },
 };
 
-const FigmaTemplate: Story<ListProps> = (args: ListProps) => (
+const FigmaTemplate2: Story<ListProps> = (args: ListProps) => (
   <List {...args}>
     <ListItem dense>
       <ListItemIcon>
@@ -238,9 +238,39 @@ const FigmaTemplate: Story<ListProps> = (args: ListProps) => (
 );
 
 /**
+ * List with icons list
+ */
+export const ListWithIcons = FigmaTemplate2.bind({});
+ListWithIcons.args = {
+  subheader: <ListSubheader>Subheader</ListSubheader>,
+};
+ListWithIcons.parameters = {
+  docs: {
+    source: {
+      // language=HTML
+      code: subheaderCode,
+    },
+  },
+};
+
+const FigmaTemplate1: Story<ListProps> = (args: ListProps) => (
+  <List {...args}>
+    <ListItem dense>
+      <ListItemText primary="List item" />
+    </ListItem>
+    <ListItem dense>
+      <ListItemText primary="List item" />
+    </ListItem>
+    <ListItem dense>
+      <ListItemText primary="List item" />
+    </ListItem>
+  </List>
+);
+
+/**
  * Simple list
  */
-export const SimpleList = FigmaTemplate.bind({});
+export const SimpleList = FigmaTemplate1.bind({});
 SimpleList.args = {
   subheader: <ListSubheader>Subheader</ListSubheader>,
 };
