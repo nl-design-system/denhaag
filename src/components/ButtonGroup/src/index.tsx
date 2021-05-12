@@ -1,12 +1,12 @@
-import React from "react";
-import MaterialButtonGroup from "@material-ui/core/ButtonGroup";
-import BaseProps from "@gemeente-denhaag/baseprops";
+import React from 'react';
+import MaterialButtonGroup from '@material-ui/core/ButtonGroup';
+import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface ButtonGroupProps extends BaseProps {
   /**
    * The color of the component.
    */
-  color?: "default" | "inherit" | "primary" | "secondary";
+  color?: 'default' | 'inherit' | 'primary' | 'secondary';
 
   /**
    * The component used for the root node.
@@ -42,17 +42,17 @@ export interface ButtonGroupProps extends BaseProps {
   /**
    * The group orientation (layout flow direction).
    */
-  orientation?: "horizontal" | "vertical";
+  orientation?: 'horizontal' | 'vertical';
 
   /**
    * The size of the button. small is equivalent to the dense button styling.
    */
-  size?: "large" | "medium" | "small";
+  size?: 'large' | 'medium' | 'small';
 
   /**
    * The variant to use.
    */
-  variant?: "contained" | "outlined" | "text";
+  variant?: 'contained' | 'outlined' | 'text';
 }
 
 /**
@@ -65,4 +65,4 @@ export const ButtonGroup: React.FC<ButtonGroupProps> = (props: ButtonGroupProps)
 };
 
 export default ButtonGroup;
-export * from "@gemeente-denhaag/button";
+export * from '@gemeente-denhaag/button';

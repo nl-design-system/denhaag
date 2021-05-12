@@ -6,7 +6,7 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
-        "directory": "src/components/layout/Box"
+        "directory": "src/components/Box"
     },
     "license": "EUPL-1.2",
     "author": "Municipality of The Hague",

@@ -1,10 +1,10 @@
-import { FormControlTypeMap } from "@material-ui/core";
-import { OverrideProps } from "@material-ui/core/OverridableComponent";
-import MaterialFormControl from "@material-ui/core/FormControl";
-import React from "react";
+import { FormControlTypeMap } from '@material-ui/core';
+import { OverrideProps } from '@material-ui/core/OverridableComponent';
+import MaterialFormControl from '@material-ui/core/FormControl';
+import React from 'react';
 
 export type FormControlProps<
-  D extends React.ElementType = FormControlTypeMap["defaultComponent"],
+  D extends React.ElementType = FormControlTypeMap['defaultComponent'],
   P = Record<string, unknown>
 > = OverrideProps<FormControlTypeMap<P, D>, D>;
 

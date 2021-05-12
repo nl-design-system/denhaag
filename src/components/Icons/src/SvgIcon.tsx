@@ -1,6 +1,6 @@
-import MaterialSvgIcon from "@material-ui/core/SvgIcon";
-import React, { ElementType } from "react";
-import BaseProps from "@gemeente-denhaag/baseprops";
+import MaterialSvgIcon from '@material-ui/core/SvgIcon';
+import React, { ElementType } from 'react';
+import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface SvgIconProps extends BaseProps {
   /**
@@ -8,7 +8,7 @@ export interface SvgIconProps extends BaseProps {
    * for this component. You can use the `htmlColor` prop to apply a color
    * attribute to the SVG element.
    */
-  color?: "action" | "disabled" | "error" | "inherit" | "primary" | "secondary";
+  color?: 'action' | 'disabled' | 'error' | 'inherit' | 'primary' | 'secondary';
   /**
    * The component used for the root node. Either a string to use a HTML
    * element or a component.
@@ -18,7 +18,7 @@ export interface SvgIconProps extends BaseProps {
    * The fontSize applied to the icon. Defaults to 24px, but can be configure
    * to inherit font size.
    */
-  fontSize?: "default" | "inherit" | "large" | "small";
+  fontSize?: 'default' | 'inherit' | 'large' | 'small';
   /**
    * Applies a color attribute to the SVG element.
    */
@@ -29,7 +29,7 @@ export interface SvgIconProps extends BaseProps {
    * If you are having issues with blurry icons you should investigate this
    * property.
    */
-  shapeRendering?: "auto" | "optimizeSpeed" | "crispEdges" | "geometricPrecision";
+  shapeRendering?: 'auto' | 'optimizeSpeed' | 'crispEdges' | 'geometricPrecision';
   /**
    * Provides a human-readable title for the element that contains it.
    * https://www.w3.org/TR/SVG-access/#Equivalent
@@ -46,11 +46,11 @@ export interface SvgIconProps extends BaseProps {
 }
 
 const SvgIcon: React.FC<SvgIconProps> = ({
-  color = "inherit",
-  component = "svg",
-  fontSize = "default",
-  viewBox = "0 0 24 24",
-  shapeRendering = "auto",
+  color = 'inherit',
+  component = 'svg',
+  fontSize = 'default',
+  viewBox = '0 0 24 24',
+  shapeRendering = 'auto',
   ...props
 }: SvgIconProps) => {
   return (

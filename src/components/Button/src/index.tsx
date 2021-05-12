@@ -1,6 +1,6 @@
-import MaterialButton from "@material-ui/core/Button";
-import React from "react";
-import BaseProps from "@gemeente-denhaag/baseprops";
+import MaterialButton from '@material-ui/core/Button';
+import React from 'react';
+import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface ButtonProps extends BaseProps {
   /**
@@ -11,7 +11,7 @@ export interface ButtonProps extends BaseProps {
   /**
    * Color for the component
    */
-  color?: "primary" | "secondary" | "default";
+  color?: 'primary' | 'secondary' | 'default';
 
   /**
    * The url to link to when the button is clicked.
@@ -22,7 +22,7 @@ export interface ButtonProps extends BaseProps {
   /**
    * Size of the component
    */
-  size?: "small" | "medium" | "large";
+  size?: 'small' | 'medium' | 'large';
 
   /**
    * Disables Button
@@ -32,12 +32,12 @@ export interface ButtonProps extends BaseProps {
   /**
    * Button variant
    */
-  variant?: "outlined" | "contained" | "text";
+  variant?: 'outlined' | 'contained' | 'text';
 
   /**
    * HTML type prop
    */
-  type?: "button" | "submit" | "reset";
+  type?: 'button' | 'submit' | 'reset';
 }
 
 /**

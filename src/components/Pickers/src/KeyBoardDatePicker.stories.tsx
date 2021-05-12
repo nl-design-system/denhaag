@@ -1,9 +1,9 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import { KeyboardDatePicker, KeyboardDatePickerProps } from ".";
-import PickersUtilsProvider from "../../PickersUtilsProvider";
-import DateFnsUtils from "@date-io/date-fns";
-import pkg from "../package.json";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import { KeyboardDatePicker, KeyboardDatePickerProps } from '.';
+import PickersUtilsProvider from '../../PickersUtilsProvider';
+import DateFnsUtils from '@date-io/date-fns';
+import pkg from '../package.json';
 
 export default {
   title: 'Components/Input/KeyboardDatePicker',

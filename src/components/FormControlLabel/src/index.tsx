@@ -1,6 +1,6 @@
-import MaterialFormControlLabel from "@material-ui/core/FormControlLabel";
-import React, { ReactElement } from "react";
-import { BaseClassesProps } from "@gemeente-denhaag/baseprops";
+import MaterialFormControlLabel from '@material-ui/core/FormControlLabel';
+import React, { ReactElement } from 'react';
+import { BaseClassesProps } from '@gemeente-denhaag/baseprops';
 
 export interface FormControlLabelProps extends BaseClassesProps {
   /**
@@ -26,7 +26,7 @@ export interface FormControlLabelProps extends BaseClassesProps {
   /**
    * The position of the label.
    */
-  labelPlacement?: "bottom" | "end" | "start" | "top";
+  labelPlacement?: 'bottom' | 'end' | 'start' | 'top';
 
   /**
    * Callback fired when the state is changed.

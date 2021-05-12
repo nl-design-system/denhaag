@@ -10,13 +10,10 @@
   "exclude": ["dist", "src/*.stories.tsx"],
   "references": [
     {
-      "path": "../AccordionActions"
+      "path": "../Icons"
     },
     {
-      "path": "../AccordionDetails"
-    },
-    {
-      "path": "../AccordionSummary"
+      "path": "../Typography"
     },
     {
       "path": "../BaseProps"

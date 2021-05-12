@@ -22,15 +22,9 @@
   },
   "dependencies": {
     "@gemeente-denhaag/accordion": "^0.1.7",
-    "@gemeente-denhaag/accordionactions": "^0.1.7",
-    "@gemeente-denhaag/accordiondetails": "^0.1.7",
-    "@gemeente-denhaag/accordionsummary": "^0.1.7",
     "@gemeente-denhaag/appbar": "^0.1.7",
     "@gemeente-denhaag/baseprops": "^0.1.7",
     "@gemeente-denhaag/card": "^0.1.7",
-    "@gemeente-denhaag/cardactions": "^0.1.7",
-    "@gemeente-denhaag/cardcontent": "^0.1.7",
-    "@gemeente-denhaag/cardheader": "^0.1.7",
     "@gemeente-denhaag/paper": "^0.1.7",
     "@gemeente-denhaag/toolbar": "^0.1.7"
   },

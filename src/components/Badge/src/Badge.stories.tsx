@@ -1,8 +1,8 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import Badge, { BadgeProps } from ".";
-import { MessageIcon } from "@gemeente-denhaag/icons";
-import pkg from "../package.json";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import Badge, { BadgeProps } from '.';
+import { MessageIcon } from '@gemeente-denhaag/icons';
+import pkg from '../package.json';
 
 export default {
   title: 'Components/Data Display/Badge',
