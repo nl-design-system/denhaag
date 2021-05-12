@@ -15,7 +15,7 @@
    * @tokens Fonts
    * @presenter FontFamily
    */
-  --denhaag-fontfamily: sans-serif;
+  --denhaag-font-family: sans-serif;
 
   /*
    * @tokens Borders
@@ -24,7 +24,8 @@
   --denhaag-border-radius: 3px;
 
   /*
-   * Button tokens
+   * @tokens
+   * @presenter
    */
   --denhaag-button-primary-action-background-color: var(--denhaag-green-3);
   --denhaag-button-primary-action-color: var(--denhaag-white);
@@ -42,7 +43,6 @@
   --denhaag-button-secondary-action-disabled-background-color: var(--denhaag-white);
   --denhaag-button-secondary-action-disabled-color: var(--denhaag-grey-2);
   --denhaag-button-secondary-action-disabled-border-color: var(--denhaag-grey-2);
-
   /*
    * Card tokens
    */

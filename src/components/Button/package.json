@@ -3,22 +3,9 @@
   "description": "A Button component",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
-  "main": "Button.tsx",
-  "module": "Button.tsx",
   "version": "0.1.7",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
-    "directory": "src/components/Button"
-  },
-  "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
-  "dependencies": {
-    "@gemeente-denhaag/baseprops": "^0.1.6",
-    "@gemeente-denhaag/basestyles": "^0.1.0",
-    "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.11.2"
-  },
-  "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "exports": "./dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -28,7 +15,22 @@
     "build": "tsc -b && copyfiles -u 1 \"src/**/*.css\" dist",
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
+    "directory": "src/components/Button"
+  },
+  "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
+  "dependencies": {
+    "@gemeente-denhaag/baseprops": "^0.1.6",
+    "@gemeente-denhaag/basestyles": "^0.1.0",
+    "@material-ui/core": "^4.11.0"
+  },
+  "devDependencies": {
+    "@material-ui/icons": "^4.11.2"
+  },
   "peerDependencies": {
     "react": "^17.0.1"
-  }
+  },
+  "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
 }
