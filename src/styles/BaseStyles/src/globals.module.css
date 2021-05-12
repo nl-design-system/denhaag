@@ -1,3 +1,5 @@
+@import "button.module.css";
+
 :root {
   /*
    * @tokens Fonts
@@ -22,29 +24,5 @@
    * @presenter BorderRadius
    */
   --denhaag-border-radius: 3px;
-
-  /*
-   * @tokens
-   * @presenter
-   */
-  --denhaag-button-primary-action-background-color: var(--denhaag-green-3);
-  --denhaag-button-primary-action-color: var(--denhaag-white);
-  --denhaag-button-primary-action-hover-background-color: var(--denhaag-green-4);
-  --denhaag-button-primary-action-hover-color: var(--denhaag-white);
-  --denhaag-button-primary-action-disabled-background-color: var(--denhaag-grey-2);
-  --denhaag-button-primary-action-disabled-color: var(--denhaag-white);
-
-  --denhaag-button-secondary-action-background-color: var(--denhaag-white);
-  --denhaag-button-secondary-action-color: var(--denhaag-green-3);
-  --denhaag-button-secondary-action-border-color: var(--denhaag-green-3);
-  --denhaag-button-secondary-action-hover-background-color: var(--denhaag-white);
-  --denhaag-button-secondary-action-hover-color: var(--denhaag-green-4);
-  --denhaag-button-secondary-action-hover-border-color: var(--denhaag-green-4);
-  --denhaag-button-secondary-action-disabled-background-color: var(--denhaag-white);
-  --denhaag-button-secondary-action-disabled-color: var(--denhaag-grey-2);
-  --denhaag-button-secondary-action-disabled-border-color: var(--denhaag-grey-2);
-  /*
-   * Card tokens
-   */
 
 }
