@@ -1,0 +1,10 @@
+.denhaag-stepper__step {
+  margin-block-start: 12px;
+  margin-block-end: 12px;
+}
+
+.denhaag-stepper__step-content {
+  margin-block-start: 12px;
+  color: var(--denhaag-grey-4);
+  font-size: var(--denhaag-fontsize-base);
+}

@@ -1,9 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import MaterialStep from '@material-ui/core/Step';
+import { StylesProvider } from '@material-ui/core';
+
 import BaseProps from '@gemeente-denhaag/baseprops';
 import { Typography } from '@gemeente-denhaag/typography';
 import { ChevronDownIcon, ChevronupIcon } from '@gemeente-denhaag/icons';
 import { StepIcon, StepContent, StepLabel } from '.';
+
+// styles
+import { stepClasses } from './styles/bem-mapping';
+import '@gemeente-denhaag/denhaagbrand';
+import '@gemeente-denhaag/basestyles';
+import './styles/mui-override.module.css';
+import './styles/stepper.module.css';
 
 export interface StepProps extends BaseProps {
   /**
@@ -61,17 +70,19 @@ export const Step: React.FC<StepProps> = ({ label, description, active = false, 
   }, [active]);
 
   return (
-    <MaterialStep onClick={toggle} expanded={isExpanded} active={active} {...props}>
-      <StepLabel StepIconComponent={StepIcon}>
-        {label}
-        {hasDescription && !active ? isExpanded ? <ChevronupIcon /> : <ChevronDownIcon /> : ''}
-      </StepLabel>
-      <StepContent>
-        <Typography variant="body1" component="p">
-          {description}
-        </Typography>
-      </StepContent>
-    </MaterialStep>
+    <StylesProvider injectFirst>
+      <MaterialStep onClick={toggle} expanded={isExpanded} active={active} classes={stepClasses} {...props}>
+        <StepLabel StepIconComponent={StepIcon}>
+          {label}
+          {hasDescription && !active ? isExpanded ? <ChevronupIcon /> : <ChevronDownIcon /> : ''}
+        </StepLabel>
+        <StepContent>
+          <Typography variant="body1" component="p">
+            {description}
+          </Typography>
+        </StepContent>
+      </MaterialStep>
+    </StylesProvider>
   );
 };
 
