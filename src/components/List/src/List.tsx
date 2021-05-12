@@ -3,6 +3,10 @@ import MaterialList from '@material-ui/core/List';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import ListSubheader from '@gemeente-denhaag/listsubheader';
 
+import { StylesProvider } from '@material-ui/core';
+import { list_classes as classes } from './bem-mapping';
+import './mui-override.module.css';
+
 export interface ListProps extends BaseProps {
   /**
    * The component used for the root node.
@@ -35,7 +39,11 @@ export const List: React.FC<ListProps> = (props: ListProps) => {
   const subheader = (props.subheader as unknown) as React.ReactElement;
   const materialProps = { ...props, subheader };
 
-  return <MaterialList {...materialProps}>{props.children}</MaterialList>;
+  return (
+    <StylesProvider injectFirst>
+      <MaterialList {...materialProps} classes={classes}>{props.children}</MaterialList>
+    </StylesProvider>
+  );
 };
 
 export default List;

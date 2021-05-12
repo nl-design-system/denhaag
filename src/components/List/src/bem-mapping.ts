@@ -1,3 +1,7 @@
+export const list_classes = {
+    root: 'denhaag-list'
+}
+
 export const listitemicon_classes = {
     root: 'denhaag-list__itemicon'
 }
