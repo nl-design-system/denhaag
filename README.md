@@ -107,33 +107,6 @@ This file is located here: `src/components/package.json`
 
 An entry should be structured in the same way as above.
 
-## Testing guidelines
-The component library is tested using Cypress, see their docs [here](https://docs.cypress.io/guides/overview/why-cypress).
-Each component should have a `/spec` directory in their package with one or more `<component>.spec.tsx` test files.
-
-### Test examples
-The following types of tests should be written:
-##### Cypress component tests
-These are similar to regular cypress tests but have support for mounting components in isolation, see the [example](https://docs.cypress.io/guides/component-testing/introduction#What-is-Component-Testing) on their documention.
-
-##### Snapshot test
-Using the cypress-plugin-snapshots:
-```tsx
-it("matches snapshot", () => {
-  mount(<Button>Test button</Button>);
-  cy.get("button").toMatchSnapshot();
-});
-```
-
-##### Automated a11y test
-Each component should also have an automated a11y test, to catch any detectable a11y violations, using the cypress-axe plugin:
-```tsx
-it("does not violate any accessibility rules", () => {
-  mount(<Button>Test button</Button>);
-  cy.injectAxe();
-  cy.checkA11y("button");
-});
-```
 
 ## Cooperation with NL Design System
 Certain Components available in this repository may become part of the NL Design System component library. When you contribute to this project you allow your contributions to be made a part of the NL Design System component library. The NL Design System project maintainers decide which components will be included in their component library.
