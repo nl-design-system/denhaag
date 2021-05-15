@@ -2,6 +2,7 @@
   --denhaag-divider-border-color: var(--denhaag-grey-2);
   --denhaag-divider-border-width: 1px;
   --denhaag-divider-margin: 16px 16px;
+  --denhaag-divider-vertical-margin-inline: 16px 16px;
 }
 
 .denhaag-divider {
