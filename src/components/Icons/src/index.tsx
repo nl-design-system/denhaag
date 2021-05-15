@@ -48,9 +48,9 @@ import UserSvg from './svg/objects/user.svg';
 
 // Social
 import FacebookSvg from './svg/social/facebook.svg';
-import LinkedinSvg from './svg/social/linkedin.svg';
+import LinkedInSvg from './svg/social/linkedin.svg';
 import TwitterSvg from './svg/social/twitter.svg';
-import WhatsappSvg from './svg/social/whatsapp.svg';
+import WhatsAppSvg from './svg/social/whatsapp.svg';
 
 // Misc
 import MegaphoneSvg from './svg/megaphone.svg';
@@ -65,7 +65,7 @@ export const ArrowLeftIcon: F = (props: SvgIconProps) => buildIcon(ArrowLeftSvg,
 export const ArrowRightIcon: F = (props: SvgIconProps) => buildIcon(RightArrowSvg, props);
 export const ChevronDownIcon: F = (props: SvgIconProps) => buildIcon(ChevronDownSvg, props);
 export const ChevronRightIcon: F = (props: SvgIconProps) => buildIcon(ChevronRightSvg, props);
-export const ChevronupIcon: F = (props: SvgIconProps) => buildIcon(ChevronUpSvg, props);
+export const ChevronUpIcon: F = (props: SvgIconProps) => buildIcon(ChevronUpSvg, props);
 
 // Communication
 export const CallIcon: F = (props: SvgIconProps) => buildIcon(CallSvg, props);
@@ -86,7 +86,7 @@ export const StarterIcon: F = (props: SvgIconProps) => buildIcon(StarterSvg, pro
 export const TrashIcon: F = (props: SvgIconProps) => buildIcon(TrashSvg, props);
 
 // Informational
-export const AlertTraingleIcon: F = (props: SvgIconProps) => buildIcon(AlertTriangleSvg, props);
+export const AlertTriangleIcon: F = (props: SvgIconProps) => buildIcon(AlertTriangleSvg, props);
 export const CheckCircleIcon: F = (props: SvgIconProps) => buildIcon(CheckCircleSvg, props);
 export const CircleHelpIcon: F = (props: SvgIconProps) => buildIcon(CircleHelpSvg, props);
 export const SettingsIcon: F = (props: SvgIconProps) => buildIcon(SettingsSvg, props);
@@ -107,9 +107,9 @@ export const UserIcon: F = (props: SvgIconProps) => buildIcon(UserSvg, props);
 
 // Social
 export const FacebookIcon: F = (props: SvgIconProps) => buildIcon(FacebookSvg, props);
-export const LinkedinIcon: F = (props: SvgIconProps) => buildIcon(LinkedinSvg, props);
+export const LinkedInIcon: F = (props: SvgIconProps) => buildIcon(LinkedInSvg, props);
 export const TwitterIcon: F = (props: SvgIconProps) => buildIcon(TwitterSvg, props);
-export const WhatsappIcon: F = (props: SvgIconProps) => buildIcon(WhatsappSvg, props);
+export const WhatsAppIcon: F = (props: SvgIconProps) => buildIcon(WhatsAppSvg, props);
 
 // Misc
 export const MegaphoneIcon: F = (props: SvgIconProps) => buildIcon(MegaphoneSvg, props);
