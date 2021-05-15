@@ -42,8 +42,26 @@ export interface IconButtonProps extends BaseProps {
  * @param props The properties of an IconButton component.
  * @constructor Constructs an instance of IconButton.
  */
-export const IconButton: React.FC<IconButtonProps> = (props: IconButtonProps) => {
-  return <MaterialIconButton {...props}>{props.children}</MaterialIconButton>;
+export const IconButton: React.FC<IconButtonProps> = ({
+  color = "inherit",
+  disabled = false,
+  disableFocusRipple = false,
+  edge = false,
+  size = "medium",
+  ...props
+}: IconButtonProps) => {
+  return (
+    <MaterialIconButton
+      color={color}
+      disabled={disabled}
+      disableFocusRipple={disableFocusRipple}
+      edge={edge}
+      size={size}
+      {...props}
+    >
+      {props.children}
+    </MaterialIconButton>
+  );
 };
 
 export default IconButton;

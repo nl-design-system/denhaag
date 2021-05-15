@@ -27,8 +27,7 @@ yarn add @gemeente-denhaag/denhaag-component-library
 ```tsx
 import React, { Component } from "react";
 
-import MyComponent from "denhaag-component-library";
-import "denhaag-component-library/dist/index.css";
+import { MyComponent } from "@gemeente-denhaag/denhaag-component-library";
 
 class Example extends Component {
   render() {
