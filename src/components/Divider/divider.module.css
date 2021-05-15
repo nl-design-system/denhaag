@@ -1,18 +1,17 @@
 :root {
   --denhaag-divider-border-color: var(--denhaag-grey-2);
   --denhaag-divider-border-width: 1px;
-  --denhaag-divider-horizontal-margin-block: 16px 16px;
-  --denhaag-divider-vertical-margin-inline: 16px 16px;
+  --denhaag-divider-margin: 16px 16px;
 }
 
 .denhaag-divider {
   height: var(--denhaag-divider-border-width);
   background: var(--denhaag-divider-border-color);
-  margin-block: var(--denhaag-divider-horizontal-margin-block);
+  margin-block: var(--denhaag-divider-margin);
 }
 
 .denhaag-divider-vertical {
-  margin-inline: var(--denhaag-divider-vertical-margin-inline);
+  margin-inline: var(--denhaag-divider-margin);
   width: var(--denhaag-divider-border-width);
   height: inherit;
 }
