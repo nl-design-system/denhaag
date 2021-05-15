@@ -1,0 +1,12 @@
+:root {
+  --denhaag-list-itemtext-primary-color: var(--denhaag-grey-4);
+  --denhaag-list-itemtext-secondary-color: var(--denhaag-grey-4);
+}
+
+.denhaag-list__itemtextprimary {
+  color: var(--denhaag-list-itemtext-primary-color);
+}
+
+.denhaag-list__itemtextsecondary {
+  color: var(--denhaag-list-itemtext-secondary-color);
+}

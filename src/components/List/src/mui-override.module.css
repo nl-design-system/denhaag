@@ -1,27 +1,29 @@
 .denhaag-list {
-    margin-block: 8px 8px;
-    margin-inline: 0 0;
-    transition: none;
+  margin-block: 8px 8px;
+  margin-inline: 0 0;
+  transition: none;
 }
 
 .denhaag-list__itemicon {
-    color: inherit;
-    min-width: 48px;
+  color: inherit;
+  min-width: 48px;
 }
 
 .denhaag-list__subheader {
-    padding-block: 12px 12px;
-    padding-inline: 16px 16px;
+  padding-block: 12px 12px;
+  padding-inline: 16px 16px;
 }
 
-.denhaag-list__item, .denhaag-list__item:focus, .denhaag-list__item:hover {
-    outline: none;
+.denhaag-list__item,
+.denhaag-list__item:focus,
+.denhaag-list__item:hover {
+  outline: none;
 }
 
 .denhaag-list__itemtext {
-    margin-block: 0 0;
+  margin-block: 0 0;
 }
 
 .denhaag-list__secondaryaction {
-    right:  16px;
+  right: 16px;
 }

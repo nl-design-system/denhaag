@@ -21,3 +21,11 @@ export const listitemtext_classes = {
 export const listitemsecondaryaction_classes = {
     root: 'denhaag-list__secondaryaction'
 }
+
+export const listitemtextprimary_classes = {
+    root: 'denhaag-list__itemtextprimary'
+}
+
+export const listitemtextsecondary_classes = {
+    root: 'denhaag-list__itemtextsecondary'
+}

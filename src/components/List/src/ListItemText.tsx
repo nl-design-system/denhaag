@@ -2,8 +2,13 @@ import React from 'react';
 import MaterialListItemText from '@material-ui/core/ListItemText';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import { StylesProvider } from '@material-ui/core';
-import { listitemtext_classes as classes } from './bem-mapping';
+import {
+  listitemtext_classes as classes,
+  listitemtextprimary_classes,
+  listitemtextsecondary_classes,
+} from './bem-mapping';
 import './mui-override.module.css';
+import './listitemtext.module.css';
 
 import { Typography } from '@gemeente-denhaag/typography';
 
@@ -24,20 +29,26 @@ export interface ListItemTextProps extends BaseProps {
    */
   primary?: string;
 
-
   /**
    * The secondary content text.
    */
   secondary?: string;
-
 }
 
 /**
  * Primary UI component for user interaction
  */
 export const ListItemText: React.FC<ListItemTextProps> = (props: ListItemTextProps) => {
-  const primary = <Typography>{props.primary}</Typography>;
-  const secondary = props.secondary ? <Typography>{props.secondary}</Typography> : undefined;
+  const primary = (
+    <StylesProvider injectFirst>
+      <Typography classes={listitemtextprimary_classes}>{props.primary}</Typography>
+    </StylesProvider>
+  );
+  const secondary = props.secondary ? (
+    <StylesProvider injectFirst>
+      <Typography classes={listitemtextsecondary_classes}>{props.secondary}</Typography>
+    </StylesProvider>
+  ) : undefined;
   return (
     <StylesProvider injectFirst>
       <MaterialListItemText

@@ -76,13 +76,7 @@ export interface ListItemProps extends BaseProps {
 export const ListItem: React.FC<ListItemProps> = (props: ListItemProps) => {
   return (
     <StylesProvider injectFirst>
-      <MaterialListItem
-        {...props}
-        classes={classes}
-        tabIndex={0}
-        button={props.button}
-        disableRipple={props.button ? true : undefined}
-      >
+      <MaterialListItem {...props} classes={classes} tabIndex={0} button={props.button}>
         {props.children}
       </MaterialListItem>
     </StylesProvider>
