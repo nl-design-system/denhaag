@@ -2,28 +2,6 @@
     --denhaag-card-arrow-left: 0;
     --denhaag-card-arrow-position: relative;
     --denhaag-card-arrow-right: 28px;
-    --denhaag-card-background-color: var(--denhaag-white);
-    --denhaag-card-border-radius: 3px;
-    --denhaag-card-border: 1px solid var(--denhaag-grey-2);
-    --denhaag-card-box-sizing: border-box;
-    --denhaag-card-height: 181px;
-    --denhaag-card-padding-block: 24px;
-    --denhaag-card-padding-inline: 24px;
-    --denhaag-card-subtitle-font-size: 16px;
-    --denhaag-card-subtitle-line-height: 24px;
-    --denhaag-card-subtitle-font-weight: 500;
-    --denhaag-card-subtitle-padding: 0;
-    --denhaag-card-title-font-size: 24px;
-    --denhaag-card-title-line-height: 28px;
-    --denhaag-card-title-font-weight: bold;
-    --denhaag-card-title-padding: 0;
-    --denhaag-card-width: 352px;
-
-    --denhaag-card-case-border: 0;
-    --denhaag-card-case-height: 200px;
-    --denhaag-card-case-padding-block-start: 20px;
-    --denhaag-card-case-padding-block-end: 24px;
-    --denhaag-card-case-width: 352px;
 }
 
 .denhaag-card {
@@ -33,8 +11,10 @@
 
 .denhaag-card__wrapper {
     border-radius: var(--denhaag-card-border-radius);
-    border: var(--denhaag-card-border);
-    box-sizing: var(--denhaag-card-box-sizing);
+    border-width: var(--denhaag-card-border-width);
+    border-color: var(--denhaag-card-border-color);
+    border-style: solid;
+    box-sizing: border-box;
     height: var(--denhaag-card-height);
     padding-inline: var(--denhaag-card-padding-inline);
     padding-block: var(--denhaag-card-padding-block);
@@ -55,7 +35,8 @@
 
 .denhaag-card__title {
     color: var(--denhaag-black);
-    padding-block: var(--denhaag-card-title-padding);
+    padding-block-start: var(--denhaag-card-title-padding);
+    padding-block-end: var(--denhaag-card-title-padding);
     padding-inline: var(--denhaag-card-title-padding);
     font-size: var(--denhaag-card-title-font-size);
     line-height: var(--denhaag-card-title-line-height);
@@ -66,13 +47,15 @@
     font-size: var(--denhaag-card-subtitle-font-size);
     font-weight: var(--denhaag-card-subtitle-font-weight);
     line-height: var(--denhaag-card-subtitle-line-height);
-    padding-block: var(--denhaag-card-subtitle-padding) 0;
-    padding-inline: var(--denhaag-card-subtitle-padding);
+    padding-block-start: var(--denhaag-card-subtitle-padding);
+    padding-block-end: var(--denhaag-card-subtitle-padding);
+    padding-inline-start: var(--denhaag-card-subtitle-padding);
+    padding-inline-end: var(--denhaag-card-subtitle-padding);
 }
 
 .denhaag-card--case {
   position: relative;
-  background: var(--denhaag-green-2);
+  background: var(--denhaag-card--case-folder-background-color);
   padding-block-start: 20px;
   border-radius: var(--denhaag-card-border-radius);
 }
@@ -85,7 +68,7 @@
   top: 8px;
   height: 20px;
   width: 50%;
-  background: var(--denhaag-white);
+  background: var(--denhaag-card--case-paper-color);
   border-radius: 0 var(--denhaag-card-border-radius) 0 0;
 }
 
@@ -93,11 +76,11 @@
   position: relative;
   background: transparent;
   border-radius: var(--denhaag-card-border-radius);
-  border: var(--denhaag-card-case-border);
-  box-sizing: var(--denhaag-card-box-sizing);
-  height: var(--denhaag-card-case-height);
-  padding-block-start: var(--denhaag-card-case-padding-block-start);
-  padding-block-end: var(--denhaag-card-case-padding-block-end);
+  border: 2px;
+  box-sizing: border-box;
+  height: var(--denhaag-card--case-height);
+  padding-block-start: var(--denhaag-card--case-padding-block-start);
+  padding-block-end: var(--denhaag-card--case-padding-block-end);
   flex-direction: column;
   display: flex;
   perspective: 1800px;
@@ -109,7 +92,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: var(--denhaag-green-1);
+  background: var(--denhaag-card--case-background-color);
   transform-origin: 50% 100%;
   border-top-right-radius: var(--denhaag-card-border-radius);
   border-bottom-right-radius: var(--denhaag-card-border-radius);
@@ -125,7 +108,7 @@
   top: -20px;
   height: 20px;
   width: 60%;
-  background: var(--denhaag-green-1);
+  background: var(--denhaag-card--case-background-color);
   border-top-left-radius: var(--denhaag-card-border-radius);
 }
 
@@ -137,46 +120,45 @@
   top: -20px;
   height: 22px;
   width: 10%;
-  background: var(--denhaag-green-1);
+  background: var(--denhaag-card--case-background-color);
   transform: skewX(30deg);
 }
 
 .denhaag-card--case .denhaag-card__arrow {
-  color: var(--denhaag-green-3);
+  color: var(--denhaag-card--case-primary-color);
   left: var(--denhaag-card-arrow-left);
   position: var(--denhaag-card-arrow-position);
   right: var(--denhaag-card-arrow-right);
 }
 
 .denhaag-card--case:hover .denhaag-card__arrow, .denhaag-card--case:focus .denhaag-card__arrow {
-  color: var(--denhaag-green-4);
+  color: var(--denhaag-card--case-text-active-color);
 }
 
 .denhaag-card--case .denhaag-card__title {
   position: relative;
-  color: var(--denhaag-green-3);
+  color: var(--denhaag-card--case-primary-color);
   font-weight: 700;
   padding-block: var(--denhaag-card-title-padding);
   padding-inline: var(--denhaag-card-title-padding);
 }
 
 .denhaag-card--case:hover .denhaag-card__title, .denhaag-card--case:focus .denhaag-card__title {
-  color: var(--denhaag-green-4);
+  color: var(--denhaag-card--case-primary-active-color);
 }
 
 .denhaag-card--case .denhaag-card__subtitle {
   position: relative;
-  color: var(--denhaag-green-3);
+  color: var(--denhaag-card--case-primary-color);
   font-weight: 500;
   padding-block: var(--denhaag-card-subtitle-padding);
   padding-inline: var(--denhaag-card-subtitle-padding);
-  box-sizing:initial;
   /*flex-grow: 1;/*
   /* height: 44px; */
 }
 
 .denhaag-card--case:hover .denhaag-card__subtitle, .denhaag-card--case:focus .denhaag-card__subtitle {
-  color: var(--denhaag-green-4);
+  color: var(--denhaag-card--case-primary-active-color);
 }
 
 .denhaag-card--case:hover::before, .denhaag-card--case:focus::before {
