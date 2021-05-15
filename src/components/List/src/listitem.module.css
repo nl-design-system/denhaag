@@ -34,3 +34,11 @@
   right: 14px;
   color: var(--denhaag-blue-3);
 }
+
+.denhaag-list__item:focus .denhaag-list__itemtextprimary {
+  color: var(--denhaag-blue-3);
+}
+
+.denhaag-list__item:focus .denhaag-list__itemicon {
+  color: var(--denhaag-blue-3);
+}
