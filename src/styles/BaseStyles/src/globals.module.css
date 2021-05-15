@@ -1,3 +1,5 @@
+@import "tokens-divider.css";
+
 :root {
   /*
    * Base tokens
@@ -19,5 +21,4 @@
   /*
    * Card tokens
    */
-
 }

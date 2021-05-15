@@ -1,17 +1,11 @@
-:root {
-  --denhaag-divider-border-color: var(--denhaag-grey-2);
-  --denhaag-divider-border-width: 1px;
-  --denhaag-divider-margin: 16px 16px;
-}
-
 .denhaag-divider {
   height: var(--denhaag-divider-border-width);
   background: var(--denhaag-divider-border-color);
-  margin-block: var(--denhaag-divider-margin);
+  margin-block: var(--denhaag-divider-margin-block);
 }
 
-.denhaag-divider-vertical {
-  margin-inline: var(--denhaag-divider-margin);
+.denhaag-divider--vertical {
+  margin-inline: var(--denhaag-divider-margin-inline);
   width: var(--denhaag-divider-border-width);
   height: inherit;
 }

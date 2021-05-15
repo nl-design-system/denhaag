@@ -2,6 +2,7 @@ import React from 'react';
 import MaterialDivider from '@material-ui/core/Divider';
 import { BaseDataDisplayClassesProps } from '@gemeente-denhaag/basedatadisplayprops';
 import { StylesProvider } from '@material-ui/core';
+import '@gemeente-denhaag/basestyles';
 import '../divider.module.css';
 
 export interface DividerProps extends BaseDataDisplayClassesProps {
@@ -19,7 +20,7 @@ export interface DividerProps extends BaseDataDisplayClassesProps {
 export const Divider: React.FC<DividerProps> = (props: DividerProps) => {
   const classes = {
     root: 'denhaag-divider',
-    vertical: 'denhaag-divider-vertical'
+    vertical: 'denhaag-divider--vertical'
   }
 
   return (
