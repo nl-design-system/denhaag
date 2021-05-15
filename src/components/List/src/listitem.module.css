@@ -42,3 +42,15 @@
 .denhaag-list__item:focus .denhaag-list__itemicon {
   color: var(--denhaag-blue-3);
 }
+
+.denhaag-list__item:hover > .denhaag-list__secondaryaction {
+  color: var(--denhaag-blue-3);
+}
+
+.denhaag-list__item:hover .denhaag-list__itemtextprimary {
+  color: var(--denhaag-blue-3);
+}
+
+.denhaag-list__item:hover .denhaag-list__itemicon {
+  color: var(--denhaag-blue-3);
+}
