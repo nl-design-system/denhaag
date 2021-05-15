@@ -22,9 +22,19 @@ export default {
 const Template: Story<DividerProps> = (args: DividerProps) => {
   return args.orientation === "vertical" ? (
     <Grid container>
-      <p>I am to the left of the divider.</p>
+      <img
+        alt="The Lagoon Nebula."
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Lagoon_Nebula.jpg/1024px-Lagoon_Nebula.jpg"
+        width={500}
+        height={250}
+      />
       <Divider {...args} />
-      <p>I am to the right of the divider.</p>
+      <img
+        alt="Four cassette tapes for demonstrating the GridListTile component."
+        src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/Demos.jpg/1200px-Demos.jpg"
+        width={500}
+        height={250}
+      />
     </Grid>
   ) : (
     <List>
