@@ -24,7 +24,8 @@ Conditions that must be satisfied to be accepted by a user, customer or other st
 - [ ] When I click the Rank button, then ideas are sorted with the top-scoring ideas at the top
 
 ### Definition of Ready
-**Do not change.** To be completed before the issue can be added to backlog.
+<!-- Do not change. -->
+To be completed before the issue can be added to backlog.
 - [ ] Acceptance criteria are described
 - [ ] Any preconditions are described
 - [ ] Possible dependence on external experts is mentioned
@@ -32,7 +33,8 @@ Conditions that must be satisfied to be accepted by a user, customer or other st
 - [ ] Any requirements for accessibility are described
 
 ### Definition of Done
-**Do not change.** To be completed before the issue can be marked as Done.
+<!-- Do not change. -->
+To be completed before the issue can be marked as Done.
 - [ ] Meets acceptance criteria
 - [ ] Complies with the standard of public code
 - [ ] Story has been sufficiently tested
