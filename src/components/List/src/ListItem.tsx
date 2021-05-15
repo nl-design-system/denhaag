@@ -6,6 +6,8 @@ import { StylesProvider } from '@material-ui/core';
 
 import { listitem_classes as classes } from './bem-mapping';
 import './mui-override.module.css';
+import './listitem.module.css';
+import '@gemeente-denhaag/basestyles';
 
 export interface ListItemProps extends BaseProps {
   /**
