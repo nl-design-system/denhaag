@@ -8,11 +8,11 @@
 .denhaag-divider {
   height: var(--denhaag-divider-border-width);
   background: var(--denhaag-divider-border-color);
-  margin-block: var(--denhaag-divider-margin);
+  margin-block: var(--denhaag-divider-margin-block);
 }
 
-.denhaag-divider-vertical {
-  margin-inline: var(--denhaag-divider-margin);
+.denhaag-divider--vertical {
+  margin-inline: var(--denhaag-divider-margin-inline);
   width: var(--denhaag-divider-border-width);
   height: inherit;
 }
