@@ -4,7 +4,6 @@ import { BaseChildrenProps } from '@gemeente-denhaag/baseprops';
 
 import { listitemsecondaryaction_classes as classes } from './bem-mapping';
 import './mui-override.module.css';
-import { StylesProvider } from '@material-ui/core';
 
 export type ListItemSecondaryActionProps = BaseChildrenProps;
 
@@ -15,9 +14,9 @@ export const ListItemSecondaryAction: React.FC<ListItemSecondaryActionProps> = (
   props: ListItemSecondaryActionProps,
 ) => {
   return (
-    <StylesProvider injectFirst>
-      <MaterialListItemSecondaryAction {...props} classes={classes}>{props.children}</MaterialListItemSecondaryAction>
-    </StylesProvider>
+    <MaterialListItemSecondaryAction {...props} classes={classes}>
+      {props.children}
+    </MaterialListItemSecondaryAction>
   );
 };
 
