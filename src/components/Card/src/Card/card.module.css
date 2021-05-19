@@ -25,6 +25,11 @@
 .denhaag-card:focus .denhaag-card--case__text__wrapper {
   border: var(--denhaag-focus-border);
   border-color: var(--denhaag-focus-border-color);
+  position: relative;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
 }
 
 .denhaag-card__arrow {
