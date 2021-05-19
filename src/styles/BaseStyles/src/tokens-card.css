@@ -11,11 +11,11 @@
     --denhaag-card-padding-inline: 24px;
 
     --denhaag-card-subtitle-color: var(--denhaag-grey-4);
-    --denhaag-card-subtitle-font-size: var(--denhaag-fontsize-base);
+    --denhaag-card-subtitle-font-size: var(--denhaag-font-size-base);
     --denhaag-card-subtitle-line-height: 24px;
     --denhaag-card-subtitle-font-weight: 500;
     --denhaag-card-subtitle-padding: 0;
-    --denhaag-card-title-font-size: var(--denhaag-fontsize-xl);
+    --denhaag-card-title-font-size: var(--denhaag-font-size-xl);
     --denhaag-card-title-line-height: 28px;
     --denhaag-card-title-font-weight: bold;
     --denhaag-card-title-padding: 0;
