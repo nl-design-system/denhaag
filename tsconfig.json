@@ -25,7 +25,7 @@
       "@gemeente-denhaag/cardheader": ["CardHeader/src/*"],
       "@gemeente-denhaag/checkbox": ["Checkbox/src/*"],
       "@gemeente-denhaag/container": ["Container/src/*"],
-      "@gemeente-denhaag/styles-proprietary": ["DenHaagBrand/src/*"],
+      "@gemeente-denhaag/styles-proprietary": ["Proprietary/src/*"],
       "@gemeente-denhaag/divider": ["Divider/src/*"],
       "@gemeente-denhaag/drawer": ["Drawer/src/*"],
       "@gemeente-denhaag/formcontrol": ["FormControl/src/*"],
