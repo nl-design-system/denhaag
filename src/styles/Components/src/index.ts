@@ -1,1 +1,1 @@
-export default require('./globals.module.css');
+export default require('./components.module.css');

@@ -1,1 +1,1 @@
-export default require("./denhaag-brand.module.css")
+export default require("./brand.module.css")

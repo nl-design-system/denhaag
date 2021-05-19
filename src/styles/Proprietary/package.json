@@ -1,6 +1,6 @@
 {
-  "name": "@gemeente-denhaag/styles-proprietary",
-  "description": "Den Haag proprietary brand styles",
+  "name": "@gemeente-denhaag/design-tokens-proprietary",
+  "description": "Den Haag proprietary brand tokens",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
   "version": "0.1.1",
