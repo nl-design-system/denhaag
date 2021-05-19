@@ -18,6 +18,8 @@
 .denhaag-list__item:focus,
 .denhaag-list__item:hover {
   outline: none;
+  box-shadow: none;
+  background-color: white;
 }
 
 .denhaag-list__itemtext {

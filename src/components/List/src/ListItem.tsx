@@ -67,17 +67,32 @@ export interface ListItemProps extends BaseProps {
    * Use to apply selected styling.
    */
   selected?: boolean;
+
+  /**
+   * A listitem can be used to navigate, in which case it has a different styling.
+   * Use to specify which type of action this item is.
+   */
+  actionType?: 'nav' | 'action';
 }
 
 /**
  * Primary UI component for user interaction
  */
 export const ListItem: React.FC<ListItemProps> = (props: ListItemProps) => {
-  return (
-    <MaterialListItem {...props} classes={classes} tabIndex={0} button={props.button}>
-      {props.children}
-    </MaterialListItem>
-  );
+  if (props.actionType === 'nav' || props.actionType === 'action') {
+    const muiProps = { ...props, actionType: props.actionType };
+    return (
+      <MaterialListItem {...muiProps} classes={classes} tabIndex={0} button disableRipple>
+        {props.children}
+      </MaterialListItem>
+    );
+  } else {
+    return (
+      <MaterialListItem {...props} classes={classes} tabIndex={0}>
+        {props.children}
+      </MaterialListItem>
+    );
+  }
 };
 
 export default ListItem;

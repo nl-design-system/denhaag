@@ -54,3 +54,13 @@
 .denhaag-list__item:hover .denhaag-list__itemicon {
   color: var(--denhaag-blue-3);
 }
+
+.denhaag-list__item[actionType="action"]:hover .denhaag-list__itemtextprimary,
+.denhaag-list__item[actionType="action"]:hover .denhaag-list__itemicon {
+  color: var(--denhaag-grey-4);
+}
+
+.denhaag-list__item[actionType="action"]:focus .denhaag-list__itemtextprimary,
+.denhaag-list__item[actionType="action"]:focus .denhaag-list__itemicon {
+  color: var(--denhaag-grey-4);
+}

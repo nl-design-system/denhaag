@@ -212,7 +212,7 @@ Subheader.parameters = {
 
 const FigmaTemplate2: Story<ListProps> = (args: ListProps) => (
   <List {...args}>
-    <ListItem dense>
+    <ListItem dense actionType="nav">
       <ListItemIcon>
         <HouseIcon />
       </ListItemIcon>
@@ -223,13 +223,24 @@ const FigmaTemplate2: Story<ListProps> = (args: ListProps) => (
         </IconButton>
       </ListItemSecondaryAction>
     </ListItem>
-    <ListItem button>
+    <ListItem button actionType="action">
       <ListItemIcon>
         <HouseIcon color="inherit" />
       </ListItemIcon>
       <ListItemSecondaryAction>
         <IconButton color="inherit" edge="end" aria-label="comments">
           <TrashIcon />
+        </IconButton>
+      </ListItemSecondaryAction>
+      <ListItemText primary="Single-line item" secondary="Secondary text" />
+    </ListItem>
+    <ListItem button actionType="nav">
+      <ListItemIcon>
+        <HouseIcon color="inherit" />
+      </ListItemIcon>
+      <ListItemSecondaryAction>
+        <IconButton color="inherit" edge="end" aria-label="comments">
+          <ChevronRightIcon />
         </IconButton>
       </ListItemSecondaryAction>
       <ListItemText primary="Single-line item" secondary="Secondary text" />
