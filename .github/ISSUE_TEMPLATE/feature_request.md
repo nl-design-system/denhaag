@@ -8,7 +8,7 @@ assignees: ''
 ---
 
 ### User story
-A clear and concise description of what the problem is. Ex. As an [actor], I [want|must] [action] so that [achievement].
+A clear and concise description of what the problem is. Eg: As an [actor], I [want|must] [action] so that [achievement].
 
 ### Describe the solution you'd like
 A clear and concise description of what you want to happen.
@@ -21,7 +21,7 @@ Add any other context or screenshots about the feature request here.
 
 ### Acceptance criteria
 Conditions that must be satisfied to be accepted by a user, customer or other stakeholder.
-- [ ] When I click the Rank button, then ideas are sorted with the top-scoring ideas at the top
+<!-- Eg: - [ ] When I click the Rank button, then ideas are sorted with the top-scoring ideas at the top -->
 
 ### Definition of Ready
 <!-- Do not change. -->
@@ -36,7 +36,7 @@ To be completed before the issue can be added to backlog.
 <!-- Do not change. -->
 To be completed before the issue can be marked as Done.
 - [ ] Meets acceptance criteria
-- [ ] Complies with the standard of public code
+- [ ] Complies with [the standard of public code](https://standard.publiccode.net/)
 - [ ] Story has been sufficiently tested
     - [ ] 90% code coverage
     - [ ] Build completed
