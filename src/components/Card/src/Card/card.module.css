@@ -106,7 +106,7 @@
   position: absolute;
   left: 0;
   top: -20px;
-  height: 20px;
+  height: 25px;
   width: 60%;
   background: var(--denhaag-card--case-primary-background-color);
   border-top-left-radius: var(--denhaag-card-border-radius);
