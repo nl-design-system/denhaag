@@ -1,6 +1,8 @@
 :root {
   /*
-   * Base tokens
+   * Font tokens
+   * @tokens Fonts
+   * @presenter FontSize
    */
   --denhaag-font-size-xs: 0.625rem;
   --denhaag-font-size-s: 0.75rem;
@@ -17,10 +19,19 @@
   --denhaag-font-family: sans-serif;
 
   /*
+   * Borders
    * @tokens Borders
    * @presenter BorderRadius
    */
   --denhaag-border-radius: 3px;
 
 
+  /* Focus state
+   * @tokens Borders
+   * @presenter Border
+   */
+  --denhaag-focus-border-color: var(--denhaag-ocher-4);
+  --denhaag-focus-border-width: 2px;
+  --denhaag-focus-border-style: dashed;
+  --denhaag-focus-border: var(--denhaag-focus-border-width) var(--denhaag-focus-border-style) var(--denhaag-focus-border-color);
 }
