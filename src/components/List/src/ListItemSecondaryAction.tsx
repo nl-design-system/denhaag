@@ -4,6 +4,7 @@ import { BaseChildrenProps } from '@gemeente-denhaag/baseprops';
 
 import { listitemsecondaryaction_classes as classes } from './bem-mapping';
 import './mui-override.module.css';
+import './listitemsecondaryaction.module.css';
 
 export type ListItemSecondaryActionProps = BaseChildrenProps;
 

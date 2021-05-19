@@ -7,6 +7,10 @@ import { listitem_classes as classes } from './bem-mapping';
 import './mui-override.module.css';
 import './listitem.module.css';
 import '@gemeente-denhaag/basestyles';
+import { ListItemIcon } from './ListItemIcon';
+import { ListItemSecondaryAction, ListItemText } from '.';
+import { ChevronRightIcon } from '@gemeente-denhaag/icons';
+import IconButton from '@gemeente-denhaag/iconbutton';
 
 export interface ListItemProps extends BaseProps {
   /**
@@ -20,11 +24,11 @@ export interface ListItemProps extends BaseProps {
    */
   autoFocus?: boolean;
 
-  /**
-   * If `true`, the list item will be a button (using `ButtonBase`). Props intended
-   * for `ButtonBase` can then be applied to `ListItem`.
-   */
-  button?: any;
+  // /**
+  //  * If `true`, the list item will be a button (using `ButtonBase`). Props intended
+  //  * for `ButtonBase` can then be applied to `ListItem`.
+  //  */
+  // button?: any;
 
   /**
    * The component used for the root node.
@@ -73,23 +77,62 @@ export interface ListItemProps extends BaseProps {
    * Use to specify which type of action this item is.
    */
   actionType?: 'nav' | 'action';
+
+  leftIcon?: any;
+  rightIcon?: any;
+
+  primaryText: string;
+
+  secondaryText?: string;
 }
 
 /**
  * Primary UI component for user interaction
  */
 export const ListItem: React.FC<ListItemProps> = (props: ListItemProps) => {
-  if (props.actionType === 'nav' || props.actionType === 'action') {
-    const muiProps = { ...props, actionType: props.actionType };
+  const muiProps = { ...props, actionType: props.actionType };
+
+  const children = [];
+
+  if (props.leftIcon) {
+    children.push(<ListItemIcon>{props.leftIcon}</ListItemIcon>);
+  }
+  if (props.actionType === 'nav') {
+    children.push(
+      <ListItemSecondaryAction>
+        {/* @ts-ignore */}
+        <IconButton color="inherit" edge="end" aria-label="comments" tabIndex={-1} disableRipple disableFocusRipple>
+          <ChevronRightIcon />
+        </IconButton>
+      </ListItemSecondaryAction>,
+    );
+  } else if (props.actionType === 'action') {
+    children.push(
+      <ListItemSecondaryAction>
+        <IconButton color="inherit" edge="end" aria-label="comments" disableRipple disableFocusRipple>
+          {props.rightIcon}
+        </IconButton>
+      </ListItemSecondaryAction>,
+    );
+  }
+  children.push(<ListItemText primary={props.primaryText} secondary={props.secondaryText}></ListItemText>);
+
+  if (props.actionType !== undefined) {
     return (
-      <MaterialListItem {...muiProps} classes={classes} tabIndex={0} button disableRipple>
-        {props.children}
+      <MaterialListItem
+        {...muiProps}
+        button
+        classes={classes}
+        disableRipple
+        tabIndex={props.actionType === 'action' ? -1 : 0}
+      >
+        {children}
       </MaterialListItem>
     );
   } else {
     return (
-      <MaterialListItem {...props} classes={classes} tabIndex={0}>
-        {props.children}
+      <MaterialListItem {...muiProps} classes={classes} tabIndex={0}>
+        {children}
       </MaterialListItem>
     );
   }

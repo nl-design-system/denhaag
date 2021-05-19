@@ -1,0 +1,13 @@
+.denhaag-list__secondaryaction button:focus {
+  /* right: 16px; */
+  /* color: blue; */
+}
+
+.denhaag-list__secondaryaction button:focus {
+  /* border-color: var(--denhaag-listitem-focus-border-color);
+  border-style: var(--denhaag-listitem-focus-border-style);
+  border-width: var(--denhaag-listitem-border-size);
+  border-radius: 0%; */
+  /* padding-block: calc(var(--denhaag-listitem-padding-block) - var(--denhaag-listitem-border-size));
+  padding-inline: calc(var(--denhaag-listitem-padding-inline) - var(--denhaag-listitem-border-size)); */
+}

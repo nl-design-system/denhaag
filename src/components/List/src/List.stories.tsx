@@ -212,39 +212,19 @@ Subheader.parameters = {
 
 const FigmaTemplate2: Story<ListProps> = (args: ListProps) => (
   <List {...args}>
-    <ListItem dense actionType="nav">
-      <ListItemIcon>
-        <HouseIcon />
-      </ListItemIcon>
-      <ListItemText primary="List item" />
-      <ListItemSecondaryAction>
-        <IconButton color="inherit" edge="end" aria-label="comments">
-          <ChevronRightIcon />
-        </IconButton>
-      </ListItemSecondaryAction>
-    </ListItem>
-    <ListItem button actionType="action">
-      <ListItemIcon>
-        <HouseIcon color="inherit" />
-      </ListItemIcon>
-      <ListItemSecondaryAction>
-        <IconButton color="inherit" edge="end" aria-label="comments">
-          <TrashIcon />
-        </IconButton>
-      </ListItemSecondaryAction>
-      <ListItemText primary="Single-line item" secondary="Secondary text" />
-    </ListItem>
-    <ListItem button actionType="nav">
-      <ListItemIcon>
-        <HouseIcon color="inherit" />
-      </ListItemIcon>
-      <ListItemSecondaryAction>
-        <IconButton color="inherit" edge="end" aria-label="comments">
-          <ChevronRightIcon />
-        </IconButton>
-      </ListItemSecondaryAction>
-      <ListItemText primary="Single-line item" secondary="Secondary text" />
-    </ListItem>
+    <ListItem primaryText="ListItem" />
+    <ListItem
+      primaryText="Single-line item"
+      actionType="action"
+      leftIcon={<HouseIcon color="inherit"></HouseIcon>}
+      rightIcon={<TrashIcon />}
+    />
+    <ListItem
+      primaryText="Single-line item"
+      secondaryText="Secondary text"
+      leftIcon={<HouseIcon color="inherit" />}
+      actionType="nav"
+    />
   </List>
 );
 
@@ -266,15 +246,9 @@ ListWithIcons.parameters = {
 
 const FigmaTemplate1: Story<ListProps> = (args: ListProps) => (
   <List {...args}>
-    <ListItem dense>
-      <ListItemText primary="List item" />
-    </ListItem>
-    <ListItem dense>
-      <ListItemText primary="List item" />
-    </ListItem>
-    <ListItem dense>
-      <ListItemText primary="List item" />
-    </ListItem>
+    <ListItem primaryText="ListItem" />
+    <ListItem primaryText="ListItem" />
+    <ListItem primaryText="ListItem" />
   </List>
 );
 

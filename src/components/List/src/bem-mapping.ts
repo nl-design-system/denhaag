@@ -11,7 +11,8 @@ export const listsubheader_classes = {
 }
 
 export const listitem_classes = {
-    root: 'denhaag-list__item'
+    root: 'denhaag-list__item',
+    focusVisible: 'denhaag-list__itemfocused',
 }
 
 export const listitemtext_classes = {

@@ -8,6 +8,7 @@
 }
 
 .denhaag-list__item {
+  background-color: white;
   padding-block: var(--denhaag-listitem-padding-block);
   padding-inline: var(--denhaag-listitem-padding-inline);
 }
@@ -64,3 +65,15 @@
 .denhaag-list__item[actionType="action"]:focus .denhaag-list__itemicon {
   color: var(--denhaag-grey-4);
 }
+
+/* .denhaag-list__item:focus-within {
+  background-color: purple;
+} */
+
+.denhaag-list__item.denhaag-list__itemfocused {
+  background-color: white;
+}
+
+/* .denhaag-list__item.denhaag-list__itemsecondarybuttonfocused {
+  background-color: brown;
+} */
