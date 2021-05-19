@@ -7,5 +7,5 @@ export const classes = {
   startIcon: 'denhaag-button__start-icon',
   endIcon: 'denhaag-button__end-icon',
   iconSizeMedium: 'denhaag-button__icon-size-medium',
-  iconSizeLarge: 'denhaag-button__icon-size-large'
-}
+  iconSizeLarge: 'denhaag-button__icon-size-large',
+};
