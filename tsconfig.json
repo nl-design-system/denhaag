@@ -219,10 +219,10 @@
       "path": "src/meta-packages/surfaces"
     },
     {
-      "path": "src/styles/BaseStyles"
+      "path": "src/styles/Components"
     },
     {
-      "path": "src/styles/DenHaagBrand"
+      "path": "src/styles/Proprietary"
     }
   ]
 }
