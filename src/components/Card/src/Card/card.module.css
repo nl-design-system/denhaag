@@ -32,6 +32,10 @@
   right: -2px;
 }
 
+.denhaag-card:focus {
+  outline: none;
+}
+
 .denhaag-card__arrow {
     left: var(--denhaag-card-arrow-left);
     position: var(--denhaag-card-arrow-position);
