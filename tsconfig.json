@@ -224,6 +224,9 @@
     },
     {
       "path": "src/styles/Proprietary"
+    },
+    {
+      "path": "src/styles/Common"
     }
   ]
 }
