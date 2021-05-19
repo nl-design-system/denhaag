@@ -5,22 +5,25 @@
   /*
    * Base tokens
    */
-  --denhaag-fontsize-xs: 0.625rem;
-  --denhaag-fontsize-s: 0.75rem;
-  --denhaag-fontsize-base: 1rem;
-  --denhaag-fontsize-lg: 1.25rem;
-  --denhaag-fontsize-xl: 1.5rem;
-  --denhaag-fontsize-2xl: 2rem;
-  --denhaag-fontsize-3xl: 3rem;
+  --denhaag-font-size-xs: 0.625rem;
+  --denhaag-font-size-s: 0.75rem;
+  --denhaag-font-size-base: 1rem;
+  --denhaag-font-size-lg: 1.25rem;
+  --denhaag-font-size-xl: 1.5rem;
+  --denhaag-font-size-2xl: 2rem;
+  --denhaag-font-size-3xl: 3rem;
 
+  /*
+   * @tokens Fonts
+   * @presenter FontFamily
+   */
+  --denhaag-font-family: sans-serif;
+
+  /*
+   * @tokens Borders
+   * @presenter BorderRadius
+   */
   --denhaag-border-radius: 3px;
 
-  /*
-   * Button tokens
-   */
-
-  /*
-   * Card tokens
-   */
 
 }
