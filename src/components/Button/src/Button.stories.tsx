@@ -1,20 +1,20 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import { ArrowBackRounded, ArrowForwardRounded } from "@material-ui/icons";
-import Button, { ButtonProps } from ".";
-import pkg from "../package.json";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import { ArrowBackRounded, ArrowForwardRounded } from '@material-ui/icons';
+import Button, { ButtonProps } from '.';
+import pkg from '../package.json';
 
 export default {
-  title: "Components/Input/Button",
+  title: 'Components/Input/Button',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: {
-        type: "dynamic"
-      }
-    }
+        type: 'dynamic',
+      },
+    },
   },
-  component: Button
+  component: Button,
 } as Meta;
 
 const Template: Story<ButtonProps> = (args: ButtonProps) => <Button {...args}>Button</Button>;
@@ -30,7 +30,7 @@ Default.args = {};
  */
 export const PrimaryAction: Story<ButtonProps> = Template.bind({});
 PrimaryAction.args = {
-  variant: "primary-action"
+  variant: 'primary-action',
 };
 
 /**
@@ -38,7 +38,7 @@ PrimaryAction.args = {
  */
 export const SecondaryAction: Story<ButtonProps> = Template.bind({});
 SecondaryAction.args = {
-  variant: "secondary-action"
+  variant: 'secondary-action',
 };
 
 /**
@@ -46,7 +46,7 @@ SecondaryAction.args = {
  */
 export const IconLeft: Story<ButtonProps> = Template.bind({});
 IconLeft.args = {
-  startIcon: <ArrowBackRounded />
+  startIcon: <ArrowBackRounded />,
 };
 
 /**
@@ -54,13 +54,13 @@ IconLeft.args = {
  */
 export const IconRight: Story<ButtonProps> = Template.bind({});
 IconRight.args = {
-  variant: "secondary-action",
-  endIcon: <ArrowForwardRounded />
+  variant: 'secondary-action',
+  endIcon: <ArrowForwardRounded />,
 };
 
 export const Medium: Story<ButtonProps> = Template.bind({});
 Medium.args = {
-  size: "medium"
+  size: 'medium',
 };
 
 /**
@@ -68,7 +68,7 @@ Medium.args = {
  */
 export const Large: Story<ButtonProps> = Template.bind({});
 Large.args = {
-  size: "large"
+  size: 'large',
 };
 
 /**
@@ -76,5 +76,5 @@ Large.args = {
  */
 export const Disabled: Story<ButtonProps> = Template.bind({});
 Disabled.args = {
-  disabled: true
+  disabled: true,
 };
