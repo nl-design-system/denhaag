@@ -1,5 +1,6 @@
-import '@gemeente-denhaag/styles-proprietary';
-import '@gemeente-denhaag/styles-components'
+import '@gemeente-denhaag/design-tokens-proprietary';
+import '@gemeente-denhaag/design-tokens-components';
+import '@gemeente-denhaag/design-tokens-common';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
