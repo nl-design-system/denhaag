@@ -62,7 +62,7 @@
 .denhaag-button--medium {
   padding-inline: var(--denhaag-button-medium-size-padding-inline);
   padding-block: var(--denhaag-button-medium-size-padding-block);
-  font-size: var(--denhaag-fontsize-base);
+  font-size: var(--denhaag-font-size-base);
 
 }
 
@@ -74,7 +74,7 @@
 .denhaag-button--large {
   padding-inline: var(--denhaag-button-large-size-padding-inline);
   padding-block: var(--denhaag-button-large-size-padding-block);
-  font-size: var(--denhaag-fontsize-lg);
+  font-size: var(--denhaag-font-size-lg);
 }
 
 .denhaag-button--large.denhaag-button--secondary-action {
@@ -84,11 +84,11 @@
 
 /* Icon styling */
 .denhaag-button__icon-size-medium > *:first-child {
-  font-size: var(--denhaag-fontsize-lg);
+  font-size: var(--denhaag-font-size-lg);
 }
 
 .denhaag-button__icon-size-large > *:first-child {
-  font-size: var(--denhaag-fontsize-xl);
+  font-size: var(--denhaag-font-size-xl);
 }
 
 
