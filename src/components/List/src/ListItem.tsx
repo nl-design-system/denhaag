@@ -6,6 +6,7 @@ import '@gemeente-denhaag/design-tokens-common';
 import { listitem_classes as classes } from './bem-mapping';
 import './mui-override.module.css';
 import './listitem.module.css';
+import './listitemsecondaryaction.module.css';
 import { ListItemIcon } from './ListItemIcon';
 import { ListItemSecondaryAction, ListItemText } from '.';
 import { ChevronRightIcon } from '@gemeente-denhaag/icons';

@@ -28,11 +28,11 @@
 }
 
 .denhaag-list__item:active > .denhaag-list__secondaryaction {
-  right: 14px;
+  right: calc(var(--denhaag-list-item-secondaryaction-right) - 2px);
 }
 
 .denhaag-list__item:focus > .denhaag-list__secondaryaction {
-  right: 14px;
+  right: calc(var(--denhaag-list-item-secondaryaction-right) - 2px);
   color: var(--denhaag-blue-3);
 }
 
