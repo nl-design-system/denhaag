@@ -40,8 +40,4 @@
   --denhaag-black: hsl(0 0% 0%);
 
   --denhaag-white: hsl(0 0% 100%);
-
-  /* Focus state */
-  --denhaag-focus-border-color: var(--denhaag-ocher-4);
-  --denhaag-focus-border: 2px dashed var(--denhaag-focus-border-color);
 }
