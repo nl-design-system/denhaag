@@ -3,7 +3,6 @@ import React from 'react';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import { StylesProvider } from '@material-ui/core';
 import { classes } from './bem-mapping';
-import '@gemeente-denhaag/basestyles';
 import './mui-override.module.css';
 import './button.module.css';
 
