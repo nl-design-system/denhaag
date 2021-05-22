@@ -1,0 +1,8 @@
+:root {
+    --denhaag-list-item-icon-color: var(--denhaag-grey-4)
+}
+
+.denhaag-list__itemicon {
+    color: var(--denhaag-list-item-icon-color);
+}
+  
