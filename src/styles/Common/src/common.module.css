@@ -11,7 +11,6 @@
   --denhaag-font-size-xl: 1.5rem;
   --denhaag-font-size-2xl: 2rem;
   --denhaag-font-size-3xl: 3rem;
-
   /*
    * @tokens Fonts
    * @presenter FontFamily
@@ -28,10 +27,18 @@
 
   /* Focus state
    * @tokens Borders
-   * @presenter Border
+   * @presenter Color
    */
   --denhaag-focus-border-color: var(--denhaag-ocher-4);
+  /*
+   * @tokens Borders
+   * @presenter Spacing
+   */
   --denhaag-focus-border-width: 2px;
+  /*
+   * @tokens Borders
+   * @presenter Border
+   */
   --denhaag-focus-border-style: dashed;
   --denhaag-focus-border: var(--denhaag-focus-border-width) var(--denhaag-focus-border-style) var(--denhaag-focus-border-color);
 }
