@@ -8,7 +8,7 @@ import './mui-override.module.css';
 import './listitem.module.css';
 import { ListItemIcon } from './ListItemIcon';
 import { ListItemSecondaryAction, ListItemText } from '.';
-import { ChevronRightIcon, SvgIconProps } from '@gemeente-denhaag/icons';
+import { ChevronRightIcon } from '@gemeente-denhaag/icons';
 import IconButton from '@gemeente-denhaag/iconbutton';
 
 export interface ListItemProps extends BaseProps {
@@ -74,13 +74,13 @@ export interface ListItemProps extends BaseProps {
   /**
    * The icon shown on the left side
    */
-  leftIcon?: React.FunctionComponent<SvgIconProps>;
+  leftIcon?: React.ReactNode;
 
   /**
    * The icon shown on the right side.
    * If actionType is 'action' it is clickable and will be focused.
    */
-  rightIcon?: React.FunctionComponent<SvgIconProps>;
+  rightIcon?: React.ReactNode;
 
   /**
    * The primary text shown in the listitem

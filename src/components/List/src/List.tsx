@@ -37,7 +37,7 @@ export interface ListProps extends BaseProps {
  * Primary UI component for user interaction
  */
 export const List: React.FC<ListProps> = (props: ListProps) => {
-  const subheader = props.subheader as unknown as React.ReactElement;
+  const subheader = (props.subheader as unknown) as React.ReactElement;
   const materialProps = { ...props, subheader };
 
   return (
