@@ -51,8 +51,6 @@ export const StepIcon: React.FC<StepIconProps> = ({
 
   const textClasses = clsx('denhaag-stepper__step-icon__text', {
     'denhaag-stepper__step-icon__text--active': active,
-    'denhaag-stepper__step-icon__text--inactive': inactive,
-    'denhaag-stepper__step-icon__text--completed': completed,
   });
 
   // Exported from https://www.figma.com/file/JpoY3waVoQGlLQzQXTL9nn/Design-System-Gemeente-Den-Haag?node-id=1908%3A9407
