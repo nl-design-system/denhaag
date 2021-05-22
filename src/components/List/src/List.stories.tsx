@@ -3,7 +3,7 @@ import { Meta, Story } from '@storybook/react';
 import Checkbox from '@gemeente-denhaag/checkbox';
 import IconButton from '@gemeente-denhaag/iconbutton';
 import Avatar from '@gemeente-denhaag/avatar';
-import { ArchiveIcon, ChevronRightIcon, HouseIcon, TrashIcon } from '@gemeente-denhaag/icons';
+import { ArchiveIcon, HouseIcon, TrashIcon } from '@gemeente-denhaag/icons';
 import List, {
   ListProps,
   ListItem,

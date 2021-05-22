@@ -2,14 +2,13 @@ import React from 'react';
 import MaterialListItem from '@material-ui/core/ListItem';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import { ContainerProps } from '@gemeente-denhaag/container';
-
+import '@gemeente-denhaag/design-tokens-common';
 import { listitem_classes as classes } from './bem-mapping';
 import './mui-override.module.css';
 import './listitem.module.css';
-import '@gemeente-denhaag/basestyles';
 import { ListItemIcon } from './ListItemIcon';
 import { ListItemSecondaryAction, ListItemText } from '.';
-import { ChevronRightIcon } from '@gemeente-denhaag/icons';
+import { ChevronRightIcon, SvgIconProps } from '@gemeente-denhaag/icons';
 import IconButton from '@gemeente-denhaag/iconbutton';
 
 export interface ListItemProps extends BaseProps {
@@ -23,12 +22,6 @@ export interface ListItemProps extends BaseProps {
    * Focus will also be triggered if the value changes from false to true.
    */
   autoFocus?: boolean;
-
-  // /**
-  //  * If `true`, the list item will be a button (using `ButtonBase`). Props intended
-  //  * for `ButtonBase` can then be applied to `ListItem`.
-  //  */
-  // button?: any;
 
   /**
    * The component used for the root node.
@@ -78,11 +71,25 @@ export interface ListItemProps extends BaseProps {
    */
   actionType?: 'nav' | 'action';
 
-  leftIcon?: any;
-  rightIcon?: any;
+  /**
+   * The icon shown on the left side
+   */
+  leftIcon?: React.FunctionComponent<SvgIconProps>;
 
+  /**
+   * The icon shown on the right side.
+   * If actionType is 'action' it is clickable and will be focused.
+   */
+  rightIcon?: React.FunctionComponent<SvgIconProps>;
+
+  /**
+   * The primary text shown in the listitem
+   */
   primaryText: string;
 
+  /**
+   * The secondary text shown under the primaryText in the listitem.
+   */
   secondaryText?: string;
 }
 
@@ -100,6 +107,7 @@ export const ListItem: React.FC<ListItemProps> = (props: ListItemProps) => {
   if (props.actionType === 'nav') {
     children.push(
       <ListItemSecondaryAction>
+        {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
         {/* @ts-ignore */}
         <IconButton color="inherit" edge="end" aria-label="comments" tabIndex={-1} disableRipple disableFocusRipple>
           <ChevronRightIcon />
