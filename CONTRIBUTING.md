@@ -203,7 +203,10 @@ In the PWA yarn upgrade the dependency of @gemeente-denhaag/denhaag-component-li
 
 ## Testing guidelines
 The component library is tested using Cypress, see their docs [here](https://docs.cypress.io/guides/overview/why-cypress).
-Each component should have a `/spec` directory in their package with one or more `<component>.spec.tsx` test files.
+Each component should have a `/spec` directory in their package with one or more `<component>.spec.tsx` test files. 
+There are two commands for running the tests:
+- `yarn test` for running in your terminal
+- `yarn test:open` for running in the cypress tool
 
 ### Test examples
 In the component library the following types of tests should be available:
