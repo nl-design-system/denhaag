@@ -1,8 +1,3 @@
-:root {
-  --denhaag-list-subheader-font-weight: 700;
-  --denhaag-list-subheader-color: var(--denhaag-grey-4);
-}
-
 .denhaag-list__subheader {
   font-family: var(--denhaag-font-family);
   font-size: var(--denhaag-font-size-base);

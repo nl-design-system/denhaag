@@ -1,0 +1,28 @@
+:root {
+  --denhaag-list-font-family: var(--denhaag-font-family);
+
+  /* ListItem */
+  --denhaag-listitem-padding-inline: 16px;
+  --denhaag-listitem-padding-block: 12px;
+  --denhaag-listitem-border-size: 2px;
+  --denhaag-listitem-focus-border-color: var(--denhaag-ocher-4);
+  --denhaag-listitem-focus-border-width: var(--denhaag-focus-border-width);
+  --denhaag-listitem-focus-border-style: var(--denhaag-focus-border-style);
+
+  /* ListItemIcon */
+  --denhaag-listitem-icon-color: var(--denhaag-grey-4);
+
+  /* ListItemSecondaryAction */
+  --denhaag-listitem-secondaryaction-focus-color: var(--denhaag-blue-3);
+  --denhaag-listitem-secondaryaction-color: var(--denhaag-grey-4);
+  --denhaag-listitem-secondaryaction-right: 16px;
+  --denhaag-listitem-secondaryaction-padding: 4px;
+
+  /* ListItemText */
+  --denhaag-listitemtext-primary-color: var(--denhaag-grey-4);
+  --denhaag-listitemtext-secondary-color: var(--denhaag-grey-4);
+
+  /* ListSubheader */
+  --denhaag-list-subheader-font-weight: 700;
+  --denhaag-list-subheader-color: var(--denhaag-grey-4);
+}

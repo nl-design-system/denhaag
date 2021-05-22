@@ -5,8 +5,9 @@ import ListSubheader from '@gemeente-denhaag/listsubheader';
 
 import { StylesProvider } from '@material-ui/core';
 import { list_classes as classes } from './bem-mapping';
+
 import './mui-override.module.css';
-import './list.module.css';
+import '@gemeente-denhaag/design-tokens-components';
 
 export interface ListProps extends BaseProps {
   /**

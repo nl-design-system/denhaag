@@ -6,9 +6,11 @@ import {
   listitemtextprimary_classes,
   listitemtextsecondary_classes,
 } from './bem-mapping';
+
 import './mui-override.module.css';
 import './listitemtext.module.css';
-import './list.module.css';
+import '@gemeente-denhaag/design-tokens-components';
+
 
 import { Typography } from '@gemeente-denhaag/typography';
 

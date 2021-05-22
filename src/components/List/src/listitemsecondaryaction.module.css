@@ -1,20 +1,13 @@
-:root {
-  --denhaag-list-item-secondaryaction-focus-color: var(--denhaag-blue-3);
-  --denhaag-list-item-secondaryaction-color: var(--denhaag-grey-4);
-  --denhaag-list-item-secondaryaction-right: 16px;
-  --denhaag-list-item-secondaryaction-padding: 4px;
-}
-
 .denhaag-list__secondaryaction {
-  right: var(--denhaag-list-item-secondaryaction-right);
-  color: var(--denhaag-list-item-secondaryaction-color);
+  right: var(--denhaag-listitem-secondaryaction-right);
+  color: var(--denhaag-listitem-secondaryaction-color);
   width: 32px;
   height: 32px;
 }
 
 .denhaag-list__secondaryaction button {
-  padding-inline: var(--denhaag-list-item-secondaryaction-padding);
-  padding-block: var(--denhaag-list-item-secondaryaction-padding);
+  padding-inline: var(--denhaag-listitem-secondaryaction-padding);
+  padding-block: var(--denhaag-listitem-secondaryaction-padding);
 }
 
 .denhaag-list__secondaryaction button:focus {
@@ -24,6 +17,6 @@
   border-radius: 0%;
   box-sizing: border-box;
   color: var(--denhaag-list-item-secondaryaction-focus-color);
-  padding-inline: calc(var(--denhaag-list-item-secondaryaction-padding) - var(--denhaag-focus-border-width));
-  padding-block: calc(var(--denhaag-list-item-secondaryaction-padding) - var(--denhaag-focus-border-width));
+  padding-inline: calc(var(--denhaag-listitem-secondaryaction-padding) - var(--denhaag-focus-border-width));
+  padding-block: calc(var(--denhaag-listitem-secondaryaction-padding) - var(--denhaag-focus-border-width));
 }

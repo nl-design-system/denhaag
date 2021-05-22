@@ -1,7 +1,0 @@
-:root {
-  --denhaag-list-font-family: var(--denhaag-font-family);
-}
-
-.denhaag-list {
-  font-family: var(--denhaag-list-font-family);
-}

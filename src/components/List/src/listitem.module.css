@@ -1,12 +1,3 @@
-:root {
-  --denhaag-listitem-padding-inline: 16px;
-  --denhaag-listitem-padding-block: 12px;
-  --denhaag-listitem-border-size: 2px;
-  --denhaag-listitem-focus-border-color: var(--denhaag-ocher-4);
-  --denhaag-listitem-focus-border-width: var(--denhaag-focus-border-width);
-  --denhaag-listitem-focus-border-style: var(--denhaag-focus-border-style);
-}
-
 .denhaag-list__item {
   background-color: white;
   padding-block: var(--denhaag-listitem-padding-block);

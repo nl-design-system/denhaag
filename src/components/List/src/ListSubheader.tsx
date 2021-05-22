@@ -2,10 +2,11 @@ import React from 'react';
 import { Typography } from '@gemeente-denhaag/typography';
 
 import { listsubheader_classes as classes } from './bem-mapping';
+
 import './mui-override.module.css';
-import './list.module.css';
 import './listsubheader.module.css';
-import '@gemeente-denhaag/design-tokens-common'
+import '@gemeente-denhaag/design-tokens-common';
+import '@gemeente-denhaag/design-tokens-components';
 
 export interface ListSubheaderProps {
   /**
