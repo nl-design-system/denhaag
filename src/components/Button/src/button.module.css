@@ -1,6 +1,6 @@
 .denhaag-button {
-  font-family: var(--denhaag-font-family);
-  border-radius: var(--denhaag-border-radius);
+  font-family: var(--denhaag-button-font-family);
+  border-radius: var(--denhaag-button-border-radius);
 }
 
 .denhaag-button--focus:after, .denhaag-button:focus:after {
