@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import MaterialStep from '@material-ui/core/Step';
-import { StylesProvider } from '@material-ui/core';
 
 import BaseProps from '@gemeente-denhaag/baseprops';
 import { Typography } from '@gemeente-denhaag/typography';
-import { ChevronDownIcon, ChevronupIcon } from '@gemeente-denhaag/icons';
+import { ChevronDownIcon, ChevronUpIcon } from '@gemeente-denhaag/icons';
 import { StepIcon, StepContent, StepLabel } from '.';
 
 // styles
@@ -70,19 +69,17 @@ export const Step: React.FC<StepProps> = ({ label, description, active = false, 
   }, [active]);
 
   return (
-    <StylesProvider injectFirst>
-      <MaterialStep onClick={toggle} expanded={isExpanded} active={active} classes={stepClasses} {...props}>
-        <StepLabel StepIconComponent={StepIcon}>
-          {label}
-          {hasDescription && !active ? isExpanded ? <ChevronupIcon /> : <ChevronDownIcon /> : ''}
-        </StepLabel>
-        <StepContent>
-          <Typography variant="body1" component="p">
-            {description}
-          </Typography>
-        </StepContent>
-      </MaterialStep>
-    </StylesProvider>
+    <MaterialStep onClick={toggle} expanded={isExpanded} active={active} classes={stepClasses} {...props}>
+      <StepLabel StepIconComponent={StepIcon}>
+        {label}
+        {hasDescription && !active ? isExpanded ? <ChevronUpIcon /> : <ChevronDownIcon /> : ''}
+      </StepLabel>
+      <StepContent>
+        <Typography variant="body1" component="p">
+          {description}
+        </Typography>
+      </StepContent>
+    </MaterialStep>
   );
 };
 
