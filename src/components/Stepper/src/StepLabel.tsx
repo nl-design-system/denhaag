@@ -1,7 +1,6 @@
 import React from 'react';
 import MaterialStepLabel from '@material-ui/core/StepLabel';
 import BaseProps from '@gemeente-denhaag/baseprops';
-import { StylesProvider } from '@material-ui/core';
 
 import { StepIconProps } from './StepIcon';
 import { stepLabelClasses } from './styles/bem-mapping';
@@ -26,7 +25,7 @@ export interface StepLabelProps extends BaseProps {
   /**
    * The label displayed in the step icon.
    */
-  icon?: React.ReactNode;
+  icon?: number;
 
   /**
    * The component to render in place of the StepIcon.
@@ -45,11 +44,7 @@ export interface StepLabelProps extends BaseProps {
  * @constructor Constructs an instance of StepLabel.
  */
 export const StepLabel: React.FC<StepLabelProps> = (props: StepLabelProps) => {
-  return (
-    <StylesProvider injectFirst>
-      <MaterialStepLabel classes={stepLabelClasses} {...props} />
-    </StylesProvider>
-  );
+  return <MaterialStepLabel classes={stepLabelClasses} {...props} />;
 };
 
 export default StepLabel;
