@@ -1,12 +1,11 @@
 :root {
   --denhaag-list-item-secondaryaction-focus-color: var(--denhaag-blue-3);
+  --denhaag-list-item-secondaryaction-color: var(--denhaag-grey-4);
 }
 
 .denhaag-list__secondaryaction {
   right: 16px;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+  color: var(--denhaag-list-item-secondaryaction-color);
 }
 
 .denhaag-list__secondaryaction:focus-within {
