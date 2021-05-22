@@ -1,6 +1,22 @@
-.denhaag-list__secondaryaction button:focus {
-  /* right: 16px; */
-  /* color: blue; */
+.denhaag-list__secondaryaction {
+  right: 16px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.denhaag-list__secondaryaction:focus-within {
+  right: 14px;
+}
+
+.denhaag-list__secondaryaction button {
+  padding-inline: 2px 2px;
+  padding-block: 2px 2px;
+  right: 6px;
+}
+
+.denhaag-list__secondaryaction button:active {
+  right: 4px;
 }
 
 .denhaag-list__secondaryaction button:focus {
