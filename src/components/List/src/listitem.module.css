@@ -66,6 +66,10 @@
   color: var(--denhaag-grey-4);
 }
 
+.denhaag-list__item[actionType="action"] {
+  cursor: default;
+}
+
 /* .denhaag-list__item:focus-within {
   background-color: purple;
 } */

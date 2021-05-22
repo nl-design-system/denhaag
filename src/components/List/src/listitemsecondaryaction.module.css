@@ -1,3 +1,7 @@
+:root {
+  --denhaag-list-item-secondaryaction-focus-color: var(--denhaag-blue-3);
+}
+
 .denhaag-list__secondaryaction {
   right: 16px;
   /* display: flex;
@@ -25,6 +29,7 @@
   border-width: var(--denhaag-listitem-border-size);
   border-radius: 0%;
   box-sizing: border-box;
+  color: var(--denhaag-list-item-secondaryaction-focus-color);
   /* padding-block: calc(var(--denhaag-listitem-padding-block) - var(--denhaag-listitem-border-size)); */
   /* padding-inline: 2px 4px;
   padding-block: 2px 2px; */
