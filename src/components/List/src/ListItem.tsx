@@ -27,6 +27,11 @@ export interface ListItemProps extends BaseProps {
   actionType?: 'nav' | 'action';
 
   /**
+   * The callback fired when clicked
+   */
+  onClick?: (event: any) => void;
+
+  /**
    * The icon shown on the left side
    */
   leftIcon?: React.ReactNode;
@@ -88,6 +93,7 @@ export const ListItem: React.FC<ListItemProps> = (props: ListItemProps) => {
         classes={classes}
         disableRipple
         tabIndex={props.actionType === 'action' ? -1 : 0}
+        onClick={props.onClick}
       >
         {children}
       </MaterialListItem>
