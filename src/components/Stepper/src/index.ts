@@ -1,8 +1,8 @@
 import Stepper from './Stepper';
 
 // styles
-import '@gemeente-denhaag/denhaagbrand';
-import '@gemeente-denhaag/basestyles';
+import '@gemeente-denhaag/design-tokens-common';
+import '@gemeente-denhaag/design-tokens-proprietary';
 import './styles/mui-override.module.css';
 import './styles/stepper.module.css';
 

@@ -3,12 +3,7 @@ import MaterialStepContent from '@material-ui/core/StepContent';
 import { StylesProvider } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
 
-// styles
 import { contentClasses } from './styles/bem-mapping';
-import '@gemeente-denhaag/denhaagbrand';
-import '@gemeente-denhaag/basestyles';
-import './styles/mui-override.module.css';
-import './styles/stepper.module.css';
 
 export interface StepContentProps extends BaseProps {
   /**

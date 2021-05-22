@@ -5,17 +5,9 @@ import BaseProps from '@gemeente-denhaag/baseprops';
 import { ChevronDownIcon, ChevronUpIcon } from '@gemeente-denhaag/icons';
 
 import { StepIcon, StepContent, StepLabel } from '.';
-import { stepClasses } from './styles/bem-mapping';
+import { stepClasses, stepLabelIconClasses } from './styles/bem-mapping';
 
 export interface StepProps extends BaseProps {
-  /**
-   * Describes the information of the step.
-   */
-  label: string;
-  /**
-   * Additional information about the step.
-   */
-  description?: string;
   /**
    * Describes the information of the step.
    */

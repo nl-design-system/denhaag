@@ -3,6 +3,10 @@
   margin-block-end: 12px;
 }
 
+.denhaag-stepper__step:hover {
+  color: var(--denhaag-blue-3);
+}
+
 .denhaag-stepper__step-content {
   margin-block-start: 12px;
 

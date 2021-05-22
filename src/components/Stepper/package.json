@@ -23,8 +23,8 @@
     },
     "dependencies": {
         "@gemeente-denhaag/baseprops": "^0.1.7",
-        "@gemeente-denhaag/basestyles": "^0.1.1",
-        "@gemeente-denhaag/denhaagbrand": "^0.1.1",
+        "@gemeente-denhaag/design-tokens-common": "^0.1.1",
+        "@gemeente-denhaag/design-tokens-proprietary": "^0.1.1",
         "@gemeente-denhaag/icons": "^0.1.0",
         "@gemeente-denhaag/typography": "^0.1.7",
         "@material-ui/core": "^4.11.0",
