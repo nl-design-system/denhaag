@@ -89,6 +89,7 @@
     "react-test-renderer": "^17.0.1",
     "rimraf": "^3.0.2",
     "copyfiles": "^2.4.1",
+    "storybook-design-token": "^1.0.1",
     "storybook": "^6.2.8",
     "storybook-design-token": "^1.0.1",
     "stylelint": "^13.8.0",
