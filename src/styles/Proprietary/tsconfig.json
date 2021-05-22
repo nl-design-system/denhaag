@@ -7,16 +7,6 @@
     "composite": true
   },
   "include": ["src/**/*"],
-  "exclude": ["dist", "src/**/*.stories.tsx"],
-  "references": [
-    {
-      "path": "../Icons"
-    },
-    {
-      "path": "../Typography"
-    },
-    {
-      "path": "../BaseProps"
-    }
-  ]
+  "exclude": ["dist"],
+  "references": []
 }

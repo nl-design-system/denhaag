@@ -3,7 +3,6 @@ import MaterialCardActions from "@material-ui/core/CardActions";
 import BaseProps from "@gemeente-denhaag/baseprops";
 import "./card-actions.module.css";
 import "./mui-override.module.css";
-import "@gemeente-denhaag/basestyles";
 import { StylesProvider } from "@material-ui/core/styles";
 import { cardActionClasses } from "./bem-mapping";
 
