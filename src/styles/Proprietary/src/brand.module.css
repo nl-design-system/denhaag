@@ -1,5 +1,8 @@
 :root {
-  /* Colors */
+  /**
+   * @tokens Colors
+   * @presenter Color
+   */
   --denhaag-green-1: hsl(117 28% 87%);
   --denhaag-green-2: hsl(118 28% 60%);
   --denhaag-green-3: hsl(138 58% 33%);
