@@ -1,7 +1,10 @@
 import React from 'react';
 import MaterialStepLabel from '@material-ui/core/StepLabel';
 import BaseProps from '@gemeente-denhaag/baseprops';
+import { StylesProvider } from '@material-ui/core';
+
 import { StepIconProps } from './StepIcon';
+import { stepLabelClasses } from './styles/bem-mapping';
 
 export interface StepLabelProps extends BaseProps {
   /**
@@ -42,7 +45,11 @@ export interface StepLabelProps extends BaseProps {
  * @constructor Constructs an instance of StepLabel.
  */
 export const StepLabel: React.FC<StepLabelProps> = (props: StepLabelProps) => {
-  return <MaterialStepLabel {...props} />;
+  return (
+    <StylesProvider injectFirst>
+      <MaterialStepLabel classes={stepLabelClasses} {...props} />
+    </StylesProvider>
+  );
 };
 
 export default StepLabel;

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import MaterialStep from '@material-ui/core/Step';
 
 import BaseProps from '@gemeente-denhaag/baseprops';
-import { Typography } from '@gemeente-denhaag/typography';
 import { ChevronDownIcon, ChevronUpIcon } from '@gemeente-denhaag/icons';
 
 import { StepIcon, StepContent, StepLabel } from '.';
@@ -75,13 +74,17 @@ export const Step: React.FC<StepProps> = ({ label, description, active = false, 
     <MaterialStep onClick={toggle} expanded={isExpanded} active={active} classes={stepClasses} {...props}>
       <StepLabel StepIconComponent={StepIcon}>
         {label}
-        {hasDescription && !active ? isExpanded ? <ChevronUpIcon /> : <ChevronDownIcon /> : ''}
+        {hasDescription && !active ? (
+          isExpanded ? (
+            <ChevronUpIcon classes={stepLabelIconClasses} />
+          ) : (
+            <ChevronDownIcon classes={stepLabelIconClasses} />
+          )
+        ) : (
+          ''
+        )}
       </StepLabel>
-      <StepContent>
-        <Typography variant="body1" component="p">
-          {description}
-        </Typography>
-      </StepContent>
+      <StepContent>{description}</StepContent>
     </MaterialStep>
   );
 };
