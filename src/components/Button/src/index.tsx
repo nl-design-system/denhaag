@@ -11,11 +11,6 @@ export interface ButtonProps extends BaseProps {
    * Simple click handler
    */
   onClick?: () => void;
-  /**
-   * The url to link to when the button is clicked.
-   * If defined, an a element will be used as the root node.
-   */
-  href?: string;
 
   /**
    * Size of the component
@@ -66,7 +61,15 @@ export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
 
   return (
     <StylesProvider injectFirst>
-      <MaterialButton {...props} classes={classes} className={sizeClass} variant={muiVariant} disableRipple>
+      <MaterialButton classes={classes}
+                      className={sizeClass}
+                      variant={muiVariant}
+                      onClick={props.onClick}
+                      disabled={props.disabled}
+                      type={props.type}
+                      startIcon={props.startIcon}
+                      endIcon={props.endIcon}
+                      disableRipple>
         {props.children}
       </MaterialButton>
     </StylesProvider>
