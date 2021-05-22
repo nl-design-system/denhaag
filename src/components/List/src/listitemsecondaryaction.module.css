@@ -1,25 +1,19 @@
 :root {
   --denhaag-list-item-secondaryaction-focus-color: var(--denhaag-blue-3);
   --denhaag-list-item-secondaryaction-color: var(--denhaag-grey-4);
+  --denhaag-list-item-secondaryaction-right: 16px;
 }
 
 .denhaag-list__secondaryaction {
-  right: 16px;
+  right: var(--denhaag-list-item-secondaryaction-right);
   color: var(--denhaag-list-item-secondaryaction-color);
-}
-
-.denhaag-list__secondaryaction:focus-within {
-  right: 14px;
+  width: 32px;
+  height: 32px;
 }
 
 .denhaag-list__secondaryaction button {
-  padding-inline: 2px 2px;
-  padding-block: 2px 2px;
-  right: 6px;
-}
-
-.denhaag-list__secondaryaction button:active {
-  right: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
 }
 
 .denhaag-list__secondaryaction button:focus {
@@ -30,6 +24,6 @@
   box-sizing: border-box;
   color: var(--denhaag-list-item-secondaryaction-focus-color);
   /* padding-block: calc(var(--denhaag-listitem-padding-block) - var(--denhaag-listitem-border-size)); */
-  /* padding-inline: 2px 4px;
-  padding-block: 2px 2px; */
+  padding-inline: 2px;
+  padding-block: 2px;
 }
