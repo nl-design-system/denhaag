@@ -60,26 +60,25 @@
 
 /* Size specific styling */
 .denhaag-button--medium {
-  padding-inline: var(--denhaag-button-medium-size-padding-inline);
-  padding-block: var(--denhaag-button-medium-size-padding-block);
+  padding-inline: var(--denhaag-button-medium-size-padding-inline, var(--denhaag-button-padding-inline));
+  padding-block: var(--denhaag-button-medium-size-padding-block, var(--denhaag-button-padding-block));
   font-size: var(--denhaag-font-size-base);
-
 }
 
 .denhaag-button--medium.denhaag-button--secondary-action {
-  padding-inline: calc(var(--denhaag-button-medium-size-padding-inline) - var(--denhaag-button-border-width));
-  padding-block: calc(var(--denhaag-button-medium-size-padding-block) - var(--denhaag-button-border-width));
+  padding-inline: calc(var(--denhaag-button-medium-size-padding-inline, var(--denhaag-button-padding-inline)) - var(--denhaag-button-border-width));
+  padding-block: calc(var(--denhaag-button-medium-size-padding-block, var(--denhaag-button-padding-block)) - var(--denhaag-button-border-width));
 }
 
 .denhaag-button--large {
-  padding-inline: var(--denhaag-button-large-size-padding-inline);
-  padding-block: var(--denhaag-button-large-size-padding-block);
+  padding-inline: var(--denhaag-button-large-size-padding-inline, var(--denhaag-button-padding-inline));
+  padding-block: var(--denhaag-button-large-size-padding-block, var(--denhaag-button-padding-block));
   font-size: var(--denhaag-font-size-lg);
 }
 
 .denhaag-button--large.denhaag-button--secondary-action {
-  padding-inline: calc(var(--denhaag-button-large-size-padding-inline) - var(--denhaag-button-border-width));
-  padding-block: calc(var(--denhaag-button-large-size-padding-block) - var(--denhaag-button-border-width));
+  padding-inline: calc(var(--denhaag-button-large-size-padding-inline, var(--denhaag-button-padding-inline)) - var(--denhaag-button-border-width));
+  padding-block: calc(var(--denhaag-button-large-size-padding-block,  var(--denhaag-button-padding-block)) - var(--denhaag-button-border-width));
 }
 
 /* Icon styling */
