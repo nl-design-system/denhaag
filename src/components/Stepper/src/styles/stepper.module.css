@@ -10,12 +10,6 @@
 }
 
 .denhaag-stepper__step-icon {
-  border-color: var(--denhaag-grey-3);
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 1px;
-
-  box-sizing: border-box;
   color: var(--denhaag-grey-3);
   font-family: var(--denhaag-font-family);
   font-size: var(--denhaag-font-size-s);
@@ -26,9 +20,7 @@
 }
 
 .denhaag-stepper__step-icon--active {
-  border: none;
-  background-color: var(--denhaag-blue-3);
-  color: var(--denhaag-white);
+  color: var(--denhaag-blue-3);
 }
 
 .denhaag-stepper__step-icon--completed {
@@ -41,9 +33,9 @@
 .denhaag-stepper__step-icon__text {
   font-family: var(--denhaag-font-family);
   font-size: var(--denhaag-font-size-s);
-  color: var(--denhaag-white);
+  color: var(--denhaag-grey-3);
 }
 
-.denhaag-stepper__step-icon__text--inactive {
-  fill: var(--denhaag-grey-3);
+.denhaag-stepper__step-icon__text--active {
+  fill: var(--denhaag-white);
 }

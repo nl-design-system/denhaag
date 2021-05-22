@@ -2,7 +2,8 @@ import React from 'react';
 import { StylesProvider } from '@material-ui/core';
 import { BaseClassesProps } from '@gemeente-denhaag/baseprops';
 import SvgIcon, { SvgIconProps, CheckCircleIcon } from '@gemeente-denhaag/icons';
-// import clsx from 'clsx';
+import { stepIconClasses } from './styles/bem-mapping';
+import clsx from 'clsx';
 
 export interface StepIconProps extends BaseClassesProps {
   /**
@@ -35,7 +36,7 @@ export interface StepIconProps extends BaseClassesProps {
  */
 export const StepIcon: React.FC<StepIconProps> = ({
   active = false,
-  inactive = true,
+  inactive = false,
   completed = false,
   icon,
 }: StepIconProps) => {
@@ -48,17 +49,21 @@ export const StepIcon: React.FC<StepIconProps> = ({
     color = 'disabled';
   }
 
-  // const SvgIconclasses = clsx('denhaag-stepper__step-icon', {
-  //   'denhaag-stepper__step-icon--active': active,
-  //   'denhaag-stepper__step-icon--inactive': inactive,
-  //   'denhaag-stepper__step-icon--completed': completed,
-  // });
+  const textClasses = clsx('denhaag-stepper__step-icon__text', {
+    'denhaag-stepper__step-icon__text--active': active,
+    'denhaag-stepper__step-icon__text--inactive': inactive,
+    'denhaag-stepper__step-icon__text--completed': completed,
+  });
 
-  // const textClasses = clsx('denhaag-stepper__step-icon__text', {
-  //   'denhaag-stepper__step-icon__text--active': active,
-  //   'denhaag-stepper__step-icon__text--inactive': inactive,
-  //   'denhaag-stepper__step-icon__text--completed': completed,
-  // });
+  // Exported from https://www.figma.com/file/JpoY3waVoQGlLQzQXTL9nn/Design-System-Gemeente-Den-Haag?node-id=1908%3A9407
+  const circleProps = {
+    cx: 10,
+    cy: 10,
+    r: active ? 10 : 9.25,
+    fill: active ? 'currentColor' : 'none',
+    stroke: active ? 'none' : 'currentColor',
+    strokeWidth: active ? 0 : 1.5,
+  };
 
   if (completed) {
     return (
@@ -68,13 +73,11 @@ export const StepIcon: React.FC<StepIconProps> = ({
     );
   }
 
-  // Exported from https://www.figma.com/file/JpoY3waVoQGlLQzQXTL9nn/Design-System-Gemeente-Den-Haag?node-id=1908%3A9407
   return (
-    // <span className={SvgIconclasses}>{icon}</span>
     <StylesProvider injectFirst>
       <SvgIcon viewBox="0 0 20 20" classes={stepIconClasses} color={color}>
-        <circle cx="10" cy="10" r="10" />
-        <text x="10" y="14" textAnchor="middle">
+        <circle {...circleProps} />
+        <text x="10" y="14" textAnchor="middle" className={textClasses}>
           {icon}
         </text>
       </SvgIcon>
