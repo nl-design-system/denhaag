@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import Card, { CardProps } from '..';
-import pkg from '../../package.json'
+import pkg from '../../package.json';
 
 
 export default {
