@@ -1,9 +1,14 @@
 .denhaag-list__itemtextprimary {
   color: var(--denhaag-listitemtext-primary-color);
   font-family: var(--denhaag-list-font-family);
+  font-weight: var(--denhaag-listitemtext-primary-weight);
 }
 
 .denhaag-list__itemtextsecondary {
   color: var(--denhaag-listitemtext-secondary-color);
   font-family: var(--denhaag-list-font-family);
+  font-weight: var(--denhaag-listitemtext-secondary-weight);
+  font-size: var(--denhaag-listitemtext-secondary-font-size);
+  line-height: var(--denhaag-listitemtext-secondary-secondarytext-lineheight);
+  padding-block-end: var(--denhaag-listitemtext-secondary-secondarytext-bottom-padding);
 }
