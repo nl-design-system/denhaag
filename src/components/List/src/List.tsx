@@ -10,24 +10,6 @@ import './list.module.css';
 
 export interface ListProps extends BaseProps {
   /**
-   * The component used for the root node.
-   * Either a string to use a HTML element or a component.
-   */
-  component?: React.ElementType<React.HTMLAttributes<HTMLElement>>;
-
-  /**
-   * If `true`, compact vertical padding designed for keyboard and mouse input will be used for
-   * the list and list items.
-   * The prop is available to descendant components as the `dense` context.
-   */
-  dense?: boolean;
-
-  /**
-   * If `true`, vertical padding will be removed from the list.
-   */
-  disablePadding?: boolean;
-
-  /**
    * The content of the subheader, normally `ListSubheader`.
    */
   subheader: React.ElementType<typeof ListSubheader>;

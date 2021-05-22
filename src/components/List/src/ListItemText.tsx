@@ -19,12 +19,6 @@ export interface ListItemTextProps extends BaseProps {
   children?: string;
 
   /**
-   * If `true`, the children will be indented.
-   * This should be used if there is no left avatar or left icon.
-   */
-  inset?: boolean;
-
-  /**
    * The main content text, alias for children.
    */
   primary?: string;
