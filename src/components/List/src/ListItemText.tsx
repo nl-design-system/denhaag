@@ -8,6 +8,7 @@ import {
 } from './bem-mapping';
 import './mui-override.module.css';
 import './listitemtext.module.css';
+import './list.module.css';
 
 import { Typography } from '@gemeente-denhaag/typography';
 

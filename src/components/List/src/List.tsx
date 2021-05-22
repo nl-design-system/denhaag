@@ -6,6 +6,7 @@ import ListSubheader from '@gemeente-denhaag/listsubheader';
 import { StylesProvider } from '@material-ui/core';
 import { list_classes as classes } from './bem-mapping';
 import './mui-override.module.css';
+import './list.module.css';
 
 export interface ListProps extends BaseProps {
   /**
@@ -36,12 +37,14 @@ export interface ListProps extends BaseProps {
  * Primary UI component for user interaction
  */
 export const List: React.FC<ListProps> = (props: ListProps) => {
-  const subheader = (props.subheader as unknown) as React.ReactElement;
+  const subheader = props.subheader as unknown as React.ReactElement;
   const materialProps = { ...props, subheader };
 
   return (
     <StylesProvider injectFirst>
-      <MaterialList {...materialProps} classes={classes}>{props.children}</MaterialList>
+      <MaterialList {...materialProps} classes={classes}>
+        {props.children}
+      </MaterialList>
     </StylesProvider>
   );
 };

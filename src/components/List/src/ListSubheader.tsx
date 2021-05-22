@@ -3,6 +3,8 @@ import { Typography } from '@gemeente-denhaag/typography';
 
 import { listsubheader_classes as classes } from './bem-mapping';
 import './mui-override.module.css';
+import './list.module.css';
+import './listsubheader.module.css';
 
 export interface ListSubheaderProps {
   /**
