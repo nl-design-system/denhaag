@@ -21,7 +21,16 @@
   background-color: white;
 }
 
+.denhaag-list__item:hover {
+  outline: none;
+  box-shadow: none;
+  background-color: white;
+}
+
 .denhaag-list__itemtext {
   margin-block: 0 0;
 }
 
+.denhaag-list__secondaryaction button:hover {
+  background-color: white;
+}
