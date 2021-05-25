@@ -35,6 +35,11 @@ export interface IconButtonProps extends BaseProps {
    * `small` is equivalent to the dense button styling.
    */
   size?: 'small' | 'medium';
+
+  /**
+   * The tab-index of the IconButton.
+   */
+  tabIndex?: number;
 }
 
 /**
@@ -43,11 +48,11 @@ export interface IconButtonProps extends BaseProps {
  * @constructor Constructs an instance of IconButton.
  */
 export const IconButton: React.FC<IconButtonProps> = ({
-  color = "inherit",
+  color = 'inherit',
   disabled = false,
   disableFocusRipple = false,
   edge = false,
-  size = "medium",
+  size = 'medium',
   ...props
 }: IconButtonProps) => {
   return (
