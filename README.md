@@ -46,7 +46,7 @@ class Example extends Component {
 4. Run the following command to install all development dependencies:
 
 ```bash
-yarn install
+yarn install --frozen-lockfile
 ```
 
 #### Folder structure
