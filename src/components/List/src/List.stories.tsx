@@ -3,6 +3,7 @@ import { Meta, Story } from '@storybook/react';
 import { HouseIcon, TrashIcon } from '@gemeente-denhaag/icons';
 import List, { ListProps, ListItem, ListSubheader } from '.';
 import pkg from '../package.json';
+import { action } from '@storybook/addon-actions';
 
 export default {
   title: 'Components/Data Display/List',
@@ -23,12 +24,14 @@ const Template: Story<ListProps> = (args: ListProps) => (
     <ListItem
       primaryText="Single-line item"
       actionType="action"
+      onClick={action('TrashIcon click')}
       leftIcon={<HouseIcon color="inherit"></HouseIcon>}
       rightIcon={<TrashIcon />}
     />
     <ListItem
       primaryText="Single-line item"
       secondaryText="Secondary text"
+      onClick={action('ListItem click')}
       leftIcon={<HouseIcon color="inherit" />}
       actionType="nav"
     />

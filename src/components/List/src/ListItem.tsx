@@ -57,7 +57,7 @@ export interface ListItemProps extends BaseProps {
  * Primary UI component for user interaction
  */
 export const ListItem: React.FC<ListItemProps> = (props: ListItemProps) => {
-  const muiProps = { ...props, actionType: props.actionType };
+  const muiProps = { ...props, actionType: props.actionType, onClick: undefined };
 
   const children = [];
 
@@ -77,7 +77,16 @@ export const ListItem: React.FC<ListItemProps> = (props: ListItemProps) => {
   } else if (props.actionType === 'action') {
     children.push(
       <ListItemSecondaryAction>
-        <IconButton color="inherit" edge="end" aria-label="comments" disableRipple disableFocusRipple>
+        <IconButton
+          color="inherit"
+          /* eslint-disable-next-line @typescript-eslint/ban-ts-comment */
+          /* @ts-ignore */
+          onClick={props.onClick}
+          edge="end"
+          aria-label="comments"
+          disableRipple
+          disableFocusRipple
+        >
           {props.rightIcon}
         </IconButton>
       </ListItemSecondaryAction>,
@@ -85,22 +94,15 @@ export const ListItem: React.FC<ListItemProps> = (props: ListItemProps) => {
   }
   children.push(<ListItemText primary={props.primaryText} secondary={props.secondaryText}></ListItemText>);
 
-  if (props.actionType !== undefined) {
+  if (props.actionType === 'nav') {
     return (
-      <MaterialListItem
-        {...muiProps}
-        button
-        classes={classes}
-        disableRipple
-        tabIndex={props.actionType === 'action' ? -1 : 0}
-        onClick={props.onClick}
-      >
+      <MaterialListItem {...muiProps} button classes={classes} tabIndex={0} disableRipple onClick={props.onClick}>
         {children}
       </MaterialListItem>
     );
   } else {
     return (
-      <MaterialListItem {...muiProps} classes={classes} tabIndex={0}>
+      <MaterialListItem {...muiProps} classes={classes} tabIndex={props.actionType === 'action' ? -1 : 0}>
         {children}
       </MaterialListItem>
     );
