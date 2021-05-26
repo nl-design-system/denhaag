@@ -13,6 +13,11 @@ export default interface BaseProps {
    * Override or extend the styles applied to the component.
    */
   classes?: Record<string, unknown>;
+
+  /**
+   * The tab-index applied to the root element of the component.
+   */
+  tabIndex?: number;
 }
 
 /**
