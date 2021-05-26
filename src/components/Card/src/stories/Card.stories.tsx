@@ -24,7 +24,8 @@ export const Default: Story<CardProps> = Template.bind({});
   Default.args = {
     title: 'Shrimp and Chorizo Paella',
     subTitle: 'This impressive paella is a perfect party dish and a fun meal to cook.',
-    date: new Date('2020-01-21')
+    date: new Date('2020-01-21'),
+    tabIndex: 0
   };
 
 /**
@@ -35,5 +36,6 @@ Case.args = {
   title: Default.args.title,
   subTitle: Default.args.subTitle,
   date: Default.args.date,
-  variant: 'case'
+  variant: 'case',
+  tabIndex: Default.args.tabIndex
 };

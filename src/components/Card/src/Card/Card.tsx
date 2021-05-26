@@ -21,6 +21,12 @@ import { Icon } from '@material-ui/core';
 
 export interface CardProps extends BaseProps {
   /**
+   * Simple click handler
+   */
+  onClick?: () => void;
+
+
+  /**
    * Determines the variant of the card
    * Variant can be either `basic` or `case`
    */
@@ -63,7 +69,7 @@ export const Card: React.FC<CardProps> = (props: CardProps) => {
 
   return (
     <StylesProvider injectFirst>
-      <MaterialCard classes={classes} tabIndex={0}>
+      <MaterialCard classes={classes} onClick={props.onClick} tabIndex={props.tabIndex}>
         <div className='denhaag-card__wrapper'>
           <div className='denhaag-card__background'></div>
           <CardContent disableSpacing={true}>
