@@ -1,14 +1,16 @@
 .denhaag-stepper__step {
-  margin-block-start: 12px;
-  margin-block-end: 12px;
+  cursor: pointer;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .denhaag-stepper__step:hover {
   color: var(--denhaag-blue-3);
 }
 
-.denhaag-stepper__step:focus {
-  border: var(--denhaag-focus-border);
+.denhaag-stepper__step:focus,
+.denhaag-stepper__step:focus-visible {
+  outline: var(--denhaag-focus-border);
 }
 
 .denhaag-stepper__step-content {
