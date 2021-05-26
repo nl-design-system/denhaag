@@ -16,7 +16,7 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "scripts": {
-    "build": "tsc -b && copyfiles -u 1 \"src/**/*.css\" dist",
+    "build": "tsc -b && copyfiles -u 1 \"src/**/*.css\" dist && yarn style-dictionary build --config ./style-dictionary.config.json",
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   }
 }
