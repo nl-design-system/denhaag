@@ -64,26 +64,13 @@
 }
 
 .denhaag-stepper__step-label {
-  /* Sans/base/400 */
   font-family: var(--denhaag-font-family);
-  font-style: normal;
-  font-weight: 500;
   font-size: var(--denhaag-font-size-base);
-  line-height: 24px;
-
-  /* identical to box height, or 150% */
-  display: flex;
-  align-items: center;
-
-  /* Grey/4 */
-  color: var(--denhaag-grey-4);
+  color: inherit;
 }
 
 .denhaag-stepper__step-label-active {
-  font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
   color: var(--denhaag-blue-3);
 }
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { TransitionProps } from '@material-ui/core/transitions';
 import MaterialStepContent from '@material-ui/core/StepContent';
 import { StylesProvider } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
@@ -9,7 +10,7 @@ export interface StepContentProps extends BaseProps {
   /**
    * The component used for the transition.
    */
-  TransitionComponent?: any;
+  TransitionComponent?: React.ComponentType<TransitionProps>;
 
   /**
    * Adjust the duration of the content expand transition.
@@ -29,6 +30,11 @@ export interface StepContentProps extends BaseProps {
    * Props applied to the Transition element.
    */
   TransitionProps?: Record<string, unknown>;
+
+  /**
+   * Whether or not this components is expanded
+   */
+  expanded?: boolean;
 }
 
 /**

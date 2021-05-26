@@ -7,17 +7,6 @@ export interface StepperProps extends BaseProps {
    * Set the active step (zero based index). Set to -1 to disable all the steps.
    */
   activeStep?: number;
-
-  /**
-   * If set to 'true' and orientation is horizontal,
-   * then the step label will be positioned under the icon.
-   */
-  alternativeLabel?: boolean;
-
-  /**
-   * If set the Stepper will not assist in controlling steps for linear flow.
-   */
-  nonLinear?: boolean;
 }
 
 /**

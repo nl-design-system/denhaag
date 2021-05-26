@@ -48,10 +48,10 @@ const Template: Story<StepperProps> = () => {
           <Step key={label} label={label} description={description} />
         ))}
       </Stepper>
-      <Button onClick={prev} disabled={activeStep === 0}>
+      <Button onClick={prev} disabled={activeStep === 0} variant="secondary-action">
         Prev
       </Button>
-      <Button onClick={next} disabled={activeStep === steps.length} color="primary">
+      <Button onClick={next} disabled={activeStep === steps.length} variant="primary-action">
         Next
       </Button>
     </React.Fragment>
@@ -63,21 +63,6 @@ const Template: Story<StepperProps> = () => {
  * "activeStep" property set to enforce step visibility.
  */
 export const Default = Template.bind({});
-
-// /**
-//  * Implementation of Stepper with a vertical orientation.
-//  */
-// export const VerticalOrientation = Template.bind({});
-// VerticalOrientation.args = {
-//   activeStep: 0,
-//   orientation: 'vertical',
-// };
-
-// /**
-//  * Alternatively labeled Stepper.
-//  */
-// export const AlternativeLabel = Template.bind({});
-// AlternativeLabel.args = {
-//   activeStep: 0,
-//   alternativeLabel: true,
-// };
+Default.parameters = {
+  controls: { exclude: ['activeStep', 'children', 'classes'] },
+};

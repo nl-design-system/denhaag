@@ -102,7 +102,7 @@ export const Step: React.FC<StepProps> = ({
           ''
         )}
       </StepLabel>
-      <StepContent>{description}</StepContent>
+      {hasDescription ? <StepContent>{description}</StepContent> : ''}
     </MaterialStep>
   );
 };
