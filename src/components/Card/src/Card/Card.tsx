@@ -3,8 +3,8 @@ import MaterialCard from '@material-ui/core/Card';
 import { StylesProvider } from '@material-ui/core/styles';
 import { ArrowRightIcon } from '@gemeente-denhaag/icons';
 import BaseProps from '@gemeente-denhaag/baseprops';
-import './mui-override.module.css';
-import './card.module.css';
+import './mui-override.css';
+import './card.css';
 import { Typography } from '@gemeente-denhaag/typography';
 import {
   cardClasses,

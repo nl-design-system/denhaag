@@ -1,8 +1,8 @@
 import React from "react";
 import MaterialCardActions from "@material-ui/core/CardActions";
 import BaseProps from "@gemeente-denhaag/baseprops";
-import "./card-actions.module.css";
-import "./mui-override.module.css";
+import "./card-actions.css";
+import "./mui-override.css";
 import { StylesProvider } from "@material-ui/core/styles";
 import { cardActionClasses } from "./bem-mapping";
 

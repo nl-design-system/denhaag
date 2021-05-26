@@ -3,6 +3,9 @@ import MaterialCardHeader from '@material-ui/core/CardHeader';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import { TypographyProps } from '@gemeente-denhaag/typography';
 import { StylesProvider } from '@material-ui/core/styles';
+import './bem-mapping';
+import './card-header.css';
+import './mui-override.css';
 
 export interface CardHeaderProps extends BaseProps {
   /**
