@@ -33,3 +33,5 @@ tsconfig.tsbuildinfo
 
 # story-book build output
 storybook-static
+cypress/videos
+cypress/screenshots
