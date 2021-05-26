@@ -41,7 +41,9 @@
       "3": { "value": "hsl(0 0% 48%)", "name": "Grey 3" },
       "4": { "value": "hsl(0 0% 29%)", "name": "Grey 4" }
     },
-    "warmgrey": { "value": "hsl(40 18% 97%)", "name": "Warmgrey" },
+    "warmgrey": {
+      "1": { "value": "hsl(40 18% 97%)", "name": "Warm Grey 1" }
+    },
     "black": { "value": "hsl(0 0% 0%)", "name": "Black" },
     "white": { "value": "hsl(0 0% 100%)", "name": "White" }
   }
