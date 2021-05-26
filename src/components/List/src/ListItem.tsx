@@ -57,16 +57,19 @@ export interface ListItemProps extends BaseProps {
  * Primary UI component for user interaction
  */
 export const ListItem: React.FC<ListItemProps> = (props: ListItemProps) => {
-  const muiProps = { ...props, actionType: props.actionType, onClick: undefined };
+  const muiProps = {
+    autoFocus: props.autoFocus,
+    actiontype: props.actionType,
+  };
 
   const children = [];
 
   if (props.leftIcon) {
-    children.push(<ListItemIcon>{props.leftIcon}</ListItemIcon>);
+    children.push(<ListItemIcon key={0}>{props.leftIcon}</ListItemIcon>);
   }
   if (props.actionType === 'nav') {
     children.push(
-      <ListItemSecondaryAction>
+      <ListItemSecondaryAction key={1}>
         {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
         {/* @ts-ignore */}
         <IconButton color="inherit" edge="end" tabIndex={-1} disableRipple disableFocusRipple>
@@ -76,7 +79,7 @@ export const ListItem: React.FC<ListItemProps> = (props: ListItemProps) => {
     );
   } else if (props.actionType === 'action') {
     children.push(
-      <ListItemSecondaryAction>
+      <ListItemSecondaryAction key={2}>
         <IconButton
           color="inherit"
           /* eslint-disable-next-line @typescript-eslint/ban-ts-comment */
@@ -91,7 +94,7 @@ export const ListItem: React.FC<ListItemProps> = (props: ListItemProps) => {
       </ListItemSecondaryAction>,
     );
   }
-  children.push(<ListItemText primary={props.primaryText} secondary={props.secondaryText}></ListItemText>);
+  children.push(<ListItemText key={3} primary={props.primaryText} secondary={props.secondaryText}></ListItemText>);
 
   if (props.actionType === 'nav') {
     return (

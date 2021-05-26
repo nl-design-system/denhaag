@@ -51,13 +51,13 @@
   line-height: var(--denhaag-listitemtext-secondary-primarytext-lineheight);
 }
 
-.denhaag-list__item[actionType="action"]:hover .denhaag-list__itemtextprimary,
-.denhaag-list__item[actionType="action"]:hover .denhaag-list__itemicon {
+.denhaag-list__item[actiontype="action"]:hover .denhaag-list__itemtextprimary,
+.denhaag-list__item[actiontype="action"]:hover .denhaag-list__itemicon {
   color: var(--denhaag-grey-4);
 }
 
-.denhaag-list__item[actionType="action"]:focus .denhaag-list__itemtextprimary,
-.denhaag-list__item[actionType="action"]:focus .denhaag-list__itemicon {
+.denhaag-list__item[actiontype="action"]:focus .denhaag-list__itemtextprimary,
+.denhaag-list__item[actiontype="action"]:focus .denhaag-list__itemicon {
   color: var(--denhaag-grey-4);
 }
 
@@ -73,7 +73,7 @@
   padding-block: calc(var(--denhaag-listitem-padding-block-secondary) - var(--denhaag-listitem-border-size));
 }
 
-.denhaag-list__item[actionType="action"] {
+.denhaag-list__item[actiontype="action"] {
   cursor: default;
 }
 
