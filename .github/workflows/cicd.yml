@@ -3,11 +3,11 @@ name: Build and deploy Storybook to Azure Web App
 on:
   push:
     branches:
-      - development
+      - latest
       - master
   pull_request:
     branches:
-      - development
+      - latest
       - master
 
 jobs:
@@ -43,7 +43,7 @@ jobs:
 
   deploy-staging:
     needs: build
-    if: github.ref == 'refs/heads/development'
+    if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
 
     steps:
@@ -63,7 +63,7 @@ jobs:
 
   deploy-production:
     needs: build
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/latest'
     runs-on: ubuntu-latest
 
     steps:
