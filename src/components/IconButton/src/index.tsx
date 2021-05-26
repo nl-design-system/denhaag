@@ -35,11 +35,6 @@ export interface IconButtonProps extends BaseProps {
    * `small` is equivalent to the dense button styling.
    */
   size?: 'small' | 'medium';
-
-  /**
-   * The tab-index of the IconButton.
-   */
-  tabIndex?: number;
 }
 
 /**
