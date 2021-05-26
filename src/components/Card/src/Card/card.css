@@ -23,13 +23,8 @@
 }
 
 .denhaag-card:focus .denhaag-card--case__text__wrapper {
-  border: var(--denhaag-focus-border);
-  border-color: var(--denhaag-focus-border-color);
+  outline: var(--denhaag-focus-border);
   position: relative;
-  top: -2px;
-  bottom: -2px;
-  left: -2px;
-  right: -2px;
 }
 
 .denhaag-card:focus {
@@ -138,6 +133,10 @@
   left: var(--denhaag-card-arrow-left);
   position: var(--denhaag-card-arrow-position);
   right: var(--denhaag-card-arrow-right);
+}
+
+.denhaag-card--case:focus .denhaag-card__arrow {
+  outline: var(--denhaag-focus-border);
 }
 
 .denhaag-card--case:hover .denhaag-card__arrow, .denhaag-card--case:focus .denhaag-card__arrow {
