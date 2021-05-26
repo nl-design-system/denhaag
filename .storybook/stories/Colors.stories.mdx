@@ -1,0 +1,62 @@
+import { Meta, ColorPalette, ColorItem } from "@storybook/addon-docs/blocks";
+import brandTokens from "../../src/styles/Proprietary/dist/index.json";
+import { path2css } from "./util.js";
+
+<Meta title="Den Haag/Colors" />
+
+# Colors
+
+## Color Palette
+
+<ColorPalette>
+  <ColorItem title="Green" colors={Object.values(brandTokens["denhaag"]["green"]).map(({ value }) => value)} />
+  <ColorItem title="Blue" colors={Object.values(brandTokens["denhaag"]["blue"]).map(({ value }) => value)} />
+  <ColorItem title="Ocher" colors={Object.values(brandTokens["denhaag"]["ocher"]).map(({ value }) => value)} />
+  <ColorItem title="Red" colors={Object.values(brandTokens["denhaag"]["red"]).map(({ value }) => value)} />
+  <ColorItem title="Orange" colors={Object.values(brandTokens["denhaag"]["orange"]).map(({ value }) => value)} />
+  <ColorItem title="Grey" colors={Object.values(brandTokens["denhaag"]["grey"]).map(({ value }) => value)} />
+  <ColorItem title="White" colors={[brandTokens["denhaag"]["white"].value]} />
+  <ColorItem title="Warm grey" colors={[brandTokens["denhaag"]["warmgrey"].value]} />
+  <ColorItem title="Black" colors={[brandTokens["denhaag"]["black"].value]} />
+</ColorPalette>
+
+## Design Tokens
+
+<ColorPalette>
+  {[
+    brandTokens["denhaag"]["green"][1],
+    brandTokens["denhaag"]["green"][2],
+    brandTokens["denhaag"]["green"][3],
+    brandTokens["denhaag"]["green"][4],
+    brandTokens["denhaag"]["green"][5],
+    brandTokens["denhaag"]["blue"][1],
+    brandTokens["denhaag"]["blue"][2],
+    brandTokens["denhaag"]["blue"][3],
+    brandTokens["denhaag"]["blue"][4],
+    brandTokens["denhaag"]["blue"][5],
+    brandTokens["denhaag"]["ocher"][1],
+    brandTokens["denhaag"]["ocher"][2],
+    brandTokens["denhaag"]["ocher"][3],
+    brandTokens["denhaag"]["ocher"][4],
+    brandTokens["denhaag"]["ocher"][5],
+    brandTokens["denhaag"]["red"][1],
+    brandTokens["denhaag"]["red"][2],
+    brandTokens["denhaag"]["red"][3],
+    brandTokens["denhaag"]["red"][4],
+    brandTokens["denhaag"]["red"][5],
+    brandTokens["denhaag"]["orange"][1],
+    brandTokens["denhaag"]["orange"][2],
+    brandTokens["denhaag"]["orange"][3],
+    brandTokens["denhaag"]["orange"][4],
+    brandTokens["denhaag"]["orange"][5],
+    brandTokens["denhaag"]["grey"][1],
+    brandTokens["denhaag"]["grey"][2],
+    brandTokens["denhaag"]["grey"][3],
+    brandTokens["denhaag"]["grey"][4],
+    brandTokens["denhaag"]["white"],
+    brandTokens["denhaag"]["warmgrey"][1],
+    brandTokens["denhaag"]["black"],
+  ].map(({ original: { name }, value, path }) => (
+    <ColorItem key={name} title={name} subtitle={path2css(path)} colors={[value]} />
+  ))}
+</ColorPalette>
