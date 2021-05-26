@@ -18,4 +18,9 @@ export const parameters = {
     files: tokenFiles,
   },
   format: false,
+  options: {
+    storySort: {
+      order: ['Den Haag', ['Introduction', 'Design Tokens'], 'Components'],
+    },
+  },
 };
