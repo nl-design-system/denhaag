@@ -20,4 +20,3 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   }
 }
-

@@ -2,7 +2,7 @@
   "extends": "./tsconfig.build.json",
   "compilerOptions": {
     "jsx": "react",
-    "baseUrl": "./src/components",
+    "baseUrl": "./src",
     "paths": {
       "@gemeente-denhaag/accordion": ["Accordion/src/*"],
       "@gemeente-denhaag/accordionactions": ["AccordionActions/src/*"],

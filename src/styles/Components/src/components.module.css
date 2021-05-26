@@ -1,2 +1,3 @@
 /** @import "./{component}.css **/
-@import "./tokens-card.css"
+@import "./tokens-card.css";
+@import "./tokens-button.css";

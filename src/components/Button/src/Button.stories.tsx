@@ -1,6 +1,6 @@
 import React from 'react';
-// also exported from '@storybook/react' if you can deal with breaking changes in 6.1
-import { Meta, Story } from '@storybook/react/types-6-0';
+import { Meta, Story } from '@storybook/react';
+import { ArrowBackRounded, ArrowForwardRounded } from '@material-ui/icons';
 import Button, { ButtonProps } from '.';
 import pkg from '../package.json';
 
@@ -23,50 +23,39 @@ const Template: Story<ButtonProps> = (args: ButtonProps) => <Button {...args}>Bu
  * Default Button
  */
 export const Default = Template.bind({});
-Default.args = {
-  variant: 'contained',
-};
+Default.args = {};
 
 /**
  * Primary Button
  */
-export const Primary: Story<ButtonProps> = Template.bind({});
-Primary.args = {
-  color: 'primary',
-  variant: 'contained',
+export const PrimaryAction: Story<ButtonProps> = Template.bind({});
+PrimaryAction.args = {
+  variant: 'primary-action',
 };
 
 /**
  * Secondary Button
  */
-export const Secondary: Story<ButtonProps> = Template.bind({});
-Secondary.args = {
-  color: 'secondary',
-  variant: 'contained',
-};
-
-/**
- * Outlined Button
- */
-export const Outlined: Story<ButtonProps> = Template.bind({});
-Outlined.args = {
-  variant: 'outlined',
+export const SecondaryAction: Story<ButtonProps> = Template.bind({});
+SecondaryAction.args = {
+  variant: 'secondary-action',
 };
 
 /**
  * Icon left button
  */
-export const Text: Story<ButtonProps> = Template.bind({});
-Text.args = {
-  variant: 'text',
+export const IconLeft: Story<ButtonProps> = Template.bind({});
+IconLeft.args = {
+  startIcon: <ArrowBackRounded />,
 };
 
 /**
- * Medium button
+ * Icon right button
  */
-export const Small: Story<ButtonProps> = Template.bind({});
-Small.args = {
-  size: 'small',
+export const IconRight: Story<ButtonProps> = Template.bind({});
+IconRight.args = {
+  variant: 'secondary-action',
+  endIcon: <ArrowForwardRounded />,
 };
 
 export const Medium: Story<ButtonProps> = Template.bind({});

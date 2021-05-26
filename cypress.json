@@ -1,0 +1,7 @@
+{
+  "component": {
+    "componentFolder": "src/components",
+    "testFiles": "**/*spec.{js,jsx,ts,tsx}",
+    "ignoreTestFiles": ["**/__snapshots__/*", "**/__image_snapshots__/*"]
+  }
+}
