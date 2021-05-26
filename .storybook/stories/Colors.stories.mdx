@@ -1,6 +1,7 @@
 import { Meta, ColorPalette, ColorItem } from "@storybook/addon-docs/blocks";
 import brandTokens from "../../src/styles/Proprietary/dist/index.json";
 import { path2css } from "./util.js";
+import { MDXEmbedProvider } from "mdx-embed";
 
 <Meta title="Den Haag/Colors" />
 
@@ -56,7 +57,17 @@ import { path2css } from "./util.js";
     brandTokens["denhaag"]["white"],
     brandTokens["denhaag"]["warmgrey"][1],
     brandTokens["denhaag"]["black"],
-  ].map(({ original: { name }, value, path }) => (
-    <ColorItem key={name} title={name} subtitle={path2css(path)} colors={[value]} />
-  ))}
+  ].map(({ original: { name }, value, path }) => {
+    const cssVariable = path2css(path);
+    return <ColorItem key={cssVariable} title={name} subtitle={cssVariable} colors={[value]} />;
+  })}
 </ColorPalette>
+
+## Design Kit
+
+<MDXEmbedProvider>
+  <Figma
+    title="Brand Identity / Color"
+    url="file/JpoY3waVoQGlLQzQXTL9nn/Design-System-Gemeente-Den-Haag?node-id=3497%3A16154"
+  />
+</MDXEmbedProvider>
