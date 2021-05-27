@@ -29,7 +29,7 @@ To be completed before the issue can be added to backlog.
 - [ ] Acceptance criteria are described
 - [ ] Any preconditions are described
 - [ ] Possible dependence on external experts is mentioned
-- [ ] The story must be approved and understood by maintainers
+- [ ] The story must be understandable for the development team
 - [ ] Any requirements for accessibility are described
 
 ### Definition of Done
