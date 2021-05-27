@@ -39,7 +39,7 @@ To be completed before the issue can be marked as Done.
 - [ ] Meets acceptance criteria
 - [ ] Complies with [the standard of public code](https://standard.publiccode.net/)
 - [ ] Story has been sufficiently tested
-    - [ ] Maximum realistic code coverage
+    - [ ] 90% code coverage
     - [ ] Build completed
     - [ ] Existing tests pass
 - [ ] The frontend component complies with [WCAG 2.1 accessibility guidelines](https://www.w3.org/TR/WCAG21/)
