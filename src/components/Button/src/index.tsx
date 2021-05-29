@@ -10,7 +10,7 @@ export interface ButtonProps extends BaseProps {
   /**
    * Simple click handler
    */
-  onClick?: () => void;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 
   /**
    * Size of the component
@@ -61,15 +61,17 @@ export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
 
   return (
     <StylesProvider injectFirst>
-      <MaterialButton classes={classes}
-                      className={sizeClass}
-                      variant={muiVariant}
-                      onClick={props.onClick}
-                      disabled={props.disabled}
-                      type={props.type}
-                      startIcon={props.startIcon}
-                      endIcon={props.endIcon}
-                      disableRipple>
+      <MaterialButton
+        classes={classes}
+        className={sizeClass}
+        variant={muiVariant}
+        onClick={props.onClick}
+        disabled={props.disabled}
+        type={props.type}
+        startIcon={props.startIcon}
+        endIcon={props.endIcon}
+        disableRipple
+      >
         {props.children}
       </MaterialButton>
     </StylesProvider>
