@@ -2,6 +2,7 @@ import { MuiPickersUtilsProvider as MaterialPickersUtilsProvider } from '@materi
 import React from 'react';
 
 export interface PickersUtilsProviderProps {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   utils: any;
   children: React.ReactNode;
 }
@@ -11,7 +12,11 @@ export interface PickersUtilsProviderProps {
  * @param props
  */
 export const PickersUtilsProvider: React.FC<PickersUtilsProviderProps> = (props: PickersUtilsProviderProps) => {
-  return <MaterialPickersUtilsProvider {...props}>{props.children}</MaterialPickersUtilsProvider>;
+  return (
+    <MaterialPickersUtilsProvider {...props}>
+      {props.children}
+    </MaterialPickersUtilsProvider>
+  );
 };
 
 export default PickersUtilsProvider;

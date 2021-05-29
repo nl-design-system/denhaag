@@ -6,7 +6,7 @@ export interface ListItemAvatarProps extends BaseProps {
   /**
    * The content of the component.
    */
-  children: React.ReactElement<any, any>;
+  children: React.ReactElement;
 }
 
 /**

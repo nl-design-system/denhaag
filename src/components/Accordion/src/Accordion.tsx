@@ -6,7 +6,7 @@ export interface AccordionProps extends BaseProps {
   /**
    * Content of the component.
    */
-  children: React.ReactElement;
+  children: React.ReactElement[];
 
   /**
    * If true, expands the Accordion by default.
