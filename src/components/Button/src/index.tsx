@@ -61,15 +61,17 @@ export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
 
   return (
     <StylesProvider injectFirst>
-      <MaterialButton classes={classes}
-                      className={sizeClass}
-                      variant={muiVariant}
-                      onClick={props.onClick}
-                      disabled={props.disabled}
-                      type={props.type}
-                      startIcon={props.startIcon}
-                      endIcon={props.endIcon}
-                      disableRipple>
+      <MaterialButton
+        classes={classes}
+        className={sizeClass}
+        variant={muiVariant}
+        onClick={props.onClick}
+        disabled={props.disabled}
+        type={props.type}
+        startIcon={props.startIcon}
+        endIcon={props.endIcon}
+        disableRipple
+      >
         {props.children}
       </MaterialButton>
     </StylesProvider>
