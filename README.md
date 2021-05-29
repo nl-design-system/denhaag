@@ -51,7 +51,7 @@ yarn install --frozen-lockfile
 
 #### Code style
 
-Be sure to install the correct IDE plugins for ESlint, Prettier, JSONLint and Stylelint.
+Be sure to install IDE plugins for ESlint, Prettier, JSONLint and Stylelint if available.
 
 #### Folder structure
 
