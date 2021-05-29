@@ -25,14 +25,14 @@ jobs:
       - name: yarn install
         run: |
           npm install -g yarn
-          yarn install
+          yarn install --frozen-lockfile
 
       - name: run linters
         run: |
-            yarn lint:css
-            yarn lint:package
-            yarn lint:js
-            yarn prettier-check
+          yarn lint:css
+          yarn lint:package
+          yarn lint:js
+          yarn prettier-check
 
       - name: build storybook
         run: yarn build-storybook
