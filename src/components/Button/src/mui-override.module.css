@@ -4,10 +4,12 @@
   text-transform: none;
 }
 
-.denhaag-button--hover, .denhaag-button:hover {
+.denhaag-button--hover,
+.denhaag-button:hover {
   box-shadow: none;
 }
 
-.denhaag-button--focus, .denhaag-button:focus {
+.denhaag-button--focus,
+.denhaag-button:focus {
   box-shadow: none;
 }

@@ -24,7 +24,6 @@
    */
   --denhaag-border-radius: 3px;
 
-
   /* Focus state
    * @tokens Borders
    * @presenter Color
@@ -40,5 +39,6 @@
    * @presenter Border
    */
   --denhaag-focus-border-style: dashed;
-  --denhaag-focus-border: var(--denhaag-focus-border-width) var(--denhaag-focus-border-style) var(--denhaag-focus-border-color);
+  --denhaag-focus-border: var(--denhaag-focus-border-width) var(--denhaag-focus-border-style)
+    var(--denhaag-focus-border-color);
 }

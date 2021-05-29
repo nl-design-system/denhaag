@@ -68,7 +68,7 @@ export interface RadioProps {
 }
 
 export const Radio: React.FC<RadioProps> = (props: RadioProps) => {
-  return <MaterialRadio {...props}/>;
+  return <MaterialRadio {...props} />;
 };
 
 /**
