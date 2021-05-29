@@ -19,7 +19,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook -s .storybook/stories/assets/",
     "clean": "lerna run clean --parallel",
     "lint": "npm-run-all --continue-on-error lint:* && lerna run lint",
     "lint-fix": "npm-run-all --continue-on-error lint-fix:* prettier",
@@ -34,7 +34,7 @@
     "prepublishOnly": "pinst --disable",
     "prettier": "prettier --write .",
     "start": "microbundle watch --no-compress --format modern,cjs",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006 -s .storybook/stories/assets/",
     "test": "cypress run-ct",
     "test:open": "cypress open-ct"
   },
