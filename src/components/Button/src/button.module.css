@@ -58,7 +58,7 @@
 }
 
 .denhaag-button--secondary-action.denhaag-button--disabled,
-.denhaag-button--primary-action.denhaag-button:disabled {
+.denhaag-button--secondary-action.denhaag-button:disabled {
   background-color: var(--denhaag-button-secondary-action-disabled-background-color);
   color: var(--denhaag-button-secondary-action-disabled-color);
   border-color: var(--denhaag-button-secondary-action-disabled-border-color);
