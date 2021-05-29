@@ -32,7 +32,7 @@ export interface TabProps extends BaseProps {
    * You can provide your own value.
    * Otherwise, we fallback to the child position index.
    */
-  value: any;
+  value?: number | string;
 
   /**
    * Tab labels appear in a single row.
@@ -47,7 +47,7 @@ export interface TabProps extends BaseProps {
  * @constructor Construct an instance of Tab.
  */
 export const Tab: React.FC<TabProps> = (props: TabProps) => {
-  return <MaterialTab {...props} />;
+  return <MaterialTab {...props}/>;
 };
 
 export default Tab;

@@ -81,8 +81,10 @@ export interface TabsProps extends BaseProps {
   /**
    * The value of the currently selected Tab.
    * If you don't want any selected Tab, you can set this property to false.
+   * Although any value can be used, we recommend choosing either
+   * numbers or strings to identify your tabs.
    */
-  value: any | false;
+  value: number | string | false;
 
   /**
    * Determines additional display behavior of the tabs:

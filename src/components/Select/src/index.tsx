@@ -23,7 +23,7 @@ export interface SelectProps extends BaseProps {
   /**
    * The default element value. Use when the component is not controlled.
    */
-  defaultValue?: any;
+  defaultValue?: unknown;
 
   /**
    * If `true`, a value is displayed even if no items are selected.
@@ -46,6 +46,7 @@ export interface SelectProps extends BaseProps {
   /**
    * An `Input` element; does not have to be a material-ui specific `Input`.
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   input?: React.ReactElement<any, any>;
 
   /**
@@ -140,7 +141,7 @@ export interface SelectProps extends BaseProps {
    * If the value is not an object, the string representation must match with the string representation of the option in order to be selected.
    * @document
    */
-  value?: any;
+  value?: unknown;
 }
 
 /**
