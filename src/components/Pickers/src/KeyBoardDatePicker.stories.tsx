@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { KeyboardDatePicker, KeyboardDatePickerProps } from '.';
+import { KeyboardDatePicker, KeyboardDatePickerProps, DateIOType } from '.';
 import PickersUtilsProvider from '../../PickersUtilsProvider';
 import DateFnsUtils from '@date-io/date-fns';
 import pkg from '../package.json';
@@ -15,8 +15,8 @@ export default {
 
 const Template: Story<KeyboardDatePickerProps> = (args: KeyboardDatePickerProps) => {
   const [value, setValue] = React.useState('1970-01-01');
-  args.onChange = (newValue: any) => {
-    setValue(newValue);
+  args.onChange = (date: DateIOType) => {
+    setValue(date.toString());
   };
   args.value = value;
 
@@ -37,8 +37,8 @@ const [value, setValue] = React.useState('1970-01-01');
   <KeyboardDatePicker
     value={value}
     onChange={
-      (newValue: any) => {
-        setValue(newValue);
+      (date: DateIOType) => {
+        setValue(date.toString());
       }
     }
     clearable

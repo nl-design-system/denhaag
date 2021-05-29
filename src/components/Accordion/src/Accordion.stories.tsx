@@ -18,7 +18,7 @@ export default {
   component: Accordion,
 } as Meta;
 
-const Template: Story<AccordionProps> = (args: any) => (
+const Template: Story<AccordionProps> = (args: AccordionProps) => (
   <Accordion {...args}>
     <AccordionSummary expandIcon={<ChevronDownIcon />}>
       <Typography>Click me to collapse me!</Typography>

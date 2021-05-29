@@ -4,7 +4,7 @@ import { IconButtonProps, PopoverProps, TextFieldProps } from '@material-ui/core
 
 import { DialogProps } from '@material-ui/core/Dialog/Dialog';
 
-import { ReactElement, ReactNode, ComponentClass, FunctionComponent } from 'react';
+import { ReactElement, ReactNode } from 'react';
 import { ToolbarComponentProps } from '@material-ui/pickers/Picker/Picker';
 
 export interface BaseDatePickerProps {
@@ -12,12 +12,12 @@ export interface BaseDatePickerProps {
    * Onchange callback @DateIOType
    * @param date The Date value of the DatePicker
    */
-  onChange: (date: any) => void;
+  onChange: (date: DateIOType) => void;
 
   /**
    * DatePicker value
    */
-  value: any;
+  value: ParsableDate;
 
   /**
    * Enables keyboard listener for moving between days in calendar
@@ -242,7 +242,7 @@ export interface BaseDatePickerProps {
   /**
    * Override input component
    */
-  TextFieldComponent?: ComponentClass<TextFieldProps, any> | FunctionComponent<TextFieldProps>;
+  TextFieldComponent?: React.ComponentType<TextFieldProps>;
 
   /**
    * "TODAY" label message
@@ -252,7 +252,7 @@ export interface BaseDatePickerProps {
   /**
    * Component that will replace default toolbar renderer
    */
-  ToolbarComponent?: ComponentClass<ToolbarComponentProps, any> | FunctionComponent<ToolbarComponentProps>;
+  ToolbarComponent?: React.ComponentType<ToolbarComponentProps>;
 
   /**
    * Picker container option

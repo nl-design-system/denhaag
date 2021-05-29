@@ -10,7 +10,7 @@ export interface ButtonProps extends BaseProps {
   /**
    * Simple click handler
    */
-  onClick?: () => void;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 
   /**
    * Size of the component

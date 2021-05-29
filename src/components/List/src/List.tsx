@@ -24,7 +24,7 @@ export interface ListProps extends BaseProps {
   /**
    * The content of the subheader, normally `ListSubheader`.
    */
-  subheader?: React.ReactElement<any, any>;
+  subheader?: React.ReactElement;
 }
 
 /**
