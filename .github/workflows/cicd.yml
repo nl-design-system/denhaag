@@ -34,6 +34,9 @@ jobs:
           yarn lint:js
           yarn prettier-check
 
+      - name: build library
+        run: yarn build
+
       - name: build storybook
         run: yarn build-storybook
 
