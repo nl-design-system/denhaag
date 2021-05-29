@@ -12,11 +12,7 @@ export interface PickersUtilsProviderProps {
  * @param props
  */
 export const PickersUtilsProvider: React.FC<PickersUtilsProviderProps> = (props: PickersUtilsProviderProps) => {
-  return (
-    <MaterialPickersUtilsProvider {...props}>
-      {props.children}
-    </MaterialPickersUtilsProvider>
-  );
+  return <MaterialPickersUtilsProvider {...props}>{props.children}</MaterialPickersUtilsProvider>;
 };
 
 export default PickersUtilsProvider;

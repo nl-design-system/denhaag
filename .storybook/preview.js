@@ -2,7 +2,11 @@ import '@gemeente-denhaag/design-tokens-proprietary';
 import '@gemeente-denhaag/design-tokens-components';
 import '@gemeente-denhaag/design-tokens-common';
 
-const tokenContext = require.context('!!raw-loader!../src', true, /^((?![\\/]node_modules|dist[\\/]).)*\.(css|less|scss|sass|svg)$/);
+const tokenContext = require.context(
+  '!!raw-loader!../src',
+  true,
+  /^((?![\\/]node_modules|dist[\\/]).)*\.(css|less|scss|sass|svg)$/,
+);
 
 const tokenFiles = tokenContext.keys().map((filename) => {
   return { filename: filename, content: tokenContext(filename).default };
@@ -11,7 +15,7 @@ const tokenFiles = tokenContext.keys().map((filename) => {
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   designToken: {
-    files: tokenFiles
+    files: tokenFiles,
   },
   format: false,
 };

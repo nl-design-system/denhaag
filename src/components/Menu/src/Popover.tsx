@@ -116,11 +116,7 @@ export interface PopoverProps extends BaseProps {
  * @constructor Constructs an instance of Popover.
  */
 export const Popover: React.FC<PopoverProps> = (props: PopoverProps) => {
-  return (
-    <MaterialPopover {...props}>
-      {props.children}
-    </MaterialPopover>
-  );
+  return <MaterialPopover {...props}>{props.children}</MaterialPopover>;
 };
 
 export default Popover;

@@ -5,7 +5,7 @@ import { StandardTextFieldProps } from './StandardTextFieldProps';
 export type TextFieldProps = StandardTextFieldProps;
 
 export const TextField: React.FC<TextFieldProps> = (props: TextFieldProps) => {
-  return <MaterialTextField variant="standard" {...props}/>;
+  return <MaterialTextField variant="standard" {...props} />;
 };
 
 /**
