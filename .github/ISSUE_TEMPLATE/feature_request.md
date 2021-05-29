@@ -35,6 +35,7 @@ To be completed before the issue can be added to backlog.
 ### Definition of Done
 <!-- Do not change. -->
 To be completed before the issue can be marked as Done.
+- [ ] Code exists on master branch
 - [ ] Meets acceptance criteria
 - [ ] Complies with [the standard of public code](https://standard.publiccode.net/)
 - [ ] Story has been sufficiently tested
