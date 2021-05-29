@@ -49,6 +49,10 @@ class Example extends Component {
 yarn install --frozen-lockfile
 ```
 
+#### Code style
+
+Be sure to install the correct IDE plugins for ESlint, Prettier, JSONLint and Stylelint.
+
 #### Folder structure
 
 The project folders are structured in the following way:
