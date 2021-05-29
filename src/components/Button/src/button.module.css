@@ -3,8 +3,9 @@
   border-radius: var(--denhaag-button-border-radius);
 }
 
-.denhaag-button--focus:after, .denhaag-button:focus:after {
-  content: '';
+.denhaag-button--focus:after,
+.denhaag-button:focus:after {
+  content: "";
   display: block;
   position: absolute;
   top: -2px;
@@ -16,7 +17,8 @@
 }
 
 /* Due to the accessibility focus outline overlapping with the border, the outline needs to be repositioned for the border variant */
-.denhaag-button--secondary-action.denhaag-button--focus:after, .denhaag-button--secondary-action:focus:after {
+.denhaag-button--secondary-action.denhaag-button--focus:after,
+.denhaag-button--secondary-action:focus:after {
   top: -3px;
   bottom: -3px;
   left: -3px;
@@ -28,12 +30,14 @@
   color: var(--denhaag-button-primary-action-color);
 }
 
-.denhaag-button--primary-action.denhaag-button--hover, .denhaag-button--primary-action:hover {
+.denhaag-button--primary-action.denhaag-button--hover,
+.denhaag-button--primary-action:hover {
   background-color: var(--denhaag-button-primary-action-hover-background-color);
   color: var(--denhaag-button-primary-action-hover-color);
 }
 
-.denhaag-button--primary-action.denhaag-button--disabled, .denhaag-button--primary-action.denhaag-button:disabled {
+.denhaag-button--primary-action.denhaag-button--disabled,
+.denhaag-button--primary-action.denhaag-button:disabled {
   background-color: var(--denhaag-button-primary-action-disabled-background-color);
   color: var(--denhaag-button-primary-action-disabled-color);
 }
@@ -46,13 +50,15 @@
   border-color: var(--denhaag-button-secondary-action-border-color);
 }
 
-.denhaag-button--secondary-action.denhaag-button--hover, .denhaag-button--secondary-action:hover {
+.denhaag-button--secondary-action.denhaag-button--hover,
+.denhaag-button--secondary-action:hover {
   background-color: var(--denhaag-button-secondary-action-hover-background-color);
   color: var(--denhaag-button-secondary-action-hover-color);
   border-color: var(--denhaag-button-secondary-action-hover-border-color);
 }
 
-.denhaag-button--secondary-action.denhaag-button--disabled, .denhaag-button--secondary-action.denhaag-button:disabled {
+.denhaag-button--secondary-action.denhaag-button--disabled,
+.denhaag-button--secondary-action.denhaag-button:disabled {
   background-color: var(--denhaag-button-secondary-action-disabled-background-color);
   color: var(--denhaag-button-secondary-action-disabled-color);
   border-color: var(--denhaag-button-secondary-action-disabled-border-color);
@@ -66,8 +72,14 @@
 }
 
 .denhaag-button--medium.denhaag-button--secondary-action {
-  padding-inline: calc(var(--denhaag-button-medium-size-padding-inline, var(--denhaag-button-padding-inline)) - var(--denhaag-button-border-width));
-  padding-block: calc(var(--denhaag-button-medium-size-padding-block, var(--denhaag-button-padding-block)) - var(--denhaag-button-border-width));
+  padding-inline: calc(
+    var(--denhaag-button-medium-size-padding-inline, var(--denhaag-button-padding-inline)) -
+      var(--denhaag-button-border-width)
+  );
+  padding-block: calc(
+    var(--denhaag-button-medium-size-padding-block, var(--denhaag-button-padding-block)) -
+      var(--denhaag-button-border-width)
+  );
 }
 
 .denhaag-button--large {
@@ -77,8 +89,14 @@
 }
 
 .denhaag-button--large.denhaag-button--secondary-action {
-  padding-inline: calc(var(--denhaag-button-large-size-padding-inline, var(--denhaag-button-padding-inline)) - var(--denhaag-button-border-width));
-  padding-block: calc(var(--denhaag-button-large-size-padding-block,  var(--denhaag-button-padding-block)) - var(--denhaag-button-border-width));
+  padding-inline: calc(
+    var(--denhaag-button-large-size-padding-inline, var(--denhaag-button-padding-inline)) -
+      var(--denhaag-button-border-width)
+  );
+  padding-block: calc(
+    var(--denhaag-button-large-size-padding-block, var(--denhaag-button-padding-block)) -
+      var(--denhaag-button-border-width)
+  );
 }
 
 /* Icon styling */
@@ -89,5 +107,3 @@
 .denhaag-button__icon-size-large > *:first-child {
   font-size: var(--denhaag-font-size-xl);
 }
-
-

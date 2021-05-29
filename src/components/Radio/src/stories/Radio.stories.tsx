@@ -19,7 +19,9 @@ export default {
   component: Radio,
 } as Meta;
 
-const Template: Story<RadioProps> = (args: RadioProps) => <FormControlLabel label="Radio" control={<Radio {...args} />} />;
+const Template: Story<RadioProps> = (args: RadioProps) => (
+  <FormControlLabel label="Radio" control={<Radio {...args} />} />
+);
 
 export const Default: Story<RadioProps> = Template.bind({});
 Default.args = {

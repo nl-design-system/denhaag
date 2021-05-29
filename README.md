@@ -49,6 +49,10 @@ class Example extends Component {
 yarn install --frozen-lockfile
 ```
 
+#### Code style
+
+Be sure to install IDE plugins for ESlint, Prettier, JSONLint and Stylelint if available.
+
 #### Folder structure
 
 The project folders are structured in the following way:
@@ -108,7 +112,6 @@ Similarly, if you create a new category we need to add the category package to t
 This file is located here: `src/components/package.json`
 
 An entry should be structured in the same way as above.
-
 
 ## Cooperation with NL Design System
 
