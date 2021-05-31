@@ -3,9 +3,9 @@ import { StylesProvider } from '@material-ui/core';
 import SvgIcon, { SvgIconProps, CheckCircleIcon } from '@gemeente-denhaag/icons';
 import { stepIconClasses } from './bem-mapping';
 import clsx from 'clsx';
-import { StepperComponent } from './@types';
+import { TimelineComponent } from './@types';
 
-export interface StepIconProps extends StepperComponent {
+export interface StepIconProps extends TimelineComponent {
   /**
    * The label displayed in the step icon.
    */
@@ -25,10 +25,10 @@ export const StepIcon: React.FC<StepIconProps> = ({ active = false, completed = 
     color = 'secondary';
   }
 
-  const textClasses = clsx('denhaag-stepper__step-icon__text', {
-    'denhaag-stepper__step-icon__text--active': active,
-    // 'denhaag-stepper__step-icon__text--inactive': inactive,
-    'denhaag-stepper__step-icon__text--completed': completed,
+  const textClasses = clsx('denhaag-timeline__step-icon__text', {
+    'denhaag-timeline__step-icon__text--active': active,
+    // 'denhaag-timeline__step-icon__text--inactive': inactive,
+    'denhaag-timeline__step-icon__text--completed': completed,
   });
 
   // Exported from https://www.figma.com/file/JpoY3waVoQGlLQzQXTL9nn/Design-System-Gemeente-Den-Haag?node-id=1908%3A9407

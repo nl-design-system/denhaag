@@ -2,9 +2,9 @@ import React from 'react';
 import clsx from 'clsx';
 
 import StepIcon, { StepIconProps } from './StepIcon';
-import { StepperComponent } from './@types';
+import { TimelineComponent } from './@types';
 
-export interface StepLabelProps extends StepperComponent {
+export interface StepLabelProps extends TimelineComponent {
   /**
    * The optional node to display.
    */
@@ -36,15 +36,20 @@ export interface StepLabelProps extends StepperComponent {
  * @param props The properties of a StepLabel component.
  * @constructor Constructs an instance of StepLabel.
  */
-export const StepLabel: React.FC<StepLabelProps> = ({ active, completed, expanded, ...props }: StepLabelProps) => {
-  const classes = clsx('denhaag-stepper__step-label', {
-    'denhaag-stepper__step-label-active': active || expanded,
+export const StepLabel: React.FC<StepLabelProps> = ({
+  active = false,
+  completed = false,
+  expanded = false,
+  ...props
+}: StepLabelProps) => {
+  const classes = clsx('denhaag-timeline__step-label', {
+    'denhaag-timeline__step-label--active': active || expanded,
   });
 
   return (
     <div className={classes}>
       <StepIcon active={active} completed={completed} icon={props.icon} {...props.StepIconProps} />
-      <p className="denhaag-stepper__step-label__text">{props.children}</p>
+      <p className="denhaag-timeline__step-label__text">{props.children}</p>
     </div>
   );
 };

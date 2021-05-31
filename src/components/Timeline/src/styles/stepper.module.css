@@ -1,34 +1,34 @@
-.denhaag-stepper {
+.denhaag-timeline {
   font-family: var(--denhaag-font-family);
   font-size: var(--denhaag-font-size-base);
   line-height: 24px;
 }
 
-.denhaag-stepper__step {
+.denhaag-timeline__step {
   padding-block-start: 12px;
   padding-block-end: 12px;
 }
 
-.denhaag-stepper__step--completed:hover {
+.denhaag-timeline__step--completed:hover {
   cursor: pointer;
   color: var(--denhaag-blue-3);
 }
 
-.denhaag-stepper__step:focus,
-.denhaag-stepper__step:focus-visible {
+.denhaag-timeline__step:focus,
+.denhaag-timeline__step:focus-visible {
   outline: var(--denhaag-focus-border);
 }
 
-.denhaag-stepper__step-content:not(:empty) {
+.denhaag-timeline__step-content:not(:empty) {
   margin-block-start: 12px;
   color: var(--denhaag-grey-4);
 }
 
-.denhaag-stepper__step-content:empty {
+.denhaag-timeline__step-content:empty {
   margin-block-start: 0;
 }
 
-.denhaag-stepper__step-icon {
+.denhaag-timeline__step-icon {
   color: var(--denhaag-grey-3);
 
   height: 20px;
@@ -40,27 +40,27 @@
   margin-block-end: auto;
 }
 
-.denhaag-stepper__step-icon--active {
+.denhaag-timeline__step-icon--active {
   color: var(--denhaag-blue-3);
 }
 
-.denhaag-stepper__step-icon--completed {
+.denhaag-timeline__step-icon--completed {
   color: var(--denhaag-green-3);
 }
 
-.denhaag-stepper__step-icon__text {
+.denhaag-timeline__step-icon__text {
   font-size: var(--denhaag-font-size-s);
 }
 
-.denhaag-stepper__step-icon__text--active {
+.denhaag-timeline__step-icon__text--active {
   fill: var(--denhaag-white);
 }
 
-.denhaag-stepper__step-label {
+.denhaag-timeline__step-label {
   display: flex;
 }
 
-.denhaag-stepper__step-label__text {
+.denhaag-timeline__step-label__text {
   text-overflow: ellipsis;
   overflow: hidden;
 
@@ -73,18 +73,22 @@
   margin-inline-end: 0;
 }
 
-.denhaag-stepper__step-label__text:hover {
+.denhaag-timeline__step-label__text:hover {
   overflow: visible;
   white-space: normal;
   height: auto;
 }
 
-.denhaag-stepper__step-label-active {
+.denhaag-timeline__step-label--active {
   font-weight: 700;
   color: var(--denhaag-blue-3);
 }
 
-.denhaag-stepper__step__step-label__collapse-icon {
+.denhaag-timeline__step-label--disabled {
+  color: var(--denhaag-grey-2);
+}
+
+.denhaag-timeline__step-label__collapse-icon {
   padding-inline-start: 4px;
   height: 16px;
   width: 16px;

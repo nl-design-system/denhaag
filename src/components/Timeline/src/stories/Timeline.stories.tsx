@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Meta, Story } from '@storybook/react';
 import { Button } from '@gemeente-denhaag/button';
-import Stepper, { Step, StepperProps } from '..';
+import Timeline, { Step, TimelineProps } from '..';
 import pkg from '../../package.json';
 
 export default {
-  title: 'Components/navigation/Stepper/Stepper',
+  title: 'Components/navigation/Timeline',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
@@ -14,22 +14,26 @@ export default {
       },
     },
   },
-  component: Stepper,
+  component: Timeline,
 } as Meta;
 
-const Template: Story<StepperProps> = () => {
+const Template: Story<TimelineProps> = () => {
   const [activeStep, setActiveStep] = useState(0);
   const steps = [
     {
-      label: 'First Step in a Stepper!',
-      description: 'This is the first Step component of many in a Stepper component.',
+      label: 'First Step in a Timeline!',
+      description: 'This is the first Step component of many in a Timeline component.',
     },
     {
-      label: 'Second Step in a Stepper!',
+      label: 'Second Step in a Timeline!',
     },
     {
-      label: 'Third Step in a Stepper!',
-      description: 'This is the third Step component of many in a Stepper component.',
+      label: 'Third Step in a Timeline!',
+      disabled: true,
+    },
+    {
+      label: 'Fourth Step in a Timeline!',
+      description: 'This is the fourth Step component of many in a Timeline component.',
     },
   ];
 
@@ -43,11 +47,11 @@ const Template: Story<StepperProps> = () => {
 
   return (
     <React.Fragment>
-      <Stepper activeStep={activeStep}>
-        {steps.map(({ label, description }) => (
-          <Step key={label} label={label} description={description} />
+      <Timeline activeStep={activeStep}>
+        {steps.map(({ label, ...props }) => (
+          <Step key={label} label={label} {...props} />
         ))}
-      </Stepper>
+      </Timeline>
       <Button onClick={prev} disabled={activeStep === 0} variant="secondary-action">
         Prev
       </Button>
@@ -59,7 +63,7 @@ const Template: Story<StepperProps> = () => {
 };
 
 /**
- * Implementation of Stepper
+ * Implementation of Timeline
  * "activeStep" property set to enforce step visibility.
  */
 export const Default = Template.bind({});

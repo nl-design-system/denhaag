@@ -1,7 +1,7 @@
 {
-    "name": "@gemeente-denhaag/stepper",
-    "version": "0.1.7",
-    "description": "A Stepper component",
+    "name": "@gemeente-denhaag/timeline",
+    "version": "0.1.0",
+    "description": "A Timeline component based on the material Stepper component",
     "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
     "repository": {
         "type": "git",

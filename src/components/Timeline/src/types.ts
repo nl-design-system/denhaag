@@ -1,6 +1,6 @@
 import BaseProps from '@gemeente-denhaag/baseprops';
 
-export interface StepperComponent extends BaseProps {
+export interface TimelineComponent extends BaseProps {
   /**
    * Sets the step as active.
    */
@@ -12,8 +12,7 @@ export interface StepperComponent extends BaseProps {
   completed?: boolean;
 
   /**
-   * Mark the step as disabled, will also disable the button if StepButton is a
-   * child of Step.
+   * Mark the step as disabled.
    */
   disabled?: boolean;
 

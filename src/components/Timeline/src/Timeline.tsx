@@ -2,9 +2,9 @@ import React from 'react';
 import MaterialStepper from '@material-ui/core/Stepper';
 import BaseProps from '@gemeente-denhaag/baseprops';
 
-import { stepperClasses } from './bem-mapping';
+import { timelineClasses } from './bem-mapping';
 
-export interface StepperProps extends BaseProps {
+export interface TimelineProps extends BaseProps {
   /**
    * Set the active step (zero based index). Set to -1 to disable all the steps.
    */
@@ -16,9 +16,9 @@ export interface StepperProps extends BaseProps {
  * @param props The properties of a Stepper component.
  * @constructor Constructs an instance of Stepper.
  */
-export const Stepper: React.FC<StepperProps> = (props: StepperProps) => {
+export const Stepper: React.FC<TimelineProps> = (props: TimelineProps) => {
   return (
-    <MaterialStepper orientation="vertical" connector={<React.Fragment />} classes={stepperClasses} {...props}>
+    <MaterialStepper orientation="vertical" connector={<React.Fragment />} classes={timelineClasses} {...props}>
       {props.children}
     </MaterialStepper>
   );

@@ -5,9 +5,9 @@ import { ChevronDownIcon, ChevronUpIcon } from '@gemeente-denhaag/icons';
 
 import { StepIcon, StepContent, StepLabel } from '.';
 import { stepClasses, stepLabelIconClasses } from './bem-mapping';
-import { StepperComponent } from './@types';
+import { TimelineComponent } from './@types';
 
-export interface StepProps extends StepperComponent {
+export interface StepProps extends TimelineComponent {
   /**
    * Describes the information of the step.
    */
@@ -24,10 +24,10 @@ export interface StepProps extends StepperComponent {
  * @constructor Constructs an instance of Step.
  */
 export const Step: React.FC<StepProps> = ({
-  label,
-  description,
   active = false,
   completed,
+  description,
+  label,
   tabIndex = 0,
   ...props
 }: StepProps) => {
