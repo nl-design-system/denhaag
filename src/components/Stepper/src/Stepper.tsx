@@ -2,6 +2,8 @@ import React from 'react';
 import MaterialStepper from '@material-ui/core/Stepper';
 import BaseProps from '@gemeente-denhaag/baseprops';
 
+import { stepperClasses } from './bem-mapping';
+
 export interface StepperProps extends BaseProps {
   /**
    * Set the active step (zero based index). Set to -1 to disable all the steps.
@@ -16,7 +18,7 @@ export interface StepperProps extends BaseProps {
  */
 export const Stepper: React.FC<StepperProps> = (props: StepperProps) => {
   return (
-    <MaterialStepper orientation="vertical" connector={<React.Fragment />} {...props}>
+    <MaterialStepper orientation="vertical" connector={<React.Fragment />} classes={stepperClasses} {...props}>
       {props.children}
     </MaterialStepper>
   );

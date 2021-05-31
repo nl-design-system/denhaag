@@ -1,17 +1,10 @@
 import React from 'react';
-import MaterialStepLabel from '@material-ui/core/StepLabel';
-import BaseProps from '@gemeente-denhaag/baseprops';
+import clsx from 'clsx';
 
-import { StepIconProps } from './StepIcon';
-import { stepLabelClasses } from './styles/bem-mapping';
+import StepIcon, { StepIconProps } from './StepIcon';
+import { StepperComponent } from './@types';
 
-export interface StepLabelProps extends BaseProps {
-  /**
-   * Mark the step as disabled, will also disable the button if StepLabelButton is a child of StepLabel.
-   * Is passed to child components.
-   */
-  disabled?: boolean;
-
+export interface StepLabelProps extends StepperComponent {
   /**
    * The optional node to display.
    */
@@ -43,8 +36,17 @@ export interface StepLabelProps extends BaseProps {
  * @param props The properties of a StepLabel component.
  * @constructor Constructs an instance of StepLabel.
  */
-export const StepLabel: React.FC<StepLabelProps> = (props: StepLabelProps) => {
-  return <MaterialStepLabel classes={stepLabelClasses} {...props} />;
+export const StepLabel: React.FC<StepLabelProps> = ({ active, completed, expanded, ...props }: StepLabelProps) => {
+  const classes = clsx('denhaag-stepper__step-label', {
+    'denhaag-stepper__step-label-active': active || expanded,
+  });
+
+  return (
+    <div className={classes}>
+      <StepIcon active={active} completed={completed} icon={props.icon} {...props.StepIconProps} />
+      <p className="denhaag-stepper__step-label__text">{props.children}</p>
+    </div>
+  );
 };
 
 export default StepLabel;

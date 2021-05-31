@@ -1,32 +1,15 @@
 import React from 'react';
 import { StylesProvider } from '@material-ui/core';
-import { BaseClassesProps } from '@gemeente-denhaag/baseprops';
 import SvgIcon, { SvgIconProps, CheckCircleIcon } from '@gemeente-denhaag/icons';
-import { stepIconClasses } from './styles/bem-mapping';
+import { stepIconClasses } from './bem-mapping';
 import clsx from 'clsx';
+import { StepperComponent } from './@types';
 
-export interface StepIconProps extends BaseClassesProps {
-  /**
-   * Whether this step is active.
-   */
-  active?: boolean;
-
-  inactive?: boolean;
-
-  /**
-   * Mark the step as completed. Is passed to child components.
-   */
-  completed?: boolean;
-
-  /**
-   * Mark the step as failed.
-   */
-  error?: boolean;
-
+export interface StepIconProps extends StepperComponent {
   /**
    * The label displayed in the step icon.
    */
-  icon: boolean;
+  icon?: number;
 }
 
 /**
@@ -34,24 +17,17 @@ export interface StepIconProps extends BaseClassesProps {
  * @param props The properties of a StepIcon component.
  * @constructor Constructs an instance of StepIcon.
  */
-export const StepIcon: React.FC<StepIconProps> = ({
-  active = false,
-  inactive = false,
-  completed = false,
-  icon,
-}: StepIconProps) => {
+export const StepIcon: React.FC<StepIconProps> = ({ active = false, completed = false, icon }: StepIconProps) => {
   let color: SvgIconProps['color'];
   if (active) {
     color = 'primary';
   } else if (completed) {
     color = 'secondary';
-  } else if (inactive) {
-    color = 'disabled';
   }
 
   const textClasses = clsx('denhaag-stepper__step-icon__text', {
     'denhaag-stepper__step-icon__text--active': active,
-    'denhaag-stepper__step-icon__text--inactive': inactive,
+    // 'denhaag-stepper__step-icon__text--inactive': inactive,
     'denhaag-stepper__step-icon__text--completed': completed,
   });
 

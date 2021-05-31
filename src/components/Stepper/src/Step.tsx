@@ -1,13 +1,13 @@
 import React, { useEffect, useState, KeyboardEventHandler } from 'react';
 import MaterialStep from '@material-ui/core/Step';
 
-import BaseProps from '@gemeente-denhaag/baseprops';
 import { ChevronDownIcon, ChevronUpIcon } from '@gemeente-denhaag/icons';
 
 import { StepIcon, StepContent, StepLabel } from '.';
-import { stepClasses, stepLabelIconClasses } from './styles/bem-mapping';
+import { stepClasses, stepLabelIconClasses } from './bem-mapping';
+import { StepperComponent } from './@types';
 
-export interface StepProps extends BaseProps {
+export interface StepProps extends StepperComponent {
   /**
    * Describes the information of the step.
    */
@@ -16,34 +16,6 @@ export interface StepProps extends BaseProps {
    * Additional information about the step.
    */
   description?: string;
-  /**
-   * Sets the step as active.
-   * Is passed to child components.
-   */
-  active?: boolean;
-
-  /**
-   * Mark the step as completed.
-   * Is passed to child components.
-   */
-  completed?: boolean;
-
-  /**
-   * Mark the step as disabled,
-   * will also disable the button if StepButton is a child of Step.
-   * Is passed to child components.
-   */
-  disabled?: boolean;
-
-  /**
-   * Expand the step.
-   */
-  expanded?: boolean;
-
-  /**
-   * Tab index of the root step element.
-   */
-  tabIndex?: number;
 }
 
 /**
@@ -55,6 +27,7 @@ export const Step: React.FC<StepProps> = ({
   label,
   description,
   active = false,
+  completed,
   tabIndex = 0,
   ...props
 }: StepProps) => {
@@ -62,7 +35,7 @@ export const Step: React.FC<StepProps> = ({
   const hasDescription = description !== undefined;
 
   const toggle = () => {
-    if (hasDescription) {
+    if (hasDescription && completed) {
       setIsExpanded((prevState) => !prevState);
     }
   };
@@ -80,29 +53,36 @@ export const Step: React.FC<StepProps> = ({
     }
   };
 
+  let descriptionElement: string | React.ReactElement = '';
+  if (hasDescription) {
+    descriptionElement = <StepContent>{description}</StepContent>;
+  }
+
+  let iconElement: string | React.ReactElement = '';
+  if (hasDescription && completed) {
+    if (isExpanded) {
+      iconElement = <ChevronUpIcon classes={stepLabelIconClasses} />;
+    } else {
+      iconElement = <ChevronDownIcon classes={stepLabelIconClasses} />;
+    }
+  }
+
   return (
     <MaterialStep
-      onClick={toggle}
-      expanded={isExpanded}
       active={active}
       classes={stepClasses}
-      tabIndex={tabIndex}
+      completed={completed}
+      expanded={isExpanded}
+      onClick={toggle}
       onKeyDown={handleKeyDown}
+      tabIndex={tabIndex}
       {...props}
     >
       <StepLabel StepIconComponent={StepIcon}>
         {label}
-        {hasDescription && !active ? (
-          isExpanded ? (
-            <ChevronUpIcon classes={stepLabelIconClasses} />
-          ) : (
-            <ChevronDownIcon classes={stepLabelIconClasses} />
-          )
-        ) : (
-          ''
-        )}
+        {iconElement}
       </StepLabel>
-      {hasDescription ? <StepContent>{description}</StepContent> : ''}
+      {descriptionElement}
     </MaterialStep>
   );
 };

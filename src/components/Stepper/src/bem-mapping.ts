@@ -1,8 +1,10 @@
+export const stepperClasses = {
+  root: 'denhaag-stepper',
+};
+
 export const stepClasses = {
   root: 'denhaag-stepper__step',
-};
-export const contentClasses = {
-  root: 'denhaag-stepper__step-content',
+  completed: 'denhaag-stepper__step--completed',
 };
 
 export const stepIconClasses = {

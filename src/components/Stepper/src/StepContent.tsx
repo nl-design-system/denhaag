@@ -2,11 +2,10 @@ import React from 'react';
 import { TransitionProps } from '@material-ui/core/transitions';
 import MaterialStepContent from '@material-ui/core/StepContent';
 import { StylesProvider } from '@material-ui/core';
-import BaseProps from '@gemeente-denhaag/baseprops';
 
-import { contentClasses } from './styles/bem-mapping';
+import { StepperComponent } from './@types';
 
-export interface StepContentProps extends BaseProps {
+export interface StepContentProps extends StepperComponent {
   /**
    * The component used for the transition.
    */
@@ -30,11 +29,6 @@ export interface StepContentProps extends BaseProps {
    * Props applied to the Transition element.
    */
   TransitionProps?: Record<string, unknown>;
-
-  /**
-   * Whether or not this components is expanded
-   */
-  expanded?: boolean;
 }
 
 /**
@@ -45,7 +39,7 @@ export interface StepContentProps extends BaseProps {
 export const StepContent: React.FC<StepContentProps> = (props: StepContentProps) => {
   return (
     <StylesProvider injectFirst>
-      <MaterialStepContent classes={contentClasses} {...props}>
+      <MaterialStepContent className="denhaag-stepper__step-content" {...props}>
         {props.children}
       </MaterialStepContent>
     </StylesProvider>
