@@ -19,7 +19,7 @@ export default {
 } as Meta;
 
 const Template: Story<FormControlLabelProps> = (args: FormControlLabelProps) => (
-  <FormControlLabel label="Checkbox" control={<Checkbox {...args} />} {...args} />
+  <FormControlLabel {...args} label="Checkbox" control={<Checkbox {...args} />} />
 );
 
 // language=JS
