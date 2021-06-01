@@ -16,7 +16,9 @@ export default {
 const Template: Story<DatePickerProps> = (args: DatePickerProps) => {
   const [value, setValue] = React.useState('1970-01-01');
   args.onChange = (date: DateIOType) => {
-    setValue(date.toString());
+    if (date !== null) {
+      setValue(date.toString());
+    }
   };
   args.value = value;
 
@@ -35,7 +37,9 @@ const [value, setValue] = React.useState("1970-01-01");
 
 <PickersUtilsProvider utils={DateFnsUtils}>
   <DatePicker value={value} onChange={(date: DateIOType) => {
-    setValue(date.toString());
+    if (date !== null) {
+      setValue(date.toString());
+    }
   }}/>
 </PickersUtilsProvider>
 `;

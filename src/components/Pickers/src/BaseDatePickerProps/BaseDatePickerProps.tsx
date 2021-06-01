@@ -265,4 +265,6 @@ export interface BaseDatePickerProps {
   views?: Array<'year' | 'date' | 'month'>;
 }
 
+export { DateIOType };
+
 export default BaseDatePickerProps;
