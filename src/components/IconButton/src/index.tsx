@@ -35,6 +35,11 @@ export interface IconButtonProps extends BaseProps {
    * `small` is equivalent to the dense button styling.
    */
   size?: 'small' | 'medium';
+
+  /**
+   * Callback fired when the IconButton is clicked.
+   */
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 /**

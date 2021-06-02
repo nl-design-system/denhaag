@@ -7,7 +7,6 @@ import { ListItemSecondaryAction, ListItemText } from '.';
 import { ChevronRightIcon } from '@gemeente-denhaag/icons';
 import IconButton from '@gemeente-denhaag/iconbutton';
 
-
 export interface ListItemProps extends BaseProps {
   /**
    * If `true`, the list item will be focused during the first mount.

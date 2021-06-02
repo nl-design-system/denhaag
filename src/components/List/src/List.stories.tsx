@@ -8,9 +8,9 @@ import { action } from '@storybook/addon-actions';
 import './mui-override.module.css';
 import './listitem.module.css';
 import './listitemsecondaryaction.module.css';
-import './listitemicon.module.css'
-import './listitemtext.module.css'
-import './listsubheader.module.css'
+import './listitemicon.module.css';
+import './listitemtext.module.css';
+import './listsubheader.module.css';
 import '@gemeente-denhaag/design-tokens-common';
 import '@gemeente-denhaag/design-tokens-components';
 

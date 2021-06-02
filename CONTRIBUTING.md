@@ -200,3 +200,43 @@ Run the following command to publish a new version to the local registry (on a s
 
 Now you can test the packages in a new React project, or test it in the PWA. Either way make sure you specify the registry with `--registry http://localhost:4873`.
 In the PWA yarn upgrade the dependency of @gemeente-denhaag/denhaag-component-library (with the registry flag), and correct the imports.
+
+## Testing guidelines
+
+The component library is tested using Cypress, see their docs [here](https://docs.cypress.io/guides/overview/why-cypress).
+Each component should have a `/spec` directory in their package with one or more `<component>.spec.tsx` test files.
+There are two commands for running the tests:
+
+- `yarn test` for running in your terminal
+- `yarn test:open` for running in the cypress tool
+
+### Test examples
+
+In the component library the following types of tests should be available:
+
+##### Cypress component tests
+
+These are similar to regular cypress tests but have support for mounting components in isolation, see the [example](https://docs.cypress.io/guides/component-testing/introduction#What-is-Component-Testing) on their documention.
+
+##### Snapshot test
+
+Using the cypress-plugin-snapshots:
+
+```tsx
+it("matches snapshot", () => {
+  mount(<Button>Test button</Button>);
+  cy.get("button").toMatchSnapshot();
+});
+```
+
+##### Automated a11y test
+
+Each component should also have an automated a11y test, to catch any detectable a11y violations, using the cypress-axe plugin:
+
+```tsx
+it("does not violate any accessibility rules", () => {
+  mount(<Button>Test button</Button>);
+  cy.injectAxe();
+  cy.checkA11y("button");
+});
+```

@@ -46,8 +46,12 @@ class Example extends Component {
 4. Run the following command to install all development dependencies:
 
 ```bash
-yarn install
+yarn install --frozen-lockfile
 ```
+
+#### Code style
+
+Be sure to install IDE plugins for ESlint, Prettier, JSONLint and Stylelint if available.
 
 #### Folder structure
 

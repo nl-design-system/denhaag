@@ -4,7 +4,6 @@ import { BaseChildrenProps } from '@gemeente-denhaag/baseprops';
 
 import { listitemsecondaryaction_classes as classes } from './bem-mapping';
 
-
 export type ListItemSecondaryActionProps = BaseChildrenProps;
 
 /**

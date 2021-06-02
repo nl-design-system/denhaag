@@ -1,32 +1,32 @@
 export const list_classes = {
-    root: 'denhaag-list'
-}
+  root: 'denhaag-list',
+};
 
 export const listitemicon_classes = {
-    root: 'denhaag-list__itemicon'
-}
+  root: 'denhaag-list__itemicon',
+};
 
 export const listsubheader_classes = {
-    root: 'denhaag-list__subheader'
-}
+  root: 'denhaag-list__subheader',
+};
 
 export const listitem_classes = {
-    root: 'denhaag-list__item',
-    focusVisible: 'denhaag-list__itemfocused',
-}
+  root: 'denhaag-list__item',
+  focusVisible: 'denhaag-list__itemfocused',
+};
 
 export const listitemtext_classes = {
-    root: 'denhaag-list__itemtext'
-}
+  root: 'denhaag-list__itemtext',
+};
 
 export const listitemsecondaryaction_classes = {
-    root: 'denhaag-list__secondaryaction'
-}
+  root: 'denhaag-list__secondaryaction',
+};
 
 export const listitemtextprimary_classes = {
-    root: 'denhaag-list__itemtextprimary'
-}
+  root: 'denhaag-list__itemtextprimary',
+};
 
 export const listitemtextsecondary_classes = {
-    root: 'denhaag-list__itemtextsecondary'
-}
+  root: 'denhaag-list__itemtextsecondary',
+};

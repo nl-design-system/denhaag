@@ -24,7 +24,7 @@ export interface RadioProps {
   /**
    * The value of the component. The DOM casts it to `string`.
    */
-  value?: any;
+  value?: unknown;
 
   /**
    * If `true`, the component is checked.

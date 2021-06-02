@@ -1,5 +1,5 @@
 {
   "package.json": "npmPkgJsonLint",
-  "*.{ts,tsx}": "eslint",
+  "*.{ts,tsx}": ["eslint", "prettier -c"],
   "*.css": "stylelint"
 }

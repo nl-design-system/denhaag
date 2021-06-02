@@ -57,4 +57,6 @@ export const KeyboardDatePicker: React.FC<KeyboardDatePickerProps> = (props: Key
   return <MaterialDatePicker {...props} />;
 };
 
+export { DateIOType };
+
 export default KeyboardDatePicker;
