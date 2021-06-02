@@ -98,9 +98,7 @@
   bottom: 0;
   background: var(--denhaag-card-case-primary-background-color);
   transform-origin: 50% 100%;
-  border-top-right-radius: var(--denhaag-card-border-radius);
-  border-bottom-right-radius: var(--denhaag-card-border-radius);
-  border-bottom-left-radius: var(--denhaag-card-border-radius);
+  border-radius: var(--denhaag-card-border-radius); border-top-left-radius: 0;
   z-index: -1;
 }
 
