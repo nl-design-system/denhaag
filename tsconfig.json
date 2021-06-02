@@ -17,7 +17,6 @@
       "@gemeente-denhaag/baseprops": ["BaseProps/src/*"],
       "@gemeente-denhaag/box": ["Box/src/*"],
       "@gemeente-denhaag/button": ["Button/src/*"],
-      "@gemeente-denhaag/buttongroup": ["ButtonGroup/src/*"],
       "@gemeente-denhaag/card": ["Card/src/*"],
       "@gemeente-denhaag/cardactions": ["CardActions/src/*"],
       "@gemeente-denhaag/cardcontent": ["CardContent/src/*"],
@@ -113,9 +112,6 @@
     },
     {
       "path": "src/components/Button"
-    },
-    {
-      "path": "src/components/ButtonGroup"
     },
     {
       "path": "src/components/Card"
