@@ -1,3 +1,3 @@
 export const cardActionClasses = {
-    root: 'denhaag-card-actions'
+    root: 'denhaag-card__actions'
 }

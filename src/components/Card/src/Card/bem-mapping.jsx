@@ -23,5 +23,5 @@ export const cardCaseClasses = {
 }
 
 export const cardCaseFocusClasses = {
-  root: 'denhaag-card--case__text__wrapper'
+  root: 'denhaag-card__text-wrapper'
 }
