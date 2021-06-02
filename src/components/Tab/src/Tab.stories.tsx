@@ -27,7 +27,7 @@ const Template: Story<TabProps> = (args: TabProps) => {
           setValue(newValue);
         }}
       >
-        <Tab {...args} value={0}  />
+        <Tab {...args} value={0} />
         <Tab label="Another tab" value={1} />
         <Tab label="Yet another tab" value={2} />
       </Tabs>
