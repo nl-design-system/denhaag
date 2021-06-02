@@ -83,7 +83,9 @@ export const Card: React.FC<CardProps> = (props: CardProps) => {
             </div>
             <CardActions disableSpacing={true}>
               <Typography component='div' classes={subtitleClasses}>
-                {props.date.toLocaleDateString()}
+                <time dateTime={props.date.toLocaleDateString()}>
+                  {props.date.toLocaleDateString()}
+                </time>
               </Typography>
               <Icon classes={arrowClasses} aria-label='ArrowRightIcon'>
                 <ArrowRightIcon />
