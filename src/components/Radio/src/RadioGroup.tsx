@@ -26,6 +26,7 @@ export interface RadioGroupProps extends BaseChildrenProps {
   /**
    * Value of the selected radio button. The DOM API casts this to a string.
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   value?: any;
 
   /**

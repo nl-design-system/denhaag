@@ -106,6 +106,7 @@
     "no-useless-concat": "error",
     "no-useless-escape": "error",
     "no-useless-return": "error",
+    "@typescript-eslint/no-explicit-any": "error",
     "no-void": "error",
     "no-with": "error",
     "prefer-regex-literals": "error",

@@ -1,12 +1,12 @@
 import React from 'react';
-import MaterialPopover from '@material-ui/core/Popover';
+import MaterialPopover, { PopoverActions, PopoverProps as MaterialPopoverProps } from '@material-ui/core/Popover';
 import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface PopoverProps extends BaseProps {
   /**
    * A ref for imperative actions.
    */
-  action: () => any;
+  action: () => React.Ref<PopoverActions>;
 
   /**
    * A HTML element, or a function that returns it.
@@ -49,37 +49,37 @@ export interface PopoverProps extends BaseProps {
   /**
    * Callback fired when the component requests to be closed.
    */
-  onClose: () => any;
+  onClose: () => MaterialPopoverProps['onClose'];
 
   /**
    * Callback fired before the component is entering.
    */
-  onEnter: () => any;
+  onEnter: () => MaterialPopoverProps['onEnter'];
 
   /**
    * Callback fired when the component has entered.
    */
-  onEntered: () => any;
+  onEntered: () => MaterialPopoverProps['onEntered'];
 
   /**
    * Callback fired when the component is entering.
    */
-  onEntering: () => any;
+  onEntering: () => MaterialPopoverProps['onEntering'];
 
   /**
    * Callback fired before the component is exiting.
    */
-  onExit: () => any;
+  onExit: () => MaterialPopoverProps['onExit'];
 
   /**
    * Callback fired when the component has exited.
    */
-  onExited: () => any;
+  onExited: () => MaterialPopoverProps['onExited'];
 
   /**
    * Callback fired when the component is exiting.
    */
-  onExiting: () => any;
+  onExiting: () => MaterialPopoverProps['onExiting'];
 
   /**
    * If true, the popover is visible.
