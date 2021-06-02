@@ -3,9 +3,9 @@ import MaterialStep from '@material-ui/core/Step';
 
 import { ChevronDownIcon, ChevronUpIcon } from '@gemeente-denhaag/icons';
 
-import { StepIcon, StepContent, StepLabel } from '.';
+import { StepContent, StepLabel } from '.';
 import { stepClasses, stepLabelIconClasses } from './bem-mapping';
-import { TimelineComponent } from './@types';
+import { TimelineComponent } from './types';
 
 export interface StepProps extends TimelineComponent {
   /**
@@ -78,7 +78,7 @@ export const Step: React.FC<StepProps> = ({
       tabIndex={tabIndex}
       {...props}
     >
-      <StepLabel StepIconComponent={StepIcon}>
+      <StepLabel>
         {label}
         {iconElement}
       </StepLabel>

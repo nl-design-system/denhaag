@@ -2,19 +2,9 @@ import React from 'react';
 import clsx from 'clsx';
 
 import StepIcon, { StepIconProps } from './StepIcon';
-import { TimelineComponent } from './@types';
+import { TimelineComponent } from './types';
 
 export interface StepLabelProps extends TimelineComponent {
-  /**
-   * The optional node to display.
-   */
-  optional?: React.ReactNode;
-
-  /**
-   * Mark the step as failed.
-   */
-  error?: boolean;
-
   /**
    * The label displayed in the step icon.
    */
@@ -23,7 +13,7 @@ export interface StepLabelProps extends TimelineComponent {
   /**
    * The component to render in place of the StepIcon.
    */
-  StepIconComponent?: React.ElementType;
+  StepIconComponent?: React.ReactElement;
 
   /**
    * Props applied to the StepIcon element.
@@ -42,13 +32,21 @@ export const StepLabel: React.FC<StepLabelProps> = ({
   expanded = false,
   ...props
 }: StepLabelProps) => {
+  let StepIconComponent: React.ReactElement;
+  if (props.StepIconComponent === undefined) {
+    StepIconComponent = <StepIcon active={active} completed={completed} icon={props.icon} {...props.StepIconProps} />;
+  } else {
+    StepIconComponent = props.StepIconComponent;
+    StepIconComponent.props = { ...StepIconComponent.props, ...props.StepIconProps };
+  }
+
   const classes = clsx('denhaag-timeline__step-label', {
     'denhaag-timeline__step-label--active': active || expanded,
   });
 
   return (
     <div className={classes}>
-      <StepIcon active={active} completed={completed} icon={props.icon} {...props.StepIconProps} />
+      {StepIconComponent}
       <p className="denhaag-timeline__step-label__text">{props.children}</p>
     </div>
   );

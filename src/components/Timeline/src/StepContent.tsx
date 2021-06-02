@@ -3,7 +3,7 @@ import { TransitionProps } from '@material-ui/core/transitions';
 import MaterialStepContent from '@material-ui/core/StepContent';
 import { StylesProvider } from '@material-ui/core';
 
-import { TimelineComponent } from './@types';
+import { TimelineComponent } from './types';
 
 export interface StepContentProps extends TimelineComponent {
   /**

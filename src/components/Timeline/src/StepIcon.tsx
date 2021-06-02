@@ -3,7 +3,7 @@ import { StylesProvider } from '@material-ui/core';
 import SvgIcon, { SvgIconProps, CheckCircleIcon } from '@gemeente-denhaag/icons';
 import { stepIconClasses } from './bem-mapping';
 import clsx from 'clsx';
-import { TimelineComponent } from './@types';
+import { TimelineComponent } from './types';
 
 export interface StepIconProps extends TimelineComponent {
   /**
