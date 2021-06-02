@@ -21,9 +21,9 @@ import { Icon } from '@material-ui/core';
 
 export interface CardProps extends BaseProps {
   /**
-   * Simple click handler
+   * Callback fired when the Card is clicked.
    */
-  onClick?: () => void;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 
 
   /**
