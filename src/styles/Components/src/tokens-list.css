@@ -9,9 +9,12 @@
   --denhaag-listitem-focus-border-width: var(--denhaag-focus-border-width);
   --denhaag-listitem-focus-border-style: var(--denhaag-focus-border-style);
   --denhaag-listitem-padding-block-secondary: 8px;
+  --denhaag-listitem-active-border-color: var(--denhaag-blue-3);
 
   /* ListItemIcon */
   --denhaag-listitem-icon-color: var(--denhaag-grey-4);
+  --denhaag-listitem-icon-focus-color: var(--denhaag-blue-3);
+  --denhaag-listitem-icon-hover-color: var(--denhaag-blue-3);
 
   /* ListItemSecondaryAction */
   --denhaag-listitem-secondaryaction-focus-color: var(--denhaag-blue-3);
@@ -20,14 +23,16 @@
   --denhaag-listitem-secondaryaction-padding: 4px;
 
   /* ListItemText */
+  --denhaag-listitemtext-primarytext-focus-color: var(--denhaag-blue-3);
+  --denhaag-listitemtext-primarytext-hover-color: var(--denhaag-blue-3);
   --denhaag-listitemtext-primary-color: var(--denhaag-grey-4);
   --denhaag-listitemtext-primary-weight: 400;
   --denhaag-listitemtext-secondary-color: var(--denhaag-grey-4);
   --denhaag-listitemtext-secondary-weight: 400;
   --denhaag-listitemtext-secondary-font-size: var(--denhaag-font-size-s);
-  --denhaag-listitemtext-secondary-primarytext-lineheight: 32px;
+  --denhaag-listitemtext-secondary-primarytext-line-height: 32px;
   --denhaag-listitemtext-secondary-secondarytext-bottom-padding: 8px;
-  --denhaag-listitemtext-secondary-secondarytext-lineheight: 16px;
+  --denhaag-listitemtext-secondary-secondarytext-line-height: 16px;
 
   /* ListSubheader */
   --denhaag-list-subheader-font-weight: 700;

@@ -1,8 +1,6 @@
 .denhaag-list__secondaryaction {
   right: var(--denhaag-listitem-secondaryaction-right);
   color: var(--denhaag-listitem-secondaryaction-color);
-  width: 32px;
-  height: 32px;
 }
 
 .denhaag-list__secondaryaction button {
@@ -14,7 +12,6 @@
   border-color: var(--denhaag-listitem-focus-border-color);
   border-style: var(--denhaag-listitem-focus-border-style);
   border-width: var(--denhaag-listitem-border-size);
-  border-radius: 0%;
   box-sizing: border-box;
   color: var(--denhaag-listitem-secondaryaction-focus-color);
   padding-inline: calc(var(--denhaag-listitem-secondaryaction-padding) - var(--denhaag-focus-border-width));
