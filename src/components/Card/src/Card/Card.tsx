@@ -13,10 +13,8 @@ import {
   cardSubtitleClasses,
   cardCaseClasses
 } from './bem-mapping';
-import {
-  CardContent,
-  CardActions
-} from '../';
+import { CardContent }  from '../CardContent/CardContent';
+import { CardActions } from '../CardActions/CardActions';
 import { Icon } from '@material-ui/core';
 
 export interface CardProps extends BaseProps {
@@ -83,7 +81,7 @@ export const Card: React.FC<CardProps> = (props: CardProps) => {
             </div>
             <CardActions disableSpacing={true}>
               <Typography component='div' classes={subtitleClasses}>
-                <time dateTime={props.date.toLocaleDateString()}>
+                <time dateTime={props.date.toDateString()}>
                   {props.date.toLocaleDateString()}
                 </time>
               </Typography>
