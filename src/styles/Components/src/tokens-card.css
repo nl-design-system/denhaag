@@ -29,6 +29,6 @@
     --denhaag-card-case-text-color: var(--denhaag-green-3);
     --denhaag-card-case-text-active-color: var(--denhaag-green-4);
     --denhaag-card-case-primary-background-color: var(--denhaag-green-1);
-    --denhaag-card-case-secundary-background-color: var(--denhaag-green-2);
+    --denhaag-card-case-secondary-background-color: var(--denhaag-green-2);
     --denhaag-card-case-paper-color: var(--denhaag-white);
 }

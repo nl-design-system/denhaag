@@ -59,7 +59,7 @@
 
 .denhaag-card--case {
   position: relative;
-  background: var(--denhaag-card-case-secundary-background-color);
+  background: var(--denhaag-card-case-secondary-background-color);
   padding-block-start: 20px;
   border-radius: var(--denhaag-card-border-radius);
 }
