@@ -161,8 +161,6 @@
   font-weight: 500;
   padding-block: var(--denhaag-card-subtitle-padding);
   padding-inline: var(--denhaag-card-subtitle-padding);
-  /*flex-grow: 1;/*
-  /* height: 44px; */
 }
 
 .denhaag-card--case:hover .denhaag-card__subtitle, .denhaag-card--case:focus .denhaag-card__subtitle {
