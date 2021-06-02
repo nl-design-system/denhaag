@@ -34,7 +34,6 @@ export function DefaultSelect(props: SelectProps): React.ReactElement {
 
   return (
     <FormControl className={classes.formControl}>
-      {/*  */}
       <InputLabel id="default-select-label">Amount</InputLabel>
       <Select labelId="default-select-label" {...props}>
         <MenuItem value={10}>10</MenuItem>
