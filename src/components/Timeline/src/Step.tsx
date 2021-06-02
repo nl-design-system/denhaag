@@ -23,12 +23,16 @@ export interface StepProps extends TimelineComponent {
  * @param props The properties of a Step component.
  * @constructor Constructs an instance of Step.
  */
-export const Step: React.FC<StepProps> = ({ active = false, completed = false, tabIndex = 0, ...props }: StepProps) => {
+export const Step: React.FC<StepProps> = ({ active = false, tabIndex = 0, ...props }: StepProps) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const hasDescription = props.description !== undefined;
 
+  if (active && props.disabled) {
+    throw new Error('Step cannot be active and disabled at the same time.');
+  }
+
   const toggle = () => {
-    if (hasDescription && completed) {
+    if (hasDescription && props.completed) {
       setIsExpanded((prevState) => !prevState);
     }
   };
@@ -52,7 +56,7 @@ export const Step: React.FC<StepProps> = ({ active = false, completed = false, t
   }
 
   let iconElement: string | React.ReactElement = '';
-  if (hasDescription && completed) {
+  if (hasDescription && props.completed) {
     if (isExpanded) {
       iconElement = <ChevronUpIcon classes={stepLabelIconClasses} />;
     } else {
@@ -64,7 +68,6 @@ export const Step: React.FC<StepProps> = ({ active = false, completed = false, t
     <MaterialStep
       active={active}
       classes={stepClasses}
-      completed={completed}
       expanded={isExpanded}
       onClick={toggle}
       onKeyDown={handleKeyDown}

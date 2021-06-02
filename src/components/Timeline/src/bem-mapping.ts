@@ -9,16 +9,12 @@ export const stepClasses = {
 
 export const stepIconClasses = {
   root: 'denhaag-timeline__step-icon',
-  colorPrimary: 'denhaag-timeline__step-icon--active',
+  colorAction: 'denhaag-timeline__step-icon--active',
   colorSecondary: 'denhaag-timeline__step-icon--completed',
-  colorDisabled: 'denhaag-timeline__step-icon--inactive',
+  colorPrimary: 'denhaag-timeline__step-icon--inactive',
+  colorDisabled: 'denhaag-timeline__step-icon--disabled',
 };
 
 export const stepLabelIconClasses = {
   root: 'denhaag-timeline__step-label__collapse-icon',
-};
-
-export const stepLabelClasses = {
-  label: 'denhaag-timeline__step-label',
-  active: 'denhaag-timeline__step-label-active',
 };

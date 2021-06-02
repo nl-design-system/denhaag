@@ -17,31 +17,32 @@ export interface StepIconProps extends TimelineComponent {
  * @param props The properties of a StepIcon component.
  * @constructor Constructs an instance of StepIcon.
  */
-export const StepIcon: React.FC<StepIconProps> = ({ active = false, completed = false, ...props }: StepIconProps) => {
-  let color: SvgIconProps['color'];
-  if (active) {
-    color = 'primary';
-  } else if (completed) {
+export const StepIcon: React.FC<StepIconProps> = (props: StepIconProps) => {
+  let color: SvgIconProps['color'] = 'primary';
+  if (props.disabled) {
+    color = 'disabled';
+  } else if (props.active) {
+    color = 'action';
+  } else if (props.completed) {
     color = 'secondary';
   }
 
   const textClasses = clsx('denhaag-timeline__step-icon__text', {
-    'denhaag-timeline__step-icon__text--active': active,
-    // 'denhaag-timeline__step-icon__text--inactive': inactive,
-    'denhaag-timeline__step-icon__text--completed': completed,
+    'denhaag-timeline__step-icon__text--active': props.active,
+    'denhaag-timeline__step-icon__text--completed': props.completed,
   });
 
   // Exported from https://www.figma.com/file/JpoY3waVoQGlLQzQXTL9nn/Design-System-Gemeente-Den-Haag?node-id=1908%3A9407
   const circleProps = {
     cx: 10,
     cy: 10,
-    r: active ? 10 : 9.25,
-    fill: active ? 'currentColor' : 'none',
-    stroke: active ? 'none' : 'currentColor',
-    strokeWidth: active ? 0 : 1.5,
+    r: props.active ? 10 : 9.25,
+    fill: props.active ? 'currentColor' : 'none',
+    stroke: props.active ? 'none' : 'currentColor',
+    strokeWidth: props.active ? 0 : 1.5,
   };
 
-  if (completed) {
+  if (props.completed) {
     return (
       <StylesProvider injectFirst>
         <CheckCircleIcon classes={stepIconClasses} color={color} />

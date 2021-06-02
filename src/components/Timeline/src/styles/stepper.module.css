@@ -48,6 +48,10 @@
   color: var(--denhaag-green-3);
 }
 
+.denhaag-timeline__step-icon--disabled {
+  color: var(--denhaag-grey-2);
+}
+
 .denhaag-timeline__step-icon__text {
   font-size: var(--denhaag-font-size-s);
 }

@@ -26,22 +26,26 @@ export interface StepLabelProps extends TimelineComponent {
  * @param props The properties of a StepLabel component.
  * @constructor Constructs an instance of StepLabel.
  */
-export const StepLabel: React.FC<StepLabelProps> = ({
-  active = false,
-  completed = false,
-  expanded = false,
-  ...props
-}: StepLabelProps) => {
+export const StepLabel: React.FC<StepLabelProps> = (props: StepLabelProps) => {
   let StepIconComponent: React.ReactElement;
   if (props.StepIconComponent === undefined) {
-    StepIconComponent = <StepIcon active={active} completed={completed} icon={props.icon} {...props.StepIconProps} />;
+    StepIconComponent = (
+      <StepIcon
+        active={props.active}
+        completed={props.completed}
+        disabled={props.disabled}
+        icon={props.icon}
+        {...props.StepIconProps}
+      />
+    );
   } else {
     StepIconComponent = props.StepIconComponent;
     StepIconComponent.props = { ...StepIconComponent.props, ...props.StepIconProps };
   }
 
   const classes = clsx('denhaag-timeline__step-label', {
-    'denhaag-timeline__step-label--active': active || expanded,
+    'denhaag-timeline__step-label--active': props.active || props.expanded,
+    'denhaag-timeline__step-label--disabled': props.disabled,
   });
 
   return (

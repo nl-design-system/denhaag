@@ -19,6 +19,7 @@ export default {
 
 const Template: Story<TimelineProps> = () => {
   const [activeStep, setActiveStep] = useState(0);
+  const [completed, setCompleted] = React.useState<{ [k: number]: boolean }>({});
   const steps = [
     {
       label: 'First Step in a Timeline!',
@@ -38,24 +39,44 @@ const Template: Story<TimelineProps> = () => {
   ];
 
   const prev = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep - 1);
+    setActiveStep((prevActiveStep) => {
+      const newCompleted = completed;
+      newCompleted[prevActiveStep - 1] = false;
+      setCompleted(newCompleted);
+
+      if (steps[prevActiveStep - 1].disabled) {
+        return prevActiveStep - 2;
+      }
+      return prevActiveStep - 1;
+    });
   };
 
   const next = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
+    setActiveStep((prevActiveStep) => {
+      const newCompleted = completed;
+      newCompleted[prevActiveStep] = true;
+      setCompleted(newCompleted);
+
+      if (steps[prevActiveStep + 1].disabled) {
+        return prevActiveStep + 2;
+      }
+      return prevActiveStep + 1;
+    });
   };
+
+  console.log(activeStep);
 
   return (
     <React.Fragment>
       <Timeline activeStep={activeStep}>
-        {steps.map(({ label, ...props }) => (
-          <Step key={label} label={label} {...props} />
+        {steps.map(({ label, ...props }, index) => (
+          <Step key={label} label={label} {...props} completed={completed[index]} />
         ))}
       </Timeline>
       <Button onClick={prev} disabled={activeStep === 0} variant="secondary-action">
         Prev
       </Button>
-      <Button onClick={next} disabled={activeStep === steps.length} variant="primary-action">
+      <Button onClick={next} disabled={activeStep === steps.length - 1} variant="primary-action">
         Next
       </Button>
     </React.Fragment>

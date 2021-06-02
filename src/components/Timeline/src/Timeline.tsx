@@ -18,7 +18,13 @@ export interface TimelineProps extends BaseProps {
  */
 export const Stepper: React.FC<TimelineProps> = (props: TimelineProps) => {
   return (
-    <MaterialStepper orientation="vertical" connector={<React.Fragment />} classes={timelineClasses} {...props}>
+    <MaterialStepper
+      nonLinear
+      orientation="vertical"
+      connector={<React.Fragment />}
+      classes={timelineClasses}
+      {...props}
+    >
       {props.children}
     </MaterialStepper>
   );
