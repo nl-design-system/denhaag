@@ -17,7 +17,7 @@ export interface StepIconProps extends TimelineComponent {
  * @param props The properties of a StepIcon component.
  * @constructor Constructs an instance of StepIcon.
  */
-export const StepIcon: React.FC<StepIconProps> = ({ active = false, completed = false, icon }: StepIconProps) => {
+export const StepIcon: React.FC<StepIconProps> = ({ active = false, completed = false, ...props }: StepIconProps) => {
   let color: SvgIconProps['color'];
   if (active) {
     color = 'primary';
@@ -54,7 +54,7 @@ export const StepIcon: React.FC<StepIconProps> = ({ active = false, completed = 
       <SvgIcon viewBox="0 0 20 20" classes={stepIconClasses} color={color}>
         <circle {...circleProps} />
         <text x="10" y="14" textAnchor="middle" className={textClasses}>
-          {icon}
+          {props.icon}
         </text>
       </SvgIcon>
     </StylesProvider>

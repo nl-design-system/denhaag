@@ -23,16 +23,9 @@ export interface StepProps extends TimelineComponent {
  * @param props The properties of a Step component.
  * @constructor Constructs an instance of Step.
  */
-export const Step: React.FC<StepProps> = ({
-  active = false,
-  completed,
-  description,
-  label,
-  tabIndex = 0,
-  ...props
-}: StepProps) => {
+export const Step: React.FC<StepProps> = ({ active = false, completed = false, tabIndex = 0, ...props }: StepProps) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
-  const hasDescription = description !== undefined;
+  const hasDescription = props.description !== undefined;
 
   const toggle = () => {
     if (hasDescription && completed) {
@@ -55,7 +48,7 @@ export const Step: React.FC<StepProps> = ({
 
   let descriptionElement: string | React.ReactElement = '';
   if (hasDescription) {
-    descriptionElement = <StepContent>{description}</StepContent>;
+    descriptionElement = <StepContent>{props.description}</StepContent>;
   }
 
   let iconElement: string | React.ReactElement = '';
@@ -79,7 +72,7 @@ export const Step: React.FC<StepProps> = ({
       {...props}
     >
       <StepLabel>
-        {label}
+        {props.label}
         {iconElement}
       </StepLabel>
       {descriptionElement}
