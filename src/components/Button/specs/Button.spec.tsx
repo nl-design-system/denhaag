@@ -62,10 +62,6 @@ describe('Button tests', () => {
     mount(<Button>Test button</Button>);
     cy.injectAxe();
     cy.checkA11y('button', null, terminalLog);
-    cy.get('button').focus();
-    cy.checkA11y('button', null, terminalLog);
-    cy.get('button').click();
-    cy.checkA11y('button', null, terminalLog);
   });
 
   it('matches snapshots', () => {
