@@ -58,6 +58,26 @@ describe('Button tests', () => {
       .then(() => expect(spy).to.not.have.been.called);
   });
 
+  it('can be operated with keyboard', () => {
+    const props: ButtonProps = {
+      onClick: () => {
+        console.log('Clicked');
+      },
+    };
+
+    const spy = cy.spy(props, 'onClick').as('Button click');
+
+    mount(
+      <Button onClick={props.onClick} tabIndex={-1}>
+        Test button
+      </Button>,
+    );
+
+    cy.get('button')
+      .type('{enter}')
+      .then(() => expect(spy).to.have.been.calledOnce);
+  });
+
   it('does not violate any accessibility rules', () => {
     mount(<Button>Test button</Button>);
     cy.injectAxe();
