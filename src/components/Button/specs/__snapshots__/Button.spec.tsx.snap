@@ -1,9 +1,75 @@
-exports[`Button tests > matches snapshot #0`] = `
-<button
-  class="MuiButtonBase-root MuiButton-root denhaag-button MuiButton-contained denhaag-button--primary-action denhaag-button--medium"
-  tabindex="0"
-  type="button"
->
-  <span class="MuiButton-label denhaag-button__label">Test button</span>
-</button>
+exports[`Button tests > matches snapshots #0`] = `
+<div id="wrapper">
+  <button
+    class="MuiButtonBase-root MuiButton-root denhaag-button MuiButton-contained denhaag-button--primary-action denhaag-button--medium"
+    tabindex="0"
+    type="button"
+  >
+    <span class="MuiButton-label denhaag-button__label"
+      >Test button</span
+    ></button
+  ><button
+    class="MuiButtonBase-root MuiButton-root denhaag-button MuiButton-contained denhaag-button--primary-action denhaag-button--medium"
+    tabindex="0"
+    type="button"
+  >
+    <span class="MuiButton-label denhaag-button__label"
+      >Primary button</span
+    ></button
+  ><button
+    class="MuiButtonBase-root MuiButton-root denhaag-button MuiButton-outlined denhaag-button--secondary-action denhaag-button--medium"
+    tabindex="0"
+    type="button"
+  >
+    <span class="MuiButton-label denhaag-button__label"
+      >Secondary button</span
+    ></button
+  ><button
+    class="MuiButtonBase-root MuiButton-root denhaag-button MuiButton-contained denhaag-button--primary-action denhaag-button--medium"
+    tabindex="0"
+    type="button"
+  >
+    <span class="MuiButton-label denhaag-button__label"
+      ><span
+        class="MuiButton-startIcon denhaag-button__start-icon MuiButton-iconSizeMedium denhaag-button__icon-size-medium"
+        ><svg width="24" height="24" viewBox="0 0 24 24">
+          <path d="M0 0 24 24Z" fill="currentColor"></path></svg></span
+      >Icon Left Button</span
+    ></button
+  ><button
+    class="MuiButtonBase-root MuiButton-root denhaag-button MuiButton-outlined denhaag-button--secondary-action denhaag-button--medium"
+    tabindex="0"
+    type="button"
+  >
+    <span class="MuiButton-label denhaag-button__label"
+      >Icon Right Button<span
+        class="MuiButton-endIcon denhaag-button__end-icon MuiButton-iconSizeMedium denhaag-button__icon-size-medium"
+        ><svg width="24" height="24" viewBox="0 0 24 24">
+          <path d="M0 0 24 24Z" fill="currentColor"></path></svg></span
+    ></span></button
+  ><button
+    class="MuiButtonBase-root MuiButton-root denhaag-button MuiButton-contained denhaag-button--primary-action denhaag-button--medium"
+    tabindex="0"
+    type="button"
+  >
+    <span class="MuiButton-label denhaag-button__label"
+      >Medium button</span
+    ></button
+  ><button
+    class="MuiButtonBase-root MuiButton-root denhaag-button MuiButton-contained denhaag-button--primary-action denhaag-button--large"
+    tabindex="0"
+    type="button"
+  >
+    <span class="MuiButton-label denhaag-button__label"
+      >Large button</span
+    ></button
+  ><button
+    class="MuiButtonBase-root MuiButton-root denhaag-button MuiButton-contained denhaag-button--primary-action denhaag-button--medium Mui-disabled denhaag-button--disabled Mui-disabled"
+    tabindex="-1"
+    type="button"
+    disabled=""
+  >
+    <span class="MuiButton-label denhaag-button__label">Disabled button</span>
+  </button>
+</div>
 `;

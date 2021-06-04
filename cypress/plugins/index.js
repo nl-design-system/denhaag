@@ -26,7 +26,6 @@ module.exports = (on, config) => {
   const { initPlugin } = require('cypress-plugin-snapshots/plugin');
   initPlugin(on, config);
 
-
   on('task', {
     log(message) {
       console.log(message);
