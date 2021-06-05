@@ -42,6 +42,7 @@ export const StepLabel: React.FC<StepLabelProps> = ({
 
   const classes = clsx('denhaag-timeline__step-label', {
     'denhaag-timeline__step-label--active': active || expanded,
+    'denhaag-timeline__step-label--completed': completed,
   });
 
   return (

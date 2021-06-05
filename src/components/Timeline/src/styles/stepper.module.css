@@ -9,11 +9,6 @@
   padding-block-end: 12px;
 }
 
-.denhaag-timeline__step--completed:hover {
-  cursor: pointer;
-  color: var(--denhaag-blue-3);
-}
-
 .denhaag-timeline__step:focus,
 .denhaag-timeline__step:focus-visible {
   outline: var(--denhaag-focus-border);
@@ -82,6 +77,11 @@
 .denhaag-timeline__step-label--active {
   font-weight: 700;
   color: var(--denhaag-blue-3);
+}
+
+.denhaag-timeline__step-label--completed:not(:only-child):hover {
+  color: var(--denhaag-blue-3);
+  cursor: pointer;
 }
 
 .denhaag-timeline__step-label--disabled {
