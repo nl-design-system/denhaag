@@ -40,27 +40,31 @@ const Template: Story<TimelineProps> = () => {
 
   const prev = () => {
     setActiveStep((prevActiveStep) => {
+      let nextActiveStep = prevActiveStep - 1;
+      if (steps[nextActiveStep].disabled) {
+        nextActiveStep -= 1;
+      }
+
       const newCompleted = completed;
-      newCompleted[prevActiveStep - 1] = false;
+      newCompleted[nextActiveStep] = false;
       setCompleted(newCompleted);
 
-      if (steps[prevActiveStep - 1].disabled) {
-        return prevActiveStep - 2;
-      }
-      return prevActiveStep - 1;
+      return nextActiveStep;
     });
   };
 
   const next = () => {
     setActiveStep((prevActiveStep) => {
+      let nextActiveStep = prevActiveStep + 1;
+      if (steps[nextActiveStep].disabled) {
+        nextActiveStep += 1;
+      }
+
       const newCompleted = completed;
       newCompleted[prevActiveStep] = true;
       setCompleted(newCompleted);
 
-      if (steps[prevActiveStep + 1].disabled) {
-        return prevActiveStep + 2;
-      }
-      return prevActiveStep + 1;
+      return nextActiveStep;
     });
   };
 
