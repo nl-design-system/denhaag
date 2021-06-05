@@ -1,6 +1,5 @@
 import Timeline from './Timeline';
 
-// styles
 import './styles/mui-override.css';
 import './styles/step-content.css';
 import './styles/step-icon.css';

@@ -1,6 +1,5 @@
 import React from 'react';
-import { StylesProvider } from '@material-ui/core';
-import MaterialIconButton from '@material-ui/core/IconButton';
+import { IconButton as MaterialIconButton, StylesProvider } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import './mui-override.css';
 

@@ -3,12 +3,11 @@
   "compilerOptions": {
     "rootDir": "src",
     "outDir": "dist",
-    "tsBuildInfoFile": "tsconfig.tsbuildinfo",
-    "composite": true,
-    "typeRoots": ["./src/@types"]
+    "typeRoots": ["./src/@types"],
+    "composite": true
   },
   "include": ["src/**/*"],
-  "exclude": ["dist", "src/*.stories.tsx"],
+  "exclude": ["dist", "src/**/*.stories.tsx"],
   "references": [
     {
       "path": "../BaseProps"

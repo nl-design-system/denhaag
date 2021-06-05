@@ -1,5 +1,5 @@
 import React from 'react';
-import MaterialGridListTile from '@material-ui/core/GridListTile';
+import { GridListTile as MaterialGridListTile } from '@material-ui/core';
 import BaseLayoutProps from '@gemeente-denhaag/baselayoutprops';
 
 export interface GridListTileProps extends BaseLayoutProps {

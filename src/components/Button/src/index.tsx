@@ -1,7 +1,7 @@
-import MaterialButton, { ButtonTypeMap } from '@material-ui/core/Button';
 import React from 'react';
+import { Button as MaterialButton, ButtonTypeMap, StylesProvider } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
-import { StylesProvider } from '@material-ui/core';
+
 import { classes } from './bem-mapping';
 import './mui-override.css';
 import './button.css';
