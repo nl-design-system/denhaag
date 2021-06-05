@@ -1,10 +1,10 @@
-.denhaag-list__itemtextprimary {
+.denhaag-list__item-text-primary {
   color: var(--denhaag-list-item-text-primary-color);
   font-family: var(--denhaag-list-font-family);
   font-weight: var(--denhaag-list-item-text-primary-weight);
 }
 
-.denhaag-list__itemtextsecondary {
+.denhaag-list__item-text-secondary {
   color: var(--denhaag-list-item-text-secondary-color);
   font-family: var(--denhaag-list-font-family);
   font-weight: var(--denhaag-list-item-text-secondary-weight);

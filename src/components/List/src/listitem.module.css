@@ -17,50 +17,50 @@
   padding-inline: calc(var(--denhaag-list-item-padding-inline) - var(--denhaag-list-item-border-size));
 }
 
-.denhaag-list__item:active > .denhaag-list__secondaryaction {
+.denhaag-list__item:active > .denhaag-list__secondary-action {
   right: calc(var(--denhaag-list-item-secondary-action-right) - var(--denhaag-list-item-border-size));
 }
 
-.denhaag-list__item:focus > .denhaag-list__secondaryaction {
+.denhaag-list__item:focus > .denhaag-list__secondary-action {
   right: calc(var(--denhaag-list-item-secondary-action-right) - var(--denhaag-list-item-border-size));
   color: var(--denhaag-list-item-secondary-action-focus-color);
 }
 
-.denhaag-list__item:focus .denhaag-list__itemtextprimary {
+.denhaag-list__item:focus .denhaag-list__item-text-primary {
   color: var(--denhaag-list-item-text-primary-focus-color);
 }
 
-.denhaag-list__item:focus .denhaag-list__itemicon {
+.denhaag-list__item:focus .denhaag-list__item-icon {
   color: var(--denhaag-list-item-icon-focus-color);
 }
 
-.denhaag-list__item:hover > .denhaag-list__secondaryaction {
+.denhaag-list__item:hover > .denhaag-list__secondary-action {
   color: var(--denhaag-list-item-secondary-action-focus-color);
 }
 
-.denhaag-list__item:hover .denhaag-list__itemtextprimary {
+.denhaag-list__item:hover .denhaag-list__item-text-primary {
   color: var(--denhaag-list-item-text-primary-hover-color);
 }
 
-.denhaag-list__item:hover .denhaag-list__itemicon {
+.denhaag-list__item:hover .denhaag-list__item-icon {
   color: var(--denhaag-list-item-icon-hover-color);
 }
 
-.denhaag-list__item[secondarytext] .denhaag-list__itemtextprimary {
+.denhaag-list__item[secondarytext] .denhaag-list__item-text-primary {
   line-height: var(--denhaag-list-item-text-multiline-primary-line-height);
 }
 
-.denhaag-list__item[actiontype="action"]:hover .denhaag-list__itemtextprimary {
+.denhaag-list__item[actiontype="action"]:hover .denhaag-list__item-text-primary {
   color: var(--denhaag-list-item-text-primary-color);
 }
-.denhaag-list__item[actiontype="action"]:focus .denhaag-list__itemtextprimary {
+.denhaag-list__item[actiontype="action"]:focus .denhaag-list__item-text-primary {
   color: var(--denhaag-list-item-text-primary-color);
 }
 
-.denhaag-list__item[actiontype="action"]:hover .denhaag-list__itemicon {
+.denhaag-list__item[actiontype="action"]:hover .denhaag-list__item-icon {
   color: var(--denhaag-list-item-icon-color);
 }
-.denhaag-list__item[actiontype="action"]:focus .denhaag-list__itemicon {
+.denhaag-list__item[actiontype="action"]:focus .denhaag-list__item-icon {
   color: var(--denhaag-list-item-icon-color);
 }
 

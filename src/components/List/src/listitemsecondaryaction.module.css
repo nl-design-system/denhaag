@@ -1,14 +1,14 @@
-.denhaag-list__secondaryaction {
+.denhaag-list__secondary-action {
   right: var(--denhaag-list-item-secondary-action-right);
   color: var(--denhaag-list-item-secondary-action-color);
 }
 
-.denhaag-list__secondaryaction button {
+.denhaag-list__secondary-action button {
   padding-inline: var(--denhaag-list-item-secondary-action-padding);
   padding-block: var(--denhaag-list-item-secondary-action-padding);
 }
 
-.denhaag-list__secondaryaction button:focus {
+.denhaag-list__secondary-action button:focus {
   border-color: var(--denhaag-list-item-focus-border-color);
   border-style: var(--denhaag-list-item-focus-border-style);
   border-width: var(--denhaag-list-item-border-size);

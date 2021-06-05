@@ -4,7 +4,7 @@
   transition: none;
 }
 
-.denhaag-list__itemicon {
+.denhaag-list__item-icon {
   min-width: 48px;
 }
 
@@ -27,7 +27,7 @@
   background-color: white;
 }
 
-.denhaag-list__item.denhaag-list__itemfocused {
+.denhaag-list__item.denhaag-list__item--focus {
   background-color: white;
 }
 
@@ -35,19 +35,19 @@
   cursor: default;
 }
 
-.denhaag-list__itemtext {
+.denhaag-list__item-text {
   margin-block: 0 0;
 }
 
-.denhaag-list__secondaryaction {
+.denhaag-list__secondary-action {
   width: 32px;
   height: 32px;
 }
 
-.denhaag-list__secondaryaction button {
+.denhaag-list__secondary-action button {
   border-radius: 0%;
 }
 
-.denhaag-list__secondaryaction button:hover {
+.denhaag-list__secondary-action button:hover {
   background-color: white;
 }

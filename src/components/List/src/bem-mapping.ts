@@ -3,7 +3,7 @@ export const list_classes = {
 };
 
 export const listitemicon_classes = {
-  root: 'denhaag-list__itemicon',
+  root: 'denhaag-list__item-icon',
 };
 
 export const listsubheader_classes = {
@@ -12,21 +12,21 @@ export const listsubheader_classes = {
 
 export const listitem_classes = {
   root: 'denhaag-list__item',
-  focusVisible: 'denhaag-list__itemfocused',
+  focusVisible: 'denhaag-list__item--focus',
 };
 
 export const listitemtext_classes = {
-  root: 'denhaag-list__itemtext',
+  root: 'denhaag-list__item-text',
 };
 
 export const listitemsecondaryaction_classes = {
-  root: 'denhaag-list__secondaryaction',
+  root: 'denhaag-list__secondary-action',
 };
 
 export const listitemtextprimary_classes = {
-  root: 'denhaag-list__itemtextprimary',
+  root: 'denhaag-list__item-text-primary',
 };
 
 export const listitemtextsecondary_classes = {
-  root: 'denhaag-list__itemtextsecondary',
+  root: 'denhaag-list__item-text-secondary',
 };

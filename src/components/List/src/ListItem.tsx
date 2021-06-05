@@ -54,6 +54,8 @@ export const ListItem: React.FC<ListItemProps> = (props: ListItemProps) => {
   const muiProps = {
     autoFocus: props.autoFocus,
     actiontype: props.actionType,
+    secondarytext: props.secondaryText,
+    primarytext: props.primaryText,
   };
 
   const children = [];
