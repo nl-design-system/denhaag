@@ -7,3 +7,9 @@
 .denhaag-timeline__step:focus-visible {
   outline: var(--denhaag-focus-border);
 }
+
+.denhaag-timeline__step__collapse-icon {
+  padding-inline-start: 4px;
+  height: 16px;
+  width: 16px;
+}

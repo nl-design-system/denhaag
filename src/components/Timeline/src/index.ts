@@ -4,12 +4,12 @@ import Timeline from './Timeline';
 import '@gemeente-denhaag/design-tokens-common';
 import '@gemeente-denhaag/design-tokens-proprietary';
 
-import './styles/mui-override.module.css';
-import './styles/step-content.module.css';
-import './styles/step-icon.module.css';
-import './styles/step-label.module.css';
-import './styles/step.module.css';
-import './styles/timeline.module.css';
+import './styles/mui-override.css';
+import './styles/step-content.css';
+import './styles/step-icon.css';
+import './styles/step-label.css';
+import './styles/step.css';
+import './styles/timeline.css';
 
 export default Timeline;
 export * from './Step';

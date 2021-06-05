@@ -13,10 +13,10 @@ export interface TimelineProps extends BaseProps {
 
 /**
  * A Stepper conveys progress through numbered steps.
- * @param props The properties of a Stepper component.
- * @constructor Constructs an instance of Stepper.
+ * @param props The properties of a Timeline component.
+ * @constructor Constructs an instance of Timeline.
  */
-export const Stepper: React.FC<TimelineProps> = (props: TimelineProps) => {
+export const Timeline: React.FC<TimelineProps> = (props: TimelineProps) => {
   return (
     <MaterialStepper orientation="vertical" connector={<React.Fragment />} classes={timelineClasses} {...props}>
       {props.children}
@@ -24,4 +24,4 @@ export const Stepper: React.FC<TimelineProps> = (props: TimelineProps) => {
   );
 };
 
-export default Stepper;
+export default Timeline;

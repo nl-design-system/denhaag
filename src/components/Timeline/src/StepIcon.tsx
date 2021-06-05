@@ -27,7 +27,6 @@ export const StepIcon: React.FC<StepIconProps> = ({ active = false, completed = 
 
   const textClasses = clsx('denhaag-timeline__step-icon__text', {
     'denhaag-timeline__step-icon__text--active': active,
-    // 'denhaag-timeline__step-icon__text--inactive': inactive,
     'denhaag-timeline__step-icon__text--completed': completed,
   });
 

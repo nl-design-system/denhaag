@@ -1,3 +1,11 @@
+/**
+ * This file overrides the default Material UI styling by mapping their style
+ * _'keys'_ to ours using the `classes` attribute.
+ *
+ * Some components also use a `className` attribute. This is defined in the
+ * component's typescript file.
+ */
+
 export const timelineClasses = {
   root: 'denhaag-timeline',
 };
@@ -14,8 +22,8 @@ export const stepIconClasses = {
   colorDisabled: 'denhaag-timeline__step-icon--inactive',
 };
 
-export const stepLabelIconClasses = {
-  root: 'denhaag-timeline__step-label__collapse-icon',
+export const stepCollapseIconClasses = {
+  root: 'denhaag-timeline__step__collapse-icon',
 };
 
 export const stepLabelClasses = {

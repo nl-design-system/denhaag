@@ -34,9 +34,3 @@
 .denhaag-timeline__step-label--disabled {
   color: var(--denhaag-grey-2);
 }
-
-.denhaag-timeline__step-label__collapse-icon {
-  padding-inline-start: 4px;
-  height: 16px;
-  width: 16px;
-}
