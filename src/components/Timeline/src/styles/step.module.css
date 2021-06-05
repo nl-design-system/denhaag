@@ -1,0 +1,9 @@
+.denhaag-timeline__step {
+  padding-block-start: 12px;
+  padding-block-end: 12px;
+}
+
+.denhaag-timeline__step:focus,
+.denhaag-timeline__step:focus-visible {
+  outline: var(--denhaag-focus-border);
+}
