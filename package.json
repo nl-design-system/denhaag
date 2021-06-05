@@ -10,7 +10,12 @@
   },
   "license": "EUPL-1.2",
   "author": "Municipality of The Hague",
-  "workspaces": ["src/components/*", "src/meta-packages/*", "src/styles/*", "src/"],
+  "workspaces": [
+    "src/components/*",
+    "src/meta-packages/*",
+    "src/styles/*",
+    "src/"
+  ],
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
