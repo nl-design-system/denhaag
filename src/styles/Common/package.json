@@ -16,8 +16,11 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "scripts": {
-    "build": "tsc -b && copyfiles -u 1 \"src/**/*.css\" dist",
-    "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+    "build": "yarn npm-run-all 'build:*'",
+    "build:css": "tsc -b && copyfiles -u 1 \"src/**/*.css\" dist",
+    "build:style-dictionary": "yarn style-dictionary build --config ../../../style-dictionary.config.json",
+    "clean": "yarn rimraf dist tsconfig.tsbuildinfo",
+    "watch:style-dictionary": "yarn chokidar --follow-symlinks --initial --command 'yarn build:style-dictionary' 'src/**/*.json'"
   }
 }
 
