@@ -2,37 +2,37 @@
   --denhaag-list-font-family: var(--denhaag-font-family);
 
   /* ListItem */
-  --denhaag-listitem-padding-inline: 16px;
-  --denhaag-listitem-padding-block: 12px;
-  --denhaag-listitem-border-size: 2px;
-  --denhaag-listitem-focus-border-color: var(--denhaag-ocher-4);
-  --denhaag-listitem-focus-border-width: var(--denhaag-focus-border-width);
-  --denhaag-listitem-focus-border-style: var(--denhaag-focus-border-style);
-  --denhaag-listitem-padding-block-secondary: 8px;
-  --denhaag-listitem-active-border-color: var(--denhaag-blue-3);
+  --denhaag-list-item-padding-inline: 16px;
+  --denhaag-list-item-padding-block: 12px;
+  --denhaag-list-item-border-size: 2px;
+  --denhaag-list-item-focus-border-color: var(--denhaag-ocher-4);
+  --denhaag-list-item-focus-border-width: var(--denhaag-focus-border-width);
+  --denhaag-list-item-focus-border-style: var(--denhaag-focus-border-style);
+  --denhaag-list-item-padding-block-secondary: 8px;
+  --denhaag-list-item-active-border-color: var(--denhaag-blue-3);
 
   /* ListItemIcon */
-  --denhaag-listitem-icon-color: var(--denhaag-grey-4);
-  --denhaag-listitem-icon-focus-color: var(--denhaag-blue-3);
-  --denhaag-listitem-icon-hover-color: var(--denhaag-blue-3);
+  --denhaag-list-item-icon-color: var(--denhaag-grey-4);
+  --denhaag-list-item-icon-focus-color: var(--denhaag-blue-3);
+  --denhaag-list-item-icon-hover-color: var(--denhaag-blue-3);
 
   /* ListItemSecondaryAction */
-  --denhaag-listitem-secondaryaction-focus-color: var(--denhaag-blue-3);
-  --denhaag-listitem-secondaryaction-color: var(--denhaag-grey-4);
-  --denhaag-listitem-secondaryaction-right: 16px;
-  --denhaag-listitem-secondaryaction-padding: 4px;
+  --denhaag-list-item-secondary-action-focus-color: var(--denhaag-blue-3);
+  --denhaag-list-item-secondary-action-color: var(--denhaag-grey-4);
+  --denhaag-list-item-secondary-action-right: 16px;
+  --denhaag-list-item-secondary-action-padding: 4px;
 
   /* ListItemText */
-  --denhaag-listitemtext-primarytext-focus-color: var(--denhaag-blue-3);
-  --denhaag-listitemtext-primarytext-hover-color: var(--denhaag-blue-3);
-  --denhaag-listitemtext-primary-color: var(--denhaag-grey-4);
-  --denhaag-listitemtext-primary-weight: 400;
-  --denhaag-listitemtext-secondary-color: var(--denhaag-grey-4);
-  --denhaag-listitemtext-secondary-weight: 400;
-  --denhaag-listitemtext-secondary-font-size: var(--denhaag-font-size-s);
-  --denhaag-listitemtext-secondary-primarytext-line-height: 32px;
-  --denhaag-listitemtext-secondary-secondarytext-bottom-padding: 8px;
-  --denhaag-listitemtext-secondary-secondarytext-line-height: 16px;
+  --denhaag-list-item-text-primary-focus-color: var(--denhaag-blue-3);
+  --denhaag-list-item-text-primary-hover-color: var(--denhaag-blue-3);
+  --denhaag-list-item-text-primary-color: var(--denhaag-grey-4);
+  --denhaag-list-item-text-primary-weight: 400;
+  --denhaag-list-item-text-multiline-primary-line-height: 32px;
+  --denhaag-list-item-text-secondary-color: var(--denhaag-grey-4);
+  --denhaag-list-item-text-secondary-weight: 400;
+  --denhaag-list-item-text-secondary-font-size: var(--denhaag-font-size-s);
+  --denhaag-list-item-text-secondary-bottom-padding: 8px;
+  --denhaag-list-item-text-secondary-line-height: 16px;
 
   /* ListSubheader */
   --denhaag-list-subheader-font-weight: 700;

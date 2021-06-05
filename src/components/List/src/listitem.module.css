@@ -1,78 +1,77 @@
 .denhaag-list__item {
-  padding-block: var(--denhaag-listitem-padding-block);
-  padding-inline: var(--denhaag-listitem-padding-inline);
+  padding-block: var(--denhaag-list-item-padding-block);
+  padding-inline: var(--denhaag-list-item-padding-inline);
 }
 
 .denhaag-list__item:focus {
-  border-color: var(--denhaag-listitem-focus-border-color);
-  border-style: var(--denhaag-listitem-focus-border-style);
-  border-width: var(--denhaag-listitem-border-size);
-  padding-block: calc(var(--denhaag-listitem-padding-block) - var(--denhaag-listitem-border-size));
-  padding-inline: calc(var(--denhaag-listitem-padding-inline) - var(--denhaag-listitem-border-size));
+  border-color: var(--denhaag-list-item-focus-border-color);
+  border-style: var(--denhaag-list-item-focus-border-style);
+  border-width: var(--denhaag-list-item-border-size);
+  padding-block: calc(var(--denhaag-list-item-padding-block) - var(--denhaag-list-item-border-size));
+  padding-inline: calc(var(--denhaag-list-item-padding-inline) - var(--denhaag-list-item-border-size));
 }
 
 .denhaag-list__item:active {
-  border: var(--denhaag-listitem-border-size) solid var(--denhaag-listitem-active-border-color);
-  padding-block: calc(var(--denhaag-listitem-padding-block) - var(--denhaag-listitem-border-size));
-  padding-inline: calc(var(--denhaag-listitem-padding-inline) - var(--denhaag-listitem-border-size));
+  border: var(--denhaag-list-item-border-size) solid var(--denhaag-list-item-active-border-color);
+  padding-block: calc(var(--denhaag-list-item-padding-block) - var(--denhaag-list-item-border-size));
+  padding-inline: calc(var(--denhaag-list-item-padding-inline) - var(--denhaag-list-item-border-size));
 }
 
 .denhaag-list__item:active > .denhaag-list__secondaryaction {
-  right: calc(var(--denhaag-listitem-secondaryaction-right) - var(--denhaag-listitem-border-size));
+  right: calc(var(--denhaag-list-item-secondary-action-right) - var(--denhaag-list-item-border-size));
 }
 
 .denhaag-list__item:focus > .denhaag-list__secondaryaction {
-  right: calc(var(--denhaag-listitem-secondaryaction-right) - var(--denhaag-listitem-border-size));
-  color: var(--denhaag-listitem-secondaryaction-focus-color);
+  right: calc(var(--denhaag-list-item-secondary-action-right) - var(--denhaag-list-item-border-size));
+  color: var(--denhaag-list-item-secondary-action-focus-color);
 }
 
 .denhaag-list__item:focus .denhaag-list__itemtextprimary {
-  color: var(--denhaag-listitem-focus-color);
+  color: var(--denhaag-list-item-text-primary-focus-color);
 }
 
 .denhaag-list__item:focus .denhaag-list__itemicon {
-  color: var(--denhaag-listitem-icon-focus-color);
+  color: var(--denhaag-list-item-icon-focus-color);
 }
 
 .denhaag-list__item:hover > .denhaag-list__secondaryaction {
-  color: var(--denhaag-listitem-secondaryaction-focus-color);
+  color: var(--denhaag-list-item-secondary-action-focus-color);
 }
 
 .denhaag-list__item:hover .denhaag-list__itemtextprimary {
-  color: var(--denhaag-listitemtext-primarytext-hover-color);
+  color: var(--denhaag-list-item-text-primary-hover-color);
 }
 
 .denhaag-list__item:hover .denhaag-list__itemicon {
-  color: var(--denhaag-listitem-icon-hover-color);
+  color: var(--denhaag-list-item-icon-hover-color);
 }
 
 .denhaag-list__item[secondarytext] .denhaag-list__itemtextprimary {
-  line-height: var(--denhaag-listitemtext-secondary-primarytext-lineheight);
+  line-height: var(--denhaag-list-item-text-multiline-primary-line-height);
 }
 
 .denhaag-list__item[actiontype="action"]:hover .denhaag-list__itemtextprimary {
-  color: var(--denhaag-listitemtext-primary-color);
+  color: var(--denhaag-list-item-text-primary-color);
 }
 .denhaag-list__item[actiontype="action"]:focus .denhaag-list__itemtextprimary {
-  color: var(--denhaag-listitemtext-primary-color);
+  color: var(--denhaag-list-item-text-primary-color);
 }
 
 .denhaag-list__item[actiontype="action"]:hover .denhaag-list__itemicon {
-  color: var(--denhaag-listitem-icon-color);
+  color: var(--denhaag-list-item-icon-color);
 }
 .denhaag-list__item[actiontype="action"]:focus .denhaag-list__itemicon {
-  color: var(--denhaag-listitem-icon-color);
+  color: var(--denhaag-list-item-icon-color);
 }
 
 .denhaag-list__item[secondarytext] {
-  padding-block: var(--denhaag-listitem-padding-block-secondary);
+  padding-block: var(--denhaag-list-item-padding-block-secondary);
 }
 
 .denhaag-list__item[secondarytext]:active {
-  padding-block: calc(var(--denhaag-listitem-padding-block-secondary) - var(--denhaag-listitem-border-size));
+  padding-block: calc(var(--denhaag-list-item-padding-block-secondary) - var(--denhaag-list-item-border-size));
 }
 
 .denhaag-list__item[secondarytext]:focus {
-  padding-block: calc(var(--denhaag-listitem-padding-block-secondary) - var(--denhaag-listitem-border-size));
+  padding-block: calc(var(--denhaag-list-item-padding-block-secondary) - var(--denhaag-list-item-border-size));
 }
-

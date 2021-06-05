@@ -1,19 +1,19 @@
 .denhaag-list__secondaryaction {
-  right: var(--denhaag-listitem-secondaryaction-right);
-  color: var(--denhaag-listitem-secondaryaction-color);
+  right: var(--denhaag-list-item-secondary-action-right);
+  color: var(--denhaag-list-item-secondary-action-color);
 }
 
 .denhaag-list__secondaryaction button {
-  padding-inline: var(--denhaag-listitem-secondaryaction-padding);
-  padding-block: var(--denhaag-listitem-secondaryaction-padding);
+  padding-inline: var(--denhaag-list-item-secondary-action-padding);
+  padding-block: var(--denhaag-list-item-secondary-action-padding);
 }
 
 .denhaag-list__secondaryaction button:focus {
-  border-color: var(--denhaag-listitem-focus-border-color);
-  border-style: var(--denhaag-listitem-focus-border-style);
-  border-width: var(--denhaag-listitem-border-size);
+  border-color: var(--denhaag-list-item-focus-border-color);
+  border-style: var(--denhaag-list-item-focus-border-style);
+  border-width: var(--denhaag-list-item-border-size);
   box-sizing: border-box;
-  color: var(--denhaag-listitem-secondaryaction-focus-color);
-  padding-inline: calc(var(--denhaag-listitem-secondaryaction-padding) - var(--denhaag-focus-border-width));
-  padding-block: calc(var(--denhaag-listitem-secondaryaction-padding) - var(--denhaag-focus-border-width));
+  color: var(--denhaag-list-item-secondary-action-focus-color);
+  padding-inline: calc(var(--denhaag-list-item-secondary-action-padding) - var(--denhaag-focus-border-width));
+  padding-block: calc(var(--denhaag-list-item-secondary-action-padding) - var(--denhaag-focus-border-width));
 }
