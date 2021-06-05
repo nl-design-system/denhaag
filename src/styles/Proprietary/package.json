@@ -10,9 +10,7 @@
     "directory": "src/styles/Proprietary"
   },
   "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "main": "dist/index.js",
   "module": "dist/index.js",
   "scripts": {
@@ -20,4 +18,3 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   }
 }
-

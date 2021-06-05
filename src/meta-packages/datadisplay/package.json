@@ -12,9 +12,7 @@
   "author": "Municipality of The Hague",
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
     "build": "tsc -b",
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"

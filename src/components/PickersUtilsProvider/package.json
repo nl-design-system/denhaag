@@ -1,30 +1,28 @@
 {
-    "name": "@gemeente-denhaag/pickersutilsprovider",
-    "version": "0.1.10",
-    "description": "A Utilsprovider for pickers",
-    "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
-        "directory": "src/components/PickersUtilsProvider"
-    },
-    "license": "EUPL-1.2",
-    "author": "Municipality of The Hague",
-    "exports": "./dist/index.js",
-    "main": "dist/index.js",
-    "module": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "files": [
-        "dist"
-    ],
-    "scripts": {
-        "build": "tsc -b",
-        "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
-    },
-    "dependencies": {
-        "@material-ui/pickers": "^3.2.10"
-    },
-    "peerDependencies": {
-        "react": "^17.0.1"
-    }
+  "name": "@gemeente-denhaag/pickersutilsprovider",
+  "version": "0.1.10",
+  "description": "A Utilsprovider for pickers",
+  "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
+    "directory": "src/components/PickersUtilsProvider"
+  },
+  "license": "EUPL-1.2",
+  "author": "Municipality of The Hague",
+  "exports": "./dist/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+  },
+  "dependencies": {
+    "@material-ui/pickers": "^3.2.10"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1"
+  }
 }
