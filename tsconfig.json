@@ -1,90 +1,8 @@
 {
   "extends": "./tsconfig.build.json",
   "compilerOptions": {
-    "jsx": "react",
-    "baseUrl": "./src",
-    "paths": {
-      "@gemeente-denhaag/accordion": ["Accordion/src/*"],
-      "@gemeente-denhaag/accordionactions": ["AccordionActions/src/*"],
-      "@gemeente-denhaag/accordiondetails": ["AccordionDetails/src/*"],
-      "@gemeente-denhaag/accordionsummary": ["AccordionSummary/src/*"],
-      "@gemeente-denhaag/appbar": ["AppBar/src/*"],
-      "@gemeente-denhaag/avatar": ["Avatar/src/*"],
-      "@gemeente-denhaag/avatargroup": ["AvatarGroup/src/*"],
-      "@gemeente-denhaag/badge": ["Badge/src/*"],
-      "@gemeente-denhaag/basedatadisplayprops": ["BaseDataDisplayProps/src/*"],
-      "@gemeente-denhaag/baselayoutprops": ["BaseLayoutProps/src/*"],
-      "@gemeente-denhaag/baseprops": ["BaseProps/src/*"],
-      "@gemeente-denhaag/box": ["Box/src/*"],
-      "@gemeente-denhaag/button": ["Button/src/*"],
-      "@gemeente-denhaag/card": ["Card/src/*"],
-      "@gemeente-denhaag/cardactions": ["CardActions/src/*"],
-      "@gemeente-denhaag/cardcontent": ["CardContent/src/*"],
-      "@gemeente-denhaag/cardheader": ["CardHeader/src/*"],
-      "@gemeente-denhaag/checkbox": ["Checkbox/src/*"],
-      "@gemeente-denhaag/container": ["Container/src/*"],
-      "@gemeente-denhaag/design-tokens-proprietary": ["Proprietary/src/*"],
-      "@gemeente-denhaag/design-tokens-common": ["Common/src/*"],
-      "@gemeente-denhaag/design-tokens-components": ["Components/src/*"],
-      "@gemeente-denhaag/divider": ["Divider/src/*"],
-      "@gemeente-denhaag/drawer": ["Drawer/src/*"],
-      "@gemeente-denhaag/formcontrol": ["FormControl/src/*"],
-      "@gemeente-denhaag/formcontrollabel": ["FormControlLabel/src/*"],
-      "@gemeente-denhaag/formgroup": ["FormGroup/src/*"],
-      "@gemeente-denhaag/grid": ["Grid/src/*"],
-      "@gemeente-denhaag/gridlist": ["GridList/src/*"],
-      "@gemeente-denhaag/gridlisttile": ["GridListTile/src/*"],
-      "@gemeente-denhaag/gridlisttilebar": ["GridListTileBar/src/*"],
-      "@gemeente-denhaag/hidden": ["Hidden/src/*"],
-      "@gemeente-denhaag/iconbutton": ["IconButton/src/*"],
-      "@gemeente-denhaag/inputlabel": ["InputLabel/src/*"],
-      "@gemeente-denhaag/link": ["Link/src/*"],
-      "@gemeente-denhaag/list": ["List/src/*"],
-      "@gemeente-denhaag/listitem": ["ListItem/src/*"],
-      "@gemeente-denhaag/listitemavatar": ["ListItemAvatar/src/*"],
-      "@gemeente-denhaag/listitemicon": ["ListItemIcon/src/*"],
-      "@gemeente-denhaag/listitemsecondaryaction": ["ListItemSecondaryAction/src/*"],
-      "@gemeente-denhaag/listitemtext": ["ListItemText/src/*"],
-      "@gemeente-denhaag/listsubheader": ["ListSubheader/src/*"],
-      "@gemeente-denhaag/menu": ["Menu/src/*"],
-      "@gemeente-denhaag/menuitem": ["MenuItem/src/*"],
-      "@gemeente-denhaag/menulist": ["MenuList/src/*"],
-      "@gemeente-denhaag/mobilestepper": ["MobileStepper/src/*"],
-      "@gemeente-denhaag/paper": ["Paper/src/*"],
-      "@gemeente-denhaag/pickers": ["Pickers/src/*"],
-      "@gemeente-denhaag/pickersutilsprovider": ["PickersUtilsProvider/src/*"],
-      "@gemeente-denhaag/popover": ["Popover/src/*"],
-      "@gemeente-denhaag/popper": ["Popper/src/*"],
-      "@gemeente-denhaag/radio": ["Radio/src/*"],
-      "@gemeente-denhaag/radiogroup": ["RadioGroup/src/*"],
-      "@gemeente-denhaag/select": ["Select/src/*"],
-      "@gemeente-denhaag/step": ["Step/src/*"],
-      "@gemeente-denhaag/stepbutton": ["StepButton/src/*"],
-      "@gemeente-denhaag/stepconnector": ["StepConnector/src/*"],
-      "@gemeente-denhaag/stepcontent": ["StepContent/src/*"],
-      "@gemeente-denhaag/stepicon": ["StepIcon/src/*"],
-      "@gemeente-denhaag/steplabel": ["StepLabel/src/*"],
-      "@gemeente-denhaag/stepper": ["Stepper/src/*"],
-      "@gemeente-denhaag/swipeabledrawer": ["SwipeableDrawer/src/*"],
-      "@gemeente-denhaag/switch": ["Switch/src/*"],
-      "@gemeente-denhaag/tab": ["Tab/src/*"],
-      "@gemeente-denhaag/tabcontext": ["TabContext/src/*"],
-      "@gemeente-denhaag/tablist": ["TabList/src/*"],
-      "@gemeente-denhaag/tabpanel": ["TabPanel/src/*"],
-      "@gemeente-denhaag/tabscrollbutton": ["TabScrollButton/src/*"],
-      "@gemeente-denhaag/tabs": ["Tabs/src/*"],
-      "@gemeente-denhaag/textfield": ["TextField/src/*"],
-      "@gemeente-denhaag/toolbar": ["Toolbar/src/*"],
-      "@gemeente-denhaag/typography": ["Typography/src/*"],
-      "@gemeente-denhaag/datadisplay": ["datadisplay/src/*"],
-      "@gemeente-denhaag/denhaag-component-library": ["denhaag-component-library/src/*"],
-      "@gemeente-denhaag/input": ["input/src/*"],
-      "@gemeente-denhaag/layout": ["layout/src/*"],
-      "@gemeente-denhaag/navigation": ["navigation/src/*"],
-      "@gemeente-denhaag/surfaces": ["surfaces/src/*"]
-    }
+    "jsx": "react"
   },
-  "files": [],
   "references": [
     {
       "path": "src/components/Accordion"
@@ -177,9 +95,6 @@
       "path": "src/components/Select"
     },
     {
-      "path": "src/components/Timeline"
-    },
-    {
       "path": "src/components/SwipeableDrawer"
     },
     {
@@ -190,6 +105,9 @@
     },
     {
       "path": "src/components/TextField"
+    },
+    {
+      "path": "src/components/Timeline"
     },
     {
       "path": "src/components/Toolbar"
@@ -216,13 +134,13 @@
       "path": "src/meta-packages/surfaces"
     },
     {
+      "path": "src/styles/Common"
+    },
+    {
       "path": "src/styles/Components"
     },
     {
       "path": "src/styles/Proprietary"
-    },
-    {
-      "path": "src/styles/Common"
     }
   ]
 }

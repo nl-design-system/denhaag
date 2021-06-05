@@ -1,7 +1,6 @@
 import React from 'react';
-import MaterialDivider from '@material-ui/core/Divider';
+import { Divider as MaterialDivider, StylesProvider } from '@material-ui/core';
 import { BaseDataDisplayClassesProps } from '@gemeente-denhaag/basedatadisplayprops';
-import { StylesProvider } from '@material-ui/core';
 import './divider.css';
 
 export interface DividerProps extends BaseDataDisplayClassesProps {

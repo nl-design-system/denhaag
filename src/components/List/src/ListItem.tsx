@@ -1,12 +1,12 @@
 import React from 'react';
-import MaterialListItem from '@material-ui/core/ListItem';
+import { ListItem as MaterialListItem } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
+import { ChevronRightIcon } from '@gemeente-denhaag/icons';
+import IconButton from '@gemeente-denhaag/iconbutton';
 import { listitem_classes as classes } from './bem-mapping';
 import { ListItemIcon } from './ListItemIcon';
 import { ListItemSecondaryAction } from './ListItemSecondaryAction';
 import { ListItemText } from './ListItemText';
-import { ChevronRightIcon } from '@gemeente-denhaag/icons';
-import IconButton from '@gemeente-denhaag/iconbutton';
 
 export interface ListItemProps extends BaseProps {
   /**

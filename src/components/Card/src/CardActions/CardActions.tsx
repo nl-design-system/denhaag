@@ -1,5 +1,5 @@
 import React from 'react';
-import MaterialCardActions from '@material-ui/core/CardActions';
+import { CardActions as MaterialCardActions } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import './card-actions.css';
 import './mui-override.css';

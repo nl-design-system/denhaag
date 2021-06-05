@@ -1,5 +1,5 @@
 import React from 'react';
-import MaterialMenuList from '@material-ui/core/MenuList';
+import { MenuList as MaterialMenuList } from '@material-ui/core';
 import { BaseChildrenProps } from '@gemeente-denhaag/baseprops';
 
 export interface MenuListProps extends BaseChildrenProps {

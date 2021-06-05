@@ -1,5 +1,5 @@
 import React from 'react';
-import MaterialTabs from '@material-ui/core/Tabs';
+import { Tabs as MaterialTabs } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface TabsProps extends BaseProps {

@@ -1,5 +1,5 @@
 import React from 'react';
-import MaterialListItemIcon from '@material-ui/core/ListItemIcon';
+import { ListItemIcon as MaterialListItemIcon } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import { listitemicon_classes as classes } from './bem-mapping';
 

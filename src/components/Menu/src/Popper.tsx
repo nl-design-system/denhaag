@@ -1,5 +1,6 @@
 import React from 'react';
-import MaterialPopper, { PopperProps as MaterialPopperProps } from '@material-ui/core/Popper';
+import { Popper as MaterialPopper } from '@material-ui/core';
+import { PopperProps as MaterialPopperProps } from '@material-ui/core/Popper';
 import { BaseChildrenProps } from '@gemeente-denhaag/baseprops';
 
 export interface PopperProps extends BaseChildrenProps {

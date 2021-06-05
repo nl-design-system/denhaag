@@ -1,5 +1,5 @@
 import React from 'react';
-import MaterialTabPanel from '@material-ui/lab/TabPanel';
+import { TabPanel as MaterialTabPanel } from '@material-ui/lab';
 import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface TabPanelProps extends BaseProps {
