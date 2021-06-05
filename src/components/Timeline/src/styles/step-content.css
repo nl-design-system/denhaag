@@ -1,0 +1,8 @@
+.denhaag-timeline__step-content:not(:empty) {
+  margin-block-start: 12px;
+  color: var(--denhaag-grey-4);
+}
+
+.denhaag-timeline__step-content:empty {
+  margin-block-start: 0;
+}

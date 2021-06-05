@@ -3,8 +3,13 @@ import Timeline from './Timeline';
 // styles
 import '@gemeente-denhaag/design-tokens-common';
 import '@gemeente-denhaag/design-tokens-proprietary';
-import './styles/mui-override.module.css';
-import './styles/stepper.module.css';
+
+import './styles/mui-override.css';
+import './styles/step-content.css';
+import './styles/step-icon.css';
+import './styles/step-label.css';
+import './styles/step.css';
+import './styles/timeline.css';
 
 export default Timeline;
 export * from './Step';

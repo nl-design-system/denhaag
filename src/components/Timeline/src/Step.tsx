@@ -4,7 +4,7 @@ import MaterialStep from '@material-ui/core/Step';
 import { ChevronDownIcon, ChevronUpIcon } from '@gemeente-denhaag/icons';
 
 import { StepContent, StepLabel } from '.';
-import { stepClasses, stepLabelIconClasses } from './bem-mapping';
+import { stepClasses, stepCollapseIconClasses } from './bem-mapping';
 import { TimelineComponent } from './types';
 
 export interface StepProps extends TimelineComponent {
@@ -58,9 +58,9 @@ export const Step: React.FC<StepProps> = ({ active = false, tabIndex = 0, ...pro
   let iconElement: string | React.ReactElement = '';
   if (hasDescription && props.completed) {
     if (isExpanded) {
-      iconElement = <ChevronUpIcon classes={stepLabelIconClasses} />;
+      iconElement = <ChevronUpIcon classes={stepCollapseIconClasses} />;
     } else {
-      iconElement = <ChevronDownIcon classes={stepLabelIconClasses} />;
+      iconElement = <ChevronDownIcon classes={stepCollapseIconClasses} />;
     }
   }
 

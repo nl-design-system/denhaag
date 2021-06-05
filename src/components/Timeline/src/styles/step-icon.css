@@ -1,0 +1,27 @@
+.denhaag-timeline__step-icon {
+  color: var(--denhaag-grey-3);
+
+  height: 20px;
+  width: 20px;
+
+  padding-inline-end: 12px;
+
+  margin-block-start: auto;
+  margin-block-end: auto;
+}
+
+.denhaag-timeline__step-icon--active {
+  color: var(--denhaag-blue-3);
+}
+
+.denhaag-timeline__step-icon--completed {
+  color: var(--denhaag-green-3);
+}
+
+.denhaag-timeline__step-icon__text {
+  font-size: var(--denhaag-font-size-s);
+}
+
+.denhaag-timeline__step-icon__text--active {
+  fill: var(--denhaag-white);
+}
