@@ -1,7 +1,6 @@
 import React from 'react';
 import { TransitionProps } from '@material-ui/core/transitions';
-import MaterialStepContent from '@material-ui/core/StepContent';
-import { StylesProvider } from '@material-ui/core';
+import { StepContent as MaterialStepContent, StylesProvider } from '@material-ui/core';
 
 import { StepComponentProps } from './StepComponentProps';
 import { stepContentClass } from './bem-mapping';

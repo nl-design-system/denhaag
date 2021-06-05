@@ -1,11 +1,10 @@
 {
   "compilerOptions": {
-    "rootDir": "src",
-    "outDir": "dist",
+    "rootDir": "./src",
+    "outDir": "./dist",
     "lib": ["dom", "esnext"],
     "moduleResolution": "node",
     "jsx": "react",
-    "sourceMap": true,
     "declaration": true,
     "esModuleInterop": true,
     "noImplicitReturns": true,
@@ -22,6 +21,5 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "incremental": true
   }
 }

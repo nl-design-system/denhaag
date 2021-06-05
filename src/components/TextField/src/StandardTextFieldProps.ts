@@ -1,4 +1,4 @@
-import { InputProps } from '@material-ui/core/Input/Input';
+import { InputProps } from '@material-ui/core';
 import { BaseTextFieldProps } from './BaseTextFieldProps';
 
 export interface StandardTextFieldProps extends BaseTextFieldProps {

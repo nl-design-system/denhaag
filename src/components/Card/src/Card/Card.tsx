@@ -1,15 +1,12 @@
 import React, { createRef } from 'react';
-import MaterialCard from '@material-ui/core/Card';
-import { StylesProvider } from '@material-ui/core/styles';
+import { Card as MaterialCard, Icon, StylesProvider, Typography } from '@material-ui/core';
 import { ArrowRightIcon } from '@gemeente-denhaag/icons';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import './mui-override.css';
 import './card.css';
-import { Typography } from '@material-ui/core';
 import { cardClasses, cardArrowClasses, cardTitleClasses, cardSubtitleClasses, cardCaseClasses } from './bem-mapping';
 import { CardContent } from '../CardContent/CardContent';
 import { CardActions } from '../CardActions/CardActions';
-import { Icon } from '@material-ui/core';
 
 export interface CardProps extends BaseProps {
   /**

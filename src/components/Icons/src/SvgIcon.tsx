@@ -1,5 +1,5 @@
-import MaterialSvgIcon from '@material-ui/core/SvgIcon';
 import React, { ElementType } from 'react';
+import { SvgIcon as MaterialSvgIcon } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface SvgIconProps extends BaseProps {

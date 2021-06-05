@@ -1,5 +1,5 @@
 import React from 'react';
-import MaterialListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
+import { ListItemSecondaryAction as MaterialListItemSecondaryAction } from '@material-ui/core';
 import { BaseChildrenProps } from '@gemeente-denhaag/baseprops';
 
 import { listitemsecondaryaction_classes as classes } from './bem-mapping';

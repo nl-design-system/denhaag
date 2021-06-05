@@ -3,14 +3,22 @@
   "compilerOptions": {
     "rootDir": "src",
     "outDir": "dist",
-    "tsBuildInfoFile": "tsconfig.tsbuildinfo",
     "composite": true
   },
   "include": ["src/**/*"],
-  "exclude": ["dist", "src/stories/*.stories.tsx"],
+  "exclude": ["dist", "src/**/*.stories.tsx"],
   "references": [
     {
+      "path": "../Icons"
+    },
+    {
       "path": "../BaseProps"
+    },
+    {
+      "path": "../../styles/Common"
+    },
+    {
+      "path": "../../styles/Components"
     }
   ]
 }

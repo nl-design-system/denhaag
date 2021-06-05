@@ -1,5 +1,5 @@
 import React from 'react';
-import MaterialBox from '@material-ui/core/Box';
+import { Box as MaterialBox } from '@material-ui/core';
 import { BaseLayoutChildrenProps } from '@gemeente-denhaag/baselayoutprops';
 
 export type BoxProps = BaseLayoutChildrenProps;

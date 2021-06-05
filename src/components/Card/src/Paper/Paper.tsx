@@ -1,4 +1,4 @@
-import MaterialPaper from '@material-ui/core/Paper';
+import { Paper as MaterialPaper } from '@material-ui/core';
 import React from 'react';
 import { BasePaperProps } from './BasePaperProps';
 

@@ -1,5 +1,5 @@
-import MaterialRadio from '@material-ui/core/Radio';
 import React from 'react';
+import { Radio as MaterialRadio } from '@material-ui/core';
 
 export interface RadioProps {
   /**
