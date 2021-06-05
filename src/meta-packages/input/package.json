@@ -23,7 +23,6 @@
   "dependencies": {
     "@gemeente-denhaag/baseprops": "^0.1.7",
     "@gemeente-denhaag/button": "^0.1.7",
-    "@gemeente-denhaag/buttongroup": "^0.1.7",
     "@gemeente-denhaag/checkbox": "^0.1.7",
     "@gemeente-denhaag/formcontrol": "^0.1.7",
     "@gemeente-denhaag/formcontrollabel": "^0.1.7",
