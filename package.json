@@ -98,6 +98,7 @@
     "react-test-renderer": "^17.0.1",
     "rimraf": "^3.0.2",
     "storybook": "^6.3.0",
+    "rollup": "^2.50.6",
     "storybook-design-token": "^1.0.1",
     "style-dictionary": "^3.0.1",
     "stylelint": "^13.8.0",
