@@ -29,8 +29,9 @@
 
     --denhaag-card-height: 181px;
 
-    --denhaag-card-padding-block: 24px;
-    --denhaag-card-padding-inline: 24px;
+    --denhaag-card-wrapper-padding: 24px;
+    --denhaag-card-wrapper-padding-block: var(--denhaag-card-wrapper-padding);
+    --denhaag-card-wrapper-padding-inline: var(--denhaag-card-wrapper-padding);
 
     --denhaag-card-subtitle-font-color: var(--denhaag-grey-4);
     --denhaag-card-subtitle-font-size: var(--denhaag-font-size-base);
