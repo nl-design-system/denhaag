@@ -12,7 +12,12 @@ export interface TimelineProps extends BaseProps {
 }
 
 /**
- * A Stepper conveys progress through numbered steps.
+ * The `Timeline` displays a progress through a sequence by breaking it up into
+ * multiple logical and numbered steps. Use the timeline when a series of
+ * information needs to be ordered by time (ascending or descending). It
+ * represents the steps in a process in a chronological order. This process is
+ * part of, for example, a request that the user has made.
+ *
  * @param props The properties of a Timeline component.
  * @constructor Constructs an instance of Timeline.
  */
