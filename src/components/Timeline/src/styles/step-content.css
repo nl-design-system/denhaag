@@ -1,6 +1,6 @@
 .denhaag-timeline__step-content:not(:empty) {
-  margin-block-start: 12px;
-  color: var(--denhaag-grey-4);
+  margin-block-start: var(--denhaag-timeline-step-content-margin);
+  color: var(--denhaag-timeline-step-content-color);
 }
 
 .denhaag-timeline__step-content:empty {

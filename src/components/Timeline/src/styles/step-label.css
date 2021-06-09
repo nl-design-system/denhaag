@@ -6,9 +6,6 @@
   text-overflow: ellipsis;
   overflow: hidden;
 
-  font-size: var(--denhaag-font-size-base);
-  line-height: 24px;
-
   display: flex;
   align-items: center;
 
@@ -25,15 +22,15 @@
 }
 
 .denhaag-timeline__step-label--active {
-  font-weight: 700;
-  color: var(--denhaag-blue-3);
+  font-weight: var(--denhaag-timeline-step-label-active-font-weight);
+  color: var(--denhaag-timeline-step-label-active-color);
 }
 
 .denhaag-timeline__step-label--completed:not(:only-child):hover {
-  color: var(--denhaag-blue-3);
+  color: var(--denhaag-timeline-step-label-completed-hover-color);
   cursor: pointer;
 }
 
 .denhaag-timeline__step-label--disabled {
-  color: var(--denhaag-grey-2);
+  color: var(--denhaag-timeline-step-label-disabled-color);
 }
