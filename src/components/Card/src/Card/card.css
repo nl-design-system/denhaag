@@ -138,8 +138,8 @@
 }
 
 /* stylelint-disable-next-line no-descending-specificity */
-.denhaag-card--case--focus .denhaag-card__arrow,
-.denhaag-card--case:focus .denhaag-card__arrow {
+.denhaag-card--focus .denhaag-card__arrow,
+.denhaag-card:focus .denhaag-card__arrow {
   outline: var(--denhaag-focus-border);
 }
 
