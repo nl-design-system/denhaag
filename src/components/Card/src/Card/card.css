@@ -1,9 +1,3 @@
-:root {
-    --denhaag-card-arrow-left: 0;
-    --denhaag-card-arrow-position: relative;
-    --denhaag-card-arrow-right: 28px;
-}
-
 .denhaag-card {
   width: var(--denhaag-card-width);
   border-radius: var(--denhaag-card-border-radius);

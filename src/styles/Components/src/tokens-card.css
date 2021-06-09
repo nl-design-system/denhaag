@@ -1,4 +1,8 @@
 :root {
+    --denhaag-card-arrow-left: 0;
+    --denhaag-card-arrow-position: relative;
+    --denhaag-card-arrow-right: 28px;
+
     --denhaag-card-background-color: var(--denhaag-white);
 
     --denhaag-card-border-radius: 3px;
@@ -6,21 +10,22 @@
     --denhaag-card-border-color: var(--denhaag-grey-2);
 
     --denhaag-card-height: 181px;
-    --denhaag-card-width: 352px;
     --denhaag-card-padding-block: 24px;
     --denhaag-card-padding-inline: 24px;
+    --denhaag-card-width: 352px;
+
 
     --denhaag-card-subtitle-color: var(--denhaag-grey-4);
     --denhaag-card-subtitle-font-size: var(--denhaag-font-size-base);
-    --denhaag-card-subtitle-line-height: 24px;
     --denhaag-card-subtitle-font-weight: 500;
+    --denhaag-card-subtitle-line-height: 24px;
     --denhaag-card-subtitle-padding: 0;
     --denhaag-card-title-font-size: var(--denhaag-font-size-xl);
-    --denhaag-card-title-line-height: 28px;
     --denhaag-card-title-font-weight: bold;
+    --denhaag-card-title-line-height: 28px;
     --denhaag-card-title-padding: 0;
 
-    --denhaag-card-case-border: 0;
+    --denhaag-card-case-border-width: 0;
     --denhaag-card-case-height: 200px;
     --denhaag-card-case-padding-block-start: 20px;
     --denhaag-card-case-padding-block-end: 24px;
