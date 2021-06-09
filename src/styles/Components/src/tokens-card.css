@@ -1,4 +1,6 @@
 :root {
+    --denhaag-card__actions-padding-top: 8px;
+
     --denhaag-card-arrow-left: 0;
     --denhaag-card-arrow-position: relative;
     --denhaag-card-arrow-right: 28px;
