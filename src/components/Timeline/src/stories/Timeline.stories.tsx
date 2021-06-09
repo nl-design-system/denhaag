@@ -56,7 +56,8 @@ const Template: Story<TimelineProps> = () => {
   const next = () => {
     setActiveStep((prevActiveStep) => {
       let nextActiveStep = prevActiveStep + 1;
-      if (steps[nextActiveStep].disabled) {
+
+      if (nextActiveStep < steps.length && steps[nextActiveStep].disabled) {
         nextActiveStep += 1;
       }
 
@@ -68,8 +69,6 @@ const Template: Story<TimelineProps> = () => {
     });
   };
 
-  console.log(activeStep);
-
   return (
     <React.Fragment>
       <Timeline activeStep={activeStep}>
@@ -80,7 +79,7 @@ const Template: Story<TimelineProps> = () => {
       <Button onClick={prev} disabled={activeStep === 0} variant="secondary-action">
         Prev
       </Button>
-      <Button onClick={next} disabled={activeStep === steps.length - 1} variant="primary-action">
+      <Button onClick={next} disabled={activeStep === steps.length} variant="primary-action">
         Next
       </Button>
     </React.Fragment>
