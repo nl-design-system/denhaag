@@ -1,3 +1,3 @@
 export const classes = {
-  root: 'denhaag-card__header',
+  root: 'denhaag-card-header',
 }
