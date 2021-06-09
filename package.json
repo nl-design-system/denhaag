@@ -100,7 +100,7 @@
     "rimraf": "^3.0.2",
     "storybook": "^6.2.8",
     "storybook-design-token": "^1.0.1",
-    "style-dictionary": "3",
+    "style-dictionary": "^3.0.1",
     "stylelint": "^13.8.0",
     "stylelint-config-prettier": "^8.0.2",
     "svgo": "^2.3.0",
