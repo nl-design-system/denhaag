@@ -5,35 +5,42 @@
 
     --denhaag-card-background-color: var(--denhaag-white);
 
+    --denhaag-card-border-color: var(--denhaag-grey-2);
     --denhaag-card-border-radius: 3px;
     --denhaag-card-border-width: 1px;
-    --denhaag-card-border-color: var(--denhaag-grey-2);
+
+    --denhaag-card-case-border-width: 0;
+
+    --denhaag-card-case-font-active-color: var(--denhaag-green-4);
+    --denhaag-card-case-font-color: var(--denhaag-green-3);
+
+    --denhaag-card-case-height: 200px;
+
+    --denhaag-card-case-padding-block-end: 24px;
+    --denhaag-card-case-padding-block-start: 20px;
+
+    --denhaag-card-case-paper-color: var(--denhaag-white);
+    --denhaag-card-case-primary-background-color: var(--denhaag-green-1);
+    --denhaag-card-case-secondary-background-color: var(--denhaag-green-2);
+
+    --denhaag-card-case-width: 352px;
 
     --denhaag-card-height: 181px;
+
     --denhaag-card-padding-block: 24px;
     --denhaag-card-padding-inline: 24px;
-    --denhaag-card-width: 352px;
 
-
-    --denhaag-card-subtitle-color: var(--denhaag-grey-4);
+    --denhaag-card-subtitle-font-color: var(--denhaag-grey-4);
     --denhaag-card-subtitle-font-size: var(--denhaag-font-size-base);
     --denhaag-card-subtitle-font-weight: 500;
     --denhaag-card-subtitle-line-height: 24px;
     --denhaag-card-subtitle-padding: 0;
+
+    --denhaag-card-title-font-color: var(--denhaag-black);
     --denhaag-card-title-font-size: var(--denhaag-font-size-xl);
     --denhaag-card-title-font-weight: bold;
     --denhaag-card-title-line-height: 28px;
     --denhaag-card-title-padding: 0;
 
-    --denhaag-card-case-border-width: 0;
-    --denhaag-card-case-height: 200px;
-    --denhaag-card-case-padding-block-start: 20px;
-    --denhaag-card-case-padding-block-end: 24px;
-    --denhaag-card-case-width: 352px;
-
-    --denhaag-card-case-text-color: var(--denhaag-green-3);
-    --denhaag-card-case-text-active-color: var(--denhaag-green-4);
-    --denhaag-card-case-primary-background-color: var(--denhaag-green-1);
-    --denhaag-card-case-secondary-background-color: var(--denhaag-green-2);
-    --denhaag-card-case-paper-color: var(--denhaag-white);
+    --denhaag-card-width: 352px;
 }
