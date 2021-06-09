@@ -4,16 +4,18 @@
 }
 
 .denhaag-card__wrapper {
-    border-color: var(--denhaag-card-border-color);
-    border-radius: var(--denhaag-card-border-radius);
-    border-style: solid;
-    border-width: var(--denhaag-card-border-width);
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    height: var(--denhaag-card-height);
-    padding-block: var(--denhaag-card-padding-block);
-    padding-inline: var(--denhaag-card-padding-inline);
+  border-color: var(--denhaag-card-border-color);
+  border-radius: var(--denhaag-card-border-radius);
+  border-style: solid;
+  border-width: var(--denhaag-card-border-width);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: var(--denhaag-card-height);
+  padding-block-start: var(--denhaag-card-wrapper-padding-block);
+  padding-block-end: var(--denhaag-card-wrapper-padding-block);
+  padding-inline-start: var(--denhaag-card-wrapper-padding-inline);
+  padding-inline-end: var(--denhaag-card-wrapper-padding-inline);
 }
 
 .denhaag-card--focus .denhaag-card__text-wrapper,
@@ -28,35 +30,34 @@
 }
 
 .denhaag-card__arrow {
-    left: var(--denhaag-card-arrow-left);
-    position: var(--denhaag-card-arrow-position);
-    right: var(--denhaag-card-arrow-right);
+  left: var(--denhaag-card-arrow-left);
+  position: var(--denhaag-card-arrow-position);
+  right: var(--denhaag-card-arrow-right);
 }
 
 .denhaag-card__title {
-    color: var(--denhaag-title-font-color);
-    font-size: var(--denhaag-card-title-font-size);
-    line-height: var(--denhaag-card-title-line-height);
-    padding-block-end: var(--denhaag-card-title-padding);
-    padding-block-start: var(--denhaag-card-title-padding);
-    padding-inline: var(--denhaag-card-title-padding);
+  color: var(--denhaag-title-font-color);
+  font-size: var(--denhaag-card-title-font-size);
+  line-height: var(--denhaag-card-title-line-height);
+  padding-block-end: var(--denhaag-card-title-padding);
+  padding-block-start: var(--denhaag-card-title-padding);
+  padding-inline: var(--denhaag-card-title-padding);
 }
 
 .denhaag-card__subtitle {
-    color: var(--denhaag-card-subtitle-font-color);
-    font-size: var(--denhaag-card-subtitle-font-size);
-    font-weight: var(--denhaag-card-subtitle-font-weight);
-    line-height: var(--denhaag-card-subtitle-line-height);
-    padding-block-end: var(--denhaag-card-subtitle-padding);
-    padding-block-start: var(--denhaag-card-subtitle-padding);
-    padding-inline-end: var(--denhaag-card-subtitle-padding);
-    padding-inline-start: var(--denhaag-card-subtitle-padding);
+  color: var(--denhaag-card-subtitle-font-color);
+  font-size: var(--denhaag-card-subtitle-font-size);
+  font-weight: var(--denhaag-card-subtitle-font-weight);
+  line-height: var(--denhaag-card-subtitle-line-height);
+  padding-block-end: var(--denhaag-card-subtitle-padding);
+  padding-block-start: var(--denhaag-card-subtitle-padding);
+  padding-inline-end: var(--denhaag-card-subtitle-padding);
+  padding-inline-start: var(--denhaag-card-subtitle-padding);
 }
 
 .denhaag-card--case {
   background: var(--denhaag-card-case-secondary-background-color);
-  border-radius: var(--denhaag-card-border-radius);
-  padding-block-start: 20px;
+  padding-block-start: var(--denhaag-card-case-padding-block-start);
   position: relative;
 }
 
@@ -133,7 +134,7 @@
 .denhaag-card--case--focus .denhaag-card__arrow,
 .denhaag-card--case:hover .denhaag-card__arrow,
 .denhaag-card--case:focus .denhaag-card__arrow {
-  outline: var(--denhaag-focus-border);
+  color: var(--denhaag-card-case-font-active-color);
 }
 
 .denhaag-card--case:hover .denhaag-card__arrow, .denhaag-card--case:focus .denhaag-card__arrow {
@@ -144,7 +145,8 @@
   position: relative;
   color: var(--denhaag-card-case-font-color);
   font-weight: 700;
-  padding-block: var(--denhaag-card-title-padding);
+  padding-block-start: var(--denhaag-card-title-padding);
+  padding-block-end: var(--denhaag-card-title-padding);
   padding-inline: var(--denhaag-card-title-padding);
 }
 
@@ -158,8 +160,10 @@
 .denhaag-card--case .denhaag-card__subtitle {
   color: var(--denhaag-card-case-font-color);
   font-weight: 500;
-  padding-block: var(--denhaag-card-subtitle-padding);
-  padding-inline: var(--denhaag-card-subtitle-padding);
+  padding-block-start: var(--denhaag-card-subtitle-padding);
+  padding-block-end: var(--denhaag-card-subtitle-padding);
+  padding-inline-start: var(--denhaag-card-subtitle-padding);
+  padding-inline-end: var(--denhaag-card-subtitle-padding);
   position: relative;
 }
 
