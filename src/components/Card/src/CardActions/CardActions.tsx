@@ -19,7 +19,7 @@ export interface CardActionProps extends BaseProps {
 export const CardActions: React.FC<CardActionProps> = (props: CardActionProps) => {
   return (
     <StylesProvider injectFirst>
-      <MaterialCardActions classes={cardActionClasses} {...props}>{props.children}</MaterialCardActions>
+      <MaterialCardActions classes={cardActionClasses} disableSpacing={props.disableSpacing}>{props.children}</MaterialCardActions>
     </StylesProvider>
   );
 }
