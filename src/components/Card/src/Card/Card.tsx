@@ -71,7 +71,7 @@ export const Card: React.FC<CardProps> = (props: CardProps) => {
         <div className='denhaag-card__wrapper'>
           <div className='denhaag-card__background'></div>
           <CardContent>
-            <div className='denhaag-card-text-wrapper'>
+            <div className='denhaag-card__text-wrapper'>
               <Typography classes={titleClasses} component='p'>
                 {props.title}
               </Typography>
