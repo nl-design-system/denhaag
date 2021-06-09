@@ -66,34 +66,54 @@
 
 /* Size specific styling */
 .denhaag-button--medium {
-  padding-inline: var(--denhaag-button-medium-size-padding-inline, var(--denhaag-button-padding-inline));
-  padding-block: var(--denhaag-button-medium-size-padding-block, var(--denhaag-button-padding-block));
+  padding-inline-start: var(--denhaag-button-medium-size-padding-inline, var(--denhaag-button-padding-inline));
+  padding-inline-end: var(--denhaag-button-medium-size-padding-inline, var(--denhaag-button-padding-inline));
+  padding-block-start: var(--denhaag-button-medium-size-padding-block, var(--denhaag-button-padding-block));
+  padding-block-end: var(--denhaag-button-medium-size-padding-block, var(--denhaag-button-padding-block));
   font-size: var(--denhaag-font-size-base);
 }
 
 .denhaag-button--medium.denhaag-button--secondary-action {
-  padding-inline: calc(
+  padding-inline-start: calc(
     var(--denhaag-button-medium-size-padding-inline, var(--denhaag-button-padding-inline)) -
       var(--denhaag-button-border-width)
   );
-  padding-block: calc(
+  padding-inline-end: calc(
+    var(--denhaag-button-medium-size-padding-inline, var(--denhaag-button-padding-inline)) -
+      var(--denhaag-button-border-width)
+  );
+  padding-block-start: calc(
+    var(--denhaag-button-medium-size-padding-block, var(--denhaag-button-padding-block)) -
+      var(--denhaag-button-border-width)
+  );
+  padding-block-end: calc(
     var(--denhaag-button-medium-size-padding-block, var(--denhaag-button-padding-block)) -
       var(--denhaag-button-border-width)
   );
 }
 
 .denhaag-button--large {
-  padding-inline: var(--denhaag-button-large-size-padding-inline, var(--denhaag-button-padding-inline));
-  padding-block: var(--denhaag-button-large-size-padding-block, var(--denhaag-button-padding-block));
+  padding-inline-start: var(--denhaag-button-large-size-padding-inline, var(--denhaag-button-padding-inline));
+  padding-inline-end: var(--denhaag-button-large-size-padding-inline, var(--denhaag-button-padding-inline));
+  padding-block-start: var(--denhaag-button-large-size-padding-block, var(--denhaag-button-padding-block));
+  padding-block-end: var(--denhaag-button-large-size-padding-block, var(--denhaag-button-padding-block));
   font-size: var(--denhaag-font-size-lg);
 }
 
 .denhaag-button--large.denhaag-button--secondary-action {
-  padding-inline: calc(
+  padding-inline-start: calc(
     var(--denhaag-button-large-size-padding-inline, var(--denhaag-button-padding-inline)) -
       var(--denhaag-button-border-width)
   );
-  padding-block: calc(
+  padding-inline-end: calc(
+    var(--denhaag-button-large-size-padding-inline, var(--denhaag-button-padding-inline)) -
+      var(--denhaag-button-border-width)
+  );
+  padding-block-start: calc(
+    var(--denhaag-button-large-size-padding-block, var(--denhaag-button-padding-block)) -
+      var(--denhaag-button-border-width)
+  );
+  padding-block-end: calc(
     var(--denhaag-button-large-size-padding-block, var(--denhaag-button-padding-block)) -
       var(--denhaag-button-border-width)
   );
