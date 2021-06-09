@@ -16,11 +16,13 @@
     padding-inline: var(--denhaag-card-padding-inline);
 }
 
-.denhaag-card:focus .denhaag-card-text-wrapper {
+.denhaag-card--focus .denhaag-card-text__wrapper,
+.denhaag-card:focus .denhaag-card-text__wrapper {
   outline: var(--denhaag-focus-border);
   position: relative;
 }
 
+.denhaag-card--focus,
 .denhaag-card:focus {
   outline: none;
 }
@@ -127,6 +129,9 @@
   right: var(--denhaag-card-arrow-right);
 }
 
+.denhaag-card--case--hover .denhaag-card__arrow,
+.denhaag-card--case--focus .denhaag-card__arrow,
+.denhaag-card--case:hover .denhaag-card__arrow,
 .denhaag-card--case:focus .denhaag-card__arrow {
   outline: var(--denhaag-focus-border);
 }
@@ -143,7 +148,10 @@
   padding-inline: var(--denhaag-card-title-padding);
 }
 
-.denhaag-card--case:hover .denhaag-card__title, .denhaag-card--case:focus .denhaag-card__title {
+.denhaag-card--case--hover .denhaag-card__title,
+.denhaag-card--case--focus .denhaag-card__title,
+.denhaag-card--case:hover .denhaag-card__title,
+.denhaag-card--case:focus .denhaag-card__title {
   color: var(--denhaag-card-case-font-active-color);
 }
 
@@ -155,16 +163,25 @@
   position: relative;
 }
 
-.denhaag-card--case:hover .denhaag-card__subtitle, .denhaag-card--case:focus .denhaag-card__subtitle {
+.denhaag-card--case--hover .denhaag-card__subtitle,
+.denhaag-card--case--focus .denhaag-card__subtitle,
+.denhaag-card--case:hover .denhaag-card__subtitle,
+.denhaag-card--case:focus .denhaag-card__subtitle {
   color: var(--denhaag-card-case-font-active-color);
 }
 
-.denhaag-card--case:hover::before, .denhaag-card--case:focus::before {
+.denhaag-card--case--hover::before,
+.denhaag-card--case--focus::before,
+.denhaag-card--case:hover::before,
+.denhaag-card--case:focus::before {
   top: 12px;
   transform-origin: right;
   transform:rotate(-2.45deg);
 }
 
-.denhaag-card--case:hover .denhaag-card__background, .denhaag-card--case:focus .denhaag-card__background {
+.denhaag-card--case--focus .denhaag-card__background,
+.denhaag-card--case--hover .denhaag-card__background,
+.denhaag-card--case:hover .denhaag-card__background,
+.denhaag-card--case:focus .denhaag-card__background {
   transform: rotateX(-20deg);
 }
