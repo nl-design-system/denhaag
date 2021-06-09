@@ -137,8 +137,10 @@
   color: var(--denhaag-card-case-font-active-color);
 }
 
-.denhaag-card--case:hover .denhaag-card__arrow, .denhaag-card--case:focus .denhaag-card__arrow {
-  color: var(--denhaag-card-case-font-active-color);
+/* stylelint-disable-next-line no-descending-specificity */
+.denhaag-card--case--focus .denhaag-card__arrow,
+.denhaag-card--case:focus .denhaag-card__arrow {
+  outline: var(--denhaag-focus-border);
 }
 
 .denhaag-card--case .denhaag-card__title {
