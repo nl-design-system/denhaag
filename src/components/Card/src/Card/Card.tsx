@@ -21,7 +21,7 @@ export interface CardProps extends BaseProps {
   /**
    * Callback fired when the Card is clicked.
    */
-  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  onClick?: (event: React.MouseEvent<HTMLDivElement>) => void;
 
 
   /**
