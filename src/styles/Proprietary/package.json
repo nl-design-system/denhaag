@@ -16,7 +16,7 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "scripts": {
-    "build": "yarn npm-run-all 'build:*'",
+    "build": "yarn npm-run-all build:*",
     "build:css": "tsc -b && copyfiles -u 1 \"src/**/*.css\" dist",
     "build:style-dictionary": "yarn style-dictionary build --config ../../../style-dictionary.config.json",
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo",
