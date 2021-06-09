@@ -34,7 +34,7 @@
     "prettier": "prettier --write .",
     "prettier-check": "prettier -c src/**/*.{js,jsx,ts,tsx}",
     "start": "microbundle watch --no-compress --format modern,cjs",
-    "storybook": "npm-run-all --parallel 'watch:*'",
+    "storybook": "npm-run-all --parallel watch:*",
     "test": "cypress run-ct",
     "test:open": "cypress open-ct",
     "watch:storybook": "start-storybook -p 6006 -s .storybook/stories/assets/",
