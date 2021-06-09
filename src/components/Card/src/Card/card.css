@@ -16,7 +16,7 @@
     padding-inline: var(--denhaag-card-padding-inline);
 }
 
-.denhaag-card:focus .denhaag-card__text-wrapper {
+.denhaag-card:focus .denhaag-card-text-wrapper {
   outline: var(--denhaag-focus-border);
   position: relative;
 }

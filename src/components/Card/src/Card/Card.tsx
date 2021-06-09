@@ -70,8 +70,8 @@ export const Card: React.FC<CardProps> = (props: CardProps) => {
       <MaterialCard classes={classes} onClick={props.onClick} tabIndex={props.tabIndex}>
         <div className='denhaag-card__wrapper'>
           <div className='denhaag-card__background'></div>
-          <CardContent disableSpacing={true}>
-            <div className='denhaag-card__text-wrapper'>
+          <CardContent>
+            <div className='denhaag-card-text-wrapper'>
               <Typography classes={titleClasses} component='p'>
                 {props.title}
               </Typography>
