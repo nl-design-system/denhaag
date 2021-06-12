@@ -32,7 +32,7 @@ export const StepIcon: React.FC<StepIconProps> = ({
     color = 'secondary';
   }
 
-  const textClasses = clsx('denhaag-timeline__step-icon__text', {
+  const textClasses = clsx('denhaag-timeline__step-icon-text', {
     'denhaag-timeline__step-icon__text--active': active,
     'denhaag-timeline__step-icon__text--completed': completed,
   });

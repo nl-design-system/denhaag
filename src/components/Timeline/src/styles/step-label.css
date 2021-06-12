@@ -2,7 +2,7 @@
   display: flex;
 }
 
-.denhaag-timeline__step-label__text {
+.denhaag-timeline__step-label-text {
   text-overflow: ellipsis;
   overflow: hidden;
 
@@ -15,7 +15,8 @@
   margin-inline-end: 0;
 }
 
-.denhaag-timeline__step-label__text:hover {
+.denhaag-timeline__step-label-text--hover,
+.denhaag-timeline__step-label-text:hover {
   overflow: visible;
   white-space: normal;
   height: auto;
@@ -26,6 +27,7 @@
   color: var(--denhaag-timeline-step-label-active-color);
 }
 
+.denhaag-timeline__step-label--completed--hover,
 .denhaag-timeline__step-label--completed:not(:only-child):hover {
   color: var(--denhaag-timeline-step-label-completed-hover-color);
   cursor: pointer;

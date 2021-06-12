@@ -24,5 +24,5 @@ export const stepIconClasses = {
 };
 
 export const stepCollapseIconClasses = {
-  root: 'denhaag-timeline__step__collapse-icon',
+  root: 'denhaag-timeline__step-collapse-icon',
 };

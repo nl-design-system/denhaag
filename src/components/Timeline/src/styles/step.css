@@ -3,13 +3,14 @@
   padding-block-end: var(--denhaag-timeline-step-padding);
 }
 
+.denhaag-timeline__step--focus,
 .denhaag-timeline__step:focus,
 .denhaag-timeline__step:focus-visible {
   outline: var(--denhaag-timeline-step-outline);
   outline-offset: var(--denhaag-timeline-step-outline-offset);
 }
 
-.denhaag-timeline__step__collapse-icon {
+.denhaag-timeline__step-collapse-icon {
   padding-inline-start: var(--denhaag-timeline-step-collapse-icon-start-padding);
   height: var(--denhaag-timeline-step-collapse-icon-size);
   width: var(--denhaag-timeline-step-collapse-icon-size);

@@ -55,7 +55,7 @@ export const StepLabel: React.FC<StepLabelProps> = ({
   return (
     <div className={classes}>
       {StepIconComponent}
-      <p className="denhaag-timeline__step-label__text">{children}</p>
+      <p className="denhaag-timeline__step-label-text">{children}</p>
     </div>
   );
 };
