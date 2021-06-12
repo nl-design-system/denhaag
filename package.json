@@ -38,7 +38,8 @@
     "test": "cypress run-ct",
     "test:open": "cypress open-ct",
     "watch:storybook": "start-storybook -p 6006 -s .storybook/stories/assets/",
-    "watch:style-dictionary": "lerna run --scope '@gemeente-denhaag/design-tokens-*' watch:style-dictionary"
+    "watch:style-dictionary": "lerna run --scope '@gemeente-denhaag/design-tokens-*' watch:style-dictionary",
+    "typecheck:storybook": "yarn tsc --project tsconfig.storybook.json --noEmit"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.2",
