@@ -21,6 +21,6 @@ const Template: Story<Heading3Props> = (args: Heading3Props) => (
 );
 
 /**
- * Default implementation of Heading1
+ * Default implementation of Heading3
  */
 export const Default = Template.bind({});

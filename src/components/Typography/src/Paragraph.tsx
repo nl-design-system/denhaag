@@ -1,5 +1,6 @@
 import React from 'react';
 import BaseProps from '@gemeente-denhaag/baseprops';
+import './typography.module.css';
 
 export type ParagraphProps = BaseProps;
 

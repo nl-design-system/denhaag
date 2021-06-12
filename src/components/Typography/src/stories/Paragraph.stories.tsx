@@ -21,6 +21,6 @@ const Template: Story<ParagraphProps> = (args: ParagraphProps) => (
 );
 
 /**
- * Default implementation of Heading1
+ * Default implementation of Paragraph
  */
 export const Default = Template.bind({});
