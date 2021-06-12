@@ -8,7 +8,7 @@ export interface DividerProps extends BaseDataDisplayClassesProps {
   /**
    * The divider orientation.
    */
-  orientation?: "horizontal" | "vertical";
+  orientation?: 'horizontal' | 'vertical';
 }
 
 /**
@@ -19,12 +19,12 @@ export interface DividerProps extends BaseDataDisplayClassesProps {
 export const Divider: React.FC<DividerProps> = (props: DividerProps) => {
   const classes = {
     root: 'denhaag-divider',
-    vertical: 'denhaag-divider--vertical'
-  }
+    vertical: 'denhaag-divider--vertical',
+  };
 
   return (
     <StylesProvider injectFirst>
-      <MaterialDivider variant={"fullWidth"} classes={classes} role={"presentation"} {...props} />
+      <MaterialDivider variant={'fullWidth'} classes={classes} role={'presentation'} {...props} />
     </StylesProvider>
   );
 };
