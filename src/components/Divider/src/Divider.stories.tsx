@@ -20,7 +20,7 @@ export default {
 } as Meta;
 
 const Template: Story<DividerProps> = (args: DividerProps) => {
-  return args.orientation === "vertical" ? (
+  return args.orientation === 'vertical' ? (
     <Grid container>
       <img
         alt="The Lagoon Nebula."
@@ -97,8 +97,8 @@ Default.parameters = {
 
 export const Vertical = Template.bind({});
 Vertical.args = {
-  orientation: "vertical"
-}
+  orientation: 'vertical',
+};
 Vertical.parameters = {
   docs: {
     source: {
