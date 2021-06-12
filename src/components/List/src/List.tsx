@@ -17,7 +17,7 @@ export interface ListProps extends BaseProps {
  * Primary UI component for user interaction
  */
 export const List: React.FC<ListProps> = (props: ListProps) => {
-  const materialProps = { ...props, subheader: props.subheader };
+  const materialProps = { subheader: props.subheader };
 
   return (
     <StylesProvider injectFirst>

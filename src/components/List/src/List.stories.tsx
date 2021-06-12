@@ -11,8 +11,6 @@ import './listitemsecondaryaction.module.css';
 import './listitemicon.module.css';
 import './listitemtext.module.css';
 import './listsubheader.module.css';
-import '@gemeente-denhaag/design-tokens-common';
-import '@gemeente-denhaag/design-tokens-components';
 
 export default {
   title: 'Components/Data Display/List',
