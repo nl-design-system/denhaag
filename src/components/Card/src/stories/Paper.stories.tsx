@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Typography from '@gemeente-denhaag/typography';
+import { Typography } from '@material-ui/core';
 import Paper, { PaperProps } from '..';
 import pkg from '../../package.json';
 

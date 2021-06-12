@@ -1,0 +1,26 @@
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import { Heading4, Heading4Props } from '../Heading4';
+import pkg from '../../package.json';
+
+export default {
+  title: 'Components/Data Display/Typography/Heading4',
+  parameters: {
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: 'dynamic',
+      },
+    },
+  },
+  component: Heading4,
+} as Meta;
+
+const Template: Story<Heading4Props> = (args: Heading4Props) => (
+  <Heading4 {...args}>This is a bit of text inside a Header4 component.</Heading4>
+);
+
+/**
+ * Default implementation of Heading1
+ */
+export const Default = Template.bind({});

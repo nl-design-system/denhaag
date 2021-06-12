@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Typography from '@gemeente-denhaag/typography';
+import { Typography } from '@material-ui/core';
 import Avatar from '@gemeente-denhaag/avatar';
 import IconButton from '@gemeente-denhaag/iconbutton';
 import { CheckCircleIcon, ShareIcon, ChevronDownIcon, SettingsIcon } from '@gemeente-denhaag/icons';
