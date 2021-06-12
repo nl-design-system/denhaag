@@ -38,14 +38,14 @@ const Template: Story<DividerProps> = (args: DividerProps) => {
     </Grid>
   ) : (
     <List>
-      <ListItem button>
+      <ListItem>
         <ListItemIcon>
           <InboxIcon />
         </ListItemIcon>
         <ListItemText primary="I am above the divider." />
       </ListItem>
       <Divider {...args} />
-      <ListItem button>
+      <ListItem>
         <ListItemIcon>
           <EmailIcon />
         </ListItemIcon>
