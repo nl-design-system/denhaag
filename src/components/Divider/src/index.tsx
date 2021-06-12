@@ -24,7 +24,7 @@ export const Divider: React.FC<DividerProps> = (props: DividerProps) => {
 
   return (
     <StylesProvider injectFirst>
-      <MaterialDivider variant={'fullWidth'} classes={classes} role={'presentation'} {...props} />
+      <MaterialDivider variant={'fullWidth'} classes={classes} role={'presentation'} orientation={props.orientation} />
     </StylesProvider>
   );
 };
