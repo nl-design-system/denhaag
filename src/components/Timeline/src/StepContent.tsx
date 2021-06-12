@@ -36,11 +36,21 @@ export interface StepContentProps extends TimelineComponent {
  * @param props The properties of a StepContent component.
  * @constructor Constructs an instance of StepContent.
  */
-export const StepContent: React.FC<StepContentProps> = (props: StepContentProps) => {
+export const StepContent: React.FC<StepContentProps> = ({
+  TransitionComponent,
+  transitionDuration,
+  children,
+  tabIndex = 0,
+}: StepContentProps) => {
   return (
     <StylesProvider injectFirst>
-      <MaterialStepContent className="denhaag-timeline__step-content" {...props}>
-        {props.children}
+      <MaterialStepContent
+        className="denhaag-timeline__step-content"
+        TransitionComponent={TransitionComponent}
+        transitionDuration={transitionDuration}
+        tabIndex={tabIndex}
+      >
+        {children}
       </MaterialStepContent>
     </StylesProvider>
   );

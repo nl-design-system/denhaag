@@ -17,32 +17,37 @@ export interface StepIconProps extends TimelineComponent {
  * @param props The properties of a StepIcon component.
  * @constructor Constructs an instance of StepIcon.
  */
-export const StepIcon: React.FC<StepIconProps> = (props: StepIconProps) => {
+export const StepIcon: React.FC<StepIconProps> = ({
+  icon,
+  active = false,
+  completed = false,
+  disabled = false,
+}: StepIconProps) => {
   let color: SvgIconProps['color'] = 'primary';
-  if (props.disabled) {
+  if (disabled) {
     color = 'disabled';
-  } else if (props.active) {
+  } else if (active) {
     color = 'action';
-  } else if (props.completed) {
+  } else if (completed) {
     color = 'secondary';
   }
 
   const textClasses = clsx('denhaag-timeline__step-icon__text', {
-    'denhaag-timeline__step-icon__text--active': props.active,
-    'denhaag-timeline__step-icon__text--completed': props.completed,
+    'denhaag-timeline__step-icon__text--active': active,
+    'denhaag-timeline__step-icon__text--completed': completed,
   });
 
   // Exported from https://www.figma.com/file/JpoY3waVoQGlLQzQXTL9nn/Design-System-Gemeente-Den-Haag?node-id=1908%3A9407
   const circleProps = {
     cx: 10,
     cy: 10,
-    r: props.active ? 10 : 9.25,
-    fill: props.active ? 'currentColor' : 'none',
-    stroke: props.active ? 'none' : 'currentColor',
-    strokeWidth: props.active ? 0 : 1.5,
+    r: active ? 10 : 9.25,
+    fill: active ? 'currentColor' : 'none',
+    stroke: active ? 'none' : 'currentColor',
+    strokeWidth: active ? 0 : 1.5,
   };
 
-  if (props.completed) {
+  if (completed) {
     return (
       <StylesProvider injectFirst>
         <CheckCircleIcon classes={stepIconClasses} color={color} />
@@ -55,7 +60,7 @@ export const StepIcon: React.FC<StepIconProps> = (props: StepIconProps) => {
       <SvgIcon viewBox="0 0 20 20" classes={stepIconClasses} color={color}>
         <circle {...circleProps} />
         <text x="10" y="14" textAnchor="middle" className={textClasses}>
-          {props.icon}
+          {icon}
         </text>
       </SvgIcon>
     </StylesProvider>

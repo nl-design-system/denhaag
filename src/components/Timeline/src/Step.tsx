@@ -23,16 +23,23 @@ export interface StepProps extends TimelineComponent {
  * @param props The properties of a Step component.
  * @constructor Constructs an instance of Step.
  */
-export const Step: React.FC<StepProps> = ({ active = false, tabIndex = 0, ...props }: StepProps) => {
+export const Step: React.FC<StepProps> = ({
+  label,
+  description,
+  active = false,
+  completed = false,
+  disabled = false,
+  tabIndex = 0,
+}: StepProps) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
-  const hasDescription = props.description !== undefined;
+  const hasDescription = description !== undefined;
 
-  if (active && props.disabled) {
+  if (active && disabled) {
     throw new Error('Step cannot be active and disabled at the same time.');
   }
 
   const toggle = () => {
-    if (hasDescription && props.completed) {
+    if (hasDescription && completed) {
       setIsExpanded((prevState) => !prevState);
     }
   };
@@ -52,11 +59,11 @@ export const Step: React.FC<StepProps> = ({ active = false, tabIndex = 0, ...pro
 
   let descriptionElement: string | React.ReactElement = '';
   if (hasDescription) {
-    descriptionElement = <StepContent>{props.description}</StepContent>;
+    descriptionElement = <StepContent>{description}</StepContent>;
   }
 
   let iconElement: string | React.ReactElement = '';
-  if (hasDescription && props.completed) {
+  if (hasDescription && completed) {
     if (isExpanded) {
       iconElement = <ChevronUpIcon classes={stepCollapseIconClasses} />;
     } else {
@@ -67,15 +74,15 @@ export const Step: React.FC<StepProps> = ({ active = false, tabIndex = 0, ...pro
   return (
     <MaterialStep
       active={active}
+      completed={completed}
       classes={stepClasses}
       expanded={isExpanded}
       onClick={toggle}
       onKeyDown={handleKeyDown}
       tabIndex={tabIndex}
-      {...props}
     >
       <StepLabel>
-        {props.label}
+        {label}
         {iconElement}
       </StepLabel>
       {descriptionElement}

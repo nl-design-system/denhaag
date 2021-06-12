@@ -26,33 +26,36 @@ export interface StepLabelProps extends TimelineComponent {
  * @param props The properties of a StepLabel component.
  * @constructor Constructs an instance of StepLabel.
  */
-export const StepLabel: React.FC<StepLabelProps> = (props: StepLabelProps) => {
-  let StepIconComponent: React.ReactElement;
-  if (props.StepIconComponent === undefined) {
-    StepIconComponent = (
-      <StepIcon
-        active={props.active}
-        completed={props.completed}
-        disabled={props.disabled}
-        icon={props.icon}
-        {...props.StepIconProps}
-      />
+export const StepLabel: React.FC<StepLabelProps> = ({
+  StepIconComponent,
+  StepIconProps,
+  icon,
+  children,
+  active = false,
+  completed = false,
+  disabled = false,
+  expanded = false,
+}: StepLabelProps) => {
+  let UpdatedStepIconComponent: React.ReactElement;
+  if (StepIconComponent === undefined) {
+    UpdatedStepIconComponent = (
+      <StepIcon active={active} completed={completed} disabled={disabled} icon={icon} {...StepIconProps} />
     );
   } else {
-    StepIconComponent = props.StepIconComponent;
-    StepIconComponent.props = { ...StepIconComponent.props, ...props.StepIconProps };
+    UpdatedStepIconComponent = StepIconComponent;
+    UpdatedStepIconComponent.props = { ...StepIconComponent.props, ...StepIconProps };
   }
 
   const classes = clsx('denhaag-timeline__step-label', {
-    'denhaag-timeline__step-label--active': props.active || props.expanded,
-    'denhaag-timeline__step-label--disabled': props.disabled,
-    'denhaag-timeline__step-label--completed': props.completed,
+    'denhaag-timeline__step-label--active': active || expanded,
+    'denhaag-timeline__step-label--disabled': disabled,
+    'denhaag-timeline__step-label--completed': completed,
   });
 
   return (
     <div className={classes}>
       {StepIconComponent}
-      <p className="denhaag-timeline__step-label__text">{props.children}</p>
+      <p className="denhaag-timeline__step-label__text">{children}</p>
     </div>
   );
 };
