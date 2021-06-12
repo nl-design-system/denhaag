@@ -3,9 +3,9 @@ import { TransitionProps } from '@material-ui/core/transitions';
 import MaterialStepContent from '@material-ui/core/StepContent';
 import { StylesProvider } from '@material-ui/core';
 
-import { TimelineComponent } from './types';
+import { StepComponentProps } from './StepComponentProps';
 
-export interface StepContentProps extends TimelineComponent {
+export interface StepContentProps extends StepComponentProps {
   /**
    * The component used for the transition.
    */
@@ -38,17 +38,22 @@ export interface StepContentProps extends TimelineComponent {
  */
 export const StepContent: React.FC<StepContentProps> = ({
   TransitionComponent,
+  TransitionProps,
   transitionDuration,
   children,
   tabIndex = 0,
+  ...props
 }: StepContentProps) => {
+  console.log(props);
   return (
     <StylesProvider injectFirst>
       <MaterialStepContent
         className="denhaag-timeline__step-content"
         TransitionComponent={TransitionComponent}
+        TransitionProps={TransitionProps}
         transitionDuration={transitionDuration}
         tabIndex={tabIndex}
+        {...props}
       >
         {children}
       </MaterialStepContent>

@@ -5,9 +5,9 @@ import { ChevronDownIcon, ChevronUpIcon } from '@gemeente-denhaag/icons';
 
 import { StepContent, StepLabel } from '.';
 import { stepClasses, stepCollapseIconClasses } from './bem-mapping';
-import { TimelineComponent } from './types';
+import { StepComponentProps } from './StepComponentProps';
 
-export interface StepProps extends TimelineComponent {
+export interface StepProps extends StepComponentProps {
   /**
    * Describes the information of the step.
    */
@@ -30,6 +30,7 @@ export const Step: React.FC<StepProps> = ({
   completed = false,
   disabled = false,
   tabIndex = 0,
+  ...props
 }: StepProps) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const hasDescription = description !== undefined;
@@ -70,7 +71,7 @@ export const Step: React.FC<StepProps> = ({
       iconElement = <ChevronDownIcon classes={stepCollapseIconClasses} />;
     }
   }
-
+  console.log(props);
   return (
     <MaterialStep
       active={active}
@@ -80,6 +81,7 @@ export const Step: React.FC<StepProps> = ({
       onClick={toggle}
       onKeyDown={handleKeyDown}
       tabIndex={tabIndex}
+      {...props}
     >
       <StepLabel>
         {label}

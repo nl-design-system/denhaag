@@ -18,10 +18,10 @@
   color: var(--denhaag-timeline-step-icon-completed-color);
 }
 
-.denhaag-timeline__step-icon__text {
+.denhaag-timeline__step-icon-text {
   font-size: var(--denhaag-timeline-step-icon-text-font-size);
 }
 
-.denhaag-timeline__step-icon__text--active {
+.denhaag-timeline__step-icon-text--active {
   fill: var(--denhaag-timeline-step-icon-text-active-color);
 }

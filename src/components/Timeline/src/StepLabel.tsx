@@ -2,9 +2,9 @@ import React from 'react';
 import clsx from 'clsx';
 
 import StepIcon, { StepIconProps } from './StepIcon';
-import { TimelineComponent } from './types';
+import { StepComponentProps } from './StepComponentProps';
 
-export interface StepLabelProps extends TimelineComponent {
+export interface StepLabelProps extends StepComponentProps {
   /**
    * The label displayed in the step icon.
    */
@@ -54,7 +54,7 @@ export const StepLabel: React.FC<StepLabelProps> = ({
 
   return (
     <div className={classes}>
-      {StepIconComponent}
+      {UpdatedStepIconComponent}
       <p className="denhaag-timeline__step-label-text">{children}</p>
     </div>
   );

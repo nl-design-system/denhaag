@@ -2,7 +2,3 @@
   margin-block-start: var(--denhaag-timeline-step-content-margin);
   color: var(--denhaag-timeline-step-content-color);
 }
-
-.denhaag-timeline__step-content:empty {
-  margin-block-start: 0;
-}

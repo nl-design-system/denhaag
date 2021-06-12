@@ -1,27 +1,3 @@
-.denhaag-timeline__step-label {
-  display: flex;
-}
-
-.denhaag-timeline__step-label-text {
-  text-overflow: ellipsis;
-  overflow: hidden;
-
-  display: flex;
-  align-items: center;
-
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-}
-
-.denhaag-timeline__step-label-text--hover,
-.denhaag-timeline__step-label-text:hover {
-  overflow: visible;
-  white-space: normal;
-  height: auto;
-}
-
 .denhaag-timeline__step-label--active {
   font-weight: var(--denhaag-timeline-step-label-active-font-weight);
   color: var(--denhaag-timeline-step-label-active-color);

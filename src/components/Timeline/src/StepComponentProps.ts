@@ -1,6 +1,6 @@
 import BaseProps from '@gemeente-denhaag/baseprops';
 
-export interface TimelineComponent extends BaseProps {
+export interface StepComponentProps extends BaseProps {
   /**
    * Sets the step as active.
    */
