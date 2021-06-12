@@ -23,7 +23,7 @@ export interface ListItemProps extends BaseProps {
   /**
    * The callback fired when clicked
    */
-  onClick?: (event: React.MouseEvent) => void;
+  onClick?: (event: React.MouseEvent | React.TouchEvent) => void;
 
   /**
    * The icon shown on the left side
@@ -66,8 +66,6 @@ export const ListItem: React.FC<ListItemProps> = (props: ListItemProps) => {
   if (props.actionType === 'nav') {
     children.push(
       <ListItemSecondaryAction key={1}>
-        {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
-        {/* @ts-ignore */}
         <IconButton color="inherit" edge="end" tabIndex={-1} disableRipple disableFocusRipple>
           <ChevronRightIcon />
         </IconButton>
@@ -76,15 +74,7 @@ export const ListItem: React.FC<ListItemProps> = (props: ListItemProps) => {
   } else if (props.actionType === 'action') {
     children.push(
       <ListItemSecondaryAction key={2}>
-        <IconButton
-          color="inherit"
-          /* eslint-disable-next-line @typescript-eslint/ban-ts-comment */
-          /* @ts-ignore */
-          onClick={props.onClick}
-          edge="end"
-          disableRipple
-          disableFocusRipple
-        >
+        <IconButton color="inherit" onClick={props.onClick} edge="end" disableRipple disableFocusRipple>
           {props.rightIcon}
         </IconButton>
       </ListItemSecondaryAction>,
