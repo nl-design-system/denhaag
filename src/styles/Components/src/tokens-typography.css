@@ -33,4 +33,11 @@
   --denhaag-heading-5-font-style: normal;
   --denhaag-heading-5-line-height: normal;
   --denhaag-heading-5-letter-spacing: normal;
+
+  --denhaag-paragraph-font-size: var(--denhaag-font-size-base);
+  --denhaag-paragraph-font-family: var(--denhaag-font-family);
+  --denhaag-paragraph-font-weight: 400;
+  --denhaag-paragraph-font-style: normal;
+  --denhaag-paragraph-line-height: normal;
+  --denhaag-paragraph-letter-spacing: normal;
 }
