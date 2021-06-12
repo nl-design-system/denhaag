@@ -3,29 +3,34 @@
   --denhaag-heading-1-font-family: var(--denhaag-font-family);
   --denhaag-heading-1-font-weight: 700;
   --denhaag-heading-1-font-style: normal;
-  --denhaag-heading-1-line-height: 48px;
+  --denhaag-heading-1-line-height: normal;
+  --denhaag-heading-1-letter-spacing: normal;
 
   --denhaag-heading-2-font-size: var(--denhaag-font-size-2xl);
   --denhaag-heading-2-font-family: var(--denhaag-font-family);
   --denhaag-heading-2-font-weight: 700;
   --denhaag-heading-2-font-style: normal;
-  --denhaag-heading-2-line-height: 32px;
+  --denhaag-heading-2-line-height: normal;
+  --denhaag-heading-2-letter-spacing: normal;
 
   --denhaag-heading-3-font-size: var(--denhaag-font-size-xl);
   --denhaag-heading-3-font-family: var(--denhaag-font-family);
   --denhaag-heading-3-font-weight: 700;
   --denhaag-heading-3-font-style: normal;
-  --denhaag-heading-3-line-height: 24px;
+  --denhaag-heading-3-line-height: normal;
+  --denhaag-heading-3-letter-spacing: normal;
 
   --denhaag-heading-4-font-size: var(--denhaag-font-size-lg);
   --denhaag-heading-4-font-family: var(--denhaag-font-family);
   --denhaag-heading-4-font-weight: 700;
   --denhaag-heading-4-font-style: normal;
-  --denhaag-heading-4-line-height: 20px;
+  --denhaag-heading-4-line-height: normal;
+  --denhaag-heading-4-letter-spacing: normal;
 
   --denhaag-heading-5-font-size: var(--denhaag-font-size-base);
   --denhaag-heading-5-font-family: var(--denhaag-font-family);
   --denhaag-heading-5-font-weight: 700;
   --denhaag-heading-5-font-style: normal;
-  --denhaag-heading-5-line-height: 16px;
+  --denhaag-heading-5-line-height: normal;
+  --denhaag-heading-5-letter-spacing: normal;
 }

@@ -4,6 +4,7 @@ h1 {
   font-weight: var(--denhaag-heading-1-font-weight);
   font-style: var(--denhaag-heading-1-font-style);
   line-height: var(--denhaag-heading-1-line-height);
+  letter-spacing: var(--denhaag-heading-1-letter-spacing);
 }
 
 h2 {
@@ -12,6 +13,7 @@ h2 {
   font-weight: var(--denhaag-heading-2-font-weight);
   font-style: var(--denhaag-heading-2-font-style);
   line-height: var(--denhaag-heading-2-line-height);
+  letter-spacing: var(--denhaag-heading-2-letter-spacing);
 }
 
 h3 {
@@ -20,6 +22,7 @@ h3 {
   font-weight: var(--denhaag-heading-3-font-weight);
   font-style: var(--denhaag-heading-3-font-style);
   line-height: var(--denhaag-heading-3-line-height);
+  letter-spacing: var(--denhaag-heading-3-letter-spacing);
 }
 
 h4 {
@@ -28,6 +31,7 @@ h4 {
   font-weight: var(--denhaag-heading-4-font-weight);
   font-style: var(--denhaag-heading-4-font-style);
   line-height: var(--denhaag-heading-4-line-height);
+  letter-spacing: var(--denhaag-heading-4-letter-spacing);
 }
 
 h5 {
@@ -36,4 +40,5 @@ h5 {
   font-weight: var(--denhaag-heading-5-font-weight);
   font-style: var(--denhaag-heading-5-font-style);
   line-height: var(--denhaag-heading-5-line-height);
+  letter-spacing: var(--denhaag-heading-5-letter-spacing);
 }
