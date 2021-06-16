@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createRef } from 'react';
 import MaterialCard from '@material-ui/core/Card';
 import { StylesProvider } from '@material-ui/core/styles';
 import { ArrowRightIcon } from '@gemeente-denhaag/icons';
@@ -45,6 +45,11 @@ export interface CardProps extends BaseProps {
    */
   date: Date;
 
+  /**
+   * Determines the url the card points to
+   */
+  href: string;
+
 }
 
 /**
@@ -55,6 +60,15 @@ export const Card: React.FC<CardProps> = (props: CardProps) => {
   const arrowClasses = cardArrowClasses;
   const titleClasses = cardTitleClasses;
   const subtitleClasses = cardSubtitleClasses;
+  const linkRef = createRef<HTMLAnchorElement>();
+
+  const title = <a href={props.href} ref={linkRef}>{props.title}</a>;
+
+    const onClick = () => {
+      if (linkRef.current !== null) {
+        linkRef.current.click();
+      }
+    }
 
   switch (props.variant) {
     case 'case':
@@ -67,13 +81,13 @@ export const Card: React.FC<CardProps> = (props: CardProps) => {
 
   return (
     <StylesProvider injectFirst>
-      <MaterialCard classes={classes} onClick={props.onClick} tabIndex={props.tabIndex}>
+      <MaterialCard classes={classes} onClick={onClick}>
         <div className='denhaag-card__wrapper'>
           <div className='denhaag-card__background'></div>
           <CardContent>
             <div className='denhaag-card__text-wrapper'>
               <Typography classes={titleClasses} component='p'>
-                {props.title}
+                { title }
               </Typography>
               <Typography classes={subtitleClasses} component='p'>
                 {props.subTitle}
