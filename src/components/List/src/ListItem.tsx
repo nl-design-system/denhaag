@@ -3,7 +3,8 @@ import MaterialListItem from '@material-ui/core/ListItem';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import { listitem_classes as classes } from './bem-mapping';
 import { ListItemIcon } from './ListItemIcon';
-import { ListItemSecondaryAction, ListItemText } from '.';
+import { ListItemSecondaryAction } from './ListItemSecondaryAction';
+import { ListItemText } from './ListItemText';
 import { ChevronRightIcon } from '@gemeente-denhaag/icons';
 import IconButton from '@gemeente-denhaag/iconbutton';
 
