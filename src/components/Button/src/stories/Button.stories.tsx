@@ -1,8 +1,8 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { ArrowBackRounded, ArrowForwardRounded } from '@material-ui/icons';
-import Button, { ButtonProps } from '.';
-import pkg from '../package.json';
+import Button, { ButtonProps } from '..';
+import pkg from '../../package.json';
 
 export default {
   title: 'Components/Input/Button',
