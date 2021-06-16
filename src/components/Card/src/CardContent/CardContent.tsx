@@ -4,15 +4,13 @@ import BaseProps from '@gemeente-denhaag/baseprops';
 import './mui-override.css';
 import { CardContentClasses } from './bem-mapping';
 
-export type CardContentProps = BaseProps
+export type CardContentProps = BaseProps;
 
 /**
  * Primary UI component for user interaction
  */
 export const CardContent: React.FC<CardContentProps> = (props: CardContentProps) => {
-  return (
-      <MaterialCardContent classes={CardContentClasses}>{props.children}</MaterialCardContent>
-  )
+  return <MaterialCardContent classes={CardContentClasses}>{props.children}</MaterialCardContent>;
 };
 
 /**

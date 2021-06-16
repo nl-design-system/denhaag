@@ -6,14 +6,8 @@ import BaseProps from '@gemeente-denhaag/baseprops';
 import './mui-override.css';
 import './card.css';
 import { Typography } from '@gemeente-denhaag/typography';
-import {
-  cardClasses,
-  cardArrowClasses,
-  cardTitleClasses,
-  cardSubtitleClasses,
-  cardCaseClasses
-} from './bem-mapping';
-import { CardContent }  from '../CardContent/CardContent';
+import { cardClasses, cardArrowClasses, cardTitleClasses, cardSubtitleClasses, cardCaseClasses } from './bem-mapping';
+import { CardContent } from '../CardContent/CardContent';
 import { CardActions } from '../CardActions/CardActions';
 import { Icon } from '@material-ui/core';
 
@@ -22,7 +16,6 @@ export interface CardProps extends BaseProps {
    * Callback fired when the Card is clicked.
    */
   onClick?: (event: React.MouseEvent<HTMLDivElement>) => void;
-
 
   /**
    * Determines the variant of the card
@@ -49,7 +42,6 @@ export interface CardProps extends BaseProps {
    * Determines the url the card points to
    */
   href: string;
-
 }
 
 /**
@@ -62,13 +54,17 @@ export const Card: React.FC<CardProps> = (props: CardProps) => {
   const subtitleClasses = cardSubtitleClasses;
   const linkRef = createRef<HTMLAnchorElement>();
 
-  const title = <a href={props.href} ref={linkRef}>{props.title}</a>;
+  const title = (
+    <a href={props.href} ref={linkRef}>
+      {props.title}
+    </a>
+  );
 
-    const onClick = () => {
-      if (linkRef.current !== null) {
-        linkRef.current.click();
-      }
+  const onClick = () => {
+    if (linkRef.current !== null) {
+      linkRef.current.click();
     }
+  };
 
   switch (props.variant) {
     case 'case':
@@ -82,24 +78,22 @@ export const Card: React.FC<CardProps> = (props: CardProps) => {
   return (
     <StylesProvider injectFirst>
       <MaterialCard classes={classes} onClick={onClick}>
-        <div className='denhaag-card__wrapper'>
-          <div className='denhaag-card__background'></div>
+        <div className="denhaag-card__wrapper">
+          <div className="denhaag-card__background"></div>
           <CardContent>
-            <div className='denhaag-card__text-wrapper'>
-              <Typography classes={titleClasses} component='p'>
-                { title }
+            <div className="denhaag-card__text-wrapper">
+              <Typography classes={titleClasses} component="p">
+                {title}
               </Typography>
-              <Typography classes={subtitleClasses} component='p'>
+              <Typography classes={subtitleClasses} component="p">
                 {props.subTitle}
               </Typography>
             </div>
             <CardActions disableSpacing={true}>
-              <Typography component='div' classes={subtitleClasses}>
-                <time dateTime={props.date.toDateString()}>
-                  {props.date.toLocaleDateString()}
-                </time>
+              <Typography component="div" classes={subtitleClasses}>
+                <time dateTime={props.date.toDateString()}>{props.date.toLocaleDateString()}</time>
               </Typography>
-              <Icon classes={arrowClasses} aria-label='ArrowRightIcon'>
+              <Icon classes={arrowClasses} aria-label="ArrowRightIcon">
                 <ArrowRightIcon />
               </Icon>
             </CardActions>
@@ -107,7 +101,7 @@ export const Card: React.FC<CardProps> = (props: CardProps) => {
         </div>
       </MaterialCard>
     </StylesProvider>
-  )
+  );
 };
 
 /**

@@ -3,30 +3,26 @@ import { Meta, Story } from '@storybook/react';
 import Card, { CardProps } from '..';
 import pkg from '../../package.json';
 
-
 export default {
   title: 'Components/Cards/Card',
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
   },
-  component: Card
+  component: Card,
 } as Meta;
 
-
-const Template: Story<CardProps> = (args: CardProps) => (
-  <Card {...args}/>
-);
+const Template: Story<CardProps> = (args: CardProps) => <Card {...args} />;
 
 /**
  * Implementation of Card
  */
 export const Default: Story<CardProps> = Template.bind({});
-  Default.args = {
-    title: 'Shrimp and Chorizo Paella',
-    subTitle: 'This impressive paella is a perfect party dish and a fun meal to cook.',
-    date: new Date('2020-01-21'),
-    href: "https://github.com"
-  };
+Default.args = {
+  title: 'Shrimp and Chorizo Paella',
+  subTitle: 'This impressive paella is a perfect party dish and a fun meal to cook.',
+  date: new Date('2020-01-21'),
+  href: 'https://github.com',
+};
 
 /**
  * Case variant of Card component
@@ -37,5 +33,5 @@ Case.args = {
   subTitle: Default.args.subTitle,
   date: Default.args.date,
   variant: 'case',
-  href: Default.args.href
+  href: Default.args.href,
 };
