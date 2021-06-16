@@ -1,0 +1,20 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021 The Knights Who Say NIH! B.V.
+ */
+
+ .utrecht-paragraph {
+    font-family: var(--utrecht-paragraph-font-family, var(--utrecht-document-font-family, inherit));
+    font-size: var(--utrecht-paragraph-font-size, var(--utrecht-document-font-size, inherit));
+    font-weight: var(--utrecht-paragraph-font-weight, inherit);
+    line-height: var(--utrecht-paragraph-line-height, var(--utrecht-document-line-height, inherit));
+  }
+  
+  .utrecht-paragraph--lead {
+    font-size: var(--utrecht-paragraph-lead-font-size, inherit);
+    font-weight: var(--utrecht-paragraph-lead-font-weight, inherit);
+    line-height: var(--utrecht-paragraph-lead-line-height, inherit);
+  }
+  .utrecht-paragraph--distanced {
+    margin-block-start: var(--utrecht-paragraph-margin-block);
+  }

@@ -1,43 +1,59 @@
 :root {
-  --denhaag-heading-1-font-size: var(--denhaag-font-size-3xl);
-  --denhaag-heading-1-font-family: var(--denhaag-font-family);
-  --denhaag-heading-1-font-weight: 700;
-  --denhaag-heading-1-font-style: normal;
-  --denhaag-heading-1-line-height: normal;
-  --denhaag-heading-1-letter-spacing: normal;
+  --utrecht-document-font-family: var(--denhaag-font-family);
+  --utrecht-heading-font-weight: 700;
+  --utrecht-heading-color: var(--denhaag-grey-4);
 
-  --denhaag-heading-2-font-size: var(--denhaag-font-size-2xl);
-  --denhaag-heading-2-font-family: var(--denhaag-font-family);
-  --denhaag-heading-2-font-weight: 700;
-  --denhaag-heading-2-font-style: normal;
-  --denhaag-heading-2-line-height: normal;
-  --denhaag-heading-2-letter-spacing: normal;
+  --utrecht-heading-1-font-size: var(--denhaag-font-size-3xl);
+  --utrecht-heading-1-font-family: var(--denhaag-font-family);
+  --utrecht-heading-1-font-weight: 700;
+  --utrecht-heading-1-font-style: normal;
+  --utrecht-heading-1-line-height: normal;
+  --utrecht-heading-1-margin-block-start: 0;
+  --utrecht-heading-1-margin-block-end: 0;
+  --utrecht-heading-1-color: var(--denhaag-grey-4);
 
-  --denhaag-heading-3-font-size: var(--denhaag-font-size-xl);
-  --denhaag-heading-3-font-family: var(--denhaag-font-family);
-  --denhaag-heading-3-font-weight: 700;
-  --denhaag-heading-3-font-style: normal;
-  --denhaag-heading-3-line-height: normal;
-  --denhaag-heading-3-letter-spacing: normal;
+  --utrecht-heading-2-font-size: var(--denhaag-font-size-2xl);
+  --utrecht-heading-2-font-family: var(--denhaag-font-family);
+  --utrecht-heading-2-font-weight: 700;
+  --utrecht-heading-2-font-style: normal;
+  --utrecht-heading-2-line-height: normal;
+  --utrecht-heading-2-margin-block-start: 0;
+  --utrecht-heading-2-margin-block-end: 0;
+  --utrecht-heading-2-color: var(--denhaag-grey-4);
 
-  --denhaag-heading-4-font-size: var(--denhaag-font-size-lg);
-  --denhaag-heading-4-font-family: var(--denhaag-font-family);
-  --denhaag-heading-4-font-weight: 700;
-  --denhaag-heading-4-font-style: normal;
-  --denhaag-heading-4-line-height: normal;
-  --denhaag-heading-4-letter-spacing: normal;
+  --utrecht-heading-3-font-size: var(--denhaag-font-size-xl);
+  --utrecht-heading-3-font-family: var(--denhaag-font-family);
+  --utrecht-heading-3-font-weight: 700;
+  --utrecht-heading-3-font-style: normal;
+  --utrecht-heading-3-line-height: normal;
+  --utrecht-heading-3-margin-block-start: 0;
+  --utrecht-heading-3-margin-block-end: 0;
+  --utrecht-heading-3-color: var(--denhaag-grey-4);
 
-  --denhaag-heading-5-font-size: var(--denhaag-font-size-base);
-  --denhaag-heading-5-font-family: var(--denhaag-font-family);
-  --denhaag-heading-5-font-weight: 700;
-  --denhaag-heading-5-font-style: normal;
-  --denhaag-heading-5-line-height: normal;
-  --denhaag-heading-5-letter-spacing: normal;
+  --utrecht-heading-4-font-size: var(--denhaag-font-size-lg);
+  --utrecht-heading-4-font-family: var(--denhaag-font-family);
+  --utrecht-heading-4-font-weight: 700;
+  --utrecht-heading-4-font-style: normal;
+  --utrecht-heading-4-line-height: normal;
+  --utrecht-heading-4-margin-block-start: 0;
+  --utrecht-heading-4-margin-block-end: 0;
+  --utrecht-heading-4-color: var(--denhaag-grey-4);
 
-  --denhaag-paragraph-font-size: var(--denhaag-font-size-base);
-  --denhaag-paragraph-font-family: var(--denhaag-font-family);
-  --denhaag-paragraph-font-weight: 400;
-  --denhaag-paragraph-font-style: normal;
-  --denhaag-paragraph-line-height: normal;
-  --denhaag-paragraph-letter-spacing: normal;
+  --utrecht-heading-5-font-size: var(--denhaag-font-size-base);
+  --utrecht-heading-5-font-family: var(--denhaag-font-family);
+  --utrecht-heading-5-font-weight: 700;
+  --utrecht-heading-5-font-style: normal;
+  --utrecht-heading-5-line-height: normal;
+  --utrecht-heading-5-margin-block-start: 0;
+  --utrecht-heading-5-margin-block-end: 0;
+  --utrecht-heading-5-color: var(--denhaag-grey-4);
+
+  --utrecht-paragraph-font-size: var(--denhaag-font-size-base);
+  --utrecht-paragraph-font-family: var(--denhaag-font-family);
+  --utrecht-paragraph-font-weight: 400;
+  --utrecht-paragraph-font-style: normal;
+  --utrecht-paragraph-line-height: normal;
+  --utrecht-paragraph-margin-block-start: 0;
+  --utrecht-paragraph-margin-block-end: 0;
+  --utrecht-paragraph-color: var(--denhaag-grey-4);
 }
