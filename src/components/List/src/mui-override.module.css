@@ -1,6 +1,8 @@
 .denhaag-list {
-  margin-block: 8px 8px;
-  margin-inline: 0 0;
+  margin-block-start: 8px;
+  margin-block-end: 8px;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
   transition: none;
 }
 
@@ -9,8 +11,10 @@
 }
 
 .denhaag-list__subheader {
-  padding-block: 12px 12px;
-  padding-inline: 16px 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
 }
 
 .denhaag-list__item,
@@ -36,7 +40,8 @@
 }
 
 .denhaag-list__item-text {
-  margin-block: 0 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .denhaag-list__secondary-action {

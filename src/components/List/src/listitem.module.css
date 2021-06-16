@@ -1,20 +1,26 @@
 .denhaag-list__item {
-  padding-block: var(--denhaag-list-item-padding-block);
-  padding-inline: var(--denhaag-list-item-padding-inline);
+  padding-block-start: var(--denhaag-list-item-padding-block);
+  padding-block-end: var(--denhaag-list-item-padding-block);
+  padding-inline-start: var(--denhaag-list-item-padding-inline);
+  padding-inline-end: var(--denhaag-list-item-padding-inline);
 }
 
 .denhaag-list__item:focus {
   border-color: var(--denhaag-list-item-focus-border-color);
   border-style: var(--denhaag-list-item-focus-border-style);
   border-width: var(--denhaag-list-item-border-size);
-  padding-block: calc(var(--denhaag-list-item-padding-block) - var(--denhaag-list-item-border-size));
-  padding-inline: calc(var(--denhaag-list-item-padding-inline) - var(--denhaag-list-item-border-size));
+  padding-block-start: calc(var(--denhaag-list-item-padding-block) - var(--denhaag-list-item-border-size));
+  padding-block-end: calc(var(--denhaag-list-item-padding-block) - var(--denhaag-list-item-border-size));
+  padding-inline-start: calc(var(--denhaag-list-item-padding-inline) - var(--denhaag-list-item-border-size));
+  padding-inline-end: calc(var(--denhaag-list-item-padding-inline) - var(--denhaag-list-item-border-size));
 }
 
 .denhaag-list__item:active {
   border: var(--denhaag-list-item-border-size) solid var(--denhaag-list-item-active-border-color);
-  padding-block: calc(var(--denhaag-list-item-padding-block) - var(--denhaag-list-item-border-size));
-  padding-inline: calc(var(--denhaag-list-item-padding-inline) - var(--denhaag-list-item-border-size));
+  padding-block-start: calc(var(--denhaag-list-item-padding-block) - var(--denhaag-list-item-border-size));
+  padding-block-end: calc(var(--denhaag-list-item-padding-block) - var(--denhaag-list-item-border-size));
+  padding-inline-start: calc(var(--denhaag-list-item-padding-inline) - var(--denhaag-list-item-border-size));
+  padding-inline-end: calc(var(--denhaag-list-item-padding-inline) - var(--denhaag-list-item-border-size));
 }
 
 .denhaag-list__item:active > .denhaag-list__secondary-action {
@@ -65,13 +71,16 @@
 }
 
 .denhaag-list__item[secondarytext] {
-  padding-block: var(--denhaag-list-item-padding-block-secondary);
+  padding-block-start: var(--denhaag-list-item-padding-block-secondary);
+  padding-block-end: var(--denhaag-list-item-padding-block-secondary);
 }
 
 .denhaag-list__item[secondarytext]:active {
-  padding-block: calc(var(--denhaag-list-item-padding-block-secondary) - var(--denhaag-list-item-border-size));
+  padding-block-start: calc(var(--denhaag-list-item-padding-block-secondary) - var(--denhaag-list-item-border-size));
+  padding-block-end: calc(var(--denhaag-list-item-padding-block-secondary) - var(--denhaag-list-item-border-size));
 }
 
 .denhaag-list__item[secondarytext]:focus {
-  padding-block: calc(var(--denhaag-list-item-padding-block-secondary) - var(--denhaag-list-item-border-size));
+  padding-block-start: calc(var(--denhaag-list-item-padding-block-secondary) - var(--denhaag-list-item-border-size));
+  padding-block-end: calc(var(--denhaag-list-item-padding-block-secondary) - var(--denhaag-list-item-border-size));
 }
