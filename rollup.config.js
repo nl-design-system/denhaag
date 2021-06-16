@@ -4,6 +4,7 @@ export default {
   input: 'src/index.tsx',
   output: {
     dir: './dist',
+    sourcemap: true,
     format: 'esm',
     clean: true,
   },
