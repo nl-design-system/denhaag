@@ -92,13 +92,27 @@ export const ListItem: React.FC<ListItemProps> = (props: ListItemProps) => {
 
   if (props.actionType === 'nav') {
     return (
-      <MaterialListItem {...muiProps} button classes={classes} tabIndex={0} disableRipple onClick={props.onClick}>
+      <MaterialListItem
+        {...muiProps}
+        button
+        component="li"
+        classes={classes}
+        tabIndex={0}
+        disableRipple
+        role={undefined}
+        onClick={props.onClick}
+      >
         {children}
       </MaterialListItem>
     );
   } else {
     return (
-      <MaterialListItem {...muiProps} classes={classes} tabIndex={props.actionType === 'action' ? -1 : 0}>
+      <MaterialListItem
+        {...muiProps}
+        classes={classes}
+        component="li"
+        tabIndex={props.actionType === 'action' ? -1 : 0}
+      >
         {children}
       </MaterialListItem>
     );
