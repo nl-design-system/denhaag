@@ -1,7 +1,9 @@
 :root {
   --utrecht-document-font-family: var(--denhaag-font-family);
+  --utrecht-document-font-size: normal;
   --utrecht-heading-font-weight: 700;
   --utrecht-heading-color: var(--denhaag-grey-4);
+  --utrecht-document-line-height: normal;
 
   --utrecht-heading-1-font-size: var(--denhaag-font-size-3xl);
   --utrecht-heading-1-font-family: var(--denhaag-font-family);
@@ -56,4 +58,8 @@
   --utrecht-paragraph-margin-block-start: 0;
   --utrecht-paragraph-margin-block-end: 0;
   --utrecht-paragraph-color: var(--denhaag-grey-4);
+
+  --utrecht-paragraph-lead-font-size: var(--denhaag-font-size-base);
+  --utrecht-paragraph-lead-font-weight: 700;
+  --utrecht-paragraph-margin-block: 0;
 }
