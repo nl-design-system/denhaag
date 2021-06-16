@@ -1,0 +1,133 @@
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs/blocks";
+import { ArrowBackRounded, ArrowForwardRounded } from "@material-ui/icons";
+
+import { Button } from "..";
+import pkg from "../../package.json";
+
+<Meta
+  title="MDX/Button"
+  component={Button}
+  parameters={{ componentSubtitle: `${pkg.name} - ${pkg.version}`, docs: { source: { type: "dynamic" } } }}
+/>
+
+# Button
+
+<div>
+  <code>{pkg.name}</code> - <code>{pkg.version}</code>
+</div>
+
+Buttons are used for actions such as "Add", "Close", "Cancel" or "Save".
+Button labels indicate what action will take place when the user interacts with it.
+
+### When to use
+
+---
+
+Use buttons to communicate actions users can take and to allow users to interact with the page.
+Each page should have one primary button, and any remaining calls to action should be represented as lower emphasis buttons.
+
+export const Template = (args) => <Button {...args}>Button</Button>;
+
+<Canvas>
+  <Story name="Default" args={{}}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable of={Button} />
+
+### Stories
+
+---
+
+#### Default
+
+<Canvas>
+  <Story
+    name="Primary Action"
+    args={{
+      variant: "primary-action",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+#### Secondary Action
+
+<Canvas>
+  <Story
+    name="Secondary Action"
+    args={{
+      variant: "secondary-action",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+#### Icon Left
+
+<Canvas>
+  <Story
+    name="Icon Left"
+    args={{
+      startIcon: <ArrowBackRounded />,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+#### Icon Right
+
+<Canvas>
+  <Story
+    name="Icon Right"
+    args={{
+      variant: "secondary-action",
+      endIcon: <ArrowForwardRounded />,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+#### Medium
+
+<Canvas>
+  <Story
+    name="Medium"
+    args={{
+      size: "medium",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+#### Large
+
+<Canvas>
+  <Story
+    name="Large"
+    args={{
+      size: "large",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+#### Disabled
+
+<Canvas>
+  <Story
+    name="Disabled"
+    args={{
+      disabled: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
