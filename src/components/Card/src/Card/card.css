@@ -39,9 +39,10 @@
   color: var(--denhaag-title-font-color);
   font-size: var(--denhaag-card-title-font-size);
   line-height: var(--denhaag-card-title-line-height);
-  padding-block-end: var(--denhaag-card-title-padding);
-  padding-block-start: var(--denhaag-card-title-padding);
-  padding-inline: var(--denhaag-card-title-padding);
+  padding-block-end: var(--denhaag-card-title-padding-block);
+  padding-block-start: var(--denhaag-card-title-padding-block);
+  padding-inline-end: var(--denhaag-card-title-padding-block);
+  padding-inline-start: var(--denhaag-card-title-padding-inline);
 }
 
 .denhaag-card__subtitle {
@@ -49,10 +50,10 @@
   font-size: var(--denhaag-card-subtitle-font-size);
   font-weight: var(--denhaag-card-subtitle-font-weight);
   line-height: var(--denhaag-card-subtitle-line-height);
-  padding-block-end: var(--denhaag-card-subtitle-padding);
-  padding-block-start: var(--denhaag-card-subtitle-padding);
-  padding-inline-end: var(--denhaag-card-subtitle-padding);
-  padding-inline-start: var(--denhaag-card-subtitle-padding);
+  padding-block-end: var(--denhaag-card-subtitle-padding-block);
+  padding-block-start: var(--denhaag-card-subtitle-padding-block);
+  padding-inline-end: var(--denhaag-card-subtitle-padding-block);
+  padding-inline-start: var(--denhaag-card-subtitle-padding-block);
 }
 
 .denhaag-card--case {

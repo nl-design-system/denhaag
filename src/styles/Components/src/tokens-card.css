@@ -38,12 +38,16 @@
     --denhaag-card-subtitle-font-weight: 500;
     --denhaag-card-subtitle-line-height: 24px;
     --denhaag-card-subtitle-padding: 0;
+    --denhaag-card-subtitle-padding-block: var(--denhaag-card-subtitle-padding);
+    --denhaag-card-subtitle-padding-inline: var(--denhaag-card-subtitle-padding);
 
     --denhaag-card-title-font-color: var(--denhaag-black);
     --denhaag-card-title-font-size: var(--denhaag-font-size-xl);
     --denhaag-card-title-font-weight: bold;
     --denhaag-card-title-line-height: 28px;
     --denhaag-card-title-padding: 0;
+    --denhaag-card-title-padding-block: var(--denhaag-card-title-padding);
+    --denhaag-card-title-padding-inline: var(--denhaag-card-title-padding);
 
     --denhaag-card-width: 352px;
 }
