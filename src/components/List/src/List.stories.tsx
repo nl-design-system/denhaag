@@ -5,12 +5,12 @@ import List, { ListProps, ListItem, ListSubheader } from '.';
 import pkg from '../package.json';
 import { action } from '@storybook/addon-actions';
 
-import './mui-override.module.css';
-import './listitem.module.css';
-import './listitemsecondaryaction.module.css';
-import './listitemicon.module.css';
-import './listitemtext.module.css';
-import './listsubheader.module.css';
+import './mui-override.css';
+import './listitem.css';
+import './listitemsecondaryaction.css';
+import './listitemicon.css';
+import './listitemtext.css';
+import './listsubheader.css';
 
 export default {
   title: 'Components/Data Display/List',
