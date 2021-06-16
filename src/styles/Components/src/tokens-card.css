@@ -1,5 +1,8 @@
 :root {
-    --denhaag-card__actions-padding-top: 8px;
+    --denhaag-card__actions-padding-block-end: 0;
+    --denhaag-card__actions-padding-block-start: 8px;
+    --denhaag-card__actions-padding-inline-end: 0;
+    --denhaag-card__actions-padding-inline-start: 0;
 
     --denhaag-card-arrow-left: 0;
     --denhaag-card-arrow-position: relative;
