@@ -4,6 +4,6 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
     target-branch: "master"
     versioning-strategy: "increase-if-necessary"
