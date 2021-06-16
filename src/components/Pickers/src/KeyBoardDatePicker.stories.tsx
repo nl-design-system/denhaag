@@ -16,7 +16,9 @@ export default {
 const Template: Story<KeyboardDatePickerProps> = (args: KeyboardDatePickerProps) => {
   const [value, setValue] = React.useState('1970-01-01');
   args.onChange = (date: DateIOType) => {
-    setValue(date.toString());
+    if (date !== null) {
+      setValue(date.toString());
+    }
   };
   args.value = value;
 

@@ -1,6 +1,5 @@
 export * from '@gemeente-denhaag/baseprops';
 export * from '@gemeente-denhaag/button';
-export * from '@gemeente-denhaag/buttongroup';
 export * from '@gemeente-denhaag/checkbox';
 export * from '@gemeente-denhaag/formcontrol';
 export * from '@gemeente-denhaag/formcontrollabel';
