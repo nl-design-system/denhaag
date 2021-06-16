@@ -5,8 +5,6 @@
     "lib": ["dom", "esnext"],
     "moduleResolution": "node",
     "jsx": "react",
-    "sourceMap": true,
-    "composite": true,
     "declaration": true,
     "esModuleInterop": true,
     "noImplicitReturns": true,
@@ -23,6 +21,5 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "incremental": true
   }
 }

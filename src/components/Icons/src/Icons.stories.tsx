@@ -1,8 +1,8 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import Grid from '../../Grid';
-import SvgIcon, { SvgIconProps } from '.';
 import * as Icons from '.';
+import SvgIcon, { SvgIconProps } from '.';
 import pkg from '../package.json';
 
 const allIconNames = Object.keys(Icons).filter((iconName) => (iconName === 'default' ? false : true));

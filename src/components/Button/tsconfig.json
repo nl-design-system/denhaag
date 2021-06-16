@@ -3,13 +3,7 @@
   "compilerOptions": {
     "rootDir": "src",
     "outDir": "dist",
-    "tsBuildInfoFile": "./dist/tsconfig.tsbuildinfo",
   },
   "include": ["src/**/*"],
-  "exclude": ["dist", "src/stories/*.stories.tsx"],
-  "references": [
-    {
-      "path": "../BaseProps"
-    }
-  ]
+  "exclude": ["dist", "src/**/*.stories.tsx"],
 }
