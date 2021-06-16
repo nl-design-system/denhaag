@@ -90,7 +90,7 @@ const Template: Story<TimelineProps> = () => {
  * Implementation of Timeline
  * "activeStep" property set to enforce step visibility.
  */
-export const Default = Template.bind({});
+export const Default: Story<TimelineProps> = Template.bind({});
 Default.parameters = {
   controls: { exclude: ['activeStep', 'children', 'classes'] },
 };
