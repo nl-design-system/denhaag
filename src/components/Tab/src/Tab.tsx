@@ -32,7 +32,7 @@ export interface TabProps extends BaseProps {
    * You can provide your own value.
    * Otherwise, we fallback to the child position index.
    */
-  value: any;
+  value?: number | string;
 
   /**
    * Tab labels appear in a single row.

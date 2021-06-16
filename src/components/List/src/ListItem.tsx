@@ -19,6 +19,7 @@ export interface ListItemProps extends BaseProps {
    * If `true`, the list item will be a button (using `ButtonBase`). Props intended
    * for `ButtonBase` can then be applied to `ListItem`.
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   button?: any;
 
   /**

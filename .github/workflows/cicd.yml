@@ -3,11 +3,11 @@ name: Build and deploy Storybook to Azure Web App
 on:
   push:
     branches:
-      - development
+      - latest
       - master
   pull_request:
     branches:
-      - development
+      - latest
       - master
 
 jobs:
@@ -22,12 +22,27 @@ jobs:
         with:
           node-version: "14.x"
 
-      - name: yarn install, build storybook
+      - name: yarn install
         run: |
           npm install -g yarn
-          yarn install
-          yarn build-storybook
+          yarn install --frozen-lockfile
 
+      - name: run linters
+        run: |
+          yarn lint:css
+          yarn lint:package
+          yarn lint:js
+          yarn prettier-check
+
+      - name: build library
+        run: yarn build
+
+      - name: typecheck storybook
+        run: yarn typecheck:storybook
+
+      - name: build storybook
+        run: yarn build-storybook
+        
       - name: Run Cypress component tests
         uses: cypress-io/github-action@v2
         with:
@@ -43,7 +58,7 @@ jobs:
 
   deploy-staging:
     needs: build
-    if: github.ref == 'refs/heads/development'
+    if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
 
     steps:
@@ -63,7 +78,7 @@ jobs:
 
   deploy-production:
     needs: build
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/latest'
     runs-on: ubuntu-latest
 
     steps:

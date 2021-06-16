@@ -23,11 +23,11 @@ const Template: Story<TabProps> = (args: TabProps) => {
     <TabContext value={value.toString()}>
       <Tabs
         value={value}
-        onChange={(event: React.ChangeEvent<unknown>, newValue: number) => {
+        onChange={(_event: React.ChangeEvent<unknown>, newValue: number) => {
           setValue(newValue);
         }}
       >
-        <Tab value={0} {...args} />
+        <Tab {...args} value={0} />
         <Tab label="Another tab" value={1} />
         <Tab label="Yet another tab" value={2} />
       </Tabs>

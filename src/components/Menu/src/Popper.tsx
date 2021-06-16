@@ -1,5 +1,5 @@
-import React, { RefObject } from 'react';
-import MaterialPopper from '@material-ui/core/Popper';
+import React from 'react';
+import MaterialPopper, { PopperProps as MaterialPopperProps } from '@material-ui/core/Popper';
 import { BaseChildrenProps } from '@gemeente-denhaag/baseprops';
 
 export interface PopperProps extends BaseChildrenProps {
@@ -58,7 +58,7 @@ export interface PopperProps extends BaseChildrenProps {
   /**
    * A ref that points to the used popper instance.
    */
-  popperRef?: RefObject<any>;
+  popperRef?: MaterialPopperProps['popperRef'];
 
   /**
    * Help supporting a react-transition-group/Transition component.

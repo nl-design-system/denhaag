@@ -1,0 +1,147 @@
+{
+  "extends": "./tsconfig.build.json",
+  "include": ["src/**/*.stories.tsx"],
+  "compilerOptions": {
+    "incremental": false
+  },
+  "references": [
+    {
+      "path": "src/components/Accordion"
+    },
+    {
+      "path": "src/components/AppBar"
+    },
+    {
+      "path": "src/components/Avatar"
+    },
+    {
+      "path": "src/components/Badge"
+    },
+    {
+      "path": "src/components/BaseDataDisplayProps"
+    },
+    {
+      "path": "src/components/BaseLayoutProps"
+    },
+    {
+      "path": "src/components/BaseProps"
+    },
+    {
+      "path": "src/components/Box"
+    },
+    {
+      "path": "src/components/Button"
+    },
+    {
+      "path": "src/components/Card"
+    },
+    {
+      "path": "src/components/Checkbox"
+    },
+    {
+      "path": "src/components/Container"
+    },
+    {
+      "path": "src/components/Divider"
+    },
+    {
+      "path": "src/components/Drawer"
+    },
+    {
+      "path": "src/components/FormControl"
+    },
+    {
+      "path": "src/components/FormControlLabel"
+    },
+    {
+      "path": "src/components/FormGroup"
+    },
+    {
+      "path": "src/components/Grid"
+    },
+    {
+      "path": "src/components/GridList"
+    },
+    {
+      "path": "src/components/Hidden"
+    },
+    {
+      "path": "src/components/IconButton"
+    },
+    {
+      "path": "src/components/Icons"
+    },
+    {
+      "path": "src/components/InputLabel"
+    },
+    {
+      "path": "src/components/Link"
+    },
+    {
+      "path": "src/components/List"
+    },
+    {
+      "path": "src/components/Menu"
+    },
+    {
+      "path": "src/components/Pickers"
+    },
+    {
+      "path": "src/components/PickersUtilsProvider"
+    },
+    {
+      "path": "src/components/Radio"
+    },
+    {
+      "path": "src/components/Select"
+    },
+    {
+      "path": "src/components/Stepper"
+    },
+    {
+      "path": "src/components/SwipeableDrawer"
+    },
+    {
+      "path": "src/components/Switch"
+    },
+    {
+      "path": "src/components/Tab"
+    },
+    {
+      "path": "src/components/TextField"
+    },
+    {
+      "path": "src/components/Toolbar"
+    },
+    {
+      "path": "src/components/Typography"
+    },
+    {
+      "path": "src/meta-packages/datadisplay"
+    },
+    {
+      "path": "src/meta-packages/denhaag-component-library"
+    },
+    {
+      "path": "src/meta-packages/input"
+    },
+    {
+      "path": "src/meta-packages/layout"
+    },
+    {
+      "path": "src/meta-packages/navigation"
+    },
+    {
+      "path": "src/meta-packages/surfaces"
+    },
+    {
+      "path": "src/styles/Components"
+    },
+    {
+      "path": "src/styles/Proprietary"
+    },
+    {
+      "path": "src/styles/Common"
+    }
+  ]
+}

@@ -64,6 +64,7 @@ export interface BaseTextFieldProps extends BaseClassesProps {
   /**
    * Pass a ref to the `input` element.
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   inputRef?: React.Ref<any>;
 
   /**

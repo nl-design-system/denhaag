@@ -11,7 +11,7 @@ export interface FormControlLabelProps extends BaseClassesProps {
   /**
    *A control instance, it can be a Radio, a Switch or a Checkbox.
    */
-  control: ReactElement<any, any>;
+  control: ReactElement;
 
   /**
    * If true, the component will be disabled.
@@ -36,7 +36,7 @@ export interface FormControlLabelProps extends BaseClassesProps {
   /**
    * The value of the component.
    */
-  value?: any;
+  value?: unknown;
 }
 
 /**
