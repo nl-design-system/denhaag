@@ -37,6 +37,9 @@ jobs:
       - name: build library
         run: yarn build
 
+      - name: typecheck storybook
+        run: yarn typecheck:storybook
+
       - name: build storybook
         run: yarn build-storybook
 

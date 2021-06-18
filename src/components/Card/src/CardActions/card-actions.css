@@ -1,0 +1,7 @@
+.denhaag-card__actions {
+  padding-block-end: var(--denhaag-card__actions-padding-block-end) 0;
+  padding-block-start: var(--denhaag-card__actions-padding-block-start) 8px;
+  padding-inline-end: var(--denhaag-card__actions-padding-inline-end) 0;
+  padding-inline-start: var(--denhaag-card__actions-padding-inline-start) 0;
+  justify-content: space-between;
+}

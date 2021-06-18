@@ -1,8 +1,6 @@
-import Card from './Card';
+import Card from './Card/Card';
 
 export default Card;
-export * from './Card';
-export * from './CardActions';
-export * from './CardContent';
-export * from './CardHeader';
-export * from './Paper';
+export * from './Card/Card';
+
+export * from './Paper/Paper';
