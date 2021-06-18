@@ -2,24 +2,6 @@ import * as React from 'react';
 import { mount } from '@cypress/react';
 import Button, { ButtonProps } from '../src/index';
 
-function terminalLog(violations) {
-  cy.task(
-    'log',
-    `${violations.length} accessibility violation${violations.length === 1 ? '' : 's'} ${
-      violations.length === 1 ? 'was' : 'were'
-    } detected`,
-  );
-
-  const violationData = violations.map(({ id, impact, description, nodes }) => ({
-    id,
-    impact,
-    description,
-    nodes: nodes.length,
-  }));
-
-  cy.task('table', violationData);
-}
-
 describe('Button tests', () => {
   it('can be clicked', () => {
     const props: ButtonProps = {
@@ -32,7 +14,7 @@ describe('Button tests', () => {
 
     mount(<Button onClick={props.onClick}>Test button</Button>);
 
-    cy.get('button')
+    cy.get('.denhaag-button')
       .contains('Test button')
       .click()
       .then(() => expect(spy).to.have.been.calledOnce);
@@ -53,7 +35,7 @@ describe('Button tests', () => {
       </Button>,
     );
 
-    cy.get('button')
+    cy.get('.denhaag-button')
       .click({ force: true })
       .then(() => expect(spy).to.not.have.been.called);
   });
@@ -73,7 +55,7 @@ describe('Button tests', () => {
       </Button>,
     );
 
-    cy.get('button')
+    cy.get('.denhaag-button')
       .type('{enter}')
       .then(() => expect(spy).to.have.been.calledOnce);
   });
@@ -81,7 +63,9 @@ describe('Button tests', () => {
   it('does not violate any accessibility rules', () => {
     mount(<Button>Test button</Button>);
     cy.injectAxe();
-    cy.checkA11y('button', null, terminalLog);
+    cy.checkA11y('.denhaag-button', null, (violations) => {
+      cy.task('a11yLog', violations);
+    });
   });
 
   it('matches snapshots', () => {

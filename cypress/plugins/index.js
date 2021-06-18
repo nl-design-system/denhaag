@@ -27,6 +27,23 @@ module.exports = (on, config) => {
   initPlugin(on, config);
 
   on('task', {
+    a11yLog(violations) {
+      console.log(
+        `${violations.length} accessibility violation${violations.length === 1 ? '' : 's'} ${
+          violations.length === 1 ? 'was' : 'were'
+        } detected`,
+      );
+
+      const violationData = violations.map(({ id, impact, description, nodes }) => ({
+        id,
+        impact,
+        description,
+        nodes: nodes.length,
+      }));
+
+      console.table(violationData);
+      return null;
+    },
     log(message) {
       console.log(message);
       return null;
