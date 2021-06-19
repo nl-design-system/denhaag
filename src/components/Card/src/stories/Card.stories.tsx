@@ -1,149 +1,37 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Typography } from '@material-ui/core';
-import Avatar from '@gemeente-denhaag/avatar';
-import IconButton from '@gemeente-denhaag/iconbutton';
-import { CheckCircleIcon, ShareIcon, ChevronDownIcon, SettingsIcon } from '@gemeente-denhaag/icons';
-import Card, { CardProps, CardActions, CardContent, CardHeader } from '..';
+import Card, { CardProps } from '..';
 import pkg from '../../package.json';
 
 export default {
-  title: 'Components/Surfaces/Card/Card',
+  title: 'Components/Cards/Card',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
-    docs: {
-      source: {
-        type: 'dynamic',
-      },
-    },
   },
   component: Card,
 } as Meta;
 
-const Template: Story<CardProps> = (args: CardProps) => (
-  <Card {...args}>
-    <CardHeader
-      avatar={<Avatar aria-label="recipe">R</Avatar>}
-      action={
-        <IconButton aria-label="settings">
-          <SettingsIcon />
-        </IconButton>
-      }
-      title="Shrimp and Chorizo Paella"
-      subheader="September 14, 2016"
-    />
-    <CardContent>
-      <Typography variant="body2" color="textSecondary" component="p">
-        This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of
-        frozen peas along with the mussels, if you like.
-      </Typography>
-    </CardContent>
-    <CardActions disableSpacing>
-      <IconButton aria-label="add to favorites">
-        <CheckCircleIcon />
-      </IconButton>
-      <IconButton aria-label="share">
-        <ShareIcon />
-      </IconButton>
-      <IconButton aria-label="show more">
-        <ChevronDownIcon />
-      </IconButton>
-    </CardActions>
-  </Card>
-);
-
-// language=JS
-const defaultCode = `
-<Card>
-  <CardHeader
-    avatar={<Avatar aria-label='recipe'>R</Avatar>}
-    action={
-      <IconButton aria-label='settings'>
-        <SettingsIcon/>
-      </IconButton>
-    }
-    title='Shrimp and Chorizo Paella'
-    subheader='September 14, 2016'>
-    <CardContent>
-      <Typography variant='body2' color='textSecondary' component='p'>
-        This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of
-        frozen peas along with the mussels, if you like.
-      </Typography>
-    </CardContent>
-    <CardActions disableSpacing>
-      <IconButton aria-label='add to favorites'>
-        <CheckCircleIcon/>
-      </IconButton>
-      <IconButton aria-label='share'>
-        <ShareIcon/>
-      </IconButton>
-      <IconButton aria-label='show more'>
-        <ChevronDownIcon/>
-      </IconButton>
-    </CardActions>
-  </CardHeader>
-</Card>
-`;
+const Template: Story<CardProps> = (args: CardProps) => <Card {...args} />;
 
 /**
  * Implementation of Card
  */
-export const Default = Template.bind({});
-Default.parameters = {
-  docs: {
-    source: {
-      // language=JS
-      code: defaultCode,
-    },
-  },
+export const Default: Story<CardProps> = Template.bind({});
+Default.args = {
+  title: 'Shrimp and Chorizo Paella',
+  subTitle: 'This impressive paella is a perfect party dish and a fun meal to cook.',
+  date: new Date('2020-01-21'),
+  href: 'https://github.com',
 };
-
-// language=JS
-const raisedCode = `
-<Card raised>
-  <CardHeader
-    avatar={<Avatar aria-label='recipe'>R</Avatar>}
-    action={
-      <IconButton aria-label='settings'>
-        <SettingsIcon/>
-      </IconButton>
-    }
-    title='Shrimp and Chorizo Paella'
-    subheader='September 14, 2016'>
-    <CardContent>
-      <Typography variant='body2' color='textSecondary' component='p'>
-        This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1
-        cup of
-        frozen peas along with the mussels, if you like.
-      </Typography>
-    </CardContent>
-    <CardActions disableSpacing>
-      <IconButton aria-label='add to favorites'>
-        <CheckCircleIcon/>
-      </IconButton>
-      <IconButton aria-label='share'>
-        <ShareIcon/>
-      </IconButton>
-      <IconButton aria-label='show more'>
-        <ChevronDownIcon/>
-      </IconButton>
-    </CardActions>
-  </CardHeader>
-</Card>
-`;
 
 /**
- * Raised variant of Card component
+ * Case variant of Card component
  */
-export const Raised = Template.bind({});
-Raised.args = {
-  raised: true,
-};
-Raised.parameters = {
-  docs: {
-    source: {
-      // language=JS
-      code: raisedCode,
-    },
-  },
+export const Case: Story<CardProps> = Template.bind({});
+Case.args = {
+  title: Default.args.title,
+  subTitle: Default.args.subTitle,
+  date: Default.args.date,
+  variant: 'case',
+  href: Default.args.href,
 };

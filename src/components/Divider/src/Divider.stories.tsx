@@ -2,7 +2,7 @@ import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import Divider, { DividerProps } from '.';
 import pkg from '../package.json';
-import List, { ListItem, ListItemIcon, ListItemText } from '../../List';
+import List, { ListItem, ListSubheader } from '../../List';
 import { InboxIcon, EmailIcon } from '@gemeente-denhaag/icons';
 import Grid from '@gemeente-denhaag/grid';
 
@@ -37,41 +37,21 @@ const Template: Story<DividerProps> = (args: DividerProps) => {
       />
     </Grid>
   ) : (
-    <List>
-      <ListItem>
-        <ListItemIcon>
-          <InboxIcon />
-        </ListItemIcon>
-        <ListItemText primary="I am above the divider." />
-      </ListItem>
+    <List subheader={<ListSubheader>Divider showcase</ListSubheader>}>
+      <ListItem primaryText="I am above the divider." leftIcon={<InboxIcon />}></ListItem>
       <Divider {...args} />
-      <ListItem>
-        <ListItemIcon>
-          <EmailIcon />
-        </ListItemIcon>
-        <ListItemText primary="I am under the divider." />
-      </ListItem>
+      <ListItem primaryText="I am under the divider." leftIcon={<EmailIcon />}></ListItem>
     </List>
   );
 };
 
 // language=JS
 const defaultCode = `
-  <List>
-    <ListItem button>
-      <ListItemIcon>
-        <InboxIcon/>
-      </ListItemIcon>
-      <ListItemText primary="I am above the divider."/>
-    </ListItem>
-    <Divider/>
-    <ListItem button>
-      <ListItemIcon>
-        <EmailIcon/>
-      </ListItemIcon>
-      <ListItemText primary="I am under the divider."/>
-    </ListItem>
-  </List>
+<List subheader={<ListSubheader>Divider showcase</ListSubheader>}>
+  <ListItem primaryText="I am above the divider." leftIcon={<InboxIcon />}></ListItem>
+  <Divider/>
+  <ListItem primaryText="I am under the divider." leftIcon={<EmailIcon />}></ListItem>
+</List>
 `;
 
 // language=JS

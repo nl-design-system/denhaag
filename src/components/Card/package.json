@@ -18,7 +18,7 @@
         "dist"
     ],
     "scripts": {
-        "build": "tsc -b",
+        "build": "tsc -b && copyfiles -u 1 \"src/**/*.css\" dist",
         "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
     },
     "dependencies": {

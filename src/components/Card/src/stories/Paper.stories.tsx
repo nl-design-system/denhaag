@@ -5,7 +5,7 @@ import Paper, { PaperProps } from '..';
 import pkg from '../../package.json';
 
 export default {
-  title: 'Components/Surfaces/Card/Paper',
+  title: 'Components/Cards/Paper',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {

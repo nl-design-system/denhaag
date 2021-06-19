@@ -96,9 +96,6 @@
       "path": "src/components/Select"
     },
     {
-      "path": "src/components/Stepper"
-    },
-    {
       "path": "src/components/SwipeableDrawer"
     },
     {
@@ -109,6 +106,9 @@
     },
     {
       "path": "src/components/TextField"
+    },
+    {
+      "path": "src/components/Timeline"
     },
     {
       "path": "src/components/Toolbar"

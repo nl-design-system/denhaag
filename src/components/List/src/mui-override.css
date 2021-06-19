@@ -1,0 +1,54 @@
+.denhaag-list {
+  margin-block-start: 8px;
+  margin-block-end: 8px;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  transition: none;
+}
+
+.denhaag-list__item-icon {
+  min-width: 48px;
+}
+
+.denhaag-list__subheader {
+  padding-block-start: 12px;
+  padding-block-end: 12px;
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
+}
+
+.denhaag-list__item,
+.denhaag-list__item:focus,
+.denhaag-list__item:hover {
+  outline: none;
+  box-shadow: none;
+  background-color: white;
+}
+
+.denhaag-list__item:hover {
+  outline: none;
+  box-shadow: none;
+  background-color: white;
+}
+
+.denhaag-list__item[actiontype="action"] {
+  cursor: default;
+}
+
+.denhaag-list__item-text {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.denhaag-list__secondary-action {
+  width: 32px;
+  height: 32px;
+}
+
+.denhaag-list__secondary-action button {
+  border-radius: 0%;
+}
+
+.denhaag-list__secondary-action button:hover {
+  background-color: white;
+}
