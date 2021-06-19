@@ -1,8 +1,9 @@
 import React from 'react';
+import clsx from 'clsx';
 import { StylesProvider } from '@material-ui/core';
 import SvgIcon, { SvgIconProps, CheckCircleIcon } from '@gemeente-denhaag/icons';
+
 import { stepIconClasses } from './bem-mapping';
-import clsx from 'clsx';
 import { StepComponentProps } from './StepComponentProps';
 
 export interface StepIconProps extends StepComponentProps {

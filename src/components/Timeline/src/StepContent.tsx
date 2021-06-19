@@ -4,6 +4,7 @@ import MaterialStepContent from '@material-ui/core/StepContent';
 import { StylesProvider } from '@material-ui/core';
 
 import { StepComponentProps } from './StepComponentProps';
+import { stepContentClass } from './bem-mapping';
 
 export interface StepContentProps extends StepComponentProps {
   /**
@@ -48,7 +49,7 @@ export const StepContent: React.FC<StepContentProps> = ({
   return (
     <StylesProvider injectFirst>
       <MaterialStepContent
-        className="denhaag-timeline__step-content"
+        className={stepContentClass}
         TransitionComponent={TransitionComponent}
         TransitionProps={TransitionProps}
         transitionDuration={transitionDuration}

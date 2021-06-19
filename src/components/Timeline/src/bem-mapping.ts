@@ -15,6 +15,8 @@ export const stepClasses = {
   completed: 'denhaag-timeline__step--completed',
 };
 
+export const stepContentClass = 'denhaag-timeline__step-content';
+
 export const stepIconClasses = {
   root: 'denhaag-timeline__step-icon',
   colorAction: 'denhaag-timeline__step-icon--active',

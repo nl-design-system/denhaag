@@ -1,11 +1,10 @@
 import React, { useEffect, useState, KeyboardEventHandler } from 'react';
 import MaterialStep from '@material-ui/core/Step';
-
 import { ChevronDownIcon, ChevronUpIcon } from '@gemeente-denhaag/icons';
 
 import { StepContent, StepLabel } from '.';
-import { stepClasses, stepCollapseIconClasses } from './bem-mapping';
 import { StepComponentProps } from './StepComponentProps';
+import { stepClasses, stepCollapseIconClasses } from './bem-mapping';
 
 export interface StepProps extends StepComponentProps {
   /**
@@ -71,7 +70,7 @@ export const Step: React.FC<StepProps> = ({
       iconElement = <ChevronDownIcon classes={stepCollapseIconClasses} />;
     }
   }
-  console.log(props);
+
   return (
     <MaterialStep
       active={active}
