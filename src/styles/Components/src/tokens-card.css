@@ -1,0 +1,56 @@
+:root {
+  --denhaag-card-actions-padding-block-end: 0;
+  --denhaag-card-actions-padding-block-start: 8px;
+  --denhaag-card-actions-padding-inline-end: 0;
+  --denhaag-card-actions-padding-inline-start: 0;
+
+  --denhaag-card-arrow-left: 0;
+  --denhaag-card-arrow-position: relative;
+  --denhaag-card-arrow-right: 28px;
+
+  --denhaag-card-background-color: var(--denhaag-white);
+
+  --denhaag-card-border-color: var(--denhaag-grey-2);
+  --denhaag-card-border-radius: 3px;
+  --denhaag-card-border-width: 1px;
+
+  --denhaag-card-case-border-width: 0;
+
+  --denhaag-card-case-font-active-color: var(--denhaag-green-4);
+  --denhaag-card-case-font-color: var(--denhaag-green-3);
+
+  --denhaag-card-case-height: 200px;
+
+  --denhaag-card-case-padding-block-end: 24px;
+  --denhaag-card-case-padding-block-start: 20px;
+
+  --denhaag-card-case-paper-color: var(--denhaag-white);
+  --denhaag-card-case-primary-background-color: var(--denhaag-green-1);
+  --denhaag-card-case-secondary-background-color: var(--denhaag-green-2);
+
+  --denhaag-card-case-width: 352px;
+
+  --denhaag-card-height: 181px;
+
+  --denhaag-card-wrapper-padding: 24px;
+  --denhaag-card-wrapper-padding-block: var(--denhaag-card-wrapper-padding);
+  --denhaag-card-wrapper-padding-inline: var(--denhaag-card-wrapper-padding);
+
+  --denhaag-card-subtitle-font-color: var(--denhaag-grey-4);
+  --denhaag-card-subtitle-font-size: var(--denhaag-font-size-base);
+  --denhaag-card-subtitle-font-weight: 500;
+  --denhaag-card-subtitle-line-height: 24px;
+  --denhaag-card-subtitle-padding: 0;
+  --denhaag-card-subtitle-padding-block: var(--denhaag-card-subtitle-padding);
+  --denhaag-card-subtitle-padding-inline: var(--denhaag-card-subtitle-padding);
+
+  --denhaag-card-title-font-color: var(--denhaag-black);
+  --denhaag-card-title-font-size: var(--denhaag-font-size-xl);
+  --denhaag-card-title-font-weight: bold;
+  --denhaag-card-title-line-height: 28px;
+  --denhaag-card-title-padding: 0;
+  --denhaag-card-title-padding-block: var(--denhaag-card-title-padding);
+  --denhaag-card-title-padding-inline: var(--denhaag-card-title-padding);
+
+  --denhaag-card-width: 352px;
+}

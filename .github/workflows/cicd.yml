@@ -42,7 +42,7 @@ jobs:
 
       - name: build storybook
         run: yarn build-storybook
-        
+
       - name: Run Cypress component tests
         uses: cypress-io/github-action@v2
         with:

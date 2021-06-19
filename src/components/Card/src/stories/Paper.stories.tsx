@@ -1,11 +1,11 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Typography from '@gemeente-denhaag/typography';
-import Paper, { PaperProps } from '..';
+import { Typography } from '@material-ui/core';
+import { Paper, PaperProps } from '@gemeente-denhaag/card';
 import pkg from '../../package.json';
 
 export default {
-  title: 'Components/Surfaces/Card/Paper',
+  title: 'Components/Cards/Paper',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {

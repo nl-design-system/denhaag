@@ -24,9 +24,9 @@
     "@gemeente-denhaag/baseprops": "^0.1.7",
     "@gemeente-denhaag/drawer": "^0.1.7",
     "@gemeente-denhaag/menu": "^0.1.7",
-    "@gemeente-denhaag/stepper": "^0.1.7",
     "@gemeente-denhaag/swipeabledrawer": "^0.1.7",
     "@gemeente-denhaag/tab": "^0.1.7",
+    "@gemeente-denhaag/timeline": "^0.1.0",
     "@material-ui/core": "^4.11.0",
     "@material-ui/lab": "^4.0.0-alpha"
   },

@@ -4,7 +4,7 @@ import { HamburgerIcon } from '@gemeente-denhaag/icons';
 import AppBar, { AppBarProps } from '.';
 import Toolbar from '../../Toolbar';
 import IconButton from '../../IconButton';
-import Typography from '../../Typography';
+import { Heading5 } from '@gemeente-denhaag/typography';
 import Button from '../../Button';
 import pkg from '../package.json';
 
@@ -28,7 +28,7 @@ const Template: Story<AppBarProps> = (args: AppBarProps) => {
         <IconButton edge="start" color="inherit" aria-label="menu">
           <HamburgerIcon />
         </IconButton>
-        <Typography variant="h6">News</Typography>
+        <Heading5>News</Heading5>
       </Toolbar>
       <Button>I am a button!</Button>
     </AppBar>
@@ -42,7 +42,7 @@ const defaultCode = `
     <IconButton edge="start" color="inherit" aria-label="menu">
       <HamburgerIcon/>
     </IconButton>
-    <Typography variant="h6">News</Typography>
+    <Heading5>News</Heading5>
   </Toolbar>
   <Button>I am a button!</Button>
 </AppBar>
@@ -71,7 +71,7 @@ const staticCode = `
     <IconButton edge="start" color="inherit" aria-label="menu">
       <HamburgerIcon/>
     </IconButton>
-    <Typography variant="h6">News</Typography>
+    <Heading5>News</Heading5>
   </Toolbar>
   <Button>I am a button!</Button>
 </AppBar>
@@ -100,7 +100,7 @@ const secondaryCode = `
     <IconButton edge="start" color="inherit" aria-label="menu">
       <HamburgerIcon/>
     </IconButton>
-    <Typography variant="h6">News</Typography>
+    <Heading5>News</Heading5>
   </Toolbar>
   <Button>I am a button!</Button>
 </AppBar>

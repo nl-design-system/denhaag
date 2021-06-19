@@ -1,40 +1,20 @@
 import React from 'react';
-import MaterialListSubheader from '@material-ui/core/ListSubheader';
-import BaseProps from '@gemeente-denhaag/baseprops';
+import { Typography } from '@material-ui/core';
 
-export interface ListSubheaderProps extends BaseProps {
-  /**
-   * The color of the component. It supports those theme colors that make sense for this component.
-   */
-  color?: 'default' | 'primary' | 'inherit';
+import { listsubheader_classes as classes } from './bem-mapping';
 
+export interface ListSubheaderProps {
   /**
-   * The component used for the root node.
-   * Either a string to use a HTML element or a component.
+   * The text shown in the List subheader
    */
-  component?: React.ElementType<React.HTMLAttributes<HTMLElement>>;
-
-  /**
-   * If `true`, the List Subheader will not have gutters.
-   */
-  disableGutters?: boolean;
-
-  /**
-   * If `true`, the List Subheader will not stick to the top during scroll.
-   */
-  disableSticky?: boolean;
-
-  /**
-   * If `true`, the List Subheader will be indented.
-   */
-  inset?: boolean;
+  children: string;
 }
 
 /**
  * Primary UI component for user interaction
  */
 export const ListSubheader: React.FC<ListSubheaderProps> = (props: ListSubheaderProps) => {
-  return <MaterialListSubheader {...props}>{props.children}</MaterialListSubheader>;
+  return <Typography classes={classes}>{props.children}</Typography>;
 };
 
 export default ListSubheader;
