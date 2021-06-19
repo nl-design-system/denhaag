@@ -8,7 +8,7 @@ export interface StepLabelProps extends StepComponentProps {
   /**
    * The label displayed in the step icon.
    */
-  icon?: number;
+  icon?: string | number;
 
   /**
    * The component to render in place of the StepIcon.

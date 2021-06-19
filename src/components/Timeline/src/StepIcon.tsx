@@ -10,7 +10,7 @@ export interface StepIconProps extends StepComponentProps {
   /**
    * The label displayed in the step icon.
    */
-  icon?: number;
+  icon?: string | number;
 }
 
 /**
