@@ -1,6 +1,6 @@
 import React from 'react';
 import BaseDataDisplayProps from '@gemeente-denhaag/basedatadisplayprops';
-import './paragraph.module.css';
+import './paragraph.css';
 
 export type ParagraphProps = BaseDataDisplayProps;
 

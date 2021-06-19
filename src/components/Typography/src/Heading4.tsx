@@ -1,6 +1,6 @@
 import React from 'react';
 import BaseDataDisplayProps from '@gemeente-denhaag/basedatadisplayprops';
-import './heading.module.css';
+import './heading.css';
 
 export type Heading4Props = BaseDataDisplayProps;
 
