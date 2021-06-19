@@ -1,45 +1,28 @@
-import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs/blocks";
+import { Meta, Story, Canvas, ArgsTable, Description } from "@storybook/addon-docs/blocks";
 import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
 import { ArrowBackRounded, ArrowForwardRounded } from "@material-ui/icons";
 
 import { Button } from "..";
 import pkg from "../../package.json";
+import readme from "../../README.md";
 
 <Meta
-  title="MDX/Button"
+  title="Components/Input/Button"
   component={Button}
   parameters={{ componentSubtitle: `${pkg.name} - ${pkg.version}`, docs: { source: { type: "dynamic" } } }}
 />
 
-# Button
+<Description markdown={readme} />
 
-<div>
-  <code>{pkg.name}</code> - <code>{pkg.version}</code>
-</div>
-
-Buttons are used for actions such as "Add", "Close", "Cancel" or "Save".
-Button labels indicate what action will take place when the user interacts with it.
-
-### When to use
-
----
-
-Use buttons to communicate actions users can take and to allow users to interact with the page.
-Each page should have one primary button, and any remaining calls to action should be represented as lower emphasis buttons.
-
-### Design Tokens
-
----
+## Design Tokens
 
 <DesignTokenDocBlock categoryName="Button" viewType="table" />
 
-### Stories
-
----
+## Stories
 
 export const Template = (args) => <Button {...args}>Button</Button>;
 
-#### Default
+### Default
 
 <Canvas>
   <Story name="Default" args={{}}>
@@ -49,7 +32,7 @@ export const Template = (args) => <Button {...args}>Button</Button>;
 
 <ArgsTable of={Button} />
 
-#### Primary Action
+### Primary Action
 
 <Canvas>
   <Story
@@ -62,7 +45,7 @@ export const Template = (args) => <Button {...args}>Button</Button>;
   </Story>
 </Canvas>
 
-#### Secondary Action
+### Secondary Action
 
 <Canvas>
   <Story
@@ -75,7 +58,7 @@ export const Template = (args) => <Button {...args}>Button</Button>;
   </Story>
 </Canvas>
 
-#### Icon Left
+### Icon Left
 
 <Canvas>
   <Story
@@ -88,7 +71,7 @@ export const Template = (args) => <Button {...args}>Button</Button>;
   </Story>
 </Canvas>
 
-#### Icon Right
+### Icon Right
 
 <Canvas>
   <Story
@@ -102,7 +85,7 @@ export const Template = (args) => <Button {...args}>Button</Button>;
   </Story>
 </Canvas>
 
-#### Medium
+### Medium
 
 <Canvas>
   <Story
@@ -115,7 +98,7 @@ export const Template = (args) => <Button {...args}>Button</Button>;
   </Story>
 </Canvas>
 
-#### Large
+### Large
 
 <Canvas>
   <Story
@@ -128,7 +111,7 @@ export const Template = (args) => <Button {...args}>Button</Button>;
   </Story>
 </Canvas>
 
-#### Disabled
+### Disabled
 
 <Canvas>
   <Story
