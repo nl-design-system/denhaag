@@ -1,4 +1,4 @@
 /** @import "./{component}.css **/
-
+@import "./tokens-list.css";
 @import "./tokens-button.css";
 @import "./tokens-divider.css";

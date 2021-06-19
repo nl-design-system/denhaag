@@ -1,14 +1,14 @@
 import React from 'react';
 import MaterialListItem from '@material-ui/core/ListItem';
 import BaseProps from '@gemeente-denhaag/baseprops';
-import { ContainerProps } from '@gemeente-denhaag/container';
+import { listitem_classes as classes } from './bem-mapping';
+import { ListItemIcon } from './ListItemIcon';
+import { ListItemSecondaryAction } from './ListItemSecondaryAction';
+import { ListItemText } from './ListItemText';
+import { ChevronRightIcon } from '@gemeente-denhaag/icons';
+import IconButton from '@gemeente-denhaag/iconbutton';
 
 export interface ListItemProps extends BaseProps {
-  /**
-   * Defines the `align-items` style property.
-   */
-  alignItems?: 'flex-start' | 'center';
-
   /**
    * If `true`, the list item will be focused during the first mount.
    * Focus will also be triggered if the value changes from false to true.
@@ -16,60 +16,107 @@ export interface ListItemProps extends BaseProps {
   autoFocus?: boolean;
 
   /**
-   * If `true`, the list item will be a button (using `ButtonBase`). Props intended
-   * for `ButtonBase` can then be applied to `ListItem`.
+   * A listitem can be used to navigate, in which case it has a different styling.
+   * Use to specify which type of action this item is.
    */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  button?: any;
+  actionType?: 'nav' | 'action';
 
   /**
-   * The component used for the root node.
-   * Either a string to use a HTML element or a component.
-   * By default, it's a `li` when `button` is `false` and a `div` when `button` is `true`.
+   * The callback fired when clicked
    */
-  component?: React.ElementType<React.HTMLAttributes<HTMLElement>>;
+  onClick?: (event: React.MouseEvent | React.TouchEvent) => void;
 
   /**
-   * The container component used when a `ListItemSecondaryAction` is the last child.
+   * The icon shown on the left side
    */
-  ContainerComponent?: React.ElementType<React.HTMLAttributes<HTMLDivElement>>;
+  leftIcon?: React.ReactNode;
 
   /**
-   * Props applied to the container component if used.
+   * The icon shown on the right side.
+   * If actionType is 'action' it is clickable and will be focused.
    */
-  ContainerProps?: Partial<ContainerProps>;
+  rightIcon?: React.ReactNode;
 
   /**
-   * If `true`, compact vertical padding designed for keyboard and mouse input will be used.
+   * The primary text shown in the listitem
    */
-  dense?: boolean;
+  primaryText: string;
 
   /**
-   * If `true`, the list item will be disabled.
+   * The secondary text shown under the primaryText in the listitem.
    */
-  disabled?: boolean;
-
-  /**
-   * If `true`, the left and right padding is removed.
-   */
-  disableGutters?: boolean;
-
-  /**
-   * If `true`, a 1px light border is added to the bottom of the list item.
-   */
-  divider?: boolean;
-
-  /**
-   * Use to apply selected styling.
-   */
-  selected?: boolean;
+  secondaryText?: string;
 }
 
 /**
  * Primary UI component for user interaction
  */
 export const ListItem: React.FC<ListItemProps> = (props: ListItemProps) => {
-  return <MaterialListItem {...props}>{props.children}</MaterialListItem>;
+  const muiProps = {
+    autoFocus: props.autoFocus,
+    actiontype: props.actionType,
+    secondarytext: props.secondaryText,
+    primarytext: props.primaryText,
+  };
+
+  const children = [];
+
+  if (props.leftIcon) {
+    children.push(<ListItemIcon key={0}>{props.leftIcon}</ListItemIcon>);
+  }
+  if (props.actionType === 'nav') {
+    children.push(
+      <ListItemSecondaryAction key={1}>
+        <IconButton aria-label="Navigate" color="inherit" edge="end" tabIndex={-1} disableRipple disableFocusRipple>
+          <ChevronRightIcon />
+        </IconButton>
+      </ListItemSecondaryAction>,
+    );
+  } else if (props.actionType === 'action') {
+    children.push(
+      <ListItemSecondaryAction key={2}>
+        <IconButton
+          aria-label="Action"
+          color="inherit"
+          onClick={props.onClick}
+          edge="end"
+          disableRipple
+          disableFocusRipple
+        >
+          {props.rightIcon}
+        </IconButton>
+      </ListItemSecondaryAction>,
+    );
+  }
+  children.push(<ListItemText key={3} primary={props.primaryText} secondary={props.secondaryText}></ListItemText>);
+
+  if (props.actionType === 'nav') {
+    return (
+      <MaterialListItem
+        {...muiProps}
+        button
+        component="li"
+        classes={classes}
+        tabIndex={0}
+        disableRipple
+        role={undefined}
+        onClick={props.onClick}
+      >
+        {children}
+      </MaterialListItem>
+    );
+  } else {
+    return (
+      <MaterialListItem
+        {...muiProps}
+        classes={classes}
+        component="li"
+        tabIndex={props.actionType === 'action' ? -1 : 0}
+      >
+        {children}
+      </MaterialListItem>
+    );
+  }
 };
 
 export default ListItem;

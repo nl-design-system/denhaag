@@ -39,7 +39,7 @@ export interface IconButtonProps extends BaseProps {
   /**
    * Callback fired when the IconButton is clicked.
    */
-  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement> | React.TouchEvent<HTMLButtonElement>) => void;
 }
 
 /**
