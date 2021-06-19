@@ -1,32 +1,14 @@
 import React from 'react';
 import MaterialDivider from '@material-ui/core/Divider';
 import { BaseDataDisplayClassesProps } from '@gemeente-denhaag/basedatadisplayprops';
+import { StylesProvider } from '@material-ui/core';
+import './divider.module.css';
 
 export interface DividerProps extends BaseDataDisplayClassesProps {
-  /**
-   * Absolutely position the element.
-   */
-  absolute?: boolean;
-
-  /**
-   * If true, a vertical divider will have the correct height when used in flex container.
-   */
-  flexItem?: boolean;
-
-  /**
-   * If true, the divider will have a lighter color.
-   */
-  light?: boolean;
-
   /**
    * The divider orientation.
    */
   orientation?: 'horizontal' | 'vertical';
-
-  /**
-   * The variant to use.
-   */
-  variant?: 'fullWidth' | 'inset' | 'middle';
 }
 
 /**
@@ -35,7 +17,16 @@ export interface DividerProps extends BaseDataDisplayClassesProps {
  * @constructor Constructs an instance of Divider.
  */
 export const Divider: React.FC<DividerProps> = (props: DividerProps) => {
-  return <MaterialDivider {...props} />;
+  const classes = {
+    root: 'denhaag-divider',
+    vertical: 'denhaag-divider--vertical',
+  };
+
+  return (
+    <StylesProvider injectFirst>
+      <MaterialDivider variant={'fullWidth'} classes={classes} role={'presentation'} orientation={props.orientation} />
+    </StylesProvider>
+  );
 };
 
 export default Divider;
