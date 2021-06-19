@@ -21,14 +21,15 @@ export interface TimelineProps extends BaseProps {
  * @param props The properties of a Timeline component.
  * @constructor Constructs an instance of Timeline.
  */
-export const Timeline: React.FC<TimelineProps> = ({ activeStep, children }: TimelineProps) => {
+export const Timeline: React.FC<TimelineProps> = ({ activeStep, children, id = undefined }: TimelineProps) => {
   return (
     <MaterialStepper
+      activeStep={activeStep}
+      classes={timelineClasses}
+      connector={<React.Fragment />}
+      id={id}
       nonLinear
       orientation="vertical"
-      connector={<React.Fragment />}
-      classes={timelineClasses}
-      activeStep={activeStep}
     >
       {children}
     </MaterialStepper>

@@ -27,15 +27,15 @@ export interface StepLabelProps extends StepComponentProps {
  * @constructor Constructs an instance of StepLabel.
  */
 export const StepLabel: React.FC<StepLabelProps> = ({
+  children,
+  icon,
   StepIconComponent,
   StepIconProps,
-  icon,
-  children,
-  id = undefined,
   active = false,
   completed = false,
   disabled = false,
   expanded = false,
+  id = undefined,
 }: StepLabelProps) => {
   let UpdatedStepIconComponent: React.ReactElement;
   if (StepIconComponent === undefined) {

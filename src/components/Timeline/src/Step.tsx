@@ -28,8 +28,8 @@ export const Step: React.FC<StepProps> = ({
   active = false,
   completed = false,
   disabled = false,
-  tabIndex = 0,
   id = undefined,
+  tabIndex = 0,
   ...props
 }: StepProps) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
@@ -76,17 +76,17 @@ export const Step: React.FC<StepProps> = ({
 
   return (
     <MaterialStep
-      id={id}
       active={active}
-      completed={completed}
+      aria-expanded={isExpanded}
       classes={stepClasses}
-      expanded={isExpanded}
+      completed={completed}
       disabled={disabled}
+      expanded={isExpanded}
+      id={id}
       onClick={toggle}
       onKeyDown={handleKeyDown}
-      tabIndex={tabIndex}
       role={role}
-      aria-expanded={isExpanded}
+      tabIndex={tabIndex}
       {...props}
     >
       <StepLabel>
