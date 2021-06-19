@@ -7,7 +7,7 @@ import {
   listitemtextsecondary_classes,
 } from './bem-mapping';
 
-import { Typography } from '@gemeente-denhaag/typography';
+import { Typography } from '@material-ui/core';
 
 export interface ListItemTextProps extends BaseProps {
   /**
