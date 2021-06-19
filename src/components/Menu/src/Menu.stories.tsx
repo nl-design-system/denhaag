@@ -20,8 +20,8 @@ export default {
 const opened = false;
 
 const Template: Story<MenuProps> = (args: MenuProps) => {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const handleClick = (event) => {
+  const [anchorEl, setAnchorEl] = React.useState<HTMLButtonElement | null>(null);
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
   };
   const handleClose = () => {

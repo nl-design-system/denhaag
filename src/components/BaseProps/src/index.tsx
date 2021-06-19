@@ -18,6 +18,11 @@ export default interface BaseProps {
    * The tab-index applied to the root element of the component.
    */
   tabIndex?: number;
+
+  /**
+   * The id attribute is used to specify a unique id for an HTML element.
+   */
+  id?: string;
 }
 
 /**

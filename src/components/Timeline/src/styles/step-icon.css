@@ -18,6 +18,10 @@
   color: var(--denhaag-timeline-step-icon-completed-color);
 }
 
+.denhaag-timeline__step-icon--disabled {
+  color: var(--denhaag-timeline-step-icon-disabled-color);
+}
+
 .denhaag-timeline__step-icon-text {
   font-size: var(--denhaag-timeline-step-icon-text-font-size);
 }

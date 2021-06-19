@@ -12,6 +12,7 @@
   --denhaag-timeline-step-icon-active-color: var(--denhaag-blue-3);
   --denhaag-timeline-step-icon-color: var(--denhaag-grey-3);
   --denhaag-timeline-step-icon-completed-color: var(--denhaag-green-3);
+  --denhaag-timeline-step-icon-disabled-color: var(--denhaag-grey-2);
   --denhaag-timeline-step-icon-margin: auto;
   --denhaag-timeline-step-icon-padding: 12px;
   --denhaag-timeline-step-icon-size: 20px;
