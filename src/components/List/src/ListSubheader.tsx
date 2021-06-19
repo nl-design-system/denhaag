@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography } from '@gemeente-denhaag/typography';
+import { Typography } from '@material-ui/core';
 
 import { listsubheader_classes as classes } from './bem-mapping';
 
