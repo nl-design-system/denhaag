@@ -1,0 +1,6 @@
+.denhaag-list__subheader {
+  font-family: var(--denhaag-font-family);
+  font-size: var(--denhaag-font-size-base);
+  font-weight: var(--denhaag-list-subheader-font-weight);
+  color: var(--denhaag-list-subheader-color);
+}

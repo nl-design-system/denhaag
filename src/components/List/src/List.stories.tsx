@@ -1,19 +1,16 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Checkbox from '@gemeente-denhaag/checkbox';
-import IconButton from '@gemeente-denhaag/iconbutton';
-import Avatar from '@gemeente-denhaag/avatar';
-import { ArchiveIcon, MessageIcon } from '@gemeente-denhaag/icons';
-import List, {
-  ListProps,
-  ListItem,
-  ListItemAvatar,
-  ListItemIcon,
-  ListItemSecondaryAction,
-  ListItemText,
-  ListSubheader,
-} from '.';
+import { HouseIcon, TrashIcon } from '@gemeente-denhaag/icons';
+import List, { ListProps, ListItem, ListSubheader } from '.';
 import pkg from '../package.json';
+import { action } from '@storybook/addon-actions';
+
+import './mui-override.css';
+import './listitem.css';
+import './listitemsecondaryaction.css';
+import './listitemicon.css';
+import './listitemtext.css';
+import './listsubheader.css';
 
 export default {
   title: 'Components/Data Display/List',
@@ -30,182 +27,88 @@ export default {
 
 const Template: Story<ListProps> = (args: ListProps) => (
   <List {...args}>
-    <ListItem dense>
-      <ListItemIcon>
-        <Checkbox />
-      </ListItemIcon>
-      <ListItemText primary="Line item" />
-      <ListItemSecondaryAction>
-        <IconButton edge="end" aria-label="comments">
-          <MessageIcon />
-        </IconButton>
-      </ListItemSecondaryAction>
-    </ListItem>
-    <ListItem button>
-      <ListItemAvatar>
-        <Avatar>
-          <ArchiveIcon />
-        </Avatar>
-      </ListItemAvatar>
-      <ListItemText primary="Single-line item" secondary="Secondary text" />
-    </ListItem>
+    <ListItem primaryText="ListItem" />
+    <ListItem
+      primaryText="Single-line item"
+      actionType="action"
+      onClick={action('TrashIcon click')}
+      leftIcon={<HouseIcon color="inherit"></HouseIcon>}
+      rightIcon={<TrashIcon />}
+    />
+    <ListItem
+      primaryText="Single-line item"
+      secondaryText="Secondary text"
+      onClick={action('ListItem click')}
+      leftIcon={<HouseIcon color="inherit" />}
+      actionType="nav"
+    />
   </List>
 );
 
 // language=JS
-const defaultCode = `
-<List>
-  <ListItem dense>
-    <ListItemIcon>
-      <Checkbox/>
-    </ListItemIcon>
-    <ListItemText primary='Line item'/>
-    <ListItemSecondaryAction>
-      <IconButton edge='end' aria-label='comments'>
-        <MessageIcon/>
-      </IconButton>
-    </ListItemSecondaryAction>
-  </ListItem>
-  <ListItem button>
-    <ListItemAvatar>
-      <Avatar>
-        <ArchiveIcon/>
-      </Avatar>
-    </ListItemAvatar>
-    <ListItemText primary='Single-line item' secondary='Secondary text'/>
-  </ListItem>
-</List>
-`;
-
-// language=JS
-const denseCode = `
-<List dense>
-  <ListItem dense>
-    <ListItemIcon>
-      <Checkbox/>
-    </ListItemIcon>
-    <ListItemText primary="Line item"/>
-    <ListItemSecondaryAction>
-      <IconButton edge="end" aria-label="comments">
-        <MessageIcon/>
-      </IconButton>
-    </ListItemSecondaryAction>
-  </ListItem>
-  <ListItem button>
-    <ListItemAvatar>
-      <Avatar>
-        <ArchiveIcon/>
-      </Avatar>
-    </ListItemAvatar>
-    <ListItemText primary="Single-line item" secondary="Secondary text"/>
-  </ListItem>
-</List>
-`;
-
-// language=JS
-const paddingCode = `
-<List disablePadding>
-  <ListItem dense>
-    <ListItemIcon>
-      <Checkbox/>
-    </ListItemIcon>
-    <ListItemText primary="Line item"/>
-    <ListItemSecondaryAction>
-      <IconButton edge="end" aria-label="comments">
-        <MessageIcon/>
-      </IconButton>
-    </ListItemSecondaryAction>
-  </ListItem>
-  <ListItem button>
-    <ListItemAvatar>
-      <Avatar>
-        <ArchiveIcon/>
-      </Avatar>
-    </ListItemAvatar>
-    <ListItemText primary="Single-line item" secondary="Secondary text"/>
-  </ListItem>
-</List>
-`;
-
-// language=JS
-const subheaderCode = `
-<List subheader="<ListSubheader component='div'>Nested Subheader</ListSubheader>">
-  <ListItem dense>
-    <ListItemIcon>
-      <Checkbox/>
-    </ListItemIcon>
-    <ListItemText primary="Line item"/>
-    <ListItemSecondaryAction>
-      <IconButton edge="end" aria-label="comments">
-        <MessageIcon/>
-      </IconButton>
-    </ListItemSecondaryAction>
-  </ListItem>
-  <ListItem button>
-    <ListItemAvatar>
-      <Avatar>
-        <ArchiveIcon/>
-      </Avatar>
-    </ListItemAvatar>
-    <ListItemText primary="Single-line item" secondary="Secondary text"/>
-  </ListItem>
+const listWithIconsCode = `
+<List subheader={<ListSubheader>Subheader</ListSubheader>}>
+  <ListItem primaryText="ListItem" />
+  <ListItem
+    primaryText="Single-line item"
+    actionType="action"
+    leftIcon={<HouseIcon color="inherit"></HouseIcon>}
+    rightIcon={<TrashIcon />}
+  />
+  <ListItem
+    primaryText="Single-line item"
+    secondaryText="Secondary text"
+    leftIcon={<HouseIcon color="inherit" />}
+    actionType="nav"
+  />
 </List>
 `;
 
 /**
- * Implementation of List.
+ * List with icons list
  */
-export const Default = Template.bind({});
-Default.parameters = {
-  docs: {
-    source: {
-      code: defaultCode,
-    },
-  },
+export const ListWithIcons = Template.bind({});
+ListWithIcons.args = {
+  subheader: <ListSubheader>Subheader</ListSubheader>,
 };
-
-/**
- * Dense variant of List component
- */
-export const Dense = Template.bind({});
-Dense.args = {
-  dense: true,
-};
-Dense.parameters = {
-  docs: {
-    source: {
-      code: denseCode,
-    },
-  },
-};
-
-/**
- * Variant of List component with padding disabled
- */
-export const PaddingDisabled = Template.bind({});
-PaddingDisabled.args = {
-  disablePadding: true,
-};
-PaddingDisabled.parameters = {
-  docs: {
-    source: {
-      code: paddingCode,
-    },
-  },
-};
-
-/**
- * Variant of List component with Subheader
- */
-export const Subheader = Template.bind({});
-Subheader.args = {
-  subheader: <ListSubheader component="div">Nested Subheader</ListSubheader>,
-};
-Subheader.parameters = {
+ListWithIcons.parameters = {
   docs: {
     source: {
       // language=HTML
-      code: subheaderCode,
+      code: listWithIconsCode,
+    },
+  },
+};
+
+const SimpleListTemplate: Story<ListProps> = (args: ListProps) => (
+  <List {...args}>
+    <ListItem primaryText="ListItem" />
+    <ListItem primaryText="ListItem" />
+    <ListItem primaryText="ListItem" />
+  </List>
+);
+
+// language=JS
+const simpleListCode = `
+<List subheader={<ListSubheader>Subheader</ListSubheader>}>
+  <ListItem primaryText="ListItem" />
+  <ListItem primaryText="ListItem" />
+  <ListItem primaryText="ListItem" />
+</List>
+`;
+
+/**
+ * Simple list
+ */
+export const SimpleList = SimpleListTemplate.bind({});
+SimpleList.args = {
+  subheader: <ListSubheader>Subheader</ListSubheader>,
+};
+SimpleList.parameters = {
+  docs: {
+    source: {
+      // language=HTML
+      code: simpleListCode,
     },
   },
 };
