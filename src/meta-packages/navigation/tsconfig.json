@@ -19,13 +19,13 @@
       "path": "../../components/Menu"
     },
     {
-      "path": "../../components/Stepper"
-    },
-    {
       "path": "../../components/SwipeableDrawer"
     },
     {
       "path": "../../components/Tab"
+    },
+    {
+      "path": "../../components/Timeline"
     }
   ]
 }

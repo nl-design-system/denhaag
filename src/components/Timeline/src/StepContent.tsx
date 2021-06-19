@@ -1,9 +1,12 @@
 import React from 'react';
-import MaterialStepContent from '@material-ui/core/StepContent';
-import BaseProps from '@gemeente-denhaag/baseprops';
 import { TransitionProps } from '@material-ui/core/transitions';
+import MaterialStepContent from '@material-ui/core/StepContent';
+import { StylesProvider } from '@material-ui/core';
 
-export interface StepContentProps extends BaseProps {
+import { StepComponentProps } from './StepComponentProps';
+import { stepContentClass } from './bem-mapping';
+
+export interface StepContentProps extends StepComponentProps {
   /**
    * The component used for the transition.
    */
@@ -34,8 +37,28 @@ export interface StepContentProps extends BaseProps {
  * @param props The properties of a StepContent component.
  * @constructor Constructs an instance of StepContent.
  */
-export const StepContent: React.FC<StepContentProps> = (props: StepContentProps) => {
-  return <MaterialStepContent {...props}>{props.children}</MaterialStepContent>;
+export const StepContent: React.FC<StepContentProps> = ({
+  TransitionComponent,
+  TransitionProps,
+  transitionDuration,
+  children,
+  id = undefined,
+  ...props
+}: StepContentProps) => {
+  return (
+    <StylesProvider injectFirst>
+      <MaterialStepContent
+        id={id}
+        className={stepContentClass}
+        TransitionComponent={TransitionComponent}
+        TransitionProps={TransitionProps}
+        transitionDuration={transitionDuration}
+        {...props}
+      >
+        {children}
+      </MaterialStepContent>
+    </StylesProvider>
+  );
 };
 
 export default StepContent;
