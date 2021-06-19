@@ -42,18 +42,17 @@ export const StepContent: React.FC<StepContentProps> = ({
   TransitionProps,
   transitionDuration,
   children,
-  tabIndex = 0,
+  id = undefined,
   ...props
 }: StepContentProps) => {
-  console.log(props);
   return (
     <StylesProvider injectFirst>
       <MaterialStepContent
+        id={id}
         className={stepContentClass}
         TransitionComponent={TransitionComponent}
         TransitionProps={TransitionProps}
         transitionDuration={transitionDuration}
-        tabIndex={tabIndex}
         {...props}
       >
         {children}

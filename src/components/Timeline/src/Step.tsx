@@ -29,6 +29,7 @@ export const Step: React.FC<StepProps> = ({
   completed = false,
   disabled = false,
   tabIndex = 0,
+  id = undefined,
   ...props
 }: StepProps) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
@@ -63,7 +64,9 @@ export const Step: React.FC<StepProps> = ({
   }
 
   let iconElement: string | React.ReactElement = '';
+  let role = '';
   if (hasDescription && completed) {
+    role = 'button';
     if (isExpanded) {
       iconElement = <ChevronUpIcon classes={stepCollapseIconClasses} />;
     } else {
@@ -73,13 +76,17 @@ export const Step: React.FC<StepProps> = ({
 
   return (
     <MaterialStep
+      id={id}
       active={active}
       completed={completed}
       classes={stepClasses}
       expanded={isExpanded}
+      disabled={disabled}
       onClick={toggle}
       onKeyDown={handleKeyDown}
       tabIndex={tabIndex}
+      role={role}
+      aria-expanded={isExpanded}
       {...props}
     >
       <StepLabel>

@@ -31,6 +31,7 @@ export const StepLabel: React.FC<StepLabelProps> = ({
   StepIconProps,
   icon,
   children,
+  id = undefined,
   active = false,
   completed = false,
   disabled = false,
@@ -53,7 +54,7 @@ export const StepLabel: React.FC<StepLabelProps> = ({
   });
 
   return (
-    <div className={classes}>
+    <div id={id} className={classes}>
       {UpdatedStepIconComponent}
       <p className="denhaag-timeline__step-label-text">{children}</p>
     </div>

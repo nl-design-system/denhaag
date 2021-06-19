@@ -23,6 +23,7 @@ export const StepIcon: React.FC<StepIconProps> = ({
   active = false,
   completed = false,
   disabled = false,
+  id = undefined,
 }: StepIconProps) => {
   let color: SvgIconProps['color'] = 'primary';
   if (disabled) {
@@ -57,7 +58,7 @@ export const StepIcon: React.FC<StepIconProps> = ({
 
   return (
     <StylesProvider injectFirst>
-      <SvgIcon viewBox="0 0 20 20" classes={stepIconClasses} color={color}>
+      <SvgIcon id={id} viewBox="0 0 20 20" classes={stepIconClasses} color={color}>
         <circle {...circleProps} />
         <text x="10" y="14" textAnchor="middle" className={textClasses}>
           {icon}
