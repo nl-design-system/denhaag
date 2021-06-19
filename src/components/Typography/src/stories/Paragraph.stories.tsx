@@ -17,7 +17,12 @@ export default {
 } as Meta;
 
 const Template: Story<ParagraphProps> = (args: ParagraphProps) => (
-  <Paragraph {...args}>This is a bit of text inside a Paragraph component.</Paragraph>
+  <Paragraph {...args}>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum mi velit, at facilisis nulla blandit
+    ac. Praesent elementum tellus diam, aliquet bibendum erat pretium id. Etiam vitae ex nec quam scelerisque ultricies.
+    Curabitur blandit gravida tellus, ac ullamcorper ex fermentum molestie. Mauris nec ligula sapien. Fusce faucibus
+    odio purus, eget dapibus massa lacinia non. Cras rutrum eget lectus interdum dapibus.
+  </Paragraph>
 );
 
 /**

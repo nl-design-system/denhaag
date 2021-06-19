@@ -59,6 +59,6 @@
   --utrecht-paragraph-color: var(--denhaag-grey-4);
 
   --utrecht-paragraph-lead-font-size: var(--denhaag-font-size-lg);
-  --utrecht-paragraph-lead-font-weight: 700;
-  --utrecht-paragraph-lead-line-height: normal;
+  --utrecht-paragraph-lead-font-weight: 400;
+  --utrecht-paragraph-lead-line-height: 26px;
 }
