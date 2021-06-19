@@ -1,4 +1,5 @@
 import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs/blocks";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
 import { ArrowBackRounded, ArrowForwardRounded } from "@material-ui/icons";
 
 import { Button } from "..";
@@ -26,7 +27,19 @@ Button labels indicate what action will take place when the user interacts with 
 Use buttons to communicate actions users can take and to allow users to interact with the page.
 Each page should have one primary button, and any remaining calls to action should be represented as lower emphasis buttons.
 
+### Design Tokens
+
+---
+
+<DesignTokenDocBlock categoryName="Button" viewType="table" />
+
+### Stories
+
+---
+
 export const Template = (args) => <Button {...args}>Button</Button>;
+
+#### Default
 
 <Canvas>
   <Story name="Default" args={{}}>
@@ -36,11 +49,7 @@ export const Template = (args) => <Button {...args}>Button</Button>;
 
 <ArgsTable of={Button} />
 
-### Stories
-
----
-
-#### Default
+#### Primary Action
 
 <Canvas>
   <Story
