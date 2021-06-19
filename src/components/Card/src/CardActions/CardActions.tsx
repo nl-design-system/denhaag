@@ -1,6 +1,9 @@
 import React from 'react';
 import MaterialCardActions from '@material-ui/core/CardActions';
 import BaseProps from '@gemeente-denhaag/baseprops';
+import './card-actions.css';
+import './mui-override.css';
+import { cardActionClasses } from './bem-mapping';
 
 export interface CardActionProps extends BaseProps {
   /**
@@ -13,7 +16,11 @@ export interface CardActionProps extends BaseProps {
  * Primary UI component for user interaction
  */
 export const CardActions: React.FC<CardActionProps> = (props: CardActionProps) => {
-  return <MaterialCardActions {...props}>{props.children}</MaterialCardActions>;
+  return (
+    <MaterialCardActions classes={cardActionClasses} disableSpacing={props.disableSpacing}>
+      {props.children}
+    </MaterialCardActions>
+  );
 };
 
 /**
