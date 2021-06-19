@@ -5,7 +5,7 @@ import { ArrowRightIcon } from '@gemeente-denhaag/icons';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import './mui-override.css';
 import './card.css';
-import { Typography } from '@gemeente-denhaag/typography';
+import { Typography } from '@material-ui/core';
 import { cardClasses, cardArrowClasses, cardTitleClasses, cardSubtitleClasses, cardCaseClasses } from './bem-mapping';
 import { CardContent } from '../CardContent/CardContent';
 import { CardActions } from '../CardActions/CardActions';
