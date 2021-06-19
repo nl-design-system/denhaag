@@ -31,10 +31,6 @@
   background-color: white;
 }
 
-.denhaag-list__item.denhaag-list__item--focus {
-  background-color: white;
-}
-
 .denhaag-list__item[actiontype="action"] {
   cursor: default;
 }
