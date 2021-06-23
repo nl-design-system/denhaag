@@ -5,7 +5,7 @@ import Timeline, { Step, TimelineProps } from '..';
 import pkg from '../../package.json';
 
 export default {
-  title: 'Components/navigation/Timeline',
+  title: 'Components/Navigation/Timeline',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
