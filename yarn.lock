@@ -15707,10 +15707,10 @@ postcss@7.0.21:
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
-postcss@^7, postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.17, postcss@^7.0.2, postcss@^7.0.21, postcss@^7.0.26, postcss@^7.0.27, postcss@^7.0.32, postcss@^7.0.35, postcss@^7.0.5, postcss@^7.0.6:
-  version "7.0.35"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.35.tgz#d2be00b998f7f211d8a276974079f2e92b970e24"
-  integrity sha512-3QT8bBJeX/S5zKTTjTCIjRF3If4avAT6kqxcASlTWEtAFCb9NH0OUxNDfgZSWdP5fJnBYCMEWkIFfWeugjzYMg==
+postcss@^7, postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.17, postcss@^7.0.2, postcss@^7.0.21, postcss@^7.0.26, postcss@^7.0.27, postcss@^7.0.32, postcss@^7.0.35, postcss@^7.0.36, postcss@^7.0.5, postcss@^7.0.6:
+  version "7.0.36"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.36.tgz#056f8cffa939662a8f5905950c07d5285644dfcb"
+  integrity sha512-BebJSIUMwJHRH0HAQoxN4u1CN86glsrwsW0q7T+/m44eXOUAxSNdHRkNZPYz5vVUbg17hFgOQDE7fZk7li3pZw==
   dependencies:
     chalk "^2.4.2"
     source-map "^0.6.1"
@@ -18032,15 +18032,15 @@ store2@^2.12.0:
   integrity sha512-7t+/wpKLanLzSnQPX8WAcuLCCeuSHoWdQuh9SB3xD0kNOM38DNf+0Oa+wmvxmYueRzkmh6IcdKFtvTa+ecgPDw==
 
 storybook-design-token@^1.0.1:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/storybook-design-token/-/storybook-design-token-1.0.2.tgz#c4e3bab05af5d1b052fad2cf3c68cb8aca31c880"
-  integrity sha512-UmZC1o8GhL8ovH7J9sxmGNl3fhW+LVTVMBfetK+Py9J9QNK+nZX56M90p/Qp+Vs85ck0riiBtJ4eT1rQMsQxow==
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/storybook-design-token/-/storybook-design-token-1.1.0.tgz#0bc24df22b484db3c51e6ede1a8650c7359700d6"
+  integrity sha512-rerCgio6lU/Yk2//S+QlPV/muxgK/fxdLCm59Wr493qxkEX0xLrWbIxiioZthEnqsBBrZ8hqkXTc9cmIN545ew==
   dependencies:
     "@storybook/addons" "^6.2.9"
     "@storybook/components" "^6.2.9"
     "@storybook/theming" "^6.2.9"
     polished "^4.1.0"
-    postcss "^7.0.35"
+    postcss "^7.0.36"
     postcss-scss "^2.1.1"
     raw-loader "^4.0.2"
     react-storage-hooks "^4.0.1"
