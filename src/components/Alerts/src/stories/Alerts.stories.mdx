@@ -1,0 +1,122 @@
+import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/addon-docs/blocks";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+
+import { action } from "@storybook/addon-actions";
+import { Alerts } from "..";
+import pkg from "../../package.json";
+
+<Meta
+  title="Components/Data Display/Alerts"
+  component={Alerts}
+  parameters={{ componentSubtitle: `${pkg.name} - ${pkg.version}`, docs: { source: { type: "dynamic" } } }}
+/>
+
+## Stories
+
+### Default
+
+<Canvas>
+  <Story
+    name="Default"
+    args={{
+      title: "Title",
+      text: "Here comes text. This text provides additional details and actionable steps the user can take.",
+    }}
+  >
+    {(args) => <Alerts {...args}></Alerts>}
+  </Story>
+</Canvas>
+
+<ArgsTable of={Alerts} />
+
+### Alert
+
+<Canvas>
+  <Story
+    name="Alert"
+    args={{
+      title: "Title",
+      text: "Here comes text. This text provides additional details and actionable steps the user can take.",
+      variant: "alert",
+    }}
+  >
+    {(args) => <Alerts {...args}></Alerts>}
+  </Story>
+</Canvas>
+
+### Info
+
+<Canvas>
+  <Story
+    name="Info"
+    args={{
+      title: "Title",
+      text: "Here comes text. This text provides additional details and actionable steps the user can take.",
+      variant: "info",
+    }}
+  >
+    {(args) => <Alerts {...args}></Alerts>}
+  </Story>
+</Canvas>
+
+### Success
+
+<Canvas>
+  <Story
+    name="Success"
+    args={{
+      title: "Title",
+      text: "Here comes text. This text provides additional details and actionable steps the user can take.",
+      variant: "success",
+    }}
+  >
+    {(args) => <Alerts {...args}></Alerts>}
+  </Story>
+</Canvas>
+
+### Warning
+
+<Canvas>
+  <Story
+    name="Warning"
+    args={{
+      title: "Title",
+      text: "Here comes text. This text provides additional details and actionable steps the user can take.",
+      variant: "warning",
+    }}
+  >
+    {(args) => <Alerts {...args}></Alerts>}
+  </Story>
+</Canvas>
+
+### Action
+
+<Canvas>
+  <Story
+    name="Warning with Action"
+    args={{
+      title: "Title",
+      text: "Here comes text. This text provides additional details and actionable steps the user can take.",
+      variant: "warning",
+      action: action("Warning Action clicked"),
+    }}
+  >
+    {(args) => <Alerts {...args}></Alerts>}
+  </Story>
+</Canvas>
+
+### Close button
+
+<Canvas>
+  <Story
+    name="Close button"
+    args={{
+      title: "Title",
+      text: "Here comes text. This text provides additional details and actionable steps the user can take.",
+      variant: "info",
+      close: action("Warning Action clicked"),
+    }}
+  >
+    {(args) => <Alerts {...args}></Alerts>}
+  </Story>
+</Canvas>
