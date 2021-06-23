@@ -25,11 +25,6 @@
     "@gemeente-denhaag/baseprops": "^0.1.7",
     "@gemeente-denhaag/divider": "^0.1.7",
     "@gemeente-denhaag/list": "^0.1.7",
-    "@gemeente-denhaag/listitem": "^0.1.7",
-    "@gemeente-denhaag/listitemavatar": "^0.1.7",
-    "@gemeente-denhaag/listitemsecondaryaction": "^0.1.7",
-    "@gemeente-denhaag/listitemtext": "^0.1.7",
-    "@gemeente-denhaag/listsubheader": "^0.1.7",
     "@gemeente-denhaag/typography": "^0.1.7"
   },
   "peerDependencies": {
