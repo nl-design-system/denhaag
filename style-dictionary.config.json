@@ -6,7 +6,7 @@
       "buildPath": "dist/",
       "files": [
         {
-          "destination": "index.js",
+          "destination": "tokens.js",
           "format": "javascript/es6"
         }
       ]
