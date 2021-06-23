@@ -2,6 +2,24 @@
   box-shadow: none;
   transition: none;
   text-transform: none;
+  letter-spacing: 0;
+  line-height: 1.75;
+  cursor: pointer;
+  display: inline-flex;
+  outline: 0;
+  position: relative;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+  text-decoration: none;
+  border: 0;
+}
+
+.denhaag-button > span {
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
 }
 
 .denhaag-button--hover,
