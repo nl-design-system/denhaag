@@ -13,7 +13,9 @@ Each page should have one primary button, and any remaining calls to action shou
 
 ## Alternatives and related components
 
-**Use links** for navigation actions that appear within or immediately after a sentence.
+Use `Link` for navigation actions that appear within or immediately after a sentence.
+
+[Navigate to Link](../?path=/docs/components-navigation-link--default)
 
 ## Anatomy
 
@@ -106,14 +108,6 @@ Alerts provide context and assist workflows for users with disabilities.
 Users generally expect buttons to send data or take action, and to be able to navigate links. If navigation is required for the button component, use the url prop. The control displays an anchor in the form of a button, instead of a button in HTML, to convey this difference.
 
 See links for more information on creating accessible links.
-
-### Labeling
-
-[technical requirements, such as: accessibilityLabel]
-
-### External links
-
-[technical requirements]
 
 ### Keyboard support
 
