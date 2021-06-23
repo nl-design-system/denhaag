@@ -1,4 +1,4 @@
-import { Meta, Story, Canvas, ArgsTable, Description } from "@storybook/addon-docs/blocks";
+import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/addon-docs/blocks";
 import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
 import { ArrowBackRounded, ArrowForwardRounded } from "@material-ui/icons";
 
@@ -20,13 +20,11 @@ import readme from "../../README.md";
 
 ## Stories
 
-export const Template = (args) => <Button {...args}>Button</Button>;
-
 ### Default
 
 <Canvas>
   <Story name="Default" args={{}}>
-    {Template.bind({})}
+    {(args) => <Button {...args}>Button</Button>}
   </Story>
 </Canvas>
 
@@ -41,7 +39,7 @@ export const Template = (args) => <Button {...args}>Button</Button>;
       variant: "primary-action",
     }}
   >
-    {Template.bind({})}
+    {(args) => <Button {...args}>Button</Button>}
   </Story>
 </Canvas>
 
@@ -54,7 +52,7 @@ export const Template = (args) => <Button {...args}>Button</Button>;
       variant: "secondary-action",
     }}
   >
-    {Template.bind({})}
+    {(args) => <Button {...args}>Button</Button>}
   </Story>
 </Canvas>
 
@@ -67,7 +65,7 @@ export const Template = (args) => <Button {...args}>Button</Button>;
       startIcon: <ArrowBackRounded />,
     }}
   >
-    {Template.bind({})}
+    {(args) => <Button {...args}>Button</Button>}
   </Story>
 </Canvas>
 
@@ -81,7 +79,7 @@ export const Template = (args) => <Button {...args}>Button</Button>;
       endIcon: <ArrowForwardRounded />,
     }}
   >
-    {Template.bind({})}
+    {(args) => <Button {...args}>Button</Button>}
   </Story>
 </Canvas>
 
@@ -94,7 +92,7 @@ export const Template = (args) => <Button {...args}>Button</Button>;
       size: "medium",
     }}
   >
-    {Template.bind({})}
+    {(args) => <Button {...args}>Button</Button>}
   </Story>
 </Canvas>
 
@@ -107,7 +105,7 @@ export const Template = (args) => <Button {...args}>Button</Button>;
       size: "large",
     }}
   >
-    {Template.bind({})}
+    {(args) => <Button {...args}>Button</Button>}
   </Story>
 </Canvas>
 
@@ -120,6 +118,6 @@ export const Template = (args) => <Button {...args}>Button</Button>;
       disabled: true,
     }}
   >
-    {Template.bind({})}
+    {(args) => <Button {...args}>Button</Button>}
   </Story>
 </Canvas>
