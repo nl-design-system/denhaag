@@ -1,6 +1,8 @@
 import React from 'react';
+import { StylesProvider } from '@material-ui/core';
 import MaterialIconButton from '@material-ui/core/IconButton';
 import BaseProps from '@gemeente-denhaag/baseprops';
+import './mui-override.css';
 
 export interface IconButtonProps extends BaseProps {
   /**
@@ -13,16 +15,6 @@ export interface IconButtonProps extends BaseProps {
    * If true, the button will be disabled.
    */
   disabled?: boolean;
-
-  /**
-   * If true, the keyboard focus ripple will be disabled.
-   */
-  disableFocusRipple?: boolean;
-
-  /**
-   * If true, the ripple effect will be disabled.
-   */
-  disableRipple?: boolean;
 
   /**
    * If given, uses a negative margin to counteract the padding on one side (this is often helpful for aligning the left or right side of the icon with content above or below,
@@ -49,23 +41,26 @@ export interface IconButtonProps extends BaseProps {
  */
 export const IconButton: React.FC<IconButtonProps> = ({
   color = 'inherit',
-  disabled = false,
-  disableFocusRipple = false,
   edge = false,
   size = 'medium',
+  disabled = false,
   ...props
 }: IconButtonProps) => {
   return (
-    <MaterialIconButton
-      color={color}
-      disabled={disabled}
-      disableFocusRipple={disableFocusRipple}
-      edge={edge}
-      size={size}
-      {...props}
-    >
-      {props.children}
-    </MaterialIconButton>
+    <StylesProvider injectFirst>
+      <MaterialIconButton
+        className="denhaag-icon-button"
+        color={color}
+        disabled={disabled}
+        disableRipple
+        disableFocusRipple
+        edge={edge}
+        size={size}
+        {...props}
+      >
+        {props.children}
+      </MaterialIconButton>
+    </StylesProvider>
   );
 };
 
