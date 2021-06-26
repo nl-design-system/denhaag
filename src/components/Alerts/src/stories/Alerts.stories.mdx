@@ -13,31 +13,17 @@ import pkg from "../../package.json";
 
 ## Stories
 
-### Default
-
-<Canvas>
-  <Story
-    name="Default"
-    args={{
-      title: "Title",
-      text: "Here comes text. This text provides additional details and actionable steps the user can take.",
-    }}
-  >
-    {(args) => <Alerts {...args}></Alerts>}
-  </Story>
-</Canvas>
-
 <ArgsTable of={Alerts} />
 
-### Alert
+### Error
 
 <Canvas>
   <Story
-    name="Alert"
+    name="Error"
     args={{
       title: "Title",
       text: "Here comes text. This text provides additional details and actionable steps the user can take.",
-      variant: "alert",
+      variant: "error",
     }}
   >
     {(args) => <Alerts {...args}></Alerts>}
@@ -98,7 +84,7 @@ import pkg from "../../package.json";
       title: "Title",
       text: "Here comes text. This text provides additional details and actionable steps the user can take.",
       variant: "warning",
-      action: action("Warning Action clicked"),
+      action: { buttonText: "Action", onClick: action("Warning Action clicked") },
     }}
   >
     {(args) => <Alerts {...args}></Alerts>}
@@ -114,7 +100,24 @@ import pkg from "../../package.json";
       title: "Title",
       text: "Here comes text. This text provides additional details and actionable steps the user can take.",
       variant: "info",
-      close: action("Warning Action clicked"),
+      close: action("Close clicked"),
+    }}
+  >
+    {(args) => <Alerts {...args}></Alerts>}
+  </Story>
+</Canvas>
+
+### Close and Action buttons
+
+<Canvas>
+  <Story
+    name="Close and Action buttons"
+    args={{
+      title: "Title",
+      text: "Here comes text. This text provides additional details and actionable steps the user can take.",
+      variant: "success",
+      action: { buttonText: "Continue", onClick: action("Warning Action clicked") },
+      close: action("Close clicked"),
     }}
   >
     {(args) => <Alerts {...args}></Alerts>}
