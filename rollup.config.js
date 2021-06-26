@@ -5,6 +5,7 @@ import svgr from '@svgr/rollup';
 import _ from 'lodash';
 import path from 'path';
 import postcss from 'rollup-plugin-postcss';
+import postcsslogical from 'postcss-logical';
 
 import tsconfig from './tsconfig.json';
 
@@ -22,6 +23,7 @@ export default {
   },
   plugins: [
     postcss({
+      plugins: [postcsslogical()],
       extensions: ['.css'],
       minimize: true,
     }),
