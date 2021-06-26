@@ -1,11 +1,12 @@
 import typescript from '@rollup/plugin-typescript';
 import nodeResolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
-import tsconfig from './tsconfig.json';
+import svgr from '@svgr/rollup';
 import _ from 'lodash';
 import path from 'path';
-import image from '@rollup/plugin-image';
 import postcss from 'rollup-plugin-postcss';
+
+import tsconfig from './tsconfig.json';
 
 const externalDependencies = ['react', 'react-dom', '@material-ui/core'];
 const internalDependencies = _.keys(tsconfig.compilerOptions.paths);
@@ -26,7 +27,7 @@ export default {
     }),
     nodeResolve(),
     commonjs({ include: /node_modules/ }),
-    image(),
+    svgr({ icon: true, svgo: true, memo: true }),
     typescript({ cacheDir: path.join(__dirname, '.rollup-cache') }),
   ],
   external: dependencies,
