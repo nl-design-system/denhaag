@@ -5,46 +5,5 @@
     "outDir": "dist",
   },
   "include": ["src/**/*"],
-  "exclude": ["dist", "src/*.stories.tsx"],
-  "references": [
-    {
-      "path": "../../components/BaseProps"
-    },
-    {
-      "path": "../../components/Button"
-    },
-    {
-      "path": "../../components/Checkbox"
-    },
-    {
-      "path": "../../components/FormControl"
-    },
-    {
-      "path": "../../components/FormControlLabel"
-    },
-    {
-      "path": "../../components/FormGroup"
-    },
-    {
-      "path": "../../components/IconButton"
-    },
-    {
-      "path": "../../components/InputLabel"
-    },
-    {
-      "path": "../../components/Pickers"
-    },
-    {
-      "path": "../../components/Radio"
-    },
-    {
-      "path": "../../components/Select"
-    },
-    {
-      "path": "../../components/Switch"
-    },
-    {
-      "path": "../../components/TextField"
-    }
-  ]
+  "exclude": ["dist", "src/**/*.stories.tsx"]
 }

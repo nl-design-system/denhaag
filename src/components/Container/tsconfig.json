@@ -5,10 +5,5 @@
     "outDir": "dist",
   },
   "include": ["src/**/*"],
-  "exclude": ["dist", "src/**/*.stories.tsx"],
-  "references": [
-    {
-      "path": "../BaseLayoutProps"
-    }
-  ]
+  "exclude": ["dist", "src/**/*.stories.tsx"]
 }

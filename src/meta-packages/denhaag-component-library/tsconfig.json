@@ -5,28 +5,5 @@
     "outDir": "dist",
   },
   "include": ["src/**/*"],
-  "exclude": ["dist", "src/*.stories.tsx"],
-  "references": [
-    {
-      "path": "../../components/BaseProps"
-    },
-    {
-      "path": "../datadisplay"
-    },
-    {
-      "path": "../input"
-    },
-    {
-      "path": "../layout"
-    },
-    {
-      "path": "../navigation"
-    },
-    {
-      "path": "../../components/Pickers"
-    },
-    {
-      "path": "../surfaces"
-    }
-  ]
+  "exclude": ["dist", "src/**/*.stories.tsx"]
 }

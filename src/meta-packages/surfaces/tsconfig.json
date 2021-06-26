@@ -5,22 +5,5 @@
     "outDir": "dist",
   },
   "include": ["src/**/*"],
-  "exclude": ["dist", "src/*.stories.tsx"],
-  "references": [
-    {
-      "path": "../../components/Accordion"
-    },
-    {
-      "path": "../../components/AppBar"
-    },
-    {
-      "path": "../../components/BaseProps"
-    },
-    {
-      "path": "../../components/Card"
-    },
-    {
-      "path": "../../components/Toolbar"
-    }
-  ]
+  "exclude": ["dist", "src/**/*.stories.tsx"]
 }

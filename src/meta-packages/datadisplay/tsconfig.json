@@ -5,25 +5,5 @@
     "outDir": "dist",
   },
   "include": ["src/**/*"],
-  "exclude": ["dist", "src/*.stories.tsx"],
-  "references": [
-    {
-      "path": "../../components/Avatar"
-    },
-    {
-      "path": "../../components/Badge"
-    },
-    {
-      "path": "../../components/BaseProps"
-    },
-    {
-      "path": "../../components/Divider"
-    },
-    {
-      "path": "../../components/List"
-    },
-    {
-      "path": "../../components/Typography"
-    }
-  ]
+  "exclude": ["dist", "src/**/*.stories.tsx"]
 }
