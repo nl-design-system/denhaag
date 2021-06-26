@@ -1,7 +1,7 @@
 import React from 'react';
 import MaterialList from '@material-ui/core/List';
 import BaseProps from '@gemeente-denhaag/baseprops';
-import { ListSubheaderProps } from '@gemeente-denhaag/listsubheader';
+import { ListSubheaderProps } from './ListSubheader';
 
 import { StylesProvider } from '@material-ui/core';
 import { list_classes as classes } from './bem-mapping';
