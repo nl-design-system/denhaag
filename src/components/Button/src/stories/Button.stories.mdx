@@ -1,7 +1,6 @@
 import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/addon-docs/blocks";
 import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
-import { ArrowBackRounded, ArrowForwardRounded } from "@material-ui/icons";
-
+import { ArrowLeftIcon, ArrowRightIcon } from "@gemeente-denhaag/icons";
 import { Button } from "..";
 import pkg from "../../package.json";
 import readme from "../../README.md";
@@ -62,7 +61,7 @@ import readme from "../../README.md";
   <Story
     name="Icon Left"
     args={{
-      startIcon: <ArrowBackRounded />,
+      startIcon: <ArrowLeftIcon />,
     }}
   >
     {(args) => <Button {...args}>Button</Button>}
@@ -76,7 +75,7 @@ import readme from "../../README.md";
     name="Icon Right"
     args={{
       variant: "secondary-action",
-      endIcon: <ArrowForwardRounded />,
+      endIcon: <ArrowRightIcon />,
     }}
   >
     {(args) => <Button {...args}>Button</Button>}
