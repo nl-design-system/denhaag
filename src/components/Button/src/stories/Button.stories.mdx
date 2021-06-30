@@ -31,6 +31,9 @@ import readme from "../../README.md";
       docs: {
         source: {
           code: `
+import { Button } from "@gemeente-denhaag/button";
+const ReactButton = () => <Button onclick={() => alert('Hello from Button 👋')}>Button</Button>;
+// This 👆 transpiles into this 👇 in the DOM
 <button class="denhaag-button denhaag-button--primary-action denhaag-button--medium">
   <span class="denhaag-button__label">Button</span>
 </button>
