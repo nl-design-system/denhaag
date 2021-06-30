@@ -70,7 +70,7 @@ export const Alerts: React.FC<AlertsProps> = ({ title, text, variant, action, cl
   let closeButton = undefined;
   if (close !== undefined) {
     closeButton = (
-      <IconButton aria-label="Close" color="inherit" onClick={close} disableRipple disableFocusRipple>
+      <IconButton aria-label="Close" color="inherit" onClick={close}>
         <CloseIcon />
       </IconButton>
     );
