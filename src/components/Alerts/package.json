@@ -25,7 +25,8 @@
       "@gemeente-denhaag/baseprops": "^0.1.7",
       "@gemeente-denhaag/typography": "^0.1.7",
       "@gemeente-denhaag/button": "^0.1.7",
-      "@gemeente-denhaag/iconbutton": "^0.1.7"
+      "@gemeente-denhaag/iconbutton": "^0.1.7",
+      "@gemeente-denhaag/icons": "^0.1.0"
   },
   "peerDependencies": {
       "react": "^17.0.1"
