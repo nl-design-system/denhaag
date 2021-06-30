@@ -14,8 +14,7 @@ Use notifications to inform users of important changes, ongoing circumstances, u
 - Use highlights to notify users about important and temporary updates
 - Use a card to group similar concepts in the interface
 
-
-[Navigate to Card](../?path=/docs/components-data-display-alerts--error)
+[Navigate to Card](../?path=/docs/components-cards-card--case)
 
 ## Anatomy
 The alert consists of:
