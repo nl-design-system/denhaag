@@ -2,21 +2,29 @@
   border-width: 0;
   border-radius: var(--denhaag-alert-border-radius);
   color: var(--denhaag-alert-text-color);
-  padding-inline-start: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline-start: var(--denhaag-alert-padding-inline-start);
+  padding-inline-end: var(--denhaag-alert-padding-inline-end);
+  padding-block-start: var(--denhaag-alert-padding-block-start);
+  padding-block-end: var(--denhaag-alert-padding-block-end);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .denhaag-alert .utrecht-paragraph {
-  margin-block-end: 16px;
+  margin-block-end: 0;
 }
 
+/* optical alignment icons */
 .denhaag-alert > .denhaag-alert__icon {
   margin-block-start: 4px;
+}
+.denhaag-alert__close {
+  padding-block-start: 4px;
+}
+
+.denhaag-alert .denhaag-button {
+  margin-block-start: var(--denhaag-alert-action-padding-block-start);
 }
 
 .denhaag-alert[variant="error"] {
@@ -100,5 +108,14 @@
 }
 
 .denhaag-alert__content {
-  padding-inline-start: 24px;
+  padding-inline-start: var(--denhaag-alert-content-padding-inline-start);
+  padding-inline-end: var(--denhaag-alert-content-padding-inline-end);
+}
+
+/* The position of the button is configurable with padding of alert__content and alert */
+.denhaag-alert__close button {
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
 }

@@ -1,5 +1,14 @@
 :root {
   --denhaag-alert-border-radius: var(--denhaag-border-radius);
+  --denhaag-alert-padding-block-start: 24px;
+  --denhaag-alert-padding-block-end: 24px;
+  --denhaag-alert-padding-inline-start: 24px;
+  --denhaag-alert-padding-inline-end: 24px;
+
+  --denhaag-alert-content-padding-inline-start: 24px;
+  --denhaag-alert-content-padding-inline-end: 24px;
+
+  --denhaag-alert-action-padding-block-start: 16px;
 
   --denhaag-alert-error-background-color: var(--denhaag-red-1);
   --denhaag-alert-error-title-color: var(--denhaag-red-5);
