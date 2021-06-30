@@ -2,7 +2,7 @@ import React from 'react';
 
 import './alert.css';
 import { Heading4, Paragraph } from '@gemeente-denhaag/typography';
-import { AlertTriangleIcon, CheckCircleIcon, CircleInformationIcon, CloseIcon } from '@gemeente-denhaag/Icons';
+import { AlertTriangleIcon, CheckCircleIcon, CircleInformationIcon, CloseIcon } from '@gemeente-denhaag/icons';
 import Button from '@gemeente-denhaag/button';
 import IconButton from '@gemeente-denhaag/iconbutton';
 
