@@ -4,12 +4,15 @@ import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
 import { action } from "@storybook/addon-actions";
 import { Alerts } from "..";
 import pkg from "../../package.json";
+import readme from "../../README.md";
 
 <Meta
   title="Components/Data Display/Alerts"
   component={Alerts}
   parameters={{ componentSubtitle: `${pkg.name} - ${pkg.version}`, docs: { source: { type: "dynamic" } } }}
 />
+
+<Description markdown={readme} />
 
 ## Stories
 
@@ -24,6 +27,32 @@ import pkg from "../../package.json";
       title: "Title",
       text: "Here comes text. This text provides additional details and actionable steps the user can take.",
       variant: "error",
+    }}
+    parameters={{
+      docs: {
+        source: {
+          code: `
+import { Alert } from "@gemeente-denhaag/alert";
+const ErrorAlert = <Alerts
+  text="Here comes text. This text provides additional details and actionable steps the user can take."
+  title="Title"
+  variant="error"
+/>
+// This 👆 transpiles into this 👇 in the DOM
+<div class="denhaag-alert" variant="error">
+  <div class="denhaag-alert__icon">
+    <svg width="24" height="24" ...>...</svg>
+  </div>
+  <div class="denhaag-alert__content">
+    <h4 class="utrecht-heading-4 utrecht-heading-4--distanced">Title</h4>
+    <p class="utrecht-paragraph utrecht-paragraph--distanced">
+      Here comes text. This text provides additional details and actionable steps the user can take.
+    </p>
+  </div>
+</div>
+    `,
+        },
+      },
     }}
   >
     {(args) => <Alerts {...args}></Alerts>}
