@@ -5,8 +5,8 @@
   --denhaag-alert-padding-inline-start: 24px;
   --denhaag-alert-padding-inline-end: 24px;
 
-  --denhaag-alert-content-padding-inline-start: 24px;
-  --denhaag-alert-content-padding-inline-end: 24px;
+  --denhaag-alert-content-margin-inline-start: 24px;
+  --denhaag-alert-content-margin-inline-end: 24px;
 
   --denhaag-alert-action-padding-block-start: 16px;
 
@@ -15,22 +15,26 @@
   --denhaag-alert-error-text-color: var(--denhaag-red-5);
   --denhaag-alert-error-icon-color: var(--denhaag-red-3);
   --denhaag-alert-error-action-button-color: var(--denhaag-red-3);
+  --denhaag-alert-error-close-icon-color: var(--denhaag-red-5);
 
   --denhaag-alert-info-background-color: var(--denhaag-blue-1);
   --denhaag-alert-info-title-color: var(--denhaag-blue-5);
   --denhaag-alert-info-text-color: var(--denhaag-blue-5);
   --denhaag-alert-info-icon-color: var(--denhaag-blue-3);
   --denhaag-alert-info-action-button-color: var(--denhaag-blue-3);
+  --denhaag-alert-info-close-icon-color: var(--denhaag-blue-5);
 
   --denhaag-alert-success-background-color: var(--denhaag-green-1);
   --denhaag-alert-success-title-color: var(--denhaag-green-5);
   --denhaag-alert-success-text-color: var(--denhaag-green-5);
   --denhaag-alert-success-icon-color: var(--denhaag-green-3);
   --denhaag-alert-success-action-button-color: var(--denhaag-green-3);
+  --denhaag-alert-success-close-icon-color: var(--denhaag-green-5);
 
   --denhaag-alert-warning-background-color: var(--denhaag-orange-1);
   --denhaag-alert-warning-title-color: var(--denhaag-orange-5);
   --denhaag-alert-warning-text-color: var(--denhaag-orange-5);
   --denhaag-alert-warning-icon-color: var(--denhaag-orange-3);
   --denhaag-alert-warning-action-button-color: var(--denhaag-orange-3);
+  --denhaag-alert-warning-close-icon-color: var(--denhaag-orange-5);
 }
