@@ -78,11 +78,13 @@ export const Alerts: React.FC<AlertsProps> = ({ title, text, variant, action, cl
 
   return (
     <div className="denhaag-alert" {...customAttributes}>
-      <div className="denhaag-alert__icon">{icon}</div>
-      <div className="denhaag-alert__content">
-        <Heading4>{title}</Heading4>
-        <Paragraph>{text}</Paragraph>
-        {actionButton}
+      <div className="denhaag-alert__main">
+        <div className="denhaag-alert__icon">{icon}</div>
+        <div className="denhaag-alert__content">
+          <Heading4>{title}</Heading4>
+          <Paragraph>{text}</Paragraph>
+          {actionButton}
+        </div>
       </div>
       {closeButton !== undefined ? <div className="denhaag-alert__close">{closeButton}</div> : undefined}
     </div>
