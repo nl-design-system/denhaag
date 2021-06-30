@@ -84,7 +84,7 @@ export const Alerts: React.FC<AlertsProps> = ({ title, text, variant, action, cl
         <Paragraph>{text}</Paragraph>
         {actionButton}
       </div>
-      <div className="denhaag-alert__close">{closeButton}</div>
+      {closeButton !== undefined ? <div className="denhaag-alert__close">{closeButton}</div> : undefined}
     </div>
   );
 };
