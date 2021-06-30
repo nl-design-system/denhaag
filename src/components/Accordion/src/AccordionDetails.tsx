@@ -1,5 +1,5 @@
 import React from 'react';
-import MaterialAccordionDetails from '@material-ui/core/AccordionDetails';
+import { AccordionDetails as MaterialAccordionDetails } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
 
 export type AccordionDetailsProps = BaseProps;

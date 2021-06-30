@@ -1,5 +1,5 @@
 import React, { useEffect, useState, KeyboardEventHandler } from 'react';
-import MaterialStep from '@material-ui/core/Step';
+import { Step as MaterialStep } from '@material-ui/core';
 import { ChevronDownIcon, ChevronUpIcon } from '@gemeente-denhaag/icons';
 
 import { StepContent, StepLabel } from '.';

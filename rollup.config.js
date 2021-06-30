@@ -9,7 +9,7 @@ import postcsslogical from 'postcss-logical';
 
 import tsconfig from './tsconfig.json';
 
-const externalDependencies = ['react', 'react-dom', '@material-ui/core'];
+const externalDependencies = ['@material-ui/core', '@material-ui/lab', '@material-ui/pickers', 'react', 'react-dom'];
 const internalDependencies = _.keys(tsconfig.compilerOptions.paths);
 const dependencies = externalDependencies.concat(internalDependencies);
 

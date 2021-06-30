@@ -1,5 +1,5 @@
 import React from 'react';
-import MaterialListItemText from '@material-ui/core/ListItemText';
+import { ListItemText as MaterialListItemText } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import {
   listitemtext_classes as classes,

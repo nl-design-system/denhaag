@@ -1,5 +1,5 @@
 import React from 'react';
-import MaterialAppBar from '@material-ui/core/AppBar';
+import { AppBar as MaterialAppBar } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface AppBarProps extends BaseProps {

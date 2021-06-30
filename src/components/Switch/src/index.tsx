@@ -1,6 +1,6 @@
-import MaterialSwitch from '@material-ui/core/Switch';
-import { BaseClassesProps } from '@gemeente-denhaag/baseprops';
 import React from 'react';
+import { Switch as MaterialSwitch } from '@material-ui/core';
+import { BaseClassesProps } from '@gemeente-denhaag/baseprops';
 
 export interface SwitchProps extends BaseClassesProps {
   /**

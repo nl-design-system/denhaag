@@ -1,5 +1,5 @@
 import React from 'react';
-import MaterialToolbar from '@material-ui/core/Toolbar';
+import { Toolbar as MaterialToolbar } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface ToolbarProps extends BaseProps {

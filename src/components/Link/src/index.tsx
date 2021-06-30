@@ -1,7 +1,6 @@
-// import BaseProps from "@gemeente-denhaag/baseprops";
-import BaseProps from '@gemeente-denhaag/baseprops';
 import React from 'react';
-import MaterialLink from '@material-ui/core/Link';
+import { Link as MaterialLink } from '@material-ui/core';
+import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface LinkProps extends BaseProps, React.AnchorHTMLAttributes<never> {
   /**

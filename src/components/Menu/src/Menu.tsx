@@ -1,5 +1,5 @@
 import React from 'react';
-import MaterialMenu from '@material-ui/core/Menu';
+import { Menu as MaterialMenu } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface MenuProps extends BaseProps {
