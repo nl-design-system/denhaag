@@ -3834,15 +3834,15 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/cli@6.3.0":
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/@storybook/cli/-/cli-6.3.0.tgz#ad5244861a6a83efa963fc521a8c0078eff049bc"
-  integrity sha512-ZBJatDARD11Kd8XGx02B6udxBf2uMZ7c5IJ9AyqgFkW4BqiEzLztBpUzc6uqFRzSXnGnv39bdEW0ROgn/H/8FQ==
+"@storybook/cli@6.3.2":
+  version "6.3.2"
+  resolved "https://registry.yarnpkg.com/@storybook/cli/-/cli-6.3.2.tgz#858347e16216219742c30db4b45529aac3911e6a"
+  integrity sha512-qVFvrp8kQ6L0bowGjcDyUVoJVW5zkKiuYINr+0IXFyVo79uKFA9RhYExQl/dZwQqEDjXblTi+PBt/ik7RGw1Ag==
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/preset-env" "^7.12.11"
-    "@storybook/codemod" "6.3.0"
-    "@storybook/node-logger" "6.3.0"
+    "@storybook/codemod" "6.3.2"
+    "@storybook/node-logger" "6.3.2"
     "@storybook/semver" "^7.3.2"
     boxen "^4.2.0"
     chalk "^4.1.0"
@@ -3906,16 +3906,16 @@
     core-js "^3.8.2"
     global "^4.4.0"
 
-"@storybook/codemod@6.3.0":
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/@storybook/codemod/-/codemod-6.3.0.tgz#fa3083b77ec9661e0600a9015263863e06fd0bc8"
-  integrity sha512-zieB6PTt5CU1tePAVvTnZxgyHsFQZx7wJ1KebzQo6+EnDbo59Ff07nEOQn8Eejg7h0LGXny6n5Np9OWGTGcOXQ==
+"@storybook/codemod@6.3.2":
+  version "6.3.2"
+  resolved "https://registry.yarnpkg.com/@storybook/codemod/-/codemod-6.3.2.tgz#f2aadbd7e157a38d1b87b8d04c7dcb4e4827f19c"
+  integrity sha512-qNw6q1uXuDl3WLE3pNZaxF7VW7ewjZHy6KkOXBVT0bkKBGCeNSJjLnh3BAtyPmr5nyt8mW6TC2c198G6x8Vg3g==
   dependencies:
     "@babel/types" "^7.12.11"
     "@mdx-js/mdx" "^1.6.22"
     "@storybook/csf" "0.0.1"
-    "@storybook/csf-tools" "6.3.0"
-    "@storybook/node-logger" "6.3.0"
+    "@storybook/csf-tools" "6.3.2"
+    "@storybook/node-logger" "6.3.2"
     core-js "^3.8.2"
     cross-spawn "^7.0.3"
     globby "^11.0.2"
@@ -4143,6 +4143,26 @@
     prettier "~2.2.1"
     regenerator-runtime "^0.13.7"
 
+"@storybook/csf-tools@6.3.2":
+  version "6.3.2"
+  resolved "https://registry.yarnpkg.com/@storybook/csf-tools/-/csf-tools-6.3.2.tgz#93bffc555a8a8535c3ee99e21f131860fc78e251"
+  integrity sha512-CGj4HsKwYBwp2zWmrG1RJedwrnakfxkptp/4HQ0mE9ajw28GndNZus2+IgnBsxdbzv8LYwz/rHpXRbvfDbgPFg==
+  dependencies:
+    "@babel/generator" "^7.12.11"
+    "@babel/parser" "^7.12.11"
+    "@babel/plugin-transform-react-jsx" "^7.12.12"
+    "@babel/preset-env" "^7.12.11"
+    "@babel/traverse" "^7.12.11"
+    "@babel/types" "^7.12.11"
+    "@mdx-js/mdx" "^1.6.22"
+    "@storybook/csf" "^0.0.1"
+    core-js "^3.8.2"
+    fs-extra "^9.0.1"
+    js-string-escape "^1.0.1"
+    lodash "^4.17.20"
+    prettier "~2.2.1"
+    regenerator-runtime "^0.13.7"
+
 "@storybook/csf@0.0.1", "@storybook/csf@^0.0.1":
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@storybook/csf/-/csf-0.0.1.tgz#95901507dc02f0bc6f9ac8ee1983e2fc5bb98ce6"
@@ -4197,6 +4217,17 @@
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-6.3.0.tgz#ad64b23361beeb1864eb89337b7fe127a5d32929"
   integrity sha512-gxvYOwDzHSYDTvnrwsyonCk88lRQ9gHrEvu3J8sM/0G/0br8g7G8+jSakKR8miE7urcwxd0uoYK+Y4KwJHkJpg==
+  dependencies:
+    "@types/npmlog" "^4.1.2"
+    chalk "^4.1.0"
+    core-js "^3.8.2"
+    npmlog "^4.1.2"
+    pretty-hrtime "^1.0.3"
+
+"@storybook/node-logger@6.3.2":
+  version "6.3.2"
+  resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-6.3.2.tgz#fc4c6f707030e04f8bc559bc188802d549b0507c"
+  integrity sha512-TJvJpysIIP3EWoyfFDmXCRC/yTReu0jIFUPdldh4FjhADjQU+JTbLwJmtcJyHoMSqfIHgUc1TB6D/B4PjYqElA==
   dependencies:
     "@types/npmlog" "^4.1.2"
     chalk "^4.1.0"
@@ -15913,15 +15944,6 @@ postcss@^7, postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.17, po
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
-postcss@^7.0.36:
-  version "7.0.36"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.36.tgz#056f8cffa939662a8f5905950c07d5285644dfcb"
-  integrity sha512-BebJSIUMwJHRH0HAQoxN4u1CN86glsrwsW0q7T+/m44eXOUAxSNdHRkNZPYz5vVUbg17hFgOQDE7fZk7li3pZw==
-  dependencies:
-    chalk "^2.4.2"
-    source-map "^0.6.1"
-    supports-color "^6.1.0"
-
 postcss@^8.1.0:
   version "8.2.15"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.2.15.tgz#9e66ccf07292817d226fc315cbbf9bc148fbca65"
@@ -18256,11 +18278,11 @@ storybook-design-token@^1.0.1:
     react-use-clipboard "^1.0.7"
 
 storybook@^6.3.0:
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/storybook/-/storybook-6.3.0.tgz#d48cbc4ad77fe0cdc4adcfc8e2a4f8bf631a1144"
-  integrity sha512-oKthKkHUTsTaZmeOYTdWXgZhsdxSyES3OAow5xC2SGk09jmXYVumBvqP8fd9Z1NeLhHoRw44FyDBsgqs5GhnFg==
+  version "6.3.2"
+  resolved "https://registry.yarnpkg.com/storybook/-/storybook-6.3.2.tgz#7107804f74d9d53ac605b4327937e08849c0da8d"
+  integrity sha512-zDMCPeaI7INgaWWuyRbGYMKboPnzh2bV5HTCVjbgU6CYJWyIRVP5YvCmclX3GDZRhv6n7JupGdxVS/Gw9QfLKA==
   dependencies:
-    "@storybook/cli" "6.3.0"
+    "@storybook/cli" "6.3.2"
 
 stream-browserify@^2.0.1:
   version "2.0.2"
