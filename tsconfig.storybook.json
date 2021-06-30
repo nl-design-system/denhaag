@@ -1,5 +1,6 @@
 {
   "extends": "./tsconfig.build.json",
+  "exclude": ["dist"],
   "include": ["src/**/*.stories.tsx"],
   "references": [
     {

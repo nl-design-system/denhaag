@@ -1,10 +1,23 @@
 {
-  "extends": "../../../tsconfig.build.json",
-  "compilerOptions": {
-    "rootDir": "src",
-    "outDir": "dist",
-    "composite": true
-  },
-  "include": ["src/**/*"],
-  "exclude": ["dist", "src/**/*.stories.tsx"]
+    "extends": "../../../tsconfig.build.json",
+    "compilerOptions": {
+        "rootDir": "src",
+        "outDir": "dist",
+        "composite": true
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "dist",
+        "src/**/*.stories.tsx"
+    ],
+    "references": [
+        {
+            "path": "..\\Icons"
+        },
+        {
+            "path": "..\\BaseDataDisplayProps"
+        }
+    ]
 }
