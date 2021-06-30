@@ -1,9 +1,6 @@
 {
   "extends": "./tsconfig.build.json",
   "include": ["src/**/*.stories.tsx"],
-  "compilerOptions": {
-    "incremental": false
-  },
   "references": [
     {
       "path": "src/components/Accordion"

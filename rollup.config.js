@@ -30,7 +30,10 @@ export default {
     nodeResolve(),
     commonjs({ include: /node_modules/ }),
     svgr({ icon: true, svgo: true, memo: true }),
-    typescript({ cacheDir: path.join(__dirname, '.rollup-cache') }),
+    typescript({
+      cacheDir: path.join(__dirname, '.rollup-cache'),
+      tsBuildInfoFile: 'dist/.tsbuildinfo',
+    }),
   ],
   external: dependencies,
 };
