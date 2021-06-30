@@ -18,6 +18,15 @@
   * @tokens Alerts
   * @presenter Spacing
   */
+  --denhaag-alert-action-focus-border-color: var(--denhaag-ocher-4);
+  --denhaag-alert-action-focus-border-width: var(--denhaag-focus-border-width);
+  --denhaag-alert-action-focus-border-style: var(--denhaag-focus-border-style);
+  --denhaag-alert-action-focus-border-offset: 3px;
+
+  /**
+  * @tokens Alerts
+  * @presenter Spacing
+  */
   --denhaag-alert-content-margin-inline-start: 24px;
   --denhaag-alert-content-margin-inline-end: 24px;
 

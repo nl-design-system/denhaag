@@ -22,7 +22,7 @@
 }
 
 /* optical alignment icons */
-.denhaag-alert > .denhaag-alert__icon {
+.denhaag-alert .denhaag-alert__icon {
   margin-block-start: 4px;
 }
 .denhaag-alert__close {
@@ -140,4 +140,12 @@
   padding-inline-end: 0;
   padding-block-start: 0;
   padding-block-end: 0;
+}
+
+/* The position of the button is configurable with padding of alert__content and alert */
+.denhaag-alert__close button:focus {
+  outline-color: var(--denhaag-alert-action-focus-border-color);
+  outline-width: var(--denhaag-alert-action-focus-border-color);
+  outline-style: var(--denhaag-alert-action-focus-border-style);
+  outline-offset: var(--denhaag-alert-action-focus-border-offset);
 }
