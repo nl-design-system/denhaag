@@ -1,23 +1,18 @@
 {
-    "extends": "../../../tsconfig.build.json",
-    "compilerOptions": {
-        "rootDir": "src",
-        "outDir": "dist",
-        "composite": true
+  "extends": "../../../tsconfig.build.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "composite": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["dist", "src/**/*.stories.tsx"],
+  "references": [
+    {
+      "path": "../IconButton"
     },
-    "include": [
-        "src/**/*"
-    ],
-    "exclude": [
-        "dist",
-        "src/**/*.stories.tsx"
-    ],
-    "references": [
-        {
-            "path": "..\\IconButton"
-        },
-        {
-            "path": "..\\BaseLayoutProps"
-        }
-    ]
+    {
+      "path": "../BaseLayoutProps"
+    }
+  ]
 }

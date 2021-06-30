@@ -1,35 +1,30 @@
 {
-    "extends": "../../../tsconfig.build.json",
-    "compilerOptions": {
-        "rootDir": "src",
-        "outDir": "dist",
-        "composite": true
+  "extends": "../../../tsconfig.build.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "composite": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["dist", "src/**/*.stories.tsx"],
+  "references": [
+    {
+      "path": "../../components/BaseLayoutProps"
     },
-    "include": [
-        "src/**/*"
-    ],
-    "exclude": [
-        "dist",
-        "src/**/*.stories.tsx"
-    ],
-    "references": [
-        {
-            "path": "..\\..\\components\\BaseLayoutProps"
-        },
-        {
-            "path": "..\\..\\components\\Box"
-        },
-        {
-            "path": "..\\..\\components\\Container"
-        },
-        {
-            "path": "..\\..\\components\\Grid"
-        },
-        {
-            "path": "..\\..\\components\\GridList"
-        },
-        {
-            "path": "..\\..\\components\\Hidden"
-        }
-    ]
+    {
+      "path": "../../components/Box"
+    },
+    {
+      "path": "../../components/Container"
+    },
+    {
+      "path": "../../components/Grid"
+    },
+    {
+      "path": "../../components/GridList"
+    },
+    {
+      "path": "../../components/Hidden"
+    }
+  ]
 }

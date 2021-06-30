@@ -1,32 +1,27 @@
 {
-    "extends": "../../../tsconfig.build.json",
-    "compilerOptions": {
-        "rootDir": "src",
-        "outDir": "dist",
-        "composite": true
+  "extends": "../../../tsconfig.build.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "composite": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["dist", "src/**/*.stories.tsx"],
+  "references": [
+    {
+      "path": "../../components/Accordion"
     },
-    "include": [
-        "src/**/*"
-    ],
-    "exclude": [
-        "dist",
-        "src/**/*.stories.tsx"
-    ],
-    "references": [
-        {
-            "path": "..\\..\\components\\Accordion"
-        },
-        {
-            "path": "..\\..\\components\\AppBar"
-        },
-        {
-            "path": "..\\..\\components\\BaseProps"
-        },
-        {
-            "path": "..\\..\\components\\Card"
-        },
-        {
-            "path": "..\\..\\components\\Toolbar"
-        }
-    ]
+    {
+      "path": "../../components/AppBar"
+    },
+    {
+      "path": "../../components/BaseProps"
+    },
+    {
+      "path": "../../components/Card"
+    },
+    {
+      "path": "../../components/Toolbar"
+    }
+  ]
 }

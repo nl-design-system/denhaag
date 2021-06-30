@@ -1,35 +1,30 @@
 {
-    "extends": "../../../tsconfig.build.json",
-    "compilerOptions": {
-        "rootDir": "src",
-        "outDir": "dist",
-        "composite": true
+  "extends": "../../../tsconfig.build.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "composite": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["dist", "src/**/*.stories.tsx"],
+  "references": [
+    {
+      "path": "../../components/BaseProps"
     },
-    "include": [
-        "src/**/*"
-    ],
-    "exclude": [
-        "dist",
-        "src/**/*.stories.tsx"
-    ],
-    "references": [
-        {
-            "path": "..\\..\\components\\BaseProps"
-        },
-        {
-            "path": "..\\..\\components\\Drawer"
-        },
-        {
-            "path": "..\\..\\components\\Menu"
-        },
-        {
-            "path": "..\\..\\components\\SwipeableDrawer"
-        },
-        {
-            "path": "..\\..\\components\\Tab"
-        },
-        {
-            "path": "..\\..\\components\\Timeline"
-        }
-    ]
+    {
+      "path": "../../components/Drawer"
+    },
+    {
+      "path": "../../components/Menu"
+    },
+    {
+      "path": "../../components/SwipeableDrawer"
+    },
+    {
+      "path": "../../components/Tab"
+    },
+    {
+      "path": "../../components/Timeline"
+    }
+  ]
 }

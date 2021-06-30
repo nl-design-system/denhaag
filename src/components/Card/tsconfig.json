@@ -1,29 +1,24 @@
 {
-    "extends": "../../../tsconfig.build.json",
-    "compilerOptions": {
-        "rootDir": "src",
-        "outDir": "dist",
-        "composite": true
+  "extends": "../../../tsconfig.build.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "composite": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["dist", "src/**/*.stories.tsx"],
+  "references": [
+    {
+      "path": "../Avatar"
     },
-    "include": [
-        "src/**/*"
-    ],
-    "exclude": [
-        "dist",
-        "src/**/*.stories.tsx"
-    ],
-    "references": [
-        {
-            "path": "..\\Avatar"
-        },
-        {
-            "path": "..\\IconButton"
-        },
-        {
-            "path": "..\\Icons"
-        },
-        {
-            "path": "..\\BaseProps"
-        }
-    ]
+    {
+      "path": "../IconButton"
+    },
+    {
+      "path": "../Icons"
+    },
+    {
+      "path": "../BaseProps"
+    }
+  ]
 }

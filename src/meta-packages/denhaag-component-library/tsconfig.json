@@ -1,38 +1,33 @@
 {
-    "extends": "../../../tsconfig.build.json",
-    "compilerOptions": {
-        "rootDir": "src",
-        "outDir": "dist",
-        "composite": true
+  "extends": "../../../tsconfig.build.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "composite": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["dist", "src/**/*.stories.tsx"],
+  "references": [
+    {
+      "path": "../../components/BaseProps"
     },
-    "include": [
-        "src/**/*"
-    ],
-    "exclude": [
-        "dist",
-        "src/**/*.stories.tsx"
-    ],
-    "references": [
-        {
-            "path": "..\\..\\components\\BaseProps"
-        },
-        {
-            "path": "..\\datadisplay"
-        },
-        {
-            "path": "..\\input"
-        },
-        {
-            "path": "..\\layout"
-        },
-        {
-            "path": "..\\navigation"
-        },
-        {
-            "path": "..\\..\\components\\Pickers"
-        },
-        {
-            "path": "..\\surfaces"
-        }
-    ]
+    {
+      "path": "../datadisplay"
+    },
+    {
+      "path": "../input"
+    },
+    {
+      "path": "../layout"
+    },
+    {
+      "path": "../navigation"
+    },
+    {
+      "path": "../../components/Pickers"
+    },
+    {
+      "path": "../surfaces"
+    }
+  ]
 }
