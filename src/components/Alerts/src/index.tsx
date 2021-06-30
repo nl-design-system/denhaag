@@ -78,7 +78,7 @@ export const Alerts: React.FC<AlertsProps> = ({ title, text, variant, action, cl
 
   return (
     <div className="denhaag-alert" {...customAttributes}>
-      <div className="denhaag-alert__main">
+      <div className="denhaag-alert__main-content">
         <div className="denhaag-alert__icon">{icon}</div>
         <div className="denhaag-alert__content">
           <Heading4>{title}</Heading4>
