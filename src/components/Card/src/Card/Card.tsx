@@ -1,5 +1,5 @@
 import React, { createRef } from 'react';
-import { Card as MaterialCard, Icon, StylesProvider, Typography } from '@material-ui/core';
+import { Card as MaterialCard, Icon, Typography } from '@material-ui/core';
 import { ArrowRightIcon } from '@gemeente-denhaag/icons';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import './mui-override.css';
@@ -73,31 +73,29 @@ export const Card: React.FC<CardProps> = (props: CardProps) => {
   }
 
   return (
-    <StylesProvider injectFirst>
-      <MaterialCard classes={classes} onClick={onClick}>
-        <div className="denhaag-card__wrapper">
-          <div className="denhaag-card__background"></div>
-          <CardContent>
-            <div className="denhaag-card__text-wrapper">
-              <Typography classes={titleClasses} component="p">
-                {title}
-              </Typography>
-              <Typography classes={subtitleClasses} component="p">
-                {props.subTitle}
-              </Typography>
-            </div>
-            <CardActions disableSpacing={true}>
-              <Typography component="div" classes={subtitleClasses}>
-                <time dateTime={props.date.toDateString()}>{props.date.toLocaleDateString()}</time>
-              </Typography>
-              <Icon classes={arrowClasses} aria-label="ArrowRightIcon">
-                <ArrowRightIcon />
-              </Icon>
-            </CardActions>
-          </CardContent>
-        </div>
-      </MaterialCard>
-    </StylesProvider>
+    <MaterialCard classes={classes} onClick={onClick}>
+      <div className="denhaag-card__wrapper">
+        <div className="denhaag-card__background"></div>
+        <CardContent>
+          <div className="denhaag-card__text-wrapper">
+            <Typography classes={titleClasses} component="p">
+              {title}
+            </Typography>
+            <Typography classes={subtitleClasses} component="p">
+              {props.subTitle}
+            </Typography>
+          </div>
+          <CardActions disableSpacing={true}>
+            <Typography component="div" classes={subtitleClasses}>
+              <time dateTime={props.date.toDateString()}>{props.date.toLocaleDateString()}</time>
+            </Typography>
+            <Icon classes={arrowClasses} aria-label="ArrowRightIcon">
+              <ArrowRightIcon />
+            </Icon>
+          </CardActions>
+        </CardContent>
+      </div>
+    </MaterialCard>
   );
 };
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Divider as MaterialDivider, StylesProvider } from '@material-ui/core';
+import { Divider as MaterialDivider } from '@material-ui/core';
 import { BaseDataDisplayClassesProps } from '@gemeente-denhaag/basedatadisplayprops';
 import './divider.css';
 
@@ -22,9 +22,7 @@ export const Divider: React.FC<DividerProps> = (props: DividerProps) => {
   };
 
   return (
-    <StylesProvider injectFirst>
-      <MaterialDivider variant={'fullWidth'} classes={classes} role={'presentation'} orientation={props.orientation} />
-    </StylesProvider>
+    <MaterialDivider variant={'fullWidth'} classes={classes} role={'presentation'} orientation={props.orientation} />
   );
 };
 
