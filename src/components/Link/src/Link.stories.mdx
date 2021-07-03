@@ -1,0 +1,88 @@
+import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/addon-docs/blocks";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+import { Paragraph } from "@gemeente-denhaag/typography";
+import { ArrowLeftIcon, ArrowRightIcon } from "@gemeente-denhaag/icons";
+
+import { Link } from ".";
+import pkg from "../package.json";
+import readme from "../README.md";
+
+<Meta
+  title="Components/Navigation/Link"
+  component={Link}
+  parameters={{ componentSubtitle: `${pkg.name} - ${pkg.version}`, docs: { source: { type: "dynamic" } } }}
+/>
+
+<Description markdown={readme} />
+
+## Design Tokens
+
+<DesignTokenDocBlock categoryName="Link" viewType="table" />
+
+## Stories
+
+### Default
+
+<Canvas>
+  <Story name="Default" args={{}}>
+    {(args) => (
+      <Paragraph>
+        It is possible to put{" "}
+        <Link href="#" {...args}>
+          a link
+        </Link>{" "}
+        in a Paragraph element.
+      </Paragraph>
+    )}
+  </Story>
+</Canvas>
+
+### Disabled
+
+<Canvas>
+  <Story name="Disabled" args={{ disabled: true }}>
+    {(args) => (
+      <Paragraph>
+        It is possible to put{" "}
+        <Link href="#" {...args}>
+          a link
+        </Link>{" "}
+        in a Paragraph element.
+      </Paragraph>
+    )}
+  </Story>
+</Canvas>
+
+## Icon Start
+
+<Canvas>
+  <Story name="Icon Start" args={{ icon: <ArrowLeftIcon />, iconAlign: "start" }}>
+    {(args) => (
+      <Paragraph>
+        It is possible to put{" "}
+        <Link href="#" {...args}>
+          a link
+        </Link>{" "}
+        in a Paragraph element.
+      </Paragraph>
+    )}
+  </Story>
+</Canvas>
+
+### Icon End
+
+<Canvas>
+  <Story name="Icon End" args={{ icon: <ArrowRightIcon /> }}>
+    {(args) => (
+      <Paragraph>
+        It is possible to put{" "}
+        <Link href="#" {...args}>
+          a link
+        </Link>{" "}
+        in a Paragraph element.
+      </Paragraph>
+    )}
+  </Story>
+</Canvas>
+
+<ArgsTable of={Link} />
