@@ -41,7 +41,7 @@
 }
 
 .denhaag-alert[variant="error"] .utrecht-paragraph {
-  color: var(--denhaag-alert-error-text-color);
+  color: var(--denhaag-alert-error-paragraph-color);
 }
 
 .denhaag-alert[variant="error"] .denhaag-alert__icon {
@@ -66,7 +66,7 @@
 }
 
 .denhaag-alert[variant="info"] .utrecht-paragraph {
-  color: var(--denhaag-alert-info-text-color);
+  color: var(--denhaag-alert-info-paragraph-color);
 }
 
 .denhaag-alert[variant="info"] .denhaag-alert__icon {
@@ -91,7 +91,7 @@
 }
 
 .denhaag-alert[variant="success"] .utrecht-paragraph {
-  color: var(--denhaag-alert-success-text-color);
+  color: var(--denhaag-alert-success-paragraph-color);
 }
 
 .denhaag-alert[variant="success"] .denhaag-alert__icon {
@@ -116,7 +116,7 @@
 }
 
 .denhaag-alert[variant="warning"] .utrecht-paragraph {
-  color: var(--denhaag-alert-warning-text-color);
+  color: var(--denhaag-alert-warning-paragraph-color);
 }
 
 .denhaag-alert[variant="warning"] .denhaag-alert__icon {
