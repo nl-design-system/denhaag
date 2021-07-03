@@ -1,6 +1,7 @@
 import '@gemeente-denhaag/design-tokens-proprietary/dist/theme/index.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
 import '@gemeente-denhaag/design-tokens-common/dist/theme/index.css';
+import { StylesProvider } from '@material-ui/styles';
 
 import { addDecorator } from '@storybook/react';
 import { withThemes } from 'storybook-addon-themes/react';
@@ -33,3 +34,5 @@ export const parameters = {
     list: [{ name: 'Gemeente Den Haag', class: 'denhaag-theme', color: '#227b3c' }],
   },
 };
+
+export const decorators = [(Story) => <StylesProvider injectFirst>{<Story />}</StylesProvider>];

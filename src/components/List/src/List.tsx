@@ -1,5 +1,5 @@
 import React from 'react';
-import { List as MaterialList, StylesProvider } from '@material-ui/core';
+import { List as MaterialList } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import { ListSubheaderProps } from './ListSubheader';
 import { list_classes as classes } from './bem-mapping';
@@ -25,11 +25,9 @@ export const List: React.FC<ListProps> = (props: ListProps) => {
   const materialProps = { subheader: props.subheader };
 
   return (
-    <StylesProvider injectFirst>
-      <MaterialList {...materialProps} classes={classes}>
-        {props.children}
-      </MaterialList>
-    </StylesProvider>
+    <MaterialList {...materialProps} classes={classes}>
+      {props.children}
+    </MaterialList>
   );
 };
 
