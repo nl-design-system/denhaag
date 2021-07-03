@@ -1,0 +1,19 @@
+import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+
+import { FormGroup } from "..";
+import pkg from "../../package.json";
+import readme from "../../README.md";
+
+<Meta
+  title="Components/Input/FormGroup"
+  component={FormGroup}
+  parameters={{ componentSubtitle: `${pkg.name} - ${pkg.version}`, docs: { source: { type: "dynamic" } } }}
+/>
+
+<Description markdown={readme} />
+
+## Design Tokens
+
+<DesignTokenDocBlock categoryName="FormGroup" viewType="table" />
+

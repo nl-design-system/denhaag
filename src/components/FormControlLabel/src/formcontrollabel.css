@@ -1,0 +1,34 @@
+.denhaag-form-control-label {
+  margin-inline-start: var(--denhaag-form-control-label-margin-inline-start);
+  margin-inline-end: var(--denhaag-form-control-label-margin-inline-end);
+  margin-block-start: var(--denhaag-form-control-label-margin-block-start);
+  margin-block-end: var(--denhaag-form-control-label-margin-block-end);
+}
+
+.denhaag-form-control-label__label {
+  font-family: var(--denhaag-form-control-label-font-family);
+  font-size: var(--denhaag-form-control-label-font-size);
+  font-weight: var(--denhaag-form-control-label-font-weight);
+  line-height: var(--denhaag-form-control-label-line-height);
+  color: var(--denhaag-form-control-label-color);
+
+  margin-inline-start: var(--denhaag-form-control-label-label-margin-inline-start);
+}
+
+.denhaag-form-control-label:hover {
+  --denhaag-checkbox-normal-unchecked-color: var(--denhaag-form-control-label-hover-color);
+  --denhaag-form-control-label-color: var(--denhaag-form-control-label-hover-color);
+}
+
+.denhaag-form-control-label--disabled,
+.denhaag-form-control-label--disabled:hover {
+  color: var(--denhaag-color-grey-2);
+}
+
+.denhaag-form-control-label--disabled:hover {
+  cursor: default;
+}
+
+.denhaag-form-control-label--disabled .denhaag-form-control-label__label {
+  color: var(--denhaag-color-grey-2);
+}
