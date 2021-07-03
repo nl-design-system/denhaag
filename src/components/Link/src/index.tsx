@@ -1,68 +1,68 @@
 import React from 'react';
-import { Link as MaterialLink } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
+import { SvgIconProps } from '@gemeente-denhaag/icons';
+
+import './link.css';
+
+import clsx from 'clsx';
 
 export interface LinkProps extends BaseProps, React.AnchorHTMLAttributes<never> {
-  /**
-   * The color of the link.
-   */
-  color?: 'initial' | 'inherit' | 'primary' | 'secondary' | 'textPrimary' | 'textSecondary' | 'error';
-
-  /**
-   * The component used for the root node.
-   * Either a string to use a HTML element or a component.
-   */
-  component?: React.ElementType;
-
-  /**
-   * classes prop applied to the Typography element.
-   */
-  TypographyClasses?: Record<string, unknown>;
-
-  /**
-   * Controls when the link should have an underline.
-   */
-  underline?: 'none' | 'hover' | 'always';
-
-  /**
-   * A function fired upon clicking on the link
-   * @param event The registered click event
-   */
-  onClick?: (event: React.ChangeEvent<unknown>) => void;
-
   /**
    * The URL to which the component redirects
    */
   href: string;
 
+  icon?: React.FC<SvgIconProps>;
+
   /**
-   * Applies the theme typography styles.
+   * If an `icon` is specified, should it be aligned on the left or the right?
    */
-  variant?:
-    | 'h1'
-    | 'h2'
-    | 'h3'
-    | 'h4'
-    | 'h5'
-    | 'h6'
-    | 'subtitle1'
-    | 'subtitle2'
-    | 'body1'
-    | 'body2'
-    | 'caption'
-    | 'button'
-    | 'overline'
-    | 'srOnly'
-    | 'inherit';
+  iconAlign?: 'start' | 'end';
+
+  /**
+   * Disables the link.
+   */
+  disabled?: boolean;
+
+  /**
+   * Applies focus styling to the link
+   */
+  focus?: boolean;
 }
 
 /**
- * An easily customisable anchor element.
+ * An easily customizable anchor element.
  * @param props The properties of a Link component.
  * @constructor Constructs an instance of Link.
  */
-export const Link: React.FC<LinkProps> = (props: LinkProps) => {
-  return <MaterialLink {...props}>{props.children}</MaterialLink>;
+export const Link: React.FC<LinkProps> = ({
+  href,
+  children = undefined,
+  disabled = false,
+  focus = false,
+  icon = undefined,
+  iconAlign = 'end',
+}: LinkProps) => {
+  const anchorClassName = clsx('denhaag-link', {
+    'denhaag-link--disabled': disabled,
+    'denhaag-link--focus': focus,
+    'denhaag-link--with-icon': icon !== undefined,
+  });
+
+  const iconClassName = clsx('denhaag-link__icon', {
+    'denhaag-link__icon--start': iconAlign === 'start',
+    'denhaag-link__icon--end': iconAlign === 'end',
+  });
+
+  const iconWrapped = <span className={iconClassName}>{icon}</span>;
+
+  return (
+    <a href={href} className={anchorClassName}>
+      {icon !== undefined && iconAlign === 'start' ? iconWrapped : ''}
+      {children}
+      {icon !== undefined && iconAlign === 'end' ? iconWrapped : ''}
+    </a>
+  );
 };
 
 export default Link;

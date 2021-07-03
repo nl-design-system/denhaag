@@ -1,0 +1,26 @@
+:root {
+  /**
+  * @tokens Link
+  * @presenter Color
+  */
+
+  --denhaag-link-color: var(--denhaag-blue-3);
+  --denhaag-link-disabled-color: var(--denhaag-grey-2);
+  --denhaag-link-focus-color: var(--denhaag-blue-4);
+  --denhaag-link-hover-color: var(--denhaag-blue-4);
+
+  /**
+  * @tokens Link
+  */
+
+  --denhaag-link-focus-outline: var(--denhaag-focus-border);
+  --denhaag-link-icon-size: 1.25em;
+
+  /**
+  * @tokens Link
+  * @presenter Spacing
+  */
+
+  --denhaag-link-icon-margin-start: 8px;
+  --denhaag-link-icon-margin-end: 8px;
+}
