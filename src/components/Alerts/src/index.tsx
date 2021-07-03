@@ -56,26 +56,6 @@ export const Alerts: React.FC<AlertsProps> = ({ title, text, variant, action, cl
       break;
   }
 
-  // actionButton is optional
-  let actionButton = undefined;
-  if (action !== undefined) {
-    actionButton = (
-      <Button size="medium" variant="primary-action" type="button" onClick={() => action.onClick()}>
-        {action.buttonText}
-      </Button>
-    );
-  }
-
-  // closeButton is optional
-  let closeButton = undefined;
-  if (close !== undefined) {
-    closeButton = (
-      <IconButton aria-label="Close" color="inherit" onClick={close} tabIndex={0}>
-        <CloseIcon />
-      </IconButton>
-    );
-  }
-
   return (
     <div className="denhaag-alert" {...customAttributes}>
       <div className="denhaag-alert__main-content">
@@ -83,10 +63,20 @@ export const Alerts: React.FC<AlertsProps> = ({ title, text, variant, action, cl
         <div className="denhaag-alert__content">
           <Heading4>{title}</Heading4>
           <Paragraph>{text}</Paragraph>
-          {actionButton}
+          {action && (
+            <Button size="medium" variant="primary-action" type="button" onClick={() => action.onClick()}>
+              {action.buttonText}
+            </Button>
+          )}
         </div>
       </div>
-      {closeButton !== undefined ? <div className="denhaag-alert__close">{closeButton}</div> : undefined}
+      {close && (
+        <div className="denhaag-alert__close">
+          <IconButton aria-label="Close" color="inherit" onClick={close} tabIndex={0}>
+            <CloseIcon />
+          </IconButton>
+        </div>
+      )}
     </div>
   );
 };
