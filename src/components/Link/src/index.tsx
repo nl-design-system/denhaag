@@ -1,10 +1,9 @@
 import React from 'react';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import { SvgIconProps } from '@gemeente-denhaag/icons';
+import clsx from 'clsx';
 
 import './link.css';
-
-import clsx from 'clsx';
 
 export interface LinkProps extends BaseProps, React.AnchorHTMLAttributes<never> {
   /**
@@ -12,6 +11,9 @@ export interface LinkProps extends BaseProps, React.AnchorHTMLAttributes<never> 
    */
   href: string;
 
+  /**
+   * Icon to display at the start or the end of the link
+   */
   icon?: React.FC<SvgIconProps>;
 
   /**
@@ -37,11 +39,13 @@ export interface LinkProps extends BaseProps, React.AnchorHTMLAttributes<never> 
  */
 export const Link: React.FC<LinkProps> = ({
   href,
+  id,
   children = undefined,
   disabled = false,
   focus = false,
   icon = undefined,
   iconAlign = 'end',
+  tabIndex = 0,
 }: LinkProps) => {
   const anchorClassName = clsx('denhaag-link', {
     'denhaag-link--disabled': disabled,
@@ -57,7 +61,7 @@ export const Link: React.FC<LinkProps> = ({
   const iconWrapped = <span className={iconClassName}>{icon}</span>;
 
   return (
-    <a href={href} className={anchorClassName}>
+    <a id={id} href={href} className={anchorClassName} tabIndex={tabIndex}>
       {icon !== undefined && iconAlign === 'start' ? iconWrapped : ''}
       {children}
       {icon !== undefined && iconAlign === 'end' ? iconWrapped : ''}
