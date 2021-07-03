@@ -18,7 +18,6 @@ import readme from "../../README.md";
 
 <DesignTokenDocBlock categoryName="Alerts" viewType="table" />
 
-
 ## Stories
 
 <ArgsTable of={Alerts} />
@@ -53,6 +52,65 @@ const ErrorAlert = <Alerts
     <p class="utrecht-paragraph utrecht-paragraph--distanced">
       Here comes text. This text provides additional details and actionable steps the user can take.
     </p>
+  </div>
+</div>
+    `,
+        },
+      },
+    }}
+  >
+    {(args) => <Alerts {...args}></Alerts>}
+  </Story>
+</Canvas>
+
+### Close and Action buttons
+
+<Canvas>
+  <Story
+    name="Close and Action buttons"
+    args={{
+      title: "Title",
+      text: "Here comes text. This text provides additional details and actionable steps the user can take.",
+      variant: "success",
+      action: { buttonText: "Continue", onClick: action("Warning Action clicked") },
+      close: action("Close clicked"),
+    }}
+    parameters={{
+      docs: {
+        source: {
+          code: `
+import { Alert } from "@gemeente-denhaag/alert";
+const SuccessAlert = <Alerts
+  text="Here comes text. This text provides additional details and actionable steps the user can take."
+  title="Title"
+  variant="error",
+  action={ { buttonText: "Continue", onClick: () => console.log("action clicked") } },
+  close={() => console.log("action clicked")}
+/>
+// This 👆 transpiles into this 👇 in the DOM
+<div class="denhaag-alert" variant="success">
+  <div class="denhaag-alert__main-content">
+    <div class="denhaag-alert__icon">
+      <svg width="24" height="24" ...>...</svg>
+    </div>
+    <div class="denhaag-alert__content">
+      <h4 class="utrecht-heading-4 utrecht-heading-4--distanced">
+        Title
+      </h4>
+      <p class="utrecht-paragraph utrecht-paragraph--distanced">
+        Here comes text. This text provides additional details and actionable steps the user can take.
+      </p>
+      <button class="MuiButtonBase-root MuiButton-root denhaag-button MuiButton-contained denhaag-button--primary-action denhaag-button--medium" tabindex="0" type="button">
+        <span class="MuiButton-label denhaag-button__label">Continue</span>
+      </button>
+    </div>
+  </div>
+  <div class="denhaag-alert__close">
+  <button class="MuiButtonBase-root MuiIconButton-root denhaag-icon-button MuiIconButton-colorInherit" tabindex="0" type="button" aria-label="Close">
+    <span class="MuiIconButton-label">
+      <svg width="24" height="24" ...>...</svg>
+    </span>
+  </button>
   </div>
 </div>
     `,
@@ -134,23 +192,6 @@ const ErrorAlert = <Alerts
       title: "Title",
       text: "Here comes text. This text provides additional details and actionable steps the user can take.",
       variant: "info",
-      close: action("Close clicked"),
-    }}
-  >
-    {(args) => <Alerts {...args}></Alerts>}
-  </Story>
-</Canvas>
-
-### Close and Action buttons
-
-<Canvas>
-  <Story
-    name="Close and Action buttons"
-    args={{
-      title: "Title",
-      text: "Here comes text. This text provides additional details and actionable steps the user can take.",
-      variant: "success",
-      action: { buttonText: "Continue", onClick: action("Warning Action clicked") },
       close: action("Close clicked"),
     }}
   >
