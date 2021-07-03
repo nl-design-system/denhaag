@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconButton as MaterialIconButton, StylesProvider } from '@material-ui/core';
+import { IconButton as MaterialIconButton } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import './mui-override.css';
 import './iconbutton.css';
@@ -23,17 +23,9 @@ export interface IconButtonProps extends BaseProps {
  */
 export const IconButton: React.FC<IconButtonProps> = ({ disabled = false, ...props }: IconButtonProps) => {
   return (
-    <StylesProvider injectFirst>
-      <MaterialIconButton
-        className="denhaag-icon-button"
-        disabled={disabled}
-        disableRipple
-        disableFocusRipple
-        {...props}
-      >
-        {props.children}
-      </MaterialIconButton>
-    </StylesProvider>
+    <MaterialIconButton className="denhaag-icon-button" disabled={disabled} disableRipple disableFocusRipple {...props}>
+      {props.children}
+    </MaterialIconButton>
   );
 };
 
