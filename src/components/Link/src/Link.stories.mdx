@@ -10,7 +10,7 @@ import readme from "../README.md";
 <Meta
   title="Components/Navigation/Link"
   component={Link}
-  parameters={{ componentSubtitle: `${pkg.name} - ${pkg.version}`, docs: { source: { type: "dynamic" } } }}
+  parameters={{ componentSubtitle: `${pkg.name} - ${pkg.version}` }}
 />
 
 <Description markdown={readme} />
@@ -24,7 +24,29 @@ import readme from "../README.md";
 ### Default
 
 <Canvas>
-  <Story name="Default" args={{}}>
+  <Story
+    name="Default"
+    args={{}}
+    parameters={{
+      docs: {
+        source: {
+          code: `
+import { Link } from "@gemeente-denhaag/link";
+import { Paragraph } from "@gemeente-denhaag/typography";
+const ReactParagraph = (
+  <Paragraph>
+    It is possible to put <Link href="#">a link</Link> in a Paragraph element.
+  </Paragraph>
+);
+// This 👆 transpiles into this 👇 in the DOM
+<p class="utrecht-paragraph utrecht-paragraph--distanced">
+  It is possible to put <a href="#" class="denhaag-link" tabindex="0">a link</a> in a Paragraph element.
+</p>
+    `,
+        },
+      },
+    }}
+  >
     {(args) => (
       <Paragraph>
         It is possible to put{" "}
@@ -42,7 +64,31 @@ import readme from "../README.md";
 ### Disabled
 
 <Canvas>
-  <Story name="Disabled" args={{ disabled: true }}>
+  <Story
+    name="Disabled"
+    args={{ disabled: true }}
+    parameters={{
+      docs: {
+        source: {
+          code: `
+import { Link } from "@gemeente-denhaag/link";
+import { Paragraph } from "@gemeente-denhaag/typography";
+const ReactParagraph = (
+  <Paragraph>
+    It is possible to put <Link href="#" disabled>a link</Link> in a Paragraph element.
+  </Paragraph>
+);
+// This 👆 transpiles into this 👇 in the DOM
+<p class="utrecht-paragraph utrecht-paragraph--distanced">
+  It is possible to put
+  <a href="#" class="denhaag-link denhaag-link--disabled" tabindex="0">a link</a>
+  in a Paragraph element.
+</p>
+    `,
+        },
+      },
+    }}
+  >
     {(args) => (
       <Paragraph>
         It is possible to put{" "}
@@ -58,7 +104,37 @@ import readme from "../README.md";
 ## Icon Start
 
 <Canvas>
-  <Story name="Icon Start" args={{ icon: <ArrowLeftIcon />, iconAlign: "start" }}>
+  <Story
+    name="Icon Start"
+    args={{ icon: <ArrowLeftIcon />, iconAlign: "start" }}
+    parameters={{
+      docs: {
+        source: {
+          code: `
+import { Link } from "@gemeente-denhaag/link";
+import { Paragraph } from "@gemeente-denhaag/typography";
+import { ArrowLeftIcon } from "@gemeente-denhaag/icons";
+const ReactParagraph = (
+  <Paragraph>
+    It is possible to put <Link href="#" icon={<ArrowLeftIcon />} iconAlign="start">a link</Link> in a Paragraph element.
+  </Paragraph>
+);
+// This 👆 transpiles into this 👇 in the DOM
+<p class="utrecht-paragraph utrecht-paragraph--distanced">
+  It is possible to put
+  <a href="#" class="denhaag-link denhaag-link--with-icon" tabindex="0">
+    <span class="denhaag-link__icon denhaag-link__icon--start">
+      {...}
+    </span>
+    a link
+  </a>
+  in a Paragraph element.
+</p>
+    `,
+        },
+      },
+    }}
+  >
     {(args) => (
       <Paragraph>
         It is possible to put{" "}
@@ -74,7 +150,37 @@ import readme from "../README.md";
 ### Icon End
 
 <Canvas>
-  <Story name="Icon End" args={{ icon: <ArrowRightIcon /> }}>
+  <Story
+    name="Icon End"
+    args={{ icon: <ArrowRightIcon /> }}
+    parameters={{
+      docs: {
+        source: {
+          code: `
+import { Link } from "@gemeente-denhaag/link";
+import { Paragraph } from "@gemeente-denhaag/typography";
+import { ArrowRightIcon } from "@gemeente-denhaag/icons";
+const ReactParagraph = (
+  <Paragraph>
+    It is possible to put <Link href="#" icon={<ArrowRightIcon />}>a link</Link> in a Paragraph element.
+  </Paragraph>
+);
+// This 👆 transpiles into this 👇 in the DOM
+<p class="utrecht-paragraph utrecht-paragraph--distanced">
+  It is possible to put
+  <a href="#" class="denhaag-link denhaag-link--with-icon" tabindex="0">
+    a link
+    <span class="denhaag-link__icon denhaag-link__icon--end">
+      {...}
+    </span>
+  </a>
+  in a Paragraph element.
+</p>
+    `,
+        },
+      },
+    }}
+  >
     {(args) => (
       <Paragraph>
         It is possible to put{" "}
