@@ -2,6 +2,14 @@ import MaterialCheckbox from '@material-ui/core/Checkbox';
 import React from 'react';
 import { BaseClassesProps } from '@gemeente-denhaag/baseprops';
 
+import { CheckedIcon, UncheckedBoxIcon } from '@gemeente-denhaag/icons';
+
+import './mui-override.css';
+import './checkbox.css';
+import { StylesProvider } from '@material-ui/core';
+
+import { classes } from './bem-mapping';
+
 export interface CheckboxProps extends BaseClassesProps {
   /**
    * If `true` the Checkbox is checked.
@@ -37,14 +45,18 @@ export interface CheckboxProps extends BaseClassesProps {
    * Callback fired when the state is changed.
    */
   onChange?: (event: React.ChangeEvent<unknown>) => void;
+
+  checkedIcon?: React.ReactNode;
 }
 
 /**
  * Checkboxes allow the user to select one or more items from a set.
  */
-export const Checkbox: React.FC<CheckboxProps> = (props: CheckboxProps) => {
-  return <MaterialCheckbox {...props} />;
-};
+export const Checkbox: React.FC<CheckboxProps> = () => (
+  <StylesProvider injectFirst>
+    <MaterialCheckbox classes={classes} icon={<UncheckedBoxIcon />} checkedIcon={<CheckedIcon />} disableRipple />;
+  </StylesProvider>
+);
 
 /**
  * Default export for Checkbox
