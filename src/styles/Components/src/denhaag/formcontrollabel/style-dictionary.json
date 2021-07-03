@@ -1,0 +1,29 @@
+{
+  "denhaag": {
+    "form-control": {
+      "label": {
+        "font": {
+          "family": { "value": "{utrecht.paragraph.font-family.value}" },
+          "size": { "value": "{utrecht.paragraph.font-size.value}" },
+          "weight": { "value": "{utrecht.paragraph.font-weight.value}" }
+        },
+        "line": {
+          "height": { "value": "{utrecht.paragraph.line-height.value}" }
+        },
+        "color": { "value": "{utrecht.paragraph.color.value}" },
+        "hover": { "color": { "value": "{denhaag.checkbox.hover.color.value}" } },
+        "margin": {
+          "block": { "start": { "value": "8px" }, "end": { "value": "8px" } },
+          "inline": { "start": { "value": "8px" }, "end": { "value": "8px" } }
+        },
+        "label": {
+          "margin": {
+            "inline": {
+              "start": { "value": "8px" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

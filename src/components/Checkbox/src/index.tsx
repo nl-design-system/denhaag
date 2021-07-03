@@ -1,6 +1,9 @@
 import React from 'react';
-import { Checkbox as MaterialCheckbox } from '@material-ui/core';
+import clsx from 'clsx';
 import { BaseClassesProps } from '@gemeente-denhaag/baseprops';
+import { CheckedIcon, UncheckedBoxIcon } from '@gemeente-denhaag/icons';
+
+import './checkbox.css';
 
 export interface CheckboxProps extends BaseClassesProps {
   /**
@@ -10,25 +13,13 @@ export interface CheckboxProps extends BaseClassesProps {
    */
   checked?: boolean;
   /**
-   * If `true` then Checkbox will be checked by default.
-   */
-  defaultChecked?: boolean;
-  /**
-   * If `true`, the component appears indeterminate.
-   */
-  indeterminate?: boolean;
-  /**
    * Attributes applied to the `input` element.
    */
   inputProps?: Record<string, unknown>;
   /**
-   * Color for the component.
+   * Displays the checkbox red.
    */
-  color?: 'default' | 'primary' | 'secondary';
-  /**
-   * Size of the component.
-   */
-  size?: 'small' | 'medium';
+  error?: boolean;
   /**
    * Disables Checkbox
    */
@@ -37,18 +28,54 @@ export interface CheckboxProps extends BaseClassesProps {
    * Callback fired when the state is changed.
    */
   onChange?: (event: React.ChangeEvent<unknown>) => void;
+
+  /**
+   * Overwrite the Icon shown when in the unchecked state.
+   */
+  uncheckedIcon?: React.ReactNode;
+
+  /**
+   * Overwrite the Icon shown when in the checked state.
+   */
+  checkedIcon?: React.ReactNode;
 }
 
 /**
  * Checkboxes allow the user to select one or more items from a set.
  */
-export const Checkbox: React.FC<CheckboxProps> = (props: CheckboxProps) => {
-  return <MaterialCheckbox {...props} />;
+export const Checkbox: React.FC<CheckboxProps> = ({
+  checked = false,
+  checkedIcon = <CheckedIcon />,
+  uncheckedIcon = <UncheckedBoxIcon />,
+  ...props
+}: CheckboxProps) => {
+  const [isChecked, setChecked] = React.useState(checked);
+  const rootStyles = clsx('denhaag-checkbox', {
+    'denhaag-checkbox--error': props.error,
+    'denhaag-checkbox--checked': isChecked,
+    'denhaag-checkbox--disabled': props.disabled,
+  });
+
+  const icon = isChecked ? checkedIcon : uncheckedIcon;
+
+  return (
+    <span className={rootStyles}>
+      <input
+        {...props.inputProps}
+        disabled={props.disabled}
+        type="checkbox"
+        className="denhaag-checkbox__input"
+        checked={isChecked}
+        onChange={(event) => {
+          setChecked(!isChecked);
+          if (props.onChange) {
+            props.onChange(event);
+          }
+        }}
+      />
+      <div className="denhaag-checkbox__icon">{icon}</div>
+    </span>
+  );
 };
 
-/**
- * Default export for Checkbox
- */
 export default Checkbox;
-export * from '@gemeente-denhaag/formcontrollabel';
-export * from '@gemeente-denhaag/formgroup';

@@ -1,0 +1,105 @@
+.denhaag-checkbox {
+  border: 0;
+  cursor: pointer;
+  display: inline-flex;
+  outline: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+
+  width: 24px;
+  height: 24px;
+
+  margin-inline-start: var(--denhaag-checkbox-margin-inline-start);
+  margin-inline-end: var(--denhaag-checkbox-margin-inline-end);
+  margin-block-start: var(--denhaag-checkbox-margin-block-start);
+  margin-block-end: var(--denhaag-checkbox-margin-block-end);
+
+  color: var(--denhaag-checkbox-normal-unchecked-color);
+}
+
+.denhaag-checkbox:focus-within:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  border: var(--denhaag-focus-border);
+  border-radius: var(--denhaag-border-radius);
+}
+
+.denhaag-checkbox--checked {
+  color: var(--denhaag-checkbox-normal-checked-color);
+}
+
+.denhaag-checkbox:hover {
+  color: var(--denhaag-checkbox-hover-color);
+}
+
+.denhaag-checkbox--disabled,
+.denhaag-checkbox--disabled:hover {
+  color: var(--denhaag-checkbox-disabled-color);
+}
+
+.denhaag-checkbox--error {
+  color: var(--denhaag-checkbox-error-color);
+}
+
+.denhaag-checkbox--error:hover {
+  color: var(--denhaag-checkbox-error-hover-color);
+}
+
+.denhaag-checkbox--error:hover + .denhaag-form-control-label__label {
+  color: var(--denhaag-checkbox-error-hover-color);
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.denhaag-checkbox--error + .denhaag-form-control-label__label {
+  color: var(--denhaag-checkbox-error-color);
+}
+
+.denhaag-checkbox--error + .denhaag-form-control-label__label:hover {
+  color: var(--denhaag-checkbox-error-hover-color);
+}
+
+.denhaag-checkbox__input {
+  top: 0;
+  left: 0;
+  cursor: inherit;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  opacity: 0%;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  z-index: 1;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+}
+
+.denhaag-checkbox--disabled:hover .denhaag-checkbox__input {
+  cursor: default;
+}
+
+.denhaag-checkbox__icon {
+  width: 24px;
+  height: 24px;
+}
