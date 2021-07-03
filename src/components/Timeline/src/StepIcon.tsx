@@ -1,6 +1,5 @@
 import React from 'react';
 import clsx from 'clsx';
-import { StylesProvider } from '@material-ui/core';
 import SvgIcon, { SvgIconProps, CheckCircleIcon } from '@gemeente-denhaag/icons';
 
 import { stepIconClasses } from './bem-mapping';
@@ -49,22 +48,16 @@ export const StepIcon: React.FC<StepIconProps> = ({
   };
 
   if (completed) {
-    return (
-      <StylesProvider injectFirst>
-        <CheckCircleIcon classes={stepIconClasses} color={color} />
-      </StylesProvider>
-    );
+    return <CheckCircleIcon classes={stepIconClasses} color={color} />;
   }
 
   return (
-    <StylesProvider injectFirst>
-      <SvgIcon id={id} viewBox="0 0 20 20" classes={stepIconClasses} color={color}>
-        <circle {...circleProps} />
-        <text x="10" y="14" textAnchor="middle" className={textClasses}>
-          {icon}
-        </text>
-      </SvgIcon>
-    </StylesProvider>
+    <SvgIcon id={id} viewBox="0 0 20 20" classes={stepIconClasses} color={color}>
+      <circle {...circleProps} />
+      <text x="10" y="14" textAnchor="middle" className={textClasses}>
+        {icon}
+      </text>
+    </SvgIcon>
   );
 };
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { TransitionProps } from '@material-ui/core/transitions';
-import { StepContent as MaterialStepContent, StylesProvider } from '@material-ui/core';
+import { StepContent as MaterialStepContent } from '@material-ui/core';
 
 import { StepComponentProps } from './StepComponentProps';
 import { stepContentClass } from './bem-mapping';
@@ -45,18 +45,16 @@ export const StepContent: React.FC<StepContentProps> = ({
   ...props
 }: StepContentProps) => {
   return (
-    <StylesProvider injectFirst>
-      <MaterialStepContent
-        id={id}
-        className={stepContentClass}
-        TransitionComponent={TransitionComponent}
-        TransitionProps={TransitionProps}
-        transitionDuration={transitionDuration}
-        {...props}
-      >
-        {children}
-      </MaterialStepContent>
-    </StylesProvider>
+    <MaterialStepContent
+      id={id}
+      className={stepContentClass}
+      TransitionComponent={TransitionComponent}
+      TransitionProps={TransitionProps}
+      transitionDuration={transitionDuration}
+      {...props}
+    >
+      {children}
+    </MaterialStepContent>
   );
 };
 

@@ -1,7 +1,6 @@
 import React from 'react';
-import { Button as MaterialButton, ButtonTypeMap, StylesProvider } from '@material-ui/core';
+import { Button as MaterialButton, ButtonTypeMap } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
-
 import { classes } from './bem-mapping';
 import './mui-override.css';
 import './button.css';
@@ -60,21 +59,19 @@ export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
   }
 
   return (
-    <StylesProvider injectFirst>
-      <MaterialButton
-        classes={classes}
-        className={sizeClass}
-        variant={muiVariant}
-        onClick={props.onClick}
-        disabled={props.disabled}
-        type={props.type}
-        startIcon={props.startIcon}
-        endIcon={props.endIcon}
-        disableRipple
-      >
-        {props.children}
-      </MaterialButton>
-    </StylesProvider>
+    <MaterialButton
+      classes={classes}
+      className={sizeClass}
+      variant={muiVariant}
+      onClick={props.onClick}
+      disabled={props.disabled}
+      type={props.type}
+      startIcon={props.startIcon}
+      endIcon={props.endIcon}
+      disableRipple
+    >
+      {props.children}
+    </MaterialButton>
   );
 };
 
