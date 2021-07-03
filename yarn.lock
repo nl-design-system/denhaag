@@ -1730,46 +1730,6 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@gemeente-denhaag/listitem@^0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@gemeente-denhaag/listitem/-/listitem-0.1.7.tgz#56b567de8b45001686bc3d423b739d749870df7d"
-  integrity sha512-8R9BaKGXUu3p4KMyUVP7fl08dkLn8iGQ8dcLwRZUky/IviG9+CsSHsqC0jDtXQBVv9NwRMfIFY2wkSajPWSFDA==
-  dependencies:
-    "@gemeente-denhaag/baseprops" "^0.1.7"
-    "@material-ui/core" "^4.11.0"
-
-"@gemeente-denhaag/listitemavatar@^0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@gemeente-denhaag/listitemavatar/-/listitemavatar-0.1.7.tgz#7e374e45f06fe7b3137bc3b265de1e0a997c4773"
-  integrity sha512-LoKavOWozC5kFWlbeSw29abUQYOkhmsDwsOiRlNn3RLb3WugU8C95NdUPd4mj6q26XE3hwb/7WrLXwtG7eIgZg==
-  dependencies:
-    "@gemeente-denhaag/baseprops" "^0.1.7"
-    "@material-ui/core" "^4.11.0"
-
-"@gemeente-denhaag/listitemsecondaryaction@^0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@gemeente-denhaag/listitemsecondaryaction/-/listitemsecondaryaction-0.1.7.tgz#e67c82274762a00e2bd498ddbc2c2425832d5340"
-  integrity sha512-WpmvUd5ZVSP59PNZC2UDcUfzf0AE20+1d3UXpJjV7tdAvUNSF9fn9g1MFvb8v5LdbI0ovwqKTuWeVBo6xwYksw==
-  dependencies:
-    "@gemeente-denhaag/baseprops" "^0.1.7"
-    "@material-ui/core" "^4.11.0"
-
-"@gemeente-denhaag/listitemtext@^0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@gemeente-denhaag/listitemtext/-/listitemtext-0.1.7.tgz#95f73c5a05fc2ab903aa77382489cd431276954a"
-  integrity sha512-+0XEZR/fh9xTG3uFEoTX1Bzaq/ltMWW7ow3dv9HyRfuRYFe82c0CkjQghDc3bjclfm8cdvcpBLGPezmevEaAzw==
-  dependencies:
-    "@gemeente-denhaag/baseprops" "^0.1.7"
-    "@material-ui/core" "^4.11.0"
-
-"@gemeente-denhaag/listsubheader@^0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@gemeente-denhaag/listsubheader/-/listsubheader-0.1.7.tgz#4c29406fe26656ac2326627fa15bb2bd1d06895e"
-  integrity sha512-v8K75a/MLA4nrWde9xBk2HyUJolpM33rDZ0BZlf1xDjBOhxaSappGUaCPTSajxz7Y+uDF7ygyncqDc48Q9Qeuw==
-  dependencies:
-    "@gemeente-denhaag/baseprops" "^0.1.7"
-    "@material-ui/core" "^4.11.0"
-
 "@gemeente-denhaag/paper@^0.1.7":
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/@gemeente-denhaag/paper/-/paper-0.1.7.tgz#ff7cd98b730cde04363d08f103be7d0c2af4c11a"
@@ -4819,9 +4779,9 @@
     "@types/react" "*"
 
 "@types/react-dom@^17.0.3":
-  version "17.0.6"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.6.tgz#c158325cf91b196270bc0f4af73463f149e7eafe"
-  integrity sha512-MGTI+TudxAnGTj8aco8mogaPSJGK2Whje7OZh1CxNLRyhJpTZg/pGQpIbCT0eCVFQyH7UFpdvCqQEThHIp/gsA==
+  version "17.0.8"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.8.tgz#3180de6d79bf53762001ad854e3ce49f36dd71fc"
+  integrity sha512-0ohAiJAx1DAUEcY9UopnfwCE9sSMDGnY/oXjWMax6g3RpzmTt2GMyMVAXcbn0mo8XAff0SbQJl2/SBU+hjSZ1A==
   dependencies:
     "@types/react" "*"
 
