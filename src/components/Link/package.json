@@ -25,6 +25,9 @@
         "@gemeente-denhaag/baseprops": "^0.2.2",
         "@material-ui/core": "^4.11.0"
     },
+    "devDependencies": {
+        "@gemeente-denhaag/typography": "*"
+    },
     "peerDependencies": {
         "react": "^17.0.1"
     }
