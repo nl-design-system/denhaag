@@ -1,7 +1,6 @@
 .denhaag-alert {
   border-width: 0;
   border-radius: var(--denhaag-alert-border-radius);
-  color: var(--denhaag-alert-text-color);
   padding-inline-start: var(--denhaag-alert-padding-inline-start);
   padding-inline-end: var(--denhaag-alert-padding-inline-end);
   padding-block-start: var(--denhaag-alert-padding-block-start);
@@ -50,7 +49,8 @@
 }
 
 .denhaag-alert[variant="error"] .denhaag-button {
-  background-color: var(--denhaag-alert-error-icon-color);
+  background-color: var(--denhaag-alert-error-action-button-background-color);
+  color: var(--denhaag-alert-error-action-button-text-color);
 }
 
 .denhaag-alert[variant="error"] .denhaag-alert__close {
@@ -74,7 +74,8 @@
 }
 
 .denhaag-alert[variant="info"] .denhaag-button {
-  background-color: var(--denhaag-alert-info-action-button-color);
+  background-color: var(--denhaag-alert-info-action-button-background-color);
+  color: var(--denhaag-alert-info-action-button-text-color);
 }
 
 .denhaag-alert[variant="info"] .denhaag-alert__close {
@@ -98,7 +99,8 @@
 }
 
 .denhaag-alert[variant="success"] .denhaag-button {
-  background-color: var(--denhaag-alert-success-action-button-color);
+  background-color: var(--denhaag-alert-success-action-button-background-color);
+  color: var(--denhaag-alert-success-action-button-text-color);
 }
 
 .denhaag-alert[variant="success"] .denhaag-alert__close {
@@ -122,7 +124,8 @@
 }
 
 .denhaag-alert[variant="warning"] .denhaag-button {
-  background-color: var(--denhaag-alert-warning-action-button-color);
+  background-color: var(--denhaag-alert-warning-action-button-background-color);
+  color: var(--denhaag-alert-warning-action-button-text-color);
 }
 
 .denhaag-alert[variant="warning"] .denhaag-alert__close {
@@ -144,8 +147,8 @@
 
 /* The position of the button is configurable with padding of alert__content and alert */
 .denhaag-alert__close button:focus {
-  outline-color: var(--denhaag-alert-action-focus-border-color);
-  outline-width: var(--denhaag-alert-action-focus-border-color);
-  outline-style: var(--denhaag-alert-action-focus-border-style);
-  outline-offset: var(--denhaag-alert-action-focus-border-offset);
+  outline-color: var(--denhaag-alert-close-focus-border-color);
+  outline-width: var(--denhaag-alert-close-focus-border-width);
+  outline-style: var(--denhaag-alert-close-focus-border-style);
+  outline-offset: var(--denhaag-alert-close-focus-border-offset);
 }
