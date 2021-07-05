@@ -13,3 +13,7 @@
 .denhaag-checkbox:hover {
   color: var(--denhaag-checkbox-normal-hover-color);
 }
+
+.denhaag-checkbox.denhaag-checkbox--disabled {
+  color: var(--denhaag-checkbox-normal-disabled-color);
+}

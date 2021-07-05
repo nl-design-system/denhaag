@@ -52,9 +52,15 @@ export interface CheckboxProps extends BaseClassesProps {
 /**
  * Checkboxes allow the user to select one or more items from a set.
  */
-export const Checkbox: React.FC<CheckboxProps> = () => (
+export const Checkbox: React.FC<CheckboxProps> = ({ disabled }: CheckboxProps) => (
   <StylesProvider injectFirst>
-    <MaterialCheckbox classes={classes} icon={<UncheckedBoxIcon />} checkedIcon={<CheckedIcon />} disableRipple />
+    <MaterialCheckbox
+      disabled={disabled}
+      classes={classes}
+      icon={<UncheckedBoxIcon />}
+      checkedIcon={<CheckedIcon />}
+      disableRipple
+    />
   </StylesProvider>
 );
 

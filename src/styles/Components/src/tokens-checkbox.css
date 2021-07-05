@@ -7,4 +7,5 @@
   --denhaag-checkbox-padding-block-end: 8px;
 
   --denhaag-checkbox-normal-hover-color: var(--denhaag-blue-3);
+  --denhaag-checkbox-normal-disabled-color: var(--denhaag-grey-2);
 }
