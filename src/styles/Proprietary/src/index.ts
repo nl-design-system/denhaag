@@ -1,1 +1,1 @@
-export default require('./brand.css');
+export default require('./index.css');
