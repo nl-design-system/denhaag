@@ -16,7 +16,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "rollup -c ../../../rollup.config.js",
+    "build": "tsc -b",
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
