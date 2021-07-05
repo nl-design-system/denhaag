@@ -1,0 +1,11 @@
+{
+  "utrecht": {
+    "paragraph": {
+      "lead": {
+        "font-size": { "value": "{denhaag.typography.scale.lg.font-size.value} " },
+        "font-weight": {},
+        "line-height": { "value": "26px" }
+      }
+    }
+  }
+}

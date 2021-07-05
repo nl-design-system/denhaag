@@ -1,0 +1,28 @@
+{
+  "denhaag": {
+    "list": {
+      "item": {
+        "secondary-action": {
+          "color": { "value": "{denhaag.color.grey.4.value}" },
+          "right": { "value": "16px" },
+          "padding": { "value": "4px" }
+        },
+        "secondary-action": {
+          "focus": {
+            "color": { "value": "{denhaag.color.blue.3.value}" }
+          }
+        }
+      },
+      "item-text": {
+        "primary": {
+          "hover": {
+            "color": { "value": "{denhaag.color.blue.3.value}" }
+          },
+          "focus": {
+            "color": { "value": "{denhaag.color.blue.3.value}" }
+          }
+        }
+      }
+    }
+  }
+}

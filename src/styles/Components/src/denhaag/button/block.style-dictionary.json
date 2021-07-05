@@ -1,0 +1,11 @@
+{
+  "denhaag": {
+    "button": {
+      "border-radius": { "value": "{denhaag.border-radius.value}" },
+      "border-width": { "value": "1px" },
+      "font-family": { "value": "{denhaag.typography.sans-serif.font-family.value}" },
+      "padding-block": { "value": "8px" },
+      "padding-inline": { "value": "16px" }
+    }
+  }
+}
