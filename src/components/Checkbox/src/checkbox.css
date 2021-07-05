@@ -1,3 +1,15 @@
-.denhaag-checkbox.denhaag-checkbox--checked {
+.denhaag-checkbox {
+  padding-inline-start: var(--denhaag-checkbox-padding-inline-start);
+  padding-inline-end: var(--denhaag-checkbox-padding-inline-end);
+  padding-block-start: var(--denhaag-checkbox-padding-block-start);
+  padding-block-end: var(--denhaag-checkbox-padding-block-end);
   color: var(--denhaag-checkbox-normal-unchecked-color);
+}
+
+.denhaag-checkbox.denhaag-checkbox--checked {
+  color: var(--denhaag-checkbox-normal-checked-color);
+}
+
+.denhaag-checkbox:hover {
+  color: var(--denhaag-checkbox-normal-hover-color);
 }

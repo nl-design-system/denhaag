@@ -1,4 +1,10 @@
 :root {
-  --denhaag-checkbox-normal-unchecked-color: var(--denhaag-blue-3);
+  --denhaag-checkbox-normal-unchecked-color: var(--denhaag-grey-4);
+  --denhaag-checkbox-normal-checked-color: var(--denhaag-blue-3);
+  --denhaag-checkbox-padding-inline-start: 8px;
+  --denhaag-checkbox-padding-inline-end: 8px;
+  --denhaag-checkbox-padding-block-start: 8px;
+  --denhaag-checkbox-padding-block-end: 8px;
 
+  --denhaag-checkbox-normal-hover-color: var(--denhaag-blue-3);
 }

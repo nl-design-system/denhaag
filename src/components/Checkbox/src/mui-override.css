@@ -1,8 +1,9 @@
+
+
 .denhaag-checkbox:hover {
   background-color: transparent;
 }
 
-.denhaag-checkbox--checked:hover {
+.denhaag-checkbox.denhaag-checkbox--checked:hover {
   background-color: transparent;
 }
-
