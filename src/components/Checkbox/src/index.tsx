@@ -54,7 +54,7 @@ export interface CheckboxProps extends BaseClassesProps {
  */
 export const Checkbox: React.FC<CheckboxProps> = () => (
   <StylesProvider injectFirst>
-    <MaterialCheckbox classes={classes} icon={<UncheckedBoxIcon />} checkedIcon={<CheckedIcon />} disableRipple />;
+    <MaterialCheckbox classes={classes} icon={<UncheckedBoxIcon />} checkedIcon={<CheckedIcon />} disableRipple />
   </StylesProvider>
 );
 
