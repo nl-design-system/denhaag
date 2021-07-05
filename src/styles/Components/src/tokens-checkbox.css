@@ -1,11 +1,13 @@
 :root {
   --denhaag-checkbox-normal-unchecked-color: var(--denhaag-grey-4);
   --denhaag-checkbox-normal-checked-color: var(--denhaag-blue-3);
-  --denhaag-checkbox-padding-inline-start: 8px;
-  --denhaag-checkbox-padding-inline-end: 8px;
-  --denhaag-checkbox-padding-block-start: 8px;
-  --denhaag-checkbox-padding-block-end: 8px;
+  --denhaag-checkbox-margin-inline-start: 8px;
+  --denhaag-checkbox-margin-inline-end: 8px;
+  --denhaag-checkbox-margin-block-start: 8px;
+  --denhaag-checkbox-margin-block-end: 8px;
 
-  --denhaag-checkbox-normal-hover-color: var(--denhaag-blue-3);
-  --denhaag-checkbox-normal-disabled-color: var(--denhaag-grey-2);
+  --denhaag-checkbox-hover-color: var(--denhaag-blue-3);
+  --denhaag-checkbox-disabled-color: var(--denhaag-grey-2);
+
+  --denhaag-checkbox-error-color: var(--denhaag-red-3);
 }

@@ -32,7 +32,7 @@ export interface CheckboxProps extends BaseClassesProps {
   /**
    * Color for the component.
    */
-  color?: 'default' | 'primary' | 'secondary';
+  color?: 'default' | 'error';
   /**
    * Size of the component.
    */
@@ -52,17 +52,22 @@ export interface CheckboxProps extends BaseClassesProps {
 /**
  * Checkboxes allow the user to select one or more items from a set.
  */
-export const Checkbox: React.FC<CheckboxProps> = ({ disabled }: CheckboxProps) => (
-  <StylesProvider injectFirst>
-    <MaterialCheckbox
-      disabled={disabled}
-      classes={classes}
-      icon={<UncheckedBoxIcon />}
-      checkedIcon={<CheckedIcon />}
-      disableRipple
-    />
-  </StylesProvider>
-);
+export const Checkbox: React.FC<CheckboxProps> = ({ disabled, color }: CheckboxProps) => {
+  const muiAttributes = { error: color === 'error' ? 'true' : undefined };
+  return (
+    <StylesProvider injectFirst>
+      <MaterialCheckbox
+        {...muiAttributes}
+        disabled={disabled}
+        classes={classes}
+        icon={<UncheckedBoxIcon />}
+        checkedIcon={<CheckedIcon />}
+        disableRipple
+        tabIndex={0}
+      />
+    </StylesProvider>
+  );
+};
 
 /**
  * Default export for Checkbox

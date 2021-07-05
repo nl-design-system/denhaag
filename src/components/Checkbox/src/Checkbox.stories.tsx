@@ -178,3 +178,19 @@ Disabled.parameters = {
     },
   },
 };
+
+/**
+ * Error Checkbox
+ */
+export const Error: Story<CheckboxProps> = Template.bind({});
+Error.args = {
+  color: 'error',
+};
+
+Error.parameters = {
+  docs: {
+    source: {
+      code: disabledCode,
+    },
+  },
+};
