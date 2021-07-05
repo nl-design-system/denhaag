@@ -1,1 +1,1 @@
-export default require('./common.css');
+export default require('./index.css');
