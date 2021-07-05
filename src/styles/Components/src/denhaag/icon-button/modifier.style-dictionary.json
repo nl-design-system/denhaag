@@ -1,0 +1,15 @@
+{
+  "denhaag": {
+    "icon-button": {
+      "focus": {
+        "outline-color": { "value": "{denhaag.focus.border-color.value}" },
+        "outline-width": { "value": "{denhaag.focus.border-width.value}" },
+        "outline-style": { "value": "{denhaag.focus.border-style.value}" },
+        "outline-offset": { "value": "0px" }
+      },
+      "hover": {
+        "color": { "value": "{denhaag.color.blue.4.value}"}
+      }
+    }
+  }
+}
