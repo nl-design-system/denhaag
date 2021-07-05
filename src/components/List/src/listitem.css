@@ -85,16 +85,16 @@
 }
 
 .denhaag-list__item[secondarytext] {
-  padding-block-start: var(--denhaag-list-item-padding-block-secondary);
-  padding-block-end: var(--denhaag-list-item-padding-block-secondary);
+  padding-block-start: var(--denhaag-list-item-secondary-padding-block);
+  padding-block-end: var(--denhaag-list-item-secondary-padding-block);
 }
 
 .denhaag-list__item[secondarytext]:active {
-  padding-block-start: calc(var(--denhaag-list-item-padding-block-secondary) - var(--denhaag-list-item-border-size));
-  padding-block-end: calc(var(--denhaag-list-item-padding-block-secondary) - var(--denhaag-list-item-border-size));
+  padding-block-start: calc(var(--denhaag-list-item-secondary-padding-block) - var(--denhaag-list-item-border-size));
+  padding-block-end: calc(var(--denhaag-list-item-secondary-padding-block) - var(--denhaag-list-item-border-size));
 }
 
 .denhaag-list__item[secondarytext]:focus {
-  padding-block-start: calc(var(--denhaag-list-item-padding-block-secondary) - var(--denhaag-list-item-border-size));
-  padding-block-end: calc(var(--denhaag-list-item-padding-block-secondary) - var(--denhaag-list-item-border-size));
+  padding-block-start: calc(var(--denhaag-list-item-secondary-padding-block) - var(--denhaag-list-item-border-size));
+  padding-block-end: calc(var(--denhaag-list-item-secondary-padding-block) - var(--denhaag-list-item-border-size));
 }
