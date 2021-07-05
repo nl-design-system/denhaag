@@ -1,0 +1,12 @@
+{
+  "denhaag": {
+    "card": {
+      "case-primary": {
+        "background-color": { "value": "{denhaag.color.green.1.value}" }
+      },
+      "case-secondary": {
+        "background-color": { "value": "{denhaag.color.green.2.value}" }
+      }
+    }
+  }
+}

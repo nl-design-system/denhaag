@@ -1,0 +1,13 @@
+{
+  "utrecht": {
+    "heading-5": {
+      "color": {},
+      "font-family": {},
+      "font-size": { "value": "{denhaag.typography.scale.base.font-size.value}" },
+      "font-weight": {},
+      "line-height": {},
+      "margin-block-end": {},
+      "margin-block-start": {}
+    }
+  }
+}
