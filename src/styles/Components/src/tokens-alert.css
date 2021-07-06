@@ -45,6 +45,7 @@
   --denhaag-alert-error-paragraph-color: var(--denhaag-red-5);
   --denhaag-alert-error-icon-color: var(--denhaag-red-3);
   --denhaag-alert-error-action-button-background-color: var(--denhaag-red-3);
+  --denhaag-alert-error-action-button-hover-background-color: var(--denhaag-red-4);
   --denhaag-alert-error-action-button-text-color: white;
   --denhaag-alert-error-close-icon-color: var(--denhaag-red-5);
 
@@ -57,6 +58,7 @@
   --denhaag-alert-info-paragraph-color: var(--denhaag-blue-5);
   --denhaag-alert-info-icon-color: var(--denhaag-blue-3);
   --denhaag-alert-info-action-button-background-color: var(--denhaag-blue-3);
+  --denhaag-alert-info-action-button-hover-background-color: var(--denhaag-blue-4);
   --denhaag-alert-info-action-button-text-color: white;
   --denhaag-alert-info-close-icon-color: var(--denhaag-blue-5);
 
@@ -69,6 +71,7 @@
   --denhaag-alert-success-paragraph-color: var(--denhaag-green-5);
   --denhaag-alert-success-icon-color: var(--denhaag-green-3);
   --denhaag-alert-success-action-button-background-color: var(--denhaag-green-3);
+  --denhaag-alert-success-action-button-hover-background-color: var(--denhaag-green-4);
   --denhaag-alert-success-action-button-text-color: white;
   --denhaag-alert-success-close-icon-color: var(--denhaag-green-5);
 
@@ -81,6 +84,7 @@
   --denhaag-alert-warning-paragraph-color: var(--denhaag-orange-5);
   --denhaag-alert-warning-icon-color: var(--denhaag-orange-3);
   --denhaag-alert-warning-action-button-background-color: var(--denhaag-orange-3);
+  --denhaag-alert-warning-action-button-hover-background-color: var(--denhaag-orange-4);
   --denhaag-alert-warning-action-button-text-color: white;
   --denhaag-alert-warning-close-icon-color: var(--denhaag-orange-5);
 }
