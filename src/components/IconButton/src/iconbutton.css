@@ -1,0 +1,20 @@
+.denhaag-icon-button {
+  color: var(--denhaag-icon-button-color);
+
+  padding-inline-start: var(--denhaag-icon-button-padding-inline-start);
+  padding-inline-end: var(--denhaag-icon-button-padding-inline-end);
+  padding-block-start: var(--denhaag-icon-button-padding-block-start);
+  padding-block-end: var(--denhaag-icon-button-padding-block-end);
+}
+
+.denhaag-icon-button:hover {
+  color: var(--denhaag-icon-button-hover-color);
+}
+
+.denhaag-icon-button:focus {
+  color: var(--denhaag-icon-button-focus-color);
+  outline-color: var(--denhaag-icon-button-focus-outline-color);
+  outline-width: var(--denhaag-icon-button-focus-outline-width);
+  outline-style: var(--denhaag-icon-button-focus-outline-style);
+  outline-offset: var(--denhaag-icon-button-focus-outline-offset);
+}
