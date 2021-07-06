@@ -67,7 +67,7 @@ export const ListItem: React.FC<ListItemProps> = (props: ListItemProps) => {
   if (props.actionType === 'nav') {
     children.push(
       <ListItemSecondaryAction key={1}>
-        <IconButton aria-label="Navigate" color="inherit" edge="end" tabIndex={-1}>
+        <IconButton aria-label="Navigate" tabIndex={-1}>
           <ChevronRightIcon />
         </IconButton>
       </ListItemSecondaryAction>,
@@ -75,7 +75,7 @@ export const ListItem: React.FC<ListItemProps> = (props: ListItemProps) => {
   } else if (props.actionType === 'action') {
     children.push(
       <ListItemSecondaryAction key={2}>
-        <IconButton aria-label="Action" color="inherit" onClick={props.onClick} edge="end">
+        <IconButton aria-label="Action" onClick={props.onClick}>
           {props.rightIcon}
         </IconButton>
       </ListItemSecondaryAction>,
