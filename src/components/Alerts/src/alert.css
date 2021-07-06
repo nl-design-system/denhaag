@@ -17,7 +17,9 @@
 
   --denhaag-button-primary-action-background-color: var(--denhaag-alert-error-action-button-background-color);
   --denhaag-button-primary-action-color: var(--denhaag-alert-error-action-button-text-color);
-  --denhaag-button-primary-action-hover-background-color: var(--denhaag-alert-error-action-button-hover-background-color);
+  --denhaag-button-primary-action-hover-background-color: var(
+    --denhaag-alert-error-action-button-hover-background-color
+  );
 }
 
 .denhaag-alert__main-content {
@@ -57,7 +59,9 @@
 
   --denhaag-button-primary-action-background-color: var(--denhaag-alert-info-action-button-background-color);
   --denhaag-button-primary-action-color: var(--denhaag-alert-info-action-button-text-color);
-  --denhaag-button-primary-action-hover-background-color: var(--denhaag-alert-info-action-button-hover-background-color);
+  --denhaag-button-primary-action-hover-background-color: var(
+    --denhaag-alert-info-action-button-hover-background-color
+  );
 }
 
 .denhaag-alert[variant="info"] .denhaag-alert__icon {
@@ -75,13 +79,14 @@
 
   --denhaag-button-primary-action-background-color: var(--denhaag-alert-success-action-button-background-color);
   --denhaag-button-primary-action-color: var(--denhaag-alert-success-action-button-text-color);
-  --denhaag-button-primary-action-hover-background-color: var(--denhaag-alert-success-action-button-hover-background-color);
+  --denhaag-button-primary-action-hover-background-color: var(
+    --denhaag-alert-success-action-button-hover-background-color
+  );
 }
 
 .denhaag-alert[variant="success"] .denhaag-alert__icon {
   color: var(--denhaag-alert-success-icon-color);
 }
-
 
 .denhaag-alert[variant="success"] .denhaag-alert__close {
   color: var(--denhaag-alert-success-close-icon-color);
@@ -94,7 +99,9 @@
 
   --denhaag-button-primary-action-background-color: var(--denhaag-alert-warning-action-button-background-color);
   --denhaag-button-primary-action-color: var(--denhaag-alert-warning-action-button-text-color);
-  --denhaag-button-primary-action-hover-background-color: var(--denhaag-alert-warning-action-button-hover-background-color);
+  --denhaag-button-primary-action-hover-background-color: var(
+    --denhaag-alert-warning-action-button-hover-background-color
+  );
 }
 
 .denhaag-alert[variant="warning"] .denhaag-alert__icon {
