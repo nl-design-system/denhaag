@@ -18,14 +18,6 @@ export interface CheckboxProps extends BaseClassesProps {
    */
   checked?: boolean;
   /**
-   * If `true` then Checkbox will be checked by default.
-   */
-  defaultChecked?: boolean;
-  /**
-   * If `true`, the component appears indeterminate.
-   */
-  indeterminate?: boolean;
-  /**
    * Attributes applied to the `input` element.
    */
   inputProps?: Record<string, unknown>;
@@ -33,10 +25,6 @@ export interface CheckboxProps extends BaseClassesProps {
    * Color for the component.
    */
   color?: 'default' | 'error';
-  /**
-   * Size of the component.
-   */
-  size?: 'small' | 'medium';
   /**
    * Disables Checkbox
    */
@@ -46,22 +34,33 @@ export interface CheckboxProps extends BaseClassesProps {
    */
   onChange?: (event: React.ChangeEvent<unknown>) => void;
 
+  /**
+   * Overwrite the Icon shown when in the unchecked state.
+   */
+  uncheckedIcon?: React.ReactNode;
+
+  /**
+   * Overwrite the Icon shown when in the checked state.
+   */
   checkedIcon?: React.ReactNode;
 }
 
 /**
  * Checkboxes allow the user to select one or more items from a set.
  */
-export const Checkbox: React.FC<CheckboxProps> = ({ disabled, color }: CheckboxProps) => {
-  const muiAttributes = { error: color === 'error' ? 'true' : undefined };
+export const Checkbox: React.FC<CheckboxProps> = (props: CheckboxProps) => {
+  const muiAttributes = { error: props.color === 'error' ? 'true' : undefined };
+  const uncheckedIcon = props.uncheckedIcon ?? <UncheckedBoxIcon />;
+  const checkedIcon = props.checkedIcon ?? <CheckedIcon />;
+
   return (
     <StylesProvider injectFirst>
       <MaterialCheckbox
         {...muiAttributes}
-        disabled={disabled}
+        disabled={props.disabled}
         classes={classes}
-        icon={<UncheckedBoxIcon />}
-        checkedIcon={<CheckedIcon />}
+        icon={uncheckedIcon}
+        checkedIcon={checkedIcon}
         disableRipple
         tabIndex={0}
       />
