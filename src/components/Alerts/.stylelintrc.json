@@ -1,6 +1,7 @@
 {
   "extends": "../../../.stylelintrc.json",
   "rules": {
+    "custom-property-pattern": "(denhaag|utrecht)-[a-z0-9-]+",
     "selector-class-pattern": "(denhaag|utrecht)-[a-z0-9-]+"
   }
 }
