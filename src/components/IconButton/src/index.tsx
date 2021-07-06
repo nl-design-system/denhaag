@@ -3,6 +3,7 @@ import { StylesProvider } from '@material-ui/core';
 import MaterialIconButton from '@material-ui/core/IconButton';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import './mui-override.css';
+import './iconbutton.css';
 
 export interface IconButtonProps extends BaseProps {
   /**
