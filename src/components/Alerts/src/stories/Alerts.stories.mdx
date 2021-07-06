@@ -1,6 +1,7 @@
 import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/addon-docs/blocks";
 import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
 
+import { MegaphoneIcon } from "@gemeente-denhaag/icons";
 import { action } from "@storybook/addon-actions";
 import { Alerts } from "..";
 import pkg from "../../package.json";
@@ -195,6 +196,23 @@ const SuccessAlert = <Alerts
       text: "Here comes text. This text provides additional details and actionable steps the user can take.",
       variant: "info",
       close: action("Close clicked"),
+    }}
+  >
+    {(args) => <Alerts {...args}></Alerts>}
+  </Story>
+</Canvas>
+
+### Custom icon
+
+<Canvas>
+  <Story
+    name="Custom icon"
+    args={{
+      title: "Title",
+      text: "Support Icons can be overwritten!",
+      variant: "info",
+      close: action("Close clicked"),
+      supportIcon: <MegaphoneIcon />,
     }}
   >
     {(args) => <Alerts {...args}></Alerts>}
