@@ -1,0 +1,15 @@
+.denhaag-form-control-label__label {
+    --utrecht-paragraph-font-family: var(--denhaag-form-control-label-font-family);
+    --utrecht-paragraph-font-size: var(--denhaag-form-control-label-font-size);
+    --utrecht-paragraph-font-weight: var(--denhaag-form-control-label-font-weight);
+    --utrecht-paragraph-line-height: var(--denhaag-form-control-label-line-height);
+    --utrecht-paragraph-color: var(--denhaag-form-control-label-color);
+}
+
+.denhaag-form-control-label__label {
+  font-family: var(--utrecht-paragraph-font-family);
+  font-size: var(--utrecht-paragraph-font-size);
+  font-weight: var(--utrecht-paragraph-font-weight);
+  line-height: var(--utrecht-paragraph-line-height);
+  color: var(--utrecht-paragraph-color);
+}

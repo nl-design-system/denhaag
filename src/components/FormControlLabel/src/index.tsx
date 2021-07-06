@@ -1,6 +1,12 @@
 import MaterialFormControlLabel from '@material-ui/core/FormControlLabel';
 import React, { ReactElement } from 'react';
 import { BaseClassesProps } from '@gemeente-denhaag/baseprops';
+import { StylesProvider } from '@material-ui/core';
+
+import { classes } from './bem-mapping';
+
+import './mui-override.css';
+import './formcontrollabel.css';
 
 export interface FormControlLabelProps extends BaseClassesProps {
   /**
@@ -9,7 +15,7 @@ export interface FormControlLabelProps extends BaseClassesProps {
   checked?: boolean;
 
   /**
-   *A control instance, it can be a Radio, a Switch or a Checkbox.
+   * A control instance, it can be a Radio, a Switch or a Checkbox.
    */
   control: ReactElement;
 
@@ -22,11 +28,6 @@ export interface FormControlLabelProps extends BaseClassesProps {
    * The label to display for the component.
    */
   label: string;
-
-  /**
-   * The position of the label.
-   */
-  labelPlacement?: 'bottom' | 'end' | 'start' | 'top';
 
   /**
    * Callback fired when the state is changed.
@@ -43,7 +44,11 @@ export interface FormControlLabelProps extends BaseClassesProps {
  * FormControlLabels allow the developer to add a label to some components
  */
 export const FormControlLabel: React.FC<FormControlLabelProps> = (props: FormControlLabelProps) => {
-  return <MaterialFormControlLabel {...props} />;
+  return (
+    <StylesProvider injectFirst>
+      <MaterialFormControlLabel {...props} classes={classes} />
+    </StylesProvider>
+  );
 };
 
 /**
