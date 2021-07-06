@@ -63,22 +63,3 @@ PrimaryColoured.parameters = {
     },
   },
 };
-
-// language=JS
-const smallCode = `
-<IconButton size="small">
-  <TrashIcon />
-</IconButton>
-`;
-
-export const SmallSized = Template.bind({});
-SmallSized.args = {
-  size: 'small',
-};
-SmallSized.parameters = {
-  docs: {
-    source: {
-      code: smallCode,
-    },
-  },
-};
