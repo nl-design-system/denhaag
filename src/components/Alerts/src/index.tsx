@@ -19,9 +19,14 @@ export interface AlertsProps {
 
   /**
    * The variant of the alert, determines which color and icon are displayed.
-   * Default is 'base'.
    */
   variant: 'error' | 'info' | 'success' | 'warning';
+
+  /**
+   * The support icon shown top-left.
+   * When left undefined, a default icon corresponding to 'variant' is provided.
+   */
+  supportIcon?: React.ReactNode;
 
   /**
    * The action of the alert, displays a clickable button that will fire this event.
@@ -37,23 +42,27 @@ export interface AlertsProps {
 /**
  * Primary UI component for user interaction
  */
-export const Alerts: React.FC<AlertsProps> = ({ title, text, variant, action, close }: AlertsProps) => {
+export const Alerts: React.FC<AlertsProps> = ({ title, text, variant, action, close, supportIcon }: AlertsProps) => {
   const customAttributes = { variant };
   let icon;
 
-  switch (variant) {
-    case 'error':
-      icon = <AlertTriangleIcon />;
-      break;
-    case 'info':
-      icon = <CircleInformationIcon />;
-      break;
-    case 'success':
-      icon = <CheckCircleIcon />;
-      break;
-    case 'warning':
-      icon = <AlertTriangleIcon />;
-      break;
+  if (supportIcon !== undefined) {
+    icon = supportIcon;
+  } else {
+    switch (variant) {
+      case 'error':
+        icon = <AlertTriangleIcon />;
+        break;
+      case 'info':
+        icon = <CircleInformationIcon />;
+        break;
+      case 'success':
+        icon = <CheckCircleIcon />;
+        break;
+      case 'warning':
+        icon = <AlertTriangleIcon />;
+        break;
+    }
   }
 
   return (
