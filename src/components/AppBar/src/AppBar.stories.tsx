@@ -25,7 +25,7 @@ const Template: Story<AppBarProps> = (args: AppBarProps) => {
   return (
     <AppBar {...args}>
       <Toolbar>
-        <IconButton edge="start" color="inherit" aria-label="menu">
+        <IconButton aria-label="menu">
           <HamburgerIcon />
         </IconButton>
         <Heading5>News</Heading5>
@@ -39,7 +39,7 @@ const Template: Story<AppBarProps> = (args: AppBarProps) => {
 const defaultCode = `
 <AppBar position='relative'>
   <Toolbar>
-    <IconButton edge="start" color="inherit" aria-label="menu">
+    <IconButton aria-label="menu">
       <HamburgerIcon/>
     </IconButton>
     <Heading5>News</Heading5>
@@ -68,7 +68,7 @@ Default.parameters = {
 const staticCode = `
 <AppBar position='static'>
   <Toolbar>
-    <IconButton edge="start" color="inherit" aria-label="menu">
+    <IconButton aria-label="menu">
       <HamburgerIcon/>
     </IconButton>
     <Heading5>News</Heading5>
@@ -97,7 +97,7 @@ StaticPosition.parameters = {
 const secondaryCode = `
 <AppBar position='static' color={'secondary'}>
   <Toolbar>
-    <IconButton edge="start" color="inherit" aria-label="menu">
+    <IconButton aria-label="menu">
       <HamburgerIcon/>
     </IconButton>
     <Heading5>News</Heading5>
