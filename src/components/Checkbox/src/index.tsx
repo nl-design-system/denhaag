@@ -51,7 +51,7 @@ export interface CheckboxProps extends BaseClassesProps {
  */
 export const Checkbox: React.FC<CheckboxProps> = (props: CheckboxProps) => {
   const rootStyles = clsx('denhaag-checkbox', {
-    'denhaag-checkbox--overlap-rectangle': props.color === 'error',
+    'denhaag-checkbox--error': props.color === 'error',
   });
   classes.root = rootStyles;
   const uncheckedIcon = props.uncheckedIcon ?? <UncheckedBoxIcon />;
