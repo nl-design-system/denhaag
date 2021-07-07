@@ -1,6 +1,6 @@
 {
     "name": "@gemeente-denhaag/pickersutilsprovider",
-    "version": "0.1.10",
+    "version": "0.2.0",
     "description": "A Utilsprovider for pickers",
     "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
     "repository": {
