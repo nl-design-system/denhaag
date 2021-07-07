@@ -1,0 +1,12 @@
+:root {
+  --denhaag-form-group-label-color: var(--denhaag-blue-5);
+  --denhaag-form-group-helper-text-size: var(--denhaag-font-size-s);
+  --denhaag-form-group-helper-text-color: var(--denhaag-grey-4);
+
+  --denhaag-form-group-helper-text-margin-block-start: 4px;
+
+  --denhaag-form-group-margin-block-start: 8px;
+  --denhaag-form-group-margin-block-end: 8px;
+  --denhaag-form-group-margin-inline-start: 8px;
+  --denhaag-form-group-margin-inline-end: 8px;
+}

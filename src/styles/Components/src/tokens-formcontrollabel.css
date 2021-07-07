@@ -5,4 +5,12 @@
   --denhaag-form-control-label-line-height: var(--utrecht-paragraph-line-height);
   --denhaag-form-control-label-color: var(--utrecht-paragraph-color);
   --denhaag-form-control-label-hover-color: var(--denhaag-checkbox-hover-color);
+
+  /* Distance between Checkbox and label text */
+  --denhaag-form-control-label__label-margin-inline-start: 8px;
+
+  --denhaag-form-control-label-margin-block-start: 8px;
+  --denhaag-form-control-label-margin-block-end: 8px;
+  --denhaag-form-control-label-margin-inline-start: 8px;
+  --denhaag-form-control-label-margin-inline-end: 8px;
 }

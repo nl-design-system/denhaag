@@ -4,6 +4,7 @@
  */
 
 .utrecht-paragraph {
+  color: var(--denhaag-paragraph-color, var(--utrecht-document-color, inherit));
   font-family: var(--utrecht-paragraph-font-family, var(--utrecht-document-font-family, inherit));
   font-size: var(--utrecht-paragraph-font-size, var(--utrecht-document-font-size, inherit));
   font-weight: var(--utrecht-paragraph-font-weight, inherit);
@@ -16,5 +17,6 @@
   line-height: var(--utrecht-paragraph-lead-line-height, inherit);
 }
 .utrecht-paragraph--distanced {
-  margin-block-start: var(--utrecht-paragraph-margin-block);
+  margin-block-start: var(--utrecht-paragraph-margin-block-start);
+  margin-block-end: var(--utrecht-paragraph-margin-block-end);
 }

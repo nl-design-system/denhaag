@@ -19,16 +19,9 @@ export default {
   component: FormGroup,
 } as Meta;
 
-const Template: Story<FormGroupProps> = (args: FormGroupProps) => (
-  <FormGroup {...args}>
+export const Default: Story<FormGroupProps> = (args: FormGroupProps) => (
+  <FormGroup {...args} label="Label" helperText="Helper text">
     <FormControlLabel {...args} control={<Checkbox />} label="Checkbox 1" />
     <FormControlLabel {...args} control={<Checkbox />} label="Checkbox 2" />
   </FormGroup>
 );
-
-export const Default: Story<FormGroupProps> = Template.bind({});
-
-export const Row: Story<FormGroupProps> = Template.bind({});
-Row.args = {
-  row: true,
-};
