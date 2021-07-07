@@ -12,7 +12,7 @@
   --utrecht-paragraph-margin-block-end: 0;
 }
 
-.denhaag-alert[variant="error"] {
+.denhaag-alert--error {
   background-color: var(--denhaag-alert-error-background-color);
   --denhaag-paragraph-color: var(--denhaag-alert-error-paragraph-color);
   --utrecht-heading-4-color: var(--denhaag-alert-error-title-color);
@@ -46,11 +46,11 @@
   margin-block-start: var(--denhaag-alert-action-padding-block-start);
 }
 
-.denhaag-alert[variant="error"] .denhaag-alert__icon {
+.denhaag-alert--error .denhaag-alert__icon {
   color: var(--denhaag-alert-error-icon-color);
 }
 
-.denhaag-alert[variant="info"] {
+.denhaag-alert--info {
   background-color: var(--denhaag-alert-info-background-color);
   --denhaag-paragraph-color: var(--denhaag-alert-info-paragraph-color);
   --utrecht-heading-4-color: var(--denhaag-alert-info-title-color);
@@ -66,11 +66,11 @@
   --denhaag-icon-button-focus-color: var(--denhaag-alert-info-close-icon-color);
 }
 
-.denhaag-alert[variant="info"] .denhaag-alert__icon {
+.denhaag-alert--info .denhaag-alert__icon {
   color: var(--denhaag-alert-info-icon-color);
 }
 
-.denhaag-alert[variant="success"] {
+.denhaag-alert--success {
   background-color: var(--denhaag-alert-success-background-color);
   --denhaag-paragraph-color: var(--denhaag-alert-success-paragraph-color);
   --utrecht-heading-4-color: var(--denhaag-alert-success-title-color);
@@ -86,11 +86,11 @@
   --denhaag-icon-button-focus-color: var(--denhaag-alert-success-close-icon-color);
 }
 
-.denhaag-alert[variant="success"] .denhaag-alert__icon {
+.denhaag-alert--success .denhaag-alert__icon {
   color: var(--denhaag-alert-success-icon-color);
 }
 
-.denhaag-alert[variant="warning"] {
+.denhaag-alert--warning {
   background-color: var(--denhaag-alert-warning-background-color);
   --denhaag-paragraph-color: var(--denhaag-alert-warning-paragraph-color);
   --utrecht-heading-4-color: var(--denhaag-alert-warning-title-color);
@@ -106,7 +106,7 @@
   --denhaag-icon-button-focus-color: var(--denhaag-alert-warning-close-icon-color);
 }
 
-.denhaag-alert[variant="warning"] .denhaag-alert__icon {
+.denhaag-alert--warning .denhaag-alert__icon {
   color: var(--denhaag-alert-warning-icon-color);
 }
 

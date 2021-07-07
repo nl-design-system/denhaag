@@ -43,7 +43,8 @@ export interface AlertsProps {
  * Primary UI component for user interaction
  */
 export const Alerts: React.FC<AlertsProps> = ({ title, text, variant, action, close, supportIcon }: AlertsProps) => {
-  const customAttributes = { variant };
+  const rootStyles = 'denhaag-alert denhaag-alert--' + variant;
+
   let icon;
 
   if (supportIcon !== undefined) {
@@ -66,7 +67,7 @@ export const Alerts: React.FC<AlertsProps> = ({ title, text, variant, action, cl
   }
 
   return (
-    <div className="denhaag-alert" {...customAttributes}>
+    <div className={rootStyles}>
       <div className="denhaag-alert__main-content">
         <div className="denhaag-alert__icon">{icon}</div>
         <div className="denhaag-alert__content">
