@@ -1,0 +1,8 @@
+:root {
+  --denhaag-form-control-label-font-family: var(--utrecht-paragraph-font-family);
+  --denhaag-form-control-label-font-size: var(--utrecht-paragraph-font-size);
+  --denhaag-form-control-label-font-weight: var(--utrecht-paragraph-font-weight);
+  --denhaag-form-control-label-line-height: var(--utrecht-paragraph-line-height);
+  --denhaag-form-control-label-color: var(--utrecht-paragraph-color);
+  --denhaag-form-control-label-hover-color: var(--denhaag-checkbox-hover-color);
+}

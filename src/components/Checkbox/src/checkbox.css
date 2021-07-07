@@ -31,10 +31,10 @@
   color: var(--denhaag-checkbox-disabled-color);
 }
 
-.denhaag-checkbox[error] {
+.denhaag-checkbox--error {
   color: var(--denhaag-checkbox-error-color);
 }
 
-.denhaag-checkbox[error].denhaag-checkbox--checked {
+.denhaag-checkbox--error.denhaag-checkbox--checked {
   color: var(--denhaag-checkbox-error-color);
 }

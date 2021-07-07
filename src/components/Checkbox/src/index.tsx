@@ -9,6 +9,7 @@ import './checkbox.css';
 import { StylesProvider } from '@material-ui/core';
 
 import { classes } from './bem-mapping';
+import clsx from 'clsx';
 
 export interface CheckboxProps extends BaseClassesProps {
   /**
@@ -49,14 +50,16 @@ export interface CheckboxProps extends BaseClassesProps {
  * Checkboxes allow the user to select one or more items from a set.
  */
 export const Checkbox: React.FC<CheckboxProps> = (props: CheckboxProps) => {
-  const muiAttributes = { error: props.color === 'error' ? 'true' : undefined };
+  const rootStyles = clsx('denhaag-checkbox', {
+    'denhaag-checkbox--overlap-rectangle': props.color === 'error',
+  });
+  classes.root = rootStyles;
   const uncheckedIcon = props.uncheckedIcon ?? <UncheckedBoxIcon />;
   const checkedIcon = props.checkedIcon ?? <CheckedIcon />;
 
   return (
     <StylesProvider injectFirst>
       <MaterialCheckbox
-        {...muiAttributes}
         disabled={props.disabled}
         classes={classes}
         icon={uncheckedIcon}

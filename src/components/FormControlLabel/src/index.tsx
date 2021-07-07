@@ -5,7 +5,6 @@ import { StylesProvider } from '@material-ui/core';
 
 import { classes } from './bem-mapping';
 
-import './mui-override.css';
 import './formcontrollabel.css';
 
 export interface FormControlLabelProps extends BaseClassesProps {
