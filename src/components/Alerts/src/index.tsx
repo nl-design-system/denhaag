@@ -81,7 +81,7 @@ export const Alerts: React.FC<AlertsProps> = ({ title, text, variant, action, cl
       </div>
       {close && (
         <div className="denhaag-alert__close">
-          <IconButton aria-label="Close" color="inherit" onClick={close} tabIndex={0}>
+          <IconButton aria-label="Close" onClick={close} tabIndex={0}>
             <CloseIcon />
           </IconButton>
         </div>
