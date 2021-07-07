@@ -22,6 +22,10 @@
   --denhaag-button-primary-action-hover-background-color: var(
     --denhaag-alert-error-action-button-hover-background-color
   );
+
+  --denhaag-icon-button-color: var(--denhaag-alert-error-close-icon-color);
+  --denhaag-icon-button-hover-color: var(--denhaag-alert-error-close-icon-color);
+  --denhaag-icon-button-focus-color: var(--denhaag-alert-error-close-icon-color);
 }
 
 .denhaag-alert__main-content {
@@ -46,10 +50,6 @@
   color: var(--denhaag-alert-error-icon-color);
 }
 
-.denhaag-alert[variant="error"] .denhaag-alert__close {
-  color: var(--denhaag-alert-error-close-icon-color);
-}
-
 .denhaag-alert[variant="info"] {
   background-color: var(--denhaag-alert-info-background-color);
   --denhaag-paragraph-color: var(--denhaag-alert-info-paragraph-color);
@@ -60,14 +60,14 @@
   --denhaag-button-primary-action-hover-background-color: var(
     --denhaag-alert-info-action-button-hover-background-color
   );
+
+  --denhaag-icon-button-color: var(--denhaag-alert-info-close-icon-color);
+  --denhaag-icon-button-hover-color: var(--denhaag-alert-info-close-icon-color);
+  --denhaag-icon-button-focus-color: var(--denhaag-alert-info-close-icon-color);
 }
 
 .denhaag-alert[variant="info"] .denhaag-alert__icon {
   color: var(--denhaag-alert-info-icon-color);
-}
-
-.denhaag-alert[variant="info"] .denhaag-alert__close {
-  color: var(--denhaag-alert-info-close-icon-color);
 }
 
 .denhaag-alert[variant="success"] {
@@ -80,14 +80,14 @@
   --denhaag-button-primary-action-hover-background-color: var(
     --denhaag-alert-success-action-button-hover-background-color
   );
+
+  --denhaag-icon-button-color: var(--denhaag-alert-success-close-icon-color);
+  --denhaag-icon-button-hover-color: var(--denhaag-alert-success-close-icon-color);
+  --denhaag-icon-button-focus-color: var(--denhaag-alert-success-close-icon-color);
 }
 
 .denhaag-alert[variant="success"] .denhaag-alert__icon {
   color: var(--denhaag-alert-success-icon-color);
-}
-
-.denhaag-alert[variant="success"] .denhaag-alert__close {
-  color: var(--denhaag-alert-success-close-icon-color);
 }
 
 .denhaag-alert[variant="warning"] {
@@ -100,33 +100,17 @@
   --denhaag-button-primary-action-hover-background-color: var(
     --denhaag-alert-warning-action-button-hover-background-color
   );
+
+  --denhaag-icon-button-color: var(--denhaag-alert-warning-close-icon-color);
+  --denhaag-icon-button-hover-color: var(--denhaag-alert-warning-close-icon-color);
+  --denhaag-icon-button-focus-color: var(--denhaag-alert-warning-close-icon-color);
 }
 
 .denhaag-alert[variant="warning"] .denhaag-alert__icon {
   color: var(--denhaag-alert-warning-icon-color);
 }
 
-.denhaag-alert[variant="warning"] .denhaag-alert__close {
-  color: var(--denhaag-alert-warning-close-icon-color);
-}
-
 .denhaag-alert__content {
   margin-inline-start: var(--denhaag-alert-content-margin-inline-start);
   margin-inline-end: var(--denhaag-alert-content-margin-inline-end);
-}
-
-/* The position of the button is configurable with padding of alert__content and alert */
-.denhaag-alert__close button {
-  padding-inline-start: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
-}
-
-/* The position of the button is configurable with padding of alert__content and alert */
-.denhaag-alert__close button:focus {
-  outline-color: var(--denhaag-alert-close-focus-border-color);
-  outline-width: var(--denhaag-alert-close-focus-border-width);
-  outline-style: var(--denhaag-alert-close-focus-border-style);
-  outline-offset: var(--denhaag-alert-close-focus-border-offset);
 }
