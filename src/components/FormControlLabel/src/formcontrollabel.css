@@ -22,3 +22,9 @@
   --denhaag-checkbox-normal-unchecked-color: var(--denhaag-form-control-label-hover-color);
   --denhaag-form-control-label-color: var(--denhaag-form-control-label-hover-color);
 }
+
+.denhaag-form-control-label.denhaag-form-control-label--disabled {
+  cursor: default;
+  --denhaag-checkbox-normal-unchecked-color: var(--denhaag-checkbox-disabled-color);
+  --denhaag-form-control-label-color: var(--denhaag-checkbox-disabled-color);
+}

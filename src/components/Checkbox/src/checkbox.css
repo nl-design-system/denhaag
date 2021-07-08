@@ -34,6 +34,11 @@
 
 .denhaag-checkbox.denhaag-checkbox--disabled {
   color: var(--denhaag-checkbox-disabled-color);
+  cursor: default;
+}
+
+.denhaag-checkbox.denhaag-checkbox--disabled:focus-within:after {
+  content: none;
 }
 
 .denhaag-checkbox--error {
