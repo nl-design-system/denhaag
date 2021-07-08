@@ -257,4 +257,3 @@ const HTMLTemplate: Story<CheckboxProps> = () => (
  * Default Checkbox
  */
 export const HTMLCheckbox: Story<CheckboxProps> = HTMLTemplate.bind({});
-HTMLCheckbox.parameters = {};
