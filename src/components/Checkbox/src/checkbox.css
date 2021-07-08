@@ -65,6 +65,7 @@
   padding-inline-start: 0;
   padding-inline-end: 0;
   opacity: 0%;
+  cursor: pointer;
 }
 
 .denhaag-checkbox__icon {
