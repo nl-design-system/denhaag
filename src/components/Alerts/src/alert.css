@@ -18,7 +18,7 @@
   --utrecht-heading-4-color: var(--denhaag-alert-error-title-color);
 
   --denhaag-button-primary-action-background-color: var(--denhaag-alert-error-action-button-background-color);
-  --denhaag-button-primary-action-color: var(--denhaag-alert-error-action-button-text-color);
+  --denhaag-button-primary-action-color: var(--denhaag-alert-error-action-button-color);
   --denhaag-button-primary-action-hover-background-color: var(
     --denhaag-alert-error-action-button-hover-background-color
   );
@@ -56,7 +56,7 @@
   --utrecht-heading-4-color: var(--denhaag-alert-info-title-color);
 
   --denhaag-button-primary-action-background-color: var(--denhaag-alert-info-action-button-background-color);
-  --denhaag-button-primary-action-color: var(--denhaag-alert-info-action-button-text-color);
+  --denhaag-button-primary-action-color: var(--denhaag-alert-info-action-button-color);
   --denhaag-button-primary-action-hover-background-color: var(
     --denhaag-alert-info-action-button-hover-background-color
   );
@@ -76,7 +76,7 @@
   --utrecht-heading-4-color: var(--denhaag-alert-success-title-color);
 
   --denhaag-button-primary-action-background-color: var(--denhaag-alert-success-action-button-background-color);
-  --denhaag-button-primary-action-color: var(--denhaag-alert-success-action-button-text-color);
+  --denhaag-button-primary-action-color: var(--denhaag-alert-success-action-button-color);
   --denhaag-button-primary-action-hover-background-color: var(
     --denhaag-alert-success-action-button-hover-background-color
   );
@@ -96,7 +96,7 @@
   --utrecht-heading-4-color: var(--denhaag-alert-warning-title-color);
 
   --denhaag-button-primary-action-background-color: var(--denhaag-alert-warning-action-button-background-color);
-  --denhaag-button-primary-action-color: var(--denhaag-alert-warning-action-button-text-color);
+  --denhaag-button-primary-action-color: var(--denhaag-alert-warning-action-button-color);
   --denhaag-button-primary-action-hover-background-color: var(
     --denhaag-alert-warning-action-button-hover-background-color
   );
