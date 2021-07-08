@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/surfaces",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A package containing all the surface components.",
   "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
   "repository": {
@@ -21,12 +21,12 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/accordion": "^0.2.0",
-    "@gemeente-denhaag/appbar": "^0.2.0",
-    "@gemeente-denhaag/baseprops": "^0.2.0",
-    "@gemeente-denhaag/card": "^0.2.0",
+    "@gemeente-denhaag/accordion": "^0.2.1",
+    "@gemeente-denhaag/appbar": "^0.2.1",
+    "@gemeente-denhaag/baseprops": "^0.2.1",
+    "@gemeente-denhaag/card": "^0.2.1",
     "@gemeente-denhaag/paper": "^0.1.7",
-    "@gemeente-denhaag/toolbar": "^0.2.0"
+    "@gemeente-denhaag/toolbar": "^0.2.1"
   },
   "peerDependencies": {
     "react": "^17.0.1"
