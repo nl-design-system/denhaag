@@ -22,12 +22,12 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "^0.1.7",
+    "@gemeente-denhaag/baseprops": "^0.2.2",
     "clsx": "^1.1.1"
   },
   "devDependencies": {
-    "@gemeente-denhaag/avatar": "^0.1.7",
-    "@gemeente-denhaag/button": "^0.1.7"
+    "@gemeente-denhaag/avatar": "^0.2.2",
+    "@gemeente-denhaag/button": "^0.2.2"
   },
   "peerDependencies": {
     "react": "^17.0.1"
