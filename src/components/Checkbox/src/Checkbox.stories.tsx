@@ -55,14 +55,6 @@ const defaultCode = `
 <FormControlLabel label='Checkbox'>
   <Checkbox onChange='{}'/>
 </FormControlLabel>
-
-// This 👆 transpiles into this 👇 in the DOM
-
-// Unchecked
-${htmlUnchecked}
-
-// Checked
-${htmlChecked}
 `;
 
 // language=JS
@@ -185,6 +177,14 @@ const HTMLTemplate: Story<CheckboxProps> = () => (
   </div>
 );
 
+const htmlCode = `
+// Unchecked
+${htmlUnchecked}
+
+// Checked
+${htmlChecked}
+`;
+
 /**
  * Default Checkbox
  */
@@ -192,7 +192,7 @@ export const HTMLCheckbox: Story<CheckboxProps> = HTMLTemplate.bind({});
 HTMLCheckbox.parameters = {
   docs: {
     source: {
-      code: defaultCode,
+      code: htmlCode,
     },
   },
 };
