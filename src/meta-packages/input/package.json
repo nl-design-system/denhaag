@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/input",
-  "version": "0.1.12",
+  "version": "0.2.1",
   "description": "A package containing all the forms components",
   "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
   "repository": {
@@ -21,19 +21,19 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "^0.1.7",
-    "@gemeente-denhaag/button": "^0.1.7",
-    "@gemeente-denhaag/checkbox": "^0.1.7",
-    "@gemeente-denhaag/formcontrol": "^0.1.7",
-    "@gemeente-denhaag/formcontrollabel": "^0.1.7",
-    "@gemeente-denhaag/formgroup": "^0.1.7",
-    "@gemeente-denhaag/iconbutton": "^0.1.7",
-    "@gemeente-denhaag/inputlabel": "^0.1.7",
-    "@gemeente-denhaag/pickers": "^0.1.14",
-    "@gemeente-denhaag/radio": "^0.1.7",
-    "@gemeente-denhaag/select": "^0.1.7",
-    "@gemeente-denhaag/switch": "^0.1.7",
-    "@gemeente-denhaag/textfield": "^0.1.7"
+    "@gemeente-denhaag/baseprops": "^0.2.1",
+    "@gemeente-denhaag/button": "^0.2.1",
+    "@gemeente-denhaag/checkbox": "^0.2.1",
+    "@gemeente-denhaag/formcontrol": "^0.2.1",
+    "@gemeente-denhaag/formcontrollabel": "^0.2.1",
+    "@gemeente-denhaag/formgroup": "^0.2.1",
+    "@gemeente-denhaag/iconbutton": "^0.2.1",
+    "@gemeente-denhaag/inputlabel": "^0.2.1",
+    "@gemeente-denhaag/pickers": "^0.2.1",
+    "@gemeente-denhaag/radio": "^0.2.1",
+    "@gemeente-denhaag/select": "^0.2.1",
+    "@gemeente-denhaag/switch": "^0.2.1",
+    "@gemeente-denhaag/textfield": "^0.2.1"
   },
   "peerDependencies": {
     "react": "^17.0.1"
