@@ -54,8 +54,8 @@ export const Checkbox: React.FC<CheckboxProps> = (props: CheckboxProps) => {
     'denhaag-checkbox--error': props.color === 'error',
   });
   classes.root = rootStyles;
-  const uncheckedIcon = props.uncheckedIcon ?? <UncheckedBoxIcon />;
-  const checkedIcon = props.checkedIcon ?? <CheckedIcon />;
+  const uncheckedIcon = props.uncheckedIcon ?? <UncheckedBoxIcon classes={classes.icon} />;
+  const checkedIcon = props.checkedIcon ?? <CheckedIcon classes={classes.icon} />;
 
   return (
     <StylesProvider injectFirst>
@@ -66,6 +66,10 @@ export const Checkbox: React.FC<CheckboxProps> = (props: CheckboxProps) => {
         checkedIcon={checkedIcon}
         disableRipple
         tabIndex={0}
+        inputProps={{
+          className: classes.input,
+          ...props.inputProps,
+        }}
       />
     </StylesProvider>
   );
