@@ -4,7 +4,7 @@ import { HamburgerIcon } from '@gemeente-denhaag/icons';
 import AppBar, { AppBarProps } from '.';
 import Toolbar from '../../Toolbar';
 import IconButton from '../../IconButton';
-import Typography from '../../Typography';
+import { Heading5 } from '@gemeente-denhaag/typography';
 import Button from '../../Button';
 import pkg from '../package.json';
 
@@ -25,10 +25,10 @@ const Template: Story<AppBarProps> = (args: AppBarProps) => {
   return (
     <AppBar {...args}>
       <Toolbar>
-        <IconButton edge="start" color="inherit" aria-label="menu">
+        <IconButton aria-label="menu">
           <HamburgerIcon />
         </IconButton>
-        <Typography variant="h6">News</Typography>
+        <Heading5>News</Heading5>
       </Toolbar>
       <Button>I am a button!</Button>
     </AppBar>
@@ -39,10 +39,10 @@ const Template: Story<AppBarProps> = (args: AppBarProps) => {
 const defaultCode = `
 <AppBar position='relative'>
   <Toolbar>
-    <IconButton edge="start" color="inherit" aria-label="menu">
+    <IconButton aria-label="menu">
       <HamburgerIcon/>
     </IconButton>
-    <Typography variant="h6">News</Typography>
+    <Heading5>News</Heading5>
   </Toolbar>
   <Button>I am a button!</Button>
 </AppBar>
@@ -68,10 +68,10 @@ Default.parameters = {
 const staticCode = `
 <AppBar position='static'>
   <Toolbar>
-    <IconButton edge="start" color="inherit" aria-label="menu">
+    <IconButton aria-label="menu">
       <HamburgerIcon/>
     </IconButton>
-    <Typography variant="h6">News</Typography>
+    <Heading5>News</Heading5>
   </Toolbar>
   <Button>I am a button!</Button>
 </AppBar>
@@ -97,10 +97,10 @@ StaticPosition.parameters = {
 const secondaryCode = `
 <AppBar position='static' color={'secondary'}>
   <Toolbar>
-    <IconButton edge="start" color="inherit" aria-label="menu">
+    <IconButton aria-label="menu">
       <HamburgerIcon/>
     </IconButton>
-    <Typography variant="h6">News</Typography>
+    <Heading5>News</Heading5>
   </Toolbar>
   <Button>I am a button!</Button>
 </AppBar>

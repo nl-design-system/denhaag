@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Typography from '@gemeente-denhaag/typography';
-import { Paper, PaperProps } from '..';
+import { Typography } from '@material-ui/core';
+import { Paper, PaperProps } from '@gemeente-denhaag/card';
 import pkg from '../../package.json';
 
 export default {

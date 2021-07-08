@@ -1,5 +1,5 @@
 import React from 'react';
-import MaterialAvatarGroup from '@material-ui/lab/AvatarGroup';
+import { AvatarGroup as MaterialAvatarGroup } from '@material-ui/lab';
 import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface AvatarGroupProps extends BaseProps {

@@ -1,16 +1,16 @@
-import MaterialButton, { ButtonTypeMap } from '@material-ui/core/Button';
 import React from 'react';
+import { Button as MaterialButton, ButtonTypeMap, StylesProvider } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
-import { StylesProvider } from '@material-ui/core';
+
 import { classes } from './bem-mapping';
-import './mui-override.module.css';
-import './button.module.css';
+import './mui-override.css';
+import './button.css';
 
 export interface ButtonProps extends BaseProps {
   /**
    * Simple click handler
    */
-  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement> | React.TouchEvent<HTMLButtonElement>) => void;
 
   /**
    * Size of the component

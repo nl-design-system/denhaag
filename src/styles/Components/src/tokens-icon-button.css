@@ -1,0 +1,27 @@
+:root {
+    /**
+  * @tokens IconButton
+  * @presenter Color
+  */
+  --denhaag-icon-button-color: var(--denhaag-grey-4);
+  --denhaag-icon-button-hover-color: var(--denhaag-blue-4);
+  --denhaag-icon-button-focus-color: var(--denhaag-blue-4);
+
+  /**
+  * @tokens IconButton
+  * @presenter Spacing
+  */
+  --denhaag-icon-button-padding-inline-start: 2px;
+  --denhaag-icon-button-padding-inline-end: 2px;
+  --denhaag-icon-button-padding-block-start: 2px;
+  --denhaag-icon-button-padding-block-end: 2px;
+
+  /**
+  * @tokens IconButton
+  */
+  --denhaag-icon-button-focus-outline-color: var(--denhaag-ocher-4); /* @presenter Color */
+  --denhaag-icon-button-focus-outline-width: var(--denhaag-focus-border-width); /* @presenter Spacing */
+  --denhaag-icon-button-focus-outline-style: var(--denhaag-focus-border-style); /* @presenter Border */
+
+  --denhaag-icon-button-focus-outline-offset: 0px; /* @presenter Spacing */
+}

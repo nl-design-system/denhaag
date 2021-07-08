@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { ChevronDownIcon } from '@gemeente-denhaag/icons';
-import Typography from '@gemeente-denhaag/typography';
+import { Paragraph } from '@gemeente-denhaag/typography';
 import Accordion, { AccordionSummary, AccordionDetails, AccordionProps } from '.';
 import pkg from '../package.json';
 
@@ -21,13 +21,13 @@ export default {
 const Template: Story<AccordionProps> = (args: AccordionProps) => (
   <Accordion {...args}>
     <AccordionSummary expandIcon={<ChevronDownIcon />}>
-      <Typography>Click me to collapse me!</Typography>
+      <Paragraph>Click me to collapse me!</Paragraph>
     </AccordionSummary>
     <AccordionDetails>
-      <Typography>
+      <Paragraph>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo
         lobortis eget.
-      </Typography>
+      </Paragraph>
     </AccordionDetails>
   </Accordion>
 );
@@ -36,13 +36,13 @@ const Template: Story<AccordionProps> = (args: AccordionProps) => (
 const defaultCode = `
 <Accordion>
   <AccordionSummary expandIcon={<ExpandMore/>}>
-    <Typography>Click me to collapse me!</Typography>
+    <Paragraph>Click me to collapse me!</Paragraph>
   </AccordionSummary>
   <AccordionDetails>
-    <Typography>
+    <Paragraph>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo
       lobortis eget.
-    </Typography>
+    </Paragraph>
   </AccordionDetails>
 </Accordion>
 `;
@@ -63,14 +63,14 @@ Default.parameters = {
 const defaultExpandedCode = `
 <Accordion defaultExpanded>
   <AccordionSummary expandIcon={<ExpandMore/>}>
-    <Typography>Click me to collapse me!</Typography>
+    <Paragraph>Click me to collapse me!</Paragraph>
   </AccordionSummary>
   <AccordionDetails>
-    <Typography>
+    <Paragraph>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
       leo
       lobortis eget.
-    </Typography>
+    </Paragraph>
   </AccordionDetails>
 </Accordion>
 `;
@@ -95,14 +95,14 @@ DefaultExpanded.parameters = {
 const disabledCode = `
 <Accordion disabled>
   <AccordionSummary expandIcon={<ExpandMore/>}>
-    <Typography>Click me to collapse me!</Typography>
+    <Paragraph>Click me to collapse me!</Paragraph>
   </AccordionSummary>
   <AccordionDetails>
-    <Typography>
+    <Paragraph>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
       leo
       lobortis eget.
-    </Typography>
+    </Paragraph>
   </AccordionDetails>
 </Accordion>
 `;
@@ -128,14 +128,14 @@ Disabled.parameters = {
 const squaredCode = `
 <Accordion square>
   <AccordionSummary expandIcon={<ExpandMore/>}>
-    <Typography>Click me to collapse me!</Typography>
+    <Paragraph>Click me to collapse me!</Paragraph>
   </AccordionSummary>
   <AccordionDetails>
-    <Typography>
+    <Paragraph>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
       leo
       lobortis eget.
-    </Typography>
+    </Paragraph>
   </AccordionDetails>
 </Accordion>
 `;

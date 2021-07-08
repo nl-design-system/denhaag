@@ -1,9 +1,7 @@
 {
   "extends": "./tsconfig.build.json",
+  "exclude": ["dist"],
   "include": ["src/**/*.stories.tsx"],
-  "compilerOptions": {
-    "incremental": false
-  },
   "references": [
     {
       "path": "src/components/Accordion"
@@ -96,9 +94,6 @@
       "path": "src/components/Select"
     },
     {
-      "path": "src/components/Stepper"
-    },
-    {
       "path": "src/components/SwipeableDrawer"
     },
     {
@@ -109,6 +104,9 @@
     },
     {
       "path": "src/components/TextField"
+    },
+    {
+      "path": "src/components/Timeline"
     },
     {
       "path": "src/components/Toolbar"
@@ -135,13 +133,13 @@
       "path": "src/meta-packages/surfaces"
     },
     {
+      "path": "src/styles/Common"
+    },
+    {
       "path": "src/styles/Components"
     },
     {
       "path": "src/styles/Proprietary"
-    },
-    {
-      "path": "src/styles/Common"
     }
   ]
 }
