@@ -84,6 +84,7 @@ Error.parameters = {
 const HTMLTemplate: Story<CheckboxProps> = () => (
   <div>
     <div>
+      <p className="utrecht-heading-5">Default</p>
       <label className="denhaag-form-control-label">
         <span className="denhaag-checkbox denhaag-checkbox--checked" aria-disabled="false">
           <input className="denhaag-checkbox__input" type="checkbox" />
@@ -150,6 +151,7 @@ const HTMLTemplate: Story<CheckboxProps> = () => (
       </label>
     </div>
     <div>
+      <p className="utrecht-heading-5">Disabled</p>
       <label className="denhaag-form-control-label denhaag-form-control-label--disabled">
         <span className="denhaag-checkbox denhaag-checkbox--disabled" aria-disabled="true" tabIndex={-1}>
           <input className="denhaag-checkbox__input" type="checkbox" disabled />
@@ -180,6 +182,7 @@ const HTMLTemplate: Story<CheckboxProps> = () => (
       </label>
     </div>
     <div>
+      <p className="utrecht-heading-5">Error</p>
       <label className="denhaag-form-control-label">
         <span className="denhaag-checkbox denhaag-checkbox--error denhaag-checkbox--checked" aria-disabled="false">
           <input className="denhaag-checkbox__input" type="checkbox" />
