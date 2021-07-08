@@ -3,7 +3,7 @@
   "description": "Den Haag proprietary brand tokens",
   "author": "Municipality of The Hague",
   "license": "SEE LICENSE IN ./LICENSE.md",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
@@ -23,4 +23,3 @@
     "watch:style-dictionary": "yarn chokidar --follow-symlinks --initial --command 'yarn build:style-dictionary' 'src/**/*.json'"
   }
 }
-
