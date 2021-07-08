@@ -27,13 +27,11 @@ const Template: Story<CheckboxProps> = (args: CheckboxProps) => (
 const htmlChecked = `
 <label class="denhaag-form-control-label">
   <span class="denhaag-checkbox denhaag-checkbox--checked" aria-disabled="false">
-    <span>
-      <input class="denhaag-checkbox__input" type="checkbox" />
-      <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" class="denhaag-checkbox__icon" focusable="false" aria-hidden="true" shape-rendering="auto">
-        <rect x="-9.5" y="-9.5" rx="0.5" ry="0.5" width="19" height="19" transform="translate(12 12)" stroke="currentColor" fill="currentColor"></rect>
-        <path d="M17.663 8l-7.333 7.333L6.997 12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
-      </svg>
-    </span>
+    <input class="denhaag-checkbox__input" type="checkbox" />
+    <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" class="denhaag-checkbox__icon" focusable="false" aria-hidden="true" shape-rendering="auto">
+      <rect x="-9.5" y="-9.5" rx="0.5" ry="0.5" width="19" height="19" transform="translate(12 12)" stroke="currentColor" fill="currentColor"></rect>
+      <path d="M17.663 8l-7.333 7.333L6.997 12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+    </svg>
   </span>
   <span class="denhaag-form-control-label__label">Checkbox</span>
 </label>
@@ -43,12 +41,10 @@ const htmlChecked = `
 const htmlUnchecked = `
 <label class="denhaag-form-control-label">
   <span class="denhaag-checkbox" aria-disabled="false">
-    <span>
-      <input class="denhaag-checkbox__input" type="checkbox" />
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="denhaag-checkbox__icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true" shape-rendering="auto">
-        <rect x="-9.5" y="-9.5" rx="0.5" ry="0.5" width="19" height="19" transform="translate(12 12)" stroke="currentColor" fill="#fff"></rect>
-      </svg>
-    </span>
+    <input class="denhaag-checkbox__input" type="checkbox" />
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="denhaag-checkbox__icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true" shape-rendering="auto">
+      <rect x="-9.5" y="-9.5" rx="0.5" ry="0.5" width="19" height="19" transform="translate(12 12)" stroke="currentColor" fill="#fff"></rect>
+    </svg>
   </span>
   <span class="denhaag-form-control-label__label">Checkbox</span>
 </label>
@@ -124,69 +120,65 @@ const HTMLTemplate: Story<CheckboxProps> = () => (
   <div>
     <label className="denhaag-form-control-label">
       <span className="denhaag-checkbox denhaag-checkbox--checked" aria-disabled="false">
-        <span>
-          <input className="denhaag-checkbox__input" type="checkbox" />
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="72"
-            height="72"
-            viewBox="0 0 24 24"
-            className="denhaag-checkbox__icon"
-            focusable="false"
-            aria-hidden="true"
-            shapeRendering="auto"
-          >
-            <rect
-              x="-9.5"
-              y="-9.5"
-              rx="0.5"
-              ry="0.5"
-              width="19"
-              height="19"
-              transform="translate(12 12)"
-              stroke="currentColor"
-              fill="currentColor"
-            ></rect>
-            <path
-              d="M17.663 8l-7.333 7.333L6.997 12"
-              stroke="#fff"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              fill="none"
-            ></path>
-          </svg>
-        </span>
+        <input className="denhaag-checkbox__input" type="checkbox" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="72"
+          height="72"
+          viewBox="0 0 24 24"
+          className="denhaag-checkbox__icon"
+          focusable="false"
+          aria-hidden="true"
+          shapeRendering="auto"
+        >
+          <rect
+            x="-9.5"
+            y="-9.5"
+            rx="0.5"
+            ry="0.5"
+            width="19"
+            height="19"
+            transform="translate(12 12)"
+            stroke="currentColor"
+            fill="currentColor"
+          ></rect>
+          <path
+            d="M17.663 8l-7.333 7.333L6.997 12"
+            stroke="#fff"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            fill="none"
+          ></path>
+        </svg>
       </span>
       <span className="denhaag-form-control-label__label">Checkbox</span>
     </label>
     <label className="denhaag-form-control-label">
       <span className="denhaag-checkbox" aria-disabled="false">
-        <span>
-          <input className="denhaag-checkbox__input" type="checkbox" />
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            className="denhaag-checkbox__icon"
-            focusable="false"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-            shapeRendering="auto"
-          >
-            <rect
-              x="-9.5"
-              y="-9.5"
-              rx="0.5"
-              ry="0.5"
-              width="19"
-              height="19"
-              transform="translate(12 12)"
-              stroke="currentColor"
-              fill="#fff"
-            ></rect>
-          </svg>
-        </span>
+        <input className="denhaag-checkbox__input" type="checkbox" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          className="denhaag-checkbox__icon"
+          focusable="false"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+          shapeRendering="auto"
+        >
+          <rect
+            x="-9.5"
+            y="-9.5"
+            rx="0.5"
+            ry="0.5"
+            width="19"
+            height="19"
+            transform="translate(12 12)"
+            stroke="currentColor"
+            fill="#fff"
+          ></rect>
+        </svg>
       </span>
       <span className="denhaag-form-control-label__label">Checkbox</span>
     </label>
