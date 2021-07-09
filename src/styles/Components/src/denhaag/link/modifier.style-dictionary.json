@@ -1,0 +1,16 @@
+{
+  "denhaag": {
+    "link": {
+      "focus": {
+        "color": { "value": "{denhaag.color.blue.4.value}" },
+        "outline": { "value": "{denhaag.focus.border.value}" }
+      },
+      "hover": {
+        "color": { "value": "{denhaag.color.blue.4.value}" }
+      },
+      "disabled": {
+        "color": { "value": "{denhaag.color.grey.2.value}" }
+      }
+    }
+  }
+}
