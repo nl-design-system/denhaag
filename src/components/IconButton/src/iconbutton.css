@@ -5,6 +5,13 @@
   padding-inline-end: var(--denhaag-icon-button-padding-inline-end);
   padding-block-start: var(--denhaag-icon-button-padding-block-start);
   padding-block-end: var(--denhaag-icon-button-padding-block-end);
+
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: transparent;
+  appearance: none;
 }
 
 .denhaag-icon-button:hover {
