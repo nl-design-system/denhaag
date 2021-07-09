@@ -1,5 +1,12 @@
 import React from 'react';
 import { Radio as MaterialRadio } from '@material-ui/core';
+import { ActiveRadioIcon, InactiveRadioIcon } from '@gemeente-denhaag/icons';
+import { StylesProvider } from '@material-ui/core';
+
+import clsx from 'clsx';
+import { classes } from './bem-mapping';
+import './mui-override.css';
+import './radio.css';
 
 export interface RadioProps {
   /**
@@ -32,29 +39,14 @@ export interface RadioProps {
   checked?: boolean;
 
   /**
-   * The Color of the component.
-   */
-  color?: 'primary' | 'secondary' | 'default';
-
-  /**
    * If `true`, the radio but will be disabled.
    */
   disabled?: boolean;
 
   /**
-   * If `true`, the ripple effect will be disabled.
-   */
-  disableRipple?: boolean;
-
-  /**
    * If `true`, the input will be required.
    */
   required?: boolean;
-
-  /**
-   * The size of the radio button.
-   */
-  size?: 'medium' | 'small';
 
   /**
    * The icon to display when the component is checked.
@@ -65,10 +57,31 @@ export interface RadioProps {
    * The icon to display when the component is unchecked.
    */
   icon?: React.ReactNode;
+
+  /**
+   * The icon is turned red to indicate an error.
+   */
+  error?: boolean;
 }
 
 export const Radio: React.FC<RadioProps> = (props: RadioProps) => {
-  return <MaterialRadio {...props} />;
+  classes.root = clsx('denhaag-radio', {
+    'denhaag-radio--error': props.error,
+  });
+
+  return (
+    <StylesProvider injectFirst>
+      <MaterialRadio
+        {...props}
+        color="default"
+        classes={classes}
+        disableRipple
+        disableFocusRipple
+        checkedIcon={props.checkedIcon ?? <ActiveRadioIcon />}
+        icon={props.icon ?? <InactiveRadioIcon />}
+      />
+    </StylesProvider>
+  );
 };
 
 /**

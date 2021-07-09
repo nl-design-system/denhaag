@@ -24,20 +24,6 @@ const Template: Story<RadioProps> = (args: RadioProps) => (
 );
 
 export const Default: Story<RadioProps> = Template.bind({});
-Default.args = {
-  color: 'default',
-  size: 'medium',
-};
-
-export const Primary: Story<RadioProps> = Template.bind({});
-Primary.args = {
-  color: 'primary',
-};
-
-export const Secondary: Story<RadioProps> = Template.bind({});
-Secondary.args = {
-  color: 'secondary',
-};
 
 // language=JS
 const iconCode = `
@@ -59,4 +45,9 @@ Icons.parameters = {
       code: iconCode,
     },
   },
+};
+
+export const Errors: Story<RadioProps> = Template.bind({});
+Errors.args = {
+  error: true,
 };

@@ -1,0 +1,19 @@
+.denhaag-radio {
+  color: var(--denhaag-radio-unchecked-color);
+}
+
+.denhaag-radio:hover {
+  color: var(--denhaag-radio-hover-color);
+}
+
+.denhaag-radio--checked {
+  color: var(--denhaag-radio-checked-color);
+}
+
+.denhaag-radio--disabled {
+  color: var(--denhaag-radio-disabled-color);
+}
+
+.denhaag-radio.denhaag-radio--error {
+  color: var(--denhaag-radio-error-color);
+}

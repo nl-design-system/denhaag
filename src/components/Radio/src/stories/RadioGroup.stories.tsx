@@ -3,6 +3,7 @@ import { Meta, Story } from '@storybook/react/types-6-0';
 import FormControlLabel from '@gemeente-denhaag/formcontrollabel';
 
 import Radio, { RadioGroup, RadioGroupProps } from '..';
+import { FormGroup } from '@gemeente-denhaag/formgroup';
 import pkg from '../../package.json';
 
 export default {
@@ -20,10 +21,18 @@ export default {
 
 const Template: Story<RadioGroupProps> = (args: RadioGroupProps) => (
   <RadioGroup {...args}>
-    <FormControlLabel value="a" label="A" control={<Radio color="default" />} />
-    <FormControlLabel value="b" label="B" control={<Radio color="default" />} />
-    <FormControlLabel value="c" label="C" control={<Radio color="default" />} />
+    <FormControlLabel value="a" label="A" control={<Radio onChange={() => console.log('oh yea')} />} />
+    <FormControlLabel value="b" label="B" control={<Radio />} />
+    <FormControlLabel value="c" label="C" control={<Radio />} />
   </RadioGroup>
+);
+
+export const FormGroupStory: Story<RadioGroupProps> = (args: RadioGroupProps) => (
+  <FormGroup {...args}>
+    <FormControlLabel value="a" label="A" control={<Radio onChange={() => console.log('oh yea')} />} />
+    <FormControlLabel value="b" label="B" control={<Radio />} />
+    <FormControlLabel value="c" label="C" control={<Radio />} />
+  </FormGroup>
 );
 
 export const Default: Story<RadioGroupProps> = Template.bind({});
