@@ -23,6 +23,6 @@
     "watch:style-dictionary": "yarn chokidar --follow-symlinks --initial --command 'yarn build:style-dictionary' 'src/**/*.json'"
   },
   "devDependencies": {
-    "@gemeente-denhaag/design-tokens-common": "^0.1.1"
+    "@gemeente-denhaag/design-tokens-common": "^0.2.2"
   }
 }
