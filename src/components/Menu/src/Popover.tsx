@@ -53,36 +53,6 @@ export interface PopoverProps extends BaseProps {
   onClose: () => MaterialPopoverProps['onClose'];
 
   /**
-   * Callback fired before the component is entering.
-   */
-  onEnter: () => MaterialPopoverProps['onEnter'];
-
-  /**
-   * Callback fired when the component has entered.
-   */
-  onEntered: () => MaterialPopoverProps['onEntered'];
-
-  /**
-   * Callback fired when the component is entering.
-   */
-  onEntering: () => MaterialPopoverProps['onEntering'];
-
-  /**
-   * Callback fired before the component is exiting.
-   */
-  onExit: () => MaterialPopoverProps['onExit'];
-
-  /**
-   * Callback fired when the component has exited.
-   */
-  onExited: () => MaterialPopoverProps['onExited'];
-
-  /**
-   * Callback fired when the component is exiting.
-   */
-  onExiting: () => MaterialPopoverProps['onExiting'];
-
-  /**
    * If true, the popover is visible.
    */
   open: boolean;

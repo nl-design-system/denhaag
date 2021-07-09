@@ -37,36 +37,6 @@ export interface MenuProps extends BaseProps {
   onClose?: (event: React.ChangeEvent<unknown>, reason: string) => void;
 
   /**
-   * Callback fired before the Menu enters.
-   */
-  onEnter?: () => void;
-
-  /**
-   * Callback fired when the Menu is entering.
-   */
-  onEntering?: () => void;
-
-  /**
-   * Callback fired when the Menu has entered.
-   */
-  onEntered?: () => void;
-
-  /**
-   * Callback fired before the Menu exits.
-   */
-  onExit?: () => void;
-
-  /**
-   * Callback fired when the Menu is exiting.
-   */
-  onExiting?: () => void;
-
-  /**
-   * Callback fired when the Menu has exited.
-   */
-  onExited?: () => void;
-
-  /**
    * If true, the menu is visible.
    */
   open: boolean;
@@ -80,6 +50,11 @@ export interface MenuProps extends BaseProps {
    * The length of the transition in ms, or 'auto'
    */
   transitionDuration?: 'auto' | number | { appear?: number; enter?: number; exit?: number };
+
+  /**
+   * Props applied to the Transition element.
+   */
+  TransitionProps?: Record<string, unknown>;
 
   /**
    * The variant to use.
