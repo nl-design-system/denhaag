@@ -1,6 +1,6 @@
 import React from 'react';
 import { InputProps, MenuProps, Select as MaterialSelect } from '@material-ui/core';
-import { SelectInputProps } from '@material-ui/core/Select/SelectInput';
+import { SelectInputProps } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface SelectProps extends BaseProps {
