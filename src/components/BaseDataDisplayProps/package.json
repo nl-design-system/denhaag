@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/basedatadisplayprops",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A package containing properties used in DataDisplay",
   "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
   "repository": {
@@ -22,7 +22,7 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "^0.2.1"
+    "@gemeente-denhaag/baseprops": "^0.2.2"
   },
   "peerDependencies": {
     "react": "^17.0.1"
