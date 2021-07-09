@@ -1,0 +1,118 @@
+{
+  "denhaag": {
+    "alert": {
+      "error": {
+        "background": {
+          "color": { "value": "{denhaag.color.orange.1.value}" }
+        },
+        "title": {
+          "color": { "value": "{denhaag.color.orange.5.value}" }
+        },
+        "paragraph": {
+          "color": { "value": "{denhaag.color.orange.4.value}" }
+        },
+        "icon": {
+          "color": { "value": "{denhaag.color.orange.3.value}" }
+        },
+        "action": {
+          "button": {
+            "color": { "value": "white" },
+            "background": {
+              "color": { "value": "{denhaag.color.orange.3.value}" }
+            },
+            "hover-background": {
+              "color": { "value": "{denhaag.color.orange.4.value}" }
+            }
+          }
+        },
+        "close-icon": {
+          "color": { "value": "{denhaag.color.orange.5.value}" }
+        }
+      },
+      "info": {
+        "background": {
+          "color": { "value": "{denhaag.color.blue.1.value}" }
+        },
+        "title": {
+          "color": { "value": "{denhaag.color.blue.5.value}" }
+        },
+        "paragraph": {
+          "color": { "value": "{denhaag.color.blue.4.value}" }
+        },
+        "icon": {
+          "color": { "value": "{denhaag.color.blue.3.value}" }
+        },
+        "action": {
+          "button": {
+            "color": { "value": "white" },
+            "background": {
+              "color": { "value": "{denhaag.color.blue.3.value}" }
+            },
+            "hover-background": {
+              "color": { "value": "{denhaag.color.blue.4.value}" }
+            }
+          }
+        },
+        "close-icon": {
+          "color": { "value": "{denhaag.color.blue.5.value}" }
+        }
+      },
+      "success": {
+        "background": {
+          "color": { "value": "{denhaag.color.green.1.value}" }
+        },
+        "title": {
+          "color": { "value": "{denhaag.color.green.5.value}" }
+        },
+        "paragraph": {
+          "color": { "value": "{denhaag.color.green.4.value}" }
+        },
+        "icon": {
+          "color": { "value": "{denhaag.color.green.3.value}" }
+        },
+        "action": {
+          "button": {
+            "color": { "value": "white" },
+            "background": {
+              "color": { "value": "{denhaag.color.green.3.value}" }
+            },
+            "hover-background": {
+              "color": { "value": "{denhaag.color.green.4.value}" }
+            }
+          }
+        },
+        "close-icon": {
+          "color": { "value": "{denhaag.color.green.5.value}" }
+        }
+      },
+      "warning": {
+        "background": {
+          "color": { "value": "{denhaag.color.orange.1.value}" }
+        },
+        "title": {
+          "color": { "value": "{denhaag.color.orange.5.value}" }
+        },
+        "paragraph": {
+          "color": { "value": "{denhaag.color.orange.4.value}" }
+        },
+        "icon": {
+          "color": { "value": "{denhaag.color.orange.3.value}" }
+        },
+        "action": {
+          "button": {
+            "color": { "value": "white" },
+            "background": {
+              "color": { "value": "{denhaag.color.orange.3.value}" }
+            },
+            "hover-background": {
+              "color": { "value": "{denhaag.color.orange.4.value}" }
+            }
+          }
+        },
+        "close-icon": {
+          "color": { "value": "{denhaag.color.orange.5.value}" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "denhaag": {
+    "alert": {
+      "action": {
+        "padding": {
+          "block": {
+            "start": { "value": "16px" }
+          }
+        }
+      },
+      "close": {
+        "focus": {
+          "border-color": {
+            "value": "1px"
+          },
+          "border-width": {
+            "value": "1px"
+          },
+          "border-style": {
+            "value": "1px"
+          },
+          "border-offset": {
+            "value": "3px"
+          }
+        }
+      }
+    }
+  }
+}
