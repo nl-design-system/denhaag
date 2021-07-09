@@ -2,7 +2,7 @@ import { ParsableDate } from '@material-ui/pickers/constants/prop-types';
 import { MaterialUiPickersDate as DateIOType } from '@material-ui/pickers/typings/date';
 import { IconButtonProps, PopoverProps, TextFieldProps } from '@material-ui/core';
 
-import { DialogProps } from '@material-ui/core/Dialog/Dialog';
+import { DialogProps } from '@material-ui/core';
 
 import { ReactElement, ReactNode } from 'react';
 import { ToolbarComponentProps } from '@material-ui/pickers/Picker/Picker';

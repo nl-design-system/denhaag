@@ -1,5 +1,5 @@
 import React from 'react';
-import MaterialStepper from '@material-ui/core/Stepper';
+import MaterialStepper from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
 
 import { timelineClasses } from './bem-mapping';
