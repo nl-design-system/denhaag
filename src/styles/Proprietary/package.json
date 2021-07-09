@@ -20,6 +20,6 @@
     "build:ts": "tsc -b",
     "build:style-dictionary": "yarn style-dictionary build --config ../../../style-dictionary.config.json",
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo",
-    "watch:style-dictionary": "yarn chokidar --follow-symlinks --initial --command 'yarn build:style-dictionary' 'src/**/*.json'"
+    "watch:style-dictionary": "yarn chokidar --follow-symlinks --initial  \"src/**/*.json\" -c \"yarn build:style-dictionary\""
   }
 }
