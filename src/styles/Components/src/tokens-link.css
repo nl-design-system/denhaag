@@ -21,6 +21,7 @@
   * @presenter Spacing
   */
 
+  --denhaag-link-padding: 8px;
   --denhaag-link-icon-margin-start: 8px;
   --denhaag-link-icon-margin-end: 8px;
 }

@@ -1,5 +1,7 @@
 .denhaag-link {
   color: var(--denhaag-link-color);
+  padding-block-start: var(--denhaag-link-padding);
+  padding-block-end: var(--denhaag-link-padding);
   font-family: inherit;
   font-weight: inherit;
   font-size: inherit;
