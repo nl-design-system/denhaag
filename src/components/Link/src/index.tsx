@@ -46,6 +46,7 @@ export const Link: React.FC<LinkProps> = ({
   icon = undefined,
   iconAlign = 'end',
   tabIndex = 0,
+  ...props
 }: LinkProps) => {
   const anchorClassName = clsx('denhaag-link', {
     'denhaag-link--disabled': disabled,
@@ -61,7 +62,7 @@ export const Link: React.FC<LinkProps> = ({
   const iconWrapped = <span className={iconClassName}>{icon}</span>;
 
   return (
-    <a id={id} href={href} className={anchorClassName} tabIndex={tabIndex}>
+    <a id={id} href={href} className={anchorClassName} tabIndex={disabled ? -1 : tabIndex} {...props}>
       {icon !== undefined && iconAlign === 'start' ? iconWrapped : ''}
       {children}
       {icon !== undefined && iconAlign === 'end' ? iconWrapped : ''}
