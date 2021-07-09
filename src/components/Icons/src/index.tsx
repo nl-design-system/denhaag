@@ -5,6 +5,7 @@ import { classes } from './bem-mapping';
 import './icon.css';
 
 // Arrows
+import ActiveRadioSvg from './svg/functional/active-radio.svg';
 import ArrowLeftSvg from './svg/arrows/arrow-left.svg';
 import RightArrowSvg from './svg/arrows/arrow-right.svg';
 import ChevronDownSvg from './svg/arrows/chevron-down.svg';
@@ -23,6 +24,7 @@ import ExternalLinkSvg from './svg/functional/external-link.svg';
 import GridSvg from './svg/functional/grid.svg';
 import HamburgerSvg from './svg/functional/hamburger.svg';
 import HideSvg from './svg/functional/hide.svg';
+import InactiveRadioSvg from './svg/functional/inactive-radio.svg';
 import ListSvg from './svg/functional/list.svg';
 import SearchSvg from './svg/functional/search.svg';
 import ShareSvg from './svg/functional/share.svg';
@@ -67,6 +69,7 @@ const buildIcon: React.ElementType = (svg: React.ElementType, props: SvgIconProp
 type F = React.FunctionComponent<SvgIconProps>; // less typing
 
 // Arrows
+export const ActiveRadioIcon: F = (props: SvgIconProps) => buildIcon(ActiveRadioSvg, props);
 export const ArrowLeftIcon: F = (props: SvgIconProps) => buildIcon(ArrowLeftSvg, props);
 export const ArrowRightIcon: F = (props: SvgIconProps) => buildIcon(RightArrowSvg, props);
 export const ChevronDownIcon: F = (props: SvgIconProps) => buildIcon(ChevronDownSvg, props);
@@ -85,6 +88,7 @@ export const ExternalLinkIcon: F = (props: SvgIconProps) => buildIcon(ExternalLi
 export const GridIcon: F = (props: SvgIconProps) => buildIcon(GridSvg, props);
 export const HamburgerIcon: F = (props: SvgIconProps) => buildIcon(HamburgerSvg, props);
 export const HideIcon: F = (props: SvgIconProps) => buildIcon(HideSvg, props);
+export const InactiveRadioIcon: F = (props: SvgIconProps) => buildIcon(InactiveRadioSvg, props);
 export const ListIcon: F = (props: SvgIconProps) => buildIcon(ListSvg, props);
 export const SearchIcon: F = (props: SvgIconProps) => buildIcon(SearchSvg, props);
 export const ShareIcon: F = (props: SvgIconProps) => buildIcon(ShareSvg, props);
