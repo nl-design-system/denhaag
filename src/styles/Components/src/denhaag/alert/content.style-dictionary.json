@@ -1,0 +1,12 @@
+{
+  "denhaag": {
+    "alert": {
+      "content": {
+        "margin-inline": {
+          "start": { "value": "24px" },
+          "end": { "value": "24px" }
+        }
+      }
+    }
+  }
+}
