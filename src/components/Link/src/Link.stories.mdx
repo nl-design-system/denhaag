@@ -1,4 +1,4 @@
-import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/addon-docs/blocks";
+import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/addon-docs";
 import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
 import { Paragraph } from "@gemeente-denhaag/typography";
 import { ArrowLeftIcon, ArrowRightIcon } from "@gemeente-denhaag/icons";
@@ -124,7 +124,7 @@ const ReactParagraph = (
   It is possible to put
   <a href="#" class="denhaag-link denhaag-link--with-icon" tabindex="0">
     <span class="denhaag-link__icon denhaag-link__icon--start">
-      {...}
+      <svg ...> {...} </svg>
     </span>
     a link
   </a>
@@ -171,7 +171,7 @@ const ReactParagraph = (
   <a href="#" class="denhaag-link denhaag-link--with-icon" tabindex="0">
     a link
     <span class="denhaag-link__icon denhaag-link__icon--end">
-      {...}
+      <svg ...> {...} </svg>
     </span>
   </a>
   in a Paragraph element.
