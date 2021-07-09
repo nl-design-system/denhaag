@@ -1,6 +1,9 @@
 import React from 'react';
 import SvgIcon, { SvgIconProps } from './SvgIcon';
 
+import { classes } from './bem-mapping';
+import './icon.css';
+
 // Arrows
 import ArrowLeftSvg from './svg/arrows/arrow-left.svg';
 import RightArrowSvg from './svg/arrows/arrow-right.svg';
@@ -57,7 +60,7 @@ import WhatsAppSvg from './svg/social/whatsapp.svg';
 import MegaphoneSvg from './svg/megaphone.svg';
 
 const buildIcon: React.ElementType = (svg: React.ElementType, props: SvgIconProps) => (
-  <SvgIcon component={svg} {...props} />
+  <SvgIcon component={svg} classes={classes} {...props} />
 );
 type F = React.FunctionComponent<SvgIconProps>; // less typing
 
