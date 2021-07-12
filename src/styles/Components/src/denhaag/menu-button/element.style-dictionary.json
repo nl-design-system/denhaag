@@ -1,0 +1,16 @@
+{
+  "denhaag": {
+    "menu-button": {
+      "chevron": {
+        "padding-inline-start": { "value": "4px" },
+        "size": { "value": "12px" },
+        "active": {
+          "color": { "value": "{denhaag.menu-button.active.color.value}" }
+        },
+        "hover": {
+          "color": { "value": "{denhaag.menu-button.chevron.active.color.value}" }
+        }
+      }
+    }
+  }
+}
