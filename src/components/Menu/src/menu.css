@@ -1,0 +1,3 @@
+.denhaag-menu :not(:last-child){
+      margin-inline-end: var(--denhaag-menu-button-margin-inline-end);
+  }
