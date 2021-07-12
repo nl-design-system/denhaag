@@ -1,7 +1,7 @@
 import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/addon-docs";
 import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
 
-import { MenuButton, MenuButtonProps } from '.';
+import { Menu, MenuButton, MenuButtonProps } from '.';
 import pkg from '../package.json';
 import readme from "../README.md";
 
@@ -37,7 +37,7 @@ import readme from "../README.md";
         },
       },
     }}>
-      {(args) => <MenuButton { ...args }>Label</MenuButton>}
+      {(args) => <MenuButton { ..args }>Label</MenuButton>}
   </Story>
 </Canvas>
 
@@ -66,29 +66,31 @@ import readme from "../README.md";
         },
       },
     }}>
-      {(args) => <MenuButton { ... args} onclick={() => alert('Hello from MenuButton 👋')}>Label</MenuButton>}
+      {(args) => <MenuButton { ...args} onclick={() => alert('Hello from MenuButton 👋')}>Label</MenuButton>}
   </Story>
 </Canvas>
 
 ### Menu
 <Canvas>
   <Story name="Menu"
+    args={{id: 'testspan'}}
     parameters={{
       docs: {
         source: {
           code: `
-          `,
-
+          `
          }
       }
     }}>
-      {(args)} => <Menu>
-                    <MenuButton>
-                      Test
-                    </MenuButton>
-                    <MenuButton>
-                      Test2
-                    </MenuButton>
-                  </Menu>
+      {(args) =>
+      <Menu { ...args }>
+        <MenuButton>
+          Test
+        </MenuButton>
+        <MenuButton>
+          Test2
+        </MenuButton>
+      </Menu>
+      }
   </Story>
 </Canvas>
