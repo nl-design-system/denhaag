@@ -108,6 +108,7 @@
     "rollup-plugin-postcss": "^4.0.0",
     "rollup-plugin-svgo": "^1.1.0",
     "storybook": "^6.3.2",
+    "storybook-addon-themes": "^6.1.0",
     "storybook-design-token": "^1.1.1",
     "style-dictionary": "^3.0.1",
     "stylelint": "^13.8.0",

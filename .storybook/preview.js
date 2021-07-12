@@ -1,6 +1,11 @@
-import '@gemeente-denhaag/design-tokens-proprietary';
-import '@gemeente-denhaag/design-tokens-components';
-import '@gemeente-denhaag/design-tokens-common';
+import '@gemeente-denhaag/design-tokens-proprietary/dist/theme/index.css';
+import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
+import '@gemeente-denhaag/design-tokens-common/dist/theme/index.css';
+
+import { addDecorator } from '@storybook/react';
+import { withThemes } from 'storybook-addon-themes/react';
+
+addDecorator(withThemes);
 
 const tokenContext = require.context(
   '!!raw-loader!../src',
@@ -22,5 +27,9 @@ export const parameters = {
     storySort: {
       order: ['Den Haag', ['Introduction', 'Design Tokens'], 'Components'],
     },
+  },
+  themes: {
+    default: 'Gemeente Den Haag',
+    list: [{ name: 'Gemeente Den Haag', class: 'denhaag-theme', color: '#227b3c' }],
   },
 };

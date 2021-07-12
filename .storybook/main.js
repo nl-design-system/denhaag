@@ -13,6 +13,7 @@ module.exports = {
         backgrounds: false,
       },
     },
+    'storybook-addon-themes',
     'storybook-design-token',
   ],
 
