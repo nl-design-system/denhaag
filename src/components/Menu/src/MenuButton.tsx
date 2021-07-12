@@ -26,7 +26,7 @@ export const MenuButton: React.FC<MenuButtonProps> = (props: MenuButtonProps) =>
   let component = null;
   if (props.variant === 'expandable') {
     component = (
-      <button onClick={props.onclick} className="denhaag-menu-button">
+      <button id={props.id} onClick={props.onclick} className="denhaag-menu-button">
         {props.children}
         <span className="denhaag-menu-button__chevron">
           <ChevronDownIcon aria-label="ChevronDownIcon" />
@@ -35,7 +35,7 @@ export const MenuButton: React.FC<MenuButtonProps> = (props: MenuButtonProps) =>
     );
   } else {
     component = (
-      <a href={props.href} className="denhaag-menu-button">
+      <a id={props.id} href={props.href} className="denhaag-menu-button">
         {props.children}
       </a>
     );
