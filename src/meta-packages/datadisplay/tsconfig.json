@@ -12,7 +12,7 @@
       "path": "../../components/Avatar"
     },
     {
-      "path": "../../components/Badge"
+      "path": "../../components/BadgeCounter"
     },
     {
       "path": "../../components/BaseProps"

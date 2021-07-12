@@ -1,0 +1,16 @@
+.denhaag-badge-counter {
+  --denhaag-dot-indicator-size: 8px;
+}
+
+.denhaag-badge-counter__counter {
+  padding-block-start: var(--denhaag-badge-counter-padding-block);
+  padding-block-end: var(--denhaag-badge-counter-padding-block);
+  padding-inline-start: var(--denhaag-badge-counter-padding-inline);
+  padding-inline-end: var(--denhaag-badge-counter-padding-inline);
+
+  border-radius: var(--denhaag-border-radius);
+  background-color: var(--denhaag-badge-counter-background-color);
+  font-family: var(--denhaag-badge-counter-font-family);
+  font-size: var(--denhaag-badge-counter-font-size);
+  font-weight: 500;
+}

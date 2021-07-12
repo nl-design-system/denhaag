@@ -13,7 +13,7 @@
       "path": "src/components/Avatar"
     },
     {
-      "path": "src/components/Badge"
+      "path": "src/components/BadgeCounter"
     },
     {
       "path": "src/components/BaseDataDisplayProps"

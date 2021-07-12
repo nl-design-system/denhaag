@@ -1,0 +1,24 @@
+{
+  "denhaag": {
+    "badge-counter": {
+      "background-color": {
+        "value": "{denhaag.color.grey.1.value}"
+      },
+      "border-radius": {
+        "value": "3px"
+      },
+      "padding-block": {
+        "value": "4px"
+      },
+      "padding-inline": {
+        "value": "6px"
+      },
+      "font-family": {
+        "value": "{denhaag.typography.sans-serif.font-family.value}"
+      },
+      "font-size": {
+        "value": "{denhaag.typography.scale.s.font-size.value}"
+      }
+    }
+  }
+}
