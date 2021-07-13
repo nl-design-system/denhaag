@@ -22,11 +22,10 @@
   justify-content: inherit;
 }
 
+.denhaag-button--active,
+.denhaag-button:active,
 .denhaag-button--hover,
-.denhaag-button:hover {
-  box-shadow: none;
-}
-
+.denhaag-button:hover,
 .denhaag-button--focus,
 .denhaag-button:focus {
   box-shadow: none;
