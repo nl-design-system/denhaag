@@ -11,7 +11,7 @@
 }
 
 .denhaag-timeline__step-collapse-icon {
-  padding-inline-start: var(--denhaag-timeline-step-collapse-icon-start-padding);
+  padding-inline-start: var(--denhaag-timeline-step-collapse-icon-padding);
   height: var(--denhaag-timeline-step-collapse-icon-size);
   width: var(--denhaag-timeline-step-collapse-icon-size);
 }
