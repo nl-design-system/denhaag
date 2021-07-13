@@ -1,13 +1,13 @@
 import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/addon-docs";
 import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
 
-import { Menu, MenuButton } from '.';
+import { Menu, MenuButton, MenuButtonExpandable } from '.';
 import pkg from '../package.json';
 import readme from "../README.md";
 
 <Meta
   title="Components/Navigation/MenuButton"
-  component={MenuButton}
+  component={MenuButton, MenuButtonExpandable}
   parameters={{ componentSubtitle: `${pkg.name} - ${pkg.version}`, docs: {source: {type: "dynamic"} } }}
 />
 
@@ -23,7 +23,7 @@ import readme from "../README.md";
 
 <Canvas>
   <Story name="Default"
-    args={{href: 'https://github.com/nl-design-system/denhaag', variant: 'normal'}}
+    args={{href: 'https://github.com/nl-design-system/denhaag'}}
     parameters={{
       docs: {
         source: {
@@ -43,17 +43,16 @@ import readme from "../README.md";
 
 <Canvas>
   <Story name="Expandable"
-    args={{variant: 'expandable'}}
     parameters={{
       docs: {
         source: {
           code: `
-          import { MenuButton } from "@gemeente-denhaag/menubutton";
-          const ReactMenuButton = <MenuButton variant='expandable' onclick={() => alert('Hello from MenuButton 👋')}>Label</MenuButton>;`,
+          import { MenuButtonExpandable } from "@gemeente-denhaag/menubutton";
+          const ReactMenuButton = <MenuButtonExpandable variant='expandable' onclick={() => alert('Hello from MenuButton 👋')}>Label</MenuButtonExpandable>;`,
         },
       },
     }}>
-      {(args) => <MenuButton { ...args} onclick={() => alert('Hello from MenuButton 👋')}>Label</MenuButton>}
+      {(args) => <MenuButtonExpandable onclick={() => alert('Hello from MenuButton 👋')}>Label</MenuButtonExpandable>}
   </Story>
 </Canvas>
 
@@ -82,9 +81,9 @@ import readme from "../README.md";
         <MenuButton>
           Label
         </MenuButton>
-        <MenuButton>
+        <MenuButtonExpandable>
           Label 2
-        </MenuButton>
+        </MenuButtonExpandable>
       </Menu>
       }
   </Story>
@@ -118,3 +117,20 @@ import readme from "../README.md";
 </Canvas>
 
 
+### HTML Menu
+<Canvas>
+  <Story name="Menu HTML">
+    {(args) => (
+      <div class="denhaag-menu" id="menu-id">
+        <a class="denhaag-menu-button">Label</a>
+        <button class="denhaag-menu-button">Label 2
+          <span class="denhaag-menu-button__chevron">
+            <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="MuiSvgIcon-root" focusable="false" aria-hidden="true" shape-rendering="auto" aria-label="ChevronDownIcon">
+              <path d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z" fill="currentColor"></path>
+            </svg>
+          </span>
+        </button>
+      </div>
+    )}
+  </Story>
+</Canvas>
