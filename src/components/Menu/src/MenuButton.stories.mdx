@@ -1,7 +1,7 @@
 import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/addon-docs";
 import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
 
-import { Menu, MenuButton, MenuButtonProps } from '.';
+import { Menu, MenuButton } from '.';
 import pkg from '../package.json';
 import readme from "../README.md";
 
@@ -29,11 +29,7 @@ import readme from "../README.md";
         source: {
           code: `
           import { MenuButton } from "@gemeente-denhaag/menubutton";
-          const ReactMenuButton = <MenuButton href={https://github.com/nl-design-system/denhaag} variant='normal'>Label</MenuButton>};
-          // This 👆 transpiles into this 👇 in the DOM
-          <a href="https://github.com/nl-design-system/denhaag" class="denhaag-menu-button">
-            Label
-          </a>`,
+          const ReactMenuButton = <MenuButton href={"https://github.com/nl-design-system/denhaag"} variant='normal'>Label</MenuButton>};`,
         },
       },
     }}>
@@ -53,16 +49,7 @@ import readme from "../README.md";
         source: {
           code: `
           import { MenuButton } from "@gemeente-denhaag/menubutton";
-          const ReactMenuButton = <MenuButton variant='expandable' onclick={() => alert('Hello from MenuButton 👋')>Label</MenuButton>};
-          // This 👆 transpiles into this 👇 in the DOM
-          <button class="denhaag-menu-button">
-            Label
-            <span class="denhaag-menu-button__chevron">
-              <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" shape-rendering="auto" aria-label="ChevronDownIcon">
-                <path d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z" fill="currentColor"></path>
-              </svg>
-            </span>
-          </button>`,
+          const ReactMenuButton = <MenuButton variant='expandable' onclick={() => alert('Hello from MenuButton 👋')}>Label</MenuButton>;`,
         },
       },
     }}>
@@ -73,11 +60,19 @@ import readme from "../README.md";
 ### Menu
 <Canvas>
   <Story name="Menu"
-    args={{id: 'testspan'}}
+    args={{id: 'menu-id'}}
     parameters={{
       docs: {
         source: {
           code: `
+            <Menu id='menu-id' >
+              <MenuButton>
+                Label
+              </MenuButton>
+              <MenuButton>
+                Label 2
+              </MenuButton>
+            </Menu>
           `
          }
       }
