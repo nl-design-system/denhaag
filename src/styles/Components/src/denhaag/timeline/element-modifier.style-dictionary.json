@@ -10,6 +10,11 @@
         },
         "disabled": {
           "color": { "value": "{denhaag.color.grey.2.value}" }
+        },
+        "text": {
+          "active": {
+            "color": {"value":  "{denhaag.color.white.value}" }
+          }
         }
       },
       "step-label": {
