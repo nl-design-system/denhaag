@@ -1,5 +1,5 @@
 # Introduction
-![npm (scoped)](https://img.shields.io/npm/v/@gemeente-denhaag/menubutton?logo=npm&style=flat-square)
+![npm (scoped)](https://img.shields.io/npm/v/@gemeente-denhaag/menu?logo=npm&style=flat-square)
 ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/Gemeente-Denhaag/denhaag-component-library/Build%20and%20deploy%20Storybook%20to%20Azure%20Web%20App/master?logo=github&style=flat-square)
 
 Menu buttons are used as navigational elements. They appear in the navigation and open a menu or page.
@@ -37,13 +37,13 @@ The menu button contains the states inactive, active, hover and focus.
 * Focus: label border color Ocher/5
 
 ### Structure
-* Label: padding-left and padding-right 20px
+* Label: padding-block 20px
 * Icon: height and width 24px, padding-left 4px
-* Menu buttons: padding space 40px
+* Menu buttons: group spacing 40px
 
 ### Accessibility
-[ technical requirements ]
-Content guidelines
+*TODO: [ technical requirements ]*
+### Content guidelines
 * Menu buttons need to be clear and predictable. Users should be able to anticipate where they will go when they select a button.
 
 * Always capitalize menu button labels, meaning that the first word is uppercase and the rest is lowercase (unless a term has its own name).
