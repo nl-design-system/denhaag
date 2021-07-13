@@ -1,0 +1,11 @@
+{
+  "denhaag": {
+    "card": {
+      "case": {
+        "active": {
+          "color": { "value": "{denhaag.color.green.4.value}" }
+        }
+      }
+    }
+  }
+}
