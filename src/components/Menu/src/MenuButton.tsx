@@ -3,7 +3,7 @@ import BaseProps from '@gemeente-denhaag/baseprops';
 import './menubutton.css';
 import { ChevronDownIcon } from '@gemeente-denhaag/icons';
 
-export interface MenuButtonProps extends BaseProps {
+export interface MenuButtonProps extends Omit<BaseProps, 'classes' | 'tabIndex'> {
   /**
    * Determines the url the menu button refers to
    * Only applicable to the normal variant
