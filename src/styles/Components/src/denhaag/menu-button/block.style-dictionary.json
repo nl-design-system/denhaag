@@ -12,8 +12,7 @@
       "hover": {
         "color": { "value": "{denhaag.menu-button.active.color.value}"}
       },
-      "line-height": { "value": "21px" },
-      "margin-inline-end": { "value": "40px"}
+      "line-height": { "value": "21px" }
     }
   }
 }
