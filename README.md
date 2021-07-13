@@ -3,7 +3,7 @@
 > A library of React components for the municipality of The Hague
 
 ![npm](https://img.shields.io/npm/v/@gemeente-denhaag/denhaag-component-library?logo=npm&style=flat-square)
-![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/Gemeente-Denhaag/denhaag-component-library/Build%20and%20deploy%20Storybook%20to%20Azure%20Web%20App/master?logo=github&style=flat-square)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/nl-design-system/denhaag/Build%20and%20deploy%20Storybook%20to%20Azure%20Web%20App/master?logo=github&style=flat-square)
 
 ## 🥅 Goals of this codebase
 
@@ -88,10 +88,10 @@ Start by filling it with the following information:
   "license": "EUPL-1.2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
+    "url": "https://github.com/nl-design-system/denhaag.git",
     "directory": "{path/to/component}"
   },
-  "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
+  "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "dependencies": {
     "@material-ui/core": "^4.11.0"
   }
@@ -119,6 +119,6 @@ Certain Components available in this repository may become part of the NL Design
 
 ## ❗ Reporting issues
 
-Our public issue tracker is located [here](https://github.com/Gemeente-DenHaag/denhaag-component-library/issues).
+Our public issue tracker is located [here](https://github.com/nl-design-system/denhaag/issues).
 Before reporting an issue make sure to check if a similar issue already exists.
 When reporting an issue give detailed information about the issue and how to reproduce it if applicable.

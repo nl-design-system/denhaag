@@ -2,10 +2,10 @@
     "name": "@gemeente-denhaag/formcontrol",
     "version": "0.2.2",
     "description": "A FormControl component",
-    "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
+    "bugs": "https://github.com/nl-design-system/denhaag/issues",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
+        "url": "https://github.com/nl-design-system/denhaag.git",
         "directory": "src/components/FormControl"
     },
     "license": "EUPL-1.2",
