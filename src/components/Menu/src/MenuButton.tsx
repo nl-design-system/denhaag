@@ -1,6 +1,6 @@
 import React from 'react';
 import BaseProps from '@gemeente-denhaag/baseprops';
-import './menubutton.css';
+import './menu-button.css';
 import { ChevronDownIcon } from '@gemeente-denhaag/icons';
 
 export interface MenuButtonProps extends Omit<BaseProps, 'classes' | 'tabIndex'> {
