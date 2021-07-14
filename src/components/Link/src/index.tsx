@@ -5,11 +5,19 @@ import clsx from 'clsx';
 
 import './link.css';
 
-export interface LinkProps extends BaseProps, React.AnchorHTMLAttributes<never> {
+export interface LinkProps extends Omit<BaseProps, 'classes'> {
   /**
-   * The URL to which the component redirects
+   * The URL that the hyperlink points to. Links are not restricted to HTTP-based
+   * URLs — they can use any URL scheme supported by browsers.
+   *
+   * [(See MDN Web Docs for details)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-href)
    */
   href: string;
+
+  /**
+   * [See MDN Web Docs for details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-hreflang)
+   */
+  hrefLang?: string;
 
   /**
    * Icon to display at the start or the end of the link
@@ -30,6 +38,42 @@ export interface LinkProps extends BaseProps, React.AnchorHTMLAttributes<never> 
    * Applies focus styling to the link
    */
   focus?: boolean;
+
+  /**
+   * [See MDN Web Docs for details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-download)
+   */
+  download?: string | boolean;
+
+  /**
+   * [See MDN Web Docs for details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-media)
+   */
+  media?: string;
+
+  /**
+   * [See MDN Web Docs for details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-ping)
+   */
+  ping?: string;
+
+  /**
+   * [See MDN Web Docs for details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-rel)
+   */
+  rel?: string;
+
+  /**
+   * [See MDN Web Docs for details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-target)
+   */
+  target?: React.HTMLAttributeAnchorTarget;
+
+  /**
+   * [See MDN Web Docs for details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-type)
+   */
+  type?: string;
+
+  /**
+   * ⚠️ Experimental.
+   * [See MDN Web Docs for details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-referrerpolicy)
+   */
+  referrerPolicy?: React.HTMLAttributeReferrerPolicy;
 }
 
 /**
