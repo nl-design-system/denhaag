@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@gemeente-denhaag/avatar": "^0.2.2",
-    "@gemeente-denhaag/badge": "^0.2.2",
+    "@gemeente-denhaag/badge-counter": "^0.1.0",
     "@gemeente-denhaag/baseprops": "^0.2.2",
     "@gemeente-denhaag/divider": "^0.2.2",
     "@gemeente-denhaag/list": "^0.2.2",

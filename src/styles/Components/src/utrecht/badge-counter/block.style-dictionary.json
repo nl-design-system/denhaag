@@ -20,10 +20,10 @@
         "value": "{denhaag.typography.scale.s.font-size.value}"
       },
       "padding-block": {
-        "value": "6px"
+        "value": "4px"
       },
       "padding-inline": {
-        "value": "4px"
+        "value": "6px"
       }
     }
   }
