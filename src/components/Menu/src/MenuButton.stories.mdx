@@ -71,7 +71,7 @@ import readme from "../README.md";
         source: {
           code: `
             <Menu id='menu-id' >
-              <MenuButton>
+              <MenuButton  href="https://github.com/nl-design-system/denhaag">
                 Label
               </MenuButton>
               <MenuButton>
@@ -85,7 +85,7 @@ import readme from "../README.md";
   >
     {(args) => (
       <Menu {...args}>
-        <MenuButton>Label</MenuButton>
+        <MenuButton href="https://github.com/nl-design-system/denhaag">Label</MenuButton>
         <MenuButtonExpandable>Label 2</MenuButtonExpandable>
       </Menu>
     )}
@@ -141,7 +141,9 @@ import readme from "../README.md";
   <Story name="Menu HTML">
     {(args) => (
       <div class="denhaag-menu" id="menu-id">
-        <a class="denhaag-menu-button">Label</a>
+        <a href="https://github.com/nl-design-system/denhaag" class="denhaag-menu-button">
+          Label
+        </a>
         <button class="denhaag-menu-button">
           Label 2
           <span class="denhaag-menu-button__chevron">
