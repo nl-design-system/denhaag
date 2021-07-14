@@ -1,12 +1,13 @@
 import React from 'react';
-
-import './alert.css';
+import BaseProps from '@gemeente-denhaag/baseprops';
+import Button from '@gemeente-denhaag/button';
 import { Heading4, Paragraph } from '@gemeente-denhaag/typography';
 import { AlertTriangleIcon, CheckCircleIcon, CircleInformationIcon, CloseIcon } from '@gemeente-denhaag/icons';
-import Button from '@gemeente-denhaag/button';
 import IconButton from '@gemeente-denhaag/iconbutton';
 
-export interface AlertsProps {
+import './alert.css';
+
+export interface AlertsProps extends Omit<BaseProps, 'children' | 'classes' | 'tabIndex'> {
   /**
    * The title of the alert.
    */
@@ -42,7 +43,15 @@ export interface AlertsProps {
 /**
  * Primary UI component for user interaction
  */
-export const Alerts: React.FC<AlertsProps> = ({ title, text, variant, action, close, supportIcon }: AlertsProps) => {
+export const Alerts: React.FC<AlertsProps> = ({
+  id,
+  title,
+  text,
+  variant,
+  action,
+  close,
+  supportIcon,
+}: AlertsProps) => {
   const rootStyles = 'denhaag-alert denhaag-alert--' + variant;
 
   let icon;
@@ -67,7 +76,7 @@ export const Alerts: React.FC<AlertsProps> = ({ title, text, variant, action, cl
   }
 
   return (
-    <div className={rootStyles}>
+    <div id={id} className={rootStyles}>
       <div className="denhaag-alert__main-content">
         <div className="denhaag-alert__icon">{icon}</div>
         <div className="denhaag-alert__content">
