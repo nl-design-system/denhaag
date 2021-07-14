@@ -2,15 +2,17 @@
   background-color: inherit;
   border: inherit;
   color: var(--denhaag-menu-button-color);
+  cursor: pointer;
   font-family: var(--denhaag-menu-button-font-family);
   font-size: var(--denhaag-menu-button-font-size);
   font-weight: var(--denhaag-menu-button-font-size);
   line-height: var(--denhaag-menu-button-line-height);
+  padding-block-end: 0;
+  padding-block-start: 0;
   padding-inline-end: 0;
   padding-inline-start: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
   text-decoration: none;
+  user-select: none;
 }
 
 .denhaag-menu-button:active,
