@@ -1,17 +1,61 @@
 import React from 'react';
 import BaseProps from '@gemeente-denhaag/baseprops';
-import './menu-button.css';
 import { ChevronDownIcon } from '@gemeente-denhaag/icons';
+
+import './menu-button.css';
 
 /**
  * The properties of the normal variant of the Menu Button
  */
 export interface MenuButtonProps extends Omit<BaseProps, 'classes' | 'tabIndex'> {
   /**
-   * Determines the url the menu button refers to
-   * Only applicable to the normal variant
+   * The URL that the hyperlink points to. Links are not restricted to HTTP-based
+   * URLs — they can use any URL scheme supported by browsers.
+   *
+   * [(See MDN Web Docs for details)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-href)
    */
-  href?: string;
+  href: string;
+
+  /**
+   * [See MDN Web Docs for details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-hreflang)
+   */
+  hrefLang?: string;
+
+  /**
+   * [See MDN Web Docs for details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-download)
+   */
+  download?: string | boolean;
+
+  /**
+   * [See MDN Web Docs for details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-media)
+   */
+  media?: string;
+
+  /**
+   * [See MDN Web Docs for details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-ping)
+   */
+  ping?: string;
+
+  /**
+   * [See MDN Web Docs for details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-rel)
+   */
+  rel?: string;
+
+  /**
+   * [See MDN Web Docs for details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-target)
+   */
+  target?: React.HTMLAttributeAnchorTarget;
+
+  /**
+   * [See MDN Web Docs for details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-type)
+   */
+  type?: string;
+
+  /**
+   * ⚠️ Experimental.
+   * [See MDN Web Docs for details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-referrerpolicy)
+   */
+  referrerPolicy?: React.HTMLAttributeReferrerPolicy;
 }
 
 /**
@@ -19,7 +63,7 @@ export interface MenuButtonProps extends Omit<BaseProps, 'classes' | 'tabIndex'>
  */
 export interface MenuButtonExpandableProps extends Omit<BaseProps, 'classes' | 'tabIndex'> {
   /**
-   * Determines the Onclick function the menu button referst to
+   * Determines the Onclick function the menu button refers to
    * Only applicable to the Expandable variant
    */
   onclick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
@@ -27,7 +71,19 @@ export interface MenuButtonExpandableProps extends Omit<BaseProps, 'classes' | '
 
 export const MenuButton: React.FC<MenuButtonProps> = (props: MenuButtonProps) => {
   return (
-    <a id={props.id} href={props.href} className="denhaag-menu-button">
+    <a
+      id={props.id}
+      href={props.href}
+      hrefLang={props.hrefLang}
+      download={props.download}
+      media={props.media}
+      ping={props.ping}
+      rel={props.rel}
+      target={props.target}
+      type={props.type}
+      referrerPolicy={props.referrerPolicy}
+      className="denhaag-menu-button"
+    >
       {props.children}
     </a>
   );
