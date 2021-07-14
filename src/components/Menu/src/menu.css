@@ -1,3 +1,4 @@
-.denhaag-menu :not(:last-child) {
-  margin-inline-end: var(--denhaag-menu-group-spacing);
+.denhaag-menu {
+  display: flex;
+  column-gap: var(--denhaag-menu-group-spacing);
 }
