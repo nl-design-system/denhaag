@@ -3,14 +3,15 @@
 }
 
 .denhaag-badge-counter__counter {
-  padding-block-start: var(--denhaag-badge-counter-padding-block);
-  padding-block-end: var(--denhaag-badge-counter-padding-block);
-  padding-inline-start: var(--denhaag-badge-counter-padding-inline);
-  padding-inline-end: var(--denhaag-badge-counter-padding-inline);
+  border-radius: var(--utrecht-badge-counter-border-radius);
+  background-color: var(--utrecht-badge-counter-background-color);
+  padding-block-start: var(--utrecht-badge-counter-padding-block);
+  padding-block-end: var(--utrecht-badge-counter-padding-block);
+  padding-inline-start: var(--utrecht-badge-counter-padding-inline);
+  padding-inline-end: var(--utrecht-badge-counter-padding-inline);
 
-  border-radius: var(--denhaag-border-radius);
-  background-color: var(--denhaag-badge-counter-background-color);
-  font-family: var(--denhaag-badge-counter-font-family);
-  font-size: var(--denhaag-badge-counter-font-size);
-  font-weight: 500;
+  color: var(--utrecht-badge-counter-color);
+  font-family: var(--utrecht-badge-counter-font-family);
+  font-size: var(--utrecht-badge-counter-font-size);
+  font-weight: var(--utrecht-badge-counter-font-weight);
 }

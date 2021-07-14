@@ -6,7 +6,7 @@ import './badge-counter.css';
 export type BadgeCounterProps = Omit<BaseProps, 'tabIndex' | 'classes'>;
 
 /**
- * A badge shows small content at the top right corner of it's children.
+ * A counter badge notifies a user of a specific amount of updates.
  * @param props The properties of a Badge component.
  * @constructor Constructs an instance of Badge.
  */
