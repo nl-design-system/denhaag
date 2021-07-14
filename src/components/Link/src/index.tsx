@@ -35,11 +35,6 @@ export interface LinkProps extends Omit<BaseProps, 'classes'> {
   disabled?: boolean;
 
   /**
-   * Applies focus styling to the link
-   */
-  focus?: boolean;
-
-  /**
    * [See MDN Web Docs for details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-download)
    */
   download?: string | boolean;
@@ -86,7 +81,6 @@ export const Link: React.FC<LinkProps> = ({
   id,
   children = undefined,
   disabled = false,
-  focus = false,
   icon = undefined,
   iconAlign = 'end',
   tabIndex = 0,
@@ -94,7 +88,6 @@ export const Link: React.FC<LinkProps> = ({
 }: LinkProps) => {
   const anchorClassName = clsx('denhaag-link', {
     'denhaag-link--disabled': disabled,
-    'denhaag-link--focus': focus,
     'denhaag-link--with-icon': icon !== undefined,
   });
 
