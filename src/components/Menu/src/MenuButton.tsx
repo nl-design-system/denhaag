@@ -1,6 +1,7 @@
 import React from 'react';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import { ChevronDownIcon } from '@gemeente-denhaag/icons';
+import clsx from 'clsx';
 
 import './menu-button.css';
 
@@ -8,6 +9,11 @@ import './menu-button.css';
  * The properties of the normal variant of the Menu Button
  */
 export interface MenuButtonProps extends Omit<BaseProps, 'classes' | 'tabIndex'> {
+  /**
+   * If the element is active or not. You an use this property to mark the menu
+   * item of the current active page.
+   */
+  active: boolean;
   /**
    * The URL that the hyperlink points to. Links are not restricted to HTTP-based
    * URLs — they can use any URL scheme supported by browsers.
@@ -63,13 +69,22 @@ export interface MenuButtonProps extends Omit<BaseProps, 'classes' | 'tabIndex'>
  */
 export interface MenuButtonExpandableProps extends Omit<BaseProps, 'classes' | 'tabIndex'> {
   /**
+   * If the element is active or not. You an use this property to mark the menu
+   * item of the current active page.
+   */
+  active: boolean;
+  /**
    * Determines the Onclick function the menu button refers to
    * Only applicable to the Expandable variant
    */
   onclick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-export const MenuButton: React.FC<MenuButtonProps> = (props: MenuButtonProps) => {
+export const MenuButton: React.FC<MenuButtonProps> = ({ active = false, ...props }: MenuButtonProps) => {
+  const className = clsx('denhaag-menu-button', {
+    'denhaag-menu-button--active': active,
+  });
+
   return (
     <a
       id={props.id}
@@ -82,7 +97,7 @@ export const MenuButton: React.FC<MenuButtonProps> = (props: MenuButtonProps) =>
       target={props.target}
       type={props.type}
       referrerPolicy={props.referrerPolicy}
-      className="denhaag-menu-button"
+      className={className}
       title={props.children?.toString()}
     >
       {props.children}
@@ -90,14 +105,16 @@ export const MenuButton: React.FC<MenuButtonProps> = (props: MenuButtonProps) =>
   );
 };
 
-export const MenuButtonExpandable: React.FC<MenuButtonProps> = (props: MenuButtonExpandableProps) => {
+export const MenuButtonExpandable: React.FC<MenuButtonProps> = ({
+  active = false,
+  ...props
+}: MenuButtonExpandableProps) => {
+  const className = clsx('denhaag-menu-button', 'denhaag-menu-button--expandable', {
+    'denhaag-menu-button--active': active,
+  });
+
   return (
-    <button
-      id={props.id}
-      onClick={props.onclick}
-      className="denhaag-menu-button denhaag-menu-button--expandable"
-      title={props.children?.toString()}
-    >
+    <button id={props.id} onClick={props.onclick} className={className} title={props.children?.toString()}>
       {props.children}
       <span className="denhaag-menu-button__chevron">
         <ChevronDownIcon aria-label="ChevronDownIcon" />
