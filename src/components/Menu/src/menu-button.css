@@ -1,4 +1,5 @@
 .denhaag-menu-button {
+  display: inline-block;
   background-color: inherit;
   border: inherit;
   color: var(--denhaag-menu-button-color);
