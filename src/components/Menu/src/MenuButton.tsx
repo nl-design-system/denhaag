@@ -83,6 +83,7 @@ export const MenuButton: React.FC<MenuButtonProps> = (props: MenuButtonProps) =>
       type={props.type}
       referrerPolicy={props.referrerPolicy}
       className="denhaag-menu-button"
+      title={props.children?.toString()}
     >
       {props.children}
     </a>
@@ -91,7 +92,12 @@ export const MenuButton: React.FC<MenuButtonProps> = (props: MenuButtonProps) =>
 
 export const MenuButtonExpandable: React.FC<MenuButtonProps> = (props: MenuButtonExpandableProps) => {
   return (
-    <button id={props.id} onClick={props.onclick} className="denhaag-menu-button">
+    <button
+      id={props.id}
+      onClick={props.onclick}
+      className="denhaag-menu-button denhaag-menu-button--expandable"
+      title={props.children?.toString()}
+    >
       {props.children}
       <span className="denhaag-menu-button__chevron">
         <ChevronDownIcon aria-label="ChevronDownIcon" />
