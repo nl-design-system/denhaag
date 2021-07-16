@@ -1,8 +1,7 @@
 import '@gemeente-denhaag/design-tokens-proprietary/dist/theme/index.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
 import '@gemeente-denhaag/design-tokens-common/dist/theme/index.css';
-import { StylesProvider } from '@material-ui/styles';
-
+import StylesProvider from '@gemeente-denhaag/stylesprovider';
 import { addDecorator } from '@storybook/react';
 import { withThemes } from 'storybook-addon-themes/react';
 
@@ -35,4 +34,4 @@ export const parameters = {
   },
 };
 
-export const decorators = [(Story) => <StylesProvider injectFirst>{<Story />}</StylesProvider>];
+export const decorators = [(Story) => <StylesProvider>{<Story />}</StylesProvider>];

@@ -27,7 +27,8 @@
     "@gemeente-denhaag/layout": "^0.2.2",
     "@gemeente-denhaag/navigation": "^0.2.2",
     "@gemeente-denhaag/pickers": "^0.2.2",
-    "@gemeente-denhaag/surfaces": "^0.2.2"
+    "@gemeente-denhaag/surfaces": "^0.2.2",
+    "@gemeente-denhaag/stylesprovider": "^0.1.0"
   },
   "peerDependencies": {
     "react": "^17.0.1"
