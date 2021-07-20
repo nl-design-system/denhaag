@@ -3861,15 +3861,15 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/cli@6.3.2":
-  version "6.3.2"
-  resolved "https://registry.yarnpkg.com/@storybook/cli/-/cli-6.3.2.tgz#858347e16216219742c30db4b45529aac3911e6a"
-  integrity sha512-qVFvrp8kQ6L0bowGjcDyUVoJVW5zkKiuYINr+0IXFyVo79uKFA9RhYExQl/dZwQqEDjXblTi+PBt/ik7RGw1Ag==
+"@storybook/cli@6.3.4":
+  version "6.3.4"
+  resolved "https://registry.yarnpkg.com/@storybook/cli/-/cli-6.3.4.tgz#0d8d675992c2ff9910a7e32fa43afa028cdf44da"
+  integrity sha512-lXODHx8tvhFWa5dCOzv7OQ5Oo19d6I1gdCw1KAFNSPc49xO6uKZGj9UT6gRGPj07dF2dlwnb+v4EyHEbxK+HuA==
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/preset-env" "^7.12.11"
-    "@storybook/codemod" "6.3.2"
-    "@storybook/node-logger" "6.3.2"
+    "@storybook/codemod" "6.3.4"
+    "@storybook/node-logger" "6.3.4"
     "@storybook/semver" "^7.3.2"
     boxen "^4.2.0"
     chalk "^4.1.0"
@@ -3957,16 +3957,16 @@
     core-js "^3.8.2"
     global "^4.4.0"
 
-"@storybook/codemod@6.3.2":
-  version "6.3.2"
-  resolved "https://registry.yarnpkg.com/@storybook/codemod/-/codemod-6.3.2.tgz#f2aadbd7e157a38d1b87b8d04c7dcb4e4827f19c"
-  integrity sha512-qNw6q1uXuDl3WLE3pNZaxF7VW7ewjZHy6KkOXBVT0bkKBGCeNSJjLnh3BAtyPmr5nyt8mW6TC2c198G6x8Vg3g==
+"@storybook/codemod@6.3.4":
+  version "6.3.4"
+  resolved "https://registry.yarnpkg.com/@storybook/codemod/-/codemod-6.3.4.tgz#0c4361f1868fb64c57868939d478ef454d5269c5"
+  integrity sha512-zc99fxlYm/m7htkRCDUSerqvhZqEIfqxKrTokBOCfgyOAMiyQoewtvgAgDiu6CoTAhDjASJm5HCc+Qrn9/u8Rw==
   dependencies:
     "@babel/types" "^7.12.11"
     "@mdx-js/mdx" "^1.6.22"
     "@storybook/csf" "0.0.1"
-    "@storybook/csf-tools" "6.3.2"
-    "@storybook/node-logger" "6.3.2"
+    "@storybook/csf-tools" "6.3.4"
+    "@storybook/node-logger" "6.3.4"
     core-js "^3.8.2"
     cross-spawn "^7.0.3"
     globby "^11.0.2"
@@ -18780,11 +18780,11 @@ storybook-design-token@^1.1.1:
     react-use-clipboard "^1.0.7"
 
 storybook@^6.3.2:
-  version "6.3.2"
-  resolved "https://registry.yarnpkg.com/storybook/-/storybook-6.3.2.tgz#7107804f74d9d53ac605b4327937e08849c0da8d"
-  integrity sha512-zDMCPeaI7INgaWWuyRbGYMKboPnzh2bV5HTCVjbgU6CYJWyIRVP5YvCmclX3GDZRhv6n7JupGdxVS/Gw9QfLKA==
+  version "6.3.4"
+  resolved "https://registry.yarnpkg.com/storybook/-/storybook-6.3.4.tgz#4787337d29fac414b658b2637d4bd210c62e2a9d"
+  integrity sha512-YiI6c+rntLR/GmHRhHERVlTKJF7spJGw4v5Us/+hViIihBX9EEq0ls5a0c8OadglBP+QpBmphG9UVso7CsH7QA==
   dependencies:
-    "@storybook/cli" "6.3.2"
+    "@storybook/cli" "6.3.4"
 
 stream-browserify@^2.0.1:
   version "2.0.2"
