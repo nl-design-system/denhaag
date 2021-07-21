@@ -33,6 +33,8 @@
     "prepublishOnly": "pinst --disable",
     "prettier": "prettier --write .",
     "prettier-check": "prettier -c src/**/*.{js,jsx,ts,tsx}",
+    "publish": "lerna publish from-package",
+    "release": "lerna version prerelease --no-changelog --no-private",
     "storybook": "npm-run-all --parallel watch:*",
     "test": "cypress run-ct",
     "test:open": "cypress open-ct",
