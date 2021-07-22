@@ -47,5 +47,6 @@ jobs:
           NPM_ACCESS_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
         run: |
           npm config set "//registry.npmjs.org/:_authToken" "${NPM_ACCESS_TOKEN}"
+          npm config set access public
           npm run publish -- --no-verify-access --yes
           npm config delete "//registry.npmjs.org/:_authToken"
