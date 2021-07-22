@@ -1,6 +1,6 @@
 {
     "name": "@gemeente-denhaag/pickersutilsprovider",
-    "version": "0.2.3-alpha.0",
+    "version": "0.2.3-alpha.1",
     "description": "A Utilsprovider for pickers",
     "bugs": "https://github.com/nl-design-system/denhaag/issues",
     "repository": {
