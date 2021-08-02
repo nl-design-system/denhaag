@@ -34,7 +34,7 @@
     "prettier": "prettier --write .",
     "prettier-check": "prettier -c src/**/*.{js,jsx,ts,tsx}",
     "publish": "lerna publish from-package",
-    "release": "lerna version prerelease --no-changelog --no-private",
+    "release": "lerna version prerelease --no-changelog --no-private --no-commit-hooks",
     "storybook": "npm-run-all --parallel watch:*",
     "test": "cypress run-ct",
     "test:open": "cypress open-ct",
