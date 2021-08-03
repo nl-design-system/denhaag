@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/baselayoutprops",
-  "version": "0.2.3-alpha.5",
+  "version": "0.2.3-alpha.6",
   "description": "Properties used in layout components",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -22,7 +22,7 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "^0.2.3-alpha.5"
+    "@gemeente-denhaag/baseprops": "^0.2.3-alpha.6"
   },
   "peerDependencies": {
     "react": "^17.0.1"

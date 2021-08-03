@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/denhaag-component-library",
-  "version": "0.2.3-alpha.5",
+  "version": "0.2.3-alpha.6",
   "description": "A library of React components for the Municipality of the Hague",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -21,14 +21,14 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "^0.2.3-alpha.5",
-    "@gemeente-denhaag/datadisplay": "^0.2.3-alpha.5",
-    "@gemeente-denhaag/input": "^0.2.3-alpha.5",
-    "@gemeente-denhaag/layout": "^0.2.3-alpha.5",
-    "@gemeente-denhaag/navigation": "^0.2.3-alpha.5",
-    "@gemeente-denhaag/pickers": "^0.2.3-alpha.5",
-    "@gemeente-denhaag/stylesprovider": "^0.1.1-alpha.5",
-    "@gemeente-denhaag/surfaces": "^0.2.3-alpha.5"
+    "@gemeente-denhaag/baseprops": "^0.2.3-alpha.6",
+    "@gemeente-denhaag/datadisplay": "^0.2.3-alpha.6",
+    "@gemeente-denhaag/input": "^0.2.3-alpha.6",
+    "@gemeente-denhaag/layout": "^0.2.3-alpha.6",
+    "@gemeente-denhaag/navigation": "^0.2.3-alpha.6",
+    "@gemeente-denhaag/pickers": "^0.2.3-alpha.6",
+    "@gemeente-denhaag/stylesprovider": "^0.1.1-alpha.6",
+    "@gemeente-denhaag/surfaces": "^0.2.3-alpha.6"
   },
   "peerDependencies": {
     "react": "^17.0.1"
