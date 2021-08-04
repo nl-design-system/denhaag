@@ -6,7 +6,7 @@
       },
       "unchecked": {
         "color": { "value": "{denhaag.color.grey.4.value}" }
-      },,
+      },
       "hover": {
         "color": { "value": "{denhaag.color.blue.3.value}" }
       },
