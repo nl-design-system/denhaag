@@ -1,6 +1,6 @@
 {
   "denhaag": {
-    "radio-button": {
+    "radio": {
       "checked": {
         "color": { "value": "{denhaag.color.blue.3.value}" }
       },
