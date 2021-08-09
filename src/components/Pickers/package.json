@@ -30,7 +30,7 @@
         "react": "^17.0.1"
     },
     "devDependencies": {
-        "@date-io/date-fns": "^1.3.13",
+        "@date-io/date-fns": "^2.11.0",
         "date-fns": "^2.16.1"
     },
     "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
