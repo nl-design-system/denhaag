@@ -1,0 +1,20 @@
+{
+  "denhaag": {
+    "list": {
+      "item": {
+        "secondary-action": {
+          "focus": {
+            "color": { "value": "{denhaag.color.blue.3.value}" }
+          }
+        }
+      },
+      "item-text": {
+        "primary": {
+          "focus": {
+            "color": { "value": "{denhaag.color.blue.3.value}" }
+          }
+        }
+      }
+    }
+  }
+}

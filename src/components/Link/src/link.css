@@ -1,0 +1,59 @@
+.denhaag-link {
+  color: var(--denhaag-link-color);
+  padding-block-start: var(--denhaag-link-padding);
+  padding-block-end: var(--denhaag-link-padding);
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-decoration: underline;
+}
+
+.denhaag-link--with-icon {
+  text-decoration: none;
+}
+
+.denhaag-link--focus,
+.denhaag-link:focus {
+  color: var(--denhaag-link-focus-color);
+  outline: var(--denhaag-link-focus-outline);
+}
+
+.denhaag-link--hover,
+.denhaag-link:hover {
+  cursor: pointer;
+  color: var(--denhaag-link-hover-color);
+}
+
+.denhaag-link--disabled {
+  color: var(--denhaag-link-disabled-color);
+  cursor: none;
+  pointer-events: none;
+}
+
+.denhaag-link--disabled--hover,
+.denhaag-link--disabled:hover {
+  color: var(--denhaag-link-disabled-color);
+}
+
+.denhaag-link__icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: text-top;
+  height: var(--denhaag-link-icon-size);
+  width: var(--denhaag-link-icon-size);
+}
+
+.denhaag-link__icon > :first-child {
+  width: inherit;
+  height: inherit;
+}
+
+.denhaag-link__icon--start {
+  margin-inline-end: var(--denhaag-link-icon-margin-start);
+}
+
+.denhaag-link__icon--end {
+  margin-inline-start: var(--denhaag-link-icon-margin-end);
+}

@@ -18,7 +18,7 @@ export interface SvgIconProps extends BaseProps {
    * The fontSize applied to the icon. Defaults to 24px, but can be configure
    * to inherit font size.
    */
-  fontSize?: 'default' | 'inherit' | 'large' | 'small';
+  fontSize?: 'inherit' | 'large' | 'medium' | 'small';
   /**
    * Applies a color attribute to the SVG element.
    */
@@ -48,7 +48,7 @@ export interface SvgIconProps extends BaseProps {
 const SvgIcon: React.FC<SvgIconProps> = ({
   color = 'inherit',
   component = 'svg',
-  fontSize = 'default',
+  fontSize = 'medium',
   viewBox = '0 0 24 24',
   shapeRendering = 'auto',
   ...props

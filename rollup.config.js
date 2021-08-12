@@ -8,7 +8,15 @@ import postcss from 'rollup-plugin-postcss';
 
 import tsconfig from './tsconfig.json';
 
-const externalDependencies = ['@material-ui/core', '@material-ui/lab', '@material-ui/pickers', 'react', 'react-dom'];
+const externalDependencies = [
+  '@material-ui/core',
+  '@material-ui/lab',
+  '@material-ui/pickers',
+  'react',
+  'react-dom',
+  '@material-ui/core/transitions',
+  '@material-ui/core/OverridableComponent',
+];
 const internalDependencies = _.keys(tsconfig.compilerOptions.paths);
 const dependencies = externalDependencies.concat(internalDependencies);
 

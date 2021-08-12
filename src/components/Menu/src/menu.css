@@ -1,0 +1,4 @@
+.denhaag-menu {
+  display: flex;
+  column-gap: var(--denhaag-menu-group-spacing);
+}

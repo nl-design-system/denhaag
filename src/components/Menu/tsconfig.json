@@ -6,10 +6,13 @@
     "composite": true
   },
   "include": ["src/**/*"],
-  "exclude": ["dist", "src/**/*.stories.tsx"],
+  "exclude": ["dist", "src/**/*.stories.mdx"],
   "references": [
     {
       "path": "../BaseProps"
+    },
+    {
+      "path": "../Icons"
     }
   ]
 }

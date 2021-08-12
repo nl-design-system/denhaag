@@ -1,0 +1,9 @@
+{
+  "utrecht": {
+    "heading": {
+      "color": { "value": "{denhaag.color.grey.4.value}" },
+      "font-family": { "value": "{denhaag.typography.sans-serif-alternate.font-family.value}" },
+      "font-weight": { "value": "700" }
+    }
+  }
+}

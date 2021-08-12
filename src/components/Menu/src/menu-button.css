@@ -1,0 +1,66 @@
+.denhaag-menu-button {
+  display: inline-block;
+  background-color: inherit;
+  border: inherit;
+  color: var(--denhaag-menu-button-color);
+  cursor: pointer;
+  font-family: var(--denhaag-menu-button-font-family);
+  font-size: var(--denhaag-menu-button-font-size);
+  font-weight: var(--denhaag-menu-button-font-size);
+  line-height: var(--denhaag-menu-button-line-height);
+  padding-block-end: 0;
+  padding-block-start: 0;
+  padding-inline-end: 0;
+  padding-inline-start: 0;
+  text-decoration: none;
+  user-select: none;
+  text-align: center;
+}
+
+.denhaag-menu-button:active,
+.denhaag-menu-button--active {
+  color: var(--denhaag-menu-button-active-color);
+  font-weight: var(--denhaag-menu-button-active-font-weight);
+}
+
+.denhaag-menu-button:focus,
+.denhaag-menu-button--focus {
+  outline: var(--denhaag-focus-border);
+}
+
+.denhaag-menu-button:hover,
+.denhaag-menu-button--hover {
+  color: var(--denhaag-menu-button-hover-color);
+  text-decoration: none;
+}
+
+.denhaag-menu-button__chevron .denhaag-icon {
+  height: var(--denhaag-menu-button-chevron-size);
+  width: var(--denhaag-menu-button-chevron-size);
+  padding-inline-start: var(--denhaag-menu-button-chevron-padding-inline-start);
+}
+
+.denhaag-menu-button--active .denhaag-menu-button__chevron,
+.denhaag-menu-button:active .denhaag-menu-button__chevron {
+  color: var(--denhaag-menu-button-chevron-active-color);
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.denhaag-menu-button--hover .denhaag-menu-button__chevron,
+.denhaag-menu-button:hover .denhaag-menu-button__chevron {
+  color: var(--denhaag-menu-button-chevron-hover-color);
+}
+
+.denhaag-menu-button::after {
+  content: attr(title);
+  display: block;
+  height: 1px;
+  color: transparent;
+  font-weight: var(--denhaag-menu-button-active-font-weight);
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.denhaag-menu-button--expandable::after {
+  padding-inline-end: calc(var(--denhaag-menu-button-chevron-size) + var(--denhaag-menu-button-chevron-padding-inline-start));
+}

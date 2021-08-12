@@ -1,0 +1,9 @@
+{
+  "denhaag": {
+    "timeline": {
+      "font-family": { "value": "{denhaag.typography.sans-serif.font-family.value}" },
+      "font-size": { "value": "{denhaag.typography.scale.base.font-size.value}" },
+      "line-height": { "value": "24px" }
+    }
+  }
+}

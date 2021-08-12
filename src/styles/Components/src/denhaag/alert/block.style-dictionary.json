@@ -1,0 +1,11 @@
+{
+  "denhaag": {
+    "alert": {
+      "border-radius": { "value": "1px" },
+      "padding-block-start": { "value": "24px" },
+      "padding-block-end": { "value": "24px" },
+      "padding-inline-start": { "value": "24px" },
+      "padding-inline-end": { "value": "24px" }
+    }
+  }
+}

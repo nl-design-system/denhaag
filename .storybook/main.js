@@ -4,7 +4,18 @@ module.exports = {
     '../src/components/*/src/**/*.stories.@(js|jsx|ts|tsx)',
     '../src/components/*/src/**/*.stories.mdx',
   ],
-  addons: ['@storybook/addon-a11y', '@storybook/addon-links', '@storybook/addon-essentials', 'storybook-design-token'],
+  addons: [
+    '@storybook/addon-a11y',
+    '@storybook/addon-links',
+    {
+      name: '@storybook/addon-essentials',
+      options: {
+        backgrounds: false,
+      },
+    },
+    'storybook-addon-themes',
+    'storybook-design-token',
+  ],
 
   webpackFinal: async (config, { configType }) => {
     const rules = config.module.rules;

@@ -6,7 +6,7 @@
       "buildPath": "dist/",
       "files": [
         {
-          "destination": "index.js",
+          "destination": "tokens.js",
           "format": "javascript/es6"
         }
       ]
@@ -29,6 +29,20 @@
           "destination": "index.css",
           "format": "css/variables",
           "options": {
+            "outputReferences": true
+          }
+        }
+      ]
+    },
+    "css-theme": {
+      "transforms": ["attribute/cti", "name/cti/kebab", "color/hsl-4"],
+      "buildPath": "dist/",
+      "files": [
+        {
+          "destination": "theme/index.css",
+          "format": "css/variables",
+          "options": {
+            "selector": ".denhaag-theme",
             "outputReferences": true
           }
         }

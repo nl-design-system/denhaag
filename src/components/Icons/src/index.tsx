@@ -1,6 +1,9 @@
 import React from 'react';
 import SvgIcon, { SvgIconProps } from './SvgIcon';
 
+import { classes } from './bem-mapping';
+import './icon.css';
+
 // Arrows
 import ArrowLeftSvg from './svg/arrows/arrow-left.svg';
 import RightArrowSvg from './svg/arrows/arrow-right.svg';
@@ -15,6 +18,7 @@ import MessageSvg from './svg/communication/message.svg';
 
 // Functional
 import CloseSvg from './svg/functional/close.svg';
+import CheckedSvg from './svg/functional/checked.svg';
 import ExternalLinkSvg from './svg/functional/external-link.svg';
 import GridSvg from './svg/functional/grid.svg';
 import HamburgerSvg from './svg/functional/hamburger.svg';
@@ -25,11 +29,13 @@ import ShareSvg from './svg/functional/share.svg';
 import ShowSvg from './svg/functional/show.svg';
 import StarterSvg from './svg/functional/starter.svg';
 import TrashSvg from './svg/functional/trash.svg';
+import UncheckedBoxSvg from './svg/functional/uncheckedbox.svg';
 
 // Informational
 import AlertTriangleSvg from './svg/informational/alert-triangle.svg';
 import CheckCircleSvg from './svg/informational/checkCircle.svg';
 import CircleHelpSvg from './svg/informational/circle-help.svg';
+import CircleInformationSvg from './svg/informational/circle-information.svg';
 import SettingsSvg from './svg/informational/settings.svg';
 
 // Objects
@@ -56,7 +62,7 @@ import WhatsAppSvg from './svg/social/whatsapp.svg';
 import MegaphoneSvg from './svg/megaphone.svg';
 
 const buildIcon: React.ElementType = (svg: React.ElementType, props: SvgIconProps) => (
-  <SvgIcon component={svg} {...props} />
+  <SvgIcon component={svg} classes={classes} {...props} />
 );
 type F = React.FunctionComponent<SvgIconProps>; // less typing
 
@@ -74,6 +80,7 @@ export const MessageIcon: F = (props: SvgIconProps) => buildIcon(MessageSvg, pro
 
 // Functional
 export const CloseIcon: F = (props: SvgIconProps) => buildIcon(CloseSvg, props);
+export const CheckedIcon: F = (props: SvgIconProps) => buildIcon(CheckedSvg, props);
 export const ExternalLinkIcon: F = (props: SvgIconProps) => buildIcon(ExternalLinkSvg, props);
 export const GridIcon: F = (props: SvgIconProps) => buildIcon(GridSvg, props);
 export const HamburgerIcon: F = (props: SvgIconProps) => buildIcon(HamburgerSvg, props);
@@ -84,11 +91,13 @@ export const ShareIcon: F = (props: SvgIconProps) => buildIcon(ShareSvg, props);
 export const ShowIcon: F = (props: SvgIconProps) => buildIcon(ShowSvg, props);
 export const StarterIcon: F = (props: SvgIconProps) => buildIcon(StarterSvg, props);
 export const TrashIcon: F = (props: SvgIconProps) => buildIcon(TrashSvg, props);
+export const UncheckedBoxIcon: F = (props: SvgIconProps) => buildIcon(UncheckedBoxSvg, props);
 
 // Informational
 export const AlertTriangleIcon: F = (props: SvgIconProps) => buildIcon(AlertTriangleSvg, props);
 export const CheckCircleIcon: F = (props: SvgIconProps) => buildIcon(CheckCircleSvg, props);
 export const CircleHelpIcon: F = (props: SvgIconProps) => buildIcon(CircleHelpSvg, props);
+export const CircleInformationIcon: F = (props: SvgIconProps) => buildIcon(CircleInformationSvg, props);
 export const SettingsIcon: F = (props: SvgIconProps) => buildIcon(SettingsSvg, props);
 
 // Objects
