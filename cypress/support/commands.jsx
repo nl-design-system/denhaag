@@ -23,3 +23,13 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+import { mount as cypressMount } from '@cypress/react';
+import StylesProvider from '../../src/components/StylesProvider/src/index';
+import '../../src/styles/Common/dist/index';
+import '../../src/styles/Components/dist/index';
+import '../../src/styles/Proprietary/dist/index';
+
+Cypress.Commands.add('mount', (children) => {
+  return cypressMount(<StylesProvider>{children}</StylesProvider>);
+});
