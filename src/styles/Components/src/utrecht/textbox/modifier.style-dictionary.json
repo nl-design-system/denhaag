@@ -1,0 +1,18 @@
+{
+  "utrecht": {
+    "textbox": {
+      "disabled": {
+        "border-color": { "value":  "{denhaag.color.grey.2.value}" },
+        "color": { "value": "{denhaag.color.grey.2.value}" }
+      },
+      "invalid": {
+        "border-color": { "value": "{denhaag.color.red.3.value}" },
+        "border-width": { "value": "2px" }
+      },
+      "read-only": {
+        "border-color": {},
+        "color": {}
+      }
+    }
+  }
+}

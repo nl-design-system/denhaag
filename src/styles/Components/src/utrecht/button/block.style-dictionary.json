@@ -1,0 +1,17 @@
+{
+  "utrecht": {
+    "button": {
+      "border-width": { "value": "0" },
+      "border-radius": { "value": "{denhaag.border-radius.value}" },
+      "font-family": { "value": "{denhaag.typography.sans-serif.font-family.value}" },
+      "padding-inline-start": { "value": "16px" },
+      "padding-inline-end": { "value": "16px" },
+      "padding-block-start": { "value": "8px" },
+      "padding-block-end": { "value": "8px" },
+      "margin-inline-start": { "value": "0" },
+      "margin-inline-end": { "value": "0" },
+      "margin-block-start": { "value": "0" },
+      "margin-block-end": { "value": "0" }
+    }
+  }
+}
