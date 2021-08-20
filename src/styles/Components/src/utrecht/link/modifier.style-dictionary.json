@@ -1,0 +1,12 @@
+{
+  "utrecht": {
+    "link": {
+      "focus": {
+        "color": { "value": "{denhaag.color.blue.4.value}" }
+      },
+      "hover": {
+        "color": { "value": "{denhaag.color.blue.4.value}" }
+      }
+    }
+  }
+}

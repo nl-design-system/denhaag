@@ -1,8 +1,10 @@
 {
   "utrecht": {
     "button": {
+      "background-color": { "value": "{denhaag.color.green.3.value}" },
       "border-width": { "value": "0" },
       "border-radius": { "value": "{denhaag.border-radius.value}" },
+      "color": { "value": "{denhaag.color.white.value}" },
       "font-family": { "value": "{denhaag.typography.sans-serif.font-family.value}" },
       "padding-inline-start": { "value": "16px" },
       "padding-inline-end": { "value": "16px" },

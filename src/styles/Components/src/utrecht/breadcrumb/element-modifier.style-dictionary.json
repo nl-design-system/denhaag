@@ -1,0 +1,14 @@
+{
+  "utrecht": {
+    "breadcrumb": {
+      "link": {
+        "focus": {
+          "background-color": {},
+          "color": {
+            "value": "{denhaag.color.blue.3.value}"
+          }
+        }
+      }
+    }
+  }
+}
