@@ -1,0 +1,24 @@
+{
+  "utrecht": {
+    "page-footer": {
+      "background-color": {
+        "value": "hsl(48deg 94% 48%)"
+      },
+      "color": {
+        "value": "{denhaag.color.black.value}"
+      },
+      "padding-block-end": {
+        "value": "40px"
+      },
+      "padding-block-start": {
+        "value": "30px"
+      },
+      "padding-inline-end": {
+        "value": "30px"
+      },
+      "padding-inline-start": {
+        "value": "30px"
+      }
+    }
+  }
+}
