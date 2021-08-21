@@ -1,0 +1,10 @@
+{
+  "utrecht": {
+    "table": {
+      "border-color": { "value": "{denhaag.color.grey.2.value}" },
+      "border-width": { "value": "2px" },
+      "margin-block-end": {},
+      "margin-block-start": {}
+    }
+  }
+}
