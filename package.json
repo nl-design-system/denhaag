@@ -109,7 +109,7 @@
     "react-test-renderer": "^17.0.1",
     "rimraf": "^3.0.2",
     "rollup": "^2.50.6",
-    "rollup-plugin-import-css": "^2.0.1",
+    "rollup-plugin-import-css": "^3.0.0",
     "rollup-plugin-postcss": "^4.0.0",
     "rollup-plugin-svgo": "^1.1.0",
     "storybook": "^6.3.2",
