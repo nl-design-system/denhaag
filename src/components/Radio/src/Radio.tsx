@@ -48,8 +48,8 @@ export const Radio: React.FC<RadioProps> = ({
   const [isChecked, setChecked] = React.useState(checked);
   const icon = isChecked ? checkedIcon : uncheckedIcon;
 
-  return (
-    <div>
+  const radioComponent = (
+    <>
       <input
         id={id}
         type={'radio'}
@@ -60,8 +60,16 @@ export const Radio: React.FC<RadioProps> = ({
         }}
       />
       {icon}
-      {label && <label htmlFor={id}>{label}</label>}
-    </div>
+    </>
+  );
+
+  return label ? (
+    <label htmlFor={id}>
+      {radioComponent}
+      {label}
+    </label>
+  ) : (
+    radioComponent
   );
 };
 
