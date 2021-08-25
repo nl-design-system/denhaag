@@ -25,20 +25,21 @@ import readme from "../../README.md";
   <Story
     name="Default"
     args={{
-      label: "I agree"
+      label: "I agree",
+      checked: true
     }}
     parameters={{
       docs: {
         source: {
           code: `
 import { Radio } from "@gemeente-denhaag/radio";
-<Radio label={"I agree"} />;
+<Radio label={"I agree"}/>;
     `,
         },
       },
     }}
   >
-    {(args) => <Radio id={1} label={args.label} />} />}
+    {(args) => <Radio id={1} {...args} />} />}
   </Story>
 </Canvas>
 
