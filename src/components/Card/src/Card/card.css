@@ -149,8 +149,8 @@
   right: var(--denhaag-card-arrow-right);
 }
 
-.denhaag-card--case--hover .denhaag-card__arrow,
-.denhaag-card--case--focus .denhaag-card__arrow,
+.denhaag-card--case.denhaag-card--hover .denhaag-card__arrow,
+.denhaag-card--case.denhaag-card--focus .denhaag-card__arrow,
 .denhaag-card--case:hover .denhaag-card__arrow,
 .denhaag-card--case:focus-within .denhaag-card__arrow {
   color: var(--denhaag-card-case-active-color);
@@ -172,8 +172,8 @@
   padding-inline-start: var(--denhaag-card-title-padding-inline);
 }
 
-.denhaag-card--case--hover .denhaag-card__title,
-.denhaag-card--case--focus .denhaag-card__title,
+.denhaag-card--case.denhaag-card--hover .denhaag-card__title,
+.denhaag-card--case.denhaag-card--focus .denhaag-card__title,
 .denhaag-card--case:hover .denhaag-card__title,
 .denhaag-card--case:focus-within .denhaag-card__title {
   color: var(--denhaag-card-case-active-color);
@@ -189,15 +189,15 @@
   position: relative;
 }
 
-.denhaag-card--case--hover .denhaag-card__subtitle,
-.denhaag-card--case--focus .denhaag-card__subtitle,
+.denhaag-card--case.denhaag-card--hover .denhaag-card__subtitle,
+.denhaag-card--case.denhaag-card--focus .denhaag-card__subtitle,
 .denhaag-card--case:hover .denhaag-card__subtitle,
 .denhaag-card--case:focus-within .denhaag-card__subtitle {
   color: var(--denhaag-card-case-active-color);
 }
 
-.denhaag-card--case--hover::before,
-.denhaag-card--case--focus::before,
+.denhaag-card--case.denhaag-card--hover::before,
+.denhaag-card--case.denhaag-card--focus::before,
 .denhaag-card--case:hover::before,
 .denhaag-card--case:focus-within::before {
   top: 12px;
@@ -205,8 +205,8 @@
   transform: rotate(-2.45deg);
 }
 
-.denhaag-card--case--focus .denhaag-card__background,
-.denhaag-card--case--hover .denhaag-card__background,
+.denhaag-card--case.denhaag-card--focus .denhaag-card__background,
+.denhaag-card--case.denhaag-card--hover .denhaag-card__background,
 .denhaag-card--case:hover .denhaag-card__background,
 .denhaag-card--case:focus-within .denhaag-card__background {
   transform: rotateX(-20deg);
