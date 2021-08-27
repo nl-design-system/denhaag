@@ -1,0 +1,9 @@
+{
+  "utrecht": {
+    "badge-status": {
+      "text-transform": {
+        "value": "uppercase"
+      }
+    }
+  }
+}

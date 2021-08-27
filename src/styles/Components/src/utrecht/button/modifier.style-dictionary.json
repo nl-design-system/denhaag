@@ -1,0 +1,16 @@
+{
+  "utrecht": {
+    "button": {
+      "primary-action": {
+        "background-color": { "value": "{denhaag.color.green.3.value}" },
+        "color": { "value": "{denhaag.color.white.value}" }
+      },
+      "secondary-action": {
+        "background-color": { "value": "{denhaag.color.white.value}" },
+        "color": { "value": "{denhaag.color.green.3.value}" },
+        "border-color": { "value": "{denhaag.color.green.3.value}" },
+        "border-width": { "value": "2px" }
+      }
+    }
+  }
+}
