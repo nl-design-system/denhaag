@@ -48,6 +48,14 @@ module.exports = (on, config) => {
       console.log(message);
       return null;
     },
+    warn(message) {
+      console.warn(message);
+      return null;
+    },
+    error(message) {
+      console.error(message);
+      return null;
+    },
     table(message) {
       console.table(message);
       return null;

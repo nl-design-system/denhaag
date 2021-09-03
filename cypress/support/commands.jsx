@@ -4,6 +4,7 @@ import StylesProvider from '../../src/components/StylesProvider/src/index';
 import '../../src/styles/Common/dist/index';
 import '../../src/styles/Components/dist/index';
 import '../../src/styles/Proprietary/dist/index';
+import pkg from '../../package.json';
 
 Cypress.Commands.add('mount', (children) => {
   return cypressMount(<StylesProvider>{children}</StylesProvider>);
@@ -52,7 +53,7 @@ Cypress.Commands.add('multimount', (Component, props) => {
   );
 });
 
-Cypress.Commands.add('snapshots', (Component, props, extraClasses) => {
+Cypress.Commands.add('snapshots', (Component, props, extraClasses, knownIssues = []) => {
   if (extraClasses && extraClasses.selector && extraClasses.states) {
     Object.keys(extraClasses.states).forEach((state) => {
       cy.multimount(Component, props);
@@ -67,6 +68,15 @@ Cypress.Commands.add('snapshots', (Component, props, extraClasses) => {
   cy.get('#wrapper').toMatchImageSnapshot({ name: Component.type.name });
 
   cy.injectAxe();
+  cy.configureAxe({
+    rules: knownIssues.map((issue) => {
+      cy.task(
+        'warn',
+        `Disabled "${issue.id}" rule for ${Component.type.name}: known issue (${pkg.bugs}/${issue.issue})`,
+      );
+      return { id: issue.id, reviewOnFail: true };
+    }),
+  });
   cy.checkA11y('#wrapper', null, (violations) => {
     cy.task('a11yLog', violations);
   });

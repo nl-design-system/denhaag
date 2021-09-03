@@ -36,6 +36,7 @@ describe(`Card tests`, () => {
           focus: 'denhaag-card--focus',
         },
       },
+      [{ id: 'color-contrast', issue: 376 }],
     );
   });
 });
