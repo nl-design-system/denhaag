@@ -72,7 +72,7 @@ Cypress.Commands.add('snapshots', (Component, props, extraClasses, knownIssues =
     rules: knownIssues.map((issue) => {
       cy.task(
         'warn',
-        `Disabled "${issue.id}" rule for ${Component.type.name}: known issue (${pkg.bugs}/${issue.issue})`,
+        `\x1b[33m    ! Disabled "${issue.id}" rule for ${Component.type.name}: known issue (${pkg.bugs}/${issue.issue})`,
       );
       return { id: issue.id, reviewOnFail: true };
     }),
