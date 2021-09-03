@@ -48,7 +48,7 @@ jobs:
         with:
           install: false
           record: false
-          command: yarn cypress run-ct --config watchForFileChanges=false
+          command: CHOKIDAR_USEPOLLING=1 yarn cypress run-ct
 
       - name: Upload storybook
         uses: actions/upload-artifact@v2
