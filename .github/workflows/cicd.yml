@@ -43,12 +43,17 @@ jobs:
       - name: build storybook
         run: yarn build-storybook
 
+      - name: Set System Environment Variables for component tests
+        run: |
+          export CHOKIDAR_USEPOLLING=true
+          export CYPRESS_CICD=true
+
       - name: Run Cypress component tests
         uses: cypress-io/github-action@v2
         with:
           install: false
           record: false
-          command: CHOKIDAR_USEPOLLING=1 yarn cypress run-ct
+          command: yarn cypress run-ct
 
       - name: Upload storybook
         uses: actions/upload-artifact@v2
