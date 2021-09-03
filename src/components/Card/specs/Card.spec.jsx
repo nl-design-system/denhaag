@@ -17,6 +17,14 @@ describe(`Card tests`, () => {
     cy.location('hash').should('eq', '#test');
   });
 
+  it('can be operated with keyboard', () => {
+    cy.mount(<Card {...props} />);
+
+    cy.get('.denhaag-card a').type('{enter}');
+
+    cy.location('hash').should('eq', '#test');
+  });
+
   it('a11y and snapshots', () => {
     cy.snapshots(
       <Card {...props} />,
