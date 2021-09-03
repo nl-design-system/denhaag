@@ -48,10 +48,7 @@ jobs:
         with:
           install: false
           record: false
-          command: |
-            export CHOKIDAR_USEPOLLING=true
-            export CYPRESS_CICD=true
-            yarn cypress run-ct
+          command: CHOKIDAR_USEPOLLING=true CYPRESS_CICD=true yarn run test
 
       - name: Upload storybook
         uses: actions/upload-artifact@v2
