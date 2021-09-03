@@ -43,17 +43,15 @@ jobs:
       - name: build storybook
         run: yarn build-storybook
 
-      - name: Prep for Cypress tests
-        run: |
-          export CHOKIDAR_USEPOLLING=true
-          export CYPRESS_CICD=true 
-
       - name: Run Cypress component tests
         uses: cypress-io/github-action@v2
         with:
           install: false
           record: false
           command: yarn run test
+        env:
+          CHOKIDAR_USEPOLLING: true
+          CYPRESS_CICD: true 
 
       - name: Upload storybook
         uses: actions/upload-artifact@v2
