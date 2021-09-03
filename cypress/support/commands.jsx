@@ -39,7 +39,7 @@ Cypress.Commands.add('multimount', (Component, props) => {
   );
 });
 
-Cypress.Commands.add('snapshots', (Component, props, extraClasses ) => {
+Cypress.Commands.add('snapshots', (Component, props, extraClasses) => {
   if (extraClasses && extraClasses.selector && extraClasses.states) {
     Object.keys(extraClasses.states).forEach((state) => {
       cy.multimount(Component, props);
@@ -57,5 +57,4 @@ Cypress.Commands.add('snapshots', (Component, props, extraClasses ) => {
   cy.checkA11y('#wrapper', null, (violations) => {
     cy.task('a11yLog', violations);
   });
-
 });
