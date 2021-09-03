@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { mount as cypressMount } from '@cypress/react';
 import StylesProvider from '../../src/components/StylesProvider/src/index';
 import '../../src/styles/Common/dist/index';
@@ -12,7 +13,12 @@ Cypress.Commands.add('multimount', (Component, props) => {
   let children = [];
 
   children.push(
-    <div style={{ padding: 10 }}>
+    <div
+      style={{
+        /* stylelint-disable-next-line property-disallowed-list */
+        padding: 10,
+      }}
+    >
       <Component.type {...Component.props} />
     </div>,
   );
@@ -23,7 +29,12 @@ Cypress.Commands.add('multimount', (Component, props) => {
       let extraProps = {};
       extraProps[key] = propValue;
       children.push(
-        <div style={{ padding: 10 }}>
+        <div
+          style={{
+            /* stylelint-disable-next-line property-disallowed-list */
+            padding: 10,
+          }}
+        >
           <Component.type {...extraProps} {...Component.props} />
         </div>,
       );
