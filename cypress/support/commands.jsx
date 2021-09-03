@@ -14,6 +14,7 @@ Cypress.Commands.add('multimount', (Component, props) => {
 
   children.push(
     <div
+      key="original"
       style={{
         /* stylelint-disable-next-line property-disallowed-list */
         padding: 10,
@@ -30,6 +31,7 @@ Cypress.Commands.add('multimount', (Component, props) => {
       extraProps[key] = propValue;
       children.push(
         <div
+          key={`${key}-${propValue}`}
           style={{
             /* stylelint-disable-next-line property-disallowed-list */
             padding: 10,
