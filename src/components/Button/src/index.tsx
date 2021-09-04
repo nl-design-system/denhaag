@@ -4,6 +4,7 @@ import BaseProps from '@gemeente-denhaag/baseprops';
 import { classes } from './bem-mapping';
 import './mui-override.css';
 import './button.css';
+import clsx from 'clsx';
 
 export interface ButtonProps extends BaseProps {
   /**
@@ -47,6 +48,7 @@ export interface ButtonProps extends BaseProps {
  */
 export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
   const sizeClass = `denhaag-button--${props.size ?? 'medium'}`;
+  const rootClassNames = clsx(sizeClass, props.className);
   let muiVariant: ButtonTypeMap['props']['variant'] = 'contained';
 
   switch (props.variant) {
@@ -61,7 +63,7 @@ export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
   return (
     <MaterialButton
       classes={classes}
-      className={sizeClass}
+      className={rootClassNames}
       variant={muiVariant}
       onClick={props.onClick}
       disabled={props.disabled}

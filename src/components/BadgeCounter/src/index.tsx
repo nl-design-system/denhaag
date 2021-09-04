@@ -2,6 +2,7 @@ import React from 'react';
 import { DotIndicator } from '@gemeente-denhaag/dotindicator';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import './badge-counter.css';
+import clsx from 'clsx';
 
 export type BadgeCounterProps = Omit<BaseProps, 'tabIndex' | 'classes'>;
 
@@ -11,8 +12,9 @@ export type BadgeCounterProps = Omit<BaseProps, 'tabIndex' | 'classes'>;
  * @constructor Constructs an instance of Badge.
  */
 export const BadgeCounter: React.FC<BadgeCounterProps> = (props: BadgeCounterProps) => {
+  const rootClassNames = clsx('denhaag-badge-counter', props.className);
   return (
-    <div id={props.id} className={'denhaag-badge-counter'}>
+    <div id={props.id} className={rootClassNames}>
       <DotIndicator overlap={'rectangle'}>
         <div className={'denhaag-badge-counter__counter'}>{props.children}</div>
       </DotIndicator>
