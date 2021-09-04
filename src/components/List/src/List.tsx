@@ -11,7 +11,7 @@ import './listitemicon.css';
 import './listitemtext.css';
 import './listsubheader.css';
 
-export interface ListProps extends BaseProps {
+export interface ListProps extends Omit<BaseProps, 'classes'> {
   /**
    * The content of the subheader, normally `ListSubheader`.
    */
