@@ -3,7 +3,7 @@ import BaseDataDisplayProps from '@gemeente-denhaag/basedatadisplayprops';
 import './paragraph.css';
 import clsx from 'clsx';
 
-export type LeadParagraphProps = BaseDataDisplayProps;
+export type LeadParagraphProps = Omit<BaseDataDisplayProps, 'classes'>;
 
 export const LeadParagraph: React.FC<LeadParagraphProps> = (props: LeadParagraphProps) => {
   const rootClassNames = clsx(
