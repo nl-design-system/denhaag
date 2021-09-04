@@ -4,7 +4,7 @@ import BaseProps from '@gemeente-denhaag/baseprops';
 
 import { timelineClasses } from './bem-mapping';
 
-export interface TimelineProps extends BaseProps {
+export interface TimelineProps extends Omit<BaseProps, 'classes'> {
   /**
    * Set the active step (zero based index). Set to -1 to disable all the steps.
    */
@@ -21,7 +21,12 @@ export interface TimelineProps extends BaseProps {
  * @param props The properties of a Timeline component.
  * @constructor Constructs an instance of Timeline.
  */
-export const Timeline: React.FC<TimelineProps> = ({ activeStep, children, id = undefined }: TimelineProps) => {
+export const Timeline: React.FC<TimelineProps> = ({
+  activeStep,
+  children,
+  id = undefined,
+  className,
+}: TimelineProps) => {
   return (
     <MaterialStepper
       activeStep={activeStep}
@@ -30,6 +35,7 @@ export const Timeline: React.FC<TimelineProps> = ({ activeStep, children, id = u
       id={id}
       nonLinear
       orientation="vertical"
+      className={className}
     >
       {children}
     </MaterialStepper>
