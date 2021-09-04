@@ -1,8 +1,8 @@
 import { FormHelperTextProps, InputLabelProps, PropTypes, SelectProps } from '@material-ui/core';
 import React from 'react';
-import { BaseClassesProps } from '@gemeente-denhaag/baseprops';
+import BaseProps from '@gemeente-denhaag/baseprops';
 
-export interface BaseTextFieldProps extends BaseClassesProps {
+export interface BaseTextFieldProps extends Omit<BaseProps, 'classes'> {
   /**
    * This prop helps users to fill forms faster, especially on mobile devices.
    * The name can be confusing, as it's more like an autofill.
