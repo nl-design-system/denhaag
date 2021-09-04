@@ -2,7 +2,7 @@ import React from 'react';
 import { Toolbar as MaterialToolbar } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
 
-export interface ToolbarProps extends BaseProps {
+export interface ToolbarProps extends Omit<BaseProps, 'classes'> {
   /**
    * The component used for the root node. Either a string to use a HTML element or a component.
    */
