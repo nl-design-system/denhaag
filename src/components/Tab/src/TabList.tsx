@@ -1,8 +1,8 @@
 import React from 'react';
 import { TabList as MaterialTabList } from '@material-ui/lab';
-import { BaseChildrenProps } from '@gemeente-denhaag/baseprops';
+import BaseProps from '@gemeente-denhaag/baseprops';
 
-export type TabListProps = BaseChildrenProps;
+export type TabListProps = Omit<BaseProps, 'classes'>;
 
 /**
  * Wraps Tab components in a single list.
