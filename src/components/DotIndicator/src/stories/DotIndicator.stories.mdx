@@ -40,7 +40,7 @@ const elementWithNotification = (<DotIndicator overlap="rectangle"><Button>Read 
       },
     }}
   >
-    {(args) => <DotIndicator overlap={"rectangle"}><Button variant={"secondary"}>Read messages</Button></DotIndicator>}
+    {(args) => <DotIndicator overlap={"rectangle"} {...args}><Button variant={"secondary"}>Read messages</Button></DotIndicator>}
   </Story>
 </Canvas>
 
@@ -71,7 +71,7 @@ const elementWithNotification = <DotIndicator overlap="circle"><Avatar>DH</Avata
     }}
   >
     {(args) => (
-      <DotIndicator overlap={"circle"}>
+      <DotIndicator overlap={"circle"} {...args}>
         <Avatar>DH</Avatar>
       </DotIndicator>
     )}
