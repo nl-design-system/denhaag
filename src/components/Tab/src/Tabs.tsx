@@ -2,7 +2,7 @@ import React from 'react';
 import { Tabs as MaterialTabs } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
 
-export interface TabsProps extends BaseProps {
+export interface TabsProps extends Omit<BaseProps, 'classes'> {
   /**
    * Callback fired when the component mounts.
    */

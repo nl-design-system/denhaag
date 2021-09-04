@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 import { Tab as MaterialTab } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
 
-export interface TabProps extends BaseProps {
+export interface TabProps extends Omit<BaseProps, 'classes'> {
   /**
    * If true, the tab will be disabled.
    */

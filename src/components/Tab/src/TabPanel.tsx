@@ -2,7 +2,7 @@ import React from 'react';
 import { TabPanel as MaterialTabPanel } from '@material-ui/lab';
 import BaseProps from '@gemeente-denhaag/baseprops';
 
-export interface TabPanelProps extends BaseProps {
+export interface TabPanelProps extends Omit<BaseProps, 'classes'> {
   /**
    * The value of the corresponding Tab.
    * Must use the index of the Tab when no value was passed to Tab
