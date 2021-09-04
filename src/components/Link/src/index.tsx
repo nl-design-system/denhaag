@@ -86,10 +86,14 @@ export const Link: React.FC<LinkProps> = ({
   tabIndex = 0,
   ...props
 }: LinkProps) => {
-  const anchorClassName = clsx('denhaag-link', {
-    'denhaag-link--disabled': disabled,
-    'denhaag-link--with-icon': icon !== undefined,
-  });
+  const rootClassNames = clsx(
+    'denhaag-link',
+    {
+      'denhaag-link--disabled': disabled,
+      'denhaag-link--with-icon': icon !== undefined,
+    },
+    props.className,
+  );
 
   const iconClassName = clsx('denhaag-link__icon', {
     'denhaag-link__icon--start': iconAlign === 'start',
@@ -99,7 +103,7 @@ export const Link: React.FC<LinkProps> = ({
   const iconWrapped = <span className={iconClassName}>{icon}</span>;
 
   return (
-    <a id={id} href={href} className={anchorClassName} tabIndex={disabled ? -1 : tabIndex} {...props}>
+    <a id={id} href={href} tabIndex={disabled ? -1 : tabIndex} {...props} className={rootClassNames}>
       {icon !== undefined && iconAlign === 'start' ? iconWrapped : ''}
       {children}
       {icon !== undefined && iconAlign === 'end' ? iconWrapped : ''}
