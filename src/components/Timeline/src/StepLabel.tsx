@@ -36,6 +36,7 @@ export const StepLabel: React.FC<StepLabelProps> = ({
   disabled = false,
   expanded = false,
   id = undefined,
+  className,
 }: StepLabelProps) => {
   let UpdatedStepIconComponent: React.ReactElement;
   if (StepIconComponent === undefined) {
@@ -47,11 +48,15 @@ export const StepLabel: React.FC<StepLabelProps> = ({
     UpdatedStepIconComponent.props = { ...StepIconComponent.props, ...StepIconProps };
   }
 
-  const classes = clsx('denhaag-timeline__step-label', {
-    'denhaag-timeline__step-label--active': active || expanded,
-    'denhaag-timeline__step-label--disabled': disabled,
-    'denhaag-timeline__step-label--completed': completed,
-  });
+  const classes = clsx(
+    'denhaag-timeline__step-label',
+    {
+      'denhaag-timeline__step-label--active': active || expanded,
+      'denhaag-timeline__step-label--disabled': disabled,
+      'denhaag-timeline__step-label--completed': completed,
+    },
+    className,
+  );
 
   return (
     <div id={id} className={classes}>

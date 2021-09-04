@@ -4,6 +4,7 @@ import { StepContent as MaterialStepContent } from '@material-ui/core';
 
 import { StepComponentProps } from './StepComponentProps';
 import { stepContentClass } from './bem-mapping';
+import clsx from 'clsx';
 
 export interface StepContentProps extends StepComponentProps {
   /**
@@ -44,14 +45,16 @@ export const StepContent: React.FC<StepContentProps> = ({
   id = undefined,
   ...props
 }: StepContentProps) => {
+  const rootClassNames = clsx(stepContentClass, props.className);
+
   return (
     <MaterialStepContent
       id={id}
-      className={stepContentClass}
       TransitionComponent={TransitionComponent}
       TransitionProps={TransitionProps}
       transitionDuration={transitionDuration}
       {...props}
+      className={rootClassNames}
     >
       {children}
     </MaterialStepContent>
