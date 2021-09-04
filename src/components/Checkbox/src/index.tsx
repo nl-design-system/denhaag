@@ -1,11 +1,11 @@
 import React from 'react';
 import clsx from 'clsx';
-import { BaseClassesProps } from '@gemeente-denhaag/baseprops';
+import BaseProps from '@gemeente-denhaag/baseprops';
 import { CheckedIcon, UncheckedBoxIcon } from '@gemeente-denhaag/icons';
 
 import './checkbox.css';
 
-export interface CheckboxProps extends BaseClassesProps {
+export interface CheckboxProps extends Omit<BaseProps, 'classes'> {
   /**
    * If `true` the Checkbox is checked.
    * See https://github.com/mui-org/material-ui/blob/master/docs/src/pages/components/checkboxes/Checkboxes.tsx
@@ -50,11 +50,15 @@ export const Checkbox: React.FC<CheckboxProps> = ({
   ...props
 }: CheckboxProps) => {
   const [isChecked, setChecked] = React.useState(checked);
-  const rootStyles = clsx('denhaag-checkbox', {
-    'denhaag-checkbox--error': props.error,
-    'denhaag-checkbox--checked': isChecked,
-    'denhaag-checkbox--disabled': props.disabled,
-  });
+  const rootStyles = clsx(
+    'denhaag-checkbox',
+    {
+      'denhaag-checkbox--error': props.error,
+      'denhaag-checkbox--checked': isChecked,
+      'denhaag-checkbox--disabled': props.disabled,
+    },
+    props.className,
+  );
 
   const icon = isChecked ? checkedIcon : uncheckedIcon;
 
