@@ -44,7 +44,7 @@ import readme from "../../README.md";
     {(args) => (
       <FormControlLabel
         label="Checkbox"
-        control={<Checkbox onChange={action("Checkbox action")}></Checkbox>}
+        control={<Checkbox onChange={action("Checkbox action")} {...args}></Checkbox>}
       ></FormControlLabel>
     )}
   </Story>
@@ -67,7 +67,7 @@ const ReactCheckBox = <Checkbox onChange={() => {}}></Checkbox>;
       },
     }}
   >
-    {(args) => <Checkbox onChange={action("Checkbox action")}></Checkbox>}
+    {(args) => <Checkbox onChange={action("Checkbox action")} {...args}></Checkbox>}
   </Story>
 </Canvas>
 
@@ -138,15 +138,15 @@ const ReactCheckBox = <Checkbox onChange={() => {}}></Checkbox>;
       <FormGroup label="Label" helperText="You can show errors" error>
         <FormControlLabel
           label="Checkbox"
-          control={<Checkbox error checked onChange={action("Checkbox action")}></Checkbox>}
+          control={<Checkbox error checked onChange={action("Checkbox action")} {...args}></Checkbox>}
         ></FormControlLabel>
         <FormControlLabel
           label="Checkbox"
-          control={<Checkbox onChange={action("Checkbox action")}></Checkbox>}
+          control={<Checkbox onChange={action("Checkbox action")} {...args}></Checkbox>}
         ></FormControlLabel>
         <FormControlLabel
           label="Checkbox"
-          control={<Checkbox onChange={action("Checkbox action")}></Checkbox>}
+          control={<Checkbox onChange={action("Checkbox action")} {...args}></Checkbox>}
         ></FormControlLabel>
       </FormGroup>
     )}
@@ -159,15 +159,15 @@ const ReactCheckBox = <Checkbox onChange={() => {}}></Checkbox>;
       <FormGroup label="Label" helperText="Disabled checkboxes">
         <FormControlLabel
           label="Checkbox"
-          control={<Checkbox disabled checked onChange={action("Checkbox action")}></Checkbox>}
+          control={<Checkbox disabled checked onChange={action("Checkbox action")} {...args}></Checkbox>}
         ></FormControlLabel>
         <FormControlLabel
           label="Checkbox"
-          control={<Checkbox disabled onChange={action("Checkbox action")}></Checkbox>}
+          control={<Checkbox disabled onChange={action("Checkbox action")} {...args}></Checkbox>}
         ></FormControlLabel>
         <FormControlLabel
           label="Checkbox"
-          control={<Checkbox onChange={action("Checkbox action")}></Checkbox>}
+          control={<Checkbox onChange={action("Checkbox action")} {...args}></Checkbox>}
         ></FormControlLabel>
       </FormGroup>
     )}
