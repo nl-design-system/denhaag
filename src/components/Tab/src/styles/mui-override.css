@@ -1,0 +1,12 @@
+.denhaag-tabs {
+  min-height: 0;
+}
+
+.denhaag-tab {
+  min-height: 0;
+  text-transform: none;
+}
+
+.denhaag-tab-text {
+  line-height: normal;
+}
