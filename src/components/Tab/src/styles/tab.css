@@ -1,3 +1,7 @@
 .denhaag-tab {
-  border-bottom: 2px solid var(--denhaag-color-grey-2);
+  padding-block-start: 8px;
+  padding-inline-start: 16px;
+  padding-block-end: 8px;
+  padding-inline-end: 16px;
+  font-size: var(--denhaag-tab-font-size, 16px);
 }

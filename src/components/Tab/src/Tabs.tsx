@@ -2,6 +2,7 @@ import React from 'react';
 import { Tabs as MaterialTabs } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import './styles/tabs.css';
+import clsx from 'clsx';
 
 export interface TabsProps extends Omit<BaseProps, 'classes'> {
   /**
@@ -102,8 +103,9 @@ export interface TabsProps extends Omit<BaseProps, 'classes'> {
  * @constructor Constructs an instance of Tabs.
  */
 export const Tabs: React.FC<TabsProps> = (props: TabsProps) => {
+  const rootClassNames = clsx('denhaag-tab', props.className);
   return (
-    <MaterialTabs classes={{ indicator: 'denhaag-tab-indicator' }} {...props}>
+    <MaterialTabs classes={{ indicator: 'denhaag-tab-indicator' }} {...props} className={rootClassNames}>
       {props.children}
     </MaterialTabs>
   );

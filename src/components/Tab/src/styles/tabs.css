@@ -1,3 +1,7 @@
+.denhaag-tabs {
+  border-bottom: 2px solid grey;
+}
+
 .denhaag-tab-indicator {
   background-color: var(--denhaag-color-blue-3);
   height: var(--denhaag-tab-indicator-height, 2px);

@@ -2,6 +2,7 @@ import React, { ReactElement } from 'react';
 import { Tab as MaterialTab } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import './styles/tab.css';
+import './styles/mui-override.css';
 import clsx from 'clsx';
 
 export interface TabProps extends Omit<BaseProps, 'classes'> {
@@ -50,7 +51,7 @@ export interface TabProps extends Omit<BaseProps, 'classes'> {
  */
 export const Tab: React.FC<TabProps> = (props: TabProps) => {
   const rootClassNames = clsx('denhaag-tab', props.className);
-  return <MaterialTab {...props} className={rootClassNames} />;
+  return <MaterialTab {...props} classes={{ wrapper: 'denhaag-tab-text' }} className={rootClassNames} />;
 };
 
 export default Tab;
