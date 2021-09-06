@@ -54,7 +54,7 @@ export const Alerts: React.FC<AlertsProps> = ({
   supportIcon,
   className,
 }: AlertsProps) => {
-  const rootClassNames = clsx(`denhaag-alert denhaag-alert--${variant}`, className);
+  const rootClassNames = clsx('denhaag-alert', `denhaag-alert--${variant}`, className);
   let icon;
 
   if (supportIcon !== undefined) {

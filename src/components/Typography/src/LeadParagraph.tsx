@@ -7,7 +7,9 @@ export type LeadParagraphProps = Omit<BaseDataDisplayProps, 'classes'>;
 
 export const LeadParagraph: React.FC<LeadParagraphProps> = (props: LeadParagraphProps) => {
   const rootClassNames = clsx(
-    'utrecht-paragraph utrecht-paragraph--lead utrecht-paragraph--distanced',
+    'utrecht-paragraph',
+    'utrecht-paragraph--lead',
+    'utrecht-paragraph--distanced',
     props.className,
   );
   return <p className={rootClassNames}>{props.children}</p>;
