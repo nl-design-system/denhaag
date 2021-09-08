@@ -39,7 +39,7 @@ export interface CardProps extends Omit<BaseProps, 'classes'> {
   /**
    * Determines the url the card points to
    */
-  href: string;
+  href?: string;
 }
 
 /**
@@ -58,8 +58,11 @@ export const Card: React.FC<CardProps> = (props: CardProps) => {
     </a>
   );
 
-  const onClick = () => {
-    if (linkRef.current !== null) {
+  const onClick = (event: React.MouseEvent<HTMLDivElement>) => {
+    if (typeof props.onClick === 'function') {
+      props.onClick(event);
+      event.preventDefault();
+    } else if (linkRef.current !== null) {
       linkRef.current.click();
     }
   };
