@@ -62,6 +62,7 @@ export const Card: React.FC<CardProps> = (props: CardProps) => {
     if (typeof props.onClick === 'function') {
       props.onClick(event);
       event.preventDefault();
+      event.stopPropagation();
     } else if (linkRef.current !== null) {
       linkRef.current.click();
     }
