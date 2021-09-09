@@ -1,8 +1,8 @@
 .denhaag-tabs__container {
-  border-bottom: 2px solid var(--denhaag-color-grey-2);
+  border-bottom: var(--denhaag-tabs-border-width) var(--denhaag-tabs-border-style) var(--denhaag-tabs-border-color);
 }
 
 .denhaag-tabs__tab-indicator {
-  background-color: var(--denhaag-color-blue-3);
-  height: var(--denhaag-tab-indicator-height, 2px);
+  background-color: var(--denhaag-tabs-tab-indicator-border-color);
+  height: var(--denhaag-tabs-tab-indicator-border-width);
 }

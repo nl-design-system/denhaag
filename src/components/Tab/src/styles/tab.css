@@ -1,14 +1,15 @@
 .denhaag-tabs__tab {
-  padding-block-start: 8px;
-  padding-inline-start: 16px;
-  padding-block-end: 8px;
-  padding-inline-end: 16px;
-  font-size: var(--denhaag-tab-font-size, 16px);
-  color: var(--denhaag-tab-color, var(--denhaag-color-grey-4));
-  font-weight: 400;
+  padding-block-start: var(--denhaag-tabs-tab-padding-block-start);
+  padding-inline-start: var(--denhaag-tabs-tab-padding-inline-start);
+  padding-block-end: var(--denhaag-tabs-tab-padding-block-end);
+  padding-inline-end: var(--denhaag-tabs-tab-padding-inline-end);
+  color: var(--denhaag-tabs-tab-color);
+  font-size: var(--denhaag-tabs-tab-font-size);
+  font-weight: var(--denhaag-tabs-tab-font-weight);
+  font-family: var(--denhaag-tabs-tab-font-family);
   line-height: 1.5;
 }
 
 .denhaag-tabs__tab.denhaag-tabs__tab--selected {
-  font-weight: 700;
+  font-weight: var(--denhaag-tabs-tab-selected-font-weight);
 }
