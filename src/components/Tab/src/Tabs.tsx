@@ -103,9 +103,17 @@ export interface TabsProps extends Omit<BaseProps, 'classes'> {
  * @constructor Constructs an instance of Tabs.
  */
 export const Tabs: React.FC<TabsProps> = (props: TabsProps) => {
-  const rootClassNames = clsx('denhaag-tab', props.className);
+  const rootClassNames = clsx(props.className);
   return (
-    <MaterialTabs classes={{ indicator: 'denhaag-tab-indicator' }} {...props} className={rootClassNames}>
+    <MaterialTabs
+      classes={{
+        root: 'denhaag-tabs',
+        flexContainer: 'denhaag-tabs__container',
+        indicator: 'denhaag-tabs__tab-indicator',
+      }}
+      {...props}
+      className={rootClassNames}
+    >
       {props.children}
     </MaterialTabs>
   );

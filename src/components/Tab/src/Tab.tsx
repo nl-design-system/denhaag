@@ -50,8 +50,8 @@ export interface TabProps extends Omit<BaseProps, 'classes'> {
  * @constructor Construct an instance of Tab.
  */
 export const Tab: React.FC<TabProps> = (props: TabProps) => {
-  const rootClassNames = clsx('denhaag-tab', props.className);
-  return <MaterialTab {...props} classes={{ wrapper: 'denhaag-tab-text' }} className={rootClassNames} />;
+  const rootClassNames = clsx('denhaag-tabs__tab', props.className);
+  return <MaterialTab {...props} classes={{ wrapper: 'denhaag-tab-text' }} className={rootClassNames} disableRipple />;
 };
 
 export default Tab;

@@ -2,11 +2,15 @@
   min-height: 0;
 }
 
-.denhaag-tab {
+.denhaag-tabs__tab {
   min-height: 0;
   text-transform: none;
 }
 
-.denhaag-tab-text {
+.denhaag-tabs__tab-text {
   line-height: normal;
+}
+
+.denhaag-tabs__tab-indicator {
+  transition: none;
 }
