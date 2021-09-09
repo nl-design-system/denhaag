@@ -5,6 +5,7 @@
 .denhaag-tabs__tab {
   min-height: 0;
   text-transform: none;
+  opacity: inherit;
 }
 
 .denhaag-tabs__tab-indicator {
