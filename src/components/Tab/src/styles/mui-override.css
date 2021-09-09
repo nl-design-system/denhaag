@@ -7,10 +7,6 @@
   text-transform: none;
 }
 
-.denhaag-tabs__tab-text {
-  line-height: normal;
-}
-
 .denhaag-tabs__tab-indicator {
   transition: none;
 }
