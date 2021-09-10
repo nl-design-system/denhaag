@@ -21,6 +21,12 @@
       "tab-indicator": {
         "border-color": { "value": "{denhaag.color.blue.3.value}" },
         "border-width": { "value": "2px" }
+      },
+      "tab-panel": {
+        "padding-block-start": { "value": "0" },
+        "padding-block-end": { "value": "0" },
+        "padding-inline-start": { "value": "0" },
+        "padding-inline-end": { "value": "0" }
       }
     }
   }
