@@ -1,4 +1,5 @@
 .denhaag-link {
+  position: relative;
   color: var(--denhaag-link-color);
   padding-block-start: var(--denhaag-link-padding);
   padding-block-end: var(--denhaag-link-padding);
@@ -11,6 +12,14 @@
 
 .denhaag-link--with-icon {
   text-decoration: none;
+}
+
+.denhaag-link--with-icon-start {
+  padding-inline-start: calc(var(--denhaag-link-icon-size) + var(--denhaag-link-icon-margin-start));
+}
+
+.denhaag-link--with-icon-end {
+  padding-inline-end: calc(var(--denhaag-link-icon-size) + var(--denhaag-link-icon-margin-end));
 }
 
 .denhaag-link--focus,
@@ -37,23 +46,26 @@
 }
 
 .denhaag-link__icon {
+  position: absolute;
+  top: 0;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   vertical-align: text-top;
-  height: var(--denhaag-link-icon-size);
   width: var(--denhaag-link-icon-size);
+  height: 100%;
+}
+
+.denhaag-link--with-icon-start .denhaag-link__icon {
+  left: 0;
+}
+
+.denhaag-link--with-icon-end .denhaag-link__icon {
+  right: 0;
 }
 
 .denhaag-link__icon > :first-child {
   width: inherit;
-  height: inherit;
-}
-
-.denhaag-link__icon--start {
-  margin-inline-end: var(--denhaag-link-icon-margin-start);
-}
-
-.denhaag-link__icon--end {
-  margin-inline-start: var(--denhaag-link-icon-margin-end);
+  height: var(--denhaag-link-icon-size);
+  font-size: inherit;
 }
