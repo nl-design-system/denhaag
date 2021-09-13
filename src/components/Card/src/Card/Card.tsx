@@ -40,13 +40,23 @@ export interface CardProps extends Omit<BaseProps, 'classes'> {
    * Determines the url the card points to
    */
   href?: string;
+
+  /**
+   * Set to false to indicate an archived or inactive item
+   */
+  active?: boolean;
 }
 
 /**
  * Primary UI component for user interaction
  */
-export const Card: React.FC<CardProps> = (props: CardProps) => {
-  const rootClassNames = clsx(cardClasses.root, props.variant === 'case' && cardCaseClasses.root, props.className);
+export const Card: React.FC<CardProps> = ({ active = true, ...props }: CardProps) => {
+  const rootClassNames = clsx(
+    cardClasses.root,
+    props.variant === 'case' && cardCaseClasses.root,
+    active === false && 'denhaag-card--inactive',
+    props.className,
+  );
   const arrowClasses = cardArrowClasses;
   const titleClasses = cardTitleClasses;
   const subtitleClasses = cardSubtitleClasses;
