@@ -62,7 +62,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Download storybook
+      - uses: actions/checkout@v2
+      
+      - name: Download storybook artifact
         uses: actions/download-artifact@v2
         with:
           name: storybook
