@@ -28,7 +28,7 @@ describe(`Card tests`, () => {
   it('a11y and snapshots', () => {
     cy.snapshots(
       <Card {...props} />,
-      { variant: ['case'] },
+      { variant: 'case' },
       {
         selector: '.denhaag-card',
         states: {

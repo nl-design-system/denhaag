@@ -54,11 +54,16 @@ Cypress.Commands.add('multimount', (Component, props) => {
 });
 
 Cypress.Commands.add('snapshots', (Component, props, extraClasses, knownIssues = []) => {
-  if (extraClasses && extraClasses.selector && extraClasses.states) {
-    Object.keys(extraClasses.states).forEach((state) => {
-      cy.multimount(Component, props);
-      cy.get(extraClasses.selector).invoke('addClass', extraClasses.states[state]);
-      cy.get('#wrapper').toMatchImageSnapshot({ name: `${Component.type.name}--${state}` });
+  if (extraClasses) {
+    const extraClassesArray = Array.isArray(extraClasses) ? extraClasses : [extraClasses];
+    extraClassesArray.forEach((e) => {
+      if (e.states && e.selector) {
+        Object.keys(e.states).forEach((state) => {
+          cy.multimount(Component, props);
+          cy.get(e.selector).invoke('addClass', e.states[state]);
+          cy.get('#wrapper').toMatchImageSnapshot({ name: `${Component.type.name}--${state}` });
+        });
+      }
     });
   }
 
@@ -74,7 +79,7 @@ Cypress.Commands.add('snapshots', (Component, props, extraClasses, knownIssues =
         'warn',
         `${Cypress.env('CICD') ? '::warning::' : '\x1b[33m    ! '}Disabled "${issue.id}" rule for ${
           Component.type.name
-        }: known issue (${pkg.bugs}/${issue.issue})`,
+        }${issue.issue ? ` : known issue (${pkg.bugs}/${issue.issue})` : ''}`,
       );
       return { id: issue.id, reviewOnFail: true };
     }),
