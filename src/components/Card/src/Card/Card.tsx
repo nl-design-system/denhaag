@@ -44,17 +44,17 @@ export interface CardProps extends Omit<BaseProps, 'classes'> {
   /**
    * Set to false to indicate an archived or inactive item
    */
-  active?: boolean;
+  archived?: boolean;
 }
 
 /**
  * Primary UI component for user interaction
  */
-export const Card: React.FC<CardProps> = ({ active = true, ...props }: CardProps) => {
+export const Card: React.FC<CardProps> = ({ archived = false, ...props }: CardProps) => {
   const rootClassNames = clsx(
     cardClasses.root,
     props.variant === 'case' && cardCaseClasses.root,
-    active === false && 'denhaag-card--inactive',
+    archived === true && 'denhaag-card--archived',
     props.className,
   );
   const arrowClasses = cardArrowClasses;

@@ -212,8 +212,8 @@
   transform: rotateX(-20deg);
 }
 
-.denhaag-card--case.denhaag-card--inactive {
-  --denhaag-card-case-primary-background-color: var(--denhaag-card-case-inactive-primary-background-color);
-  --denhaag-card-case-secondary-background-color: var(--denhaag-card-case-inactive-secondary-background-color);
-  --denhaag-card-case-color: var(--denhaag-card-case-inactive-color);
+.denhaag-card--case.denhaag-card--archived {
+  --denhaag-card-case-primary-background-color: var(--denhaag-card-case-archived-primary-background-color);
+  --denhaag-card-case-secondary-background-color: var(--denhaag-card-case-archived-secondary-background-color);
+  --denhaag-card-case-color: var(--denhaag-card-case-archived-color);
 }
