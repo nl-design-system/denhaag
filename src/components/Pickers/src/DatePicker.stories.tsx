@@ -9,6 +9,9 @@ export default {
   title: 'Components/Input/DatePicker',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    status: {
+      type: 'WORK IN PROGRESS',
+    },
   },
   component: DatePicker,
 } as Meta;

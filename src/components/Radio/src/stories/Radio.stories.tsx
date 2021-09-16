@@ -15,6 +15,9 @@ export default {
         type: 'dynamic',
       },
     },
+    status: {
+      type: 'WORK IN PROGRESS',
+    },
   },
   component: Radio,
 } as Meta;

@@ -2,7 +2,7 @@ import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { ChevronDownIcon } from '@gemeente-denhaag/icons';
 import { Paragraph } from '@gemeente-denhaag/typography';
-import Accordion, { AccordionSummary, AccordionDetails, AccordionProps } from '.';
+import Accordion, { AccordionDetails, AccordionProps, AccordionSummary } from '.';
 import pkg from '../package.json';
 
 export default {
@@ -13,6 +13,9 @@ export default {
       source: {
         type: 'dynamic',
       },
+    },
+    status: {
+      type: 'WORK IN PROGRESS',
     },
   },
   component: Accordion,
@@ -34,17 +37,17 @@ const Template: Story<AccordionProps> = (args: AccordionProps) => (
 
 // language=JS
 const defaultCode = `
-<Accordion>
-  <AccordionSummary expandIcon={<ExpandMore/>}>
-    <Paragraph>Click me to collapse me!</Paragraph>
-  </AccordionSummary>
-  <AccordionDetails>
-    <Paragraph>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo
-      lobortis eget.
-    </Paragraph>
-  </AccordionDetails>
-</Accordion>
+  <Accordion>
+    <AccordionSummary expandIcon={<ExpandMore/>}>
+      <Paragraph>Click me to collapse me!</Paragraph>
+    </AccordionSummary>
+    <AccordionDetails>
+      <Paragraph>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo
+        lobortis eget.
+      </Paragraph>
+    </AccordionDetails>
+  </Accordion>
 `;
 
 /**
@@ -61,18 +64,18 @@ Default.parameters = {
 
 // language=JS
 const defaultExpandedCode = `
-<Accordion defaultExpanded>
-  <AccordionSummary expandIcon={<ExpandMore/>}>
-    <Paragraph>Click me to collapse me!</Paragraph>
-  </AccordionSummary>
-  <AccordionDetails>
-    <Paragraph>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
-      leo
-      lobortis eget.
-    </Paragraph>
-  </AccordionDetails>
-</Accordion>
+  <Accordion defaultExpanded>
+    <AccordionSummary expandIcon={<ExpandMore/>}>
+      <Paragraph>Click me to collapse me!</Paragraph>
+    </AccordionSummary>
+    <AccordionDetails>
+      <Paragraph>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+        leo
+        lobortis eget.
+      </Paragraph>
+    </AccordionDetails>
+  </Accordion>
 `;
 
 /**
@@ -93,18 +96,18 @@ DefaultExpanded.parameters = {
 
 // language=JS
 const disabledCode = `
-<Accordion disabled>
-  <AccordionSummary expandIcon={<ExpandMore/>}>
-    <Paragraph>Click me to collapse me!</Paragraph>
-  </AccordionSummary>
-  <AccordionDetails>
-    <Paragraph>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
-      leo
-      lobortis eget.
-    </Paragraph>
-  </AccordionDetails>
-</Accordion>
+  <Accordion disabled>
+    <AccordionSummary expandIcon={<ExpandMore/>}>
+      <Paragraph>Click me to collapse me!</Paragraph>
+    </AccordionSummary>
+    <AccordionDetails>
+      <Paragraph>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+        leo
+        lobortis eget.
+      </Paragraph>
+    </AccordionDetails>
+  </Accordion>
 `;
 
 /**
@@ -126,18 +129,18 @@ Disabled.parameters = {
 
 // language=JS
 const squaredCode = `
-<Accordion square>
-  <AccordionSummary expandIcon={<ExpandMore/>}>
-    <Paragraph>Click me to collapse me!</Paragraph>
-  </AccordionSummary>
-  <AccordionDetails>
-    <Paragraph>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
-      leo
-      lobortis eget.
-    </Paragraph>
-  </AccordionDetails>
-</Accordion>
+  <Accordion square>
+    <AccordionSummary expandIcon={<ExpandMore/>}>
+      <Paragraph>Click me to collapse me!</Paragraph>
+    </AccordionSummary>
+    <AccordionDetails>
+      <Paragraph>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+        leo
+        lobortis eget.
+      </Paragraph>
+    </AccordionDetails>
+  </Accordion>
 `;
 
 /**

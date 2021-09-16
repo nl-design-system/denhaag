@@ -1,14 +1,20 @@
-import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/addon-docs";
-import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+import { ArgsTable, Canvas, Description, Meta, Story } from '@storybook/addon-docs';
+import { DesignTokenDocBlock } from 'storybook-design-token/dist/doc-blocks';
 
-import { Menu, MenuButton, MenuButtonExpandable } from ".";
-import pkg from "../package.json";
-import readme from "../README.md";
+import { Menu, MenuButton, MenuButtonExpandable } from '.';
+import pkg from '../package.json';
+import readme from '../README.md';
 
 <Meta
   title="Components/Navigation/MenuButton"
   component={(MenuButton, MenuButtonExpandable)}
-  parameters={{ componentSubtitle: `${pkg.name} - ${pkg.version}`, docs: { source: { type: "dynamic" } } }}
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: 'WORK IN PROGRESS',
+    },
+  }}
 />
 
 <Description markdown={readme} />
@@ -30,9 +36,9 @@ import readme from "../README.md";
         source: {
           code: `
           import { MenuButton } from "@gemeente-denhaag/menubutton";
-          const ReactMenuButton = <MenuButton href='https://github.com/nl-design-system/denhaag' variant='normal'>Label</MenuButton>};`,
-        },
+          const ReactMenuButton = <MenuButton href="https://github.com/nl-design-system/denhaag" variant="normal">Label</MenuButton>};`,
       },
+    },
     }}
   >
     {(args) => <MenuButton {...args}>Label</MenuButton>}
@@ -52,8 +58,8 @@ import readme from "../README.md";
           code: `
           import { MenuButtonExpandable } from "@gemeente-denhaag/menubutton";
           const ReactMenuButton = <MenuButtonExpandable variant='expandable' onclick={() => alert('Hello from MenuButton 👋')}>Label</MenuButtonExpandable>;`,
-        },
       },
+    },
     }}
   >
     {(args) => <MenuButtonExpandable onclick={() => alert("Hello from MenuButton 👋")}>Label</MenuButtonExpandable>}
@@ -70,7 +76,7 @@ import readme from "../README.md";
       docs: {
         source: {
           code: `
-            <Menu id='menu-id' >
+            <Menu id="menu-id" >
               <MenuButton href="https://github.com/nl-design-system/denhaag">
                 Label
               </MenuButton>

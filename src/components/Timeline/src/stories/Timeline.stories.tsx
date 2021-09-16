@@ -13,6 +13,9 @@ export default {
         type: 'code',
       },
     },
+    status: {
+      type: 'WORK IN PROGRESS',
+    },
   },
   component: Timeline,
 } as Meta;

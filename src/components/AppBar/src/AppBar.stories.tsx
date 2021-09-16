@@ -17,6 +17,9 @@ export default {
         type: 'dynamic',
       },
     },
+    status: {
+      type: 'WORK IN PROGRESS',
+    },
   },
   component: AppBar,
 } as Meta;
@@ -37,15 +40,15 @@ const Template: Story<AppBarProps> = (args: AppBarProps) => {
 
 // language=JS
 const defaultCode = `
-<AppBar position='relative'>
-  <Toolbar>
-    <IconButton aria-label="menu">
-      <HamburgerIcon/>
-    </IconButton>
-    <Heading5>News</Heading5>
-  </Toolbar>
-  <Button>I am a button!</Button>
-</AppBar>
+  <AppBar position='relative'>
+    <Toolbar>
+      <IconButton aria-label="menu">
+        <HamburgerIcon/>
+      </IconButton>
+      <Heading5>News</Heading5>
+    </Toolbar>
+    <Button>I am a button!</Button>
+  </AppBar>
 `;
 
 /**
@@ -66,15 +69,15 @@ Default.parameters = {
 
 // language=JS
 const staticCode = `
-<AppBar position='static'>
-  <Toolbar>
-    <IconButton aria-label="menu">
-      <HamburgerIcon/>
-    </IconButton>
-    <Heading5>News</Heading5>
-  </Toolbar>
-  <Button>I am a button!</Button>
-</AppBar>
+  <AppBar position='static'>
+    <Toolbar>
+      <IconButton aria-label="menu">
+        <HamburgerIcon/>
+      </IconButton>
+      <Heading5>News</Heading5>
+    </Toolbar>
+    <Button>I am a button!</Button>
+  </AppBar>
 `;
 
 /**
@@ -95,15 +98,15 @@ StaticPosition.parameters = {
 
 // language=JS
 const secondaryCode = `
-<AppBar position='static' color={'secondary'}>
-  <Toolbar>
-    <IconButton aria-label="menu">
-      <HamburgerIcon/>
-    </IconButton>
-    <Heading5>News</Heading5>
-  </Toolbar>
-  <Button>I am a button!</Button>
-</AppBar>
+  <AppBar position='static' color={'secondary'}>
+    <Toolbar>
+      <IconButton aria-label="menu">
+        <HamburgerIcon/>
+      </IconButton>
+      <Heading5>News</Heading5>
+    </Toolbar>
+    <Button>I am a button!</Button>
+  </AppBar>
 `;
 
 /**

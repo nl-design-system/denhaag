@@ -1,16 +1,21 @@
-import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/addon-docs";
-import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
-import { Paragraph } from "@gemeente-denhaag/typography";
-import { ArrowLeftIcon, ArrowRightIcon } from "@gemeente-denhaag/icons";
+import { ArgsTable, Canvas, Description, Meta, Story } from '@storybook/addon-docs';
+import { DesignTokenDocBlock } from 'storybook-design-token/dist/doc-blocks';
+import { Paragraph } from '@gemeente-denhaag/typography';
+import { ArrowLeftIcon, ArrowRightIcon } from '@gemeente-denhaag/icons';
 
-import { Link } from ".";
-import pkg from "../package.json";
-import readme from "../README.md";
+import { Link } from '.';
+import pkg from '../package.json';
+import readme from '../README.md';
 
 <Meta
   title="Components/Navigation/Link"
   component={Link}
-  parameters={{ componentSubtitle: `${pkg.name} - ${pkg.version}` }}
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    status: {
+      type: 'WORK IN PROGRESS',
+    },
+  }}
 />
 
 <Description markdown={readme} />
