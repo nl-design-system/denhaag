@@ -1,15 +1,21 @@
-import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/addon-docs";
-import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
-import { Avatar } from "@gemeente-denhaag/avatar";
-import Button from "@gemeente-denhaag/button";
-import { DotIndicator } from "..";
-import pkg from "../../package.json";
-import readme from "../../README.md";
+import { ArgsTable, Canvas, Description, Meta, Story } from '@storybook/addon-docs';
+import { DesignTokenDocBlock } from 'storybook-design-token/dist/doc-blocks';
+import { Avatar } from '@gemeente-denhaag/avatar';
+import Button from '@gemeente-denhaag/button';
+import { DotIndicator } from '..';
+import pkg from '../../package.json';
+import readme from '../../README.md';
 
 <Meta
   title="Components/Data Display/Dot indicator"
   component={DotIndicator}
-  parameters={{ componentSubtitle: `${pkg.name} - ${pkg.version}`, docs: { source: { type: "dynamic" } } }}
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: 'ALPHA',
+    },
+  }}
 />
 
 <Description markdown={readme} />
@@ -40,7 +46,8 @@ const elementWithNotification = (<DotIndicator overlap="rectangle"><Button>Read 
       },
     }}
   >
-    {(args) => <DotIndicator overlap={"rectangle"} {...args}><Button variant={"secondary"}>Read messages</Button></DotIndicator>}
+    {(args) => <DotIndicator overlap={"rectangle"} {...args}><Button variant={"secondary"}>Read
+      messages</Button></DotIndicator>}
   </Story>
 </Canvas>
 

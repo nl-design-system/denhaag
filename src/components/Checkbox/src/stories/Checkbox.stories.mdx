@@ -1,17 +1,23 @@
-import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/addon-docs";
-import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
-import { action } from "@storybook/addon-actions";
+import { Canvas, Description, Meta, Story } from '@storybook/addon-docs';
+import { DesignTokenDocBlock } from 'storybook-design-token/dist/doc-blocks';
+import { action } from '@storybook/addon-actions';
 
-import { Checkbox } from "..";
-import { FormControlLabel } from "../../../FormControlLabel";
-import { FormGroup } from "../../../FormGroup";
-import pkg from "../../package.json";
-import readme from "../../README.md";
+import { Checkbox } from '..';
+import { FormControlLabel } from '../../../FormControlLabel';
+import { FormGroup } from '../../../FormGroup';
+import pkg from '../../package.json';
+import readme from '../../README.md';
 
 <Meta
   title="Components/Input/Checkbox"
   component={Checkbox}
-  parameters={{ componentSubtitle: `${pkg.name} - ${pkg.version}`, docs: { source: { type: "dynamic" } } }}
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: 'WORK IN PROGRESS',
+    },
+  }}
 />
 
 <Description markdown={readme} />

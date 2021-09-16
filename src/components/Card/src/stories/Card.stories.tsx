@@ -7,6 +7,9 @@ export default {
   title: 'Components/Cards/Card',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    status: {
+      type: 'ALPHA',
+    },
   },
   component: Card,
 } as Meta;

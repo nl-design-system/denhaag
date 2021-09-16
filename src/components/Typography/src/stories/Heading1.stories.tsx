@@ -12,6 +12,9 @@ export default {
         type: 'dynamic',
       },
     },
+    status: {
+      type: 'ALPHA',
+    },
   },
   component: Heading1,
 } as Meta;

@@ -12,6 +12,9 @@ export default {
         type: 'dynamic',
       },
     },
+    status: {
+      type: 'WORK IN PROGRESS',
+    },
   },
   component: Avatar,
 } as Meta;
