@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Button from '../src/index';
-import { ChevronRightIcon } from '@gemeente-denhaag/icons';
+import { ChevronRightIcon } from '../../Icons';
 
 describe('Button tests', () => {
   // Starting with functionality tests
@@ -63,8 +63,8 @@ describe('Button tests', () => {
         Test button
       </Button>,
       {
-        variant: ['secondary-action'],
-        size: ['large'],
+        variant: 'secondary-action',
+        size: 'large',
         disabled: true,
       },
       {
