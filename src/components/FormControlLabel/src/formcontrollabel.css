@@ -15,17 +15,20 @@
   margin-inline-start: var(--denhaag-form-control-label-label-margin-inline-start);
 }
 
-.denhaag-form-control-label:hover {
+.denhaag-form-control-label:hover,
+.denhaag-form-control-label--hover {
   --denhaag-checkbox-normal-unchecked-color: var(--denhaag-form-control-label-hover-color);
   --denhaag-form-control-label-color: var(--denhaag-form-control-label-hover-color);
 }
 
 .denhaag-form-control-label--disabled,
-.denhaag-form-control-label--disabled:hover {
+.denhaag-form-control-label--disabled:hover,
+.denhaag-form-control-label--disabled.denhaag-form-control-label--hover {
   color: var(--denhaag-color-grey-2);
 }
 
-.denhaag-form-control-label--disabled:hover {
+.denhaag-form-control-label--disabled:hover,
+.denhaag-form-control-label--disabled.denhaag-form-control-label--hover {
   cursor: default;
 }
 
