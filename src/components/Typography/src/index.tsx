@@ -5,3 +5,4 @@ export * from './Heading4';
 export * from './Heading5';
 
 export * from './Paragraph';
+export * from './LeadParagraph';

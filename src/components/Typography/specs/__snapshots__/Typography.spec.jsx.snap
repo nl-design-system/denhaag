@@ -1,0 +1,71 @@
+exports[`Typography tests > a11y and snapshots #0`] = `
+<div id="wrapper" style="display: inline-block;">
+  <div style="padding: 10px;">
+    <h1 class="utrecht-heading-1 utrecht-heading-1--distanced">
+      This is a bit of text inside a Heading1 component.
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`Typography tests > a11y and snapshots #1`] = `
+<div id="wrapper" style="display: inline-block;">
+  <div style="padding: 10px;">
+    <h2 class="utrecht-heading-2 utrecht-heading-2--distanced">
+      This is a bit of text inside a Heading2 component.
+    </h2>
+  </div>
+</div>
+`;
+
+exports[`Typography tests > a11y and snapshots #2`] = `
+<div id="wrapper" style="display: inline-block;">
+  <div style="padding: 10px;">
+    <h3 class="utrecht-heading-3 utrecht-heading-3--distanced">
+      This is a bit of text inside a Heading3 component.
+    </h3>
+  </div>
+</div>
+`;
+
+exports[`Typography tests > a11y and snapshots #3`] = `
+<div id="wrapper" style="display: inline-block;">
+  <div style="padding: 10px;">
+    <h4 class="utrecht-heading-4 utrecht-heading-4--distanced">
+      This is a bit of text inside a Heading4 component.
+    </h4>
+  </div>
+</div>
+`;
+
+exports[`Typography tests > a11y and snapshots #4`] = `
+<div id="wrapper" style="display: inline-block;">
+  <div style="padding: 10px;">
+    <h5 class="utrecht-heading-5 utrecht-heading-5--distanced">
+      This is a bit of text inside a Heading5 component.
+    </h5>
+  </div>
+</div>
+`;
+
+exports[`Typography tests > a11y and snapshots #5`] = `
+<div id="wrapper" style="display: inline-block;">
+  <div style="padding: 10px;">
+    <p class="utrecht-paragraph utrecht-paragraph--distanced">
+      This is a bit of text inside a Paragraph component.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Typography tests > a11y and snapshots #6`] = `
+<div id="wrapper" style="display: inline-block;">
+  <div style="padding: 10px;">
+    <p
+      class="utrecht-paragraph utrecht-paragraph--lead utrecht-paragraph--distanced"
+    >
+      This is a bit of text inside a LeadParagraph component.
+    </p>
+  </div>
+</div>
+`;
