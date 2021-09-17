@@ -62,7 +62,8 @@ jobs:
         run: |
           git add -f src/components/*/specs/__snapshots__/*
           git add -f src/components/*/specs/__image_snapshots__/*
-          git push --set-upstream origin HEAD
+          git commit -m "Generated test snapshots"
+          git push
 
       - name: Upload storybook
         uses: actions/upload-artifact@v2
