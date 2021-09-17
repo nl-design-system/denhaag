@@ -65,14 +65,15 @@ module.exports = (on, config) => {
     checkImagesFolder({ name, nameOverride }) {
       if (!fs.existsSync(`test_images/${nameOverride || name}`)) {
         fs.mkdirSync(`test_images/${nameOverride || name}`, { recursive: true });
-        fs.symlinkSync(
-          `../../../../test_images/${nameOverride || name}`,
-          `src/components/${nameOverride || name}/specs/__image_snapshots__`,
-          'dir',
-        );
       }
+      if (!fs.existsSync(`src/components/${nameOverride || name}/specs/__image_snapshots__`)) {
+      fs.symlinkSync(
+        `../../../../test_images/${nameOverride || name}`,
+        `src/components/${nameOverride || name}/specs/__image_snapshots__`,
+        'dir',
+      );
       return null;
-    }
+    },
   });
 
   return config;
