@@ -2,9 +2,7 @@
   "denhaag": {
     "alert": {
       "error": {
-        "background": {
-          "color": { "value": "{denhaag.color.red.1.value}" }
-        },
+        "background-color": { "value": "{denhaag.color.red.1.value}" },
         "title": {
           "color": { "value": "{denhaag.color.red.5.value}" }
         },
@@ -17,9 +15,7 @@
         "action": {
           "button": {
             "color": { "value": "{denhaag.color.white.value}" },
-            "background": {
-              "color": { "value": "{denhaag.color.red.3.value}" }
-            },
+            "background-color": { "value": "{denhaag.color.red.3.value}" },
             "hover-background": {
               "color": { "value": "{denhaag.color.red.4.value}" }
             }
@@ -30,26 +26,22 @@
         }
       },
       "info": {
-        "background": {
-          "color": { "value": "{denhaag.color.blue.1.value}" }
-        },
+        "background-color": { "value": "{denhaag.color.blue.1.value}" },
         "title": {
           "color": { "value": "{denhaag.color.blue.5.value}" }
         },
         "paragraph": {
-          "color": { "value": "{denhaag.color.blue.4.value}" }
+          "color": { "value": "{denhaag.color.blue.5.value}" }
         },
         "icon": {
           "color": { "value": "{denhaag.color.blue.3.value}" }
         },
         "action": {
           "button": {
-            "color": { "value": "white" },
-            "background": {
-              "color": { "value": "{denhaag.color.blue.3.value}" }
-            },
-            "hover-background": {
-              "color": { "value": "{denhaag.color.blue.4.value}" }
+            "color": { "value": "{denhaag.color.white.value}" },
+            "background-color": { "value": "{denhaag.color.blue.3.value}" },
+            "hover": {
+              "background-color": { "value": "{denhaag.color.blue.4.value}" }
             }
           }
         },
@@ -58,26 +50,22 @@
         }
       },
       "success": {
-        "background": {
-          "color": { "value": "{denhaag.color.green.1.value}" }
-        },
+        "background-color": { "value": "{denhaag.color.green.1.value}" },
         "title": {
           "color": { "value": "{denhaag.color.green.5.value}" }
         },
         "paragraph": {
-          "color": { "value": "{denhaag.color.green.4.value}" }
+          "color": { "value": "{denhaag.color.green.5.value}" }
         },
         "icon": {
           "color": { "value": "{denhaag.color.green.3.value}" }
         },
         "action": {
           "button": {
-            "color": { "value": "white" },
-            "background": {
-              "color": { "value": "{denhaag.color.green.3.value}" }
-            },
-            "hover-background": {
-              "color": { "value": "{denhaag.color.green.4.value}" }
+            "color": { "value": "{denhaag.color.white.value}" },
+            "background-color": { "value": "{denhaag.color.green.3.value}" },
+            "hover": {
+              "background-color": { "value": "{denhaag.color.green.4.value}" }
             }
           }
         },
@@ -86,26 +74,22 @@
         }
       },
       "warning": {
-        "background": {
-          "color": { "value": "{denhaag.color.orange.1.value}" }
-        },
+        "background-color": { "value": "{denhaag.color.orange.1.value}" },
         "title": {
           "color": { "value": "{denhaag.color.orange.5.value}" }
         },
         "paragraph": {
-          "color": { "value": "{denhaag.color.orange.4.value}" }
+          "color": { "value": "{denhaag.color.orange.5.value}" }
         },
         "icon": {
-          "color": { "value": "{denhaag.color.orange.3.value}" }
+          "color": { "value": "{denhaag.color.orange.5.value}" }
         },
         "action": {
           "button": {
-            "color": { "value": "white" },
-            "background": {
-              "color": { "value": "{denhaag.color.orange.3.value}" }
-            },
-            "hover-background": {
-              "color": { "value": "{denhaag.color.orange.4.value}" }
+            "color": { "value": "{denhaag.color.white.value}" },
+            "background-color": { "value": "{denhaag.color.orange.5.value}" },
+            "hover": {
+              "background-color": { "value": "{denhaag.color.orange.5.value}" }
             }
           }
         },
