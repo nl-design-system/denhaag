@@ -60,7 +60,7 @@ Cypress.Commands.add('multimount', (Component, props) => {
 });
 
 Cypress.Commands.add('snapshots', (Component, props, extraClasses, knownIssues = []) => {
-  if (extraClasses) {
+  if (extraClasses && Cypress.env('CICD')) {
     const extraClassesArray = Array.isArray(extraClasses) ? extraClasses : [extraClasses];
     extraClassesArray.forEach((e) => {
       if (e.states && e.selector) {
@@ -76,7 +76,10 @@ Cypress.Commands.add('snapshots', (Component, props, extraClasses, knownIssues =
   cy.multimount(Component, props);
 
   cy.get('#wrapper').toMatchSnapshot();
-  cy.get('#wrapper').toMatchImageSnapshot({ name: Component.type.name });
+
+  if (Cypress.env('CICD')) {
+    cy.get('#wrapper').toMatchImageSnapshot({ name: Component.type.name });
+  }
 
   cy.injectAxe();
   cy.configureAxe({
