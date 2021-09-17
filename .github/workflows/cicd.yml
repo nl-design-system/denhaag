@@ -62,7 +62,7 @@ jobs:
         run: |
           git add -f src/components/*/specs/__snapshots__/*
           git add -f src/components/*/specs/__image_snapshots__/*
-          git push
+          git push --set-upstream origin HEAD
 
       - name: Upload storybook
         uses: actions/upload-artifact@v2
