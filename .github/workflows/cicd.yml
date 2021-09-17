@@ -65,8 +65,7 @@ jobs:
           git add src/components/*/specs/__image_snapshots__/*
           if git status | grep -q 'new file'
           then
-            git commit -m "build(tests): generated snapshots"
-            git push
+            echo "Not pushing atm, sorry"
           else
             echo "No new snapshots since last run"
           fi
