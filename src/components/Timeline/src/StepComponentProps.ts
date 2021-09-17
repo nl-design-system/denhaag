@@ -1,6 +1,6 @@
 import BaseProps from '@gemeente-denhaag/baseprops';
 
-export interface StepComponentProps extends BaseProps {
+export interface StepComponentProps extends Omit<BaseProps, 'classes'> {
   /**
    * Sets the step as active.
    */

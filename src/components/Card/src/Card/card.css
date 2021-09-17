@@ -211,3 +211,9 @@
 .denhaag-card--case:focus-within .denhaag-card__background {
   transform: rotateX(-20deg);
 }
+
+.denhaag-card--case.denhaag-card--archived {
+  --denhaag-card-case-primary-background-color: var(--denhaag-card-case-archived-primary-background-color);
+  --denhaag-card-case-secondary-background-color: var(--denhaag-card-case-archived-secondary-background-color);
+  --denhaag-card-case-color: var(--denhaag-card-case-archived-color);
+}

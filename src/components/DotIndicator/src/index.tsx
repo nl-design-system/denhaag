@@ -16,12 +16,16 @@ export interface DotIndicatorProps extends Omit<BaseProps, 'classes' | 'tabIndex
  * @param props The properties of a Dot Indicator component.
  */
 export const DotIndicator: React.FC<DotIndicatorProps> = (props: DotIndicatorProps) => {
-  const rootStyles = clsx('denhaag-dot-indicator', {
-    'denhaag-dot-indicator--overlap-rectangle': props.overlap === 'rectangle',
-    'denhaag-dot-indicator--overlap-circle': props.overlap === 'circle',
-  });
+  const rootClassNames = clsx(
+    'denhaag-dot-indicator',
+    {
+      'denhaag-dot-indicator--overlap-rectangle': props.overlap === 'rectangle',
+      'denhaag-dot-indicator--overlap-circle': props.overlap === 'circle',
+    },
+    props.className,
+  );
   return (
-    <span className={rootStyles} id={props.id}>
+    <span className={rootClassNames} id={props.id}>
       {props.children}
       <span className="denhaag-dot-indicator__dot"></span>
     </span>

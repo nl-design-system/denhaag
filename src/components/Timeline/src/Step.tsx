@@ -88,6 +88,7 @@ export const Step: React.FC<StepProps> = ({
       role={role}
       tabIndex={tabIndex}
       {...props}
+      className={props.className}
     >
       <StepLabel>
         {label}

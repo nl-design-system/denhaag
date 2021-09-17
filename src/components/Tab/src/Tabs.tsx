@@ -1,8 +1,11 @@
 import React from 'react';
 import { Tabs as MaterialTabs } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
+import './styles/tabs.css';
+import './styles/mui-override.css';
+import clsx from 'clsx';
 
-export interface TabsProps extends BaseProps {
+export interface TabsProps extends Omit<BaseProps, 'classes'> {
   /**
    * Callback fired when the component mounts.
    */
@@ -101,7 +104,20 @@ export interface TabsProps extends BaseProps {
  * @constructor Constructs an instance of Tabs.
  */
 export const Tabs: React.FC<TabsProps> = (props: TabsProps) => {
-  return <MaterialTabs {...props}>{props.children}</MaterialTabs>;
+  const rootClassNames = clsx(props.className);
+  return (
+    <MaterialTabs
+      classes={{
+        root: 'denhaag-tabs',
+        flexContainer: 'denhaag-tabs__container',
+        indicator: 'denhaag-tabs__tab-indicator',
+      }}
+      {...props}
+      className={rootClassNames}
+    >
+      {props.children}
+    </MaterialTabs>
+  );
 };
 
 export default Tabs;

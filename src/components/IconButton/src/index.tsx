@@ -3,6 +3,7 @@ import { IconButton as MaterialIconButton } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import './mui-override.css';
 import './iconbutton.css';
+import clsx from 'clsx';
 
 export interface IconButtonProps extends BaseProps {
   /**
@@ -22,8 +23,9 @@ export interface IconButtonProps extends BaseProps {
  * @constructor Constructs an instance of IconButton.
  */
 export const IconButton: React.FC<IconButtonProps> = ({ disabled = false, ...props }: IconButtonProps) => {
+  const rootClassNames = clsx('denhaag-icon-button', props.className);
   return (
-    <MaterialIconButton className="denhaag-icon-button" disabled={disabled} disableRipple disableFocusRipple {...props}>
+    <MaterialIconButton {...props} className={rootClassNames} disabled={disabled} disableRipple disableFocusRipple>
       {props.children}
     </MaterialIconButton>
   );

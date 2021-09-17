@@ -6,6 +6,15 @@
       },
       "case-secondary": {
         "background-color": { "value": "{denhaag.color.green.2.value}" }
+      },
+      "case-archived": {
+        "color": { "value": "{denhaag.color.grey.4.value}"},
+        "primary": {
+          "background-color":  { "value": "{denhaag.color.grey.1.value}" }
+        },
+        "secondary": {
+          "background-color": { "value": "{denhaag.color.grey.2.value}" }
+        }
       }
     }
   }

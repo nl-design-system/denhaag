@@ -1,10 +1,12 @@
 import React from 'react';
 import './menu.css';
 import BaseProps from '@gemeente-denhaag/baseprops';
+import clsx from 'clsx';
 
-export const Menu: React.FC<BaseProps> = (props: BaseProps) => {
+export const Menu: React.FC<BaseProps> = (props: Omit<BaseProps, 'classes'>) => {
+  const rootClassNames = clsx('denhaag-menu', props.className);
   return (
-    <div className="denhaag-menu" id={props.id}>
+    <div className={rootClassNames} id={props.id}>
       {props.children}
     </div>
   );

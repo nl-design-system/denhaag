@@ -1,8 +1,10 @@
 import React from 'react';
 import { TabPanel as MaterialTabPanel } from '@material-ui/lab';
 import BaseProps from '@gemeente-denhaag/baseprops';
+import clsx from 'clsx';
+import './styles/tab-panel.css';
 
-export interface TabPanelProps extends BaseProps {
+export interface TabPanelProps extends Omit<BaseProps, 'classes'> {
   /**
    * The value of the corresponding Tab.
    * Must use the index of the Tab when no value was passed to Tab
@@ -16,7 +18,12 @@ export interface TabPanelProps extends BaseProps {
  * @constructor Constructs an instance of TabPanel.
  */
 export const TabPanel: React.FC<TabPanelProps> = (props: TabPanelProps) => {
-  return <MaterialTabPanel {...props}>{props.children}</MaterialTabPanel>;
+  const rootClassNames = clsx(props.className, 'denhaag-tabs__tab-panel');
+  return (
+    <MaterialTabPanel {...props} className={rootClassNames}>
+      {props.children}
+    </MaterialTabPanel>
+  );
 };
 
 export default TabPanel;

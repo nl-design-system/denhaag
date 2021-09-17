@@ -33,5 +33,4 @@ Case.args = {
   subTitle: Default.args.subTitle,
   date: Default.args.date,
   variant: 'case',
-  href: Default.args.href,
 };

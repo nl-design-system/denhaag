@@ -4,11 +4,12 @@ import { ArrowRightIcon } from '@gemeente-denhaag/icons';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import './mui-override.css';
 import './card.css';
-import { cardClasses, cardArrowClasses, cardTitleClasses, cardSubtitleClasses, cardCaseClasses } from './bem-mapping';
+import { cardArrowClasses, cardCaseClasses, cardClasses, cardSubtitleClasses, cardTitleClasses } from './bem-mapping';
 import { CardContent } from '../CardContent/CardContent';
 import { CardActions } from '../CardActions/CardActions';
+import clsx from 'clsx';
 
-export interface CardProps extends BaseProps {
+export interface CardProps extends Omit<BaseProps, 'classes'> {
   /**
    * Callback fired when the Card is clicked.
    */
@@ -38,14 +39,24 @@ export interface CardProps extends BaseProps {
   /**
    * Determines the url the card points to
    */
-  href: string;
+  href?: string;
+
+  /**
+   * Set to false to indicate an archived or inactive item
+   */
+  archived?: boolean;
 }
 
 /**
  * Primary UI component for user interaction
  */
-export const Card: React.FC<CardProps> = (props: CardProps) => {
-  let classes;
+export const Card: React.FC<CardProps> = ({ archived = false, ...props }: CardProps) => {
+  const rootClassNames = clsx(
+    cardClasses.root,
+    props.variant === 'case' && cardCaseClasses.root,
+    archived === true && 'denhaag-card--archived',
+    props.className,
+  );
   const arrowClasses = cardArrowClasses;
   const titleClasses = cardTitleClasses;
   const subtitleClasses = cardSubtitleClasses;
@@ -57,23 +68,17 @@ export const Card: React.FC<CardProps> = (props: CardProps) => {
     </a>
   );
 
-  const onClick = () => {
-    if (linkRef.current !== null) {
+  const onClick = (event: React.MouseEvent<HTMLDivElement>) => {
+    if (typeof props.onClick === 'function') {
+      props.onClick(event);
+      event.stopPropagation();
+    } else if (linkRef.current !== null) {
       linkRef.current.click();
     }
   };
 
-  switch (props.variant) {
-    case 'case':
-      classes = cardCaseClasses;
-      break;
-    case 'basic':
-    default:
-      classes = cardClasses;
-  }
-
   return (
-    <MaterialCard classes={classes} onClick={onClick}>
+    <MaterialCard className={rootClassNames} onClick={onClick}>
       <div className="denhaag-card__wrapper">
         <div className="denhaag-card__background"></div>
         <CardContent>

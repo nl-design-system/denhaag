@@ -86,22 +86,25 @@ export const Link: React.FC<LinkProps> = ({
   tabIndex = 0,
   ...props
 }: LinkProps) => {
-  const anchorClassName = clsx('denhaag-link', {
-    'denhaag-link--disabled': disabled,
-    'denhaag-link--with-icon': icon !== undefined,
-  });
+  const rootClassNames = clsx(
+    'denhaag-link',
+    {
+      'denhaag-link--disabled': disabled,
+      'denhaag-link--with-icon': icon !== undefined,
+      'denhaag-link--with-icon-start': icon !== undefined && iconAlign === 'start',
+      'denhaag-link--with-icon-end': icon !== undefined && iconAlign === 'end',
+    },
+    props.className,
+  );
 
-  const iconClassName = clsx('denhaag-link__icon', {
-    'denhaag-link__icon--start': iconAlign === 'start',
-    'denhaag-link__icon--end': iconAlign === 'end',
-  });
+  const iconClassName = clsx('denhaag-link__icon');
 
   const iconWrapped = <span className={iconClassName}>{icon}</span>;
 
   return (
-    <a id={id} href={href} className={anchorClassName} tabIndex={disabled ? -1 : tabIndex} {...props}>
+    <a id={id} href={href} tabIndex={disabled ? -1 : tabIndex} {...props} className={rootClassNames}>
       {icon !== undefined && iconAlign === 'start' ? iconWrapped : ''}
-      {children}
+      <span>{children}</span>
       {icon !== undefined && iconAlign === 'end' ? iconWrapped : ''}
     </a>
   );

@@ -23,6 +23,11 @@ export default interface BaseProps {
    * The id attribute is used to specify a unique id for an HTML element.
    */
   id?: string;
+
+  /**
+   * Extend the styles of the component by adding new classes.
+   */
+  className?: string;
 }
 
 /**

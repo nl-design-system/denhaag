@@ -1,9 +1,9 @@
 import React from 'react';
 import { Divider as MaterialDivider } from '@material-ui/core';
-import { BaseDataDisplayClassesProps } from '@gemeente-denhaag/basedatadisplayprops';
 import './divider.css';
+import BaseProps from '@gemeente-denhaag/baseprops';
 
-export interface DividerProps extends BaseDataDisplayClassesProps {
+export interface DividerProps extends Omit<BaseProps, 'tabIndex' | 'classes' | 'children'> {
   /**
    * The divider orientation.
    */
@@ -22,7 +22,13 @@ export const Divider: React.FC<DividerProps> = (props: DividerProps) => {
   };
 
   return (
-    <MaterialDivider variant={'fullWidth'} classes={classes} role={'presentation'} orientation={props.orientation} />
+    <MaterialDivider
+      className={props.className}
+      variant={'fullWidth'}
+      classes={classes}
+      role={'presentation'}
+      orientation={props.orientation}
+    />
   );
 };
 

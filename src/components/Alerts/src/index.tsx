@@ -6,6 +6,7 @@ import { AlertTriangleIcon, CheckCircleIcon, CircleInformationIcon, CloseIcon } 
 import IconButton from '@gemeente-denhaag/iconbutton';
 
 import './alert.css';
+import clsx from 'clsx';
 
 export interface AlertsProps extends Omit<BaseProps, 'children' | 'classes' | 'tabIndex'> {
   /**
@@ -51,9 +52,9 @@ export const Alerts: React.FC<AlertsProps> = ({
   action,
   close,
   supportIcon,
+  className,
 }: AlertsProps) => {
-  const rootStyles = 'denhaag-alert denhaag-alert--' + variant;
-
+  const rootClassNames = clsx('denhaag-alert', `denhaag-alert--${variant}`, className);
   let icon;
 
   if (supportIcon !== undefined) {
@@ -76,7 +77,7 @@ export const Alerts: React.FC<AlertsProps> = ({
   }
 
   return (
-    <div id={id} className={rootStyles}>
+    <div id={id} className={rootClassNames}>
       <div className="denhaag-alert__main-content">
         <div className="denhaag-alert__icon">{icon}</div>
         <div className="denhaag-alert__content">

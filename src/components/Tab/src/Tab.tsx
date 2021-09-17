@@ -1,8 +1,10 @@
 import React, { ReactElement } from 'react';
 import { Tab as MaterialTab } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
+import './styles/tab.css';
+import clsx from 'clsx';
 
-export interface TabProps extends BaseProps {
+export interface TabProps extends Omit<BaseProps, 'classes'> {
   /**
    * If true, the tab will be disabled.
    */
@@ -47,7 +49,15 @@ export interface TabProps extends BaseProps {
  * @constructor Construct an instance of Tab.
  */
 export const Tab: React.FC<TabProps> = (props: TabProps) => {
-  return <MaterialTab {...props} />;
+  const rootClassNames = clsx('denhaag-tabs__tab', props.className);
+  return (
+    <MaterialTab
+      {...props}
+      classes={{ selected: 'denhaag-tabs__tab--selected' }}
+      className={rootClassNames}
+      disableRipple
+    />
+  );
 };
 
 export default Tab;

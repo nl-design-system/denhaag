@@ -81,9 +81,13 @@ export interface MenuButtonExpandableProps extends Omit<BaseProps, 'classes' | '
 }
 
 export const MenuButton: React.FC<MenuButtonProps> = ({ active = false, ...props }: MenuButtonProps) => {
-  const className = clsx('denhaag-menu-button', {
-    'denhaag-menu-button--active': active,
-  });
+  const className = clsx(
+    'denhaag-menu-button',
+    {
+      'denhaag-menu-button--active': active,
+    },
+    props.className,
+  );
 
   return (
     <a
@@ -109,12 +113,17 @@ export const MenuButtonExpandable: React.FC<MenuButtonProps> = ({
   active = false,
   ...props
 }: MenuButtonExpandableProps) => {
-  const className = clsx('denhaag-menu-button', 'denhaag-menu-button--expandable', {
-    'denhaag-menu-button--active': active,
-  });
+  const rootClassNames = clsx(
+    'denhaag-menu-button',
+    'denhaag-menu-button--expandable',
+    {
+      'denhaag-menu-button--active': active,
+    },
+    props.className,
+  );
 
   return (
-    <button id={props.id} onClick={props.onClick} className={className} title={props.children?.toString()}>
+    <button id={props.id} onClick={props.onClick} className={rootClassNames} title={props.children?.toString()}>
       {props.children}
       <span className="denhaag-menu-button__chevron">
         <ChevronDownIcon aria-label="ChevronDownIcon" />
