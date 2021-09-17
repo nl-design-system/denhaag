@@ -23,6 +23,8 @@ module.exports = (on, config) => {
     require('@cypress/react/plugins/react-scripts')(on, config);
   }
 
+  const fs = require('fs');
+
   const { initPlugin } = require('cypress-plugin-snapshots/plugin');
   initPlugin(on, config);
 
@@ -60,6 +62,17 @@ module.exports = (on, config) => {
       console.table(message);
       return null;
     },
+    checkImagesFolder({ name, nameOverride }) {
+      if (!fs.existsSync(`test_images/${nameOverride || name}`)) {
+        fs.mkdirSync(`test_images/${nameOverride || name}`, { recursive: true });
+        fs.symlinkSync(
+          `../../../../test_images/${nameOverride || name}`,
+          `src/components/${nameOverride || name}/specs/__image_snapshots__`,
+          'dir',
+        );
+      }
+      return null;
+    }
   });
 
   return config;

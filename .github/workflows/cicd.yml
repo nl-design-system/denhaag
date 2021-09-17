@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: ${{ github.event.pull_request.head.ref }}
+          submodules: recursive
       - name: Set up Node.js version
         uses: actions/setup-node@v2
         with:
@@ -55,17 +55,17 @@ jobs:
 
       - name: Upload test snapshots
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GIT_AUTHOR_EMAIL: ${{ secrets.GIT_AUTHOR_EMAIL }}
           GIT_AUTHOR_NAME: "NL Design System"
           GIT_COMMITTER_EMAIL: ${{ secrets.GIT_COMMITTER_EMAIL }}
           GIT_COMMITTER_NAME: "NL Design System"
         run: |
-          git add src/components/*/specs/__snapshots__/*
-          git add src/components/*/specs/__image_snapshots__/*
+          cd test_images
+          git add .
           if git status | grep -q 'new file'
           then
-            echo "Not pushing atm, sorry"
+            git commit -m "build(tests): Added test images"
+            git push https://gitlab-ci-token:${{ secrets.GITLAB_CI_TOKEN }}@gitlab.com/mjcarsjens/test_images.git master
           else
             echo "No new snapshots since last run"
           fi

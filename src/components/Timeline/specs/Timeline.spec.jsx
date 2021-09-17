@@ -83,6 +83,7 @@ describe('Timeline tests', () => {
         },
       ],
       [{ id: 'color-contrast', issue: 412 }],
+      'Timeline',
     );
   });
 });

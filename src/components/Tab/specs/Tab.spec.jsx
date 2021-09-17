@@ -27,6 +27,9 @@ describe('Tab tests', () => {
         </TabPanel>
       </TabContext>,
       {},
+      {},
+      [],
+      'Tab',
     );
   });
 });

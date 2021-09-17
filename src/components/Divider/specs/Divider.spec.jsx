@@ -10,6 +10,9 @@ describe(`Divider tests`, () => {
         <span>After Divider</span>
       </div>,
       {},
+      {},
+      [],
+      'Divider',
     );
 
     cy.snapshots(
@@ -19,6 +22,9 @@ describe(`Divider tests`, () => {
         <span>After Divider</span>
       </div>,
       {},
+      {},
+      [],
+      'Divider',
     );
   });
 });

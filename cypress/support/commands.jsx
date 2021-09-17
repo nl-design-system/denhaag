@@ -59,7 +59,11 @@ Cypress.Commands.add('multimount', (Component, props) => {
   );
 });
 
-Cypress.Commands.add('snapshots', (Component, props, extraClasses, knownIssues = []) => {
+Cypress.Commands.add('snapshots', (Component, props, extraClasses, knownIssues = [], nameOverride) => {
+  if (Cypress.env('CICD')) {
+    cy.task('checkImagesFolder', { name: Component.type.name, nameOverride: nameOverride });
+  }
+
   if (extraClasses && Cypress.env('CICD')) {
     const extraClassesArray = Array.isArray(extraClasses) ? extraClasses : [extraClasses];
     extraClassesArray.forEach((e) => {
@@ -67,7 +71,9 @@ Cypress.Commands.add('snapshots', (Component, props, extraClasses, knownIssues =
         Object.keys(e.states).forEach((state) => {
           cy.multimount(Component, props);
           cy.get(e.selector).invoke('addClass', e.states[state]);
-          cy.get('#wrapper').toMatchImageSnapshot({ name: `${Component.type.name}--${state}` });
+          cy.get('#wrapper').toMatchImageSnapshot({
+            name: `${nameOverride || Component.type.name}--${state}`,
+          });
         });
       }
     });
@@ -78,7 +84,7 @@ Cypress.Commands.add('snapshots', (Component, props, extraClasses, knownIssues =
   cy.get('#wrapper').toMatchSnapshot();
 
   if (Cypress.env('CICD')) {
-    cy.get('#wrapper').toMatchImageSnapshot({ name: Component.type.name });
+    cy.get('#wrapper').toMatchImageSnapshot({ name: nameOverride || Component.type.name });
   }
 
   cy.injectAxe();
@@ -88,7 +94,7 @@ Cypress.Commands.add('snapshots', (Component, props, extraClasses, knownIssues =
         cy.task(
           'warn',
           `${Cypress.env('CICD') ? '::warning::' : '\x1b[33m    ! '}Disabled "${issue.id}" rule for ${
-            Component.type.name
+            nameOverride || Component.type.name
           }${issue.issue ? ` : known issue (${pkg.bugs}/${issue.issue})` : ''}`,
         );
       }
