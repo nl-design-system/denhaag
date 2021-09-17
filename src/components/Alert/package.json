@@ -1,12 +1,12 @@
 {
-    "name": "@gemeente-denhaag/alerts",
-    "version": "0.1.1-alpha.29",
-    "description": "An Alerts component",
+    "name": "@gemeente-denhaag/alert",
+    "version": "0.1.0",
+    "description": "An alert component",
     "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
     "repository": {
         "type": "git",
         "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
-        "directory": "src/components/Alerts"
+        "directory": "src/components/Alert"
     },
     "license": "EUPL-1.2",
     "author": "Municipality of The Hague",
