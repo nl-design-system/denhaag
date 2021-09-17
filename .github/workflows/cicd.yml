@@ -18,7 +18,7 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.ref }}
           submodules: true
-      - name: Update submodule
+      - name: Pull submodule
         run: git submodule update --remote --recursive
 
       - name: Set up Node.js version
@@ -77,6 +77,7 @@ jobs:
           fi
           cd ..
           git submodule update --remote --recursive
+          git add .
           git commit -m "build(tests): update submodule ref" && git push || echo "No changes in submodule ref"
 
       - name: Upload storybook
