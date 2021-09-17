@@ -4,7 +4,7 @@
       "action": {
         "padding": {
           "block": {
-            "start": { "value": "16px" }
+            "start": { "value": "{denhaag.space.block.md.value}" }
           }
         }
       },
