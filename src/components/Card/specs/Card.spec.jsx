@@ -38,7 +38,7 @@ describe(`Card tests`, () => {
       {
         selector: '.denhaag-card',
         states: {
-          hover: 'denhaag-card--hover',
+          hover: 'denhaag-card--hoverx',
           focus: 'denhaag-card--focus',
         },
       },
