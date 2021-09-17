@@ -67,11 +67,12 @@ module.exports = (on, config) => {
         fs.mkdirSync(`test_images/${nameOverride || name}`, { recursive: true });
       }
       if (!fs.existsSync(`src/components/${nameOverride || name}/specs/__image_snapshots__`)) {
-      fs.symlinkSync(
-        `../../../../test_images/${nameOverride || name}`,
-        `src/components/${nameOverride || name}/specs/__image_snapshots__`,
-        'dir',
-      );
+        fs.symlinkSync(
+          `../../../../test_images/${nameOverride || name}`,
+          `src/components/${nameOverride || name}/specs/__image_snapshots__`,
+          'dir',
+        );
+      }
       return null;
     },
   });
