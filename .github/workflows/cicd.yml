@@ -62,7 +62,7 @@ jobs:
         run: |
           git add -f src/components/*/specs/__snapshots__/*
           git add -f src/components/*/specs/__image_snapshots__/*
-          git commit -m "Generated test snapshots"
+          git commit -m "build(tests): generated test snapshots"
           git push
 
       - name: Upload storybook
