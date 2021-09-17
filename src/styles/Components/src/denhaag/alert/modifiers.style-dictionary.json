@@ -3,30 +3,30 @@
     "alert": {
       "error": {
         "background": {
-          "color": { "value": "{denhaag.color.orange.1.value}" }
+          "color": { "value": "{denhaag.color.red.1.value}" }
         },
         "title": {
-          "color": { "value": "{denhaag.color.orange.5.value}" }
+          "color": { "value": "{denhaag.color.red.5.value}" }
         },
         "paragraph": {
-          "color": { "value": "{denhaag.color.orange.4.value}" }
+          "color": { "value": "{denhaag.color.red.5.value}" }
         },
         "icon": {
-          "color": { "value": "{denhaag.color.orange.3.value}" }
+          "color": { "value": "{denhaag.color.red.3.value}" }
         },
         "action": {
           "button": {
-            "color": { "value": "white" },
+            "color": { "value": "{denhaag.color.white.value}" },
             "background": {
-              "color": { "value": "{denhaag.color.orange.3.value}" }
+              "color": { "value": "{denhaag.color.red.3.value}" }
             },
             "hover-background": {
-              "color": { "value": "{denhaag.color.orange.4.value}" }
+              "color": { "value": "{denhaag.color.red.4.value}" }
             }
           }
         },
         "close-icon": {
-          "color": { "value": "{denhaag.color.orange.5.value}" }
+          "color": { "value": "{denhaag.color.red.5.value}" }
         }
       },
       "info": {
