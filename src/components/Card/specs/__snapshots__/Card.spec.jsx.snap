@@ -102,5 +102,56 @@ exports[`Card tests > a11y and snapshots #0`] = `
       </div>
     </div>
   </div>
+  <div style="padding: 10px;">
+    <div
+      class="MuiPaper-root MuiCard-root denhaag-card denhaag-card--case denhaag-card--archived MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div class="denhaag-card__wrapper">
+        <div class="denhaag-card__background"></div>
+        <div class="MuiCardContent-root denhaag-card__content">
+          <div class="denhaag-card__text-wrapper">
+            <p
+              class="MuiTypography-root denhaag-card__title MuiTypography-body1"
+            >
+              <a href="#test">Shrimp and Chorizo Paella</a>
+            </p>
+            <p
+              class="MuiTypography-root denhaag-card__subtitle MuiTypography-body1"
+            >
+              This impressive paella is a perfect party dish and a fun meal to
+              cook.
+            </p>
+          </div>
+          <div class="MuiCardActions-root denhaag-card__actions">
+            <div
+              class="MuiTypography-root denhaag-card__subtitle MuiTypography-body1"
+            >
+              <time datetime="Tue Jan 21 2020">1/21/2020</time>
+            </div>
+            <span
+              class="material-icons MuiIcon-root denhaag-card__arrow"
+              aria-hidden="true"
+              aria-label="ArrowRightIcon"
+              ><svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="MuiSvgIcon-root denhaag-icon"
+                focusable="false"
+                aria-hidden="true"
+                shape-rendering="auto"
+              >
+                <path
+                  d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  fill="currentColor"
+                ></path></svg
+            ></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;

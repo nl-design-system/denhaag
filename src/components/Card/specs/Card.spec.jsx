@@ -28,7 +28,13 @@ describe(`Card tests`, () => {
   it('a11y and snapshots', () => {
     cy.snapshots(
       <Card {...props} />,
-      { variant: 'case' },
+      {
+        variant: 'case',
+        _COMBINED: {
+          variant: 'case',
+          archived: true,
+        },
+      },
       {
         selector: '.denhaag-card',
         states: {
@@ -36,7 +42,6 @@ describe(`Card tests`, () => {
           focus: 'denhaag-card--focus',
         },
       },
-      [{ id: 'color-contrast', issue: 376 }],
     );
   });
 });

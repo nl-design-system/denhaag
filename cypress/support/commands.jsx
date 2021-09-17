@@ -29,7 +29,13 @@ Cypress.Commands.add('multimount', (Component, props) => {
     const prop = Array.isArray(props[key]) ? props[key] : [props[key]];
     prop.forEach((propValue) => {
       let extraProps = {};
-      extraProps[key] = propValue;
+      if (key === '_COMBINED') {
+        Object.keys(propValue).forEach((combinedKey) => {
+          extraProps[combinedKey] = propValue[combinedKey];
+        });
+      } else {
+        extraProps[key] = propValue;
+      }
       children.push(
         <div
           key={`${key}-${propValue}`}
