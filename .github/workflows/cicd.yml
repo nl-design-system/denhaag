@@ -16,6 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
+          ref: ${{ github.event.pull_request.head.ref }}
           submodules: recursive
       - name: Set up Node.js version
         uses: actions/setup-node@v2
@@ -64,9 +65,8 @@ jobs:
           git add .
           if git status | grep -q 'new file'
           then
-            git checkout master
             git commit -m "build(tests): Added test images"
-            git push https://gitlab-ci-token:${{ secrets.GITLAB_CI_TOKEN }}@gitlab.com/mjcarsjens/test_images.git origin master
+            git push https://gitlab-ci-token:${{ secrets.GITLAB_CI_TOKEN }}@gitlab.com/mjcarsjens/test_images.git master
           else
             echo "No new snapshots since last run"
           fi
