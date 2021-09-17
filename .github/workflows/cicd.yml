@@ -64,6 +64,7 @@ jobs:
           git add .
           if git status | grep -q 'new file'
           then
+            git checkout master
             git commit -m "build(tests): Added test images"
             git push https://gitlab-ci-token:${{ secrets.GITLAB_CI_TOKEN }}@gitlab.com/mjcarsjens/test_images.git origin master
           else
