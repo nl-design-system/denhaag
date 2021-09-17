@@ -84,12 +84,14 @@ Cypress.Commands.add('snapshots', (Component, props, extraClasses, knownIssues =
   cy.injectAxe();
   cy.configureAxe({
     rules: knownIssues.map((issue) => {
-      cy.task(
-        'warn',
-        `${Cypress.env('CICD') ? '::warning::' : '\x1b[33m    ! '}Disabled "${issue.id}" rule for ${
-          Component.type.name
-        }${issue.issue ? ` : known issue (${pkg.bugs}/${issue.issue})` : ''}`,
-      );
+      if (!issue.logDisabled) {
+        cy.task(
+          'warn',
+          `${Cypress.env('CICD') ? '::warning::' : '\x1b[33m    ! '}Disabled "${issue.id}" rule for ${
+            Component.type.name
+          }${issue.issue ? ` : known issue (${pkg.bugs}/${issue.issue})` : ''}`,
+        );
+      }
       return { id: issue.id, reviewOnFail: true };
     }),
   });

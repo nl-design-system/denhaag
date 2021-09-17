@@ -57,7 +57,7 @@ describe(`Checkbox tests`, () => {
           focus: 'denhaag-checkbox--focus',
         },
       },
-      [{ id: 'label' }],
+      [{ id: 'label', logDisabled: true }],
     );
 
     cy.snapshots(
