@@ -8,7 +8,7 @@ import IconButton from '@gemeente-denhaag/iconbutton';
 import './alert.css';
 import clsx from 'clsx';
 
-export interface AlertsProps extends Omit<BaseProps, 'children' | 'classes' | 'tabIndex'> {
+export interface AlertProps extends Omit<BaseProps, 'children' | 'classes' | 'tabIndex'> {
   /**
    * The title of the alert.
    */
@@ -44,7 +44,7 @@ export interface AlertsProps extends Omit<BaseProps, 'children' | 'classes' | 't
 /**
  * Primary UI component for user interaction
  */
-export const Alerts: React.FC<AlertsProps> = ({
+export const Alert: React.FC<AlertProps> = ({
   id,
   title,
   text,
@@ -53,7 +53,7 @@ export const Alerts: React.FC<AlertsProps> = ({
   close,
   supportIcon,
   className,
-}: AlertsProps) => {
+}: AlertProps) => {
   const rootClassNames = clsx('denhaag-alert', `denhaag-alert--${variant}`, className);
   let icon;
 
@@ -101,4 +101,4 @@ export const Alerts: React.FC<AlertsProps> = ({
   );
 };
 
-export default Alerts;
+export default Alert;

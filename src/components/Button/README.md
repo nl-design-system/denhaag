@@ -98,9 +98,9 @@ _Secondary button_
 
 ## Accessibility
 
-Alerts provide context and assist workflows for users with disabilities.
+Alert provide context and assist workflows for users with disabilities.
 
-- Alerts use a combination of icons and colors to show their meaning and importance.
+- Alert use a combination of icons and colors to show their meaning and importance.
 - [technical accessibility requirements]
 
 ### Navigation

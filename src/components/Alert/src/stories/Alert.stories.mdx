@@ -1,15 +1,14 @@
 import { ArgsTable, Canvas, Description, Meta, Story } from '@storybook/addon-docs';
 import { DesignTokenDocBlock } from 'storybook-design-token/dist/doc-blocks';
-
-import { MegaphoneIcon } from '@gemeente-denhaag/icons';
-import { action } from '@storybook/addon-actions';
-import { Alerts } from '..';
-import pkg from '../../package.json';
-import readme from '../../README.md';
+import { MegaphoneIcon } from "@gemeente-denhaag/icons";
+import { action } from "@storybook/addon-actions";
+import { Alert } from "..";
+import pkg from "../../package.json";
+import readme from "../../README.md";
 
 <Meta
-  title="Components/Data Display/Alerts"
-  component={Alerts}
+  title="Components/Data Display/Alert"
+  component={Alert}
   parameters={{
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: { source: { type: "dynamic" } },
@@ -23,11 +22,11 @@ import readme from '../../README.md';
 
 ## Design Tokens
 
-<DesignTokenDocBlock categoryName="Alerts" viewType="table" />
+<DesignTokenDocBlock categoryName="Alert" viewType="table" />
 
 ## Stories
 
-<ArgsTable of={Alerts} />
+<ArgsTable of={Alert} />
 
 ### Error
 
@@ -44,7 +43,7 @@ import readme from '../../README.md';
         source: {
           code: `
 import { Alert } from "@gemeente-denhaag/alert";
-const ErrorAlert = <Alerts
+const ErrorAlert = <Alert
   text="Here comes text. This text provides additional details and actionable steps the user can take."
   title="Title"
   variant="error"
@@ -68,7 +67,7 @@ const ErrorAlert = <Alerts
       },
     }}
   >
-    {(args) => <Alerts {...args}></Alerts>}
+    {(args) => <Alert {...args}></Alert>}
   </Story>
 </Canvas>
 
@@ -89,7 +88,7 @@ const ErrorAlert = <Alerts
         source: {
           code: `
 import { Alert } from "@gemeente-denhaag/alert";
-const SuccessAlert = <Alerts
+const SuccessAlert = <Alert
   text="Here comes text. This text provides additional details and actionable steps the user can take."
   title="Title"
   variant="error",
@@ -127,7 +126,7 @@ const SuccessAlert = <Alerts
       },
     }}
   >
-    {(args) => <Alerts {...args}></Alerts>}
+    {(args) => <Alert {...args}></Alert>}
   </Story>
 </Canvas>
 
@@ -142,7 +141,7 @@ const SuccessAlert = <Alerts
       variant: "info",
     }}
   >
-    {(args) => <Alerts {...args}></Alerts>}
+    {(args) => <Alert {...args}></Alert>}
   </Story>
 </Canvas>
 
@@ -157,7 +156,7 @@ const SuccessAlert = <Alerts
       variant: "success",
     }}
   >
-    {(args) => <Alerts {...args}></Alerts>}
+    {(args) => <Alert {...args}></Alert>}
   </Story>
 </Canvas>
 
@@ -172,7 +171,7 @@ const SuccessAlert = <Alerts
       variant: "warning",
     }}
   >
-    {(args) => <Alerts {...args}></Alerts>}
+    {(args) => <Alert {...args}></Alert>}
   </Story>
 </Canvas>
 
@@ -188,7 +187,7 @@ const SuccessAlert = <Alerts
       action: { buttonText: "Action", onClick: action("Warning Action clicked") },
     }}
   >
-    {(args) => <Alerts {...args}></Alerts>}
+    {(args) => <Alert {...args}></Alert>}
   </Story>
 </Canvas>
 
@@ -204,7 +203,7 @@ const SuccessAlert = <Alerts
       close: action("Close clicked"),
     }}
   >
-    {(args) => <Alerts {...args}></Alerts>}
+    {(args) => <Alert {...args}></Alert>}
   </Story>
 </Canvas>
 
@@ -221,7 +220,7 @@ const SuccessAlert = <Alerts
       supportIcon: <MegaphoneIcon />,
     }}
   >
-    {(args) => <Alerts {...args}></Alerts>}
+    {(args) => <Alert {...args}></Alert>}
   </Story>
 </Canvas>
 
