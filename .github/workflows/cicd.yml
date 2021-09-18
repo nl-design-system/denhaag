@@ -19,8 +19,11 @@ jobs:
           ref: ${{ github.event.pull_request.head.ref }}
           submodules: true
       - name: Pull submodule
-        run: git submodule update --remote --recursive
-
+        run: |
+          git submodule update --remote --recursive
+          cd test_images
+          git checkout master
+          cd ..
       - name: Set up Node.js version
         uses: actions/setup-node@v2
         with:
@@ -66,7 +69,6 @@ jobs:
           GIT_COMMITTER_NAME: "NL Design System"
         run: |
           cd test_images
-          git checkout master
           git add .
           if git status | grep -q 'new file'
           then
