@@ -66,6 +66,7 @@ jobs:
           GIT_COMMITTER_NAME: "NL Design System"
         run: |
           cd test_images
+          git checkout master
           git add .
           if git status | grep -q 'new file'
           then
