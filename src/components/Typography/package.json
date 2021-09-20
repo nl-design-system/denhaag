@@ -22,7 +22,8 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/basedatadisplayprops": "^0.2.3-alpha.29"
+    "@gemeente-denhaag/basedatadisplayprops": "^0.2.3-alpha.29",
+    "@utrecht/web-component-library-react": "1.0.0-alpha.90"
   },
   "devDependencies": {
     "@gemeente-denhaag/design-tokens-common": "^0.2.3-alpha.29",
