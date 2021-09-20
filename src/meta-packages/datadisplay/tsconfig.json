@@ -12,6 +12,9 @@
       "path": "../../components/Avatar"
     },
     {
+      "path": "../../components/Alert"
+    },
+    {
       "path": "../../components/BadgeCounter"
     },
     {

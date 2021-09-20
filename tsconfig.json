@@ -8,6 +8,9 @@
       "path": "src/components/Accordion"
     },
     {
+      "path": "src/components/Alert"
+    },
+    {
       "path": "src/components/AppBar"
     },
     {
