@@ -3621,6 +3621,16 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
+"@stencil/angular-output-target@0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@stencil/angular-output-target/-/angular-output-target-0.0.7.tgz#48a115cc5e0764a8481d9feb6e3e73f0e2ee77ff"
+  integrity sha512-GM+Sx0KL1cuQ4ysf20iojKBw/Yvuyx3mFWBaqSb3lDxfg4Kg5OHADoaN6L4rMZu3P3G3e2HT5Ut35BuFKIyT+Q==
+
+"@stencil/core@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.8.1.tgz#21b15c115d9a5e2f56379774fcbd9bc947bf336f"
+  integrity sha512-iv9J6oLO/lv7/aO45M05yw3pp1J7olY400vlOZgdMVs3s5zHfalY1ZPYM0KyqU4+7DZuadKYbd0aQZ/g2PInZw==
+
 "@storybook/addon-a11y@^6.3.2":
   version "6.3.8"
   resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-6.3.8.tgz#7d6542d8e11fab38b21e7280100b0001a2b75232"
@@ -5815,6 +5825,19 @@
   dependencies:
     "@typescript-eslint/types" "4.29.2"
     eslint-visitor-keys "^2.0.0"
+
+"@utrecht/web-component-library-react@1.0.0-alpha.90":
+  version "1.0.0-alpha.90"
+  resolved "https://registry.yarnpkg.com/@utrecht/web-component-library-react/-/web-component-library-react-1.0.0-alpha.90.tgz#52bdb08b5b8885bebef62dbedae76837446e8cd8"
+  integrity sha512-dvF83T+kSeQl96nH4bSAbZUl5KKBn1F3Ur1bBw0HrnjiXFK9K+xRo8MTUHIkSTFHNEakFh3c6GkUXBmvJELiDg==
+
+"@utrecht/web-component-library-stencil@1.0.0-alpha.90":
+  version "1.0.0-alpha.90"
+  resolved "https://registry.yarnpkg.com/@utrecht/web-component-library-stencil/-/web-component-library-stencil-1.0.0-alpha.90.tgz#0bc239056457399a7f1fb38a8100227e709ebf3f"
+  integrity sha512-vbnu9Xm906zokcggTOHA9rAcys/y9FrewRZI3dX24jN2Q3tagrv1ZklhzQuOJ26RnNFKbHR4H03HiVPouUf7xA==
+  dependencies:
+    "@stencil/angular-output-target" "0.0.7"
+    "@stencil/core" "2.8.1"
 
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"

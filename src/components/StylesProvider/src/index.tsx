@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { StylesProvider as MaterialStylesProvider } from '@material-ui/core';
+import { defineCustomElements } from '@utrecht/web-component-library-stencil';
 
 export interface StylesProviderProps {
   children?: React.ReactNode;
@@ -10,6 +11,10 @@ export interface StylesProviderProps {
  * @param props Only allow for children
  */
 export const StylesProvider: React.FC<StylesProviderProps> = (props: StylesProviderProps) => {
+  useEffect(() => {
+    defineCustomElements();
+  }, []);
+
   return <MaterialStylesProvider injectFirst>{props.children}</MaterialStylesProvider>;
 };
 
