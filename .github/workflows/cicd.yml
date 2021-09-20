@@ -22,6 +22,8 @@ jobs:
           git submodule update --init --recursive
           cd test_images
           git checkout master
+          rm -rf */*.actual.png
+          rm -rf */*.diff.png
           cd ..
       - name: Set up Node.js version
         uses: actions/setup-node@v2

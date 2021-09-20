@@ -71,7 +71,7 @@ describe('Button tests', () => {
         selector: '.denhaag-button',
         states: {
           hover: 'denhaag-button--hover',
-          focus: 'denhaag-button--focusx',
+          focus: 'denhaag-button--focus',
         },
       },
     );
