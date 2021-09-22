@@ -52,19 +52,21 @@ jobs:
         run: yarn build-storybook
 
       - name: Run Cypress component tests
-        steps:
-          - uses: cypress-io/github-action@v2
-            with:
-              install: false
-              record: false
-              command: yarn test
-            env:
-              CHOKIDAR_USEPOLLING: true
-              CYPRESS_CICD: true
-          - uses: actions/upload-artifact@v2
-            with:
-              name: failed-visual-tests
-              path: test_images/*/*.(diff|actual).png
+        uses: cypress-io/github-action@v2
+        with:
+          install: false
+          record: false
+          command: yarn test
+        env:
+          CHOKIDAR_USEPOLLING: true
+          CYPRESS_CICD: true
+      
+      - name: Upload failed visual tests
+        uses: actions/upload-artifact@v2
+        if: failure()
+        with:
+          name: failed-visual-tests
+          path: test_images/*/*.(diff|actual).png
 
       - name: Upload test snapshots
         env:
