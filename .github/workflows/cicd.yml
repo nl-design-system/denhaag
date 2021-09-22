@@ -66,9 +66,7 @@ jobs:
         if: failure()
         with:
           name: failed-visual-tests
-          path: |
-            test_images/*/*.diff.png
-            test_images/*/*.actual.png
+          path: test_images/*/*.@(actual|diff).png
 
       - name: Upload test snapshots
         env:
