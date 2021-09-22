@@ -2,7 +2,7 @@ import * as React from 'react';
 import IconButton from '../src/index';
 import { TrashIcon } from '../../Icons';
 
-describe('Button tests', () => {
+describe('IconButton tests', () => {
   // Starting with functionality tests
   it('can be clicked', () => {
     const props = {
