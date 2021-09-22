@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/layout",
-  "version": "0.2.3-alpha.30",
+  "version": "0.2.3-alpha.31",
   "description": "A package containing all the layout components",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -21,12 +21,12 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baselayoutprops": "^0.2.3-alpha.30",
-    "@gemeente-denhaag/box": "^0.2.3-alpha.30",
-    "@gemeente-denhaag/container": "^0.2.3-alpha.30",
-    "@gemeente-denhaag/grid": "^0.2.3-alpha.30",
-    "@gemeente-denhaag/gridlist": "^0.2.3-alpha.30",
-    "@gemeente-denhaag/hidden": "^0.2.3-alpha.30"
+    "@gemeente-denhaag/baselayoutprops": "^0.2.3-alpha.31",
+    "@gemeente-denhaag/box": "^0.2.3-alpha.31",
+    "@gemeente-denhaag/container": "^0.2.3-alpha.31",
+    "@gemeente-denhaag/grid": "^0.2.3-alpha.31",
+    "@gemeente-denhaag/gridlist": "^0.2.3-alpha.31",
+    "@gemeente-denhaag/hidden": "^0.2.3-alpha.31"
   },
   "peerDependencies": {
     "react": "^17.0.1"
