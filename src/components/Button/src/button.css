@@ -12,8 +12,6 @@
   bottom: -2px;
   left: -2px;
   right: -2px;
-  border: var(--denhaag-focus-border);
-  border-radius: var(--denhaag-border-radius);
 }
 
 /* Due to the accessibility focus outline overlapping with the border, the outline needs to be repositioned for the border variant */
