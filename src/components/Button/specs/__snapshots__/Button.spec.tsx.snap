@@ -1,9 +1,0 @@
-exports[`Button tests > matches snapshot #0`] = `
-<button
-  class="MuiButtonBase-root MuiButton-root denhaag-button MuiButton-contained denhaag-button--primary-action denhaag-button--medium"
-  tabindex="0"
-  type="button"
->
-  <span class="MuiButton-label denhaag-button__label">Test button</span>
-</button>
-`;

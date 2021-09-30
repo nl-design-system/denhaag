@@ -23,8 +23,59 @@ module.exports = (on, config) => {
     require('@cypress/react/plugins/react-scripts')(on, config);
   }
 
+  const fs = require('fs');
+
   const { initPlugin } = require('cypress-plugin-snapshots/plugin');
   initPlugin(on, config);
+
+  on('task', {
+    a11yLog(violations) {
+      console.log(
+        `${violations.length} accessibility violation${violations.length === 1 ? '' : 's'} ${
+          violations.length === 1 ? 'was' : 'were'
+        } detected`,
+      );
+
+      const violationData = violations.map(({ id, impact, description, nodes }) => ({
+        id,
+        impact,
+        description,
+        nodes: nodes.length,
+      }));
+
+      console.table(violationData);
+      return null;
+    },
+    log(message) {
+      console.log(message);
+      return null;
+    },
+    warn(message) {
+      console.warn(message);
+      return null;
+    },
+    error(message) {
+      console.error(message);
+      return null;
+    },
+    table(message) {
+      console.table(message);
+      return null;
+    },
+    checkImagesFolder({ name, nameOverride }) {
+      if (!fs.existsSync(`test_images/${nameOverride || name}`)) {
+        fs.mkdirSync(`test_images/${nameOverride || name}`, { recursive: true });
+      }
+      if (!fs.existsSync(`src/components/${nameOverride || name}/specs/__image_snapshots__`)) {
+        fs.symlinkSync(
+          `../../../../test_images/${nameOverride || name}`,
+          `src/components/${nameOverride || name}/specs/__image_snapshots__`,
+          'dir',
+        );
+      }
+      return null;
+    },
+  });
 
   return config;
 };

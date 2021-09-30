@@ -14,11 +14,13 @@
   appearance: none;
 }
 
-.denhaag-icon-button:hover {
+.denhaag-icon-button:hover,
+.denhaag-icon-button--hover {
   color: var(--denhaag-icon-button-hover-color);
 }
 
-.denhaag-icon-button:focus {
+.denhaag-icon-button:focus,
+.denhaag-icon-button--focus {
   color: var(--denhaag-icon-button-focus-color);
   outline-color: var(--denhaag-icon-button-focus-outline-color);
   outline-width: var(--denhaag-icon-button-focus-outline-width);

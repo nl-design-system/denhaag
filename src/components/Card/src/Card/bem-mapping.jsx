@@ -19,5 +19,9 @@ export const cardPaperClasses = {
 };
 
 export const cardCaseClasses = {
-  root: 'denhaag-card denhaag-card--case',
+  root: 'denhaag-card--case',
+};
+
+export const cardArchivedClasses = {
+  root: 'denhaag-card--archived',
 };

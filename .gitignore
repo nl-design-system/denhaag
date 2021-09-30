@@ -16,6 +16,9 @@ build
 dist
 .rpt2_cache
 
+#test files
+__image_snapshots__
+
 # misc
 .DS_Store
 .env

@@ -1,0 +1,760 @@
+exports[`Timeline tests > a11y and snapshots #0`] = `
+<div id="wrapper" style="display: inline-block;">
+  <div style="padding: 10px;">
+    <div>
+      <div
+        class="MuiPaper-root MuiStepper-root denhaag-timeline MuiStepper-vertical MuiPaper-elevation0"
+      >
+        <div
+          class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
+          aria-expanded="false"
+          role=""
+          tabindex="0"
+        >
+          <div
+            class="denhaag-timeline__step-label denhaag-timeline__step-label--active"
+          >
+            <svg
+              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorAction denhaag-timeline__step-icon--active"
+              focusable="false"
+              viewBox="0 0 20 20"
+              aria-hidden="true"
+              shape-rendering="auto"
+            >
+              <circle
+                cx="10"
+                cy="10"
+                r="10"
+                fill="currentColor"
+                stroke="none"
+                stroke-width="0"
+              ></circle>
+              <text
+                x="10"
+                y="14"
+                text-anchor="middle"
+                class="denhaag-timeline__step-icon-text denhaag-timeline__step-icon-text--active"
+              >
+                1
+              </text>
+            </svg>
+            <p class="denhaag-timeline__step-label-text">
+              First Step in a Timeline!
+            </p>
+          </div>
+          <div
+            class="MuiStepContent-root denhaag-timeline__step-content"
+            icon="1"
+          >
+            <div
+              class="MuiCollapse-root MuiStepContent-transition MuiCollapse-entered"
+              style="min-height: 0px;"
+            >
+              <div class="MuiCollapse-wrapper">
+                <div class="MuiCollapse-wrapperInner">
+                  This is the first Step component of many in a Timeline
+                  component.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
+          aria-expanded="false"
+          role=""
+          tabindex="0"
+        >
+          <div class="denhaag-timeline__step-label">
+            <svg
+              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorPrimary denhaag-timeline__step-icon--inactive"
+              focusable="false"
+              viewBox="0 0 20 20"
+              aria-hidden="true"
+              shape-rendering="auto"
+            >
+              <circle
+                cx="10"
+                cy="10"
+                r="9.25"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              ></circle>
+              <text
+                x="10"
+                y="14"
+                text-anchor="middle"
+                class="denhaag-timeline__step-icon-text"
+              >
+                2
+              </text>
+            </svg>
+            <p class="denhaag-timeline__step-label-text">
+              Second Step in a Timeline!
+            </p>
+          </div>
+        </div>
+        <div
+          class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
+          aria-expanded="false"
+          role=""
+          tabindex="0"
+        >
+          <div
+            class="denhaag-timeline__step-label denhaag-timeline__step-label--disabled"
+          >
+            <svg
+              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorDisabled denhaag-timeline__step-icon--disabled"
+              focusable="false"
+              viewBox="0 0 20 20"
+              aria-hidden="true"
+              shape-rendering="auto"
+            >
+              <circle
+                cx="10"
+                cy="10"
+                r="9.25"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              ></circle>
+              <text
+                x="10"
+                y="14"
+                text-anchor="middle"
+                class="denhaag-timeline__step-icon-text"
+              >
+                3
+              </text>
+            </svg>
+            <p class="denhaag-timeline__step-label-text">
+              Third Step in a Timeline!
+            </p>
+          </div>
+        </div>
+        <div
+          class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
+          aria-expanded="false"
+          role=""
+          tabindex="0"
+        >
+          <div class="denhaag-timeline__step-label">
+            <svg
+              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorPrimary denhaag-timeline__step-icon--inactive"
+              focusable="false"
+              viewBox="0 0 20 20"
+              aria-hidden="true"
+              shape-rendering="auto"
+            >
+              <circle
+                cx="10"
+                cy="10"
+                r="9.25"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              ></circle>
+              <text
+                x="10"
+                y="14"
+                text-anchor="middle"
+                class="denhaag-timeline__step-icon-text"
+              >
+                4
+              </text>
+            </svg>
+            <p class="denhaag-timeline__step-label-text">
+              Fourth Step in a Timeline!
+            </p>
+          </div>
+          <div
+            class="MuiStepContent-root denhaag-timeline__step-content MuiStepContent-last"
+            icon="4"
+          ></div>
+        </div>
+      </div>
+      <div
+        class="MuiPaper-root MuiStepper-root denhaag-timeline MuiStepper-vertical MuiPaper-elevation0"
+      >
+        <div
+          class="MuiStep-root denhaag-timeline__step MuiStep-vertical MuiStep-completed denhaag-timeline__step--completed"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="denhaag-timeline__step-label denhaag-timeline__step-label--completed"
+          >
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorSecondary denhaag-timeline__step-icon--completed"
+              focusable="false"
+              aria-hidden="true"
+              shape-rendering="auto"
+            >
+              <path
+                d="M22 11.08V12a10 10 0 11-5.93-9.14"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M22 4L12 14.01l-3-3"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+            <p class="denhaag-timeline__step-label-text">
+              First Step in a Timeline!<svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="MuiSvgIcon-root denhaag-timeline__step-collapse-icon"
+                focusable="false"
+                aria-hidden="true"
+                shape-rendering="auto"
+              >
+                <path
+                  d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </p>
+          </div>
+          <div
+            class="MuiStepContent-root denhaag-timeline__step-content"
+            icon="1"
+          ></div>
+        </div>
+        <div
+          class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
+          aria-expanded="false"
+          role=""
+          tabindex="0"
+        >
+          <div
+            class="denhaag-timeline__step-label denhaag-timeline__step-label--active"
+          >
+            <svg
+              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorAction denhaag-timeline__step-icon--active"
+              focusable="false"
+              viewBox="0 0 20 20"
+              aria-hidden="true"
+              shape-rendering="auto"
+            >
+              <circle
+                cx="10"
+                cy="10"
+                r="10"
+                fill="currentColor"
+                stroke="none"
+                stroke-width="0"
+              ></circle>
+              <text
+                x="10"
+                y="14"
+                text-anchor="middle"
+                class="denhaag-timeline__step-icon-text denhaag-timeline__step-icon-text--active"
+              >
+                2
+              </text>
+            </svg>
+            <p class="denhaag-timeline__step-label-text">
+              Second Step in a Timeline!
+            </p>
+          </div>
+        </div>
+        <div
+          class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
+          aria-expanded="false"
+          role=""
+          tabindex="0"
+        >
+          <div
+            class="denhaag-timeline__step-label denhaag-timeline__step-label--disabled"
+          >
+            <svg
+              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorDisabled denhaag-timeline__step-icon--disabled"
+              focusable="false"
+              viewBox="0 0 20 20"
+              aria-hidden="true"
+              shape-rendering="auto"
+            >
+              <circle
+                cx="10"
+                cy="10"
+                r="9.25"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              ></circle>
+              <text
+                x="10"
+                y="14"
+                text-anchor="middle"
+                class="denhaag-timeline__step-icon-text"
+              >
+                3
+              </text>
+            </svg>
+            <p class="denhaag-timeline__step-label-text">
+              Third Step in a Timeline!
+            </p>
+          </div>
+        </div>
+        <div
+          class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
+          aria-expanded="false"
+          role=""
+          tabindex="0"
+        >
+          <div class="denhaag-timeline__step-label">
+            <svg
+              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorPrimary denhaag-timeline__step-icon--inactive"
+              focusable="false"
+              viewBox="0 0 20 20"
+              aria-hidden="true"
+              shape-rendering="auto"
+            >
+              <circle
+                cx="10"
+                cy="10"
+                r="9.25"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              ></circle>
+              <text
+                x="10"
+                y="14"
+                text-anchor="middle"
+                class="denhaag-timeline__step-icon-text"
+              >
+                4
+              </text>
+            </svg>
+            <p class="denhaag-timeline__step-label-text">
+              Fourth Step in a Timeline!
+            </p>
+          </div>
+          <div
+            class="MuiStepContent-root denhaag-timeline__step-content MuiStepContent-last"
+            icon="4"
+          ></div>
+        </div>
+      </div>
+      <div
+        class="MuiPaper-root MuiStepper-root denhaag-timeline MuiStepper-vertical MuiPaper-elevation0"
+      >
+        <div
+          class="MuiStep-root denhaag-timeline__step MuiStep-vertical MuiStep-completed denhaag-timeline__step--completed"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="denhaag-timeline__step-label denhaag-timeline__step-label--completed"
+          >
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorSecondary denhaag-timeline__step-icon--completed"
+              focusable="false"
+              aria-hidden="true"
+              shape-rendering="auto"
+            >
+              <path
+                d="M22 11.08V12a10 10 0 11-5.93-9.14"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M22 4L12 14.01l-3-3"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+            <p class="denhaag-timeline__step-label-text">
+              First Step in a Timeline!<svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="MuiSvgIcon-root denhaag-timeline__step-collapse-icon"
+                focusable="false"
+                aria-hidden="true"
+                shape-rendering="auto"
+              >
+                <path
+                  d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </p>
+          </div>
+          <div
+            class="MuiStepContent-root denhaag-timeline__step-content"
+            icon="1"
+          ></div>
+        </div>
+        <div
+          class="MuiStep-root denhaag-timeline__step MuiStep-vertical MuiStep-completed denhaag-timeline__step--completed"
+          aria-expanded="false"
+          role=""
+          tabindex="0"
+        >
+          <div
+            class="denhaag-timeline__step-label denhaag-timeline__step-label--completed"
+          >
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorSecondary denhaag-timeline__step-icon--completed"
+              focusable="false"
+              aria-hidden="true"
+              shape-rendering="auto"
+            >
+              <path
+                d="M22 11.08V12a10 10 0 11-5.93-9.14"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M22 4L12 14.01l-3-3"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+            <p class="denhaag-timeline__step-label-text">
+              Second Step in a Timeline!
+            </p>
+          </div>
+        </div>
+        <div
+          class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
+          aria-expanded="false"
+          role=""
+          tabindex="0"
+        >
+          <div
+            class="denhaag-timeline__step-label denhaag-timeline__step-label--disabled"
+          >
+            <svg
+              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorDisabled denhaag-timeline__step-icon--disabled"
+              focusable="false"
+              viewBox="0 0 20 20"
+              aria-hidden="true"
+              shape-rendering="auto"
+            >
+              <circle
+                cx="10"
+                cy="10"
+                r="9.25"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              ></circle>
+              <text
+                x="10"
+                y="14"
+                text-anchor="middle"
+                class="denhaag-timeline__step-icon-text"
+              >
+                3
+              </text>
+            </svg>
+            <p class="denhaag-timeline__step-label-text">
+              Third Step in a Timeline!
+            </p>
+          </div>
+        </div>
+        <div
+          class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
+          aria-expanded="false"
+          role=""
+          tabindex="0"
+        >
+          <div
+            class="denhaag-timeline__step-label denhaag-timeline__step-label--active"
+          >
+            <svg
+              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorAction denhaag-timeline__step-icon--active"
+              focusable="false"
+              viewBox="0 0 20 20"
+              aria-hidden="true"
+              shape-rendering="auto"
+            >
+              <circle
+                cx="10"
+                cy="10"
+                r="10"
+                fill="currentColor"
+                stroke="none"
+                stroke-width="0"
+              ></circle>
+              <text
+                x="10"
+                y="14"
+                text-anchor="middle"
+                class="denhaag-timeline__step-icon-text denhaag-timeline__step-icon-text--active"
+              >
+                4
+              </text>
+            </svg>
+            <p class="denhaag-timeline__step-label-text">
+              Fourth Step in a Timeline!
+            </p>
+          </div>
+          <div
+            class="MuiStepContent-root denhaag-timeline__step-content MuiStepContent-last"
+            icon="4"
+          >
+            <div
+              class="MuiCollapse-root MuiStepContent-transition MuiCollapse-entered"
+              style="min-height: 0px;"
+            >
+              <div class="MuiCollapse-wrapper">
+                <div class="MuiCollapse-wrapperInner">
+                  This is the fourth Step component of many in a Timeline
+                  component.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiPaper-root MuiStepper-root denhaag-timeline MuiStepper-vertical MuiPaper-elevation0"
+      >
+        <div
+          class="MuiStep-root denhaag-timeline__step MuiStep-vertical MuiStep-completed denhaag-timeline__step--completed"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="denhaag-timeline__step-label denhaag-timeline__step-label--completed"
+          >
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorSecondary denhaag-timeline__step-icon--completed"
+              focusable="false"
+              aria-hidden="true"
+              shape-rendering="auto"
+            >
+              <path
+                d="M22 11.08V12a10 10 0 11-5.93-9.14"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M22 4L12 14.01l-3-3"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+            <p class="denhaag-timeline__step-label-text">
+              First Step in a Timeline!<svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="MuiSvgIcon-root denhaag-timeline__step-collapse-icon"
+                focusable="false"
+                aria-hidden="true"
+                shape-rendering="auto"
+              >
+                <path
+                  d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </p>
+          </div>
+          <div
+            class="MuiStepContent-root denhaag-timeline__step-content"
+            icon="1"
+          ></div>
+        </div>
+        <div
+          class="MuiStep-root denhaag-timeline__step MuiStep-vertical MuiStep-completed denhaag-timeline__step--completed"
+          aria-expanded="false"
+          role=""
+          tabindex="0"
+        >
+          <div
+            class="denhaag-timeline__step-label denhaag-timeline__step-label--completed"
+          >
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorSecondary denhaag-timeline__step-icon--completed"
+              focusable="false"
+              aria-hidden="true"
+              shape-rendering="auto"
+            >
+              <path
+                d="M22 11.08V12a10 10 0 11-5.93-9.14"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M22 4L12 14.01l-3-3"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+            <p class="denhaag-timeline__step-label-text">
+              Second Step in a Timeline!
+            </p>
+          </div>
+        </div>
+        <div
+          class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
+          aria-expanded="false"
+          role=""
+          tabindex="0"
+        >
+          <div
+            class="denhaag-timeline__step-label denhaag-timeline__step-label--disabled"
+          >
+            <svg
+              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorDisabled denhaag-timeline__step-icon--disabled"
+              focusable="false"
+              viewBox="0 0 20 20"
+              aria-hidden="true"
+              shape-rendering="auto"
+            >
+              <circle
+                cx="10"
+                cy="10"
+                r="9.25"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              ></circle>
+              <text
+                x="10"
+                y="14"
+                text-anchor="middle"
+                class="denhaag-timeline__step-icon-text"
+              >
+                3
+              </text>
+            </svg>
+            <p class="denhaag-timeline__step-label-text">
+              Third Step in a Timeline!
+            </p>
+          </div>
+        </div>
+        <div
+          class="MuiStep-root denhaag-timeline__step MuiStep-vertical MuiStep-completed denhaag-timeline__step--completed"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="denhaag-timeline__step-label denhaag-timeline__step-label--completed"
+          >
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorSecondary denhaag-timeline__step-icon--completed"
+              focusable="false"
+              aria-hidden="true"
+              shape-rendering="auto"
+            >
+              <path
+                d="M22 11.08V12a10 10 0 11-5.93-9.14"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M22 4L12 14.01l-3-3"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+            <p class="denhaag-timeline__step-label-text">
+              Fourth Step in a Timeline!<svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="MuiSvgIcon-root denhaag-timeline__step-collapse-icon"
+                focusable="false"
+                aria-hidden="true"
+                shape-rendering="auto"
+              >
+                <path
+                  d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </p>
+          </div>
+          <div
+            class="MuiStepContent-root denhaag-timeline__step-content MuiStepContent-last"
+            icon="4"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

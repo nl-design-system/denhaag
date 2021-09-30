@@ -4,7 +4,14 @@ import { ArrowRightIcon } from '@gemeente-denhaag/icons';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import './mui-override.css';
 import './card.css';
-import { cardArrowClasses, cardCaseClasses, cardClasses, cardSubtitleClasses, cardTitleClasses } from './bem-mapping';
+import {
+  cardArrowClasses,
+  cardCaseClasses,
+  cardClasses,
+  cardSubtitleClasses,
+  cardTitleClasses,
+  cardArchivedClasses,
+} from './bem-mapping';
 import { CardContent } from '../CardContent/CardContent';
 import { CardActions } from '../CardActions/CardActions';
 import clsx from 'clsx';
@@ -54,7 +61,7 @@ export const Card: React.FC<CardProps> = ({ archived = false, ...props }: CardPr
   const rootClassNames = clsx(
     cardClasses.root,
     props.variant === 'case' && cardCaseClasses.root,
-    archived === true && 'denhaag-card--archived',
+    archived === true && cardArchivedClasses.root,
     props.className,
   );
   const arrowClasses = cardArrowClasses;
@@ -92,7 +99,7 @@ export const Card: React.FC<CardProps> = ({ archived = false, ...props }: CardPr
           </div>
           <CardActions disableSpacing={true}>
             <Typography component="div" classes={subtitleClasses}>
-              <time dateTime={props.date.toDateString()}>{props.date.toLocaleDateString()}</time>
+              <time dateTime={props.date.toISOString()}>{props.date.toLocaleDateString()}</time>
             </Typography>
             <Icon classes={arrowClasses} aria-label="ArrowRightIcon">
               <ArrowRightIcon />

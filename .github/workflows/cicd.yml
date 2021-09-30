@@ -13,10 +13,18 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
-
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+      - name: Get test_images
+        run: |
+          git submodule update --init --recursive
+          cd test_images
+          git checkout master
+          rm -rf */*.actual.png
+          rm -rf */*.diff.png
+          cd ..
       - name: Set up Node.js version
         uses: actions/setup-node@v2
         with:
@@ -48,7 +56,34 @@ jobs:
         with:
           install: false
           record: false
-          command: yarn cypress run-ct
+          command: yarn test
+        env:
+          CHOKIDAR_USEPOLLING: true
+          CYPRESS_CICD: true
+      
+      - name: Save failed test snapshots in artifact
+        uses: actions/upload-artifact@v2
+        if: failure()
+        with:
+          name: failed-visual-tests
+          path: |
+            test_images/*/*.diff.png
+            test_images/*/*.actual.png
+
+      - name: Upload test snapshots
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIT_AUTHOR_EMAIL: ${{ secrets.GIT_AUTHOR_EMAIL }}
+          GIT_AUTHOR_NAME: "NL Design System"
+          GIT_COMMITTER_EMAIL: ${{ secrets.GIT_COMMITTER_EMAIL }}
+          GIT_COMMITTER_NAME: "NL Design System"
+        run: |
+          cd test_images
+          git add .
+          git commit -m "build(tests): Added test images" && git push https://gitlab-ci-token:${{ secrets.GITLAB_CI_TOKEN }}@gitlab.com/mjcarsjens/test_images.git master || echo "No new snapshots since last run"
+          cd ..
+          git add .
+          git commit -m "build(tests): update test files" && git push || echo "No changes in tests"
 
       - name: Upload storybook
         uses: actions/upload-artifact@v2

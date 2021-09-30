@@ -77,7 +77,7 @@ export interface MenuButtonExpandableProps extends Omit<BaseProps, 'classes' | '
    * Determines the Onclick function the menu button refers to
    * Only applicable to the Expandable variant
    */
-  onclick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 export const MenuButton: React.FC<MenuButtonProps> = ({ active = false, ...props }: MenuButtonProps) => {
@@ -123,7 +123,7 @@ export const MenuButtonExpandable: React.FC<MenuButtonProps> = ({
   );
 
   return (
-    <button id={props.id} onClick={props.onclick} className={rootClassNames} title={props.children?.toString()}>
+    <button id={props.id} onClick={props.onClick} className={rootClassNames} title={props.children?.toString()}>
       {props.children}
       <span className="denhaag-menu-button__chevron">
         <ChevronDownIcon aria-label="ChevronDownIcon" />

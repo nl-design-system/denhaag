@@ -2,6 +2,13 @@
   "component": {
     "componentFolder": "src/components",
     "testFiles": "**/*spec.{js,jsx,ts,tsx}",
-    "ignoreTestFiles": ["**/__snapshots__/*", "**/__image_snapshots__/*"]
+    "ignoreTestFiles": ["**/__snapshots__/*", "**/__image_snapshots__/*"],
+    "env": {
+      "cypress-plugin-snapshots": {
+        "imageConfig": {
+          "threshold": 0.01
+        }
+      }
+    }
   }
 }
