@@ -99,7 +99,7 @@ export const Card: React.FC<CardProps> = ({ archived = false, ...props }: CardPr
           </div>
           <CardActions disableSpacing={true}>
             <Typography component="div" classes={subtitleClasses}>
-              <time dateTime={props.date.toDateString()}>{props.date.toLocaleDateString()}</time>
+              <time dateTime={props.date.toISOString()}>{props.date.toLocaleDateString()}</time>
             </Typography>
             <Icon classes={arrowClasses} aria-label="ArrowRightIcon">
               <ArrowRightIcon />
