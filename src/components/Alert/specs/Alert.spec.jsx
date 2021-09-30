@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Alert from '../src/index';
-import { MegaphoneIcon } from '../../Icons';
+import { MegaphoneIcon } from '@gemeente-denhaag/icons';
 
 describe(`Alerts tests`, () => {
   it('has clickable close and action buttons', () => {
