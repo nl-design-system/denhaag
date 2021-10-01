@@ -22,7 +22,7 @@ export interface LinkProps extends Omit<BaseProps, 'classes'> {
   /**
    * Icon to display at the start or the end of the link
    */
-  icon?: React.FC<SvgIconProps>;
+  icon?: React.ReactElement<SvgIconProps>;
 
   /**
    * If an `icon` is specified, should it be aligned on the left or the right?
