@@ -107,7 +107,7 @@ export const Link: OverridableComponent<LinkProps> = ({
 
   const iconWrapped = <span className={iconClassName}>{icon}</span>;
 
-  const Component = component === undefined ? 'a' : component;
+  const Component = component || 'a';
 
   return (
     <Component id={id} href={href} tabIndex={disabled ? -1 : tabIndex} {...props} className={rootClassNames}>
