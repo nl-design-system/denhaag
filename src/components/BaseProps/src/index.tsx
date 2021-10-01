@@ -49,3 +49,18 @@ export interface BaseClassesProps {
    */
   classes?: Record<string, unknown>;
 }
+
+type OverrideProps<M, C extends React.ElementType> = M & Omit<React.ComponentPropsWithRef<C>, keyof M>;
+
+export interface OverridableComponent<M> {
+  <C extends React.ElementType>(
+    props: {
+      /**
+       * The component used for the root node.
+       * Either a string to use a HTML element or a component.
+       */
+      component: C;
+    } & OverrideProps<M, C>,
+  ): JSX.Element;
+  (props: BaseProps & M): JSX.Element;
+}

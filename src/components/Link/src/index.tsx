@@ -1,5 +1,5 @@
 import React from 'react';
-import BaseProps from '@gemeente-denhaag/baseprops';
+import BaseProps, { OverridableComponent } from '@gemeente-denhaag/baseprops';
 import { SvgIconProps } from '@gemeente-denhaag/icons';
 import clsx from 'clsx';
 
@@ -12,7 +12,7 @@ export interface LinkProps extends Omit<BaseProps, 'classes'> {
    *
    * [(See MDN Web Docs for details)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-href)
    */
-  href: string;
+  href?: string;
 
   /**
    * [See MDN Web Docs for details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-hreflang)
@@ -22,7 +22,7 @@ export interface LinkProps extends Omit<BaseProps, 'classes'> {
   /**
    * Icon to display at the start or the end of the link
    */
-  icon?: React.FC<SvgIconProps>;
+  icon?: React.ReactElement<SvgIconProps>;
 
   /**
    * If an `icon` is specified, should it be aligned on the left or the right?
@@ -69,6 +69,11 @@ export interface LinkProps extends Omit<BaseProps, 'classes'> {
    * [See MDN Web Docs for details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-referrerpolicy)
    */
   referrerPolicy?: React.HTMLAttributeReferrerPolicy;
+
+  /**
+   * Override base component
+   */
+  component?: React.ElementType | undefined;
 }
 
 /**
@@ -76,7 +81,7 @@ export interface LinkProps extends Omit<BaseProps, 'classes'> {
  * @param props The properties of a Link component.
  * @constructor Constructs an instance of Link.
  */
-export const Link: React.FC<LinkProps> = ({
+export const Link: OverridableComponent<LinkProps> = ({
   href,
   id,
   children = undefined,
@@ -84,6 +89,7 @@ export const Link: React.FC<LinkProps> = ({
   icon = undefined,
   iconAlign = 'end',
   tabIndex = 0,
+  component = undefined,
   ...props
 }: LinkProps) => {
   const rootClassNames = clsx(
@@ -101,12 +107,14 @@ export const Link: React.FC<LinkProps> = ({
 
   const iconWrapped = <span className={iconClassName}>{icon}</span>;
 
+  const Component = component || 'a';
+
   return (
-    <a id={id} href={href} tabIndex={disabled ? -1 : tabIndex} {...props} className={rootClassNames}>
+    <Component id={id} href={href} tabIndex={disabled ? -1 : tabIndex} {...props} className={rootClassNames}>
       {icon !== undefined && iconAlign === 'start' ? iconWrapped : ''}
       <span>{children}</span>
       {icon !== undefined && iconAlign === 'end' ? iconWrapped : ''}
-    </a>
+    </Component>
   );
 };
 
