@@ -110,4 +110,21 @@ export const Link: React.FC<LinkProps> = ({
   );
 };
 
+export const RouterLink: React.FC<LinkProps & { navigate: () => void }> = (
+  props: LinkProps & { navigate: () => void },
+) => {
+  const { navigate, ...otherProps } = props;
+  const extendedProps = {
+    onClick: (e: React.MouseEvent) => {
+      if (!props.target || props.target === '_self') {
+        e.preventDefault();
+        navigate();
+      }
+    },
+    ...otherProps,
+  };
+
+  return <Link {...extendedProps} />;
+};
+
 export default Link;
