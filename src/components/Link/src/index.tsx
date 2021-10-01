@@ -1,5 +1,5 @@
 import React from 'react';
-import BaseProps from '@gemeente-denhaag/baseprops';
+import BaseProps, { OverridableComponent } from '@gemeente-denhaag/baseprops';
 import { SvgIconProps } from '@gemeente-denhaag/icons';
 import clsx from 'clsx';
 
@@ -12,7 +12,7 @@ export interface LinkProps extends Omit<BaseProps, 'classes'> {
    *
    * [(See MDN Web Docs for details)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-href)
    */
-  href: string;
+  href?: string;
 
   /**
    * [See MDN Web Docs for details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-hreflang)
@@ -69,6 +69,11 @@ export interface LinkProps extends Omit<BaseProps, 'classes'> {
    * [See MDN Web Docs for details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-referrerpolicy)
    */
   referrerPolicy?: React.HTMLAttributeReferrerPolicy;
+
+  /**
+   * Override base component
+   */
+  component?: React.ElementType | undefined;
 }
 
 /**
@@ -76,7 +81,7 @@ export interface LinkProps extends Omit<BaseProps, 'classes'> {
  * @param props The properties of a Link component.
  * @constructor Constructs an instance of Link.
  */
-export const Link: React.FC<LinkProps> = ({
+export const Link: OverridableComponent<LinkProps> = ({
   href,
   id,
   children = undefined,
@@ -84,6 +89,7 @@ export const Link: React.FC<LinkProps> = ({
   icon = undefined,
   iconAlign = 'end',
   tabIndex = 0,
+  component = undefined,
   ...props
 }: LinkProps) => {
   const rootClassNames = clsx(
@@ -101,30 +107,15 @@ export const Link: React.FC<LinkProps> = ({
 
   const iconWrapped = <span className={iconClassName}>{icon}</span>;
 
+  const Component = component === undefined ? 'a' : component;
+
   return (
-    <a id={id} href={href} tabIndex={disabled ? -1 : tabIndex} {...props} className={rootClassNames}>
+    <Component id={id} href={href} tabIndex={disabled ? -1 : tabIndex} {...props} className={rootClassNames}>
       {icon !== undefined && iconAlign === 'start' ? iconWrapped : ''}
       <span>{children}</span>
       {icon !== undefined && iconAlign === 'end' ? iconWrapped : ''}
-    </a>
+    </Component>
   );
-};
-
-export const RouterLink: React.FC<LinkProps & { navigate: () => void }> = (
-  props: LinkProps & { navigate: () => void },
-) => {
-  const { navigate, ...otherProps } = props;
-  const extendedProps = {
-    onClick: (e: React.MouseEvent) => {
-      if (!props.target || props.target === '_self') {
-        e.preventDefault();
-        navigate();
-      }
-    },
-    ...otherProps,
-  };
-
-  return <Link {...extendedProps} />;
 };
 
 export default Link;
