@@ -14,7 +14,7 @@
     "man-type": "error",
     "name-format": "error",
     "name-type": "error",
-    "prefer-caret-version-dependencies": "error",
+    "prefer-caret-version-dependencies": "off",
     "preferGlobal-type": "error",
     "private-type": "error",
     "repository-type": "error",
