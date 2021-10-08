@@ -10,6 +10,7 @@ import RightArrowSvg from './svg/arrows/arrow-right.svg';
 import ChevronDownSvg from './svg/arrows/chevron-down.svg';
 import ChevronRightSvg from './svg/arrows/chevron-right.svg';
 import ChevronUpSvg from './svg/arrows/chevron-up.svg';
+import ChevronLeftSvg from './svg/arrows/chevron-left.svg';
 
 // Communication
 import CallSvg from './svg/communication/call.svg';
@@ -72,6 +73,7 @@ export const ArrowRightIcon: F = (props: SvgIconProps) => buildIcon(RightArrowSv
 export const ChevronDownIcon: F = (props: SvgIconProps) => buildIcon(ChevronDownSvg, props);
 export const ChevronRightIcon: F = (props: SvgIconProps) => buildIcon(ChevronRightSvg, props);
 export const ChevronUpIcon: F = (props: SvgIconProps) => buildIcon(ChevronUpSvg, props);
+export const ChevronLeftIcon: F = (props: SvgIconProps) => buildIcon(ChevronLeftSvg, props);
 
 // Communication
 export const CallIcon: F = (props: SvgIconProps) => buildIcon(CallSvg, props);
