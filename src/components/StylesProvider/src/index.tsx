@@ -1,5 +1,6 @@
 import React from 'react';
 import { StylesProvider as MaterialStylesProvider } from '@material-ui/core';
+import '@utrecht/components/document/bem.scss';
 
 export interface StylesProviderProps {
   children?: React.ReactNode;
@@ -10,7 +11,11 @@ export interface StylesProviderProps {
  * @param props Only allow for children
  */
 export const StylesProvider: React.FC<StylesProviderProps> = (props: StylesProviderProps) => {
-  return <MaterialStylesProvider injectFirst>{props.children}</MaterialStylesProvider>;
+  return (
+    <div className={'utrecht-document'}>
+      <MaterialStylesProvider injectFirst>{props.children}</MaterialStylesProvider>
+    </div>
+  );
 };
 
 /**
