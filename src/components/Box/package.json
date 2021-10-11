@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/box",
-  "version": "0.2.3-alpha.37",
+  "version": "0.2.3-alpha.38",
   "description": "A Box component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -22,7 +22,7 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baselayoutprops": "^0.2.3-alpha.37",
+    "@gemeente-denhaag/baselayoutprops": "^0.2.3-alpha.38",
     "@material-ui/core": "^4.11.0"
   },
   "peerDependencies": {
