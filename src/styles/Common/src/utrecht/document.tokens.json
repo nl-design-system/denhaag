@@ -1,0 +1,10 @@
+{
+  "utrecht": {
+    "document": {
+      "background-color": { "value": "{denhaag.color.white.value}" },
+      "color": { "value": "{denhaag.color.black.value}" },
+      "font-family": { "value": "{denhaag.typography.sans-serif.font-family.value}" },
+      "font-size": { "value": "{denhaag.typography.scale.base.font-size.value}" }
+    }
+  }
+}
