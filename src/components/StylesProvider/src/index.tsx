@@ -12,7 +12,7 @@ export interface StylesProviderProps {
  */
 export const StylesProvider: React.FC<StylesProviderProps> = (props: StylesProviderProps) => {
   return (
-    <div className={'utrecht-document'}>
+    <div className={'utrecht-document utrecht-document--surface'}>
       <MaterialStylesProvider injectFirst>{props.children}</MaterialStylesProvider>
     </div>
   );
