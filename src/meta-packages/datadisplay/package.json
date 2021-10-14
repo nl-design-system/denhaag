@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/datadisplay",
-  "version": "0.2.3-alpha.39",
+  "version": "0.2.3-alpha.40",
   "description": "A package containing components for displaying data",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -20,13 +20,13 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/alert": "^0.1.1-alpha.9",
-    "@gemeente-denhaag/avatar": "^0.2.3-alpha.39",
-    "@gemeente-denhaag/badge-counter": "^0.1.1-alpha.39",
-    "@gemeente-denhaag/baseprops": "^0.2.3-alpha.39",
-    "@gemeente-denhaag/divider": "^0.2.3-alpha.39",
-    "@gemeente-denhaag/list": "^0.2.3-alpha.39",
-    "@gemeente-denhaag/typography": "^0.2.3-alpha.39"
+    "@gemeente-denhaag/alert": "^0.1.1-alpha.10",
+    "@gemeente-denhaag/avatar": "^0.2.3-alpha.40",
+    "@gemeente-denhaag/badge-counter": "^0.1.1-alpha.40",
+    "@gemeente-denhaag/baseprops": "^0.2.3-alpha.40",
+    "@gemeente-denhaag/divider": "^0.2.3-alpha.40",
+    "@gemeente-denhaag/list": "^0.2.3-alpha.40",
+    "@gemeente-denhaag/typography": "^0.2.3-alpha.40"
   },
   "peerDependencies": {
     "react": "^17.0.1"
