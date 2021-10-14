@@ -30,7 +30,7 @@ export default {
   },
   plugins: [
     postcss({
-      extensions: ['.css', '.scss'],
+      extensions: ['.css'],
       minimize: true,
     }),
     nodeResolve(),
