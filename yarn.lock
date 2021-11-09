@@ -9890,9 +9890,9 @@ eslint-module-utils@^2.6.1:
     pkg-dir "^2.0.0"
 
 eslint-plugin-cypress@^2.11.3:
-  version "2.11.3"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-cypress/-/eslint-plugin-cypress-2.11.3.tgz#54ee4067aa8192aa62810cd35080eb577e191ab7"
-  integrity sha512-hOoAid+XNFtpvOzZSNWP5LDrQBEJwbZwjib4XJ1KcRYKjeVj0mAmPmucG4Egli4j/aruv+Ow/acacoloWWCl9Q==
+  version "2.12.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-cypress/-/eslint-plugin-cypress-2.12.1.tgz#9aeee700708ca8c058e00cdafe215199918c2632"
+  integrity sha512-c2W/uPADl5kospNDihgiLc7n87t5XhUbFDoTl6CfVkmG+kDAb5Ux10V9PoLPu9N+r7znpc+iQlcmAqT1A/89HA==
   dependencies:
     globals "^11.12.0"
 
@@ -20012,9 +20012,9 @@ strong-log-transformer@^2.1.0:
     through "^2.3.4"
 
 style-dictionary@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/style-dictionary/-/style-dictionary-3.0.1.tgz#ce083c42891c65bffdf9cfff075306f6cefee3d0"
-  integrity sha512-t6FzcaIY9gCTDufFMP3sUPMqHAA6vW0sHY7p39ckox8y5X8y/0xKbH3Y88QBJN4hKYWuejSLpDf48EVeA0LTiQ==
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/style-dictionary/-/style-dictionary-3.0.3.tgz#251ac680303fe757f19af3af9898db1a66f7373e"
+  integrity sha512-4s8wK1o4M/o9AhwsMqOdu0swBJrvxXspcQ7efdKpER5OP7DnnGC5KeCPHlLdciNYDng+z7TWHUXlw1xs7rR50g==
   dependencies:
     chalk "^4.0.0"
     change-case "^4.1.2"
