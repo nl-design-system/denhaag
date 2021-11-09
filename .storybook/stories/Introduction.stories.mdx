@@ -36,6 +36,23 @@ For example, ```npm install @gemeente-denhaag/denhaag-component-library```.
 
 Alternatively, you can install specific components: ```npm install @gemeente-denhaag/button```.
 
+After installing the dependency, you can start using the Den Haag components as follows:
+```jsx
+import {Button, StylesProvider} from "@gemeente-denhaag/denhaag-component-library";
+// Import your design tokens here as well! Otherwise your components will be unstyled :(
+
+function App() {
+    return (
+        <StylesProvider>
+            <Button variant={"primary-action"}>Click here!</Button>
+        </StylesProvider>
+    );
+}
+
+export default App;
+```
+**Important:** Your app, or the section which uses Den Haag components, will need to be wrapped in the `StylesProvider` component. This ensures that styles are loaded correctly.
+
 #### Applying your theme
 
 By default, all components in the library are unstyled.
