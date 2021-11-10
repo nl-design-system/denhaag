@@ -2,7 +2,7 @@ import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { ChevronDownIcon } from '@gemeente-denhaag/icons';
 import { Paragraph } from '@gemeente-denhaag/typography';
-import Accordion, { AccordionDetails, AccordionProps, AccordionSummary } from '.';
+import { Accordion, AccordionDetails, AccordionProps, AccordionSummary } from '.';
 import pkg from '../package.json';
 
 export default {
