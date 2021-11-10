@@ -32,11 +32,6 @@ export interface AccordionProps extends BaseProps {
   onChange?: (event: React.ChangeEvent<unknown>, expanded: boolean) => void;
 
   /**
-   * If true, rounded corners are disabled.
-   */
-  square?: boolean;
-
-  /**
    * Props applied to the Transition element.
    */
   TransitionProps?: Record<string, unknown>;
