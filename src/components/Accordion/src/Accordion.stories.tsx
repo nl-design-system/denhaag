@@ -22,32 +22,85 @@ export default {
 } as Meta;
 
 const Template: Story<AccordionProps> = (args: AccordionProps) => (
-  <Accordion {...args}>
-    <AccordionSummary expandIcon={<ChevronDownIcon />}>
-      <Paragraph>Click me to collapse me!</Paragraph>
-    </AccordionSummary>
-    <AccordionDetails>
-      <Paragraph>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo
-        lobortis eget.
-      </Paragraph>
-    </AccordionDetails>
-  </Accordion>
+  <div>
+    <Accordion {...args}>
+      <AccordionSummary expandIcon={<ChevronDownIcon />}>Click me to collapse me!</AccordionSummary>
+      <AccordionDetails>
+        <Paragraph>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo
+          lobortis eget.
+        </Paragraph>
+      </AccordionDetails>
+    </Accordion>
+    <Accordion {...args}>
+      <AccordionSummary expandIcon={<ChevronDownIcon />}>Click to collapse this second section</AccordionSummary>
+      <AccordionDetails>
+        <Paragraph>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo
+          lobortis eget.
+        </Paragraph>
+      </AccordionDetails>
+    </Accordion>
+    <Accordion {...args}>
+      <AccordionSummary expandIcon={<ChevronDownIcon />}>Click to collapse this third section</AccordionSummary>
+      <AccordionDetails>
+        <Paragraph>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo
+          lobortis eget.
+        </Paragraph>
+      </AccordionDetails>
+    </Accordion>
+  </div>
 );
 
 // language=JS
 const defaultCode = `
-  <Accordion>
-    <AccordionSummary expandIcon={<ExpandMore/>}>
-      <Paragraph>Click me to collapse me!</Paragraph>
-    </AccordionSummary>
-    <AccordionDetails>
-      <Paragraph>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo
-        lobortis eget.
-      </Paragraph>
-    </AccordionDetails>
-  </Accordion>
+// In order to use the Den Haag icons, make sure you install the @gemeente-denhaag/icons package
+  import { Accordion, AccordionDetails, AccordionSummary, Paragraph } from "@gemeente-denhaag/denhaag-component-library";
+  import { ChevronDownIcon } from "@gemeente-denhaag/icons";
+
+  function App() {
+    return (
+      <div>
+        <Accordion>
+          <AccordionSummary expandIcon={<ChevronDownIcon/>}>
+            Click to collapse me!
+          </AccordionSummary>
+          <AccordionDetails>
+            <Paragraph>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+              leo
+              lobortis eget.
+            </Paragraph>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ChevronDownIcon/>}>
+            Click to collapse this second section
+          </AccordionSummary>
+          <AccordionDetails>
+            <Paragraph>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+              leo
+              lobortis eget.
+            </Paragraph>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ChevronDownIcon/>}>
+            Click to collapse this third section
+          </AccordionSummary>
+          <AccordionDetails>
+            <Paragraph>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+              leo
+              lobortis eget.
+            </Paragraph>
+          </AccordionDetails>
+        </Accordion>
+      </div>
+    );
+  }
 `;
 
 /**
@@ -64,9 +117,12 @@ Default.parameters = {
 
 // language=JS
 const defaultExpandedCode = `
+  import { Accordion, AccordionDetails, AccordionSummary, Paragraph } from "@gemeente-denhaag/denhaag-component-library";
+  import { ChevronDownIcon } from "@gemeente-denhaag/icons";
+
   <Accordion defaultExpanded>
-    <AccordionSummary expandIcon={<ExpandMore/>}>
-      <Paragraph>Click me to collapse me!</Paragraph>
+    <AccordionSummary expandIcon={<ChevronDownIcon/>}>
+      Click to collapse me!
     </AccordionSummary>
     <AccordionDetails>
       <Paragraph>
@@ -96,9 +152,12 @@ DefaultExpanded.parameters = {
 
 // language=JS
 const disabledCode = `
+  import { Accordion, AccordionDetails, AccordionSummary, Paragraph } from "@gemeente-denhaag/denhaag-component-library";
+  import { ChevronDownIcon } from "@gemeente-denhaag/icons";
+
   <Accordion disabled>
-    <AccordionSummary expandIcon={<ExpandMore/>}>
-      <Paragraph>Click me to collapse me!</Paragraph>
+    <AccordionSummary expandIcon={<ChevronDownIcon/>}>
+      Click to collapse me!
     </AccordionSummary>
     <AccordionDetails>
       <Paragraph>
@@ -123,39 +182,6 @@ Disabled.parameters = {
     source: {
       // language=JS
       code: disabledCode,
-    },
-  },
-};
-
-// language=JS
-const squaredCode = `
-  <Accordion square>
-    <AccordionSummary expandIcon={<ExpandMore/>}>
-      <Paragraph>Click me to collapse me!</Paragraph>
-    </AccordionSummary>
-    <AccordionDetails>
-      <Paragraph>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
-        leo
-        lobortis eget.
-      </Paragraph>
-    </AccordionDetails>
-  </Accordion>
-`;
-
-/**
- * An Accordion component with square edges.
- */
-export const Squared = Template.bind({});
-Squared.args = {
-  square: true,
-};
-
-Squared.parameters = {
-  docs: {
-    source: {
-      // language=JS
-      code: squaredCode,
     },
   },
 };
