@@ -1,0 +1,124 @@
+import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+import { ChevronDownIcon } from "@gemeente-denhaag/icons";
+import { Accordion, AccordionSummary, AccordionDetails } from "../index";
+import pkg from "../../package.json";
+import readme from "../../README.md";
+
+<Meta
+  title="Components/Surfaces/Accordion"
+  component={Accordion}
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "dynamic"
+      }
+    },
+    status: {
+      type: 'WORK IN PROGRESS'
+    }
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Design Tokens
+
+<DesignTokenDocBlock categoryName="Accordion" viewType="table" />
+
+## Stories
+
+<ArgsTable of={Accordion} />
+
+<Canvas>
+  <Story
+    name="Default"
+    parameters={{
+      docs: {
+        source: {
+          code: `
+      <div>
+        <Accordion>
+          <AccordionSummary expandIcon={<ChevronDownIcon/>}>
+            Click to collapse me!
+          </AccordionSummary>
+          <AccordionDetails>
+          <Paragraph>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+            leo
+            lobortis eget.
+          </Paragraph>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ChevronDownIcon/>}>
+            Click to collapse this second section
+          </AccordionSummary>
+          <AccordionDetails>
+            <Paragraph>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+              leo
+              lobortis eget.
+            </Paragraph>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ChevronDownIcon/>}>
+            Click to collapse this third section
+          </AccordionSummary>
+          <AccordionDetails>
+            <Paragraph>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+              leo
+              lobortis eget.
+            </Paragraph>
+          </AccordionDetails>
+        </Accordion>
+      </div>`
+        },
+      },
+    }}
+  >
+    {(args) =>
+      <div>
+        <Accordion>
+          <AccordionSummary expandIcon={<ChevronDownIcon />}>
+            Click to collapse me!
+          </AccordionSummary>
+          <AccordionDetails>
+            <Paragraph>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+              leo
+              lobortis eget.
+            </Paragraph>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ChevronDownIcon />}>
+            Click to collapse this second section
+          </AccordionSummary>
+          <AccordionDetails>
+            <Paragraph>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+              leo
+              lobortis eget.
+            </Paragraph>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ChevronDownIcon />}>
+            Click to collapse this third section
+          </AccordionSummary>
+          <AccordionDetails>
+            <Paragraph>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+              leo
+              lobortis eget.
+            </Paragraph>
+          </AccordionDetails>
+        </Accordion>
+      </div>
+    }
+  </Story>
+</Canvas>
