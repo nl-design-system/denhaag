@@ -86,7 +86,7 @@
     "copyfiles": "^2.4.1",
     "cross-env": "^7.0.2",
     "cypress": "^8.0.0",
-    "cypress-axe": "^0.12.2",
+    "cypress-axe": "^0.13.0",
     "cypress-plugin-snapshots": "^1.4.4",
     "eslint": "^7.18.0",
     "eslint-config-prettier": "^8.3.0",
