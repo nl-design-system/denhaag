@@ -1,9 +1,0 @@
-{
-  "utrecht": {
-    "form-input": {
-      "placeholder": {
-        "color": { "value": "{denhaag.color.grey.3.value}" }
-      }
-    }
-  }
-}
