@@ -54,7 +54,7 @@
     "@babel/preset-env": "^7.12.1",
     "@babel/preset-react": "^7.12.1",
     "@commitlint/cli": "^13.1.0",
-    "@commitlint/config-conventional": "^14.1.0",
+    "@commitlint/config-conventional": "^15.0.0",
     "@cypress/react": "^5.4.2",
     "@cypress/webpack-dev-server": "^1.1.6",
     "@etchteam/storybook-addon-status": "^4.0.0",
