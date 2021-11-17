@@ -10,7 +10,18 @@
       "padding-block-end": { "value": "8px" },
       "padding-block-start": { "value": "8px" },
       "padding-inline-end": { "value": "16px" },
-      "padding-inline-start": { "value": "16px" }
+      "padding-inline-start": { "value": "16px" },
+      "placeholder": {
+        "color": { "value": "{denhaag.color.grey.3.value}" }
+      },
+      "disabled": {
+        "border-color": { "value": "{denhaag.color.grey.2.value}" },
+        "color": { "value": "{denhaag.color.grey.2.value}" }
+      },
+      "invalid": {
+        "border-color": { "value": "{denhaag.color.red.3.value}" },
+        "border-width": { "value": "2px" }
+      }
     }
   }
 }

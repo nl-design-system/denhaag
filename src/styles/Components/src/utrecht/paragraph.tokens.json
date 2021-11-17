@@ -7,7 +7,12 @@
       "font-weight": { "value": "400" },
       "line-height": { "value": "normal" },
       "margin-block-start": { "value": "0" },
-      "margin-block-end": { "value": "0" }
+      "margin-block-end": { "value": "0" },
+      "lead": {
+        "font-size": { "value": "{denhaag.typography.scale.lg.font-size.value} " },
+        "font-weight": { },
+        "line-height": { "value": "26px" }
+      }
     }
   }
 }
