@@ -1,8 +1,0 @@
-{
-  "denhaag": {
-    "link": {
-      "color": { "value": "{denhaag.color.blue.3.value}" },
-      "padding": { "value": "8px" }
-    }
-  }
-}
