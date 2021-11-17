@@ -1,6 +1,32 @@
 {
   "denhaag": {
     "alert": {
+      "border-radius": { "value": "1px" },
+      "padding-block-start": { "value": "{denhaag.space.block.xl.value}" },
+      "padding-block-end": { "value": "{denhaag.space.block.xl.value}" },
+      "padding-inline-start": { "value": "{denhaag.space.block.xl.value}" },
+      "padding-inline-end": { "value": "{denhaag.space.block.xl.value}" },
+      "content": {
+        "margin-inline": {
+          "start": { "value": "{denhaag.space.block.xl.value}" },
+          "end": { "value": "{denhaag.space.block.xl.value}" }
+        }
+      },
+      "action": {
+        "padding": {
+          "block": {
+            "start": { "value": "{denhaag.space.block.md.value}" }
+          }
+        }
+      },
+      "close": {
+        "focus": {
+          "border-color": { "value": "1px" },
+          "border-width": { "value": "1px" },
+          "border-style": { "value": "1px" },
+          "border-offset": { "value": "3px" }
+        }
+      },
       "error": {
         "background-color": { "value": "{denhaag.color.red.1.value}" },
         "title": {

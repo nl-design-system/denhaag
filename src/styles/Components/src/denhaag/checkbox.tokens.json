@@ -24,7 +24,7 @@
       "error": {
         "color": { "value": "{denhaag.color.red.3.value}" },
         "hover": {
-          "color": { "value":  "{denhaag.color.red.4.value}" }
+          "color": { "value": "{denhaag.color.red.4.value}" }
         }
       }
     }
