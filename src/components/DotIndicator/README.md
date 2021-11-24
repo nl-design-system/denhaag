@@ -31,6 +31,7 @@ None.
 - Dot: color Red/3, border color white
 
 ### Structure
+
 - Dot: overlaps container 25%, border 2px, height and width 12px
 
 ## Accessibility

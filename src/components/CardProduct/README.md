@@ -20,7 +20,7 @@ The product card consists of:
 1. Title: describes the information of the product
 2. Subtitle (optional): additional information about the product such as a license plate
 3. Date: the date when the case was filed
-4. Arrow icon: shows that the card can be opened  to see more details
+4. Arrow icon: shows that the card can be opened to see more details
 5. Container: card containers hold all card elements
 
 ## (Interactive) states
@@ -45,7 +45,7 @@ The product card contains the states normal, hover and focus.
 
 ### Interactive states
 
-- Hover: title text color Blue/4, subtitle text color Blue/4, date text color Blue/4, arrow icon color Blue/4, container backside  paper increased 0.6x
+- Hover: title text color Blue/4, subtitle text color Blue/4, date text color Blue/4, arrow icon color Blue/4, container backside paper increased 0.6x
 - Focus: border color Ocher/5
 
 ### Structure

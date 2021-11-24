@@ -42,7 +42,7 @@ All steps that have been completed are indicated by an outlined circle with a ch
 - Label active: text color Blue/3
 - Label completed: text color Grey/4
 - Step inactive: fill color white, text color Grey/3, border color Grey/3
-- Step active: fill color Blue/3,  text color white
+- Step active: fill color Blue/3, text color white
 - Step completed: border color Green/3
 - Step error: fill color Red/3
 - Descriptive text: text color Grey/4

@@ -50,7 +50,7 @@ None.
 
 - Avatar: height and width 48px, margin-right 8px
 - Responder message: min-height 48px, padding-left and padding-right 16px, padding-top and padding-bottom 12px, margin-bottom 4px
-- User message:  min-height 48px, padding-left and padding-right 16px, padding-top and padding-bottom 12px, margin-bottom 4px
+- User message: min-height 48px, padding-left and padding-right 16px, padding-top and padding-bottom 12px, margin-bottom 4px
 - Meta data: margin-bottom 48px
 - Date: padding-top 32px, padding-bottom 24px,
 - Event: icon size 20px, icon padding-right 8px, margin-top and margin-bottom 24px

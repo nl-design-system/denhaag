@@ -27,7 +27,7 @@ export const DotIndicator: React.FC<DotIndicatorProps> = (props: DotIndicatorPro
   return (
     <span className={rootClassNames} id={props.id}>
       {props.children}
-      <span className="denhaag-dot-indicator__dot"></span>
+      <span className={'denhaag-dot-indicator__dot'}></span>
     </span>
   );
 };

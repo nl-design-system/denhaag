@@ -10,9 +10,11 @@ Checkboxes are usually used to provide a way for users to make a range of select
 Checkboxes are used for multiple choices, not for mutually exclusive choices. Each checkbox works independently from other checkboxes in the list, therefore checking an additional box does not affect any other selections.
 
 ### Forms
+
 Can be used in forms on a full page or in modals.
 
 ### Terms and conditions
+
 Turning the checkbox input on or off can indicate whether you agree to the terms.
 
 ## Alternatives and related components
@@ -44,7 +46,7 @@ The checkbox contains the states normal, hover, disabled, error and focus.
 
 ### Colors
 
-- Label: text color  Blue/5
+- Label: text color Blue/5
 - Checkbox input inactive: border color Grey/4, background-color white
 - Checkbox input active: border color Blue/3, background-color Blue/3, checkmark icon white
 - Checkbox label: text color Grey/4
@@ -56,33 +58,37 @@ The checkbox contains the states normal, hover, disabled, error and focus.
 - Error: container border color Red/3, checkbox label text color Grey/4
 - Focus: container border color Ocher/5
 
-
 ### Structure
 
 - Checkbox: height and width 20px, border 1px
 - Checkbox focus: border 2px, dash 5,5
 - Label: margin-bottom 8px
 - Checkbox label: padding-left 8px
-- Helper text: margin-left 16px, margin-top	4px
+- Helper text: margin-left 16px, margin-top 4px
 
 ## Accessibility
 
 Screen readers automatically report the status of the check box.
+
 - [technical accessibility requirements]
 
 ### Labeling
+
 [technical requirements, such as: label and labelHidden]
 
 ### External links
+
 [technical requirements]
 
 ### Keyboard support
+
 - Move focus to each checkbox using the tab key (or shift + tab when tabbing backwards)
 - Activate or deactivate checkboxes with the space key
 
 ## Content guidelines
 
 ### Checkbox labels
+
 Checkbox labels must:
 
 - Start with a capital letter
@@ -92,6 +98,7 @@ Checkbox labels must:
 ## Best practices
 
 ### Do's
+
 Checkboxes must:
 
 - Work independently of each other: selecting a checkbox may not change the selection status of another checkbox in the list.
@@ -105,6 +112,7 @@ Checkboxes must:
 - If they are too long, let the text flow under the checkbox so that the control and label are aligned at the top.
 
 ### Don'ts
+
 Checkboxes must:
 
 - Not cut with an omit task if the label is too long and run over 2 lines.

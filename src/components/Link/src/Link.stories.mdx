@@ -1,11 +1,11 @@
-import { ArgsTable, Canvas, Description, Meta, Story } from '@storybook/addon-docs';
-import { DesignTokenDocBlock } from 'storybook-design-token/dist/doc-blocks';
-import { Paragraph } from '@gemeente-denhaag/typography';
-import { ArrowLeftIcon, ArrowRightIcon } from '@gemeente-denhaag/icons';
+import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+import { Paragraph } from "@gemeente-denhaag/typography";
+import { ArrowLeftIcon, ArrowRightIcon } from "@gemeente-denhaag/icons";
 
-import { Link } from '.';
-import pkg from '../package.json';
-import readme from '../README.md';
+import { Link } from ".";
+import pkg from "../package.json";
+import readme from "../README.md";
 
 <Meta
   title="Components/Navigation/Link"
@@ -13,7 +13,7 @@ import readme from '../README.md';
   parameters={{
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     status: {
-      type: 'WORK IN PROGRESS',
+      type: "WORK IN PROGRESS",
     },
   }}
 />
@@ -21,6 +21,7 @@ import readme from '../README.md';
 <Description markdown={readme} />
 
 ## Usage
+
 This component can be used in two ways:
 
 - As a standard `a`-tag with icon support. For this you need to supply at least an `href`, and an icon can be added in the `icon` prop:

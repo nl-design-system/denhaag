@@ -120,7 +120,7 @@ Date pickers must:
 
 ### Don’ts
 
-Date  pickers must:
+Date pickers must:
 
 - Not be used to enter a date that is many years in the future or the past
 - Not use auto-corrections

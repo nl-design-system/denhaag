@@ -1,12 +1,12 @@
-import { Canvas, Description, Meta, Story } from '@storybook/addon-docs';
-import { DesignTokenDocBlock } from 'storybook-design-token/dist/doc-blocks';
-import { action } from '@storybook/addon-actions';
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+import { action } from "@storybook/addon-actions";
 
-import { Checkbox } from '..';
-import { FormControlLabel } from '../../../FormControlLabel';
-import { FormGroup } from '../../../FormGroup';
-import pkg from '../../package.json';
-import readme from '../../README.md';
+import { Checkbox } from "..";
+import { FormControlLabel } from "../../../FormControlLabel";
+import { FormGroup } from "../../../FormGroup";
+import pkg from "../../package.json";
+import readme from "../../README.md";
 
 <Meta
   title="Components/Input/Checkbox"
@@ -15,7 +15,7 @@ import readme from '../../README.md';
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: { source: { type: "dynamic" } },
     status: {
-      type: 'WORK IN PROGRESS',
+      type: "WORK IN PROGRESS",
     },
   }}
 />
@@ -181,6 +181,7 @@ const ReactCheckBox = <Checkbox onChange={() => {}}></Checkbox>;
 </Canvas>
 
 ### HTML variant
+
 ❗️ Toggling the custom checkbox icon requires additional javascript
 
 <Canvas>
