@@ -119,22 +119,22 @@
       "path": "components/Typography"
     },
     {
-      "path": "src/meta-packages/datadisplay"
+      "path": "packages/datadisplay"
     },
     {
-      "path": "src/meta-packages/denhaag-component-library"
+      "path": "packages/denhaag-component-library"
     },
     {
-      "path": "src/meta-packages/input"
+      "path": "packages/input"
     },
     {
-      "path": "src/meta-packages/layout"
+      "path": "packages/layout"
     },
     {
-      "path": "src/meta-packages/navigation"
+      "path": "packages/navigation"
     },
     {
-      "path": "src/meta-packages/surfaces"
+      "path": "packages/surfaces"
     },
     {
       "path": "proprietary/Common"

@@ -1,12 +1,12 @@
 {
-  "name": "@gemeente-denhaag/layout",
+  "name": "@gemeente-denhaag/surfaces",
   "version": "0.2.3-alpha.48",
-  "description": "A package containing all the layout components",
+  "description": "A package containing all the surface components.",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/nl-design-system/denhaag.git",
-    "directory": "src/meta-packages/layout"
+    "directory": "src/meta-packages/surfaces"
   },
   "license": "EUPL-1.2",
   "author": "Municipality of The Hague",
@@ -17,16 +17,16 @@
     "dist"
   ],
   "scripts": {
-    "build": "rollup -c ../../../rollup.config.js",
+    "build": "rollup -c ../../rollup.config.js",
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baselayoutprops": "^0.2.3-alpha.48",
-    "@gemeente-denhaag/box": "^0.2.3-alpha.48",
-    "@gemeente-denhaag/container": "^0.2.3-alpha.48",
-    "@gemeente-denhaag/grid": "^0.2.3-alpha.48",
-    "@gemeente-denhaag/gridlist": "^0.2.3-alpha.48",
-    "@gemeente-denhaag/hidden": "^0.2.3-alpha.48"
+    "@gemeente-denhaag/accordion": "^0.2.3-alpha.48",
+    "@gemeente-denhaag/appbar": "^0.2.3-alpha.48",
+    "@gemeente-denhaag/baseprops": "^0.2.3-alpha.48",
+    "@gemeente-denhaag/card": "^0.2.3-alpha.48",
+    "@gemeente-denhaag/paper": "^0.1.7",
+    "@gemeente-denhaag/toolbar": "^0.2.3-alpha.48"
   },
   "peerDependencies": {
     "react": "^17.0.1"
