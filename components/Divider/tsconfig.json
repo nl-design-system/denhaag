@@ -15,10 +15,10 @@
       "path": "../BaseDataDisplayProps"
     },
     {
-      "path": "../../src/styles/Components"
+      "path": "../../proprietary/Components"
     },
     {
-      "path": "../../src/styles/Common"
+      "path": "../../proprietary/Common"
     }
   ]
 }

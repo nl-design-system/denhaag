@@ -1,12 +1,12 @@
-import '@gemeente-denhaag/design-tokens-proprietary/dist/theme/index.css';
-import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
-import '@gemeente-denhaag/design-tokens-common/dist/theme/index.css';
+import '../proprietary/Proprietary/dist/theme/index.css';
+import '../proprietary/Components/dist/theme/index.css';
+import '../proprietary/Common/dist/theme/index.css';
 import StylesProvider from '@gemeente-denhaag/stylesprovider';
 import { ThemeDecorator } from 'storybook-addon-themes/dist/decorators/react';
 import { getConfigFromApi } from 'storybook-addon-themes/dist/shared';
 
 const tokenContext = require.context(
-  '!!raw-loader!../src',
+  '!!raw-loader!../proprietary',
   true,
   /^((?![\\/]node_modules|dist[\\/]).)*\.(css|less|scss|sass|svg)$/,
 );

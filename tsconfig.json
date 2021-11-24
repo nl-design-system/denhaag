@@ -137,13 +137,13 @@
       "path": "src/meta-packages/surfaces"
     },
     {
-      "path": "src/styles/Common"
+      "path": "proprietary/Common"
     },
     {
-      "path": "src/styles/Components"
+      "path": "proprietary/Components"
     },
     {
-      "path": "src/styles/Proprietary"
+      "path": "proprietary/Proprietary"
     }
   ]
 }
