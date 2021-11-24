@@ -1,6 +1,6 @@
-import PropTypes from "prop-types";
-import React from "react";
-export const path2css = (path) => `var(--${path.join("-")})`;
+import PropTypes from 'prop-types';
+import React from 'react';
+export const path2css = (path) => `var(--${path.join('-')})`;
 
 export const DesignTokensTable = ({ tokens }) => (
   <table>
@@ -30,6 +30,6 @@ DesignTokensTable.propTypes = {
       name: PropTypes.string,
       path: PropTypes.string,
       value: PropTypes.string,
-    })
+    }),
   ),
 };

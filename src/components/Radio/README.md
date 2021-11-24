@@ -46,7 +46,7 @@ The radio button contains the states normal, hover, disabled, error and focus.
 
 ### Color
 
-- Label: text color  Blue/5
+- Label: text color Blue/5
 - Radio button input inactive: border 1,5px inside Grey/4, background-color white
 - Radio button input active: border 1,5px inside Blue/3, background-color white, dot color Blue/3
 - Radio button label: text color Grey/4
@@ -71,7 +71,7 @@ The radio button contains the states normal, hover, disabled, error and focus.
 - Dot: height and width 12px
 - Label: margin-bottom 8px
 - Checkbox label: padding-left 8px
-- Helper text: margin-left 16px, margin-top	4px
+- Helper text: margin-left 16px, margin-top 4px
 
 ## Accessibility
 

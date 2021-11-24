@@ -15,7 +15,7 @@ module.exports = {
     },
     'storybook-addon-themes',
     'storybook-design-token',
-    '@etchteam/storybook-addon-status/register'
+    '@etchteam/storybook-addon-status/register',
   ],
 
   webpackFinal: async (config, { configType }) => {

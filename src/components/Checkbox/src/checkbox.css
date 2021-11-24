@@ -31,7 +31,7 @@
 }
 
 .denhaag-checkbox:focus-within:after,
-.denhaag-checkbox--focus:after  {
+.denhaag-checkbox--focus:after {
   content: "";
   display: block;
   position: absolute;
@@ -101,7 +101,7 @@
 }
 
 .denhaag-checkbox--disabled:hover .denhaag-checkbox__input,
-.denhaag-checkbox--disabled.denhaag-checkbox--hover .denhaag-checkbox__input{
+.denhaag-checkbox--disabled.denhaag-checkbox--hover .denhaag-checkbox__input {
   cursor: default;
 }
 

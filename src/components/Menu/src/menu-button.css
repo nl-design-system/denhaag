@@ -62,5 +62,7 @@
 }
 
 .denhaag-menu-button--expandable::after {
-  padding-inline-end: calc(var(--denhaag-menu-button-chevron-size) + var(--denhaag-menu-button-chevron-padding-inline-start));
+  padding-inline-end: calc(
+    var(--denhaag-menu-button-chevron-size) + var(--denhaag-menu-button-chevron-padding-inline-start)
+  );
 }

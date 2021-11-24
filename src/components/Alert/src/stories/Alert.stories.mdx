@@ -1,5 +1,5 @@
-import { ArgsTable, Canvas, Description, Meta, Story } from '@storybook/addon-docs';
-import { DesignTokenDocBlock } from 'storybook-design-token/dist/doc-blocks';
+import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
 import { MegaphoneIcon } from "@gemeente-denhaag/icons";
 import { action } from "@storybook/addon-actions";
 import { Alert } from "..";
@@ -13,8 +13,8 @@ import readme from "../../README.md";
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: { source: { type: "dynamic" } },
     status: {
-      type: 'WORK IN PROGRESS'
-    }
+      type: "WORK IN PROGRESS",
+    },
   }}
 />
 
@@ -275,12 +275,7 @@ const SuccessAlert = <Alert
           </div>
         </div>
         <div class="denhaag-alert__close">
-          <button
-            class="denhaag-icon-button"
-            tabindex="0"
-            type="button"
-            aria-label="Close"
-          >
+          <button class="denhaag-icon-button" tabindex="0" type="button" aria-label="Close">
             <span class="denhaag-icon-button__label">
               <svg
                 width="1em"

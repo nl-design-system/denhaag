@@ -60,7 +60,7 @@ jobs:
         env:
           CHOKIDAR_USEPOLLING: true
           CYPRESS_CICD: true
-      
+
       - name: Save failed test snapshots in artifact
         uses: actions/upload-artifact@v2
         if: failure()
@@ -98,7 +98,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      
+
       - name: Download storybook artifact
         uses: actions/download-artifact@v2
         with:

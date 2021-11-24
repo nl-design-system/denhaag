@@ -74,7 +74,7 @@ The text field contains the states active, inactive, disabled, error and focus.
 - Container: height 40px, border 1px
 - Trailing icon: height and width 20px, padding-left 16px, padding-right 12px
 - Error icon: height and width 20px, padding-left 16px, padding-right 8px
-- Helper text: margin-left 16px, margin-top	4px
+- Helper text: margin-left 16px, margin-top 4px
 - Field focus: container border 2px, dash 5,5
 
 #### Text field multiline
@@ -85,8 +85,8 @@ The text field contains the states active, inactive, disabled, error and focus.
 - Container: height and width varies, border 1px
 - Trailing icon: height and width 20px, padding-left 16px, padding-right 12px
 - Error icon: height and width 20px, padding-left 16px, padding-right 8px
-- Helper text: margin-left 16px, margin-top	4px
-- Character counter: margin-right 16px, margin-top	4px
+- Helper text: margin-left 16px, margin-top 4px
+- Character counter: margin-right 16px, margin-top 4px
 - Field focus: container border 2px, dash 5,5
 
 ## Accessibility

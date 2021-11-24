@@ -15,13 +15,13 @@
   border: var(--denhaag-dot-indicator-border);
 }
 
-.denhaag-dot-indicator--overlap-rectangle .denhaag-dot-indicator__dot  {
+.denhaag-dot-indicator--overlap-rectangle .denhaag-dot-indicator__dot {
   transform: scale(1) translate(50%, -50%);
   top: 0;
   right: 0;
 }
 
-.denhaag-dot-indicator--overlap-circle .denhaag-dot-indicator__dot  {
+.denhaag-dot-indicator--overlap-circle .denhaag-dot-indicator__dot {
   transform: scale(1) translate(50%, -50%);
   top: 14%;
   right: 14%;
