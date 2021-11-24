@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { mount as cypressMount } from '@cypress/react';
-import StylesProvider from '../../src/components/StylesProvider/src/index';
+import StylesProvider from '../../components/StylesProvider/src/index';
 import '../../src/styles/Common/dist/index';
 import '../../src/styles/Components/dist/index';
 import '../../src/styles/Proprietary/dist/index';

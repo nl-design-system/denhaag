@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.build.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "typeRoots": ["./src/@types"],
+    "composite": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["dist", "src/**/*.stories.tsx"],
+  "references": [
+    {
+      "path": "../BaseProps"
+    }
+  ]
+}

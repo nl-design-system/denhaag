@@ -1,0 +1,359 @@
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+import { action } from "@storybook/addon-actions";
+
+import { Checkbox } from "../index";
+import { FormControlLabel } from "../../../FormControlLabel";
+import { FormGroup } from "../../../FormGroup";
+import pkg from "../../package.json";
+import readme from "../../README.md";
+
+<Meta
+  title="Components/Input/Checkbox"
+  component={Checkbox}
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Design Tokens
+
+<DesignTokenDocBlock categoryName="Checkbox" viewType="table" />
+
+## Stories
+
+### Default
+
+<Canvas>
+  <Story
+    name="Default"
+    args={{}}
+    parameters={{
+      docs: {
+        source: {
+          code: `
+<FormControlLabel
+  label="Checkbox"
+  control={<Checkbox onChange={() => {}}></Checkbox>}
+></FormControlLabel>
+`,
+        },
+      },
+    }}
+  >
+    {(args) => (
+      <FormControlLabel
+        label="Checkbox"
+        control={<Checkbox onChange={action("Checkbox action")} {...args}></Checkbox>}
+      ></FormControlLabel>
+    )}
+  </Story>
+</Canvas>
+
+## Without label
+
+<Canvas>
+  <Story
+    name="Without label"
+    args={{}}
+    parameters={{
+      docs: {
+        source: {
+          code: `
+import { Checkbox } from "@gemeente-denhaag/checkbox";
+const ReactCheckBox = <Checkbox onChange={() => {}}></Checkbox>;
+`,
+        },
+      },
+    }}
+  >
+    {(args) => <Checkbox onChange={action("Checkbox action")} {...args}></Checkbox>}
+  </Story>
+</Canvas>
+
+### With error
+
+<Canvas>
+  <Story name="Error" args={{ error: true }}>
+    {(args) => (
+      <FormControlLabel
+        label="Checkbox"
+        control={<Checkbox onChange={action("Checkbox action")} {...args}></Checkbox>}
+      ></FormControlLabel>
+    )}
+  </Story>
+</Canvas>
+
+### FormGroup examples
+
+<Canvas>
+  <Story
+    name="FormGroup example"
+    args={{}}
+    parameters={{
+      docs: {
+        source: {
+          code: `
+<FormGroup label="Label" helperText="Helper text">
+  <FormControlLabel
+    label="Checkbox"
+    control={<Checkbox></Checkbox>}
+  ></FormControlLabel>
+  <FormControlLabel
+    label="Checkbox"
+    control={<Checkbox></Checkbox>}
+  ></FormControlLabel>
+  <FormControlLabel
+    label="Checkbox"
+    control={<Checkbox></Checkbox>}
+  ></FormControlLabel>
+</FormGroup>
+`,
+        },
+      },
+    }}
+  >
+    {(args) => (
+      <FormGroup label="Label" helperText="Helper text">
+        <FormControlLabel
+          label="Checkbox"
+          control={<Checkbox onChange={action("Checkbox action")} {...args}></Checkbox>}
+        ></FormControlLabel>
+        <FormControlLabel
+          label="Checkbox"
+          control={<Checkbox onChange={action("Checkbox action")} {...args}></Checkbox>}
+        ></FormControlLabel>
+        <FormControlLabel
+          label="Checkbox"
+          control={<Checkbox onChange={action("Checkbox action")} {...args}></Checkbox>}
+        ></FormControlLabel>
+      </FormGroup>
+    )}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="FormGroup error" args={{}}>
+    {(args) => (
+      <FormGroup label="Label" helperText="You can show errors" error>
+        <FormControlLabel
+          label="Checkbox"
+          control={<Checkbox error checked onChange={action("Checkbox action")} {...args}></Checkbox>}
+        ></FormControlLabel>
+        <FormControlLabel
+          label="Checkbox"
+          control={<Checkbox onChange={action("Checkbox action")} {...args}></Checkbox>}
+        ></FormControlLabel>
+        <FormControlLabel
+          label="Checkbox"
+          control={<Checkbox onChange={action("Checkbox action")} {...args}></Checkbox>}
+        ></FormControlLabel>
+      </FormGroup>
+    )}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="FormGroup disabled" args={{}}>
+    {(args) => (
+      <FormGroup label="Label" helperText="Disabled checkboxes">
+        <FormControlLabel
+          label="Checkbox"
+          control={<Checkbox disabled checked onChange={action("Checkbox action")} {...args}></Checkbox>}
+        ></FormControlLabel>
+        <FormControlLabel
+          label="Checkbox"
+          control={<Checkbox disabled onChange={action("Checkbox action")} {...args}></Checkbox>}
+        ></FormControlLabel>
+        <FormControlLabel
+          label="Checkbox"
+          control={<Checkbox onChange={action("Checkbox action")} {...args}></Checkbox>}
+        ></FormControlLabel>
+      </FormGroup>
+    )}
+  </Story>
+</Canvas>
+
+### HTML variant
+
+❗️ Toggling the custom checkbox icon requires additional javascript
+
+<Canvas>
+  <Story name="HTML Checkbox" args={{}}>
+    {(args) => (
+      <div>
+        <div>
+          <p class="utrecht-heading-5">Default</p>
+          <label class="denhaag-form-control-label">
+            <span class="denhaag-checkbox denhaag-checkbox--checked" aria-disabled="false">
+              <input class="denhaag-checkbox__input" type="checkbox" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="72"
+                height="72"
+                viewBox="0 0 24 24"
+                class="denhaag-checkbox__icon"
+                focusable="false"
+                aria-hidden="true"
+                shape-rendering="auto"
+              >
+                <rect
+                  x="-9.5"
+                  y="-9.5"
+                  rx="0.5"
+                  ry="0.5"
+                  width="19"
+                  height="19"
+                  transform="translate(12 12)"
+                  stroke="currentColor"
+                  fill="currentColor"
+                ></rect>
+                <path
+                  d="M17.663 8l-7.333 7.333L6.997 12"
+                  stroke="#fff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                ></path>
+              </svg>
+            </span>
+            <span class="denhaag-form-control-label__label">Checkbox</span>
+          </label>
+          <label class="denhaag-form-control-label">
+            <span class="denhaag-checkbox" aria-disabled="false">
+              <input class="denhaag-checkbox__input" type="checkbox" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                class="denhaag-checkbox__icon"
+                focusable="false"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                shape-rendering="auto"
+              >
+                <rect
+                  x="-9.5"
+                  y="-9.5"
+                  rx="0.5"
+                  ry="0.5"
+                  width="19"
+                  height="19"
+                  transform="translate(12 12)"
+                  stroke="currentColor"
+                  fill="#fff"
+                ></rect>
+              </svg>
+            </span>
+            <span class="denhaag-form-control-label__label">Checkbox</span>
+          </label>
+        </div>
+        <div>
+          <p class="utrecht-heading-5">Disabled</p>
+          <label class="denhaag-form-control-label denhaag-form-control-label--disabled">
+            <span class="denhaag-checkbox denhaag-checkbox--disabled" aria-disabled="true" tab-index="-1">
+              <input class="denhaag-checkbox__input" type="checkbox" disabled />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                class="denhaag-checkbox__icon"
+                focusable="false"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                shape-rendering="auto"
+              >
+                <rect
+                  x="-9.5"
+                  y="-9.5"
+                  rx="0.5"
+                  ry="0.5"
+                  width="19"
+                  height="19"
+                  transform="translate(12 12)"
+                  stroke="currentColor"
+                  fill="#fff"
+                ></rect>
+              </svg>
+            </span>
+            <span class="denhaag-form-control-label__label">Checkbox</span>
+          </label>
+        </div>
+        <div>
+          <p class="utrecht-heading-5">Error</p>
+          <label class="denhaag-form-control-label">
+            <span class="denhaag-checkbox denhaag-checkbox--error denhaag-checkbox--checked" aria-disabled="false">
+              <input class="denhaag-checkbox__input" type="checkbox" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="72"
+                height="72"
+                viewBox="0 0 24 24"
+                class="denhaag-checkbox__icon"
+                focusable="false"
+                aria-hidden="true"
+                shape-rendering="auto"
+              >
+                <rect
+                  x="-9.5"
+                  y="-9.5"
+                  rx="0.5"
+                  ry="0.5"
+                  width="19"
+                  height="19"
+                  transform="translate(12 12)"
+                  stroke="currentColor"
+                  fill="currentColor"
+                ></rect>
+                <path
+                  d="M17.663 8l-7.333 7.333L6.997 12"
+                  stroke="#fff"
+                  strokeWidth="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                ></path>
+              </svg>
+            </span>
+            <span class="denhaag-form-control-label__label">Checkbox</span>
+          </label>
+          <label class="denhaag-form-control-label">
+            <span class="denhaag-checkbox denhaag-checkbox--error" aria-disabled="false">
+              <input class="denhaag-checkbox__input" type="checkbox" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                class="denhaag-checkbox__icon"
+                focusable="false"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                shape-rendering="auto"
+              >
+                <rect
+                  x="-9.5"
+                  y="-9.5"
+                  rx="0.5"
+                  ry="0.5"
+                  width="19"
+                  height="19"
+                  transform="translate(12 12)"
+                  stroke="currentColor"
+                  fill="#fff"
+                ></rect>
+              </svg>
+            </span>
+            <span class="denhaag-form-control-label__label">Checkbox</span>
+          </label>
+        </div>
+      </div>
+    )}
+  </Story>
+</Canvas>

@@ -9,25 +9,25 @@
   "exclude": ["dist", "src/**/*.stories.tsx"],
   "references": [
     {
-      "path": "../../components/Avatar"
+      "path": "../../../components/Avatar"
     },
     {
-      "path": "../../components/Alert"
+      "path": "../../../components/Alert"
     },
     {
-      "path": "../../components/BadgeCounter"
+      "path": "../../../components/BadgeCounter"
     },
     {
-      "path": "../../components/BaseProps"
+      "path": "../../../components/BaseProps"
     },
     {
-      "path": "../../components/Divider"
+      "path": "../../../components/Divider"
     },
     {
-      "path": "../../components/List"
+      "path": "../../../components/List"
     },
     {
-      "path": "../../components/Typography"
+      "path": "../../../components/Typography"
     }
   ]
 }

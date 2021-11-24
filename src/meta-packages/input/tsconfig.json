@@ -9,43 +9,43 @@
   "exclude": ["dist", "src/**/*.stories.tsx"],
   "references": [
     {
-      "path": "../../components/BaseProps"
+      "path": "../../../components/BaseProps"
     },
     {
-      "path": "../../components/Button"
+      "path": "../../../components/Button"
     },
     {
-      "path": "../../components/Checkbox"
+      "path": "../../../components/Checkbox"
     },
     {
-      "path": "../../components/FormControl"
+      "path": "../../../components/FormControl"
     },
     {
-      "path": "../../components/FormControlLabel"
+      "path": "../../../components/FormControlLabel"
     },
     {
-      "path": "../../components/FormGroup"
+      "path": "../../../components/FormGroup"
     },
     {
-      "path": "../../components/IconButton"
+      "path": "../../../components/IconButton"
     },
     {
-      "path": "../../components/InputLabel"
+      "path": "../../../components/InputLabel"
     },
     {
-      "path": "../../components/Pickers"
+      "path": "../../../components/Pickers"
     },
     {
-      "path": "../../components/Radio"
+      "path": "../../../components/Radio"
     },
     {
-      "path": "../../components/Select"
+      "path": "../../../components/Select"
     },
     {
-      "path": "../../components/Switch"
+      "path": "../../../components/Switch"
     },
     {
-      "path": "../../components/TextField"
+      "path": "../../../components/TextField"
     }
   ]
 }
