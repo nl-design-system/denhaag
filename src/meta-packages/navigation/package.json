@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/navigation",
-  "version": "0.2.3-alpha.47",
+  "version": "0.2.3-alpha.48",
   "description": "Navigation components",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -21,13 +21,13 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "^0.2.3-alpha.47",
-    "@gemeente-denhaag/drawer": "^0.2.3-alpha.47",
-    "@gemeente-denhaag/link": "^0.2.3-alpha.47",
-    "@gemeente-denhaag/menu": "^0.2.3-alpha.47",
-    "@gemeente-denhaag/swipeabledrawer": "^0.2.3-alpha.47",
-    "@gemeente-denhaag/tab": "^0.2.3-alpha.47",
-    "@gemeente-denhaag/timeline": "^0.2.3-alpha.47",
+    "@gemeente-denhaag/baseprops": "^0.2.3-alpha.48",
+    "@gemeente-denhaag/drawer": "^0.2.3-alpha.48",
+    "@gemeente-denhaag/link": "^0.2.3-alpha.48",
+    "@gemeente-denhaag/menu": "^0.2.3-alpha.48",
+    "@gemeente-denhaag/swipeabledrawer": "^0.2.3-alpha.48",
+    "@gemeente-denhaag/tab": "^0.2.3-alpha.48",
+    "@gemeente-denhaag/timeline": "^0.2.3-alpha.48",
     "@material-ui/core": "^4.11.0",
     "@material-ui/lab": "^4.0.0-alpha"
   },
