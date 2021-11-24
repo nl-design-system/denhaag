@@ -9,10 +9,10 @@
   "exclude": ["dist", "src/**/*.stories.tsx"],
   "references": [
     {
-      "path": "../../src/styles/Common"
+      "path": "../../proprietary/Common"
     },
     {
-      "path": "../../src/styles/Components"
+      "path": "../../proprietary/Components"
     },
     {
       "path": "../BaseDataDisplayProps"

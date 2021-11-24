@@ -12,9 +12,8 @@
   "author": "Municipality of The Hague",
   "workspaces": [
     "src/meta-packages/*",
-    "src/styles/*",
-    "src/",
-    "components/*"
+    "components/*",
+    "proprietary/*"
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap",

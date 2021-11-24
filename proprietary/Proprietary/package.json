@@ -7,7 +7,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/nl-design-system/denhaag.git",
-    "directory": "src/styles/Proprietary"
+    "directory": "proprietary/Proprietary"
   },
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "files": [
@@ -18,8 +18,8 @@
   "scripts": {
     "build": "yarn npm-run-all build:*",
     "build:ts": "tsc -b",
-    "build:style-dictionary": "yarn style-dictionary build --config ../../../style-dictionary.config.json",
+    "build:style-dictionary": "yarn style-dictionary build --config ../../style-dictionary.config.json",
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo",
-    "watch:style-dictionary": "yarn chokidar --follow-symlinks --initial  \"src/**/*.json\" -c \"yarn build:style-dictionary\""
+    "watch:style-dictionary": "yarn chokidar --follow-symlinks --initial  \"proprietary/**/*.json\" -c \"yarn build:style-dictionary\""
   }
 }
