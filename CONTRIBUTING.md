@@ -126,8 +126,8 @@ This versioning system is also enforced with the `yarn lint:package` command.
 All folder names should use lowercase, except for folders containing a component. Folders containing a component should use PascalCasing and have the same name as the component. See the following example:
 
 ```
- src/components/layout/Box
- src/components/layout/Box.tsx
+ components/layout/Box
+ components/layout/Box.tsx
 ```
 
 ### Typescript file names
