@@ -32,7 +32,7 @@
     "postpublish": "pinst --enable",
     "prepublishOnly": "pinst --disable",
     "prettier": "prettier --write .",
-    "prettier-check": "prettier -c src/**/*.{js,jsx,ts,tsx}",
+    "prettier-check": "prettier -c src/**/*.{js,json,jsx,ts,tsx}",
     "publish": "lerna publish from-package",
     "release": "lerna version prerelease --no-changelog --no-private --no-commit-hooks",
     "storybook": "npm-run-all --parallel watch:*",
