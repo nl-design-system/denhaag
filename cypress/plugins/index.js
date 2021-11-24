@@ -68,7 +68,7 @@ module.exports = (on, config) => {
       }
       if (!fs.existsSync(`components/${nameOverride || name}/specs/__image_snapshots__`)) {
         fs.symlinkSync(
-          `../../../../test_images/${nameOverride || name}`,
+          `../../../test_images/${nameOverride || name}`,
           `components/${nameOverride || name}/specs/__image_snapshots__`,
           'dir',
         );
