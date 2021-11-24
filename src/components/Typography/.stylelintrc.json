@@ -1,6 +1,0 @@
-{
-  "extends": "../../../.stylelintrc.json",
-  "rules": {
-    "selector-class-pattern": "(denhaag|utrecht)-[a-z0-9-]+"
-  }
-}

@@ -9,7 +9,7 @@
   "exclude": ["dist", "src/**/*.stories.tsx"],
   "references": [
     {
-      "path": "../../components/BaseProps"
+      "path": "../../../components/BaseProps"
     },
     {
       "path": "../datadisplay"
@@ -24,7 +24,7 @@
       "path": "../navigation"
     },
     {
-      "path": "../../components/Pickers"
+      "path": "../../../components/Pickers"
     },
     {
       "path": "../surfaces"

@@ -1,0 +1,35 @@
+{
+    "name": "@gemeente-denhaag/gridlist",
+    "version": "0.2.3-alpha.48",
+    "description": "A GridList component",
+    "bugs": "https://github.com/nl-design-system/denhaag/issues",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nl-design-system/denhaag.git",
+        "directory": "src/components/GridList"
+    },
+    "license": "EUPL-1.2",
+    "author": "Municipality of The Hague",
+    "exports": "./dist/index.js",
+    "main": "dist/index.js",
+    "module": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+      "dist"
+    ],
+    "scripts": {
+        "build": "rollup -c ../../rollup.config.js",
+        "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+    },
+    "dependencies": {
+        "@gemeente-denhaag/baselayoutprops": "^0.2.3-alpha.48",
+        "@material-ui/core": "^4.11.0"
+    },
+    "peerDependencies": {
+        "react": "^17.0.1"
+    },
+    "devDependencies": {
+        "@gemeente-denhaag/iconbutton": "^0.2.3-alpha.48"
+    },
+    "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
+}

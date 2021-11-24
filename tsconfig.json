@@ -5,118 +5,118 @@
   },
   "references": [
     {
-      "path": "src/components/Accordion"
+      "path": "components/Accordion"
     },
     {
-      "path": "src/components/Alert"
+      "path": "components/Alert"
     },
     {
-      "path": "src/components/AppBar"
+      "path": "components/AppBar"
     },
     {
-      "path": "src/components/Avatar"
+      "path": "components/Avatar"
     },
     {
-      "path": "src/components/BadgeCounter"
+      "path": "components/BadgeCounter"
     },
     {
-      "path": "src/components/BaseDataDisplayProps"
+      "path": "components/BaseDataDisplayProps"
     },
     {
-      "path": "src/components/BaseLayoutProps"
+      "path": "components/BaseLayoutProps"
     },
     {
-      "path": "src/components/BaseProps"
+      "path": "components/BaseProps"
     },
     {
-      "path": "src/components/Box"
+      "path": "components/Box"
     },
     {
-      "path": "src/components/Button"
+      "path": "components/Button"
     },
     {
-      "path": "src/components/Card"
+      "path": "components/Card"
     },
     {
-      "path": "src/components/Checkbox"
+      "path": "components/Checkbox"
     },
     {
-      "path": "src/components/Container"
+      "path": "components/Container"
     },
     {
-      "path": "src/components/Divider"
+      "path": "components/Divider"
     },
     {
-      "path": "src/components/Drawer"
+      "path": "components/Drawer"
     },
     {
-      "path": "src/components/FormControl"
+      "path": "components/FormControl"
     },
     {
-      "path": "src/components/FormControlLabel"
+      "path": "components/FormControlLabel"
     },
     {
-      "path": "src/components/FormGroup"
+      "path": "components/FormGroup"
     },
     {
-      "path": "src/components/Grid"
+      "path": "components/Grid"
     },
     {
-      "path": "src/components/GridList"
+      "path": "components/GridList"
     },
     {
-      "path": "src/components/Hidden"
+      "path": "components/Hidden"
     },
     {
-      "path": "src/components/IconButton"
+      "path": "components/IconButton"
     },
     {
-      "path": "src/components/Icons"
+      "path": "components/Icons"
     },
     {
-      "path": "src/components/InputLabel"
+      "path": "components/InputLabel"
     },
     {
-      "path": "src/components/Link"
+      "path": "components/Link"
     },
     {
-      "path": "src/components/List"
+      "path": "components/List"
     },
     {
-      "path": "src/components/Menu"
+      "path": "components/Menu"
     },
     {
-      "path": "src/components/Pickers"
+      "path": "components/Pickers"
     },
     {
-      "path": "src/components/PickersUtilsProvider"
+      "path": "components/PickersUtilsProvider"
     },
     {
-      "path": "src/components/Radio"
+      "path": "components/Radio"
     },
     {
-      "path": "src/components/Select"
+      "path": "components/Select"
     },
     {
-      "path": "src/components/SwipeableDrawer"
+      "path": "components/SwipeableDrawer"
     },
     {
-      "path": "src/components/Switch"
+      "path": "components/Switch"
     },
     {
-      "path": "src/components/Tab"
+      "path": "components/Tab"
     },
     {
-      "path": "src/components/TextField"
+      "path": "components/TextField"
     },
     {
-      "path": "src/components/Timeline"
+      "path": "components/Timeline"
     },
     {
-      "path": "src/components/Toolbar"
+      "path": "components/Toolbar"
     },
     {
-      "path": "src/components/Typography"
+      "path": "components/Typography"
     },
     {
       "path": "src/meta-packages/datadisplay"

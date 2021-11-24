@@ -9,19 +9,19 @@
   "exclude": ["dist", "src/**/*.stories.tsx"],
   "references": [
     {
-      "path": "../../components/Accordion"
+      "path": "../../../components/Accordion"
     },
     {
-      "path": "../../components/AppBar"
+      "path": "../../../components/AppBar"
     },
     {
-      "path": "../../components/BaseProps"
+      "path": "../../../components/BaseProps"
     },
     {
-      "path": "../../components/Card"
+      "path": "../../../components/Card"
     },
     {
-      "path": "../../components/Toolbar"
+      "path": "../../../components/Toolbar"
     }
   ]
 }
