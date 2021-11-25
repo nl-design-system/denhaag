@@ -32,6 +32,7 @@ export default {
     postcss({
       extensions: ['.css'],
       minimize: true,
+      extract: true,
     }),
     nodeResolve(),
     commonjs({ include: /node_modules/ }),
