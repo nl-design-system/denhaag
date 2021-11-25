@@ -5,11 +5,11 @@ import { ListSubheaderProps } from './ListSubheader';
 import { list_classes as classes } from './bem-mapping';
 
 import './mui-override.css';
-import './listitem.css';
-import './listitemsecondaryaction.css';
-import './listitemicon.css';
-import './listitemtext.css';
-import './listsubheader.css';
+import './list-item.css';
+import './list-item-secondary-action.css';
+import './list-item-icon.css';
+import './list-item-text.css';
+import './list-subheader.css';
 
 export interface ListProps extends Omit<BaseProps, 'classes'> {
   /**
