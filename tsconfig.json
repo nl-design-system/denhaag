@@ -95,9 +95,6 @@
       "path": "components/Select"
     },
     {
-      "path": "components/SwipeableDrawer"
-    },
-    {
       "path": "components/Switch"
     },
     {
