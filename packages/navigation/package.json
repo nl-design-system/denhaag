@@ -22,7 +22,6 @@
   },
   "dependencies": {
     "@gemeente-denhaag/baseprops": "^0.2.3-alpha.52",
-    "@gemeente-denhaag/drawer": "^0.2.3-alpha.52",
     "@gemeente-denhaag/link": "^0.2.3-alpha.52",
     "@gemeente-denhaag/menu": "^0.2.3-alpha.52",
     "@gemeente-denhaag/swipeabledrawer": "^0.2.3-alpha.52",
