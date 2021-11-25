@@ -20,9 +20,6 @@
     "build": "rollup -c ../../rollup.config.js",
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
-  "dependencies": {
-    "@gemeente-denhaag/baselayoutprops": "^0.2.3-alpha.52"
-  },
   "peerDependencies": {
     "react": "^17.0.1"
   }

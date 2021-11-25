@@ -6,10 +6,5 @@
     "composite": true
   },
   "include": ["src/**/*"],
-  "exclude": ["dist", "src/**/*.stories.tsx"],
-  "references": [
-    {
-      "path": "../../components/BaseLayoutProps"
-    },
-  ]
+  "exclude": ["dist", "src/**/*.stories.tsx"]
 }
