@@ -1,6 +1,6 @@
 {
     "name": "@gemeente-denhaag/pickersutilsprovider",
-    "version": "0.2.3-alpha.48",
+    "version": "0.2.3-alpha.49",
     "description": "A Utilsprovider for pickers",
     "bugs": "https://github.com/nl-design-system/denhaag/issues",
     "repository": {
@@ -15,7 +15,7 @@
     "module": "dist/index.js",
     "types": "dist/index.d.ts",
     "files": [
-      "dist"
+        "dist"
     ],
     "scripts": {
         "build": "rollup -c ../../rollup.config.js",
