@@ -44,6 +44,15 @@
       "path": "components/FormGroup"
     },
     {
+<<<<<<< HEAD
+=======
+      "path": "components/GridList"
+    },
+    {
+      "path": "components/Hidden"
+    },
+    {
+>>>>>>> aaf0ec0a (feat: deprecated Griid)
       "path": "components/IconButton"
     },
     {
