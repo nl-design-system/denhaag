@@ -6,7 +6,7 @@ import _ from 'lodash';
 import path from 'path';
 import postcss from 'rollup-plugin-postcss';
 
-import tsconfig from './tsconfig.json';
+import tsconfig from '../../tsconfig.json';
 
 const externalDependencies = [
   '@material-ui/core',
@@ -32,6 +32,7 @@ export default {
     postcss({
       extensions: ['.css'],
       minimize: true,
+      extract: true,
     }),
     nodeResolve(),
     commonjs({ include: /node_modules/ }),

@@ -17,9 +17,9 @@
   ],
   "scripts": {
     "build": "yarn npm-run-all build:*",
-    "build:bem": "rollup -c ../../rollup.config.js -i src/bem.tsx",
-    "build:root-theme": "rollup -c ../../rollup.config.js -i src/root-theme.tsx",
-    "build:index": "rollup -c ../../rollup.config.js",
+    "build:bem": "rollup -c rollup.config.js -i src/bem.tsx",
+    "build:root-theme": "rollup -c rollup.config.js -i src/root-theme.tsx",
+    "build:index": "rollup -c rollup.config.js",
     "build:clean": "yarn rimraf dist/.tsbuildinfo dist/*.ts dist/*.js",
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
