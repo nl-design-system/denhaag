@@ -16,9 +16,6 @@
     },
     {
       "path": "../../components/Card"
-    },
-    {
-      "path": "../../components/Toolbar"
     }
   ]
 }

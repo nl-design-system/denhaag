@@ -24,7 +24,6 @@
     "@gemeente-denhaag/accordion": "^0.2.3-alpha.52",
     "@gemeente-denhaag/baseprops": "^0.2.3-alpha.52",
     "@gemeente-denhaag/card": "^0.2.3-alpha.52",
-    "@gemeente-denhaag/toolbar": "^0.2.3-alpha.52"
   },
   "peerDependencies": {
     "react": "^17.0.1"
