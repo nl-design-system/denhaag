@@ -4,7 +4,6 @@ import Divider, { DividerProps } from './index';
 import pkg from '../package.json';
 import List, { ListItem, ListSubheader } from '../../List';
 import { InboxIcon, EmailIcon } from '@gemeente-denhaag/icons';
-import Grid from '@gemeente-denhaag/grid';
 
 export default {
   title: 'Components/Data Display/Divider',
@@ -24,7 +23,7 @@ export default {
 
 const Template: Story<DividerProps> = (args: DividerProps) => {
   return args.orientation === 'vertical' ? (
-    <Grid container>
+    <div style={{ display: 'flex' }}>
       <img
         alt="The Lagoon Nebula."
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Lagoon_Nebula.jpg/1024px-Lagoon_Nebula.jpg"
@@ -38,7 +37,7 @@ const Template: Story<DividerProps> = (args: DividerProps) => {
         width={500}
         height={250}
       />
-    </Grid>
+    </div>
   ) : (
     <List subheader={<ListSubheader>Divider showcase</ListSubheader>}>
       <ListItem primaryText="I am above the divider." leftIcon={<InboxIcon />}></ListItem>
