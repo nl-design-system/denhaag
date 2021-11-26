@@ -1,6 +1,13 @@
 .denhaag-button {
   font-family: var(--denhaag-button-font-family);
   border-radius: var(--denhaag-button-border-radius);
+
+  line-height: 1.75;
+  cursor: pointer;
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  border: 0;
 }
 
 .denhaag-button--focus:after,
@@ -127,3 +134,16 @@
 .denhaag-button__icon-size-large > *:first-child {
   font-size: var(--denhaag-typography-scale-xl-font-size);
 }
+
+.denhaag-button__start-icon {
+  display: inherit;
+  margin-inline-start: -4px;
+  margin-inline-end: 8px;
+}
+
+.denhaag-button__end-icon {
+  display: inherit;
+  margin-inline-start: 8px;
+  margin-inline-end: -4px;
+}
+
