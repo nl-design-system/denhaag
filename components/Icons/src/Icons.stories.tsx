@@ -1,6 +1,5 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Grid from '../../Grid';
 import * as Icons from './index';
 import SvgIcon, { SvgIconProps } from './index';
 import pkg from '../package.json';
@@ -33,20 +32,16 @@ const AllTemplate: Story<SvgIconProps> = (props: SvgIconProps) => {
   const children = allIconNames.map<React.ReactElement>((iconName) => {
     const IconElement = Icons[iconName];
     return (
-      <Grid item xs={2} key={iconName}>
+      <div style={{ flexBasis: '16.666667%' }} key={iconName}>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
           <IconElement {...props} />
         </div>
         <p style={{ textAlign: 'center', color: '#4B4B4B', fontFamily: 'monospace' }}>{iconName}</p>
-      </Grid>
+      </div>
     );
   });
 
-  return (
-    <Grid container spacing={3}>
-      {children}
-    </Grid>
-  );
+  return <div style={{ display: 'flex', flexWrap: 'wrap' }}>{children}</div>;
 };
 
 const SingleTemplate: Story<SvgIconProps> = ({ component, ...props }: SvgIconProps) => {

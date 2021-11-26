@@ -31,7 +31,6 @@ exports[`Alerts tests > a11y and snapshots #0`] = `
             shape-rendering="auto"
           >
             <g
-              clip-path="url(#alert-triangle_svg__clip0)"
               stroke="currentColor"
               fill="none"
               stroke-width="2"
@@ -42,11 +41,6 @@ exports[`Alerts tests > a11y and snapshots #0`] = `
                 d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0v0zM12 17h.01M12 9v4"
               ></path>
             </g>
-            <defs>
-              <clipPath id="alert-triangle_svg__clip0">
-                <path fill="#fff" d="M0 0h24v24H0z"></path>
-              </clipPath>
-            </defs>
           </svg>
         </div>
         <div class="denhaag-alert__content">
@@ -157,7 +151,6 @@ exports[`Alerts tests > a11y and snapshots #0`] = `
             shape-rendering="auto"
           >
             <g
-              clip-path="url(#alert-triangle_svg__clip0)"
               stroke="currentColor"
               fill="none"
               stroke-width="2"
@@ -168,11 +161,6 @@ exports[`Alerts tests > a11y and snapshots #0`] = `
                 d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0v0zM12 17h.01M12 9v4"
               ></path>
             </g>
-            <defs>
-              <clipPath id="alert-triangle_svg__clip0">
-                <path fill="#fff" d="M0 0h24v24H0z"></path>
-              </clipPath>
-            </defs>
           </svg>
         </div>
         <div class="denhaag-alert__content">
@@ -419,7 +407,6 @@ exports[`Alerts tests > a11y and snapshots #2`] = `
             shape-rendering="auto"
           >
             <g
-              clip-path="url(#alert-triangle_svg__clip0)"
               stroke="currentColor"
               fill="none"
               stroke-width="2"
@@ -430,11 +417,6 @@ exports[`Alerts tests > a11y and snapshots #2`] = `
                 d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0v0zM12 17h.01M12 9v4"
               ></path>
             </g>
-            <defs>
-              <clipPath id="alert-triangle_svg__clip0">
-                <path fill="#fff" d="M0 0h24v24H0z"></path>
-              </clipPath>
-            </defs>
           </svg>
         </div>
         <div class="denhaag-alert__content">
@@ -623,7 +605,6 @@ exports[`Alerts tests > a11y and snapshots #2`] = `
             shape-rendering="auto"
           >
             <g
-              clip-path="url(#alert-triangle_svg__clip0)"
               stroke="currentColor"
               fill="none"
               stroke-width="2"
@@ -634,11 +615,6 @@ exports[`Alerts tests > a11y and snapshots #2`] = `
                 d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0v0zM12 17h.01M12 9v4"
               ></path>
             </g>
-            <defs>
-              <clipPath id="alert-triangle_svg__clip0">
-                <path fill="#fff" d="M0 0h24v24H0z"></path>
-              </clipPath>
-            </defs>
           </svg>
         </div>
         <div class="denhaag-alert__content">
@@ -722,7 +698,6 @@ exports[`Alerts tests > a11y and snapshots #3`] = `
             shape-rendering="auto"
           >
             <g
-              clip-path="url(#alert-triangle_svg__clip0)"
               stroke="currentColor"
               fill="none"
               stroke-width="2"
@@ -733,11 +708,6 @@ exports[`Alerts tests > a11y and snapshots #3`] = `
                 d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0v0zM12 17h.01M12 9v4"
               ></path>
             </g>
-            <defs>
-              <clipPath id="alert-triangle_svg__clip0">
-                <path fill="#fff" d="M0 0h24v24H0z"></path>
-              </clipPath>
-            </defs>
           </svg>
         </div>
         <div class="denhaag-alert__content">
@@ -869,7 +839,6 @@ exports[`Alerts tests > a11y and snapshots #3`] = `
             shape-rendering="auto"
           >
             <g
-              clip-path="url(#alert-triangle_svg__clip0)"
               stroke="currentColor"
               fill="none"
               stroke-width="2"
@@ -880,11 +849,6 @@ exports[`Alerts tests > a11y and snapshots #3`] = `
                 d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0v0zM12 17h.01M12 9v4"
               ></path>
             </g>
-            <defs>
-              <clipPath id="alert-triangle_svg__clip0">
-                <path fill="#fff" d="M0 0h24v24H0z"></path>
-              </clipPath>
-            </defs>
           </svg>
         </div>
         <div class="denhaag-alert__content">

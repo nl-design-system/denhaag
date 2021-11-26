@@ -11,9 +11,6 @@
       "path": "components/Alert"
     },
     {
-      "path": "components/AppBar"
-    },
-    {
       "path": "components/Avatar"
     },
     {
@@ -23,13 +20,7 @@
       "path": "components/BaseDataDisplayProps"
     },
     {
-      "path": "components/BaseLayoutProps"
-    },
-    {
       "path": "components/BaseProps"
-    },
-    {
-      "path": "components/Box"
     },
     {
       "path": "components/Button"
@@ -41,13 +32,7 @@
       "path": "components/Checkbox"
     },
     {
-      "path": "components/Container"
-    },
-    {
       "path": "components/Divider"
-    },
-    {
-      "path": "components/Drawer"
     },
     {
       "path": "components/FormControl"
@@ -57,15 +42,6 @@
     },
     {
       "path": "components/FormGroup"
-    },
-    {
-      "path": "components/Grid"
-    },
-    {
-      "path": "components/GridList"
-    },
-    {
-      "path": "components/Hidden"
     },
     {
       "path": "components/IconButton"
@@ -98,7 +74,7 @@
       "path": "components/Select"
     },
     {
-      "path": "components/SwipeableDrawer"
+      "path": "components/StylesProvider"
     },
     {
       "path": "components/Switch"
@@ -113,31 +89,13 @@
       "path": "components/Timeline"
     },
     {
-      "path": "components/Toolbar"
-    },
-    {
       "path": "components/Typography"
     },
     {
       "path": "packages/components-css"
     },
     {
-      "path": "packages/datadisplay"
-    },
-    {
       "path": "packages/denhaag-component-library"
-    },
-    {
-      "path": "packages/input"
-    },
-    {
-      "path": "packages/layout"
-    },
-    {
-      "path": "packages/navigation"
-    },
-    {
-      "path": "packages/surfaces"
     },
     {
       "path": "proprietary/Common"
