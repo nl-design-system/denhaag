@@ -44,18 +44,13 @@ export interface ButtonProps extends BaseProps {
  * Primary UI component for user interaction
  */
 export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
-  const sizeClass = `denhaag-button--${props.size ?? 'medium'}`;
-  const variantClass = `denhaag-button--${props.variant ?? 'primary-action'}`;
-  const rootClassNames = clsx('denhaag-button', sizeClass, variantClass, props.className);
-
-  const iconClassNames = clsx(
-    {
-      'denhaag-button__start-icon': props.startIcon !== undefined,
-      'denhaag-button__end-icon': props.endIcon !== undefined,
-    },
-    `denhaag-button__icon-size-${props.size ?? 'medium'}`,
-  );
-  const iconWrapped = <span className={iconClassNames}>{props.startIcon || props.endIcon}</span>;
+  const rootClassNames = clsx('denhaag-button', {
+    'denhaag-button--secondary-action': props.variant === 'secondary-action',
+    'denhaag-button--large': props.size === 'large',
+    'denhaag-button--start-icon': props.startIcon !== undefined,
+    'denhaag-button--end-icon': props.endIcon !== undefined,
+  });
+  const iconWrapped = <span className={'denhaag-button__icon'}>{props.startIcon || props.endIcon}</span>;
 
   return (
     <button className={rootClassNames} onClick={props.onClick} disabled={props.disabled} type={props.type}>

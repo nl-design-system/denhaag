@@ -1,149 +1,137 @@
 .denhaag-button {
-  font-family: var(--denhaag-button-font-family);
+  align-items: center;
+  background-color: var(--denhaag-button-primary-action-background-color);
+  border: 0;
   border-radius: var(--denhaag-button-border-radius);
-
-  line-height: 1.75;
+  color: var(--denhaag-button-primary-action-color);
   cursor: pointer;
   display: inline-flex;
+  font-family: var(--denhaag-button-font-family);
+  font-size: var(--denhaag-typography-scale-base-font-size);
+  line-height: 1.75;
+  padding-block-end: var(--denhaag-button-medium-size-padding-block, var(--denhaag-button-padding-block));
+  padding-block-start: var(--denhaag-button-medium-size-padding-block, var(--denhaag-button-padding-block));
+  padding-inline-end: var(--denhaag-button-medium-size-padding-inline, var(--denhaag-button-padding-inline));
+  padding-inline-start: var(--denhaag-button-medium-size-padding-inline, var(--denhaag-button-padding-inline));
   position: relative;
-  align-items: center;
-  border: 0;
 }
 
 .denhaag-button--focus:after,
 .denhaag-button:focus:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -2px;
-  bottom: -2px;
-  left: -2px;
-  right: -2px;
   border: var(--denhaag-focus-border);
   border-radius: var(--denhaag-border-radius);
+  bottom: -2px;
+  content: "";
+  display: block;
+  left: -2px;
+  position: absolute;
+  right: -2px;
+  top: -2px;
 }
 
 /* Due to the accessibility focus outline overlapping with the border, the outline needs to be repositioned for the border variant */
 .denhaag-button--secondary-action.denhaag-button--focus:after,
 .denhaag-button--secondary-action:focus:after {
-  top: -3px;
   bottom: -3px;
   left: -3px;
   right: -3px;
+  top: -3px;
 }
 
-.denhaag-button--primary-action {
-  background-color: var(--denhaag-button-primary-action-background-color);
-  color: var(--denhaag-button-primary-action-color);
-}
-
-.denhaag-button--primary-action.denhaag-button--hover,
-.denhaag-button--primary-action:hover {
+.denhaag-button.denhaag-button--hover,
+.denhaag-button:hover {
   background-color: var(--denhaag-button-primary-action-hover-background-color);
   color: var(--denhaag-button-primary-action-hover-color);
 }
 
-.denhaag-button--primary-action.denhaag-button--disabled,
-.denhaag-button--primary-action.denhaag-button:disabled {
+.denhaag-button.denhaag-button--disabled,
+.denhaag-button.denhaag-button:disabled {
   background-color: var(--denhaag-button-primary-action-disabled-background-color);
   color: var(--denhaag-button-primary-action-disabled-color);
 }
 
 .denhaag-button--secondary-action {
   background-color: var(--denhaag-button-secondary-action-background-color);
-  color: var(--denhaag-button-secondary-action-color);
-  border-width: var(--denhaag-button-border-width);
-  border-style: solid;
   border-color: var(--denhaag-button-secondary-action-border-color);
+  border-style: solid;
+  border-width: var(--denhaag-button-border-width);
+  color: var(--denhaag-button-secondary-action-color);
+  padding-block-end: calc(
+    var(--denhaag-button-medium-size-padding-block, var(--denhaag-button-padding-block)) -
+    var(--denhaag-button-border-width)
+  );
+  padding-block-start: calc(
+    var(--denhaag-button-medium-size-padding-block, var(--denhaag-button-padding-block)) -
+    var(--denhaag-button-border-width)
+  );
+  padding-inline-end: calc(
+    var(--denhaag-button-medium-size-padding-inline, var(--denhaag-button-padding-inline)) -
+    var(--denhaag-button-border-width)
+  );
+  padding-inline-start: calc(
+    var(--denhaag-button-medium-size-padding-inline, var(--denhaag-button-padding-inline)) -
+    var(--denhaag-button-border-width)
+  );
 }
 
 .denhaag-button--secondary-action.denhaag-button--hover,
 .denhaag-button--secondary-action:hover {
   background-color: var(--denhaag-button-secondary-action-hover-background-color);
-  color: var(--denhaag-button-secondary-action-hover-color);
   border-color: var(--denhaag-button-secondary-action-hover-border-color);
+  color: var(--denhaag-button-secondary-action-hover-color);
 }
 
 .denhaag-button--secondary-action.denhaag-button--disabled,
 .denhaag-button--secondary-action.denhaag-button:disabled {
   background-color: var(--denhaag-button-secondary-action-disabled-background-color);
-  color: var(--denhaag-button-secondary-action-disabled-color);
   border-color: var(--denhaag-button-secondary-action-disabled-border-color);
-}
-
-/* Size specific styling */
-.denhaag-button--medium {
-  padding-inline-start: var(--denhaag-button-medium-size-padding-inline, var(--denhaag-button-padding-inline));
-  padding-inline-end: var(--denhaag-button-medium-size-padding-inline, var(--denhaag-button-padding-inline));
-  padding-block-start: var(--denhaag-button-medium-size-padding-block, var(--denhaag-button-padding-block));
-  padding-block-end: var(--denhaag-button-medium-size-padding-block, var(--denhaag-button-padding-block));
-  font-size: var(--denhaag-typography-scale-base-font-size);
-}
-
-.denhaag-button--medium.denhaag-button--secondary-action {
-  padding-inline-start: calc(
-    var(--denhaag-button-medium-size-padding-inline, var(--denhaag-button-padding-inline)) -
-      var(--denhaag-button-border-width)
-  );
-  padding-inline-end: calc(
-    var(--denhaag-button-medium-size-padding-inline, var(--denhaag-button-padding-inline)) -
-      var(--denhaag-button-border-width)
-  );
-  padding-block-start: calc(
-    var(--denhaag-button-medium-size-padding-block, var(--denhaag-button-padding-block)) -
-      var(--denhaag-button-border-width)
-  );
-  padding-block-end: calc(
-    var(--denhaag-button-medium-size-padding-block, var(--denhaag-button-padding-block)) -
-      var(--denhaag-button-border-width)
-  );
+  color: var(--denhaag-button-secondary-action-disabled-color);
 }
 
 .denhaag-button--large {
-  padding-inline-start: var(--denhaag-button-large-size-padding-inline, var(--denhaag-button-padding-inline));
-  padding-inline-end: var(--denhaag-button-large-size-padding-inline, var(--denhaag-button-padding-inline));
-  padding-block-start: var(--denhaag-button-large-size-padding-block, var(--denhaag-button-padding-block));
-  padding-block-end: var(--denhaag-button-large-size-padding-block, var(--denhaag-button-padding-block));
   font-size: var(--denhaag-typography-scale-lg-font-size);
+  padding-block-end: var(--denhaag-button-large-size-padding-block, var(--denhaag-button-padding-block));
+  padding-block-start: var(--denhaag-button-large-size-padding-block, var(--denhaag-button-padding-block));
+  padding-inline-end: var(--denhaag-button-large-size-padding-inline, var(--denhaag-button-padding-inline));
+  padding-inline-start: var(--denhaag-button-large-size-padding-inline, var(--denhaag-button-padding-inline));
 }
 
 .denhaag-button--large.denhaag-button--secondary-action {
-  padding-inline-start: calc(
-    var(--denhaag-button-large-size-padding-inline, var(--denhaag-button-padding-inline)) -
-      var(--denhaag-button-border-width)
-  );
-  padding-inline-end: calc(
-    var(--denhaag-button-large-size-padding-inline, var(--denhaag-button-padding-inline)) -
-      var(--denhaag-button-border-width)
+  padding-block-end: calc(
+    var(--denhaag-button-large-size-padding-block, var(--denhaag-button-padding-block)) -
+    var(--denhaag-button-border-width)
   );
   padding-block-start: calc(
     var(--denhaag-button-large-size-padding-block, var(--denhaag-button-padding-block)) -
-      var(--denhaag-button-border-width)
+    var(--denhaag-button-border-width)
   );
-  padding-block-end: calc(
-    var(--denhaag-button-large-size-padding-block, var(--denhaag-button-padding-block)) -
-      var(--denhaag-button-border-width)
+  padding-inline-end: calc(
+    var(--denhaag-button-large-size-padding-inline, var(--denhaag-button-padding-inline)) -
+    var(--denhaag-button-border-width)
+  );
+  padding-inline-start: calc(
+    var(--denhaag-button-large-size-padding-inline, var(--denhaag-button-padding-inline)) -
+    var(--denhaag-button-border-width)
   );
 }
 
-/* Icon styling */
-.denhaag-button__icon-size-medium > *:first-child {
+.denhaag-button__icon *:first-child {
   font-size: var(--denhaag-typography-scale-lg-font-size);
 }
 
-.denhaag-button__icon-size-large > *:first-child {
+.denhaag-button---large .denhaag-button__icon > *:first-child {
   font-size: var(--denhaag-typography-scale-xl-font-size);
 }
 
-.denhaag-button__start-icon {
+.denhaag-button--start-icon .denhaag-button__icon {
   display: inherit;
-  margin-inline-start: -4px;
   margin-inline-end: 8px;
+  margin-inline-start: -4px;
 }
 
-.denhaag-button__end-icon {
+.denhaag-button--end-icon .denhaag-button__icon {
   display: inherit;
-  margin-inline-start: 8px;
   margin-inline-end: -4px;
+  margin-inline-start: 8px;
 }
 
