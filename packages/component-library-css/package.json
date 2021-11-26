@@ -16,7 +16,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "rollup -c rollup.config.js",
+    "build": "yarn npm-run-all build:*",
+    "build:css": "rollup -c rollup.config.js",
+    "build:clean": "yarn rimraf dist/.tsbuildinfo dist/*.{js,d.ts}",
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   }
 }
