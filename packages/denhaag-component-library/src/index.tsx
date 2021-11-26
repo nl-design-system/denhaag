@@ -1,7 +1,7 @@
+export * from '@gemeente-denhaag/baseprops';
 export * from '@gemeente-denhaag/alert';
 export * from '@gemeente-denhaag/avatar';
 export * from '@gemeente-denhaag/badge-counter';
-export * from '@gemeente-denhaag/baseprops';
 export * from '@gemeente-denhaag/divider';
 export * from '@gemeente-denhaag/list';
 export * from '@gemeente-denhaag/typography';
@@ -22,5 +22,6 @@ export * from '@gemeente-denhaag/menu';
 export * from '@gemeente-denhaag/timeline';
 export * from '@gemeente-denhaag/tab';
 export * from '@gemeente-denhaag/link';
-export * from '@gemeente-denhaag/surfaces';
+export * from '@gemeente-denhaag/accordion';
+export * from '@gemeente-denhaag/card';
 export * from '@gemeente-denhaag/stylesprovider';

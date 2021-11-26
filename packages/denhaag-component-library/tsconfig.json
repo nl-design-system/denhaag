@@ -84,7 +84,13 @@
       "path": "../../components/Pickers"
     },
     {
-      "path": "../surfaces"
+      "path": "../../components/Accordion"
+    },
+    {
+      "path": "../../components/Card"
+    },
+    {
+      "path": "../../components/StylesProvider"
     }
   ]
 }

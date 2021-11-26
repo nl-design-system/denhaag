@@ -74,6 +74,9 @@
       "path": "components/Select"
     },
     {
+      "path": "components/StylesProvider"
+    },
+    {
       "path": "components/Switch"
     },
     {
@@ -90,9 +93,6 @@
     },
     {
       "path": "packages/denhaag-component-library"
-    },
-    {
-      "path": "packages/surfaces"
     },
     {
       "path": "proprietary/Common"

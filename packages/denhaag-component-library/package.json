@@ -44,8 +44,9 @@
     "@gemeente-denhaag/menu": "^0.2.3-alpha.53",
     "@gemeente-denhaag/tab": "^0.2.3-alpha.53",
     "@gemeente-denhaag/timeline": "^0.2.3-alpha.53",
-    "@gemeente-denhaag/stylesprovider": "^0.1.1-alpha.53",
-    "@gemeente-denhaag/surfaces": "^0.2.3-alpha.53"
+    "@gemeente-denhaag/accordion": "^0.2.3-alpha.53",
+    "@gemeente-denhaag/card": "^0.2.3-alpha.53",
+    "@gemeente-denhaag/stylesprovider": "^0.1.1-alpha.53"
   },
   "peerDependencies": {
     "react": "^17.0.1"
