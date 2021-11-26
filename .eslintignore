@@ -1,5 +1,7 @@
 build/
 dist/
 node_modules/
-.snapshots/
+test_images/
+storybook-static/
+.*/
 *.min.js
