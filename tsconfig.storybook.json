@@ -115,7 +115,7 @@
       "path": "components/Typography"
     },
     {
-      "path": "packages/component-library-css"
+      "path": "packages/components-css"
     },
     {
       "path": "packages/datadisplay"

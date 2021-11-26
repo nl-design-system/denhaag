@@ -1,12 +1,12 @@
 {
-  "name": "@gemeente-denhaag/component-library-css",
+  "name": "@gemeente-denhaag/components-css",
   "version": "0.1.0",
   "description": "A CSS library for the components from the Municipality of the Hague",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/nl-design-system/denhaag.git",
-    "directory": "packages/component-library-css"
+    "directory": "packages/components-css"
   },
   "license": "EUPL-1.2",
   "author": "Municipality of The Hague",
