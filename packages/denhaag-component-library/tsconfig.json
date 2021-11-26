@@ -69,7 +69,16 @@
       "path": "../../components/TextField"
     },
     {
-      "path": "../navigation"
+      "path": "../../components/Link"
+    },
+    {
+      "path": "../../components/Menu"
+    },
+    {
+      "path": "../../components/Tab"
+    },
+    {
+      "path": "../../components/Timeline"
     },
     {
       "path": "../../components/Pickers"
