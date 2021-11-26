@@ -5,5 +5,5 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-    target-branch: "master"
+    target-branch: "main"
     versioning-strategy: "increase-if-necessary"

@@ -184,7 +184,7 @@ CSS class names, custom property names and keyframe names al must start with the
 
 ### Installing and testing packages locally
 
-We have tested this using a verdaccio local registry on the PWA master and development branches.
+We have tested this using a verdaccio local registry on the PWA `main` and `development` branches.
 This can be repeated by installing verdaccio globally with `npm` and running verdaccio on the default port, navigate to http://localhost:4873 and follow instructions to login on the registry, username, password and email do not matter.
 If you have used verdaccio before, remove the content in the verdaccio/storage folder.
 

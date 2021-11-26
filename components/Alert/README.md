@@ -1,7 +1,7 @@
 # Alerts
 
 ![npm (scoped)](https://img.shields.io/npm/v/@gemeente-denhaag/alert?logo=npm&style=flat-square)
-![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/Gemeente-Denhaag/denhaag-component-library/Build%20and%20deploy%20Storybook%20to%20Azure%20Web%20App/master?logo=github&style=flat-square)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/Gemeente-Denhaag/denhaag-component-library/Build%20and%20deploy%20Storybook%20to%20Azure%20Web%20App/main?logo=github&style=flat-square)
 
 Alerts are messages that provide information to the user. Alerts are placed at the top of the page or section to which they apply and below the page or section heading.
 
