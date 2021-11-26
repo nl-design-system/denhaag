@@ -39,6 +39,7 @@
     "@gemeente-denhaag/list": "^0.2.3-alpha.53",
     "@gemeente-denhaag/menu": "^0.2.3-alpha.53",
     "@gemeente-denhaag/pickers": "^0.2.3-alpha.53",
+    "@gemeente-denhaag/pickersutilsprovider": "^0.2.3-alpha.53",
     "@gemeente-denhaag/radio": "^0.2.3-alpha.53",
     "@gemeente-denhaag/select": "^0.2.3-alpha.53",
     "@gemeente-denhaag/stylesprovider": "^0.1.1-alpha.53",
