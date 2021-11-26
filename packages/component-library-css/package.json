@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/component-library-css",
-  "version": "0.2.3-alpha.50",
+  "version": "0.1.0",
   "description": "A CSS library for the components from the Municipality of the Hague",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
