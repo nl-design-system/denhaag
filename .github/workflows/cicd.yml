@@ -38,7 +38,7 @@ jobs:
           yarn lint:css
           yarn lint:package
           yarn lint:js
-          yarn prettier-check
+          yarn lint:prettier
 
       - name: build library
         run: yarn build

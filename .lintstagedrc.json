@@ -1,5 +1,7 @@
 {
-  "package.json": "npmPkgJsonLint",
-  "*.{ts,tsx}": ["eslint", "prettier -c"],
-  "*.css": "stylelint"
+  "*.md": ["prettier --check"],
+  "*.{yaml,yml}": ["prettier --check"],
+  "*.{css,scss}": ["stylelint --allow-empty-input", "prettier --check"],
+  "*.{js,jsx,json,mdx,ts,tsx}": ["eslint --no-error-on-unmatched-pattern", "prettier --check"],
+  "package.json": "npmPkgJsonLint --allowEmptyTargets"
 }
