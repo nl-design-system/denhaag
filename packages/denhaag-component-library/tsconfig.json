@@ -33,7 +33,40 @@
       "path": "../../components/Typography"
     },
     {
-      "path": "../input"
+      "path": "../../components/Button"
+    },
+    {
+      "path": "../../components/Checkbox"
+    },
+    {
+      "path": "../../components/FormControl"
+    },
+    {
+      "path": "../../components/FormControlLabel"
+    },
+    {
+      "path": "../../components/FormGroup"
+    },
+    {
+      "path": "../../components/IconButton"
+    },
+    {
+      "path": "../../components/InputLabel"
+    },
+    {
+      "path": "../../components/Pickers"
+    },
+    {
+      "path": "../../components/Radio"
+    },
+    {
+      "path": "../../components/Select"
+    },
+    {
+      "path": "../../components/Switch"
+    },
+    {
+      "path": "../../components/TextField"
     },
     {
       "path": "../layout"
