@@ -58,11 +58,11 @@ const defaultCode = `
 
 // language=JS
 const verticalCode = `
-  <Grid container>
+  <div style={{ display: 'flex' }}>
     <p>I am to the left of the divider.</p>
     <Divider vertical />
     <p>I am to the right of the divider.</p>
-  </Grid>
+  </div>
 `;
 
 /**
