@@ -18,7 +18,6 @@ export * from '@gemeente-denhaag/radio';
 export * from '@gemeente-denhaag/select';
 export * from '@gemeente-denhaag/switch';
 export * from '@gemeente-denhaag/textfield';
-export * from '@gemeente-denhaag/layout';
 export * from '@gemeente-denhaag/navigation';
 export * from '@gemeente-denhaag/surfaces';
 export * from '@gemeente-denhaag/stylesprovider';

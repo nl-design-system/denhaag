@@ -88,9 +88,6 @@
       "path": "packages/denhaag-component-library"
     },
     {
-      "path": "packages/layout"
-    },
-    {
       "path": "packages/navigation"
     },
     {

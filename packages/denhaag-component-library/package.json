@@ -39,7 +39,6 @@
     "@gemeente-denhaag/select": "^0.2.3-alpha.53",
     "@gemeente-denhaag/switch": "^0.2.3-alpha.53",
     "@gemeente-denhaag/textfield": "^0.2.3-alpha.53",
-    "@gemeente-denhaag/layout": "^0.2.3-alpha.53",
     "@gemeente-denhaag/navigation": "^0.2.3-alpha.53",
     "@gemeente-denhaag/pickers": "^0.2.3-alpha.53",
     "@gemeente-denhaag/stylesprovider": "^0.1.1-alpha.53",

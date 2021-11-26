@@ -69,9 +69,6 @@
       "path": "../../components/TextField"
     },
     {
-      "path": "../layout"
-    },
-    {
       "path": "../navigation"
     },
     {
