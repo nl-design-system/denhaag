@@ -12,22 +12,85 @@
       "path": "../../components/BaseProps"
     },
     {
-      "path": "../datadisplay"
+      "path": "../../components/Avatar"
     },
     {
-      "path": "../input"
+      "path": "../../components/Alert"
     },
     {
-      "path": "../layout"
+      "path": "../../components/BadgeCounter"
     },
     {
-      "path": "../navigation"
+      "path": "../../components/BaseProps"
+    },
+    {
+      "path": "../../components/Divider"
+    },
+    {
+      "path": "../../components/List"
+    },
+    {
+      "path": "../../components/Typography"
+    },
+    {
+      "path": "../../components/Button"
+    },
+    {
+      "path": "../../components/Checkbox"
+    },
+    {
+      "path": "../../components/FormControl"
+    },
+    {
+      "path": "../../components/FormControlLabel"
+    },
+    {
+      "path": "../../components/FormGroup"
+    },
+    {
+      "path": "../../components/IconButton"
+    },
+    {
+      "path": "../../components/InputLabel"
     },
     {
       "path": "../../components/Pickers"
     },
     {
-      "path": "../surfaces"
+      "path": "../../components/Radio"
+    },
+    {
+      "path": "../../components/Select"
+    },
+    {
+      "path": "../../components/Switch"
+    },
+    {
+      "path": "../../components/TextField"
+    },
+    {
+      "path": "../../components/Link"
+    },
+    {
+      "path": "../../components/Menu"
+    },
+    {
+      "path": "../../components/Tab"
+    },
+    {
+      "path": "../../components/Timeline"
+    },
+    {
+      "path": "../../components/Pickers"
+    },
+    {
+      "path": "../../components/Accordion"
+    },
+    {
+      "path": "../../components/Card"
+    },
+    {
+      "path": "../../components/StylesProvider"
     }
   ]
 }

@@ -74,6 +74,9 @@
       "path": "components/Select"
     },
     {
+      "path": "components/StylesProvider"
+    },
+    {
       "path": "components/Switch"
     },
     {
@@ -89,22 +92,7 @@
       "path": "components/Typography"
     },
     {
-      "path": "packages/datadisplay"
-    },
-    {
       "path": "packages/denhaag-component-library"
-    },
-    {
-      "path": "packages/input"
-    },
-    {
-      "path": "packages/layout"
-    },
-    {
-      "path": "packages/navigation"
-    },
-    {
-      "path": "packages/surfaces"
     },
     {
       "path": "proprietary/Common"
