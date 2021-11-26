@@ -12,16 +12,10 @@
       "path": "../../components/Accordion"
     },
     {
-      "path": "../../components/AppBar"
-    },
-    {
       "path": "../../components/BaseProps"
     },
     {
       "path": "../../components/Card"
-    },
-    {
-      "path": "../../components/Toolbar"
     }
   ]
 }

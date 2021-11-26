@@ -12,13 +12,7 @@
       "path": "../../components/BaseProps"
     },
     {
-      "path": "../../components/Drawer"
-    },
-    {
       "path": "../../components/Menu"
-    },
-    {
-      "path": "../../components/SwipeableDrawer"
     },
     {
       "path": "../../components/Tab"
