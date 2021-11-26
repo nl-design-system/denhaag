@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-explicit-any": "error",
+    "no-undef": "off",
+    "no-unused-vars": "off"
+  }
+}
