@@ -12,7 +12,25 @@
       "path": "../../components/BaseProps"
     },
     {
-      "path": "../datadisplay"
+      "path": "../../components/Avatar"
+    },
+    {
+      "path": "../../components/Alert"
+    },
+    {
+      "path": "../../components/BadgeCounter"
+    },
+    {
+      "path": "../../components/BaseProps"
+    },
+    {
+      "path": "../../components/Divider"
+    },
+    {
+      "path": "../../components/List"
+    },
+    {
+      "path": "../../components/Typography"
     },
     {
       "path": "../input"
