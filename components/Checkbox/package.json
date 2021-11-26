@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/checkbox",
-  "version": "0.2.3-alpha.51",
+  "version": "0.2.3-alpha.52",
   "description": "A Checkbox component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -22,8 +22,8 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "^0.2.3-alpha.51",
-    "@gemeente-denhaag/icons": "^0.2.3-alpha.51"
+    "@gemeente-denhaag/baseprops": "^0.2.3-alpha.52",
+    "@gemeente-denhaag/icons": "^0.2.3-alpha.52"
   },
   "peerDependencies": {
     "react": "^17.0.1"
