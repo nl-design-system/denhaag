@@ -1,8 +1,5 @@
 import React from 'react';
-import { Button as MaterialButton, ButtonTypeMap } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
-import { classes } from './bem-mapping';
-import './mui-override.css';
 import './button.css';
 import clsx from 'clsx';
 
@@ -48,32 +45,24 @@ export interface ButtonProps extends BaseProps {
  */
 export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
   const sizeClass = `denhaag-button--${props.size ?? 'medium'}`;
-  const rootClassNames = clsx(sizeClass, props.className);
-  let muiVariant: ButtonTypeMap['props']['variant'] = 'contained';
+  const variantClass = `denhaag-button--${props.variant ?? 'primary-action'}`;
+  const rootClassNames = clsx('denhaag-button', sizeClass, variantClass, props.className);
 
-  switch (props.variant) {
-    case 'primary-action':
-      muiVariant = 'contained';
-      break;
-    case 'secondary-action':
-      muiVariant = 'outlined';
-      break;
-  }
+  const iconClassNames = clsx(
+    {
+      'denhaag-button__start-icon': props.startIcon !== undefined,
+      'denhaag-button__end-icon': props.endIcon !== undefined,
+    },
+    `denhaag-button__icon-size-${props.size ?? 'medium'}`,
+  );
+  const iconWrapped = <span className={iconClassNames}>{props.startIcon || props.endIcon}</span>;
 
   return (
-    <MaterialButton
-      classes={classes}
-      className={rootClassNames}
-      variant={muiVariant}
-      onClick={props.onClick}
-      disabled={props.disabled}
-      type={props.type}
-      startIcon={props.startIcon}
-      endIcon={props.endIcon}
-      disableRipple
-    >
+    <button className={rootClassNames} onClick={props.onClick} disabled={props.disabled} type={props.type}>
+      {props.startIcon !== undefined ? iconWrapped : ''}
       {props.children}
-    </MaterialButton>
+      {props.endIcon !== undefined ? iconWrapped : ''}
+    </button>
   );
 };
 
