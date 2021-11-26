@@ -92,6 +92,9 @@
       "path": "components/Typography"
     },
     {
+      "path": "packages/components-css"
+    },
+    {
       "path": "packages/denhaag-component-library"
     },
     {

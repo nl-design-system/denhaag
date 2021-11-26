@@ -1,0 +1,24 @@
+{
+  "name": "@gemeente-denhaag/components-css",
+  "version": "0.1.0",
+  "description": "A CSS library for the components from the Municipality of the Hague",
+  "bugs": "https://github.com/nl-design-system/denhaag/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nl-design-system/denhaag.git",
+    "directory": "packages/components-css"
+  },
+  "license": "EUPL-1.2",
+  "author": "Municipality of The Hague",
+  "main": "dist/index.css",
+  "module": "dist/index.css",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "yarn npm-run-all build:*",
+    "build:css": "rollup -c rollup.config.js",
+    "build:clean": "yarn rimraf dist/.tsbuildinfo dist/*.{js,d.ts}",
+    "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+  }
+}

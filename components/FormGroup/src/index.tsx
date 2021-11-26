@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import { Heading5, Paragraph } from '@gemeente-denhaag/typography';
 
-import './formgroup.css';
+import './form-group.css';
 
 export interface FormGroupProps extends BaseProps {
   /**
