@@ -24,7 +24,7 @@
     "lint-fix": "npm-run-all --continue-on-error lint-fix:* prettier",
     "lint-fix:css": "stylelint --fix */**/*.css",
     "lint-fix:js": "eslint --fix */**/*.{js,jsx,ts,tsx}",
-    "lint:css": "stylelint components/**/*.css",
+    "lint:css": "stylelint */**/*.css",
     "lint:package": "npmPkgJsonLint */**/package.json",
     "lint:js": "eslint */**/*.{js,jsx,ts,tsx}",
     "postinstall": "husky install",
