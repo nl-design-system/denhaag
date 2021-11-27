@@ -1,7 +1,7 @@
 # Introduction
 
 ![npm (scoped)](https://img.shields.io/npm/v/@gemeente-denhaag/menu?logo=npm&style=flat-square)
-![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/Gemeente-Denhaag/denhaag-component-library/Build%20and%20deploy%20Storybook%20to%20Azure%20Web%20App/main?logo=github&style=flat-square)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/nl-design-system/denhaag/Build%20and%20deploy%20Storybook%20to%20Azure%20Web%20App/main?logo=github&style=flat-square)
 
 Menu buttons are used as navigational elements. They appear in the navigation and open a menu or page.
 
