@@ -3,11 +3,9 @@ name: Build and deploy Storybook to Azure Web App
 on:
   push:
     branches:
-      - latest
       - main
   pull_request:
     branches:
-      - latest
       - main
 
 jobs:
@@ -21,7 +19,7 @@ jobs:
         run: |
           git submodule update --init --recursive
           cd test_images
-          git checkout main
+          git checkout master
           rm -rf */*.actual.png
           rm -rf */*.diff.png
           cd ..
