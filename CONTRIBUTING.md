@@ -245,11 +245,11 @@ it("does not violate any accessibility rules", () => {
 
 Steps to go through:
 
-1. Create a new branch from the latest version of `master`:
-2. `yarn update-patch` to install the latest available patch version of every `dependency` and `devDepenency` of every `package.json` in this npm workspace. E.g.: from 1.0.0 to 1.0.7. Check the logs to see what packages have been affected, and where to perhaps pay speciall attention to when testing for regressions.
+1. Create a new branch from the latest version of `main`:
+2. `yarn update-patch` to install the latest available patch version of every `dependency` and `devDepenency` of every `package.json` in this npm workspace. E.g.: from 1.0.0 to 1.0.7. Check the logs to see what packages have been affected, and where to perhaps pay special attention to when testing for regressions.
 3. Perform "smoke testing", for example using `yarn clean && yarn lint && yarn build`.
 4. `git commit` these updates, so in case of regressions it will be easier to pinpoint what upgrade has caused issues.
-5. `yarn update-minor` to install the latest available minor version of every depependency. E.g.: from 1.0.0 to 1.2.3.
+5. `yarn update-minor` to install the latest available minor version of every dependency. E.g.: from 1.0.0 to 1.2.3.
 6. Perform "smoke testing", for example using `yarn clean && yarn lint && yarn build` and by running Storybook and checking for issues.
 7. `git commit` these updates.
 8. Run `yarn update-major`. Check what packages have been updated, and read about any breaking changes in the on-line documentation of these packages. If any packages require migration steps, it is best to update and migrate these packages in separate commits. If some packages should remain at the older major version, you can configure their name in `.ncurc.js` by disallowing the major version update. In both cases it is advisable to revert the update (`git reset --hard && yarn install`) before proceding in smaller steps.
