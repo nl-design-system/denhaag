@@ -57,7 +57,7 @@
     "@cypress/react": "^5.4.2",
     "@cypress/webpack-dev-server": "^1.1.6",
     "@etchteam/storybook-addon-status": "^4.0.0",
-    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.0.0",
     "@rollup/plugin-typescript": "^8.2.1",
     "@storybook/addon-a11y": "^6.3.2",
