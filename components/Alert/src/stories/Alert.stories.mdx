@@ -228,7 +228,8 @@ const SuccessAlert = <Alert
 
 <Canvas>
   <Story name="HTML Alert" args={{}}>
-    {(args) => (
+    {/* eslint-disable react/no-unknown-property */}
+    {() => (
       <div class="denhaag-alert denhaag-alert--success">
         <div class="denhaag-alert__main-content">
           <div class="denhaag-alert__icon">
@@ -298,5 +299,6 @@ const SuccessAlert = <Alert
         </div>
       </div>
     )}
+    {/* eslint-enable react/no-unknown-property */}
   </Story>
 </Canvas>

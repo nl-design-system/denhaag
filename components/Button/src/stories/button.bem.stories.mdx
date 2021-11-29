@@ -27,11 +27,13 @@ import readme from "../../README.md";
 
 <Canvas>
   <Story name="Default">
-    {(args) => (
+    {/* eslint-disable react/no-unknown-property */}
+    {() => (
       <div>
         <button class={"denhaag-button"}>Button</button>
       </div>
     )}
+    {/* eslint-enable react/no-unknown-property */}
   </Story>
 </Canvas>
 
@@ -39,11 +41,13 @@ import readme from "../../README.md";
 
 <Canvas>
   <Story name="Secondary action">
-    {(args) => (
+    {/* eslint-disable react/no-unknown-property */}
+    {() => (
       <div>
         <button class={"denhaag-button denhaag-button--secondary-action"}>Button</button>
       </div>
     )}
+    {/* eslint-enable react/no-unknown-property */}
   </Story>
 </Canvas>
 
@@ -51,7 +55,8 @@ import readme from "../../README.md";
 
 <Canvas>
   <Story name="Icon left">
-    {(args) => (
+    {/* eslint-disable react/no-unknown-property */}
+    {() => (
       <div>
         <button class={"denhaag-button denhaag-button--secondary-action denhaag-button--start-icon"}>
           <span class={"denhaag-button__icon"}>
@@ -71,6 +76,7 @@ import readme from "../../README.md";
         </button>
       </div>
     )}
+    {/* eslint-enable react/no-unknown-property */}
   </Story>
 </Canvas>
 
@@ -78,7 +84,8 @@ import readme from "../../README.md";
 
 <Canvas>
   <Story name="Large with icon">
-    {(args) => (
+    {/* eslint-disable react/no-unknown-property */}
+    {() => (
       <div>
         <button
           class={"denhaag-button denhaag-button--large denhaag-button--secondary-action denhaag-button--end-icon"}
@@ -100,6 +107,7 @@ import readme from "../../README.md";
         </button>
       </div>
     )}
+    {/* eslint-enable react/no-unknown-property */}
   </Story>
 </Canvas>
 
@@ -107,12 +115,14 @@ import readme from "../../README.md";
 
 <Canvas>
   <Story name="Disabled">
-    {(args) => (
+    {/* eslint-disable react/no-unknown-property */}
+    {() => (
       <div>
         <button disabled class={"denhaag-button"}>
           Button
         </button>
       </div>
     )}
+    {/* eslint-enable react/no-unknown-property */}
   </Story>
 </Canvas>

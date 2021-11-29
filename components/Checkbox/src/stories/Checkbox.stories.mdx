@@ -186,7 +186,8 @@ const ReactCheckBox = <Checkbox onChange={() => {}}></Checkbox>;
 
 <Canvas>
   <Story name="HTML Checkbox" args={{}}>
-    {(args) => (
+    {/* eslint-disable react/no-unknown-property */}
+    {() => (
       <div>
         <div>
           <p class="utrecht-heading-5">Default</p>
@@ -355,5 +356,6 @@ const ReactCheckBox = <Checkbox onChange={() => {}}></Checkbox>;
         </div>
       </div>
     )}
+    {/* eslint-enable react/no-unknown-property */}
   </Story>
 </Canvas>

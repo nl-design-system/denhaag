@@ -218,9 +218,14 @@ const ReactParagraph = (
 
 <Canvas>
   <Story name="HTML only Link">
+    {/* eslint-disable react/no-unknown-property */}
     <p class="utrecht-paragraph utrecht-paragraph--distanced">
       It is possible to put{" "}
-      <a href="#" class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start" tabindex="0">
+      <a
+        href="https://example.com/"
+        class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
+        tabindex="0"
+      >
         <span class="denhaag-link__icon">
           <svg
             width="1em"
@@ -243,5 +248,6 @@ const ReactParagraph = (
       </a>{" "}
       in a Paragraph element.
     </p>
+    {/* eslint-enable react/no-unknown-property */}
   </Story>
 </Canvas>
