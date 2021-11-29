@@ -26,35 +26,34 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v2
         with:
-          node-version: "14.x"
+          node-version: "16.13.x"
 
-      - name: yarn install
+      - name: install
         run: |
-          npm install -g yarn
-          yarn install --frozen-lockfile
+          npm ci
 
       - name: run linters
         run: |
-          yarn lint:css
-          yarn lint:package
-          yarn lint:js
-          yarn prettier-check
+          npm run lint:css
+          npm run lint:package
+          npm run lint:js
+          npm run prettier-check
 
       - name: build library
-        run: yarn build
+        run: npm run build
 
       - name: typecheck storybook
-        run: yarn typecheck:storybook
+        run: npm run typecheck:storybook
 
       - name: build storybook
-        run: yarn build-storybook
+        run: npm run build-storybook
 
       - name: Run Cypress component tests
         uses: cypress-io/github-action@v2
         with:
           install: false
           record: false
-          command: yarn test
+          command: npm run test
         env:
           CHOKIDAR_USEPOLLING: true
           CYPRESS_CICD: true
@@ -120,15 +119,14 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v2
         with:
-          node-version: "14.x"
+          node-version: "16.13.x"
 
-      - name: yarn install
+      - name: install
         run: |
-          npm install -g yarn
-          yarn install --frozen-lockfile
+          npm ci
 
       - name: build library
-        run: yarn build
+        run: npm run build
 
       - name: lerna version
         env:
@@ -139,7 +137,7 @@ jobs:
           GIT_COMMITTER_NAME: "NL Design System"
         run: |
           git push --set-upstream origin HEAD
-          yarn release -- --yes
+          npm run release -- --yes
 
       - name: lerna publish
         env:
