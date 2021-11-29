@@ -48,7 +48,7 @@
     "@material-ui/core": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha",
     "@material-ui/pickers": "^3.2.10",
-    "@utrecht/component-library-css": "1.0.0-alpha.107",
+    "@utrecht/component-library-css": "1.0.0-alpha.134",
     "clsx": "^1.1.1"
   },
   "devDependencies": {

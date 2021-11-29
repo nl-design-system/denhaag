@@ -5188,10 +5188,10 @@
     "@typescript-eslint/types" "4.33.0"
     eslint-visitor-keys "^2.0.0"
 
-"@utrecht/component-library-css@1.0.0-alpha.107":
-  version "1.0.0-alpha.107"
-  resolved "https://registry.yarnpkg.com/@utrecht/component-library-css/-/component-library-css-1.0.0-alpha.107.tgz#8d7fce0e078cb9f616694385fc1524fdb3ea333f"
-  integrity sha512-jpxElHdOQ1GOc07epWH7Ju36bwTcSWVDQ+QK9k9v4a+kSh/hIQVHhw2/0n2ArLMkyR51BlSBn6Z7kIrcZuAL1g==
+"@utrecht/component-library-css@1.0.0-alpha.134":
+  version "1.0.0-alpha.134"
+  resolved "https://registry.yarnpkg.com/@utrecht/component-library-css/-/component-library-css-1.0.0-alpha.134.tgz#aa7cc662389777b7a101b37ba7e47a6b0fc03df4"
+  integrity sha512-7GZELbcBnpo0m/dHU8uQM8p4/YDvKgmbw536tkpX5891Ku3NnF+vb1vWZQMmEHmmlZUsSsOOycHzLq79eOWZMg==
 
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
