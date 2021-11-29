@@ -2,6 +2,7 @@ import React from 'react';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import './button.css';
 import clsx from 'clsx';
+import { SvgIconProps } from '@gemeente-denhaag/icons';
 
 export interface ButtonProps extends BaseProps {
   /**
@@ -30,33 +31,33 @@ export interface ButtonProps extends BaseProps {
   type?: 'button' | 'submit' | 'reset';
 
   /**
-   * Icon placed at the start of the button
+   * Icon to display at the start or the end of the button
    */
-  startIcon?: React.ReactNode;
+  icon?: React.ReactElement<SvgIconProps>;
 
   /**
-   * Icon placed at the end of the button
+   * If an `icon` is specified, should it be aligned on the left or the right?
    */
-  endIcon?: React.ReactNode;
+  iconAlign?: 'start' | 'end';
 }
 
 /**
  * Primary UI component for user interaction
  */
-export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
+export const Button: React.FC<ButtonProps> = ({ iconAlign = 'start', ...props }: ButtonProps) => {
   const rootClassNames = clsx('denhaag-button', {
     'denhaag-button--secondary-action': props.variant === 'secondary-action',
     'denhaag-button--large': props.size === 'large',
-    'denhaag-button--start-icon': props.startIcon !== undefined,
-    'denhaag-button--end-icon': props.endIcon !== undefined,
+    'denhaag-button--start-icon': iconAlign === 'start',
+    'denhaag-button--end-icon': iconAlign === 'end',
   });
-  const iconWrapped = <span className={'denhaag-button__icon'}>{props.startIcon || props.endIcon}</span>;
+  const iconWrapped = props.icon !== undefined ? <span className={'denhaag-button__icon'}>{props.icon}</span> : '';
 
   return (
     <button className={rootClassNames} onClick={props.onClick} disabled={props.disabled} type={props.type}>
-      {props.startIcon !== undefined ? iconWrapped : ''}
+      {iconAlign === 'start' ? iconWrapped : ''}
       <span className={'denhaag-button__label'}>{props.children}</span>
-      {props.endIcon !== undefined ? iconWrapped : ''}
+      {iconAlign === 'end' ? iconWrapped : ''}
     </button>
   );
 };

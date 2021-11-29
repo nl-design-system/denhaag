@@ -59,9 +59,10 @@ describe('Button tests', () => {
 
   it('a11y and snapshots', () => {
     cy.snapshots(
-      <Button startIcon={<ChevronRightIcon />} endIcon={<ChevronRightIcon />}>
-        Test button
-      </Button>,
+      <div>
+        <Button startIcon={<ChevronRightIcon />}>Test button</Button>
+        <Button endIcon={<ChevronRightIcon />}>Test button</Button>
+      </div>,
       {
         variant: 'secondary-action',
         size: 'large',

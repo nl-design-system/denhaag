@@ -1,13 +1,13 @@
-import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/addon-docs";
-import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
-import { ArrowLeftIcon, ArrowRightIcon } from "@gemeente-denhaag/icons";
+import { ArgsTable, Canvas, Description, Meta, Story } from '@storybook/addon-docs';
+import { DesignTokenDocBlock } from 'storybook-design-token/dist/doc-blocks';
+import { ArrowLeftIcon, ArrowRightIcon } from '@gemeente-denhaag/icons';
 
-import { Button } from "../index";
-import pkg from "../../package.json";
-import readme from "../../README.md";
+import { Button } from '../index';
+import pkg from '../../package.json';
+import readme from '../../README.md';
 
 <Meta
-  title="React Components/Input/Button"
+  title='React Components/Input/Button'
   component={Button}
   parameters={{
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
@@ -71,7 +71,7 @@ import readme from "../../README.md";
   <Story
     name="Icon Left"
     args={{
-      startIcon: <ArrowLeftIcon />,
+      icon: <ArrowLeftIcon />,
     }}
   >
     {(args) => <Button {...args}>Button</Button>}
@@ -85,7 +85,8 @@ import readme from "../../README.md";
     name="Icon Right"
     args={{
       variant: "secondary-action",
-      endIcon: <ArrowRightIcon />,
+      icon: <ArrowRightIcon />,
+      iconAlign: "end"
     }}
   >
     {(args) => <Button {...args}>Button</Button>}
