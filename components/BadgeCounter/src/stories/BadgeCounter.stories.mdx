@@ -30,7 +30,8 @@ import readme from "../../README.md";
 
 <Canvas>
   <Story name="HTML only">
-    {(args) => (
+    {/* eslint-disable react/no-unknown-property */}
+    {() => (
       <div class="denhaag-badge-counter">
         <div class="denhaag-dot-indicator denhaag-dot-indicator--overlap-rectangle">
           <div class="denhaag-badge-counter__counter">220</div>
@@ -38,6 +39,7 @@ import readme from "../../README.md";
         </div>
       </div>
     )}
+    {/* eslint-enable react/no-unknown-property */}
   </Story>
 </Canvas>
 
