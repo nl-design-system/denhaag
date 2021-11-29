@@ -115,11 +115,11 @@
   );
 }
 
-.denhaag-button__icon *:first-child {
+.denhaag-button__icon > *:first-child {
   font-size: var(--denhaag-typography-scale-lg-font-size);
 }
 
-.denhaag-button---large .denhaag-button__icon > *:first-child {
+.denhaag-button--large .denhaag-button__icon > *:first-child {
   font-size: var(--denhaag-typography-scale-xl-font-size);
 }
 
