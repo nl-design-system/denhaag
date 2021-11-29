@@ -7,7 +7,7 @@ import pkg from "../../package.json";
 import readme from "../../README.md";
 
 <Meta
-  title="Components/Input/Button"
+  title="React Components/Input/Button"
   component={Button}
   parameters={{
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
@@ -32,20 +32,6 @@ import readme from "../../README.md";
   <Story
     name="Default"
     args={{}}
-    parameters={{
-      docs: {
-        source: {
-          code: `
-import { Button } from "@gemeente-denhaag/button";
-const ReactButton = <Button onclick={() => alert('Hello from Button 👋')}>Button</Button>;
-// This 👆 transpiles into this 👇 in the DOM
-<button class="denhaag-button denhaag-button--primary-action denhaag-button--medium">
-  <span class="denhaag-button__label">Button</span>
-</button>
-    `,
-        },
-      },
-    }}
   >
     {(args) => <Button {...args}>Button</Button>}
   </Story>
