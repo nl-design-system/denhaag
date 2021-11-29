@@ -55,7 +55,7 @@ export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
   return (
     <button className={rootClassNames} onClick={props.onClick} disabled={props.disabled} type={props.type}>
       {props.startIcon !== undefined ? iconWrapped : ''}
-      {props.children}
+      <span className={'denhaag-button__label'}>{props.children}</span>
       {props.endIcon !== undefined ? iconWrapped : ''}
     </button>
   );
