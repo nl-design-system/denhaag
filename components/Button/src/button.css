@@ -135,3 +135,10 @@
   margin-inline-start: 8px;
 }
 
+.denhaag-button--large.denhaag-button--start-icon .denhaag-button__icon {
+  margin-inline-end: 12px;
+}
+
+.denhaag-button--large.denhaag-button--end-icon .denhaag-button__icon {
+  margin-inline-start: 12px;
+}

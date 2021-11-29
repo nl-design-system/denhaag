@@ -2,7 +2,8 @@ exports[`DotIndicator tests > a11y and snapshots #0`] = `
 <div id="wrapper" style="display: inline-block;">
   <div style="padding: 10px;">
     <span class="denhaag-dot-indicator denhaag-dot-indicator--overlap-rectangle"
-      ><button class="denhaag-button">Read messages</button
+      ><button class="denhaag-button">
+        <span class="denhaag-button__label">Read messages</span></button
       ><span class="denhaag-dot-indicator__dot"></span
     ></span>
   </div>

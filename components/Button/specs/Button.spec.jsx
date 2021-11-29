@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Button from '../src';
-import { ChevronRightIcon } from '../../Icons';
+import { DownloadIcon } from '@gemeente-denhaag/icons';
 
 describe('Button tests', () => {
   // Starting with functionality tests
@@ -58,15 +58,37 @@ describe('Button tests', () => {
   });
 
   it('a11y and snapshots', () => {
+    // Button
     cy.snapshots(
-      <div>
-        <Button startIcon={<ChevronRightIcon />}>Test button</Button>
-        <Button endIcon={<ChevronRightIcon />}>Test button</Button>
-      </div>,
+      <Button>Test button</Button>,
       {
         variant: 'secondary-action',
-        size: 'large',
         disabled: true,
+        _COMBINED: {
+          size: 'large',
+          variant: 'secondary-action',
+        },
+      },
+      {
+        selector: '.denhaag-button',
+        states: {
+          hover: 'denhaag-button--hover',
+          focus: 'denhaag-button--focus',
+        },
+      },
+    );
+    // Button with icons
+    cy.snapshots(
+      <Button icon={<DownloadIcon />}>Test button</Button>,
+      {
+        variant: 'secondary-action',
+        iconAlign: 'end',
+        _COMBINED: {
+          size: 'large',
+          iconAlign: 'end',
+          variant: 'secondary-action',
+          disabled: 'true',
+        },
       },
       {
         selector: '.denhaag-button',

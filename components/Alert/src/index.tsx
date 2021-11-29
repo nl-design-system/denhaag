@@ -84,7 +84,7 @@ export const Alert: React.FC<AlertProps> = ({
           <Heading4>{title}</Heading4>
           <Paragraph>{text}</Paragraph>
           {action && (
-            <Button size="medium" variant="primary-action" type="button" onClick={() => action.onClick()}>
+            <Button type="button" onClick={() => action.onClick()}>
               {action.buttonText}
             </Button>
           )}

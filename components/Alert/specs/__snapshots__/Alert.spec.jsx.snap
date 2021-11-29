@@ -672,7 +672,9 @@ exports[`Alerts tests > a11y and snapshots #3`] = `
             Here comes text. This text provides additional details and
             actionable steps the user can take.
           </p>
-          <button class="denhaag-button" type="button">Continue</button>
+          <button class="denhaag-button" type="button">
+            <span class="denhaag-button__label">Continue</span>
+          </button>
         </div>
       </div>
     </div>
@@ -712,7 +714,9 @@ exports[`Alerts tests > a11y and snapshots #3`] = `
             Here comes text. This text provides additional details and
             actionable steps the user can take.
           </p>
-          <button class="denhaag-button" type="button">Continue</button>
+          <button class="denhaag-button" type="button">
+            <span class="denhaag-button__label">Continue</span>
+          </button>
         </div>
       </div>
     </div>
@@ -750,7 +754,9 @@ exports[`Alerts tests > a11y and snapshots #3`] = `
             Here comes text. This text provides additional details and
             actionable steps the user can take.
           </p>
-          <button class="denhaag-button" type="button">Continue</button>
+          <button class="denhaag-button" type="button">
+            <span class="denhaag-button__label">Continue</span>
+          </button>
         </div>
       </div>
     </div>
@@ -795,7 +801,9 @@ exports[`Alerts tests > a11y and snapshots #3`] = `
             Here comes text. This text provides additional details and
             actionable steps the user can take.
           </p>
-          <button class="denhaag-button" type="button">Continue</button>
+          <button class="denhaag-button" type="button">
+            <span class="denhaag-button__label">Continue</span>
+          </button>
         </div>
       </div>
     </div>
@@ -835,7 +843,9 @@ exports[`Alerts tests > a11y and snapshots #3`] = `
             Here comes text. This text provides additional details and
             actionable steps the user can take.
           </p>
-          <button class="denhaag-button" type="button">Continue</button>
+          <button class="denhaag-button" type="button">
+            <span class="denhaag-button__label">Continue</span>
+          </button>
         </div>
       </div>
     </div>
