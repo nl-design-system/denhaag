@@ -24,7 +24,7 @@ exports[`Card tests > a11y and snapshots #0`] = `
             <div
               class="MuiTypography-root denhaag-card__subtitle MuiTypography-body1"
             >
-              <time datetime="2020-01-21T00:00:00.000Z">21/01/2020</time>
+              <time datetime="2020-01-21T00:00:00.000Z">1/21/2020</time>
             </div>
             <span
               class="material-icons MuiIcon-root denhaag-card__arrow"
@@ -75,7 +75,7 @@ exports[`Card tests > a11y and snapshots #0`] = `
             <div
               class="MuiTypography-root denhaag-card__subtitle MuiTypography-body1"
             >
-              <time datetime="2020-01-21T00:00:00.000Z">21/01/2020</time>
+              <time datetime="2020-01-21T00:00:00.000Z">1/21/2020</time>
             </div>
             <span
               class="material-icons MuiIcon-root denhaag-card__arrow"
@@ -126,7 +126,7 @@ exports[`Card tests > a11y and snapshots #0`] = `
             <div
               class="MuiTypography-root denhaag-card__subtitle MuiTypography-body1"
             >
-              <time datetime="2020-01-21T00:00:00.000Z">21/01/2020</time>
+              <time datetime="2020-01-21T00:00:00.000Z">1/21/2020</time>
             </div>
             <span
               class="material-icons MuiIcon-root denhaag-card__arrow"

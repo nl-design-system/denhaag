@@ -48,7 +48,7 @@ export const Button: React.FC<ButtonProps> = ({ iconAlign = 'start', ...props }:
   const rootClassNames = clsx('denhaag-button', {
     'denhaag-button--secondary-action': props.variant === 'secondary-action',
     'denhaag-button--large': props.size === 'large',
-    'denhaag-button--start-icon': iconAlign === 'start',
+    'denhaag-button--start-icon': iconAlign === 'start' && props.icon !== undefined,
     'denhaag-button--end-icon': iconAlign === 'end',
   });
   const iconWrapped = props.icon !== undefined ? <span className={'denhaag-button__icon'}>{props.icon}</span> : '';
