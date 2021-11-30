@@ -25,6 +25,6 @@
         "@material-ui/pickers": "3.3.10"
     },
     "peerDependencies": {
-        "react": "17.0.1"
+        "react": "^17.0.0"
     }
 }
