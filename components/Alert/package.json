@@ -29,6 +29,6 @@
     "@gemeente-denhaag/typography": "0.2.3-alpha.58"
   },
   "peerDependencies": {
-    "react": "17.0.1"
+    "react": "^17.0.0"
   }
 }
