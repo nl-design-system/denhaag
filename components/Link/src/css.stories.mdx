@@ -1,0 +1,196 @@
+import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+import { Paragraph } from "@gemeente-denhaag/typography";
+import { ArrowLeftIcon, ArrowRightIcon } from "@gemeente-denhaag/icons";
+
+import { Link } from "./index";
+import pkg from "../package.json";
+import readme from "../README.md";
+
+<Meta
+  title="CSS Components/Navigation/Link"
+  component={Link}
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Usage
+
+This component can be used in two ways:
+
+- As a standard `a`-tag with icon support. For this you need to supply at least an `href`, and an icon can be added in the `icon` prop:
+  `<Link href="/home" icon={<ArrowRightIcon />} iconAlign="end">Home</Link>`
+
+- With another way of routing, for example using `react-router-dom`. For this we have exposed the `component` property. When adding a `component` all props of this component will be usable on our `Link` component and will be passed through.
+  An example with `react-router-dom`:
+
+  ```
+  import { Link } from '@gemeente-denhaag/denhaag-component-library';
+  import { ArrowRightIcon } from '@gemeente-denhaag/icons';
+  import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link as RouterLink,
+  } from 'react-router-dom';
+
+  export default function App() {
+    return (
+      <Router>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                 <Link component={RouterLink} to="/" icon={<ArrowRightIcon />}>Home</Link>
+              </li>
+              <li>
+                 <Link component={RouterLink} to="/nl" hrefLang="nl">NL</Link>
+              </li>
+            </ul>
+          </nav>
+           <Switch>
+              <Route path="/nl">
+                <h1>NL home</h1>
+              </Route>
+              <Route path="/">
+                <h1>Home</h1>
+              </Route>
+            </Switch>
+        </div>
+      </Router>
+    );
+  }
+  ```
+
+## Design Tokens
+
+<DesignTokenDocBlock categoryName="Link" viewType="table" />
+
+## Stories
+
+### HTML only link
+
+<Canvas>
+  <Story name="HTML only Link">
+      <a href="#" class="denhaag-link">Link</a>
+  </Story>
+</Canvas>
+
+### HTML disabled link
+
+<Canvas>
+  <Story name="HTML disabled Link">
+      <a href="#" class="denhaag-link denhaag-link--disabled" tabindex="-1">Disabled link</a>
+  </Story>
+</Canvas>
+
+
+### HTML hovered link
+
+<Canvas>
+  <Story name="HTML hovered Link">
+      <a href="#" class="denhaag-link denhaag-link--hover">Hovered link</a>
+  </Story>
+</Canvas>
+
+### HTML focused link
+
+<Canvas>
+  <Story name="HTML focused Link">
+      <a href="#" class="denhaag-link denhaag-link--focus">Focused link</a>
+  </Story>
+</Canvas>
+
+### HTML Link with icon before
+
+<Canvas>
+  <Story name="HTML Link with icon before">
+      <a href="#" tabindex="0" class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start">
+        <span class="denhaag-link__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+            shape-rendering="auto"
+          >
+            <path
+              d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </span>
+        <span>Link with icon before</span>
+      </a>
+  </Story>
+</Canvas>
+
+### HTML Link with icon end
+
+<Canvas>
+  <Story name="HTML Link with icon after">
+      <a href="#" tabindex="0" class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-end">
+        <span class="denhaag-link__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+            shape-rendering="auto"
+          >
+            <path
+              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </span>
+        <span>Link with icon after</span>
+      </a>
+  </Story>
+</Canvas>
+
+### HTML only Link in paragraph
+
+<Canvas>
+  <Story name="HTML only Link in Paragraph">
+    <p class="utrecht-paragraph utrecht-paragraph--distanced">
+      It is possible to put{" "}
+      <a href="#" class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start" tabindex="0">
+        <span class="denhaag-link__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+            shape-rendering="auto"
+          >
+            <path
+              d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </span>
+        a link
+      </a>{" "}
+      in a Paragraph element.
+    </p>
+  </Story>
+</Canvas>
