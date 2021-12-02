@@ -2,10 +2,10 @@
   "name": "@gemeente-denhaag/alert",
   "version": "0.1.1-alpha.31",
   "description": "An alert component",
-  "bugs": "https://github.com/Gemeente-DenHaag/denhaag-component-library/issues",
+  "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Gemeente-DenHaag/denhaag-component-library.git",
+    "url": "https://github.com/nl-design-system/denhaag.git",
     "directory": "components/Alert"
   },
   "license": "EUPL-1.2",

@@ -199,7 +199,7 @@ Run the following command to publish a new version to the local registry (on a s
 `lerna publish --registry http://localhost:4873 --allow-branch fix/test --skip-git`
 
 Now you can test the packages in a new React project, or test it in the PWA. Either way make sure you specify the registry with `--registry http://localhost:4873`.
-In the PWA yarn upgrade the dependency of @gemeente-denhaag/denhaag-component-library (with the registry flag), and correct the imports.
+In the PWA yarn upgrade the dependency of @gemeente-denhaag/components-react (with the registry flag), and correct the imports.
 
 ## Testing guidelines
 
