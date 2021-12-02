@@ -28,8 +28,8 @@
     "react": "^17.0.0"
   },
   "devDependencies": {
-    "@gemeente-denhaag/formcontrollabel": "^0.2.3-alpha.60",
-    "@gemeente-denhaag/icons": "^0.2.3-alpha.60"
+    "@gemeente-denhaag/formcontrollabel": "0.2.3-alpha.60",
+    "@gemeente-denhaag/icons": "0.2.3-alpha.60"
   },
   "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
 }
