@@ -24,25 +24,22 @@
 
 .denhaag-link--focus,
 .denhaag-link:focus {
-  --denhaag-link-color: var(--denhaag-link-focus-color);
+  color: var(--denhaag-link-focus-color, var(--denhaag-link-color));
   outline: var(--denhaag-link-focus-outline);
 }
 
 .denhaag-link--hover,
 .denhaag-link:hover {
-  --denhaag-link-color: var(--denhaag-link-hover-color);
+  color: var(--denhaag-link-hover-color, var(--denhaag-link-color));
   cursor: pointer;
 }
 
-.denhaag-link--disabled {
-  --denhaag-link-color: var(--denhaag-link-disabled-color);
-  cursor: none;
-  pointer-events: none;
-}
-
+.denhaag-link--disabled,
 .denhaag-link--disabled--hover,
 .denhaag-link--disabled:hover {
-  --denhaag-link-color: var(--denhaag-link-disabled-color);
+  color: var(--denhaag-link-disabled-color, var(--denhaag-link-color));
+  cursor: none;
+  pointer-events: none;
 }
 
 .denhaag-link__icon {
