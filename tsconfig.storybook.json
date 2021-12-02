@@ -91,7 +91,7 @@
       "path": "packages/components-css"
     },
     {
-      "path": "packages/denhaag-component-library"
+      "path": "packages/components-react"
     },
     {
       "path": "proprietary/Common"

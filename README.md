@@ -1,8 +1,8 @@
-# denhaag-component-library
+# @gemeente-denhaag/components-react
 
 > A library of React components for the municipality of The Hague
 
-![npm](https://img.shields.io/npm/v/@gemeente-denhaag/denhaag-component-library?logo=npm&style=flat-square)
+![npm](https://img.shields.io/npm/v/@gemeente-denhaag/components-react?logo=npm&style=flat-square)
 ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/nl-design-system/denhaag/Build%20and%20deploy%20Storybook%20to%20Azure%20Web%20App/main?logo=github&style=flat-square)
 
 ## 🥅 Goals of this codebase
@@ -19,7 +19,7 @@ The Municipality of The Hague React UI-components library is constructed, so tha
 ### Install component library
 
 ```bash
-yarn add @gemeente-denhaag/denhaag-component-library
+yarn add @gemeente-denhaag/components-react
 ```
 
 ### Usage
@@ -27,7 +27,7 @@ yarn add @gemeente-denhaag/denhaag-component-library
 ```tsx
 import React, { Component } from "react";
 
-import { MyComponent } from "@gemeente-denhaag/denhaag-component-library";
+import { MyComponent } from "@gemeente-denhaag/components-react";
 
 class Example extends Component {
   render() {
