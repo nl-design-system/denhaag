@@ -5,6 +5,12 @@
   "command": {
     "publish": {
       "allowBranch": ["main", "release", "release/*"]
+    },
+    "version": {
+      "allowBranch": ["main"],
+      "conventionalCommits": true,
+      "exact": true,
+      "message": "docs(release): design system packages"
     }
   }
 }
