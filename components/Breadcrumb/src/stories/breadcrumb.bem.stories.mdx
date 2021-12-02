@@ -1,0 +1,34 @@
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+
+import pkg from "../../package.json";
+import readme from "../../README.md";
+
+<Meta
+  title="CSS Components/Input/Breadcrumb"
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "ALPHA",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Design Tokens
+
+<DesignTokenDocBlock categoryName="Breadcrumb" viewType="table" />
+
+## Stories
+
+### Default
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Default">
+    <h1>Breadcrumbs</h1>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>

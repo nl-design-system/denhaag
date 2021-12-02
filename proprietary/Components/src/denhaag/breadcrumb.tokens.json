@@ -1,0 +1,64 @@
+{
+  "denhaag": {
+    "breadcrumb": {
+      "block-size": {
+        "css": {
+          "syntax": "<length>",
+          "inherits": true
+        }
+      },
+      "font-family": {
+        "css": {
+          "syntax": "*",
+          "inherits": true
+        }
+      },
+      "font-size": {
+        "css": {
+          "syntax": "<length>",
+          "inherits": true
+        }
+      },
+      "text-transform": {
+        "css": {
+          "syntax": "inherit | none | uppercase",
+          "inherits": true
+        }
+      },
+      "divider": {
+        "content": {
+          "css": {
+            "syntax": "*",
+            "inherits": true
+          }
+        },
+        "inline-size": {
+          "css": {
+            "syntax": "<length>",
+            "inherits": true
+          }
+        }
+      },
+      "item": {
+        "padding": {
+          "block": {
+            "start": { "value": "0px" },
+            "end": { "value": "0px" }
+          },
+          "inline": {
+            "start": { "value": "0px" },
+            "end": { "value": "0px" }
+          }
+        }
+      },
+      "link": {
+        "background-color": { "value": "{denhaag.color.blue.3.value}" },
+        "color": { "value": "{denhaag.color.blue.3.value}" },
+        "focus": {
+          "background-color": { "value": "{denhaag.color.blue.3.value}" },
+          "color": { "value": "{denhaag.color.blue.3.value}" }
+        }
+      }
+    }
+  }
+}
