@@ -1,6 +1,6 @@
 import '../../../components/Alert/src/alert.css';
 import '../../../components/BadgeCounter/src/badge-counter.css';
-import '../../../components/Button/src/button.css';
+import '../../../components/Button/src/index.css';
 import '../../../components/Card/src/Card/card.css';
 import '../../../components/Card/src/CardActions/card-actions.css';
 import '../../../components/Checkbox/src/checkbox.css';
