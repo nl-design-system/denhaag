@@ -30,7 +30,7 @@
 
 .denhaag-link--hover,
 .denhaag-link:hover {
-  --denhaag-link-color: var(--denhaag-link-hover-color, var(--denhaag-link-color));
+  --denhaag-link-color: var(--denhaag-link-hover-color);
   cursor: pointer;
 }
 
