@@ -1,6 +1,6 @@
 import React from 'react';
 import BaseProps from '@gemeente-denhaag/baseprops';
-import './button.css';
+import './index.css';
 import clsx from 'clsx';
 import { SvgIconProps } from '@gemeente-denhaag/icons';
 
