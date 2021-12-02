@@ -3,6 +3,9 @@
   "useWorkspaces": true,
   "version": "independent",
   "command": {
+    "add": {
+      "exact": true
+    },
     "publish": {
       "allowBranch": ["main", "release", "release/*"]
     },
