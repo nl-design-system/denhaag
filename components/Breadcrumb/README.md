@@ -68,6 +68,8 @@ Page links should:
 
 ## Best practices
 
+Read documentation about microdata for the Breadcrumb on https://schema.org/BreadcrumbList
+
 ### Dos
 
 Breadcrumbs should:
@@ -75,7 +77,7 @@ Breadcrumbs should:
 - Include the current page as the last item in the breadcrumb trail
 - Include only site pages, not logical categories in your information architecture
 - Include the full navigational path
-- Use an collapsed icon to truncate the breadcrumbs when space becomes limited
+- Use a collapsed icon to truncate the breadcrumbs when space becomes limited
 - Not exceed half of the page
 - Preferably not have more than 6 pages. If there are more than 6 pages, look how you can improve the menu structure.
 
