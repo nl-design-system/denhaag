@@ -1,18 +1,10 @@
 .denhaag-breadcrumb {
-  --denhaag-breadcrumb-arrow-size: 0px;
-  --denhaag-focus-background-color: var(--denhaag-breadcrumb-link-focus-background-color);
-  --denhaag-link-background-color: var(--denhaag-breadcrumb-link-background-color);
-  --denhaag-link-color: var(--denhaag-breadcrumb-link-color);
-  --denhaag-link-focus-color: var(--denhaag-breadcrumb-link-focus-color, var(--denhaag-breadcrumb-link-color));
-  --denhaag-link-focus-text-decoration: var(--denhaag-link-text-decoration);
-  --denhaag-link-hover-color: var(--denhaag-breadcrumb-link-color);
-  --denhaag-link-hover-text-decoration: var(--denhaag-link-text-decoration);
-  --denhaag-link-visited-color: var(--denhaag-breadcrumb-link-color);
-  --denhaag-link-visited-text-decoration: var(--denhaag-link-text-decoration);
+  --denhaag-breadcrumb-spacer: 8px;
+  --denhaag-breadcrumb-background-color: #fff;
+  --denhaag-breadcrumb-transition-ease: cubic-bezier(0.55, 0, 0.1, 1);
+  --denhaag-breadcrumb-transition-speed: 375ms;
 
-  font-family: var(--denhaag-document-font-family, inherit);
-  font-size: var(--denhaag-breadcrumb-font-size);
-  text-transform: var(--denhaag-document-text-transform, inherit);
+  color: #4b4b4b;
 }
 
 .denhaag-breadcrumb__list {
@@ -22,77 +14,93 @@
 
 ol.denhaag-breadcrumb__list {
   list-style: none;
-  margin-block-end: 0;
   margin-block-start: 0;
+  margin-block-end: 0;
   padding-inline-start: 0;
 }
 
-.denhaag-breadcrumb__item {
-  block-size: 100%;
+.denhaag-breadcrumb__item,
+.denhaag-breadcrumb__link {
+  align-items: center;
+  display: flex;
+}
+
+.denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(2)):not(:last-child) {
+  --denhaag-breadcrumb-background-color: #f1f1f1;
+}
+
+.denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(2)):not(:last-child):hover {
+  --denhaag-breadcrumb-background-color: #d2d2d2;
 }
 
 .denhaag-breadcrumb__link {
-  background-color: var(--denhaag-breadcrumb-link-background-color);
-  display: block;
-  padding-block-end: var(--denhaag-breadcrumb-item-padding-block-end, 8px);
-  padding-block-start: var(--denhaag-breadcrumb-item-padding-block-start, 8px);
-  padding-inline-end: 0;
-  padding-inline-start: var(--denhaag-breadcrumb-item-padding-inline-start, 8px);
-  position: relative;
+  padding-block-start: var(--denhaag-breadcrumb-spacer);
+  padding-block-end: var(--denhaag-breadcrumb-spacer);
+  padding-inline-start: var(--denhaag-breadcrumb-spacer);
+  padding-inline-end: var(--denhaag-breadcrumb-spacer);
+  pointer-events: none;
 }
 
-.denhaag-breadcrumb--arrows {
-  /* https://css-tricks.com/triangle-breadcrumbs/ */
-  --denhaag-breadcrumb-arrow-size: 24px;
+.denhaag-breadcrumb__link--current,
+.denhaag-breadcrumb__link.denhaag-link--current {
+  --denhaag-link-color: initial;
+  text-decoration: none;
+}
+
+.denhaag-breadcrumb__link:not(.denhaag-breadcrumb__link--current):not(.denhaag-breadcrumb__link.denhaag-link--current)
+  > :first-child {
+  pointer-events: bounding-box;
+}
+
+/* SVG for the separator */
+.denhaag-breadcrumb__link > .denhaag-breadcrumb__text + .denhaag-icon {
+  color: initial;
+  font-size: inherit;
+  margin-inline-start: var(--denhaag-breadcrumb-spacer);
+  margin-inline-end: calc(-1 * var(--denhaag-breadcrumb-spacer));
+}
+
+.denhaag-breadcrumb__text {
+  background: var(--denhaag-breadcrumb-background-color);
   overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  transition: background var(--denhaag-breadcrumb-transition-ease) var(--denhaag-breadcrumb-transition-speed);
+  white-space: nowrap;
 }
 
-.denhaag-breadcrumb__link::after,
-.denhaag-breadcrumb__link::before {
-  border-block-end-width: var(--denhaag-breadcrumb-block-size);
-  border-block-start-width: var(--denhaag-breadcrumb-block-size);
-  border-color: transparent;
-  border-style: solid;
-  content: " ";
-  display: block;
-  height: 0;
-  left: 100%;
-  margin-block-start: calc(-1 * var(--denhaag-breadcrumb-block-size));
+.denhaag-breadcrumb__link > .denhaag-icon + .denhaag-breadcrumb__text {
+  /* Copied from Bootstrap .sr-only */
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin-inline-start: -1px;
+  margin-inline-end: -1px;
+  margin-block-start: -1px;
+  margin-block-end: -1px;
+  overflow: hidden;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
   position: absolute;
-  top: 50%;
-  width: 0;
+  width: 1px;
+  white-space: nowrap;
 }
 
-.denhaag-breadcrumb__link::after {
-  border-inline-start-color: var(--denhaag-breadcrumb-link-background-color);
-  border-inline-start-width: var(--denhaag-breadcrumb-arrow-size);
-  z-index: 2;
+.denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(2)):not(:last-child) .denhaag-breadcrumb__text {
+  border-radius: 3px;
+  max-width: calc(var(--denhaag-breadcrumb-spacer) * 3);
+  text-indent: calc(var(--denhaag-breadcrumb-spacer) * 3);
 }
 
-.denhaag-breadcrumb__link::before {
-  border-inline-start-color: var(--denhaag-document-background-color);
-  border-inline-start-width: var(--denhaag-breadcrumb-arrow-size);
-  margin-block-start: calc(-1 * var(--denhaag-breadcrumb-block-size));
-  margin-inline-start: 1px;
-  z-index: 1;
-}
-
-.denhaag-breadcrumb__link--focus,
-.denhaag-breadcrumb__link:focus {
-  background-color: var(--denhaag-breadcrumb-link-focus-background-color);
-}
-
-.denhaag-breadcrumb__link--focus::after,
-.denhaag-breadcrumb__link:focus::after {
-  border-inline-start-color: var(--denhaag-breadcrumb-link-focus-background-color);
-}
-
-.denhaag-breadcrumb__item ~ .denhaag-breadcrumb__item .denhaag-breadcrumb__link {
-  padding-inline-start: calc(
-    var(--denhaag-breadcrumb-item-padding-inline-start) + var(--denhaag-breadcrumb-arrow-size)
-  );
-}
-
-.denhaag-breadcrumb__item ~ .denhaag-breadcrumb__item {
-  margin-inline-start: var(--denhaag-breadcrumb-item-divider-inline-size);
+.denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(2)):not(:last-child) .denhaag-breadcrumb__text:before {
+  color: #7a7a7a;
+  content: "...";
+  left: calc(50% - 7px);
+  line-height: 0;
+  position: absolute;
+  text-indent: 0;
+  top: calc(50% - 3px);
+  vertical-align: baseline;
 }
