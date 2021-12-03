@@ -37,7 +37,7 @@ The breadcrumb contains the states inactive, active, hover and focus.
 
 - Inactive page link: text color Blue/3
 - Active page link: text color Grey/4
-- Seperator: svg color Grey/4
+- Separator: svg color Grey/4
 - Icon: svg color Blue/3
 - Collapsed icon: background-color Grey/1, svg fill color Grey/3
 
@@ -62,9 +62,9 @@ The breadcrumb contains the states inactive, active, hover and focus.
 
 Page links should:
 
-- Be short and clearly reflect the location or entity it links to
-- Start with the highest level parent page and move deeper into the information architecture as the breadcrumb trail progresses
-- Be consistent with the page titles
+- Be short and clearly reflect the location or entity it links to;
+- Start with the highest level parent page and move deeper into the information architecture as the breadcrumb trail progresses;
+- Be consistent with the page titles;
 
 ## Best practices
 
