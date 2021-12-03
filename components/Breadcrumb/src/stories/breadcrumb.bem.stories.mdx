@@ -1,16 +1,33 @@
-import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/addon-docs";
 import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
 
+import { Breadcrumb } from "./../index";
 import pkg from "../../package.json";
 import readme from "../../README.md";
 
 <Meta
   title="CSS Components/Navigation/Breadcrumb"
+  component={Breadcrumb}
   parameters={{
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: { source: { type: "dynamic" } },
     status: {
       type: "ALPHA",
+    },
+  }}
+  argTypes={{
+    modifier: {
+      control: { type: "select" },
+      description: "Modifier of the breadcrumb",
+      options: [
+        "denhaag-breadcrumb__link--hover",
+        "denhaag-breadcrumb__link--focus",
+        "denhaag-breadcrumb__link--current",
+      ],
+    },
+    depth: {
+      control: "number",
+      description: "Depth of the breadcrumb",
     },
   }}
 />
@@ -28,7 +45,112 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Default">
-    <h1>Breadcrumbs</h1>
+    <nav class="denhaag-breadcrumb">
+      <ol class="denhaag-breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li
+          class="denhaag-breadcrumb__item"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+          itemprop="itemListElement"
+        >
+          <a
+            class="denhaag-breadcrumb__link denhaag-breadcrumb__link--focus denhaag-link denhaag-link--focus"
+            href="https://example.com/"
+            itemprop="item"
+          >
+            <span class="denhaag-breadcrumb__text" itemprop="name">
+              Home
+            </span>
+            <meta itemprop="position" content="1" />
+          </a>
+        </li>
+        <li
+          class="denhaag-breadcrumb__item"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+          itemprop="itemListElement"
+        >
+          <a class="denhaag-breadcrumb__link denhaag-link" href="https://example.com/a/" itemprop="item">
+            <span class="denhaag-breadcrumb__text" itemprop="name">
+              Wonen en leven
+            </span>
+            <meta itemprop="position" content="2" />
+          </a>
+        </li>
+        <li
+          class="denhaag-breadcrumb__item"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+          itemprop="itemListElement"
+        >
+          <a class="denhaag-breadcrumb__link denhaag-link" href="https://example.com/a/b/" itemprop="item">
+            <span class="denhaag-breadcrumb__text" itemprop="name">
+              Afval
+            </span>
+            <meta itemprop="position" content="3" />
+          </a>
+        </li>
+        <li
+          class="denhaag-breadcrumb__item"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+          itemprop="itemListElement"
+        >
+          <a
+            class="denhaag-breadcrumb__link denhaag-link denhaag-link--current"
+            href="https://example.com/a/b/c/"
+            aria-current="location"
+            itemprop="item"
+          >
+            <span class="denhaag-breadcrumb__text" itemprop="name">
+              Kliko&apos;s
+            </span>
+            <meta itemprop="position" content="4" />
+          </a>
+        </li>
+      </ol>
+    </nav>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
+
+### Single item
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story
+    name="Single item"
+    args={{
+      modifier: "denhaag-breadcrumb__link",
+      depth: 1,
+    }}
+  >
+    {({ modifier }, { depth }) => (
+      <nav class="denhaag-breadcrumb">
+        <ol class="denhaag-breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+          <li
+            class="denhaag-breadcrumb__item"
+            itemscope
+            itemtype="https://schema.org/ListItem"
+            itemprop="itemListElement"
+          >
+            <a
+              class={`denhaag-breadcrumb__link ${modifier}`}
+              href="#example-url"
+              aria-current="location"
+              itemprop="item"
+            >
+              <span class="denhaag-breadcrumb__text" itemprop="name">
+                Breadcrumb item
+              </span>
+              <meta itemprop="position" content={depth} />
+            </a>
+          </li>
+        </ol>
+      </nav>
+    )}
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+<ArgsTable story="Single item" />
