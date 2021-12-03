@@ -1,62 +1,78 @@
 {
   "denhaag": {
     "breadcrumb": {
-      "block-size": {
-        "css": {
-          "syntax": "<length>",
-          "inherits": true
+      "block": {
+        "size": {
+          "value": "0px"
         }
       },
-      "font-family": {
-        "css": {
-          "syntax": "*",
-          "inherits": true
+      "font": {
+        "family": {
+          "value": "FONTNAME"
+        },
+        "size": {
+          "value": "0px"
         }
       },
-      "font-size": {
-        "css": {
-          "syntax": "<length>",
-          "inherits": true
-        }
-      },
-      "text-transform": {
-        "css": {
-          "syntax": "inherit | none | uppercase",
-          "inherits": true
+      "text": {
+        "transform": {
+          "value": "inherit"
         }
       },
       "divider": {
         "content": {
-          "css": {
-            "syntax": "*",
-            "inherits": true
-          }
+          "value": ""
         },
-        "inline-size": {
-          "css": {
-            "syntax": "<length>",
-            "inherits": true
+        "inline": {
+          "size": {
+            "value": "inherits"
           }
         }
       },
       "item": {
         "padding": {
           "block": {
-            "start": { "value": "0px" },
-            "end": { "value": "0px" }
+            "start": {
+              "value": "0px"
+            },
+            "end": {
+              "value": "0px"
+            }
           },
           "inline": {
-            "start": { "value": "0px" },
-            "end": { "value": "0px" }
+            "start": {
+              "value": "0px"
+            },
+            "end": {
+              "value": "0px"
+            }
           }
         }
       },
       "link": {
-        "background-color": { "value": "{denhaag.color.blue.3.value}" },
-        "color": { "value": "{denhaag.color.blue.3.value}" },
+        "background-color": {
+          "value": "{denhaag.color.blue.3.value}"
+        },
+        "color": {
+          "value": "{denhaag.color.blue.3.value}"
+        },
+        "active": {
+          "color": {
+            "value": "{denhaag.color.grey.4.value}"
+          }
+        },
         "focus": {
-          "background-color": { "value": "{denhaag.color.blue.3.value}" },
-          "color": { "value": "{denhaag.color.blue.3.value}" }
+          "background-color": {
+            "value": "{denhaag.color.blue.3.value}"
+          },
+          "color": {
+            "value": "{denhaag.color.blue.3.value}"
+          }
+        },
+        "hover": {
+          "color": {
+            "value": "{denhaag.color.blue.4.value}"
+          }
         }
       }
     }
