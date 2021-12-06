@@ -1,3 +1,7 @@
+# Navigation Link
+
+[Figma Design](https://www.figma.com/file/JpoY3waVoQGlLQzQXTL9nn/Design-System-Gemeente-Den-Haag?node-id=1673%3A231)
+
 # Pagination
 
 Pagination is used for splitting up content or data into several pages, with a control for navigating to the next or previous page.
