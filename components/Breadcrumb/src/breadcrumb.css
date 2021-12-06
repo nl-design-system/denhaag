@@ -1,14 +1,14 @@
 .denhaag-breadcrumb {
-  --denhaag-breadcrumb-spacer: 8px;
-  --denhaag-breadcrumb-background-color: #fff;
+  --denhaag-breadcrumb-background-color: transparent;
   --denhaag-breadcrumb-transition-ease: cubic-bezier(0.55, 0, 0.1, 1);
   --denhaag-breadcrumb-transition-speed: 375ms;
+  --denhaag-link-padding: var(--denhaag-space-inline-xs, 8px);
 
-  color: #4b4b4b;
+  color: var(--denhaag-color-grey-4, #4b4b4b);
 }
 
 .denhaag-breadcrumb__list {
-  block-size: var(--denhaag-breadcrumb-block-size);
+  block-size: 100%;
   display: flex;
 }
 
@@ -26,18 +26,18 @@ ol.denhaag-breadcrumb__list {
 }
 
 .denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(2)):not(:last-child) {
-  --denhaag-breadcrumb-background-color: #f1f1f1;
+  --denhaag-breadcrumb-background-color: var(--denhaag-color-grey-1, #f1f1f1);
 }
 
 .denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(2)):not(:last-child):hover {
-  --denhaag-breadcrumb-background-color: #d2d2d2;
+  --denhaag-breadcrumb-background-color: var(--denhaag-color-grey-2, #d2d2d2);
 }
 
 .denhaag-breadcrumb__link {
-  padding-block-start: var(--denhaag-breadcrumb-spacer);
-  padding-block-end: var(--denhaag-breadcrumb-spacer);
-  padding-inline-start: var(--denhaag-breadcrumb-spacer);
-  padding-inline-end: var(--denhaag-breadcrumb-spacer);
+  padding-block-start: var(--denhaag-link-padding);
+  padding-block-end: var(--denhaag-link-padding);
+  padding-inline-start: var(--denhaag-link-padding);
+  padding-inline-end: var(--denhaag-link-padding);
   pointer-events: none;
 }
 
@@ -56,8 +56,12 @@ ol.denhaag-breadcrumb__list {
 .denhaag-breadcrumb__link > .denhaag-breadcrumb__text + .denhaag-icon {
   color: initial;
   font-size: inherit;
-  margin-inline-start: var(--denhaag-breadcrumb-spacer);
-  margin-inline-end: calc(-1 * var(--denhaag-breadcrumb-spacer));
+  margin-inline-start: var(--denhaag-link-padding);
+  margin-inline-end: calc(-1 * var(--denhaag-link-padding));
+}
+
+[dir="rtl"] .denhaag-breadcrumb__link > .denhaag-breadcrumb__text + .denhaag-icon {
+  transform: scaleX(-1);
 }
 
 .denhaag-breadcrumb__text {
@@ -89,13 +93,14 @@ ol.denhaag-breadcrumb__list {
 }
 
 .denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(2)):not(:last-child) .denhaag-breadcrumb__text {
+  aspect-ratio: 24/16;
   border-radius: 3px;
-  max-width: calc(var(--denhaag-breadcrumb-spacer) * 3);
-  text-indent: calc(var(--denhaag-breadcrumb-spacer) * 3);
+  max-width: calc(var(--denhaag-link-padding) * 3);
+  text-indent: calc(var(--denhaag-link-padding) * 3);
 }
 
 .denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(2)):not(:last-child) .denhaag-breadcrumb__text:before {
-  color: #7a7a7a;
+  color: var(--denhaag-color-grey-3, #7a7a7a);
   content: "...";
   left: calc(50% - 7px);
   line-height: 0;
