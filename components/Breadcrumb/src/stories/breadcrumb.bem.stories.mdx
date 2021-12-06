@@ -300,6 +300,99 @@ import readme from "../../README.md";
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
+### RTL
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="RTL">
+    <nav class="denhaag-breadcrumb" dir="rtl">
+      <ol class="denhaag-breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li
+          class="denhaag-breadcrumb__item"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+          itemprop="itemListElement"
+        >
+          <a
+            class="denhaag-breadcrumb__link denhaag-breadcrumb__link--hover denhaag-link denhaag-link--hover"
+            href="https://example.com/"
+            itemprop="item"
+          >
+            <span class="denhaag-breadcrumb__text" itemprop="name">
+              Home
+            </span>
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="denhaag-icon"
+              focusable="false"
+              aria-hidden="true"
+              shape-rendering="auto"
+            >
+              <path
+                d="M9.293 18.707a1 1 0 010-1.414L14.586 12 9.293 6.707a1 1 0 011.414-1.414l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414 0z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            <meta itemprop="position" content="1" />
+          </a>
+        </li>
+        <li
+          class="denhaag-breadcrumb__item"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+          itemprop="itemListElement"
+        >
+          <a class="denhaag-breadcrumb__link denhaag-link" href="https://example.com/a/" itemprop="item">
+            <span class="denhaag-breadcrumb__text" itemprop="name">
+              Afval
+            </span>
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="denhaag-icon"
+              focusable="false"
+              aria-hidden="true"
+              shape-rendering="auto"
+            >
+              <path
+                d="M9.293 18.707a1 1 0 010-1.414L14.586 12 9.293 6.707a1 1 0 011.414-1.414l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414 0z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            <meta itemprop="position" content="2" />
+          </a>
+        </li>
+        <li
+          class="denhaag-breadcrumb__item"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+          itemprop="itemListElement"
+        >
+          <a
+            class="denhaag-breadcrumb__link denhaag-breadcrumb__link--current denhaag-link denhaag-link--current"
+            href="https://example.com/a/b/"
+            aria-current="location"
+            itemprop="item"
+          >
+            <span class="denhaag-breadcrumb__text" itemprop="name">
+              Kliko&apos;s
+            </span>
+            <meta itemprop="position" content="3" />
+          </a>
+        </li>
+      </ol>
+    </nav>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
 ### Long
 
 <Canvas>
