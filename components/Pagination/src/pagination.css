@@ -1,0 +1,4 @@
+.denhaag-pagination__links {
+  display: flex;
+  flex-direction: row;
+}
