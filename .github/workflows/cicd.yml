@@ -1,4 +1,4 @@
-name: Build and deploy Storybook to Azure Web App
+name: Build and deploy Storybook
 
 on:
   push:
