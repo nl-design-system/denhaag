@@ -37,9 +37,9 @@
     "storybook": "npm-run-all --parallel watch:*",
     "test": "cypress run-ct",
     "test:open": "cypress open-ct",
-    "update-patch": "npm-check-updates --configFileName .ncurc.patch.js --deep --dep dev,prod --packageManager yarn --target patch --upgrade && npm install --legacy-peer-deps",
-    "update-minor": "npm-check-updates --configFileName .ncurc.minor.js --deep --dep dev,prod --packageManager yarn --target minor --upgrade && npm install --legacy-peer-deps",
-    "update-major": "npm-check-updates --configFileName .ncurc.major.js --deep --dep dev,prod --packageManager yarn --target latest --upgrade && npm install --legacy-peer-deps",
+    "update-patch": "npm-check-updates --configFileName .ncurc.patch.js --deep --dep dev,prod --packageManager yarn --target patch --upgrade && yarn install",
+    "update-minor": "npm-check-updates --configFileName .ncurc.minor.js --deep --dep dev,prod --packageManager yarn --target minor --upgrade && yarn install",
+    "update-major": "npm-check-updates --configFileName .ncurc.major.js --deep --dep dev,prod --packageManager yarn --target latest --upgrade && yarn install",
     "watch:storybook": "start-storybook -p 6006 -s .storybook/stories/assets/",
     "watch:style-dictionary": "lerna run --parallel --scope '@gemeente-denhaag/design-tokens-*' watch:style-dictionary",
     "typecheck:storybook": "yarn tsc --project tsconfig.storybook.json --noEmit"
