@@ -7,14 +7,6 @@
       "spacing": {
         "value": "{denhaag.space.inline.xs.value}"
       },
-      "transition": {
-        "ease": {
-          "value": "cubic-bezier(0.55, 0, 0.1, 1)"
-        },
-        "speed": {
-          "value": "375ms"
-        }
-      },
       "current": {
         "color": {
           "value": "{denhaag.color.grey.4.value}"

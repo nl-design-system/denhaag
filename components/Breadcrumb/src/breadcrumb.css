@@ -83,7 +83,6 @@ ol.denhaag-breadcrumb__list {
   overflow: hidden;
   position: relative;
   text-overflow: ellipsis;
-  transition: background var(--denhaag-breadcrumb-transition-ease) var(--denhaag-breadcrumb-transition-speed);
   white-space: nowrap;
 }
 
