@@ -1946,6 +1946,19 @@
     react "^16.8.3"
     util-deprecate "^1.0.2"
 
+"@gemeente-denhaag/baseprops@0.2.3-alpha.66":
+  version "0.2.3-alpha.66"
+  resolved "https://registry.yarnpkg.com/@gemeente-denhaag/baseprops/-/baseprops-0.2.3-alpha.66.tgz#bdbd1f4554462c6c0b5511a506aae35df13fc25a"
+  integrity sha512-LgDZQ9i0obL2NYHs7pvzoiCOYafrgndlgMnxy2TyWxA+ar6lCTvwJoAYuGAYhIhtx/kPhI0VBAeZPxbt3k0AIw==
+
+"@gemeente-denhaag/icons@0.2.3-alpha.66":
+  version "0.2.3-alpha.66"
+  resolved "https://registry.yarnpkg.com/@gemeente-denhaag/icons/-/icons-0.2.3-alpha.66.tgz#e7c3a2abe7e0952e8f7f614768f05c72e96f2136"
+  integrity sha512-2LeiyZ7lYIdItiMWlecXbUpIwT2in11TGaWSw4ZCQEJfnRsIPeee/TSW9BbCCdy3xLEoQ2IBoH+PX+AQttk6Bw==
+  dependencies:
+    "@gemeente-denhaag/baseprops" "0.2.3-alpha.66"
+    "@material-ui/core" "4.12.3"
+
 "@hapi/address@2.x.x":
   version "2.1.4"
   resolved "https://registry.npmjs.org/@hapi/address/-/address-2.1.4.tgz"
