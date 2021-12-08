@@ -21,6 +21,7 @@ import MessageSvg from './svg/communication/message.svg';
 import CloseSvg from './svg/functional/close.svg';
 import CheckedSvg from './svg/functional/checked.svg';
 import DownloadSvg from './svg/functional/download.svg';
+import EditSvg from './svg/functional/edit.svg';
 import ExternalLinkSvg from './svg/functional/external-link.svg';
 import GridSvg from './svg/functional/grid.svg';
 import HamburgerSvg from './svg/functional/hamburger.svg';
@@ -85,6 +86,7 @@ export const MessageIcon: F = (props: SvgIconProps) => buildIcon(MessageSvg, pro
 export const CloseIcon: F = (props: SvgIconProps) => buildIcon(CloseSvg, props);
 export const CheckedIcon: F = (props: SvgIconProps) => buildIcon(CheckedSvg, props);
 export const DownloadIcon: F = (props: SvgIconProps) => buildIcon(DownloadSvg, props);
+export const EditIcon: F = (props: SvgIconProps) => buildIcon(EditSvg, props);
 export const ExternalLinkIcon: F = (props: SvgIconProps) => buildIcon(ExternalLinkSvg, props);
 export const GridIcon: F = (props: SvgIconProps) => buildIcon(GridSvg, props);
 export const HamburgerIcon: F = (props: SvgIconProps) => buildIcon(HamburgerSvg, props);

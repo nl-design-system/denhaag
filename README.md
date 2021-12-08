@@ -3,7 +3,7 @@
 > A library of React components for the municipality of The Hague
 
 ![npm](https://img.shields.io/npm/v/@gemeente-denhaag/components-react?logo=npm&style=flat-square)
-![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/nl-design-system/denhaag/Build%20and%20deploy%20Storybook%20to%20Azure%20Web%20App/main?logo=github&style=flat-square)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/nl-design-system/denhaag/Build%20and%20deploy%20Storybook/main?logo=github&style=flat-square)
 
 ## 🥅 Goals of this codebase
 
