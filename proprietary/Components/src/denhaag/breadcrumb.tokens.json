@@ -24,6 +24,9 @@
         "background-color": {
           "value": "{denhaag.color.grey.1.value}"
         },
+        "border-radius": {
+          "value": "3px"
+        },
         "color": {
           "value": "{denhaag.color.grey.3.value}"
         },

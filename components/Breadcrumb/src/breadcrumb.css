@@ -108,7 +108,7 @@ ol.denhaag-breadcrumb__list {
 
 .denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(2)):not(:last-child) .denhaag-breadcrumb__text {
   aspect-ratio: 24/16;
-  border-radius: 3px;
+  border-radius: var(--denhaag-breadcrumb-dots-border-radius, 3px);
   max-width: calc(var(--denhaag-breadcrumb-spacing, var(--denhaag-space-inline-xs)) * 3);
   text-indent: calc(var(--denhaag-breadcrumb-spacing, var(--denhaag-space-inline-xs)) * 3);
 }
