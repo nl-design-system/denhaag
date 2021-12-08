@@ -1,22 +1,28 @@
 exports[`Button tests > a11y and snapshots #0`] = `
 <div id="wrapper" style="display: inline-block;">
   <div style="padding: 10px;">
-    <button class="denhaag-button">
-      <span class="denhaag-button__label">Test button</span>
-    </button>
-  </div>
-  <div style="padding: 10px;">
-    <button class="denhaag-button denhaag-button--secondary-action">
-      <span class="denhaag-button__label">Test button</span>
-    </button>
-  </div>
-  <div style="padding: 10px;">
-    <button class="denhaag-button" disabled="">
+    <button type="button" class="denhaag-button">
       <span class="denhaag-button__label">Test button</span>
     </button>
   </div>
   <div style="padding: 10px;">
     <button
+      variant="secondary-action"
+      type="button"
+      class="denhaag-button denhaag-button--secondary-action"
+    >
+      <span class="denhaag-button__label">Test button</span>
+    </button>
+  </div>
+  <div style="padding: 10px;">
+    <button disabled="" type="button" class="denhaag-button">
+      <span class="denhaag-button__label">Test button</span>
+    </button>
+  </div>
+  <div style="padding: 10px;">
+    <button
+      variant="secondary-action"
+      type="button"
       class="denhaag-button denhaag-button--secondary-action denhaag-button--large"
     >
       <span class="denhaag-button__label">Test button</span>
@@ -28,7 +34,7 @@ exports[`Button tests > a11y and snapshots #0`] = `
 exports[`Button tests > a11y and snapshots #1`] = `
 <div id="wrapper" style="display: inline-block;">
   <div style="padding: 10px;">
-    <button class="denhaag-button denhaag-button--start-icon">
+    <button type="button" class="denhaag-button denhaag-button--start-icon">
       <span class="denhaag-button__icon"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
@@ -53,6 +59,8 @@ exports[`Button tests > a11y and snapshots #1`] = `
   </div>
   <div style="padding: 10px;">
     <button
+      variant="secondary-action"
+      type="button"
       class="denhaag-button denhaag-button--secondary-action denhaag-button--start-icon"
     >
       <span class="denhaag-button__icon"
@@ -78,7 +86,7 @@ exports[`Button tests > a11y and snapshots #1`] = `
     </button>
   </div>
   <div style="padding: 10px;">
-    <button class="denhaag-button denhaag-button--end-icon">
+    <button type="button" class="denhaag-button denhaag-button--end-icon">
       <span class="denhaag-button__label">Test button</span
       ><span class="denhaag-button__icon"
         ><svg
@@ -104,8 +112,10 @@ exports[`Button tests > a11y and snapshots #1`] = `
   </div>
   <div style="padding: 10px;">
     <button
-      class="denhaag-button denhaag-button--secondary-action denhaag-button--large denhaag-button--end-icon"
+      variant="secondary-action"
       disabled=""
+      type="button"
+      class="denhaag-button denhaag-button--secondary-action denhaag-button--large denhaag-button--end-icon"
     >
       <span class="denhaag-button__label">Test button</span
       ><span class="denhaag-button__icon"

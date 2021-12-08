@@ -32,6 +32,8 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
+.yarn/
+
 tsconfig.tsbuildinfo
 
 # story-book build output
