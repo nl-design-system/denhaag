@@ -43,7 +43,7 @@
   width: var(--denhaag-pagination-size);
 
   font-style: normal;
-  font-weight: var(--denhaag-pagination-font-weight, 500);
+  font-weight: var(--denhaag-pagination-font-weight);
   font-size: var(--denhaag-pagination-font-size);
 }
 
