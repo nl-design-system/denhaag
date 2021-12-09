@@ -56,6 +56,10 @@ The pagination contains the states inactive, active, hover and focus.
 
 None.
 
+## Pagination alignment
+
+The pagination can be left, right and center aligned based on the parent. The alignment depends on the layout of the rest of elements.
+
 ## Best practices
 
 ### Dos
