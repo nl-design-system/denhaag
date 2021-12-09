@@ -1,4 +1,5 @@
 import Accordion from './Accordion';
+import './accordion.css';
 
 export default Accordion;
 export * from './Accordion';
