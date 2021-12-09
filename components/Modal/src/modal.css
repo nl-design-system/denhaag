@@ -8,8 +8,8 @@
   left: 0;
   overflow: hidden;
   outline: 0;
-  padding-block-start: var(--denhaag-modal-padding-block, 16px);
-  padding-block-end: var(--denhaag-modal-padding-block, 16px);
+  padding-block-start: var(--denhaag-modal-padding-block, 1rem);
+  padding-block-end: var(--denhaag-modal-padding-block, 1rem);
   pointer-events: none;
   position: fixed;
   top: 0;
@@ -17,9 +17,22 @@
   z-index: var(--denhaag-modal-index, 12);
 }
 
-@media (min-width: 480px) {
+@media (min-width: 30rem) {
   .denhaag-modal {
     --denhaag-modal-footer-direction: row;
+  }
+}
+
+@media (min-width: 47.8125rem) {
+  .denhaag-modal {
+    --denhaag-modal-inner-padding-block: var(
+      --denhaag-modal-lg-inner-padding-block,
+      var(--denhaag-space-block-2xl, 2rem)
+    );
+    --denhaag-modal-inner-padding-inline: var(
+      --denhaag-modal-lg-inner-padding-inline,
+      var(--denhaag-space-inline-2xl, 2rem)
+    );
   }
 }
 
@@ -55,7 +68,7 @@
 }
 
 .denhaag-modal__button svg {
-  font-size: var(--denhaag-modal-icon-size, calc(var(--denhaag-modal-padding-block, 16px) * 0.875));
+  font-size: var(--denhaag-modal-icon-size, calc(var(--denhaag-modal-padding-block, 1rem) * 0.875));
 }
 
 .denhaag-modal__button:hover,
@@ -109,14 +122,14 @@
   background-clip: padding-box;
   display: flex;
   flex-direction: column;
-  gap: var(--denhaag-modal-padding-block, 16px);
+  gap: var(--denhaag-modal-padding-block, 1rem);
   max-height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-  padding-block-start: var(--denhaag-modal-inner-padding-block, var(--denhaag-space-block-2xl, 32px));
-  padding-block-end: var(--denhaag-modal-inner-padding-block, var(--denhaag-space-block-2xl, 32px));
-  padding-inline-start: var(--denhaag-modal-inner-padding-inline, var(--denhaag-space-inline-2xl, 32px));
-  padding-inline-end: var(--denhaag-modal-inner-padding-inline, var(--denhaag-space-inline-2xl, 32px));
+  padding-block-start: var(--denhaag-modal-inner-padding-block, var(--denhaag-space-block-md, 1rem));
+  padding-block-end: var(--denhaag-modal-inner-padding-block, var(--denhaag-space-block-md, 1rem));
+  padding-inline-start: var(--denhaag-modal-inner-padding-inline, var(--denhaag-space-inline-md, 1rem));
+  padding-inline-end: var(--denhaag-modal-inner-padding-inline, var(--denhaag-space-inline-md, 1rem));
   z-index: 1;
 }
 
@@ -124,7 +137,7 @@
   display: flex;
   flex-direction: var(--denhaag-modal-footer-direction, column);
   justify-content: flex-end;
-  gap: var(--denhaag-modal-padding-block, 16px);
+  gap: var(--denhaag-modal-padding-block, 1rem);
 }
 
 .denhaag-modal__title {
@@ -139,7 +152,7 @@
   max-width: calc(
     100% -
       (
-        var(--denhaag-modal-icon-size, calc(var(--denhaag-modal-padding-block, 16px) * 0.875)) +
+        var(--denhaag-modal-icon-size, calc(var(--denhaag-modal-padding-block, 1rem) * 0.875)) +
           (3 * var(--denhaag-modal-icon-padding-inline))
       )
   );
