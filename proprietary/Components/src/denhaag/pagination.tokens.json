@@ -3,7 +3,7 @@
     "pagination": {
       "border": {
         "radius": {
-          "value": "3px"
+          "value": "{denhaag.border-radius.value}"
         }
       },
       "font": {
