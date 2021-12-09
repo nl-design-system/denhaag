@@ -8,32 +8,24 @@
       },
       "font": {
         "size": {
-          "value": "16px"
+          "value": "{denhaag.typography.scale.base.font-size.value}"
         },
         "weight": {
-          "value": "500"
+          "value": 500
         }
       },
       "margin-inline": {
-        "value": "10px"
-      },
-      "transition": {
-        "ease": {
-          "value": "cubic-bezier(0.55, 0, 0.1, 1)"
-        },
-        "speed": {
-          "value": "375ms"
-        }
+        "value": "0.625rem"
       },
       "size": {
-        "value": "32px"
+        "value": "{denhaag.space.block.2xl.value}"
       },
       "arrow": {
         "font-size": {
-          "value": "12px"
+          "value": "{denhaag.typography.scale.s.font-size.value}"
         },
         "size": {
-          "value": "20px"
+          "value": "{denhaag.space.block.lg.value}"
         }
       },
       "link": {
