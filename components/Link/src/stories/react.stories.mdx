@@ -3,12 +3,12 @@ import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
 import { Paragraph } from "@gemeente-denhaag/typography";
 import { ArrowLeftIcon, ArrowRightIcon } from "@gemeente-denhaag/icons";
 
-import { Link } from "./index";
-import pkg from "../package.json";
-import readme from "../README.md";
+import { Link } from "../index";
+import pkg from "../../package.json";
+import readme from "../../README.md";
 
 <Meta
-  title="Components/Navigation/Link"
+  title="React Components/Navigation/Link"
   component={Link}
   parameters={{
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
@@ -31,7 +31,7 @@ This component can be used in two ways:
   An example with `react-router-dom`:
 
   ```
-  import { Link } from '@gemeente-denhaag/denhaag-component-library';
+  import { Link } from '@gemeente-denhaag/components-react';
   import { ArrowRightIcon } from '@gemeente-denhaag/icons';
   import {
     BrowserRouter as Router,
@@ -211,37 +211,5 @@ const ReactParagraph = (
         in a Paragraph element.
       </Paragraph>
     )}
-  </Story>
-</Canvas>
-
-### HTML only Link
-
-<Canvas>
-  <Story name="HTML only Link">
-    <p class="utrecht-paragraph utrecht-paragraph--distanced">
-      It is possible to put{" "}
-      <a href="#" class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start" tabindex="0">
-        <span class="denhaag-link__icon">
-          <svg
-            width="1em"
-            height="1em"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class="MuiSvgIcon-root"
-            focusable="false"
-            aria-hidden="true"
-            shape-rendering="auto"
-          >
-            <path
-              d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"
-              fill="currentColor"
-            ></path>
-          </svg>
-        </span>
-        a link
-      </a>{" "}
-      in a Paragraph element.
-    </p>
   </Story>
 </Canvas>

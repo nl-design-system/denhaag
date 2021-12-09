@@ -1,32 +1,32 @@
 {
-    "name": "@gemeente-denhaag/select",
-    "version": "0.2.3-alpha.58",
-    "description": "A Select component",
-    "bugs": "https://github.com/nl-design-system/denhaag/issues",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/nl-design-system/denhaag.git",
-        "directory": "components/Select"
-    },
-    "license": "EUPL-1.2",
-    "author": "Municipality of The Hague",
-    "exports": "./dist/index.js",
-    "main": "dist/index.js",
-    "module": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "files": [
-        "dist"
-    ],
-    "scripts": {
-        "build": "rollup -c ../../rollup.config.js",
-        "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
-    },
-    "dependencies": {
-        "@gemeente-denhaag/baseprops": "^0.2.3-alpha.58",
-        "@material-ui/core": "^4.11.0"
-    },
-    "peerDependencies": {
-        "react": "^17.0.1"
-    },
-    "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
+  "name": "@gemeente-denhaag/select",
+  "version": "0.2.3-alpha.71",
+  "description": "A Select component",
+  "bugs": "https://github.com/nl-design-system/denhaag/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nl-design-system/denhaag.git",
+    "directory": "components/Select"
+  },
+  "license": "EUPL-1.2",
+  "author": "Municipality of The Hague",
+  "exports": "./dist/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c ../../rollup.config.js",
+    "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+  },
+  "dependencies": {
+    "@gemeente-denhaag/baseprops": "0.2.3-alpha.71",
+    "@material-ui/core": "4.12.3"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0"
+  },
+  "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
 }

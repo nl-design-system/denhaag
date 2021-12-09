@@ -1,10 +1,9 @@
 import React from 'react';
-import BaseProps from '@gemeente-denhaag/baseprops';
-import './button.css';
+import './index.css';
 import clsx from 'clsx';
 import { SvgIconProps } from '@gemeente-denhaag/icons';
 
-export interface ButtonProps extends BaseProps {
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   /**
    * Simple click handler
    */
@@ -16,19 +15,9 @@ export interface ButtonProps extends BaseProps {
   size?: 'medium' | 'large';
 
   /**
-   * Disables Button
-   */
-  disabled?: boolean;
-
-  /**
    * Button variant
    */
   variant?: 'primary-action' | 'secondary-action';
-
-  /**
-   * HTML type prop
-   */
-  type?: 'button' | 'submit' | 'reset';
 
   /**
    * Icon to display at the start or the end of the button
@@ -44,17 +33,28 @@ export interface ButtonProps extends BaseProps {
 /**
  * Primary UI component for user interaction
  */
-export const Button: React.FC<ButtonProps> = ({ iconAlign = 'start', ...props }: ButtonProps) => {
-  const rootClassNames = clsx('denhaag-button', {
-    'denhaag-button--secondary-action': props.variant === 'secondary-action',
-    'denhaag-button--large': props.size === 'large',
-    'denhaag-button--start-icon': iconAlign === 'start' && props.icon !== undefined,
-    'denhaag-button--end-icon': iconAlign === 'end',
-  });
-  const iconWrapped = props.icon !== undefined ? <span className={'denhaag-button__icon'}>{props.icon}</span> : '';
+export const Button: React.FC<ButtonProps> = ({
+  icon,
+  className,
+  type = 'button',
+  iconAlign = 'start',
+  ...props
+}: ButtonProps) => {
+  const buttonClassNames = clsx(
+    'denhaag-button',
+    {
+      'denhaag-button--secondary-action': props.variant === 'secondary-action',
+      'denhaag-button--large': props.size === 'large',
+      'denhaag-button--start-icon': iconAlign === 'start' && icon !== undefined,
+      'denhaag-button--end-icon': iconAlign === 'end',
+    },
+    className,
+  );
+
+  const iconWrapped = icon !== undefined ? <span className={'denhaag-button__icon'}>{icon}</span> : '';
 
   return (
-    <button className={rootClassNames} onClick={props.onClick} disabled={props.disabled} type={props.type}>
+    <button {...props} type={type} className={buttonClassNames}>
       {iconAlign === 'start' ? iconWrapped : ''}
       <span className={'denhaag-button__label'}>{props.children}</span>
       {iconAlign === 'end' ? iconWrapped : ''}

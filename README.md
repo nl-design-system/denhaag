@@ -1,9 +1,9 @@
-# denhaag-component-library
+# @gemeente-denhaag/components-react
 
 > A library of React components for the municipality of The Hague
 
-![npm](https://img.shields.io/npm/v/@gemeente-denhaag/denhaag-component-library?logo=npm&style=flat-square)
-![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/nl-design-system/denhaag/Build%20and%20deploy%20Storybook%20to%20Azure%20Web%20App/main?logo=github&style=flat-square)
+![npm](https://img.shields.io/npm/v/@gemeente-denhaag/components-react?logo=npm&style=flat-square)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/nl-design-system/denhaag/Build%20and%20deploy%20Storybook/main?logo=github&style=flat-square)
 
 ## 🥅 Goals of this codebase
 
@@ -19,7 +19,7 @@ The Municipality of The Hague React UI-components library is constructed, so tha
 ### Install component library
 
 ```bash
-yarn add @gemeente-denhaag/denhaag-component-library
+yarn add @gemeente-denhaag/components-react
 ```
 
 ### Usage
@@ -27,7 +27,7 @@ yarn add @gemeente-denhaag/denhaag-component-library
 ```tsx
 import React, { Component } from "react";
 
-import { MyComponent } from "@gemeente-denhaag/denhaag-component-library";
+import { MyComponent } from "@gemeente-denhaag/components-react";
 
 class Example extends Component {
   render() {
@@ -41,8 +41,8 @@ class Example extends Component {
 #### Setting up the development environment
 
 1. Clone this repository
-2. Install npm go [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) for instructions. Make sure to install version `14` or higher.
-3. Install yarn go [here](https://yarnpkg.com/getting-started/install) for instructions. Make sure to install version `1.22` or higher.
+2. Install npm go [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) for instructions. Make sure to install version `16.13.0` or higher.
+3. Install yarn go [here](https://yarnpkg.com/getting-started/install) for instructions. Make sure to install version `1.22.17` or higher.
 4. Run the following command to install all development dependencies:
 
 ```bash
@@ -93,7 +93,7 @@ Start by filling it with the following information:
   },
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "dependencies": {
-    "@material-ui/core": "^4.11.0"
+    "@material-ui/core": "4.11.0"
   }
 }
 ```
@@ -105,7 +105,7 @@ The file we need is located here: `components/[CATEGORY]/package.json`\
 An entry should be structured like this:
 
 ```json
-"@gemeente-denhaag/{component_name}": "^0.1.0"
+"@gemeente-denhaag/{component_name}": "0.1.0"
 ```
 
 Similarly, if you create a new category we need to add the category package to the list of dependencies in the meta-package which installs all of the Den Haag react components.

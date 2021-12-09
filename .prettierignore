@@ -7,5 +7,7 @@ node_modules
 CHANGELOG.md
 dist
 package-lock.json
-package.json
 storybook-static
+
+# Ignore submodules
+test_images

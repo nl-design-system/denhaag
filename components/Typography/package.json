@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/typography",
-  "version": "0.2.3-alpha.58",
+  "version": "0.2.3-alpha.71",
   "description": "A Typography component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -22,14 +22,14 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/basedatadisplayprops": "^0.2.3-alpha.58"
+    "@gemeente-denhaag/basedatadisplayprops": "0.2.3-alpha.71"
   },
   "devDependencies": {
-    "@gemeente-denhaag/design-tokens-common": "^0.2.3-alpha.58",
-    "@gemeente-denhaag/design-tokens-components": "^0.2.3-alpha.58"
+    "@gemeente-denhaag/design-tokens-common": "0.2.3-alpha.71",
+    "@gemeente-denhaag/design-tokens-components": "0.2.3-alpha.71"
   },
   "peerDependencies": {
-    "react": "^17.0.1"
+    "react": "^17.0.0"
   },
   "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
 }
