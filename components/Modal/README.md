@@ -1,7 +1,3 @@
-# Navigation Link
-
-[Figma Design](https://www.figma.com/file/JpoY3waVoQGlLQzQXTL9nn/Design-System---Gemeente-Den-Haag?node-id=0%3A1)
-
 # Modal
 
 Modals are overlays that prevent users from interacting with the rest of the application until a specific action is taken.
@@ -112,5 +108,6 @@ Modals should:
 
 ## References
 
+[Figma Design](https://www.figma.com/file/JpoY3waVoQGlLQzQXTL9nn/Design-System---Gemeente-Den-Haag?node-id=0%3A1)
 [http://www.uxforthemasses.com/overlays/](http://www.uxforthemasses.com/overlays/)
 [https://www.nngroup.com/articles/modal-nonmodal-dialog/](https://www.nngroup.com/articles/modal-nonmodal-dialog/)
