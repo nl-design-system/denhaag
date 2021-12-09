@@ -2,37 +2,24 @@
   --denhaag-modal-footer-direction: column;
 
   align-content: center;
-  display: var(--denhaag-modal-display, none);
+  display: var(--denhaag-modal-display);
   height: 100%;
   justify-content: center;
   left: 0;
   overflow: hidden;
   outline: 0;
-  padding-block-start: var(--denhaag-modal-padding-block, 1rem);
-  padding-block-end: var(--denhaag-modal-padding-block, 1rem);
+  padding-block-start: var(--denhaag-modal-padding-block);
+  padding-block-end: var(--denhaag-modal-padding-block);
   pointer-events: none;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: var(--denhaag-modal-index, 12);
+  z-index: var(--denhaag-modal-index);
 }
 
 @media (min-width: 30rem) {
   .denhaag-modal {
     --denhaag-modal-footer-direction: row;
-  }
-}
-
-@media (min-width: 47.8125rem) {
-  .denhaag-modal {
-    --denhaag-modal-inner-padding-block: var(
-      --denhaag-modal-lg-inner-padding-block,
-      var(--denhaag-space-block-2xl, 2rem)
-    );
-    --denhaag-modal-inner-padding-inline: var(
-      --denhaag-modal-lg-inner-padding-inline,
-      var(--denhaag-space-inline-2xl, 2rem)
-    );
   }
 }
 
@@ -52,10 +39,10 @@
 }
 
 .denhaag-modal__button {
-  background: var(--denhaag-modal-icon-background-color, transparent);
-  border: var(--denhaag-modal-icon-border-width, 0) var(--denhaag-modal-icon-border-style, solid)
-    var(--denhaag-modal-icon-border-color, currentColor);
-  color: var(--denhaag-modal-icon-color, inherit);
+  background: var(--denhaag-modal-icon-background-color);
+  border: var(--denhaag-modal-icon-border-width) var(--denhaag-modal-icon-border-style)
+    var(--denhaag-modal-icon-border-color);
+  color: var(--denhaag-modal-icon-color);
   cursor: pointer;
   line-height: 1;
   position: absolute;
@@ -68,23 +55,21 @@
 }
 
 .denhaag-modal__button svg {
-  font-size: var(--denhaag-modal-icon-size, calc(var(--denhaag-modal-padding-block, 1rem) * 0.875));
+  font-size: var(--denhaag-modal-icon-size);
 }
 
 .denhaag-modal__button:hover,
 .denhaag-modal__button--hover {
-  /* @todo: Check with design */
   --denhaag-modal-icon-color: var(--denhaag-modal-icon-hover-color);
 }
 
 .denhaag-modal__button:focus,
 .denhaag-modal__button--focus {
-  /* @todo: Check with design */
   outline: var(--denhaag-focus-border);
 }
 
 .denhaag-modal__content {
-  color: var(--denhaag-modal-paragraph-color, inherit);
+  color: var(--denhaag-modal-paragraph-color);
   flex: 1 1 auto;
   max-height: 100%;
   overflow-y: auto;
@@ -98,16 +83,16 @@
   font-family: inherit;
   font-size: inherit;
   font-style: inherit;
-  line-height: var(--denhaag-modal-paragraph-line-height, 1.5);
+  line-height: var(--denhaag-modal-paragraph-line-height);
 }
 
 .denhaag-modal__content p + p {
-  margin-block-start: var(--denhaag-modal-paragraph-margin, 1em);
+  margin-block-start: var(--denhaag-modal-paragraph-margin);
 }
 
 .denhaag-modal__dialog {
-  max-height: calc(100% - (var(--denhaag-modal-offset-y, 68px) * 2));
-  max-width: var(--denhaag-modal-width, 765px);
+  max-height: calc(100% - (var(--denhaag-modal-offset-y) * 2));
+  max-width: var(--denhaag-modal-width);
   position: relative;
   pointer-events: bounding-box;
   width: auto;
@@ -122,40 +107,34 @@
   background-clip: padding-box;
   display: flex;
   flex-direction: column;
-  gap: var(--denhaag-modal-padding-block, 1rem);
+  gap: var(--denhaag-modal-padding-block);
   max-height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-  padding-block-start: var(--denhaag-modal-inner-padding-block, var(--denhaag-space-block-md, 1rem));
-  padding-block-end: var(--denhaag-modal-inner-padding-block, var(--denhaag-space-block-md, 1rem));
-  padding-inline-start: var(--denhaag-modal-inner-padding-inline, var(--denhaag-space-inline-md, 1rem));
-  padding-inline-end: var(--denhaag-modal-inner-padding-inline, var(--denhaag-space-inline-md, 1rem));
+  padding-block-start: var(--denhaag-modal-inner-padding-block);
+  padding-block-end: var(--denhaag-modal-inner-padding-block);
+  padding-inline-start: var(--denhaag-modal-inner-padding-inline);
+  padding-inline-end: var(--denhaag-modal-inner-padding-inline);
   z-index: 1;
 }
 
 .denhaag-modal__footer {
   display: flex;
-  flex-direction: var(--denhaag-modal-footer-direction, column);
+  flex-direction: var(--denhaag-modal-footer-direction);
   justify-content: flex-end;
-  gap: var(--denhaag-modal-padding-block, 1rem);
+  gap: var(--denhaag-modal-padding-block);
 }
 
 .denhaag-modal__title {
-  color: var(--denhaag-modal-title-color, inherit);
-  font-family: var(--denhaag-modal-title-font-family, inherit);
-  font-style: var(--denhaag-modal-title-font-style, inherit);
-  font-weight: var(--denhaag-modal-title-font-weight, bolder);
-  font-size: var(--denhaag-modal-title-font-size, 1.25em);
-  line-height: var(--denhaag-modal-title-line-height, 1.3);
+  color: var(--denhaag-modal-title-color);
+  font-family: var(--denhaag-modal-title-font-family);
+  font-style: var(--denhaag-modal-title-font-style);
+  font-weight: var(--denhaag-modal-title-font-weight);
+  font-size: var(--denhaag-modal-title-font-size);
+  line-height: var(--denhaag-modal-title-line-height);
   margin-block-start: 0;
   margin-block-end: 0;
-  max-width: calc(
-    100% -
-      (
-        var(--denhaag-modal-icon-size, calc(var(--denhaag-modal-padding-block, 1rem) * 0.875)) +
-          (3 * var(--denhaag-modal-icon-padding-inline))
-      )
-  );
+  max-width: calc(100% - (var(--denhaag-modal-icon-size) + (3 * var(--denhaag-modal-icon-padding-inline))));
 }
 
 /* Only purpose is to show stories correct */
