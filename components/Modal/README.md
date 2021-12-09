@@ -106,6 +106,17 @@ Modals should:
 - Not include important information.
 - Not open suddenly. A modal should always open upon the user doing (or did) something.
 
+## Javascript
+
+Import the `@gemeente-denhaag/modal/src/modal.js` javascript file to you site to allow the modals to work.
+
+See the example below:
+
+```javascript
+import ModalScripts from "@gemeente-denhaag/modal/src/modal";
+window.addEventListener("DOMContentLoaded", () => new ModalScripts());
+```
+
 ## References
 
 [Figma Design](https://www.figma.com/file/JpoY3waVoQGlLQzQXTL9nn/Design-System---Gemeente-Den-Haag?node-id=0%3A1)
