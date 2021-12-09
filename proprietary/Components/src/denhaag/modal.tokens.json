@@ -13,12 +13,13 @@
         }
       },
       "padding": {
-        "block": {
-          "value": "{denhaag.space.block.md.value}"
-        }
+        "value": "{denhaag.space.block.md.value}"
       },
       "index": {
         "value": 12
+      },
+      "max-height": {
+        "value": "38.375rem"
       },
       "width": {
         "value": "765px"
@@ -99,7 +100,7 @@
             "value": 500
           },
           "size": {
-            "value": "{denhaag.typography.scale.xl.value}"
+            "value": "{denhaag.typography.scale.xl.font-size.value}"
           }
         },
         "line-height": {
