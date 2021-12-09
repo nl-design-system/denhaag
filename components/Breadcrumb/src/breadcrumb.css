@@ -1,6 +1,6 @@
 .denhaag-breadcrumb {
   --denhaag-breadcrumb-background-color: transparent;
-  color: var(--denhaag-breadcrumb-color);
+  color: var(--denhaag-breadcrumb-color, #4b4b4b);
 }
 
 .denhaag-breadcrumb__list {
@@ -22,41 +22,38 @@ ol.denhaag-breadcrumb__list {
 }
 
 .denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(2)):not(:last-child) {
-  --denhaag-breadcrumb-background-color: var(--denhaag-breadcrumb-dots-background-color, var(--denhaag-color-grey-1));
+  --denhaag-breadcrumb-background-color: var(--denhaag-breadcrumb-dots-background-color, #f1f1f1);
 }
 
 .denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(2)):not(:last-child):hover {
-  --denhaag-breadcrumb-background-color: var(
-    --denhaag-breadcrumb-dots-hover-background-color,
-    var(--denhaag-color-grey-2)
-  );
+  --denhaag-breadcrumb-background-color: var(--denhaag-breadcrumb-dots-hover-background-color, #d2d2d2);
 }
 
 .denhaag-breadcrumb__link {
-  color: var(--denhaag-breadcrumb-link-color, var(--denhaag-link-color));
-  padding-block-start: var(--denhaag-breadcrumb-spacing, var(--denhaag-space-inline-xs));
-  padding-block-end: var(--denhaag-breadcrumb-spacing, var(--denhaag-space-inline-xs));
-  padding-inline-start: var(--denhaag-breadcrumb-spacing, var(--denhaag-space-inline-xs));
-  padding-inline-end: var(--denhaag-breadcrumb-spacing, var(--denhaag-space-inline-xs));
+  color: var(--denhaag-breadcrumb-link-color, #094b81);
+  padding-block-start: var(--denhaag-breadcrumb-spacing, 8px);
+  padding-block-end: var(--denhaag-breadcrumb-spacing, 8px);
+  padding-inline-start: var(--denhaag-breadcrumb-spacing, 8px);
+  padding-inline-end: var(--denhaag-breadcrumb-spacing, 8px);
   pointer-events: none;
   position: relative;
 }
 
 .denhaag-breadcrumb__link:hover,
 .denhaag-breadcrumb__link--hover {
-  --denhaag-breadcrumb-link-color: var(--denhaag-breadcrumb-link-hover-color, var(--denhaag-link-hover-color));
+  --denhaag-breadcrumb-link-color: var(--denhaag-breadcrumb-link-hover-color, #094b81);
 }
 
 .denhaag-breadcrumb__link:focus,
 .denhaag-breadcrumb__link--focus {
-  --denhaag-breadcrumb-link-color: var(--denhaag-breadcrumb-link-focus-color, var(--denhaag-link-focus-color));
+  --denhaag-breadcrumb-link-color: var(--denhaag-breadcrumb-link-focus-color, #1261a3);
   outline: var(--denhaag-breadcrumb-link-focus-outline, var(--denhaag-link-focus-outline));
 }
 
 .denhaag-breadcrumb__link--current,
 .denhaag-breadcrumb__link.denhaag-link--current,
 .denhaag-breadcrumb__item:last-child > .denhaag-breadcrumb__link {
-  --denhaag-breadcrumb-link-color: var(--denhaag-breadcrumb-current-color, var(--denhaag-breadcrumb-color));
+  --denhaag-breadcrumb-link-color: var(--denhaag-breadcrumb-current-color, var(--denhaag-breadcrumb-color, #4b4b4b));
   text-decoration: none;
 }
 
@@ -70,8 +67,8 @@ ol.denhaag-breadcrumb__list {
 .denhaag-breadcrumb__link > .denhaag-breadcrumb__text + .denhaag-icon {
   color: initial;
   font-size: inherit;
-  margin-inline-start: var(--denhaag-breadcrumb-spacing, var(--denhaag-space-inline-xs));
-  margin-inline-end: calc(-1 * var(--denhaag-breadcrumb-spacing, var(--denhaag-space-inline-xs)));
+  margin-inline-start: var(--denhaag-breadcrumb-spacing, 8px);
+  margin-inline-end: calc(-1 * var(--denhaag-breadcrumb-spacing, 8px));
 }
 
 [dir="rtl"] .denhaag-breadcrumb__link > .denhaag-breadcrumb__text + .denhaag-icon {
@@ -108,12 +105,12 @@ ol.denhaag-breadcrumb__list {
 .denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(2)):not(:last-child) .denhaag-breadcrumb__text {
   aspect-ratio: 24/16;
   border-radius: var(--denhaag-breadcrumb-dots-border-radius, var(--denhaag-border-radius));
-  max-width: calc(var(--denhaag-breadcrumb-spacing, var(--denhaag-space-inline-xs)) * 3);
-  text-indent: calc(var(--denhaag-breadcrumb-spacing, var(--denhaag-space-inline-xs)) * 3);
+  max-width: calc(var(--denhaag-breadcrumb-spacing, 8px) * 3);
+  text-indent: calc(var(--denhaag-breadcrumb-spacing, 8px) * 3);
 }
 
 .denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(2)):not(:last-child) .denhaag-breadcrumb__text:before {
-  color: var(--denhaag-breadcrumb-dots-color, var(--denhaag-color-grey-3));
+  color: var(--denhaag-breadcrumb-dots-color, #7a7a7a);
   content: "...";
   left: calc(50% - 7px);
   line-height: 0;
