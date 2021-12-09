@@ -97,7 +97,7 @@
             "value": "normal"
           },
           "weight": {
-            "value": 500
+            "value": 700
           },
           "size": {
             "value": "{denhaag.typography.scale.xl.font-size.value}"
