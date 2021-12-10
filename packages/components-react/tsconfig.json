@@ -24,6 +24,9 @@
       "path": "../../components/BaseProps"
     },
     {
+      "path": "../../components/Datepicker"
+    },
+    {
       "path": "../../components/Divider"
     },
     {
