@@ -29,6 +29,7 @@
     "@gemeente-denhaag/button": "0.2.3-alpha.79",
     "@gemeente-denhaag/card": "0.2.3-alpha.79",
     "@gemeente-denhaag/checkbox": "0.2.3-alpha.79",
+    "@gemeente-denhaag/datepicker": "0.1.0",
     "@gemeente-denhaag/divider": "0.2.3-alpha.79",
     "@gemeente-denhaag/formcontrol": "0.2.3-alpha.79",
     "@gemeente-denhaag/formcontrollabel": "0.2.3-alpha.79",

@@ -28,6 +28,9 @@
       "path": "components/Checkbox"
     },
     {
+      "path": "components/Datepicker"
+    },
+    {
       "path": "components/Divider"
     },
     {
