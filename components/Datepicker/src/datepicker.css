@@ -1,3 +1,7 @@
 .denhaag-datepicker__input {
   appearance: none;
 }
+
+.denhaag-datepicker__calendar--hidden {
+  display: none;
+}
