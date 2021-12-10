@@ -11,7 +11,6 @@ import tsconfig from './tsconfig.json';
 const externalDependencies = [
   '@material-ui/core',
   '@material-ui/lab',
-  '@material-ui/pickers',
   'react',
   'react-dom',
   '@material-ui/core/transitions',

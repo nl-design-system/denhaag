@@ -62,12 +62,6 @@
       "path": "components/Menu"
     },
     {
-      "path": "components/Pickers"
-    },
-    {
-      "path": "components/PickersUtilsProvider"
-    },
-    {
       "path": "components/Radio"
     },
     {
