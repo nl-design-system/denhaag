@@ -38,8 +38,6 @@
     "@gemeente-denhaag/link": "0.2.3-alpha.79",
     "@gemeente-denhaag/list": "0.2.3-alpha.79",
     "@gemeente-denhaag/menu": "0.2.3-alpha.79",
-    "@gemeente-denhaag/pickers": "0.2.3-alpha.79",
-    "@gemeente-denhaag/pickersutilsprovider": "0.2.3-alpha.79",
     "@gemeente-denhaag/radio": "0.2.3-alpha.79",
     "@gemeente-denhaag/select": "0.2.3-alpha.79",
     "@gemeente-denhaag/stylesprovider": "0.1.1-alpha.79",

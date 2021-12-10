@@ -15,8 +15,6 @@ export * from '@gemeente-denhaag/iconbutton';
 export * from '@gemeente-denhaag/link';
 export * from '@gemeente-denhaag/list';
 export * from '@gemeente-denhaag/menu';
-export * from '@gemeente-denhaag/pickers';
-export * from '@gemeente-denhaag/pickersutilsprovider';
 export * from '@gemeente-denhaag/radio';
 export * from '@gemeente-denhaag/select';
 export * from '@gemeente-denhaag/switch';
