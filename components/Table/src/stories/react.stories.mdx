@@ -1,0 +1,57 @@
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+
+import { Table, TableCaption, TableCell, TableHeader, TableRow } from "../index";
+import pkg from "../../package.json";
+import readme from "../../README.md";
+
+<Meta
+  title="React Components/Data Display/Table"
+  component={Table}
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Stories
+
+### Default
+
+<Canvas>
+  <Story name="Default">
+    {() => (
+      <Table>
+        <TableCaption>He-Man and Skeletor facts</TableCaption>
+        <TableRow>
+          <TableCell></TableCell>
+          <TableHeader scope="col" className="heman">
+            He-Man
+          </TableHeader>
+          <TableHeader scope="col" className="skeletor">
+            Skeletor
+          </TableHeader>
+        </TableRow>
+        <TableRow>
+          <th scope="row">Role</th>
+          <TableCell>Hero</TableCell>
+          <TableCell>Villain</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHeader scope="row">Weapon</TableHeader>
+          <TableCell>Power Sword</TableCell>
+          <TableCell>Havoc Staff</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHeader scope="row">Dark secret</TableHeader>
+          <TableCell>Expert florist</TableCell>
+          <TableCell>Cries at romcoms</TableCell>
+        </TableRow>
+      </Table>
+    )}
+  </Story>
+</Canvas>
