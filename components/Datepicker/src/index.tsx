@@ -111,11 +111,16 @@ export const Datepicker: React.FC<DatepickerProps> = ({
         onChange={(event) => {
           setState({
             ...state,
-            selected: event.target.value
-              ? new Date(event.target.value).getDate()
-                ? new Date(event.target.value)
-                : state.selected
-              : undefined,
+            current:
+              event.target.value && new Date(event.target.value).getDate()
+                ? setDate(new Date(event.target.value), 1)
+                : state.current,
+            selected:
+              event.target.value !== undefined
+                ? new Date(event.target.value).getDate()
+                  ? new Date(event.target.value)
+                  : state.selected
+                : undefined,
           });
         }}
         onClick={(event) => {
