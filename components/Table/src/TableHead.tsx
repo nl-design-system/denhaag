@@ -4,7 +4,8 @@ import clsx from 'clsx';
 export type TableHeadProps = HTMLAttributes<HTMLTableSectionElement>;
 
 /**
- * Table component
+ * TableHead component based on the <thead> element.
+ * Defines a set of rows defining the head of the columns of the table.
  */
 export const TableHead: React.FC<TableHeadProps> = ({ className, ...props }: TableHeadProps) => {
   const rootClassNames = clsx('denhaag-table__head', className);

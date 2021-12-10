@@ -4,8 +4,8 @@ import clsx from 'clsx';
 export type TableColGroupProps = ColgroupHTMLAttributes<HTMLTableColElement>;
 
 /**
- * TableFoot component based on the <tfoot> element.
- * Defines a set of rows summarizing the columns of the table.
+ * TableColGroup component based on the <colgroup> element.
+ * Defines a group of columns within a table.
  */
 export const TableColGroup: React.FC<TableColGroupProps> = ({ className, ...props }: TableColGroupProps) => {
   const rootClassNames = clsx('denhaag-table__colgroup', className);
