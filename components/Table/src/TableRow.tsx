@@ -4,7 +4,8 @@ import clsx from 'clsx';
 export type TableRowProps = HTMLAttributes<HTMLTableRowElement>;
 
 /**
- * Table component
+ * TableRow component based on the <tr> element.
+ * Defines a row of cells in a table. The row's cells can then be established using a mix of <TableCell> (<td>) and <TableHeader> (<th>) elements.
  */
 export const TableRow: React.FC<TableRowProps> = ({ className, ...props }: TableRowProps) => {
   const rootClassNames = clsx('denhaag-table__row', className);
