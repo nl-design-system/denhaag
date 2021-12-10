@@ -69,8 +69,6 @@ export const Datepicker: React.FC<DatepickerProps> = ({
   const componentRef = React.useRef<HTMLDivElement>(null);
 
   const outsideClickListener = (e: Event) => {
-    console.log(e.target);
-    console.log(componentRef.current);
     if (!componentRef.current?.contains(e.target as Node)) {
       setState({
         ...state,
