@@ -109,56 +109,73 @@ export const Datepicker: React.FC<DatepickerProps> = ({
         className="denhaag-datepicker__input"
         value={state.selected ? formatISO(state.selected, { representation: 'date' }) : ''}
         onChange={(event) => {
-          setState({ ...state, selected: event.target.value ? new Date(event.target.value) : undefined });
+          setState({
+            ...state,
+            selected: event.target.value
+              ? new Date(event.target.value).getDate()
+                ? new Date(event.target.value)
+                : state.selected
+              : undefined,
+          });
         }}
         onClick={(event) => {
           event.preventDefault();
           setState({ ...state, opened: true });
         }}
+        onKeyDown={(event) => {
+          if (event.key === 'Enter') {
+            event.preventDefault();
+            setState({ ...state, opened: true });
+          }
+        }}
       />
-      {state.opened && (
-        <div className="denhaag-datepicker__calendar">
-          <div className="denhaag-datepicker__calendar-header">
-            <button
-              type="button"
-              className="denhaag-datepicker__calendar-previous"
-              onClick={() => {
-                setState({ ...state, current: subMonths(state.current, 1) });
-              }}
-            ></button>
-            <span className="calendar__date">
-              <time dateTime={format(state.current, 'yyyy-MM')}>
-                {format(state.current, 'MMMM yyyy', { locale: locale })}
-              </time>
-            </span>
-            <button
-              type="button"
-              className="denhaag-datepicker__calendar-next"
-              onClick={() => {
-                setState({ ...state, current: addMonths(state.current, 1) });
-              }}
-            ></button>
-          </div>
-          <table className="denhaag-datepicker__calendar-table">
-            <tbody>
-              <tr>
-                {Array.from(Array(7)).map((_, i) => (
-                  <th key={`datepicker-day-${i}`}>
-                    {locale.localize?.day((i + (locale.options?.weekStartsOn || 0)) % 7, { width: 'short' })}
-                  </th>
+      <button
+        className="denhaag-datepicker__button"
+        onClick={() => {
+          setState({ ...state, opened: !state.opened });
+        }}
+      ></button>
+      <div className={clsx('denhaag-datepicker__calendar', { 'denhaag-datepicker__calendar--hidden': !state.opened })}>
+        <div className="denhaag-datepicker__calendar-header">
+          <button
+            type="button"
+            className="denhaag-datepicker__calendar-previous"
+            onClick={() => {
+              setState({ ...state, current: subMonths(state.current, 1) });
+            }}
+          ></button>
+          <span className="calendar__date">
+            <time dateTime={format(state.current, 'yyyy-MM')}>
+              {format(state.current, 'MMMM yyyy', { locale: locale })}
+            </time>
+          </span>
+          <button
+            type="button"
+            className="denhaag-datepicker__calendar-next"
+            onClick={() => {
+              setState({ ...state, current: addMonths(state.current, 1) });
+            }}
+          ></button>
+        </div>
+        <table className="denhaag-datepicker__calendar-table">
+          <tbody>
+            <tr>
+              {Array.from(Array(7)).map((_, i) => (
+                <th key={`datepicker-day-${i}`}>
+                  {locale.localize?.day((i + (locale.options?.weekStartsOn || 0)) % 7, { width: 'short' })}
+                </th>
+              ))}
+            </tr>
+            {Array.from(Array(getWeeksInMonth(state.current, { locale: locale }))).map((_, i) => (
+              <tr key={`datepicker-row-${i}`}>
+                {Array.from(Array(7)).map((_, j) => (
+                  <td key={`datepicker-column-${i}-${j}`}>{renderDay(i, j)}</td>
                 ))}
               </tr>
-              {Array.from(Array(getWeeksInMonth(state.current, { locale: locale }))).map((_, i) => (
-                <tr key={`datepicker-row-${i}`}>
-                  {Array.from(Array(7)).map((_, j) => (
-                    <td key={`datepicker-column-${i}-${j}`}>{renderDay(i, j)}</td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      )}
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };
