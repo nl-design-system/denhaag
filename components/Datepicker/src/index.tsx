@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { KeyboardEvent } from 'react';
 import clsx from 'clsx';
 import {
   format,
@@ -11,6 +11,16 @@ import {
   addMonths,
   isSameMonth,
   setDate,
+  isEqual,
+  addDays,
+  subDays,
+  startOfWeek,
+  endOfWeek,
+  subYears,
+  addYears,
+  subWeeks,
+  getWeekOfMonth,
+  getDay,
 } from 'date-fns';
 import { nl } from './locale';
 
@@ -41,6 +51,7 @@ interface DatepickerState {
   current: Date;
   selected?: Date;
   opened: boolean;
+  keyboard: boolean;
 }
 
 /**
@@ -61,15 +72,18 @@ export const Datepicker: React.FC<DatepickerProps> = ({
   );
 
   const [state, setState] = React.useState<DatepickerState>({
-    current: setDate(startDate, 1),
+    current: startDate,
     selected: undefined,
     opened: false,
+    keyboard: false,
   });
 
   const componentRef = React.useRef<HTMLDivElement>(null);
+  const backButtonRef = React.useRef<HTMLButtonElement>(null);
+  const currentButtonRef = React.useRef<HTMLButtonElement>(null);
 
   const outsideClickListener = (e: Event) => {
-    if (!componentRef.current?.contains(e.target as Node)) {
+    if (!componentRef.current?.contains(e.target as Node) && state.opened) {
       setState({
         ...state,
         opened: false,
@@ -84,15 +98,136 @@ export const Datepicker: React.FC<DatepickerProps> = ({
     };
   }, [componentRef]);
 
+  React.useEffect(() => {
+    currentButtonRef.current?.focus();
+  }, [state.keyboard]);
+
+  const onKeyDownInput = (e: KeyboardEvent) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      setState({ ...state, opened: true });
+    }
+  };
+
+  const onKeyDownBack = (e: KeyboardEvent) => {
+    switch (e.key) {
+      case 'Escape':
+        setState({ ...state, opened: false });
+        break;
+      case 'Tab':
+        if (e.shiftKey) {
+          e.preventDefault();
+          currentButtonRef.current?.focus();
+          break;
+        }
+    }
+  };
+
+  const onKeyDownNext = (e: KeyboardEvent) => {
+    if (e.key === 'Escape') {
+      setState({ ...state, opened: false });
+    }
+  };
+
+  const onKeyDownDay = (e: KeyboardEvent) => {
+    switch (e.key) {
+      case 'ArrowLeft':
+        setState({ ...state, current: subDays(state.current, 1), keyboard: !state.keyboard });
+        break;
+      case 'ArrowRight':
+        setState({ ...state, current: addDays(state.current, 1), keyboard: !state.keyboard });
+        break;
+      case 'ArrowUp':
+        setState({ ...state, current: subDays(state.current, 7), keyboard: !state.keyboard });
+        break;
+      case 'ArrowDown':
+        setState({ ...state, current: addDays(state.current, 7), keyboard: !state.keyboard });
+        break;
+      case 'Home':
+        e.preventDefault();
+        setState({ ...state, current: startOfWeek(state.current, { locale: locale }), keyboard: !state.keyboard });
+        break;
+      case 'End':
+        e.preventDefault();
+        setState({ ...state, current: endOfWeek(state.current, { locale: locale }), keyboard: !state.keyboard });
+        break;
+      case 'PageUp':
+        e.preventDefault();
+
+        if (e.shiftKey) {
+          let newDate = setDay(
+            addWeeks(setDate(subYears(state.current, 1), 1), getWeekOfMonth(state.current, { locale: locale }) - 1),
+            getDay(state.current),
+            { locale: locale },
+          );
+          if (!isSameMonth(newDate, subYears(state.current, 1))) {
+            newDate = subWeeks(newDate, 1);
+          }
+          setState({ ...state, current: newDate, keyboard: !state.keyboard });
+        } else {
+          let newDate = setDay(
+            addWeeks(setDate(subMonths(state.current, 1), 1), getWeekOfMonth(state.current, { locale: locale }) - 1),
+            getDay(state.current),
+            { locale: locale },
+          );
+          if (!isSameMonth(newDate, subMonths(state.current, 1))) {
+            newDate = subWeeks(newDate, 1);
+          }
+          console.log(getWeekOfMonth(state.current, { locale: locale }));
+          console.log(getWeekOfMonth(newDate, { locale: locale }));
+          setState({ ...state, current: newDate, keyboard: !state.keyboard });
+        }
+        break;
+      case 'PageDown':
+        e.preventDefault();
+        if (e.shiftKey) {
+          let newDate = setDay(
+            addWeeks(setDate(addYears(state.current, 1), 1), getWeekOfMonth(state.current, { locale: locale }) - 1),
+            getDay(state.current),
+            { locale: locale },
+          );
+          if (!isSameMonth(newDate, addYears(state.current, 1))) {
+            newDate = subWeeks(newDate, 1);
+          }
+          setState({ ...state, current: newDate, keyboard: !state.keyboard });
+        } else {
+          let newDate = setDay(
+            addWeeks(setDate(addMonths(state.current, 1), 1), getWeekOfMonth(state.current, { locale: locale }) - 1),
+            getDay(state.current),
+            { locale: locale },
+          );
+          if (!isSameMonth(newDate, addMonths(state.current, 1))) {
+            newDate = subWeeks(newDate, 1);
+          }
+          setState({ ...state, current: newDate, keyboard: !state.keyboard });
+        }
+        break;
+      case 'Escape':
+        setState({ ...state, opened: false });
+        break;
+      case 'Tab':
+        if (!e.shiftKey) {
+          e.preventDefault();
+          backButtonRef.current?.focus();
+          break;
+        }
+    }
+  };
+
   const renderDay = (i: number, j: number) => {
-    const date = setDay(addWeeks(state.current, i), (j + (locale.options?.weekStartsOn || 0)) % 7, { locale: locale });
+    const date = setDay(addWeeks(setDate(state.current, 1), i), (j + (locale.options?.weekStartsOn || 0)) % 7, {
+      locale: locale,
+    });
     if (isSameMonth(date, state.current)) {
       return (
         <button
           type="button"
+          tabIndex={isEqual(state.current, date) ? 0 : -1}
+          ref={isEqual(state.current, date) ? currentButtonRef : null}
           onClick={() => {
             setState({ ...state, selected: date, opened: false });
           }}
+          onKeyDown={onKeyDownDay}
         >
           {date.getDate()}
         </button>
@@ -113,7 +248,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
             ...state,
             current:
               event.target.value && new Date(event.target.value).getDate()
-                ? setDate(new Date(event.target.value), 1)
+                ? new Date(event.target.value)
                 : state.current,
             selected:
               event.target.value !== undefined
@@ -127,12 +262,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
           event.preventDefault();
           setState({ ...state, opened: true });
         }}
-        onKeyDown={(event) => {
-          if (event.key === 'Enter') {
-            event.preventDefault();
-            setState({ ...state, opened: true });
-          }
-        }}
+        onKeyDown={onKeyDownInput}
       />
       <button
         className="denhaag-datepicker__button"
@@ -148,6 +278,8 @@ export const Datepicker: React.FC<DatepickerProps> = ({
             onClick={() => {
               setState({ ...state, current: subMonths(state.current, 1) });
             }}
+            ref={backButtonRef}
+            onKeyDown={onKeyDownBack}
           ></button>
           <span className="calendar__date">
             <time dateTime={format(state.current, 'yyyy-MM')}>
@@ -160,6 +292,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
             onClick={() => {
               setState({ ...state, current: addMonths(state.current, 1) });
             }}
+            onKeyDown={onKeyDownNext}
           ></button>
         </div>
         <table className="denhaag-datepicker__calendar-table">
