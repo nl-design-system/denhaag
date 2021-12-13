@@ -173,8 +173,6 @@ export const Datepicker: React.FC<DatepickerProps> = ({
           if (!isSameMonth(newDate, subMonths(state.current, 1))) {
             newDate = subWeeks(newDate, 1);
           }
-          console.log(getWeekOfMonth(state.current, { locale: locale }));
-          console.log(getWeekOfMonth(newDate, { locale: locale }));
           setState({ ...state, current: newDate, keyboard: !state.keyboard });
         }
         break;
