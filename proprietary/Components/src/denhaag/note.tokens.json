@@ -1,0 +1,28 @@
+{
+  "denhaag": {
+    "note": {
+      "font": {
+        "family": {
+          "value": "{denhaag.typography.sans-serif.font-family.value}"
+        },
+        "size": {
+          "value": "1.125rem"
+        },
+        "weight": {
+          "value": 400
+        }
+      },
+
+      "line-height": "1.5",
+
+      "icon": {
+        "size": {
+          "value": "{denhaag.space.block.xl.value}"
+        },
+        "spacing": {
+          "value": "{denhaag.space.block.xs.value}"
+        }
+      }
+    }
+  }
+}
