@@ -26,22 +26,17 @@ None.
 
 ### Typography
 
-- Title: TheMix/xl/700
 - Text: TheSans/md/400
 
 ### Colors
 
-- Title: text color Blue/3
-- Close icon: svg color Grey/4
+- SVG: text color Blue/3
 - Text: text color Grey/4
-- Overlay: background-color white
 
 ### Structure
 
-- Title: padding-top and padding-left 32px, margin-bottom 16px
-- Close icon: height and width 24px, padding-right 32px
-- Text: padding-left and padding-right 32px, margin-bottom 48px
-- Buttons: padding-right and padding-bottom 32px, padding space between buttons 16px
+- SVG: margin-right 8px;
+- Text: ;
 
 ## Accessibility
 
