@@ -1,6 +1,9 @@
 {
   "denhaag": {
     "note": {
+      "color": {
+        "value": "{denhaag.color.warmgrey.1.value}"
+      },
       "font": {
         "family": {
           "value": "{denhaag.typography.sans-serif.font-family.value}"
@@ -12,15 +15,49 @@
           "value": 400
         }
       },
-
-      "line-height": "1.5",
-
+      "line-height": {
+        "value": "1.5"
+      },
+      "padding-block": {
+        "value": "{denhaag.space.block.2xs.value}"
+      },
       "icon": {
+        "color": {
+          "value": "{denhaag.color.gray.4.value}"
+        },
+        "fill": {
+          "value": "{denhaag.color.gray.1.value}"
+        },
         "size": {
           "value": "{denhaag.space.block.xl.value}"
         },
         "spacing": {
           "value": "{denhaag.space.block.xs.value}"
+        },
+        "stroke": {
+          "value": "{denhaag.color.gray.4.value}"
+        },
+        "info": {
+          "color": {
+            "value": "{denhaag.color.white.value}"
+          },
+          "fill": {
+            "value": "{denhaag.color.blue.3.value}"
+          },
+          "stroke": {
+            "value": "{denhaag.color.blue.3.value}"
+          }
+        },
+        "warning": {
+          "color": {
+            "value": "{denhaag.color.white.value}"
+          },
+          "fill": {
+            "value": "{denhaag.color.orange.3.value}"
+          },
+          "stroke": {
+            "value": "{denhaag.color.orange.3.value}"
+          }
         }
       }
     }

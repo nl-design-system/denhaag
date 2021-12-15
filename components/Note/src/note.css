@@ -1,9 +1,6 @@
 .denhaag-note {
-  --denhaag-note-icon-color: #4b4b4b;
-  --denhaag-note-icon-fill: #f1f1f1;
-  --denhaag-note-icon-stroke: #4b4b4b;
-
-  color: #4b4b4b;
+  align-items: flex-start;
+  color: var(--denhaag-note-color);
   display: flex;
   flex-direction: row;
   font-family: var(--denhaag-note-font-family, inherit);
@@ -11,20 +8,20 @@
   font-weight: var(--denhaag-note-font-weight, normal);
   line-height: var(--denhaag-note-line-height, 1.3);
   gap: var(--denhaag-note-icon-spacing);
-  padding-block-start: var(--denhaag-note-icon-spacing);
-  padding-block-end: var(--denhaag-note-icon-spacing);
+  padding-block-start: var(--denhaag-note-padding-block, calc(var(--denhaag-note-icon-spacing) / 2));
+  padding-block-end: var(--denhaag-note-padding-block, calc(var(--denhaag-note-icon-spacing) / 2));
 }
 
 .denhaag-note--info {
-  --denhaag-note-icon-color: #ffffff;
-  --denhaag-note-icon-fill: #1261a3;
-  --denhaag-note-icon-stroke: #1261a3;
+  --denhaag-note-icon-color: var(--denhaag-note-icon-info-color, #ffffff);
+  --denhaag-note-icon-fill: var(--denhaag-note-icon-info-fill);
+  --denhaag-note-icon-stroke: var(--denhaag-note-icon-info-stroke, var(--denhaag-note-icon-info-fill));
 }
 
 .denhaag-note--warning {
-  --denhaag-note-icon-color: #ffffff;
-  --denhaag-note-icon-fill: #f18700;
-  --denhaag-note-icon-stroke: #f18700;
+  --denhaag-note-icon-color: var(--denhaag-note-icon-warning-color, #ffffff);
+  --denhaag-note-icon-fill: var(--denhaag-note-icon-warning-fill);
+  --denhaag-note-icon-stroke: var(--denhaag-note-icon-warning-stroke, var(--denhaag-note-icon-warning-fill));
 }
 
 .denhaag-note__icon,
@@ -32,14 +29,21 @@
   aspect-ratio: 1 / 1;
   flex: 0 0 auto;
   height: auto;
-  width: var(--denhaag-note-icon-size);
+  width: var(--denhaag-note-icon-size, calc(var(--denhaag-note-icon-spacing) * 3));
 }
 
-.denhaag-note__icon-color {
-  stroke: var(--denhaag-note-icon-color);
+.denhaag-note__icon path,
+.denhaag-note svg path {
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .denhaag-note__icon-background {
   fill: var(--denhaag-note-icon-fill);
   stroke: var(--denhaag-note-icon-stroke);
+}
+
+.denhaag-note__icon-color {
+  stroke: var(--denhaag-note-icon-color);
 }
