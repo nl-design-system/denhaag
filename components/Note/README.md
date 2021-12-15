@@ -72,6 +72,11 @@ Notes should:
 - Not rely on colour alone to convey meaning or tone.
 - Not be used for subsequent action. No button may be placed below it.
 
+## Usage
+
+- Info: Provide additional information to users.
+- Warning: Warn users about important information.
+
 ## References
 
 https://www.figma.com/file/JpoY3waVoQGlLQzQXTL9nn/Design-System---Gemeente-Den-Haag?node-id=8123%3A24065
