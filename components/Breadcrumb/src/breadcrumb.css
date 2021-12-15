@@ -1,6 +1,6 @@
 .denhaag-breadcrumb {
   --denhaag-breadcrumb-background-color: transparent;
-  color: var(--denhaag-breadcrumb-color, #4b4b4b);
+  color: var(--denhaag-breadcrumb-color, inherit);
 }
 
 .denhaag-breadcrumb__list {
@@ -22,15 +22,15 @@ ol.denhaag-breadcrumb__list {
 }
 
 .denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(2)):not(:last-child) {
-  --denhaag-breadcrumb-background-color: var(--denhaag-breadcrumb-dots-background-color, #f1f1f1);
+  --denhaag-breadcrumb-background-color: var(--denhaag-breadcrumb-dots-background-color, inherit);
 }
 
 .denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(2)):not(:last-child):hover {
-  --denhaag-breadcrumb-background-color: var(--denhaag-breadcrumb-dots-hover-background-color, #d2d2d2);
+  --denhaag-breadcrumb-background-color: var(--denhaag-breadcrumb-dots-hover-background-color, inherit);
 }
 
 .denhaag-breadcrumb__link {
-  color: var(--denhaag-breadcrumb-link-color, #094b81);
+  color: var(--denhaag-breadcrumb-link-color, inherit);
   padding-block-start: var(--denhaag-breadcrumb-spacing, 8px);
   padding-block-end: var(--denhaag-breadcrumb-spacing, 8px);
   padding-inline-start: var(--denhaag-breadcrumb-spacing, 8px);
@@ -41,19 +41,19 @@ ol.denhaag-breadcrumb__list {
 
 .denhaag-breadcrumb__link:hover,
 .denhaag-breadcrumb__link--hover {
-  --denhaag-breadcrumb-link-color: var(--denhaag-breadcrumb-link-hover-color, #094b81);
+  --denhaag-breadcrumb-link-color: var(--denhaag-breadcrumb-link-hover-color, inherit);
 }
 
 .denhaag-breadcrumb__link:focus,
 .denhaag-breadcrumb__link--focus {
-  --denhaag-breadcrumb-link-color: var(--denhaag-breadcrumb-link-focus-color, #1261a3);
+  --denhaag-breadcrumb-link-color: var(--denhaag-breadcrumb-link-focus-color, inherit);
   outline: var(--denhaag-breadcrumb-link-focus-outline, var(--denhaag-link-focus-outline));
 }
 
 .denhaag-breadcrumb__link--current,
 .denhaag-breadcrumb__link.denhaag-link--current,
 .denhaag-breadcrumb__item:last-child > .denhaag-breadcrumb__link {
-  --denhaag-breadcrumb-link-color: var(--denhaag-breadcrumb-current-color, var(--denhaag-breadcrumb-color, #4b4b4b));
+  --denhaag-breadcrumb-link-color: var(--denhaag-breadcrumb-current-color, var(--denhaag-breadcrumb-color, inherit));
   text-decoration: none;
 }
 
@@ -76,29 +76,10 @@ ol.denhaag-breadcrumb__list {
 }
 
 .denhaag-breadcrumb__text {
-  background: var(--denhaag-breadcrumb-background-color);
+  background-color: var(--denhaag-breadcrumb-background-color);
   overflow: hidden;
   position: relative;
   text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.denhaag-breadcrumb__link > .denhaag-icon + .denhaag-breadcrumb__text {
-  /* Copied from Bootstrap .sr-only */
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin-inline-start: -1px;
-  margin-inline-end: -1px;
-  margin-block-start: -1px;
-  margin-block-end: -1px;
-  overflow: hidden;
-  padding-block-start: 0;
-  padding-block-end: 0;
-  padding-inline-start: 0;
-  padding-inline-end: 0;
-  position: absolute;
-  width: 1px;
   white-space: nowrap;
 }
 
@@ -110,7 +91,7 @@ ol.denhaag-breadcrumb__list {
 }
 
 .denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(2)):not(:last-child) .denhaag-breadcrumb__text:before {
-  color: var(--denhaag-breadcrumb-dots-color, #7a7a7a);
+  color: var(--denhaag-breadcrumb-dots-color, inherit);
   content: "...";
   left: calc(50% - 7px);
   line-height: 0;
