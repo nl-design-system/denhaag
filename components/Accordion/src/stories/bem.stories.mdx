@@ -1,5 +1,6 @@
 import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
 import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+import "../index.css";
 
 import pkg from "../../package.json";
 import readme from "../../README.md";
@@ -47,8 +48,8 @@ import readme from "../../README.md";
                 <div class="denhaag-accordion__summary">
                   <p class="denhaag-accordion__title">Accordion</p>
                 </div>
-                <div class="" aria-disabled="false" aria-hidden="true">
-                  <span class="">
+                <div aria-disabled="false" aria-hidden="true">
+                  <span>
                     <svg
                       width="1em"
                       height="1em"
@@ -66,12 +67,12 @@ import readme from "../../README.md";
                       ></path>
                     </svg>
                   </span>
-                  <span class=""></span>
+                  <span></span>
                 </div>
               </div>
               <div class="denhaag-accordion__collapse denhaag-accordion__collapse--hidden">
-                <div class="">
-                  <div class="">
+                <div>
+                  <div>
                     <div role="region">
                       <div class="denhaag-accordion__details">
                         <p class="denhaag-accordion__paragraph">
@@ -117,7 +118,7 @@ import readme from "../../README.md";
                   aria-disabled="false"
                   aria-hidden="true"
                 >
-                  <span class="">
+                  <span>
                     <svg
                       width="1em"
                       height="1em"
@@ -135,12 +136,12 @@ import readme from "../../README.md";
                       ></path>
                     </svg>
                   </span>
-                  <span class=""></span>
+                  <span></span>
                 </div>
               </div>
               <div class="denhaag-accordion__collapse">
-                <div class="">
-                  <div class="">
+                <div>
+                  <div>
                     <div role="region">
                       <div class="denhaag-accordion__details">
                         <p class="denhaag-accordion__paragraph">
@@ -173,16 +174,16 @@ import readme from "../../README.md";
             <div class="denhaag-accordion-container denhaag-accordion-container--disabled">
               <div
                 class="denhaag-accordion__panel denhaag-accordion__panel--disabled"
-                tabindex="0"
+                tabindex="-1"
                 role="button"
                 aria-disabled="true"
                 aria-expanded="false"
               >
-                <div class="denhaag-accordion__summary">
+                <div class="denhaag-accordion__summary" aria-disabled="true" aria-hidden="true">
                   <p class="denhaag-accordion__title">Accordion</p>
                 </div>
-                <div class="" aria-disabled="false" aria-hidden="true">
-                  <span class="">
+                <div aria-disabled="false" aria-hidden="true">
+                  <span>
                     <svg
                       width="1em"
                       height="1em"
@@ -200,12 +201,77 @@ import readme from "../../README.md";
                       ></path>
                     </svg>
                   </span>
-                  <span class=""></span>
+                  <span></span>
                 </div>
               </div>
               <div class="denhaag-accordion__collapse denhaag-accordion__collapse--hidden">
-                <div class="">
-                  <div class="">
+                <div>
+                  <div>
+                    <div role="region">
+                      <div class="denhaag-accordion__details">
+                        <p class="denhaag-accordion__paragraph">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit
+                          amet blandit leo lobortis eget.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Story>
+  {}
+</Canvas>
+
+### Focus
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Focus">
+    <div>
+      <div class="story--components-surfaces-accordion--focus">
+        <div class="denhaag-theme">
+          <div class="denhaag-accordion">
+            <div class="denhaag-accordion-container">
+              <div
+                class="denhaag-accordion__panel denhaag-accordion__panel--focus"
+                tabindex="0"
+                role="button"
+                aria-disabled="false"
+                aria-expanded="false"
+              >
+                <div class="denhaag-accordion__summary">
+                  <p class="denhaag-accordion__title">Accordion</p>
+                </div>
+                <div aria-disabled="false" aria-hidden="true">
+                  <span>
+                    <svg
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="denhaag-icon"
+                      focusable="false"
+                      aria-hidden="true"
+                      shape-rendering="auto"
+                    >
+                      <path
+                        d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="denhaag-accordion__collapse denhaag-accordion__collapse--hidden">
+                <div>
+                  <div>
                     <div role="region">
                       <div class="denhaag-accordion__details">
                         <p class="denhaag-accordion__paragraph">
