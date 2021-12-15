@@ -30,7 +30,7 @@
 .denhaag-pagination__link {
   aspect-ratio: 1 / 1;
   align-items: center;
-  background: var(--denhaag-pagination-background-color, transparent);
+  background-color: var(--denhaag-pagination-background-color, transparent);
   border-radius: var(--denhaag-pagination-border-radius, var(--denhaag-border-radius));
   color: var(--denhaag-pagination-color, var(--denhaag-pagination-link-color));
   display: flex;
