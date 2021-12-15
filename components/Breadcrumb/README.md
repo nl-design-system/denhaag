@@ -1,3 +1,7 @@
+# Navigation Link
+
+[Figma Design](https://www.figma.com/file/JpoY3waVoQGlLQzQXTL9nn/Design-System-Gemeente-Den-Haag?node-id=1569%3A5671)
+
 # Breadcrumbs
 
 The breadcrumb is a secondary navigation pattern that helps a user understand the hierarchy among levels, navigate back through them and reveals the user’s location.
@@ -33,7 +37,7 @@ The breadcrumb contains the states inactive, active, hover and focus.
 
 - Inactive page link: text color Blue/3
 - Active page link: text color Grey/4
-- Seperator: svg color Grey/4
+- Separator: svg color Grey/4
 - Icon: svg color Blue/3
 - Collapsed icon: background-color Grey/1, svg fill color Grey/3
 
@@ -58,11 +62,13 @@ The breadcrumb contains the states inactive, active, hover and focus.
 
 Page links should:
 
-- Be short and clearly reflect the location or entity it links to
-- Start with the highest level parent page and move deeper into the information architecture as the breadcrumb trail progresses
-- Be consistent with the page titles
+- Be short and clearly reflect the location or entity it links to;
+- Start with the highest level parent page and move deeper into the information architecture as the breadcrumb trail progresses;
+- Be consistent with the page titles;
 
 ## Best practices
+
+Read documentation about microdata for the Breadcrumb on https://schema.org/BreadcrumbList
 
 ### Dos
 
@@ -71,7 +77,7 @@ Breadcrumbs should:
 - Include the current page as the last item in the breadcrumb trail
 - Include only site pages, not logical categories in your information architecture
 - Include the full navigational path
-- Use an collapsed icon to truncate the breadcrumbs when space becomes limited
+- Use a collapsed icon to truncate the breadcrumbs when space becomes limited
 - Not exceed half of the page
 - Preferably not have more than 6 pages. If there are more than 6 pages, look how you can improve the menu structure.
 
