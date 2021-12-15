@@ -38,7 +38,7 @@
 }
 
 .denhaag-modal:after {
-  background: var(--denhaag-modal-overlay-background-color);
+  background-color: var(--denhaag-modal-overlay-background-color);
   bottom: 0;
   content: "";
   left: 0;
@@ -49,7 +49,7 @@
 }
 
 .denhaag-modal__button {
-  background: var(--denhaag-modal-icon-background-color);
+  background-color: var(--denhaag-modal-icon-background-color);
   border: var(--denhaag-modal-icon-border-width) var(--denhaag-modal-icon-border-style)
     var(--denhaag-modal-icon-border-color);
   color: var(--denhaag-modal-icon-color);
@@ -113,7 +113,7 @@
 }
 
 .denhaag-modal__inner {
-  background: var(--denhaag-modal-background-color);
+  background-color: var(--denhaag-modal-background-color);
   background-clip: padding-box;
   display: flex;
   flex-direction: column;
