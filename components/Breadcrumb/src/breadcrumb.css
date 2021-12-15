@@ -64,6 +64,7 @@ ol.denhaag-breadcrumb__list {
 }
 
 /* SVG for the separator */
+.denhaag-breadcrumb__link > .denhaag-icon + .denhaag-icon,
 .denhaag-breadcrumb__link > .denhaag-breadcrumb__text + .denhaag-icon {
   color: initial;
   font-size: inherit;
