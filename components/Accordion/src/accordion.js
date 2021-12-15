@@ -4,20 +4,8 @@ const AccordionScripts = (className = 'denhaag-accordion') => {
    * @param accordion
    */
   function clickEvents(accordion) {
-    // Close closest accordion.
-    Array.from(accordion.querySelectorAll('[data-accordion-toggle]')).forEach((el) => {
-      el.onclick = () => toggleAccordion(el.closest('.denhaag-accordion'));
-    });
-
-    if (!accordion.getAttribute('id')) {
-      console.warn("Accordion doesn't have the ID attribute which is required to open and close the accordion.");
-      return;
-    }
-
-    // Toggle the accordion based on trigger with ID.
-    document.querySelectorAll(`[data-accordion-toggle="${accordion.getAttribute('id')}"]`).forEach((el) => {
-      el.onclick = () => toggleAccordion(accordion);
-    });
+    // Close accordion.
+    accordion.onclick = (el) => toggleAccordion(el.closest('.denhaag-accordion'));
   }
 
   /**

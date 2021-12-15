@@ -1,6 +1,6 @@
 /* accordion general styling */
 .denhaag-accordion {
-  font-family: var(--denhaag-accordion-font-family, '"TheSans", sans-serif');
+  font-family: var(--denhaag-accordion-font-family, inherit);
 }
 
 .denhaag-accordion-container {
