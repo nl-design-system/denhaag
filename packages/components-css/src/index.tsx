@@ -24,6 +24,7 @@ import '../../../components/List/src/list-subheader.css';
 import '../../../components/Menu/src/menu.css';
 import '../../../components/Menu/src/menu-button.css';
 import '../../../components/Modal/src/modal.css';
+import '../../../components/Note/src/index.css';
 import '../../../components/Pagination/src/pagination.css';
 import '../../../components/PosttypeLabel/src/index.css';
 import '../../../components/PublicationDate/src/index.css';
