@@ -21,9 +21,6 @@
     "directory": "components/Breadcrumb"
   },
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
-  "dependencies": {
-    "@gemeente-denhaag/baseprops": "0.2.3-alpha.63"
-  },
   "devDependencies": {
     "@gemeente-denhaag/icons": "0.2.3-alpha.63"
   },
