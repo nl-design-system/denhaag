@@ -51,6 +51,18 @@ export interface DatepickerProps extends InputHTMLAttributes<HTMLInputElement> {
    * Starting date for calendar (default: today)
    */
   startDate?: Date;
+  /**
+   * aria-label for the button to open the calendar.
+   */
+  openCalendarLabel?: string;
+  /**
+   * aria-label for previous month button in the calendar.
+   */
+  previousMonthLabel?: string;
+  /**
+   * aria-label for previous month button in the calendar.
+   */
+  nextMonthLabel?: string;
 }
 
 interface DatepickerState {
@@ -68,6 +80,9 @@ export const Datepicker: React.FC<DatepickerProps> = ({
   inputRef = React.useRef<HTMLInputElement>(null),
   startDate = new Date(),
   locale = nl,
+  openCalendarLabel = 'Kies een datum',
+  previousMonthLabel = 'Vorige maand',
+  nextMonthLabel = 'Volgende maand',
   ...props
 }: DatepickerProps) => {
   const rootStyles = clsx(
@@ -279,7 +294,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
         onClick={() => {
           setState({ ...state, opened: !state.opened });
         }}
-        aria-label="Choose date"
+        aria-label={openCalendarLabel}
       ></button>
       <div
         className={clsx('denhaag-datepicker__calendar', { 'denhaag-datepicker__calendar--hidden': !state.opened })}
@@ -297,7 +312,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
             }}
             ref={backButtonRef}
             onKeyDown={onKeyDownBack}
-            aria-label="Previous month"
+            aria-label={previousMonthLabel}
           ></button>
           <span
             id="denhaag-datepicker-calendar-month"
@@ -315,7 +330,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
               setState({ ...state, current: addMonths(state.current, 1) });
             }}
             onKeyDown={onKeyDownNext}
-            aria-label="Next month"
+            aria-label={nextMonthLabel}
           ></button>
         </div>
         <table
