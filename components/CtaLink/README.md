@@ -1,26 +1,26 @@
-# Call To Action Icon
+# Call To Action Link
 
 A CTA icon is a standalone link that links to another page within the website or an external website related to the current page or to a video.
 
 ## When to use
 
-CTA icons are used as navigational elements and are used on their own. They provide a middleweight option for navigation and stand out more than the normal links so use it sparingly. Like other interactive elements, too many CTA icons will clutter a page and make it difficult for users to identify their next steps.
+CTA links are used as navigational elements and are used on their own. They provide a middleweight option for navigation and stand out more than the normal links so use it sparingly. Like other interactive elements, too many CTA icons will clutter a page and make it difficult for users to identify their next steps.
 
-Use CTA icons when you want users to:
+Use CTA links when you want users to:
 
 - Navigate to a page or entirely different site that can also be viewed (see also - variant);
-- Navigate to a website where a video is shown (such as YouTube);
+- Navigate to a website where a video is shown (such as YouTube or Vimeo);
 
 ## Alternatives and related components
 
 - Use links for navigation actions that appear within or immediately after a sentence.
 - Use calendar events when you link to an event.
-- Use a download when there is a file being downloaded.
+- Use a download when there is a file to download.
 - Use a CTA image when there is a link in conjunction with an image.
 
 ## Anatomy
 
-The CTA icon consists of:
+The CTA links consists of:
 
 - Support icon: informs users at a glance about the type of the CTA;
 - Text: additional information about the link;
@@ -29,7 +29,7 @@ The CTA icon consists of:
 
 ## (Interactive) states
 
-The CTA icon contains the states normal, hover and focus.
+The CTA links contains the states normal, hover and focus.
 
 ## Design properties
 
@@ -84,7 +84,7 @@ The text should:
 
 - Be supportive to the link.
 - Start with a link when referring to a video.
-- Be able for users to anticipate what will happen when they click on the CTA icon.
+- Be able for users to anticipate what will happen when they click on the CTA link.
 - Be scannable avoiding unnecessary words.
 - Briefly provide context to the surrounding text as needed.
 - Always start with ‘Bekijk’.
@@ -107,19 +107,19 @@ The link should:
 
 ### Do's
 
-CTA icons should:
+CTA links should:
 
 - Link to a page related to the current page;
 - Link to a video;
 - Be placed under or between a text (usually in a list);
-- Be placed below each other if there are several CTA icons;
+- Be placed below each other if there are several CTA links;
 
 ### Don'ts
 
-CTA icons should:
+CTA links should:
 
 - Not be used as a standalone link like ‘Learn more’ or ‘Forgot password?’;
-- Not contain more than 3 CTA icons in a row;
+- Not contain more than 3 CTA link in a row;
 
 ### Logic
 

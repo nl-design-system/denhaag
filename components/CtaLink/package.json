@@ -1,6 +1,6 @@
 {
-  "name": "@gemeente-denhaag/ctaicon",
-  "description": "Call To Action Icon component",
+  "name": "@gemeente-denhaag/ctalink",
+  "description": "Call To Action Link component",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
   "version": "0.1.0",
@@ -18,7 +18,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/nl-design-system/denhaag.git",
-    "directory": "components/CtaIcon"
+    "directory": "components/CtaLink"
   },
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "devDependencies": {
