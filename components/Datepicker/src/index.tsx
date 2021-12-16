@@ -1,4 +1,4 @@
-import React, { InputHTMLAttributes, KeyboardEvent, Ref } from 'react';
+import React, { InputHTMLAttributes, KeyboardEvent, RefObject } from 'react';
 import clsx from 'clsx';
 import {
   format,
@@ -30,11 +30,11 @@ export interface DatepickerProps extends InputHTMLAttributes<HTMLInputElement> {
   /**
    * The ref for the outer HTML div.
    */
-  ref?: Ref<HTMLDivElement>;
+  ref?: RefObject<HTMLDivElement>;
   /**
    * The ref for the actual input HTML element.
    */
-  inputRef?: Ref<HTMLInputElement>;
+  inputRef?: RefObject<HTMLInputElement>;
   /**
    * Whether the input field is in a error state.
    */
@@ -90,7 +90,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
   const currentButtonRef = React.useRef<HTMLButtonElement>(null);
 
   const outsideClickListener = (e: Event) => {
-    if (!ref.current?.contains(e.target as Node) && state.opened) {
+    if (!ref?.current?.contains(e.target as Node) && state.opened) {
       setState({
         ...state,
         opened: false,
