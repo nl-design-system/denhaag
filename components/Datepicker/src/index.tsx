@@ -98,11 +98,13 @@ export const Datepicker: React.FC<DatepickerProps> = ({
     }
   };
 
+  const outsideClickListenerCleanup = () => {
+    document.removeEventListener('click', outsideClickListener);
+  };
+
   React.useEffect(() => {
     document.addEventListener('click', outsideClickListener);
-    return () => {
-      document.removeEventListener('click', outsideClickListener);
-    };
+    return outsideClickListenerCleanup;
   }, [ref]);
 
   React.useEffect(() => {
