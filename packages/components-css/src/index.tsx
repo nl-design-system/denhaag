@@ -5,6 +5,7 @@ import '../../../components/Button/src/index.css';
 import '../../../components/Card/src/Card/card.css';
 import '../../../components/Card/src/CardActions/card-actions.css';
 import '../../../components/Checkbox/src/checkbox.css';
+import '../../../components/CtaEvent/src/cta-event.css';
 import '../../../components/CtaLink/src/cta-link.css';
 import '../../../components/Divider/src/divider.css';
 import '../../../components/DotIndicator/src/dot-indicator.css';
