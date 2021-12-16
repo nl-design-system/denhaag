@@ -227,6 +227,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
     });
     if (isSameMonth(date, state.current)) {
       return (
+        // eslint-disable-next-line jsx-a11y/role-supports-aria-props
         <button
           type="button"
           tabIndex={isEqual(state.current, date) ? 0 : -1}
@@ -235,6 +236,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
             setState({ ...state, selected: date, opened: false });
           }}
           onKeyDown={onKeyDownDay}
+          aria-selected={state.selected && isEqual(state.selected, date) ? 'true' : undefined}
         >
           {date.getDate()}
         </button>
@@ -277,8 +279,15 @@ export const Datepicker: React.FC<DatepickerProps> = ({
         onClick={() => {
           setState({ ...state, opened: !state.opened });
         }}
+        aria-label="Choose date"
       ></button>
-      <div className={clsx('denhaag-datepicker__calendar', { 'denhaag-datepicker__calendar--hidden': !state.opened })}>
+      <div
+        className={clsx('denhaag-datepicker__calendar', { 'denhaag-datepicker__calendar--hidden': !state.opened })}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="denhaag-datepicker-calendar-month"
+        aria-live="polite"
+      >
         <div className="denhaag-datepicker__calendar-header">
           <button
             type="button"
@@ -288,8 +297,13 @@ export const Datepicker: React.FC<DatepickerProps> = ({
             }}
             ref={backButtonRef}
             onKeyDown={onKeyDownBack}
+            aria-label="Previous month"
           ></button>
-          <span className="calendar__date">
+          <span
+            id="denhaag-datepicker-calendar-month"
+            className="denhaag-datepicker__calendar-month"
+            aria-live="polite"
+          >
             <time dateTime={format(state.current, 'yyyy-MM')}>
               {format(state.current, 'MMMM yyyy', { locale: locale })}
             </time>
@@ -301,13 +315,21 @@ export const Datepicker: React.FC<DatepickerProps> = ({
               setState({ ...state, current: addMonths(state.current, 1) });
             }}
             onKeyDown={onKeyDownNext}
+            aria-label="Next month"
           ></button>
         </div>
-        <table className="denhaag-datepicker__calendar-table">
+        <table
+          className="denhaag-datepicker__calendar-table"
+          role="grid"
+          aria-labelledby="denhaag-datepicker-calendar-month"
+        >
           <tbody>
             <tr>
               {Array.from(Array(7)).map((_, i) => (
-                <th key={`datepicker-day-${i}`}>
+                <th
+                  key={`datepicker-day-${i}`}
+                  abbr={locale.localize?.day((i + (locale.options?.weekStartsOn || 0)) % 7)}
+                >
                   {locale.localize?.day((i + (locale.options?.weekStartsOn || 0)) % 7, { width: 'short' })}
                 </th>
               ))}
