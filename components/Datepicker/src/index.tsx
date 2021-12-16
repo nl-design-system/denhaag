@@ -1,4 +1,4 @@
-import React, { KeyboardEvent } from 'react';
+import React, { InputHTMLAttributes, KeyboardEvent, Ref } from 'react';
 import clsx from 'clsx';
 import {
   format,
@@ -24,11 +24,17 @@ import {
 } from 'date-fns';
 import { nl } from './locale';
 
-import BaseProps from '@gemeente-denhaag/baseprops';
-
 import './datepicker.css';
 
-export interface DatepickerProps extends BaseProps {
+export interface DatepickerProps extends InputHTMLAttributes<HTMLInputElement> {
+  /**
+   * The ref for the outer HTML div.
+   */
+  ref?: Ref<HTMLDivElement>;
+  /**
+   * The ref for the actual input HTML element.
+   */
+  inputRef?: Ref<HTMLInputElement>;
   /**
    * Whether the input field is in a error state.
    */
@@ -58,6 +64,8 @@ interface DatepickerState {
  * The DatePicker component allows the user to select a date.
  */
 export const Datepicker: React.FC<DatepickerProps> = ({
+  ref = React.useRef<HTMLDivElement>(null),
+  inputRef = React.useRef<HTMLInputElement>(null),
   startDate = new Date(),
   locale = nl,
   ...props
@@ -78,12 +86,11 @@ export const Datepicker: React.FC<DatepickerProps> = ({
     keyboard: false,
   });
 
-  const componentRef = React.useRef<HTMLDivElement>(null);
   const backButtonRef = React.useRef<HTMLButtonElement>(null);
   const currentButtonRef = React.useRef<HTMLButtonElement>(null);
 
   const outsideClickListener = (e: Event) => {
-    if (!componentRef.current?.contains(e.target as Node) && state.opened) {
+    if (!ref.current?.contains(e.target as Node) && state.opened) {
       setState({
         ...state,
         opened: false,
@@ -96,7 +103,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
     return () => {
       document.removeEventListener('click', outsideClickListener);
     };
-  }, [componentRef]);
+  }, [ref]);
 
   React.useEffect(() => {
     currentButtonRef.current?.focus();
@@ -235,11 +242,12 @@ export const Datepicker: React.FC<DatepickerProps> = ({
   };
 
   return (
-    <div className={rootStyles} ref={componentRef}>
+    <div className={rootStyles} ref={ref}>
       <input
         disabled={props.disabled}
         type="date"
         className="denhaag-datepicker__input"
+        ref={inputRef}
         value={state.selected ? formatISO(state.selected, { representation: 'date' }) : ''}
         onChange={(event) => {
           setState({
