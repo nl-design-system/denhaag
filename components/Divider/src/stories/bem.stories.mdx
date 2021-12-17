@@ -1,0 +1,73 @@
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+import pkg from "../../package.json";
+import readme from "../../README.md";
+
+<Meta
+  title="CSS Components/Data Display/Divider"
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Design Tokens
+
+<DesignTokenDocBlock categoryName="Divider" viewType="table" />
+
+## Stories
+
+### Default
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Default">
+    <p>I am above the divider.</p>
+    <hr className="denhaag-divider" role="presentation" />
+    <p>I am below the divider.</p>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Vertical
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Vertical">
+    <div style={{ display: "flex" }}>
+      <p>I am on the left side of the divider.</p>
+      <hr className="denhaag-divider denhaag-divider--vertical" role="presentation" />
+      <p>I am on the right side of the divider.</p>
+    </div>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Vertical Images
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Vertical Images">
+    <div style={{ display: "flex" }}>
+      <img
+        alt="The Lagoon Nebula."
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Lagoon_Nebula.jpg/1024px-Lagoon_Nebula.jpg"
+        width="500"
+        height="250"
+      />
+      <hr className="denhaag-divider denhaag-divider--vertical" role="presentation" />
+      <img
+        alt="Four cassette tapes for demonstrating the GridListTile component."
+        src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/Demos.jpg/1200px-Demos.jpg"
+        width="500"
+        height="250"
+      />
+    </div>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
