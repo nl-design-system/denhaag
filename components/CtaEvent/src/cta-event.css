@@ -60,7 +60,7 @@
   flex-direction: column;
   gap: var(--denhaag-cta-event-excerpt-gap, calc(var(--denhaag-cta-event-gap) / 6));
   max-width: calc(
-    100% - (var(--denhaag-cta-event-width, calc(var(--denhaag-cta-event-gap) * 4)) + var(--denhaag-cta-event-gap))
+    100% - (var(--denhaag-cta-event-width, calc(var(--denhaag-cta-event-gap) * 4)) + var(--denhaag-cta-event-gap)) ;
   );
 }
 
