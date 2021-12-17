@@ -1,0 +1,59 @@
+/* Headings */
+.denhaag-typography-h1,
+.denhaag-typography-h2,
+.denhaag-typography-h3,
+.denhaag-typography-h4,
+.denhaag-typography-h5 {
+  font-family: var(--denhaag-typography-font-family-heading, inherit);
+  font-weight: var(--denhaag-typography-font-weight-1);
+  line-height: var(--denhaag-typography-line-height-small);
+}
+
+.denhaag-typography-h1 {
+  font-size: var(--denhaag-typography-font-size-extra-large-3, 3rem);
+}
+
+.denhaag-typography-h2 {
+  font-size: var(--denhaag-typography-font-size-extra-large-2, 2rem);
+}
+
+.denhaag-typography-h3 {
+  font-size: var(--denhaag-typography-font-size-extra-large-1, 1.5rem);
+}
+
+.denhaag-typography-h4 {
+  font-size: var(--denhaag-typography-font-size-large, 1.25rem);
+}
+
+.denhaag-typography-h5 {
+  font-size: var(--denhaag-typography-font-size-medium, 1.125rem);
+}
+
+/* Paragraphs */
+.denhaag-typography-p {
+  font-family: var(--denhaag-typography-font-family-body, inherit);
+  font-weight: var(--denhaag-typography-font-weight-1);
+  line-height: var(--denhaag-typography-line-height-medium);
+}
+
+.denhaag-typography-p--lead {
+  font-size: var(--denhaag-typography-font-size-large, 1.25rem);
+}
+
+.denhaag-typography-p--detail {
+  text-transform: var(--denhaag-typography-text-transform-uppercase);
+  letter-spacing: var(--denhaag-typography-letter-spacing-small);
+}
+
+.denhaag-typography-p--detail-small {
+  font-size: var(--denhaag-typography-font-size-small, 0.75rem);
+}
+
+.denhaag-typography-p--detail-extra-small {
+  font-size: var(--denhaag-typography-font-size-extra-small, 0.625rem);
+}
+
+/* general */
+.denhaag-typography--font-weight-2 {
+  font-weight: var(--denhaag-typography-font-weight-2);
+}
