@@ -67,3 +67,43 @@ import {enUS} from "@gemeente-denhaag/datepicker/locale";
     {() => <Datepicker locale={enUS}></Datepicker>}
   </Story>
 </Canvas>
+
+### Error
+
+<Canvas>
+  <Story
+    name="Error"
+    args={{}}
+    parameters={{
+      docs: {
+        source: {
+          code: `
+<Datepicker error={true}></Datepicker>;
+`,
+        },
+      },
+    }}
+  >
+    {() => <Datepicker error={true}></Datepicker>}
+  </Story>
+</Canvas>
+
+### Disabled
+
+<Canvas>
+  <Story
+    name="Disabled"
+    args={{}}
+    parameters={{
+      docs: {
+        source: {
+          code: `
+<Datepicker disabled={true}></Datepicker>;
+`,
+        },
+      },
+    }}
+  >
+    {() => <Datepicker disabled={true}></Datepicker>}
+  </Story>
+</Canvas>

@@ -1,7 +1,220 @@
+.denhaag-datepicker {
+  position: relative;
+}
+
+.denhaag-datepicker__button {
+  position: absolute;
+  inset-block-start: 10px;
+  inset-inline-end: 12px;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  color: var(--denhaag-icon-button-color);
+  border: 0;
+  outline: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.denhaag-datepicker__button:hover {
+  color: var(--denhaag-icon-button-hover-color);
+}
+
+.denhaag-datepicker__button:focus-visible {
+  color: var(--denhaag-icon-button-focus-color);
+}
+
+.denhaag-datepicker__button .denhaag-icon {
+  font-size: 20px;
+}
+
 .denhaag-datepicker__input {
+  width: 100%;
+  height: 40px;
+  padding-inline-start: 16px;
+  padding-inline-end: 48px;
+  font-family: "The Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #7a7a7a;
+  appearance: none;
+  border-radius: 3px;
+  border: 1px solid #7a7a7a;
+  box-sizing: border-box;
+}
+
+.denhaag-datepicker__input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.denhaag-datepicker__input.denhaag-datepicker__input--has-value {
+  color: #4b4b4b;
+}
+
+.denhaag-datepicker--error .denhaag-datepicker__input {
+  border-color: #cf1c08;
+  padding-inline-end: 64px;
+}
+
+.denhaag-datepicker__input:hover {
+  border: 2px solid #1261a3;
+  padding-inline-start: 15px;
+  padding-inline-end: 47px;
+}
+
+.denhaag-datepicker--disabled .denhaag-datepicker__input {
+  color: #d2d2d2;
+  border-color: #d2d2d2;
+  pointer-events: none;
+}
+
+.denhaag-datepicker--error .denhaag-datepicker__input:hover {
+  padding-inline-end: 63px;
+}
+
+.denhaag-datepicker__error-icon {
+  display: none;
+}
+
+.denhaag-datepicker--error .denhaag-datepicker__error-icon {
+  position: absolute;
+  inset-block-start: 11px;
+  inset-inline-end: 40px;
+  display: block;
+  font-size: 18px;
+  color: #cf1c08;
+}
+
+.denhaag-datepicker--disabled .denhaag-datepicker__button {
+  color: #d2d2d2;
+  pointer-events: none;
+}
+
+.denhaag-datepicker .denhaag-datepicker__input.denhaag-datepicker__input--focus,
+.denhaag-datepicker .denhaag-datepicker__input:focus-visible,
+.denhaag-datepicker .denhaag-datepicker__button.denhaag-datepicker__button--focus + .denhaag-datepicker__input,
+.denhaag-datepicker .denhaag-datepicker__button:focus-visible + .denhaag-datepicker__input {
+  outline: var(--denhaag-focus-border);
+}
+
+.denhaag-datepicker__calendar {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  padding-inline-start: 12px;
+  padding-inline-end: 12px;
+  padding-block-end: 16px;
+  border-radius: 3px;
+  border: 1px solid #d2d2d2;
+  box-sizing: border-box;
+}
+
+.denhaag-datepicker__calendar.denhaag-datepicker__calendar--hidden {
+  display: none;
+}
+
+.denhaag-datepicker__calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+}
+
+.denhaag-datepicker__calendar-month {
+  font-family: "The Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.denhaag-datepicker__calendar-navigation {
+  color: var(--denhaag-icon-button-color);
+
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
+
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: transparent;
   appearance: none;
 }
 
-.denhaag-datepicker__calendar--hidden {
-  display: none;
+.denhaag-datepicker__calendar-navigation:hover {
+  color: var(--denhaag-icon-button-hover-color);
+}
+
+.denhaag-datepicker__calendar-navigation:focus {
+  color: var(--denhaag-icon-button-focus-color);
+  outline-color: var(--denhaag-icon-button-focus-outline-color);
+  outline-width: var(--denhaag-icon-button-focus-outline-width);
+  outline-style: var(--denhaag-icon-button-focus-outline-style);
+  outline-offset: var(--denhaag-icon-button-focus-outline-offset);
+}
+
+.denhaag-datepicker__calendar-navigation .denhaag-icon {
+  font-size: 20px;
+}
+
+.denhaag-datepicker__calendar-heading {
+  width: 32px;
+  height: 32px;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  padding-block-start: 0;
+  padding-block-end: 4px;
+  font-family: "The Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #7a7a7a;
+}
+
+.denhaag-datepicker__calendar-table {
+  margin-block-start: -8px;
+  border-spacing: 8px;
+  border-collapse: separate;
+}
+
+.denhaag-datepicker__calendar-day {
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+  outline: none;
+  font-family: "The Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #4b4b4b;
+  border-radius: 3px;
+}
+
+.denhaag-datepicker__calendar-day:hover {
+  color: #248641;
+}
+
+.denhaag-datepicker__calendar-day:focus {
+  outline: var(--denhaag-focus-border);
+}
+
+.denhaag-datepicker__calendar-day.denhaag-datepicker__calendar-day--current {
+  background-color: #f1f1f1;
+}
+
+.denhaag-datepicker__calendar-day.denhaag-datepicker__calendar-day--current:hover {
+  color: #248641;
+}
+
+.denhaag-datepicker__calendar-day.denhaag-datepicker__calendar-day--selected {
+  color: #ffffff;
+  background-color: #248641;
+}
+
+.denhaag-datepicker__calendar-day.denhaag-datepicker__calendar-day--selected:hover {
+  color: #ffffff;
+  background-color: #1d6b34;
 }

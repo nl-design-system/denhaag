@@ -21,8 +21,15 @@ import {
   subWeeks,
   getWeekOfMonth,
   getDay,
+  getDate,
+  setMonth,
+  getMonth,
+  setYear,
+  getYear,
 } from 'date-fns';
 import { nl } from './locale';
+
+import { CalendarIcon, AlertTriangleIcon, ChevronRightIcon, ChevronLeftIcon } from '@gemeente-denhaag/icons';
 
 import './datepicker.css';
 
@@ -69,7 +76,6 @@ interface DatepickerState {
   current: Date;
   selected?: Date;
   opened: boolean;
-  keyboard: boolean;
 }
 
 /**
@@ -98,9 +104,15 @@ export const Datepicker: React.FC<DatepickerProps> = ({
     current: startDate,
     selected: undefined,
     opened: false,
-    keyboard: false,
   });
 
+  const currentDate = new Date();
+  const today = setYear(
+    setMonth(setDate(state.current, getDate(currentDate)), getMonth(currentDate)),
+    getYear(currentDate),
+  );
+
+  const openButtonRef = React.useRef<HTMLButtonElement>(null);
   const backButtonRef = React.useRef<HTMLButtonElement>(null);
   const currentButtonRef = React.useRef<HTMLButtonElement>(null);
 
@@ -123,8 +135,10 @@ export const Datepicker: React.FC<DatepickerProps> = ({
   }, [ref]);
 
   React.useEffect(() => {
-    currentButtonRef.current?.focus();
-  }, [state.keyboard]);
+    if (state.opened) {
+      currentButtonRef.current?.focus();
+    }
+  }, [state.opened && state.current]);
 
   const onKeyDownInput = (e: KeyboardEvent) => {
     if (e.key === 'Enter' || e.key === ' ') {
@@ -136,6 +150,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
   const onKeyDownBack = (e: KeyboardEvent) => {
     switch (e.key) {
       case 'Escape':
+        openButtonRef.current?.focus();
         setState({ ...state, opened: false });
         break;
       case 'Tab':
@@ -149,6 +164,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
 
   const onKeyDownNext = (e: KeyboardEvent) => {
     if (e.key === 'Escape') {
+      openButtonRef.current?.focus();
       setState({ ...state, opened: false });
     }
   };
@@ -156,24 +172,24 @@ export const Datepicker: React.FC<DatepickerProps> = ({
   const onKeyDownDay = (e: KeyboardEvent) => {
     switch (e.key) {
       case 'ArrowLeft':
-        setState({ ...state, current: subDays(state.current, 1), keyboard: !state.keyboard });
+        setState({ ...state, current: subDays(state.current, 1) });
         break;
       case 'ArrowRight':
-        setState({ ...state, current: addDays(state.current, 1), keyboard: !state.keyboard });
+        setState({ ...state, current: addDays(state.current, 1) });
         break;
       case 'ArrowUp':
-        setState({ ...state, current: subDays(state.current, 7), keyboard: !state.keyboard });
+        setState({ ...state, current: subDays(state.current, 7) });
         break;
       case 'ArrowDown':
-        setState({ ...state, current: addDays(state.current, 7), keyboard: !state.keyboard });
+        setState({ ...state, current: addDays(state.current, 7) });
         break;
       case 'Home':
         e.preventDefault();
-        setState({ ...state, current: startOfWeek(state.current, { locale: locale }), keyboard: !state.keyboard });
+        setState({ ...state, current: startOfWeek(state.current, { locale: locale }) });
         break;
       case 'End':
         e.preventDefault();
-        setState({ ...state, current: endOfWeek(state.current, { locale: locale }), keyboard: !state.keyboard });
+        setState({ ...state, current: endOfWeek(state.current, { locale: locale }) });
         break;
       case 'PageUp':
         e.preventDefault();
@@ -187,7 +203,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
           if (!isSameMonth(newDate, subYears(state.current, 1))) {
             newDate = subWeeks(newDate, 1);
           }
-          setState({ ...state, current: newDate, keyboard: !state.keyboard });
+          setState({ ...state, current: newDate });
         } else {
           let newDate = setDay(
             addWeeks(setDate(subMonths(state.current, 1), 1), getWeekOfMonth(state.current, { locale: locale }) - 1),
@@ -197,7 +213,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
           if (!isSameMonth(newDate, subMonths(state.current, 1))) {
             newDate = subWeeks(newDate, 1);
           }
-          setState({ ...state, current: newDate, keyboard: !state.keyboard });
+          setState({ ...state, current: newDate });
         }
         break;
       case 'PageDown':
@@ -211,7 +227,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
           if (!isSameMonth(newDate, addYears(state.current, 1))) {
             newDate = subWeeks(newDate, 1);
           }
-          setState({ ...state, current: newDate, keyboard: !state.keyboard });
+          setState({ ...state, current: newDate });
         } else {
           let newDate = setDay(
             addWeeks(setDate(addMonths(state.current, 1), 1), getWeekOfMonth(state.current, { locale: locale }) - 1),
@@ -221,7 +237,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
           if (!isSameMonth(newDate, addMonths(state.current, 1))) {
             newDate = subWeeks(newDate, 1);
           }
-          setState({ ...state, current: newDate, keyboard: !state.keyboard });
+          setState({ ...state, current: newDate });
         }
         break;
       case 'Escape':
@@ -245,6 +261,10 @@ export const Datepicker: React.FC<DatepickerProps> = ({
         // eslint-disable-next-line jsx-a11y/role-supports-aria-props
         <button
           type="button"
+          className={clsx('denhaag-datepicker__calendar-day', {
+            'denhaag-datepicker__calendar-day--current': isEqual(today, date),
+            'denhaag-datepicker__calendar-day--selected': state.selected && isEqual(state.selected, date),
+          })}
           tabIndex={isEqual(state.current, date) ? 0 : -1}
           ref={isEqual(state.current, date) ? currentButtonRef : null}
           onClick={() => {
@@ -262,10 +282,24 @@ export const Datepicker: React.FC<DatepickerProps> = ({
 
   return (
     <div className={rootStyles} ref={ref}>
+      <button
+        type="button"
+        className="denhaag-datepicker__button"
+        aria-label={openCalendarLabel}
+        onClick={() => {
+          setState({ ...state, opened: !state.opened });
+        }}
+        tabIndex={props.disabled ? -1 : 0}
+        ref={openButtonRef}
+      >
+        <CalendarIcon />
+      </button>
       <input
         disabled={props.disabled}
         type="date"
-        className="denhaag-datepicker__input"
+        className={clsx('denhaag-datepicker__input', {
+          'denhaag-datepicker__input--has-value': state.selected,
+        })}
         ref={inputRef}
         value={state.selected ? formatISO(state.selected, { representation: 'date' }) : ''}
         onChange={(event) => {
@@ -288,14 +322,9 @@ export const Datepicker: React.FC<DatepickerProps> = ({
           setState({ ...state, opened: true });
         }}
         onKeyDown={onKeyDownInput}
+        tabIndex={props.disabled ? -1 : 0}
       />
-      <button
-        className="denhaag-datepicker__button"
-        onClick={() => {
-          setState({ ...state, opened: !state.opened });
-        }}
-        aria-label={openCalendarLabel}
-      ></button>
+      {props.error && <AlertTriangleIcon className="denhaag-datepicker__error-icon" />}
       <div
         className={clsx('denhaag-datepicker__calendar', { 'denhaag-datepicker__calendar--hidden': !state.opened })}
         role="dialog"
@@ -306,14 +335,16 @@ export const Datepicker: React.FC<DatepickerProps> = ({
         <div className="denhaag-datepicker__calendar-header">
           <button
             type="button"
-            className="denhaag-datepicker__calendar-previous"
+            className="denhaag-datepicker__calendar-navigation"
             onClick={() => {
               setState({ ...state, current: subMonths(state.current, 1) });
             }}
             ref={backButtonRef}
             onKeyDown={onKeyDownBack}
             aria-label={previousMonthLabel}
-          ></button>
+          >
+            <ChevronLeftIcon />
+          </button>
           <span
             id="denhaag-datepicker-calendar-month"
             className="denhaag-datepicker__calendar-month"
@@ -325,13 +356,15 @@ export const Datepicker: React.FC<DatepickerProps> = ({
           </span>
           <button
             type="button"
-            className="denhaag-datepicker__calendar-next"
+            className="denhaag-datepicker__calendar-navigation"
             onClick={() => {
               setState({ ...state, current: addMonths(state.current, 1) });
             }}
             onKeyDown={onKeyDownNext}
             aria-label={nextMonthLabel}
-          ></button>
+          >
+            <ChevronRightIcon />
+          </button>
         </div>
         <table
           className="denhaag-datepicker__calendar-table"
@@ -343,6 +376,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
               {Array.from(Array(7)).map((_, i) => (
                 <th
                   key={`datepicker-day-${i}`}
+                  className="denhaag-datepicker__calendar-heading"
                   abbr={locale.localize?.day((i + (locale.options?.weekStartsOn || 0)) % 7)}
                 >
                   {locale.localize?.day((i + (locale.options?.weekStartsOn || 0)) % 7, { width: 'short' })}
