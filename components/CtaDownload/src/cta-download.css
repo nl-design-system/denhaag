@@ -67,8 +67,6 @@
 
 .denhaag-cta-download__title {
   color: var(--denhaag-cta-download-title-color, inherit);
-  hyphens: auto;
-  hyphenate-limit-last: always;
   font-size: var(--denhaag-cta-download-title-font-size, var(--denhaag-cta-download-font-size, 1rem));
   font-weight: var(--denhaag-cta-download-title-font-weight, inherit);
   margin-block-start: 0;
