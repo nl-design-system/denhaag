@@ -1,4 +1,6 @@
 .denhaag-cta-event {
+  --denhaag-cta-event-icon-width-fallback: calc(var(--denhaag-cta-event-gap) * 4);
+
   align-items: center;
   box-shadow: 0 1px 0 var(--denhaag-cta-event-border-color, currentColor),
     inset 0 1px 0 var(--denhaag-cta-event-border-color, currentColor);
@@ -48,7 +50,7 @@
   height: auto;
   justify-content: center;
   line-height: var(--denhaag-cta-event-date-line-height, inherit);
-  width: var(--denhaag-cta-event-width, calc(var(--denhaag-cta-event-gap) * 4));
+  width: var(--denhaag-cta-event-width, var(--denhaag-cta-event-icon-width-fallback));
 }
 
 .denhaag-cta-event__day {
@@ -60,7 +62,7 @@
   flex-direction: column;
   gap: var(--denhaag-cta-event-excerpt-gap, calc(var(--denhaag-cta-event-gap) / 6));
   max-width: calc(
-    100% - var(--denhaag-cta-event-width, calc(var(--denhaag-cta-event-gap) * 4)) + var(--denhaag-cta-event-gap)
+    100% - (var(--denhaag-cta-event-width, var(--denhaag-cta-event-icon-width-fallback)) + var(--denhaag-cta-event-gap))
   );
 }
 
