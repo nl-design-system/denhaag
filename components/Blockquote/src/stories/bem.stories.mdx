@@ -1,0 +1,48 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+import pkg from "../../package.json";
+import "../index.css";
+
+<Meta
+  title="CSS Components/Data Display/Blockquote"
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<DesignTokenDocBlock categoryName="Blockquote" viewType="table" />
+
+## Stories
+
+### Default
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Default">
+    <blockquote class="denhaag-blockquote">
+      <div class="denhaag-blockquote__content">
+        <p>The Quick Brown Fox Jumps Over The Lazy Dog</p>
+      </div>
+    </blockquote>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### With attribution
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="With attribution">
+    <blockquote class="denhaag-blockquote">
+      <div class="denhaag-blockquote__content">
+        <p>The Quick Brown Fox Jumps Over The Lazy Dog</p>
+        <div class="denhaag-blockquote__attribution">L. Ipsum</div>
+      </div>
+    </blockquote>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>

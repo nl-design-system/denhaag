@@ -1,0 +1,17 @@
+.denhaag-blockquote {
+  border-inline-start: var(--denhaag-blockquote-border-width) var(--denhaag-blockquote-border-style)
+    var(--denhaag-blockquote-color-border);
+  font-family: var(--denhaag-font-font-family, inherit);
+  padding-block-start: var(--denhaag-blockquote-padding);
+  padding-block-end: var(--denhaag-blockquote-padding);
+  padding-inline-start: calc(var(--denhaag-blockquote-padding) - var(--denhaag-blockquote-border-width));
+  padding-inline-end: var(--denhaag-blockquote-padding);
+}
+
+.denhaag-blockquote__content p {
+  font-size: var(--denhaag-typography-font-size-medium, 1.125rem);
+}
+
+.denhaag-blockquote__content .denhaag-blockquote__attribution {
+  font-size: var(--denhaag-typography-font-size-small, 0.75rem);
+}
