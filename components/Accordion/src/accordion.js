@@ -6,6 +6,8 @@ const AccordionScripts = (className = 'denhaag-accordion') => {
   function clickEvents(accordion) {
     // Close accordion.
     accordion.onclick = (el) => toggleAccordion(el.closest('.denhaag-accordion'));
+
+    // change aria expanded for the panel to false
   }
 
   /**
@@ -13,7 +15,9 @@ const AccordionScripts = (className = 'denhaag-accordion') => {
    * @param {object} accordion.
    */
   function toggleAccordion(accordion) {
-    accordion.classList.toggle(`${accordionSelector}--open`);
+    accordion.classList.toggle(`${accordionSelector}--expanded`);
+
+    // TO DO: change aria expanded for the panel to true
   }
 
   // initiate classes
