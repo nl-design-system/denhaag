@@ -52,6 +52,11 @@
           }
         }
       },
+      "dot": {
+        "color": {
+          "value": "{denhaag.color.white.value}"
+        }
+      },
       "excerpt": {
         "gap": {
           "value": "{denhaag.space.block.2xs.value}"
