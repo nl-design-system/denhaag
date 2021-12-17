@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/cta-event",
-  "description": "Call To Action Link component",
+  "description": "Call To Action Event component",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
   "version": "0.1.0",
