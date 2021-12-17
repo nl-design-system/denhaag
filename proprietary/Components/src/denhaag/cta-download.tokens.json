@@ -1,0 +1,75 @@
+{
+  "denhaag": {
+    "cta-download": {
+      "border-color": {
+        "value": "{denhaag.color.grey.2.value}"
+      },
+      "color": {
+        "value": "{denhaag.color.grey.4.value}"
+      },
+      "font": {
+        "family": {
+          "value": "{denhaag.typography.sans-serif.font-family.value}"
+        },
+        "size": {
+          "value": "{denhaag.typography.scale.lg.font-size.value}"
+        },
+        "weight": {
+          "value": 400
+        }
+      },
+      "line-height": {
+        "value": 1.3
+      },
+      "gap": {
+        "value": "{denhaag.space.block.lg.value}"
+      },
+      "padding": {
+        "block": {
+          "value": "{denhaag.space.block.lg.value}"
+        },
+        "inline": {
+          "value": "{denhaag.space.inline.md.value}"
+        }
+      },
+      "width": {
+        "value": "{denhaag.space.block.5xl.value}"
+      },
+      "focus": {
+        "highlight": {
+          "color": {
+            "value": "{denhaag.color.blue.4.value}"
+          }
+        },
+        "outline": {
+          "value": "{denhaag.focus.border.value}"
+        }
+      },
+      "hover": {
+        "highlight": {
+          "color": {
+            "value": "{denhaag.color.blue.4.value}"
+          }
+        }
+      },
+      "excerpt": {
+        "gap": {
+          "value": "{denhaag.space.block.2xs.value}"
+        }
+      },
+      "title": {
+        "color": {
+          "value": "{denhaag.color.blue.3.value}"
+        },
+        "font": {
+          "size": {
+            "value": "{denhaag.typography.scale.lg.font-size.value}"
+          },
+          "weight": {
+            "value": 700
+          }
+        }
+      }
+    }
+  }
+}
