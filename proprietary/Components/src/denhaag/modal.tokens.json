@@ -12,8 +12,16 @@
           "value": "68px"
         }
       },
-      "padding": {
+      "gap": {
         "value": "{denhaag.space.block.md.value}"
+      },
+      "padding": {
+        "block": {
+          "value": "{denhaag.space.block.md.value}"
+        },
+        "inline": {
+          "value": "{denhaag.space.block.md.value}"
+        }
       },
       "index": {
         "value": 12
@@ -65,7 +73,7 @@
             "value": "1rem"
           },
           "inline": {
-            "value": "16px"
+            "value": "1rem"
           }
         }
       },
