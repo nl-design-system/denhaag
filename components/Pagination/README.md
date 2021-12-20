@@ -56,6 +56,10 @@ The pagination contains the states inactive, active, hover and focus.
 
 None.
 
+## Pagination alignment
+
+The pagination can be left, right and center aligned based on the parent. The alignment depends on the layout of the rest of elements.
+
 ## Best practices
 
 ### Dos
@@ -86,4 +90,5 @@ Only use dots if there are more than 5 pages.
 
 ## References
 
+[Figma Design](https://www.figma.com/file/JpoY3waVoQGlLQzQXTL9nn/Design-System-Gemeente-Den-Haag?node-id=1673%3A231)
 [https://www.smashingmagazine.com/2007/11/pagination-gallery-examples-and-good-practices/](https://www.smashingmagazine.com/2007/11/pagination-gallery-examples-and-good-practices/)
