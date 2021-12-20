@@ -54,13 +54,23 @@ The buttons text only, medium primary and secundary are used.
 
 [technical accessibility requirements]
 
+### Error alerts in forms
+
+#### Error alerts
+
+If users submit long or complex forms with errors, use an error alert to summarize what went wrong. Place the alert at the top of the form and move the focus to the banner when the form is submitted. This will allow all users to scroll through the form in a logical order to resolve the issues.
+
+#### Inline errors
+
+Always include inline error messages for specific form fields so that users know what to do in context while correcting their errors.
+
 ## Content guidelines
 
 ### Title
 
 Modal titles should:
 
-- Use a clear {verb}+{noun} question or statement
+- Use a clear {verb}+{noun} question or statement.
 
 ### Body content
 

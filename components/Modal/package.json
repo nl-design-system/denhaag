@@ -20,8 +20,5 @@
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
-  },
-  "peerDependencies": {
-    "react": "^17.0.0"
   }
 }
