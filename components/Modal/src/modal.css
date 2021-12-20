@@ -157,6 +157,5 @@
           (2 * var(--denhaag-modal-icon-padding-inline, var(--denhaag-modal-padding-inline))) +
           var(--denhaag-modal-gap, var(--denhaag-modal-padding-block))
       )
-      ;
   );
 }
