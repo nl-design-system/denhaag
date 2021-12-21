@@ -1,35 +1,42 @@
-const AccordionScripts = (className = 'denhaag-accordion') => {
+export default class AccordionScripts {
+  constructor(className = 'denhaag-accordion__panel') {
+    // initiate classes
+    this.accordionPanels = document.getElementsByClassName(className);
+
+    // check if accordion panels are not there
+    if (!this.accordionPanels || this.accordionPanels.length === 0 || typeof this.accordionPanels !== 'object') {
+      // Nothing to see here.
+      return;
+    }
+
+    this.accordionPanelSelector = className;
+
+    // Loop through all accordion panels.
+    this.accordionPanels.forEach((accordionPanel) => this.clickEvents(accordionPanel));
+  }
+
   /**
    * All accordion click events, which includes opening and closing the accordion.
-   * @param accordion
+   * @param accordionPanel
    */
-  function clickEvents(accordion) {
-    // Close accordion.
-    accordion.onclick = (el) => toggleAccordion(el.closest('.denhaag-accordion'));
-
-    // change aria expanded for the panel to false
+  clickEvents(accordionPanel) {
+    // toggle accordion.
+    accordionPanel.onclick = (el) => {
+      this.toggleAccordion(el.target.closest(`.${this.accordionPanelSelector}`));
+    };
   }
 
   /**
    * Toggle the accordion.
-   * @param {object} accordion.
+   * @param {object} accordionPanel.
    */
-  function toggleAccordion(accordion) {
-    accordion.classList.toggle(`${accordionSelector}--expanded`);
+  toggleAccordion(accordionPanel) {
+    accordionPanel.classList.toggle(`${this.accordionPanelSelector}--expanded`);
+    accordionPanel.children.forEach((child) => child.classList.toggle(`${child.className}--expanded`));
+    accordionPanel.nextElementSibling.classList.toggle(`${accordionPanel.nextElementSibling.className}--expanded`);
 
-    // TO DO: change aria expanded for the panel to true
+    // TO DO: fix toggle close accordion
+
+    // TO DO: add toggle aria-expanded for the panel
   }
-
-  // initiate classes
-  const accordions = document.getElementsByClassName(className);
-  // check if accordions are there
-  if (!accordions || accordions.length === 0 || typeof accordions !== 'object') {
-    // Nothing to see here.
-    return;
-  }
-  const accordionSelector = className;
-  // Loop through all accordions.
-  accordions.forEach((accordion) => clickEvents(accordion));
-};
-
-export default AccordionScripts;
+}

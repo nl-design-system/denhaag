@@ -95,12 +95,14 @@
 /* collapse (details) styling */
 .denhaag-accordion__collapse {
   overflow: hidden;
-}
-
-.denhaag-accordion__collapse--hidden {
   visibility: hidden;
   min-height: 0;
   height: 0;
+}
+
+.denhaag-accordion__collapse--expanded {
+  visibility: visible;
+  height: auto;
 }
 
 .denhaag-accordion__details {
