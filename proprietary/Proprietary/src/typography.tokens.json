@@ -20,12 +20,14 @@
         "s": {
           "font-size": {
             "value": "0.75rem"
-          }
+          },
+          "line-height": { "value": 1.3 }
         },
         "base": {
           "font-size": {
             "value": "1rem"
-          }
+          },
+          "line-height": { "value": 1.5 }
         },
         "lg": {
           "font-size": {
