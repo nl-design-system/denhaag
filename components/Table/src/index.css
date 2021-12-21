@@ -26,7 +26,7 @@
 .denhaag-table__cell[data-heading] {
   display: var(--denhaag-table-cell-display, table-cell);
   flex-direction: column;
-  gap: var(--denhaag-table-cell-gap, 1px);
+  gap: var(--denhaag-table-cell-gap, 0.25em);
 }
 
 .denhaag-table__cell[data-heading]:before {
