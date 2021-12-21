@@ -1,0 +1,66 @@
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+
+import "../index";
+import pkg from "../../package.json";
+import readme from "../../README.md";
+
+<Meta
+  title="CSS Components/Data Display/Table"
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Stories
+
+### Default
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Default">
+    <table summary="Table summary">
+      <caption class="denhaag-table__caption">He-Man and Skeletor facts</caption>
+      <thead class="denhaag-table__header">
+        <tr class="denhaag-table__row">
+          <td class="denhaag-table__cell">&nbsp;</td>
+          <th class="denhaag-table__heading" scope="col">
+            He-Man
+          </th>
+          <th class="denhaag-table__heading" scope="col">
+            Skeletor
+          </th>
+        </tr>
+      </thead>
+      <tbody class="denhaag-table__body">
+        <tr class="denhaag-table__row">
+          <th class="denhaag-table__heading" scope="row">
+            Role
+          </th>
+          <td class="denhaag-table__cell">Hero</td>
+          <td class="denhaag-table__cell">Villain</td>
+        </tr>
+        <tr class="denhaag-table__row">
+          <th class="denhaag-table__heading" scope="row">
+            Weapon
+          </th>
+          <td class="denhaag-table__cell">Power Sword</td>
+          <td class="denhaag-table__cell">Havoc Staff</td>
+        </tr>
+        <tr class="denhaag-table__row">
+          <th class="denhaag-table__heading" scope="row">
+            Dark secret
+          </th>
+          <td class="denhaag-table__cell">Expert florist</td>
+          <td class="denhaag-table__cell">Cries at romcoms</td>
+        </tr>
+      </tbody>
+    </table>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
