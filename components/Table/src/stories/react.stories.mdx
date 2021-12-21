@@ -1,6 +1,6 @@
 import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
 
-import { Table, TableCaption, TableCell, TableHeader, TableRow } from "../index";
+import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "../index";
 import pkg from "../../package.json";
 import readme from "../../README.md";
 
@@ -25,33 +25,187 @@ import readme from "../../README.md";
 <Canvas>
   <Story name="Default">
     {() => (
-      <Table>
-        <TableCaption>He-Man and Skeletor facts</TableCaption>
-        <TableRow>
-          <TableCell></TableCell>
-          <TableHeader scope="col" className="heman">
-            He-Man
-          </TableHeader>
-          <TableHeader scope="col" className="skeletor">
-            Skeletor
-          </TableHeader>
-        </TableRow>
-        <TableRow>
-          <TableHeader scope="row">Role</TableHeader>
-          <TableCell>Hero</TableCell>
-          <TableCell>Villain</TableCell>
-        </TableRow>
-        <TableRow>
-          <TableHeader scope="row">Weapon</TableHeader>
-          <TableCell>Power Sword</TableCell>
-          <TableCell>Havoc Staff</TableCell>
-        </TableRow>
-        <TableRow>
-          <TableHeader scope="row">Dark secret</TableHeader>
-          <TableCell>Expert florist</TableCell>
-          <TableCell>Cries at romcoms</TableCell>
-        </TableRow>
-      </Table>
+      <div aria-labelledby="caption_default" role="group">
+        <Table>
+          <TableCaption id="caption_default">He-Man and Skeletor facts</TableCaption>
+          <TableHead>
+            <TableRow>
+              <TableCell></TableCell>
+              <TableHeader className="heman">He-Man</TableHeader>
+              <TableHeader className="skeletor">Skeletor</TableHeader>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            <TableRow>
+              <TableHeader scope="row">Role</TableHeader>
+              <TableCell data-heading="He-Man">Hero</TableCell>
+              <TableCell data-heading="Skeletor">Villain</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableHeader scope="row">Weapon</TableHeader>
+              <TableCell data-heading="He-Man">Power Sword</TableCell>
+              <TableCell data-heading="Skeletor">Havoc Staff</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableHeader scope="row">Dark secret</TableHeader>
+              <TableCell data-heading="He-Man">Expert florist</TableCell>
+              <TableCell data-heading="Skeletor">Cries at romcoms</TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
+      </div>
+    )}
+  </Story>
+</Canvas>
+
+### Hover
+
+<Canvas>
+  <Story name="Hover">
+    {() => (
+      <div aria-labelledby="caption_hover" role="group">
+        <Table>
+          <TableCaption id="caption_hover">He-Man and Skeletor facts</TableCaption>
+          <TableHead>
+            <TableRow tabIndex="-1">
+              <TableCell></TableCell>
+              <TableHeader className="heman">He-Man</TableHeader>
+              <TableHeader className="skeletor">Skeletor</TableHeader>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            <TableRow>
+              <TableHeader scope="row">Role</TableHeader>
+              <TableCell data-heading="He-Man">Hero</TableCell>
+              <TableCell data-heading="Skeletor">Villain</TableCell>
+            </TableRow>
+            <TableRow className="denhaag-table__row--hover">
+              <TableHeader scope="row">Weapon</TableHeader>
+              <TableCell data-heading="He-Man">Power Sword</TableCell>
+              <TableCell data-heading="Skeletor">Havoc Staff</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableHeader scope="row">Dark secret</TableHeader>
+              <TableCell data-heading="He-Man">Expert florist</TableCell>
+              <TableCell data-heading="Skeletor">Cries at romcoms</TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
+      </div>
+    )}
+  </Story>
+</Canvas>
+
+### Focus
+
+<Canvas>
+  <Story name="Focus">
+    {() => (
+      <div aria-labelledby="caption_focus" role="group">
+        <Table>
+          <TableCaption id="caption_focus">He-Man and Skeletor facts</TableCaption>
+          <TableHead>
+            <TableRow tabIndex="-1">
+              <TableCell></TableCell>
+              <TableHeader className="heman">He-Man</TableHeader>
+              <TableHeader className="skeletor">Skeletor</TableHeader>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            <TableRow>
+              <TableHeader scope="row">Role</TableHeader>
+              <TableCell data-heading="He-Man">Hero</TableCell>
+              <TableCell data-heading="Skeletor">Villain</TableCell>
+            </TableRow>
+            <TableRow className="denhaag-table__row--focus">
+              <TableHeader scope="row">Weapon</TableHeader>
+              <TableCell data-heading="He-Man">Power Sword</TableCell>
+              <TableCell data-heading="Skeletor">Havoc Staff</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableHeader scope="row">Dark secret</TableHeader>
+              <TableCell data-heading="He-Man">Expert florist</TableCell>
+              <TableCell data-heading="Skeletor">Cries at romcoms</TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
+      </div>
+    )}
+  </Story>
+</Canvas>
+
+### Simple
+
+<Canvas>
+  <Story name="Simple">
+    {() => (
+      <div aria-labelledby="caption_simple" role="group">
+        <Table>
+          <TableCaption id="caption_simple">Kosten overzicht</TableCaption>
+          <TableHead>
+            <TableRow tabIndex="-1">
+              <TableHeader>Soort kosten</TableHeader>
+              <TableHeader>Bedrag 2021</TableHeader>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            <TableRow>
+              <TableCell data-heading="Soort kosten">Beheerkosten (administratie) per jaar</TableCell>
+              <TableCell data-heading="Bedrag 2021">&euro; 27,50</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell data-heading="Soort kosten">Afkoopsom beheerkosten</TableCell>
+              <TableCell data-heading="Bedrag 2021">&euro; 232</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell data-heading="Soort kosten">
+                Splitsingskosten per appartementsrecht of per recht van erfpacht
+              </TableCell>
+              <TableCell data-heading="Bedrag 2021">&euro; 153</TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
+      </div>
+    )}
+  </Story>
+</Canvas>
+
+### Long title
+
+<Canvas>
+  <Story name="Long title">
+    {() => (
+      <div aria-labelledby="caption_long_title" role="group">
+        <Table>
+          <TableCaption id="caption_long_title">
+            Voorbeeld met extreem lange titel die je eigenlijk wilt voorkomen.
+          </TableCaption>
+          <TableHead>
+            <TableRow tabIndex="-1">
+              <TableHeader>Titel met een hele lange omschrijving die overloopt</TableHeader>
+              <TableHeader>Tijd</TableHeader>
+              <TableHeader>Leeftijd</TableHeader>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            <TableRow>
+              <TableCell data-heading="Titel met een hele lange omschrijving die overloopt">maandag</TableCell>
+              <TableCell data-heading="Tijd">11.00 tot 12,30</TableCell>
+              <TableCell data-heading="Leeftijd">Alle leeftijden</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell data-heading="Titel met een hele lange omschrijving die overloopt">dinsdag</TableCell>
+              <TableCell data-heading="Tijd">8.30 tot 11,30</TableCell>
+              <TableCell data-heading="Leeftijd">Alle leeftijden</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell data-heading="Titel met een hele lange omschrijving die overloopt">donderdag</TableCell>
+              <TableCell data-heading="Tijd">11.00 tot 12,30</TableCell>
+              <TableCell data-heading="Leeftijd">Alle leeftijden</TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
+      </div>
     )}
   </Story>
 </Canvas>
