@@ -1,7 +1,7 @@
 .denhaag-table {
   --denhaag-table-cell-display: flex;
   --denhaag-table-row-display: flex;
-  --denhaag-table-header-display: none;
+  --denhaag-table-head-display: none;
 
   border-collapse: collapse;
   border-spacing: 0;
@@ -44,8 +44,8 @@
   text-align: start;
 }
 
-.denhaag-table__header {
-  display: var(--denhaag-table-header-display, table-header-group);
+.denhaag-table__head {
+  display: var(--denhaag-table-head-display, table-header-group);
 }
 
 .denhaag-table__heading {
@@ -83,7 +83,7 @@
   .denhaag-table {
     --denhaag-table-cell-display: table-cell;
     --denhaag-table-row-display: table-row;
-    --denhaag-table-header-display: table-header-group;
+    --denhaag-table-head-display: table-header-group;
   }
 
   .denhaag-table__cell[data-heading]:before {
@@ -96,10 +96,10 @@
       var(--utrecht-table-border-color, transparent);
   }
 
-  .denhaag-table__row--hover .denhaag-table__cell,
-  .denhaag-table__row:hover .denhaag-table__cell,
-  .denhaag-table__row--hover .denhaag-table__heading,
-  .denhaag-table__row:hover .denhaag-table__heading {
+  .denhaag-table__body > .denhaag-table__row--hover .denhaag-table__cell,
+  .denhaag-table__body > .denhaag-table__row:hover .denhaag-table__cell,
+  .denhaag-table__body > .denhaag-table__row--hover .denhaag-table__heading,
+  .denhaag-table__body > .denhaag-table__row:hover .denhaag-table__heading {
     --denhaag-table-row-background-color: var(--denhaag-table-row-hover-background-color, transparent);
   }
 
