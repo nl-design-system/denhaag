@@ -24,55 +24,59 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Default">
-    <table class="denhaag-table">
-      <caption class="denhaag-table__caption">He-Man and Skeletor facts</caption>
-      <thead class="denhaag-table__header">
-        <tr class="denhaag-table__row">
-          <td class="denhaag-table__cell">&nbsp;</td>
-          <th class="denhaag-table__heading" scope="col">
-            He-Man
-          </th>
-          <th class="denhaag-table__heading" scope="col">
-            Skeletor
-          </th>
-        </tr>
-      </thead>
-      <tbody class="denhaag-table__body">
-        <tr class="denhaag-table__row">
-          <th class="denhaag-table__heading" scope="row">
-            Role
-          </th>
-          <td class="denhaag-table__cell" data-heading="He-Man">
-            Hero
-          </td>
-          <td class="denhaag-table__cell" data-heading="Skeletor">
-            Villain
-          </td>
-        </tr>
-        <tr class="denhaag-table__row">
-          <th class="denhaag-table__heading" scope="row">
-            Weapon
-          </th>
-          <td class="denhaag-table__cell" data-heading="He-Man">
-            Power Sword
-          </td>
-          <td class="denhaag-table__cell" data-heading="Skeletor">
-            Havoc Staff
-          </td>
-        </tr>
-        <tr class="denhaag-table__row">
-          <th class="denhaag-table__heading" scope="row">
-            Dark secret
-          </th>
-          <td class="denhaag-table__cell" data-heading="He-Man">
-            Expert florist
-          </td>
-          <td class="denhaag-table__cell" data-heading="Skeletor">
-            Cries at romcoms
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div aria-labelledby="caption" role="group">
+      <table class="denhaag-table">
+        <caption id="caption" class="denhaag-table__caption">
+          He-Man and Skeletor facts
+        </caption>
+        <thead class="denhaag-table__header">
+          <tr class="denhaag-table__row" tabindex="0">
+            <td class="denhaag-table__cell">&nbsp;</td>
+            <th class="denhaag-table__heading" scope="col" aria-sort="none">
+              He-Man
+            </th>
+            <th class="denhaag-table__heading" scope="col" aria-sort="none">
+              Skeletor
+            </th>
+          </tr>
+        </thead>
+        <tbody class="denhaag-table__body">
+          <tr class="denhaag-table__row" tabindex="0">
+            <th class="denhaag-table__heading" scope="row">
+              Role
+            </th>
+            <td class="denhaag-table__cell" data-heading="He-Man">
+              Hero
+            </td>
+            <td class="denhaag-table__cell" data-heading="Skeletor">
+              Villain
+            </td>
+          </tr>
+          <tr class="denhaag-table__row" tabindex="0">
+            <th class="denhaag-table__heading" scope="row">
+              Weapon
+            </th>
+            <td class="denhaag-table__cell" data-heading="He-Man">
+              Power Sword
+            </td>
+            <td class="denhaag-table__cell" data-heading="Skeletor">
+              Havoc Staff
+            </td>
+          </tr>
+          <tr class="denhaag-table__row" tabindex="0">
+            <th class="denhaag-table__heading" scope="row">
+              Dark secret
+            </th>
+            <td class="denhaag-table__cell" data-heading="He-Man">
+              Expert florist
+            </td>
+            <td class="denhaag-table__cell" data-heading="Skeletor">
+              Cries at romcoms
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -82,55 +86,121 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Hover">
-    <table class="denhaag-table">
-      <caption class="denhaag-table__caption">He-Man and Skeletor facts</caption>
-      <thead class="denhaag-table__header">
-        <tr class="denhaag-table__row">
-          <td class="denhaag-table__cell">&nbsp;</td>
-          <th class="denhaag-table__heading" scope="col">
-            He-Man
-          </th>
-          <th class="denhaag-table__heading" scope="col">
-            Skeletor
-          </th>
-        </tr>
-      </thead>
-      <tbody class="denhaag-table__body">
-        <tr class="denhaag-table__row">
-          <th class="denhaag-table__heading" scope="row">
-            Role
-          </th>
-          <td class="denhaag-table__cell" data-heading="He-Man">
-            Hero
-          </td>
-          <td class="denhaag-table__cell" data-heading="Skeletor">
-            Villain
-          </td>
-        </tr>
-        <tr class="denhaag-table__row denhaag-table__row--hover">
-          <th class="denhaag-table__heading" scope="row">
-            Weapon
-          </th>
-          <td class="denhaag-table__cell" data-heading="He-Man">
-            Power Sword
-          </td>
-          <td class="denhaag-table__cell" data-heading="Skeletor">
-            Havoc Staff
-          </td>
-        </tr>
-        <tr class="denhaag-table__row">
-          <th class="denhaag-table__heading" scope="row">
-            Dark secret
-          </th>
-          <td class="denhaag-table__cell" data-heading="He-Man">
-            Expert florist
-          </td>
-          <td class="denhaag-table__cell" data-heading="Skeletor">
-            Cries at romcoms
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div aria-labelledby="caption_hover" role="group">
+      <table class="denhaag-table">
+        <caption id="caption_hover" class="denhaag-table__caption">
+          He-Man and Skeletor facts
+        </caption>
+        <thead class="denhaag-table__header">
+          <tr class="denhaag-table__row" tabindex="0">
+            <td class="denhaag-table__cell">&nbsp;</td>
+            <th class="denhaag-table__heading" scope="col" aria-sort="none">
+              He-Man
+            </th>
+            <th class="denhaag-table__heading" scope="col" aria-sort="none">
+              Skeletor
+            </th>
+          </tr>
+        </thead>
+        <tbody class="denhaag-table__body">
+          <tr class="denhaag-table__row" tabindex="0">
+            <th class="denhaag-table__heading" scope="row">
+              Role
+            </th>
+            <td class="denhaag-table__cell" data-heading="He-Man">
+              Hero
+            </td>
+            <td class="denhaag-table__cell" data-heading="Skeletor">
+              Villain
+            </td>
+          </tr>
+          <tr class="denhaag-table__row denhaag-table__row--hover">
+            <th class="denhaag-table__heading" scope="row">
+              Weapon
+            </th>
+            <td class="denhaag-table__cell" data-heading="He-Man">
+              Power Sword
+            </td>
+            <td class="denhaag-table__cell" data-heading="Skeletor">
+              Havoc Staff
+            </td>
+          </tr>
+          <tr class="denhaag-table__row" tabindex="0">
+            <th class="denhaag-table__heading" scope="row">
+              Dark secret
+            </th>
+            <td class="denhaag-table__cell" data-heading="He-Man">
+              Expert florist
+            </td>
+            <td class="denhaag-table__cell" data-heading="Skeletor">
+              Cries at romcoms
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Focus
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Focus">
+    <div aria-labelledby="caption_hover" role="group">
+      <table class="denhaag-table">
+        <caption id="caption_hover" class="denhaag-table__caption">
+          He-Man and Skeletor facts
+        </caption>
+        <thead class="denhaag-table__header">
+          <tr class="denhaag-table__row" tabindex="0">
+            <td class="denhaag-table__cell">&nbsp;</td>
+            <th class="denhaag-table__heading" scope="col" aria-sort="none">
+              He-Man
+            </th>
+            <th class="denhaag-table__heading" scope="col" aria-sort="none">
+              Skeletor
+            </th>
+          </tr>
+        </thead>
+        <tbody class="denhaag-table__body">
+          <tr class="denhaag-table__row" tabindex="0">
+            <th class="denhaag-table__heading" scope="row">
+              Role
+            </th>
+            <td class="denhaag-table__cell" data-heading="He-Man">
+              Hero
+            </td>
+            <td class="denhaag-table__cell" data-heading="Skeletor">
+              Villain
+            </td>
+          </tr>
+          <tr class="denhaag-table__row denhaag-table__row--focus">
+            <th class="denhaag-table__heading" scope="row">
+              Weapon
+            </th>
+            <td class="denhaag-table__cell" data-heading="He-Man">
+              Power Sword
+            </td>
+            <td class="denhaag-table__cell" data-heading="Skeletor">
+              Havoc Staff
+            </td>
+          </tr>
+          <tr class="denhaag-table__row" tabindex="0">
+            <th class="denhaag-table__heading" scope="row">
+              Dark secret
+            </th>
+            <td class="denhaag-table__cell" data-heading="He-Man">
+              Expert florist
+            </td>
+            <td class="denhaag-table__cell" data-heading="Skeletor">
+              Cries at romcoms
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -140,45 +210,113 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Simple">
-    <table class="denhaag-table">
-      <caption class="denhaag-table__caption">He-Man and Skeletor facts</caption>
-      <thead class="denhaag-table__header">
-        <tr class="denhaag-table__row">
-          <th class="denhaag-table__heading" scope="col">
-            Soort kosten
-          </th>
-          <th class="denhaag-table__heading" scope="col">
-            Bedrag 2021
-          </th>
-        </tr>
-      </thead>
-      <tbody class="denhaag-table__body">
-        <tr class="denhaag-table__row">
-          <td class="denhaag-table__cell" data-heading="Soort kosten">
-            Beheerkosten (administratiekosten) per jaar
-          </td>
-          <td class="denhaag-table__cell" data-heading="Bedrag 2021">
-            &euro; 27,50
-          </td>
-        </tr>
-        <tr class="denhaag-table__row">
-          <td class="denhaag-table__cell" data-heading="Soort kosten">
-            Afkoopsom beheerkosten
-          </td>
-          <td class="denhaag-table__cell" data-heading="Bedrag 2021">
-            &euro; 232
-          </td>
-        </tr>
-        <tr class="denhaag-table__row">
-          <td class="denhaag-table__cell" data-heading="Soort kosten">
-            Splitsingskosten per appartmentsrecht of per recht van erfpacht
-          </td>
-          <td class="denhaag-table__cell" data-heading="Bedrag 2021">
-            &euro; 153
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div aria-labelledby="caption_simple" role="group">
+      <table class="denhaag-table">
+        <caption id="caption_simple" class="denhaag-table__caption">
+          Kosten overzicht
+        </caption>
+        <thead class="denhaag-table__header">
+          <tr class="denhaag-table__row" tabindex="0">
+            <th class="denhaag-table__heading" scope="col" aria-sort="none">
+              Soort kosten
+            </th>
+            <th class="denhaag-table__heading" scope="col" aria-sort="none">
+              Bedrag 2021
+            </th>
+          </tr>
+        </thead>
+        <tbody class="denhaag-table__body">
+          <tr class="denhaag-table__row" tabindex="0">
+            <td class="denhaag-table__cell" data-heading="Soort kosten">
+              Beheerkosten (administratiekosten) per jaar
+            </td>
+            <td class="denhaag-table__cell" data-heading="Bedrag 2021">
+              &euro; 27,50
+            </td>
+          </tr>
+          <tr class="denhaag-table__row" tabindex="0">
+            <td class="denhaag-table__cell" data-heading="Soort kosten">
+              Afkoopsom beheerkosten
+            </td>
+            <td class="denhaag-table__cell" data-heading="Bedrag 2021">
+              &euro; 232
+            </td>
+          </tr>
+          <tr class="denhaag-table__row" tabindex="0">
+            <td class="denhaag-table__cell" data-heading="Soort kosten">
+              Splitsingskosten per appartmentsrecht of per recht van erfpacht
+            </td>
+            <td class="denhaag-table__cell" data-heading="Bedrag 2021">
+              &euro; 153
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Long title
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Long title">
+    <div aria-labelledby="caption_long_title" role="group">
+      <table class="denhaag-table">
+        <caption id="caption_long_title" class="denhaag-table__caption">
+          Voorbeeld met extreem lange titel die je eigenlijk wilt voorkomen.
+        </caption>
+        <thead class="denhaag-table__header">
+          <tr class="denhaag-table__row" tabindex="0">
+            <th class="denhaag-table__heading" scope="col" aria-sort="none">
+              Titel met een hele lange omschrijving die overloopt
+            </th>
+            <th class="denhaag-table__heading" scope="col" aria-sort="none">
+              Tijd
+            </th>
+            <th class="denhaag-table__heading" scope="col" aria-sort="none">
+              Leeftijd
+            </th>
+          </tr>
+        </thead>
+        <tbody class="denhaag-table__body">
+          <tr class="denhaag-table__row" tabindex="0">
+            <td class="denhaag-table__cell" data-heading="Titel met een hele lange omschrijving die doorloopt">
+              maandag
+            </td>
+            <td class="denhaag-table__cell" data-heading="Tijd">
+              11.00 tot 12,30
+            </td>
+            <td class="denhaag-table__cell" data-heading="Leeftijd">
+              Alle leeftijden
+            </td>
+          </tr>
+          <tr class="denhaag-table__row" tabindex="0">
+            <td class="denhaag-table__cell" data-heading="Titel met een hele lange omschrijving die doorloopt">
+              dinsdag
+            </td>
+            <td class="denhaag-table__cell" data-heading="Tijd">
+              8.30 tot 11,30
+            </td>
+            <td class="denhaag-table__cell" data-heading="Leeftijd">
+              Alle leeftijden
+            </td>
+          </tr>
+          <tr class="denhaag-table__row" tabindex="0">
+            <td class="denhaag-table__cell" data-heading="Titel met een hele lange omschrijving die doorloopt">
+              donderdag
+            </td>
+            <td class="denhaag-table__cell" data-heading="Tijd">
+              11.00 tot 12,30
+            </td>
+            <td class="denhaag-table__cell" data-heading="Leeftijd">
+              Alle leeftijden
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>

@@ -8,6 +8,9 @@
         "gap": {
           "value": "{denhaag.space.block.2xs.value}"
         },
+        "outline-color": { "value": "{denhaag.focus.border-color.value}" },
+        "outline-style": { "value": "{denhaag.focus.border-style.value}" },
+        "outline-width": { "value": "{denhaag.focus.border-width.value}" },
         "sm": {
           "padding": {
             "block": {

@@ -112,3 +112,4 @@ By default, all the column data should be left-aligned. Use the right alignment 
 [https://design.elisa.fi/9b207b2c3/p/1592f3-table/b/62f98d](https://design.elisa.fi/9b207b2c3/p/1592f3-table/b/62f98d)
 [https://inclusive-components.design/data-tables/](https://inclusive-components.design/data-tables/)
 [https://luna.sainsburys.co.uk/components/tables](https://luna.sainsburys.co.uk/components/tables)
+[https://www.a11yproject.com/posts/accessible-data-tables/](https://www.a11yproject.com/posts/accessible-data-tables/)
