@@ -2,17 +2,17 @@
   "utrecht": {
     "table": {
       "border-color": { "value": "{denhaag.color.grey.2.value}" },
-      "border-width": { "value": "2px" },
+      "border-width": { "value": "1px" },
       "margin-block-end": {},
       "margin-block-start": {},
       "caption": {
-        "font-weight": {},
-        "font-family": {},
-        "font-size": {},
-        "color": {},
-        "line-height": {},
-        "text-align": {},
-        "margin-block-end": { "value": "12px" }
+        "font-weight": { "value": "700" },
+        "font-family": { "value": "{denhaag.typography.sans-serif.font-family.value}" },
+        "font-size": { "value": "{denhaag.typography.scale.xl.font-size.value}" },
+        "color": { "value": "{denhaag.color.black.value}" },
+        "line-height": { "value": "{denhaag.typography.scale.s.line-height.value}" },
+        "text-align": { "value": "start" },
+        "margin-block-end": { "value": "{denhaag.space.block.xl.value}" }
       },
       "header": {
         "font-size": {},
@@ -29,17 +29,17 @@
         "text-transform": {}
       },
       "cell": {
-        "line-height": {},
-        "padding-block-end": { "value": "12px" },
-        "padding-block-start": { "value": "12px" },
-        "padding-inline-end": { "value": "15px" },
-        "padding-inline-start": { "value": "15px" }
+        "line-height": { "value": "{denhaag.typography.scale.base.line-height.value}" },
+        "padding-block-end": { "value": "{denhaag.space.block.md.value}" },
+        "padding-block-start": { "value": "{denhaag.space.block.md.value}" },
+        "padding-inline-end": { "value": "{denhaag.space.inline.md.value}" },
+        "padding-inline-start": { "value": "{denhaag.space.inline.md.value}" }
       },
       "row": {
         "border-block-end-color": { "value": "{denhaag.color.grey.1.value}" },
         "border-block-end-width": { "value": "1px" },
-        "padding-inline-end": { "value": "24px" },
-        "padding-inline-start": { "value": "24px" },
+        "padding-inline-end": { "value": "{denhaag.space.inline.xl.value}" },
+        "padding-inline-start": { "value": "{denhaag.space.inline.xl.value}" },
         "alternate-odd": {
           "background-color": { "value": "rgb(250, 250, 250)" },
           "color": {}
