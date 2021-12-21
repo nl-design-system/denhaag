@@ -102,4 +102,10 @@
   .denhaag-table__row:hover .denhaag-table__heading {
     --denhaag-table-row-background-color: var(--denhaag-table-row-hover-background-color, transparent);
   }
+
+  .denhaag-table__row--focus,
+  .denhaag-table__row:focus {
+    outline: var(--denhaag-table-cell-outline-color) var(--denhaag-table-cell-outline-style)
+      var(--denhaag-table-cell-outline-width);
+  }
 }
