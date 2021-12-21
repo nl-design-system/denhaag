@@ -1,0 +1,54 @@
+{
+  "denhaag": {
+    "table": {
+      "cell": {
+        "font-weight": {
+          "value": "{denhaag.typography.scale.base.line-height.value}"
+        },
+        "gap": {
+          "value": "{denhaag.space.block.2xs.value}"
+        },
+        "sm": {
+          "padding": {
+            "block": {
+              "end": {
+                "value": "{denhaag.space.block.2xs.value}"
+              },
+              "start": {
+                "value": "{denhaag.space.block.2xs.value}"
+              }
+            },
+            "inline": {
+              "end": {
+                "value": "{denhaag.space.block.xs.value}"
+              },
+              "start": {
+                "value": "{denhaag.space.block.xs.value}"
+              }
+            }
+          }
+        }
+      },
+      "row": {
+        "background-color": {
+          "value": "{denhaag.color.white.value}"
+        },
+        "padding": {
+          "block": {
+            "end": {
+              "value": ".75rem"
+            },
+            "start": {
+              "value": ".75rem"
+            }
+          }
+        },
+        "hover": {
+          "background-color": {
+            "value": "{denhaag.color.warmgrey.1.value}"
+          }
+        }
+      }
+    }
+  }
+}
