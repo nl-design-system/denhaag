@@ -1,6 +1,7 @@
-import { Canvas, Meta, Story } from "@storybook/addon-docs";
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
 import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
 import pkg from "../../package.json";
+import readme from "../../README.md";
 import "../index.css";
 
 <Meta
@@ -13,6 +14,10 @@ import "../index.css";
     },
   }}
 />
+
+<Description markdown={readme} />
+
+## Design Tokens
 
 <DesignTokenDocBlock categoryName="Blockquote" viewType="table" />
 
