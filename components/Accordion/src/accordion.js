@@ -31,12 +31,16 @@ export default class AccordionScripts {
    * @param {object} accordionPanel.
    */
   toggleAccordion(accordionPanel) {
-    accordionPanel.classList.toggle(`${this.accordionPanelSelector}--expanded`);
-    accordionPanel.children.forEach((child) => child.classList.toggle(`${child.className}--expanded`));
-    accordionPanel.nextElementSibling.classList.toggle(`${accordionPanel.nextElementSibling.className}--expanded`);
+    const panelExpandedClassName = `${this.accordionPanelSelector}--expanded`;
 
-    // TO DO: fix toggle close accordion
+    // toggle accordion panel class '...--expanded'
+    accordionPanel.classList.toggle(panelExpandedClassName);
 
-    // TO DO: add toggle aria-expanded for the panel
+    // toggle accordion panel attribute 'aria-expanded'
+    if (accordionPanel.classList.contains(panelExpandedClassName)) {
+      accordionPanel.setAttribute('aria-expanded', true);
+    } else {
+      accordionPanel.setAttribute('aria-expanded', false);
+    }
   }
 }

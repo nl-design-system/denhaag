@@ -15,8 +15,8 @@
 }
 
 .denhaag-accordion-container:first-child {
-  border-top-left-radius: var(--denhaag-border-radius);
-  border-top-right-radius: var(--denhaag-border-radius);
+  border-top-left-radius: var(--denhaag-accordion-border-radius, var(--denhaag-border-radius));
+  border-top-right-radius: var(--denhaag-accordion-border-radius, var(--denhaag-border-radius));
   border-top: var(--denhaag-accordion-border);
 }
 
@@ -63,32 +63,32 @@
   margin-block-end: 0;
 }
 
-.denhaag-accordion__panel--disabled {
+.denhaag-accordion__panel[aria-disabled="true"] {
   pointer-events: none;
-}
-
-.denhaag-accordion__panel--disabled .denhaag-accordion__title,
-.denhaag-accordion__panel--disabled .denhaag-icon {
-  color: var(--denhaag-accordion-disabled-color, hsl(0 0% 82%));
-}
-
-.denhaag-accordion__summary--expanded,
-.denhaag-accordion__panel:hover .denhaag-accordion__title {
-  font-weight: var(--denhaag-accordion-expanded-font-weight);
 }
 
 .denhaag-accordion__icon .denhaag-icon {
   color: var(--denhaag-accordion-icon-color, hsl(0 0% 29%));
 }
 
-.denhaag-accordion__icon--expanded .denhaag-icon {
+.denhaag-accordion__panel[aria-disabled="true"] .denhaag-accordion__title,
+.denhaag-accordion__panel[aria-disabled="true"] .denhaag-icon {
+  color: var(--denhaag-accordion-disabled-color, hsl(0 0% 82%));
+}
+
+.denhaag-accordion__panel--expanded .denhaag-accordion__summary,
+.denhaag-accordion__panel:hover .denhaag-accordion__title {
+  font-weight: var(--denhaag-accordion-expanded-font-weight);
+}
+
+.denhaag-accordion__panel--expanded .denhaag-accordion__icon .denhaag-icon {
   transform: var(--denhaag-accordion-expanded-transform);
   color: var(--denhaag-accordion-expanded-icon-color, hsl(207 80% 35%));
 }
 
-.denhaag-accordion__summary--expanded,
-.denhaag-accordion__panel:not(.denhaag-accordion__panel--disabled):hover .denhaag-accordion__title,
-.denhaag-accordion__panel:not(.denhaag-accordion__panel--disabled):hover .denhaag-icon {
+.denhaag-accordion__panel--expanded .denhaag-accordion__summary,
+.denhaag-accordion__panel:not(.denhaag-accordion__panel[aria-disabled="true"]):hover .denhaag-accordion__title,
+.denhaag-accordion__panel:not(.denhaag-accordion__panel[aria-disabled="true"]):hover .denhaag-icon {
   color: var(--denhaag-accordion-expanded-icon-color, hsl(207 80% 35%));
 }
 
@@ -100,7 +100,7 @@
   height: 0;
 }
 
-.denhaag-accordion__collapse--expanded {
+.denhaag-accordion__panel--expanded + .denhaag-accordion__collapse {
   visibility: visible;
   height: auto;
 }
