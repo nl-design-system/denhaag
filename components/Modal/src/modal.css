@@ -72,6 +72,7 @@
 
 .denhaag-modal__button svg {
   font-size: var(--denhaag-modal-icon-size, inherit);
+  pointer-events: none;
 }
 
 .denhaag-modal__button:hover,
@@ -110,7 +111,7 @@
   max-height: calc(100% - (var(--denhaag-modal-offset-y) * 2));
   max-width: var(--denhaag-modal-width);
   position: relative;
-  pointer-events: bounding-box;
+  pointer-events: visiblePainted;
   width: auto;
 }
 
