@@ -1,0 +1,63 @@
+/* Headings */
+.denhaag-heading-1,
+.denhaag-heading-2,
+.denhaag-heading-3,
+.denhaag-heading-4,
+.denhaag-heading-5 {
+  font-family: var(--denhaag-typography-sans-serif-font-family, inherit);
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.denhaag-heading-1 {
+  font-size: var(--denhaag-typography-scale-3xl-font-size, 3rem);
+  font-weight: 700;
+}
+
+.denhaag-heading-2 {
+  font-size: var(--denhaag-typography-scale-2xl-font-size, 2rem);
+  font-weight: 700;
+}
+
+.denhaag-heading-3 {
+  font-size: var(--denhaag-typography-scale-xl-font-size, 1.5rem);
+}
+
+.denhaag-heading-4 {
+  font-size: var(--denhaag-typography-scale-lg-font-size, 1.25rem);
+}
+
+.denhaag-heading-5 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+/* Paragraphs */
+.denhaag-paragraph {
+  font-family: var(--denhaag-typography-sans-serif-alternate-font-family, inherit);
+  font-weight: var(--denhaag-typography-font-weight-normal);
+  line-height: 1.5;
+  font-size: 1.125rem;
+}
+
+.denhaag-paragraph strong {
+  font-weight: 700;
+}
+
+.denhaag-paragraph--lead {
+  font-size: var(--denhaag-typography-scale-lg-font-size, 1.25rem);
+}
+
+.denhaag-paragraph--detail {
+  font-family: var(--denhaag-typography-sans-serif-alternate-font-family, inherit);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.denhaag-paragraph--detail-small {
+  font-size: var(--denhaag-typography-scale-s-font-size, 0.75rem);
+}
+
+.denhaag-paragraph--detail-extra-small {
+  font-size: var(--denhaag-typography-scale-xs-font-size, 0.625rem);
+}
