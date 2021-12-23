@@ -6,6 +6,8 @@
   font-size: var(--denhaag-datalist-font-size, inherit);
   font-weight: var(--denhaag-datalist-font-weight, inherit);
   line-height: var(--denhaag-datalist-line-height, inherit);
+  margin-block-end: 0;
+  margin-block-start: 0;
 }
 
 .denhaag-datalist-caption {
