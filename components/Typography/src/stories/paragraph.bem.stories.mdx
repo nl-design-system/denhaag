@@ -1,0 +1,111 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+import pkg from "../../package.json";
+import "../bem.css";
+
+<Meta
+  title="CSS Components/Data Display/Typography/Paragraph"
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "ALPHA",
+    },
+  }}
+/>
+
+<DesignTokenDocBlock categoryName="Paragraph" viewType="table" />
+
+## Stories
+
+### Default with bold
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Default">
+    <p class="denhaag-paragraph">
+      Atque qui praesentium provident. <strong>A aliquid quae earum neque accusamus voluptatem.</strong> Assumenda ut
+      iure in et repellendus quam omnis excepturi. Vero quod eos eveniet molestias eum in quis. Delectus qui ullam
+      necessitatibus illum. Beatae consequatur sint eveniet animi neque.
+    </p>
+    <p class="denhaag-paragraph">
+      Ut vitae repellat quo sit sint. Unde odit <strong>possimus</strong> a eos eos. At aut officia provident aliquid.
+      Qui quia dolore sequi nulla laborum ratione voluptates. Soluta aut molestiae quasi. Voluptas doloribus dolorem
+      sint ratione expedita.
+    </p>
+    <p class="denhaag-paragraph">
+      Aut eius <strong>exercitationem</strong> repellat voluptatum omnis numquam dolorum. Magnam sunt doloribus ut. Non
+      ipsa nihil molestias. In quis deleniti sunt placeat suscipit.
+    </p>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Lead Default with bold
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Lead Default">
+    <p class="denhaag-paragraph denhaag-paragraph--lead">
+      Atque qui praesentium provident. <strong>A aliquid quae earum neque accusamus voluptatem.</strong> Assumenda ut
+      iure in et repellendus quam omnis excepturi. Vero quod eos eveniet molestias eum in quis. Delectus qui ullam
+      necessitatibus illum. Beatae consequatur sint eveniet animi neque.
+    </p>
+    <p class="denhaag-paragraph denhaag-paragraph--lead">
+      Ut vitae repellat quo sit sint. Unde odit possimus a eos eos. At aut officia provident aliquid. Qui quia dolore
+      sequi nulla laborum ratione <strong>voluptates</strong>. Soluta aut molestiae quasi. Voluptas doloribus dolorem
+      sint ratione expedita.
+    </p>
+    <p class="denhaag-paragraph denhaag-paragraph--lead">
+      Aut eius <strong>exercitationem</strong> repellat voluptatum omnis numquam dolorum. Magnam sunt doloribus ut. Non
+      ipsa nihil molestias. In quis deleniti sunt placeat suscipit.
+    </p>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Detail Small
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Detail Small">
+    <p class="denhaag-paragraph denhaag-paragraph--detail denhaag-paragraph--detail-small">
+      Atque qui praesentium provident. A aliquid quae earum neque accusamus voluptatem. Assumenda ut iure in et
+      repellendus quam omnis excepturi. Vero quod eos eveniet molestias eum in quis. Delectus qui ullam necessitatibus
+      illum. Beatae consequatur sint eveniet animi neque.
+    </p>
+    <p class="denhaag-paragraph denhaag-paragraph--detail denhaag-paragraph--detail-small">
+      Ut vitae repellat quo sit sint. Unde odit possimus a eos eos. At aut officia provident aliquid. Qui quia dolore
+      sequi nulla laborum ratione voluptates. Soluta aut molestiae quasi. Voluptas doloribus dolorem sint ratione
+      expedita.
+    </p>
+    <p class="denhaag-paragraph denhaag-paragraph--detail denhaag-paragraph--detail-small">
+      Aut eius exercitationem repellat voluptatum omnis numquam dolorum. Magnam sunt doloribus ut. Non ipsa nihil
+      molestias. In quis deleniti sunt placeat suscipit.
+    </p>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Detail Extra Small
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Detail Extra Small">
+    <p class="denhaag-paragraph denhaag-paragraph--detail denhaag-paragraph--detail-extra-small">
+      Atque qui praesentium provident. A aliquid quae earum neque accusamus voluptatem. Assumenda ut iure in et
+      repellendus quam omnis excepturi. Vero quod eos eveniet molestias eum in quis. Delectus qui ullam necessitatibus
+      illum. Beatae consequatur sint eveniet animi neque.
+    </p>
+    <p class="denhaag-paragraph denhaag-paragraph--detail denhaag-paragraph--detail-extra-small">
+      Ut vitae repellat quo sit sint. Unde odit possimus a eos eos. At aut officia provident aliquid. Qui quia dolore
+      sequi nulla laborum ratione voluptates. Soluta aut molestiae quasi. Voluptas doloribus dolorem sint ratione
+      expedita.
+    </p>
+    <p class="denhaag-paragraph denhaag-paragraph--detail denhaag-paragraph--detail-extra-small">
+      Aut eius exercitationem repellat voluptatum omnis numquam dolorum. Magnam sunt doloribus ut. Non ipsa nihil
+      molestias. In quis deleniti sunt placeat suscipit.
+    </p>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>

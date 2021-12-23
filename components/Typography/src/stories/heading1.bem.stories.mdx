@@ -1,0 +1,29 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+import pkg from "../../package.json";
+import "../bem.css";
+
+<Meta
+  title="CSS Components/Data Display/Typography/Heading 1"
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "ALPHA",
+    },
+  }}
+/>
+
+<DesignTokenDocBlock categoryName="Heading1" viewType="table" />
+
+## Stories
+
+### Default
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Default">
+    <h1 class="denhaag-heading-1">This is a bit of text inside a Header 1 component.</h1>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>

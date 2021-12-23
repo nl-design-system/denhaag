@@ -29,6 +29,7 @@ import '../../../components/Timeline/src/styles/step-content.css';
 import '../../../components/Timeline/src/styles/step-icon.css';
 import '../../../components/Timeline/src/styles/step-label.css';
 import '../../../components/Timeline/src/styles/timeline.css';
+import '../../../components/Typography/src/bem.css';
 import '../../../components/Typography/src/heading.css';
 import '../../../components/Typography/src/paragraph.css';
 
