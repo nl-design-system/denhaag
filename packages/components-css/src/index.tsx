@@ -1,4 +1,5 @@
 import '../../../components/Alert/src/alert.css';
+import '../../../components/Accordion/src/index.css';
 import '../../../components/BadgeCounter/src/badge-counter.css';
 import '../../../components/Breadcrumb/src/breadcrumb.css';
 import '../../../components/Button/src/index.css';

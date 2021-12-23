@@ -1,0 +1,343 @@
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+import "../index";
+
+import pkg from "../../package.json";
+import readme from "../../README.md";
+
+<Meta
+  title="CSS Components/Surfaces/Accordion"
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: {
+        type: "dynamic",
+      },
+    },
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Design Tokens
+
+<DesignTokenDocBlock categoryName="Accordion" viewType="table" />
+
+## Stories
+
+### Default
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Default">
+    <div>
+      <div class="story--components-surfaces-accordion--default">
+        <div class="denhaag-theme">
+          <div class="denhaag-accordion">
+            <div class="denhaag-accordion-container">
+              <div
+                class="denhaag-accordion__panel"
+                tabindex="0"
+                role="button"
+                aria-disabled="false"
+                aria-expanded="false"
+              >
+                <div class="denhaag-accordion__summary">
+                  <p class="denhaag-accordion__title">Accordion</p>
+                </div>
+                <div class="denhaag-accordion__icon" aria-disabled="false" aria-hidden="true">
+                  <span>
+                    <svg
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="denhaag-icon"
+                      focusable="false"
+                      aria-hidden="true"
+                      shape-rendering="auto"
+                    >
+                      <path
+                        d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span></span>
+                </div>
+              </div>
+              {/* <div class="denhaag-accordion__collapse denhaag-accordion__collapse--hidden"> */}
+              <div class="denhaag-accordion__collapse">
+                <div>
+                  <div>
+                    <div role="region">
+                      <div class="denhaag-accordion__details">
+                        <p class="denhaag-accordion__paragraph">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit
+                          amet blandit leo lobortis eget.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="denhaag-accordion-container">
+              <div
+                class="denhaag-accordion__panel"
+                tabindex="0"
+                role="button"
+                aria-disabled="false"
+                aria-expanded="false"
+              >
+                <div class="denhaag-accordion__summary">
+                  <p class="denhaag-accordion__title">Accordion</p>
+                </div>
+                <div class="denhaag-accordion__icon" aria-disabled="false" aria-hidden="true">
+                  <span>
+                    <svg
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="denhaag-icon"
+                      focusable="false"
+                      aria-hidden="true"
+                      shape-rendering="auto"
+                    >
+                      <path
+                        d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span></span>
+                </div>
+              </div>
+              {/* <div class="denhaag-accordion__collapse denhaag-accordion__collapse--hidden"> */}
+              <div class="denhaag-accordion__collapse">
+                <div>
+                  <div>
+                    <div role="region">
+                      <div class="denhaag-accordion__details">
+                        <p class="denhaag-accordion__paragraph">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit
+                          amet blandit leo lobortis eget.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Default Expanded
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Default Expanded">
+    <div>
+      <div class="story--components-surfaces-accordion--default-expanded">
+        <div class="denhaag-theme">
+          <div class="denhaag-accordion">
+            <div class="denhaag-accordion-container">
+              <div
+                class="denhaag-accordion__panel denhaag-accordion__panel--expanded"
+                tabindex="0"
+                role="button"
+                aria-disabled="false"
+                aria-expanded="true"
+              >
+                <div class="denhaag-accordion__summary denhaag-accordion__summary--expanded">
+                  <p class="denhaag-accordion__title">Accordion</p>
+                </div>
+                <div
+                  class="denhaag-accordion__icon denhaag-accordion__icon--expanded"
+                  aria-disabled="false"
+                  aria-hidden="true"
+                >
+                  <span>
+                    <svg
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="denhaag-icon"
+                      focusable="false"
+                      aria-hidden="true"
+                      shape-rendering="auto"
+                    >
+                      <path
+                        d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="denhaag-accordion__collapse">
+                <div>
+                  <div>
+                    <div role="region">
+                      <div class="denhaag-accordion__details">
+                        <p class="denhaag-accordion__paragraph">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit
+                          amet blandit leo lobortis eget.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Disabled
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Disabled">
+    <div>
+      <div class="story--components-surfaces-accordion--disabled">
+        <div class="denhaag-theme">
+          <div class="denhaag-accordion">
+            <div class="denhaag-accordion-container denhaag-accordion-container--disabled">
+              <div
+                class="denhaag-accordion__panel denhaag-accordion__panel"
+                tabindex="-1"
+                role="button"
+                aria-disabled="true"
+                aria-expanded="false"
+              >
+                <div class="denhaag-accordion__summary" aria-disabled="true" aria-hidden="true">
+                  <p class="denhaag-accordion__title">Accordion</p>
+                </div>
+                <div aria-disabled="false" aria-hidden="true">
+                  <span>
+                    <svg
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="denhaag-icon"
+                      focusable="false"
+                      aria-hidden="true"
+                      shape-rendering="auto"
+                    >
+                      <path
+                        d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="denhaag-accordion__collapse denhaag-accordion__collapse--hidden">
+                <div>
+                  <div>
+                    <div role="region">
+                      <div class="denhaag-accordion__details">
+                        <p class="denhaag-accordion__paragraph">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit
+                          amet blandit leo lobortis eget.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Focus
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Focus">
+    <div>
+      <div class="story--components-surfaces-accordion--focus">
+        <div class="denhaag-theme">
+          <div class="denhaag-accordion">
+            <div class="denhaag-accordion-container">
+              <div
+                class="denhaag-accordion__panel denhaag-accordion__panel--focus"
+                tabindex="0"
+                role="button"
+                aria-disabled="false"
+                aria-expanded="false"
+              >
+                <div class="denhaag-accordion__summary">
+                  <p class="denhaag-accordion__title">Accordion</p>
+                </div>
+                <div aria-disabled="false" aria-hidden="true">
+                  <span>
+                    <svg
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="denhaag-icon"
+                      focusable="false"
+                      aria-hidden="true"
+                      shape-rendering="auto"
+                    >
+                      <path
+                        d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="denhaag-accordion__collapse denhaag-accordion__collapse--hidden">
+                <div>
+                  <div>
+                    <div role="region">
+                      <div class="denhaag-accordion__details">
+                        <p class="denhaag-accordion__paragraph">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit
+                          amet blandit leo lobortis eget.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
