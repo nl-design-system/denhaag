@@ -2,16 +2,16 @@
   "utrecht": {
     "badge": {
       "border-radius": {
-        "value": "{denhaag.border-radius.value}"
+        "value": "{denhaag.border-radius}"
       },
       "font-family": {
-        "value": "{denhaag.typography.sans-serif.font-family.value}"
+        "value": "{denhaag.typography.sans-serif.font-family}"
       },
       "font-weight": {
         "value": "700"
       },
       "font-size": {
-        "value": "{denhaag.typography.scale.s.font-size.value}"
+        "value": "{denhaag.typography.scale.s.font-size}"
       },
       "padding-block": {
         "value": "6px"

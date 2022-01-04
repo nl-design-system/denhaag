@@ -2,16 +2,16 @@
   "utrecht": {
     "link": {
       "color": {
-        "value": "{denhaag.color.blue.3.value}"
+        "value": "{denhaag.color.blue.3}"
       },
       "text-decoration": {
         "value": "underline"
       },
       "focus": {
-        "color": { "value": "{denhaag.color.blue.4.value}" }
+        "color": { "value": "{denhaag.color.blue.4}" }
       },
       "hover": {
-        "color": { "value": "{denhaag.color.blue.4.value}" }
+        "color": { "value": "{denhaag.color.blue.4}" }
       }
     }
   }

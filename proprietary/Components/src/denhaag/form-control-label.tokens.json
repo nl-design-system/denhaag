@@ -3,15 +3,15 @@
     "form-control": {
       "label": {
         "font": {
-          "family": { "value": "{utrecht.paragraph.font-family.value}" },
-          "size": { "value": "{utrecht.paragraph.font-size.value}" },
-          "weight": { "value": "{utrecht.paragraph.font-weight.value}" }
+          "family": { "value": "{utrecht.paragraph.font-family}" },
+          "size": { "value": "{utrecht.paragraph.font-size}" },
+          "weight": { "value": "{utrecht.paragraph.font-weight}" }
         },
         "line": {
-          "height": { "value": "{utrecht.paragraph.line-height.value}" }
+          "height": { "value": "{utrecht.paragraph.line-height}" }
         },
-        "color": { "value": "{utrecht.paragraph.color.value}" },
-        "hover": { "color": { "value": "{denhaag.checkbox.hover.color.value}" } },
+        "color": { "value": "{utrecht.paragraph.color}" },
+        "hover": { "color": { "value": "{denhaag.checkbox.hover.color}" } },
         "margin": {
           "block": { "start": { "value": "8px" }, "end": { "value": "8px" } },
           "inline": { "start": { "value": "8px" }, "end": { "value": "8px" } }
