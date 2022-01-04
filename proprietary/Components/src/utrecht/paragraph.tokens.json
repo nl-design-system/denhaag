@@ -1,15 +1,15 @@
 {
   "utrecht": {
     "paragraph": {
-      "color": { "value": "{denhaag.color.grey.4.value}" },
-      "font-family": { "value": "{denhaag.typography.sans-serif.font-family.value}" },
-      "font-size": { "value": "{denhaag.typography.scale.base.font-size.value}" },
+      "color": { "value": "{denhaag.color.grey.4}" },
+      "font-family": { "value": "{denhaag.typography.sans-serif.font-family}" },
+      "font-size": { "value": "{denhaag.typography.scale.base.font-size}" },
       "font-weight": { "value": "400" },
       "line-height": { "value": "normal" },
       "margin-block-start": { "value": "0" },
       "margin-block-end": { "value": "0" },
       "lead": {
-        "font-size": { "value": "{denhaag.typography.scale.lg.font-size.value} " },
+        "font-size": { "value": "{denhaag.typography.scale.lg.font-size} " },
         "font-weight": {},
         "line-height": { "value": "26px" }
       }

@@ -3,26 +3,26 @@
     "feedback": {
       "danger": {
         "fill": {
-          "background-color": { "value": "{denhaag.color.red.1.value}" },
-          "color": { "value": "{denhaag.color.red.4.value}" }
+          "background-color": { "value": "{denhaag.color.red.1}" },
+          "color": { "value": "{denhaag.color.red.4}" }
         }
       },
       "warning": {
         "fill": {
-          "background-color": { "value": "{denhaag.color.orange.1.value}" },
-          "color": { "value": "{denhaag.color.orange.4.value}" }
+          "background-color": { "value": "{denhaag.color.orange.1}" },
+          "color": { "value": "{denhaag.color.orange.4}" }
         }
       },
       "safe": {
         "fill": {
-          "background-color": { "value": "{denhaag.color.green.1.value}" },
-          "color": { "value": "{denhaag.color.green.4.value}" }
+          "background-color": { "value": "{denhaag.color.green.1}" },
+          "color": { "value": "{denhaag.color.green.4}" }
         }
       },
       "neutral": {
         "fill": {
-          "background-color": { "value": "{denhaag.color.blue.1.value}" },
-          "color": { "value": "{denhaag.color.blue.4.value}" }
+          "background-color": { "value": "{denhaag.color.blue.1}" },
+          "color": { "value": "{denhaag.color.blue.4}" }
         }
       }
     }
