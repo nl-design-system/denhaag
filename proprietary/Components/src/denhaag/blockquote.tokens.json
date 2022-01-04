@@ -1,0 +1,11 @@
+{
+  "denhaag": {
+    "blockquote": {
+      "border-color": { "value": "#d5e7d4" },
+      "border-width": { "value": "4px" },
+      "border-style": { "value": "solid" },
+      "paragraph-color": { "value": "#1d6b34" },
+      "attribution-color": { "value": "#4b4b4b" }
+    }
+  }
+}
