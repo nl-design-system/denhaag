@@ -2,8 +2,8 @@
   "denhaag": {
     "checkbox": {
       "normal": {
-        "unchecked": { "color": { "value": "{denhaag.color.grey.4.value}" } },
-        "checked": { "color": { "value": "{denhaag.color.blue.3.value}" } }
+        "unchecked": { "color": { "value": "{denhaag.color.grey.4}" } },
+        "checked": { "color": { "value": "{denhaag.color.blue.3}" } }
       },
       "margin": {
         "inline": {
@@ -16,15 +16,15 @@
         }
       },
       "hover": {
-        "color": { "value": "{denhaag.color.blue.3.value}" }
+        "color": { "value": "{denhaag.color.blue.3}" }
       },
       "disabled": {
-        "color": { "value": "{denhaag.color.grey.2.value}" }
+        "color": { "value": "{denhaag.color.grey.2}" }
       },
       "error": {
-        "color": { "value": "{denhaag.color.red.3.value}" },
+        "color": { "value": "{denhaag.color.red.3}" },
         "hover": {
-          "color": { "value": "{denhaag.color.red.4.value}" }
+          "color": { "value": "{denhaag.color.red.4}" }
         }
       }
     }
