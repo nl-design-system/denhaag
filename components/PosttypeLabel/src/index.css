@@ -1,0 +1,9 @@
+.denhaag-posttype-label {
+  color: var(--denhaag-color-blue-3-value, #1261a3);
+  font-family: var(--denhaag-typography-sans-serif-font-family, inherit);
+  font-weight: 700;
+  font-size: var(--denhaag-typography-scale-s, 0.75rem);
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
