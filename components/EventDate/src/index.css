@@ -1,0 +1,12 @@
+.denhaag-event-date {
+  display: inline-flex;
+}
+
+.denhaag-event-date__icon {
+  color: var(--denhaag-color-blue-3-value, #1261a3);
+  margin-inline-end: 0.5rem;
+}
+
+.denhaag-event-date__text {
+  line-height: 1.75;
+}
