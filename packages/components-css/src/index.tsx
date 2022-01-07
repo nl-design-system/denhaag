@@ -7,6 +7,7 @@ import '../../../components/Card/src/CardActions/card-actions.css';
 import '../../../components/Checkbox/src/checkbox.css';
 import '../../../components/Divider/src/divider.css';
 import '../../../components/DotIndicator/src/dot-indicator.css';
+import '../../../components/EventDate/src/index.css';
 import '../../../components/FormControlLabel/src/form-control-label.css';
 import '../../../components/FormGroup/src/form-group.css';
 import '../../../components/IconButton/src/icon-button.css';
