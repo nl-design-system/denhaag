@@ -1,0 +1,24 @@
+.denhaag-publication-date {
+  color: var(--denhaag-publication-date-color, #4b4b4b);
+  font-family: var(--denhaag-publication-date-font-family, inherit);
+  font-weight: var(--denhaag-publication-date-font-weight);
+  font-size: var(--denhaag-publication-date-font-size);
+}
+
+.denhaag-publication-date > span {
+  display: block;
+  line-height: var(--denhaag-publication-date-line-height);
+  white-space: nowrap;
+}
+
+@media (min-width: 480px) {
+  .denhaag-publication-date > span {
+    display: inline;
+  }
+
+  .denhaag-publication-date__published {
+    border-inline-end: var(--denhaag-publication-date-border);
+    margin-inline-end: var(--denhaag-publication-date-margin);
+    padding-inline-end: var(--denhaag-publication-date-padding);
+  }
+}
