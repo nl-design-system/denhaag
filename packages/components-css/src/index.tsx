@@ -5,6 +5,7 @@ import '../../../components/Button/src/index.css';
 import '../../../components/Card/src/Card/card.css';
 import '../../../components/Card/src/CardActions/card-actions.css';
 import '../../../components/Checkbox/src/checkbox.css';
+import '../../../components/DescriptionList/src/datalist.css';
 import '../../../components/Divider/src/divider.css';
 import '../../../components/DotIndicator/src/dot-indicator.css';
 import '../../../components/FormControlLabel/src/form-control-label.css';
