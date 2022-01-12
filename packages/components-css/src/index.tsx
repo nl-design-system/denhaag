@@ -21,6 +21,7 @@ import '../../../components/Menu/src/menu.css';
 import '../../../components/Menu/src/menu-button.css';
 import '../../../components/Pagination/src/pagination.css';
 import '../../../components/Link/src/link.css';
+import '../../../components/ShareButton/src/index.css';
 import '../../../components/Tab/src/styles/tab.css';
 import '../../../components/Tab/src/styles/tab-panel.css';
 import '../../../components/Tab/src/styles/tabs.css';
