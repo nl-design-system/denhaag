@@ -21,9 +21,7 @@
     "directory": "components/Note"
   },
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
-  "dependencies": {
-    "@gemeente-denhaag/baseprops": "0.2.3-alpha.71"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@gemeente-denhaag/icons": "0.2.3-alpha.71"
   },
