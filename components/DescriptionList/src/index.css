@@ -1,0 +1,61 @@
+.denhaag-descriptionlist {
+  color: var(--denhaag-descriptionlist-color, inherit);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  font-family: var(--denhaag-descriptionlist-font-family, inherit);
+  font-size: var(--denhaag-descriptionlist-font-size, inherit);
+  font-weight: var(--denhaag-descriptionlist-font-weight, inherit);
+  line-height: var(--denhaag-descriptionlist-line-height, inherit);
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+.denhaag-descriptionlist-caption {
+  color: var(--denhaag-descriptionlist-caption-color, inherit);
+  font-family: var(--denhaag-descriptionlist-caption-font-family, var(--denhaag-descriptionlist-font-family, inherit));
+  font-size: var(
+    --denhaag-descriptionlist-caption-font-size,
+    calc(var(--denhaag-descriptionlist-font-size, 1em) * 1.33)
+  );
+  font-weight: var(--denhaag-descriptionlist-caption-font-weight, bold);
+  line-height: var(--denhaag-descriptionlist-caption-line-height, var(--denhaag-descriptionlist-line-height, inherit));
+  margin-block-start: 0;
+  margin-block-end: var(--denhaag-descriptionlist-caption-margin-block, 1em);
+}
+
+.denhaag-descriptionlist__detail {
+  box-shadow: inset 0 -1px 0 var(--denhaag-descriptionlist-border-color, lightgrey);
+  margin-inline-start: 0;
+  padding-block-end: var(--denhaag-descriptionlist-detail-padding-block-end, var(--denhaag-descriptionlist-padding));
+  padding-block-start: var(
+    --denhaag-descriptionlist-detail-padding-block-start,
+    var(--denhaag-descriptionlist-padding)
+  );
+  padding-inline-end: var(--denhaag-descriptionlist-padding-inline-end, var(--denhaag-descriptionlist-padding));
+  padding-inline-start: var(--denhaag-descriptionlist-padding-inline-end, var(--denhaag-descriptionlist-padding));
+}
+
+.denhaag-descriptionlist__title {
+  font-weight: var(--denhaag-descriptionlist-title-font-weight, bold);
+  padding-block-end: var(--denhaag-descriptionlist-title-padding-block-end, var(--denhaag-descriptionlist-padding));
+  padding-block-start: var(--denhaag-descriptionlist-title-padding-block-start, var(--denhaag-descriptionlist-padding));
+  padding-inline-end: var(--denhaag-descriptionlist-padding-inline-end, var(--denhaag-descriptionlist-padding));
+  padding-inline-start: var(--denhaag-descriptionlist-padding-inline-start, var(--denhaag-descriptionlist-padding));
+}
+
+@media (min-width: 640px) {
+  .denhaag-descriptionlist {
+    --denhaag-descriptionlist-detail-padding-block-end: var(--denhaag-descriptionlist-lg-detail-padding-block-end);
+    --denhaag-descriptionlist-detail-padding-block-start: var(--denhaag-descriptionlist-lg-detail-padding-block-start);
+    --denhaag-descriptionlist-title-padding-block-end: var(--denhaag-descriptionlist-lg-title-padding-block-end);
+    --denhaag-descriptionlist-title-padding-block-start: var(--denhaag-descriptionlist-lg-title-padding-block-start);
+    --denhaag-descriptionlist-padding-inline-end: var(--denhaag-descriptionlist-lg-padding-inline-end);
+    --denhaag-descriptionlist-padding-inline-start: var(--denhaag-descriptionlist-lg-padding-inline-start);
+
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .denhaag-descriptionlist__title {
+    box-shadow: inset 0 -1px 0 var(--denhaag-descriptionlist-border-color, lightgrey);
+  }
+}

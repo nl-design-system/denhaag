@@ -1,0 +1,58 @@
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+import "../index.css";
+import pkg from "../../package.json";
+import readme from "../../README.md";
+
+<Meta
+  title="CSS Components/Data Display/Description List"
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Design Tokens
+
+<DesignTokenDocBlock categoryName="Description List" viewType="table" />
+
+## Stories
+
+### Default
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Default">
+    <dl class="denhaag-descriptionlist">
+      <dt class="denhaag-descriptionlist__title">Beast of Bodmin</dt>
+      <dd class="denhaag-descriptionlist__detail">A large feline inhabiting Bodmin Moor.</dd>
+      <dt class="denhaag-descriptionlist__title">Morgawr</dt>
+      <dd class="denhaag-descriptionlist__detail">A sea serpent.</dd>
+      <dt class="denhaag-descriptionlist__title">Owlman</dt>
+      <dd class="denhaag-descriptionlist__detail">A giant owl-like creature.</dd>
+    </dl>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### With Caption
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="With Caption">
+    <h3 class="denhaag-descriptionlist-caption">Caption</h3>
+    <dl class="denhaag-descriptionlist">
+      <dt class="denhaag-descriptionlist__title">Beast of Bodmin</dt>
+      <dd class="denhaag-descriptionlist__detail">A large feline inhabiting Bodmin Moor.</dd>
+      <dt class="denhaag-descriptionlist__title">Morgawr</dt>
+      <dd class="denhaag-descriptionlist__detail">A sea serpent.</dd>
+      <dt class="denhaag-descriptionlist__title">Owlman</dt>
+      <dd class="denhaag-descriptionlist__detail">A giant owl-like creature.</dd>
+    </dl>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
