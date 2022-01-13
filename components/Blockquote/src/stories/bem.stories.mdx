@@ -1,0 +1,59 @@
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+import pkg from "../../package.json";
+import readme from "../../README.md";
+import "../index.css";
+
+<Meta
+  title="CSS Components/Data Display/Blockquote"
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Design Tokens
+
+<DesignTokenDocBlock categoryName="Blockquote" viewType="table" />
+
+## Stories
+
+### Default
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Default">
+    <figure class="denhaag-blockquote">
+      <blockquote class="denhaag-blockquote__content" cite="https://www.denhaag.nl/nl.htm">
+        <p>
+          Molestiae earum esse ut hic ea cupiditate tenetur quis. Voluptates atque incidunt aliquam enim. Illum sapiente
+          dolorem recusandae sit distinctio.
+        </p>
+      </blockquote>
+    </figure>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### With attribution
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="With attribution">
+    <figure class="denhaag-blockquote">
+      <blockquote class="denhaag-blockquote__content" cite="https://www.denhaag.nl/nl.htm">
+        <p>
+          Molestiae earum esse ut hic ea cupiditate tenetur quis. Voluptates atque incidunt aliquam enim. Illum sapiente
+          dolorem recusandae sit distinctio.
+        </p>
+      </blockquote>
+      <figcaption class="denhaag-blockquote__attribution">First Name Surname</figcaption>
+    </figure>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
