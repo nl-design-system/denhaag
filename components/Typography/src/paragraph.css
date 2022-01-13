@@ -20,3 +20,17 @@
   margin-block-start: var(--utrecht-paragraph-margin-block-start);
   margin-block-end: var(--utrecht-paragraph-margin-block-end);
 }
+
+.denhaag-paragraph--detail {
+  font-family: var(--denhaag-typography-sans-serif-alternate-font-family, inherit);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.denhaag-paragraph--detail-small {
+  font-size: var(--denhaag-typography-scale-s-font-size, 0.75rem);
+}
+
+.denhaag-paragraph--detail-extra-small {
+  font-size: var(--denhaag-typography-scale-xs-font-size, 0.625rem);
+}
