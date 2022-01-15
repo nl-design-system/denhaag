@@ -2569,6 +2569,19 @@
     react "^16.8.3"
     util-deprecate "^1.0.2"
 
+"@gemeente-denhaag/baseprops@0.2.3-alpha.73":
+  version "0.2.3-alpha.73"
+  resolved "https://registry.yarnpkg.com/@gemeente-denhaag/baseprops/-/baseprops-0.2.3-alpha.73.tgz#e6e3b9f7ff7ecd7518dfc87951f5871a43797308"
+  integrity sha512-e1eX4meLyeAhteCMFwMHU4YZPJcBLyEUHRCqFaLXqwu47jcYv8wtiDAbUfiLKaUj7Yy/hgCyMteWS1moKjuZBQ==
+
+"@gemeente-denhaag/icons@0.2.3-alpha.73":
+  version "0.2.3-alpha.73"
+  resolved "https://registry.yarnpkg.com/@gemeente-denhaag/icons/-/icons-0.2.3-alpha.73.tgz#534d323b80ca3ee368093f86929d31b26c9923da"
+  integrity sha512-u7ds3OqmKGuozsNaclY8Let5uC5cZZbL7a8qT6DXoHFS74J82wMJfDSO092McriU0dh6fJRusR3s0+ZutSJeNA==
+  dependencies:
+    "@gemeente-denhaag/baseprops" "0.2.3-alpha.73"
+    "@material-ui/core" "4.12.3"
+
 "@hapi/address@2.x.x":
   version "2.1.4"
   resolved "https://registry.npmjs.org/@hapi/address/-/address-2.1.4.tgz"
@@ -11449,9 +11462,9 @@ flush-write-stream@^1.0.0:
     readable-stream "^2.3.6"
 
 follow-redirects@^1.0.0:
-  version "1.14.1"
-  resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.14.1.tgz"
-  integrity sha512-HWqDgT7ZEkqRzBvc2s64vSZ/hfOceEol3ac/7tKwzuvEyWx3/4UegXh5oBOIotkGsObyk3xznnSRVADBgWSQVg==
+  version "1.14.7"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.7.tgz#2004c02eb9436eee9a21446a6477debf17e81685"
+  integrity sha512-+hbxoLbFMbRKDwohX8GkTataGqO6Jb7jGwpAlwgy2bIz25XtRm7KEzJM76R1WiNT5SwZkX4Y75SwBolkpmE7iQ==
 
 for-in@^1.0.2:
   version "1.0.2"
