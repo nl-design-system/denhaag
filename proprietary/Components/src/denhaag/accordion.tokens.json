@@ -1,8 +1,8 @@
 {
   "denhaag": {
     "accordion": {
-      "border": { "value": "1px solid {denhaag.color.grey.2.value}" },
-      "font-family": { "value": "{denhaag.typography.sans-serif.font-family.value}" },
+      "border": { "value": "1px solid {denhaag.color.grey.2}" },
+      "font-family": { "value": "{denhaag.typography.sans-serif.font-family}" },
       "font-weight": { "value": "400" },
       "line-height": { "value": "24px" },
       "padding": { "value": "16px" },
@@ -12,10 +12,10 @@
         "transform": { "value": "rotate(180deg)" }
       },
       "disabled": {
-        "color": { "value": "{denhaag.color.grey.2.value}" }
+        "color": { "value": "{denhaag.color.grey.2}" }
       },
       "focus": {
-        "border": { "value": "2px dashed {denhaag.color.ocher.5.value}" }
+        "border": { "value": "2px dashed {denhaag.color.ocher.5}" }
       }
     }
   }
