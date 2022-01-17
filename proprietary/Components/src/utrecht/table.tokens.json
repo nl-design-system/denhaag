@@ -1,7 +1,7 @@
 {
   "utrecht": {
     "table": {
-      "border-color": { "value": "{denhaag.color.grey.2.value}" },
+      "border-color": { "value": "{denhaag.color.grey.2}" },
       "border-width": { "value": "2px" },
       "margin-block-end": {},
       "margin-block-start": {},
@@ -19,13 +19,13 @@
         "font-weight": {},
         "color": {},
         "text-transform": {},
-        "border-block-end-color": { "value": "{denhaag.color.grey.1.value}" },
+        "border-block-end-color": { "value": "{denhaag.color.grey.1}" },
         "border-block-end-width": { "value": "1px" }
       },
       "heading": {
         "font-size": { "value": "18px" },
         "font-weight": { "value": "700" },
-        "color": { "value": "{denhaag.color.green.3.value}" },
+        "color": { "value": "{denhaag.color.green.3}" },
         "text-transform": {}
       },
       "cell": {
@@ -36,7 +36,7 @@
         "padding-inline-start": { "value": "15px" }
       },
       "row": {
-        "border-block-end-color": { "value": "{denhaag.color.grey.1.value}" },
+        "border-block-end-color": { "value": "{denhaag.color.grey.1}" },
         "border-block-end-width": { "value": "1px" },
         "padding-inline-end": { "value": "24px" },
         "padding-inline-start": { "value": "24px" },

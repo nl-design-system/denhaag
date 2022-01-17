@@ -5,7 +5,7 @@
         "value": "hsl(48deg 94% 48%)"
       },
       "color": {
-        "value": "{denhaag.color.black.value}"
+        "value": "{denhaag.color.black}"
       },
       "padding-block-end": {
         "value": "40px"
