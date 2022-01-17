@@ -2,47 +2,47 @@
   "denhaag": {
     "breadcrumb": {
       "color": {
-        "value": "{denhaag.color.grey.4.value}"
+        "value": "{denhaag.color.grey.4}"
       },
       "spacing": {
-        "value": "{denhaag.space.inline.xs.value}"
+        "value": "{denhaag.space.inline.xs}"
       },
       "current": {
         "color": {
-          "value": "{denhaag.color.grey.4.value}"
+          "value": "{denhaag.color.grey.4}"
         }
       },
       "dots": {
         "background-color": {
-          "value": "{denhaag.color.grey.1.value}"
+          "value": "{denhaag.color.grey.1}"
         },
         "border-radius": {
-          "value": "{denhaag.border-radius.value}"
+          "value": "{denhaag.border-radius}"
         },
         "color": {
-          "value": "{denhaag.color.grey.3.value}"
+          "value": "{denhaag.color.grey.3}"
         },
         "hover": {
           "background-color": {
-            "value": "{denhaag.color.grey.2.value}"
+            "value": "{denhaag.color.grey.2}"
           }
         }
       },
       "link": {
         "color": {
-          "value": "{denhaag.color.blue.3.value}"
+          "value": "{denhaag.color.blue.3}"
         },
         "focus": {
           "color": {
-            "value": "{denhaag.color.blue.4.value}"
+            "value": "{denhaag.color.blue.4}"
           },
           "outline": {
-            "value": "{denhaag.focus.border.value}"
+            "value": "{denhaag.focus.border}"
           }
         },
         "hover": {
           "color": {
-            "value": "{denhaag.color.blue.4.value}"
+            "value": "{denhaag.color.blue.4}"
           }
         }
       }

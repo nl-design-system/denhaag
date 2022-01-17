@@ -3,7 +3,7 @@
     "heading-3": {
       "color": {},
       "font-family": {},
-      "font-size": { "value": "{denhaag.typography.scale.xl.font-size.value}" },
+      "font-size": { "value": "{denhaag.typography.scale.xl.font-size}" },
       "font-weight": {},
       "line-height": {},
       "margin-block-end": {},

@@ -3,7 +3,7 @@
     "document": {
       "background-color": {},
       "color": {},
-      "font-family": { "value": "{denhaag.typography.sans-serif.font-family.value}" },
+      "font-family": { "value": "{denhaag.typography.sans-serif.font-family}" },
       "font-size": { "value": "normal" },
       "line-height": { "value": "normal" }
     }

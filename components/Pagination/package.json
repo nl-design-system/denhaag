@@ -1,9 +1,9 @@
 {
-  "name": "@gemeente-denhaag/stylesprovider",
-  "description": "The StylesProvider component to properly apply our CSS to MUI components",
+  "name": "@gemeente-denhaag/pagination",
+  "description": "A Pagination navigation component",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
-  "version": "0.1.1-alpha.79",
+  "version": "0.1.1-alpha.6",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "exports": "./dist/index.js",
@@ -18,11 +18,11 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/nl-design-system/denhaag.git",
-    "directory": "components/StylesProvider"
+    "directory": "components/Pagination"
   },
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
-  "dependencies": {
-    "@material-ui/core": "4.12.3"
+  "devDependencies": {
+    "@gemeente-denhaag/icons": "0.2.3-alpha.73"
   },
   "peerDependencies": {
     "react": "^17.0.0"

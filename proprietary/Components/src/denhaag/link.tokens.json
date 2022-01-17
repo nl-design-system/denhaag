@@ -1,17 +1,17 @@
 {
   "denhaag": {
     "link": {
-      "color": { "value": "{denhaag.color.blue.3.value}" },
+      "color": { "value": "{denhaag.color.blue.3}" },
       "padding": { "value": "8px" },
       "focus": {
-        "color": { "value": "{denhaag.color.blue.4.value}" },
-        "outline": { "value": "{denhaag.focus.border.value}" }
+        "color": { "value": "{denhaag.color.blue.4}" },
+        "outline": { "value": "{denhaag.focus.border}" }
       },
       "hover": {
-        "color": { "value": "{denhaag.color.blue.4.value}" }
+        "color": { "value": "{denhaag.color.blue.4}" }
       },
       "disabled": {
-        "color": { "value": "{denhaag.color.grey.2.value}" }
+        "color": { "value": "{denhaag.color.grey.2}" }
       },
       "icon": {
         "margin-start": { "value": "8px" },
