@@ -19,6 +19,7 @@ import '../../../components/List/src/list-item-text.css';
 import '../../../components/List/src/list-subheader.css';
 import '../../../components/Menu/src/menu.css';
 import '../../../components/Menu/src/menu-button.css';
+import '../../../components/Modal/src/modal.css';
 import '../../../components/Pagination/src/pagination.css';
 import '../../../components/Link/src/link.css';
 import '../../../components/Tab/src/styles/tab.css';
