@@ -1,6 +1,6 @@
 import React from 'react';
 import { Divider as MaterialDivider } from '@material-ui/core';
-import './divider.css';
+import './index.css';
 import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface DividerProps extends Omit<BaseProps, 'tabIndex' | 'classes' | 'children'> {
