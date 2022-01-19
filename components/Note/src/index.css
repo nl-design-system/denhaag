@@ -12,18 +12,19 @@
   padding-block-end: var(--denhaag-note-padding-block, calc(var(--denhaag-note-icon-spacing) / 2));
 }
 
+.denhaag-note__icon,
+.denhaag-note svg {
+  aspect-ratio: 1 / 1;
+  flex: 0 0 auto;
+  height: auto;
+  color: var(--denhaag-note-icon-color, #4b4b4b);
+  width: var(--denhaag-note-icon-size, calc(var(--denhaag-note-icon-spacing) * 3));
+}
+
 .denhaag-note--info {
   --denhaag-note-icon-color: var(--denhaag-note-icon-info-color, #ffffff);
 }
 
 .denhaag-note--warning {
   --denhaag-note-icon-color: var(--denhaag-note-icon-warning-color, #ffffff);
-}
-
-.denhaag-note__icon,
-.denhaag-note svg {
-  aspect-ratio: 1 / 1;
-  flex: 0 0 auto;
-  height: auto;
-  width: var(--denhaag-note-icon-size, calc(var(--denhaag-note-icon-spacing) * 3));
 }
