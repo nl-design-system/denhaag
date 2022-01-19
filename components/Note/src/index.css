@@ -12,6 +12,14 @@
   padding-block-end: var(--denhaag-note-padding-block, calc(var(--denhaag-note-icon-spacing) / 2));
 }
 
+.denhaag-note--info {
+  --denhaag-note-icon-color: var(--denhaag-note-icon-info-color, #ffffff);
+}
+
+.denhaag-note--warning {
+  --denhaag-note-icon-color: var(--denhaag-note-icon-warning-color, #ffffff);
+}
+
 .denhaag-note__icon,
 .denhaag-note svg {
   aspect-ratio: 1 / 1;
