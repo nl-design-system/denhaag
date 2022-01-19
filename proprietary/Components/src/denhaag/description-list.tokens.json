@@ -1,6 +1,6 @@
 {
   "denhaag": {
-    "descriptionlist": {
+    "description-list": {
       "border-color": {
         "value": "{denhaag.color.grey.2}"
       },
@@ -15,11 +15,11 @@
           "value": "1.125rem"
         },
         "weight": {
-          "value": 400
+          "value": "{denhaag.typography.weight.regular}"
         }
       },
       "line-height": {
-        "value": 1.5
+        "value": "1.5"
       },
       "padding": {
         "inline": {
@@ -43,11 +43,11 @@
             "value": "{denhaag.typography.scale.xl.font-size}"
           },
           "weight": {
-            "value": 700
+            "value": "{denhaag.typography.weight.bold}"
           }
         },
         "line-height": {
-          "value": 1.3
+          "value": "1.3"
         },
         "margin": {
           "block": {
@@ -69,7 +69,7 @@
       },
       "title": {
         "font-weight": {
-          "value": 700
+          "value": "{denhaag.typography.weight.bold}"
         },
         "padding": {
           "block": {
