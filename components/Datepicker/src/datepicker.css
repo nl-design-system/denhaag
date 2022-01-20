@@ -6,10 +6,7 @@
 .denhaag-datepicker::after {
   content: attr(data-placeholder);
   position: absolute;
-  inset-block-start: calc(
-    (var(--denhaag-datepicker-input-height) - var(--denhaag-datepicker-input-line-height)) / 2 -
-      var(--denhaag-datepicker-input-border-width)
-  );
+  inset-block-start: calc((var(--denhaag-datepicker-input-height) - var(--denhaag-datepicker-input-line-height)) / 2);
   inset-inline-start: var(--denhaag-datepicker-input-padding-inline);
   inset-inline-end: calc(
     var(--denhaag-datepicker-button-font-size) + var(--denhaag-datepicker-button-inset-inline-end) +
