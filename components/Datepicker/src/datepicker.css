@@ -23,13 +23,8 @@
 
 .denhaag-datepicker.denhaag-datepicker--has-value::after {
   content: "";
-  inset-inline-start: calc(
-    100% -
-      (
-        var(--denhaag-datepicker-button-font-size) + var(--denhaag-datepicker-button-inset-inline-end) +
-          var(--denhaag-datepicker-input-padding-inline) + 16px
-      )
-  );
+  inset-inline-start: unset;
+  width: 16px;
 }
 
 .denhaag-datepicker.denhaag-datepicker--error::after {
