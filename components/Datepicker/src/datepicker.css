@@ -3,6 +3,42 @@
   width: var(--denhaag-datepicker-width);
 }
 
+.denhaag-datepicker::after {
+  content: attr(data-placeholder);
+  position: absolute;
+  inset-block-start: calc(
+    (var(--denhaag-datepicker-input-height) - var(--denhaag-datepicker-input-line-height)) / 2 -
+      var(--denhaag-datepicker-input-border-width)
+  );
+  inset-inline-start: var(--denhaag-datepicker-input-padding-inline);
+  inset-inline-end: calc(
+    var(--denhaag-datepicker-button-font-size) + var(--denhaag-datepicker-button-inset-inline-end) +
+      var(--denhaag-datepicker-input-padding-inline)
+  );
+  font-family: var(--denhaag-datepicker-font-family);
+  font-size: var(--denhaag-datepicker-input-font-size);
+  line-height: var(--denhaag-datepicker-input-line-height);
+  color: var(--denhaag-datepicker-input-placeholder-color);
+  background-color: var(--denhaag-datepicker-input-background-color);
+  pointer-events: none;
+}
+
+.denhaag-datepicker.denhaag-datepicker--has-value::after {
+  content: none;
+}
+
+.denhaag-datepicker.denhaag-datepicker--error::after {
+  inset-inline-end: calc(
+    var(--denhaag-datepicker-button-inset-inline-end) + var(--denhaag-datepicker-button-font-size) +
+      var(--denhaag-datepicker-error-icon-inset-inline-end) + var(--denhaag-datepicker-error-icon-font-size) +
+      var(--denhaag-datepicker-input-padding-inline)
+  );
+}
+
+.denhaag-datepicker.denhaag-datepicker--disabled::after {
+  color: var(--denhaag-datepicker-disabled-input-color);
+}
+
 .denhaag-datepicker__button {
   position: absolute;
   inset-block-start: 0;
@@ -44,7 +80,7 @@
   font-family: var(--denhaag-datepicker-font-family);
   font-size: var(--denhaag-datepicker-input-font-size);
   line-height: var(--denhaag-datepicker-input-line-height);
-  color: var(--denhaag-datepicker-input-placeholder-color);
+  color: var(--denhaag-datepicker-input-color);
   appearance: none;
   background-color: var(--denhaag-datepicker-input-background-color);
   border-radius: var(--denhaag-datepicker-input-border-radius);
@@ -58,16 +94,8 @@
   text-align: start;
 }
 
-.denhaag-datepicker__input::placeholder {
-  color: var(--denhaag-datepicker-input-placeholder-color);
-}
-
 .denhaag-datepicker__input::-webkit-calendar-picker-indicator {
   display: none;
-}
-
-.denhaag-datepicker__input.denhaag-datepicker__input--has-value {
-  color: var(--denhaag-datepicker-input-color);
 }
 
 .denhaag-datepicker--error .denhaag-datepicker__input {

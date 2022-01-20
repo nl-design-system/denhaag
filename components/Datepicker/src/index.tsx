@@ -87,15 +87,6 @@ export const Datepicker: React.FC<DatepickerProps> = ({
   nextMonthLabel = 'Volgende maand',
   ...props
 }: DatepickerProps) => {
-  const rootStyles = clsx(
-    'denhaag-datepicker',
-    {
-      'denhaag-datepicker--error': props.error,
-      'denhaag-datepicker--disabled': props.disabled,
-    },
-    props.className,
-  );
-
   const [state, setState] = React.useState<DatepickerState>({
     current: startDate,
     selected: undefined,
@@ -295,8 +286,18 @@ export const Datepicker: React.FC<DatepickerProps> = ({
     return '';
   };
 
+  const rootStyles = clsx(
+    'denhaag-datepicker',
+    {
+      'denhaag-datepicker--error': props.error,
+      'denhaag-datepicker--disabled': props.disabled,
+      'denhaag-datepicker--has-value': state.selected,
+    },
+    props.className,
+  );
+
   return (
-    <div className={rootStyles} ref={ref}>
+    <div className={rootStyles} ref={ref} data-placeholder={openCalendarLabel}>
       <button
         type="button"
         className="denhaag-datepicker__button"
@@ -312,9 +313,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
       <input
         disabled={props.disabled}
         type="date"
-        className={clsx('denhaag-datepicker__input', {
-          'denhaag-datepicker__input--has-value': state.selected,
-        })}
+        className="denhaag-datepicker__input"
         ref={inputRef}
         value={state.selected ? formatISO(state.selected, { representation: 'date' }) : ''}
         onChange={(event) => {
