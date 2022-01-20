@@ -5,8 +5,9 @@
 
 .denhaag-datepicker__button {
   position: absolute;
-  inset-block-start: calc((var(--denhaag-datepicker-input-height) - var(--denhaag-datepicker-button-font-size)) / 2);
+  inset-block-start: 0;
   inset-inline-end: var(--denhaag-datepicker-button-inset-inline-end);
+  height: var(--denhaag-datepicker-input-height);
   padding-inline-start: 0;
   padding-inline-end: 0;
   padding-block-start: 0;
@@ -45,11 +46,16 @@
   line-height: var(--denhaag-datepicker-input-line-height);
   color: var(--denhaag-datepicker-input-placeholder-color);
   appearance: none;
+  background-color: var(--denhaag-datepicker-input-background-color);
   border-radius: var(--denhaag-datepicker-input-border-radius);
   border-width: var(--denhaag-datepicker-input-border-width);
   border-style: var(--denhaag-datepicker-input-border-style);
   border-color: var(--denhaag-datepicker-input-border-color);
   box-sizing: border-box;
+}
+
+.denhaag-datepicker__input::-webkit-date-and-time-value {
+  text-align: start;
 }
 
 .denhaag-datepicker__input::placeholder {
@@ -222,6 +228,10 @@
 .denhaag-datepicker__calendar-day {
   width: var(--denhaag-datepicker-calendar-day-width);
   height: var(--denhaag-datepicker-calendar-day-width);
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
   background: none;
   border: none;
   outline: none;
