@@ -374,6 +374,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
                   key={`datepicker-day-${i}`}
                   className="denhaag-datepicker__calendar-heading"
                   abbr={locale.localize?.day((i + (locale.options?.weekStartsOn || 0)) % 7)}
+                  scope="col"
                 >
                   {locale.localize?.day((i + (locale.options?.weekStartsOn || 0)) % 7, { width: 'short' })}
                 </th>
