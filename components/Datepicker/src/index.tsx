@@ -333,7 +333,11 @@ export const Datepicker: React.FC<DatepickerProps> = ({
         }}
         onClick={(event) => {
           event.preventDefault();
-          setState({ ...state, opened: true });
+          if (state.opened) {
+            currentButtonRef.current?.focus();
+          } else {
+            setState({ ...state, opened: true });
+          }
         }}
         onKeyDown={onKeyDownInput}
         tabIndex={props.disabled ? -1 : 0}
