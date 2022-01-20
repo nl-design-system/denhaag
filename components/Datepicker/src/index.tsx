@@ -47,10 +47,6 @@ export interface DatepickerProps extends InputHTMLAttributes<HTMLInputElement> {
    */
   error?: boolean;
   /**
-   * Whether the input field is disabled.
-   */
-  disabled?: boolean;
-  /**
    * Locale (from @gemeente-denhaag/datepicker/locale or date-fns/locale) (default: nl)
    */
   locale?: Locale;
