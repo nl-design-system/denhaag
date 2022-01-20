@@ -6,6 +6,7 @@
 .denhaag-datepicker::after {
   content: attr(data-placeholder);
   position: absolute;
+  height: var(--denhaag-datepicker-input-line-height);
   inset-block-start: calc((var(--denhaag-datepicker-input-height) - var(--denhaag-datepicker-input-line-height)) / 2);
   inset-inline-start: var(--denhaag-datepicker-input-padding-inline);
   inset-inline-end: calc(
@@ -21,7 +22,14 @@
 }
 
 .denhaag-datepicker.denhaag-datepicker--has-value::after {
-  content: none;
+  content: "";
+  inset-inline-start: calc(
+    100% -
+      (
+        var(--denhaag-datepicker-button-font-size) + var(--denhaag-datepicker-button-inset-inline-end) +
+          var(--denhaag-datepicker-input-padding-inline) + 16px
+      )
+  );
 }
 
 .denhaag-datepicker.denhaag-datepicker--error::after {
