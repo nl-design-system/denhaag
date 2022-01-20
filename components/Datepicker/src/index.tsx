@@ -200,7 +200,11 @@ export const Datepicker: React.FC<DatepickerProps> = ({
             { locale: locale },
           );
           if (!isSameMonth(newDate, subYears(state.current, 1))) {
-            newDate = subWeeks(newDate, 1);
+            if (isSameMonth(newDate, subMonths(subYears(state.current, 1), 1))) {
+              newDate = addWeeks(newDate, 1);
+            } else {
+              newDate = subWeeks(newDate, 1);
+            }
           }
           setState({ ...state, current: newDate });
         } else {
@@ -210,7 +214,11 @@ export const Datepicker: React.FC<DatepickerProps> = ({
             { locale: locale },
           );
           if (!isSameMonth(newDate, subMonths(state.current, 1))) {
-            newDate = subWeeks(newDate, 1);
+            if (isSameMonth(newDate, state.current)) {
+              newDate = subWeeks(newDate, 1);
+            } else {
+              newDate = addWeeks(newDate, 1);
+            }
           }
           setState({ ...state, current: newDate });
         }
@@ -224,7 +232,11 @@ export const Datepicker: React.FC<DatepickerProps> = ({
             { locale: locale },
           );
           if (!isSameMonth(newDate, addYears(state.current, 1))) {
-            newDate = subWeeks(newDate, 1);
+            if (isSameMonth(newDate, subMonths(addYears(state.current, 1), 1))) {
+              newDate = addWeeks(newDate, 1);
+            } else {
+              newDate = subWeeks(newDate, 1);
+            }
           }
           setState({ ...state, current: newDate });
         } else {
@@ -234,7 +246,11 @@ export const Datepicker: React.FC<DatepickerProps> = ({
             { locale: locale },
           );
           if (!isSameMonth(newDate, addMonths(state.current, 1))) {
-            newDate = subWeeks(newDate, 1);
+            if (isSameMonth(newDate, state.current)) {
+              newDate = addWeeks(newDate, 1);
+            } else {
+              newDate = subWeeks(newDate, 1);
+            }
           }
           setState({ ...state, current: newDate });
         }
