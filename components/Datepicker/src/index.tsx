@@ -126,9 +126,12 @@ export const Datepicker: React.FC<DatepickerProps> = ({
   };
 
   React.useEffect(() => {
-    document.addEventListener('click', outsideClickListener);
-    return outsideClickListenerCleanup;
-  }, [ref]);
+    if (state.opened) {
+      document.addEventListener('click', outsideClickListener);
+      return outsideClickListenerCleanup;
+    }
+    return null;
+  }, [ref, state.opened]);
 
   React.useEffect(() => {
     if (state.opened) {
