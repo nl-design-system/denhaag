@@ -18,10 +18,12 @@
   cursor: pointer;
 }
 
+.denhaag-datepicker__button.denhaag-datepicker__button--hover,
 .denhaag-datepicker__button:hover {
   color: var(--denhaag-icon-button-hover-color);
 }
 
+.denhaag-datepicker__button.denhaag-datepicker__button--focus,
 .denhaag-datepicker__button:focus-visible {
   color: var(--denhaag-icon-button-focus-color);
 }
@@ -71,6 +73,7 @@
   );
 }
 
+.denhaag-datepicker__input.denhaag-datepicker__input--hover,
 .denhaag-datepicker__input:hover {
   border-width: var(--denhaag-datepicker-input-hover-border-width);
   border-color: var(--denhaag-datepicker-input-hover-border-color);
@@ -91,6 +94,7 @@
   pointer-events: none;
 }
 
+.denhaag-datepicker--error .denhaag-datepicker__input.denhaag-datepicker__input--hover,
 .denhaag-datepicker--error .denhaag-datepicker__input:hover {
   padding-inline-end: calc(
     var(--denhaag-datepicker-button-inset-inline-end) + var(--denhaag-datepicker-button-font-size) +
@@ -177,11 +181,13 @@
   appearance: none;
 }
 
+.denhaag-datepicker__calendar-navigation.denhaag-datepicker__calendar-navigation--hover,
 .denhaag-datepicker__calendar-navigation:hover {
   color: var(--denhaag-icon-button-hover-color);
 }
 
-.denhaag-datepicker__calendar-navigation:focus {
+.denhaag-datepicker__calendar-navigation.denhaag-datepicker__calendar-navigation--focus,
+.denhaag-datepicker__calendar-navigation:focus-visible {
   color: var(--denhaag-icon-button-focus-color);
   outline-color: var(--denhaag-icon-button-focus-outline-color);
   outline-width: var(--denhaag-icon-button-focus-outline-width);
@@ -226,11 +232,13 @@
   border-radius: var(--denhaag-datepicker-calendar-day-border-radius);
 }
 
+.denhaag-datepicker__calendar-day.denhaag-datepicker__calendar-day--hover,
 .denhaag-datepicker__calendar-day:hover {
   color: var(--denhaag-datepicker-calendar-day-hover-color);
 }
 
-.denhaag-datepicker__calendar-day:focus {
+.denhaag-datepicker__calendar-day.denhaag-datepicker__calendar-day--focus,
+.denhaag-datepicker__calendar-day:focus-visible {
   outline: var(--denhaag-focus-border);
 }
 
@@ -243,6 +251,7 @@
   background-color: var(--denhaag-datepicker-calendar-day-selected-background-color);
 }
 
+.denhaag-datepicker__calendar-day.denhaag-datepicker__calendar-day--selected.denhaag-datepicker__calendar-day--hover,
 .denhaag-datepicker__calendar-day.denhaag-datepicker__calendar-day--selected:hover {
   color: var(--denhaag-datepicker-calendar-day-selected-color);
   background-color: var(--denhaag-datepicker-calendar-day-selected-hover-background-color);
