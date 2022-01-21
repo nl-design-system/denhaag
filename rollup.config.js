@@ -13,6 +13,7 @@ const externalDependencies = [
   '@material-ui/lab',
   'react',
   'react-dom',
+  'date-fns',
   '@material-ui/core/transitions',
   '@material-ui/core/OverridableComponent',
 ];
