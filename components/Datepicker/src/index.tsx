@@ -281,7 +281,6 @@ export const Datepicker: React.FC<DatepickerProps> = ({
     });
     if (isSameMonth(date, state.current)) {
       return (
-        // eslint-disable-next-line jsx-a11y/role-supports-aria-props
         <td
           key={`datepicker-column-${i}-${j}`}
           aria-selected={state.selected && isEqual(state.selected, date) ? 'true' : undefined}
