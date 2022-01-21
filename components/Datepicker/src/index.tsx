@@ -380,11 +380,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
           >
             <ChevronLeftIcon />
           </button>
-          <span
-            id="denhaag-datepicker-calendar-month"
-            className="denhaag-datepicker__calendar-month"
-            aria-live="polite"
-          >
+          <span className="denhaag-datepicker__calendar-month" aria-live="polite">
             <time dateTime={format(state.current, 'yyyy-MM')}>
               {format(state.current, 'MMMM yyyy', { locale: locale })}
             </time>
@@ -404,7 +400,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
         <table
           className="denhaag-datepicker__calendar-table"
           role="grid"
-          aria-labelledby="denhaag-datepicker-calendar-month"
+          aria-label={format(state.current, 'MMMM yyyy', { locale: locale })}
         >
           <tbody>
             <tr>
