@@ -33,7 +33,7 @@ import { CalendarIcon, AlertTriangleIcon, ChevronRightIcon, ChevronLeftIcon } fr
 
 import './datepicker.css';
 
-export interface DatepickerProps extends InputHTMLAttributes<HTMLInputElement> {
+export interface DatepickerProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'onChange'> {
   /**
    * The ref for the outer HTML div.
    */
@@ -66,6 +66,11 @@ export interface DatepickerProps extends InputHTMLAttributes<HTMLInputElement> {
    * aria-label for previous month button in the calendar.
    */
   nextMonthLabel?: string;
+
+  /**
+   * custom onChange event listener.
+   */
+  onChange?: (event: Event) => void;
 }
 
 interface DatepickerState {
@@ -102,6 +107,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
   const openButtonRef = React.useRef<HTMLButtonElement>(null);
   const backButtonRef = React.useRef<HTMLButtonElement>(null);
   const currentButtonRef = React.useRef<HTMLButtonElement>(null);
+  const firstRender = React.useRef(true);
 
   const outsideClickListener = (e: Event) => {
     if (!ref?.current?.contains(e.target as Node) && state.opened) {
@@ -119,9 +125,8 @@ export const Datepicker: React.FC<DatepickerProps> = ({
   React.useEffect(() => {
     if (state.opened) {
       document.addEventListener('click', outsideClickListener);
-      return outsideClickListenerCleanup;
     }
-    return null;
+    return outsideClickListenerCleanup;
   }, [ref, state.opened]);
 
   React.useEffect(() => {
@@ -129,6 +134,18 @@ export const Datepicker: React.FC<DatepickerProps> = ({
       currentButtonRef.current?.focus();
     }
   }, [state.opened && state.current]);
+
+  React.useEffect(() => {
+    if (props.onChange && !firstRender.current) {
+      const event = new Event('change');
+      inputRef.current?.dispatchEvent(event);
+      props.onChange(event);
+    }
+  }, [state.selected]);
+
+  React.useEffect(() => {
+    firstRender.current = false;
+  }, []);
 
   const onKeyDownInput = (e: KeyboardEvent) => {
     if (e.key === 'Enter' || e.key === ' ') {
