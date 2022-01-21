@@ -46,10 +46,7 @@ describe(`Alerts tests`, () => {
         variant: ['error', 'info', 'success', 'warning'],
       },
       {},
-      [
-        { id: 'duplicate-id', issue: 406 },
-        { id: 'color-contrast', issue: 407 },
-      ],
+      [],
     );
 
     cy.snapshots(
@@ -58,10 +55,7 @@ describe(`Alerts tests`, () => {
         variant: ['error', 'info', 'success', 'warning'],
       },
       {},
-      [
-        { id: 'duplicate-id', issue: 406 },
-        { id: 'color-contrast', issue: 407 },
-      ],
+      [],
     );
 
     cy.snapshots(
@@ -81,10 +75,7 @@ describe(`Alerts tests`, () => {
           focus: 'denhaag-icon-button--focus',
         },
       },
-      [
-        { id: 'duplicate-id', issue: 406 },
-        { id: 'color-contrast', issue: 407 },
-      ],
+      [],
     );
 
     cy.snapshots(
@@ -107,10 +98,7 @@ describe(`Alerts tests`, () => {
           focus: 'denhaag-button--focus',
         },
       },
-      [
-        { id: 'duplicate-id', issue: 406 },
-        { id: 'color-contrast', issue: 407 },
-      ],
+      [],
     );
   });
 });
