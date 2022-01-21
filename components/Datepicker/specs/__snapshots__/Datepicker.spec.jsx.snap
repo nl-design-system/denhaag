@@ -1349,7 +1349,7 @@ exports[`Datepicker tests > a11y and snapshots #0`] = `
 `;
 
 exports[`Datepicker tests > a11y and snapshots #1`] = `
-<div id="wrapper" style="display: inline-block; width: 348px; height: 400px;">
+<div id="wrapper" style="display: inline-block; width: 348px; height: 428px;">
   <div style="padding: 10px;">
     <div
       class="denhaag-datepicker denhaag-datepicker--has-value"
