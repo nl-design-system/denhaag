@@ -282,25 +282,29 @@ export const Datepicker: React.FC<DatepickerProps> = ({
     if (isSameMonth(date, state.current)) {
       return (
         // eslint-disable-next-line jsx-a11y/role-supports-aria-props
-        <button
-          type="button"
-          className={clsx('denhaag-datepicker__calendar-day', {
-            'denhaag-datepicker__calendar-day--current': isEqual(today, date),
-            'denhaag-datepicker__calendar-day--selected': state.selected && isEqual(state.selected, date),
-          })}
-          tabIndex={isEqual(state.current, date) ? 0 : -1}
-          ref={isEqual(state.current, date) ? currentButtonRef : null}
-          onClick={() => {
-            setState({ ...state, selected: date, opened: false });
-          }}
-          onKeyDown={onKeyDownDay}
+        <td
+          key={`datepicker-column-${i}-${j}`}
           aria-selected={state.selected && isEqual(state.selected, date) ? 'true' : undefined}
         >
-          {date.getDate()}
-        </button>
+          <button
+            type="button"
+            className={clsx('denhaag-datepicker__calendar-day', {
+              'denhaag-datepicker__calendar-day--current': isEqual(today, date),
+              'denhaag-datepicker__calendar-day--selected': state.selected && isEqual(state.selected, date),
+            })}
+            tabIndex={isEqual(state.current, date) ? 0 : -1}
+            ref={isEqual(state.current, date) ? currentButtonRef : null}
+            onClick={() => {
+              setState({ ...state, selected: date, opened: false });
+            }}
+            onKeyDown={onKeyDownDay}
+          >
+            {date.getDate()}
+          </button>
+        </td>
       );
     }
-    return '';
+    return <td key={`datepicker-column-${i}-${j}`}></td>;
   };
 
   const rootStyles = clsx(
@@ -416,11 +420,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
               ))}
             </tr>
             {Array.from(Array(getWeeksInMonth(state.current, { locale: locale }))).map((_, i) => (
-              <tr key={`datepicker-row-${i}`}>
-                {Array.from(Array(7)).map((_, j) => (
-                  <td key={`datepicker-column-${i}-${j}`}>{renderDay(i, j)}</td>
-                ))}
-              </tr>
+              <tr key={`datepicker-row-${i}`}>{Array.from(Array(7)).map((_, j) => renderDay(i, j))}</tr>
             ))}
           </tbody>
         </table>
