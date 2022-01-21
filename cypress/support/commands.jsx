@@ -59,49 +59,53 @@ Cypress.Commands.add('multimount', (Component, props) => {
   );
 });
 
-Cypress.Commands.add('snapshots', (Component, props, extraClasses, knownIssues = [], nameOverride) => {
-  if (Cypress.env('CICD')) {
-    cy.task('checkImagesFolder', { name: Component.type.name, nameOverride: nameOverride });
-  }
+Cypress.Commands.add(
+  'snapshots',
+  (Component, props, extraClasses, knownIssues = [], nameOverride, postMountFunction = () => {}) => {
+    if (Cypress.env('CICD')) {
+      cy.task('checkImagesFolder', { name: Component.type.name, nameOverride: nameOverride });
+    }
 
-  if (extraClasses && Cypress.env('CICD')) {
-    const extraClassesArray = Array.isArray(extraClasses) ? extraClasses : [extraClasses];
-    extraClassesArray.forEach((e) => {
-      if (e.states && e.selector) {
-        Object.keys(e.states).forEach((state) => {
-          cy.multimount(Component, props);
-          cy.get(e.selector).invoke('addClass', e.states[state]);
-          cy.get('#wrapper').toMatchImageSnapshot({
-            name: `${nameOverride || Component.type.name}--${state}`,
+    if (extraClasses && Cypress.env('CICD')) {
+      const extraClassesArray = Array.isArray(extraClasses) ? extraClasses : [extraClasses];
+      extraClassesArray.forEach((e) => {
+        if (e.states && e.selector) {
+          Object.keys(e.states).forEach((state) => {
+            cy.multimount(Component, props);
+            cy.get(e.selector).invoke('addClass', e.states[state]);
+            cy.get('#wrapper').toMatchImageSnapshot({
+              name: `${nameOverride || Component.type.name}--${state}`,
+            });
           });
-        });
-      }
+        }
+      });
+    }
+
+    cy.multimount(Component, props);
+    postMountFunction();
+
+    cy.get('#wrapper').toMatchSnapshot();
+
+    if (Cypress.env('CICD')) {
+      cy.get('#wrapper').toMatchImageSnapshot({ name: nameOverride || Component.type.name });
+    }
+
+    cy.injectAxe();
+    cy.configureAxe({
+      rules: knownIssues.map((issue) => {
+        if (!issue.logDisabled) {
+          cy.task(
+            'warn',
+            `${Cypress.env('CICD') ? '::warning::' : '\x1b[33m    ! '}Disabled "${issue.id}" rule for ${
+              nameOverride || Component.type.name
+            }${issue.issue ? ` : known issue (${pkg.bugs}/${issue.issue})` : ''}`,
+          );
+        }
+        return { id: issue.id, reviewOnFail: true };
+      }),
     });
-  }
-
-  cy.multimount(Component, props);
-
-  cy.get('#wrapper').toMatchSnapshot();
-
-  if (Cypress.env('CICD')) {
-    cy.get('#wrapper').toMatchImageSnapshot({ name: nameOverride || Component.type.name });
-  }
-
-  cy.injectAxe();
-  cy.configureAxe({
-    rules: knownIssues.map((issue) => {
-      if (!issue.logDisabled) {
-        cy.task(
-          'warn',
-          `${Cypress.env('CICD') ? '::warning::' : '\x1b[33m    ! '}Disabled "${issue.id}" rule for ${
-            nameOverride || Component.type.name
-          }${issue.issue ? ` : known issue (${pkg.bugs}/${issue.issue})` : ''}`,
-        );
-      }
-      return { id: issue.id, reviewOnFail: true };
-    }),
-  });
-  cy.checkA11y('#wrapper', null, (violations) => {
-    cy.task('a11yLog', violations);
-  });
-});
+    cy.checkA11y('#wrapper', null, (violations) => {
+      cy.task('a11yLog', violations);
+    });
+  },
+);
