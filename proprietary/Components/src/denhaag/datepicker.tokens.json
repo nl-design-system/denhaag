@@ -32,6 +32,7 @@
         "border-radius": { "value": "3px" },
         "border-style": { "value": "solid" },
         "border-width": { "value": "1px" },
+        "background-color": { "value": "{denhaag.color.white}" },
         "padding-inline": { "value": "12px" },
         "padding-block-end": { "value": "16px" },
         "header": {

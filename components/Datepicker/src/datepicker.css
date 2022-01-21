@@ -169,12 +169,14 @@
 }
 
 .denhaag-datepicker__calendar {
+  z-index: 1;
   position: absolute;
   top: var(--denhaag-datepicker-input-height);
   left: 0;
   padding-inline-start: var(--denhaag-datepicker-calendar-padding-inline);
   padding-inline-end: var(--denhaag-datepicker-calendar-padding-inline);
   padding-block-end: var(--denhaag-datepicker-calendar-padding-block-end);
+  background-color: var(--denhaag-datepicker-calendar-background-color);
   border-radius: var(--denhaag-datepicker-calendar-border-radius);
   border-width: var(--denhaag-datepicker-calendar-border-width);
   border-style: var(--denhaag-datepicker-calendar-border-style);
