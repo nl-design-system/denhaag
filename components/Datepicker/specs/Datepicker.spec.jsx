@@ -104,7 +104,7 @@ describe(`Datepicker tests`, () => {
 
     // opened datepicker with selected date
     cy.snapshots(
-      <Datepicker startDate={new Date('2021-01-22')}></Datepicker>,
+      <Datepicker startDate={new Date('2022-01-21')}></Datepicker>,
       {},
       {
         selector: '.denhaag-datepicker__calendar-day',
@@ -125,6 +125,7 @@ describe(`Datepicker tests`, () => {
         cy.get('.denhaag-datepicker__button').click();
         cy.get('.denhaag-datepicker__calendar-day').contains('12').click();
         cy.get('.denhaag-datepicker__button').click();
+        cy.get('.denhaag-datepicker__calendar-day--current').blur();
       },
     );
   });
