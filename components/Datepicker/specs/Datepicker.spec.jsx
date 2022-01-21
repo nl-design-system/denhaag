@@ -117,7 +117,7 @@ describe(`Datepicker tests`, () => {
       undefined,
       () => {
         cy.get('#wrapper').invoke('css', 'width', '348px');
-        cy.get('#wrapper').invoke('css', 'height', '378px');
+        cy.get('#wrapper').invoke('css', 'height', '400px');
         cy.get('.denhaag-datepicker__calendar-day').invoke('removeClass', 'denhaag-datepicker__calendar-day--current');
         cy.get('.denhaag-datepicker__calendar-day')
           .contains('21')
