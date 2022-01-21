@@ -72,6 +72,7 @@ Cypress.Commands.add(
         if (e.states && e.selector) {
           Object.keys(e.states).forEach((state) => {
             cy.multimount(Component, props);
+            postMountFunction();
             cy.get(e.selector).invoke('addClass', e.states[state]);
             cy.get('#wrapper').toMatchImageSnapshot({
               name: `${nameOverride || Component.type.name}--${state}`,
