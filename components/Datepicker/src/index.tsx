@@ -55,9 +55,9 @@ export interface DatepickerProps extends Omit<InputHTMLAttributes<HTMLInputEleme
    */
   startDate?: Date;
   /**
-   * aria-label for the button to open the calendar.
+   * placeholder text for the input (also used as aria-label).
    */
-  openCalendarLabel?: string;
+  placeholder?: string;
   /**
    * aria-label for previous month button in the calendar.
    */
@@ -87,7 +87,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
   inputRef = React.useRef<HTMLInputElement>(null),
   startDate = new Date(),
   locale = nl,
-  openCalendarLabel = 'Kies een datum',
+  placeholder = 'Kies een datum',
   previousMonthLabel = 'Vorige maand',
   nextMonthLabel = 'Volgende maand',
   ...props
@@ -314,11 +314,11 @@ export const Datepicker: React.FC<DatepickerProps> = ({
   );
 
   return (
-    <div className={rootStyles} ref={ref} data-placeholder={openCalendarLabel}>
+    <div className={rootStyles} ref={ref} data-placeholder={placeholder}>
       <button
         type="button"
         className="denhaag-datepicker__button"
-        aria-label={openCalendarLabel}
+        aria-label={placeholder}
         onClick={() => {
           setState({ ...state, opened: !state.opened });
         }}
@@ -364,7 +364,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
         className={clsx('denhaag-datepicker__calendar', { 'denhaag-datepicker__calendar--hidden': !state.opened })}
         role="dialog"
         aria-modal="true"
-        aria-labelledby="denhaag-datepicker-calendar-month"
+        aria-label={placeholder}
         aria-live="polite"
       >
         <div className="denhaag-datepicker__calendar-header">
