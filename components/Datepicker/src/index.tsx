@@ -77,6 +77,7 @@ interface DatepickerState {
   current: Date;
   selected?: Date;
   opened: boolean;
+  typing: boolean;
 }
 
 /**
@@ -96,6 +97,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
     current: startDate,
     selected: undefined,
     opened: false,
+    typing: false,
   });
 
   const currentDate = new Date();
@@ -151,6 +153,8 @@ export const Datepicker: React.FC<DatepickerProps> = ({
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
       setState({ ...state, opened: true });
+    } else {
+      setState({ ...state, typing: true });
     }
   };
 
@@ -311,7 +315,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
     {
       'denhaag-datepicker--error': props.error,
       'denhaag-datepicker--disabled': props.disabled,
-      'denhaag-datepicker--has-value': state.selected,
+      'denhaag-datepicker--has-value': state.selected || state.typing,
     },
     props.className,
   );
