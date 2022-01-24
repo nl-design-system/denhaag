@@ -10,7 +10,7 @@
   margin-block-start: 0;
 }
 
-.denhaag-description-list-caption {
+.denhaag-description-list__caption {
   color: var(--denhaag-description-list-caption-color);
   font-family: var(--denhaag-description-list-caption-font-family, var(--denhaag-description-list-font-family));
   font-size: var(
