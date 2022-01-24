@@ -24,7 +24,7 @@
 }
 
 .denhaag-description-list__detail {
-  box-shadow: inset 0 -1px 0 var(--denhaag-description-list-border-color, lightgrey);
+  border-bottom: 1px solid var(--denhaag-description-list-border-color, lightgrey);
   margin-inline-start: 0;
   padding-block-end: var(--denhaag-description-list-detail-padding-block-end, var(--denhaag-description-list-padding));
   padding-block-start: var(
@@ -61,6 +61,6 @@
   }
 
   .denhaag-description-list__title {
-    box-shadow: inset 0 -1px 0 var(--denhaag-description-list-border-color, lightgrey);
+    border-bottom: 1px solid var(--denhaag-description-list-border-color, lightgrey);
   }
 }
