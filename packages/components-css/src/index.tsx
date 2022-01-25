@@ -25,6 +25,7 @@ import '../../../components/Menu/src/menu-button.css';
 import '../../../components/Modal/src/modal.css';
 import '../../../components/Pagination/src/pagination.css';
 import '../../../components/PosttypeLabel/src/index.css';
+import '../../../components/PublicationDate/src/index.css';
 import '../../../components/Link/src/link.css';
 import '../../../components/Tab/src/styles/tab.css';
 import '../../../components/Tab/src/styles/tab-panel.css';

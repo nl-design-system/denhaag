@@ -54,13 +54,23 @@ The buttons text only, medium primary and secundary are used.
 
 [technical accessibility requirements]
 
+### Error alerts in forms
+
+#### Error alerts
+
+If users submit long or complex forms with errors, use an error alert to summarize what went wrong. Place the alert at the top of the form and move the focus to the banner when the form is submitted. This will allow all users to scroll through the form in a logical order to resolve the issues.
+
+#### Inline errors
+
+Always include inline error messages for specific form fields so that users know what to do in context while correcting their errors.
+
 ## Content guidelines
 
 ### Title
 
 Modal titles should:
 
-- Use a clear {verb}+{noun} question or statement
+- Use a clear {verb}+{noun} question or statement.
 
 ### Body content
 
@@ -106,7 +116,19 @@ Modals should:
 - Not include important information.
 - Not open suddenly. A modal should always open upon the user doing (or did) something.
 
+## Javascript
+
+Import the `@gemeente-denhaag/modal/src/modal.js` javascript file to you site to allow the modals to work.
+
+See the example below:
+
+```javascript
+import ModalScripts from "@gemeente-denhaag/modal/src/modal";
+window.addEventListener("DOMContentLoaded", () => new ModalScripts());
+```
+
 ## References
 
+[Figma Design](https://www.figma.com/file/JpoY3waVoQGlLQzQXTL9nn/Design-System---Gemeente-Den-Haag?node-id=0%3A1)
 [http://www.uxforthemasses.com/overlays/](http://www.uxforthemasses.com/overlays/)
 [https://www.nngroup.com/articles/modal-nonmodal-dialog/](https://www.nngroup.com/articles/modal-nonmodal-dialog/)
