@@ -9,17 +9,16 @@ export default class ShareButtonScripts {
       return;
     }
 
-    this.shareButtonSelector = `${className}-wrapper`;
+    this.shareButtonSelector = 'denhaag-page-buttons';
 
-    this.shareButtons.forEach((shareButton) => this.clickEvents(shareButton));
+    this.shareButtons.forEach((shareButton) => {
+      return this.clickEvents(shareButton);
+    });
   }
 
   clickEvents(shareButton) {
     // toggle shareoptions.
-    console.log('this.shareButtonSelector', this.shareButtonSelector);
-    shareButton.onclick = (el) => {
-      this.toggleShareButton(el.target.closest(`.${this.shareButtonSelector}`));
-    };
+    shareButton.onclick = (el) => this.toggleShareButton(el.target.closest(`.${this.shareButtonSelector}`));
   }
 
   /**

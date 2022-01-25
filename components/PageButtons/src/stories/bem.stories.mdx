@@ -1,11 +1,11 @@
 import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
-import "../index";
-import "../stories";
+import "../index.css";
+import "../stories.js";
 import pkg from "../../package.json";
 import readme from "../../README.md";
 
 <Meta
-  title="CSS Components/ShareButton"
+  title="CSS Components/PageButtons"
   parameters={{
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: { source: { type: "dynamic" } },
@@ -19,27 +19,11 @@ import readme from "../../README.md";
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Default">
     {() => (
-      <div class={"denhaag-share-button-wrapper"}>
+      <div class={"denhaag-page-buttons"}>
         <div>
-          <button class={"denhaag-button denhaag-button--outline-dark-action denhaag-audio-button"}>
+          <button class={"denhaag-button denhaag-share-button denhaag-page-buttons__outline-dark-action"}>
             <svg
-              class={"denhaag-audio-button__icon"}
-              xmlns="http://www.w3.org/2000/svg"
-              width="19"
-              height="20"
-              viewBox="0 0 19 20"
-              fill="none"
-            >
-              <path
-                d="M11.4179 0.591502C11.7727 0.754687 12 1.10948 12 1.50001V19.5C12 19.8905 11.7727 20.2453 11.4179 20.4085C11.0631 20.5717 10.6457 20.5134 10.3492 20.2593L3.63008 14.5H1C0.447715 14.5 0 14.0523 0 13.5V7.50001C0 6.94773 0.447715 6.50001 1 6.50001H3.63008L10.3492 0.740758C10.6457 0.486604 11.0631 0.428316 11.4179 0.591502ZM10 3.67423L4.65079 8.25927C4.46955 8.41462 4.23871 8.50001 4 8.50001H2V12.5H4C4.23871 12.5 4.46955 12.5854 4.65079 12.7408L10 17.3258V3.67423ZM15.2929 3.79291C15.6834 3.40238 16.3166 3.40238 16.7071 3.79291L16.7078 3.79362L16.7086 3.79438L16.7102 3.79605L16.7141 3.79996L16.724 3.81008C16.7315 3.81784 16.7409 3.82765 16.752 3.83951C16.7742 3.86322 16.8034 3.89513 16.8385 3.93526C16.9087 4.01549 17.0028 4.12871 17.1125 4.27501C17.3318 4.56748 17.6147 4.99329 17.8944 5.5528C18.4556 6.67509 19 8.32725 19 10.5C19 12.6728 18.4556 14.3249 17.8944 15.4472C17.6147 16.0067 17.3318 16.4326 17.1125 16.725C17.0028 16.8713 16.9087 16.9845 16.8385 17.0648C16.8034 17.1049 16.7742 17.1368 16.752 17.1605C16.7409 17.1724 16.7315 17.1822 16.724 17.19L16.7141 17.2001L16.7102 17.204L16.7086 17.2056L16.7078 17.2064L16.7071 17.2071C16.3166 17.5976 15.6834 17.5976 15.2929 17.2071C14.904 16.8183 14.9024 16.1889 15.2879 15.7979L15.2929 15.7926C15.3 15.7851 15.3138 15.7701 15.3334 15.7478C15.3725 15.703 15.4347 15.6287 15.5125 15.525C15.6682 15.3175 15.8853 14.9933 16.1056 14.5528C16.5444 13.6751 17 12.3272 17 10.5C17 8.67278 16.5444 7.32494 16.1056 6.44723C15.8853 6.00674 15.6682 5.68255 15.5125 5.47501C15.4347 5.37131 15.3725 5.29704 15.3334 5.25227C15.3138 5.22989 15.3 5.21493 15.2929 5.20739L15.2879 5.20208C14.9024 4.81117 14.904 4.18176 15.2929 3.79291ZM13.2929 6.79291C13.6834 6.40238 14.3166 6.40238 14.7071 6.79291L14.7085 6.79434L14.7101 6.79587L14.7134 6.79923L14.7211 6.80715L14.7408 6.82779C14.7557 6.84369 14.7741 6.86388 14.7955 6.88838C14.8384 6.93736 14.8934 7.00371 14.9563 7.08751C15.0818 7.25498 15.2397 7.49329 15.3944 7.8028C15.7056 8.42509 16 9.32725 16 10.5C16 11.6728 15.7056 12.5749 15.3944 13.1972C15.2397 13.5067 15.0818 13.7451 14.9563 13.9125C14.8934 13.9963 14.8384 14.0627 14.7955 14.1116C14.7741 14.1361 14.7557 14.1563 14.7408 14.1722L14.7211 14.1929L14.7134 14.2008L14.7101 14.2042L14.7085 14.2057L14.7078 14.2064C14.3173 14.5969 13.6834 14.5976 13.2929 14.2071C12.9057 13.82 12.9024 13.1943 13.2829 12.803C13.2843 12.8015 13.2868 12.7987 13.2904 12.7946C13.3022 12.7811 13.3253 12.7537 13.3562 12.7125C13.4182 12.63 13.5103 12.4933 13.6056 12.3028C13.7944 11.9251 14 11.3272 14 10.5C14 9.67278 13.7944 9.07494 13.6056 8.69723C13.5103 8.50674 13.4182 8.37005 13.3562 8.28751C13.3253 8.24631 13.3022 8.21892 13.2904 8.20539C13.2868 8.20132 13.2843 8.19852 13.2829 8.19701C12.9024 7.80574 12.9057 7.18008 13.2929 6.79291Z"
-                fill="#4B4B4B"
-              />
-            </svg>
-            Luister
-          </button>
-          <button class={"denhaag-button denhaag-button--outline-dark-action denhaag-share-button"}>
-            <svg
-              class={"denhaag-share-button__icon"}
+              class={"denhaag-page-buttons__outline-dark-action__icon"}
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="20"
@@ -54,14 +38,14 @@ import readme from "../../README.md";
             Delen
           </button>
         </div>
-        <div class={"denhaag-share-button-options"}>
+        <div class={"denhaag-share-button__options"}>
           <a
             href={"https://twitter.com/messages/compose?recipient_id=XXXX"}
             aria-label="Share this page on Twitter"
-            class={"denhaag-button denhaag-share-button-option"}
+            class={"denhaag-button denhaag-share-button__option"}
           >
             <svg
-              class={"denhaag-share-button-option__icon"}
+              class={"denhaag-share-button__option__icon"}
               xmlns="http://www.w3.org/2000/svg"
               width="20"
               height="20"
@@ -77,10 +61,10 @@ import readme from "../../README.md";
           <a
             href={"http://www.facebook.com/sharer.php?u=XXXX&t=XXXX"}
             aria-label="Share this page on Facebook"
-            class={"denhaag-button denhaag-share-button-option"}
+            class={"denhaag-button denhaag-share-button__option"}
           >
             <svg
-              class={"denhaag-share-button-option__icon"}
+              class={"denhaag-share-button__option__icon"}
               xmlns="http://www.w3.org/2000/svg"
               width="10"
               height="18"
@@ -96,10 +80,10 @@ import readme from "../../README.md";
           <a
             href={"https://twitter.com/messages/compose?recipient_id=XXXX"}
             aria-label="Share this page on Twitter"
-            class={"denhaag-button denhaag-share-button-option"}
+            class={"denhaag-button denhaag-share-button__option"}
           >
             <svg
-              class={"denhaag-share-button-option__icon"}
+              class={"denhaag-share-button__option__icon"}
               xmlns="http://www.w3.org/2000/svg"
               width="18"
               height="14"
@@ -115,10 +99,10 @@ import readme from "../../README.md";
           <a
             href={"https://twitter.com/messages/compose?recipient_id=XXXX"}
             aria-label="Share this page on Twitter"
-            class={"denhaag-button denhaag-share-button-option"}
+            class={"denhaag-button denhaag-share-button__option"}
           >
             <svg
-              class={"denhaag-share-button-option__icon"}
+              class={"denhaag-share-button__option__icon"}
               xmlns="http://www.w3.org/2000/svg"
               width="18"
               height="14"

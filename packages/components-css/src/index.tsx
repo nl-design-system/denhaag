@@ -25,7 +25,7 @@ import '../../../components/Modal/src/modal.css';
 import '../../../components/Pagination/src/pagination.css';
 import '../../../components/PosttypeLabel/src/index.css';
 import '../../../components/Link/src/link.css';
-import '../../../components/ShareButton/src/index.css';
+import '../../../components/PageButtons/src/index.css';
 import '../../../components/Tab/src/styles/tab.css';
 import '../../../components/Tab/src/styles/tab-panel.css';
 import '../../../components/Tab/src/styles/tabs.css';
