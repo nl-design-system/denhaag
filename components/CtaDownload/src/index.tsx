@@ -1,1 +1,1 @@
-import './cta-download.css';
+import './index.css';
