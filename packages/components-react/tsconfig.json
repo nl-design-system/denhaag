@@ -24,6 +24,9 @@
       "path": "../../components/BaseProps"
     },
     {
+      "path": "../../components/Datepicker"
+    },
+    {
       "path": "../../components/Divider"
     },
     {
@@ -54,9 +57,6 @@
       "path": "../../components/InputLabel"
     },
     {
-      "path": "../../components/Pickers"
-    },
-    {
       "path": "../../components/Radio"
     },
     {
@@ -79,9 +79,6 @@
     },
     {
       "path": "../../components/Timeline"
-    },
-    {
-      "path": "../../components/Pickers"
     },
     {
       "path": "../../components/Accordion"
