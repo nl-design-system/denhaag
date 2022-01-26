@@ -1,0 +1,1 @@
+import './cta-event.css';

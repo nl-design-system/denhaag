@@ -1,0 +1,33 @@
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+import pkg from "../../package.json";
+import "../index.css";
+import readme from "../../README.md";
+
+<Meta
+  title="CSS Components/Data Display/PosttypeLabel"
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Design Tokens
+
+<DesignTokenDocBlock categoryName="PosttypeLabel" viewType="table" />
+
+## Stories
+
+### Default
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Default">
+    <p class="denhaag-posttypelabel">Nieuwsbericht</p>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
