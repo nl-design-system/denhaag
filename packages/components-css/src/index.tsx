@@ -1,6 +1,7 @@
 import '../../../components/Alert/src/alert.css';
 import '../../../components/Accordion/src/index.css';
 import '../../../components/BadgeCounter/src/badge-counter.css';
+import '../../../components/Blockquote/src/index.css';
 import '../../../components/Breadcrumb/src/breadcrumb.css';
 import '../../../components/Button/src/index.css';
 import '../../../components/Card/src/Card/card.css';
@@ -16,6 +17,7 @@ import '../../../components/FormControlLabel/src/form-control-label.css';
 import '../../../components/FormGroup/src/form-group.css';
 import '../../../components/IconButton/src/icon-button.css';
 import '../../../components/Icons/src/icon.css';
+import '../../../components/Image/src/index.css';
 import '../../../components/Link/src/link.css';
 import '../../../components/List/src/list-item.css';
 import '../../../components/List/src/list-item-icon.css';
