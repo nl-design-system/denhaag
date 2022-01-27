@@ -1,6 +1,6 @@
 .denhaag-blockquote {
   border-inline-start: var(--denhaag-blockquote-border-width) var(--denhaag-blockquote-border-style)
-    var(--denhaag-blockquote-border-color, #d5e7d4);
+    var(--denhaag-blockquote-border-color);
   padding-block-start: var(--denhaag-blockquote-padding-block-start);
   padding-block-end: var(--denhaag-blockquote-padding-block-end);
   padding-inline-start: var(--denhaag-blockquote-padding-inline-start);
@@ -15,7 +15,7 @@
 }
 
 .denhaag-blockquote__content p {
-  color: var(--denhaag-blockquote-paragraph-color, #1d6b34);
+  color: var(--denhaag-blockquote-paragraph-color);
   font-family: var(--denhaag-blockquote-paragraph-font-family, inherit);
   font-size: var(--denhaag-blockquote-paragraph-font-size, 1.25rem);
   font-weight: var(--denhaag-blockquote-paragraph-font-weight);
@@ -27,7 +27,7 @@
 .denhaag-blockquote__attribution {
   color: var(--denhaag-blockquote-attribution-color, #4b4b4b);
   font-family: var(--denhaag-blockquote-attribution-font-family, inherit);
-  font-size: var(--denhaag-blockquote-attribution-font-size, 0.625rem);
+  font-size: var(--denhaag-blockquote-attribution-font-size, 0.75rem);
   font-weight: var(--denhaag-blockquote-attribution-font-weight);
   letter-spacing: var(--denhaag-blockquote-attribution-letter-spacing);
   line-height: var(--denhaag-blockquote-attribution-line-height);
