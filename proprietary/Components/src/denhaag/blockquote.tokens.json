@@ -4,7 +4,7 @@
       "attribution": {
         "color": { "value": "{denhaag.color.grey.4}" },
         "font-family": { "value": "{denhaag.typography.sans-serif.font-family}" },
-        "font-size": { "value": "{denhaag.typography.scale.xs.font-size}" },
+        "font-size": { "value": "{denhaag.typography.scale.s.font-size}" },
         "font-weight": { "value": "400" },
         "letter-spacing": { "value": "1px" },
         "line-height": { "value": "1.5" },
