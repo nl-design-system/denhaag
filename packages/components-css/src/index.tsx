@@ -17,6 +17,7 @@ import '../../../components/FormControlLabel/src/form-control-label.css';
 import '../../../components/FormGroup/src/form-group.css';
 import '../../../components/IconButton/src/icon-button.css';
 import '../../../components/Icons/src/icon.css';
+import '../../../components/Image/src/index.css';
 import '../../../components/Link/src/link.css';
 import '../../../components/List/src/list-item.css';
 import '../../../components/List/src/list-item-icon.css';
