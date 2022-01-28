@@ -2552,6 +2552,11 @@
     react "^16.8.3"
     util-deprecate "^1.0.2"
 
+"@gemeente-denhaag/baseprops@0.2.3-alpha.63":
+  version "0.2.3-alpha.63"
+  resolved "https://registry.yarnpkg.com/@gemeente-denhaag/baseprops/-/baseprops-0.2.3-alpha.63.tgz#2698f97fcfd2b80c22b02fd288a55eefe1864f78"
+  integrity sha512-44dgUd/fhBF6gNnp+3nTbanIoojK9vSsWAVcs1KteTnUJmGfoGaDVbzao/5Ya9qswJT/4x8ATWLhLmOz9g1mYw==
+
 "@gemeente-denhaag/baseprops@0.2.3-alpha.71":
   version "0.2.3-alpha.71"
   resolved "https://registry.yarnpkg.com/@gemeente-denhaag/baseprops/-/baseprops-0.2.3-alpha.71.tgz#edc6a3cee1c494e6ef9fd299424c3867caa78867"
@@ -2561,6 +2566,14 @@
   version "0.2.3-alpha.73"
   resolved "https://registry.yarnpkg.com/@gemeente-denhaag/baseprops/-/baseprops-0.2.3-alpha.73.tgz#e6e3b9f7ff7ecd7518dfc87951f5871a43797308"
   integrity sha512-e1eX4meLyeAhteCMFwMHU4YZPJcBLyEUHRCqFaLXqwu47jcYv8wtiDAbUfiLKaUj7Yy/hgCyMteWS1moKjuZBQ==
+
+"@gemeente-denhaag/icons@0.2.3-alpha.63":
+  version "0.2.3-alpha.63"
+  resolved "https://registry.yarnpkg.com/@gemeente-denhaag/icons/-/icons-0.2.3-alpha.63.tgz#9a48ea5bbed5922360a4c5f7dc19a4b58292b8ce"
+  integrity sha512-GXys/OcQ9G4l2bnU5bpekNb5XUrsLYvEhxhCZ0Vomy4FkE9qLyfedKaEPM06QYgITopWuctt9Wjx0efBMyMSFg==
+  dependencies:
+    "@gemeente-denhaag/baseprops" "0.2.3-alpha.63"
+    "@material-ui/core" "4.12.3"
 
 "@gemeente-denhaag/icons@0.2.3-alpha.71":
   version "0.2.3-alpha.71"

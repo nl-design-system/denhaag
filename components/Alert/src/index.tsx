@@ -5,7 +5,7 @@ import { Heading4, Paragraph } from '@gemeente-denhaag/typography';
 import { AlertTriangleIcon, CheckCircleIcon, CircleInformationIcon, CloseIcon } from '@gemeente-denhaag/icons';
 import IconButton from '@gemeente-denhaag/iconbutton';
 
-import './alert.css';
+import './index.css';
 import clsx from 'clsx';
 
 export interface AlertProps extends Omit<BaseProps, 'children' | 'classes' | 'tabIndex'> {

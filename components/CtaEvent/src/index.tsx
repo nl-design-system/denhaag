@@ -1,1 +1,1 @@
-import './cta-event.css';
+import './index.css';
