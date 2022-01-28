@@ -1,4 +1,3 @@
-export * from '@gemeente-denhaag/accordion';
 export * from '@gemeente-denhaag/alert';
 export * from '@gemeente-denhaag/avatar';
 export * from '@gemeente-denhaag/badge-counter';
