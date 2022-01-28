@@ -4,7 +4,7 @@ import Tab, { TabProps, TabContext, TabPanel, Tabs } from './index';
 import pkg from '../package.json';
 
 export default {
-  title: 'Components/Navigation/Tab',
+  title: 'React/Navigation/Tab',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {

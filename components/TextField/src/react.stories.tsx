@@ -4,7 +4,7 @@ import pkg from '../package.json';
 import TextField, { TextFieldProps } from './index';
 
 export default {
-  title: 'Components/Input/TextField',
+  title: 'React/Input/TextField',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {

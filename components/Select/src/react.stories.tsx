@@ -7,7 +7,7 @@ import FormControl from '../../FormControl';
 import InputLabel from '../../InputLabel';
 
 export default {
-  title: 'Components/Input/Select',
+  title: 'React/Input/Select',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {

@@ -6,7 +6,7 @@ import pkg from '../package.json';
 import { action } from '@storybook/addon-actions';
 
 export default {
-  title: 'Components/Data Display/List',
+  title: 'React/Data Display/List',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {

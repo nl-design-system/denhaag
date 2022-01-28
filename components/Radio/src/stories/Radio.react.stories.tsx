@@ -7,7 +7,7 @@ import Radio, { RadioProps } from '../index';
 import pkg from '../../package.json';
 
 export default {
-  title: 'Components/Input/Radio/Radio',
+  title: 'React/Input/Radio/Radio',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {

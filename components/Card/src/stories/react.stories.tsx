@@ -4,7 +4,7 @@ import Card, { CardProps } from '../index';
 import pkg from '../../package.json';
 
 export default {
-  title: 'Components/Cards/Card',
+  title: 'React/Cards/Card',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     status: {

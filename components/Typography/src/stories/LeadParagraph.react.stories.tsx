@@ -4,7 +4,7 @@ import { LeadParagraph, LeadParagraphProps } from '../LeadParagraph';
 import pkg from '../../package.json';
 
 export default {
-  title: 'Components/Data Display/Typography/LeadParagraph',
+  title: 'React/Data Display/Typography/LeadParagraph',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
