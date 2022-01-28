@@ -4,7 +4,7 @@ import { Heading2, Heading2Props } from '../Heading2';
 import pkg from '../../package.json';
 
 export default {
-  title: 'Components/Data Display/Typography/Heading2',
+  title: 'React/Data Display/Typography/Heading2',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {

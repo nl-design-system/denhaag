@@ -4,7 +4,7 @@ import Avatar, { AvatarProps } from '../index';
 import pkg from '../../package.json';
 
 export default {
-  title: 'Components/Data Display/Avatar/Avatar',
+  title: 'React/Data Display/Avatar/Avatar',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {

@@ -4,7 +4,7 @@ import { Paragraph, ParagraphProps } from '../Paragraph';
 import pkg from '../../package.json';
 
 export default {
-  title: 'Components/Data Display/Typography/Paragraph',
+  title: 'React/Data Display/Typography/Paragraph',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {

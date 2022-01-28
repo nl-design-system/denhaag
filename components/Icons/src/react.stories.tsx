@@ -7,7 +7,7 @@ import pkg from '../package.json';
 const allIconNames = Object.keys(Icons).filter((iconName) => (iconName === 'default' ? false : true));
 
 export default {
-  title: 'React Components/Data Display/Icons',
+  title: 'React/Data Display/Icons',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {

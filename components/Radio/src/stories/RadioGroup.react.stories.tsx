@@ -6,7 +6,7 @@ import Radio, { RadioGroup, RadioGroupProps } from '../index';
 import pkg from '../../package.json';
 
 export default {
-  title: 'Components/Input/Radio/RadioGroup',
+  title: 'React/Input/Radio/RadioGroup',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
