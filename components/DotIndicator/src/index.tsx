@@ -1,5 +1,5 @@
 import React from 'react';
-import './dot-indicator.css';
+import './index.css';
 import clsx from 'clsx';
 import BaseProps from '@gemeente-denhaag/baseprops';
 

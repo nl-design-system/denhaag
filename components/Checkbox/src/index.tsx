@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import { CheckedIcon, UncheckedBoxIcon } from '@gemeente-denhaag/icons';
 
-import './checkbox.css';
+import './index.css';
 
 export interface CheckboxProps extends Omit<BaseProps, 'classes'> {
   /**
