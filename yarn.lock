@@ -2552,6 +2552,11 @@
     react "^16.8.3"
     util-deprecate "^1.0.2"
 
+"@gemeente-denhaag/baseprops@0.2.3-alpha.63":
+  version "0.2.3-alpha.63"
+  resolved "https://registry.yarnpkg.com/@gemeente-denhaag/baseprops/-/baseprops-0.2.3-alpha.63.tgz#2698f97fcfd2b80c22b02fd288a55eefe1864f78"
+  integrity sha512-44dgUd/fhBF6gNnp+3nTbanIoojK9vSsWAVcs1KteTnUJmGfoGaDVbzao/5Ya9qswJT/4x8ATWLhLmOz9g1mYw==
+
 "@gemeente-denhaag/baseprops@0.2.3-alpha.71":
   version "0.2.3-alpha.71"
   resolved "https://registry.yarnpkg.com/@gemeente-denhaag/baseprops/-/baseprops-0.2.3-alpha.71.tgz#edc6a3cee1c494e6ef9fd299424c3867caa78867"
@@ -2561,6 +2566,14 @@
   version "0.2.3-alpha.73"
   resolved "https://registry.yarnpkg.com/@gemeente-denhaag/baseprops/-/baseprops-0.2.3-alpha.73.tgz#e6e3b9f7ff7ecd7518dfc87951f5871a43797308"
   integrity sha512-e1eX4meLyeAhteCMFwMHU4YZPJcBLyEUHRCqFaLXqwu47jcYv8wtiDAbUfiLKaUj7Yy/hgCyMteWS1moKjuZBQ==
+
+"@gemeente-denhaag/icons@0.2.3-alpha.63":
+  version "0.2.3-alpha.63"
+  resolved "https://registry.yarnpkg.com/@gemeente-denhaag/icons/-/icons-0.2.3-alpha.63.tgz#9a48ea5bbed5922360a4c5f7dc19a4b58292b8ce"
+  integrity sha512-GXys/OcQ9G4l2bnU5bpekNb5XUrsLYvEhxhCZ0Vomy4FkE9qLyfedKaEPM06QYgITopWuctt9Wjx0efBMyMSFg==
+  dependencies:
+    "@gemeente-denhaag/baseprops" "0.2.3-alpha.63"
+    "@material-ui/core" "4.12.3"
 
 "@gemeente-denhaag/icons@0.2.3-alpha.71":
   version "0.2.3-alpha.71"
@@ -16081,9 +16094,11 @@ node-dir@^0.1.10, node-dir@^0.1.17:
     minimatch "^3.0.2"
 
 node-fetch@^2.6.1:
-  version "2.6.1"
-  resolved "https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.1.tgz"
-  integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
+  version "2.6.7"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.7.tgz#24de9fba827e3b4ae44dc8b20256a379160052ad"
+  integrity sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==
+  dependencies:
+    whatwg-url "^5.0.0"
 
 node-forge@^0.10.0:
   version "0.10.0"
@@ -21817,6 +21832,11 @@ tr46@^2.1.0:
   dependencies:
     punycode "^2.1.1"
 
+tr46@~0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
+  integrity sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o=
+
 trim-newlines@^3.0.0:
   version "3.0.1"
   resolved "https://registry.npmjs.org/trim-newlines/-/trim-newlines-3.0.1.tgz"
@@ -22675,6 +22695,11 @@ web-namespaces@^1.0.0:
   resolved "https://registry.npmjs.org/web-namespaces/-/web-namespaces-1.1.4.tgz"
   integrity sha512-wYxSGajtmoP4WxfejAPIr4l0fVh+jeMXZb08wNc0tMg6xsfZXj3cECqIK0G7ZAqUq0PP8WlMDtaOGVBTAWztNw==
 
+webidl-conversions@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-3.0.1.tgz#24534275e2a7bc6be7bc86611cc16ae0a5654871"
+  integrity sha1-JFNCdeKnvGvnvIZhHMFq4KVlSHE=
+
 webidl-conversions@^5.0.0:
   version "5.0.0"
   resolved "https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-5.0.0.tgz"
@@ -22918,6 +22943,14 @@ whatwg-mimetype@^2.3.0:
   version "2.3.0"
   resolved "https://registry.npmjs.org/whatwg-mimetype/-/whatwg-mimetype-2.3.0.tgz"
   integrity sha512-M4yMwr6mAnQz76TbJm914+gPpB/nCwvZbJU28cUD6dR004SAxDLOOSUaB1JDRqLtaOV/vi0IC5lEAGFgrjGv/g==
+
+whatwg-url@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/whatwg-url/-/whatwg-url-5.0.0.tgz#966454e8765462e37644d3626f6742ce8b70965d"
+  integrity sha1-lmRU6HZUYuN2RNNib2dCzotwll0=
+  dependencies:
+    tr46 "~0.0.3"
+    webidl-conversions "^3.0.0"
 
 whatwg-url@^8.0.0, whatwg-url@^8.4.0, whatwg-url@^8.5.0:
   version "8.7.0"

@@ -1,1 +1,1 @@
-import './pagination.css';
+import './index.css';
