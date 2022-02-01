@@ -1,15 +1,16 @@
 .denhaag-page-buttons {
   display: flex;
   flex-direction: column;
-  margin-block-start: 0.75rem;
-  margin-block-end: 2rem;
+  margin-block-start: var(--denhaag-page-buttons-margin-block-start);
+  margin-block-end: var(--denhaag-page-buttons-margin-block-end);
 }
 
 .denhaag-page-buttons__outline-dark-action {
   border-style: solid;
   background-color: var(--denhaag-page-buttons-outline-dark-action-background-color);
-  border-color: var(--denhaag-page-buttons-outline-dark-action-border-color);
-  border-width: var(--denhaag-button-border-width);
+  /* border-color: var(--denhaag-page-buttons-outline-dark-action-border-color);
+  border-width: var(--denhaag-button-border-width); */
+  border: var(--denhaag-button-border-width) solid var(--denhaag-page-buttons-outline-dark-action-border-color);
   color: var(--denhaag-page-buttons-outline-dark-action-color);
   min-width: var(--denhaag-page-buttons-outline-dark-action-min-width);
   margin-inline-end: var(--denhaag-page-buttons-outline-dark-action-margin-inline-end);
