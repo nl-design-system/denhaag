@@ -96,21 +96,6 @@
   padding-inline-start: var(--denhaag-button-large-size-padding-inline, var(--denhaag-button-padding-inline));
 }
 
-.denhaag-button--outline-dark-action {
-  border-style: solid;
-  background-color: var(--denhaag-button-outline-dark-action-background-color);
-  border-color: var(--denhaag-button-outline-dark-action-border-color);
-  border-width: var(--denhaag-button-border-width);
-  color: var(--denhaag-button-outline-dark-action-color);
-}
-
-.denhaag-button--outline-dark-action.denhaag-button--hover,
-.denhaag-button--outline-dark-action:hover {
-  background-color: var(--denhaag-button-secondary-action-hover-background-color);
-  border-color: var(--denhaag-button-secondary-action-hover-border-color);
-  color: var(--denhaag-button-secondary-action-hover-color);
-}
-
 .denhaag-button--large.denhaag-button--secondary-action {
   padding-block-end: calc(
     var(--denhaag-button-large-size-padding-block, var(--denhaag-button-padding-block)) -

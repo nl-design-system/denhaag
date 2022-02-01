@@ -8,8 +8,6 @@
 .denhaag-page-buttons__outline-dark-action {
   border-style: solid;
   background-color: var(--denhaag-page-buttons-outline-dark-action-background-color);
-  /* border-color: var(--denhaag-page-buttons-outline-dark-action-border-color);
-  border-width: var(--denhaag-button-border-width); */
   border: var(--denhaag-button-border-width) solid var(--denhaag-page-buttons-outline-dark-action-border-color);
   color: var(--denhaag-page-buttons-outline-dark-action-color);
   min-width: var(--denhaag-page-buttons-outline-dark-action-min-width);
