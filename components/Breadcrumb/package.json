@@ -22,7 +22,7 @@
   },
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "devDependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-alpha.73"
+    "@gemeente-denhaag/icons": "0.2.3-alpha.93"
   },
   "peerDependencies": {
     "react": "^17.0.0"
