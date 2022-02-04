@@ -96,7 +96,6 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
         <div
           class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
           aria-expanded="false"
-
           tabindex="0"
         >
           <div
