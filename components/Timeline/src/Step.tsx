@@ -64,7 +64,7 @@ export const Step: React.FC<StepProps> = ({
   }
 
   let iconElement: string | React.ReactElement = '';
-  let role = '';
+  let role = undefined;
   if (hasDescription && completed) {
     role = 'button';
     if (isExpanded) {
