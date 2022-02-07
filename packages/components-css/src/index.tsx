@@ -30,6 +30,7 @@ import '@gemeente-denhaag/modal/src/index.css';
 import '../../../components/Note/src/index.css';
 import '@gemeente-denhaag/pagination/src/index.css';
 import '../../../components/PosttypeLabel/src/index.css';
+import '../../../components/PageButtons/src/index.css';
 import '../../../components/PublicationDate/src/index.css';
 import '../../../components/Tab/src/styles/tab.css';
 import '../../../components/Tab/src/styles/tab-panel.css';

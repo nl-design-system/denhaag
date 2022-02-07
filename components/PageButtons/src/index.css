@@ -1,0 +1,75 @@
+.denhaag-page-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-block-start: var(--denhaag-page-buttons-margin-block-start);
+  margin-block-end: var(--denhaag-page-buttons-margin-block-end);
+}
+
+.denhaag-page-buttons__outline-dark-action {
+  background-color: var(--denhaag-page-buttons-outline-dark-action-background-color);
+  border: var(--denhaag-button-border-width) solid var(--denhaag-page-buttons-outline-dark-action-border-color);
+  color: var(--denhaag-page-buttons-outline-dark-action-color);
+  min-width: var(--denhaag-page-buttons-outline-dark-action-min-width);
+  margin-inline-end: var(--denhaag-page-buttons-outline-dark-action-margin-inline-end);
+  align-self: baseline;
+  margin-block-end: var(--denhaag-page-buttons-outline-dark-action-margin-block-end);
+}
+
+.denhaag-page-buttons__outline-dark-action.denhaag-button--hover,
+.denhaag-page-buttons__outline-dark-action:hover {
+  background-color: var(--denhaag-button-secondary-action-hover-background-color);
+  border-color: var(--denhaag-button-secondary-action-hover-border-color);
+  color: var(--denhaag-button-secondary-action-hover-color);
+}
+
+/* Due to the accessibility focus outline overlapping with the border, the outline needs to be repositioned for the border variant */
+.denhaag-page-buttons__outline-dark-action.denhaag-button--focus:after,
+.denhaag-page-buttons__outline-dark-action:focus:after {
+  bottom: -3px;
+  left: -3px;
+  right: -3px;
+  top: -3px;
+}
+
+.denhaag-page-buttons__outline-dark-action__icon {
+  margin-inline-end: var(--denhaag-page-buttons-icon-margin-inline-end);
+  max-height: var(--denhaag-page-buttons-icon-max-height);
+  max-width: var(--denhaag-page-buttons-icon-max-width);
+}
+
+.denhaag-share-button__options {
+  display: none;
+}
+
+.denhaag-page-buttons--open .denhaag-share-button__options {
+  display: flex;
+}
+
+.denhaag-share-button__option {
+  padding-block-start: 0;
+  padding-block-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  min-width: var(--denhaag-page-buttons-option-min-width);
+  min-height: var(--denhaag-page-buttons-option-min-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.denhaag-share-button__option:not(:first-of-type) {
+  margin-inline-start: var(--denhaag-page-buttons-option-margin-inline-start);
+}
+
+.denhaag-share-button__option__icon {
+  color: inherit;
+}
+
+@media (min-width: 640px) {
+  .denhaag-page-buttons {
+    flex-direction: row;
+  }
+  .denhaag-page-buttons__outline-dark-action {
+    margin-block-end: 0;
+  }
+}
