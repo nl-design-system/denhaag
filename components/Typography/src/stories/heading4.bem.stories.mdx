@@ -1,0 +1,29 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+import pkg from "../../package.json";
+import "../heading.css";
+
+<Meta
+  title="CSS/Data Display/Typography/Heading 4"
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "ALPHA",
+    },
+  }}
+/>
+
+<DesignTokenDocBlock categoryName="Heading4" viewType="table" />
+
+## Stories
+
+### Default
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Default">
+    <h4 class="utrecht-heading-4">This is a bit of text inside a Header 4 component.</h4>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>

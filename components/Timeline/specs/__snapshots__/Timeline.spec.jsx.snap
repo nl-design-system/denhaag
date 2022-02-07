@@ -8,7 +8,6 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
         <div
           class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
           aria-expanded="false"
-          role=""
           tabindex="0"
         >
           <div
@@ -62,7 +61,6 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
         <div
           class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
           aria-expanded="false"
-          role=""
           tabindex="0"
         >
           <div class="denhaag-timeline__step-label">
@@ -98,7 +96,6 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
         <div
           class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
           aria-expanded="false"
-          role=""
           tabindex="0"
         >
           <div
@@ -136,7 +133,6 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
         <div
           class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
           aria-expanded="false"
-          role=""
           tabindex="0"
         >
           <div class="denhaag-timeline__step-label">
@@ -240,7 +236,6 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
         <div
           class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
           aria-expanded="false"
-          role=""
           tabindex="0"
         >
           <div
@@ -278,7 +273,6 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
         <div
           class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
           aria-expanded="false"
-          role=""
           tabindex="0"
         >
           <div
@@ -316,7 +310,6 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
         <div
           class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
           aria-expanded="false"
-          role=""
           tabindex="0"
         >
           <div class="denhaag-timeline__step-label">
@@ -420,7 +413,6 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
         <div
           class="MuiStep-root denhaag-timeline__step MuiStep-vertical MuiStep-completed denhaag-timeline__step--completed"
           aria-expanded="false"
-          role=""
           tabindex="0"
         >
           <div
@@ -461,7 +453,6 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
         <div
           class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
           aria-expanded="false"
-          role=""
           tabindex="0"
         >
           <div
@@ -499,7 +490,6 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
         <div
           class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
           aria-expanded="false"
-          role=""
           tabindex="0"
         >
           <div
@@ -617,7 +607,6 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
         <div
           class="MuiStep-root denhaag-timeline__step MuiStep-vertical MuiStep-completed denhaag-timeline__step--completed"
           aria-expanded="false"
-          role=""
           tabindex="0"
         >
           <div
@@ -658,7 +647,6 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
         <div
           class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
           aria-expanded="false"
-          role=""
           tabindex="0"
         >
           <div

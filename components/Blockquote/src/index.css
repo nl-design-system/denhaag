@@ -1,0 +1,36 @@
+.denhaag-blockquote {
+  border-inline-start: var(--denhaag-blockquote-border-width) var(--denhaag-blockquote-border-style)
+    var(--denhaag-blockquote-border-color);
+  padding-block-start: var(--denhaag-blockquote-padding-block-start);
+  padding-block-end: var(--denhaag-blockquote-padding-block-end);
+  padding-inline-start: var(--denhaag-blockquote-padding-inline-start);
+  padding-inline-end: var(--denhaag-blockquote-padding-inline-end);
+}
+
+.denhaag-blockquote__content {
+  margin-block-start: var(--denhaag-blockquote-margin-block-start);
+  margin-block-end: var(--denhaag-blockquote-margin-block-end);
+  margin-inline-start: var(--denhaag-blockquote-margin-inline-start);
+  margin-inline-end: var(--denhaag-blockquote-margin-inline-end);
+}
+
+.denhaag-blockquote__content p {
+  color: var(--denhaag-blockquote-paragraph-color);
+  font-family: var(--denhaag-blockquote-paragraph-font-family);
+  font-size: var(--denhaag-blockquote-paragraph-font-size, 1.25rem);
+  font-weight: var(--denhaag-blockquote-paragraph-font-weight);
+  line-height: var(--denhaag-blockquote-paragraph-line-height);
+  margin-block-start: var(--denhaag-blockquote-margin-block-start);
+  margin-block-end: var(--denhaag-blockquote-margin-block-end);
+}
+
+.denhaag-blockquote__attribution {
+  color: var(--denhaag-blockquote-attribution-color, #4b4b4b);
+  font-family: var(--denhaag-blockquote-attribution-font-family);
+  font-size: var(--denhaag-blockquote-attribution-font-size, 0.75rem);
+  font-weight: var(--denhaag-blockquote-attribution-font-weight);
+  letter-spacing: var(--denhaag-blockquote-attribution-letter-spacing);
+  line-height: var(--denhaag-blockquote-attribution-line-height);
+  margin-block-start: var(--denhaag-blockquote-attribution-margin-block-start);
+  text-transform: var(--denhaag-blockquote-attribution-text-transform);
+}

@@ -82,7 +82,10 @@ describe('Timeline tests', () => {
           },
         },
       ],
-      [{ id: 'color-contrast', issue: 412 }],
+      [
+        { id: 'color-contrast', issue: 412 },
+        { id: 'aria-allowed-attr', issue: 731 },
+      ],
       'Timeline',
     );
   });

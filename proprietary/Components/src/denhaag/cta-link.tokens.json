@@ -1,0 +1,75 @@
+{
+  "denhaag": {
+    "cta-link": {
+      "border-color": {
+        "value": "{denhaag.color.grey.2}"
+      },
+      "color": {
+        "value": "{denhaag.color.grey.3}"
+      },
+      "excerpt-line-height": {
+        "value": "1.3"
+      },
+      "font": {
+        "family": {
+          "value": "{denhaag.typography.sans-serif.font-family}"
+        },
+        "weight": {
+          "value": 400
+        }
+      },
+      "gap": {
+        "value": "{denhaag.space.block.lg}"
+      },
+      "padding": {
+        "block": {
+          "value": "{denhaag.space.block.lg}"
+        },
+        "inline": {
+          "value": "{denhaag.space.inline.md}"
+        }
+      },
+      "highlight": {
+        "color": {
+          "value": "{denhaag.color.blue.3}"
+        },
+        "font-weight": {
+          "value": 700
+        }
+      },
+      "width": {
+        "value": "{denhaag.space.block.5xl}"
+      },
+      "focus": {
+        "highlight": {
+          "color": {
+            "value": "{denhaag.color.blue.4}"
+          }
+        },
+        "outline": {
+          "value": "{denhaag.focus.border}"
+        }
+      },
+      "hover": {
+        "highlight": {
+          "color": {
+            "value": "{denhaag.color.blue.4}"
+          }
+        }
+      },
+      "dot": {
+        "color": {
+          "value": "{denhaag.color.white}"
+        }
+      },
+      "icon": {
+        "size": {
+          "value": "{denhaag.space.block.lg}"
+        }
+      },
+      "text-decoration": {
+        "value": "none"
+      }
+    }
+  }
+}
