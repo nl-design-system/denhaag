@@ -8,7 +8,7 @@ export type TableColGroupProps = ColgroupHTMLAttributes<HTMLTableColElement>;
  * Defines a group of columns within a table.
  */
 export const TableColGroup: React.FC<TableColGroupProps> = ({ className, ...props }: TableColGroupProps) => {
-  const rootClassNames = clsx('denhaag-table__colgroup', className);
+  const rootClassNames = clsx('denhaag-table__col-group', className);
   return (
     <colgroup className={rootClassNames} {...props}>
       {props.children}
