@@ -1,11 +1,25 @@
-import { TextField as MaterialTextField } from '@material-ui/core';
-import React from 'react';
-import { StandardTextFieldProps } from './StandardTextFieldProps';
+import React, { InputHTMLAttributes, RefObject } from 'react';
 
-export type TextFieldProps = StandardTextFieldProps;
+export interface TextFieldProps extends InputHTMLAttributes<HTMLInputElement> {
+  /**
+   * The ref for the actual input HTML element.
+   */
+  inputRef?: RefObject<HTMLInputElement>;
+  /**
+   * Whether the input field is in a error state.
+   */
+  error?: boolean;
+  /**
+   * placeholder text for the input (also used as aria-label).
+   */
+  placeholder?: string;
+}
 
-export const TextField: React.FC<TextFieldProps> = (props: TextFieldProps) => {
-  return <MaterialTextField variant="standard" {...props} />;
+export const TextField: React.FC<TextFieldProps> = ({
+  inputRef = React.useRef<HTMLInputElement>(null),
+  ...props
+}: TextFieldProps) => {
+  return <input ref={inputRef} {...props} />;
 };
 
 /**
