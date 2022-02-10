@@ -72,7 +72,7 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Without Action">
-    <a aria-label="Label" href="https://google.nl/" class="denhaag-cta-image-content">
+    <a aria-label="id-of-h3" href="https://google.nl/" class="denhaag-cta-image-content">
       <div class="denhaag-cta-image-content__column denhaag-cta-image-content__image-wrapper">
         <img
           class="denhaag-cta-image-content__image"
@@ -87,7 +87,7 @@ import readme from "../../README.md";
       <div class="denhaag-cta-image-content__column">
         <div class="denhaag-cta-image-content__content">
           <h3 class="denhaag-cta-image-content__label">Label</h3>
-          <span class="denhaag-cta-image-content__text">Explanational text about the image content link</span>
+          <div class="denhaag-cta-image-content__text">Explanational text about the image content link</div>
         </div>
       </div>
     </a>
@@ -100,7 +100,11 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Focus">
-    <a aria-label="Label" href="https://google.nl/" class="denhaag-cta-image-content denhaag-cta-image-content--focus">
+    <a
+      aria-label="id-of-h3"
+      href="https://google.nl/"
+      class="denhaag-cta-image-content denhaag-cta-image-content--focus"
+    >
       <div class="denhaag-cta-image-content__column denhaag-cta-image-content__image-wrapper">
         <img
           class="denhaag-cta-image-content__image"
@@ -115,8 +119,8 @@ import readme from "../../README.md";
       <div class="denhaag-cta-image-content__column">
         <div class="denhaag-cta-image-content__content">
           <h3 class="denhaag-cta-image-content__label">Label</h3>
-          <span class="denhaag-cta-image-content__text">Explanational text about the image content link</span>
-          <span class="denhaag-button denhaag-button--end-icon denhaag-cta-image-content__button">
+          <div class="denhaag-cta-image-content__text">Explanational text about the image content link</div>
+          <span aria-hidden="true" class="denhaag-button denhaag-button--end-icon denhaag-cta-image-content__button">
             Label
             <span class="denhaag-button__icon">
               <svg
@@ -144,7 +148,11 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Hover">
-    <a aria-label="Label" href="https://google.nl/" class="denhaag-cta-image-content denhaag-cta-image-content--hover">
+    <a
+      aria-label="id-of-h3"
+      href="https://google.nl/"
+      class="denhaag-cta-image-content denhaag-cta-image-content--hover"
+    >
       <div class="denhaag-cta-image-content__column denhaag-cta-image-content__image-wrapper">
         <img
           class="denhaag-cta-image-content__image"
@@ -159,8 +167,8 @@ import readme from "../../README.md";
       <div class="denhaag-cta-image-content__column">
         <div class="denhaag-cta-image-content__content">
           <h3 class="denhaag-cta-image-content__label">Label</h3>
-          <span class="denhaag-cta-image-content__text">Explanational text about the image content link</span>
-          <span class="denhaag-button denhaag-button--end-icon denhaag-cta-image-content__button">
+          <div class="denhaag-cta-image-content__text">Explanational text about the image content link</div>
+          <span aria-hidden="true" class="denhaag-button denhaag-button--end-icon denhaag-cta-image-content__button">
             Label
             <span class="denhaag-button__icon">
               <svg
