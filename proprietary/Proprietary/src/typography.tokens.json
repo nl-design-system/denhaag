@@ -1,6 +1,10 @@
 {
   "denhaag": {
     "typography": {
+      "weight": {
+        "regular": { "value": "400" },
+        "bold": { "value": "700" }
+      },
       "sans-serif": {
         "font-family": {
           "value": "\"TheSans\", sans-serif"
