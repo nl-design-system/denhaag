@@ -1,0 +1,24 @@
+{
+  "name": "@gemeente-denhaag/cta-image-content",
+  "version": "0.1.1-alpha.2",
+  "description": "The CtaImageContent component",
+  "bugs": "https://github.com/nl-design-system/denhaag/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nl-design-system/denhaag.git",
+    "directory": "components/CtaImageContent"
+  },
+  "license": "EUPL-1.2",
+  "author": "Municipality of The Hague",
+  "exports": "./dist/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c ../../rollup.config.js",
+    "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+  }
+}
