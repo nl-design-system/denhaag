@@ -1,10 +1,7 @@
-import React, { InputHTMLAttributes, RefObject } from 'react';
+import React, { ForwardedRef, forwardRef, InputHTMLAttributes } from 'react';
+import './index.scss';
 
 export interface TextFieldProps extends InputHTMLAttributes<HTMLInputElement> {
-  /**
-   * The ref for the actual input HTML element.
-   */
-  inputRef?: RefObject<HTMLInputElement>;
   /**
    * Whether the input field is in a error state.
    */
@@ -15,14 +12,15 @@ export interface TextFieldProps extends InputHTMLAttributes<HTMLInputElement> {
   placeholder?: string;
 }
 
-export const TextField: React.FC<TextFieldProps> = ({
-  inputRef = React.useRef<HTMLInputElement>(null),
-  ...props
-}: TextFieldProps) => {
-  return <input ref={inputRef} {...props} />;
-};
+export const TextField: React.FC<TextFieldProps> = forwardRef(function DenHaagTextField(
+  props: TextFieldProps,
+  ref: ForwardedRef<HTMLInputElement>,
+) {
+  return (
+    <div className={'denhaag-textfield'}>
+      <input className={'denhaag-textfield__input'} ref={ref} {...props} />
+    </div>
+  );
+});
 
-/**
- * Default export for TextField
- */
 export default TextField;
