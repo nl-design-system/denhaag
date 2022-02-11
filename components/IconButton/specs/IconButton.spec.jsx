@@ -1,5 +1,5 @@
 import * as React from 'react';
-import IconButton from '../src';
+import IconButton from '../dist';
 import { TrashIcon } from '../../Icons';
 
 describe('IconButton tests', () => {

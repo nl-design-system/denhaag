@@ -1,5 +1,5 @@
 import * as React from 'react';
-import List, { ListItem, ListSubheader } from '../src';
+import List, { ListItem, ListSubheader } from '../dist';
 import { HouseIcon, TrashIcon } from '../../Icons';
 
 describe(`List tests`, () => {

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import BadgeCounter from '../src';
+import BadgeCounter from '../dist';
 
 describe(`BadgeCounter tests`, () => {
   it('a11y and snapshots', () => {

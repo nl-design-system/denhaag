@@ -1,5 +1,5 @@
 import * as React from 'react';
-import FormControlLabel from '../src';
+import FormControlLabel from '../dist';
 import Checkbox from '../../Checkbox';
 
 describe(`FormControlLabel tests`, () => {

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Tab, { TabContext, TabPanel, Tabs } from '../src';
+import Tab, { TabContext, TabPanel, Tabs } from '../dist';
 
 describe('Tab tests', () => {
   // TODO: fix tab tests.
