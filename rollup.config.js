@@ -7,7 +7,6 @@ import path from 'path';
 import postcss from 'rollup-plugin-postcss';
 
 import tsconfig from './tsconfig.json';
-import scss from 'rollup-plugin-scss';
 
 const externalDependencies = [
   '@material-ui/core',
@@ -30,12 +29,8 @@ export default {
     compact: true,
   },
   plugins: [
-    scss({
-      include: ['*.css', '*.scss'],
-      failOnError: true,
-    }),
     postcss({
-      extensions: ['.css'],
+      extensions: ['.css', '.scss'],
       minimize: true,
     }),
     nodeResolve(),
