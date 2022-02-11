@@ -1,0 +1,35 @@
+@import "~@utrecht/components/textbox/bem";
+
+.denhaag-textfield {
+  position: relative;
+}
+
+.denhaag-textfield--focus-within::after,
+.denhaag-textfield:focus-within::after {
+  border: var(--denhaag-focus-border);
+  border-radius: var(--denhaag-border-radius);
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+}
+
+.denhaag-textfield__input {
+  @extend .utrecht-textbox;
+}
+
+.denhaag-textfield__input:focus-visible {
+  outline: none;
+}
+
+.denhaag-textfield__input:disabled,
+.denhaag-textfield__input--disabled {
+  @extend .utrecht-textbox--disabled;
+}
+
+.denhaag-textfield__input::placeholder {
+  @extend .utrecht-textbox__placeholder;
+}

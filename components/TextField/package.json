@@ -22,8 +22,7 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "0.2.3-alpha.110",
-    "@material-ui/core": "4.12.3"
+    "@utrecht/components": "1.0.0-alpha.139"
   },
   "peerDependencies": {
     "react": "^17.0.0"
