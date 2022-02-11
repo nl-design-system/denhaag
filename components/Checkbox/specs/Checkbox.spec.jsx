@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Checkbox from '../src';
+import Checkbox from '../dist';
 import FormControlLabel from '../../FormControlLabel';
 import FormGroup from '../../FormGroup';
 import { HideIcon, ShowIcon } from '../../Icons';

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Menu, { MenuButton, MenuButtonExpandable } from '../src';
+import Menu, { MenuButton, MenuButtonExpandable } from '../dist';
 
 describe('Menu tests', () => {
   // Starting with functionality tests

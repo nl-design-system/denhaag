@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Button from '../src';
+import Button from '../dist';
 import { DownloadIcon } from '@gemeente-denhaag/icons';
 
 describe('Button tests', () => {
