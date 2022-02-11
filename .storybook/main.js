@@ -13,6 +13,7 @@ module.exports = {
         backgrounds: false,
       },
     },
+    '@storybook/preset-scss',
     'storybook-addon-themes',
     'storybook-design-token',
     '@etchteam/storybook-addon-status/register',
@@ -27,7 +28,6 @@ module.exports = {
       test: /\.svg$/,
       use: ['@svgr/webpack'],
     });
-
     return config;
   },
   babel: async (options) => {

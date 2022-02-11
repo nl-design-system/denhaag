@@ -11,7 +11,7 @@ import '../../../components/CtaDownload/src/index.css';
 import '../../../components/CtaEvent/src/index.css';
 import '../../../components/CtaLink/src/index.css';
 import '../../../components/DescriptionList/src/index.css';
-import '../../../components/Divider/src/index.css';
+import '../../../components/Divider/src/index.scss';
 import '../../../components/DotIndicator/src/index.css';
 import '../../../components/EventDate/src/index.css';
 import '../../../components/FormControlLabel/src/index.css';
