@@ -185,8 +185,8 @@ const ReactCheckBox = <Checkbox onChange={() => {}}></Checkbox>;
 ❗️ Toggling the custom checkbox icon requires additional javascript
 
 <Canvas>
+  {/* eslint-disable react/no-unknown-property */}
   <Story name="HTML Checkbox" args={{}}>
-    {/* eslint-disable react/no-unknown-property */}
     {() => (
       <div>
         <div>
@@ -356,6 +356,6 @@ const ReactCheckBox = <Checkbox onChange={() => {}}></Checkbox>;
         </div>
       </div>
     )}
-    {/* eslint-enable react/no-unknown-property */}
   </Story>
+  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
