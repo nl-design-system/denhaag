@@ -1,7 +1,7 @@
 import React from 'react';
 import { DotIndicator } from '@gemeente-denhaag/dotindicator';
 import BaseProps from '@gemeente-denhaag/baseprops';
-import './index.css';
+import './index.scss';
 import clsx from 'clsx';
 
 export type BadgeCounterProps = Omit<BaseProps, 'tabIndex' | 'classes'>;

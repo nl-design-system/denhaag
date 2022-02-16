@@ -2,7 +2,7 @@ import React from 'react';
 import SvgIcon, { SvgIconProps } from './SvgIcon';
 
 import { classes } from './bem-mapping';
-import './index.css';
+import './index.scss';
 
 // Arrows
 import ArrowLeftSvg from './svg/arrows/arrow-left.svg';

@@ -4,8 +4,8 @@ import { BaseClassesProps } from '@gemeente-denhaag/baseprops';
 
 import { classes } from './bem-mapping';
 
-import './index.css';
-import './mui-override.css';
+import './index.scss';
+import './mui-override.scss';
 
 export interface FormControlLabelProps extends BaseClassesProps {
   /**

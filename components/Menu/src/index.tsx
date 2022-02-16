@@ -1,5 +1,5 @@
 import React from 'react';
-import './menu.css';
+import './menu.scss';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import clsx from 'clsx';
 

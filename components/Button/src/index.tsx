@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';
+import './index.scss';
 import clsx from 'clsx';
 import { SvgIconProps } from '@gemeente-denhaag/icons';
 
