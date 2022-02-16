@@ -4,12 +4,12 @@ import BaseProps from '@gemeente-denhaag/baseprops';
 import { ListSubheaderProps } from './ListSubheader';
 import { list_classes as classes } from './bem-mapping';
 
-import './mui-override.css';
-import './list-item.css';
-import './list-item-secondary-action.css';
-import './list-item-icon.css';
-import './list-item-text.css';
-import './list-subheader.css';
+import './mui-override.scss';
+import './list-item.scss';
+import './list-item-secondary-action.scss';
+import './list-item-icon.scss';
+import './list-item-text.scss';
+import './list-subheader.scss';
 
 export interface ListProps extends Omit<BaseProps, 'classes'> {
   /**

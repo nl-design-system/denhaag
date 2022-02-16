@@ -1,8 +1,8 @@
 import React from 'react';
 import { IconButton as MaterialIconButton } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
-import './mui-override.css';
-import './index.css';
+import './mui-override.scss';
+import './index.scss';
 import clsx from 'clsx';
 
 export interface IconButtonProps extends BaseProps {

@@ -3,7 +3,7 @@ import BaseProps, { OverridableComponent } from '@gemeente-denhaag/baseprops';
 import { SvgIconProps } from '@gemeente-denhaag/icons';
 import clsx from 'clsx';
 
-import './index.css';
+import './index.scss';
 
 export interface LinkProps extends Omit<BaseProps, 'classes'> {
   /**

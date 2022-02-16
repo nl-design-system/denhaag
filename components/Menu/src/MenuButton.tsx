@@ -3,7 +3,7 @@ import BaseProps from '@gemeente-denhaag/baseprops';
 import { ChevronDownIcon } from '@gemeente-denhaag/icons';
 import clsx from 'clsx';
 
-import './menu-button.css';
+import './menu-button.scss';
 
 /**
  * The properties of the normal variant of the Menu Button

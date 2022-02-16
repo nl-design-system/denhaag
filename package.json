@@ -48,7 +48,8 @@
     "@material-ui/core": "4.12.3",
     "@material-ui/lab": "4.11.3-deprecations.1",
     "@utrecht/component-library-css": "1.0.0-alpha.171",
-    "clsx": "1.1.1"
+    "clsx": "1.1.1",
+    "sass": "1.49.7"
   },
   "devDependencies": {
     "@babel/core": "7.17.0",
@@ -67,6 +68,7 @@
     "@storybook/addon-essentials": "6.4.18",
     "@storybook/addon-links": "6.4.18",
     "@storybook/addons": "6.4.18",
+    "@storybook/preset-scss": "1.0.3",
     "@storybook/react": "6.4.18",
     "@svgr/rollup": "5.5.0",
     "@svgr/webpack": "5.5.0",

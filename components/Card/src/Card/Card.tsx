@@ -2,8 +2,8 @@ import React, { createRef } from 'react';
 import { Card as MaterialCard, Icon, Typography } from '@material-ui/core';
 import { ArrowRightIcon } from '@gemeente-denhaag/icons';
 import BaseProps from '@gemeente-denhaag/baseprops';
-import './mui-override.css';
-import './card.css';
+import './mui-override.scss';
+import './card.scss';
 import {
   cardArrowClasses,
   cardCaseClasses,

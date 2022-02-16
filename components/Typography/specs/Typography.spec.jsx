@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Heading1, Heading2, Heading3, Heading4, Heading5, Paragraph, LeadParagraph } from '../src';
+import { Heading1, Heading2, Heading3, Heading4, Heading5, Paragraph, LeadParagraph } from '../dist';
 
 describe(`Typography tests`, () => {
   it('a11y and snapshots', () => {

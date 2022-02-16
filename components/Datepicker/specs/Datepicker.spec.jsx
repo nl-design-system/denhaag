@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { formatISO, format, subMonths } from 'date-fns';
-import Datepicker from '../src';
+import Datepicker from '../dist';
 import { nl, enUS } from '../src/locale';
 
 describe(`Datepicker tests`, () => {
