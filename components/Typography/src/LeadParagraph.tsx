@@ -1,6 +1,6 @@
 import React from 'react';
 import BaseDataDisplayProps from '@gemeente-denhaag/basedatadisplayprops';
-import './paragraph.css';
+import './paragraph.scss';
 import clsx from 'clsx';
 
 export type LeadParagraphProps = Omit<BaseDataDisplayProps, 'classes'>;

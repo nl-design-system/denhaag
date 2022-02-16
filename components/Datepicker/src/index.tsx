@@ -31,7 +31,7 @@ import { nl } from './locale';
 
 import { CalendarIcon, AlertTriangleIcon, ChevronRightIcon, ChevronLeftIcon } from '@gemeente-denhaag/icons';
 
-import './index.css';
+import './index.scss';
 
 export interface DatepickerProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'onChange'> {
   /**

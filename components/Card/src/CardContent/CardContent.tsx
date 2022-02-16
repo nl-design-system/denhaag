@@ -1,7 +1,7 @@
 import React from 'react';
 import { CardContent as MaterialCardContent } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
-import './mui-override.css';
+import './mui-override.scss';
 import { CardContentClasses } from './bem-mapping';
 
 export type CardContentProps = BaseProps;

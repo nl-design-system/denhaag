@@ -1,8 +1,8 @@
 import React from 'react';
 import { Tabs as MaterialTabs } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
-import './styles/tabs.css';
-import './styles/mui-override.css';
+import './styles/tabs.scss';
+import './styles/mui-override.scss';
 import clsx from 'clsx';
 
 export interface TabsProps extends Omit<BaseProps, 'classes'> {

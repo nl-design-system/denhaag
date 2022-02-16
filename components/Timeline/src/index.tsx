@@ -1,11 +1,11 @@
 import Timeline from './Timeline';
 
-import './styles/mui-override.css';
-import './styles/step-content.css';
-import './styles/step-icon.css';
-import './styles/step-label.css';
-import './styles/step.css';
-import './styles/timeline.css';
+import './styles/mui-override.scss';
+import './styles/step-content.scss';
+import './styles/step-icon.scss';
+import './styles/step-label.scss';
+import './styles/step.scss';
+import './styles/timeline.scss';
 
 export default Timeline;
 export * from './Step';
