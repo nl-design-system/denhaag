@@ -7,12 +7,13 @@
       "border-width": { "value": "1px" },
       "color": { "value": "{denhaag.color.grey.4}" },
       "font-family": { "value": "{utrecht.document.font-family}" },
-      "padding-block-end": { "value": "8px" },
-      "padding-block-start": { "value": "8px" },
-      "padding-inline-end": { "value": "16px" },
-      "padding-inline-start": { "value": "16px" },
+      "font-size": { "value": "{denhaag.typography.scale.base.font-size}" },
+      "padding-block-end": { "value": "12px" },
+      "padding-block-start": { "value": "12px" },
+      "padding-inline-end": { "value": "12px" },
+      "padding-inline-start": { "value": "12px" },
       "placeholder": {
-        "color": { "value": "{denhaag.color.grey.3}" }
+        "color": { "value": "{denhaag.color.grey.4}" }
       },
       "disabled": {
         "border-color": { "value": "{denhaag.color.grey.2}" },
@@ -20,7 +21,7 @@
       },
       "invalid": {
         "border-color": { "value": "{denhaag.color.red.3}" },
-        "border-width": { "value": "2px" }
+        "border-width": { "value": "1px" }
       }
     }
   }
