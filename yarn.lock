@@ -5195,6 +5195,13 @@
   resolved "https://registry.yarnpkg.com/@utrecht/component-library-css/-/component-library-css-1.0.0-alpha.171.tgz#cc3e371322565bed5367a32f8468fd4e30341deb"
   integrity sha512-QExsa6mTrvtn6fQMcOPczq8+x4siJ1ZrmTBwMBttWGDChgnsrZsBychcdqTtIsSxfOJHtTELHeE5NHNsG/yDDw==
 
+"@utrecht/components@1.0.0-alpha.139":
+  version "1.0.0-alpha.139"
+  resolved "https://registry.yarnpkg.com/@utrecht/components/-/components-1.0.0-alpha.139.tgz#c28d5a59ccec66c9efbb9474b1786acbb5711936"
+  integrity sha512-Xp+WNbpfislGcrcOR4ycxANfdjDWlCJ4ZzW+qsVGZeRbUIGSgRC5oRLlVwUvPb4qWY0Budeik9qfZy/3xrw7aQ==
+  dependencies:
+    clsx "1.1.1"
+
 "@utrecht/components@1.0.0-alpha.140":
   version "1.0.0-alpha.140"
   resolved "https://registry.yarnpkg.com/@utrecht/components/-/components-1.0.0-alpha.140.tgz#537b0d1da3f978a4cd8f79fa3af6aa67818618db"

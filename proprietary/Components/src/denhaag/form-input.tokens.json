@@ -1,0 +1,9 @@
+{
+  "denhaag": {
+    "form-input": {
+      "line-height": {
+        "value": "{denhaag.typography.scale.base.line-height}"
+      }
+    }
+  }
+}

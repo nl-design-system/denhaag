@@ -1,5 +1,6 @@
 import React, { ForwardedRef, forwardRef, InputHTMLAttributes } from 'react';
 import './index.scss';
+import clsx from 'clsx';
 
 export interface TextFieldProps extends InputHTMLAttributes<HTMLInputElement> {
   /**
@@ -16,9 +17,14 @@ export const TextField: React.FC<TextFieldProps> = forwardRef(function DenHaagTe
   props: TextFieldProps,
   ref: ForwardedRef<HTMLInputElement>,
 ) {
+  const inputClasses = clsx('denhaag-textfield__input', {
+    'denhaag-textfield__input--invalid': props.error,
+    'denhaag-textfield__input--disabled': props.disabled,
+  });
+
   return (
     <div className={'denhaag-textfield'}>
-      <input className={'denhaag-textfield__input'} ref={ref} {...props} />
+      <input className={inputClasses} ref={ref} {...props} />
     </div>
   );
 });

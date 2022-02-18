@@ -19,6 +19,8 @@
 
 .denhaag-textfield__input {
   @extend .utrecht-textbox;
+
+  line-height: var(--denhaag-form-input-line-height);
 }
 
 .denhaag-textfield__input:focus-visible {
@@ -32,4 +34,9 @@
 
 .denhaag-textfield__input::placeholder {
   @extend .utrecht-textbox__placeholder;
+}
+
+.denhaag-textfield__input:invalid,
+.denhaag-textfield__input--invalid {
+  @extend .utrecht-textbox--invalid;
 }
