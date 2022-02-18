@@ -1,5 +1,6 @@
 .denhaag-breadcrumb {
   --denhaag-breadcrumb-background-color: transparent;
+
   color: var(--denhaag-breadcrumb-color, inherit);
 }
 
@@ -47,6 +48,7 @@ ol.denhaag-breadcrumb__list {
 .denhaag-breadcrumb__link:focus,
 .denhaag-breadcrumb__link--focus {
   --denhaag-breadcrumb-link-color: var(--denhaag-breadcrumb-link-focus-color, inherit);
+
   outline: var(--denhaag-breadcrumb-link-focus-outline, var(--denhaag-link-focus-outline));
 }
 
@@ -54,6 +56,7 @@ ol.denhaag-breadcrumb__list {
 .denhaag-breadcrumb__link.denhaag-link--current,
 .denhaag-breadcrumb__item:last-child > .denhaag-breadcrumb__link {
   --denhaag-breadcrumb-link-color: var(--denhaag-breadcrumb-current-color, var(--denhaag-breadcrumb-color, inherit));
+
   text-decoration: none;
 }
 
@@ -91,7 +94,7 @@ ol.denhaag-breadcrumb__list {
   text-indent: calc(var(--denhaag-breadcrumb-spacing, 8px) * 3);
 }
 
-.denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(2)):not(:last-child) .denhaag-breadcrumb__text:before {
+.denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(2)):not(:last-child) .denhaag-breadcrumb__text::before {
   color: var(--denhaag-breadcrumb-dots-color, inherit);
   content: "...";
   left: calc(50% - 7px);

@@ -43,7 +43,7 @@
   --denhaag-modal-display: flex;
 }
 
-.denhaag-modal:after {
+.denhaag-modal::after {
   background-color: var(--denhaag-modal-overlay-background-color);
   bottom: 0;
   content: "";
@@ -95,7 +95,6 @@
 .denhaag-modal__content p {
   margin-block-start: 0;
   margin-block-end: 0;
-
   color: inherit;
   font-family: inherit;
   font-size: inherit;
@@ -111,7 +110,7 @@
   max-height: calc(100% - (var(--denhaag-modal-offset-y) * 2));
   max-width: var(--denhaag-modal-width);
   position: relative;
-  pointer-events: visiblePainted;
+  pointer-events: visiblepainted;
   width: auto;
 }
 

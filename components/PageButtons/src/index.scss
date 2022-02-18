@@ -23,8 +23,8 @@
 }
 
 /* Due to the accessibility focus outline overlapping with the border, the outline needs to be repositioned for the border variant */
-.denhaag-page-buttons__outline-dark-action.denhaag-button--focus:after,
-.denhaag-page-buttons__outline-dark-action:focus:after {
+.denhaag-page-buttons__outline-dark-action.denhaag-button--focus::after,
+.denhaag-page-buttons__outline-dark-action:focus::after {
   bottom: -3px;
   left: -3px;
   right: -3px;

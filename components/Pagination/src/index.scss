@@ -41,7 +41,6 @@
   text-align: center;
   text-decoration: none;
   width: var(--denhaag-pagination-size);
-
   font-style: normal;
   font-weight: var(--denhaag-pagination-font-weight);
   font-size: var(--denhaag-pagination-font-size);
@@ -60,6 +59,7 @@
 .denhaag-pagination__link:disabled,
 .denhaag-pagination__link--disabled {
   --denhaag-pagination-color: var(--denhaag-pagination-link-disabled-color);
+
   pointer-events: none;
 }
 
@@ -83,7 +83,7 @@
   text-indent: calc(var(--denhaag-pagination-size) * 2);
 }
 
-.denhaag-pagination__link:not(:first-child):not(:last-child):not(.denhaag-pagination__link--current):not([rel]):before {
+.denhaag-pagination__link:not(:first-child):not(:last-child):not(.denhaag-pagination__link--current):not([rel])::before {
   content: "...";
   left: calc(50% - 7px);
   line-height: 0;

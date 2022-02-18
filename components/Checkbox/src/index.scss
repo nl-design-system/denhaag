@@ -18,20 +18,17 @@
   background-color: transparent;
   -webkit-appearance: none;
   -webkit-tap-highlight-color: transparent;
-
   width: 24px;
   height: 24px;
-
   margin-inline-start: var(--denhaag-checkbox-margin-inline-start);
   margin-inline-end: var(--denhaag-checkbox-margin-inline-end);
   margin-block-start: var(--denhaag-checkbox-margin-block-start);
   margin-block-end: var(--denhaag-checkbox-margin-block-end);
-
   color: var(--denhaag-checkbox-normal-unchecked-color);
 }
 
-.denhaag-checkbox:focus-within:after,
-.denhaag-checkbox--focus:after {
+.denhaag-checkbox:focus-within::after,
+.denhaag-checkbox--focus::after {
   content: "";
   display: block;
   position: absolute;
