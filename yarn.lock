@@ -4793,15 +4793,10 @@
     "@types/node" "*"
     form-data "^3.0.0"
 
-"@types/node@*":
-  version "17.0.16"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.16.tgz#e3733f46797b9df9e853ca9f719c8a6f7b84cd26"
-  integrity sha512-ydLaGVfQOQ6hI1xK2A5nVh8bl0OGoIfYMxPWHqqYe9bTkWCfqiVvZoh2I/QF2sNSkZzZyROBoTefIEI+PB6iIA==
-
-"@types/node@16.11.22":
-  version "16.11.22"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.22.tgz#e704150225bfc4195f8ce68a7ac8da02b753549a"
-  integrity sha512-DYNtJWauMQ9RNpesl4aVothr97/tIJM8HbyOXJ0AYT1Z2bEjLHyfjOBPAQQVMLf8h3kSShYfNk8Wnto8B2zHUA==
+"@types/node@*", "@types/node@17.0.19":
+  version "17.0.19"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.19.tgz#726171367f404bfbe8512ba608a09ebad810c7e6"
+  integrity sha512-PfeQhvcMR4cPFVuYfBN4ifG7p9c+Dlh3yUZR6k+5yQK7wX3gDgVxBly4/WkBRs9x4dmcy1TVl08SY67wwtEvmA==
 
 "@types/node@^14.0.10", "@types/node@^14.14.31":
   version "14.18.10"
@@ -5194,6 +5189,13 @@
   version "1.0.0-alpha.171"
   resolved "https://registry.yarnpkg.com/@utrecht/component-library-css/-/component-library-css-1.0.0-alpha.171.tgz#cc3e371322565bed5367a32f8468fd4e30341deb"
   integrity sha512-QExsa6mTrvtn6fQMcOPczq8+x4siJ1ZrmTBwMBttWGDChgnsrZsBychcdqTtIsSxfOJHtTELHeE5NHNsG/yDDw==
+
+"@utrecht/components@1.0.0-alpha.140":
+  version "1.0.0-alpha.140"
+  resolved "https://registry.yarnpkg.com/@utrecht/components/-/components-1.0.0-alpha.140.tgz#537b0d1da3f978a4cd8f79fa3af6aa67818618db"
+  integrity sha512-4c9F4acWUdYS1tQrvHBseKefcPR5GqGcSiY3pTPzH1WJ+CW7wx+m1zwq7JLdQ0R5yLCgWF/cFJjq+7AAOeDZ9w==
+  dependencies:
+    clsx "1.1.1"
 
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
