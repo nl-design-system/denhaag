@@ -29,7 +29,7 @@
         },
         "base": {
           "font-size": {
-            "value": "1rem"
+            "value": "1.125rem"
           },
           "line-height": { "value": 1.5 }
         },
