@@ -17,7 +17,9 @@
 }
 
 .denhaag-button--focus::after,
-.denhaag-button:focus::after {
+.denhaag-button:focus::after,
+.denhaag-button--focus-visible::after,
+.denhaag-button:focus-visible::after {
   border: var(--denhaag-focus-border);
   border-radius: var(--denhaag-border-radius);
   bottom: -2px;
@@ -27,6 +29,11 @@
   position: absolute;
   right: -2px;
   top: -2px;
+}
+
+.denhaag-button--focus-visible,
+.denhaag-button:focus-visible {
+  outline: none;
 }
 
 /* Due to the accessibility focus outline overlapping with the border, the outline needs to be repositioned for the border variant */
@@ -90,6 +97,7 @@
 
 .denhaag-button--large {
   font-size: var(--denhaag-typography-scale-lg-font-size);
+  line-height: var(--denhaag-typography-scale-base-line-height);
   padding-block-end: var(--denhaag-button-large-size-padding-block, var(--denhaag-button-padding-block));
   padding-block-start: var(--denhaag-button-large-size-padding-block, var(--denhaag-button-padding-block));
   padding-inline-end: var(--denhaag-button-large-size-padding-inline, var(--denhaag-button-padding-inline));
@@ -133,12 +141,4 @@
   display: inherit;
   margin-inline-end: -4px;
   margin-inline-start: 8px;
-}
-
-.denhaag-button--large.denhaag-button--start-icon .denhaag-button__icon {
-  margin-inline-end: 12px;
-}
-
-.denhaag-button--large.denhaag-button--end-icon .denhaag-button__icon {
-  margin-inline-start: 12px;
 }
