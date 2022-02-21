@@ -2,7 +2,7 @@
   "denhaag": {
     "focus": {
       "background-color": {},
-      "border-color": { "value": "{denhaag.color.ocher.4}" },
+      "border-color": { "value": "{denhaag.color.ocher.5}" },
       "border-width": { "value": "2px" },
       "border-style": { "value": "dashed" },
       "border": {
