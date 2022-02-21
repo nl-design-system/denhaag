@@ -4,7 +4,7 @@
       "border-radius": { "value": "{denhaag.border-radius}" },
       "border-width": { "value": "1px" },
       "font-family": { "value": "{denhaag.typography.sans-serif.font-family}" },
-      "padding-block": { "value": "6px" },
+      "padding-block": { "value": "8px" },
       "padding-inline": { "value": "16px" },
       "focus": {
         "border-color": { "value": "{denhaag.focus.border-color}" },
@@ -42,7 +42,7 @@
         }
       },
       "large-size": {
-        "padding-block": { "value": "6px" },
+        "padding-block": { "value": "11px" },
         "padding-inline": { "value": "20px" }
       },
       "medium-size": {
