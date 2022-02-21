@@ -15,7 +15,7 @@
           "value": "{denhaag.typography.sans-serif.font-family}"
         },
         "weight": {
-          "value": 400
+          "value": "{denhaag.typography.weight.regular}"
         }
       },
       "gap": {
@@ -23,7 +23,7 @@
       },
       "padding": {
         "block": {
-          "value": "{denhaag.space.block.lg}"
+          "value": "{denhaag.space.block.xl}"
         },
         "inline": {
           "value": "{denhaag.space.inline.md}"
@@ -34,7 +34,7 @@
           "value": "{denhaag.color.blue.3}"
         },
         "font-weight": {
-          "value": 700
+          "value": "{denhaag.typography.weight.bold}"
         }
       },
       "width": {

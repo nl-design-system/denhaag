@@ -15,7 +15,7 @@
           "value": "{denhaag.typography.scale.lg.font-size}"
         },
         "weight": {
-          "value": 400
+          "value": "{denhaag.typography.weight.regular}"
         }
       },
       "line-height": {
@@ -26,7 +26,7 @@
       },
       "padding": {
         "block": {
-          "value": "{denhaag.space.block.lg}"
+          "value": "{denhaag.space.block.xl}"
         },
         "inline": {
           "value": "{denhaag.space.inline.md}"
@@ -71,7 +71,7 @@
             "value": "{denhaag.typography.scale.lg.font-size}"
           },
           "weight": {
-            "value": 700
+            "value": "{denhaag.typography.weight.bold}"
           }
         }
       }
