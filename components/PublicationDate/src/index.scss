@@ -1,6 +1,6 @@
 .denhaag-publication-date {
-  color: var(--denhaag-publication-date-color, #4b4b4b);
-  font-family: var(--denhaag-publication-date-font-family, inherit);
+  color: var(--denhaag-publication-date-color);
+  font-family: var(--denhaag-publication-date-font-family);
   font-weight: var(--denhaag-publication-date-font-weight);
   font-size: var(--denhaag-publication-date-font-size);
 }
@@ -17,7 +17,9 @@
   }
 
   .denhaag-publication-date__published {
-    border-inline-end: var(--denhaag-publication-date-border);
+    border-inline-end-color: var(--denhaag-publication-date-border-color);
+    border-inline-end-style: var(--denhaag-publication-date-border-style);
+    border-inline-end-width: var(--denhaag-publication-date-border-width);
     margin-inline-end: var(--denhaag-publication-date-margin);
     padding-inline-end: var(--denhaag-publication-date-padding);
   }
