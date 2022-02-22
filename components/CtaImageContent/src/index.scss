@@ -5,9 +5,9 @@
   text-decoration: none;
 }
 
-.denhaag-cta-image-content--focus:after,
-.denhaag-cta-image-content:focus:after,
-.denhaag-cta-image-content:focus-within:after {
+.denhaag-cta-image-content--focus::after,
+.denhaag-cta-image-content:focus::after,
+.denhaag-cta-image-content:focus-within::after {
   border: var(--denhaag-focus-border);
   border-radius: var(--denhaag-border-radius);
   bottom: -3px;
