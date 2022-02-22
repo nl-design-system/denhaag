@@ -5,7 +5,7 @@ import pkg from "../../package.json";
 import readme from "../../README.md";
 
 <Meta
-  title="React/Data Display/Badge Counter"
+  title="CSS/Data Display/Badge Counter"
   component={BadgeCounter}
   parameters={{
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
@@ -23,7 +23,18 @@ import readme from "../../README.md";
 ### Default
 
 <Canvas>
-  <Story name="Default">{(args) => <BadgeCounter {...args}>13</BadgeCounter>}</Story>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Default">
+    {() => (
+      <div class="denhaag-badge-counter">
+        <div class="denhaag-dot-indicator denhaag-dot-indicator--overlap-rectangle">
+          <div class="denhaag-badge-counter__counter">220</div>
+          <div class="denhaag-dot-indicator__dot"></div>
+        </div>
+      </div>
+    )}
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 <ArgsTable of={BadgeCounter} />

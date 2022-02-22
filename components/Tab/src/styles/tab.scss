@@ -14,8 +14,8 @@
   font-weight: var(--denhaag-tabs-tab-selected-font-weight);
 }
 
-.denhaag-tabs__tab--focus:after,
-.denhaag-tabs__tab:focus:after {
+.denhaag-tabs__tab--focus::after,
+.denhaag-tabs__tab:focus::after {
   content: "";
   position: absolute;
   top: 0;

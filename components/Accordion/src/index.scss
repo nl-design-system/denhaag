@@ -43,11 +43,9 @@
 }
 
 .denhaag-accordion__summary {
-  color: var(--denhaag-accordion-summary-color, hsl(0 0% 29%));
+  color: var(--denhaag-accordion-summary-color);
   flex-grow: 1;
   font-weight: var(--denhaag-accordion-font-weight);
-  margin-block-start: var(--denhaag-accordion-margin);
-  margin-block-end: var(--denhaag-accordion-margin);
   padding-inline-end: var(--denhaag-accordion-padding);
 }
 
@@ -66,12 +64,12 @@
 }
 
 .denhaag-accordion__icon .denhaag-icon {
-  color: var(--denhaag-accordion-icon-color, hsl(0 0% 29%));
+  color: var(--denhaag-accordion-icon-color);
 }
 
 .denhaag-accordion__panel[aria-disabled="true"] .denhaag-accordion__title,
 .denhaag-accordion__panel[aria-disabled="true"] .denhaag-icon {
-  color: var(--denhaag-accordion-disabled-color, hsl(0 0% 82%));
+  color: var(--denhaag-accordion-disabled-color);
 }
 
 .denhaag-accordion__panel--expanded .denhaag-accordion__summary,
@@ -81,13 +79,13 @@
 
 .denhaag-accordion__panel--expanded .denhaag-accordion__icon .denhaag-icon {
   transform: var(--denhaag-accordion-expanded-transform);
-  color: var(--denhaag-accordion-expanded-icon-color, hsl(207 80% 35%));
 }
 
 .denhaag-accordion__panel--expanded .denhaag-accordion__summary,
+.denhaag-accordion__panel--expanded .denhaag-accordion__icon .denhaag-icon,
 .denhaag-accordion__panel:not(.denhaag-accordion__panel[aria-disabled="true"]):hover .denhaag-accordion__title,
 .denhaag-accordion__panel:not(.denhaag-accordion__panel[aria-disabled="true"]):hover .denhaag-icon {
-  color: var(--denhaag-accordion-expanded-icon-color, hsl(207 80% 35%));
+  color: var(--denhaag-accordion-active-color);
 }
 
 .denhaag-accordion__collapse {
@@ -112,8 +110,15 @@
 
 .denhaag-accordion__paragraph {
   font-weight: var(--denhaag-accordion-font-weight);
-  font-style: normal;
   font-size: var(--denhaag-accordion-paragraph-font-size, 1rem);
   line-height: var(--denhaag-accordion-line-height);
-  color: var(--denhaag-accordion-paragraph-color, hsl(0 0% 29%));
+  color: var(--denhaag-accordion-paragraph-color);
+  margin-block-start: var(
+    --denhaag-accordion-paragraph-margin-block-start,
+    var(--denhaag-accordion-paragraph-margin-block)
+  );
+  margin-block-end: var(
+    --denhaag-accordion-paragraph-margin-block-end,
+    var(--denhaag-accordion-paragraph-margin-block)
+  );
 }

@@ -16,8 +16,10 @@
   position: relative;
 }
 
-.denhaag-button--focus:after,
-.denhaag-button:focus:after {
+.denhaag-button--focus::after,
+.denhaag-button:focus::after,
+.denhaag-button--focus-visible::after,
+.denhaag-button:focus-visible::after {
   border: var(--denhaag-focus-border);
   border-radius: var(--denhaag-border-radius);
   bottom: -2px;
@@ -29,9 +31,14 @@
   top: -2px;
 }
 
+.denhaag-button--focus-visible,
+.denhaag-button:focus-visible {
+  outline: none;
+}
+
 /* Due to the accessibility focus outline overlapping with the border, the outline needs to be repositioned for the border variant */
-.denhaag-button--secondary-action.denhaag-button--focus:after,
-.denhaag-button--secondary-action:focus:after {
+.denhaag-button--secondary-action.denhaag-button--focus::after,
+.denhaag-button--secondary-action:focus::after {
   bottom: -3px;
   left: -3px;
   right: -3px;
@@ -133,12 +140,4 @@
   display: inherit;
   margin-inline-end: -4px;
   margin-inline-start: 8px;
-}
-
-.denhaag-button--large.denhaag-button--start-icon .denhaag-button__icon {
-  margin-inline-end: 12px;
-}
-
-.denhaag-button--large.denhaag-button--end-icon .denhaag-button__icon {
-  margin-inline-start: 12px;
 }

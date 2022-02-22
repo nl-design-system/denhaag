@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
 import { DotIndicator } from '@gemeente-denhaag/dotindicator';
-import BaseProps from '@gemeente-denhaag/baseprops';
 import './index.scss';
 import clsx from 'clsx';
 
-export type BadgeCounterProps = Omit<BaseProps, 'tabIndex' | 'classes'>;
+export type BadgeCounterProps = HTMLAttributes<HTMLDivElement>;
 
 /**
  * A counter badge notifies a user of a specific amount of updates.
