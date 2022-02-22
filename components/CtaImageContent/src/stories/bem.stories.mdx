@@ -1,0 +1,200 @@
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+import "../index.scss";
+import pkg from "../../package.json";
+import readme from "../../README.md";
+
+<Meta
+  title="CSS/Actions/Cta Image Content"
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Design Tokens
+
+<DesignTokenDocBlock categoryName="PageButtons" viewType="table" />
+
+## Stories
+
+### Default
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Default">
+    <a aria-labelledby="label-1" href="https://google.nl/" class="denhaag-cta-image-content">
+      <div class="denhaag-cta-image-content__column denhaag-cta-image-content__image-wrapper">
+        <img
+          class="denhaag-cta-image-content__image"
+          srcset="https://via.placeholder.com/480x270/90D40166 480w,
+                  https://via.placeholder.com/768x432/90D40166 768w,
+                  https://via.placeholder.com/1290x725/90D40166 1290w"
+          src="https://via.placeholder.com/1290x725/90D40166"
+          alt="Label"
+          loading="lazy"
+        />
+      </div>
+      <div class="denhaag-cta-image-content__column">
+        <div class="denhaag-cta-image-content__content">
+          <h3 id="label-1" class="denhaag-cta-image-content__label">
+            Label
+          </h3>
+          <div class="denhaag-cta-image-content__text">Explanational text about the image content link</div>
+          <span class="denhaag-button denhaag-button--end-icon denhaag-cta-image-content__button">
+            Label
+            <span class="denhaag-button__icon">
+              <svg
+                aria-hidden="true"
+                class="denhaag-icon"
+                focusable="false"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" />
+              </svg>
+            </span>
+          </span>
+        </div>
+      </div>
+    </a>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Without action
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Without Action">
+    <a aria-labelledby="label-2" href="https://google.nl/" class="denhaag-cta-image-content">
+      <div class="denhaag-cta-image-content__column denhaag-cta-image-content__image-wrapper">
+        <img
+          class="denhaag-cta-image-content__image"
+          srcset="https://via.placeholder.com/480x270/90D40166 480w,
+                  https://via.placeholder.com/768x432/90D40166 768w,
+                  https://via.placeholder.com/1290x725/90D40166 1290w"
+          src="https://via.placeholder.com/1290x725/90D40166"
+          alt="Label"
+          loading="lazy"
+        />
+      </div>
+      <div class="denhaag-cta-image-content__column">
+        <div class="denhaag-cta-image-content__content">
+          <h3 id="label-2" class="denhaag-cta-image-content__label">
+            Label
+          </h3>
+          <div class="denhaag-cta-image-content__text">Explanational text about the image content link</div>
+        </div>
+      </div>
+    </a>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Focus
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Focus">
+    <a
+      aria-labelledby="label-3"
+      href="https://google.nl/"
+      class="denhaag-cta-image-content denhaag-cta-image-content--focus"
+    >
+      <div class="denhaag-cta-image-content__column denhaag-cta-image-content__image-wrapper">
+        <img
+          class="denhaag-cta-image-content__image"
+          srcset="https://via.placeholder.com/480x270/90D40166 480w,
+                  https://via.placeholder.com/768x432/90D40166 768w,
+                  https://via.placeholder.com/1290x725/90D40166 1290w"
+          src="https://via.placeholder.com/1290x725/90D40166"
+          alt="Label"
+          loading="lazy"
+        />
+      </div>
+      <div class="denhaag-cta-image-content__column">
+        <div class="denhaag-cta-image-content__content">
+          <h3 id="label-3" class="denhaag-cta-image-content__label">
+            Label
+          </h3>
+          <div class="denhaag-cta-image-content__text">Explanational text about the image content link</div>
+          <span aria-hidden="true" class="denhaag-button denhaag-button--end-icon denhaag-cta-image-content__button">
+            Label
+            <span class="denhaag-button__icon">
+              <svg
+                aria-hidden="true"
+                class="denhaag-icon"
+                focusable="false"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" />
+              </svg>
+            </span>
+          </span>
+        </div>
+      </div>
+    </a>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Hover
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Hover">
+    <a
+      aria-labelledby="label-4"
+      href="https://google.nl/"
+      class="denhaag-cta-image-content denhaag-cta-image-content--hover"
+    >
+      <div class="denhaag-cta-image-content__column denhaag-cta-image-content__image-wrapper">
+        <img
+          class="denhaag-cta-image-content__image"
+          srcset="https://via.placeholder.com/480x270/90D40166 480w,
+                  https://via.placeholder.com/768x432/90D40166 768w,
+                  https://via.placeholder.com/1290x725/90D40166 1290w"
+          src="https://via.placeholder.com/1290x725/90D40166"
+          alt="Label"
+          loading="lazy"
+        />
+      </div>
+      <div class="denhaag-cta-image-content__column">
+        <div class="denhaag-cta-image-content__content">
+          <h3 id="label-4" class="denhaag-cta-image-content__label">
+            Label
+          </h3>
+          <div class="denhaag-cta-image-content__text">Explanational text about the image content link</div>
+          <span aria-hidden="true" class="denhaag-button denhaag-button--end-icon denhaag-cta-image-content__button">
+            Label
+            <span class="denhaag-button__icon">
+              <svg
+                aria-hidden="true"
+                class="denhaag-icon"
+                focusable="false"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" />
+              </svg>
+            </span>
+          </span>
+        </div>
+      </div>
+    </a>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
