@@ -22,8 +22,7 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-alpha.107",
-    "@utrecht/components": "1.0.0-alpha.139"
+    "@gemeente-denhaag/icons": "0.2.3-alpha.107"
   },
   "peerDependencies": {
     "react": "^17.0.0"
