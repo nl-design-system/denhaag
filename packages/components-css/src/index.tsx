@@ -31,6 +31,7 @@ import '../../../components/Menu/src/menu.scss';
 import '../../../components/Menu/src/menu-button.scss';
 import '../../../components/Modal/src/index.scss';
 import '../../../components/Note/src/index.scss';
+import '../../../components/OrderedList/src/index.scss';
 import '../../../components/Pagination/src/index.scss';
 import '../../../components/PageButtons/src/index.scss';
 import '../../../components/PosttypeLabel/src/index.scss';
