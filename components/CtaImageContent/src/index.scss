@@ -1,8 +1,14 @@
 .denhaag-cta-image-content {
   display: block;
+  text-decoration: none;
+  background-color: var(--denhaag-cta-image-content-background-color);
   border: var(--denhaag-cta-image-content-border-width, 1px) solid var(--denhaag-cta-image-content-border-color);
   border-radius: var(--denhaag-cta-image-content-border-radius);
-  text-decoration: none;
+}
+
+.denhaag-cta-image-content--filled {
+  background-color: var(--denhaag-cta-image-content-filled-background-color);
+  border-color: var(--denhaag-cta-image-content-filled-border-color);
 }
 
 .denhaag-cta-image-content--focus::after,
