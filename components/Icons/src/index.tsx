@@ -39,6 +39,7 @@ import AlertTriangleSvg from './svg/informational/alert-triangle.svg';
 import CheckCircleSvg from './svg/informational/checkCircle.svg';
 import CircleHelpSvg from './svg/informational/circle-help.svg';
 import CircleInformationSvg from './svg/informational/circle-information.svg';
+import CircleWarningSvg from './svg/informational/circle-warning.svg';
 import SettingsSvg from './svg/informational/settings.svg';
 
 // Objects
@@ -104,6 +105,7 @@ export const AlertTriangleIcon: F = (props: SvgIconProps) => buildIcon(AlertTria
 export const CheckCircleIcon: F = (props: SvgIconProps) => buildIcon(CheckCircleSvg, props);
 export const CircleHelpIcon: F = (props: SvgIconProps) => buildIcon(CircleHelpSvg, props);
 export const CircleInformationIcon: F = (props: SvgIconProps) => buildIcon(CircleInformationSvg, props);
+export const CircleWarningIcon: F = (props: SvgIconProps) => buildIcon(CircleWarningSvg, props);
 export const SettingsIcon: F = (props: SvgIconProps) => buildIcon(SettingsSvg, props);
 
 // Objects

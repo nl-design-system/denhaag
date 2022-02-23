@@ -39,4 +39,29 @@
 .denhaag-textfield__input:invalid,
 .denhaag-textfield__input--invalid {
   @extend .utrecht-textbox--invalid;
+
+  padding-inline-end: calc(
+    (var(--utrecht-form-input-padding-inline-end) * 2) + (var(--denhaag-form-input-icon-font-size) * 2)
+  );
+}
+
+.denhaag-textfield__icons {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  position: absolute;
+  column-gap: 8px;
+  right: 0;
+  top: 0;
+  padding-inline-end: var(--utrecht-form-input-padding-inline-end);
+  font-size: var(--denhaag-form-input-icon-font-size);
+}
+
+.denhaag-textfield__icons svg {
+  font-size: inherit;
+}
+
+.denhaag-textfield__invalid-icon {
+  color: var(--utrecht-form-input-invalid-border-color);
 }
