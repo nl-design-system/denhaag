@@ -1,0 +1,17 @@
+.denhaag-list-element {
+  color: var(--denhaag-list-element-color);
+  font-family: var(--denhaag-list-element-font-family);
+  font-size: var(--denhaag-list-element-font-size);
+  font-weight: var(--denhaag-list-element-font-weight);
+  line-height: var(--denhaag-list-element-line-height);
+  margin-inline-start: var(--denhaag-list-element-margin-inline-start);
+  padding-inline-start: var(--denhaag-list-element-padding-inline-start);
+
+  &--unordered li::marker {
+    font-size: var(--denhaag-list-element-unordered-font-size);
+  }
+
+  &--lower-alpha {
+    list-style-type: var(--denhaag-list-element-lower-alpha-list-style-type);
+  }
+}

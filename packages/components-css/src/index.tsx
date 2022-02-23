@@ -26,6 +26,7 @@ import '../../../components/List/src/list-item-icon.scss';
 import '../../../components/List/src/list-item-secondary-action.scss';
 import '../../../components/List/src/list-item-text.scss';
 import '../../../components/List/src/list-subheader.scss';
+import '../../../components/ListElement/src/index.scss';
 import '../../../components/Menu/src/menu.scss';
 import '../../../components/Menu/src/menu-button.scss';
 import '../../../components/Modal/src/index.scss';

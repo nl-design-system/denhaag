@@ -1,0 +1,68 @@
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+import pkg from "../../package.json";
+import readme from "../../README.md";
+import "../index.scss";
+
+<Meta
+  title="CSS/Data Display/List Element"
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Design Tokens
+
+<DesignTokenDocBlock categoryName="List Element" viewType="table" />
+
+## Stories
+
+### Unordered List
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Unordered list">
+    <p>Totam sed occaecati dolor excepturi sit dolor et ab.</p>
+    <ul class="denhaag-list-element denhaag-list-element--unordered">
+      <li>Molestias assumenda ratione in dolore aut consequatur accusantium corporis.</li>
+      <li>
+        Cheese:
+        <ul class="denhaag-list-element">
+          <li>Blue cheese</li>
+          <li>Feta</li>
+          <li>Brie</li>
+        </ul>
+      </li>
+      <li>Totam sed occaecati dolor excepturi sit dolor et ab.</li>
+      <li>Veritatis similique consequatur tempore quis.</li>
+    </ul>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Ordered List
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Ordered list">
+    <ol class="denhaag-list-element denhaag-list-element--ordered">
+      <li>Id magnam est veritatis ut laudantium molestias similique.</li>
+      <li>
+        second item:
+        <ul class="denhaag-list-element denhaag-list-element--lower-alpha">
+          <li>second item first subitem</li>
+          <li>second item second subitem</li>
+          <li>second item third subitem</li>
+        </ul>
+      </li>
+      <li>Totam sed occaecati dolor excepturi sit dolor et ab.</li>
+      <li>Veritatis similique consequatur tempore quis.</li>
+    </ol>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
