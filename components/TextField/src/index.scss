@@ -38,6 +38,11 @@
   @extend .utrecht-textbox__placeholder;
 }
 
+.denhaag-textfield__input:disabled::placeholder,
+.denhaag-textfield__input--disabled::placeholder {
+  color: var(--utrecht-form-input-disabled-color);
+}
+
 .denhaag-textfield__input:invalid,
 .denhaag-textfield__input--invalid {
   @extend .utrecht-textbox--invalid;
@@ -66,4 +71,10 @@
 
 .denhaag-textfield__invalid-icon {
   color: var(--utrecht-form-input-invalid-border-color);
+}
+
+.denhaag-textfield__input--disabled ~ .denhaag-textfield__icons svg,
+.denhaag-textfield__input:disabled ~ .denhaag-textfield__icons svg {
+  color: var(--utrecht-form-input-disabled-color);
+  cursor: var(--utrecht-action-disabled-cursor);
 }
