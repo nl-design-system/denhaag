@@ -3,6 +3,11 @@
     "form-input": {
       "line-height": {
         "value": "{denhaag.typography.scale.base.line-height}"
+      },
+      "icon": {
+        "font-size": {
+          "value": "{denhaag.typography.scale.lg.font-size}"
+        }
       }
     }
   }
