@@ -38,6 +38,7 @@ import '../../../components/Tab/src/styles/tab.scss';
 import '../../../components/Tab/src/styles/tab-panel.scss';
 import '../../../components/Tab/src/styles/tabs.scss';
 import '../../../components/Table/src/index.scss';
+import '../../../components/TextField/src/index.scss';
 import '../../../components/Timeline/src/styles/step.scss';
 import '../../../components/Timeline/src/styles/step-content.scss';
 import '../../../components/Timeline/src/styles/step-icon.scss';
