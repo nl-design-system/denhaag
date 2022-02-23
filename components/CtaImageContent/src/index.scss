@@ -51,10 +51,18 @@
   margin-block-start: var(--denhaag-cta-image-content-label-margin-block-start);
   margin-block-end: var(--denhaag-cta-image-content-label-margin-block-end);
   color: var(--denhaag-cta-image-content-label-color);
-  font-size: var(--denhaag-cta-image-content-label-font-size);
   font-weight: var(--denhaag-cta-image-content-label-font-weight);
-  line-height: var(--denhaag-cta-image-content-label-line-height);
   font-family: var(--denhaag-typography-sans-serif-alternate-font-family);
+
+  &:not(&.denhaag-cta-image-content__label--small) {
+    font-size: var(--denhaag-cta-image-content-label-font-size);
+    line-height: var(--denhaag-cta-image-content-label-line-height);
+  }
+}
+
+.denhaag-cta-image-content__label--small {
+  font-size: var(--denhaag-cta-image-content-label-small-font-size);
+  line-height: var(--denhaag-cta-image-content-label-small-line-height);
 }
 
 .denhaag-cta-image-content__text {
@@ -63,9 +71,17 @@
   margin-block-end: var(--denhaag-cta-image-content-text-margin-block);
   color: var(--denhaag-cta-image-content-text-color);
   font-weight: var(--denhaag-cta-image-content-text-font-weight);
-  font-size: var(--denhaag-cta-image-content-text-font-size);
-  line-height: var(--denhaag-cta-image-content-text-line-height);
   font-family: var(--denhaag-typography-sans-serif-font-family);
+
+  &:not(&.denhaag-cta-image-content__text--small) {
+    font-size: var(--denhaag-cta-image-content-text-font-size);
+    line-height: var(--denhaag-cta-image-content-text-line-height);
+  }
+}
+
+.denhaag-cta-image-content__text--small {
+  font-size: var(--denhaag-cta-image-content-text-small-font-size);
+  line-height: var(--denhaag-cta-image-content-text-small-line-height);
 }
 
 .denhaag-cta-image-content__button {

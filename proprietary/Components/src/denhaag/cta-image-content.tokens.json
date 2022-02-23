@@ -17,14 +17,22 @@
         "color": { "value": "{denhaag.color.grey.5}" },
         "font-size": { "value": "2rem" },
         "font-weight": { "value": "700" },
-        "line-height": { "value": "2.563rem" }
+        "line-height": { "value": "2.563rem" },
+        "small": {
+          "font-size": { "value": "1.5rem" },
+          "line-height": { "value": "1.938rem" }
+        }
       },
       "text": {
         "margin-block": { "value": "0" },
         "color": { "value": "{denhaag.color.grey.4}" },
         "font-weight": { "value": "400" },
         "font-size": { "value": "1.5rem" },
-        "line-height": { "value": "1.938rem" }
+        "line-height": { "value": "1.938rem" },
+        "small": {
+          "font-size": { "value": "1.25rem" },
+          "line-height": { "value": "1.625rem" }
+        }
       },
       "button": {
         "margin-block-start": { "value": "1.5rem" }
