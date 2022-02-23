@@ -4,8 +4,6 @@
   @extend .utrecht-unordered-list;
 
   color: var(--denhaag-unordered-list-color);
-  margin-inline-start: var(--denhaag-unordered-list-margin-inline-start);
-  padding-inline-start: var(--denhaag-unordered-list-padding-inline-start);
 }
 
 .denhaag-unordered-list li::marker {
