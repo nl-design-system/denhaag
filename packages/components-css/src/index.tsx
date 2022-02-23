@@ -45,5 +45,6 @@ import '../../../components/Timeline/src/styles/step-label.scss';
 import '../../../components/Timeline/src/styles/timeline.scss';
 import '../../../components/Typography/src/heading.scss';
 import '../../../components/Typography/src/paragraph.scss';
+import '../../../components/UnorderedList/src/index.scss';
 
 export default require('./index.css');
