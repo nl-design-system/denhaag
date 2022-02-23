@@ -11,3 +11,7 @@
 .denhaag-unordered-list li::marker {
   font-size: var(--denhaag-unordered-list-marker-font-size);
 }
+
+.denhaag-unordered-list--lower-alpha {
+  list-style-type: var(--denhaag-unordered-list-lower-alpha-list-style-type);
+}

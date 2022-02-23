@@ -10,7 +10,8 @@
       "line-height": { "value": "{denhaag.typography.scale.base.line-height}" },
       "margin-inline-start": { "value": "0.5rem" },
       "padding-inline-start": { "value": "0.5rem" },
-      "marker-font-size": { "value": "1rem" }
+      "marker-font-size": { "value": "1rem" },
+      "lower-alpha-list-style-type": { "value": "lower-alpha" }
     }
   }
 }
