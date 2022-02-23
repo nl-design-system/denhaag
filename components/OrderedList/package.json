@@ -1,7 +1,7 @@
 {
   "name": "@gemeente-denhaag/orderedlist",
   "version": "0.1.0",
-  "description": "An unordered list component",
+  "description": "An ordered list component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
     "type": "git",
