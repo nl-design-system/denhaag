@@ -1,0 +1,45 @@
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+import pkg from "../../package.json";
+import readme from "../../README.md";
+import "../index.scss";
+
+<Meta
+  title="CSS/Data Display/Ordered List"
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Design Tokens
+
+<DesignTokenDocBlock categoryName="Ordered List" viewType="table" />
+
+## Stories
+
+### Ordered List with nesting
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Ordered list">
+    <ol class="denhaag-ordered-list">
+      <li>Id magnam est veritatis ut laudantium molestias similique.</li>
+      <li>
+        second item:
+        <ul class="denhaag-unordered-list denhaag-unordered-list--lower-alpha">
+          <li>second item first subitem</li>
+          <li>second item second subitem</li>
+          <li>second item third subitem</li>
+        </ul>
+      </li>
+      <li>Totam sed occaecati dolor excepturi sit dolor et ab.</li>
+      <li>Veritatis similique consequatur tempore quis.</li>
+    </ol>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
