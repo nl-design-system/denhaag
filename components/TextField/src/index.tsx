@@ -5,6 +5,11 @@ import { CircleWarningIcon, SvgIconProps } from '@gemeente-denhaag/icons';
 
 export interface TextFieldProps extends InputHTMLAttributes<HTMLInputElement> {
   /**
+   * Whether the input should be disabled
+   */
+  disabled?: boolean;
+
+  /**
    * Whether the input field is in a error state.
    */
   invalid?: boolean;
