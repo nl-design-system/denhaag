@@ -1,7 +1,9 @@
 @import "~@utrecht/components/textbox/bem";
 
 .denhaag-textfield {
+  display: inline-block;
   position: relative;
+  width: 100%;
 }
 
 .denhaag-textfield--focus-within::after,
@@ -47,15 +49,15 @@
 
 .denhaag-textfield__icons {
   align-items: center;
+  column-gap: 8px;
   display: flex;
+  font-size: var(--denhaag-form-input-icon-font-size);
   flex-direction: row;
   height: 100%;
+  padding-inline-end: var(--utrecht-form-input-padding-inline-end);
   position: absolute;
-  column-gap: 8px;
   right: 0;
   top: 0;
-  padding-inline-end: var(--utrecht-form-input-padding-inline-end);
-  font-size: var(--denhaag-form-input-icon-font-size);
 }
 
 .denhaag-textfield__icons svg {
