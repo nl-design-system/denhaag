@@ -12,7 +12,7 @@ export interface TextFieldProps extends InputHTMLAttributes<HTMLInputElement> {
   /**
    * Icon shown at the end of the input field
    */
-  informationIcon?: React.ReactElement<SvgIconProps>;
+  icon?: React.ReactElement<SvgIconProps>;
 
   /**
    * Icon to replace the default invalid icon
@@ -38,7 +38,7 @@ export const TextField: React.FC<TextFieldProps> = forwardRef(function DenHaagTe
       <input className={inputClasses} ref={ref} {...props} />
       <div className={'denhaag-textfield__icons'}>
         {props.invalid && invalidIcon}
-        {props.informationIcon}
+        {props.icon}
       </div>
     </div>
   );

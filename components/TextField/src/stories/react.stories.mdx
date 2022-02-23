@@ -2,6 +2,7 @@ import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/addon-do
 import { TextField } from "../index";
 import pkg from "../../package.json";
 import readme from "../../README.md";
+import { CallIcon } from "@gemeente-denhaag/icons";
 
 <Meta
   title="React/Input/Textfield"
@@ -23,7 +24,7 @@ Not yet documented. Please refer to the source code.
 
 ## Stories
 
-### Textfield
+### Default
 
 <Canvas>
   <Story
@@ -31,6 +32,34 @@ Not yet documented. Please refer to the source code.
       placeholder: "Placeholder",
     }}
     name="Default"
+  >
+    {(args) => <TextField {...args} />}
+  </Story>
+</Canvas>
+
+### Invalid input
+
+<Canvas>
+  <Story
+    args={{
+      placeholder: "Placeholder",
+      invalid: true,
+    }}
+    name="Invalid"
+  >
+    {(args) => <TextField {...args} />}
+  </Story>
+</Canvas>
+
+### With descriptive icon
+
+<Canvas>
+  <Story
+    args={{
+      placeholder: "Phone number",
+      icon: <CallIcon />,
+    }}
+    name="With icon"
   >
     {(args) => <TextField {...args} />}
   </Story>
