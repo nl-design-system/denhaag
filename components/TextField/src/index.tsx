@@ -40,7 +40,7 @@ export const TextField: React.FC<TextFieldProps> = forwardRef(function DenHaagTe
 
   return (
     <div className={'denhaag-textfield'}>
-      <input className={inputClasses} ref={ref} {...props} />
+      <input className={inputClasses} ref={ref} aria-invalid={props.invalid || undefined} {...props} />
       <div className={'denhaag-textfield__icons'}>
         {props.invalid && invalidIcon}
         {props.icon}
