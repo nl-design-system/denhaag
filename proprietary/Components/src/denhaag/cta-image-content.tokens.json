@@ -20,7 +20,7 @@
         "line-height": { "value": "2.563rem" },
         "small": {
           "font-size": { "value": "1.5rem" },
-          "line-height": { "value": "1.938rem" }
+          "line-height": { "value": "1.3" }
         }
       },
       "text": {
