@@ -6,6 +6,8 @@ import { ListItemSecondaryAction } from './ListItemSecondaryAction';
 import { ListItemText } from './ListItemText';
 
 import clsx from 'clsx';
+
+import './list.scss';
 export interface ListItemProps extends HTMLAttributes<HTMLLIElement> {
   /**
    * A listitem can be used to navigate, in which case it has a different styling.

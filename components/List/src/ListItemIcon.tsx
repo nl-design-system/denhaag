@@ -1,5 +1,7 @@
 import React, { HTMLAttributes } from 'react';
 
+import './list-item-icon.scss';
+
 export type ListItemIconProps = HTMLAttributes<HTMLDivElement>;
 
 /**
