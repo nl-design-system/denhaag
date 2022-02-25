@@ -1,20 +1,12 @@
 .denhaag-list__secondary-action {
   flex-shrink: 0;
+  display: flex;
   margin-inline-start: calc(var(--denhaag-list-item-secondary-action-margin-inline-start));
   color: var(--denhaag-list-item-secondary-action-color);
 
-  --denhaag-icon-button-focus-outline-color: var(--denhaag-list-item-focus-border-color);
-  --denhaag-icon-button-focus-outline-width: var(--denhaag-list-item-border-size);
-  --denhaag-icon-button-focus-outline-style: var(--denhaag-list-item-focus-border-style);
-  --denhaag-icon-button-padding-inline-start: var(--denhaag-list-item-secondary-action-padding);
-  --denhaag-icon-button-padding-inline-end: var(--denhaag-list-item-secondary-action-padding);
-  --denhaag-icon-button-padding-block-start: var(--denhaag-list-item-secondary-action-padding);
-  --denhaag-icon-button-padding-block-end: var(--denhaag-list-item-secondary-action-padding);
-
-  .denhaag-icon-button {
-    margin-block-start: calc(-1 * var(--denhaag-icon-button-padding-block-start));
-    margin-block-end: calc(-1 * var(--denhaag-icon-button-padding-block-end));
-    margin-inline-start: calc(-1 * var(--denhaag-icon-button-padding-inline-start));
-    margin-inline-end: calc(-1 * var(--denhaag-icon-button-padding-inline-end));
-  }
+  --denhaag-icon-button-padding-inline-start: 0;
+  --denhaag-icon-button-padding-inline-end: 0;
+  --denhaag-icon-button-padding-block-start: 0;
+  --denhaag-icon-button-padding-block-end: 0;
+  --denhaag-icon-button-hover-color: var(--denhaag-list-item-hover-color);
 }
