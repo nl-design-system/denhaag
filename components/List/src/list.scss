@@ -1,0 +1,22 @@
+.denhaag-list__wrapper {
+  margin-block-start: var(--denhaag-list-wrapper-margin-block);
+  margin-block-end: var(--denhaag-list-wrapper-margin-block);
+  padding-block-start: var(--denhaag-list-wrapper-padding-block);
+  padding-block-end: var(--denhaag-list-wrapper-padding-block);
+}
+
+.denhaag-list__wrapper.denhaag-list__wrapper--with-subheader {
+  padding-block-start: 0;
+}
+
+.denhaag-list {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  list-style: none;
+}

@@ -1,6 +1,15 @@
 .denhaag-list__subheader {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: var(--denhaag-list-item-padding-block);
+  padding-block-end: var(--denhaag-list-item-padding-block);
+  padding-inline-start: var(--denhaag-list-item-padding-inline);
+  padding-inline-end: var(--denhaag-list-item-padding-inline);
   font-family: var(--denhaag-typography-sans-serif-font-family);
   font-size: var(--denhaag-typography-scale-base-font-size);
   font-weight: var(--denhaag-list-subheader-font-weight);
+  line-height: var(--denhaag-list-subheader-line-height);
   color: var(--denhaag-list-subheader-color);
 }

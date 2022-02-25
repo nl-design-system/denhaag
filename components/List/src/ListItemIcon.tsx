@@ -1,18 +1,15 @@
-import React from 'react';
-import { ListItemIcon as MaterialListItemIcon } from '@material-ui/core';
-import BaseProps from '@gemeente-denhaag/baseprops';
-import { listitemicon_classes as classes } from './bem-mapping';
+import React, { HTMLAttributes } from 'react';
 
-export type ListItemIconProps = BaseProps;
+export type ListItemIconProps = HTMLAttributes<HTMLDivElement>;
 
 /**
  * Primary UI component for user interaction
  */
 export const ListItemIcon: React.FC<ListItemIconProps> = (props: ListItemIconProps) => {
   return (
-    <MaterialListItemIcon {...props} classes={classes}>
+    <div {...props} className="denhaag-list__item-icon">
       {props.children}
-    </MaterialListItemIcon>
+    </div>
   );
 };
 

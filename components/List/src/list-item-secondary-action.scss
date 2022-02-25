@@ -1,5 +1,6 @@
 .denhaag-list__secondary-action {
-  right: var(--denhaag-list-item-secondary-action-right);
+  flex-shrink: 0;
+  margin-inline-start: var(--denhaag-list-item-secondary-action-margin-inline-start);
   color: var(--denhaag-list-item-secondary-action-color);
 
   --denhaag-icon-button-focus-outline-color: var(--denhaag-list-item-focus-border-color);
