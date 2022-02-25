@@ -1,5 +1,7 @@
 import React, { HTMLAttributes } from 'react';
 
+import './list-item-secondary-action.scss';
+
 export type ListItemSecondaryActionProps = HTMLAttributes<HTMLDivElement>;
 
 /**
