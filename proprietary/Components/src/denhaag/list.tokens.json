@@ -11,9 +11,7 @@
         "padding-block": { "value": "12px" },
         "secondary-action": {
           "color": { "value": "{denhaag.color.grey.4}" },
-          "right": { "value": "16px" },
-          "margin-inline-start": { "value": "24px" },
-          "padding": { "value": "4px" }
+          "margin-inline-start": { "value": "24px" }
         },
         "hover": {
           "color": { "value": "{denhaag.color.blue.3}" }
@@ -46,8 +44,8 @@
           "color": { "value": "{denhaag.color.grey.4}" },
           "font-weight": { "value": "400" },
           "font-size": { "value": "{denhaag.typography.scale.s.font-size}" },
-          "bottom-padding": { "value": "8px" },
-          "line-height": { "value": "16px" }
+          "line-height": { "value": "16px" },
+          "padding-block-end": { "value": "8px" }
         },
         "multiline-primary": {
           "line-height": { "value": "32px" }
