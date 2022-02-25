@@ -21,70 +21,35 @@
   cursor: pointer;
 }
 
+.denhaag-list__item-button.denhaag-list__item-button-hover,
+.denhaag-list__item-button:hover {
+  .denhaag-list__item-text-primary,
+  .denhaag-list__item-icon,
+  .denhaag-list__secondary-action {
+    color: var(--denhaag-list-item-hover-color);
+  }
+}
+
 .denhaag-list__item-button.denhaag-list__item-button-focus,
 .denhaag-list__item-button:focus {
-  border-color: var(--denhaag-list-item-focus-border-color);
-  border-style: var(--denhaag-list-item-focus-border-style);
-  border-width: var(--denhaag-list-item-border-size);
-  padding-block-start: calc(var(--denhaag-list-item-padding-block) - var(--denhaag-list-item-border-size));
-  padding-block-end: calc(var(--denhaag-list-item-padding-block) - var(--denhaag-list-item-border-size));
-  padding-inline-start: calc(var(--denhaag-list-item-padding-inline) - var(--denhaag-list-item-border-size));
-  padding-inline-end: calc(var(--denhaag-list-item-padding-inline) - var(--denhaag-list-item-border-size));
+  outline: var(--denhaag-focus-border);
+
+  .denhaag-list__item-text-primary,
+  .denhaag-list__item-icon,
+  .denhaag-list__secondary-action {
+    color: var(--denhaag-list-item-focus-color);
+  }
 }
 
 .denhaag-list__item-button.denhaag-list__item-button--active,
 .denhaag-list__item-button:active {
-  border: var(--denhaag-list-item-border-size) solid var(--denhaag-list-item-active-border-color);
-  padding-block-start: calc(var(--denhaag-list-item-padding-block) - var(--denhaag-list-item-border-size));
-  padding-block-end: calc(var(--denhaag-list-item-padding-block) - var(--denhaag-list-item-border-size));
-  padding-inline-start: calc(var(--denhaag-list-item-padding-inline) - var(--denhaag-list-item-border-size));
-  padding-inline-end: calc(var(--denhaag-list-item-padding-inline) - var(--denhaag-list-item-border-size));
-}
-
-.denhaag-list__item-button.denhaag-list__item-button--focus .denhaag-list__item-text-primary,
-.denhaag-list__item-button:focus .denhaag-list__item-text-primary {
-  color: var(--denhaag-list-item-text-primary-focus-color);
-}
-
-.denhaag-list__item-button.denhaag-list__item-button--focus .denhaag-list__item-icon,
-.denhaag-list__item-button:focus .denhaag-list__item-icon {
-  color: var(--denhaag-list-item-icon-focus-color);
-}
-
-.denhaag-list__item-button.denhaag-list__item-button--focus .denhaag-list__secondary-action,
-.denhaag-list__item-button:focus .denhaag-list__secondary-action {
-  color: var(--denhaag-list-item-secondary-action-focus-color);
-}
-
-.denhaag-list__item-button.denhaag-list__item-button--hover .denhaag-list__item-text-primary,
-.denhaag-list__item-button:hover .denhaag-list__item-text-primary {
-  color: var(--denhaag-list-item-text-primary-hover-color);
-}
-
-.denhaag-list__item-button.denhaag-list__item-button--hover .denhaag-list__item-icon,
-.denhaag-list__item-button:hover .denhaag-list__item-icon {
-  color: var(--denhaag-list-item-icon-hover-color);
-}
-
-.denhaag-list__item-button.denhaag-list__item-button--hover .denhaag-list__secondary-action,
-.denhaag-list__item-button:hover .denhaag-list__secondary-action {
-  color: var(--denhaag-list-item-secondary-action-hover-color);
+  outline: var(--denhaag-list-item-active-border-size) solid var(--denhaag-list-item-active-border-color);
 }
 
 .denhaag-list__item.denhaag-list__item--with-secondary,
 .denhaag-list__item.denhaag-list__item--with-secondary .denhaag-list__item-button {
   padding-block-start: var(--denhaag-list-item-secondary-padding-block);
   padding-block-end: var(--denhaag-list-item-secondary-padding-block);
-}
-
-.denhaag-list__item.denhaag-list__item--with-secondary .denhaag-list__item-button:focus {
-  padding-block-start: calc(var(--denhaag-list-item-secondary-padding-block) - var(--denhaag-list-item-border-size));
-  padding-block-end: calc(var(--denhaag-list-item-secondary-padding-block) - var(--denhaag-list-item-border-size));
-}
-
-.denhaag-list__item.denhaag-list__item--with-secondary .denhaag-list__item-button:active {
-  padding-block-start: calc(var(--denhaag-list-item-secondary-padding-block) - var(--denhaag-list-item-border-size));
-  padding-block-end: calc(var(--denhaag-list-item-secondary-padding-block) - var(--denhaag-list-item-border-size));
 }
 
 .denhaag-list__item.denhaag-list__item--with-secondary .denhaag-list__item-text-primary {
