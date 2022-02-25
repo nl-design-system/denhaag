@@ -86,10 +86,10 @@ describe(`List tests`, () => {
       </List>,
       {},
       {
-        selector: '.denhaag-list__item',
+        selector: '.denhaag-list__item-button',
         states: {
-          hover: 'denhaag-list__item--hover',
-          focus: 'denhaag-list__item--focus',
+          hover: 'denhaag-list__item-button--hover',
+          focus: 'denhaag-list__item-button--focus',
         },
       },
     );
