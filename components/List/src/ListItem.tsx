@@ -1,20 +1,12 @@
-import React from 'react';
-import { ListItem as MaterialListItem } from '@material-ui/core';
-import BaseProps from '@gemeente-denhaag/baseprops';
+import React, { HTMLAttributes } from 'react';
 import { ChevronRightIcon } from '@gemeente-denhaag/icons';
 import IconButton from '@gemeente-denhaag/iconbutton';
-import { listitem_classes as classes } from './bem-mapping';
 import { ListItemIcon } from './ListItemIcon';
 import { ListItemSecondaryAction } from './ListItemSecondaryAction';
 import { ListItemText } from './ListItemText';
 
-export interface ListItemProps extends BaseProps {
-  /**
-   * If `true`, the list item will be focused during the first mount.
-   * Focus will also be triggered if the value changes from false to true.
-   */
-  autoFocus?: boolean;
-
+import clsx from 'clsx';
+export interface ListItemProps extends HTMLAttributes<HTMLLIElement> {
   /**
    * A listitem can be used to navigate, in which case it has a different styling.
    * Use to specify which type of action this item is.
@@ -51,65 +43,59 @@ export interface ListItemProps extends BaseProps {
 /**
  * Primary UI component for user interaction
  */
-export const ListItem: React.FC<ListItemProps> = (props: ListItemProps) => {
-  const muiProps = {
-    autoFocus: props.autoFocus,
-    actiontype: props.actionType,
-    secondarytext: props.secondaryText,
-    primarytext: props.primaryText,
-  };
+export const ListItem: React.FC<ListItemProps> = ({
+  actionType,
+  onClick,
+  leftIcon,
+  rightIcon,
+  primaryText,
+  secondaryText,
+  ...props
+}: ListItemProps) => {
+  const rootClassNames = clsx('denhaag-list__item', {
+    'denhaag-list__item--with-secondary': secondaryText,
+    'denhaag-list__item--nav': actionType && actionType === 'nav',
+  });
 
   const children = [];
 
-  if (props.leftIcon) {
-    children.push(<ListItemIcon key={0}>{props.leftIcon}</ListItemIcon>);
+  if (leftIcon) {
+    children.push(<ListItemIcon key={0}>{leftIcon}</ListItemIcon>);
   }
-  if (props.actionType === 'nav') {
-    children.push(
-      <ListItemSecondaryAction key={1}>
-        <IconButton aria-label="Navigate" tabIndex={-1}>
-          <ChevronRightIcon />
-        </IconButton>
-      </ListItemSecondaryAction>,
-    );
-  } else if (props.actionType === 'action') {
+
+  children.push(<ListItemText key={1} primary={primaryText} secondary={secondaryText}></ListItemText>);
+
+  if (actionType === 'nav') {
     children.push(
       <ListItemSecondaryAction key={2}>
-        <IconButton aria-label="Action" onClick={props.onClick}>
-          {props.rightIcon}
+        <ChevronRightIcon />
+      </ListItemSecondaryAction>,
+    );
+  } else if (actionType === 'action') {
+    children.push(
+      <ListItemSecondaryAction key={2}>
+        <IconButton className="denhaag-icon-button" aria-label="Action" onClick={onClick}>
+          {rightIcon}
         </IconButton>
       </ListItemSecondaryAction>,
     );
   }
-  children.push(<ListItemText key={3} primary={props.primaryText} secondary={props.secondaryText}></ListItemText>);
 
-  if (props.actionType === 'nav') {
+  if (actionType === 'nav') {
     return (
-      <MaterialListItem
-        {...muiProps}
-        button
-        component="li"
-        classes={classes}
-        tabIndex={0}
-        disableRipple
-        role={undefined}
-        onClick={props.onClick}
-      >
-        {children}
-      </MaterialListItem>
-    );
-  } else {
-    return (
-      <MaterialListItem
-        {...muiProps}
-        classes={classes}
-        component="li"
-        tabIndex={props.actionType === 'action' ? -1 : 0}
-      >
-        {children}
-      </MaterialListItem>
+      <li {...props} className={rootClassNames}>
+        <button className="denhaag-list__item-button" onClick={onClick}>
+          {children}
+        </button>
+      </li>
     );
   }
+
+  return (
+    <li {...props} className={rootClassNames}>
+      {children}
+    </li>
+  );
 };
 
 export default ListItem;

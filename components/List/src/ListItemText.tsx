@@ -1,20 +1,6 @@
-import React from 'react';
-import { ListItemText as MaterialListItemText } from '@material-ui/core';
-import BaseProps from '@gemeente-denhaag/baseprops';
-import {
-  listitemtext_classes as classes,
-  listitemtextprimary_classes,
-  listitemtextsecondary_classes,
-} from './bem-mapping';
-
-import { Typography } from '@material-ui/core';
-
-export interface ListItemTextProps extends BaseProps {
-  /**
-   * The main content text.
-   */
-  children?: string;
-
+import React, { HTMLAttributes } from 'react';
+import clsx from 'clsx';
+export interface ListItemTextProps extends HTMLAttributes<HTMLDivElement> {
   /**
    * The main content text, alias for children.
    */
@@ -29,15 +15,16 @@ export interface ListItemTextProps extends BaseProps {
 /**
  * Primary UI component for user interaction
  */
-export const ListItemText: React.FC<ListItemTextProps> = (props: ListItemTextProps) => {
-  const primary = <Typography classes={listitemtextprimary_classes}>{props.primary}</Typography>;
-  const secondary = props.secondary ? (
-    <Typography classes={listitemtextsecondary_classes}>{props.secondary}</Typography>
-  ) : undefined;
+export const ListItemText: React.FC<ListItemTextProps> = ({ primary, secondary, ...props }: ListItemTextProps) => {
+  const rootClassNames = clsx('denhaag-list__item-text', {
+    'denhaag-list__item-text--with-secondary': secondary,
+  });
+
   return (
-    <MaterialListItemText {...props} primary={primary} secondary={secondary} disableTypography={true} classes={classes}>
-      {props.children}
-    </MaterialListItemText>
+    <div {...props} className={rootClassNames}>
+      {primary && <span className="denhaag-list__item-text-primary">{primary}</span>}
+      {secondary && <span className="denhaag-list__item-text-secondary">{secondary}</span>}
+    </div>
   );
 };
 

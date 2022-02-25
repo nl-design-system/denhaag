@@ -1,10 +1,6 @@
-import React from 'react';
-import { ListItemSecondaryAction as MaterialListItemSecondaryAction } from '@material-ui/core';
-import { BaseChildrenProps } from '@gemeente-denhaag/baseprops';
+import React, { HTMLAttributes } from 'react';
 
-import { listitemsecondaryaction_classes as classes } from './bem-mapping';
-
-export type ListItemSecondaryActionProps = BaseChildrenProps;
+export type ListItemSecondaryActionProps = HTMLAttributes<HTMLDivElement>;
 
 /**
  * Primary UI component for user interaction
@@ -13,9 +9,9 @@ export const ListItemSecondaryAction: React.FC<ListItemSecondaryActionProps> = (
   props: ListItemSecondaryActionProps,
 ) => {
   return (
-    <MaterialListItemSecondaryAction {...props} classes={classes}>
+    <div {...props} className="denhaag-list__secondary-action">
       {props.children}
-    </MaterialListItemSecondaryAction>
+    </div>
   );
 };
 

@@ -27,14 +27,9 @@ describe(`List tests`, () => {
     cy.get('.denhaag-list__item').contains('Primary text');
     cy.get('.denhaag-list__item').contains('Secondary text');
 
-    cy.get('.denhaag-list__item')
+    cy.get('.denhaag-list__item-button')
       .click()
       .then(() => expect(spy).to.have.been.calledOnce);
-
-    // onClick called when action button is clicked
-    cy.get('.denhaag-list__item .denhaag-list__secondary-action button')
-      .click()
-      .then(() => expect(spy).to.have.been.calledTwice);
   });
 
   it('has clickable secondary action on actionType action', () => {
@@ -70,76 +65,6 @@ describe(`List tests`, () => {
       .then(() => expect(spy).to.have.been.calledOnce);
   });
 
-  it('has proper keyboard support for actionType nav', () => {
-    const props = {
-      onClick: () => {
-        console.log('Clicked');
-      },
-    };
-
-    const spy = cy.spy(props, 'onClick').as('List item enter');
-
-    cy.mount(
-      <List>
-        <ListItem
-          primaryText="Primary text"
-          secondaryText="Secondary text"
-          actionType="nav"
-          onClick={props.onClick}
-          rightIcon={<TrashIcon />}
-        />
-      </List>,
-    );
-
-    cy.get('.denhaag-list__item')
-      .focus()
-      .type('{enter}')
-      .then(() => expect(spy).to.have.been.calledOnce);
-
-    // Secondary action should have tabindex -1
-    cy.get('.denhaag-list__item .denhaag-list__secondary-action button').should('have.attr', 'tabindex', '-1');
-
-    // List item should have tabindex 0
-    cy.get('.denhaag-list__item').should('have.attr', 'tabindex', '0');
-  });
-
-  it('has proper keyboard support for actionType action', () => {
-    const props = {
-      onClick: () => {
-        console.log('Clicked');
-      },
-    };
-
-    const spy = cy.spy(props, 'onClick').as('List item action enter');
-
-    cy.mount(
-      <List>
-        <ListItem
-          primaryText="Primary text"
-          secondaryText="Secondary text"
-          actionType="action"
-          onClick={props.onClick}
-          rightIcon={<TrashIcon />}
-        />
-      </List>,
-    );
-
-    cy.get('.denhaag-list__item .denhaag-list__secondary-action button')
-      .type('{enter}')
-      .then(() => expect(spy).to.have.been.calledOnce);
-
-    cy.get('.denhaag-list__item')
-      .focus()
-      .type('{enter}')
-      .then(() => expect(spy).to.have.been.calledOnce);
-
-    // Secondary action should have tabindex 0
-    cy.get('.denhaag-list__item .denhaag-list__secondary-action button').should('have.attr', 'tabindex', '0');
-
-    // List item should have tabindex -1
-    cy.get('.denhaag-list__item').should('have.attr', 'tabindex', '-1');
-  });
-
   it('a11y and snapshots', () => {
     cy.snapshots(
       <List subheader={<ListSubheader>subheader</ListSubheader>}>
@@ -167,7 +92,6 @@ describe(`List tests`, () => {
           focus: 'denhaag-list__item--focus',
         },
       },
-      [{ id: 'list', issue: 402 }],
     );
   });
 });

@@ -1,3 +1,6 @@
 .denhaag-list__item-icon {
+  flex-shrink: 0;
+  display: inline-flex;
+  margin-inline-end: var(--denhaag-list-item-icon-margin-inline-end);
   color: var(--denhaag-list-item-icon-color);
 }

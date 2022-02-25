@@ -1,20 +1,16 @@
-import React from 'react';
-import { Typography } from '@material-ui/core';
+import React, { HTMLAttributes } from 'react';
 
-import { listsubheader_classes as classes } from './bem-mapping';
-
-export interface ListSubheaderProps {
-  /**
-   * The text shown in the List subheader
-   */
-  children: string;
-}
+export type ListSubheaderProps = HTMLAttributes<HTMLParagraphElement>;
 
 /**
  * Primary UI component for user interaction
  */
 export const ListSubheader: React.FC<ListSubheaderProps> = (props: ListSubheaderProps) => {
-  return <Typography classes={classes}>{props.children}</Typography>;
+  return (
+    <p {...props} className="denhaag-list__subheader">
+      {props.children}
+    </p>
+  );
 };
 
 export default ListSubheader;
