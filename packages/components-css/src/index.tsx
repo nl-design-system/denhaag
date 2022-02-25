@@ -21,6 +21,7 @@ import '../../../components/IconButton/src/index.scss';
 import '../../../components/Icons/src/index.scss';
 import '../../../components/Image/src/index.scss';
 import '../../../components/Link/src/index.scss';
+import '../../../components/List/src/list.scss';
 import '../../../components/List/src/list-item.scss';
 import '../../../components/List/src/list-item-icon.scss';
 import '../../../components/List/src/list-item-secondary-action.scss';
