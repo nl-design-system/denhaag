@@ -54,7 +54,7 @@
   font-weight: var(--denhaag-cta-image-content-label-font-weight);
   font-family: var(--denhaag-typography-sans-serif-alternate-font-family);
 
-  &:not(&.denhaag-cta-image-content__label--small) {
+  &:not(.denhaag-cta-image-content__label--small) {
     font-size: var(--denhaag-cta-image-content-label-font-size);
     line-height: var(--denhaag-cta-image-content-label-line-height);
   }
@@ -73,7 +73,7 @@
   font-weight: var(--denhaag-cta-image-content-text-font-weight);
   font-family: var(--denhaag-typography-sans-serif-font-family);
 
-  &:not(&.denhaag-cta-image-content__text--small) {
+  &:not(.denhaag-cta-image-content__text--small) {
     font-size: var(--denhaag-cta-image-content-text-font-size);
     line-height: var(--denhaag-cta-image-content-text-line-height);
   }
