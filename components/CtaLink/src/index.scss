@@ -50,6 +50,10 @@
   font-size: var(--denhaag-cta-icon-size, var(--denhaag-cta-link-gap));
 }
 
+.denhaag-cta-link__excerpt {
+  font-size: var(--denhaag-typography-scale-lg-font-size);
+}
+
 @supports (-webkit-line-clamp: 2) {
   .denhaag-cta-link__excerpt {
     display: box;
