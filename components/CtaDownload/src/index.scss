@@ -29,6 +29,10 @@
   );
 }
 
+.denhaag-cta-download:hover .denhaag-cta-link__dot {
+  background-color: var(--denhaag-cta-download-hover-highlight-color, var(--denhaag-cta-download-color));
+}
+
 .denhaag-cta-download:focus,
 .denhaag-cta-download--focus {
   --denhaag-cta-download-title-color: var(
