@@ -5,6 +5,8 @@
   padding-block-end: var(--denhaag-blockquote-padding-block-end);
   padding-inline-start: var(--denhaag-blockquote-padding-inline-start);
   padding-inline-end: var(--denhaag-blockquote-padding-inline-end);
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 }
 
 .denhaag-blockquote__content {
