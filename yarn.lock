@@ -5370,10 +5370,10 @@
   resolved "https://registry.yarnpkg.com/@utrecht/component-library-css/-/component-library-css-1.0.0-alpha.185.tgz#f4f7c9cded49f210ba2c29f1843256f54750ce76"
   integrity sha512-+NGKQDPBLh1c3HiFAc128ObhA013nRIIhVI+pRXIQWxAsaduP5pLdDN1LgL8Z+7oWgybZRfkqiAK0qDKJKWVoA==
 
-"@utrecht/components@1.0.0-alpha.146":
-  version "1.0.0-alpha.146"
-  resolved "https://registry.yarnpkg.com/@utrecht/components/-/components-1.0.0-alpha.146.tgz#557ae7a7842444c91011446c1674eafbc5425d52"
-  integrity sha512-7gPHm3X+RWiEWUUaPBX39SfyhhrGM9Wxdg4b11gVBe6h7zBriwdox0vVEY0khpk86AmUlisVvuqfDolA+feqsg==
+"@utrecht/components@1.0.0-alpha.147":
+  version "1.0.0-alpha.147"
+  resolved "https://registry.yarnpkg.com/@utrecht/components/-/components-1.0.0-alpha.147.tgz#8858b12df1926ffbca52068475c5f4389582195b"
+  integrity sha512-mYK+tB2nSKaVCdFqvuH1OrxTOfpcF7PssIBWXzr4Wo1WnRGJw2b3ZVBuQCAiwjwpPvCktCREe/7WVWdNsUAhig==
   dependencies:
     clsx "1.1.1"
 
