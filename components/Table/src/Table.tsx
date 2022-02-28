@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { TableHTMLAttributes } from 'react';
 import './index.scss';
 import clsx from 'clsx';
 
-export type TableProps = React.TableHTMLAttributes<HTMLTableElement>;
+export type TableProps = TableHTMLAttributes<HTMLTableElement>;
 
 /**
  * Table component based on the <table> element.
