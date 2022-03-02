@@ -1,3 +1,11 @@
 .denhaag-form-field-description {
-  font-size: var(--denhaag-form-field-description-font-fize);
+  font-family: var(--denhaag-form-field-description-font-family);
+  font-size: var(--denhaag-form-field-description-font-size);
+  font-weight: var(--denhaag-form-field-description-font-weight);
+  color: var(--denhaag-form-field-description-color);
+  line-height: var(--denhaag-form-field-description-line-height);
+}
+
+.denhaag-form-field-description--error {
+  color: var(--denhaag-form-field-description-error-color);
 }
