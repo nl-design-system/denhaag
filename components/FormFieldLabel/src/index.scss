@@ -1,0 +1,7 @@
+@import "~@utrecht/components/form-label/bem";
+
+.denhaag-form-field-label {
+  @extend .utrecht-form-label;
+
+  line-height: var(--denhaag-typography-scale-base-line-height);
+}

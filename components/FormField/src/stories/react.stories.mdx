@@ -3,6 +3,7 @@ import pkg from "../../package.json";
 import readme from "../../README.md";
 import FormField from "../index";
 import TextField from "@gemeente-denhaag/textfield";
+import FormFieldLabel from "@gemeente-denhaag/form-field-label";
 import { CalendarIcon } from "@gemeente-denhaag/icons";
 
 <Meta
@@ -27,9 +28,7 @@ import { CalendarIcon } from "@gemeente-denhaag/icons";
   <Story name="Default" args={{}}>
     {() => (
       <FormField>
-        <label htmlFor={"textfield-1"} className={"denhaag-form-label"}>
-          Label
-        </label>
+        <FormFieldLabel htmlFor={"textfield-1"}>Label</FormFieldLabel>
         <TextField id={"textfield-1"} placeholder={"Placeholder"} icon={<CalendarIcon />} />
         <div className={"denhaag-form-field__description"}>Description</div>
       </FormField>

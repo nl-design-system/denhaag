@@ -1,0 +1,28 @@
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import pkg from "../../package.json";
+import readme from "../../README.md";
+import { FormFieldLabel } from "../index";
+
+<Meta
+  title="React/Input/Form Field Label"
+  component={FormFieldLabel}
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Stories
+
+### Default
+
+<Canvas>
+  <Story name="Default" args={{}}>
+    {() => <FormFieldLabel>Form label</FormFieldLabel>}
+  </Story>
+</Canvas>
