@@ -1,12 +1,12 @@
 {
-  "name": "@gemeente-denhaag/form-field",
+  "name": "@gemeente-denhaag/form-field-label",
   "version": "0.1.0",
-  "description": "A form field component",
+  "description": "A form label component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/nl-design-system/denhaag.git",
-    "directory": "components/FormField"
+    "directory": "components/FormLabel"
   },
   "license": "EUPL-1.2",
   "author": "Municipality of The Hague",
@@ -20,9 +20,6 @@
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
-  },
-  "devDependencies": {
-    "@gemeente-denhaag/form-field-label": "0.1.0"
   },
   "peerDependencies": {
     "react": "^17.0.0"
