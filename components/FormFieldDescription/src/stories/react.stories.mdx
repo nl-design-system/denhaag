@@ -1,0 +1,28 @@
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import pkg from "../../package.json";
+import readme from "../../README.md";
+import { FormFieldDescription } from "../index";
+
+<Meta
+  title="React/Input/Form Field Description"
+  component={FormFieldDescription}
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Stories
+
+### Default
+
+<Canvas>
+  <Story name="Default" args={{}}>
+    {() => <FormFieldDescription>Form field description</FormFieldDescription>}
+  </Story>
+</Canvas>
