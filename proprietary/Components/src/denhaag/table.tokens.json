@@ -1,6 +1,8 @@
 {
   "denhaag": {
     "table": {
+      "width": { "value": "100%" },
+      "max-width": { "value": "100%" },
       "cell": {
         "font-weight": { "value": "{denhaag.typography.weight.regular}" },
         "gap": {

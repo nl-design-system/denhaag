@@ -1,5 +1,7 @@
 .denhaag-table {
   border-spacing: 0;
+  width: var(--denhaag-table-width, 100%);
+  max-width: var(--denhaag-table-max-width, 100%);
 }
 
 .denhaag-table__caption {
