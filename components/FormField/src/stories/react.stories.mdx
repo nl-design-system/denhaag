@@ -5,6 +5,7 @@ import FormField from "../index";
 import TextField from "@gemeente-denhaag/textfield";
 import FormFieldLabel from "@gemeente-denhaag/form-field-label";
 import { CalendarIcon } from "@gemeente-denhaag/icons";
+import FormFieldDescription from "@gemeente-denhaag/form-field-description";
 
 <Meta
   title="React/Input/Form Field"
@@ -29,8 +30,13 @@ import { CalendarIcon } from "@gemeente-denhaag/icons";
     {() => (
       <FormField>
         <FormFieldLabel htmlFor={"textfield-1"}>Label</FormFieldLabel>
-        <TextField id={"textfield-1"} placeholder={"Placeholder"} icon={<CalendarIcon />} />
-        <div className={"denhaag-form-field__description"}>Description</div>
+        <TextField
+          id={"textfield-1"}
+          aria-describedby={"description-1"}
+          placeholder={"Placeholder"}
+          icon={<CalendarIcon />}
+        />
+        <FormFieldDescription id={"description-1"}>Description</FormFieldDescription>
       </FormField>
     )}
   </Story>
