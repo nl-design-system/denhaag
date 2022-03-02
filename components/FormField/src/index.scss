@@ -1,5 +1,10 @@
 @import "~@utrecht/components/form-label/bem";
 
+.denhaag-form-field {
+  --denhaag-form-input-margin-block-start: 4px;
+  --denhaag-form-input-margin-block-end: 8px;
+}
+
 .denhaag-form-label {
   @extend .utrecht-form-label;
 
