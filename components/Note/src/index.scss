@@ -28,3 +28,7 @@
 .denhaag-note--warning {
   --denhaag-note-icon-color: var(--denhaag-note-icon-warning-color, #fff);
 }
+
+.denhaag-note a[target="_blank"] {
+  margin-inline-end: var(--denhaag-note-icon-margin-inline-end);
+}
