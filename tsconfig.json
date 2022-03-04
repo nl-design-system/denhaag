@@ -47,6 +47,9 @@
       "path": "components/FormGroup"
     },
     {
+      "path": "components/FormField"
+    },
+    {
       "path": "components/IconButton"
     },
     {
