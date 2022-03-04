@@ -3,9 +3,7 @@ import pkg from "../../package.json";
 import readme from "../../README.md";
 import FormField from "../index";
 import TextField from "@gemeente-denhaag/textfield";
-import FormFieldLabel from "@gemeente-denhaag/form-field-label";
 import { CalendarIcon } from "@gemeente-denhaag/icons";
-import FormFieldDescription from "@gemeente-denhaag/form-field-description";
 
 <Meta
   title="React/Input/Form Field"
@@ -28,16 +26,18 @@ import FormFieldDescription from "@gemeente-denhaag/form-field-description";
 <Canvas>
   <Story name="Default" args={{}}>
     {() => (
-      <FormField>
-        <FormFieldLabel htmlFor={"textfield-1"}>Label</FormFieldLabel>
-        <TextField
-          id={"textfield-1"}
-          aria-describedby={"description-1"}
-          placeholder={"Placeholder"}
-          icon={<CalendarIcon />}
-        />
-        <FormFieldDescription id={"description-1"}>Description</FormFieldDescription>
-      </FormField>
+      <FormField
+        label="Label"
+        description="Description"
+        input={
+          <TextField
+            id={"textfield-1"}
+            aria-describedby={"description-1"}
+            placeholder={"Placeholder"}
+            icon={<CalendarIcon />}
+          />
+        }
+      />
     )}
   </Story>
 </Canvas>

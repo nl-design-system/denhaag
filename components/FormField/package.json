@@ -22,7 +22,8 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "devDependencies": {
-    "@gemeente-denhaag/form-field-label": "0.1.0"
+    "@gemeente-denhaag/icons": "0.2.3-alpha.119",
+    "@gemeente-denhaag/textfield": "0.2.3-alpha.119"
   },
   "peerDependencies": {
     "react": "^17.0.0"

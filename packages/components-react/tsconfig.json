@@ -48,6 +48,9 @@
       "path": "../../components/FormControlLabel"
     },
     {
+      "path": "../../components/FormField"
+    },
+    {
       "path": "../../components/FormGroup"
     },
     {
