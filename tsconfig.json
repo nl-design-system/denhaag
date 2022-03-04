@@ -50,6 +50,9 @@
       "path": "components/FormField"
     },
     {
+      "path": "components/FormProgress"
+    },
+    {
       "path": "components/IconButton"
     },
     {
