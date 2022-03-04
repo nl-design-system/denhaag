@@ -6,10 +6,9 @@ import './index.scss';
 export interface FormProgressProps extends HTMLAttributes<HTMLDivElement> {
   value: number;
   max: number;
+  label: string;
   previousHref?: string;
   previousLabel?: string;
-  stepLabel?: string;
-  ofLabel?: string;
 }
 
 /**
@@ -18,10 +17,10 @@ export interface FormProgressProps extends HTMLAttributes<HTMLDivElement> {
 export const FormProgress: React.FC<FormProgressProps> = ({
   value,
   max,
+  label,
   previousHref = 'javascript:history.back()',
   previousLabel = 'Vorige stap',
-  stepLabel = 'Stap',
-  ofLabel = 'van',
+  id = 'denhaag-form-progress-bar',
   ...props
 }: FormProgressProps) => {
   return (
@@ -34,16 +33,11 @@ export const FormProgress: React.FC<FormProgressProps> = ({
             </Link>
           </div>
         )}
-        <label className="denhaag-form-progress__label" htmlFor="denhaag-form-progress-bar">
-          {stepLabel} {value} {ofLabel} {max}
+        <label className="denhaag-form-progress__label" htmlFor={id}>
+          {label}
         </label>
       </div>
-      <progress
-        id="denhaag-form-progress-bar"
-        className="denhaag-form-progress__progress"
-        max={max}
-        value={value}
-      ></progress>
+      <progress id={id} className="denhaag-form-progress__progress" max={max} value={value}></progress>
     </div>
   );
 };
