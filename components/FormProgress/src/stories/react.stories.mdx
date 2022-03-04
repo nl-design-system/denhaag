@@ -25,7 +25,7 @@ import pkg from "../../package.json";
 ### Default
 
 <Canvas>
-  <Story name="Default" args={{ value: 1, max: 4 }}>
+  <Story name="Default" args={{ value: 1, max: 4, label: "Stap 1 van 4" }}>
     {(args) => <FormProgress {...args} />}
   </Story>
 </Canvas>
@@ -35,7 +35,7 @@ import pkg from "../../package.json";
 ### Second Step
 
 <Canvas>
-  <Story name="Second Step" args={{ value: 2, max: 4 }}>
+  <Story name="Second Step" args={{ value: 2, max: 4, label: "Stap 2 van 4" }}>
     {(args) => <FormProgress {...args} />}
   </Story>
 </Canvas>
