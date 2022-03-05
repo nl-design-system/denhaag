@@ -16,11 +16,8 @@ describe('FormProgress tests', () => {
   });
 
   it('a11y and snapshots', () => {
-    cy.snapshots(
-      <div style={{ width: '400px' }}>
-        <FormProgress value={2} max={4} label="Stap 2 van 4" />
-      </div>,
-      {},
-    );
+    cy.snapshots(<FormProgress value={2} max={4} label="Stap 2 van 4" />, {}, [], [], null, () => {
+      cy.get('#wrapper').invoke('css', 'width', '400px');
+    });
   });
 });
