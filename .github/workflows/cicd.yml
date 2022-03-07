@@ -12,7 +12,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           ref: ${{ github.event.pull_request.head.ref }}
       - name: Get test_images
@@ -95,7 +95,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Download storybook artifact
         uses: actions/download-artifact@v2
@@ -115,7 +115,7 @@ jobs:
     if: github.ref == 'refs/heads/main'
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Set up Node.js version
         uses: actions/setup-node@v2
