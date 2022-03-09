@@ -1,5 +1,5 @@
 {
-  "name": "@gemeente-denhaag/anchornavigation",
+  "name": "@gemeente-denhaag/anchor-navigation",
   "version": "0.1.0",
   "description": "An anchor navigation component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
