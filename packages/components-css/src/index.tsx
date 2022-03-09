@@ -1,5 +1,6 @@
 import '../../../components/Alert/src/index.scss';
 import '../../../components/Accordion/src/index.scss';
+import '../../../components/AnchorNavigation/src/index.scss';
 import '../../../components/BadgeCounter/src/index.scss';
 import '../../../components/Blockquote/src/index.scss';
 import '../../../components/Breadcrumb/src/index.scss';
