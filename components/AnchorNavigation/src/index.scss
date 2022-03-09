@@ -1,0 +1,46 @@
+.denhaag-anchor-navigation {
+  border-inline-start: var(--denhaag-anchor-navigation-border-inline-start);
+}
+
+.denhaag-anchor-navigation ul {
+  list-style: var(--denhaag-anchor-navigation-ul-list-style);
+  padding-inline-start: var(--denhaag-anchor-navigation-ul-padding-inline-start);
+}
+
+.denhaag-anchor-navigation ul li a {
+  font-family: var(--denhaag-anchor-navigation-anchor-font-family);
+  font-size: var(--denhaag-anchor-navigation-anchor-font-size);
+  line-height: var(--denhaag-anchor-navigation-anchor-line-height);
+  text-decoration: var(--denhaag-anchor-navigation-anchor-text-decoration);
+}
+
+.denhaag-anchor-navigation ul li a,
+.denhaag-anchor-navigation ul li a:visited {
+  color: var(--denhaag-anchor-navigation-anchor-color-default);
+}
+
+.denhaag-anchor-navigation ul li a:active,
+.denhaag-anchor-navigation ul li a:hover,
+.denhaag-anchor-navigation ul li a:target {
+  color: var(--denhaag-anchor-navigation-anchor-color-interactive);
+  position: relative;
+}
+
+.denhaag-anchor-navigation ul li a:active,
+.denhaag-anchor-navigation ul li a:target {
+  font-weight: var(--denhaag-anchor-navigation-anchor-font-weight);
+}
+
+.denhaag-anchor-navigation ul li a:active::before,
+.denhaag-anchor-navigation ul li a:hover::before,
+.denhaag-anchor-navigation ul li a:target::before {
+  content: "";
+  width: var(--denhaag-anchor-navigation-anchor-width);
+  height: var(--denhaag-anchor-navigation-anchor-line-height);
+  position: absolute;
+  top: calc(-1 * (0.3023 * var(--denhaag-anchor-navigation-anchor-line-height)));
+  left: calc(
+    (-1 * var(--denhaag-anchor-navigation-ul-padding-inline-start)) - var(--denhaag-anchor-navigation-anchor-width)
+  );
+  background-color: var(--denhaag-anchor-navigation-anchor-background-color);
+}
