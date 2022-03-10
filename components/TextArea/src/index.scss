@@ -1,0 +1,85 @@
+@import "~@utrecht/components/textbox/bem";
+
+.denhaag-textarea {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+.denhaag-textarea--focus-within::after,
+.denhaag-textarea:focus-within::after {
+  border: var(--denhaag-focus-border);
+  border-radius: var(--denhaag-border-radius);
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+}
+
+.denhaag-textarea__input {
+  @extend .utrecht-textbox;
+
+  line-height: var(--denhaag-form-input-line-height);
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.denhaag-textarea__input:focus {
+  outline: none;
+}
+
+.denhaag-textarea__input:focus-visible {
+  outline: none;
+}
+
+.denhaag-textarea__input:disabled,
+.denhaag-textarea__input--disabled {
+  @extend .utrecht-textbox--disabled;
+}
+
+.denhaag-textarea__input::placeholder {
+  @extend .utrecht-textbox__placeholder;
+}
+
+.denhaag-textarea__input:disabled::placeholder,
+.denhaag-textarea__input--disabled::placeholder {
+  color: var(--utrecht-form-input-disabled-color);
+}
+
+.denhaag-textarea__input:invalid,
+.denhaag-textarea__input--invalid {
+  @extend .utrecht-textbox--invalid;
+
+  padding-inline-end: calc(
+    (var(--utrecht-form-input-padding-inline-end) * 2) + (var(--denhaag-form-input-icon-font-size) * 2)
+  );
+}
+
+.denhaag-textarea__icons {
+  align-items: flex-start;
+  color: var(--utrecht-form-input-color);
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  padding-inline-end: var(--utrecht-form-input-padding-inline-end);
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.denhaag-textarea__icons svg {
+  font-size: var(--denhaag-form-input-icon-font-size);
+}
+
+.denhaag-textarea__invalid-icon {
+  color: var(--utrecht-form-input-invalid-border-color);
+}
+
+.denhaag-textarea__input--disabled ~ .denhaag-textarea__icons svg,
+.denhaag-textarea__input:disabled ~ .denhaag-textarea__icons svg {
+  color: var(--utrecht-form-input-disabled-color);
+  cursor: var(--utrecht-action-disabled-cursor);
+}
