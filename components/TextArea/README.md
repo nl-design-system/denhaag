@@ -1,4 +1,4 @@
-# Text Field
+# Text Area
 
 A text field is an input field where users can input content and data.
 
@@ -27,8 +27,7 @@ The text field consists of:
 2. Placeholder: a hint towards the desired answer that sits within a field.
 3. Input text: the user input.
 4. Error icon (optional): this icon shows an error.
-5. Container: persists when the select is open or closed.
-6. Helper text: displays more information about the select
+5. Helper text: displays more information about the text field
 
 ## (Interactive) states
 
@@ -42,7 +41,6 @@ The text field contains the states active, inactive, disabled, error and focus.
 - Placeholder: TheSans/md/400
 - Input text: TheSans/md/400
 - Helper text: TheSans/s/400
-- Character counter text: TheSans/s/400
 
 ### Color
 

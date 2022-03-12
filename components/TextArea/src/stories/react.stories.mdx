@@ -2,7 +2,6 @@ import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/addon-do
 import { TextArea } from "../index";
 import pkg from "../../package.json";
 import readme from "../../README.md";
-import { CallIcon } from "@gemeente-denhaag/icons";
 
 <Meta
   title="React/Input/Text Area"
@@ -60,20 +59,6 @@ Not yet documented. Please refer to the source code.
       invalid: true,
     }}
     name="Invalid"
-  >
-    {(args) => <TextArea {...args} />}
-  </Story>
-</Canvas>
-
-### With descriptive icon
-
-<Canvas>
-  <Story
-    args={{
-      placeholder: "Phone number",
-      icon: <CallIcon />,
-    }}
-    name="With icon"
   >
     {(args) => <TextArea {...args} />}
   </Story>

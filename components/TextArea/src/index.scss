@@ -1,4 +1,4 @@
-@import "~@utrecht/components/textbox/bem";
+@import "~@utrecht/components/textarea/bem";
 
 .denhaag-textarea {
   display: inline-block;
@@ -20,11 +20,12 @@
 }
 
 .denhaag-textarea__input {
-  @extend .utrecht-textbox;
+  @extend .utrecht-textarea;
 
   line-height: var(--denhaag-form-input-line-height);
   margin-block-start: 0;
   margin-block-end: 0;
+  vertical-align: top;
 }
 
 .denhaag-textarea__input:focus {
@@ -37,11 +38,11 @@
 
 .denhaag-textarea__input:disabled,
 .denhaag-textarea__input--disabled {
-  @extend .utrecht-textbox--disabled;
+  @extend .utrecht-textarea--disabled;
 }
 
 .denhaag-textarea__input::placeholder {
-  @extend .utrecht-textbox__placeholder;
+  @extend .utrecht-textarea__placeholder;
 }
 
 .denhaag-textarea__input:disabled::placeholder,
@@ -51,35 +52,25 @@
 
 .denhaag-textarea__input:invalid,
 .denhaag-textarea__input--invalid {
-  @extend .utrecht-textbox--invalid;
+  @extend .utrecht-textarea--invalid;
 
   padding-inline-end: calc(
-    (var(--utrecht-form-input-padding-inline-end) * 2) + (var(--denhaag-form-input-icon-font-size) * 2)
+    var(--utrecht-form-input-padding-inline-end) + var(--denhaag-form-input-icon-font-size) + 16px
   );
 }
 
-.denhaag-textarea__icons {
-  align-items: flex-start;
-  color: var(--utrecht-form-input-color);
-  display: flex;
-  flex-direction: row;
-  height: 100%;
+.denhaag-textarea__icon {
+  padding-block-start: var(--utrecht-form-input-padding-block-start);
   padding-inline-end: var(--utrecht-form-input-padding-inline-end);
   position: absolute;
   right: 0;
   top: 0;
-}
 
-.denhaag-textarea__icons svg {
-  font-size: var(--denhaag-form-input-icon-font-size);
+  svg {
+    font-size: var(--denhaag-form-input-icon-font-size);
+  }
 }
 
 .denhaag-textarea__invalid-icon {
   color: var(--utrecht-form-input-invalid-border-color);
-}
-
-.denhaag-textarea__input--disabled ~ .denhaag-textarea__icons svg,
-.denhaag-textarea__input:disabled ~ .denhaag-textarea__icons svg {
-  color: var(--utrecht-form-input-disabled-color);
-  cursor: var(--utrecht-action-disabled-cursor);
 }
