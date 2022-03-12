@@ -36,7 +36,7 @@ export const TextArea: React.FC<TextAreaProps> = forwardRef(function DenHaagText
   return (
     <div className={'denhaag-textarea'}>
       <textarea className={inputClasses} ref={ref} aria-invalid={props.invalid || undefined} {...props} />
-      <div className={'denhaag-textarea__icons'}>{props.invalid && invalidIcon}</div>
+      <div className={'denhaag-textarea__icon'}>{props.invalid && invalidIcon}</div>
     </div>
   );
 });
