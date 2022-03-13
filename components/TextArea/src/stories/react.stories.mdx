@@ -2,6 +2,7 @@ import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/addon-do
 import { TextArea } from "../index";
 import pkg from "../../package.json";
 import readme from "../../README.md";
+import FormField from "@gemeente-denhaag/form-field";
 
 <Meta
   title="React/Input/Text Area"
@@ -61,6 +62,46 @@ Not yet documented. Please refer to the source code.
     name="Invalid"
   >
     {(args) => <TextArea {...args} />}
+  </Story>
+</Canvas>
+
+### With label
+
+<Canvas>
+  <Story
+    args={{
+      placeholder: "Placeholder",
+    }}
+    name="With label"
+  >
+    {(args) => (
+      <FormField
+        input={<TextArea {...args} />}
+        label={"Label"}
+        description={"A description providing more information about the input."}
+      />
+    )}
+  </Story>
+</Canvas>
+
+### Invalid with label
+
+<Canvas>
+  <Story
+    args={{
+      placeholder: "Placeholder",
+      invalid: true,
+    }}
+    name="Invalid with label"
+  >
+    {(args) => (
+      <FormField
+        error={args.invalid}
+        input={<TextArea {...args} />}
+        label={"Label"}
+        description={"A description providing more information about the input."}
+      />
+    )}
   </Story>
 </Canvas>
 
