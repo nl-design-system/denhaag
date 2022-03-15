@@ -1,6 +1,6 @@
 {
   "denhaag": {
-    "cta-authentication": {
+    "authentication": {
       "border": {
         "color": "{denhaag.color.grey.2}"
       },

@@ -5,7 +5,7 @@ import pkg from "../../package.json";
 import readme from "../../README.md";
 
 <Meta
-  title="CSS/Actions/CTA Authentication"
+  title="CSS/Actions/Authentication Block"
   parameters={{
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: { source: { type: "dynamic" } },
@@ -19,7 +19,7 @@ import readme from "../../README.md";
 
 ## Design Tokens
 
-<DesignTokenDocBlock categoryName="Authentication" viewType="table" />
+<DesignTokenDocBlock categoryName="AuthenticationBlock" viewType="table" />
 
 ## Stories
 
@@ -28,15 +28,15 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Default">
-    <div class="denhaag-cta-authentication denhaag-cta-authentication--landscape">
-      <div class="denhaag-cta-authentication__card">
-        <header class="denhaag-cta-authentication__header">
+    <div class="denhaag-authentication denhaag-authentication--landscape">
+      <div class="denhaag-authentication__card">
+        <header class="denhaag-authentication__header">
           <h3 class="utrecht-heading-3">Title</h3>
           <div class="utrecht-paragraph">
             <p>Subtitle</p>
           </div>
         </header>
-        <div class="denhaag-cta-authentication__content">
+        <div class="denhaag-authentication__content">
           <div class="denhaag-button-group denhaag-button-group--single">
             <a
               class="denhaag-button denhaag-button--end-icon denhaag-button--large"
@@ -66,15 +66,15 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Multiple buttons">
-    <div class="denhaag-cta-authentication denhaag-cta-authentication--landscape">
-      <div class="denhaag-cta-authentication__card">
-        <header class="denhaag-cta-authentication__header">
+    <div class="denhaag-authentication denhaag-authentication--landscape">
+      <div class="denhaag-authentication__card">
+        <header class="denhaag-authentication__header">
           <h3 class="utrecht-heading-3">Title</h3>
           <div class="utrecht-paragraph">
             <p>Subtitle</p>
           </div>
         </header>
-        <div class="denhaag-cta-authentication__content">
+        <div class="denhaag-authentication__content">
           <div class="denhaag-button-group denhaag-button-group--multiple">
             <a
               class="denhaag-button denhaag-button--end-icon denhaag-button--large"
@@ -119,9 +119,9 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="With image">
-    <div class="denhaag-cta-authentication denhaag-cta-authentication--landscape">
-      <div class="denhaag-cta-authentication__card">
-        <header class="denhaag-cta-authentication__header">
+    <div class="denhaag-authentication denhaag-authentication--landscape">
+      <div class="denhaag-authentication__card">
+        <header class="denhaag-authentication__header">
           <figure class="denhaag-image">
             <img
               width="80"
@@ -137,7 +137,7 @@ import readme from "../../README.md";
             <p>Subtitle</p>
           </div>
         </header>
-        <div class="denhaag-cta-authentication__content">
+        <div class="denhaag-authentication__content">
           <div class="denhaag-button-group denhaag-button-group--multiple">
             <a
               class="denhaag-button denhaag-button--end-icon denhaag-button--large"
@@ -182,9 +182,9 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Extra link">
-    <div class="denhaag-cta-authentication denhaag-cta-authentication--landscape">
-      <div class="denhaag-cta-authentication__card">
-        <header class="denhaag-cta-authentication__header">
+    <div class="denhaag-authentication denhaag-authentication--landscape">
+      <div class="denhaag-authentication__card">
+        <header class="denhaag-authentication__header">
           <figure class="denhaag-image">
             <img
               width="80"
@@ -200,7 +200,7 @@ import readme from "../../README.md";
             <p>Subtitle</p>
           </div>
         </header>
-        <div class="denhaag-cta-authentication__content">
+        <div class="denhaag-authentication__content">
           <div class="denhaag-button-group denhaag-button-group--multiple">
             <a
               class="denhaag-button denhaag-button--end-icon denhaag-button--large"
@@ -234,13 +234,13 @@ import readme from "../../README.md";
             </a>
           </div>
         </div>
-        <footer class="denhaag-cta-authentication__footer">
-          <div class="denhaag-cta-authentication__footer-divider">
+        <footer class="denhaag-authentication__footer">
+          <div class="denhaag-authentication__footer-divider">
             <hr class="denhaag-divider" role="presentation" />
-            <div class="denhaag-cta-authentication__footer-label">or</div>
+            <div class="denhaag-authentication__footer-label">or</div>
           </div>
           <a
-            class="denhaag-cta-authentication-item"
+            class="denhaag-authentication-item"
             href="#example-link"
             target="_blank"
             title="Gebruik een Europees erkend middel"
@@ -250,7 +250,7 @@ import readme from "../../README.md";
               width="40"
               height="40"
               src="https://source.unsplash.com/40x40/?brand"
-              class="denhaag-cta-authentication-item__image"
+              class="denhaag-authentication-item__image"
               alt=""
               loading="lazy"
             />
@@ -282,9 +282,9 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Portrait">
-    <div class="denhaag-cta-authentication denhaag-cta-authentication--portrait">
-      <div class="denhaag-cta-authentication__card">
-        <header class="denhaag-cta-authentication__header">
+    <div class="denhaag-authentication denhaag-authentication--portrait">
+      <div class="denhaag-authentication__card">
+        <header class="denhaag-authentication__header">
           <figure class="denhaag-image">
             <img
               width="80"
@@ -300,7 +300,7 @@ import readme from "../../README.md";
             <p>Subtitle</p>
           </div>
         </header>
-        <div class="denhaag-cta-authentication__content">
+        <div class="denhaag-authentication__content">
           <div class="denhaag-button-group denhaag-button-group--single">
             <a
               class="denhaag-button denhaag-button--end-icon denhaag-button--large"
@@ -319,13 +319,13 @@ import readme from "../../README.md";
             </a>
           </div>
         </div>
-        <footer class="denhaag-cta-authentication__footer">
-          <div class="denhaag-cta-authentication__footer-divider">
+        <footer class="denhaag-authentication__footer">
+          <div class="denhaag-authentication__footer-divider">
             <hr class="denhaag-divider" role="presentation" />
-            <div class="denhaag-cta-authentication__footer-label">or</div>
+            <div class="denhaag-authentication__footer-label">or</div>
           </div>
           <a
-            class="denhaag-cta-authentication-item"
+            class="denhaag-authentication-item"
             href="#example-link"
             target="_blank"
             title="Gebruik een Europees erkend middel"
@@ -335,7 +335,7 @@ import readme from "../../README.md";
               width="40"
               height="40"
               src="https://source.unsplash.com/40x40/?brand"
-              class="denhaag-cta-authentication-item__image"
+              class="denhaag-authentication-item__image"
               alt=""
               loading="lazy"
             />
@@ -367,9 +367,9 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Portrait multiple">
-    <div class="denhaag-cta-authentication denhaag-cta-authentication--portrait">
-      <div class="denhaag-cta-authentication__card">
-        <header class="denhaag-cta-authentication__header">
+    <div class="denhaag-authentication denhaag-authentication--portrait">
+      <div class="denhaag-authentication__card">
+        <header class="denhaag-authentication__header">
           <figure class="denhaag-image">
             <img
               width="80"
@@ -385,7 +385,7 @@ import readme from "../../README.md";
             <p>Subtitle</p>
           </div>
         </header>
-        <div class="denhaag-cta-authentication__content">
+        <div class="denhaag-authentication__content">
           <div class="denhaag-button-group denhaag-button-group--single">
             <a
               class="denhaag-button denhaag-button--end-icon denhaag-button--large"
@@ -404,13 +404,13 @@ import readme from "../../README.md";
             </a>
           </div>
         </div>
-        <footer class="denhaag-cta-authentication__footer">
-          <div class="denhaag-cta-authentication__footer-divider">
+        <footer class="denhaag-authentication__footer">
+          <div class="denhaag-authentication__footer-divider">
             <hr class="denhaag-divider" role="presentation" />
-            <div class="denhaag-cta-authentication__footer-label">or</div>
+            <div class="denhaag-authentication__footer-label">or</div>
           </div>
           <a
-            class="denhaag-cta-authentication-item"
+            class="denhaag-authentication-item"
             href="#example-link"
             target="_blank"
             title="Gebruik een Europees erkend middel"
@@ -420,7 +420,7 @@ import readme from "../../README.md";
               width="40"
               height="40"
               src="https://source.unsplash.com/40x40/?brand"
-              class="denhaag-cta-authentication-item__image"
+              class="denhaag-authentication-item__image"
               alt=""
               loading="lazy"
             />
@@ -442,8 +442,8 @@ import readme from "../../README.md";
           </a>
         </footer>
       </div>
-      <div class="denhaag-cta-authentication__card">
-        <header class="denhaag-cta-authentication__header">
+      <div class="denhaag-authentication__card">
+        <header class="denhaag-authentication__header">
           <figure class="denhaag-image">
             <img
               width="80"
@@ -459,7 +459,7 @@ import readme from "../../README.md";
             <p>Subtitle</p>
           </div>
         </header>
-        <div class="denhaag-cta-authentication__content">
+        <div class="denhaag-authentication__content">
           <div class="denhaag-button-group denhaag-button-group--single">
             <a
               class="denhaag-button denhaag-button--end-icon denhaag-button--large"
@@ -478,13 +478,13 @@ import readme from "../../README.md";
             </a>
           </div>
         </div>
-        <footer class="denhaag-cta-authentication__footer">
-          <div class="denhaag-cta-authentication__footer-divider">
+        <footer class="denhaag-authentication__footer">
+          <div class="denhaag-authentication__footer-divider">
             <hr class="denhaag-divider" role="presentation" />
-            <div class="denhaag-cta-authentication__footer-label">or</div>
+            <div class="denhaag-authentication__footer-label">or</div>
           </div>
           <a
-            class="denhaag-cta-authentication-item"
+            class="denhaag-authentication-item"
             href="#example-link"
             target="_blank"
             title="Gebruik een Europees erkend middel"
@@ -494,7 +494,7 @@ import readme from "../../README.md";
               width="40"
               height="40"
               src="https://source.unsplash.com/40x40/?brand"
-              class="denhaag-cta-authentication-item__image"
+              class="denhaag-authentication-item__image"
               alt=""
               loading="lazy"
             />
@@ -516,8 +516,8 @@ import readme from "../../README.md";
           </a>
         </footer>
       </div>
-      <div class="denhaag-cta-authentication__card">
-        <header class="denhaag-cta-authentication__header">
+      <div class="denhaag-authentication__card">
+        <header class="denhaag-authentication__header">
           <figure class="denhaag-image">
             <img
               width="80"
@@ -533,7 +533,7 @@ import readme from "../../README.md";
             <p>Subtitle</p>
           </div>
         </header>
-        <div class="denhaag-cta-authentication__content">
+        <div class="denhaag-authentication__content">
           <div class="denhaag-button-group denhaag-button-group--single">
             <a
               class="denhaag-button denhaag-button--end-icon denhaag-button--large"
@@ -552,13 +552,13 @@ import readme from "../../README.md";
             </a>
           </div>
         </div>
-        <footer class="denhaag-cta-authentication__footer">
-          <div class="denhaag-cta-authentication__footer-divider">
+        <footer class="denhaag-authentication__footer">
+          <div class="denhaag-authentication__footer-divider">
             <hr class="denhaag-divider" role="presentation" />
-            <div class="denhaag-cta-authentication__footer-label">or</div>
+            <div class="denhaag-authentication__footer-label">or</div>
           </div>
           <a
-            class="denhaag-cta-authentication-item"
+            class="denhaag-authentication-item"
             href="#example-link"
             target="_blank"
             title="Gebruik een Europees erkend middel"
@@ -568,7 +568,7 @@ import readme from "../../README.md";
               width="40"
               height="40"
               src="https://source.unsplash.com/40x40/?brand"
-              class="denhaag-cta-authentication-item__image"
+              class="denhaag-authentication-item__image"
               alt=""
               loading="lazy"
             />
