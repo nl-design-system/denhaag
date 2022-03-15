@@ -4,6 +4,7 @@
   background-color: var(--denhaag-cta-image-content-background-color);
   border: var(--denhaag-cta-image-content-border-width, 1px) solid var(--denhaag-cta-image-content-border-color);
   border-radius: var(--denhaag-cta-image-content-border-radius);
+  overflow: hidden;
 }
 
 .denhaag-cta-image-content--filled {

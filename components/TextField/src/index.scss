@@ -4,6 +4,8 @@
   display: inline-block;
   position: relative;
   width: 100%;
+  margin-block-start: var(--denhaag-form-input-margin-block-start);
+  margin-block-end: var(--denhaag-form-input-margin-block-end);
 }
 
 .denhaag-textfield--focus-within::after,

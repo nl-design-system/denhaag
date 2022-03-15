@@ -1,0 +1,42 @@
+.denhaag-form-progress {
+  display: flex;
+  flex-direction: column;
+}
+
+.denhaag-form-progress__header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: var(--denhaag-form-progress-header-margin-block-end);
+}
+
+.denhaag-form-progress__previous {
+  position: absolute;
+  inset-inline-start: 0;
+}
+
+.denhaag-form-progress__label {
+  font-family: var(--denhaag-form-progress-label-font-family);
+  font-size: var(--denhaag-form-progress-label-font-size);
+  font-weight: var(--denhaag-form-progress-label-font-weight);
+  color: var(--denhaag-form-progress-label-color);
+  line-height: var(--denhaag-form-progress-label-line-height);
+}
+
+.denhaag-form-progress__progress {
+  width: 100%;
+  height: var(--denhaag-form-progress-progress-height);
+  appearance: none;
+  border: none;
+  background-color: var(--denhaag-form-progress-progress-background-color);
+
+  &::-webkit-progress-bar {
+    background-color: var(--denhaag-form-progress-progress-background-color);
+  }
+
+  &::-webkit-progress-value,
+  &::-moz-progress-bar {
+    background-color: var(--denhaag-form-progress-progress-bar-background-color);
+  }
+}

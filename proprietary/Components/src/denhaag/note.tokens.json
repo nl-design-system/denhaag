@@ -28,7 +28,8 @@
       },
       "icon-spacing": {
         "value": "{denhaag.space.block.xs}"
-      }
+      },
+      "icon-end-margin-inline-end": { "value": "{denhaag.space.inline.2xs}" }
     }
   }
 }

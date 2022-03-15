@@ -1,0 +1,24 @@
+@import "~@utrecht/components/form-label/bem";
+
+.denhaag-form-field {
+  --denhaag-form-input-margin-block-start: 4px;
+  --denhaag-form-input-margin-block-end: 8px;
+}
+
+.denhaag-form-field__label {
+  @extend .utrecht-form-label;
+
+  line-height: var(--denhaag-typography-scale-base-line-height);
+}
+
+.denhaag-form-field__description {
+  font-family: var(--denhaag-form-field-description-font-family);
+  font-size: var(--denhaag-form-field-description-font-size);
+  font-weight: var(--denhaag-form-field-description-font-weight);
+  color: var(--denhaag-form-field-description-color);
+  line-height: var(--denhaag-form-field-description-line-height);
+}
+
+.denhaag-form-field--error .denhaag-form-field__description {
+  color: var(--denhaag-form-field-description-error-color);
+}

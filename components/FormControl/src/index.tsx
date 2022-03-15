@@ -13,7 +13,7 @@ export type FormControlProps<
  * consistent across the children of the `FormControl`.
  * This context is used by the following components:
  *
- * -   FormLabel
+ * -   FormFieldLabel
  * -   FormHelperText
  * -   Input
  * -   InputLabel
