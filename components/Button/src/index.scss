@@ -14,6 +14,7 @@
   padding-inline-end: var(--denhaag-button-medium-size-padding-inline, var(--denhaag-button-padding-inline));
   padding-inline-start: var(--denhaag-button-medium-size-padding-inline, var(--denhaag-button-padding-inline));
   position: relative;
+  text-decoration: none;
 }
 
 .denhaag-button--focus::after,
