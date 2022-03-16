@@ -34,8 +34,8 @@
       },
       "paragraph": {
         "color": { "value": "{denhaag.color.green.4}" },
-        "font-family": { "value": "denhaag.typography.sans-serif-alternate.font-family" },
-        "font-size": { "value": "denhaag.typography.scale.lg.font-size" },
+        "font-family": { "value": "{denhaag.typography.sans-serif-alternate.font-family}" },
+        "font-size": { "value": "{denhaag.typography.scale.lg.font-size}" },
         "font-weight": { "value": "700" },
         "line-height": { "value": "1.3" }
       }
