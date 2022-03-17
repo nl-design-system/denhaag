@@ -1,8 +1,8 @@
 {
   "denhaag": {
     "authentication": {
-      "border": {
-        "color": "{denhaag.color.grey.2}"
+      "border-color": {
+        "value": "{denhaag.color.grey.2}"
       },
       "gap": {
         "value": "{denhaag.space.block.xl}"
