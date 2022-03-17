@@ -41,7 +41,7 @@ export interface CardProps extends Omit<BaseProps, 'classes'> {
   /**
    * Determines the date shown on the card
    */
-  date: Date;
+  date?: Date;
 
   /**
    * Determines the url the card points to
@@ -98,9 +98,9 @@ export const Card: React.FC<CardProps> = ({ archived = false, ...props }: CardPr
             </Typography>
           </div>
           <CardActions disableSpacing={true}>
-            <Typography component="div" classes={subtitleClasses}>
+            {props.date && <Typography component="div" classes={subtitleClasses}>
               <time dateTime={props.date.toISOString()}>{props.date.toLocaleDateString()}</time>
-            </Typography>
+            </Typography>}
             <Icon classes={arrowClasses} aria-label="ArrowRightIcon">
               <ArrowRightIcon />
             </Icon>
