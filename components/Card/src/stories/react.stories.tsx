@@ -28,6 +28,15 @@ Default.args = {
 };
 
 /**
+ * Default variant of Card component without date
+ */
+export const CardWithoutDate: Story<CardProps> = Template.bind({});
+CardWithoutDate.args = {
+  title: Default.args.title,
+  subTitle: Default.args.subTitle,
+};
+
+/**
  * Case variant of Card component
  */
 export const Case: Story<CardProps> = Template.bind({});
