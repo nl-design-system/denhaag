@@ -39,6 +39,7 @@
   left: var(--denhaag-card-arrow-left);
   position: var(--denhaag-card-arrow-position);
   right: var(--denhaag-card-arrow-right);
+  margin-inline-start: auto;
 }
 
 .denhaag-card__title {
