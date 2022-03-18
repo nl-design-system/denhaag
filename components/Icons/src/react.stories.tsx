@@ -44,12 +44,8 @@ const AllTemplate: Story<SvgIconProps> = (props: SvgIconProps) => {
   return <div style={{ display: 'flex', flexWrap: 'wrap' }}>{children}</div>;
 };
 
-const SingleTemplate: Story<SvgIconProps> = ({ component, ...props }: SvgIconProps) => {
-  if (typeof component === 'string') {
-    return <SvgIcon component={Icons[component]} {...props} />;
-  } else {
-    return <SvgIcon {...props} />;
-  }
+const SingleTemplate: Story<SvgIconProps> = ({ ...props }: SvgIconProps) => {
+  return <SvgIcon {...props} />;
 };
 
 const defaultCode = `

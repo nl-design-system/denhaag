@@ -7,10 +7,5 @@
     "composite": true
   },
   "include": ["src/**/*"],
-  "exclude": ["dist", "src/**/*.stories.tsx"],
-  "references": [
-    {
-      "path": "../BaseProps"
-    }
-  ]
+  "exclude": ["dist", "src/**/*.stories.tsx"]
 }
