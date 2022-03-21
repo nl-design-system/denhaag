@@ -1,0 +1,202 @@
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+
+import "../index.scss";
+import pkg from "../../package.json";
+import readme from "../../README.md";
+
+<Meta
+  title="CSS/Navigation/Link Group"
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Design Tokens
+
+<DesignTokenDocBlock categoryName="Link Group" viewType="table" />
+
+## Stories
+
+### Default
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Default">
+    <div class="denhaag-link-group">
+      <h3 class="utrecht-heading-4 denhaag-link-group__caption">Caption</h3>
+      <nav class="denhaag-link-group__navigation" aria-labelledby="denhaag-link-group-navigation-1">
+        <ul
+          id="denhaag-link-group-navigation-1"
+          class="utrecht-link-list utrecht-link-list--html-ul denhaag-link-group__navigation-list"
+        >
+          <li class="utrecht-link-list__item denhaag-link-group__navigation-list-item">
+            <a
+              href="https://nl-design-system.github.io/denhaag/"
+              class="utrecht-link denhaag-link-group__navigation-link"
+            >
+              Paspoort en identiteitskaart
+            </a>
+          </li>
+          <li class="utrecht-link-list__item denhaag-link-group__navigation-list-item">
+            <a
+              href="https://nl-design-system.github.io/denhaag/"
+              class="utrecht-link denhaag-link-group__navigation-link"
+            >
+              Rijbewijs
+            </a>
+          </li>
+          <li class="utrecht-link-list__item denhaag-link-group__navigation-list-item">
+            <a
+              href="https://nl-design-system.github.io/denhaag/"
+              class="utrecht-link denhaag-link-group__navigation-link"
+            >
+              Inburgeren en naturaliseren
+            </a>
+          </li>
+          <li class="utrecht-link-list__item denhaag-link-group__navigation-list-item">
+            <a
+              href="https://nl-design-system.github.io/denhaag/"
+              class="utrecht-link denhaag-link-group__navigation-link"
+            >
+              Akten
+            </a>
+          </li>
+          <li class="utrecht-link-list__item denhaag-link-group__navigation-list-item">
+            <a
+              href="https://nl-design-system.github.io/denhaag/"
+              class="utrecht-link denhaag-link-group__navigation-link"
+            >
+              Verklaringen
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### With Image
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="With Image">
+    <div class="denhaag-link-group">
+      <img class="denhaag-link-group__image" src="https://via.placeholder.com/140x140" alt="placeholder" />
+      <h3 class="utrecht-heading-4 denhaag-link-group__caption">Caption</h3>
+      <nav class="denhaag-link-group__navigation" aria-labelledby="denhaag-link-group-navigation-2">
+        <ul
+          id="denhaag-link-group-navigation-2"
+          class="utrecht-link-list utrecht-link-list--html-ul denhaag-link-group__navigation-list"
+        >
+          <li class="utrecht-link-list__item denhaag-link-group__navigation-list-item">
+            <a
+              href="https://nl-design-system.github.io/denhaag/"
+              class="utrecht-link denhaag-link-group__navigation-link"
+            >
+              Paspoort en identiteitskaart
+            </a>
+          </li>
+          <li class="utrecht-link-list__item denhaag-link-group__navigation-list-item">
+            <a
+              href="https://nl-design-system.github.io/denhaag/"
+              class="utrecht-link denhaag-link-group__navigation-link"
+            >
+              Rijbewijs
+            </a>
+          </li>
+          <li class="utrecht-link-list__item denhaag-link-group__navigation-list-item">
+            <a
+              href="https://nl-design-system.github.io/denhaag/"
+              class="utrecht-link denhaag-link-group__navigation-link"
+            >
+              Inburgeren en naturaliseren
+            </a>
+          </li>
+          <li class="utrecht-link-list__item denhaag-link-group__navigation-list-item">
+            <a
+              href="https://nl-design-system.github.io/denhaag/"
+              class="utrecht-link denhaag-link-group__navigation-link"
+            >
+              Akten
+            </a>
+          </li>
+          <li class="utrecht-link-list__item denhaag-link-group__navigation-list-item">
+            <a
+              href="https://nl-design-system.github.io/denhaag/"
+              class="utrecht-link denhaag-link-group__navigation-link"
+            >
+              Verklaringen
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Dark background
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Dark background">
+    <div class="denhaag-link-group denhaag-link-group--dark" style={{ backgroundColor: "#2D2D2D", padding: "1rem" }}>
+      <h3 class="utrecht-heading-4 denhaag-link-group__caption">Caption</h3>
+      <nav class="denhaag-link-group__navigation" aria-labelledby="denhaag-link-group-navigation-3">
+        <ul
+          id="denhaag-link-group-navigation-3"
+          class="utrecht-link-list utrecht-link-list--html-ul denhaag-link-group__navigation-list"
+        >
+          <li class="utrecht-link-list__item denhaag-link-group__navigation-list-item">
+            <a
+              href="https://nl-design-system.github.io/denhaag/"
+              class="utrecht-link denhaag-link-group__navigation-link"
+            >
+              Paspoort en identiteitskaart
+            </a>
+          </li>
+          <li class="utrecht-link-list__item denhaag-link-group__navigation-list-item">
+            <a
+              href="https://nl-design-system.github.io/denhaag/"
+              class="utrecht-link denhaag-link-group__navigation-link"
+            >
+              Rijbewijs
+            </a>
+          </li>
+          <li class="utrecht-link-list__item denhaag-link-group__navigation-list-item">
+            <a
+              href="https://nl-design-system.github.io/denhaag/"
+              class="utrecht-link denhaag-link-group__navigation-link"
+            >
+              Inburgeren en naturaliseren
+            </a>
+          </li>
+          <li class="utrecht-link-list__item denhaag-link-group__navigation-list-item">
+            <a
+              href="https://nl-design-system.github.io/denhaag/"
+              class="utrecht-link denhaag-link-group__navigation-link"
+            >
+              Akten
+            </a>
+          </li>
+          <li class="utrecht-link-list__item denhaag-link-group__navigation-list-item">
+            <a
+              href="https://nl-design-system.github.io/denhaag/"
+              class="utrecht-link denhaag-link-group__navigation-link"
+            >
+              Verklaringen
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>

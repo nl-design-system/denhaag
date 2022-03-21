@@ -1,0 +1,20 @@
+{
+  "denhaag": {
+    "link-group": {
+      "image": {
+        "padding-block-end": { "value": "1rem" }
+      },
+      "caption": {
+        "color": { "value": "{denhaag.color.grey.5}" },
+        "font-weight": { "value": "500" }
+      },
+      "navigation-link": {
+        "line-height": { "value": "1.6875rem" }
+      },
+      "dark": {
+        "navigation-link-color": { "value": "{denhaag.color.white}" },
+        "caption-color": { "value": "{denhaag.color.ocher.3}" }
+      }
+    }
+  }
+}
