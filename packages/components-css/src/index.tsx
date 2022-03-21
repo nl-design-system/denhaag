@@ -1,10 +1,12 @@
 import '../../../components/Alert/src/index.scss';
 import '../../../components/Accordion/src/index.scss';
 import '../../../components/AnchorNavigation/src/index.scss';
+import '../../../components/AuthenticationBlock/src/index.scss';
 import '../../../components/BadgeCounter/src/index.scss';
 import '../../../components/Blockquote/src/index.scss';
 import '../../../components/Breadcrumb/src/index.scss';
 import '../../../components/Button/src/index.scss';
+import '../../../components/ButtonGroup/src/index.scss';
 import '../../../components/Card/src/Card/card.scss';
 import '../../../components/Card/src/CardActions/card-actions.scss';
 import '../../../components/Checkbox/src/index.scss';
