@@ -14,7 +14,7 @@
         "value": "{denhaag.space.block.2xl}"
       },
       "item": {
-        "image-size": {
+        "image-width": {
           "value": "2.375rem"
         },
         "gap": {
