@@ -3,7 +3,6 @@ import { TransitionProps } from '@material-ui/core/transitions';
 import { StepContent as MaterialStepContent } from '@material-ui/core';
 
 import { StepComponentProps } from './StepComponentProps';
-import { stepContentClass } from './bem-mapping';
 import clsx from 'clsx';
 
 export interface StepContentProps extends StepComponentProps {
@@ -45,7 +44,7 @@ export const StepContent: React.FC<StepContentProps> = ({
   id = undefined,
   ...props
 }: StepContentProps) => {
-  const rootClassNames = clsx(stepContentClass, props.className);
+  const rootClassNames = clsx('denhaag-timeline__step-content', props.className);
 
   return (
     <MaterialStepContent

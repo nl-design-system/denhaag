@@ -1,8 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
-import SvgIcon, { SvgIconProps, CheckCircleIcon } from '@gemeente-denhaag/icons';
+import SvgIcon, { CheckCircleIcon } from '@gemeente-denhaag/icons';
 
-import { stepIconClasses } from './bem-mapping';
 import { StepComponentProps } from './StepComponentProps';
 
 export interface StepIconProps extends StepComponentProps {
@@ -24,15 +23,6 @@ export const StepIcon: React.FC<StepIconProps> = ({
   disabled = false,
   id = undefined,
 }: StepIconProps) => {
-  let color: SvgIconProps['color'] = 'primary';
-  if (disabled) {
-    color = 'disabled';
-  } else if (active) {
-    color = 'action';
-  } else if (completed) {
-    color = 'secondary';
-  }
-
   const textClasses = clsx('denhaag-timeline__step-icon-text', {
     'denhaag-timeline__step-icon-text--active': active,
   });
@@ -47,12 +37,19 @@ export const StepIcon: React.FC<StepIconProps> = ({
     strokeWidth: active ? 0 : 1.5,
   };
 
+  const completedClassName = clsx('denhaag-timeline__step-icon', 'denhaag-timeline__step-icon--completed');
+
   if (completed) {
-    return <CheckCircleIcon classes={stepIconClasses} color={color} />;
+    return <CheckCircleIcon useDefaultClass={false} className={completedClassName} />;
   }
 
+  const className = clsx('denhaag-timeline__step-icon', {
+    'denhaag-timeline__step-icon--active': active,
+    'denhaag-timeline__step-icon--disabled': disabled,
+  });
+
   return (
-    <SvgIcon id={id} viewBox="0 0 20 20" classes={stepIconClasses} color={color}>
+    <SvgIcon fill={'currentColor'} useDefaultClass={false} id={id} viewBox="0 0 20 20" className={className}>
       <circle {...circleProps} />
       <text x="10" y="14" textAnchor="middle" className={textClasses}>
         {icon}

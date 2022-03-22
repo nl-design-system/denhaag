@@ -1,10 +1,10 @@
-import React, { useEffect, useState, KeyboardEventHandler } from 'react';
+import React, { KeyboardEventHandler, useEffect, useState } from 'react';
 import { Step as MaterialStep } from '@material-ui/core';
 import { ChevronDownIcon, ChevronUpIcon } from '@gemeente-denhaag/icons';
 
 import { StepContent, StepLabel } from './index';
 import { StepComponentProps } from './StepComponentProps';
-import { stepClasses, stepCollapseIconClasses } from './bem-mapping';
+import clsx from 'clsx';
 
 export interface StepProps extends StepComponentProps {
   /**
@@ -68,17 +68,18 @@ export const Step: React.FC<StepProps> = ({
   if (hasDescription && completed) {
     role = 'button';
     if (isExpanded) {
-      iconElement = <ChevronUpIcon classes={stepCollapseIconClasses} />;
+      iconElement = <ChevronUpIcon useDefaultClass={false} className={'denhaag-timeline__step-collapse-icon'} />;
     } else {
-      iconElement = <ChevronDownIcon classes={stepCollapseIconClasses} />;
+      iconElement = <ChevronDownIcon useDefaultClass={false} className={'denhaag-timeline__step-collapse-icon'} />;
     }
   }
+
+  const className = clsx('denhaag-timeline__step', props.className);
 
   return (
     <MaterialStep
       active={active}
       aria-expanded={isExpanded}
-      classes={stepClasses}
       completed={completed}
       disabled={disabled}
       expanded={isExpanded}
@@ -88,7 +89,7 @@ export const Step: React.FC<StepProps> = ({
       role={role}
       tabIndex={tabIndex}
       {...props}
-      className={props.className}
+      className={className}
     >
       <StepLabel>
         {label}
