@@ -8,33 +8,40 @@
 }
 
 .denhaag-anchor-navigation__link {
+  color: var(--denhaag-anchor-navigation-link-color);
   font-family: var(--denhaag-anchor-navigation-link-font-family);
   font-size: var(--denhaag-anchor-navigation-link-font-size);
   line-height: var(--denhaag-anchor-navigation-link-line-height);
   text-decoration: var(--denhaag-anchor-navigation-link-text-decoration);
+  position: relative;
 }
 
-.denhaag-anchor-navigation__link,
+.denhaag-anchor-navigation__link:visited,
 .denhaag-anchor-navigation__link--visited {
-  color: var(--denhaag-anchor-navigation-link-color);
+  --denhaag-anchor-navigation-link-color: var(--denhaag-anchor-navigation-link-color-visited);
+  --denhaag-anchor-navigation-link-background-color: ar(--denhaag-anchor-navigation-link-color-visited);
 }
 
-.denhaag-anchor-navigation__link:active {
+.denhaag-anchor-navigation__link:active,
+.denhaag-anchor-navigation__link--active {
   --denhaag-anchor-navigation-link-color: var(--denhaag-anchor-navigation-link-color-active);
+  --denhaag-anchor-navigation-link-background-color: var(--denhaag-anchor-navigation-link-color-active);
 }
 
-.denhaag-anchor-navigation__link:hover {
+.denhaag-anchor-navigation__link:hover,
+.denhaag-anchor-navigation__link--hover {
   --denhaag-anchor-navigation-link-color: var(--denhaag-anchor-navigation-link-color-hover);
+  --denhaag-anchor-navigation-link-background-color: var(--denhaag-anchor-navigation-link-color-hover);
 }
 
 .denhaag-anchor-navigation__link:target {
   --denhaag-anchor-navigation-link-color: var(--denhaag-anchor-navigation-link-color-target);
 }
 
-.denhaag-anchor-navigation__link:active,
-.denhaag-anchor-navigation__link:hover,
-.denhaag-anchor-navigation__link:target {
-  position: relative;
+.denhaag-anchor-navigation__link:focus,
+.denhaag-anchor-navigation__link--focus {
+  --denhaag-anchor-navigation-link-color: var(--denhaag-anchor-navigation-link-color-focus);
+  --denhaag-anchor-navigation-link-background-color: var(--denhaag-anchor-navigation-link-color-focus);
 }
 
 .denhaag-anchor-navigation__link:active,
@@ -42,16 +49,14 @@
   font-weight: var(--denhaag-anchor-navigation-link-font-weight);
 }
 
-.denhaag-anchor-navigation__link:active::before,
-.denhaag-anchor-navigation__link:hover::before,
-.denhaag-anchor-navigation__link:target::before {
+.denhaag-anchor-navigation__link::before {
+  background-color: var(--denhaag-anchor-navigation-link-background-color);
   content: "";
-  width: var(--denhaag-anchor-navigation-link-width);
   height: var(--denhaag-anchor-navigation-link-line-height);
-  position: absolute;
-  top: calc(-1 * (0.3023 * var(--denhaag-anchor-navigation-link-line-height)));
   left: calc(
     (-1 * var(--denhaag-anchor-navigation-list-padding-inline-start)) - var(--denhaag-anchor-navigation-link-width)
   );
-  background-color: var(--denhaag-anchor-navigation-link-background-color);
+  position: absolute;
+  top: calc(-1 * (0.3023 * var(--denhaag-anchor-navigation-link-line-height)));
+  width: var(--denhaag-anchor-navigation-link-width);
 }
