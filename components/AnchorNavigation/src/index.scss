@@ -1,47 +1,61 @@
 .denhaag-anchor-navigation {
-  border-inline-start: var(--denhaag-anchor-navigation-border-inline-start);
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .denhaag-anchor-navigation {
+    display: block;
+  }
 }
 
 .denhaag-anchor-navigation__list {
   list-style: var(--denhaag-anchor-navigation-list-list-style);
-  padding-inline-start: var(--denhaag-anchor-navigation-list-padding-inline-start);
+  padding-inline-start: 0;
 }
 
 .denhaag-anchor-navigation__link {
   color: var(--denhaag-anchor-navigation-link-color);
+  display: block;
   font-family: var(--denhaag-anchor-navigation-link-font-family);
   font-size: var(--denhaag-anchor-navigation-link-font-size);
   line-height: var(--denhaag-anchor-navigation-link-line-height);
-  text-decoration: var(--denhaag-anchor-navigation-link-text-decoration);
+  padding-block-end: var(--denhaag-anchor-navigation-link-padding-block);
+  padding-block-start: var(--denhaag-anchor-navigation-link-padding-block);
+  padding-inline-end: var(--denhaag-anchor-navigation-link-padding-inline);
+  padding-inline-start: var(--denhaag-anchor-navigation-link-padding-inline);
+  outline: none;
   position: relative;
+  text-decoration: var(--denhaag-anchor-navigation-link-text-decoration);
 }
 
 .denhaag-anchor-navigation__link:visited,
 .denhaag-anchor-navigation__link--visited {
-  --denhaag-anchor-navigation-link-color: var(--denhaag-anchor-navigation-link-color-visited);
-  --denhaag-anchor-navigation-link-background-color: ar(--denhaag-anchor-navigation-link-color-visited);
+  --denhaag-anchor-navigation-link-color: var(--denhaag-anchor-navigation-link-visited-color);
+  --denhaag-anchor-navigation-link-background-color: var(--denhaag-anchor-navigation-link-visited-color);
 }
 
 .denhaag-anchor-navigation__link:active,
 .denhaag-anchor-navigation__link--active {
-  --denhaag-anchor-navigation-link-color: var(--denhaag-anchor-navigation-link-color-active);
-  --denhaag-anchor-navigation-link-background-color: var(--denhaag-anchor-navigation-link-color-active);
+  --denhaag-anchor-navigation-link-color: var(--denhaag-anchor-navigation-link-active-color);
+  --denhaag-anchor-navigation-link-background-color: var(--denhaag-anchor-navigation-link-active-color);
 }
 
 .denhaag-anchor-navigation__link:hover,
 .denhaag-anchor-navigation__link--hover {
-  --denhaag-anchor-navigation-link-color: var(--denhaag-anchor-navigation-link-color-hover);
-  --denhaag-anchor-navigation-link-background-color: var(--denhaag-anchor-navigation-link-color-hover);
+  --denhaag-anchor-navigation-link-color: var(--denhaag-anchor-navigation-link-hover-color);
+  --denhaag-anchor-navigation-link-background-color: var(--denhaag-anchor-navigation-link-hover-color);
 }
 
 .denhaag-anchor-navigation__link:target {
-  --denhaag-anchor-navigation-link-color: var(--denhaag-anchor-navigation-link-color-target);
+  --denhaag-anchor-navigation-link-color: var(--denhaag-anchor-navigation-link-target-color);
 }
 
 .denhaag-anchor-navigation__link:focus,
 .denhaag-anchor-navigation__link--focus {
-  --denhaag-anchor-navigation-link-color: var(--denhaag-anchor-navigation-link-color-focus);
-  --denhaag-anchor-navigation-link-background-color: var(--denhaag-anchor-navigation-link-color-focus);
+  --denhaag-anchor-navigation-link-color: var(--denhaag-anchor-navigation-link-focus-color);
+  --denhaag-anchor-navigation-link-background-color: var(--denhaag-anchor-navigation-link-focus-color);
+
+  outline: var(--denhaag-anchor-navigation-link-outline);
 }
 
 .denhaag-anchor-navigation__link:active,
@@ -52,11 +66,10 @@
 .denhaag-anchor-navigation__link::before {
   background-color: var(--denhaag-anchor-navigation-link-background-color);
   content: "";
-  height: var(--denhaag-anchor-navigation-link-line-height);
-  left: calc(
-    (-1 * var(--denhaag-anchor-navigation-list-padding-inline-start)) - var(--denhaag-anchor-navigation-link-width)
-  );
+  height: 100%;
+  left: 0;
   position: absolute;
-  top: calc(-1 * (0.3023 * var(--denhaag-anchor-navigation-link-line-height)));
+  top: 50%;
+  transform: translateY(-50%);
   width: var(--denhaag-anchor-navigation-link-width);
 }
