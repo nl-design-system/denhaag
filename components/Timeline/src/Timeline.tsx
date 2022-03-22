@@ -1,8 +1,7 @@
 import React from 'react';
 import { Stepper as MaterialStepper } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
-
-import { timelineClasses } from './bem-mapping';
+import clsx from 'clsx';
 
 export interface TimelineProps extends Omit<BaseProps, 'classes'> {
   /**
@@ -27,15 +26,16 @@ export const Timeline: React.FC<TimelineProps> = ({
   id = undefined,
   className,
 }: TimelineProps) => {
+  const timelineClassName = clsx('denhaag-timeline', className);
+
   return (
     <MaterialStepper
       activeStep={activeStep}
-      classes={timelineClasses}
       connector={<React.Fragment />}
       id={id}
       nonLinear
       orientation="vertical"
-      className={className}
+      className={timelineClassName}
     >
       {children}
     </MaterialStepper>

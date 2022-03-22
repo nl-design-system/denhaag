@@ -3,10 +3,10 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
   <div style="padding: 10px;">
     <div>
       <div
-        class="MuiPaper-root MuiStepper-root denhaag-timeline MuiStepper-vertical MuiPaper-elevation0"
+        class="MuiPaper-root MuiStepper-root MuiStepper-vertical denhaag-timeline MuiPaper-elevation0"
       >
         <div
-          class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
+          class="MuiStep-root MuiStep-vertical denhaag-timeline__step"
           aria-expanded="false"
           tabindex="0"
         >
@@ -14,11 +14,12 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
             class="denhaag-timeline__step-label denhaag-timeline__step-label--active"
           >
             <svg
-              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorAction denhaag-timeline__step-icon--active"
+              class="denhaag-timeline__step-icon denhaag-timeline__step-icon--active"
               focusable="false"
-              viewBox="0 0 20 20"
               aria-hidden="true"
               shape-rendering="auto"
+              fill="currentColor"
+              viewBox="0 0 20 20"
             >
               <circle
                 cx="10"
@@ -59,17 +60,18 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
           </div>
         </div>
         <div
-          class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
+          class="MuiStep-root MuiStep-vertical denhaag-timeline__step"
           aria-expanded="false"
           tabindex="0"
         >
           <div class="denhaag-timeline__step-label">
             <svg
-              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorPrimary denhaag-timeline__step-icon--inactive"
+              class="denhaag-timeline__step-icon"
               focusable="false"
-              viewBox="0 0 20 20"
               aria-hidden="true"
               shape-rendering="auto"
+              fill="currentColor"
+              viewBox="0 0 20 20"
             >
               <circle
                 cx="10"
@@ -94,7 +96,7 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
           </div>
         </div>
         <div
-          class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
+          class="MuiStep-root MuiStep-vertical denhaag-timeline__step"
           aria-expanded="false"
           tabindex="0"
         >
@@ -102,11 +104,12 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
             class="denhaag-timeline__step-label denhaag-timeline__step-label--disabled"
           >
             <svg
-              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorDisabled denhaag-timeline__step-icon--disabled"
+              class="denhaag-timeline__step-icon denhaag-timeline__step-icon--disabled"
               focusable="false"
-              viewBox="0 0 20 20"
               aria-hidden="true"
               shape-rendering="auto"
+              fill="currentColor"
+              viewBox="0 0 20 20"
             >
               <circle
                 cx="10"
@@ -131,17 +134,18 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
           </div>
         </div>
         <div
-          class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
+          class="MuiStep-root MuiStep-vertical denhaag-timeline__step"
           aria-expanded="false"
           tabindex="0"
         >
           <div class="denhaag-timeline__step-label">
             <svg
-              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorPrimary denhaag-timeline__step-icon--inactive"
+              class="denhaag-timeline__step-icon"
               focusable="false"
-              viewBox="0 0 20 20"
               aria-hidden="true"
               shape-rendering="auto"
+              fill="currentColor"
+              viewBox="0 0 20 20"
             >
               <circle
                 cx="10"
@@ -171,10 +175,10 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
         </div>
       </div>
       <div
-        class="MuiPaper-root MuiStepper-root denhaag-timeline MuiStepper-vertical MuiPaper-elevation0"
+        class="MuiPaper-root MuiStepper-root MuiStepper-vertical denhaag-timeline MuiPaper-elevation0"
       >
         <div
-          class="MuiStep-root denhaag-timeline__step MuiStep-vertical MuiStep-completed denhaag-timeline__step--completed"
+          class="MuiStep-root MuiStep-vertical denhaag-timeline__step MuiStep-completed"
           aria-expanded="false"
           role="button"
           tabindex="0"
@@ -187,7 +191,7 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
               height="1em"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
-              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorSecondary denhaag-timeline__step-icon--completed"
+              class="denhaag-timeline__step-icon denhaag-timeline__step-icon--completed"
               focusable="false"
               aria-hidden="true"
               shape-rendering="auto"
@@ -216,7 +220,7 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="MuiSvgIcon-root denhaag-timeline__step-collapse-icon"
+                class="denhaag-timeline__step-collapse-icon"
                 focusable="false"
                 aria-hidden="true"
                 shape-rendering="auto"
@@ -234,7 +238,7 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
           ></div>
         </div>
         <div
-          class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
+          class="MuiStep-root MuiStep-vertical denhaag-timeline__step"
           aria-expanded="false"
           tabindex="0"
         >
@@ -242,11 +246,12 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
             class="denhaag-timeline__step-label denhaag-timeline__step-label--active"
           >
             <svg
-              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorAction denhaag-timeline__step-icon--active"
+              class="denhaag-timeline__step-icon denhaag-timeline__step-icon--active"
               focusable="false"
-              viewBox="0 0 20 20"
               aria-hidden="true"
               shape-rendering="auto"
+              fill="currentColor"
+              viewBox="0 0 20 20"
             >
               <circle
                 cx="10"
@@ -271,7 +276,7 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
           </div>
         </div>
         <div
-          class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
+          class="MuiStep-root MuiStep-vertical denhaag-timeline__step"
           aria-expanded="false"
           tabindex="0"
         >
@@ -279,11 +284,12 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
             class="denhaag-timeline__step-label denhaag-timeline__step-label--disabled"
           >
             <svg
-              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorDisabled denhaag-timeline__step-icon--disabled"
+              class="denhaag-timeline__step-icon denhaag-timeline__step-icon--disabled"
               focusable="false"
-              viewBox="0 0 20 20"
               aria-hidden="true"
               shape-rendering="auto"
+              fill="currentColor"
+              viewBox="0 0 20 20"
             >
               <circle
                 cx="10"
@@ -308,17 +314,18 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
           </div>
         </div>
         <div
-          class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
+          class="MuiStep-root MuiStep-vertical denhaag-timeline__step"
           aria-expanded="false"
           tabindex="0"
         >
           <div class="denhaag-timeline__step-label">
             <svg
-              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorPrimary denhaag-timeline__step-icon--inactive"
+              class="denhaag-timeline__step-icon"
               focusable="false"
-              viewBox="0 0 20 20"
               aria-hidden="true"
               shape-rendering="auto"
+              fill="currentColor"
+              viewBox="0 0 20 20"
             >
               <circle
                 cx="10"
@@ -348,10 +355,10 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
         </div>
       </div>
       <div
-        class="MuiPaper-root MuiStepper-root denhaag-timeline MuiStepper-vertical MuiPaper-elevation0"
+        class="MuiPaper-root MuiStepper-root MuiStepper-vertical denhaag-timeline MuiPaper-elevation0"
       >
         <div
-          class="MuiStep-root denhaag-timeline__step MuiStep-vertical MuiStep-completed denhaag-timeline__step--completed"
+          class="MuiStep-root MuiStep-vertical denhaag-timeline__step MuiStep-completed"
           aria-expanded="false"
           role="button"
           tabindex="0"
@@ -364,7 +371,7 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
               height="1em"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
-              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorSecondary denhaag-timeline__step-icon--completed"
+              class="denhaag-timeline__step-icon denhaag-timeline__step-icon--completed"
               focusable="false"
               aria-hidden="true"
               shape-rendering="auto"
@@ -393,7 +400,7 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="MuiSvgIcon-root denhaag-timeline__step-collapse-icon"
+                class="denhaag-timeline__step-collapse-icon"
                 focusable="false"
                 aria-hidden="true"
                 shape-rendering="auto"
@@ -411,7 +418,7 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
           ></div>
         </div>
         <div
-          class="MuiStep-root denhaag-timeline__step MuiStep-vertical MuiStep-completed denhaag-timeline__step--completed"
+          class="MuiStep-root MuiStep-vertical denhaag-timeline__step MuiStep-completed"
           aria-expanded="false"
           tabindex="0"
         >
@@ -423,7 +430,7 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
               height="1em"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
-              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorSecondary denhaag-timeline__step-icon--completed"
+              class="denhaag-timeline__step-icon denhaag-timeline__step-icon--completed"
               focusable="false"
               aria-hidden="true"
               shape-rendering="auto"
@@ -451,7 +458,7 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
           </div>
         </div>
         <div
-          class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
+          class="MuiStep-root MuiStep-vertical denhaag-timeline__step"
           aria-expanded="false"
           tabindex="0"
         >
@@ -459,11 +466,12 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
             class="denhaag-timeline__step-label denhaag-timeline__step-label--disabled"
           >
             <svg
-              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorDisabled denhaag-timeline__step-icon--disabled"
+              class="denhaag-timeline__step-icon denhaag-timeline__step-icon--disabled"
               focusable="false"
-              viewBox="0 0 20 20"
               aria-hidden="true"
               shape-rendering="auto"
+              fill="currentColor"
+              viewBox="0 0 20 20"
             >
               <circle
                 cx="10"
@@ -488,7 +496,7 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
           </div>
         </div>
         <div
-          class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
+          class="MuiStep-root MuiStep-vertical denhaag-timeline__step"
           aria-expanded="false"
           tabindex="0"
         >
@@ -496,11 +504,12 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
             class="denhaag-timeline__step-label denhaag-timeline__step-label--active"
           >
             <svg
-              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorAction denhaag-timeline__step-icon--active"
+              class="denhaag-timeline__step-icon denhaag-timeline__step-icon--active"
               focusable="false"
-              viewBox="0 0 20 20"
               aria-hidden="true"
               shape-rendering="auto"
+              fill="currentColor"
+              viewBox="0 0 20 20"
             >
               <circle
                 cx="10"
@@ -542,10 +551,10 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
         </div>
       </div>
       <div
-        class="MuiPaper-root MuiStepper-root denhaag-timeline MuiStepper-vertical MuiPaper-elevation0"
+        class="MuiPaper-root MuiStepper-root MuiStepper-vertical denhaag-timeline MuiPaper-elevation0"
       >
         <div
-          class="MuiStep-root denhaag-timeline__step MuiStep-vertical MuiStep-completed denhaag-timeline__step--completed"
+          class="MuiStep-root MuiStep-vertical denhaag-timeline__step MuiStep-completed"
           aria-expanded="false"
           role="button"
           tabindex="0"
@@ -558,7 +567,7 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
               height="1em"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
-              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorSecondary denhaag-timeline__step-icon--completed"
+              class="denhaag-timeline__step-icon denhaag-timeline__step-icon--completed"
               focusable="false"
               aria-hidden="true"
               shape-rendering="auto"
@@ -587,7 +596,7 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="MuiSvgIcon-root denhaag-timeline__step-collapse-icon"
+                class="denhaag-timeline__step-collapse-icon"
                 focusable="false"
                 aria-hidden="true"
                 shape-rendering="auto"
@@ -605,7 +614,7 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
           ></div>
         </div>
         <div
-          class="MuiStep-root denhaag-timeline__step MuiStep-vertical MuiStep-completed denhaag-timeline__step--completed"
+          class="MuiStep-root MuiStep-vertical denhaag-timeline__step MuiStep-completed"
           aria-expanded="false"
           tabindex="0"
         >
@@ -617,7 +626,7 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
               height="1em"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
-              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorSecondary denhaag-timeline__step-icon--completed"
+              class="denhaag-timeline__step-icon denhaag-timeline__step-icon--completed"
               focusable="false"
               aria-hidden="true"
               shape-rendering="auto"
@@ -645,7 +654,7 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
           </div>
         </div>
         <div
-          class="MuiStep-root denhaag-timeline__step MuiStep-vertical"
+          class="MuiStep-root MuiStep-vertical denhaag-timeline__step"
           aria-expanded="false"
           tabindex="0"
         >
@@ -653,11 +662,12 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
             class="denhaag-timeline__step-label denhaag-timeline__step-label--disabled"
           >
             <svg
-              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorDisabled denhaag-timeline__step-icon--disabled"
+              class="denhaag-timeline__step-icon denhaag-timeline__step-icon--disabled"
               focusable="false"
-              viewBox="0 0 20 20"
               aria-hidden="true"
               shape-rendering="auto"
+              fill="currentColor"
+              viewBox="0 0 20 20"
             >
               <circle
                 cx="10"
@@ -682,7 +692,7 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
           </div>
         </div>
         <div
-          class="MuiStep-root denhaag-timeline__step MuiStep-vertical MuiStep-completed denhaag-timeline__step--completed"
+          class="MuiStep-root MuiStep-vertical denhaag-timeline__step MuiStep-completed"
           aria-expanded="false"
           role="button"
           tabindex="0"
@@ -695,7 +705,7 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
               height="1em"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
-              class="MuiSvgIcon-root denhaag-timeline__step-icon MuiSvgIcon-colorSecondary denhaag-timeline__step-icon--completed"
+              class="denhaag-timeline__step-icon denhaag-timeline__step-icon--completed"
               focusable="false"
               aria-hidden="true"
               shape-rendering="auto"
@@ -724,7 +734,7 @@ exports[`Timeline tests > a11y and snapshots #0`] = `
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="MuiSvgIcon-root denhaag-timeline__step-collapse-icon"
+                class="denhaag-timeline__step-collapse-icon"
                 focusable="false"
                 aria-hidden="true"
                 shape-rendering="auto"
