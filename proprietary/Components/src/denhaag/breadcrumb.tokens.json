@@ -7,9 +7,6 @@
       "color": {
         "value": "{denhaag.color.grey.4}"
       },
-      "max-width": {
-        "value": "67.5rem"
-      },
       "padding-block": {
         "value": "0.75rem"
       },
@@ -56,6 +53,11 @@
           "color": {
             "value": "{denhaag.color.blue.4}"
           }
+        }
+      },
+      "list": {
+        "max-width": {
+          "value": "67.5rem"
         }
       }
     }
