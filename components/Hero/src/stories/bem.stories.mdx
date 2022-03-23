@@ -1,0 +1,68 @@
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+import pkg from "../../package.json";
+import readme from "../../README.md";
+import "../index.scss";
+
+<Meta
+  title="CSS/Page Elements/Hero"
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Design Tokens
+
+<DesignTokenDocBlock categoryName="Hero" viewType="table" />
+
+## Stories
+
+### Home
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Home">
+    <section class="denhaag-hero denhaag-hero--home">
+      <div class="denhaag-hero__content">
+        <h1>Home</h1>
+      </div>
+      <img class="denhaag-hero__image" src="https://source.unsplash.com/560x400/?landscape" alt="" />
+    </section>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Routing
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Routing">
+    <section class="denhaag-hero denhaag-hero--routing">
+      <div class="denhaag-hero__content">
+        <h1>Title</h1>
+      </div>
+      <img class="denhaag-hero__image" src="https://source.unsplash.com/560x400/?landscape" alt="" />
+    </section>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Theme
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Theme">
+    <section class="denhaag-hero denhaag-hero--theme">
+      <div class="denhaag-hero__content">
+        <h1>Theme</h1>
+      </div>
+    </section>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
