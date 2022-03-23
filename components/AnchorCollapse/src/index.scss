@@ -1,16 +1,16 @@
 .denhaag-anchor-collapse {
-  --denhaag-anchor-collapse-box-shadow: inset 0 -1px 0 var(--denhaag-anchor-collapse-border-color);
+  // Variables which will be updated in the same file.
   --denhaag-anchor-collapse-title-display: none;
   --denhaag-anchor-collapse-summary-display: block;
   --denhaag-anchor-collapse-summary-pointer-events: auto;
-  --denhaag-anchor-collapse-rotate: -180deg;
 
-  box-shadow: var(--denhaag-anchor-collapse-box-shadow);
+  border-bottom: var(--denhaag-anchor-collapse-border-width) var(--denhaag-anchor-collapse-border-style)
+    var(--denhaag-anchor-collapse-border-color);
 }
 
 .denhaag-anchor-collapse:first-child {
-  --denhaag-anchor-collapse-box-shadow: inset 0 -1px 0px var(--denhaag-anchor-collapse-border-color),
-    inset 0 1px 0px var(--denhaag-anchor-collapse-border-color);
+  border-top: var(--denhaag-anchor-collapse-border-width) var(--denhaag-anchor-collapse-border-style)
+    var(--denhaag-anchor-collapse-border-color);
 }
 
 @media (min-width: 768px) {
@@ -68,7 +68,8 @@
 }
 
 .denhaag-anchor-collapse__content {
-  box-shadow: inset 0 1px 0 var(--denhaag-anchor-collapse-border-color);
+  border-top: var(--denhaag-anchor-collapse-border-width) var(--denhaag-anchor-collapse-border-style)
+    var(--denhaag-anchor-collapse-border-color);
   padding-block-end: var(
     --denhaag-anchor-collapse-content-padding-block-end,
     var(--denhaag-anchor-collapse-summary-padding-block)
