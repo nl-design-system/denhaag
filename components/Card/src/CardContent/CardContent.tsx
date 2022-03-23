@@ -1,16 +1,13 @@
-import React from 'react';
-import { CardContent as MaterialCardContent } from '@material-ui/core';
-import BaseProps from '@gemeente-denhaag/baseprops';
-import './mui-override.scss';
-import { CardContentClasses } from './bem-mapping';
+import React, { HTMLAttributes } from 'react';
+import './card-content.scss';
 
-export type CardContentProps = BaseProps;
+export type CardContentProps = HTMLAttributes<HTMLDivElement>;
 
 /**
  * Primary UI component for user interaction
  */
 export const CardContent: React.FC<CardContentProps> = (props: CardContentProps) => {
-  return <MaterialCardContent classes={CardContentClasses}>{props.children}</MaterialCardContent>;
+  return <div className={'denhaag-card__content'}>{props.children}</div>;
 };
 
 /**
