@@ -182,6 +182,7 @@
     }
   }
 
+  &-item svg,
   &-item__image {
     height: auto;
     max-width: var(--denhaag-authentication-item-image-width);
