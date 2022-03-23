@@ -8,38 +8,26 @@
 }
 
 .denhaag-link-group__navigation-list {
-  margin-block-start: var(--denhaag-space-block-xs);
-  margin-block-end: var(--denhaag-space-block-md);
-  padding-inline-start: var(--denhaag-space-inline-md);
+  margin-block-start: var(--denhaag-link-group-navigation-list-margin-block-start);
+  margin-block-end: var(--denhaag-link-group-navigation-list-margin-block-end);
 
   @media (min-width: 1114px) {
     margin-block-start: var(--denhaag-space-block-sm);
   }
 }
 
-.denhaag-link-group__navigation-list > li,
 .denhaag-link-group__navigation-list-item {
-  list-style-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.14645 0.167368C4.34171 -0.0557892 4.65829 -0.0557892 4.85355 0.167368L7.85355 3.59594C7.94732 3.7031 8 3.84845 8 4C8 4.15155 7.94732 4.2969 7.85355 4.40406L4.85355 7.83263C4.65829 8.05579 4.34171 8.05579 4.14645 7.83263C3.95118 7.60948 3.95118 7.24767 4.14645 7.02451L6.29289 4.57143L0.5 4.57143C0.223858 4.57143 0 4.31559 0 4C0 3.68441 0.223858 3.42857 0.5 3.42857L6.29289 3.42857L4.14645 0.97549C3.95118 0.752333 3.95118 0.390524 4.14645 0.167368Z' fill='%231261A3'/%3E%3C/svg%3E");
-  display: list-item;
-  padding-block-start: var(--denhaag-space-inline-3xs);
-  padding-block-end: var(--denhaag-space-inline-3xs);
+  padding-block-start: var(--denhaag-link-group-navigation-list-item-padding-block);
+  padding-block-end: var(--denhaag-link-group-navigation-list-item-padding-block);
 }
 
-.denhaag-link-group__navigation-list-item:hover {
-  list-style-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.14645 0.167368C4.34171 -0.0557892 4.65829 -0.0557892 4.85355 0.167368L7.85355 3.59594C7.94732 3.7031 8 3.84845 8 4C8 4.15155 7.94732 4.2969 7.85355 4.40406L4.85355 7.83263C4.65829 8.05579 4.34171 8.05579 4.14645 7.83263C3.95118 7.60948 3.95118 7.24767 4.14645 7.02451L6.29289 4.57143L0.5 4.57143C0.223858 4.57143 0 4.31559 0 4C0 3.68441 0.223858 3.42857 0.5 3.42857L6.29289 3.42857L4.14645 0.97549C3.95118 0.752333 3.95118 0.390524 4.14645 0.167368Z' fill='%23094B81'/%3E%3C/svg%3E");
+.denhaag-link-group--dark .denhaag-link,
+.denhaag-link-group--dark .denhaag-link:hover {
+  color: var(--denhaag-link-group-dark-denhaag-link-color);
 }
 
-.denhaag-link-group__navigation-link {
-  line-height: var(--denhaag-link-group-navigation-link-line-height);
-}
-
-.denhaag-link-group--dark .denhaag-link-group__navigation-list > li,
-.denhaag-link-group--dark .denhaag-link-group__navigation-list-item {
-  list-style-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.14645 0.167368C4.34171 -0.0557892 4.65829 -0.0557892 4.85355 0.167368L7.85355 3.59594C7.94732 3.7031 8 3.84845 8 4C8 4.15155 7.94732 4.2969 7.85355 4.40406L4.85355 7.83263C4.65829 8.05579 4.34171 8.05579 4.14645 7.83263C3.95118 7.60948 3.95118 7.24767 4.14645 7.02451L6.29289 4.57143L0.5 4.57143C0.223858 4.57143 0 4.31559 0 4C0 3.68441 0.223858 3.42857 0.5 3.42857L6.29289 3.42857L4.14645 0.97549C3.95118 0.752333 3.95118 0.390524 4.14645 0.167368Z' fill='white'/%3E%3C/svg%3E");
-}
-
-.denhaag-link-group--dark .denhaag-link-group__navigation-link {
-  color: var(--denhaag-link-group-dark-navigation-link-color);
+.denhaag-link-group .denhaag-link:hover {
+  text-decoration: var(--denhaag-link-group-denhaag-link-hover-text-decoration);
 }
 
 .denhaag-link-group--dark .denhaag-link-group__caption {
