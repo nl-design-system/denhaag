@@ -1,5 +1,4 @@
 .denhaag-breadcrumb {
-  // Variables to overwrite within the file.
   --denhaag-breadcrumb-chevron-display: none;
   --denhaag-breadcrumb-link-background-color: transparent;
   --denhaag-breadcrumb-link-icon-content: "";
@@ -145,7 +144,6 @@ ol.denhaag-breadcrumb__list {
   }
 
   .denhaag-breadcrumb__item:not(:nth-last-child(2)) {
-    // Back to original state.
     --denhaag-breadcrumb-item-display: flex;
   }
 }
