@@ -11,21 +11,51 @@ Hero's for multiple pages.
 
 ## When to use
 
-## Alternatives and related components
+### Home
+
+On the homepage.
+
+### Routing
+
+On the routing pages.
+
+### Theme
+
+On the theme pages.
+
+## Variations
+
+### Home
 
 ## Anatomy
 
 The hero consists of:
 
-1. Content: defers on the version.
-2. Image
+1. Title;
+2. Excerpt;
+3. Search box;
+4. Image;
+
+### Routing
+
+## Anatomy
+
+The hero consists of:
+
+1. Title;
+2. Image;
 
 ## Design properties
 
 ## Typography
 
+Title: Mix/3xl/700
+
 ### Color
 
-### Interactive states
+### Theme
 
-### Structure
+1. Title;
+2. Excerpt;
+3. Button;
+4. Image;
