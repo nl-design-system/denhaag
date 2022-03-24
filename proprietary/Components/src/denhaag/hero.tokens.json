@@ -25,20 +25,44 @@
           "value": "15rem"
         },
         "container": {
+          "gutter": {
+            "value": ".5rem"
+          },
+          "gutter-xs": {
+            "value": ".5rem"
+          },
+          "gutter-s": {
+            "value": "1rem"
+          },
+          "gutter-m": {
+            "value": "1.5rem"
+          },
+          "gutter-l": {
+            "value": "2rem"
+          },
+          "gutter-xl": {
+            "value": "2.5rem"
+          },
+          "gutter-xxl": {
+            "value": "2.5rem"
+          },
           "max-width": {
             "value": "100%"
           },
-          "max-width-sm": {
-            "value": "37.1875rem"
+          "max-width-xs": {
+            "value": "20rem"
           },
-          "max-width-md": {
-            "value": "37.1875rem"
+          "max-width-s": {
+            "value": "40.5rem"
           },
-          "max-width-lg": {
-            "value": "44.375rem"
+          "max-width-m": {
+            "value": "56.5rem"
+          },
+          "max-width-l": {
+            "value": "67.5rem"
           },
           "max-width-xl": {
-            "value": "48rem"
+            "value": "98rem"
           }
         },
         "content": {
@@ -51,74 +75,101 @@
             },
             "block-sm": {
               "value": "{denhaag.space.block.3xl}"
+            }
+          }
+        },
+        "column": {
+          "start": {
+            "value": 0
+          },
+          "start-xs": {
+            "value": 0
+          },
+          "start-s": {
+            "value": 0
+          },
+          "start-m": {
+            "value": 0
+          },
+          "start-l": {
+            "value": 0
+          },
+          "start-xl": {
+            "value": 3
+          },
+          "start-xxl": {
+            "value": 3
+          },
+          "end": {
+            "value": 9
+          },
+          "end-xs": {
+            "value": 9
+          },
+          "end-s": {
+            "value": 9
+          },
+          "end-m": {
+            "value": 9
+          },
+          "end-l": {
+            "value": 9
+          },
+          "end-xl": {
+            "value": 9
+          },
+          "end-xxl": {
+            "value": 9
+          }
+        }
+      },
+      "image": {
+        "path": {
+          "value": "3rem"
+        },
+        "width-sm": {
+          "value": "16.875rem"
+        },
+        "width-md": {
+          "value": "21.25rem"
+        },
+        "width-lg": {
+          "value": "26.5rem"
+        },
+        "width-xl": {
+          "value": "34.375rem"
+        }
+      },
+      "title": {
+        "font-size-xs": {
+          "value": "{denhaag.typography.scale.2xl.font-size}"
+        },
+        "margin": {
+          "block": {
+            "end": {
+              "value": "0"
             },
-            "inline": {
-              "end": {
-                "value": "{denhaag.space.inline.xl}"
-              },
-              "start": {
-                "value": "{denhaag.space.inline.xl}"
-              },
-              "end-sm": {
-                "value": "{denhaag.space.inline.4xl}"
-              },
-              "end-md": {
-                "value": "8.75rem"
-              }
+            "start": {
+              "value": "0"
             }
           }
+        }
+      },
+      "shape": {
+        "width": {
+          "value": "36.875rem"
         },
-        "image": {
-          "path": {
-            "value": "1rem"
-          },
-          "path-md": {
-            "value": "1.5rem"
-          },
-          "width-sm": {
-            "value": "16.875rem"
-          },
-          "width-md": {
-            "value": "21.25rem"
-          },
-          "width-lg": {
-            "value": "26.5rem"
-          },
-          "width-xl": {
-            "value": "34.375rem"
-          }
+        "width-lg": {
+          "value": "47.5rem"
         },
-        "title": {
-          "font-size-xs": {
-            "value": "{denhaag.typography.scale.2xl.font-size}"
-          },
-          "margin": {
-            "block": {
-              "end": {
-                "value": "0"
-              },
-              "start": {
-                "value": "0"
-              }
-            }
-          }
+        "right": {
+          "value": "0"
         },
-        "shape": {
-          "width": {
-            "value": "36.875rem"
-          },
-          "width-lg": {
-            "value": "47.5rem"
-          },
-          "right": {
-            "value": "0"
-          },
-          "right-lg": {
-            "value": "-2rem"
-          },
-          "right-xl": {
-            "value": "16rem"
-          }
+        "right-lg": {
+          "value": "-2rem"
+        },
+        "right-xl": {
+          "value": "16rem"
         }
       }
     }
