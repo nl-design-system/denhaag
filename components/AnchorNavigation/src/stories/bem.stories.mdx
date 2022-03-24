@@ -29,7 +29,7 @@ import "../index.scss";
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Default">
     <nav class="denhaag-anchor-navigation" aria-labelledby="secondary-navigation">
-      <ul id="secondary-navigation" class="denhaag-anchor-navigation__list">
+      <ol id="secondary-navigation" class="denhaag-anchor-navigation__list">
         <li>
           <a href="#in-het-kort" class="denhaag-anchor-navigation__link">
             In het kort
@@ -60,7 +60,7 @@ import "../index.scss";
             Veelgestelde vragen
           </a>
         </li>
-      </ul>
+      </ol>
     </nav>
     <button class="denhaag-button denhaag-button--start-icon">
       <span class="denhaag-button__icon">
@@ -82,15 +82,133 @@ import "../index.scss";
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
-### Links visited
+### Hover
 
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
-  <Story name="Links visited">
+  <Story name="Hover">
     <nav class="denhaag-anchor-navigation" aria-labelledby="secondary-navigation">
-      <ul id="secondary-navigation" class="denhaag-anchor-navigation__list">
+      <ol id="secondary-navigation" class="denhaag-anchor-navigation__list">
         <li>
-          <a href="#in-het-kort" class="denhaag-anchor-navigation__link denhaag-anchor-navigation__link--visited">
+          <a href="#in-het-kort" class="denhaag-anchor-navigation__link">
+            In het kort
+          </a>
+        </li>
+        <li>
+          <a href="#voorwaarden" class="denhaag-anchor-navigation__link denhaag-anchor-navigation__link--hover">
+            Voorwaarden
+          </a>
+        </li>
+        <li>
+          <a href="#proces" class="denhaag-anchor-navigation__link">
+            Proces
+          </a>
+        </li>
+        <li>
+          <a href="#kosten" class="denhaag-anchor-navigation__link">
+            Kosten
+          </a>
+        </li>
+        <li>
+          <a href="#aanvragen" class="denhaag-anchor-navigation__link">
+            Aanvragen
+          </a>
+        </li>
+        <li>
+          <a href="#veelgestelde-vragen" class="denhaag-anchor-navigation__link">
+            Veelgestelde vragen
+          </a>
+        </li>
+      </ol>
+    </nav>
+    <button class="denhaag-button denhaag-button--start-icon">
+      <span class="denhaag-button__icon">
+        <svg
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          class="denhaag-icon"
+          focusable="false"
+          aria-hidden="true"
+        >
+          <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
+        </svg>
+      </span>
+      Direct aanvragen
+    </button>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Focus
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Focus">
+    <nav class="denhaag-anchor-navigation" aria-labelledby="secondary-navigation">
+      <ol id="secondary-navigation" class="denhaag-anchor-navigation__list">
+        <li>
+          <a href="#in-het-kort" class="denhaag-anchor-navigation__link">
+            In het kort
+          </a>
+        </li>
+        <li>
+          <a href="#voorwaarden" class="denhaag-anchor-navigation__link denhaag-anchor-navigation__link--focus">
+            Voorwaarden
+          </a>
+        </li>
+        <li>
+          <a href="#proces" class="denhaag-anchor-navigation__link">
+            Proces
+          </a>
+        </li>
+        <li>
+          <a href="#kosten" class="denhaag-anchor-navigation__link">
+            Kosten
+          </a>
+        </li>
+        <li>
+          <a href="#aanvragen" class="denhaag-anchor-navigation__link">
+            Aanvragen
+          </a>
+        </li>
+        <li>
+          <a href="#veelgestelde-vragen" class="denhaag-anchor-navigation__link">
+            Veelgestelde vragen
+          </a>
+        </li>
+      </ol>
+    </nav>
+    <button class="denhaag-button denhaag-button--start-icon">
+      <span class="denhaag-button__icon">
+        <svg
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          class="denhaag-icon"
+          focusable="false"
+          aria-hidden="true"
+        >
+          <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
+        </svg>
+      </span>
+      Direct aanvragen
+    </button>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Visited
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Visited">
+    <nav class="denhaag-anchor-navigation" aria-labelledby="secondary-navigation">
+      <ol id="secondary-navigation" class="denhaag-anchor-navigation__list">
+        <li>
+          <a href="#in-het-kort" class="denhaag-anchor-navigation__link">
             In het kort
           </a>
         </li>
@@ -100,29 +218,26 @@ import "../index.scss";
           </a>
         </li>
         <li>
-          <a href="#proces" class="denhaag-anchor-navigation__link denhaag-anchor-navigation__link--visited">
+          <a href="#proces" class="denhaag-anchor-navigation__link">
             Proces
           </a>
         </li>
         <li>
-          <a href="#kosten" class="denhaag-anchor-navigation__link denhaag-anchor-navigation__link--visited">
+          <a href="#kosten" class="denhaag-anchor-navigation__link">
             Kosten
           </a>
         </li>
         <li>
-          <a href="#aanvragen" class="denhaag-anchor-navigation__link denhaag-anchor-navigation__link--visited">
+          <a href="#aanvragen" class="denhaag-anchor-navigation__link">
             Aanvragen
           </a>
         </li>
         <li>
-          <a
-            href="#veelgestelde-vragen"
-            class="denhaag-anchor-navigation__link denhaag-anchor-navigation__link--visited"
-          >
+          <a href="#veelgestelde-vragen" class="denhaag-anchor-navigation__link">
             Veelgestelde vragen
           </a>
         </li>
-      </ul>
+      </ol>
     </nav>
     <button class="denhaag-button denhaag-button--start-icon">
       <span class="denhaag-button__icon">
