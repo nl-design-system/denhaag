@@ -13,6 +13,12 @@
 .denhaag-anchor-navigation__list {
   list-style: var(--denhaag-anchor-navigation-list-list-style);
   padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.denhaag-anchor-navigation__list + .denhaag-button {
+  margin-block-start: var(--denhaag-anchor-navigation-button-margin-block-start, 1em);
 }
 
 .denhaag-anchor-navigation__link {

@@ -1,6 +1,15 @@
 {
   "denhaag": {
     "anchor-navigation": {
+      "button": {
+        "margin": {
+          "block": {
+            "start": {
+              "value": "1.875rem"
+            }
+          }
+        }
+      },
       "list": {
         "list-style": {
           "value": "none"
