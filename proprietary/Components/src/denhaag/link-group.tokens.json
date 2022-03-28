@@ -2,15 +2,20 @@
   "denhaag": {
     "link-group": {
       "image": {
-        "padding-block-end": { "value": "{denhaag.space.block.md}" }
+        "padding-block-end": { "value": "{denhaag.space.block.md}" },
+        "size": { "value": "140px" },
+        "object-fit": { "value": "cover" }
       },
       "caption": {
         "color": { "value": "{denhaag.color.grey.5}" },
-        "font-weight": { "value": "500" }
+        "font-weight": { "value": "500" },
+        "margin-block": { "value": "0" }
       },
       "navigation-list": {
         "margin-block-start": { "value": "{denhaag.space.block.xs}" },
-        "margin-block-end": { "value": "{denhaag.space.block.md}" }
+        "margin-block-end": { "value": "{denhaag.space.block.md}" },
+        "list-style": { "value": "none" },
+        "padding-inline-start": { "value": "0" }
       },
       "navigation-list-item": {
         "padding-block": { "value": "{denhaag.space.block.xs}" }
