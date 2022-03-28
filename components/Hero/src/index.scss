@@ -39,13 +39,9 @@
 }
 
 .denhaag-hero__content {
-  // todo: Fix template columns
+  align-self: var(--denhaag-hero-content-align-self);
   grid-column-start: span var(--denhaag-hero-content-column-start, 0);
   grid-column-end: span calc(var(--denhaag-hero-content-column-end, 12) - var(--denhaag-hero-content-column-start, 0));
-  background: red;
-
-  // End
-  align-self: var(--denhaag-hero-content-align-self);
   padding-block-end: var(--denhaag-hero-content-padding-block);
   padding-block-start: var(--denhaag-hero-content-padding-block);
   padding-inline-end: var(--denhaag-hero-content-padding-inline-end, 0);
@@ -92,8 +88,8 @@
   .denhaag-hero--routing {
     --denhaag-hero-container-gutter: var(--denhaag-hero-routing-container-gutter-xs);
     --denhaag-hero-container-max-width: var(--denhaag-hero-routing-container-max-width-xs);
-    --denhaag-hero-content-column-start: var(--denhaag-hero-routing-content-column-start-xs);
-    --denhaag-hero-content-column-end: var(--denhaag-hero-routing-content-column-end-xs);
+    --denhaag-hero-content-column-start: var(--denhaag-hero-routing-content-column-start-xs, 0);
+    --denhaag-hero-content-column-end: var(--denhaag-hero-routing-content-column-end-xs, 12);
   }
 }
 
@@ -105,16 +101,16 @@
   .denhaag-hero--routing {
     --denhaag-hero-container-gutter: var(--denhaag-hero-routing-container-gutter-s);
     --denhaag-hero-container-max-width: var(--denhaag-hero-routing-container-max-width-s);
-    --denhaag-hero-content-column-start: var(--denhaag-hero-routing-content-column-start-s);
-    --denhaag-hero-content-column-end: var(--denhaag-hero-routing-content-column-end-s);
-    --denhaag-hero-content-padding-block: var(--denhaag-hero-routing-content-padding-block-sm);
-    --denhaag-hero-image-width: var(--denhaag-hero-routing-image-width-sm);
-    --denhaag-hero-min-height: var(--denhaag-hero-routing-min-height-sm);
+    --denhaag-hero-content-column-start: var(--denhaag-hero-routing-content-column-start-s, 0);
+    --denhaag-hero-content-column-end: var(--denhaag-hero-routing-content-column-end-s, 12);
+    --denhaag-hero-content-padding-block: var(--denhaag-hero-routing-content-padding-block-s);
+    --denhaag-hero-image-width: var(--denhaag-hero-routing-image-width-s);
+    --denhaag-hero-min-height: var(--denhaag-hero-routing-min-height-s);
 
     background-image: url("data:image/svg+xml,%3Csvg width='1768' height='240' viewBox='0 0 1768 240' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_14966_94954)'%3E%3Cpath d='M3398 -1847H-4936V5298H3398V-1847Z' fill='%23F8D62D'/%3E%3Cpath d='M-215.2 -249.487L-79.6 -74.2531L-173.2 -9.44025L-127.6 62.5739L-402.4 252.211L-277.6 447.849L30.7997 288.218L77.5997 337.428L159.2 289.418L191.6 333.827L-628 926.743L-890.8 378.236L-833.2 253.411L-732.4 92.5797L-552.4 4.96254L-402.4 -119.862L-424 -161.87L-215.2 -249.487Z' fill='%23FFEB85'/%3E%3Cpath d='M832.4 154.993L701.6 -41.8457L191.6 333.828L280.4 441.849L135.2 557.072L202.4 671.094L524 1070.77L1132.4 602.681L832.4 154.993Z' fill='%23FAE166'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_14966_94954'%3E%3Crect width='1768' height='240' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top left;
+    background-position: 0 0;
   }
 }
 
@@ -122,10 +118,10 @@
   .denhaag-hero--routing {
     --denhaag-hero-container-gutter: var(--denhaag-hero-routing-container-gutter-m);
     --denhaag-hero-container-max-width: var(--denhaag-hero-routing-container-max-width-m);
-    --denhaag-hero-content-column-start: var(--denhaag-hero-routing-content-column-start-m);
-    --denhaag-hero-content-column-end: var(--denhaag-hero-routing-content-column-end-m);
-    --denhaag-hero-image-width: var(--denhaag-hero-routing-image-width-md);
-    --denhaag-hero-min-height: var(--denhaag-hero-routing-min-height-md);
+    --denhaag-hero-content-column-start: var(--denhaag-hero-routing-content-column-start-m, 0);
+    --denhaag-hero-content-column-end: var(--denhaag-hero-routing-content-column-end-m, 12);
+    --denhaag-hero-image-width: var(--denhaag-hero-routing-image-width-m);
+    --denhaag-hero-min-height: var(--denhaag-hero-routing-min-height-m);
   }
 }
 
@@ -133,11 +129,11 @@
   .denhaag-hero--routing {
     --denhaag-hero-container-gutter: var(--denhaag-hero-routing-container-gutter-l);
     --denhaag-hero-container-max-width: var(--denhaag-hero-routing-container-max-width-l);
-    --denhaag-hero-content-column-start: var(--denhaag-hero-routing-content-column-start-l);
-    --denhaag-hero-content-column-end: var(--denhaag-hero-routing-content-column-end-l);
-    --denhaag-hero-image-width: var(--denhaag-hero-routing-image-width-lg);
-    --denhaag-hero-routing-shape-width: var(--denhaag-hero-routing-shape-width-lg);
-    --denhaag-hero-routing-shape-right: var(--denhaag-hero-routing-shape-right-lg);
+    --denhaag-hero-content-column-start: var(--denhaag-hero-routing-content-column-start-l, 0);
+    --denhaag-hero-content-column-end: var(--denhaag-hero-routing-content-column-end-l, 12);
+    --denhaag-hero-image-width: var(--denhaag-hero-routing-image-width-l);
+    --denhaag-hero-routing-shape-width: var(--denhaag-hero-routing-shape-width-l);
+    --denhaag-hero-routing-shape-right: var(--denhaag-hero-routing-shape-right-l);
   }
 }
 
@@ -145,8 +141,8 @@
   .denhaag-hero--routing {
     --denhaag-hero-container-gutter: var(--denhaag-hero-routing-container-gutter-xl);
     --denhaag-hero-container-max-width: var(--denhaag-hero-routing-container-max-width-xl);
-    --denhaag-hero-content-column-start: var(--denhaag-hero-routing-content-column-start-xl);
-    --denhaag-hero-content-column-end: var(--denhaag-hero-routing-content-column-end-xl);
+    --denhaag-hero-content-column-start: var(--denhaag-hero-routing-content-column-start-xl, 0);
+    --denhaag-hero-content-column-end: var(--denhaag-hero-routing-content-column-end-xl, 12);
     --denhaag-hero-image-width: var(--denhaag-hero-routing-image-width-xl);
     --denhaag-hero-routing-shape-right: var(--denhaag-hero-routing-shape-right-xl);
   }
@@ -159,7 +155,7 @@
       --denhaag-hero-routing-container-max-width-xxl,
       var(--denhaag-hero-routing-container-max-width-xl)
     );
-    --denhaag-hero-content-column-start: var(--denhaag-hero-routing-content-column-start-xxl);
-    --denhaag-hero-content-column-end: var(--denhaag-hero-routing-content-column-end-xxl);
+    --denhaag-hero-content-column-start: var(--denhaag-hero-routing-content-column-start-xxl, 0);
+    --denhaag-hero-content-column-end: var(--denhaag-hero-routing-content-column-end-xxl, 12);
   }
 }

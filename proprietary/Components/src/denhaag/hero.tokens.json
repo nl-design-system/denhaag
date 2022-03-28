@@ -18,10 +18,10 @@
         "min-height": {
           "value": "9rem"
         },
-        "min-height-sm": {
+        "min-height-s": {
           "value": "12rem"
         },
-        "min-height-md": {
+        "min-height-m": {
           "value": "15rem"
         },
         "container": {
@@ -73,103 +73,103 @@
             "block": {
               "value": "{denhaag.space.block.xl}"
             },
-            "block-sm": {
+            "block-s": {
               "value": "{denhaag.space.block.3xl}"
             }
-          }
-        },
-        "column": {
-          "start": {
-            "value": 0
           },
-          "start-xs": {
-            "value": 0
-          },
-          "start-s": {
-            "value": 0
-          },
-          "start-m": {
-            "value": 0
-          },
-          "start-l": {
-            "value": 0
-          },
-          "start-xl": {
-            "value": 3
-          },
-          "start-xxl": {
-            "value": 3
-          },
-          "end": {
-            "value": 9
-          },
-          "end-xs": {
-            "value": 9
-          },
-          "end-s": {
-            "value": 9
-          },
-          "end-m": {
-            "value": 9
-          },
-          "end-l": {
-            "value": 9
-          },
-          "end-xl": {
-            "value": 9
-          },
-          "end-xxl": {
-            "value": 9
-          }
-        }
-      },
-      "image": {
-        "path": {
-          "value": "3rem"
-        },
-        "width-sm": {
-          "value": "16.875rem"
-        },
-        "width-md": {
-          "value": "21.25rem"
-        },
-        "width-lg": {
-          "value": "26.5rem"
-        },
-        "width-xl": {
-          "value": "34.375rem"
-        }
-      },
-      "title": {
-        "font-size-xs": {
-          "value": "{denhaag.typography.scale.2xl.font-size}"
-        },
-        "margin": {
-          "block": {
-            "end": {
-              "value": "0"
-            },
+          "column": {
             "start": {
-              "value": "0"
+              "value": 0
+            },
+            "start-xs": {
+              "value": 0
+            },
+            "start-s": {
+              "value": 0
+            },
+            "start-m": {
+              "value": 0
+            },
+            "start-l": {
+              "value": 0
+            },
+            "start-xl": {
+              "value": 3
+            },
+            "start-xxl": {
+              "value": 3
+            },
+            "end": {
+              "value": 12
+            },
+            "end-xs": {
+              "value": 12
+            },
+            "end-s": {
+              "value": 8
+            },
+            "end-m": {
+              "value": 9
+            },
+            "end-l": {
+              "value": 9
+            },
+            "end-xl": {
+              "value": 9
+            },
+            "end-xxl": {
+              "value": 9
             }
           }
-        }
-      },
-      "shape": {
-        "width": {
-          "value": "36.875rem"
         },
-        "width-lg": {
-          "value": "47.5rem"
+        "image": {
+          "path": {
+            "value": "3rem"
+          },
+          "width-s": {
+            "value": "16.875rem"
+          },
+          "width-m": {
+            "value": "21.25rem"
+          },
+          "width-l": {
+            "value": "26.5rem"
+          },
+          "width-xl": {
+            "value": "34.375rem"
+          }
         },
-        "right": {
-          "value": "0"
+        "title": {
+          "font-size-xs": {
+            "value": "{denhaag.typography.scale.2xl.font-size}"
+          },
+          "margin": {
+            "block": {
+              "end": {
+                "value": "0"
+              },
+              "start": {
+                "value": "0"
+              }
+            }
+          }
         },
-        "right-lg": {
-          "value": "-2rem"
-        },
-        "right-xl": {
-          "value": "16rem"
+        "shape": {
+          "width": {
+            "value": "36.875rem"
+          },
+          "width-l": {
+            "value": "47.5rem"
+          },
+          "right": {
+            "value": "0"
+          },
+          "right-l": {
+            "value": "-2rem"
+          },
+          "right-xl": {
+            "value": "16rem"
+          }
         }
       }
     }
