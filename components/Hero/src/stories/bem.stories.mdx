@@ -1,0 +1,58 @@
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+import pkg from "../../package.json";
+import readme from "../../README.md";
+import "../index.scss";
+
+<Meta
+  title="CSS/Page Elements/Hero"
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Design Tokens
+
+<DesignTokenDocBlock categoryName="Hero" viewType="table" />
+
+## Stories
+
+### Routing
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Routing">
+    <section class="denhaag-hero denhaag-hero--routing">
+      <div class="denhaag-hero__container">
+        <div class="denhaag-hero__content">
+          <h1 class="denhaag-hero__title utrecht-heading-1">Parkeren</h1>
+        </div>
+      </div>
+      <img class="denhaag-hero__image" src="https://source.unsplash.com/560x400/?parking" alt="" />
+    </section>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Routing Multiline
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Routing Multiline">
+    <section class="denhaag-hero denhaag-hero--routing">
+      <div class="denhaag-hero__container">
+        <div class="denhaag-hero__content">
+          <h1 class="denhaag-hero__title utrecht-heading-1">Betalen, wijzigen of opzeggen</h1>
+        </div>
+      </div>
+      <img class="denhaag-hero__image" src="https://source.unsplash.com/560x400/?payment" alt="" />
+    </section>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
