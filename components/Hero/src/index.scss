@@ -1,7 +1,7 @@
 .denhaag-hero {
   --denhaag-hero-image-display: none;
 
-  background: var(--denhaag-hero-background-color);
+  background-color: var(--denhaag-hero-background-color);
   color: var(--denhaag-hero-color);
   display: flex;
   min-height: var(--denhaag-hero-min-height);

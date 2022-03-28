@@ -20,11 +20,5 @@
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
-  },
-  "dependencies": {
-    "@gemeente-denhaag/baseprops": "0.2.3-alpha.138"
-  },
-  "peerDependencies": {
-    "react": "^17.0.0"
   }
 }
