@@ -1,5 +1,6 @@
 import '../../../components/Alert/src/index.scss';
 import '../../../components/Accordion/src/index.scss';
+import '../../../components/AnchorCollapse/src/index.scss';
 import '../../../components/AnchorNavigation/src/index.scss';
 import '../../../components/AuthenticationBlock/src/index.scss';
 import '../../../components/BadgeCounter/src/index.scss';
