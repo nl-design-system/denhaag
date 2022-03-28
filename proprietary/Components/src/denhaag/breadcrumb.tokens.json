@@ -8,6 +8,9 @@
         "value": "{denhaag.color.grey.4}"
       },
       "padding-block": {
+        "value": "1rem"
+      },
+      "padding-block-md": {
         "value": "0.75rem"
       },
       "padding-inline": {
@@ -40,6 +43,11 @@
       "link": {
         "color": {
           "value": "{denhaag.color.blue.3}"
+        },
+        "icon": {
+          "height": { "value": ".875rem" },
+          "width": { "value": ".875rem" },
+          "margin-inline": { "value": ".75rem" }
         },
         "focus": {
           "color": {
