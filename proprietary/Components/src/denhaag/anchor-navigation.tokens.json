@@ -39,10 +39,15 @@
         },
         "padding": {
           "block": {
-            "value": "0.5rem"
+            "value": "{denhaag.space.block.xs}"
           },
           "inline": {
-            "value": "1.125rem"
+            "end": {
+              "value": "0"
+            },
+            "start": {
+              "value": "1.125rem"
+            }
           }
         },
         "text-decoration": {
