@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/radio",
-  "version": "0.2.3-alpha.141",
+  "version": "0.2.3-alpha.142",
   "description": "A Radio component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -28,8 +28,8 @@
     "react": "^17.0.0"
   },
   "devDependencies": {
-    "@gemeente-denhaag/formcontrollabel": "0.2.3-alpha.141",
-    "@gemeente-denhaag/icons": "0.2.3-alpha.141"
+    "@gemeente-denhaag/formcontrollabel": "0.2.3-alpha.142",
+    "@gemeente-denhaag/icons": "0.2.3-alpha.142"
   },
   "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
 }
