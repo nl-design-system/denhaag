@@ -1,36 +1,26 @@
+@import "~@utrecht/components/form-label/bem";
+
 .denhaag-form-control-label {
-  margin-inline-start: var(--denhaag-form-control-label-margin-inline-start);
-  margin-inline-end: var(--denhaag-form-control-label-margin-inline-end);
-  margin-block-start: var(--denhaag-form-control-label-margin-block-start);
+  display: flex;
+  align-items: flex-start;
   margin-block-end: var(--denhaag-form-control-label-margin-block-end);
+  cursor: pointer;
+}
+
+.denhaag-form-control-label__input {
+  display: inline-flex;
+  align-items: center;
+  height: calc(var(--denhaag-typography-scale-base-line-height) * var(--utrecht-form-label-font-size));
+  margin-inline-end: var(--denhaag-form-control-label-input-margin-inline-end);
 }
 
 .denhaag-form-control-label__label {
-  font-family: var(--denhaag-form-control-label-font-family);
-  font-size: var(--denhaag-form-control-label-font-size);
-  font-weight: var(--denhaag-form-control-label-font-weight);
-  line-height: var(--denhaag-form-control-label-line-height);
-  color: var(--denhaag-form-control-label-color);
-  margin-inline-start: var(--denhaag-form-control-label-label-margin-inline-start);
+  @extend .utrecht-form-label;
+
+  line-height: var(--denhaag-typography-scale-base-line-height);
+  font-weight: var(--denhaag-typography-weight-regular);
 }
 
-.denhaag-form-control-label:hover,
-.denhaag-form-control-label--hover {
-  --denhaag-checkbox-normal-unchecked-color: var(--denhaag-form-control-label-hover-color);
-  --denhaag-form-control-label-color: var(--denhaag-form-control-label-hover-color);
-}
-
-.denhaag-form-control-label--disabled,
-.denhaag-form-control-label--disabled:hover,
-.denhaag-form-control-label--disabled.denhaag-form-control-label--hover {
-  color: var(--denhaag-color-grey-2);
-}
-
-.denhaag-form-control-label--disabled:hover,
-.denhaag-form-control-label--disabled.denhaag-form-control-label--hover {
+.denhaag-form-control-label.denhaag-form-control-label--disabled {
   cursor: default;
-}
-
-.denhaag-form-control-label--disabled .denhaag-form-control-label__label {
-  color: var(--denhaag-color-grey-2);
 }
