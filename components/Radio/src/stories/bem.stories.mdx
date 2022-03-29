@@ -1,0 +1,124 @@
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+
+import pkg from "../../package.json";
+import readme from "../../README.md";
+
+<Meta
+  title="CSS/Input/Radio"
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "ALPHA",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Design Tokens
+
+<DesignTokenDocBlock categoryName="Radio" viewType="table" />
+
+## Stories
+
+### Default
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  {/* eslint-disable jsx-a11y/label-has-associated-control */}
+  <Story name="Default">
+    {() => (
+      <label class="denhaag-form-control-label">
+        <span class="denhaag-form-control-label__input">
+          <span class="denhaag-radio">
+            <input
+              id="radio-1"
+              class="denhaag-radio__input"
+              type="radio"
+              aria-describedby="description-1"
+              name="radio"
+            />
+            <span class="denhaag-radio__icon"></span>
+          </span>
+        </span>
+        <span class="denhaag-form-control-label__label">Radio</span>
+      </label>
+    )}
+  </Story>
+  {/* eslint-enable jsx-a11y/label-has-associated-control */}
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Without label
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Without label">
+    {() => (
+      <span class="denhaag-radio">
+        <input id="radio-1" class="denhaag-radio__input" type="radio" aria-describedby="description-1" name="radio" />
+        <span class="denhaag-radio__icon"></span>
+      </span>
+    )}
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Disabled
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  {/* eslint-disable jsx-a11y/label-has-associated-control */}
+  <Story name="Disabled">
+    {() => (
+      <label class="denhaag-form-control-label denhaag-form-control-label--disabled">
+        <span class="denhaag-form-control-label__input">
+          <span class="denhaag-radio">
+            <input
+              id="radio-1"
+              class="denhaag-radio__input"
+              type="radio"
+              aria-describedby="description-1"
+              name="radio"
+              disabled
+            />
+            <span class="denhaag-radio__icon"></span>
+          </span>
+        </span>
+        <span class="denhaag-form-control-label__label">Checkbox</span>
+      </label>
+    )}
+  </Story>
+  {/* eslint-enable jsx-a11y/label-has-associated-control */}
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Error
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  {/* eslint-disable jsx-a11y/label-has-associated-control */}
+  <Story name="Error">
+    {() => (
+      <label class="denhaag-form-control-label denhaag-form-control-label--error">
+        <span class="denhaag-form-control-label__input">
+          <span class="denhaag-radio denhaag-radio--error">
+            <input
+              id="radio-1"
+              class="denhaag-radio__input"
+              type="radio"
+              aria-describedby="description-1"
+              name="radio"
+            />
+            <span class="denhaag-radio__icon"></span>
+          </span>
+        </span>
+        <span class="denhaag-form-control-label__label">Checkbox</span>
+      </label>
+    )}
+  </Story>
+  {/* eslint-enable jsx-a11y/label-has-associated-control */}
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>

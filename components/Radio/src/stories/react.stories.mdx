@@ -1,0 +1,100 @@
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+import { action } from "@storybook/addon-actions";
+
+import { Radio } from "../index";
+import { FormControlLabel } from "@gemeente-denhaag/formcontrollabel";
+import pkg from "../../package.json";
+import readme from "../../README.md";
+
+<Meta
+  title="React/Input/Radio"
+  component={Radio}
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Design Tokens
+
+<DesignTokenDocBlock categoryName="Radio" viewType="table" />
+
+## Stories
+
+### Default
+
+<Canvas>
+  <Story name="Default" args={{}}>
+    {(args) => (
+      <FormControlLabel
+        label="Radio"
+        input={
+          <Radio
+            id={"radio-1"}
+            aria-describedby={"description-1"}
+            onChange={action("Radio action")}
+            name={"radio"}
+            {...args}
+          />
+        }
+      />
+    )}
+  </Story>
+</Canvas>
+
+## Without label
+
+<Canvas>
+  <Story name="Without label" args={{}}>
+    {(args) => <Radio onChange={action("Radio action")} {...args} />}
+  </Story>
+</Canvas>
+
+### Disabled
+
+<Canvas>
+  <Story name="Disabled" args={{ disabled: true }}>
+    {(args) => (
+      <FormControlLabel
+        label="Radio"
+        disabled="true"
+        input={
+          <Radio
+            id={"radio-1"}
+            aria-describedby={"description-1"}
+            onChange={action("Radio action")}
+            name={"radio"}
+            {...args}
+          />
+        }
+      />
+    )}
+  </Story>
+</Canvas>
+
+### With error
+
+<Canvas>
+  <Story name="Error" args={{ error: true }}>
+    {(args) => (
+      <FormControlLabel
+        label="Radio"
+        input={
+          <Radio
+            id={"radio-1"}
+            aria-describedby={"description-1"}
+            onChange={action("Radio action")}
+            name={"radio"}
+            {...args}
+          />
+        }
+      />
+    )}
+  </Story>
+</Canvas>

@@ -1,0 +1,79 @@
+.denhaag-radio {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.denhaag-radio__input {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0%;
+  cursor: inherit;
+}
+
+.denhaag-radio__icon {
+  width: var(--denhaag-radio-size);
+  aspect-ratio: 1;
+  background-color: var(--denhaag-radio-background-color);
+  border-width: var(--denhaag-radio-border-width);
+  border-style: solid;
+  border-color: var(--denhaag-radio-border-color);
+  border-radius: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.denhaag-radio__input:checked + .denhaag-radio__icon {
+  border-color: var(--denhaag-radio-checked-border-color);
+  border-width: var(--denhaag-radio-checked-border-width);
+}
+
+.denhaag-radio.denhaag-radio--error .denhaag-radio__icon {
+  border-color: var(--denhaag-radio-error-border-color);
+}
+
+.denhaag-radio:focus-within .denhaag-radio__icon,
+.denhaag-radio.denhaag-radio--focus .denhaag-radio__icon {
+  outline: var(--denhaag-focus-border);
+}
+
+.denhaag-radio:hover .denhaag-radio__icon,
+.denhaag-radio.denhaag-radio--hover .denhaag-radio__icon,
+.denhaag-form-control-label:hover .denhaag-radio__icon {
+  border-color: var(--denhaag-radio-hover-border-color);
+}
+
+.denhaag-radio .denhaag-radio__input:disabled + .denhaag-radio__icon {
+  background-color: var(--denhaag-radio-disabled-background-color);
+  border-color: var(--denhaag-radio-border-color);
+  cursor: default;
+}
+
+.denhaag-radio.denhaag-radio--error:hover .denhaag-radio__icon,
+.denhaag-radio.denhaag-radio--error.denhaag-radio.denhaag-radio--hover .denhaag-radio__icon,
+.denhaag-form-control-label:hover .denhaag-radio.denhaag-radio--error .denhaag-radio__icon {
+  border-color: var(--denhaag-radio-hover-error-border-color);
+}
+
+.denhaag-radio:hover .denhaag-radio__input:checked + .denhaag-radio__icon,
+.denhaag-radio.denhaag-radio--hover .denhaag-radio__input:checked + .denhaag-radio__icon,
+.denhaag-form-control-label:hover .denhaag-radio__input:checked + .denhaag-radio__icon {
+  border-color: var(--denhaag-radio-hover-checked-border-color);
+}
+
+.denhaag-radio .denhaag-radio__input:checked:disabled + .denhaag-radio__icon {
+  background-color: var(--denhaag-radio-background-color);
+  border-color: var(--denhaag-radio-disabled-checked-border-color);
+}
+
+.denhaag-radio.denhaag-radio--error:hover .denhaag-radio__input:checked + .denhaag-radio__icon,
+.denhaag-radio.denhaag-radio--error.denhaag-radio--hover .denhaag-radio__input:checked + .denhaag-radio__icon,
+.denhaag-form-control-label:hover
+  .denhaag-radio.denhaag-radio--error
+  .denhaag-radio__input:checked
+  + .denhaag-radio__icon {
+  border-color: var(--denhaag-radio-hover-error-border-color);
+}

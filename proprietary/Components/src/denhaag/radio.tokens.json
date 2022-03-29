@@ -1,0 +1,46 @@
+{
+  "denhaag": {
+    "radio": {
+      "size": { "value": "{denhaag.checkbox.size}" },
+      "background-color": { "value": "{denhaag.color.white}" },
+      "border": {
+        "width": { "value": "{denhaag.checkbox.border.width}" },
+        "color": { "value": "{denhaag.checkbox.border.color}" }
+      },
+      "checked": {
+        "border": {
+          "color": { "value": "{denhaag.checkbox.checked.background-color}" },
+          "width": { "value": "7px" }
+        }
+      },
+      "error": {
+        "border": {
+          "color": { "value": "{denhaag.checkbox.error.color}" }
+        }
+      },
+      "disabled": {
+        "background-color": { "value": "{denhaag.checkbox.disabled.background-color}" },
+        "checked": {
+          "border": {
+            "color": { "value": "{denhaag.checkbox.disabled.checked.background-color}" }
+          }
+        }
+      },
+      "hover": {
+        "border": {
+          "color": { "value": "{denhaag.checkbox.hover.border.color}" }
+        },
+        "checked": {
+          "border": {
+            "color": { "value": "{denhaag.checkbox.hover.checked.background-color}" }
+          }
+        },
+        "error": {
+          "border": {
+            "color": { "value": "{denhaag.checkbox.hover.error.color}" }
+          }
+        }
+      }
+    }
+  }
+}
