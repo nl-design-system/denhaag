@@ -3,12 +3,12 @@
     "link-group": {
       "image": {
         "padding-block-end": { "value": "{denhaag.space.block.md}" },
-        "size": { "value": "140px" },
+        "size": { "value": "8.75rem" },
         "object-fit": { "value": "cover" }
       },
       "caption": {
         "color": { "value": "{denhaag.color.grey.5}" },
-        "font-weight": { "value": "500" },
+        "font-weight": { "value": "{denhaag.typography.weight.bold}" },
         "margin-block": { "value": "0" }
       },
       "navigation-list": {
