@@ -45,7 +45,9 @@ export const Radio: React.FC<RadioProps> = ({
         }}
         {...props}
       />
-      <span className="denhaag-radio__icon"></span>
+      <span className="denhaag-radio__icon">
+        <span className="denhaag-radio__icon-inner"></span>
+      </span>
     </span>
   );
 };
