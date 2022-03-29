@@ -1,21 +1,10 @@
-import React from 'react';
+import React, { InputHTMLAttributes } from 'react';
 import clsx from 'clsx';
-import BaseProps from '@gemeente-denhaag/baseprops';
-import { CheckedIcon, UncheckedBoxIcon } from '@gemeente-denhaag/icons';
+import { CheckedIcon } from '@gemeente-denhaag/icons';
 
 import './index.scss';
 
-export interface CheckboxProps extends Omit<BaseProps, 'classes'> {
-  /**
-   * If `true` the Checkbox is checked.
-   * See https://github.com/mui-org/material-ui/blob/master/docs/src/pages/components/checkboxes/Checkboxes.tsx
-   * For an example on the needed state machine to use this property.
-   */
-  checked?: boolean;
-  /**
-   * Attributes applied to the `input` element.
-   */
-  inputProps?: Record<string, unknown>;
+export interface CheckboxProps extends InputHTMLAttributes<HTMLInputElement> {
   /**
    * Displays the checkbox red.
    */
@@ -28,12 +17,6 @@ export interface CheckboxProps extends Omit<BaseProps, 'classes'> {
    * Callback fired when the state is changed.
    */
   onChange?: (event: React.ChangeEvent<unknown>) => void;
-
-  /**
-   * Overwrite the Icon shown when in the unchecked state.
-   */
-  uncheckedIcon?: React.ReactNode;
-
   /**
    * Overwrite the Icon shown when in the checked state.
    */
@@ -44,40 +27,31 @@ export interface CheckboxProps extends Omit<BaseProps, 'classes'> {
  * Checkboxes allow the user to select one or more items from a set.
  */
 export const Checkbox: React.FC<CheckboxProps> = ({
+  className,
+  error = false,
   checked = false,
   checkedIcon = <CheckedIcon />,
-  uncheckedIcon = <UncheckedBoxIcon />,
+  onChange,
   ...props
 }: CheckboxProps) => {
   const [isChecked, setChecked] = React.useState(checked);
-  const rootStyles = clsx(
-    'denhaag-checkbox',
-    {
-      'denhaag-checkbox--error': props.error,
-      'denhaag-checkbox--checked': isChecked,
-      'denhaag-checkbox--disabled': props.disabled,
-    },
-    props.className,
-  );
-
-  const icon = isChecked ? checkedIcon : uncheckedIcon;
+  const classes = clsx('denhaag-checkbox', { 'denhaag-checkbox--error': error }, className);
 
   return (
-    <span className={rootStyles}>
+    <span className={classes}>
       <input
-        {...props.inputProps}
-        disabled={props.disabled}
         type="checkbox"
         className="denhaag-checkbox__input"
         checked={isChecked}
         onChange={(event) => {
           setChecked(!isChecked);
-          if (props.onChange) {
-            props.onChange(event);
+          if (onChange) {
+            onChange(event);
           }
         }}
+        {...props}
       />
-      <div className="denhaag-checkbox__icon">{icon}</div>
+      <span className="denhaag-checkbox__icon">{checkedIcon}</span>
     </span>
   );
 };
