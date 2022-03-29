@@ -1,13 +1,25 @@
 @import "~@utrecht/components/form-label/bem";
 
 .denhaag-form-field {
-  --denhaag-form-input-margin-block-start: 4px;
   --denhaag-form-input-margin-block-end: 8px;
+
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  border: 0;
 }
 
 .denhaag-form-field__label {
   @extend .utrecht-form-label;
 
+  margin-block-end: var(--denhaag-form-field-label-margin-block-end);
+  padding-inline-start: 0;
+  padding-inline-end: 0;
   line-height: var(--denhaag-typography-scale-base-line-height);
 }
 
