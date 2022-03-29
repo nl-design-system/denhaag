@@ -1,50 +1,43 @@
-import React, { ReactElement } from 'react';
-import { FormControlLabel as MaterialFormControlLabel } from '@material-ui/core';
-import { BaseClassesProps } from '@gemeente-denhaag/baseprops';
-
-import { classes } from './bem-mapping';
+import React, { LabelHTMLAttributes } from 'react';
+import clsx from 'clsx';
 
 import './index.scss';
-import './mui-override.scss';
 
-export interface FormControlLabelProps extends BaseClassesProps {
+export interface FormControlLabelProps extends LabelHTMLAttributes<HTMLLabelElement> {
   /**
-   * If true, the component appears selected.
-   */
-  checked?: boolean;
-
-  /**
-   * A control instance, it can be a Radio, a Switch or a Checkbox.
-   */
-  control: ReactElement;
-
-  /**
-   * If true, the component will be disabled.
+   * Whether the input element is disabled.
    */
   disabled?: boolean;
+  /**
+   * The input element to display for the component.
+   */
+  input: React.ReactNode;
 
   /**
    * The label to display for the component.
    */
   label: string;
-
-  /**
-   * Callback fired when the state is changed.
-   */
-  onChange?: () => void;
-
-  /**
-   * The value of the component.
-   */
-  value?: unknown;
 }
 
 /**
  * FormControlLabels allow the developer to add a label to some components
  */
-export const FormControlLabel: React.FC<FormControlLabelProps> = (props: FormControlLabelProps) => (
-  <MaterialFormControlLabel {...props} classes={classes} />
-);
+export const FormControlLabel: React.FC<FormControlLabelProps> = ({
+  className,
+  disabled = false,
+  input,
+  label,
+  ...props
+}: FormControlLabelProps) => {
+  const classes = clsx('denhaag-form-control-label', { 'denhaag-form-control-label--disabled': disabled }, className);
+
+  return (
+    <label className={classes} {...props}>
+      <span className="denhaag-form-control-label__input">{input}</span>
+      <span className="denhaag-form-control-label__label">{label}</span>
+    </label>
+  );
+};
 
 /**
  * Default export for FormControlLabel
