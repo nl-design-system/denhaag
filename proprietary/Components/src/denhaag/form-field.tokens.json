@@ -1,6 +1,13 @@
 {
   "denhaag": {
     "form-field": {
+      "label": {
+        "margin": {
+          "block": {
+            "end": { "value": "4px" }
+          }
+        }
+      },
       "description": {
         "color": { "value": "{denhaag.color.grey.4}" },
         "font-family": { "value": "{utrecht.document.font-family}" },
