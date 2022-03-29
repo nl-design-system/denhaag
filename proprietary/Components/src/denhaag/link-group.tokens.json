@@ -26,6 +26,13 @@
       },
       "denhaag-link-hover": {
         "text-decoration": { "value": "underline" }
+      },
+      "denhaag-link-with-icon-start": {
+        "padding-inline-start": { "value": "{denhaag.space.inline.xl}" }
+      },
+      "denhaag-link-icon": {
+        "font-size": { "value": "0.75rem" },
+        "margin-block-start": { "value": "{denhaag.space.block.3xs}" }
       }
     }
   }

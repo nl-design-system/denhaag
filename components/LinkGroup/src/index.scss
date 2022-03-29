@@ -37,6 +37,15 @@
   text-decoration: var(--denhaag-link-group-denhaag-link-hover-text-decoration);
 }
 
+.denhaag-link-group .denhaag-link--with-icon-start {
+  padding-inline-start: var(--denhaag-link-group-denhaag-link-with-icon-start-padding-inline-start);
+}
+
+.denhaag-link-group .denhaag-link__icon {
+  font-size: var(--denhaag-link-group-denhaag-link-icon-font-size);
+  margin-block-start: calc(-1 * var(--denhaag-link-group-denhaag-link-icon-margin-block-start));
+}
+
 .denhaag-link-group--dark .denhaag-link-group__caption {
   color: var(--denhaag-link-group-dark-caption-color);
 }
