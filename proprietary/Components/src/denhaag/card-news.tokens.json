@@ -6,12 +6,8 @@
         "border": { "value": "1px solid {denhaag.color.grey.2}" },
         "padding": { "value": "1rem" },
         "margin": { "value": "0" },
-        "min-width": { "value": "19.5rem" },
         "width": { "value": "100%" },
-        "max-width": { "value": "21.1875rem" },
-        "min-height": { "value": "18.5625rem" },
         "height": { "value": "100%" },
-        "max-height": { "value": "27.375rem" },
         "box-shadow": { "value": "0 0 0.5rem {denhaag.color.grey.2}" },
         "outline": { "value": "{denhaag.link.focus.outline}" }
       },
