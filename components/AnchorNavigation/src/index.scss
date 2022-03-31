@@ -58,7 +58,12 @@
   --denhaag-anchor-navigation-link-color: var(--denhaag-anchor-navigation-link-target-color);
 }
 
-.denhaag-anchor-navigation__link:focus,
+.denhaag-anchor-navigation__link:active,
+.denhaag-anchor-navigation__link:target {
+  font-weight: var(--denhaag-anchor-navigation-link-font-weight);
+}
+
+.denhaag-anchor-navigation__link:focus-visible,
 .denhaag-anchor-navigation__link--focus {
   --denhaag-anchor-navigation-link-color: var(--denhaag-anchor-navigation-link-focus-color);
   --denhaag-anchor-navigation-link-background-color: var(--denhaag-anchor-navigation-link-focus-color);
@@ -66,9 +71,8 @@
   outline: var(--denhaag-anchor-navigation-link-outline);
 }
 
-.denhaag-anchor-navigation__link:active,
-.denhaag-anchor-navigation__link:target {
-  font-weight: var(--denhaag-anchor-navigation-link-font-weight);
+.denhaag-anchor-navigation__link:focus:not(:focus-visible) {
+  outline: none;
 }
 
 .denhaag-anchor-navigation__link::before {
