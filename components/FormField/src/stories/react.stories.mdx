@@ -12,7 +12,6 @@ import {
 import TextField from "@gemeente-denhaag/textfield";
 import { FormControlLabel } from "@gemeente-denhaag/formcontrollabel";
 import { Checkbox } from "@gemeente-denhaag/checkbox";
-import { Radio } from "@gemeente-denhaag/radio";
 import { CalendarIcon } from "@gemeente-denhaag/icons";
 import { action } from "@storybook/addon-actions";
 
@@ -75,10 +74,10 @@ import { action } from "@storybook/addon-actions";
   </Story>
 </Canvas>
 
-### Fieldset Checkbox
+### FormFieldGroup
 
 <Canvas>
-  <Story name="Fieldset Checkbox" args={{}}>
+  <Story name="FormFieldGroup" args={{}}>
     {() => (
       <FormFieldGroup aria-describedby={"description-1"}>
         <FormFieldGroupLabel>Label</FormFieldGroupLabel>
@@ -113,28 +112,52 @@ import { action } from "@storybook/addon-actions";
   </Story>
 </Canvas>
 
-### Fieldset Radio
+### FormFieldGroup Error
 
 <Canvas>
-  <Story name="Fieldset Radio" args={{}}>
+  <Story name="FormFieldGroup Error" args={{}}>
     {() => (
-      <FormFieldGroup aria-describedby={"description-2"}>
+      <FormFieldGroup error={true} aria-describedby={"description-1"}>
         <FormFieldGroupLabel>Label</FormFieldGroupLabel>
         <FormFieldInput>
           <FormControlLabel
-            label="Radio One"
-            input={<Radio id={"radio-1"} onChange={action("Radio One action")} name={"radio"} value={"one"} />}
+            label="Checkbox One"
+            input={
+              <Checkbox
+                id={"checkbox-1"}
+                error={true}
+                onChange={action("Checkbox One action")}
+                name={"checkbox"}
+                value={"one"}
+              />
+            }
           />
           <FormControlLabel
-            label="Radio Two"
-            input={<Radio id={"radio-2"} onChange={action("Radio Two action")} name={"radio"} value={"two"} />}
+            label="Checkbox Two"
+            input={
+              <Checkbox
+                id={"checkbox-2"}
+                error={true}
+                onChange={action("Checkbox Two action")}
+                name={"checkbox"}
+                value={"two"}
+              />
+            }
           />
           <FormControlLabel
-            label="Radio Three"
-            input={<Radio id={"radio-3"} onChange={action("Radio Three action")} name={"radio"} value={"three"} />}
+            label="Checkbox Three"
+            input={
+              <Checkbox
+                id={"checkbox-3"}
+                error={true}
+                onChange={action("Checkbox Three action")}
+                name={"checkbox"}
+                value={"three"}
+              />
+            }
           />
         </FormFieldInput>
-        <FormFieldDescription id="description-2">Description</FormFieldDescription>
+        <FormFieldDescription id="description-1">Description</FormFieldDescription>
       </FormFieldGroup>
     )}
   </Story>

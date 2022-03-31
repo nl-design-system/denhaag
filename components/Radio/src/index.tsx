@@ -28,7 +28,6 @@ export const Radio: React.FC<RadioProps> = ({
   onChange,
   ...props
 }: RadioProps) => {
-  const [isChecked, setChecked] = React.useState(checked);
   const classes = clsx('denhaag-radio', { 'denhaag-radio--error': error }, className);
 
   return (
@@ -36,9 +35,8 @@ export const Radio: React.FC<RadioProps> = ({
       <input
         type="radio"
         className="denhaag-radio__input"
-        checked={isChecked}
+        defaultChecked={checked}
         onChange={(event) => {
-          setChecked(!isChecked);
           if (onChange) {
             onChange(event);
           }

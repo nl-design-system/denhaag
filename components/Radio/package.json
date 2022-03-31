@@ -23,7 +23,8 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@gemeente-denhaag/formcontrollabel": "0.2.3-alpha.149"
+    "@gemeente-denhaag/formcontrollabel": "0.2.3-alpha.149",
+    "@gemeente-denhaag/form-field": "0.1.1-alpha.25"
   },
   "peerDependencies": {
     "react": "^17.0.0"
