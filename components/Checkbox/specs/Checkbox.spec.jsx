@@ -1,8 +1,6 @@
 import * as React from 'react';
 import Checkbox from '../dist';
-import FormControlLabel from '../../FormControlLabel';
-import FormGroup from '../../FormGroup';
-import { HideIcon, ShowIcon } from '../../Icons';
+import { HideIcon } from '../../Icons';
 
 describe(`Checkbox tests`, () => {
   it('can be clicked', () => {
@@ -58,45 +56,6 @@ describe(`Checkbox tests`, () => {
         },
       },
       [{ id: 'label', logDisabled: true }],
-    );
-
-    cy.snapshots(
-      <FormGroup label="Label" helperText="Helper/Error text">
-        <FormControlLabel label="Checkbox" control={<Checkbox error checked></Checkbox>}></FormControlLabel>
-        <FormControlLabel label="Checkbox" control={<Checkbox disabled></Checkbox>}></FormControlLabel>
-        <FormControlLabel label="Checkbox" control={<Checkbox checked></Checkbox>}></FormControlLabel>
-        <FormControlLabel label="Checkbox" control={<Checkbox></Checkbox>}></FormControlLabel>
-      </FormGroup>,
-      {
-        error: true,
-      },
-    );
-
-    cy.snapshots(
-      <FormControlLabel
-        label="Checkbox"
-        control={<Checkbox checked checkedIcon={<ShowIcon />}></Checkbox>}
-      ></FormControlLabel>,
-      {},
-      {
-        selector: '.denhaag-checkbox',
-        states: {
-          hover: 'denhaag-checkbox--hover',
-          focus: 'denhaag-checkbox--focus',
-        },
-      },
-    );
-
-    cy.snapshots(
-      <FormControlLabel label="Checkbox" control={<Checkbox checked error></Checkbox>}></FormControlLabel>,
-      {},
-      {
-        selector: '.denhaag-checkbox',
-        states: {
-          hover: 'denhaag-checkbox--hover',
-          focus: 'denhaag-checkbox--focus',
-        },
-      },
     );
   });
 });
