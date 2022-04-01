@@ -3,7 +3,7 @@
   "description": "A Button component",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
-  "version": "0.2.3-alpha.148",
+  "version": "0.2.3-alpha.149",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "exports": "./dist/index.js",
@@ -22,10 +22,10 @@
   },
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "0.2.3-alpha.148"
+    "@gemeente-denhaag/baseprops": "0.2.3-alpha.149"
   },
   "devDependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-alpha.148"
+    "@gemeente-denhaag/icons": "0.2.3-alpha.149"
   },
   "peerDependencies": {
     "react": "^17.0.0"
