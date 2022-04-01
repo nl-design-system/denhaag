@@ -29,7 +29,8 @@
 }
 
 .denhaag-link-group--dark .denhaag-link,
-.denhaag-link-group--dark .denhaag-link:hover {
+.denhaag-link-group--dark .denhaag-link:hover,
+.denhaag-link-group--dark .denhaag-link:focus {
   color: var(--denhaag-link-group-dark-denhaag-link-color);
 }
 
@@ -43,7 +44,6 @@
 
 .denhaag-link-group .denhaag-link__icon {
   font-size: var(--denhaag-link-group-denhaag-link-icon-font-size);
-  margin-block-start: calc(-1 * var(--denhaag-link-group-denhaag-link-icon-margin-block-start));
 }
 
 .denhaag-link-group--dark .denhaag-link-group__caption {
