@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/formcontrollabel",
-  "version": "0.2.3-alpha.149",
+  "version": "0.2.3-alpha.150",
   "description": "A FormControlLabel component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -21,7 +21,6 @@
     "build": "rollup -c ../../rollup.config.js",
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
-  "dependencies": {},
   "peerDependencies": {
     "react": "^17.0.0"
   },
