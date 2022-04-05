@@ -5,7 +5,7 @@
         "margin": {
           "block": {
             "start": {
-              "value": "1.875rem"
+              "value": "{denhaag.space.block.md}"
             }
           }
         }
@@ -32,7 +32,7 @@
           "value": "{denhaag.typography.scale.base.font-size}"
         },
         "font-weight": {
-          "value": "500"
+          "value": "{denhaag.typography.weight.bold}"
         },
         "outline": {
           "value": "{denhaag.focus.border}"

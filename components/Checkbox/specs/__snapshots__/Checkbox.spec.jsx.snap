@@ -2,9 +2,9 @@ exports[`Checkbox tests > a11y and snapshots #0`] = `
 <div id="wrapper" style="display: inline-block;">
   <div style="padding: 10px;">
     <span class="denhaag-checkbox"
-      ><input type="checkbox" class="denhaag-checkbox__input"/>
-      <div class="denhaag-checkbox__icon">
-        <svg
+      ><input type="checkbox" class="denhaag-checkbox__input"/><span
+        class="denhaag-checkbox__icon"
+        ><svg
           xmlns="http://www.w3.org/2000/svg"
           width="1em"
           height="1em"
@@ -14,25 +14,18 @@ exports[`Checkbox tests > a11y and snapshots #0`] = `
           aria-hidden="true"
           shape-rendering="auto"
         >
-          <rect
-            x="-9.5"
-            y="-9.5"
-            rx="0.5"
-            ry="0.5"
-            width="19"
-            height="19"
+          <path
+            d="M20.664 5.253a1 1 0 01.083 1.411l-10.666 12a1 1 0 01-1.495 0l-5.333-6a1 1 0 011.494-1.328l4.586 5.159 9.92-11.16a1 1 0 011.411-.082z"
             stroke="currentColor"
-            fill="#fff"
-            transform="translate(12 12)"
-          ></rect>
-        </svg></div
+            stroke-width="1.75"
+          ></path></svg></span
     ></span>
   </div>
   <div style="padding: 10px;">
     <span class="denhaag-checkbox denhaag-checkbox--error"
-      ><input type="checkbox" class="denhaag-checkbox__input"/>
-      <div class="denhaag-checkbox__icon">
-        <svg
+      ><input type="checkbox" class="denhaag-checkbox__input"/><span
+        class="denhaag-checkbox__icon"
+        ><svg
           xmlns="http://www.w3.org/2000/svg"
           width="1em"
           height="1em"
@@ -42,487 +35,77 @@ exports[`Checkbox tests > a11y and snapshots #0`] = `
           aria-hidden="true"
           shape-rendering="auto"
         >
-          <rect
-            x="-9.5"
-            y="-9.5"
-            rx="0.5"
-            ry="0.5"
-            width="19"
-            height="19"
-            stroke="currentColor"
-            fill="#fff"
-            transform="translate(12 12)"
-          ></rect>
-        </svg></div
-    ></span>
-  </div>
-  <div style="padding: 10px;">
-    <span class="denhaag-checkbox denhaag-checkbox--checked"
-      ><input type="checkbox" class="denhaag-checkbox__input" checked=""/>
-      <div class="denhaag-checkbox__icon">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-          shape-rendering="auto"
-        >
-          <rect
-            x="-9.5"
-            y="-9.5"
-            rx="0.5"
-            ry="0.5"
-            width="19"
-            height="19"
-            stroke="currentColor"
-            fill="currentColor"
-            transform="translate(12 12)"
-          ></rect>
           <path
-            d="M17.663 8l-7.333 7.333L6.997 12"
-            stroke-linecap="round"
-            stroke="#fff"
-            stroke-width="2"
-            stroke-linejoin="round"
-            fill="none"
-          ></path>
-        </svg></div
-    ></span>
-  </div>
-  <div style="padding: 10px;">
-    <span class="denhaag-checkbox denhaag-checkbox--disabled"
-      ><input disabled="" type="checkbox" class="denhaag-checkbox__input"/>
-      <div class="denhaag-checkbox__icon">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-          shape-rendering="auto"
-        >
-          <rect
-            x="-9.5"
-            y="-9.5"
-            rx="0.5"
-            ry="0.5"
-            width="19"
-            height="19"
+            d="M20.664 5.253a1 1 0 01.083 1.411l-10.666 12a1 1 0 01-1.495 0l-5.333-6a1 1 0 011.494-1.328l4.586 5.159 9.92-11.16a1 1 0 011.411-.082z"
             stroke="currentColor"
-            fill="#fff"
-            transform="translate(12 12)"
-          ></rect>
-        </svg></div
+            stroke-width="1.75"
+          ></path></svg></span
     ></span>
   </div>
   <div style="padding: 10px;">
     <span class="denhaag-checkbox"
-      ><input type="checkbox" class="denhaag-checkbox__input"/>
-      <div class="denhaag-checkbox__icon">
-        <svg
+      ><input type="checkbox" class="denhaag-checkbox__input" checked=""/><span
+        class="denhaag-checkbox__icon"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
           width="1em"
           height="1em"
           viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
           class="denhaag-icon"
           focusable="false"
           aria-hidden="true"
           shape-rendering="auto"
         >
           <path
-            d="M4.707 3.293a1 1 0 00-1.414 1.414l2.424 2.424c-1.43 1.076-2.678 2.554-3.611 4.422a1 1 0 000 .894C4.264 16.764 8.096 19 12 19c1.555 0 3.1-.355 4.53-1.055l2.763 2.762a1 1 0 001.414-1.414l-16-16zm10.307 13.135c-.98.383-2 .572-3.014.572-2.969 0-6.002-1.62-7.87-5 .817-1.479 1.858-2.62 3.018-3.437l2.144 2.144a3 3 0 004.001 4.001l1.72 1.72zM18.552 13.896c.483-.556.926-1.187 1.318-1.896C18.002 8.62 14.97 7 12 7c-.112 0-.224.002-.336.007L9.879 5.223A10.215 10.215 0 0112 5c3.903 0 7.736 2.236 9.894 6.553a1 1 0 010 .894 13.106 13.106 0 01-1.925 2.865l-1.417-1.416z"
-            fill="currentColor"
-          ></path>
-        </svg></div
+            d="M20.664 5.253a1 1 0 01.083 1.411l-10.666 12a1 1 0 01-1.495 0l-5.333-6a1 1 0 011.494-1.328l4.586 5.159 9.92-11.16a1 1 0 011.411-.082z"
+            stroke="currentColor"
+            stroke-width="1.75"
+          ></path></svg></span
     ></span>
   </div>
-</div>
-`;
-
-exports[`Checkbox tests > a11y and snapshots #1`] = `
-<div id="wrapper" style="display: inline-block;">
   <div style="padding: 10px;">
-    <div class="denhaag-form-group">
-      <h5 class="utrecht-heading-5 utrecht-heading-5--distanced">Label</h5>
-      <label class="MuiFormControlLabel-root denhaag-form-control-label"
-        ><span
-          class="denhaag-checkbox denhaag-checkbox--error denhaag-checkbox--checked"
-          ><input type="checkbox" class="denhaag-checkbox__input" checked=""/>
-          <div class="denhaag-checkbox__icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="1em"
-              height="1em"
-              viewBox="0 0 24 24"
-              class="denhaag-icon"
-              focusable="false"
-              aria-hidden="true"
-              shape-rendering="auto"
-            >
-              <rect
-                x="-9.5"
-                y="-9.5"
-                rx="0.5"
-                ry="0.5"
-                width="19"
-                height="19"
-                stroke="currentColor"
-                fill="currentColor"
-                transform="translate(12 12)"
-              ></rect>
-              <path
-                d="M17.663 8l-7.333 7.333L6.997 12"
-                stroke-linecap="round"
-                stroke="#fff"
-                stroke-width="2"
-                stroke-linejoin="round"
-                fill="none"
-              ></path>
-            </svg></div></span
-        ><span
-          class="MuiTypography-root MuiFormControlLabel-label denhaag-form-control-label__label MuiTypography-body1"
-          >Checkbox</span
-        ></label
-      ><label
-        class="MuiFormControlLabel-root denhaag-form-control-label Mui-disabled denhaag-form-control-label--disabled"
-        ><span class="denhaag-checkbox denhaag-checkbox--disabled"
-          ><input disabled="" type="checkbox" class="denhaag-checkbox__input"/>
-          <div class="denhaag-checkbox__icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="1em"
-              height="1em"
-              viewBox="0 0 24 24"
-              class="denhaag-icon"
-              focusable="false"
-              aria-hidden="true"
-              shape-rendering="auto"
-            >
-              <rect
-                x="-9.5"
-                y="-9.5"
-                rx="0.5"
-                ry="0.5"
-                width="19"
-                height="19"
-                stroke="currentColor"
-                fill="#fff"
-                transform="translate(12 12)"
-              ></rect>
-            </svg></div></span
-        ><span
-          class="MuiTypography-root MuiFormControlLabel-label denhaag-form-control-label__label Mui-disabled denhaag-form-control-label--disabled MuiTypography-body1"
-          >Checkbox</span
-        ></label
-      ><label class="MuiFormControlLabel-root denhaag-form-control-label"
-        ><span class="denhaag-checkbox denhaag-checkbox--checked"
-          ><input type="checkbox" class="denhaag-checkbox__input" checked=""/>
-          <div class="denhaag-checkbox__icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="1em"
-              height="1em"
-              viewBox="0 0 24 24"
-              class="denhaag-icon"
-              focusable="false"
-              aria-hidden="true"
-              shape-rendering="auto"
-            >
-              <rect
-                x="-9.5"
-                y="-9.5"
-                rx="0.5"
-                ry="0.5"
-                width="19"
-                height="19"
-                stroke="currentColor"
-                fill="currentColor"
-                transform="translate(12 12)"
-              ></rect>
-              <path
-                d="M17.663 8l-7.333 7.333L6.997 12"
-                stroke-linecap="round"
-                stroke="#fff"
-                stroke-width="2"
-                stroke-linejoin="round"
-                fill="none"
-              ></path>
-            </svg></div></span
-        ><span
-          class="MuiTypography-root MuiFormControlLabel-label denhaag-form-control-label__label MuiTypography-body1"
-          >Checkbox</span
-        ></label
-      ><label class="MuiFormControlLabel-root denhaag-form-control-label"
-        ><span class="denhaag-checkbox"
-          ><input type="checkbox" class="denhaag-checkbox__input"/>
-          <div class="denhaag-checkbox__icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="1em"
-              height="1em"
-              viewBox="0 0 24 24"
-              class="denhaag-icon"
-              focusable="false"
-              aria-hidden="true"
-              shape-rendering="auto"
-            >
-              <rect
-                x="-9.5"
-                y="-9.5"
-                rx="0.5"
-                ry="0.5"
-                width="19"
-                height="19"
-                stroke="currentColor"
-                fill="#fff"
-                transform="translate(12 12)"
-              ></rect>
-            </svg></div></span
-        ><span
-          class="MuiTypography-root MuiFormControlLabel-label denhaag-form-control-label__label MuiTypography-body1"
-          >Checkbox</span
-        ></label
-      >
-      <p class="utrecht-paragraph utrecht-paragraph--distanced">
-        Helper/Error text
-      </p>
-    </div>
+    <span class="denhaag-checkbox"
+      ><input type="checkbox" class="denhaag-checkbox__input" disabled=""/><span
+        class="denhaag-checkbox__icon"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+          class="denhaag-icon"
+          focusable="false"
+          aria-hidden="true"
+          shape-rendering="auto"
+        >
+          <path
+            d="M20.664 5.253a1 1 0 01.083 1.411l-10.666 12a1 1 0 01-1.495 0l-5.333-6a1 1 0 011.494-1.328l4.586 5.159 9.92-11.16a1 1 0 011.411-.082z"
+            stroke="currentColor"
+            stroke-width="1.75"
+          ></path></svg></span
+    ></span>
   </div>
   <div style="padding: 10px;">
-    <div class="denhaag-form-group denhaag-form-group--error">
-      <h5 class="utrecht-heading-5 utrecht-heading-5--distanced">Label</h5>
-      <label class="MuiFormControlLabel-root denhaag-form-control-label"
-        ><span
-          class="denhaag-checkbox denhaag-checkbox--error denhaag-checkbox--checked"
-          ><input type="checkbox" class="denhaag-checkbox__input" checked=""/>
-          <div class="denhaag-checkbox__icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="1em"
-              height="1em"
-              viewBox="0 0 24 24"
-              class="denhaag-icon"
-              focusable="false"
-              aria-hidden="true"
-              shape-rendering="auto"
-            >
-              <rect
-                x="-9.5"
-                y="-9.5"
-                rx="0.5"
-                ry="0.5"
-                width="19"
-                height="19"
-                stroke="currentColor"
-                fill="currentColor"
-                transform="translate(12 12)"
-              ></rect>
-              <path
-                d="M17.663 8l-7.333 7.333L6.997 12"
-                stroke-linecap="round"
-                stroke="#fff"
-                stroke-width="2"
-                stroke-linejoin="round"
-                fill="none"
-              ></path>
-            </svg></div></span
-        ><span
-          class="MuiTypography-root MuiFormControlLabel-label denhaag-form-control-label__label MuiTypography-body1"
-          >Checkbox</span
-        ></label
-      ><label
-        class="MuiFormControlLabel-root denhaag-form-control-label Mui-disabled denhaag-form-control-label--disabled"
-        ><span class="denhaag-checkbox denhaag-checkbox--disabled"
-          ><input disabled="" type="checkbox" class="denhaag-checkbox__input"/>
-          <div class="denhaag-checkbox__icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="1em"
-              height="1em"
-              viewBox="0 0 24 24"
-              class="denhaag-icon"
-              focusable="false"
-              aria-hidden="true"
-              shape-rendering="auto"
-            >
-              <rect
-                x="-9.5"
-                y="-9.5"
-                rx="0.5"
-                ry="0.5"
-                width="19"
-                height="19"
-                stroke="currentColor"
-                fill="#fff"
-                transform="translate(12 12)"
-              ></rect>
-            </svg></div></span
-        ><span
-          class="MuiTypography-root MuiFormControlLabel-label denhaag-form-control-label__label Mui-disabled denhaag-form-control-label--disabled MuiTypography-body1"
-          >Checkbox</span
-        ></label
-      ><label class="MuiFormControlLabel-root denhaag-form-control-label"
-        ><span class="denhaag-checkbox denhaag-checkbox--checked"
-          ><input type="checkbox" class="denhaag-checkbox__input" checked=""/>
-          <div class="denhaag-checkbox__icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="1em"
-              height="1em"
-              viewBox="0 0 24 24"
-              class="denhaag-icon"
-              focusable="false"
-              aria-hidden="true"
-              shape-rendering="auto"
-            >
-              <rect
-                x="-9.5"
-                y="-9.5"
-                rx="0.5"
-                ry="0.5"
-                width="19"
-                height="19"
-                stroke="currentColor"
-                fill="currentColor"
-                transform="translate(12 12)"
-              ></rect>
-              <path
-                d="M17.663 8l-7.333 7.333L6.997 12"
-                stroke-linecap="round"
-                stroke="#fff"
-                stroke-width="2"
-                stroke-linejoin="round"
-                fill="none"
-              ></path>
-            </svg></div></span
-        ><span
-          class="MuiTypography-root MuiFormControlLabel-label denhaag-form-control-label__label MuiTypography-body1"
-          >Checkbox</span
-        ></label
-      ><label class="MuiFormControlLabel-root denhaag-form-control-label"
-        ><span class="denhaag-checkbox"
-          ><input type="checkbox" class="denhaag-checkbox__input"/>
-          <div class="denhaag-checkbox__icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="1em"
-              height="1em"
-              viewBox="0 0 24 24"
-              class="denhaag-icon"
-              focusable="false"
-              aria-hidden="true"
-              shape-rendering="auto"
-            >
-              <rect
-                x="-9.5"
-                y="-9.5"
-                rx="0.5"
-                ry="0.5"
-                width="19"
-                height="19"
-                stroke="currentColor"
-                fill="#fff"
-                transform="translate(12 12)"
-              ></rect>
-            </svg></div></span
-        ><span
-          class="MuiTypography-root MuiFormControlLabel-label denhaag-form-control-label__label MuiTypography-body1"
-          >Checkbox</span
-        ></label
-      >
-      <p class="utrecht-paragraph utrecht-paragraph--distanced">
-        Helper/Error text
-      </p>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Checkbox tests > a11y and snapshots #2`] = `
-<div id="wrapper" style="display: inline-block;">
-  <div style="padding: 10px;">
-    <label class="MuiFormControlLabel-root denhaag-form-control-label"
-      ><span class="denhaag-checkbox denhaag-checkbox--checked"
-        ><input type="checkbox" class="denhaag-checkbox__input" checked=""/>
-        <div class="denhaag-checkbox__icon">
-          <svg
-            width="1em"
-            height="1em"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class="denhaag-icon"
-            focusable="false"
-            aria-hidden="true"
-            shape-rendering="auto"
-          >
-            <path
-              d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-              fill="currentColor"
-            ></path>
-            <path
-              d="M21.894 11.553C19.736 7.236 15.904 5 12 5c-3.903 0-7.736 2.236-9.894 6.553a1 1 0 000 .894C4.264 16.764 8.096 19 12 19c3.903 0 7.736-2.236 9.894-6.553a1 1 0 000-.894zM12 17c-2.969 0-6.002-1.62-7.87-5C5.998 8.62 9.03 7 12 7c2.969 0 6.002 1.62 7.87 5-1.868 3.38-4.901 5-7.87 5z"
-              fill="currentColor"
-            ></path>
-          </svg></div></span
-      ><span
-        class="MuiTypography-root MuiFormControlLabel-label denhaag-form-control-label__label MuiTypography-body1"
-        >Checkbox</span
-      ></label
-    >
-  </div>
-</div>
-`;
-
-exports[`Checkbox tests > a11y and snapshots #3`] = `
-<div id="wrapper" style="display: inline-block;">
-  <div style="padding: 10px;">
-    <label class="MuiFormControlLabel-root denhaag-form-control-label"
-      ><span
-        class="denhaag-checkbox denhaag-checkbox--error denhaag-checkbox--checked"
-        ><input type="checkbox" class="denhaag-checkbox__input" checked=""/>
-        <div class="denhaag-checkbox__icon">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1em"
-            height="1em"
-            viewBox="0 0 24 24"
-            class="denhaag-icon"
-            focusable="false"
-            aria-hidden="true"
-            shape-rendering="auto"
-          >
-            <rect
-              x="-9.5"
-              y="-9.5"
-              rx="0.5"
-              ry="0.5"
-              width="19"
-              height="19"
-              stroke="currentColor"
-              fill="currentColor"
-              transform="translate(12 12)"
-            ></rect>
-            <path
-              d="M17.663 8l-7.333 7.333L6.997 12"
-              stroke-linecap="round"
-              stroke="#fff"
-              stroke-width="2"
-              stroke-linejoin="round"
-              fill="none"
-            ></path>
-          </svg></div></span
-      ><span
-        class="MuiTypography-root MuiFormControlLabel-label denhaag-form-control-label__label MuiTypography-body1"
-        >Checkbox</span
-      ></label
-    >
+    <span class="denhaag-checkbox"
+      ><input
+        type="checkbox"
+        class="denhaag-checkbox__input"
+        uncheckedicon="[object Object]"/><span class="denhaag-checkbox__icon"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+          class="denhaag-icon"
+          focusable="false"
+          aria-hidden="true"
+          shape-rendering="auto"
+        >
+          <path
+            d="M20.664 5.253a1 1 0 01.083 1.411l-10.666 12a1 1 0 01-1.495 0l-5.333-6a1 1 0 011.494-1.328l4.586 5.159 9.92-11.16a1 1 0 011.411-.082z"
+            stroke="currentColor"
+            stroke-width="1.75"
+          ></path></svg></span
+    ></span>
   </div>
 </div>
 `;

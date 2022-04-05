@@ -16,6 +16,7 @@ import '../../../components/CtaDownload/src/index.scss';
 import '../../../components/CtaEvent/src/index.scss';
 import '../../../components/CtaLink/src/index.scss';
 import '../../../components/CtaImageContent/src/index.scss';
+import '../../../components/Datepicker/src/index.scss';
 import '../../../components/DescriptionList/src/index.scss';
 import '../../../components/Divider/src/index.scss';
 import '../../../components/DotIndicator/src/index.scss';

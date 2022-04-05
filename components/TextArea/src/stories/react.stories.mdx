@@ -2,7 +2,7 @@ import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/addon-do
 import { TextArea } from "../index";
 import pkg from "../../package.json";
 import readme from "../../README.md";
-import FormField from "@gemeente-denhaag/form-field";
+import { FormField, FormFieldLabel, FormFieldInput, FormFieldDescription } from "@gemeente-denhaag/form-field";
 
 <Meta
   title="React/Input/Text Area"
@@ -75,11 +75,15 @@ Not yet documented. Please refer to the source code.
     name="With label"
   >
     {(args) => (
-      <FormField
-        input={<TextArea {...args} />}
-        label={"Label"}
-        description={"A description providing more information about the input."}
-      />
+      <FormField>
+        <FormFieldLabel htmlFor="textarea-1">Label</FormFieldLabel>
+        <FormFieldInput>
+          <TextArea id="textarea-1" aria-describedby="description-1" {...args} />
+        </FormFieldInput>
+        <FormFieldDescription id="description-1">
+          A description providing more information about the input.
+        </FormFieldDescription>
+      </FormField>
     )}
   </Story>
 </Canvas>
@@ -95,12 +99,15 @@ Not yet documented. Please refer to the source code.
     name="Invalid with label"
   >
     {(args) => (
-      <FormField
-        error={args.invalid}
-        input={<TextArea {...args} />}
-        label={"Label"}
-        description={"A description providing more information about the input."}
-      />
+      <FormField error={true}>
+        <FormFieldLabel htmlFor="textarea-1">Label</FormFieldLabel>
+        <FormFieldInput>
+          <TextArea id="textarea-1" aria-describedby="description-1" {...args} />
+        </FormFieldInput>
+        <FormFieldDescription id="description-1">
+          A description providing more information about the input.
+        </FormFieldDescription>
+      </FormField>
     )}
   </Story>
 </Canvas>

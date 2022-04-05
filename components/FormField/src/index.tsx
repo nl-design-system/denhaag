@@ -1,34 +1,86 @@
-import React, { HTMLAttributes } from 'react';
+import React, { HTMLAttributes, LabelHTMLAttributes, FieldsetHTMLAttributes } from 'react';
 import './index.scss';
 import clsx from 'clsx';
 
-export interface FormFieldProps extends HTMLAttributes<HTMLDivElement> {
-  label: string;
-  input: React.ReactElement;
-  error?: boolean;
-  description?: string;
-}
+export interface FormFieldLabelProps extends LabelHTMLAttributes<HTMLLabelElement> {}
 
-export const FormField: React.FC<FormFieldProps> = ({ label, input, error, description, ...props }: FormFieldProps) => {
-  const className = clsx('denhaag-form-field', { 'denhaag-form-field--error': error }, props.className);
-  const Input = input.type;
-  const id = input.props.id || `input-${Math.floor(Math.random() * 10000)}`;
-  const describedBy = input.props['aria-describedby'] || `description-${Math.floor(Math.random() * 10000)}`;
+export const FormFieldLabel: React.FC<FormFieldLabelProps> = ({ className, ...props }: FormFieldLabelProps) => {
+  const classes = clsx('denhaag-form-field__label', className);
 
   return (
-    <div {...props} className={className}>
-      <label htmlFor={id} className="denhaag-form-field__label">
-        {label}
-      </label>
-      <div className="denhaag-form-field__input">
-        <Input id={id} aria-describedby={describedBy} {...input.props} />
-      </div>
-      {description && (
-        <span id={describedBy} className="denhaag-form-field__description">
-          {description}
-        </span>
-      )}
+    <label className={classes} {...props}>
+      {props.children}
+    </label>
+  );
+};
+
+export interface FormFieldInputProps extends HTMLAttributes<HTMLDivElement> {}
+
+export const FormFieldInput: React.FC<FormFieldInputProps> = ({ className, ...props }: FormFieldInputProps) => {
+  const classes = clsx('denhaag-form-field__input', className);
+
+  return (
+    <div className={classes} {...props}>
+      {props.children}
     </div>
+  );
+};
+
+export interface FormFieldDescriptionProps extends HTMLAttributes<HTMLSpanElement> {}
+
+export const FormFieldDescription: React.FC<FormFieldDescriptionProps> = ({
+  className,
+  ...props
+}: FormFieldDescriptionProps) => {
+  const classes = clsx('denhaag-form-field__description', className);
+
+  return (
+    <span className={classes} {...props}>
+      {props.children}
+    </span>
+  );
+};
+
+export interface FormFieldProps extends HTMLAttributes<HTMLDivElement> {
+  error?: boolean;
+}
+
+export const FormField: React.FC<FormFieldProps> = ({ className, error, ...props }: FormFieldProps) => {
+  const classes = clsx('denhaag-form-field', { 'denhaag-form-field--error': error }, className);
+
+  return (
+    <div className={classes} {...props}>
+      {props.children}
+    </div>
+  );
+};
+
+export interface FormFieldGroupProps extends FieldsetHTMLAttributes<HTMLFieldSetElement> {
+  error?: boolean;
+}
+
+export const FormFieldGroup: React.FC<FormFieldGroupProps> = ({ className, error, ...props }: FormFieldGroupProps) => {
+  const classes = clsx('denhaag-form-field', { 'denhaag-form-field--error': error }, className);
+
+  return (
+    <fieldset className={classes} {...props}>
+      {props.children}
+    </fieldset>
+  );
+};
+
+export interface FormFieldGroupLabelProps extends HTMLAttributes<HTMLLegendElement> {}
+
+export const FormFieldGroupLabel: React.FC<FormFieldGroupLabelProps> = ({
+  className,
+  ...props
+}: FormFieldGroupLabelProps) => {
+  const classes = clsx('denhaag-form-field__label', className);
+
+  return (
+    <legend className={classes} {...props}>
+      {props.children}
+    </legend>
   );
 };
 
