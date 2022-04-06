@@ -39,6 +39,7 @@
   cursor: pointer;
   display: var(--denhaag-anchor-collapse-summary-display);
   font-family: var(--denhaag-anchor-collapse-summary-font-family, inherit);
+  font-size: var(--denhaag-anchor-collapse-summary-font-size, inherit);
   font-weight: var(--denhaag-anchor-collapse-summary-font-weight, normal);
   padding-block-end: var(--denhaag-anchor-collapse-summary-padding-block);
   padding-block-start: var(--denhaag-anchor-collapse-summary-padding-block);
