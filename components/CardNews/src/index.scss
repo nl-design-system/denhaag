@@ -1,5 +1,27 @@
 .denhaag-card-news {
+  --denhaag-card-news-icon-display: none;
+  --denhaag-card-news-paragraph-display: none;
+
+  display: flex;
   text-decoration: var(--denhaag-card-news-text-decoration);
+
+  @media (min-width: 25.9375rem) {
+    --denhaag-card-news-paragraph-display: block;
+  }
+}
+
+.denhaag-card-news:focus-visible,
+.denhaag-card-news--focus {
+  --denhaag-card-news-figure-box-shadow: none;
+  --denhaag-card-news-icon-display: inline-block;
+
+  outline: var(--denhaag-card-news-figure-outline);
+}
+
+.denhaag-card-news:focus:not(:focus-visible) {
+  --denhaag-card-news-figure-box-shadow: none;
+  --denhaag-card-news-figure-outline: none;
+  --denhaag-card-news-icon-display: inline-block;
 }
 
 .denhaag-card-news__figure {
@@ -22,34 +44,18 @@
   box-shadow: var(--denhaag-card-news-figure-box-shadow);
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
-.denhaag-card-news--focus .denhaag-card-news__figure,
-.denhaag-card-news:focus .denhaag-card-news__figure {
-  box-shadow: none;
-  outline: var(--denhaag-card-news-figure-outline);
-}
-
 .denhaag-card-news__icon .denhaag-icon {
   @media (min-width: 25.9375rem) {
-    display: none;
-  }
-}
-
-.denhaag-card-news--hover .denhaag-icon,
-.denhaag-card-news--focus .denhaag-icon,
-.denhaag-card-news:hover .denhaag-icon,
-.denhaag-card-news:focus .denhaag-icon {
-  @media (min-width: 25.9375rem) {
-    display: inline-block;
+    display: var(--denhaag-card-news-icon-display, none);
   }
 }
 
 .denhaag-card-news__image {
-  width: var(--denhaag-card-news-image-width);
-  height: var(--denhaag-card-news-image-height);
-  object-fit: var(--denhaag-card-news-image-object-fit);
   aspect-ratio: var(--denhaag-card-news-image-aspect-ratio);
+  height: var(--denhaag-card-news-image-height);
   margin-block-end: var(--denhaag-card-news-image-margin-block-end);
+  object-fit: var(--denhaag-card-news-image-object-fit);
+  width: var(--denhaag-card-news-image-width);
 }
 
 .denhaag-card-news__figcaption {
@@ -66,12 +72,8 @@
   margin-block-end: var(--denhaag-card-news-text-margin-block-end);
 }
 
-.denhaag-card-news__figcaption .utrecht-paragraph {
-  display: none;
-
-  @media (min-width: 25.9375rem) {
-    display: block;
-  }
+.denhaag-card-news .utrecht-paragraph {
+  display: var(--denhaag-card-news-paragraph-display, none);
 }
 
 .denhaag-card-news__icon {
