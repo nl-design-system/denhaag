@@ -44,7 +44,7 @@
             "value": "{denhaag.typography.sans-serif}"
           },
           "weight": {
-            "value": "{denhaag.typography.weight.regular}"
+            "value": "{denhaag.typography.weight.bold}"
           }
         },
         "padding": {
