@@ -43,8 +43,11 @@
           "family": {
             "value": "{denhaag.typography.sans-serif}"
           },
+          "size": {
+            "value": "{denhaag.typography.scale.lg}"
+          },
           "weight": {
-            "value": "{denhaag.typography.weight.regular}"
+            "value": "{denhaag.typography.weight.bold}"
           }
         },
         "padding": {
