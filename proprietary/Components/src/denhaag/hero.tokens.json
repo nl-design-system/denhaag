@@ -342,36 +342,65 @@
         }
       },
       "theme-page": {
-        "height": { "value": "18rem" },
-        "min-height": { "value": "22.8125rem" },
+        "height": { "value": "95vw" },
+        "height-s": { "value": "85vw" },
+        "min-height": { "value": "18rem" },
         "min-height-s": { "value": "26.5625rem" },
-        "overflow": { "value": "unset" },
+        "max-height": { "value": "32.5rem" },
+        "overflow": { "value": "initial" },
+        "image-pattern-container": {
+          "position": { "value": "absolute" },
+          "size": { "value": "100%" },
+          "overflow": { "value": "hidden" }
+        },
+        "image-pattern": {
+          "width": { "value": "100%" },
+          "height": { "value": "auto" }
+        },
         "container": {
           "display": { "value": "block" },
-          "width": { "value": "60%" },
+          "size": { "value": "100%" },
           "width-s": { "value": "70%" },
           "max-width": { "value": "64.375rem" },
-          "padding-block-start": { "value": "2.25rem" },
-          "padding-inline": { "value": "{denhaag.space.inline.xl}" }
+          "padding-block-start": { "value": "{denhaag.space.block.2xl}" },
+          "padding-block-start-s": { "value": "8.85vw" },
+          "padding-block-start-m": { "value": "10.15vw" },
+          "padding-block-start-l": { "value": "8.5625rem" },
+          "padding-inline": { "value": "{denhaag.space.inline.xl}" },
+          "margin-inline": { "value": "0" }
         },
         "content": {
           "background-color": { "value": "{denhaag.color.white}" },
+          "box-shadow": { "value": "0px 1px 0px {denhaag.color.grey.2}" },
           "text-align": { "value": "center" },
-          "padding-block": { "value": "3.75rem" },
+          "padding-block": { "value": "4rem" },
           "padding-inline": { "value": "{denhaag.space.inline.md}" },
           "padding-inline-s": { "value": "3.75rem" },
           "bottom": { "value": "0" },
           "bottom-s": { "value": "-2rem" },
-          "min-height": { "value": "66%" },
+          "width": { "value": "auto" },
+          "width-m": { "value": "70%" },
+          "width-l": { "value": "64.375rem" },
+          "min-height": { "value": "auto" },
+          "min-height-s": { "value": "68%" },
+          "height": { "value": "52%" },
+          "height-s": { "value": "68%" },
+          "height-m": { "value": "70%" },
+          "max-height": { "value": "29.625rem" },
+          "max-height-m": { "value": "18.5rem" },
           "position": { "value": "absolute" },
-          "height": { "value": "52%" }
+          "margin-block": { "value": "0" },
+          "margin-inline": { "value": "auto" }
         },
         "title": {
-          "padding-block-end": { "value": "{denhaag.space.block.md}" }
+          "padding-block-end": { "value": "{denhaag.space.block.md}" },
+          "font-size-s": { "value": "8.9vw" },
+          "font-size-m": { "value": "3rem" }
         },
         "text": {
           "font-size": { "value": "{denhaag.typography.scale.lg.font-size}" },
-          "font-size-s": { "value": "{denhaag.typography.scale.xl.font-size}" },
+          "font-size-s": { "value": "5.6vw" },
+          "font-size-m": { "value": "1.5rem" },
           "padding-block-end": { "value": "{denhaag.space.block.2xl}" },
           "line-height": { "value": "{denhaag.typography.scale.s.line-height}" }
         }
