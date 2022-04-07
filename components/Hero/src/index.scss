@@ -1,3 +1,12 @@
+/* for testing purpose only */
+
+.utrecht-document--surface {
+  height: 700px;
+  background-color: #e0e0e0;
+}
+
+/* for testing purpose only */
+
 .denhaag-hero {
   --denhaag-hero-image-display: none;
 
@@ -42,17 +51,21 @@
 .denhaag-hero--theme-page {
   --denhaag-hero-background-color: var(--denhaag-button-primary-action-hover-background-color);
 
+  min-height: var(--denhaag-hero-theme-page-min-height);
   height: var(--denhaag-hero-theme-page-height);
+  max-height: var(--denhaag-hero-theme-page-max-height);
   overflow: var(--denhaag-hero-theme-page-overflow);
+}
+
+.denhaag-hero--theme-page .denhaag-hero__image-pattern-container {
+  position: var(--denhaag-hero-theme-page-image-pattern-container-position);
+  height: var(--denhaag-hero-theme-page-image-pattern-container-size);
+  width: var(--denhaag-hero-theme-page-image-pattern-container-size);
+  overflow: var(--denhaag-hero-theme-page-image-pattern-container-overflow);
 }
 
 .denhaag-hero__image-pattern {
   position: absolute;
-}
-
-.denhaag-hero--theme-page .denhaag-hero__image-pattern {
-  height: 100%;
-  width: auto;
 }
 
 .denhaag-hero__container {
@@ -72,8 +85,10 @@
 }
 
 .denhaag-hero--theme-page .denhaag-hero__container {
+  width: var(--denhaag-hero-theme-page-container-size);
+  max-width: var(--denhaag-hero-theme-page-container-size);
+  height: var(--denhaag-hero-theme-page-container-size);
   display: var(--denhaag-hero-theme-page-container-display);
-  max-width: var(--denhaag-hero-theme-page-container-max-width);
   padding-block-start: var(--denhaag-hero-theme-page-container-padding-block-start);
   padding-inline-start: var(--denhaag-hero-theme-page-container-padding-inline);
   padding-inline-end: var(--denhaag-hero-theme-page-container-padding-inline);
@@ -98,8 +113,14 @@
   padding-block-end: var(--denhaag-hero-theme-page-content-padding-block);
   padding-inline-start: var(--denhaag-hero-theme-page-content-padding-inline);
   padding-inline-end: var(--denhaag-hero-theme-page-content-padding-inline);
-  bottom: var(--denhaag-hero-theme-page-content-bottom);
   min-height: var(--denhaag-hero-theme-page-content-min-height);
+  max-height: var(--denhaag-hero-theme-page-content-max-height);
+  width: var(--denhaag-hero-theme-page-content-width);
+  box-shadow: var(--denhaag-hero-theme-page-content-box-shadow);
+  margin-block-start: var(--denhaag-hero-theme-page-content-margin-block);
+  margin-block-end: var(--denhaag-hero-theme-page-content-margin-block);
+  margin-inline-start: var(--denhaag-hero-theme-page-content-margin-inline);
+  margin-inline-end: var(--denhaag-hero-theme-page-content-margin-inline);
 }
 
 .denhaag-hero--theme-page .denhaag-hero__text {
@@ -171,6 +192,43 @@
     --denhaag-hero-content-column-start: var(--denhaag-hero-home-content-column-start-xs, 0);
     --denhaag-hero-content-column-end: var(--denhaag-hero-home-content-column-end-xs, 12);
   }
+
+  .denhaag-hero--theme-page .denhaag-hero__container {
+    padding-block-start: var(--denhaag-hero-theme-page-container-padding-block-start-s);
+  }
+
+  .denhaag-hero--theme-page .denhaag-hero__content {
+    min-height: var(--denhaag-hero-theme-page-content-min-height-s);
+    height: var(--denhaag-hero-theme-page-content-height-s);
+  }
+
+  .denhaag-hero--theme-page .denhaag-hero__title {
+    font-size: var(--denhaag-hero-theme-page-title-font-size-s);
+  }
+
+  .denhaag-hero--theme-page .denhaag-hero__text {
+    font-size: var(--denhaag-hero-theme-page-text-font-size-s);
+  }
+}
+
+@media (min-width: 430px) {
+  .denhaag-hero--theme-page {
+    height: var(--denhaag-hero-theme-page-height-s);
+  }
+
+  .denhaag-hero--theme-page .denhaag-hero__text {
+    font-size: var(--denhaag-hero-theme-page-text-font-size-m);
+  }
+}
+
+@media (min-width: 540px) {
+  .denhaag-hero--theme-page .denhaag-hero__title {
+    font-size: var(--denhaag-hero-theme-page-title-font-size-m);
+  }
+
+  .denhaag-hero--theme-page .denhaag-hero__content {
+    height: var(--denhaag-hero-theme-page-content-height-m);
+  }
 }
 
 @media (min-width: 768px) {
@@ -189,24 +247,17 @@
     --denhaag-hero-min-height: var(--denhaag-hero-routing-min-height-s);
   }
 
-  .denhaag-hero--theme-page {
-    --denhaag-hero-min-height: var(--denhaag-hero-theme-page-min-height);
-  }
-
   .denhaag-hero--theme-page .denhaag-hero__container {
-    width: var(--denhaag-hero-theme-page-container-width-s);
+    padding-block-start: var(--denhaag-hero-theme-page-container-padding-block-start-m);
+    margin-inline-start: var(--denhaag-hero-theme-page-container-margin-inline);
+    margin-inline-end: var(--denhaag-hero-theme-page-container-margin-inline);
   }
 
   .denhaag-hero--theme-page .denhaag-hero__content {
-    position: var(--denhaag-hero-theme-page-content-position);
-    height: var(--denhaag-hero-theme-page-content-height);
-    bottom: var(--denhaag-hero-theme-page-content-bottom-s);
     padding-inline-start: var(--denhaag-hero-theme-page-content-padding-inline-s);
     padding-inline-end: var(--denhaag-hero-theme-page-content-padding-inline-s);
-  }
-
-  .denhaag-hero--theme-page .denhaag-hero__text {
-    font-size: var(--denhaag-hero-theme-page-text-font-size-s);
+    width: var(--denhaag-hero-theme-page-content-width-m);
+    max-height: var(--denhaag-hero-theme-page-content-max-height-m);
   }
 
   .denhaag-hero--home {
@@ -244,10 +295,6 @@
     --denhaag-hero-image-width: var(--denhaag-hero-home-image-width-m);
     --denhaag-hero-min-height: var(--denhaag-hero-home-min-height-m);
   }
-
-  .denhaag-hero--theme-page {
-    --denhaag-hero-min-height: var(--denhaag-hero-theme-page-min-height-s);
-  }
 }
 
 @media (min-width: 1280px) {
@@ -273,6 +320,12 @@
   }
 }
 
+@media (min-width: 1350px) {
+  .denhaag-hero--theme-page .denhaag-hero__container {
+    padding-block-start: var(--denhaag-hero-theme-page-container-padding-block-start-l);
+  }
+}
+
 @media (min-width: 1768px) {
   .denhaag-hero--routing,
   .denhaag-hero--theme-page {
@@ -293,8 +346,13 @@
     --denhaag-hero-home-shape-right: var(--denhaag-hero-home-shape-right-xl);
   }
 
-  .denhaag-hero--theme-page .denhaag-hero__container {
-    width: var(--denhaag-hero-theme-page-container-width);
+  .denhaag-hero--theme-page .denhaag-hero__image-pattern {
+    width: var(--denhaag-hero-theme-page-image-pattern-width);
+    height: var(--denhaag-hero-theme-page-image-pattern-height);
+  }
+
+  .denhaag-hero--theme-page .denhaag-hero__content {
+    width: var(--denhaag-hero-theme-page-content-width-l);
   }
 }
 
