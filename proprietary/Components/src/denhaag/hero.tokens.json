@@ -343,7 +343,7 @@
       },
       "theme-page": {
         "height": { "value": "95vw" },
-        "height-s": { "value": "85vw" },
+        "height-s": { "value": "95vw" },
         "min-height": { "value": "18rem" },
         "min-height-s": { "value": "26.5625rem" },
         "max-height": { "value": "32.5rem" },
@@ -384,8 +384,7 @@
           "min-height": { "value": "auto" },
           "min-height-s": { "value": "68%" },
           "height": { "value": "52%" },
-          "height-s": { "value": "68%" },
-          "height-m": { "value": "70%" },
+          "height-s": { "value": "70%" },
           "max-height": { "value": "29.625rem" },
           "max-height-m": { "value": "18.5rem" },
           "position": { "value": "absolute" },
@@ -395,12 +394,12 @@
         "title": {
           "padding-block-end": { "value": "{denhaag.space.block.md}" },
           "font-size-s": { "value": "8.9vw" },
-          "font-size-m": { "value": "3rem" }
+          "font-size-m": { "value": "{denhaag.typography.scale.3xl.font-size}" }
         },
         "text": {
           "font-size": { "value": "{denhaag.typography.scale.lg.font-size}" },
           "font-size-s": { "value": "5.6vw" },
-          "font-size-m": { "value": "1.5rem" },
+          "font-size-m": { "value": "{denhaag.typography.scale.xl.font-size}" },
           "padding-block-end": { "value": "{denhaag.space.block.2xl}" },
           "line-height": { "value": "{denhaag.typography.scale.s.line-height}" }
         }
