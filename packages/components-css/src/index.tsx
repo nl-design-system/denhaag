@@ -44,6 +44,7 @@ import '../../../components/Pagination/src/index.scss';
 import '../../../components/PageButtons/src/index.scss';
 import '../../../components/PosttypeLabel/src/index.scss';
 import '../../../components/PublicationDate/src/index.scss';
+import '../../../components/Radio/src/index.scss';
 import '../../../components/Tab/src/styles/tab.scss';
 import '../../../components/Tab/src/styles/tab-panel.scss';
 import '../../../components/Tab/src/styles/tabs.scss';
