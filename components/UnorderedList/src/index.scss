@@ -5,6 +5,17 @@
   @extend .utrecht-unordered-list;
 
   color: var(--denhaag-unordered-list-color);
+  margin-block-start: var(--denhaag-unordered-list-margin-block-start, 0);
+}
+
+.utrecht-paragraph + .denhaag-unordered-list {
+  // 16
+  --denhaag-unordered-list-margin-block-start: var(--denhaag-unordered-list-paragraph-margin-block-start);
+}
+
+.utrecht-paragraph--lead + .denhaag-unordered-list {
+  // 32
+  --denhaag-unordered-list-margin-block-start: var(--denhaag-unordered-list-lead-margin-block-start);
 }
 
 .denhaag-unordered-list li::marker {

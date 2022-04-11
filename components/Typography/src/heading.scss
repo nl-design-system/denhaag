@@ -14,11 +14,17 @@
   font-weight: var(--utrecht-heading-1-font-weight, var(--utrecht-heading-font-weight, bold));
   line-height: var(--utrecht-heading-1-line-height);
   color: var(--utrecht-heading-1-color, var(--utrecht-heading-color, inherit));
+  margin-block-start: var(--utrecht-heading-1-margin-block-start);
+  margin-block-end: var(--utrecht-heading-1-margin-block-end);
 }
 
 .utrecht-heading-1--distanced {
-  margin-block-start: var(--utrecht-heading-1-margin-block-start);
-  margin-block-end: var(--utrecht-heading-1-margin-block-end);
+  --utrecht-heading-1-margin-block-start: var(--utrecht-heading-1-distanced-margin-block-start);
+  --utrecht-heading-1-margin-block-end: var(--utrecht-heading-1-distanced-margin-block-end);
+}
+
+.utrecht-heading-1 + .utrecht-paragraph {
+  --utrecht-paragraph-margin-block-start: calc(var(--utrecht-heading-1-font-size) / 4);
 }
 
 .utrecht-heading-2 {
@@ -30,11 +36,17 @@
   font-weight: var(--utrecht-heading-2-font-weight, var(--utrecht-heading-font-weight, bold));
   line-height: var(--utrecht-heading-2-line-height);
   color: var(--utrecht-heading-2-color, var(--utrecht-heading-color, inherit));
+  margin-block-start: var(--utrecht-heading-2-margin-block-start);
+  margin-block-end: var(--utrecht-heading-2-margin-block-end);
 }
 
 .utrecht-heading-2--distanced {
-  margin-block-start: var(--utrecht-heading-2-margin-block-start);
-  margin-block-end: var(--utrecht-heading-2-margin-block-end);
+  --utrecht-heading-2-margin-block-start: var(--utrecht-heading-2-distanced-margin-block-start);
+  --utrecht-heading-2-margin-block-end: var(--utrecht-heading-2-distanced-margin-block-end);
+}
+
+.utrecht-heading-2 + .utrecht-paragraph {
+  --utrecht-paragraph-margin-block-start: calc(var(--utrecht-heading-2-font-size) / 4);
 }
 
 .utrecht-heading-3 {
@@ -46,11 +58,17 @@
   font-weight: var(--utrecht-heading-3-font-weight, var(--utrecht-heading-font-weight, bold));
   line-height: var(--utrecht-heading-3-line-height);
   color: var(--utrecht-heading-3-color, var(--utrecht-heading-color, inherit));
+  margin-block-start: var(--utrecht-heading-3-margin-block-start);
+  margin-block-end: var(--utrecht-heading-3-margin-block-end);
 }
 
 .utrecht-heading-3--distanced {
-  margin-block-start: var(--utrecht-heading-3-margin-block-start);
-  margin-block-end: var(--utrecht-heading-3-margin-block-end);
+  --utrecht-heading-3-margin-block-start: var(--utrecht-heading-3-distanced-margin-block-start);
+  --utrecht-heading-3-margin-block-end: var(--utrecht-heading-3-distanced-margin-block-end);
+}
+
+.utrecht-heading-3 + .utrecht-paragraph {
+  --utrecht-paragraph-margin-block-start: calc(var(--utrecht-heading-3-font-size) / 4);
 }
 
 .utrecht-heading-4 {
@@ -62,11 +80,17 @@
   font-weight: var(--utrecht-heading-4-font-weight, var(--utrecht-heading-font-weight, bold));
   line-height: var(--utrecht-heading-4-line-height);
   color: var(--utrecht-heading-4-color, var(--utrecht-heading-color, inherit));
+  margin-block-start: var(--utrecht-heading-4-margin-block-start);
+  margin-block-end: var(--utrecht-heading-4-margin-block-end);
 }
 
 .utrecht-heading-4--distanced {
-  margin-block-start: var(--utrecht-heading-4-margin-block-start);
-  margin-block-end: var(--utrecht-heading-4-margin-block-end);
+  --utrecht-heading-4-margin-block-start: var(--utrecht-heading-4-distanced-margin-block-start);
+  --utrecht-heading-4-margin-block-end: var(--utrecht-heading-4-distanced-margin-block-end);
+}
+
+.utrecht-heading-4 + .utrecht-paragraph {
+  --utrecht-paragraph-margin-block-start: calc(var(--utrecht-heading-4-font-size) / 4);
 }
 
 .utrecht-heading-5 {
@@ -78,11 +102,17 @@
   font-weight: var(--utrecht-heading-5-font-weight, var(--utrecht-heading-font-weight, bold));
   line-height: var(--utrecht-heading-5-line-height);
   color: var(--utrecht-heading-5-color, var(--utrecht-heading-color, inherit));
+  margin-block-start: var(--utrecht-heading-5-margin-block-start);
+  margin-block-end: var(--utrecht-heading-5-margin-block-end);
 }
 
 .utrecht-heading-5--distanced {
-  margin-block-start: var(--utrecht-heading-5-margin-block-start);
-  margin-block-end: var(--utrecht-heading-5-margin-block-end);
+  --utrecht-heading-5-margin-block-start: var(--utrecht-heading-5-distanced-margin-block-start);
+  --utrecht-heading-5-margin-block-end: var(--utrecht-heading-5-distanced-margin-block-end);
+}
+
+.utrecht-heading-5 + .utrecht-paragraph {
+  --utrecht-paragraph-margin-block-start: calc(var(--utrecht-heading-5-font-size) / 4);
 }
 
 .utrecht-heading-6 {
@@ -94,9 +124,15 @@
   font-weight: var(--utrecht-heading-6-font-weight, var(--utrecht-heading-font-weight, bold));
   line-height: var(--utrecht-heading-6-line-height);
   color: var(--utrecht-heading-6-color, var(--utrecht-heading-color, inherit));
+  margin-block-start: var(--utrecht-heading-6-margin-block-start);
+  margin-block-end: var(--utrecht-heading-6-margin-block-end);
 }
 
 .utrecht-heading-6--distanced {
-  margin-block-start: var(--utrecht-heading-6-margin-block-start);
-  margin-block-end: var(--utrecht-heading-6-margin-block-end);
+  --utrecht-heading-6-margin-block-start: var(--utrecht-heading-6-distanced-margin-block-start);
+  --utrecht-heading-6-margin-block-end: var(--utrecht-heading-6-distanced-margin-block-end);
+}
+
+.utrecht-heading-6 + .utrecht-paragraph {
+  --utrecht-paragraph-margin-block-start: calc(var(--utrecht-heading-6-font-size) / 4);
 }
