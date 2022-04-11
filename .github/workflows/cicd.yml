@@ -60,7 +60,7 @@ jobs:
           CYPRESS_CICD: true
 
       - name: Save failed test snapshots in artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: failure()
         with:
           name: failed-visual-tests
@@ -84,7 +84,7 @@ jobs:
           git commit -m "build(tests): update test files" && git push || echo "No changes in tests"
 
       - name: Upload storybook
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: storybook
           path: storybook-static
