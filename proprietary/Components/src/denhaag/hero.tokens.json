@@ -393,12 +393,10 @@
         },
         "title": {
           "padding-block-end": { "value": "{denhaag.space.block.md}" },
-          "font-size-s": { "value": "8.9vw" },
           "font-size-m": { "value": "{denhaag.typography.scale.3xl.font-size}" }
         },
         "text": {
           "font-size": { "value": "{denhaag.typography.scale.lg.font-size}" },
-          "font-size-s": { "value": "5.6vw" },
           "font-size-m": { "value": "{denhaag.typography.scale.xl.font-size}" },
           "padding-block-end": { "value": "{denhaag.space.block.2xl}" },
           "line-height": { "value": "{denhaag.typography.scale.s.line-height}" }

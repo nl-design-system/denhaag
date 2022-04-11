@@ -195,14 +195,6 @@
   .denhaag-hero--theme-page .denhaag-hero__content {
     --denhaag-hero-theme-page-content-min-height: var(--denhaag-hero-theme-page-content-min-height-s);
   }
-
-  .denhaag-hero--theme-page .denhaag-hero__title {
-    font-size: var(--denhaag-hero-theme-page-title-font-size-s);
-  }
-
-  .denhaag-hero--theme-page .denhaag-hero__text {
-    --denhaag-hero-theme-page-text-font-size: var(--denhaag-hero-theme-page-text-font-size-s);
-  }
 }
 
 @media (min-width: 430px) {
