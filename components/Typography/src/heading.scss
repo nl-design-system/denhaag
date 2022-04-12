@@ -27,6 +27,10 @@
   --utrecht-paragraph-margin-block-start: calc(var(--utrecht-heading-1-font-size) / 4);
 }
 
+[class^="denhaag-"] + .utrecht-heading-1 {
+  --utrecht-heading-1-margin-block-start: calc(var(--utrecht-heading-1-font-size) * 1.125);
+}
+
 .utrecht-heading-2 {
   font-family: var(
     --utrecht-heading-2-font-family,
@@ -47,6 +51,10 @@
 
 .utrecht-heading-2 + .utrecht-paragraph {
   --utrecht-paragraph-margin-block-start: calc(var(--utrecht-heading-2-font-size) / 4);
+}
+
+[class^="denhaag-"] + .utrecht-heading-2 {
+  --utrecht-heading-2-margin-block-start: calc(var(--utrecht-heading-2-font-size) * 1.125);
 }
 
 .utrecht-heading-3 {
@@ -71,6 +79,10 @@
   --utrecht-paragraph-margin-block-start: calc(var(--utrecht-heading-3-font-size) / 4);
 }
 
+[class^="denhaag-"] + .utrecht-heading-3 {
+  --utrecht-heading-3-margin-block-start: calc(var(--utrecht-heading-3-font-size) * 1.125);
+}
+
 .utrecht-heading-4 {
   font-family: var(
     --utrecht-heading-4-font-family,
@@ -91,6 +103,10 @@
 
 .utrecht-heading-4 + .utrecht-paragraph {
   --utrecht-paragraph-margin-block-start: calc(var(--utrecht-heading-4-font-size) / 4);
+}
+
+[class^="denhaag-"] + .utrecht-heading-4 {
+  --utrecht-heading-4-margin-block-start: calc(var(--utrecht-heading-4-font-size) * 1.125);
 }
 
 .utrecht-heading-5 {
@@ -115,6 +131,10 @@
   --utrecht-paragraph-margin-block-start: calc(var(--utrecht-heading-5-font-size) / 4);
 }
 
+[class^="denhaag-"] + .utrecht-heading-5 {
+  --utrecht-heading-5-margin-block-start: calc(var(--utrecht-heading-5-font-size) * 1.125);
+}
+
 .utrecht-heading-6 {
   font-family: var(
     --utrecht-heading-6-font-family,
@@ -135,4 +155,8 @@
 
 .utrecht-heading-6 + .utrecht-paragraph {
   --utrecht-paragraph-margin-block-start: calc(var(--utrecht-heading-6-font-size) / 4);
+}
+
+[class^="denhaag-"] + .utrecht-heading-6 {
+  --utrecht-heading-6-margin-block-start: calc(var(--utrecht-heading-6-font-size) * 1.125);
 }
