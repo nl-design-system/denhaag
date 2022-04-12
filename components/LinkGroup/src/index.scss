@@ -39,11 +39,19 @@
 }
 
 .denhaag-link-group .denhaag-link--with-icon-start {
+  display: var(--denhaag-link-group-denhaag-link-with-icon-start-display);
   padding-inline-start: var(--denhaag-link-group-denhaag-link-with-icon-start-padding-inline-start);
+  padding-block-start: var(--denhaag-link-group-denhaag-link-with-icon-start-padding-block-start);
+  padding-block-end: var(--denhaag-link-group-denhaag-link-with-icon-start-padding-block-end);
 }
 
 .denhaag-link-group .denhaag-link__icon {
   font-size: var(--denhaag-link-group-denhaag-link-icon-font-size);
+}
+
+.denhaag-link-group .denhaag-link__icon .denhaag-icon {
+  align-self: var(--denhaag-link-group-denhaag-link-icon-denhaag-icon-align-self);
+  padding-block-start: var(--denhaag-link-group-denhaag-link-icon-denhaag-icon-padding-block-start);
 }
 
 .denhaag-link-group--dark .denhaag-link-group__caption {
