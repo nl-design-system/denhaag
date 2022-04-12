@@ -32,7 +32,7 @@
           "value": "{denhaag.typography.scale.base.font-size}"
         },
         "font-weight": {
-          "value": "{denhaag.typography.weight.bold}"
+          "value": "{denhaag.typography.weight.regular}"
         },
         "outline": {
           "value": "{denhaag.focus.border}"
@@ -59,6 +59,9 @@
         "active": {
           "color": {
             "value": "{denhaag.color.green.3}"
+          },
+          "font-weight": {
+            "value": "{denhaag.typography.weight.bold}"
           }
         },
         "focus": {
