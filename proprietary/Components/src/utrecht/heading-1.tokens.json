@@ -7,7 +7,12 @@
       "font-weight": {},
       "line-height": {},
       "margin-block-end": {},
-      "margin-block-start": {}
+      "margin-block-start": {},
+
+      "distanced": {
+        "margin-block-start": { "value": "0" },
+        "margin-block-end": { "value": "0" }
+      }
     }
   }
 }
