@@ -25,7 +25,8 @@
   color: var(--denhaag-anchor-navigation-link-color);
   display: block;
   font-family: var(--denhaag-anchor-navigation-link-font-family);
-  font-size: var(--denhaag-anchor-navigation-link-font-size);
+  font-size: var(--denhaag-anchor-navigation-link-font-size, inherit);
+  font-weight: var(--denhaag-anchor-navigation-link-font-weight);
   line-height: var(--denhaag-anchor-navigation-link-line-height);
   padding-block-end: var(--denhaag-anchor-navigation-link-padding-block);
   padding-block-start: var(--denhaag-anchor-navigation-link-padding-block);
@@ -46,6 +47,7 @@
 .denhaag-anchor-navigation__link--active {
   --denhaag-anchor-navigation-link-color: var(--denhaag-anchor-navigation-link-active-color);
   --denhaag-anchor-navigation-link-background-color: var(--denhaag-anchor-navigation-link-active-color);
+  --denhaag-anchor-navigation-link-font-weight: var(--denhaag-anchor-navigation-link-active-font-weight);
 }
 
 .denhaag-anchor-navigation__link:hover,
