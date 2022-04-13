@@ -24,6 +24,7 @@ import '../../../components/EventDate/src/index.scss';
 import '../../../components/FormField/src/index.scss';
 import '../../../components/FormControlLabel/src/index.scss';
 import '../../../components/FormGroup/src/index.scss';
+import '../../../components/Hero/src/index.scss';
 import '../../../components/IconButton/src/index.scss';
 import '../../../components/Icons/src/index.scss';
 import '../../../components/Image/src/index.scss';
