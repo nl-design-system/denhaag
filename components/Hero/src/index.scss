@@ -24,7 +24,6 @@
 }
 
 .denhaag-hero--home {
-  --denhaag-hero-background-color: var(--denhaag-hero-home-background-color, inherit);
   --denhaag-hero-container-gutter: var(--denhaag-hero-home-container-gutter);
   --denhaag-hero-container-max-width: var(--denhaag-hero-home-container-max-width);
   --denhaag-hero-content-align-self: var(--denhaag-hero-home-content-align-self);
@@ -33,6 +32,9 @@
   --denhaag-hero-min-height: var(--denhaag-hero-home-min-height);
   --denhaag-hero-title-margin-block-end: var(--denhaag-hero-home-title-margin-block-end);
   --denhaag-hero-title-margin-block-start: var(--denhaag-hero-home-title-margin-block-start);
+  --denhaag-hero-color: var(--denhaag-hero-home-title-color);
+  --utrecht-heading-1-font-weight: var(--denhaag-hero-home-title-weight);
+  --utrecht-heading-1-line-height: var(--denhaag-hero-home-title-line-height);
 
   background: linear-gradient(59deg, var(--denhaag-color-green-3) 30%, transparent 30%),
     linear-gradient(159deg, var(--denhaag-color-green-4) 70%, var(--denhaag-color-green-2) 70%);
@@ -164,8 +166,9 @@
   margin-block-start: var(--denhaag-hero-title-margin-block-start);
 
   .denhaag-hero--home & {
-    --utrecht-heading-1-color: var(--denhaag-hero-home-title-color);
-    --utrecht-heading-1-font-weight: var(--denhaag-hero-home-title-weight);
+    strong {
+      display: block;
+    }
   }
 }
 

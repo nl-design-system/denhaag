@@ -22,7 +22,7 @@
           "value": "28rem"
         },
         "min-height-m": {
-          "value": "30.125rem"
+          "value": "30rem"
         },
         "container": {
           "gutter": {
@@ -71,7 +71,7 @@
           },
           "padding": {
             "block": {
-              "value": "{denhaag.space.block.xl}"
+              "value": "5.75rem"
             },
             "block-s": {
               "value": "{denhaag.space.block.3xl}"
@@ -94,10 +94,10 @@
               "value": 0
             },
             "start-xl": {
-              "value": 3
+              "value": 1
             },
             "start-xxl": {
-              "value": 3
+              "value": 1
             },
             "end": {
               "value": 12
@@ -106,25 +106,25 @@
               "value": 12
             },
             "end-s": {
-              "value": 8
-            },
-            "end-m": {
-              "value": 8
-            },
-            "end-l": {
               "value": 7
             },
+            "end-m": {
+              "value": 6
+            },
+            "end-l": {
+              "value": 5
+            },
             "end-xl": {
-              "value": 9
+              "value": 4
             },
             "end-xxl": {
-              "value": 9
+              "value": 4
             }
           }
         },
         "image": {
           "path": {
-            "value": "6rem"
+            "value": "14.0625rem"
           },
           "width-s": {
             "value": "16.875rem"
@@ -140,14 +140,17 @@
           }
         },
         "title": {
-          "font-size-xs": {
-            "value": "{denhaag.typography.scale.2xl.font-size}"
-          },
           "color": {
             "value": "{denhaag.color.white}"
           },
+          "line-height": {
+            "value": "{denhaag.typography.scale.s.line-height}"
+          },
+          "font-size-xs": {
+            "value": "{denhaag.typography.scale.2xl.font-size}"
+          },
           "weight": {
-            "value": "500"
+            "value": "{denhaag.typography.weight.regular}"
           },
           "margin": {
             "block": {
