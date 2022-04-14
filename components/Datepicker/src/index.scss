@@ -248,7 +248,7 @@
 }
 
 .denhaag-datepicker__calendar-table {
-  margin-block-start: calc(var(--denhaag-datepicker-calendar-table-border-spacing) * -1);
+  margin-block-start: calc(-1 * var(--denhaag-datepicker-calendar-table-border-spacing));
   border-spacing: var(--denhaag-datepicker-calendar-table-border-spacing);
   border-collapse: separate;
 }
