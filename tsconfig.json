@@ -95,9 +95,6 @@
       "path": "components/Typography"
     },
     {
-      "path": "packages/components-css"
-    },
-    {
       "path": "packages/components-react"
     },
     {
