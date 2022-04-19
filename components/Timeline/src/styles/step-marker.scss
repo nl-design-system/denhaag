@@ -1,0 +1,28 @@
+.denhaag-timeline__step-marker {
+  color: var(--denhaag-timeline-step-marker-color);
+  height: var(--denhaag-timeline-step-marker-size);
+  width: var(--denhaag-timeline-step-marker-size);
+  padding-inline-end: var(--denhaag-timeline-step-marker-padding);
+  margin-block-start: var(--denhaag-timeline-step-marker-margin);
+  margin-block-end: var(--denhaag-timeline-step-marker-margin);
+}
+
+.denhaag-timeline__step-marker--active {
+  color: var(--denhaag-timeline-step-marker-active-color);
+}
+
+.denhaag-timeline__step-marker--completed {
+  color: var(--denhaag-timeline-step-marker-completed-color);
+}
+
+.denhaag-timeline__step-marker--disabled {
+  color: var(--denhaag-timeline-step-marker-disabled-color);
+}
+
+.denhaag-timeline__step-marker-text {
+  font-size: var(--denhaag-timeline-step-marker-text-font-size);
+}
+
+.denhaag-timeline__step-marker-text--active {
+  fill: var(--denhaag-timeline-step-marker-text-active-color);
+}

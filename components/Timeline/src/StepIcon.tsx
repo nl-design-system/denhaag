@@ -23,8 +23,8 @@ export const StepIcon: React.FC<StepIconProps> = ({
   disabled = false,
   id = undefined,
 }: StepIconProps) => {
-  const textClasses = clsx('denhaag-timeline__step-icon-text', {
-    'denhaag-timeline__step-icon-text--active': active,
+  const textClasses = clsx('denhaag-timeline__step-marker-text', {
+    'denhaag-timeline__step-marker-text--active': active,
   });
 
   // Exported from https://www.figma.com/file/JpoY3waVoQGlLQzQXTL9nn/Design-System-Gemeente-Den-Haag?node-id=1908%3A9407
@@ -37,15 +37,15 @@ export const StepIcon: React.FC<StepIconProps> = ({
     strokeWidth: active ? 0 : 1.5,
   };
 
-  const completedClassName = clsx('denhaag-timeline__step-icon', 'denhaag-timeline__step-icon--completed');
+  const completedClassName = clsx('denhaag-timeline__step-marker', 'denhaag-timeline__step-marker--completed');
 
   if (completed) {
     return <CheckCircleIcon useDefaultClass={false} className={completedClassName} />;
   }
 
-  const className = clsx('denhaag-timeline__step-icon', {
-    'denhaag-timeline__step-icon--active': active,
-    'denhaag-timeline__step-icon--disabled': disabled,
+  const className = clsx('denhaag-timeline__step-marker', {
+    'denhaag-timeline__step-marker--active': active,
+    'denhaag-timeline__step-marker--disabled': disabled,
   });
 
   return (
