@@ -1,6 +1,6 @@
-import BaseProps from '@gemeente-denhaag/baseprops';
+import { HTMLAttributes } from 'react';
 
-export interface StepComponentProps extends Omit<BaseProps, 'classes'> {
+export interface StepComponentProps extends HTMLAttributes<HTMLElement> {
   /**
    * Sets the step as active.
    */
