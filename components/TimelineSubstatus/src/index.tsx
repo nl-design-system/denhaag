@@ -11,7 +11,7 @@ import { SubStepHeading } from './SubStepHeading';
 
 import './index.scss';
 
-interface ProcessStepsProps extends StepListProps {}
+export interface ProcessStepsProps extends StepListProps {}
 
 /**
  * The `Timeline` displays a progress through a sequence by breaking it up into
