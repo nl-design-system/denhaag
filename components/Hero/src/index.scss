@@ -59,6 +59,9 @@
           var(--denhaag-hero-theme-page-image-start)
       ) + var(--denhaag-hero-image-path, 0)
   );
+  --denhaag-hero-theme-page-content-padding-inline: calc(
+    (var(--denhaag-hero-container-max-width) / var(--denhaag-hero-columns, 12)) * 1
+  );
 
   overflow: var(--denhaag-hero-theme-page-overflow);
 }
@@ -221,7 +224,6 @@
       --denhaag-hero-theme-page-content-column-end-s,
       var(--denhaag-hero-columns, 12)
     );
-    --denhaag-hero-content-padding-block: var(--denhaag-hero-theme-page-content-padding-inline-s);
     --denhaag-hero-theme-page-image-start: var(--denhaag-hero-theme-page-image-start-s);
   }
 }

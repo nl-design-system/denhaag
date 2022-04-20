@@ -211,13 +211,12 @@
       },
       "theme-page": {
         "overflow": { "value": "initial" },
-
         "image": {
           "path": {
             "value": "11.25rem"
           },
           "start-s": {
-            "value": 6
+            "value": 4
           },
           "start-m": {
             "value": 5
@@ -262,8 +261,6 @@
           },
           "text-align": { "value": "center" },
           "padding-block": { "value": "4rem" },
-          "padding-inline": { "value": "{denhaag.space.inline.md}" },
-          "padding-inline-s": { "value": "3.75rem" },
           "transform": {
             "value": "2rem"
           }
