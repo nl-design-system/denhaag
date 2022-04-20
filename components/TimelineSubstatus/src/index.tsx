@@ -20,10 +20,10 @@ interface ProcessStepsProps extends StepListProps {}
  * represents the steps in a process in a chronological order. This process is
  * part of, for example, a request that the user has made.
  *
- * @param props The properties of a Timeline component.
- * @constructor Constructs an instance of Timeline.
+ * @param props The properties of a ProcessSteps component.
+ * @constructor Constructs an instance of ProcessSteps.
  */
-export const ProcessSteps: React.FC<ProcessStepsProps> = ({ ...props }: TimelineSubstatusProps) => {
+export const ProcessSteps: React.FC<ProcessStepsProps> = ({ ...props }: ProcessStepsProps) => {
   return (
     <StepList {...props}>
       <Step checked expanded>
