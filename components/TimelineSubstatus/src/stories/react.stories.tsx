@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Meta, Story } from '@storybook/react';
 import { Button } from '@gemeente-denhaag/button';
-import { TimelineSubstatus, TimelineSubstatusProps } from '../index';
+import { ProcessSteps, ProcessStepsProps } from '../index';
 import pkg from '../../package.json';
 
 export default {
@@ -17,10 +17,10 @@ export default {
       type: 'WORK IN PROGRESS',
     },
   },
-  component: TimelineSubstatus,
+  component: ProcessSteps,
 } as Meta;
 
-const Template: Story<TimelineSubstatusProps> = () => {
+const Template: Story<ProcessStepsProps> = () => {
   const [activeStep, setActiveStep] = useState(0);
   const [completed, setCompleted] = React.useState<{ [k: number]: boolean }>({});
   const steps = [
@@ -74,7 +74,7 @@ const Template: Story<TimelineSubstatusProps> = () => {
 
   return (
     <React.Fragment>
-      <TimelineSubstatus></TimelineSubstatus>
+      <ProcessSteps></ProcessSteps>
       <Button onClick={prev} disabled={activeStep === 0} variant="secondary-action">
         Prev
       </Button>
@@ -89,4 +89,4 @@ const Template: Story<TimelineSubstatusProps> = () => {
  * Implementation of Timeline
  * "activeStep" property set to enforce step visibility.
  */
-export const Default: Story<TimelineSubstatusProps> = Template.bind({});
+export const Default: Story<ProcessStepsProps> = Template.bind({});

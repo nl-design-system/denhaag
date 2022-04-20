@@ -1,0 +1,12 @@
+.denhaag-process-steps {
+  --denhaag-process-steps-step-distance: 40px;
+  --denhaag-process-steps-sub-step-distance: 24px;
+
+  font-family: var(--denhaag-process-steps-font-family);
+  font-size: var(--denhaag-process-steps-font-size);
+  line-height: var(--denhaag-process-steps-line-height);
+  list-style: none;
+  margin-block-start: 0; /* reset <ol> */
+  margin-block-end: 0; /* reset <ol> */
+  padding-inline-start: 0; /* reset <ol> */
+}

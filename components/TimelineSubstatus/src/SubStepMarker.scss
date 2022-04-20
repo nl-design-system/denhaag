@@ -1,0 +1,12 @@
+.denhaag-process-steps__sub-step-marker {
+  align-items: center;
+  background-color: var(--denhaag-color-white);
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-grow: 0;
+  justify-content: center;
+  min-block-size: 16px;
+  min-inline-size: 16px;
+  border: 2px solid var(--denhaag-color-green-3);
+}
