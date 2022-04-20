@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { LiHTMLAttributes } from 'react';
 import clsx from 'clsx';
 
@@ -11,20 +9,20 @@ export interface StepProps extends LiHTMLAttributes<HTMLLIElement> {
 
 interface StepContextType {
   expanded: boolean;
-  setExpanded: (arg0: any) => void;
+  setExpanded: (arg0: boolean) => void;
 }
 
-export const StepContext = React.createContext({
+export const StepContext = React.createContext<StepContextType>({
   expanded: false,
-  setExpanded: (expanded: unknown) => {},
+  setExpanded: () => {},
 });
 
-export const Step: React.FC<StepProps> = ({ children, current, checked, expanded }) => {
+export const Step: React.FC<StepProps> = ({ children, current, checked, expanded = false }) => {
   const [state, setState] = React.useState(expanded);
-  const value: StepContextType = { expanded: !!state, setExpanded: setState };
+  const context: StepContextType = { expanded: state, setExpanded: setState };
 
   return (
-    <StepContext.Provider value={value}>
+    <StepContext.Provider value={context}>
       <li
         className={clsx(
           'denhaag-process-steps__step',
