@@ -18,3 +18,5 @@ export const StepMarker: React.FC<StepMarkerProps> = ({ checked, current, childr
     {checked ? <CheckedIcon /> : children}
   </div>
 );
+
+export default StepMarker;

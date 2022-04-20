@@ -71,6 +71,9 @@
       "path": "components/Menu"
     },
     {
+      "path": "components/ProcessSteps"
+    },
+    {
       "path": "components/Radio"
     },
     {
