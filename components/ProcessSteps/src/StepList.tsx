@@ -8,3 +8,5 @@ export const StepList: React.FC<StepListProps> = ({ className, children, ...prop
     {children}
   </ol>
 );
+
+export default StepList;

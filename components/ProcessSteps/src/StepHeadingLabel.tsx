@@ -17,3 +17,5 @@ export const StepHeadingLabel: React.FC<StepHeadingLabelProps> = ({ children, cu
     {children}
   </div>
 );
+
+export default StepHeadingLabel;

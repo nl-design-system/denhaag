@@ -10,3 +10,5 @@ export const SubStep: React.FC<SubStepProps> = ({ children, checked }) => (
     {children}
   </li>
 );
+
+export default SubStep;

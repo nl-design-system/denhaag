@@ -77,3 +77,13 @@ export const ProcessSteps: React.FC<ProcessStepsProps> = ({ ...props }: ProcessS
 };
 
 export default ProcessSteps;
+
+export * from './Step';
+export * from './StepHeading';
+export * from './StepHeadingLabel';
+export * from './StepList';
+export * from './StepMarker';
+export * from './SubStep';
+export * from './SubStepHeading';
+export * from './SubStepList';
+export * from './SubStepMarker';

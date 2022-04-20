@@ -7,3 +7,5 @@ export const SubStepList: React.FC = ({ children }) => {
 
   return <ol className={clsx('denhaag-process-steps__sub-step-list', expanded && 'visible')}>{children}</ol>;
 };
+
+export default SubStepList;
