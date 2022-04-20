@@ -1,15 +1,8 @@
 import React, { HTMLAttributes } from 'react';
 import clsx from 'clsx';
 
-export interface SubStepMarkerProps extends HTMLAttributes<HTMLDivElement> {
-  checked?: boolean;
-}
+export type SubStepMarkerProps = HTMLAttributes<HTMLDivElement>;
 
-export const SubStepMarker: React.FC<SubStepMarkerProps> = ({ checked }) => (
-  <div
-    className={clsx(
-      'denhaag-process-steps__sub-step-marker',
-      checked && 'denhaag-process-steps__sub-step-marker--checked',
-    )}
-  />
+export const SubStepMarker: React.FC<SubStepMarkerProps> = (props) => (
+  <div className={clsx('denhaag-process-steps__sub-step-marker', props.className)} />
 );
