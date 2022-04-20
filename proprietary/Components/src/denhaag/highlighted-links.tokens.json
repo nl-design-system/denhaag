@@ -1,0 +1,26 @@
+{
+  "denhaag": {
+    "highlighted-links": {
+      "background-color": { "value": "{denhaag.color.warmgrey.1}" },
+      "padding-block-start": { "value": "{denhaag.space.block.3xl}" },
+      "padding-block-end": { "value": "{denhaag.space.block.3xl}" },
+      "width": { "value": "100%" },
+      "container": {
+        "margin-inline-start": { "value": "auto" },
+        "margin-inline-end": { "value": "auto" },
+        "width": { "value": "100%" },
+        "max-width": { "value": "98rem" }
+      },
+      "hero-theme-page-highlighted-links": {
+        "padding-block-start": { "value": "4.375rem" }
+      },
+      "navigation-list": {
+        "display": { "value": "grid" },
+        "gap": { "value": "0 {denhaag.space.block.3xl}" },
+        "grid-template-columns": { "value": "repeat(auto-fill, minmax(22.75rem, 1fr))" },
+        "grid-template-columns-2": { "value": "repeat(auto-fill, minmax(33.125rem, 1fr))" },
+        "grid-template-columns-3": { "value": "repeat(auto-fill, minmax(24.3125rem, 1fr))" }
+      }
+    }
+  }
+}
