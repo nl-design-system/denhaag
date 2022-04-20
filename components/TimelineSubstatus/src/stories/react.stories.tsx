@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Button } from '@gemeente-denhaag/button';
 import { ProcessSteps, ProcessStepsProps } from '../index';
 import pkg from '../../package.json';
 
@@ -21,66 +20,9 @@ export default {
 } as Meta;
 
 const Template: Story<ProcessStepsProps> = () => {
-  const [activeStep, setActiveStep] = useState(0);
-  const [completed, setCompleted] = React.useState<{ [k: number]: boolean }>({});
-  const steps = [
-    {
-      label: 'First Step in a Timeline!',
-      description: 'This is the first Step component of many in a Timeline component.',
-    },
-    {
-      label: 'Second Step in a Timeline!',
-    },
-    {
-      label: 'Third Step in a Timeline!',
-      disabled: true,
-    },
-    {
-      label: 'Fourth Step in a Timeline!',
-      description: 'This is the fourth Step component of many in a Timeline component.',
-    },
-  ];
-
-  const prev = () => {
-    setActiveStep((prevActiveStep) => {
-      let nextActiveStep = prevActiveStep - 1;
-      if (steps[nextActiveStep].disabled) {
-        nextActiveStep -= 1;
-      }
-
-      const newCompleted = completed;
-      newCompleted[nextActiveStep] = false;
-      setCompleted(newCompleted);
-
-      return nextActiveStep;
-    });
-  };
-
-  const next = () => {
-    setActiveStep((prevActiveStep) => {
-      let nextActiveStep = prevActiveStep + 1;
-
-      if (nextActiveStep < steps.length && steps[nextActiveStep].disabled) {
-        nextActiveStep += 1;
-      }
-
-      const newCompleted = completed;
-      newCompleted[prevActiveStep] = true;
-      setCompleted(newCompleted);
-
-      return nextActiveStep;
-    });
-  };
-
   return (
     <React.Fragment>
       <ProcessSteps></ProcessSteps>
-      <Button onClick={prev} disabled={activeStep === 0} variant="secondary-action">
-        Prev
-      </Button>
-      <Button onClick={next} disabled={activeStep === steps.length} variant="primary-action">
-        Next
-      </Button>
     </React.Fragment>
   );
 };
