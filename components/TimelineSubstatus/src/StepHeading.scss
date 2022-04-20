@@ -1,6 +1,14 @@
 .denhaag-process-steps__step-heading {
   display: flex;
   gap: 16px;
+  appearance: none;
+  border: 0;
+  background-color: inherit;
+  align-items: center;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
 }
 
 .denhaag-process-steps__step-heading--current {
