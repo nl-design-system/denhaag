@@ -6,5 +6,7 @@ export interface SubStepProps extends LiHTMLAttributes<HTMLLIElement> {
 }
 
 export const SubStep: React.FC<SubStepProps> = ({ children, checked }) => (
-  <li className={clsx('denhaag-timeline__sub-step', checked && 'denhaag-timeline__sub-step--checked')}>{children}</li>
+  <li className={clsx('denhaag-process-steps__sub-step', checked && 'denhaag-process-steps__sub-step--checked')}>
+    {children}
+  </li>
 );

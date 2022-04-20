@@ -1,4 +1,4 @@
-.denhaag-timeline__step-marker {
+.denhaag-process-steps__step-marker {
   align-items: center;
   background-color: var(--denhaag-timeline-step-marker-background-color);
   block-size: var(--denhaag-timeline-step-marker-size);
@@ -22,21 +22,22 @@
     inline-size: 20px;
   }
 }
-.denhaag-timeline__step-marker--not-checked {
+
+.denhaag-process-steps__step-marker--not-checked {
   color: var(--denhaag-timeline-step-marker-not-checked-color);
 }
 
-.denhaag-timeline__step-marker--active {
+.denhaag-process-steps__step-marker--active {
   fill: var(--denhaag-timeline-step-marker-active-color);
 }
 
-.denhaag-timeline__step-marker--checked {
+.denhaag-process-steps__step-marker--checked {
   background-color: white;
   border: 2px solid var(--denhaag-color-green-3);
   color: var(--denhaag-timeline-step-marker-checked-color);
 }
 
-.denhaag-timeline__step-marker--current {
+.denhaag-process-steps__step-marker--current {
   background-color: var(--denhaag-timeline-step-marker-current-background-color);
   color: var(--denhaag-timeline-step-marker-current-color);
 }

@@ -1,18 +1,18 @@
-.denhaag-timeline__step {
+.denhaag-process-steps__step {
   padding-block-end: 0;
   padding-block-start: 0;
 }
 
-.denhaag-timeline__step + .denhaag-timeline__step {
+.denhaag-process-steps__step + .denhaag-process-steps__step {
   margin-block-start: var(--denhaag-timeline-step-distance);
 }
 
-.denhaag-timeline__step-content:not(:empty) {
+.denhaag-process-steps__step-content:not(:empty) {
   color: var(--denhaag-timeline-step-content-color);
   margin-block-start: var(--denhaag-timeline-step-content-margin);
 }
 
-.denhaag-timeline__step-collapse-icon {
+.denhaag-process-steps__step-collapse-icon {
   height: var(--denhaag-timeline-step-collapse-icon-size);
   padding-inline-start: var(--denhaag-timeline-step-collapse-icon-padding);
   width: var(--denhaag-timeline-step-collapse-icon-size);

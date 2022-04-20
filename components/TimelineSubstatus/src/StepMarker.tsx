@@ -10,9 +10,9 @@ export interface StepMarkerProps extends LiHTMLAttributes<HTMLLIElement> {
 export const StepMarker: React.FC<StepMarkerProps> = ({ checked, current, children }) => (
   <div
     className={clsx(
-      'denhaag-timeline__step-marker',
-      checked && 'denhaag-timeline__step-marker--checked',
-      current && 'denhaag-timeline__step-marker--current',
+      'denhaag-process-steps__step-marker',
+      checked && 'denhaag-process-steps__step-marker--checked',
+      current && 'denhaag-process-steps__step-marker--current',
     )}
   >
     {checked ? <CheckedIcon /> : children}

@@ -6,5 +6,10 @@ export interface SubStepMarkerProps extends HTMLAttributes<HTMLDivElement> {
 }
 
 export const SubStepMarker: React.FC<SubStepMarkerProps> = ({ checked }) => (
-  <div className={clsx('denhaag-timeline__sub-step-marker', checked && 'denhaag-timeline__sub-step-marker--checked')} />
+  <div
+    className={clsx(
+      'denhaag-process-steps__sub-step-marker',
+      checked && 'denhaag-process-steps__sub-step-marker--checked',
+    )}
+  />
 );

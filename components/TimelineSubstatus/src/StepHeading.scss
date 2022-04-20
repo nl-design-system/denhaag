@@ -1,13 +1,13 @@
-.denhaag-timeline__step-heading {
+.denhaag-process-steps__step-heading {
   display: flex;
   gap: 16px;
 }
 
-.denhaag-timeline__step-heading--current {
+.denhaag-process-steps__step-heading--current {
   color: var(--denhaag-timeline-step-heading-current-color);
   font-weight: var(--denhaag-timeline-step-heading-current-font-weight);
 }
 
-.denhaag-timeline__step-heading--not-checked {
+.denhaag-process-steps__step-heading--not-checked {
   color: var(--denhaag-timeline-step-heading-not-checked-color);
 }

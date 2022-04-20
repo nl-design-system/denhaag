@@ -9,9 +9,9 @@ export interface StepHeadingProps extends HTMLAttributes<HTMLDivElement> {
 export const StepHeading: React.FC<StepHeadingProps> = ({ children, current, checked }) => (
   <div
     className={clsx(
-      'denhaag-timeline__step-heading',
-      checked && 'denhaag-timeline__step-heading--checked',
-      current && 'denhaag-timeline__step-heading--current',
+      'denhaag-process-steps__step-heading',
+      checked && 'denhaag-process-steps__step-heading--checked',
+      current && 'denhaag-process-steps__step-heading--current',
     )}
   >
     {children}

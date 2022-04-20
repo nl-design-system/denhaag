@@ -9,9 +9,9 @@ export interface StepHeadingLabelProps {
 export const StepHeadingLabel: React.FC<StepHeadingLabelProps> = ({ children, current, checked }) => (
   <div
     className={clsx(
-      'denhaag-timeline__step-heading-label',
-      checked && 'denhaag-timeline__step-heading-label--checked',
-      current && 'denhaag-timeline__step-heading-label--current',
+      'denhaag-process-steps__step-heading-label',
+      checked && 'denhaag-process-steps__step-heading-label--checked',
+      current && 'denhaag-process-steps__step-heading-label--current',
     )}
   >
     {children}

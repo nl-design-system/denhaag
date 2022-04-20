@@ -1,4 +1,5 @@
 @import "./Step";
+@import "./StepList";
 @import "./StepMarker";
 @import "./StepHeading";
 @import "./SubStep";
@@ -6,16 +7,3 @@
 @import "./StepHeadingLabel";
 @import "./SubStepList";
 @import "./SubStepMarker";
-
-.denhaag-timeline {
-  --denhaag-timeline-step-distance: 40px;
-  --denhaag-timeline-sub-step-distance: 24px;
-
-  font-family: var(--denhaag-timeline-font-family);
-  font-size: var(--denhaag-timeline-font-size);
-  line-height: var(--denhaag-timeline-line-height);
-  list-style: none;
-  margin-block-start: 0; /* reset <ol> */
-  margin-block-end: 0; /* reset <ol> */
-  padding-inline-start: 0; /* reset <ol> */
-}
