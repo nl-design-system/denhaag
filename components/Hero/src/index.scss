@@ -18,8 +18,6 @@
 .denhaag-hero--routing,
 .denhaag-hero--theme-page {
   --denhaag-hero-background-color: var(--denhaag-hero-routing-background-color, inherit);
-  --denhaag-hero-container-gutter: var(--denhaag-hero-routing-container-gutter);
-  --denhaag-hero-container-max-width: var(--denhaag-hero-routing-container-max-width);
   --denhaag-hero-content-align-self: var(--denhaag-hero-routing-content-align-self);
   --denhaag-hero-content-padding-block: var(--denhaag-hero-routing-content-padding-block);
   --denhaag-hero-image-path: var(--denhaag-hero-routing-image-path, 0);
@@ -29,8 +27,6 @@
 }
 
 .denhaag-hero--home {
-  --denhaag-hero-container-gutter: var(--denhaag-hero-home-container-gutter);
-  --denhaag-hero-container-max-width: var(--denhaag-hero-home-container-max-width);
   --denhaag-hero-content-align-self: var(--denhaag-hero-home-content-align-self);
   --denhaag-hero-content-padding-block: var(--denhaag-hero-home-content-padding-block);
   --denhaag-hero-image-path: var(--denhaag-hero-home-image-path, 0);
@@ -41,7 +37,7 @@
   --utrecht-heading-1-font-weight: var(--denhaag-hero-home-title-weight);
   --utrecht-heading-1-line-height: var(--denhaag-hero-home-title-line-height);
 
-  background: linear-gradient(59deg, var(--denhaag-color-green-3) 30%, transparent 30%),
+  background: linear-gradient(59deg, var(--denhaag-hero-background-color) 30%, transparent 30%),
     linear-gradient(159deg, var(--denhaag-color-green-4) 70%, var(--denhaag-color-green-2) 70%);
 }
 
@@ -186,17 +182,18 @@
 }
 
 @media (min-width: 360px) {
-  .denhaag-hero--routing,
-  .denhaag-hero--theme-page {
-    --denhaag-hero-container-gutter: var(--denhaag-hero-routing-container-gutter-xs);
-    --denhaag-hero-container-max-width: var(--denhaag-hero-routing-container-max-width-xs);
-    --denhaag-hero-content-column-start: var(--denhaag-hero-routing-content-column-start-xs, 1);
-    --denhaag-hero-content-column-end: var(--denhaag-hero-routing-content-column-end-xs, 12);
+  .denhaag-hero {
+    --denhaag-hero-container-gutter: var(--denhaag-hero-container-gutter-xs, var(--denhaag-hero-container-gutter));
+    --denhaag-hero-container-max-width: var(
+      --denhaag-hero-container-max-width-xs,
+      var(--denhaag-hero-container-max-width)
+    );
   }
 
-  .denhaag-hero--home {
-    --denhaag-hero-container-gutter: var(--denhaag-hero-home-container-gutter-xs);
-    --denhaag-hero-container-max-width: var(--denhaag-hero-home-container-max-width-xs);
+  .denhaag-hero--routing,
+  .denhaag-hero--theme-page {
+    --denhaag-hero-content-column-start: var(--denhaag-hero-routing-content-column-start-xs, 1);
+    --denhaag-hero-content-column-end: var(--denhaag-hero-routing-content-column-end-xs, 12);
   }
 
   .denhaag-hero--theme-page .denhaag-hero__container {
@@ -225,12 +222,15 @@
 @media (min-width: 768px) {
   .denhaag-hero {
     --denhaag-hero-image-display: block;
+    --denhaag-hero-container-gutter: var(--denhaag-hero-container-gutter-s, var(--denhaag-hero-container-gutter-xs));
+    --denhaag-hero-container-max-width: var(
+      --denhaag-hero-container-max-width-s,
+      var(--denhaag-hero-container-max-width-xs)
+    );
   }
 
   .denhaag-hero--routing,
   .denhaag-hero--theme-page {
-    --denhaag-hero-container-gutter: var(--denhaag-hero-routing-container-gutter-s);
-    --denhaag-hero-container-max-width: var(--denhaag-hero-routing-container-max-width-s);
     --denhaag-hero-content-column-start: var(--denhaag-hero-routing-content-column-start-s, 1);
     --denhaag-hero-content-column-end: var(--denhaag-hero-routing-content-column-end-s, 12);
     --denhaag-hero-content-padding-block: var(--denhaag-hero-routing-content-padding-block-s);
@@ -254,8 +254,6 @@
   }
 
   .denhaag-hero--home {
-    --denhaag-hero-container-gutter: var(--denhaag-hero-home-container-gutter-s);
-    --denhaag-hero-container-max-width: var(--denhaag-hero-home-container-max-width-s);
     --denhaag-hero-content-column-end: var(--denhaag-hero-home-content-column-end-s, 12);
     --denhaag-hero-content-padding-block: var(--denhaag-hero-home-content-padding-block-s);
     --denhaag-hero-min-height: var(--denhaag-hero-home-min-height-s);
@@ -268,9 +266,16 @@
 }
 
 @media (min-width: 1024px) {
+  .denhaag-hero {
+    --denhaag-hero-container-gutter: var(--denhaag-hero-container-gutter-m, var(--denhaag-hero-container-gutter-s));
+    --denhaag-hero-container-max-width: var(
+      --denhaag-hero-container-max-width-m,
+      var(--denhaag-hero-container-max-width-s)
+    );
+  }
+
   .denhaag-hero--routing,
   .denhaag-hero--theme-page {
-    --denhaag-hero-container-gutter: var(--denhaag-hero-routing-container-gutter-m);
     --denhaag-hero-container-max-width: var(--denhaag-hero-routing-container-max-width-m);
     --denhaag-hero-content-column-start: var(--denhaag-hero-routing-content-column-start-m, 1);
     --denhaag-hero-content-column-end: var(--denhaag-hero-routing-content-column-end-m, 12);
@@ -278,8 +283,6 @@
   }
 
   .denhaag-hero--home {
-    --denhaag-hero-container-gutter: var(--denhaag-hero-home-container-gutter-m);
-    --denhaag-hero-container-max-width: var(--denhaag-hero-home-container-max-width-m);
     --denhaag-hero-content-column-end: var(--denhaag-hero-home-content-column-end-m, 12);
     --denhaag-hero-content-column-offset: var(--denhaag-hero-home-content-column-offset-m, 0);
     --denhaag-hero-min-height: var(--denhaag-hero-home-min-height-m);
@@ -287,10 +290,16 @@
 }
 
 @media (min-width: 1280px) {
+  .denhaag-hero {
+    --denhaag-hero-container-gutter: var(--denhaag-hero-container-gutter-l, var(--denhaag-hero-container-gutter-m));
+    --denhaag-hero-container-max-width: var(
+      --denhaag-hero-container-max-width-l,
+      var(--denhaag-hero-container-max-width-m)
+    );
+  }
+
   .denhaag-hero--routing,
   .denhaag-hero--theme-page {
-    --denhaag-hero-container-gutter: var(--denhaag-hero-routing-container-gutter-l);
-    --denhaag-hero-container-max-width: var(--denhaag-hero-routing-container-max-width-l);
     --denhaag-hero-content-column-start: var(--denhaag-hero-routing-content-column-start-l, 1);
     --denhaag-hero-content-column-end: var(--denhaag-hero-routing-content-column-end-l, 12);
     --denhaag-hero-routing-shape-width: var(--denhaag-hero-routing-shape-width-l);
@@ -298,8 +307,6 @@
   }
 
   .denhaag-hero--home {
-    --denhaag-hero-container-gutter: var(--denhaag-hero-home-container-gutter-l);
-    --denhaag-hero-container-max-width: var(--denhaag-hero-home-container-max-width-l);
     --denhaag-hero-content-column-end: var(--denhaag-hero-home-content-column-end-l, 12);
     --denhaag-hero-content-column-offset: var(--denhaag-hero-home-content-column-offset-l, 0);
     --denhaag-hero-home-shape-width: var(--denhaag-hero-home-shape-width-l);
@@ -316,21 +323,25 @@
 }
 
 @media (min-width: 1768px) {
-  .denhaag-hero--routing,
-  .denhaag-hero--theme-page {
-    --denhaag-hero-container-gutter: var(--denhaag-hero-routing-container-gutter-xl);
-    --denhaag-hero-container-max-width: var(--denhaag-hero-routing-container-max-width-xl);
-    --denhaag-hero-content-column-start: var(--denhaag-hero-routing-content-column-start-xl, 1);
-    --denhaag-hero-content-column-end: var(--denhaag-hero-routing-content-column-end-xl, 12);
-    --denhaag-hero-routing-shape-right: var(--denhaag-hero-routing-shape-right-xl);
+  .denhaag-hero {
+    --denhaag-hero-container-gutter: var(--denhaag-hero-container-gutter-xl, var(--denhaag-hero-container-gutter-l));
+    --denhaag-hero-container-max-width: var(
+      --denhaag-hero-container-max-width-xl,
+      var(--denhaag-hero-container-max-width-l)
+    );
   }
 
   .denhaag-hero--home {
-    --denhaag-hero-container-gutter: var(--denhaag-hero-home-container-gutter-xl);
-    --denhaag-hero-container-max-width: var(--denhaag-hero-home-container-max-width-xl);
     --denhaag-hero-content-column-start: var(--denhaag-hero-home-content-column-start-xl, 1);
     --denhaag-hero-content-column-offset: var(--denhaag-hero-home-content-column-offset-xl, 0);
     --denhaag-hero-home-shape-right: var(--denhaag-hero-home-shape-right-xl);
+  }
+
+  .denhaag-hero--routing,
+  .denhaag-hero--theme-page {
+    --denhaag-hero-content-column-start: var(--denhaag-hero-routing-content-column-start-xl, 1);
+    --denhaag-hero-content-column-end: var(--denhaag-hero-routing-content-column-end-xl, 12);
+    --denhaag-hero-routing-shape-right: var(--denhaag-hero-routing-shape-right-xl);
   }
 
   .denhaag-hero--theme-page .denhaag-hero__image-pattern {
@@ -340,22 +351,17 @@
 }
 
 @media (min-width: 2160px) {
-  .denhaag-hero--routing,
-  .denhaag-hero--theme-page {
-    --denhaag-hero-container-gutter: var(--denhaag-hero-routing-container-gutter-xxl);
+  .denhaag-hero {
+    --denhaag-hero-container-gutter: var(--denhaag-hero-container-gutter-xxl, var(--denhaag-hero-container-gutter-xl));
     --denhaag-hero-container-max-width: var(
-      --denhaag-hero-routing-container-max-width-xxl,
-      var(--denhaag-hero-routing-container-max-width-xl)
+      --denhaag-hero-container-max-width-xxl,
+      var(--denhaag-hero-container-max-width-xl)
     );
-    --denhaag-hero-content-column-start: var(--denhaag-hero-routing-content-column-start-xxl, 1);
-    --denhaag-hero-content-column-end: var(--denhaag-hero-routing-content-column-end-xxl, 12);
   }
 
-  .denhaag-hero--home {
-    --denhaag-hero-container-gutter: var(--denhaag-hero-home-container-gutter-xxl);
-    --denhaag-hero-container-max-width: var(
-      --denhaag-hero-home-container-max-width-xxl,
-      var(--denhaag-hero-home-container-max-width-xl)
-    );
+  .denhaag-hero--routing,
+  .denhaag-hero--theme-page {
+    --denhaag-hero-content-column-start: var(--denhaag-hero-routing-content-column-start-xxl, 1);
+    --denhaag-hero-content-column-end: var(--denhaag-hero-routing-content-column-end-xxl, 12);
   }
 }

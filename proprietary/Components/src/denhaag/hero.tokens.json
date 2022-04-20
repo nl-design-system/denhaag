@@ -12,6 +12,47 @@
       "color": {
         "value": "{denhaag.color.black}"
       },
+      "container": {
+        "gutter": {
+          "value": ".5rem"
+        },
+        "gutter-xs": {
+          "value": ".5rem"
+        },
+        "gutter-s": {
+          "value": "1rem"
+        },
+        "gutter-m": {
+          "value": "1.5rem"
+        },
+        "gutter-l": {
+          "value": "2rem"
+        },
+        "gutter-xl": {
+          "value": "2.5rem"
+        },
+        "gutter-xxl": {
+          "value": "2.5rem"
+        },
+        "max-width": {
+          "value": "100%"
+        },
+        "max-width-xs": {
+          "value": "20rem"
+        },
+        "max-width-s": {
+          "value": "40.5rem"
+        },
+        "max-width-m": {
+          "value": "56.5rem"
+        },
+        "max-width-l": {
+          "value": "67.5rem"
+        },
+        "max-width-xl": {
+          "value": "98rem"
+        }
+      },
       "home": {
         "min-height": {
           "value": "20rem"
@@ -21,47 +62,6 @@
         },
         "min-height-m": {
           "value": "30rem"
-        },
-        "container": {
-          "gutter": {
-            "value": ".5rem"
-          },
-          "gutter-xs": {
-            "value": ".5rem"
-          },
-          "gutter-s": {
-            "value": "1rem"
-          },
-          "gutter-m": {
-            "value": "1.5rem"
-          },
-          "gutter-l": {
-            "value": "2rem"
-          },
-          "gutter-xl": {
-            "value": "2.5rem"
-          },
-          "gutter-xxl": {
-            "value": "2.5rem"
-          },
-          "max-width": {
-            "value": "100%"
-          },
-          "max-width-xs": {
-            "value": "20rem"
-          },
-          "max-width-s": {
-            "value": "40.5rem"
-          },
-          "max-width-m": {
-            "value": "56.5rem"
-          },
-          "max-width-l": {
-            "value": "67.5rem"
-          },
-          "max-width-xl": {
-            "value": "98rem"
-          }
         },
         "content": {
           "align-self": {
@@ -169,47 +169,6 @@
         },
         "min-height-m": {
           "value": "15rem"
-        },
-        "container": {
-          "gutter": {
-            "value": ".5rem"
-          },
-          "gutter-xs": {
-            "value": ".5rem"
-          },
-          "gutter-s": {
-            "value": "1rem"
-          },
-          "gutter-m": {
-            "value": "1.5rem"
-          },
-          "gutter-l": {
-            "value": "2rem"
-          },
-          "gutter-xl": {
-            "value": "2.5rem"
-          },
-          "gutter-xxl": {
-            "value": "2.5rem"
-          },
-          "max-width": {
-            "value": "100%"
-          },
-          "max-width-xs": {
-            "value": "20rem"
-          },
-          "max-width-s": {
-            "value": "40.5rem"
-          },
-          "max-width-m": {
-            "value": "56.5rem"
-          },
-          "max-width-l": {
-            "value": "67.5rem"
-          },
-          "max-width-xl": {
-            "value": "98rem"
-          }
         },
         "content": {
           "align-self": {
