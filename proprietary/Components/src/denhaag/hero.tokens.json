@@ -6,15 +6,13 @@
           "value": "{denhaag.color.green.3}"
         }
       },
+      "columns": {
+        "value": "12"
+      },
       "color": {
         "value": "{denhaag.color.black}"
       },
       "home": {
-        "background": {
-          "color": {
-            "value": "{denhaag.color.green.3}"
-          }
-        },
         "min-height": {
           "value": "20rem"
         },
@@ -79,30 +77,12 @@
           },
           "column": {
             "start": {
-              "value": 0
-            },
-            "start-xs": {
-              "value": 0
-            },
-            "start-s": {
-              "value": 0
-            },
-            "start-m": {
-              "value": 0
-            },
-            "start-l": {
-              "value": 0
+              "value": 1
             },
             "start-xl": {
-              "value": 1
-            },
-            "start-xxl": {
-              "value": 1
+              "value": 2
             },
             "end": {
-              "value": 12
-            },
-            "end-xs": {
               "value": 12
             },
             "end-s": {
@@ -114,29 +94,23 @@
             "end-l": {
               "value": 5
             },
-            "end-xl": {
-              "value": 4
+            "offset": {
+              "value": 0
             },
-            "end-xxl": {
-              "value": 4
+            "offset-m": {
+              "value": 0.5
+            },
+            "offset-l": {
+              "value": 1.875
+            },
+            "offset-xl": {
+              "value": 2.5
             }
           }
         },
         "image": {
           "path": {
-            "value": "14.0625rem"
-          },
-          "width-s": {
-            "value": "16.875rem"
-          },
-          "width-m": {
-            "value": "21.25rem"
-          },
-          "width-l": {
-            "value": "26.5rem"
-          },
-          "width-xl": {
-            "value": "34.375rem"
+            "value": "11.25rem"
           }
         },
         "title": {
@@ -297,18 +271,6 @@
         "image": {
           "path": {
             "value": "3rem"
-          },
-          "width-s": {
-            "value": "16.875rem"
-          },
-          "width-m": {
-            "value": "21.25rem"
-          },
-          "width-l": {
-            "value": "26.5rem"
-          },
-          "width-xl": {
-            "value": "34.375rem"
           }
         },
         "title": {
