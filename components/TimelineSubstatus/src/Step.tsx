@@ -30,7 +30,7 @@ export const Step: React.FC<StepProps> = ({ children, current, checked, expanded
           'denhaag-process-steps__step',
           checked && 'denhaag-process-steps__step--checked',
           current && 'denhaag-process-steps__step--current',
-          expanded && 'denhaag-process-steps__step--expanded',
+          state && 'denhaag-process-steps__step--expanded',
         )}
         aria-current={current ? 'step' : undefined}
       >
