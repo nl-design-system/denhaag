@@ -4,16 +4,16 @@
 }
 
 .denhaag-process-steps__step + .denhaag-process-steps__step {
-  margin-block-start: var(--denhaag-timeline-step-distance);
+  margin-block-start: var(--denhaag-process-steps-step-distance);
 }
 
 .denhaag-process-steps__step-content:not(:empty) {
-  color: var(--denhaag-timeline-step-content-color);
-  margin-block-start: var(--denhaag-timeline-step-content-margin);
+  color: var(--denhaag-process-steps-step-content-color);
+  margin-block-start: var(--denhaag-process-steps-step-content-margin);
 }
 
 .denhaag-process-steps__step-collapse-icon {
-  height: var(--denhaag-timeline-step-collapse-icon-size);
-  padding-inline-start: var(--denhaag-timeline-step-collapse-icon-padding);
-  width: var(--denhaag-timeline-step-collapse-icon-size);
+  height: var(--denhaag-process-steps-step-collapse-icon-size);
+  padding-inline-start: var(--denhaag-process-steps-step-collapse-icon-padding);
+  width: var(--denhaag-process-steps-step-collapse-icon-size);
 }

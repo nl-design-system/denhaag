@@ -1,18 +1,18 @@
 .denhaag-process-steps__step-heading-label--current {
-  color: var(--denhaag-timeline-step-heading-current-color);
-  font-weight: var(--denhaag-timeline-step-heading-current-font-weight);
+  color: var(--denhaag-process-steps-step-heading-current-color);
+  font-weight: var(--denhaag-process-steps-step-heading-current-font-weight);
 }
 
 .denhaag-process-steps__step-heading-label--not-checked {
-  color: var(--denhaag-timeline-step-heading-not-checked-color);
+  color: var(--denhaag-process-steps-step-heading-not-checked-color);
 }
 
 .denhaag-process-steps__step-heading-label {
   display: flex;
   align-items: center;
-  color: var(--denhaag-timeline-step-heading-color);
-  font-family: var(--denhaag-timeline-step-heading-font-family);
-  font-size: var(--denhaag-timeline-step-heading-font-size);
-  font-weight: var(--denhaag-timeline-step-heading-font-weight);
-  line-height: var(--denhaag-timeline-step-heading-line-height);
+  color: var(--denhaag-process-steps-step-heading-color);
+  font-family: var(--denhaag-process-steps-step-heading-font-family);
+  font-size: var(--denhaag-process-steps-step-heading-font-size);
+  font-weight: var(--denhaag-process-steps-step-heading-font-weight);
+  line-height: var(--denhaag-process-steps-step-heading-line-height);
 }
