@@ -1,0 +1,43 @@
+.denhaag-process-steps__step-marker {
+  align-items: center;
+  background-color: var(--denhaag-process-steps-step-marker-background-color);
+  block-size: var(--denhaag-process-steps-step-marker-size);
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: var(--denhaag-process-steps-step-marker-color);
+  display: flex;
+  flex-grow: 0;
+  font-size: var(--denhaag-process-steps-step-marker-font-size);
+  font-weight: 400;
+  inline-size: var(--denhaag-process-steps-step-marker-size);
+  justify-content: center;
+  margin-block-end: var(--denhaag-process-steps-step-marker-margin);
+  margin-block-start: var(--denhaag-process-steps-step-marker-margin);
+  padding-inline-end: 0;
+  min-inline-size: 32px;
+  min-block-size: 32px;
+
+  .denhaag-icon {
+    block-size: 20px;
+    inline-size: 20px;
+  }
+}
+
+.denhaag-process-steps__step-marker--not-checked {
+  color: var(--denhaag-process-steps-step-marker-not-checked-color);
+}
+
+.denhaag-process-steps__step-marker--active {
+  fill: var(--denhaag-process-steps-step-marker-active-color);
+}
+
+.denhaag-process-steps__step-marker--checked {
+  background-color: white;
+  border: 2px solid var(--denhaag-color-green-3);
+  color: var(--denhaag-process-steps-step-marker-checked-color);
+}
+
+.denhaag-process-steps__step-marker--current {
+  background-color: var(--denhaag-process-steps-step-marker-current-background-color);
+  color: var(--denhaag-process-steps-step-marker-current-color);
+}

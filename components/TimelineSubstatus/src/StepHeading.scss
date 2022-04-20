@@ -1,0 +1,13 @@
+.denhaag-process-steps__step-heading {
+  display: flex;
+  gap: 16px;
+}
+
+.denhaag-process-steps__step-heading--current {
+  color: var(--denhaag-process-steps-step-heading-current-color);
+  font-weight: var(--denhaag-process-steps-step-heading-current-font-weight);
+}
+
+.denhaag-process-steps__step-heading--not-checked {
+  color: var(--denhaag-process-steps-step-heading-not-checked-color);
+}

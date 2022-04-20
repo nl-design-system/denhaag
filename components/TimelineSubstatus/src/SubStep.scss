@@ -1,0 +1,7 @@
+.denhaag-process-steps__sub-step {
+  align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  gap: 23px;
+  margin-block-start: var(--denhaag-process-steps-sub-step-distance);
+}

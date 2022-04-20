@@ -1,0 +1,19 @@
+.denhaag-process-steps__step {
+  padding-block-end: 0;
+  padding-block-start: 0;
+}
+
+.denhaag-process-steps__step + .denhaag-process-steps__step {
+  margin-block-start: var(--denhaag-process-steps-step-distance);
+}
+
+.denhaag-process-steps__step-content:not(:empty) {
+  color: var(--denhaag-process-steps-step-content-color);
+  margin-block-start: var(--denhaag-process-steps-step-content-margin);
+}
+
+.denhaag-process-steps__step-collapse-icon {
+  height: var(--denhaag-process-steps-step-collapse-icon-size);
+  padding-inline-start: var(--denhaag-process-steps-step-collapse-icon-padding);
+  width: var(--denhaag-process-steps-step-collapse-icon-size);
+}
