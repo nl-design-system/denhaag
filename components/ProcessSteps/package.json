@@ -1,12 +1,12 @@
 {
-  "name": "@gemeente-denhaag/timeline-substatus",
+  "name": "@gemeente-denhaag/process-steps",
   "version": "0.1.0-alpha.0",
-  "description": "A Timeline Substatus component",
+  "description": "A Process Step component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/nl-design-system/denhaag.git",
-    "directory": "components/Timeline"
+    "directory": "components/ProcessStep"
   },
   "license": "EUPL-1.2",
   "author": "Municipality of The Hague",
