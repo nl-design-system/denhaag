@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/list",
-  "version": "0.2.3-alpha.171",
+  "version": "0.2.3-alpha.172",
   "description": "A List component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -22,8 +22,8 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/iconbutton": "0.2.3-alpha.171",
-    "@gemeente-denhaag/icons": "0.2.3-alpha.171"
+    "@gemeente-denhaag/iconbutton": "0.2.3-alpha.172",
+    "@gemeente-denhaag/icons": "0.2.3-alpha.172"
   },
   "peerDependencies": {
     "react": "^17.0.0"
