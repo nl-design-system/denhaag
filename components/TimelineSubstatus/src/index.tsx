@@ -1,9 +1,17 @@
-import React, { OlHTMLAttributes } from 'react';
-import clsx from 'clsx';
-import { CheckedIcon } from '@gemeente-denhaag/icons';
+import React from 'react';
+import { Step } from './Step';
+import { StepList, StepListProps } from './StepList';
+import { StepHeading } from './StepHeading';
+import { StepHeadingLabel } from './StepHeadingLabel';
+import { StepMarker } from './StepMarker';
+import { SubStep } from './SubStep';
+import { SubStepList } from './SubStepList';
+import { SubStepMarker } from './SubStepMarker';
+import { SubStepHeading } from './SubStepHeading';
+
 import './index.scss';
 
-export interface TimelineSubstatusProps extends OlHTMLAttributes<HTMLOListElement> {}
+interface ProcessStepsProps extends StepListProps {}
 
 /**
  * The `Timeline` displays a progress through a sequence by breaking it up into
@@ -15,62 +23,57 @@ export interface TimelineSubstatusProps extends OlHTMLAttributes<HTMLOListElemen
  * @param props The properties of a Timeline component.
  * @constructor Constructs an instance of Timeline.
  */
-export const TimelineSubstatus: React.FC<TimelineSubstatusProps> = ({
-  className,
-  ...props
-}: TimelineSubstatusProps) => {
-  const timelineClassName = clsx('denhaag-timeline', className);
-
+export const ProcessSteps: React.FC<ProcessStepsProps> = ({ ...props }: TimelineSubstatusProps) => {
   return (
-    <ol className={timelineClassName} {...props}>
-      <li className={'denhaag-timeline__step denhaag-timeline__step--completed denhaag-timeline__step--expanded'}>
-        <div className={'denhaag-timeline__step-label'}>
-          <div className={'denhaag-timeline__step-marker'}>
-            <CheckedIcon />
-          </div>
-          <p className={'denhaag-timeline__step-label-text'}>Deelname aan geluidsonderzoek</p>
-        </div>
-        <ul className={'denhaag-timeline__substep-list'}>
-          <li className={'denhaag-timeline__substep'}>
-            <div className={'denhaag-timeline__substep-marker'}></div>
-            <p className={'denhaag-timeline__substep-text'}>Aanmelding ontvangen</p>
-          </li>
-        </ul>
-      </li>
-      <li className={'denhaag-timeline__step denhaag-timeline__step--active denhaag-timeline__step--expanded'}>
-        <div className={'denhaag-timeline__step-label'}>
-          <div className={'denhaag-timeline__step-marker'}>2</div>
-          <p className={'denhaag-timeline__step-label-text'}>Onderzoek naar geluidsoverlast</p>
-        </div>
-        <ul className={'denhaag-timeline__substep-list'}>
-          <li className={'denhaag-timeline__substep'}>
-            <div className={'denhaag-timeline__substep-marker'}></div>
-            <p className={'denhaag-timeline__substep-text'}>Afspraak meten geluidsoverlast gemaakt</p>
-          </li>
-          <li className={'denhaag-timeline__substep'}>
-            <div className={'denhaag-timeline__substep-marker'}></div>
-            <p className={'denhaag-timeline__substep-text'}>Geluidsoverlast gemeten</p>
-          </li>
-          <li className={'denhaag-timeline__substep'}>
-            <div className={'denhaag-timeline__substep-marker'}></div>
-            <p className={'denhaag-timeline__substep-text'}>Onderzoek resultaten verwerkt</p>
-          </li>
-        </ul>
-      </li>
-      <li className={'denhaag-timeline__step'}>
-        <div className={'denhaag-timeline__step-label'}>
-          <div className={'denhaag-timeline__step-marker'}>3</div>
-          <p className={'denhaag-timeline__step-label-text'}>Uitvoeren van maatregelen</p>
-        </div>
-      </li>
-      <li className={'denhaag-timeline__step'}>
-        <div className={'denhaag-timeline__step-label'}>
-          <div className={'denhaag-timeline__step-marker'}>4</div>
-          <p className={'denhaag-timeline__step-label-text'}>Maatregelen zijn uitgevoerd</p>
-        </div>
-      </li>
-    </ol>
+    <StepList {...props}>
+      <Step checked expanded>
+        <StepHeading checked>
+          <StepMarker checked />
+          <StepHeadingLabel>Deelname aan geluidsonderzoek</StepHeadingLabel>
+        </StepHeading>
+        <SubStepList>
+          <SubStep>
+            <SubStepMarker />
+            <SubStepHeading>Aanmelding ontvangen</SubStepHeading>
+          </SubStep>
+        </SubStepList>
+      </Step>
+      <Step current expanded>
+        <StepHeading current>
+          <StepMarker current>
+            <div>2</div>
+          </StepMarker>
+          <StepHeadingLabel>Onderzoek naar geluidsoverlast</StepHeadingLabel>
+        </StepHeading>
+        <SubStepList>
+          <SubStep>
+            <SubStepMarker />
+            <SubStepHeading>Afspraak meten geluidsoverlast gemaakt</SubStepHeading>
+          </SubStep>
+          <SubStep>
+            <SubStepMarker />
+            <SubStepHeading>Geluidsoverlast gemeten</SubStepHeading>
+          </SubStep>
+          <SubStep>
+            <SubStepMarker />
+            <SubStepHeading>Onderzoek resultaten verwerkt</SubStepHeading>
+          </SubStep>
+        </SubStepList>
+      </Step>
+      <Step>
+        <StepHeading>
+          <StepMarker>3</StepMarker>
+          <StepHeadingLabel>Uitvoeren van maatregelen</StepHeadingLabel>
+        </StepHeading>
+      </Step>
+      <Step>
+        <StepHeading>
+          <StepMarker>4</StepMarker>
+          <StepHeadingLabel>Maatregelen zijn uitgevoerd</StepHeadingLabel>
+        </StepHeading>
+      </Step>
+    </StepList>
   );
 };
 
-export default TimelineSubstatus;
+export default ProcessSteps;
