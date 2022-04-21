@@ -19,5 +19,10 @@
   top: max(var(--denhaag-process-steps-step-marker-size), 32px);
   bottom: max(var(--denhaag-process-steps-step-marker-size), 32px);
   width: 2px;
-  background: repeating-linear-gradient(#000, #000 5px, #fff 5px, #fff 10px);
+  background: repeating-linear-gradient(
+    var(--denhaag-color-grey-3),
+    var(--denhaag-color-grey-3) 5px,
+    transparent 5px,
+    transparent 10px
+  );
 }
