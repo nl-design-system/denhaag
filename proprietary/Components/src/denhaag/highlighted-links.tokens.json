@@ -8,9 +8,9 @@
       "navigation-list": {
         "display": { "value": "grid" },
         "gap": { "value": "0 {denhaag.space.block.3xl}" },
-        "grid-template-columns": { "value": "repeat(auto-fill, minmax(22.75rem, 1fr))" },
-        "grid-template-columns-2": { "value": "repeat(auto-fill, minmax(33.125rem, 1fr))" },
-        "grid-template-columns-3": { "value": "repeat(auto-fill, minmax(24.3125rem, 1fr))" }
+        "grid-template-columns": { "value": "repeat(2, 1fr)" },
+        "grid-template-columns-2": { "value": "repeat(2, 1fr)" },
+        "grid-template-columns-3": { "value": "repeat(3, 1fr)" }
       }
     }
   }
