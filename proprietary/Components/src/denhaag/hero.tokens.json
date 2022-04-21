@@ -6,15 +6,48 @@
           "value": "{denhaag.color.green.3}"
         }
       },
+      "columns": {
+        "value": 12
+      },
       "color": {
         "value": "{denhaag.color.black}"
       },
-      "home": {
-        "background": {
-          "color": {
-            "value": "{denhaag.color.green.3}"
-          }
+      "container": {
+        "gutter": {
+          "value": "{denhaag.space.inline.xs}"
         },
+        "gutter-s": {
+          "value": "{denhaag.space.inline.md}"
+        },
+        "gutter-m": {
+          "value": "{denhaag.space.inline.xl}"
+        },
+        "gutter-l": {
+          "value": "{denhaag.space.inline.2xl}"
+        },
+        "gutter-xl": {
+          "value": "{denhaag.space.inline.3xl}"
+        },
+        "max-width": {
+          "value": "100%"
+        },
+        "max-width-xs": {
+          "value": "20rem"
+        },
+        "max-width-s": {
+          "value": "40.5rem"
+        },
+        "max-width-m": {
+          "value": "56.5rem"
+        },
+        "max-width-l": {
+          "value": "67.5rem"
+        },
+        "max-width-xl": {
+          "value": "98rem"
+        }
+      },
+      "home": {
         "min-height": {
           "value": "20rem"
         },
@@ -22,48 +55,7 @@
           "value": "28rem"
         },
         "min-height-m": {
-          "value": "30.125rem"
-        },
-        "container": {
-          "gutter": {
-            "value": ".5rem"
-          },
-          "gutter-xs": {
-            "value": ".5rem"
-          },
-          "gutter-s": {
-            "value": "1rem"
-          },
-          "gutter-m": {
-            "value": "1.5rem"
-          },
-          "gutter-l": {
-            "value": "2rem"
-          },
-          "gutter-xl": {
-            "value": "2.5rem"
-          },
-          "gutter-xxl": {
-            "value": "2.5rem"
-          },
-          "max-width": {
-            "value": "100%"
-          },
-          "max-width-xs": {
-            "value": "20rem"
-          },
-          "max-width-s": {
-            "value": "40.5rem"
-          },
-          "max-width-m": {
-            "value": "56.5rem"
-          },
-          "max-width-l": {
-            "value": "67.5rem"
-          },
-          "max-width-xl": {
-            "value": "98rem"
-          }
+          "value": "30rem"
         },
         "content": {
           "align-self": {
@@ -71,7 +63,7 @@
           },
           "padding": {
             "block": {
-              "value": "{denhaag.space.block.xl}"
+              "value": "5.75rem"
             },
             "block-s": {
               "value": "{denhaag.space.block.3xl}"
@@ -79,75 +71,46 @@
           },
           "column": {
             "start": {
-              "value": 0
-            },
-            "start-xs": {
-              "value": 0
-            },
-            "start-s": {
-              "value": 0
-            },
-            "start-m": {
-              "value": 0
-            },
-            "start-l": {
-              "value": 0
+              "value": 1
             },
             "start-xl": {
-              "value": 3
-            },
-            "start-xxl": {
-              "value": 3
+              "value": 2
             },
             "end": {
               "value": 12
             },
-            "end-xs": {
-              "value": 12
-            },
             "end-s": {
-              "value": 8
-            },
-            "end-m": {
-              "value": 8
-            },
-            "end-l": {
               "value": 7
             },
-            "end-xl": {
-              "value": 9
+            "end-m": {
+              "value": 6
             },
-            "end-xxl": {
-              "value": 9
+            "end-l": {
+              "value": 5
+            },
+            "offset": {
+              "value": 0
+            },
+            "offset-m": {
+              "value": 1
             }
           }
         },
-        "image": {
-          "path": {
-            "value": "6rem"
-          },
-          "width-s": {
-            "value": "16.875rem"
-          },
-          "width-m": {
-            "value": "21.25rem"
-          },
-          "width-l": {
-            "value": "26.5rem"
-          },
-          "width-xl": {
-            "value": "34.375rem"
-          }
+        "image-path": {
+          "value": "11.25rem"
         },
         "title": {
-          "font-size-xs": {
-            "value": "{denhaag.typography.scale.2xl.font-size}"
-          },
           "color": {
             "value": "{denhaag.color.white}"
           },
+          "line-height": {
+            "value": "{denhaag.typography.scale.s.line-height}"
+          },
+          "font-size-xs": {
+            "value": "{denhaag.typography.scale.2xl.font-size}"
+          },
           "weight": {
-            "value": "500"
+            "value": "{denhaag.typography.weight.regular}"
           },
           "margin": {
             "block": {
@@ -159,30 +122,11 @@
               }
             }
           }
-        },
-        "shape": {
-          "width": {
-            "value": "36.875rem"
-          },
-          "width-l": {
-            "value": "47.5rem"
-          },
-          "right": {
-            "value": "0"
-          },
-          "right-l": {
-            "value": "-2rem"
-          },
-          "right-xl": {
-            "value": "16rem"
-          }
         }
       },
       "routing": {
-        "background": {
-          "color": {
-            "value": "{denhaag.color.ocher.3}"
-          }
+        "background-color": {
+          "value": "{denhaag.color.ocher.3}"
         },
         "min-height": {
           "value": "9rem"
@@ -193,47 +137,6 @@
         "min-height-m": {
           "value": "15rem"
         },
-        "container": {
-          "gutter": {
-            "value": ".5rem"
-          },
-          "gutter-xs": {
-            "value": ".5rem"
-          },
-          "gutter-s": {
-            "value": "1rem"
-          },
-          "gutter-m": {
-            "value": "1.5rem"
-          },
-          "gutter-l": {
-            "value": "2rem"
-          },
-          "gutter-xl": {
-            "value": "2.5rem"
-          },
-          "gutter-xxl": {
-            "value": "2.5rem"
-          },
-          "max-width": {
-            "value": "100%"
-          },
-          "max-width-xs": {
-            "value": "20rem"
-          },
-          "max-width-s": {
-            "value": "40.5rem"
-          },
-          "max-width-m": {
-            "value": "56.5rem"
-          },
-          "max-width-l": {
-            "value": "67.5rem"
-          },
-          "max-width-xl": {
-            "value": "98rem"
-          }
-        },
         "content": {
           "align-self": {
             "value": "center"
@@ -248,65 +151,33 @@
           },
           "column": {
             "start": {
-              "value": 0
-            },
-            "start-xs": {
-              "value": 0
-            },
-            "start-s": {
-              "value": 0
-            },
-            "start-m": {
-              "value": 0
-            },
-            "start-l": {
-              "value": 0
+              "value": 1
             },
             "start-xl": {
-              "value": 3
-            },
-            "start-xxl": {
               "value": 3
             },
             "end": {
               "value": 12
             },
-            "end-xs": {
-              "value": 12
-            },
             "end-s": {
               "value": 8
             },
-            "end-m": {
-              "value": 9
-            },
-            "end-l": {
-              "value": 9
-            },
             "end-xl": {
-              "value": 9
+              "value": 6
             },
-            "end-xxl": {
-              "value": 9
+            "offset": {
+              "value": 0
+            },
+            "offset-l": {
+              "value": -0.2
+            },
+            "offset-xl": {
+              "value": 2
             }
           }
         },
-        "image": {
-          "path": {
-            "value": "3rem"
-          },
-          "width-s": {
-            "value": "16.875rem"
-          },
-          "width-m": {
-            "value": "21.25rem"
-          },
-          "width-l": {
-            "value": "26.5rem"
-          },
-          "width-xl": {
-            "value": "34.375rem"
-          }
+        "image-path": {
+          "value": "2.8125rem"
         },
         "title": {
           "font-size-xs": {
@@ -324,30 +195,33 @@
           }
         },
         "shape": {
-          "width": {
-            "value": "36.875rem"
+          "background-color": {
+            "value": "#FAE166"
           },
-          "width-l": {
-            "value": "47.5rem"
+          "start": {
+            "value": 1
           },
-          "right": {
-            "value": "0"
+          "start-l": {
+            "value": 0
           },
-          "right-l": {
-            "value": "-2rem"
-          },
-          "right-xl": {
-            "value": "16rem"
+          "start-xl": {
+            "value": -0.25
           }
         }
       },
       "theme-page": {
-        "height": { "value": "95vw" },
-        "height-s": { "value": "95vw" },
-        "min-height": { "value": "18rem" },
-        "min-height-s": { "value": "26.5625rem" },
-        "max-height": { "value": "32.5rem" },
         "overflow": { "value": "initial" },
+        "image": {
+          "path": {
+            "value": "11.25rem"
+          },
+          "start-s": {
+            "value": 4
+          },
+          "start-m": {
+            "value": 5
+          }
+        },
         "image-pattern-container": {
           "position": { "value": "absolute" },
           "size": { "value": "100%" },
@@ -358,40 +232,38 @@
           "height": { "value": "auto" }
         },
         "container": {
-          "display": { "value": "block" },
-          "size": { "value": "100%" },
-          "width-s": { "value": "70%" },
-          "max-width": { "value": "64.375rem" },
-          "padding-block-start": { "value": "{denhaag.space.block.2xl}" },
-          "padding-block-start-s": { "value": "8.85vw" },
-          "padding-block-start-m": { "value": "10.15vw" },
-          "padding-block-start-l": { "value": "8.5625rem" },
-          "padding-inline": { "value": "{denhaag.space.inline.xl}" },
-          "margin-inline": { "value": "0" }
+          "padding-block-start": { "value": 0 },
+          "padding-block-start-s": { "value": "3.5rem" },
+          "padding-block-start-xl": { "value": "7rem" }
         },
         "content": {
           "background-color": { "value": "{denhaag.color.white}" },
+          "box-shadow": { "value": "0px 1px 0px {denhaag.color.grey.2}" },
+          "column": {
+            "start": {
+              "value": 1
+            },
+            "start-s": {
+              "value": 2
+            },
+            "start-xl": {
+              "value": 3
+            },
+            "end": {
+              "value": 12
+            },
+            "end-s": {
+              "value": 10
+            },
+            "end-xl": {
+              "value": 8
+            }
+          },
           "text-align": { "value": "center" },
           "padding-block": { "value": "4rem" },
-          "padding-inline": { "value": "{denhaag.space.inline.md}" },
-          "padding-inline-s": { "value": "3.75rem" },
-          "bottom": { "value": "0" },
-          "bottom-s": { "value": "-2rem" },
-          "width": { "value": "auto" },
-          "width-m": { "value": "70%" },
-          "width-l": { "value": "64.375rem" },
-          "position": { "value": "absolute" },
-          "margin-block": { "value": "0" },
-          "margin-inline": { "value": "auto" }
-        },
-        "content-after": {
-          "position": { "value": "absolute" },
-          "bottom": { "value": "-2rem" },
-          "left": { "value": "0" },
-          "width": { "value": "100%" },
-          "height": { "value": "2rem" },
-          "background-color": { "value": "{denhaag.color.white}" },
-          "box-shadow": { "value": "0px 1px 0px {denhaag.color.grey.2}" }
+          "transform": {
+            "value": "2rem"
+          }
         },
         "title": {
           "padding-block-end": { "value": "{denhaag.space.block.md}" },
