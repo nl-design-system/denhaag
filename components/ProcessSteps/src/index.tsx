@@ -94,11 +94,14 @@ export default ProcessSteps;
 
 export * from './Step';
 export * from './StepExpandedIcon';
+export * from './StepHeader';
 export * from './StepHeading';
 export * from './StepHeadingLabel';
 export * from './StepList';
 export * from './StepMarker';
+export * from './StepSection';
 export * from './SubStep';
 export * from './SubStepHeading';
 export * from './SubStepList';
 export * from './SubStepMarker';
+export * from './StepExpandedIcon';
