@@ -1,10 +1,11 @@
 .denhaag-process-steps__step-header {
   display: flex;
-  gap: 16px;
-  appearance: none;
+  align-items: center;
+  cursor: pointer;
   border: 0;
   background-color: inherit;
-  align-items: center;
+  gap: 16px;
+  appearance: none;
   padding-block-start: 0;
   padding-block-end: 0;
   padding-inline-start: 0;
@@ -12,8 +13,8 @@
 }
 
 .denhaag-process-steps__step-header--current {
-  color: var(--denhaag-process-steps-step-heading-current-color);
   font-weight: var(--denhaag-process-steps-step-heading-current-font-weight);
+  color: var(--denhaag-process-steps-step-heading-current-color);
 }
 
 .denhaag-process-steps__step-header--checked {

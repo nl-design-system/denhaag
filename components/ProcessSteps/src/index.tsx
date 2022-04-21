@@ -75,7 +75,6 @@ export const ProcessSteps: React.FC<ProcessStepsProps> = ({ ...props }: ProcessS
           <StepHeader>
             <StepMarker>3</StepMarker>
             <StepHeading>Uitvoeren van maatregelen</StepHeading>
-            <StepExpandedIcon />
           </StepHeader>
         </StepSection>
       </Step>
