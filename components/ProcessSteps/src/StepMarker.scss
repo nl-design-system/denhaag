@@ -25,14 +25,6 @@
   }
 }
 
-.denhaag-process-steps__step-marker--not-checked {
-  color: var(--denhaag-process-steps-step-marker-not-checked-color);
-}
-
-.denhaag-process-steps__step-marker--active {
-  fill: var(--denhaag-process-steps-step-marker-active-color);
-}
-
 .denhaag-process-steps__step-marker--checked {
   background-color: white;
   border: 2px solid var(--denhaag-color-green-3);
