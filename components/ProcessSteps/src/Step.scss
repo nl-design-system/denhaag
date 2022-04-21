@@ -8,17 +8,12 @@
   margin-block-start: var(--denhaag-process-steps-step-distance);
 }
 
-.denhaag-process-steps__step:nth-of-type(n + 2)::after {
+.denhaag-process-steps__step--checked:nth-last-child(n + 2)::before {
   content: "";
   position: absolute;
-  left: calc(max(var(--denhaag-process-steps-step-marker-size), 32px) / 2);
-  top: calc(-1 * (var(--denhaag-process-steps-step-distance) + 10px));
-  height: calc(var(--denhaag-process-steps-step-distance) + 10px);
-  outline: 1px dashed var(--denhaag-process-steps-step-marker-background-color);
-}
-
-.denhaag-process-steps__step--checked:nth-of-type(n + 2)::after,
-.denhaag-process-steps__step--current:nth-of-type(n + 2)::after {
-  outline-style: solid;
-  outline-color: var(--denhaag-color-green-3);
+  left: calc((max(var(--denhaag-process-steps-step-marker-size), 32px) / 2) - 1px);
+  top: max(var(--denhaag-process-steps-step-marker-size), 32px);
+  height: calc(100% + 32px);
+  width: 2px;
+  background-color: var(--denhaag-color-green-3);
 }

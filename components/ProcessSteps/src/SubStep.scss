@@ -7,11 +7,12 @@
   margin-block-start: var(--denhaag-process-steps-sub-step-distance);
 }
 
-.denhaag-process-steps__sub-step::after {
+.denhaag-process-steps__sub-step:nth-last-child(n + 2)::before {
   content: "";
   position: absolute;
-  left: 8px;
-  top: calc(-1 * (var(--denhaag-process-steps-sub-step-distance) + 10px));
-  height: calc(var(--denhaag-process-steps-sub-step-distance) + 15px);
-  outline: 1px solid var(--denhaag-color-green-3);
+  left: calc((16px / 2) - 1px);
+  top: calc((max(var(--denhaag-process-steps-step-marker-size), 32px) / 2 + 23px) * -1);
+  height: calc(100% + (max(var(--denhaag-process-steps-step-marker-size), 32px) / 2 + 23px) + 23px + 16px);
+  width: 2px;
+  background-color: var(--denhaag-color-green-3);
 }
