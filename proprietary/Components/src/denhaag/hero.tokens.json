@@ -211,7 +211,6 @@
       },
       "theme-page": {
         "min-height": { "value": 0 },
-        "overflow": { "value": "initial" },
         "image": {
           "path": {
             "value": "11.25rem"
