@@ -210,6 +210,7 @@
         }
       },
       "theme-page": {
+        "min-height": { "value": 0 },
         "overflow": { "value": "initial" },
         "image": {
           "path": {
@@ -261,6 +262,7 @@
           },
           "text-align": { "value": "center" },
           "padding-block": { "value": "4rem" },
+          "padding-block-s": { "value": "{denhaag.space.block.3xl}" },
           "transform": {
             "value": "2rem"
           }
