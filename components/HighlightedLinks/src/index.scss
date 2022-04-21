@@ -8,18 +8,24 @@
 .denhaag-highlighted-links__navigation-list {
   display: var(--denhaag-highlighted-links-navigation-list-display);
   gap: var(--denhaag-highlighted-links-navigation-list-gap);
+}
 
-  @media (min-width: 48rem) {
+@media (min-width: 48rem) {
+  .denhaag-highlighted-links__navigation-list {
     grid-template-columns: var(--denhaag-highlighted-links-navigation-list-grid-template-columns);
   }
+}
 
-  @media (min-width: 68.875rem) {
+@media (min-width: 68.875rem) {
+  .denhaag-highlighted-links__navigation-list {
     --denhaag-highlighted-links-navigation-list-grid-template-columns: var(
       --denhaag-highlighted-links-navigation-list-grid-template-columns-2
     );
   }
+}
 
-  @media (min-width: 80rem) {
+@media (min-width: 80rem) {
+  .denhaag-highlighted-links__navigation-list {
     --denhaag-highlighted-links-navigation-list-grid-template-columns: var(
       --denhaag-highlighted-links-navigation-list-grid-template-columns-3
     );
