@@ -1,5 +1,6 @@
 import React from 'react';
 import { Step } from './Step';
+import { StepExpandedIcon } from './StepExpandedIcon';
 import { StepList, StepListProps } from './StepList';
 import { StepSection } from './StepSection';
 import { StepHeader } from './StepHeader';
@@ -34,6 +35,7 @@ export const ProcessSteps: React.FC<ProcessStepsProps> = ({ ...props }: ProcessS
               <div>1</div>
             </StepMarker>
             <StepHeading>Deelname aan geluidsonderzoek</StepHeading>
+            <StepExpandedIcon />
           </StepHeader>
         </StepSection>
         <SubStepList>
@@ -50,6 +52,7 @@ export const ProcessSteps: React.FC<ProcessStepsProps> = ({ ...props }: ProcessS
               <div>2</div>
             </StepMarker>
             <StepHeading>Onderzoek naar geluidsoverlast</StepHeading>
+            <StepExpandedIcon />
           </StepHeader>
         </StepSection>
         <SubStepList>
@@ -72,6 +75,7 @@ export const ProcessSteps: React.FC<ProcessStepsProps> = ({ ...props }: ProcessS
           <StepHeader>
             <StepMarker>3</StepMarker>
             <StepHeading>Uitvoeren van maatregelen</StepHeading>
+            <StepExpandedIcon />
           </StepHeader>
         </StepSection>
       </Step>
@@ -90,6 +94,7 @@ export const ProcessSteps: React.FC<ProcessStepsProps> = ({ ...props }: ProcessS
 export default ProcessSteps;
 
 export * from './Step';
+export * from './StepExpandedIcon';
 export * from './StepHeading';
 export * from './StepHeadingLabel';
 export * from './StepList';
