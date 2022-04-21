@@ -18,7 +18,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "rollup -c ../../rollup.config.js",
+    "build": "npm-run-all build:**",
+    "build:css": "sass --no-source-map src/index.scss:dist/index.css",
+    "build:js": "rollup -c ../../rollup.config.js",
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
