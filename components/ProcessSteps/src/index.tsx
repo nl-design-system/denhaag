@@ -104,4 +104,3 @@ export * from './SubStep';
 export * from './SubStepHeading';
 export * from './SubStepList';
 export * from './SubStepMarker';
-export * from './StepExpandedIcon';
