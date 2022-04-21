@@ -10,9 +10,14 @@
 
 .denhaag-process-steps__step-heading--checked {
   color: var(--denhaag-process-steps-step-heading-checked-color);
+  font-family: var(--denhaag-process-steps-step-heading-checked-font-family);
+  font-size: var(--denhaag-process-steps-step-heading-checked-font-size);
+  font-weight: var(--denhaag-process-steps-step-heading-checked-font-weight);
 }
 
 .denhaag-process-steps__step-heading--current {
   color: var(--denhaag-process-steps-step-heading-current-color);
+  font-family: var(--denhaag-process-steps-step-heading-current-font-family);
+  font-size: var(--denhaag-process-steps-step-heading-current-font-size);
   font-weight: var(--denhaag-process-steps-step-heading-current-font-weight);
 }
