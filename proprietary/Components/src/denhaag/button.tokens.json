@@ -4,8 +4,8 @@
       "border-radius": { "value": "{denhaag.border-radius}" },
       "border-width": { "value": "1px" },
       "font-family": { "value": "{denhaag.typography.sans-serif.font-family}" },
-      "padding-block": { "value": "8px" },
-      "padding-inline": { "value": "16px" },
+      "padding-block": { "value": "{denhaag.space.block.xs}" },
+      "padding-inline": { "value": "{denhaag.space.inline.md}" },
       "focus": {
         "border-color": { "value": "{denhaag.focus.border-color}" },
         "border-width": { "value": "{denhaag.focus.border-width}" },
@@ -43,7 +43,7 @@
       },
       "large-size": {
         "padding-block": { "value": "0.40625rem" },
-        "padding-inline": { "value": "20px" }
+        "padding-inline": { "value": "{denhaag.space.inline.lg}" }
       },
       "medium-size": {
         "padding-block": { "value": "{denhaag.button.padding-block}" },
