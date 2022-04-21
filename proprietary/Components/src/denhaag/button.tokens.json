@@ -42,7 +42,7 @@
         }
       },
       "large-size": {
-        "padding-block": { "value": "11px" },
+        "padding-block": { "value": "0.40625rem" },
         "padding-inline": { "value": "20px" }
       },
       "medium-size": {
