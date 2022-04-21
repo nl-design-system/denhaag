@@ -1,4 +1,6 @@
 .denhaag-process-steps__step-marker {
+  position: relative;
+  z-index: 1;
   align-items: center;
   background-color: var(--denhaag-process-steps-step-marker-background-color);
   block-size: var(--denhaag-process-steps-step-marker-size);
