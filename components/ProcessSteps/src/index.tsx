@@ -1,8 +1,9 @@
 import React from 'react';
 import { Step } from './Step';
 import { StepList, StepListProps } from './StepList';
+import { StepSection } from './StepSection';
+import { StepHeader } from './StepHeader';
 import { StepHeading } from './StepHeading';
-import { StepHeadingLabel } from './StepHeadingLabel';
 import { StepMarker } from './StepMarker';
 import { SubStep } from './SubStep';
 import { SubStepList } from './SubStepList';
@@ -27,10 +28,14 @@ export const ProcessSteps: React.FC<ProcessStepsProps> = ({ ...props }: ProcessS
   return (
     <StepList {...props}>
       <Step checked expanded>
-        <StepHeading checked>
-          <StepMarker checked />
-          <StepHeadingLabel>Deelname aan geluidsonderzoek</StepHeadingLabel>
-        </StepHeading>
+        <StepSection>
+          <StepHeader>
+            <StepMarker>
+              <div>1</div>
+            </StepMarker>
+            <StepHeading>Deelname aan geluidsonderzoek</StepHeading>
+          </StepHeader>
+        </StepSection>
         <SubStepList>
           <SubStep>
             <SubStepMarker />
@@ -39,12 +44,14 @@ export const ProcessSteps: React.FC<ProcessStepsProps> = ({ ...props }: ProcessS
         </SubStepList>
       </Step>
       <Step current expanded>
-        <StepHeading current>
-          <StepMarker current>
-            <div>2</div>
-          </StepMarker>
-          <StepHeadingLabel>Onderzoek naar geluidsoverlast</StepHeadingLabel>
-        </StepHeading>
+        <StepSection>
+          <StepHeader>
+            <StepMarker>
+              <div>2</div>
+            </StepMarker>
+            <StepHeading>Onderzoek naar geluidsoverlast</StepHeading>
+          </StepHeader>
+        </StepSection>
         <SubStepList>
           <SubStep>
             <SubStepMarker />
@@ -61,16 +68,20 @@ export const ProcessSteps: React.FC<ProcessStepsProps> = ({ ...props }: ProcessS
         </SubStepList>
       </Step>
       <Step>
-        <StepHeading>
-          <StepMarker>3</StepMarker>
-          <StepHeadingLabel>Uitvoeren van maatregelen</StepHeadingLabel>
-        </StepHeading>
+        <StepSection>
+          <StepHeader>
+            <StepMarker>3</StepMarker>
+            <StepHeading>Uitvoeren van maatregelen</StepHeading>
+          </StepHeader>
+        </StepSection>
       </Step>
       <Step>
-        <StepHeading>
-          <StepMarker>4</StepMarker>
-          <StepHeadingLabel>Maatregelen zijn uitgevoerd</StepHeadingLabel>
-        </StepHeading>
+        <StepSection>
+          <StepHeader>
+            <StepMarker>4</StepMarker>
+            <StepHeading>Maatregelen zijn uitgevoerd</StepHeading>
+          </StepHeader>
+        </StepSection>
       </Step>
     </StepList>
   );

@@ -2,26 +2,21 @@ import React, { HTMLAttributes } from 'react';
 import clsx from 'clsx';
 import { StepContext } from './Step';
 
-export interface StepHeadingProps extends HTMLAttributes<HTMLDivElement> {
-  checked?: boolean;
-  current?: boolean;
-}
+export interface StepHeadingProps extends HTMLAttributes<HTMLDivElement> {}
 
-export const StepHeading: React.FC<StepHeadingProps> = ({ children, current, checked }) => {
-  const { expanded, setExpanded } = React.useContext(StepContext);
+export const StepHeading: React.FC<StepHeadingProps> = ({ children, ...props }) => {
+  const { context } = React.useContext(StepContext);
 
   return (
-    <button
+    <div
+      {...props}
       className={clsx(
         'denhaag-process-steps__step-heading',
-        checked && 'denhaag-process-steps__step-heading--checked',
-        current && 'denhaag-process-steps__step-heading--current',
+        context.checked && 'denhaag-process-steps__step-heading--checked',
+        context.current && 'denhaag-process-steps__step-heading--current',
       )}
-      onClick={() => {
-        setExpanded(!expanded);
-      }}
     >
       {children}
-    </button>
+    </div>
   );
 };

@@ -1,7 +1,17 @@
 .denhaag-process-steps__sub-step {
+  position: relative;
   align-items: baseline;
   display: flex;
   flex-direction: row;
   gap: 23px;
   margin-block-start: var(--denhaag-process-steps-sub-step-distance);
+}
+
+.denhaag-process-steps__sub-step::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: calc(-1 * (var(--denhaag-process-steps-sub-step-distance) + 10px));
+  height: calc(var(--denhaag-process-steps-sub-step-distance) + 15px);
+  outline: 1px solid var(--denhaag-color-green-3);
 }
