@@ -51,6 +51,10 @@
   width: var(--denhaag-image-download-text-width);
 }
 
+.denhaag-image__figcaption-download:hover {
+  --denhaag-image-figcaption-download-color: var(--denhaag-image-figcaption-download-hover-color);
+}
+
 .denhaag-image__figcaption-download:only-child .denhaag-image__icon,
 .denhaag-image__figcaption-download:only-child .denhaag-image__download-text {
   vertical-align: var(--denhaag-image-figcaption-download-only-vertical-align);

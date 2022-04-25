@@ -14,6 +14,7 @@
         "download": {
           "align-items": { "value": "flex-end" },
           "color": { "value": "{denhaag.color.blue.3}" },
+          "hover-color": { "value": "{denhaag.color.blue.4}" },
           "display": { "value": "flex" },
           "font-size": { "value": "1.125rem" },
           "line-height": { "value": "1" },

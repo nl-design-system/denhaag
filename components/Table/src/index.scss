@@ -15,6 +15,7 @@
 }
 
 .denhaag-table__cell {
+  color: var(--denhaag-table-cell-color);
   font-weight: var(--denhaag-table-cell-font-weight, normal);
   line-height: var(--utrecht-table-cell-line-height, inherit);
 }
@@ -31,6 +32,7 @@
 }
 
 .denhaag-table__heading {
+  color: var(--denhaag-table-heading-color);
   font-weight: var(--utrecht-table-heading-font-weight, bold);
 }
 
