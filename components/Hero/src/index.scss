@@ -14,7 +14,6 @@
   color: var(--denhaag-hero-color);
   display: flex;
   min-height: var(--denhaag-hero-min-height);
-  overflow-x: hidden;
   position: relative;
 }
 
@@ -62,8 +61,6 @@
   --denhaag-hero-theme-page-content-padding-inline: calc(
     (var(--denhaag-hero-container-max-width) / var(--denhaag-hero-columns, 12)) * 1
   );
-
-  overflow: var(--denhaag-hero-theme-page-overflow);
 }
 
 .denhaag-hero__container {

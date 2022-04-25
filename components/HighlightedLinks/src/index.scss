@@ -1,0 +1,33 @@
+.denhaag-highlighted-links {
+  background-color: var(--denhaag-highlighted-links-background-color);
+  padding-block-start: var(--denhaag-highlighted-links-padding-block-start);
+  padding-block-end: var(--denhaag-highlighted-links-padding-block-end);
+  width: var(--denhaag-highlighted-links-width);
+}
+
+.denhaag-highlighted-links__navigation-list {
+  display: var(--denhaag-highlighted-links-navigation-list-display);
+  gap: var(--denhaag-highlighted-links-navigation-list-gap);
+}
+
+@media (min-width: 48rem) {
+  .denhaag-highlighted-links__navigation-list {
+    grid-template-columns: var(--denhaag-highlighted-links-navigation-list-grid-template-columns);
+  }
+}
+
+@media (min-width: 68.875rem) {
+  .denhaag-highlighted-links__navigation-list {
+    --denhaag-highlighted-links-navigation-list-grid-template-columns: var(
+      --denhaag-highlighted-links-navigation-list-grid-template-columns-2
+    );
+  }
+}
+
+@media (min-width: 80rem) {
+  .denhaag-highlighted-links__navigation-list {
+    --denhaag-highlighted-links-navigation-list-grid-template-columns: var(
+      --denhaag-highlighted-links-navigation-list-grid-template-columns-3
+    );
+  }
+}
