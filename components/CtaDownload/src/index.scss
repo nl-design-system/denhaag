@@ -2,6 +2,8 @@
   --denhaag-cta-download-icon-width-fallback: calc(var(--denhaag-cta-download-gap) * 4);
 
   align-items: center;
+  border-left: 1px solid var(--denhaag-cta-download-border-color, currentColor);
+  border-right: 1px solid var(--denhaag-cta-download-border-color, currentColor);
   box-shadow: 0 1px 0 var(--denhaag-cta-download-border-color, currentColor),
     inset 0 1px 0 var(--denhaag-cta-download-border-color, currentColor);
   color: var(--denhaag-cta-download-color);
@@ -23,21 +25,21 @@
 
 .denhaag-cta-download:hover,
 .denhaag-cta-download--hover {
-  --denhaag-cta-download-title-color: var(
-    --denhaag-cta-download-hover-highlight-color,
+  --denhaag-cta-download-dot-background-color: var(
+    --denhaag-cta-download-hover-dot-background-color,
     var(--denhaag-cta-download-color)
   );
 }
 
 .denhaag-cta-download:hover .denhaag-cta-link__dot {
-  background-color: var(--denhaag-cta-download-hover-highlight-color, var(--denhaag-cta-download-color));
+  background-color: var(--denhaag-cta-download-hover-dot-background-color, var(--denhaag-cta-download-color));
 }
 
 .denhaag-cta-download:focus,
 .denhaag-cta-download--focus {
-  --denhaag-cta-download-title-color: var(
-    --denhaag-cta-download-focus-highlight-color,
-    var(--denhaag-cta-download-hover-highlight-color)
+  --denhaag-cta-download-dot-background-color: var(
+    --denhaag-cta-download-focus-dot-background-color,
+    var(--denhaag-cta-download-hover-dot-background-color)
   );
 
   outline: var(--denhaag-cta-download-focus-outline);
@@ -46,7 +48,7 @@
 .denhaag-cta-download__dot {
   align-items: center;
   aspect-ratio: 1 / 1;
-  background-color: var(--denhaag-cta-download-title-color, var(--denhaag-cta-download-color));
+  background-color: var(--denhaag-cta-download-dot-background-color, var(--denhaag-cta-download-color));
   border-radius: var(--denhaag-cta-download-width, 50%);
   color: var(--denhaag-cta-download-dot-color);
   display: inline-flex;
@@ -71,7 +73,7 @@
 }
 
 .denhaag-cta-download__title {
-  color: var(--denhaag-cta-download-title-color, inherit);
+  color: var(--denhaag-cta-download-title-color-color, inherit);
   font-size: var(--denhaag-cta-download-title-font-size, var(--denhaag-cta-download-font-size, 1rem));
   font-weight: var(--denhaag-cta-download-title-font-weight, inherit);
   margin-block-start: 0;

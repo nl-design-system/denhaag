@@ -2,6 +2,8 @@
   --denhaag-cta-event-icon-width-fallback: calc(var(--denhaag-cta-event-gap) * 4);
 
   align-items: center;
+  border-left: 1px solid var(--denhaag-cta-event-border-color, currentColor);
+  border-right: 1px solid var(--denhaag-cta-event-border-color, currentColor);
   box-shadow: 0 1px 0 var(--denhaag-cta-event-border-color, currentColor),
     inset 0 1px 0 var(--denhaag-cta-event-border-color, currentColor);
   color: var(--denhaag-cta-event-color);
@@ -23,14 +25,17 @@
 
 .denhaag-cta-event:hover,
 .denhaag-cta-event--hover {
-  --denhaag-cta-event-title-color: var(--denhaag-cta-event-hover-highlight-color, var(--denhaag-cta-event-color));
+  --denhaag-cta-event-dot-background-color: var(
+    --denhaag-cta-event-hover-dot-background-color,
+    var(--denhaag-cta-event-color)
+  );
 }
 
 .denhaag-cta-event:focus,
 .denhaag-cta-event--focus {
-  --denhaag-cta-event-title-color: var(
-    --denhaag-cta-event-focus-highlight-color,
-    var(--denhaag-cta-event-hover-highlight-color)
+  --denhaag-cta-event-dot-background-color: var(
+    --denhaag-cta-event-focus-dot-background-color,
+    var(--denhaag-cta-event-hover-dot-background-color)
   );
 
   outline: var(--denhaag-cta-event-focus-outline);
@@ -39,7 +44,7 @@
 .denhaag-cta-event__date {
   align-items: center;
   aspect-ratio: 1 / 1;
-  background-color: var(--denhaag-cta-event-title-color, var(--denhaag-cta-event-color));
+  background-color: var(--denhaag-cta-event-dot-background-color, var(--denhaag-cta-event-color));
   border-radius: var(--denhaag-cta-event-width, 50%);
   color: var(--denhaag-cta-event-date-color);
   display: inline-flex;
