@@ -1,5 +1,7 @@
 .denhaag-cta-link {
   align-items: center;
+  border-left: 1px solid var(--denhaag-cta-link-border-color, currentColor);
+  border-right: 1px solid var(--denhaag-cta-link-border-color, currentColor);
   box-shadow: 0 1px 0 var(--denhaag-cta-link-border-color, currentColor),
     inset 0 1px 0 var(--denhaag-cta-link-border-color, currentColor);
   color: var(--denhaag-cta-link-color);
@@ -65,6 +67,5 @@
 
 .denhaag-cta-link__highlight,
 .denhaag-cta-link > span {
-  color: var(--denhaag-cta-link-highlight-color);
   font-weight: var(--denhaag-cta-link-highlight-font-weight, inherit);
 }

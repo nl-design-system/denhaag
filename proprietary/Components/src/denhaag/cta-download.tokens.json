@@ -36,8 +36,8 @@
         "value": "{denhaag.space.block.5xl}"
       },
       "focus": {
-        "highlight": {
-          "color": {
+        "dot": {
+          "background-color": {
             "value": "{denhaag.color.blue.4}"
           }
         },
@@ -46,13 +46,16 @@
         }
       },
       "hover": {
-        "highlight": {
-          "color": {
+        "dot": {
+          "background-color": {
             "value": "{denhaag.color.blue.4}"
           }
         }
       },
       "dot": {
+        "background-color": {
+          "value": "{denhaag.color.blue.3}"
+        },
         "color": {
           "value": "{denhaag.color.white}"
         }
@@ -64,7 +67,7 @@
       },
       "title": {
         "color": {
-          "value": "{denhaag.color.blue.3}"
+          "value": "{denhaag.color.grey.5}"
         },
         "font": {
           "size": {
