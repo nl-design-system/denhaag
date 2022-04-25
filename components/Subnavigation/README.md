@@ -1,10 +1,10 @@
-# Subnavigation
+# Sidenav
 
 The subnavigation is used as navigational element. This appears as an overlay on mobile and in the sidebar on a desktop.
 
 ## When to use
 
-Subnavigation refers to the navigation UI that helps users access lower-level categories in the site’s information architecture. Those categories, or pages, are separate from the main menu. The user can navigate to those pages by clicking on the name of the category.
+Sidenav refers to the navigation UI that helps users access lower-level categories in the site’s information architecture. Those categories, or pages, are separate from the main menu. The user can navigate to those pages by clicking on the name of the category.
 
 The goals are:
 
