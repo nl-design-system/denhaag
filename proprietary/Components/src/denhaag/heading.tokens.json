@@ -1,0 +1,8 @@
+{
+  "denhaag": {
+    "heading": {
+      "color": { "value": "{denhaag.color.grey.5}" },
+      "line-height": { "value": "{denhaag.typography.scale.s.line-height}" }
+    }
+  }
+}
