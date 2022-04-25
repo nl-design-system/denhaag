@@ -91,6 +91,9 @@
             "offset": {
               "value": 0
             },
+            "offset-s": {
+              "value": 2
+            },
             "offset-m": {
               "value": 1
             }

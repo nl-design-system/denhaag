@@ -21,6 +21,7 @@
   --denhaag-hero-color: var(--denhaag-hero-home-title-color);
   --denhaag-hero-content-align-self: var(--denhaag-hero-home-content-align-self);
   --denhaag-hero-content-padding-block: var(--denhaag-hero-home-content-padding-block);
+  --denhaag-hero-content-column-offset: var(--denhaag-hero-home-content-column-offset);
   --denhaag-hero-image-path: var(--denhaag-hero-home-image-path, 0);
   --denhaag-hero-min-height: var(--denhaag-hero-home-min-height);
   --denhaag-hero-title-margin-block-end: var(--denhaag-hero-home-title-margin-block-end);
@@ -189,6 +190,7 @@
 
   .denhaag-hero--home {
     --denhaag-hero-content-column-end: var(--denhaag-hero-home-content-column-end-s, 12);
+    --denhaag-hero-home-content-column-offset: var(--denhaag-hero-home-content-column-offset-s, 0);
     --denhaag-hero-content-padding-block: var(--denhaag-hero-home-content-padding-block-s);
     --denhaag-hero-min-height: var(--denhaag-hero-home-min-height-s);
 
@@ -235,7 +237,7 @@
 
   .denhaag-hero--home {
     --denhaag-hero-content-column-end: var(--denhaag-hero-home-content-column-end-m, 12);
-    --denhaag-hero-content-column-offset: var(--denhaag-hero-home-content-column-offset-m, 0);
+    --denhaag-hero-home-content-column-offset: var(--denhaag-hero-home-content-column-offset-m, 0);
     --denhaag-hero-min-height: var(--denhaag-hero-home-min-height-m);
   }
 
