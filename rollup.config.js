@@ -20,12 +20,12 @@ const externalDependencies = [
 const internalDependencies = _.keys(tsconfig.compilerOptions.paths);
 const dependencies = externalDependencies.concat(internalDependencies);
 
-export default {
+const createConfig = ({ dir, format }) => ({
   input: 'src/index.tsx',
   output: {
-    dir: './dist',
+    dir,
     sourcemap: false,
-    format: 'esm',
+    format,
     compact: true,
   },
   plugins: [
@@ -38,8 +38,13 @@ export default {
     svgr({ icon: true, svgo: true, memo: true }),
     typescript({
       cacheDir: path.join(__dirname, '.rollup-cache'),
-      tsBuildInfoFile: 'dist/.tsbuildinfo',
+      tsBuildInfoFile: `${dir}/.tsbuildinfo`,
+      compilerOptions: {
+        outDir: dir,
+      },
     }),
   ],
   external: dependencies,
-};
+});
+
+export default [createConfig({ format: 'cjs', dir: './dist/cjs' }), createConfig({ format: 'esm', dir: './dist/mjs' })];
