@@ -45,6 +45,12 @@
         },
         "max-width-xl": {
           "value": "98rem"
+        },
+        "padding": {
+          "value": "{denhaag.space.inline.xl}"
+        },
+        "padding-s": {
+          "value": 0
         }
       },
       "home": {

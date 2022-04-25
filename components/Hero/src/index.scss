@@ -76,8 +76,8 @@
   max-width: var(--denhaag-hero-container-max-width, 100%);
   padding-block-end: var(--denhaag-hero-container-padding-block-end, 0);
   padding-block-start: var(--denhaag-hero-container-padding-block-start, 0);
-  padding-inline-end: var(--denhaag-hero-container-gutter);
-  padding-inline-start: var(--denhaag-hero-container-gutter);
+  padding-inline-end: var(--denhaag-hero-container-padding);
+  padding-inline-start: var(--denhaag-hero-container-padding);
   position: relative;
   width: 100%;
 }
@@ -160,6 +160,7 @@
       --denhaag-hero-container-max-width-xs,
       var(--denhaag-hero-container-max-width)
     );
+    --denhaag-hero-container-padding: var(--denhaag-hero-container-padding-s);
   }
 }
 
