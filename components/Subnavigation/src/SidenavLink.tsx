@@ -7,9 +7,8 @@ export interface SidenavLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement
 
 export const SidenavLink: React.FC<SidenavLinkProps> = ({ current, ...props }: SidenavLinkProps) => {
   const className = clsx('denhaag-sidenav__link', current && 'denhaag-sidenav__link--current', props.className);
-
   return (
-    <a {...props} className={className}>
+    <a {...props} aria-current={current || props['aria-current'] ? 'page' : undefined} className={className}>
       {props.children}
     </a>
   );
