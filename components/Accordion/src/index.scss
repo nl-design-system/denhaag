@@ -61,14 +61,6 @@
   color: var(--denhaag-accordion-active-color);
 }
 
-.denhaag-accordion__panel--expanded .denhaag-accordion__title,
-.denhaag-accordion__panel--expanded:active .denhaag-accordion__title,
-.denhaag-accordion__panel--expanded:hover .denhaag-accordion__title,
-.denhaag-accordion__panel--expanded:focus .denhaag-accordion__title {
-  font-weight: var(--denhaag-accordion-expanded-font-weight);
-  color: var(--denhaag-accordion-active-color);
-}
-
 .denhaag-accordion__summary {
   color: var(--denhaag-accordion-summary-color);
   flex-grow: 1;
