@@ -4,7 +4,7 @@
   border: 0;
   border-radius: var(--denhaag-button-border-radius);
   color: var(--denhaag-button-primary-action-color);
-  cursor: pointer;
+  cursor: default;
   display: inline-flex;
   font-family: var(--denhaag-button-font-family);
   font-size: var(--denhaag-typography-scale-base-font-size);
@@ -141,4 +141,21 @@
   display: inherit;
   margin-inline-end: -4px;
   margin-inline-start: 8px;
+}
+
+.denhaag-button__sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  margin-block-start: -1px;
+  margin-block-end: -1px;
+  margin-inline-start: -1px;
+  margin-inline-end: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
