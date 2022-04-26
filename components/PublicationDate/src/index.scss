@@ -16,7 +16,7 @@
     display: inline;
   }
 
-  .denhaag-publication-date__published {
+  .denhaag-publication > span + span {
     border-inline-end-color: var(--denhaag-publication-date-border-color);
     border-inline-end-style: var(--denhaag-publication-date-border-style);
     border-inline-end-width: var(--denhaag-publication-date-border-width);
