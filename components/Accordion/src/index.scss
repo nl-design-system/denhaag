@@ -61,12 +61,8 @@
   color: var(--denhaag-accordion-active-color);
 }
 
-.denhaag-accordion__panel .denhaag-accordion__title,
-.denhaag-accordion__panel:hover .denhaag-accordion__title,
-.denhaag-accordion__panel:focus .denhaag-accordion__title {
-  font-weight: var(--denhaag-accordion-font-weight);
-}
-
+.denhaag-accordion__panel--expanded .denhaag-accordion__title,
+.denhaag-accordion__panel--expanded:active .denhaag-accordion__title,
 .denhaag-accordion__panel--expanded:hover .denhaag-accordion__title,
 .denhaag-accordion__panel--expanded:focus .denhaag-accordion__title {
   font-weight: var(--denhaag-accordion-expanded-font-weight);

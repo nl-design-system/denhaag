@@ -54,6 +54,7 @@
 .denhaag-pagination__link:focus,
 .denhaag-pagination__link--focus {
   outline: var(--denhaag-link-focus-outline);
+  border-radius: 0;
 }
 
 .denhaag-pagination__link:disabled,
@@ -94,13 +95,7 @@
 
 .denhaag-pagination__link--current {
   --denhaag-pagination-color: var(--denhaag-pagination-link-current-color);
-  --denhaag-pagination-background-color: var(--denhaag-pagination-link-current-background-color);
-}
-
-.denhaag-pagination__link--current.denhaag-pagination__link:hover,
-.denhaag-pagination__link--current.denhaag-pagination__link--hover {
-  --denhaag-pagination-color: var(--denhaag-pagination-link-current-hover-color);
-  --denhaag-pagination-background-color: var(--denhaag-pagination-link-current-hover-background-color);
+  --denhaag-pagination-font-weight: var(--denhaag-pagination-link-current-font-weight);
 }
 
 .denhaag-pagination__link--current.denhaag-pagination__link:disabled,

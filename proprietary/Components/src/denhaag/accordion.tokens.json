@@ -8,10 +8,10 @@
       "padding": { "value": "16px" },
       "margin": { "value": "12px" },
       "active": {
-        "color": { "value": "{denhaag.color.blue.3}" }
+        "color": { "value": "{denhaag.color.green.3}" }
       },
       "expanded": {
-        "font-weight": { "value": "500" },
+        "font-weight": { "value": "{denhaag.typography.weight.bold}" },
         "transform": { "value": "rotate(180deg)" }
       },
       "disabled": {
