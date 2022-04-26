@@ -66,6 +66,9 @@
       "path": "../../components/Select"
     },
     {
+      "path": "../../components/Sidenav"
+    },
+    {
       "path": "../../components/Switch"
     },
     {

@@ -20,6 +20,7 @@ export * from '@gemeente-denhaag/menu';
 export * from '@gemeente-denhaag/process-steps';
 export * from '@gemeente-denhaag/radio';
 export * from '@gemeente-denhaag/select';
+export * from '@gemeente-denhaag/sidenav';
 export * from '@gemeente-denhaag/switch';
 export * from '@gemeente-denhaag/stylesprovider';
 export * from '@gemeente-denhaag/tab';

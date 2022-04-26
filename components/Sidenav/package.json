@@ -1,12 +1,12 @@
 {
-  "name": "@gemeente-denhaag/subnavigation",
-  "version": "0.1.0-alpha.1",
-  "description": "A subnavigation component",
+  "name": "@gemeente-denhaag/sidenav",
+  "version": "0.1.0-alpha.0",
+  "description": "A sidenav component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/nl-design-system/denhaag.git",
-    "directory": "components/Subnavigation"
+    "directory": "components/Sidenav"
   },
   "license": "EUPL-1.2",
   "author": "Municipality of The Hague",
