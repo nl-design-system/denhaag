@@ -34,6 +34,10 @@
   color: var(--denhaag-link-group-dark-denhaag-link-color);
 }
 
+.denhaag-link-group--dark .denhaag-link:focus {
+  --denhaag-focus-border-color: var(--denhaag-link-group-dark-denhaag-link-focus-border-color);
+}
+
 .denhaag-link-group .denhaag-link:hover {
   text-decoration: var(--denhaag-link-group-denhaag-link-hover-text-decoration);
 }
