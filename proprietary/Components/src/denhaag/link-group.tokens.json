@@ -22,7 +22,8 @@
       },
       "dark": {
         "denhaag-link-color": { "value": "{denhaag.color.white}" },
-        "caption-color": { "value": "{denhaag.color.ocher.3}" }
+        "caption-color": { "value": "{denhaag.color.ocher.3}" },
+        "denhaag-link-focus-border-color": { "value": "{denhaag.color.ocher.2}" }
       },
       "denhaag-link-hover": {
         "text-decoration": { "value": "underline" }
