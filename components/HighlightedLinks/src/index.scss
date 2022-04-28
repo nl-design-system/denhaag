@@ -6,6 +6,8 @@
 }
 
 .denhaag-highlighted-links__navigation-list {
+  --denhaag-link-group-navigation-list-margin-block-end: 0;
+
   display: var(--denhaag-highlighted-links-navigation-list-display);
   gap: var(--denhaag-highlighted-links-navigation-list-gap);
 }
