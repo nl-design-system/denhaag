@@ -4,7 +4,7 @@
   border: 0;
   border-radius: var(--denhaag-button-border-radius);
   color: var(--denhaag-button-primary-action-color);
-  cursor: default;
+  cursor: var(--denhaag-button-cursor, default);
   display: inline-flex;
   font-family: var(--denhaag-button-font-family);
   font-size: var(--denhaag-typography-scale-base-font-size);
@@ -15,6 +15,10 @@
   padding-inline-start: var(--denhaag-button-medium-size-padding-inline, var(--denhaag-button-padding-inline));
   position: relative;
   text-decoration: none;
+}
+
+a.denhaag-button {
+  --denhaag-button-cursor: pointer;
 }
 
 .denhaag-button--focus::after,
