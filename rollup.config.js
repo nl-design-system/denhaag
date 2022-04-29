@@ -3,10 +3,19 @@ import nodeResolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import svgr from '@svgr/rollup';
 import _ from 'lodash';
+import fs from 'fs';
 import path from 'path';
 import postcss from 'rollup-plugin-postcss';
 
 import tsconfig from './tsconfig.json';
+
+const inputExists = (config) => {
+  try {
+    return fs.existsSync(config.input);
+  } catch (e) {
+    return false;
+  }
+};
 
 const externalDependencies = [
   '@material-ui/core',
@@ -50,6 +59,21 @@ const createConfig = ({ dir, format }) => ({
 export const modernConfig = [
   createConfig({ format: 'cjs', dir: './dist/cjs' }),
   createConfig({ format: 'esm', dir: './dist/mjs' }),
-];
+  {
+    input: 'src/index.scss',
+    output: {
+      dir: './dist',
+      sourcemap: false,
+      format: 'esm',
+      compact: true,
+    },
+    plugins: [
+      postcss({
+        extensions: ['.css', '.scss'],
+        extract: true,
+      }),
+    ],
+  },
+].filter(inputExists);
 
 export default [createConfig({ format: 'esm', dir: './dist' })];
