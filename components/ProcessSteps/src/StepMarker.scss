@@ -3,7 +3,10 @@
   z-index: 1;
   align-items: center;
   background-color: var(--denhaag-process-steps-step-marker-background-color);
-  block-size: var(--denhaag-process-steps-step-marker-size);
+  block-size: var(--denhaag-process-steps-step-marker-size, 2em);
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--denhaag-process-steps-step-marker-border-color, transparent);
   border-radius: 50%;
   box-sizing: border-box;
   color: var(--denhaag-process-steps-step-marker-color);
@@ -11,7 +14,7 @@
   flex-grow: 0;
   font-size: var(--denhaag-process-steps-step-marker-font-size);
   font-weight: 400;
-  inline-size: var(--denhaag-process-steps-step-marker-size);
+  inline-size: var(--denhaag-process-steps-step-marker-size, 2em);
   justify-content: center;
   margin-block-end: var(--denhaag-process-steps-step-marker-margin);
   margin-block-start: var(--denhaag-process-steps-step-marker-margin);
@@ -26,12 +29,21 @@
 }
 
 .denhaag-process-steps__step-marker--checked {
-  background-color: white;
-  border: 2px solid var(--denhaag-color-green-3);
-  color: var(--denhaag-process-steps-step-marker-checked-color);
+  background-color: var(
+    --denhaag-process-steps-step-marker-checked-background-color,
+    var(--denhaag-process-steps-step-marker-background-color)
+  );
+  border-color: var(
+    --denhaag-process-steps-step-marker-checked-border-color,
+    var(--denhaag-process-steps-step-marker-border-color, transparent)
+  );
+  color: var(--denhaag-process-steps-step-marker-checked-color, var(--denhaag-process-steps-step-marker-color));
 }
 
 .denhaag-process-steps__step-marker--current {
-  background-color: var(--denhaag-process-steps-step-marker-current-background-color);
-  color: var(--denhaag-process-steps-step-marker-current-color);
+  background-color: var(
+    --denhaag-process-steps-step-marker-current-background-color,
+    var(--denhaag-process-steps-step-marker-background-color)
+  );
+  color: var(--denhaag-process-steps-step-marker-current-color, var(--denhaag-process-steps-step-marker-color));
 }
