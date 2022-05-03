@@ -9,7 +9,7 @@
 }
 
 .denhaag-process-steps__step-line,
-.denhaag-process-steps__step:nth-of-type(n + 2)::after {
+.denhaag-process-steps__step + .denhaag-process-steps__step::after {
   content: "";
   position: absolute;
   left: calc(max(var(--denhaag-process-steps-step-marker-size, 2em), 32px) / 2);
@@ -19,8 +19,8 @@
 }
 
 .denhaag-process-steps__step-line--connected,
-.denhaag-process-steps__step--checked:nth-of-type(n + 2)::after,
-.denhaag-process-steps__step--current:nth-of-type(n + 2)::after {
+.denhaag-process-steps__step + .denhaag-process-steps__step--checked::after,
+.denhaag-process-steps__step + .denhaag-process-steps__step--current::after {
   outline-style: solid;
   outline-color: var(--denhaag-process-steps-step-line-connected-color, var(--denhaag-process-steps-step-line-color));
 }
