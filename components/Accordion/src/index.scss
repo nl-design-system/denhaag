@@ -56,6 +56,8 @@
 .denhaag-accordion__title {
   --utrecht-heading-font-weight: var(--denhaag-accordion-title-font-weight);
   --denhaag-heading-color: var(--denhaag-accordion-title-color);
+  --utrecht-heading-5-margin-block-start: 0;
+  --utrecht-heading-5-margin-block-end: 0;
 
   flex-grow: var(--denhaag-accordion-title-flex-grow);
 }
