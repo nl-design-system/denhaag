@@ -42,6 +42,10 @@
   min-height: var(--denhaag-accordion-panel-min-height);
 }
 
+.denhaag-accordion__panel::-webkit-details-marker {
+  display: none;
+}
+
 .denhaag-accordion__panel--focus,
 .denhaag-accordion__panel:focus {
   border: var(--denhaag-accordion-panel-focus-border);
