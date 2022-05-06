@@ -1,6 +1,5 @@
 import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
 import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
-import "../stories.js";
 import "../index.scss";
 
 import pkg from "../../package.json";
@@ -34,164 +33,180 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Default">
-    <div class="story--components-surfaces-accordion--default">
-      <div class="denhaag-theme">
-        <div class="denhaag-accordion">
-          <div class="denhaag-accordion-container">
-            <div
-              class="denhaag-accordion__panel"
-              tabindex="0"
-              role="button"
-              aria-disabled="false"
-              aria-expanded="false"
-            >
-              <div class="denhaag-accordion__summary">
-                <p class="denhaag-accordion__title">Accordion</p>
-              </div>
-              <div class="denhaag-accordion__icon" aria-disabled="false" aria-hidden="true">
-                <span>
-                  <svg
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="denhaag-icon"
-                    focusable="false"
-                    aria-hidden="true"
-                    shape-rendering="auto"
-                  >
-                    <path
-                      d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
-                      fill="currentColor"
-                    ></path>
-                  </svg>
-                </span>
-                <span></span>
-              </div>
-            </div>
-            {/* <div class="denhaag-accordion__collapse denhaag-accordion__collapse--hidden"> */}
-            <div class="denhaag-accordion__collapse">
-              <div role="region">
-                <div class="denhaag-accordion__details">
-                  <p class="denhaag-accordion__paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet
-                    blandit leo lobortis eget.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="denhaag-accordion-container">
-            <div
-              class="denhaag-accordion__panel"
-              tabindex="0"
-              role="button"
-              aria-disabled="false"
-              aria-expanded="false"
-            >
-              <div class="denhaag-accordion__summary">
-                <p class="denhaag-accordion__title">Accordion</p>
-              </div>
-              <div class="denhaag-accordion__icon" aria-disabled="false" aria-hidden="true">
-                <span>
-                  <svg
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="denhaag-icon"
-                    focusable="false"
-                    aria-hidden="true"
-                    shape-rendering="auto"
-                  >
-                    <path
-                      d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
-                      fill="currentColor"
-                    ></path>
-                  </svg>
-                </span>
-                <span></span>
-              </div>
-            </div>
-            {/* <div class="denhaag-accordion__collapse denhaag-accordion__collapse--hidden"> */}
-            <div class="denhaag-accordion__collapse">
-              <div role="region">
-                <div class="denhaag-accordion__details">
-                  <p class="denhaag-accordion__paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet
-                    blandit leo lobortis eget.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="denhaag-accordion">
+      <details class="denhaag-accordion__container">
+        <summary class="denhaag-accordion__panel">
+          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+          <svg
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            focusable="false"
+            aria-hidden="true"
+            shape-rendering="auto"
+          >
+            <path
+              d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </summary>
+        <article class="denhaag-accordion__details">
+          <p class="utrecht-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+            leo lobortis eget.
+          </p>
+        </article>
+      </details>
+      <details class="denhaag-accordion__container">
+        <summary class="denhaag-accordion__panel">
+          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+          <svg
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            focusable="false"
+            aria-hidden="true"
+            shape-rendering="auto"
+          >
+            <path
+              d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </summary>
+        <article class="denhaag-accordion__details">
+          <p class="utrecht-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+            leo lobortis eget.
+          </p>
+        </article>
+      </details>
+      <details class="denhaag-accordion__container">
+        <summary class="denhaag-accordion__panel">
+          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+          <svg
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            focusable="false"
+            aria-hidden="true"
+            shape-rendering="auto"
+          >
+            <path
+              d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </summary>
+        <article class="denhaag-accordion__details">
+          <p class="utrecht-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+            leo lobortis eget.
+          </p>
+        </article>
+      </details>
     </div>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
-### Default Expanded
+### Open
 
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
-  <Story name="Default Expanded">
-    <div class="story--components-surfaces-accordion--default-expanded">
-      <div class="denhaag-theme">
-        <div class="denhaag-accordion">
-          <div class="denhaag-accordion-container">
-            <div
-              class="denhaag-accordion__panel denhaag-accordion__panel--expanded"
-              tabindex="0"
-              role="button"
-              aria-disabled="false"
-              aria-expanded="true"
-            >
-              <div class="denhaag-accordion__summary denhaag-accordion__summary--expanded">
-                <p class="denhaag-accordion__title">Accordion</p>
-              </div>
-              <div
-                class="denhaag-accordion__icon denhaag-accordion__icon--expanded"
-                aria-disabled="false"
-                aria-hidden="true"
-              >
-                <span>
-                  <svg
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="denhaag-icon"
-                    focusable="false"
-                    aria-hidden="true"
-                    shape-rendering="auto"
-                  >
-                    <path
-                      d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
-                      fill="currentColor"
-                    ></path>
-                  </svg>
-                </span>
-                <span></span>
-              </div>
-            </div>
-            <div class="denhaag-accordion__collapse">
-              <div role="region">
-                <div class="denhaag-accordion__details">
-                  <p class="denhaag-accordion__paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet
-                    blandit leo lobortis eget.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <Story name="Open">
+    <div class="denhaag-accordion">
+      <details class="denhaag-accordion__container">
+        <summary class="denhaag-accordion__panel">
+          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+          <svg
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            focusable="false"
+            aria-hidden="true"
+            shape-rendering="auto"
+          >
+            <path
+              d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </summary>
+        <article class="denhaag-accordion__details">
+          <p class="utrecht-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+            leo lobortis eget.
+          </p>
+        </article>
+      </details>
+      <details class="denhaag-accordion__container denhaag-accordion__container--open" open>
+        <summary class="denhaag-accordion__panel">
+          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+          <svg
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            focusable="false"
+            aria-hidden="true"
+            shape-rendering="auto"
+          >
+            <path
+              d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </summary>
+        <article class="denhaag-accordion__details">
+          <p class="utrecht-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+            leo lobortis eget.
+          </p>
+        </article>
+      </details>
+      <details class="denhaag-accordion__container">
+        <summary class="denhaag-accordion__panel">
+          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+          <svg
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            focusable="false"
+            aria-hidden="true"
+            shape-rendering="auto"
+          >
+            <path
+              d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </summary>
+        <article class="denhaag-accordion__details">
+          <p class="utrecht-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+            leo lobortis eget.
+          </p>
+        </article>
+      </details>
     </div>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
@@ -202,55 +217,88 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Disabled">
-    <div class="story--components-surfaces-accordion--disabled">
-      <div class="denhaag-theme">
-        <div class="denhaag-accordion">
-          <div class="denhaag-accordion-container denhaag-accordion-container--disabled">
-            <div
-              class="denhaag-accordion__panel denhaag-accordion__panel"
-              tabindex="-1"
-              role="button"
-              aria-disabled="true"
-              aria-expanded="false"
-            >
-              <div class="denhaag-accordion__summary" aria-disabled="true" aria-hidden="true">
-                <p class="denhaag-accordion__title">Accordion</p>
-              </div>
-              <div aria-disabled="false" aria-hidden="true">
-                <span>
-                  <svg
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="denhaag-icon"
-                    focusable="false"
-                    aria-hidden="true"
-                    shape-rendering="auto"
-                  >
-                    <path
-                      d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
-                      fill="currentColor"
-                    ></path>
-                  </svg>
-                </span>
-                <span></span>
-              </div>
-            </div>
-            <div class="denhaag-accordion__collapse denhaag-accordion__collapse--hidden">
-              <div role="region">
-                <div class="denhaag-accordion__details">
-                  <p class="denhaag-accordion__paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet
-                    blandit leo lobortis eget.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="denhaag-accordion">
+      <details class="denhaag-accordion__container">
+        <summary class="denhaag-accordion__panel">
+          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+          <svg
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            focusable="false"
+            aria-hidden="true"
+            shape-rendering="auto"
+          >
+            <path
+              d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </summary>
+        <article class="denhaag-accordion__details">
+          <p class="utrecht-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+            leo lobortis eget.
+          </p>
+        </article>
+      </details>
+      <details class="denhaag-accordion__container">
+        <summary class="denhaag-accordion__panel denhaag-accordion__panel--disabled" disabled>
+          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+          <svg
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            focusable="false"
+            aria-hidden="true"
+            shape-rendering="auto"
+          >
+            <path
+              d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </summary>
+        <article class="denhaag-accordion__details">
+          <p class="utrecht-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+            leo lobortis eget.
+          </p>
+        </article>
+      </details>
+      <details class="denhaag-accordion__container">
+        <summary class="denhaag-accordion__panel">
+          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+          <svg
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            focusable="false"
+            aria-hidden="true"
+            shape-rendering="auto"
+          >
+            <path
+              d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </summary>
+        <article class="denhaag-accordion__details">
+          <p class="utrecht-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+            leo lobortis eget.
+          </p>
+        </article>
+      </details>
     </div>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
@@ -261,55 +309,180 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Focus">
-    <div class="story--components-surfaces-accordion--focus">
-      <div class="denhaag-theme">
-        <div class="denhaag-accordion">
-          <div class="denhaag-accordion-container">
-            <div
-              class="denhaag-accordion__panel denhaag-accordion__panel--focus"
-              tabindex="0"
-              role="button"
-              aria-disabled="false"
-              aria-expanded="false"
-            >
-              <div class="denhaag-accordion__summary">
-                <p class="denhaag-accordion__title">Accordion</p>
-              </div>
-              <div aria-disabled="false" aria-hidden="true">
-                <span>
-                  <svg
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="denhaag-icon"
-                    focusable="false"
-                    aria-hidden="true"
-                    shape-rendering="auto"
-                  >
-                    <path
-                      d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
-                      fill="currentColor"
-                    ></path>
-                  </svg>
-                </span>
-                <span></span>
-              </div>
-            </div>
-            <div class="denhaag-accordion__collapse denhaag-accordion__collapse--hidden">
-              <div role="region">
-                <div class="denhaag-accordion__details">
-                  <p class="denhaag-accordion__paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet
-                    blandit leo lobortis eget.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="denhaag-accordion">
+      <details class="denhaag-accordion__container">
+        <summary class="denhaag-accordion__panel">
+          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+          <svg
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            focusable="false"
+            aria-hidden="true"
+            shape-rendering="auto"
+          >
+            <path
+              d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </summary>
+        <article class="denhaag-accordion__details">
+          <p class="utrecht-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+            leo lobortis eget.
+          </p>
+        </article>
+      </details>
+      <details class="denhaag-accordion__container">
+        <summary class="denhaag-accordion__panel denhaag-accordion__panel--focus">
+          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+          <svg
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            focusable="false"
+            aria-hidden="true"
+            shape-rendering="auto"
+          >
+            <path
+              d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </summary>
+        <article class="denhaag-accordion__details">
+          <p class="utrecht-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+            leo lobortis eget.
+          </p>
+        </article>
+      </details>
+      <details class="denhaag-accordion__container">
+        <summary class="denhaag-accordion__panel">
+          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+          <svg
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            focusable="false"
+            aria-hidden="true"
+            shape-rendering="auto"
+          >
+            <path
+              d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </summary>
+        <article class="denhaag-accordion__details">
+          <p class="utrecht-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+            leo lobortis eget.
+          </p>
+        </article>
+      </details>
+    </div>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Hover
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Hover">
+    <div class="denhaag-accordion">
+      <details class="denhaag-accordion__container">
+        <summary class="denhaag-accordion__panel">
+          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+          <svg
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            focusable="false"
+            aria-hidden="true"
+            shape-rendering="auto"
+          >
+            <path
+              d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </summary>
+        <article class="denhaag-accordion__details">
+          <p class="utrecht-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+            leo lobortis eget.
+          </p>
+        </article>
+      </details>
+      <details class="denhaag-accordion__container">
+        <summary class="denhaag-accordion__panel denhaag-accordion__panel--hover">
+          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+          <svg
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            focusable="false"
+            aria-hidden="true"
+            shape-rendering="auto"
+          >
+            <path
+              d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </summary>
+        <article class="denhaag-accordion__details">
+          <p class="utrecht-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+            leo lobortis eget.
+          </p>
+        </article>
+      </details>
+      <details class="denhaag-accordion__container">
+        <summary class="denhaag-accordion__panel">
+          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+          <svg
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            focusable="false"
+            aria-hidden="true"
+            shape-rendering="auto"
+          >
+            <path
+              d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </summary>
+        <article class="denhaag-accordion__details">
+          <p class="utrecht-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
+            leo lobortis eget.
+          </p>
+        </article>
+      </details>
     </div>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
