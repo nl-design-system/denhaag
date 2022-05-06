@@ -6,9 +6,8 @@
       "font-size": { "value": "{denhaag.typography.scale.base.font-size}" },
       "font-weight": {},
       "line-height": {},
-      "margin-block-end": {},
-      "margin-block-start": {},
-
+      "margin-block-end": { "value": "0.28125rem" },
+      "margin-block-start": { "value": "1rem" },
       "distanced": {
         "margin-block-start": { "value": "0" },
         "margin-block-end": { "value": "0" }

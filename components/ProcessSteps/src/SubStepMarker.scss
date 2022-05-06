@@ -2,13 +2,32 @@
   position: relative;
   z-index: 1;
   align-items: center;
-  background-color: var(--denhaag-color-white);
+  background-color: var(--denhaag-process-steps-sub-step-marker-background-color);
   border-radius: 50%;
   box-sizing: border-box;
   display: flex;
   flex-grow: 0;
   justify-content: center;
-  min-block-size: 16px;
-  min-inline-size: 16px;
-  border: 2px solid var(--denhaag-color-green-3);
+  min-block-size: var(--denhaag-process-steps-sub-step-marker-size, 16px);
+  min-inline-size: var(--denhaag-process-steps-sub-step-marker-size, 16px);
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--denhaag-process-steps-sub-step-marker-border-color);
+  margin-inline-start: calc(
+    (
+        max(var(--denhaag-process-steps-step-marker-size, 2em), 32px) -
+          var(--denhaag-process-steps-sub-step-marker-size, 16px)
+      ) / 2
+  );
+}
+
+.denhaag-process-steps__sub-step-marker--checked {
+  background-color: var(
+    --denhaag-process-steps-sub-step-marker-checked-background-color,
+    var(--denhaag-process-steps-sub-step-marker-background-color)
+  );
+  border-color: var(
+    --denhaag-process-steps-sub-step-marker-checked-border-color,
+    var(--denhaag-process-steps-sub-step-marker-border-color)
+  );
 }
