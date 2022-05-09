@@ -1,4 +1,6 @@
 .denhaag-cta-image-content {
+  --denhaag-button-cursor: var(--denhaag-cta-image-content-cursor);
+
   display: block;
   text-decoration: none;
   background-color: var(--denhaag-cta-image-content-background-color);
