@@ -22,6 +22,9 @@
 
 .denhaag-unordered-list li > a {
   @extend .denhaag-link;
+
+  padding-block-start: initial;
+  padding-block-end: initial;
 }
 
 .denhaag-unordered-list--lower-alpha {
