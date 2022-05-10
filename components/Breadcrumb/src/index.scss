@@ -114,7 +114,6 @@ ol.denhaag-breadcrumb__list {
   overflow: hidden;
   position: relative;
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(2)):not(:last-child) .denhaag-breadcrumb__text {
