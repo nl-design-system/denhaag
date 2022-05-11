@@ -1,6 +1,7 @@
 import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
 import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
 import "../index.scss";
+import "../story.js";
 
 import pkg from "../../package.json";
 import readme from "../../README.md";
@@ -34,9 +35,11 @@ import readme from "../../README.md";
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Default">
     <div class="denhaag-accordion">
-      <details class="denhaag-accordion__container">
-        <summary class="denhaag-accordion__panel">
-          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+      <div class="denhaag-accordion__container">
+        <h3 class="denhaag-accordion__panel">
+          <button aria-expanded="false" class="utrecht-heading-5 denhaag-accordion__title">
+            Accordion
+          </button>
           <svg
             class="denhaag-icon"
             width="1em"
@@ -53,17 +56,19 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </summary>
-        <article class="denhaag-accordion__details">
+        </h3>
+        <div class="denhaag-accordion__details">
           <p class="utrecht-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
             leo lobortis eget.
           </p>
-        </article>
-      </details>
-      <details class="denhaag-accordion__container">
-        <summary class="denhaag-accordion__panel">
-          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+        </div>
+      </div>
+      <div class="denhaag-accordion__container">
+        <h3 class="denhaag-accordion__panel">
+          <button aria-expanded="false" class="utrecht-heading-5 denhaag-accordion__title">
+            Accordion
+          </button>
           <svg
             class="denhaag-icon"
             width="1em"
@@ -80,17 +85,19 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </summary>
-        <article class="denhaag-accordion__details">
+        </h3>
+        <div class="denhaag-accordion__details">
           <p class="utrecht-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
             leo lobortis eget.
           </p>
-        </article>
-      </details>
-      <details class="denhaag-accordion__container">
-        <summary class="denhaag-accordion__panel">
-          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+        </div>
+      </div>
+      <div class="denhaag-accordion__container">
+        <h3 class="denhaag-accordion__panel">
+          <button aria-expanded="false" class="utrecht-heading-5 denhaag-accordion__title">
+            Accordion
+          </button>
           <svg
             class="denhaag-icon"
             width="1em"
@@ -107,14 +114,14 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </summary>
-        <article class="denhaag-accordion__details">
+        </h3>
+        <div class="denhaag-accordion__details">
           <p class="utrecht-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
             leo lobortis eget.
           </p>
-        </article>
-      </details>
+        </div>
+      </div>
     </div>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
@@ -126,9 +133,9 @@ import readme from "../../README.md";
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Open">
     <div class="denhaag-accordion">
-      <details class="denhaag-accordion__container">
-        <summary class="denhaag-accordion__panel">
-          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+      <div class="denhaag-accordion__container">
+        <h3 class="denhaag-accordion__panel">
+          <button class="utrecht-heading-5 denhaag-accordion__title">Accordion</button>
           <svg
             class="denhaag-icon"
             width="1em"
@@ -145,17 +152,17 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </summary>
-        <article class="denhaag-accordion__details">
+        </h3>
+        <div class="denhaag-accordion__details">
           <p class="utrecht-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
             leo lobortis eget.
           </p>
-        </article>
-      </details>
-      <details class="denhaag-accordion__container denhaag-accordion__container--open" open>
-        <summary class="denhaag-accordion__panel">
-          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+        </div>
+      </div>
+      <div class="denhaag-accordion__container denhaag-accordion__container--open" open>
+        <h3 class="denhaag-accordion__panel">
+          <button class="utrecht-heading-5 denhaag-accordion__title">Accordion</button>
           <svg
             class="denhaag-icon"
             width="1em"
@@ -172,17 +179,17 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </summary>
-        <article class="denhaag-accordion__details">
+        </h3>
+        <div class="denhaag-accordion__details">
           <p class="utrecht-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
             leo lobortis eget.
           </p>
-        </article>
-      </details>
-      <details class="denhaag-accordion__container">
-        <summary class="denhaag-accordion__panel">
-          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+        </div>
+      </div>
+      <div class="denhaag-accordion__container">
+        <h3 class="denhaag-accordion__panel">
+          <button class="utrecht-heading-5 denhaag-accordion__title">Accordion</button>
           <svg
             class="denhaag-icon"
             width="1em"
@@ -199,14 +206,14 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </summary>
-        <article class="denhaag-accordion__details">
+        </h3>
+        <div class="denhaag-accordion__details">
           <p class="utrecht-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
             leo lobortis eget.
           </p>
-        </article>
-      </details>
+        </div>
+      </div>
     </div>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
@@ -218,9 +225,9 @@ import readme from "../../README.md";
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Disabled">
     <div class="denhaag-accordion">
-      <details class="denhaag-accordion__container">
-        <summary class="denhaag-accordion__panel">
-          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+      <div class="denhaag-accordion__container">
+        <h3 class="denhaag-accordion__panel">
+          <button class="utrecht-heading-5 denhaag-accordion__title">Accordion</button>
           <svg
             class="denhaag-icon"
             width="1em"
@@ -237,17 +244,19 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </summary>
-        <article class="denhaag-accordion__details">
+        </h3>
+        <div class="denhaag-accordion__details">
           <p class="utrecht-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
             leo lobortis eget.
           </p>
-        </article>
-      </details>
-      <details class="denhaag-accordion__container">
-        <summary class="denhaag-accordion__panel denhaag-accordion__panel--disabled" disabled>
-          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+        </div>
+      </div>
+      <div class="denhaag-accordion__container">
+        <h3 class="denhaag-accordion__panel">
+          <button class="utrecht-heading-5 denhaag-accordion__title denhaag-accordion__title--disabled" disabled>
+            Accordion
+          </button>
           <svg
             class="denhaag-icon"
             width="1em"
@@ -264,17 +273,17 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </summary>
-        <article class="denhaag-accordion__details">
+        </h3>
+        <div class="denhaag-accordion__details">
           <p class="utrecht-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
             leo lobortis eget.
           </p>
-        </article>
-      </details>
-      <details class="denhaag-accordion__container">
-        <summary class="denhaag-accordion__panel">
-          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+        </div>
+      </div>
+      <div class="denhaag-accordion__container">
+        <h3 class="denhaag-accordion__panel">
+          <button class="utrecht-heading-5 denhaag-accordion__title">Accordion</button>
           <svg
             class="denhaag-icon"
             width="1em"
@@ -291,14 +300,14 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </summary>
-        <article class="denhaag-accordion__details">
+        </h3>
+        <div class="denhaag-accordion__details">
           <p class="utrecht-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
             leo lobortis eget.
           </p>
-        </article>
-      </details>
+        </div>
+      </div>
     </div>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
@@ -310,9 +319,9 @@ import readme from "../../README.md";
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Focus">
     <div class="denhaag-accordion">
-      <details class="denhaag-accordion__container">
-        <summary class="denhaag-accordion__panel">
-          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+      <div class="denhaag-accordion__container">
+        <h3 class="denhaag-accordion__panel">
+          <button class="utrecht-heading-5 denhaag-accordion__title">Accordion</button>
           <svg
             class="denhaag-icon"
             width="1em"
@@ -329,17 +338,17 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </summary>
-        <article class="denhaag-accordion__details">
+        </h3>
+        <div class="denhaag-accordion__details">
           <p class="utrecht-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
             leo lobortis eget.
           </p>
-        </article>
-      </details>
-      <details class="denhaag-accordion__container">
-        <summary class="denhaag-accordion__panel denhaag-accordion__panel--focus">
-          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+        </div>
+      </div>
+      <div class="denhaag-accordion__container">
+        <h3 class="denhaag-accordion__panel">
+          <button class="utrecht-heading-5  denhaag-accordion__title denhaag-accordion__title--focus">Accordion</button>
           <svg
             class="denhaag-icon"
             width="1em"
@@ -356,17 +365,17 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </summary>
-        <article class="denhaag-accordion__details">
+        </h3>
+        <div class="denhaag-accordion__details">
           <p class="utrecht-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
             leo lobortis eget.
           </p>
-        </article>
-      </details>
-      <details class="denhaag-accordion__container">
-        <summary class="denhaag-accordion__panel">
-          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+        </div>
+      </div>
+      <div class="denhaag-accordion__container">
+        <h3 class="denhaag-accordion__panel">
+          <button class="utrecht-heading-5 denhaag-accordion__title">Accordion</button>
           <svg
             class="denhaag-icon"
             width="1em"
@@ -383,14 +392,14 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </summary>
-        <article class="denhaag-accordion__details">
+        </h3>
+        <div class="denhaag-accordion__details">
           <p class="utrecht-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
             leo lobortis eget.
           </p>
-        </article>
-      </details>
+        </div>
+      </div>
     </div>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
@@ -402,9 +411,9 @@ import readme from "../../README.md";
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Hover">
     <div class="denhaag-accordion">
-      <details class="denhaag-accordion__container">
-        <summary class="denhaag-accordion__panel">
-          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+      <div class="denhaag-accordion__container">
+        <h3 class="denhaag-accordion__panel">
+          <button class="utrecht-heading-5 denhaag-accordion__title">Accordion</button>
           <svg
             class="denhaag-icon"
             width="1em"
@@ -421,17 +430,17 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </summary>
-        <article class="denhaag-accordion__details">
+        </h3>
+        <div class="denhaag-accordion__details">
           <p class="utrecht-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
             leo lobortis eget.
           </p>
-        </article>
-      </details>
-      <details class="denhaag-accordion__container">
-        <summary class="denhaag-accordion__panel denhaag-accordion__panel--hover">
-          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+        </div>
+      </div>
+      <div class="denhaag-accordion__container">
+        <h3 class="denhaag-accordion__panel">
+          <button class="utrecht-heading-5 denhaag-accordion__title denhaag-accordion__title--hover">Accordion</button>
           <svg
             class="denhaag-icon"
             width="1em"
@@ -448,17 +457,17 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </summary>
-        <article class="denhaag-accordion__details">
+        </h3>
+        <div class="denhaag-accordion__details">
           <p class="utrecht-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
             leo lobortis eget.
           </p>
-        </article>
-      </details>
-      <details class="denhaag-accordion__container">
-        <summary class="denhaag-accordion__panel">
-          <h3 class="utrecht-heading-5 denhaag-accordion__title">Accordion</h3>
+        </div>
+      </div>
+      <div class="denhaag-accordion__container">
+        <h3 class="denhaag-accordion__panel">
+          <button class="utrecht-heading-5 denhaag-accordion__title">Accordion</button>
           <svg
             class="denhaag-icon"
             width="1em"
@@ -475,14 +484,14 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </summary>
-        <article class="denhaag-accordion__details">
+        </h3>
+        <div class="denhaag-accordion__details">
           <p class="utrecht-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
             leo lobortis eget.
           </p>
-        </article>
-      </details>
+        </div>
+      </div>
     </div>
   </Story>
   {/* eslint-enable react/no-unknown-property */}

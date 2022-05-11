@@ -26,6 +26,9 @@
 
 .denhaag-accordion .denhaag-icon {
   color: var(--denhaag-accordion-denhaag-icon-color);
+  position: var(--denhaag-accordion-denhaag-icon-position);
+  top: var(--denhaag-accordion-denhaag-icon-top);
+  right: var(--denhaag-accordion-denhaag-icon-right);
 }
 
 .denhaag-accordion__panel {
@@ -37,24 +40,11 @@
   display: var(--denhaag-accordion-panel-display);
   padding-block-start: var(--denhaag-accordion-panel-padding-block);
   padding-block-end: var(--denhaag-accordion-panel-padding-block);
-  padding-inline-start: var(--denhaag-accordion-panel-padding-inline);
   padding-inline-end: var(--denhaag-accordion-panel-padding-inline);
   min-height: var(--denhaag-accordion-panel-min-height);
-}
-
-.denhaag-accordion__panel::-webkit-details-marker {
-  display: none;
-}
-
-.denhaag-accordion__panel--focus,
-.denhaag-accordion__panel:focus {
-  border: var(--denhaag-accordion-panel-focus-border);
-}
-
-.denhaag-accordion__panel--disabled,
-.denhaag-accordion__panel[disabled] {
-  pointer-events: var(--denhaag-accordion-panel-disabled-pointer-events);
-  background-color: var(--denhaag-accordion-panel-disabled-background-color);
+  margin-block-start: var(--denhaag-accordion-panel-margin-block);
+  margin-block-end: var(--denhaag-accordion-panel-margin-block);
+  width: var(--denhaag-accordion-panel-width);
 }
 
 .denhaag-accordion__title {
@@ -64,24 +54,42 @@
   --utrecht-heading-5-margin-block-end: 0;
 
   flex-grow: var(--denhaag-accordion-title-flex-grow);
+  border: var(--denhaag-accordion-title-border);
+  background: var(--denhaag-accordion-title-background);
+  text-align: var(--denhaag-accordion-title-text-align);
+  padding-inline-start: var(--denhaag-accordion-title-padding-inline-start);
+  padding-inline-end: var(--denhaag-accordion-title-padding-inline-end);
+}
+
+.denhaag-accordion__title--disabled,
+.denhaag-accordion__title[disabled] {
+  pointer-events: var(--denhaag-accordion-panel-disabled-pointer-events);
+  background-color: var(--denhaag-accordion-panel-disabled-background-color);
+}
+
+.denhaag-accordion__title:focus-visible,
+.denhaag-accordion__title:focus,
+.denhaag-accordion__title--focus {
+  outline: var(--denhaag-accordion-title-focus-outline);
+  height: var(--denhaag-accordion-title-focus-height);
+  border-radius: var(--denhaag-accordion-title-focus-border-radius);
+  width: var(--denhaag-accordion-title-focus-width);
 }
 
 .denhaag-accordion__panel--focus .denhaag-accordion__title,
 .denhaag-accordion__panel--focus .denhaag-icon,
-.denhaag-accordion__panel--hover .denhaag-accordion__title,
-.denhaag-accordion__panel--hover .denhaag-icon {
+.denhaag-accordion__title--hover,
+.denhaag-accordion__title--hover + .denhaag-icon {
   color: var(--denhaag-accordion-panel-color);
 }
 
-.denhaag-accordion__container--open .denhaag-accordion__title,
-.denhaag-accordion__container[open] .denhaag-accordion__title {
+.denhaag-accordion__container--open .denhaag-accordion__title {
   --utrecht-heading-font-weight: var(--denhaag-accordion-container-open-title-font-weight);
 
   color: var(--denhaag-accordion-container-open-title-color);
 }
 
-.denhaag-accordion__container--open .denhaag-icon,
-.denhaag-accordion__container[open] .denhaag-icon {
+.denhaag-accordion__container--open .denhaag-icon {
   color: var(--denhaag-accordion-container-open-denhaag-icon-color);
   transform: var(--denhaag-accordion-container-open-denhaag-icon-transform);
 }
@@ -94,9 +102,7 @@
 }
 
 .denhaag-accordion__container--open .denhaag-accordion__panel:hover,
-.denhaag-accordion__container--open .denhaag-icon:hover,
-.denhaag-accordion__container[open] .denhaag-accordion__panel:hover,
-.denhaag-accordion__container[open] .denhaag-icon:hover {
+.denhaag-accordion__container--open .denhaag-icon:hover {
   --denhaag-accordion-container-open-title-color: var(--denhaag-accordion-container-open-color);
 }
 
@@ -106,4 +112,9 @@
   padding-inline-start: var(--denhaag-accordion-details-padding-inline);
   padding-inline-end: var(--denhaag-accordion-details-padding-inline);
   margin-inline-end: var(--denhaag-accordion-details-margin-inline-end);
+  display: var(--denhaag-accordion-details-display);
+}
+
+.denhaag-accordion__container--open .denhaag-accordion__details {
+  display: var(--denhaag-accordion-details-open-display);
 }
