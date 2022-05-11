@@ -1,5 +1,4 @@
 const AccordionToggle = (className = '.denhaag-accordion__title') => {
-  console.log('AccordionToggle loaded');
   if (!className) {
     return;
   }
