@@ -15,9 +15,13 @@ export interface ListProps extends HTMLAttributes<HTMLDivElement> {
  * Primary UI component for user interaction
  */
 export const List: React.FC<ListProps> = ({ subheader, ...props }: ListProps) => {
-  const rootClassNames = clsx('denhaag-list__wrapper', {
-    'denhaag-list__wrapper--with-subheader': subheader,
-  });
+  const rootClassNames = clsx(
+    'denhaag-list__wrapper',
+    {
+      'denhaag-list__wrapper--with-subheader': subheader,
+    },
+    props.className,
+  );
   return (
     <div {...props} className={rootClassNames}>
       {subheader}

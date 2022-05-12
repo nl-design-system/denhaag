@@ -1,6 +1,7 @@
 import React, { HTMLAttributes } from 'react';
 
 import './list-subheader.scss';
+import clsx from 'clsx';
 
 export type ListSubheaderProps = HTMLAttributes<HTMLParagraphElement>;
 
@@ -9,7 +10,7 @@ export type ListSubheaderProps = HTMLAttributes<HTMLParagraphElement>;
  */
 export const ListSubheader: React.FC<ListSubheaderProps> = (props: ListSubheaderProps) => {
   return (
-    <p {...props} className="denhaag-list__subheader">
+    <p {...props} className={clsx('denhaag-list__subheader', props.className)}>
       {props.children}
     </p>
   );
