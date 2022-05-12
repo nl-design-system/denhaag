@@ -54,10 +54,14 @@ export const ListItem: React.FC<ListItemProps> = ({
   secondaryText,
   ...props
 }: ListItemProps) => {
-  const rootClassNames = clsx('denhaag-list__item', {
-    'denhaag-list__item--with-secondary': secondaryText,
-    'denhaag-list__item--nav': actionType && actionType === 'nav',
-  });
+  const rootClassNames = clsx(
+    'denhaag-list__item',
+    {
+      'denhaag-list__item--with-secondary': secondaryText,
+      'denhaag-list__item--nav': actionType && actionType === 'nav',
+    },
+    props.className,
+  );
 
   const children = [];
 
