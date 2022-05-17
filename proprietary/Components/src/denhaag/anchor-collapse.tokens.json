@@ -50,6 +50,9 @@
             "value": "{denhaag.typography.weight.bold}"
           }
         },
+        "text-align": {
+          "value": "left"
+        },
         "padding": {
           "block": {
             "value": "{denhaag.space.block.md}"
