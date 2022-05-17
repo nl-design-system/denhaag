@@ -30,16 +30,9 @@
 }
 
 .denhaag-card-news:focus-visible,
-.denhaag-card-news--focus {
+.denhaag-card-news--focus,
+.denhaag-card-news:focus-within:not(:focus-visible) {
   --denhaag-card-news-box-shadow: none;
-  --denhaag-card-news-icon-display: inline-block;
-
-  outline: var(--denhaag-card-news-outline);
-}
-
-.denhaag-card-news:focus:not(:focus-visible) {
-  --denhaag-card-news-box-shadow: none;
-  --denhaag-card-news-outline: none;
   --denhaag-card-news-icon-display: inline-block;
 }
 
@@ -84,6 +77,11 @@
   color: inherit;
   text-decoration: inherit;
 }
+
+.denhaag-card-news__link:focus-visible {
+  outline: none;
+}
+
 .denhaag-card-news__link::after {
   bottom: 0;
   content: "";
@@ -91,4 +89,8 @@
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.denhaag-card-news:focus-within .denhaag-card-news__link:focus-visible::after {
+  outline: var(--denhaag-card-news-outline);
 }
