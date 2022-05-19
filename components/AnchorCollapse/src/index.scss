@@ -1,7 +1,6 @@
 .denhaag-anchor-collapse {
-  // Variables which will be updated in the same file.
-  --denhaag-anchor-collapse-title-display: none;
-  --denhaag-anchor-collapse-summary-display: block;
+  --denhaag-anchor-collapse-content-display: none;
+  --denhaag-anchor-collapse-icon-display: block;
   --denhaag-anchor-collapse-summary-pointer-events: auto;
 
   border-bottom: var(--denhaag-anchor-collapse-border-width) var(--denhaag-anchor-collapse-border-style)
@@ -13,48 +12,43 @@
     var(--denhaag-anchor-collapse-border-color);
 }
 
-@media (min-width: 768px) {
-  .denhaag-anchor-collapse {
-    --denhaag-anchor-collapse-border-color: transparent;
-    --denhaag-anchor-collapse-title-display: block;
-    --denhaag-anchor-collapse-summary-display: none;
-    --denhaag-anchor-collapse-summary-pointer-events: none;
-    --denhaag-anchor-collapse-summary-padding-block: 0;
-    --denhaag-anchor-collapse-summary-padding-inline: 0;
-    --denhaag-anchor-collapse-content-padding-block-end: 0;
-    --denhaag-anchor-collapse-content-padding-block-start: 0;
-    --denhaag-anchor-collapse-content-padding-inline-end: 0;
-    --denhaag-anchor-collapse-content-padding-inline-start: 0;
-  }
-}
-
-.denhaag-anchor-collapse__details[open],
-.denhaag-anchor-collapse__details:active {
+.denhaag-anchor-collapse--active {
+  --denhaag-anchor-collapse-content-display: block;
   --denhaag-anchor-collapse-rotate: 0deg;
   --denhaag-anchor-collapse-summary-color: var(--denhaag-anchor-collapse-summary-active-color);
 }
 
-.denhaag-anchor-collapse__summary {
+.denhaag-anchor-collapse__toggle {
+  background-color: transparent;
+  border: 0;
   color: var(--denhaag-anchor-collapse-summary-color);
   cursor: pointer;
-  display: var(--denhaag-anchor-collapse-summary-display);
   font-family: var(--denhaag-anchor-collapse-summary-font-family, inherit);
   font-size: var(--denhaag-anchor-collapse-summary-font-size, inherit);
   font-weight: var(--denhaag-anchor-collapse-summary-font-weight, normal);
+  margin-block-start: var(--denhaag-anchor-collapse-summary-margin-block-start, 0);
+  margin-block-end: var(--denhaag-anchor-collapse-summary-margin-block-end, 0);
   padding-block-end: var(--denhaag-anchor-collapse-summary-padding-block);
   padding-block-start: var(--denhaag-anchor-collapse-summary-padding-block);
   padding-inline-end: calc(2 * var(--denhaag-anchor-collapse-summary-padding-inline));
   padding-inline-start: var(--denhaag-anchor-collapse-summary-padding-inline);
   pointer-events: var(--denhaag-anchor-collapse-summary-pointer-events);
+  text-align: var(--denhaag-anchor-collapse-summary-text-align);
+  width: 100%;
+}
+
+.denhaag-anchor-collapse__summary {
+  margin-block-start: 0;
+  margin-block-end: 0;
   position: relative;
 }
 
-.denhaag-anchor-collapse__summary:hover,
+.denhaag-anchor-collapse__toggle:hover,
 .denhaag-anchor-collapse__summary--hover {
   --denhaag-anchor-collapse-summary-color: var(--denhaag-anchor-collapse-summary-hover-color);
 }
 
-.denhaag-anchor-collapse__summary:focus,
+.denhaag-anchor-collapse__toggle:focus-visible,
 .denhaag-anchor-collapse__summary--focus {
   --denhaag-anchor-collapse-summary-color: var(--denhaag-anchor-collapse-summary-focus-color);
 
@@ -62,6 +56,7 @@
 }
 
 .denhaag-anchor-collapse__summary > svg {
+  display: var(--denhaag-anchor-collapse-icon-display);
   position: absolute;
   top: 50%;
   right: var(--denhaag-anchor-collapse-summary-padding-inline);
@@ -71,6 +66,7 @@
 .denhaag-anchor-collapse__content {
   border-top: var(--denhaag-anchor-collapse-border-width) var(--denhaag-anchor-collapse-border-style)
     var(--denhaag-anchor-collapse-border-color);
+  display: var(--denhaag-anchor-collapse-content-display);
   padding-block-end: var(
     --denhaag-anchor-collapse-content-padding-block-end,
     var(--denhaag-anchor-collapse-summary-padding-block)
@@ -89,6 +85,31 @@
   );
 }
 
-.denhaag-anchor-collapse__content > h2:first-of-type {
-  display: var(--denhaag-anchor-collapse-title-display);
+@media (min-width: 768px) {
+  .denhaag-anchor-collapse {
+    --denhaag-anchor-collapse-border-color: transparent;
+    --denhaag-anchor-collapse-content-display: block;
+    --denhaag-anchor-collapse-icon-display: none;
+    --denhaag-anchor-collapse-summary-pointer-events: none;
+    --denhaag-anchor-collapse-summary-padding-block: 0;
+    --denhaag-anchor-collapse-summary-padding-inline: 0;
+    --denhaag-anchor-collapse-content-padding-block-end: 0;
+    --denhaag-anchor-collapse-content-padding-block-start: 0;
+    --denhaag-anchor-collapse-content-padding-inline-end: 0;
+    --denhaag-anchor-collapse-content-padding-inline-start: 0;
+
+    // Must always be the same as the H2 styles.
+    --denhaag-anchor-collapse-summary-color: var(--utrecht-heading-2-color, var(--denhaag-heading-color));
+    --denhaag-anchor-collapse-summary-font-family: var(
+      --utrecht-heading-2-font-family,
+      var(--utrecht-heading-font-family, var(--utrecht-document-font-family))
+    );
+    --denhaag-anchor-collapse-summary-font-size: var(--utrecht-heading-2-font-size);
+    --denhaag-anchor-collapse-summary-font-weight: var(
+      --utrecht-heading-2-font-weight,
+      var(--utrecht-heading-font-weight, bold)
+    );
+    --denhaag-anchor-collapse-summary-margin-block-start: var(--utrecht-heading-2-margin-block-start);
+    --denhaag-anchor-collapse-summary-margin-block-end: var(--utrecht-heading-2-margin-block-end);
+  }
 }
