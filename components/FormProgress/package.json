@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/form-progress",
-  "version": "0.1.1-alpha.80",
+  "version": "0.1.1-alpha.81",
   "description": "A FormProgress component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -22,8 +22,8 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-alpha.205",
-    "@gemeente-denhaag/link": "0.2.3-alpha.205"
+    "@gemeente-denhaag/icons": "0.2.3-alpha.206",
+    "@gemeente-denhaag/link": "0.2.3-alpha.206"
   },
   "peerDependencies": {
     "react": "^17.0.0"
