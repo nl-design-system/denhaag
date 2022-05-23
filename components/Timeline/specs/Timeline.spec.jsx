@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Timeline, { Step } from '../dist';
+import Timeline, { Step } from '../dist/mjs';
 
 describe('Timeline tests', () => {
   it('completed step can show description', () => {

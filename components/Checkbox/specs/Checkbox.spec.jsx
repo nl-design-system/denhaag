@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Checkbox from '../dist';
+import Checkbox from '../dist/mjs';
 import { HideIcon } from '../../Icons';
 
 describe(`Checkbox tests`, () => {

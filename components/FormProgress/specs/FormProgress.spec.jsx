@@ -1,5 +1,5 @@
 import * as React from 'react';
-import FormProgress from '../dist';
+import FormProgress from '../dist/mjs';
 
 describe('FormProgress tests', () => {
   // Starting with functionality tests

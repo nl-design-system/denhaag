@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Link from '../dist';
+import Link from '../dist/mjs';
 import { ChevronRightIcon } from '../../Icons';
 
 describe('Link tests', () => {

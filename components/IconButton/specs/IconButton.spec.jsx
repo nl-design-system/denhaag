@@ -1,5 +1,5 @@
 import * as React from 'react';
-import IconButton from '../dist';
+import IconButton from '../dist/mjs';
 import { TrashIcon } from '../../Icons';
 
 describe('IconButton tests', () => {
