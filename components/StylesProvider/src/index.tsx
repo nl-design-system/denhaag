@@ -1,6 +1,6 @@
 import React from 'react';
 import { StylesProvider as MaterialStylesProvider } from '@material-ui/core';
-import '@utrecht/component-library-css/dist/bem.css';
+import '@utrecht/component-library-css/dist/index.css';
 
 export interface StylesProviderProps {
   children?: React.ReactNode;
