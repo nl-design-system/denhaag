@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Divider from '../dist';
+import Divider from '../dist/mjs';
 
 describe(`Divider tests`, () => {
   it('a11y and snapshots', () => {

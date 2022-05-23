@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Alert from '../dist';
+import Alert from '../dist/mjs';
 import { MegaphoneIcon } from '@gemeente-denhaag/icons';
 
 describe(`Alerts tests`, () => {

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import DotIndicator from '../dist';
+import DotIndicator from '../dist/mjs';
 import Button from '../../Button';
 import Avatar from '../../Avatar';
 

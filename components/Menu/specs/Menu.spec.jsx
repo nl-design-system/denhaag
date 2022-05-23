@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Menu, { MenuButton, MenuButtonExpandable } from '../dist';
+import Menu, { MenuButton, MenuButtonExpandable } from '../dist/mjs';
 
 describe('Menu tests', () => {
   // Starting with functionality tests

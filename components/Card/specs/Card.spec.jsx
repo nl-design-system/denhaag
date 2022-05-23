@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Card from '../dist';
+import Card from '../dist/mjs';
 
 const props = {
   title: 'Shrimp and Chorizo Paella',
