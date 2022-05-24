@@ -29,7 +29,7 @@ import readme from "../../README.md";
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Link">
     <a href="#example-link" class="denhaag-link">
-      Link
+      <span class="denhaag-link__label">Link</span>
     </a>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
@@ -41,7 +41,7 @@ import readme from "../../README.md";
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Disabled Link">
     <a href="#example-link" class="denhaag-link denhaag-link--disabled" tabindex="-1">
-      Disabled link
+      <span class="denhaag-link__label">Disabled link</span>
     </a>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
@@ -53,7 +53,7 @@ import readme from "../../README.md";
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Hovered Link">
     <a href="#example-link" class="denhaag-link denhaag-link--hover">
-      Hovered link
+      <span class="denhaag-link__label">Hovered link</span>
     </a>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
@@ -65,7 +65,7 @@ import readme from "../../README.md";
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Focused Link">
     <a href="#example-link" class="denhaag-link denhaag-link--focus">
-      Focused link
+      <span class="denhaag-link__label">Focused link</span>
     </a>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
@@ -95,7 +95,7 @@ import readme from "../../README.md";
           ></path>
         </svg>
       </span>
-      <span>Link with icon before</span>
+      <span class="denhaag-link__label">Link with icon before</span>
     </a>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
@@ -125,7 +125,7 @@ import readme from "../../README.md";
           ></path>
         </svg>
       </span>
-      <span>Link with icon after</span>
+      <span class="denhaag-link__label">Link with icon after</span>
     </a>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
@@ -157,7 +157,7 @@ import readme from "../../README.md";
             ></path>
           </svg>
         </span>
-        a link
+        <span class="denhaag-link__label">a link</span>
       </a>{" "}
       in a Paragraph element.
     </p>
@@ -171,7 +171,7 @@ import readme from "../../README.md";
   {/* eslint-disable react/no-unknown-property */}
   <Story name="External link">
     <a href="#example-link" class="denhaag-link" target="_blank">
-      External link
+      <span class="denhaag-link__label">External link</span>
       <span class="denhaag-link__sr-only">(External link)</span>
     </a>
   </Story>
