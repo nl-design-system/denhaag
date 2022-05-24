@@ -67,10 +67,7 @@
 }
 
 .denhaag-link__icon > :first-child {
-  font-size: var(
-    --denhaag-link-icon-font-size,
-    calc(var(--denhaag-link-icon-size) - (var(--denhaag-link-icon-gap) / 2))
-  );
+  font-size: var(--denhaag-link-icon-font-size);
   height: 1em;
   width: 1em;
   position: absolute;
