@@ -1,5 +1,4 @@
 @import "~@utrecht/components/unordered-list/css";
-@import "~@gemeente-denhaag/link/src/index";
 
 .denhaag-unordered-list {
   @extend .utrecht-unordered-list;
@@ -18,13 +17,6 @@
 
 .denhaag-unordered-list li::marker {
   font-size: var(--denhaag-unordered-list-marker-font-size);
-}
-
-.denhaag-unordered-list li > a {
-  @extend .denhaag-link;
-
-  padding-block-start: initial;
-  padding-block-end: initial;
 }
 
 .denhaag-unordered-list--lower-alpha {
