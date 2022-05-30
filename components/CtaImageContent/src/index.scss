@@ -1,121 +1,79 @@
 .denhaag-cta-image-content {
-  --denhaag-button-cursor: var(--denhaag-cta-image-content-cursor);
-
-  display: block;
-  text-decoration: none;
-  background-color: var(--denhaag-cta-image-content-background-color);
-  border: var(--denhaag-cta-image-content-border-width, 1px) solid var(--denhaag-cta-image-content-border-color);
+  position: var(--denhaag-cta-image-content-position);
+  border: var(--denhaag-cta-image-content-border);
   border-radius: var(--denhaag-cta-image-content-border-radius);
+  background-color: var(--denhaag-cta-image-content-background-color);
+  display: var(--denhaag-cta-image-content-display);
+}
+
+.denhaag-cta-image-content:hover,
+.denhaag-cta-image-content--hover {
+  box-shadow: var(--denhaag-cta-image-content-hover-box-shadow);
 }
 
 .denhaag-cta-image-content--filled {
-  background-color: var(--denhaag-cta-image-content-filled-background-color);
-  border-color: var(--denhaag-cta-image-content-filled-border-color);
-}
-
-.denhaag-cta-image-content--focus::after,
-.denhaag-cta-image-content:focus::after,
-.denhaag-cta-image-content:focus-within::after {
-  border: var(--denhaag-focus-border);
-  border-radius: var(--denhaag-border-radius);
-  bottom: -3px;
-  content: "";
-  display: block;
-  left: -3px;
-  position: absolute;
-  right: -3px;
-  top: -3px;
-}
-
-.denhaag-cta-image-content--hover,
-.denhaag-cta-image-content:hover {
-  box-shadow: var(--denhaag-cta-image-content-hover-box-shadow);
-  cursor: pointer;
-}
-
-.denhaag-cta-image-content__column {
-  flex: 1;
-  overflow: hidden;
-}
-
-.denhaag-cta-image-content__image-wrapper {
-  position: relative;
-}
-
-.denhaag-cta-image-content__image {
-  max-width: 100%;
-  width: auto;
-  height: auto;
+  --denhaag-cta-image-content-background-color: var(--denhaag-cta-image-content-filled-background-color);
+  --denhaag-cta-image-content-border: var(--denhaag-cta-image-content-filled-border);
 }
 
 .denhaag-cta-image-content__content {
-  padding-block-start: var(--denhaag-cta-image-content-content-padding-block);
-  padding-block-end: var(--denhaag-cta-image-content-content-padding-block);
   padding-inline-start: var(--denhaag-cta-image-content-content-padding-inline);
   padding-inline-end: var(--denhaag-cta-image-content-content-padding-inline);
+  padding-block-start: var(--denhaag-cta-image-content-content-padding-block);
+  padding-block-end: var(--denhaag-cta-image-content-content-padding-block);
 }
 
-.denhaag-cta-image-content__label {
-  margin-block-start: var(--denhaag-cta-image-content-label-margin-block-start);
-  margin-block-end: var(--denhaag-cta-image-content-label-margin-block-end);
-  color: var(--denhaag-cta-image-content-label-color);
-  font-weight: var(--denhaag-cta-image-content-label-font-weight);
-  font-family: var(--denhaag-typography-sans-serif-alternate-font-family);
-
-  &:not(.denhaag-cta-image-content__label--small) {
-    font-size: var(--denhaag-cta-image-content-label-font-size);
-    line-height: var(--denhaag-cta-image-content-label-line-height);
-  }
+.denhaag-cta-image-content__image {
+  width: var(--denhaag-cta-image-content-image-width);
 }
 
-.denhaag-cta-image-content__label--small {
-  font-size: var(--denhaag-cta-image-content-label-small-font-size);
-  line-height: var(--denhaag-cta-image-content-label-small-line-height);
+.denhaag-cta-image-content__title {
+  margin-block-start: var(--denhaag-cta-image-content-title-margin-block-start);
+}
+
+.denhaag-cta-image-content__title--small {
+  font-size: var(--denhaag-cta-image-content-title-small-font-size);
 }
 
 .denhaag-cta-image-content__text {
-  display: block;
-  margin-block-start: var(--denhaag-cta-image-content-text-margin-block);
-  margin-block-end: var(--denhaag-cta-image-content-text-margin-block);
-  color: var(--denhaag-cta-image-content-text-color);
-  font-weight: var(--denhaag-cta-image-content-text-font-weight);
-  font-family: var(--denhaag-typography-sans-serif-font-family);
-
-  &:not(.denhaag-cta-image-content__text--small) {
-    font-size: var(--denhaag-cta-image-content-text-font-size);
-    line-height: var(--denhaag-cta-image-content-text-line-height);
-  }
+  font-size: var(--denhaag-cta-image-content-text-font-size);
+  line-height: var(--denhaag-cta-image-content-text-line-height);
 }
 
 .denhaag-cta-image-content__text--small {
-  font-size: var(--denhaag-cta-image-content-text-small-font-size);
-  line-height: var(--denhaag-cta-image-content-text-small-line-height);
+  --denhaag-cta-image-content-text-font-size: var(--denhaag-cta-image-content-text-small-font-size);
 }
 
 .denhaag-cta-image-content__button {
   margin-block-start: var(--denhaag-cta-image-content-button-margin-block-start);
+  position: var(--denhaag-cta-image-content-button-position);
 }
 
-.denhaag-cta-image-content--hover .denhaag-cta-image-content__button,
-.denhaag-cta-image-content:hover .denhaag-cta-image-content__button {
-  background-color: var(--denhaag-button-primary-action-hover-background-color);
-  color: var(--denhaag-button-primary-action-hover-color);
+.denhaag-cta-image-content__button::after {
+  position: var(--denhaag-cta-image-content-button-after-position);
+  content: var(--denhaag-cta-image-content-button-after-content);
+  top: var(--denhaag-cta-image-content-button-after-top);
+  right: var(--denhaag-cta-image-content-button-after-right);
+  bottom: var(--denhaag-cta-image-content-button-after-bottom);
+  left: var(--denhaag-cta-image-content-button-after-left);
 }
 
-@media (min-width: 640px) {
+.denhaag-cta-image-content--focus .denhaag-button::after {
+  border: var(--denhaag-focus-border);
+}
+
+@media (min-width: 768px) {
   .denhaag-cta-image-content {
-    position: relative;
-    display: flex;
+    --denhaag-cta-image-content-display: flex;
   }
 
   .denhaag-cta-image-content__image {
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
+    --denhaag-cta-image-content-image-width: 50%;
+
+    object-fit: var(--denhaag-cta-image-content-image-object-fit);
+  }
+
+  .denhaag-cta-image-content__content {
+    width: var(--denhaag-cta-image-content-content-width);
   }
 }
