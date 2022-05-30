@@ -37,6 +37,7 @@
     "@gemeente-denhaag/checkbox": "0.2.3-alpha.214",
     "@gemeente-denhaag/datepicker": "0.1.1-alpha.134",
     "@gemeente-denhaag/divider": "0.2.3-alpha.214",
+    "@gemeente-denhaag/form-field": "0.1.1-alpha.90",
     "@gemeente-denhaag/formcontrol": "0.2.3-alpha.214",
     "@gemeente-denhaag/formcontrollabel": "0.2.3-alpha.214",
     "@gemeente-denhaag/formgroup": "0.2.3-alpha.214",
