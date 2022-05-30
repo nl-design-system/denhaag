@@ -2,52 +2,119 @@
   "denhaag": {
     "image": {
       "download-text": {
-        "display-mobile": { "value": "none" },
-        "display-desktop": { "value": "inline" },
-        "margin-inline-start": { "value": "0.5rem" },
-        "width": { "value": "max-content" }
+        "display-mobile": {
+          "value": "none"
+        },
+        "display-desktop": {
+          "value": "inline"
+        },
+        "width": {
+          "value": "max-content"
+        }
       },
-      "font-family": { "value": "{denhaag.typography.sans-serif.font-family}" },
+      "font-family": {
+        "value": "{denhaag.typography.sans-serif.font-family}"
+      },
       "figcaption": {
-        "align-items": { "value": "flex-start" },
-        "display": { "value": "flex" },
+        "align-items": {
+          "value": "flex-start"
+        },
+        "display": {
+          "value": "grid"
+        },
         "download": {
-          "align-items": { "value": "flex-end" },
-          "color": { "value": "{denhaag.color.blue.3}" },
-          "hover-color": { "value": "{denhaag.color.blue.4}" },
-          "display": { "value": "flex" },
-          "font-size": { "value": "1.125rem" },
-          "line-height": { "value": "1" },
-          "margin-inline-start": { "value": "1rem" },
-          "text-decoration": { "value": "none" }
+          "align-items": {
+            "value": "flex-end"
+          },
+          "color": {
+            "value": "{denhaag.color.blue.3}"
+          },
+          "gap": {
+            "value": "0.5rem"
+          },
+          "hover-color": {
+            "value": "{denhaag.color.blue.4}"
+          },
+          "display": {
+            "value": "flex"
+          },
+          "font-size": {
+            "value": "1.125rem"
+          },
+          "line-height": {
+            "value": "1"
+          },
+          "margin-inline-start": {
+            "value": "1rem"
+          },
+          "outline": {
+            "value": "{denhaag.focus.border}"
+          },
+          "text-decoration": {
+            "value": "none"
+          }
         },
         "download-only": {
-          "text-align": { "value": "right" },
-          "display": { "value": "inline-block" },
-          "width": { "value": "100%" },
-          "vertical-align": { "value": "bottom" }
+          "display": {
+            "value": "inline-flex"
+          },
+          "justify-content": {
+            "value": "flex-end"
+          },
+          "width": {
+            "value": "100%"
+          },
+          "vertical-align": {
+            "value": "bottom"
+          }
         },
-        "justify-content": { "value": "space-between" },
-        "padding-block": { "value": "1rem" },
+        "justify-content": {
+          "value": "space-between"
+        },
+        "gap": {
+          "value": "1rem"
+        },
+        "padding-block": {
+          "value": "1rem"
+        },
         "text": {
-          "color": { "value": "{denhaag.color.grey.4}" },
-          "font-size": { "value": "{denhaag.typography.scale.s.font-size}" },
-          "letter-spacing": { "value": "1px" },
-          "line-height": { "value": "1.5" },
-          "text-transform": { "value": "uppercase" }
+          "color": {
+            "value": "{denhaag.color.grey.4}"
+          },
+          "font-size": {
+            "value": "{denhaag.typography.scale.s.font-size}"
+          },
+          "letter-spacing": {
+            "value": "1px"
+          },
+          "line-height": {
+            "value": "1.5"
+          },
+          "text-transform": {
+            "value": "uppercase"
+          }
         }
       },
       "image": {
-        "aspect-ratio": { "value": "16 / 9" },
-        "display": { "value": "block" },
-        "height": { "value": "auto" },
-        "width": { "value": "100%" },
-        "object-fit": { "value": "cover" }
+        "display": {
+          "value": "block"
+        },
+        "height": {
+          "value": "auto"
+        },
+        "width": {
+          "value": "100%"
+        }
       },
-      "margin-inline": { "value": "0" },
-      "margin-block-end-mobile": { "value": "1.5rem" },
-      "margin-block-end-desktop": { "value": "2rem" },
-      "max-width": { "value": "1290px" }
+      "margin-inline": {
+        "value": "0"
+      },
+      "margin-block-end-mobile": {
+        "value": "1.5rem"
+      },
+      "margin-block-end-desktop": {
+        "value": "2rem"
+      }
     }
   }
 }
