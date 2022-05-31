@@ -23,6 +23,9 @@
         }
       },
       "icon": {
+        "align": {
+          "value": "flex-start"
+        },
         "margin-start": {
           "value": "{denhaag.space.inline.xs}"
         },
@@ -40,11 +43,25 @@
         }
       },
       "with-icon": {
-        "vertical-align": { "value": "bottom" }
+        "vertical-align": {
+          "value": "bottom"
+        }
       },
       "small": {
         "icon": {
-          "font-size": { "value": "{denhaag.space.block.xs}" }
+          "font-size": {
+            "value": "{denhaag.space.block.xs}"
+          },
+          "size": {
+            "value": "0.5rem"
+          }
+        }
+      },
+      "external": {
+        "icon": {
+          "align": {
+            "value": "center"
+          }
         }
       }
     }
