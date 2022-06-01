@@ -271,6 +271,8 @@
           "text-align": { "value": "center" },
           "padding-block": { "value": "4rem" },
           "padding-block-s": { "value": "{denhaag.space.block.3xl}" },
+          "padding-inline-start": { "value": "{denhaag.space.inline.md}" },
+          "padding-inline-end": { "value": "{denhaag.space.inline.md}" },
           "transform": {
             "value": "2rem"
           }
