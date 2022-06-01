@@ -5,6 +5,7 @@
   position: var(--denhaag-floating-contact-position);
   bottom: var(--denhaag-floating-contact-bottom);
   right: var(--denhaag-floating-contact-right);
+  z-index: var(--denhaag-floating-contact-index);
 }
 
 .denhaag-floating-contact-switch {
