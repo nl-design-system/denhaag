@@ -154,8 +154,8 @@
   }
 
   .denhaag-hero--theme-page .denhaag-hero__content {
-    --denhaag-hero-content-padding-inline-start: 1rem;
-    --denhaag-hero-content-padding-inline-end: 1rem;
+    --denhaag-hero-content-padding-inline-start: var(--denhaag-hero-theme-page-content-padding-inline-start);
+    --denhaag-hero-content-padding-inline-end: var(--denhaag-hero-theme-page-content-padding-inline-end);
   }
 }
 
