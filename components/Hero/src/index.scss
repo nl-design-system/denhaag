@@ -152,6 +152,11 @@
   .denhaag-hero--routing {
     --utrecht-heading-1-font-size: var(--denhaag-hero-routing-title-font-size-xs);
   }
+
+  .denhaag-hero--theme-page .denhaag-hero__content {
+    --denhaag-hero-content-padding-inline-start: 1rem;
+    --denhaag-hero-content-padding-inline-end: 1rem;
+  }
 }
 
 @media (min-width: 360px) {
