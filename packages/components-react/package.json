@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/components-react",
-  "version": "0.1.1-alpha.143",
+  "version": "0.1.1-alpha.156",
   "description": "A library of React components for the Municipality of the Hague",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -10,9 +10,16 @@
   },
   "license": "EUPL-1.2",
   "author": "Municipality of The Hague",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/cjs/index.d.ts",
+      "import": "./dist/mjs/index.js",
+      "default": "./dist/cjs/index.js"
+    }
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/mjs/index.js",
+  "types": "dist/cjs/index.d.ts",
   "files": [
     "dist"
   ],
@@ -21,31 +28,32 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/alert": "0.1.1-alpha.175",
-    "@gemeente-denhaag/avatar": "0.2.3-alpha.205",
-    "@gemeente-denhaag/badge-counter": "0.1.1-alpha.205",
-    "@gemeente-denhaag/baseprops": "0.2.3-alpha.205",
-    "@gemeente-denhaag/button": "0.2.3-alpha.205",
-    "@gemeente-denhaag/card": "0.2.3-alpha.205",
-    "@gemeente-denhaag/checkbox": "0.2.3-alpha.205",
-    "@gemeente-denhaag/datepicker": "0.1.1-alpha.125",
-    "@gemeente-denhaag/divider": "0.2.3-alpha.205",
-    "@gemeente-denhaag/formcontrol": "0.2.3-alpha.205",
-    "@gemeente-denhaag/formcontrollabel": "0.2.3-alpha.205",
-    "@gemeente-denhaag/formgroup": "0.2.3-alpha.205",
-    "@gemeente-denhaag/iconbutton": "0.2.3-alpha.205",
-    "@gemeente-denhaag/inputlabel": "0.2.3-alpha.205",
-    "@gemeente-denhaag/link": "0.2.3-alpha.205",
-    "@gemeente-denhaag/list": "0.2.3-alpha.205",
-    "@gemeente-denhaag/menu": "0.2.3-alpha.205",
-    "@gemeente-denhaag/radio": "0.2.3-alpha.205",
-    "@gemeente-denhaag/select": "0.2.3-alpha.205",
-    "@gemeente-denhaag/stylesprovider": "0.1.1-alpha.205",
-    "@gemeente-denhaag/switch": "0.2.3-alpha.205",
-    "@gemeente-denhaag/tab": "0.2.3-alpha.205",
-    "@gemeente-denhaag/textfield": "0.2.3-alpha.205",
-    "@gemeente-denhaag/timeline": "0.2.3-alpha.205",
-    "@gemeente-denhaag/typography": "0.2.3-alpha.205"
+    "@gemeente-denhaag/alert": "0.1.1-alpha.188",
+    "@gemeente-denhaag/avatar": "0.2.3-alpha.218",
+    "@gemeente-denhaag/badge-counter": "0.1.1-alpha.218",
+    "@gemeente-denhaag/baseprops": "0.2.3-alpha.218",
+    "@gemeente-denhaag/button": "0.2.3-alpha.218",
+    "@gemeente-denhaag/card": "0.2.3-alpha.218",
+    "@gemeente-denhaag/checkbox": "0.2.3-alpha.218",
+    "@gemeente-denhaag/datepicker": "0.1.1-alpha.138",
+    "@gemeente-denhaag/divider": "0.2.3-alpha.218",
+    "@gemeente-denhaag/form-field": "0.1.1-alpha.94",
+    "@gemeente-denhaag/formcontrol": "0.2.3-alpha.218",
+    "@gemeente-denhaag/formcontrollabel": "0.2.3-alpha.218",
+    "@gemeente-denhaag/formgroup": "0.2.3-alpha.218",
+    "@gemeente-denhaag/iconbutton": "0.2.3-alpha.218",
+    "@gemeente-denhaag/inputlabel": "0.2.3-alpha.218",
+    "@gemeente-denhaag/link": "0.2.3-alpha.218",
+    "@gemeente-denhaag/list": "0.2.3-alpha.218",
+    "@gemeente-denhaag/menu": "0.2.3-alpha.218",
+    "@gemeente-denhaag/radio": "0.2.3-alpha.218",
+    "@gemeente-denhaag/select": "0.2.3-alpha.218",
+    "@gemeente-denhaag/stylesprovider": "0.1.1-alpha.218",
+    "@gemeente-denhaag/switch": "0.2.3-alpha.218",
+    "@gemeente-denhaag/tab": "0.2.3-alpha.218",
+    "@gemeente-denhaag/textfield": "0.2.3-alpha.218",
+    "@gemeente-denhaag/timeline": "0.2.3-alpha.218",
+    "@gemeente-denhaag/typography": "0.2.3-alpha.218"
   },
   "peerDependencies": {
     "react": "^17.0.0"

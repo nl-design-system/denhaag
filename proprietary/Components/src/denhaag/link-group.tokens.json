@@ -29,7 +29,6 @@
         "text-decoration": { "value": "underline" }
       },
       "denhaag-link-with-icon-start": {
-        "padding-inline-start": { "value": "{denhaag.space.inline.xl}" },
         "display": { "value": "inline-flex" },
         "padding-block-start": { "value": "0" },
         "padding-block-end": { "value": "0" }

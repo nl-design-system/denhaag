@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/orderedlist",
-  "version": "0.1.2-alpha.92",
+  "version": "0.1.2-alpha.105",
   "description": "An ordered list component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -10,10 +10,17 @@
   },
   "license": "EUPL-1.2",
   "author": "Municipality of The Hague",
-  "exports": "./dist/index.js",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/cjs/index.d.ts",
+      "import": "./dist/mjs/index.js",
+      "default": "./dist/cjs/index.js"
+    },
+    "./index.css": "./dist/index.css"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/mjs/index.js",
+  "types": "dist/cjs/index.d.ts",
   "files": [
     "dist"
   ],

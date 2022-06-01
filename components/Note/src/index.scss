@@ -13,7 +13,7 @@
 }
 
 .denhaag-note__icon,
-.denhaag-note svg {
+.denhaag-note > svg {
   aspect-ratio: 1 / 1;
   flex: 0 0 auto;
   height: auto;
@@ -29,7 +29,6 @@
   --denhaag-note-icon-color: var(--denhaag-note-icon-warning-color, #fff);
 }
 
-.denhaag-note a[target="_blank"],
 .denhaag-note .denhaag-link--with-icon-end {
   margin-inline-end: var(--denhaag-note-icon-end-margin-inline-end);
 }

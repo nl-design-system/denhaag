@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/list",
-  "version": "0.2.3-alpha.205",
+  "version": "0.2.3-alpha.218",
   "description": "A List component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -10,10 +10,16 @@
   },
   "license": "EUPL-1.2",
   "author": "Municipality of The Hague",
-  "exports": "./dist/index.js",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/cjs/index.d.ts",
+      "import": "./dist/mjs/index.js",
+      "default": "./dist/cjs/index.js"
+    }
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/mjs/index.js",
+  "types": "dist/cjs/index.d.ts",
   "files": [
     "dist"
   ],
@@ -22,8 +28,8 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/iconbutton": "0.2.3-alpha.205",
-    "@gemeente-denhaag/icons": "0.2.3-alpha.205"
+    "@gemeente-denhaag/iconbutton": "0.2.3-alpha.218",
+    "@gemeente-denhaag/icons": "0.2.3-alpha.218"
   },
   "peerDependencies": {
     "react": "^17.0.0"

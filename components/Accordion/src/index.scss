@@ -29,6 +29,7 @@
   position: var(--denhaag-accordion-denhaag-icon-position);
   top: var(--denhaag-accordion-denhaag-icon-top);
   right: var(--denhaag-accordion-denhaag-icon-right);
+  transform: var(--denhaag-accordion-denhaag-icon-transform);
 }
 
 .denhaag-accordion__panel {
@@ -68,11 +69,6 @@
   color: var(--denhaag-accordion-panel-color);
 }
 
-.denhaag-accordion__container--open .denhaag-icon {
-  color: var(--denhaag-accordion-container-open-denhaag-icon-color);
-  transform: var(--denhaag-accordion-container-open-denhaag-icon-transform);
-}
-
 .denhaag-accordion__title--disabled,
 .denhaag-accordion__title[disabled],
 .denhaag-accordion__title--disabled + .denhaag-icon,
@@ -101,10 +97,12 @@
   width: var(--denhaag-accordion-title-focus-width);
 }
 
-.denhaag-accordion__container--open .denhaag-accordion__title {
+.denhaag-accordion__container--open {
+  --denhaag-accordion-details-display: var(--denhaag-accordion-details-open-display);
+  --denhaag-accordion-title-color: var(--denhaag-accordion-container-open-title-color);
+  --denhaag-accordion-denhaag-icon-color: var(--denhaag-accordion-container-open-denhaag-icon-color);
+  --denhaag-accordion-denhaag-icon-transform: var(--denhaag-accordion-container-open-denhaag-icon-transform);
   --utrecht-heading-font-weight: var(--denhaag-accordion-container-open-title-font-weight);
-
-  color: var(--denhaag-accordion-container-open-title-color);
 }
 
 .denhaag-accordion__panel:focus .denhaag-accordion__title,
@@ -116,7 +114,7 @@
 
 .denhaag-accordion__container--open .denhaag-accordion__panel:hover,
 .denhaag-accordion__container--open .denhaag-icon:hover {
-  --denhaag-accordion-container-open-title-color: var(--denhaag-accordion-container-open-color);
+  --denhaag-accordion-title-color: var(--denhaag-accordion-container-open-color);
 }
 
 .denhaag-accordion__details {
@@ -126,8 +124,4 @@
   padding-inline-end: var(--denhaag-accordion-details-padding-inline);
   margin-inline-end: var(--denhaag-accordion-details-margin-inline-end);
   display: var(--denhaag-accordion-details-display);
-}
-
-.denhaag-accordion__container--open .denhaag-accordion__details {
-  display: var(--denhaag-accordion-details-open-display);
 }

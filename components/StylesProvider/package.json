@@ -3,11 +3,17 @@
   "description": "The StylesProvider component to properly apply our CSS to MUI components",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
-  "version": "0.1.1-alpha.205",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "exports": "./dist/index.js",
-  "types": "dist/index.d.ts",
+  "version": "0.1.1-alpha.218",
+  "exports": {
+    ".": {
+      "types": "./dist/cjs/index.d.ts",
+      "import": "./dist/mjs/index.js",
+      "default": "./dist/cjs/index.js"
+    }
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/mjs/index.js",
+  "types": "dist/cjs/index.d.ts",
   "files": [
     "dist"
   ],
@@ -22,7 +28,7 @@
   },
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "dependencies": {
-    "@material-ui/core": "4.12.3"
+    "@material-ui/core": "4.12.4"
   },
   "peerDependencies": {
     "react": "^17.0.0"

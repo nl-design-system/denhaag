@@ -56,7 +56,7 @@ const createConfig = ({ dir, format }) => ({
   external: dependencies,
 });
 
-export const modernConfig = [
+export default [
   createConfig({ format: 'cjs', dir: './dist/cjs' }),
   createConfig({ format: 'esm', dir: './dist/mjs' }),
   {
@@ -75,5 +75,3 @@ export const modernConfig = [
     ],
   },
 ].filter(inputExists);
-
-export default [createConfig({ format: 'esm', dir: './dist' })];
