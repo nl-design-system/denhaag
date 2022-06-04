@@ -1,4 +1,4 @@
-import React, { InputHTMLAttributes, KeyboardEvent, RefObject } from 'react';
+import React, { InputHTMLAttributes, KeyboardEvent, RefObject, useRef, useEffect, useState } from 'react';
 import clsx from 'clsx';
 import {
   format,
@@ -84,8 +84,8 @@ interface DatepickerState {
  * The DatePicker component allows the user to select a date.
  */
 export const Datepicker: React.FC<DatepickerProps> = ({
-  ref = React.useRef<HTMLDivElement>(null),
-  inputRef = React.useRef<HTMLInputElement>(null),
+  ref = useRef<HTMLDivElement>(null),
+  inputRef = useRef<HTMLInputElement>(null),
   startDate = new Date(),
   locale = nl,
   placeholder = 'Kies een datum',
@@ -93,7 +93,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
   nextMonthLabel = 'Volgende maand',
   ...props
 }: DatepickerProps) => {
-  const [state, setState] = React.useState<DatepickerState>({
+  const [state, setState] = useState<DatepickerState>({
     current: startDate,
     selected: undefined,
     opened: false,
@@ -106,10 +106,10 @@ export const Datepicker: React.FC<DatepickerProps> = ({
     getYear(currentDate),
   );
 
-  const openButtonRef = React.useRef<HTMLButtonElement>(null);
-  const backButtonRef = React.useRef<HTMLButtonElement>(null);
-  const currentButtonRef = React.useRef<HTMLButtonElement>(null);
-  const firstRender = React.useRef(true);
+  const openButtonRef = useRef<HTMLButtonElement>(null);
+  const backButtonRef = useRef<HTMLButtonElement>(null);
+  const currentButtonRef = useRef<HTMLButtonElement>(null);
+  const firstRender = useRef(true);
 
   const outsideClickListener = (e: Event) => {
     if (!ref?.current?.contains(e.target as Node) && state.opened) {
@@ -124,20 +124,20 @@ export const Datepicker: React.FC<DatepickerProps> = ({
     document.removeEventListener('click', outsideClickListener);
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (state.opened) {
       document.addEventListener('click', outsideClickListener);
     }
     return outsideClickListenerCleanup;
   }, [ref, state.opened]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (state.opened) {
       currentButtonRef.current?.focus();
     }
   }, [state.opened && state.current]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (props.onChange && !firstRender.current) {
       const event = new Event('change');
       inputRef.current?.dispatchEvent(event);
@@ -145,7 +145,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
     }
   }, [state.selected]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     firstRender.current = false;
   }, []);
 
