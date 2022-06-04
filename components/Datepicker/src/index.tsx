@@ -92,6 +92,7 @@ export const Datepicker: React.FC<DatepickerProps> = forwardRef(
   (
     {
       containerRef = useRef<HTMLDivElement>(null),
+      defaultValue,
       startDate = new Date(),
       locale = nl,
       placeholder = 'Kies een datum',
@@ -102,7 +103,7 @@ export const Datepicker: React.FC<DatepickerProps> = forwardRef(
     inputRef: ForwardedRef<HTMLInputElement>,
   ) => {
     const [state, setState] = useState<DatepickerState>({
-      current: startDate,
+      current: typeof defaultValue === 'string' ? new Date(defaultValue) : startDate,
       selected: undefined,
       opened: false,
       typing: false,
