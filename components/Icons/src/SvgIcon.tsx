@@ -29,7 +29,7 @@ const SvgIcon: React.FC<SvgIconProps> = ({
       className={iconClassName}
       focusable={focusable}
       aria-hidden={props['aria-hidden'] ?? true}
-      shape-rendering={shapeRendering}
+      shapeRendering={shapeRendering}
       {...props}
     >
       {props.children}
