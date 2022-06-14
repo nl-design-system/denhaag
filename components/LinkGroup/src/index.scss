@@ -50,10 +50,11 @@
 
 .denhaag-link-group .denhaag-link__icon {
   font-size: var(--denhaag-link-group-denhaag-link-icon-font-size);
+  align-self: var(--denhaag-link-group-denhaag-link-icon-align-self);
+  flex: var(--denhaag-link-group-denhaag-link-icon-flex);
 }
 
 .denhaag-link-group .denhaag-link__icon .denhaag-icon {
-  align-self: var(--denhaag-link-group-denhaag-link-icon-denhaag-icon-align-self);
   padding-block-start: var(--denhaag-link-group-denhaag-link-icon-denhaag-icon-padding-block-start);
 }
 
