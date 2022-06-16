@@ -8,6 +8,7 @@ import path from 'path';
 import postcss from 'rollup-plugin-postcss';
 
 import tsconfig from './tsconfig.json';
+import summary from 'rollup-plugin-summary';
 
 const inputExists = (config) => {
   try {
@@ -52,6 +53,7 @@ const createConfig = ({ dir, format }) => ({
         outDir: dir,
       },
     }),
+    summary(),
   ],
   external: dependencies,
 });
