@@ -7,8 +7,6 @@
         "object-fit": { "value": "cover" }
       },
       "caption": {
-        "color": { "value": "{denhaag.color.grey.5}" },
-        "font-weight": { "value": "{denhaag.typography.weight.bold}" },
         "margin-block": { "value": "0" }
       },
       "navigation-list": {
