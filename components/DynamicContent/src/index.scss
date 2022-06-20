@@ -21,7 +21,7 @@
   --denhaag-dynamic-content-row-gap: var(--denhaag-dynamic-content-list-gap);
 }
 
-.denhaag-dynamic-content--list a {
+.denhaag-dynamic-content--list .denhaag-link {
   height: fit-content; // Without this property CSS grid will increase the height of the `<a>`.
 }
 
@@ -65,10 +65,7 @@
 }
 
 .denhaag-dynamic-content__card-image {
-  @supports (aspect-ratio: 16 / 9) {
-    aspect-ratio: 16 / 9;
-  }
-
+  aspect-ratio: 16 / 9;
   background: var(--denhaag-dynamic-content-image-background-color);
   object-fit: cover;
 }
@@ -112,13 +109,13 @@
   gap: var(--denhaag-dynamic-content-card-content-gap);
 }
 
-.denhaag-dynamic-content__card-meta {
+.denhaag-dynamic-content__card-caption {
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
-  font-size: var(--denhaag-dynamic-content-card-meta-font-size);
-  font-weight: var(--denhaag-dynamic-content-card-meta-font-size);
-  line-height: var(--denhaag-dynamic-content-card-meta-line-height);
+  font-size: var(--denhaag-dynamic-content-card-caption-font-size);
+  font-weight: var(--denhaag-dynamic-content-card-caption-font-size);
+  line-height: var(--denhaag-dynamic-content-card-caption-line-height);
 }
 
 .denhaag-dynamic-content__card-title {

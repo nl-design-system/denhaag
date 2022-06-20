@@ -13,7 +13,7 @@
         "gap": {
           "value": "{denhaag.space.block.md}"
         },
-        "meta": {
+        "caption": {
           "font": {
             "size": {
               "value": "{denhaag.typography.scale.base.font-size}"
