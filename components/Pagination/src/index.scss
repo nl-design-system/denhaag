@@ -31,6 +31,7 @@
   aspect-ratio: 1 / 1;
   align-items: center;
   background-color: var(--denhaag-pagination-background-color, transparent);
+  border: 0;
   border-radius: var(--denhaag-pagination-border-radius, var(--denhaag-border-radius));
   color: var(--denhaag-pagination-color, var(--denhaag-pagination-link-color));
   display: flex;
