@@ -32,11 +32,13 @@
         "padding-block-end": { "value": "0" }
       },
       "denhaag-link-icon": {
-        "font-size": { "value": "0.75rem" }
+        "font-size": { "value": "0.75rem" },
+        "width": { "value": "0.625rem" }
       },
       "denhaag-link-icon-denhaag-icon": {
         "align-self": { "value": "start" },
-        "padding-block-start": { "value": "{denhaag.space.block.3xs}" }
+        "padding-block-start": { "value": "{denhaag.space.block.3xs}" },
+        "height": { "value": "0.85rem" }
       }
     }
   }
