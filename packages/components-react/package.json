@@ -27,34 +27,7 @@
     "build": "rollup -c ../../rollup.config.js",
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
-  "dependencies": {
-    "@gemeente-denhaag/alert": "0.1.1-alpha.198",
-    "@gemeente-denhaag/avatar": "0.2.3-alpha.228",
-    "@gemeente-denhaag/badge-counter": "0.1.1-alpha.228",
-    "@gemeente-denhaag/baseprops": "0.2.3-alpha.228",
-    "@gemeente-denhaag/button": "0.2.3-alpha.228",
-    "@gemeente-denhaag/card": "0.2.3-alpha.228",
-    "@gemeente-denhaag/checkbox": "0.2.3-alpha.228",
-    "@gemeente-denhaag/datepicker": "0.1.1-alpha.148",
-    "@gemeente-denhaag/divider": "0.2.3-alpha.228",
-    "@gemeente-denhaag/form-field": "0.1.1-alpha.104",
-    "@gemeente-denhaag/formcontrol": "0.2.3-alpha.228",
-    "@gemeente-denhaag/formcontrollabel": "0.2.3-alpha.228",
-    "@gemeente-denhaag/formgroup": "0.2.3-alpha.228",
-    "@gemeente-denhaag/iconbutton": "0.2.3-alpha.228",
-    "@gemeente-denhaag/inputlabel": "0.2.3-alpha.228",
-    "@gemeente-denhaag/link": "0.2.3-alpha.228",
-    "@gemeente-denhaag/list": "0.2.3-alpha.228",
-    "@gemeente-denhaag/menu": "0.2.3-alpha.228",
-    "@gemeente-denhaag/radio": "0.2.3-alpha.228",
-    "@gemeente-denhaag/select": "0.2.3-alpha.228",
-    "@gemeente-denhaag/stylesprovider": "0.1.1-alpha.228",
-    "@gemeente-denhaag/switch": "0.2.3-alpha.228",
-    "@gemeente-denhaag/tab": "0.2.3-alpha.228",
-    "@gemeente-denhaag/textfield": "0.2.3-alpha.228",
-    "@gemeente-denhaag/timeline": "0.2.3-alpha.228",
-    "@gemeente-denhaag/typography": "0.2.3-alpha.228"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "react": "^17.0.0"
   }

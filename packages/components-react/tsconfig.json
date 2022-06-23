@@ -1,99 +1,10 @@
 {
   "extends": "../../tsconfig.build.json",
   "compilerOptions": {
-    "rootDir": "src",
-    "outDir": "dist",
-    "composite": true
+    "rootDir": "../../",
+    "outDir": "dist"
   },
-  "include": ["src/**/*"],
-  "exclude": ["dist", "src/**/*.stories.tsx"],
-  "references": [
-    {
-      "path": "../../components/BaseProps"
-    },
-    {
-      "path": "../../components/Avatar"
-    },
-    {
-      "path": "../../components/Alert"
-    },
-    {
-      "path": "../../components/BadgeCounter"
-    },
-    {
-      "path": "../../components/BaseProps"
-    },
-    {
-      "path": "../../components/Datepicker"
-    },
-    {
-      "path": "../../components/Divider"
-    },
-    {
-      "path": "../../components/List"
-    },
-    {
-      "path": "../../components/Typography"
-    },
-    {
-      "path": "../../components/Button"
-    },
-    {
-      "path": "../../components/Checkbox"
-    },
-    {
-      "path": "../../components/FormControl"
-    },
-    {
-      "path": "../../components/FormControlLabel"
-    },
-    {
-      "path": "../../components/FormField"
-    },
-    {
-      "path": "../../components/FormGroup"
-    },
-    {
-      "path": "../../components/IconButton"
-    },
-    {
-      "path": "../../components/InputLabel"
-    },
-    {
-      "path": "../../components/Radio"
-    },
-    {
-      "path": "../../components/Select"
-    },
-    {
-      "path": "../../components/Sidenav"
-    },
-    {
-      "path": "../../components/Switch"
-    },
-    {
-      "path": "../../components/TextField"
-    },
-    {
-      "path": "../../components/Link"
-    },
-    {
-      "path": "../../components/Menu"
-    },
-    {
-      "path": "../../components/Tab"
-    },
-    {
-      "path": "../../components/Timeline"
-    },
-    {
-      "path": "../../components/Accordion"
-    },
-    {
-      "path": "../../components/Card"
-    },
-    {
-      "path": "../../components/StylesProvider"
-    }
-  ]
+  "include": ["src/**/*", "../../components/**/*"],
+  "exclude": ["../../**/dist", "../../**/*.stories.tsx"],
+  "references": []
 }
