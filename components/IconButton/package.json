@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/iconbutton",
-  "version": "0.2.3-alpha.232",
+  "version": "0.2.3-alpha.233",
   "description": "An IconButton component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -28,12 +28,11 @@
     "build": "rollup -c ../../rollup.config.js",
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
-  "dependencies": {},
   "peerDependencies": {
     "react": "^17.0.0"
   },
   "devDependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-alpha.232"
+    "@gemeente-denhaag/icons": "0.2.3-alpha.233"
   },
   "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
 }
