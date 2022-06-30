@@ -8,6 +8,3 @@ CHANGELOG.md
 dist
 package-lock.json
 storybook-static
-
-# Ignore submodules
-test_images
