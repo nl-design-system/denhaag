@@ -1,11 +1,10 @@
-import React from 'react';
-import { IconButton as MaterialIconButton } from '@material-ui/core';
-import BaseProps from '@gemeente-denhaag/baseprops';
-import './mui-override.scss';
+import React, { ButtonHTMLAttributes } from 'react';
 import './index.scss';
 import clsx from 'clsx';
 
-export interface IconButtonProps extends BaseProps {
+export interface IconButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  'aria-label'?: string;
+
   /**
    * If true, the button will be disabled.
    */
@@ -22,12 +21,12 @@ export interface IconButtonProps extends BaseProps {
  * @param props The properties of an IconButton component.
  * @constructor Constructs an instance of IconButton.
  */
-export const IconButton: React.FC<IconButtonProps> = ({ disabled = false, ...props }: IconButtonProps) => {
+export const IconButton: React.FC<IconButtonProps> = ({ ...props }: IconButtonProps) => {
   const rootClassNames = clsx('denhaag-icon-button', props.className);
   return (
-    <MaterialIconButton {...props} className={rootClassNames} disabled={disabled} disableRipple disableFocusRipple>
+    <button {...props} className={rootClassNames}>
       {props.children}
-    </MaterialIconButton>
+    </button>
   );
 };
 

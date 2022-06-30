@@ -1,5 +1,4 @@
 import { Canvas, Meta, Story } from "@storybook/addon-docs";
-import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
 import { TrashIcon } from "@gemeente-denhaag/icons";
 
 import { IconButton } from "../index";
@@ -17,18 +16,19 @@ import pkg from "../../package.json";
   }}
 />
 
-## Design Tokens
-
-<DesignTokenDocBlock categoryName="IconButton" viewType="table" />
-
 ## Stories
 
 ### Default
 
 <Canvas>
-  <Story name="Default" args={{}}>
+  <Story
+    name="Default"
+    args={{
+      "aria-label": "delete",
+    }}
+  >
     {(args) => (
-      <IconButton aria-label="Button" {...args}>
+      <IconButton {...args}>
         <TrashIcon />
       </IconButton>
     )}
