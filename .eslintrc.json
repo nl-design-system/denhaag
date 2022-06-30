@@ -39,7 +39,6 @@
         "plugin:jsx-a11y/recommended",
         "plugin:react/recommended",
         "eslint-config-prettier",
-        "plugin:cypress/recommended",
         "./.eslintrc.js.json",
         "./.eslintrc.react.json"
       ],
@@ -51,7 +50,6 @@
         "plugin:jsx-a11y/recommended",
         "plugin:react/recommended",
         "eslint-config-prettier",
-        "plugin:cypress/recommended",
         "./.eslintrc.js.json",
         "./.eslintrc.ts.json",
         "./.eslintrc.react.json"

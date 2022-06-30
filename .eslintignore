@@ -1,7 +1,6 @@
 build/
 dist/
 node_modules/
-test_images/
 storybook-static/
 .*/
 *.min.js

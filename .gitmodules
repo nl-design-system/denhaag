@@ -1,3 +1,0 @@
-[submodule "test_images"]
-	path = test_images
-	url = https://gitlab.com/denhaag/test_images.git

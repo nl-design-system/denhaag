@@ -1,9 +1,0 @@
-{
-  "compilerOptions": {
-    "jsx": "react",
-    "target": "es5",
-    "lib": ["es5", "dom"],
-    "types": ["cypress", "cypress-axe", "cypress-plugin-snapshots"]
-  },
-  "include": ["../components/**/*.spec.tsx"]
-}

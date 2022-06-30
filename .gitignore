@@ -16,9 +16,6 @@ build
 dist
 .rpt2_cache
 
-#test files
-__image_snapshots__
-
 # misc
 .DS_Store
 .env
@@ -38,5 +35,3 @@ tsconfig.tsbuildinfo
 
 # story-book build output
 storybook-static
-cypress/videos
-cypress/screenshots

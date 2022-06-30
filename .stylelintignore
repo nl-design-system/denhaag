@@ -6,6 +6,3 @@ node_modules/
 dist/
 tmp/
 storybook-static/
-
-# Ignore test images
-test_images/
