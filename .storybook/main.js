@@ -5,6 +5,10 @@ module.exports = {
     '../components/*/src/**/*.stories.mdx',
   ],
   addons: [
+    '@storybook/addon-docs',
+    '@storybook/addon-controls',
+    '@storybook/addon-actions',
+    '@storybook/addon-backgrounds',
     '@storybook/addon-a11y',
     '@storybook/addon-links',
     {
@@ -18,10 +22,14 @@ module.exports = {
     'storybook-design-token',
     '@etchteam/storybook-addon-status/register',
   ],
-
-  webpackFinal: async (config, { configType }) => {
+  staticDirs: ['./stories/assets/'],
+  framework: '@storybook/react',
+  core: {
+    builder: 'webpack5',
+  },
+  webpackFinal: async (config, _) => {
     const rules = config.module.rules;
-    const fileLoaderRule = rules.find((rule) => rule.test.test('.svg'));
+    const fileLoaderRule = rules.find((rule) => rule.test && rule.test.test('.svg'));
     fileLoaderRule.exclude = /\.svg$/;
 
     rules.push({
@@ -29,12 +37,5 @@ module.exports = {
       use: ['@svgr/webpack'],
     });
     return config;
-  },
-  babel: async (options) => {
-    const { plugins = [] } = options;
-    return {
-      ...options,
-      plugins: [...plugins, [require.resolve('@babel/plugin-proposal-private-property-in-object'), { loose: true }]],
-    };
   },
 };
