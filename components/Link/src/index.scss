@@ -47,20 +47,14 @@
 }
 
 .denhaag-link--focus,
-.denhaag-link:focus,
-.denhaag-link--with-icon--focus,
-.denhaag-link--with-icon:focus {
+.denhaag-link:focus {
   --denhaag-link-color: var(--denhaag-link-focus-color);
 
   outline: var(--denhaag-link-focus-outline);
 }
 
 .denhaag-link--hover,
-.denhaag-link:hover,
-.denhaag-link--with-icon--hover,
-.denhaag-link--with-icon:hover,
-.denhaag-link--with-icon--focus,
-.denhaag-link--with-icon:focus {
+.denhaag-link:hover {
   --denhaag-link-color: var(--denhaag-link-hover-color);
   --denhaag-link-cursor: pointer;
 }
