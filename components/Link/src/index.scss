@@ -8,7 +8,7 @@
   line-height: inherit;
   padding-inline-start: var(--denhaag-link-padding-inline-start, 0);
   padding-inline-end: var(--denhaag-link-padding-inline-end, 0);
-  text-decoration: underline;
+  text-decoration: var(--denhaag-link-text-decoration);
 }
 
 .denhaag-link--with-icon {
@@ -29,6 +29,14 @@
   --denhaag-link-padding-inline-start: 0;
 }
 
+.denhaag-link--external,
+.denhaag-link--with-icon--hover,
+.denhaag-link--with-icon:hover,
+.denhaag-link--with-icon--focus,
+.denhaag-link--with-icon:focus {
+  text-decoration: var(--denhaag-link-text-decoration);
+}
+
 .denhaag-link--with-icon-end {
   --denhaag-link-icon-order: 2;
   --denhaag-link-padding-inline-end: 0;
@@ -39,7 +47,7 @@
 }
 
 .denhaag-link--focus,
-.denhaag-link:focus-visible {
+.denhaag-link:focus {
   --denhaag-link-color: var(--denhaag-link-focus-color);
 
   outline: var(--denhaag-link-focus-outline);
