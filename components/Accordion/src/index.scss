@@ -24,14 +24,6 @@
   border-top: var(--denhaag-accordion-container-border-top);
 }
 
-.denhaag-accordion .denhaag-icon {
-  color: var(--denhaag-accordion-denhaag-icon-color);
-  position: var(--denhaag-accordion-denhaag-icon-position);
-  top: var(--denhaag-accordion-denhaag-icon-top);
-  right: var(--denhaag-accordion-denhaag-icon-right);
-  transform: var(--denhaag-accordion-denhaag-icon-transform);
-}
-
 .denhaag-accordion__panel {
   outline: var(--denhaag-accordion-panel-outline);
   align-items: var(--denhaag-accordion-panel-align-items);
@@ -46,6 +38,14 @@
   margin-block-start: var(--denhaag-accordion-panel-margin-block);
   margin-block-end: var(--denhaag-accordion-panel-margin-block);
   width: var(--denhaag-accordion-panel-width);
+}
+
+.denhaag-accordion__panel > .denhaag-icon {
+  color: var(--denhaag-accordion-denhaag-icon-color);
+  position: var(--denhaag-accordion-denhaag-icon-position);
+  top: var(--denhaag-accordion-denhaag-icon-top);
+  right: var(--denhaag-accordion-denhaag-icon-right);
+  transform: var(--denhaag-accordion-denhaag-icon-transform);
 }
 
 .denhaag-accordion__title {
