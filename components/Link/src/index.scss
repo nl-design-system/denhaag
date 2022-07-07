@@ -30,10 +30,10 @@
 }
 
 .denhaag-link--external,
-.denhaag-link--with-icon--hover,
-.denhaag-link--with-icon:hover,
-.denhaag-link--with-icon--focus,
-.denhaag-link--with-icon:focus {
+.denhaag-link--hover,
+.denhaag-link:hover,
+.denhaag-link--focus,
+.denhaag-link:focus {
   text-decoration: var(--denhaag-link-text-decoration);
 }
 
