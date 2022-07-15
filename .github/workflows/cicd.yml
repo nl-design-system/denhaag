@@ -14,7 +14,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
+          fetch-depth: 0
           ref: ${{ github.event.pull_request.head.ref }}
+
       - name: Set up Node.js version
         uses: actions/setup-node@v3.2.0
         with:
@@ -47,6 +49,14 @@ jobs:
           name: storybook
           path: storybook-static
 
+      - name: Publish to Chromatic
+        uses: chromaui/action@v1
+        if: github.event.pull_request.draft == false
+        with:
+          autoAcceptChanges: main
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          storybookBuildDir: storybook-static
+
   deploy-storybook:
     needs: build
     if: github.ref == 'refs/heads/main'
@@ -54,8 +64,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - with:
-          fetch-depth: 0
 
       - name: Download storybook artifact
         uses: actions/download-artifact@v3
@@ -68,14 +76,6 @@ jobs:
         with:
           branch: gh-pages
           folder: storybook-static
-
-      - name: Publish to Chromatic
-        uses: chromaui/action@v1
-        if: github.event.pull_request.draft == false
-        with:
-          autoAcceptChanges: main
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          storybookBuildDir: storybook-static
 
   publish-npm:
     runs-on: ubuntu-latest
