@@ -5,6 +5,9 @@ import readme from "../../README.md";
 import "../index.scss";
 import "../storybook.scss";
 
+export const heroImage = (h, w, id = "photo-1513384312027-9fa69a360337") =>
+  `https://images.unsplash.com/${id}?fit=crop&w=${w}&h=${h}`;
+
 <Meta
   title="CSS/Page Elements/Hero"
   parameters={{
@@ -35,7 +38,11 @@ import "../storybook.scss";
           <h1 class="denhaag-hero__title utrecht-heading-1">Parkeren</h1>
         </div>
       </div>
-      <img class="denhaag-hero__image" src="https://source.unsplash.com/560x400/?parking" alt="" />
+      <img
+        class="denhaag-hero__image"
+        src={heroImage(400, 560, "photo-1470224114660-3f6686c562eb")}
+        alt="auto in parkeervak"
+      />
     </section>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
@@ -52,7 +59,11 @@ import "../storybook.scss";
           <h1 class="denhaag-hero__title utrecht-heading-1">Betalen, wijzigen of opzeggen</h1>
         </div>
       </div>
-      <img class="denhaag-hero__image" src="https://source.unsplash.com/560x400/?payment" alt="" />
+      <img
+        class="denhaag-hero__image"
+        src={heroImage(400, 560, "photo-1634733988138-bf2c3a2a13fa")}
+        alt="pinautomaat"
+      />
     </section>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
@@ -71,7 +82,7 @@ import "../storybook.scss";
           </h1>
         </div>
       </div>
-      <img class="denhaag-hero__image" src="https://source.unsplash.com/560x400/?parking" alt="" />
+      <img class="denhaag-hero__image" src={heroImage(800, 800)} alt="hero" />
     </section>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
@@ -108,7 +119,11 @@ import "../storybook.scss";
           </button>
         </div>
       </div>
-      <img class="denhaag-hero__image" src="https://source.unsplash.com/560x400/?parking" alt="" />
+      <img
+        class="denhaag-hero__image"
+        src={heroImage(400, 560, "photo-1470224114660-3f6686c562eb")}
+        alt="auto in parkeervak"
+      />
     </section>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
