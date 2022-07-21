@@ -11,6 +11,13 @@
   margin-block-end: var(--denhaag-form-progress-header-margin-block-end);
 }
 
+/* Den Haag S */
+@media (max-width: 767px) {
+  .denhaag-form-progress__header {
+    justify-content: flex-end;
+  }
+}
+
 .denhaag-form-progress__previous {
   position: absolute;
   inset-inline-start: 0;
