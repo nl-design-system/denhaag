@@ -5,7 +5,7 @@
       "padding-block-start": { "value": "{denhaag.space.block.3xl}" },
       "padding-block-end": { "value": "{denhaag.space.block.3xl}" },
       "width": { "value": "100%" },
-      "navigation-list": {
+      "list": {
         "display": { "value": "grid" },
         "gap": { "value": "0 {denhaag.space.block.3xl}" },
         "grid-template-columns": { "value": "repeat(2, 1fr)" },

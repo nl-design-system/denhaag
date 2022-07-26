@@ -9,13 +9,13 @@
       "caption": {
         "margin-block": { "value": "0" }
       },
-      "navigation-list": {
+      "list": {
         "margin-block-start": { "value": "{denhaag.space.block.xs}" },
         "margin-block-end": { "value": "{denhaag.space.block.md}" },
         "list-style": { "value": "none" },
         "padding-inline-start": { "value": "0" }
       },
-      "navigation-list-item": {
+      "list-item": {
         "padding-block": { "value": "{denhaag.space.block.xs}" }
       },
       "dark": {
