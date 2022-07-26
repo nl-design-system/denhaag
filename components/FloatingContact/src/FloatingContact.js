@@ -29,9 +29,6 @@ export default class FloatingContact {
   toggleEvents() {
     const state = this.toggle.getAttribute('aria-expanded') === 'false';
     this.toggle.setAttribute('aria-expanded', state ? 'true' : 'false');
-    this.labelWrapper.innerHTML = state
-      ? this.toggle?.dataset?.labelClose || 'Close'
-      : this.toggle?.dataset?.labelOpen || 'Open';
     this.links.forEach((link) => (link.tabIndex = state ? 0 : -1));
   }
 
