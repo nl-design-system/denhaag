@@ -80,12 +80,14 @@
 }
 
 .denhaag-pagination__link:not(:first-child):not(:last-child):not(.denhaag-pagination__link--current):not([rel]) {
+  color: transparent; // Only for Safari
   overflow: hidden;
   pointer-events: none;
   text-indent: calc(var(--denhaag-pagination-size) * 2);
 }
 
 .denhaag-pagination__link:not(:first-child):not(:last-child):not(.denhaag-pagination__link--current):not([rel])::before {
+  color: var(--denhaag-pagination-color); // Only for Safari
   content: "...";
   left: calc(50% - 7px);
   line-height: 0;
