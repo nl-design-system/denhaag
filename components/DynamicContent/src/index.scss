@@ -24,6 +24,7 @@
   grid-template-columns: repeat(var(--denhaag-dynamic-content-grid-columns, 1), 1fr);
   grid-column-gap: var(--denhaag-dynamic-content-grid-gap, 0);
   grid-row-gap: var(--denhaag-dynamic-content-row-gap);
+  scroll-margin-top: var(--denhaag-dynamic-content-row-gap);
 }
 
 .denhaag-dynamic-content__card {
