@@ -19,23 +19,23 @@
         "padding-block": { "value": "{denhaag.space.block.xs}" }
       },
       "dark": {
-        "denhaag-link-color": { "value": "{denhaag.color.white}" },
+        "link-color": { "value": "{denhaag.color.white}" },
         "caption-color": { "value": "{denhaag.color.ocher.3}" },
-        "denhaag-link-focus-outline-color": { "value": "{denhaag.color.ocher.2}" }
+        "link-focus-outline-color": { "value": "{denhaag.color.ocher.2}" }
       },
-      "denhaag-link-hover": {
+      "link-hover": {
         "text-decoration": { "value": "underline" }
       },
-      "denhaag-link-with-icon-start": {
+      "link-with-icon-start": {
         "display": { "value": "inline-flex" },
         "padding-block-start": { "value": "0" },
         "padding-block-end": { "value": "0" }
       },
-      "denhaag-link-icon": {
+      "link-icon": {
         "font-size": { "value": "0.75rem" },
         "width": { "value": "0.625rem" }
       },
-      "denhaag-link-icon-denhaag-icon": {
+      "link-icon-denhaag-icon": {
         "align-self": { "value": "start" },
         "padding-block-start": { "value": "{denhaag.space.block.3xs}" },
         "height": { "value": "0.85rem" }
