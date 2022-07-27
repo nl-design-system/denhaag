@@ -2,7 +2,7 @@
   "denhaag": {
     "link-group": {
       "image": {
-        "padding-block-end": { "value": "{denhaag.space.block.md}" },
+        "margin-block-end": { "value": "{denhaag.space.block.md}" },
         "size": { "value": "8.75rem" },
         "object-fit": { "value": "cover" }
       },
