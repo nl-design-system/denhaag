@@ -1,26 +1,26 @@
 .denhaag-publication-date {
   color: var(--denhaag-publication-date-color);
+  display: flex;
+  flex-direction: var(--denhaag-publication-direction, column);
   font-family: var(--denhaag-publication-date-font-family);
   font-weight: var(--denhaag-publication-date-font-weight);
   font-size: var(--denhaag-publication-date-font-size);
+  padding-block-start: var(--denhaag-publication-date-padding);
+  border-block-start: var(--denhaag-publication-date-border-width) var(--denhaag-publication-date-border-style)
+    var(--denhaag-publication-date-border-color);
 }
 
-.denhaag-publication-date > span {
-  display: block;
-  line-height: var(--denhaag-publication-date-line-height);
-  white-space: nowrap;
-}
+@media (min-width: 640px) {
+  .denhaag-publication-date {
+    --denhaag-publication-direction: row;
 
-@media (min-width: 480px) {
-  .denhaag-publication-date > span {
-    display: inline;
+    gap: var(--denhaag-publication-date-gap);
+    line-height: 1; // otherwise the vertical-line will be a lot higher.
   }
 
-  .denhaag-publication > span + span {
-    border-inline-end-color: var(--denhaag-publication-date-border-color);
-    border-inline-end-style: var(--denhaag-publication-date-border-style);
-    border-inline-end-width: var(--denhaag-publication-date-border-width);
-    margin-inline-end: var(--denhaag-publication-date-margin);
-    padding-inline-end: var(--denhaag-publication-date-padding);
+  .denhaag-publication-date > span + span {
+    border-inline-start: var(--denhaag-publication-date-border-width) var(--denhaag-publication-date-border-style)
+      var(--denhaag-publication-date-border-color);
+    padding-inline-start: var(--denhaag-publication-date-gap);
   }
 }
