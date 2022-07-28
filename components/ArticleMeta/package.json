@@ -1,12 +1,12 @@
 {
-  "name": "@gemeente-denhaag/publicationdate",
+  "name": "@gemeente-denhaag/article-meta",
   "version": "0.1.1-alpha.163",
   "description": "A publication date component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/nl-design-system/denhaag.git",
-    "directory": "components/PublicationDate"
+    "directory": "components/ArticleMeta"
   },
   "license": "EUPL-1.2",
   "author": "Municipality of The Hague",

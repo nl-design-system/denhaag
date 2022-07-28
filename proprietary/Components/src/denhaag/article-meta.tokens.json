@@ -1,6 +1,6 @@
 {
   "denhaag": {
-    "publication-date": {
+    "article-meta": {
       "border-width": {
         "value": "1px"
       },
@@ -28,8 +28,18 @@
       "line-height": {
         "value": "{denhaag.typography.scale.base.line-height}"
       },
-      "padding": {
+      "padding-block-start": {
         "value": "{denhaag.space.block.md}"
+      },
+      "padding-block-end": {
+        "value": "{denhaag.space.block.2xl}"
+      },
+      "horizontal": {
+        "item": {
+          "border-width": { "value": "1px" },
+          "border-style": { "value": "solid" },
+          "border-color": { "value": "{denhaag.color.grey.2}" }
+        }
       }
     }
   }
