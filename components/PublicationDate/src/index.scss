@@ -6,7 +6,7 @@
   font-weight: var(--denhaag-publication-date-font-weight);
   font-size: var(--denhaag-publication-date-font-size);
   padding-block-start: var(--denhaag-publication-date-padding);
-  padding-block-end: var(--denhaag-publication-date-padding);
+  padding-block-end: calc(var(--denhaag-publication-date-padding) * 2);
   border-block-start: var(--denhaag-publication-date-border-width) var(--denhaag-publication-date-border-style)
     var(--denhaag-publication-date-border-color);
 }
