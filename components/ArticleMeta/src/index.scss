@@ -28,3 +28,9 @@
     var(--denhaag-article-meta-horizontal-item-border-color, --denhaag-article-meta-border-color);
   padding-inline-start: var(--denhaag-article-meta-gap);
 }
+
+@media (min-width: 620px) {
+  .denhaag-article-meta--responsive {
+    @extend .denhaag-article-meta--horizontal;
+  }
+}
