@@ -52,6 +52,8 @@
 .denhaag-accordion__title {
   --utrecht-heading-5-margin-block-start: 0;
   --utrecht-heading-5-margin-block-end: 0;
+  --utrecht-heading-5-font-family: var(--denhaag-accordion-font-family);
+  --utrecht-heading-5-font-weight: 400;
 
   background: var(--denhaag-accordion-title-background);
   border: var(--denhaag-accordion-title-border);
@@ -94,6 +96,7 @@
 
 .denhaag-accordion__title:focus-visible,
 .denhaag-accordion__title--focus {
+  color: var(--denhaag-accordion-panel-color);
   outline: none;
 }
 
@@ -117,9 +120,13 @@
   --utrecht-heading-font-weight: var(--denhaag-accordion-container-open-title-font-weight);
 }
 
-.denhaag-accordion__container--open .denhaag-accordion__panel:hover,
 .denhaag-accordion__container--open .denhaag-accordion__panel > .denhaag-icon:hover {
   --denhaag-accordion-title-color: var(--denhaag-accordion-container-open-color);
+}
+
+.denhaag-accordion__container--open .denhaag-accordion__title:not([disabled]) {
+  --utrecht-heading-5-color: var(--denhaag-accordion-panel-color);
+  --utrecht-heading-5-font-weight: 700;
 }
 
 .denhaag-accordion__panel:focus .denhaag-accordion__title:not([disabled]),
@@ -127,6 +134,14 @@
 .denhaag-accordion__panel:hover .denhaag-accordion__title:not([disabled]),
 .denhaag-accordion__panel:hover .denhaag-accordion__title:not([disabled]) + .denhaag-icon {
   color: var(--denhaag-accordion-panel-color);
+}
+
+.denhaag-accordion__container--open .denhaag-accordion__panel:hover .denhaag-accordion__title:not([disabled]),
+.denhaag-accordion__container--open
+  .denhaag-accordion__panel:hover
+  .denhaag-accordion__title:not([disabled])
+  + .denhaag-icon {
+  color: var(--denhaag-accordion-container-open-color);
 }
 
 .denhaag-accordion__details {
