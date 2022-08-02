@@ -44,7 +44,7 @@
   font-size: var(--denhaag-accordion-panel-font-size);
 }
 
-.denhaag-accordion__panel .denhaag-icon {
+.denhaag-accordion__panel > .denhaag-icon {
   color: inherit;
   position: var(--denhaag-accordion-icon-position);
   top: var(--denhaag-accordion-icon-top);
