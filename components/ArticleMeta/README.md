@@ -29,7 +29,7 @@ If there are edits on the same day as de publication date, show both on the same
 
 **Structure**
 
-Publication and edited date: small divider padding-left and padding-right 12px
+Publication and edited date: small divider padding-left and padding-right 12px, margin-top 32px, margin-bottom 64px
 
 ## Accessibility
 
