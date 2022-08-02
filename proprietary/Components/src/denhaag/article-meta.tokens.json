@@ -32,6 +32,9 @@
         "value": "{denhaag.space.block.md}"
       },
       "padding-block-end": {
+        "value": "{denhaag.space.block.5xl}"
+      },
+      "margin-block-start": {
         "value": "{denhaag.space.block.2xl}"
       },
       "horizontal": {
