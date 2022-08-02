@@ -24,9 +24,6 @@
           "title": {
             "color": {
               "value": "{denhaag.color.green.3}"
-            },
-            "font-weight": {
-              "value": "{denhaag.typography.weight.bold}"
             }
           },
           "icon": {
@@ -35,6 +32,14 @@
             },
             "transform": {
               "value": "rotate(180deg)"
+            }
+          },
+          "panel": {
+            "color": {
+              "value": "{denhaag.color.green.3}"
+            },
+            "font-weight": {
+              "value": "{denhaag.typography.weight.bold}"
             }
           }
         }
@@ -70,22 +75,13 @@
         "text-decoration": {
           "value": "none"
         },
-        "width": {
-          "value": "100%"
+        "font-size": {
+          "value": "{denhaag.typography.scale.base.font-size}"
         }
       },
       "title": {
-        "background": {
-          "value": "none"
-        },
-        "border": {
-          "value": 0
-        },
         "flex-grow": {
           "value": 1
-        },
-        "text-align": {
-          "value": "left"
         },
         "padding-inline": {
           "value": "{denhaag.space.inline.md}"
@@ -121,7 +117,7 @@
           "value": "{denhaag.space.inline.md}"
         },
         "width": {
-          "value": "1.5rem"
+          "value": "{denhaag.space.inline.xl}"
         }
       },
       "details": {
@@ -129,10 +125,10 @@
           "value": 0
         },
         "padding-block-end": {
-          "value": "1rem"
+          "value": "{denhaag.space.block.md}"
         },
         "padding-inline": {
-          "value": "1rem"
+          "value": "{denhaag.space.inline.md}"
         },
         "margin-inline-end": {
           "value": "calc((2 * 1rem) + (2 * 0.75rem))"
