@@ -1,4 +1,35 @@
+@mixin denhaag-floating-contact-zoomed($selector) {
+  @if $selector {
+    #{$selector} {
+      --denhaag-floating-contact-bottom: 0;
+      --denhaag-floating-contact-overlay-border-radius: 0;
+      --denhaag-floating-contact-overlay-display: var(--denhaag-floating-contact-active-overlay-display);
+      --denhaag-floating-contact-overlay-width: 100%;
+      --denhaag-floating-contact-position: static;
+      --denhaag-floating-contact-right: 0;
+      --denhaag-floating-contact-switch-display: none;
+      --denhaag-floating-contact-heading-zoomed-clip: rect(100%, 100%, 100%, 100%);
+      --denhaag-floating-contact-heading-zoomed-clip-path: auto;
+      --denhaag-floating-contact-heading-zoomed-height: auto;
+      --denhaag-floating-contact-heading-zoomed-position: static;
+      --denhaag-floating-contact-heading-zoomed-width: 100%;
+      --denhaag-floating-contact-heading-zoomed-white-space: wrap;
+      --denhaag-floating-contact-overlay-arrow-content: none;
+    }
+  } @else {
+    @error "Mixin denhaag-floating-contact-zoomed() is missing a selector.";
+  }
+}
+
 .denhaag-floating-contact {
+  // Variables will be overwritten in the same file.
+  --denhaag-floating-contact-heading-zoomed-clip: rect(0, 0, 0, 0);
+  --denhaag-floating-contact-heading-zoomed-clip-path: inset(50%);
+  --denhaag-floating-contact-heading-zoomed-height: 1px;
+  --denhaag-floating-contact-heading-zoomed-position: absolute;
+  --denhaag-floating-contact-heading-zoomed-width: 1px;
+  --denhaag-floating-contact-heading-zoomed-white-space: nowrap;
+
   display: flex;
   flex-flow: column;
   gap: calc(var(--denhaag-floating-contact-gap) + (var(--denhaag-floating-contact-overlay-arrow-width) / 2));
@@ -7,6 +38,8 @@
   right: var(--denhaag-floating-contact-right);
   z-index: var(--denhaag-floating-contact-index);
 }
+
+@include denhaag-floating-contact-zoomed(".denhaag-floating-contact--zoomed");
 
 .denhaag-floating-contact-switch {
   align-items: var(--denhaag-floating-contact-switch-align-items);
@@ -17,7 +50,7 @@
   box-shadow: inset 0 0 0 var(--denhaag-floating-contact-switch-border-width)
     var(--denhaag-floating-contact-switch-border-color);
   color: var(--denhaag-floating-contact-color);
-  display: flex;
+  display: var(--denhaag-floating-contact-switch-display, flex);
   flex-direction: var(--denhaag-floating-contact-switch-direction);
   font-family: var(--denhaag-floating-contact-switch-font-family);
   font-size: var(--denhaag-floating-contact-switch-font-size);
@@ -124,7 +157,7 @@
   aspect-ratio: 2 / 1;
   background-color: var(--denhaag-floating-contact-overlay-background-color);
   clip-path: path("M13.1716 13.1716L0 0H32L18.8284 13.1716C17.2663 14.7337 14.7337 14.7337 13.1716 13.1716Z");
-  content: "";
+  content: var(--denhaag-floating-contact-overlay-arrow-content, "");
   height: auto;
   width: var(--denhaag-floating-contact-overlay-arrow-width);
   position: absolute;
@@ -139,6 +172,21 @@
   line-height: var(--denhaag-floating-contact-heading-line-height);
   margin-block-start: 0;
   margin-block-end: 0;
+}
+
+.denhaag-floating-contact__heading--zoomed-visible {
+  border: 0;
+  clip: var(--denhaag-floating-contact-heading-zoomed-clip);
+  clip-path: var(--denhaag-floating-contact-heading-zoomed-clip-path);
+  height: var(--denhaag-floating-contact-heading-zoomed-height);
+  overflow: hidden;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  position: var(--denhaag-floating-contact-heading-zoomed-position);
+  white-space: var(--denhaag-floating-contact-heading-zoomed-white-space);
+  width: var(--denhaag-floating-contact-heading-zoomed-width);
 }
 
 .denhaag-floating-contact__item {
@@ -160,7 +208,7 @@
   --denhaag-floating-contact-status-border-color: var(--denhaag-floating-contact-status-offline-border-color);
 }
 
-.denhaag-floating-contact__item > svg {
+.denhaag-floating-contact__item .denhaag-icon {
   height: auto;
   max-width: var(--denhaag-floating-contact-item-icon-size);
 }
@@ -223,4 +271,10 @@
   margin-inline-start: var(--denhaag-floating-contact-status-size);
   top: 50%;
   transform: translateY(-50%);
+}
+
+/* stylelint-disable media-feature-name-no-unknown -- We need to check on zoom 400% */
+/* stylelint-disable media-feature-name-no-vendor-prefix -- We need the prefixes. */
+@media (-webkit-min-device-pixel-ratio: 4), (-moz-device-pixel-ratio: 4), (device-pixel-ratio: 4) {
+  @include denhaag-floating-contact-zoomed(".denhaag-floating-contact");
 }
