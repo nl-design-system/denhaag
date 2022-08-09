@@ -3,7 +3,7 @@
   padding-block-start: var(--denhaag-button-group-padding, var(--denhaag-button-group-gap));
   padding-block-end: var(--denhaag-button-group-padding, var(--denhaag-button-group-gap));
 
-  @media (min-width: 481px) {
+  @media (min-width: 768px) {
     --denhaag-button-group-flex-direction: row;
   }
 
