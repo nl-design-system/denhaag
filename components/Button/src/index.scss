@@ -8,6 +8,7 @@
   display: inline-flex;
   font-family: var(--denhaag-button-font-family);
   font-size: var(--denhaag-typography-scale-base-font-size);
+  justify-content: center;
   line-height: 1.75;
   padding-block-end: var(--denhaag-button-medium-size-padding-block, var(--denhaag-button-padding-block));
   padding-block-start: var(--denhaag-button-medium-size-padding-block, var(--denhaag-button-padding-block));
