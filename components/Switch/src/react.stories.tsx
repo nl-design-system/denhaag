@@ -23,7 +23,7 @@ export default {
 const Template: Story<SwitchProps> = (args: SwitchProps) => {
   return (
     <div>
-      <FormControlLabel label="Switch" control={<Switch {...args} />} />
+      <FormControlLabel label="Switch" input={<Switch {...args} />} />
     </div>
   );
 };

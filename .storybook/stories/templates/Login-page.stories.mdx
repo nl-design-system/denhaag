@@ -1,0 +1,116 @@
+import { Meta, Canvas } from "@storybook/addon-docs";
+import { AuthenticationBlock, defaultArgs } from "/components/AuthenticationBlock/src/css/story-template";
+import { Heading1, Paragraph } from "/components/Typography/src";
+import clsx from "clsx";
+
+export const FormToggle = ({ checked, disabled, focus, hover }) => {
+  // TODO: use Utrecht story-template and use checkbox with label
+  return (
+    <div
+      className={clsx(
+        "utrecht-form-toggle",
+        checked && "utrecht-form-toggle--checked",
+        !checked && "utrecht-form-toggle--not-checked",
+        disabled && "utrecht-form-toggle--disabled",
+        focus && "utrecht-form-toggle--focus",
+        hover && "utrecht-form-toggle--hover"
+      )}
+      role="switch"
+      tabindex="0"
+      aria-checked={checked}
+      aria-disabled={disabled}
+    >
+      <div
+        className={clsx(
+          "utrecht-form-toggle__track",
+          checked && "utrecht-form-toggle__track--checked",
+          !checked && "utrecht-form-toggle__track--not-checked",
+          disabled && "utrecht-form-toggle__track--disabled"
+        )}
+      >
+        <div
+          className={clsx(
+            "utrecht-form-toggle__thumb",
+            checked && "utrecht-form-toggle__thumb--checked",
+            !checked && "utrecht-form-toggle__thumb--not-checked",
+            disabled && "utrecht-form-toggle__thumb--disabled"
+          )}
+        ></div>
+      </div>
+    </div>
+  );
+};
+
+<Meta title="Templates/Login page" />
+
+# Login page
+
+In deze template worden de schermen vanuit de Login pagina nagebouwd met componenten die beschikbaar zijn in Storybook.
+
+<Canvas>
+  <Story name="personal">
+    <Heading1>Inloggen</Heading1>
+    <Paragraph>
+      Voor het behandelen van dit formulier heeft de gemeente uw elektronische handtekening nodig. Dat regelt u door in
+      te loggen met DigiD. Op basis hiervan wordt een deel van uw persoonlijke gegevens vooraf ingevuld. Dit werkt
+      alleen als u in Den Haag woont.
+    </Paragraph>
+    <FormToggle />
+    <AuthenticationBlock
+      {...defaultArgs}
+      header={{
+        title: "Inloggen met DigiD",
+        subtitle: "Voordeel: wij kunnen uw gegevens alvast voor u invullen.",
+        image: { src: "https://secure.denhaag.nl/vp/images/digid.svg", alt: "digid logo" },
+      }}
+      content={{ links: [{ type: "internal", href: "#digid", textContent: "Inloggen" }] }}
+    />
+    <AuthenticationBlock
+      {...defaultArgs}
+      header={{
+        title: "Inloggen met e-herkenning",
+        subtitle: "Voordeel: wij kunnen uw gegevens alvast voor u invullen.",
+        image: { src: "https://secure.denhaag.nl/vp/images/eherkenning.png", alt: "eherkenning logo" },
+      }}
+      content={{ links: [{ type: "internal", href: "#eherkenning", textContent: "Inloggen" }] }}
+    />
+    <AuthenticationBlock
+      {...defaultArgs}
+      header={{
+        title: "Als gast doorgaan",
+        subtitle: "U hoeft niet in te loggen.",
+      }}
+      content={{ links: [{ type: "internal", href: "#eherkenning", textContent: "Start formulier" }] }}
+    />
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="authorised representative">
+    <Heading1>Inloggen als gemachtigde</Heading1>
+    <Paragraph>
+      Voor het behandelen van dit formulier heeft de gemeente uw elektronische handtekening nodig. Dat regelt u door in
+      te loggen met DigiD. Op basis hiervan wordt een deel van uw persoonlijke gegevens vooraf ingevuld. Dit werkt
+      alleen als u in Den Haag woont.
+    </Paragraph>
+    <FormToggle checked />
+    <AuthenticationBlock
+      {...defaultArgs}
+      header={{
+        title: "Inloggen met DigiD",
+        subtitle: "Voordeel: wij kunnen uw gegevens alvast voor u invullen.",
+        image: { src: "https://secure.denhaag.nl/vp/images/digid.svg", alt: "digid logo" },
+      }}
+      content={{ links: [{ type: "internal", href: "#digid", textContent: "Inloggen" }] }}
+    />
+    <AuthenticationBlock
+      {...defaultArgs}
+      header={{
+        title: "Inloggen met e-herkenning",
+        subtitle: "Voordeel: wij kunnen uw gegevens alvast voor u invullen.",
+        image: { src: "https://secure.denhaag.nl/vp/images/eherkenning.png", alt: "eherkenning logo" },
+      }}
+      content={{ links: [{ type: "internal", href: "#eherkenning", textContent: "Inloggen" }] }}
+    />
+  </Story>
+</Canvas>
