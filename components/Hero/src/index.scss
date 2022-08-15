@@ -264,7 +264,7 @@
       );
       content: "";
       height: 100%;
-      width: 100%;
+      width: calc(100% - var(--denhaag-hero-routing-shape-left, 0));
       top: 0;
       left: var(--denhaag-hero-routing-shape-left, 0);
       position: absolute;
