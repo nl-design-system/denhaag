@@ -122,3 +122,7 @@ Certain Components available in this repository may become part of the NL Design
 Our public issue tracker is located [here](https://github.com/nl-design-system/denhaag/issues).
 Before reporting an issue make sure to check if a similar issue already exists.
 When reporting an issue give detailed information about the issue and how to reproduce it if applicable.
+
+## Special thanks
+
+[Chromatic](https://www.chromatic.com) supports us with a free starter plan for open source.
