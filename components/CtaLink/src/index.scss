@@ -16,7 +16,6 @@
   padding-inline-start: var(--denhaag-cta-link-padding-inline, calc(var(--denhaag-cta-link-gap) / 1.5));
   padding-inline-end: var(--denhaag-cta-link-padding-inline, calc(var(--denhaag-cta-link-gap) / 1.5));
   text-decoration: none;
-  word-break: break-word;
 }
 
 .denhaag-cta-link:hover,
@@ -54,16 +53,6 @@
 
 .denhaag-cta-link__excerpt {
   font-size: var(--denhaag-typography-scale-lg-font-size);
-}
-
-@supports (-webkit-line-clamp: 2) {
-  .denhaag-cta-link__excerpt {
-    display: flex;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    white-space: pre-wrap;
-  }
 }
 
 .denhaag-cta-link__highlight,
