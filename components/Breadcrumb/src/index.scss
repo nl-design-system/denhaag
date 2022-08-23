@@ -5,7 +5,6 @@
   --denhaag-breadcrumb-link-pointer-events: bounding-box;
   --denhaag-breadcrumb-item-display: none;
 
-  background-color: var(--denhaag-breadcrumb-background-color, transparent);
   color: var(--denhaag-breadcrumb-color, inherit);
   padding-block-end: var(--denhaag-breadcrumb-padding-block);
   padding-block-start: var(--denhaag-breadcrumb-padding-block);
@@ -133,6 +132,8 @@ ol.denhaag-breadcrumb__list {
     --denhaag-breadcrumb-chevron-display: inline-block;
     --denhaag-breadcrumb-link-icon-content: unset;
     --denhaag-breadcrumb-padding-block: var(--denhaag-breadcrumb-padding-block-md);
+
+    background-color: var(--denhaag-breadcrumb-background-color, transparent);
   }
 
   .denhaag-breadcrumb__item:not(:nth-last-child(2)) {
