@@ -9,7 +9,7 @@
   font-family: var(--denhaag-button-font-family);
   font-size: var(--denhaag-typography-scale-base-font-size);
   justify-content: center;
-  line-height: 1.75;
+  line-height: 1.5;
   padding-block-end: var(--denhaag-button-medium-size-padding-block, var(--denhaag-button-padding-block));
   padding-block-start: var(--denhaag-button-medium-size-padding-block, var(--denhaag-button-padding-block));
   padding-inline-end: var(--denhaag-button-medium-size-padding-inline, var(--denhaag-button-padding-inline));
@@ -107,6 +107,7 @@ a.denhaag-button {
   padding-block-start: var(--denhaag-button-large-size-padding-block, var(--denhaag-button-padding-block));
   padding-inline-end: var(--denhaag-button-large-size-padding-inline, var(--denhaag-button-padding-inline));
   padding-inline-start: var(--denhaag-button-large-size-padding-inline, var(--denhaag-button-padding-inline));
+  line-height: var(--denhaag-button-large-size-line-height);
 }
 
 .denhaag-button--large.denhaag-button--secondary-action {

@@ -43,7 +43,8 @@
       },
       "large-size": {
         "padding-block": { "value": "0.40625rem" },
-        "padding-inline": { "value": "{denhaag.space.inline.lg}" }
+        "padding-inline": { "value": "{denhaag.space.inline.lg}" },
+        "line-height": { "value": "1.75" }
       },
       "medium-size": {
         "padding-block": { "value": "{denhaag.button.padding-block}" },
