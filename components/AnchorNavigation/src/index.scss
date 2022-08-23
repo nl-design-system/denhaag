@@ -37,12 +37,6 @@
   text-decoration: var(--denhaag-anchor-navigation-link-text-decoration);
 }
 
-.denhaag-anchor-navigation__link:visited,
-.denhaag-anchor-navigation__link--visited {
-  --denhaag-anchor-navigation-link-color: var(--denhaag-anchor-navigation-link-visited-color);
-  --denhaag-anchor-navigation-link-background-color: var(--denhaag-anchor-navigation-link-visited-color);
-}
-
 .denhaag-anchor-navigation__link:active,
 .denhaag-anchor-navigation__link--active {
   --denhaag-anchor-navigation-link-color: var(--denhaag-anchor-navigation-link-active-color);
