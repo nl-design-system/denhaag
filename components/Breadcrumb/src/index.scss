@@ -88,12 +88,6 @@ ol.denhaag-breadcrumb__list {
   text-decoration: none;
 }
 
-.denhaag-breadcrumb__link:not(.denhaag-breadcrumb__link--current):not(.denhaag-breadcrumb__link.denhaag-link--current):not(:last-child
-    > .denhaag-breadcrumb__link)
-  > :first-child {
-  pointer-events: bounding-box;
-}
-
 /* SVG for the separator */
 .denhaag-breadcrumb__link > .denhaag-icon + .denhaag-icon,
 .denhaag-breadcrumb__link > .denhaag-breadcrumb__text + .denhaag-icon {
@@ -138,12 +132,15 @@ ol.denhaag-breadcrumb__list {
   .denhaag-breadcrumb {
     --denhaag-breadcrumb-chevron-display: inline-block;
     --denhaag-breadcrumb-link-icon-content: unset;
-    --denhaag-breadcrumb-link-pointer-events: none;
     --denhaag-breadcrumb-padding-block: var(--denhaag-breadcrumb-padding-block-md);
   }
 
   .denhaag-breadcrumb__item:not(:nth-last-child(2)) {
     --denhaag-breadcrumb-item-display: flex;
+  }
+
+  .denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(2)) {
+    --denhaag-breadcrumb-link-pointer-events: none;
   }
 }
 
