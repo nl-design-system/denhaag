@@ -1,1 +1,7 @@
-{ "of": { "checkbox": { "bg": { "value": "{denhaag.color.white}" } } } }
+{
+  "of": {
+    "checkbox": {
+      "bg": { "value": "{denhaag.color.white}" }
+    }
+  }
+}
