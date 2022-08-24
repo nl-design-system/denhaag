@@ -1,0 +1,21 @@
+{
+  "denhaag": {
+    "summary-header": {
+      "header": {
+        "margin-block-start": { "value": "45px" },
+        "border-width": { "value": "1px" },
+        "border-style": { "value": "solid" },
+        "border-color": { "value": "{denhaag.color.grey.2}" },
+        "padding-block-end": { "value": "8px" }
+      },
+      "heading": {
+        "margin-block-start": { "value": "0px" },
+        "margin-block-end": { "value": "0px" }
+      },
+      "actions": {
+        "margin-block-start": { "value": "0px" },
+        "margin-block-end": { "value": "0px" }
+      }
+    }
+  }
+}

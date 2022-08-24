@@ -1,0 +1,19 @@
+.denhaag-data-summary-section__header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-block-start: var(--denhaag-summary-header-header-margin-block-start);
+  border-bottom: var(--denhaag-summary-header-header-border-width) var(--denhaag-summary-header-header-border-style)
+    var(--denhaag-summary-header-header-border-color);
+  padding-block-end: var(--denhaag-summary-header-header-padding-block-end);
+}
+
+.denhaag-data-summary-section__heading {
+  margin-block-start: var(--denhaag-summary-header-heading-margin-block-start);
+  margin-block-end: var(--denhaag-summary-header-heading-margin-block-end);
+}
+
+.denhaag-data-summary-section__actions {
+  margin-block-start: var(--denhaag-summary-header-actions-margin-block-start);
+  margin-block-end: var(--denhaag-summary-header-actions-margin-block-end);
+}

@@ -1,0 +1,69 @@
+.example-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-flow: column;
+}
+
+/* Den Haag XXS */
+@media (max-width: 359px) {
+  .example-grid {
+    grid-column-gap: 8px;
+  }
+
+  .example-grid__content {
+    grid-column: 1 / 13;
+    margin-inline: 22px;
+  }
+}
+
+/* Den Haag XS */
+@media (min-width: 360px) {
+  .example-grid {
+    grid-column-gap: 8px;
+  }
+
+  .example-grid__content {
+    grid-column: 1 / 13;
+    margin-inline: 22px;
+  }
+}
+
+/* Den Haag S */
+@media (min-width: 768px) {
+  .example-grid {
+    grid-column-gap: 16px;
+  }
+
+  .example-grid__content {
+    grid-column: 3 / 11;
+    margin-inline: 0px;
+  }
+}
+
+/* Den Haag M */
+@media (min-width: 1024px) {
+  .example-grid {
+    grid-column-gap: 24px;
+  }
+}
+
+/* Den Haag L */
+@media (min-width: 1280px) {
+  .example-grid {
+    grid-column-gap: 32px;
+  }
+}
+
+/* Den Haag XL */
+@media (min-width: 1768px) {
+  .example-grid {
+    grid-column-gap: 40px;
+  }
+}
+
+/* Den Haag XXL */
+@media (min-width: 2160px) {
+  .example-grid {
+    grid-column-gap: 48x;
+  }
+}

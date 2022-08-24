@@ -1,0 +1,96 @@
+import { Meta, Canvas, Story } from "@storybook/addon-docs";
+import { Heading1, Paragraph } from "/components/Typography/src";
+import Button from "/components/Button/src";
+import FormProgress from "/components/FormProgress/src";
+import { ArrowRightIcon } from "/components/Icons/src";
+import Checkbox from "/components/Checkbox/src";
+import FormControlLabel from "/components/FormControlLabel/src";
+import FormGroup from "/components/FormGroup/src";
+import Divider from "/components/Divider/src";
+import SummaryHeader from "/components/SummaryHeader/src";
+import clsx from "clsx";
+import "./story-summary.css";
+
+export const FormToggle = (props) => {
+  // TODO: use Utrecht story-template and use checkbox with label
+  return (
+    <React.Fragment>
+      <div class="denhaag-form-header">
+        <div class="denhaag-form-header__border-image"></div>
+        <div class="openforms-layout">
+          <section class="openforms-layout__header">
+            <img
+              class="denhaag-form-header__logo"
+              src="/static/media/logo_denhaag.6b43ccea0ad0d2c60e5fce953b000acb.svg"
+              alt=""
+            />
+            <h1 class="denhaag-form-header__title">Test formulier stappenindicator</h1>
+          </section>
+        </div>
+      </div>
+      <div class="openforms-layout">
+        <section class="openforms-layout__row">
+          <div class="openforms-card">{props.children}</div>
+        </section>
+      </div>
+    </React.Fragment>
+  );
+};
+
+<Meta title="Templates/Summary page" />
+
+# Summary page
+
+In deze template worden de schermen vanuit de Summary pagina nagebouwd met componenten die beschikbaar zijn in Storybook.
+
+<Canvas>
+  <Story name="Summary page">
+    <div className="example-grid">
+      <div className="example-grid__content">
+        <FormProgress value={3} max={3} label="Stap 3 van 3" previousHref="#" previousLabel="Vorige" />
+        <Heading1>Controleer uw antwoorden voordat u uw aanvraag verzendt</Heading1>
+        <section class="denhaag-data-summary-section">
+          <SummaryHeader headingLabel="Stap 1" href="#" linkLabel="Aanpassen" />
+          <div className="denhaag-data-summary-section__body">
+            <dl className="x-data-summary">
+              <div>
+                <dt>Voornaam (1 of meerdere)</dt>
+                <dd>John</dd>
+              </div>
+              <div>
+                <dt>Achternaam</dt>
+                <dd>Doe</dd>
+              </div>
+            </dl>
+          </div>
+          <SummaryHeader headingLabel="Stap 2" href="#" linkLabel="Aanpassen" />
+          <div className="denhaag-data-summary-section__body">
+            <dl className="x-data-summary">
+              <div>
+                <dt>Postcode</dt>
+                <dd>2511BT</dd>
+              </div>
+              <div>
+                <dt>Straat</dt>
+                <dd>Spui</dd>
+              </div>
+              <div>
+                <dt>Huisnummer</dt>
+                <dd>70</dd>
+              </div>
+            </dl>
+          </div>
+        </section>
+        <FormGroup>
+          <FormControlLabel label="Ik verklaar alle gegevens naar waarheid te hebben ingevuld." input={<Checkbox />} />
+        </FormGroup>
+        <div class="denhaag-button-group denhaag-button-group--multiple">
+          <Button variant="primary-action" icon={<ArrowRightIcon />} iconAlign="end">
+            Versturen
+          </Button>
+          <Button variant="secondary-action">Formulier opslaan</Button>
+        </div>
+      </div>
+    </div>
+  </Story>
+</Canvas>
