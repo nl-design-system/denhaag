@@ -3,7 +3,7 @@
     "button": {
       "primary": {
         "bg": { "value": "{denhaag.color.green.3}" },
-        "fg": { "value": "{denhaag.color.white" },
+        "fg": { "value": "{denhaag.color.white}" },
         "active": {
           "bg": { "value": "{denhaag.color.green.4}" },
           "fg": { "value": "{denhaag.color.white}" },
