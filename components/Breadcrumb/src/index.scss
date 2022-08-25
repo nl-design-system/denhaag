@@ -72,7 +72,7 @@ ol.denhaag-breadcrumb__list {
   --denhaag-breadcrumb-link-color: var(--denhaag-breadcrumb-link-hover-color, inherit);
 }
 
-.denhaag-breadcrumb__link:focus,
+.denhaag-breadcrumb__link:focus-visible,
 .denhaag-breadcrumb__link--focus {
   --denhaag-breadcrumb-link-color: var(--denhaag-breadcrumb-link-focus-color, inherit);
 

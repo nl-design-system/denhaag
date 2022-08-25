@@ -18,7 +18,7 @@
   color: var(--denhaag-icon-button-hover-color);
 }
 
-.denhaag-icon-button:focus,
+.denhaag-icon-button:focus-visible,
 .denhaag-icon-button--focus {
   color: var(--denhaag-icon-button-focus-color);
   outline-color: var(--denhaag-icon-button-focus-outline-color);

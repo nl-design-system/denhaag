@@ -31,7 +31,7 @@
   );
 }
 
-.denhaag-cta-event:focus,
+.denhaag-cta-event:focus-visible,
 .denhaag-cta-event--focus {
   --denhaag-cta-event-dot-background-color: var(
     --denhaag-cta-event-focus-dot-background-color,

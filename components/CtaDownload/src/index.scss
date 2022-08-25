@@ -35,7 +35,7 @@
   background-color: var(--denhaag-cta-download-hover-dot-background-color, var(--denhaag-cta-download-color));
 }
 
-.denhaag-cta-download:focus,
+.denhaag-cta-download:focus-visible,
 .denhaag-cta-download--focus {
   --denhaag-cta-download-dot-background-color: var(
     --denhaag-cta-download-focus-dot-background-color,
