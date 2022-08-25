@@ -28,10 +28,10 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Default">
-    <button class="denhaag-button">Button</button>
-    <br />
-    <br />
-    <button class="denhaag-button denhaag-button--secondary-action">Button</button>
+    <div class="denhaag-button-group denhaag-button-group--multiple">
+      <button class="denhaag-button">Button</button>
+      <button class="denhaag-button denhaag-button--secondary-action">Button</button>
+    </div>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -41,40 +41,40 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Default - icon left">
-    <button class="denhaag-button denhaag-button--start-icon">
-      <span class="denhaag-button__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-        >
-          <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
-        </svg>
-      </span>
-      Button
-    </button>
-    <br />
-    <br />
-    <button class="denhaag-button denhaag-button--secondary-action denhaag-button--start-icon">
-      <span class="denhaag-button__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-        >
-          <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
-        </svg>
-      </span>
-      Button
-    </button>
+    <div class="denhaag-button-group denhaag-button-group--multiple">
+      <button class="denhaag-button denhaag-button--start-icon">
+        <span class="denhaag-button__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
+          </svg>
+        </span>
+        Button
+      </button>
+      <button class="denhaag-button denhaag-button--secondary-action denhaag-button--start-icon">
+        <span class="denhaag-button__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
+          </svg>
+        </span>
+        Button
+      </button>
+    </div>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -84,40 +84,40 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Default - icon right">
-    <button class="denhaag-button denhaag-button--end-icon">
-      Button
-      <span class="denhaag-button__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-        >
-          <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
-        </svg>
-      </span>
-    </button>
-    <br />
-    <br />
-    <button class="denhaag-button denhaag-button--secondary-action denhaag-button--end-icon">
-      Button
-      <span class="denhaag-button__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-        >
-          <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
-        </svg>
-      </span>
-    </button>
+    <div class="denhaag-button-group denhaag-button-group--multiple">
+      <button class="denhaag-button denhaag-button--end-icon">
+        Button
+        <span class="denhaag-button__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
+          </svg>
+        </span>
+      </button>
+      <button class="denhaag-button denhaag-button--secondary-action denhaag-button--end-icon">
+        Button
+        <span class="denhaag-button__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
+          </svg>
+        </span>
+      </button>
+    </div>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -127,86 +127,78 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Default - hover">
-    <button class="denhaag-button denhaag-button--hover">Button</button>
-    <br />
-    <br />
-    <button class="denhaag-button denhaag-button--secondary-action denhaag-button--hover">Button</button>
-    <br />
-    <br />
-    <hr />
-    <br />
-    <button class="denhaag-button denhaag-button--start-icon denhaag-button--hover">
-      <span class="denhaag-button__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-        >
-          <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
-        </svg>
-      </span>
-      Button
-    </button>
-    <br />
-    <br />
-    <button class="denhaag-button denhaag-button--secondary-action denhaag-button--start-icon denhaag-button--hover">
-      <span class="denhaag-button__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-        >
-          <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
-        </svg>
-      </span>
-      Button
-    </button>
-    <br />
-    <br />
-    <hr />
-    <br />
-    <button class="denhaag-button denhaag-button--end-icon denhaag-button--hover">
-      Button
-      <span class="denhaag-button__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-        >
-          <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
-        </svg>
-      </span>
-    </button>
-    <br />
-    <br />
-    <button class="denhaag-button denhaag-button--secondary-action denhaag-button--end-icon denhaag-button--hover">
-      Button
-      <span class="denhaag-button__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-        >
-          <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
-        </svg>
-      </span>
-    </button>
+    <div class="denhaag-button-group denhaag-button-group--multiple">
+      <button class="denhaag-button denhaag-button--hover">Button</button>
+      <button class="denhaag-button denhaag-button--secondary-action denhaag-button--hover">Button</button>
+    </div>
+    <div class="denhaag-button-group denhaag-button-group--multiple">
+      <button class="denhaag-button denhaag-button--start-icon denhaag-button--hover">
+        <span class="denhaag-button__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
+          </svg>
+        </span>
+        Button
+      </button>
+      <button class="denhaag-button denhaag-button--secondary-action denhaag-button--start-icon denhaag-button--hover">
+        <span class="denhaag-button__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
+          </svg>
+        </span>
+        Button
+      </button>
+    </div>
+    <div class="denhaag-button-group denhaag-button-group--multiple">
+      <button class="denhaag-button denhaag-button--end-icon denhaag-button--hover">
+        Button
+        <span class="denhaag-button__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
+          </svg>
+        </span>
+      </button>
+      <button class="denhaag-button denhaag-button--secondary-action denhaag-button--end-icon denhaag-button--hover">
+        Button
+        <span class="denhaag-button__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
+          </svg>
+        </span>
+      </button>
+    </div>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -216,96 +208,88 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Default - disabled">
-    <button disabled class="denhaag-button denhaag-button--disabled">
-      Button
-    </button>
-    <br />
-    <br />
-    <button disabled class="denhaag-button denhaag-button--secondary-action denhaag-button--disabled">
-      Button
-    </button>
-    <br />
-    <br />
-    <hr />
-    <br />
-    <button disabled class="denhaag-button denhaag-button--start-icon denhaag-button--disabled">
-      <span class="denhaag-button__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-        >
-          <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
-        </svg>
-      </span>
-      Button
-    </button>
-    <br />
-    <br />
-    <button
-      disabled
-      class="denhaag-button denhaag-button--secondary-action denhaag-button--start-icon denhaag-button--disabled"
-    >
-      <span class="denhaag-button__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-        >
-          <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
-        </svg>
-      </span>
-      Button
-    </button>
-    <br />
-    <br />
-    <hr />
-    <br />
-    <button disabled class="denhaag-button denhaag-button--end-icon denhaag-button--disabled">
-      Button
-      <span class="denhaag-button__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-        >
-          <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
-        </svg>
-      </span>
-    </button>
-    <br />
-    <br />
-    <button
-      disabled
-      class="denhaag-button denhaag-button--secondary-action denhaag-button--end-icon denhaag-button--disabled"
-    >
-      Button
-      <span class="denhaag-button__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-        >
-          <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
-        </svg>
-      </span>
-    </button>
+    <div class="denhaag-button-group denhaag-button-group--multiple">
+      <button disabled class="denhaag-button denhaag-button--disabled">
+        Button
+      </button>
+      <button disabled class="denhaag-button denhaag-button--secondary-action denhaag-button--disabled">
+        Button
+      </button>
+    </div>
+    <div class="denhaag-button-group denhaag-button-group--multiple">
+      <button disabled class="denhaag-button denhaag-button--start-icon denhaag-button--disabled">
+        <span class="denhaag-button__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
+          </svg>
+        </span>
+        Button
+      </button>
+      <button
+        disabled
+        class="denhaag-button denhaag-button--secondary-action denhaag-button--start-icon denhaag-button--disabled"
+      >
+        <span class="denhaag-button__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
+          </svg>
+        </span>
+        Button
+      </button>
+    </div>
+    <div class="denhaag-button-group denhaag-button-group--multiple">
+      <button disabled class="denhaag-button denhaag-button--end-icon denhaag-button--disabled">
+        Button
+        <span class="denhaag-button__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
+          </svg>
+        </span>
+      </button>
+      <button
+        disabled
+        class="denhaag-button denhaag-button--secondary-action denhaag-button--end-icon denhaag-button--disabled"
+      >
+        Button
+        <span class="denhaag-button__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
+          </svg>
+        </span>
+      </button>
+    </div>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -315,86 +299,78 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Default - focus">
-    <button class="denhaag-button denhaag-button--focus">Button</button>
-    <br />
-    <br />
-    <button class="denhaag-button denhaag-button--secondary-action denhaag-button--focus">Button</button>
-    <br />
-    <br />
-    <hr />
-    <br />
-    <button class="denhaag-button denhaag-button--start-icon denhaag-button--focus">
-      <span class="denhaag-button__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-        >
-          <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
-        </svg>
-      </span>
-      Button
-    </button>
-    <br />
-    <br />
-    <button class="denhaag-button denhaag-button--secondary-action denhaag-button--start-icon denhaag-button--focus">
-      <span class="denhaag-button__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-        >
-          <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
-        </svg>
-      </span>
-      Button
-    </button>
-    <br />
-    <br />
-    <hr />
-    <br />
-    <button class="denhaag-button denhaag-button--end-icon denhaag-button--focus">
-      Button
-      <span class="denhaag-button__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-        >
-          <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
-        </svg>
-      </span>
-    </button>
-    <br />
-    <br />
-    <button class="denhaag-button denhaag-button--secondary-action denhaag-button--end-icon denhaag-button--focus">
-      Button
-      <span class="denhaag-button__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-        >
-          <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
-        </svg>
-      </span>
-    </button>
+    <div class="denhaag-button-group denhaag-button-group--multiple">
+      <button class="denhaag-button denhaag-button--focus">Button</button>
+      <button class="denhaag-button denhaag-button--secondary-action denhaag-button--focus">Button</button>
+    </div>
+    <div class="denhaag-button-group denhaag-button-group--multiple">
+      <button class="denhaag-button denhaag-button--start-icon denhaag-button--focus">
+        <span class="denhaag-button__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
+          </svg>
+        </span>
+        Button
+      </button>
+      <button class="denhaag-button denhaag-button--secondary-action denhaag-button--start-icon denhaag-button--focus">
+        <span class="denhaag-button__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
+          </svg>
+        </span>
+        Button
+      </button>
+    </div>
+    <div class="denhaag-button-group denhaag-button-group--multiple">
+      <button class="denhaag-button denhaag-button--end-icon denhaag-button--focus">
+        Button
+        <span class="denhaag-button__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
+          </svg>
+        </span>
+      </button>
+      <button class="denhaag-button denhaag-button--secondary-action denhaag-button--end-icon denhaag-button--focus">
+        Button
+        <span class="denhaag-button__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
+          </svg>
+        </span>
+      </button>
+    </div>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -404,10 +380,10 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Large">
-    <button class="denhaag-button denhaag-button--large">Button</button>
-    <br />
-    <br />
-    <button class="denhaag-button denhaag-button--large denhaag-button--secondary-action">Button</button>
+    <div class="denhaag-button-group denhaag-button-group--multiple">
+      <button class="denhaag-button denhaag-button--large">Button</button>
+      <button class="denhaag-button denhaag-button--large denhaag-button--secondary-action">Button</button>
+    </div>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -417,40 +393,40 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Large - icon left">
-    <button class="denhaag-button denhaag-button--large denhaag-button--start-icon">
-      <span class="denhaag-button__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-        >
-          <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
-        </svg>
-      </span>
-      Button
-    </button>
-    <br />
-    <br />
-    <button class="denhaag-button denhaag-button--large denhaag-button--secondary-action denhaag-button--start-icon">
-      <span class="denhaag-button__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-        >
-          <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
-        </svg>
-      </span>
-      Button
-    </button>
+    <div class="denhaag-button-group denhaag-button-group--multiple">
+      <button class="denhaag-button denhaag-button--large denhaag-button--start-icon">
+        <span class="denhaag-button__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
+          </svg>
+        </span>
+        Button
+      </button>
+      <button class="denhaag-button denhaag-button--large denhaag-button--secondary-action denhaag-button--start-icon">
+        <span class="denhaag-button__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
+          </svg>
+        </span>
+        Button
+      </button>
+    </div>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -460,40 +436,40 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Large - icon right">
-    <button class="denhaag-button denhaag-button--large denhaag-button--end-icon">
-      Button
-      <span class="denhaag-button__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-        >
-          <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
-        </svg>
-      </span>
-    </button>
-    <br />
-    <br />
-    <button class="denhaag-button denhaag-button--large denhaag-button--secondary-action denhaag-button--end-icon">
-      Button
-      <span class="denhaag-button__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-        >
-          <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
-        </svg>
-      </span>
-    </button>
+    <div class="denhaag-button-group denhaag-button-group--multiple">
+      <button class="denhaag-button denhaag-button--large denhaag-button--end-icon">
+        Button
+        <span class="denhaag-button__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
+          </svg>
+        </span>
+      </button>
+      <button class="denhaag-button denhaag-button--large denhaag-button--secondary-action denhaag-button--end-icon">
+        Button
+        <span class="denhaag-button__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
+          </svg>
+        </span>
+      </button>
+    </div>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -503,88 +479,80 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Large - hover">
-    <button class="denhaag-button denhaag-button--large denhaag-button--hover">Button</button>
-    <br />
-    <br />
-    <button class="denhaag-button denhaag-button--large denhaag-button--secondary-action denhaag-button--hover">
-      Button
-    </button>
-    <br />
-    <br />
-    <hr />
-    <br />
-    <button class="denhaag-button denhaag-button--large denhaag-button--start-icon denhaag-button--hover">
-      <span class="denhaag-button__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-        >
-          <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
-        </svg>
-      </span>
-      Button
-    </button>
-    <br />
-    <br />
-    <button class="denhaag-button denhaag-button--large denhaag-button--secondary-action denhaag-button--start-icon denhaag-button--hover">
-      <span class="denhaag-button__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-        >
-          <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
-        </svg>
-      </span>
-      Button
-    </button>
-    <br />
-    <br />
-    <hr />
-    <br />
-    <button class="denhaag-button denhaag-button--large denhaag-button--end-icon denhaag-button--hover">
-      Button
-      <span class="denhaag-button__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-        >
-          <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
-        </svg>
-      </span>
-    </button>
-    <br />
-    <br />
-    <button class="denhaag-button denhaag-button--large denhaag-button--secondary-action denhaag-button--end-icon denhaag-button--hover">
-      Button
-      <span class="denhaag-button__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-        >
-          <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
-        </svg>
-      </span>
-    </button>
+    <div class="denhaag-button-group denhaag-button-group--multiple">
+      <button class="denhaag-button denhaag-button--large denhaag-button--hover">Button</button>
+      <button class="denhaag-button denhaag-button--large denhaag-button--secondary-action denhaag-button--hover">
+        Button
+      </button>
+    </div>
+    <div class="denhaag-button-group denhaag-button-group--multiple">
+      <button class="denhaag-button denhaag-button--large denhaag-button--start-icon denhaag-button--hover">
+        <span class="denhaag-button__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
+          </svg>
+        </span>
+        Button
+      </button>
+      <button class="denhaag-button denhaag-button--large denhaag-button--secondary-action denhaag-button--start-icon denhaag-button--hover">
+        <span class="denhaag-button__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
+          </svg>
+        </span>
+        Button
+      </button>
+    </div>
+    <div class="denhaag-button-group denhaag-button-group--multiple">
+      <button class="denhaag-button denhaag-button--large denhaag-button--end-icon denhaag-button--hover">
+        Button
+        <span class="denhaag-button__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
+          </svg>
+        </span>
+      </button>
+      <button class="denhaag-button denhaag-button--large denhaag-button--secondary-action denhaag-button--end-icon denhaag-button--hover">
+        Button
+        <span class="denhaag-button__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
+          </svg>
+        </span>
+      </button>
+    </div>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -594,99 +562,91 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Large - disabled">
-    <button disabled class="denhaag-button denhaag-button--large denhaag-button--disabled">
-      Button
-    </button>
-    <br />
-    <br />
-    <button
-      disabled
-      class="denhaag-button denhaag-button--large denhaag-button--secondary-action denhaag-button--disabled"
-    >
-      Button
-    </button>
-    <br />
-    <br />
-    <hr />
-    <br />
-    <button disabled class="denhaag-button denhaag-button--large denhaag-button--start-icon denhaag-button--disabled">
-      <span class="denhaag-button__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-        >
-          <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
-        </svg>
-      </span>
-      Button
-    </button>
-    <br />
-    <br />
-    <button
-      disabled
-      class="denhaag-button denhaag-button--large denhaag-button--secondary-action denhaag-button--start-icon denhaag-button--disabled"
-    >
-      <span class="denhaag-button__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-        >
-          <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
-        </svg>
-      </span>
-      Button
-    </button>
-    <br />
-    <br />
-    <hr />
-    <br />
-    <button disabled class="denhaag-button denhaag-button--large denhaag-button--end-icon denhaag-button--disabled">
-      Button
-      <span class="denhaag-button__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-        >
-          <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
-        </svg>
-      </span>
-    </button>
-    <br />
-    <br />
-    <button
-      disabled
-      class="denhaag-button denhaag-button--large denhaag-button--secondary-action denhaag-button--end-icon denhaag-button--disabled"
-    >
-      Button
-      <span class="denhaag-button__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-        >
-          <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
-        </svg>
-      </span>
-    </button>
+    <div class="denhaag-button-group denhaag-button-group--multiple">
+      <button disabled class="denhaag-button denhaag-button--large denhaag-button--disabled">
+        Button
+      </button>
+      <button
+        disabled
+        class="denhaag-button denhaag-button--large denhaag-button--secondary-action denhaag-button--disabled"
+      >
+        Button
+      </button>
+    </div>
+    <div class="denhaag-button-group denhaag-button-group--multiple">
+      <button disabled class="denhaag-button denhaag-button--large denhaag-button--start-icon denhaag-button--disabled">
+        <span class="denhaag-button__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
+          </svg>
+        </span>
+        Button
+      </button>
+      <button
+        disabled
+        class="denhaag-button denhaag-button--large denhaag-button--secondary-action denhaag-button--start-icon denhaag-button--disabled"
+      >
+        <span class="denhaag-button__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
+          </svg>
+        </span>
+        Button
+      </button>
+    </div>
+    <div class="denhaag-button-group denhaag-button-group--multiple">
+      <button disabled class="denhaag-button denhaag-button--large denhaag-button--end-icon denhaag-button--disabled">
+        Button
+        <span class="denhaag-button__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
+          </svg>
+        </span>
+      </button>
+      <button
+        disabled
+        class="denhaag-button denhaag-button--large denhaag-button--secondary-action denhaag-button--end-icon denhaag-button--disabled"
+      >
+        Button
+        <span class="denhaag-button__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
+          </svg>
+        </span>
+      </button>
+    </div>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
