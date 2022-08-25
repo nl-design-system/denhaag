@@ -23,7 +23,7 @@
   --denhaag-cta-link-highlight-color: var(--denhaag-cta-link-hover-highlight-color, var(--denhaag-cta-link-color));
 }
 
-.denhaag-cta-link:focus,
+.denhaag-cta-link:focus-visible,
 .denhaag-cta-link--focus {
   --denhaag-cta-link-highlight-color: var(
     --denhaag-cta-link-focus-highlight-color,

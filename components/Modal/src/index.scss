@@ -80,7 +80,7 @@
   --denhaag-modal-icon-color: var(--denhaag-modal-icon-hover-color);
 }
 
-.denhaag-modal__button:focus,
+.denhaag-modal__button:focus-visible,
 .denhaag-modal__button--focus {
   outline: var(--denhaag-focus-border);
 }
