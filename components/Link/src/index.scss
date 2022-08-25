@@ -33,7 +33,7 @@
 .denhaag-link--hover,
 .denhaag-link:hover,
 .denhaag-link--focus,
-.denhaag-link:focus {
+.denhaag-link:focus-visible {
   text-decoration: var(--denhaag-link-text-decoration);
 }
 
@@ -47,7 +47,7 @@
 }
 
 .denhaag-link--focus,
-.denhaag-link:focus {
+.denhaag-link:focus-visible {
   --denhaag-link-color: var(--denhaag-link-focus-color);
 
   outline: var(--denhaag-link-focus-outline);
