@@ -172,7 +172,7 @@
       color: var(--denhaag-authentication-item-hover-color, var(--denhaag-link-hover-color));
     }
 
-    &:focus {
+    &:focus-visible {
       outline: var(--denhaag-authentication-item-focus-outline, var(--denhaag-link-focus-outline));
     }
 
