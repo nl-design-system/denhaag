@@ -22,3 +22,28 @@
 .denhaag-unordered-list--lower-alpha {
   list-style-type: var(--denhaag-unordered-list-lower-alpha-list-style-type);
 }
+
+.denhaag-unordered-list ul {
+  @extend .denhaag-unordered-list;
+
+  margin-inline-start: initial;
+  margin-inline-end: initial;
+  margin-block-start: initial;
+  margin-block-end: initial;
+}
+
+.denhaag-unordered-list li {
+  line-height: var(--denhaag-unordered-list-line-height, 1.5);
+}
+
+.denhaag-unordered-list li > p {
+  line-height: inherit;
+  margin-inline-start: inherit;
+  margin-inline-end: inherit;
+  margin-block-start: inherit;
+  margin-block-end: inherit;
+  padding-inline-start: inherit;
+  padding-inline-end: inherit;
+  padding-block-start: inherit;
+  padding-block-end: inherit;
+}
