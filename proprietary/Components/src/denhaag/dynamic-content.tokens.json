@@ -8,6 +8,9 @@
           },
           "gap": {
             "value": "{denhaag.space.inline.lg}"
+          },
+          "padding": {
+            "value": "{denhaag.space.block.md}"
           }
         },
         "gap": {
@@ -37,6 +40,9 @@
             "weight": {
               "value": "{denhaag.typography.weight.bold}"
             }
+          },
+          "hyphens": {
+            "value": "auto"
           },
           "line-height": {
             "value": "{denhaag.typography.scale.s.line-height}"
