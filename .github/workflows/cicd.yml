@@ -35,13 +35,13 @@ jobs:
           yarn lint:prettier
 
       - name: build library
-        run: yarn build
+        run: yarn build:library
 
       - name: typecheck storybook
         run: yarn typecheck:storybook
 
       - name: build storybook
-        run: yarn build-storybook
+        run: yarn build:storybook
 
       - name: Upload storybook
         uses: actions/upload-artifact@v3
