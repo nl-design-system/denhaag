@@ -4899,17 +4899,17 @@
     "@typescript-eslint/types" "5.25.0"
     eslint-visitor-keys "^3.3.0"
 
-"@utrecht/component-library-css@1.0.0-alpha.221":
-  version "1.0.0-alpha.221"
-  resolved "https://registry.yarnpkg.com/@utrecht/component-library-css/-/component-library-css-1.0.0-alpha.221.tgz#a36df87c656da9cfff66d8841b3b06b73573693e"
-  integrity sha512-BaGr+yRWfWk9NuOI8OBlqF4+pARLXx3WdKPuy3kMiwXkdUwDQEe5cY2G2DQJ3J594aEuClh9K6A24ETVp9s03Q==
+"@utrecht/component-library-css@1.0.0-alpha.321":
+  version "1.0.0-alpha.321"
+  resolved "https://registry.yarnpkg.com/@utrecht/component-library-css/-/component-library-css-1.0.0-alpha.321.tgz#bba620964b68f230da6b5d523c57c0bf1b4852e2"
+  integrity sha512-e6Uxcw17PKYiNlIuQc6JmN8giXz+VrE3ZFAEi/cfeEX3+PP87AMD8gHNisJ20K0iFtHWtacD9FRABytzXcuBJQ==
 
-"@utrecht/components@1.0.0-alpha.182":
-  version "1.0.0-alpha.182"
-  resolved "https://registry.yarnpkg.com/@utrecht/components/-/components-1.0.0-alpha.182.tgz#1fb7f2648990956b2645c39e14c3e5a21e6c8b8b"
-  integrity sha512-RUWw9auEyQFkYuxvaXX/aAJZIN/dVxB96R7cYG2TaniqFJd/ghhXYHw9kzHVYJifbWpWjaQCHq6fX9EQDu8EGQ==
+"@utrecht/components@1.0.0-alpha.282":
+  version "1.0.0-alpha.282"
+  resolved "https://registry.yarnpkg.com/@utrecht/components/-/components-1.0.0-alpha.282.tgz#1c85e772d9011d83e1e3cad0725381a222638f98"
+  integrity sha512-IYTSOs+JYjU6gdOmKPUbrAPGhduhVX7rLvpw+MDqJyrI9tHJYfBHxic96Wz4mxVMU11oOE35O8xdV/NmcqMLYQ==
   dependencies:
-    clsx "1.1.1"
+    clsx "1.2.1"
 
 "@webassemblyjs/ast@1.11.1":
   version "1.11.1"
@@ -7002,6 +7002,11 @@ clsx@1.1.1, clsx@^1.0.4:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/clsx/-/clsx-1.1.1.tgz#98b3134f9abbdf23b2663491ace13c5c03a73188"
   integrity sha512-6/bPho624p3S2pMyvP5kKBPXnI3ufHLObBFCfgx+LkeR5lg2XYy2hqZqUf45ypD8COn2bhgGJSUE+l5dhNBieA==
+
+clsx@1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/clsx/-/clsx-1.2.1.tgz#0ddc4a20a549b59c93a4116bb26f5294ca17dc12"
+  integrity sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==
 
 cmd-shim@^4.1.0:
   version "4.1.0"
