@@ -96,6 +96,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: var(--denhaag-dynamic-content-card-content-gap);
+  padding-block-start: var(--denhaag-dynamic-content-card-content-padding);
 }
 
 .denhaag-dynamic-content__card-caption {
@@ -111,6 +112,7 @@
   color: var(--denhaag-dynamic-content-card-title-color);
   font-size: var(--denhaag-dynamic-content-card-title-font-size);
   font-weight: var(--denhaag-dynamic-content-card-title-font-weight);
+  hyphens: var(--denhaag-dynamic-content-card-title-hyphens);
   line-height: var(--denhaag-dynamic-content-card-title-line-height);
   margin-block-start: 0;
   margin-block-end: 0;
