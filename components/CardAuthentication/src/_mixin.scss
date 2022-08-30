@@ -1,0 +1,87 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2020-2022 Gemeente Den Haag
+ * Copyright (c) 2020-2022 Frameless B.V.
+ */
+
+@mixin denhaag-card-authentication {
+  background-color: var(--denhaag-card-authentication-background-color, var(--denhaag-card-background-color));
+  border-color: var(--denhaag-card-authentication-border-color, var(--denhaag-card-wrapper-border-color));
+  border-radius: var(--denhaag-card-authentication-border-radius, var(--denhaag-card-wrapper-border-radius));
+  border-width: var(--denhaag-card-authentication-border-width, var(--denhaag-card-border-width));
+  color: var(--denhaag-card-authentication-color, var(--denhaag-card-wrapper-color));
+  min-width: var(--denhaag-card-authentication-min-width);
+  min-height: var(--denhaag-card-authentication-min-height);
+  padding-inline-start: var(--denhaag-card-authentication-padding-inline, var(--denhaag-card-wrapper-padding-inline));
+  padding-inline-end: var(--denhaag-card-authentication-padding-inline, var(--denhaag-card-wrapper-padding-inline));
+  padding-block-start: var(--denhaag-card-authentication-padding-block, var(--denhaag-card-wrapper-padding-block));
+  padding-block-end: var(--denhaag-card-authentication-padding-block, var(--denhaag-card-wrapper-padding-block));
+  border-style: solid;
+  box-sizing: border-box;
+
+  .denhaag-card-authentication__header {
+    grid-template-areas: "card-heading card-logo";
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin-block-end: var(--denhaag-card-authentication-header-margin-block-end);
+  }
+
+  .denhaag-card-authentication__heading {
+    grid-area: card-heading;
+  }
+
+  .denhaag-card-authentication__title {
+    margin-block-start: 0;
+    font-family: var(--denhaag-card-authentication-title-font-family);
+    font-size: var(--denhaag-card-authentication-title-font-size);
+    font-weight: var(--denhaag-card-authentication-title-font-weight);
+    color: var(--denhaag-card-authentication-title-color);
+  }
+
+  .denhaag-card-authentication__logo {
+    grid-area: card-logo;
+    height: var(--denhaag-card-authentication-logo-size);
+    width: var(--denhaag-card-authentication-logo-size);
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
+  .denhaag-card-authentication__footer {
+    margin-block-start: var(--denhaag-card-authentication-footer-margin-block-start);
+  }
+}
+
+@mixin denhaag-card-authentication-portrait {
+  min-inline-size: var(--denhaag-card-authentication-portrait-min-inline-size);
+  max-inline-size: var(--denhaag-card-authentication-portrait-max-inline-size);
+  min-block-size: var(--denhaag-card-authentication-portrait-min-block-size);
+  text-align: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+
+  .denhaag-card-authentication__header {
+    grid-template-areas:
+      "card-logo"
+      "card-heading";
+    grid-template-rows:
+      calc(
+        var(--denhaag-card-authentication-portrait-logo-size) +
+          var(--denhaag-card-authentication-portrait-logo-margin-block-end)
+      )
+      auto;
+    margin-block-end: var(--denhaag-card-authentication-portrait-header-margin-block-end);
+  }
+
+  .denhaag-card-authentication__logo {
+    height: var(--denhaag-card-authentication-portrait-logo-size);
+    width: var(--denhaag-card-authentication-portrait-logo-size);
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    margin-block-end: var(--denhaag-card-authentication-portrait-logo-margin-block-end);
+  }
+
+  .denhaag-card-authentication__footer {
+    margin-block-start: var(--denhaag-card-authentication-portrait-footer-margin-block-start);
+  }
+}
