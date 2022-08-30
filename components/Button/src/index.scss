@@ -165,3 +165,18 @@ a.denhaag-button {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+.denhaag-button--icon-only {
+  --denhaag-button-medium-size-padding-block: 0.6875rem;
+  --denhaag-button-medium-size-padding-inline: 0.75rem;
+
+  padding-block-start: var(--denhaag-button-medium-size-padding-block);
+  padding-block-end: var(--denhaag-button-medium-size-padding-block);
+  padding-inline-start: var(--denhaag-button-medium-size-padding-inline);
+  padding-inline-end: var(--denhaag-button-medium-size-padding-inline);
+}
+
+.denhaag-button--icon-only .denhaag-button__icon {
+  margin-inline-end: 0;
+  margin-inline-start: 0;
+}
