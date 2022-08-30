@@ -4,7 +4,6 @@
   @extend .denhaag-unordered-list;
 }
 
-.denhaag-ordered-list .denhaag-unordered-list,
-.denhaag-ordered-list ul {
+.denhaag-ordered-list .denhaag-unordered-list {
   @extend .denhaag-unordered-list--lower-alpha;
 }
