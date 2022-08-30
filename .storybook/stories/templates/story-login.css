@@ -6,3 +6,7 @@
 .denhaag-authentication__alert {
   margin-block-start: 24px;
 }
+
+.denhaag-header--without-breadcrumbs {
+  margin-block-end: 56px;
+}
