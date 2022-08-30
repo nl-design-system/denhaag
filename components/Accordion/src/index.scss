@@ -47,6 +47,7 @@
 .denhaag-accordion__panel > .denhaag-icon {
   color: inherit;
   position: var(--denhaag-accordion-icon-position);
+  pointer-events: none;
   top: var(--denhaag-accordion-icon-top);
   right: var(--denhaag-accordion-icon-right);
   transform: var(--denhaag-accordion-icon-transform);
