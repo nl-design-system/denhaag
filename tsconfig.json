@@ -29,6 +29,12 @@
       "path": "components/Card"
     },
     {
+      "path": "components/CardAuthentication"
+    },
+    {
+      "path": "components/CardGroup"
+    },
+    {
       "path": "components/Checkbox"
     },
     {

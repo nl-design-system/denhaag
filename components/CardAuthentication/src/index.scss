@@ -1,0 +1,15 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2020-2022 Gemeente Den Haag
+ * Copyright (c) 2020-2022 Frameless B.V.
+ */
+
+@import "./mixin";
+
+.denhaag-card-authentication {
+  @include denhaag-card-authentication;
+}
+
+.denhaag-card-authentication--portrait {
+  @include denhaag-card-authentication-portrait;
+}

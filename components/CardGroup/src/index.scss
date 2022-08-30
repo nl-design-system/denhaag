@@ -1,0 +1,47 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2020-2022 Gemeente Den Haag
+ * Copyright (c) 2020-2022 Frameless B.V.
+ */
+
+@import "./mixin";
+@import "../../CardAuthentication/src/mixin";
+
+.denhaag-card-group {
+  @include denhaag-card-group;
+}
+
+.denhaag-card-group--rows {
+  @include denhaag-card-group-row;
+
+  .denhaag-card-authentication {
+    @include denhaag-card-authentication-portrait;
+  }
+}
+
+.denhaag-card-group--responsive {
+  --_denhaag-card-group-responsive-gap: var(--denhaag-card-group-xs-gap, var(--denhaag-card-group-gap));
+  --denhaag-card-authentication-portrait-max-inline-size: calc((100% / 3) - var(--_denhaag-card-group-responsive-gap));
+
+  @media (min-width: 768px) {
+    --_denhaag-card-group-responsive-gap: var(--denhaag-card-group-s-gap, var(--denhaag-card-group-gap));
+  }
+
+  @media (min-width: 1024px) {
+    --_denhaag-card-group-responsive-gap: var(--denhaag-card-group-m-gap, var(--denhaag-card-group-gap));
+
+    @include denhaag-card-group-row;
+
+    .denhaag-card-authentication {
+      @include denhaag-card-authentication-portrait;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    --_denhaag-card-group-responsive-gap: var(--denhaag-card-group-l-gap, var(--denhaag-card-group-gap));
+  }
+
+  @media (min-width: 1768px) {
+    --_denhaag-card-group-responsive-gap: var(--denhaag-card-group-xl-gap, var(--denhaag-card-group-gap));
+  }
+}
