@@ -89,9 +89,6 @@
           },
           "line-height": {
             "value": "1.5"
-          },
-          "text-transform": {
-            "value": "uppercase"
           }
         }
       },
