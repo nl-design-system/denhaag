@@ -1,0 +1,19 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+import "../index.scss";
+
+<Meta title="CSS/Page Elements/Page" />
+
+### Default
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Default">
+    <div class="denhaag-page">
+      <div class="denhaag-page-header">Header area</div>
+      <div class="denhaag-page-content">
+        <main class="denhaag-page-content__main">Content area</main>
+      </div>
+    </div>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>

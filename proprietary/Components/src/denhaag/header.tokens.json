@@ -1,0 +1,7 @@
+{
+  "denhaag": {
+    "header": {
+      "border-bottom": { "value": "1px solid {denhaag.color.grey.1}" }
+    }
+  }
+}

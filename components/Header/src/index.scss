@@ -1,0 +1,10 @@
+.denhaag-header {
+  border-bottom: var(--denhaag-header-border-bottom);
+
+  &__container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
