@@ -49,6 +49,9 @@
       "medium-size": {
         "padding-block": { "value": "{denhaag.button.padding-block}" },
         "padding-inline": { "value": "{denhaag.button.padding-inline}" }
+      },
+      "icon-only": {
+        "height": { "value": "{denhaag.space.block.lg}" }
       }
     }
   }
