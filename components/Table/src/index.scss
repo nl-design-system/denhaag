@@ -1,7 +1,22 @@
+.denhaag-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
 .denhaag-table {
   border-spacing: 0;
   width: var(--denhaag-table-width, 100%);
   max-width: var(--denhaag-table-max-width, 100%);
+  position: relative;
+}
+
+.denhaag-table__scroll-buttons {
+  flex-direction: initial;
+}
+
+.denhaag-table__caption,
+.denhaag-table__scroll-buttons {
+  position: fixed;
 }
 
 .denhaag-table__caption {
