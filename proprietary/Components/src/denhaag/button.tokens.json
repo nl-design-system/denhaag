@@ -51,7 +51,10 @@
         "padding-inline": { "value": "{denhaag.button.padding-inline}" }
       },
       "icon-only": {
-        "height": { "value": "{denhaag.space.block.lg}" }
+        "height": { "value": "2.6875rem" },
+        "icon": {
+          "height": { "value": "{denhaag.space.block.lg}" }
+        }
       }
     }
   }

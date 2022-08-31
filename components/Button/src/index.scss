@@ -166,6 +166,14 @@ a.denhaag-button {
   border: 0;
 }
 
-.denhaag-button--icon-only .denhaag-button__icon {
+.denhaag-button--icon-only {
+  --denhaag-button-medium-size-padding-inline: 0.75rem;
+
   height: var(--denhaag-button-icon-only-height);
+  padding-inline-start: var(--denhaag-button-medium-size-padding-inline);
+  padding-inline-end: var(--denhaag-button-medium-size-padding-inline);
+}
+
+.denhaag-button--icon-only .denhaag-button__icon {
+  height: var(--denhaag-button-icon-only-icon-height);
 }
