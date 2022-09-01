@@ -38,16 +38,16 @@ const TableScroll = (
   // register scroll event update position
   const updateScrollPosition = () => {
     [...tableContainers]?.forEach((container) => {
-      // initially disable left button
-
       const disableBtn = () => {
+        // disable left button
         if (xPosition === 0) {
           container.querySelector(`.${scrollButtonLeft}`).setAttribute('disabled', '');
         }
 
-        // if () {
-
-        // }
+        // disable right button
+        if (xPosition === scrollableArea) {
+          container.querySelector(`.${scrollButtonRight}`).setAttribute('disabled', '');
+        }
       };
       // initially disable left button
       disableBtn();
@@ -70,24 +70,22 @@ const TableScroll = (
 
   // register and store scroll activities
   [...scrollBtns]?.forEach((button) => {
+    // number of columns in table
+    tableColumnTotal = button.closest(tableClassName).rows[0].cells.length;
+
+    // table container width
+    tableContainerWidth = button.closest(tableContainer)?.offsetWidth;
+
+    // table width
+    tableWidth = button.closest(tableClassName)?.scrollWidth;
+
+    // scroll area, the amount of horizontal space not visible
+    scrollableArea = tableWidth - tableContainerWidth;
+
+    // scroll unit per click
+    scrollUnit = scrollableArea / tableColumnTotal;
+
     button.onclick = () => {
-      // number of columns in table
-      tableColumnTotal = button.closest(tableClassName).rows[0].cells.length;
-
-      // table container width
-      tableContainerWidth = button.closest(tableContainer)?.offsetWidth;
-
-      // table width
-      tableWidth = button.closest(tableClassName)?.scrollWidth;
-      console.log('tableWidth: ', tableWidth);
-
-      // scroll area, the amount of horizontal space not visible
-      scrollableArea = tableWidth - tableContainerWidth;
-      console.log('scrollableArea: ', scrollableArea);
-
-      // scroll unit per click
-      scrollUnit = scrollableArea / tableColumnTotal;
-
       // scroll amount for right and left buttons
       const scrollAmountRight = xPosition + scrollUnit;
       const scrollAmountLeft = xPosition - scrollUnit;
