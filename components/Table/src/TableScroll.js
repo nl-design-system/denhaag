@@ -3,11 +3,11 @@ const TableScroll = (
   scrollButtonLeft = 'denhaag-table__scroll-buttons-left',
   scrollButtonRight = 'denhaag-table__scroll-buttons-right',
   tableClassName = '.denhaag-table',
-  tableContainer = '.denhaag-table-container',
+  tableContainerClassname = '.denhaag-table-container',
 ) => {
   // select elements to interact with
+  const tableContainers = document.querySelectorAll(tableContainerClassname);
   const scrollBtns = document.querySelectorAll(scrollButtonsClassName);
-  const tableContainers = document.querySelectorAll(tableContainer);
 
   // essential for calculation
   let xPosition = 0;
@@ -16,6 +16,15 @@ const TableScroll = (
   let tableContainerWidth;
   let tableWidth;
   let scrollableArea;
+
+  // disable/enable scroll navigation depending on scroll area existance
+  const toggleScrollNavigation = (button) => {
+    if (scrollableArea === 0) {
+      button.closest(tableContainerClassname).classList.add('table-container--scroll-nav-disabled');
+    } else {
+      button.closest(tableContainerClassname).classList.remove('table-container--scroll-nav-disabled');
+    }
+  };
 
   // reset disabled buttons
   const resetDisabledButtons = () => {
@@ -38,8 +47,9 @@ const TableScroll = (
   // register scroll event update position
   const updateScrollPosition = () => {
     [...tableContainers]?.forEach((container) => {
+      console.log('xPosition: ', xPosition);
       const disableBtn = () => {
-        // disable left button
+        // disable   left button
         if (xPosition === 0) {
           container.querySelector(`.${scrollButtonLeft}`).setAttribute('disabled', '');
         }
@@ -52,12 +62,15 @@ const TableScroll = (
       // initially disable left button
       disableBtn();
 
+      // table container scroll
       container.onscroll = () => {
         // reset disabled button
         resetDisabledButtons();
 
-        // disable btn with scroll delay
-        setTimeout(() => disableBtn(), 150);
+        // scroll delay
+        setTimeout(() => {
+          disableBtn();
+        }, 150);
 
         // update position
         xPosition = container?.scrollLeft;
@@ -70,34 +83,47 @@ const TableScroll = (
 
   // register and store scroll activities
   [...scrollBtns]?.forEach((button) => {
+    console.log('button: ', button);
+    // disable/enable scroll navigation depending on scroll area existance
+    toggleScrollNavigation(button);
+
     // number of columns in table
     tableColumnTotal = button.closest(tableClassName).rows[0].cells.length;
+    console.log('tableWidth: ', tableWidth);
 
     // table container width
-    tableContainerWidth = button.closest(tableContainer)?.offsetWidth;
+    tableContainerWidth = button.closest(tableContainerClassname)?.offsetWidth;
+    console.log('tableWidth: ', tableWidth);
 
     // table width
-    tableWidth = button.closest(tableClassName)?.scrollWidth;
+    tableWidth = button.querySelector(tableClassName)?.scrollWidth;
+    console.log('tableWidth: ', tableWidth);
 
     // scroll area, the amount of horizontal space not visible
     scrollableArea = tableWidth - tableContainerWidth;
+    console.log('scrollableArea: ', scrollableArea);
 
     // scroll unit per click
-    scrollUnit = scrollableArea / tableColumnTotal;
+    scrollUnit = (scrollableArea / tableColumnTotal) * 3;
+    console.log('scrollUnit: ', scrollUnit);
 
     button.onclick = () => {
       // scroll amount for right and left buttons
       const scrollAmountRight = xPosition + scrollUnit;
       const scrollAmountLeft = xPosition - scrollUnit;
+      console.log('scrollAmountRight: ', scrollAmountRight);
+      console.log('scrollAmountLeft: ', scrollAmountLeft);
 
       //scroll to right
       if (button.classList.contains(scrollButtonRight)) {
-        button.closest(tableContainer)?.scroll({ left: scrollAmountRight, behavior: 'smooth' });
+        console.log('right button');
+        button.closest(tableContainerClassname)?.scroll({ left: scrollAmountRight, behavior: 'smooth' });
       }
 
       //scroll to left
       if (button.classList.contains(scrollButtonLeft)) {
-        button.closest(tableContainer)?.scroll({ left: scrollAmountLeft, behavior: 'smooth' });
+        console.log('left button');
+        button.closest(tableContainerClassname)?.scroll({ left: scrollAmountLeft, behavior: 'smooth' });
       }
 
       // need delay because of scroll time

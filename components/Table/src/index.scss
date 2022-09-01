@@ -1,3 +1,14 @@
+/* storybook css only, disabling the css in Docs mode */
+
+// .innerZoomElementWrapper .denhaag-table__scroll-buttons {
+//   display: none;
+// }
+// .innerZoomElementWrapper .denhaag-table__caption {
+//   position: unset;
+// }
+
+/* storybook css only, disabling the css in Docs mode */
+
 .denhaag-table-container {
   width: 100%;
   overflow-x: auto;
@@ -7,17 +18,19 @@
   border-spacing: 0;
   width: var(--denhaag-table-width, 100%);
   max-width: var(--denhaag-table-max-width, 100%);
-  position: relative;
 }
 
 .denhaag-table__scroll-buttons {
   flex-direction: initial;
 }
 
-.denhaag-table__caption,
-.denhaag-table__scroll-buttons {
+.denhaag-table-container__caption-container {
   position: fixed;
 }
+
+// .table-container--scroll-nav-disabled .denhaag-table__scroll-buttons {
+//   display: none;
+// }
 
 .denhaag-table__caption {
   color: var(--utrecht-table-caption-color, inherit);
@@ -27,6 +40,7 @@
   line-height: var(--utrecht-table-caption-line-height, 1);
   text-align: var(--utrecht-table-caption-text-align, start);
   margin-block-end: var(--utrecht-table-caption-margin-block-end, 0);
+  display: inline-block;
 }
 
 .denhaag-table__cell {
