@@ -99,7 +99,7 @@
     --denhaag-anchor-collapse-content-padding-inline-start: 0;
 
     // Must always be the same as the H2 styles.
-    --denhaag-anchor-collapse-summary-color: var(--utrecht-heading-2-color, var(--denhaag-heading-color));
+    --denhaag-anchor-collapse-summary-color: var(--utrecht-heading-2-color, var(--utrecht-heading-color));
     --denhaag-anchor-collapse-summary-font-family: var(
       --utrecht-heading-2-font-family,
       var(--utrecht-heading-font-family, var(--utrecht-document-font-family))
