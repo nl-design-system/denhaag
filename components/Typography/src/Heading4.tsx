@@ -1,6 +1,7 @@
 import React from 'react';
 import BaseDataDisplayProps from '@gemeente-denhaag/basedatadisplayprops';
 import './heading.scss';
+import './space.scss';
 import clsx from 'clsx';
 
 export type Heading4Props = Omit<BaseDataDisplayProps, 'classes'>;
