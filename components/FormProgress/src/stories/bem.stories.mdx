@@ -28,10 +28,9 @@ import pkg from "../../package.json";
     {() => (
       <div class="denhaag-form-progress">
         <div class="denhaag-form-progress__header">
-          {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-          <label for="denhaag-form-progress-bar">
-            <p class="utrecht-paragraph utrecht-paragraph--distanced">Stap 1 van 4</p>
-          </label>
+          <div for="denhaag-form-progress-bar">
+            <p class="utrecht-paragraph">Stap 1 van 4</p>
+          </div>
         </div>
         <progress id="denhaag-form-progress-bar" class="denhaag-form-progress__progress" max="4" value="1"></progress>
       </div>
@@ -49,11 +48,7 @@ import pkg from "../../package.json";
       <div class="denhaag-form-progress">
         <div class="denhaag-form-progress__header">
           <div class="denhaag-form-progress__previous">
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a
-              class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
-              href="javascript:history.back()"
-            >
+            <a class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start" href="https://example.com/">
               <span class="denhaag-link__icon">
                 <svg
                   class="denhaag-icon"
@@ -75,10 +70,9 @@ import pkg from "../../package.json";
               <span>Vorige stap</span>
             </a>
           </div>
-          {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-          <label for="denhaag-form-progress-bar">
-            <p class="utrecht-paragraph utrecht-paragraph--distanced">Stap 2 van 4</p>
-          </label>
+          <div for="denhaag-form-progress-bar">
+            <p class="utrecht-paragraph">Stap 2 van 4</p>
+          </div>
         </div>
         <progress id="denhaag-form-progress-bar" class="denhaag-form-progress__progress" max="4" value="2"></progress>
       </div>
