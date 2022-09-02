@@ -2,7 +2,7 @@
   /* Overwrite utrecht design tokens */
   --utrecht-heading-5-color: var(--denhaag-form-group-label-color);
   --utrecht-paragraph-font-size: var(--denhaag-form-group-helper-text-size);
-  --denhaag-paragraph-color: var(--denhaag-form-group-helper-text-color);
+  --utrecht-paragraph-color: var(--denhaag-form-group-helper-text-color);
 
   /* To ensure gap between helpertext and checkboxes */
   --utrecht-paragraph-margin-block-start: var(--denhaag-form-group-helper-text-margin-block-start);
@@ -20,5 +20,5 @@
 }
 
 .denhaag-form-group--error {
-  --denhaag-paragraph-color: var(--denhaag-form-group-helper-text-error-color);
+  --utrecht-paragraph-color: var(--denhaag-form-group-helper-text-error-color);
 }
