@@ -6,6 +6,6 @@ import clsx from 'clsx';
 export type ParagraphProps = Omit<BaseDataDisplayProps, 'classes'>;
 
 export const Paragraph: React.FC<ParagraphProps> = (props: ParagraphProps) => {
-  const rootClassNames = clsx('utrecht-paragraph', 'utrecht-paragraph--distanced', props.className);
+  const rootClassNames = clsx('utrecht-paragraph', props.className);
   return <p className={rootClassNames}> {props.children}</p>;
 };

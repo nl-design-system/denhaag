@@ -3,32 +3,19 @@
  * Copyright (c) 2021 The Knights Who Say NIH! B.V.
  */
 
+@import "~@utrecht/components/paragraph/css";
+
 .utrecht-paragraph {
-  color: var(--utrecht-paragraph-color, var(--utrecht-document-color, inherit));
-  font-family: var(--utrecht-paragraph-font-family, var(--utrecht-document-font-family, inherit));
-  font-size: var(--utrecht-paragraph-font-size, var(--utrecht-document-font-size, inherit));
-  font-weight: var(--utrecht-paragraph-font-weight, inherit);
-  line-height: var(--utrecht-paragraph-line-height, var(--utrecht-document-line-height, normal));
-  margin-block-start: var(--utrecht-paragraph-margin-block-start);
-  margin-block-end: var(--utrecht-paragraph-margin-block-end);
-}
-
-.utrecht-paragraph--lead {
-  font-size: var(--utrecht-paragraph-lead-font-size, inherit);
-  font-weight: var(--utrecht-paragraph-lead-font-weight, inherit);
-  line-height: var(--utrecht-paragraph-lead-line-height, inherit);
-}
-
-.utrecht-paragraph--distanced {
-  --utrecht-paragraph-margin-block-start: var(--utrecht-paragraph-distanced-margin-block-start);
-  --utrecht-paragraph-margin-block-end: var(--utrecht-paragraph-distanced-margin-block-end);
+  /* TODO: Move `space-around` to container element */
+  --utrecht-space-around: 1;
 }
 
 .denhaag-paragraph--detail {
-  font-family: var(--denhaag-posttypelabel-font-family, inherit);
-  font-size: var(--denhaag-posttypelabel-font-size, 0.75rem);
+  --utrecht-paragraph-font-family: var(--denhaag-posttypelabel-font-family, inherit);
+  --utrecht-paragraph-font-size: var(--denhaag-posttypelabel-font-size, 0.75rem);
+  --utrecht-paragraph-line-height: var(--denhaag-posttypelabel-line-height, 1.5);
+
   letter-spacing: var(--denhaag-posttypelabel-letter-spacing, 1px);
-  line-height: var(--denhaag-posttypelabel-line-height, 1.5);
   text-transform: var(--denhaag-posttypelabel-text-transform, uppercase);
 }
 
