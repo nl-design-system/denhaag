@@ -1,20 +1,9 @@
-/* storybook css only, disabling the css in Docs mode */
-
-// .innerZoomElementWrapper .denhaag-table__scroll-buttons {
-//   display: none;
-// }
-// .innerZoomElementWrapper .denhaag-table__caption {
-//   position: unset;
-// }
-
-/* storybook css only, disabling the css in Docs mode */
-
-.denhaag-table-container {
+.denhaag-table__container {
   width: 100%;
   overflow-x: auto;
 }
 
-.denhaag-table {
+.denhaag-table__table {
   border-spacing: 0;
   width: var(--denhaag-table-width, 100%);
   max-width: var(--denhaag-table-max-width, 100%);
@@ -24,13 +13,9 @@
   flex-direction: initial;
 }
 
-.denhaag-table-container__caption-container {
-  position: fixed;
+.denhaag-table__scroll-buttons--disabled {
+  display: none;
 }
-
-// .table-container--scroll-nav-disabled .denhaag-table__scroll-buttons {
-//   display: none;
-// }
 
 .denhaag-table__caption {
   color: var(--utrecht-table-caption-color, inherit);
