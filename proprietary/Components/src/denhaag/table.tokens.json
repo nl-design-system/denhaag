@@ -3,6 +3,7 @@
     "table": {
       "width": { "value": "100%" },
       "max-width": { "value": "100%" },
+      "border-spacing": { "value": "0" },
       "cell": {
         "color": { "value": "{denhaag.color.grey.4}" },
         "font-weight": { "value": "{denhaag.typography.weight.regular}" },
@@ -55,6 +56,14 @@
       },
       "heading": {
         "color": { "value": "{denhaag.color.grey.5}" }
+      },
+      "container": {
+        "width": { "value": "100%" },
+        "overflow-x": { "value": "auto" }
+      },
+      "scroll-buttons": {
+        "flex-direction": { "value": "initial" },
+        "justify-content": { "value": "flex-end" }
       }
     }
   }
