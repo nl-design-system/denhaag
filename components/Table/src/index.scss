@@ -1,16 +1,17 @@
 .denhaag-table__container {
-  width: 100%;
-  overflow-x: auto;
+  width: var(--denhaag-table-container-width, 100%);
+  overflow-x: var(--denhaag-table-container-overflow-x, auto);
 }
 
 .denhaag-table__table {
-  border-spacing: 0;
+  border-spacing: var(--denhaag-table-border-spacing, 0);
   width: var(--denhaag-table-width, 100%);
   max-width: var(--denhaag-table-max-width, 100%);
 }
 
 .denhaag-table__scroll-buttons {
-  flex-direction: initial;
+  flex-direction: var(--denhaag-table-scroll-buttons-flex-direction, initial);
+  justify-content: var(--denhaag-table-scroll-buttons-justify-content, flex-end);
 }
 
 .denhaag-table__scroll-buttons--disabled {
