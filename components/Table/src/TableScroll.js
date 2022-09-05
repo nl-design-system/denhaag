@@ -3,9 +3,9 @@ const TableScroll = (
   scrollButtonsClassName = '.denhaag-table__scroll-buttons .denhaag-button',
   scrollButtonLeft = 'denhaag-table__scroll-buttons-left',
   scrollButtonRight = 'denhaag-table__scroll-buttons-right',
-  tableClassName = '.denhaag-table__table',
+  tableClassName = '.denhaag-table',
   tableContainerClassname = '.denhaag-table__container',
-  tableBlockClassname = '.denhaag-table',
+  tableBlockClassname = '.denhaag-table-wrapper',
 ) => {
   // select elements to interact with
   const tableContainers = document.querySelectorAll(tableContainerClassname);
