@@ -19,13 +19,8 @@
 
 .denhaag-table__caption {
   color: var(--utrecht-table-caption-color, inherit);
-  font-family: var(--utrecht-table-caption-font-family, inherit);
-  font-size: var(--utrecht-table-caption-font-size, 1.25em);
-  font-weight: var(--utrecht-table-caption-font-weight, inherit);
-  line-height: var(--utrecht-table-caption-line-height, 1);
   text-align: var(--utrecht-table-caption-text-align, start);
   margin-block-end: var(--utrecht-table-caption-margin-block-end, 0);
-  display: inline-block;
 }
 
 .denhaag-table__cell {
