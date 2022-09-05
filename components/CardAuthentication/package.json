@@ -16,7 +16,8 @@
       "import": "./dist/mjs/index.js",
       "default": "./dist/cjs/index.js"
     },
-    "./index.css": "./dist/index.css"
+    "./index.css": "./dist/index.css",
+    "./src/_mixin.scss": "./src/_mixin.scss"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/mjs/index.js",
