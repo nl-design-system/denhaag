@@ -115,18 +115,21 @@ interface AuthenticationCardGroupProps {
   cards: AuthProvider[];
   rows?: boolean;
   responsive?: boolean;
+  distanced?: boolean;
 }
 
 export const AuthenticationCardGroup = ({
   cards = [],
   rows = false,
   responsive = false,
+  distanced = true,
 }: AuthenticationCardGroupProps) => (
   <div
     className={clsx(
       'denhaag-card-group',
       rows && 'denhaag-card-group--rows',
       responsive && 'denhaag-card-group--responsive',
+      distanced && 'denhaag-card-group--distanced',
     )}
   >
     {cards.map((authProvider, index) => (

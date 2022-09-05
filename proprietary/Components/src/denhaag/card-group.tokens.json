@@ -10,7 +10,8 @@
       },
       "xl": {
         "gap": { "value": "40px" }
-      }
+      },
+      "margin-block": { "value": "{denhaag.space.block.lg}" }
     }
   }
 }

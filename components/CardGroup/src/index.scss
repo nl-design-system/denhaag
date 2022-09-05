@@ -19,6 +19,10 @@
   }
 }
 
+.denhaag-card-group--distanced {
+  @include denhaag-card-group-distanced;
+}
+
 .denhaag-card-group--responsive {
   --_denhaag-card-group-responsive-gap: var(--denhaag-card-group-xs-gap, var(--denhaag-card-group-gap));
   --denhaag-card-authentication-portrait-max-inline-size: calc((100% / 3) - var(--_denhaag-card-group-responsive-gap));
