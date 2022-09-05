@@ -22,52 +22,52 @@ const TableScroll = (
   const toggleScrollNavigation = (tableBlock, scrollableArea) => {
     if (scrollableArea === 0) {
       tableBlock
-        .querySelector(scrollButtonsContainerClassName)
-        .classList.add('denhaag-table__scroll-buttons--disabled');
+        ?.querySelector(scrollButtonsContainerClassName)
+        ?.classList.add('denhaag-table__scroll-buttons--disabled');
     } else {
       tableBlock
-        .querySelector(scrollButtonsContainerClassName)
-        .classList.remove('denhaag-table__scroll-buttons--disabled');
+        ?.querySelector(scrollButtonsContainerClassName)
+        ?.classList.remove('denhaag-table__scroll-buttons--disabled');
     }
   };
 
   // set button to disabled if reaching begin or end horizontal scrolling
   const toggleDisableButton = (tableBlock) => {
-    const buttons = tableBlock.querySelectorAll(scrollButtonsClassName);
+    const buttons = tableBlock?.querySelectorAll(scrollButtonsClassName);
 
     // disable button right
     if (xPosition === scrollableArea) {
-      tableBlock.querySelector(`.${scrollButtonRight}`).setAttribute('disabled', '');
+      tableBlock?.querySelector(`.${scrollButtonRight}`)?.setAttribute('disabled', '');
     }
 
     // disable button left
     if (xPosition === 0) {
-      tableBlock.querySelector(`.${scrollButtonLeft}`).setAttribute('disabled', '');
+      tableBlock?.querySelector(`.${scrollButtonLeft}`)?.setAttribute('disabled', '');
     }
 
     // enable button
     if (xPosition > 0 && xPosition < scrollableArea) {
-      [...buttons].forEach((button) => {
-        button.removeAttribute('disabled');
+      [...buttons]?.forEach((button) => {
+        button?.removeAttribute('disabled');
       });
     }
   };
 
   // register scroll event update position
   const updateScrollPosition = () => {
-    [...tableContainers].forEach((container) => {
+    [...tableContainers]?.forEach((container) => {
       // initial toggle button
-      toggleDisableButton(container.closest(tableBlockClassname));
+      toggleDisableButton(container?.closest(tableBlockClassname));
 
       // table container scroll
       container.onscroll = () => {
         // update position
-        xPosition = container.scrollLeft;
+        xPosition = container?.scrollLeft;
 
         // scroll delay
         setTimeout(() => {
           // update toggle button after scroll
-          toggleDisableButton(container.closest(tableBlockClassname));
+          toggleDisableButton(container?.closest(tableBlockClassname));
         }, 150);
       };
     });
@@ -76,19 +76,19 @@ const TableScroll = (
   updateScrollPosition();
 
   // setup table data for click scroll
-  [...tableContainers].forEach((container) => {
+  [...tableContainers]?.forEach((container) => {
     // select elements to interact with
-    const tableBlock = container.closest(tableBlockClassname);
-    const buttons = tableBlock.querySelectorAll(scrollButtonsClassName);
+    const tableBlock = container?.closest(tableBlockClassname);
+    const buttons = tableBlock?.querySelectorAll(scrollButtonsClassName);
 
     // number of columns in table
-    tableColumnTotal = tableBlock.querySelector(tableClassName).rows[0].cells.length;
+    tableColumnTotal = tableBlock?.querySelector(tableClassName)?.rows[0]?.cells?.length;
 
     // table container width
-    tableContainerWidth = tableBlock.querySelector(tableContainerClassname).offsetWidth;
+    tableContainerWidth = tableBlock?.querySelector(tableContainerClassname)?.offsetWidth;
 
     // table width
-    tableWidth = tableBlock.querySelector(tableClassName).scrollWidth;
+    tableWidth = tableBlock?.querySelector(tableClassName)?.scrollWidth;
 
     // scroll area, the amount of horizontal space not visible
     scrollableArea = tableWidth - tableContainerWidth;
@@ -99,20 +99,20 @@ const TableScroll = (
     // scroll unit per click
     scrollUnit = (scrollableArea / tableColumnTotal) * 3;
 
-    [...buttons].forEach((button) => {
+    [...buttons]?.forEach((button) => {
       button.onclick = () => {
         // scroll amount for right and left buttons
         const scrollAmountRight = xPosition + scrollUnit;
         const scrollAmountLeft = xPosition - scrollUnit;
 
         //scroll to right
-        if (button.classList.contains(scrollButtonRight)) {
-          tableBlock.querySelector(tableContainerClassname).scroll({ left: scrollAmountRight, behavior: 'smooth' });
+        if (button?.classList?.contains(scrollButtonRight)) {
+          tableBlock?.querySelector(tableContainerClassname)?.scroll({ left: scrollAmountRight, behavior: 'smooth' });
         }
 
         //scroll to left
         if (button.classList.contains(scrollButtonLeft)) {
-          tableBlock.querySelector(tableContainerClassname).scroll({ left: scrollAmountLeft, behavior: 'smooth' });
+          tableBlock?.querySelector(tableContainerClassname)?.scroll({ left: scrollAmountLeft, behavior: 'smooth' });
         }
       };
     });
