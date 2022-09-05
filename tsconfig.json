@@ -59,6 +59,9 @@
       "path": "components/FormProgress"
     },
     {
+      "path": "components/HeaderLogo"
+    },
+    {
       "path": "components/IconButton"
     },
     {
