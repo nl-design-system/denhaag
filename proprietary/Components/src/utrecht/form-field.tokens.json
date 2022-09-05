@@ -2,11 +2,7 @@
   "utrecht": {
     "form-field": {
       "label": {
-        "margin": {
-          "block": {
-            "end": { "value": "4px" }
-          }
-        }
+        "margin-block-end": { "value": "4px" }
       },
       "description": {
         "color": { "value": "{denhaag.color.grey.4}" },
