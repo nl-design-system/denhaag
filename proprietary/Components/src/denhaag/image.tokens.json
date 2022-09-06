@@ -84,9 +84,6 @@
           "font-size": {
             "value": "{denhaag.typography.scale.s.font-size}"
           },
-          "letter-spacing": {
-            "value": "1px"
-          },
           "line-height": {
             "value": "1.5"
           }
