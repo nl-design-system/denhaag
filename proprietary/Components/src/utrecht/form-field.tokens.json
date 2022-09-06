@@ -1,8 +1,21 @@
 {
   "utrecht": {
     "form-field": {
-      "margin-block-start": { "value": "{utrecht.space.block.2xs}" },
-      "margin-block-end": { "value": "{utrecht.space.block.2xs}" }
+      "margin-block-start": { "value": "{denhaag.space.block.2xs}" },
+      "margin-block-end": { "value": "{denhaag.space.block.2xs}" },
+      "label": {
+        "margin-block-end": { "value": "4px" }
+      },
+      "description": {
+        "color": { "value": "{denhaag.color.grey.4}" },
+        "font-family": { "value": "{utrecht.document.font-family}" },
+        "font-size": { "value": "{denhaag.typography.scale.s.font-size}" },
+        "font-weight": { "value": "{denhaag.typography.weight.regular}" },
+        "line-height": { "value": "{denhaag.typography.scale.s.line-height}" },
+        "error": {
+          "color": { "value": "{denhaag.color.red.3}" }
+        }
+      }
     }
   }
 }
