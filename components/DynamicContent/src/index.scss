@@ -66,9 +66,8 @@
 }
 
 .denhaag-dynamic-content__card .denhaag-icon {
-  align-self: center;
+  align-self: end;
   color: var(--denhaag-dynamic-content-icon-color);
-  opacity: var(--denhaag-dynamic-content-icon-opacity);
 }
 
 .denhaag-dynamic-content__card--focus,
@@ -132,6 +131,10 @@
 
   .denhaag-dynamic-content--list-2 {
     --denhaag-dynamic-content-grid-columns: 2;
+  }
+
+  .denhaag-dynamic-content__card .denhaag-icon {
+    opacity: var(--denhaag-dynamic-content-icon-opacity);
   }
 }
 
