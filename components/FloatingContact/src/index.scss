@@ -39,6 +39,13 @@
   z-index: var(--denhaag-floating-contact-index);
 }
 
+@media (min-width: 1024px) {
+  .denhaag-floating-contact {
+    --denhaag-floating-contact-bottom: 2rem;
+    --denhaag-floating-contact-right: 2rem;
+  }
+}
+
 @include denhaag-floating-contact-zoomed(".denhaag-floating-contact--zoomed");
 
 .denhaag-floating-contact-switch {
