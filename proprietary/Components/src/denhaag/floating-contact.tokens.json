@@ -5,7 +5,7 @@
         "value": "{denhaag.space.block.md}"
       },
       "color": {
-        "value": "{denhaag.color.blue.5}"
+        "value": "{denhaag.color.green.5}"
       },
       "gap": {
         "value": "0.75rem"
@@ -98,12 +98,12 @@
         },
         "background": {
           "color": {
-            "value": "{denhaag.color.blue.1}"
+            "value": "{denhaag.color.green.1}"
           }
         },
         "border": {
           "color": {
-            "value": "{denhaag.color.blue.2}"
+            "value": "{denhaag.color.green.2}"
           },
           "style": {
             "value": "solid"
@@ -154,7 +154,7 @@
         "icons": {
           "background": {
             "color": {
-              "value": "{denhaag.color.blue.3}"
+              "value": "{denhaag.color.green.3}"
             }
           },
           "color": {
@@ -171,7 +171,7 @@
           "icons": {
             "background": {
               "color": {
-                "value": "{denhaag.color.blue.4}"
+                "value": "{denhaag.color.green.4}"
               }
             }
           }
@@ -180,7 +180,7 @@
           "icons": {
             "background": {
               "color": {
-                "value": "{denhaag.color.blue.4}"
+                "value": "{denhaag.color.green.4}"
               }
             }
           }
@@ -199,11 +199,11 @@
         },
         "background": {
           "color": {
-            "value": "{denhaag.color.blue.3}"
+            "value": "{denhaag.color.green.3}"
           }
         },
         "color": {
-          "value": "{denhaag.color.blue.1}"
+          "value": "{denhaag.color.green.1}"
         },
         "border": {
           "radius": {
