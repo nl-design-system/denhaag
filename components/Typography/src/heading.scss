@@ -20,3 +20,23 @@
   /* TODO: Move to container element, make spacing optional */
   --utrecht-space-around: 1;
 }
+
+.utrecht-heading-1,
+.utrecht-heading-2,
+.utrecht-heading-3,
+.utrecht-heading-4,
+.utrecht-heading-5 {
+  font-family: var(--denhaag-typography-sans-serif-alternate);
+}
+
+@media (max-width: 768px) {
+  .utrecht-heading-1 {
+    --utrecht-heading-1-font-size: 2.25rem;
+  }
+  .utrecht-heading-2 {
+    --utrecht-heading-2-font-size: 1.75rem;
+  }
+  .utrecht-heading-3 {
+    --utrecht-heading-3-font-size: 1.4375rem;
+  }
+}
