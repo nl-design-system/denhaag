@@ -1,10 +1,18 @@
 .denhaag-header {
-  border-bottom: var(--denhaag-header-border-bottom);
-
   &__container {
     align-items: center;
+    border-bottom: var(--denhaag-header-border-bottom);
     display: flex;
     flex-direction: row;
+    height: 72px;
     justify-content: space-between;
+
+    @media (min-width: 768px) {
+      height: 96px;
+    }
+
+    @media (min-width: 1024px) {
+      height: 120px;
+    }
   }
 }
