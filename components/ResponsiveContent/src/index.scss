@@ -1,0 +1,28 @@
+.denhaag-responsive-content {
+  --denhaag-responsive-content-max-width: calc(100vw - (var(--denhaag-space-inline-xl)));
+
+  @media (min-width: 360px) {
+    --denhaag-responsive-content-max-width: calc(100vw - (var(--denhaag-space-inline-xl) * 2));
+  }
+
+  @media (min-width: 768px) {
+    --denhaag-responsive-content-max-width: 40.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    --denhaag-responsive-content-max-width: 56.5rem;
+  }
+
+  @media (min-width: 1280px) {
+    --denhaag-responsive-content-max-width: 67.5rem;
+  }
+
+  @media (min-width: 1768px) {
+    --denhaag-responsive-content-max-width: 98rem;
+  }
+
+  margin-inline-end: auto;
+  margin-inline-start: auto;
+  max-width: 100%;
+  width: var(--denhaag-responsive-content-max-width, 100%);
+}
