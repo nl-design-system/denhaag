@@ -20,17 +20,13 @@
   /* TODO: Move to container element, make spacing optional */
   --utrecht-space-around: 1;
 
-  font-family: var(--denhaag-typography-sans-serif-alternate);
+  font-family: var(--utrecht-heading-font-family);
 }
 
 @media (max-width: 768px) {
-  .utrecht-heading-1 {
-    --utrecht-heading-1-font-size: 2.25rem;
-  }
-  .utrecht-heading-2 {
-    --utrecht-heading-2-font-size: 1.75rem;
-  }
-  .utrecht-heading-3 {
-    --utrecht-heading-3-font-size: 1.4375rem;
+  .denhaag-theme {
+    --utrecht-heading-1-font-size: var(--denhaag-typography-mobile-scale-3xl-font-size);
+    --utrecht-heading-2-font-size: var(--denhaag-typography-mobile-scale-2xl-font-size);
+    --utrecht-heading-3-font-size: var(--denhaag-typography-mobile-scale-xl-font-size);
   }
 }

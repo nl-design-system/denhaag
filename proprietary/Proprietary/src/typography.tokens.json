@@ -57,6 +57,19 @@
           },
           "line-height": { "value": "1.3" }
         }
+      },
+      "mobile": {
+        "scale": {
+          "xl": {
+            "font-size": { "value": "1.4375rem" }
+          },
+          "2xl": {
+            "font-size": { "value": "1.75rem" }
+          },
+          "3xl": {
+            "font-size": { "value": "2.25rem" }
+          }
+        }
       }
     }
   }
