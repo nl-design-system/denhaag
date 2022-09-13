@@ -5,15 +5,13 @@
  */
 
 @import "./mixin";
-@import "node_modules/@gemeente-denhaag/card-authentication/src/mixin";
+@import "../node_modules/@gemeente-denhaag/card-authentication/src/mixin";
 
 .denhaag-card-group {
   @include denhaag-card-group;
 }
 
 .denhaag-card-group--rows {
-  @include denhaag-card-group-row;
-
   .denhaag-card-authentication {
     @include denhaag-card-authentication-portrait;
   }
@@ -33,8 +31,6 @@
 
   @media (min-width: 1024px) {
     --_denhaag-card-group-responsive-gap: var(--denhaag-card-group-m-gap, var(--denhaag-card-group-gap));
-
-    @include denhaag-card-group-row;
 
     .denhaag-card-authentication {
       @include denhaag-card-authentication-portrait;
