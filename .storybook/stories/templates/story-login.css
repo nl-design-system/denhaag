@@ -1,3 +1,7 @@
+.sb-show-main.sb-main-padded {
+  padding: 0;
+}
+
 .denhaag-authentication {
   margin-block-start: 32px;
   margin-block-end: 32px;
