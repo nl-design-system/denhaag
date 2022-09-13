@@ -1,20 +1,20 @@
 .denhaag-responsive-content {
-  --denhaag-responsive-content-max-width: calc(100vw - (var(--denhaag-space-inline-xl)));
+  --denhaag-responsive-content-max-width: var(--denhaag-responsive-content-max-width);
 
   @media (min-width: 360px) {
-    --denhaag-responsive-content-max-width: calc(100vw - (var(--denhaag-space-inline-xl) * 2));
+    --denhaag-responsive-content-max-width: var(--denhaag-responsive-content-xs-max-width);
   }
 
   @media (min-width: 768px) {
-    --denhaag-responsive-content-max-width: 40.5rem;
+    --denhaag-responsive-content-max-width: var(--denhaag-responsive-content-sm-max-width);
   }
 
   @media (min-width: 1024px) {
-    --denhaag-responsive-content-max-width: 56.5rem;
+    --denhaag-responsive-content-max-width: var(--denhaag-responsive-content-md-max-width);
   }
 
   @media (min-width: 1280px) {
-    --denhaag-responsive-content-max-width: 67.5rem;
+    --denhaag-responsive-content-max-width: var(--denhaag-responsive-content-lg-max-width);
   }
 
   margin-inline-end: auto;

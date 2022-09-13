@@ -1,7 +1,14 @@
 {
   "denhaag": {
     "header": {
-      "border-bottom": { "value": "1px solid {denhaag.color.grey.1}" }
+      "border-bottom": { "value": "1px solid {denhaag.color.grey.1}" },
+      "height": { "value": "4.5rem" },
+      "sm": {
+        "height": { "value": "6rem" }
+      },
+      "md": {
+        "height": { "value": "7.5rem" }
+      }
     }
   }
 }
