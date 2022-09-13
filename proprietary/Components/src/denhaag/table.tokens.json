@@ -3,6 +3,7 @@
     "table": {
       "width": { "value": "100%" },
       "max-width": { "value": "100%" },
+      "min-width": { "value": "7.5rem" },
       "border-spacing": { "value": "0" },
       "cell": {
         "color": { "value": "{denhaag.color.grey.4}" },
