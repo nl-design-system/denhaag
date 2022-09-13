@@ -28,7 +28,7 @@ export const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
   return (
     <header id="site-header" className={classNames}>
       <ResponsiveContent>
-        <div className="denhaag-header__container">
+        <div className="denhaag-header__content">
           <div className="denhaag-header__logo">
             <a
               className="denhaag-logo denhaag-header__link"

@@ -1,7 +1,9 @@
 .denhaag-header {
-  &__container {
+  &__content {
     align-items: center;
-    border-bottom: var(--denhaag-header-border-bottom);
+    border-bottom-color: var(--denhaag-header-border-bottom-color);
+    border-bottom-width: var(--denhaag-header-border-bottom-width);
+    border-bottom-style: solid;
     display: flex;
     flex-direction: row;
     height: var(--denhaag-header-height);
