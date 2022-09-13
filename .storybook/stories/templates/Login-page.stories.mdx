@@ -6,6 +6,8 @@ import Alert from "/components/Alert/src";
 import Page from "/components/Page/src";
 import Header from "/components/Header/src";
 import HeaderLogo from "/components/HeaderLogo/src";
+import ResponsiveContent from "/components/ResponsiveContent/src";
+import Breadcrumb from "/components/Breadcrumb/src";
 import { AuthenticationCardGroup } from "/components/CardGroup/src/story-template";
 
 import clsx from "clsx";
@@ -18,18 +20,30 @@ import "./story-login.css";
 
 In deze template worden de schermen vanuit de Summary pagina nagebouwd met componenten die beschikbaar zijn in Storybook.
 
+export const navigationPathData = [
+  { label: "Home", url: "https://denhaag.nl/" },
+  { label: "Parkeren", url: "https://denhaag.nl/parkeren/" },
+  { label: "Parkeren aan- en afmelden", url: "https://denhaag.nl/parkeren/parkeren-aan-en-afmelden/" },
+  {
+    label: "Bezoek voor parkeren aan- en afmelden",
+    url: "https://denhaag.nl/parkeren/parkeren-aan-en-afmelden/bezoek-voor-parkeren-aan-en-afmelden/",
+  },
+];
+
 <Canvas>
   <Story name="Login page">
-    <Page header={<Header className="denhaag-header--without-breadcrumbs" />}>
-      <Heading2>Inloggen</Heading2>
-      <AuthenticationCardGroup cards={["DigiD", "eHerkenning", "eIDAS"]} responsive />
-      <Heading2>Inloggen als gemachtigde</Heading2>
-      <Alert
-        title="Om in te loggen als gemachtigde heeft u een geldige machtiging nodig."
-        variant="info"
-        className="denhaag-authentication__alert"
-      />
-      <AuthenticationCardGroup cards={["DigiD", "eHerkenning"]} responsive />
+    <Page header={<Header breadcrumb={<Breadcrumb navigationPath={navigationPathData} />} />}>
+      <ResponsiveContent>
+        <Heading2>Inloggen</Heading2>
+        <AuthenticationCardGroup cards={["DigiD", "eHerkenning", "eIDAS"]} responsive />
+        <Heading2>Inloggen als gemachtigde</Heading2>
+        <Alert
+          title="Om in te loggen als gemachtigde heeft u een geldige machtiging nodig."
+          variant="info"
+          className="denhaag-authentication__alert"
+        />
+        <AuthenticationCardGroup cards={["DigiD", "eHerkenning"]} responsive />
+      </ResponsiveContent>
     </Page>
   </Story>
 </Canvas>
