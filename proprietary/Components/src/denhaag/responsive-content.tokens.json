@@ -1,0 +1,19 @@
+{
+  "denhaag": {
+    "responsive-content": {
+      "max-width": { "value": "calc(100vw - (var(--denhaag-space-inline-xl)))" },
+      "xs": {
+        "max-width": { "value": "calc(100vw - (var(--denhaag-space-inline-xl) * 2))" }
+      },
+      "sm": {
+        "max-width": { "value": "40.5rem" }
+      },
+      "md": {
+        "max-width": { "value": "56.5rem" }
+      },
+      "lg": {
+        "max-width": { "value": "67.5rem" }
+      }
+    }
+  }
+}
