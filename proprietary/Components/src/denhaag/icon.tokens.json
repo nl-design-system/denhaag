@@ -1,0 +1,17 @@
+{
+  "denhaag": {
+    "icon": {
+      "color": {
+        "value": ""
+      },
+      "size": {
+        "value": "1.25rem"
+      },
+      "baseline": {
+        "inset-block-start": {
+          "value": "0.125em"
+        }
+      }
+    }
+  }
+}

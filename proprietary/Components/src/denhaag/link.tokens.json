@@ -1,7 +1,9 @@
 {
   "denhaag": {
     "link": {
-      "text-decoration": { "value": "underline" },
+      "text-decoration": {
+        "value": "underline"
+      },
       "color": {
         "value": "{denhaag.color.blue.3}"
       },
