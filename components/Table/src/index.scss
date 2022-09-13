@@ -47,6 +47,7 @@
   padding-inline-start: var(--utrecht-table-cell-padding-inline-start, 0);
   text-align: start;
   border-block-end: var(--utrecht-table-border-width) solid var(--utrecht-table-border-color);
+  min-width: var(--denhaag-table-min-width, 7.5rem);
 }
 
 .denhaag-table__heading {
