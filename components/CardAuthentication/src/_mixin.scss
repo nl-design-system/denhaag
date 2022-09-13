@@ -52,13 +52,8 @@
 }
 
 @mixin denhaag-card-authentication-portrait {
-  min-inline-size: var(--denhaag-card-authentication-portrait-min-inline-size);
-  max-inline-size: var(--denhaag-card-authentication-portrait-max-inline-size);
   min-block-size: var(--denhaag-card-authentication-portrait-min-block-size);
   text-align: center;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0;
 
   .denhaag-card-authentication__header {
     grid-template-areas:
