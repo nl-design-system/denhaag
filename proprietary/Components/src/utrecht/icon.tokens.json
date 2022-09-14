@@ -1,17 +1,14 @@
 {
   "utrecht": {
     "icon": {
-      "color": {
-        "value": ""
-      },
+      "color": {},
       "size": {
         "value": "1.125rem"
       },
-      "inset-block-start": {
-        "value": "0.125em"
-      },
       "baseline": {
-        "inset-block-start": {}
+        "inset-block-start": {
+          "value": "0.125em"
+        }
       }
     }
   }
