@@ -112,14 +112,14 @@ ol.denhaag-breadcrumb__list {
   text-overflow: ellipsis;
 }
 
-.denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(2)):not(:last-child) .denhaag-breadcrumb__text {
+.denhaag-breadcrumb__item--hidden .denhaag-breadcrumb__text {
   aspect-ratio: 24/16;
   border-radius: var(--denhaag-breadcrumb-dots-border-radius, var(--denhaag-border-radius));
   max-width: calc(var(--denhaag-breadcrumb-spacing, 8px) * 3);
   text-indent: calc(var(--denhaag-breadcrumb-spacing, 8px) * 3);
 }
 
-.denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(2)):not(:last-child) .denhaag-breadcrumb__text::before {
+.denhaag-breadcrumb__item--hidden .denhaag-breadcrumb__text::before {
   color: var(--denhaag-breadcrumb-dots-color, inherit);
   content: "...";
   left: calc(50% - 7px);
@@ -153,3 +153,43 @@ ol.denhaag-breadcrumb__list {
     --denhaag-breadcrumb-padding-inline: 0;
   }
 }
+
+// Deprecated, but added to prevent breaking changes.
+/* stylelint-disable selector-class-pattern */
+/* stylelint-disable no-descending-specificity */
+.breadcrumbs-container {
+  .denhaag-breadcrumb {
+    .denhaag-breadcrumb__list {
+      margin-inline-end: auto;
+      margin-inline-start: auto;
+      max-width: var(--denhaag-breadcrumb-list-max-width, 100%);
+
+      .denhaag-breadcrumb__item {
+        .denhaag-breadcrumb__link {
+          padding-inline-start: var(--denhaag-breadcrumb-spacing, 8px);
+        }
+      }
+
+      .denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(2)):not(:last-child) .denhaag-breadcrumb__text {
+        aspect-ratio: 24/16;
+        border-radius: var(--denhaag-breadcrumb-dots-border-radius, var(--denhaag-border-radius));
+        max-width: calc(var(--denhaag-breadcrumb-spacing, 8px) * 3);
+        text-indent: calc(var(--denhaag-breadcrumb-spacing, 8px) * 3);
+      }
+
+      .denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(2)):not(:last-child)
+        .denhaag-breadcrumb__text::before {
+        color: var(--denhaag-breadcrumb-dots-color, inherit);
+        content: "...";
+        left: calc(50% - 7px);
+        line-height: 0;
+        position: absolute;
+        text-indent: 0;
+        top: calc(50% - 5px);
+        vertical-align: baseline;
+      }
+    }
+  }
+}
+/* stylelint-enable no-descending-specificity */
+/* stylelint-enable selector-class-pattern */
