@@ -5,12 +5,13 @@
         "value": ""
       },
       "size": {
-        "value": "48px"
+        "value": "1.125rem"
+      },
+      "inset-block-start": {
+        "value": "0.125em"
       },
       "baseline": {
-        "inset-block-start": {
-          "value": "0.125em"
-        }
+        "inset-block-start": {}
       }
     }
   }
