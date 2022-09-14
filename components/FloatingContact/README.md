@@ -51,16 +51,16 @@ The button: Sans/md/700
 
 #### The button
 
-- Fill: blue/3
-- Line: blue/2
-- Fill background: blue/1
+- Fill: green/3
+- Line: green/2
+- Fill background: green/1
 - Icons: white
-- Text button: blue/5
+- Text button: green/5
 
 #### The panel
 
-- Background: blue/3
-- Title and caption: blue/1
+- Background: green/3
+- Title and caption: green/1
 - Link: white
 
 ### Structure
