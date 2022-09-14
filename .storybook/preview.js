@@ -40,6 +40,12 @@ const addonStatus = {
         description:
           'Do not use in production. Does not follow semantic versioning and any published packages are for internal use only.',
       },
+      DEPRECATED: {
+        background: '#9e1616',
+        color: '#ffffff',
+        description:
+          'This component is no longer supported. If used in production, please replace with the recommended alternative.',
+      },
     },
   },
 };
