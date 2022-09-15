@@ -26,9 +26,6 @@
         "font-size": {},
         "line-height": {
           "value": "1.5"
-        },
-        "grid-column": {
-          "value": "span 2"
         }
       },
       "rows": {
