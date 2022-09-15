@@ -60,6 +60,7 @@ export const parameters = {
     list: [{ name: 'Gemeente Den Haag', class: 'denhaag-theme', color: '#227b3c' }],
   },
   status: addonStatus.status,
+  chromatic: { viewports: [1280] },
 };
 
 export const decorators = [
