@@ -26,6 +26,9 @@
         "font-size": {},
         "line-height": {
           "value": "1.5"
+        },
+        "grid-column": {
+          "value": "span 2"
         }
       },
       "rows": {
@@ -42,8 +45,8 @@
             "value": "0"
           }
         },
-        "grid-template-columns": {
-          "value": "repeat(auto-fill, clamp(200px, 30%, 100%))"
+        "column-width": {
+          "value": "33%"
         },
         "gap": {
           "value": "{utrecht.space.block.md}"
