@@ -1,9 +1,11 @@
 {
   "denhaag": {
     "responsive-content": {
-      "max-width": { "value": "calc(100vw - (var(--denhaag-space-inline-xl)))" },
+      "2xs": {
+        "padding": { "value": "0.75rem" }
+      },
       "xs": {
-        "max-width": { "value": "calc(100vw - (var(--denhaag-space-inline-xl) * 2))" }
+        "padding": { "value": "1.5rem" }
       },
       "sm": {
         "max-width": { "value": "40.5rem" }
