@@ -48,6 +48,9 @@
         "column-width": {
           "value": "33%"
         },
+        "min-column-width": {
+          "value": "210px"
+        },
         "gap": {
           "value": "{utrecht.space.block.md}"
         },
