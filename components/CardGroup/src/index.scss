@@ -27,14 +27,14 @@
 
   @media (min-width: 768px) {
     --_denhaag-card-group-responsive-gap: var(--denhaag-card-group-s-gap, var(--denhaag-card-group-gap));
-  }
-
-  @media (min-width: 1024px) {
-    --_denhaag-card-group-responsive-gap: var(--denhaag-card-group-m-gap, var(--denhaag-card-group-gap));
 
     .denhaag-card-authentication {
       @include denhaag-card-authentication-portrait;
     }
+  }
+
+  @media (min-width: 1024px) {
+    --_denhaag-card-group-responsive-gap: var(--denhaag-card-group-m-gap, var(--denhaag-card-group-gap));
   }
 
   @media (min-width: 1280px) {
