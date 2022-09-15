@@ -114,6 +114,7 @@
   line-height: var(--denhaag-dynamic-content-card-title-line-height);
   margin-block-start: 0;
   margin-block-end: 0;
+  word-break: break-all; // Fixes hypens issue for Chrome & safari on windows device.
 }
 
 .denhaag-dynamic-content__pagination {
