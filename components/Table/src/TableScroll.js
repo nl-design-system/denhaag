@@ -3,9 +3,13 @@ const TableScroll = (
   scrollButtonsClassName = '.denhaag-table__scroll-buttons .denhaag-button',
   scrollButtonLeft = 'denhaag-table__scroll-buttons-left',
   scrollButtonRight = 'denhaag-table__scroll-buttons-right',
+  scrollButtonsDisabled = 'denhaag-table__scroll-buttons--disabled',
   tableClassName = '.denhaag-table',
   tableContainerClassname = '.denhaag-table__container',
   tableBlockClassname = '.denhaag-table-wrapper',
+  containerShadowLeftClassName = '.denhaag-table__container-shadow--left',
+  containerShadowRightClassName = '.denhaag-table__container-shadow--right',
+  containerShadowDisabled = 'denhaag-table__container-shadow--disabled',
 ) => {
   // select elements to interact with
   const tableContainers = document.querySelectorAll(tableContainerClassname);
@@ -15,19 +19,16 @@ const TableScroll = (
   let scrollUnit;
   let tableColumnTotal;
   let tableContainerWidth;
+  let tableContainerHeight;
   let tableWidth;
   let scrollableArea;
 
   // disable/enable scroll navigation depending on scroll area existance
   const toggleScrollNavigation = (tableBlock, scrollableArea) => {
     if (scrollableArea === 0) {
-      tableBlock
-        ?.querySelector(scrollButtonsContainerClassName)
-        ?.classList.add('denhaag-table__scroll-buttons--disabled');
+      tableBlock?.querySelector(scrollButtonsContainerClassName)?.classList.add(scrollButtonsDisabled);
     } else {
-      tableBlock
-        ?.querySelector(scrollButtonsContainerClassName)
-        ?.classList.remove('denhaag-table__scroll-buttons--disabled');
+      tableBlock?.querySelector(scrollButtonsContainerClassName)?.classList.remove(scrollButtonsDisabled);
     }
   };
 
@@ -35,20 +36,24 @@ const TableScroll = (
   const toggleDisableButton = (tableBlock) => {
     const buttons = tableBlock?.querySelectorAll(scrollButtonsClassName);
 
-    // disable button right
+    // disable button right + shadow right
     if (xPosition === scrollableArea) {
       tableBlock?.querySelector(`.${scrollButtonRight}`)?.setAttribute('disabled', '');
+      tableBlock?.querySelector(containerShadowRightClassName)?.classList.add(containerShadowDisabled);
     }
 
-    // disable button left
+    // disable button left + shadow left
     if (xPosition === 0) {
       tableBlock?.querySelector(`.${scrollButtonLeft}`)?.setAttribute('disabled', '');
+      tableBlock?.querySelector(containerShadowLeftClassName)?.classList.add(containerShadowDisabled);
     }
 
-    // enable button
+    // enable button + shadows left and right
     if (xPosition > 0 && xPosition < scrollableArea) {
       [...buttons]?.forEach((button) => {
         button?.removeAttribute('disabled');
+        tableBlock?.querySelector(containerShadowRightClassName)?.classList.remove(containerShadowDisabled);
+        tableBlock?.querySelector(containerShadowLeftClassName)?.classList.remove(containerShadowDisabled);
       });
     }
   };
@@ -68,7 +73,7 @@ const TableScroll = (
         setTimeout(() => {
           // update toggle button after scroll
           toggleDisableButton(container?.closest(tableBlockClassname));
-        }, 150);
+        }, 1);
       };
     });
   };
@@ -86,6 +91,10 @@ const TableScroll = (
 
     // table container width
     tableContainerWidth = tableBlock?.querySelector(tableContainerClassname)?.offsetWidth;
+    tableContainerHeight = tableBlock?.querySelector(tableContainerClassname)?.offsetHeight;
+
+    // set height of table container for container shadows (which inherit the height of container)
+    container.style.height = `${tableContainerHeight}px`;
 
     // table width
     tableWidth = tableBlock?.querySelector(tableClassName)?.scrollWidth;

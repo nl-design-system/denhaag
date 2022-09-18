@@ -61,7 +61,20 @@
       },
       "container": {
         "width": { "value": "100%" },
-        "overflow-x": { "value": "auto" }
+        "overflow-x": { "value": "auto" },
+        "shadow": {
+          "width": { "value": "{denhaag.space.inline.5xl}" },
+          "height": { "value": "inherit" },
+          "position": { "value": "fixed" },
+          "background": { "value": "linear-gradient(270deg, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0) 76.92%)" }
+        },
+        "shadow-left": {
+          "left": { "value": "0" },
+          "transform": { "value": "matrix(-1, 0, 0, 1, 0, 0);" }
+        },
+        "shadow-right": {
+          "right": { "value": "0" }
+        }
       },
       "scroll-buttons": {
         "flex-direction": { "value": "initial" },
