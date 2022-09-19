@@ -4,14 +4,27 @@
       "color": {
         "value": "{denhaag.color.blue.3}"
       },
-      "text-decoration": {
-        "value": "underline"
+      "text-decoration-thickness": {
+        "value": "1px"
+      },
+      "text-underline-offset": {
+        "value": "3px"
+      },
+      "active": {
+        "color": {}
       },
       "focus": {
-        "color": { "value": "{denhaag.color.blue.4}" }
+        "color": {
+          "value": "{denhaag.color.blue.4}"
+        },
+        "text-decoration-thickness": {
+          "value": "1px"
+        }
       },
       "hover": {
-        "color": { "value": "{denhaag.color.blue.4}" }
+        "text-decoration-thickness": {
+          "value": "1px"
+        }
       }
     }
   }
