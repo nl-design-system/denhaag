@@ -16,7 +16,8 @@
         "padding-inline-start": { "value": "0" }
       },
       "list-item": {
-        "padding-block": { "value": "{denhaag.space.block.xs}" }
+        "padding-block": { "value": "{denhaag.space.block.xs}" },
+        "font-weight": { "value": "{denhaag.typography.weight.regular}" }
       },
       "dark": {
         "link-color": { "value": "{denhaag.color.white}" },
