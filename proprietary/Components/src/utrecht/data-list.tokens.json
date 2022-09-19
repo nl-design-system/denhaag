@@ -42,11 +42,13 @@
             "value": "0"
           }
         },
-        "inline-width": {
-          "value": "33%"
-        },
-        "min-inline-width": {
-          "value": "210px"
+        "column": {
+          "inline-size": {
+            "value": "80%"
+          },
+          "min-inline-size": {
+            "value": "25ch"
+          }
         },
         "gap": {
           "value": "{utrecht.space.block.md}"
