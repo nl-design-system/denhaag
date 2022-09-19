@@ -1,11 +1,22 @@
 {
   "utrecht": {
-    "form-field": {
-      "description": {
-        "color": { "value": "{denhaag.color.grey.4}" },
-        "font-family": { "value": "{utrecht.document.font-family}" },
-        "font-size": { "value": "{denhaag.typography.scale.s.font-size}" },
-        "font-weight": { "value": "{denhaag.typography.weight.regular}" }
+    "form-field-description": {
+      "color": {
+        "value": "{denhaag.color.grey.4}"
+      },
+      "font-family": {
+        "value": "{utrecht.document.font-family}"
+      },
+      "font-size": {
+        "value": "{denhaag.typography.scale.s.font-size}"
+      },
+      "font-weight": {
+        "value": "{denhaag.typography.weight.regular}"
+      },
+      "invalid": {
+        "color": {
+          "value": "{denhaag.color.red.3}"
+        }
       }
     }
   }
