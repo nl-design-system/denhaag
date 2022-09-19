@@ -42,10 +42,10 @@
             "value": "0"
           }
         },
-        "column-width": {
+        "inline-width": {
           "value": "33%"
         },
-        "min-column-width": {
+        "min-inline-width": {
           "value": "210px"
         },
         "gap": {
