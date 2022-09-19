@@ -15,6 +15,10 @@
   --denhaag-unordered-list-margin-block-start: var(--denhaag-unordered-list-lead-margin-block-start);
 }
 
+.denhaag-unordered-list li {
+  font-weight: var(--denhaag-unordered-list-list-item-font-weight);
+}
+
 .denhaag-unordered-list li::marker {
   font-size: var(--denhaag-unordered-list-marker-font-size);
 }
