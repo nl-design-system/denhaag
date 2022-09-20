@@ -1,13 +1,18 @@
 .denhaag-table__container {
-  width: var(--denhaag-table-container-width, 100%);
   overflow-x: var(--denhaag-table-container-overflow-x, auto);
+}
+
+.denhaag-table__container-shadow-group {
+  width: var(--denhaag-table-container-shadow-group-width, inherit);
+  position: var(--denhaag-table-container-shadow-group-position, absolute);
 }
 
 .denhaag-table__container-shadow {
   width: var(--denhaag-table-container-shadow-width, 4rem);
   height: var(--denhaag-table-container-shadow-height, inherit);
-  position: var(--denhaag-table-container-shadow-position, fixed);
+  position: var(--denhaag-table-container-shadow-position, absolute);
   background: var(--denhaag-table-container-shadow-background, transparent);
+  top: 0;
 }
 
 .denhaag-table__container-shadow--left {

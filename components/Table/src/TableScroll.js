@@ -10,6 +10,7 @@ const TableScroll = (
   containerShadowLeftClassName = '.denhaag-table__container-shadow--left',
   containerShadowRightClassName = '.denhaag-table__container-shadow--right',
   containerShadowDisabled = 'denhaag-table__container-shadow--disabled',
+  containerShadowGroupClassName = '.denhaag-table__container-shadow-group',
 ) => {
   // select elements to interact with
   const tableContainers = document.querySelectorAll(tableContainerClassname);
@@ -19,7 +20,6 @@ const TableScroll = (
   let scrollUnit;
   let tableColumnTotal;
   let tableContainerWidth;
-  let tableContainerHeight;
   let tableWidth;
   let scrollableArea;
 
@@ -61,13 +61,23 @@ const TableScroll = (
   // register scroll event update position
   const updateScrollPosition = () => {
     [...tableContainers]?.forEach((container) => {
+      // initial setup
+      tableContainerWidth = container.clientWidth;
+      tableWidth = container.querySelector(tableClassName).clientWidth;
+      scrollableArea = tableWidth - tableContainerWidth;
+
       // initial toggle button
       toggleDisableButton(container?.closest(tableBlockClassname));
 
       // table container scroll
       container.onscroll = () => {
+        console.log('tableContainerWidth: ', tableContainerWidth);
+        console.log('tableWidth: ', tableWidth);
+        console.log('scrollableArea: ', scrollableArea);
+
         // update position
         xPosition = container?.scrollLeft;
+        console.log('xPosition: ', xPosition);
 
         // scroll delay
         setTimeout(() => {
@@ -90,17 +100,21 @@ const TableScroll = (
     tableColumnTotal = tableBlock?.querySelector(tableClassName)?.rows[0]?.cells?.length;
 
     // table container width
-    tableContainerWidth = tableBlock?.querySelector(tableContainerClassname)?.offsetWidth;
-    tableContainerHeight = tableBlock?.querySelector(tableContainerClassname)?.offsetHeight;
+    // tableContainerWidth = tableBlock?.querySelector(tableContainerClassname)?.offsetWidth;
 
-    // set height of table container for container shadows (which inherit the height of container)
-    container.style.height = `${tableContainerHeight}px`;
+    // set width of table container, container shadow group inherits this width
+    container.style.width = `${tableContainerWidth}px`;
+
+    // set height for container shadow group same as table (without scrollbar)
+    container.querySelector(containerShadowGroupClassName).style.height = `${
+      container.querySelector(tableClassName).clientHeight
+    }px`;
 
     // table width
-    tableWidth = tableBlock?.querySelector(tableClassName)?.scrollWidth;
+    // tableWidth = tableBlock?.querySelector(tableClassName)?.scrollWidth;
 
     // scroll area, the amount of horizontal space not visible
-    scrollableArea = tableWidth - tableContainerWidth;
+    // scrollableArea = tableWidth - tableContainerWidth;
 
     // disable/enable scroll navigation depending on scroll area existance
     toggleScrollNavigation(tableBlock, scrollableArea);
