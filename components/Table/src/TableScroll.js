@@ -59,18 +59,15 @@ const TableScroll = (
     }
   };
 
-  // setup table data for click scroll
+  // setup table scroll + button click scroll
   [...tableContainers]?.forEach((container) => {
     // select elements to interact with
     const tableWrapper = container?.closest(tableWrapperClassname);
     const buttons = tableWrapper?.querySelectorAll(scrollButtonsClassName);
+    const table = container?.querySelector(tableClassName);
 
-    // set width of table container, container shadow group inherits this width
-    container.style.width = `${tableContainerWidth(container)}px`;
     // set height for container shadow group same as table (without scrollbar)
-    container.querySelector(containerShadowGroupClassName).style.height = `${
-      container?.querySelector(tableClassName)?.clientHeight
-    }px`;
+    container.querySelector(containerShadowGroupClassName).style.height = `${table?.clientHeight}px`;
 
     // initial toggle the buttons + scroll navigation
     toggleDisableButton(tableWrapper);
