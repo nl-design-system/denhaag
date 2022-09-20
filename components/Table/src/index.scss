@@ -1,5 +1,15 @@
 .denhaag-table__container {
   overflow-x: var(--denhaag-table-container-overflow-x, auto);
+  @supports (width: -webkit-fill-available) {
+    /* stylelint-disable-next-line value-no-vendor-prefix */
+    width: -webkit-fill-available;
+  }
+  @supports (width: -moz-available) {
+    /* stylelint-disable-next-line value-no-vendor-prefix */
+    width: -moz-available;
+  }
+
+  width: stretch;
 }
 
 .denhaag-table__container-shadow-group {
