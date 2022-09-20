@@ -6,7 +6,7 @@ const TableScroll = (
   scrollButtonsDisabled = 'denhaag-table__scroll-buttons--disabled',
   tableClassName = '.denhaag-table',
   tableContainerClassname = '.denhaag-table__container',
-  tableBlockClassname = '.denhaag-table-wrapper',
+  tableWrapperClassname = '.denhaag-table-wrapper',
   containerShadowLeftClassName = '.denhaag-table__container-shadow--left',
   containerShadowRightClassName = '.denhaag-table__container-shadow--right',
   containerShadowDisabled = 'denhaag-table__container-shadow--disabled',
@@ -15,127 +15,91 @@ const TableScroll = (
   // select elements to interact with
   const tableContainers = document.querySelectorAll(tableContainerClassname);
 
-  // essential for calculation
-  let xPosition = 0;
-  let scrollUnit;
-  let tableColumnTotal;
-  let tableContainerWidth;
-  let tableWidth;
-  let scrollableArea;
+  // essential return values for calculation
+  const xPosition = (container) => container?.scrollLeft;
+  const tableContainerWidth = (container) => container?.clientWidth;
+  const tableWidth = (container) => container?.querySelector(tableClassName)?.clientWidth;
+  const scrollableArea = (container) => tableWidth(container) - tableContainerWidth(container);
+  const tableColumnTotal = (container) => container?.querySelector(tableClassName)?.rows[0]?.cells?.length;
+  const scrollUnit = (container) => (scrollableArea(container) / tableColumnTotal(container)) * 3;
 
   // disable/enable scroll navigation depending on scroll area existance
-  const toggleScrollNavigation = (tableBlock, scrollableArea) => {
+  const toggleScrollNavigation = (tableWrapper, scrollableArea) => {
     if (scrollableArea === 0) {
-      tableBlock?.querySelector(scrollButtonsContainerClassName)?.classList.add(scrollButtonsDisabled);
+      tableWrapper?.querySelector(scrollButtonsContainerClassName)?.classList.add(scrollButtonsDisabled);
     } else {
-      tableBlock?.querySelector(scrollButtonsContainerClassName)?.classList.remove(scrollButtonsDisabled);
+      tableWrapper?.querySelector(scrollButtonsContainerClassName)?.classList.remove(scrollButtonsDisabled);
     }
   };
 
   // set button to disabled if reaching begin or end horizontal scrolling
-  const toggleDisableButton = (tableBlock) => {
-    const buttons = tableBlock?.querySelectorAll(scrollButtonsClassName);
+  const toggleDisableButton = (tableWrapper) => {
+    const buttons = tableWrapper?.querySelectorAll(scrollButtonsClassName);
+    const container = tableWrapper?.querySelector(tableContainerClassname);
 
     // disable button right + shadow right
-    if (xPosition === scrollableArea) {
-      tableBlock?.querySelector(`.${scrollButtonRight}`)?.setAttribute('disabled', '');
-      tableBlock?.querySelector(containerShadowRightClassName)?.classList.add(containerShadowDisabled);
+    if (xPosition(container) === scrollableArea(container)) {
+      tableWrapper?.querySelector(`.${scrollButtonRight}`)?.setAttribute('disabled', '');
+      tableWrapper?.querySelector(containerShadowRightClassName)?.classList.add(containerShadowDisabled);
     }
 
     // disable button left + shadow left
-    if (xPosition === 0) {
-      tableBlock?.querySelector(`.${scrollButtonLeft}`)?.setAttribute('disabled', '');
-      tableBlock?.querySelector(containerShadowLeftClassName)?.classList.add(containerShadowDisabled);
+    if (xPosition(container) === 0) {
+      tableWrapper?.querySelector(`.${scrollButtonLeft}`)?.setAttribute('disabled', '');
+      tableWrapper?.querySelector(containerShadowLeftClassName)?.classList.add(containerShadowDisabled);
     }
 
     // enable button + shadows left and right
-    if (xPosition > 0 && xPosition < scrollableArea) {
+    if (xPosition(container) > 0 && xPosition(container) < scrollableArea(container)) {
       [...buttons]?.forEach((button) => {
         button?.removeAttribute('disabled');
-        tableBlock?.querySelector(containerShadowRightClassName)?.classList.remove(containerShadowDisabled);
-        tableBlock?.querySelector(containerShadowLeftClassName)?.classList.remove(containerShadowDisabled);
+        tableWrapper?.querySelector(containerShadowRightClassName)?.classList.remove(containerShadowDisabled);
+        tableWrapper?.querySelector(containerShadowLeftClassName)?.classList.remove(containerShadowDisabled);
       });
     }
   };
 
-  // register scroll event update position
-  const updateScrollPosition = () => {
-    [...tableContainers]?.forEach((container) => {
-      // initial setup
-      tableContainerWidth = container.clientWidth;
-      tableWidth = container.querySelector(tableClassName).clientWidth;
-      scrollableArea = tableWidth - tableContainerWidth;
-
-      // initial toggle button
-      toggleDisableButton(container?.closest(tableBlockClassname));
-
-      // table container scroll
-      container.onscroll = () => {
-        console.log('tableContainerWidth: ', tableContainerWidth);
-        console.log('tableWidth: ', tableWidth);
-        console.log('scrollableArea: ', scrollableArea);
-
-        // update position
-        xPosition = container?.scrollLeft;
-        console.log('xPosition: ', xPosition);
-
-        // scroll delay
-        setTimeout(() => {
-          // update toggle button after scroll
-          toggleDisableButton(container?.closest(tableBlockClassname));
-        }, 1);
-      };
-    });
-  };
-  // initialize scroll position update
-  updateScrollPosition();
-
   // setup table data for click scroll
   [...tableContainers]?.forEach((container) => {
     // select elements to interact with
-    const tableBlock = container?.closest(tableBlockClassname);
-    const buttons = tableBlock?.querySelectorAll(scrollButtonsClassName);
-
-    // number of columns in table
-    tableColumnTotal = tableBlock?.querySelector(tableClassName)?.rows[0]?.cells?.length;
-
-    // table container width
-    // tableContainerWidth = tableBlock?.querySelector(tableContainerClassname)?.offsetWidth;
+    const tableWrapper = container?.closest(tableWrapperClassname);
+    const buttons = tableWrapper?.querySelectorAll(scrollButtonsClassName);
 
     // set width of table container, container shadow group inherits this width
-    container.style.width = `${tableContainerWidth}px`;
-
+    container.style.width = `${tableContainerWidth(container)}px`;
     // set height for container shadow group same as table (without scrollbar)
     container.querySelector(containerShadowGroupClassName).style.height = `${
-      container.querySelector(tableClassName).clientHeight
+      container?.querySelector(tableClassName)?.clientHeight
     }px`;
 
-    // table width
-    // tableWidth = tableBlock?.querySelector(tableClassName)?.scrollWidth;
+    // initial toggle the buttons + scroll navigation
+    toggleDisableButton(tableWrapper);
+    toggleScrollNavigation(tableWrapper, scrollableArea(container));
 
-    // scroll area, the amount of horizontal space not visible
-    // scrollableArea = tableWidth - tableContainerWidth;
+    // table container scroll
+    container.onscroll = () => {
+      // scroll delay
+      setTimeout(() => {
+        // update toggle buttons after scroll
+        toggleDisableButton(tableWrapper);
+      }, 1);
+    };
 
-    // disable/enable scroll navigation depending on scroll area existance
-    toggleScrollNavigation(tableBlock, scrollableArea);
-
-    // scroll unit per click
-    scrollUnit = (scrollableArea / tableColumnTotal) * 3;
-
+    // table button click scroll
     [...buttons]?.forEach((button) => {
       button.onclick = () => {
         // scroll amount for right and left buttons
-        const scrollAmountRight = xPosition + scrollUnit;
-        const scrollAmountLeft = xPosition - scrollUnit;
+        const scrollAmountRight = xPosition(container) + scrollUnit(container);
+        const scrollAmountLeft = xPosition(container) - scrollUnit(container);
 
         //scroll to right
         if (button?.classList?.contains(scrollButtonRight)) {
-          tableBlock?.querySelector(tableContainerClassname)?.scroll({ left: scrollAmountRight, behavior: 'smooth' });
+          container?.scroll({ left: scrollAmountRight, behavior: 'smooth' });
         }
 
         //scroll to left
-        if (button.classList.contains(scrollButtonLeft)) {
-          tableBlock?.querySelector(tableContainerClassname)?.scroll({ left: scrollAmountLeft, behavior: 'smooth' });
+        if (button?.classList?.contains(scrollButtonLeft)) {
+          container?.scroll({ left: scrollAmountLeft, behavior: 'smooth' });
         }
       };
     });
