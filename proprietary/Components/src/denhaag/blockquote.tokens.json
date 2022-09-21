@@ -8,8 +8,7 @@
         "font-weight": { "value": "400" },
         "letter-spacing": { "value": "1px" },
         "line-height": { "value": "1.5" },
-        "margin-block-start": { "value": "1rem" },
-        "text-transform": { "value": "uppercase" }
+        "margin-block-start": { "value": "1rem" }
       },
       "border": {
         "color": { "value": "{denhaag.color.green.1}" },
