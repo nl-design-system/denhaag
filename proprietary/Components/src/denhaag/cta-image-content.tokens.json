@@ -4,14 +4,13 @@
       "position": { "value": "relative" },
       "background-color": { "value": "{denhaag.color.white}" },
       "border": { "value": "1px solid {denhaag.color.grey.2}" },
-      "border-radius": { "value": "{denhaag.border-radius}" },
       "display": { "value": "block" },
       "hover": {
         "box-shadow": { "value": "0 0.25rem 1rem 0 rgba(0, 0, 0, 0.16)" }
       },
       "filled": {
         "background-color": { "value": "{denhaag.color.warmgrey.1}" },
-        "border": { "value": "1px solid {denhaag.color.warmgrey.1}" }
+        "border": { "value": "0" }
       },
       "image": {
         "width": { "value": "100%" },
