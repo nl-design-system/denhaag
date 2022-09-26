@@ -6,6 +6,7 @@
   --denhaag-breadcrumb-item-display: none;
 
   color: var(--denhaag-breadcrumb-color, inherit);
+  font-weight: var(--denhaag-breadcrumb-font-weight, 400);
   padding-block-end: var(--denhaag-breadcrumb-padding-block);
   padding-block-start: var(--denhaag-breadcrumb-padding-block);
   padding-inline-end: var(--denhaag-breadcrumb-padding-inline);
