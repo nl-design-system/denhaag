@@ -37,6 +37,22 @@ const TableScroll = (
     const buttons = tableWrapper?.querySelectorAll(scrollButtonsClassName);
     const container = tableWrapper?.querySelector(tableContainerClassname);
 
+    // reset buttons + container shadows
+    const resetButtonsAndShadows = (button) => {
+      button?.removeAttribute('disabled');
+      tableWrapper?.querySelector(containerShadowRightClassName)?.classList.remove(containerShadowDisabled);
+      tableWrapper?.querySelector(containerShadowLeftClassName)?.classList.remove(containerShadowDisabled);
+    };
+
+    // enable button + shadows left and right
+    [...buttons]?.forEach((button) => {
+      resetButtonsAndShadows(button);
+
+      if (xPosition(container) > 0 && xPosition(container) < scrollableArea(container)) {
+        resetButtonsAndShadows(button);
+      }
+    });
+
     // disable button right + shadow right
     if (xPosition(container) === scrollableArea(container)) {
       tableWrapper?.querySelector(`.${scrollButtonRight}`)?.setAttribute('disabled', '');
@@ -47,15 +63,6 @@ const TableScroll = (
     if (xPosition(container) === 0) {
       tableWrapper?.querySelector(`.${scrollButtonLeft}`)?.setAttribute('disabled', '');
       tableWrapper?.querySelector(containerShadowLeftClassName)?.classList.add(containerShadowDisabled);
-    }
-
-    // enable button + shadows left and right
-    if (xPosition(container) > 0 && xPosition(container) < scrollableArea(container)) {
-      [...buttons]?.forEach((button) => {
-        button?.removeAttribute('disabled');
-        tableWrapper?.querySelector(containerShadowRightClassName)?.classList.remove(containerShadowDisabled);
-        tableWrapper?.querySelector(containerShadowLeftClassName)?.classList.remove(containerShadowDisabled);
-      });
     }
   };
 

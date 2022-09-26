@@ -15,6 +15,8 @@
 .denhaag-table__container-shadow-group {
   width: var(--denhaag-table-container-shadow-group-width, inherit);
   position: var(--denhaag-table-container-shadow-group-position, absolute);
+  bottom: var(--denhaag-table-container-shadow-group-bottom, 0);
+  display: var(--denhaag-table-container-shadow-group-display, contents);
 }
 
 .denhaag-table__container-shadow {
@@ -22,7 +24,7 @@
   height: var(--denhaag-table-container-shadow-height, inherit);
   position: var(--denhaag-table-container-shadow-position, absolute);
   background: var(--denhaag-table-container-shadow-background, transparent);
-  top: 0;
+  bottom: var(--denhaag-table-container-shadow-bottom, 0);
 }
 
 .denhaag-table__container-shadow--left {
@@ -59,6 +61,10 @@
   line-height: var(--utrecht-table-caption-line-height, 1);
   text-align: var(--utrecht-table-caption-text-align, start);
   margin-block-end: var(--utrecht-table-caption-margin-block-end, 0);
+}
+
+.denhaag-table-wrapper {
+  position: var(--denhaag-table-wrapper-position, relative);
 }
 
 .denhaag-table-wrapper .denhaag-table__caption {
