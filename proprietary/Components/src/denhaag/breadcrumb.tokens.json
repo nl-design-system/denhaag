@@ -7,6 +7,9 @@
       "color": {
         "value": "{denhaag.color.grey.4}"
       },
+      "font-weight": {
+        "value": "{denhaag.typography.weight.regular}"
+      },
       "padding-block": {
         "value": "1rem"
       },

@@ -7,6 +7,7 @@
   cursor: var(--denhaag-button-cursor, default);
   display: inline-flex;
   font-family: var(--denhaag-button-font-family);
+  font-weight: var(--denhaag-button-font-weight, 400);
   font-size: var(--denhaag-typography-scale-base-font-size);
   justify-content: center;
   line-height: 1.5;

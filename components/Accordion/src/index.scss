@@ -28,7 +28,7 @@
   position: inherit;
   width: inherit;
   font-family: inherit;
-  font-weight: inherit;
+  font-weight: var(--denhaag-accordion-panel-font-weight, 400);
   outline: var(--denhaag-accordion-panel-outline);
   align-items: var(--denhaag-accordion-panel-align-items);
   border-radius: var(--denhaag-accordion-panel-border-radius);
@@ -147,8 +147,9 @@
 }
 
 .denhaag-accordion__container--open .denhaag-accordion__panel {
+  --denhaag-accordion-panel-font-weight: var(--denhaag-accordion-container-open-panel-font-weight);
+
   color: var(--denhaag-accordion-container-open-panel-color);
-  font-weight: var(--denhaag-accordion-container-open-panel-font-weight);
 }
 
 .denhaag-accordion__details {

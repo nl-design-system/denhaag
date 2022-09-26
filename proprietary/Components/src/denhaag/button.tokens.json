@@ -4,6 +4,7 @@
       "border-radius": { "value": "{denhaag.border-radius}" },
       "border-width": { "value": "1px" },
       "font-family": { "value": "{denhaag.typography.sans-serif.font-family}" },
+      "font-weight": { "value": "{denhaag.typography.weight.regular}" },
       "padding-block": { "value": "{denhaag.space.block.xs}" },
       "padding-inline": { "value": "{denhaag.space.inline.md}" },
       "focus": {

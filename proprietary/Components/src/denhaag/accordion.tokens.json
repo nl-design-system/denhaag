@@ -77,6 +77,9 @@
         },
         "font-size": {
           "value": "{denhaag.typography.scale.base.font-size}"
+        },
+        "font-weight": {
+          "value": "{denhaag.typography.weight.regular}"
         }
       },
       "title": {
