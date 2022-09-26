@@ -63,13 +63,16 @@
         "overflow-x": { "value": "auto" },
         "shadow-group": {
           "width": { "value": "inherit" },
-          "position": { "value": "absolute" }
+          "position": { "value": "absolute" },
+          "bottom": { "value": "0" },
+          "display": { "value": "contents" }
         },
         "shadow": {
           "width": { "value": "{denhaag.space.inline.5xl}" },
           "height": { "value": "inherit" },
           "position": { "value": "absolute" },
-          "background": { "value": "linear-gradient(270deg, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0) 76.92%)" }
+          "background": { "value": "linear-gradient(270deg, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0) 76.92%)" },
+          "bottom": { "value": "0" }
         },
         "shadow-left": {
           "left": { "value": "0" },
@@ -78,6 +81,9 @@
         "shadow-right": {
           "right": { "value": "0" }
         }
+      },
+      "wrapper": {
+        "position": { "value": "relative" }
       },
       "scroll-buttons": {
         "flex-direction": { "value": "initial" },
