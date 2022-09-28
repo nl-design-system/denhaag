@@ -179,11 +179,8 @@ a.denhaag-button {
   height: var(--denhaag-button-icon-only-icon-height);
 }
 
-.utrecht-heading-1 + .denhaag-button,
-.utrecht-heading-2 + .denhaag-button,
-.utrecht-heading-3 + .denhaag-button,
-.utrecht-heading-4 + .denhaag-button,
-.utrecht-heading-5 + .denhaag-button {
+[class^="utrecht-heading"] + .denhaag-button,
+[class*=" utrecht-heading"] + .denhaag-button {
   margin-block-start: var(--denhaag-space-block-xs);
 }
 
