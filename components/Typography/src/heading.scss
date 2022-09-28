@@ -47,11 +47,8 @@
   --utrecht-heading-5-margin-block-start: var(--denhaag-space-block-xl);
 }
 
-.utrecht-heading-1 + *:not(.denhaag-button),
-.utrecht-heading-2 + *:not(.denhaag-button),
-.utrecht-heading-3 + *:not(.denhaag-button),
-.utrecht-heading-4 + *:not(.denhaag-button),
-.utrecht-heading-5 + *:not(.denhaag-button) {
+[class^="utrecht-heading"] + *:not(.denhaag-button),
+[class*=" utrecht-heading"] + *:not(.denhaag-button) {
   margin-block-start: var(--denhaag-space-block-xl);
 }
 

@@ -42,23 +42,19 @@
 }
 
 @media (min-width: 768px) {
-  *:not(.utrecht-paragraph):not(.utrecht-heading-1):not(.utrecht-heading-2):not(.utrecht-heading-3):not(.utrecht-heading-4):not(.utrecht-heading-5)
-    + .utrecht-paragraph {
+  *:not(.utrecht-paragraph):not([class^="utrecht-heading"]):not([class*=" utrecht-heading"]) + .utrecht-paragraph {
     margin-block-start: var(--denhaag-space-block-2xl);
   }
 
-  .utrecht-paragraph
-    + *:not(.utrecht-paragraph):not(.utrecht-heading-1):not(.utrecht-heading-2):not(.utrecht-heading-3):not(.utrecht-heading-4):not(.utrecht-heading-5) {
+  .utrecht-paragraph + *:not(.utrecht-paragraph):not([class^="utrecht-heading"]):not([class*=" utrecht-heading"]) {
     margin-block-start: var(--denhaag-space-block-2xl);
   }
 }
 
-*:not(.utrecht-paragraph):not(.utrecht-heading-1):not(.utrecht-heading-2):not(.utrecht-heading-3):not(.utrecht-heading-4):not(.utrecht-heading-5)
-  + .utrecht-paragraph {
+*:not(.utrecht-paragraph):not([class^="utrecht-heading"]):not([class*=" utrecht-heading"]) + .utrecht-paragraph {
   margin-block-start: var(--denhaag-space-block-xl);
 }
 
-.utrecht-paragraph
-  + *:not(.utrecht-paragraph):not(.utrecht-heading-1):not(.utrecht-heading-2):not(.utrecht-heading-3):not(.utrecht-heading-4):not(.utrecht-heading-5) {
+.utrecht-paragraph + *:not(.utrecht-paragraph):not([class^="utrecht-heading"]):not([class*=" utrecht-heading"]) {
   margin-block-start: var(--denhaag-space-block-xl);
 }
