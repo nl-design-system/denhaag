@@ -20,5 +20,11 @@
     "build:css": "rollup -c rollup.config.js",
     "build:clean": "yarn rimraf dist/.tsbuildinfo dist/*.{js,d.ts}",
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+  },
+  "dependencies": {
+    "@gemeente-denhaag/design-tokens-components": "0.2.3-alpha.288"
+  },
+  "peerDependencies": {
+    "@utrecht/components": "1.0.x"
   }
 }
