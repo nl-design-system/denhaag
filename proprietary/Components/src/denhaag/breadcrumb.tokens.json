@@ -59,12 +59,14 @@
           },
           "outline": {
             "value": "{denhaag.focus.border}"
-          }
+          },
+          "text-decoration": { "value": "underline" }
         },
         "hover": {
           "color": {
             "value": "{denhaag.color.blue.4}"
-          }
+          },
+          "text-decoration": { "value": "underline" }
         }
       },
       "list": {

@@ -61,13 +61,13 @@ ol.denhaag-breadcrumb__list {
 .denhaag-breadcrumb__link:hover,
 .denhaag-breadcrumb__link--hover {
   --denhaag-breadcrumb-link-color: var(--denhaag-breadcrumb-link-hover-color, inherit);
-  --denhaag-breadcrumb-link-text-decoration: underline;
+  --denhaag-breadcrumb-link-text-decoration: var(--denhaag-breadcrumb-link-hover-text-decoration, underline);
 }
 
 .denhaag-breadcrumb__link:focus-visible,
 .denhaag-breadcrumb__link--focus {
   --denhaag-breadcrumb-link-color: var(--denhaag-breadcrumb-link-focus-color, inherit);
-  --denhaag-breadcrumb-link-text-decoration: underline;
+  --denhaag-breadcrumb-link-text-decoration: var(--denhaag-breadcrumb-link-focus-text-decoration, underline);
 
   outline: var(--denhaag-breadcrumb-link-focus-outline, var(--denhaag-link-focus-outline));
 }
