@@ -44,6 +44,7 @@
         }
       },
       "link": {
+        "text-decoration": { "value": "none" },
         "color": {
           "value": "{denhaag.color.blue.3}"
         },

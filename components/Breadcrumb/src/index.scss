@@ -55,16 +55,19 @@ ol.denhaag-breadcrumb__list {
   padding-inline-end: var(--denhaag-breadcrumb-spacing, 8px);
   pointer-events: var(--denhaag-breadcrumb-link-pointer-events);
   position: relative;
+  text-decoration: var(--denhaag-breadcrumb-link-text-decoration, none);
 }
 
 .denhaag-breadcrumb__link:hover,
 .denhaag-breadcrumb__link--hover {
   --denhaag-breadcrumb-link-color: var(--denhaag-breadcrumb-link-hover-color, inherit);
+  --denhaag-breadcrumb-link-text-decoration: underline;
 }
 
 .denhaag-breadcrumb__link:focus-visible,
 .denhaag-breadcrumb__link--focus {
   --denhaag-breadcrumb-link-color: var(--denhaag-breadcrumb-link-focus-color, inherit);
+  --denhaag-breadcrumb-link-text-decoration: underline;
 
   outline: var(--denhaag-breadcrumb-link-focus-outline, var(--denhaag-link-focus-outline));
 }
@@ -87,8 +90,6 @@ ol.denhaag-breadcrumb__list {
 .denhaag-breadcrumb__link.denhaag-link--current,
 .denhaag-breadcrumb__item:last-child > .denhaag-breadcrumb__link {
   --denhaag-breadcrumb-link-color: var(--denhaag-breadcrumb-current-color, var(--denhaag-breadcrumb-color, inherit));
-
-  text-decoration: none;
 }
 
 /* SVG for the separator */
