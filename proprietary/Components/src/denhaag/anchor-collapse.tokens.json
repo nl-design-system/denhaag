@@ -16,11 +16,6 @@
         "value": "-180deg"
       },
       "content": {
-        "margin": {
-          "block": {
-            "start": { "value": "{denhaag.space.block.xs}" }
-          }
-        },
         "padding": {
           "block": {
             "start": {
