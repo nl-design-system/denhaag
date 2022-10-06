@@ -69,6 +69,13 @@
           "text-decoration": { "value": "underline" }
         }
       },
+      "text": {
+        "overflow": { "value": "hidden" },
+        "position": { "value": "relative" },
+        "max-width": { "value": "16.5rem" },
+        "text-overflow": { "value": "ellipsis" },
+        "white-space": { "value": "nowrap" }
+      },
       "list": {
         "max-width": {
           "value": "67.5rem"
