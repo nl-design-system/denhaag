@@ -53,7 +53,6 @@ ol.denhaag-breadcrumb__list {
   padding-block-end: var(--denhaag-breadcrumb-spacing, 8px);
   padding-inline-start: var(--denhaag-breadcrumb-spacing, 8px);
   padding-inline-end: var(--denhaag-breadcrumb-spacing, 8px);
-  pointer-events: var(--denhaag-breadcrumb-link-pointer-events);
   position: relative;
   text-decoration: var(--denhaag-breadcrumb-link-text-decoration, none);
 }
@@ -70,6 +69,11 @@ ol.denhaag-breadcrumb__list {
   --denhaag-breadcrumb-link-text-decoration: var(--denhaag-breadcrumb-link-focus-text-decoration, underline);
 
   outline: var(--denhaag-breadcrumb-link-focus-outline, var(--denhaag-link-focus-outline));
+}
+
+.denhaag-breadcrumb__link--current .denhaag-breadcrumb__link,
+.denhaag-breadcrumb__item:last-child .denhaag-breadcrumb__link {
+  pointer-events: var(--denhaag-breadcrumb-link-pointer-events);
 }
 
 .denhaag-breadcrumb__item:nth-child(1) {
@@ -109,9 +113,11 @@ ol.denhaag-breadcrumb__list {
 
 .denhaag-breadcrumb__text {
   background-color: var(--denhaag-breadcrumb-link-background-color);
-  overflow: hidden;
-  position: relative;
-  text-overflow: ellipsis;
+  overflow: var(--denhaag-breadcrumb-text-overflow, hidden);
+  position: var(--denhaag-breadcrumb-text-position, relative);
+  max-width: var(--denhaag-breadcrumb-text-max-width, 16.5rem);
+  text-overflow: var(--denhaag-breadcrumb-text-text-overflow, ellipsis);
+  white-space: var(--denhaag-breadcrumb-text-white-space, nowrap);
 }
 
 .denhaag-breadcrumb__item--hidden .denhaag-breadcrumb__text {
