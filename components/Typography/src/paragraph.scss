@@ -40,21 +40,3 @@
 .denhaag-list__wrapper + .utrecht-paragraph--lead {
   --utrecht-paragraph-margin-block-start: var(--utrecht-paragraph-lead-list-margin-block-start, inherit);
 }
-
-@media (min-width: 768px) {
-  *:not(.utrecht-paragraph):not([class^="utrecht-heading"]):not([class*=" utrecht-heading"]) + .utrecht-paragraph {
-    margin-block-start: var(--denhaag-space-block-2xl);
-  }
-
-  .utrecht-paragraph + *:not(.utrecht-paragraph):not([class^="utrecht-heading"]):not([class*=" utrecht-heading"]) {
-    margin-block-start: var(--denhaag-space-block-2xl);
-  }
-}
-
-*:not(.utrecht-paragraph):not([class^="utrecht-heading"]):not([class*=" utrecht-heading"]) + .utrecht-paragraph {
-  margin-block-start: var(--denhaag-space-block-xl);
-}
-
-.utrecht-paragraph + *:not(.utrecht-paragraph):not([class^="utrecht-heading"]):not([class*=" utrecht-heading"]) {
-  margin-block-start: var(--denhaag-space-block-xl);
-}
