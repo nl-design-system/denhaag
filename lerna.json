@@ -7,10 +7,10 @@
       "exact": true
     },
     "publish": {
-      "allowBranch": ["main", "release", "release/*"]
+      "allowBranch": ["main", "release", "release/*", "www.website.nl"]
     },
     "version": {
-      "allowBranch": ["main"],
+      "allowBranch": ["main", "www.website.nl"],
       "conventionalCommits": true,
       "exact": true,
       "message": "docs(release): design system packages"
