@@ -75,7 +75,7 @@ jobs:
           GIT_COMMITTER_NAME: "Den Haag website"
         run: |
           git push --set-upstream origin HEAD
-          yarn release -- --yes --no-git-tag-version --preid www-denhaag-nl
+          yarn release -- --yes --preid www-denhaag-nl
 
       - name: lerna publish
         env:
