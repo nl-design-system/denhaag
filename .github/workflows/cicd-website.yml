@@ -79,7 +79,7 @@ jobs:
 
       - name: lerna publish
         env:
-          NPM_TOKEN: ${{ secrets.GH_ADMIN_TOKEN }}
+          NPM_TOKEN: ${{ secrets.DEN_HAAG_ADMIN_TOKEN }}
           NPM_REGISTRY: "npm.pkg.github.com"
           NPM_SCOPE: "@gemeente-denhaag"
         run: |
