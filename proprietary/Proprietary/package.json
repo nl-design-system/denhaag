@@ -10,6 +10,10 @@
     "directory": "proprietary/Proprietary"
   },
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "dist"
   ],
