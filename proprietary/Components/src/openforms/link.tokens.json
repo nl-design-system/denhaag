@@ -1,7 +1,7 @@
 {
   "of": {
     "link": {
-      "color": { "value": "{denhaag.color.green.3}" }
+      "color": { "value": "{denhaag.link.color}" }
     }
   }
 }
