@@ -47,11 +47,6 @@
   --utrecht-heading-5-margin-block-start: var(--denhaag-space-block-xl);
 }
 
-[class^="utrecht-heading"] + *:not(.denhaag-button),
-[class*=" utrecht-heading"] + *:not(.denhaag-button) {
-  margin-block-start: var(--denhaag-space-block-xl);
-}
-
 @media (max-width: 768px) {
   .denhaag-theme {
     --utrecht-heading-1-font-size: var(--denhaag-typography-mobile-scale-3xl-font-size);

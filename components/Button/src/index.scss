@@ -178,12 +178,3 @@ a.denhaag-button {
 .denhaag-button--icon-only .denhaag-button__icon {
   height: var(--denhaag-button-icon-only-icon-height);
 }
-
-[class^="utrecht-heading"] + .denhaag-button,
-[class*=" utrecht-heading"] + .denhaag-button {
-  margin-block-start: var(--denhaag-space-block-xs);
-}
-
-.utrecht-paragraph + .denhaag-button {
-  margin-block-start: var(--denhaag-space-block-md);
-}
