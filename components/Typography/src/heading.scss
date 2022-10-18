@@ -81,3 +81,9 @@
     --utrecht-heading-5-margin-block-start: var(--denhaag-space-block-2xl);
   }
 }
+
+/* stylelint-disable */
+.page-container [class^="utrecht-heading"] + *:not(.denhaag-button),
+.page-container [class*=" utrecht-heading"] + *:not(.denhaag-button) {
+  margin-block-start: var(--denhaag-space-block-xl);
+}
