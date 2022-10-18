@@ -179,12 +179,17 @@ a.denhaag-button {
   height: var(--denhaag-button-icon-only-icon-height);
 }
 
-/* stylelint-disable */
-.page-container [class^="utrecht-heading"] + .denhaag-button,
-.page-container [class*=" utrecht-heading"] + .denhaag-button {
+*:not(.denhaag-accordion):not(.denhaag-alert):not(.denhaag-anchor-navigation):not(.denhaag-card-authentication):not(.denhaag-cta-image-content)
+  [class^="utrecht-heading"]
+  + .denhaag-button,
+*:not(.denhaag-accordion):not(.denhaag-alert):not(.denhaag-anchor-navigation):not(.denhaag-card-authentication):not(.denhaag-cta-image-content)
+  [class*=" utrecht-heading"]
+  + .denhaag-button {
   margin-block-start: var(--denhaag-space-block-xs);
 }
 
-.page-container .utrecht-paragraph + .denhaag-button {
+*:not(.denhaag-accordion):not(.denhaag-alert):not(.denhaag-anchor-navigation):not(.denhaag-card-authentication):not(.denhaag-cta-image-content)
+  .utrecht-paragraph
+  + .denhaag-button {
   margin-block-start: var(--denhaag-space-block-md);
 }

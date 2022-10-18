@@ -41,15 +41,14 @@
   --utrecht-paragraph-margin-block-start: var(--utrecht-paragraph-lead-list-margin-block-start, inherit);
 }
 
-/* stylelint-disable */
 @media (min-width: 768px) {
-  .page-container
+  *:not(.denhaag-accordion):not(.denhaag-alert):not(.denhaag-anchor-navigation):not(.denhaag-card-authentication):not(.denhaag-cta-image-content)
     *:not(.utrecht-paragraph):not([class^="utrecht-heading"]):not([class*=" utrecht-heading"])
     + .utrecht-paragraph {
     margin-block-start: var(--denhaag-space-block-2xl);
   }
 
-  .page-container
+  *:not(.denhaag-accordion):not(.denhaag-alert):not(.denhaag-anchor-navigation):not(.denhaag-card-authentication):not(.denhaag-cta-image-content)
     .utrecht-paragraph
     + *:not(.utrecht-paragraph):not([class^="utrecht-heading"]):not([class*=" utrecht-heading"]) {
     margin-block-start: var(--denhaag-space-block-2xl);
