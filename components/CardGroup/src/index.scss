@@ -5,7 +5,7 @@
  */
 
 @import "./mixin";
-@import "~@gemeente-denhaag/card-authentication/src/mixin";
+@import "../node_modules/@gemeente-denhaag/card-authentication/src/mixin";
 
 .denhaag-card-group {
   @include denhaag-card-group;
@@ -22,11 +22,11 @@
 }
 
 .denhaag-card-group--responsive {
-  --denhaag-card-group-responsive-gap: var(--denhaag-card-group-xs-gap, var(--denhaag-card-group-gap));
-  --denhaag-card-authentication-portrait-max-inline-size: calc((100% / 3) - var(--denhaag-card-group-responsive-gap));
+  --_denhaag-card-group-responsive-gap: var(--denhaag-card-group-xs-gap, var(--denhaag-card-group-gap));
+  --denhaag-card-authentication-portrait-max-inline-size: calc((100% / 3) - var(--_denhaag-card-group-responsive-gap));
 
   @media (min-width: 768px) {
-    --denhaag-card-group-responsive-gap: var(--denhaag-card-group-s-gap, var(--denhaag-card-group-gap));
+    --_denhaag-card-group-responsive-gap: var(--denhaag-card-group-s-gap, var(--denhaag-card-group-gap));
 
     .denhaag-card-authentication {
       @include denhaag-card-authentication-portrait;
@@ -34,14 +34,14 @@
   }
 
   @media (min-width: 1024px) {
-    --denhaag-card-group-responsive-gap: var(--denhaag-card-group-m-gap, var(--denhaag-card-group-gap));
+    --_denhaag-card-group-responsive-gap: var(--denhaag-card-group-m-gap, var(--denhaag-card-group-gap));
   }
 
   @media (min-width: 1280px) {
-    --denhaag-card-group-responsive-gap: var(--denhaag-card-group-l-gap, var(--denhaag-card-group-gap));
+    --_denhaag-card-group-responsive-gap: var(--denhaag-card-group-l-gap, var(--denhaag-card-group-gap));
   }
 
   @media (min-width: 1768px) {
-    --denhaag-card-group-responsive-gap: var(--denhaag-card-group-xl-gap, var(--denhaag-card-group-gap));
+    --_denhaag-card-group-responsive-gap: var(--denhaag-card-group-xl-gap, var(--denhaag-card-group-gap));
   }
 }
