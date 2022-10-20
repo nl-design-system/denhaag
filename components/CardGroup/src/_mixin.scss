@@ -8,7 +8,7 @@
   --denhaag-card-group-distanced: 0;
 
   display: grid;
-  gap: var(--_denhaag-card-group-responsive-gap, var(--denhaag-card-group-gap));
+  gap: var(--denhaag-card-group-responsive-gap, var(--denhaag-card-group-gap));
   margin-block-start: calc(var(--denhaag-card-group-distanced) * var(--denhaag-card-group-margin-block));
   margin-block-end: calc(var(--denhaag-card-group-distanced) * var(--denhaag-card-group-margin-block));
   margin-inline-start: calc(var(--denhaag-card-group-distanced) * var(--denhaag-card-group-margin-inline));
