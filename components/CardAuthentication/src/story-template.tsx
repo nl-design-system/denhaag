@@ -77,9 +77,9 @@ export const AuthenticationCard = ({
     : '';
 
   const imageSrc = {
-    DigiD: '/digid.svg',
-    eHerkenning: '/eherkenning.png',
-    eIDAS: '/eidas.svg',
+    DigiD: 'digid.svg',
+    eHerkenning: 'eherkenning.png',
+    eIDAS: 'eidas.svg',
   };
 
   return (
