@@ -29,7 +29,12 @@ export const navigationPathData = [
 ];
 
 <Canvas>
-  <Story name="Login page">
+  <Story
+    name="Login page"
+    parameters={{
+      chromatic: { viewports: [1280, 360] },
+    }}
+  >
     <Page header={<Header breadcrumb={<Breadcrumb navigationPath={navigationPathData} />} />}>
       <ResponsiveContent>
         <Heading2>Inloggen</Heading2>
