@@ -1,14 +1,15 @@
 .denhaag-button-group {
+  display: flex;
+  flex-direction: var(--denhaag-button-group-flex-direction, column);
   gap: var(--denhaag-button-group-gap);
   padding-block-start: var(--denhaag-button-group-padding, var(--denhaag-button-group-gap));
   padding-block-end: var(--denhaag-button-group-padding, var(--denhaag-button-group-gap));
 
-  @media (min-width: 768px) {
-    --denhaag-button-group-flex-direction: row;
+  @media (max-width: 767px) {
+    width: 100%;
   }
 
-  &--multiple {
-    display: flex;
-    flex-direction: var(--denhaag-button-group-flex-direction, column);
+  @media (min-width: 768px) {
+    --denhaag-button-group-flex-direction: row;
   }
 }
