@@ -5,6 +5,11 @@
  */
 
 @mixin denhaag-card-authentication {
+  @media (min-width: 768px) {
+    --denhaag-card-authentication-padding-block: 32px;
+    --denhaag-card-authentication-padding-inline: 32px;
+  }
+
   background-color: var(--denhaag-card-authentication-background-color, var(--denhaag-card-background-color));
   border-color: var(--denhaag-card-authentication-border-color, var(--denhaag-card-wrapper-border-color));
   border-radius: var(--denhaag-card-authentication-border-radius, var(--denhaag-card-wrapper-border-radius));
@@ -52,6 +57,8 @@
 }
 
 @mixin denhaag-card-authentication-portrait {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
   min-block-size: var(--denhaag-card-authentication-portrait-min-block-size);
   text-align: center;
 
@@ -75,8 +82,19 @@
     margin-inline-end: auto;
     margin-block-end: var(--denhaag-card-authentication-portrait-logo-margin-block-end);
   }
+  .denhaag-card-authentication__title {
+    margin-block-end: 18px;
+  }
+
+  .denhaag-card-authentication__cta {
+    display: flex;
+    justify-content: center;
+  }
 
   .denhaag-card-authentication__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
     margin-block-start: var(--denhaag-card-authentication-portrait-footer-margin-block-start);
   }
 }
