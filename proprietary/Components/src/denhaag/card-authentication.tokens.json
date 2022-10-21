@@ -8,10 +8,10 @@
         "min-block-size": { "value": "415px" },
         "min-inline-size": { "value": "283px" },
         "footer": {
-          "margin-block-start": { "value": "32px" }
+          "margin-block-start": { "value": "16px" }
         },
         "header": {
-          "margin-block-end": { "value": "24px" }
+          "margin-block-end": { "value": "8px" }
         },
         "logo": {
           "size": { "value": "80px" },
@@ -19,10 +19,10 @@
         }
       },
       "footer": {
-        "margin-block-start": { "value": "24px" }
+        "margin-block-start": { "value": "8px" }
       },
       "header": {
-        "margin-block-end": { "value": "16px" }
+        "margin-block-end": { "value": "0px" }
       },
       "logo": {
         "size": { "value": "56px" }
