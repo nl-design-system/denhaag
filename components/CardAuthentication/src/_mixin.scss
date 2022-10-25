@@ -51,6 +51,10 @@
     margin-block-end: 0;
   }
 
+  .denhaag-card-authentication__cta:last-child > .denhaag-button-group:last-child {
+    padding-block-end: 0;
+  }
+
   .denhaag-card-authentication__footer {
     margin-block-start: var(--denhaag-card-authentication-footer-margin-block-start);
   }
