@@ -31,7 +31,8 @@
         "font-family": { "value": "{utrecht.heading-3.font-family}" },
         "font-size": { "value": "{utrecht.heading-3.font-size}" },
         "font-weight": { "value": "{utrecht.heading.font-weight}" },
-        "color": { "value": "{utrecht.heading-3.color}" }
+        "color": { "value": "{utrecht.heading-3.color}" },
+        "margin-block-end": { "value": "18px" }
       }
     }
   }
