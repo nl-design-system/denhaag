@@ -14,7 +14,12 @@ import clsx from "clsx";
 
 import "./story-login.css";
 
-<Meta title="Templates/Login page" />
+<Meta
+  title="Templates/Login page"
+  parameters={{
+    chromatic: { viewports: [1768, 1280, 768, 360] },
+  }}
+/>
 
 # Login page
 
@@ -29,12 +34,7 @@ export const navigationPathData = [
 ];
 
 <Canvas>
-  <Story
-    name="Login page"
-    parameters={{
-      chromatic: { viewports: [1280, 360] },
-    }}
-  >
+  <Story name="Login page">
     <Page header={<Header breadcrumb={<Breadcrumb navigationPath={navigationPathData} />} />}>
       <ResponsiveContent>
         <Heading2>Inloggen</Heading2>
