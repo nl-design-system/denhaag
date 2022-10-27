@@ -52,7 +52,7 @@ export const AuthenticationCard = ({ authProvider = '', portrait = false }: Auth
         )}
       </header>
       <div className="denhaag-card-authentication__cta">
-        <div className="denhaag-button-group denhaag-button-group--single">
+        <div className="denhaag-button-group">
           <a
             className="denhaag-card-authentication__cta-link denhaag-button denhaag-button--large denhaag-button--primary-action denhaag-button--end-icon"
             href="#example-link"
