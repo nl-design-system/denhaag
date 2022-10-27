@@ -87,7 +87,7 @@
     margin-block-end: var(--denhaag-card-authentication-portrait-logo-margin-block-end);
   }
   .denhaag-card-authentication__title {
-    margin-block-end: 18px;
+    margin-block-end: var(--denhaag-card-authentication-title-margin-block-end);
   }
 
   .denhaag-card-authentication__cta {
