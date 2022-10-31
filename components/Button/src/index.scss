@@ -172,23 +172,22 @@ a.denhaag-button {
 
   height: var(--denhaag-button-icon-only-height);
   padding-inline-start: var(--denhaag-button-medium-size-padding-inline);
-  padding-inline-end: var(--denhaag-button-medium-size-padding-inline);
 }
 
 .denhaag-button--icon-only .denhaag-button__icon {
   height: var(--denhaag-button-icon-only-icon-height);
 }
 
-*:not(.denhaag-accordion):not(.denhaag-alert):not(.denhaag-anchor-navigation):not(.denhaag-card-authentication):not(.denhaag-cta-image-content)
+:not(.denhaag-accordion):not(.denhaag-alert):not(.denhaag-anchor-navigation):not(.denhaag-card-authentication):not(.denhaag-cta-image-content)
   [class^="utrecht-heading"]
   + .denhaag-button,
-*:not(.denhaag-accordion):not(.denhaag-alert):not(.denhaag-anchor-navigation):not(.denhaag-card-authentication):not(.denhaag-cta-image-content)
+:not(.denhaag-accordion):not(.denhaag-alert):not(.denhaag-anchor-navigation):not(.denhaag-card-authentication):not(.denhaag-cta-image-content)
   [class*=" utrecht-heading"]
   + .denhaag-button {
   margin-block-start: var(--denhaag-space-block-xs);
 }
 
-*:not(.denhaag-accordion):not(.denhaag-alert):not(.denhaag-anchor-navigation):not(.denhaag-card-authentication):not(.denhaag-cta-image-content)
+:not(.denhaag-accordion):not(.denhaag-alert):not(.denhaag-anchor-navigation):not(.denhaag-card-authentication):not(.denhaag-cta-image-content)
   .utrecht-paragraph
   + .denhaag-button {
   margin-block-start: var(--denhaag-space-block-md);

@@ -41,16 +41,22 @@
   --utrecht-paragraph-margin-block-start: var(--utrecht-paragraph-lead-list-margin-block-start, inherit);
 }
 
-@media (min-width: 768px) {
-  *:not(.denhaag-accordion):not(.denhaag-alert):not(.denhaag-anchor-navigation):not(.denhaag-card-authentication):not(.denhaag-cta-image-content)
-    *:not(.utrecht-paragraph):not([class^="utrecht-heading"]):not([class*=" utrecht-heading"])
-    + .utrecht-paragraph {
-    margin-block-start: var(--denhaag-space-block-2xl);
-  }
+*:not(.denhaag-alert):not(.denhaag-accordion):not(.denhaag-card-authentication):not(.denhaag-card-news):not(.denhaag-hero)
+  *:not([class^="utrecht-heading"]):not([class*=" utrecht-heading"]):not(.utrecht-paragraph)
+  + .utrecht-paragraph,
+*:not(.denhaag-alert):not(.denhaag-accordion):not(.denhaag-card-authentication):not(.denhaag-card-news):not(.denhaag-hero)
+  .utrecht-paragraph
+  + *:not([class^="utrecht-heading"]):not([class*=" utrecht-heading"]):not(.utrecht-paragraph) {
+  margin-block-start: var(--denhaag-space-block-xl);
+}
 
-  *:not(.denhaag-accordion):not(.denhaag-alert):not(.denhaag-anchor-navigation):not(.denhaag-card-authentication):not(.denhaag-cta-image-content)
+@media (min-width: 768px) {
+  *:not(.denhaag-alert):not(.denhaag-accordion):not(.denhaag-card-authentication):not(.denhaag-card-news):not(.denhaag-hero)
+    *
+    + .utrecht-paragraph,
+  *:not(.denhaag-alert):not(.denhaag-accordion):not(.denhaag-card-authentication):not(.denhaag-card-news):not(.denhaag-hero)
     .utrecht-paragraph
-    + *:not(.utrecht-paragraph):not([class^="utrecht-heading"]):not([class*=" utrecht-heading"]) {
+    + * {
     margin-block-start: var(--denhaag-space-block-2xl);
   }
 }
