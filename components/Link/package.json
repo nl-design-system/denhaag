@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/link",
-  "version": "0.2.3-alpha.294",
+  "version": "0.2.3-alpha.295",
   "description": "A Link component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -29,8 +29,8 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "0.2.3-alpha.294",
-    "@gemeente-denhaag/icons": "0.2.3-alpha.294"
+    "@gemeente-denhaag/baseprops": "0.2.3-alpha.295",
+    "@gemeente-denhaag/icons": "0.2.3-alpha.295"
   },
   "peerDependencies": {
     "react": "^17.0.0"
