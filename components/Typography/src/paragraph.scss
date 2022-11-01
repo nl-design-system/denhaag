@@ -41,22 +41,37 @@
   --utrecht-paragraph-margin-block-start: var(--utrecht-paragraph-lead-list-margin-block-start, inherit);
 }
 
-*:not(.denhaag-alert):not(.denhaag-accordion):not(.denhaag-card-authentication):not(.denhaag-card-news):not(.denhaag-hero)
-  *:not([class^="utrecht-heading"]):not([class*=" utrecht-heading"]):not(.utrecht-paragraph)
+/* stylelint-disable-next-line no-descending-specificity */
+*:not(.denhaag-alert):not(.denhaag-card-authentication):not(.denhaag-card-news):not(.denhaag-hero)
+  *:not([class^="utrecht-heading"]):not([class*=" utrecht-heading"])
   + .utrecht-paragraph,
-*:not(.denhaag-alert):not(.denhaag-accordion):not(.denhaag-card-authentication):not(.denhaag-card-news):not(.denhaag-hero)
+*:not(.denhaag-alert):not(.denhaag-card-authentication):not(.denhaag-card-news):not(.denhaag-hero)
   .utrecht-paragraph
-  + *:not([class^="utrecht-heading"]):not([class*=" utrecht-heading"]):not(.utrecht-paragraph) {
+  + * {
   margin-block-start: var(--denhaag-space-block-xl);
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 @media (min-width: 768px) {
-  *:not(.denhaag-alert):not(.denhaag-accordion):not(.denhaag-card-authentication):not(.denhaag-card-news):not(.denhaag-hero)
-    *
+  *:not(.denhaag-alert):not(.denhaag-card-authentication):not(.denhaag-card-news):not(.denhaag-hero)
+    *:not([class^="utrecht-heading"]):not([class*=" utrecht-heading"])
     + .utrecht-paragraph,
-  *:not(.denhaag-alert):not(.denhaag-accordion):not(.denhaag-card-authentication):not(.denhaag-card-news):not(.denhaag-hero)
+  *:not(.denhaag-alert):not(.denhaag-card-authentication):not(.denhaag-card-news):not(.denhaag-hero)
     .utrecht-paragraph
-    + * {
-    margin-block-start: var(--denhaag-space-block-2xl);
+    + *:not(.denhaag-button) {
+    margin-block-start: var(--denhaag-space-block-2xl) !important;
   }
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.denhaag-alert [class^="utrecht-heading"] + .utrecht-paragraph,
+.denhaag-alert [class*=" utrecht-heading"] + .utrecht-paragraph,
+.denhaag-card-authentication [class^="utrecht-heading"] + .utrecht-paragraph,
+.denhaag-card-authentication [class*=" utrecht-heading"] + .utrecht-paragraph,
+.denhaag-card-news [class^="utrecht-heading"] + .utrecht-paragraph,
+.denhaag-card-news [class*=" utrecht-heading"] + .utrecht-paragraph,
+.denhaag-hero [class^="utrecht-heading"] + .utrecht-paragraph,
+.denhaag-hero [class*=" utrecht-heading"] + .utrecht-paragraph,
+.denhaag-hero .utrecht-paragraph + .denhaag-button {
+  margin-block-start: initial !important;
 }
