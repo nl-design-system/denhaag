@@ -16,7 +16,8 @@
       },
       "anchor": {
         "color-border": { "value": "transparent" },
-        "bg": { "value": "transparent" }
+        "bg": { "value": "transparent" },
+        "fg": { "value": "{denhaag.link.color}" }
       }
     }
   }
