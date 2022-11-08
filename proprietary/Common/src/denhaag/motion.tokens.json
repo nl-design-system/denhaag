@@ -1,0 +1,15 @@
+{
+  "denhaag": {
+    "motion": {
+      "delay": {
+        "value": "0ms"
+      },
+      "duration": {
+        "value": "50ms"
+      },
+      "timing-function": {
+        "value": "ease-in-out"
+      }
+    }
+  }
+}
