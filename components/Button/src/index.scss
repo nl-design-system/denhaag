@@ -1,4 +1,6 @@
 .denhaag-button {
+  --denhaag-button-focus-border-offset: calc(-1 * var(--denhaag-focus-border-width));
+
   align-items: center;
   background-color: var(--denhaag-button-primary-action-background-color);
   border: 0;
@@ -8,7 +10,7 @@
   display: inline-flex;
   font-family: var(--denhaag-button-font-family);
   font-weight: var(--denhaag-button-font-weight, 400);
-  font-size: var(--denhaag-typography-scale-base-font-size);
+  font-size: var(--denhaag-button-font-size, var(--denhaag-typography-scale-base-font-size));
   justify-content: center;
   line-height: 1.5;
   padding-block-end: var(--denhaag-button-medium-size-padding-block, var(--denhaag-button-padding-block));
@@ -17,45 +19,53 @@
   padding-inline-start: var(--denhaag-button-medium-size-padding-inline, var(--denhaag-button-padding-inline));
   position: relative;
   text-decoration: none;
+  transition-property: background-color, border-color, color, transform;
+  transition-duration: var(--denhaag-button-transition-duration);
+  transition-timing-function: var(--denhaag-button-transition-timing-function);
+  transition-delay: var(--denhaag-button-transition-delay);
+  transform: translate(var(--denhaag-button-transform-x, 0), var(--denhaag-button-transform-y, 0));
+
+  @media (prefers-reduced-motion: reduce) {
+    --denhaag-button-transition-duration: 0;
+  }
+}
+
+.denhaag-button--reduced-button-transition {
+  --denhaag-button-transition-duration: 0;
 }
 
 a.denhaag-button {
   --denhaag-button-cursor: pointer;
 }
 
-.denhaag-button--focus::after,
-.denhaag-button:focus::after,
+.denhaag-button.denhaag-button--hover,
+.denhaag-button:hover {
+  --denhaag-button-transform-y: var(--denhaag-button-hover-transform-y);
+
+  background-color: var(--denhaag-button-primary-action-hover-background-color);
+  color: var(--denhaag-button-primary-action-hover-color);
+}
+
 .denhaag-button--focus-visible::after,
 .denhaag-button:focus-visible::after {
   border: var(--denhaag-focus-border);
   border-radius: var(--denhaag-border-radius);
-  bottom: -2px;
+  bottom: var(--denhaag-button-focus-border-offset);
   content: "";
   display: block;
-  left: -2px;
+  left: var(--denhaag-button-focus-border-offset);
   position: absolute;
-  right: -2px;
-  top: -2px;
+  right: var(--denhaag-button-focus-border-offset);
+  top: var(--denhaag-button-focus-border-offset);
 }
 
+.denhaag-button--focus,
+.denhaag-button:focus,
 .denhaag-button--focus-visible,
 .denhaag-button:focus-visible {
+  --denhaag-button-transform-y: var(--denhaag-button-focus-transform-y);
+
   outline: none;
-}
-
-/* Due to the accessibility focus outline overlapping with the border, the outline needs to be repositioned for the border variant */
-.denhaag-button--secondary-action.denhaag-button--focus::after,
-.denhaag-button--secondary-action:focus::after {
-  bottom: -3px;
-  left: -3px;
-  right: -3px;
-  top: -3px;
-}
-
-.denhaag-button.denhaag-button--hover,
-.denhaag-button:hover {
-  background-color: var(--denhaag-button-primary-action-hover-background-color);
-  color: var(--denhaag-button-primary-action-hover-color);
 }
 
 .denhaag-button.denhaag-button--disabled,
@@ -65,6 +75,9 @@ a.denhaag-button {
 }
 
 .denhaag-button--secondary-action {
+  // Due to the accessibility focus outline overlapping with the border, the outline needs to be repositioned for the border variant.
+  --denhaag-button-focus-border-offset: calc(-1 * (var(--denhaag-focus-border-width) * 1.5));
+
   background-color: var(--denhaag-button-secondary-action-background-color);
   border-color: var(--denhaag-button-secondary-action-border-color);
   border-style: solid;
@@ -103,28 +116,19 @@ a.denhaag-button {
 }
 
 .denhaag-button--large {
-  font-size: var(--denhaag-typography-scale-lg-font-size);
-  padding-block-end: var(--denhaag-button-large-size-padding-block, var(--denhaag-button-padding-block));
-  padding-block-start: var(--denhaag-button-large-size-padding-block, var(--denhaag-button-padding-block));
-  padding-inline-end: var(--denhaag-button-large-size-padding-inline, var(--denhaag-button-padding-inline));
-  padding-inline-start: var(--denhaag-button-large-size-padding-inline, var(--denhaag-button-padding-inline));
+  --denhaag-button-font-size: var(--denhaag-typography-scale-lg-font-size);
+  --denhaag-button-medium-size-padding-block: var(--denhaag-button-large-size-padding-block);
+  --denhaag-button-medium-size-padding-inline: var(--denhaag-button-large-size-padding-inline);
+
   line-height: var(--denhaag-button-large-size-line-height);
 }
 
 .denhaag-button--large.denhaag-button--secondary-action {
-  padding-block-end: calc(
+  --denhaag-button-medium-size-padding-block: calc(
     var(--denhaag-button-large-size-padding-block, var(--denhaag-button-padding-block)) -
       var(--denhaag-button-border-width)
   );
-  padding-block-start: calc(
-    var(--denhaag-button-large-size-padding-block, var(--denhaag-button-padding-block)) -
-      var(--denhaag-button-border-width)
-  );
-  padding-inline-end: calc(
-    var(--denhaag-button-large-size-padding-inline, var(--denhaag-button-padding-inline)) -
-      var(--denhaag-button-border-width)
-  );
-  padding-inline-start: calc(
+  --denhaag-button-medium-size-padding-inline: calc(
     var(--denhaag-button-large-size-padding-inline, var(--denhaag-button-padding-inline)) -
       var(--denhaag-button-border-width)
   );
@@ -171,8 +175,6 @@ a.denhaag-button {
   --denhaag-button-medium-size-padding-inline: 0.75rem;
 
   height: var(--denhaag-button-icon-only-height);
-  padding-inline-start: var(--denhaag-button-medium-size-padding-inline);
-  padding-inline-end: var(--denhaag-button-medium-size-padding-inline);
 }
 
 .denhaag-button--icon-only .denhaag-button__icon {
