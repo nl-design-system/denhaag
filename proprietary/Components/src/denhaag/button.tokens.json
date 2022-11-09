@@ -67,6 +67,17 @@
         "icon": {
           "height": { "value": "{denhaag.space.block.lg}" }
         }
+      },
+      "transition": {
+        "delay": {
+          "value": "0ms"
+        },
+        "duration": {
+          "value": "50ms"
+        },
+        "timing-function": {
+          "value": "ease-in-out"
+        }
       }
     }
   }

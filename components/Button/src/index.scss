@@ -20,18 +20,18 @@
   position: relative;
   text-decoration: none;
   transition-property: background-color, border-color, color, transform;
-  transition-duration: var(--denhaag-motion-duration);
-  transition-timing-function: var(--denhaag-motion-timing-function);
-  transition-delay: var(--denhaag-motion-delay);
+  transition-duration: var(--denhaag-button-transition-duration);
+  transition-timing-function: var(--denhaag-button-transition-timing-function);
+  transition-delay: var(--denhaag-button-transition-delay);
   transform: translate(var(--denhaag-button-transform-x, 0), var(--denhaag-button-transform-y, 0));
 
   @media (prefers-reduced-motion: reduce) {
-    --denhaag-motion-duration: 0;
+    --denhaag-button-transition-duration: 0;
   }
 }
 
-.denhaag-button--reduced-motion {
-  --denhaag-motion-duration: 0;
+.denhaag-button--reduced-button-transition {
+  --denhaag-button-transition-duration: 0;
 }
 
 a.denhaag-button {
