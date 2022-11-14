@@ -5,6 +5,16 @@
 
   border-bottom: var(--denhaag-anchor-collapse-border-width) var(--denhaag-anchor-collapse-border-style)
     var(--denhaag-anchor-collapse-border-color);
+
+  @media (prefers-reduced-motion: reduce) {
+    --denhaag-anchor-collapse-transition-duration: 0;
+    --denhaag-anchor-collapse-open-transition-duration: 0;
+  }
+}
+
+.denhaag-anchor-collapse--reduced-motion {
+  --denhaag-anchor-collapse-transition-duration: 0;
+  --denhaag-anchor-collapse-open-transition-duration: 0;
 }
 
 .denhaag-anchor-collapse:first-child {
