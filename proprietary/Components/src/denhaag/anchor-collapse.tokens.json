@@ -13,7 +13,7 @@
         }
       },
       "rotate": {
-        "value": "-180deg"
+        "value": "180deg"
       },
       "content": {
         "margin": {

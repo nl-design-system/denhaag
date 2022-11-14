@@ -9,6 +9,7 @@ export default class AnchorCollapses {
     this.classNames = {
       active: `${className}--active`,
       toggle: `${className}__toggle`,
+      content: `${className}__content-content`, // Used for retrieving the content height.
     };
 
     this.openOrCloseCollapses();
@@ -17,10 +18,12 @@ export default class AnchorCollapses {
   }
 
   windowEvents() {
-    const self = this;
-    const ww = window.innerWidth;
-    self.windowEventsLoop();
+    const self = this,
+      ww = window.innerWidth;
+
+    this.windowEventsLoop();
     window.addEventListener('resize', async () => {
+      console.log('window resize');
       // Check for width, for mobile devices where the url-bar overlay counts as resize.
       if (ww !== window.innerWidth) {
         self.openOrCloseCollapses();
@@ -48,6 +51,10 @@ export default class AnchorCollapses {
       [...panel.getElementsByClassName(this.classNames.toggle)].forEach(
         (toggle) =>
           (toggle.onclick = () => {
+            if (!this.openCollapses) {
+              this.setHeight(panel);
+            }
+
             toggle.setAttribute('aria-expanded', toggle.getAttribute('aria-expanded') === 'false' ? 'true' : 'false');
             panel.classList.toggle(this.classNames.active);
           }),
@@ -62,7 +69,7 @@ export default class AnchorCollapses {
     [...this.panels].forEach((panel) => {
       let expanded = null;
 
-      if (this.openCollapses && !panel.classList.contains(this.classNames.active)) {
+      if (!!this.openCollapses && !panel.classList.contains(this.classNames.active)) {
         panel.classList.add(this.classNames.active);
         expanded = 'true';
       } else if (panel.classList.contains(this.classNames.active)) {
@@ -76,5 +83,16 @@ export default class AnchorCollapses {
         );
       }
     });
+  }
+
+  setHeight(panel) {
+    const content = panel.querySelector(`.${this.classNames.content}`);
+
+    // Set max-height property.
+    if (!content) {
+      return;
+    }
+
+    panel.style.setProperty('--denhaag-anchor-collapse-details-max-height', `${content.offsetHeight}px`);
   }
 }
