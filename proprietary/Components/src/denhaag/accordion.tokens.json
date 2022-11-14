@@ -31,7 +31,7 @@
               "value": "{denhaag.color.green.3}"
             },
             "transform": {
-              "value": "rotate(180deg)"
+              "value": "rotate(-180deg)"
             }
           },
           "panel": {
@@ -124,23 +124,37 @@
         }
       },
       "details": {
-        "padding-block-start": {
-          "value": 0
+        "content": {
+          "padding-block-start": {
+            "value": 0
+          },
+          "padding-block-end": {
+            "value": "{denhaag.space.block.md}"
+          },
+          "padding-inline": {
+            "value": "{denhaag.space.inline.md}"
+          }
         },
-        "padding-block-end": {
-          "value": "{denhaag.space.block.md}"
-        },
-        "padding-inline": {
-          "value": "{denhaag.space.inline.md}"
-        },
-        "margin-inline-end": {
+        "padding-inline-end": {
           "value": "calc((2 * 1rem) + (2 * 0.75rem))"
+        }
+      },
+      "transition": {
+        "duration": {
+          "value": "150ms"
         },
-        "display": {
-          "value": "none"
-        },
-        "open-display": {
-          "value": "block"
+        "timing-function": {
+          "value": "ease-in-out"
+        }
+      },
+      "open": {
+        "transition": {
+          "duration": {
+            "value": "400ms"
+          },
+          "timing-function": {
+            "value": "ease-in-out"
+          }
         }
       }
     }
