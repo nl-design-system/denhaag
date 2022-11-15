@@ -44,6 +44,11 @@
 
 .denhaag-link--external {
   --denhaag-link-icon-align: var(--denhaag-link-external-icon-align);
+
+  display: inline;
+  padding-inline-end: 1.5rem;
+  position: relative;
+  hyphens: auto;
 }
 
 .denhaag-link--focus,
@@ -82,6 +87,12 @@
 li .denhaag-link__icon {
   align-self: start;
   flex: 1 0 auto;
+}
+
+.denhaag-link--external .denhaag-link__icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .denhaag-link__icon > :first-child {
