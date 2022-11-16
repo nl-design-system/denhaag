@@ -35,46 +35,49 @@ ol.denhaag-breadcrumb__list {
 }
 
 .denhaag-breadcrumb__item--hidden .denhaag-breadcrumb__link::before {
+  aspect-ratio: var(--denhaag-breadcrumb-item-hidden-link-before-aspect-ratio, 24 / 16);
+  background-color: var(--denhaag-breadcrumb-link-background-color);
+  border-radius: var(--denhaag-breadcrumb-dots-border-radius, var(--denhaag-border-radius));
   color: var(--denhaag-breadcrumb-dots-color, inherit);
   content: "...";
   left: var(--denhaag-breadcrumb-item-hidden-link-before-left, auto);
   line-height: var(--denhaag-breadcrumb-item-hidden-link-before-line-height, 0);
-  position: var(--denhaag-breadcrumb-item-hidden-link-before-position, absolute);
-  text-indent: var(--denhaag-breadcrumb-item-hidden-link-before-text-indent, 0);
-  top: var(--denhaag-breadcrumb-item-hidden-link-before-top, auto);
-  vertical-align: var(--denhaag-breadcrumb-item-hidden-link-before-vertical-align, baseline);
-  aspect-ratio: var(--denhaag-breadcrumb-item-hidden-link-before-aspect-ratio, 24 / 16);
-  border-radius: var(--denhaag-breadcrumb-dots-border-radius, var(--denhaag-border-radius));
-  background-color: var(--denhaag-breadcrumb-link-background-color);
   max-width: calc(var(--denhaag-breadcrumb-spacing, 0.5rem) * 3);
   padding-block-start: var(--denhaag-breadcrumb-item-hidden-link-before-padding-block, 0.1875rem);
   padding-block-end: var(--denhaag-breadcrumb-item-hidden-link-before-padding-block, 0.1875rem);
   padding-inline-start: var(--denhaag-breadcrumb-item-hidden-link-before-padding-inline, 0.2813rem);
   padding-inline-end: var(--denhaag-breadcrumb-item-hidden-link-before-padding-inline, 0.2813rem);
+  position: var(--denhaag-breadcrumb-item-hidden-link-before-position, absolute);
+  text-indent: var(--denhaag-breadcrumb-item-hidden-link-before-text-indent, 0);
+  top: var(--denhaag-breadcrumb-item-hidden-link-before-top, auto);
+  vertical-align: var(--denhaag-breadcrumb-item-hidden-link-before-vertical-align, baseline);
 }
 
 .denhaag-breadcrumb__item--hidden .denhaag-breadcrumb__link:hover::after,
 .denhaag-breadcrumb__item--hidden .denhaag-breadcrumb__link--hover::after {
-  content: "";
-  width: var(--denhaag-breadcrumb-item-hidden-link-after-width, 0.375rem);
-  height: var(--denhaag-breadcrumb-item-hidden-link-after-height, 0.375rem);
   background-color: var(--denhaag-breadcrumb-item-hidden-link-after-background-color, var(--denhaag-color-grey-4));
-  transform: var(--denhaag-breadcrumb-item-hidden-link-after-transform, rotate(45deg));
-  position: var(--denhaag-breadcrumb-item-hidden-link-after-position, absolute);
   bottom: calc(-1 * var(--denhaag-breadcrumb-item-hidden-link-after-height));
-  left: calc(50% - (var(--denhaag-breadcrumb-item-hidden-link-after-height) * 2));
+  content: "";
   display: var(--denhaag-breadcrumb-item-hidden-link-after-display, inline-block);
+  height: var(--denhaag-breadcrumb-item-hidden-link-after-height, 0.375rem);
+  left: calc(50% - (var(--denhaag-breadcrumb-item-hidden-link-after-height) * 2));
+  position: var(--denhaag-breadcrumb-item-hidden-link-after-position, absolute);
+  transform: var(--denhaag-breadcrumb-item-hidden-link-after-transform, rotate(45deg));
+  width: var(--denhaag-breadcrumb-item-hidden-link-after-width, 0.375rem);
 }
 
-.denhaag-breadcrumb__item:nth-last-child(2) > .denhaag-breadcrumb__link::before {
-  background: var(--denhaag-breadcrumb-link-color);
-  clip-path: path(
-    "M6.756 12.0899C6.43057 12.4153 5.90293 12.4153 5.57749 12.0899L0.577491 7.0899C0.421212 6.93362 0.333414 6.72166 0.333414 6.50065C0.333414 6.27964 0.421212 6.06767 0.577491 5.91139L5.57749 0.911394C5.90293 0.585957 6.43057 0.585957 6.756 0.911394C7.08144 1.23683 7.08144 1.76447 6.756 2.08991L3.17859 5.66732L12.8334 5.66732C13.2937 5.66732 13.6667 6.04041 13.6667 6.50065C13.6667 6.96089 13.2937 7.33398 12.8334 7.33398L3.17859 7.33398L6.756 10.9114C7.08144 11.2368 7.08144 11.7645 6.756 12.0899Z"
-  );
-  content: var(--denhaag-breadcrumb-link-icon-content);
-  height: var(--denhaag-breadcrumb-link-icon-height, var(--denhaag-breadcrumb-link-icon-width));
-  margin-inline-end: var(--denhaag-breadcrumb-link-icon-margin-inline, var(--denhaag-breadcrumb-link-icon-width));
-  width: var(--denhaag-breadcrumb-link-icon-width);
+@media (max-width: 1024px) {
+  // This is styling only for mobile. Not for desktop and will break specific styling.
+  .denhaag-breadcrumb__item:nth-last-child(2) > .denhaag-breadcrumb__link::before {
+    background: var(--denhaag-breadcrumb-link-color);
+    clip-path: path(
+      "M6.756 12.0899C6.43057 12.4153 5.90293 12.4153 5.57749 12.0899L0.577491 7.0899C0.421212 6.93362 0.333414 6.72166 0.333414 6.50065C0.333414 6.27964 0.421212 6.06767 0.577491 5.91139L5.57749 0.911394C5.90293 0.585957 6.43057 0.585957 6.756 0.911394C7.08144 1.23683 7.08144 1.76447 6.756 2.08991L3.17859 5.66732L12.8334 5.66732C13.2937 5.66732 13.6667 6.04041 13.6667 6.50065C13.6667 6.96089 13.2937 7.33398 12.8334 7.33398L3.17859 7.33398L6.756 10.9114C7.08144 11.2368 7.08144 11.7645 6.756 12.0899Z"
+    );
+    content: var(--denhaag-breadcrumb-link-icon-content);
+    height: var(--denhaag-breadcrumb-link-icon-height, var(--denhaag-breadcrumb-link-icon-width));
+    margin-inline-end: var(--denhaag-breadcrumb-link-icon-margin-inline, var(--denhaag-breadcrumb-link-icon-width));
+    width: var(--denhaag-breadcrumb-link-icon-width);
+  }
 }
 
 .denhaag-breadcrumb__link {
@@ -128,7 +131,7 @@ ol.denhaag-breadcrumb__list {
   --denhaag-breadcrumb-link-color: var(--denhaag-breadcrumb-current-color, var(--denhaag-breadcrumb-color, inherit));
 }
 
-/* SVG for the separator */
+// SVG for the separator.
 .denhaag-breadcrumb__link > .denhaag-icon + .denhaag-icon,
 .denhaag-breadcrumb__link > .denhaag-breadcrumb__text + .denhaag-icon {
   color: initial;
@@ -149,9 +152,9 @@ ol.denhaag-breadcrumb__list {
 
 .denhaag-breadcrumb__text {
   background-color: var(--denhaag-breadcrumb-link-background-color);
+  max-width: var(--denhaag-breadcrumb-text-max-width, 16.5rem);
   overflow: var(--denhaag-breadcrumb-text-overflow, hidden);
   position: var(--denhaag-breadcrumb-text-position, relative);
-  max-width: var(--denhaag-breadcrumb-text-max-width, 16.5rem);
   text-overflow: var(--denhaag-breadcrumb-text-text-overflow, ellipsis);
   white-space: var(--denhaag-breadcrumb-text-white-space, nowrap);
 }
