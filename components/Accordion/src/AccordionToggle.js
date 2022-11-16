@@ -1,21 +1,22 @@
-const AccordionToggle = (className = '.denhaag-accordion__title') => {
-  if (!className) {
-    return;
-  }
+const AccordionToggle = (className = 'denhaag-accordion__title') => {
+  // Select all clickable elements.
+  [...document.getElementsByClassName(className)]?.forEach((element) => {
+    const parent = element.closest('.denhaag-accordion__container');
 
-  // select all clickable elements
-  const clickableElements = document.querySelectorAll(className);
+    // Set max-height property.
+    if (parent.querySelector('.denhaag-accordion__details-content')) {
+      parent.style.setProperty(
+        '--denhaag-accordion-details-max-height',
+        `${parent.querySelector('.denhaag-accordion__details-content').offsetHeight}px`,
+      );
+    }
 
-  // toggle navigation
-  [...clickableElements]?.forEach((element) => {
+    // Toggle accordion-item.
     element.onclick = () => {
-      let expanded = element.getAttribute('aria-expanded');
-      element.closest('.denhaag-accordion__container').classList.toggle('denhaag-accordion__container--open');
-      if (expanded === 'false') {
-        expanded = 'true';
-      } else {
-        expanded = 'false';
-      }
+      const expanded = element.getAttribute('aria-expanded') === 'false' ? 'true' : 'false';
+      parent.classList.toggle('denhaag-accordion__container--open');
+
+      // Set opposite aria-expanded.
       element.setAttribute('aria-expanded', expanded);
     };
   });

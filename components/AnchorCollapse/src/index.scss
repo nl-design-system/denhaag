@@ -1,10 +1,16 @@
 .denhaag-anchor-collapse {
-  --denhaag-anchor-collapse-content-display: none;
-  --denhaag-anchor-collapse-icon-display: block;
-  --denhaag-anchor-collapse-summary-pointer-events: auto;
-
   border-bottom: var(--denhaag-anchor-collapse-border-width) var(--denhaag-anchor-collapse-border-style)
     var(--denhaag-anchor-collapse-border-color);
+
+  @media (prefers-reduced-motion: reduce) {
+    --denhaag-anchor-collapse-transition-duration: 0;
+    --denhaag-anchor-collapse-open-transition-duration: 0;
+  }
+}
+
+.denhaag-anchor-collapse--reduced-motion {
+  --denhaag-anchor-collapse-transition-duration: 0;
+  --denhaag-anchor-collapse-open-transition-duration: 0;
 }
 
 .denhaag-anchor-collapse:first-child {
@@ -13,9 +19,11 @@
 }
 
 .denhaag-anchor-collapse--active {
-  --denhaag-anchor-collapse-content-display: block;
   --denhaag-anchor-collapse-rotate: 0deg;
   --denhaag-anchor-collapse-summary-color: var(--denhaag-anchor-collapse-summary-active-color);
+  --denhaag-anchor-collapse-transition-duration: var(--denhaag-anchor-collapse-open-transition-duration);
+  --denhaag-anchor-collapse-transition-timing-function: var(--denhaag-anchor-collapse-open-transition-timing-function);
+  --denhaag-anchor-collapse-details-height: var(--denhaag-anchor-collapse-details-max-height, 100%); // Value set by JS.
 }
 
 .denhaag-anchor-collapse__toggle {
@@ -31,7 +39,7 @@
   padding-block-start: var(--denhaag-anchor-collapse-summary-padding-block);
   padding-inline-end: calc(2 * var(--denhaag-anchor-collapse-summary-padding-inline));
   padding-inline-start: var(--denhaag-anchor-collapse-summary-padding-inline);
-  pointer-events: var(--denhaag-anchor-collapse-summary-pointer-events);
+  pointer-events: var(--denhaag-anchor-collapse-summary-pointer-events, auto);
   text-align: var(--denhaag-anchor-collapse-summary-text-align);
   width: 100%;
 }
@@ -55,17 +63,25 @@
 }
 
 .denhaag-anchor-collapse__summary > svg {
-  display: var(--denhaag-anchor-collapse-icon-display);
+  display: var(--denhaag-anchor-collapse-icon-display, block);
   position: absolute;
   top: 50%;
   right: var(--denhaag-anchor-collapse-summary-padding-inline);
   transform: translate(-50%, -50%) rotate(var(--denhaag-anchor-collapse-rotate));
+  transition: transform var(--denhaag-anchor-collapse-transition-duration, 0ms)
+    var(--denhaag-anchor-collapse-transition-timing-function, ease);
 }
 
 .denhaag-anchor-collapse__content {
   border-top: var(--denhaag-anchor-collapse-border-width) var(--denhaag-anchor-collapse-border-style)
     var(--denhaag-anchor-collapse-border-color);
-  display: var(--denhaag-anchor-collapse-content-display);
+  max-height: var(--denhaag-anchor-collapse-details-height, 0);
+  overflow: hidden;
+  transition: max-height var(--denhaag-anchor-collapse-transition-duration, 0ms)
+    var(--denhaag-anchor-collapse-transition-timing-function, ease);
+}
+
+.denhaag-anchor-collapse__content-content {
   padding-block-end: var(
     --denhaag-anchor-collapse-content-padding-block-end,
     var(--denhaag-anchor-collapse-summary-padding-block)
@@ -87,15 +103,15 @@
 @media (min-width: 768px) {
   .denhaag-anchor-collapse {
     --denhaag-anchor-collapse-border-color: transparent;
-    --denhaag-anchor-collapse-content-display: block;
     --denhaag-anchor-collapse-icon-display: none;
-    --denhaag-anchor-collapse-summary-pointer-events: none;
-    --denhaag-anchor-collapse-summary-padding-block: 0;
-    --denhaag-anchor-collapse-summary-padding-inline: 0;
     --denhaag-anchor-collapse-content-padding-block-end: 0;
     --denhaag-anchor-collapse-content-padding-block-start: 0;
     --denhaag-anchor-collapse-content-padding-inline-end: 0;
     --denhaag-anchor-collapse-content-padding-inline-start: 0;
+    --denhaag-anchor-collapse-details-height: 100%;
+    --denhaag-anchor-collapse-summary-pointer-events: none;
+    --denhaag-anchor-collapse-summary-padding-block: 0;
+    --denhaag-anchor-collapse-summary-padding-inline: 0;
 
     // Must always be the same as the H2 styles.
     --denhaag-anchor-collapse-summary-color: var(--utrecht-heading-2-color, var(--utrecht-heading-color));

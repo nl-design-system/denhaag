@@ -13,7 +13,7 @@
         }
       },
       "rotate": {
-        "value": "-180deg"
+        "value": "180deg"
       },
       "content": {
         "margin": {
@@ -82,6 +82,24 @@
           },
           "outline": {
             "value": "{denhaag.focus.border}"
+          }
+        }
+      },
+      "transition": {
+        "duration": {
+          "value": "150ms"
+        },
+        "timing-function": {
+          "value": "ease-in-out"
+        }
+      },
+      "open": {
+        "transition": {
+          "duration": {
+            "value": "400ms"
+          },
+          "timing-function": {
+            "value": "ease-in-out"
           }
         }
       }
