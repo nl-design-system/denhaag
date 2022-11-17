@@ -117,11 +117,11 @@ ol.denhaag-breadcrumb__list {
   }
 }
 
-.denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(2)):not(:last-child) {
+.denhaag-breadcrumb__item--hidden {
   --denhaag-breadcrumb-link-background-color: var(--denhaag-breadcrumb-dots-background-color, inherit);
 }
 
-.denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(2)):not(:last-child):hover {
+.denhaag-breadcrumb__item--hidden:hover {
   --denhaag-breadcrumb-link-background-color: var(--denhaag-breadcrumb-dots-hover-background-color, inherit);
 }
 
