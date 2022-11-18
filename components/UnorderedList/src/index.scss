@@ -17,6 +17,7 @@
 
 .denhaag-unordered-list li {
   font-weight: var(--denhaag-unordered-list-list-item-font-weight);
+  line-height: var(--utrecht-paragraph-line-height, var(--utrecht-document-line-height, inherit));
 }
 
 .denhaag-unordered-list li::marker {
