@@ -66,7 +66,10 @@
           "align": {
             "value": "center"
           },
-          "margin-inline-start": { "value": "{denhaag.space.inline.2xs}" }
+          "margin-inline-start": { "value": "{denhaag.space.inline.2xs}" },
+          "small": {
+            "vertical-align": { "value": "middle" }
+          }
         }
       }
     }

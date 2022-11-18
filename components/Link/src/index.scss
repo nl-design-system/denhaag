@@ -68,10 +68,32 @@ li .denhaag-link__icon {
   display: var(--denhaag-link-external-display, initial);
 }
 
+/* undo change .denhaag-card-authentication */
+.denhaag-card-authentication .utrecht-paragraph .denhaag-link--external {
+  display: inline-flex;
+}
+
 .utrecht-paragraph .denhaag-link--external .denhaag-link__icon,
 .denhaag-unordered-list .denhaag-link--external .denhaag-link__icon,
 .denhaag-ordered-list.denhaag-link--external .denhaag-link__icon {
   margin-inline-start: var(--denhaag-link-external-icon-margin-inline-start, 0.25rem);
+}
+
+/* undo change .denhaag-card-authentication */
+.denhaag-card-authentication .utrecht-paragraph .denhaag-link--external .denhaag-link__icon {
+  margin-inline-start: unset;
+}
+
+.utrecht-paragraph .denhaag-link--external.denhaag-link--with-small-icon .denhaag-link__icon {
+  vertical-align: var(--denhaag-link-external-icon-small-vertical-align, middle);
+}
+
+/* undo change .denhaag-card-authentication */
+.denhaag-card-authentication
+  .utrecht-paragraph
+  .denhaag-link--external.denhaag-link--with-small-icon
+  .denhaag-link__icon {
+  vertical-align: text-top;
 }
 
 .denhaag-unordered-list li > .denhaag-link--external .denhaag-icon,
