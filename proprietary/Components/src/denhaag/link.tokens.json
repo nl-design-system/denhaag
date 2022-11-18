@@ -61,10 +61,12 @@
         }
       },
       "external": {
+        "display": { "value": "initial" },
         "icon": {
           "align": {
             "value": "center"
-          }
+          },
+          "margin-inline-start": { "value": "{denhaag.space.inline.2xs}" }
         }
       }
     }
