@@ -60,15 +60,22 @@ li .denhaag-link__icon {
 
 .denhaag-link--external {
   --denhaag-link-icon-align: var(--denhaag-link-external-icon-align);
+}
 
+.utrecht-paragraph .denhaag-link--external,
+.denhaag-unordered-list li > .denhaag-link--external,
+.denhaag-ordered-list li > .denhaag-link--external {
   display: var(--denhaag-link-external-display, initial);
 }
 
-.denhaag-link--external .denhaag-link__icon {
+.utrecht-paragraph .denhaag-link--external .denhaag-link__icon,
+.denhaag-unordered-list .denhaag-link--external .denhaag-link__icon,
+.denhaag-ordered-list.denhaag-link--external .denhaag-link__icon {
   margin-inline-start: var(--denhaag-link-external-icon-margin-inline-start, 0.25rem);
 }
 
-li > .denhaag-link--external .denhaag-icon {
+.denhaag-unordered-list li > .denhaag-link--external .denhaag-icon,
+.denhaag-ordered-list li > .denhaag-link--external .denhaag-icon {
   --denhaag-listitem-link-external-icon-size: calc(var(--denhaag-link-icon-size) - 0.3125rem);
 
   width: var(--denhaag-listitem-link-external-icon-size, 0.9375rem);
