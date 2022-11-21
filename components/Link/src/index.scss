@@ -86,7 +86,7 @@ li .denhaag-link__icon {
 
 /* undo change .denhaag-card-authentication */
 /* stylelint-disable-next-line no-descending-specificity */
-.denhaag-card-authentication .denhaag-link__icon {
+.denhaag-card-authentication .denhaag-link--external .denhaag-link__icon {
   --denhaag-link-with-icon-vertical-align: text-top;
 
   margin-inline-start: unset;
