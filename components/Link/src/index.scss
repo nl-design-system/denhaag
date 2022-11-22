@@ -62,6 +62,7 @@ li .denhaag-link__icon {
   --denhaag-link-icon-align: var(--denhaag-link-external-icon-align);
 }
 
+.denhaag-table__cell .denhaag-link--external,
 .utrecht-paragraph .denhaag-link--external,
 .denhaag-unordered-list li > .denhaag-link--external,
 .denhaag-ordered-list li > .denhaag-link--external {
@@ -74,6 +75,7 @@ li .denhaag-link__icon {
   display: inline-flex;
 }
 
+.denhaag-table__cell .denhaag-link--external .denhaag-link__icon,
 .utrecht-paragraph .denhaag-link--external .denhaag-link__icon,
 .denhaag-unordered-list .denhaag-link--external .denhaag-link__icon,
 .denhaag-ordered-list .denhaag-link--external .denhaag-link__icon {
