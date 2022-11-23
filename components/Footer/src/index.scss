@@ -1,0 +1,68 @@
+.denhaag-footer {
+  --utrecht-paragraph-color: #fff;
+  --utrecht-paragraph-font-size: 16px;
+  --utrecht-paragraph-line-height: normal;
+  --utrecht-paragraph-margin-block-start: 12px;
+  --utrecht-paragraph-margin-block-end: 12px;
+
+  background-color: #4b4b4b;
+
+  .denhaag-footer__mega {
+    background-color: var(--denhaag-color-grey-5);
+  }
+
+  .denhaag-list--vertical {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media (min-width: 768px) {
+      grid-template-columns: unset;
+      grid-auto-flow: column;
+    }
+  }
+
+  .denhaag-link {
+    color: #fff;
+    font-size: 16px;
+    text-decoration-line: none;
+
+    &:hover {
+      text-decoration-line: underline;
+    }
+  }
+
+  .denhaag-footer-contact__container {
+    display: grid;
+  }
+
+  .denhaag-footer-legal__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  .denhaag-list__item:nth-child(1) {
+    padding-inline-start: 0;
+  }
+
+  .denhaag-footer__follow-us-list {
+    display: flex;
+    list-style: none;
+    padding-inline-start: 0;
+
+    .denhaag-footer__follow-us-list-item {
+      margin-inline-start: 12px;
+      margin-inline-end: 12px;
+      color: #fff;
+
+      .denhaag-footer__follow-us-icon {
+        fill: #fff;
+        color: #fff;
+      }
+    }
+  }
+}
