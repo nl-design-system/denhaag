@@ -33,9 +33,9 @@ import readme from "../../README.md";
       <label class="denhaag-form-control-label">
         <span class="denhaag-form-control-label__input">
           <span class="denhaag-radio">
-            <input id="radio-1" class="denhaag-radio__input" type="radio" name="radio" value="check" />
+            <input id="radio-default" class="denhaag-radio__input" type="radio" name="radio-default" value="check" />
             <span class="denhaag-radio__icon">
-              <span className="denhaag-radio__icon-inner"></span>
+              <span class="denhaag-radio__icon-inner"></span>
             </span>
           </span>
         </span>
@@ -54,9 +54,15 @@ import readme from "../../README.md";
   <Story name="Without label">
     {() => (
       <span class="denhaag-radio">
-        <input id="radio-1" class="denhaag-radio__input" type="radio" name="radio" value="check" />
+        <input
+          id="radio-without-label"
+          class="denhaag-radio__input"
+          type="radio"
+          name="radio-without-label"
+          value="check"
+        />
         <span class="denhaag-radio__icon">
-          <span className="denhaag-radio__icon-inner"></span>
+          <span class="denhaag-radio__icon-inner"></span>
         </span>
       </span>
     )}
@@ -74,9 +80,48 @@ import readme from "../../README.md";
       <label class="denhaag-form-control-label denhaag-form-control-label--disabled">
         <span class="denhaag-form-control-label__input">
           <span class="denhaag-radio">
-            <input id="radio-1" class="denhaag-radio__input" type="radio" name="radio" value="check" disabled />
+            <input
+              id="radio-disabled"
+              class="denhaag-radio__input"
+              type="radio"
+              name="radio-disabled"
+              value="check"
+              disabled
+            />
             <span class="denhaag-radio__icon">
-              <span className="denhaag-radio__icon-inner"></span>
+              <span class="denhaag-radio__icon-inner"></span>
+            </span>
+          </span>
+        </span>
+        <span class="denhaag-form-control-label__label">Radio Gaga</span>
+      </label>
+    )}
+  </Story>
+  {/* eslint-enable jsx-a11y/label-has-associated-control */}
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Disabled Checked
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  {/* eslint-disable jsx-a11y/label-has-associated-control */}
+  <Story name="Disabled Checked">
+    {() => (
+      <label class="denhaag-form-control-label denhaag-form-control-label--disabled">
+        <span class="denhaag-form-control-label__input">
+          <span class="denhaag-radio">
+            <input
+              id="radio-disabled-checked"
+              class="denhaag-radio__input"
+              type="radio"
+              name="radio-disabled-checked"
+              value="check"
+              disabled
+              checked
+            />
+            <span class="denhaag-radio__icon">
+              <span class="denhaag-radio__icon-inner"></span>
             </span>
           </span>
         </span>
@@ -98,9 +143,9 @@ import readme from "../../README.md";
       <label class="denhaag-form-control-label">
         <span class="denhaag-form-control-label__input">
           <span class="denhaag-radio denhaag-radio--error">
-            <input id="radio-1" class="denhaag-radio__input" type="radio" name="radio" value="check" />
+            <input id="radio-error" class="denhaag-radio__input" type="radio" name="radio-error" value="check" />
             <span class="denhaag-radio__icon">
-              <span className="denhaag-radio__icon-inner"></span>
+              <span class="denhaag-radio__icon-inner"></span>
             </span>
           </span>
         </span>
@@ -125,9 +170,9 @@ import readme from "../../README.md";
           <label class="denhaag-form-control-label">
             <span class="denhaag-form-control-label__input">
               <span class="denhaag-radio">
-                <input id="radio-1" class="denhaag-radio__input" type="radio" name="radio" value="gaga" />
+                <input id="radio-group-1" class="denhaag-radio__input" type="radio" name="radio-group" value="gaga" />
                 <span class="denhaag-radio__icon">
-                  <span className="denhaag-radio__icon-inner"></span>
+                  <span class="denhaag-radio__icon-inner"></span>
                 </span>
               </span>
             </span>
@@ -136,9 +181,9 @@ import readme from "../../README.md";
           <label class="denhaag-form-control-label">
             <span class="denhaag-form-control-label__input">
               <span class="denhaag-radio">
-                <input id="radio-2" class="denhaag-radio__input" type="radio" name="radio" value="googoo" />
+                <input id="radio-group-2" class="denhaag-radio__input" type="radio" name="radio-group" value="googoo" />
                 <span class="denhaag-radio__icon">
-                  <span className="denhaag-radio__icon-inner"></span>
+                  <span class="denhaag-radio__icon-inner"></span>
                 </span>
               </span>
             </span>
@@ -147,9 +192,9 @@ import readme from "../../README.md";
           <label class="denhaag-form-control-label">
             <span class="denhaag-form-control-label__input">
               <span class="denhaag-radio">
-                <input id="radio-3" class="denhaag-radio__input" type="radio" name="radio" value="gogol" />
+                <input id="radio-group-3" class="denhaag-radio__input" type="radio" name="radio-group" value="gogol" />
                 <span class="denhaag-radio__icon">
-                  <span className="denhaag-radio__icon-inner"></span>
+                  <span class="denhaag-radio__icon-inner"></span>
                 </span>
               </span>
             </span>
@@ -179,9 +224,15 @@ import readme from "../../README.md";
           <label class="denhaag-form-control-label">
             <span class="denhaag-form-control-label__input">
               <span class="denhaag-radio denhaag-radio--error">
-                <input id="radio-1" class="denhaag-radio__input" type="radio" name="radio" value="gaga" />
+                <input
+                  id="radio-group-with-error-1"
+                  class="denhaag-radio__input"
+                  type="radio"
+                  name="radio-group-with-error"
+                  value="gaga"
+                />
                 <span class="denhaag-radio__icon">
-                  <span className="denhaag-radio__icon-inner"></span>
+                  <span class="denhaag-radio__icon-inner"></span>
                 </span>
               </span>
             </span>
@@ -190,9 +241,15 @@ import readme from "../../README.md";
           <label class="denhaag-form-control-label">
             <span class="denhaag-form-control-label__input">
               <span class="denhaag-radio denhaag-radio--error">
-                <input id="radio-2" class="denhaag-radio__input" type="radio" name="radio" value="googoo" />
+                <input
+                  id="radio-group-with-error-2"
+                  class="denhaag-radio__input"
+                  type="radio"
+                  name="radio-group-with-error"
+                  value="googoo"
+                />
                 <span class="denhaag-radio__icon">
-                  <span className="denhaag-radio__icon-inner"></span>
+                  <span class="denhaag-radio__icon-inner"></span>
                 </span>
               </span>
             </span>
@@ -201,9 +258,15 @@ import readme from "../../README.md";
           <label class="denhaag-form-control-label">
             <span class="denhaag-form-control-label__input">
               <span class="denhaag-radio denhaag-radio--error">
-                <input id="radio-3" class="denhaag-radio__input" type="radio" name="radio" value="gogol" />
+                <input
+                  id="radio-group-with-error-3"
+                  class="denhaag-radio__input"
+                  type="radio"
+                  name="radio-group-with-error"
+                  value="gogol"
+                />
                 <span class="denhaag-radio__icon">
-                  <span className="denhaag-radio__icon-inner"></span>
+                  <span class="denhaag-radio__icon-inner"></span>
                 </span>
               </span>
             </span>
@@ -214,6 +277,36 @@ import readme from "../../README.md";
           Description
         </span>
       </fieldset>
+    )}
+  </Story>
+  {/* eslint-enable jsx-a11y/label-has-associated-control */}
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Reduced motion
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  {/* eslint-disable jsx-a11y/label-has-associated-control */}
+  <Story name="Reduced Motion">
+    {() => (
+      <label class="denhaag-form-control-label">
+        <span class="denhaag-form-control-label__input">
+          <span class="denhaag-radio denhaag-radio--reduced-motion">
+            <input
+              id="radio-reduced-motion"
+              class="denhaag-radio__input"
+              type="radio"
+              name="radio-reduced-motion"
+              value="check"
+            />
+            <span class="denhaag-radio__icon">
+              <span class="denhaag-radio__icon-inner"></span>
+            </span>
+          </span>
+        </span>
+        <span class="denhaag-form-control-label__label">Radio with reduced motion</span>
+      </label>
     )}
   </Story>
   {/* eslint-enable jsx-a11y/label-has-associated-control */}
