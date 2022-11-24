@@ -2,17 +2,23 @@
   "denhaag": {
     "card-news": {
       "border": { "value": "1px solid {denhaag.color.grey.2}" },
-      "box-shadow": { "value": "0 0 0.5rem {denhaag.color.grey.2}" },
+      "box-shadow": { "value": "0 -0.25rem 0.75rem -0.1875rem {denhaag.color.grey.2}" },
       "gap": { "value": "{denhaag.space.block.md}" },
       "text-decoration": { "value": "none" },
       "padding": { "value": "{denhaag.space.block.md}" },
       "margin": { "value": "0" },
       "outline": { "value": "{denhaag.link.focus.outline}" },
+      "transition": {
+        "timing-function": { "value": "ease-in-out" },
+        "duration": { "value": "200ms" }
+      },
       "image": {
-        "width": { "value": "100%" },
-        "height": { "value": "auto" },
         "object-fit": { "value": "cover" },
-        "aspect-ratio": { "value": "16 / 9" }
+        "aspect-ratio": { "value": "16 / 9" },
+        "container": {
+          "width": { "value": "100%" },
+          "height": { "value": "auto" }
+        }
       },
       "content": {
         "padding": { "value": "0.75rem" }
