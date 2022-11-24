@@ -5,11 +5,19 @@
       "background-color": { "value": "{denhaag.color.white}" },
       "border-width": { "value": "{utrecht.custom-checkbox.border-width}" },
       "border-color": { "value": "{utrecht.custom-checkbox.border-color}" },
+      "transition": {
+        "duration": {
+          "value": "250ms"
+        },
+        "timing-function": {
+          "value": "ease-in-out"
+        }
+      },
       "checked": {
         "background-color": { "value": "{utrecht.custom-checkbox.checked.background-color}" },
         "border-color": { "value": "{utrecht.custom-checkbox.checked.border-color}" },
         "inner": {
-          "size": { "value": "6px" },
+          "size": { "value": "8px" },
           "background-color": { "value": "{denhaag.color.white}" }
         },
         "invalid": {
