@@ -166,6 +166,7 @@
   position: relative;
   transition: all var(--denhaag-dynamic-content-card-transition-timing-function, ease-in-out)
     var(--denhaag-dynamic-content-card-transition-duration, 200ms);
+  align-self: end;
 }
 
 .denhaag-dynamic-content__card-icon::before {
