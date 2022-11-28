@@ -21,7 +21,12 @@
           "background-color": { "value": "{denhaag.color.red.4}" },
           "border-color": { "value": "{denhaag.color.red.4}" }
         }
-      }
+      },
+      "overflow": { "value": "hidden" },
+      "size": { "value": "{denhaag.space.block.lg}" },
+      "border-radius": { "value": "{enhaag.border.radius}" },
+      "transition-duration": { "value": "200ms" },
+      "timing-function": { "value": "ease-in" }
     }
   }
 }
