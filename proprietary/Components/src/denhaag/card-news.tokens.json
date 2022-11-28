@@ -8,6 +8,7 @@
       "padding": { "value": "{denhaag.space.block.md}" },
       "margin": { "value": "0" },
       "outline": { "value": "{denhaag.link.focus.outline}" },
+      "translate": { "value": "translateY(-0.125rem)" },
       "transition": {
         "timing-function": { "value": "ease-in-out" },
         "duration": { "value": "200ms" }
@@ -27,9 +28,11 @@
         "margin-block-end": { "value": "{denhaag.space.block.xs}" }
       },
       "icon": {
-        "height": { "value": "{denhaag.space.block.md}" },
-        "text-align": { "value": "right" },
-        "color": { "value": "{denhaag.color.blue.3}" }
+        "size": { "value": "{denhaag.space.block.xl}" },
+        "float": { "value": "right" },
+        "clear": { "value": "both" },
+        "color": { "value": "{denhaag.color.blue.3}" },
+        "border-radius": { "value": "{denhaag.border.radius}" }
       }
     }
   }

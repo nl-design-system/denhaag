@@ -2,6 +2,10 @@
   "denhaag": {
     "dynamic-content": {
       "card": {
+        "transition": {
+          "timing-function": { "value": "ease-in-out" },
+          "duration": { "value": "200ms" }
+        },
         "content": {
           "color": {
             "value": "{denhaag.color.grey.4}"
@@ -59,8 +63,10 @@
           "value": "{denhaag.color.blue.3}"
         },
         "opacity": {
-          "value": 0
-        }
+          "value": "0%"
+        },
+        "size": { "value": "{denhaag.space.block.xl}" },
+        "border-radius": { "value": "denhaag.border.radius" }
       },
       "image": {
         "background-color": {
@@ -75,6 +81,10 @@
               "value": "{denhaag.space.inline.xl}"
             }
           }
+        },
+        "container": {
+          "width": { "value": "100%" },
+          "height": { "value": "auto" }
         }
       },
       "list": {
@@ -125,7 +135,7 @@
       "hover": {
         "icon": {
           "opacity": {
-            "value": 1
+            "value": "100%"
           }
         }
       },
@@ -135,7 +145,7 @@
         },
         "icon": {
           "opacity": {
-            "value": 1
+            "value": "100%"
           }
         }
       }
