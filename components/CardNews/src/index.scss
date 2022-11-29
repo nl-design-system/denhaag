@@ -4,22 +4,22 @@
 
   border: var(--denhaag-card-news-border);
   display: flex;
-  gap: var(--denhaag-card-news-gap);
   flex-direction: column;
-  text-decoration: var(--denhaag-card-news-text-decoration);
-  padding-block-start: var(--denhaag-card-news-padding);
-  padding-block-end: var(--denhaag-card-news-padding);
-  padding-inline-start: var(--denhaag-card-news-padding);
-  padding-inline-end: var(--denhaag-card-news-padding);
+  gap: var(--denhaag-card-news-gap);
+  height: var(--denhaag-card-news-height);
   margin-inline-start: var(--denhaag-card-news-margin);
   margin-inline-end: var(--denhaag-card-news-margin);
   margin-block-start: var(--denhaag-card-news-margin);
   margin-block-end: var(--denhaag-card-news-margin);
-  width: var(--denhaag-card-news-width);
-  height: var(--denhaag-card-news-height);
+  padding-block-start: var(--denhaag-card-news-padding);
+  padding-block-end: var(--denhaag-card-news-padding);
+  padding-inline-start: var(--denhaag-card-news-padding);
+  padding-inline-end: var(--denhaag-card-news-padding);
   position: relative;
+  text-decoration: var(--denhaag-card-news-text-decoration);
   transition: all var(--denhaag-card-news-transition-timing-function, ease-in-out)
     var(--denhaag-card-news-transition-duration, 200ms);
+  width: var(--denhaag-card-news-width);
 
   @media (prefers-reduced-motion: reduce) {
     --denhaag-card-news-transition-duration: 0ms;
@@ -46,22 +46,22 @@
   --denhaag-card-news-icon-opacity: 100%;
   --denhaag-card-news-translate: 0;
 
-  transition: none;
+  transition: var(--denhaag-card-news-focus-transition);
 }
 
 .denhaag-card-news__image-container {
   height: var(--denhaag-card-news-image-container-height);
+  overflow: var(--denhaag-card-news-image-container-overflow);
   width: var(--denhaag-card-news-image-container-width);
-  overflow: hidden;
 }
 
 .denhaag-card-news__image {
   aspect-ratio: var(--denhaag-card-news-image-aspect-ratio);
   height: inherit;
   object-fit: var(--denhaag-card-news-image-object-fit);
-  width: inherit;
-  transition: all var(--denhaag-card-news-transition-timing-function, ease-in-out)
+  transition: transform var(--denhaag-card-news-transition-timing-function, ease-in-out)
     var(--denhaag-card-news-transition-duration, 200ms);
+  width: inherit;
 }
 
 .denhaag-card-news--hover .denhaag-card-news__image,
@@ -72,7 +72,7 @@
 .denhaag-card-news .denhaag-icon {
   --denhaag-card-news-icon-translate: translateX(-0.1875rem);
 
-  transition: all var(--denhaag-card-news-transition-timing-function, ease-in-out)
+  transition: transform var(--denhaag-card-news-transition-timing-function, ease-in-out)
     var(--denhaag-card-news-transition-duration, 200ms);
   transform: var(--denhaag-card-news-icon-translate);
 }
@@ -105,15 +105,15 @@
 }
 
 .denhaag-card-news__icon {
-  opacity: var(--denhaag-card-news-icon-opacity);
-  height: var(--denhaag-card-news-icon-size);
-  width: var(--denhaag-card-news-icon-size);
-  float: var(--denhaag-card-news-icon-float);
   clear: var(--denhaag-card-news-icon-clear);
   color: var(--denhaag-card-news-icon-color);
+  float: var(--denhaag-card-news-icon-float);
+  height: var(--denhaag-card-news-icon-size);
+  opacity: var(--denhaag-card-news-icon-opacity);
   position: relative;
-  transition: all var(--denhaag-card-news-transition-timing-function, ease-in-out)
+  transition: opacity var(--denhaag-card-news-transition-timing-function, ease-in-out)
     var(--denhaag-card-news-transition-duration, 200ms);
+  width: var(--denhaag-card-news-icon-size);
 }
 
 .denhaag-card-news--hover .denhaag-card-news__icon,
@@ -124,13 +124,13 @@
 .denhaag-card-news__icon::before {
   content: "";
   background-color: var(--denhaag-color-blue-3);
-  height: 0.125rem;
-  width: 0.5rem;
+  border-radius: var(--denhaag-card-news-border-radius, var(--denhaag-border-radius));
   display: block;
+  height: 0.125rem;
+  left: 0;
   position: absolute;
   top: 0.6875rem;
-  left: 0;
-  border-radius: var(--denhaag-card-news-border-radius, var(--denhaag-border-radius));
+  width: 0.5rem;
 }
 
 .denhaag-card-news__link {
