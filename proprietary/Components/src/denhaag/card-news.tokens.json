@@ -1,32 +1,39 @@
 {
   "denhaag": {
-    "checkbox": {
-      "checked": {
-        "invalid": {
-          "background-color": { "value": "{denhaag.color.red.3}" }
-        },
-        "disabled": {
-          "background-color": { "value": "{denhaag.color.grey.2}" },
-          "border-color": { "value": "{denhaag.color.grey.2}" }
+    "card-news": {
+      "border": { "value": "1px solid {denhaag.color.grey.2}" },
+      "box-shadow": { "value": "0 -0.25rem 0.75rem -0.1875rem {denhaag.color.grey.2}" },
+      "gap": { "value": "{denhaag.space.block.md}" },
+      "text-decoration": { "value": "none" },
+      "padding": { "value": "{denhaag.space.block.md}" },
+      "margin": { "value": "0" },
+      "outline": { "value": "{denhaag.link.focus.outline}" },
+      "translate": { "value": "translateY(-0.125rem)" },
+      "transition": {
+        "timing-function": { "value": "ease-in-out" },
+        "duration": { "value": "200ms" }
+      },
+      "image": {
+        "object-fit": { "value": "cover" },
+        "aspect-ratio": { "value": "16 / 9" },
+        "container": {
+          "width": { "value": "100%" },
+          "height": { "value": "auto" }
         }
       },
-      "hover": {
-        "border-color": { "value": "{denhaag.color.grey.4}" },
-        "border-width": { "value": "1px" },
-        "checked": {
-          "background-color": { "value": "{denhaag.color.green.4}" },
-          "border-color": { "value": "{denhaag.color.green.4}" }
-        },
-        "invalid": {
-          "background-color": { "value": "{denhaag.color.red.4}" },
-          "border-color": { "value": "{denhaag.color.red.4}" }
-        }
+      "content": {
+        "padding": { "value": "0.75rem" }
       },
-      "overflow": { "value": "hidden" },
-      "size": { "value": "{denhaag.space.block.lg}" },
-      "border-radius": { "value": "0.1875rem" },
-      "transition-duration": { "value": "200ms" },
-      "timing-function": { "value": "ease-in" }
+      "text": {
+        "margin-block-end": { "value": "{denhaag.space.block.xs}" }
+      },
+      "icon": {
+        "size": { "value": "{denhaag.space.block.xl}" },
+        "float": { "value": "right" },
+        "clear": { "value": "both" },
+        "color": { "value": "{denhaag.color.blue.3}" },
+        "border-radius": { "value": "{denhaag.border.radius}" }
+      }
     }
   }
 }
