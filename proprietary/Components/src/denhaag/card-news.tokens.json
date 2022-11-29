@@ -2,24 +2,17 @@
   "denhaag": {
     "card-news": {
       "border": { "value": "1px solid {denhaag.color.grey.2}" },
-      "box-shadow": { "value": "0 -0.25rem 0.75rem -0.1875rem {denhaag.color.grey.2}" },
+      "box-shadow": { "value": "0 0 0.5rem {denhaag.color.grey.2}" },
       "gap": { "value": "{denhaag.space.block.md}" },
       "text-decoration": { "value": "none" },
       "padding": { "value": "{denhaag.space.block.md}" },
       "margin": { "value": "0" },
       "outline": { "value": "{denhaag.link.focus.outline}" },
-      "translate": { "value": "translateY(-0.125rem)" },
-      "transition": {
-        "timing-function": { "value": "ease-in-out" },
-        "duration": { "value": "200ms" }
-      },
       "image": {
+        "width": { "value": "100%" },
+        "height": { "value": "auto" },
         "object-fit": { "value": "cover" },
-        "aspect-ratio": { "value": "16 / 9" },
-        "container": {
-          "width": { "value": "100%" },
-          "height": { "value": "auto" }
-        }
+        "aspect-ratio": { "value": "16 / 9" }
       },
       "content": {
         "padding": { "value": "0.75rem" }
@@ -28,11 +21,9 @@
         "margin-block-end": { "value": "{denhaag.space.block.xs}" }
       },
       "icon": {
-        "size": { "value": "{denhaag.space.block.xl}" },
-        "float": { "value": "right" },
-        "clear": { "value": "both" },
-        "color": { "value": "{denhaag.color.blue.3}" },
-        "border-radius": { "value": "{denhaag.border.radius}" }
+        "height": { "value": "{denhaag.space.block.md}" },
+        "text-align": { "value": "right" },
+        "color": { "value": "{denhaag.color.blue.3}" }
       }
     }
   }
