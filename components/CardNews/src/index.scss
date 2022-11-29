@@ -122,9 +122,9 @@
 }
 
 .denhaag-card-news__icon::before {
-  content: "";
   background-color: var(--denhaag-color-blue-3);
   border-radius: var(--denhaag-card-news-border-radius, var(--denhaag-border-radius));
+  content: "";
   display: block;
   height: 0.125rem;
   left: 0;

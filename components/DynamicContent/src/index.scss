@@ -67,20 +67,20 @@
 
 .denhaag-dynamic-content__card-image-container {
   height: var(--denhaag-dynamic-content-image-container-height);
+  overflow: var(--denhaag-dynamic-content-image-container-overflow);
   width: var(--denhaag-dynamic-content-image-container-width);
-  overflow: hidden;
 }
 
 .denhaag-dynamic-content__card-image {
   aspect-ratio: 16 / 9;
   background: var(--denhaag-dynamic-content-image-background-color);
   object-fit: cover;
-  transition: all var(--denhaag-dynamic-content-card-transition-timing-function, ease-in-out)
+  transition: transform var(--denhaag-dynamic-content-card-transition-timing-function, ease-in-out)
     var(--denhaag-dynamic-content-transition-card-duration, 200ms);
 }
 
 .denhaag-dynamic-content__card--reduced-motion .denhaag-dynamic-content__card-image {
-  transition: none;
+  transition-duration: var(--denhaag-dynamic-content-card-transition-duration);
 }
 
 .denhaag-dynamic-content__card--hover .denhaag-dynamic-content__card-image,
@@ -159,26 +159,26 @@
 }
 
 .denhaag-dynamic-content__card-icon {
-  opacity: var(--denhaag-dynamic-content-icon-opacity);
-  height: var(--denhaag-dynamic-content-icon-size, var(--denhaag-space-block-xl));
-  width: var(--denhaag-dynamic-content-icon-size, var(--denhaag-space-block-xl));
-  color: var(--denhaag-dynamic-content-icon-color);
-  position: relative;
-  transition: all var(--denhaag-dynamic-content-card-transition-timing-function, ease-in-out)
-    var(--denhaag-dynamic-content-card-transition-duration, 200ms);
   align-self: end;
+  color: var(--denhaag-dynamic-content-icon-color);
+  height: var(--denhaag-dynamic-content-icon-size, var(--denhaag-space-block-xl));
+  opacity: var(--denhaag-dynamic-content-icon-opacity);
+  position: relative;
+  transition: opacity var(--denhaag-dynamic-content-card-transition-timing-function, ease-in-out)
+    var(--denhaag-dynamic-content-card-transition-duration, 200ms);
+  width: var(--denhaag-dynamic-content-icon-size, var(--denhaag-space-block-xl));
 }
 
 .denhaag-dynamic-content__card-icon::before {
-  content: "";
   background-color: var(--denhaag-color-blue-3);
-  height: 0.125rem;
-  width: 0.5rem;
+  border-radius: var(--denhaag-dynamic-content-icon-border-radius, var(--denhaag-border-radius));
+  content: "";
   display: block;
+  height: 0.125rem;
+  left: 0;
   position: absolute;
   top: 0.6875rem;
-  left: 0;
-  border-radius: var(--denhaag-dynamic-content-icon-border-radius, var(--denhaag-border-radius));
+  width: 0.5rem;
 }
 
 .denhaag-dynamic-content__card--hover .denhaag-dynamic-content__card-icon,

@@ -84,7 +84,8 @@
         },
         "container": {
           "width": { "value": "100%" },
-          "height": { "value": "auto" }
+          "height": { "value": "auto" },
+          "overflow": { "value": "hidden" }
         }
       },
       "list": {
