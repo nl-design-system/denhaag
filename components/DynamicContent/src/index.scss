@@ -34,8 +34,6 @@
   flex-direction: column;
   gap: var(--denhaag-dynamic-content-card-gap);
   position: relative;
-  transition: all var(--denhaag-dynamic-content-card-transition-timing-function, ease-in-out)
-    var(--denhaag-dynamic-content-card-transition-duration, 200ms);
 
   @media (prefers-reduced-motion: reduce) {
     --denhaag-dynamic-content-card-transition-duration: 0ms;
@@ -100,8 +98,10 @@
 
   align-self: end;
   color: var(--denhaag-dynamic-content-icon-color);
-  transition: all var(--denhaag-dynamic-content-card-transition-timing-function, ease-in-out)
-    var(--denhaag-dynamic-content-card-transition-duration, 200ms);
+  transition: transform var(--denhaag-dynamic-content-card-transition-timing-function, ease-in-out)
+      var(--denhaag-dynamic-content-card-transition-duration, 200ms),
+    opacity var(--denhaag-dynamic-content-card-transition-timing-function, ease-in-out)
+      var(--denhaag-dynamic-content-card-transition-duration, 200ms);
   transform: var(--denhaag-dynamic-content-card-icon-translate);
 }
 

@@ -17,8 +17,10 @@
   padding-inline-end: var(--denhaag-card-news-padding);
   position: relative;
   text-decoration: var(--denhaag-card-news-text-decoration);
-  transition: all var(--denhaag-card-news-transition-timing-function, ease-in-out)
-    var(--denhaag-card-news-transition-duration, 200ms);
+  transition: box-shadow var(--denhaag-card-news-transition-timing-function, ease-in-out)
+      var(--denhaag-card-news-transition-duration, 200ms),
+    transform var(--denhaag-card-news-transition-timing-function, ease-in-out)
+      var(--denhaag-card-news-transition-duration, 200ms);
   width: var(--denhaag-card-news-width);
 
   @media (prefers-reduced-motion: reduce) {
