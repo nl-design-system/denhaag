@@ -28,15 +28,26 @@
 }
 
 .denhaag-dynamic-content__card {
+  --denhaag-dynamic-content-card-icon-opacity: 0;
+
   display: flex;
   flex-direction: column;
   gap: var(--denhaag-dynamic-content-card-gap);
   position: relative;
+
+  @media (prefers-reduced-motion: reduce) {
+    --denhaag-dynamic-content-card-transition-duration: 0ms;
+  }
+}
+
+.denhaag-dynamic-content__card--reduced-motion {
+  --denhaag-dynamic-content-card-transition-duration: 0ms;
 }
 
 .denhaag-dynamic-content__card--hover,
 .denhaag-dynamic-content__card:hover {
   --denhaag-dynamic-content-icon-opacity: var(--denhaag-dynamic-content-hover-icon-opacity);
+  --denhaag-dynamic-content-image-translate: translateY(-0.125rem);
 }
 
 .denhaag-dynamic-content__card-link {
@@ -52,10 +63,27 @@
   }
 }
 
+.denhaag-dynamic-content__card-image-container {
+  height: var(--denhaag-dynamic-content-image-container-height);
+  overflow: var(--denhaag-dynamic-content-image-container-overflow);
+  width: var(--denhaag-dynamic-content-image-container-width);
+}
+
 .denhaag-dynamic-content__card-image {
   aspect-ratio: 16 / 9;
   background: var(--denhaag-dynamic-content-image-background-color);
   object-fit: cover;
+  transition: transform var(--denhaag-dynamic-content-card-transition-timing-function, ease-in-out)
+    var(--denhaag-dynamic-content-transition-card-duration, 200ms);
+}
+
+.denhaag-dynamic-content__card--reduced-motion .denhaag-dynamic-content__card-image {
+  transition-duration: var(--denhaag-dynamic-content-card-transition-duration);
+}
+
+.denhaag-dynamic-content__card--hover .denhaag-dynamic-content__card-image,
+.denhaag-dynamic-content__card:hover .denhaag-dynamic-content__card-image {
+  transform: var(--denhaag-dynamic-content-image-translate) scale(1.02);
 }
 
 .denhaag-dynamic-content__card-image--placeholder {
@@ -66,8 +94,20 @@
 }
 
 .denhaag-dynamic-content__card .denhaag-icon {
+  --denhaag-dynamic-content-card-icon-translate: translateX(-0.1875rem);
+
   align-self: end;
   color: var(--denhaag-dynamic-content-icon-color);
+  transition: transform var(--denhaag-dynamic-content-card-transition-timing-function, ease-in-out)
+      var(--denhaag-dynamic-content-card-transition-duration, 200ms),
+    opacity var(--denhaag-dynamic-content-card-transition-timing-function, ease-in-out)
+      var(--denhaag-dynamic-content-card-transition-duration, 200ms);
+  transform: var(--denhaag-dynamic-content-card-icon-translate);
+}
+
+.denhaag-dynamic-content__card--hover .denhaag-icon,
+.denhaag-dynamic-content__card:hover .denhaag-icon {
+  --denhaag-dynamic-content-card-icon-translate: translateX(0);
 }
 
 .denhaag-dynamic-content__card--focus,
@@ -77,8 +117,9 @@
 
   outline: none;
 
+  /* stylelint-disable-next-line no-descending-specificity */
   & .denhaag-icon,
-  & .denhaag-dynamic-content__card-image {
+  & .denhaag-dynamic-content__card-image-container {
     outline: var(--denhaag-dynamic-content-focus-outline);
   }
 }
@@ -115,6 +156,34 @@
   margin-block-start: 0;
   margin-block-end: 0;
   word-break: break-word; // Fixes hypens issue for Chrome & safari on windows device.
+}
+
+.denhaag-dynamic-content__card-icon {
+  align-self: end;
+  color: var(--denhaag-dynamic-content-icon-color);
+  height: var(--denhaag-dynamic-content-icon-size, var(--denhaag-space-block-xl));
+  opacity: var(--denhaag-dynamic-content-icon-opacity);
+  position: relative;
+  transition: opacity var(--denhaag-dynamic-content-card-transition-timing-function, ease-in-out)
+    var(--denhaag-dynamic-content-card-transition-duration, 200ms);
+  width: var(--denhaag-dynamic-content-icon-size, var(--denhaag-space-block-xl));
+}
+
+.denhaag-dynamic-content__card-icon::before {
+  background-color: var(--denhaag-color-blue-3);
+  border-radius: var(--denhaag-dynamic-content-icon-border-radius, var(--denhaag-border-radius));
+  content: "";
+  display: block;
+  height: 0.125rem;
+  left: 0;
+  position: absolute;
+  top: 0.6875rem;
+  width: 0.5rem;
+}
+
+.denhaag-dynamic-content__card--hover .denhaag-dynamic-content__card-icon,
+.denhaag-dynamic-content__card:hover .denhaag-dynamic-content__card-icon {
+  --denhaag-dynamic-content-card-icon-opacity: 100%;
 }
 
 .denhaag-dynamic-content__pagination {

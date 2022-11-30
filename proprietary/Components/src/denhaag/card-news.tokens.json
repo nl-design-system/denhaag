@@ -2,28 +2,41 @@
   "denhaag": {
     "card-news": {
       "border": { "value": "1px solid {denhaag.color.grey.2}" },
-      "box-shadow": { "value": "0 0 0.5rem {denhaag.color.grey.2}" },
-      "gap": { "value": "{denhaag.space.block.md}" },
-      "text-decoration": { "value": "none" },
-      "padding": { "value": "{denhaag.space.block.md}" },
-      "margin": { "value": "0" },
-      "outline": { "value": "{denhaag.link.focus.outline}" },
-      "image": {
-        "width": { "value": "100%" },
-        "height": { "value": "auto" },
-        "object-fit": { "value": "cover" },
-        "aspect-ratio": { "value": "16 / 9" }
-      },
+      "box-shadow": { "value": "0 -0.25rem 0.75rem -0.1875rem {denhaag.color.grey.2}" },
       "content": {
         "padding": { "value": "0.75rem" }
       },
+      "focus": {
+        "transition": { "value": "none" }
+      },
+      "gap": { "value": "{denhaag.space.block.md}" },
+      "icon": {
+        "border-radius": { "value": "0.1875rem" },
+        "clear": { "value": "both" },
+        "color": { "value": "{denhaag.color.blue.3}" },
+        "float": { "value": "right" },
+        "size": { "value": "{denhaag.space.block.xl}" }
+      },
+      "image": {
+        "aspect-ratio": { "value": "16 / 9" },
+        "container": {
+          "height": { "value": "auto" },
+          "width": { "value": "100%" },
+          "overflow": { "value": "hidden" }
+        },
+        "object-fit": { "value": "cover" }
+      },
+      "margin": { "value": "0" },
+      "outline": { "value": "{denhaag.link.focus.outline}" },
+      "padding": { "value": "{denhaag.space.block.md}" },
       "text": {
         "margin-block-end": { "value": "{denhaag.space.block.xs}" }
       },
-      "icon": {
-        "height": { "value": "{denhaag.space.block.md}" },
-        "text-align": { "value": "right" },
-        "color": { "value": "{denhaag.color.blue.3}" }
+      "text-decoration": { "value": "none" },
+      "translate": { "value": "translateY(-0.125rem)" },
+      "transition": {
+        "duration": { "value": "200ms" },
+        "timing-function": { "value": "ease-in-out" }
       }
     }
   }
