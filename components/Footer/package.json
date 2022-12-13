@@ -28,6 +28,9 @@
     "build": "rollup -c ../../rollup.config.js",
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
+  "dependencies": {
+    "@utrecht/component-library-css": "1.0.0-alpha.387"
+  },
   "devDependencies": {
     "@gemeente-denhaag/baseprops": "0.2.3-alpha.269"
   }

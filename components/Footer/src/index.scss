@@ -7,6 +7,17 @@
 
   background-color: #4b4b4b;
 
+  --utrecht-link-social-background-color: transparent;
+  --utrecht-link-social-border-color: transparent;
+  --utrecht-link-social-border-width: 5px;
+  --utrecht-list-social-item-margin-inline-end: 20px;
+  --utrecht-link-social-color: #fff;
+  --utrecht-link-social-hover-color: var(--denhaag-color-ocher-2);
+
+  .utrecht-list-social {
+    align-items: baseline;
+  }
+
   .denhaag-footer__mega {
     background-color: var(--denhaag-color-grey-5);
   }
@@ -15,7 +26,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media (min-width: 1280px) {
       grid-template-columns: unset;
       grid-auto-flow: column;
     }
@@ -31,16 +46,12 @@
     }
   }
 
-  .denhaag-footer-contact__container {
-    display: grid;
-  }
-
   .denhaag-footer-legal__container {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1280px) {
       flex-direction: row;
     }
   }
@@ -49,20 +60,36 @@
     padding-inline-start: 0;
   }
 
+  @media (max-width: 1279px) {
+    .denhaag-list__item {
+      padding-inline-start: 0;
+    }
+  }
+
   .denhaag-footer__follow-us-list {
+    align-items: baseline;
     display: flex;
+    justify-content: space-between;
     list-style: none;
     padding-inline-start: 0;
 
-    .denhaag-footer__follow-us-list-item {
-      margin-inline-start: 12px;
-      margin-inline-end: 12px;
-      color: #fff;
+    @media (min-width: 768px) {
+      justify-content: initial;
+    }
+  }
 
-      .denhaag-footer__follow-us-icon {
-        fill: #fff;
-        color: #fff;
-      }
+  .denhaag-footer-group {
+    display: grid;
+    gap: 32px;
+    padding-block-start: 40px;
+    padding-block-end: 40px;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }
