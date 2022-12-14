@@ -12,7 +12,7 @@
 .denhaag-process-steps__step + .denhaag-process-steps__step::after {
   content: "";
   position: absolute;
-  left: calc(max(var(--denhaag-process-steps-step-marker-size, 2em), 32px) / 2);
+  left: calc(var(--denhaag-process-steps-step-marker-size, 2em) / 2);
   top: calc(-1 * (var(--denhaag-process-steps-step-distance) + 10px));
   height: calc(var(--denhaag-process-steps-step-distance) + 10px);
   outline: 1px dashed var(--denhaag-process-steps-step-line-color);

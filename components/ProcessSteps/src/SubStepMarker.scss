@@ -14,10 +14,7 @@
   border-style: solid;
   border-color: var(--denhaag-process-steps-sub-step-marker-border-color);
   margin-inline-start: calc(
-    (
-        max(var(--denhaag-process-steps-step-marker-size, 2em), 32px) -
-          var(--denhaag-process-steps-sub-step-marker-size, 16px)
-      ) / 2
+    (var(--denhaag-process-steps-step-marker-size, 2em) - var(--denhaag-process-steps-sub-step-marker-size, 16px)) / 2
   );
 }
 
