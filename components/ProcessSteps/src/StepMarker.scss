@@ -13,14 +13,14 @@
   display: flex;
   flex-grow: 0;
   font-size: var(--denhaag-process-steps-step-marker-font-size);
-  font-weight: 400;
+  font-weight: var(--denhaag-process-steps-step-marker-font-weight, 400);
   inline-size: var(--denhaag-process-steps-step-marker-size, 2em);
   justify-content: center;
   margin-block-end: var(--denhaag-process-steps-step-marker-margin);
   margin-block-start: var(--denhaag-process-steps-step-marker-margin);
   padding-inline-end: 0;
-  min-inline-size: 32px;
-  min-block-size: 32px;
+  min-inline-size: var(--denhaag-process-steps-step-marker-size, 2em);
+  min-block-size: var(--denhaag-process-steps-step-marker-size, 2em);
 
   .denhaag-icon {
     block-size: 20px;
