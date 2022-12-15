@@ -1,0 +1,143 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+import { ProcessSteps } from "../index";
+import pkg from "../../package.json";
+
+export const exampleArgs = {
+  expandedSteps: ["deelname"],
+  steps: [
+    {
+      key: "deelname",
+      marker: 1,
+      title: "Deelname aan geluidsonderzoek",
+      status: "checked",
+      steps: [{ title: "Aanmelding ontvangen", status: "checked" }],
+    },
+    {
+      key: "onderzoek",
+      marker: 2,
+      title: "Onderzoek naar geluidsoverlast",
+      status: "current",
+      steps: [
+        { title: "Afspraak meten geluidsoverlast gemaakt", status: "checked" },
+        { title: "Geluidsoverlast gemeten" },
+        { title: "Onderzoek resultaten verwerkt" },
+      ],
+    },
+    { key: "uitvoeren", marker: 3, title: "Uitvoeren van maatregelen" },
+    { key: "klaar", marker: 4, title: "Maatregelen zijn uitgevoerd" },
+  ],
+};
+
+export const Template = (args) => {
+  return <ProcessSteps {...args}></ProcessSteps>;
+};
+
+<Meta
+  title="React/Navigation/Timeline Substatus"
+  component={ProcessSteps}
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "ALPHA",
+    },
+  }}
+/>
+
+## Stories
+
+### Default
+
+<Canvas>
+  <Story name="Default" args={exampleArgs}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Without Substeps
+
+<Canvas>
+  <Story
+    name="No Substeps"
+    args={{
+      steps: [
+        {
+          key: "getuigen-wijzigen",
+          marker: 1,
+          title: "Getuigen wijzigen of meer getuigen uitnodigen",
+          status: "checked",
+        },
+        {
+          key: "getuigen-definitief",
+          marker: 2,
+          title: "Getuigen zijn definitief en bevestigingen van getuigen ontvangen",
+          status: "current",
+        },
+        { key: "extras", marker: 3, title: "Eventuele extra's bestellen" },
+        { key: "trouwen", marker: 4, title: "Trouwen" },
+      ],
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### With metadata and dates
+
+<Canvas>
+  <Story
+    name="With metadata"
+    args={{
+      steps: [
+        {
+          key: "getuigen-wijzigen",
+          marker: 1,
+          title: "Getuigen wijzigen of meer getuigen uitnodigen",
+          status: "checked",
+          meta: (
+            <a className="utrecht-link" href="#">
+              Getuigen wijzigen of meer getuigen uitnodigen
+            </a>
+          ),
+          date: "Tussen vandaag en 24 maart 2021",
+        },
+        {
+          key: "getuigen-definitief",
+          marker: 2,
+          title: "Getuigen zijn definitief en bevestigingen van getuigen ontvangen",
+          status: "current",
+          steps: [{ title: "Getuigen aangemeld", status: "checked" }],
+          meta: "Getuigen zijn definitief en bevestigingen van getuigen ontvangen",
+          date: "Regel het vóór 24 maart 2021",
+        },
+        {
+          key: "extras",
+          marker: 3,
+          title: "Eventuele extra's bestellen",
+          meta: (
+            <a className="utrecht-link" href="#">
+              Eventuele extra's bestellen
+            </a>
+          ),
+          date: "Mogelijk tot 31 maart 2021",
+        },
+        {
+          key: "trouwen",
+          marker: 4,
+          title: "Trouwen",
+          meta: (
+            <p className="utrecht-paragraph">
+              Jullie gaan trouwen op de vierde verdieping van het{" "}
+              <a className="utrecht-link" href="#">
+                Stadskantoor Utrecht
+              </a>
+            </p>
+          ),
+          date: "Op 14 april 2021",
+        },
+      ],
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>

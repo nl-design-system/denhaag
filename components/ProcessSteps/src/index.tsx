@@ -1,94 +1,94 @@
-import React from 'react';
+import React, { Key, ReactNode } from 'react';
 import { Step } from './Step';
-import { StepExpandedIcon } from './StepExpandedIcon';
 import { StepList, StepListProps } from './StepList';
-import { StepSection } from './StepSection';
 import { StepHeader } from './StepHeader';
 import { StepHeading } from './StepHeading';
 import { StepMarker } from './StepMarker';
 import { SubStep } from './SubStep';
-import { SubStepList } from './SubStepList';
 import { SubStepMarker } from './SubStepMarker';
 import { SubStepHeading } from './SubStepHeading';
 
 import './index.scss';
+import { StepBody } from './StepBody';
+import { StepMeta } from './StepMeta';
+import { StepDetails } from './StepDetails';
 
-export interface ProcessStepsProps extends StepListProps {}
+interface StepProps {
+  key: Key;
+  title: string;
+  marker?: Key;
+  date?: string;
+  meta?: ReactNode;
+  steps?: Omit<StepProps, 'steps' | 'marker' | 'key'>[];
+  status?: 'checked' | 'unchecked' | 'current' | 'warning';
+}
 
-/**
- * The `Timeline` displays a progress through a sequence by breaking it up into
- * multiple logical and numbered steps. Use the timeline when a series of
- * information needs to be ordered by time (ascending or descending). It
- * represents the steps in a process in a chronological order. This process is
- * part of, for example, a request that the user has made.
- *
- * @param props The properties of a ProcessSteps component.
- * @constructor Constructs an instance of ProcessSteps.
- */
-export const ProcessSteps: React.FC<ProcessStepsProps> = ({ ...props }: ProcessStepsProps) => {
+export interface ProcessStepsProps extends StepListProps {
+  steps: StepProps[];
+  expandedSteps?: Key[];
+  disabledSteps?: Key[];
+}
+
+interface ProcessStepProps {
+  step: StepProps;
+  expanded?: boolean;
+  disabled?: boolean;
+}
+
+const ProcessStep = ({ step, expanded = false }: ProcessStepProps) => {
+  const expandable = !!step.steps?.length;
+
   return (
-    <StepList {...props}>
-      <Step checked expanded>
-        <StepSection>
-          <StepHeader>
-            <StepMarker>
-              <div>1</div>
-            </StepMarker>
-            <StepHeading>Deelname aan geluidsonderzoek</StepHeading>
-            <StepExpandedIcon />
+    <Step checked={step.status === 'checked'} current={step.status === 'current'} collapsed={expandable && !expanded}>
+      {expandable ? (
+        <>
+          <StepHeader aria-controls={`${step.key}--details`}>
+            <StepMarker>{step.marker || step.key}</StepMarker>
+            <StepHeading>{step.title}</StepHeading>
           </StepHeader>
-        </StepSection>
-        <SubStepList>
-          <SubStep>
-            <SubStepMarker />
-            <SubStepHeading>Aanmelding ontvangen</SubStepHeading>
-          </SubStep>
-        </SubStepList>
-      </Step>
-      <Step current expanded>
-        <StepSection>
+          <StepBody>
+            {step.meta && <StepMeta>{step.meta}</StepMeta>}
+            {step.date && <StepMeta date>{step.date}</StepMeta>}
+            <StepDetails id={`${step.key}--details`}>
+              <StepList>
+                {step.steps?.map((substep, index) => (
+                  <SubStep key={index}>
+                    <SubStepMarker />
+                    <SubStepHeading>{substep.title}</SubStepHeading>
+                  </SubStep>
+                ))}
+              </StepList>
+            </StepDetails>
+          </StepBody>
+        </>
+      ) : (
+        <>
           <StepHeader>
-            <StepMarker>
-              <div>2</div>
-            </StepMarker>
-            <StepHeading>Onderzoek naar geluidsoverlast</StepHeading>
-            <StepExpandedIcon />
+            <StepMarker>{step.marker || step.key}</StepMarker>
+            <StepHeading>{step.title}</StepHeading>
           </StepHeader>
-        </StepSection>
-        <SubStepList>
-          <SubStep>
-            <SubStepMarker />
-            <SubStepHeading>Afspraak meten geluidsoverlast gemaakt</SubStepHeading>
-          </SubStep>
-          <SubStep>
-            <SubStepMarker />
-            <SubStepHeading>Geluidsoverlast gemeten</SubStepHeading>
-          </SubStep>
-          <SubStep>
-            <SubStepMarker />
-            <SubStepHeading>Onderzoek resultaten verwerkt</SubStepHeading>
-          </SubStep>
-        </SubStepList>
-      </Step>
-      <Step>
-        <StepSection>
-          <StepHeader>
-            <StepMarker>3</StepMarker>
-            <StepHeading>Uitvoeren van maatregelen</StepHeading>
-          </StepHeader>
-        </StepSection>
-      </Step>
-      <Step>
-        <StepSection>
-          <StepHeader>
-            <StepMarker>4</StepMarker>
-            <StepHeading>Maatregelen zijn uitgevoerd</StepHeading>
-          </StepHeader>
-        </StepSection>
-      </Step>
-    </StepList>
+          <StepBody>
+            {step.meta && <StepMeta>{step.meta}</StepMeta>}
+            {step.date && <StepMeta date>{step.date}</StepMeta>}
+          </StepBody>
+        </>
+      )}
+    </Step>
   );
 };
+
+export const ProcessSteps = ({ steps = [], expandedSteps = [], disabledSteps = [] }: ProcessStepsProps) => (
+  <StepList>
+    {steps.map((step) => (
+      <ProcessStep
+        key={step.key}
+        step={step}
+        expanded={expandedSteps.includes(step.key)}
+        disabled={disabledSteps.includes(step.key)}
+      />
+    ))}
+  </StepList>
+);
 
 export default ProcessSteps;
 
@@ -99,8 +99,7 @@ export * from './StepHeading';
 export * from './StepHeadingLabel';
 export * from './StepList';
 export * from './StepMarker';
-export * from './StepSection';
 export * from './SubStep';
 export * from './SubStepHeading';
-export * from './SubStepList';
 export * from './SubStepMarker';
+export * from './StepMeta';

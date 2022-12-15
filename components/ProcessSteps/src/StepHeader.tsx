@@ -1,26 +1,38 @@
 import React, { HTMLAttributes } from 'react';
 import clsx from 'clsx';
 import { StepContext } from './Step';
+import StepExpandedIcon from './StepExpandedIcon';
 
-export interface StepHeaderProps extends HTMLAttributes<HTMLButtonElement> {}
+export interface StepHeaderProps extends HTMLAttributes<HTMLButtonElement | HTMLDivElement> {
+  checked?: boolean;
+  current?: boolean;
+}
 
-export const StepHeader: React.FC<StepHeaderProps> = ({ children, ...props }) => {
+export const StepHeader: React.FC<StepHeaderProps> = ({ children, checked, current, className, ...props }) => {
   const { context, setContext } = React.useContext(StepContext);
 
-  return (
+  const classNames = clsx(
+    'denhaag-process-steps__step-header',
+    checked && 'denhaag-process-steps__step-header--checked',
+    current && 'denhaag-process-steps__step-header--current',
+    className,
+  );
+  return props['aria-controls'] ? (
     <button
       {...props}
-      className={clsx(
-        'denhaag-process-steps__step-header',
-        context.checked && 'denhaag-process-steps__step-header--checked',
-        context.current && 'denhaag-process-steps__step-header--current',
-      )}
+      className={classNames}
       onClick={() => {
-        setContext({ ...context, expanded: !context.expanded });
+        setContext({ ...context, collapsed: !context.collapsed });
       }}
-      aria-expanded={context.expanded}
+      aria-expanded={!context.collapsed}
     >
       {children}
+
+      <StepExpandedIcon />
     </button>
+  ) : (
+    <div {...props} className={classNames}>
+      {children}
+    </div>
   );
 };

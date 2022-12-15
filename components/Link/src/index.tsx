@@ -89,7 +89,7 @@ export const Link: OverridableComponent<LinkProps> = ({
   icon = undefined,
   iconAlign = 'end',
   tabIndex = 0,
-  component = undefined,
+  component = 'a',
   ...props
 }: LinkProps) => {
   const rootClassNames = clsx(
@@ -106,8 +106,6 @@ export const Link: OverridableComponent<LinkProps> = ({
   const iconClassName = clsx('denhaag-link__icon');
 
   const iconWrapped = <span className={iconClassName}>{icon}</span>;
-
-  const Component = component || 'a';
 
   return (
     <Component id={id} href={href} tabIndex={disabled ? -1 : tabIndex} {...props} className={rootClassNames}>
