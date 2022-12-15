@@ -4,13 +4,13 @@ import clsx from 'clsx';
 export interface StepProps extends LiHTMLAttributes<HTMLLIElement> {
   current?: boolean;
   checked?: boolean;
-  expanded?: boolean;
+  collapsed?: boolean;
 }
 
 interface StepStateType {
   current: boolean;
   checked: boolean;
-  expanded: boolean;
+  collapsed: boolean;
 }
 interface StepContextType {
   context: StepStateType;
@@ -18,7 +18,7 @@ interface StepContextType {
 }
 
 export const StepContext = React.createContext<StepContextType>({
-  context: { current: false, checked: false, expanded: false },
+  context: { current: false, checked: false, collapsed: false },
   setContext: () => {},
 });
 
@@ -26,10 +26,10 @@ export const Step: React.FC<StepProps> = ({
   children,
   current = false,
   checked = false,
-  expanded = false,
+  collapsed = false,
   ...props
 }) => {
-  const [state, setState] = React.useState({ current: current, checked: checked, expanded: expanded });
+  const [state, setState] = React.useState({ current, checked, collapsed });
   const context: StepContextType = { context: state, setContext: setState };
 
   return (
@@ -40,7 +40,6 @@ export const Step: React.FC<StepProps> = ({
           'denhaag-process-steps__step',
           state.checked && 'denhaag-process-steps__step--checked',
           state.current && 'denhaag-process-steps__step--current',
-          state.expanded && 'denhaag-process-steps__step--expanded',
         )}
         aria-current={state.current ? 'step' : undefined}
       >

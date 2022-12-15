@@ -1,0 +1,15 @@
+.denhaag-process-steps__step:not(:last-child) .denhaag-process-steps__step-body::after {
+  content: "";
+  position: absolute;
+  top: var(--denhaag-process-steps-step-marker-size, 2em);
+  left: calc(max(var(--denhaag-process-steps-step-marker-size, 2em), 32px) / 2);
+  height: calc(var(--denhaag-process-steps-sub-step-distance) + 15px);
+  outline-width: var(--denhaag-process-steps-step-line-width, 1px);
+  outline-color: var(--denhaag-process-steps-step-line-color);
+  outline-style: var(--denhaag-process-steps-step-line-style, dashed);
+}
+
+.denhaag-process-steps__step-body--connected {
+  --denhaag-process-steps-step-line-color: var(--denhaag-process-steps-step-line-connected-color);
+  --denhaag-process-steps-step-line-style: var(--denhaag-process-steps-step-line-connected-style, solid);
+}

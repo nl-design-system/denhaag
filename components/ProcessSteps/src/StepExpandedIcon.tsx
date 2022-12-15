@@ -13,11 +13,11 @@ export const StepExpandedIcon: React.FC<StepExpandedIconProps> = ({ className, .
       {...props}
       className={clsx(
         'denhaag-process-steps__step-expanded-icon',
-        context.expanded && 'denhaag-process-steps__step-expanded-icon--expanded',
+        !context.collapsed && 'denhaag-process-steps__step-expanded-icon--expanded',
         className,
       )}
     >
-      {context.expanded ? <ChevronUpIcon /> : <ChevronDownIcon />}
+      {context.collapsed ? <ChevronDownIcon /> : <ChevronUpIcon />}
     </div>
   );
 };
