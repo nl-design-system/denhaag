@@ -1,6 +1,7 @@
 import React from 'react';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import ResponsiveContent from '/components/ResponsiveContent';
+import clsx from 'clsx';
 
 import './index.scss';
 
@@ -9,7 +10,7 @@ export interface FooterListItemData {
   url: string;
 }
 
-export interface FooterLegalProps extends Omit<BaseProps, 'tabIndex' | 'classNamees' | 'children'> {
+export interface FooterLegalProps extends Omit<BaseProps, 'tabIndex' | 'children'> {
   legalData?: Array<FooterListItemData>;
   copyrightLabel?: string;
 }
@@ -37,13 +38,13 @@ export interface ContactData {
   links: Array<FooterListItemData>;
 }
 
-export interface FooterContactProps extends Omit<BaseProps, 'tabIndex' | 'classNamees' | 'children'> {
+export interface FooterContactProps extends Omit<BaseProps, 'tabIndex' | 'children'> {
   socialData?: FooterSocialData;
   newsletterData?: NewsLetterData;
   contactData?: ContactData;
 }
 
-export interface FooterProps extends Omit<BaseProps, 'tabIndex' | 'classNamees' | 'children'> {
+export interface FooterProps extends Omit<BaseProps, 'tabIndex' | 'children'> {
   legalData?: Array<FooterListItemData>;
   copyrightLabel?: string;
   socialData?: FooterSocialData;
@@ -54,28 +55,24 @@ export interface FooterProps extends Omit<BaseProps, 'tabIndex' | 'classNamees' 
 export const FooterLegal: React.FC<FooterLegalProps> = (props: FooterLegalProps) => {
   return (
     <section className="denhaag-footer__legal">
-      <div className="denhaag-responsive-content">
-        <div className="denhaag-footer-legal__container">
-          {props.legalData && (
-            <div className="denhaag-footer__legal-links">
-              <ul className="denhaag-list denhaag-list--vertical">
-                {props.legalData?.map((item, key) => (
-                  <li className="denhaag-list__item" key={key}>
-                    <a href={item.url} className="denhaag-link">
-                      <span className="denhaag-link__label">{item.label}</span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-          {props.copyrightLabel && (
-            <div className="denhaag-footer__legal-copyright">
-              <p className="utrecht-paragraph">{props.copyrightLabel}</p>
-            </div>
-          )}
-        </div>
-      </div>
+      <ResponsiveContent className="denhaag-footer__legal-container">
+        {props.legalData && (
+          <ul className="denhaag-list denhaag-footer__legal-links">
+            {props.legalData?.map((item, key) => (
+              <li className="denhaag-list__item" key={key}>
+                <a href={item.url} className="denhaag-link">
+                  <span className="denhaag-link__label">{item.label}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        )}
+        {props.copyrightLabel && (
+          <div className="denhaag-footer__legal-copyright">
+            <p className="utrecht-paragraph">{props.copyrightLabel}</p>
+          </div>
+        )}
+      </ResponsiveContent>
     </section>
   );
 };
@@ -149,8 +146,10 @@ export const FooterContact: React.FC<FooterContactProps> = (props: FooterContact
 };
 
 export const Footer: React.FC<FooterProps> = (props: FooterProps) => {
+  const rootClassNames = clsx('denhaag-footer', props.className);
+
   return (
-    <footer className="denhaag-footer">
+    <footer className={rootClassNames}>
       <FooterContact
         socialData={props.socialData}
         newsletterData={props.newsletterData}

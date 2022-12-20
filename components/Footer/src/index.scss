@@ -1,28 +1,25 @@
 .denhaag-footer {
-  --utrecht-paragraph-color: #fff;
-  --utrecht-paragraph-font-size: 16px;
+  --utrecht-paragraph-color: var(--denhaag-footer-color);
+  --utrecht-paragraph-font-size: var(--denhaag-footer-font-size);
   --utrecht-paragraph-line-height: normal;
-  --utrecht-paragraph-margin-block-start: 12px;
-  --utrecht-paragraph-margin-block-end: 12px;
+  --utrecht-paragraph-margin-block-start: var(--denhaag-footer-paragraph-margin-block-start);
+  --utrecht-paragraph-margin-block-end: var(--denhaag-footer-paragraph-margin-block-end);
 
-  background-color: #4b4b4b;
-
-  --utrecht-link-social-background-color: transparent;
-  --utrecht-link-social-border-color: transparent;
-  --utrecht-link-social-border-width: 5px;
-  --utrecht-list-social-item-margin-inline-end: 20px;
-  --utrecht-link-social-color: #fff;
-  --utrecht-link-social-hover-color: var(--denhaag-color-ocher-2);
+  background-color: var(--denhaag-footer-background-color);
 
   .utrecht-list-social {
     align-items: baseline;
   }
 
   .denhaag-footer__mega {
-    background-color: var(--denhaag-color-grey-5);
+    background-color: var(--denhaag-footer-mega-background-color);
+    color: var(--denhaag-footer-mega-color);
   }
 
-  .denhaag-list--vertical {
+  .denhaag-footer__legal-links {
+    --denhaag-list-item-padding-inline: 0;
+
+    column-gap: var(--denhaag-footer-legal-links-column-gap);
     display: grid;
     grid-template-columns: 1fr 1fr;
 
@@ -38,7 +35,7 @@
 
   .denhaag-link {
     color: #fff;
-    font-size: 16px;
+    font-size: var(--denhaag-footer-font-size);
     text-decoration-line: none;
 
     &:hover {
@@ -46,7 +43,7 @@
     }
   }
 
-  .denhaag-footer-legal__container {
+  .denhaag-footer__legal-container {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -56,33 +53,14 @@
     }
   }
 
-  .denhaag-list__item:nth-child(1) {
-    padding-inline-start: 0;
-  }
-
-  @media (max-width: 1279px) {
-    .denhaag-list__item {
-      padding-inline-start: 0;
-    }
-  }
-
-  .denhaag-footer__follow-us-list {
-    align-items: baseline;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding-inline-start: 0;
-
-    @media (min-width: 768px) {
-      justify-content: initial;
-    }
-  }
-
+  /**
+  * The footergroup could later become a generic component, not specific to the footer.
+  */
   .denhaag-footer-group {
     display: grid;
-    gap: 32px;
-    padding-block-start: 40px;
-    padding-block-end: 40px;
+    gap: var(--denhaag-footer-group-gap);
+    padding-block-start: var(--denhaag-footer-group-padding-block-start);
+    padding-block-end: var(--denhaag-footer-group-padding-block-end);
 
     @media (min-width: 768px) {
       grid-template-columns: repeat(2, 1fr);
