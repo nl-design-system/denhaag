@@ -51,10 +51,10 @@
     bottom: var(--denhaag-cta-image-content-button-after-bottom);
     left: var(--denhaag-cta-image-content-button-after-left);
   }
+}
 
-  .denhaag-cta-image-content--focus .denhaag-button::after {
-    border: var(--denhaag-focus-border);
-  }
+.denhaag-cta-image-content--focus .denhaag-button::after {
+  border: var(--denhaag-focus-border);
 }
 
 .denhaag-cta-image-content__image {
