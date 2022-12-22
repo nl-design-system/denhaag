@@ -56,11 +56,11 @@
     padding-inline-start: var(--denhaag-card-news-figcaption-padding);
     padding-inline-end: var(--denhaag-card-news-figcaption-padding);
   }
-}
 
-.denhaag-card-news__heading,
-.denhaag-card-news__paragraph {
-  margin-block-end: var(--denhaag-card-news-text-margin-block-end);
+  .denhaag-card-news__heading,
+  .denhaag-card-news__paragraph {
+    margin-block-end: var(--denhaag-card-news-text-margin-block-end);
+  }
 }
 
 .denhaag-card-news .utrecht-paragraph {

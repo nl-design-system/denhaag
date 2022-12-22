@@ -1,0 +1,11 @@
+{
+  "utrecht": {
+    "list": {
+      "social": {
+        "item": {
+          "margin-inline-end": { "value": "20px" }
+        }
+      }
+    }
+  }
+}

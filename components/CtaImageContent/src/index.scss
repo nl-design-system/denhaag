@@ -20,45 +20,45 @@
   padding-inline-end: var(--denhaag-cta-image-content-content-padding-inline);
   padding-block-start: var(--denhaag-cta-image-content-content-padding-block);
   padding-block-end: var(--denhaag-cta-image-content-content-padding-block);
-}
 
-.denhaag-cta-image-content__image {
-  width: var(--denhaag-cta-image-content-image-width);
-}
+  .denhaag-cta-image-content__title {
+    margin-block-start: var(--denhaag-cta-image-content-title-margin-block-start);
+  }
 
-.denhaag-cta-image-content__title {
-  margin-block-start: var(--denhaag-cta-image-content-title-margin-block-start);
-}
+  .denhaag-cta-image-content__title--small {
+    font-size: var(--denhaag-cta-image-content-title-small-font-size);
+  }
 
-.denhaag-cta-image-content__title--small {
-  font-size: var(--denhaag-cta-image-content-title-small-font-size);
-}
+  .denhaag-cta-image-content__text {
+    font-size: var(--denhaag-cta-image-content-text-font-size);
+    line-height: var(--denhaag-cta-image-content-text-line-height);
+  }
 
-.denhaag-cta-image-content__text {
-  font-size: var(--denhaag-cta-image-content-text-font-size);
-  line-height: var(--denhaag-cta-image-content-text-line-height);
-}
+  .denhaag-cta-image-content__text--small {
+    --denhaag-cta-image-content-text-font-size: var(--denhaag-cta-image-content-text-small-font-size);
+  }
 
-.denhaag-cta-image-content__text--small {
-  --denhaag-cta-image-content-text-font-size: var(--denhaag-cta-image-content-text-small-font-size);
-}
+  .denhaag-cta-image-content__button {
+    margin-block-start: var(--denhaag-cta-image-content-button-margin-block-start);
+    position: var(--denhaag-cta-image-content-button-position);
+  }
 
-.denhaag-cta-image-content__button {
-  margin-block-start: var(--denhaag-cta-image-content-button-margin-block-start);
-  position: var(--denhaag-cta-image-content-button-position);
-}
-
-.denhaag-cta-image-content__button::after {
-  position: var(--denhaag-cta-image-content-button-after-position);
-  content: var(--denhaag-cta-image-content-button-after-content);
-  top: var(--denhaag-cta-image-content-button-after-top);
-  right: var(--denhaag-cta-image-content-button-after-right);
-  bottom: var(--denhaag-cta-image-content-button-after-bottom);
-  left: var(--denhaag-cta-image-content-button-after-left);
+  .denhaag-cta-image-content__button::after {
+    position: var(--denhaag-cta-image-content-button-after-position);
+    content: var(--denhaag-cta-image-content-button-after-content);
+    top: var(--denhaag-cta-image-content-button-after-top);
+    right: var(--denhaag-cta-image-content-button-after-right);
+    bottom: var(--denhaag-cta-image-content-button-after-bottom);
+    left: var(--denhaag-cta-image-content-button-after-left);
+  }
 }
 
 .denhaag-cta-image-content--focus .denhaag-button::after {
   border: var(--denhaag-focus-border);
+}
+
+.denhaag-cta-image-content__image {
+  width: var(--denhaag-cta-image-content-image-width);
 }
 
 @media (min-width: 768px) {

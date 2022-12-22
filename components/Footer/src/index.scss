@@ -1,0 +1,73 @@
+.denhaag-footer {
+  --utrecht-paragraph-color: var(--denhaag-footer-color);
+  --utrecht-paragraph-font-size: var(--denhaag-footer-font-size);
+  --utrecht-paragraph-line-height: normal;
+  --utrecht-paragraph-margin-block-start: var(--denhaag-footer-paragraph-margin-block-start);
+  --utrecht-paragraph-margin-block-end: var(--denhaag-footer-paragraph-margin-block-end);
+
+  background-color: var(--denhaag-footer-background-color);
+
+  .utrecht-list-social {
+    align-items: baseline;
+  }
+
+  .denhaag-footer__mega {
+    background-color: var(--denhaag-footer-mega-background-color);
+    color: var(--denhaag-footer-mega-color);
+  }
+
+  .denhaag-footer__legal-links {
+    --denhaag-list-item-padding-inline: 0;
+
+    column-gap: var(--denhaag-footer-legal-links-column-gap);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media (min-width: 1024px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media (min-width: 1280px) {
+      grid-template-columns: unset;
+      grid-auto-flow: column;
+    }
+  }
+
+  .denhaag-link {
+    color: #fff;
+    font-size: var(--denhaag-footer-font-size);
+    text-decoration-line: none;
+
+    &:hover {
+      text-decoration-line: underline;
+    }
+  }
+
+  .denhaag-footer__legal-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @media (min-width: 1280px) {
+      flex-direction: row;
+    }
+  }
+
+  /**
+  * The footergroup could later become a generic component, not specific to the footer.
+  */
+  .denhaag-footer-group {
+    display: grid;
+    gap: var(--denhaag-footer-group-gap);
+    padding-block-start: var(--denhaag-footer-group-padding-block-start);
+    padding-block-end: var(--denhaag-footer-group-padding-block-end);
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

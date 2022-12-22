@@ -8,6 +8,11 @@ export interface PageProps extends Omit<BaseProps, 'tabIndex' | 'classNamees'> {
    * The header component
    */
   header?: React.ReactElement;
+
+  /**
+   * The footer component
+   */
+  footer?: React.ReactElement;
 }
 
 export const Page: React.FC<PageProps> = (props: PageProps) => {
@@ -18,6 +23,7 @@ export const Page: React.FC<PageProps> = (props: PageProps) => {
       <div className="denhaag-page-content">
         <main className="denhaag-page-content__main">{props.children}</main>
       </div>
+      <div className="denhaag-page-footer">{props.footer}</div>
     </div>
   );
 };
