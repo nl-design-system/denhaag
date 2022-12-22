@@ -1,0 +1,32 @@
+.denhaag-sheet {
+  position: absolute;
+  top: 7.5rem;
+  left: 0;
+  margin-block-start: var(--denhaag-header-border-bottom-width);
+  background-color: white;
+  min-height: 15rem;
+  z-index: 3;
+  width: 100%;
+  padding-block-start: 24px;
+
+  &__container {
+    &-close-button {
+      float: right;
+    }
+
+    &-menu {
+      display: grid;
+    }
+  }
+
+  &-overlay {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgray;
+    z-index: 0;
+    opacity: 40%;
+  }
+}
