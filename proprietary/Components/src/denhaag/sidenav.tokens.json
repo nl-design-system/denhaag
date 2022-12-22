@@ -17,10 +17,11 @@
         "padding-block-end": { "value": "12px" },
         "color": { "value": "{denhaag.color.grey.4}" },
         "hover": {
-          "color": { "value": "{denhaag.color.blue.3}" }
+          "color": { "value": "{denhaag.color.green.3}" }
         },
         "active": {
-          "color": { "value": "{denhaag.color.blue.3}" }
+          "color": { "value": "{denhaag.color.green.3}" },
+          "font-weight": { "value": "{denhaag.typography.weight.bold}" }
         },
         "child": {
           "padding-inline-start": { "value": "16px" }

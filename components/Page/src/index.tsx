@@ -3,7 +3,7 @@ import BaseProps from '@gemeente-denhaag/baseprops';
 import clsx from 'clsx';
 import './index.scss';
 
-export interface PageProps extends Omit<BaseProps, 'tabIndex' | 'classNamees'> {
+export interface PageProps extends Omit<BaseProps, 'tabIndex' | 'classNames'> {
   /**
    * The header component
    */
@@ -20,9 +20,7 @@ export const Page: React.FC<PageProps> = (props: PageProps) => {
   return (
     <div className={classNames}>
       <div className="denhaag-page-header">{props.header}</div>
-      <div className="denhaag-page-content">
-        <main className="denhaag-page-content__main">{props.children}</main>
-      </div>
+      {props.children}
       <div className="denhaag-page-footer">{props.footer}</div>
     </div>
   );

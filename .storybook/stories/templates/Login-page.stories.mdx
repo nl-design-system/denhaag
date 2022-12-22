@@ -147,7 +147,7 @@ export const YoutubeIcon = () => {
 };
 
 export const footerSocialData = {
-  title: "Volg ons op social media",
+  title: "Volg ons op",
   links: [
     { icon: <FacebookIcon />, label: "Facebook", url: "https://www.facebook.com/gemeenteDH/" },
     { icon: <TwitterIcon />, label: "Twitter", url: "https://twitter.com/gemeentedenhaag" },
@@ -187,7 +187,7 @@ export const copyright = "© 2022 Gemeente Den Haag";
         />
       }
     >
-      <ResponsiveContent>
+      <ResponsiveContent className="denhaag-page-content">
         <Heading2>Inloggen</Heading2>
         <AuthenticationCardGroup cards={["DigiD", "eHerkenning", "eIDAS"]} responsive />
         <Heading2>Inloggen als gemachtigde</Heading2>

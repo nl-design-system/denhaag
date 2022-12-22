@@ -28,4 +28,8 @@
   @media (min-width: 1280px) {
     --denhaag-responsive-content-max-width: var(--denhaag-responsive-content-lg-max-width);
   }
+
+  &--sidebar {
+    display: flex;
+  }
 }
