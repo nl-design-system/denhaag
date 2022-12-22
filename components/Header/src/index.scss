@@ -1,9 +1,10 @@
 .denhaag-header {
+  border-bottom-color: var(--denhaag-header-border-bottom-color);
+  border-bottom-width: var(--denhaag-header-border-bottom-width);
+  border-bottom-style: solid;
+
   &__content {
     align-items: center;
-    border-bottom-color: var(--denhaag-header-border-bottom-color);
-    border-bottom-width: var(--denhaag-header-border-bottom-width);
-    border-bottom-style: solid;
     display: flex;
     flex-direction: row;
     height: var(--denhaag-header-height);
@@ -15,6 +16,14 @@
 
     @media (min-width: 1024px) {
       height: var(--denhaag-header-md-height);
+    }
+  }
+
+  .denhaag-header__actions {
+    display: flex;
+
+    .denhaag-user-menu {
+      margin-inline-start: 24px;
     }
   }
 }

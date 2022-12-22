@@ -13,7 +13,7 @@
         "outline-offset": { "value": "0px" }
       },
       "hover": {
-        "color": { "value": "{denhaag.color.blue.4}" }
+        "color": { "value": "{denhaag.color.green.3}" }
       }
     }
   }
