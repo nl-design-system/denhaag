@@ -9,13 +9,12 @@
   text-align: start;
 }
 
-.denhaag-process-steps__step-heading--checked {
-  color: var(--denhaag-process-steps-step-heading-checked-color, var(--denhaag-process-steps-step-heading-color));
-  font-family: var(
-    --denhaag-process-steps-step-heading-checked-font-family,
-    var(--denhaag-process-steps-step-heading-font-family)
-  ); /* should `font-family` actually be variable? */
+.denhaag-process-steps__step-heading--not-checked {
+  color: var(--denhaag-process-steps-step-heading-not-checked-color);
+}
 
+.denhaag-process-steps__step-heading--checked {
+  color: var(--denhaag-process-steps-step-heading-checked-color);
   font-size: var(
     --denhaag-process-steps-step-heading-checked-font-size,
     var(--denhaag-process-steps-step-heading-font-size)
@@ -27,12 +26,7 @@
 }
 
 .denhaag-process-steps__step-heading--current {
-  color: var(--denhaag-process-steps-step-heading-current-color, var(--denhaag-process-steps-step-heading-color));
-  font-family: var(
-    --denhaag-process-steps-step-heading-current-font-family,
-    var(--denhaag-process-steps-step-heading-font-family)
-  ); /* should `font-family` actually be variable? */
-
+  color: var(--denhaag-process-steps-step-heading-current-color);
   font-size: var(
     --denhaag-process-steps-step-heading-current-font-size,
     var(--denhaag-process-steps-step-heading-font-size)
@@ -41,4 +35,8 @@
     --denhaag-process-steps-step-heading-current-font-weight,
     var(--denhaag-process-steps-step-heading-font-weight)
   );
+}
+
+.denhaag-process-steps__step-heading--warning {
+  color: var(--denhaag-process-steps-step-heading-warning-color);
 }

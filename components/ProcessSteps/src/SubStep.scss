@@ -7,8 +7,7 @@
   margin-block-start: var(--denhaag-process-steps-sub-step-distance);
 }
 
-.denhaag-process-steps__sub-step-line,
-.denhaag-process-steps__sub-step::after {
+.denhaag-process-steps__sub-step-line {
   content: "";
   position: absolute;
   top: calc(

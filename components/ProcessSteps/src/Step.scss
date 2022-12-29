@@ -7,20 +7,3 @@
 .denhaag-process-steps__step + .denhaag-process-steps__step {
   margin-block-start: var(--denhaag-process-steps-step-distance);
 }
-
-.denhaag-process-steps__step-line,
-.denhaag-process-steps__step + .denhaag-process-steps__step::after {
-  content: "";
-  position: absolute;
-  left: calc(var(--denhaag-process-steps-step-marker-size, 2em) / 2);
-  top: calc(-1 * (var(--denhaag-process-steps-step-distance) + 10px));
-  height: calc(var(--denhaag-process-steps-step-distance) + 10px);
-  outline: 1px dashed var(--denhaag-process-steps-step-line-color);
-}
-
-.denhaag-process-steps__step-line--connected,
-.denhaag-process-steps__step + .denhaag-process-steps__step--checked::after,
-.denhaag-process-steps__step + .denhaag-process-steps__step--current::after {
-  outline-style: solid;
-  outline-color: var(--denhaag-process-steps-step-line-connected-color, var(--denhaag-process-steps-step-line-color));
-}

@@ -28,3 +28,25 @@
     var(--denhaag-process-steps-sub-step-marker-border-color)
   );
 }
+
+.denhaag-process-steps__sub-step-marker--not-checked {
+  background-color: var(
+    --denhaag-process-steps-sub-step-marker-not-checked-background-color,
+    var(--denhaag-process-steps-sub-step-marker-background-color)
+  );
+  border-color: var(
+    --denhaag-process-steps-sub-step-marker-not-checked-border-color,
+    var(--denhaag-process-steps-sub-step-marker-border-color)
+  );
+}
+
+.denhaag-process-steps__sub-step-marker--warning {
+  background-color: var(
+    --denhaag-process-steps-sub-step-marker-warning-background-color,
+    var(--denhaag-process-steps-sub-step-marker-background-color)
+  );
+  border-color: var(
+    --denhaag-process-steps-sub-step-marker-warning-border-color,
+    var(--denhaag-process-steps-sub-step-marker-border-color)
+  );
+}

@@ -1,34 +1,30 @@
 import React, { HTMLAttributes } from 'react';
 import clsx from 'clsx';
-import { StepContext } from './Step';
-import StepExpandedIcon from './StepExpandedIcon';
+import { ChevronDownIcon, ChevronUpIcon } from '@gemeente-denhaag/icons';
+import { StepStatus } from '.';
 
 export interface StepHeaderProps extends HTMLAttributes<HTMLButtonElement | HTMLDivElement> {
-  checked?: boolean;
-  current?: boolean;
+  appearance?: StepStatus;
+  expanded?: boolean;
 }
 
-export const StepHeader: React.FC<StepHeaderProps> = ({ children, checked, current, className, ...props }) => {
-  const { context, setContext } = React.useContext(StepContext);
-
+export const StepHeader: React.FC<StepHeaderProps> = ({
+  children,
+  appearance = 'not-checked',
+  onClick,
+  className,
+  expanded = false,
+  ...props
+}) => {
   const classNames = clsx(
     'denhaag-process-steps__step-header',
-    checked && 'denhaag-process-steps__step-header--checked',
-    current && 'denhaag-process-steps__step-header--current',
+    `denhaag-process-steps__step-header--${appearance}`,
     className,
   );
-  return props['aria-controls'] ? (
-    <button
-      {...props}
-      className={classNames}
-      onClick={() => {
-        setContext({ ...context, collapsed: !context.collapsed });
-      }}
-      aria-expanded={!context.collapsed}
-    >
+  return onClick ? (
+    <button {...props} className={classNames} onClick={onClick} aria-expanded={expanded}>
       {children}
-
-      <StepExpandedIcon />
+      {expanded ? <ChevronDownIcon /> : <ChevronUpIcon />}
     </button>
   ) : (
     <div {...props} className={classNames}>
