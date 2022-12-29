@@ -26,7 +26,7 @@ export const StepHeader: React.FC<StepHeaderProps> = ({
   return expandable ? (
     <button {...props} className={classNames} onClick={onClick} aria-expanded={expanded}>
       {children}
-      {expanded ? <ChevronDownIcon /> : <ChevronUpIcon />}
+      {expanded ? <ChevronUpIcon /> : <ChevronDownIcon />}
     </button>
   ) : (
     <div {...props} className={classNames}>
