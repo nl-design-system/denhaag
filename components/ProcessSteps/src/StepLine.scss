@@ -57,3 +57,15 @@
     var(--denhaag-process-steps-step-line-outline-color)
   );
 }
+
+.denhaag-process-steps__step-line--error {
+  outline-width: var(
+    --denhaag-process-steps-step-line-error-outline-width,
+    var(--denhaag-process-steps-step-line-outline-width, 1px)
+  );
+  outline-style: var(--denhaag-process-steps-step-line-error-outline-style, solid);
+  outline-color: var(
+    --denhaag-process-steps-step-line-error-outline-color,
+    var(--denhaag-process-steps-step-line-outline-color)
+  );
+}

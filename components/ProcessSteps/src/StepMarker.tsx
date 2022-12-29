@@ -1,5 +1,5 @@
 import React, { LiHTMLAttributes } from 'react';
-import { CheckedIcon } from '@gemeente-denhaag/icons';
+import { AlertTriangleIcon, CheckedIcon, CloseIcon } from '@gemeente-denhaag/icons';
 import clsx from 'clsx';
 import { StepStatus } from '.';
 
@@ -13,7 +13,15 @@ export const StepMarker: React.FC<StepMarkerProps> = ({ children, appearance = '
       {...props}
       className={clsx('denhaag-process-steps__step-marker', `denhaag-process-steps__step-marker--${appearance}`)}
     >
-      {appearance === 'checked' ? <CheckedIcon /> : children}
+      {appearance === 'checked' ? (
+        <CheckedIcon />
+      ) : appearance === 'error' ? (
+        <CloseIcon />
+      ) : appearance === 'warning' ? (
+        <AlertTriangleIcon />
+      ) : (
+        children
+      )}
     </div>
   );
 };

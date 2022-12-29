@@ -50,3 +50,14 @@
     var(--denhaag-process-steps-sub-step-marker-border-color)
   );
 }
+
+.denhaag-process-steps__sub-step-marker--error {
+  background-color: var(
+    --denhaag-process-steps-sub-step-marker-error-background-color,
+    var(--denhaag-process-steps-sub-step-marker-background-color)
+  );
+  border-color: var(
+    --denhaag-process-steps-sub-step-marker-error-border-color,
+    var(--denhaag-process-steps-sub-step-marker-border-color)
+  );
+}
