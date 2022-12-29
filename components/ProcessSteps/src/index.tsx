@@ -30,6 +30,7 @@ export interface ProcessStepsProps extends StepListProps {
   steps: StepProps[];
   expandedSteps?: Key[];
   disabledSteps?: Key[];
+  collapsible?: boolean;
 }
 
 interface ProcessStepProps {
@@ -38,6 +39,7 @@ interface ProcessStepProps {
   disabled?: boolean;
   nextStep?: StepProps;
   toggleExpanded: () => void;
+  collapsible?: boolean;
 }
 
 interface getLineAppearanceProps {
@@ -65,17 +67,15 @@ const getLineAppearance = ({
   return stepStatus;
 };
 
-const ProcessStep = ({ step, nextStep, expanded = false, toggleExpanded }: ProcessStepProps) => {
+const ProcessStep = ({ step, nextStep, expanded = false, toggleExpanded, collapsible = true }: ProcessStepProps) => {
   const nextStatus = expanded && step.steps?.[0] ? step.steps[0].status : nextStep?.status;
-
-  const stepExpandable = !!step.steps?.length && step.status !== 'error';
 
   return (
     <Step appearance={step.status} current={step.status === 'current'}>
       <StepHeader
         aria-controls={`${step.key}--details`}
         expanded={expanded}
-        expandable={stepExpandable}
+        collapsible={collapsible}
         onClick={toggleExpanded}
       >
         <StepMarker appearance={step.status}>{step.marker || step.key}</StepMarker>
@@ -93,7 +93,7 @@ const ProcessStep = ({ step, nextStep, expanded = false, toggleExpanded }: Proce
         {step.date && <StepMeta date>{step.date}</StepMeta>}
       </StepBody>
       {step.steps?.length && (
-        <StepDetails id={`${step.key}--details`} expanded={stepExpandable ? expanded : true}>
+        <StepDetails id={`${step.key}--details`} expanded={collapsible ? expanded : true}>
           <StepList>
             {step.steps?.map((substep, index, substeps) => {
               const nextSubStep = substeps[index + 1];
@@ -135,6 +135,7 @@ export const ProcessSteps = ({
   steps = [],
   expandedSteps: initialExpanded = [],
   disabledSteps = [],
+  collapsible = true,
 }: ProcessStepsProps) => {
   const [expandedSteps, setExpandedSteps] = useState(initialExpanded);
 
@@ -149,6 +150,7 @@ export const ProcessSteps = ({
             disabled={disabledSteps.includes(step.key)}
             nextStep={steps[index + 1]}
             toggleExpanded={() => toggleState(step.key, expandedSteps, setExpandedSteps)}
+            collapsible={collapsible && !!step.steps?.length && step.steps[0].status !== 'error'}
           />
         );
       })}

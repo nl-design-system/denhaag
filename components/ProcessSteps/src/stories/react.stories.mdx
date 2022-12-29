@@ -54,6 +54,14 @@ export const Template = (args) => {
   </Story>
 </Canvas>
 
+### Not collapsible
+
+<Canvas>
+  <Story name="Not collapsible" args={{ ...exampleArgs, collapsible: false }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
 ### Without Substeps
 
 <Canvas>
