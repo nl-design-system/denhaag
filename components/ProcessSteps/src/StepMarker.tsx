@@ -1,23 +1,19 @@
 import React, { LiHTMLAttributes } from 'react';
 import { CheckedIcon } from '@gemeente-denhaag/icons';
 import clsx from 'clsx';
-import { StepContext } from './Step';
+import { StepStatus } from '.';
 
-export interface StepMarkerProps extends LiHTMLAttributes<HTMLDivElement> {}
+export interface StepMarkerProps extends LiHTMLAttributes<HTMLDivElement> {
+  appearance?: StepStatus;
+}
 
-export const StepMarker: React.FC<StepMarkerProps> = ({ children, ...props }) => {
-  const { context } = React.useContext(StepContext);
-
+export const StepMarker: React.FC<StepMarkerProps> = ({ children, appearance = 'not-checked', ...props }) => {
   return (
     <div
       {...props}
-      className={clsx(
-        'denhaag-process-steps__step-marker',
-        context.checked && 'denhaag-process-steps__step-marker--checked',
-        context.current && 'denhaag-process-steps__step-marker--current',
-      )}
+      className={clsx('denhaag-process-steps__step-marker', `denhaag-process-steps__step-marker--${appearance}`)}
     >
-      {context.checked ? <CheckedIcon /> : children}
+      {appearance === 'checked' ? <CheckedIcon /> : children}
     </div>
   );
 };

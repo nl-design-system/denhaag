@@ -5,10 +5,14 @@
   background-color: inherit;
   gap: 16px;
   appearance: none;
-  padding-block-start: 0;
   padding-block-end: 0;
-  padding-inline-start: 0;
+  padding-block-start: 0;
   padding-inline-end: 0;
+  padding-inline-start: 0;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin-inline-end: 0;
+  margin-inline-start: 0;
 }
 
 .denhaag-process-steps__step-header--current {

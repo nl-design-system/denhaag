@@ -1,12 +1,13 @@
 import React, { LiHTMLAttributes } from 'react';
 import clsx from 'clsx';
+import { StepStatus } from '.';
 
 export interface SubStepProps extends LiHTMLAttributes<HTMLLIElement> {
-  checked?: boolean;
+  appearance?: StepStatus;
 }
 
-export const SubStep: React.FC<SubStepProps> = ({ children, checked }) => (
-  <li className={clsx('denhaag-process-steps__sub-step', checked && 'denhaag-process-steps__sub-step--checked')}>
+export const SubStep: React.FC<SubStepProps> = ({ children, appearance = 'not-checked' }) => (
+  <li className={clsx('denhaag-process-steps__sub-step', `denhaag-process-steps__sub-step--${appearance}`)}>
     {children}
   </li>
 );
