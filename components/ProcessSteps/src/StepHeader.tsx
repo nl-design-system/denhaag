@@ -6,6 +6,7 @@ import { StepStatus } from '.';
 export interface StepHeaderProps extends HTMLAttributes<HTMLButtonElement | HTMLDivElement> {
   appearance?: StepStatus;
   expanded?: boolean;
+  expandable?: boolean;
 }
 
 export const StepHeader: React.FC<StepHeaderProps> = ({
@@ -14,6 +15,7 @@ export const StepHeader: React.FC<StepHeaderProps> = ({
   onClick,
   className,
   expanded = false,
+  expandable = false,
   ...props
 }) => {
   const classNames = clsx(
@@ -21,7 +23,7 @@ export const StepHeader: React.FC<StepHeaderProps> = ({
     `denhaag-process-steps__step-header--${appearance}`,
     className,
   );
-  return onClick ? (
+  return expandable ? (
     <button {...props} className={classNames} onClick={onClick} aria-expanded={expanded}>
       {children}
       {expanded ? <ChevronDownIcon /> : <ChevronUpIcon />}

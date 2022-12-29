@@ -14,7 +14,7 @@ import { StepMeta } from './StepMeta';
 import { StepDetails } from './StepDetails';
 import StepLine from './StepLine';
 
-export type StepStatus = 'checked' | 'not-checked' | 'current' | 'warning';
+export type StepStatus = 'checked' | 'not-checked' | 'current' | 'warning' | 'error';
 
 interface StepProps {
   key: Key;
@@ -40,60 +40,84 @@ interface ProcessStepProps {
   toggleExpanded: () => void;
 }
 
+interface getLineAppearanceProps {
+  stepStatus?: StepStatus;
+  nextStepStatus?: StepStatus;
+  expanded?: boolean;
+}
+
+const getLineAppearance = ({
+  stepStatus = 'not-checked',
+  nextStepStatus = 'not-checked',
+  expanded = false,
+}: getLineAppearanceProps) => {
+  if (expanded && stepStatus === 'checked' && nextStepStatus === 'error') {
+    return 'checked';
+  } else if (expanded && stepStatus === 'checked' && nextStepStatus === 'warning') {
+    return 'checked';
+  } else if (expanded && stepStatus === 'current' && nextStepStatus === 'error') {
+    return 'checked';
+  } else if (expanded && stepStatus === 'current' && nextStepStatus === 'warning') {
+    return 'checked';
+  } else if (nextStepStatus === 'not-checked') {
+    return 'not-checked';
+  }
+  return stepStatus;
+};
+
 const ProcessStep = ({ step, nextStep, expanded = false, toggleExpanded }: ProcessStepProps) => {
-  const lineAppearance =
-    nextStep &&
-    (nextStep.status === 'checked' ||
-    nextStep.status === 'current' ||
-    (expanded && step.steps?.[0].status === 'checked')
-      ? 'checked'
-      : nextStep.status === 'warning' || (expanded && step.steps?.[0].status === 'warning')
-      ? 'warning'
-      : 'not-checked');
+  const nextStatus = expanded && step.steps?.[0] ? step.steps[0].status : nextStep?.status;
+
+  const stepExpandable = !!step.steps?.length && step.status !== 'error';
 
   return (
-    <Step appearance={step.status} current={step.status === 'current'} collapsed={!!step.steps?.length && !expanded}>
-      {step.steps?.length ? (
-        <>
-          <StepHeader aria-controls={`${step.key}--details`} expanded={expanded} onClick={toggleExpanded}>
-            <StepMarker appearance={step.status}>{step.marker || step.key}</StepMarker>
-            <StepHeading appearance={step.status}>{step.title}</StepHeading>
-          </StepHeader>
-          <StepBody>
-            {nextStep && <StepLine from="main" to="main" appearance={lineAppearance} />}
-            {step.meta && <StepMeta>{step.meta}</StepMeta>}
-            {step.date && <StepMeta date>{step.date}</StepMeta>}
-          </StepBody>
-          <StepDetails id={`${step.key}--details`} expanded={expanded}>
-            <StepList>
-              {step.steps?.map((substep, index, substeps) => {
-                const nextSubStep = substeps[index + 1];
-                const subLineAppearance = nextSubStep?.status || nextStep?.status;
-                return (
-                  <SubStep key={index}>
-                    <SubStepMarker appearance={substep.status} />
-                    <SubStepHeading>{substep.title}</SubStepHeading>
-                    {(nextSubStep || nextStep) && (
-                      <StepLine from="nested" to={nextSubStep ? 'nested' : 'main'} appearance={subLineAppearance} />
-                    )}
-                  </SubStep>
-                );
-              })}
-            </StepList>
-          </StepDetails>
-        </>
-      ) : (
-        <>
-          <StepHeader>
-            <StepMarker appearance={step.status}>{step.marker || step.key}</StepMarker>
-            <StepHeading appearance={step.status}>{step.title}</StepHeading>
-          </StepHeader>
-          <StepBody>
-            {nextStep && <StepLine from="main" to="main" appearance={lineAppearance} />}
-            {step.meta && <StepMeta>{step.meta}</StepMeta>}
-            {step.date && <StepMeta date>{step.date}</StepMeta>}
-          </StepBody>
-        </>
+    <Step appearance={step.status} current={step.status === 'current'}>
+      <StepHeader
+        aria-controls={`${step.key}--details`}
+        expanded={expanded}
+        expandable={stepExpandable}
+        onClick={toggleExpanded}
+      >
+        <StepMarker appearance={step.status}>{step.marker || step.key}</StepMarker>
+        <StepHeading appearance={step.status}>{step.title}</StepHeading>
+      </StepHeader>
+      <StepBody>
+        {nextStep && (
+          <StepLine
+            from="main"
+            to="main"
+            appearance={getLineAppearance({ stepStatus: step.status, nextStepStatus: nextStatus, expanded })}
+          />
+        )}
+        {step.meta && <StepMeta>{step.meta}</StepMeta>}
+        {step.date && <StepMeta date>{step.date}</StepMeta>}
+      </StepBody>
+      {step.steps?.length && (
+        <StepDetails id={`${step.key}--details`} expanded={stepExpandable ? expanded : true}>
+          <StepList>
+            {step.steps?.map((substep, index, substeps) => {
+              const nextSubStep = substeps[index + 1];
+              const nextStatus = nextSubStep?.status || nextStep?.status;
+              return (
+                <SubStep key={index}>
+                  <SubStepMarker appearance={substep.status} />
+                  <SubStepHeading>{substep.title}</SubStepHeading>
+                  {(nextSubStep || nextStep) && (
+                    <StepLine
+                      from="nested"
+                      to={nextSubStep ? 'nested' : 'main'}
+                      appearance={getLineAppearance({
+                        stepStatus: substep.status,
+                        nextStepStatus: nextStatus,
+                        expanded,
+                      })}
+                    />
+                  )}
+                </SubStep>
+              );
+            })}
+          </StepList>
+        </StepDetails>
       )}
     </Step>
   );

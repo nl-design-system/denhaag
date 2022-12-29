@@ -73,7 +73,7 @@ export interface LinkProps extends Omit<BaseProps, 'classes'> {
   /**
    * Override base component
    */
-  component?: React.ElementType | undefined;
+  component?: React.ElementType;
 }
 
 /**
@@ -89,7 +89,6 @@ export const Link: OverridableComponent<LinkProps> = ({
   icon = undefined,
   iconAlign = 'end',
   tabIndex = 0,
-  component = 'a',
   ...props
 }: LinkProps) => {
   const rootClassNames = clsx(
@@ -108,11 +107,11 @@ export const Link: OverridableComponent<LinkProps> = ({
   const iconWrapped = <span className={iconClassName}>{icon}</span>;
 
   return (
-    <Component id={id} href={href} tabIndex={disabled ? -1 : tabIndex} {...props} className={rootClassNames}>
+    <a id={id} href={href} tabIndex={disabled ? -1 : tabIndex} {...props} className={rootClassNames}>
       {icon !== undefined && iconAlign === 'start' ? iconWrapped : ''}
       <span>{children}</span>
       {icon !== undefined && iconAlign === 'end' ? iconWrapped : ''}
-    </Component>
+    </a>
   );
 };
 

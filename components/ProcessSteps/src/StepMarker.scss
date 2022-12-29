@@ -47,3 +47,31 @@
   );
   color: var(--denhaag-process-steps-step-marker-current-color, var(--denhaag-process-steps-step-marker-color));
 }
+
+.denhaag-process-steps__step-marker--warning {
+  background-color: var(
+    --denhaag-process-steps-step-marker-warning-background-color,
+    var(--denhaag-process-steps-step-marker-background-color)
+  );
+  border-color: var(
+    --denhaag-process-steps-step-marker-warning-border-color,
+    var(--denhaag-process-steps-step-marker-border-color, transparent)
+  );
+  color: var(--denhaag-process-steps-step-marker-warning-color, var(--denhaag-process-steps-step-marker-color));
+
+  .denhaag-icon {
+    margin-block-start: -2px;
+  }
+}
+
+.denhaag-process-steps__step-marker--error {
+  background-color: var(
+    --denhaag-process-steps-step-marker-error-background-color,
+    var(--denhaag-process-steps-step-marker-background-color)
+  );
+  border-color: var(
+    --denhaag-process-steps-step-marker-error-border-color,
+    var(--denhaag-process-steps-step-marker-border-color, transparent)
+  );
+  color: var(--denhaag-process-steps-step-marker-error-color, var(--denhaag-process-steps-step-marker-color));
+}
