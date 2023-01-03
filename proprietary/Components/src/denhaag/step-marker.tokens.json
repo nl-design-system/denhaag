@@ -1,0 +1,55 @@
+{
+  "denhaag": {
+    "step-marker": {
+      "border-width": { "value": "2px" },
+      "font-family": { "value": "{denhaag.typography.sans-serif.font-family}" },
+      "font-weight": { "value": "400" },
+      "font-size": { "value": "{denhaag.typography.scale.s.font-size}" },
+      "margin": { "value": "auto" },
+      "padding": { "value": "12px" },
+      "size": { "value": "32px" },
+      "icon-size": { "value": "20px" },
+      "nested": {
+        "size": { "value": " 16px" },
+        "icon-size": { "value": "10px" }
+      },
+      "checked": {
+        "background-color": { "value": "{denhaag.color.white}" },
+        "border-color": { "value": "{denhaag.color.green.3}" },
+        "color": { "value": "{denhaag.color.green.3}" }
+      },
+      "current": {
+        "background-color": { "value": "{denhaag.color.green.3}" },
+        "border-color": { "value": "{denhaag.color.green.3}" },
+        "color": { "value": "{denhaag.color.white}" },
+        "nested": {
+          "color": { "value": "{denhaag.color.green.3}" }
+        }
+      },
+      "disabled": {
+        "background-color": { "value": "{denhaag.color.grey.1}" },
+        "border-color": { "value": "{denhaag.color.grey.1}" },
+        "color": { "value": "{denhaag.color.grey.4}" }
+      },
+      "not-checked": {
+        "background-color": { "value": "{denhaag.color.white}" },
+        "border-color": { "value": "{denhaag.color.grey.2}" },
+        "color": { "value": "{denhaag.color.grey.4}" }
+      },
+      "warning": {
+        "background-color": { "value": "{denhaag.color.orange.4}" },
+        "border-color": { "value": "{denhaag.color.orange.4}" },
+        "color": { "value": "{denhaag.color.white}" },
+        "nested": {
+          "background-color": { "value": "{denhaag.color.white}" },
+          "border-color": { "value": "{denhaag.color.orange.4}" }
+        }
+      },
+      "error": {
+        "background-color": { "value": "{denhaag.color.red.3}" },
+        "border-color": { "value": "{denhaag.color.red.3}" },
+        "color": { "value": "{denhaag.color.white}" }
+      }
+    }
+  }
+}
