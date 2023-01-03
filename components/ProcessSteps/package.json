@@ -31,6 +31,7 @@
   "dependencies": {
     "@gemeente-denhaag/baseprops": "0.2.3-alpha.300",
     "@gemeente-denhaag/icons": "0.2.3-alpha.300",
+    "@gemeente-denhaag/step-marker": "0.0.1-alpha.1",
     "@gemeente-denhaag/typography": "0.2.3-alpha.300"
   },
   "peerDependencies": {
@@ -38,6 +39,5 @@
   },
   "devDependencies": {
     "@gemeente-denhaag/button": "0.2.3-alpha.300"
-  },
-  "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
+  }
 }

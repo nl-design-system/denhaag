@@ -1,6 +1,6 @@
 .denhaag-process-steps__step-line {
   position: absolute;
-  left: calc(var(--denhaag-process-steps-step-marker-size) / 2);
+  left: calc(var(--denhaag-step-marker-size) / 2);
   top: 0;
   height: 100%;
   outline: var(--denhaag-process-steps-step-line-width, 1px) var(--denhaag-process-steps-step-line-style, dashed)

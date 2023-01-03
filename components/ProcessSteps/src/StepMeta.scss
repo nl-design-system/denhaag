@@ -1,6 +1,6 @@
 .denhaag-process-steps__step-meta {
   position: relative;
-  margin-inline-start: calc(var(--denhaag-process-steps-step-marker-size) + 16px);
+  margin-inline-start: calc(var(--denhaag-step-marker-size) + 16px);
   font-size: var(--denhaag-process-steps-step-meta-font-size);
   color: var(--denhaag-process-steps-step-meta-color);
 }
