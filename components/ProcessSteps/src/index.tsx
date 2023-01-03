@@ -3,10 +3,10 @@ import { Step } from './Step';
 import { StepList, StepListProps } from './StepList';
 import { StepHeader } from './StepHeader';
 import { StepHeading } from './StepHeading';
-import { StepMarker } from './StepMarker';
 import { SubStep } from './SubStep';
-import { SubStepMarker } from './SubStepMarker';
 import { SubStepHeading } from './SubStepHeading';
+import { AlertTriangleIcon, CheckedIcon, CloseIcon } from '@gemeente-denhaag/icons';
+import { StepMarker } from '@gemeente-denhaag/step-marker';
 
 import './index.scss';
 import { StepBody } from './StepBody';
@@ -17,7 +17,7 @@ import StepLine from './StepLine';
 export type StepStatus = 'checked' | 'not-checked' | 'current' | 'warning' | 'error';
 
 interface StepProps {
-  key: Key;
+  id: Key;
   title: string;
   marker?: Key;
   date?: string;
@@ -73,12 +73,22 @@ const ProcessStep = ({ step, nextStep, expanded = false, toggleExpanded, collaps
   return (
     <Step appearance={step.status} current={step.status === 'current'}>
       <StepHeader
-        aria-controls={`${step.key}--details`}
+        aria-controls={`${step.id}--details`}
         expanded={expanded}
         collapsible={collapsible}
         onClick={toggleExpanded}
       >
-        <StepMarker appearance={step.status}>{step.marker || step.key}</StepMarker>
+        <StepMarker appearance={step.status}>
+          {step.status === 'checked' ? (
+            <CheckedIcon />
+          ) : step.status === 'warning' ? (
+            <AlertTriangleIcon />
+          ) : step.status === 'error' ? (
+            <CloseIcon />
+          ) : (
+            step.marker
+          )}
+        </StepMarker>
         <StepHeading appearance={step.status}>{step.title}</StepHeading>
       </StepHeader>
       <StepBody>
@@ -93,14 +103,16 @@ const ProcessStep = ({ step, nextStep, expanded = false, toggleExpanded, collaps
         {step.date && <StepMeta date>{step.date}</StepMeta>}
       </StepBody>
       {step.steps?.length && (
-        <StepDetails id={`${step.key}--details`} expanded={collapsible ? expanded : true}>
+        <StepDetails id={`${step.id}--details`} expanded={collapsible ? expanded : true}>
           <StepList>
             {step.steps?.map((substep, index, substeps) => {
               const nextSubStep = substeps[index + 1];
               const nextStatus = nextSubStep?.status || nextStep?.status;
               return (
                 <SubStep key={index}>
-                  <SubStepMarker appearance={substep.status} />
+                  <StepMarker appearance={substep.status} nested>
+                    {substep.status === 'checked' && <CheckedIcon />}
+                  </StepMarker>
                   <SubStepHeading>{substep.title}</SubStepHeading>
                   {(nextSubStep || nextStep) && (
                     <StepLine
@@ -144,12 +156,12 @@ export const ProcessSteps = ({
       {steps.map((step, index) => {
         return (
           <ProcessStep
-            key={step.key}
+            key={step.id}
             step={step}
-            expanded={expandedSteps.includes(step.key)}
-            disabled={disabledSteps.includes(step.key)}
+            expanded={expandedSteps.includes(step.id)}
+            disabled={disabledSteps.includes(step.id)}
             nextStep={steps[index + 1]}
-            toggleExpanded={() => toggleState(step.key, expandedSteps, setExpandedSteps)}
+            toggleExpanded={() => toggleState(step.id, expandedSteps, setExpandedSteps)}
             collapsible={collapsible && !!step.steps?.length && step.steps[0].status !== 'error'}
           />
         );
@@ -164,8 +176,6 @@ export * from './Step';
 export * from './StepHeader';
 export * from './StepHeading';
 export * from './StepList';
-export * from './StepMarker';
 export * from './SubStep';
 export * from './SubStepHeading';
-export * from './SubStepMarker';
 export * from './StepMeta';

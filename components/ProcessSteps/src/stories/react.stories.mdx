@@ -6,14 +6,14 @@ export const exampleArgs = {
   expandedSteps: ["deelname"],
   steps: [
     {
-      key: "deelname",
+      id: "deelname",
       marker: 1,
       title: "Deelname aan geluidsonderzoek",
       status: "checked",
       steps: [{ title: "Aanmelding ontvangen", status: "checked" }],
     },
     {
-      key: "onderzoek",
+      id: "onderzoek",
       marker: 2,
       title: "Onderzoek naar geluidsoverlast",
       status: "current",
@@ -23,8 +23,8 @@ export const exampleArgs = {
         { title: "Onderzoek resultaten verwerkt" },
       ],
     },
-    { key: "uitvoeren", marker: 3, title: "Uitvoeren van maatregelen" },
-    { key: "klaar", marker: 4, title: "Maatregelen zijn uitgevoerd" },
+    { id: "uitvoeren", marker: 3, title: "Uitvoeren van maatregelen" },
+    { id: "klaar", marker: 4, title: "Maatregelen zijn uitgevoerd" },
   ],
 };
 
@@ -33,7 +33,7 @@ export const Template = (args) => {
 };
 
 <Meta
-  title="React/Process Steps"
+  title="React/Process Steps/Status"
   component={ProcessSteps}
   parameters={{
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
@@ -70,19 +70,19 @@ export const Template = (args) => {
     args={{
       steps: [
         {
-          key: "getuigen-wijzigen",
+          id: "getuigen-wijzigen",
           marker: 1,
           title: "Getuigen wijzigen of meer getuigen uitnodigen",
           status: "checked",
         },
         {
-          key: "getuigen-definitief",
+          id: "getuigen-definitief",
           marker: 2,
           title: "Getuigen zijn definitief en bevestigingen van getuigen ontvangen",
           status: "current",
         },
-        { key: "extras", marker: 3, title: "Eventuele extras bestellen" },
-        { key: "trouwen", marker: 4, title: "Trouwen" },
+        { id: "extras", marker: 3, title: "Eventuele extras bestellen" },
+        { id: "trouwen", marker: 4, title: "Trouwen" },
       ],
     }}
   >
@@ -98,7 +98,7 @@ export const Template = (args) => {
     args={{
       steps: [
         {
-          key: "getuigen-wijzigen",
+          id: "getuigen-wijzigen",
           marker: 1,
           title: "Getuigen wijzigen of meer getuigen uitnodigen",
           status: "checked",
@@ -110,7 +110,7 @@ export const Template = (args) => {
           date: "Tussen vandaag en 24 februari 2023",
         },
         {
-          key: "getuigen-definitief",
+          id: "getuigen-definitief",
           marker: 2,
           title: "Getuigen zijn definitief en bevestigingen van getuigen ontvangen",
           status: "current",
@@ -119,7 +119,7 @@ export const Template = (args) => {
           date: "Regel het vóór 24 februari 2023",
         },
         {
-          key: "extras",
+          id: "extras",
           marker: 3,
           title: "Eventuele extras bestellen",
           meta: (
@@ -130,7 +130,7 @@ export const Template = (args) => {
           date: "Mogelijk tot 1 maart 2023",
         },
         {
-          key: "trouwen",
+          id: "trouwen",
           marker: 4,
           title: "Trouwen",
           meta: (
@@ -159,14 +159,14 @@ export const Template = (args) => {
       expandedSteps: ["onderzoek"],
       steps: [
         {
-          key: "deelname",
+          id: "deelname",
           marker: 1,
           title: "Deelname aan geluidsonderzoek",
           status: "checked",
           steps: [{ title: "Aanmelding ontvangen", status: "checked" }],
         },
         {
-          key: "onderzoek",
+          id: "onderzoek",
           marker: 2,
           title: "Onderzoek naar geluidsoverlast",
           status: "warning",
@@ -176,8 +176,8 @@ export const Template = (args) => {
             { title: "Onderzoek resultaten verwerkt" },
           ],
         },
-        { key: "uitvoeren", marker: 3, title: "Uitvoeren van maatregelen" },
-        { key: "klaar", marker: 4, title: "Maatregelen zijn uitgevoerd" },
+        { id: "uitvoeren", marker: 3, title: "Uitvoeren van maatregelen" },
+        { id: "klaar", marker: 4, title: "Maatregelen zijn uitgevoerd" },
       ],
     }}
   >
@@ -194,22 +194,22 @@ export const Template = (args) => {
       expandedSteps: ["onderzoek"],
       steps: [
         {
-          key: "deelname",
+          id: "deelname",
           marker: 1,
           title: "Deelname aan geluidsonderzoek",
           status: "checked",
           steps: [{ title: "Aanmelding ontvangen", status: "checked" }],
         },
         {
-          key: "onderzoek",
+          id: "onderzoek",
           marker: 2,
           title: "Onderzoek naar geluidsoverlast",
           status: "error",
           meta: "Er is geen afspraak gemaakt. De aanvraag is stopgezet. Wilt u toch graag in aanmerking komen voor subsidie? Neem dan contact op met de gemeente via 14070.",
           steps: [{ title: "Afspraak meten geluidsoverlast gemaakt", status: "error" }],
         },
-        { key: "uitvoeren", marker: 3, title: "Uitvoeren van maatregelen" },
-        { key: "klaar", marker: 4, title: "Maatregelen zijn uitgevoerd" },
+        { id: "uitvoeren", marker: 3, title: "Uitvoeren van maatregelen" },
+        { id: "klaar", marker: 4, title: "Maatregelen zijn uitgevoerd" },
       ],
     }}
   >
