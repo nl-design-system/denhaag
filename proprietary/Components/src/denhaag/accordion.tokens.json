@@ -141,7 +141,7 @@
       },
       "transition": {
         "duration": {
-          "value": "150ms"
+          "value": "400ms"
         },
         "timing-function": {
           "value": "ease-in-out"
@@ -150,7 +150,7 @@
       "open": {
         "transition": {
           "duration": {
-            "value": "400ms"
+            "value": "500ms"
           },
           "timing-function": {
             "value": "ease-in-out"
