@@ -129,7 +129,7 @@
     "stylelint-order": "5.0.0",
     "typescript": "4.6.4",
     "webpack": "5.73.0",
-    "webpack-dev-server": "3.11.3",
+    "webpack-dev-server": "4.11.1",
     "yarn": "1.22.18"
   },
   "engines": {
