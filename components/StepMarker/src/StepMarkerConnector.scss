@@ -1,0 +1,77 @@
+.denhaag-step-marker__connector {
+  position: absolute;
+  left: calc(var(--denhaag-step-marker-size) / 2);
+  top: 0;
+  height: 100%;
+  outline: var(--denhaag-step-marker-connector-width, 1px) var(--denhaag-step-marker-connector-style, dashed)
+    var(--denhaag-step-marker-connector-color);
+}
+
+.denhaag-step-marker__connector--main-to-main {
+  top: calc(-1 * calc(var(--denhaag-step-marker-size) / 2));
+  padding-block-end: calc(var(--denhaag-process-steps-step-distance) + var(--denhaag-step-marker-size));
+}
+
+.denhaag-step-marker__connector--main-to-nested {
+  top: calc(-1 * calc(var(--denhaag-step-marker-size) / 2));
+  padding-block-end: calc(var(--denhaag-process-steps-step-distance) + var(--denhaag-step-marker-nested-size));
+}
+
+.denhaag-step-marker__connector--nested-to-nested {
+  top: var(--denhaag-step-marker-nested-size);
+  padding-block-end: var(--denhaag-process-steps-sub-step-distance);
+}
+
+.denhaag-step-marker__connector--nested-to-main {
+  top: var(--denhaag-step-marker-nested-size);
+  padding-block-end: var(--denhaag-process-steps-step-distance);
+}
+
+.denhaag-step-marker__connector--not-checked {
+  outline-width: var(
+    --denhaag-step-marker-connector-not-checked-outline-width,
+    var(--denhaag-step-marker-connector-outline-width, 1px)
+  );
+  outline-style: var(--denhaag-step-marker-connector-not-checked-outline-style, dashed);
+  outline-color: var(
+    --denhaag-step-marker-connector-not-checked-outline-color,
+    var(--denhaag-step-marker-connector-outline-color)
+  );
+}
+
+.denhaag-step-marker__connector--checked,
+.denhaag-step-marker__connector--current {
+  outline-width: var(
+    --denhaag-step-marker-connector-checked-outline-width,
+    var(--denhaag-step-marker-connector-outline-width, 1px)
+  );
+  outline-style: var(--denhaag-step-marker-connector-checked-outline-style, solid);
+  outline-color: var(
+    --denhaag-step-marker-connector-checked-outline-color,
+    var(--denhaag-step-marker-connector-outline-color)
+  );
+}
+
+.denhaag-step-marker__connector--warning {
+  outline-width: var(
+    --denhaag-step-marker-connector-warning-outline-width,
+    var(--denhaag-step-marker-connector-outline-width, 1px)
+  );
+  outline-style: var(--denhaag-step-marker-connector-warning-outline-style, solid);
+  outline-color: var(
+    --denhaag-step-marker-connector-warning-outline-color,
+    var(--denhaag-step-marker-connector-outline-color)
+  );
+}
+
+.denhaag-step-marker__connector--error {
+  outline-width: var(
+    --denhaag-step-marker-connector-error-outline-width,
+    var(--denhaag-step-marker-connector-outline-width, 1px)
+  );
+  outline-style: var(--denhaag-step-marker-connector-error-outline-style, solid);
+  outline-color: var(
+    --denhaag-step-marker-connector-error-outline-color,
+    var(--denhaag-step-marker-connector-outline-color)
+  );
+}

@@ -6,13 +6,12 @@ import { StepHeading } from './StepHeading';
 import { SubStep } from './SubStep';
 import { SubStepHeading } from './SubStepHeading';
 import { AlertTriangleIcon, CheckedIcon, CloseIcon } from '@gemeente-denhaag/icons';
-import { StepMarker } from '@gemeente-denhaag/step-marker';
+import { StepMarker, StepMarkerConnector } from '@gemeente-denhaag/step-marker';
 
 import './index.scss';
 import { StepBody } from './StepBody';
 import { StepMeta } from './StepMeta';
 import { StepDetails } from './StepDetails';
-import StepLine from './StepLine';
 
 export type StepStatus = 'checked' | 'not-checked' | 'current' | 'warning' | 'error';
 
@@ -93,10 +92,13 @@ const ProcessStep = ({ step, nextStep, expanded = false, toggleExpanded, collaps
       </StepHeader>
       <StepBody>
         {nextStep && (
-          <StepLine
+          <StepMarkerConnector
             from="main"
-            to="main"
-            appearance={getLineAppearance({ stepStatus: step.status, nextStepStatus: nextStatus, expanded })}
+            to={expanded ? 'nested' : 'main'}
+            appearance={getLineAppearance({
+              stepStatus: step.status,
+              nextStepStatus: nextStatus,
+            })}
           />
         )}
         {step.meta && <StepMeta>{step.meta}</StepMeta>}
@@ -115,13 +117,12 @@ const ProcessStep = ({ step, nextStep, expanded = false, toggleExpanded, collaps
                   </StepMarker>
                   <SubStepHeading>{substep.title}</SubStepHeading>
                   {(nextSubStep || nextStep) && (
-                    <StepLine
+                    <StepMarkerConnector
                       from="nested"
                       to={nextSubStep ? 'nested' : 'main'}
                       appearance={getLineAppearance({
                         stepStatus: substep.status,
                         nextStepStatus: nextStatus,
-                        expanded,
                       })}
                     />
                   )}

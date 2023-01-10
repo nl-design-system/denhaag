@@ -49,6 +49,19 @@
         "background-color": { "value": "{denhaag.color.red.3}" },
         "border-color": { "value": "{denhaag.color.red.3}" },
         "color": { "value": "{denhaag.color.white}" }
+      },
+      "connector": {
+        "outline-width": { "value": "1px" },
+        "not-checked": { "outline-color": { "value": "{denhaag.color.grey.2}" } },
+        "checked": {
+          "outline-color": { "value": "{denhaag.color.green.3}" }
+        },
+        "warning": {
+          "outline-color": { "value": "{denhaag.color.orange.5}" }
+        },
+        "error": {
+          "outline-color": { "value": "{denhaag.color.red.3}" }
+        }
       }
     }
   }
