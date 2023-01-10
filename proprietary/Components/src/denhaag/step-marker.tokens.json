@@ -57,7 +57,7 @@
           "outline-color": { "value": "{denhaag.color.green.3}" }
         },
         "warning": {
-          "outline-color": { "value": "{denhaag.color.orange.5}" }
+          "outline-color": { "value": "{denhaag.color.orange.4}" }
         },
         "error": {
           "outline-color": { "value": "{denhaag.color.red.3}" }
