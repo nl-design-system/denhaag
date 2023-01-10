@@ -3,13 +3,13 @@ import React, { HTMLAttributes } from 'react';
 
 interface StepDetailsProps extends HTMLAttributes<HTMLDivElement> {
   id: string;
-  expanded?: boolean;
+  collapsed?: boolean;
 }
 
-export const StepDetails: React.FC<StepDetailsProps> = ({ id, expanded = false, children }) => (
+export const StepDetails: React.FC<StepDetailsProps> = ({ id, collapsed = false, children }) => (
   <div
     id={id}
-    className={clsx('denhaag-process-steps__step-details', !expanded && 'denhaag-process-steps__step-details--hidden')}
+    className={clsx('denhaag-process-steps__step-details', collapsed && 'denhaag-process-steps__step-details--hidden')}
   >
     {children}
   </div>

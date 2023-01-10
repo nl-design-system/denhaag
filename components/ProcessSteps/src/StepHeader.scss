@@ -1,25 +1,5 @@
 .denhaag-process-steps__step-header {
   display: flex;
   align-items: center;
-  border: 0;
-  background-color: inherit;
   gap: 16px;
-  appearance: none;
-  padding-block-end: 0;
-  padding-block-start: 0;
-  padding-inline-end: 0;
-  padding-inline-start: 0;
-  margin-block-end: 0;
-  margin-block-start: 0;
-  margin-inline-end: 0;
-  margin-inline-start: 0;
-}
-
-.denhaag-process-steps__step-header--current {
-  font-weight: var(--denhaag-process-steps-step-heading-current-font-weight);
-  color: var(--denhaag-process-steps-step-heading-current-color);
-}
-
-.denhaag-process-steps__step-header--checked {
-  color: var(--denhaag-process-steps-step-heading-checked-color);
 }

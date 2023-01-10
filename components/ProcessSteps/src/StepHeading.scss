@@ -7,6 +7,8 @@
   font-weight: var(--denhaag-process-steps-step-heading-font-weight);
   line-height: var(--denhaag-process-steps-step-heading-line-height);
   text-align: start;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .denhaag-process-steps__step-heading--not-checked {
