@@ -27,18 +27,6 @@
           "color": { "value": "{denhaag.color.red.3}" }
         }
       },
-      "step-line": {
-        "not-checked": { "outline-color": { "value": "{denhaag.color.grey.2}" } },
-        "checked": {
-          "outline-color": { "value": "{denhaag.color.green.3}" }
-        },
-        "warning": {
-          "outline-color": { "value": "{denhaag.color.orange.5}" }
-        },
-        "error": {
-          "outline-color": { "value": "{denhaag.color.red.3}" }
-        }
-      },
       "step-collapse-icon": {
         "size": { "value": "16px" },
         "padding": { "value": "4px" }
