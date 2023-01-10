@@ -39,6 +39,12 @@
         "outline-offset": { "value": "2px" },
         "outline": { "value": "{denhaag.focus.border}" },
         "padding": { "value": "12px" }
+      },
+      "step-meta": {
+        "font-size": { "value": "16px" },
+        "date": {
+          "font-size": { "value": "20px" }
+        }
       }
     }
   }

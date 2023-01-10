@@ -12,17 +12,19 @@ import './index.scss';
 import { StepBody } from './StepBody';
 import { StepMeta } from './StepMeta';
 import { StepDetails } from './StepDetails';
+import { StepHeaderToggle } from './StepHeaderToggle';
 
 export type StepStatus = 'checked' | 'not-checked' | 'current' | 'warning' | 'error';
 
 interface StepProps {
   id: Key;
-  title: string;
-  marker?: Key;
-  date?: string;
+  title: ReactNode;
+  marker?: ReactNode;
+  date?: ReactNode;
   meta?: ReactNode;
   steps?: Omit<StepProps, 'steps' | 'marker' | 'key'>[];
   status?: StepStatus;
+  collapsible?: boolean;
 }
 
 export interface ProcessStepsProps extends StepListProps {
@@ -37,8 +39,7 @@ interface ProcessStepProps {
   expanded?: boolean;
   disabled?: boolean;
   nextStep?: StepProps;
-  toggleExpanded: () => void;
-  collapsible?: boolean;
+  toggleExpanded: false | (() => void);
 }
 
 interface getLineAppearanceProps {
@@ -47,18 +48,14 @@ interface getLineAppearanceProps {
   expanded?: boolean;
 }
 
-const getLineAppearance = ({
-  stepStatus = 'not-checked',
-  nextStepStatus = 'not-checked',
-  expanded = false,
-}: getLineAppearanceProps) => {
-  if (expanded && stepStatus === 'checked' && nextStepStatus === 'error') {
+const getLineAppearance = ({ stepStatus = 'not-checked', nextStepStatus = 'not-checked' }: getLineAppearanceProps) => {
+  if (stepStatus === 'checked' && nextStepStatus === 'error') {
     return 'checked';
-  } else if (expanded && stepStatus === 'checked' && nextStepStatus === 'warning') {
+  } else if (stepStatus === 'checked' && nextStepStatus === 'warning') {
     return 'checked';
-  } else if (expanded && stepStatus === 'current' && nextStepStatus === 'error') {
+  } else if (stepStatus === 'current' && nextStepStatus === 'error') {
     return 'checked';
-  } else if (expanded && stepStatus === 'current' && nextStepStatus === 'warning') {
+  } else if (stepStatus === 'current' && nextStepStatus === 'warning') {
     return 'checked';
   } else if (nextStepStatus === 'not-checked') {
     return 'not-checked';
@@ -66,17 +63,13 @@ const getLineAppearance = ({
   return stepStatus;
 };
 
-const ProcessStep = ({ step, nextStep, expanded = false, toggleExpanded, collapsible = true }: ProcessStepProps) => {
-  const nextStatus = expanded && step.steps?.[0] ? step.steps[0].status : nextStep?.status;
+const canExpand = (step: StepProps) => !!step.steps?.length;
 
+const ProcessStep = ({ step, nextStep, expanded = true, toggleExpanded }: ProcessStepProps) => {
+  const nextStatus = (expanded && step.steps?.[0]?.status) || nextStep?.status;
   return (
     <Step appearance={step.status} current={step.status === 'current'}>
-      <StepHeader
-        aria-controls={`${step.id}--details`}
-        expanded={expanded}
-        collapsible={collapsible}
-        onClick={toggleExpanded}
-      >
+      <StepHeader>
         <StepMarker appearance={step.status}>
           {step.status === 'checked' ? (
             <CheckedIcon />
@@ -88,7 +81,13 @@ const ProcessStep = ({ step, nextStep, expanded = false, toggleExpanded, collaps
             step.marker
           )}
         </StepMarker>
-        <StepHeading appearance={step.status}>{step.title}</StepHeading>
+        {toggleExpanded && canExpand(step) ? (
+          <StepHeaderToggle ariaControls={`${step.id}--details`} expanded={expanded} onClick={toggleExpanded}>
+            <StepHeading appearance={step.status}>{step.title}</StepHeading>
+          </StepHeaderToggle>
+        ) : (
+          <StepHeading appearance={step.status}>{step.title}</StepHeading>
+        )}
       </StepHeader>
       <StepBody>
         {nextStep && (
@@ -105,7 +104,7 @@ const ProcessStep = ({ step, nextStep, expanded = false, toggleExpanded, collaps
         {step.date && <StepMeta date>{step.date}</StepMeta>}
       </StepBody>
       {step.steps?.length && (
-        <StepDetails id={`${step.id}--details`} expanded={collapsible ? expanded : true}>
+        <StepDetails id={`${step.id}--details`} collapsed={!expanded}>
           <StepList>
             {step.steps?.map((substep, index, substeps) => {
               const nextSubStep = substeps[index + 1];
@@ -148,22 +147,27 @@ export const ProcessSteps = ({
   steps = [],
   expandedSteps: initialExpanded = [],
   disabledSteps = [],
-  collapsible = true,
+  collapsible = false,
 }: ProcessStepsProps) => {
   const [expandedSteps, setExpandedSteps] = useState(initialExpanded);
 
   return (
     <StepList>
       {steps.map((step, index) => {
+        const collapsibleStep = collapsible && step.collapsible !== false;
         return (
           <ProcessStep
             key={step.id}
             step={step}
-            expanded={expandedSteps.includes(step.id)}
+            expanded={collapsibleStep ? expandedSteps.includes(step.id) : true}
             disabled={disabledSteps.includes(step.id)}
             nextStep={steps[index + 1]}
-            toggleExpanded={() => toggleState(step.id, expandedSteps, setExpandedSteps)}
-            collapsible={collapsible && !!step.steps?.length && step.steps[0].status !== 'error'}
+            toggleExpanded={
+              collapsibleStep &&
+              (() => {
+                toggleState(step.id, expandedSteps, setExpandedSteps);
+              })
+            }
           />
         );
       })}

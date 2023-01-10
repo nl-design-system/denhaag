@@ -8,11 +8,11 @@ export interface StepHeadingProps extends HTMLAttributes<HTMLDivElement> {
 
 export const StepHeading: React.FC<StepHeadingProps> = ({ children, appearance = 'not-checked', ...props }) => {
   return (
-    <div
+    <p
       {...props}
       className={clsx('denhaag-process-steps__step-heading', `denhaag-process-steps__step-heading--${appearance}`)}
     >
       {children}
-    </div>
+    </p>
   );
 };
