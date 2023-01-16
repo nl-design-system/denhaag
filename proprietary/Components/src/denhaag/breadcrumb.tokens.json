@@ -88,14 +88,6 @@
           "padding-block": { "value": "0.1875rem" },
           "padding-inline": { "value": "0.2813rem" }
         },
-        "link-after": {
-          "width": { "value": "0.375rem" },
-          "height": { "value": "0.375rem" },
-          "background-color": { "value": "{denhaag.color.grey.4}" },
-          "transform": { "value": "rotate(45deg)" },
-          "position": { "value": "absolute" },
-          "display": { "value": "inline-block" }
-        },
         "icon": {
           "margin-inline-start": { "value": "{denhaag.space.inline.2xl}" }
         },
@@ -119,7 +111,16 @@
           "line-height": { "value": "{denhaag.typography.scale.s.line-height}" },
           "font-weight": { "value": "{denhaag.typography.weight.regular}" },
           "padding-block": { "value": "{denhaag.space.block.xs}" },
-          "padding-inline": { "value": "0.75rem" }
+          "padding-inline": { "value": "0.75rem" },
+          "transform": { "value": "translateY(0.25rem)" }
+        },
+        "text-after": {
+          "background-color": { "value": "{denhaag.color.grey.4}" },
+          "display": { "value": "inline-block" },
+          "left": { "value": "45%" },
+          "position": { "value": "absolute" },
+          "size": { "value": "0.375rem" },
+          "transform": { "value": "rotate(45deg)" }
         }
       }
     }
