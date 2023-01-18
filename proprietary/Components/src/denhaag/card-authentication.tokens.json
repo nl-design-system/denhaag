@@ -3,6 +3,7 @@
     "card-authentication": {
       "background-color": { "value": "{denhaag.color.white}" },
       "border-color": { "value": "{denhaag.color.grey.2}" },
+      "padding": { "value": "{denhaag.space.block.xl}" },
       "portrait": {
         "max-inline-size": { "value": "362px" },
         "min-block-size": { "value": "415px" },
@@ -14,7 +15,7 @@
           "margin-block-end": { "value": "24px" }
         },
         "logo": {
-          "size": { "value": "80px" },
+          "size": { "value": "56px" },
           "margin-block-end": { "value": "24px" }
         }
       },
@@ -28,8 +29,8 @@
         "size": { "value": "56px" }
       },
       "title": {
-        "font-family": { "value": "{utrecht.heading-3.font-family}" },
-        "font-size": { "value": "{utrecht.heading-3.font-size}" },
+        "font-family": { "value": "{denhaag.typography.sans-serif-alternate.font-family}" },
+        "font-size": { "value": "{denhaag.typography.scale.xl.font-size}" },
         "font-weight": { "value": "{utrecht.heading.font-weight}" },
         "color": { "value": "{utrecht.heading-3.color}" }
       }

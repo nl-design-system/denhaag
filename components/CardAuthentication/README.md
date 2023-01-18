@@ -1,10 +1,10 @@
-# Authentication block
+# Authentication card
 
-This authentication block adequately sends the user an authentication flow necessary to perform a task or action on the website or when logging in. He stands out and offers help if needed. By making the choice between authentication service already on the detail page where the task is listed, you can reduce the number of clicks and place the choice more in the context of the task.
+This Authentication card adequately sends the user an authentication flow necessary to perform a task or action on the website or when logging in. He stands out and offers help if needed. By making the choice between authentication service already on the detail page where the task is listed, you can reduce the number of clicks and place the choice more in the context of the task.
 
 ## When to use
 
-Use the authentication block when users need to authenticate to perform a certain task or to log in. Think of logging in with DigiD to eventually fill in a form.
+Use the Authentication card when users need to authenticate to perform a certain task or to log in. Think of logging in with DigiD to eventually fill in a form.
 
 Also use it in combination with other login methods, when you don't necessarily have to log in. It sometimes happens that as a guest you have certain permissions to, for example, fill in a form. In this case you show the block with the option to continue.
 
@@ -22,7 +22,7 @@ Related components:
 
 ## Anatomy
 
-The authentication block consists of:
+The Authentication card consists of:
 
 1. Title: To introduce the action
 2. Paragraph (optional): To give more context to the action
@@ -36,7 +36,7 @@ The authentication block consists of:
 
 ## (Interactive) states
 
-The authentication block itself does not have interactive states.
+The Authentication card itself does not have interactive states.
 The buttons in this components have. Described in: Buttons
 
 ## Design properties
