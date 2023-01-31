@@ -1,7 +1,7 @@
-import React, { HTMLAttributes } from 'react';
+import React, { ButtonHTMLAttributes } from 'react';
 import clsx from 'clsx';
 
-export type SheetCloseButtonProps = HTMLAttributes<HTMLDivElement>;
+export type SheetCloseButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
 
 export const SheetCloseButton: React.FC<SheetCloseButtonProps> = (props: SheetCloseButtonProps) => {
   const className = clsx('denhaag-sheet__close-button', props.className);
@@ -12,6 +12,7 @@ export const SheetCloseButton: React.FC<SheetCloseButtonProps> = (props: SheetCl
       data-toggle-panel="menu-de-gemeente"
       tabIndex={0}
       aria-label="Sluit venster De gemeente"
+      onClick={props.onClick}
     >
       {props.children}
     </button>

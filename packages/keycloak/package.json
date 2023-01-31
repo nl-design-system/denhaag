@@ -22,6 +22,7 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
+    "@gemeente-denhaag/components-css": "0.1.1-alpha.243",
     "@gemeente-denhaag/design-tokens-components": "0.2.3-alpha.288",
     "@utrecht/components": "1.0.0-alpha.314"
   }

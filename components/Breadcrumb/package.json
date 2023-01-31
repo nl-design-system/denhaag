@@ -30,7 +30,8 @@
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "devDependencies": {
     "@gemeente-denhaag/icons": "0.2.3-alpha.270",
-    "@gemeente-denhaag/responsive-content": "0.1.1-alpha.157"
+    "@gemeente-denhaag/responsive-content": "0.1.1-alpha.157",
+    "@gemeente-denhaag/link": "0.2.3-alpha.300"
   },
   "peerDependencies": {
     "react": "^17.0.0"

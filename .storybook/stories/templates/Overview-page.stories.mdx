@@ -1,13 +1,15 @@
 import { Meta, Canvas, Story } from "@storybook/addon-docs";
-import { Heading1, Heading2, Paragraph } from "/components/Typography/src";
+import { Heading1, Heading2, Heading4, Paragraph } from "/components/Typography/src";
 import Alert from "/components/Alert/src";
-import Page from "/components/Page/src";
-import Header from "/components/Header/src";
+import { Page, PageHeader, PageFooter } from "/components/Page/src";
+import { Header, HeaderLogic } from "/components/Header/src";
 import HeaderLogo from "/components/HeaderLogo/src";
 import Footer from "/components/Footer/src";
 import ResponsiveContent from "/components/ResponsiveContent/src";
+import Link from "/components/Link/src";
 import Breadcrumb from "/components/Breadcrumb/src";
 import { Sidenav, SidenavItem, SidenavLink, SidenavList } from "/components/Sidenav/src";
+import { LinkGroup, LinkGroupList, LinkGroupListItem } from "/components/LinkGroup/src";
 import { AuthenticationCardGroup } from "/components/CardGroup/src/story-template";
 import {
   ArchiveIcon,
@@ -20,8 +22,9 @@ import {
   InstagramIcon,
   YouTubeIcon,
   CloseIcon,
+  ArrowRightIcon,
 } from "/components/Icons/src";
-import { Sheet, SheetCloseButton, SheetOverlay } from "/components/Sheet/src";
+import { Sheet, SheetCloseButton, SheetOverlay, SheetContainer } from "/components/Sheet/src";
 import IconButton from "/components/IconButton/src";
 
 import clsx from "clsx";
@@ -36,6 +39,35 @@ import "./story-login.css";
 />
 
 # Overview page
+
+export const exampleArgs = {
+  breadcrumbs: [
+    { label: "Home", url: "https://denhaag.nl/" },
+    { label: "MijnDenHaag", url: "https://denhaag.nl/parkeren/" },
+  ],
+  userprofileMenu: {
+    label: "Welkom Anne Klap",
+    navigationGroups: [
+      {
+        title: "MijnDenHaag",
+        navigation: [
+          { label: "Overzicht", url: "" },
+          { label: "Lopende zaken", url: "" },
+          { label: "Thema's", url: "" },
+          { label: "Mijn account", url: "" },
+        ],
+      },
+    ],
+  },
+  languageSwitcherMenu: {
+    title: "Kies uw voorkeurstaal",
+    languages: [
+      { title: "Engels", url: "#en", lang: "en", hrefLang: "en-GB", active: false },
+      { title: "Français", url: "#fr", lang: "fr", hrefLang: "fr-FR", active: false },
+      { title: "Nederlands", url: "#nl", lang: "nl", hrefLang: "nl-NL", active: true },
+    ],
+  },
+};
 
 export const navigationPathData = [
   { label: "Home", url: "https://denhaag.nl/" },
@@ -80,26 +112,10 @@ export const copyright = "© 2022 Gemeente Den Haag";
 
 <Canvas>
   <Story name="Overview page">
-    <Page
-      header={<Header breadcrumb={<Breadcrumb navigationPath={navigationPathData} />} />}
-      footer={
-        <Footer
-          newsletterData={newsletterData}
-          contactData={contactData}
-          legalData={footerLegalData}
-          copyrightLabel={copyright}
-          socialData={footerSocialData}
-        />
-      }
-    >
-      <Sheet>
-        <ResponsiveContent>
-          <IconButton className="denhaag-sheet__container-close-button">
-            <CloseIcon />
-          </IconButton>
-        </ResponsiveContent>
-      </Sheet>
-      <SheetOverlay />
+    <Page>
+      <PageHeader>
+        <HeaderLogic {...exampleArgs} />
+      </PageHeader>
       <ResponsiveContent className="denhaag-page-content denhaag-responsive-content--sidebar">
         <Sidenav>
           <SidenavList>
@@ -137,6 +153,15 @@ export const copyright = "© 2022 Gemeente Den Haag";
           </Paragraph>
         </main>
       </ResponsiveContent>
+      <PageFooter>
+        <Footer
+          newsletterData={newsletterData}
+          contactData={contactData}
+          legalData={footerLegalData}
+          copyrightLabel={copyright}
+          socialData={footerSocialData}
+        />
+      </PageFooter>
     </Page>
   </Story>
 </Canvas>

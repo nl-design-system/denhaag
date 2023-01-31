@@ -1,6 +1,5 @@
 .denhaag-sheet {
   position: absolute;
-  top: 7.5rem;
   left: 0;
   margin-block-start: var(--denhaag-header-border-bottom-width);
   background-color: white;
@@ -8,11 +7,23 @@
   z-index: 3;
   width: 100%;
   padding-block-start: 24px;
+  top: 4.5rem;
+
+  @media (min-width: 768px) {
+    top: 6rem;
+  }
+
+  @media (min-width: 1024px) {
+    top: 7.5rem;
+  }
+
+  &__close-button {
+    float: right;
+  }
 
   &__container {
-    &-close-button {
-      float: right;
-    }
+    padding-block-start: 32px;
+    padding-block-end: 48px;
 
     &-menu {
       display: grid;
@@ -20,13 +31,20 @@
   }
 
   &-overlay {
-    top: 0;
+    top: calc(4.5rem + 1px);
     left: 0;
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 100vh;
-    background-color: lightgray;
-    z-index: 0;
-    opacity: 40%;
+    background-color: rgb(0 0 0 / 50%);
+    z-index: 1;
+
+    @media (min-width: 768px) {
+      top: calc(6rem + 1px);
+    }
+
+    @media (min-width: 1024px) {
+      top: calc(7.5rem + 1px);
+    }
   }
 }

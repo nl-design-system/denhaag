@@ -1,0 +1,32 @@
+.denhaag-language-switcher {
+  .denhaag-language-switcher__list {
+    margin-inline-start: 0;
+    padding-inline-start: 0;
+
+    .denhaag-language-switcher__list-item {
+      list-style: none;
+      margin-block-start: 24px;
+    }
+
+    .denhaag-language-switcher__list-item-link--active {
+      color: var(--denhaag-color-green-3);
+      font-weight: var(--utrecht-heading-font-weight, bold);
+    }
+
+    .denhaag-language-switcher__list-item:nth-of-type(1) {
+      margin-block-start: 0;
+    }
+
+    .denhaag-link__icon {
+      font-size: var(--denhaag-link-group-link-icon-font-size);
+      width: var(--denhaag-link-group-link-icon-width);
+    }
+
+    .denhaag-link__icon .denhaag-icon {
+      align-self: var(--denhaag-link-group-link-icon-denhaag-icon-align-self);
+      padding-inline-start: 6px;
+      padding-block-start: var(--denhaag-link-group-link-icon-denhaag-icon-padding-block-start);
+      height: var(--denhaag-link-group-link-icon-denhaag-icon-height);
+    }
+  }
+}

@@ -3,7 +3,7 @@
     "page": {
       "header": {
         "background-color": { "value": "{denhaag.color.white}" },
-        "index": { "value": "1" }
+        "index": { "value": "2" }
       },
       "content": {
         "main": {
