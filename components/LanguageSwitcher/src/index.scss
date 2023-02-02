@@ -1,20 +1,33 @@
 .denhaag-language-switcher {
+  .denhaag-language-switcher__title {
+    @media (max-width: 1023px) {
+      display: none;
+    }
+  }
+
   .denhaag-language-switcher__list {
-    margin-inline-start: 0;
-    padding-inline-start: 0;
+    margin-inline-start: var(--denhaag-language-switcher-list-margin-inline-start);
+    padding-inline-start: var(--denhaag-language-switcher-list-padding-inline-start);
+
+    @media (min-width: 1024px) {
+      margin-block-start: var(--denhaag-language-switcher-list-margin-block-start);
+      margin-block-end: var(--denhaag-language-switcher-list-margin-block-end);
+    }
 
     .denhaag-language-switcher__list-item {
-      list-style: none;
-      margin-block-start: 24px;
-    }
+      list-style: var(--denhaag-language-switcher-list-item-list-style);
+      padding-block-start: 16px;
+      padding-block-end: 16px;
 
-    .denhaag-language-switcher__list-item-link--active {
-      color: var(--denhaag-color-green-3);
-      font-weight: var(--utrecht-heading-font-weight, bold);
-    }
+      @media (min-width: 768px) {
+        padding-block-start: 12px;
+        padding-block-end: 12px;
+      }
 
-    .denhaag-language-switcher__list-item:nth-of-type(1) {
-      margin-block-start: 0;
+      @media (min-width: 1024px) {
+        padding-block-start: var(--denhaag-language-switcher-list-item-padding-block-start);
+        padding-block-end: var(--denhaag-language-switcher-list-item-padding-block-end);
+      }
     }
 
     .denhaag-link__icon {
@@ -24,9 +37,25 @@
 
     .denhaag-link__icon .denhaag-icon {
       align-self: var(--denhaag-link-group-link-icon-denhaag-icon-align-self);
-      padding-inline-start: 6px;
       padding-block-start: var(--denhaag-link-group-link-icon-denhaag-icon-padding-block-start);
       height: var(--denhaag-link-group-link-icon-denhaag-icon-height);
+    }
+
+    .denhaag-language-switcher__list-item-link--active {
+      color: var(--denhaag-language-switcher-list-item-link-active-color);
+      font-weight: var(--denhaag-language-switcher-list-item-link-active-font-weight, bold);
+
+      .denhaag-link__icon {
+        margin-block-start: auto;
+        margin-block-end: auto;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+
+        .denhaag-icon {
+          padding-inline-start: 5px;
+          padding-block-start: 0;
+        }
+      }
     }
   }
 }

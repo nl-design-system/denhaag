@@ -2,7 +2,7 @@ import { Meta, Canvas, Story } from "@storybook/addon-docs";
 import { Heading1, Heading2, Heading4, Paragraph } from "/components/Typography/src";
 import Alert from "/components/Alert/src";
 import { Page, PageHeader, PageFooter } from "/components/Page/src";
-import { Header, HeaderLogic } from "/components/Header/src";
+import { HeaderLogic } from "/components/Header/src";
 import HeaderLogo from "/components/HeaderLogo/src";
 import Footer from "/components/Footer/src";
 import ResponsiveContent from "/components/ResponsiveContent/src";
@@ -62,9 +62,9 @@ export const exampleArgs = {
   languageSwitcherMenu: {
     title: "Kies uw voorkeurstaal",
     languages: [
+      { title: "Nederlands", url: "#nl", lang: "nl", hrefLang: "nl-NL", active: true },
       { title: "Engels", url: "#en", lang: "en", hrefLang: "en-GB", active: false },
       { title: "Français", url: "#fr", lang: "fr", hrefLang: "fr-FR", active: false },
-      { title: "Nederlands", url: "#nl", lang: "nl", hrefLang: "nl-NL", active: true },
     ],
   },
 };

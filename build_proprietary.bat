@@ -1,0 +1,1 @@
+cd C:\Git\MDH\platform\denhaag\proprietary\Common && yarn build && cd C:\Git\MDH\platform\denhaag\proprietary\Components && yarn build && cd C:\Git\MDH\platform\denhaag\proprietary\Proprietary && yarn build

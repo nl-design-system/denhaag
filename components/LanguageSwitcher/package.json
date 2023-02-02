@@ -28,7 +28,7 @@
     "build": "rollup -c ../../rollup.config.js",
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
-  "dependencies": {
+  "devDependencies": {
     "@gemeente-denhaag/icons": "0.2.3-alpha.297",
     "@gemeente-denhaag/link": "0.2.3-alpha.301"
   },

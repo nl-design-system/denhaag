@@ -14,3 +14,4 @@ export const Menu: React.FC<BaseProps> = (props: Omit<BaseProps, 'classes'>) => 
 
 export default Menu;
 export * from './MenuButton';
+export * from './MobileMenu';

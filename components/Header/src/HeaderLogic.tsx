@@ -2,20 +2,23 @@ import React, { useState } from 'react';
 import HeaderLogo from '@gemeente-denhaag/header-logo';
 import ResponsiveContent from '@gemeente-denhaag/responsive-content';
 import Link from '@gemeente-denhaag/link';
-import { MenuButtonExpandable } from '@gemeente-denhaag/menu';
+import { MenuButton, MenuButtonExpandable, MobileMenu } from '@gemeente-denhaag/menu';
 import './index.scss';
-import HeaderNew from './HeaderNew';
+import Header from './Header';
 import HeaderContent from './HeaderContent';
 import HeaderLogoContainer from './HeaderLogoContainer';
+import HeaderActions from './HeaderActions';
+import HeaderMobileActions from './HeaderMobileActions';
+import HeaderAction from './HeaderAction';
 import Breadcrumb from '@gemeente-denhaag/breadcrumb';
 import { Sheet, SheetOverlay, SheetContainer } from '@gemeente-denhaag/sheet';
 import IconButton from '@gemeente-denhaag/iconbutton';
-import { CloseIcon, ArrowRightIcon } from '@gemeente-denhaag/icons';
+import { CloseIcon, ArrowRightIcon, LogOutIcon } from '@gemeente-denhaag/icons';
 import { LinkGroup, LinkGroupList, LinkGroupListItem } from '@gemeente-denhaag/link-group';
 import { LanguageSwitcherLogic, LanguageSwitcherLogicProps } from '@gemeente-denhaag/language-switcher';
 import { Heading4 } from '@gemeente-denhaag/typography';
-
 import './index.scss';
+import { Button } from '@gemeente-denhaag/button';
 
 export interface HeaderLogicProps {
   breadcrumbs: Array<LinkItemProps>;
@@ -60,13 +63,13 @@ const NavigationGroup: React.FC<NavigationGroupProps> = (props: NavigationGroupP
 export const HeaderLogic: React.FC<HeaderLogicProps> = (props: HeaderLogicProps) => {
   const [welcomeMenuActive, setWelcomeMenuActive] = useState(false);
   const [languageSwitcherActive, setLanguageSwitcherActive] = useState(false);
+  const [mobileMenuActive, setMobileMenuActive] = useState(false);
 
   const handleWelcomeMenuToggle = (event: React.MouseEvent) => {
     event.preventDefault();
 
-    if (languageSwitcherActive) {
-      setLanguageSwitcherActive((current) => !current);
-    }
+    setLanguageSwitcherActive(false);
+    setMobileMenuActive(false);
 
     setWelcomeMenuActive((current) => !current);
   };
@@ -74,20 +77,29 @@ export const HeaderLogic: React.FC<HeaderLogicProps> = (props: HeaderLogicProps)
   const handleLanguageSwitcherToggle = (event: React.MouseEvent) => {
     event.preventDefault();
 
-    if (welcomeMenuActive) {
-      setWelcomeMenuActive((current) => !current);
-    }
+    setWelcomeMenuActive(false);
+    setMobileMenuActive(false);
 
     setLanguageSwitcherActive((current) => !current);
+  };
+
+  const handleMobileMenuToggle = (event: React.MouseEvent) => {
+    event.preventDefault();
+
+    setLanguageSwitcherActive(false);
+    setWelcomeMenuActive(false);
+
+    setMobileMenuActive((current) => !current);
   };
 
   const handleCloseSheet = () => {
     setWelcomeMenuActive(false);
     setLanguageSwitcherActive(false);
+    setMobileMenuActive(false);
   };
 
   return (
-    <HeaderNew>
+    <Header>
       <ResponsiveContent>
         <HeaderContent>
           <HeaderLogoContainer>
@@ -99,18 +111,21 @@ export const HeaderLogic: React.FC<HeaderLogicProps> = (props: HeaderLogicProps)
               <HeaderLogo />
             </Link>
           </HeaderLogoContainer>
-          <div className="denhaag-header__actions">
-            <div className="denhaag-language-switcher">
+          <HeaderActions>
+            <HeaderAction className="denhaag-header__actions-action-language-switcher">
               <MenuButtonExpandable active={languageSwitcherActive} onClick={handleLanguageSwitcherToggle}>
                 NL
               </MenuButtonExpandable>
-            </div>
-            <div className="denhaag-user-menu">
+            </HeaderAction>
+            <HeaderAction className="denhaag-header__actions-action-user-menu">
               <MenuButtonExpandable active={welcomeMenuActive} onClick={handleWelcomeMenuToggle}>
                 {props.userprofileMenu.label}
               </MenuButtonExpandable>
-            </div>
-          </div>
+            </HeaderAction>
+          </HeaderActions>
+          <HeaderMobileActions>
+            <Button onClick={handleMobileMenuToggle}>Menu</Button>
+          </HeaderMobileActions>
         </HeaderContent>
       </ResponsiveContent>
       <Breadcrumb navigationPath={props.breadcrumbs} />
@@ -146,7 +161,27 @@ export const HeaderLogic: React.FC<HeaderLogicProps> = (props: HeaderLogicProps)
           <SheetOverlay onClick={handleCloseSheet} />
         </React.Fragment>
       )}
-    </HeaderNew>
+      {mobileMenuActive && (
+        <React.Fragment>
+          <Sheet>
+            <ResponsiveContent>
+              <IconButton className="denhaag-sheet__close-button" onClick={handleMobileMenuToggle}>
+                <CloseIcon />
+              </IconButton>
+              <SheetContainer>
+                <MenuButton>Home</MenuButton>
+                <MobileMenu></MobileMenu>
+                <div className="denhaag-button-group">
+                  <Button icon={<LogOutIcon />}>Uitloggen</Button>
+                </div>
+                <LanguageSwitcherLogic {...props.languageSwitcherMenu}></LanguageSwitcherLogic>
+              </SheetContainer>
+            </ResponsiveContent>
+          </Sheet>
+          <SheetOverlay onClick={handleCloseSheet} />
+        </React.Fragment>
+      )}
+    </Header>
   );
 };
 

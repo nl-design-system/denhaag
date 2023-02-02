@@ -4,7 +4,7 @@ import './index.scss';
 import LanguageSwitcherTitle from './LanguageSwitcherTitle';
 import LanguageSwitcherList from './LanguageSwitcherList';
 import LanguageSwitcherListItem from './LanguageSwitcherListItem';
-import Link from '@gemeente-denhaag/link';
+import { Link } from '@gemeente-denhaag/link';
 import { ArrowRightIcon, CheckedIcon } from '@gemeente-denhaag/icons';
 import clsx from 'clsx';
 

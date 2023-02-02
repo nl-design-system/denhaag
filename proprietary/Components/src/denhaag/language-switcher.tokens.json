@@ -1,0 +1,23 @@
+{
+  "denhaag": {
+    "language-switcher": {
+      "list": {
+        "margin-block-start": { "value": "16px" },
+        "margin-block-end": { "value": "16px" },
+        "margin-inline-start": { "value": "0" },
+        "padding-inline-start": { "value": "0" },
+        "item": {
+          "list-style": { "value": "none" },
+          "padding-block-start": { "value": "8px" },
+          "padding-block-end": { "value": "8px" },
+          "link": {
+            "active": {
+              "color": { "value": "{denhaag.color.green.3}" },
+              "font-weight": { "value": "{utrecht.heading.font-weight}" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

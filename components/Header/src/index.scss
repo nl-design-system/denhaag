@@ -20,10 +20,22 @@
   }
 
   .denhaag-header__actions {
+    display: none;
+
+    @media (min-width: 1024px) {
+      display: flex;
+    }
+
+    .denhaag-header__actions-action {
+      margin-inline-start: 24px;
+    }
+  }
+
+  .denhaag-header__mobile-actions {
     display: flex;
 
-    .denhaag-user-menu {
-      margin-inline-start: 24px;
+    @media (min-width: 1024px) {
+      display: none;
     }
   }
 }
