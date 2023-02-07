@@ -35,7 +35,7 @@
     "@gemeente-denhaag/typography": "0.2.3-alpha.301"
   },
   "peerDependencies": {
-    "react": "^17.0.0"
+    "react": "^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
     "@gemeente-denhaag/button": "0.2.3-alpha.301"
