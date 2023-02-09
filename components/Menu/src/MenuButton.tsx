@@ -4,6 +4,7 @@ import { ChevronDownIcon } from '@gemeente-denhaag/icons';
 import clsx from 'clsx';
 
 import './menu-button.scss';
+import './index.scss';
 
 /**
  * The properties of the normal variant of the Menu Button

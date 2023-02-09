@@ -31,6 +31,7 @@
   "devDependencies": {
     "@gemeente-denhaag/baseprops": "0.2.3-alpha.269",
     "@gemeente-denhaag/button": "0.2.3-alpha.301",
+    "@gemeente-denhaag/breadcrumb": "0.1.1-alpha.229",
     "@gemeente-denhaag/header-logo": "0.1.1-alpha.157",
     "@gemeente-denhaag/menu": "0.2.3-alpha.297",
     "@gemeente-denhaag/responsive-content": "0.1.1-alpha.157",

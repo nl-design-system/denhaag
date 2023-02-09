@@ -1,3 +1,120 @@
-.denhaag-menu-item {
+.denhaag-mobile-menu {
+  transition-duration: 200ms;
+  will-change: transform;
+
+  &--scrolled {
+    transform: translateX(-100vw);
+  }
+}
+
+.denhaag-mobile-menu-list {
+  padding-inline-start: 0;
+}
+
+.denhaag-mobile-menu-list-submenu-title {
+  align-items: center;
+  border-bottom: 1px solid var(--denhaag-color-grey-1);
   display: flex;
+  font-size: 20px;
+  font-weight: 700;
+  min-block-size: 58px;
+}
+
+.denhaag-mobile-menu-list-item,
+.denhaag-mobile-menu-list-submenu-list-item {
+  border-bottom: 1px solid var(--denhaag-color-grey-1);
+  display: flex;
+  flex-direction: column;
+
+  .denhaag-mobile-menu-list-item-button {
+    font-size: 20px;
+    font-weight: 700;
+    &-text {
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+
+  .denhaag-mobile-menu-list-item-button,
+  .denhaag-mobile-menu-list-subitem-button,
+  .denhaag-mobile-menu-list-submenu-list-item-link {
+    --utrecht-button-subtle-font-size: inherit;
+    --utrecht-button-subtle-background-color: transparent;
+    --utrecht-button-subtle-color: auto;
+    --utrecht-button-min-block-size: 58px;
+
+    align-items: center;
+    appearance: none;
+    background-color: inherit;
+    border: 0;
+    display: flex;
+    gap: 0;
+    justify-content: space-between;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    margin-inline-end: 0;
+    margin-inline-start: 0;
+    padding-block-end: 0;
+    padding-block-start: 0;
+    padding-inline-end: 0;
+    padding-inline-start: 0;
+    text-decoration: none;
+    width: 100%;
+
+    .denhaag-mobile-menu-list-item-button-text {
+      align-items: center;
+      color: var(--denhaag-color-black);
+      display: flex;
+      font-family: var(--denhaag-process-steps-step-heading-font-family);
+      font-size: 20px;
+      font-weight: 700;
+      margin-block-end: 0;
+      margin-block-start: 0;
+      text-align: start;
+    }
+  }
+
+  .denhaag-mobile-menu-list-item-expanded-list,
+  .denhaag-mobile-menu-list-submenu-list {
+    display: none;
+    list-style: none;
+    padding-inline-start: 0;
+
+    &--open {
+      display: block;
+    }
+  }
+
+  .denhaag-mobile-menu-list-submenu {
+    display: none;
+    flex-direction: column;
+    left: 100vw;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    &--open {
+      display: flex;
+    }
+  }
+
+  .denhaag-mobile-menu-list-submenu__back-button {
+    /* --denhaag-button-secondary-action-background-color: transparent;
+    --denhaag-button-secondary-action-border-color: transparent;
+    --denhaag-button-secondary-action-color: var(--denhaag-breadcrumb-link-color, inherit);
+    --denhaag-button-secondary-action-hover-border-color: transparent; */
+
+    align-self: baseline;
+    background-color: transparent;
+    border: 0;
+    margin-block-end: 12px;
+    padding-block-start: 20px;
+    padding-block-end: 20px;
+    padding-inline-start: 0;
+    padding-inline-end: 24px;
+  }
+
+  .denhaag-mobile-menu-list-submenu-list-item-link__icon {
+    color: var(--denhaag-color-blue-3);
+  }
 }

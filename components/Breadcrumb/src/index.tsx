@@ -89,3 +89,9 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = (props: BreadcrumbProps) =>
 };
 
 export default Breadcrumb;
+
+export * from './BreadcrumbLink';
+export * from './BreadcrumbList';
+export * from './BreadcrumbListItem';
+export * from './BreadcrumbNavigation';
+export * from './BreadcrumbText';
