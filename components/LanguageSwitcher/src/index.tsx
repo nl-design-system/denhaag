@@ -19,9 +19,14 @@ interface Language {
 export interface LanguageSwitcherLogicProps {
   title: string;
   languages: Array<Language>;
+  mobileMenuScrolled?: boolean;
 }
 
-export const LanguageSwitcherLogic = ({ title = '', languages = [] }: LanguageSwitcherLogicProps) => {
+export const LanguageSwitcherLogic = ({
+  title = '',
+  languages = [],
+  mobileMenuScrolled,
+}: LanguageSwitcherLogicProps) => {
   const languageListContent = languages.map((language, key) => {
     const classNames = clsx(
       'denhaag-language-switcher__list-item-link',
@@ -31,6 +36,7 @@ export const LanguageSwitcherLogic = ({ title = '', languages = [] }: LanguageSw
     return (
       <LanguageSwitcherListItem key={key}>
         <Link
+          tabIndex={mobileMenuScrolled ? -1 : undefined}
           {...(!language.active && { icon: <ArrowRightIcon />, iconAlign: 'start' })}
           {...(language.active && { icon: <CheckedIcon />, iconAlign: 'end' })}
           href={language.url}

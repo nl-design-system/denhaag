@@ -9,6 +9,22 @@
   width: 100%;
   z-index: 3;
 
+  &.denhaag-sheet--dialog {
+    max-width: 100%;
+    max-height: 100%;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    border: none;
+    top: 0;
+    margin-block-start: 0;
+
+    &::backdrop {
+      top: 0;
+    }
+  }
+
   @media (min-width: 768px) {
     padding-block-start: 24px;
     top: 6rem;

@@ -1575,6 +1575,18 @@
   resolved "https://registry.yarnpkg.com/@gemeente-denhaag/breadcrumb/-/breadcrumb-0.1.1-alpha.208.tgz#f4d9cfaffab7eeb8c6fec4103a1122478dd0e845"
   integrity sha512-aQ5JkdyTxGoIZNa4OuI9psN5qVUphdnprriWlYVWx4kV7E5Dq2yISddxJjRAoW8Sme99E1P/MjT0bOxtaFexNg==
 
+"@gemeente-denhaag/breadcrumb@0.1.1-alpha.229":
+  version "0.1.1-alpha.229"
+  resolved "https://registry.yarnpkg.com/@gemeente-denhaag/breadcrumb/-/breadcrumb-0.1.1-alpha.229.tgz#1619a988e16d61044213be5b5a5a09ae0003d174"
+  integrity sha512-3JkgKTPi9XM185RaIIuIIlQt6dFVBpjF2ZyUO5m+UJvBbs4vJg+glOBeI1Tfchs/cYo7zWOj+cfHeix9sgBiZQ==
+
+"@gemeente-denhaag/button@0.2.3-alpha.301":
+  version "0.2.3-alpha.301"
+  resolved "https://registry.yarnpkg.com/@gemeente-denhaag/button/-/button-0.2.3-alpha.301.tgz#a85b03cf02fa78be7de1dcfe95b46bd85922881c"
+  integrity sha512-XLinVuTrGYNQtkVup8TwBWRfJ/0FLkd5JcnjzD8QdUQqTblndHVbkQw9KfuUn77/R4IwrT/+wqzNRhek0Wy6gg==
+  dependencies:
+    "@gemeente-denhaag/baseprops" "0.2.3-alpha.301"
+
 "@gemeente-denhaag/card-authentication@file:components/CardAuthentication":
   version "0.1.1-alpha.26"
 
