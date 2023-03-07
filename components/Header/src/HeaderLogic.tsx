@@ -69,26 +69,21 @@ export const HeaderLogic: React.FC<HeaderLogicProps> = (props: HeaderLogicProps)
 
   const mobileMenuDialogRef = useRef<HTMLDialogElement>(null);
 
-  const handleWelcomeMenuToggle = (event: React.MouseEvent) => {
-    event.preventDefault();
-
+  const handleWelcomeMenuToggle = () => {
     setLanguageSwitcherActive(false);
     setMobileMenuActive(false);
 
     setWelcomeMenuActive((current) => !current);
   };
 
-  const handleLanguageSwitcherToggle = (event: React.MouseEvent) => {
-    event.preventDefault();
-
+  const handleLanguageSwitcherToggle = () => {
     setWelcomeMenuActive(false);
     setMobileMenuActive(false);
 
     setLanguageSwitcherActive((current) => !current);
   };
 
-  const handleMobileMenuToggle = (event: React.MouseEvent) => {
-    event.preventDefault();
+  const handleMobileMenuToggle = () => {
     setLanguageSwitcherActive(false);
     setWelcomeMenuActive(false);
 

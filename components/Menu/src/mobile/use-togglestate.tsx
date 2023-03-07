@@ -1,16 +1,16 @@
 import { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
-const useToggleState = (buttonId?: string, expandableAreaId?: string, callback?: () => void) => {
+const useToggleState = (callback?: () => void) => {
   const [open, setOpen] = useState(false);
+  const expandableAreaId = uuidv4();
 
   const toggleState = () => {
     setOpen((open) => !open);
-    console.log('toggle state');
     callback?.();
   };
 
   var buttonProps = {
-    id: buttonId,
     'aria-expanded': open,
     'aria-controls': expandableAreaId,
     onClick: toggleState,

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { HTMLAttributes, useState } from 'react';
 import { SheetContainer } from '@gemeente-denhaag/sheet';
 import { ArrowRightIcon, ChevronDownIcon, ArrowLeftIcon, LogOutIcon } from '@gemeente-denhaag/icons';
 import { MobileMenuList } from './MobileMenuList';
@@ -18,7 +18,7 @@ interface NavigationGroupProps {
   navigation?: Array<NavigationGroupProps>;
 }
 
-export interface MobileMenuProps extends HTMLElement {
+export interface MobileMenuProps extends HTMLAttributes<HTMLElement> {
   navigation: Array<NavigationGroupProps>;
   languageSwitcherMenu: LanguageSwitcherLogicProps;
 }
@@ -29,9 +29,7 @@ interface ExpandedListItemProps extends NavigationGroupProps {
 }
 
 const ExpandedListItem = (props: ExpandedListItemProps) => {
-  const buttonId = `mobile-menu-list-level2-${props.label}-button`;
-  const itemId = `mobile-menu-list-level3-${props.label}-item`;
-  const toggle = useToggleState(buttonId, itemId, props.scrollMenu);
+  const toggle = useToggleState(props.scrollMenu);
 
   return (
     <MobileMenuListItem>
@@ -71,9 +69,7 @@ const ExpandedListItem = (props: ExpandedListItemProps) => {
 };
 
 const ExpandedList = (props: ExpandedListItemProps) => {
-  const buttonId = `mobile-menu-list-level1-${props.label}-button`;
-  const itemId = `mobile-menu-list-level2-${props.label}-item`;
-  const toggle = useToggleState(buttonId, itemId);
+  const toggle = useToggleState();
 
   return (
     <MobileMenuListItem active={toggle.open}>
