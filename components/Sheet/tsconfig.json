@@ -3,6 +3,7 @@
   "compilerOptions": {
     "rootDir": "src",
     "outDir": "dist",
+    "typeRoots": ["./src/@types"],
     "composite": true
   },
   "include": ["src/**/*"],

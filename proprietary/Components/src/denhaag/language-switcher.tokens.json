@@ -2,7 +2,8 @@
   "denhaag": {
     "language-switcher": {
       "list": {
-        "margin-block-start": { "value": "16px" },
+        "padding-block-start": { "value": "16px" },
+        "margin-block-start": { "value": "0" },
         "margin-block-end": { "value": "16px" },
         "margin-inline-start": { "value": "0" },
         "padding-inline-start": { "value": "0" },

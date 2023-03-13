@@ -1,23 +1,25 @@
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
-const useToggleState = (callback?: () => void) => {
+export const useToggleState = (callback?: () => void) => {
   const [open, setOpen] = useState(false);
-  const expandableAreaId = uuidv4();
+  const handleCallback = useCallback(() => callback?.(), [callback]);
+
+  const ariaControls = uuidv4();
 
   const toggleState = () => {
     setOpen((open) => !open);
-    callback?.();
+    handleCallback();
   };
 
   var buttonProps = {
     'aria-expanded': open,
-    'aria-controls': expandableAreaId,
+    'aria-controls': ariaControls,
     onClick: toggleState,
   };
 
   var expandableAreaProps = {
-    id: expandableAreaId,
+    id: ariaControls,
     active: open,
   };
 

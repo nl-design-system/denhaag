@@ -33,13 +33,11 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
 /**
  * Primary UI component for user interaction
  */
-export const Button: React.FC<ButtonProps> = ({
-  icon,
-  className,
-  type = 'button',
-  iconAlign = 'start',
-  ...props
-}: ButtonProps) => {
+
+export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(function Button(
+  { icon, className, type = 'button', iconAlign = 'start', ...props },
+  ref,
+) {
   const buttonClassNames = clsx(
     'denhaag-button',
     {
@@ -54,13 +52,13 @@ export const Button: React.FC<ButtonProps> = ({
   const iconWrapped = icon !== undefined ? <span className={'denhaag-button__icon'}>{icon}</span> : '';
 
   return (
-    <button {...props} type={type} className={buttonClassNames}>
+    <button {...props} ref={ref} type={type} className={buttonClassNames}>
       {iconAlign === 'start' ? iconWrapped : ''}
       <span className={'denhaag-button__label'}>{props.children}</span>
       {iconAlign === 'end' ? iconWrapped : ''}
     </button>
   );
-};
+});
 
 /**
  * Default export for Button

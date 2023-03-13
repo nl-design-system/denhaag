@@ -30,6 +30,7 @@
   "dependencies": {
     "@gemeente-denhaag/baseprops": "0.2.3-alpha.297",
     "@gemeente-denhaag/icons": "0.2.3-alpha.297",
+    "@gemeente-denhaag/language-switcher": "0.2.3-alpha.297",
     "uuidv4": "6.2.13"
   },
   "peerDependencies": {

@@ -10,7 +10,7 @@
     padding-inline-start: var(--denhaag-language-switcher-list-padding-inline-start);
 
     @media (min-width: 1024px) {
-      margin-block-start: var(--denhaag-language-switcher-list-margin-block-start);
+      padding-block-start: var(--denhaag-language-switcher-list-padding-block-start);
       margin-block-end: var(--denhaag-language-switcher-list-margin-block-end);
     }
 

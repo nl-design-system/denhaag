@@ -1,70 +1,64 @@
 .denhaag-sheet {
-  background-color: white;
-  left: 0;
-  margin-block-start: var(--denhaag-header-border-bottom-width);
-  min-height: 100vh;
-  overflow-x: hidden;
-  position: absolute;
-  top: 4.5rem;
-  width: 100%;
-  z-index: 3;
+  background-color: var(--denhaag-sheet-background-color);
+  left: var(--denhaag-sheet-left);
+  margin-block-start: var(--denhaag-sheet-margin-block-start);
+  min-height: var(--denhaag-sheet-min-height);
+  overflow-x: var(--denhaag-sheet-overflow-x);
+  position: var(--denhaag-sheet-position);
+  top: var(--denhaag-sheet-top);
+  width: var(--denhaag-sheet-width);
+  z-index: var(--denhaag-sheet-z-index);
 
   &.denhaag-sheet--dialog {
-    max-width: 100%;
-    max-height: 100%;
-    padding-block-start: 0;
-    padding-block-end: 0;
-    padding-inline-start: 0;
-    padding-inline-end: 0;
-    border: none;
-    top: 0;
-    margin-block-start: 0;
+    border: var(--denhaag-sheet-dialog-border);
+    margin-block-start: var(--denhaag-sheet-dialog-margin-block-start);
+    max-height: var(--denhaag-sheet-dialog-max-height);
+    max-width: var(--denhaag-sheet-dialog-max-width);
+    overflow-y: var(--denhaag-sheet-dialog-overflow-y);
+    padding-block-end: var(--denhaag-sheet-dialog-padding-block-end);
+    padding-block-start: var(--denhaag-sheet-dialog-padding-block-start);
+    padding-inline-end: var(--denhaag-sheet-dialog-padding-inline-end);
+    padding-inline-start: var(--denhaag-sheet-dialog-padding-inline-start);
+    top: var(--denhaag-sheet-dialog-top);
 
     &::backdrop {
-      top: 0;
+      top: var(--denhaag-sheet-dialog-backdrop-top);
     }
-  }
-
-  @media (min-width: 768px) {
-    padding-block-start: 24px;
-    top: 6rem;
   }
 
   @media (min-width: 1024px) {
-    min-height: 15rem;
-    top: 7.5rem;
+    padding-block-start: var(--denhaag-sheet-desktop-padding-block-start);
+    min-height: var(--denhaag-sheet-desktop-min-height);
+    top: var(--denhaag-sheet-desktop-top);
   }
 
   &__close-button {
-    float: right;
+    float: var(--denhaag-sheet-close-button-float);
   }
 
   &__container {
-    @media (min-width: 768px) {
-      padding-block-start: 32px;
-      padding-block-end: 48px;
-    }
+    margin-block-end: var(--denhaag-sheet-container-margin-block-end);
 
     &-menu {
-      display: grid;
+      display: var(--denhaag-sheet-container-menu-display);
     }
   }
 
   &-overlay {
-    background-color: rgb(0 0 0 / 50%);
-    height: 100vh;
-    left: 0;
-    position: fixed;
-    top: calc(4.5rem + 1px);
-    width: 100vw;
-    z-index: 1;
+    background-color: var(--denhaag-sheet-overlay-background-color);
+    height: var(--denhaag-sheet-overlay-height);
+    left: var(--denhaag-sheet-overlay-left);
+    position: var(--denhaag-sheet-overlay-position);
+    top: calc(var(--denhaag-sheet-overlay-top) + var(--denhaag-sheet-margin-block-start));
+    width: var(--denhaag-sheet-overlay-width);
+    z-index: var(--denhaag-sheet-overlay-z-index);
 
     @media (min-width: 768px) {
-      top: calc(6rem + 1px);
+      top: calc(var(--denhaag-sheet-overlay-tablet-top) + var(--denhaag-sheet-margin-block-start));
     }
 
     @media (min-width: 1024px) {
-      top: calc(7.5rem + 1px);
+      top: calc(var(--denhaag-sheet-overlay-desktop-top) + var(--denhaag-sheet-margin-block-start));
     }
   }
 }
