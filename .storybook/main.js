@@ -34,14 +34,7 @@ module.exports = {
 
     rules.push({
       test: /\.svg$/,
-      use: {
-        loader: '@svgr/webpack',
-        options: {
-          svgoConfig: {
-            plugins: [{ removeViewBox: false }],
-          },
-        },
-      },
+      use: ['@svgr/webpack'],
     });
     return config;
   },
