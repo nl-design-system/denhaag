@@ -6,6 +6,12 @@
       "content": {
         "padding": { "value": "0.75rem" }
       },
+      "date": {
+        "color": { "value": "{denhaag.color.green.4}" },
+        "font": {
+          "value": "normal {denhaag.typography.weight.regular} {denhaag.typography.scale.s.font-size}/{denhaag.typography.scale.s.line-height} {denhaag.typography.sans-serif.font-family}"
+        }
+      },
       "focus": {
         "transition": { "value": "none" }
       },
@@ -16,6 +22,9 @@
         "color": { "value": "{denhaag.color.blue.3}" },
         "float": { "value": "right" },
         "size": { "value": "{denhaag.space.block.xl}" }
+      },
+      "heading": {
+        "margin-block-start": { "value": "{denhaag.space.block.xs}" }
       },
       "image": {
         "aspect-ratio": { "value": "16 / 9" },
