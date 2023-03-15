@@ -16,10 +16,12 @@
     border-color: var(--denhaag-readspeaker-border-color);
   }
 
+  // Progress indicator.
   .rs-player-loadindicator {
     background-color: var(--denhaag-readspeaker-indicator-background-color);
     height: var(--denhaag-readspeaker-indicator-height);
     width: 100%;
+    top: calc(0px - (var(--denhaag-readspeaker-indicator-height) + var(--denhaag-readspeaker-indicator-gap)));
   }
 
   .rsbtn-progress {
