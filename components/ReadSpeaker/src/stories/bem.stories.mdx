@@ -3,6 +3,7 @@ import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
 
 import pkg from "../../package.json";
 import readme from "../../README.md";
+import "../index";
 
 <Meta
   title="CSS/Actions/ReadSpeaker"
@@ -26,7 +27,39 @@ import readme from "../../README.md";
 ### Default
 
 <Canvas>
+  {/* eslint-disable jsx-a11y/no-access-key */}
   <Story name="Default">
-    <div>ReadSpeaker</div>
+    <div className="denhaag-readspeaker rsbtn rs_preserve">
+      <a
+        rel="nofollow"
+        className="rsbtn_play"
+        accessKey="L"
+        title="Listen to this page using ReadSpeaker"
+        href="https://app-eu.readspeaker.com/cgi-bin/rsent?customerid=13613&amp;lang=nl_nl&amp;stattype=demo-site&amp;readclass=denhaag-content&amp;voice=Sophie&amp;url="
+      >
+        <span className="rsbtn_left rsimg rspart">
+          <span className="rsbtn_text">
+            <span>Listen</span>
+          </span>
+        </span>
+        <span className="rsbtn_right rsimg rsplay rspart"></span>
+      </a>
+    </div>
+    <div className="denhaag-content">
+      <p className="utrecht-paragraph">
+        Once upon a time, in a lush green meadow, there lived a little lamb named Snowy. Snowy was the youngest of the
+        flock and was loved by all the other sheep. Her wool was soft and fluffy, and her eyes were bright and curious.
+        Snowy loved to frolic in the meadow, playfully leaping over tall blades of grass, and chasing after butterflies.
+      </p>
+      <p className="utrecht-paragraph">
+        One sunny day, as Snowy was grazing with the rest of the flock, she wandered off into the nearby woods. The
+        other sheep called out to her, warning her not to go too far, but Snowy was too curious to listen. She pranced
+        through the woods, admiring the trees and the wildflowers, until she realized she was lost. The forest had grown
+        dark, and the trees looked menacing. Snowy began to cry, her bleats echoing through the woods. But just as she
+        had given up hope, a kind farmer stumbled upon her and took her back to her flock. From that day on, Snowy never
+        wandered off too far from her beloved flock, content to live out her days in the safety of the meadow.
+      </p>
+    </div>
   </Story>
+  {/* eslint-enable jsx-a11y/no-access-key */}
 </Canvas>

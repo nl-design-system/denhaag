@@ -1,0 +1,25 @@
+{
+  "denhaag": {
+    "readspeaker": {
+      "border-color": {
+        "value": "{denhaag.color.grey.2}"
+      },
+      "border-radius": {
+        "value": "4px"
+      },
+      "indicator": {
+        "height": {
+          "value": "4px"
+        },
+        "background-color": {
+          "value": "{denhaag.color.grey.2}"
+        }
+      },
+      "progress": {
+        "background-color": {
+          "value": "{denhaag.color.blue.3}"
+        }
+      }
+    }
+  }
+}

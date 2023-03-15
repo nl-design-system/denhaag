@@ -1,3 +1,28 @@
 .denhaag-readspeaker {
-  background: green;
+  .rsbtn_play {
+    border-color: var(--denhaag-readspeaker-border-color);
+    border-radius: var(--denhaag-readspeaker-border-radius);
+  }
+
+  .rsbtn_tooltoggle {
+    border-color: var(--denhaag-readspeaker-border-color);
+  }
+
+  .rsbtn_exp_inner {
+    border-radius: var(--denhaag-readspeaker-border-radius);
+  }
+
+  .rsbtn_right {
+    border-color: var(--denhaag-readspeaker-border-color);
+  }
+
+  .rs-player-loadindicator {
+    background-color: var(--denhaag-readspeaker-indicator-background-color);
+    height: var(--denhaag-readspeaker-indicator-height);
+    width: 100%;
+  }
+
+  .rsbtn-progress {
+    background-color: var(--denhaag-readspeaker-progress-background-color);
+  }
 }
