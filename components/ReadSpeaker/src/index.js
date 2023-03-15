@@ -14,10 +14,12 @@ const initReadSpeaker = () => {
 };
 
 window.addEventListener('DOMContentLoaded', () => {
+  // Configurations can be found here: https://wrdev.readspeaker.com/adaptation/configurations
   window.rsConf = {
     general: {
       uiLang: document.documentElement.lang,
       nativeLanguages: true,
+      saveLangVoice: true,
     },
   };
 

@@ -8,6 +8,9 @@
         "value": "4px"
       },
       "indicator": {
+        "gap": {
+          "value": "8px"
+        },
         "height": {
           "value": "4px"
         },
