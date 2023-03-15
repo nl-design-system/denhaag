@@ -97,6 +97,15 @@
   }
 }
 
+.denhaag-card-news__date {
+  color: var(--denhaag-card-news-date-color);
+  font: var(--denhaag-card-news-date-font);
+}
+
+.denhaag-card-news__heading {
+  margin-block-start: var(--denhaag-card-news-heading-margin-block-start);
+}
+
 .denhaag-card-news__heading,
 .denhaag-card-news__paragraph {
   margin-block-end: var(--denhaag-card-news-text-margin-block-end);
