@@ -2,7 +2,7 @@
   "denhaag": {
     "readspeaker": {
       "accent-color": {
-        "value": "{denhaag.color.green.3}"
+        "value": "{denhaag.color.blue.3}"
       },
       "background-color": {
         "value": "{denhaag.color.white}"
@@ -33,6 +33,11 @@
       "line-height": {
         "value": "{denhaag.typography.scale.base.line-height}"
       },
+      "margin": {
+        "block": {
+          "value": "12px"
+        }
+      },
       "active": {
         "background-color": {
           "value": "{denhaag.color.green.3}"
@@ -41,8 +46,11 @@
           "value": "{denhaag.color.white}"
         },
         "button": {
-          "shadow": {
-            "value": "0px 0px 0px 1px {denhaag.color.green.3}"
+          "background-color": {
+            "value": "{denhaag.color.green.3}"
+          },
+          "border-color": {
+            "value": "{denhaag.color.green.3}"
           }
         }
       },
@@ -51,8 +59,11 @@
           "value": "{denhaag.color.green.3}"
         },
         "button": {
-          "shadow": {
-            "value": "0px 0px 0px 1px {denhaag.color.green.3}"
+          "background-color": {
+            "value": "{denhaag.color.white}"
+          },
+          "border-color": {
+            "value": "{denhaag.color.green.3}"
           }
         }
       },
@@ -64,8 +75,21 @@
           "value": "{denhaag.focus.border}"
         },
         "button": {
-          "shadow": {
-            "value": "0px 0px 0px 1px {denhaag.color.green.3}"
+          "background-color": {
+            "value": "{denhaag.color.white}"
+          },
+          "border-color": {
+            "value": "{denhaag.color.green.3}"
+          }
+        }
+      },
+      "toggle": {
+        "padding": {
+          "block": {
+            "value": "8px"
+          },
+          "inline": {
+            "value": "12px"
           }
         }
       },
@@ -73,7 +97,7 @@
         "background-color": {
           "value": "{denhaag.color.white}"
         },
-        "shadow": {
+        "border-color": {
           "value": "none"
         },
         "width": {
@@ -105,6 +129,9 @@
         "background-color": {
           "value": "{denhaag.color.grey.1}"
         },
+        "font-size": {
+          "value": "{denhaag.typography.scale.s.font-size}"
+        },
         "error": {
           "color": {
             "value": "{denhaag.color.orange.4}"
@@ -112,6 +139,9 @@
         }
       },
       "settings": {
+        "gap": {
+          "value": "8px"
+        },
         "padding": {
           "block": {
             "value": "8px"
@@ -156,9 +186,6 @@
           "background-color": {
             "value": "{denhaag.color.green.3}"
           },
-          "color": {
-            "value": "{denhaag.color.white}"
-          },
           "hover": {
             "background-color": {
               "value": "{denhaag.color.green.4}"
@@ -179,6 +206,22 @@
       "poweredby": {
         "font-size": {
           "value": "{denhaag.typography.scale.xs.font-size}"
+        }
+      },
+      "dropdown": {
+        "font-size": {
+          "value": "{denhaag.typography.scale.s.font-size}"
+        }
+      },
+      "slider-label": {
+        "background-color": {
+          "value": "{denhaag.color.blue.3}"
+        },
+        "color": {
+          "value": "{denhaag.color.white}"
+        },
+        "font-size": {
+          "value": "{denhaag.typography.scale.s.font-size}"
         }
       }
     }

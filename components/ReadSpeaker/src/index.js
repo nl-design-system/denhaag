@@ -1,8 +1,8 @@
 /**
  * Initialize ReadSpeaker.
+ * @param {number} companyId The ReadSpeaker Company ID.
  */
-const initReadSpeaker = () => {
-  const companyId = 13613;
+const initReadSpeaker = (companyId) => {
   const params = {
     pids: 'wr',
     lang: document.documentElement.lang,
@@ -29,16 +29,18 @@ const initializedReadspeaker = () => {
   }
   /*eslint no-undef: "error"*/
   ReadSpeaker.q(() => {
-    Array.from(document.getElementsByClassName('denhaag-readspeaker')).forEach((rs) =>
-      rs.classList.add('denhaag-readspeaker--initialized'),
-    );
+    document.getElementById('denhaag-readspeaker').classList.add('denhaag-readspeaker--initialized');
   });
 
   return true;
 };
 
 const doSomething = () => {
-  console.log(ReadSpeaker);
+  const rs = document.getElementById('denhaag-readspeaker');
+
+  let width = 0;
+  Array.from(rs.getElementsByClassName('rsbtn_play')).forEach((el) => (width += el.clientWidth));
+  rs.style.setProperty('--denhaag-readspeaker-playbtn-width', `${width}px`);
 };
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -48,6 +50,9 @@ window.addEventListener('DOMContentLoaded', () => {
       uiLang: 'nl_nl', // document.documentElement.lang,
       nativeLanguages: true,
       saveLangVoice: true,
+      translatedDisclaimer: true,
+      confirmPolicy:
+        'Using the Listen button service sends a request to an external service to read out the content of this page.',
     },
     cb: {
       ui: {
@@ -64,8 +69,8 @@ window.addEventListener('DOMContentLoaded', () => {
           console.log('Opened');
           doSomething();
         },
-        progresschanged: () => {
-          console.log('Progress changed');
+        progresschanged: (e) => {
+          console.log('Progress changed', e);
         },
         settingsopened: () => {
           console.log('Settings Opened');
@@ -101,9 +106,14 @@ window.addEventListener('DOMContentLoaded', () => {
         },
       },
     },
+    ui: {
+      tools: {
+        controlpanel: false,
+      },
+    },
   };
 
-  window.onload = () => initReadSpeaker();
+  window.onload = () => initReadSpeaker(13613);
 
   setTimeout(() => initializedReadspeaker(), 200);
 });
