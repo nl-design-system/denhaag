@@ -1,0 +1,12 @@
+@mixin readspeaker-icon-styles($path) {
+  aspect-ratio: 1;
+  background-color: currentcolor;
+  content: "";
+  display: inline-block;
+  height: var(--denhaag-readspeaker-icon-size);
+  width: var(--denhaag-readspeaker-icon-size);
+
+  @if $path {
+    clip-path: #{$path};
+  }
+}
