@@ -4,59 +4,167 @@
   accent-color: var(--denhaag-readspeaker-accent-color);
   opacity: var(--denhaag-readspeaker-opacity, 0);
   transition: 352ms ease-in-out opacity; // Set to variables.
-
-  border: 1px solid var(--denhaag-readspeaker-border-color);
   border-radius: var(--denhaag-readspeaker-border-radius);
-
   display: flex;
-
   font-family: var(--denhaag-readspeaker-font-family);
   font-weight: var(--denhaag-readspeaker-font-weight);
   font-size: var(--denhaag-readspeaker-font-size);
-  line-height: var(--denhaag-readspeaker-line-height);
-
   height: var(--denhaag-readspeaker-height);
+  line-height: var(--denhaag-readspeaker-line-height);
+  margin-block: var(--denhaag-readspeaker-margin-block);
+  width: fit-content;
+
+  a {
+    color: var(--denhaag-readspeaker-color);
+
+    &:hover {
+      --denhaag-readspeaker-color: var(--denhaag-readspeaker-hover-color);
+    }
+  }
+
+  &.rsexpanded {
+    --denhaag-readspeaker-inner-opacity: 100%;
+    --denhaag-readspeaker-inner-pointer-events: auto;
+  }
 
   .rsbtn_exp_inner {
     display: flex;
     flex-direction: row;
+    opacity: var(--denhaag-readspeaker-inner-opacity, 0);
+    pointer-events: var(--denhaag-readspeaker-inner-pointer-events, none);
+    transition: opacity 250ms ease-in-out;
+
+    .rsbtn_btnlabel {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
   }
 
   .rsbtn_player_item {
+    background-color: var(--denhaag-readspeaker-button-background-color);
+    border: 1px solid var(--denhaag-readspeaker-border-color);
     color: var(--denhaag-readspeaker-color);
     display: grid;
     place-items: center;
 
+    position: relative;
     height: var(--denhaag-readspeaker-height);
     width: var(--denhaag-readspeaker-button-width);
 
-    &:active {
-      --denhaag-readspeaker-color: var(--denhaag-readspeaker-active-color);
+    &:last-of-type {
+      border-radius: 0 var(--denhaag-readspeaker-border-radius) var(--denhaag-readspeaker-border-radius) 0;
     }
+
     &:hover {
       --denhaag-readspeaker-color: var(--denhaag-readspeaker-hover-color);
+      --denhaag-readspeaker-button-background-color: var(--denhaag-readspeaker-hover-button-background-color);
+      --denhaag-readspeaker-border-color: var(--denhaag-readspeaker-hover-button-border-color);
     }
+
+    &:active,
+    &:focus {
+      --denhaag-readspeaker-color: var(--denhaag-readspeaker-active-color);
+      --denhaag-readspeaker-button-background-color: var(--denhaag-readspeaker-active-button-background-color);
+      --denhaag-readspeaker-border-color: var(--denhaag-readspeaker-active-button-border-color);
+    }
+
     &:focus-visible {
       --denhaag-readspeaker-color: var(--denhaag-readspeaker-focus-color);
+      --denhaag-readspeaker-button-background-color: var(--denhaag-readspeaker-focus-button-background-color);
+      --denhaag-readspeaker-border-color: var(--denhaag-readspeaker-focus-button-border-color);
 
       outline: var(--denhaag-readspeaker-focus-outline);
+      z-index: 1;
+    }
+
+    &[aria-expanded="true"] + .rsbtn_dropdown {
+      --denhaag-readspeaker-dropdown-display: block;
+    }
+
+    & ~ .rsbtn_player_item {
+      border-left: 0;
+
+      &:hover {
+        box-shadow: -1px 0px 0 0px var(--denhaag-readspeaker-border-color);
+      }
+
+      &:focus-visible {
+        border-left: 1px solid var(--denhaag-readspeaker-border-color);
+      }
     }
   }
 
-  .rsbtn_play {
-    color: var(--denhaag-readspeaker-color);
-    height: var(--denhaag-readspeaker-height);
+  .rsbtn_dropdown {
+    display: var(--denhaag-readspeaker-dropdown-display, none);
+    position: absolute;
+    background: var(--denhaag-readspeaker-background-color);
+    border: 1px solid var(--denhaag-readspeaker-border-color);
+    border-radius: var(--denhaag-readspeaker-border-radius);
+    box-sizing: content-box;
+    font-size: var(--denhaag-readspeaker-dropdown-font-size);
+    padding: 0.33em;
+    height: 5em;
+    width: var(--denhaag-readspeaker-button-width);
+    top: calc(var(--denhaag-readspeaker-height) + 4px);
+  }
 
-    &:active {
-      --denhaag-readspeaker-color: var(--denhaag-readspeaker-active-color);
-    }
+  .rs-slider {
+    font-size: var(--denhaag-readspeaker-dropdown-font-size);
+  }
+
+  .rs-slider.horizontal {
+    -webkit-appearance: slider-horizontal;
+  }
+
+  .rs-slider.vertical {
+    padding: 0;
+    transform-origin: left center;
+    width: 5.5em;
+    transform: rotate(270deg) translateX(-5em) translateY(0.75em);
+    -webkit-appearance: slider-vertical;
+  }
+
+  .rs-slider.vertical.has-datalist {
+    transform: rotate(270deg) translateX(-4.75em) translateY(0.75em);
+    -webkit-appearance: slider-horizontal;
+  }
+
+  .rsbtn_play {
+    background-color: var(--denhaag-readspeaker-button-background-color);
+    border: 1px solid var(--denhaag-readspeaker-border-color);
+    border-radius: 0 var(--denhaag-readspeaker-border-radius) var(--denhaag-readspeaker-border-radius) 0;
+    color: var(--denhaag-readspeaker-color);
+    height: auto;
+    padding-block: var(--denhaag-readspeaker-toggle-padding-block);
+    padding-inline: var(--denhaag-readspeaker-toggle-padding-inline);
+    text-decoration: none;
+
     &:hover {
       --denhaag-readspeaker-color: var(--denhaag-readspeaker-hover-color);
+      --denhaag-readspeaker-button-background-color: var(--denhaag-readspeaker-hover-button-background-color);
+      --denhaag-readspeaker-border-color: var(--denhaag-readspeaker-hover-button-border-color);
     }
+
+    &:active,
+    &:focus {
+      --denhaag-readspeaker-color: var(--denhaag-readspeaker-active-color);
+      --denhaag-readspeaker-button-background-color: var(--denhaag-readspeaker-active-button-background-color);
+      --denhaag-readspeaker-border-color: var(--denhaag-readspeaker-active-button-border-color);
+    }
+
     &:focus-visible {
       --denhaag-readspeaker-color: var(--denhaag-readspeaker-focus-color);
+      --denhaag-readspeaker-button-background-color: var(--denhaag-readspeaker-focus-button-background-color);
+      --denhaag-readspeaker-border-color: var(--denhaag-readspeaker-focus-button-border-color);
 
       outline: var(--denhaag-readspeaker-focus-outline);
+      z-index: 1;
     }
   }
 
@@ -64,8 +172,61 @@
     display: flex;
     gap: 8px;
   }
-  // Buttons
 
+  &.rsexpanded .rsbtn_play {
+    border-right: 0;
+    border-radius: 0;
+
+    &:hover {
+      box-shadow: inset -1px 0px 0 0px var(--denhaag-readspeaker-border-color);
+    }
+  }
+
+  .rsbtn_tooltoggle {
+    background-color: var(--denhaag-readspeaker-button-background-color);
+    border: 1px solid var(--denhaag-readspeaker-border-color);
+    border-right: 0;
+    border-radius: var(--denhaag-readspeaker-border-radius) 0 0 var(--denhaag-readspeaker-border-radius);
+    color: var(--denhaag-readspeaker-color);
+    display: grid !important;
+    place-items: center;
+    position: relative;
+    height: var(--denhaag-readspeaker-height);
+    width: var(--denhaag-readspeaker-button-width);
+
+    &:hover {
+      --denhaag-readspeaker-color: var(--denhaag-readspeaker-hover-color);
+      --denhaag-readspeaker-button-background-color: var(--denhaag-readspeaker-hover-button-background-color);
+      --denhaag-readspeaker-border-color: var(--denhaag-readspeaker-hover-button-border-color);
+
+      box-shadow: 1px 0 0 0 var(--denhaag-readspeaker-border-color);
+    }
+
+    &:active,
+    &:focus {
+      --denhaag-readspeaker-color: var(--denhaag-readspeaker-active-color);
+      --denhaag-readspeaker-button-background-color: var(--denhaag-readspeaker-active-button-background-color);
+      --denhaag-readspeaker-border-color: var(--denhaag-readspeaker-active-button-border-color);
+    }
+
+    &:focus-visible {
+      --denhaag-readspeaker-color: var(--denhaag-readspeaker-focus-color);
+      --denhaag-readspeaker-button-background-color: var(--denhaag-readspeaker-focus-button-background-color);
+      --denhaag-readspeaker-border-color: var(--denhaag-readspeaker-focus-button-border-color);
+
+      outline: var(--denhaag-readspeaker-focus-outline);
+      border-right: 1px solid var(--denhaag-readspeaker-border-color);
+      z-index: 1;
+    }
+
+    .rsicn {
+      @include readspeaker-icon-styles(
+        'path("M4 7.5C4 6.94772 4.44772 6.5 5 6.5H19C19.5523 6.5 20 6.94772 20 7.5C20 8.05228 19.5523 8.5 19 8.5H5C4.44772 8.5 4 8.05228 4 7.5ZM4 12.5C4 11.9477 4.44772 11.5 5 11.5H19C19.5523 11.5 20 11.9477 20 12.5C20 13.0523 19.5523 13.5 19 13.5H5C4.44772 13.5 4 13.0523 4 12.5ZM4 17.5C4 16.9477 4.44772 16.5 5 16.5H19C19.5523 16.5 20 16.9477 20 17.5C20 18.0523 19.5523 18.5 19 18.5H5C4.44772 18.5 4 18.0523 4 17.5Z")'
+      );
+    }
+  }
+
+  // Buttons
   @each $icon,
     $path
       in (
@@ -96,279 +257,210 @@
   }
 
   .rsbtn_status_overlay {
+    align-items: center;
     background-color: var(--denhaag-readspeaker-status-background-color);
     height: var(--denhaag-readspeaker-height);
+    justify-content: space-around;
+  }
 
-    .rsbtn_status {
-      font-family: var(--denhaag-readspeaker-font-family);
-      font-weight: var(--denhaag-readspeaker-font-weight);
-      font-size: var(--denhaag-readspeaker-font-size);
-    }
+  &.rsexpanded .rsbtn_status_overlay {
+    left: 0;
+    position: absolute;
+    right: var(--denhaag-readspeaker-button-width);
+  }
 
-    .rsbtn_loaderror {
-      color: var(--denhaag-readspeaker-status-error-color);
+  .rsbtn_status {
+    font-family: var(--denhaag-readspeaker-font-family);
+    font-weight: var(--denhaag-readspeaker-font-weight);
+    font-size: var(--denhaag-readspeaker-status-font-size);
+  }
+
+  .rsbtn_loaderror {
+    color: var(--denhaag-readspeaker-status-error-color);
+  }
+
+  .rsbtn_exp {
+    position: relative;
+  }
+
+  // Progress indicator.
+  .rs-player-loadindicator {
+    background-color: var(--denhaag-readspeaker-indicator-background-color);
+    height: var(--denhaag-readspeaker-indicator-height);
+    left: calc(
+      0px - (var(--denhaag-readspeaker-playbtn-width, 0px) + var(--denhaag-readspeaker-button-width))
+    ) !important;
+    width: calc(100% + (var(--denhaag-readspeaker-playbtn-width, 0px) + var(--denhaag-readspeaker-button-width)));
+    top: calc(0px - (var(--denhaag-readspeaker-indicator-height) + var(--denhaag-readspeaker-indicator-gap)));
+    position: absolute;
+  }
+
+  .rsbtn-loading,
+  .rsbtn-progress {
+    background-color: var(--denhaag-readspeaker-progress-background-color);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    transition: width 100ms linear;
+  }
+
+  .rsbtn-loading {
+    animation-duration: 2500ms;
+    animation-iteration-count: infinite;
+    animation-name: loading-denhaag-readspeaker;
+    width: 20%;
+  }
+
+  .rs-slider-label {
+    background: var(--denhaag-readspeaker-slider-label-background-color);
+    border-radius: var(--denhaag-readspeaker-border-radius);
+    color: var(--denhaag-readspeaker-slider-label-color);
+    font-family: var(--denhaag-readspeaker-font-family);
+    font-weight: var(--denhaag-readspeaker-font-weight);
+    font-size: var(--denhaag-readspeaker-slider-label-font-size);
+    padding-inline: 12px;
+    padding-block: 8px;
+    position: absolute;
+    white-space: nowrap;
+
+    // Overwrite JS values.
+    top: 0 !important;
+    transform: none !important;
+  }
+
+  .rsbtn_toolpanel {
+    position: absolute;
+    top: var(--denhaag-readspeaker-height);
+  }
+
+  .rsbtn_tools_inner {
+    background-color: var(--denhaag-readspeaker-background-color);
+    border: 1px solid var(--denhaag-readspeaker-border-color);
+    border-radius: var(--denhaag-readspeaker-border-radius);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rsbtn_toollist {
+    list-style: none;
+    margin-block: 0;
+    padding-inline-start: 0;
+
+    li + li {
+      border-top: 1px solid var(--denhaag-readspeaker-border-color);
     }
   }
 
-  /*
-  &.rsbtn {
-    span, a {
-      color: var(--denhaag-readspeaker-color);
-      font-family: var(--denhaag-readspeaker-font-family);
-      font-weight: var(--denhaag-readspeaker-font-weight);
-      font-size: var(--denhaag-readspeaker-font-size);
-      line-height: var(--denhaag-readspeaker-line-height);
-    }
+  .rsbtn_tool {
+    display: flex;
+    gap: var(--denhaag-readspeaker-settings-gap);
+    padding-inline: var(--denhaag-readspeaker-settings-padding-inline);
+    padding-block: var(--denhaag-readspeaker-settings-padding-block);
 
-    a {
-      &:hover {
-        --denhaag-readspeaker-color: var(--denhaag-readspeaker-hover-color);
-      }
-    }
-
-    .rsbtn_play {
-      background-color: var(--denhaag-readspeaker-background-color);
-      border-color: var(--denhaag-readspeaker-border-color);
-      border-radius: var(--denhaag-readspeaker-border-radius);
-
-      height: var(--denhaag-readspeaker-height);
-
-      &:hover {
-        background: var(--denhaag-readspeaker-background-color);
-      }
-
-      &:focus {
-        background-color: var(--denhaag-readspeaker-background-color);
-      }
-
-      &:focus-visible {
-        outline: var(--denhaag-readspeaker-focus-outline);
-      }
-
-      .rsbtn_right {
-        border-color: var(--denhaag-readspeaker-border-color);
-      }
-    }
-
-    &.mega_toggle .rsbtn_tooltoggle,
-    .rsbtn_tooltoggle {
-      background-color: var(--denhaag-readspeaker-background-color);
-      border-color: var(--denhaag-readspeaker-border-color);
-      border-radius: var(--denhaag-readspeaker-border-radius) 0 0 var(--denhaag-readspeaker-border-radius);
-      color: var(--denhaag-readspeaker-color);
-      width: var(--denhaag-readspeaker-button-width);
-
-      &:focus {
-        background: var(--denhaag-readspeaker-background-color);
-      }
-
-      &:focus-visible {
-        outline: var(--denhaag-readspeaker-focus-outline);
-      }
-    }
-
-    .rsbtn_exp {
-      height: var(--denhaag-readspeaker-height);
-
-      .rsbtn_exp_inner {
-        border-color: var(--denhaag-readspeaker-border-color);
-        border-radius: 0 var(--denhaag-readspeaker-border-radius) var(--denhaag-readspeaker-border-radius) 0;
-
-        .rsbtn_player_item {
-          background: var(--denhaag-readspeaker-button-background-color);
-          border-color: var(--denhaag-readspeaker-border-color);
-          color: var(--denhaag-readspeaker-color);
-          height: var(--denhaag-readspeaker-height);
-          width: var(--denhaag-readspeaker-button-width);
-
-          &:hover {
-            --denhaag-readspeaker-color: var(--denhaag-readspeaker-hover-color);
-            --denhaag-readspeaker-button-shadow: var(--denhaag-readspeaker-hover-button-shadow);
-
-            background: var(--denhaag-readspeaker-background-color);
-          }
-
-          &:active {
-            --denhaag-readspeaker-color: var(--denhaag-readspeaker-active-color);
-            --denhaag-readspeaker-button-shadow: var(--denhaag-readspeaker-active-button-shadow);
-
-            background: var(--denhaag-readspeaker-active-background-color);
-          }
-
-          &:focus-visible {
-            --denhaag-readspeaker-color: var(--denhaag-readspeaker-focus-color);
-            --denhaag-readspeaker-button-shadow: var(--denhaag-readspeaker-focus-button-shadow);
-
-            background: var(--denhaag-readspeaker-background-color);
-          }
-
-          &:focus {
-            --denhaag-readspeaker-color: var(--denhaag-readspeaker-focus-color);
-
-            background: var(--denhaag-readspeaker-button-background-color);
-          }
-
-          span.rsicn {
-            box-shadow: var(--denhaag-readspeaker-button-shadow);
-            color: inherit !important;
-            line-height: var(--denhaag-readspeaker-height);
-
-            transition: 250ms ease-in-out box-shadow, 250ms ease-in-out color;
-          }
-        }
-
-        .rsbtn_stop:active span.rsicn {
-          // ReadSpeaker has a weird way of writing CSS.
-          background: var(--denhaag-readspeaker-active-background-color);
-          color: var(--denhaag-readspeaker-active-color);
-        }
-      }
-    }
-
-    // Progress indicator.
-    .rs-player-loadindicator {
-      background-color: var(--denhaag-readspeaker-indicator-background-color);
-      height: var(--denhaag-readspeaker-indicator-height);
-      width: 100%;
-      top: calc(0px - (var(--denhaag-readspeaker-indicator-height) + var(--denhaag-readspeaker-indicator-gap)));
-
-      .rsbtn-loading,
-      .rsbtn-progress {
-        background-color: var(--denhaag-readspeaker-progress-background-color);
-      }
-    }
-
-    &.rsexpanded .rsbtn_exp .rsbtn_exp_inner {
-      background-color: var(--denhaag-readspeaker-background-color);
-      height: var(--denhaag-readspeaker-height);
-    }
-
-
-
-    // Tools panel.
-    .rsbtn_toolpanel {
-      &.vertical {
-        top: calc(var(--denhaag-readspeaker-height) + 6px);
-      }
-
-      &.vertical,
-      &.horizontal {
-        .rsbtn_tools {
-          background-color: var(--denhaag-readspeaker-background-color);
-          border-color: var(--denhaag-readspeaker-border-color);
-          border-radius: var(--denhaag-readspeaker-border-radius);
-
-          .rsbtn_tools_inner {
-            .rsbtn_toolcontainer ul.rsbtn_toollist li {
-              border-color: var(--denhaag-readspeaker-border-color);
-              height: auto;
-              max-height: initial;
-
-              button.rsbtn_tool {
-                padding-inline: var(--denhaag-readspeaker-settings-padding-inline);
-                padding-block: var(--denhaag-readspeaker-settings-padding-block);
-                margin-left: 0;
-
-                &:hover {
-                  background: transparent;
-                  color: var(--denhaag-readspeaker-hover-color);
-                }
-
-                &.active {
-                  .rs_minitoggler {
-                    --denhaag-readspeaker-switch-background-color: var(--denhaag-readspeaker-switch-active-background-color);
-
-                    &:after {
-                      background-color: var(--denhaag-readspeaker-switch-color);
-                    }
-
-                    &:hover {
-                      --denhaag-readspeaker-switch-background-color: var(--denhaag-readspeaker-switch-active-hover-background-color);
-                    }
-
-                    &:disabled,
-                    &.disabled {
-                      --denhaag-readspeaker-switch-background-color: var(--denhaag-readspeaker-switch-active-disabled-background-color);
-                    }
-                  }
-                }
-
-                .rs_minitoggler {
-                  background-color: var(--denhaag-readspeaker-switch-background-color);
-                  border-color: var(--denhaag-readspeaker-switch-background-color);
-                  border-radius: var(--denhaag-readspeaker-switch-height);
-                  height: var(--denhaag-readspeaker-switch-height);
-                  width: var(--denhaag-readspeaker-switch-width);
-                  margin-block-start: 2px;
-                  margin-block-end: 0;
-
-                  &:after {
-                    aspect-ratio: 1;
-                    background-color: var(--denhaag-readspeaker-switch-color);
-                    border-radius: var(--denhaag-readspeaker-switch-size);
-                    height: var(--denhaag-readspeaker-switch-size);
-                    left: calc((var(--denhaag-readspeaker-switch-height) - var(--denhaag-readspeaker-switch-size)) / 2);
-                    top: calc((var(--denhaag-readspeaker-switch-height) - var(--denhaag-readspeaker-switch-size)) / 2);
-                    width: var(--denhaag-readspeaker-switch-size);
-                  }
-
-                  &:hover {
-                    --denhaag-readspeaker-switch-background-color: var(--denhaag-readspeaker-switch-hover-background-color);
-                  }
-
-                  &:focus-visible {
-                    --denhaag-readspeaker-switch-background-color: var(--denhaag-readspeaker-switch-focus-background-color);
-                  }
-
-                  &:disabled,
-                  &.disabled {
-                    --denhaag-readspeaker-switch-background-color: var(--denhaag-readspeaker-switch-disabled-background-color);
-                  }
-
-                  span {
-                    font-size: 0;
-                  }
-                }
-
-                span.rsicn::before {
-                  content: unset;
-                }
-
-                span.rsbtn_btnlabel {
-                  color: inherit;
-                  font-weight: var(--denhaag-readspeaker-font-weight);
-                  font-size: var(--denhaag-readspeaker-font-size);
-                  margin-left: 0;
-                }
-              }
-            }
-
-            .rsbtn_powered {
-              span {
-                font-size: var(--denhaag-readspeaker-poweredby-font-size);
-              }
-
-              a {
-                color: var(--denhaag-readspeaker-color) !important;
-              }
-            }
-          }
-        }
-      }
+    &:focus-visible {
+      outline: var(--denhaag-readspeaker-focus-outline);
     }
   }
 
-  .rsicn-cross::before {
-
+  .rsbtn_powered {
+    font-size: var(--denhaag-readspeaker-poweredby-font-size);
+    order: 0;
+    text-transform: uppercase;
   }
 
-  .rsicn-pause::before {
-    //@include readspeakerIconStyles("M6 7.2408c0-1.5436 1.6744-2.5053 3.0077-1.7275l9.0154 5.2589c1.323.7718 1.323 2.6834 0 3.4551l-9.0154 5.259C7.6744 20.2641 6 19.3023 6 17.7587V7.2408Zm11.0154 5.259L8 7.2408v10.5179l9.0154-5.2589Z");
+  .rsbtn_toolcontainer {
+    order: 1;
   }
 
-   */
+  .rs_minitoggler {
+    --denhaag-readspeaker-switch-dot-left: calc(
+      (var(--denhaag-readspeaker-switch-height) - var(--denhaag-readspeaker-switch-size)) / 2
+    );
+
+    background-color: var(--denhaag-readspeaker-switch-background-color);
+    border-radius: var(--denhaag-readspeaker-switch-height);
+    color: var(--denhaag-readspeaker-switch-color);
+    display: inline-block;
+    height: var(--denhaag-readspeaker-switch-height);
+    width: var(--denhaag-readspeaker-switch-width);
+    position: relative;
+    font-size: 0;
+
+    &:hover {
+      --denhaag-readspeaker-switch-background-color: var(--denhaag-readspeaker-switch-hover-background-color);
+    }
+
+    &:focus-visible {
+      --denhaag-readspeaker-switch-background-color: var(--denhaag-readspeaker-switch-focus-background-color);
+    }
+
+    &:disabled,
+    &.disabled {
+      --denhaag-readspeaker-switch-background-color: var(--denhaag-readspeaker-switch-disabled-background-color);
+    }
+
+    &:before {
+      aspect-ratio: 1;
+      background-color: currentColor;
+      border-radius: var(--denhaag-readspeaker-switch-size);
+      content: "";
+      display: block;
+      height: auto;
+      width: var(--denhaag-readspeaker-switch-size);
+      top: calc((var(--denhaag-readspeaker-switch-height) - var(--denhaag-readspeaker-switch-size)) / 2);
+      position: absolute;
+      left: var(--denhaag-readspeaker-switch-dot-left);
+      transition: left 375ms ease-in-out;
+    }
+  }
+
+  .active > .rs_minitoggler {
+    --denhaag-readspeaker-switch-background-color: var(--denhaag-readspeaker-switch-active-background-color);
+    --denhaag-readspeaker-switch-dot-left: calc(
+      (var(--denhaag-readspeaker-switch-width) - var(--denhaag-readspeaker-switch-size)) -
+        ((var(--denhaag-readspeaker-switch-height) - var(--denhaag-readspeaker-switch-size)) / 2)
+    );
+
+    &:hover {
+      --denhaag-readspeaker-switch-background-color: var(--denhaag-readspeaker-switch-active-hover-background-color);
+    }
+
+    &:focus-visible {
+      --denhaag-readspeaker-switch-background-color: var(--denhaag-readspeaker-switch-active-focus-background-color);
+    }
+
+    &:disabled,
+    &.disabled {
+      --denhaag-readspeaker-switch-background-color: var(--denhaag-readspeaker-switch-active-disabled-background-color);
+    }
+  }
 }
 
 .denhaag-readspeaker--initialized {
   --denhaag-readspeaker-opacity: 100%;
+}
+
+.denhaag-readspeaker--icons {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@keyframes loading-denhaag-readspeaker {
+  0% {
+    left: 0;
+  }
+
+  50% {
+    left: 80%;
+  }
+
+  100% {
+    left: 0;
+  }
 }
