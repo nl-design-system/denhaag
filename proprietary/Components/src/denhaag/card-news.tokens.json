@@ -29,7 +29,7 @@
         "size": { "value": "{denhaag.space.block.xl}" }
       },
       "heading": {
-        "margin-block-start": { "value": "{denhaag.space.block.xs} !important" },
+        "margin-block-start": { "value": "{denhaag.space.block.xs}" },
         "order": { "value": "2" }
       },
       "image": {
