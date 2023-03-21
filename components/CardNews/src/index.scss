@@ -84,12 +84,11 @@
   --denhaag-card-news-icon-translate: translateX(0);
 }
 
-@media (min-width: 25.9375rem) {
-  .denhaag-card-news .denhaag-card-news__paragraph {
-    --denhaag-card-news-paragraph-display: block;
-  }
+.denhaag-card-news__content {
+  display: var(--denhaag-card-news-content-display);
+  flex-direction: var(--denhaag-card-news-content-flex-direction);
 
-  .denhaag-card-news__content {
+  @media (min-width: 25.9375rem) {
     padding-block-start: var(--denhaag-card-news-figcaption-padding);
     padding-block-end: var(--denhaag-card-news-figcaption-padding);
     padding-inline-start: var(--denhaag-card-news-figcaption-padding);
@@ -100,15 +99,22 @@
 .denhaag-card-news__date {
   color: var(--denhaag-card-news-date-color);
   font: var(--denhaag-card-news-date-font);
+  order: var(--denhaag-card-news-date-order);
 }
 
 .denhaag-card-news__heading {
-  margin-block-start: var(--denhaag-card-news-heading-margin-block-start);
+  margin-block-end: var(--denhaag-card-news-text-margin-block-end);
+  margin-block-start: var(--denhaag-card-news-heading-margin-block-start) !important;
+  order: var(--denhaag-card-news-heading-order);
 }
 
-.denhaag-card-news__heading,
 .denhaag-card-news__paragraph {
   margin-block-end: var(--denhaag-card-news-text-margin-block-end);
+  order: var(--denhaag-card-news-paragraph-order);
+
+  @media (min-width: 25.9375rem) {
+    --denhaag-card-news-paragraph-display: block;
+  }
 }
 
 .denhaag-card-news .utrecht-paragraph {
@@ -116,11 +122,13 @@
 }
 
 .denhaag-card-news__icon {
+  align-self: var(--denhaag-card-news-icon-align-self);
   clear: var(--denhaag-card-news-icon-clear);
   color: var(--denhaag-card-news-icon-color);
   float: var(--denhaag-card-news-icon-float);
   height: var(--denhaag-card-news-icon-size);
   opacity: var(--denhaag-card-news-icon-opacity);
+  order: var(--denhaag-card-news-icon-order);
   position: relative;
   transition: opacity var(--denhaag-card-news-transition-timing-function, ease-in-out)
     var(--denhaag-card-news-transition-duration, 200ms);
