@@ -23,7 +23,7 @@
 
   @media (min-width: 768px) {
     --denhaag-conditions-label-height: var(--denhaag-space-block-5xl);
-    --denhaag-conditions-label-width: 5rem;
+    --denhaag-conditions-label-width: var(--denhaag-conditions-label-width-desktop);
   }
 }
 
