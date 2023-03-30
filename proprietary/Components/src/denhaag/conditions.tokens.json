@@ -45,6 +45,9 @@
         },
         "width": {
           "value": "4.5rem"
+        },
+        "width-desktop": {
+          "value": "5rem"
         }
       },
       "label-before-after": {
