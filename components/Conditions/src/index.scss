@@ -13,6 +13,7 @@
 
 .denhaag-conditions__label {
   background-color: var(--denhaag-conditions-label-background-color);
+  color: var(--denhaag-conditions-label-color);
   display: var(--denhaag-conditions-label-display);
   height: calc(var(--denhaag-conditions-label-height) - var(--denhaag-space-block-xs));
   justify-content: var(--denhaag-conditions-label-justify-content);
