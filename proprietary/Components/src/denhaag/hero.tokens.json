@@ -219,7 +219,9 @@
         }
       },
       "theme-page": {
-        "min-height": { "value": 0 },
+        "min-height": {
+          "value": 0
+        },
         "image": {
           "path": {
             "value": "11.25rem"
@@ -232,22 +234,42 @@
           }
         },
         "image-pattern-container": {
-          "position": { "value": "absolute" },
-          "size": { "value": "100%" },
-          "overflow": { "value": "hidden" }
+          "position": {
+            "value": "absolute"
+          },
+          "size": {
+            "value": "100%"
+          },
+          "overflow": {
+            "value": "hidden"
+          }
         },
         "image-pattern": {
-          "width": { "value": "100%" },
-          "height": { "value": "auto" }
+          "width": {
+            "value": "100%"
+          },
+          "height": {
+            "value": "auto"
+          }
         },
         "container": {
-          "padding-block-start": { "value": 0 },
-          "padding-block-start-s": { "value": "3.5rem" },
-          "padding-block-start-xl": { "value": "7rem" }
+          "padding-block-start": {
+            "value": 0
+          },
+          "padding-block-start-s": {
+            "value": "3.5rem"
+          },
+          "padding-block-start-xl": {
+            "value": "7rem"
+          }
         },
         "content": {
-          "background-color": { "value": "{denhaag.color.white}" },
-          "box-shadow": { "value": "0px 1px 0px {denhaag.color.grey.2}" },
+          "background-color": {
+            "value": "{denhaag.color.white}"
+          },
+          "box-shadow": {
+            "value": "0px 1px 0px {denhaag.color.grey.2}"
+          },
           "column": {
             "start": {
               "value": 1
@@ -268,24 +290,165 @@
               "value": 8
             }
           },
-          "text-align": { "value": "center" },
-          "padding-block": { "value": "4rem" },
-          "padding-block-s": { "value": "{denhaag.space.block.3xl}" },
-          "padding-inline-start": { "value": "{denhaag.space.inline.md}" },
-          "padding-inline-end": { "value": "{denhaag.space.inline.md}" },
+          "text-align": {
+            "value": "center"
+          },
+          "padding-block": {
+            "value": "4rem"
+          },
+          "padding-block-s": {
+            "value": "{denhaag.space.block.3xl}"
+          },
+          "padding-inline-start": {
+            "value": "{denhaag.space.inline.md}"
+          },
+          "padding-inline-end": {
+            "value": "{denhaag.space.inline.md}"
+          },
           "transform": {
             "value": "2rem"
           }
         },
         "title": {
-          "padding-block-end": { "value": "{denhaag.space.block.md}" },
-          "font-size-m": { "value": "{denhaag.typography.scale.3xl.font-size}" }
+          "padding-block-end": {
+            "value": "{denhaag.space.block.md}"
+          },
+          "font-size-m": {
+            "value": "{denhaag.typography.scale.3xl.font-size}"
+          }
         },
         "text": {
-          "font-size": { "value": "{denhaag.typography.scale.lg.font-size}" },
-          "font-size-m": { "value": "{denhaag.typography.scale.xl.font-size}" },
-          "padding-block-end": { "value": "{denhaag.space.block.2xl}" },
-          "line-height": { "value": "{denhaag.typography.scale.s.line-height}" }
+          "font-size": {
+            "value": "{denhaag.typography.scale.lg.font-size}"
+          },
+          "font-size-m": {
+            "value": "{denhaag.typography.scale.xl.font-size}"
+          },
+          "padding-block-end": {
+            "value": "{denhaag.space.block.2xl}"
+          },
+          "line-height": {
+            "value": "{denhaag.typography.scale.s.line-height}"
+          }
+        }
+      },
+      "theme-image": {
+        "background-color": {
+          "value": "transparent"
+        },
+        "background-image": {
+          "value": "none"
+        },
+        "color": {
+          "value": "{denhaag.color.white}"
+        },
+        "container": {
+          "max-width": {
+            "value": "100%"
+          },
+          "max-width-tablet": {
+            "value": "420px"
+          },
+          "max-width-desktop-small": {
+            "value": "372px"
+          },
+          "max-width-desktop-large": {
+            "value": "500px"
+          },
+          "padding-block-start": {
+            "value": "296px"
+          },
+          "padding-block-start-tablet": {
+            "value": "10px"
+          },
+          "padding-block-start-desktop-large": {
+            "value": "210px"
+          },
+          "display": {
+            "value": "flex"
+          },
+          "margin-inline": {
+            "value": "0"
+          },
+          "padding-inline": {
+            "value": "{denhaag.space.inline.3xl}"
+          },
+          "padding-inline-end-tablet": {
+            "value": "0"
+          },
+          "padding-inline-start-tablet": {
+            "value": "75px"
+          },
+          "padding-inline-start-desktop-medium": {
+            "value": "115px"
+          },
+          "padding-inline-start-desktop-large": {
+            "value": "384px"
+          }
+        },
+        "content": {
+          "clip-path": {
+            "value": " polygon(0 0, 100% 0, 100% 97%, 0% 100%)"
+          },
+          "padding-block-end": {
+            "value": "{denhaag.space.block.4xl}"
+          },
+          "padding-block-start": {
+            "value": "{denhaag.space.block.2xl}"
+          },
+          "padding-inline": {
+            "value": "{denhaag.space.inline.2xl}"
+          },
+          "text-align": {
+            "value": "left"
+          }
+        },
+        "image": {
+          "bottom": {
+            "value": "0"
+          },
+          "clip-path": {
+            "value": "none"
+          },
+          "width": {
+            "value": "100%"
+          },
+          "height": {
+            "value": "390px"
+          },
+          "height-tablet": {
+            "value": "320px"
+          },
+          "height-desktop-small": {
+            "value": "390px"
+          },
+          "height-desktop-large": {
+            "value": "520px"
+          },
+          "left": {
+            "value": "0"
+          },
+          "object-position": {
+            "value": "center"
+          }
+        },
+        "title": {
+          "font-size": {
+            "value": "{denhaag.typography.scale.2xl.font-size}"
+          },
+          "padding-block-end": {
+            "value": "initial"
+          }
+        },
+        "text": {
+          "font-size": {
+            "value": "{denhaag.typography.scale.lg.font-size}"
+          }
+        },
+        "link": {
+          "font-size": {
+            "value": "1rem"
+          }
         }
       }
     }
