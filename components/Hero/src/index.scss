@@ -147,43 +147,19 @@
   padding-block-end: var(--denhaag-hero-theme-page-title-padding-block-end);
 }
 
-/* added .denhaag-hero to --them-image, otherwise need to use !important to overwrite */
-.denhaag-hero.denhaag-hero--theme-image {
-  background-color: var(--denhaag-hero-theme-image-background-color);
-  background-image: var(--denhaag-hero-theme-image-background-image);
+.denhaag-hero--theme-image {
+  --denhaag-hero-background-color: var(--denhaag-hero-theme-image-background-color);
+  --denhaag-hero-container-max-width: var(--denhaag-hero-theme-image-container-max-width);
+  --denhaag-hero-container-padding: var(--denhaag-hero-theme-image-container-padding-inline);
+  --denhaag-hero-container-padding-block-start: var(--denhaag-hero-theme-image-container-padding-block-start);
+
+  background-image: unset !important;
 }
 
 .denhaag-hero--theme-image .denhaag-hero__container {
-  --denhaag-hero-container-max-width: var(--denhaag-hero-theme-image-container-max-width);
-
-  padding-block-start: var(--denhaag-hero-theme-image-container-padding-block-start);
   display: var(--denhaag-hero-theme-image-container-display);
   margin-inline-end: var(--denhaag-hero-theme-image-container-margin-inline);
   margin-inline-start: var(--denhaag-hero-theme-image-container-margin-inline);
-  padding-inline-end: var(--denhaag-hero-theme-image-container-padding-inline);
-  padding-inline-start: var(--denhaag-hero-theme-image-container-padding-inline);
-
-  @media (min-width: 768px) {
-    --denhaag-hero-container-max-width: var(--denhaag-hero-theme-image-container-max-width-tablet);
-
-    padding-block-start: var(--denhaag-hero-theme-image-container-padding-block-start-tablet);
-    padding-inline-end: var(--denhaag-hero-theme-image-container-padding-inline-end-tablet);
-    padding-inline-start: var(--denhaag-hero-theme-image-container-padding-inline-start-tablet);
-  }
-  @media (min-width: 1024px) {
-    --denhaag-hero-container-max-width: var(--denhaag-hero-theme-image-container-max-width-desktop-small);
-  }
-
-  @media (min-width: 1280px) {
-    padding-inline-start: var(--denhaag-hero-theme-image-container-padding-inline-start-desktop-medium);
-  }
-
-  @media (min-width: 1768px) {
-    --denhaag-hero-container-max-width: var(--denhaag-hero-theme-image-container-max-width-desktop-large);
-
-    padding-block-start: var(--denhaag-hero-theme-image-container-padding-block-start-desktop-large);
-    padding-inline-start: var(--denhaag-hero-theme-image-container-padding-inline-start-desktop-large);
-  }
 }
 
 .denhaag-hero--theme-image .denhaag-hero__content {
@@ -199,21 +175,21 @@
 .denhaag-hero--theme-image .denhaag-hero__image {
   bottom: var(--denhaag-hero-theme-image-image-bottom);
   clip-path: var(--denhaag-hero-theme-image-image-clip-path);
-  width: var(--denhaag-hero-theme-image-image-width);
   height: var(--denhaag-hero-theme-image-image-height);
   left: var(--denhaag-hero-theme-image-image-left);
   object-position: var(--denhaag-hero-theme-image-image-object-position);
+  width: var(--denhaag-hero-theme-image-image-width);
 
   @media (min-width: 768px) {
-    height: var(--denhaag-hero-theme-image-image-height-tablet);
+    height: var(--denhaag-hero-theme-image-image-height-s);
   }
 
   @media (min-width: 1024px) {
-    height: var(--denhaag-hero-theme-image-image-height-desktop-small);
+    height: var(--denhaag-hero-theme-image-image-height-m);
   }
 
   @media (min-width: 1768px) {
-    height: var(--denhaag-hero-theme-image-image-height-desktop-large);
+    height: var(--denhaag-hero-theme-image-image-height-xl);
   }
 }
 
@@ -317,6 +293,14 @@
     background-size: cover;
     background-position: 0 0;
   }
+
+  .denhaag-hero--theme-image .denhaag-hero__container {
+    --denhaag-hero-container-max-width: var(--denhaag-hero-theme-image-container-max-width-s);
+    --denhaag-hero-container-padding: var(--denhaag-hero-theme-image-container-padding-inline-end-s);
+    --denhaag-hero-container-padding-block-start: var(--denhaag-hero-theme-image-container-padding-block-start-s);
+
+    padding-inline-start: var(--denhaag-hero-theme-image-container-padding-inline-start-s);
+  }
 }
 
 @media (min-width: 1024px) {
@@ -358,6 +342,10 @@
       position: absolute;
     }
   }
+
+  .denhaag-hero--theme-image .denhaag-hero__container {
+    --denhaag-hero-container-max-width: var(--denhaag-hero-theme-image-container-max-width-m);
+  }
 }
 
 @media (min-width: 1280px) {
@@ -376,6 +364,10 @@
   .denhaag-hero--routing {
     --denhaag-hero-content-column-offset: var(--denhaag-hero-routing-content-column-offset-l);
     --denhaag-hero-routing-shape-start: var(--denhaag-hero-routing-shape-start-l);
+  }
+
+  .denhaag-hero--theme-image .denhaag-hero__container {
+    padding-inline-start: var(--denhaag-hero-theme-image-container-padding-inline-start-l);
   }
 }
 
@@ -413,6 +405,13 @@
   .denhaag-hero--theme-page .denhaag-hero__image-pattern {
     width: var(--denhaag-hero-theme-page-image-pattern-width);
     height: var(--denhaag-hero-theme-page-image-pattern-height);
+  }
+
+  .denhaag-hero--theme-image .denhaag-hero__container {
+    --denhaag-hero-container-max-width: var(--denhaag-hero-theme-image-container-max-width-xl);
+
+    padding-block-start: var(--denhaag-hero-theme-image-container-padding-block-start-xl);
+    padding-inline-start: var(--denhaag-hero-theme-image-container-padding-inline-start-xl);
   }
 }
 

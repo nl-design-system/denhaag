@@ -336,9 +336,6 @@
         "background-color": {
           "value": "transparent"
         },
-        "background-image": {
-          "value": "none"
-        },
         "color": {
           "value": "{denhaag.color.white}"
         },
@@ -346,22 +343,22 @@
           "max-width": {
             "value": "100%"
           },
-          "max-width-tablet": {
+          "max-width-s": {
             "value": "420px"
           },
-          "max-width-desktop-small": {
+          "max-width-m": {
             "value": "372px"
           },
-          "max-width-desktop-large": {
+          "max-width-xl": {
             "value": "500px"
           },
           "padding-block-start": {
             "value": "296px"
           },
-          "padding-block-start-tablet": {
+          "padding-block-start-s": {
             "value": "10px"
           },
-          "padding-block-start-desktop-large": {
+          "padding-block-start-xl": {
             "value": "210px"
           },
           "display": {
@@ -373,16 +370,16 @@
           "padding-inline": {
             "value": "{denhaag.space.inline.3xl}"
           },
-          "padding-inline-end-tablet": {
+          "padding-inline-end-s": {
             "value": "0"
           },
-          "padding-inline-start-tablet": {
+          "padding-inline-start-s": {
             "value": "75px"
           },
-          "padding-inline-start-desktop-medium": {
+          "padding-inline-start-l": {
             "value": "115px"
           },
-          "padding-inline-start-desktop-large": {
+          "padding-inline-start-xl": {
             "value": "384px"
           }
         },
@@ -416,13 +413,13 @@
           "height": {
             "value": "390px"
           },
-          "height-tablet": {
+          "height-s": {
             "value": "320px"
           },
-          "height-desktop-small": {
+          "height-m": {
             "value": "390px"
           },
-          "height-desktop-large": {
+          "height-xl": {
             "value": "520px"
           },
           "left": {
