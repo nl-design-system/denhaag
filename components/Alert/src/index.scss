@@ -10,6 +10,7 @@
   justify-content: space-between;
 
   --utrecht-paragraph-margin-block-end: 0;
+  --utrecht-heading-4-margin-block-start: 0;
 }
 
 .denhaag-alert--error {
@@ -37,6 +38,7 @@
 .denhaag-alert .denhaag-alert__icon {
   margin-block-start: 4px;
 }
+
 .denhaag-alert__close {
   padding-block-start: 4px;
 }
