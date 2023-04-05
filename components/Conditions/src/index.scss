@@ -78,6 +78,8 @@
 .denhaag-conditions__list-item {
   --denhaag-list-item-padding-inline: var(--denhaag-conditions-list-item-padding-inline);
 
+  align-items: var(--denhaag-conditions-list-item-align-items) !important;
+
   @media (min-width: 768px) {
     --denhaag-list-item-padding-inline: var(--denhaag-space-inline-2xl);
   }
@@ -86,6 +88,9 @@
 .denhaag-conditions__item-icon {
   --denhaag-list-item-icon-color: var(--denhaag-conditions-item-icon-color);
   --denhaag-list-item-icon-margin-inline-end: var(--denhaag-conditions-item-icon-margin-inline-end);
+
+  display: var(--denhaag-conditions-item-icon-display) !important;
+  padding-block-start: var(--denhaag-conditions-item-icon-padding-block-start);
 }
 
 .denhaag-conditions__text-content {
