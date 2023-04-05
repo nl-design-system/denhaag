@@ -108,6 +108,9 @@
         }
       },
       "list-item": {
+        "align-items": {
+          "value": "normal"
+        },
         "padding-inline": {
           "value": "{denhaag.space.inline.xl}"
         }
@@ -116,8 +119,14 @@
         "color": {
           "value": "{denhaag.color.green.5}"
         },
+        "display": {
+          "value": "block"
+        },
         "margin-inline-end": {
           "value": "0.625rem"
+        },
+        "padding-block-start": {
+          "value": "2px"
         }
       },
       "text-content": {
