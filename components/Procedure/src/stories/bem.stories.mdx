@@ -1,0 +1,85 @@
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+import Procedure from "../index";
+import pkg from "../../package.json";
+import readme from "../../README.md";
+import "../index.scss";
+
+<Meta
+  title="CSS/Data Display/Procedure"
+  component={Procedure}
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Design Tokens
+
+<DesignTokenDocBlock categoryName="List" viewType="table" />
+
+## Stories
+
+### Default
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Default">
+    <div class="denhaag-procedure">
+      <h4 class="utrecht-heading-2 denhaag-procedure__title">Hoe werkt het?</h4>
+      <ol class="denhaag-procedure__list">
+        <li class="denhaag-procedure__step">
+          <div class="denhaag-procedure__step-header">
+            <div class="denhaag-procedure__step-marker">1</div>
+            <p class="denhaag-procedure__step-heading">Maak een afspraak</p>
+          </div>
+          <div class="denhaag-procedure__step-body">
+            <div class="denhaag-procedure__step-meta">
+              <p class="utrecht-paragraph">
+                Voor het aanvragen van een nieuw paspoort moet u langskomen op Stadhuis Spui of stadskantoor Leyweg. U
+                maakt daarvoor een afspraak.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="denhaag-procedure__step">
+          <div class="denhaag-procedure__step-header">
+            <div class="denhaag-procedure__step-marker">2</div>
+            <p class="denhaag-procedure__step-heading">Kom goed voorbereid naar de afspraak</p>
+          </div>
+          <div class="denhaag-procedure__step-body">
+            <div class="denhaag-procedure__step-meta">
+              <p class="utrecht-paragraph">
+                U heeft een aantal dingen nodig tijdens de afspraak.{" "}
+                <a class="denhaag-link" href="https://example.com">
+                  Bekijk wat u moet meenemen
+                </a>
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="denhaag-procedure__step">
+          <div class="denhaag-procedure__step-header">
+            <div class="denhaag-procedure__step-marker">3</div>
+            <p class="denhaag-procedure__step-heading">Haal uw paspoort op</p>
+          </div>
+          <div class="denhaag-procedure__step-body">
+            <div class="denhaag-procedure__step-meta">
+              <p class="utrecht-paragraph">
+                Na 5 werkdagen is uw paspoort klaar en kunt u het ophalen.{" "}
+                <a class="denhaag-link" href="https://example.com">
+                  Bekijk wat u nodig heeft bij het ophalen
+                </a>
+              </p>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>

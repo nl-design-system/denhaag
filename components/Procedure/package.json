@@ -1,0 +1,38 @@
+{
+  "name": "@gemeente-denhaag/procedure",
+  "version": "0.2.3-www-denhaag-nl.29",
+  "description": "A Procedure component",
+  "bugs": "https://github.com/nl-design-system/denhaag/issues",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nl-design-system/denhaag.git",
+    "directory": "components/Procedure"
+  },
+  "license": "EUPL-1.2",
+  "author": "Municipality of The Hague",
+  "exports": {
+    ".": {
+      "types": "./dist/cjs/index.d.ts",
+      "import": "./dist/mjs/index.js",
+      "default": "./dist/cjs/index.js"
+    }
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/mjs/index.js",
+  "types": "dist/cjs/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c ../../rollup.config.js",
+    "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0"
+  },
+  "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
+}
