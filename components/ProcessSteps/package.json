@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/process-steps",
-  "version": "0.1.0-www-denhaag-nl.29",
+  "version": "0.1.0-www-denhaag-nl.30",
   "description": "A Process Step component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "private": false,
@@ -33,15 +33,15 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "0.2.3-www-denhaag-nl.29",
-    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.29",
-    "@gemeente-denhaag/typography": "0.2.3-www-denhaag-nl.29"
+    "@gemeente-denhaag/baseprops": "0.2.3-www-denhaag-nl.30",
+    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.30",
+    "@gemeente-denhaag/typography": "0.2.3-www-denhaag-nl.30"
   },
   "peerDependencies": {
     "react": "^17.0.0"
   },
   "devDependencies": {
-    "@gemeente-denhaag/button": "0.2.3-www-denhaag-nl.29"
+    "@gemeente-denhaag/button": "0.2.3-www-denhaag-nl.30"
   },
   "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
 }
