@@ -3,7 +3,7 @@
   "description": "A Breadcrumb component",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
-  "version": "0.1.1-www-denhaag-nl.30",
+  "version": "0.1.1-www-denhaag-nl.31",
   "exports": {
     ".": {
       "types": "./dist/cjs/index.d.ts",
@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@gemeente-denhaag/icons": "0.2.3-alpha.270",
-    "@gemeente-denhaag/responsive-content": "0.1.1-www-denhaag-nl.30"
+    "@gemeente-denhaag/responsive-content": "0.1.1-www-denhaag-nl.31"
   },
   "peerDependencies": {
     "react": "^17.0.0"
