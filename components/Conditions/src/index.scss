@@ -98,3 +98,8 @@
   --denhaag-list-item-text-primary-font-size: var(--denhaag-conditions-text-content-font-size);
   --denhaag-list-item-text-primary-line-height: var(--denhaag-conditions-text-content-line-height);
 }
+
+.denhaag-conditions .denhaag-icon {
+  height: var(--denhaag-conditions-denhaag-icon-height);
+  width: var(--denhaag-conditions-denhaag-icon-width);
+}
