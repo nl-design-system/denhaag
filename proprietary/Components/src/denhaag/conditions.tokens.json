@@ -4,6 +4,14 @@
       "background-color": {
         "value": "#f9fbf9"
       },
+      "denhaag-icon": {
+        "height": {
+          "value": ".75rem"
+        },
+        "width": {
+          "value": "{denhaag.space.inline.md}"
+        }
+      },
       "padding-block": {
         "value": "0"
       },
