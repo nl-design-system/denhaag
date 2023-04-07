@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/header",
-  "version": "0.1.1-www-denhaag-nl.31",
+  "version": "0.1.1-www-denhaag-nl.32",
   "description": "A Header component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "private": false,
@@ -34,6 +34,6 @@
   },
   "devDependencies": {
     "@gemeente-denhaag/baseprops": "0.2.3-alpha.269",
-    "@gemeente-denhaag/header-logo": "0.1.1-www-denhaag-nl.31"
+    "@gemeente-denhaag/header-logo": "0.1.1-www-denhaag-nl.32"
   }
 }
