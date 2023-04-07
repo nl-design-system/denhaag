@@ -344,13 +344,16 @@
             "value": "100%"
           },
           "max-width-s": {
-            "value": "420px"
+            "value": "370px"
           },
           "max-width-m": {
-            "value": "372px"
+            "value": "363px"
+          },
+          "max-width-l": {
+            "value": "370px"
           },
           "max-width-xl": {
-            "value": "500px"
+            "value": "496px"
           },
           "padding-block-start": {
             "value": "296px"
