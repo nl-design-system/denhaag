@@ -74,23 +74,31 @@
       },
       "label-before": {
         "left": {
-          "value": "-44%"
+          "value": "-42%"
         },
         "transform": {
-          "value": "rotate(34deg)"
+          "value": "rotate(36deg)"
         }
       },
       "label-after": {
         "right": {
-          "value": "-44%"
+          "value": "-42%"
         },
         "transform": {
-          "value": "rotate(-34deg)"
+          "value": "rotate(-36deg)"
         }
       },
       "label-icon": {
         "margin-block-start": {
           "value": "0.75rem"
+        }
+      },
+      "subheader": {
+        "padding-block-start-s": {
+          "value": "{denhaag.space.block.xl}"
+        },
+        "padding-block-start-m": {
+          "value": "{denhaag.space.block.md}"
         }
       },
       "title": {
@@ -131,7 +139,7 @@
           "value": "block"
         },
         "margin-inline-end": {
-          "value": "0.625rem"
+          "value": "{denhaag.space.inline.xs}"
         },
         "padding-block-start": {
           "value": "2px"
