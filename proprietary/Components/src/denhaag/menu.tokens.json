@@ -25,7 +25,7 @@
           "display": { "value": "flex" },
           "flex-direction": { "value": "column" },
           "min-block-size": { "value": "58px" },
-          "outline-style": { "value": "dashed" },
+          "outline-style": { "value": "none" },
           "active": {
             "icon": {
               "transform": { "value": "scaleY(-1)" }

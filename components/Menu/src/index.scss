@@ -19,7 +19,9 @@
     .denhaag-mobile-menu-list-item-button {
       --utrecht-focus-outline-style: var(--denhaag-mobile-menu-list-item-outline-style);
       --utrecht-button-min-block-size: var(--denhaag-mobile-menu-list-item-min-block-size);
-      --utrecht-button-subtle-active-border-color: var(--denhaag-menu-button-active-color);
+      --utrecht-button-subtle-active-color: var(--denhaag-menu-button-active-color);
+      --utrecht-button-subtle-focus-color: var(--denhaag-menu-button-active-color);
+      --utrecht-button-subtle-hover-color: var(--denhaag-menu-button-active-color);
       --utrecht-button-subtle-background-color: var(--denhaag-mobile-menu-list-item-button-background-color);
       --utrecht-button-subtle-color: var(--denhaag-mobile-menu-list-item-button-color);
       --utrecht-button-subtle-font-size: var(--denhaag-mobile-menu-list-item-button-font-size);
@@ -98,7 +100,9 @@
   }
 
   .denhaag-mobile-menu-list-item--active,
-  .denhaag-mobile-menu-list-item:active {
+  .denhaag-mobile-menu-list-item--focus,
+  .denhaag-mobile-menu-list-item:active,
+  .denhaag-mobile-menu-list-item:focus {
     & > .denhaag-mobile-menu-list-item-link,
     & > .denhaag-mobile-menu-list-item-button {
       font-weight: var(--denhaag-menu-button-active-font-weight);
