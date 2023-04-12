@@ -25,6 +25,7 @@ export interface HeaderLogicProps {
   userprofileMenu: MenuProps;
   languageSwitcherMenu: LanguageSwitcherLogicProps;
   mobileMenu: Array<NavigationGroupProps>;
+  mobileBreakpoint?: number;
 }
 
 interface LinkItemProps {
@@ -62,11 +63,10 @@ const NavigationGroup: React.FC<NavigationGroupProps> = (props: NavigationGroupP
   );
 };
 
-export const HeaderLogic: React.FC<HeaderLogicProps> = (props: HeaderLogicProps) => {
+export const HeaderLogic: React.FC<HeaderLogicProps> = ({ mobileBreakpoint = 1024, ...props }: HeaderLogicProps) => {
   const menuConstants = {
     WELCOME: 'WELCOME',
     LANGUAGE: 'LANGUAGE',
-    BREAKPOINT: 1024,
   };
 
   const [welcomeMenuActive, setWelcomeMenuActive] = useState(false);
@@ -111,14 +111,14 @@ export const HeaderLogic: React.FC<HeaderLogicProps> = (props: HeaderLogicProps)
 
   const [windowWidth] = useScreenSize();
   useEffect(() => {
-    if (mobileMenuActive && windowWidth >= menuConstants.BREAKPOINT) {
+    if (mobileMenuActive && windowWidth >= mobileBreakpoint) {
       setMobileMenuActive(false);
       if (lastDesktopMenuActive === menuConstants.LANGUAGE) {
         setLanguageSwitcherActive(true);
       } else {
         setWelcomeMenuActive(true);
       }
-    } else if ((welcomeMenuActive || languageSwitcherActive) && windowWidth < menuConstants.BREAKPOINT) {
+    } else if ((welcomeMenuActive || languageSwitcherActive) && windowWidth < mobileBreakpoint) {
       setWelcomeMenuActive(false);
       setLanguageSwitcherActive(false);
       setMobileMenuActive(true);
