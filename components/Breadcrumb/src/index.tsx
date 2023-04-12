@@ -61,7 +61,7 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = (props: BreadcrumbProps) =>
 
     return (
       <BreadcrumbListItem
-        collapse={shouldCollapseItem}
+        hidden={shouldCollapseItem}
         key={contentNumber}
         itemProp="itemListElement"
         itemScope
