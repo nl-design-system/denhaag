@@ -3,7 +3,7 @@
   "description": "A Button component",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
-  "version": "0.2.3-www-denhaag-nl.33",
+  "version": "0.2.3-www-denhaag-nl.34",
   "exports": {
     ".": {
       "types": "./dist/cjs/index.d.ts",
@@ -33,10 +33,10 @@
     "access": "public"
   },
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "0.2.3-www-denhaag-nl.33"
+    "@gemeente-denhaag/baseprops": "0.2.3-www-denhaag-nl.34"
   },
   "devDependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.33"
+    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.34"
   },
   "peerDependencies": {
     "react": "^17.0.0"
