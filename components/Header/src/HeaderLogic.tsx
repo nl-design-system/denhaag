@@ -175,7 +175,7 @@ export const HeaderLogic: React.FC<HeaderLogicProps> = ({ mobileBreakpoint = 102
       </ResponsiveContent>
       <Breadcrumb navigationPath={props.breadcrumbs} />
       {languageSwitcherActive && (
-        <React.Fragment>
+        <>
           <Sheet>
             <ResponsiveContent>
               <IconButton className="denhaag-sheet__close-button" onClick={handleLanguageSwitcherToggle}>
@@ -187,10 +187,10 @@ export const HeaderLogic: React.FC<HeaderLogicProps> = ({ mobileBreakpoint = 102
             </ResponsiveContent>
           </Sheet>
           <SheetOverlay onClick={handleCloseSheet} />
-        </React.Fragment>
+        </>
       )}
       {welcomeMenuActive && (
-        <React.Fragment>
+        <>
           <Sheet>
             <ResponsiveContent>
               <IconButton className="denhaag-sheet__close-button" onClick={handleWelcomeMenuToggle}>
@@ -205,10 +205,10 @@ export const HeaderLogic: React.FC<HeaderLogicProps> = ({ mobileBreakpoint = 102
             </ResponsiveContent>
           </Sheet>
           <SheetOverlay onClick={handleCloseSheet} />
-        </React.Fragment>
+        </>
       )}
       {mobileMenuActive && (
-        <React.Fragment>
+        <>
           <SheetDialog ref={mobileMenuDialogRef} onClose={handleMobileMenuToggle}>
             <ResponsiveContent>
               <HeaderContent>
@@ -237,7 +237,7 @@ export const HeaderLogic: React.FC<HeaderLogicProps> = ({ mobileBreakpoint = 102
             </ResponsiveContent>
           </SheetDialog>
           <SheetOverlay onClick={handleCloseSheet} />
-        </React.Fragment>
+        </>
       )}
     </Header>
   );
