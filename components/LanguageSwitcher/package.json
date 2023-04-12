@@ -30,7 +30,8 @@
   },
   "devDependencies": {
     "@gemeente-denhaag/icons": "0.2.3-alpha.297",
-    "@gemeente-denhaag/link": "0.2.3-alpha.301"
+    "@gemeente-denhaag/link": "0.2.3-alpha.301",
+    "@gemeente-denhaag/typography": "0.2.3-alpha.301"
   },
   "peerDependencies": {
     "react": "^17.0.0"

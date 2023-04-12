@@ -1,6 +1,6 @@
 import React from 'react';
 import BaseProps from '@gemeente-denhaag/baseprops';
-import ResponsiveContent from '/components/ResponsiveContent';
+import ResponsiveContent from '@gemeente-denhaag/responsive-content';
 import clsx from 'clsx';
 
 import './index.scss';

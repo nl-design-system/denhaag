@@ -17,12 +17,13 @@
 
     .denhaag-mobile-menu-list-item-link,
     .denhaag-mobile-menu-list-item-button {
-      --_utrecht-button-active-color: var(--denhaag-menu-button-active-color);
-      --_utrecht-button-hover-color: var(--denhaag-menu-button-hover-color);
+      --utrecht-focus-outline-style: var(--denhaag-mobile-menu-list-item-outline-style);
       --utrecht-button-min-block-size: var(--denhaag-mobile-menu-list-item-min-block-size);
+      --utrecht-button-subtle-active-border-color: var(--denhaag-menu-button-active-color);
       --utrecht-button-subtle-background-color: var(--denhaag-mobile-menu-list-item-button-background-color);
       --utrecht-button-subtle-color: var(--denhaag-mobile-menu-list-item-button-color);
       --utrecht-button-subtle-font-size: var(--denhaag-mobile-menu-list-item-button-font-size);
+      --utrecht-button-subtle-hover-border-color: var(--denhaag-menu-button-hover-color);
 
       align-items: var(--denhaag-mobile-menu-list-item-button-align-items);
       appearance: var(--denhaag-mobile-menu-list-item-button-appearance);

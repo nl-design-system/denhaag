@@ -7,9 +7,9 @@ export const LanguageSwitcherTitle: React.FC<LanguageSwitcherTitleProps> = (prop
   const className = clsx('denhaag-language-switcher__title', props.className);
 
   return (
-    <span {...props} className={className}>
+    <h4 {...props} className={className}>
       {props.children}
-    </span>
+    </h4>
   );
 };
 
