@@ -40,7 +40,7 @@ interface MenuProps {
 interface NavigationGroupProps {
   label: string;
   url?: string;
-  navigation?: Array<LinkItemProps>;
+  navigation?: Array<NavigationGroupProps>;
 }
 
 const NavigationGroup: React.FC<NavigationGroupProps> = (props: NavigationGroupProps) => {
@@ -182,7 +182,6 @@ export const HeaderLogic: React.FC<HeaderLogicProps> = (props: HeaderLogicProps)
                 <CloseIcon />
               </IconButton>
               <SheetContainer>
-                <Heading4>Kies uw voorkeurstaal</Heading4>
                 <LanguageSwitcherLogic {...props.languageSwitcherMenu}></LanguageSwitcherLogic>
               </SheetContainer>
             </ResponsiveContent>

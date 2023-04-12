@@ -9,7 +9,7 @@ import { ArrowRightIcon, CheckedIcon } from '@gemeente-denhaag/icons';
 import clsx from 'clsx';
 
 interface Language {
-  title: string;
+  label: string;
   url?: string;
   lang?: string;
   hrefLang?: string;
@@ -17,13 +17,13 @@ interface Language {
 }
 
 export interface LanguageSwitcherLogicProps {
-  title: string;
+  label: string;
   languages: Array<Language>;
   mobileMenuScrolled?: boolean;
 }
 
 export const LanguageSwitcherLogic = ({
-  title = '',
+  label = '',
   languages = [],
   mobileMenuScrolled,
 }: LanguageSwitcherLogicProps) => {
@@ -43,7 +43,7 @@ export const LanguageSwitcherLogic = ({
           hrefLang={language.hrefLang}
           className={classNames}
         >
-          {language.title}
+          {language.label}
         </Link>
       </LanguageSwitcherListItem>
     );
@@ -51,7 +51,7 @@ export const LanguageSwitcherLogic = ({
 
   return (
     <LanguageSwitcher>
-      <LanguageSwitcherTitle className="utrecht-heading-4">{title}</LanguageSwitcherTitle>
+      <LanguageSwitcherTitle className="utrecht-heading-4">{label}</LanguageSwitcherTitle>
       {languages.length > 0 && <LanguageSwitcherList>{languageListContent}</LanguageSwitcherList>}
     </LanguageSwitcher>
   );
