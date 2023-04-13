@@ -5,7 +5,6 @@ import { ResponsiveContent } from '@gemeente-denhaag/responsive-content';
 import { IconButton } from '@gemeente-denhaag/iconbutton';
 import { CloseIcon } from '@gemeente-denhaag/icons';
 import pkg from '../../package.json';
-import readme from '../../README.md';
 
 export default {
   title: 'React/Page Elements/Sheet',
@@ -14,9 +13,6 @@ export default {
     docs: {
       source: {
         type: 'code',
-      },
-      description: {
-        component: readme,
       },
     },
     status: {
@@ -47,10 +43,6 @@ const DialogTemplate: Story<SheetProps> = () => {
   );
 };
 
-/**
- * Implementation of Timeline
- * "activeStep" property set to enforce step visibility.
- */
 export const Default: Story<SheetProps> = Template.bind({});
 
 export const MobileDialog: Story<SheetProps> = DialogTemplate.bind({});
