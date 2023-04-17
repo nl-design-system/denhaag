@@ -22,10 +22,12 @@ import CheckedSvg from './svg/functional/checked.svg';
 import DownloadSvg from './svg/functional/download.svg';
 import EditSvg from './svg/functional/edit.svg';
 import ExternalLinkSvg from './svg/functional/external-link.svg';
+import FavoriteSvg from './svg/functional/favorite.svg';
 import GridSvg from './svg/functional/grid.svg';
 import HamburgerSvg from './svg/functional/hamburger.svg';
 import HideSvg from './svg/functional/hide.svg';
 import ListSvg from './svg/functional/list.svg';
+import LogOutSvg from './svg/functional/log-out.svg';
 import SearchSvg from './svg/functional/search.svg';
 import ShareSvg from './svg/functional/share.svg';
 import ShowSvg from './svg/functional/show.svg';
@@ -58,9 +60,11 @@ import UserSvg from './svg/objects/user.svg';
 
 // Social
 import FacebookSvg from './svg/social/facebook.svg';
+import InstagramSvg from './svg/social/instagram.svg';
 import LinkedInSvg from './svg/social/linkedin.svg';
 import TwitterSvg from './svg/social/twitter.svg';
 import WhatsAppSvg from './svg/social/whatsapp.svg';
+import YouTubeSvg from './svg/social/youtube.svg';
 
 const buildIcon: React.ElementType = (svg: React.ElementType, props: SvgIconProps) => (
   <SvgIcon component={svg} {...props} />
@@ -86,10 +90,12 @@ export const CheckedIcon: F = (props: SvgIconProps) => buildIcon(CheckedSvg, pro
 export const DownloadIcon: F = (props: SvgIconProps) => buildIcon(DownloadSvg, props);
 export const EditIcon: F = (props: SvgIconProps) => buildIcon(EditSvg, props);
 export const ExternalLinkIcon: F = (props: SvgIconProps) => buildIcon(ExternalLinkSvg, props);
+export const FavoriteIcon: F = (props: SvgIconProps) => buildIcon(FavoriteSvg, props);
 export const GridIcon: F = (props: SvgIconProps) => buildIcon(GridSvg, props);
 export const HamburgerIcon: F = (props: SvgIconProps) => buildIcon(HamburgerSvg, props);
 export const HideIcon: F = (props: SvgIconProps) => buildIcon(HideSvg, props);
 export const ListIcon: F = (props: SvgIconProps) => buildIcon(ListSvg, props);
+export const LogOutIcon: F = (props: SvgIconProps) => buildIcon(LogOutSvg, props);
 export const SearchIcon: F = (props: SvgIconProps) => buildIcon(SearchSvg, props);
 export const ShareIcon: F = (props: SvgIconProps) => buildIcon(ShareSvg, props);
 export const ShowIcon: F = (props: SvgIconProps) => buildIcon(ShowSvg, props);
@@ -121,9 +127,11 @@ export const UserIcon: F = (props: SvgIconProps) => buildIcon(UserSvg, props);
 
 // Social
 export const FacebookIcon: F = (props: SvgIconProps) => buildIcon(FacebookSvg, props);
+export const InstagramIcon: F = (props: SvgIconProps) => buildIcon(InstagramSvg, props);
 export const LinkedInIcon: F = (props: SvgIconProps) => buildIcon(LinkedInSvg, props);
 export const TwitterIcon: F = (props: SvgIconProps) => buildIcon(TwitterSvg, props);
 export const WhatsAppIcon: F = (props: SvgIconProps) => buildIcon(WhatsAppSvg, props);
+export const YouTubeIcon: F = (props: SvgIconProps) => buildIcon(YouTubeSvg, props);
 
 // Misc
 export const MegaphoneIcon: F = (props: SvgIconProps) => buildIcon(MegaphoneSvg, props);
