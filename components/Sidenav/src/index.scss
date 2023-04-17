@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
   row-gap: var(--denhaag-sidenav-row-gap);
+  min-width: 14.5rem;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .denhaag-sidenav__list {
@@ -52,6 +57,7 @@
 
 .denhaag-sidenav__link--current {
   color: var(--denhaag-sidenav-link-active-color);
+  font-weight: var(--denhaag-sidenav-link-active-font-weight);
 }
 
 .denhaag-sidenav__link--child {
