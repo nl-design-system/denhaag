@@ -1,6 +1,10 @@
 {
   "denhaag": {
     "page": {
+      "header": {
+        "background-color": { "value": "{denhaag.color.white}" },
+        "index": { "value": "2" }
+      },
       "content": {
         "main": {
           "margin-block-start": { "value": "1rem" },

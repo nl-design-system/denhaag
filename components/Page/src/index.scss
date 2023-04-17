@@ -1,11 +1,31 @@
-.denhaag-page-content__main {
-  margin-block-start: var(--denhaag-page-content-main-margin-block-start);
+.denhaag-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 
-  @media (min-width: 768px) {
-    margin-block-start: var(--denhaag-page-content-main-sm-margin-block-start);
+  &-header {
+    background-color: var(--denhaag-page-header-background-color);
+    z-index: var(--denhaag-page-header-index);
   }
 
-  @media (min-width: 1024px) {
-    margin-block-start: var(--denhaag-page-content-main-md-margin-block-start);
+  &-content {
+    margin-block-end: 80px;
+    margin-block-start: var(--denhaag-page-content-main-margin-block-start);
+
+    @media (min-width: 768px) {
+      margin-block-start: var(--denhaag-page-content-main-sm-margin-block-start);
+    }
+
+    @media (min-width: 1024px) {
+      margin-block-start: var(--denhaag-page-content-main-md-margin-block-start);
+    }
+
+    &__main {
+      flex-grow: 1;
+    }
+  }
+
+  &-footer {
+    margin-block-start: auto;
   }
 }
