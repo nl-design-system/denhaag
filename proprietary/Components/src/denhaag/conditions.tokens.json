@@ -103,7 +103,7 @@
       },
       "title": {
         "font-size": {
-          "value": "{utrecht.heading-2.font-size}"
+          "value": "{utrecht.heading-2xl.font-size}"
         },
         "color": {
           "value": "{denhaag.color.green.5}"

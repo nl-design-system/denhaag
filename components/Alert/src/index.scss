@@ -13,21 +13,6 @@
   --utrecht-heading-4-margin-block-start: 0;
 }
 
-.denhaag-alert [class^="utrecht-heading-"] {
-  margin-block-end: var(--denhaag-alert-heading);
-}
-
-.denhaag-alert [class^="utrecht-heading-"] + .utrecht-paragraph {
-  --utrecht-paragraph-margin-block-start: 0;
-}
-
-.denhaag-alert .denhaag-icon-button {
-  --denhaag-icon-button-padding-block-end: 0;
-  --denhaag-icon-button-padding-block-start: 0;
-  --denhaag-icon-button-padding-inline-end: 0;
-  --denhaag-icon-button-padding-inline-start: 0;
-}
-
 .denhaag-alert--error {
   background-color: var(--denhaag-alert-error-background-color);
 
@@ -55,7 +40,8 @@
 }
 
 .denhaag-alert__close {
-  padding-block-start: 4px;
+  padding-block-start: var(--denhaag-alert-close-padding-block-start);
+  padding-inline-start: var(--denhaag-alert-close-padding-inline-start);
 }
 
 .denhaag-alert .denhaag-button {
@@ -126,4 +112,8 @@
 .denhaag-alert__content {
   margin-inline-start: var(--denhaag-alert-content-margin-inline-start);
   margin-inline-end: var(--denhaag-alert-content-margin-inline-end);
+}
+
+[class^="utrecht-heading-"] {
+  margin-block-end: var(--denhaag-alert-heading-margin-block-end);
 }
