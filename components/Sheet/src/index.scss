@@ -1,0 +1,64 @@
+.denhaag-sheet {
+  background-color: var(--denhaag-sheet-background-color);
+  left: var(--denhaag-sheet-left);
+  margin-block-start: var(--denhaag-sheet-margin-block-start);
+  min-height: var(--denhaag-sheet-min-height);
+  overflow-x: var(--denhaag-sheet-overflow-x);
+  position: var(--denhaag-sheet-position);
+  top: var(--denhaag-sheet-top);
+  width: var(--denhaag-sheet-width);
+  z-index: var(--denhaag-sheet-z-index);
+
+  &.denhaag-sheet--dialog {
+    border: var(--denhaag-sheet-dialog-border);
+    margin-block-start: var(--denhaag-sheet-dialog-margin-block-start);
+    max-height: var(--denhaag-sheet-dialog-max-height);
+    max-width: var(--denhaag-sheet-dialog-max-width);
+    overflow-y: var(--denhaag-sheet-dialog-overflow-y);
+    padding-block-end: var(--denhaag-sheet-dialog-padding-block-end);
+    padding-block-start: var(--denhaag-sheet-dialog-padding-block-start);
+    padding-inline-end: var(--denhaag-sheet-dialog-padding-inline-end);
+    padding-inline-start: var(--denhaag-sheet-dialog-padding-inline-start);
+    top: var(--denhaag-sheet-dialog-top);
+
+    &::backdrop {
+      top: var(--denhaag-sheet-dialog-backdrop-top);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    padding-block-start: var(--denhaag-sheet-desktop-padding-block-start);
+    min-height: var(--denhaag-sheet-desktop-min-height);
+    top: var(--denhaag-sheet-desktop-top);
+  }
+
+  &__close-button {
+    float: var(--denhaag-sheet-close-button-float);
+  }
+
+  &__container {
+    margin-block-end: var(--denhaag-sheet-container-margin-block-end);
+
+    &-menu {
+      display: var(--denhaag-sheet-container-menu-display);
+    }
+  }
+
+  &-overlay {
+    background-color: var(--denhaag-sheet-overlay-background-color);
+    height: var(--denhaag-sheet-overlay-height);
+    left: var(--denhaag-sheet-overlay-left);
+    position: var(--denhaag-sheet-overlay-position);
+    top: calc(var(--denhaag-sheet-overlay-top) + var(--denhaag-sheet-margin-block-start));
+    width: var(--denhaag-sheet-overlay-width);
+    z-index: var(--denhaag-sheet-overlay-z-index);
+
+    @media (min-width: 768px) {
+      top: calc(var(--denhaag-sheet-overlay-tablet-top) + var(--denhaag-sheet-margin-block-start));
+    }
+
+    @media (min-width: 1024px) {
+      top: calc(var(--denhaag-sheet-overlay-desktop-top) + var(--denhaag-sheet-margin-block-start));
+    }
+  }
+}
