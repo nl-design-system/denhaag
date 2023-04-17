@@ -4,6 +4,11 @@
       "border-radius": {
         "value": "1px"
       },
+      "heading": {
+        "margin-block-end": {
+          "value": "0.1875rem"
+        }
+      },
       "padding-block-start": {
         "value": "{denhaag.space.block.xl}"
       },
@@ -16,16 +21,13 @@
       "padding-inline-end": {
         "value": "{denhaag.space.block.xl}"
       },
-      "heading": {
-        "value": "0"
-      },
       "content": {
         "margin-inline": {
           "start": {
             "value": "{denhaag.space.block.xl}"
           },
           "end": {
-            "value": "0"
+            "value": "{denhaag.space.block.xl}"
           }
         }
       },
@@ -52,6 +54,12 @@
           "border-offset": {
             "value": "3px"
           }
+        },
+        "padding-block-start": {
+          "value": "{denhaag.space.block.2xs}"
+        },
+        "padding-inline-start": {
+          "value": "{denhaag.space.inline.xl}"
         }
       },
       "error": {
