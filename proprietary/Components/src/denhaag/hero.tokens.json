@@ -340,6 +340,15 @@
           "value": "{denhaag.color.white}"
         },
         "container": {
+          "align-items": {
+            "value": "center"
+          },
+          "flex-direction": {
+            "value": "row"
+          },
+          "justify-content": {
+            "value": "space-between"
+          },
           "max-width": {
             "value": "100%"
           },
@@ -368,7 +377,7 @@
             "value": "flex"
           },
           "margin-inline": {
-            "value": "0"
+            "value": "auto"
           },
           "padding-inline": {
             "value": "{denhaag.space.inline.3xl}"
@@ -401,6 +410,21 @@
           },
           "text-align": {
             "value": "left"
+          },
+          "width": {
+            "value": "100%"
+          },
+          "width-s": {
+            "value": "371px"
+          },
+          "width-m": {
+            "value": "363px"
+          },
+          "width-l": {
+            "value": "370px"
+          },
+          "width-xl": {
+            "value": "496px"
           }
         },
         "image": {
@@ -420,6 +444,9 @@
             "value": "320px"
           },
           "height-m": {
+            "value": "360px"
+          },
+          "height-l": {
             "value": "390px"
           },
           "height-xl": {
