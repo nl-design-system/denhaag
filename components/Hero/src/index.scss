@@ -292,7 +292,7 @@
   }
 
   .denhaag-hero--theme-image {
-    min-height: var(--denhaag-hero-theme-image-image-height-s);
+    --denhaag-hero-theme-image-image-height: var(--denhaag-hero-theme-image-image-height-s);
   }
 
   .denhaag-hero--theme-image .denhaag-hero__container {
@@ -302,10 +302,6 @@
     --denhaag-hero-theme-image-container-padding-inline: 1rem;
 
     padding-inline-start: var(--denhaag-hero-theme-image-container-padding-inline-start-s);
-  }
-
-  .denhaag-hero--theme-image .denhaag-hero__image {
-    --denhaag-hero-theme-image-image-height: var(--denhaag-hero-theme-image-image-height-s);
   }
 
   .denhaag-hero--theme-image .denhaag-hero__content {
@@ -354,16 +350,12 @@
   }
 
   .denhaag-hero--theme-image {
-    min-height: var(--denhaag-hero-theme-image-image-height-m);
+    --denhaag-hero-theme-image-image-height: var(--denhaag-hero-theme-image-image-height-m);
   }
 
   .denhaag-hero--theme-image .denhaag-hero__container {
     --denhaag-hero-container-max-width: var(--denhaag-hero-theme-image-container-max-width-m);
     --denhaag-hero-theme-image-container-padding-inline: 0;
-  }
-
-  .denhaag-hero--theme-image .denhaag-hero__image {
-    --denhaag-hero-theme-image-image-height: var(--denhaag-hero-theme-image-image-height-m);
   }
 
   .denhaag-hero--theme-image .denhaag-hero__content {
@@ -395,7 +387,7 @@
     padding-inline-start: var(--denhaag-hero-theme-image-container-padding-inline-start-l);
   }
 
-  .denhaag-hero--theme-image .denhaag-hero__image {
+  .denhaag-hero--theme-image {
     --denhaag-hero-theme-image-image-height: var(--denhaag-hero-theme-image-image-height-l);
   }
 
@@ -441,7 +433,7 @@
   }
 
   .denhaag-hero--theme-image {
-    min-height: var(--denhaag-hero-theme-image-image-height-xl);
+    --denhaag-hero-theme-image-image-height: var(--denhaag-hero-theme-image-image-height-xl);
   }
 
   .denhaag-hero--theme-image .denhaag-hero__container {
@@ -449,10 +441,6 @@
 
     padding-block-start: var(--denhaag-hero-theme-image-container-padding-block-start-xl);
     padding-inline-start: var(--denhaag-hero-theme-image-container-padding-inline-start-xl);
-  }
-
-  .denhaag-hero--theme-image .denhaag-hero__image {
-    --denhaag-hero-theme-image-image-height: var(--denhaag-hero-theme-image-image-height-xl);
   }
 
   .denhaag-hero--theme-image .denhaag-hero__content {
