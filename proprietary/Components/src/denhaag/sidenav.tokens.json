@@ -1,8 +1,16 @@
 {
   "denhaag": {
     "sidenav": {
+      "display": { "value": "flex" },
+      "flex-direction": { "value": "column" },
+      "min-width": { "value": "14.5rem" },
+      "mobile": {
+        "display": { "value": "none" }
+      },
       "item": {
-        "font-family": { "value": "{denhaag.typography.sans-serif.font-family}" },
+        "font-family": {
+          "value": "{denhaag.typography.sans-serif.font-family}"
+        },
         "font-size": { "value": "{denhaag.typography.scale.base.font-size}" },
         "font-weight": { "value": "{denhaag.typography.weight.regular}" },
         "height": { "value": "48px" },
