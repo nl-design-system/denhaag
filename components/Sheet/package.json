@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/sheet",
-  "version": "0.1.0-alpha.100",
+  "version": "0.1.0-alpha.101",
   "description": "A sheet component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -29,8 +29,8 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "devDependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-alpha.303",
     "@gemeente-denhaag/iconbutton": "0.2.3-alpha.303",
+    "@gemeente-denhaag/icons": "0.2.3-alpha.303",
     "@gemeente-denhaag/responsive-content": "0.1.1-alpha.163"
   },
   "peerDependencies": {
