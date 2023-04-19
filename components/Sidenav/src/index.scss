@@ -1,11 +1,11 @@
 .denhaag-sidenav {
-  display: flex;
-  flex-direction: column;
+  display: var(--denhaag-sidenav-display);
+  flex-direction: var(--denhaag-sidenav-flex-direction);
   row-gap: var(--denhaag-sidenav-row-gap);
-  min-width: 14.5rem;
+  min-width: var(--denhaag-sidenav-min-width);
 
   @media (max-width: 767px) {
-    display: none;
+    display: var(--denhaag-sidenav-mobile-display);
   }
 }
 
