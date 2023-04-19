@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/form-field",
-  "version": "0.1.1-alpha.181",
+  "version": "0.1.1-alpha.182",
   "description": "A form field component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -29,10 +29,10 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "devDependencies": {
-    "@gemeente-denhaag/checkbox": "0.2.3-alpha.305",
-    "@gemeente-denhaag/formcontrollabel": "0.2.3-alpha.305",
-    "@gemeente-denhaag/icons": "0.2.3-alpha.305",
-    "@gemeente-denhaag/textfield": "0.2.3-alpha.305"
+    "@gemeente-denhaag/checkbox": "0.2.3-alpha.306",
+    "@gemeente-denhaag/formcontrollabel": "0.2.3-alpha.306",
+    "@gemeente-denhaag/icons": "0.2.3-alpha.306",
+    "@gemeente-denhaag/textfield": "0.2.3-alpha.306"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"
