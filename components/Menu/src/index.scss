@@ -1,0 +1,124 @@
+.denhaag-mobile-menu {
+  transition-duration: var(--denhaag-mobile-menu-transition-duration);
+  will-change: var(--denhaag-mobile-menu-will-change);
+
+  &--scrolled {
+    transform: var(--denhaag-mobile-menu-scrolled-transform);
+  }
+}
+
+.denhaag-mobile-menu-list {
+  padding-inline-start: var(--denhaag-mobile-menu-list-padding-inline-start);
+
+  .denhaag-mobile-menu-list-item {
+    border-bottom: var(--denhaag-mobile-menu-list-item-border-bottom);
+    display: var(--denhaag-mobile-menu-list-item-display);
+    flex-direction: var(--denhaag-mobile-menu-list-item-flex-direction);
+
+    .denhaag-mobile-menu-list-item-link,
+    .denhaag-mobile-menu-list-item-button {
+      --utrecht-focus-outline-style: var(--denhaag-mobile-menu-list-item-outline-style);
+      --utrecht-button-min-block-size: var(--denhaag-mobile-menu-list-item-min-block-size);
+      --utrecht-button-subtle-active-color: var(--denhaag-menu-button-active-color);
+      --utrecht-button-subtle-focus-color: var(--denhaag-menu-button-active-color);
+      --utrecht-button-subtle-hover-color: var(--denhaag-menu-button-active-color);
+      --utrecht-button-subtle-background-color: var(--denhaag-mobile-menu-list-item-button-background-color);
+      --utrecht-button-subtle-color: var(--denhaag-mobile-menu-list-item-button-color);
+      --utrecht-button-subtle-font-size: var(--denhaag-mobile-menu-list-item-button-font-size);
+      --utrecht-button-subtle-hover-border-color: var(--denhaag-menu-button-hover-color);
+
+      align-items: var(--denhaag-mobile-menu-list-item-button-align-items);
+      appearance: var(--denhaag-mobile-menu-list-item-button-appearance);
+      border: var(--denhaag-mobile-menu-list-item-button-border);
+      display: var(--denhaag-mobile-menu-list-item-button-display);
+      justify-content: var(--denhaag-mobile-menu-list-item-button-justify-content);
+      margin-block-end: var(--denhaag-mobile-menu-list-item-button-margin-block);
+      margin-block-start: var(--denhaag-mobile-menu-list-item-margin-block);
+      margin-inline-end: var(--denhaag-mobile-menu-list-item-button-margin-inline);
+      margin-inline-start: var(--denhaag-mobile-menu-list-item-button-margin-inline);
+      padding-block-end: var(--denhaag-mobile-menu-list-item-button-padding-block);
+      padding-block-start: var(--denhaag-mobile-menu-list-item-button-padding-block);
+      padding-inline-end: var(--denhaag-mobile-menu-list-item-button-padding-inline);
+      padding-inline-start: var(--denhaag-mobile-menu-list-item-button-padding-inline);
+      text-decoration: var(--denhaag-mobile-menu-list-item-button-text-decoration);
+      width: var(--denhaag-mobile-menu-list-item-button-width);
+
+      &--large {
+        font-size: var(--denhaag-mobile-menu-list-item-button-large-font-size);
+        font-weight: var(--denhaag-mobile-menu-list-item-button-large-font-weight);
+      }
+    }
+
+    .denhaag-mobile-menu-list-item-expanded-list {
+      display: var(--denhaag-mobile-menu-list-item-expanded-list-display);
+      list-style: var(--denhaag-mobile-menu-list-item-expanded-list-list-style);
+      padding-inline-start: var(--denhaag-mobile-menu-list-item-expanded-list-padding-inline-start);
+
+      &--open {
+        display: var(--denhaag-mobile-menu-list-item-expanded-list-open-display);
+      }
+    }
+
+    .denhaag-mobile-menu-list-submenu {
+      display: var(--denhaag-mobile-menu-list-submenu-display);
+      flex-direction: var(--denhaag-mobile-menu-list-submenu-flex-direction);
+      left: var(--denhaag-mobile-menu-list-submenu-left);
+      position: var(--denhaag-mobile-menu-list-submenu-position);
+      top: var(--denhaag-mobile-menu-list-submenu-top);
+      width: var(--denhaag-mobile-menu-list-submenu-width);
+
+      &--open {
+        display: var(--denhaag-mobile-menu-list-submenu-open-display);
+      }
+    }
+
+    .denhaag-mobile-menu-list-submenu__back-button {
+      align-self: var(--denhaag-mobile-menu-list-submenu-back-button-align-self);
+      background-color: var(--denhaag-mobile-menu-list-submenu-back-button-background-color);
+      border: var(--denhaag-mobile-menu-list-submenu-back-button-border);
+      padding-block-end: var(--denhaag-mobile-menu-list-submenu-back-button-padding-block-end);
+      padding-block-start: var(--denhaag-mobile-menu-list-submenu-back-button-padding-block-start);
+      padding-inline-end: var(--denhaag-mobile-menu-list-submenu-back-button-padding-inline-end);
+      padding-inline-start: var(--denhaag-mobile-menu-list-submenu-back-button-padding-inline-start);
+    }
+
+    .denhaag-mobile-menu-list-submenu-list-item-link__icon {
+      color: var(--denhaag-mobile-menu-list-submenu-back-button-icon-color);
+    }
+  }
+
+  &-expandable {
+    display: var(--denhaag-mobile-menu-list-expandable-display);
+
+    &--open {
+      display: var(--denhaag-mobile-menu-list-expandable-open-display);
+    }
+
+    .denhaag-mobile-menu-list-item {
+      border-bottom: var(--denhaag-mobile-menu-list-expandable-item-border-bottom);
+    }
+  }
+
+  .denhaag-mobile-menu-list-item--active,
+  .denhaag-mobile-menu-list-item--focus,
+  .denhaag-mobile-menu-list-item:active,
+  .denhaag-mobile-menu-list-item:focus {
+    & > .denhaag-mobile-menu-list-item-link,
+    & > .denhaag-mobile-menu-list-item-button {
+      font-weight: var(--denhaag-menu-button-active-font-weight);
+    }
+  }
+}
+
+.denhaag-mobile-menu-list-item--active .denhaag-mobile-menu-list-item-button--large .denhaag-icon {
+  transform: var(--denhaag-mobile-menu-list-item-active-icon-transform);
+}
+
+.denhaag-mobile-menu-list-submenu-title {
+  align-items: var(--denhaag-mobile-menu-list-submenu-title-align-items);
+  border-bottom: var(--denhaag-mobile-menu-list-item-border-bottom);
+  display: var(--denhaag-mobile-menu-list-submenu-title-display);
+  font-size: var(--denhaag-mobile-menu-list-item-button-large-font-size);
+  font-weight: var(--denhaag-mobile-menu-list-item-button-large-font-weight);
+  min-block-size: var(--denhaag-mobile-menu-list-item-min-block-size);
+}

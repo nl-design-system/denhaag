@@ -29,7 +29,10 @@
   },
   "dependencies": {
     "@gemeente-denhaag/baseprops": "0.2.3-alpha.306",
-    "@gemeente-denhaag/icons": "0.2.3-alpha.306"
+    "@gemeente-denhaag/icons": "0.2.3-alpha.306",
+    "@gemeente-denhaag/language-switcher": "0.2.3-alpha.298",
+    "@utrecht/component-library-css": "1.0.0-alpha.460",
+    "uuidv4": "6.2.13"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"
