@@ -28,8 +28,22 @@
     "build": "rollup -c ../../rollup.config.js",
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
-  "devDependencies": {
-    "@gemeente-denhaag/baseprops": "0.2.3-alpha.269",
-    "@gemeente-denhaag/header-logo": "0.1.1-alpha.167"
+  "dependencies": {
+    "@gemeente-denhaag/baseprops": "0.2.3-alpha.307",
+    "@gemeente-denhaag/breadcrumb": "0.1.1-alpha.235",
+    "@gemeente-denhaag/button": "0.2.3-alpha.307",
+    "@gemeente-denhaag/header-logo": "0.1.1-alpha.167",
+    "@gemeente-denhaag/iconbutton": "0.2.3-alpha.307",
+    "@gemeente-denhaag/icons": "0.2.3-alpha.307",
+    "@gemeente-denhaag/language-switcher": "0.2.3-alpha.299",
+    "@gemeente-denhaag/link": "0.2.3-alpha.307",
+    "@gemeente-denhaag/link-group": "0.1.3-alpha.168",
+    "@gemeente-denhaag/menu": "0.2.3-alpha.307",
+    "@gemeente-denhaag/responsive-content": "0.1.1-alpha.167",
+    "@gemeente-denhaag/sheet": "0.1.0-alpha.103",
+    "@gemeente-denhaag/typography": "0.2.3-alpha.307"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0"
   }
 }
