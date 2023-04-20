@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { ButtonHTMLAttributes } from 'react';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import { ChevronDownIcon } from '@gemeente-denhaag/icons';
 import clsx from 'clsx';
 
 import './menu-button.scss';
+import './index.scss';
 
 /**
  * The properties of the normal variant of the Menu Button
@@ -67,17 +68,12 @@ export interface MenuButtonProps extends Omit<BaseProps, 'classes' | 'tabIndex'>
 /**
  * The properties of the expandable variant of the Menu Button
  */
-export interface MenuButtonExpandableProps extends Omit<BaseProps, 'classes' | 'tabIndex'> {
+export interface MenuButtonExpandableProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   /**
    * If the element is active or not. You an use this property to mark the menu
    * item of the current active page.
    */
   active: boolean;
-  /**
-   * Determines the Onclick function the menu button refers to
-   * Only applicable to the Expandable variant
-   */
-  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 export const MenuButton: React.FC<MenuButtonProps> = ({ active = false, ...props }: MenuButtonProps) => {
@@ -109,7 +105,7 @@ export const MenuButton: React.FC<MenuButtonProps> = ({ active = false, ...props
   );
 };
 
-export const MenuButtonExpandable: React.FC<MenuButtonProps> = ({
+export const MenuButtonExpandable: React.FC<MenuButtonExpandableProps> = ({
   active = false,
   ...props
 }: MenuButtonExpandableProps) => {
@@ -123,7 +119,7 @@ export const MenuButtonExpandable: React.FC<MenuButtonProps> = ({
   );
 
   return (
-    <button id={props.id} onClick={props.onClick} className={rootClassNames} title={props.children?.toString()}>
+    <button className={rootClassNames} title={props.children?.toString()} {...props}>
       {props.children}
       <span className="denhaag-menu-button__chevron">
         <ChevronDownIcon aria-label="ChevronDownIcon" />
