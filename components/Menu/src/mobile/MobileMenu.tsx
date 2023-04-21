@@ -18,9 +18,15 @@ interface NavigationGroupProps {
   navigation?: Array<NavigationGroupProps>;
 }
 
+interface LogoutButtonProps {
+  label: string;
+  onLogoutClick: (event: React.MouseEvent<HTMLButtonElement> | React.TouchEvent<HTMLButtonElement>) => void;
+}
+
 export interface MobileMenuProps extends HTMLAttributes<HTMLElement> {
-  navigation: Array<NavigationGroupProps>;
-  languageSwitcherMenu: LanguageSwitcherLogicProps;
+  navigation?: Array<NavigationGroupProps>;
+  languageSwitcherMenu?: LanguageSwitcherLogicProps;
+  logoutButton?: LogoutButtonProps;
 }
 
 interface ExpandedListItemProps extends NavigationGroupProps {
@@ -99,7 +105,11 @@ const ExpandedList = (props: ExpandedListItemProps) => {
   );
 };
 
-export const MobileMenu: React.FC<MobileMenuProps> = (props: MobileMenuProps) => {
+export const MobileMenu: React.FC<MobileMenuProps> = ({
+  navigation,
+  languageSwitcherMenu,
+  logoutButton,
+}: MobileMenuProps) => {
   const [menuScrolled, setMenuScrolled] = useState(false);
 
   const classNames = clsx('denhaag-mobile-menu', menuScrolled ? 'denhaag-mobile-menu--scrolled' : '');
@@ -110,33 +120,34 @@ export const MobileMenu: React.FC<MobileMenuProps> = (props: MobileMenuProps) =>
 
   return (
     <SheetContainer className={classNames}>
-      <MobileMenuList>
-        {props.navigation.map((l1Nav, key) => {
-          if (l1Nav.url) {
-            return (
-              <MobileMenuListItem key={key}>
-                <MobileMenuLink href={l1Nav.url} large tabIndex={menuScrolled ? -1 : undefined}>
-                  {l1Nav.label}
-                </MobileMenuLink>
-              </MobileMenuListItem>
-            );
-          } else {
-            return (
-              <ExpandedList {...l1Nav} tabIndex={menuScrolled ? -1 : undefined} scrollMenu={scrollMenu} key={key} />
-            );
-          }
-        })}
-      </MobileMenuList>
+      {navigation && (
+        <MobileMenuList>
+          {navigation.map((l1Nav, key) => {
+            if (l1Nav.url) {
+              return (
+                <MobileMenuListItem key={key}>
+                  <MobileMenuLink href={l1Nav.url} large tabIndex={menuScrolled ? -1 : undefined}>
+                    {l1Nav.label}
+                  </MobileMenuLink>
+                </MobileMenuListItem>
+              );
+            } else {
+              return (
+                <ExpandedList {...l1Nav} tabIndex={menuScrolled ? -1 : undefined} scrollMenu={scrollMenu} key={key} />
+              );
+            }
+          })}
+        </MobileMenuList>
+      )}
       <div className="denhaag-mobile-menu-actions">
-        <div className="denhaag-button-group">
-          <Button tabIndex={menuScrolled ? -1 : undefined} icon={<LogOutIcon />}>
-            Uitloggen
-          </Button>
-        </div>
-        <LanguageSwitcherLogic
-          {...props.languageSwitcherMenu}
-          mobileMenuScrolled={menuScrolled}
-        ></LanguageSwitcherLogic>
+        {logoutButton && (
+          <div className="denhaag-button-group">
+            <Button tabIndex={menuScrolled ? -1 : undefined} icon={<LogOutIcon />} onClick={logoutButton.onLogoutClick}>
+              {logoutButton.label}
+            </Button>
+          </div>
+        )}
+        {languageSwitcherMenu && <LanguageSwitcherLogic {...languageSwitcherMenu} mobileMenuScrolled={menuScrolled} />}
       </div>
     </SheetContainer>
   );

@@ -21,16 +21,33 @@ import { Button } from '@gemeente-denhaag/button';
 import './index.scss';
 
 export interface HeaderLogicProps {
-  breadcrumbs: Array<LinkItemProps>;
-  userprofileMenu: MenuProps;
-  languageSwitcherMenu: LanguageSwitcherLogicProps;
-  mobileMenu: Array<NavigationGroupProps>;
+  breadcrumbs?: Array<LinkItemProps>;
+  userprofileMenu?: MenuProps;
+  languageSwitcherMenu?: LanguageSwitcherProps;
+  mobileMenu?: MobileMenuProps;
+  logoutButton?: LogoutButtonProps;
   mobileBreakpoint?: number;
+}
+
+interface LogoutButtonProps {
+  label: string;
+  onLogoutClick: (event: React.MouseEvent<HTMLButtonElement> | React.TouchEvent<HTMLButtonElement>) => void;
 }
 
 interface LinkItemProps {
   label: string;
   url: string;
+}
+
+interface LanguageSwitcherProps {
+  currentLanguageLabel: string;
+  languageSwitcherProps: LanguageSwitcherLogicProps;
+}
+
+interface MobileMenuProps {
+  openLabel: string;
+  closeLabel: string;
+  navigation?: Array<NavigationGroupProps>;
 }
 
 interface MenuProps {
@@ -63,7 +80,14 @@ const NavigationGroup: React.FC<NavigationGroupProps> = (props: NavigationGroupP
   );
 };
 
-export const HeaderLogic: React.FC<HeaderLogicProps> = ({ mobileBreakpoint = 1024, ...props }: HeaderLogicProps) => {
+export const HeaderLogic: React.FC<HeaderLogicProps> = ({
+  breadcrumbs,
+  userprofileMenu,
+  languageSwitcherMenu,
+  mobileMenu,
+  logoutButton,
+  mobileBreakpoint = 1024,
+}: HeaderLogicProps) => {
   const menuConstants = {
     WELCOME: 'WELCOME',
     LANGUAGE: 'LANGUAGE',
@@ -137,6 +161,8 @@ export const HeaderLogic: React.FC<HeaderLogicProps> = ({ mobileBreakpoint = 102
     }
   }, [mobileMenuActive]);
 
+  const renderMobileMenu = mobileMenu || languageSwitcherMenu || logoutButton;
+
   return (
     <Header>
       <ResponsiveContent>
@@ -151,30 +177,36 @@ export const HeaderLogic: React.FC<HeaderLogicProps> = ({ mobileBreakpoint = 102
             </Link>
           </HeaderLogoContainer>
           <HeaderActions>
-            <HeaderAction className="denhaag-header__actions-action-language-switcher">
-              <MenuButtonExpandable active={languageSwitcherActive} onClick={handleLanguageSwitcherToggle}>
-                NL
-              </MenuButtonExpandable>
-            </HeaderAction>
-            <HeaderAction className="denhaag-header__actions-action-user-menu">
-              <MenuButtonExpandable active={welcomeMenuActive} onClick={handleWelcomeMenuToggle}>
-                {props.userprofileMenu.label}
-              </MenuButtonExpandable>
-            </HeaderAction>
+            {languageSwitcherMenu && (
+              <HeaderAction className="denhaag-header__actions-action-language-switcher">
+                <MenuButtonExpandable active={languageSwitcherActive} onClick={handleLanguageSwitcherToggle}>
+                  {languageSwitcherMenu.currentLanguageLabel}
+                </MenuButtonExpandable>
+              </HeaderAction>
+            )}
+            {userprofileMenu && (
+              <HeaderAction className="denhaag-header__actions-action-user-menu">
+                <MenuButtonExpandable active={welcomeMenuActive} onClick={handleWelcomeMenuToggle}>
+                  {userprofileMenu.label}
+                </MenuButtonExpandable>
+              </HeaderAction>
+            )}
           </HeaderActions>
-          <HeaderMobileActions>
-            <Button
-              className="denhaag-button denhaag-button--primary-action"
-              onClick={handleMobileMenuToggle}
-              ref={menuButtonRef}
-            >
-              Menu
-            </Button>
-          </HeaderMobileActions>
+          {renderMobileMenu && (
+            <HeaderMobileActions>
+              <Button
+                className="denhaag-button denhaag-button--primary-action"
+                onClick={handleMobileMenuToggle}
+                ref={menuButtonRef}
+              >
+                {mobileMenu?.openLabel}
+              </Button>
+            </HeaderMobileActions>
+          )}
         </HeaderContent>
       </ResponsiveContent>
-      <Breadcrumb navigationPath={props.breadcrumbs} />
-      {languageSwitcherActive && (
+      {breadcrumbs && <Breadcrumb navigationPath={breadcrumbs} />}
+      {languageSwitcherMenu && languageSwitcherActive && (
         <>
           <Sheet>
             <ResponsiveContent>
@@ -182,14 +214,14 @@ export const HeaderLogic: React.FC<HeaderLogicProps> = ({ mobileBreakpoint = 102
                 <CloseIcon />
               </IconButton>
               <SheetContainer>
-                <LanguageSwitcherLogic {...props.languageSwitcherMenu}></LanguageSwitcherLogic>
+                <LanguageSwitcherLogic {...languageSwitcherMenu.languageSwitcherProps}></LanguageSwitcherLogic>
               </SheetContainer>
             </ResponsiveContent>
           </Sheet>
           <SheetOverlay onClick={handleCloseSheet} />
         </>
       )}
-      {welcomeMenuActive && (
+      {userprofileMenu && welcomeMenuActive && (
         <>
           <Sheet>
             <ResponsiveContent>
@@ -197,17 +229,21 @@ export const HeaderLogic: React.FC<HeaderLogicProps> = ({ mobileBreakpoint = 102
                 <CloseIcon />
               </IconButton>
               <SheetContainer>
-                {props.userprofileMenu.navigationGroups.map((group, key) => {
+                {userprofileMenu.navigationGroups.map((group, key) => {
                   return <NavigationGroup {...group} key={key} />;
                 })}
-                <Button icon={<LogOutIcon />}>Uitloggen</Button>
+                {logoutButton && (
+                  <Button icon={<LogOutIcon />} onClick={logoutButton.onLogoutClick}>
+                    {logoutButton.label}
+                  </Button>
+                )}
               </SheetContainer>
             </ResponsiveContent>
           </Sheet>
           <SheetOverlay onClick={handleCloseSheet} />
         </>
       )}
-      {mobileMenuActive && (
+      {renderMobileMenu && mobileMenuActive && (
         <>
           <SheetDialog ref={mobileMenuDialogRef} onClose={handleMobileMenuToggle}>
             <ResponsiveContent>
@@ -227,13 +263,17 @@ export const HeaderLogic: React.FC<HeaderLogicProps> = ({ mobileBreakpoint = 102
                     onClick={handleMobileMenuToggle}
                     ref={closeButtonRef}
                   >
-                    Sluiten
+                    {mobileMenu?.closeLabel}
                   </Button>
                 </HeaderMobileActions>
               </HeaderContent>
             </ResponsiveContent>
             <ResponsiveContent>
-              <MobileMenu navigation={props.mobileMenu} languageSwitcherMenu={props.languageSwitcherMenu} />
+              <MobileMenu
+                navigation={mobileMenu?.navigation}
+                languageSwitcherMenu={languageSwitcherMenu?.languageSwitcherProps}
+                logoutButton={logoutButton}
+              />
             </ResponsiveContent>
           </SheetDialog>
           <SheetOverlay onClick={handleCloseSheet} />
