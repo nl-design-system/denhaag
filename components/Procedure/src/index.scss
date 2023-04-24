@@ -11,7 +11,7 @@
 @import "./SubStepHeading";
 
 /* copied from main branch, Process Steps component */
-.denhaag-step-marker {
+.denhaag-procedure .denhaag-step-marker {
   position: relative;
   z-index: 1;
   align-items: center;
@@ -37,13 +37,13 @@
   min-block-size: var(--denhaag-step-marker-min-size, var(--denhaag-step-marker-size));
 }
 
-.denhaag-step-marker--current {
+.denhaag-procedure .denhaag-step-marker--current {
   background-color: var(--denhaag-step-marker-current-background-color);
   border-color: var(--denhaag-step-marker-current-border-color);
   color: var(--denhaag-step-marker-current-color);
 }
 
-.denhaag-step-marker__connector {
+.denhaag-procedure .denhaag-step-marker__connector {
   position: absolute;
   left: calc(var(--denhaag-step-marker-size) / 2);
   top: 0;
@@ -52,13 +52,13 @@
     var(--denhaag-step-marker-connector-color);
 }
 
-.denhaag-step-marker__connector--main-to-nested {
+.denhaag-procedure .denhaag-step-marker__connector--main-to-nested {
   top: calc(-1 * var(--denhaag-step-marker-size) / 2);
   padding-block-end: calc(var(--denhaag-process-steps-step-distance) + var(--denhaag-step-marker-nested-size));
 }
 
-.denhaag-step-marker__connector--checked,
-.denhaag-step-marker__connector--current {
+.denhaag-procedure .denhaag-step-marker__connector--checked,
+.denhaag-procedure .denhaag-step-marker__connector--current {
   outline-width: var(
     --denhaag-step-marker-connector-checked-outline-width,
     var(--denhaag-step-marker-connector-outline-width, 1px)
