@@ -1,0 +1,101 @@
+{
+  "denhaag": {
+    "procedure": {
+      "font-family": {
+        "value": "{denhaag.typography.sans-serif.font-family}"
+      },
+      "font-size": {
+        "value": "{denhaag.typography.scale.base.font-size}"
+      },
+      "line-height": {
+        "value": "24px"
+      },
+      "step-heading": {
+        "color": {
+          "value": "{denhaag.color.grey.4}"
+        },
+        "font-size": {
+          "value": "{denhaag.typography.scale.base.font-size}"
+        },
+        "font-weight": {
+          "value": "{denhaag.typography.weight.bold}"
+        },
+        "line-height": {
+          "value": "{denhaag.typography.scale.base.line-height}"
+        },
+        "checked": {
+          "font-size": {
+            "value": "{denhaag.typography.scale.base.font-size}"
+          },
+          "font-weight": {
+            "value": "{denhaag.typography.weight.bold}"
+          },
+          "line-height": {
+            "value": "{denhaag.typography.scale.base.line-height}"
+          }
+        },
+        "current": {
+          "color": {
+            "value": "{denhaag.color.green.3}"
+          },
+          "font-size": {
+            "value": "{denhaag.typography.scale.base.font-size}"
+          },
+          "font-weight": {
+            "value": "{denhaag.typography.weight.bold}"
+          },
+          "line-height": {
+            "value": "{denhaag.typography.scale.base.line-height}"
+          }
+        },
+        "warning": {
+          "color": {
+            "value": "{denhaag.color.orange.5}"
+          }
+        },
+        "error": {
+          "color": {
+            "value": "{denhaag.color.red.3}"
+          }
+        }
+      },
+      "step-collapse-icon": {
+        "size": {
+          "value": "16px"
+        },
+        "padding": {
+          "value": "4px"
+        }
+      },
+      "step-content": {
+        "color": {
+          "value": "{denhaag.color.grey.4}"
+        },
+        "margin": {
+          "value": "12px"
+        }
+      },
+      "step": {
+        "outline-offset": {
+          "value": "2px"
+        },
+        "outline": {
+          "value": "{denhaag.focus.border}"
+        },
+        "padding": {
+          "value": "12px"
+        }
+      },
+      "step-meta": {
+        "font-size": {
+          "value": "16px"
+        },
+        "date": {
+          "font-size": {
+            "value": "20px"
+          }
+        }
+      }
+    }
+  }
+}
