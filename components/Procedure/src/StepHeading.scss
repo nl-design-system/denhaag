@@ -1,0 +1,43 @@
+/* tokens copy-pasted from main branch process-steps.tokens.json to www.denhaag.nl branch procedure.tokens.json */
+.denhaag-process-steps__step-heading {
+  display: flex;
+  align-items: center;
+  color: var(--denhaag-procedure-step-heading-color);
+  font-family: var(--denhaag-procedure-step-heading-font-family);
+  font-size: var(--denhaag-procedure-step-heading-font-size);
+  font-weight: var(--denhaag-procedure-step-heading-font-weight);
+  line-height: var(--denhaag-procedure-step-heading-line-height);
+  text-align: start;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.denhaag-process-steps__step-heading--not-checked {
+  color: var(--denhaag-procedure-step-heading-not-checked-color);
+}
+
+.denhaag-process-steps__step-heading--checked {
+  color: var(--denhaag-procedure-step-heading-checked-color);
+  font-size: var(--denhaag-procedure-step-heading-checked-font-size, var(--denhaag-procedure-step-heading-font-size));
+  font-weight: var(
+    --denhaag-procedure-step-heading-checked-font-weight,
+    var(--denhaag-procedure-step-heading-font-weight)
+  );
+}
+
+.denhaag-process-steps__step-heading--current {
+  color: var(--denhaag-procedure-step-heading-current-color);
+  font-size: var(--denhaag-procedure-step-heading-current-font-size, var(--denhaag-procedure-step-heading-font-size));
+  font-weight: var(
+    --denhaag-procedure-step-heading-current-font-weight,
+    var(--denhaag-procedure-step-heading-font-weight)
+  );
+}
+
+.denhaag-process-steps__step-heading--warning {
+  color: var(--denhaag-procedure-step-heading-warning-color);
+}
+
+.denhaag-process-steps__step-heading--error {
+  color: var(--denhaag-procedure-step-heading-error-color);
+}

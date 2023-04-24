@@ -1,0 +1,9 @@
+/* tokens copy-pasted from main branch process-steps.tokens.json to www.denhaag.nl branch procedure.tokens.json */
+.denhaag-process-steps__sub-step {
+  position: relative;
+  align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  gap: 23px;
+  margin-block-start: var(--denhaag-procedure-sub-step-distance);
+}
