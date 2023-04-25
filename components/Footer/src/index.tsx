@@ -1,6 +1,6 @@
 import React from 'react';
 import BaseProps from '@gemeente-denhaag/baseprops';
-import ResponsiveContent from '/components/ResponsiveContent';
+import ResponsiveContent from '@gemeente-denhaag/responsive-content';
 import clsx from 'clsx';
 
 import './index.scss';
@@ -16,8 +16,8 @@ export interface FooterLegalProps extends Omit<BaseProps, 'tabIndex' | 'children
 }
 
 export interface FooterSocialLinks {
-  icon: string;
-  title: string;
+  icon: React.ReactElement;
+  label: string;
   url: string;
 }
 
@@ -99,7 +99,7 @@ export const FooterContact: React.FC<FooterContactProps> = (props: FooterContact
               <ul className="utrecht-list-social">
                 {props.socialData.links.map((item, key) => (
                   <li className="utrecht-list-social__item" key={key}>
-                    <a href={item.url} className="utrecht-link-social" title={item.title}>
+                    <a href={item.url} className="utrecht-link-social" title={item.label}>
                       {item.icon}
                     </a>
                   </li>
