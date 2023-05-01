@@ -2,6 +2,7 @@ import Status from './Status';
 
 export default Status;
 
+export * from './Procedure';
 export * from './Status';
 export * from './Step';
 export * from './StepHeader';

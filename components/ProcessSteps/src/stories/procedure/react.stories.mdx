@@ -1,0 +1,124 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+import { Paragraph } from "@gemeente-denhaag/typography";
+import { Procedure } from "../../index";
+import pkg from "../../../package.json";
+
+export const exampleArgs = {
+  steps: [
+    { id: "deelname", marker: 1, title: "Deelname aan geluidsonderzoek" },
+    { id: "onderzoek", marker: 2, title: "Onderzoek naar geluidsoverlast" },
+    { id: "uitvoeren", marker: 3, title: "Uitvoeren van maatregelen" },
+    { id: "klaar", marker: 4, title: "Maatregelen zijn uitgevoerd" },
+  ],
+};
+
+export const Template = (args) => {
+  return <Procedure {...args}></Procedure>;
+};
+
+<Meta
+  title="React/Process Steps/Procedure"
+  component={Procedure}
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: { type: "dynamic" },
+    },
+    status: {
+      type: "ALPHA",
+    },
+  }}
+/>
+
+# Process Steps
+
+## Default
+
+<Canvas>
+  <Story name="Default" args={exampleArgs}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## With metadata
+
+<Canvas>
+  <Story
+    name="With metadata"
+    args={{
+      steps: [
+        {
+          id: "afspraak",
+          marker: 1,
+          title: "Maak een afspraak",
+          meta: (
+            <Paragraph>
+              Voor het aanvragen van een nieuw paspoort moet u langskomen op Stadhuis Spui of stadskantoor Leyweg. U
+              maakt daarvoor een afspraak.
+            </Paragraph>
+          ),
+        },
+        {
+          id: "voorbereiding",
+          marker: 2,
+          title: "Kom goed voorbereid naar de afspraak",
+          meta: <Paragraph>U heeft een aantal dingen nodig tijdens de afspraak.</Paragraph>,
+        },
+        {
+          id: "ophalen",
+          marker: 3,
+          title: "Haal uw paspoort op",
+          meta: <Paragraph>Na 5 werkdagen is uw paspoort klaar en kunt u het ophalen.</Paragraph>,
+        },
+      ],
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## With metadata with anchor
+
+<Canvas>
+  <Story
+    name="With metadata with anchor"
+    args={{
+      steps: [
+        {
+          id: "afspraak",
+          marker: 1,
+          title: "Maak een afspraak",
+          meta: (
+            <Paragraph>
+              Voor het aanvragen van een nieuw paspoort moet u langskomen op Stadhuis Spui of stadskantoor Leyweg. U
+              maakt daarvoor een afspraak.
+            </Paragraph>
+          ),
+        },
+        {
+          id: "voorbereiding",
+          marker: 2,
+          title: "Kom goed voorbereid naar de afspraak",
+          meta: (
+            <Paragraph>
+              U heeft een aantal dingen nodig tijdens de afspraak. <a href="/">Bekijk wat u moet meenemen</a>
+            </Paragraph>
+          ),
+        },
+        {
+          id: "ophalen",
+          marker: 3,
+          title: "Haal uw paspoort op",
+          meta: (
+            <Paragraph>
+              Na 5 werkdagen is uw paspoort klaar en kunt u het ophalen.{" "}
+              <a href="/">Bekijk wat u nodig heeft bij het ophalen</a>
+            </Paragraph>
+          ),
+        },
+      ],
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
