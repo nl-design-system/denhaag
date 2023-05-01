@@ -5,7 +5,7 @@ export type StepStatus = 'checked' | 'not-checked' | 'current' | 'warning' | 'er
 
 export interface StepProps extends LiHTMLAttributes<HTMLLIElement> {
   appearance?: StepStatus;
-  current: boolean;
+  current?: boolean;
 }
 
 export const Step: React.FC<StepProps> = ({ children, current = false, appearance, ...props }) => {
