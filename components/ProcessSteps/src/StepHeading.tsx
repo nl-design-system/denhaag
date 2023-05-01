@@ -6,11 +6,14 @@ export interface StepHeadingProps extends HTMLAttributes<HTMLDivElement> {
   appearance?: StepStatus;
 }
 
-export const StepHeading: React.FC<StepHeadingProps> = ({ children, appearance = 'not-checked', ...props }) => {
+export const StepHeading: React.FC<StepHeadingProps> = ({ children, appearance, ...props }) => {
   return (
     <p
       {...props}
-      className={clsx('denhaag-process-steps__step-heading', `denhaag-process-steps__step-heading--${appearance}`)}
+      className={clsx(
+        'denhaag-process-steps__step-heading',
+        appearance && `denhaag-process-steps__step-heading--${appearance}`,
+      )}
     >
       {children}
     </p>

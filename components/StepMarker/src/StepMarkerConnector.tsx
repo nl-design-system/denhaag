@@ -13,7 +13,7 @@ interface StepMarkerConnectorProps extends Omit<HTMLAttributes<HTMLDivElement>, 
 
 export const StepMarkerConnector: React.FC<StepMarkerConnectorProps> = ({
   className,
-  appearance = 'not-checked',
+  appearance,
   from,
   to,
   ...props
@@ -23,7 +23,7 @@ export const StepMarkerConnector: React.FC<StepMarkerConnectorProps> = ({
       {...props}
       className={clsx(
         'denhaag-step-marker__connector',
-        `denhaag-step-marker__connector--${appearance}`,
+        appearance && `denhaag-step-marker__connector--${appearance}`,
         `denhaag-step-marker__connector--${from}-to-${to}`,
         className,
       )}

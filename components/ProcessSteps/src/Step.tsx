@@ -8,11 +8,11 @@ export interface StepProps extends LiHTMLAttributes<HTMLLIElement> {
   current: boolean;
 }
 
-export const Step: React.FC<StepProps> = ({ children, current = false, appearance = 'not-checked', ...props }) => {
+export const Step: React.FC<StepProps> = ({ children, current = false, appearance, ...props }) => {
   return (
     <li
       {...props}
-      className={clsx('denhaag-process-steps__step', `denhaag-process-steps__step--${appearance}`)}
+      className={clsx('denhaag-process-steps__step', appearance && `denhaag-process-steps__step--${appearance}`)}
       aria-current={current ? 'step' : undefined}
     >
       {children}

@@ -1,7 +1,10 @@
 {
   "denhaag": {
     "step-marker": {
+      "background-color": { "value": "{denhaag.color.green.3}" },
+      "border-color": { "value": "{denhaag.color.green.3}" },
       "border-width": { "value": "2px" },
+      "color": { "value": "{denhaag.color.white}" },
       "font-family": { "value": "{denhaag.typography.sans-serif.font-family}" },
       "font-weight": { "value": "400" },
       "font-size": { "value": "{denhaag.typography.scale.s.font-size}" },
@@ -51,6 +54,8 @@
         "color": { "value": "{denhaag.color.white}" }
       },
       "connector": {
+        "outline-color": { "value": "{denhaag.color.green.3}" },
+        "outline-style": { "value": "solid" },
         "outline-width": { "value": "1px" },
         "not-checked": { "outline-color": { "value": "{denhaag.color.grey.2}" } },
         "checked": {

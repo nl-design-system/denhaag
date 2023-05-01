@@ -6,13 +6,13 @@ export interface StepMarkerProps extends HTMLAttributes<HTMLDivElement> {
   nested?: boolean;
 }
 
-export const StepMarker = ({ children, appearance = 'not-checked', nested, ...props }: StepMarkerProps) => {
+export const StepMarker = ({ children, appearance, nested, ...props }: StepMarkerProps) => {
   return (
     <div
       {...props}
       className={clsx(
         'denhaag-step-marker',
-        `denhaag-step-marker--${appearance}`,
+        appearance && `denhaag-step-marker--${appearance}`,
         nested && 'denhaag-step-marker--nested',
       )}
     >
