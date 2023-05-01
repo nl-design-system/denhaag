@@ -2,8 +2,8 @@ import React, { HTMLAttributes } from 'react';
 
 import clsx from 'clsx';
 
-type MarkerType = 'main' | 'nested';
-type Appearance = 'checked' | 'not-checked' | 'current' | 'warning' | 'error';
+export type MarkerType = 'main' | 'nested';
+export type Appearance = 'checked' | 'not-checked' | 'current' | 'warning' | 'error';
 
 interface StepMarkerConnectorProps extends Omit<HTMLAttributes<HTMLDivElement>, 'children'> {
   from: MarkerType;
