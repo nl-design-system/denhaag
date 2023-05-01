@@ -3,8 +3,9 @@
   left: calc(var(--denhaag-step-marker-size) / 2);
   top: 0;
   height: 100%;
-  outline: var(--denhaag-step-marker-connector-width, 1px) var(--denhaag-step-marker-connector-style, dashed)
-    var(--denhaag-step-marker-connector-color);
+  outline-width: var(--denhaag-step-marker-connector-outline-width, 1px);
+  outline-style: var(--denhaag-step-marker-connector-outline-style, solid);
+  outline-color: var(--denhaag-step-marker-connector-outline-color);
 }
 
 .denhaag-step-marker__connector--main-to-main {
