@@ -1,6 +1,7 @@
 import React, { LiHTMLAttributes } from 'react';
 import clsx from 'clsx';
-import { StepStatus } from '.';
+
+export type StepStatus = 'checked' | 'not-checked' | 'current' | 'warning' | 'error';
 
 export interface StepProps extends LiHTMLAttributes<HTMLLIElement> {
   appearance?: StepStatus;
