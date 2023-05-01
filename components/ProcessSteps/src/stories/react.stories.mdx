@@ -1,5 +1,5 @@
 import { Canvas, Meta, Story } from "@storybook/addon-docs";
-import { ProcessSteps } from "../index";
+import { Status } from "../index";
 import pkg from "../../package.json";
 
 export const exampleArgs = {
@@ -28,12 +28,12 @@ export const exampleArgs = {
 };
 
 export const Template = (args) => {
-  return <ProcessSteps {...args}></ProcessSteps>;
+  return <Status {...args}></Status>;
 };
 
 <Meta
   title="React/Process Steps/Status"
-  component={ProcessSteps}
+  component={Status}
   parameters={{
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: { source: { type: "dynamic" } },
