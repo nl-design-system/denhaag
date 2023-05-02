@@ -10,7 +10,7 @@ import HeaderLogoContainer from './HeaderLogoContainer';
 import HeaderActions from './HeaderActions';
 import HeaderMobileActions from './HeaderMobileActions';
 import HeaderAction from './HeaderAction';
-import Breadcrumb from '@gemeente-denhaag/breadcrumb';
+import { Breadcrumb, BreadcrumbItemData } from '@gemeente-denhaag/breadcrumb';
 import { Sheet, SheetOverlay, SheetContainer, SheetDialog, useEscapeKey, useScreenSize } from '@gemeente-denhaag/sheet';
 import IconButton from '@gemeente-denhaag/iconbutton';
 import { CloseIcon, ArrowRightIcon, LogOutIcon } from '@gemeente-denhaag/icons';
@@ -21,7 +21,7 @@ import { Button } from '@gemeente-denhaag/button';
 import './index.scss';
 
 export interface HeaderLogicProps {
-  breadcrumbs?: Array<LinkItemProps>;
+  breadcrumbs?: Array<BreadcrumbItemData>;
   userprofileMenu?: MenuProps;
   languageSwitcherMenu?: LanguageSwitcherProps;
   mobileMenu?: MobileMenuProps;
@@ -32,11 +32,6 @@ export interface HeaderLogicProps {
 interface LogoutButtonProps {
   label: string;
   onLogoutClick: (event: React.MouseEvent<HTMLButtonElement> | React.TouchEvent<HTMLButtonElement>) => void;
-}
-
-interface LinkItemProps {
-  label: string;
-  url: string;
 }
 
 interface LanguageSwitcherProps {

@@ -12,7 +12,8 @@ import './index.scss';
 
 export interface BreadcrumbItemData {
   label: string;
-  url: string;
+  url?: string;
+  link?: React.ReactElement;
 }
 
 export interface BreadcrumbProps extends Omit<BaseProps, 'tabIndex' | 'classNames'> {
@@ -31,23 +32,37 @@ interface BreadcrumbItemProps {
   item: BreadcrumbItemData;
   isLastItem: boolean;
   contentNumber: number;
+  children?: React.ReactNode;
 }
+
+export const BreadcrumbItemLink: React.FC<BreadcrumbItemProps> = (props: BreadcrumbItemProps) => {
+  if (props.item.link) {
+    const CustomLink = props.item.link.type;
+    return <CustomLink {...props.item.link.props}>{props.children}</CustomLink>;
+  } else {
+    return (
+      <BreadcrumbLink href={props.item.url} itemProp="item">
+        {props.children}
+      </BreadcrumbLink>
+    );
+  }
+};
 
 const HomeIconBreadcrumbItem: React.FC<BreadcrumbItemProps> = (props: BreadcrumbItemProps) => {
   return (
-    <BreadcrumbLink aria-label="Home" href={props.item.url} itemProp="item">
+    <BreadcrumbItemLink {...props} aria-label="Home">
       <HouseIcon />
       {!props.isLastItem && <ChevronRightIcon />}
-    </BreadcrumbLink>
+    </BreadcrumbItemLink>
   );
 };
 
 const BreadcrumbItem: React.FC<BreadcrumbItemProps> = (props: BreadcrumbItemProps) => {
   return (
-    <BreadcrumbLink href={props.item.url} itemProp="item">
+    <BreadcrumbItemLink {...props}>
       <BreadcrumbText itemProp="name">{props.item.label}</BreadcrumbText>
       {!props.isLastItem && <ChevronRightIcon />}
-    </BreadcrumbLink>
+    </BreadcrumbItemLink>
   );
 };
 
