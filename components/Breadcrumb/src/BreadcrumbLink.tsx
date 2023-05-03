@@ -2,15 +2,24 @@ import React, { AnchorHTMLAttributes } from 'react';
 import clsx from 'clsx';
 import './index.scss';
 
-export type BreadcrumbLinkProps = AnchorHTMLAttributes<HTMLAnchorElement>;
+export type Link = (props: AnchorHTMLAttributes<HTMLAnchorElement>) => JSX.Element;
 
-export const BreadcrumbLink: React.FC<BreadcrumbLinkProps> = (props: BreadcrumbLinkProps) => {
-  const classNames = clsx('denhaag-breadcrumb__link', props.className);
+export interface BreadcrumbLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
+  Link?: Link;
+}
+
+export const BreadcrumbLink: React.FC<BreadcrumbLinkProps> = ({
+  className,
+  children,
+  Link = ({ children, ...props }) => <a {...props}>{children}</a>,
+  ...props
+}: BreadcrumbLinkProps) => {
+  const classNames = clsx('denhaag-breadcrumb__link', className);
 
   return (
-    <a {...props} className={classNames}>
-      {props.children}
-    </a>
+    <Link {...props} className={classNames}>
+      {children}
+    </Link>
   );
 };
 
