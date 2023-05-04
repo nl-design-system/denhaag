@@ -22,7 +22,7 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/design-tokens-components": "0.2.3-alpha.288",
-    "@utrecht/components": "1.0.0-alpha.314"
+    "@gemeente-denhaag/design-tokens-components": "0.2.3-alpha.312",
+    "@utrecht/components": "1.0.0-alpha.458"
   }
 }
