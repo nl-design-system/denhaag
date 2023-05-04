@@ -9,7 +9,16 @@
   "exclude": ["dist", "src/**/*.stories.tsx"],
   "references": [
     {
+      "path": "../Icons"
+    },
+    {
       "path": "../BaseProps"
+    },
+    {
+      "path": "../../proprietary/Common"
+    },
+    {
+      "path": "../../proprietary/Components"
     }
   ]
 }
