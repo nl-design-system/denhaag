@@ -31,7 +31,7 @@
     "@gemeente-denhaag/baseprops": "0.2.3-alpha.313",
     "@gemeente-denhaag/icons": "0.2.3-alpha.313",
     "@gemeente-denhaag/language-switcher": "0.2.3-alpha.305",
-    "@utrecht/component-library-css": "1.0.0-alpha.460",
+    "@utrecht/component-library-css": "1.0.0-alpha.497",
     "uuidv4": "6.2.13"
   },
   "peerDependencies": {

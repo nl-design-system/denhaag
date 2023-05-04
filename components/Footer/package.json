@@ -30,9 +30,9 @@
   },
   "dependencies": {
     "@gemeente-denhaag/responsive-content": "0.1.1-alpha.173",
-    "@utrecht/component-library-css": "1.0.0-alpha.387"
+    "@utrecht/component-library-css": "1.0.0-alpha.497"
   },
   "devDependencies": {
-    "@gemeente-denhaag/baseprops": "0.2.3-alpha.269"
+    "@gemeente-denhaag/baseprops": "0.2.3-alpha.312"
   }
 }
