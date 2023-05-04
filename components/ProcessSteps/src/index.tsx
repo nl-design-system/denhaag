@@ -1,6 +1,18 @@
 import Status from './Status';
 
-export default Status;
+/*
+ As some other Design Systems already depend on ProcessSteps
+ Let's export Status as default and ProcessSteps 
+ And mark it as deprecated
+ */
+
+/**
+ * @deprecated `ProcessSteps` is the component group. Use `import { Status }` instead.
+ */
+const ProcessSteps = Status;
+
+export { ProcessSteps };
+export default ProcessSteps;
 
 export * from './Status';
 export * from './Step';
