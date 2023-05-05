@@ -2000,7 +2000,7 @@
     "@gemeente-denhaag/baseprops" "0.2.3-alpha.312"
 
 "@gemeente-denhaag/card-authentication@file:components/CardAuthentication":
-  version "0.1.1-alpha.42"
+  version "0.1.1-alpha.43"
 
 "@gemeente-denhaag/design-tokens-components@0.2.3-alpha.312":
   version "0.2.3-alpha.312"
@@ -5592,10 +5592,31 @@
   resolved "https://registry.yarnpkg.com/@utrecht/component-library-css/-/component-library-css-1.0.0-alpha.497.tgz#9eb3344834dbe1e41309a12a6948c1a77ee3c4e3"
   integrity sha512-tzm/LN5XktEm4k6cQWMoFnTkGoc2J6Ee7K/NFo+EoEl0JqsTqDVlg6f6p/dk/sn89z+v7nnZbKWUK2iOMG5R3A==
 
+"@utrecht/component-library-css@1.0.0-alpha.498":
+  version "1.0.0-alpha.498"
+  resolved "https://registry.yarnpkg.com/@utrecht/component-library-css/-/component-library-css-1.0.0-alpha.498.tgz#e9d8ac56c1a1992044a85f82fd0df43ebd7854ce"
+  integrity sha512-3E3UU9SV/EisefvziY72SH58RdnQ+5dOUZAXQLRWgbdbGbCOPVgqTxfkNpae8aIeKNtDwCuo2bEhU2XzwLtGuQ==
+
+"@utrecht/component-library-react@1.0.0-alpha.307":
+  version "1.0.0-alpha.307"
+  resolved "https://registry.yarnpkg.com/@utrecht/component-library-react/-/component-library-react-1.0.0-alpha.307.tgz#21e00cf7cdee85454187d29b8714ddec62549e1b"
+  integrity sha512-FtmPNk0zcqZd811Zi9gEao5DTMYE90lo+mPwTGnjV4oQd9gdCnvB//jLDk0ZhieoghLk6G/oa/BWu8nGzhgUcQ==
+  dependencies:
+    clsx "1.2.1"
+    date-fns "2.30.0"
+    lodash.chunk "4.2.0"
+
 "@utrecht/components@1.0.0-alpha.458":
   version "1.0.0-alpha.458"
   resolved "https://registry.yarnpkg.com/@utrecht/components/-/components-1.0.0-alpha.458.tgz#169475f8ed20a3b0467fe461e69b4c12fbbea4ce"
   integrity sha512-XFDAldihSCd6G5kSxokuW2IWDllzHyrT9tozV2BPis2CXffRxHMGqVEcRBl7bJhqX9zI48ZAkWh+z4HJbRx5LA==
+  dependencies:
+    clsx "1.2.1"
+
+"@utrecht/components@1.0.0-alpha.459":
+  version "1.0.0-alpha.459"
+  resolved "https://registry.yarnpkg.com/@utrecht/components/-/components-1.0.0-alpha.459.tgz#0f0166b479dc5c50d6cb5a1fc7e90d677b557174"
+  integrity sha512-kN7K92t4zdomnyoKsi8tKF0l8v5d45cZmnVycERTdPXTfQIVeV8svEO2nTqv8GtWcsTwO94Am06gjCPMY2QJdA==
   dependencies:
     clsx "1.2.1"
 
@@ -14762,6 +14783,11 @@ lodash.camelcase@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
   integrity sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==
+
+lodash.chunk@4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/lodash.chunk/-/lodash.chunk-4.2.0.tgz#66e5ce1f76ed27b4303d8c6512e8d1216e8106bc"
+  integrity sha512-ZzydJKfUHJwHa+hF5X66zLFCBrWn5GeF28OHEr4WVWtNDXlQ/IjWKPBiikqKo2ne0+v6JgCgJ0GzJp8k8bHC7w==
 
 lodash.debounce@^4.0.8:
   version "4.0.8"

@@ -30,7 +30,8 @@
   },
   "dependencies": {
     "@gemeente-denhaag/icons": "0.2.3-alpha.314",
-    "@gemeente-denhaag/link": "0.2.3-alpha.314"
+    "@gemeente-denhaag/link": "0.2.3-alpha.314",
+    "@utrecht/component-library-react": "1.0.0-alpha.307"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"
