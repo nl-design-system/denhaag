@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
@@ -420,9 +424,6 @@ importers:
       '@gemeente-denhaag/baseprops':
         specifier: workspace:*
         version: link:../BaseProps
-      '@material-ui/core':
-        specifier: 4.12.4
-        version: 4.12.4(@types/react@17.0.65)(react-dom@17.0.2)(react@17.0.2)
       react:
         specifier: ^17.0.0 || ^18.0.0
         version: 17.0.2
@@ -26554,7 +26555,3 @@ packages:
   /zwitch@1.0.5:
     resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==}
     dev: true
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
