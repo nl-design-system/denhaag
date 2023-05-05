@@ -46,8 +46,8 @@
   "dependencies": {
     "@material-ui/core": "4.12.4",
     "@material-ui/lab": "4.11.3-deprecations.1",
-    "@utrecht/component-library-css": "1.0.0-alpha.497",
-    "@utrecht/components": "1.0.0-alpha.458",
+    "@utrecht/component-library-css": "1.0.0-alpha.498",
+    "@utrecht/components": "1.0.0-alpha.459",
     "clsx": "1.2.1",
     "sass": "1.62.1"
   },

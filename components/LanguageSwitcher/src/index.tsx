@@ -1,18 +1,18 @@
-import React from 'react';
+import React, { AnchorHTMLAttributes } from 'react';
 import LanguageSwitcher from './LanguageSwitcher';
 import './index.scss';
 import LanguageSwitcherTitle from './LanguageSwitcherTitle';
 import LanguageSwitcherList from './LanguageSwitcherList';
 import LanguageSwitcherListItem from './LanguageSwitcherListItem';
-import { Link } from '@gemeente-denhaag/link';
+import LanguageSwitcherLink, { Link } from './LanguageSwitcherLink';
 import { ArrowRightIcon, CheckedIcon } from '@gemeente-denhaag/icons';
+import { LinkButton } from '@utrecht/component-library-react';
 import clsx from 'clsx';
 
 interface Language {
+  id: string;
   label: string;
-  url?: string;
-  lang?: string;
-  hrefLang?: string;
+  linkProps?: AnchorHTMLAttributes<HTMLAnchorElement>;
   active?: boolean;
 }
 
@@ -20,31 +20,65 @@ export interface LanguageSwitcherLogicProps {
   label: string;
   languages: Array<Language>;
   mobileMenuScrolled?: boolean;
+  variant?: 'link' | 'button';
+  Link?: Link;
+  onLanguageChange?: (language: string) => void;
 }
+
+const ListItemContent = ({ label, active }: Language) => {
+  return (
+    <>
+      {!active && (
+        <span className="denhaag-link__icon">
+          <ArrowRightIcon />
+        </span>
+      )}
+      <span>{label}</span>
+      {active && (
+        <span className="denhaag-link__icon">
+          <CheckedIcon />
+        </span>
+      )}
+    </>
+  );
+};
 
 export const LanguageSwitcherLogic = ({
   label = '',
   languages = [],
   mobileMenuScrolled,
+  variant = 'link',
+  Link,
+  onLanguageChange,
 }: LanguageSwitcherLogicProps) => {
   const languageListContent = languages.map((language, key) => {
+    const tabIndex = mobileMenuScrolled ? -1 : undefined;
     const classNames = clsx(
+      'denhaag-link',
+      'denhaag-link--with-icon',
+      language.active ? 'denhaag-link--with-icon-end' : 'denhaag-link--with-icon-start',
       'denhaag-language-switcher__list-item-link',
       language.active ? 'denhaag-language-switcher__list-item-link--active' : '',
+      language.linkProps?.className,
     );
+
+    const handleLanguageChange = (languageId: string) => {
+      if (onLanguageChange) {
+        onLanguageChange(languageId);
+      }
+    };
 
     return (
       <LanguageSwitcherListItem key={key}>
-        <Link
-          tabIndex={mobileMenuScrolled ? -1 : undefined}
-          {...(!language.active && { icon: <ArrowRightIcon />, iconAlign: 'start' })}
-          {...(language.active && { icon: <CheckedIcon />, iconAlign: 'end' })}
-          href={language.url}
-          hrefLang={language.hrefLang}
-          className={classNames}
-        >
-          {language.label}
-        </Link>
+        {variant === 'link' ? (
+          <LanguageSwitcherLink Link={Link} tabIndex={tabIndex} {...language.linkProps} className={classNames}>
+            <ListItemContent {...language} />
+          </LanguageSwitcherLink>
+        ) : (
+          <LinkButton inline tabIndex={tabIndex} onClick={() => handleLanguageChange(language.id)}>
+            <ListItemContent {...language} />
+          </LinkButton>
+        )}
       </LanguageSwitcherListItem>
     );
   });
