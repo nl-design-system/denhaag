@@ -41,10 +41,9 @@ import "./story-login.css";
 # Overview page
 
 export const exampleArgs = {
-  breadcrumbs: [
-    { label: "Home", url: "https://denhaag.nl/" },
-    { label: "MijnDenHaag", url: "https://denhaag.nl/parkeren/" },
-  ],
+  breadcrumbs: {
+    navigationPath: [{ label: "Home", href: "https://denhaag.nl/" }, { label: "MijnDenHaag" }],
+  },
   userprofileMenu: {
     label: "Welkom Anne Klap",
     navigationGroups: [

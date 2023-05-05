@@ -5,14 +5,14 @@ import { ChevronRightIcon, HouseIcon } from '@gemeente-denhaag/icons';
 import { BreadcrumbNavigation } from './BreadcrumbNavigation';
 import { BreadcrumbListItem } from './BreadcrumbListItem';
 import { BreadcrumbList } from './BreadcrumbList';
-import { BreadcrumbLink } from './BreadcrumbLink';
+import { BreadcrumbLink, Link } from './BreadcrumbLink';
 import { BreadcrumbText } from './BreadcrumbText';
 
 import './index.scss';
 
 export interface BreadcrumbItemData {
   label: string;
-  url: string;
+  href?: string;
 }
 
 export interface BreadcrumbProps extends Omit<BaseProps, 'tabIndex' | 'classNames'> {
@@ -25,35 +25,16 @@ export interface BreadcrumbProps extends Omit<BaseProps, 'tabIndex' | 'className
    * Boolean which determined if the home icon or label is shown.
    */
   showHomeIcon?: boolean;
+
+  /**
+   * Custom Link component used for single-page apps.
+   */
+  Link?: Link;
 }
 
-interface BreadcrumbItemProps {
-  item: BreadcrumbItemData;
-  isLastItem: boolean;
-  contentNumber: number;
-}
-
-const HomeIconBreadcrumbItem: React.FC<BreadcrumbItemProps> = (props: BreadcrumbItemProps) => {
-  return (
-    <BreadcrumbLink aria-label="Home" href={props.item.url} itemProp="item">
-      <HouseIcon />
-      {!props.isLastItem && <ChevronRightIcon />}
-    </BreadcrumbLink>
-  );
-};
-
-const BreadcrumbItem: React.FC<BreadcrumbItemProps> = (props: BreadcrumbItemProps) => {
-  return (
-    <BreadcrumbLink href={props.item.url} itemProp="item">
-      <BreadcrumbText itemProp="name">{props.item.label}</BreadcrumbText>
-      {!props.isLastItem && <ChevronRightIcon />}
-    </BreadcrumbLink>
-  );
-};
-
-export const Breadcrumb: React.FC<BreadcrumbProps> = (props: BreadcrumbProps) => {
-  const nrBreadcrumbItems = props.navigationPath.length;
-  const listItems = props.navigationPath.map((item, index) => {
+export const Breadcrumb: React.FC<BreadcrumbProps> = ({ navigationPath, showHomeIcon, Link }: BreadcrumbProps) => {
+  const nrBreadcrumbItems = navigationPath.length;
+  const listItems = navigationPath.map((item, index) => {
     const isFirstItem = index === 0;
     const isLastItem = index === nrBreadcrumbItems - 1;
     const shouldCollapseItem = nrBreadcrumbItems > 4 && !isFirstItem && index < nrBreadcrumbItems - 2;
@@ -67,10 +48,24 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = (props: BreadcrumbProps) =>
         itemScope
         itemType="https://schema.org/ListItem"
       >
-        {isFirstItem && props.showHomeIcon ? (
-          <HomeIconBreadcrumbItem item={item} isLastItem={isLastItem} contentNumber={contentNumber} />
+        {item.href ? (
+          <BreadcrumbLink
+            Link={Link}
+            aria-label={isFirstItem && showHomeIcon ? item.label : undefined}
+            href={item.href}
+          >
+            {isFirstItem && showHomeIcon ? (
+              <HouseIcon />
+            ) : (
+              <BreadcrumbText itemProp="name">{item.label}</BreadcrumbText>
+            )}
+            {!isLastItem && <ChevronRightIcon />}
+          </BreadcrumbLink>
         ) : (
-          <BreadcrumbItem item={item} isLastItem={isLastItem} contentNumber={contentNumber} />
+          <>
+            <BreadcrumbText itemProp="name">{item.label}</BreadcrumbText>
+            {!isLastItem && <ChevronRightIcon />}
+          </>
         )}
         <meta content={contentNumber.toString()} itemProp="position" />
       </BreadcrumbListItem>
