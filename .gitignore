@@ -29,7 +29,9 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
-.yarn/
+# Only track the npm 7 workspace root package-lock.json and standalone package-lock.json
+yarn.lock
+package-lock.json
 
 tsconfig.tsbuildinfo
 

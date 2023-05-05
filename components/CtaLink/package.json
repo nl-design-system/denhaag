@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
-    "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+    "clean": "pnpm rimraf dist tsconfig.tsbuildinfo"
   },
   "repository": {
     "type": "git",

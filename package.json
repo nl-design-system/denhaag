@@ -10,18 +10,12 @@
   },
   "license": "EUPL-1.2",
   "author": "Municipality of The Hague",
-  "workspaces": [
-    "packages/*",
-    "components/*",
-    "proprietary/*"
-  ],
   "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "build": "yarn build:library && yarn build:storybook",
-    "build:library": "lerna run build",
+    "build": "pnpm build:library && pnpm build:storybook",
+    "build:library": "pnpm run build",
     "build:storybook": "build-storybook",
-    "clean": "lerna run clean --parallel && rimraf .rollup-cache",
-    "lint": "npm-run-all --continue-on-error lint:** && lerna run lint",
+    "clean": "pnpm run clean --parallel && rimraf .rollup-cache",
+    "lint": "npm-run-all --continue-on-error lint:** && pnpm run lint",
     "lint-fix": "npm-run-all --continue-on-error lint-fix:** prettier",
     "lint-fix:css": "stylelint --fix \"**/*.{css,scss}\"",
     "lint-fix:js": "eslint --ext \".js,.json,.jsx,.mdx,.ts,.tsx\" --fix --report-unused-disable-directives .",
@@ -36,12 +30,13 @@
     "publish": "lerna publish from-package",
     "release": "lerna version prerelease --no-changelog --no-private --no-commit-hooks",
     "storybook": "npm-run-all --parallel watch:*",
-    "update-patch": "npm-check-updates --configFileName .ncurc.patch.js --deep --dep dev,prod --packageManager yarn --target patch --upgrade && yarn install",
-    "update-minor": "npm-check-updates --configFileName .ncurc.minor.js --deep --dep dev,prod --packageManager yarn --target minor --upgrade && yarn install",
-    "update-major": "npm-check-updates --configFileName .ncurc.major.js --deep --dep dev,prod --packageManager yarn --target latest --upgrade && yarn install",
+    "test-update": "npm-run-all --sequential clean lint build test",
+    "typecheck:storybook": "pnpm tsc --project tsconfig.storybook.json --noEmit",
+    "update-patch": "npm-check-updates --configFileName .ncurc.patch.js --deep --dep dev,prod --target patch --upgrade && pnpm install",
+    "update-minor": "npm-check-updates --configFileName .ncurc.minor.js --deep --dep dev,prod --target minor --upgrade && pnpm install",
+    "update-major": "npm-check-updates --configFileName .ncurc.major.js --deep --dep dev,prod --target latest --upgrade && pnpm install",
     "watch:storybook": "start-storybook -p 6006",
-    "watch:style-dictionary": "lerna run --parallel --scope '@gemeente-denhaag/design-tokens-*' watch:style-dictionary",
-    "typecheck:storybook": "yarn tsc --project tsconfig.storybook.json --noEmit"
+    "watch:style-dictionary": "pnpm --filter '@gemeente-denhaag/design-tokens-*' run watch:style-dictionary --parallel"
   },
   "dependencies": {
     "@material-ui/core": "4.12.4",
@@ -58,6 +53,8 @@
     "@commitlint/cli": "16.3.0",
     "@commitlint/config-conventional": "16.2.4",
     "@etchteam/storybook-addon-status": "4.2.2",
+    "@lerna-lite/cli": "^2.3.0",
+    "@lerna-lite/run": "^2.3.0",
     "@rollup/plugin-commonjs": "21.1.0",
     "@rollup/plugin-node-resolve": "13.3.0",
     "@rollup/plugin-typescript": "8.5.0",
@@ -95,7 +92,6 @@
     "eslint-plugin-react": "7.32.2",
     "husky": "7.0.4",
     "jest": "27.5.1",
-    "lerna": "4.0.0",
     "lint-staged": "12.5.0",
     "lodash": "4.17.21",
     "mdx-embed": "0.0.23",
@@ -129,11 +125,10 @@
     "stylelint-order": "5.0.0",
     "typescript": "4.9.5",
     "webpack": "5.82.0",
-    "webpack-dev-server": "3.11.3",
-    "yarn": "1.22.19"
+    "webpack-dev-server": "3.11.3"
   },
   "engines": {
     "node": "^16.13.0 || ^18.12",
-    "yarn": "^1.22.0"
+    "pnpm": "^8.4.0"
   }
 }

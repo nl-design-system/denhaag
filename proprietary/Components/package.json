@@ -16,11 +16,11 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "scripts": {
-    "build": "yarn npm-run-all build:*",
+    "build": "pnpm npm-run-all build:*",
     "build:ts": "tsc -b",
-    "build:style-dictionary": "yarn style-dictionary build --config style-dictionary.config.js",
-    "clean": "yarn rimraf dist tsconfig.tsbuildinfo",
-    "watch:style-dictionary": "yarn chokidar --follow-symlinks --initial \"src/**/*.json\" -c \"yarn build:style-dictionary\""
+    "build:style-dictionary": "pnpm style-dictionary build --config style-dictionary.config.js",
+    "clean": "pnpm rimraf dist tsconfig.tsbuildinfo",
+    "watch:style-dictionary": "pnpm chokidar --follow-symlinks --initial \"src/**/*.json\" -c \"pnpm build:style-dictionary\""
   },
   "devDependencies": {
     "@gemeente-denhaag/design-tokens-common": "0.2.3-alpha.312",

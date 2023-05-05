@@ -11,13 +11,13 @@ config.files = [];
 config.references = [];
 
 (async function () {
-  const { stdout, stderr } = await exec('yarn workspaces info --json');
+  const { stdout, stderr } = await exec('pnpm workspaces info --json');
 
   const lines = stdout.split(/\r\n|\n\r|\n|\r/);
   const depthTree = lines.slice(1, lines.length - 2).join('\n');
   let workspaces = undefined;
 
-  // sometimes yarn prints this line: yarn run v1.22.10 and sometimes not
+  // sometimes pnpm prints this line: pnpm run v1.22.10 and sometimes not
   try {
     workspaces = JSON.parse(depthTree);
   } catch (e) {
