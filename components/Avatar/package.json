@@ -28,8 +28,7 @@
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "workspace:*",
-    "@material-ui/core": "4.12.4"
+    "@gemeente-denhaag/baseprops": "workspace:*"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"

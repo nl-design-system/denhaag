@@ -1,0 +1,36 @@
+.denhaag-avatar {
+  width: var(--denhaag-avatar-size, 40px);
+  height: var(--denhaag-avatar-size, 40px);
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  font-size: var(--denhaag-avatar-font-size, 1.25rem);
+  align-items: center;
+  flex-shrink: 0;
+  font-family: var(--denhaag-avatar-font-family, "Roboto", "Helvetica", "Arial", sans-serif);
+  line-height: 1;
+  user-select: none;
+  justify-content: center;
+  color: var(--denhaag-avatar-color, #fafafa);
+  background-color: var(--denhaag-avatar-background-color, #bdbdbd);
+}
+
+.denhaag-avatar--circular,
+.denhaag-avatar--circle {
+  border-radius: 50%;
+}
+
+.denhaag-avatar--square {
+  border-radius: 0;
+}
+
+.denhaag-avatar--rounded {
+  border-radius: var(--denhaag-avatar-rounded-border-radius, 4px);
+}
+
+.denhaag-avatar__image {
+  color: transparent;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
