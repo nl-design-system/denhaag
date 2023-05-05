@@ -86,7 +86,10 @@
   text-indent: calc(var(--denhaag-pagination-size) * 2);
 }
 
-.denhaag-pagination__link:not(:first-child):not(:last-child):not(.denhaag-pagination__link--current):not([rel])::before {
+/* stylelint-disable selector-pseudo-class-parentheses-space-inside */
+.denhaag-pagination__link:not(:first-child):not(:last-child):not(.denhaag-pagination__link--current):not(
+    [rel]
+  )::before {
   color: var(--denhaag-pagination-color, var(--denhaag-pagination-link-color)); // Only for Safari
   content: "...";
   left: calc(50% - 7px);
@@ -95,6 +98,7 @@
   text-indent: 0;
   vertical-align: baseline;
 }
+/* stylelint-enable selector-pseudo-class-parentheses-space-inside */
 
 .denhaag-pagination__link--current {
   --denhaag-pagination-color: var(--denhaag-pagination-link-current-color);
