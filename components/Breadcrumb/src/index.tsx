@@ -12,7 +12,7 @@ import './index.scss';
 
 export interface BreadcrumbItemData {
   label: string;
-  url?: string;
+  href?: string;
 }
 
 export interface BreadcrumbProps extends Omit<BaseProps, 'tabIndex' | 'classNames'> {
@@ -48,10 +48,25 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({ navigationPath, showHome
         itemScope
         itemType="https://schema.org/ListItem"
       >
-        <BreadcrumbLink Link={Link} aria-label={isFirstItem && showHomeIcon ? item.label : undefined}>
-          {isFirstItem && showHomeIcon ? <HouseIcon /> : <BreadcrumbText itemProp="name">{item.label}</BreadcrumbText>}
-          {isLastItem && <ChevronRightIcon />}
-        </BreadcrumbLink>
+        {item.href ? (
+          <BreadcrumbLink
+            Link={Link}
+            aria-label={isFirstItem && showHomeIcon ? item.label : undefined}
+            href={item.href}
+          >
+            {isFirstItem && showHomeIcon ? (
+              <HouseIcon />
+            ) : (
+              <BreadcrumbText itemProp="name">{item.label}</BreadcrumbText>
+            )}
+            {!isLastItem && <ChevronRightIcon />}
+          </BreadcrumbLink>
+        ) : (
+          <>
+            <BreadcrumbText itemProp="name">{item.label}</BreadcrumbText>
+            {!isLastItem && <ChevronRightIcon />}
+          </>
+        )}
         <meta content={contentNumber.toString()} itemProp="position" />
       </BreadcrumbListItem>
     );

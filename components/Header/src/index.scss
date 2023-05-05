@@ -1,7 +1,9 @@
 .denhaag-header {
-  border-bottom-color: var(--denhaag-header-border-bottom-color);
-  border-bottom-width: var(--denhaag-header-border-bottom-width);
-  border-bottom-style: var(--denhaag-header-border-bottom-style);
+  &__content-container {
+    border-bottom-color: var(--denhaag-header-border-bottom-color);
+    border-bottom-width: var(--denhaag-header-border-bottom-width);
+    border-bottom-style: var(--denhaag-header-border-bottom-style);
+  }
 
   &__content {
     align-items: var(--denhaag-header-content-align-items);

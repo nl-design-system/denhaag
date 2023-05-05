@@ -36,10 +36,9 @@ import "./story-login.css";
 # Login page
 
 export const exampleArgs = {
-  breadcrumbs: [
-    { label: "Home", url: "https://denhaag.nl/" },
-    { label: "MijnDenHaag", url: "https://denhaag.nl/parkeren/" },
-  ],
+  breadcrumbs: {
+    navigationPath: [{ label: "Home", href: "https://denhaag.nl/" }, { label: "MijnDenHaag" }],
+  },
 };
 
 export const footerLegalData = [

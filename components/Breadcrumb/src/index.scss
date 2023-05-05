@@ -73,9 +73,7 @@ ol.denhaag-breadcrumb__list {
 }
 
 .denhaag-breadcrumb__item:nth-child(1) {
-  .denhaag-breadcrumb__link {
-    padding-inline-start: 0;
-  }
+  padding-inline-start: 0;
 }
 
 .denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(3)):not(:nth-last-child(2)):not(:last-child) {

@@ -5,12 +5,13 @@ import Link from '@gemeente-denhaag/link';
 import { MenuButtonExpandable, MobileMenu } from '@gemeente-denhaag/menu';
 import './index.scss';
 import Header from './Header';
+import HeaderContentContainer from './HeaderContentContainer';
 import HeaderContent from './HeaderContent';
 import HeaderLogoContainer from './HeaderLogoContainer';
 import HeaderActions from './HeaderActions';
 import HeaderMobileActions from './HeaderMobileActions';
 import HeaderAction from './HeaderAction';
-import { Breadcrumb, BreadcrumbItemData } from '@gemeente-denhaag/breadcrumb';
+import { Breadcrumb, BreadcrumbProps } from '@gemeente-denhaag/breadcrumb';
 import { Sheet, SheetOverlay, SheetContainer, SheetDialog, useEscapeKey, useScreenSize } from '@gemeente-denhaag/sheet';
 import IconButton from '@gemeente-denhaag/iconbutton';
 import { CloseIcon, ArrowRightIcon, LogOutIcon } from '@gemeente-denhaag/icons';
@@ -21,7 +22,7 @@ import { Button } from '@gemeente-denhaag/button';
 import './index.scss';
 
 export interface HeaderLogicProps {
-  breadcrumbs?: Array<BreadcrumbItemData>;
+  breadcrumbs?: BreadcrumbProps;
   userprofileMenu?: MenuProps;
   languageSwitcherMenu?: LanguageSwitcherProps;
   mobileMenu?: MobileMenuProps;
@@ -160,8 +161,8 @@ export const HeaderLogic: React.FC<HeaderLogicProps> = ({
 
   return (
     <Header>
-      <ResponsiveContent>
-        <HeaderContent>
+      <HeaderContentContainer>
+        <HeaderContent className="denhaag-responsive-content">
           <HeaderLogoContainer>
             <Link
               href="https://www.denhaag.nl"
@@ -199,8 +200,8 @@ export const HeaderLogic: React.FC<HeaderLogicProps> = ({
             </HeaderMobileActions>
           )}
         </HeaderContent>
-      </ResponsiveContent>
-      {breadcrumbs && <Breadcrumb navigationPath={breadcrumbs} />}
+      </HeaderContentContainer>
+      {breadcrumbs && <Breadcrumb {...breadcrumbs} />}
       {languageSwitcherMenu && languageSwitcherActive && (
         <>
           <Sheet>
