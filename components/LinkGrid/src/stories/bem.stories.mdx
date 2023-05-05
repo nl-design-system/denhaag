@@ -1,0 +1,464 @@
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+
+import "../index.scss";
+import pkg from "../../package.json";
+import readme from "../../README.md";
+
+<Meta
+  title="CSS/Navigation/Link Grid"
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Design Tokens
+
+<DesignTokenDocBlock categoryName="Link Grid" viewType="table" />
+
+## Stories
+
+### Default
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Default">
+    <div class="denhaag-link-grid">
+      <h4 class="utrecht-heading-4 denhaag-link-grid__caption">Caption</h4>
+      <ul class="utrecht-link-list utrecht-link-list--html-ul denhaag-link-grid__list">
+        <li class="denhaag-link-grid__list-item">
+          <a
+            href="https://nl-design-system.github.io/denhaag/"
+            class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
+          >
+            <span class="denhaag-link__icon">
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="denhaag-icon"
+                focusable="false"
+                aria-hidden="true"
+                shape-rendering="auto"
+              >
+                <path
+                  d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </span>
+            <span class="denhaag-link__label">Paspoort en identiteitskaart</span>
+          </a>
+        </li>
+        <li class="denhaag-link-grid__list-item">
+          <a
+            href="https://nl-design-system.github.io/denhaag/"
+            class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
+          >
+            <span class="denhaag-link__icon">
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="denhaag-icon"
+                focusable="false"
+                aria-hidden="true"
+                shape-rendering="auto"
+              >
+                <path
+                  d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </span>
+            <span class="denhaag-link__label">Rijbewijs</span>
+          </a>
+        </li>
+        <li class="denhaag-link-grid__list-item">
+          <a
+            href="https://nl-design-system.github.io/denhaag/"
+            class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
+          >
+            <span class="denhaag-link__icon">
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="denhaag-icon"
+                focusable="false"
+                aria-hidden="true"
+                shape-rendering="auto"
+              >
+                <path
+                  d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </span>
+            <span class="denhaag-link__label">Inburgeren en naturaliseren</span>
+          </a>
+        </li>
+        <li class="denhaag-link-grid__list-item">
+          <a
+            href="https://nl-design-system.github.io/denhaag/"
+            class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
+          >
+            <span class="denhaag-link__icon">
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="denhaag-icon"
+                focusable="false"
+                aria-hidden="true"
+                shape-rendering="auto"
+              >
+                <path
+                  d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </span>
+            <span class="denhaag-link__label">Akten</span>
+          </a>
+        </li>
+        <li class="denhaag-link-grid__list-item">
+          <a
+            href="https://nl-design-system.github.io/denhaag/"
+            class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
+          >
+            <span class="denhaag-link__icon">
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="denhaag-icon"
+                focusable="false"
+                aria-hidden="true"
+                shape-rendering="auto"
+              >
+                <path
+                  d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </span>
+            <span class="denhaag-link__label">Verklaringen</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### With Image
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="With Image">
+    <div class="denhaag-link-grid">
+      <img
+        class="denhaag-link-grid__image"
+        src="https://images.unsplash.com/photo-1569235186275-626cb53b83ce?w=140&h=140"
+        alt="placeholder"
+      />
+      <h4 class="utrecht-heading-4 denhaag-link-grid__caption">Caption</h4>
+      <ul class="utrecht-link-list utrecht-link-list--html-ul denhaag-link-grid__list">
+        <li class="denhaag-link-grid__list-item">
+          <a
+            href="https://nl-design-system.github.io/denhaag/"
+            class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
+          >
+            <span class="denhaag-link__icon">
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="denhaag-icon"
+                focusable="false"
+                aria-hidden="true"
+                shape-rendering="auto"
+              >
+                <path
+                  d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </span>
+            <span class="denhaag-link__label">
+              Paspoort en identiteitskaart. Repudiandae rem voluptate ex. Autem est aut ratione beatae odit non
+              dignissimos. Repudiandae rem voluptate ex. Autem est aut ratione beatae odit non dignissimos.
+            </span>
+          </a>
+        </li>
+        <li class="denhaag-link-grid__list-item">
+          <a
+            href="https://nl-design-system.github.io/denhaag/"
+            class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
+          >
+            <span class="denhaag-link__icon">
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="denhaag-icon"
+                focusable="false"
+                aria-hidden="true"
+                shape-rendering="auto"
+              >
+                <path
+                  d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </span>
+            <span class="denhaag-link__label">Rijbewijs</span>
+          </a>
+        </li>
+        <li class="denhaag-link-grid__list-item">
+          <a
+            href="https://nl-design-system.github.io/denhaag/"
+            class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
+          >
+            <span class="denhaag-link__icon">
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="denhaag-icon"
+                focusable="false"
+                aria-hidden="true"
+                shape-rendering="auto"
+              >
+                <path
+                  d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </span>
+            <span class="denhaag-link__label">Inburgeren en naturaliseren</span>
+          </a>
+        </li>
+        <li class="denhaag-link-grid__list-item">
+          <a
+            href="https://nl-design-system.github.io/denhaag/"
+            class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
+          >
+            <span class="denhaag-link__icon">
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="denhaag-icon"
+                focusable="false"
+                aria-hidden="true"
+                shape-rendering="auto"
+              >
+                <path
+                  d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </span>
+            <span class="denhaag-link__label">Akten</span>
+          </a>
+        </li>
+        <li class="denhaag-link-grid__list-item">
+          <a
+            href="https://nl-design-system.github.io/denhaag/"
+            class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
+          >
+            <span class="denhaag-link__icon">
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="denhaag-icon"
+                focusable="false"
+                aria-hidden="true"
+                shape-rendering="auto"
+              >
+                <path
+                  d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </span>
+            <span class="denhaag-link__label">Verklaringen</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Dark background
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Dark background">
+    <div class="denhaag-link-grid denhaag-link-grid--dark" style={{ backgroundColor: "#2D2D2D", padding: "1rem" }}>
+      <h4 class="utrecht-heading-4 denhaag-link-grid__caption">Caption</h4>
+      <ul class="utrecht-link-list utrecht-link-list--html-ul denhaag-link-grid__list">
+        <li class="denhaag-link-grid__list-item">
+          <a
+            href="https://nl-design-system.github.io/denhaag/"
+            class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
+          >
+            <span class="denhaag-link__icon">
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="denhaag-icon"
+                focusable="false"
+                aria-hidden="true"
+                shape-rendering="auto"
+              >
+                <path
+                  d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </span>
+            <span class="denhaag-link__label">Paspoort en identiteitskaart</span>
+          </a>
+        </li>
+        <li class="denhaag-link-grid__list-item">
+          <a
+            href="https://nl-design-system.github.io/denhaag/"
+            class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
+          >
+            <span class="denhaag-link__icon">
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="denhaag-icon"
+                focusable="false"
+                aria-hidden="true"
+                shape-rendering="auto"
+              >
+                <path
+                  d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </span>
+            <span class="denhaag-link__label">Rijbewijs</span>
+          </a>
+        </li>
+        <li class="denhaag-link-grid__list-item">
+          <a
+            href="https://nl-design-system.github.io/denhaag/"
+            class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
+          >
+            <span class="denhaag-link__icon">
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="denhaag-icon"
+                focusable="false"
+                aria-hidden="true"
+                shape-rendering="auto"
+              >
+                <path
+                  d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </span>
+            <span class="denhaag-link__label">Inburgeren en naturaliseren</span>
+          </a>
+        </li>
+        <li class="denhaag-link-grid__list-item">
+          <a
+            href="https://nl-design-system.github.io/denhaag/"
+            class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
+          >
+            <span class="denhaag-link__icon">
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="denhaag-icon"
+                focusable="false"
+                aria-hidden="true"
+                shape-rendering="auto"
+              >
+                <path
+                  d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </span>
+            <span class="denhaag-link__label">Akten</span>
+          </a>
+        </li>
+        <li class="denhaag-link-grid__list-item">
+          <a
+            href="https://nl-design-system.github.io/denhaag/"
+            class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
+          >
+            <span class="denhaag-link__icon">
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="denhaag-icon"
+                focusable="false"
+                aria-hidden="true"
+                shape-rendering="auto"
+              >
+                <path
+                  d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </span>
+            <span class="denhaag-link__label">Verklaringen</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>

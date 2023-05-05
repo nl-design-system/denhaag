@@ -1,0 +1,67 @@
+.denhaag-link-grid__image {
+  margin-block-end: var(--denhaag-link-grid-image-margin-block-end);
+  width: var(--denhaag-link-grid-image-size);
+  height: var(--denhaag-link-grid-image-size);
+  object-fit: var(--denhaag-link-grid-image-object-fit);
+}
+
+.denhaag-link-grid__caption {
+  margin-block-start: var(--denhaag-link-grid-caption-margin-block) !important;
+  margin-block-end: var(--denhaag-link-grid-caption-margin-block);
+}
+
+.denhaag-link-grid__list {
+  margin-block-start: var(--denhaag-link-grid-list-margin-block-start);
+  margin-block-end: var(--denhaag-link-grid-list-margin-block-end);
+  list-style: var(--denhaag-link-grid-list-list-style);
+  padding-inline-start: var(--denhaag-link-grid-list-padding-inline-start);
+
+  @media (min-width: 1114px) {
+    margin-block-start: var(--denhaag-space-block-sm);
+  }
+}
+
+.denhaag-link-grid__list-item {
+  padding-block-start: var(--denhaag-link-grid-list-item-padding-block);
+  padding-block-end: var(--denhaag-link-grid-list-item-padding-block);
+  font-weight: var(--denhaag-link-grid-list-item-font-weight);
+}
+
+.denhaag-link-grid--dark .denhaag-link,
+.denhaag-link-grid--dark .denhaag-link:hover,
+.denhaag-link-grid--dark .denhaag-link:focus-visible {
+  color: var(--denhaag-link-grid-dark-link-color);
+}
+
+.denhaag-link-grid--dark .denhaag-link:focus-visible {
+  outline-color: var(--denhaag-link-grid-dark-link-focus-outline-color);
+}
+
+.denhaag-link-grid .denhaag-link:hover {
+  text-decoration: var(--denhaag-link-grid-link-hover-text-decoration);
+}
+
+.denhaag-link-grid .denhaag-link--with-icon-start {
+  display: var(--denhaag-link-grid-link-with-icon-start-display);
+  padding-block-start: var(--denhaag-link-grid-link-with-icon-start-padding-block-start);
+  padding-block-end: var(--denhaag-link-grid-link-with-icon-start-padding-block-end);
+}
+
+.denhaag-link-grid .denhaag-link__icon {
+  font-size: var(--denhaag-link-grid-link-icon-font-size);
+  width: var(--denhaag-link-grid-link-icon-width);
+}
+
+.denhaag-link-grid .denhaag-link__icon .denhaag-icon {
+  align-self: var(--denhaag-link-grid-link-icon-denhaag-icon-align-self);
+  padding-block-start: var(--denhaag-link-grid-link-icon-denhaag-icon-padding-block-start);
+  height: var(--denhaag-link-grid-link-icon-denhaag-icon-height);
+}
+
+.denhaag-link-grid--dark .denhaag-link-grid__caption {
+  color: var(--denhaag-link-grid-dark-caption-color);
+}
+
+.denhaag-link-grid .denhaag-link--with-icon {
+  text-decoration: none;
+}
