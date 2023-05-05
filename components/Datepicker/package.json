@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@gemeente-denhaag/icons": "0.2.3-alpha.312",
-    "date-fns": "2.28.0"
+    "date-fns": "2.30.0"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"
