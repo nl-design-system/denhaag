@@ -1,0 +1,52 @@
+{
+  "denhaag": {
+    "link-grid": {
+      "panel": {
+        "background-color": { "value": "{denhaag.color.ocher.3}" },
+        "background-image-width": { "value": "41.66%" },
+        "padding": {
+          "xs": { "value": "48px" },
+          "sm": { "value": "56px" },
+          "md": { "value": "56px" },
+          "lg": { "value": "64px" },
+          "xl": { "value": "72px" }
+        }
+      },
+      "container": {
+        "margin": {
+          "xs": {
+            "left": { "value": "24px" },
+            "right": { "value": "24px" }
+          },
+          "sm": {
+            "left": { "value": "60px" },
+            "right": { "value": "60px" }
+          },
+          "md": {
+            "left": { "value": "60px" },
+            "right": { "value": "215px" }
+          },
+          "lg": {
+            "left": { "value": "100px" },
+            "right": { "value": "377px" }
+          },
+          "xl": {
+            "left": { "value": "368px" },
+            "right": { "value": "502px" }
+          }
+        }
+      },
+      "title": {
+        "margin-top": { "value": "0" },
+        "padding-bottom": { "value": "10px" }
+      },
+      "grid": {
+        "background-color": { "value": "#FFF" }
+      },
+      "item": {
+        "default-border": { "value": "1px solid" },
+        "border-color": { "value": "{denhaag.color.blue.1}" }
+      }
+    }
+  }
+}
