@@ -59,13 +59,14 @@
   @media (min-width: 1280px) {
     margin-inline-start: var(--denhaag-link-grid-container-margin-lg);
     margin-inline-end: var(--denhaag-link-grid-container-margin-lg);
-    padding-inline-end: var(--denhaag-link-grid-container-padding-right-md);
+    padding-inline-end: var(--denhaag-link-grid-container-padding-right-lg);
     max-width: var(--denhaag-link-grid-container-width-lg);
   }
 
   @media (min-width: 1768px) {
     margin-inline-start: var(--denhaag-link-grid-container-margin-xl);
     margin-inline-end: var(--denhaag-link-grid-container-margin-xl);
+    padding-inline-end: var(--denhaag-link-grid-container-padding-right-xl);
   }
 }
 
@@ -85,7 +86,6 @@
 
   @media (min-width: 1280px) {
     grid-template-columns: repeat(3, 1fr);
-    max-width: 900px;
   }
 }
 
