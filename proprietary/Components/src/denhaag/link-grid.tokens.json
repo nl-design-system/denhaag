@@ -6,7 +6,7 @@
         "background-image-width": { "value": "41.66%" },
         "padding": {
           "xs": { "value": "48px" },
-          "sm": { "value": "56px" },
+          "sm": { "value": "48px" },
           "md": { "value": "56px" },
           "lg": { "value": "64px" },
           "xl": { "value": "72px" }
@@ -21,9 +21,9 @@
           "xl": { "value": "368px" }
         },
         "padding-right": {
-          "md": { "value": "100px" },
-          "lg": { "value": "123" },
-          "xl": { "value": "123" }
+          "md": { "value": "155px" },
+          "lg": { "value": "277px" },
+          "xl": { "value": "134px" }
         },
         "width": {
           "lg": { "value": "1298px" }
