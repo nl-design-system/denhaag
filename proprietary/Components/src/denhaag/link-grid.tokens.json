@@ -14,26 +14,19 @@
       },
       "container": {
         "margin": {
-          "xs": {
-            "left": { "value": "24px" },
-            "right": { "value": "24px" }
-          },
-          "sm": {
-            "left": { "value": "60px" },
-            "right": { "value": "60px" }
-          },
-          "md": {
-            "left": { "value": "60px" },
-            "right": { "value": "215px" }
-          },
-          "lg": {
-            "left": { "value": "100px" },
-            "right": { "value": "377px" }
-          },
-          "xl": {
-            "left": { "value": "368px" },
-            "right": { "value": "502px" }
-          }
+          "xs": { "value": "24px" },
+          "sm": { "value": "60px" },
+          "md": { "value": "60px" },
+          "lg": { "value": "100px" },
+          "xl": { "value": "368px" }
+        },
+        "padding-right": {
+          "md": { "value": "100px" },
+          "lg": { "value": "123" },
+          "xl": { "value": "123" }
+        },
+        "width": {
+          "lg": { "value": "1298px" }
         }
       },
       "title": {
