@@ -1,35 +1,35 @@
 .denhaag-link-grid {
-  position: relative;
+  position: var(--denhaag-link-grid-position);
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
   overflow-x: hidden;
-  background-color: var(--denhaag-link-grid-panel-background-color);
-  padding-block-start: var(--denhaag-link-grid-panel-padding-sm);
-  padding-block-end: var(--denhaag-link-grid-panel-padding-sm);
+  background-color: var(--denhaag-link-grid-background-color);
+  padding-block-start: var(--denhaag-link-grid-padding-sm);
+  padding-block-end: var(--denhaag-link-grid-padding-sm);
 
   @media (min-width: 1024px) {
-    padding-block-start: var(--denhaag-link-grid-panel-padding-md);
-    padding-block-end: var(--denhaag-link-grid-panel-padding-md);
+    padding-block-start: var(--denhaag-link-grid-padding-md);
+    padding-block-end: var(--denhaag-link-grid-padding-md);
   }
 
   @media (min-width: 1280px) {
-    padding-block-start: var(--denhaag-link-grid-panel-padding-lg);
-    padding-block-end: var(--denhaag-link-grid-panel-padding-lg);
+    padding-block-start: var(--denhaag-link-grid-padding-lg);
+    padding-block-end: var(--denhaag-link-grid-padding-lg);
   }
 
   @media (min-width: 1768px) {
-    padding-block-start: var(--denhaag-link-grid-panel-padding-xl);
-    padding-block-end: var(--denhaag-link-grid-panel-padding-xl);
+    padding-block-start: var(--denhaag-link-grid-padding-xl);
+    padding-block-end: var(--denhaag-link-grid-padding-xl);
   }
 }
 
 .denhaag-link-grid__background-image {
-  position: absolute;
+  position: var(--denhaag-link-grid-background-image-position);
   top: 0;
   right: 0;
-  width: var(--denhaag-link-grid-panel-background-image-width);
+  width: var(--denhaag-link-grid-background-image-width);
   height: 100%;
   object-fit: cover;
 
@@ -128,11 +128,11 @@
   }
 }
 
-.denhaag-link-grid__item__content {
+.denhaag-link-grid__item-content {
   height: 100%;
 }
 
-.denhaag-link-grid__item__action {
+.denhaag-link-grid__item-action {
   display: flex;
   justify-content: flex-end;
   width: 100%;
