@@ -25,18 +25,23 @@ export interface LanguageSwitcherLogicProps {
   onLanguageChange?: (language: string) => void;
 }
 
-const ListItemContent = ({ label, active }: Language) => {
+interface ListItemContentProps extends Language {
+  variant?: 'link' | 'button';
+}
+
+const ListItemContent = ({ variant, label, active }: ListItemContentProps) => {
+  const className = variant === 'link' ? 'denhaag-link__icon' : 'utrecht-icon';
   return (
     <>
       {!active && (
-        <span className="denhaag-link__icon">
-          <ArrowRightIcon />
+        <span className={className}>
+          <ArrowRightIcon className="denhaag-language-switcher-icon" />
         </span>
       )}
       <span>{label}</span>
       {active && (
-        <span className="denhaag-link__icon">
-          <CheckedIcon />
+        <span className={className}>
+          <CheckedIcon className="denhaag-language-switcher-icon" />
         </span>
       )}
     </>
@@ -53,13 +58,18 @@ export const LanguageSwitcherLogic = ({
 }: LanguageSwitcherLogicProps) => {
   const languageListContent = languages.map((language, key) => {
     const tabIndex = mobileMenuScrolled ? -1 : undefined;
-    const classNames = clsx(
+    const linkClassNames = clsx(
       'denhaag-link',
       'denhaag-link--with-icon',
       language.active ? 'denhaag-link--with-icon-end' : 'denhaag-link--with-icon-start',
       'denhaag-language-switcher__list-item-link',
       language.active ? 'denhaag-language-switcher__list-item-link--active' : '',
       language.linkProps?.className,
+    );
+
+    const buttonClassNames = clsx(
+      'denhaag-language-switcher__list-item-button',
+      language.active ? 'denhaag-language-switcher__list-item-button--active' : '',
     );
 
     const handleLanguageChange = (languageId: string) => {
@@ -71,12 +81,17 @@ export const LanguageSwitcherLogic = ({
     return (
       <LanguageSwitcherListItem key={key}>
         {variant === 'link' ? (
-          <LanguageSwitcherLink Link={Link} tabIndex={tabIndex} {...language.linkProps} className={classNames}>
-            <ListItemContent {...language} />
+          <LanguageSwitcherLink Link={Link} tabIndex={tabIndex} {...language.linkProps} className={linkClassNames}>
+            <ListItemContent {...language} variant={variant} />
           </LanguageSwitcherLink>
         ) : (
-          <LinkButton inline tabIndex={tabIndex} onClick={() => handleLanguageChange(language.id)}>
-            <ListItemContent {...language} />
+          <LinkButton
+            className={buttonClassNames}
+            inline
+            tabIndex={tabIndex}
+            onClick={() => handleLanguageChange(language.id)}
+          >
+            <ListItemContent {...language} variant={variant} />
           </LinkButton>
         )}
       </LanguageSwitcherListItem>

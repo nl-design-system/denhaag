@@ -35,6 +35,16 @@
                 "padding-block-start": { "value": "0" }
               }
             }
+          },
+          "button": {
+            "hover-text-decoration": { "value": "underline" },
+            "text-decoration": { "value": "none" },
+            "text-underline-offset": { "value": "1px" },
+            "icon": {
+              "gap": { "value": "6px" },
+              "inset-block-start": { "value": "-1px" },
+              "size": { "value": "1rem" }
+            }
           }
         }
       }

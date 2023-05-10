@@ -28,6 +28,24 @@
         padding-block-start: var(--denhaag-language-switcher-list-item-padding-block-start);
         padding-block-end: var(--denhaag-language-switcher-list-item-padding-block-end);
       }
+
+      .denhaag-language-switcher__list-item-button {
+        --utrecht-button-icon-gap: var(--denhaag-language-switcher-list-item-button-icon-gap);
+        --utrecht-icon-inset-block-start: var(--denhaag-language-switcher-list-item-button-icon-inset-block-start);
+        --utrecht-icon-size: var(--denhaag-language-switcher-list-item-button-icon-size);
+        --utrecht-link-hover-text-decoration: var(--denhaag-language-switcher-list-item-button-hover-text-decoration);
+        --utrecht-link-text-decoration: var(--denhaag-language-switcher-list-item-button-text-decoration);
+        --utrecht-link-text-underline-offset: var(--denhaag-language-switcher-list-item-button-text-underline-offset);
+
+        &--active {
+          color: var(--denhaag-language-switcher-list-item-link-active-color);
+          font-weight: var(--denhaag-language-switcher-list-item-link-active-font-weight, bold);
+        }
+
+        .denhaag-language-switcher-icon {
+          font-size: var(--denhaag-language-switcher-list-item-button-icon-size);
+        }
+      }
     }
 
     .denhaag-link__icon {
