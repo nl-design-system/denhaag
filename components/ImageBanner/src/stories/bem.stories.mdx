@@ -1,0 +1,69 @@
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+import pkg from "../../package.json";
+import readme from "../../README.md";
+import "../index.scss";
+
+<Meta
+  title="CSS/Cards/Image Banner"
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Design Tokens
+
+<DesignTokenDocBlock cat egoryName="Image Banner" viewType="table" />
+
+## Stories
+
+### Default
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Default">
+    <div class="denhaag-image-banner">
+      <div class="denhaag-card-news denhaag-image-banner__card">
+        <div class="denhaag-card-news__image-container denhaag-image-banner__image-container">
+          <img
+            class="denhaag-card-news__image denhaag-image-banner__image"
+            src="https://images.unsplash.com/photo-1612799675078-ac368b17e488?w=507&h=353"
+            alt=""
+          />
+        </div>
+        <div class="denhaag-card-news__content denhaag-image-banner__content">
+          <h4 class="utrecht-heading-4 denhaag-image-banner__heading">
+            <a class="denhaag-card-news__link denhaag-card-news__link" href="#example-url">
+              Fietsflat Rijnstraat: opknappen fietsenstalling
+            </a>
+          </h4>
+          <p class="utrecht-paragraph denhaag-image-banner__paragraph">
+            Het weekend van 15 en 16 januari in beide richtingen dicht.
+          </p>
+          <div class="denhaag-card-news__icon denhaag-image-banner__icon">
+            <svg
+              aria-hidden="true"
+              class="denhaag-icon"
+              focusable="false"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
