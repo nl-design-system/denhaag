@@ -1,6 +1,7 @@
 @import "./mixins";
 
 .denhaag-readspeaker {
+  position: var(--denhaag-readspeaker-position);
   accent-color: var(--denhaag-readspeaker-accent-color);
   opacity: var(--denhaag-readspeaker-opacity, 0);
   transition: 352ms ease-in-out opacity; // Set to variables.
@@ -330,7 +331,7 @@
 
   .rsbtn_toolpanel {
     position: absolute;
-    top: var(--denhaag-readspeaker-height);
+    top: calc(var(--denhaag-readspeaker-height) + 2px);
   }
 
   .rsbtn_tools_inner {
@@ -339,6 +340,9 @@
     border-radius: var(--denhaag-readspeaker-border-radius);
     display: flex;
     flex-direction: column;
+
+    // Bleddyn
+    max-width: 240px;
   }
 
   .rsbtn_toollist {
@@ -351,14 +355,42 @@
     }
   }
 
+  .rsbtn_powered {
+    padding-inline: var(--denhaag-readspeaker-settings-padding-inline);
+    padding-block: var(--denhaag-readspeaker-settings-padding-block);
+    border-bottom: 2px solid var(--denhaag-readspeaker-border-color);
+  }
+
   .rsbtn_tool {
     display: flex;
     gap: var(--denhaag-readspeaker-settings-gap);
     padding-inline: var(--denhaag-readspeaker-settings-padding-inline);
     padding-block: var(--denhaag-readspeaker-settings-padding-block);
+    // Bleddyn
+    width: 100%;
+    outline: none;
+    border: none;
+    flex-direction: row;
+    background-color: transparent;
+    align-items: center;
+    justify-content: space-between;
+
+    [aria-hidden="true"] {
+      display: none;
+    }
+
+    .rs_minitoggler {
+      display: flex;
+      justify-self: flex-end;
+    }
 
     &:focus-visible {
       outline: var(--denhaag-readspeaker-focus-outline);
+    }
+
+    &:hover {
+      color: var(--denhaag-readspeaker-tool-hover-color);
+      cursor: var(--denhaag-readspeaker-tool-hover-cursor);
     }
   }
 
@@ -433,6 +465,139 @@
     &.disabled {
       --denhaag-readspeaker-switch-background-color: var(--denhaag-readspeaker-switch-active-disabled-background-color);
     }
+  }
+}
+
+// Readspeaker Settings Dialog
+#rs-dialog[data-mode="settings"] {
+  font-family: var(--denhaag-readspeaker-font-family);
+  font-weight: var(--denhaag-readspeaker-font-weight);
+  font-size: var(--denhaag-readspeaker-font-size);
+  padding: 0;
+  > nav {
+    background-color: var(--denhaag-readspeaker-settings-dialog-menu-background-color);
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+
+      li {
+        padding: 12px;
+        color: var(--denhaag-readspeaker-settings-dialog-menu-item-color);
+        &.active {
+          background-color: var(--denhaag-readspeaker-settings-dialog-menu-item-active-background-color);
+        }
+      }
+    }
+  }
+
+  #rs-dialog-main {
+    header {
+      padding: 24px;
+      h1 {
+        margin-top: 0;
+      }
+    }
+
+    #rs-dialog-contents {
+    }
+  }
+}
+
+// Readspeaker Text version dialog
+#rs-dialog[data-mode="textmode"] {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // Text version header buttons
+    nav {
+      display: flex;
+      button {
+        background-color: var(--denhaag-readspeaker-button-background-color);
+        border: 1px solid var(--denhaag-readspeaker-border-color);
+        color: var(--denhaag-readspeaker-color);
+        display: grid;
+        place-items: center;
+
+        position: relative;
+        height: var(--denhaag-readspeaker-height);
+        width: var(--denhaag-readspeaker-button-width);
+
+        &:last-of-type {
+          border-radius: 0 var(--denhaag-readspeaker-border-radius) var(--denhaag-readspeaker-border-radius) 0;
+        }
+
+        &:hover {
+          --denhaag-readspeaker-color: var(--denhaag-readspeaker-hover-color);
+          --denhaag-readspeaker-button-background-color: var(--denhaag-readspeaker-hover-button-background-color);
+          --denhaag-readspeaker-border-color: var(--denhaag-readspeaker-hover-button-border-color);
+        }
+
+        &:active,
+        &:focus {
+          --denhaag-readspeaker-color: var(--denhaag-readspeaker-active-color);
+          --denhaag-readspeaker-button-background-color: var(--denhaag-readspeaker-active-button-background-color);
+          --denhaag-readspeaker-border-color: var(--denhaag-readspeaker-active-button-border-color);
+        }
+
+        &:focus-visible {
+          --denhaag-readspeaker-color: var(--denhaag-readspeaker-focus-color);
+          --denhaag-readspeaker-button-background-color: var(--denhaag-readspeaker-focus-button-background-color);
+          --denhaag-readspeaker-border-color: var(--denhaag-readspeaker-focus-button-border-color);
+
+          outline: var(--denhaag-readspeaker-focus-outline);
+          z-index: 1;
+        }
+
+        &[aria-expanded="true"] + .rsbtn_dropdown {
+          --denhaag-readspeaker-dropdown-display: block;
+        }
+
+        & ~ .rsbtn_player_item {
+          border-left: 0;
+
+          &:hover {
+            box-shadow: -1px 0px 0 0px var(--denhaag-readspeaker-border-color);
+          }
+
+          &:focus-visible {
+            border-left: 1px solid var(--denhaag-readspeaker-border-color);
+          }
+        }
+      }
+      .toolbar-play {
+      }
+
+      .toolbar-stop {
+      }
+
+      .toolbar-volume {
+      }
+
+      .toolbar-speed {
+      }
+
+      .toolbar-fontminus {
+      }
+
+      .toolbar-fontplus {
+      }
+
+      .toolbar-textsettings {
+      }
+
+      .toolbar-fullscreen {
+      }
+
+      .toolbar-close {
+      }
+    }
+  }
+  #rs-dialog-main {
+    font-family: var(--denhaag-readspeaker-font-family);
+    font-weight: var(--denhaag-readspeaker-font-weight);
+    font-size: var(--denhaag-readspeaker-font-size);
   }
 }
 
