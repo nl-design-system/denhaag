@@ -5,7 +5,7 @@ import { MobileMenuList } from './MobileMenuList';
 import { MobileMenuListItem } from './MobileMenuListItem';
 import { MobileSubMenu } from './MobileSubMenu';
 import { MobileMenuButton } from './MobileMenuButton';
-import { MobileMenuLink } from './MobileMenuLink';
+import { MobileMenuLink, Link } from './MobileMenuLink';
 import { LanguageSwitcherLogic, LanguageSwitcherLogicProps } from '@gemeente-denhaag/language-switcher';
 import { Button } from '@gemeente-denhaag/button';
 
@@ -14,7 +14,7 @@ import clsx from 'clsx';
 
 interface NavigationGroupProps {
   label: string;
-  url?: string;
+  href?: string;
   navigation?: Array<NavigationGroupProps>;
 }
 
@@ -27,20 +27,22 @@ export interface MobileMenuProps extends HTMLAttributes<HTMLElement> {
   navigation?: Array<NavigationGroupProps>;
   languageSwitcherMenu?: LanguageSwitcherLogicProps;
   logoutButton?: LogoutButtonProps;
+  Link?: Link;
 }
 
 interface ExpandedListItemProps extends NavigationGroupProps {
+  Link?: Link;
   scrollMenu: () => void;
   tabIndex?: number;
 }
 
-const ExpandedListItem = (props: ExpandedListItemProps) => {
-  const toggle = useToggleState(props.scrollMenu);
+const ExpandedListItem = ({ label, navigation, Link, scrollMenu, tabIndex }: ExpandedListItemProps) => {
+  const toggle = useToggleState(scrollMenu);
 
   return (
     <MobileMenuListItem>
-      <MobileMenuButton {...toggle.buttonProps} tabIndex={props.tabIndex}>
-        {props.label}
+      <MobileMenuButton {...toggle.buttonProps} tabIndex={tabIndex}>
+        {label}
       </MobileMenuButton>
       <MobileSubMenu {...toggle.expandableAreaProps}>
         <div>
@@ -53,12 +55,12 @@ const ExpandedListItem = (props: ExpandedListItemProps) => {
             </span>
             <span className="denhaag-link__label">Terug</span>
           </button>
-          <span className="denhaag-mobile-menu-list-submenu-title">{props.label}</span>
+          <span className="denhaag-mobile-menu-list-submenu-title">{label}</span>
           <MobileMenuList>
-            {props.navigation?.map((l3Nav, key) => {
+            {navigation?.map((l3Nav, key) => {
               return (
                 <MobileMenuListItem key={key}>
-                  <MobileMenuLink href={l3Nav.url}>
+                  <MobileMenuLink Link={Link} href={l3Nav.href}>
                     <span>{l3Nav.label}</span>
                     <span className="denhaag-mobile-menu-list-submenu-list-item-link__icon">
                       <ArrowRightIcon />
@@ -74,21 +76,21 @@ const ExpandedListItem = (props: ExpandedListItemProps) => {
   );
 };
 
-const ExpandedList = (props: ExpandedListItemProps) => {
+const ExpandedList = ({ label, navigation, Link, scrollMenu, tabIndex }: ExpandedListItemProps) => {
   const toggle = useToggleState();
 
   return (
     <MobileMenuListItem active={toggle.open}>
-      <MobileMenuButton {...toggle.buttonProps} tabIndex={props.tabIndex} large>
-        <p className="denhaag-mobile-menu-list-item-button-text">{props.label}</p>
+      <MobileMenuButton {...toggle.buttonProps} tabIndex={tabIndex} large>
+        <p className="denhaag-mobile-menu-list-item-button-text">{label}</p>
         <ChevronDownIcon />
       </MobileMenuButton>
       <MobileMenuList {...toggle.expandableAreaProps} expandable>
-        {props.navigation?.map((l2Nav, key) => {
-          if (l2Nav.url) {
+        {navigation?.map((l2Nav, key) => {
+          if (l2Nav.href) {
             return (
               <MobileMenuListItem key={key}>
-                <MobileMenuLink href={l2Nav.url} tabIndex={props.tabIndex}>
+                <MobileMenuLink Link={Link} href={l2Nav.href} tabIndex={tabIndex}>
                   <span>{l2Nav.label}</span>
                   <span className="denhaag-mobile-menu-list-submenu-list-item-link__icon">
                     <ArrowRightIcon />
@@ -97,7 +99,7 @@ const ExpandedList = (props: ExpandedListItemProps) => {
               </MobileMenuListItem>
             );
           } else {
-            return <ExpandedListItem {...l2Nav} tabIndex={props.tabIndex} scrollMenu={props.scrollMenu} key={key} />;
+            return <ExpandedListItem {...l2Nav} Link={Link} tabIndex={tabIndex} scrollMenu={scrollMenu} key={key} />;
           }
         })}
       </MobileMenuList>
@@ -109,6 +111,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
   navigation,
   languageSwitcherMenu,
   logoutButton,
+  Link,
 }: MobileMenuProps) => {
   const [menuScrolled, setMenuScrolled] = useState(false);
 
@@ -123,17 +126,23 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
       {navigation && (
         <MobileMenuList>
           {navigation.map((l1Nav, key) => {
-            if (l1Nav.url) {
+            if (l1Nav.href) {
               return (
                 <MobileMenuListItem key={key}>
-                  <MobileMenuLink href={l1Nav.url} large tabIndex={menuScrolled ? -1 : undefined}>
+                  <MobileMenuLink Link={Link} href={l1Nav.href} large tabIndex={menuScrolled ? -1 : undefined}>
                     {l1Nav.label}
                   </MobileMenuLink>
                 </MobileMenuListItem>
               );
             } else {
               return (
-                <ExpandedList {...l1Nav} tabIndex={menuScrolled ? -1 : undefined} scrollMenu={scrollMenu} key={key} />
+                <ExpandedList
+                  {...l1Nav}
+                  Link={Link}
+                  tabIndex={menuScrolled ? -1 : undefined}
+                  scrollMenu={scrollMenu}
+                  key={key}
+                />
               );
             }
           })}
@@ -152,3 +161,5 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
     </SheetContainer>
   );
 };
+
+export default MobileMenu;
