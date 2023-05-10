@@ -7,7 +7,7 @@ import './index.scss';
 
 export interface FooterListItemData {
   label: string;
-  url: string;
+  href: string;
 }
 
 export interface FooterLegalProps extends Omit<BaseProps, 'tabIndex' | 'children'> {
@@ -18,7 +18,7 @@ export interface FooterLegalProps extends Omit<BaseProps, 'tabIndex' | 'children
 export interface FooterSocialLinks {
   icon: React.ReactElement;
   label: string;
-  url: string;
+  href: string;
 }
 
 export interface FooterSocialData {
@@ -30,7 +30,7 @@ export interface NewsLetterData {
   title: string;
   text: string;
   buttonText: string;
-  url: string;
+  href: string;
 }
 
 export interface ContactData {
@@ -60,7 +60,7 @@ export const FooterLegal: React.FC<FooterLegalProps> = (props: FooterLegalProps)
           <ul className="denhaag-list denhaag-footer__legal-links">
             {props.legalData?.map((item, key) => (
               <li className="denhaag-list__item" key={key}>
-                <a href={item.url} className="denhaag-link">
+                <a href={item.href} className="denhaag-link">
                   <span className="denhaag-link__label">{item.label}</span>
                 </a>
               </li>
@@ -87,7 +87,7 @@ export const FooterContact: React.FC<FooterContactProps> = (props: FooterContact
               <h4 className="utrecht-heading-4 denhaag-link-group__caption">{props.newsletterData.title}</h4>
               <p className="utrecht-paragraph">{props.newsletterData.text}</p>
               <div className="denhaag-button-group">
-                <a href={props.newsletterData.url} className="denhaag-button denhaag-button--primary-action">
+                <a href={props.newsletterData.href} className="denhaag-button denhaag-button--primary-action">
                   {props.newsletterData.buttonText}
                 </a>
               </div>
@@ -99,7 +99,7 @@ export const FooterContact: React.FC<FooterContactProps> = (props: FooterContact
               <ul className="utrecht-list-social">
                 {props.socialData.links.map((item, key) => (
                   <li className="utrecht-list-social__item" key={key}>
-                    <a href={item.url} className="utrecht-link-social" title={item.label}>
+                    <a href={item.href} className="utrecht-link-social" title={item.label}>
                       {item.icon}
                     </a>
                   </li>
@@ -113,7 +113,7 @@ export const FooterContact: React.FC<FooterContactProps> = (props: FooterContact
               <ul className="utrecht-link-list utrecht-link-list--html-ul denhaag-link-group__list">
                 {props.contactData.links.map((item, key) => (
                   <li className="denhaag-link-group__list-item" key={key}>
-                    <a href={item.url} className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start">
+                    <a href={item.href} className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start">
                       <span className="denhaag-link__icon">
                         <svg
                           width="1em"
