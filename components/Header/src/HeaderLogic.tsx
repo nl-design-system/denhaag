@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { AnchorHTMLAttributes, useEffect, useRef, useState } from 'react';
 import HeaderLogo from '@gemeente-denhaag/header-logo';
 import ResponsiveContent from '@gemeente-denhaag/responsive-content';
 import Link from '@gemeente-denhaag/link';
-import { MenuButtonExpandable, MobileMenu } from '@gemeente-denhaag/menu';
+import { MenuButtonExpandable, MobileMenu, MobileMenuProps } from '@gemeente-denhaag/menu';
 import './index.scss';
 import Header from './Header';
 import HeaderContentContainer from './HeaderContentContainer';
@@ -25,7 +25,7 @@ export interface HeaderLogicProps {
   breadcrumbs?: BreadcrumbProps;
   userprofileMenu?: MenuProps;
   languageSwitcherMenu?: LanguageSwitcherProps;
-  mobileMenu?: MobileMenuProps;
+  mobileMenu?: HeaderMobileMenuProps;
   logoutButton?: LogoutButtonProps;
   mobileBreakpoint?: number;
 }
@@ -40,41 +40,22 @@ interface LanguageSwitcherProps {
   languageSwitcherProps: LanguageSwitcherLogicProps;
 }
 
-interface MobileMenuProps {
+interface HeaderMobileMenuProps extends MobileMenuProps {
   openLabel: string;
   closeLabel: string;
-  navigation?: Array<NavigationGroupProps>;
 }
 
 interface MenuProps {
   label: string;
   navigationGroups: Array<NavigationGroupProps>;
+  CustomLink?: (props: AnchorHTMLAttributes<HTMLAnchorElement>) => JSX.Element;
 }
 
 interface NavigationGroupProps {
   label: string;
-  url?: string;
+  href?: string;
   navigation?: Array<NavigationGroupProps>;
 }
-
-const NavigationGroup: React.FC<NavigationGroupProps> = (props: NavigationGroupProps) => {
-  const navigationLinks = props.navigation?.map((navigationLink, key) => {
-    return (
-      <LinkGroupListItem key={key}>
-        <Link icon={<ArrowRightIcon />} iconAlign="start" href={navigationLink.url}>
-          {navigationLink.label}
-        </Link>
-      </LinkGroupListItem>
-    );
-  });
-
-  return (
-    <LinkGroup>
-      <Heading4>{props.label}</Heading4>
-      <LinkGroupList>{navigationLinks}</LinkGroupList>
-    </LinkGroup>
-  );
-};
 
 export const HeaderLogic: React.FC<HeaderLogicProps> = ({
   breadcrumbs,
@@ -157,7 +138,46 @@ export const HeaderLogic: React.FC<HeaderLogicProps> = ({
     }
   }, [mobileMenuActive]);
 
+  useEffect(() => {
+    const menuOpen = welcomeMenuActive || languageSwitcherActive || mobileMenuActive;
+    if (menuOpen) {
+      handleCloseSheet();
+    }
+  }, [breadcrumbs, languageSwitcherMenu]);
+
   const renderMobileMenu = mobileMenu || languageSwitcherMenu || logoutButton;
+
+  const CustomLink = userprofileMenu?.CustomLink;
+  const NavigationGroup: React.FC<NavigationGroupProps> = (props: NavigationGroupProps) => {
+    const navigationLinks = props.navigation?.map((navigationLink, key) => {
+      return (
+        <LinkGroupListItem key={key}>
+          {CustomLink ? (
+            <CustomLink
+              href={navigationLink.href}
+              className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
+            >
+              <span className="denhaag-link__icon">
+                <ArrowRightIcon />
+              </span>
+              <span>{navigationLink.label}</span>
+            </CustomLink>
+          ) : (
+            <Link icon={<ArrowRightIcon />} iconAlign="start" href={navigationLink.href}>
+              {navigationLink.label}
+            </Link>
+          )}
+        </LinkGroupListItem>
+      );
+    });
+
+    return (
+      <LinkGroup>
+        <Heading4>{props.label}</Heading4>
+        <LinkGroupList>{navigationLinks}</LinkGroupList>
+      </LinkGroup>
+    );
+  };
 
   return (
     <Header>
@@ -269,6 +289,7 @@ export const HeaderLogic: React.FC<HeaderLogicProps> = ({
                 navigation={mobileMenu?.navigation}
                 languageSwitcherMenu={languageSwitcherMenu?.languageSwitcherProps}
                 logoutButton={logoutButton}
+                Link={mobileMenu?.Link}
               />
             </ResponsiveContent>
           </SheetDialog>
