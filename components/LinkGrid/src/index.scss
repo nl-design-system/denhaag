@@ -5,23 +5,24 @@
   align-items: center;
   width: 100vw;
   overflow-x: hidden;
+  text-decoration: none;
   background-color: var(--denhaag-link-grid-background-color);
-  padding-block-start: var(--denhaag-link-grid-padding-sm);
-  padding-block-end: var(--denhaag-link-grid-padding-sm);
+  padding-block-start: var(--denhaag-link-grid-padding-block-start-sm);
+  padding-block-end: var(--denhaag-link-grid-padding-block-end-sm);
 
   @media (min-width: 1024px) {
-    padding-block-start: var(--denhaag-link-grid-padding-md);
-    padding-block-end: var(--denhaag-link-grid-padding-md);
+    padding-block-start: var(--denhaag-link-grid-padding-block-start-md);
+    padding-block-end: var(--denhaag-link-grid-padding-block-end-md);
   }
 
   @media (min-width: 1280px) {
-    padding-block-start: var(--denhaag-link-grid-padding-lg);
-    padding-block-end: var(--denhaag-link-grid-padding-lg);
+    padding-block-start: var(--denhaag-link-grid-padding-block-start-lg);
+    padding-block-end: var(--denhaag-link-grid-padding-block-end-lg);
   }
 
   @media (min-width: 1768px) {
-    padding-block-start: var(--denhaag-link-grid-padding-xl);
-    padding-block-end: var(--denhaag-link-grid-padding-xl);
+    padding-block-start: var(--denhaag-link-grid-padding-block-start-xl);
+    padding-block-end: var(--denhaag-link-grid-padding-block-end-xl);
   }
 }
 
@@ -90,40 +91,41 @@
 }
 
 .denhaag-link-grid__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   width: auto;
-  background-color: var(--denhaag-link-grid-grid-background-color);
-  padding-block-start: 24px;
-  padding-block-end: 24px;
-  padding-inline-start: 24px;
-  padding-inline-end: 24px;
+  background-color: var(--denhaag-link-grid-item-background-color);
+  padding-block-start: var(--denhaag-link-grid-item-padding-block-start);
+  padding-block-end: var(--denhaag-link-grid-item-padding-block-end);
+  padding-inline-start: var(--denhaag-link-grid-item-padding-inline-start);
+  padding-inline-end: var(--denhaag-link-grid-item-padding-inline-end);
   border-top: var(--denhaag-link-grid-item-default-border) var(--denhaag-link-grid-item-border-color);
   &:first-child {
-    border-top: none;
+    border-top: var(--denhaag-link-grid-item-no-border);
   }
 
   @media (min-width: 768px) {
     border-left: var(--denhaag-link-grid-item-default-border) var(--denhaag-link-grid-item-border-color);
     &:nth-child(-n + 2) {
-      border-top: none;
+      border-top: var(--denhaag-link-grid-item-no-border);
     }
     &:nth-child(odd) {
-      border-left: none;
+      border-left: var(--denhaag-link-grid-item-no-border);
     }
   }
 
   @media (min-width: 1280px) {
     &:nth-child(-n + 3) {
-      border-top: none;
+      border-top: var(--denhaag-link-grid-item-no-border);
     }
     &:nth-child(odd) {
       border-left: var(--denhaag-link-grid-item-default-border) var(--denhaag-link-grid-item-border-color);
     }
     &:nth-child(3n + 1) {
-      border-left: none;
+      border-left: var(--denhaag-link-grid-item-no-border);
     }
   }
 }
@@ -132,11 +134,30 @@
   height: 100%;
 }
 
+.denhaag-link-grid__item-link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.denhaag-link-grid__item-link:focus-visible {
+  outline: none;
+}
+
+.denhaag-link-grid__item-link::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 .denhaag-link-grid__item-action {
   display: flex;
   justify-content: flex-end;
   width: 100%;
   margin-block-start: 20px;
+  color: var(--denhaag-link-grid-action-color);
 }
 
 .denhaag-link-grid__no-image {
@@ -155,14 +176,14 @@
 
     @media (min-width: 768px) {
       &:nth-child(1n) {
-        border-top: none;
+        border-top: var(--denhaag-link-grid-item-no-border);
         border-bottom: var(--denhaag-link-grid-item-default-border) var(--denhaag-link-grid-item-border-color);
       }
       &:nth-child(-n + 2) {
         border-top: var(--denhaag-link-grid-item-default-border) var(--denhaag-link-grid-item-border-color);
       }
       &:nth-child(even) {
-        border-left: none;
+        border-left: var(--denhaag-link-grid-item-no-border);
       }
     }
 
@@ -173,7 +194,7 @@
         border-top: var(--denhaag-link-grid-item-default-border) var(--denhaag-link-grid-item-border-color);
       }
       &:nth-child(odd) {
-        border-left: none;
+        border-left: var(--denhaag-link-grid-item-no-border);
       }
       &:nth-child(3n + 1) {
         border-left: var(--denhaag-link-grid-item-default-border) var(--denhaag-link-grid-item-border-color);
