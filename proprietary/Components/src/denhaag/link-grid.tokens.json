@@ -36,6 +36,14 @@
           "lg": { "value": "1298px" }
         }
       },
+      "table": {
+        "grid-template-columns": {
+          "xs": { "value": "repeat(1, 1fr)" },
+          "md": { "value": "repeat(2, 1fr)" },
+          "lg": { "value": "repeat(3, 1fr)" },
+          "lg-no-image": { "value": "repeat(4, 1fr)" }
+        }
+      },
       "title": {
         "margin-block-start": { "value": "0" },
         "padding-bottom": { "value": "10px" }
@@ -45,10 +53,10 @@
         "default-border": { "value": "1px solid" },
         "no-border": { "value": "none" },
         "border-color": { "value": "{denhaag.color.blue.1}" },
-        "padding-block-start": { "value": "24px" },
-        "padding-block-end": { "value": "16px" },
-        "padding-inline-start": { "value": "24px" },
-        "padding-inline-end": { "value": "24px" },
+        "padding-block-start": { "value": "{denhaag.space.block.xl}" },
+        "padding-block-end": { "value": "{denhaag.space.block.md}" },
+        "padding-inline-start": { "value": "{denhaag.space.block.xl}" },
+        "padding-inline-end": { "value": "{denhaag.space.block.xl}" },
         "title": {
           "color": { "value": "{denhaag.color.grey.5}" }
         },
