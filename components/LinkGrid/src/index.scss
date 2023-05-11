@@ -82,11 +82,11 @@
   gap: 0;
 
   @media (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: var(--denhaag-link-grid-table-grid-template-columns-md);
   }
 
   @media (min-width: 1280px) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: var(--denhaag-link-grid-table-grid-template-columns-lg);
   }
 }
 
@@ -198,7 +198,7 @@
 
   .denhaag-link-grid__grid {
     @media (min-width: 1280px) and (max-width: 1767px) {
-      grid-template-columns: repeat(4, 1fr) !important;
+      grid-template-columns: var(--denhaag-link-grid-table-grid-template-columns-lg-no-image);
     }
   }
 
