@@ -1,13 +1,26 @@
-denhaag-image-banner {
-  height: auto;
+.denhaag-image-banner {
+  height: var(--denhaag-image-banner-height);
   width: 100%;
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(312px, 1fr));
+
+  @media (prefers-reduced-motion: reduce) {
+    transition-duration: 0ms;
+  }
 }
 
 .denhaag-image-banner__card {
-  min-height: 378px;
+  align-items: end;
+  display: flex;
+  height: 378px;
   overflow: hidden;
   position: relative;
-  width: 312px;
+}
+
+.denhaag-image-banner__card--focus,
+.denhaag-image-banner__card:focus-visible {
+  outline: var(--denhaag-focus-border);
 }
 
 .denhaag-image-banner__image {
@@ -16,17 +29,67 @@ denhaag-image-banner {
   top: 0;
   object-fit: cover;
   position: absolute;
+  transition: all ease-in-out 200ms;
   width: 100%;
   z-index: 0;
 }
 
+.denhaag-image-banner .denhaag-icon {
+  color: var(--denhaag-color-blue-3);
+  transition: all ease-in-out 200ms;
+}
+
+.denhaag-image-banner__paragraph {
+  color: var(--denhaag-color-green-3);
+  display: none;
+  letter-spacing: unset;
+  line-height: 1.3;
+  text-transform: unset;
+}
+
+.denhaag-image-banner__card--selected .denhaag-image-banner__image {
+  box-shadow: 0 4px 50px rgb(0 0 0 / 2%);
+}
+
+.denhaag-image-banner__card--hover .denhaag-image-banner__image {
+  transform: scale(1.08);
+}
+
+.denhaag-image-banner__card:active .denhaag-image-banner__image {
+  box-shadow: 0 4px 50px rgb(0 0 0 / 2%);
+}
+
+.denhaag-image-banner__card--selected,
+.denhaag-image-banner__card:active {
+  transform: translateY(1px);
+  transition: transform ease-in-out 100ms;
+}
+
+.denhaag-image-banner__card:hover .denhaag-image-banner__image {
+  transform: scale(1.08);
+}
+
+.denhaag-image-banner__card--hover,
+.denhaag-image-banner__card:hover {
+  .denhaag-icon {
+    transform: translateX(4px);
+  }
+
+  .denhaag-image-banner__paragraph {
+    display: initial;
+  }
+}
+
+.denhaag-image-banner__card--reduced-motion {
+  transition-duration: 0ms;
+}
+
 .denhaag-image-banner__content {
   background-color: white;
-  bottom: 0;
-  left: 0;
+  display: grid;
+  grid-gap: 4px;
   width: calc(100% - ((2 * 24px) + (2 * 16px)));
   max-height: 155px;
-  min-height: 80px;
   margin-block-end: 24px;
   margin-inline-end: 24px;
   margin-inline-start: 24px;
@@ -34,25 +97,21 @@ denhaag-image-banner {
   padding-inline-start: 16px;
   padding-block-end: 8px;
   padding-block-start: 16px;
-  position: absolute;
   z-index: 1;
 }
-
-/*
-.denhaag-image-banner__heading {
-}
-*/
 
 .denhaag-image-banner__link {
   color: inherit;
   text-decoration: inherit;
 }
 
-.denhaag-image-banner__paragraph {
-  color: var(--denhaag-color-green-3);
-  letter-spacing: unset;
-  line-height: 1.3;
-  text-transform: unset;
+.denhaag-image-banner__link::after {
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .denhaag-image-banner__icon {
@@ -60,6 +119,17 @@ denhaag-image-banner {
   justify-content: end;
 }
 
-.denhaag-image-banner .denhaag-icon {
-  color: var(--denhaag-color-blue-3);
+@media (min-width: 312px) {
+  .denhaag-image-banner--big {
+    grid-template-columns: unset;
+
+    .denhaag-image-banner__card {
+      height: 413px;
+      justify-content: end;
+    }
+
+    .denhaag-image-banner__content {
+      width: 315px;
+    }
+  }
 }
