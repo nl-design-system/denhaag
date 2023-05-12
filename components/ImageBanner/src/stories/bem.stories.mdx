@@ -5,7 +5,7 @@ import readme from "../../README.md";
 import "../index.scss";
 
 <Meta
-  title="CSS/Cards/Image Banner"
+  title="CSS/Actions/Image Banner"
   parameters={{
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     status: {
@@ -18,7 +18,7 @@ import "../index.scss";
 
 ## Design Tokens
 
-<DesignTokenDocBlock cat egoryName="Image Banner" viewType="table" />
+<DesignTokenDocBlock categoryName="Image Banner" viewType="table" />
 
 ## Stories
 
@@ -28,24 +28,22 @@ import "../index.scss";
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Default">
     <div class="denhaag-image-banner">
-      <div class="denhaag-card-news denhaag-image-banner__card">
-        <div class="denhaag-card-news__image-container denhaag-image-banner__image-container">
-          <img
-            class="denhaag-card-news__image denhaag-image-banner__image"
-            src="https://images.unsplash.com/photo-1612799675078-ac368b17e488?w=507&h=353"
-            alt=""
-          />
-        </div>
-        <div class="denhaag-card-news__content denhaag-image-banner__content">
-          <h4 class="utrecht-heading-4 denhaag-image-banner__heading">
-            <a class="denhaag-card-news__link denhaag-card-news__link" href="#example-url">
+      <div class="denhaag-image-banner__card">
+        <img
+          class="denhaag-image-banner__image"
+          src="https://images.unsplash.com/photo-1612799675078-ac368b17e488?w=507&h=353"
+          alt="alt text here"
+        />
+        <div class="denhaag-image-banner__content">
+          <h4 class="utrecht-heading-5 denhaag-image-banner__heading">
+            <a class="denhaag-image-banner__link" href="#example-url">
               Fietsflat Rijnstraat: opknappen fietsenstalling
             </a>
           </h4>
-          <p class="utrecht-paragraph denhaag-image-banner__paragraph">
+          <p class="utrecht-paragraph utrecht-paragraph--denhaag-detail denhaag-image-banner__paragraph">
             Het weekend van 15 en 16 januari in beide richtingen dicht.
           </p>
-          <div class="denhaag-card-news__icon denhaag-image-banner__icon">
+          <div class="denhaag-image-banner__icon">
             <svg
               aria-hidden="true"
               class="denhaag-icon"

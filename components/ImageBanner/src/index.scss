@@ -1,3 +1,65 @@
-.denhaag-image-banner {
-  /* TO DO: fill with css. */
+denhaag-image-banner {
+  height: auto;
+  width: 100%;
+}
+
+.denhaag-image-banner__card {
+  min-height: 378px;
+  overflow: hidden;
+  position: relative;
+  width: 312px;
+}
+
+.denhaag-image-banner__image {
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+.denhaag-image-banner__content {
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - ((2 * 24px) + (2 * 16px)));
+  max-height: 155px;
+  min-height: 80px;
+  margin-block-end: 24px;
+  margin-inline-end: 24px;
+  margin-inline-start: 24px;
+  padding-inline-end: 16px;
+  padding-inline-start: 16px;
+  padding-block-end: 8px;
+  padding-block-start: 16px;
+  position: absolute;
+  z-index: 1;
+}
+
+/*
+.denhaag-image-banner__heading {
+}
+*/
+
+.denhaag-image-banner__link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.denhaag-image-banner__paragraph {
+  color: var(--denhaag-color-green-3);
+  letter-spacing: unset;
+  line-height: 1.3;
+  text-transform: unset;
+}
+
+.denhaag-image-banner__icon {
+  display: flex;
+  justify-content: end;
+}
+
+.denhaag-image-banner .denhaag-icon {
+  color: var(--denhaag-color-blue-3);
 }
