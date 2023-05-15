@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/menu",
-  "version": "0.2.3-www-denhaag-nl.37",
+  "version": "0.2.3-www-denhaag-nl.38",
   "description": "A Menu component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "private": false,
@@ -32,8 +32,8 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "0.2.3-www-denhaag-nl.37",
-    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.37"
+    "@gemeente-denhaag/baseprops": "0.2.3-www-denhaag-nl.38",
+    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.38"
   },
   "peerDependencies": {
     "react": "^17.0.0"

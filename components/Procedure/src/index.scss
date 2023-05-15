@@ -10,6 +10,15 @@
 @import "./SubStep";
 @import "./SubStepHeading";
 
+/* procedure specific styling */
+.denhaag-procedure {
+  --denhaag-procedure-step-heading-line-height: var(--utrecht-heading-4-line-height);
+  --denhaag-step-marker-size: var(--denhaag-procedure-step-marker-mobile-size);
+  --denhaag-step-marker-font-size: var(--denhaag-procedure-step-marker-mobile-font-size);
+
+  counter-reset: denhaag-step-marker;
+}
+
 /* copied from main branch, Process Steps component */
 .denhaag-procedure .denhaag-step-marker {
   position: relative;
@@ -79,10 +88,44 @@
   outline-style: unset;
 }
 
-.denhaag-procedure {
-  --denhaag-procedure-step-heading-line-height: var(--utrecht-heading-4-line-height);
-}
-
 .denhaag-procedure .denhaag-process-steps__step-heading {
   font-family: var(--utrecht-heading-font-family);
+}
+
+.denhaag-procedure .denhaag-step-marker::before {
+  counter-increment: denhaag-step-marker;
+  content: counter(denhaag-step-marker);
+}
+
+.denhaag-procedure .denhaag-link--external {
+  --denhaag-link-external-display: var(--denhaag-procedure-link-external-display);
+}
+
+.denhaag-procedure .denhaag-link--external .denhaag-link__icon {
+  --denhaag-link-icon-align: var(--denhaag-procedure-link-external-icon-align);
+
+  align-self: var(--denhaag-procedure-link-external-icon-align-self);
+  width: var(
+    --denhaag-procedure-link-external-icon-width
+  ) !important; /* because default uses --denhaag-link-icon-size for width and height */
+}
+
+.denhaag-procedure .denhaag-link--external .denhaag-icon {
+  width: var(--denhaag-procedure-link-external-denhaag-icon-width);
+  height: var(--denhaag-procedure-link-external-denhaag-icon-height);
+  padding-block-start: var(--denhaag-procedure-link-external-denhaag-icon-padding-block-start);
+}
+
+@media (max-width: 767px) {
+  .denhaag-procedure .denhaag-process-steps__step + .denhaag-process-steps__step::after {
+    outline: unset;
+  }
+}
+
+@media (min-width: 768px) {
+  .denhaag-procedure {
+    --denhaag-step-marker-size: var(--denhaag-procedure-step-marker-desktop-size);
+    --denhaag-step-marker-font-size: var(--denhaag-procedure-step-marker-desktop-font-size);
+    --denhaag-procedure-step-heading-font-size: var(--denhaag-typography-scale-lg-font-size);
+  }
 }
