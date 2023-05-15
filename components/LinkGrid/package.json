@@ -31,8 +31,5 @@
   "private": false,
   "publishConfig": {
     "access": "public"
-  },
-  "devDependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.37"
   }
 }
