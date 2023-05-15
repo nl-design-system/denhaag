@@ -237,10 +237,26 @@
         "menu": {
           "background-color": { "value": "{denhaag.color.green.5}" },
           "item": {
-            "color": { "value": "{denhaag.color.white.1}" },
+            "color": { "value": "{denhaag.color.white}" },
             "active": {
               "background-color": { "value": "{denhaag.color.green.3}" }
             }
+          }
+        },
+        "content": {
+          "section": {
+            "border-color": { "value": "{denhaag.color.blue.1}" }
+          }
+        },
+        "radio": {
+          "button": {
+            "color": { "value": "{denhaag.color.green.3}" }
+          }
+        },
+        "shortcuts": {
+          "background-color": { "value": "{denhaag.color.green.3}" },
+          "hover": {
+            "background-color": { "value": "{denhaag.color.green.2}" }
           }
         }
       }
