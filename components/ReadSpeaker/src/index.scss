@@ -340,8 +340,6 @@
     border-radius: var(--denhaag-readspeaker-border-radius);
     display: flex;
     flex-direction: column;
-
-    // Bleddyn
     max-width: 240px;
   }
 
@@ -366,7 +364,7 @@
     gap: var(--denhaag-readspeaker-settings-gap);
     padding-inline: var(--denhaag-readspeaker-settings-padding-inline);
     padding-block: var(--denhaag-readspeaker-settings-padding-block);
-    // Bleddyn
+
     width: 100%;
     outline: none;
     border: none;
@@ -470,35 +468,482 @@
 
 // Readspeaker Settings Dialog
 #rs-dialog[data-mode="settings"] {
+  width: fit-content !important;
+  max-width: 90vw !important;
   font-family: var(--denhaag-readspeaker-font-family);
   font-weight: var(--denhaag-readspeaker-font-weight);
   font-size: var(--denhaag-readspeaker-font-size);
   padding: 0;
+  border: 1px solid;
+  position: relative;
+
   > nav {
+    position: sticky;
+    top: 0;
     background-color: var(--denhaag-readspeaker-settings-dialog-menu-background-color);
+
     ul {
       list-style-type: none;
       padding-left: 0;
 
       li {
         padding: 12px;
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-top: 6px;
+        margin-bottom: 6px;
         color: var(--denhaag-readspeaker-settings-dialog-menu-item-color);
+        border-radius: 5px;
         &.active {
           background-color: var(--denhaag-readspeaker-settings-dialog-menu-item-active-background-color);
         }
+        &:hover {
+          background-color: var(--denhaag-readspeaker-settings-dialog-menu-item-active-background-color);
+          cursor: pointer;
+        }
       }
     }
+
+    .label-toggler {
+      display: none;
+    }
+  }
+
+  // Dialog close button top right
+  .buttons-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+
+  // Dialog resize arrows
+  .rs-dialog-resize {
+    display: none;
   }
 
   #rs-dialog-main {
     header {
       padding: 24px;
+      padding-bottom: 0;
+
       h1 {
         margin-top: 0;
+      }
+
+      // Text version header buttons
+      nav {
+        display: flex;
+        button {
+          background-color: var(--denhaag-readspeaker-button-background-color);
+          border: 1px solid var(--denhaag-readspeaker-border-color);
+          color: var(--denhaag-readspeaker-color);
+          display: grid;
+          place-items: center;
+
+          position: relative;
+          height: var(--denhaag-readspeaker-height);
+          width: var(--denhaag-readspeaker-button-width);
+
+          &:last-of-type {
+            border-radius: 0 var(--denhaag-readspeaker-border-radius) var(--denhaag-readspeaker-border-radius) 0;
+          }
+
+          &:hover {
+            --denhaag-readspeaker-color: var(--denhaag-readspeaker-hover-color);
+            --denhaag-readspeaker-button-background-color: var(--denhaag-readspeaker-hover-button-background-color);
+            --denhaag-readspeaker-border-color: var(--denhaag-readspeaker-hover-button-border-color);
+          }
+
+          &:active,
+          &:focus {
+            --denhaag-readspeaker-color: var(--denhaag-readspeaker-active-color);
+            --denhaag-readspeaker-button-background-color: var(--denhaag-readspeaker-active-button-background-color);
+            --denhaag-readspeaker-border-color: var(--denhaag-readspeaker-active-button-border-color);
+          }
+
+          &:focus-visible {
+            --denhaag-readspeaker-color: var(--denhaag-readspeaker-focus-color);
+            --denhaag-readspeaker-button-background-color: var(--denhaag-readspeaker-focus-button-background-color);
+            --denhaag-readspeaker-border-color: var(--denhaag-readspeaker-focus-button-border-color);
+
+            outline: var(--denhaag-readspeaker-focus-outline);
+            z-index: 1;
+          }
+
+          &[aria-expanded="true"] + .rsbtn_dropdown {
+            --denhaag-readspeaker-dropdown-display: block;
+          }
+
+          & ~ .rsbtn_player_item {
+            border-left: 0;
+
+            &:hover {
+              box-shadow: -1px 0px 0 0px var(--denhaag-readspeaker-border-color);
+            }
+
+            &:focus-visible {
+              border-left: 1px solid var(--denhaag-readspeaker-border-color);
+            }
+          }
+        }
+        .toolbar-play {
+        }
+
+        .toolbar-stop {
+        }
+
+        .toolbar-volume {
+        }
+
+        .toolbar-speed {
+        }
+
+        .toolbar-fontminus {
+        }
+
+        .toolbar-fontplus {
+        }
+
+        .toolbar-textsettings {
+        }
+
+        .toolbar-fullscreen {
+        }
+
+        .toolbar-close {
+        }
       }
     }
 
     #rs-dialog-contents {
+      padding: 24px;
+
+      h1,
+      h2,
+      h3,
+      h4,
+      legend {
+        font-size: 18px !important;
+      }
+
+      // Sections within the content
+      fieldset {
+        margin-top: 24px;
+        border-width: 1px;
+        border-color: var(--denhaag-readspeaker-settings-dialog-content-section-border-color);
+
+        select {
+          min-height: 28px;
+          padding: 6px;
+          border-radius: 5px;
+        }
+
+        // Section heading
+        legend {
+          font-weight: 600;
+        }
+
+        .rs-pref {
+          &.dimmed {
+            display: none;
+          }
+        }
+
+        label.rs-pref-header {
+          margin-top: 6px;
+          margin-bottom: 6px !important;
+        }
+
+        // Fieldset inputs
+        .rs-pref-option {
+          // Fieldset label
+
+          input[type="number"] {
+            width: 48px;
+            height: 24px;
+          }
+
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: flex-end;
+
+          label {
+            min-width: 200px !important;
+          }
+
+          // Radio button
+          input[type="radio"] {
+            position: relative;
+            margin-right: 12px;
+            width: 15px;
+            height: 15px;
+
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              border-radius: 50%;
+              width: 15px;
+              height: 15px;
+              pointer-events: none;
+            }
+
+            &::after {
+              content: "";
+              position: absolute;
+              top: 5px;
+              right: 0;
+              bottom: 0;
+              left: 5px;
+              border-radius: 50%;
+              width: 5px;
+              height: 5px;
+              pointer-events: none;
+            }
+
+            &:checked {
+              &::before {
+                background-color: var(--denhaag-readspeaker-settings-dialog-radio-button-color);
+              }
+              &::after {
+                background-color: #fff;
+              }
+            }
+          }
+        }
+
+        // Section within a settings container
+        .rs-pref {
+          position: relative;
+          border-width: 1px;
+          border-style: solid;
+          border-color: var(--denhaag-readspeaker-settings-dialog-content-section-border-color);
+          margin-bottom: 12px;
+          padding: 6px;
+
+          // Help icon
+          .rs-pref-info {
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            width: 20px;
+            height: 20px;
+            background-color: transparent;
+            border: 1px solid var(--denhaag-readspeaker-settings-dialog-shortcuts-background-color);
+            border-radius: 50%;
+
+            &::after {
+              content: "\003F";
+              color: var(--denhaag-readspeaker-settings-dialog-shortcuts-background-color);
+            }
+
+            &:hover {
+              cursor: pointer;
+              color: var(--denhaag-readspeaker-settings-dialog-shortcuts-hover-background-color);
+            }
+          }
+
+          // Help icon dialog / tooltip
+          aside {
+            display: none;
+            font-size: 12px;
+
+            &[aria-expanded="true"] {
+              display: flex;
+              padding: 12px;
+            }
+          }
+        }
+
+        // Color picker
+        .rs-pref-colorpicker {
+          margin-top: 12px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 12px;
+
+          input {
+            display: none;
+          }
+
+          label.rs-pref-color:not(.underline):not(.none) {
+            cursor: pointer;
+            display: inline-block;
+            height: 1em;
+            transition: transform 0.2s ease-in-out;
+            width: 1em;
+            border-radius: 5px;
+            &:last-child {
+              &::after {
+                width: 100%;
+                flex-grow: 1;
+              }
+            }
+          }
+
+          input.rs-pref-color:not(.underline):not(.none):checked + label {
+            border: 1px solid black;
+            transform: scale(1.2);
+          }
+
+          .underline {
+            justify-self: flex-end;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          .none {
+            justify-self: flex-end;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          .underline:checked + label {
+            text-decoration: underline;
+          }
+
+          .none:checked + label {
+            text-decoration: underline;
+          }
+
+          // Light green
+
+          // Light blue
+
+          // Light yellow
+
+          // Yellow
+
+          // White
+
+          // Black
+
+          // Firebrick Red
+
+          // Red
+        }
+
+        .rs-pref.shortcuts {
+          .rs-pref-shortcut {
+            display: grid;
+            width: 100%;
+            grid-template-columns: 1fr 96px 24px;
+            gap: 12px;
+
+            .edit-shortcut {
+              min-height: 28px;
+              display: flex;
+              flex-direction: row-reverse;
+              justify-content: center;
+              text-transform: capitalize;
+              margin-bottom: 6px;
+              background-color: var(--denhaag-readspeaker-settings-dialog-shortcuts-background-color);
+              border: 0;
+              outline: 0;
+              padding: 6px;
+              border-radius: 5px;
+              color: #fff;
+              &:hover {
+                cursor: pointer;
+                background-color: var(--denhaag-readspeaker-settings-dialog-shortcuts-hover-background-color);
+              }
+            }
+
+            .shift::before {
+              content: "\ee63";
+            }
+
+            .ctrl::before {
+              content: "\ee63";
+            }
+
+            .alt::before {
+              content: "\ee63";
+            }
+
+            .clear-shortcut {
+              background: none;
+              border: none;
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              &::before {
+                content: "\2573";
+                color: firebrick;
+              }
+            }
+          }
+        }
+
+        .rs-restore-options {
+          > div {
+            margin-top: 3px;
+            margin-bottom: 3px;
+          }
+          input[type="checkbox"] {
+            position: relative;
+            margin-right: 12px;
+
+            &::after {
+              content: "";
+              position: absolute;
+              top: -4px;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              width: 12px;
+              height: 12px;
+              padding: 4px;
+              border-radius: 5px;
+              background-color: #fff;
+              border: 1px solid black;
+            }
+
+            &:hover {
+              &::after {
+                border-color: var(--denhaag-readspeaker-settings-dialog-shortcuts-background-color);
+                cursor: pointer;
+              }
+            }
+          }
+
+          input[type="checkbox"]:checked {
+            &::after {
+              content: "\2714";
+              color: #fff;
+              background-color: var(--denhaag-readspeaker-settings-dialog-shortcuts-background-color);
+            }
+          }
+        }
+
+        .rs-pref-button {
+          min-height: 28px;
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: center;
+          margin-top: 6px;
+          margin-bottom: 6px;
+          background-color: var(--denhaag-readspeaker-settings-dialog-shortcuts-background-color);
+          border: 0;
+          outline: 0;
+          padding: 12px;
+          border-radius: 5px;
+          color: #fff;
+          &:hover {
+            cursor: pointer;
+            background-color: var(--denhaag-readspeaker-settings-dialog-shortcuts-hover-background-color);
+          }
+        }
+      }
     }
   }
 }
