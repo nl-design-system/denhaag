@@ -34,11 +34,11 @@ ol.denhaag-breadcrumb__list {
   padding-inline-end: var(--denhaag-breadcrumb-spacing, 8px);
 }
 
-.denhaag-breadcrumb__item:nth-last-child(2) {
+.denhaag-breadcrumb__item--mobile-item {
   --denhaag-breadcrumb-item-display: flex;
 }
 
-.denhaag-breadcrumb__item:nth-last-child(2) > .denhaag-breadcrumb__link::before {
+.denhaag-breadcrumb__item--mobile-item > .denhaag-breadcrumb__link::before {
   background: var(--denhaag-breadcrumb-link-color);
   clip-path: path(
     "M6.756 12.0899C6.43057 12.4153 5.90293 12.4153 5.57749 12.0899L0.577491 7.0899C0.421212 6.93362 0.333414 6.72166 0.333414 6.50065C0.333414 6.27964 0.421212 6.06767 0.577491 5.91139L5.57749 0.911394C5.90293 0.585957 6.43057 0.585957 6.756 0.911394C7.08144 1.23683 7.08144 1.76447 6.756 2.08991L3.17859 5.66732L12.8334 5.66732C13.2937 5.66732 13.6667 6.04041 13.6667 6.50065C13.6667 6.96089 13.2937 7.33398 12.8334 7.33398L3.17859 7.33398L6.756 10.9114C7.08144 11.2368 7.08144 11.7645 6.756 12.0899Z"
@@ -133,7 +133,7 @@ ol.denhaag-breadcrumb__list {
     background-color: var(--denhaag-breadcrumb-background-color, transparent);
   }
 
-  .denhaag-breadcrumb__item:not(:nth-last-child(2)) {
+  .denhaag-breadcrumb__item {
     --denhaag-breadcrumb-item-display: flex;
   }
 

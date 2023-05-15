@@ -37,6 +37,8 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({ navigationPath, showHome
   const listItems = navigationPath.map((item, index) => {
     const isFirstItem = index === 0;
     const isLastItem = index === nrBreadcrumbItems - 1;
+    // MobileItem is the item which shows as a backbutton on a small viewport. This is the last item, in case that item has a href. Otherwise, it's the last item with a href. (Without current page vs normal breadcrumbs)
+    const mobileItem = (isLastItem && item.href) || (!isLastItem && !navigationPath[index + 1].href);
     const shouldCollapseItem = nrBreadcrumbItems > 4 && !isFirstItem && index < nrBreadcrumbItems - 2;
     const contentNumber = index + 1;
 
@@ -44,6 +46,7 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({ navigationPath, showHome
       <BreadcrumbListItem
         hidden={shouldCollapseItem}
         key={contentNumber}
+        className={mobileItem ? 'denhaag-breadcrumb__item--mobile-item' : ''}
         itemProp="itemListElement"
         itemScope
         itemType="https://schema.org/ListItem"
