@@ -24,17 +24,6 @@
           "width": {
             "value": "0.625rem"
           }
-        },
-        "denhaag-icon": {
-          "width": {
-            "value": "{denhaag.space.inline.lg}"
-          },
-          "height": {
-            "value": "0.875rem"
-          },
-          "padding-block-start": {
-            "value": "{denhaag.space.block.3xs}"
-          }
         }
       },
       "step-heading": {
