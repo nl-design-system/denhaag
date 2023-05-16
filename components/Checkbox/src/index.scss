@@ -26,11 +26,11 @@
   align-items: center;
   width: var(--utrecht-custom-checkbox-size);
   aspect-ratio: 1;
-  background-color: var(--utrecht-custom-checkbox-background-color, var(--utrecht-form-input-background-color));
-  border-width: var(--utrecht-custom-checkbox-border-width, var(--utrecht-form-input-border-width));
+  background-color: var(--utrecht-custom-checkbox-background-color, var(--utrecht-form-control-background-color));
+  border-width: var(--utrecht-custom-checkbox-border-width, var(--utrecht-form-control-border-width));
   border-style: solid;
-  border-color: var(--utrecht-custom-checkbox-border-color, var(--utrecht-form-input-border-color));
-  border-radius: var(--utrecht-custom-checkbox-border-radius, var(--utrecht-form-input-border-radius));
+  border-color: var(--utrecht-custom-checkbox-border-color, var(--utrecht-form-control-border-color));
+  border-radius: var(--utrecht-custom-checkbox-border-radius, var(--utrecht-form-control-border-radius));
   box-sizing: border-box;
   cursor: pointer;
 }
@@ -56,8 +56,8 @@
 }
 
 .denhaag-checkbox.denhaag-checkbox--error .denhaag-checkbox__icon {
-  border-width: var(--utrecht-custom-checkbox-invalid-border-width, var(--utrecht-form-input-invalid-border-width));
-  border-color: var(--utrecht-custom-checkbox-invalid-border-color, var(--utrecht-form-input-invalid-border-color));
+  border-width: var(--utrecht-custom-checkbox-invalid-border-width, var(--utrecht-form-control-invalid-border-width));
+  border-color: var(--utrecht-custom-checkbox-invalid-border-color, var(--utrecht-form-control-invalid-border-color));
 }
 
 .denhaag-checkbox.denhaag-checkbox--error .denhaag-checkbox__icon .denhaag-icon {
