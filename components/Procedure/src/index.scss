@@ -110,15 +110,9 @@
   ) !important; /* because default uses --denhaag-link-icon-size for width and height */
 }
 
-.denhaag-procedure .denhaag-link--external .denhaag-icon {
-  width: var(--denhaag-procedure-link-external-denhaag-icon-width);
-  height: var(--denhaag-procedure-link-external-denhaag-icon-height);
-  padding-block-start: var(--denhaag-procedure-link-external-denhaag-icon-padding-block-start);
-}
-
 @media (max-width: 767px) {
   .denhaag-procedure .denhaag-process-steps__step + .denhaag-process-steps__step::after {
-    outline: unset;
+    left: calc(var(--denhaag-step-marker-size) / 2);
   }
 }
 
