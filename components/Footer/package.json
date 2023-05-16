@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/footer",
-  "version": "0.1.1-alpha.172",
+  "version": "0.1.1-alpha.173",
   "description": "A Footer component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -29,7 +29,7 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/responsive-content": "0.1.1-alpha.173",
+    "@gemeente-denhaag/responsive-content": "0.1.1-alpha.174",
     "@utrecht/component-library-css": "1.0.0-alpha.497"
   },
   "devDependencies": {
