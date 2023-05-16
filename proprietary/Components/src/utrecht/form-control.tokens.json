@@ -1,6 +1,6 @@
 {
   "utrecht": {
-    "form-input": {
+    "form-control": {
       "background-color": { "value": "{denhaag.color.white}" },
       "border-color": { "value": "{denhaag.color.grey.3}" },
       "border-radius": { "value": "{denhaag.border-radius}" },

@@ -49,7 +49,7 @@
 
 .denhaag-textarea__input:disabled::placeholder,
 .denhaag-textarea__input--disabled::placeholder {
-  color: var(--utrecht-form-input-disabled-color);
+  color: var(--utrecht-form-control-disabled-color);
 }
 
 .denhaag-textarea__input:invalid,
@@ -57,13 +57,13 @@
   @extend .utrecht-textarea--invalid;
 
   padding-inline-end: calc(
-    var(--utrecht-form-input-padding-inline-end) + var(--denhaag-form-input-icon-font-size) + 16px
+    var(--utrecht-form-control-padding-inline-end) + var(--denhaag-form-input-icon-font-size) + 16px
   );
 }
 
 .denhaag-textarea__icon {
-  padding-block-start: var(--utrecht-form-input-padding-block-start);
-  padding-inline-end: var(--utrecht-form-input-padding-inline-end);
+  padding-block-start: var(--utrecht-form-control-padding-block-start);
+  padding-inline-end: var(--utrecht-form-control-padding-inline-end);
   position: absolute;
   right: 0;
   top: 0;
@@ -74,5 +74,5 @@
 }
 
 .denhaag-textarea__invalid-icon {
-  color: var(--utrecht-form-input-invalid-border-color);
+  color: var(--utrecht-form-control-invalid-border-color);
 }

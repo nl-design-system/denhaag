@@ -48,7 +48,7 @@
 
 .denhaag-textfield__input:disabled::placeholder,
 .denhaag-textfield__input--disabled::placeholder {
-  color: var(--utrecht-form-input-disabled-color);
+  color: var(--utrecht-form-control-disabled-color);
 }
 
 .denhaag-textfield__input:invalid,
@@ -56,18 +56,18 @@
   @extend .utrecht-textbox--invalid;
 
   padding-inline-end: calc(
-    (var(--utrecht-form-input-padding-inline-end) * 2) + (var(--denhaag-form-input-icon-font-size) * 2)
+    (var(--utrecht-form-control-padding-inline-end) * 2) + (var(--denhaag-form-input-icon-font-size) * 2)
   );
 }
 
 .denhaag-textfield__icons {
   align-items: center;
-  color: var(--utrecht-form-input-color);
+  color: var(--utrecht-form-control-color);
   column-gap: 8px;
   display: flex;
   flex-direction: row;
   height: 100%;
-  padding-inline-end: var(--utrecht-form-input-padding-inline-end);
+  padding-inline-end: var(--utrecht-form-control-padding-inline-end);
   position: absolute;
   right: 0;
   top: 0;
@@ -78,11 +78,11 @@
 }
 
 .denhaag-textfield__invalid-icon {
-  color: var(--utrecht-form-input-invalid-border-color);
+  color: var(--utrecht-form-control-invalid-border-color);
 }
 
 .denhaag-textfield__input--disabled ~ .denhaag-textfield__icons svg,
 .denhaag-textfield__input:disabled ~ .denhaag-textfield__icons svg {
-  color: var(--utrecht-form-input-disabled-color);
+  color: var(--utrecht-form-control-disabled-color);
   cursor: var(--utrecht-action-disabled-cursor);
 }
