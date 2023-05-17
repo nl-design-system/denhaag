@@ -13,8 +13,10 @@
 /* procedure specific styling */
 .denhaag-procedure {
   --denhaag-procedure-step-heading-line-height: var(--utrecht-heading-4-line-height);
-  --denhaag-step-marker-size: var(--denhaag-procedure-step-marker-mobile-size);
+  --denhaag-process-steps-step-distance: 32px;
+  --denhaag-process-steps-sub-step-distance: 24px;
   --denhaag-step-marker-font-size: var(--denhaag-procedure-step-marker-mobile-font-size);
+  --denhaag-step-marker-size: var(--denhaag-procedure-step-marker-mobile-size);
 
   counter-reset: denhaag-step-marker;
 }
