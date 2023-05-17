@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/hero",
-  "version": "0.1.1-www-denhaag-nl.40",
+  "version": "0.1.1-www-denhaag-nl.41",
   "description": "A hero component with multiple variations",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "private": false,
