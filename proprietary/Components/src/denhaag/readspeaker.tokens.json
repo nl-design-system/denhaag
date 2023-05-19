@@ -410,7 +410,7 @@
           "height": { "value": "20px" },
           "background-color": { "value": "transparent" },
           "border": { "value": "none" },
-          "color": { "value": "{denhaag.color.grey.1}" },
+          "color": { "value": "{denhaag.color.green.4}" },
           "after": {
             "position": { "value": "absolute" },
             "top": { "value": "0" },
@@ -419,7 +419,7 @@
         },
         "tooltip": {
           "display": { "value": "none" },
-          "background-color": { "value": "d5e7d4" },
+          "background-color": { "value": "#d5e7d4" },
           "margin-block-start": { "value": "12px" },
           "padding-block": { "value": "12px" },
           "padding-inline": { "value": "12px" },
