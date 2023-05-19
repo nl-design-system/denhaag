@@ -844,7 +844,7 @@ dialog {
               padding-inline: var(--denhaag-readspeaker-settings-dialog-tooltip-padding-inline);
               span,
               p {
-                padding-inline: var(--denhaag-readspeaker-settings-dialog-tooltip-font-size) !important;
+                font-size: var(--denhaag-readspeaker-settings-dialog-tooltip-font-size) !important;
               }
             }
           }
