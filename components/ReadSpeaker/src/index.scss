@@ -560,7 +560,7 @@ dialog {
         }
         &:hover {
           background-color: var(--denhaag-readspeaker-settings-dialog-menu-item-active-background-color);
-          cursor: pointer;
+          cursor: var(--denhaag-readspeaker-hover-cursor);
         }
         label {
           font-size: var(--denhaag-readspeaker-settings-dialog-menu-item-typography-font-size);
@@ -749,7 +749,7 @@ dialog {
             position: var(--denhaag-readspeaker-settings-dialog-inputs-radio-position);
             margin-inline-end: var(--denhaag-readspeaker-settings-dialog-inputs-radio-margin-inline-end);
             margin-block-end: var(--denhaag-readspeaker-settings-dialog-inputs-radio-margin-block-end);
-            cursor: pointer;
+            cursor: var(--denhaag-readspeaker-hover-cursor);
 
             &::before {
               content: "";
@@ -827,7 +827,7 @@ dialog {
             }
 
             &:hover {
-              cursor: pointer;
+              cursor: var(--denhaag-readspeaker-hover-cursor);
               color: var(--denhaag-readspeaker-settings-dialog-shortcuts-background-color);
             }
           }
@@ -862,7 +862,7 @@ dialog {
           }
 
           label.rs-pref-color:not(.underline):not(.none) {
-            cursor: pointer;
+            cursor: var(--denhaag-readspeaker-hover-cursor);
             display: var(--denhaag-readspeaker-settings-dialog-inputs-colorpicker-label-display);
             height: var(--denhaag-readspeaker-settings-dialog-inputs-colorpicker-label-height);
             transition: var(--denhaag-readspeaker-settings-dialog-inputs-colorpicker-label-transition);
@@ -887,14 +887,14 @@ dialog {
           .underline {
             justify-self: flex-end;
             &:hover {
-              cursor: pointer;
+              cursor: var(--denhaag-readspeaker-hover-cursor);
             }
           }
 
           .none {
             justify-self: flex-end;
             &:hover {
-              cursor: pointer;
+              cursor: var(--denhaag-readspeaker-hover-cursor);
             }
           }
 
@@ -931,7 +931,7 @@ dialog {
               color: var(--denhaag-readspeaker-settings-dialog-shortcuts-edit-color);
 
               &:hover {
-                cursor: pointer;
+                cursor: var(--denhaag-readspeaker-hover-cursor);
                 background-color: var(--denhaag-readspeaker-settings-dialog-shortcuts-hover-background-color);
               }
             }
@@ -955,7 +955,7 @@ dialog {
               width: var(--denhaag-readspeaker-settings-dialog-shortcuts-clear-width);
               height: var(--denhaag-readspeaker-settings-dialog-shortcuts-clear-height);
 
-              cursor: pointer;
+              cursor: var(--denhaag-readspeaker-hover-cursor);
               &::after {
                 position: var(--denhaag-readspeaker-settings-dialog-shortcuts-clear-after-position);
                 top: var(--denhaag-readspeaker-settings-dialog-shortcuts-clear-after-top);
@@ -968,63 +968,64 @@ dialog {
 
         .rs-restore-options {
           > div {
-            margin-top: 3px;
-            margin-bottom: 3px;
-            display: block;
+            margin-block: var(--denhaag-readspeaker-settings-dialog-restore-item-margin-block);
           }
           input[type="checkbox"] {
-            position: relative;
-            margin-right: 16px;
+            position: var(--denhaag-readspeaker-settings-dialog-restore-item-checkbox-position);
+            margin-inline-end: var(--denhaag-readspeaker-settings-dialog-restore-item-checkbox-margin-inline-end);
 
             &::after {
               content: "";
-              position: absolute;
-              top: -4px;
-              right: 0;
-              bottom: 0;
-              left: 0;
-              width: 12px;
-              height: 12px;
-              padding: 4px;
-              border-radius: 5px;
-              background-color: #fff;
-              border: 1px solid;
+              position: var(--denhaag-readspeaker-settings-dialog-restore-item-checkbox-after-position);
+              top: var(--denhaag-readspeaker-settings-dialog-restore-item-checkbox-after-top);
+              right: var(--denhaag-readspeaker-settings-dialog-restore-item-checkbox-after-right);
+              bottom: var(--denhaag-readspeaker-settings-dialog-restore-item-checkbox-after-bottom);
+              left: var(--denhaag-readspeaker-settings-dialog-restore-item-checkbox-after-left);
+              width: var(--denhaag-readspeaker-settings-dialog-restore-item-checkbox-after-width);
+              height: var(--denhaag-readspeaker-settings-dialog-restore-item-checkbox-after-height);
+              padding: var(--denhaag-readspeaker-settings-dialog-restore-item-checkbox-after-padding);
+              border-radius: var(--denhaag-readspeaker-settings-dialog-restore-item-checkbox-after-border-radius);
+              background-color: var(--denhaag-readspeaker-settings-dialog-restore-item-checkbox-after-background-color);
+              border: var(--denhaag-readspeaker-settings-dialog-restore-item-checkbox-after-border);
               border-color: var(--denhaag-readspeaker-settings-dialog-shortcuts-background-color);
             }
 
             &:hover {
               &::after {
                 border-color: var(--denhaag-readspeaker-settings-dialog-shortcuts-background-color);
-                cursor: pointer;
+                cursor: var(--denhaag-readspeaker-hover-cursor);
               }
             }
-          }
 
-          input[type="checkbox"]:checked {
-            &::after {
-              content: "\2714";
-              color: #fff;
-              background-color: var(--denhaag-readspeaker-settings-dialog-shortcuts-background-color);
+            &:checked {
+              &::after {
+                content: "\2714";
+                color: var(--denhaag-readspeaker-settings-dialog-restore-item-checkbox-after-checked-color);
+                background-color: var(
+                  --denhaag-readspeaker-settings-dialog-restore-item-checkbox-after-checked-background-color
+                );
+              }
             }
           }
         }
 
         .rs-pref-button {
-          min-height: 28px;
-          display: flex;
-          flex-direction: row-reverse;
-          justify-content: center;
-          margin-top: 6px;
-          margin-bottom: 6px;
-          background-color: var(--denhaag-readspeaker-settings-dialog-shortcuts-background-color);
-          border: 0;
-          outline: 0;
-          padding: 12px;
-          border-radius: 5px;
-          color: #fff;
-          font-size: 18px;
+          background-color: var(--denhaag-readspeaker-settings-dialog-pref-button-background-color);
+          color: var(--denhaag-readspeaker-settings-dialog-pref-button-color);
+          min-height: var(--denhaag-readspeaker-settings-dialog-pref-button-min-height);
+          display: var(--denhaag-readspeaker-settings-dialog-pref-button-display);
+          flex-direction: var(--denhaag-readspeaker-settings-dialog-pref-button-flex-direction);
+          justify-content: var(--denhaag-readspeaker-settings-dialog-pref-button-justify-content);
+          margin-block: var(--denhaag-readspeaker-settings-dialog-pref-button-margin-block);
+          border: var(--denhaag-readspeaker-settings-dialog-pref-button-border);
+          border-radius: var(--denhaag-readspeaker-settings-dialog-pref-button-border-radius);
+          outline: var(--denhaag-readspeaker-settings-dialog-pref-button-outline);
+          padding-block: var(--denhaag-readspeaker-settings-dialog-pref-button-padding-block);
+          font-size: var(--denhaag-readspeaker-settings-dialog-pref-button-font-size);
+          padding-inline: var(--denhaag-readspeaker-settings-dialog-pref-button-padding-inline);
+
           &:hover {
-            cursor: pointer;
+            cursor: var(--denhaag-readspeaker-hover-cursor);
             background-color: var(--denhaag-readspeaker-settings-dialog-shortcuts-hover-background-color);
           }
         }
@@ -1039,24 +1040,24 @@ dialog {
 // Readspeaker Text version dialog
 #rs-dialog[data-mode="textmode"],
 #rs-dialog-fullscreen[data-mode="textmode"] {
-  width: 90vw;
-  max-width: 828px !important;
-  font-family: var(--denhaag-readspeaker-font-family);
-  font-weight: var(--denhaag-readspeaker-font-weight);
-  font-size: var(--denhaag-readspeaker-font-size);
-  padding: 24px;
-  border: 1px solid #d2d2d2;
-  position: relative;
+  position: var(--denhaag-readspeaker-text-dialog-position);
+  width: var(--denhaag-readspeaker-text-dialog-width);
+  max-width: var(--denhaag-readspeaker-text-dialog-max-width) !important;
+  padding-inline: var(--denhaag-readspeaker-text-dialog-padding-inline);
+  padding-block: var(--denhaag-readspeaker-text-dialog-padding-block);
+  border: var(--denhaag-readspeaker-text-dialog-border);
+  border-color: var(--denhaag-readspeaker-text-dialog-border-color);
+
   .rs-dialog-grabbable {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    display: var(--denhaag-readspeaker-text-dialog-content-display);
+    flex-direction: var(--denhaag-readspeaker-text-dialog-content-flex-direction);
+    align-items: var(--denhaag-readspeaker-text-dialog-content-align-items);
   }
 
   header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: var(--denhaag-readspeaker-text-dialog-conten-display);
+    justify-content: var(--denhaag-readspeaker-text-dialog-conten-justify-content);
+    align-items: var(--denhaag-readspeaker-text-dialog-conten-align-items);
 
     // Text version header buttons
     nav {
@@ -1160,43 +1161,46 @@ dialog {
 
 // Mobile & responsive version
 #rsmpl_container {
-  position: fixed;
-  bottom: 24px;
-  transform: translateY(100%);
-  transition: all 0.35s ease;
-  width: calc(100% - 10vw);
-  opacity: 0;
+  position: var(--denhaag-readspeaker-mobile-position);
+  bottom: var(--denhaag-readspeaker-mobile-bottom);
+  transform: var(--denhaag-readspeaker-mobile-transform);
+  transition: var(--denhaag-readspeaker-mobile-transition);
+  width: calc(100% - var(--denhaag-readspeaker-mobile-width-margin));
+  opacity: var(--denhaag-readspeaker-mobile-opacity);
 
   &.rs_visible {
-    transform: translateY(0px);
-    opacity: 1;
+    transform: var(--denhaag-readspeaker-mobile-visible-transform);
+    opacity: var(--denhaag-readspeaker-mobile-visible-opacity);
   }
 
   .rsmpl-tools {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: green;
-    padding: 6px;
-    border-radius: 5px;
-    min-height: 32px;
+    display: var(--denhaag-readspeaker-mobile-tools-display);
+    flex-direction: var(--denhaag-readspeaker-mobile-tools-flex-direction);
+    justify-content: var(--denhaag-readspeaker-mobile-tools-justify-content);
+    align-items: var(--denhaag-readspeaker-mobile-tools-align-items);
+    background-color: var(--denhaag-readspeaker-mobile-tools-background-color);
+    padding-inline: var(--denhaag-readspeaker-mobile-tools-padding-inline);
+    padding-block: var(--denhaag-readspeaker-mobile-tools-padding-block);
+    border-radius: var(--denhaag-readspeaker-mobile-tools-border-radius);
+    min-height: var(--denhaag-readspeaker-mobile-tools-min-height);
 
     > div {
       > button,
       .rsmpl-player-tool > button {
-        outline: none;
-        border: none;
-        padding: 6px 12px;
-        width: 100%;
-        color: #fff;
-        font-size: 18px;
-        font-weight: 530;
-        text-transform: capitalize;
-        background-color: transparent;
-        width: 32px;
-        height: 32px;
-        border: 1px solid black;
+        outline: var(--denhaag-readspeaker-mobile-button-outline);
+        padding-block: var(--denhaag-readspeaker-mobile-button-padding-block);
+        padding-inline: var(--denhaag-readspeaker-mobile-button-padding-inline);
+        width: var(--denhaag-readspeaker-mobile-button-width);
+        color: var(--denhaag-readspeaker-mobile-button-color);
+        font-size: var(--denhaag-readspeaker-mobile-button-font-size);
+        font-weight: var(--denhaag-readspeaker-mobile-button-font-weight);
+        text-transform: var(--denhaag-readspeaker-mobile-button-text-transform);
+        background-color: var(--denhaag-readspeaker-mobile-button-background-color);
+        max-width: var(--denhaag-readspeaker-mobile-button-max-width);
+        height: var(--denhaag-readspeaker-mobile-button-height);
+        border: var(--denhaag-readspeaker-mobile-button-border);
+        border-color: var(--denhaag-readspeaker-mobile-button-border-color);
+
         .rsbtn_btnlabel {
           display: none;
         }
@@ -1204,7 +1208,7 @@ dialog {
 
       &.rsmpl-tool {
         position: relative;
-        color: #fff;
+        color: var(--denhaag-readspeaker-mobile-button-color);
       }
 
       &.rsmpl-collapse {

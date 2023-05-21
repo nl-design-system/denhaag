@@ -1,6 +1,9 @@
 {
   "denhaag": {
     "readspeaker": {
+      "hover-cursor": {
+        "value": "pointer"
+      },
       "position": {
         "value": "relative"
       },
@@ -541,6 +544,104 @@
               "left": { "value": "0" }
             }
           }
+        },
+        "restore": {
+          "item": {
+            "margin-block": { "value": "3px" },
+            "checkbox": {
+              "position": { "value": "relative" },
+              "margin-inline-end": { "value": "16px" },
+              "after": {
+                "position": { "value": "absolute" },
+                "top": { "value": "-4px" },
+                "right": { "value": "0" },
+                "bottom": { "value": "0" },
+                "left": { "value": "0" },
+                "width": { "value": "12px" },
+                "height": { "value": "12px" },
+                "padding": { "value": "4px" },
+                "border-radius": { "value": "5px" },
+                "background-color": { "value": "{denhaag.color.white}" },
+                "border": { "value": "1px solid" },
+                "checked": {
+                  "color": { "value": "{denhaag.color.white}" },
+                  "background-color": { "value": "{denhaag.color.green.4}" }
+                }
+              }
+            }
+          }
+        },
+        "pref-button": {
+          "min-height": { "value": "28px" },
+          "display": { "value": "flex" },
+          "background-color": { "value": "{denhaag.color.green.4}" },
+          "flex-direction": { "value": "row-reverse" },
+          "justify-content": { "value": "center" },
+          "margin-block": { "value": "6px" },
+          "border": { "value": "0" },
+          "outline": { "value": "0" },
+          "padding-block": { "value": "12px" },
+          "padding-inline": { "value": "12px" },
+          "border-radius": { "value": "5px" },
+          "color": { "value": "{denhaag.color.white}" },
+          "font-size": { "value": "18px" }
+        }
+      },
+      "text-dialog": {
+        "width": { "value": "90vw" },
+        "max-width": { "value": "828px" },
+        "padding-block": { "value": "24px" },
+        "padding-inline": { "value": "24px" },
+        "border": { "value": "1px solid" },
+        "border-color": { "value": "{denhaag.color.grey.4}" },
+        "position": { "value": "relative" },
+        "content": {
+          "display": { "value": "flex" },
+          "flex-direction": { "value": "column" },
+          "align-items": { "value": "center" }
+        },
+        "header": {
+          "display": { "value": "flex" },
+          "justify-content": { "value": "space-between" },
+          "align-items": { "value": "center" }
+        }
+      },
+      "mobile": {
+        "position": { "value": "fixed" },
+        "bottom": { "value": " 24px" },
+        "transform": { "value": "translateY(100%)" },
+        "transition": { "value": "all 0.35s ease" },
+        "width-margin": { "value": "10vw" },
+        "opacity": { "value": "0" },
+        "visible": {
+          "transform": { "value": "translateY(0px)" },
+          "opacity": { "value": "1" }
+        },
+        "tools": {
+          "display": { "value": "flex" },
+          "flex-direction": { "value": "row" },
+          "justify-content": { "value": "space-evenly" },
+          "align-items": { "value": "center" },
+          "background-color": { "value": "{denhaag.color.green.4}" },
+          "padding-inline": { "value": "6px" },
+          "padding-block": { "value": "6px" },
+          "border-radius": { "value": "5px" },
+          "min-height": { "value": "32px" }
+        },
+        "button": {
+          "outline": { "value": "none" },
+          "padding-block": { "value": "6px" },
+          "padding-inline": { "value": "12px" },
+          "width": { "value": "100%" },
+          "color": { "value": "{denhaag.color.white}" },
+          "font-size": { "value": "18px" },
+          "font-weight": { "value": "530" },
+          "text-transform": { "value": "capitalize" },
+          "background-color": { "value": "transparent" },
+          "max-width": { "value": "32px" },
+          "height": { "value": "32px" },
+          "border": { "value": "1px solid black" },
+          "border-color": { "value": "{denhaag.color.black}" }
         }
       }
     }
