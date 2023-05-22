@@ -381,6 +381,10 @@
     }
   }
 
+  .rsbtn_tool_help {
+    display: none;
+  }
+
   .rsbtn_toolcontainer {
     order: 1;
   }
@@ -482,17 +486,22 @@
         }
       }
 
+      &.rsicn-play[data-rslang="title/arialabel:pause"]::after {
+        @include readspeaker-icon-styles(
+          'path("M9 6C9.55228 6 10 6.44772 10 7V17C10 17.5523 9.55228 18 9 18C8.44772 18 8 17.5523 8 17V7C8 6.44772 8.44772 6 9 6ZM15 6C15.5523 6 16 6.44772 16 7V17C16 17.5523 15.5523 18 15 18C14.4477 18 14 17.5523 14 17V7C14 6.44772 14.4477 6 15 6Z")'
+        );
+      }
+
       &.rsicn-font-minus::after {
         @include readspeaker-icon-styles(var(--denhaag-readspeaker-icons-font-minus));
       }
       &.rsicn-font-plus::after {
         @include readspeaker-icon-styles(var(--denhaag-readspeaker-icons-font-plus));
       }
-      &.rsicn-text-settings::after {
-        @include readspeaker-icon-styles(var(--denhaag-readspeaker-icons-font-settings));
-      }
-      &.rs-dialog-fullscreen {
+      &.rsicn-text-settings {
         display: none !important;
+      }
+      &.rs-dialog-fullscreen::after {
       }
       &.rsicn-cross::after {
         @include readspeaker-icon-styles(var(--denhaag-readspeaker-icons-close));
@@ -511,8 +520,6 @@ dialog {
 #rs-dialog[data-mode="settings"],
 #rs-dialog-fullscreen[data-mode="settings"] {
   position: var(--denhaag-readspeaker-settings-dialog-position);
-  width: var(--denhaag-readspeaker-settings-dialog-width) !important;
-  max-width: var(--denhaag-readspeaker-settings-dialog-max-width) !important;
   font-family: var(--denhaag-readspeaker-font-family);
   font-weight: var(--denhaag-readspeaker-font-weight);
   font-size: var(--denhaag-readspeaker-font-size);
@@ -930,6 +937,14 @@ dialog {
               border-radius: var(--denhaag-readspeaker-settings-dialog-shortcuts-edit-border-radius);
               color: var(--denhaag-readspeaker-settings-dialog-shortcuts-edit-color);
 
+              > span {
+                width: var(--denhaag-readspeaker-settings-dialog-shortcuts-edit-key-width);
+              }
+
+              &.unset {
+                opacity: 0;
+              }
+
               &:hover {
                 cursor: var(--denhaag-readspeaker-hover-cursor);
                 background-color: var(--denhaag-readspeaker-settings-dialog-shortcuts-hover-background-color);
@@ -945,7 +960,7 @@ dialog {
             }
 
             .alt::before {
-              @include readspeaker-icon-styles(var(--denhaag-readspeaker-icons-alt));
+              @include readspeaker-icon-styles(var(--denhaag-readspeaker-icons-option));
             }
 
             .clear-shortcut {
@@ -1042,11 +1057,15 @@ dialog {
 #rs-dialog-fullscreen[data-mode="textmode"] {
   position: var(--denhaag-readspeaker-text-dialog-position);
   width: var(--denhaag-readspeaker-text-dialog-width);
-  max-width: var(--denhaag-readspeaker-text-dialog-max-width) !important;
+  max-width: var(--denhaag-readspeaker-text-dialog-max-width);
   padding-inline: var(--denhaag-readspeaker-text-dialog-padding-inline);
   padding-block: var(--denhaag-readspeaker-text-dialog-padding-block);
   border: var(--denhaag-readspeaker-text-dialog-border);
   border-color: var(--denhaag-readspeaker-text-dialog-border-color);
+
+  #rs-dialog-player {
+    display: none;
+  }
 
   .rs-dialog-grabbable {
     display: var(--denhaag-readspeaker-text-dialog-content-display);
@@ -1129,14 +1148,16 @@ dialog {
 }
 
 .denhaag-readspeaker--icons {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+  position: var(--denhaag-readspeaker-icons-position-position);
+  width: var(--denhaag-readspeaker-icons-position-width);
+  height: var(--denhaag-readspeaker-icons-position-height);
+  padding-block: var(--denhaag-readspeaker-icons-position-padding-block);
+  padding-inline: var(--denhaag-readspeaker-icons-position-padding-inline);
+  margin-block: var(--denhaag-readspeaker-icons-position-margin-block);
+  margin-inline: var(--denhaag-readspeaker-icons-position-margin-inline);
+  overflow: var(--denhaag-readspeaker-icons-position-overflow);
+  clip: var(--denhaag-readspeaker-icons-position-clip);
+  rect: var(--denhaag-readspeaker-icons-position-rect);
 }
 
 @keyframes loading-denhaag-readspeaker {
@@ -1154,9 +1175,9 @@ dialog {
 }
 
 .rs-dialog-slider-dropdown {
-  border: none;
-  min-width: 150px !important;
-  border-radius: 5px;
+  border: var(--denhaag-readspeaker-settings-dialog-inputs-slider-border);
+  min-width: var(--denhaag-readspeaker-settings-dialog-inputs-slider-min-width) !important;
+  border-radius: var(--denhaag-readspeaker-settings-dialog-inputs-slider-border-radius);
 }
 
 // Mobile & responsive version
@@ -1236,28 +1257,35 @@ dialog {
         @include readspeaker-icon-styles(var(--denhaag-readspeaker-icons-download));
       }
 
-      // Pause btn
-      .rsbtn_pause[data-rslang="title/arialabel:pause"] .rsicn {
-        @include readspeaker-icon-styles(
-          'path("M9 6C9.55228 6 10 6.44772 10 7V17C10 17.5523 9.55228 18 9 18C8.44772 18 8 17.5523 8 17V7C8 6.44772 8.44772 6 9 6ZM15 6C15.5523 6 16 6.44772 16 7V17C16 17.5523 15.5523 18 15 18C14.4477 18 14 17.5523 14 17V7C14 6.44772 14.4477 6 15 6Z")'
-        );
-      }
-
       &.rsmpl-player {
-        display: flex;
-        gap: 12px;
-        align-items: center;
+        display: var(--denhaag-readspeaker-mobile-player-display);
+        gap: var(--denhaag-readspeaker-mobile-player-gap);
+        align-items: var(--denhaag-readspeaker-mobile-player-align-items);
+        transform: var(--denhaag-readspeaker-mobile-player-transform);
+
         > div {
           button {
-            width: 32px;
-            height: 32px;
+            width: var(--denhaag-readspeaker-mobile-player-buttons-width);
+            height: var(--denhaag-readspeaker-mobile-player-buttons-height);
           }
         }
         .rsmpl-playpause {
-          @include readspeaker-icon-styles(var(--denhaag-readspeaker-icons-play));
+          button[title="play"] {
+            @include readspeaker-icon-styles(var(--denhaag-readspeaker-icons-play));
+          }
+          button[title="Afspelen"] {
+            @include readspeaker-icon-styles(var(--denhaag-readspeaker-icons-play));
+          }
+          button[title="Pauze"] {
+            @include readspeaker-icon-styles(
+              'path("M9 6C9.55228 6 10 6.44772 10 7V17C10 17.5523 9.55228 18 9 18C8.44772 18 8 17.5523 8 17V7C8 6.44772 8.44772 6 9 6ZM15 6C15.5523 6 16 6.44772 16 7V17C16 17.5523 15.5523 18 15 18C14.4477 18 14 17.5523 14 17V7C14 6.44772 14.4477 6 15 6Z")'
+            );
+          }
         }
         .rsmpl-stop {
-          @include readspeaker-icon-styles(var(--denhaag-readspeaker-icons-stop));
+          button {
+            @include readspeaker-icon-styles(var(--denhaag-readspeaker-icons-stop));
+          }
         }
       }
 
@@ -1272,4 +1300,36 @@ dialog {
       width: 0 !important;
     }
   }
+}
+
+div#rs-dialog-fullscreen {
+  background-color: var(--denhaag-readspeaker-fullscreen-background-color);
+  position: var(--denhaag-readspeaker-fullscreen-position) !important;
+  top: var(--denhaag-readspeaker-fullscreen-top) !important;
+  right: var(--denhaag-readspeaker-fullscreen-right) !important;
+  left: var(--denhaag-readspeaker-fullscreen-left) !important;
+  bottom: var(--denhaag-readspeaker-fullscreen-bottom) !important;
+  width: var(--denhaag-readspeaker-fullscreen-width);
+  overflow-x: var(--denhaag-readspeaker-fullscreen-overflow-x) !important;
+
+  &.mobile {
+    > nav {
+      display: var(--denhaag-readspeaker-responsive-nav-display);
+    }
+    #rs-dialog-main {
+      padding-block: var(--denhaag-readspeaker-responsive-content-padding-block);
+      padding-inline: var(--denhaag-readspeaker-responsive-content-padding-inline);
+      width: var(--denhaag-readspeaker-responsive-content-width) !important;
+    }
+
+    .slider-label-start,
+    .slider-label-end {
+      display: none;
+    }
+  }
+}
+
+dialog.rs-dialog-esque {
+  width: var(--denhaag-readspeaker-dialog-size-width) !important;
+  max-width: var(--denhaag-readspeaker-dialog-size-max-width) !important;
 }

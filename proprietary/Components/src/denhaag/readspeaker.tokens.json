@@ -116,6 +116,18 @@
         }
       },
       "icons": {
+        "position": {
+          "position": { "value": "absolute" },
+          "width": { "value": "1px" },
+          "height": { "value": "1px" },
+          "padding-block": { "value": "0" },
+          "padding-inline": { "value": "0" },
+          "margin-block": { "value": "-1px" },
+          "margin-inline": { "value": "-1px" },
+          "overflow": { "value": "hidden" },
+          "clip": { "value": "rect(0, 0, 0, 0)" },
+          "border": { "value": "0" }
+        },
         "hamburger": {
           "value": "path('M4 7.5C4 6.94772 4.44772 6.5 5 6.5H19C19.5523 6.5 20 6.94772 20 7.5C20 8.05228 19.5523 8.5 19 8.5H5C4.44772 8.5 4 8.05228 4 7.5ZM4 12.5C4 11.9477 4.44772 11.5 5 11.5H19C19.5523 11.5 20 11.9477 20 12.5C20 13.0523 19.5523 13.5 19 13.5H5C4.44772 13.5 4 13.0523 4 12.5ZM4 17.5C4 16.9477 4.44772 16.5 5 16.5H19C19.5523 16.5 20 16.9477 20 17.5C20 18.0523 19.5523 18.5 19 18.5H5C4.44772 18.5 4 18.0523 4 17.5Z')"
         },
@@ -181,6 +193,9 @@
         },
         "dropdown": {
           "value": "path('M4.41107 7.41083C4.73651 7.08539 5.26414 7.08539 5.58958 7.41083L10.0003 11.8216L14.4111 7.41083C14.7365 7.08539 15.2641 7.08539 15.5896 7.41083C15.915 7.73626 15.915 8.2639 15.5896 8.58934L10.5896 13.5893C10.2641 13.9148 9.73651 13.9148 9.41107 13.5893L4.41107 8.58934C4.08563 8.2639 4.08563 7.73626 4.41107 7.41083Z')"
+        },
+        "clicklisten": {
+          "value": "url(#rs-clicklisten)"
         }
       },
       "listen-text": {
@@ -327,6 +342,10 @@
         }
       },
       "dialog": {
+        "size": {
+          "width": { "value": "100vw" },
+          "max-width": { "value": "828px" }
+        },
         "border": { "value": "1px solid" },
         "border-color": { "value": "{denhaag.color.grey.2}" },
         "font-sizes": {
@@ -365,7 +384,7 @@
       "settings-dialog": {
         "position": { "value": "relative" },
         "width": { "value": "90vw" },
-        "max-width": { "value": "90vw" },
+        "max-width": { "value": "828px" },
         "padding": {
           "block": { "value": "0" },
           "inline": { "value": "0" }
@@ -503,6 +522,11 @@
                 "border-color": { "value": "{denhaag.color.grey.4}" }
               }
             }
+          },
+          "slider": {
+            "border": { "value": "none" },
+            "min-width": { "value": "150px" },
+            "border-radius": { "value": "5px" }
           }
         },
         "shortcuts": {
@@ -530,7 +554,10 @@
             "padding-inline": { "value": "6px" },
             "padding-block": { "value": "6px" },
             "border-radius": { "value": "5px" },
-            "color": { "value": "{denhaag.color.white}" }
+            "color": { "value": "{denhaag.color.white}" },
+            "key": {
+              "width": { "value": "20px" }
+            }
           },
           "clear": {
             "position": { "value": "relative" },
@@ -628,6 +655,16 @@
           "border-radius": { "value": "5px" },
           "min-height": { "value": "32px" }
         },
+        "player": {
+          "display": { "value": "flex" },
+          "gap": { "value": "12px" },
+          "align-items": { "value": "center" },
+          "transform": { "value": "translateY(-2px)" },
+          "buttons": {
+            "width": { "value": "32px" },
+            "height": { "value": "32px" }
+          }
+        },
         "button": {
           "outline": { "value": "none" },
           "padding-block": { "value": "6px" },
@@ -642,6 +679,26 @@
           "height": { "value": "32px" },
           "border": { "value": "1px solid black" },
           "border-color": { "value": "{denhaag.color.black}" }
+        }
+      },
+      "fullscreen": {
+        "background-color": { "value": "{denhaag.color.white}" },
+        "position": { "value": "absolute" },
+        "top": { "value": "0" },
+        "right": { "value": "0" },
+        "left": { "value": "0" },
+        "bottom": { "value": "0" },
+        "width": { "value": "100vw" },
+        "overflow-x": { "value": "hidden" }
+      },
+      "responsive": {
+        "nav": {
+          "display": { "value": "none" }
+        },
+        "content": {
+          "padding-block": { "value": "12px" },
+          "padding-inline": { "value": "12px" },
+          "width": { "value": "100% " }
         }
       }
     }
