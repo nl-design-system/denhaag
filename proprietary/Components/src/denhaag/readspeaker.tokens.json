@@ -406,7 +406,7 @@
               "background-color": { "value": "{denhaag.color.green.3}" }
             },
             "typography": {
-              "font-size": { "value": "20px" },
+              "font-size": { "value": "{denhaag.typography.scale.base.font-size}" },
               "line-height": { "value": "26px" },
               "font-weight": { "value": "530" },
               "pointer-events": { "value": "none" }
@@ -462,7 +462,7 @@
             "min-width": { "value": "300px" },
             "height": { "value": "50px" },
             "bordercolor": { "value": "{denhaag.color.grey.4}" },
-            "font-size": { "value": "18px" },
+            "font-size": { "value": "{denhaag.typography.scale.base.font-size}" },
             "line-height": { "value": "27px" }
           },
           "radio": {
@@ -611,7 +611,7 @@
           "padding-inline": { "value": "12px" },
           "border-radius": { "value": "5px" },
           "color": { "value": "{denhaag.color.white}" },
-          "font-size": { "value": "18px" }
+          "font-size": { "value": "{denhaag.typography.scale.base.font-size}" }
         }
       },
       "text-dialog": {
@@ -671,7 +671,7 @@
           "padding-inline": { "value": "12px" },
           "width": { "value": "100%" },
           "color": { "value": "{denhaag.color.white}" },
-          "font-size": { "value": "18px" },
+          "font-size": { "value": "{denhaag.typography.scale.base.font-size}" },
           "font-weight": { "value": "530" },
           "text-transform": { "value": "capitalize" },
           "background-color": { "value": "transparent" },

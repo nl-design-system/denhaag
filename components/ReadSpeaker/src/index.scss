@@ -1067,6 +1067,14 @@ dialog {
     display: none;
   }
 
+  footer {
+    nav {
+      .buttons-close {
+        display: none;
+      }
+    }
+  }
+
   .rs-dialog-grabbable {
     display: var(--denhaag-readspeaker-text-dialog-content-display);
     flex-direction: var(--denhaag-readspeaker-text-dialog-content-flex-direction);
