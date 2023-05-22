@@ -502,6 +502,7 @@
         display: none !important;
       }
       &.rs-dialog-fullscreen::after {
+        @include readspeaker-icon-styles(var(--denhaag-readspeaker-icons-expand));
       }
       &.rsicn-cross::after {
         @include readspeaker-icon-styles(var(--denhaag-readspeaker-icons-close));

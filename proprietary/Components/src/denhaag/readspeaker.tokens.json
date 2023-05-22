@@ -196,6 +196,9 @@
         },
         "clicklisten": {
           "value": "url(#rs-clicklisten)"
+        },
+        "expand": {
+          "value": "url(#rs-expand)"
         }
       },
       "listen-text": {
