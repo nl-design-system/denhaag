@@ -47,7 +47,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Configurations can be found here: https://wrdev.readspeaker.com/adaptation/configurations
   window.rsConf = {
     general: {
-      uiLang: 'nl_nl', // document.documentElement.lang,
+      uiLang: document.documentElement.lang,
       nativeLanguages: true,
       saveLangVoice: true,
       translatedDisclaimer: true,
