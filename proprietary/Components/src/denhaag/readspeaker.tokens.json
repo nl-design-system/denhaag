@@ -25,6 +25,9 @@
       "height": {
         "value": "43px"
       },
+      "transition": {
+        "value": "352ms ease-in-out opacity"
+      },
       "font": {
         "family": {
           "value": "{denhaag.typography.sans-serif.font-family}"
@@ -702,6 +705,18 @@
           "padding-block": { "value": "12px" },
           "padding-inline": { "value": "12px" },
           "width": { "value": "100% " }
+        }
+      },
+      "popup": {
+        "position": { "value": "absolute" },
+        "background-color": { "value": "{denhaag.color.green.4}" },
+        "color": { "value": "{denhaag.color.white}" },
+        "max-width": { "value": "250px" },
+        "border-radius": { "value": "5px" },
+        "padding-block": { "value": "12px" },
+        "padding-inline": { "value": "12px" },
+        "button": {
+          "text-decoration": { "value": "underline" }
         }
       }
     }

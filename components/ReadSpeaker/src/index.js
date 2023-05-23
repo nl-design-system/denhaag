@@ -35,7 +35,7 @@ const initializedReadspeaker = () => {
   return true;
 };
 
-const doSomething = () => {
+const renderReadspeaker = () => {
   const rs = document.getElementById('denhaag-readspeaker');
 
   let width = 0;
@@ -56,53 +56,8 @@ window.addEventListener('DOMContentLoaded', () => {
     },
     cb: {
       ui: {
-        play: () => {
-          console.log('Play');
-        },
-        pause: () => {
-          console.log('Pause');
-        },
-        stop: () => {
-          console.log('Stop');
-        },
         open: () => {
-          console.log('Opened');
-          doSomething();
-        },
-        progresschanged: (e) => {
-          console.log('Progress changed', e);
-        },
-        settingsopened: () => {
-          console.log('Settings Opened');
-        },
-
-        audio: {
-          loaded: () => {
-            console.log('Audio loaded');
-          },
-          loaderror: () => {
-            console.log('Audio load error');
-          },
-          nosound: () => {
-            console.log('Audio no sound');
-          },
-          ended: () => {
-            console.log('Audio ended');
-          },
-          download: () => {
-            console.log('Audio download');
-          },
-        },
-        dialog: {
-          beforeopen: () => {
-            console.log('Before open dialog');
-          },
-          open: () => {
-            console.log('Open dialog');
-          },
-          close: () => {
-            console.log('Close dialog');
-          },
+          renderReadspeaker();
         },
       },
     },
