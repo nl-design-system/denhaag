@@ -173,12 +173,29 @@
 
 .denhaag-link-grid__item--hover {
   background-color: var(--denhaag-link-grid-item-hover-background-color);
+  cursor: pointer;
   .denhaag-link-grid__item-action {
     transform: translateX(12px);
   }
 }
 
 .denhaag-link-grid__item--focus {
+  background-color: var(--denhaag-link-grid-item-focus-background-color);
+  border: var(--denhaag-link-grid-item-focus-border) var(--denhaag-link-grid-item-focus-border-color) !important;
+  .denhaag-link-grid__item-action {
+    transform: translateX(12px);
+  }
+}
+
+.denhaag-link-grid__item:hover {
+  background-color: var(--denhaag-link-grid-item-hover-background-color);
+  cursor: pointer;
+  .denhaag-link-grid__item-action {
+    transform: translateX(12px);
+  }
+}
+
+.denhaag-link-grid__item:focus-visible {
   background-color: var(--denhaag-link-grid-item-focus-background-color);
   border: var(--denhaag-link-grid-item-focus-border) var(--denhaag-link-grid-item-focus-border-color) !important;
   .denhaag-link-grid__item-action {
