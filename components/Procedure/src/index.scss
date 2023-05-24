@@ -82,6 +82,15 @@
 }
 
 /* procedure specific styling */
+.denhaag-procedure__heading {
+  font-family: var(--denhaag-procedure-heading-font-family);
+  font-weight: var(--denhaag-procedure-heading-font-weight);
+  font-size: var(--denhaag-procedure-heading-font-size);
+  line-height: var(--denhaag-procedure-heading-line-height);
+  margin-block-end: var(--denhaag-procedure-heading-margin-block-end);
+  margin-block-start: var(--denhaag-procedure-heading-margin-block-start);
+}
+
 .denhaag-procedure .denhaag-process-steps__step-header {
   cursor: unset;
 }

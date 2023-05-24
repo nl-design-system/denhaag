@@ -7,6 +7,26 @@
       "font-size": {
         "value": "{denhaag.typography.scale.base.font-size}"
       },
+      "heading": {
+        "font-family": {
+          "value": "{denhaag.typography.sans-serif-alternate.font-family}"
+        },
+        "font-weight": {
+          "value": "{denhaag.typography.weight.bold}"
+        },
+        "font-size": {
+          "value": "{denhaag.typography.scale.2xl.font-size}"
+        },
+        "line-height": {
+          "value": "{denhaag.typography.scale.s.line-height}"
+        },
+        "margin-block-end": {
+          "value": "{denhaag.space.block.xl}"
+        },
+        "margin-block-start": {
+          "value": "0"
+        }
+      },
       "line-height": {
         "value": "24px"
       },
