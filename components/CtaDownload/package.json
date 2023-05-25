@@ -3,7 +3,7 @@
   "description": "Call To Action Download component",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
-  "version": "0.1.1-www-denhaag-nl.47",
+  "version": "0.1.1-www-denhaag-nl.48",
   "exports": {
     ".": {
       "types": "./dist/cjs/index.d.ts",
@@ -33,7 +33,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.47"
+    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.48"
   },
   "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
 }
