@@ -20,6 +20,9 @@ const initReadSpeaker = (companyId) => {
 };
 
 const initializedReadspeaker = () => {
+  const rs = document.getElementById('denhaag-readspeaker');
+  rs.style.setProperty('--denhaag-readspeaker-opacity', 1);
+
   /*global ReadSpeaker*/
   /*eslint no-undef: "error"*/
   if (typeof ReadSpeaker !== 'object') {

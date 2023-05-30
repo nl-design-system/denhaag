@@ -3,7 +3,6 @@
 .denhaag-readspeaker {
   position: var(--denhaag-readspeaker-position);
   accent-color: var(--denhaag-readspeaker-accent-color);
-  opacity: var(--denhaag-readspeaker-opacity, 0);
   transition: var(--denhaag-readspeaker-transition);
   border-radius: var(--denhaag-readspeaker-border-radius);
   display: flex;
@@ -14,6 +13,7 @@
   line-height: var(--denhaag-readspeaker-line-height);
   margin-block: var(--denhaag-readspeaker-margin-block);
   width: fit-content;
+  opacity: var(--denhaag-readspeaker-opacity, 1);
 
   a {
     color: var(--denhaag-readspeaker-color);
@@ -516,20 +516,12 @@ dialog#rs-dialog {
   border-color: var(--denhaag-readspeaker-dialog-border-color) !important;
   width: var(--denhaag-readspeaker-dialog-size-width) !important;
   max-width: var(--denhaag-readspeaker-dialog-size-max-width) !important;
-}
-
-// Readspeaker Settings Dialog
-#rs-dialog[data-mode="settings"],
-#rs-dialog-fullscreen[data-mode="settings"] {
-  position: var(--denhaag-readspeaker-settings-dialog-position);
   font-family: var(--denhaag-readspeaker-font-family);
   font-weight: var(--denhaag-readspeaker-font-weight);
   font-size: var(--denhaag-readspeaker-font-size);
-  padding-inline: var(--denhaag-readspeaker-settings-dialog-padding-inline);
-  padding-block: var(--denhaag-readspeaker-settings-dialog-padding-block);
 
-  .rs_splitbutton-container {
-    display: none;
+  .rs-dialog-resize {
+    display: none !important;
   }
 
   p,
@@ -541,6 +533,25 @@ dialog#rs-dialog {
   label[data-rslang="content:settings"] {
     font-size: var(--denhaag-readspeaker-dialog-font-sizes-title);
     margin-bottom: var(--denhaag-readspeaker-dialog-font-margins-title);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-size: var(--denhaag-readspeaker-dialog-font-sizes-heading);
+  }
+}
+
+// Readspeaker Settings Dialog
+#rs-dialog[data-mode="settings"],
+#rs-dialog-fullscreen[data-mode="settings"] {
+  position: var(--denhaag-readspeaker-settings-dialog-position);
+  padding-inline: var(--denhaag-readspeaker-settings-dialog-padding-inline);
+  padding-block: var(--denhaag-readspeaker-settings-dialog-padding-block);
+
+  .rs_splitbutton-container {
+    display: none;
   }
 
   .rs-pref-header {
@@ -720,6 +731,10 @@ dialog#rs-dialog {
           &.dimmed {
             display: none;
           }
+
+          &.no-legend {
+            margin-top: 40px;
+          }
         }
 
         label.rs-pref-header,
@@ -876,8 +891,10 @@ dialog#rs-dialog {
             height: var(--denhaag-readspeaker-settings-dialog-inputs-colorpicker-label-height);
             transition: var(--denhaag-readspeaker-settings-dialog-inputs-colorpicker-label-transition);
             width: var(--denhaag-readspeaker-settings-dialog-inputs-colorpicker-label-width);
-            border-radius: var(--denhaag-readspeaker-settings-dialog-inputs-colorpicker-label-border-radius);
             display: var(--denhaag-readspeaker-settings-dialog-inputs-colorpicker-label-display);
+            border: var(--denhaag-readspeaker-settings-dialog-inputs-colorpicker-border);
+            border-color: var(--denhaag-readspeaker-settings-dialog-inputs-colorpicker-border-color);
+            border-radius: var(--denhaag-readspeaker-settings-dialog-inputs-colorpicker-label-border-radius);
 
             &:last-child {
               &::after {
@@ -889,7 +906,6 @@ dialog#rs-dialog {
 
           input.rs-pref-color:not(.underline):not(.none):checked + label {
             border: var(--denhaag-readspeaker-settings-dialog-inputs-colorpicker-label-checked-border);
-            border-color: var(--denhaag-readspeaker-settings-dialog-inputs-colorpicker-label-checked-border-color);
             transform: scale(1.2);
           }
 
@@ -1056,7 +1072,9 @@ dialog#rs-dialog {
 
 // Readspeaker Text version dialog
 #rs-dialog[data-mode="textmode"],
-#rs-dialog-fullscreen[data-mode="textmode"] {
+#rs-dialog-fullscreen[data-mode="textmode"],
+#rs-dialog[data-mode="download"],
+#rs-dialog-fullscreen[data-mode="download"] {
   position: var(--denhaag-readspeaker-text-dialog-position);
   width: var(--denhaag-readspeaker-text-dialog-width);
   max-width: var(--denhaag-readspeaker-text-dialog-max-width);
@@ -1064,6 +1082,10 @@ dialog#rs-dialog {
   padding-block: var(--denhaag-readspeaker-text-dialog-padding-block);
   border: var(--denhaag-readspeaker-text-dialog-border);
   border-color: var(--denhaag-readspeaker-text-dialog-border-color);
+
+  #rs-dialog-contents {
+    height: auto !important;
+  }
 
   #rs-dialog-player {
     display: none;
@@ -1146,10 +1168,41 @@ dialog#rs-dialog {
       }
     }
   }
-  #rs-dialog-main {
-    font-family: var(--denhaag-readspeaker-font-family);
-    font-weight: var(--denhaag-readspeaker-font-weight);
-    font-size: var(--denhaag-readspeaker-font-size);
+}
+
+#rs-dialog[data-mode="download"],
+#rs-dialog-fullscreen[data-mode="download"] {
+  footer {
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+
+      button {
+        background-color: var(--denhaag-readspeaker-settings-dialog-pref-button-background-color);
+        color: var(--denhaag-readspeaker-settings-dialog-pref-button-color);
+        min-height: var(--denhaag-readspeaker-settings-dialog-pref-button-min-height);
+        display: var(--denhaag-readspeaker-settings-dialog-pref-button-display);
+        flex-direction: var(--denhaag-readspeaker-settings-dialog-pref-button-flex-direction);
+        justify-content: var(--denhaag-readspeaker-settings-dialog-pref-button-justify-content);
+        margin-block: var(--denhaag-readspeaker-settings-dialog-pref-button-margin-block);
+        border: var(--denhaag-readspeaker-settings-dialog-pref-button-border);
+        border-radius: var(--denhaag-readspeaker-settings-dialog-pref-button-border-radius);
+        outline: var(--denhaag-readspeaker-settings-dialog-pref-button-outline);
+        padding-block: var(--denhaag-readspeaker-settings-dialog-pref-button-padding-block);
+        font-size: var(--denhaag-readspeaker-settings-dialog-pref-button-font-size);
+        padding-inline: var(--denhaag-readspeaker-settings-dialog-pref-button-padding-inline);
+        cursor: pointer;
+        &::after {
+          display: none;
+        }
+      }
+
+      .rs-dialog-resize {
+        display: none;
+      }
+    }
   }
 }
 
@@ -1280,13 +1333,12 @@ dialog#rs-dialog {
           }
         }
         .rsmpl-playpause {
-          button[title="play"] {
-            @include readspeaker-icon-styles(var(--denhaag-readspeaker-icons-play));
-          }
+          button[title="play"],
           button[title="Afspelen"] {
             @include readspeaker-icon-styles(var(--denhaag-readspeaker-icons-play));
           }
-          button[title="Pauze"] {
+          button[title="Pauze"],
+          button[title="Pause"] {
             @include readspeaker-icon-styles(
               'path("M9 6C9.55228 6 10 6.44772 10 7V17C10 17.5523 9.55228 18 9 18C8.44772 18 8 17.5523 8 17V7C8 6.44772 8.44772 6 9 6ZM15 6C15.5523 6 16 6.44772 16 7V17C16 17.5523 15.5523 18 15 18C14.4477 18 14 17.5523 14 17V7C14 6.44772 14.4477 6 15 6Z")'
             );
@@ -1338,7 +1390,8 @@ div#rs-dialog-fullscreen {
     }
   }
 }
-.rspopup {
+.rspopup,
+#rs-screenreader-message {
   position: var(--denhaag-readspeaker-popup-position);
   background-color: var(--denhaag-readspeaker-popup-background-color);
   color: var(--denhaag-readspeaker-popup-color);
