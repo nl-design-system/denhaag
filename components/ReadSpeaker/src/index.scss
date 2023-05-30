@@ -1334,9 +1334,12 @@ dialog#rs-dialog {
         }
         .rsmpl-playpause {
           button[title="play"],
+          button[title="Play"],
           button[title="Afspelen"] {
             @include readspeaker-icon-styles(var(--denhaag-readspeaker-icons-play));
           }
+
+          button[title="pause"],
           button[title="Pauze"],
           button[title="Pause"] {
             @include readspeaker-icon-styles(
