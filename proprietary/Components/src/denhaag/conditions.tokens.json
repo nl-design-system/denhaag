@@ -30,9 +30,6 @@
         }
       },
       "label": {
-        "background-color": {
-          "value": "{denhaag.color.green.3}"
-        },
         "color": {
           "value": "{denhaag.color.white}"
         },
@@ -58,34 +55,21 @@
           "value": "5rem"
         }
       },
-      "label-before-after": {
+      "label-before": {
         "background-color": {
-          "value": "#f9fbf9"
+          "value": "{denhaag.color.green.3}"
         },
         "position": {
           "value": "absolute"
+        },
+        "clip-path": {
+          "value": "polygon(100% 0, 100% 50%, 50% 100%, 0% 50%, 0 0)"
         },
         "size": {
           "value": "3.5rem"
         },
         "bottom": {
           "value": "-72%"
-        }
-      },
-      "label-before": {
-        "left": {
-          "value": "-42%"
-        },
-        "transform": {
-          "value": "rotate(36deg)"
-        }
-      },
-      "label-after": {
-        "right": {
-          "value": "-42%"
-        },
-        "transform": {
-          "value": "rotate(-36deg)"
         }
       },
       "label-icon": {
