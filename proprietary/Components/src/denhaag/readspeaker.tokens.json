@@ -358,7 +358,7 @@
           "title": { "value": "32px" },
           "heading": { "value": "20px" },
           "sub-heading": { "value": "20px" },
-          "paragraph": { "value": "{denhaag.typography.scale.base.font-size}" }
+          "paragraph": { "value": "0.83em" }
         },
         "font-margins": {
           "title": { "value": "40px" }
@@ -517,6 +517,8 @@
             "display": { "value": "flex" },
             "flex-wrap": { "value": "wrap" },
             "gap": { "value": "12px" },
+            "border": { "value": "1px solid" },
+            "border-color": { "value": "{denhaag.color.grey.4}" },
             "label": {
               "display": { "value": "inline-block" },
               "height": { "value": "1em" },
@@ -524,8 +526,7 @@
               "width": { "value": "1em" },
               "border-radius": { "value": "5px" },
               "checked": {
-                "border": { "value": "1px solid" },
-                "border-color": { "value": "{denhaag.color.grey.4}" }
+                "border": { "value": "2px solid" }
               }
             }
           },
