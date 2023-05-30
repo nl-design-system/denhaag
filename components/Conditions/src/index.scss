@@ -12,7 +12,6 @@
 }
 
 .denhaag-conditions__label {
-  background-color: var(--denhaag-conditions-label-background-color);
   color: var(--denhaag-conditions-label-color);
   display: var(--denhaag-conditions-label-display);
   height: calc(var(--denhaag-conditions-label-height) - var(--denhaag-space-block-xs));
@@ -22,28 +21,18 @@
   width: var(--denhaag-conditions-label-width);
 }
 
-.denhaag-conditions__label::before,
-.denhaag-conditions__label::after {
-  background-color: var(--denhaag-conditions-label-before-after-background-color);
-  content: "";
-  position: var(--denhaag-conditions-label-before-after-position);
-  height: var(--denhaag-conditions-label-before-after-size);
-  width: var(--denhaag-conditions-label-before-after-size);
-  bottom: var(--denhaag-conditions-label-before-after-bottom);
-}
-
 .denhaag-conditions__label::before {
-  left: var(--denhaag-conditions-label-before-left);
-  transform: var(--denhaag-conditions-label-before-transform);
-}
-
-.denhaag-conditions__label::after {
-  right: var(--denhaag-conditions-label-after-right);
-  transform: var(--denhaag-conditions-label-after-transform);
+  content: "";
+  position: var(--denhaag-conditions-label-before-position);
+  background-color: var(--denhaag-conditions-label-before-background-color);
+  clip-path: var(--denhaag-conditions-label-before-clip-path);
+  height: calc(var(--denhaag-conditions-label-height) - var(--denhaag-space-block-xs));
+  width: var(--denhaag-conditions-label-width);
 }
 
 .denhaag-conditions__label-icon {
   margin-block-start: var(--denhaag-conditions-label-icon-margin-block-start);
+  z-index: 2;
 }
 
 .denhaag-conditions .denhaag-list__subheader {
@@ -98,9 +87,8 @@
     --denhaag-conditions-label-width: var(--denhaag-conditions-label-width-desktop);
   }
 
-  .denhaag-conditions__label::before,
-  .denhaag-conditions__label::after {
-    --denhaag-conditions-label-before-after-size: var(--denhaag-space-block-5xl);
+  .denhaag-conditions__label::before {
+    --denhaag-conditions-label-before-size: var(--denhaag-space-block-5xl);
   }
 
   .denhaag-conditions .denhaag-list__subheader {
