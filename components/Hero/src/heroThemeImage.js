@@ -12,11 +12,11 @@ const HeroThemeImage = (mainclass = '.denhaag-hero--theme-image') => {
   if (contentElementHeight > imageElementHeight) {
     const heightDifference = contentElementHeight - imageElementHeight;
     heroImageElement?.style.setProperty(
-      '--denhaag-hero--theme-image-height',
+      '--denhaag-hero-theme-image-height',
       `${imageElementHeight + heightDifference}px`,
     );
   } else {
-    heroImageElement?.style.setProperty('--denhaag-hero--theme-image-height', `${imageElementHeight}px`);
+    heroImageElement?.style.setProperty('--denhaag-hero-theme-image-height', `${imageElementHeight}px`);
   }
 };
 

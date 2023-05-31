@@ -157,7 +157,7 @@
 }
 
 .denhaag-hero--theme-image .denhaag-hero__container {
-  --denhaag-hero-theme-image-container-padding-inline: 0.5rem;
+  --denhaag-hero-theme-image-container-padding-inline: 1.5rem;
 
   align-items: var(--denhaag-hero-theme-image-container-align-items);
   display: var(--denhaag-hero-theme-image-container-display);
@@ -166,9 +166,9 @@
   margin-inline-end: var(--denhaag-hero-theme-image-container-margin-inline);
   margin-inline-start: var(--denhaag-hero-theme-image-container-margin-inline);
   max-width: var(--denhaag-hero-theme-image-container-max-width);
-  padding-inline-end: 1.5rem;
-  padding-inline-start: 1.5rem;
-  padding-block-end: 3rem;
+  padding-block-end: calc(2 * var(--denhaag-hero-theme-image-container-padding-inline));
+  padding-inline-end: var(--denhaag-hero-theme-image-container-padding-inline);
+  padding-inline-start: var(--denhaag-hero-theme-image-container-padding-inline);
 }
 
 .denhaag-hero--theme-image .denhaag-hero__content {
@@ -295,8 +295,8 @@
   .denhaag-hero--theme-image {
     --denhaag-hero-theme-image-image-height: var(--denhaag-hero-theme-image-image-height-s);
 
-    height: var(--denhaag-hero--theme-image-height);
-    margin-block-end: 48px;
+    height: var(--denhaag-hero-theme-image-height);
+    margin-block-end: var(--denhaag-hero-theme-image-margin-block-end);
   }
 
   .denhaag-hero--theme-image .denhaag-hero__container {
@@ -311,8 +311,8 @@
   .denhaag-hero--theme-image .denhaag-hero__content {
     --denhaag-hero-theme-image-content-width: var(--denhaag-hero-theme-image-content-width-s);
 
-    position: absolute;
-    bottom: 0;
+    position: var(--denhaag-hero-theme-image-content-position);
+    bottom: var(--denhaag-hero-theme-image-content-bottom);
   }
 }
 
