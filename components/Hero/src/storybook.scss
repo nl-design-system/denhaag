@@ -1,5 +1,5 @@
 /* This file is meant only for storybook overwrites. NOT FOR EXPORT! */
-.denhaag-hero {
+.denhaag-hero:not(.denhaag-hero--theme-image) {
   margin-block-start: -1rem;
   margin-block-end: -1rem;
   margin-inline-start: -1rem;

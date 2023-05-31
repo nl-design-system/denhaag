@@ -4,6 +4,7 @@ import pkg from "../../package.json";
 import readme from "../../README.md";
 import "../index.scss";
 import "../storybook.scss";
+import "../storybook";
 
 export const heroImage = (h, w, id = "photo-1513384312027-9fa69a360337") =>
   `https://images.unsplash.com/${id}?fit=crop&w=${w}&h=${h}`;
@@ -129,17 +130,110 @@ export const heroImage = (h, w, id = "photo-1513384312027-9fa69a360337") =>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
-### Theme Page - image
+### Theme Image - title only
 
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
-  <Story name="Theme Image">
+  <Story name="Theme Image - title only">
+    <section class="denhaag-hero denhaag-hero--theme-page denhaag-hero--theme-image">
+      <div class="denhaag-hero__container">
+        <div class="denhaag-hero__content">
+          <h1 class="denhaag-hero__title utrecht-heading-1">Lorem ipsum dolor sit amet consectetur </h1>
+        </div>
+      </div>
+      <img
+        class="denhaag-hero__image"
+        src="https://images.unsplash.com/photo-1593439426324-71b3f44ca9ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+        alt="auto in parkeervak"
+      />
+    </section>
+    <section class="page-container page-container--has-columns-first">
+      <div class="page-container__columns">
+        <section class="denhaag-columns denhaag-columns--single">
+          <div class="denhaag-column">
+            <p class="utrecht-paragraph">
+              Et inventore quod adipisci et quaerat aut praesentium in. In voluptatibus atque ex voluptate laudantium
+              deleniti et sed. Reiciendis qui alias placeat rerum. Quibusdam eveniet in soluta omnis similique. Eum ut
+              maxime illo voluptate.
+            </p>
+            <p class="utrecht-paragraph">
+              Corrupti quasi accusantium ducimus nostrum molestias autem est. Et iusto dolore recusandae officiis non.
+              Quae tempore sed saepe quo nihil labore. Repudiandae nisi nihil maxime deleniti. Eum voluptatem et
+              consequatur dolorem quae.
+            </p>
+          </div>
+        </section>
+        <div class="denhaag-article-meta denhaag-article-meta--responsive">
+          <p class="denhaag-article-meta__item">Gepubliceerd: 26 april 2023</p>
+          <p class="denhaag-article-meta__item">Gewijzigd: 31 mei 2023</p>
+        </div>
+      </div>
+    </section>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Theme Image - title + text
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Theme Image - title + text">
     <section class="denhaag-hero denhaag-hero--theme-page denhaag-hero--theme-image">
       <div class="denhaag-hero__container">
         <div class="denhaag-hero__content">
           <h1 class="denhaag-hero__title utrecht-heading-1">Lorem ipsum dolor sit amet consectetur </h1>
           <p class="utrecht-paragraph denhaag-hero__text">
-            Duis egestas, augue eget varius tellus arcu sollicitudin ipsum.
+            Duis egestas, augue eget varius feugiat, tellus arcu sollicitudin ipsum, vel interdum purus libero convallis
+            leo. Cras mollis vitae metus ac porttitor. Vestibulum interdum, diam sit amet malesuada commodo, tellus eros
+            viverra nunc, aliquam ultricies mi lorem nec lorem.
+          </p>
+        </div>
+      </div>
+      <img
+        class="denhaag-hero__image"
+        src="https://images.unsplash.com/photo-1593439426324-71b3f44ca9ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+        alt="auto in parkeervak"
+      />
+    </section>
+    <section class="page-container page-container--has-columns-first">
+      <div class="page-container__columns">
+        <section class="denhaag-columns denhaag-columns--single">
+          <div class="denhaag-column">
+            <p class="utrecht-paragraph">
+              Et inventore quod adipisci et quaerat aut praesentium in. In voluptatibus atque ex voluptate laudantium
+              deleniti et sed. Reiciendis qui alias placeat rerum. Quibusdam eveniet in soluta omnis similique. Eum ut
+              maxime illo voluptate.
+            </p>
+            <p class="utrecht-paragraph">
+              Corrupti quasi accusantium ducimus nostrum molestias autem est. Et iusto dolore recusandae officiis non.
+              Quae tempore sed saepe quo nihil labore. Repudiandae nisi nihil maxime deleniti. Eum voluptatem et
+              consequatur dolorem quae.
+            </p>
+          </div>
+        </section>
+        <div class="denhaag-article-meta denhaag-article-meta--responsive">
+          <p class="denhaag-article-meta__item">Gepubliceerd: 26 april 2023</p>
+          <p class="denhaag-article-meta__item">Gewijzigd: 31 mei 2023</p>
+        </div>
+      </div>
+    </section>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Theme Image - title + text + link
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Theme Image - title + text + link">
+    <section class="denhaag-hero denhaag-hero--theme-page denhaag-hero--theme-image">
+      <div class="denhaag-hero__container">
+        <div class="denhaag-hero__content">
+          <h1 class="denhaag-hero__title utrecht-heading-1">Lorem ipsum dolor sit amet consectetur </h1>
+          <p class="utrecht-paragraph denhaag-hero__text">
+            Duis egestas, augue eget varius feugiat, tellus arcu sollicitudin ipsum, vel interdum purus libero convallis
+            leo. Cras mollis vitae metus ac porttitor. Vestibulum interdum, diam sit amet malesuada commodo, tellus eros
+            viverra nunc, aliquam ultricies mi lorem nec lorem.
           </p>
           <a
             href="#example-link"
@@ -173,6 +267,28 @@ export const heroImage = (h, w, id = "photo-1513384312027-9fa69a360337") =>
         src="https://images.unsplash.com/photo-1593439426324-71b3f44ca9ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
         alt="auto in parkeervak"
       />
+    </section>
+    <section class="page-container page-container--has-columns-first">
+      <div class="page-container__columns">
+        <section class="denhaag-columns denhaag-columns--single">
+          <div class="denhaag-column">
+            <p class="utrecht-paragraph">
+              Et inventore quod adipisci et quaerat aut praesentium in. In voluptatibus atque ex voluptate laudantium
+              deleniti et sed. Reiciendis qui alias placeat rerum. Quibusdam eveniet in soluta omnis similique. Eum ut
+              maxime illo voluptate.
+            </p>
+            <p class="utrecht-paragraph">
+              Corrupti quasi accusantium ducimus nostrum molestias autem est. Et iusto dolore recusandae officiis non.
+              Quae tempore sed saepe quo nihil labore. Repudiandae nisi nihil maxime deleniti. Eum voluptatem et
+              consequatur dolorem quae.
+            </p>
+          </div>
+        </section>
+        <div class="denhaag-article-meta denhaag-article-meta--responsive">
+          <p class="denhaag-article-meta__item">Gepubliceerd: 26 april 2023</p>
+          <p class="denhaag-article-meta__item">Gewijzigd: 31 mei 2023</p>
+        </div>
+      </div>
     </section>
   </Story>
   {/* eslint-enable react/no-unknown-property */}

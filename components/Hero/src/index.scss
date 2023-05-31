@@ -166,8 +166,9 @@
   margin-inline-end: var(--denhaag-hero-theme-image-container-margin-inline);
   margin-inline-start: var(--denhaag-hero-theme-image-container-margin-inline);
   max-width: var(--denhaag-hero-theme-image-container-max-width);
-  padding-inline-end: var(--denhaag-hero-theme-image-container-padding-inline);
-  padding-inline-start: var(--denhaag-hero-theme-image-container-padding-inline);
+  padding-inline-end: 1.5rem;
+  padding-inline-start: 1.5rem;
+  padding-block-end: 3rem;
 }
 
 .denhaag-hero--theme-image .denhaag-hero__content {
@@ -293,6 +294,8 @@
 
   .denhaag-hero--theme-image {
     --denhaag-hero-theme-image-image-height: var(--denhaag-hero-theme-image-image-height-s);
+
+    height: var(--denhaag-hero--theme-image-height);
   }
 
   .denhaag-hero--theme-image .denhaag-hero__container {
