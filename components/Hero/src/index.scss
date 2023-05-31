@@ -296,6 +296,7 @@
     --denhaag-hero-theme-image-image-height: var(--denhaag-hero-theme-image-image-height-s);
 
     height: var(--denhaag-hero--theme-image-height);
+    margin-block-end: 48px;
   }
 
   .denhaag-hero--theme-image .denhaag-hero__container {
@@ -309,6 +310,9 @@
 
   .denhaag-hero--theme-image .denhaag-hero__content {
     --denhaag-hero-theme-image-content-width: var(--denhaag-hero-theme-image-content-width-s);
+
+    position: absolute;
+    bottom: 0;
   }
 }
 

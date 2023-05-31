@@ -1,16 +1,23 @@
-const HeroThemeImage = (classname = '.denhaag-hero--theme-image') => {
+const HeroThemeImage = (mainclass = '.denhaag-hero--theme-image') => {
   // Elements.
-  const imageElement = document.querySelector(`${classname} .denhaag-hero__image`);
-  const heroImageElement = document.querySelector(classname);
+  const imageElement = document.querySelector(`${mainclass} .denhaag-hero__image`);
+  const heroImageElement = document.querySelector(mainclass);
+  const contentElement = document.querySelector(`${mainclass} .denhaag-hero__content`);
 
-  // Get realtime image height.
+  // Get realtime element heights.
   const imageElementHeight = imageElement?.clientHeight;
-  console.log('imageElementHeight: ', imageElementHeight);
+  const contentElementHeight = contentElement?.clientHeight;
 
-  // Assign image height to css variable used by heroImageElement.
-  setTimeout(() => {
+  // Set height of heroImageElement.
+  if (contentElementHeight > imageElementHeight) {
+    const heightDifference = contentElementHeight - imageElementHeight;
+    heroImageElement?.style.setProperty(
+      '--denhaag-hero--theme-image-height',
+      `${imageElementHeight + heightDifference}px`,
+    );
+  } else {
     heroImageElement?.style.setProperty('--denhaag-hero--theme-image-height', `${imageElementHeight}px`);
-  }, 1);
+  }
 };
 
 export default HeroThemeImage;
