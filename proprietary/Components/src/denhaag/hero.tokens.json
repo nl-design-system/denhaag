@@ -396,6 +396,9 @@
           }
         },
         "content": {
+          "bottom": {
+            "value": "0"
+          },
           "clip-path": {
             "value": " polygon(0 0, 100% 0, 100% 97%, 0% 100%)"
           },
@@ -407,6 +410,9 @@
           },
           "padding-inline": {
             "value": "{denhaag.space.inline.2xl}"
+          },
+          "position": {
+            "value": "absolute"
           },
           "text-align": {
             "value": "left"
@@ -458,6 +464,9 @@
           "object-position": {
             "value": "center"
           }
+        },
+        "margin-block-end": {
+          "value": "{denhaag.space.block.4xl}"
         },
         "title": {
           "font-size": {
