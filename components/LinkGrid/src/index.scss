@@ -256,13 +256,10 @@
     @media (min-width: 1768px) {
       border-bottom: var(--denhaag-link-grid-item-default-border) var(--denhaag-link-grid-item-border-color);
 
-      &:first-child {
-        border-bottom: none;
+      &:nth-child(4) {
+        border-top: none;
       }
 
-      &:nth-child(-n + 3) {
-        border-top: var(--denhaag-link-grid-item-default-border) var(--denhaag-link-grid-item-border-color);
-      }
       &:nth-child(odd) {
         border-left: var(--denhaag-link-grid-item-no-border);
       }
