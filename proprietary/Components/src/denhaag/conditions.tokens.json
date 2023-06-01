@@ -62,8 +62,11 @@
         "position": {
           "value": "absolute"
         },
-        "clip-path": {
+        "clip-path-xs": {
           "value": "polygon(100% 0, 100% 50%, 50% 100%, 0% 50%, 0 0)"
+        },
+        "clip-path-m": {
+          "value": "polygon(100% 0, 100% 57.14%, 50% 100%, 0% 57.14%, 0 0)"
         },
         "size": {
           "value": "3.5rem"

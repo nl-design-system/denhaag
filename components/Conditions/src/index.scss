@@ -25,9 +25,13 @@
   content: "";
   position: var(--denhaag-conditions-label-before-position);
   background-color: var(--denhaag-conditions-label-before-background-color);
-  clip-path: var(--denhaag-conditions-label-before-clip-path);
+  clip-path: var(--denhaag-conditions-label-before-clip-path-xs);
   height: calc(var(--denhaag-conditions-label-height) - var(--denhaag-space-block-xs));
   width: var(--denhaag-conditions-label-width);
+
+  @media (min-width: 768px) {
+    clip-path: var(--denhaag-conditions-label-before-clip-path-m);
+  }
 }
 
 .denhaag-conditions__label-icon {
