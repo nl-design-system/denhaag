@@ -2000,7 +2000,7 @@
     "@gemeente-denhaag/baseprops" "0.2.3-alpha.312"
 
 "@gemeente-denhaag/card-authentication@file:components/CardAuthentication":
-  version "0.1.1-alpha.43"
+  version "0.1.1-alpha.44"
 
 "@gemeente-denhaag/design-tokens-components@0.2.3-alpha.312":
   version "0.2.3-alpha.312"
@@ -5597,10 +5597,24 @@
   resolved "https://registry.yarnpkg.com/@utrecht/component-library-css/-/component-library-css-1.0.0-alpha.498.tgz#e9d8ac56c1a1992044a85f82fd0df43ebd7854ce"
   integrity sha512-3E3UU9SV/EisefvziY72SH58RdnQ+5dOUZAXQLRWgbdbGbCOPVgqTxfkNpae8aIeKNtDwCuo2bEhU2XzwLtGuQ==
 
+"@utrecht/component-library-css@1.0.0-alpha.521":
+  version "1.0.0-alpha.521"
+  resolved "https://registry.yarnpkg.com/@utrecht/component-library-css/-/component-library-css-1.0.0-alpha.521.tgz#64c4c1cd09de8014bc9a9f74b9b40094a98096e5"
+  integrity sha512-81Jka0GKMiR7qDNmWlmVaPC6iN/mwAExZeRJQyAsUnh/fPXEnhTvC1ApVVM1uj6R1fDwcwq3iRZSsg6vX6r5Qg==
+
 "@utrecht/component-library-react@1.0.0-alpha.307":
   version "1.0.0-alpha.307"
   resolved "https://registry.yarnpkg.com/@utrecht/component-library-react/-/component-library-react-1.0.0-alpha.307.tgz#21e00cf7cdee85454187d29b8714ddec62549e1b"
   integrity sha512-FtmPNk0zcqZd811Zi9gEao5DTMYE90lo+mPwTGnjV4oQd9gdCnvB//jLDk0ZhieoghLk6G/oa/BWu8nGzhgUcQ==
+  dependencies:
+    clsx "1.2.1"
+    date-fns "2.30.0"
+    lodash.chunk "4.2.0"
+
+"@utrecht/component-library-react@1.0.0-alpha.330":
+  version "1.0.0-alpha.330"
+  resolved "https://registry.yarnpkg.com/@utrecht/component-library-react/-/component-library-react-1.0.0-alpha.330.tgz#5c1cc27b4b8f6977e88f24c8ffac1968a4f4419e"
+  integrity sha512-RQSd9S5SK+URnoaen2HQGv2VgB2NAbj40gpsEJFifLQTil5zewbqC9sRL5c8Q4eoa1+LtyGINeGxQ8qbAnodnQ==
   dependencies:
     clsx "1.2.1"
     date-fns "2.30.0"
