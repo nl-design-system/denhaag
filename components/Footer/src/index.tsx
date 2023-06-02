@@ -1,8 +1,8 @@
 import React from 'react';
 import BaseProps from '@gemeente-denhaag/baseprops';
+import { ButtonLink } from '@utrecht/component-library-react';
 import ResponsiveContent from '@gemeente-denhaag/responsive-content';
 import clsx from 'clsx';
-
 import './index.scss';
 
 export interface FooterListItemData {
@@ -36,6 +36,8 @@ export interface NewsLetterData {
 export interface ContactData {
   title: string;
   links: Array<FooterListItemData>;
+  buttonText?: string;
+  href?: string;
 }
 
 export interface FooterContactProps extends Omit<BaseProps, 'tabIndex' | 'children'> {
@@ -87,9 +89,9 @@ export const FooterContact: React.FC<FooterContactProps> = (props: FooterContact
               <h4 className="utrecht-heading-4 denhaag-link-group__caption">{props.newsletterData.title}</h4>
               <p className="utrecht-paragraph">{props.newsletterData.text}</p>
               <div className="denhaag-button-group">
-                <a href={props.newsletterData.href} className="denhaag-button denhaag-button--primary-action">
+                <ButtonLink appearance="primary-action-button" href={props.newsletterData.href}>
                   {props.newsletterData.buttonText}
-                </a>
+                </ButtonLink>
               </div>
             </div>
           )}
@@ -137,6 +139,13 @@ export const FooterContact: React.FC<FooterContactProps> = (props: FooterContact
                   </li>
                 ))}
               </ul>
+              {props.contactData.buttonText && props.contactData.href && (
+                <div className="denhaag-button-group">
+                  <ButtonLink appearance="primary-action-button" href={props.contactData.href}>
+                    {props.contactData.buttonText}
+                  </ButtonLink>
+                </div>
+              )}
             </div>
           )}
         </div>
