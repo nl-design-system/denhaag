@@ -29,14 +29,14 @@ export interface FooterSocialData {
 export interface NewsLetterData {
   title: string;
   text: string;
-  buttonText: string;
+  buttonLabel: string;
   href: string;
 }
 
 export interface ContactData {
   title: string;
   links: Array<FooterListItemData>;
-  buttonText?: string;
+  buttonLabel?: string;
   href?: string;
 }
 
@@ -90,7 +90,7 @@ export const FooterContact: React.FC<FooterContactProps> = (props: FooterContact
               <p className="utrecht-paragraph">{props.newsletterData.text}</p>
               <div className="denhaag-button-group">
                 <ButtonLink appearance="primary-action-button" href={props.newsletterData.href}>
-                  {props.newsletterData.buttonText}
+                  {props.newsletterData.buttonLabel}
                 </ButtonLink>
               </div>
             </div>
@@ -139,10 +139,10 @@ export const FooterContact: React.FC<FooterContactProps> = (props: FooterContact
                   </li>
                 ))}
               </ul>
-              {props.contactData.buttonText && props.contactData.href && (
+              {props.contactData.buttonLabel && props.contactData.href && (
                 <div className="denhaag-button-group">
                   <ButtonLink appearance="primary-action-button" href={props.contactData.href}>
-                    {props.contactData.buttonText}
+                    {props.contactData.buttonLabel}
                   </ButtonLink>
                 </div>
               )}
