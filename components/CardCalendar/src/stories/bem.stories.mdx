@@ -1,0 +1,68 @@
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+
+import "../index.scss";
+import pkg from "../../package.json";
+import readme from "../../README.md";
+
+<Meta
+  title="CSS/Navigation/Card Calendar"
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Design Tokens
+
+<DesignTokenDocBlock categoryName="Card Calendar" viewType="table" />
+
+## Stories
+
+### Default
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Default">
+    <div class="denhaag-card-calendar__wrapper">
+      <div class="denhaag-card-calendar__item">
+        <div class="denhaag-card-calendar__item__date">
+          <span>31 december 2022 tot 14 januari 2023</span>
+        </div>
+        <h4 class="denhaag-card-calendar__item__title">
+          <a href="/">In gesprek met stadsdeelhouder Segbroek</a>
+        </h4>
+        <p class="denhaag-card-calendar__item__content">Bespreek ideeen of wensen voor de buurt, wijk of stadsdeel.</p>
+        <div class="denhaag-card-calendar__item__footer">
+          <div class="denhaag-card-calendar__item__footer__time">
+            <span class="denhaag-card-calendar__item__footer__time__icon"></span>
+            <span class="denhaag-card-calendar__item__footer__time__text">12.00 tot 16.00</span>
+          </div>
+          <div class="denhaag-card-calendar__item__footer__action">
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="denhaag-icon"
+              focusable="false"
+              aria-hidden="true"
+              shape-rendering="auto"
+            >
+              <path
+                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
