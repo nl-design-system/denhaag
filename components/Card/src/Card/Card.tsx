@@ -1,19 +1,8 @@
 import React, { createRef } from 'react';
-import { Card as MaterialCard, Icon, Typography } from '@material-ui/core';
 import { ArrowRightIcon } from '@gemeente-denhaag/icons';
 import BaseProps from '@gemeente-denhaag/baseprops';
-import './mui-override.scss';
+import { Paragraph } from '@gemeente-denhaag/typography';
 import './card.scss';
-import {
-  cardArrowClasses,
-  cardCaseClasses,
-  cardClasses,
-  cardSubtitleClasses,
-  cardTitleClasses,
-  cardArchivedClasses,
-} from './bem-mapping';
-import { CardContent } from '../CardContent/CardContent';
-import { CardActions } from '../CardActions/CardActions';
 import clsx from 'clsx';
 
 export interface CardProps extends Omit<BaseProps, 'classes'> {
@@ -59,21 +48,12 @@ export interface CardProps extends Omit<BaseProps, 'classes'> {
  */
 export const Card: React.FC<CardProps> = ({ archived = false, ...props }: CardProps) => {
   const rootClassNames = clsx(
-    cardClasses.root,
-    props.variant === 'case' && cardCaseClasses.root,
-    archived === true && cardArchivedClasses.root,
+    'denhaag-card',
+    props.variant === 'case' && 'denhaag-card--case',
+    archived === true && 'denhaag-card--archived',
     props.className,
   );
-  const arrowClasses = cardArrowClasses;
-  const titleClasses = cardTitleClasses;
-  const subtitleClasses = cardSubtitleClasses;
   const linkRef = createRef<HTMLAnchorElement>();
-
-  const title = (
-    <a href={props.href} ref={linkRef}>
-      {props.title}
-    </a>
-  );
 
   const onClick = (event: React.MouseEvent<HTMLDivElement>) => {
     if (typeof props.onClick === 'function') {
@@ -85,31 +65,26 @@ export const Card: React.FC<CardProps> = ({ archived = false, ...props }: CardPr
   };
 
   return (
-    <MaterialCard className={rootClassNames} onClick={onClick}>
-      <div className="denhaag-card__wrapper">
+    // eslint-disable-next-line
+    <div className={rootClassNames} onClick={onClick}>
+      <a className="denhaag-card__wrapper" href={props.href} ref={linkRef}>
         <div className="denhaag-card__background"></div>
-        <CardContent>
+        <div className="denhaag-card__content">
           <div className="denhaag-card__text-wrapper">
-            <Typography classes={titleClasses} component="p">
-              {title}
-            </Typography>
-            <Typography classes={subtitleClasses} component="p">
-              {props.subTitle}
-            </Typography>
+            <Paragraph className="denhaag-card__title">{props.title}</Paragraph>
+            <Paragraph className="denhaag-card__subtitle">{props.subTitle}</Paragraph>
           </div>
-          <CardActions disableSpacing={true}>
+          <div className="denhaag-card__actions">
             {props.date && (
-              <Typography component="div" classes={subtitleClasses}>
+              <div className="denhaag-card__subtitle">
                 <time dateTime={props.date.toISOString()}>{props.date.toLocaleDateString()}</time>
-              </Typography>
+              </div>
             )}
-            <Icon classes={arrowClasses} aria-label="ArrowRightIcon">
-              <ArrowRightIcon />
-            </Icon>
-          </CardActions>
-        </CardContent>
-      </div>
-    </MaterialCard>
+            <ArrowRightIcon className="denhaag-card__arrow-icon" />
+          </div>
+        </div>
+      </a>
+    </div>
   );
 };
 
