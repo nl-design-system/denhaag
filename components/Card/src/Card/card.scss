@@ -5,7 +5,7 @@
 
 .denhaag-card--focus,
 .denhaag-card:focus-within {
-  outline: none;
+  outline: var(--denhaag-focus-border);
 }
 
 .denhaag-card--hover,
@@ -16,8 +16,10 @@
 
 .denhaag-card__wrapper {
   display: flex;
+  color: var(--denhaag-card-color);
   flex-direction: column;
   box-sizing: border-box;
+  text-decoration: none;
   height: var(--denhaag-card-height);
   border-width: var(--denhaag-card-border-width);
   border-style: solid;
@@ -29,12 +31,6 @@
   padding-inline-end: var(--denhaag-card-wrapper-padding-inline);
 }
 
-.denhaag-card--focus .denhaag-card__text-wrapper,
-.denhaag-card:focus-within .denhaag-card__text-wrapper {
-  position: relative;
-  outline: var(--denhaag-focus-border);
-}
-
 .denhaag-card__arrow {
   position: var(--denhaag-card-arrow-position);
   right: var(--denhaag-card-arrow-right);
@@ -43,12 +39,13 @@
 }
 
 .denhaag-card__title {
+  --utrecht-paragraph-font-family: var(--denhaag-typography-sans-serif-alternate-font-family);
+  --utrecht-paragraph-font-size: var(--denhaag-card-title-font-size);
+
   font-size: var(--denhaag-card-title-font-size);
   line-height: var(--denhaag-card-title-line-height);
   /* stylelint-disable-next-line value-no-vendor-prefix */
   display: -webkit-box;
-  text-decoration: none;
-  color: var(--denhaag-title-font-color);
   padding-block-end: var(--denhaag-card-title-padding-block);
   padding-block-start: var(--denhaag-card-title-padding-block);
   padding-inline-end: var(--denhaag-card-title-padding-block);
@@ -64,11 +61,9 @@
   color: inherit;
 }
 
-.denhaag-card__title a:link:focus {
-  outline: none;
-}
-
 .denhaag-card__subtitle {
+  --utrecht-space-around: 0;
+
   font-size: var(--denhaag-card-subtitle-font-size);
   font-weight: var(--denhaag-card-subtitle-font-weight);
   line-height: var(--denhaag-card-subtitle-line-height);
@@ -77,6 +72,23 @@
   padding-block-start: var(--denhaag-card-subtitle-padding-block);
   padding-inline-end: var(--denhaag-card-subtitle-padding-block);
   padding-inline-start: var(--denhaag-card-subtitle-padding-block);
+}
+
+.denhaag-card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  transform-style: preserve-3d;
+}
+
+.denhaag-card__actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.denhaag-card__arrow-icon {
+  margin-inline-start: auto;
 }
 
 .denhaag-card--case {
@@ -148,58 +160,36 @@
   background: var(--denhaag-card-case-primary-background-color);
 }
 
-.denhaag-card--case .denhaag-card__arrow {
-  position: var(--denhaag-card-arrow-position);
-  right: var(--denhaag-card-arrow-right);
-  left: var(--denhaag-card-arrow-left);
-  color: var(--denhaag-card-case-color);
+.denhaag-card--case .denhaag-card__arrow-icon {
+  color: var(--denhaag-card-case-arrow-color);
 }
 
-.denhaag-card--case.denhaag-card--hover .denhaag-card__arrow,
-.denhaag-card--case.denhaag-card--focus .denhaag-card__arrow,
-.denhaag-card--case:hover .denhaag-card__arrow,
-.denhaag-card--case:focus-within .denhaag-card__arrow {
-  color: var(--denhaag-card-case-active-color);
-}
-
-/* stylelint-disable-next-line no-descending-specificity */
-.denhaag-card--focus .denhaag-card__arrow,
-.denhaag-card:focus-within .denhaag-card__arrow {
-  outline: var(--denhaag-focus-border);
+.denhaag-card--case.denhaag-card--hover .denhaag-card__arrow-icon,
+.denhaag-card--case.denhaag-card--focus .denhaag-card__arrow-icon,
+.denhaag-card--case:hover .denhaag-card__arrow-icon,
+.denhaag-card--case:focus-within .denhaag-card__arrow-icon {
+  color: var(--denhaag-card-case-arrow-active-color);
 }
 
 .denhaag-card--case .denhaag-card__title {
-  font-weight: 700;
-  position: relative;
-  color: var(--denhaag-card-case-color);
+  --utrecht-paragraph-font-weight: var(--denhaag-card-title-font-weight);
+  --utrecht-paragraph-line-height: var(--denhaag-card-title-line-height);
+
+  color: var(--denhaag-card-case-title-color);
   padding-block-end: var(--denhaag-card-title-padding-block);
   padding-block-start: var(--denhaag-card-title-padding-block);
   padding-inline-end: var(--denhaag-card-title-padding-inline);
   padding-inline-start: var(--denhaag-card-title-padding-inline);
 }
 
-.denhaag-card--case.denhaag-card--hover .denhaag-card__title,
-.denhaag-card--case.denhaag-card--focus .denhaag-card__title,
-.denhaag-card--case:hover .denhaag-card__title,
-.denhaag-card--case:focus-within .denhaag-card__title {
-  color: var(--denhaag-card-case-active-color);
-}
-
 .denhaag-card--case .denhaag-card__subtitle {
-  font-weight: 500;
-  position: relative;
+  --utrecht-paragraph-line-height: var(--denhaag-card-subtitle-line-height);
+
   color: var(--denhaag-card-case-color);
   padding-block-start: var(--denhaag-card-subtitle-padding);
   padding-block-end: var(--denhaag-card-subtitle-padding);
   padding-inline-start: var(--denhaag-card-subtitle-padding);
   padding-inline-end: var(--denhaag-card-subtitle-padding);
-}
-
-.denhaag-card--case.denhaag-card--hover .denhaag-card__subtitle,
-.denhaag-card--case.denhaag-card--focus .denhaag-card__subtitle,
-.denhaag-card--case:hover .denhaag-card__subtitle,
-.denhaag-card--case:focus-within .denhaag-card__subtitle {
-  color: var(--denhaag-card-case-active-color);
 }
 
 .denhaag-card--case.denhaag-card--hover::before,
@@ -222,4 +212,7 @@
   --denhaag-card-case-primary-background-color: var(--denhaag-card-case-archived-primary-background-color);
   --denhaag-card-case-secondary-background-color: var(--denhaag-card-case-archived-secondary-background-color);
   --denhaag-card-case-color: var(--denhaag-card-case-archived-color);
+  --denhaag-card-case-title-color: var(--denhaag-card-case-archived-title-color);
+  --denhaag-card-case-arrow-color: var(--denhaag-card-case-archived-arrow-color);
+  --denhaag-card-case-arrow-active-color: var(--denhaag-card-case-archived-arrow-color);
 }
