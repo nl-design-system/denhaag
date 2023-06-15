@@ -39,9 +39,5 @@
   "peerDependencies": {
     "react": "^17.0.0"
   },
-  "devDependencies": {
-    "@gemeente-denhaag/avatar": "0.2.3-www-denhaag-nl.53",
-    "@gemeente-denhaag/iconbutton": "0.2.3-www-denhaag-nl.53"
-  },
   "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
 }
