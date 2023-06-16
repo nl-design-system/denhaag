@@ -1,21 +1,24 @@
-import React, { createRef } from 'react';
+import React from 'react';
 import { ArrowRightIcon } from '@gemeente-denhaag/icons';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import { Paragraph } from '@gemeente-denhaag/typography';
 import './card.scss';
 import clsx from 'clsx';
+import CardBackground from './CardBackground';
+import CardActions from './CardActions';
+import CardContent from './CardContent';
+import CardTextWrapper from './CardTextWrapper';
+import CardWrapper from './CardWrapper';
+import CardDateWrapper from './CardDateWrapper';
+import CardDate from './CardDate';
+import CardAction from './CardAction';
 
 export interface CardProps extends Omit<BaseProps, 'classes'> {
-  /**
-   * Callback fired when the Card is clicked.
-   */
-  onClick?: (event: React.MouseEvent<HTMLDivElement>) => void;
-
   /**
    * Determines the variant of the card
    * Variant can be either `basic` or `case`
    */
-  variant?: 'basic' | 'case';
+  variant?: 'subject' | 'case-active' | 'case-inactive';
 
   /**
    * Determines the title of the card
@@ -36,54 +39,40 @@ export interface CardProps extends Omit<BaseProps, 'classes'> {
    * Determines the url the card points to
    */
   href?: string;
-
-  /**
-   * Set to false to indicate an archived or inactive item
-   */
-  archived?: boolean;
 }
 
 /**
  * Primary UI component for user interaction
  */
-export const Card: React.FC<CardProps> = ({ archived = false, ...props }: CardProps) => {
+export const Card: React.FC<CardProps> = ({ title, subTitle, date, variant, className, href }: CardProps) => {
   const rootClassNames = clsx(
     'denhaag-card',
-    props.variant === 'case' && 'denhaag-card--case',
-    archived === true && 'denhaag-card--archived',
-    props.className,
+    variant === 'case-active' && 'denhaag-card--case',
+    variant === 'case-inactive' && 'denhaag-card--case denhaag-card--archived',
+    className,
   );
-  const linkRef = createRef<HTMLAnchorElement>();
-
-  const onClick = (event: React.MouseEvent<HTMLDivElement>) => {
-    if (typeof props.onClick === 'function') {
-      props.onClick(event);
-      event.stopPropagation();
-    } else if (linkRef.current !== null) {
-      linkRef.current.click();
-    }
-  };
 
   return (
-    // eslint-disable-next-line
-    <div className={rootClassNames} onClick={onClick}>
-      <a className="denhaag-card__wrapper" href={props.href} ref={linkRef}>
-        <div className="denhaag-card__background"></div>
-        <div className="denhaag-card__content">
-          <div className="denhaag-card__text-wrapper">
-            <Paragraph className="denhaag-card__title">{props.title}</Paragraph>
-            <Paragraph className="denhaag-card__subtitle">{props.subTitle}</Paragraph>
-          </div>
-          <div className="denhaag-card__actions">
-            {props.date && (
-              <div className="denhaag-card__subtitle">
-                <time dateTime={props.date.toISOString()}>{props.date.toLocaleDateString()}</time>
-              </div>
+    <div className={rootClassNames}>
+      <CardWrapper>
+        <CardBackground />
+        <CardContent>
+          <CardTextWrapper>
+            <Paragraph className="denhaag-card__title">{title}</Paragraph>
+            <Paragraph className="denhaag-card__subtitle">{subTitle}</Paragraph>
+          </CardTextWrapper>
+          <CardActions>
+            {date && (
+              <CardDateWrapper>
+                <CardDate dateTime={date.toISOString()}>{date.toLocaleDateString()}</CardDate>
+              </CardDateWrapper>
             )}
-            <ArrowRightIcon className="denhaag-card__arrow-icon" />
-          </div>
-        </div>
-      </a>
+            <CardAction href={href}>
+              <ArrowRightIcon className="denhaag-card__arrow-icon" />
+            </CardAction>
+          </CardActions>
+        </CardContent>
+      </CardWrapper>
     </div>
   );
 };

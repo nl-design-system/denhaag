@@ -24,7 +24,7 @@ Default.args = {
   title: 'Shrimp and Chorizo Paella',
   subTitle: 'This impressive paella is a perfect party dish and a fun meal to cook.',
   date: new Date('2020-01-21'),
-  href: 'https://github.com',
+  href: '#',
 };
 
 /**
@@ -34,15 +34,29 @@ export const CardWithoutDate: Story<CardProps> = Template.bind({});
 CardWithoutDate.args = {
   title: Default.args.title,
   subTitle: Default.args.subTitle,
+  href: '#',
+};
+
+/**
+ * Case active variant of Card component
+ */
+export const CaseActive: Story<CardProps> = Template.bind({});
+CaseActive.args = {
+  title: Default.args.title,
+  subTitle: Default.args.subTitle,
+  date: Default.args.date,
+  variant: 'case-active',
+  href: '#',
 };
 
 /**
  * Case variant of Card component
  */
-export const Case: Story<CardProps> = Template.bind({});
-Case.args = {
+export const CaseInactive: Story<CardProps> = Template.bind({});
+CaseInactive.args = {
   title: Default.args.title,
   subTitle: Default.args.subTitle,
   date: Default.args.date,
-  variant: 'case',
+  variant: 'case-inactive',
+  href: '#',
 };
