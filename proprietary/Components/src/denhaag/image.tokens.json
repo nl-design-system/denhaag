@@ -84,6 +84,9 @@
           "font-size": {
             "value": "{denhaag.typography.scale.s.font-size}"
           },
+          "font-weight": {
+            "value": "initial"
+          },
           "line-height": {
             "value": "1.5"
           }
