@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/conditions",
-  "version": "0.2.3-www-denhaag-nl.55",
+  "version": "0.2.3-www-denhaag-nl.56",
   "description": "A Conditions component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "private": false,
@@ -32,8 +32,8 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/iconbutton": "0.2.3-www-denhaag-nl.55",
-    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.55"
+    "@gemeente-denhaag/iconbutton": "0.2.3-www-denhaag-nl.56",
+    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.56"
   },
   "peerDependencies": {
     "react": "^17.0.0"
