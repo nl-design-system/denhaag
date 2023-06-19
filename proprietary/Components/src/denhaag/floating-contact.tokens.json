@@ -44,6 +44,11 @@
         },
         "icon-size": {
           "value": "1.75rem"
+        },
+        "title": {
+          "color": {
+            "value": "{denhaag.color.white}"
+          }
         }
       },
       "link": {
