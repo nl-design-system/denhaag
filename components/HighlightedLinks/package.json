@@ -3,7 +3,7 @@
   "description": "Highlighted links are important links at the top of your page.",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
-  "version": "0.1.1-alpha.139",
+  "version": "0.1.1-alpha.140",
   "exports": {
     ".": {
       "types": "./dist/cjs/index.d.ts",
@@ -29,6 +29,6 @@
   },
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "devDependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-alpha.316"
+    "@gemeente-denhaag/icons": "0.2.3-alpha.317"
   }
 }
