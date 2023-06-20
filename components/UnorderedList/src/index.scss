@@ -5,6 +5,14 @@
 
   color: var(--denhaag-unordered-list-color);
   margin-block-start: var(--denhaag-unordered-list-margin-block-start, 0);
+
+  .denhaag-link__label {
+    hyphens: var(--denhaag-unordered-list-link-label-hyphens);
+  }
+
+  .denhaag-link--with-icon {
+    display: var(--denhaag-unordered-list-link-with-icon-display);
+  }
 }
 
 .utrecht-paragraph + .denhaag-unordered-list {
