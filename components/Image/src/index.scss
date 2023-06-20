@@ -21,6 +21,7 @@
 .denhaag-image__figcaption {
   align-items: var(--denhaag-image-figcaption-align-items);
   display: var(--denhaag-image-figcaption-display);
+  font-weight: var(--denhaag-image-figcaption-font-weight);
   gap: var(--denhaag-image-figcaption-gap);
   grid-template-areas: var(--denhaag-image-figcaption-template-areas);
   justify-content: var(--denhaag-image-figcaption-justify-content);
@@ -31,7 +32,6 @@
   grid-area: image-figcaption;
   color: var(--denhaag-image-figcaption-text-color);
   font-size: var(--denhaag-image-figcaption-text-font-size);
-  font-weight: var(--denhaag-image-figcaption-text-font-weight);
   line-height: var(--denhaag-image-figcaption-text-line-height);
 }
 
