@@ -13,6 +13,10 @@
   .denhaag-link--with-icon {
     display: var(--denhaag-unordered-list-link-with-icon-display);
   }
+
+  .denhaag-link__icon {
+    flex: unset;
+  }
 }
 
 .utrecht-paragraph + .denhaag-unordered-list {
