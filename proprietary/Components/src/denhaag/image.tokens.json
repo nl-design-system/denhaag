@@ -68,6 +68,9 @@
             "value": "bottom"
           }
         },
+        "font-weight": {
+          "value": "{denhaag.typography.weight.regular}"
+        },
         "justify-content": {
           "value": "space-between"
         },
@@ -83,9 +86,6 @@
           },
           "font-size": {
             "value": "{denhaag.typography.scale.s.font-size}"
-          },
-          "font-weight": {
-            "value": "initial"
           },
           "line-height": {
             "value": "1.5"
