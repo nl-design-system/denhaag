@@ -61,4 +61,10 @@
       top: calc(var(--denhaag-sheet-overlay-desktop-top) + var(--denhaag-sheet-margin-block-start));
     }
   }
+
+  .denhaag-sheet-title {
+    --utrecht-paragraph-font-size: var(--denhaag-sheet-title-font-size);
+    --utrecht-paragraph-font-weight: var(--denhaag-sheet-title-font-weight);
+    --utrecht-paragraph-margin-block-end: var(--denhaag-sheet-title-margin-block-end);
+  }
 }

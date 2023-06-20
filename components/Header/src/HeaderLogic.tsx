@@ -17,7 +17,7 @@ import IconButton from '@gemeente-denhaag/iconbutton';
 import { CloseIcon, ArrowRightIcon, LogOutIcon } from '@gemeente-denhaag/icons';
 import { LinkGroup, LinkGroupList, LinkGroupListItem } from '@gemeente-denhaag/link-group';
 import { LanguageSwitcherLogic, LanguageSwitcherLogicProps } from '@gemeente-denhaag/language-switcher';
-import { Heading4 } from '@gemeente-denhaag/typography';
+import { Heading4, Paragraph } from '@gemeente-denhaag/typography';
 import { Button } from '@gemeente-denhaag/button';
 import './index.scss';
 
@@ -47,6 +47,7 @@ interface HeaderMobileMenuProps extends MobileMenuProps {
 
 interface MenuProps {
   label: string;
+  authorisedLoginLabel?: string;
   navigationGroups: Array<NavigationGroupProps>;
   CustomLink?: (props: AnchorHTMLAttributes<HTMLAnchorElement>) => JSX.Element;
 }
@@ -248,6 +249,9 @@ export const HeaderLogic: React.FC<HeaderLogicProps> = ({
                 {userprofileMenu.navigationGroups.map((group, key) => {
                   return <NavigationGroup {...group} key={key} />;
                 })}
+                {userprofileMenu.authorisedLoginLabel && (
+                  <Paragraph className="denhaag-sheet-title">{userprofileMenu.authorisedLoginLabel}</Paragraph>
+                )}
                 {logoutButton && (
                   <Button icon={<LogOutIcon />} onClick={logoutButton.onLogoutClick}>
                     {logoutButton.label}
