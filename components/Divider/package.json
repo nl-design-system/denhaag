@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/divider",
-  "version": "0.2.3-www-denhaag-nl.61",
+  "version": "0.2.3-www-denhaag-nl.62",
   "description": "A Divider component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "private": false,
@@ -33,14 +33,14 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/basedatadisplayprops": "0.2.3-www-denhaag-nl.61",
+    "@gemeente-denhaag/basedatadisplayprops": "0.2.3-www-denhaag-nl.62",
     "@material-ui/core": "4.12.4"
   },
   "peerDependencies": {
     "react": "^17.0.0"
   },
   "devDependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.61"
+    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.62"
   },
   "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
 }
