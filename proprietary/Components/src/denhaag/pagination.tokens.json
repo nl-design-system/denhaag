@@ -14,7 +14,7 @@
           "value": "{denhaag.typography.weight.regular}"
         }
       },
-      "margin-inline": {
+      "gap": {
         "value": "0.625rem"
       },
       "size": {
