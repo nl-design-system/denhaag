@@ -2,6 +2,8 @@ import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import Card, { CardProps } from '../index';
 import pkg from '../../package.json';
+import SubjectCard, { SubjectCardProps } from '../Card/SubjectCard';
+import CaseCard, { CaseCardProps } from '../Card/CaseCard';
 
 export default {
   title: 'React/Cards/Card',
@@ -14,12 +16,14 @@ export default {
   component: Card,
 } as Meta;
 
-const Template: Story<CardProps> = (args: CardProps) => <Card {...args} />;
+const Template: Story<SubjectCardProps> = (args: CardProps) => <SubjectCard {...args} />;
+
+const CaseTemplate: Story<CaseCardProps> = (args: CaseCardProps) => <CaseCard {...args} />;
 
 /**
  * Implementation of Card
  */
-export const Default: Story<CardProps> = Template.bind({});
+export const Default: Story<SubjectCardProps> = Template.bind({});
 Default.args = {
   title: 'Shrimp and Chorizo Paella',
   subTitle: 'This impressive paella is a perfect party dish and a fun meal to cook.',
@@ -30,7 +34,7 @@ Default.args = {
 /**
  * Default variant of Card component without date
  */
-export const CardWithoutDate: Story<CardProps> = Template.bind({});
+export const CardWithoutDate: Story<SubjectCardProps> = Template.bind({});
 CardWithoutDate.args = {
   title: Default.args.title,
   subTitle: Default.args.subTitle,
@@ -40,23 +44,22 @@ CardWithoutDate.args = {
 /**
  * Case active variant of Card component
  */
-export const CaseActive: Story<CardProps> = Template.bind({});
+export const CaseActive: Story<CaseCardProps> = CaseTemplate.bind({});
 CaseActive.args = {
   title: Default.args.title,
   subTitle: Default.args.subTitle,
   date: Default.args.date,
-  variant: 'case-active',
   href: '#',
 };
 
 /**
  * Case variant of Card component
  */
-export const CaseInactive: Story<CardProps> = Template.bind({});
+export const CaseInactive: Story<CaseCardProps> = CaseTemplate.bind({});
 CaseInactive.args = {
   title: Default.args.title,
   subTitle: Default.args.subTitle,
   date: Default.args.date,
-  variant: 'case-inactive',
+  active: false,
   href: '#',
 };
