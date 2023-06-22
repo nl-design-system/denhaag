@@ -22,7 +22,7 @@
       },
       "arrow": {
         "font-size": {
-          "value": "{denhaag.typography.scale.s.font-size}"
+          "value": "{denhaag.typography.scale.lg.font-size}"
         },
         "size": {
           "value": "{denhaag.space.block.lg}"
