@@ -173,7 +173,7 @@
   padding-inline-end: var(--denhaag-accordion-details-margin-inline-end);
   transition: max-height var(--denhaag-accordion-transition-duration, 0ms)
     var(--denhaag-accordion-transition-timing-function, ease);
-  display: none;
+  display: var(--denhaag-accordion-details-display);
 }
 
 .denhaag-accordion__details-content {

@@ -124,6 +124,7 @@
         }
       },
       "details": {
+        "display": { "value": "none" },
         "content": {
           "padding-block-start": {
             "value": 0
