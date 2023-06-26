@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/card-authentication",
-  "version": "0.1.1-www-denhaag-nl.60",
+  "version": "0.1.1-www-denhaag-nl.63",
   "description": "Authentication card.",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "private": false,

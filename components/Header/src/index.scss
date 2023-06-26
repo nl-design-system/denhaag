@@ -1,20 +1,81 @@
+@import "storybook";
+
 .denhaag-header {
-  &__content {
-    align-items: center;
-    border-bottom-color: var(--denhaag-header-border-bottom-color);
-    border-bottom-width: var(--denhaag-header-border-bottom-width);
-    border-bottom-style: solid;
-    display: flex;
-    flex-direction: row;
-    height: var(--denhaag-header-height);
-    justify-content: space-between;
+  background-color: var(--denhaag-header-background-color);
+  border-bottom: 1px solid var(--denhaag-header-border-color);
+  height: auto;
+  padding-block-end: var(--denhaag-header-padding-block);
+  padding-block-start: var(--denhaag-header-padding-block);
+  position: var(--denhaag-header-position);
+  top: var(--denhaag-header-top);
+  width: 100%;
+  z-index: 6;
 
-    @media (min-width: 768px) {
-      height: var(--denhaag-header-sm-height);
-    }
-
-    @media (min-width: 1024px) {
-      height: var(--denhaag-header-md-height);
-    }
+  @media (min-width: 768px) {
+    --denhaag-header-padding-block: 1.3125rem;
   }
+
+  @media (min-width: 1024px) {
+    --denhaag-header-padding-block: 1.4375rem;
+  }
+}
+
+.denhaag-header__container {
+  margin-inline-end: auto;
+  margin-inline-start: auto;
+  padding-inline-end: var(--denhaag-header-grid-gutter);
+  padding-inline-start: var(--denhaag-header-grid-gutter);
+  width: min(var(--denhaag-header-max-width), 100%);
+  max-width: var(--denhaag-header-max-width);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: 360px) {
+    --denhaag-header-max-width: calc(
+      100vw - (2 * (var(--denhaag-space-inline-xl) - var(--denhaag-header-grid-gutter)))
+    );
+  }
+
+  @media (min-width: 768px) {
+    --denhaag-header-grid-gutter: var(--denhaag-space-inline-md);
+    --denhaag-header-max-width: 40.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    --denhaag-header-grid-gutter: var(--denhaag-space-inline-xl);
+    --denhaag-header-max-width: 56.5rem;
+    --denhaag-header-hypens: none;
+
+    padding-inline-end: 0;
+    padding-inline-start: 0;
+  }
+
+  @media (min-width: 1280px) {
+    --denhaag-header-grid-gutter: var(--denhaag-space-inline-2xl);
+    --denhaag-header-max-width: 67.5rem;
+  }
+
+  @media (min-width: 1768px) {
+    --denhaag-header-grid-gutter: var(--denhaag-space-inline-3xl);
+    --denhaag-header-max-width: 98rem;
+  }
+
+  @media (min-width: 2160px) {
+    --denhaag-header-grid-gutter: var(--denhaag-space-inline-4xl);
+  }
+}
+
+.denhaag-header-logo {
+  height: var(--denhaag-header-logo-height);
+  width: var(--denhaag-header-logo-width);
+  object-fit: contain;
+}
+
+.denhaag-header__secondary {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: var(--denhaag-header-secondary-gap);
 }

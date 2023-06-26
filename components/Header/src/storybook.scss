@@ -1,0 +1,22 @@
+// Only for accessibility purposes.
+/* stylelint-disable-next-line */
+.sr-only-focus-visible {
+  position: absolute;
+  top: 5%;
+  left: -100%;
+
+  &:focus,
+  &:active {
+    background-color: #ffeb85;
+    color: #1e357e;
+    outline: 1px solid #2b0000;
+    outline-offset: 0;
+    text-decoration: none;
+    left: 0;
+    padding-block-end: 10px;
+    padding-block-start: 10px;
+    padding-inline-end: 10px;
+    padding-inline-start: 10px;
+    z-index: 1;
+  }
+}
