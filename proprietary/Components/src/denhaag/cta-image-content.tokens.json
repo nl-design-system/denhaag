@@ -4,7 +4,11 @@
       "position": { "value": "relative" },
       "background-color": { "value": "{denhaag.color.white}" },
       "border": { "value": "1px solid {denhaag.color.grey.2}" },
-      "display": { "value": "block" },
+      "display": { "value": "flex" },
+      "flex-direction": { "value": "column-reverse" },
+      "md": {
+        "flex-direction": { "value": "row-reverse" }
+      },
       "hover": {
         "box-shadow": { "value": "0 0.25rem 1rem 0 rgba(0, 0, 0, 0.16)" }
       },

@@ -3,6 +3,7 @@
   border: var(--denhaag-cta-image-content-border);
   background-color: var(--denhaag-cta-image-content-background-color);
   display: var(--denhaag-cta-image-content-display);
+  flex-direction: var(--denhaag-cta-image-content-flex-direction);
 }
 
 .denhaag-cta-image-content:hover,
@@ -63,7 +64,7 @@
 
 @media (min-width: 768px) {
   .denhaag-cta-image-content {
-    --denhaag-cta-image-content-display: flex;
+    flex-direction: var(--denhaag-cta-image-content-md-flex-direction);
   }
 
   .denhaag-cta-image-content__image {
