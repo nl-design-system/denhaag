@@ -23,7 +23,6 @@ export default class AnchorCollapses {
 
     this.windowEventsLoop();
     window.addEventListener('resize', async () => {
-      console.log('window resize');
       // Check for width, for mobile devices where the url-bar overlay counts as resize.
       if (ww !== window.innerWidth) {
         self.openOrCloseCollapses();
