@@ -1,3 +1,3 @@
-import Tooltips from './Tooltips.js';
+import DenhaagBreadcrumbs from './DenhaagBreadcrumbs';
 
-window.addEventListener('DOMContentLoaded', () => Tooltips());
+window.addEventListener('DOMContentLoaded', () => new DenhaagBreadcrumbs());
