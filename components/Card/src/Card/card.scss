@@ -90,6 +90,10 @@
   margin-inline-start: auto;
 }
 
+.denhaag-card__action-link:focus {
+  outline: none;
+}
+
 .denhaag-card__action-link::before {
   --denhaag-card-action-link-padding-block--before: var(
     --denhaag-card-case-action-link-padding-block-start,
