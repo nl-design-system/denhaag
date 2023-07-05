@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/dotindicator",
-  "version": "0.1.1-alpha.317",
+  "version": "0.1.1-alpha.318",
   "description": "A Dot Indicator component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -29,11 +29,11 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "0.2.3-alpha.317"
+    "@gemeente-denhaag/baseprops": "0.2.3-alpha.318"
   },
   "devDependencies": {
-    "@gemeente-denhaag/avatar": "0.2.3-alpha.317",
-    "@gemeente-denhaag/button": "0.2.3-alpha.317"
+    "@gemeente-denhaag/avatar": "0.2.3-alpha.318",
+    "@gemeente-denhaag/button": "0.2.3-alpha.318"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"
