@@ -8,7 +8,7 @@ import CardContent from './CardContent';
 import CardTextWrapper from './CardTextWrapper';
 import CardDateWrapper from './CardDateWrapper';
 import CardDate from './CardDate';
-import CardAction from './CardAction';
+import { CardAction, Link } from './CardAction';
 
 export interface SubjectCardProps {
   /**
@@ -30,12 +30,17 @@ export interface SubjectCardProps {
    * Determines the url the card points to
    */
   href?: string;
+
+  /**
+   * Custom Link component used for single-page apps.
+   */
+  Link?: Link;
 }
 
 /**
  * Primary UI component for user interaction
  */
-export const SubjectCard: React.FC<SubjectCardProps> = ({ title, subTitle, date, href }: SubjectCardProps) => {
+export const SubjectCard: React.FC<SubjectCardProps> = ({ title, subTitle, date, href, Link }: SubjectCardProps) => {
   return (
     <Card className="denhaag-subject-card">
       <CardContent>
@@ -49,7 +54,7 @@ export const SubjectCard: React.FC<SubjectCardProps> = ({ title, subTitle, date,
               <CardDate dateTime={date.toISOString()}>{date.toLocaleDateString()}</CardDate>
             </CardDateWrapper>
           )}
-          <CardAction href={href}>
+          <CardAction href={href} Action={Link}>
             <ArrowRightIcon className="denhaag-card__arrow-icon" />
           </CardAction>
         </CardActions>

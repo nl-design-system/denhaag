@@ -11,7 +11,7 @@ import CardTextWrapper from './CardTextWrapper';
 import CardWrapper from './CardWrapper';
 import CardDateWrapper from './CardDateWrapper';
 import CardDate from './CardDate';
-import CardAction from './CardAction';
+import { CardAction, Link } from './CardAction';
 
 export interface CaseCardProps {
   /**
@@ -38,12 +38,24 @@ export interface CaseCardProps {
    * Determines the card color
    */
   active?: boolean;
+
+  /**
+   * Custom Link component used for single-page apps.
+   */
+  Link?: Link;
 }
 
 /**
  * Primary UI component for user interaction
  */
-export const CaseCard: React.FC<CaseCardProps> = ({ title, subTitle, date, href, active = true }: CaseCardProps) => {
+export const CaseCard: React.FC<CaseCardProps> = ({
+  title,
+  subTitle,
+  date,
+  href,
+  active = true,
+  Link,
+}: CaseCardProps) => {
   const classNames = clsx('denhaag-case-card', !active && 'denhaag-case-card--archived');
 
   return (
@@ -61,7 +73,7 @@ export const CaseCard: React.FC<CaseCardProps> = ({ title, subTitle, date, href,
                 <CardDate dateTime={date.toISOString()}>{date.toLocaleDateString()}</CardDate>
               </CardDateWrapper>
             )}
-            <CardAction href={href}>
+            <CardAction href={href} Action={Link}>
               <ArrowRightIcon className="denhaag-card__arrow-icon" />
             </CardAction>
           </CardActions>
