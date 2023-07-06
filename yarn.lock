@@ -2000,7 +2000,7 @@
     "@gemeente-denhaag/baseprops" "0.2.3-alpha.312"
 
 "@gemeente-denhaag/card-authentication@file:components/CardAuthentication":
-  version "0.1.1-alpha.45"
+  version "0.1.1-alpha.49"
 
 "@gemeente-denhaag/design-tokens-components@0.2.3-alpha.312":
   version "0.2.3-alpha.312"

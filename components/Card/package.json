@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "@gemeente-denhaag/icons": "0.2.3-alpha.320",
+    "@gemeente-denhaag/link": "0.2.3-alpha.320",
     "@gemeente-denhaag/typography": "0.2.3-alpha.320"
   },
   "peerDependencies": {

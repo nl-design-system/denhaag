@@ -1,11 +1,10 @@
 import React, { AnchorHTMLAttributes } from 'react';
+import { CustomLink } from '@gemeente-denhaag/link';
 import clsx from 'clsx';
 import './index.scss';
 
-export type Link = (props: AnchorHTMLAttributes<HTMLAnchorElement>) => JSX.Element;
-
 export interface BreadcrumbLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
-  Link?: Link;
+  Link?: CustomLink;
 }
 
 export const BreadcrumbLink: React.FC<BreadcrumbLinkProps> = ({
