@@ -116,3 +116,5 @@ export const Link: OverridableComponent<LinkProps> = ({
 };
 
 export default Link;
+
+export * from './CustomLink';
