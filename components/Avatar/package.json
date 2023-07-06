@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/avatar",
-  "version": "0.2.3-alpha.320",
+  "version": "0.2.3-alpha.321",
   "description": "An Avatar component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -28,7 +28,7 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "0.2.3-alpha.320",
+    "@gemeente-denhaag/baseprops": "0.2.3-alpha.321",
     "@material-ui/core": "4.12.4"
   },
   "peerDependencies": {
