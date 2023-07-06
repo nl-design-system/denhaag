@@ -91,9 +91,6 @@
         "position": {
           "value": "relative"
         },
-        "max-width": {
-          "value": "16.5rem"
-        },
         "text-overflow": {
           "value": "ellipsis"
         },
@@ -193,6 +190,11 @@
           "size": {
             "value": "0.375rem"
           }
+        }
+      },
+      "truncated": {
+        "max-width": {
+          "value": "16.5rem"
         }
       }
     }

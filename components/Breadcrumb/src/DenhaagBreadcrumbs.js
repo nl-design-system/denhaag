@@ -1,4 +1,4 @@
-export default class DenhaagBreadcrumbs {
+class DenhaagBreadcrumbs {
   constructor(id = 'denhaag-breadcrumb') {
     this.breadcrumbWrapper = document.getElementById(id);
 
@@ -11,19 +11,17 @@ export default class DenhaagBreadcrumbs {
       item: `${id}__item`,
       hidden: `${id}__item--hidden`,
       text: `${id}__text`,
+      link: `${id}__link`,
+      truncate: `${id}__item--truncated`,
     };
 
     this.listWidth = 0;
-    this.listItems = this.breadcrumbWrapper.getElementsByClassName(this.classList.item);
-    this.listItemsWidth = this.calculateListItemWidth();
-    this.originalListItemsWidth = this.calculateListItemOriginalWidth();
-    this.currentItem = this.listItems[this.listItems.length - 1];
+    this.listItems = Array.from(this.breadcrumbWrapper.getElementsByClassName(this.classList.item));
+    this.currentPageItem = this.listItems[this.listItems.length - 1];
+    this.homePageItem = this.listItems[0];
 
-    // Need timeout otherwise we get the wrong widths?
-    setTimeout(() => {
-      this.handler();
-      this.positionTooltips();
-    }, 10);
+    this.windowWidth = window.innerWidth;
+    this.resizeEvents();
     this.windowEvents();
   }
 
@@ -31,145 +29,110 @@ export default class DenhaagBreadcrumbs {
    * Will fire window events.
    */
   windowEvents() {
-    const windowWidth = window.innerWidth;
     window.addEventListener('resize', () => {
       // Only on window-width change, otherwise iPhones will be buggy.
-      if (window.innerWidth !== windowWidth) {
+      if (window.innerWidth !== this.windowWidth) {
+        this.windowWidth = window.innerWidth;
         this.resizeEvents();
       }
     });
 
-    window.addEventListener('orientationchange', () => this.resizeEvents);
+    window.addEventListener('orientationchange', () => {
+      this.windowWidth = window.innerWidth;
+      this.resizeEvents();
+    });
   }
 
   /**
    *  Will be fired on window events.
    */
   resizeEvents() {
+    this.listWidth = Math.ceil(this.breadcrumbWrapper.querySelector(`.${this.classList.list}`).offsetWidth);
     this.handler();
     this.positionTooltips();
   }
 
   /**
    * Calculate the width and handle classes.
-   *
-   * @param {number} index Index of the element to set hiddenClassName.
    */
-  handler(index = 0) {
+  handler() {
     if (window.matchMedia('(min-width: 1024px)').matches) {
-      const list = this.breadcrumbWrapper.querySelector(`.${this.classList.list}`);
-
-      // Set width of the parent element.
-      this.listWidth = Math.ceil(list.offsetWidth);
-
-      if (this.originalListItemsWidth > this.listWidth && this.currentItem) {
-        this.currentItem.style.removeProperty('--denhaag-breadcrumb-text-max-width');
+      const items = this.listItems.filter((el) => el !== this.currentPageItem && el !== this.homePageItem);
+      if (items.length > 1) {
+        // Hide any items that are too big.
+        items.slice(0, Math.abs(items.length - 1)).forEach((item) => this.setItemHidden(item));
       }
 
-      if (this.listItemsWidth > this.listWidth || this.originalListItemsWidth > this.listWidth) {
-        // Fire methods when combined list-item width is bigger than list-width.
-        this.setHiddenClasses(index);
-      } else if (this.originalListItemsWidth < this.listWidth) {
-        this.removeHiddenClasses();
-        this.currentItem.style.setProperty('--denhaag-breadcrumb-text-max-width', '100%');
+      // Truncate parent item.
+      if (this.calculateListItemWidth() > this.listWidth) {
+        items[items.length - 1].classList.add(this.classList.truncate);
+      }
+
+      // Last resort: Truncate current page item.
+      if (this.calculateListItemWidth() > this.listWidth) {
+        this.currentPageItem.classList.add(this.classList.truncate);
+      }
+
+      // Last resort: Hide parent item if still to big.
+      if (this.calculateListItemWidth() > this.listWidth) {
+        items[items.length - 1].classList.remove(this.classList.truncate);
+        this.setItemHidden(items[items.length - 1]);
       }
     } else {
       // Remove all classes if set.
       this.removeHiddenClasses();
-      this.currentItem.style.removeProperty('--denhaag-breadcrumb-text-max-width');
+      this.removeTruncatedClasses();
+      this.currentPageItem.style.removeProperty('--denhaag-breadcrumb-text-max-width');
       this.resetTooltipPositions();
     }
   }
 
-  setWidths() {
-    this.listItemsWidth = this.calculateListItemWidth();
-    this.originalListItemsWidth = this.calculateListItemOriginalWidth();
+  /**
+   * Set width of list items combined.
+   * @returns {number} Combined width of list items.
+   */
+  calculateListItemWidth() {
+    return this.listItems.reduce((totalWidth, li) => {
+      return totalWidth + Math.ceil(li.offsetWidth);
+    }, 0);
   }
 
   /**
-   * Set width of all list-items combined.
+   * Set hidden attributes and className.
+   * @param {HTMLElement} item The HTML element to modify.
    */
-  calculateListItemWidth() {
-    if (!this.listItems) {
-      return 0;
-    }
-
-    return Math.ceil([...this.listItems].map((li) => li.getBoundingClientRect().width).reduce((a, b) => a + b, 0));
-  }
-
-  calculateListItemOriginalWidth() {
-    if (!this.listItems) {
-      return 0;
-    }
-
-    return Math.ceil(
-      [...this.listItems]
-        .map((li) => this.getOriginalWidth(li.querySelector(`.${this.classList.text}`)))
-        .reduce((a, b) => a + b, 0),
-    );
+  setItemHidden(item) {
+    item.classList.add(this.classList.hidden);
+    item
+      .querySelector(`.${this.classList.link}`)
+      .setAttribute('aria-label', item.querySelector(`.${this.classList.text}`).textContent);
   }
 
   /**
    * Remove all Hidden classes.
    */
   removeHiddenClasses() {
-    Array.from(this.breadcrumbWrapper.getElementsByClassName(this.classList.hidden)).forEach((item) =>
-      item.classList.remove(this.classList.hidden),
+    Array.from(this.breadcrumbWrapper.getElementsByClassName(this.classList.hidden)).forEach((item) => {
+      item.classList.remove(this.classList.hidden);
+      item.querySelector(`.${this.classList.link}`).removeAttribute('aria-label');
+    });
+  }
+
+  /**
+   * Remove all truncate classes.
+   */
+  removeTruncatedClasses() {
+    Array.from(this.breadcrumbWrapper.getElementsByClassName(this.classList.truncate)).forEach((item) =>
+      item.classList.remove(this.classList.truncate),
     );
-  }
-
-  /**
-   * Set hidden className based on index.
-   *
-   * @param {number} index Index of the item to update and to identify the following (if exists).
-   */
-  setHiddenClasses(index = 0) {
-    const listItems = Array.from(this.listItems).slice(1, -1);
-
-    if (listItems.length === 0) {
-      return;
-    }
-
-    if (!listItems[index].classList.contains(this.classList.hidden) && listItems[index] !== this.currentItem) {
-      listItems[index].classList.add(this.classList.hidden);
-    }
-
-    if (index < listItems.length - 1) {
-      this.setWidths();
-      this.handler(index + 1);
-    }
-  }
-
-  /**
-   * Get original width.
-   *
-   * @param {HTMLElement} element The element to check the original width from.
-   * @return {number}
-   */
-  getOriginalWidth(element) {
-    if (!element) {
-      return 0;
-    }
-
-    // Temporarily remove the max-width property
-    element.style.maxWidth = '100%';
-
-    // Get the original width
-    const originalWidth = element.offsetWidth;
-
-    // Restore the max-width property
-    element.style.maxWidth = null;
-
-    return originalWidth;
   }
 
   /**
    * Position tooltips.
    */
   positionTooltips() {
-    const tooltips = Array.from(this.listItems)?.filter((item) => item.classList.contains(this.classList.hidden));
-
-    tooltips?.forEach((el) => this.setTooltipPosition(el));
+    const tooltips = this.listItems.filter((item) => item.classList.contains(this.classList.hidden));
+    tooltips.forEach((el) => this.setTooltipPosition(el));
   }
 
   /**
@@ -177,7 +140,9 @@ export default class DenhaagBreadcrumbs {
    * @param {HTMLElement} el The HTML element to calculate and update.
    */
   setTooltipPosition(el) {
-    const calculateTooltipPositioning = Math.round(-1 * (el.querySelector(`.${this.classList.text}`).offsetWidth / 2));
+    const calculateTooltipPositioning = Math.round(
+      -1 * (el.querySelector(`.${this.classList.text}`).offsetWidth / 2 - 4),
+    ); // it has a 4 pixel correction.
     el.style.setProperty('--denhaag-breadcrumb-hidden-text-left', `${calculateTooltipPositioning}px`);
   }
 
@@ -185,6 +150,8 @@ export default class DenhaagBreadcrumbs {
    * Remove CSS variable of tooltips.
    */
   resetTooltipPositions() {
-    Array.from(this.listItems)?.forEach((el) => el.style.removeProperty('--denhaag-breadcrumb-hidden-text-left'));
+    this.listItems.forEach((el) => el.style.removeProperty('--denhaag-breadcrumb-hidden-text-left'));
   }
 }
+
+export default DenhaagBreadcrumbs;
