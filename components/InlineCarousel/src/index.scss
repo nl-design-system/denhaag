@@ -1,0 +1,102 @@
+.denhaag-inline-carousel {
+  position: var(--denhaag-inline-carousel-position);
+  max-width: var(--denhaag-inline-carousel-max-width);
+  font-family: var(--denhaag-inline-carousel-font-family);
+  font-weight: var(--denhaag-inline-carousel-font-weight);
+  font-size: var(--denhaag-inline-carousel-font-size);
+  color: var(--denhaag-inline-carousel-color);
+}
+
+.denhaag-inline-carousel__wrapper {
+  position: var(--denhaag-inline-carousel-wrapper-position);
+}
+
+.denhaag-inline-carousel__slide {
+  width: var(--denhaag-inline-carousel-slide-width);
+  border-bottom: var(--denhaag-inline-carousel-slide-border-bottom);
+  border-color: var(--denhaag-inline-carousel-slide-border-color);
+}
+
+.denhaag-inline-carousel__slide-image {
+  width: var(--denhaag-inline-carousel-slide-image-width) !important;
+  height: var(--denhaag-inline-carousel-slide-image-height) !important;
+
+  img {
+    width: var(--denhaag-inline-carousel-slide-image-img-width);
+    height: var(--denhaag-inline-carousel-slide-image-img-height);
+    object-fit: var(--denhaag-inline-carousel-slide-image-img-object-fit);
+  }
+}
+
+.denhaag-inline-carousel__content {
+  margin-block-start: var(--denhaag-inline-carousel-content-margin-block);
+  margin-block-end: var(--denhaag-inline-carousel-content-margin-block);
+  display: var(--denhaag-inline-carousel-content-display);
+  justify-content: var(--denhaag-inline-carousel-content-justify-content);
+  max-width: var(--denhaag-inline-carousel-content-max-width);
+}
+
+.denhaag-inline-carousel__content-caption {
+  display: var(--denhaag-inline-carousel-content-caption-display);
+  align-items: var(--denhaag-inline-carousel-content-caption-align-items);
+}
+
+.denhaag-inline-carousel__content-download {
+  width: var(--denhaag-inline-carousel-content-download-width);
+  height: var(--denhaag-inline-carousel-content-download-height);
+  color: var(--denhaag-inline-carousel-content-download-color);
+
+  &:hover {
+    cursor: var(--denhaag-inline-carousel-content-download-hover-cursor);
+  }
+}
+
+.denhaag-inline-carousel__arrows {
+  display: var(--denhaag-inline-carousel-arrows-display);
+  justify-content: var(--denhaag-inline-carousel-arrows-justify-content);
+  align-items: var(--denhaag-inline-carousel-arrows-align-items);
+  position: var(--denhaag-inline-carousel-arrows-position);
+  background-color: var(--denhaag-inline-carousel-arrows-background-color);
+  width: var(--denhaag-inline-carousel-arrows-width);
+  height: var(--denhaag-inline-carousel-arrows-height);
+  top: calc(var(--denhaag-inline-carousel-slide-image-height) / 2);
+  border-radius: var(--denhaag-inline-carousel-arrows-border-radius);
+  z-index: var(--denhaag-inline-carousel-arrows-z-index);
+  color: var(--denhaag-inline-carousel-arrows-color);
+
+  &:hover {
+    cursor: var(--denhaag-inline-carousel-arrows-hover-cursor);
+  }
+}
+
+.denhaag-inline-carousel__next-slide {
+  right: var(--denhaag-inline-carousel-arrows-next-right);
+}
+
+.denhaag-inline-carousel__prev-slide {
+  left: var(--denhaag-inline-carousel-arrows-prev-left);
+}
+
+.denhaag-inline-carousel__pagination {
+  position: var(--denhaag-inline-carousel-pagination-position);
+  top: calc(
+    var(--denhaag-inline-carousel-slide-image-height) - var(--denhaag-inline-carousel-pagination-bottom-position)
+  ) !important;
+  z-index: var(--denhaag-inline-carousel-pagination-z-index);
+  display: var(--denhaag-inline-carousel-pagination-display);
+  justify-content: var(--denhaag-inline-carousel-pagination-justify-content);
+
+  .denhaag-inline-carousel__pagination-bullet {
+    background-color: var(--denhaag-inline-carousel-pagination-bullet-background-color);
+    opacity: var(--denhaag-inline-carousel-pagination-bullet-opacity);
+    width: var(--denhaag-inline-carousel-pagination-bullet-width);
+    height: var(--denhaag-inline-carousel-pagination-bullet-height);
+    border-radius: var(--denhaag-inline-carousel-pagination-bullet-border-radius);
+    margin-inline-start: var(--denhaag-inline-carousel-pagination-bullet-margin-inline);
+    margin-inline-end: var(--denhaag-inline-carousel-pagination-bullet-margin-inline);
+  }
+
+  .denhaag-inline-carousel__pagination-bullet-active {
+    background-color: var(--denhaag-inline-carousel-pagination-bullet-active-background-color);
+  }
+}
