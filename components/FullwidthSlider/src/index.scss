@@ -1,0 +1,102 @@
+.denhaag-fullwidth-slider {
+  position: var(--denhaag-fullwidth-slider-position);
+  max-width: var(--denhaag-fullwidth-slider-max-width);
+  font-family: var(--denhaag-fullwidth-slider-font-family);
+  font-weight: var(--denhaag-fullwidth-slider-font-weight);
+  font-size: var(--denhaag-fullwidth-slider-font-size);
+  color: var(--denhaag-fullwidth-slider-color);
+}
+
+.denhaag-fullwidth-slider__wrapper {
+  position: var(--denhaag-fullwidth-slider-wrapper-position);
+}
+
+.denhaag-fullwidth-slider__slide {
+  width: var(--denhaag-fullwidth-slider-slide-width);
+  border-bottom: var(--denhaag-fullwidth-slider-slide-border-bottom);
+  border-color: var(--denhaag-fullwidth-slider-slide-border-color);
+}
+
+.denhaag-fullwidth-slider__slide-image {
+  width: var(--denhaag-fullwidth-slider-slide-image-width) !important;
+  height: var(--denhaag-fullwidth-slider-slide-image-height) !important;
+
+  img {
+    width: var(--denhaag-fullwidth-slider-slide-image-img-width);
+    height: var(--denhaag-fullwidth-slider-slide-image-img-height);
+    object-fit: var(--denhaag-fullwidth-slider-slide-image-img-object-fit);
+  }
+}
+
+.denhaag-fullwidth-slider__content {
+  margin-block-start: var(--denhaag-fullwidth-slider-content-margin-block);
+  margin-block-end: var(--denhaag-fullwidth-slider-content-margin-block);
+  display: var(--denhaag-fullwidth-slider-content-display);
+  justify-content: var(--denhaag-fullwidth-slider-content-justify-content);
+  max-width: var(--denhaag-fullwidth-slider-content-max-width);
+}
+
+.denhaag-fullwidth-slider__content-caption {
+  display: var(--denhaag-fullwidth-slider-content-caption-display);
+  align-items: var(--denhaag-fullwidth-slider-content-caption-align-items);
+}
+
+.denhaag-fullwidth-slider__content-download {
+  width: var(--denhaag-fullwidth-slider-content-download-width);
+  height: var(--denhaag-fullwidth-slider-content-download-height);
+  color: var(--denhaag-fullwidth-slider-content-download-color);
+
+  &:hover {
+    cursor: var(--denhaag-fullwidth-slider-content-download-hover-cursor);
+  }
+}
+
+.denhaag-fullwidth-slider__arrows {
+  display: var(--denhaag-fullwidth-slider-arrows-display);
+  justify-content: var(--denhaag-fullwidth-slider-arrows-justify-content);
+  align-items: var(--denhaag-fullwidth-slider-arrows-align-items);
+  position: var(--denhaag-fullwidth-slider-arrows-position);
+  background-color: var(--denhaag-fullwidth-slider-arrows-background-color);
+  width: var(--denhaag-fullwidth-slider-arrows-width);
+  height: var(--denhaag-fullwidth-slider-arrows-height);
+  top: calc(var(--denhaag-fullwidth-slider-slide-image-height) / 2);
+  border-radius: var(--denhaag-fullwidth-slider-arrows-border-radius);
+  z-index: var(--denhaag-fullwidth-slider-arrows-z-index);
+  color: var(--denhaag-fullwidth-slider-arrows-color);
+
+  &:hover {
+    cursor: var(--denhaag-fullwidth-slider-arrows-hover-cursor);
+  }
+}
+
+.denhaag-fullwidth-slider__next-slide {
+  right: var(--denhaag-fullwidth-slider-arrows-next-right);
+}
+
+.denhaag-fullwidth-slider__prev-slide {
+  left: var(--denhaag-fullwidth-slider-arrows-prev-left);
+}
+
+.denhaag-fullwidth-slider__pagination {
+  position: var(--denhaag-fullwidth-slider-pagination-position);
+  top: calc(
+    var(--denhaag-fullwidth-slider-slide-image-height) - var(--denhaag-fullwidth-slider-pagination-bottom-position)
+  ) !important;
+  z-index: var(--denhaag-fullwidth-slider-pagination-z-index);
+  display: var(--denhaag-fullwidth-slider-pagination-display);
+  justify-content: var(--denhaag-fullwidth-slider-pagination-justify-content);
+
+  .denhaag-fullwidth-slider__pagination-bullet {
+    background-color: var(--denhaag-fullwidth-slider-pagination-bullet-background-color);
+    opacity: var(--denhaag-fullwidth-slider-pagination-bullet-opacity);
+    width: var(--denhaag-fullwidth-slider-pagination-bullet-width);
+    height: var(--denhaag-fullwidth-slider-pagination-bullet-height);
+    border-radius: var(--denhaag-fullwidth-slider-pagination-bullet-border-radius);
+    margin-inline-start: var(--denhaag-fullwidth-slider-pagination-bullet-margin-inline);
+    margin-inline-end: var(--denhaag-fullwidth-slider-pagination-bullet-margin-inline);
+  }
+
+  .denhaag-fullwidth-slider__pagination-bullet-active {
+    background-color: var(--denhaag-fullwidth-slider-pagination-bullet-active-background-color);
+  }
+}
