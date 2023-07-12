@@ -13,7 +13,7 @@ const NEXT_SLIDE_CLASS = 'denhaag-fullwidth-slider__next-slide';
 const PREV_SLIDE_CLASS = 'denhaag-fullwidth-slider__prev-slide';
 const PAGINATION_CLASS = 'denhaag-fullwidth-slider__pagination';
 const BULLET_CLASS = 'denhaag-fullwidth-slider__pagination-bullet';
-const ACTIVE_BULLET_CLASS = 'denhaag-fullwidth-slider__pagination-bullet-active';
+const ACTIVE_BULLET_CLASS = 'denhaag-fullwidth-slider__pagination-bullet--active';
 
 const FullwidthSlider = () => {
   // Wrapping this in a try catch statement allows us to read errors easier in storybook
@@ -23,6 +23,7 @@ const FullwidthSlider = () => {
       loop: true,
       speed: 400,
       spaceBetween: 100,
+      slidesPerView: 1,
       autoplay: {
         delay: 3000,
       },
@@ -38,18 +39,8 @@ const FullwidthSlider = () => {
         el: `.${PAGINATION_CLASS}`,
         bulletClass: BULLET_CLASS,
         bulletActiveClass: ACTIVE_BULLET_CLASS,
-        type: 'custom',
-        renderCustom: (slider, current, total) => {
-          const className = BULLET_CLASS;
-          const activeClassName = ACTIVE_BULLET_CLASS;
-          const bullets = Array.from(Array(total)).map((bullet, i) => {
-            const index = i + 1;
-            if (slider.activeIndex === i)
-              return `<span aria-title="Slide ${index} of ${total}" class="${className} ${activeClassName}"></span>`;
-            return `<span aria-title="Slide ${index} of ${total}" class="${className}"></span>`;
-          });
-          return bullets.join('');
-        },
+        dynamicBullets: true,
+        dynamicMainBullets: 3,
       },
     });
 
@@ -68,10 +59,6 @@ const FullwidthSlider = () => {
         }
       });
     }
-
-    swiper.on('play', () => {
-      console.log('Swiper is playing...');
-    });
   } catch (error) {
     console.log(error);
   }
