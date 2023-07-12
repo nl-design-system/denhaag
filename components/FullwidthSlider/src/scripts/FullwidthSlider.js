@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay, EffectCreative } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -8,6 +8,8 @@ import 'swiper/css/a11y';
 import { PLAY_ICON_HTML, PAUSE_ICON_HTML } from '../stories/icons.stories.mdx';
 
 const SWIPER_CLASS = 'denhaag-fullwidth-slider';
+const SLIDE_CLASS = 'denhaag-fullwidth-slider__slide';
+const ACTIVE_SLIDE_CLASS = 'denhaag-fullwidth-slider__slide--active';
 const PLAYPAUSE_CLASS = 'denhaag-fullwidth-slider__controls-playpause';
 const NEXT_SLIDE_CLASS = 'denhaag-fullwidth-slider__next-slide';
 const PREV_SLIDE_CLASS = 'denhaag-fullwidth-slider__prev-slide';
@@ -19,11 +21,14 @@ const FullwidthSlider = () => {
   // Wrapping this in a try catch statement allows us to read errors easier in storybook
   try {
     const swiper = new Swiper(`.${SWIPER_CLASS}`, {
-      modules: [Navigation, Pagination, Autoplay],
+      modules: [Navigation, Pagination, Autoplay, EffectCreative],
       loop: true,
-      speed: 400,
-      spaceBetween: 100,
+      speed: 1000,
+      spaceBetween: 0,
       slidesPerView: 1,
+      grabCursor: true,
+      slideClass: SLIDE_CLASS,
+      slideActiveClass: ACTIVE_SLIDE_CLASS,
       autoplay: {
         delay: 3000,
       },
@@ -41,6 +46,16 @@ const FullwidthSlider = () => {
         bulletActiveClass: ACTIVE_BULLET_CLASS,
         dynamicBullets: true,
         dynamicMainBullets: 3,
+      },
+      effect: 'creative',
+      creativeEffect: {
+        prev: {
+          shadow: false,
+          translate: ['-20%', 0, 0],
+        },
+        next: {
+          translate: ['100%', 0, 0],
+        },
       },
     });
 
