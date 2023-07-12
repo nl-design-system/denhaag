@@ -1,25 +1,31 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/a11y';
 
-const SWIPER_CLASS = 'denhaag-inline-carousel';
-const NEXT_SLIDE_CLASS = 'denhaag-inline-carousel__next-slide';
-const PREV_SLIDE_CLASS = 'denhaag-inline-carousel__prev-slide';
-const PAGINATION_CLASS = 'denhaag-inline-carousel__pagination';
-const BULLET_CLASS = 'denhaag-inline-carousel__pagination-bullet';
-const ACTIVE_BULLET_CLASS = 'denhaag-inline-carousel__pagination-bullet-active';
+import { PLAY_ICON_HTML, PAUSE_ICON_HTML } from '../stories/icons.stories.mdx';
+
+const SWIPER_CLASS = 'denhaag-fullwidth-slider';
+const PLAYPAUSE_CLASS = 'denhaag-fullwidth-slider__controls-playpause';
+const NEXT_SLIDE_CLASS = 'denhaag-fullwidth-slider__next-slide';
+const PREV_SLIDE_CLASS = 'denhaag-fullwidth-slider__prev-slide';
+const PAGINATION_CLASS = 'denhaag-fullwidth-slider__pagination';
+const BULLET_CLASS = 'denhaag-fullwidth-slider__pagination-bullet';
+const ACTIVE_BULLET_CLASS = 'denhaag-fullwidth-slider__pagination-bullet-active';
 
 const FullwidthSlider = () => {
   // Wrapping this in a try catch statement allows us to read errors easier in storybook
   try {
-    new Swiper(`.${SWIPER_CLASS}`, {
-      modules: [Navigation, Pagination],
+    const swiper = new Swiper(`.${SWIPER_CLASS}`, {
+      modules: [Navigation, Pagination, Autoplay],
       loop: true,
       speed: 400,
       spaceBetween: 100,
+      autoplay: {
+        delay: 3000,
+      },
       a11y: {
         prevSlideMessage: 'Vorige afbeelding in de carousel',
         nextSlideMessage: 'Volgende afbeelding in de carousel',
@@ -45,6 +51,26 @@ const FullwidthSlider = () => {
           return bullets.join('');
         },
       },
+    });
+
+    if (swiper?.el) {
+      const playpause = swiper.el.querySelector(`.${PLAYPAUSE_CLASS}`);
+      playpause.addEventListener('click', () => {
+        const { running, start, stop } = swiper.autoplay;
+
+        if (!running) {
+          start();
+          playpause.innerHTML = PAUSE_ICON_HTML;
+        }
+        if (running) {
+          stop();
+          playpause.innerHTML = PLAY_ICON_HTML;
+        }
+      });
+    }
+
+    swiper.on('play', () => {
+      console.log('Swiper is playing...');
     });
   } catch (error) {
     console.log(error);
