@@ -31,7 +31,7 @@ const FullwidthSlider = () => {
       slideClass: SLIDE_CLASS,
       slideActiveClass: ACTIVE_SLIDE_CLASS,
       autoplay: {
-        delay: 3000,
+        delay: 7000,
       },
       a11y: {
         prevSlideMessage: 'Vorige afbeelding in de carousel',
@@ -45,8 +45,8 @@ const FullwidthSlider = () => {
         el: `.${PAGINATION_CLASS}`,
         bulletClass: BULLET_CLASS,
         bulletActiveClass: ACTIVE_BULLET_CLASS,
-        dynamicBullets: true,
-        dynamicMainBullets: 5,
+        dynamicBullets: false,
+        dynamicMainBullets: 3,
       },
       effect: 'creative',
       creativeEffect: {
