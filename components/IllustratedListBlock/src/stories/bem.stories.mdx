@@ -1,0 +1,92 @@
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+import "../index.scss";
+import pkg from "../../package.json";
+import readme from "../../README.md";
+
+<Meta
+  title="CSS/Data Display/Illustrated List Block"
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Design Tokens
+
+<DesignTokenDocBlock categoryName="Illustrated List Block" viewType="table" />
+
+## Stories
+
+### Default
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Default">
+    <div class="denhaag-illustrated-list-block">
+      <div class="denhaag-illustrated-list-block__content">
+        <h3 class="utrecht-heading-4">Al uw identiteitskaarten en paspoorten</h3>
+        <p class="utrecht-paragraph">Heeft u een identiteitskaart én een paspoort? Neem alles mee. </p>
+      </div>
+      <img
+        class="denhaag-illustrated-list-block__image"
+        src="https://via.placeholder.com/100x100"
+        alt=""
+        width="100"
+        height="100"
+        loading="lazy"
+      />
+    </div>
+    <div class="denhaag-illustrated-list-block">
+      <div class="denhaag-illustrated-list-block__content">
+        <h3 class="utrecht-heading-4">Een kleuren pasfoto die voldoet aan de eisen</h3>
+        <p class="utrecht-paragraph">
+          De pasfoto mag bijvoorbeeld niet ouder zijn dan 6 maanden en moet goed op u lijken. Laat daarom een pasfoto
+          maken bij een professionele fotograaf.{" "}
+          <a href="#example-link" class="denhaag-link" tabindex="0">
+            <span class="denhaag-link__label">Bekijk alle eisen voor pasfoto’s op website van de Rijksoverheid</span>
+          </a>
+          .
+        </p>
+      </div>
+      <img
+        class="denhaag-illustrated-list-block__image"
+        src="https://via.placeholder.com/100x100"
+        alt=""
+        width="100"
+        height="100"
+        loading="lazy"
+      />
+    </div>
+    <div class="denhaag-illustrated-list-block">
+      <div class="denhaag-illustrated-list-block__content">
+        <h3 class="utrecht-heading-4">
+          Is het paspoort voor een kind onder de 18 jaar? Het kind moet mee naar de afspraak en heeft schriftelijke
+          toestemming nodig van beide ouders
+        </h3>
+        <p class="utrecht-paragraph">
+          Er is schriftelijke toestemming nodig van de personen met het ouderlijk gezag. Meestal zijn dit de ouders.
+          Maar het kan ook een voogd zijn. Lees wat nodig is voor uw situatie op de pagina{" "}
+          <a href="#example-link" class="denhaag-link" tabindex="0">
+            <span class="denhaag-link__label">toestemming voor paspoort kind</span>
+          </a>
+          . Dit is een extra regel tekst waarbij je een max. aan 6 regels hebt (title + text).
+        </p>
+      </div>
+      <img
+        class="denhaag-illustrated-list-block__image"
+        src="https://via.placeholder.com/100x100"
+        alt=""
+        width="100"
+        height="100"
+        loading="lazy"
+      />
+    </div>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
