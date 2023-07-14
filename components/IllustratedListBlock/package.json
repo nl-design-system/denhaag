@@ -34,8 +34,5 @@
   },
   "dependencies": {
     "@gemeente-denhaag/typography": "0.2.3-www-denhaag-nl.68"
-  },
-  "peerDependencies": {
-    "react": "^17.0.0"
   }
 }
