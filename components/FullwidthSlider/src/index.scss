@@ -1,31 +1,14 @@
 @keyframes denhaag-angled-image-next {
   0% {
-    clip-path: var(--denhaag-fullwidth-slider-animation-start-slide);
+    clip-path: var(--denhaag-fullwidth-slider-animation-start-clip-path);
   }
 
-  65% {
-    clip-path: var(--denhaag-fullwidth-slider-animation-start-slide);
-  }
-
-  100% {
-    clip-path: var(--denhaag-fullwidth-slider-animation-end-slide);
-  }
-}
-
-@keyframes denhaag-angled-slice-next {
-  0% {
-    clip-path: var(--denhaag-fullwidth-slider-animation-start-slice-clip-path);
-    width: var(--denhaag-fullwidth-slider-animation-start-slice-width);
-  }
-
-  65% {
-    clip-path: var(--denhaag-fullwidth-slider-animation-start-slice-clip-path);
-    width: var(--denhaag-fullwidth-slider-animation-start-slice-width);
+  55% {
+    clip-path: var(--denhaag-fullwidth-slider-animation-start-clip-path);
   }
 
   100% {
-    clip-path: var(--denhaag-fullwidth-slider-animation-end-slice-clip-path);
-    width: var(--denhaag-fullwidth-slider-animation-end-slice-width);
+    clip-path: var(--denhaag-fullwidth-slider-animation-end-clip-path);
   }
 }
 
@@ -60,18 +43,20 @@
   border-color: var(--denhaag-fullwidth-slider-card-border-color);
   width: var(--denhaag-fullwidth-slider-card-width);
   height: var(--denhaag-fullwidth-slider-card-height);
-  transform: var(--denhaag-fullwidth-slider-card-transform);
   opacity: var(--denhaag-fullwidth-slider-card-opacity);
   background-color: var(--denhaag-fullwidth-slider-card-background-color);
   transition: var(--denhaag-fullwidth-slider-card-transition);
+  transform: var(--denhaag-fullwidth-slider-card-transform);
 }
 
 .denhaag-fullwidth-slider__card-content {
+  display: var(--denhaag-fullwidth-slider-card-content-display);
+  flex-direction: var(--denhaag-fullwidth-slider-card-content-flex-direction);
   margin-block-start: var(--denhaag-fullwidth-slider-card-content-margin-block);
   margin-block-end: var(--denhaag-fullwidth-slider-card-content-margin-block);
   margin-inline-start: var(--denhaag-fullwidth-slider-card-content-margin-inline);
   margin-inline-end: var(--denhaag-fullwidth-slider-card-content-margin-inline);
-  padding-inline-end: var(--denhaag-fullwidth-slider-card-content-padding-right);
+  padding-inline-end: var(--denhaag-fullwidth-slider-card-content-padding-inline-end);
 }
 
 .denhaag-fullwidth-slider__card-content__title {
@@ -105,17 +90,6 @@
   position: relative;
   animation: denhaag-angled-image-next;
   animation-duration: 1000ms;
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    background-color: #fff;
-    animation: denhaag-angled-slice-next;
-    animation-duration: 1000ms;
-  }
 }
 
 .denhaag-fullwidth-slider__slide--active {
@@ -124,25 +98,14 @@
       position: relative;
       animation: denhaag-angled-image-next;
       animation-duration: 1000ms;
-
-      &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        background-color: #fff;
-        animation: denhaag-angled-slice-next;
-        animation-duration: 1000ms;
-      }
     }
   }
 
   .denhaag-fullwidth-slider__card {
-    transform: translateY(-100px), translateX(0);
+    transform: translateX(0) translateY(-100px);
     opacity: 100%;
-    transition-delay: 0;
-    transition-duration: 1000ms;
+    transition: all 750ms ease-in-out;
+    transition-delay: 350ms;
   }
 }
 
@@ -153,7 +116,7 @@
 }
 
 .denhaag-fullwidth-slider__top-title {
-  font-size: var(--denhaag-fullwidth-slider-controls-font-size);
+  font-size: var(--denhaag-fullwidth-slider-top-title-font-size);
 }
 
 .denhaag-fullwidth-slider__controls {
@@ -196,10 +159,13 @@
 
 .denhaag-fullwidth-slider__pagination {
   display: var(--denhaag-fullwidth-slider-pagination-display);
-  justify-content: var(--denhaag-fullwidth-slider-pagination-justify-content);
   align-items: var(--denhaag-fullwidth-slider-pagination-align-items);
+  justify-content: var(--denhaag-fullwidth-slider-pagination-justify-content);
+  transform: var(--denhaag-fullwidth-slider-pagination-transform) !important;
+  width: var(--denhaag-fullwidth-slider-pagination-width) !important;
 
   .denhaag-fullwidth-slider__pagination-bullet {
+    position: var(--denhaag-fullwidth-slider-pagination-bullet-position);
     background-color: var(--denhaag-fullwidth-slider-pagination-bullet-background-color);
     opacity: var(--denhaag-fullwidth-slider-pagination-bullet-opacity);
     width: var(--denhaag-fullwidth-slider-pagination-bullet-width);
@@ -207,31 +173,43 @@
     border-radius: var(--denhaag-fullwidth-slider-pagination-bullet-border-radius);
     margin-inline-start: var(--denhaag-fullwidth-slider-pagination-bullet-margin-inline);
     margin-inline-end: var(--denhaag-fullwidth-slider-pagination-bullet-margin-inline);
-    transform: var(--denhaag-fullwidth-slider-pagination-bullet-transform);
-    transition: var(--denhaag-fullwidth-slider-pagination-bullet-transition);
   }
 
-  .denhaag-fullwidth-slider__pagination-bullet--active-main {
-    opacity: var(--denhaag-fullwidth-slider-pagination-bullet-active-main-opacity);
-    transform: var(--denhaag-fullwidth-slider-pagination-bullet-active-main-transform);
-    background-color: var(--denhaag-fullwidth-slider-pagination-bullet-active-main-background-color);
+  .denhaag-fullwidth-slider__pagination-bullet--active {
+    opacity: var(--denhaag-fullwidth-slider-pagination-bullet-active-opacity);
+    transform: var(--denhaag-fullwidth-slider-pagination-bullet-active-transform);
+    background-color: var(--denhaag-fullwidth-slider-pagination-bullet-active-background-color);
+  }
 
-    &.denhaag-fullwidth-slider__pagination-bullet--active {
-      opacity: var(--denhaag-fullwidth-slider-pagination-bullet-active-opacity);
-      transform: var(--denhaag-fullwidth-slider-pagination-bullet-active-transform);
-      background-color: var(--denhaag-fullwidth-slider-pagination-bullet-active-background-color);
+  &.swiper-pagination-bullets-dynamic {
+    .denhaag-fullwidth-slider__pagination-bullet {
+      transform: var(--denhaag-fullwidth-slider-pagination-bullet-transform);
+      transition: var(--denhaag-fullwidth-slider-pagination-bullet-transition);
+      opacity: var(--denhaag-fullwidth-slider-pagination-bullet-opacity);
     }
-  }
 
-  .denhaag-fullwidth-slider__pagination-bullet--active-prev,
-  .denhaag-fullwidth-slider__pagination-bullet--active-next {
-    opacity: var(--denhaag-fullwidth-slider-pagination-bullet-active-opacity);
-    transform: var(--denhaag-fullwidth-slider-pagination-bullet-active-next-prev-transform);
-  }
+    .denhaag-fullwidth-slider__pagination-bullet--active-main {
+      opacity: var(--denhaag-fullwidth-slider-pagination-bullet-active-main-opacity);
+      transform: var(--denhaag-fullwidth-slider-pagination-bullet-active-main-transform);
+      background-color: var(--denhaag-fullwidth-slider-pagination-bullet-active-main-background-color);
 
-  .denhaag-fullwidth-slider__pagination-bullet--active-prev-prev,
-  .denhaag-fullwidth-slider__pagination-bullet--active-next-next {
-    opacity: var(--denhaag-fullwidth-slider-pagination-bullet-active-opacity);
-    transform: var(--denhaag-fullwidth-slider-pagination-bullet-active-next-next-prev-prev-transform);
+      &.denhaag-fullwidth-slider__pagination-bullet--active {
+        opacity: var(--denhaag-fullwidth-slider-pagination-bullet-active-opacity);
+        transform: var(--denhaag-fullwidth-slider-pagination-bullet-active-transform);
+        background-color: var(--denhaag-fullwidth-slider-pagination-bullet-active-background-color);
+      }
+    }
+
+    .denhaag-fullwidth-slider__pagination-bullet--active-prev,
+    .denhaag-fullwidth-slider__pagination-bullet--active-next {
+      opacity: var(--denhaag-fullwidth-slider-pagination-bullet-active-opacity);
+      transform: var(--denhaag-fullwidth-slider-pagination-bullet-active-next-prev-transform);
+    }
+
+    .denhaag-fullwidth-slider__pagination-bullet--active-prev-prev,
+    .denhaag-fullwidth-slider__pagination-bullet--active-next-next {
+      opacity: var(--denhaag-fullwidth-slider-pagination-bullet-active-opacity);
+      transform: var(--denhaag-fullwidth-slider-pagination-bullet-active-next-next-prev-prev-transform);
+    }
   }
 }
