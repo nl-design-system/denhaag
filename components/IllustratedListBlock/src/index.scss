@@ -4,6 +4,7 @@
 
   &__image {
     margin-block-end: var(--denhaag-illustrated-list-block-image-margin-block-end);
+    object-fit: var(--denhaag-illustrated-list-block-image-object-fit);
 
     @media (min-width: 768px) {
       --denhaag-illustrated-list-block-image-margin-block-end: 0;
