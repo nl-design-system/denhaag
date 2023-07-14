@@ -23,6 +23,9 @@
         },
         "margin-inline-end": {
           "value": "{denhaag.space.inline.xl}"
+        },
+        "object-fit": {
+          "value": "cover"
         }
       },
       "justify-content": {
