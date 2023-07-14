@@ -1,0 +1,27 @@
+.denhaag-illustrated-list-block {
+  display: flex;
+  flex-direction: column-reverse;
+
+  &__image {
+    margin-block-end: 1rem;
+
+    @media (min-width: 768px) {
+      margin-block-end: 0;
+      margin-inline-end: 1.5rem;
+    }
+  }
+
+  [class^="utrecht-heading"] {
+    font-family: var(--denhaag-illustrated-list-block-content-heading-font-family);
+  }
+
+  + .denhaag-illustrated-list-block {
+    margin-block-start: 3rem;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: start;
+  }
+}
