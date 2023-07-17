@@ -45,7 +45,7 @@ const FullwidthSlider = () => {
         el: `.${PAGINATION_CLASS}`,
         bulletClass: BULLET_CLASS,
         bulletActiveClass: ACTIVE_BULLET_CLASS,
-        dynamicBullets: false,
+        dynamicBullets: true,
         dynamicMainBullets: 3,
       },
       effect: 'creative',
