@@ -17,10 +17,24 @@
       },
       "top": {
         "display": { "value": "flex" },
+        "flex-wrap": { "value": "wrap" },
         "justify-content": { "value": "space-between" },
         "align-items": { "value": "center" },
+        "padding-inline": {
+          "sm": { "value": "60px" },
+          "xl": { "value": "100px" },
+          "xxl": { "value": "0px" }
+        },
         "title": {
-          "font-size": { "value": "large" }
+          "font-size": { "value": "large" },
+          "margin-block-start": { "value": "0px" },
+          "margin-block-end": {
+            "xs": { "value": "24px" },
+            "sm": { "value": "0px" }
+          },
+          "flex-basis": {
+            "xs": { "value": "100%" }
+          }
         }
       },
       "wrapper": {
@@ -30,7 +44,11 @@
         "width": { "value": "100%" },
         "image": {
           "width": { "value": "100%" },
-          "height": { "value": "400px" },
+          "height": {
+            "xs": { "value": "200px" },
+            "sm": { "value": "432px" },
+            "lg": { "value": "576px" }
+          },
           "img": {
             "width": { "value": "100%" },
             "height": { "value": "100%" },
@@ -39,22 +57,44 @@
         }
       },
       "card": {
-        "margin-block": { "value": "16px" },
+        "position": { "value": "relative" },
+        "margin-block-start": {
+          "xs": { "value": "-32px" },
+          "sm": { "value": "-64px" },
+          "lg": { "value": "-72px" }
+        },
         "padding": { "value": "16px" },
         "display": { "value": "flex" },
         "justify-content": { "value": "space-between" },
         "border-bottom": { "value": "1px solid" },
         "border-color": { "value": "{denhaag.color.grey.2}" },
-        "margin-inline-start": { "value": "100px" },
-        "width": { "value": "400px" },
-        "height": { "value": "100px" },
-        "transform": { "value": "translateX(200px) translateY(-100px)" },
+        "margin-inline": {
+          "xs": { "value": "24px" },
+          "sm": { "value": "60px" },
+          "lg": { "value": "60px" },
+          "xl": { "value": "100px" }
+        },
+        "width": {
+          "xs": { "value": "auto" },
+          "sm": { "value": "523px" }
+        },
+        "min-height": {
+          "xs": { "value": "124px" },
+          "sm": { "value": "132px" }
+        },
+        "transform": { "value": "translateX(200px)" },
         "transition": { "value": "all 500ms ease-in-out" },
         "opacity": { "value": "0" },
         "background-color": { "value": "{denhaag.color.white}" },
         "content": {
-          "margin-inline": { "value": "16px" },
-          "margin-block": { "value": "16px" },
+          "margin-inline-start": {
+            "xs": { "value": "8px" },
+            "sm": { "value": "16px" }
+          },
+          "margin-block-start": {
+            "xs": { "value": "8px" },
+            "sm": { "value": "16px" }
+          },
           "padding-inline-end": { "value": "48px" },
           "display": { "value": "flex" },
           "flex-direction": { "value": "column" },
@@ -68,9 +108,7 @@
         },
         "arrow": {
           "color": { "value": "{denhaag.color.blue.3}" },
-          "height": { "value": "100%" },
-          "display": { "value": "flex" },
-          "align-items": { "value": "flex-end" }
+          "position": { "value": "absolute" }
         }
       },
       "controls": {
@@ -82,7 +120,7 @@
           "align-items": { "value": "center" },
           "width": { "value": "43px" },
           "height": { "value": "43px" },
-          "margin-inline": { "value": "6px" },
+          "margin-inline": { "value": "8px" },
           "border": { "value": "1px solid" },
           "border-color": { "value": "{denhaag.color.green.3}" },
           "border-radius": { "value": "3px" },
@@ -107,10 +145,15 @@
       },
       "pagination": {
         "display": { "value": "flex" },
-        "justify-content": { "value": "center" },
+        "justify-content": {
+          "xs": { "value": "flex-start" },
+          "sm": { "value": "center" }
+        },
         "align-items": { "value": "center" },
         "transform": { "value": "translateX(0)" },
-        "width": { "value": "300px" },
+        "width": { "value": "fit-content" },
+        "min-height": { "value": "48px" },
+        "margin-inline": { "value": "48px" },
         "bullet": {
           "position": { "value": "relative" },
           "background-color": { "value": "{denhaag.color.grey.2}" },
@@ -118,7 +161,7 @@
           "width": { "value": "12px" },
           "height": { "value": "12px" },
           "border-radius": { "value": "50%" },
-          "margin-inline": { "value": "3px" },
+          "margin-inline": { "value": "4px" },
           "transform": { "value": "scale(0)" },
           "transition": { "value": "200ms transform, 200ms left" },
           "active": {
