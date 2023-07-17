@@ -100,7 +100,23 @@
           "flex-direction": { "value": "column" },
           "title": {
             "font-size": { "value": "large" },
-            "padding-bottom": { "value": "16px" }
+            "padding-bottom": { "value": "16px" },
+            "text-decoration": { "value": "none" },
+            "color": { "value": "inherit" },
+            "after": {
+              "content": { "value": "''" },
+              "position": { "value": "absolute" },
+              "top": { "value": "0" },
+              "bottom": { "value": "0" },
+              "left": { "value": "0" },
+              "right": { "value": "0" },
+              "transition": { "value": "box-shadow 350ms ease" }
+            },
+            "hover": {
+              "after": {
+                "box-shadow": { "value": "-1px -4px 15px 0px rgba(0,0,0,0.1)" }
+              }
+            }
           },
           "author": {
             "color": { "value": "{denhaag.color.green.4}" }
@@ -108,7 +124,8 @@
         },
         "arrow": {
           "color": { "value": "{denhaag.color.blue.3}" },
-          "position": { "value": "absolute" }
+          "position": { "value": "absolute" },
+          "pointer-events": { "value": "none" }
         }
       },
       "controls": {
@@ -124,9 +141,11 @@
           "border": { "value": "1px solid" },
           "border-color": { "value": "{denhaag.color.green.3}" },
           "border-radius": { "value": "3px" },
-          "color": { "value": "{denhaag.color.green.4}" },
+          "color": { "value": "{denhaag.color.green.3}" },
           "hover": {
-            "cursor": { "value": "pointer" }
+            "cursor": { "value": "pointer" },
+            "color": { "value": "{denhaag.color.green.4}" },
+            "border-color": { "value": "{denhaag.color.green.4}" }
           }
         },
         "arrows": {
@@ -136,10 +155,12 @@
           "background-color": { "value": "{denhaag.color.green.3}" },
           "width": { "value": "44px" },
           "height": { "value": "44px" },
+          "border": { "value": "none" },
           "border-radius": { "value": "3px" },
           "color": { "value": "{denhaag.color.white}" },
           "hover": {
-            "cursor": { "value": "pointer" }
+            "cursor": { "value": "pointer" },
+            "background-color": { "value": "{denhaag.color.green.4}" }
           }
         }
       },
