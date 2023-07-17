@@ -15,30 +15,37 @@ import "../scripts/story.js";
         <h2 class="denhaag-fullwidth-slider__top-title">Slider title here</h2>
         <div class="denhaag-fullwidth-slider__pagination"></div>
         <div class="denhaag-fullwidth-slider__controls">
-          <div class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__prev-slide">
+          <button
+            aria-label="Vorige carousel afbeelding"
+            class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__prev-slide"
+          >
             <PrevIcon />
-          </div>
-          <div class="denhaag-fullwidth-slider__controls-playpause">
+          </button>
+          <button aria-label="Carousel pauzeren" class="denhaag-fullwidth-slider__controls-playpause">
             <PauseIcon />
-          </div>
-          <div class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__next-slide">
+          </button>
+          <button
+            aria-label="Volgende carousel afbeelding"
+            class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__next-slide"
+          >
             <NextIcon />
-          </div>
+          </button>
         </div>
       </div>
       <div class="swiper-wrapper">
         <div class="denhaag-fullwidth-slider__slide swiper-slide">
           <div class="denhaag-fullwidth-slider__slide-image">
             <img
+              loading="lazy"
               alt="Afbeelding 1"
               src="https://images.unsplash.com/photo-1586174035695-35ab9e19215c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2030&q=80"
             />
           </div>
           <div class="denhaag-fullwidth-slider__card">
             <div class="denhaag-fullwidth-slider__card-content">
-              <span class="denhaag-fullwidth-slider__card-content__title">
+              <a aria-label="Link title goes here" href="/" class="denhaag-fullwidth-slider__card-content__title">
                 Very very long Carousel title with some more information
-              </span>
+              </a>
               <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
             <div class="denhaag-fullwidth-slider__card-arrow">
@@ -49,13 +56,16 @@ import "../scripts/story.js";
         <div class="denhaag-fullwidth-slider__slide swiper-slide">
           <div class="denhaag-fullwidth-slider__slide-image">
             <img
+              loading="lazy"
               alt="Afbeelding 1"
               src="https://images.unsplash.com/photo-1551039495-a95308f3f6b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
             />
           </div>
           <div class="denhaag-fullwidth-slider__card">
             <div class="denhaag-fullwidth-slider__card-content">
-              <span class="denhaag-fullwidth-slider__card-content__title">Carousel title</span>
+              <a aria-label="Link title goes here" href="/" class="denhaag-fullwidth-slider__card-content__title">
+                Carousel title
+              </a>
               <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
             <div class="denhaag-fullwidth-slider__card-arrow">
@@ -66,13 +76,16 @@ import "../scripts/story.js";
         <div class="denhaag-fullwidth-slider__slide swiper-slide">
           <div class="denhaag-fullwidth-slider__slide-image">
             <img
+              loading="lazy"
               alt="Afbeelding 1"
               src="https://plus.unsplash.com/premium_photo-1661957925180-dfcf3737a617?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80"
             />
           </div>
           <div class="denhaag-fullwidth-slider__card">
             <div class="denhaag-fullwidth-slider__card-content">
-              <span class="denhaag-fullwidth-slider__card-content__title">Carousel title</span>
+              <a aria-label="Link title goes here" href="/" class="denhaag-fullwidth-slider__card-content__title">
+                Carousel title
+              </a>
               <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
             <div class="denhaag-fullwidth-slider__card-arrow">
@@ -83,13 +96,16 @@ import "../scripts/story.js";
         <div class="denhaag-fullwidth-slider__slide swiper-slide">
           <div class="denhaag-fullwidth-slider__slide-image">
             <img
+              loading="lazy"
               alt="Afbeelding 1"
               src="https://images.unsplash.com/photo-1586174035695-35ab9e19215c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2030&q=80"
             />
           </div>
           <div class="denhaag-fullwidth-slider__card">
             <div class="denhaag-fullwidth-slider__card-content">
-              <span class="denhaag-fullwidth-slider__card-content__title">Carousel title</span>
+              <a aria-label="Link title goes here" href="/" class="denhaag-fullwidth-slider__card-content__title">
+                Carousel title
+              </a>
               <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
             <div class="denhaag-fullwidth-slider__card-arrow">
@@ -100,13 +116,16 @@ import "../scripts/story.js";
         <div class="denhaag-fullwidth-slider__slide swiper-slide">
           <div class="denhaag-fullwidth-slider__slide-image">
             <img
+              loading="lazy"
               alt="Afbeelding 1"
               src="https://images.unsplash.com/photo-1551039495-a95308f3f6b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
             />
           </div>
           <div class="denhaag-fullwidth-slider__card">
             <div class="denhaag-fullwidth-slider__card-content">
-              <span class="denhaag-fullwidth-slider__card-content__title">Carousel title</span>
+              <a aria-label="Link title goes here" href="/" class="denhaag-fullwidth-slider__card-content__title">
+                Carousel title
+              </a>
               <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
             <div class="denhaag-fullwidth-slider__card-arrow">
@@ -117,13 +136,56 @@ import "../scripts/story.js";
         <div class="denhaag-fullwidth-slider__slide swiper-slide">
           <div class="denhaag-fullwidth-slider__slide-image">
             <img
+              loading="lazy"
+              alt="Afbeelding 1"
+              src="https://www.denhaag.nl/upload/d86b841d-7afa-4caa-bd74-acd0144516f1_Den-Haag-Scheveningen%20strand-Kurhaus.jpg"
+            />
+          </div>
+          <div class="denhaag-fullwidth-slider__card">
+            <div class="denhaag-fullwidth-slider__card-content">
+              <a aria-label="Link title goes here" href="/" class="denhaag-fullwidth-slider__card-content__title">
+                Carousel title
+              </a>
+              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+            </div>
+            <div class="denhaag-fullwidth-slider__card-arrow">
+              <ArrowRightIcon />
+            </div>
+          </div>
+        </div>
+        <div class="denhaag-fullwidth-slider__slide swiper-slide">
+          <div class="denhaag-fullwidth-slider__slide-image">
+            <img
+              loading="lazy"
+              alt="Afbeelding 1"
+              src="https://images.unsplash.com/photo-1551039495-a95308f3f6b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+            />
+          </div>
+          <div class="denhaag-fullwidth-slider__card">
+            <div class="denhaag-fullwidth-slider__card-content">
+              <a aria-label="Link title goes here" href="/" class="denhaag-fullwidth-slider__card-content__title">
+                Carousel title
+              </a>
+              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+            </div>
+            <div class="denhaag-fullwidth-slider__card-arrow">
+              <ArrowRightIcon />
+            </div>
+          </div>
+        </div>
+        <div class="denhaag-fullwidth-slider__slide swiper-slide">
+          <div class="denhaag-fullwidth-slider__slide-image">
+            <img
+              loading="lazy"
               alt="Afbeelding 1"
               src="https://plus.unsplash.com/premium_photo-1661957925180-dfcf3737a617?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80"
             />
           </div>
           <div class="denhaag-fullwidth-slider__card">
             <div class="denhaag-fullwidth-slider__card-content">
-              <span class="denhaag-fullwidth-slider__card-content__title">Carousel title</span>
+              <a aria-label="Link title goes here" href="/" class="denhaag-fullwidth-slider__card-content__title">
+                Carousel title
+              </a>
               <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
             <div class="denhaag-fullwidth-slider__card-arrow">
@@ -134,47 +196,16 @@ import "../scripts/story.js";
         <div class="denhaag-fullwidth-slider__slide swiper-slide">
           <div class="denhaag-fullwidth-slider__slide-image">
             <img
+              loading="lazy"
               alt="Afbeelding 1"
-              src="https://images.unsplash.com/photo-1551039495-a95308f3f6b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+              src="https://www.denhaag.nl/upload/40d142e4-1a8e-4f11-80ce-69792e4cf12b_den-haag-hofvijver-lente-headerfoto.jpg"
             />
           </div>
           <div class="denhaag-fullwidth-slider__card">
             <div class="denhaag-fullwidth-slider__card-content">
-              <span class="denhaag-fullwidth-slider__card-content__title">Carousel title</span>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
-            </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
-              <ArrowRightIcon />
-            </div>
-          </div>
-        </div>
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
-            <img
-              alt="Afbeelding 1"
-              src="https://plus.unsplash.com/premium_photo-1661957925180-dfcf3737a617?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80"
-            />
-          </div>
-          <div class="denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <span class="denhaag-fullwidth-slider__card-content__title">Carousel title</span>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
-            </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
-              <ArrowRightIcon />
-            </div>
-          </div>
-        </div>
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
-            <img
-              alt="Afbeelding 1"
-              src="https://images.unsplash.com/photo-1551039495-a95308f3f6b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
-            />
-          </div>
-          <div class="denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <span class="denhaag-fullwidth-slider__card-content__title">Carousel title</span>
+              <a aria-label="Link title goes here" href="/" class="denhaag-fullwidth-slider__card-content__title">
+                Carousel title
+              </a>
               <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
             <div class="denhaag-fullwidth-slider__card-arrow">

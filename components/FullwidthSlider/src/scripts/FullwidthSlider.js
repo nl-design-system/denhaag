@@ -10,6 +10,7 @@ import { PLAY_ICON_HTML, PAUSE_ICON_HTML } from '../stories/icons.stories.mdx';
 const SWIPER_CLASS = 'denhaag-fullwidth-slider';
 const SLIDE_CLASS = 'denhaag-fullwidth-slider__slide';
 const ACTIVE_SLIDE_CLASS = 'denhaag-fullwidth-slider__slide--active';
+const SLIDE_HREF_CLASS = 'denhaag-fullwidth-slider__card-content__title';
 const PLAYPAUSE_CLASS = 'denhaag-fullwidth-slider__controls-playpause';
 const NEXT_SLIDE_CLASS = 'denhaag-fullwidth-slider__next-slide';
 const PREV_SLIDE_CLASS = 'denhaag-fullwidth-slider__prev-slide';
@@ -30,6 +31,7 @@ const FullwidthSlider = () => {
       grabCursor: false,
       slideClass: SLIDE_CLASS,
       slideActiveClass: ACTIVE_SLIDE_CLASS,
+      lazy: true,
       autoplay: {
         delay: 7000,
       },
@@ -67,10 +69,12 @@ const FullwidthSlider = () => {
         if (!running) {
           start();
           playpause.innerHTML = PAUSE_ICON_HTML;
+          playpause.setAttribute('aria-label', 'Carousel pauzeren');
         }
         if (running) {
           stop();
           playpause.innerHTML = PLAY_ICON_HTML;
+          playpause.setAttribute('aria-label', 'Carousel afspelen');
         }
       });
     }
@@ -87,6 +91,18 @@ const FullwidthSlider = () => {
     swiper.on('slideNextTransitionStart', () => {
       const activeSlide = swiper.slidesEl.querySelector(`.${ACTIVE_SLIDE_CLASS}`);
       activeSlide.classList.remove('denhaag-fullwidth-slider__remove-animation');
+    });
+
+    swiper.on('slideChangeTransitionStart', () => {
+      // Remove tabindex from all inactive slides
+      const allSlideHrefs = document.querySelectorAll(`.${SLIDE_HREF_CLASS}`);
+      allSlideHrefs.forEach((el) => (el.tabIndex = -1));
+
+      // Add tabindex to current active slide
+      const activeSlideIndex = swiper.activeIndex;
+      const activeSlide = swiper.slides[activeSlideIndex];
+      const activeSlideHref = activeSlide.querySelector(`.${SLIDE_HREF_CLASS}`);
+      activeSlideHref.tabIndex = 0;
     });
   } catch (error) {
     console.log(error);
