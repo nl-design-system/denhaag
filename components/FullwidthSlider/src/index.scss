@@ -77,6 +77,12 @@
   @media (min-width: 1280px) {
     margin-inline: var(--denhaag-fullwidth-slider-card-margin-inline-xl);
   }
+
+  &:hover {
+    .denhaag-fullwidth-slider__card-arrow {
+      transform: var(--denhaag-fullwidth-slider-card-arrow-hover-transform);
+    }
+  }
 }
 
 .denhaag-fullwidth-slider__card-content {
@@ -92,10 +98,18 @@
 }
 
 .denhaag-fullwidth-slider__card-content__title {
+  font-family: var(--denhaag-fullwidth-slider-card-content-title-font-family);
   font-size: var(--denhaag-fullwidth-slider-card-content-title-font-size);
+  font-weight: var(--denhaag-fullwidth-slider-card-content-title-font-weight);
+  margin-block-start: var(--denhaag-fullwidth-slider-card-content-title-margin-block);
+  margin-block-end: var(--denhaag-fullwidth-slider-card-content-title-margin-block);
   padding-block-end: var(--denhaag-fullwidth-slider-card-content-title-padding-bottom);
-  text-decoration: var(--denhaag-fullwidth-slider-card-content-title-text-decoration);
   color: var(--denhaag-fullwidth-slider-card-content-title-color);
+
+  a {
+    text-decoration: var(--denhaag-fullwidth-slider-card-content-title-anchor-text-decoration);
+    color: var(--denhaag-fullwidth-slider-card-content-title-anchor-color);
+  }
 
   &::after {
     content: var(--denhaag-fullwidth-slider-card-content-title-after-content);
@@ -109,6 +123,7 @@
 
   &:hover {
     &::after {
+      cursor: var(--denhaag-fullwidth-slider-card-content-title-hover-after-cursor);
       box-shadow: var(--denhaag-fullwidth-slider-card-content-title-hover-after-box-shadow);
     }
   }
@@ -120,6 +135,10 @@
 }
 
 .denhaag-fullwidth-slider__card-content__author {
+  font-family: var(--denhaag-fullwidth-slider-card-content-author-font-family);
+  font-size: var(--denhaag-fullwidth-slider-card-content-author-font-size);
+  font-weight: var(--denhaag-fullwidth-slider-card-content-author-font-weight);
+  font-style: var(--denhaag-fullwidth-slider-card-content-author-font-style);
   color: var(--denhaag-fullwidth-slider-card-content-author-color);
 }
 
@@ -129,6 +148,7 @@
   bottom: var(--denhaag-fullwidth-slider-card-padding);
   right: var(--denhaag-fullwidth-slider-card-padding);
   pointer-events: var(--denhaag-fullwidth-slider-card-arrow-pointer-events);
+  transition: transform 350ms ease;
 }
 
 .denhaag-fullwidth-slider__slide-image {
@@ -180,6 +200,9 @@
   justify-content: var(--denhaag-fullwidth-slider-top-justify-content);
   align-items: var(--denhaag-fullwidth-slider-top-align-items);
   flex-wrap: var(--denhaag-fullwidth-slider-top-flex-wrap);
+  margin-block-end: var(--denhaag-fullwidth-slider-top-margin-block-end);
+  padding-inline-start: var(--denhaag-fullwidth-slider-top-padding-inline-xs);
+  padding-inline-end: var(--denhaag-fullwidth-slider-top-padding-inline-xs);
 
   @media (min-width: 768px) {
     padding-inline-start: var(--denhaag-fullwidth-slider-top-padding-inline-sm);
@@ -198,7 +221,10 @@
 }
 
 .denhaag-fullwidth-slider__top-title {
+  font-family: var(--denhaag-fullwidth-slider-top-title-font-family);
   font-size: var(--denhaag-fullwidth-slider-top-title-font-size);
+  font-weight: var(--denhaag-fullwidth-slider-top-title-font-weight);
+  color: var(--denhaag-fullwidth-slider-top-title-color);
   margin-block-start: var(--denhaag-fullwidth-slider-top-title-margin-block-start);
   margin-block-end: var(--denhaag-fullwidth-slider-top-title-margin-block-end-sm);
 
