@@ -1,6 +1,8 @@
 import { Canvas, Meta, Story } from "@storybook/addon-docs";
 import { ArrowRightIcon, NextIcon, PrevIcon, PauseIcon } from "./icons.stories.mdx";
+import { Notification } from "./notification.stories.mdx";
 import "../index.scss";
+import "../storybook.scss";
 import "../scripts/story.js";
 
 <Meta title="CSS/Page Elements/Fullwidth Slider" />
@@ -10,6 +12,7 @@ import "../scripts/story.js";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Default Slider">
+    <Notification />
     <div class="denhaag-fullwidth-slider swiper">
       <div class="denhaag-fullwidth-slider__top">
         <h2 class="denhaag-fullwidth-slider__top-title">Slider title here</h2>
@@ -110,6 +113,7 @@ import "../scripts/story.js";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Slider with > 5 slides">
+    <Notification />
     <div class="denhaag-fullwidth-slider swiper">
       <div class="denhaag-fullwidth-slider__top">
         <h2 class="denhaag-fullwidth-slider__top-title">Slider title here</h2>
@@ -342,6 +346,7 @@ import "../scripts/story.js";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="1 Slide (no controls)">
+    <Notification />
     <div class="denhaag-fullwidth-slider swiper">
       <div class="denhaag-fullwidth-slider__top">
         <h2 class="denhaag-fullwidth-slider__top-title">Slider title here</h2>
@@ -398,6 +403,7 @@ import "../scripts/story.js";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Card hover">
+    <Notification />
     <div class="denhaag-fullwidth-slider swiper">
       <div class="denhaag-fullwidth-slider__top">
         <h2 class="denhaag-fullwidth-slider__top-title">Slider title here</h2>
@@ -454,6 +460,7 @@ import "../scripts/story.js";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Card Focus">
+    <Notification />
     <div class="denhaag-fullwidth-slider swiper">
       <div class="denhaag-fullwidth-slider__top">
         <h2 class="denhaag-fullwidth-slider__top-title">Slider title here</h2>
@@ -510,6 +517,7 @@ import "../scripts/story.js";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Long Slider Title">
+    <Notification />
     <div class="denhaag-fullwidth-slider swiper">
       <div class="denhaag-fullwidth-slider__top">
         <h2 class="denhaag-fullwidth-slider__top-title">This is a very long slider title, maybe a bit too long</h2>
@@ -610,6 +618,7 @@ import "../scripts/story.js";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Long Card Title">
+    <Notification />
     <div class="denhaag-fullwidth-slider swiper">
       <div class="denhaag-fullwidth-slider__top">
         <h2 class="denhaag-fullwidth-slider__top-title">This is slider title</h2>
@@ -667,6 +676,7 @@ import "../scripts/story.js";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Slider Without Cards (captions)">
+    <Notification />
     <div class="denhaag-fullwidth-slider swiper">
       <div class="denhaag-fullwidth-slider__top">
         <h2 class="denhaag-fullwidth-slider__top-title">Slider title here</h2>
@@ -728,6 +738,7 @@ import "../scripts/story.js";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Slider Without Actions">
+    <Notification />
     <div class="denhaag-fullwidth-slider swiper">
       <div class="denhaag-fullwidth-slider__top">
         <h2 class="denhaag-fullwidth-slider__top-title">Slider title here</h2>

@@ -11,6 +11,8 @@ const SWIPER_CLASS = 'denhaag-fullwidth-slider';
 const SWIPER_TITLE_CLASS = 'denhaag-fullwidth-slider__top-title';
 const SLIDE_CLASS = 'denhaag-fullwidth-slider__slide';
 const ACTIVE_SLIDE_CLASS = 'denhaag-fullwidth-slider__slide--active';
+const REMOVE_SLIDE_ANIMATION_CLASS = 'denhaag-fullwidth-slider__remove-animation';
+const REVERSE_DIRECTION_CLASS = 'denhaag-fullwidth-slider__reverse-slide-direction';
 const SLIDE_TITLE_CLASS = 'denhaag-fullwidth-slider__card-content__title';
 const PLAYPAUSE_CLASS = 'denhaag-fullwidth-slider__controls-playpause';
 const NEXT_SLIDE_CLASS = 'denhaag-fullwidth-slider__next-slide';
@@ -18,6 +20,10 @@ const PREV_SLIDE_CLASS = 'denhaag-fullwidth-slider__prev-slide';
 const PAGINATION_CLASS = 'denhaag-fullwidth-slider__pagination';
 const BULLET_CLASS = 'denhaag-fullwidth-slider__pagination-bullet';
 const ACTIVE_BULLET_CLASS = 'denhaag-fullwidth-slider__pagination-bullet--active';
+const PREVIOUS_SLIDE_LABEL = 'Vorige afbeelding in de carousel';
+const NEXT_SLIDE_LABEL = 'Volgende afbeelding in de carousel';
+const PAUSE_SLIDER_LABEL = 'Carousel pauzeren';
+const PLAY_SLIDER_LABEL = 'Carousel afspelen';
 
 const FullwidthSlider = () => {
   const sliders = document.querySelectorAll(`.${SWIPER_CLASS}`);
@@ -25,6 +31,7 @@ const FullwidthSlider = () => {
     sliders.forEach((slider) => {
       const slideCount = slider.querySelectorAll(`.${SLIDE_CLASS}`)?.length;
       // Wrapping this in a try catch statement allows us to read errors easier in storybook
+      // Not neccesary to add try catch statement in gutenberg block
       try {
         const swiper = new Swiper(slider, {
           modules: [Navigation, Pagination, Autoplay, EffectCreative],
@@ -40,8 +47,8 @@ const FullwidthSlider = () => {
             delay: 7000,
           },
           a11y: {
-            prevSlideMessage: 'Vorige afbeelding in de carousel',
-            nextSlideMessage: 'Volgende afbeelding in de carousel',
+            prevSlideMessage: PREVIOUS_SLIDE_LABEL,
+            nextSlideMessage: NEXT_SLIDE_LABEL,
           },
           navigation: {
             nextEl: `.${NEXT_SLIDE_CLASS}`,
@@ -80,36 +87,34 @@ const FullwidthSlider = () => {
             if (!running) {
               start();
               playpause.innerHTML = PAUSE_ICON_HTML;
-              playpause.setAttribute('aria-label', 'Carousel pauzeren');
+              playpause.setAttribute('aria-label', PAUSE_SLIDER_LABEL);
             }
             if (running) {
               stop();
               playpause.innerHTML = PLAY_ICON_HTML;
-              playpause.setAttribute('aria-label', 'Carousel afspelen');
+              playpause.setAttribute('aria-label', PLAY_SLIDER_LABEL);
             }
           });
 
           // On init, remove slide animation from active slide (in view on load)
           const activeSlide = swiper.slides[swiper.activeIndex];
-          activeSlide.classList.add('denhaag-fullwidth-slider__remove-animation');
+          activeSlide.classList.add(REMOVE_SLIDE_ANIMATION_CLASS);
 
           // Reverse the slide animation when clicking previous slide
           swiper.on('slidePrevTransitionStart', () => {
-            swiper.slides.forEach((slide) =>
-              slide.classList.remove('denhaag-fullwidth-slider__reverse-slide-direction'),
-            );
+            swiper.slides.forEach((slide) => slide.classList.remove(REVERSE_DIRECTION_CLASS));
 
             const activeSlideIndex = swiper.activeIndex;
             const activeSlide = swiper.slides[activeSlideIndex];
             const slideJustLeft = swiper.slides[activeSlideIndex + 1];
-            activeSlide.classList.add('denhaag-fullwidth-slider__remove-animation');
-            slideJustLeft.classList.add('denhaag-fullwidth-slider__reverse-slide-direction');
+            activeSlide.classList.add(`.${REMOVE_SLIDE_ANIMATION_CLASS}`);
+            slideJustLeft.classList.add(REVERSE_DIRECTION_CLASS);
           });
 
           // If going back to forwards navigation, reset animation
           swiper.on('slideNextTransitionStart', () => {
             const activeSlide = swiper.slidesEl.querySelector(`.${ACTIVE_SLIDE_CLASS}`);
-            activeSlide.classList.remove('denhaag-fullwidth-slider__remove-animation');
+            activeSlide.classList.remove(`.${REMOVE_SLIDE_ANIMATION_CLASS}`);
           });
 
           swiper.on('slideChangeTransitionStart', () => {
