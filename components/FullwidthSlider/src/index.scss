@@ -14,11 +14,19 @@
 
 .denhaag-fullwidth-slider {
   position: var(--denhaag-fullwidth-slider-position);
-  max-width: var(--denhaag-fullwidth-slider-max-width);
   font-family: var(--denhaag-fullwidth-slider-font-family);
   font-weight: var(--denhaag-fullwidth-slider-font-weight);
   font-size: var(--denhaag-fullwidth-slider-font-size);
   color: var(--denhaag-fullwidth-slider-color);
+  overflow: var(--denhaag-fullwidth-slider-overflow);
+  max-width: var(--denhaag-fullwidth-slider-max-width-xs);
+  touch-action: var(--denhaag-fullwidth-slider-touch-action);
+
+  @media (min-width: 1768px) {
+    max-width: var(--denhaag-fullwidth-slider-max-width-xl);
+    margin-inline-start: var(--denhaag-fullwidth-slider-margin-inline-xl);
+    margin-inline-end: var(--denhaag-fullwidth-slider-margin-inline-xl);
+  }
 }
 
 .denhaag-fullwidth-slider__wrapper {
@@ -209,6 +217,15 @@
   @media (min-width: 1768px) {
     padding-inline-start: var(--denhaag-fullwidth-slider-top-padding-inline-xxl);
     padding-inline-end: var(--denhaag-fullwidth-slider-top-padding-inline-xxl);
+  }
+
+  &--no-title {
+    display: var(--denhaag-fullwidth-slider-top-no-title-display);
+    justify-content: var(--denhaag-fullwidth-slider-top-no-title-justify-content);
+
+    .denhaag-fullwidth-slider__pagination {
+      margin-inline-start: var(--denhaag-fullwidth-slider-top-no-title-pagination-margin-inline-start);
+    }
   }
 }
 

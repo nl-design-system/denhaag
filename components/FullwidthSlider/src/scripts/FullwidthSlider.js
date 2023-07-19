@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination, Autoplay, EffectCreative } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay, Keyboard, EffectCreative } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -34,15 +34,19 @@ const FullwidthSlider = () => {
       // Not neccesary to add try catch statement in gutenberg block
       try {
         const swiper = new Swiper(slider, {
-          modules: [Navigation, Pagination, Autoplay, EffectCreative],
+          modules: [Navigation, Pagination, Autoplay, Keyboard, EffectCreative],
           loop: true,
-          speed: 1000,
+          speed: 800,
           spaceBetween: 0,
           slidesPerView: 1,
           grabCursor: false,
           slideClass: SLIDE_CLASS,
           slideActiveClass: ACTIVE_SLIDE_CLASS,
           lazy: true,
+          keyboard: {
+            enabled: true,
+            onlyInViewport: true,
+          },
           autoplay: {
             delay: 7000,
           },
@@ -73,6 +77,7 @@ const FullwidthSlider = () => {
         });
 
         if (swiper) {
+          swiper.autoplay?.stop();
           const playpause = swiper.el.querySelector(`.${PLAYPAUSE_CLASS}`);
           const swiperTitle = slider.querySelector(`.${SWIPER_TITLE_CLASS}`);
 
@@ -107,14 +112,14 @@ const FullwidthSlider = () => {
             const activeSlideIndex = swiper.activeIndex;
             const activeSlide = swiper.slides[activeSlideIndex];
             const slideJustLeft = swiper.slides[activeSlideIndex + 1];
-            activeSlide.classList.add(`.${REMOVE_SLIDE_ANIMATION_CLASS}`);
+            activeSlide.classList.add(REMOVE_SLIDE_ANIMATION_CLASS);
             slideJustLeft.classList.add(REVERSE_DIRECTION_CLASS);
           });
 
           // If going back to forwards navigation, reset animation
           swiper.on('slideNextTransitionStart', () => {
             const activeSlide = swiper.slidesEl.querySelector(`.${ACTIVE_SLIDE_CLASS}`);
-            activeSlide.classList.remove(`.${REMOVE_SLIDE_ANIMATION_CLASS}`);
+            activeSlide.classList.remove(REMOVE_SLIDE_ANIMATION_CLASS);
           });
 
           swiper.on('slideChangeTransitionStart', () => {
