@@ -20,10 +20,10 @@ const PREV_SLIDE_CLASS = 'denhaag-fullwidth-slider__prev-slide';
 const PAGINATION_CLASS = 'denhaag-fullwidth-slider__pagination';
 const BULLET_CLASS = 'denhaag-fullwidth-slider__pagination-bullet';
 const ACTIVE_BULLET_CLASS = 'denhaag-fullwidth-slider__pagination-bullet--active';
-const PREVIOUS_SLIDE_LABEL = 'Vorige afbeelding in de carousel';
-const NEXT_SLIDE_LABEL = 'Volgende afbeelding in de carousel';
-const PAUSE_SLIDER_LABEL = 'Carousel pauzeren';
-const PLAY_SLIDER_LABEL = 'Carousel afspelen';
+const PREVIOUS_SLIDE_LABEL = 'Previous slide';
+const NEXT_SLIDE_LABEL = 'Next slide';
+const PAUSE_SLIDER_LABEL = 'Pause slider';
+const PLAY_SLIDER_LABEL = 'Play slider';
 
 const FullwidthSlider = () => {
   const sliders = document.querySelectorAll(`.${SWIPER_CLASS}`);
