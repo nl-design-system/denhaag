@@ -2,11 +2,19 @@
   "denhaag": {
     "fullwidth-slider": {
       "position": { "value": "relative" },
-      "max-width": { "value": "100%" },
       "font-family": { "value": "{denhaag.typography.sans-serif.font-family}" },
       "font-size": { "value": "{denhaag.typography.scale.s.font-size}" },
       "font-weight": { "value": "{denhaag.typography.weight.regular}" },
       "color": { "value": "{denhaag.color.grey.4}" },
+      "overflow": { "value": "clip" },
+      "touch-action": { "value": "pan-y" },
+      "max-width": {
+        "xs": { "value": "100%" },
+        "xl": { "value": "1280px" }
+      },
+      "margin-inline": {
+        "xl": { "value": "auto" }
+      },
       "animation": {
         "start": {
           "clip-path": { "value": "polygon(5% 0, 100% 0, 100% 100%, 0% 100%)" }
@@ -29,6 +37,13 @@
           "sm": { "value": "60px" },
           "xl": { "value": "100px" },
           "xxl": { "value": "0px" }
+        },
+        "no-title": {
+          "display": { "value": "flex" },
+          "justify-content": { "value": "space-between" },
+          "pagination": {
+            "margin-inline-start": { "value": "0px" }
+          }
         },
         "title": {
           "font-family": { "value": "{denhaag.typography.sans-serif-alternate.font-family}" },
@@ -58,7 +73,7 @@
         "image": {
           "width": { "value": "100%" },
           "height": {
-            "xs": { "value": "200px" },
+            "xs": { "value": "202px" },
             "sm": { "value": "432px" },
             "lg": { "value": "576px" }
           },
