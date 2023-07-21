@@ -15,6 +15,10 @@
       "margin-inline": {
         "xl": { "value": "auto" }
       },
+      "padding-block": {
+        "xs": { "value": "32px" },
+        "sm": { "value": "64px" }
+      },
       "animation": {
         "start": {
           "clip-path": { "value": "polygon(5% 0, 100% 0, 100% 100%, 0% 100%)" }
@@ -81,6 +85,26 @@
             "width": { "value": "100%" },
             "height": { "value": "100%" },
             "object-fit": { "value": "cover" }
+          },
+          "portrait": {
+            "position": { "value": "relative" },
+            "overflow": { "value": "hidden" },
+            "img": {
+              "object-fit": { "value": "contain" }
+            },
+            "before": {
+              "content": { "value": "''" },
+              "position": { "value": "absolute" },
+              "left": { "value": "0" },
+              "top": { "value": "0" },
+              "width": { "value": "100%" },
+              "height": { "value": "100%" },
+              "z-index": { "value": "-1" },
+              "background-size": { "value": "cover" },
+              "background-position": { "value": "center" },
+              "filter": { "value": "blur(10px)" },
+              "transform": { "value": "scale(1.2)" }
+            }
           }
         },
         "active": {
@@ -120,7 +144,7 @@
           "xs": { "value": "auto" },
           "sm": { "value": "523px" }
         },
-        "transform": { "value": "translateX(200px)" },
+        "transform": { "value": "translateX(24px)" },
         "transition": { "value": "all 500ms ease-in-out" },
         "opacity": { "value": "0" },
         "background-color": { "value": "{denhaag.color.white}" },
@@ -205,6 +229,9 @@
           },
           "hide": {
             "display": { "value": "none" }
+          },
+          "xxs": {
+            "margin-inline": { "value": "0px" }
           }
         },
         "arrows": {
@@ -220,6 +247,9 @@
           "hover": {
             "cursor": { "value": "pointer" },
             "background-color": { "value": "{denhaag.color.green.4}" }
+          },
+          "xxs": {
+            "display": { "value": "none" }
           }
         }
       },
