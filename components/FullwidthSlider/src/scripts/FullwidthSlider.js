@@ -32,13 +32,23 @@ const FullwidthSlider = () => {
   if (sliders) {
     sliders.forEach((slider) => {
       const slideCount = slider.querySelectorAll(`.${SLIDE_CLASS}`)?.length;
-      // Wrapping this in a try catch statement allows us to read errors easier in storybook
-      // Not neccesary to add try catch statement in gutenberg block
+      let prefersReduceMotion = false;
+
+      if ('matchMedia' in window) {
+        const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+        if (mediaQuery.matches) prefersReduceMotion = true;
+      }
+
+      // Only for storybook
+      if (slider.classList.contains('denhaag-fullwidth-slider--prefers-reduced-motion')) {
+        prefersReduceMotion = true;
+      }
+
       try {
         const swiper = new Swiper(slider, {
           modules: [Navigation, Pagination, Autoplay, Keyboard, EffectCreative],
           loop: true,
-          speed: 800,
+          speed: prefersReduceMotion ? 0 : 800,
           spaceBetween: 0,
           slidesPerView: 1,
           grabCursor: false,
@@ -84,7 +94,7 @@ const FullwidthSlider = () => {
           const swiperTitle = slider.querySelector(`.${SWIPER_TITLE_CLASS}`);
 
           if (slideCount < 2) {
-            playpause.classList.add(`${PLAYPAUSE_CLASS}--hide`);
+            if (playpause) playpause.classList.add(`${PLAYPAUSE_CLASS}--hide`);
             if (swiperTitle) swiperTitle.style['margin-block-end'] = 0;
           }
 
@@ -94,6 +104,7 @@ const FullwidthSlider = () => {
           }
 
           swiper.slides?.forEach((slide) => {
+            if (prefersReduceMotion) slide.classList.add(REMOVE_SLIDE_ANIMATION_CLASS);
             const portraitImage = slide.querySelector(`.${PORTRAIT_IMAGE_CLASS}`);
             if (portraitImage) {
               const imageSrc = portraitImage.querySelector('img').src;
@@ -101,20 +112,22 @@ const FullwidthSlider = () => {
             }
           });
 
-          playpause.addEventListener('click', () => {
-            const { running, start, stop } = swiper.autoplay;
+          if (playpause) {
+            playpause.addEventListener('click', () => {
+              const { running, start, stop } = swiper.autoplay;
 
-            if (!running) {
-              start();
-              playpause.innerHTML = PAUSE_ICON_HTML;
-              playpause.setAttribute('aria-label', PAUSE_SLIDER_LABEL);
-            }
-            if (running) {
-              stop();
-              playpause.innerHTML = PLAY_ICON_HTML;
-              playpause.setAttribute('aria-label', PLAY_SLIDER_LABEL);
-            }
-          });
+              if (!running) {
+                start();
+                playpause.innerHTML = PAUSE_ICON_HTML;
+                playpause.setAttribute('aria-label', PAUSE_SLIDER_LABEL);
+              }
+              if (running) {
+                stop();
+                playpause.innerHTML = PLAY_ICON_HTML;
+                playpause.setAttribute('aria-label', PLAY_SLIDER_LABEL);
+              }
+            });
+          }
 
           // On init, remove slide animation from active slide (in view on load)
           const activeSlide = swiper.slides[swiper.activeIndex];
@@ -134,7 +147,7 @@ const FullwidthSlider = () => {
           // If going back to forwards navigation, reset animation
           swiper.on('slideNextTransitionStart', () => {
             const activeSlide = swiper.slidesEl.querySelector(`.${ACTIVE_SLIDE_CLASS}`);
-            activeSlide.classList.remove(REMOVE_SLIDE_ANIMATION_CLASS);
+            if (!prefersReduceMotion) activeSlide.classList.remove(REMOVE_SLIDE_ANIMATION_CLASS);
           });
 
           swiper.on('slideChangeTransitionStart', () => {

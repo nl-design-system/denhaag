@@ -60,6 +60,11 @@
   margin-inline: var(--denhaag-fullwidth-slider-card-margin-inline-xs);
   width: var(--denhaag-fullwidth-slider-card-width-xs);
 
+  @media (prefers-reduced-motion) {
+    transition-delay: var(--denhaag-fullwidth-slider-slide-active-card-prefers-reduced-motion-transition-delay);
+    transition-duration: var(--denhaag-fullwidth-slider-slide-active-card-prefers-reduced-motion-transition-duration);
+  }
+
   @media (min-width: 768px) {
     margin-block-start: var(--denhaag-fullwidth-slider-card-margin-block-start-sm);
     margin-inline: var(--denhaag-fullwidth-slider-card-margin-inline-sm);
@@ -223,6 +228,13 @@
     transition-duration: var(--denhaag-fullwidth-slider-slide-active-card-transition-duration);
     transition-delay: var(--denhaag-fullwidth-slider-slide-active-card-transition-delay);
     pointer-events: inherit;
+  }
+}
+
+.denhaag-fullwidth-slider--prefers-reduced-motion {
+  .denhaag-fullwidth-slider__card {
+    transition-delay: var(--denhaag-fullwidth-slider-slide-active-card-prefers-reduced-motion-transition-delay);
+    transition-duration: var(--denhaag-fullwidth-slider-slide-active-card-prefers-reduced-motion-transition-duration);
   }
 }
 
