@@ -92,7 +92,7 @@ const FullwidthSlider = () => {
             const paginationEl = slider.querySelector(`.${PAGINATION_CLASS}`);
             paginationEl.classList.add(PAGINATION_CLASS_DYNAMIC);
           }
-          
+
           swiper.slides?.forEach((slide) => {
             const portraitImage = slide.querySelector(`.${PORTRAIT_IMAGE_CLASS}`);
             if (portraitImage) {
