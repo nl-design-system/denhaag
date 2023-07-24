@@ -52,6 +52,7 @@
   border-bottom: var(--denhaag-fullwidth-slider-card-border-bottom);
   border-color: var(--denhaag-fullwidth-slider-card-border-color);
   opacity: var(--denhaag-fullwidth-slider-card-opacity);
+  pointer-events: var(--denhaag-fullwidth-slider-card-pointer-events);
   background-color: var(--denhaag-fullwidth-slider-card-background-color);
   transition: var(--denhaag-fullwidth-slider-card-transition);
   transform: var(--denhaag-fullwidth-slider-card-transform);
@@ -127,16 +128,16 @@
     &:focus-visible {
       outline: var(--denhaag-focus-border);
     }
-  }
 
-  &::after {
-    content: var(--denhaag-fullwidth-slider-card-content-title-after-content);
-    position: var(--denhaag-fullwidth-slider-card-content-title-after-position);
-    top: var(--denhaag-fullwidth-slider-card-content-title-after-top);
-    bottom: var(--denhaag-fullwidth-slider-card-content-title-after-bottom);
-    left: var(--denhaag-fullwidth-slider-card-content-title-after-left);
-    right: var(--denhaag-fullwidth-slider-card-content-title-after-right);
-    transition: var(--denhaag-fullwidth-slider-card-content-title-after-transition);
+    &::after {
+      content: var(--denhaag-fullwidth-slider-card-content-title-after-content);
+      position: var(--denhaag-fullwidth-slider-card-content-title-after-position);
+      top: var(--denhaag-fullwidth-slider-card-content-title-after-top);
+      bottom: var(--denhaag-fullwidth-slider-card-content-title-after-bottom);
+      left: var(--denhaag-fullwidth-slider-card-content-title-after-left);
+      right: var(--denhaag-fullwidth-slider-card-content-title-after-right);
+      transition: var(--denhaag-fullwidth-slider-card-content-title-after-transition);
+    }
   }
 }
 
@@ -221,6 +222,7 @@
     transition-property: var(--denhaag-fullwidth-slider-slide-active-card-transition-property);
     transition-duration: var(--denhaag-fullwidth-slider-slide-active-card-transition-duration);
     transition-delay: var(--denhaag-fullwidth-slider-slide-active-card-transition-delay);
+    pointer-events: inherit;
   }
 }
 
@@ -229,24 +231,25 @@
   grid-template-columns: var(--denhaag-fullwidth-slider-top-grid-template-columns-xs);
   column-gap: var(--denhaag-fullwidth-slider-top-column-gap);
   align-items: var(--denhaag-fullwidth-slider-top-align-items);
+  overflow-x: var(--denhaag-fullwidth-slider-top-overflow-x);
   margin-block-end: var(--denhaag-fullwidth-slider-top-margin-block-end);
-  padding-inline-start: var(--denhaag-fullwidth-slider-top-padding-inline-xs);
-  padding-inline-end: var(--denhaag-fullwidth-slider-top-padding-inline-xs);
+  margin-inline-start: var(--denhaag-fullwidth-slider-top-margin-inline-xs);
+  margin-inline-end: var(--denhaag-fullwidth-slider-top-margin-inline-xs);
 
   @media (min-width: 768px) {
     grid-template-columns: var(--denhaag-fullwidth-slider-top-grid-template-columns-sm);
-    padding-inline-start: var(--denhaag-fullwidth-slider-top-padding-inline-sm);
-    padding-inline-end: var(--denhaag-fullwidth-slider-top-padding-inline-sm);
+    margin-inline-start: var(--denhaag-fullwidth-slider-top-margin-inline-sm);
+    margin-inline-end: var(--denhaag-fullwidth-slider-top-margin-inline-sm);
   }
 
   @media (min-width: 1280px) {
-    padding-inline-start: var(--denhaag-fullwidth-slider-top-padding-inline-xl);
-    padding-inline-end: var(--denhaag-fullwidth-slider-top-padding-inline-xl);
+    margin-inline-start: var(--denhaag-fullwidth-slider-top-margin-inline-xl);
+    margin-inline-end: var(--denhaag-fullwidth-slider-top-margin-inline-xl);
   }
 
   @media (min-width: 1768px) {
-    padding-inline-start: var(--denhaag-fullwidth-slider-top-padding-inline-xxl);
-    padding-inline-end: var(--denhaag-fullwidth-slider-top-padding-inline-xxl);
+    margin-inline-start: var(--denhaag-fullwidth-slider-top-margin-inline-xxl);
+    margin-inline-end: var(--denhaag-fullwidth-slider-top-margin-inline-xxl);
   }
 
   &--no-title {
@@ -354,6 +357,12 @@
     justify-content: var(--denhaag-fullwidth-slider-pagination-justify-content-sm);
     margin-inline-start: var(--denhaag-fullwidth-slider-pagination-margin-inline);
     margin-inline-end: var(--denhaag-fullwidth-slider-pagination-margin-inline);
+  }
+
+  &.denhaag-fullwidth-slider__pagination--dynamic {
+    @media (max-width: 767px) {
+      margin-left: var(--denhaag-fullwidth-slider-pagination-dynamic-margin-left);
+    }
   }
 
   .denhaag-fullwidth-slider__pagination-bullet {

@@ -18,6 +18,7 @@ const PLAYPAUSE_CLASS = 'denhaag-fullwidth-slider__controls-playpause';
 const NEXT_SLIDE_CLASS = 'denhaag-fullwidth-slider__next-slide';
 const PREV_SLIDE_CLASS = 'denhaag-fullwidth-slider__prev-slide';
 const PAGINATION_CLASS = 'denhaag-fullwidth-slider__pagination';
+const PAGINATION_CLASS_DYNAMIC = 'denhaag-fullwidth-slider__pagination--dynamic';
 const BULLET_CLASS = 'denhaag-fullwidth-slider__pagination-bullet';
 const ACTIVE_BULLET_CLASS = 'denhaag-fullwidth-slider__pagination-bullet--active';
 const PORTRAIT_IMAGE_CLASS = 'denhaag-fullwidth-slider__slide-image--portrait';
@@ -85,6 +86,11 @@ const FullwidthSlider = () => {
           if (slideCount < 2) {
             playpause.classList.add(`${PLAYPAUSE_CLASS}--hide`);
             if (swiperTitle) swiperTitle.style['margin-block-end'] = 0;
+          }
+
+          if (slideCount > 5) {
+            const paginationEl = slider.querySelector(`.${PAGINATION_CLASS}`);
+            paginationEl.classList.add(PAGINATION_CLASS_DYNAMIC);
           }
 
           swiper.slides?.forEach((slide) => {
