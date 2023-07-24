@@ -36,7 +36,8 @@
         "column-gap": { "value": "48px" },
         "align-items": { "value": "center" },
         "margin-block-end": { "value": "24px" },
-        "padding-inline": {
+        "overflow-x": { "value": "hidden" },
+        "margin-inline": {
           "xs": { "value": "24px" },
           "sm": { "value": "60px" },
           "xl": { "value": "100px" },
@@ -144,9 +145,13 @@
           "xs": { "value": "auto" },
           "sm": { "value": "523px" }
         },
-        "transform": { "value": "translateX(24px)" },
+        "transform": { "value": "translateX(12px)" },
         "transition": { "value": "all 500ms ease-in-out" },
         "opacity": { "value": "0" },
+        "pointer-events": { "value": "none" },
+        "active": {
+          "pointer-events": { "value": "inherit" }
+        },
         "background-color": { "value": "{denhaag.color.white}" },
         "hover": {
           "cursor": { "value": "pointer" },
@@ -264,6 +269,9 @@
         "width": { "value": "fit-content" },
         "min-height": { "value": "48px" },
         "margin-inline": { "value": "auto" },
+        "dynamic": {
+          "margin-left": { "value": "-40px" }
+        },
         "bullet": {
           "position": { "value": "relative" },
           "background-color": { "value": "{denhaag.color.grey.2}" },
