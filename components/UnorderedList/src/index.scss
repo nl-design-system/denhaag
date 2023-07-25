@@ -11,6 +11,8 @@
   }
 
   .denhaag-link--with-icon {
+    --denhaag-link-with-icon-vertical-align: baseline;
+
     display: var(--denhaag-unordered-list-link-with-icon-display);
   }
 

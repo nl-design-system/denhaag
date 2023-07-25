@@ -16,7 +16,7 @@
       },
       "link-with-icon": {
         "display": {
-          "value": "flex"
+          "value": "inline-flex"
         }
       },
       "list-item": {
