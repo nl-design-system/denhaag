@@ -7,11 +7,10 @@ import 'swiper/css/a11y';
 
 const SWIPER_CLASS = 'denhaag-inline-carousel';
 const SLIDE_CLASS = 'denhaag-inline-carousel__slide';
-//const ACTIVE_SLIDE_CLASS = 'denhaag-inline-carousel__slide--active';
 const NEXT_SLIDE_CLASS = 'denhaag-inline-carousel__next-slide';
 const PREV_SLIDE_CLASS = 'denhaag-inline-carousel__prev-slide';
 const PAGINATION_CLASS = 'denhaag-inline-carousel__pagination';
-//const PAGINATION_CLASS_DYNAMIC = 'denhaag-inline-carousel__pagination--dynamic';
+const PAGINATION_CLASS_DYNAMIC = 'denhaag-inline-carousel__pagination--dynamic';
 const BULLET_CLASS = 'denhaag-inline-carousel__pagination-bullet';
 const ACTIVE_BULLET_CLASS = 'denhaag-inline-carousel__pagination-bullet-active';
 //const PORTRAIT_IMAGE_CLASS = 'denhaag-inline-carousel__slide-image--portrait';
@@ -26,7 +25,7 @@ const InlineCarousel = () => {
 
       // Wrapping this in a try catch statement allows us to read errors easier in storybook
       try {
-        new Swiper(carousel, {
+        const swiper = new Swiper(carousel, {
           modules: [Navigation, Pagination, Autoplay],
           loop: true,
           speed: 800,
@@ -50,6 +49,13 @@ const InlineCarousel = () => {
             dynamicMainBullets: 3,
           },
         });
+
+        if (swiper) {
+          if (slideCount > 5) {
+            const paginationEl = carousel.querySelector(`.${PAGINATION_CLASS}`);
+            paginationEl.classList.add(PAGINATION_CLASS_DYNAMIC);
+          }
+        }
       } catch (error) {
         console.log(error);
       }

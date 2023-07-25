@@ -7,3 +7,4 @@ dist/
 tmp/
 storybook-static/
 components/ReadSpeaker/src/index.scss
+components/InlineCarousel/src/index.scss
