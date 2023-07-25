@@ -3,7 +3,7 @@
   "description": "The Note component",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
-  "version": "0.1.1-www-denhaag-nl.71",
+  "version": "0.1.1-www-denhaag-nl.72",
   "exports": {
     ".": {
       "types": "./dist/cjs/index.d.ts",
@@ -33,7 +33,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.71"
+    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.72"
   },
   "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
 }
