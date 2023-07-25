@@ -36,6 +36,6 @@
     "@gemeente-denhaag/baseprops": "0.2.3-alpha.269"
   },
   "dependencies": {
-    "swiper": "^10.0.3"
+    "swiper": "^10.0.4"
   }
 }

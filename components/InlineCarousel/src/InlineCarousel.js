@@ -1,53 +1,59 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/a11y';
 
 const SWIPER_CLASS = 'denhaag-inline-carousel';
+const SLIDE_CLASS = 'denhaag-inline-carousel__slide';
+//const ACTIVE_SLIDE_CLASS = 'denhaag-inline-carousel__slide--active';
 const NEXT_SLIDE_CLASS = 'denhaag-inline-carousel__next-slide';
 const PREV_SLIDE_CLASS = 'denhaag-inline-carousel__prev-slide';
 const PAGINATION_CLASS = 'denhaag-inline-carousel__pagination';
+//const PAGINATION_CLASS_DYNAMIC = 'denhaag-inline-carousel__pagination--dynamic';
 const BULLET_CLASS = 'denhaag-inline-carousel__pagination-bullet';
 const ACTIVE_BULLET_CLASS = 'denhaag-inline-carousel__pagination-bullet-active';
+//const PORTRAIT_IMAGE_CLASS = 'denhaag-inline-carousel__slide-image--portrait';
+const PREVIOUS_SLIDE_LABEL = 'Previous slide';
+const NEXT_SLIDE_LABEL = 'Next slide';
 
 const InlineCarousel = () => {
-  // Wrapping this in a try catch statement allows us to read errors easier in storybook
-  try {
-    new Swiper(`.${SWIPER_CLASS}`, {
-      modules: [Navigation, Pagination],
-      loop: true,
-      speed: 400,
-      spaceBetween: 100,
-      a11y: {
-        prevSlideMessage: 'Vorige afbeelding in de carousel',
-        nextSlideMessage: 'Volgende afbeelding in de carousel',
-      },
-      navigation: {
-        nextEl: `.${NEXT_SLIDE_CLASS}`,
-        prevEl: `.${PREV_SLIDE_CLASS}`,
-      },
-      pagination: {
-        el: `.${PAGINATION_CLASS}`,
-        bulletClass: BULLET_CLASS,
-        bulletActiveClass: ACTIVE_BULLET_CLASS,
-        type: 'custom',
-        renderCustom: (slider, current, total) => {
-          const className = BULLET_CLASS;
-          const activeClassName = ACTIVE_BULLET_CLASS;
-          const bullets = Array.from(Array(total)).map((bullet, i) => {
-            const index = i + 1;
-            if (slider.activeIndex === i)
-              return `<span aria-title="Slide ${index} of ${total}" class="${className} ${activeClassName}"></span>`;
-            return `<span aria-title="Slide ${index} of ${total}" class="${className}"></span>`;
-          });
-          return bullets.join('');
-        },
-      },
+  const carousels = document.querySelectorAll(`.${SWIPER_CLASS}`);
+  if (carousels) {
+    carousels.forEach((carousel) => {
+      const slideCount = carousel.querySelectorAll(`.${SLIDE_CLASS}`)?.length;
+
+      // Wrapping this in a try catch statement allows us to read errors easier in storybook
+      try {
+        new Swiper(carousel, {
+          modules: [Navigation, Pagination, Autoplay],
+          loop: true,
+          speed: 800,
+          spaceBetween: 10,
+          a11y: {
+            prevSlideMessage: PREVIOUS_SLIDE_LABEL,
+            nextSlideMessage: NEXT_SLIDE_LABEL,
+          },
+          navigation: {
+            nextEl: `.${NEXT_SLIDE_CLASS}`,
+            prevEl: `.${PREV_SLIDE_CLASS}`,
+          },
+          autoplay: {
+            delay: 7000,
+          },
+          pagination: {
+            el: `.${PAGINATION_CLASS}`,
+            bulletClass: BULLET_CLASS,
+            bulletActiveClass: ACTIVE_BULLET_CLASS,
+            dynamicBullets: slideCount > 5 ? true : false,
+            dynamicMainBullets: 3,
+          },
+        });
+      } catch (error) {
+        console.log(error);
+      }
     });
-  } catch (error) {
-    console.log(error);
   }
 };
 

@@ -2,7 +2,7 @@
   "denhaag": {
     "inline-carousel": {
       "position": { "value": "relative" },
-      "max-width": { "value": "700px" },
+      "width": { "value": "100%" },
       "font-family": { "value": "{denhaag.typography.sans-serif.font-family}" },
       "font-size": { "value": "{denhaag.typography.scale.s.font-size}" },
       "font-weight": { "value": "{denhaag.typography.weight.regular}" },
@@ -11,11 +11,11 @@
         "position": { "value": "relative" }
       },
       "slide": {
-        "width": { "value": "700px" },
+        "width": { "value": "100%" },
         "border-bottom": { "value": "1px solid" },
         "border-color": { "value": "{denhaag.color.grey.2}" },
         "image": {
-          "width": { "value": "700px" },
+          "width": { "value": "100%" },
           "height": { "value": "400px" },
           "img": {
             "width": { "value": "100%" },

@@ -1,10 +1,11 @@
 .denhaag-inline-carousel {
   position: var(--denhaag-inline-carousel-position);
-  max-width: var(--denhaag-inline-carousel-max-width);
+  width: var(--denhaag-inline-carousel-width);
   font-family: var(--denhaag-inline-carousel-font-family);
   font-weight: var(--denhaag-inline-carousel-font-weight);
   font-size: var(--denhaag-inline-carousel-font-size);
   color: var(--denhaag-inline-carousel-color);
+  overflow-x: clip;
 }
 
 .denhaag-inline-carousel__wrapper {
@@ -42,12 +43,21 @@
 }
 
 .denhaag-inline-carousel__content-download {
-  width: var(--denhaag-inline-carousel-content-download-width);
-  height: var(--denhaag-inline-carousel-content-download-height);
   color: var(--denhaag-inline-carousel-content-download-color);
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
 
   &:hover {
     cursor: var(--denhaag-inline-carousel-content-download-hover-cursor);
+  }
+
+  svg {
+    width: var(--denhaag-inline-carousel-content-download-width);
+    height: var(--denhaag-inline-carousel-content-download-height);
   }
 }
 
@@ -63,6 +73,8 @@
   border-radius: var(--denhaag-inline-carousel-arrows-border-radius);
   z-index: var(--denhaag-inline-carousel-arrows-z-index);
   color: var(--denhaag-inline-carousel-arrows-color);
+  outline: none;
+  border: none;
 
   &:hover {
     cursor: var(--denhaag-inline-carousel-arrows-hover-cursor);
@@ -85,6 +97,7 @@
   z-index: var(--denhaag-inline-carousel-pagination-z-index);
   display: var(--denhaag-inline-carousel-pagination-display);
   justify-content: var(--denhaag-inline-carousel-pagination-justify-content);
+  pointer-events: none;
 
   .denhaag-inline-carousel__pagination-bullet {
     background-color: var(--denhaag-inline-carousel-pagination-bullet-background-color);
