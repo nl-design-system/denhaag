@@ -44,6 +44,9 @@ const FullwidthSlider = () => {
         prefersReduceMotion = true;
       }
 
+      const prevEffect = !prefersReduceMotion ? ['-20%', 0, -1] : ['0%', 0, -1];
+      const nextEffect = !prefersReduceMotion ? ['100%', 0, 1] : ['0%', 0, -1];
+
       try {
         const swiper = new Swiper(slider, {
           modules: [Navigation, Pagination, Autoplay, Keyboard, EffectCreative],
@@ -80,10 +83,10 @@ const FullwidthSlider = () => {
           effect: 'creative',
           creativeEffect: {
             prev: {
-              translate: ['-20%', 0, -1],
+              translate: prevEffect,
             },
             next: {
-              translate: ['100%', 0, 1],
+              translate: nextEffect,
             },
           },
         });
