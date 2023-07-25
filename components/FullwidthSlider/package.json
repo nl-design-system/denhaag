@@ -3,7 +3,7 @@
   "description": "The Fullwidth Slider. A slider component that takes up the entire viewport width.",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
-  "version": "0.2.3-www-denhaag-nl.72",
+  "version": "0.2.3-www-denhaag-nl.73",
   "exports": {
     ".": {
       "types": "./dist/cjs/index.d.ts",
