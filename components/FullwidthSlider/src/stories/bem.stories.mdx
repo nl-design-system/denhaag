@@ -1017,3 +1017,104 @@ import "../scripts/story.js";
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
+
+### Prefers Reduced Motion
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Prefers Reduced Motion">
+    <Notification />
+    <div class="denhaag-fullwidth-slider denhaag-fullwidth-slider--prefers-reduced-motion">
+      <div class="denhaag-fullwidth-slider__top">
+        <h2 class="denhaag-fullwidth-slider__top-title">Slider title here</h2>
+        <div class="denhaag-fullwidth-slider__pagination"></div>
+        <div class="denhaag-fullwidth-slider__controls">
+          <button
+            aria-label="Vorige carousel afbeelding"
+            class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__prev-slide"
+          >
+            <PrevIcon />
+          </button>
+          <button aria-label="Carousel afspelen" class="denhaag-fullwidth-slider__controls-playpause">
+            <PlayIcon />
+          </button>
+          <button
+            aria-label="Volgende carousel afbeelding"
+            class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__next-slide"
+          >
+            <NextIcon />
+          </button>
+        </div>
+      </div>
+      <div class="swiper-wrapper">
+        <div class="denhaag-fullwidth-slider__slide swiper-slide">
+          <div class="denhaag-fullwidth-slider__slide-image">
+            <img
+              loading="lazy"
+              alt="Afbeelding 1"
+              src="https://images.unsplash.com/photo-1551039495-a95308f3f6b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+            />
+          </div>
+          <div class="denhaag-fullwidth-slider__card">
+            <div class="denhaag-fullwidth-slider__card-content">
+              <h4 class="denhaag-fullwidth-slider__card-content__title">
+                <a aria-label="Link title goes here" href="https://www.denhaag.nl">
+                  Carousel title 2
+                </a>
+              </h4>
+              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+            </div>
+            <div class="denhaag-fullwidth-slider__card-arrow">
+              <ArrowRightIcon />
+            </div>
+          </div>
+        </div>
+        <div class="denhaag-fullwidth-slider__slide swiper-slide">
+          <div class="denhaag-fullwidth-slider__slide-image">
+            <img
+              loading="lazy"
+              alt="Afbeelding 1"
+              src="https://plus.unsplash.com/premium_photo-1661957925180-dfcf3737a617?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80"
+            />
+          </div>
+          <div class="denhaag-fullwidth-slider__card">
+            <div class="denhaag-fullwidth-slider__card-content">
+              <h4 class="denhaag-fullwidth-slider__card-content__title">
+                <a aria-label="Link title goes here" href="https://www.denhaag.nl">
+                  Carousel title 3
+                </a>
+              </h4>
+              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+            </div>
+            <div class="denhaag-fullwidth-slider__card-arrow">
+              <ArrowRightIcon />
+            </div>
+          </div>
+        </div>
+        <div class="denhaag-fullwidth-slider__slide swiper-slide">
+          <div class="denhaag-fullwidth-slider__slide-image">
+            <img
+              loading="lazy"
+              alt="Afbeelding 1"
+              src="https://www.denhaag.nl/upload/40d142e4-1a8e-4f11-80ce-69792e4cf12b_den-haag-hofvijver-lente-headerfoto.jpg"
+            />
+          </div>
+          <div class="denhaag-fullwidth-slider__card">
+            <div class="denhaag-fullwidth-slider__card-content">
+              <h4 class="denhaag-fullwidth-slider__card-content__title">
+                <a aria-label="Link title goes here" href="https://www.denhaag.nl">
+                  Carousel title
+                </a>
+              </h4>
+              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+            </div>
+            <div class="denhaag-fullwidth-slider__card-arrow">
+              <ArrowRightIcon />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
