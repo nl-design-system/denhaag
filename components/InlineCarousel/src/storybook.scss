@@ -1,0 +1,27 @@
+.denhaag-storybook-page-container {
+  margin-inline-start: 12px;
+  margin-inline-end: 12px;
+
+  @media (min-width: 768px) {
+    max-width: 700px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+  }
+}
+
+.denhaag-storybook-notification {
+  display: flex;
+  align-items: center;
+  margin-inline-start: 12px;
+  margin-inline-end: 12px;
+  margin-block-start: 12px;
+  margin-block-end: 12px;
+
+  svg {
+    min-width: 24px;
+  }
+
+  span {
+    margin-inline-start: 12px;
+  }
+}

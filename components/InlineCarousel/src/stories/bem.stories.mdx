@@ -1,0 +1,324 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+import { DownloadIcon, NextSlideIcon, PrevSlideIcon } from "./icons.stories.mdx";
+import { Notification } from "./notification.stories.mdx";
+import "../index.scss";
+import "../storybook.scss";
+import "../story.js";
+
+<Meta title="CSS/Page Elements/Inline Carousel" />
+
+### Default
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Default Carousel">
+    <Notification />
+    <div class="denhaag-storybook-page-container">
+      <div class="denhaag-inline-carousel">
+        <div class="denhaag-inline-carousel__pagination"></div>
+        <button aria-label="Previous slide" class="denhaag-inline-carousel__arrows denhaag-inline-carousel__prev-slide">
+          <PrevSlideIcon />
+        </button>
+        <button aria-label="Next slide" class="denhaag-inline-carousel__arrows denhaag-inline-carousel__next-slide">
+          <NextSlideIcon />
+        </button>
+        <div class="swiper-wrapper">
+          <div class="denhaag-inline-carousel__slide swiper-slide">
+            <div class="denhaag-inline-carousel__slide-image">
+              <img
+                alt="Afbeelding 1"
+                src="https://images.unsplash.com/photo-1586174035695-35ab9e19215c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2030&q=80"
+              />
+            </div>
+            <div class="denhaag-inline-carousel__content">
+              <h4 class="denhaag-inline-carousel__content-caption">Carousel title</h4>
+              <button aria-label="Download slide image" class="denhaag-inline-carousel__content-download">
+                <DownloadIcon />
+              </button>
+            </div>
+          </div>
+          <div class="denhaag-inline-carousel__slide swiper-slide">
+            <div class="denhaag-inline-carousel__slide-image">
+              <img
+                alt="Afbeelding 1"
+                src="https://images.unsplash.com/photo-1551039495-a95308f3f6b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+              />
+            </div>
+            <div class="denhaag-inline-carousel__content">
+              <span class="denhaag-inline-carousel__content-title">Carousel title</span>
+              <button aria-label="Download slide image" class="denhaag-inline-carousel__content-download">
+                <DownloadIcon />
+              </button>
+            </div>
+          </div>
+          <div class="denhaag-inline-carousel__slide swiper-slide">
+            <div class="denhaag-inline-carousel__slide-image">
+              <img
+                alt="Afbeelding 1"
+                src="https://plus.unsplash.com/premium_photo-1661957925180-dfcf3737a617?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80"
+              />
+            </div>
+            <div class="denhaag-inline-carousel__content">
+              <span class="denhaag-inline-carousel__content-title">Carousel title</span>
+              <button aria-label="Download slide image" class="denhaag-inline-carousel__content-download">
+                <DownloadIcon />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Portrait photo
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Portrait Photos">
+    <Notification />
+    <div class="denhaag-storybook-page-container">
+      <div class="denhaag-inline-carousel">
+        <div class="denhaag-inline-carousel__pagination"></div>
+        <button aria-label="Previous slide" class="denhaag-inline-carousel__arrows denhaag-inline-carousel__prev-slide">
+          <PrevSlideIcon />
+        </button>
+        <button aria-label="Next slide" class="denhaag-inline-carousel__arrows denhaag-inline-carousel__next-slide">
+          <NextSlideIcon />
+        </button>
+        <div class="swiper-wrapper">
+          <div class="denhaag-inline-carousel__slide swiper-slide">
+            <div class="denhaag-inline-carousel__slide-image denhaag-inline-carousel__slide-image--portrait">
+              <img
+                alt="Afbeelding 1"
+                src="https://images.unsplash.com/photo-1553589703-43ef53bb6f6f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+              />
+            </div>
+            <div class="denhaag-inline-carousel__content">
+              <h4 class="denhaag-inline-carousel__content-caption">Carousel title</h4>
+              <button aria-label="Download slide image" class="denhaag-inline-carousel__content-download">
+                <DownloadIcon />
+              </button>
+            </div>
+          </div>
+          <div class="denhaag-inline-carousel__slide swiper-slide">
+            <div class="denhaag-inline-carousel__slide-image denhaag-inline-carousel__slide-image--portrait">
+              <img
+                alt="Afbeelding 2"
+                src="https://images.unsplash.com/photo-1602444836551-2f74d1fd0d04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+              />
+            </div>
+            <div class="denhaag-inline-carousel__content">
+              <span class="denhaag-inline-carousel__content-title">Carousel title</span>
+              <button aria-label="Download slide image" class="denhaag-inline-carousel__content-download">
+                <DownloadIcon />
+              </button>
+            </div>
+          </div>
+          <div class="denhaag-inline-carousel__slide swiper-slide">
+            <div class="denhaag-inline-carousel__slide-image">
+              <img
+                alt="Afbeelding 1"
+                src="https://plus.unsplash.com/premium_photo-1661957925180-dfcf3737a617?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80"
+              />
+            </div>
+            <div class="denhaag-inline-carousel__content">
+              <span class="denhaag-inline-carousel__content-title">Carousel title</span>
+              <button aria-label="Download slide image" class="denhaag-inline-carousel__content-download">
+                <DownloadIcon />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Prefer reduced motion
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Prefer Reduced Motion">
+    <Notification />
+    <div class="denhaag-storybook-page-container">
+      <div class="denhaag-inline-carousel denhaag-inline-carousel--prefers-reduced-motion">
+        <div class="denhaag-inline-carousel__pagination"></div>
+        <button aria-label="Previous slide" class="denhaag-inline-carousel__arrows denhaag-inline-carousel__prev-slide">
+          <PrevSlideIcon />
+        </button>
+        <button aria-label="Next slide" class="denhaag-inline-carousel__arrows denhaag-inline-carousel__next-slide">
+          <NextSlideIcon />
+        </button>
+        <div class="swiper-wrapper">
+          <div class="denhaag-inline-carousel__slide swiper-slide">
+            <div class="denhaag-inline-carousel__slide-image">
+              <img
+                alt="Afbeelding 1"
+                src="https://images.unsplash.com/photo-1586174035695-35ab9e19215c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2030&q=80"
+              />
+            </div>
+            <div class="denhaag-inline-carousel__content">
+              <h4 class="denhaag-inline-carousel__content-caption">Carousel title</h4>
+              <button aria-label="Download slide image" class="denhaag-inline-carousel__content-download">
+                <DownloadIcon />
+              </button>
+            </div>
+          </div>
+          <div class="denhaag-inline-carousel__slide swiper-slide">
+            <div class="denhaag-inline-carousel__slide-image">
+              <img
+                alt="Afbeelding 1"
+                src="https://images.unsplash.com/photo-1551039495-a95308f3f6b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+              />
+            </div>
+            <div class="denhaag-inline-carousel__content">
+              <span class="denhaag-inline-carousel__content-title">Carousel title</span>
+              <button aria-label="Download slide image" class="denhaag-inline-carousel__content-download">
+                <DownloadIcon />
+              </button>
+            </div>
+          </div>
+          <div class="denhaag-inline-carousel__slide swiper-slide">
+            <div class="denhaag-inline-carousel__slide-image">
+              <img
+                alt="Afbeelding 1"
+                src="https://plus.unsplash.com/premium_photo-1661957925180-dfcf3737a617?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80"
+              />
+            </div>
+            <div class="denhaag-inline-carousel__content">
+              <span class="denhaag-inline-carousel__content-title">Carousel title</span>
+              <button aria-label="Download slide image" class="denhaag-inline-carousel__content-download">
+                <DownloadIcon />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Slider with > 5 Slides
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Slider with > 5 Slides">
+    <Notification />
+    <div class="denhaag-storybook-page-container">
+      <div class="denhaag-inline-carousel">
+        <div class="denhaag-inline-carousel__pagination"></div>
+        <button aria-label="Previous slide" class="denhaag-inline-carousel__arrows denhaag-inline-carousel__prev-slide">
+          <PrevSlideIcon />
+        </button>
+        <button aria-label="Next slide" class="denhaag-inline-carousel__arrows denhaag-inline-carousel__next-slide">
+          <NextSlideIcon />
+        </button>
+        <div class="swiper-wrapper">
+          <div class="denhaag-inline-carousel__slide swiper-slide">
+            <div class="denhaag-inline-carousel__slide-image denhaag-inline-carousel__slide-image--portrait">
+              <img
+                alt="Afbeelding 1"
+                src="https://images.unsplash.com/photo-1553589703-43ef53bb6f6f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+              />
+            </div>
+            <div class="denhaag-inline-carousel__content">
+              <h4 class="denhaag-inline-carousel__content-caption">Carousel title</h4>
+              <button aria-label="Download slide image" class="denhaag-inline-carousel__content-download">
+                <DownloadIcon />
+              </button>
+            </div>
+          </div>
+          <div class="denhaag-inline-carousel__slide swiper-slide">
+            <div class="denhaag-inline-carousel__slide-image denhaag-inline-carousel__slide-image--portrait">
+              <img
+                alt="Afbeelding 2"
+                src="https://images.unsplash.com/photo-1602444836551-2f74d1fd0d04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+              />
+            </div>
+            <div class="denhaag-inline-carousel__content">
+              <span class="denhaag-inline-carousel__content-title">Carousel title</span>
+              <button aria-label="Download slide image" class="denhaag-inline-carousel__content-download">
+                <DownloadIcon />
+              </button>
+            </div>
+          </div>
+          <div class="denhaag-inline-carousel__slide swiper-slide">
+            <div class="denhaag-inline-carousel__slide-image">
+              <img
+                alt="Afbeelding 1"
+                src="https://plus.unsplash.com/premium_photo-1661957925180-dfcf3737a617?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80"
+              />
+            </div>
+            <div class="denhaag-inline-carousel__content">
+              <span class="denhaag-inline-carousel__content-title">Carousel title</span>
+              <button aria-label="Download slide image" class="denhaag-inline-carousel__content-download">
+                <DownloadIcon />
+              </button>
+            </div>
+          </div>
+          <div class="denhaag-inline-carousel__slide swiper-slide">
+            <div class="denhaag-inline-carousel__slide-image">
+              <img
+                alt="Afbeelding 1"
+                src="https://plus.unsplash.com/premium_photo-1661957925180-dfcf3737a617?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80"
+              />
+            </div>
+            <div class="denhaag-inline-carousel__content">
+              <span class="denhaag-inline-carousel__content-title">Carousel title</span>
+              <button aria-label="Download slide image" class="denhaag-inline-carousel__content-download">
+                <DownloadIcon />
+              </button>
+            </div>
+          </div>
+          <div class="denhaag-inline-carousel__slide swiper-slide">
+            <div class="denhaag-inline-carousel__slide-image">
+              <img
+                alt="Afbeelding 1"
+                src="https://images.unsplash.com/photo-1586174035695-35ab9e19215c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2030&q=80"
+              />
+            </div>
+            <div class="denhaag-inline-carousel__content">
+              <h4 class="denhaag-inline-carousel__content-caption">Carousel title</h4>
+              <button aria-label="Download slide image" class="denhaag-inline-carousel__content-download">
+                <DownloadIcon />
+              </button>
+            </div>
+          </div>
+          <div class="denhaag-inline-carousel__slide swiper-slide">
+            <div class="denhaag-inline-carousel__slide-image">
+              <img
+                alt="Afbeelding 1"
+                src="https://images.unsplash.com/photo-1551039495-a95308f3f6b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+              />
+            </div>
+            <div class="denhaag-inline-carousel__content">
+              <span class="denhaag-inline-carousel__content-title">Carousel title</span>
+              <button aria-label="Download slide image" class="denhaag-inline-carousel__content-download">
+                <DownloadIcon />
+              </button>
+            </div>
+          </div>
+          <div class="denhaag-inline-carousel__slide swiper-slide">
+            <div class="denhaag-inline-carousel__slide-image denhaag-inline-carousel__slide-image--portrait">
+              <img
+                alt="Afbeelding 2"
+                src="https://images.unsplash.com/photo-1602444836551-2f74d1fd0d04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+              />
+            </div>
+            <div class="denhaag-inline-carousel__content">
+              <span class="denhaag-inline-carousel__content-title">Carousel title</span>
+              <button aria-label="Download slide image" class="denhaag-inline-carousel__content-download">
+                <DownloadIcon />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
