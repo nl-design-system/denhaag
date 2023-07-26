@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/inline-carousel",
-  "version": "0.1.1-www-denhaag-nl.68",
+  "version": "0.1.1-www-denhaag-nl.74",
   "description": "Inline Carousel Component, made with Swiper",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "private": false,
@@ -31,9 +31,6 @@
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
-  },
-  "devDependencies": {
-    "@gemeente-denhaag/baseprops": "0.2.3-alpha.269"
   },
   "dependencies": {
     "swiper": "^10.0.4"
