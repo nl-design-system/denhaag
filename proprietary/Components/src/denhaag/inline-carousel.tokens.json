@@ -14,7 +14,6 @@
         "border-color": { "value": "{denhaag.color.grey.2}" },
         "image": {
           "width": { "value": "100%" },
-          "aspect-ratio": { "value": "16 / 9" },
           "height": {
             "xs": { "value": "175px" },
             "sm": { "value": "400px" }
