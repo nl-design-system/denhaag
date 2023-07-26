@@ -1,0 +1,34 @@
+.denhaag-illustrated-list-block {
+  display: var(--denhaag-illustrated-list-block-display);
+  flex-direction: var(--denhaag-illustrated-list-block-flex-direction);
+
+  &__image {
+    margin-block-end: var(--denhaag-illustrated-list-block-image-margin-block-end);
+    object-fit: var(--denhaag-illustrated-list-block-image-object-fit);
+
+    @media (min-width: 768px) {
+      --denhaag-illustrated-list-block-image-margin-block-end: 0;
+
+      margin-inline-end: var(--denhaag-illustrated-list-block-image-margin-inline-end);
+    }
+  }
+
+  [class^="utrecht-heading"] {
+    font-family: var(--denhaag-illustrated-list-block-content-heading-font-family);
+  }
+
+  + .denhaag-illustrated-list-block {
+    margin-block-start: var(--denhaag-illustrated-list-block-margin-block-start);
+
+    @media (min-width: 768px) {
+      --denhaag-illustrated-list-block-margin-block-start: var(--denhaag-space-block-2xl);
+    }
+  }
+
+  @media (min-width: 768px) {
+    --denhaag-illustrated-list-block-flex-direction: row-reverse;
+
+    align-items: var(--denhaag-illustrated-list-block-align-items);
+    justify-content: var(--denhaag-illustrated-list-block-justify-content);
+  }
+}
