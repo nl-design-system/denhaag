@@ -41,6 +41,8 @@ export interface TabProps extends Omit<BaseProps, 'classes'> {
    * They can use a second line if needed.
    */
   wrapped?: boolean;
+
+  selected?: boolean;
 }
 
 /**
@@ -49,14 +51,15 @@ export interface TabProps extends Omit<BaseProps, 'classes'> {
  * @constructor Construct an instance of Tab.
  */
 export const Tab: React.FC<TabProps> = (props: TabProps) => {
-  const rootClassNames = clsx('denhaag-tabs__tab', props.className);
+  const rootClassNames = clsx(
+    'denhaag-tabs__tab',
+    props.selected ? 'denhaag-tabs__tab--selected' : '',
+    props.className,
+  );
   return (
-    <MaterialTab
-      {...props}
-      classes={{ selected: 'denhaag-tabs__tab--selected' }}
-      className={rootClassNames}
-      disableRipple
-    />
+    <div {...props} className={rootClassNames}>
+      <span className="denhaag-tabs__tab-text">{props.label}</span>
+    </div>
   );
 };
 

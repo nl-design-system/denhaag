@@ -1,5 +1,4 @@
 import React from 'react';
-import { TabPanel as MaterialTabPanel } from '@material-ui/lab';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import clsx from 'clsx';
 import './styles/_tab-panel.scss';
@@ -20,9 +19,9 @@ export interface TabPanelProps extends Omit<BaseProps, 'classes'> {
 export const TabPanel: React.FC<TabPanelProps> = (props: TabPanelProps) => {
   const rootClassNames = clsx(props.className, 'denhaag-tabs__tab-panel');
   return (
-    <MaterialTabPanel {...props} className={rootClassNames}>
+    <div {...props} className={rootClassNames}>
       {props.children}
-    </MaterialTabPanel>
+    </div>
   );
 };
 

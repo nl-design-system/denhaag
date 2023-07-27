@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Meta, Story } from '@storybook/react';
-import Tab, { TabProps, TabContext, TabPanel, Tabs } from './index';
+import Tab, { TabProps, TabPanel, Tabs } from './index';
 import pkg from '../package.json';
 
 export default {
@@ -23,7 +23,7 @@ const Template: Story<TabProps> = (args: TabProps) => {
   const [value, setValue] = React.useState(0);
 
   return (
-    <TabContext value={value.toString()}>
+    <Fragment>
       <Tabs
         value={value}
         onChange={(_event: React.ChangeEvent<unknown>, newValue: number) => {
@@ -37,7 +37,7 @@ const Template: Story<TabProps> = (args: TabProps) => {
       <TabPanel value="0">Item One</TabPanel>
       <TabPanel value="1">Item Two</TabPanel>
       <TabPanel value="2">Item Three</TabPanel>
-    </TabContext>
+    </Fragment>
   );
 };
 
