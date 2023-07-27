@@ -1,4 +1,10 @@
+.denhaag-tabs {
+  display: flex;
+}
+
 .denhaag-tabs__container {
+  display: flex;
+  width: 100%;
   border-bottom: var(--denhaag-tabs-border-width) var(--denhaag-tabs-border-style) var(--denhaag-tabs-border-color);
 }
 

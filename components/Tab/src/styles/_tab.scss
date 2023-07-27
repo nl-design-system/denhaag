@@ -8,10 +8,20 @@
   font-weight: var(--denhaag-tabs-tab-font-weight);
   font-family: var(--denhaag-tabs-tab-font-family);
   line-height: 1.5;
+  min-width: 160px;
 }
 
 .denhaag-tabs__tab.denhaag-tabs__tab--selected {
   font-weight: var(--denhaag-tabs-tab-selected-font-weight);
+}
+
+.denhaag-tabs__tab-text {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  letter-spacing: 0.02857em;
 }
 
 .denhaag-tabs__tab--focus::after,
