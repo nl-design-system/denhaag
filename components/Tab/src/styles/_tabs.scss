@@ -1,5 +1,6 @@
 .denhaag-tabs {
   display: flex;
+  position: relative;
 }
 
 .denhaag-tabs__container {
@@ -11,4 +12,6 @@
 .denhaag-tabs__tab-indicator {
   background-color: var(--denhaag-tabs-tab-indicator-border-color);
   height: var(--denhaag-tabs-tab-indicator-border-width);
+  position: absolute;
+  bottom: 0;
 }

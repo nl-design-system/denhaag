@@ -1,6 +1,11 @@
 .denhaag-tabs__tab-panel {
+  display: none;
   padding-block-start: var(--denhaag-tabs-tab-panel-padding-block-start);
   padding-inline-start: var(--denhaag-tabs-tab-panel-padding-inline-start);
   padding-block-end: var(--denhaag-tabs-tab-panel-padding-block-end);
   padding-inline-end: var(--denhaag-tabs-tab-panel-padding-inline-end);
+
+  &--active {
+    display: block;
+  }
 }

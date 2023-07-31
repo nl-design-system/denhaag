@@ -1,10 +1,8 @@
-import React, { ReactElement } from 'react';
-import { Tab as MaterialTab } from '@material-ui/core';
-import BaseProps from '@gemeente-denhaag/baseprops';
+import React, { HTMLAttributes, ReactElement } from 'react';
 import './styles/_tab.scss';
 import clsx from 'clsx';
 
-export interface TabProps extends Omit<BaseProps, 'classes'> {
+export interface TabProps extends HTMLAttributes<HTMLDivElement> {
   /**
    * If true, the tab will be disabled.
    */
@@ -26,21 +24,10 @@ export interface TabProps extends Omit<BaseProps, 'classes'> {
   icon?: ReactElement;
 
   /**
-   * The label element.
-   */
-  label: React.ReactNode;
-
-  /**
    * You can provide your own value.
    * Otherwise, we fallback to the child position index.
    */
   value?: number | string;
-
-  /**
-   * Tab labels appear in a single row.
-   * They can use a second line if needed.
-   */
-  wrapped?: boolean;
 
   selected?: boolean;
 }
@@ -58,7 +45,7 @@ export const Tab: React.FC<TabProps> = (props: TabProps) => {
   );
   return (
     <div {...props} className={rootClassNames}>
-      <span className="denhaag-tabs__tab-text">{props.label}</span>
+      {props.children}
     </div>
   );
 };
