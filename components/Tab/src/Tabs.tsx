@@ -1,8 +1,6 @@
 import React, { HTMLAttributes } from 'react';
 import './styles/_tabs.scss';
 import clsx from 'clsx';
-import { TabIndicator } from './TabIndicator';
-import { TabsContainer } from './TabsContainer';
 
 export interface TabsProps extends HTMLAttributes<HTMLDivElement>  {
 
@@ -23,8 +21,7 @@ export const Tabs: React.FC<TabsProps> = (props: TabsProps) => {
   const rootClassNames = clsx('denhaag-tabs', props.className);
   return (
     <div className={rootClassNames}>
-      <TabsContainer>{props.children}</TabsContainer>
-      <TabIndicator />
+      {props.children}
     </div>
   );
 };
