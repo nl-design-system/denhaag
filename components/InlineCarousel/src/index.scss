@@ -13,6 +13,13 @@
   width: var(--denhaag-inline-carousel-slide-width);
   border-bottom: var(--denhaag-inline-carousel-slide-border-bottom);
   border-color: var(--denhaag-inline-carousel-slide-border-color);
+
+  &.swiper-slide-active {
+    .denhaag-inline-carousel__content {
+      opacity: var(--denhaag-inline-carousel-content-active-opacity);
+      transition-delay: var(--denhaag-inline-carousel-content-active-transition-delay);
+    }
+  }
 }
 
 .denhaag-inline-carousel__slide-image {
@@ -61,6 +68,8 @@
   justify-content: var(--denhaag-inline-carousel-content-justify-content);
   align-items: var(--denhaag-inline-carousel-content-align-items);
   max-width: var(--denhaag-inline-carousel-content-max-width);
+  opacity: var(--denhaag-inline-carousel-content-opacity);
+  transition: var(--denhaag-inline-carousel-content-transition);
 }
 
 .denhaag-inline-carousel__content-caption {
@@ -81,11 +90,9 @@
   justify-content: var(--denhaag-inline-carousel-content-download-justify-content);
   align-items: var(--denhaag-inline-carousel-content-download-align-items);
   background-color: var(--denhaag-inline-carousel-content-download-background-color);
-  transition: var(--denhaag-inline-carousel-content-download-transition);
 
   &:hover {
     cursor: var(--denhaag-inline-carousel-content-download-hover-cursor);
-    transform: var(--denhaag-inline-carousel-content-download-hover-transform);
   }
 
   &:focus-visible,
