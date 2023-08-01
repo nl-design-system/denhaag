@@ -278,28 +278,35 @@
         },
         "bullet": {
           "position": { "value": "relative" },
-          "background-color": { "value": "{denhaag.color.grey.2}" },
           "opacity": { "value": "1" },
           "width": { "value": "12px" },
           "height": { "value": "12px" },
           "border-radius": { "value": "50%" },
           "margin-inline": { "value": "4px" },
-          "transform": { "value": "scale(0)" },
-          "transition": { "value": "200ms transform, 200ms left" },
+          "transition": { "value": "all 200ms" },
+          "border": { "value": "2px solid" },
+          "border-color": { "value": "{denhaag.color.green.3}" },
+          "background-color": { "value": "{denhaag.color.white}" },
+          "dynamic": {
+            "opacity": { "value": "0" }
+          },
           "active": {
             "background-color": { "value": "{denhaag.color.green.3}" },
             "opacity": { "value": "1" },
-            "transform": { "value": "scale(1)" },
+            "width": { "value": "12px" },
+            "height": { "value": "12px" },
             "main": {
               "opacity": { "value": "1" },
-              "transform": { "value": "scale(1)" },
-              "background-color": { "value": "{denhaag.color.grey.2}" }
+              "width": { "value": "12px" },
+              "height": { "value": "12px" }
             },
             "next-prev": {
-              "transform": { "value": "scale(0.75)" }
+              "width": { "value": "8px" },
+              "height": { "value": "8px" }
             },
             "next-next-prev-prev": {
-              "transform": { "value": "scale(0.5)" }
+              "width": { "value": "4px" },
+              "height": { "value": "4px" }
             }
           }
         }
