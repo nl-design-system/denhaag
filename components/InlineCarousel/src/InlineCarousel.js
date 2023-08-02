@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -39,7 +39,7 @@ const InlineCarousel = () => {
       // Wrapping this in a try catch statement allows us to read errors easier in storybook
       try {
         const swiper = new Swiper(carousel, {
-          modules: [Navigation, Pagination, Autoplay],
+          modules: [Navigation, Pagination],
           loop: true,
           speed: prefersReduceMotion ? 0 : 800,
           spaceBetween: 10,
@@ -50,9 +50,6 @@ const InlineCarousel = () => {
           navigation: {
             nextEl: `.${NEXT_SLIDE_CLASS}`,
             prevEl: `.${PREV_SLIDE_CLASS}`,
-          },
-          autoplay: {
-            delay: 7000,
           },
           pagination: {
             el: `.${PAGINATION_CLASS}`,
