@@ -135,7 +135,7 @@
           "border-radius": { "value": "50%" },
           "margin-inline": { "value": "4px" },
           "transition": { "value": "all 200ms" },
-          "border": { "value": "2px solid" },
+          "border": { "value": "1px solid" },
           "border-color": { "value": "{denhaag.color.green.3}" },
           "background-color": { "value": "{denhaag.color.white}" },
           "dynamic": {
