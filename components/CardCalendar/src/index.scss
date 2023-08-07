@@ -194,7 +194,7 @@
 .denhaag-card-calendar__item--hover,
 .denhaag-card-calendar__item:hover {
   cursor: var(--denhaag-card-calendar-item-hover-cursor);
-  box-shadow: var(--denhaag-card-calendar-item-hover-box-shadow, var(--denhaag-shadow-default));
+  box-shadow: var(--denhaag-card-calendar-item-hover-box-shadow, var(--denhaag-box-shadow-default));
   .denhaag-card-calendar__item-footer-action {
     transform: var(--denhaag-card-calendar-item-footer-action-hover-transform);
   }
@@ -204,5 +204,5 @@
 .denhaag-card-calendar__item:focus-visible {
   border: var(--denhaag-card-calendar-item-focus-border);
   border-color: var(--denhaag-card-calendar-item-focus-border-color);
-  box-shadow: var(--denhaag-card-calendar-item-focus-box-shadow, var(--denhaag-shadow-default));
+  box-shadow: var(--denhaag-card-calendar-item-focus-box-shadow, var(--denhaag-box-shadow-default));
 }

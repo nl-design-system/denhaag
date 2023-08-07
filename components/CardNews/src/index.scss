@@ -32,7 +32,7 @@
   --denhaag-card-news-icon-opacity: 100%;
   --denhaag-card-news-translate: translateY(-0.125rem);
 
-  box-shadow: var(--denhaag-shadow-default);
+  box-shadow: var(--denhaag-box-shadow-default);
   transform: var(--denhaag-card-news-translate);
 }
 
@@ -42,7 +42,7 @@
   --denhaag-card-news-icon-opacity: 100%;
   --denhaag-card-news-translate: 0;
 
-  box-shadow: var(--denhaag-shadow-default);
+  box-shadow: var(--denhaag-box-shadow-default);
   transition: var(--denhaag-card-news-focus-transition);
 }
 
