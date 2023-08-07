@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/procedure",
-  "version": "0.2.3-www-denhaag-nl.78",
+  "version": "0.2.3-www-denhaag-nl.79",
   "description": "A Procedure component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "private": false,
@@ -19,7 +19,8 @@
       "types": "./dist/cjs/index.d.ts",
       "import": "./dist/mjs/index.js",
       "default": "./dist/cjs/index.js"
-    }
+    },
+    "./index.css": "./dist/index.css"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/mjs/index.js",
