@@ -5,14 +5,7 @@
       "background-color": { "value": "{denhaag.color.ocher.3}" },
       "background-image-width": { "value": "41.66%" },
       "background-image-position": { "value": "absolute" },
-      "padding-block-start": {
-        "xs": { "value": "{denhaag.space.block.4xl}" },
-        "sm": { "value": "{denhaag.space.block.4xl}" },
-        "md": { "value": "56px" },
-        "lg": { "value": "64px" },
-        "xl": { "value": "72px" }
-      },
-      "padding-block-end": {
+      "padding-block": {
         "xs": { "value": "{denhaag.space.block.4xl}" },
         "sm": { "value": "{denhaag.space.block.4xl}" },
         "md": { "value": "56px" },
@@ -55,8 +48,7 @@
         "border-color": { "value": "{denhaag.color.blue.1}" },
         "padding-block-start": { "value": "{denhaag.space.block.xl}" },
         "padding-block-end": { "value": "{denhaag.space.block.md}" },
-        "padding-inline-start": { "value": "{denhaag.space.block.xl}" },
-        "padding-inline-end": { "value": "{denhaag.space.block.xl}" },
+        "padding-inline": { "value": "{denhaag.space.block.xl}" },
         "title": {
           "color": { "value": "{denhaag.color.grey.5}" }
         },
