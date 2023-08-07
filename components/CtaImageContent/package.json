@@ -1,7 +1,7 @@
 {
   "name": "@gemeente-denhaag/cta-image-content",
   "version": "0.1.1-www-denhaag-nl.78",
-  "description": "The CtaImageContent component",
+  "description": "A Call To Action Image-content component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "private": false,
   "publishConfig": {

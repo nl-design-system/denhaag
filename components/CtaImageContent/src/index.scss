@@ -1,9 +1,9 @@
 .denhaag-cta-image-content {
-  position: var(--denhaag-cta-image-content-position);
-  border: var(--denhaag-cta-image-content-border);
   background-color: var(--denhaag-cta-image-content-background-color);
+  border: var(--denhaag-cta-image-content-border);
   display: var(--denhaag-cta-image-content-display);
   flex-direction: var(--denhaag-cta-image-content-flex-direction);
+  position: relative;
 }
 
 .denhaag-cta-image-content:hover,
@@ -17,14 +17,12 @@
 }
 
 .denhaag-cta-image-content__content {
-  padding-inline-start: var(--denhaag-cta-image-content-content-padding-inline);
-  padding-inline-end: var(--denhaag-cta-image-content-content-padding-inline);
-  padding-block-start: var(--denhaag-cta-image-content-content-padding-block);
-  padding-block-end: var(--denhaag-cta-image-content-content-padding-block);
+  padding-inline: var(--denhaag-cta-image-content-content-padding-inline);
+  padding-block: var(--denhaag-cta-image-content-content-padding-block);
 }
 
 .denhaag-cta-image-content__image {
-  width: var(--denhaag-cta-image-content-image-width);
+  width: var(--denhaag-cta-image-content-image-width, 100%);
 }
 
 .denhaag-cta-image-content__title {
@@ -46,16 +44,16 @@
 
 .denhaag-cta-image-content__button {
   margin-block-start: var(--denhaag-cta-image-content-button-margin-block-start);
-  position: var(--denhaag-cta-image-content-button-position);
+  position: initial;
 }
 
 .denhaag-cta-image-content__button::after {
-  position: var(--denhaag-cta-image-content-button-after-position);
-  content: var(--denhaag-cta-image-content-button-after-content);
-  top: var(--denhaag-cta-image-content-button-after-top);
-  right: var(--denhaag-cta-image-content-button-after-right);
-  bottom: var(--denhaag-cta-image-content-button-after-bottom);
-  left: var(--denhaag-cta-image-content-button-after-left);
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .denhaag-cta-image-content--focus .denhaag-button::after {
