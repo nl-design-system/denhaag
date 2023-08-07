@@ -33,7 +33,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-alpha.270",
+    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.78",
     "@gemeente-denhaag/responsive-content": "0.1.1-www-denhaag-nl.78"
   },
   "peerDependencies": {
