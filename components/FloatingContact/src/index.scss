@@ -3,7 +3,7 @@
     #{$selector} {
       --denhaag-floating-contact-bottom: 0;
       --denhaag-floating-contact-overlay-border-radius: 0;
-      --denhaag-floating-contact-overlay-display: var(--denhaag-floating-contact-active-overlay-display);
+      --denhaag-floating-contact-overlay-display: flex;
       --denhaag-floating-contact-overlay-width: 100%;
       --denhaag-floating-contact-position: static;
       --denhaag-floating-contact-right: 0;
@@ -34,15 +34,20 @@
   flex-flow: column;
   gap: calc(var(--denhaag-floating-contact-gap) + (var(--denhaag-floating-contact-overlay-arrow-width) / 2));
   position: var(--denhaag-floating-contact-position);
-  bottom: var(--denhaag-floating-contact-bottom);
-  right: var(--denhaag-floating-contact-right);
+  bottom: var(--denhaag-floating-contact-offset);
+  right: var(--denhaag-floating-contact-offset);
   z-index: var(--denhaag-floating-contact-index);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) AND (min-height: 550px) {
   .denhaag-theme {
-    --denhaag-floating-contact-bottom: var(--denhaag-space-block-2xl);
-    --denhaag-floating-contact-right: var(--denhaag-space-inline-2xl);
+    --denhaag-floating-contact-offset: var(--denhaag-space-block-2xl);
+  }
+}
+
+@media (max-height: 550px) AND (orientation: landscape) {
+  .denhaag-theme {
+    --denhaag-floating-contact-overlay-width: fit-content;
   }
 }
 
@@ -64,10 +69,8 @@
   font-weight: var(--denhaag-floating-contact-switch-font-weight);
   line-height: var(--denhaag-floating-contact-switch-line-height);
   gap: var(--denhaag-floating-contact-switch-gap);
-  padding-block-start: 0;
-  padding-block-end: 0;
-  padding-inline-start: 0;
-  padding-inline-end: 0;
+  padding-block: 0;
+  padding-inline: 0;
 }
 
 .denhaag-floating-contact-switch:hover,
@@ -92,7 +95,7 @@
 
 .denhaag-floating-contact-switch__icon {
   align-items: center;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1;
   display: flex;
   justify-content: center;
   height: var(--denhaag-floating-contact-switch-icon-size);
@@ -109,10 +112,8 @@
   border: var(--denhaag-floating-contact-switch-border-width) var(--denhaag-floating-contact-switch-border-style)
     var(--denhaag-floating-contact-switch-border-color);
   color: var(--denhaag-floating-contact-switch-icons-color);
-  padding-block-start: var(--denhaag-floating-contact-switch-padding-block);
-  padding-block-end: var(--denhaag-floating-contact-switch-padding-block);
-  padding-inline-start: var(--denhaag-floating-contact-switch-padding-inline);
-  padding-inline-end: var(--denhaag-floating-contact-switch-padding-inline);
+  padding-block: var(--denhaag-floating-contact-switch-padding-block);
+  padding-inline: var(--denhaag-floating-contact-switch-padding-inline);
 }
 
 .denhaag-floating-contact-switch__icons-inner {
@@ -124,18 +125,14 @@
 
 .denhaag-floating-contact-switch[aria-expanded="true"] .denhaag-floating-contact-switch__icons-inner:last-child,
 .denhaag-floating-contact-switch:not([aria-expanded="true"]) .denhaag-floating-contact-switch__icons-inner:first-child {
-  --denhaag-floating-contact-switch-icons-display: var(--denhaag-floating-contact-active-switch-icons-display);
+  --denhaag-floating-contact-switch-icons-display: flex;
 }
 
 .denhaag-floating-contact-switch__label {
-  padding-block-start: calc(
+  padding-block: calc(
     var(--denhaag-floating-contact-switch-padding-block) - var(--denhaag-floating-contact-switch-border-width)
   );
-  padding-block-end: calc(
-    var(--denhaag-floating-contact-switch-padding-block) - var(--denhaag-floating-contact-switch-border-width)
-  );
-  padding-inline-start: var(--denhaag-floating-contact-switch-padding-inline);
-  padding-inline-end: var(--denhaag-floating-contact-switch-padding-inline);
+  padding-inline: var(--denhaag-floating-contact-switch-padding-inline);
 }
 
 .denhaag-floating-contact-overlay {
@@ -146,10 +143,8 @@
   display: var(--denhaag-floating-contact-overlay-display);
   flex-direction: column;
   gap: var(--denhaag-floating-contact-overlay-gap);
-  padding-block-start: var(--denhaag-floating-contact-overlay-padding-block);
-  padding-block-end: var(--denhaag-floating-contact-overlay-padding-block);
-  padding-inline-start: var(--denhaag-floating-contact-overlay-padding-inline);
-  padding-inline-end: var(--denhaag-floating-contact-overlay-padding-inline);
+  padding-block: var(--denhaag-floating-contact-overlay-padding-block);
+  padding-inline: var(--denhaag-floating-contact-overlay-padding-inline);
   position: relative;
   max-width: 100%;
   order: -1;
@@ -157,7 +152,7 @@
 }
 
 .denhaag-floating-contact-switch[aria-expanded="true"] ~ .denhaag-floating-contact-overlay {
-  --denhaag-floating-contact-overlay-display: var(--denhaag-floating-contact-active-overlay-display);
+  --denhaag-floating-contact-overlay-display: flex;
 }
 
 .denhaag-floating-contact-overlay::after {
@@ -177,8 +172,7 @@
   font-size: var(--denhaag-floating-contact-heading-font-size);
   font-weight: var(--denhaag-floating-contact-heading-font-weight);
   line-height: var(--denhaag-floating-contact-heading-line-height);
-  margin-block-start: 0;
-  margin-block-end: 0;
+  margin-block: 0;
 }
 
 .denhaag-floating-contact__heading--zoomed-visible {
@@ -187,10 +181,8 @@
   clip-path: var(--denhaag-floating-contact-heading-zoomed-clip-path);
   height: var(--denhaag-floating-contact-heading-zoomed-height);
   overflow: hidden;
-  padding-inline-start: 0;
-  padding-inline-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
+  padding-inline: 0;
+  margin-inline: 0;
   position: var(--denhaag-floating-contact-heading-zoomed-position);
   white-space: var(--denhaag-floating-contact-heading-zoomed-white-space);
   width: var(--denhaag-floating-contact-heading-zoomed-width);
@@ -258,8 +250,7 @@
 }
 
 .denhaag-floating-contact__item-title {
-  margin-block-start: 0;
-  margin-block-end: 0;
+  margin-block: 0;
   position: relative;
   color: var(--denhaag-floating-contact-item-title-color);
 }
