@@ -65,16 +65,12 @@
     "property-disallowed-list": [
       [
         "margin",
-        "margin-block",
         "margin-bottom",
-        "margin-inline",
         "margin-left",
         "margin-right",
         "margin-top",
         "padding",
-        "padding-block",
         "padding-bottom",
-        "padding-inline",
         "padding-left",
         "padding-right",
         "padding-top"

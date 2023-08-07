@@ -1,7 +1,7 @@
 {
   "denhaag": {
     "floating-contact": {
-      "bottom": {
+      "offset": {
         "value": "{denhaag.space.block.md}"
       },
       "color": {
@@ -12,9 +12,6 @@
       },
       "position": {
         "value": "fixed"
-      },
-      "right": {
-        "value": "{denhaag.space.inline.md}"
       },
       "index": {
         "value": 9
@@ -237,16 +234,6 @@
         "switch": {
           "direction": {
             "value": "row"
-          },
-          "icons": {
-            "display": {
-              "value": "flex"
-            }
-          }
-        },
-        "overlay": {
-          "display": {
-            "value": "flex"
           }
         }
       },
