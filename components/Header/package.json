@@ -33,7 +33,7 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "devDependencies": {
-    "@gemeente-denhaag/baseprops": "0.2.3-alpha.269",
+    "@gemeente-denhaag/baseprops": "0.2.3-www-denhaag-nl.78",
     "@gemeente-denhaag/header-logo": "0.1.1-www-denhaag-nl.78"
   }
 }
