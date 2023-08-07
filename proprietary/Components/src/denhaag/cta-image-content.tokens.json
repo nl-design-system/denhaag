@@ -8,9 +8,6 @@
       "md": {
         "flex-direction": { "value": "row-reverse" }
       },
-      "hover": {
-        "box-shadow": { "value": "0 0.25rem 1rem 0 rgba(0, 0, 0, 0.16)" }
-      },
       "filled": {
         "background-color": { "value": "{denhaag.color.warmgrey.1}" },
         "border": { "value": "0" }

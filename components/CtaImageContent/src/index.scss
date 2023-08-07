@@ -7,8 +7,10 @@
 }
 
 .denhaag-cta-image-content:hover,
-.denhaag-cta-image-content--hover {
-  box-shadow: var(--denhaag-cta-image-content-hover-box-shadow);
+.denhaag-cta-image-content--hover,
+.denhaag-cta-image-content:focus-visible,
+.denhaag-cta-image-content--focus {
+  box-shadow: var(--denhaag-shadow-default);
 }
 
 .denhaag-cta-image-content--filled {
@@ -56,7 +58,10 @@
   top: 0;
 }
 
-.denhaag-cta-image-content--focus .denhaag-button::after {
+.denhaag-cta-image-content:focus-visible
+  .denhaag-button::after
+  .denhaag-cta-image-content--focus
+  .denhaag-button::after {
   border: var(--denhaag-focus-border);
 }
 
