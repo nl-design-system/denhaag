@@ -68,6 +68,9 @@
         }
       },
       "title": {
+        "color": {
+          "value": "{denhaag.color.grey.5}"
+        },
         "font-weight": {
           "value": "{denhaag.typography.weight.bold}"
         },
