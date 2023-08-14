@@ -51,16 +51,12 @@
         "font-family": { "value": "{denhaag.typography.sans-serif.font-family}" },
         "height": { "value": "fit-content" },
         "underline": {
-          "position": { "value": "absolute" },
-          "content": { "value": "''" },
-          "left": { "value": "15px" },
-          "right": { "value": "15px" },
+          "inline": { "value": "15px" },
           "bottom": { "value": "-4px" },
           "height": { "value": "1px" },
           "background-color": { "value": "{denhaag.color.grey.2}" }
         },
         "hover": {
-          "box-shadow": { "value": "-1px -4px 15px 0px rgba(0,0,0,0.1)" },
           "cursor": { "value": "pointer" }
         },
         "focus": {
@@ -75,21 +71,12 @@
           "border-radius": { "value": "4px 4px 0 0" },
           "text-align": { "value": "center" },
           "circles": {
-            "position": { "value": "absolute" },
-            "content": { "value": "''" },
-            "top": { "value": "12px" },
-            "width": { "value": "7px" },
-            "height": { "value": "7px" },
+            "offset": { "value": "12px" },
+            "size": { "value": "7px" },
             "background-color": { "value": "{denhaag.color.white}" },
             "border": { "value": "1px solid" },
             "border-color": { "value": "{denhaag.color.grey.2}" },
             "border-radius": { "value": "50%" }
-          },
-          "circle-left": {
-            "left": { "value": "12px" }
-          },
-          "circle-right": {
-            "right": { "value": "12px" }
           },
           "text": {
             "font-family": { "value": "{denhaag.typography.sans-serif-alternate.font-family}" },
@@ -114,15 +101,7 @@
           "hyphens": { "value": "auto" },
           "line-height": { "value": "27px" },
           "anchor": {
-            "text-decoration": { "value": "none" },
-            "pseudo-element": {
-              "position": { "value": "absolute" },
-              "content": { "value": "''" },
-              "top": { "value": "0" },
-              "right": { "value": "0" },
-              "bottom": { "value": "0" },
-              "left": { "value": "0" }
-            }
+            "text-decoration": { "value": "none" }
           }
         },
         "description": {

@@ -1,0 +1,12 @@
+{
+  "denhaag": {
+    "box-shadow": {
+      "default": {
+        "value": "-1px -4px 15px 0px rgba(0, 0, 0, 0.10)"
+      },
+      "light": {
+        "value": "-1px -4px 15px 0px rgba(0, 0, 0, 0.05)"
+      }
+    }
+  }
+}

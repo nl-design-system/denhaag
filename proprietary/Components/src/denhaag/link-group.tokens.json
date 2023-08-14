@@ -29,8 +29,7 @@
       },
       "link-with-icon-start": {
         "display": { "value": "inline-flex" },
-        "padding-block-start": { "value": "0" },
-        "padding-block-end": { "value": "0" }
+        "padding-block": { "value": "0" }
       },
       "link-icon": {
         "font-size": { "value": "0.75rem" },
