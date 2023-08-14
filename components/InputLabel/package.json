@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/inputlabel",
-  "version": "0.2.3-www-denhaag-nl.80",
+  "version": "0.2.3-www-denhaag-nl.81",
   "description": "An InputLabel component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "private": false,
@@ -32,7 +32,7 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "0.2.3-www-denhaag-nl.80",
+    "@gemeente-denhaag/baseprops": "0.2.3-www-denhaag-nl.81",
     "@material-ui/core": "4.12.4"
   },
   "peerDependencies": {
