@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { Meta, Story } from '@storybook/react';
-import Tab, { TabProps, TabPanel, Tabs, TabsLogic } from './index';
+import Tab, { TabProps, TabPanel, Tabs } from './index';
 import pkg from '../package.json';
 
 export default {
@@ -29,7 +29,7 @@ const Template: Story<TabProps> = (args: TabProps) => {
   ];
 
   return (
-    <TabsLogic tabData={tabData} />
+    <Tabs tabData={tabData} />
 /*     <Fragment>
       <Tabs
         value={value}

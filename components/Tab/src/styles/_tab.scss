@@ -9,10 +9,12 @@
   font-family: var(--denhaag-tabs-tab-font-family);
   line-height: 1.5;
   min-width: 160px;
+  position: relative;
 }
 
 .denhaag-tabs__tab.denhaag-tabs__tab--selected {
   font-weight: var(--denhaag-tabs-tab-selected-font-weight);
+  color: var(--denhaag-tabs-tab-selected-color);
 }
 
 .denhaag-tabs__tab-text {
@@ -33,4 +35,8 @@
   left: 0;
   right: 0;
   border: var(--denhaag-focus-border);
+}
+
+.denhaag-tabs__tab:focus-visible {
+  outline: var(--denhaag-tabs-tab-outline);
 }
