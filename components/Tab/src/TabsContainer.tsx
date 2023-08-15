@@ -3,6 +3,7 @@ import React, { HTMLAttributes } from 'react';
 
 interface TabsContainerProps extends HTMLAttributes<HTMLDivElement> {}
 
-export const TabsContainer: React.FC<TabsContainerProps> = ({ children }) => {
-  return <div className={clsx('denhaag-tabs__container')}>{children}</div>;
+export const TabsContainer: React.FC<TabsContainerProps> = ({ children, className }) => {
+  const rootClassNames = clsx('denhaag-tabs', className);
+  return <div className={rootClassNames}>{children}</div>;
 };

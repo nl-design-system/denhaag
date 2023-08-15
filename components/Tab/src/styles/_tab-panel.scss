@@ -9,3 +9,7 @@
     display: block;
   }
 }
+
+.denhaag-tabs__tab-panel:focus-visible {
+  outline: var(--denhaag-tabs-tab-panel-outline);
+}
