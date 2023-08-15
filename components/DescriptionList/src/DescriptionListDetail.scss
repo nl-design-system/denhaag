@@ -1,0 +1,11 @@
+.denhaag-description-list__detail {
+  border-bottom: 1px solid var(--denhaag-description-list-border-color, lightgrey);
+  margin-inline-start: 0;
+  padding-block-end: var(--denhaag-description-list-detail-padding-block-end, var(--denhaag-description-list-padding));
+  padding-block-start: var(
+    --denhaag-description-list-detail-padding-block-start,
+    var(--denhaag-description-list-padding)
+  );
+  padding-inline-end: var(--denhaag-description-list-padding-inline-end, var(--denhaag-description-list-padding));
+  padding-inline-start: var(--denhaag-description-list-padding-inline-end, var(--denhaag-description-list-padding));
+}
