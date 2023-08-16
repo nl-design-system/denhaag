@@ -143,6 +143,8 @@
           },
           "active": {
             "background-color": { "value": "{denhaag.color.green.3}" },
+            "border": { "value": "2px solid" },
+            "border-color": { "value": "{denhaag.color.white}" },
             "opacity": { "value": "1" },
             "width": { "value": "12px" },
             "height": { "value": "12px" },

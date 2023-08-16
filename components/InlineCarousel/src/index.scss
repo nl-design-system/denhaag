@@ -194,6 +194,8 @@
     opacity: var(--denhaag-inline-carousel-pagination-bullet-active-opacity);
     transform: var(--denhaag-inline-carousel-pagination-bullet-active-transform);
     background-color: var(--denhaag-inline-carousel-pagination-bullet-active-background-color);
+    border: var(--denhaag-inline-carousel-pagination-bullet-active-border);
+    border-color: var(--denhaag-inline-carousel-pagination-bullet-active-border-color);
   }
 
   &.swiper-pagination-bullets-dynamic {
@@ -216,6 +218,8 @@
       &.denhaag-inline-carousel__pagination-bullet-active {
         opacity: var(--denhaag-inline-carousel-pagination-bullet-active-opacity);
         background-color: var(--denhaag-inline-carousel-pagination-bullet-active-background-color);
+        border: var(--denhaag-inline-carousel-pagination-bullet-active-border);
+        border-color: var(--denhaag-inline-carousel-pagination-bullet-active-border-color);
       }
     }
 
