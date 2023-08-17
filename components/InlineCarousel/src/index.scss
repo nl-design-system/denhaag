@@ -196,6 +196,10 @@
     background-color: var(--denhaag-inline-carousel-pagination-bullet-active-background-color);
     border: var(--denhaag-inline-carousel-pagination-bullet-active-border);
     border-color: var(--denhaag-inline-carousel-pagination-bullet-active-border-color);
+    width: var(--denhaag-inline-carousel-pagination-bullet-active-width);
+    height: var(--denhaag-inline-carousel-pagination-bullet-active-height);
+    margin-inline-start: var(--denhaag-inline-carousel-pagination-bullet-active-margin-inline);
+    margin-inline-end: var(--denhaag-inline-carousel-pagination-bullet-active-margin-inline);
   }
 
   &.swiper-pagination-bullets-dynamic {

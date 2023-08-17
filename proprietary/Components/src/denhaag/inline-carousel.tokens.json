@@ -130,8 +130,8 @@
         "bullet": {
           "position": { "value": "relative" },
           "opacity": { "value": "1" },
-          "width": { "value": "12px" },
-          "height": { "value": "12px" },
+          "width": { "value": "11px" },
+          "height": { "value": "11px" },
           "border-radius": { "value": "50%" },
           "margin-inline": { "value": "4px" },
           "transition": { "value": "all 200ms" },
@@ -148,6 +148,7 @@
             "opacity": { "value": "1" },
             "width": { "value": "12px" },
             "height": { "value": "12px" },
+            "margin-inline": { "value": "3px" },
             "main": {
               "opacity": { "value": "1" },
               "width": { "value": "12px" },
