@@ -182,7 +182,8 @@ ol.denhaag-breadcrumb__list {
   max-width: fit-content;
 }
 
-.denhaag-breadcrumb__link:hover .denhaag-breadcrumb__text {
+.denhaag-breadcrumb__link:hover .denhaag-breadcrumb__text,
+.denhaag-breadcrumb__link:focus-visible .denhaag-breadcrumb__text {
   --denhaag-breadcrumb-item-tooltip-opacity: 100%;
   --denhaag-breadcrumb-item-tooltip-transform: translate(
     calc(var(--denhaag-breadcrumb-spacing) + var(--denhaag-breadcrumb-gap) - 1px),
@@ -191,6 +192,11 @@ ol.denhaag-breadcrumb__list {
 
   visibility: visible;
   opacity: var(--denhaag-breadcrumb-item-tooltip-opacity);
+}
+
+.denhaag-breadcrumb__link .denhaag-breadcrumb__text.denhaag-breadcrumb__hide-tooltip {
+  opacity: 0%;
+  visibility: hidden;
 }
 
 .denhaag-breadcrumb__item--hidden .denhaag-breadcrumb__text::after {
