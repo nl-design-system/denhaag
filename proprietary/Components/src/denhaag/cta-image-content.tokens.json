@@ -19,6 +19,9 @@
         },
         "object-fit": {
           "value": "cover"
+        },
+        "width": {
+          "value": "100%"
         }
       },
       "content": {
@@ -46,6 +49,17 @@
         },
         "line-height": {
           "value": "{denhaag.typography.scale.lg.line-height}"
+        }
+      },
+      "translate": {
+        "value": "translateY(-0.125rem)"
+      },
+      "transition": {
+        "duration": {
+          "value": "200ms"
+        },
+        "timing-function": {
+          "value": "ease-in-out"
         }
       }
     }
