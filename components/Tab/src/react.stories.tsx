@@ -23,7 +23,7 @@ const Template: Story<TabProps> = (args: TabProps) => {
   const [value, setValue] = React.useState(0);
 
   const tabData = [
-    { label: 'A tab', panelContent: 'Item One' },
+    { label: 'A tab', panelContent: 'Item One', defaultSelected: true },
     { label: 'Another tab', panelContent: 'Item Two' },
     { label: 'Yet another tab', panelContent: 'Item Three' },
   ];

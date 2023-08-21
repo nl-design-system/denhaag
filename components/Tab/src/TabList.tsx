@@ -9,11 +9,11 @@ export interface TabListProps extends HTMLAttributes<HTMLDivElement> {}
  * @param props The properties of a TabList component.
  * @constructor Constructs an instance of TabList.
  */
-export const TabList = forwardRef<HTMLDivElement, TabListProps>(({ className, children }, ref) => {
+export const TabList = forwardRef<HTMLDivElement, TabListProps>(({ className, children, ...props }, ref) => {
   const rootClassNames = clsx('denhaag-tabs__list', className);
 
   return (
-    <div role="tablist" ref={ref} className={rootClassNames}>
+    <div {...props} role="tablist" ref={ref} className={rootClassNames}>
       {children}
     </div>
   );
