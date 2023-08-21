@@ -1,6 +1,14 @@
 class DenhaagBreadcrumbs {
   constructor(id = 'denhaag-breadcrumb') {
     this.breadcrumbWrapper = document.getElementById(id);
+    document.addEventListener('keydown', (e) => {
+      if (e.code === 'Escape') {
+        this.hideToolTip();
+      } else {
+        this.resetTooltips();
+      }
+    });
+    document.addEventListener('click', () => this.resetTooltips());
 
     if (!this.breadcrumbWrapper) {
       return;
@@ -23,6 +31,7 @@ class DenhaagBreadcrumbs {
     this.windowWidth = window.innerWidth;
     this.resizeEvents();
     this.windowEvents();
+    this.documentEvents();
   }
 
   /**
@@ -151,6 +160,34 @@ class DenhaagBreadcrumbs {
    */
   resetTooltipPositions() {
     this.listItems.forEach((el) => el.style.removeProperty('--denhaag-breadcrumb-hidden-text-left'));
+  }
+
+  /**
+   * Hide tooltip on Esc btn
+   */
+  hideToolTip() {
+    const activeEl = document.activeElement;
+    const parentEL = activeEl.parentNode;
+    const isBreadcrumbItem = parentEL.classList.contains('denhaag-breadcrumb__item--hidden');
+    if (isBreadcrumbItem) {
+      const tooltip = activeEl.querySelector('.denhaag-breadcrumb__text');
+      if (!tooltip.classList.contains('denhaag-breadcrumb__hide-tooltip')) {
+        tooltip.classList.add('denhaag-breadcrumb__hide-tooltip');
+      }
+    }
+  }
+
+  /**
+   * Reset tooltips after other user interaction
+   */
+  resetTooltips() {
+    const items = document.querySelectorAll('.denhaag-breadcrumb__item--hidden');
+    if (items?.length) {
+      items.forEach((item) => {
+        const tooltip = item.querySelector('.denhaag-breadcrumb__text');
+        tooltip.classList.remove('denhaag-breadcrumb__hide-tooltip');
+      });
+    }
   }
 }
 
