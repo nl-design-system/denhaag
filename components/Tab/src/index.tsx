@@ -1,4 +1,4 @@
-import React, { Ref, RefObject, createRef, useEffect, useState } from 'react';
+import React, { KeyboardEvent, Ref, RefObject, createRef, useEffect, useState } from 'react';
 import { TabsContainer } from './TabsContainer';
 import { TabIndicator } from './TabIndicator';
 import { HTMLAttributes } from 'react';
@@ -6,101 +6,110 @@ import { TabList } from './TabList';
 import Tab from './Tab';
 import TabPanel from './TabPanel';
 import { TabText } from './TabText';
+import { v4 as uuidv4 } from 'uuid';
 
 export * from './Tab';
 export * from './TabPanel';
 export * from './TabList';
 
 export interface TabsProps extends HTMLAttributes<HTMLDivElement> {
-  /**
-   * Callback fired when the value changes.
-   * @param event The event source of the callback
-   * @param value Defaults to the index of the child (number)
-   */
-  onTabChange?: (event: React.ChangeEvent<unknown>, value: number) => void;
-
-  tabData: Array<{ label: string; panelContent: React.ReactNode }>;
-
-  selectedTab?: number;
+  tabData: Array<{ label: string; panelContent: React.ReactNode; defaultSelected?: boolean }>;
 }
+
+type TabRef = RefObject<HTMLDivElement>;
 
 /**
  * Tabs make it easy to explore and switch between different views.
  * @param props The properties of a Tabs component.
  * @constructor Constructs an instance of Tabs.
  */
-export const Tabs: React.FC<TabsProps> = ({ tabData, ...props }: TabsProps) => {
-  const [selectedTab, setSelectedTab] = useState(0);
-  const [focussedTab, setFocussedTab] = useState<number | undefined>();
-
+export const Tabs: React.FC<TabsProps> = ({ tabData }: TabsProps) => {
   const [tabs] = useState(
     tabData.map((tab) => {
       const tabRef = createRef<HTMLDivElement>();
-      return { tab, tabRef };
+      const id = uuidv4();
+      const tabId = `tab-${id}`;
+      const tabPanelId = `tabpanel-${id}`;
+
+      return { tab, tabRef, tabId, tabPanelId };
     }),
   );
 
-  const handleTabChange = (event: any, index: number) => {
+  const [selectedTab, setSelectedTab] = useState<TabRef | undefined>(() => {
+    const defaultTab = tabs.find((tab) => tab.tab.defaultSelected);
+    return defaultTab ? defaultTab.tabRef : undefined;
+  });
+
+  const [focussedTab, setFocussedTab] = useState<TabRef | undefined>();
+
+  const handleTabChange = (event: any, tabRef: TabRef) => {
     event.preventDefault();
-    setSelectedTab(index);
-    setFocussedTab(index);
+    setSelectedTab(tabRef);
+    setFocussedTab(tabRef);
   };
-
-  const tabListRef = createRef<HTMLDivElement>();
-
-  useEffect(() => {
-    tabListRef.current?.addEventListener('keydown', handleKeyDown);
-    return () => {
-      tabListRef.current?.removeEventListener('keydown', handleKeyDown);
-    };
-  }, [tabListRef]);
 
   useEffect(() => {
     if (focussedTab !== undefined) {
-      tabs[focussedTab].tabRef?.current?.focus();
+      focussedTab?.current?.focus();
     }
   }, [focussedTab]);
 
-  const handleKeyDown = (event: KeyboardEvent) => {
+  const findNextOrFirst = <T,>(array: T[], callback: (item: T, index: number) => boolean): T => {
+    const index = array.findIndex(callback);
+    return array[index === array.length - 1 ? 0 : index + 1];
+  };
+
+  const findPreviousOrLast = <T,>(array: T[], callback: (item: T, index: number) => boolean): T => {
+    const index = array.findIndex(callback);
+    return array[index === 0 ? array.length - 1 : index - 1];
+  };
+
+  const handleKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
     if (event.key === 'ArrowRight') {
+      event.preventDefault(); //Prevent side scrolling
       setFocussedTab((prevFocussedTab) => {
-        //TODO: nadenken over logica
+        const tab = findNextOrFirst(tabs, ({ tabRef }) => tabRef === prevFocussedTab);
+        return tab?.tabRef;
       });
     } else if (event.key === 'ArrowLeft') {
+      event.preventDefault(); //Prevent side scrolling
       setFocussedTab((prevFocussedTab) => {
-        //TODO: nadenken over logica
+        const tab = findPreviousOrLast(tabs, ({ tabRef }) => tabRef === prevFocussedTab);
+        return tab?.tabRef;
       });
+    } else if (event.key === 'Enter') {
+      setSelectedTab(focussedTab);
     } else {
       return;
     }
-
-    event.preventDefault();
   };
 
-  const handleTabFocus = (index: number) => {
-    setFocussedTab(index);
+  const handleTabFocus = (tabRef: TabRef) => {
+    setFocussedTab(tabRef);
   };
 
+  //TODO fix it, retrieve coordinate
   const customStyles = {
-    '--_denhaag-tabs-tab-indicator-inset-inline-start': `${selectedTab * 176}px`,
-    '--_denhaag-tabs-tab-indicator-size': '176px',
+    '--_denhaag-tabs-tab-indicator-inset-inline-start': `${
+      selectedTab?.current?.offsetLeft
+    }px`,
+    '--_denhaag-tabs-tab-indicator-size': `${selectedTab?.current?.offsetWidth}px`,
   };
-
+  console.log(selectedTab?.current?.offsetWidth);
   return (
     <>
       <TabsContainer>
-        <TabList ref={tabListRef}>
-          {tabs.map(({ tab, tabRef }, index) => (
+        <TabList tabIndex={-1} onKeyDown={handleKeyDown}>
+          {tabs.map(({ tab, tabRef, tabId, tabPanelId }) => (
             <Tab
-              role="tab"
-              tabIndex={selectedTab === index ? 0 : -1}
-              aria-selected={selectedTab === index ? true : false}
-              key={`tab-${index}`}
+              id={tabId}
+              key={tabId}
+              aria-controls={tabPanelId}
+              tabIndex={selectedTab === tabRef ? 0 : -1}
               ref={tabRef}
-              value={index}
-              selected={selectedTab === index}
-              onClick={(event) => handleTabChange(event, index)}
-              onFocus={() => handleTabFocus(index)}
+              selected={selectedTab === tabRef}
+              onClick={(event) => handleTabChange(event, tabRef)}
+              onFocus={() => handleTabFocus(tabRef)}
             >
               <TabText>{tab.label}</TabText>
             </Tab>
@@ -108,13 +117,14 @@ export const Tabs: React.FC<TabsProps> = ({ tabData, ...props }: TabsProps) => {
         </TabList>
         <TabIndicator style={customStyles as any} />
       </TabsContainer>
-      {tabData.map((tab, index) => (
+      {tabs.map(({ tab, tabRef, tabId, tabPanelId }) => (
         <TabPanel
-          key={`tab-panel-${index}`}
-          value={index}
+          id={tabPanelId}
+          key={tabPanelId}
+          aria-labelledby={tabId}
           tabIndex={0}
-          selected={selectedTab === index}
-          hidden={selectedTab !== index}
+          selected={selectedTab === tabRef}
+          hidden={selectedTab !== tabRef}
         >
           {tab.panelContent}
         </TabPanel>
