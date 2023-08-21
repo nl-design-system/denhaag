@@ -4,21 +4,49 @@
   display: var(--denhaag-cta-image-content-display);
   flex-direction: var(--denhaag-cta-image-content-flex-direction);
   position: relative;
+  transition: box-shadow var(--denhaag-cta-image-content-transition-timing-function)
+      var(--denhaag-cta-image-content-transition-duration),
+    transform var(--denhaag-cta-image-content-transition-timing-function)
+      var(--denhaag-cta-image-content-transition-duration);
+
+  @media (prefers-reduced-motion: reduce) {
+    --denhaag-cta-image-content-transition-duration: 0ms;
+  }
 
   @media (min-width: 768px) {
     --denhaag-cta-image-content-flex-direction: row-reverse;
     --denhaag-cta-image-content-image-width: 50%;
   }
 
+  &--reduced-motion {
+    --denhaag-cta-image-content-transition-duration: 0ms;
+  }
+
   &__content {
     padding-inline: var(--denhaag-cta-image-content-content-padding-inline);
     padding-block: var(--denhaag-cta-image-content-content-padding-block);
+
+    @media (min-width: 768px) {
+      width: calc(50% - (2 * 32px));
+    }
+  }
+
+  &__image-container {
+    width: 100%;
+    overflow: hidden;
+
+    @media (min-width: 768px) {
+      width: 50%;
+    }
   }
 
   &__image {
     aspect-ratio: var(--denhaag-cta-image-content-image-aspect-ratio);
+    height: 100%;
     object-fit: var(--denhaag-cta-image-content-image-object-fit);
-    width: var(--denhaag-cta-image-content-image-width);
+    width: 100%;
+    transition: transform var(--denhaag-cta-image-content-transition-timing-function)
+      var(--denhaag-cta-image-content-transition-duration);
   }
 
   .denhaag-button::after {
@@ -76,6 +104,10 @@
       .denhaag-button {
         line-height: var(--denhaag-button-large-size-line-height);
       }
+
+      .denhaag-cta-image-content__image {
+        width: 100%;
+      }
     }
 
     .denhaag-cta-image-content__content {
@@ -86,7 +118,7 @@
       }
     }
 
-    .denhaag-cta-image-content__image {
+    .denhaag-cta-image-content__image-container {
       margin-block: var(--denhaag-space-block-2xl);
       margin-inline: var(--denhaag-space-inline-2xl);
       width: auto;
@@ -107,4 +139,18 @@
 .denhaag-cta-image-content:focus-visible,
 .denhaag-cta-image-content--focus {
   box-shadow: var(--denhaag-box-shadow-default);
+}
+
+.denhaag-cta-image-content--hover,
+.denhaag-cta-image-content:hover {
+  transform: var(--denhaag-cta-image-content-translate);
+
+  .denhaag-cta-image-content__image {
+    transform: var(--denhaag-cta-image-content-translate) scale(1.02);
+  }
+}
+
+.denhaag-cta-image-content:focus-visible,
+.denhaag-cta-image-content--focus {
+  outline: var(--denhaag-focus-border);
 }
