@@ -1,9 +1,8 @@
-import React, { HTMLAttributes, ReactElement, forwardRef } from 'react';
+import React, { HTMLAttributes, forwardRef } from 'react';
 import './styles/_tab.scss';
 import clsx from 'clsx';
 
 export interface TabProps extends HTMLAttributes<HTMLDivElement> {
-  //TODO: add comments
   selected?: boolean;
 }
 
@@ -20,5 +19,7 @@ export const Tab = forwardRef<HTMLDivElement, TabProps>(({ selected, className, 
     </div>
   );
 });
+
+Tab.displayName = 'Tab';
 
 export default Tab;

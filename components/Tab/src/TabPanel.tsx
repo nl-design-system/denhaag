@@ -1,5 +1,4 @@
 import React, { HTMLAttributes } from 'react';
-import BaseProps from '@gemeente-denhaag/baseprops';
 import clsx from 'clsx';
 import './styles/_tab-panel.scss';
 

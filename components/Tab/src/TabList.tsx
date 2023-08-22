@@ -19,4 +19,6 @@ export const TabList = forwardRef<HTMLDivElement, TabListProps>(({ className, ch
   );
 });
 
+TabList.displayName = 'TabList';
+
 export default TabList;
