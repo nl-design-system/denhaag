@@ -1,20 +1,33 @@
 import React, { HTMLAttributes } from 'react';
 import { DescriptionListCaption } from './DescriptionListCaption';
-import clsx from 'clsx';
+import { DescriptionListTitle } from './DescriptionListTitle';
+import { DescriptionListDetail } from './DescriptionListDetail';
+import { DescriptionListBase } from './DescriptionListBase';
 
 import './index.scss';
 
-export type DescriptionListProps = HTMLAttributes<HTMLDivElement> & {
-  caption?: string;
+type DescriptionListItem = {
+  title: string;
+  detail: string;
 };
 
-export const DescriptionList: React.FC<DescriptionListProps> = ({ caption, ...props }: DescriptionListProps) => {
-  const className = clsx('denhaag-description-list', props.className);
+export type DescriptionListProps = HTMLAttributes<HTMLDivElement> & {
+  caption?: string;
+  items: DescriptionListItem[];
+};
 
+export const DescriptionList: React.FC<DescriptionListProps> = ({ caption, items }: DescriptionListProps) => {
   return (
     <>
       {caption && <DescriptionListCaption>{caption}</DescriptionListCaption>}
-      <dl className={className}>{props.children}</dl>
+      <DescriptionListBase>
+        {items.map((item) => (
+          <>
+            <DescriptionListTitle>{item.title}</DescriptionListTitle>
+            <DescriptionListDetail>{item.detail}</DescriptionListDetail>
+          </>
+        ))}
+      </DescriptionListBase>
     </>
   );
 };
