@@ -1,0 +1,25 @@
+{
+  "name": "@gemeente-denhaag/file",
+  "version": "0.1.0",
+  "description": "A file displays a link to download an attachment and metadata about the file.",
+  "bugs": "https://github.com/nl-design-system/denhaag/issues",
+  "author": "Municipality of The Hague",
+  "license": "EUPL-1.2",
+  "exports": "./dist/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nl-design-system/denhaag.git",
+    "directory": "components/File"
+  },
+  "scripts": {
+    "build": "rollup -c ../../rollup.config.js",
+    "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+  },
+  "dependencies": {}
+}

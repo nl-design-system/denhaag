@@ -1,0 +1,18 @@
+{
+  "denhaag": {
+    "file": {
+      "border": { "value": "1px solid {denhaag.color.grey.2}" },
+      "left": {
+        "padding-inline-start": { "value": "{denhaag.space.block.md}" },
+        "padding-inline-end": { "value": "{denhaag.space.block.md}" },
+        "background-color": { "value": "{denhaag.color.warmgrey.1}" }
+      },
+      "right": {
+        "padding-block-start": { "value": "{denhaag.space.block.md}" },
+        "padding-block-end": { "value": "{denhaag.space.block.md}" },
+        "padding-inline-start": { "value": "{denhaag.space.block.md}" },
+        "padding-inline-end": { "value": "{denhaag.space.block.md}" }
+      }
+    }
+  }
+}

@@ -84,17 +84,24 @@ Start by filling it with the following information:
   "name": "@gemeente-denhaag/{component_name}",
   "version": "0.1.0",
   "description": "A short description of the component",
+  "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
+  "exports": "./dist/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
   "repository": {
     "type": "git",
     "url": "https://github.com/nl-design-system/denhaag.git",
     "directory": "{path/to/component}"
   },
-  "bugs": "https://github.com/nl-design-system/denhaag/issues",
-  "dependencies": {
-    "@material-ui/core": "4.11.0"
-  }
+  "scripts": {
+    "build": "rollup -c ../../rollup.config.js",
+    "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+  },
+  "dependencies": {}
 }
 ```
 

@@ -1,0 +1,20 @@
+.denhaag-file {
+  display: flex;
+  border: var(--denhaag-file-border);
+}
+
+.denhaag-file__left {
+  display: flex;
+  align-items: center;
+  padding-inline-start: var(--denhaag-file-left-padding-inline-start);
+  padding-inline-end: var(--denhaag-file-left-padding-inline-end);
+  background-color: var(--denhaag-file-left-background-color, #f8f7f5);
+}
+
+.denhaag-file__right {
+  display: flex;
+  padding-block-start: var(--denhaag-file-right-padding-block-start);
+  padding-block-end: var(--denhaag-file-right-padding-block-end);
+  padding-inline-start: var(--denhaag-file-right-padding-inline-start);
+  padding-inline-end: var(--denhaag-file-right-padding-inline-end);
+}

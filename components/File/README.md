@@ -1,10 +1,10 @@
-# File download
+# File
 
-A file download displays a link to download an attachment and metadata about the file.
+A file displays a link to download an attachment and metadata about the file.
 
 ## When to use
 
-A file download is used to present and download a file that is uploaded by the user or an employee.
+A file is used to present and download a file that is uploaded by the user or an employee.
 
 ## Alternatives and related components
 
@@ -12,7 +12,7 @@ None.
 
 ## Anatomy
 
-The file download consists of:
+The file consists of:
 
 1. File name: the name of the file
 2. Preview: shows an icon of the type of the file (e.g. document, image)
@@ -21,7 +21,7 @@ The file download consists of:
 
 ## (Interactive) states
 
-The file download contains the states normal, hover and focus.
+The file contains the states normal, hover and focus.
 
 ## Design properties
 
