@@ -6,6 +6,12 @@ export default class FloatingContact {
       return;
     }
 
+    // On initial load
+    this.handleWindowResize();
+    // On user interaction
+    window.addEventListener('resize', () => this.handleWindowResize());
+    window.addEventListener('orientationchange', () => this.handleWindowResize());
+
     this.toggle = document.getElementById(`${id}-switch`);
 
     if (!this.toggle) {
@@ -73,5 +79,29 @@ export default class FloatingContact {
         }
       }, 1);
     }
+  }
+
+  handleWindowResize() {
+    const windowHeight = window.innerHeight;
+    const targetHeight = this.element.offsetHeight;
+    if (windowHeight < targetHeight) {
+      this.addZoomedClass();
+    } else {
+      if (this.hasZoomedClass()) {
+        this.removeZoomedClass();
+      }
+    }
+  }
+
+  hasZoomedClass() {
+    return this.element.classList.contains('denhaag-floating-contact--zoomed');
+  }
+
+  addZoomedClass() {
+    this.element.classList.add('denhaag-floating-contact--zoomed');
+  }
+
+  removeZoomedClass() {
+    this.element.classList.remove('denhaag-floating-contact--zoomed');
   }
 }
