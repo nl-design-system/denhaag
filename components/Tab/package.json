@@ -28,11 +28,6 @@
     "build": "rollup -c ../../rollup.config.js",
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
-  "dependencies": {
-    "@gemeente-denhaag/baseprops": "workspace:*",
-    "@material-ui/core": "4.12.4",
-    "@material-ui/lab": "4.11.3-deprecations.1"
-  },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"
   },

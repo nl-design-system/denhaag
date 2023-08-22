@@ -7,9 +7,19 @@
   font-size: var(--denhaag-tabs-tab-font-size);
   font-weight: var(--denhaag-tabs-tab-font-weight);
   font-family: var(--denhaag-tabs-tab-font-family);
-  line-height: 1.5;
-  min-width: 160px;
+  line-height: var(--denhaag-tabs-tab-line-height);
   position: relative;
+}
+
+.denhaag-tabs__tab:hover {
+  color: var(--denhaag-tabs-tab-hover-color);
+  font-weight: var(--denhaag-tabs-tab-hover-font-weight);
+}
+
+.denhaag-tabs__tab:focus {
+  color: var(--denhaag-tabs-tab-focus-color);
+  font-weight: var(--denhaag-tabs-tab-focus-font-weight);
+  border: var(--denhaag-focus-border);
 }
 
 .denhaag-tabs__tab.denhaag-tabs__tab--selected {
@@ -17,24 +27,14 @@
   color: var(--denhaag-tabs-tab-selected-color);
 }
 
-.denhaag-tabs__tab-text {
-  width: 100%;
-  display: inline-flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  letter-spacing: 0.02857em;
+.denhaag-tabs__tab.denhaag-tabs__tab--selected:hover {
+  color: var(--denhaag-tabs-tab-hover-color);
+  font-weight: var(--denhaag-tabs-tab-hover-font-weight);
 }
 
-.denhaag-tabs__tab--focus::after,
-.denhaag-tabs__tab:focus::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border: var(--denhaag-focus-border);
+.denhaag-tabs__tab.denhaag-tabs__tab--selected:focus {
+  color: var(--denhaag-tabs-tab-focus-color);
+  font-weight: var(--denhaag-tabs-tab-focus-font-weight);
 }
 
 .denhaag-tabs__tab:focus-visible {

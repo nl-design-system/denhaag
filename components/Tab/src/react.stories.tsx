@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Tab, { TabProps, TabPanel, Tabs } from './index';
+import Tab, { TabProps, Tabs } from './index';
 import pkg from '../package.json';
 
 export default {
@@ -19,9 +19,7 @@ export default {
   component: Tab,
 } as Meta;
 
-const Template: Story<TabProps> = (args: TabProps) => {
-  const [value, setValue] = React.useState(0);
-
+const Template: Story<TabProps> = () => {
   const tabData = [
     { label: 'A tab', panelContent: 'Item One', defaultSelected: true },
     { label: 'Another tab', panelContent: 'Item Two' },
@@ -30,7 +28,7 @@ const Template: Story<TabProps> = (args: TabProps) => {
 
   return (
     <Tabs tabData={tabData} />
-/*     <Fragment>
+    /*     <Fragment>
       <Tabs
         value={value}
         onChange={(_event: React.ChangeEvent<unknown>, newValue: number) => {
@@ -117,83 +115,6 @@ Disabled.parameters = {
   docs: {
     source: {
       code: disabledCode,
-    },
-  },
-};
-
-// language=JS
-const disabledRippleCode = `
-const [value, setValue] = React.useState(0);
-
-return (
-  <TabContext value={value.toString()}>
-    <Tabs value={value} onChange={(event: React.ChangeEvent<unknown>, newValue: number) => {
-      setValue(newValue);
-    }}>
-      <Tab disableFocusRipple disableRipple label="A disabled ripple tab" value={0}/>
-      <Tab label="Another tab" value={1}/>
-      <Tab label="Yet another tab" value={2}/>
-    </Tabs>
-    <TabPanel value="1">Item One</TabPanel>
-    <TabPanel value="2">Item Two</TabPanel>
-    <TabPanel value="3">Item Three</TabPanel>
-  </TabContext>
-);
-`;
-
-/**
- * Implementation of Tab without a ripple effect.
- */
-export const DisabledRipple = Template.bind({});
-DisabledRipple.args = {
-  label: 'A disabled ripple tab',
-  disableRipple: true,
-  disableFocusRipple: true,
-};
-
-DisabledRipple.parameters = {
-  docs: {
-    source: {
-      // language=JS
-      code: disabledRippleCode,
-    },
-  },
-};
-
-// language=JS
-const wrappedCode = `
-const [value, setValue] = React.useState(0);
-
-return (
-  <TabContext value={value.toString()}>
-    <Tabs value={value} onChange={(event: React.ChangeEvent<unknown>, newValue: number) => {
-      setValue(newValue);
-    }}>
-      <Tab wrapped label="This label is very long since it needs to be wrapped around the tab" value={0}/>
-      <Tab label="Another tab" value={1}/>
-      <Tab label="Yet another tab" value={2}/>
-    </Tabs>
-    <TabPanel value="1">Item One</TabPanel>
-    <TabPanel value="2">Item Two</TabPanel>
-    <TabPanel value="3">Item Three</TabPanel>
-  </TabContext>
-);
-`;
-
-/**
- * Implementation of Tab with wrapped labels
- */
-export const Wrapped = Template.bind({});
-Wrapped.args = {
-  label: 'This label is very long since it needs to be wrapped around the tab',
-  wrapped: true,
-};
-
-Wrapped.parameters = {
-  docs: {
-    source: {
-      // language=JS
-      code: wrappedCode,
     },
   },
 };
