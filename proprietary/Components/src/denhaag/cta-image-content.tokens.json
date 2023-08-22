@@ -22,6 +22,17 @@
         },
         "width": {
           "value": "100%"
+        },
+        "height": {
+          "value": "100%"
+        }
+      },
+      "image-container": {
+        "width": {
+          "value": "100%"
+        },
+        "overflow": {
+          "value": "hidden"
         }
       },
       "content": {
@@ -60,6 +71,24 @@
         },
         "timing-function": {
           "value": "ease-in-out"
+        }
+      },
+      "illustration-variant": {
+        "content": {
+          "padding-inline-end": {
+            "value": "4.5rem"
+          },
+          "padding-inline-start": {
+            "value": "3.5rem"
+          }
+        },
+        "image-container": {
+          "margin": {
+            "value": "{denhaag.space.block.2xl}"
+          },
+          "width": {
+            "value": "auto"
+          }
         }
       }
     }
