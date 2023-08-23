@@ -1,13 +1,11 @@
 .denhaag-cta-image-content {
   background-color: var(--denhaag-cta-image-content-background-color);
   border: var(--denhaag-cta-image-content-border);
-  display: var(--denhaag-cta-image-content-display);
+  display: flex;
   flex-direction: var(--denhaag-cta-image-content-flex-direction);
   position: relative;
-  transition: box-shadow var(--denhaag-cta-image-content-transition-timing-function)
-      var(--denhaag-cta-image-content-transition-duration),
-    transform var(--denhaag-cta-image-content-transition-timing-function)
-      var(--denhaag-cta-image-content-transition-duration);
+  transition: box-shadow ease-in-out var(--denhaag-cta-image-content-transition-duration),
+    transform ease-in-out var(--denhaag-cta-image-content-transition-duration);
 
   @media (prefers-reduced-motion: reduce) {
     --denhaag-cta-image-content-transition-duration: 0ms;
@@ -32,7 +30,7 @@
 
   &__image-container {
     width: var(--denhaag-cta-image-content-image-container-width);
-    overflow: var(--denhaag-cta-image-content-image-container-overflow);
+    overflow: hidden;
 
     @media (min-width: 768px) {
       --denhaag-cta-image-content-image-container-width: 50%;
@@ -41,11 +39,10 @@
 
   &__image {
     aspect-ratio: var(--denhaag-cta-image-content-image-aspect-ratio);
-    height: var(--denhaag-cta-image-content-image-height);
-    object-fit: var(--denhaag-cta-image-content-image-object-fit);
+    height: 100%;
+    object-fit: cover;
     width: var(--denhaag-cta-image-content-image-width);
-    transition: transform var(--denhaag-cta-image-content-transition-timing-function)
-      var(--denhaag-cta-image-content-transition-duration);
+    transition: transform ease-in-out var(--denhaag-cta-image-content-transition-duration);
   }
 
   .denhaag-button,
@@ -111,16 +108,16 @@
 
     .denhaag-cta-image-content__content {
       @media (min-width: 768px) {
-        padding-inline-end: var(--denhaag-cta-image-content-illustration-variant-content-padding-inline-end);
-        padding-inline-start: var(--denhaag-cta-image-content-illustration-variant-content-padding-inline-start);
-        width: calc(50% - var(--denhaag-cta-image-content-illustration-variant-content-padding-inline-start));
+        padding-inline-end: 4.5rem;
+        padding-inline-start: 3.5rem;
+        width: calc(50% - 3.5rem);
       }
     }
 
     .denhaag-cta-image-content__image-container {
       margin-block: var(--denhaag-cta-image-content-illustration-variant-image-container-margin);
       margin-inline: var(--denhaag-cta-image-content-illustration-variant-image-container-margin);
-      width: var(--denhaag-cta-image-content-illustration-variant-image-container-width);
+      width: auto;
 
       @media (min-width: 768px) {
         --denhaag-cta-image-content-image-width: calc(
@@ -143,10 +140,10 @@
 
 .denhaag-cta-image-content--hover,
 .denhaag-cta-image-content:hover {
-  transform: var(--denhaag-cta-image-content-translate);
+  transform: translateY(-0.125rem);
 
   .denhaag-cta-image-content__image {
-    transform: var(--denhaag-cta-image-content-translate) scale(1.02);
+    transform: translateY(-0.125rem) scale(1.02);
   }
 }
 
