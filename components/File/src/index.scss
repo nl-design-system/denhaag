@@ -1,6 +1,30 @@
 .denhaag-file {
   display: flex;
+  color: inherit;
+  text-decoration: inherit;
   border: var(--denhaag-file-border);
+
+  .utrecht-link {
+    background-position: 0 0;
+    padding-inline-start: var(--denhaag-space-inline-xl);
+    background-image: var(--denhaag-file-link-background-image, none);
+  }
+
+  &--hover .utrecht-link,
+  &:hover .utrecht-link {
+    color: var(--denhaag-file-hover-color, --denhaag-color-blue-4);
+    background-image: var(--denhaag-file-hover-background-image, none);
+  }
+
+  .utrecht-link:focus,
+  .utrecht-link:hover {
+    text-decoration: none;
+  }
+
+  &--focus,
+  &:focus {
+    outline: var(--denhaag-focus-border);
+  }
 }
 
 .denhaag-file__left {
@@ -8,13 +32,20 @@
   align-items: center;
   padding-inline-start: var(--denhaag-file-left-padding-inline-start);
   padding-inline-end: var(--denhaag-file-left-padding-inline-end);
-  background-color: var(--denhaag-file-left-background-color, #f8f7f5);
+  background-color: var(--denhaag-file-left-background-color, --denhaag-color-warmgrey-1);
 }
 
 .denhaag-file__right {
+  flex-grow: 1;
   display: flex;
+  align-items: center;
+  gap: var(--denhaag-file-right-gap);
   padding-block-start: var(--denhaag-file-right-padding-block-start);
   padding-block-end: var(--denhaag-file-right-padding-block-end);
   padding-inline-start: var(--denhaag-file-right-padding-inline-start);
   padding-inline-end: var(--denhaag-file-right-padding-inline-end);
+}
+
+.denhaag-file__label {
+  flex-grow: 1;
 }

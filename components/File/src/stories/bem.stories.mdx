@@ -9,6 +9,7 @@ import readme from "../../README.md";
   title="CSS/Surfaces/File"
   component={undefined}
   parameters={{
+    chromatic: { viewports: [1280, 360] },
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: { source: { type: "dynamic" } },
     status: {
@@ -30,7 +31,13 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Default">
-    <div class="denhaag-file">
+    <a
+      href="/example.pdf"
+      class="denhaag-file"
+      aria-labelledby="name"
+      aria-describedby="description"
+      download="Example.pdf"
+    >
       <div class="denhaag-file__left">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
           <path
@@ -43,8 +50,92 @@ import readme from "../../README.md";
           <path d="M13 2.5V9.5H20" stroke="#4B4B4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
       </div>
-      <div class="denhaag-file__right">testing</div>
-    </div>
+      <div class="denhaag-file__right">
+        <div class="denhaag-file__label">
+          <span id="name">File name </span>
+          <span id="description">(pdf, 2MB, 1-1-2023)</span>
+        </div>
+        <div class="denhaag-file__link utrecht-link utrecht-link--icon-left" tabindex="-1">
+          Download
+        </div>
+      </div>
+    </a>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Hover
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Hover">
+    <a
+      href="/example.pdf"
+      class="denhaag-file denhaag-file--hover"
+      aria-labelledby="name"
+      aria-describedby="description"
+      download="Example.pdf"
+    >
+      <div class="denhaag-file__left">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+          <path
+            d="M13 2.5H6C5.46957 2.5 4.96086 2.71071 4.58579 3.08579C4.21071 3.46086 4 3.96957 4 4.5V20.5C4 21.0304 4.21071 21.5391 4.58579 21.9142C4.96086 22.2893 5.46957 22.5 6 22.5H18C18.5304 22.5 19.0391 22.2893 19.4142 21.9142C19.7893 21.5391 20 21.0304 20 20.5V9.5L13 2.5Z"
+            stroke="#4B4B4B"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path d="M13 2.5V9.5H20" stroke="#4B4B4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+      <div class="denhaag-file__right">
+        <div class="denhaag-file__label">
+          <span id="name">File name </span>
+          <span id="description">(pdf, 2MB, 1-1-2023)</span>
+        </div>
+        <div class="denhaag-file__link utrecht-link utrecht-link--icon-left" tabindex="-1">
+          Download
+        </div>
+      </div>
+    </a>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Focus
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Focus">
+    <a
+      href="/example.pdf"
+      class="denhaag-file denhaag-file--focus"
+      aria-labelledby="name"
+      aria-describedby="description"
+      download="Example.pdf"
+    >
+      <div class="denhaag-file__left">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+          <path
+            d="M13 2.5H6C5.46957 2.5 4.96086 2.71071 4.58579 3.08579C4.21071 3.46086 4 3.96957 4 4.5V20.5C4 21.0304 4.21071 21.5391 4.58579 21.9142C4.96086 22.2893 5.46957 22.5 6 22.5H18C18.5304 22.5 19.0391 22.2893 19.4142 21.9142C19.7893 21.5391 20 21.0304 20 20.5V9.5L13 2.5Z"
+            stroke="#4B4B4B"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path d="M13 2.5V9.5H20" stroke="#4B4B4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+      <div class="denhaag-file__right">
+        <div class="denhaag-file__label">
+          <span id="name">File name </span>
+          <span id="description">(pdf, 2MB, 1-1-2023)</span>
+        </div>
+        <div class="denhaag-file__link utrecht-link utrecht-link--icon-left" tabindex="-1">
+          Download
+        </div>
+      </div>
+    </a>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
