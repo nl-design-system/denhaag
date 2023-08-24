@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/timeline",
-  "version": "0.2.3-www-denhaag-nl.85",
+  "version": "0.2.3-www-denhaag-nl.86",
   "description": "A Timeline component based on the material Stepper component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "private": false,
@@ -32,16 +32,16 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "0.2.3-www-denhaag-nl.85",
-    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.85",
-    "@gemeente-denhaag/typography": "0.2.3-www-denhaag-nl.85",
+    "@gemeente-denhaag/baseprops": "0.2.3-www-denhaag-nl.86",
+    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.86",
+    "@gemeente-denhaag/typography": "0.2.3-www-denhaag-nl.86",
     "@material-ui/core": "4.12.4"
   },
   "peerDependencies": {
     "react": "^17.0.0"
   },
   "devDependencies": {
-    "@gemeente-denhaag/button": "0.2.3-www-denhaag-nl.85"
+    "@gemeente-denhaag/button": "0.2.3-www-denhaag-nl.86"
   },
   "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
 }
