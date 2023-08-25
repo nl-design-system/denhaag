@@ -19,6 +19,16 @@
 .denhaag-tabs__tab:focus {
   color: var(--denhaag-tabs-tab-focus-color);
   font-weight: var(--denhaag-tabs-tab-focus-font-weight);
+}
+
+.denhaag-tabs__tab--focus::after,
+.denhaag-tabs__tab:focus::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   border: var(--denhaag-focus-border);
 }
 
