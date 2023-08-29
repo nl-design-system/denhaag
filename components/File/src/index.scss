@@ -4,26 +4,16 @@
   text-decoration: inherit;
   border: var(--denhaag-file-border);
 
-  .utrecht-link {
-    background-position: 0 0;
-    padding-inline-start: var(--denhaag-space-inline-xl);
-    background-image: var(--denhaag-file-link-background-image, none);
+  --utrecht-link-text-decoration: none;
+
+  &--focus,
+  &:focus {
+    outline: var(--denhaag-file-focus-outline);
   }
 
   &--hover .utrecht-link,
   &:hover .utrecht-link {
-    color: var(--denhaag-file-hover-color, --denhaag-color-blue-4);
-    background-image: var(--denhaag-file-hover-background-image, none);
-  }
-
-  .utrecht-link:focus,
-  .utrecht-link:hover {
-    text-decoration: none;
-  }
-
-  &--focus,
-  &:focus {
-    outline: var(--denhaag-focus-border);
+    --utrecht-link-hover-color: var(--denhaag-file-hover-color, --utrecht-link-hover-color);
   }
 }
 
