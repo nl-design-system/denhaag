@@ -6,8 +6,8 @@
   font-size: var(--denhaag-description-list-font-size);
   font-weight: var(--denhaag-description-list-font-weight);
   line-height: var(--denhaag-description-list-line-height);
-  margin-block-end: 0;
-  margin-block-start: 0;
+  margin-block-start: var(--denhaag-description-list-margin-block-start);
+  margin-block-end: var(--denhaag-description-list-margin-block-end);
 }
 
 @media (min-width: 640px) {

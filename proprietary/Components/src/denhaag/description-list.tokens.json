@@ -1,6 +1,12 @@
 {
   "denhaag": {
     "description-list": {
+      "margin-block-start": {
+        "value": "0"
+      },
+      "margin-block-end": {
+        "value": "0"
+      },
       "border-color": {
         "value": "{denhaag.color.grey.2}"
       },
