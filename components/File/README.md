@@ -1,6 +1,6 @@
 # File
 
-A file displays a link to download an attachment and metadata about the file.
+A file displays a link to download an attachment and shows metadata about the file.
 
 ## When to use
 
@@ -37,7 +37,7 @@ The file contains the states normal, hover and focus.
 
 ### Interactive states
 
-- Hover: title text color Blue/3, icon svg color Blue/3
+- Hover: title text color Blue/3, icon svg color Blue/3, container background-color warm/grey
 - Focus: title text color Grey/4, icon svg color Grey/4, container border color Ocher/5
 
 ### Structure
@@ -70,14 +70,14 @@ None.
 
 Files download should:
 
-- Be used for all downloads
+- Be used for all downloads.
 - Include file size and type. Showing the file size is particularly nice for users that are on reduced data allowences (i.e. mobile), and also offers an indication on how long a file might take to download.
 
 ### Don’ts
 
 Files download should:
 
-- Not be described as a file
+- Not be described as a file.
 
 ## References
 
