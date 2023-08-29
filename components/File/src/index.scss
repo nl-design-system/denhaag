@@ -4,43 +4,56 @@
   text-decoration: inherit;
   border: var(--denhaag-file-border);
 
-  --utrecht-link-text-decoration: none;
-
   &--focus,
   &:focus {
     outline: var(--denhaag-file-focus-outline);
   }
 
-  &--hover .utrecht-link,
-  &:hover .utrecht-link {
-    --utrecht-link-hover-color: var(--denhaag-file-hover-color, --utrecht-link-hover-color);
-  }
-}
-
-.denhaag-file__left {
-  display: flex;
-  align-items: center;
-  padding-inline-start: var(--denhaag-file-left-padding-inline-start);
-  padding-inline-end: var(--denhaag-file-left-padding-inline-end);
-  background-color: var(--denhaag-file-left-background-color, --denhaag-color-warmgrey-1);
-}
-
-.denhaag-file__right {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  gap: var(--denhaag-file-right-gap);
-  padding-block-start: var(--denhaag-file-right-padding-block-start);
-  padding-block-end: var(--denhaag-file-right-padding-block-end);
-  padding-inline-start: var(--denhaag-file-right-padding-inline-start);
-  padding-inline-end: var(--denhaag-file-right-padding-inline-end);
-
-  @media (min-width: 620px) {
-    flex-direction: row;
+  &__link {
+    display: flex;
     align-items: center;
-  }
-}
+    color: var(--denhaag-file-link-color);
+    gap: var(--denhaag-file-link-gap);
 
-.denhaag-file__label {
-  flex-grow: 1;
+    --utrecht-link-text-decoration: none;
+  }
+
+  &--hover,
+  &:hover {
+    .utrecht-link {
+      --utrecht-link-hover-color: var(--denhaag-file-hover-color, --utrecht-link-hover-color);
+    }
+
+    .denhaag-file__link {
+      color: var(--denhaag-file-hover-color);
+    }
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    padding-inline-start: var(--denhaag-file-left-padding-inline-start);
+    padding-inline-end: var(--denhaag-file-left-padding-inline-end);
+    background-color: var(--denhaag-file-left-background-color, --denhaag-color-warmgrey-1);
+  }
+
+  &__right {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--denhaag-file-right-gap);
+    padding-block-start: var(--denhaag-file-right-padding-block-start);
+    padding-block-end: var(--denhaag-file-right-padding-block-end);
+    padding-inline-start: var(--denhaag-file-right-padding-inline-start);
+    padding-inline-end: var(--denhaag-file-right-padding-inline-end);
+
+    @media (min-width: 620px) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__label {
+    flex-grow: 1;
+  }
 }
