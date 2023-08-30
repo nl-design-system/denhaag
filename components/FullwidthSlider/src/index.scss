@@ -23,6 +23,7 @@
   touch-action: var(--denhaag-fullwidth-slider-touch-action);
   padding-block-start: var(--denhaag-fullwidth-slider-padding-block-xs);
   padding-block-end: var(--denhaag-fullwidth-slider-padding-block-xs);
+  width: 100%;
 
   @media (min-width: 1768px) {
     max-width: var(--denhaag-fullwidth-slider-max-width-xl);
