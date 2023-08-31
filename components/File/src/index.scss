@@ -8,7 +8,9 @@
 
   &--focus,
   &:focus {
-    outline: var(--denhaag-file-focus-outline);
+    outline-color: var(--denhaag-file-focus-outline-color);
+    outline-width: var(--denhaag-file-focus-outline-width);
+    outline-style: var(--denhaag-file-focus-outline-style);
   }
 
   &__link {
