@@ -1,7 +1,9 @@
 {
   "denhaag": {
     "file": {
-      "border": { "value": "1px solid {denhaag.color.grey.2}" },
+      "border-width": { "value": "1px" },
+      "border-color": { "value": "{denhaag.color.grey.2}" },
+      "border-style": { "value": "solid" },
       "hover": {
         "color": { "value": "{denhaag.color.blue.4}" },
         "background-image": {

@@ -2,7 +2,9 @@
   display: flex;
   color: inherit;
   text-decoration: inherit;
-  border: var(--denhaag-file-border);
+  border-width: var(--denhaag-file-border-width);
+  border-color: var(--denhaag-file-border-color);
+  border-style: var(--denhaag-file-border-style);
 
   &--focus,
   &:focus {
