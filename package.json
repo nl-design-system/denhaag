@@ -18,10 +18,10 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "pnpm run build:library && pnpm run build:storybook",
-    "build:library": "lerna run build",
+    "build:library": "pnpm run --recursive build",
     "build:storybook": "build-storybook",
-    "clean": "lerna run clean --parallel && rimraf .rollup-cache",
-    "lint": "npm-run-all --continue-on-error lint:** && lerna run lint",
+    "clean": "pnpm run --recursive clean --parallel && rimraf .rollup-cache",
+    "lint": "npm-run-all --continue-on-error lint:** && pnpm run --recursive lint",
     "lint-fix": "npm-run-all --continue-on-error lint-fix:** prettier",
     "lint-fix:css": "stylelint --fix \"**/*.{css,scss}\"",
     "lint-fix:js": "eslint --ext \".js,.json,.jsx,.mdx,.ts,.tsx\" --fix --report-unused-disable-directives .",
@@ -41,7 +41,7 @@
     "update-minor": "npm-check-updates --configFileName .ncurc.minor.js --deep --dep dev,prod --target minor --upgrade && pnpm install --frozen-lockfile",
     "update-major": "npm-check-updates --configFileName .ncurc.major.js --deep --dep dev,prod --target latest --upgrade && pnpm install --frozen-lockfile",
     "watch:storybook": "start-storybook -p 6006",
-    "watch:style-dictionary": "lerna run --parallel --scope '@gemeente-denhaag/design-tokens-*' watch:style-dictionary",
+    "watch:style-dictionary": "pnpm run --parallel --recursive watch:style-dictionary",
     "typecheck:storybook": "tsc --project tsconfig.storybook.json --noEmit"
   },
   "dependencies": {
