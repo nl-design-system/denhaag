@@ -1,0 +1,4 @@
+packages:
+  - "components/**"
+  - "packages/*"
+  - "proprietary/*"
