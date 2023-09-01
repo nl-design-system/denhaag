@@ -6,8 +6,8 @@ We pledge to act and interact in ways that contribute to an open, welcoming, div
 
 ## TL;DR
 
-Before you make a commit or PR, run `yarn lint` to see if everything is in order.
-Many things can be fixed automatically using `yarn lint-fix`. Make separate commits for separate purposes.
+Before you make a commit or PR, run `pnpm run lint` to see if everything is in order.
+Many things can be fixed automatically using `pnpm run lint-fix`. Make separate commits for separate purposes.
 
 ## Cooperation with NL Design System
 
@@ -78,7 +78,7 @@ They must clearly explain the purpose, context or functionality of the line of c
 ## Typescript coding style
 
 Changes to Den Haag React Component Library code must conform to the JavaScript Standard Style.
-The project has linters set up to verify the code style. Use the `yarn lint` or `yarn lint:ts` command to check your changes and ensure they conform to the standard.
+The project has linters set up to verify the code style. Use the `pnpm run lint` or `pnpm run lint:ts` command to check your changes and ensure they conform to the standard.
 
 When defining an export for a component, add a named export as well as a default export:
 
@@ -117,7 +117,7 @@ To define a dependency version in the package.json file, use the following forma
 ```
 
 The major, minor and patch version should be defined.
-This versioning system is also enforced with the `yarn lint:package` command.
+This versioning system is also enforced with the `pnpm run lint:package` command.
 
 ## Naming conventions
 
@@ -180,7 +180,7 @@ Use concise variable names.
 
 ### CSS names
 
-CSS class names, custom property names and keyframe names al must start with the prefix `denhaag-` followed by one or more [0-9a-z-]. This is also enforced by the linter via the `yarn lint:css` command.
+CSS class names, custom property names and keyframe names al must start with the prefix `denhaag-` followed by one or more [0-9a-z-]. This is also enforced by the linter via the `pnpm run lint:css` command.
 
 ### Installing and testing packages locally
 
@@ -199,7 +199,7 @@ Run the following command to publish a new version to the local registry (on a s
 `lerna publish --registry http://localhost:4873 --allow-branch fix/test --skip-git`
 
 Now you can test the packages in a new React project, or test it in the PWA. Either way make sure you specify the registry with `--registry http://localhost:4873`.
-In the PWA yarn upgrade the dependency of @gemeente-denhaag/components-react (with the registry flag), and correct the imports.
+In the PWA upgrade the dependency of @gemeente-denhaag/components-react (with the registry flag), and correct the imports.
 
 ## Testing guidelines
 
@@ -210,10 +210,10 @@ Testing is currently unimplemented. Please update this CONTRIBUTING.md if a new 
 Steps to go through:
 
 1. Create a new branch from the latest version of `main`:
-2. `yarn update-patch` to install the latest available patch version of every `dependency` and `devDepenency` of every `package.json` in this npm workspace. E.g.: from 1.0.0 to 1.0.7. Check the logs to see what packages have been affected, and where to perhaps pay special attention to when testing for regressions.
-3. Perform "smoke testing", for example using `yarn clean && yarn lint && yarn build`.
+2. `pnpm run update-patch` to install the latest available patch version of every `dependency` and `devDepenency` of every `package.json` in this npm workspace. E.g.: from 1.0.0 to 1.0.7. Check the logs to see what packages have been affected, and where to perhaps pay special attention to when testing for regressions.
+3. Perform "smoke testing", for example using `pnpm run clean && pnpm run lint && pnpm run build`.
 4. `git commit` these updates, so in case of regressions it will be easier to pinpoint what upgrade has caused issues.
-5. `yarn update-minor` to install the latest available minor version of every dependency. E.g.: from 1.0.0 to 1.2.3.
-6. Perform "smoke testing", for example using `yarn clean && yarn lint && yarn build` and by running Storybook and checking for issues.
+5. `pnpm run update-minor` to install the latest available minor version of every dependency. E.g.: from 1.0.0 to 1.2.3.
+6. Perform "smoke testing", for example using `pnpm run clean && pnpm run lint && pnpm run build` and by running Storybook and checking for issues.
 7. `git commit` these updates.
-8. Run `yarn update-major`. Check what packages have been updated, and read about any breaking changes in the on-line documentation of these packages. If any packages require migration steps, it is best to update and migrate these packages in separate commits. If some packages should remain at the older major version, you can configure their name in `.ncurc.js` by disallowing the major version update. In both cases it is advisable to revert the update (`git reset --hard && yarn install`) before proceding in smaller steps.
+8. Run `pnpm run update-major`. Check what packages have been updated, and read about any breaking changes in the on-line documentation of these packages. If any packages require migration steps, it is best to update and migrate these packages in separate commits. If some packages should remain at the older major version, you can configure their name in `.ncurc.js` by disallowing the major version update. In both cases it is advisable to revert the update (`git reset --hard && pnpm run install`) before proceding in smaller steps.
