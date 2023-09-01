@@ -28,6 +28,9 @@
     "build": "rollup -c ../../rollup.config.js",
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
+  "devDependencies": {
+    "@utrecht/components": "1.0.0-alpha.459"
+  },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"
   }

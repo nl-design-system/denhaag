@@ -3,7 +3,6 @@ import BaseProps from '@gemeente-denhaag/baseprops';
 import { ChevronDownIcon } from '@gemeente-denhaag/icons';
 import clsx from 'clsx';
 
-import './menu-button.scss';
 import './index.scss';
 
 /**

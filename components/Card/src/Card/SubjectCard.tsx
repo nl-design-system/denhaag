@@ -2,7 +2,7 @@ import React from 'react';
 import { ArrowRightIcon } from '@gemeente-denhaag/icons';
 import { CustomLink } from '@gemeente-denhaag/link';
 import { Paragraph } from '@gemeente-denhaag/typography';
-import './card.scss';
+import '../index.scss';
 import Card from './Card';
 import CardActions from './CardActions';
 import CardContent from './CardContent';

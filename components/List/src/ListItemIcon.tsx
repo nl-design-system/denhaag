@@ -1,6 +1,6 @@
 import React, { HTMLAttributes } from 'react';
 
-import './list-item-icon.scss';
+import './_list-item-icon.scss';
 import clsx from 'clsx';
 
 export type ListItemIconProps = HTMLAttributes<HTMLDivElement>;

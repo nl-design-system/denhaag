@@ -3,7 +3,7 @@ import { ArrowRightIcon } from '@gemeente-denhaag/icons';
 import { CustomLink } from '@gemeente-denhaag/link';
 import { Paragraph } from '@gemeente-denhaag/typography';
 import clsx from 'clsx';
-import './card.scss';
+import '../index.scss';
 import Card from './Card';
 import CardBackground from './CardBackground';
 import CardActions from './CardActions';

@@ -6,6 +6,7 @@ import _ from 'lodash';
 import fs from 'fs';
 import path from 'path';
 import postcss from 'rollup-plugin-postcss';
+import discardDuplicates from 'postcss-discard-duplicates';
 
 import tsconfig from './tsconfig.json';
 import summary from 'rollup-plugin-summary';
@@ -72,6 +73,22 @@ export default [
     plugins: [
       postcss({
         extensions: ['.css', '.scss'],
+        extract: true,
+      }),
+    ],
+  },
+  {
+    input: 'src/index.scss',
+    output: {
+      dir: './dist',
+      sourcemap: false,
+      format: 'esm',
+      compact: true,
+    },
+    plugins: [
+      postcss({
+        extensions: ['.css', '.scss'],
+        plugins: [discardDuplicates()],
         extract: true,
       }),
     ],

@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import { Tab as MaterialTab } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
-import './styles/tab.scss';
+import './styles/_tab.scss';
 import clsx from 'clsx';
 
 export interface TabProps extends Omit<BaseProps, 'classes'> {

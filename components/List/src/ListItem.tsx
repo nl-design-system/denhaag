@@ -6,7 +6,7 @@ import { ListItemSecondaryAction } from './ListItemSecondaryAction';
 import { ListItemText } from './ListItemText';
 import clsx from 'clsx';
 
-import './list-item.scss';
+import './_list-item.scss';
 
 export interface ListItemProps extends HTMLAttributes<HTMLLIElement> {
   /**

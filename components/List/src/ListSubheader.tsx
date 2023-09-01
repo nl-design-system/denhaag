@@ -1,6 +1,6 @@
 import React, { HTMLAttributes } from 'react';
 
-import './list-subheader.scss';
+import './_list-subheader.scss';
 import clsx from 'clsx';
 
 export type ListSubheaderProps = HTMLAttributes<HTMLParagraphElement>;
