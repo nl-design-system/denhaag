@@ -29,8 +29,8 @@
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "0.2.3-alpha.324",
-    "@gemeente-denhaag/typography": "0.2.3-alpha.324",
+    "@gemeente-denhaag/baseprops": "workspace:*",
+    "@gemeente-denhaag/typography": "workspace:*",
     "@material-ui/core": "4.12.4"
   },
   "peerDependencies": {

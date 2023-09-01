@@ -29,10 +29,10 @@
   },
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "0.2.3-alpha.324"
+    "@gemeente-denhaag/baseprops": "workspace:*"
   },
   "devDependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-alpha.324"
+    "@gemeente-denhaag/icons": "workspace:*"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"

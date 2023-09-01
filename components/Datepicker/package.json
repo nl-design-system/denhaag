@@ -29,7 +29,7 @@
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-alpha.324",
+    "@gemeente-denhaag/icons": "workspace:*",
     "date-fns": "2.30.0"
   },
   "peerDependencies": {

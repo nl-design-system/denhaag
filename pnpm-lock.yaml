@@ -276,19 +276,19 @@ importers:
   components/Alert:
     dependencies:
       '@gemeente-denhaag/baseprops':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../BaseProps
       '@gemeente-denhaag/button':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Button
       '@gemeente-denhaag/iconbutton':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../IconButton
       '@gemeente-denhaag/icons':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Icons
       '@gemeente-denhaag/typography':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Typography
       react:
         specifier: ^17.0.0 || ^18.0.0
@@ -305,7 +305,7 @@ importers:
   components/Avatar:
     dependencies:
       '@gemeente-denhaag/baseprops':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../BaseProps
       '@material-ui/core':
         specifier: 4.12.4
@@ -317,7 +317,7 @@ importers:
   components/BadgeCounter:
     dependencies:
       '@gemeente-denhaag/dotindicator':
-        specifier: 0.1.1-alpha.322
+        specifier: workspace:*
         version: link:../DotIndicator
       react:
         specifier: ^17.0.0 || ^18.0.0
@@ -326,7 +326,7 @@ importers:
   components/BaseDataDisplayProps:
     dependencies:
       '@gemeente-denhaag/baseprops':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../BaseProps
       react:
         specifier: ^17.0.0 || ^18.0.0
@@ -347,13 +347,13 @@ importers:
   components/Breadcrumb:
     dependencies:
       '@gemeente-denhaag/icons':
-        specifier: 0.2.3-alpha.312
-        version: 0.2.3-alpha.312(react@17.0.2)
+        specifier: workspace:*
+        version: link:../Icons
       '@gemeente-denhaag/link':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Link
       '@gemeente-denhaag/responsive-content':
-        specifier: 0.1.1-alpha.182
+        specifier: workspace:*
         version: link:../ResponsiveContent
       react:
         specifier: ^17.0.0 || ^18.0.0
@@ -362,14 +362,14 @@ importers:
   components/Button:
     dependencies:
       '@gemeente-denhaag/baseprops':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../BaseProps
       react:
         specifier: ^17.0.0 || ^18.0.0
         version: 17.0.2
     devDependencies:
       '@gemeente-denhaag/icons':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Icons
 
   components/ButtonGroup: {}
@@ -377,23 +377,23 @@ importers:
   components/Card:
     dependencies:
       '@gemeente-denhaag/icons':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Icons
       '@gemeente-denhaag/link':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Link
       '@gemeente-denhaag/typography':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Typography
       react:
         specifier: ^17.0.0 || ^18.0.0
         version: 17.0.2
     devDependencies:
       '@gemeente-denhaag/avatar':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Avatar
       '@gemeente-denhaag/iconbutton':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../IconButton
 
   components/CardAuthentication: {}
@@ -401,15 +401,15 @@ importers:
   components/CardGroup:
     devDependencies:
       '@gemeente-denhaag/card-authentication':
-        specifier: file:../CardAuthentication
-        version: file:components/CardAuthentication
+        specifier: workspace:*
+        version: link:../CardAuthentication
 
   components/CardNews: {}
 
   components/Checkbox:
     dependencies:
       '@gemeente-denhaag/icons':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Icons
       react:
         specifier: ^17.0.0 || ^18.0.0
@@ -418,7 +418,7 @@ importers:
   components/CtaDownload:
     devDependencies:
       '@gemeente-denhaag/icons':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Icons
 
   components/CtaEvent: {}
@@ -428,13 +428,13 @@ importers:
   components/CtaLink:
     devDependencies:
       '@gemeente-denhaag/icons':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Icons
 
   components/Datepicker:
     dependencies:
       '@gemeente-denhaag/icons':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Icons
       date-fns:
         specifier: 2.30.0
@@ -448,7 +448,7 @@ importers:
   components/Divider:
     dependencies:
       '@gemeente-denhaag/basedatadisplayprops':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../BaseDataDisplayProps
       '@material-ui/core':
         specifier: 4.12.4
@@ -458,38 +458,38 @@ importers:
         version: 17.0.2
     devDependencies:
       '@gemeente-denhaag/icons':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Icons
 
   components/DotIndicator:
     dependencies:
       '@gemeente-denhaag/baseprops':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../BaseProps
       react:
         specifier: ^17.0.0 || ^18.0.0
         version: 17.0.2
     devDependencies:
       '@gemeente-denhaag/avatar':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Avatar
       '@gemeente-denhaag/button':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Button
 
   components/DynamicContent:
     devDependencies:
       '@gemeente-denhaag/icons':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Icons
       '@gemeente-denhaag/image':
-        specifier: 0.1.1-alpha.231
+        specifier: workspace:*
         version: link:../Image
       '@gemeente-denhaag/link':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Link
       '@gemeente-denhaag/pagination':
-        specifier: 0.1.1-alpha.249
+        specifier: workspace:*
         version: link:../Pagination
 
   components/EventDate: {}
@@ -499,7 +499,7 @@ importers:
   components/Footer:
     dependencies:
       '@gemeente-denhaag/responsive-content':
-        specifier: 0.1.1-alpha.182
+        specifier: workspace:*
         version: link:../ResponsiveContent
       '@utrecht/component-library-css':
         specifier: 1.0.0-alpha.521
@@ -536,10 +536,10 @@ importers:
   components/FormGroup:
     dependencies:
       '@gemeente-denhaag/baseprops':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../BaseProps
       '@gemeente-denhaag/typography':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Typography
       '@material-ui/core':
         specifier: 4.12.4
@@ -551,10 +551,10 @@ importers:
   components/FormProgress:
     dependencies:
       '@gemeente-denhaag/icons':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Icons
       '@gemeente-denhaag/link':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Link
       react:
         specifier: ^17.0.0 || ^18.0.0
@@ -563,43 +563,43 @@ importers:
   components/Header:
     dependencies:
       '@gemeente-denhaag/baseprops':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../BaseProps
       '@gemeente-denhaag/breadcrumb':
-        specifier: 0.1.1-alpha.250
+        specifier: workspace:*
         version: link:../Breadcrumb
       '@gemeente-denhaag/button':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Button
       '@gemeente-denhaag/header-logo':
-        specifier: 0.1.1-alpha.182
+        specifier: workspace:*
         version: link:../HeaderLogo
       '@gemeente-denhaag/iconbutton':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../IconButton
       '@gemeente-denhaag/icons':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Icons
       '@gemeente-denhaag/language-switcher':
-        specifier: 0.2.3-alpha.314
+        specifier: workspace:*
         version: link:../LanguageSwitcher
       '@gemeente-denhaag/link':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Link
       '@gemeente-denhaag/link-group':
-        specifier: 0.1.3-alpha.183
+        specifier: workspace:*
         version: link:../LinkGroup
       '@gemeente-denhaag/menu':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Menu
       '@gemeente-denhaag/responsive-content':
-        specifier: 0.1.1-alpha.182
+        specifier: workspace:*
         version: link:../ResponsiveContent
       '@gemeente-denhaag/sheet':
-        specifier: 0.1.0-alpha.118
+        specifier: workspace:*
         version: link:../Sheet
       '@gemeente-denhaag/typography':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Typography
       react:
         specifier: ^17.0.0 || ^18.0.0
@@ -612,7 +612,7 @@ importers:
   components/HighlightedLinks:
     devDependencies:
       '@gemeente-denhaag/icons':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Icons
 
   components/IconButton:
@@ -622,7 +622,7 @@ importers:
         version: 17.0.2
     devDependencies:
       '@gemeente-denhaag/icons':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Icons
 
   components/Icons:
@@ -634,13 +634,13 @@ importers:
   components/Image:
     devDependencies:
       '@gemeente-denhaag/icons':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Icons
 
   components/InputLabel:
     dependencies:
       '@gemeente-denhaag/baseprops':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../BaseProps
       '@material-ui/core':
         specifier: 4.12.4
@@ -652,10 +652,10 @@ importers:
   components/LanguageSwitcher:
     dependencies:
       '@gemeente-denhaag/icons':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Icons
       '@gemeente-denhaag/link':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Link
       '@utrecht/component-library-react':
         specifier: 1.0.0-alpha.307
@@ -667,10 +667,10 @@ importers:
   components/Link:
     dependencies:
       '@gemeente-denhaag/baseprops':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../BaseProps
       '@gemeente-denhaag/icons':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Icons
       react:
         specifier: ^17.0.0 || ^18.0.0
@@ -679,16 +679,16 @@ importers:
   components/LinkGroup:
     devDependencies:
       '@gemeente-denhaag/icons':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Icons
 
   components/List:
     dependencies:
       '@gemeente-denhaag/iconbutton':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../IconButton
       '@gemeente-denhaag/icons':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Icons
       react:
         specifier: ^17.0.0 || ^18.0.0
@@ -697,13 +697,13 @@ importers:
   components/Menu:
     dependencies:
       '@gemeente-denhaag/baseprops':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../BaseProps
       '@gemeente-denhaag/icons':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Icons
       '@gemeente-denhaag/language-switcher':
-        specifier: 0.2.3-alpha.314
+        specifier: workspace:*
         version: link:../LanguageSwitcher
       '@utrecht/component-library-css':
         specifier: 1.0.0-alpha.497
@@ -720,7 +720,7 @@ importers:
   components/Note:
     devDependencies:
       '@gemeente-denhaag/icons':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Icons
 
   components/OrderedList: {}
@@ -736,7 +736,7 @@ importers:
         version: 17.0.2
     devDependencies:
       '@gemeente-denhaag/icons':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Icons
 
   components/PosttypeLabel:
@@ -748,23 +748,23 @@ importers:
   components/ProcessSteps:
     dependencies:
       '@gemeente-denhaag/baseprops':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../BaseProps
       '@gemeente-denhaag/icons':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Icons
       '@gemeente-denhaag/step-marker':
-        specifier: 0.0.1-alpha.23
+        specifier: workspace:*
         version: link:../StepMarker
       '@gemeente-denhaag/typography':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Typography
       react:
         specifier: ^17.0.0 || ^18.0.0
         version: 17.0.2
     devDependencies:
       '@gemeente-denhaag/button':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Button
 
   components/Radio:
@@ -774,10 +774,10 @@ importers:
         version: 17.0.2
     devDependencies:
       '@gemeente-denhaag/form-field':
-        specifier: 0.1.1-alpha.198
+        specifier: workspace:*
         version: link:../FormField
       '@gemeente-denhaag/formcontrollabel':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../FormControlLabel
 
   components/ResponsiveContent: {}
@@ -785,7 +785,7 @@ importers:
   components/Select:
     dependencies:
       '@gemeente-denhaag/baseprops':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../BaseProps
       '@material-ui/core':
         specifier: 4.12.4
@@ -801,14 +801,14 @@ importers:
         version: 17.0.2
     devDependencies:
       '@gemeente-denhaag/iconbutton':
-        specifier: 0.2.3-alpha.312
-        version: 0.2.3-alpha.312(react@17.0.2)
+        specifier: workspace:*
+        version: link:../IconButton
       '@gemeente-denhaag/icons':
-        specifier: 0.2.3-alpha.312
-        version: 0.2.3-alpha.312(react@17.0.2)
+        specifier: workspace:*
+        version: link:../Icons
       '@gemeente-denhaag/responsive-content':
-        specifier: 0.1.1-alpha.172
-        version: 0.1.1-alpha.172
+        specifier: workspace:*
+        version: link:../ResponsiveContent
 
   components/Sidenav:
     dependencies:
@@ -823,8 +823,8 @@ importers:
         version: 17.0.2
     devDependencies:
       '@gemeente-denhaag/icons':
-        specifier: 0.2.3-alpha.312
-        version: 0.2.3-alpha.312(react@17.0.2)
+        specifier: workspace:*
+        version: link:../Icons
 
   components/StylesProvider:
     dependencies:
@@ -838,7 +838,7 @@ importers:
   components/Switch:
     dependencies:
       '@gemeente-denhaag/baseprops':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../BaseProps
       '@material-ui/core':
         specifier: 4.12.4
@@ -850,7 +850,7 @@ importers:
   components/Tab:
     dependencies:
       '@gemeente-denhaag/baseprops':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../BaseProps
       '@material-ui/core':
         specifier: 4.12.4
@@ -871,7 +871,7 @@ importers:
   components/TextArea:
     dependencies:
       '@gemeente-denhaag/icons':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Icons
       react:
         specifier: ^17.0.0 || ^18.0.0
@@ -880,7 +880,7 @@ importers:
   components/TextField:
     dependencies:
       '@gemeente-denhaag/icons':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Icons
       react:
         specifier: ^17.0.0 || ^18.0.0
@@ -889,13 +889,13 @@ importers:
   components/Timeline:
     dependencies:
       '@gemeente-denhaag/baseprops':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../BaseProps
       '@gemeente-denhaag/icons':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Icons
       '@gemeente-denhaag/typography':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Typography
       '@material-ui/core':
         specifier: 4.12.4
@@ -905,23 +905,23 @@ importers:
         version: 17.0.2
     devDependencies:
       '@gemeente-denhaag/button':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Button
 
   components/Typography:
     dependencies:
       '@gemeente-denhaag/basedatadisplayprops':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../BaseDataDisplayProps
       react:
         specifier: ^17.0.0 || ^18.0.0
         version: 17.0.2
     devDependencies:
       '@gemeente-denhaag/design-tokens-common':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../../proprietary/Common
       '@gemeente-denhaag/design-tokens-components':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../../proprietary/Components
 
   components/UnorderedList: {}
@@ -931,97 +931,97 @@ importers:
   packages/components-react:
     dependencies:
       '@gemeente-denhaag/alert':
-        specifier: 0.1.1-alpha.292
+        specifier: workspace:*
         version: link:../../components/Alert
       '@gemeente-denhaag/avatar':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../../components/Avatar
       '@gemeente-denhaag/badge-counter':
-        specifier: 0.1.1-alpha.322
+        specifier: workspace:*
         version: link:../../components/BadgeCounter
       '@gemeente-denhaag/baseprops':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../../components/BaseProps
       '@gemeente-denhaag/breadcrumb':
-        specifier: 0.1.1-alpha.240
-        version: 0.1.1-alpha.240(react@17.0.2)
+        specifier: workspace:*
+        version: link:../../components/Breadcrumb
       '@gemeente-denhaag/button':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../../components/Button
       '@gemeente-denhaag/card':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../../components/Card
       '@gemeente-denhaag/checkbox':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../../components/Checkbox
       '@gemeente-denhaag/datepicker':
-        specifier: 0.1.1-alpha.242
+        specifier: workspace:*
         version: link:../../components/Datepicker
       '@gemeente-denhaag/divider':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../../components/Divider
       '@gemeente-denhaag/form-field':
-        specifier: 0.1.1-alpha.198
+        specifier: workspace:*
         version: link:../../components/FormField
       '@gemeente-denhaag/formcontrol':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../../components/FormControl
       '@gemeente-denhaag/formcontrollabel':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../../components/FormControlLabel
       '@gemeente-denhaag/formgroup':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../../components/FormGroup
       '@gemeente-denhaag/header':
-        specifier: 0.1.1-alpha.172
-        version: 0.1.1-alpha.172(react@17.0.2)
+        specifier: workspace:*
+        version: link:../../components/Header
       '@gemeente-denhaag/header-logo':
-        specifier: 0.1.1-alpha.172
-        version: 0.1.1-alpha.172
+        specifier: workspace:*
+        version: link:../../components/HeaderLogo
       '@gemeente-denhaag/iconbutton':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../../components/IconButton
       '@gemeente-denhaag/inputlabel':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../../components/InputLabel
       '@gemeente-denhaag/link':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../../components/Link
       '@gemeente-denhaag/list':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../../components/List
       '@gemeente-denhaag/menu':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../../components/Menu
       '@gemeente-denhaag/page':
-        specifier: 0.1.1-alpha.172
-        version: 0.1.1-alpha.172
+        specifier: workspace:*
+        version: link:../../components/Page
       '@gemeente-denhaag/radio':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../../components/Radio
       '@gemeente-denhaag/responsive-content':
-        specifier: 0.1.1-alpha.172
-        version: 0.1.1-alpha.172
+        specifier: workspace:*
+        version: link:../../components/ResponsiveContent
       '@gemeente-denhaag/select':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../../components/Select
       '@gemeente-denhaag/stylesprovider':
-        specifier: 0.1.1-alpha.322
+        specifier: workspace:*
         version: link:../../components/StylesProvider
       '@gemeente-denhaag/switch':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../../components/Switch
       '@gemeente-denhaag/tab':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../../components/Tab
       '@gemeente-denhaag/textfield':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../../components/TextField
       '@gemeente-denhaag/timeline':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../../components/Timeline
       '@gemeente-denhaag/typography':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../../components/Typography
       react:
         specifier: ^17.0.0 || ^18.0.0
@@ -1030,8 +1030,8 @@ importers:
   packages/keycloak:
     dependencies:
       '@gemeente-denhaag/design-tokens-components':
-        specifier: 0.2.3-alpha.312
-        version: 0.2.3-alpha.312
+        specifier: workspace:*
+        version: link:../../proprietary/Components
       '@utrecht/components':
         specifier: 1.0.0-alpha.458
         version: 1.0.0-alpha.458
@@ -1039,8 +1039,8 @@ importers:
   packages/open-forms:
     dependencies:
       '@gemeente-denhaag/design-tokens-components':
-        specifier: 0.2.3-alpha.312
-        version: 0.2.3-alpha.312
+        specifier: workspace:*
+        version: link:../../proprietary/Components
       '@utrecht/components':
         specifier: ~1.0.0-alpha.0
         version: 1.0.0-alpha.458
@@ -1048,16 +1048,16 @@ importers:
   proprietary/Common:
     devDependencies:
       '@gemeente-denhaag/design-tokens-proprietary':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Proprietary
 
   proprietary/Components:
     devDependencies:
       '@gemeente-denhaag/design-tokens-common':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Common
       '@gemeente-denhaag/design-tokens-proprietary':
-        specifier: 0.2.3-alpha.322
+        specifier: workspace:*
         version: link:../Proprietary
 
   proprietary/Proprietary: {}
@@ -2987,23 +2987,6 @@ packages:
     resolution: {integrity: sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==}
     dev: true
 
-  /@gemeente-denhaag/basedatadisplayprops@0.2.3-alpha.312(react@17.0.2):
-    resolution: {integrity: sha512-d6pAjT6l7kZlC5I7ZyE/pBDpOfLENmeZID3RPwAqzeOMgXbnCdbBehWpRxJH0qaSe5Aoj6V2s3C4JGHFWy3GkQ==}
-    peerDependencies:
-      react: ^17.0.0 || ^18.0.0
-    dependencies:
-      '@gemeente-denhaag/baseprops': 0.2.3-alpha.312(react@17.0.2)
-      react: 17.0.2
-    dev: false
-
-  /@gemeente-denhaag/baseprops@0.2.3-alpha.312(react@17.0.2):
-    resolution: {integrity: sha512-Nl6OPv8Nn8cIm2MVJlxr/n4ruTm9jLTjzgVqfv9pH+Tk48Hawqxh8JnZc4LJbe9GAAUyDAWp1/EybL6wWJnqJw==}
-    peerDependencies:
-      react: ^17.0.0 || ^18.0.0
-    dependencies:
-      react: 17.0.2
-    dev: false
-
   /@gemeente-denhaag/baseprops@0.2.3-alpha.312(react@18.2.0):
     resolution: {integrity: sha512-Nl6OPv8Nn8cIm2MVJlxr/n4ruTm9jLTjzgVqfv9pH+Tk48Hawqxh8JnZc4LJbe9GAAUyDAWp1/EybL6wWJnqJw==}
     peerDependencies:
@@ -3011,127 +2994,6 @@ packages:
     dependencies:
       react: 18.2.0
     dev: true
-
-  /@gemeente-denhaag/breadcrumb@0.1.1-alpha.240(react@17.0.2):
-    resolution: {integrity: sha512-1YLOepPtUzFaRZSLPYHJwXESd8BEekCNKp8c0SNGt0DDyrAyO86T1tFhuc/3Hj4TzTcH5w4iXy4GkhdApKwi7g==}
-    peerDependencies:
-      react: ^17.0.0 || ^18.0.0
-    dependencies:
-      react: 17.0.2
-    dev: false
-
-  /@gemeente-denhaag/button@0.2.3-alpha.312(react@17.0.2):
-    resolution: {integrity: sha512-daHZITZVfAW3L4pWC/jv2oYYAhhPerEYf8RHrLR/9zzPmbkHyzRzeDlZKSntq3IQ87Gp0QY2L4N5YVMOyz6NEg==}
-    peerDependencies:
-      react: ^17.0.0 || ^18.0.0
-    dependencies:
-      '@gemeente-denhaag/baseprops': 0.2.3-alpha.312(react@17.0.2)
-      react: 17.0.2
-    dev: false
-
-  /@gemeente-denhaag/design-tokens-components@0.2.3-alpha.312:
-    resolution: {integrity: sha512-+1vLIOM74/xxueKAdk0mM9uzXYVTaMsx2KaYWgIn8XIpQedINHXax05pKTQnCGJrwy0cpNPDKD0lGxqKlXY6rQ==}
-    dev: false
-
-  /@gemeente-denhaag/header-logo@0.1.1-alpha.172:
-    resolution: {integrity: sha512-YM7/09JVCmQuvvfr1n3cd4cc/HggZqk6K2gW6Q+QycRmFK808B4KYi8O6ZEZcHFRVnghnCBERv6FlDuSl5uM6Q==}
-    dev: false
-
-  /@gemeente-denhaag/header@0.1.1-alpha.172(react@17.0.2):
-    resolution: {integrity: sha512-y2Caytu784hebmxgnuSeKOmUGg6Uajx08rDUGejwkTf85TPTezx64GWXtUMfee7TQ0+pAijSJW4ZrdfMe9Cx1g==}
-    peerDependencies:
-      react: ^17.0.0 || ^18.0.0
-    dependencies:
-      '@gemeente-denhaag/baseprops': 0.2.3-alpha.312(react@17.0.2)
-      '@gemeente-denhaag/breadcrumb': 0.1.1-alpha.240(react@17.0.2)
-      '@gemeente-denhaag/button': 0.2.3-alpha.312(react@17.0.2)
-      '@gemeente-denhaag/header-logo': 0.1.1-alpha.172
-      '@gemeente-denhaag/iconbutton': 0.2.3-alpha.312(react@17.0.2)
-      '@gemeente-denhaag/icons': 0.2.3-alpha.312(react@17.0.2)
-      '@gemeente-denhaag/language-switcher': 0.2.3-alpha.304(react@17.0.2)
-      '@gemeente-denhaag/link': 0.2.3-alpha.312(react@17.0.2)
-      '@gemeente-denhaag/link-group': 0.1.3-alpha.173
-      '@gemeente-denhaag/menu': 0.2.3-alpha.312(react@17.0.2)
-      '@gemeente-denhaag/responsive-content': 0.1.1-alpha.172
-      '@gemeente-denhaag/sheet': 0.1.0-alpha.108(react@17.0.2)
-      '@gemeente-denhaag/typography': 0.2.3-alpha.312(react@17.0.2)
-      react: 17.0.2
-    dev: false
-
-  /@gemeente-denhaag/iconbutton@0.2.3-alpha.312(react@17.0.2):
-    resolution: {integrity: sha512-QzczjNmiNgLYcIdAMdrBNE1v2x/2QMi1akJ9RWqk2gvljhBwOr5J2Y82Iag49xKX7x9MpyrPMqe4XUwLBxciHQ==}
-    peerDependencies:
-      react: ^17.0.0 || ^18.0.0
-    dependencies:
-      react: 17.0.2
-
-  /@gemeente-denhaag/icons@0.2.3-alpha.312(react@17.0.2):
-    resolution: {integrity: sha512-W8sYmB4HYhmr8z77KY7EqkowMAYKzPxr5c1v5ND+kbWNpvZkfgMfYJlbwnzPDfzm7hBm7606mLh0SFv2185WDw==}
-    peerDependencies:
-      react: ^17.0.0 || ^18.0.0
-    dependencies:
-      react: 17.0.2
-
-  /@gemeente-denhaag/language-switcher@0.2.3-alpha.304(react@17.0.2):
-    resolution: {integrity: sha512-eXdIh2KjVc71nrnFDCJXc7wDFE+8/5nn1Xv3IU7Q5aMqF6YV3ZxX9EhcFPBJ/+lpoZpS/i9iu/xGVPPdKxOQcw==}
-    peerDependencies:
-      react: ^17.0.0 || ^18.0.0
-    dependencies:
-      '@gemeente-denhaag/icons': 0.2.3-alpha.312(react@17.0.2)
-      '@gemeente-denhaag/link': 0.2.3-alpha.312(react@17.0.2)
-      react: 17.0.2
-    dev: false
-
-  /@gemeente-denhaag/link-group@0.1.3-alpha.173:
-    resolution: {integrity: sha512-xF/+FKPRuSUOsqzRgwIlW7/g4DNATVHINUMxliOYbhDdALdEqujRy27vOh/tiZimM6yrx+j42qIxkUEIMkYXlw==}
-    dev: false
-
-  /@gemeente-denhaag/link@0.2.3-alpha.312(react@17.0.2):
-    resolution: {integrity: sha512-LU+7+UhSwFV27B0MiewMOTzzvcdHKvxmjn7WbX8L/sP3SJt+EACk8zPlDZaCA9zLdxvKAZ3FaV+SinRHWYANtw==}
-    peerDependencies:
-      react: ^17.0.0 || ^18.0.0
-    dependencies:
-      '@gemeente-denhaag/baseprops': 0.2.3-alpha.312(react@17.0.2)
-      '@gemeente-denhaag/icons': 0.2.3-alpha.312(react@17.0.2)
-      react: 17.0.2
-    dev: false
-
-  /@gemeente-denhaag/menu@0.2.3-alpha.312(react@17.0.2):
-    resolution: {integrity: sha512-3lAVIQ0wJxDOQznWAq0J05kkUgvn0vafU8sc4AicyqUClAI1GPRv8VwIv8fi9RfEwJxIlJnkIrOS+uW6wK8NIg==}
-    peerDependencies:
-      react: ^17.0.0 || ^18.0.0
-    dependencies:
-      '@gemeente-denhaag/baseprops': 0.2.3-alpha.312(react@17.0.2)
-      '@gemeente-denhaag/icons': 0.2.3-alpha.312(react@17.0.2)
-      '@gemeente-denhaag/language-switcher': 0.2.3-alpha.304(react@17.0.2)
-      '@utrecht/component-library-css': 1.0.0-alpha.460
-      react: 17.0.2
-      uuidv4: 6.2.13
-    dev: false
-
-  /@gemeente-denhaag/page@0.1.1-alpha.172:
-    resolution: {integrity: sha512-+k8SyYWaIodNngKr3lgd3/+tirxL8x51mQtb3p5n+0bPChPLg6C0iH6P/NAASsGzZ0ViCk7vNZ1Lov+4ib2ypQ==}
-    dev: false
-
-  /@gemeente-denhaag/responsive-content@0.1.1-alpha.172:
-    resolution: {integrity: sha512-Rvrxj5JC8oZJdtATSq4ey72fo80ChS3O1FO7UM88T/sjYGsun1Lukf6FFI+lu55kdpwIws7BoekLV7jjhp1Lqw==}
-
-  /@gemeente-denhaag/sheet@0.1.0-alpha.108(react@17.0.2):
-    resolution: {integrity: sha512-AlP2cR8Me4j0GicnkrPHV8gbTZZ2NLGnigOx5bbeMPk8qxTLvmv14xUUMKU9K/9wRPHnGs2YLlhHXEsDIqcgSg==}
-    peerDependencies:
-      react: ^17.0.0 || ^18.0.0
-    dependencies:
-      react: 17.0.2
-    dev: false
-
-  /@gemeente-denhaag/typography@0.2.3-alpha.312(react@17.0.2):
-    resolution: {integrity: sha512-Wexvqcu8I4dgIAwv9X3ikBIw1FBUus3SOvd42A/WMqoAlaSgfNw3ocLmIWgqEUOgtuMFIHUJrPvu0oGzTjs/yA==}
-    peerDependencies:
-      react: ^17.0.0 || ^18.0.0
-    dependencies:
-      '@gemeente-denhaag/basedatadisplayprops': 0.2.3-alpha.312(react@17.0.2)
-      react: 17.0.2
-    dev: false
 
   /@hapi/address@2.1.4:
     resolution: {integrity: sha512-QD1PhQk+s31P1ixsX0H0Suoupp3VMXzIVMSwobR3F3MSUO2YCV0B7xqLcUw/Bh8yuvd3LhpyqLQWTNcRmp6IdQ==}
@@ -6968,10 +6830,6 @@ packages:
       '@typescript-eslint/types': 5.59.2
       eslint-visitor-keys: 3.4.0
     dev: true
-
-  /@utrecht/component-library-css@1.0.0-alpha.460:
-    resolution: {integrity: sha512-9yclK6+0Lu6wW1yT4jQDLAq4FcXSk62w9VbdQA0CJhInuyUvfSgehDI4OoL/d9iSf+O0bwvVI3hbKvYX45rh7w==}
-    dev: false
 
   /@utrecht/component-library-css@1.0.0-alpha.497:
     resolution: {integrity: sha512-tzm/LN5XktEm4k6cQWMoFnTkGoc2J6Ee7K/NFo+EoEl0JqsTqDVlg6f6p/dk/sn89z+v7nnZbKWUK2iOMG5R3A==}
@@ -24866,10 +24724,4 @@ packages:
 
   /zwitch@1.0.5:
     resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==}
-    dev: true
-
-  file:components/CardAuthentication:
-    resolution: {directory: components/CardAuthentication, type: directory}
-    name: '@gemeente-denhaag/card-authentication'
-    version: 0.1.1-alpha.51
     dev: true

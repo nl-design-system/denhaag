@@ -23,7 +23,7 @@
     "watch:style-dictionary": "chokidar --follow-symlinks --initial \"src/**/*.json\" -c \"pnpm run build:style-dictionary\""
   },
   "devDependencies": {
-    "@gemeente-denhaag/design-tokens-common": "0.2.3-alpha.324",
-    "@gemeente-denhaag/design-tokens-proprietary": "0.2.3-alpha.324"
+    "@gemeente-denhaag/design-tokens-common": "workspace:*",
+    "@gemeente-denhaag/design-tokens-proprietary": "workspace:*"
   }
 }

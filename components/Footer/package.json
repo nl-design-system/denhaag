@@ -29,7 +29,7 @@
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/responsive-content": "0.1.1-alpha.184",
+    "@gemeente-denhaag/responsive-content": "workspace:*",
     "@utrecht/component-library-css": "1.0.0-alpha.521",
     "@utrecht/component-library-react": "1.0.0-alpha.330"
   },
