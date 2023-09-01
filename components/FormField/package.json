@@ -28,12 +28,6 @@
     "build": "rollup -c ../../rollup.config.js",
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
-  "devDependencies": {
-    "@gemeente-denhaag/checkbox": "0.2.3-alpha.324",
-    "@gemeente-denhaag/formcontrollabel": "0.2.3-alpha.324",
-    "@gemeente-denhaag/icons": "0.2.3-alpha.324",
-    "@gemeente-denhaag/textfield": "0.2.3-alpha.324"
-  },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"
   }
