@@ -32,6 +32,6 @@
     "react": "^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-alpha.312"
+    "@gemeente-denhaag/icons": "workspace:*"
   }
 }

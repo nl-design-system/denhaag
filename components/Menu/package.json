@@ -28,9 +28,9 @@
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "0.2.3-alpha.324",
-    "@gemeente-denhaag/icons": "0.2.3-alpha.324",
-    "@gemeente-denhaag/language-switcher": "0.2.3-alpha.316",
+    "@gemeente-denhaag/baseprops": "workspace:*",
+    "@gemeente-denhaag/icons": "workspace:*",
+    "@gemeente-denhaag/language-switcher": "workspace:*",
     "@utrecht/component-library-css": "1.0.0-alpha.497",
     "uuidv4": "6.2.13"
   },

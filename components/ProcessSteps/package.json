@@ -29,15 +29,15 @@
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "0.2.3-alpha.324",
-    "@gemeente-denhaag/icons": "0.2.3-alpha.324",
-    "@gemeente-denhaag/step-marker": "0.0.1-alpha.25",
-    "@gemeente-denhaag/typography": "0.2.3-alpha.324"
+    "@gemeente-denhaag/baseprops": "workspace:*",
+    "@gemeente-denhaag/icons": "workspace:*",
+    "@gemeente-denhaag/step-marker": "workspace:*",
+    "@gemeente-denhaag/typography": "workspace:*"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
-    "@gemeente-denhaag/button": "0.2.3-alpha.324"
+    "@gemeente-denhaag/button": "workspace:*"
   }
 }

@@ -28,8 +28,8 @@
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/iconbutton": "0.2.3-alpha.324",
-    "@gemeente-denhaag/icons": "0.2.3-alpha.324"
+    "@gemeente-denhaag/iconbutton": "workspace:*",
+    "@gemeente-denhaag/icons": "workspace:*"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"
