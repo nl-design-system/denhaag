@@ -19,7 +19,7 @@ The Municipality of The Hague React UI-components library is constructed, so tha
 ### Install component library
 
 ```bash
-yarn add @gemeente-denhaag/components-react
+npm install @gemeente-denhaag/components-react
 ```
 
 ### Usage
@@ -42,11 +42,11 @@ class Example extends Component {
 
 1. Clone this repository
 2. Install npm go [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) for instructions. Make sure to install version `16.13.0` or higher.
-3. Install yarn go [here](https://yarnpkg.com/getting-started/install) for instructions. Make sure to install version `1.22.17` or higher.
+3. [Install pnpm using these instructions](https://pnpm.io/installation).
 4. Run the following command to install all development dependencies:
 
 ```bash
-yarn install --frozen-lockfile
+pnpm install --frozen-lockfile
 ```
 
 #### Code style
@@ -69,7 +69,7 @@ In order to test components we use storybook.\
 To run storybook locally we start it with the following command:
 
 ```bash
-yarn storybook
+pnpm run storybook
 ```
 
 We don't need to re-run the command over-and-over because storybook should detect changed files ✨automagically✨ and refresh the displayed components.
