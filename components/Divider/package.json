@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "@gemeente-denhaag/basedatadisplayprops": "workspace:*",
+    "@gemeente-denhaag/baseprops": "workspace:*",
     "@material-ui/core": "4.12.4"
   },
   "peerDependencies": {
