@@ -1,5 +1,6 @@
 {
-  "npmClient": "yarn",
+  "$schema": "node_modules/@lerna-lite/cli/schemas/lerna-schema.json",
+  "npmClient": "pnpm",
   "useWorkspaces": true,
   "version": "independent",
   "command": {
@@ -13,7 +14,8 @@
       "allowBranch": ["main"],
       "conventionalCommits": true,
       "exact": true,
-      "message": "docs(release): design system packages"
+      "message": "docs(release): design system packages",
+      "syncWorkspaceLock": true
     }
   }
 }
