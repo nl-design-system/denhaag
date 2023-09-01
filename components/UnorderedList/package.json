@@ -27,5 +27,8 @@
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
     "clean": "rimraf dist tsconfig.tsbuildinfo"
+  },
+  "devDependencies": {
+    "@utrecht/components": "1.0.0-alpha.459"
   }
 }

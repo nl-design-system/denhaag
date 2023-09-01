@@ -24,6 +24,9 @@
   "files": [
     "dist"
   ],
+  "devDependencies": {
+    "@utrecht/components": "1.0.0-alpha.459"
+  },
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
     "clean": "rimraf dist tsconfig.tsbuildinfo"

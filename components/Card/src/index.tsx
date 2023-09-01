@@ -1,4 +1,4 @@
-import './Card/card.scss';
+import './index.scss';
 
 export * from './Card/Card';
 export * from './Card/CardAction';

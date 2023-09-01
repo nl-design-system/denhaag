@@ -1,7 +1,7 @@
 import React from 'react';
-import './menu.scss';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import clsx from 'clsx';
+import './_menu.scss';
 
 export const Menu: React.FC<BaseProps> = (props: Omit<BaseProps, 'classes'>) => {
   const rootClassNames = clsx('denhaag-menu', props.className);

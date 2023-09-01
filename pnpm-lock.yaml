@@ -424,6 +424,10 @@ importers:
       react:
         specifier: ^17.0.0 || ^18.0.0
         version: 17.0.2
+    devDependencies:
+      '@utrecht/components':
+        specifier: 1.0.0-alpha.459
+        version: 1.0.0-alpha.459
 
   components/BaseDataDisplayProps:
     dependencies:
@@ -631,12 +635,20 @@ importers:
       react:
         specifier: ^17.0.0 || ^18.0.0
         version: 17.0.2
+    devDependencies:
+      '@utrecht/components':
+        specifier: 1.0.0-alpha.459
+        version: 1.0.0-alpha.459
 
   components/FormField:
     dependencies:
       react:
         specifier: ^17.0.0 || ^18.0.0
         version: 17.0.2
+    devDependencies:
+      '@utrecht/components':
+        specifier: 1.0.0-alpha.459
+        version: 1.0.0-alpha.459
 
   components/FormGroup:
     dependencies:
@@ -994,6 +1006,10 @@ importers:
       react:
         specifier: ^17.0.0 || ^18.0.0
         version: 17.0.2
+    devDependencies:
+      '@utrecht/components':
+        specifier: 1.0.0-alpha.459
+        version: 1.0.0-alpha.459
 
   components/TextField:
     dependencies:
@@ -1003,6 +1019,10 @@ importers:
       react:
         specifier: ^17.0.0 || ^18.0.0
         version: 17.0.2
+    devDependencies:
+      '@utrecht/components':
+        specifier: 1.0.0-alpha.459
+        version: 1.0.0-alpha.459
 
   components/Timeline:
     dependencies:
@@ -1041,8 +1061,15 @@ importers:
       '@gemeente-denhaag/design-tokens-components':
         specifier: workspace:*
         version: link:../../proprietary/Components
+      '@utrecht/components':
+        specifier: 1.0.0-alpha.459
+        version: 1.0.0-alpha.459
 
-  components/UnorderedList: {}
+  components/UnorderedList:
+    devDependencies:
+      '@utrecht/components':
+        specifier: 1.0.0-alpha.459
+        version: 1.0.0-alpha.459
 
   packages/components-css:
     devDependencies:
@@ -7173,7 +7200,6 @@ packages:
     resolution: {integrity: sha512-kN7K92t4zdomnyoKsi8tKF0l8v5d45cZmnVycERTdPXTfQIVeV8svEO2nTqv8GtWcsTwO94Am06gjCPMY2QJdA==}
     dependencies:
       clsx: 1.2.1
-    dev: false
 
   /@webassemblyjs/ast@1.11.5:
     resolution: {integrity: sha512-LHY/GSAZZRpsNQH+/oHqhRQ5FT7eoULcBqgfyTB5nQHogFnK3/7QoN7dLnwSE/JkUAF0SrRuclT7ODqMFtWxxQ==}
@@ -9361,7 +9387,6 @@ packages:
   /clsx@1.2.1:
     resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
     engines: {node: '>=6'}
-    dev: false
 
   /cmd-shim@6.0.1:
     resolution: {integrity: sha512-S9iI9y0nKR4hwEQsVWpyxld/6kRfGepGfzff83FcaiEBpmvlbA2nnGe7Cylgrx2f/p1P5S5wpRm9oL8z1PbS3Q==}

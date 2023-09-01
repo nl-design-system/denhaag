@@ -2,7 +2,7 @@ import React from 'react';
 import { TabPanel as MaterialTabPanel } from '@material-ui/lab';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import clsx from 'clsx';
-import './styles/tab-panel.scss';
+import './styles/_tab-panel.scss';
 
 export interface TabPanelProps extends Omit<BaseProps, 'classes'> {
   /**

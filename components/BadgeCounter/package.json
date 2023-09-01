@@ -31,6 +31,9 @@
   "dependencies": {
     "@gemeente-denhaag/dotindicator": "workspace:*"
   },
+  "devDependencies": {
+    "@utrecht/components": "1.0.0-alpha.459"
+  },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"
   },

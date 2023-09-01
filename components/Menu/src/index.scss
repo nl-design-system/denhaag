@@ -1,3 +1,6 @@
+@import "./menu";
+@import "./menu-button";
+
 .denhaag-mobile-menu {
   transition-duration: var(--denhaag-mobile-menu-transition-duration);
   will-change: var(--denhaag-mobile-menu-will-change);
