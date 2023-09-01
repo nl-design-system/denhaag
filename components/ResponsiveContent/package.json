@@ -24,6 +24,9 @@
   "files": [
     "dist"
   ],
+  "dependencies": {
+    "@gemeente-denhaag/baseprops": "workspace:*"
+  },
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
     "clean": "rimraf dist tsconfig.tsbuildinfo"
