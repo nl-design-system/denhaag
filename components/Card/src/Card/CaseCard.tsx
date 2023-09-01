@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRightIcon } from '@gemeente-denhaag/icons';
+import { CustomLink } from '@gemeente-denhaag/link';
 import { Paragraph } from '@gemeente-denhaag/typography';
 import clsx from 'clsx';
 import './card.scss';
@@ -11,7 +12,7 @@ import CardTextWrapper from './CardTextWrapper';
 import CardWrapper from './CardWrapper';
 import CardDateWrapper from './CardDateWrapper';
 import CardDate from './CardDate';
-import { CardAction, Link } from './CardAction';
+import { CardAction } from './CardAction';
 
 export interface CaseCardProps {
   /**
@@ -42,7 +43,7 @@ export interface CaseCardProps {
   /**
    * Custom Link component used for single-page apps.
    */
-  Link?: Link;
+  Link?: CustomLink;
 }
 
 /**

@@ -2,10 +2,11 @@ import React from 'react';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import ResponsiveContent from '@gemeente-denhaag/responsive-content';
 import { ChevronRightIcon, HouseIcon } from '@gemeente-denhaag/icons';
+import { CustomLink } from '@gemeente-denhaag/link';
 import { BreadcrumbNavigation } from './BreadcrumbNavigation';
 import { BreadcrumbListItem } from './BreadcrumbListItem';
 import { BreadcrumbList } from './BreadcrumbList';
-import { BreadcrumbLink, Link } from './BreadcrumbLink';
+import { BreadcrumbLink } from './BreadcrumbLink';
 import { BreadcrumbText } from './BreadcrumbText';
 
 import './index.scss';
@@ -29,7 +30,7 @@ export interface BreadcrumbProps extends Omit<BaseProps, 'tabIndex' | 'className
   /**
    * Custom Link component used for single-page apps.
    */
-  Link?: Link;
+  Link?: CustomLink;
 }
 
 export const Breadcrumb: React.FC<BreadcrumbProps> = ({ navigationPath, showHomeIcon, Link }: BreadcrumbProps) => {
