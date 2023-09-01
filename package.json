@@ -17,7 +17,7 @@
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "build": "yarn build:library && yarn build:storybook",
+    "build": "build:library && yarn build:storybook",
     "build:library": "lerna run build",
     "build:storybook": "build-storybook",
     "clean": "lerna run clean --parallel && rimraf .rollup-cache",
@@ -42,7 +42,7 @@
     "update-major": "npm-check-updates --configFileName .ncurc.major.js --deep --dep dev,prod --packageManager yarn --target latest --upgrade && yarn install",
     "watch:storybook": "start-storybook -p 6006",
     "watch:style-dictionary": "lerna run --parallel --scope '@gemeente-denhaag/design-tokens-*' watch:style-dictionary",
-    "typecheck:storybook": "yarn tsc --project tsconfig.storybook.json --noEmit"
+    "typecheck:storybook": "tsc --project tsconfig.storybook.json --noEmit"
   },
   "dependencies": {
     "@material-ui/core": "4.12.4",
