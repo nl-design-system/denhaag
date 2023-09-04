@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/formgroup",
-  "version": "0.2.3-alpha.323",
+  "version": "0.2.3-alpha.324",
   "description": "A FormGroup component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -29,8 +29,8 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "0.2.3-alpha.323",
-    "@gemeente-denhaag/typography": "0.2.3-alpha.323",
+    "@gemeente-denhaag/baseprops": "0.2.3-alpha.324",
+    "@gemeente-denhaag/typography": "0.2.3-alpha.324",
     "@material-ui/core": "4.12.4"
   },
   "peerDependencies": {

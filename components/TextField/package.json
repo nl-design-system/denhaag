@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/textfield",
-  "version": "0.2.3-alpha.323",
+  "version": "0.2.3-alpha.324",
   "description": "A TextField component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -29,7 +29,7 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-alpha.323"
+    "@gemeente-denhaag/icons": "0.2.3-alpha.324"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"

@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/language-switcher",
-  "version": "0.2.3-alpha.315",
+  "version": "0.2.3-alpha.316",
   "description": "A Language Switcher component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -29,8 +29,8 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-alpha.323",
-    "@gemeente-denhaag/link": "0.2.3-alpha.323",
+    "@gemeente-denhaag/icons": "0.2.3-alpha.324",
+    "@gemeente-denhaag/link": "0.2.3-alpha.324",
     "@utrecht/component-library-react": "1.0.0-alpha.307"
   },
   "peerDependencies": {
