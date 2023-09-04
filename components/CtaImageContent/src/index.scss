@@ -147,7 +147,7 @@
   }
 }
 
-.denhaag-cta-image-content:focus-visible,
+.denhaag-cta-image-content:focus-within:not(:focus-visible),
 .denhaag-cta-image-content--focus {
   outline: var(--denhaag-focus-border);
 }
