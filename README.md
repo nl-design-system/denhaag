@@ -105,7 +105,7 @@ The file we need is located here: `components/[CATEGORY]/package.json`\
 An entry should be structured like this:
 
 ```json
-"@gemeente-denhaag/{component_name}": "0.1.0"
+"@gemeente-denhaag/{component_name}": "workspace:*"
 ```
 
 Similarly, if you create a new category we need to add the category package to the list of dependencies in the meta-package which installs all of the Den Haag react components.
