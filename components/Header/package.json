@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/header",
-  "version": "0.1.1-alpha.181",
+  "version": "0.1.1-alpha.182",
   "description": "A Header component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -29,19 +29,19 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "0.2.3-alpha.321",
-    "@gemeente-denhaag/breadcrumb": "0.1.1-alpha.249",
-    "@gemeente-denhaag/button": "0.2.3-alpha.321",
-    "@gemeente-denhaag/header-logo": "0.1.1-alpha.181",
-    "@gemeente-denhaag/iconbutton": "0.2.3-alpha.321",
-    "@gemeente-denhaag/icons": "0.2.3-alpha.321",
-    "@gemeente-denhaag/language-switcher": "0.2.3-alpha.313",
-    "@gemeente-denhaag/link": "0.2.3-alpha.321",
-    "@gemeente-denhaag/link-group": "0.1.3-alpha.182",
-    "@gemeente-denhaag/menu": "0.2.3-alpha.321",
-    "@gemeente-denhaag/responsive-content": "0.1.1-alpha.181",
-    "@gemeente-denhaag/sheet": "0.1.0-alpha.117",
-    "@gemeente-denhaag/typography": "0.2.3-alpha.321"
+    "@gemeente-denhaag/baseprops": "0.2.3-alpha.322",
+    "@gemeente-denhaag/breadcrumb": "0.1.1-alpha.250",
+    "@gemeente-denhaag/button": "0.2.3-alpha.322",
+    "@gemeente-denhaag/header-logo": "0.1.1-alpha.182",
+    "@gemeente-denhaag/iconbutton": "0.2.3-alpha.322",
+    "@gemeente-denhaag/icons": "0.2.3-alpha.322",
+    "@gemeente-denhaag/language-switcher": "0.2.3-alpha.314",
+    "@gemeente-denhaag/link": "0.2.3-alpha.322",
+    "@gemeente-denhaag/link-group": "0.1.3-alpha.183",
+    "@gemeente-denhaag/menu": "0.2.3-alpha.322",
+    "@gemeente-denhaag/responsive-content": "0.1.1-alpha.182",
+    "@gemeente-denhaag/sheet": "0.1.0-alpha.118",
+    "@gemeente-denhaag/typography": "0.2.3-alpha.322"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"
