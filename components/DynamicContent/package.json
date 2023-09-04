@@ -3,7 +3,7 @@
   "description": "Dynamic content component, used to display content in multiple ways.",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
-  "version": "0.1.1-alpha.96",
+  "version": "0.1.1-alpha.97",
   "exports": {
     ".": {
       "types": "./dist/cjs/index.d.ts",
@@ -29,10 +29,10 @@
   },
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "devDependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-alpha.322",
-    "@gemeente-denhaag/image": "0.1.1-alpha.231",
-    "@gemeente-denhaag/link": "0.2.3-alpha.322",
-    "@gemeente-denhaag/pagination": "0.1.1-alpha.249"
+    "@gemeente-denhaag/icons": "0.2.3-alpha.323",
+    "@gemeente-denhaag/image": "0.1.1-alpha.232",
+    "@gemeente-denhaag/link": "0.2.3-alpha.323",
+    "@gemeente-denhaag/pagination": "0.1.1-alpha.250"
   },
   "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
 }
