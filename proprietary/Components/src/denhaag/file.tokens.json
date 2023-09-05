@@ -26,7 +26,10 @@
       },
       "link": {
         "color": { "value": "{denhaag.color.blue.3}" },
-        "gap": { "value": "{denhaag.space.inline.2xs}" }
+        "gap": { "value": "{denhaag.space.inline.2xs}" },
+        "icon": {
+          "width": { "value": "20px" }
+        }
       }
     }
   }

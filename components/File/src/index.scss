@@ -2,6 +2,7 @@
   display: flex;
   color: inherit;
   text-decoration: inherit;
+  cursor: pointer;
   border-width: var(--denhaag-file-border-width);
   border-color: var(--denhaag-file-border-color);
   border-style: var(--denhaag-file-border-style);
@@ -20,12 +21,16 @@
     gap: var(--denhaag-file-link-gap);
 
     --utrecht-link-text-decoration: none;
+
+    & &__icon {
+      width: var(--denhaag-file-link-icon-width);
+    }
   }
 
   &--hover,
   &:hover {
     .utrecht-link {
-      --utrecht-link-hover-color: var(--denhaag-file-hover-color, --utrecht-link-hover-color);
+      --utrecht-link-color: var(--denhaag-file-hover-color, --utrecht-link-hover-color);
     }
 
     .denhaag-file__link {
@@ -39,6 +44,10 @@
     padding-inline-start: var(--denhaag-file-left-padding-inline-start);
     padding-inline-end: var(--denhaag-file-left-padding-inline-end);
     background-color: var(--denhaag-file-left-background-color, --denhaag-color-warmgrey-1);
+
+    .denhaag-file__icon {
+      fill: none;
+    }
   }
 
   &__right {
