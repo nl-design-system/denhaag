@@ -1,5 +1,5 @@
 import React, { HTMLAttributes, forwardRef } from 'react';
-import './styles/tabs.scss';
+import './styles/_tabs.scss';
 import clsx from 'clsx';
 
 export interface TabListProps extends HTMLAttributes<HTMLDivElement> {}
