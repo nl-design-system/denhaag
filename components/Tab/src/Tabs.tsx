@@ -1,9 +1,10 @@
 import React, { HTMLAttributes } from 'react';
-import './styles/_tabs.scss';
 import clsx from 'clsx';
+import { TabIndicator } from './TabIndicator';
+import { TabsContainer } from './TabsContainer';
+import './styles/_tabs.scss';
 
-export interface TabsProps extends HTMLAttributes<HTMLDivElement>  {
-
+export interface TabsProps extends HTMLAttributes<HTMLDivElement> {
   /**
    * Callback fired when the value changes.
    * @param event The event source of the callback
@@ -21,7 +22,8 @@ export const Tabs: React.FC<TabsProps> = (props: TabsProps) => {
   const rootClassNames = clsx('denhaag-tabs', props.className);
   return (
     <div className={rootClassNames}>
-      {props.children}
+      <TabsContainer>{props.children}</TabsContainer>
+      <TabIndicator />
     </div>
   );
 };
