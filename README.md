@@ -99,7 +99,7 @@ Start by filling it with the following information:
   },
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
-    "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+    "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {}
 }

@@ -599,6 +599,8 @@ importers:
 
   components/EventDate: {}
 
+  components/File: {}
+
   components/FloatingContact: {}
 
   components/Footer:
