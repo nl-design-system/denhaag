@@ -2,7 +2,7 @@ import React, { HTMLAttributes } from 'react';
 import { ListSubheaderProps } from './ListSubheader';
 import clsx from 'clsx';
 
-import './list.scss';
+import './_list.scss';
 
 export interface ListProps extends HTMLAttributes<HTMLDivElement> {
   /**

@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/footer",
-  "version": "0.1.1-alpha.181",
+  "version": "0.1.1-alpha.185",
   "description": "A Footer component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -26,10 +26,10 @@
   ],
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
-    "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+    "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/responsive-content": "0.1.1-alpha.182",
+    "@gemeente-denhaag/responsive-content": "workspace:*",
     "@utrecht/component-library-css": "1.0.0-alpha.521",
     "@utrecht/component-library-react": "1.0.0-alpha.330"
   },

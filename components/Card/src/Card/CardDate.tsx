@@ -1,5 +1,5 @@
 import React, { TimeHTMLAttributes } from 'react';
-import './card.scss';
+import '../index.scss';
 
 export interface CardDateProps extends TimeHTMLAttributes<HTMLTimeElement> {}
 

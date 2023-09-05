@@ -2,6 +2,7 @@ import React from 'react';
 import { Stepper as MaterialStepper } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
 import clsx from 'clsx';
+import './styles/_mui-override.scss';
 
 export interface TimelineProps extends Omit<BaseProps, 'classes'> {
   /**

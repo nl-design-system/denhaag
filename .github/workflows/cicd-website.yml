@@ -20,28 +20,50 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v3.2.0
         with:
-          node-version: "16.13.x"
+          node-version: "16"
 
-      - name: yarn install
+      - uses: pnpm/action-setup@v2.2.4
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 8.3
+          run_install: false
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
         run: |
-          npm install -g yarn
-          yarn install --frozen-lockfile
+          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies
+        run: |
+          pnpm install --frozen-lockfile
+          pnpm ls --recursive
 
       - name: run linters
         run: |
-          yarn lint:css
-          yarn lint:package
-          yarn lint:js
-          yarn lint:prettier
+          pnpm run lint:css
+          pnpm run lint:package
+          pnpm run lint:js
+          pnpm run lint:prettier
 
       - name: build library
-        run: yarn build:library
+        run: |
+          pnpm run build:library
 
       - name: typecheck storybook
-        run: yarn typecheck:storybook
+        run: |
+          pnpm run typecheck:storybook
 
       - name: build storybook
-        run: yarn build:storybook
+        run: |
+          pnpm run build:storybook
 
   publish-npm:
     runs-on: ubuntu-latest
@@ -56,15 +78,34 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v3.2.0
         with:
-          node-version: "16.13.x"
+          node-version: "16"
 
-      - name: yarn install
+      - uses: pnpm/action-setup@v2.2.4
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 8.3
+          run_install: false
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
         run: |
-          npm install -g yarn
-          yarn install --frozen-lockfile
+          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies
+        run: |
+          pnpm install --frozen-lockfile
+          pnpm ls --recursive
 
       - name: build library
-        run: yarn build
+        run: pnpm run build
 
       - name: lerna version
         env:
@@ -75,18 +116,18 @@ jobs:
           GIT_COMMITTER_NAME: "Den Haag website"
         run: |
           git push --set-upstream origin HEAD
-          yarn release -- --yes --no-git-tag-version --preid www-denhaag-nl
+          pnpm run release-denhaag-nl
 
       - name: lerna publish
         with:
-          node-version: "16.13.x"
+          node-version: "16"
           cache: "npm"
           registry-url: "https://npm.pkg.github.com/"
           scope: "@gemeente-denhaag"
         env:
           GH_ADMIN_TOKEN: ${{ secrets.GH_ADMIN_TOKEN }}
         run: |
-          npm config set "//npm.pkg.github.com/:_authToken" "${GH_ADMIN_TOKEN}"
-          npm config set access public
-          npm run publish -- --no-verify-access --yes
-          npm config delete "//npm.pkg.github.com/:_authToken"
+          pnpm config set "//npm.pkg.github.com/:_authToken" "${GH_ADMIN_TOKEN}"
+          pnpm config set access public
+          pnpm run publish
+          pnpm config delete "//npm.pkg.github.com/:_authToken"

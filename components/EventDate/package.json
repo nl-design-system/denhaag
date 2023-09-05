@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/eventdate",
-  "version": "0.1.1-alpha.239",
+  "version": "0.1.1-alpha.243",
   "description": "A event date component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -26,7 +26,7 @@
   ],
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
-    "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+    "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "gitHead": ""
 }

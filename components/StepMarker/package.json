@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/step-marker",
-  "version": "0.0.1-alpha.23",
+  "version": "0.0.1-alpha.27",
   "description": "An atomic Step Marker component used in Status and Form Progress Indicator",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -26,12 +26,12 @@
   ],
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
-    "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+    "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-alpha.312"
+    "@gemeente-denhaag/icons": "workspace:*"
   }
 }

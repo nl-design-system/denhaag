@@ -3,7 +3,7 @@
   "description": "Common design tokens for the Den Haag Component Library",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
-  "version": "0.2.3-alpha.322",
+  "version": "0.2.3-alpha.326",
   "repository": {
     "type": "git",
     "url": "https://github.com/nl-design-system/denhaag.git",
@@ -16,13 +16,13 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "scripts": {
-    "build": "yarn npm-run-all build:*",
+    "build": "npm-run-all build:*",
     "build:ts": "tsc -b",
-    "build:style-dictionary": "yarn style-dictionary build --config style-dictionary.config.js",
-    "clean": "yarn rimraf dist tsconfig.tsbuildinfo",
-    "watch:style-dictionary": "yarn chokidar --follow-symlinks --initial \"src/**/*.json\" -c \"yarn build:style-dictionary\""
+    "build:style-dictionary": "style-dictionary build --config style-dictionary.config.js",
+    "clean": "rimraf dist tsconfig.tsbuildinfo",
+    "watch:style-dictionary": "chokidar --follow-symlinks --initial \"src/**/*.json\" -c \"pnpm run build:style-dictionary\""
   },
   "devDependencies": {
-    "@gemeente-denhaag/design-tokens-proprietary": "0.2.3-alpha.322"
+    "@gemeente-denhaag/design-tokens-proprietary": "workspace:*"
   }
 }

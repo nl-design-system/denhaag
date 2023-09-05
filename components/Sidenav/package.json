@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/sidenav",
-  "version": "0.1.0-alpha.140",
+  "version": "0.1.0-alpha.144",
   "description": "A sidenav component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -26,7 +26,7 @@
   ],
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
-    "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+    "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"

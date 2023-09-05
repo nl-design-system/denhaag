@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/open-forms",
-  "version": "0.1.1-alpha.264",
+  "version": "0.1.1-alpha.268",
   "description": "A temporary Open-forms theme to support NL Design System components and the Municipality of the Hague theme",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -16,13 +16,13 @@
     "dist"
   ],
   "scripts": {
-    "build": "yarn npm-run-all build:*",
+    "build": "npm-run-all build:*",
     "build:css": "rollup -c rollup.config.js",
-    "build:clean": "yarn rimraf dist/.tsbuildinfo dist/*.{js,d.ts}",
-    "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+    "build:clean": "rimraf dist/.tsbuildinfo dist/*.{js,d.ts}",
+    "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/design-tokens-components": "0.2.3-alpha.312"
+    "@gemeente-denhaag/design-tokens-components": "workspace:*"
   },
   "peerDependencies": {
     "@utrecht/components": "~1.0.0-alpha.0"

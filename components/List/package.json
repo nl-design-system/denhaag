@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/list",
-  "version": "0.2.3-alpha.322",
+  "version": "0.2.3-alpha.326",
   "description": "A List component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -15,7 +15,8 @@
       "types": "./dist/cjs/index.d.ts",
       "import": "./dist/mjs/index.js",
       "default": "./dist/cjs/index.js"
-    }
+    },
+    "./index.css": "./dist/index.css"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/mjs/index.js",
@@ -25,11 +26,11 @@
   ],
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
-    "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+    "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/iconbutton": "0.2.3-alpha.322",
-    "@gemeente-denhaag/icons": "0.2.3-alpha.322"
+    "@gemeente-denhaag/iconbutton": "workspace:*",
+    "@gemeente-denhaag/icons": "workspace:*"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"

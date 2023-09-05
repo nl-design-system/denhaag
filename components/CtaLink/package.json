@@ -3,7 +3,7 @@
   "description": "Call To Action Link component",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
-  "version": "0.1.1-alpha.237",
+  "version": "0.1.1-alpha.241",
   "exports": {
     ".": {
       "types": "./dist/cjs/index.d.ts",
@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
-    "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+    "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "repository": {
     "type": "git",
@@ -29,7 +29,7 @@
   },
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "devDependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-alpha.322"
+    "@gemeente-denhaag/icons": "workspace:*"
   },
   "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
 }

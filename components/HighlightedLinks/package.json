@@ -3,7 +3,7 @@
   "description": "Highlighted links are important links at the top of your page.",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
-  "version": "0.1.1-alpha.145",
+  "version": "0.1.1-alpha.149",
   "exports": {
     ".": {
       "types": "./dist/cjs/index.d.ts",
@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
-    "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+    "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,6 @@
   },
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "devDependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-alpha.322"
+    "@gemeente-denhaag/icons": "workspace:*"
   }
 }

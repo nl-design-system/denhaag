@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/badge-counter",
-  "version": "0.1.1-alpha.322",
+  "version": "0.1.1-alpha.326",
   "description": "A Badge component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -26,10 +26,13 @@
   ],
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
-    "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+    "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/dotindicator": "0.1.1-alpha.322"
+    "@gemeente-denhaag/dotindicator": "workspace:*"
+  },
+  "devDependencies": {
+    "@utrecht/components": "1.0.0-alpha.459"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"

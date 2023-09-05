@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/basedatadisplayprops",
-  "version": "0.2.3-alpha.322",
+  "version": "0.2.3-alpha.326",
   "description": "A package containing properties used in DataDisplay",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -25,10 +25,10 @@
   ],
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
-    "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+    "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "0.2.3-alpha.322"
+    "@gemeente-denhaag/baseprops": "workspace:*"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"

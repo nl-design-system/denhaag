@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/article-meta",
-  "version": "0.1.1-alpha.238",
+  "version": "0.1.1-alpha.242",
   "description": "A publication date component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -26,7 +26,7 @@
   ],
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
-    "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+    "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "gitHead": ""
 }

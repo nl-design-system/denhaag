@@ -1,0 +1,46 @@
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+
+import pkg from "../../package.json";
+import readme from "../../README.md";
+import { DescriptionList } from "../index";
+
+export const items = [
+  { title: "Beast of Bodmin", detail: "A large feline inhabiting Bodmin Moor." },
+  { title: "Morgawr", detail: "A sea serpent." },
+  { title: "Owlman", detail: "A giant owl-like creature." },
+];
+
+<Meta
+  title="React/Data Display/Description List"
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Design Tokens
+
+<DesignTokenDocBlock categoryName="Description List" viewType="table" />
+
+## Stories
+
+### Default
+
+<Canvas>
+  <Story name="Default">
+    <DescriptionList items={items} />
+  </Story>
+</Canvas>
+
+### With Caption
+
+<Canvas>
+  <Story name="With Caption">
+    <DescriptionList caption="Caption" items={items} />
+  </Story>
+</Canvas>

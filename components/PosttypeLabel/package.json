@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/posttypelabel",
-  "version": "0.1.1-alpha.240",
+  "version": "0.1.1-alpha.244",
   "description": "A posttype label component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -26,7 +26,7 @@
   ],
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
-    "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+    "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"

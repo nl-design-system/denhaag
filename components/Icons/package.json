@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/icons",
-  "version": "0.2.3-alpha.322",
+  "version": "0.2.3-alpha.326",
   "description": "The icon set of the Municipality of The Hague",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -26,7 +26,7 @@
   ],
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
-    "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+    "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"

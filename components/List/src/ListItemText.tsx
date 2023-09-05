@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from 'react';
 import clsx from 'clsx';
 
-import './list-item-text.scss';
+import './_list-item-text.scss';
 
 export interface ListItemTextProps extends HTMLAttributes<HTMLDivElement> {
   /**

@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/radio",
-  "version": "0.2.3-alpha.322",
+  "version": "0.2.3-alpha.326",
   "description": "A Radio component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -26,11 +26,11 @@
   ],
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
-    "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+    "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "devDependencies": {
-    "@gemeente-denhaag/form-field": "0.1.1-alpha.198",
-    "@gemeente-denhaag/formcontrollabel": "0.2.3-alpha.322"
+    "@gemeente-denhaag/form-field": "workspace:*",
+    "@gemeente-denhaag/formcontrollabel": "workspace:*"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"

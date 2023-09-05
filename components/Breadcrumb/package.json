@@ -3,7 +3,7 @@
   "description": "A Breadcrumb component",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
-  "version": "0.1.1-alpha.250",
+  "version": "0.1.1-alpha.254",
   "exports": {
     ".": {
       "types": "./dist/cjs/index.d.ts",
@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
-    "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+    "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "repository": {
     "type": "git",
@@ -29,9 +29,9 @@
   },
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "dependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-alpha.312",
-    "@gemeente-denhaag/link": "0.2.3-alpha.322",
-    "@gemeente-denhaag/responsive-content": "0.1.1-alpha.182"
+    "@gemeente-denhaag/icons": "workspace:*",
+    "@gemeente-denhaag/link": "workspace:*",
+    "@gemeente-denhaag/responsive-content": "workspace:*"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"
