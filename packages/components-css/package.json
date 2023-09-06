@@ -47,6 +47,7 @@
     "@gemeente-denhaag/dotindicator": "workspace:*",
     "@gemeente-denhaag/dynamic-content": "workspace:*",
     "@gemeente-denhaag/eventdate": "workspace:*",
+    "@gemeente-denhaag/file": "workspace:*",
     "@gemeente-denhaag/floating-contact": "workspace:*",
     "@gemeente-denhaag/form-field": "workspace:*",
     "@gemeente-denhaag/form-progress": "workspace:*",
