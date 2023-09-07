@@ -26,10 +26,11 @@ import {
 import { Sheet, SheetCloseButton, SheetOverlay, SheetContainer } from "/components/Sheet/src";
 import IconButton from "/components/IconButton/src";
 import { Status } from "/components/ProcessSteps/src";
+import { File } from "/components/File/src";
 
 import clsx from "clsx";
 
-import "./CaseDetail-page.css";
+import "./CaseDetail-page.scss";
 
 <Meta
   title="Templates/Case Detail page"
@@ -154,6 +155,13 @@ export const progressStepsData = {
   ],
 };
 
+export const linkData = {
+  name: "Example",
+  link: "test/example.png",
+  size: 2000,
+  lastUpdated: "Thu Aug 31 2023 11:22:11 GMT+0200",
+};
+
 export const navigationPathData = [
   { label: "Home", href: "https://denhaag.nl/" },
   { label: "MijnDenHaag", href: "https://denhaag.nl/parkeren/" },
@@ -234,8 +242,10 @@ export const copyright = "© 2022 Gemeente Den Haag";
         </Sidenav>
         <main className="denhaag-page-content__main">
           <Heading2>Aanvraag subsidie geluidsisolatie</Heading2>
-          <Heading3 className="denhaag-page-content__status">Status</Heading3>
+          <Heading3 className="denhaag-page-content__heading">Status</Heading3>
           <Status {...progressStepsData}></Status>
+          <Heading3 className="denhaag-page-content__heading">Documenten</Heading3>
+          <File {...linkData} />
         </main>
       </ResponsiveContent>
       <PageFooter>

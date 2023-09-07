@@ -1,0 +1,72 @@
+.denhaag-file {
+  display: flex;
+  color: inherit;
+  text-decoration: inherit;
+  cursor: pointer;
+  border-width: var(--denhaag-file-border-width);
+  border-color: var(--denhaag-file-border-color);
+  border-style: var(--denhaag-file-border-style);
+
+  &--focus,
+  &:focus {
+    outline-color: var(--denhaag-file-focus-outline-color);
+    outline-width: var(--denhaag-file-focus-outline-width);
+    outline-style: var(--denhaag-file-focus-outline-style);
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    color: var(--denhaag-file-link-color);
+    gap: var(--denhaag-file-link-gap);
+
+    --utrecht-link-text-decoration: none;
+
+    & &__icon {
+      width: var(--denhaag-file-link-icon-width);
+    }
+  }
+
+  &--hover,
+  &:hover {
+    .utrecht-link {
+      --utrecht-link-color: var(--denhaag-file-hover-color, --utrecht-link-hover-color);
+    }
+
+    .denhaag-file__link {
+      color: var(--denhaag-file-hover-color);
+    }
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    padding-inline-start: var(--denhaag-file-left-padding-inline-start);
+    padding-inline-end: var(--denhaag-file-left-padding-inline-end);
+    background-color: var(--denhaag-file-left-background-color, --denhaag-color-warmgrey-1);
+
+    .denhaag-file__icon {
+      fill: none;
+    }
+  }
+
+  &__right {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--denhaag-file-right-gap);
+    padding-block-start: var(--denhaag-file-right-padding-block-start);
+    padding-block-end: var(--denhaag-file-right-padding-block-end);
+    padding-inline-start: var(--denhaag-file-right-padding-inline-start);
+    padding-inline-end: var(--denhaag-file-right-padding-inline-end);
+
+    @media (min-width: 620px) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__label {
+    flex-grow: 1;
+  }
+}

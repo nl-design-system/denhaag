@@ -1,10 +1,10 @@
-# File download
+# File
 
-A file download displays a link to download an attachment and metadata about the file.
+A file displays a link to download an attachment and shows metadata about the file.
 
 ## When to use
 
-A file download is used to present and download a file that is uploaded by the user or an employee.
+A file is used to present and download a file that is uploaded by the user or an employee.
 
 ## Alternatives and related components
 
@@ -12,7 +12,7 @@ None.
 
 ## Anatomy
 
-The file download consists of:
+The file consists of:
 
 1. File name: the name of the file
 2. Preview: shows an icon of the type of the file (e.g. document, image)
@@ -21,7 +21,7 @@ The file download consists of:
 
 ## (Interactive) states
 
-The file download contains the states normal, hover and focus.
+The file contains the states normal, hover and focus.
 
 ## Design properties
 
@@ -37,7 +37,7 @@ The file download contains the states normal, hover and focus.
 
 ### Interactive states
 
-- Hover: title text color Blue/3, icon svg color Blue/3
+- Hover: title text color Blue/3, icon svg color Blue/3, container background-color warm/grey
 - Focus: title text color Grey/4, icon svg color Grey/4, container border color Ocher/5
 
 ### Structure
@@ -70,14 +70,14 @@ None.
 
 Files download should:
 
-- Be used for all downloads
+- Be used for all downloads.
 - Include file size and type. Showing the file size is particularly nice for users that are on reduced data allowences (i.e. mobile), and also offers an indication on how long a file might take to download.
 
 ### Don’ts
 
 Files download should:
 
-- Not be described as a file
+- Not be described as a file.
 
 ## References
 
