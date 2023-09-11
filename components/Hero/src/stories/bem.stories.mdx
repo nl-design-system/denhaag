@@ -5,6 +5,7 @@ import readme from "../../README.md";
 import "../index.scss";
 import "../storybook.scss";
 import "../storybook";
+import { PauseIcon } from "./icons.stories.mdx";
 
 export const heroImage = (h, w, id = "photo-1513384312027-9fa69a360337") =>
   `https://images.unsplash.com/${id}?fit=crop&w=${w}&h=${h}`;
@@ -84,6 +85,33 @@ export const heroImage = (h, w, id = "photo-1513384312027-9fa69a360337") =>
         </div>
       </div>
       <img class="denhaag-hero__image" src={heroImage(800, 800)} alt="hero" />
+    </section>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Home - video variant
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Home - video variant">
+    <section class="denhaag-hero denhaag-hero--home denhaag-hero--home-video">
+      <div class="denhaag-hero__container">
+        <div class="denhaag-hero__content">
+          <h1 class="denhaag-hero__title utrecht-heading-1">
+            <strong>Video variant</strong> van de hero home
+          </h1>
+        </div>
+      </div>
+      <video class="denhaag-hero__video" aria-label="Den Haag hero video." autoPlay muted>
+        <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+      </video>
+      <button class="denhaag-button denhaag-button--secondary-action denhaag-button--icon-only denhaag-hero__video-pause-button">
+        <span class="denhaag-button__sr-only">This is an hero video.</span>
+        <span class="denhaag-button__icon">
+          <PauseIcon class="denhaag-button__icon-pause" />
+        </span>
+      </button>
     </section>
   </Story>
   {/* eslint-enable react/no-unknown-property */}

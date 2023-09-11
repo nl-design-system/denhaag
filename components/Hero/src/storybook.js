@@ -1,9 +1,10 @@
-import HeroThemeImage from './heroThemeImage';
+import { heroThemeImage, heroHomeVideo } from './hero';
 
 window.addEventListener('DOMContentLoaded', () => {
-  HeroThemeImage();
+  heroThemeImage();
+  heroHomeVideo();
 });
 
 window.addEventListener('resize', () => {
-  HeroThemeImage();
+  heroThemeImage();
 });
