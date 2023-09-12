@@ -57,28 +57,25 @@ export const heroHomeVideo = (mainclass = '.denhaag-hero--home-video') => {
       return;
     }
 
-    iconElement.innerText = '';
-    iconElement.insertAdjacentHTML('beforeend', addIconHtml);
+    iconElement.innerText = ''; // Remove icon.
+    iconElement.insertAdjacentHTML('beforeend', addIconHtml); // Add new icon.
   };
 
   videoButtonElement.addEventListener(
     'click',
     ({ target }) => {
       // Conditions.
-      const buttonPauseClicked = target.classList.contains(buttonClassPause);
-      const buttonPlayClicked = target.classList.contains(buttonClassPlay);
-      const insideButtonPauseClicked = target.closest(`.${buttonClassPause}`);
-      const insideButtonPlayClicked = target.closest(`.${buttonClassPlay}`);
+      const buttonPauseClicked = target.classList.contains(buttonClassPause) || target.closest(`.${buttonClassPause}`);
+      const buttonPlayClicked = target.classList.contains(buttonClassPlay) || target.closest(`.${buttonClassPlay}`);
 
       toggleButtonClass(videoButtonElement);
 
-      // Toggle play button: play/pause video + toggle icon.
-      if (buttonPauseClicked || insideButtonPauseClicked) {
+      if (buttonPauseClicked) {
         videoElement.pause();
         toggleIcon(buttonIconElement, playIconHtml);
       }
 
-      if (buttonPlayClicked || insideButtonPlayClicked) {
+      if (buttonPlayClicked) {
         videoElement.play();
         toggleIcon(buttonIconElement, pauseIconHtml);
       }
