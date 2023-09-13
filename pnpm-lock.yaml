@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
@@ -1269,6 +1273,9 @@ importers:
       '@gemeente-denhaag/divider':
         specifier: workspace:*
         version: link:../../components/Divider
+      '@gemeente-denhaag/file':
+        specifier: workspace:*
+        version: link:../../components/File
       '@gemeente-denhaag/form-field':
         specifier: workspace:*
         version: link:../../components/FormField
@@ -25060,7 +25067,3 @@ packages:
   /zwitch@1.0.5:
     resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==}
     dev: true
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
