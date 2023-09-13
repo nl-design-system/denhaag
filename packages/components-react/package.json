@@ -37,6 +37,7 @@
     "@gemeente-denhaag/checkbox": "workspace:*",
     "@gemeente-denhaag/datepicker": "workspace:*",
     "@gemeente-denhaag/divider": "workspace:*",
+    "@gemeente-denhaag/file": "workspace:*",
     "@gemeente-denhaag/form-field": "workspace:*",
     "@gemeente-denhaag/form-progress": "workspace:*",
     "@gemeente-denhaag/formcontrol": "workspace:*",
