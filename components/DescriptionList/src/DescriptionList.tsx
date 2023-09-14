@@ -1,4 +1,4 @@
-import React, { HTMLAttributes } from 'react';
+import React, { Fragment, HTMLAttributes } from 'react';
 import { DescriptionListCaption } from './DescriptionListCaption';
 import { DescriptionListTitle } from './DescriptionListTitle';
 import { DescriptionListDetail } from './DescriptionListDetail';
@@ -7,8 +7,8 @@ import { DescriptionListBase } from './DescriptionListBase';
 import './index.scss';
 
 type DescriptionListItem = {
-  title: string;
-  detail: string;
+  title: React.ReactNode;
+  detail: React.ReactNode;
 };
 
 export type DescriptionListProps = HTMLAttributes<HTMLDivElement> & {
@@ -21,11 +21,11 @@ export const DescriptionList: React.FC<DescriptionListProps> = ({ caption, items
     <>
       {caption && <DescriptionListCaption>{caption}</DescriptionListCaption>}
       <DescriptionListBase>
-        {items.map((item) => (
-          <>
+        {items.map((item, index) => (
+          <Fragment key={index}>
             <DescriptionListTitle>{item.title}</DescriptionListTitle>
             <DescriptionListDetail>{item.detail}</DescriptionListDetail>
-          </>
+          </Fragment>
         ))}
       </DescriptionListBase>
     </>
