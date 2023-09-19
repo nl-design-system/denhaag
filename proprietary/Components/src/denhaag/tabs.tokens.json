@@ -21,11 +21,9 @@
           "color": { "value": "{denhaag.color.green.3}" }
         },
         "hover": {
-          "font-weight": { "value": "{denhaag.typography.weight.regular}" },
           "color": { "value": "{denhaag.color.green.3}" }
         },
         "focus": {
-          "font-weight": { "value": "{denhaag.typography.weight.regular}" },
           "color": { "value": "{denhaag.color.green.3}" }
         },
         "outline": { "value": "0" }
