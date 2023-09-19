@@ -13,12 +13,10 @@
 
 .denhaag-tabs__tab:hover {
   color: var(--denhaag-tabs-tab-hover-color);
-  font-weight: var(--denhaag-tabs-tab-hover-font-weight);
 }
 
 .denhaag-tabs__tab:focus {
   color: var(--denhaag-tabs-tab-focus-color);
-  font-weight: var(--denhaag-tabs-tab-focus-font-weight);
 }
 
 .denhaag-tabs__tab--focus::after,
@@ -35,16 +33,6 @@
 .denhaag-tabs__tab.denhaag-tabs__tab--selected {
   font-weight: var(--denhaag-tabs-tab-selected-font-weight);
   color: var(--denhaag-tabs-tab-selected-color);
-}
-
-.denhaag-tabs__tab.denhaag-tabs__tab--selected:hover {
-  color: var(--denhaag-tabs-tab-hover-color);
-  font-weight: var(--denhaag-tabs-tab-hover-font-weight);
-}
-
-.denhaag-tabs__tab.denhaag-tabs__tab--selected:focus {
-  color: var(--denhaag-tabs-tab-focus-color);
-  font-weight: var(--denhaag-tabs-tab-focus-font-weight);
 }
 
 .denhaag-tabs__tab:focus-visible {

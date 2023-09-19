@@ -977,9 +977,15 @@ importers:
 
   components/Tab:
     dependencies:
+      '@types/uuid':
+        specifier: 9.0.2
+        version: 9.0.2
       react:
         specifier: ^17.0.0 || ^18.0.0
         version: 17.0.2
+      uuid:
+        specifier: 9.0.0
+        version: 9.0.0
 
   components/Table:
     dependencies:

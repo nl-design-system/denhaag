@@ -9,8 +9,11 @@ import { TabText } from './TabText';
 import { v4 as uuidv4 } from 'uuid';
 
 export * from './Tab';
-export * from './TabPanel';
+export * from './TabIndicator';
 export * from './TabList';
+export * from './TabPanel';
+export * from './TabsContainer';
+export * from './TabText';
 
 export interface TabsProps extends HTMLAttributes<HTMLDivElement> {
   tabData: Array<{ label: string; panelContent: React.ReactNode }>;
