@@ -2,7 +2,7 @@
   "denhaag": {
     "action": {
       "gap": {
-        "value": "{denhaag.space.inline.xl}"
+        "value": "{denhaag.space.inline.xs}"
       },
       "color": {
         "value": "{denhaag.color.grey.5}"
@@ -17,10 +17,10 @@
         "value": "{denhaag.space.inline.md}"
       },
       "padding-block-start": {
-        "value": "{denhaag.space.block.sm}"
+        "value": "{denhaag.space.block.md}"
       },
       "padding-block-end": {
-        "value": "{denhaag.space.block.sm}"
+        "value": "{denhaag.space.block.md}"
       },
       "border-style": { "value": "solid" },
       "border-width": { "value": "1px" },
@@ -32,7 +32,12 @@
       },
       "details": {
         "gap": {
-          "value": "{denhaag.space.inline.xl}"
+          "value": "{denhaag.space.inline.md}"
+        },
+        "lg": {
+          "gap": {
+            "value": "{denhaag.space.inline.xl}"
+          }
         }
       },
       "date": {
@@ -100,8 +105,24 @@
         },
         "details": {
           "gap": {
-            "value": "{denhaag.space.inline.sm}"
+            "value": "{denhaag.space.inline.xs}"
+          },
+          "lg": {
+            "gap": {
+              "value": "{denhaag.space.inline.sm}"
+            }
           }
+        }
+      },
+      "lg": {
+        "gap": {
+          "value": "{denhaag.space.inline.xl}"
+        },
+        "padding-block-start": {
+          "value": "{denhaag.space.block.sm}"
+        },
+        "padding-block-end": {
+          "value": "{denhaag.space.block.sm}"
         }
       }
     }
