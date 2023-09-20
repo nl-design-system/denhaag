@@ -25,35 +25,6 @@
       "border-style": { "value": "solid" },
       "border-width": { "value": "1px" },
       "border-color": { "value": "{denhaag.color.grey.2}" },
-      "link": {
-        "padding-inline-start": {
-          "value": "{denhaag.space.inline.md}"
-        },
-        "padding-inline-end": {
-          "value": "{denhaag.space.inline.md}"
-        },
-        "padding-block-start": {
-          "value": "{denhaag.space.block.md}"
-        },
-        "padding-block-end": {
-          "value": "{denhaag.space.block.md}"
-        },
-        "hover": {
-          "background-color": {
-            "value": "{denhaag.color.grey.1}"
-          }
-        },
-        "focus": {
-          "outline-color": { "value": "{denhaag.focus.border-color}" },
-          "outline-width": { "value": "{denhaag.focus.border-width}" },
-          "outline-style": { "value": "{denhaag.focus.border-style}" }
-        },
-        "details": {
-          "gap": {
-            "value": "{denhaag.space.inline.sm}"
-          }
-        }
-      },
       "title": {
         "font-weight": {
           "value": "{denhaag.typography.weight.semibold}"
@@ -61,7 +32,7 @@
       },
       "details": {
         "gap": {
-          "value": "{denhaag.space.inline.md}"
+          "value": "{denhaag.space.inline.xl}"
         }
       },
       "date": {
@@ -102,6 +73,35 @@
         },
         "color": {
           "value": "{denhaag.color.orange.4}"
+        }
+      },
+      "link": {
+        "padding-inline-start": {
+          "value": "{denhaag.space.inline.md}"
+        },
+        "padding-inline-end": {
+          "value": "{denhaag.space.inline.md}"
+        },
+        "padding-block-start": {
+          "value": "{denhaag.space.block.md}"
+        },
+        "padding-block-end": {
+          "value": "{denhaag.space.block.md}"
+        },
+        "hover": {
+          "background-color": {
+            "value": "{denhaag.color.grey.1}"
+          }
+        },
+        "focus": {
+          "outline-color": { "value": "{denhaag.focus.border-color}" },
+          "outline-width": { "value": "{denhaag.focus.border-width}" },
+          "outline-style": { "value": "{denhaag.focus.border-style}" }
+        },
+        "details": {
+          "gap": {
+            "value": "{denhaag.space.inline.sm}"
+          }
         }
       }
     }
