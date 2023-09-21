@@ -36,6 +36,7 @@ import TrashSvg from './svg/functional/trash.svg';
 import UncheckedBoxSvg from './svg/functional/uncheckedbox.svg';
 
 // Informational
+import AlertTriangleFilledSvg from './svg/informational/alert-triangle-filled.svg';
 import AlertTriangleSvg from './svg/informational/alert-triangle.svg';
 import CheckCircleSvg from './svg/informational/checkCircle.svg';
 import CircleHelpSvg from './svg/informational/circle-help.svg';
@@ -107,6 +108,7 @@ export const TrashIcon: F = (props: SvgIconProps) => buildIcon(TrashSvg, props);
 export const UncheckedBoxIcon: F = (props: SvgIconProps) => buildIcon(UncheckedBoxSvg, props);
 
 // Informational
+export const AlertTriangleFilledIcon: F = (props: SvgIconProps) => buildIcon(AlertTriangleFilledSvg, props);
 export const AlertTriangleIcon: F = (props: SvgIconProps) => buildIcon(AlertTriangleSvg, props);
 export const CheckCircleIcon: F = (props: SvgIconProps) => buildIcon(CheckCircleSvg, props);
 export const CircleHelpIcon: F = (props: SvgIconProps) => buildIcon(CircleHelpSvg, props);

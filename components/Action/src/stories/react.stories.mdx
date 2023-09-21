@@ -1,0 +1,209 @@
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+
+import pkg from "../../package.json";
+import readme from "../../README.md";
+import { Action } from "../index.tsx";
+
+<Meta
+  title="React/Actions/Action"
+  parameters={{
+    chromatic: { viewports: [1768, 1280, 768, 360] },
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "ALPHA",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Design Tokens
+
+<DesignTokenDocBlock categoryName="Action" viewType="table" />
+
+## Stories
+
+### Link
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Link">
+    <Action link="#example">Taak</Action>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Link - hover
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Link - hover">
+    <Action link="#example" className="denhaag-action--hover">
+      Taak
+    </Action>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Link - focus
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Link - focus">
+    <Action link="#example" className="denhaag-action--focus">
+      Taak
+    </Action>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Link - with date
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Link - with date">
+    <Action link="#example" deadline={new Date().setDate(new Date().getDate() + 1)}>
+      Taak
+    </Action>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Link - with date - relative
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Link - with date - relative">
+    <Action link="#example" deadline={new Date().setDate(new Date().getDate() + 5)} relativeDate>
+      Taak
+    </Action>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Link - with warning date - relative
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Link - with warning date - relative">
+    <Action link="#example" deadline={new Date().setDate(new Date().getDate() + 2)} relativeDate>
+      Taak
+    </Action>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Actions
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Actions">
+    <Action
+      actions={
+        <a href="#example" class="denhaag-button">
+          Actie
+        </a>
+      }
+    >
+      Taak
+    </Action>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Actions - hover
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Actions - hover">
+    <Action
+      actions={
+        <a href="#example" class="denhaag-button denhaag-button--hover">
+          Actie
+        </a>
+      }
+    >
+      Taak
+    </Action>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Actions - focus
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Actions - focus">
+    <Action
+      actions={
+        <a href="#example" class="denhaag-button denhaag-button--focus">
+          Actie
+        </a>
+      }
+    >
+      Taak
+    </Action>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Actions - with date
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Actions - with date">
+    <Action
+      deadline={new Date().setDate(new Date().getDate() + 1)}
+      actions={
+        <a href="#example" class="denhaag-button">
+          Actie
+        </a>
+      }
+    >
+      Taak
+    </Action>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Actions - with date - relative
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Actions - with date - relative">
+    <Action
+      relativeDate
+      deadline={new Date().setDate(new Date().getDate() + 5)}
+      actions={
+        <a href="#example" class="denhaag-button">
+          Actie
+        </a>
+      }
+    >
+      Taak
+    </Action>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Actions - with warning date - relative
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Actions - with warning date - relative">
+    <Action
+      relativeDate
+      deadline={new Date().setDate(new Date().getDate() + 2)}
+      actions={
+        <a href="#example" class="denhaag-button">
+          Actie
+        </a>
+      }
+    >
+      Taak
+    </Action>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>

@@ -21,5 +21,7 @@
     "build": "rollup -c ../../rollup.config.js",
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
-  "dependencies": {}
+  "dependencies": {
+    "date-fns": "2.30.0"
+  }
 }
