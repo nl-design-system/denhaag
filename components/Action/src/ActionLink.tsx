@@ -1,8 +1,8 @@
 import React from 'react';
 import clsx from 'clsx';
+import { ArrowRightIcon } from '@gemeente-denhaag/icons';
 
 import { LinkProps, ActionDate } from './index';
-import { ArrowRightIcon } from '/components/Icons/src';
 
 export const ActionLink = ({ children, link, deadline, relativeDate, className, ...rest }: LinkProps) => {
   return (
@@ -11,7 +11,7 @@ export const ActionLink = ({ children, link, deadline, relativeDate, className, 
       <div className="denhaag-action__details">
         {deadline && <ActionDate date={deadline} relative={relativeDate} />}
         <div className="denhaag-action__actions">
-          <ArrowRightIcon className="denhaag-action__link-icon" />
+          <ArrowRightIcon className="denhaag-action__link-icon" useDefaultClass={false} />
         </div>
       </div>
     </a>

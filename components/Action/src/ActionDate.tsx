@@ -1,8 +1,7 @@
 import React from 'react';
 import { format, differenceInDays } from 'date-fns';
 import { nl } from 'date-fns/locale';
-
-import { AlertTriangleFilledIcon } from '/components/Icons/src';
+import { AlertTriangleFilledIcon } from '@gemeente-denhaag/icons';
 
 interface Props {
   date: Date;
@@ -20,7 +19,7 @@ export const ActionDate = ({ date, relative = false, locale = nl }: Props) => {
     if (daysDifference <= 2)
       return (
         <div className="denhaag-action__date denhaag-action__date--warning">
-          <AlertTriangleFilledIcon className="denhaag-action__warning-icon" />
+          <AlertTriangleFilledIcon className="denhaag-action__warning-icon" useDefaultClass={false} />
           <time dateTime={dateTime}>{`nog ${daysDifference} dagen`}</time>
         </div>
       );
