@@ -29,8 +29,10 @@
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@types/uuid": "9.0.2",
     "uuid": "9.0.0"
+  },
+  "devDependencies": {
+    "@types/uuid": "9.0.2"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"

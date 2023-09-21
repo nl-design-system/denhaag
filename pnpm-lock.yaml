@@ -977,15 +977,16 @@ importers:
 
   components/Tab:
     dependencies:
-      '@types/uuid':
-        specifier: 9.0.2
-        version: 9.0.2
       react:
         specifier: ^17.0.0 || ^18.0.0
         version: 17.0.2
       uuid:
         specifier: 9.0.0
         version: 9.0.0
+    devDependencies:
+      '@types/uuid':
+        specifier: 9.0.2
+        version: 9.0.2
 
   components/Table:
     dependencies:
@@ -6825,7 +6826,6 @@ packages:
 
   /@types/uuid@9.0.2:
     resolution: {integrity: sha512-kNnC1GFBLuhImSnV7w4njQkUiJi0ZXUycu1rUaouPqiKlXkh77JKgdRnTAp1x5eBwcIwbtI+3otwzuIDEuDoxQ==}
-    dev: false
 
   /@types/webpack-env@1.18.0:
     resolution: {integrity: sha512-56/MAlX5WMsPVbOg7tAxnYvNYMMWr/QJiIp6BxVSW3JJXUVzzOn64qW8TzQyMSqSUFM2+PVI4aUHcHOzIz/1tg==}
