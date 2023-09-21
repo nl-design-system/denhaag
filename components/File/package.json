@@ -20,5 +20,8 @@
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
     "clean": "rimraf dist tsconfig.tsbuildinfo"
+  },
+  "dependencies": {
+    "@gemeente-denhaag/icons": "workspace:*"
   }
 }
