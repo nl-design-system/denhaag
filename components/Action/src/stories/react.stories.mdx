@@ -28,81 +28,68 @@ import { Action } from "../index.tsx";
 ### Link
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Link">
     <Action link="#example">Taak</Action>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Link - hover
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Link - hover">
-    <Action link="#example" className="denhaag-action--hover">
+    <Action link="#example" classNameName="denhaag-action--hover">
       Taak
     </Action>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Link - focus
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Link - focus">
-    <Action link="#example" className="denhaag-action--focus">
+    <Action link="#example" classNameName="denhaag-action--focus">
       Taak
     </Action>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Link - with date
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Link - with date">
     <Action link="#example" deadline={new Date().setDate(new Date().getDate() + 1)}>
       Taak
     </Action>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Link - with date - relative
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Link - with date - relative">
     <Action link="#example" deadline={new Date().setDate(new Date().getDate() + 5)} relativeDate>
       Taak
     </Action>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Link - with warning date - relative
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Link - with warning date - relative">
     <Action link="#example" deadline={new Date().setDate(new Date().getDate() + 2)} relativeDate>
       Taak
     </Action>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Actions
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Actions">
     <Action
       actions={
-        <a href="#example" class="denhaag-button">
+        <a href="#example" className="denhaag-button">
           Actie
         </a>
       }
@@ -110,17 +97,15 @@ import { Action } from "../index.tsx";
       Taak
     </Action>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Actions - hover
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Actions - hover">
     <Action
       actions={
-        <a href="#example" class="denhaag-button denhaag-button--hover">
+        <a href="#example" className="denhaag-button denhaag-button--hover">
           Actie
         </a>
       }
@@ -128,17 +113,15 @@ import { Action } from "../index.tsx";
       Taak
     </Action>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Actions - focus
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Actions - focus">
     <Action
       actions={
-        <a href="#example" class="denhaag-button denhaag-button--focus">
+        <a href="#example" className="denhaag-button denhaag-button--focus">
           Actie
         </a>
       }
@@ -146,18 +129,16 @@ import { Action } from "../index.tsx";
       Taak
     </Action>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Actions - with date
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Actions - with date">
     <Action
       deadline={new Date().setDate(new Date().getDate() + 1)}
       actions={
-        <a href="#example" class="denhaag-button">
+        <a href="#example" className="denhaag-button">
           Actie
         </a>
       }
@@ -165,19 +146,17 @@ import { Action } from "../index.tsx";
       Taak
     </Action>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Actions - with date - relative
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Actions - with date - relative">
     <Action
       relativeDate
       deadline={new Date().setDate(new Date().getDate() + 5)}
       actions={
-        <a href="#example" class="denhaag-button">
+        <a href="#example" className="denhaag-button">
           Actie
         </a>
       }
@@ -185,19 +164,17 @@ import { Action } from "../index.tsx";
       Taak
     </Action>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Actions - with warning date - relative
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Actions - with warning date - relative">
     <Action
       relativeDate
       deadline={new Date().setDate(new Date().getDate() + 2)}
       actions={
-        <a href="#example" class="denhaag-button">
+        <a href="#example" className="denhaag-button">
           Actie
         </a>
       }
@@ -205,5 +182,4 @@ import { Action } from "../index.tsx";
       Taak
     </Action>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
