@@ -27,7 +27,7 @@ import { Action } from "../index.tsx";
 
 ## Stories
 
-### Link
+### Single
 
 <Canvas>
   <Story name="Link">
@@ -35,60 +35,60 @@ import { Action } from "../index.tsx";
   </Story>
 </Canvas>
 
-### Link - hover
+### Single - hover
 
 <Canvas>
-  <Story name="Link - hover">
+  <Story name="Single - hover">
     <Action link="#example" classNameName="denhaag-action--hover">
       Taak
     </Action>
   </Story>
 </Canvas>
 
-### Link - focus
+### Single - focus
 
 <Canvas>
-  <Story name="Link - focus">
+  <Story name="Single - focus">
     <Action link="#example" classNameName="denhaag-action--focus">
       Taak
     </Action>
   </Story>
 </Canvas>
 
-### Link - with date
+### Single - with date
 
 <Canvas>
-  <Story name="Link - with date">
+  <Story name="Single - with date">
     <Action link="#example" deadline={new Date().setDate(new Date().getDate() + 1)}>
       Taak
     </Action>
   </Story>
 </Canvas>
 
-### Link - with date - relative
+### Single - with date - relative
 
 <Canvas>
-  <Story name="Link - with date - relative">
+  <Story name="Single - with date - relative">
     <Action link="#example" deadline={new Date().setDate(new Date().getDate() + 5)} relativeDate>
       Taak
     </Action>
   </Story>
 </Canvas>
 
-### Link - with warning date - relative
+### Single - with warning date - relative
 
 <Canvas>
-  <Story name="Link - with warning date - relative">
+  <Story name="Single - with warning date - relative">
     <Action link="#example" deadline={new Date().setDate(new Date().getDate() + 2)} relativeDate>
       Taak
     </Action>
   </Story>
 </Canvas>
 
-### Actions
+### Multiple
 
 <Canvas>
-  <Story name="Actions">
+  <Story name="Multiple">
     <Action
       actions={
         <Link href="#example">
@@ -101,10 +101,10 @@ import { Action } from "../index.tsx";
   </Story>
 </Canvas>
 
-### Actions - hover
+### Multiple - hover
 
 <Canvas>
-  <Story name="Actions - hover">
+  <Story name="Multiple - hover">
     <Action
       actions={
         <Link href="#example">
@@ -117,10 +117,10 @@ import { Action } from "../index.tsx";
   </Story>
 </Canvas>
 
-### Actions - focus
+### Multiple - focus
 
 <Canvas>
-  <Story name="Actions - focus">
+  <Story name="Multiple - focus">
     <Action
       actions={
         <Link href="#example">
@@ -133,10 +133,10 @@ import { Action } from "../index.tsx";
   </Story>
 </Canvas>
 
-### Actions - with date
+### Multiple - with date
 
 <Canvas>
-  <Story name="Actions - with date">
+  <Story name="Multiple - with date">
     <Action
       deadline={new Date().setDate(new Date().getDate() + 1)}
       actions={
@@ -150,10 +150,10 @@ import { Action } from "../index.tsx";
   </Story>
 </Canvas>
 
-### Actions - with date - relative
+### Multiple - with date - relative
 
 <Canvas>
-  <Story name="Actions - with date - relative">
+  <Story name="Multiple - with date - relative">
     <Action
       relativeDate
       deadline={new Date().setDate(new Date().getDate() + 5)}
@@ -168,10 +168,10 @@ import { Action } from "../index.tsx";
   </Story>
 </Canvas>
 
-### Actions - with warning date - relative
+### Multiple - with warning date - relative
 
 <Canvas>
-  <Story name="Actions - with warning date - relative">
+  <Story name="Multiple - with warning date - relative">
     <Action
       relativeDate
       deadline={new Date().setDate(new Date().getDate() + 2)}

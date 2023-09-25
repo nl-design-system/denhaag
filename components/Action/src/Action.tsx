@@ -1,22 +1,22 @@
 import React from 'react';
 
-import { ActionLink, ActionActions } from './index';
+import { ActionSingle, ActionMulti } from './index';
 
-export interface LinkProps extends React.HTMLAttributes<HTMLAnchorElement> {
+export interface ActionSingleProps extends React.HTMLAttributes<HTMLAnchorElement> {
   children: React.ReactNode;
   link: string;
   deadline?: Date;
   relativeDate?: boolean;
 }
 
-export interface ActionsProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface ActionMultiProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
   actions: React.ReactNode;
   deadline?: Date;
   relativeDate?: boolean;
 }
 
-export const Action = (props: LinkProps | ActionsProps) => {
-  if ('link' in props) return <ActionLink {...props} />;
-  return <ActionActions {...props} />;
+export const Action = (props: ActionSingleProps | ActionMultiProps) => {
+  if ('link' in props) return <ActionSingle {...props} />;
+  return <ActionMulti {...props} />;
 };

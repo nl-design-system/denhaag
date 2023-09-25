@@ -80,7 +80,7 @@
           "value": "{denhaag.color.orange.4}"
         }
       },
-      "link": {
+      "single": {
         "padding-inline-start": {
           "value": "{denhaag.space.inline.md}"
         },

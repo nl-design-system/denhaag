@@ -1,16 +1,14 @@
 import React from 'react';
-import clsx from 'clsx';
+import { ArrowRightIcon } from '@gemeente-denhaag/icons';
 
-import { ActionsProps, ActionDate } from './index';
+interface ActionsActionsProps {
+  children?: React.ReactNode;
+}
 
-export const ActionActions = ({ children, actions, deadline, relativeDate, className, ...rest }: ActionsProps) => {
+export const ActionActions = ({ children }: ActionsActionsProps) => {
   return (
-    <div className={clsx('denhaag-action', className)} {...rest}>
-      <div className="denhaag-action__content">{children}</div>
-      <div className="denhaag-action__details">
-        {deadline && <ActionDate date={deadline} relative={relativeDate} />}
-        <div className="denhaag-action__actions">{actions}</div>
-      </div>
+    <div className="denhaag-action__actions">
+      {children ? children : <ArrowRightIcon className="denhaag-action__link-icon" useDefaultClass={false} />}
     </div>
   );
 };
