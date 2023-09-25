@@ -25,7 +25,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "rollup -c ../../rollup.config.js",
+    "build": "rollup -c ../../rollup.config.mjs",
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"

@@ -105,7 +105,7 @@ Start by filling it with the following information:
     "directory": "{path/to/component}"
   },
   "scripts": {
-    "build": "rollup -c ../../rollup.config.js",
+    "build": "rollup -c ../../rollup.config.mjs",
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {}
