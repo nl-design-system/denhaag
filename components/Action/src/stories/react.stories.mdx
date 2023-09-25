@@ -1,7 +1,6 @@
 import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
 import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
-import { Link } from "@gemeente-denhaag/link";
-import { Button } from "@gemeente-denhaag/button";
+import { ButtonLink } from "@utrecht/component-library-react";
 
 import pkg from "../../package.json";
 import readme from "../../README.md";
@@ -89,15 +88,7 @@ import { Action } from "../index.tsx";
 
 <Canvas>
   <Story name="Multiple">
-    <Action
-      actions={
-        <Link href="#example">
-          <Button>Actie</Button>
-        </Link>
-      }
-    >
-      Taak
-    </Action>
+    <Action actions={<ButtonLink href="#example">Actie</ButtonLink>}>Taak</Action>
   </Story>
 </Canvas>
 
@@ -107,9 +98,9 @@ import { Action } from "../index.tsx";
   <Story name="Multiple - hover">
     <Action
       actions={
-        <Link href="#example">
-          <Button className="denhaag-button--hover">Actie</Button>
-        </Link>
+        <ButtonLink href="#example" className="utrecht-button-link--hover">
+          Actie
+        </ButtonLink>
       }
     >
       Taak
@@ -123,9 +114,9 @@ import { Action } from "../index.tsx";
   <Story name="Multiple - focus">
     <Action
       actions={
-        <Link href="#example">
-          <Button className="denhaag-button--focus">Actie</Button>
-        </Link>
+        <ButtonLink href="#example" className="utrecht-button-link--focus">
+          Actie
+        </ButtonLink>
       }
     >
       Taak
@@ -139,11 +130,7 @@ import { Action } from "../index.tsx";
   <Story name="Multiple - with date">
     <Action
       deadline={new Date().setDate(new Date().getDate() + 1)}
-      actions={
-        <Link href="#example">
-          <Button>Actie</Button>
-        </Link>
-      }
+      actions={<ButtonLink href="#example">Actie</ButtonLink>}
     >
       Taak
     </Action>
@@ -157,11 +144,7 @@ import { Action } from "../index.tsx";
     <Action
       relativeDate
       deadline={new Date().setDate(new Date().getDate() + 5)}
-      actions={
-        <Link href="#example">
-          <Button>Actie</Button>
-        </Link>
-      }
+      actions={<ButtonLink href="#example">Actie</ButtonLink>}
     >
       Taak
     </Action>
@@ -175,11 +158,7 @@ import { Action } from "../index.tsx";
     <Action
       relativeDate
       deadline={new Date().setDate(new Date().getDate() + 2)}
-      actions={
-        <Link href="#example">
-          <Button>Actie</Button>
-        </Link>
-      }
+      actions={<ButtonLink href="#example">Actie</ButtonLink>}
     >
       Taak
     </Action>

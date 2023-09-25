@@ -29,6 +29,7 @@ import { Status } from "/components/ProcessSteps/src";
 import { File } from "/components/File/src";
 import { Action } from "/components/Action/src";
 import { Button } from "/components/Button/src";
+import { ButtonLink } from "@utrecht/component-library-react";
 
 import clsx from "clsx";
 
@@ -247,11 +248,7 @@ export const copyright = "© 2022 Gemeente Den Haag";
           <Action
             className="denhaag-page-content__task"
             deadline={new Date().setDate(new Date().getDate() + 3)}
-            actions={
-              <Link href="#example">
-                <Button>Actie</Button>
-              </Link>
-            }
+            actions={<ButtonLink href="#example">Actie</ButtonLink>}
             relativeDate
           >
             Geef informatie voor uw aanvraag subsidie geluidsisolatie
@@ -263,11 +260,7 @@ export const copyright = "© 2022 Gemeente Den Haag";
           <Action
             className="denhaag-page-content__task"
             deadline={new Date().setDate(new Date().getDate() + 3)}
-            actions={
-              <Link href="#example">
-                <Button>Actie</Button>
-              </Link>
-            }
+            actions={<ButtonLink href="#example">Actie</ButtonLink>}
             relativeDate
           >
             Geef informatie voor uw aanvraag subsidie geluidsisolatie
