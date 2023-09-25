@@ -66,6 +66,14 @@ Similarly, each category is its own package managed with lerna.
 ##### Storybook
 
 In order to test components we use storybook.\
+
+If you have not yet run build then please run the build.
+If you already have run this command then skip this next command:
+
+```bash
+pnpm run build
+```
+
 To run storybook locally we start it with the following command:
 
 ```bash
