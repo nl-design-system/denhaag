@@ -13,7 +13,7 @@
   border-width: var(--denhaag-action-border-width);
   border-color: var(--denhaag-action-border-color);
 
-  @media (min-width: 640px) {
+  @media (min-width: 768px) {
     flex-direction: row;
     align-items: center;
     gap: var(--denhaag-action-lg-gap);
@@ -27,7 +27,7 @@
     flex-direction: column;
     gap: var(--denhaag-action-details-gap);
 
-    @media (min-width: 640px) {
+    @media (min-width: 768px) {
       flex-direction: row;
       align-items: center;
       gap: var(--denhaag-action-details-lg-gap);
@@ -62,7 +62,7 @@
     & > a {
       width: 100%;
 
-      @media (min-width: 640px) {
+      @media (min-width: 768px) {
         width: auto;
       }
     }
@@ -107,7 +107,7 @@
       justify-content: space-between;
       gap: var(--denhaag-action-link-details-gap);
 
-      @media (min-width: 640px) {
+      @media (min-width: 768px) {
         gap: var(--denhaag-action-link-details-lg-gap);
       }
     }
