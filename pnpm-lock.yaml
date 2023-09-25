@@ -377,9 +377,15 @@ importers:
 
   components/Action:
     dependencies:
+      '@gemeente-denhaag/button':
+        specifier: workspace:*
+        version: link:../Button
       '@gemeente-denhaag/icons':
         specifier: workspace:*
         version: link:../Icons
+      '@gemeente-denhaag/link':
+        specifier: workspace:*
+        version: link:../Link
       date-fns:
         specifier: 2.30.0
         version: 2.30.0

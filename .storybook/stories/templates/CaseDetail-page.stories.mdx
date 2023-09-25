@@ -28,6 +28,7 @@ import IconButton from "/components/IconButton/src";
 import { Status } from "/components/ProcessSteps/src";
 import { File } from "/components/File/src";
 import { Action } from "/components/Action/src";
+import { Button } from "/components/Button/src";
 
 import clsx from "clsx";
 
@@ -247,9 +248,9 @@ export const copyright = "© 2022 Gemeente Den Haag";
             className="denhaag-page-content__task"
             deadline={new Date().setDate(new Date().getDate() + 3)}
             actions={
-              <a href="#example" class="denhaag-button">
-                Actie
-              </a>
+              <Link href="#example">
+                <Button>Actie</Button>
+              </Link>
             }
             relativeDate
           >
@@ -263,9 +264,9 @@ export const copyright = "© 2022 Gemeente Den Haag";
             className="denhaag-page-content__task"
             deadline={new Date().setDate(new Date().getDate() + 3)}
             actions={
-              <a href="#example" class="denhaag-button">
-                Actie
-              </a>
+              <Link href="#example">
+                <Button>Actie</Button>
+              </Link>
             }
             relativeDate
           >
