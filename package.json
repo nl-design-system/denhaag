@@ -16,7 +16,6 @@
     "proprietary/*"
   ],
   "scripts": {
-    "bootstrap": "lerna bootstrap",
     "build": "pnpm run build:library && pnpm run build:storybook",
     "build:library": "pnpm run --recursive build",
     "build:storybook": "build-storybook",
