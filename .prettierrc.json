@@ -16,7 +16,7 @@
       }
     },
     {
-      "files": ["*.js", "*.jsx"],
+      "files": ["*.js", "*.jsx", "*.mjs"],
       "options": {
         "parser": "flow",
         "printWidth": 120,
