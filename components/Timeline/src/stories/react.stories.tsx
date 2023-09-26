@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Meta, Story } from '@storybook/react';
 import { Button } from '@gemeente-denhaag/button';
-import Timeline, { Step, TimelineProps } from '../index';
+import Timeline, { TimelineProps, TimelineStep } from '../index';
 import pkg from '../../package.json';
 
 export default {
@@ -76,7 +76,7 @@ const Template: Story<TimelineProps> = () => {
     <React.Fragment>
       <Timeline activeStep={activeStep}>
         {steps.map(({ label, ...props }, index) => (
-          <Step key={label} label={label} {...props} completed={completed[index]} />
+          <TimelineStep key={label} label={label} {...props} completed={completed[index]} />
         ))}
       </Timeline>
       <Button onClick={prev} disabled={activeStep === 0} variant="secondary-action">
