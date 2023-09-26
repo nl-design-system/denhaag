@@ -1,4 +1,4 @@
-import React, { InputHTMLAttributes, KeyboardEvent, RefObject } from 'react';
+import React, { ChangeEvent, InputHTMLAttributes, KeyboardEvent, MouseEvent, RefObject } from 'react';
 import clsx from 'clsx';
 import {
   format,
@@ -340,7 +340,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
         className="denhaag-datepicker__input"
         ref={inputRef}
         value={state.selected ? formatISO(state.selected, { representation: 'date' }) : ''}
-        onChange={(event) => {
+        onChange={(event: ChangeEvent<HTMLInputElement>) => {
           setState({
             ...state,
             current:
@@ -355,7 +355,7 @@ export const Datepicker: React.FC<DatepickerProps> = ({
                 : undefined,
           });
         }}
-        onClick={(event) => {
+        onClick={(event: MouseEvent<HTMLInputElement>) => {
           event.preventDefault();
           if (state.opened) {
             currentButtonRef.current?.focus();
