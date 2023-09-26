@@ -3,9 +3,106 @@ import React from 'react';
 
 export const headerProps = {
   breadcrumbs: {
-    navigationPath: [{ label: 'Home', href: 'https://denhaag.nl/' }],
+    navigationPath: [
+      { label: 'Home', href: 'https://denhaag.nl/' },
+      { label: 'MijnDenHaag', href: 'https://denhaag.nl/' },
+      { label: 'Mijn lopende zaken', href: 'https://denhaag.nl/' },
+    ],
+  },
+  userprofileMenu: {
+    label: 'Welkom Anne Klap',
+    authorisedLoginLabel: 'Ingelogd namens Jason Verploeg',
+    navigationGroups: [
+      {
+        label: 'MijnDenHaag',
+        navigation: [
+          { label: 'Overzicht', href: '' },
+          { label: 'Lopende zaken', href: '' },
+          { label: "Thema's", href: '' },
+          { label: 'Mijn account', href: '' },
+        ],
+      },
+    ],
+  },
+  languageSwitcherMenu: {
+    currentLanguageLabel: 'NL',
+    languageSwitcherProps: {
+      variant: 'button',
+      label: 'Kies uw voorkeurstaal',
+      languages: [
+        {
+          id: 'nl',
+          label: 'Nederlands',
+          linkProps: { href: '#nl', lang: 'nl', hrefLang: 'nl-NL' },
+          active: true,
+        },
+        {
+          id: 'en',
+          label: 'Engels',
+          linkProps: { href: '#en', lang: 'en', hrefLang: 'en-GB' },
+          active: false,
+        },
+        {
+          id: 'fr',
+          label: 'Français',
+          linkProps: { href: '#fr', lang: 'fr', hrefLang: 'fr-FR' },
+          active: false,
+        },
+      ],
+    },
+  },
+  logoutButton: {
+    label: 'Uitloggen',
+    onLogoutClick: () => {},
+  },
+  mobileMenu: {
+    openLabel: 'Menu',
+    closeLabel: 'Sluiten',
+    navigation: [
+      { label: 'Home', href: 'https://www.denhaag.nl' },
+      {
+        label: 'Onderwerpen',
+        navigation: [
+          {
+            label: 'Omgeving',
+            navigation: [
+              { label: 'Parkeren', href: 'https://www.denhaag.nl/parkeren' },
+              { label: 'Afval', href: 'https://www.denhaag.nl/afval' },
+            ],
+          },
+          {
+            label: 'Wonen',
+            navigation: [
+              { label: 'Verhuizen en migratie', href: 'https://www.denhaag.nl/verhuizen' },
+              { label: 'Belastingen', href: 'https://www.denhaag.nl/belastingen' },
+            ],
+          },
+        ],
+      },
+      {
+        label: 'MijnDenHaag',
+        navigation: [
+          { label: 'Overzicht', href: 'https://klantportaal.denhaag.nl/overzicht' },
+          { label: 'Lopende zaken', href: 'https://klantportaal.denhaag.nl/zaken' },
+          { label: "Thema's", href: 'https://klantportaal.denhaag.nl/themas' },
+          { label: 'Mijn account', href: 'https://klantportaal.denhaag.nl/account' },
+        ],
+      },
+    ],
   },
 };
+
+export const linkData = {
+  name: 'Example',
+  link: 'test/example.png',
+  size: 2000,
+  lastUpdated: new Date('Thu Aug 31 2023 11:22:11 GMT+0200'),
+};
+
+export const navigationPathData = [
+  { label: 'Home', href: 'https://denhaag.nl/' },
+  { label: 'MijnDenHaag', href: 'https://denhaag.nl/parkeren/' },
+];
 
 export const footerLegalData = [
   { label: 'Sitemap', href: 'https://denhaag.nl/' },
