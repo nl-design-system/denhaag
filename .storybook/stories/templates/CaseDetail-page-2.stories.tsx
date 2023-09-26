@@ -153,7 +153,7 @@ const linkData = {
   name: 'Example',
   link: 'test/example.png',
   size: 2000,
-  lastUpdated: 'Thu Aug 31 2023 11:22:11 GMT+0200',
+  lastUpdated: new Date('Thu Aug 31 2023 11:22:11 GMT+0200'),
 };
 
 const navigationPathData = [
