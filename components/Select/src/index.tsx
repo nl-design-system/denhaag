@@ -1,6 +1,6 @@
 import React from 'react';
 import { InputProps, MenuProps, Select as MaterialSelect } from '@material-ui/core';
-import { SelectInputProps } from '@material-ui/core';
+import { SelectProps as MaterialSelectProps } from '@material-ui/core';
 import BaseProps from '@gemeente-denhaag/baseprops';
 
 export interface SelectProps extends BaseProps {
@@ -92,7 +92,7 @@ export interface SelectProps extends BaseProps {
    * @param {object} [child] The react element that was selected when `native` is `false` (default).
    * @document
    */
-  onChange?: SelectInputProps['onChange'];
+  onChange?: MaterialSelectProps['onChange'];
 
   /**
    * Callback fired when the component requests to be closed.
