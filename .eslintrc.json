@@ -43,7 +43,7 @@
         "./.eslintrc.js.json",
         "./.eslintrc.react.json"
       ],
-      "files": ["*.js", "*.jsx"],
+      "files": ["*.js", "*.jsx", "*.mjs"],
       "plugins": ["import", "jsx-a11y"]
     },
     {
