@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 import { Heading2, Heading3 } from '../../../components/Typography/src';
 import { Page, PageHeader, PageFooter } from '../../../components/Page/src';
-import { HeaderLogic } from '../../../components/Header/src';
+import { HeaderLogic, HeaderLogicProps } from '../../../components/Header/src';
 import HeaderLogo from '../../../components/HeaderLogo/src';
 import Footer from '../../../components/Footer/src';
 import ResponsiveContent from '../../../components/ResponsiveContent/src';
@@ -19,7 +19,7 @@ import {
   ArrowRightIcon,
   BookIcon,
 } from '../../../components/Icons/src';
-import { Status } from '../../../components/ProcessSteps/src';
+import { Status, StatusProps } from '../../../components/ProcessSteps/src';
 import { File } from '../../../components/File/src';
 
 import './CaseDetail-page.scss';
@@ -35,12 +35,12 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-const headerProps = {
+const headerProps: HeaderLogicProps = {
   breadcrumbs: {
     navigationPath: [
-      { label: 'Home', href: 'https://denhaag.nl/', url: '' },
-      { label: 'MijnDenHaag', href: 'https://denhaag.nl/', url: '' },
-      { label: 'Mijn lopende zaken', href: 'https://denhaag.nl/', url: '' },
+      { label: 'Home', href: 'https://denhaag.nl/' },
+      { label: 'MijnDenHaag', href: 'https://denhaag.nl/' },
+      { label: 'Mijn lopende zaken', href: 'https://denhaag.nl/' },
     ],
   },
   userprofileMenu: {
@@ -126,7 +126,7 @@ const headerProps = {
   },
 };
 
-const progressStepsData = {
+const progressStepsData: StatusProps = {
   collapsible: true,
   expandedSteps: ['onderzoek'],
   steps: [
@@ -135,17 +135,26 @@ const progressStepsData = {
       marker: 1,
       title: 'Deelname aan geluidsonderzoek',
       status: 'checked',
-      steps: [{ title: 'Aanmelding ontvangen', status: 'checked' }],
+      //steps needs an id
+      steps: [{ id: 'aanmelding', title: 'Aanmelding ontvangen', status: 'checked' }],
     },
     {
       id: 'onderzoek',
       marker: 2,
       title: 'Onderzoek naar geluidsoverlast',
       status: 'current',
-      steps: [{ title: 'Afspraak meten geluidsoverlast gemaakt (afspraak op 24 mei)' }],
+      steps: [{ id: 'geluidsoverlast', title: 'Afspraak meten geluidsoverlast gemaakt (afspraak op 24 mei)' }],
     },
-    { id: 'uitvoeren', marker: 3, title: 'Uitvoeren van maatregelen' },
-    { id: 'klaar', marker: 4, title: 'Maatregelen zijn uitgevoerd' },
+    {
+      id: 'uitvoeren',
+      marker: 3,
+      title: 'Uitvoeren van maatregelen',
+    },
+    {
+      id: 'klaar',
+      marker: 4,
+      title: 'Maatregelen zijn uitgevoerd',
+    },
   ],
 };
 
