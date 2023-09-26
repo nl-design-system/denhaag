@@ -1,5 +1,5 @@
 import { HeaderLogicProps } from '../../../components/Header/src';
-import { FacebookIcon, TwitterIcon, LinkedInIcon, InstagramIcon, YouTubeIcon } from '../../../components/Icons/src';
+import { FacebookIcon, InstagramIcon, LinkedInIcon, TwitterIcon, YouTubeIcon } from '../../../components/Icons/src';
 import React from 'react';
 
 export const headerProps: HeaderLogicProps = {
