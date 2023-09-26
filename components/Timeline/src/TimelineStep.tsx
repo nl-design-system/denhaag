@@ -6,7 +6,7 @@ import { StepContent, StepLabel } from './index';
 import { StepComponentProps } from './StepComponentProps';
 import clsx from 'clsx';
 
-export interface StepProps extends StepComponentProps {
+export interface TimelineStepProps extends StepComponentProps {
   /**
    * Describes the information of the step.
    */
@@ -22,7 +22,7 @@ export interface StepProps extends StepComponentProps {
  * @param props The properties of a Step component.
  * @constructor Constructs an instance of Step.
  */
-export const Step: React.FC<StepProps> = ({
+export const TimelineStep: React.FC<TimelineStepProps> = ({
   label,
   description,
   active = false,
@@ -31,7 +31,7 @@ export const Step: React.FC<StepProps> = ({
   id = undefined,
   tabIndex = 0,
   ...props
-}: StepProps) => {
+}: TimelineStepProps) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const hasDescription = description !== undefined;
 
@@ -100,4 +100,4 @@ export const Step: React.FC<StepProps> = ({
   );
 };
 
-export default Step;
+export default TimelineStep;
