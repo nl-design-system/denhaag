@@ -3,7 +3,6 @@
     {
       "files": ["*.css", "*.scss"],
       "options": {
-        "parser": "css",
         "tabWidth": 2
       }
     },
