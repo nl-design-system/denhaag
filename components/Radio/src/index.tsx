@@ -1,4 +1,4 @@
-import React, { InputHTMLAttributes } from 'react';
+import React, { ChangeEvent, InputHTMLAttributes } from 'react';
 import clsx from 'clsx';
 
 import './index.scss';
@@ -36,7 +36,7 @@ export const Radio: React.FC<RadioProps> = ({
         type="radio"
         className="denhaag-radio__input"
         defaultChecked={checked}
-        onChange={(event) => {
+        onChange={(event: ChangeEvent<HTMLInputElement>) => {
           if (onChange) {
             onChange(event);
           }

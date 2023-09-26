@@ -5,7 +5,7 @@ const KEY_EVENT_TYPE = 'keydown';
 
 export const useEscapeKey = (handleClose: () => void) => {
   const handleEscKey = useCallback(
-    (event) => {
+    (event: KeyboardEvent) => {
       if (event.key === KEY_NAME_ESC) {
         handleClose();
       }

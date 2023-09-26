@@ -1,4 +1,4 @@
-import React, { InputHTMLAttributes } from 'react';
+import React, { ChangeEvent, InputHTMLAttributes } from 'react';
 import clsx from 'clsx';
 import { CheckedIcon } from '@gemeente-denhaag/icons';
 
@@ -43,7 +43,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
         type="checkbox"
         className="denhaag-checkbox__input"
         checked={isChecked}
-        onChange={(event) => {
+        onChange={(event: ChangeEvent<HTMLInputElement>) => {
           setChecked(!isChecked);
           if (onChange) {
             onChange(event);
