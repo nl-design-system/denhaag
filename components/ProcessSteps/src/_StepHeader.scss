@@ -1,5 +1,5 @@
 .denhaag-process-steps__step-header {
   display: flex;
-  align-items: center;
+  align-items: var(--denhaag-process-steps-step-header-align-items);
   gap: 16px;
 }

@@ -526,6 +526,31 @@ importers:
         specifier: ^17.0.0 || ^18.0.0
         version: 17.0.2
 
+  components/ContactTimeline:
+    dependencies:
+      '@gemeente-denhaag/baseprops':
+        specifier: workspace:*
+        version: link:../BaseProps
+      '@gemeente-denhaag/icons':
+        specifier: workspace:*
+        version: link:../Icons
+      '@gemeente-denhaag/process-steps':
+        specifier: workspace:*
+        version: link:../ProcessSteps
+      '@gemeente-denhaag/step-marker':
+        specifier: workspace:*
+        version: link:../StepMarker
+      '@gemeente-denhaag/typography':
+        specifier: workspace:*
+        version: link:../Typography
+      react:
+        specifier: ^17.0.0 || ^18.0.0
+        version: 17.0.2
+    devDependencies:
+      '@gemeente-denhaag/button':
+        specifier: workspace:*
+        version: link:../Button
+
   components/CtaDownload:
     devDependencies:
       '@gemeente-denhaag/icons':

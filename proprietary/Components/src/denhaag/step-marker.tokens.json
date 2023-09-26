@@ -5,7 +5,7 @@
       "font-family": { "value": "{denhaag.typography.sans-serif.font-family}" },
       "font-weight": { "value": "400" },
       "font-size": { "value": "{denhaag.typography.scale.s.font-size}" },
-      "margin": { "value": "auto" },
+      "margin": { "value": "0" },
       "padding": { "value": "12px" },
       "size": { "value": "32px" },
       "icon-size": { "value": "20px" },
@@ -24,6 +24,14 @@
         "color": { "value": "{denhaag.color.white}" },
         "nested": {
           "color": { "value": "{denhaag.color.green.3}" }
+        }
+      },
+      "default": {
+        "background-color": { "value": "{denhaag.color.grey.2}" },
+        "border-color": { "value": "{denhaag.color.grey.2}" },
+        "color": { "value": "{denhaag.color.white}" },
+        "nested": {
+          "color": { "value": "{denhaag.color.grey.2}" }
         }
       },
       "disabled": {
@@ -61,6 +69,9 @@
         },
         "error": {
           "outline-color": { "value": "{denhaag.color.red.3}" }
+        },
+        "default": {
+          "outline-color": { "value": "{denhaag.color.grey.2}" }
         }
       }
     }

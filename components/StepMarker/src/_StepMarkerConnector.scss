@@ -75,3 +75,15 @@
     var(--denhaag-step-marker-connector-outline-color)
   );
 }
+
+.denhaag-step-marker__connector--default {
+  outline-width: var(
+    --denhaag-step-marker-connector-default-outline-width,
+    var(--denhaag-step-marker-connector-outline-width, 1px)
+  );
+  outline-style: var(--denhaag-step-marker-connector-default-outline-style, solid);
+  outline-color: var(
+    --denhaag-step-marker-connector-default-outline-color,
+    var(--denhaag-step-marker-connector-outline-color)
+  );
+}
