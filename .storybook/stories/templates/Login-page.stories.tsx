@@ -1,6 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { Heading2 } from '../../../components/Typography/src';
 import Alert from '../../../components/Alert/src';
+import React from 'react';
 import { Page, PageHeader, PageFooter } from '../../../components/Page/src';
 import { HeaderLogic } from '../../../components/Header/src';
 import Footer from '../../../components/Footer/src';
@@ -14,7 +15,6 @@ import {
   contactData,
   copyright,
 } from '../templates/util';
-import React from 'react';
 
 import './story-login.css';
 
