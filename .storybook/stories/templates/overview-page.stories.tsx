@@ -20,6 +20,11 @@ const meta = {
 
 export default meta;
 
+const headerProps: HeaderLogicProps = {
+  breadcrumbs: {
+    navigationPath: [{ label: 'Home', href: 'https://denhaag.nl/' }],
+  },
+};
 type Story = StoryObj<typeof meta>;
 
 const copyright = '© 2022 Gemeente Den Haag';
