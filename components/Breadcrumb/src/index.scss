@@ -76,11 +76,11 @@ ol.denhaag-breadcrumb__list {
   padding-inline-start: 0;
 }
 
-.denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(3)):not(:nth-last-child(2)):not(:last-child) {
+.denhaag-breadcrumb__item:not(:first-child, :nth-last-child(3), :nth-last-child(2), :last-child) {
   --denhaag-breadcrumb-link-background-color: var(--denhaag-breadcrumb-dots-background-color, inherit);
 }
 
-.denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(3)):not(:nth-last-child(2)):not(:last-child):hover {
+.denhaag-breadcrumb__item:not(:first-child, :nth-last-child(3), :nth-last-child(2), :last-child):hover {
   --denhaag-breadcrumb-link-background-color: var(--denhaag-breadcrumb-dots-hover-background-color, inherit);
 }
 
@@ -124,7 +124,7 @@ ol.denhaag-breadcrumb__list {
   vertical-align: baseline;
 }
 
-@media (min-width: 481px) {
+@media (width >= 481px) {
   .denhaag-breadcrumb {
     --denhaag-breadcrumb-chevron-display: inline-block;
     --denhaag-breadcrumb-link-icon-content: unset;
@@ -137,12 +137,12 @@ ol.denhaag-breadcrumb__list {
     --denhaag-breadcrumb-item-display: flex;
   }
 
-  .denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(3)):not(:nth-last-child(2)):not(:last-child) {
+  .denhaag-breadcrumb__item:not(:first-child, :nth-last-child(3), :nth-last-child(2), :last-child) {
     --denhaag-breadcrumb-link-pointer-events: none;
   }
 }
 
-@media (min-width: 1124px) {
+@media (width >= 1124px) {
   .denhaag-breadcrumb {
     --denhaag-breadcrumb-padding-inline: 0;
   }
@@ -164,7 +164,7 @@ ol.denhaag-breadcrumb__list {
         }
       }
 
-      .denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(3)):not(:nth-last-child(2)):not(:last-child)
+      .denhaag-breadcrumb__item:not(:first-child, :nth-last-child(3), :nth-last-child(2), :last-child)
         .denhaag-breadcrumb__text {
         aspect-ratio: 24/16;
         border-radius: var(--denhaag-breadcrumb-dots-border-radius, var(--denhaag-border-radius));
@@ -172,7 +172,7 @@ ol.denhaag-breadcrumb__list {
         text-indent: calc(var(--denhaag-breadcrumb-spacing, 8px) * 3);
       }
 
-      .denhaag-breadcrumb__item:not(:first-child):not(:nth-last-child(3)):not(:nth-last-child(2)):not(:last-child)
+      .denhaag-breadcrumb__item:not(:first-child, :nth-last-child(3), :nth-last-child(2), :last-child)
         .denhaag-breadcrumb__text::before {
         color: var(--denhaag-breadcrumb-dots-color, inherit);
         content: "...";

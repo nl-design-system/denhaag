@@ -65,7 +65,7 @@
   color: inherit;
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .denhaag-page-buttons {
     flex-direction: row;
   }

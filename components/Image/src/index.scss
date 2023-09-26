@@ -69,7 +69,7 @@
   vertical-align: var(--denhaag-image-figcaption-download-only-vertical-align);
 }
 
-@media (min-width: 550px) {
+@media (width >= 550px) {
   .denhaag-image {
     --denhaag-image-download-text-display-mobile: var(--denhaag-image-download-text-display-desktop);
 

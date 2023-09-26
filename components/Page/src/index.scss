@@ -12,11 +12,11 @@
     margin-block-end: 80px;
     margin-block-start: var(--denhaag-page-content-main-margin-block-start);
 
-    @media (min-width: 768px) {
+    @media (width >= 768px) {
       margin-block-start: var(--denhaag-page-content-main-sm-margin-block-start);
     }
 
-    @media (min-width: 1024px) {
+    @media (width >= 1024px) {
       margin-block-start: var(--denhaag-page-content-main-md-margin-block-start);
     }
 

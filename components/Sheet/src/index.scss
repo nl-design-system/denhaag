@@ -26,7 +26,7 @@
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (width >= 1024px) {
     padding-block-start: var(--denhaag-sheet-desktop-padding-block-start);
     min-height: var(--denhaag-sheet-desktop-min-height);
     top: var(--denhaag-sheet-desktop-top);
@@ -53,11 +53,11 @@
     width: var(--denhaag-sheet-overlay-width);
     z-index: var(--denhaag-sheet-overlay-z-index);
 
-    @media (min-width: 768px) {
+    @media (width >= 768px) {
       top: calc(var(--denhaag-sheet-overlay-tablet-top) + var(--denhaag-sheet-margin-block-start));
     }
 
-    @media (min-width: 1024px) {
+    @media (width >= 1024px) {
       top: calc(var(--denhaag-sheet-overlay-desktop-top) + var(--denhaag-sheet-margin-block-start));
     }
   }

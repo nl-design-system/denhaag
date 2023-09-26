@@ -20,13 +20,13 @@
   z-index: var(--denhaag-modal-index);
 }
 
-@media (min-width: 30rem) {
+@media (width >= 30rem) {
   .denhaag-modal {
     --denhaag-modal-footer-direction: row;
   }
 }
 
-@media (min-width: 47.8125rem) {
+@media (width >= 47.8125rem) {
   .denhaag-modal {
     --denhaag-modal-inner-padding-block: var(
       --denhaag-modal-lg-inner-padding-block,

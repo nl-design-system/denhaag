@@ -34,7 +34,7 @@
   @include inline-start-separator;
 }
 
-@media (min-width: 620px) {
+@media (width >= 620px) {
   .denhaag-article-meta--responsive {
     flex-direction: row;
   }

@@ -61,7 +61,7 @@
   width: var(--denhaag-cta-image-content-image-width);
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .denhaag-cta-image-content {
     --denhaag-cta-image-content-display: flex;
   }

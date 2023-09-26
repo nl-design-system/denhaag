@@ -22,7 +22,7 @@
   font-family: var(--utrecht-heading-font-family);
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .denhaag-theme {
     --utrecht-heading-1-font-size: var(--denhaag-typography-mobile-scale-3xl-font-size);
     --utrecht-heading-2-font-size: var(--denhaag-typography-mobile-scale-2xl-font-size);

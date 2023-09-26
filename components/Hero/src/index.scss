@@ -147,7 +147,7 @@
   padding-block-end: var(--denhaag-hero-theme-page-title-padding-block-end);
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .denhaag-hero--routing {
     --utrecht-heading-1-font-size: var(--denhaag-hero-routing-title-font-size-xs);
   }
@@ -158,7 +158,7 @@
   }
 }
 
-@media (min-width: 360px) {
+@media (width >= 360px) {
   .denhaag-hero {
     --denhaag-hero-container-max-width: var(
       --denhaag-hero-container-max-width-xs,
@@ -167,7 +167,7 @@
   }
 }
 
-@media (min-width: 430px) {
+@media (width >= 430px) {
   .denhaag-hero--theme-page {
     --denhaag-hero-theme-page-container-padding-block-start: var(
       --denhaag-hero-theme-page-container-padding-block-start-s
@@ -176,13 +176,13 @@
   }
 }
 
-@media (min-width: 540px) {
+@media (width >= 540px) {
   .denhaag-hero--theme-page {
     --utrecht-heading-1-font-size: var(--denhaag-hero-theme-page-title-font-size-m);
   }
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .denhaag-hero {
     --denhaag-hero-image-display: block;
     --denhaag-hero-container-gutter: var(--denhaag-hero-container-gutter-s, var(--denhaag-hero-container-gutter));
@@ -230,7 +230,7 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   .denhaag-hero {
     --denhaag-hero-container-gutter: var(--denhaag-hero-container-gutter-m, var(--denhaag-hero-container-gutter-s));
     --denhaag-hero-container-max-width: var(
@@ -271,7 +271,7 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (width >= 1280px) {
   .denhaag-hero {
     --denhaag-hero-container-gutter: var(--denhaag-hero-container-gutter-l, var(--denhaag-hero-container-gutter-m));
     --denhaag-hero-container-max-width: var(
@@ -290,7 +290,7 @@
   }
 }
 
-@media (min-width: 1768px) {
+@media (width >= 1768px) {
   .denhaag-hero {
     --denhaag-hero-container-gutter: var(--denhaag-hero-container-gutter-xl, var(--denhaag-hero-container-gutter-l));
     --denhaag-hero-container-max-width: var(
@@ -327,7 +327,7 @@
   }
 }
 
-@media (min-width: 2160px) {
+@media (width >= 2160px) {
   .denhaag-hero {
     --denhaag-hero-container-max-width: var(
       --denhaag-hero-container-max-width-xxl,

@@ -60,7 +60,7 @@
     padding-inline-start: var(--denhaag-file-right-padding-inline-start);
     padding-inline-end: var(--denhaag-file-right-padding-inline-end);
 
-    @media (min-width: 620px) {
+    @media (width >= 620px) {
       flex-direction: row;
       align-items: center;
     }

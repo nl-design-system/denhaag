@@ -16,7 +16,7 @@
   list-style: var(--denhaag-link-group-list-list-style);
   padding-inline-start: var(--denhaag-link-group-list-padding-inline-start);
 
-  @media (min-width: 1114px) {
+  @media (width >= 1114px) {
     margin-block-start: var(--denhaag-space-block-sm);
   }
 }

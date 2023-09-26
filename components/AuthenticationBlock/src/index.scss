@@ -1,10 +1,10 @@
 .denhaag-authentication {
-  // Calculation between Block CSS variables.
+  /* Calculation between Block CSS variables. */
   --denhaag-authentication-logo-with-gap: calc(
     var(--denhaag-authentication-gap-small) + var(--denhaag-authentication-logo-size)
   );
 
-  // Overrule CSS variables of used innerblocks.
+  /* Overrule CSS variables of used innerblocks. */
   --denhaag-button-group-padding: 0;
   --denhaag-image-image-aspect-ratio: #{1} / #{1};
   --denhaag-image-image-height: auto;
@@ -14,7 +14,7 @@
   display: grid;
   gap: var(--denhaag-authentication-gap);
 
-  @media (min-width: 375px) {
+  @media (width >= 375px) {
     --denhaag-authentication-gap: var(--denhaag-authentication-gap-sm, 32px);
   }
 
@@ -56,7 +56,7 @@
   // Modifiers & child-elements based on the modifier.
   &--landscape {
     --denhaag-authentication-image-spacing-end: var(--denhaag-authentication-gap);
-    @media (min-width: 375px) {
+    @media (width >= 375px) {
       --denhaag-authentication-image-spacing-end: 0;
     }
   }
@@ -69,7 +69,7 @@
       align-self: flex-end;
     }
 
-    @media (min-width: 375px) {
+    @media (width >= 375px) {
       .denhaag-image + * {
         margin-block-start: calc(-1 * var(--denhaag-authentication-logo-size));
       }
@@ -78,7 +78,7 @@
 
   &--landscape .utrecht-heading-3,
   &--landscape .utrecht-paragraph {
-    @media (min-width: 375px) {
+    @media (width >= 375px) {
       max-width: calc(100% - var(--denhaag-authentication-logo-with-gap));
     }
   }
@@ -86,7 +86,7 @@
   &--portrait {
     --denhaag-button-group-flex-direction: unset;
 
-    @media (min-width: 375px) {
+    @media (width >= 375px) {
       --denhaag-authentication-logo-size: var(--denhaag-authentication-portrait-logo-size-sm, 80px);
 
       align-items: center;
@@ -99,7 +99,7 @@
     flex-direction: column;
     width: 100%;
 
-    @media (max-width: 375px) {
+    @media (width <= 375px) {
       .denhaag-image {
         align-self: flex-end;
 
@@ -109,7 +109,7 @@
       }
     }
 
-    @media (min-width: 375px) {
+    @media (width >= 375px) {
       align-items: center;
       gap: 24px;
     }
@@ -119,7 +119,7 @@
     display: flex;
     width: 100%;
 
-    @media (min-width: 375px) {
+    @media (width >= 375px) {
       flex-direction: column;
     }
   }
@@ -137,7 +137,7 @@
   &--portrait .utrecht-paragraph {
     max-width: calc(100% - var(--denhaag-authentication-logo-with-gap));
 
-    @media (min-width: 375px) {
+    @media (width >= 375px) {
       max-width: 100%;
     }
   }
