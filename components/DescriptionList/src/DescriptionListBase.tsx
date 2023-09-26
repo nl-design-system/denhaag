@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from 'react';
 import clsx from 'clsx';
 
-export type DescriptionListBaseProps = HTMLAttributes<HTMLDivElement>;
+export type DescriptionListBaseProps = HTMLAttributes<HTMLDListElement>;
 
 export const DescriptionListBase: React.FC<DescriptionListBaseProps> = ({
   children,
