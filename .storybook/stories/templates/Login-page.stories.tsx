@@ -13,6 +13,8 @@ import {
   newsletterData,
   contactData,
   copyright,
+  navigationPathData,
+  linkData,
 } from '../templates/util';
 import React from 'react';
 
