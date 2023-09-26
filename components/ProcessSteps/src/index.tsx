@@ -18,6 +18,7 @@ export * from './Status';
 export * from './Step';
 export * from './StepHeader';
 export * from './StepHeading';
+export * from './StepBody';
 export * from './StepList';
 export * from './SubStep';
 export * from './SubStepHeading';

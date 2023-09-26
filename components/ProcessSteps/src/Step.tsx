@@ -1,11 +1,11 @@
 import React, { LiHTMLAttributes } from 'react';
 import clsx from 'clsx';
 
-export type StepStatus = 'checked' | 'not-checked' | 'current' | 'warning' | 'error';
+export type StepStatus = 'checked' | 'not-checked' | 'current' | 'warning' | 'error' | 'default';
 
 export interface StepProps extends LiHTMLAttributes<HTMLLIElement> {
   appearance?: StepStatus;
-  current: boolean;
+  current?: boolean;
 }
 
 export const Step: React.FC<StepProps> = ({ children, current = false, appearance = 'not-checked', ...props }) => {

@@ -1,0 +1,56 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+import { ContactTimelineMobile } from "../index";
+import pkg from "../../package.json";
+
+export const exampleArgs = {
+  items: [
+    {
+      id: "1",
+      title: "Herinnering: Geef informatie",
+      channel: "mail",
+      date: "vandaag",
+    },
+    {
+      id: "2",
+      title: "Geef informatie",
+      channel: "mail",
+      date: "23-1-2023",
+    },
+    {
+      id: "3",
+      title: "Tip: u heeft recht op extra subsidie, zie hier een extra lange regel",
+      channel: "mail",
+      date: "6-1-2023",
+    },
+    { id: "4", title: "Status is veranderd", channel: "mail", date: "1-12-2022" },
+    { id: "5", title: "Mijn vraag", channel: "vraag", date: "29-11-2022" },
+    { id: "6", title: "Gesprek over afspraak met adviseur", channel: "telefoon", date: "12-11-2022" },
+    { id: "7", title: "Kosten onderzoek en verbeteringen", channel: "brief", date: "10-11-2022" },
+  ],
+};
+
+export const Template = (args) => {
+  return <ContactTimelineMobile {...args}></ContactTimelineMobile>;
+};
+
+<Meta
+  title="React/Process Steps/Contact Timeline"
+  component={ContactTimelineMobile}
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "ALPHA",
+    },
+  }}
+/>
+
+# Contact Timeline
+
+## Default
+
+<Canvas>
+  <Story name="Default" args={exampleArgs}>
+    {Template.bind({})}
+  </Story>
+</Canvas>

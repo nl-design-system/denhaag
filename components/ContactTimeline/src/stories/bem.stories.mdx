@@ -1,0 +1,348 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+import prettierBabel from "prettier/parser-babel";
+import prettier from "prettier/standalone";
+import * as ReactDOMServer from "react-dom/server";
+import { Status } from "../index";
+import pkg from "../../package.json";
+
+export const exampleArgs = {
+  steps: [
+    {
+      id: "deelname",
+      marker: 1,
+      title: "Deelname aan geluidsonderzoek",
+      status: "checked",
+      steps: [{ title: "Aanmelding ontvangen", status: "checked" }],
+    },
+    {
+      id: "onderzoek",
+      marker: 2,
+      title: "Onderzoek naar geluidsoverlast",
+      status: "current",
+      steps: [
+        { title: "Afspraak meten geluidsoverlast gemaakt", status: "checked" },
+        { title: "Geluidsoverlast gemeten" },
+        { title: "Onderzoek resultaten verwerkt" },
+      ],
+    },
+    { id: "uitvoeren", marker: 3, title: "Uitvoeren van maatregelen" },
+    { id: "klaar", marker: 4, title: "Maatregelen zijn uitgevoerd" },
+  ],
+};
+
+export const Template = (args) => {
+  return <Status {...args}></Status>;
+};
+
+<Meta
+  title="CSS/Process Steps/Status"
+  component={Status}
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: {
+      source: { type: "dynamic" },
+      transformSource: (src, storyContext) => {
+        // Ensure valid HTML in the Preview source
+        if (storyContext.component) {
+          return prettier.format(
+            ReactDOMServer.renderToStaticMarkup(storyContext.component(storyContext.parameters.args)),
+            { parser: "babel", plugins: [prettierBabel] }
+          );
+        }
+        return src;
+      },
+    },
+    status: {
+      type: "ALPHA",
+    },
+  }}
+/>
+
+# Process Steps
+
+## Default
+
+<Canvas>
+  <Story name="Default" args={exampleArgs}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Collapsible
+
+<Canvas>
+  <Story name="Collapsible" args={{ ...exampleArgs, collapsible: true }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Collapsible with expanded step
+
+<Canvas>
+  <Story
+    name="Collapsible with expanded step"
+    args={{
+      expandedSteps: ["deelname"],
+      steps: [
+        {
+          id: "deelname",
+          marker: 1,
+          title: "Deelname aan geluidsonderzoek",
+          status: "checked",
+          steps: [{ title: "Aanmelding ontvangen", status: "checked" }],
+        },
+        {
+          id: "onderzoek",
+          marker: 2,
+          title: "Onderzoek naar geluidsoverlast",
+          status: "current",
+          steps: [
+            { title: "Afspraak meten geluidsoverlast gemaakt", status: "checked" },
+            { title: "Geluidsoverlast gemeten" },
+            { title: "Onderzoek resultaten verwerkt" },
+          ],
+        },
+        { id: "uitvoeren", marker: 3, title: "Uitvoeren van maatregelen" },
+        { id: "klaar", marker: 4, title: "Maatregelen zijn uitgevoerd" },
+      ],
+      collapsible: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Without Substeps
+
+Even when `collapsible=true` is used the ProcessSteps will not be collapsible without substeps
+
+<Canvas>
+  <Story
+    name="No Substeps"
+    args={{
+      steps: [
+        {
+          id: "getuigen-wijzigen",
+          marker: 1,
+          title: "Getuigen wijzigen of meer getuigen uitnodigen",
+          status: "checked",
+        },
+        {
+          id: "getuigen-definitief",
+          marker: 2,
+          title: "Getuigen zijn definitief en bevestigingen van getuigen ontvangen",
+          status: "current",
+        },
+        { id: "extras", marker: 3, title: "Eventuele extras bestellen" },
+        { id: "trouwen", marker: 4, title: "Trouwen" },
+      ],
+      collapsible: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## With metadata and dates
+
+<Canvas>
+  <Story
+    name="With metadata"
+    args={{
+      steps: [
+        {
+          id: "getuigen-wijzigen",
+          marker: 1,
+          title: "Getuigen wijzigen of meer getuigen uitnodigen",
+          status: "checked",
+          meta: (
+            <a className="utrecht-link" href="https://example.com">
+              Getuigen wijzigen of meer getuigen uitnodigen
+            </a>
+          ),
+          date: "Tussen vandaag en 24 februari 2023",
+        },
+        {
+          id: "getuigen-definitief",
+          marker: 2,
+          title: "Getuigen zijn definitief en bevestigingen van getuigen ontvangen",
+          status: "current",
+          steps: [{ title: "Getuigen aangemeld", status: "checked" }],
+          meta: "Getuigen zijn definitief en bevestigingen van getuigen ontvangen",
+          date: "Regel het vóór 24 februari 2023",
+        },
+        {
+          id: "trouwen",
+          marker: 4,
+          title: "Trouwen",
+          meta: (
+            <p className="utrecht-paragraph">
+              Jullie gaan trouwen in het{" "}
+              <a className="utrecht-link" href="https://example.com">
+                Stadhuis Spui
+              </a>
+            </p>
+          ),
+          date: "Op 1 april 2023",
+        },
+      ],
+      collapsible: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## With expanded metadata
+
+<Canvas>
+  <Story
+    name="With expanded metadata"
+    args={{
+      expandedSteps: ["ontwerpen"],
+      steps: [
+        {
+          id: "verkennen",
+          marker: 1,
+          title: "Verkennen",
+          status: "checked",
+          date: "juli 2023",
+        },
+        {
+          id: "ontwerpen",
+          marker: 2,
+          title: "Ontwerpen",
+          status: "current",
+          meta: "Eindelijk tijd om concreet te worden! we schetsen de plannen en leggen het voor om samen tot een beslissing te komen.",
+          date: "aug - sept 2023",
+          steps: [
+            { title: "Voorlopige schetsontwerp afgerond en gepresenteerd", status: "checked" },
+            { title: "Stemronde nummer 01", status: "checked" },
+            { title: "Verwerken feedback it stemronde", status: "current" },
+            { title: "We organiseren een informatieavond voor bewoners" },
+          ],
+        },
+        {
+          id: "uitvoeren",
+          marker: 4,
+          title: "Uitvoeren",
+          date: "okt - nov 2023",
+        },
+        {
+          id: "afronden",
+          marker: 4,
+          title: "Afronden",
+          date: "dec 2023",
+        },
+      ],
+      collapsible: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## With warning
+
+Collapsible ProcessSteps with warnings
+
+<Canvas>
+  <Story
+    name="With warning"
+    args={{
+      steps: [
+        {
+          id: "deelname",
+          marker: 1,
+          title: "Deelname aan geluidsonderzoek",
+          status: "checked",
+          steps: [{ title: "Aanmelding ontvangen", status: "checked" }],
+        },
+        {
+          id: "onderzoek",
+          marker: 2,
+          title: "Onderzoek naar geluidsoverlast",
+          status: "warning",
+          steps: [
+            { title: "Afspraak meten geluidsoverlast gemaakt", status: "warning" },
+            { title: "Geluidsoverlast gemeten", status: "warning" },
+            { title: "Onderzoek resultaten verwerkt" },
+          ],
+        },
+        { id: "uitvoeren", marker: 3, title: "Uitvoeren van maatregelen" },
+        { id: "klaar", marker: 4, title: "Maatregelen zijn uitgevoerd" },
+      ],
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## With error
+
+Collapsible ProcessStep with errors
+
+<Canvas>
+  <Story
+    name="With error"
+    args={{
+      steps: [
+        {
+          id: "deelname",
+          marker: 1,
+          title: "Deelname aan geluidsonderzoek",
+          status: "checked",
+          steps: [{ title: "Aanmelding ontvangen", status: "checked" }],
+        },
+        {
+          id: "onderzoek",
+          marker: 2,
+          title: "Onderzoek naar geluidsoverlast",
+          status: "error",
+          meta: "Er is geen afspraak gemaakt. De aanvraag is stopgezet. Wilt u toch graag in aanmerking komen voor subsidie? Neem dan contact op met de gemeente via 14070.",
+          steps: [{ title: "Afspraak meten geluidsoverlast gemaakt", status: "error" }],
+        },
+        { id: "uitvoeren", marker: 3, title: "Uitvoeren van maatregelen" },
+        { id: "klaar", marker: 4, title: "Maatregelen zijn uitgevoerd" },
+      ],
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Non collapsible step
+
+Collapsible ProcessStep with errors might also be made more visible by using `collapsible: false` in the step.
+
+<Canvas>
+  <Story
+    name="Non collapsible step"
+    args={{
+      expandedSteps: ["onderzoek"],
+      steps: [
+        {
+          id: "deelname",
+          marker: 1,
+          title: "Deelname aan geluidsonderzoek",
+          status: "checked",
+          steps: [{ title: "Aanmelding ontvangen", status: "checked" }],
+        },
+        {
+          id: "onderzoek",
+          marker: 2,
+          title: "Onderzoek naar geluidsoverlast",
+          status: "error",
+          meta: "Er is geen afspraak gemaakt. De aanvraag is stopgezet. Wilt u toch graag in aanmerking komen voor subsidie? Neem dan contact op met de gemeente via 14070.",
+          steps: [{ title: "Afspraak meten geluidsoverlast gemaakt", status: "error" }],
+          collapsible: false,
+        },
+        { id: "uitvoeren", marker: 3, title: "Uitvoeren van maatregelen" },
+        { id: "klaar", marker: 4, title: "Maatregelen zijn uitgevoerd" },
+      ],
+      collapsible: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
