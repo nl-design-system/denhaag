@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { Heading2 } from '../../../components/Typography/src';
+import { Heading2, Paragraph } from '../../../components/Typography/src';
+import { Link } from '../../../components/Link/src';
 import Alert from '../../../components/Alert/src';
 import React from 'react';
 import { Page, PageHeader, PageFooter } from '../../../components/Page/src';
@@ -38,6 +39,9 @@ export const LoginPagina: Story = {
       </PageHeader>
       <ResponsiveContent className="denhaag-page-content">
         <Heading2>Inloggen</Heading2>
+        <Paragraph>
+          Bent u gemachtigd? <Link href="#">Log in plaats hiervan in als gemachtigde.</Link>
+        </Paragraph>
         <AuthenticationCardGroup cards={['DigiD', 'eHerkenning', 'eIDAS']} responsive />
         <Heading2>Inloggen als gemachtigde</Heading2>
         <Alert
