@@ -12,13 +12,13 @@
   gap: var(--denhaag-highlighted-links-list-gap);
 }
 
-@media (min-width: 48rem) {
+@media (width >= 48rem) {
   .denhaag-highlighted-links__list {
     grid-template-columns: var(--denhaag-highlighted-links-list-grid-template-columns);
   }
 }
 
-@media (min-width: 68.875rem) {
+@media (width >= 68.875rem) {
   .denhaag-highlighted-links__list {
     --denhaag-highlighted-links-list-grid-template-columns: var(
       --denhaag-highlighted-links-list-grid-template-columns-2
@@ -26,7 +26,7 @@
   }
 }
 
-@media (min-width: 80rem) {
+@media (width >= 80rem) {
   .denhaag-highlighted-links__list {
     --denhaag-highlighted-links-list-grid-template-columns: var(
       --denhaag-highlighted-links-list-grid-template-columns-3

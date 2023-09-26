@@ -73,8 +73,11 @@
 }
 
 .denhaag-cta-event__title {
+  /* `hyphenate-limit-last` is a new property, stylelint does not recognize it (yet) */
   color: var(--denhaag-cta-event-title-color);
   hyphens: auto;
+
+  /* stylelint-disable-next-line property-no-unknown */
   hyphenate-limit-last: always;
   font-size: var(--denhaag-cta-event-title-font-size, var(--denhaag-cta-event-font-size, 1rem));
   font-weight: var(--denhaag-cta-event-title-font-weight, inherit);

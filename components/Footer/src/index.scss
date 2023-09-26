@@ -23,11 +23,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    @media (min-width: 1024px) {
+    @media (width >= 1024px) {
       grid-template-columns: 1fr 1fr 1fr;
     }
 
-    @media (min-width: 1280px) {
+    @media (width >= 1280px) {
       grid-template-columns: unset;
       grid-auto-flow: column;
     }
@@ -48,7 +48,7 @@
     justify-content: space-between;
     flex-direction: column;
 
-    @media (min-width: 1280px) {
+    @media (width >= 1280px) {
       flex-direction: row;
     }
   }
@@ -62,11 +62,11 @@
     padding-block-start: var(--denhaag-footer-group-padding-block-start);
     padding-block-end: var(--denhaag-footer-group-padding-block-end);
 
-    @media (min-width: 768px) {
+    @media (width >= 768px) {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    @media (min-width: 1024px) {
+    @media (width >= 1024px) {
       grid-template-columns: repeat(3, 1fr);
     }
   }

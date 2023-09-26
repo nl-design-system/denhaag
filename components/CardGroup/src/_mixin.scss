@@ -14,11 +14,11 @@
   margin-inline-start: calc(var(--denhaag-card-group-distanced) * var(--denhaag-card-group-margin-inline));
   margin-inline-end: calc(var(--denhaag-card-group-distanced) * var(--denhaag-card-group-margin-inline));
 
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (min-width: 1024px) {
+  @media (width >= 1024px) {
     grid-template-columns: repeat(3, 1fr);
   }
 }

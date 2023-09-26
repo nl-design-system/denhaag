@@ -12,7 +12,7 @@
 }
 
 /* Den Haag S */
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .denhaag-form-progress__header {
     justify-content: flex-end;
   }

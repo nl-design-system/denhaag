@@ -12,11 +12,11 @@
     height: var(--denhaag-header-height);
     justify-content: var(--denhaag-header-content-justify-content);
 
-    @media (min-width: 768px) {
+    @media (width >= 768px) {
       height: var(--denhaag-header-sm-height);
     }
 
-    @media (min-width: 1024px) {
+    @media (width >= 1024px) {
       height: var(--denhaag-header-md-height);
     }
   }
@@ -24,7 +24,7 @@
   .denhaag-header__actions {
     display: var(--denhaag-header-actions-display);
 
-    @media (min-width: 1024px) {
+    @media (width >= 1024px) {
       display: var(--denhaag-header-actions-desktop-display);
     }
 
@@ -36,7 +36,7 @@
   .denhaag-header__mobile-actions {
     display: var(--denhaag-header-mobile-actions-display);
 
-    @media (min-width: 1024px) {
+    @media (width >= 1024px) {
       display: var(--denhaag-header-mobile-actions-desktop-display);
     }
   }

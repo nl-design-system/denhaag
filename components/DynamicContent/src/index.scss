@@ -9,7 +9,8 @@
 }
 
 .denhaag-dynamic-content--list .denhaag-link {
-  height: fit-content; // Without this property CSS grid will increase the height of the `<a>`.
+  /* Without `height` CSS grid will increase the height of the `<a>`. */
+  height: fit-content;
 }
 
 .denhaag-dynamic-content--list .denhaag-link__icon {
@@ -114,14 +115,16 @@
   line-height: var(--denhaag-dynamic-content-card-title-line-height);
   margin-block-start: 0;
   margin-block-end: 0;
-  word-break: break-word; // Fixes hypens issue for Chrome & safari on windows device.
+
+  /* Fixes hypens issue with for Chrome & safari on windows device using `word-break: break-word` */
+  word-break: break-word;
 }
 
 .denhaag-dynamic-content__pagination {
   padding-block-start: var(--denhaag-dynamic-content-pagination-padding-block);
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .denhaag-dynamic-content {
     --denhaag-dynamic-content-grid-gap: var(--denhaag-dynamic-content-s-grid-gap);
   }
@@ -139,7 +142,7 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   .denhaag-dynamic-content {
     --denhaag-dynamic-content-grid-gap: var(--denhaag-dynamic-content-m-grid-gap);
   }

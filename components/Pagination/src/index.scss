@@ -7,7 +7,7 @@
   justify-content: var(--denhaag-pagination-align);
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .denhaag-pagination,
   .denhaag-pagination--start {
     --denhaag-pagination-align: flex-start;
@@ -79,18 +79,16 @@
   margin-inline-start: var(--denhaag-pagination-margin-inline, 10px);
 }
 
-.denhaag-pagination__link:not(:first-child):not(:last-child):not(.denhaag-pagination__link--current):not([rel]) {
-  color: transparent; // Only for Safari
+.denhaag-pagination__link:not(:first-child, :last-child, .denhaag-pagination__link--current, [rel]) {
+  color: transparent; /* Only for Safari */
   overflow: hidden;
   pointer-events: none;
   text-indent: calc(var(--denhaag-pagination-size) * 2);
 }
 
 /* stylelint-disable selector-pseudo-class-parentheses-space-inside */
-.denhaag-pagination__link:not(:first-child):not(:last-child):not(.denhaag-pagination__link--current):not(
-    [rel]
-  )::before {
-  color: var(--denhaag-pagination-color, var(--denhaag-pagination-link-color)); // Only for Safari
+.denhaag-pagination__link:not(:first-child, :last-child, .denhaag-pagination__link--current, [rel])::before {
+  color: var(--denhaag-pagination-color, var(--denhaag-pagination-link-color)); /* Only for Safari */
   content: "...";
   left: calc(50% - 7px);
   line-height: 0;

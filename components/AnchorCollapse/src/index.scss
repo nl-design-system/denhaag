@@ -84,7 +84,7 @@
   );
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .denhaag-anchor-collapse {
     --denhaag-anchor-collapse-border-color: transparent;
     --denhaag-anchor-collapse-content-display: block;
@@ -97,7 +97,7 @@
     --denhaag-anchor-collapse-content-padding-inline-end: 0;
     --denhaag-anchor-collapse-content-padding-inline-start: 0;
 
-    // Must always be the same as the H2 styles.
+    /* Must always be the same as the H2 styles. */
     --denhaag-anchor-collapse-summary-color: var(--utrecht-heading-2-color, var(--utrecht-heading-color));
     --denhaag-anchor-collapse-summary-font-family: var(
       --utrecht-heading-2-font-family,

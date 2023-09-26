@@ -5,7 +5,7 @@
  */
 
 @mixin denhaag-card-authentication {
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     --denhaag-card-authentication-padding-block: 32px;
     --denhaag-card-authentication-padding-inline: 32px;
   }

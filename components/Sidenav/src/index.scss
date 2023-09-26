@@ -4,7 +4,7 @@
   row-gap: var(--denhaag-sidenav-row-gap);
   min-width: var(--denhaag-sidenav-min-width);
 
-  @media (max-width: 767px) {
+  @media (width <= 767px) {
     display: var(--denhaag-sidenav-mobile-display);
   }
 }
