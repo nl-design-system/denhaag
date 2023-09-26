@@ -1,7 +1,8 @@
+import { HeaderLogicProps } from '../../../components/Header/src';
 import { FacebookIcon, TwitterIcon, LinkedInIcon, InstagramIcon, YouTubeIcon } from '../../../components/Icons/src';
 import React from 'react';
 
-export const headerProps = {
+export const headerProps: HeaderLogicProps = {
   breadcrumbs: {
     navigationPath: [
       { label: 'Home', href: 'https://denhaag.nl/' },
