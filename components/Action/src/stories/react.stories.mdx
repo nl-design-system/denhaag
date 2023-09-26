@@ -1,0 +1,166 @@
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+import { ButtonLink } from "@utrecht/component-library-react";
+
+import pkg from "../../package.json";
+import readme from "../../README.md";
+import { Action } from "../index.tsx";
+
+<Meta
+  title="React/Actions/Action"
+  parameters={{
+    chromatic: { viewports: [1768, 1280, 768, 360] },
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "ALPHA",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Design Tokens
+
+<DesignTokenDocBlock categoryName="Action" viewType="table" />
+
+## Stories
+
+### Single
+
+<Canvas>
+  <Story name="Link">
+    <Action link="#example">Taak</Action>
+  </Story>
+</Canvas>
+
+### Single - hover
+
+<Canvas>
+  <Story name="Single - hover">
+    <Action link="#example" classNameName="denhaag-action--hover">
+      Taak
+    </Action>
+  </Story>
+</Canvas>
+
+### Single - focus
+
+<Canvas>
+  <Story name="Single - focus">
+    <Action link="#example" classNameName="denhaag-action--focus">
+      Taak
+    </Action>
+  </Story>
+</Canvas>
+
+### Single - with date
+
+<Canvas>
+  <Story name="Single - with date">
+    <Action link="#example" deadline={new Date().setDate(new Date().getDate() + 1)}>
+      Taak
+    </Action>
+  </Story>
+</Canvas>
+
+### Single - with date - relative
+
+<Canvas>
+  <Story name="Single - with date - relative">
+    <Action link="#example" deadline={new Date().setDate(new Date().getDate() + 5)} relativeDate>
+      Taak
+    </Action>
+  </Story>
+</Canvas>
+
+### Single - with warning date - relative
+
+<Canvas>
+  <Story name="Single - with warning date - relative">
+    <Action link="#example" deadline={new Date().setDate(new Date().getDate() + 2)} relativeDate>
+      Taak
+    </Action>
+  </Story>
+</Canvas>
+
+### Multiple
+
+<Canvas>
+  <Story name="Multiple">
+    <Action actions={<ButtonLink href="#example">Actie</ButtonLink>}>Taak</Action>
+  </Story>
+</Canvas>
+
+### Multiple - hover
+
+<Canvas>
+  <Story name="Multiple - hover">
+    <Action
+      actions={
+        <ButtonLink href="#example" className="utrecht-button-link--hover">
+          Actie
+        </ButtonLink>
+      }
+    >
+      Taak
+    </Action>
+  </Story>
+</Canvas>
+
+### Multiple - focus
+
+<Canvas>
+  <Story name="Multiple - focus">
+    <Action
+      actions={
+        <ButtonLink href="#example" className="utrecht-button-link--focus">
+          Actie
+        </ButtonLink>
+      }
+    >
+      Taak
+    </Action>
+  </Story>
+</Canvas>
+
+### Multiple - with date
+
+<Canvas>
+  <Story name="Multiple - with date">
+    <Action
+      deadline={new Date().setDate(new Date().getDate() + 1)}
+      actions={<ButtonLink href="#example">Actie</ButtonLink>}
+    >
+      Taak
+    </Action>
+  </Story>
+</Canvas>
+
+### Multiple - with date - relative
+
+<Canvas>
+  <Story name="Multiple - with date - relative">
+    <Action
+      relativeDate
+      deadline={new Date().setDate(new Date().getDate() + 5)}
+      actions={<ButtonLink href="#example">Actie</ButtonLink>}
+    >
+      Taak
+    </Action>
+  </Story>
+</Canvas>
+
+### Multiple - with warning date - relative
+
+<Canvas>
+  <Story name="Multiple - with warning date - relative">
+    <Action
+      relativeDate
+      deadline={new Date().setDate(new Date().getDate() + 2)}
+      actions={<ButtonLink href="#example">Actie</ButtonLink>}
+    >
+      Taak
+    </Action>
+  </Story>
+</Canvas>

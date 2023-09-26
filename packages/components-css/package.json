@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@gemeente-denhaag/accordion": "workspace:*",
+    "@gemeente-denhaag/action": "workspace:*",
     "@gemeente-denhaag/alert": "workspace:*",
     "@gemeente-denhaag/anchor-collapse": "workspace:*",
     "@gemeente-denhaag/anchor-navigation": "workspace:*",

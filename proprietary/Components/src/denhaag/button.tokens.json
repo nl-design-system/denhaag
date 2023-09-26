@@ -1,6 +1,7 @@
 {
   "denhaag": {
     "button": {
+      "cursor": { "value": "pointer" },
       "border-radius": { "value": "{denhaag.border-radius}" },
       "border-width": { "value": "1px" },
       "font-family": { "value": "{denhaag.typography.sans-serif.font-family}" },

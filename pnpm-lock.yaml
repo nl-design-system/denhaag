@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
@@ -371,6 +375,21 @@ importers:
 
   components/Accordion: {}
 
+  components/Action:
+    dependencies:
+      '@gemeente-denhaag/button':
+        specifier: workspace:*
+        version: link:../Button
+      '@gemeente-denhaag/icons':
+        specifier: workspace:*
+        version: link:../Icons
+      '@gemeente-denhaag/link':
+        specifier: workspace:*
+        version: link:../Link
+      date-fns:
+        specifier: 2.30.0
+        version: 2.30.0
+
   components/Alert:
     dependencies:
       '@gemeente-denhaag/baseprops':
@@ -599,7 +618,11 @@ importers:
 
   components/EventDate: {}
 
-  components/File: {}
+  components/File:
+    dependencies:
+      '@gemeente-denhaag/icons':
+        specifier: workspace:*
+        version: link:../Icons
 
   components/FloatingContact: {}
 
@@ -1072,6 +1095,9 @@ importers:
       '@gemeente-denhaag/accordion':
         specifier: workspace:*
         version: link:../../components/Accordion
+      '@gemeente-denhaag/action':
+        specifier: workspace:*
+        version: link:../../components/Action
       '@gemeente-denhaag/alert':
         specifier: workspace:*
         version: link:../../components/Alert
@@ -1249,6 +1275,9 @@ importers:
 
   packages/components-react:
     dependencies:
+      '@gemeente-denhaag/action':
+        specifier: workspace:*
+        version: link:../../components/Action
       '@gemeente-denhaag/alert':
         specifier: workspace:*
         version: link:../../components/Alert
@@ -26524,7 +26553,3 @@ packages:
   /zwitch@1.0.5:
     resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==}
     dev: true
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false

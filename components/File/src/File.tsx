@@ -1,6 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
-import { FileIcon, ImageIcon, DownloadIcon } from '/components/Icons/src';
+import { FileIcon, ImageIcon, DownloadIcon } from '@gemeente-denhaag/icons';
 
 interface FileProps extends React.HTMLAttributes<HTMLAnchorElement> {
   name: string;

@@ -1,6 +1,7 @@
 {
   "denhaag": {
     "link": {
+      "cursor": { "value": "pointer" },
       "text-decoration": {
         "value": "underline"
       },

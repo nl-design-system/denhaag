@@ -27,6 +27,9 @@ import { Sheet, SheetCloseButton, SheetOverlay, SheetContainer } from "/componen
 import IconButton from "/components/IconButton/src";
 import { Status } from "/components/ProcessSteps/src";
 import { File } from "/components/File/src";
+import { Action } from "/components/Action/src";
+import { Button } from "/components/Button/src";
+import { ButtonLink } from "@utrecht/component-library-react";
 
 import clsx from "clsx";
 
@@ -155,6 +158,8 @@ export const progressStepsData = {
   ],
 };
 
+export const taskDeadline = new Date().setDate(new Date().getDate() + 3);
+
 export const linkData = {
   name: "Example",
   link: "test/example.png",
@@ -242,10 +247,26 @@ export const copyright = "© 2022 Gemeente Den Haag";
         </Sidenav>
         <main className="denhaag-page-content__main">
           <Heading2>Aanvraag subsidie geluidsisolatie</Heading2>
+          <Action
+            className="denhaag-page-content__task"
+            deadline={taskDeadline}
+            actions={<ButtonLink href="#example">Actie</ButtonLink>}
+            relativeDate
+          >
+            Geef informatie voor uw aanvraag subsidie geluidsisolatie
+          </Action>
           <Heading3 className="denhaag-page-content__heading">Status</Heading3>
           <Status {...progressStepsData}></Status>
           <Heading3 className="denhaag-page-content__heading">Documenten</Heading3>
           <File {...linkData} />
+          <Action
+            className="denhaag-page-content__task"
+            deadline={taskDeadline}
+            actions={<ButtonLink href="#example">Actie</ButtonLink>}
+            relativeDate
+          >
+            Geef informatie voor uw aanvraag subsidie geluidsisolatie
+          </Action>
         </main>
       </ResponsiveContent>
       <PageFooter>

@@ -3,4 +3,8 @@
     --utrecht-heading-3-margin-block-start: 64px;
     --utrecht-heading-3-margin-block-end: 24px;
   }
+
+  & &__task {
+    margin-block-start: 32px;
+  }
 }

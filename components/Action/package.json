@@ -1,7 +1,7 @@
 {
-  "name": "@gemeente-denhaag/file",
-  "version": "0.1.1-alpha.5",
-  "description": "A file displays a link to download an attachment and metadata about the file.",
+  "name": "@gemeente-denhaag/action",
+  "version": "0.1.0",
+  "description": "Action component to navigate to different pages",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
@@ -15,13 +15,16 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/nl-design-system/denhaag.git",
-    "directory": "components/File"
+    "directory": "components/action"
   },
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/icons": "workspace:*"
+    "@gemeente-denhaag/button": "workspace:*",
+    "@gemeente-denhaag/icons": "workspace:*",
+    "@gemeente-denhaag/link": "workspace:*",
+    "date-fns": "2.30.0"
   }
 }
