@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 
-export const SubStepHeading: React.FC = ({ children }) => (
+export const SubStepHeading = ({ children }: PropsWithChildren<{}>) => (
   <p className={'denhaag-process-steps__sub-step-heading'}>{children}</p>
 );
 
