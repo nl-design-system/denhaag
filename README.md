@@ -87,10 +87,17 @@ Start by filling it with the following information:
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
-  "exports": "./dist/index.js",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/cjs/index.d.ts",
+      "import": "./dist/mjs/index.js",
+      "default": "./dist/cjs/index.js"
+    },
+    "./index.css": "./dist/index.css"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/mjs/index.js",
+  "types": "dist/cjs/index.d.ts",
   "files": ["dist"],
   "repository": {
     "type": "git",
