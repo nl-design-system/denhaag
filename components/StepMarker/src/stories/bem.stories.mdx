@@ -21,7 +21,7 @@ export const Template = (args) => <StepMarker {...args} />;
         if (storyContext.component) {
           return prettier.format(
             ReactDOMServer.renderToStaticMarkup(storyContext.component(storyContext.parameters.args)),
-            { parser: "babel", plugins: [prettierBabel] }
+            { parser: "babel", plugins: [prettierBabel] },
           );
         }
         return src;

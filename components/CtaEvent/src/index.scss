@@ -4,7 +4,8 @@
   align-items: center;
   border-left: 1px solid var(--denhaag-cta-event-border-color, currentColor);
   border-right: 1px solid var(--denhaag-cta-event-border-color, currentColor);
-  box-shadow: 0 1px 0 var(--denhaag-cta-event-border-color, currentColor),
+  box-shadow:
+    0 1px 0 var(--denhaag-cta-event-border-color, currentColor),
     inset 0 1px 0 var(--denhaag-cta-event-border-color, currentColor);
   color: var(--denhaag-cta-event-color);
   display: flex;
