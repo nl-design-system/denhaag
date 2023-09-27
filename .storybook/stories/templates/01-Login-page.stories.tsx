@@ -7,19 +7,12 @@ import { HeaderLogic, HeaderLogicProps } from '../../../components/Header/src';
 import Footer from '../../../components/Footer/src';
 import ResponsiveContent from '../../../components/ResponsiveContent/src';
 import { AuthenticationCardGroup } from '../../../components/CardGroup/src/story-template';
-import {
-  headerProps,
-  footerLegalData,
-  footerSocialData,
-  newsletterData,
-  contactData,
-  copyright,
-} from '../templates/util';
+import { headerProps, footerLegalData, footerSocialData, newsletterData, contactData, copyright } from './util';
 
-import './story-login.css';
+import './template-story.scss';
 
 const meta = {
-  title: 'Templates',
+  title: 'Templates/LoginPagina',
   parameters: {
     chromatic: { viewports: [1768, 1280, 768, 360] },
   },
@@ -27,22 +20,21 @@ const meta = {
 
 export default meta;
 
-const loginHeaderProps: HeaderLogicProps = {
-  ...headerProps,
-  breadcrumbs: {
-    navigationPath: [{ label: 'Home', href: 'https://denhaag.nl/' }, { label: 'MijnDenHaag' }],
-  },
-};
-
-// Login page
-
 type Story = StoryObj<typeof meta>;
 
-export const Login: Story = {
+const loginPageHeaderProps: HeaderLogicProps = {
+  ...headerProps,
+  breadcrumbs: {
+    navigationPath: [{ label: 'Home', href: 'https://denhaag.nl/' }, { label: 'Inloggen bij MijnDenHaag' }],
+  },
+  userprofileMenu: undefined,
+};
+
+export const LoginPagina: Story = {
   render: (args) => (
     <Page {...args}>
       <PageHeader>
-        <HeaderLogic {...loginHeaderProps} />
+        <HeaderLogic {...loginPageHeaderProps} />
       </PageHeader>
       <ResponsiveContent className="denhaag-page-content">
         <Heading2>Inloggen</Heading2>
