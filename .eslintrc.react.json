@@ -1,3 +1,5 @@
 {
-  "rules": {}
+  "rules": {
+    "jsx-a11y/anchor-has-content": [0]
+  }
 }
