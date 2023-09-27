@@ -1,7 +1,7 @@
 import typescript from 'rollup-plugin-typescript2';
 import nodeResolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
-import svgrImport from '@svgr/rollup';
+import svgr from '@svgr/rollup';
 import _ from 'lodash';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -11,8 +11,6 @@ import discardDuplicates from 'postcss-discard-duplicates';
 
 import { readFileSync } from 'node:fs';
 import summary from 'rollup-plugin-summary';
-
-const svgr = svgrImport.default;
 
 const tsconfig = JSON.parse(readFileSync('./tsconfig.json', 'utf8'));
 
