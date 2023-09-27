@@ -112,6 +112,7 @@
     "@types/react-dom": "17.0.20",
     "@typescript-eslint/eslint-plugin": "5.62.0",
     "@typescript-eslint/parser": "5.62.0",
+    "@utrecht/component-library-react": "1.0.0-alpha.380",
     "axe-core": "4.8.2",
     "babel-eslint": "10.1.0",
     "babel-jest": "27.5.1",

@@ -9,6 +9,9 @@ import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '../../../compone
 import { ArchiveIcon, GridIcon, UserIcon, BookIcon } from '../../../components/Icons/src';
 import { Status, StatusProps } from '../../../components/ProcessSteps/src';
 import { File } from '../../../components/File/src';
+import { Action } from '../../../components/Action/src';
+import { ButtonLink } from '@utrecht/component-library-react';
+
 import {
   headerProps,
   footerLegalData,
@@ -16,6 +19,7 @@ import {
   newsletterData,
   contactData,
   linkData,
+  copyright,
 } from '../templates/util';
 import './CaseDetail-page.scss';
 
@@ -61,7 +65,8 @@ const progressStepsData: StatusProps = {
   ],
 };
 
-const copyright = '© 2022 Gemeente Den Haag';
+const taskDateTime = '2023-09-30T19:47:36.593Z';
+const taskNow = '2023-09-28T19:47:36.593Z';
 
 export const Login: Story = {
   render: () => (
@@ -100,10 +105,28 @@ export const Login: Story = {
         </Sidenav>
         <main className="denhaag-page-content__main">
           <Heading2>Aanvraag subsidie geluidsisolatie</Heading2>
+          <Action
+            className="denhaag-page-content__task"
+            dateTime={taskDateTime}
+            now={taskNow}
+            actions={<ButtonLink href="#example">Actie</ButtonLink>}
+            relativeDate
+          >
+            Geef informatie voor uw aanvraag subsidie geluidsisolatie
+          </Action>
           <Heading3 className="denhaag-page-content__heading">Status</Heading3>
           <Status {...progressStepsData}></Status>
           <Heading3 className="denhaag-page-content__heading">Documenten</Heading3>
           <File {...linkData} />
+          <Action
+            className="denhaag-page-content__task"
+            dateTime={taskDateTime}
+            now={taskNow}
+            actions={<ButtonLink href="#example">Actie</ButtonLink>}
+            relativeDate
+          >
+            Geef informatie voor uw aanvraag subsidie geluidsisolatie
+          </Action>
         </main>
       </ResponsiveContent>
       <PageFooter>

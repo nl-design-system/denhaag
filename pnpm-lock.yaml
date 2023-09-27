@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
@@ -203,6 +207,9 @@ importers:
       '@typescript-eslint/parser':
         specifier: 5.62.0
         version: 5.62.0(eslint@8.50.0)(typescript@4.9.4)
+      '@utrecht/component-library-react':
+        specifier: 1.0.0-alpha.380
+        version: 1.0.0-alpha.380(react-dom@17.0.2)(react@17.0.2)
       axe-core:
         specifier: 4.8.2
         version: 4.8.2
@@ -8460,6 +8467,19 @@ packages:
     resolution: {integrity: sha512-aDIJMl8tzzmRw9RH/NfiIhVzFchRr+8PDcXuV2VTQLKgctOD06CWgMXlGsR5J4NXcvIB/GaHSHqZIai4EUGBEQ==}
     dev: false
 
+  /@utrecht/component-library-react@1.0.0-alpha.380(react-dom@17.0.2)(react@17.0.2):
+    resolution: {integrity: sha512-d713FqsWLFHmhItEdQ+XzpMetZDCeYRU8tt/7pAMKkqs5Mnmj6g+TEc8Y0WrrX0wQBBP6J4R22CkiaQibDuh2g==}
+    peerDependencies:
+      react: '18'
+      react-dom: '18'
+    dependencies:
+      clsx: 1.2.1
+      date-fns: 2.30.0
+      lodash.chunk: 4.2.0
+      react: 17.0.2
+      react-dom: 17.0.2(react@17.0.2)
+    dev: true
+
   /@utrecht/component-library-react@1.0.0-alpha.380(react-dom@18.2.0)(react@17.0.2):
     resolution: {integrity: sha512-d713FqsWLFHmhItEdQ+XzpMetZDCeYRU8tt/7pAMKkqs5Mnmj6g+TEc8Y0WrrX0wQBBP6J4R22CkiaQibDuh2g==}
     peerDependencies:
@@ -12033,7 +12053,6 @@ packages:
     engines: {node: '>=0.11'}
     dependencies:
       '@babel/runtime': 7.21.5
-    dev: false
 
   /dateformat@3.0.3:
     resolution: {integrity: sha512-jyCETtSl3VMZMWeRo7iY1FL19ges1t55hMo5yaam4Jrsm5EPL89UQkoQRyiI+Yf4k8r2ZpdngkV8hr1lIdjb3Q==}
@@ -18302,7 +18321,6 @@ packages:
 
   /lodash.chunk@4.2.0:
     resolution: {integrity: sha512-ZzydJKfUHJwHa+hF5X66zLFCBrWn5GeF28OHEr4WVWtNDXlQ/IjWKPBiikqKo2ne0+v6JgCgJ0GzJp8k8bHC7w==}
-    dev: false
 
   /lodash.debounce@4.0.8:
     resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==}
@@ -27948,7 +27966,3 @@ packages:
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: true
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
