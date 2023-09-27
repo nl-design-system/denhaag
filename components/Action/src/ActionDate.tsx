@@ -4,14 +4,15 @@ import { nl } from 'date-fns/locale';
 import { AlertTriangleFilledIcon } from '@gemeente-denhaag/icons';
 
 interface Props {
-  date: Date;
+  dateTime: string;
+  now?: string;
   relative?: boolean;
   locale?: Locale;
 }
 
-export const ActionDate = ({ date, relative = false, locale = nl }: Props) => {
-  const daysDifference = differenceInDays(date, new Date());
-  const dateTime = format(date, 'yyyy-MM-dd');
+export const ActionDate = ({ dateTime, now = new Date().toISOString(), relative = false, locale = nl }: Props) => {
+  const date = new Date(dateTime);
+  const daysDifference = differenceInDays(date, new Date(now));
 
   if (relative) {
     if (daysDifference < 0) return null;
