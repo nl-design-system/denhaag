@@ -10,10 +10,9 @@ import postcss from 'rollup-plugin-postcss';
 import discardDuplicates from 'postcss-discard-duplicates';
 
 import { readFileSync } from 'node:fs';
-import summaryImport from 'rollup-plugin-summary';
+import summary from 'rollup-plugin-summary';
 
 const svgr = svgrImport.default;
-const summary = summaryImport.default;
 
 const tsconfig = JSON.parse(readFileSync('./tsconfig.json', 'utf8'));
 
