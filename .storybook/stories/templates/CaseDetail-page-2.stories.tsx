@@ -1,24 +1,12 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { StoryObj } from '@storybook/react';
 import React from 'react';
 import { Heading2, Heading3 } from '../../../components/Typography/src';
 import { Page, PageHeader, PageFooter } from '../../../components/Page/src';
-import { HeaderLogic, HeaderLogicProps } from '../../../components/Header/src';
-import HeaderLogo from '../../../components/HeaderLogo/src';
+import { HeaderLogic } from '../../../components/Header/src';
 import Footer from '../../../components/Footer/src';
 import ResponsiveContent from '../../../components/ResponsiveContent/src';
 import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '../../../components/Sidenav/src';
-import {
-  ArchiveIcon,
-  GridIcon,
-  UserIcon,
-  FacebookIcon,
-  TwitterIcon,
-  LinkedInIcon,
-  InstagramIcon,
-  YouTubeIcon,
-  ArrowRightIcon,
-  BookIcon,
-} from '../../../components/Icons/src';
+import { ArchiveIcon, GridIcon, UserIcon, BookIcon } from '../../../components/Icons/src';
 import { Status, StatusProps } from '../../../components/ProcessSteps/src';
 import { File } from '../../../components/File/src';
 import {
@@ -32,7 +20,7 @@ import {
 import './CaseDetail-page.scss';
 
 const meta = {
-  title: 'Templates/Case Detail page',
+  title: 'Templates',
   parameters: {
     chromatic: { viewports: [1768, 1280, 768, 360] },
   },
@@ -51,7 +39,6 @@ const progressStepsData: StatusProps = {
       marker: 1,
       title: 'Deelname aan geluidsonderzoek',
       status: 'checked',
-      //steps needs an id
       steps: [{ id: 'aanmelding', title: 'Aanmelding ontvangen', status: 'checked' }],
     },
     {
