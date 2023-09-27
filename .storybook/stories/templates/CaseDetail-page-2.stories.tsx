@@ -21,7 +21,14 @@ import {
 } from '../../../components/Icons/src';
 import { Status, StatusProps } from '../../../components/ProcessSteps/src';
 import { File } from '../../../components/File/src';
-import { headerProps, footerLegalData, footerSocialData, newsletterData, contactData } from '../templates/util';
+import {
+  headerProps,
+  footerLegalData,
+  footerSocialData,
+  newsletterData,
+  contactData,
+  linkData,
+} from '../templates/util';
 import './CaseDetail-page.scss';
 
 const meta = {
