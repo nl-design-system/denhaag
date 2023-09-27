@@ -23,29 +23,35 @@ import readme from "../../README.md";
 
 <Canvas>
   <Story name="Default">
-    <div className="denhaag-article-meta">
-      <p className="denhaag-article-meta__item">Auteur: Janneke Smit</p>
-      <p className="denhaag-article-meta__item">Gepubliceerd: 9 december 2019</p>
-      <p className="denhaag-article-meta__item">Gewijzigd: 28 april 2021</p>
-    </div>
+    {() => (
+      <div className="denhaag-article-meta">
+        <p className="denhaag-article-meta__item">Auteur: Janneke Smit</p>
+        <p className="denhaag-article-meta__item">Gepubliceerd: 9 december 2019</p>
+        <p className="denhaag-article-meta__item">Gewijzigd: 28 april 2021</p>
+      </div>
+    )}
   </Story>
 </Canvas>
 
 <Canvas>
   <Story name="--horizontal">
-    <div className="denhaag-article-meta denhaag-article-meta--horizontal">
-      <p className="denhaag-article-meta__item">Auteur: Janneke Smit</p>
-      <p className="denhaag-article-meta__item">Gepubliceerd: 9 december 2019</p>
-      <p className="denhaag-article-meta__item">Gewijzigd: 28 april 2021</p>
-    </div>
+    {() => (
+      <div className="denhaag-article-meta denhaag-article-meta--horizontal">
+        <p className="denhaag-article-meta__item">Auteur: Janneke Smit</p>
+        <p className="denhaag-article-meta__item">Gepubliceerd: 9 december 2019</p>
+        <p className="denhaag-article-meta__item">Gewijzigd: 28 april 2021</p>
+      </div>
+    )}
   </Story>
 </Canvas>
 
 <Canvas>
   <Story name="--responsive">
-    <div className="denhaag-article-meta denhaag-article-meta--responsive">
-      <p className="denhaag-article-meta__item">Gepubliceerd: 9 december 2019</p>
-      <p className="denhaag-article-meta__item">Gewijzigd: 28 april 2021</p>
-    </div>
+    {() => (
+      <div className="denhaag-article-meta denhaag-article-meta--responsive">
+        <p className="denhaag-article-meta__item">Gepubliceerd: 9 december 2019</p>
+        <p className="denhaag-article-meta__item">Gewijzigd: 28 april 2021</p>
+      </div>
+    )}
   </Story>
 </Canvas>

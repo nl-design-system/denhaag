@@ -27,15 +27,11 @@ export const items = [
 ### Default
 
 <Canvas>
-  <Story name="Default">
-    <DescriptionList items={items} />
-  </Story>
+  <Story name="Default">{() => <DescriptionList items={items} />} </Story>
 </Canvas>
 
 ### With Caption
 
 <Canvas>
-  <Story name="With Caption">
-    <DescriptionList caption="Caption" items={items} />
-  </Story>
+  <Story name="With Caption">{() => <DescriptionList caption="Caption" items={items} />}</Story>
 </Canvas>

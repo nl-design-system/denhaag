@@ -21,7 +21,7 @@ import "../heading.scss";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Default">
-    <h5 class="utrecht-heading-5">This is a bit of text inside a Header 5 component.</h5>
+    {() => <h5 class="utrecht-heading-5">This is a bit of text inside a Header 5 component.</h5>}
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -31,18 +31,22 @@ import "../heading.scss";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Heading + Paragraph">
-    <h5 class="utrecht-heading-5">This is a bit of text inside a Header 5component.</h5>
-    <p class="utrecht-paragraph">
-      Atque qui praesentium provident. A aliquid quae earum neque accusamus voluptatem. Assumenda ut iure in et
-      repellendus quam omnis excepturi. Vero quod eos eveniet molestias eum in quis. Delectus qui ullam necessitatibus
-      illum. Beatae consequatur sint eveniet animi neque.
-    </p>
-    <h5 class="utrecht-heading-5">This is a bit of text inside a Header 5component.</h5>
-    <p class="utrecht-paragraph">
-      Atque qui praesentium provident. A aliquid quae earum neque accusamus voluptatem. Assumenda ut iure in et
-      repellendus quam omnis excepturi. Vero quod eos eveniet molestias eum in quis. Delectus qui ullam necessitatibus
-      illum. Beatae consequatur sint eveniet animi neque.
-    </p>
+    {() => (
+      <>
+        <h5 class="utrecht-heading-5">This is a bit of text inside a Header 5component.</h5>
+        <p class="utrecht-paragraph">
+          Atque qui praesentium provident. A aliquid quae earum neque accusamus voluptatem. Assumenda ut iure in et
+          repellendus quam omnis excepturi. Vero quod eos eveniet molestias eum in quis. Delectus qui ullam
+          necessitatibus illum. Beatae consequatur sint eveniet animi neque.
+        </p>
+        <h5 class="utrecht-heading-5">This is a bit of text inside a Header 5component.</h5>
+        <p class="utrecht-paragraph">
+          Atque qui praesentium provident. A aliquid quae earum neque accusamus voluptatem. Assumenda ut iure in et
+          repellendus quam omnis excepturi. Vero quod eos eveniet molestias eum in quis. Delectus qui ullam
+          necessitatibus illum. Beatae consequatur sint eveniet animi neque.
+        </p>
+      </>
+    )}
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>

@@ -28,18 +28,20 @@ export const heroImage = (h, w, id = "photo-1513384312027-9fa69a360337") =>
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Routing">
-    <section class="denhaag-hero denhaag-hero--routing">
-      <div class="denhaag-hero__container">
-        <div class="denhaag-hero__content">
-          <h1 class="denhaag-hero__title utrecht-heading-1">Parkeren</h1>
+    {() => (
+      <section class="denhaag-hero denhaag-hero--routing">
+        <div class="denhaag-hero__container">
+          <div class="denhaag-hero__content">
+            <h1 class="denhaag-hero__title utrecht-heading-1">Parkeren</h1>
+          </div>
         </div>
-      </div>
-      <img
-        class="denhaag-hero__image"
-        src={heroImage(400, 560, "photo-1470224114660-3f6686c562eb")}
-        alt="auto in parkeervak"
-      />
-    </section>
+        <img
+          class="denhaag-hero__image"
+          src={heroImage(400, 560, "photo-1470224114660-3f6686c562eb")}
+          alt="auto in parkeervak"
+        />
+      </section>
+    )}
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -49,18 +51,20 @@ export const heroImage = (h, w, id = "photo-1513384312027-9fa69a360337") =>
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Routing Multiline">
-    <section class="denhaag-hero denhaag-hero--routing">
-      <div class="denhaag-hero__container">
-        <div class="denhaag-hero__content">
-          <h1 class="denhaag-hero__title utrecht-heading-1">Betalen, wijzigen of opzeggen</h1>
+    {() => (
+      <section class="denhaag-hero denhaag-hero--routing">
+        <div class="denhaag-hero__container">
+          <div class="denhaag-hero__content">
+            <h1 class="denhaag-hero__title utrecht-heading-1">Betalen, wijzigen of opzeggen</h1>
+          </div>
         </div>
-      </div>
-      <img
-        class="denhaag-hero__image"
-        src={heroImage(400, 560, "photo-1634733988138-bf2c3a2a13fa")}
-        alt="pinautomaat"
-      />
-    </section>
+        <img
+          class="denhaag-hero__image"
+          src={heroImage(400, 560, "photo-1634733988138-bf2c3a2a13fa")}
+          alt="pinautomaat"
+        />
+      </section>
+    )}
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -70,16 +74,18 @@ export const heroImage = (h, w, id = "photo-1513384312027-9fa69a360337") =>
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Home">
-    <section class="denhaag-hero denhaag-hero--home">
-      <div class="denhaag-hero__container">
-        <div class="denhaag-hero__content">
-          <h1 class="denhaag-hero__title utrecht-heading-1">
-            <strong>Goedemorgen!</strong> Waar bent u naar op zoek?
-          </h1>
+    {() => (
+      <section class="denhaag-hero denhaag-hero--home">
+        <div class="denhaag-hero__container">
+          <div class="denhaag-hero__content">
+            <h1 class="denhaag-hero__title utrecht-heading-1">
+              <strong>Goedemorgen!</strong> Waar bent u naar op zoek?
+            </h1>
+          </div>
         </div>
-      </div>
-      <img class="denhaag-hero__image" src={heroImage(800, 800)} alt="hero" />
-    </section>
+        <img class="denhaag-hero__image" src={heroImage(800, 800)} alt="hero" />
+      </section>
+    )}
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -89,38 +95,40 @@ export const heroImage = (h, w, id = "photo-1513384312027-9fa69a360337") =>
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Theme Page">
-    <section class="denhaag-hero denhaag-hero--theme-page">
-      <div class="denhaag-hero__container">
-        <div class="denhaag-hero__content">
-          <h1 class="denhaag-hero__title utrecht-heading-1">Parkeren</h1>
-          <p class="utrecht-paragraph denhaag-hero__text">
-            Et fugit est tenetur labore corporis. Magnam doloremque cum sapiente et quisquam saepe rerum. Dolorum
-            tenetur incidunt a dolorum incidunt sit.
-          </p>
-          <button class="denhaag-button denhaag-button--end-icon">
-            Button
-            <span class="denhaag-button__icon">
-              <svg
-                aria-hidden="true"
-                class="denhaag-icon"
-                width="1em"
-                height="1em"
-                viewBox="0 0 15 8"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M0.792893 0.292893C1.18342 -0.0976311 1.81658 -0.0976311 2.20711 0.292893L7.5 5.58579L12.7929 0.292893C13.1834 -0.0976311 13.8166 -0.0976311 14.2071 0.292893C14.5976 0.683418 14.5976 1.31658 14.2071 1.70711L8.20711 7.70711C7.81658 8.09763 7.18342 8.09763 6.79289 7.70711L0.792893 1.70711C0.402369 1.31658 0.402369 0.683418 0.792893 0.292893Z" />
-              </svg>
-            </span>
-          </button>
+    {() => (
+      <section class="denhaag-hero denhaag-hero--theme-page">
+        <div class="denhaag-hero__container">
+          <div class="denhaag-hero__content">
+            <h1 class="denhaag-hero__title utrecht-heading-1">Parkeren</h1>
+            <p class="utrecht-paragraph denhaag-hero__text">
+              Et fugit est tenetur labore corporis. Magnam doloremque cum sapiente et quisquam saepe rerum. Dolorum
+              tenetur incidunt a dolorum incidunt sit.
+            </p>
+            <button class="denhaag-button denhaag-button--end-icon">
+              Button
+              <span class="denhaag-button__icon">
+                <svg
+                  aria-hidden="true"
+                  class="denhaag-icon"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 15 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M0.792893 0.292893C1.18342 -0.0976311 1.81658 -0.0976311 2.20711 0.292893L7.5 5.58579L12.7929 0.292893C13.1834 -0.0976311 13.8166 -0.0976311 14.2071 0.292893C14.5976 0.683418 14.5976 1.31658 14.2071 1.70711L8.20711 7.70711C7.81658 8.09763 7.18342 8.09763 6.79289 7.70711L0.792893 1.70711C0.402369 1.31658 0.402369 0.683418 0.792893 0.292893Z" />
+                </svg>
+              </span>
+            </button>
+          </div>
         </div>
-      </div>
-      <img
-        class="denhaag-hero__image"
-        src={heroImage(400, 560, "photo-1470224114660-3f6686c562eb")}
-        alt="auto in parkeervak"
-      />
-    </section>
+        <img
+          class="denhaag-hero__image"
+          src={heroImage(400, 560, "photo-1470224114660-3f6686c562eb")}
+          alt="auto in parkeervak"
+        />
+      </section>
+    )}
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>

@@ -81,30 +81,32 @@ export const copyright = "© 2022 Gemeente Den Haag";
 
 <Canvas>
   <Story name="Login page">
-    <Page>
-      <PageHeader>
-        <HeaderLogic {...exampleArgs} />
-      </PageHeader>
-      <ResponsiveContent className="denhaag-page-content">
-        <Heading2>Inloggen</Heading2>
-        <AuthenticationCardGroup cards={["DigiD", "eHerkenning", "eIDAS"]} responsive />
-        <Heading2>Inloggen als gemachtigde</Heading2>
-        <Alert
-          title="Om in te loggen als gemachtigde heeft u een geldige machtiging nodig."
-          variant="info"
-          className="denhaag-authentication__alert"
-        />
-        <AuthenticationCardGroup cards={["DigiD", "eHerkenning"]} responsive />
-      </ResponsiveContent>
-      <PageFooter>
-        <Footer
-          newsletterData={newsletterData}
-          contactData={contactData}
-          legalData={footerLegalData}
-          copyrightLabel={copyright}
-          socialData={footerSocialData}
-        />
-      </PageFooter>
-    </Page>
+    {() => (
+      <Page>
+        <PageHeader>
+          <HeaderLogic {...exampleArgs} />
+        </PageHeader>
+        <ResponsiveContent className="denhaag-page-content">
+          <Heading2>Inloggen</Heading2>
+          <AuthenticationCardGroup cards={["DigiD", "eHerkenning", "eIDAS"]} responsive />
+          <Heading2>Inloggen als gemachtigde</Heading2>
+          <Alert
+            title="Om in te loggen als gemachtigde heeft u een geldige machtiging nodig."
+            variant="info"
+            className="denhaag-authentication__alert"
+          />
+          <AuthenticationCardGroup cards={["DigiD", "eHerkenning"]} responsive />
+        </ResponsiveContent>
+        <PageFooter>
+          <Footer
+            newsletterData={newsletterData}
+            contactData={contactData}
+            legalData={footerLegalData}
+            copyrightLabel={copyright}
+            socialData={footerSocialData}
+          />
+        </PageFooter>
+      </Page>
+    )}
   </Story>
 </Canvas>

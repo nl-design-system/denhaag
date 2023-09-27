@@ -24,18 +24,18 @@ import { Action } from "../index.tsx";
 ### Single
 
 <Canvas>
-  <Story name="Link">
-    <Action link="#example">Taak</Action>
-  </Story>
+  <Story name="Link">{() => <Action link="#example">Taak</Action>}</Story>
 </Canvas>
 
 ### Single - hover
 
 <Canvas>
   <Story name="Single - hover">
-    <Action link="#example" classNameName="denhaag-action--hover">
-      Taak
-    </Action>
+    {() => (
+      <Action link="#example" classNameName="denhaag-action--hover">
+        Taak
+      </Action>
+    )}
   </Story>
 </Canvas>
 
@@ -43,9 +43,11 @@ import { Action } from "../index.tsx";
 
 <Canvas>
   <Story name="Single - focus">
-    <Action link="#example" classNameName="denhaag-action--focus">
-      Taak
-    </Action>
+    {() => (
+      <Action link="#example" classNameName="denhaag-action--focus">
+        Taak
+      </Action>
+    )}
   </Story>
 </Canvas>
 
@@ -53,9 +55,11 @@ import { Action } from "../index.tsx";
 
 <Canvas>
   <Story name="Single - with date">
-    <Action link="#example" deadline={new Date().setDate(new Date().getDate() + 1)}>
-      Taak
-    </Action>
+    {() => (
+      <Action link="#example" deadline={new Date().setDate(new Date().getDate() + 1)}>
+        Taak
+      </Action>
+    )}
   </Story>
 </Canvas>
 
@@ -63,9 +67,11 @@ import { Action } from "../index.tsx";
 
 <Canvas>
   <Story name="Single - with date - relative">
-    <Action link="#example" deadline={new Date().setDate(new Date().getDate() + 5)} relativeDate>
-      Taak
-    </Action>
+    {() => (
+      <Action link="#example" deadline={new Date().setDate(new Date().getDate() + 5)} relativeDate>
+        Taak
+      </Action>
+    )}
   </Story>
 </Canvas>
 
@@ -73,33 +79,35 @@ import { Action } from "../index.tsx";
 
 <Canvas>
   <Story name="Single - with warning date - relative">
-    <Action link="#example" deadline={new Date().setDate(new Date().getDate() + 2)} relativeDate>
-      Taak
-    </Action>
+    {() => (
+      <Action link="#example" deadline={new Date().setDate(new Date().getDate() + 2)} relativeDate>
+        Taak
+      </Action>
+    )}
   </Story>
 </Canvas>
 
 ### Multiple
 
 <Canvas>
-  <Story name="Multiple">
-    <Action actions={<ButtonLink href="#example">Actie</ButtonLink>}>Taak</Action>
-  </Story>
+  <Story name="Multiple">{() => <Action actions={<ButtonLink href="#example">Actie</ButtonLink>}>Taak</Action>}</Story>
 </Canvas>
 
 ### Multiple - hover
 
 <Canvas>
   <Story name="Multiple - hover">
-    <Action
-      actions={
-        <ButtonLink href="#example" className="utrecht-button-link--hover">
-          Actie
-        </ButtonLink>
-      }
-    >
-      Taak
-    </Action>
+    {() => (
+      <Action
+        actions={
+          <ButtonLink href="#example" className="utrecht-button-link--hover">
+            Actie
+          </ButtonLink>
+        }
+      >
+        Taak
+      </Action>
+    )}
   </Story>
 </Canvas>
 
@@ -107,15 +115,17 @@ import { Action } from "../index.tsx";
 
 <Canvas>
   <Story name="Multiple - focus">
-    <Action
-      actions={
-        <ButtonLink href="#example" className="utrecht-button-link--focus">
-          Actie
-        </ButtonLink>
-      }
-    >
-      Taak
-    </Action>
+    {() => (
+      <Action
+        actions={
+          <ButtonLink href="#example" className="utrecht-button-link--focus">
+            Actie
+          </ButtonLink>
+        }
+      >
+        Taak
+      </Action>
+    )}
   </Story>
 </Canvas>
 
@@ -123,12 +133,14 @@ import { Action } from "../index.tsx";
 
 <Canvas>
   <Story name="Multiple - with date">
-    <Action
-      deadline={new Date().setDate(new Date().getDate() + 1)}
-      actions={<ButtonLink href="#example">Actie</ButtonLink>}
-    >
-      Taak
-    </Action>
+    {() => (
+      <Action
+        deadline={new Date().setDate(new Date().getDate() + 1)}
+        actions={<ButtonLink href="#example">Actie</ButtonLink>}
+      >
+        Taak
+      </Action>
+    )}
   </Story>
 </Canvas>
 
@@ -136,13 +148,15 @@ import { Action } from "../index.tsx";
 
 <Canvas>
   <Story name="Multiple - with date - relative">
-    <Action
-      relativeDate
-      deadline={new Date().setDate(new Date().getDate() + 5)}
-      actions={<ButtonLink href="#example">Actie</ButtonLink>}
-    >
-      Taak
-    </Action>
+    {() => (
+      <Action
+        relativeDate
+        deadline={new Date().setDate(new Date().getDate() + 5)}
+        actions={<ButtonLink href="#example">Actie</ButtonLink>}
+      >
+        Taak
+      </Action>
+    )}
   </Story>
 </Canvas>
 
@@ -150,12 +164,14 @@ import { Action } from "../index.tsx";
 
 <Canvas>
   <Story name="Multiple - with warning date - relative">
-    <Action
-      relativeDate
-      deadline={new Date().setDate(new Date().getDate() + 2)}
-      actions={<ButtonLink href="#example">Actie</ButtonLink>}
-    >
-      Taak
-    </Action>
+    {() => (
+      <Action
+        relativeDate
+        deadline={new Date().setDate(new Date().getDate() + 2)}
+        actions={<ButtonLink href="#example">Actie</ButtonLink>}
+      >
+        Taak
+      </Action>
+    )}
   </Story>
 </Canvas>
