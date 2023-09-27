@@ -1,4 +1,4 @@
-import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { Canvas, Description, Meta, Story } from "@storybook/blocks";
 
 import pkg from "../../package.json";
 import readme from "../../README.md";
@@ -27,7 +27,7 @@ export const items = [
 ### Default
 
 <Canvas>
-  <Story name="Default">{() => <DescriptionList items={items} />} </Story>
+  <Story name="Default">{() => <DescriptionList items={items} />}</Story>
 </Canvas>
 
 ### With Caption
