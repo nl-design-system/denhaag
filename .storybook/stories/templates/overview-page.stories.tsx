@@ -20,9 +20,9 @@ const meta = {
 
 export default meta;
 
-const headerProps: HeaderLogicProps = {
+const overviewHeaderProps: HeaderLogicProps = {
   breadcrumbs: {
-    navigationPath: [{ label: 'Home', href: 'https://denhaag.nl/' }],
+    navigationPath: [{ label: 'Home', href: 'https://denhaag.nl/' }, { label: 'MijnDenHaag' }],
   },
 };
 type Story = StoryObj<typeof meta>;
@@ -32,7 +32,7 @@ export const OverviewPage: Story = {
   render: () => (
     <Page>
       <PageHeader>
-        <HeaderLogic {...headerProps} />
+        <HeaderLogic {...overviewHeaderProps} />
       </PageHeader>
       <ResponsiveContent className="denhaag-page-content denhaag-responsive-content--sidebar">
         <Sidenav>
