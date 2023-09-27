@@ -23,14 +23,16 @@ import "../index.scss";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Default">
-    <dl class="denhaag-description-list">
-      <dt class="denhaag-description-list__title">Beast of Bodmin</dt>
-      <dd class="denhaag-description-list__detail">A large feline inhabiting Bodmin Moor.</dd>
-      <dt class="denhaag-description-list__title">Morgawr</dt>
-      <dd class="denhaag-description-list__detail">A sea serpent.</dd>
-      <dt class="denhaag-description-list__title">Owlman</dt>
-      <dd class="denhaag-description-list__detail">A giant owl-like creature.</dd>
-    </dl>
+    {() => (
+      <dl class="denhaag-description-list">
+        <dt class="denhaag-description-list__title">Beast of Bodmin</dt>
+        <dd class="denhaag-description-list__detail">A large feline inhabiting Bodmin Moor.</dd>
+        <dt class="denhaag-description-list__title">Morgawr</dt>
+        <dd class="denhaag-description-list__detail">A sea serpent.</dd>
+        <dt class="denhaag-description-list__title">Owlman</dt>
+        <dd class="denhaag-description-list__detail">A giant owl-like creature.</dd>
+      </dl>
+    )}
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -40,17 +42,21 @@ import "../index.scss";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="With Caption">
-    <h3 id="h3" class="denhaag-description-list__caption">
-      Caption
-    </h3>
-    <dl aria-labelledby="h3" class="denhaag-description-list">
-      <dt class="denhaag-description-list__title">Beast of Bodmin</dt>
-      <dd class="denhaag-description-list__detail">A large feline inhabiting Bodmin Moor.</dd>
-      <dt class="denhaag-description-list__title">Morgawr</dt>
-      <dd class="denhaag-description-list__detail">A sea serpent.</dd>
-      <dt class="denhaag-description-list__title">Owlman</dt>
-      <dd class="denhaag-description-list__detail">A giant owl-like creature.</dd>
-    </dl>
+    {() => (
+      <>
+        <h3 id="h3" class="denhaag-description-list__caption">
+          Caption
+        </h3>
+        <dl aria-labelledby="h3" class="denhaag-description-list">
+          <dt class="denhaag-description-list__title">Beast of Bodmin</dt>
+          <dd class="denhaag-description-list__detail">A large feline inhabiting Bodmin Moor.</dd>
+          <dt class="denhaag-description-list__title">Morgawr</dt>
+          <dd class="denhaag-description-list__detail">A sea serpent.</dd>
+          <dt class="denhaag-description-list__title">Owlman</dt>
+          <dd class="denhaag-description-list__detail">A giant owl-like creature.</dd>
+        </dl>
+      </>
+    )}
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>

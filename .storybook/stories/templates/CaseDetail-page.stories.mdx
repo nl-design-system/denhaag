@@ -212,72 +212,74 @@ export const copyright = "© 2022 Gemeente Den Haag";
 
 <Canvas>
   <Story name="Case Detail page">
-    <Page>
-      <PageHeader>
-        <HeaderLogic {...exampleArgs} />
-      </PageHeader>
-      <ResponsiveContent className="denhaag-page-content denhaag-responsive-content--sidebar">
-        <Sidenav>
-          <SidenavList>
-            <SidenavItem>
-              <SidenavLink>
-                <GridIcon />
-                Overzicht
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink current={true}>
-                <ArchiveIcon />
-                Mijn lopende zaken
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink>
-                <BookIcon />
-                Mijn thema's
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink>
-                <UserIcon />
-                Mijn gegevens
-              </SidenavLink>
-            </SidenavItem>
-          </SidenavList>
-        </Sidenav>
-        <main className="denhaag-page-content__main">
-          <Heading2>Aanvraag subsidie geluidsisolatie</Heading2>
-          <Action
-            className="denhaag-page-content__task"
-            deadline={taskDeadline}
-            actions={<ButtonLink href="#example">Actie</ButtonLink>}
-            relativeDate
-          >
-            Geef informatie voor uw aanvraag subsidie geluidsisolatie
-          </Action>
-          <Heading3 className="denhaag-page-content__heading">Status</Heading3>
-          <Status {...progressStepsData}></Status>
-          <Heading3 className="denhaag-page-content__heading">Documenten</Heading3>
-          <File {...linkData} />
-          <Action
-            className="denhaag-page-content__task"
-            deadline={taskDeadline}
-            actions={<ButtonLink href="#example">Actie</ButtonLink>}
-            relativeDate
-          >
-            Geef informatie voor uw aanvraag subsidie geluidsisolatie
-          </Action>
-        </main>
-      </ResponsiveContent>
-      <PageFooter>
-        <Footer
-          newsletterData={newsletterData}
-          contactData={contactData}
-          legalData={footerLegalData}
-          copyrightLabel={copyright}
-          socialData={footerSocialData}
-        />
-      </PageFooter>
-    </Page>
+    {() => (
+      <Page>
+        <PageHeader>
+          <HeaderLogic {...exampleArgs} />
+        </PageHeader>
+        <ResponsiveContent className="denhaag-page-content denhaag-responsive-content--sidebar">
+          <Sidenav>
+            <SidenavList>
+              <SidenavItem>
+                <SidenavLink>
+                  <GridIcon />
+                  Overzicht
+                </SidenavLink>
+              </SidenavItem>
+              <SidenavItem>
+                <SidenavLink current={true}>
+                  <ArchiveIcon />
+                  Mijn lopende zaken
+                </SidenavLink>
+              </SidenavItem>
+              <SidenavItem>
+                <SidenavLink>
+                  <BookIcon />
+                  Mijn thema's
+                </SidenavLink>
+              </SidenavItem>
+              <SidenavItem>
+                <SidenavLink>
+                  <UserIcon />
+                  Mijn gegevens
+                </SidenavLink>
+              </SidenavItem>
+            </SidenavList>
+          </Sidenav>
+          <main className="denhaag-page-content__main">
+            <Heading2>Aanvraag subsidie geluidsisolatie</Heading2>
+            <Action
+              className="denhaag-page-content__task"
+              deadline={taskDeadline}
+              actions={<ButtonLink href="#example">Actie</ButtonLink>}
+              relativeDate
+            >
+              Geef informatie voor uw aanvraag subsidie geluidsisolatie
+            </Action>
+            <Heading3 className="denhaag-page-content__heading">Status</Heading3>
+            <Status {...progressStepsData}></Status>
+            <Heading3 className="denhaag-page-content__heading">Documenten</Heading3>
+            <File {...linkData} />
+            <Action
+              className="denhaag-page-content__task"
+              deadline={taskDeadline}
+              actions={<ButtonLink href="#example">Actie</ButtonLink>}
+              relativeDate
+            >
+              Geef informatie voor uw aanvraag subsidie geluidsisolatie
+            </Action>
+          </main>
+        </ResponsiveContent>
+        <PageFooter>
+          <Footer
+            newsletterData={newsletterData}
+            contactData={contactData}
+            legalData={footerLegalData}
+            copyrightLabel={copyright}
+            socialData={footerSocialData}
+          />
+        </PageFooter>
+      </Page>
+    )}
   </Story>
 </Canvas>

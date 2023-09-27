@@ -22,9 +22,13 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Default">
-    <p>I am above the divider.</p>
-    <hr class="denhaag-divider" role="presentation" />
-    <p>I am below the divider.</p>
+    {() => (
+      <>
+        <p>I am above the divider.</p>
+        <hr class="denhaag-divider" role="presentation" />
+        <p>I am below the divider.</p>
+      </>
+    )}
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -34,11 +38,13 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Vertical">
-    <div style={{ display: "flex" }}>
-      <p>I am on the left side of the divider.</p>
-      <hr class="denhaag-divider denhaag-divider--vertical" role="presentation" />
-      <p>I am on the right side of the divider.</p>
-    </div>
+    {() => (
+      <div style={{ display: "flex" }}>
+        <p>I am on the left side of the divider.</p>
+        <hr class="denhaag-divider denhaag-divider--vertical" role="presentation" />
+        <p>I am on the right side of the divider.</p>
+      </div>
+    )}
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -48,21 +54,23 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Vertical Images">
-    <div style={{ display: "flex" }}>
-      <img
-        alt="The Lagoon Nebula."
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Lagoon_Nebula.jpg/1024px-Lagoon_Nebula.jpg"
-        width="500"
-        height="250"
-      />
-      <hr class="denhaag-divider denhaag-divider--vertical" role="presentation" />
-      <img
-        alt="Four cassette tapes"
-        src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/Demos.jpg/1200px-Demos.jpg"
-        width="500"
-        height="250"
-      />
-    </div>
+    {() => (
+      <div style={{ display: "flex" }}>
+        <img
+          alt="The Lagoon Nebula."
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Lagoon_Nebula.jpg/1024px-Lagoon_Nebula.jpg"
+          width="500"
+          height="250"
+        />
+        <hr class="denhaag-divider denhaag-divider--vertical" role="presentation" />
+        <img
+          alt="Four cassette tapes"
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/Demos.jpg/1200px-Demos.jpg"
+          width="500"
+          height="250"
+        />
+      </div>
+    )}
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>

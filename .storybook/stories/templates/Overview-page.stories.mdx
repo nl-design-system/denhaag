@@ -172,56 +172,58 @@ export const copyright = "© 2022 Gemeente Den Haag";
 
 <Canvas>
   <Story name="Overview page">
-    <Page>
-      <PageHeader>
-        <HeaderLogic {...exampleArgs} />
-      </PageHeader>
-      <ResponsiveContent className="denhaag-page-content denhaag-responsive-content--sidebar">
-        <Sidenav>
-          <SidenavList>
-            <SidenavItem>
-              <SidenavLink current={true}>
-                <GridIcon />
-                Overzicht
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink>
-                <ArchiveIcon />
-                Lopende zaken
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink>
-                <FavoriteIcon />
-                Thema's
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink>
-                <UserIcon />
-                Mijn account
-              </SidenavLink>
-            </SidenavItem>
-          </SidenavList>
-        </Sidenav>
-        <main className="denhaag-page-content__main">
-          <Heading2>Hallo, Anne Klap!</Heading2>
-          <Paragraph>
-            In MijnDenHaag kunt u zelf u persoonlijke zaken regelen wanneer u het uitkomt. Denk aan zaken zoals het zien
-            wanneer uw aanvraag klaar is of het bijkopen van extra parkeertegoed.
-          </Paragraph>
-        </main>
-      </ResponsiveContent>
-      <PageFooter>
-        <Footer
-          newsletterData={newsletterData}
-          contactData={contactData}
-          legalData={footerLegalData}
-          copyrightLabel={copyright}
-          socialData={footerSocialData}
-        />
-      </PageFooter>
-    </Page>
+    {() => (
+      <Page>
+        <PageHeader>
+          <HeaderLogic {...exampleArgs} />
+        </PageHeader>
+        <ResponsiveContent className="denhaag-page-content denhaag-responsive-content--sidebar">
+          <Sidenav>
+            <SidenavList>
+              <SidenavItem>
+                <SidenavLink current={true}>
+                  <GridIcon />
+                  Overzicht
+                </SidenavLink>
+              </SidenavItem>
+              <SidenavItem>
+                <SidenavLink>
+                  <ArchiveIcon />
+                  Lopende zaken
+                </SidenavLink>
+              </SidenavItem>
+              <SidenavItem>
+                <SidenavLink>
+                  <FavoriteIcon />
+                  Thema's
+                </SidenavLink>
+              </SidenavItem>
+              <SidenavItem>
+                <SidenavLink>
+                  <UserIcon />
+                  Mijn account
+                </SidenavLink>
+              </SidenavItem>
+            </SidenavList>
+          </Sidenav>
+          <main className="denhaag-page-content__main">
+            <Heading2>Hallo, Anne Klap!</Heading2>
+            <Paragraph>
+              In MijnDenHaag kunt u zelf u persoonlijke zaken regelen wanneer u het uitkomt. Denk aan zaken zoals het
+              zien wanneer uw aanvraag klaar is of het bijkopen van extra parkeertegoed.
+            </Paragraph>
+          </main>
+        </ResponsiveContent>
+        <PageFooter>
+          <Footer
+            newsletterData={newsletterData}
+            contactData={contactData}
+            legalData={footerLegalData}
+            copyrightLabel={copyright}
+            socialData={footerSocialData}
+          />
+        </PageFooter>
+      </Page>
+    )}
   </Story>
 </Canvas>

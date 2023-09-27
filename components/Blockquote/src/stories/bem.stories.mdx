@@ -24,14 +24,16 @@ import "../index.scss";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Default">
-    <figure class="denhaag-blockquote">
-      <blockquote class="denhaag-blockquote__content" cite="https://www.denhaag.nl/nl.htm">
-        <p>
-          Molestiae earum esse ut hic ea cupiditate tenetur quis. Voluptates atque incidunt aliquam enim. Illum sapiente
-          dolorem recusandae sit distinctio.
-        </p>
-      </blockquote>
-    </figure>
+    {() => (
+      <figure class="denhaag-blockquote">
+        <blockquote class="denhaag-blockquote__content" cite="https://www.denhaag.nl/nl.htm">
+          <p>
+            Molestiae earum esse ut hic ea cupiditate tenetur quis. Voluptates atque incidunt aliquam enim. Illum
+            sapiente dolorem recusandae sit distinctio.
+          </p>
+        </blockquote>
+      </figure>
+    )}
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -41,15 +43,17 @@ import "../index.scss";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="With attribution">
-    <figure class="denhaag-blockquote">
-      <blockquote class="denhaag-blockquote__content" cite="https://www.denhaag.nl/nl.htm">
-        <p>
-          Molestiae earum esse ut hic ea cupiditate tenetur quis. Voluptates atque incidunt aliquam enim. Illum sapiente
-          dolorem recusandae sit distinctio.
-        </p>
-      </blockquote>
-      <figcaption class="denhaag-blockquote__attribution">First Name Surname</figcaption>
-    </figure>
+    {() => (
+      <figure class="denhaag-blockquote">
+        <blockquote class="denhaag-blockquote__content" cite="https://www.denhaag.nl/nl.htm">
+          <p>
+            Molestiae earum esse ut hic ea cupiditate tenetur quis. Voluptates atque incidunt aliquam enim. Illum
+            sapiente dolorem recusandae sit distinctio.
+          </p>
+        </blockquote>
+        <figcaption class="denhaag-blockquote__attribution">First Name Surname</figcaption>
+      </figure>
+    )}
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>

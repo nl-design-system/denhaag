@@ -22,8 +22,6 @@ import readme from "../../README.md";
 
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
-  <Story name="Default">
-    <p class="denhaag-posttypelabel">Nieuwsbericht</p>
-  </Story>
+  <Story name="Default">{() => <p class="denhaag-posttypelabel">Nieuwsbericht</p>}</Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>

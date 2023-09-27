@@ -24,9 +24,11 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Link">
-    <a href="#example-link" class="denhaag-link">
-      <span class="denhaag-link__label">Link</span>
-    </a>
+    {() => (
+      <a href="#example-link" class="denhaag-link">
+        <span class="denhaag-link__label">Link</span>
+      </a>
+    )}
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -36,9 +38,11 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Disabled Link">
-    <a href="#example-link" class="denhaag-link denhaag-link--disabled" tabindex="-1">
-      <span class="denhaag-link__label">Disabled link</span>
-    </a>
+    {() => (
+      <a href="#example-link" class="denhaag-link denhaag-link--disabled" tabindex="-1">
+        <span class="denhaag-link__label">Disabled link</span>
+      </a>
+    )}
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -48,9 +52,11 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Hovered Link">
-    <a href="#example-link" class="denhaag-link denhaag-link--hover">
-      <span class="denhaag-link__label">Hovered link</span>
-    </a>
+    {() => (
+      <a href="#example-link" class="denhaag-link denhaag-link--hover">
+        <span class="denhaag-link__label">Hovered link</span>
+      </a>
+    )}
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -60,9 +66,11 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Focused Link">
-    <a href="#example-link" class="denhaag-link denhaag-link--focus">
-      <span class="denhaag-link__label">Focused link</span>
-    </a>
+    {() => (
+      <a href="#example-link" class="denhaag-link denhaag-link--focus">
+        <span class="denhaag-link__label">Focused link</span>
+      </a>
+    )}
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -72,27 +80,29 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Link with icon before">
-    <a href="#example-link" tabindex="0" class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start">
-      <span class="denhaag-link__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-          shape-rendering="auto"
-        >
-          <path
-            d="M11.7071 18.7071C11.3166 19.0976 10.6834 19.0976 10.2929 18.7071L4.29289 12.7071C4.10536 12.5196 4 12.2652 4 12C4 11.7348 4.10536 11.4804 4.29289 11.2929L10.2929 5.29289C10.6834 4.90237 11.3166 4.90237 11.7071 5.29289C12.0976 5.68342 12.0976 6.31658 11.7071 6.70711L7.41421 11L19 11C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13L7.41421 13L11.7071 17.2929C12.0976 17.6834 12.0976 18.3166 11.7071 18.7071Z"
-            fill="currentColor"
-          ></path>
-        </svg>
-      </span>
-      <span class="denhaag-link__label">Link with icon before</span>
-    </a>
+    {() => (
+      <a href="#example-link" tabindex="0" class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start">
+        <span class="denhaag-link__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+            shape-rendering="auto"
+          >
+            <path
+              d="M11.7071 18.7071C11.3166 19.0976 10.6834 19.0976 10.2929 18.7071L4.29289 12.7071C4.10536 12.5196 4 12.2652 4 12C4 11.7348 4.10536 11.4804 4.29289 11.2929L10.2929 5.29289C10.6834 4.90237 11.3166 4.90237 11.7071 5.29289C12.0976 5.68342 12.0976 6.31658 11.7071 6.70711L7.41421 11L19 11C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13L7.41421 13L11.7071 17.2929C12.0976 17.6834 12.0976 18.3166 11.7071 18.7071Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </span>
+        <span class="denhaag-link__label">Link with icon before</span>
+      </a>
+    )}
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -102,31 +112,33 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Link with icon before hovered">
-    <a
-      href="#example-link"
-      tabindex="0"
-      class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start denhaag-link--hover"
-    >
-      <span class="denhaag-link__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-          shape-rendering="auto"
-        >
-          <path
-            d="M11.7071 18.7071C11.3166 19.0976 10.6834 19.0976 10.2929 18.7071L4.29289 12.7071C4.10536 12.5196 4 12.2652 4 12C4 11.7348 4.10536 11.4804 4.29289 11.2929L10.2929 5.29289C10.6834 4.90237 11.3166 4.90237 11.7071 5.29289C12.0976 5.68342 12.0976 6.31658 11.7071 6.70711L7.41421 11L19 11C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13L7.41421 13L11.7071 17.2929C12.0976 17.6834 12.0976 18.3166 11.7071 18.7071Z"
-            fill="currentColor"
-          ></path>
-        </svg>
-      </span>
-      <span class="denhaag-link__label">Link with icon before hovered</span>
-    </a>
+    {() => (
+      <a
+        href="#example-link"
+        tabindex="0"
+        class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start denhaag-link--hover"
+      >
+        <span class="denhaag-link__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+            shape-rendering="auto"
+          >
+            <path
+              d="M11.7071 18.7071C11.3166 19.0976 10.6834 19.0976 10.2929 18.7071L4.29289 12.7071C4.10536 12.5196 4 12.2652 4 12C4 11.7348 4.10536 11.4804 4.29289 11.2929L10.2929 5.29289C10.6834 4.90237 11.3166 4.90237 11.7071 5.29289C12.0976 5.68342 12.0976 6.31658 11.7071 6.70711L7.41421 11L19 11C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13L7.41421 13L11.7071 17.2929C12.0976 17.6834 12.0976 18.3166 11.7071 18.7071Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </span>
+        <span class="denhaag-link__label">Link with icon before hovered</span>
+      </a>
+    )}
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -136,31 +148,33 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Link with icon before focussed">
-    <a
-      href="#example-link"
-      tabindex="0"
-      class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start denhaag-link--focus"
-    >
-      <span class="denhaag-link__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-          shape-rendering="auto"
-        >
-          <path
-            d="M11.7071 18.7071C11.3166 19.0976 10.6834 19.0976 10.2929 18.7071L4.29289 12.7071C4.10536 12.5196 4 12.2652 4 12C4 11.7348 4.10536 11.4804 4.29289 11.2929L10.2929 5.29289C10.6834 4.90237 11.3166 4.90237 11.7071 5.29289C12.0976 5.68342 12.0976 6.31658 11.7071 6.70711L7.41421 11L19 11C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13L7.41421 13L11.7071 17.2929C12.0976 17.6834 12.0976 18.3166 11.7071 18.7071Z"
-            fill="currentColor"
-          ></path>
-        </svg>
-      </span>
-      <span class="denhaag-link__label">Link with icon before hovered</span>
-    </a>
+    {() => (
+      <a
+        href="#example-link"
+        tabindex="0"
+        class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start denhaag-link--focus"
+      >
+        <span class="denhaag-link__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+            shape-rendering="auto"
+          >
+            <path
+              d="M11.7071 18.7071C11.3166 19.0976 10.6834 19.0976 10.2929 18.7071L4.29289 12.7071C4.10536 12.5196 4 12.2652 4 12C4 11.7348 4.10536 11.4804 4.29289 11.2929L10.2929 5.29289C10.6834 4.90237 11.3166 4.90237 11.7071 5.29289C12.0976 5.68342 12.0976 6.31658 11.7071 6.70711L7.41421 11L19 11C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13L7.41421 13L11.7071 17.2929C12.0976 17.6834 12.0976 18.3166 11.7071 18.7071Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </span>
+        <span class="denhaag-link__label">Link with icon before hovered</span>
+      </a>
+    )}
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -170,27 +184,29 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Link with icon after">
-    <a href="#example-link" tabindex="0" class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-end">
-      <span class="denhaag-link__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-          shape-rendering="auto"
-        >
-          <path
-            d="M12.2929 5.29289C12.6834 4.90237 13.3166 4.90237 13.7071 5.29289L19.7071 11.2929C19.8946 11.4804 20 11.7348 20 12C20 12.2652 19.8946 12.5196 19.7071 12.7071L13.7071 18.7071C13.3166 19.0976 12.6834 19.0976 12.2929 18.7071C11.9024 18.3166 11.9024 17.6834 12.2929 17.2929L16.5858 13L5 13C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11L16.5858 11L12.2929 6.70711C11.9024 6.31658 11.9024 5.68342 12.2929 5.29289Z"
-            fill="currentColor"
-          />
-        </svg>
-      </span>
-      <span class="denhaag-link__label">Link with icon after</span>
-    </a>
+    {() => (
+      <a href="#example-link" tabindex="0" class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-end">
+        <span class="denhaag-link__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+            shape-rendering="auto"
+          >
+            <path
+              d="M12.2929 5.29289C12.6834 4.90237 13.3166 4.90237 13.7071 5.29289L19.7071 11.2929C19.8946 11.4804 20 11.7348 20 12C20 12.2652 19.8946 12.5196 19.7071 12.7071L13.7071 18.7071C13.3166 19.0976 12.6834 19.0976 12.2929 18.7071C11.9024 18.3166 11.9024 17.6834 12.2929 17.2929L16.5858 13L5 13C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11L16.5858 11L12.2929 6.70711C11.9024 6.31658 11.9024 5.68342 12.2929 5.29289Z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
+        <span class="denhaag-link__label">Link with icon after</span>
+      </a>
+    )}
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -200,31 +216,33 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Link with icon after hovered">
-    <a
-      href="#example-link"
-      tabindex="0"
-      class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-end denhaag-link--hover"
-    >
-      <span class="denhaag-link__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-          shape-rendering="auto"
-        >
-          <path
-            d="M12.2929 5.29289C12.6834 4.90237 13.3166 4.90237 13.7071 5.29289L19.7071 11.2929C19.8946 11.4804 20 11.7348 20 12C20 12.2652 19.8946 12.5196 19.7071 12.7071L13.7071 18.7071C13.3166 19.0976 12.6834 19.0976 12.2929 18.7071C11.9024 18.3166 11.9024 17.6834 12.2929 17.2929L16.5858 13L5 13C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11L16.5858 11L12.2929 6.70711C11.9024 6.31658 11.9024 5.68342 12.2929 5.29289Z"
-            fill="currentColor"
-          />
-        </svg>
-      </span>
-      <span class="denhaag-link__label">Link with icon after</span>
-    </a>
+    {() => (
+      <a
+        href="#example-link"
+        tabindex="0"
+        class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-end denhaag-link--hover"
+      >
+        <span class="denhaag-link__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+            shape-rendering="auto"
+          >
+            <path
+              d="M12.2929 5.29289C12.6834 4.90237 13.3166 4.90237 13.7071 5.29289L19.7071 11.2929C19.8946 11.4804 20 11.7348 20 12C20 12.2652 19.8946 12.5196 19.7071 12.7071L13.7071 18.7071C13.3166 19.0976 12.6834 19.0976 12.2929 18.7071C11.9024 18.3166 11.9024 17.6834 12.2929 17.2929L16.5858 13L5 13C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11L16.5858 11L12.2929 6.70711C11.9024 6.31658 11.9024 5.68342 12.2929 5.29289Z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
+        <span class="denhaag-link__label">Link with icon after</span>
+      </a>
+    )}
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -234,31 +252,33 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Link with icon after focussed">
-    <a
-      href="#example-link"
-      tabindex="0"
-      class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-end denhaag-link--focus"
-    >
-      <span class="denhaag-link__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-          shape-rendering="auto"
-        >
-          <path
-            d="M12.2929 5.29289C12.6834 4.90237 13.3166 4.90237 13.7071 5.29289L19.7071 11.2929C19.8946 11.4804 20 11.7348 20 12C20 12.2652 19.8946 12.5196 19.7071 12.7071L13.7071 18.7071C13.3166 19.0976 12.6834 19.0976 12.2929 18.7071C11.9024 18.3166 11.9024 17.6834 12.2929 17.2929L16.5858 13L5 13C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11L16.5858 11L12.2929 6.70711C11.9024 6.31658 11.9024 5.68342 12.2929 5.29289Z"
-            fill="currentColor"
-          />
-        </svg>
-      </span>
-      <span class="denhaag-link__label">Link with icon after</span>
-    </a>
+    {() => (
+      <a
+        href="#example-link"
+        tabindex="0"
+        class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-end denhaag-link--focus"
+      >
+        <span class="denhaag-link__icon">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="denhaag-icon"
+            focusable="false"
+            aria-hidden="true"
+            shape-rendering="auto"
+          >
+            <path
+              d="M12.2929 5.29289C12.6834 4.90237 13.3166 4.90237 13.7071 5.29289L19.7071 11.2929C19.8946 11.4804 20 11.7348 20 12C20 12.2652 19.8946 12.5196 19.7071 12.7071L13.7071 18.7071C13.3166 19.0976 12.6834 19.0976 12.2929 18.7071C11.9024 18.3166 11.9024 17.6834 12.2929 17.2929L16.5858 13L5 13C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11L16.5858 11L12.2929 6.70711C11.9024 6.31658 11.9024 5.68342 12.2929 5.29289Z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
+        <span class="denhaag-link__label">Link with icon after</span>
+      </a>
+    )}
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -268,13 +288,15 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Link in Paragraph">
-    <p class="utrecht-paragraph">
-      It is possible to put{" "}
-      <a href="#example-link" class="denhaag-link" tabindex="0">
-        <span class="denhaag-link__label">a link</span>
-      </a>{" "}
-      in a Paragraph element.
-    </p>
+    {() => (
+      <p class="utrecht-paragraph">
+        It is possible to put{" "}
+        <a href="#example-link" class="denhaag-link" tabindex="0">
+          <span class="denhaag-link__label">a link</span>
+        </a>{" "}
+        in a Paragraph element.
+      </p>
+    )}
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -284,42 +306,7 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="External link">
-    <a
-      href="#example-link"
-      class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-end denhaag-link--external"
-    >
-      <span class="denhaag-link__icon">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="denhaag-icon"
-          focusable="false"
-          aria-hidden="true"
-          shape-rendering="auto"
-        >
-          <path
-            d="M14 5C13.4477 5 13 4.55228 13 4C13 3.44772 13.4477 3 14 3H20C20.2652 3 20.5196 3.10536 20.7071 3.29289C20.8946 3.48043 21 3.73478 21 4L21 10C21 10.5523 20.5523 11 20 11C19.4477 11 19 10.5523 19 10L19 6.41422L9.70711 15.7071C9.31658 16.0976 8.68342 16.0976 8.29289 15.7071C7.90237 15.3166 7.90237 14.6834 8.29289 14.2929L17.5858 5H14ZM3 7C3 5.89543 3.89543 5 5 5H10C10.5523 5 11 5.44772 11 6C11 6.55228 10.5523 7 10 7H5V19H17V14C17 13.4477 17.4477 13 18 13C18.5523 13 19 13.4477 19 14V19C19 20.1046 18.1046 21 17 21H5C3.89543 21 3 20.1046 3 19V7Z"
-            fill="currentColor"
-          />
-        </svg>
-      </span>
-      <span class="denhaag-link__label">External link</span>
-      <span class="denhaag-link__sr-only">(External link)</span>
-    </a>
-  </Story>
-  {/* eslint-enable react/no-unknown-property */}
-</Canvas>
-
-### External link in paragraph
-
-<Canvas>
-  {/* eslint-disable react/no-unknown-property */}
-  <Story name="External link in paragraph">
-    <p class="utrecht-paragraph">
-      Iste voluptatem qui temporibus culpa.&nbsp;
+    {() => (
       <a
         href="#example-link"
         class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-end denhaag-link--external"
@@ -344,8 +331,47 @@ import readme from "../../README.md";
         </span>
         <span class="denhaag-link__label">External link</span>
         <span class="denhaag-link__sr-only">(External link)</span>
-      </a> Repellat eum hic ullam est ut vitae praesentium. Exercitationem ratione quis placeat quas facilis deserunt.
-    </p>
+      </a>
+    )}
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### External link in paragraph
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="External link in paragraph">
+    {() => (
+      <p class="utrecht-paragraph">
+        Iste voluptatem qui temporibus culpa.&nbsp;
+        <a
+          href="#example-link"
+          class="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-end denhaag-link--external"
+        >
+          <span class="denhaag-link__icon">
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="denhaag-icon"
+              focusable="false"
+              aria-hidden="true"
+              shape-rendering="auto"
+            >
+              <path
+                d="M14 5C13.4477 5 13 4.55228 13 4C13 3.44772 13.4477 3 14 3H20C20.2652 3 20.5196 3.10536 20.7071 3.29289C20.8946 3.48043 21 3.73478 21 4L21 10C21 10.5523 20.5523 11 20 11C19.4477 11 19 10.5523 19 10L19 6.41422L9.70711 15.7071C9.31658 16.0976 8.68342 16.0976 8.29289 15.7071C7.90237 15.3166 7.90237 14.6834 8.29289 14.2929L17.5858 5H14ZM3 7C3 5.89543 3.89543 5 5 5H10C10.5523 5 11 5.44772 11 6C11 6.55228 10.5523 7 10 7H5V19H17V14C17 13.4477 17.4477 13 18 13C18.5523 13 19 13.4477 19 14V19C19 20.1046 18.1046 21 17 21H5C3.89543 21 3 20.1046 3 19V7Z"
+                fill="currentColor"
+              />
+            </svg>
+          </span>
+          <span class="denhaag-link__label">External link</span>
+          <span class="denhaag-link__sr-only">(External link)</span>
+        </a> Repellat eum hic ullam est ut vitae praesentium. Exercitationem ratione quis placeat quas facilis deserunt.
+      </p>
+    )}
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -355,34 +381,36 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="External link with icon small in paragraph">
-    <p class="utrecht-paragraph">
-      Iste voluptatem qui temporibus culpa.&nbsp;
-      <a
-        href="#example-link"
-        class="denhaag-link denhaag-link--with-icon denhaag-link--with-small-icon denhaag-link--with-icon-end denhaag-link--external"
-      >
-        <span class="denhaag-link__icon">
-          <svg
-            width="1em"
-            height="1em"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class="denhaag-icon"
-            focusable="false"
-            aria-hidden="true"
-            shape-rendering="auto"
-          >
-            <path
-              d="M14 5C13.4477 5 13 4.55228 13 4C13 3.44772 13.4477 3 14 3H20C20.2652 3 20.5196 3.10536 20.7071 3.29289C20.8946 3.48043 21 3.73478 21 4L21 10C21 10.5523 20.5523 11 20 11C19.4477 11 19 10.5523 19 10L19 6.41422L9.70711 15.7071C9.31658 16.0976 8.68342 16.0976 8.29289 15.7071C7.90237 15.3166 7.90237 14.6834 8.29289 14.2929L17.5858 5H14ZM3 7C3 5.89543 3.89543 5 5 5H10C10.5523 5 11 5.44772 11 6C11 6.55228 10.5523 7 10 7H5V19H17V14C17 13.4477 17.4477 13 18 13C18.5523 13 19 13.4477 19 14V19C19 20.1046 18.1046 21 17 21H5C3.89543 21 3 20.1046 3 19V7Z"
-              fill="currentColor"
-            />
-          </svg>
-        </span>
-        <span class="denhaag-link__label">External link</span>
-        <span class="denhaag-link__sr-only">(External link)</span>
-      </a> Repellat eum hic ullam est ut vitae praesentium. Exercitationem ratione quis placeat quas facilis deserunt.
-    </p>
+    {() => (
+      <p class="utrecht-paragraph">
+        Iste voluptatem qui temporibus culpa.&nbsp;
+        <a
+          href="#example-link"
+          class="denhaag-link denhaag-link--with-icon denhaag-link--with-small-icon denhaag-link--with-icon-end denhaag-link--external"
+        >
+          <span class="denhaag-link__icon">
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="denhaag-icon"
+              focusable="false"
+              aria-hidden="true"
+              shape-rendering="auto"
+            >
+              <path
+                d="M14 5C13.4477 5 13 4.55228 13 4C13 3.44772 13.4477 3 14 3H20C20.2652 3 20.5196 3.10536 20.7071 3.29289C20.8946 3.48043 21 3.73478 21 4L21 10C21 10.5523 20.5523 11 20 11C19.4477 11 19 10.5523 19 10L19 6.41422L9.70711 15.7071C9.31658 16.0976 8.68342 16.0976 8.29289 15.7071C7.90237 15.3166 7.90237 14.6834 8.29289 14.2929L17.5858 5H14ZM3 7C3 5.89543 3.89543 5 5 5H10C10.5523 5 11 5.44772 11 6C11 6.55228 10.5523 7 10 7H5V19H17V14C17 13.4477 17.4477 13 18 13C18.5523 13 19 13.4477 19 14V19C19 20.1046 18.1046 21 17 21H5C3.89543 21 3 20.1046 3 19V7Z"
+                fill="currentColor"
+              />
+            </svg>
+          </span>
+          <span class="denhaag-link__label">External link</span>
+          <span class="denhaag-link__sr-only">(External link)</span>
+        </a> Repellat eum hic ullam est ut vitae praesentium. Exercitationem ratione quis placeat quas facilis deserunt.
+      </p>
+    )}
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
