@@ -264,9 +264,6 @@ importers:
       lodash:
         specifier: 4.17.21
         version: 4.17.21
-      mdx-embed:
-        specifier: 0.0.23
-        version: 0.0.23(@mdx-js/mdx@1.6.22)(@mdx-js/react@1.6.22)(react-dom@17.0.2)(react@17.0.2)
       npm-check-updates:
         specifier: 16.14.4
         version: 16.14.4
@@ -18767,20 +18764,6 @@ packages:
 
   /mdurl@1.0.1:
     resolution: {integrity: sha512-/sKlQJCBYVY9Ers9hqzKou4H6V5UWc/M59TH2dvkt+84itfnq7uFOMLpOiOS4ujvHP4etln18fmIxA5R5fll0g==}
-    dev: true
-
-  /mdx-embed@0.0.23(@mdx-js/mdx@1.6.22)(@mdx-js/react@1.6.22)(react-dom@17.0.2)(react@17.0.2):
-    resolution: {integrity: sha512-Gp50YydnRiOucjWF4UzG8p4q5dm4BxYvWpHpQFFia5vE/S8PwTdLbWo/VqPhP2PdM8RlwqNpprZqXF0zWW/ZCA==}
-    peerDependencies:
-      '@mdx-js/mdx': ^1.6.16
-      '@mdx-js/react': ^1.6.16
-      react: ^16.9.0
-      react-dom: ^16.9.0
-    dependencies:
-      '@mdx-js/mdx': 1.6.22
-      '@mdx-js/react': 1.6.22(react@17.0.2)
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
     dev: true
 
   /media-typer@0.3.0:
