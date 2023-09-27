@@ -10,17 +10,18 @@ import { ArchiveIcon, GridIcon, UserIcon, BookIcon } from '../../../components/I
 import { Status, StatusProps } from '../../../components/ProcessSteps/src';
 import { File } from '../../../components/File/src';
 import {
+  copyright,
   headerProps,
   footerLegalData,
   footerSocialData,
   newsletterData,
   contactData,
   linkData,
-} from '../templates/util';
-import './CaseDetail-page.scss';
+} from './util';
+import './template-story.scss';
 
 const meta = {
-  title: 'Templates',
+  title: 'Templates/ZaakDetailPagina',
   parameters: {
     chromatic: { viewports: [1768, 1280, 768, 360] },
   },
@@ -29,6 +30,17 @@ const meta = {
 export default meta;
 
 type Story = StoryObj<typeof meta>;
+
+const caseDetailPageHeaderProps = {
+  ...headerProps,
+  breadcrumbs: {
+    navigationPath: [
+      { label: 'Home', href: 'https://denhaag.nl/' },
+      { label: 'MijnDenHaag', href: '#' },
+      { label: 'Mijn lopende zaken', href: '#' },
+    ],
+  },
+};
 
 const progressStepsData: StatusProps = {
   collapsible: true,
@@ -61,13 +73,11 @@ const progressStepsData: StatusProps = {
   ],
 };
 
-const copyright = '© 2022 Gemeente Den Haag';
-
-export const Login: Story = {
+export const ZaakDetailPagina: Story = {
   render: () => (
     <Page>
       <PageHeader>
-        <HeaderLogic {...headerProps} />
+        <HeaderLogic {...caseDetailPageHeaderProps} />
       </PageHeader>
       <ResponsiveContent className="denhaag-page-content denhaag-responsive-content--sidebar">
         <Sidenav>
