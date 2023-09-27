@@ -69,20 +69,6 @@ const progressStepsData: StatusProps = {
 
 const copyright = '© 2022 Gemeente Den Haag';
 
-// type LinkData = {
-//   name: string;
-//   link: string;
-//   size: number;
-//   lastUpdated: Date;
-// };
-
-// const linkData: LinkData = {
-//   name: 'Example',
-//   link: 'test/example.png',
-//   size: 2000,
-//   lastUpdated: new Date('Thu Aug 31 2023 11:22:11 GMT+0200'),
-// };
-
 export const Login: Story = {
   render: () => (
     <Page>
