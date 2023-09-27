@@ -93,7 +93,14 @@ export const headerProps: HeaderLogicProps = {
   },
 };
 
-export const linkData = {
+type LinkData = {
+  name: string;
+  link: string;
+  size: number;
+  lastUpdated: Date;
+};
+
+export const linkData: LinkData = {
   name: 'Example',
   link: 'test/example.png',
   size: 2000,
