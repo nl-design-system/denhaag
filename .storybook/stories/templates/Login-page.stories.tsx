@@ -3,7 +3,7 @@ import { Heading2 } from '../../../components/Typography/src';
 import Alert from '../../../components/Alert/src';
 import React from 'react';
 import { Page, PageHeader, PageFooter } from '../../../components/Page/src';
-import { HeaderLogic } from '../../../components/Header/src';
+import { HeaderLogic, HeaderLogicProps } from '../../../components/Header/src';
 import Footer from '../../../components/Footer/src';
 import ResponsiveContent from '../../../components/ResponsiveContent/src';
 import { AuthenticationCardGroup } from '../../../components/CardGroup/src/story-template';
@@ -19,13 +19,20 @@ import {
 import './story-login.css';
 
 const meta = {
-  title: 'Templates/Login page',
+  title: 'Templates',
   parameters: {
     chromatic: { viewports: [1768, 1280, 768, 360] },
   },
 } as Meta<typeof Page>;
 
 export default meta;
+
+const loginHeaderProps: HeaderLogicProps = {
+  ...headerProps,
+  breadcrumbs: {
+    navigationPath: [{ label: 'Home', href: 'https://denhaag.nl/' }, { label: 'MijnDenHaag' }],
+  },
+};
 
 // Login page
 
@@ -35,7 +42,7 @@ export const Login: Story = {
   render: (args) => (
     <Page {...args}>
       <PageHeader>
-        <HeaderLogic {...headerProps} />
+        <HeaderLogic {...loginHeaderProps} />
       </PageHeader>
       <ResponsiveContent className="denhaag-page-content">
         <Heading2>Inloggen</Heading2>
