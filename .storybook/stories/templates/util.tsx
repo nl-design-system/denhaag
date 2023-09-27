@@ -4,11 +4,7 @@ import React from 'react';
 
 export const headerProps: HeaderLogicProps = {
   breadcrumbs: {
-    navigationPath: [
-      { label: 'Home', href: 'https://denhaag.nl/' },
-      { label: 'MijnDenHaag', href: 'https://denhaag.nl/' },
-      { label: 'Mijn lopende zaken', href: 'https://denhaag.nl/' },
-    ],
+    navigationPath: [{ label: 'Home', href: 'https://denhaag.nl/' }],
   },
   userprofileMenu: {
     label: 'Welkom Anne Klap',
