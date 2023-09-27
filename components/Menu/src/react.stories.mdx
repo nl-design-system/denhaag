@@ -52,16 +52,12 @@ import readme from "../README.md";
         source: {
           code: `
           import { MenuButtonExpandable } from "@gemeente-denhaag/menubutton";
-          const ReactMenuButton = <MenuButtonExpandable variant='expandable' onclick={() => alert('Hello from MenuButton 👋')}>Label</MenuButtonExpandable>;`,
+          const ReactMenuButton = <MenuButtonExpandable variant='expandable' onclick={() => console.log('Hello from MenuButton 👋')}>Label</MenuButtonExpandable>;`,
         },
       },
     }}
   >
-    {() => (
-      <MenuButtonExpandable onclick={() => alert("Hello from MenuButton 👋") /* eslint-disable-line no-alert */}>
-        Label
-      </MenuButtonExpandable>
-    )}
+    {() => <MenuButtonExpandable onclick={() => console.log("Hello from MenuButton 👋")}>Label</MenuButtonExpandable>}
   </Story>
 </Canvas>
 
@@ -101,13 +97,11 @@ import readme from "../README.md";
 
 <Canvas>
   <Story name="Default HTML">
-    {/* eslint-disable react/no-unknown-property */}
     {() => (
       <a href="https://github.com/nl-design-system/denhaag" class="denhaag-menu-button">
         Label
       </a>
     )}
-    {/* eslint-enable react/no-unknown-property */}
   </Story>
 </Canvas>
 
@@ -115,7 +109,6 @@ import readme from "../README.md";
 
 <Canvas>
   <Story name="Expandable HTML">
-    {/* eslint-disable react/no-unknown-property */}
     {() => (
       <button id="button-id" onclick="alert('Hello from MenuButton 👋')" class="denhaag-menu-button">
         Label
@@ -140,7 +133,6 @@ import readme from "../README.md";
         </span>
       </button>
     )}
-    {/* eslint-enable react/no-unknown-property */}
   </Story>
 </Canvas>
 
@@ -148,7 +140,6 @@ import readme from "../README.md";
 
 <Canvas>
   <Story name="Menu HTML">
-    {/* eslint-disable react/no-unknown-property */}
     {() => (
       <div class="denhaag-menu" id="menu-id">
         <a href="https://github.com/nl-design-system/denhaag" class="denhaag-menu-button">
@@ -178,6 +169,5 @@ import readme from "../README.md";
         </button>
       </div>
     )}
-    {/* eslint-enable react/no-unknown-property */}
   </Story>
 </Canvas>
