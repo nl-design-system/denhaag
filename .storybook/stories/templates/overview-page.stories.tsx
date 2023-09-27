@@ -12,7 +12,7 @@ import { headerProps, footerLegalData, footerSocialData, newsletterData, contact
 import './story-login.css';
 
 const meta = {
-  title: 'Templates/Overview page',
+  title: 'Templates',
   parameters: {
     chromatic: { viewports: [1768, 1280, 768, 360] },
   },
@@ -28,7 +28,7 @@ const headerProps: HeaderLogicProps = {
 type Story = StoryObj<typeof meta>;
 
 const copyright = '© 2022 Gemeente Den Haag';
-export const LoginPage: Story = {
+export const OverviewPage: Story = {
   render: () => (
     <Page>
       <PageHeader>
