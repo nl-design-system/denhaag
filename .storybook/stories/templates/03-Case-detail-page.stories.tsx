@@ -13,18 +13,19 @@ import { Action } from '../../../components/Action/src';
 import { ButtonLink } from '@utrecht/component-library-react';
 
 import {
+  copyright,
   headerProps,
   footerLegalData,
   footerSocialData,
   newsletterData,
   contactData,
   linkData,
-  copyright,
-} from '../templates/util';
-import './CaseDetail-page.scss';
+} from './util';
+
+import './template-story.scss';
 
 const meta = {
-  title: 'Templates',
+  title: 'Templates/ZaakDetailPagina',
   parameters: {
     chromatic: { viewports: [1768, 1280, 768, 360] },
   },
@@ -33,6 +34,17 @@ const meta = {
 export default meta;
 
 type Story = StoryObj<typeof meta>;
+
+const caseDetailPageHeaderProps = {
+  ...headerProps,
+  breadcrumbs: {
+    navigationPath: [
+      { label: 'Home', href: 'https://denhaag.nl/' },
+      { label: 'MijnDenHaag', href: '#' },
+      { label: 'Mijn lopende zaken', href: '#' },
+    ],
+  },
+};
 
 const progressStepsData: StatusProps = {
   collapsible: true,
@@ -68,11 +80,11 @@ const progressStepsData: StatusProps = {
 const taskDateTime = '2023-09-30T19:47:36.593Z';
 const taskNow = '2023-09-28T19:47:36.593Z';
 
-export const Login: Story = {
+export const ZaakDetailPagina: Story = {
   render: () => (
     <Page>
       <PageHeader>
-        <HeaderLogic {...headerProps} />
+        <HeaderLogic {...caseDetailPageHeaderProps} />
       </PageHeader>
       <ResponsiveContent className="denhaag-page-content denhaag-responsive-content--sidebar">
         <Sidenav>
