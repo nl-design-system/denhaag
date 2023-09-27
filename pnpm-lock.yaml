@@ -1,9 +1,5 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 importers:
 
   .:
@@ -636,7 +632,7 @@ importers:
         version: 1.0.0-alpha.380(react-dom@18.2.0)(react@18.2.0)
     devDependencies:
       '@gemeente-denhaag/baseprops':
-        specifier: 0.2.3-alpha.340
+        specifier: 0.2.3-alpha.341
         version: link:../BaseProps
 
   components/FormControl:
@@ -26555,3 +26551,7 @@ packages:
   /zwitch@1.0.5:
     resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==}
     dev: true
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
