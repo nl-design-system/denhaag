@@ -7,12 +7,12 @@ import Footer from '../../../components/Footer/src';
 import ResponsiveContent from '../../../components/ResponsiveContent/src';
 import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '../../../components/Sidenav/src';
 import { ArchiveIcon, FavoriteIcon, GridIcon, UserIcon } from '../../../components/Icons/src';
-import { headerProps, footerLegalData, footerSocialData, newsletterData, contactData } from '../templates/util';
+import { copyright, headerProps, footerLegalData, footerSocialData, newsletterData, contactData } from './util';
 
-import './story-login.css';
+import './template-story.scss';
 
 const meta = {
-  title: 'Templates',
+  title: 'Templates/OverviewPage',
   parameters: {
     chromatic: { viewports: [1768, 1280, 768, 360] },
   },
@@ -21,13 +21,13 @@ const meta = {
 export default meta;
 
 const overviewHeaderProps: HeaderLogicProps = {
+  ...headerProps,
   breadcrumbs: {
     navigationPath: [{ label: 'Home', href: 'https://denhaag.nl/' }, { label: 'MijnDenHaag' }],
   },
 };
 type Story = StoryObj<typeof meta>;
 
-const copyright = '© 2022 Gemeente Den Haag';
 export const OverviewPage: Story = {
   render: () => (
     <Page>
