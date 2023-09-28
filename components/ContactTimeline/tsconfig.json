@@ -9,12 +9,6 @@
   "exclude": ["dist", "src/**/*.stories.tsx"],
   "references": [
     {
-      "path": "../Button"
-    },
-    {
-      "path": "../Icons"
-    },
-    {
       "path": "../ProcessSteps"
     },
     {

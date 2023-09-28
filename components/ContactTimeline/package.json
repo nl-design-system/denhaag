@@ -1,15 +1,10 @@
 {
   "name": "@gemeente-denhaag/contact-timeline",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.1-alpha.1",
   "description": "A Contact Timeline component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nl-design-system/denhaag.git",
-    "directory": "components/ContactTimeline"
-  },
-  "license": "EUPL-1.2",
   "author": "Municipality of The Hague",
+  "license": "EUPL-1.2",
   "exports": {
     ".": {
       "types": "./dist/cjs/index.d.ts",
@@ -24,21 +19,20 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nl-design-system/denhaag.git",
+    "directory": "components/ContactTimeline"
+  },
   "scripts": {
-    "build": "rollup -c ../../rollup.config.js",
+    "build": "rollup -c ../../rollup.config.mjs",
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/icons": "workspace:*",
     "@gemeente-denhaag/process-steps": "workspace:*",
     "@gemeente-denhaag/step-marker": "workspace:*",
     "@gemeente-denhaag/typography": "workspace:*",
+    "clsx": "2.0.0",
     "date-fns": "2.30.0"
-  },
-  "peerDependencies": {
-    "react": "^17.0.0 || ^18.0.0"
-  },
-  "devDependencies": {
-    "@gemeente-denhaag/button": "workspace:*"
   }
 }
