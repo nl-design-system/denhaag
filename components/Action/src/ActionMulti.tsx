@@ -3,11 +3,19 @@ import clsx from 'clsx';
 
 import { ActionMultiProps, ActionContent, ActionDetails } from './index';
 
-export const ActionMulti = ({ children, actions, deadline, relativeDate, className, ...rest }: ActionMultiProps) => {
+export const ActionMulti = ({
+  children,
+  actions,
+  dateTime,
+  now,
+  relativeDate,
+  className,
+  ...rest
+}: ActionMultiProps) => {
   return (
     <div className={clsx('denhaag-action', className)} {...rest}>
       <ActionContent>{children}</ActionContent>
-      <ActionDetails deadline={deadline} relativeDate={relativeDate}>
+      <ActionDetails dateTime={dateTime} now={now} relativeDate={relativeDate}>
         {actions}
       </ActionDetails>
     </div>

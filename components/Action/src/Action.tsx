@@ -5,14 +5,16 @@ import { ActionSingle, ActionMulti } from './index';
 export interface ActionSingleProps extends React.HTMLAttributes<HTMLAnchorElement> {
   children: React.ReactNode;
   link: string;
-  deadline?: Date;
+  dateTime?: string;
+  now?: string;
   relativeDate?: boolean;
 }
 
 export interface ActionMultiProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
   actions: React.ReactNode;
-  deadline?: Date;
+  dateTime?: string;
+  now?: string;
   relativeDate?: boolean;
 }
 

@@ -158,7 +158,8 @@ export const progressStepsData = {
   ],
 };
 
-export const taskDeadline = new Date().setDate(new Date().getDate() + 3);
+export const taskDateTime = "2023-09-30T19:47:36.593Z";
+export const taskNow = "2023-09-28T19:47:36.593Z";
 
 export const linkData = {
   name: "Example",
@@ -250,7 +251,8 @@ export const copyright = "© 2022 Gemeente Den Haag";
             <Heading2>Aanvraag subsidie geluidsisolatie</Heading2>
             <Action
               className="denhaag-page-content__task"
-              deadline={taskDeadline}
+              dateTime={taskDateTime}
+              now={taskNow}
               actions={<ButtonLink href="#example">Actie</ButtonLink>}
               relativeDate
             >
@@ -262,7 +264,8 @@ export const copyright = "© 2022 Gemeente Den Haag";
             <File {...linkData} />
             <Action
               className="denhaag-page-content__task"
-              deadline={taskDeadline}
+              dateTime={taskDateTime}
+              now={taskNow}
               actions={<ButtonLink href="#example">Actie</ButtonLink>}
               relativeDate
             >

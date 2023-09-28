@@ -56,7 +56,7 @@ import { Action } from "../index.tsx";
 <Canvas>
   <Story name="Single - with date">
     {() => (
-      <Action link="#example" deadline={new Date().setDate(new Date().getDate() + 1)}>
+      <Action link="#example" dateTime={"2023-09-28T19:47:36.593Z"}>
         Taak
       </Action>
     )}
@@ -68,7 +68,7 @@ import { Action } from "../index.tsx";
 <Canvas>
   <Story name="Single - with date - relative">
     {() => (
-      <Action link="#example" deadline={new Date().setDate(new Date().getDate() + 5)} relativeDate>
+      <Action link="#example" dateTime={"2023-10-02T19:47:36.593Z"} now={"2023-09-28T19:47:36.593Z"} relativeDate>
         Taak
       </Action>
     )}
@@ -80,7 +80,7 @@ import { Action } from "../index.tsx";
 <Canvas>
   <Story name="Single - with warning date - relative">
     {() => (
-      <Action link="#example" deadline={new Date().setDate(new Date().getDate() + 2)} relativeDate>
+      <Action link="#example" dateTime={"2023-09-30T19:47:36.593Z"} now={"2023-09-28T19:47:36.593Z"} relativeDate>
         Taak
       </Action>
     )}
@@ -135,7 +135,8 @@ import { Action } from "../index.tsx";
   <Story name="Multiple - with date">
     {() => (
       <Action
-        deadline={new Date().setDate(new Date().getDate() + 1)}
+        dateTime={"2023-09-28T19:47:36.593Z"}
+        now={"2023-09-28T19:47:36.593Z"}
         actions={<ButtonLink href="#example">Actie</ButtonLink>}
       >
         Taak
@@ -151,7 +152,8 @@ import { Action } from "../index.tsx";
     {() => (
       <Action
         relativeDate
-        deadline={new Date().setDate(new Date().getDate() + 5)}
+        dateTime={"2023-10-02T19:47:36.593Z"}
+        now={"2023-09-28T19:47:36.593Z"}
         actions={<ButtonLink href="#example">Actie</ButtonLink>}
       >
         Taak
@@ -167,7 +169,8 @@ import { Action } from "../index.tsx";
     {() => (
       <Action
         relativeDate
-        deadline={new Date().setDate(new Date().getDate() + 2)}
+        dateTime={"2023-09-30T19:47:36.593Z"}
+        now={"2023-09-28T19:47:36.593Z"}
         actions={<ButtonLink href="#example">Actie</ButtonLink>}
       >
         Taak

@@ -3,14 +3,15 @@ import { ActionDate, ActionActions } from './index';
 
 interface ActionDetailsProps {
   children?: React.ReactNode;
-  deadline?: Date;
+  dateTime?: string;
+  now?: string;
   relativeDate?: boolean;
 }
 
-export const ActionDetails = ({ children, deadline, relativeDate }: ActionDetailsProps) => {
+export const ActionDetails = ({ children, dateTime, now, relativeDate }: ActionDetailsProps) => {
   return (
     <div className="denhaag-action__details">
-      {deadline && <ActionDate date={deadline} relative={relativeDate} />}
+      {dateTime && <ActionDate dateTime={dateTime} now={now} relative={relativeDate} />}
       <ActionActions>{children}</ActionActions>
     </div>
   );
