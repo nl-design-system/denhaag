@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import { Heading2 } from '../../../components/Typography/src';
 import { Sidenav, SidenavList, SidenavItem, SidenavLink } from '../../../components/Sidenav/src';
 import { BadgeCounter } from '../../../components/BadgeCounter/src';
-import { GridIcon, InboxIcon, ArchiveIcon } from '../../../components/Icons/src';
+import { ArchiveIcon, CircleInformationIcon, InboxIcon, UserIcon } from '../../../components/Icons/src';
 import { Divider } from '../../../components/Divider/src';
 import { Link } from '../../../components/Link/src';
 import Alert from '../../../components/Alert/src';
@@ -84,21 +84,41 @@ export const Request: Story = {
           <SidenavList>
             <SidenavItem>
               <SidenavLink href="/#">
-                <ArchiveIcon />
+                <CircleInformationIcon />
                 Belastingzaken
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink href="/#">
+                <CircleInformationIcon />
+                WOZ
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink href="/#">
+                <CircleInformationIcon />
+                Parkeren
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink href="/#">
+                <CircleInformationIcon />
+                Erfpacht
               </SidenavLink>
             </SidenavItem>
           </SidenavList>
           <SidenavList>
             <SidenavItem>
               <SidenavLink href="/#">
-                <ArchiveIcon />
-                Lopende zaken
+                <UserIcon />
+                Mijn gegevens
               </SidenavLink>
             </SidenavItem>
           </SidenavList>
         </Sidenav>
-        <Heading2>Aanvraag subsidie geluidsisolatie</Heading2>
+        <main className="denhaag-page-content__main">
+          <Heading2>Aanvraag subsidie geluidsisolatie</Heading2>
+        </main>
       </ResponsiveContent>
       <PageFooter>
         <Footer
