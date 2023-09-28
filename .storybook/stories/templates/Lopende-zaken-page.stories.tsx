@@ -53,7 +53,7 @@ export const LopendeZaken: Story = {
             <SidenavItem>
               <SidenavLink current={true}>
                 <InboxIcon />
-                Overzicht
+                label
               </SidenavLink>
             </SidenavItem>
             <SidenavItem>
@@ -64,14 +64,26 @@ export const LopendeZaken: Story = {
             </SidenavItem>
             <SidenavItem>
               <SidenavLink>
-                <ParkingIcon />
-                Parkeren
+                <CircleInformationIcon />
+                Belastingszaken
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink>
+                <CircleInformationIcon />
+                WOZ
               </SidenavLink>
             </SidenavItem>
             <SidenavItem>
               <SidenavLink>
                 <ParkingIcon />
                 Parkeren
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink>
+                <CircleInformationIcon />
+                Erfpacht
               </SidenavLink>
             </SidenavItem>
             <SidenavItem>
