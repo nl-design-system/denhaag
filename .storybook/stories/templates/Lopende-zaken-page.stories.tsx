@@ -18,7 +18,7 @@ import './template-story.scss';
 import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '../../../components/Sidenav/src';
 
 const meta = {
-  title: 'Templates',
+  title: 'Templates/LopendeZaken',
   parameters: {
     chromatic: { viewports: [1768, 1280, 768, 360] },
   },
@@ -36,8 +36,6 @@ const zakenHeaderProps: HeaderLogicProps = {
     ],
   },
 };
-
-// Login page
 
 type Story = StoryObj<typeof meta>;
 
@@ -94,6 +92,12 @@ export const LopendeZaken: Story = {
             </SidenavItem>
           </SidenavList>
         </Sidenav>
+        <main className="denhaag-page-content__main">
+          <Heading2>Mijn lopende zaken</Heading2>
+          <Tabs {...tabsProps}></Tabs>
+          <CaseCard {...cardCaseProps}></CaseCard>
+          <CaseCard {...cardCaseProps}></CaseCard>
+        </main>
       </ResponsiveContent>
       <PageFooter>
         <Footer
