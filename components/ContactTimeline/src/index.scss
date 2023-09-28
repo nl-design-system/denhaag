@@ -1,13 +1,13 @@
 .denhaag-contact-timeline__step-header {
-  --denhaag-process-steps-step-header-align-items: flex-start;
-  --denhaag-step-marker-margin: 5px;
+  --denhaag-process-steps-step-header-align-items: var(--denhaag-contact-timeline-mobile-step-marker-align-items);
+  --denhaag-step-marker-margin: var(--denhaag-contact-timeline-mobile-step-marker-margin);
 }
 
 .denhaag-contact-timeline--mobile {
-  --denhaag-process-steps-step-distance: 0;
+  --denhaag-process-steps-step-distance: var(--denhaag-contact-timeline-mobile-step-marker-connector-bottom);
 
   .denhaag-process-steps__step {
-    padding-block-end: 32px;
+    padding-block-end: var(--denhaag-contact-timeline-mobile-step-padding-block-end);
   }
 
   .denhaag-process-steps__step-body {
@@ -16,19 +16,19 @@
 
   .denhaag-step-marker__connector--main-to-main {
     top: calc(var(--denhaag-step-marker-size) / 2);
-    bottom: 0;
+    bottom: var(--denhaag-contact-timeline-mobile-step-distance);
   }
 }
 
 .denhaag-contact-timeline__meta {
   display: flex;
-  gap: 6px;
+  gap: var(--denhaag-contact-timeline-mobile-meta-gap);
   align-items: center;
 }
 
 .denhaag-contact-timeline__meta-marker {
-  width: 4px;
-  height: 4px;
-  background-color: black;
+  width: var(--denhaag-contact-timeline-mobile-meta-marker-size);
+  height: var(--denhaag-contact-timeline-mobile-meta-marker-size);
+  background-color: var(--denhaag-contact-timeline-mobile-meta-marker-color);
   border-radius: 50%;
 }

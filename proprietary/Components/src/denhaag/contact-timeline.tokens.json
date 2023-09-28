@@ -1,0 +1,26 @@
+{
+  "denhaag": {
+    "contact-timeline": {
+      "mobile": {
+        "step": {
+          "marker": {
+            "align-items": { "value": "flex-start" },
+            "margin": { "value": "5px" },
+            "connector": {
+              "bottom": { "value": "0" }
+            }
+          },
+          "distance": { "value": "0" },
+          "padding-block-end": { "value": "32px" }
+        },
+        "meta": {
+          "gap": { "value": "6px" },
+          "marker": {
+            "size": { "value": "4px" },
+            "color": { "value": "{denhaag.color.black}" }
+          }
+        }
+      }
+    }
+  }
+}

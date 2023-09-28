@@ -12,10 +12,13 @@
       "path": "../Button"
     },
     {
-      "path": "../BaseProps"
+      "path": "../Icons"
     },
     {
-      "path": "../Icons"
+      "path": "../ProcessSteps"
+    },
+    {
+      "path": "../StepMarker"
     },
     {
       "path": "../Typography"

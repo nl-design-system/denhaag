@@ -29,11 +29,11 @@
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "workspace:*",
     "@gemeente-denhaag/icons": "workspace:*",
     "@gemeente-denhaag/process-steps": "workspace:*",
     "@gemeente-denhaag/step-marker": "workspace:*",
-    "@gemeente-denhaag/typography": "workspace:*"
+    "@gemeente-denhaag/typography": "workspace:*",
+    "date-fns": "2.30.0"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"
