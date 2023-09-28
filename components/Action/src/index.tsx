@@ -5,3 +5,4 @@ export * from './ActionContent';
 export * from './ActionDetails';
 export * from './ActionDate';
 export * from './ActionActions';
+export * from './Time';
