@@ -68,7 +68,7 @@ import { Action } from "../index.tsx";
 <Canvas>
   <Story name="Single - with date - relative">
     {() => (
-      <Action link="#example" dateTime={"2023-10-02T19:47:36.593Z"} relativeDate>
+      <Action link="#example" dateTime={"2023-10-02T19:47:36.593Z"} now={"2023-09-28T19:47:36.593Z"} relativeDate>
         Taak
       </Action>
     )}
@@ -80,7 +80,7 @@ import { Action } from "../index.tsx";
 <Canvas>
   <Story name="Single - with warning date - relative">
     {() => (
-      <Action link="#example" dateTime={"2023-09-30T19:47:36.593Z"} relativeDate>
+      <Action link="#example" dateTime={"2023-09-30T19:47:36.593Z"} now={"2023-09-28T19:47:36.593Z"} relativeDate>
         Taak
       </Action>
     )}
@@ -134,7 +134,11 @@ import { Action } from "../index.tsx";
 <Canvas>
   <Story name="Multiple - with date">
     {() => (
-      <Action dateTime={"2023-09-28T19:47:36.593Z"} actions={<ButtonLink href="#example">Actie</ButtonLink>}>
+      <Action
+        dateTime={"2023-09-28T19:47:36.593Z"}
+        now={"2023-09-28T19:47:36.593Z"}
+        actions={<ButtonLink href="#example">Actie</ButtonLink>}
+      >
         Taak
       </Action>
     )}
@@ -149,6 +153,7 @@ import { Action } from "../index.tsx";
       <Action
         relativeDate
         dateTime={"2023-10-02T19:47:36.593Z"}
+        now={"2023-09-28T19:47:36.593Z"}
         actions={<ButtonLink href="#example">Actie</ButtonLink>}
       >
         Taak
@@ -165,6 +170,7 @@ import { Action } from "../index.tsx";
       <Action
         relativeDate
         dateTime={"2023-09-30T19:47:36.593Z"}
+        now={"2023-09-28T19:47:36.593Z"}
         actions={<ButtonLink href="#example">Actie</ButtonLink>}
       >
         Taak

@@ -6,6 +6,7 @@ export interface ActionSingleProps extends React.HTMLAttributes<HTMLAnchorElemen
   children: React.ReactNode;
   link: string;
   dateTime?: string;
+  now?: string;
   relativeDate?: boolean;
 }
 
@@ -13,6 +14,7 @@ export interface ActionMultiProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
   actions: React.ReactNode;
   dateTime?: string;
+  now?: string;
   relativeDate?: boolean;
 }
 
