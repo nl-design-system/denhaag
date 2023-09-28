@@ -4,7 +4,7 @@
 }
 
 .denhaag-contact-timeline--mobile {
-  --denhaag-process-steps-step-distance: var(--denhaag-contact-timeline-mobile-step-marker-connector-bottom);
+  --denhaag-process-steps-step-distance: var(--denhaag-contact-timeline-mobile-step-distance);
 
   .denhaag-process-steps__step {
     padding-block-end: var(--denhaag-contact-timeline-mobile-step-padding-block-end);
@@ -16,7 +16,7 @@
 
   .denhaag-step-marker__connector--main-to-main {
     top: calc(var(--denhaag-step-marker-size) / 2);
-    bottom: var(--denhaag-contact-timeline-mobile-step-distance);
+    bottom: var(--denhaag-contact-timeline-mobile-step-marker-connector-bottom);
   }
 }
 
