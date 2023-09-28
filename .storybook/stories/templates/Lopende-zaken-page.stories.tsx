@@ -4,7 +4,7 @@ import { Page, PageHeader, PageFooter } from '../../../components/Page/src';
 import { HeaderLogic, HeaderLogicProps } from '../../../components/Header/src';
 import Footer from '../../../components/Footer/src';
 import ResponsiveContent from '../../../components/ResponsiveContent/src';
-import { InboxIcon, ArchiveIcon, UserIcon, ParkingIcon } from '../../../components/Icons/src';
+import { InboxIcon, ArchiveIcon, UserIcon, ParkingIcon, CircleInformationIcon } from '../../../components/Icons/src';
 import {
   headerProps,
   footerLegalData,
@@ -14,7 +14,7 @@ import {
   copyright,
 } from '../templates/util';
 
-import './story-login.css';
+import './template-story.scss';
 import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '../../../components/Sidenav/src';
 
 const meta = {
