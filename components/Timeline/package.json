@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/timeline",
-  "version": "0.2.3-alpha.342",
+  "version": "0.2.3-alpha.343",
   "description": "A Timeline component based on the material Stepper component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
