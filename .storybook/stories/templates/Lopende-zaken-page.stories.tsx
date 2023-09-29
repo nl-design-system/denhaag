@@ -40,6 +40,8 @@ const zakenHeaderProps: HeaderLogicProps = {
   },
 };
 
+const tabsProps = { tabData: [{ label: 'Lopende Zaken' }, { label: 'Afgeronde zaken' }] };
+
 type Story = StoryObj<typeof meta>;
 
 export const LopendeZaken: Story = {
@@ -97,7 +99,7 @@ export const LopendeZaken: Story = {
         </Sidenav>
         <main className="denhaag-page-content__main">
           <Heading2>Mijn lopende zaken</Heading2>
-          <Tabs></Tabs>
+          <Tabs {...tabsProps}></Tabs>
           <CaseCard date={new Date('2020-01-21T00:00:00.000Z')} title="Aanvraag subsidie geluidsisolatie" />
           <CaseCard date={new Date('2020-01-21T00:00:00.000Z')} title="Aanvraag Ooievaarspas" />
         </main>
