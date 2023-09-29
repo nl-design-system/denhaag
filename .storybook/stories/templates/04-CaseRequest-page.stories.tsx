@@ -2,6 +2,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import { Heading2 } from '../../../components/Typography/src';
 import { Sidenav, SidenavList, SidenavItem, SidenavLink } from '../../../components/Sidenav/src';
 import { BadgeCounter } from '../../../components/BadgeCounter/src';
+import { ProcessSteps } from '../../../components/ProcessSteps/src';
 import { ArchiveIcon, CircleInformationIcon, InboxIcon, UserIcon } from '../../../components/Icons/src';
 import { Page, PageHeader, PageFooter } from '../../../components/Page/src';
 import { HeaderLogic, HeaderLogicProps } from '../../../components/Header/src';
@@ -107,6 +108,54 @@ export const CaseRequestPage: Story = {
         </Sidenav>
         <main className="denhaag-page-content__main">
           <Heading2>Aanvraag subsidie geluidsisolatie</Heading2>
+          <ProcessSteps
+            steps={[
+              {
+                id: 'deelname',
+                marker: 1,
+                status: 'checked',
+                steps: [
+                  {
+                    id: 's1-1',
+                    status: 'checked',
+                    title: 'Aanmelding ontvangen',
+                  },
+                ],
+                title: 'Deelname aan geluidsonderzoek',
+              },
+              {
+                id: 'onderzoek',
+                marker: 2,
+                status: 'current',
+                steps: [
+                  {
+                    id: 's2-1',
+                    status: 'checked',
+                    title: 'Afspraak meten geluidsoverlast gemaakt',
+                  },
+                  {
+                    id: 's2-2',
+                    title: 'Geluidsoverlast gemeten',
+                  },
+                  {
+                    id: 's2-3',
+                    title: 'Onderzoek resultaten verwerkt',
+                  },
+                ],
+                title: 'Onderzoek naar geluidsoverlast',
+              },
+              {
+                id: 'uitvoeren',
+                marker: 3,
+                title: 'Uitvoeren van maatregelen',
+              },
+              {
+                id: 'klaar',
+                marker: 4,
+                title: 'Maatregelen zijn uitgevoerd',
+              },
+            ]}
+          />
         </main>
       </ResponsiveContent>
       <PageFooter>
