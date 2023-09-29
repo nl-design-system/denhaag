@@ -5,6 +5,9 @@ import { HeaderLogic, HeaderLogicProps } from '../../../components/Header/src';
 import Footer from '../../../components/Footer/src';
 import ResponsiveContent from '../../../components/ResponsiveContent/src';
 import { InboxIcon, ArchiveIcon, UserIcon, ParkingIcon, CircleInformationIcon } from '../../../components/Icons/src';
+import { Heading2 } from '../../../components/Typography/src';
+import { CaseCard } from '../../../components/Card/src';
+import { Tabs } from '../../../components/Tab/src';
 import {
   headerProps,
   footerLegalData,
