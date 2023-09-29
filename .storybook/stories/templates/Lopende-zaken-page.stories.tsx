@@ -94,9 +94,9 @@ export const LopendeZaken: Story = {
         </Sidenav>
         <main className="denhaag-page-content__main">
           <Heading2>Mijn lopende zaken</Heading2>
-          <Tabs {...tabsProps}></Tabs>
-          <CaseCard {...cardCaseProps}></CaseCard>
-          <CaseCard {...cardCaseProps}></CaseCard>
+          <Tabs></Tabs>
+          <CaseCard date={new Date('2020-01-21T00:00:00.000Z')} title="Aanvraag subsidie geluidsisolatie" />
+          <CaseCard date={new Date('2020-01-21T00:00:00.000Z')} title="Aanvraag Ooievaarspas" />
         </main>
       </ResponsiveContent>
       <PageFooter>
