@@ -40,7 +40,12 @@ const zakenHeaderProps: HeaderLogicProps = {
   },
 };
 
-const tabsProps = { tabData: [{ label: 'Lopende Zaken' }, { label: 'Afgeronde zaken' }] };
+const tabsProps = {
+  tabData: [
+    { label: 'Lopende Zaken', panelContent: '' },
+    { label: 'Afgeronde zaken', panelContent: '' },
+  ],
+};
 
 type Story = StoryObj<typeof meta>;
 
