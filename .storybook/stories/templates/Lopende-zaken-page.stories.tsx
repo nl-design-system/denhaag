@@ -100,8 +100,10 @@ export const LopendeZaken: Story = {
         <main className="denhaag-page-content__main">
           <Heading2>Mijn lopende zaken</Heading2>
           <Tabs {...tabsProps}></Tabs>
-          <CaseCard date={new Date('2020-01-21T00:00:00.000Z')} title="Aanvraag subsidie geluidsisolatie" />
-          <CaseCard date={new Date('2020-01-21T00:00:00.000Z')} title="Aanvraag Ooievaarspas" />
+          <section className="denhaag-card-group">
+            <CaseCard date={new Date('2020-01-21T00:00:00.000Z')} title="Aanvraag subsidie geluidsisolatie" />
+            <CaseCard date={new Date('2020-01-21T00:00:00.000Z')} title="Aanvraag Ooievaarspas" />
+          </section>
         </main>
       </ResponsiveContent>
       <PageFooter>
