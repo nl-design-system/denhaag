@@ -1,3 +1,5 @@
+import './index.scss';
+
 export * from './Action';
 export * from './ActionSingle';
 export * from './ActionMulti';
