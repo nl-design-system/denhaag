@@ -28,22 +28,22 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Default">
-    <div class="denhaag-card-calendar__wrapper">
-      <div class="denhaag-card-calendar__item">
-        <div class="denhaag-card-calendar__item-header">
-          <time datetime="31-12-2023">31 december 2022</time>
-        </div>
-        <div class="denhaag-card-calendar__item-content">
-          <h4 class="denhaag-card-calendar__item-title">
-            <a class="denhaag-card-calendar__item-title-anchor" href="https://www.denhaag.nl">
-              Activity Title
-            </a>
-          </h4>
-          <p class="denhaag-card-calendar__item-description">
-            Hier een korte beschrijving van het evenement in een zin
-          </p>
-          <div class="denhaag-card-calendar__item-footer">
-            <div class="denhaag-card-calendar__item-footer-time">
+    <section class="denhaag-calendar">
+      <div class="denhaag-calendar__wrapper">
+        <article class="denhaag-calendar__card">
+          <header class="denhaag-calendar__card-header">
+            <time datetime="31-12-2023">31 december 2022</time>
+          </header>
+          <div class="denhaag-calendar__card-content">
+            <h4 class="denhaag-calendar__card-title">
+              <a class="denhaag-calendar__card-title-anchor" href="https://www.denhaag.nl">
+                Activity Title
+              </a>
+            </h4>
+            <p class="denhaag-calendar__card-description">Hier een korte beschrijving van het evenement in een zin</p>
+          </div>
+          <footer class="denhaag-calendar__card-footer">
+            <div class="denhaag-calendar__card-footer-time">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -52,19 +52,19 @@ import readme from "../../README.md";
                 viewBox="0 0 14 14"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="denhaag-card-calendar__item-footer-time-icon"
+                class="denhaag-calendar__card-footer-time-icon"
               >
                 <path
                   d="M6.99992 1.66536C4.0544 1.66536 1.66659 4.05318 1.66659 6.9987C1.66659 9.94422 4.0544 12.332 6.99992 12.332C9.94544 12.332 12.3333 9.94422 12.3333 6.9987C12.3333 4.05318 9.94544 1.66536 6.99992 1.66536ZM0.333252 6.9987C0.333252 3.3168 3.31802 0.332031 6.99992 0.332031C10.6818 0.332031 13.6666 3.3168 13.6666 6.9987C13.6666 10.6806 10.6818 13.6654 6.99992 13.6654C3.31802 13.6654 0.333252 10.6806 0.333252 6.9987ZM6.99992 2.9987C7.36811 2.9987 7.66659 3.29717 7.66659 3.66536V6.72256L9.47132 8.52729C9.73167 8.78764 9.73167 9.20975 9.47132 9.4701C9.21097 9.73045 8.78886 9.73045 8.52851 9.4701L6.52851 7.4701C6.40349 7.34508 6.33325 7.17551 6.33325 6.9987V3.66536C6.33325 3.29717 6.63173 2.9987 6.99992 2.9987Z"
                   fill="currentColor"
                 />
               </svg>
-              <time datetime="12:00" class="denhaag-card-calendar__item-footer-time-text">
+              <time datetime="12:00" class="denhaag-calendar__card-footer-time-text">
                 12.00 tot 16.00
               </time>
             </div>
             <svg
-              class="denhaag-card-calendar__item-footer-action"
+              class="denhaag-calendar__card-footer-action"
               width="20"
               height="20"
               viewBox="0 0 20 20"
@@ -77,12 +77,12 @@ import readme from "../../README.md";
               <path
                 d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                 fill="currentColor"
-              ></path>
+              />
             </svg>
-          </div>
-        </div>
+          </footer>
+        </article>
       </div>
-    </div>
+    </section>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -92,22 +92,22 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Long title">
-    <div class="denhaag-card-calendar__wrapper">
-      <div class="denhaag-card-calendar__item">
-        <div class="denhaag-card-calendar__item-header">
-          <time datetime="31-12-2023">31 december 2022 tot 5 Januari 2024</time>
-        </div>
-        <div class="denhaag-card-calendar__item-content">
-          <h4 class="denhaag-card-calendar__item-title">
-            <a class="denhaag-card-calendar__item-title-anchor" href="https://www.denhaag.nl">
-              Activity Title
-            </a>
-          </h4>
-          <p class="denhaag-card-calendar__item-description">
-            Hier een korte beschrijving van het evenement in een zin
-          </p>
-          <div class="denhaag-card-calendar__item-footer">
-            <div class="denhaag-card-calendar__item-footer-time">
+    <section class="denhaag-calendar">
+      <div class="denhaag-calendar__wrapper">
+        <article class="denhaag-calendar__card">
+          <header class="denhaag-calendar__card-header">
+            <time datetime="31-12-2023">31 december 2022 tot 5 Januari 2024</time>
+          </header>
+          <div class="denhaag-calendar__card-content">
+            <h4 class="denhaag-calendar__card-title">
+              <a class="denhaag-calendar__card-title-anchor" href="https://www.denhaag.nl">
+                Activity Title
+              </a>
+            </h4>
+            <p class="denhaag-calendar__card-description">Hier een korte beschrijving van het evenement in een zin</p>
+          </div>
+          <footer class="denhaag-calendar__card-footer">
+            <div class="denhaag-calendar__card-footer-time">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -116,19 +116,19 @@ import readme from "../../README.md";
                 viewBox="0 0 14 14"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="denhaag-card-calendar__item-footer-time-icon"
+                class="denhaag-calendar__card-footer-time-icon"
               >
                 <path
                   d="M6.99992 1.66536C4.0544 1.66536 1.66659 4.05318 1.66659 6.9987C1.66659 9.94422 4.0544 12.332 6.99992 12.332C9.94544 12.332 12.3333 9.94422 12.3333 6.9987C12.3333 4.05318 9.94544 1.66536 6.99992 1.66536ZM0.333252 6.9987C0.333252 3.3168 3.31802 0.332031 6.99992 0.332031C10.6818 0.332031 13.6666 3.3168 13.6666 6.9987C13.6666 10.6806 10.6818 13.6654 6.99992 13.6654C3.31802 13.6654 0.333252 10.6806 0.333252 6.9987ZM6.99992 2.9987C7.36811 2.9987 7.66659 3.29717 7.66659 3.66536V6.72256L9.47132 8.52729C9.73167 8.78764 9.73167 9.20975 9.47132 9.4701C9.21097 9.73045 8.78886 9.73045 8.52851 9.4701L6.52851 7.4701C6.40349 7.34508 6.33325 7.17551 6.33325 6.9987V3.66536C6.33325 3.29717 6.63173 2.9987 6.99992 2.9987Z"
                   fill="currentColor"
                 />
               </svg>
-              <time datetime="12:00" class="denhaag-card-calendar__item-footer-time-text">
+              <time datetime="12:00" class="denhaag-calendar__card-footer-time-text">
                 12.00 tot 16.00
               </time>
             </div>
             <svg
-              class="denhaag-card-calendar__item-footer-action"
+              class="denhaag-calendar__card-footer-action"
               width="20"
               height="20"
               viewBox="0 0 20 20"
@@ -141,12 +141,12 @@ import readme from "../../README.md";
               <path
                 d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                 fill="currentColor"
-              ></path>
+              />
             </svg>
-          </div>
-        </div>
+          </footer>
+        </article>
       </div>
-    </div>
+    </section>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -156,22 +156,22 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Hover">
-    <div class="denhaag-card-calendar__wrapper">
-      <div class="denhaag-card-calendar__item denhaag-card-calendar__item--hover">
-        <div class="denhaag-card-calendar__item-header">
-          <time datetime="31-12-2023">31 december 2022</time>
-        </div>
-        <div class="denhaag-card-calendar__item-content">
-          <h4 class="denhaag-card-calendar__item-title">
-            <a class="denhaag-card-calendar__item-title-anchor" href="https://www.denhaag.nl">
-              Activity Title
-            </a>
-          </h4>
-          <p class="denhaag-card-calendar__item-description">
-            Hier een korte beschrijving van het evenement in een zin
-          </p>
-          <div class="denhaag-card-calendar__item-footer">
-            <div class="denhaag-card-calendar__item-footer-time">
+    <section class="denhaag-calendar">
+      <div class="denhaag-calendar__wrapper">
+        <article class="denhaag-calendar__card denhaag-calendar__card--hover">
+          <header class="denhaag-calendar__card-header">
+            <time datetime="31-12-2023">31 december 2022</time>
+          </header>
+          <div class="denhaag-calendar__card-content">
+            <h4 class="denhaag-calendar__card-title">
+              <a class="denhaag-calendar__card-title-anchor" href="https://www.denhaag.nl">
+                Activity Title
+              </a>
+            </h4>
+            <p class="denhaag-calendar__card-description">Hier een korte beschrijving van het evenement in een zin</p>
+          </div>
+          <footer class="denhaag-calendar__card-footer">
+            <div class="denhaag-calendar__card-footer-time">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -180,19 +180,19 @@ import readme from "../../README.md";
                 viewBox="0 0 14 14"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="denhaag-card-calendar__item-footer-time-icon"
+                class="denhaag-calendar__card-footer-time-icon"
               >
                 <path
                   d="M6.99992 1.66536C4.0544 1.66536 1.66659 4.05318 1.66659 6.9987C1.66659 9.94422 4.0544 12.332 6.99992 12.332C9.94544 12.332 12.3333 9.94422 12.3333 6.9987C12.3333 4.05318 9.94544 1.66536 6.99992 1.66536ZM0.333252 6.9987C0.333252 3.3168 3.31802 0.332031 6.99992 0.332031C10.6818 0.332031 13.6666 3.3168 13.6666 6.9987C13.6666 10.6806 10.6818 13.6654 6.99992 13.6654C3.31802 13.6654 0.333252 10.6806 0.333252 6.9987ZM6.99992 2.9987C7.36811 2.9987 7.66659 3.29717 7.66659 3.66536V6.72256L9.47132 8.52729C9.73167 8.78764 9.73167 9.20975 9.47132 9.4701C9.21097 9.73045 8.78886 9.73045 8.52851 9.4701L6.52851 7.4701C6.40349 7.34508 6.33325 7.17551 6.33325 6.9987V3.66536C6.33325 3.29717 6.63173 2.9987 6.99992 2.9987Z"
                   fill="currentColor"
                 />
               </svg>
-              <time datetime="12:00" class="denhaag-card-calendar__item-footer-time-text">
+              <time datetime="12:00" class="denhaag-calendar__card-footer-time-text">
                 12.00 tot 16.00
               </time>
             </div>
             <svg
-              class="denhaag-card-calendar__item-footer-action"
+              class="denhaag-calendar__card-footer-action"
               width="20"
               height="20"
               viewBox="0 0 20 20"
@@ -205,12 +205,12 @@ import readme from "../../README.md";
               <path
                 d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                 fill="currentColor"
-              ></path>
+              />
             </svg>
-          </div>
-        </div>
+          </footer>
+        </article>
       </div>
-    </div>
+    </section>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -220,22 +220,22 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Focus">
-    <div class="denhaag-card-calendar__wrapper">
-      <div class="denhaag-card-calendar__item denhaag-card-calendar__item--focus-visible">
-        <div class="denhaag-card-calendar__item-header">
-          <time datetime="31-12-2023">31 december 2022</time>
-        </div>
-        <div class="denhaag-card-calendar__item-content">
-          <h4 class="denhaag-card-calendar__item-title">
-            <a class="denhaag-card-calendar__item-title-anchor" href="https://www.denhaag.nl">
-              Activity Title
-            </a>
-          </h4>
-          <p class="denhaag-card-calendar__item-description">
-            Hier een korte beschrijving van het evenement in een zin
-          </p>
-          <div class="denhaag-card-calendar__item-footer">
-            <div class="denhaag-card-calendar__item-footer-time">
+    <section class="denhaag-calendar">
+      <div class="denhaag-calendar__wrapper">
+        <article class="denhaag-calendar__card denhaag-calendar__card--focus-visible">
+          <header class="denhaag-calendar__card-header">
+            <time datetime="31-12-2023">31 december 2022</time>
+          </header>
+          <div class="denhaag-calendar__card-content">
+            <h4 class="denhaag-calendar__card-title">
+              <a class="denhaag-calendar__card-title-anchor" href="https://www.denhaag.nl">
+                Activity Title
+              </a>
+            </h4>
+            <p class="denhaag-calendar__card-description">Hier een korte beschrijving van het evenement in een zin</p>
+          </div>
+          <footer class="denhaag-calendar__card-footer">
+            <div class="denhaag-calendar__card-footer-time">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -244,14 +244,14 @@ import readme from "../../README.md";
                 viewBox="0 0 14 14"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="denhaag-card-calendar__item-footer-time-icon"
+                class="denhaag-calendar__card-footer-time-icon"
               >
                 <path
                   d="M6.99992 1.66536C4.0544 1.66536 1.66659 4.05318 1.66659 6.9987C1.66659 9.94422 4.0544 12.332 6.99992 12.332C9.94544 12.332 12.3333 9.94422 12.3333 6.9987C12.3333 4.05318 9.94544 1.66536 6.99992 1.66536ZM0.333252 6.9987C0.333252 3.3168 3.31802 0.332031 6.99992 0.332031C10.6818 0.332031 13.6666 3.3168 13.6666 6.9987C13.6666 10.6806 10.6818 13.6654 6.99992 13.6654C3.31802 13.6654 0.333252 10.6806 0.333252 6.9987ZM6.99992 2.9987C7.36811 2.9987 7.66659 3.29717 7.66659 3.66536V6.72256L9.47132 8.52729C9.73167 8.78764 9.73167 9.20975 9.47132 9.4701C9.21097 9.73045 8.78886 9.73045 8.52851 9.4701L6.52851 7.4701C6.40349 7.34508 6.33325 7.17551 6.33325 6.9987V3.66536C6.33325 3.29717 6.63173 2.9987 6.99992 2.9987Z"
                   fill="currentColor"
                 />
               </svg>
-              <time datetime="12:00" class="denhaag-card-calendar__item-footer-time-text">
+              <time datetime="12:00" class="denhaag-calendar__card-footer-time-text">
                 12.00 tot 16.00
               </time>
             </div>
@@ -264,17 +264,17 @@ import readme from "../../README.md";
               focusable="false"
               aria-hidden="true"
               shape-rendering="auto"
-              class="denhaag-card-calendar__item-footer-action"
+              class="denhaag-calendar__card-footer-action"
             >
               <path
                 d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                 fill="currentColor"
-              ></path>
+              />
             </svg>
-          </div>
-        </div>
+          </footer>
+        </article>
       </div>
-    </div>
+    </section>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -284,23 +284,23 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="No Time">
-    <div class="denhaag-card-calendar__wrapper">
-      <div class="denhaag-card-calendar__item">
-        <div class="denhaag-card-calendar__item-header">
-          <time datetime="31-12-2023">31 december 2022</time>
-        </div>
-        <div class="denhaag-card-calendar__item-content">
-          <h4 class="denhaag-card-calendar__item-title">
-            <a class="denhaag-card-calendar__item-title-anchor" href="https://www.denhaag.nl">
-              Activity Title
-            </a>
-          </h4>
-          <p class="denhaag-card-calendar__item-description">
-            Hier een korte beschrijving van het evenement in een zin
-          </p>
-          <div class="denhaag-card-calendar__item-footer">
+    <section class="denhaag-calendar">
+      <div class="denhaag-calendar__wrapper">
+        <article class="denhaag-calendar__card">
+          <header class="denhaag-calendar__card-header">
+            <time datetime="31-12-2023">31 december 2022</time>
+          </header>
+          <div class="denhaag-calendar__card-content">
+            <h4 class="denhaag-calendar__card-title">
+              <a class="denhaag-calendar__card-title-anchor" href="https://www.denhaag.nl">
+                Activity Title
+              </a>
+            </h4>
+            <p class="denhaag-calendar__card-description">Hier een korte beschrijving van het evenement in een zin</p>
+          </div>
+          <footer class="denhaag-calendar__card-footer">
             <svg
-              class="denhaag-card-calendar__item-footer-action"
+              class="denhaag-calendar__card-footer-action"
               width="20"
               height="20"
               viewBox="0 0 20 20"
@@ -313,12 +313,12 @@ import readme from "../../README.md";
               <path
                 d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                 fill="currentColor"
-              ></path>
+              />
             </svg>
-          </div>
-        </div>
+          </footer>
+        </article>
       </div>
-    </div>
+    </section>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -328,19 +328,21 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="No Description">
-    <div class="denhaag-card-calendar__wrapper">
-      <div class="denhaag-card-calendar__item">
-        <div class="denhaag-card-calendar__item-header">
-          <time datetime="31-12-2023">31 december 2022</time>
-        </div>
-        <div class="denhaag-card-calendar__item-content">
-          <h4 class="denhaag-card-calendar__item-title">
-            <a class="denhaag-card-calendar__item-title-anchor" href="https://www.denhaag.nl">
-              Activity Title
-            </a>
-          </h4>
-          <div class="denhaag-card-calendar__item-footer">
-            <div class="denhaag-card-calendar__item-footer-time">
+    <section class="denhaag-calendar">
+      <div class="denhaag-calendar__wrapper">
+        <article class="denhaag-calendar__card">
+          <header class="denhaag-calendar__card-header">
+            <time datetime="31-12-2023">31 december 2022</time>
+          </header>
+          <div class="denhaag-calendar__card-content">
+            <h4 class="denhaag-calendar__card-title">
+              <a class="denhaag-calendar__card-title-anchor" href="https://www.denhaag.nl">
+                Activity Title
+              </a>
+            </h4>
+          </div>
+          <footer class="denhaag-calendar__card-footer">
+            <div class="denhaag-calendar__card-footer-time">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -349,19 +351,19 @@ import readme from "../../README.md";
                 viewBox="0 0 14 14"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="denhaag-card-calendar__item-footer-time-icon"
+                class="denhaag-calendar__card-footer-time-icon"
               >
                 <path
                   d="M6.99992 1.66536C4.0544 1.66536 1.66659 4.05318 1.66659 6.9987C1.66659 9.94422 4.0544 12.332 6.99992 12.332C9.94544 12.332 12.3333 9.94422 12.3333 6.9987C12.3333 4.05318 9.94544 1.66536 6.99992 1.66536ZM0.333252 6.9987C0.333252 3.3168 3.31802 0.332031 6.99992 0.332031C10.6818 0.332031 13.6666 3.3168 13.6666 6.9987C13.6666 10.6806 10.6818 13.6654 6.99992 13.6654C3.31802 13.6654 0.333252 10.6806 0.333252 6.9987ZM6.99992 2.9987C7.36811 2.9987 7.66659 3.29717 7.66659 3.66536V6.72256L9.47132 8.52729C9.73167 8.78764 9.73167 9.20975 9.47132 9.4701C9.21097 9.73045 8.78886 9.73045 8.52851 9.4701L6.52851 7.4701C6.40349 7.34508 6.33325 7.17551 6.33325 6.9987V3.66536C6.33325 3.29717 6.63173 2.9987 6.99992 2.9987Z"
                   fill="currentColor"
                 />
               </svg>
-              <time datetime="12:00" class="denhaag-card-calendar__item-footer-time-text">
+              <time datetime="12:00" class="denhaag-calendar__card-footer-time-text">
                 12.00 tot 16.00
               </time>
             </div>
             <svg
-              class="denhaag-card-calendar__item-footer-action"
+              class="denhaag-calendar__card-footer-action"
               width="20"
               height="20"
               viewBox="0 0 20 20"
@@ -374,12 +376,12 @@ import readme from "../../README.md";
               <path
                 d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                 fill="currentColor"
-              ></path>
+              />
             </svg>
-          </div>
-        </div>
+          </footer>
+        </article>
       </div>
-    </div>
+    </section>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -389,22 +391,22 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="Title Word Break">
-    <div class="denhaag-card-calendar__wrapper">
-      <div class="denhaag-card-calendar__item">
-        <div class="denhaag-card-calendar__item-header">
-          <time datetime="31-12-2023">31 december 2022</time>
-        </div>
-        <div class="denhaag-card-calendar__item-content">
-          <h4 class="denhaag-card-calendar__item-title">
-            <a class="denhaag-card-calendar__item-title-anchor" href="https://www.denhaag.nl">
-              In gesprek met stadsdeelhouder Segbroek
-            </a>
-          </h4>
-          <p class="denhaag-card-calendar__item-description">
-            Hier een korte beschrijving van het evenement in een zin
-          </p>
-          <div class="denhaag-card-calendar__item-footer">
-            <div class="denhaag-card-calendar__item-footer-time">
+    <section class="denhaag-calendar">
+      <div class="denhaag-calendar__wrapper">
+        <article class="denhaag-calendar__card">
+          <header class="denhaag-calendar__card-header">
+            <time datetime="31-12-2023">31 december 2022</time>
+          </header>
+          <div class="denhaag-calendar__card-content">
+            <h4 class="denhaag-calendar__card-title">
+              <a class="denhaag-calendar__card-title-anchor" href="https://www.denhaag.nl">
+                In gesprek met stadsdeelhouder Segbroek
+              </a>
+            </h4>
+            <p class="denhaag-calendar__card-description">Hier een korte beschrijving van het evenement in een zin</p>
+          </div>
+          <footer class="denhaag-calendar__card-footer">
+            <div class="denhaag-calendar__card-footer-time">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -413,19 +415,19 @@ import readme from "../../README.md";
                 viewBox="0 0 14 14"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="denhaag-card-calendar__item-footer-time-icon"
+                class="denhaag-calendar__card-footer-time-icon"
               >
                 <path
                   d="M6.99992 1.66536C4.0544 1.66536 1.66659 4.05318 1.66659 6.9987C1.66659 9.94422 4.0544 12.332 6.99992 12.332C9.94544 12.332 12.3333 9.94422 12.3333 6.9987C12.3333 4.05318 9.94544 1.66536 6.99992 1.66536ZM0.333252 6.9987C0.333252 3.3168 3.31802 0.332031 6.99992 0.332031C10.6818 0.332031 13.6666 3.3168 13.6666 6.9987C13.6666 10.6806 10.6818 13.6654 6.99992 13.6654C3.31802 13.6654 0.333252 10.6806 0.333252 6.9987ZM6.99992 2.9987C7.36811 2.9987 7.66659 3.29717 7.66659 3.66536V6.72256L9.47132 8.52729C9.73167 8.78764 9.73167 9.20975 9.47132 9.4701C9.21097 9.73045 8.78886 9.73045 8.52851 9.4701L6.52851 7.4701C6.40349 7.34508 6.33325 7.17551 6.33325 6.9987V3.66536C6.33325 3.29717 6.63173 2.9987 6.99992 2.9987Z"
                   fill="currentColor"
                 />
               </svg>
-              <time datetime="12:00" class="denhaag-card-calendar__item-footer-time-text">
+              <time datetime="12:00" class="denhaag-calendar__card-footer-time-text">
                 12.00 tot 16.00
               </time>
             </div>
             <svg
-              class="denhaag-card-calendar__item-footer-action"
+              class="denhaag-calendar__card-footer-action"
               width="20"
               height="20"
               viewBox="0 0 20 20"
@@ -438,12 +440,12 @@ import readme from "../../README.md";
               <path
                 d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                 fill="currentColor"
-              ></path>
+              />
             </svg>
-          </div>
-        </div>
+          </footer>
+        </article>
       </div>
-    </div>
+    </section>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -452,23 +454,23 @@ import readme from "../../README.md";
 
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
-  <Story name="2 Itms">
-    <div class="denhaag-card-calendar__wrapper">
-      <div class="denhaag-card-calendar__item">
-        <div class="denhaag-card-calendar__item-header">
-          <time datetime="31-12-2023">31 december 2022</time>
-        </div>
-        <div class="denhaag-card-calendar__item-content">
-          <h4 class="denhaag-card-calendar__item-title">
-            <a class="denhaag-card-calendar__item-title-anchor" href="https://www.denhaag.nl">
-              Activity Title
-            </a>
-          </h4>
-          <p class="denhaag-card-calendar__item-description">
-            Hier een korte beschrijving van het evenement in een zin
-          </p>
-          <div class="denhaag-card-calendar__item-footer">
-            <div class="denhaag-card-calendar__item-footer-time">
+  <Story name="2 Items">
+    <section class="denhaag-calendar">
+      <div class="denhaag-calendar__wrapper">
+        <article class="denhaag-calendar__card">
+          <header class="denhaag-calendar__card-header">
+            <time datetime="31-12-2023">31 december 2022</time>
+          </header>
+          <div class="denhaag-calendar__card-content">
+            <h4 class="denhaag-calendar__card-title">
+              <a class="denhaag-calendar__card-title-anchor" href="https://www.denhaag.nl">
+                Activity Title
+              </a>
+            </h4>
+            <p class="denhaag-calendar__card-description">Hier een korte beschrijving van het evenement in een zin</p>
+          </div>
+          <footer class="denhaag-calendar__card-footer">
+            <div class="denhaag-calendar__card-footer-time">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -477,19 +479,19 @@ import readme from "../../README.md";
                 viewBox="0 0 14 14"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="denhaag-card-calendar__item-footer-time-icon"
+                class="denhaag-calendar__card-footer-time-icon"
               >
                 <path
                   d="M6.99992 1.66536C4.0544 1.66536 1.66659 4.05318 1.66659 6.9987C1.66659 9.94422 4.0544 12.332 6.99992 12.332C9.94544 12.332 12.3333 9.94422 12.3333 6.9987C12.3333 4.05318 9.94544 1.66536 6.99992 1.66536ZM0.333252 6.9987C0.333252 3.3168 3.31802 0.332031 6.99992 0.332031C10.6818 0.332031 13.6666 3.3168 13.6666 6.9987C13.6666 10.6806 10.6818 13.6654 6.99992 13.6654C3.31802 13.6654 0.333252 10.6806 0.333252 6.9987ZM6.99992 2.9987C7.36811 2.9987 7.66659 3.29717 7.66659 3.66536V6.72256L9.47132 8.52729C9.73167 8.78764 9.73167 9.20975 9.47132 9.4701C9.21097 9.73045 8.78886 9.73045 8.52851 9.4701L6.52851 7.4701C6.40349 7.34508 6.33325 7.17551 6.33325 6.9987V3.66536C6.33325 3.29717 6.63173 2.9987 6.99992 2.9987Z"
                   fill="currentColor"
                 />
               </svg>
-              <time datetime="12:00" class="denhaag-card-calendar__item-footer-time-text">
+              <time datetime="12:00" class="denhaag-calendar__card-footer-time-text">
                 12.00 tot 16.00
               </time>
             </div>
             <svg
-              class="denhaag-card-calendar__item-footer-action"
+              class="denhaag-calendar__card-footer-action"
               width="20"
               height="20"
               viewBox="0 0 20 20"
@@ -502,26 +504,24 @@ import readme from "../../README.md";
               <path
                 d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                 fill="currentColor"
-              ></path>
+              />
             </svg>
+          </footer>
+        </article>
+        <article class="denhaag-calendar__card">
+          <header class="denhaag-calendar__card-header">
+            <time datetime="31-12-2023">31 december 2022</time>
+          </header>
+          <div class="denhaag-calendar__card-content">
+            <h4 class="denhaag-calendar__card-title">
+              <a class="denhaag-calendar__card-title-anchor" href="https://www.denhaag.nl">
+                Activity Title
+              </a>
+            </h4>
+            <p class="denhaag-calendar__card-description">Hier een korte beschrijving van het evenement in een zin</p>
           </div>
-        </div>
-      </div>
-      <div class="denhaag-card-calendar__item">
-        <div class="denhaag-card-calendar__item-header">
-          <time datetime="31-12-2023">31 december 2022</time>
-        </div>
-        <div class="denhaag-card-calendar__item-content">
-          <h4 class="denhaag-card-calendar__item-title">
-            <a class="denhaag-card-calendar__item-title-anchor" href="https://www.denhaag.nl">
-              Activity Title
-            </a>
-          </h4>
-          <p class="denhaag-card-calendar__item-description">
-            Hier een korte beschrijving van het evenement in een zin
-          </p>
-          <div class="denhaag-card-calendar__item-footer">
-            <div class="denhaag-card-calendar__item-footer-time">
+          <footer class="denhaag-calendar__card-footer">
+            <div class="denhaag-calendar__card-footer-time">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -530,19 +530,19 @@ import readme from "../../README.md";
                 viewBox="0 0 14 14"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="denhaag-card-calendar__item-footer-time-icon"
+                class="denhaag-calendar__card-footer-time-icon"
               >
                 <path
                   d="M6.99992 1.66536C4.0544 1.66536 1.66659 4.05318 1.66659 6.9987C1.66659 9.94422 4.0544 12.332 6.99992 12.332C9.94544 12.332 12.3333 9.94422 12.3333 6.9987C12.3333 4.05318 9.94544 1.66536 6.99992 1.66536ZM0.333252 6.9987C0.333252 3.3168 3.31802 0.332031 6.99992 0.332031C10.6818 0.332031 13.6666 3.3168 13.6666 6.9987C13.6666 10.6806 10.6818 13.6654 6.99992 13.6654C3.31802 13.6654 0.333252 10.6806 0.333252 6.9987ZM6.99992 2.9987C7.36811 2.9987 7.66659 3.29717 7.66659 3.66536V6.72256L9.47132 8.52729C9.73167 8.78764 9.73167 9.20975 9.47132 9.4701C9.21097 9.73045 8.78886 9.73045 8.52851 9.4701L6.52851 7.4701C6.40349 7.34508 6.33325 7.17551 6.33325 6.9987V3.66536C6.33325 3.29717 6.63173 2.9987 6.99992 2.9987Z"
                   fill="currentColor"
                 />
               </svg>
-              <time datetime="12:00" class="denhaag-card-calendar__item-footer-time-text">
+              <time datetime="12:00" class="denhaag-calendar__card-footer-time-text">
                 12.00 tot 16.00
               </time>
             </div>
             <svg
-              class="denhaag-card-calendar__item-footer-action"
+              class="denhaag-calendar__card-footer-action"
               width="20"
               height="20"
               viewBox="0 0 20 20"
@@ -555,12 +555,12 @@ import readme from "../../README.md";
               <path
                 d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                 fill="currentColor"
-              ></path>
+              />
             </svg>
-          </div>
-        </div>
+          </footer>
+        </article>
       </div>
-    </div>
+    </section>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -570,22 +570,22 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="3 Items">
-    <div class="denhaag-card-calendar__wrapper">
-      <div class="denhaag-card-calendar__item">
-        <div class="denhaag-card-calendar__item-header">
-          <time datetime="31-12-2023">31 december 2022</time>
-        </div>
-        <div class="denhaag-card-calendar__item-content">
-          <h4 class="denhaag-card-calendar__item-title">
-            <a class="denhaag-card-calendar__item-title-anchor" href="https://www.denhaag.nl">
-              Activity Title
-            </a>
-          </h4>
-          <p class="denhaag-card-calendar__item-description">
-            Hier een korte beschrijving van het evenement in een zin
-          </p>
-          <div class="denhaag-card-calendar__item-footer">
-            <div class="denhaag-card-calendar__item-footer-time">
+    <section class="denhaag-calendar">
+      <div class="denhaag-calendar__wrapper">
+        <article class="denhaag-calendar__card">
+          <header class="denhaag-calendar__card-header">
+            <time datetime="31-12-2023">31 december 2022</time>
+          </header>
+          <div class="denhaag-calendar__card-content">
+            <h4 class="denhaag-calendar__card-title">
+              <a class="denhaag-calendar__card-title-anchor" href="https://www.denhaag.nl">
+                Activity Title
+              </a>
+            </h4>
+            <p class="denhaag-calendar__card-description">Hier een korte beschrijving van het evenement in een zin</p>
+          </div>
+          <footer class="denhaag-calendar__card-footer">
+            <div class="denhaag-calendar__card-footer-time">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -594,19 +594,19 @@ import readme from "../../README.md";
                 viewBox="0 0 14 14"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="denhaag-card-calendar__item-footer-time-icon"
+                class="denhaag-calendar__card-footer-time-icon"
               >
                 <path
                   d="M6.99992 1.66536C4.0544 1.66536 1.66659 4.05318 1.66659 6.9987C1.66659 9.94422 4.0544 12.332 6.99992 12.332C9.94544 12.332 12.3333 9.94422 12.3333 6.9987C12.3333 4.05318 9.94544 1.66536 6.99992 1.66536ZM0.333252 6.9987C0.333252 3.3168 3.31802 0.332031 6.99992 0.332031C10.6818 0.332031 13.6666 3.3168 13.6666 6.9987C13.6666 10.6806 10.6818 13.6654 6.99992 13.6654C3.31802 13.6654 0.333252 10.6806 0.333252 6.9987ZM6.99992 2.9987C7.36811 2.9987 7.66659 3.29717 7.66659 3.66536V6.72256L9.47132 8.52729C9.73167 8.78764 9.73167 9.20975 9.47132 9.4701C9.21097 9.73045 8.78886 9.73045 8.52851 9.4701L6.52851 7.4701C6.40349 7.34508 6.33325 7.17551 6.33325 6.9987V3.66536C6.33325 3.29717 6.63173 2.9987 6.99992 2.9987Z"
                   fill="currentColor"
                 />
               </svg>
-              <time datetime="12:00" class="denhaag-card-calendar__item-footer-time-text">
+              <time datetime="12:00" class="denhaag-calendar__card-footer-time-text">
                 12.00 tot 16.00
               </time>
             </div>
             <svg
-              class="denhaag-card-calendar__item-footer-action"
+              class="denhaag-calendar__card-footer-action"
               width="20"
               height="20"
               viewBox="0 0 20 20"
@@ -619,26 +619,24 @@ import readme from "../../README.md";
               <path
                 d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                 fill="currentColor"
-              ></path>
+              />
             </svg>
+          </footer>
+        </article>
+        <article class="denhaag-calendar__card">
+          <header class="denhaag-calendar__card-header">
+            <time datetime="31-12-2023">31 december 2022</time>
+          </header>
+          <div class="denhaag-calendar__card-content">
+            <h4 class="denhaag-calendar__card-title">
+              <a class="denhaag-calendar__card-title-anchor" href="https://www.denhaag.nl">
+                Activity Title
+              </a>
+            </h4>
+            <p class="denhaag-calendar__card-description">Hier een korte beschrijving van het evenement in een zin</p>
           </div>
-        </div>
-      </div>
-      <div class="denhaag-card-calendar__item">
-        <div class="denhaag-card-calendar__item-header">
-          <time datetime="31-12-2023">31 december 2022</time>
-        </div>
-        <div class="denhaag-card-calendar__item-content">
-          <h4 class="denhaag-card-calendar__item-title">
-            <a class="denhaag-card-calendar__item-title-anchor" href="https://www.denhaag.nl">
-              Activity Title
-            </a>
-          </h4>
-          <p class="denhaag-card-calendar__item-description">
-            Hier een korte beschrijving van het evenement in een zin
-          </p>
-          <div class="denhaag-card-calendar__item-footer">
-            <div class="denhaag-card-calendar__item-footer-time">
+          <footer class="denhaag-calendar__card-footer">
+            <div class="denhaag-calendar__card-footer-time">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -647,19 +645,19 @@ import readme from "../../README.md";
                 viewBox="0 0 14 14"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="denhaag-card-calendar__item-footer-time-icon"
+                class="denhaag-calendar__card-footer-time-icon"
               >
                 <path
                   d="M6.99992 1.66536C4.0544 1.66536 1.66659 4.05318 1.66659 6.9987C1.66659 9.94422 4.0544 12.332 6.99992 12.332C9.94544 12.332 12.3333 9.94422 12.3333 6.9987C12.3333 4.05318 9.94544 1.66536 6.99992 1.66536ZM0.333252 6.9987C0.333252 3.3168 3.31802 0.332031 6.99992 0.332031C10.6818 0.332031 13.6666 3.3168 13.6666 6.9987C13.6666 10.6806 10.6818 13.6654 6.99992 13.6654C3.31802 13.6654 0.333252 10.6806 0.333252 6.9987ZM6.99992 2.9987C7.36811 2.9987 7.66659 3.29717 7.66659 3.66536V6.72256L9.47132 8.52729C9.73167 8.78764 9.73167 9.20975 9.47132 9.4701C9.21097 9.73045 8.78886 9.73045 8.52851 9.4701L6.52851 7.4701C6.40349 7.34508 6.33325 7.17551 6.33325 6.9987V3.66536C6.33325 3.29717 6.63173 2.9987 6.99992 2.9987Z"
                   fill="currentColor"
                 />
               </svg>
-              <time datetime="12:00" class="denhaag-card-calendar__item-footer-time-text">
+              <time datetime="12:00" class="denhaag-calendar__card-footer-time-text">
                 12.00 tot 16.00
               </time>
             </div>
             <svg
-              class="denhaag-card-calendar__item-footer-action"
+              class="denhaag-calendar__card-footer-action"
               width="20"
               height="20"
               viewBox="0 0 20 20"
@@ -672,26 +670,24 @@ import readme from "../../README.md";
               <path
                 d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                 fill="currentColor"
-              ></path>
+              />
             </svg>
+          </footer>
+        </article>
+        <article class="denhaag-calendar__card">
+          <header class="denhaag-calendar__card-header">
+            <time datetime="31-12-2023">31 december 2022</time>
+          </header>
+          <div class="denhaag-calendar__card-content">
+            <h4 class="denhaag-calendar__card-title">
+              <a class="denhaag-calendar__card-title-anchor" href="https://www.denhaag.nl">
+                Activity Title
+              </a>
+            </h4>
+            <p class="denhaag-calendar__card-description">Hier een korte beschrijving van het evenement in een zin</p>
           </div>
-        </div>
-      </div>
-      <div class="denhaag-card-calendar__item">
-        <div class="denhaag-card-calendar__item-header">
-          <time datetime="31-12-2023">31 december 2022</time>
-        </div>
-        <div class="denhaag-card-calendar__item-content">
-          <h4 class="denhaag-card-calendar__item-title">
-            <a class="denhaag-card-calendar__item-title-anchor" href="https://www.denhaag.nl">
-              Activity Title
-            </a>
-          </h4>
-          <p class="denhaag-card-calendar__item-description">
-            Hier een korte beschrijving van het evenement in een zin
-          </p>
-          <div class="denhaag-card-calendar__item-footer">
-            <div class="denhaag-card-calendar__item-footer-time">
+          <footer class="denhaag-calendar__card-footer">
+            <div class="denhaag-calendar__card-footer-time">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -700,19 +696,19 @@ import readme from "../../README.md";
                 viewBox="0 0 14 14"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="denhaag-card-calendar__item-footer-time-icon"
+                class="denhaag-calendar__card-footer-time-icon"
               >
                 <path
                   d="M6.99992 1.66536C4.0544 1.66536 1.66659 4.05318 1.66659 6.9987C1.66659 9.94422 4.0544 12.332 6.99992 12.332C9.94544 12.332 12.3333 9.94422 12.3333 6.9987C12.3333 4.05318 9.94544 1.66536 6.99992 1.66536ZM0.333252 6.9987C0.333252 3.3168 3.31802 0.332031 6.99992 0.332031C10.6818 0.332031 13.6666 3.3168 13.6666 6.9987C13.6666 10.6806 10.6818 13.6654 6.99992 13.6654C3.31802 13.6654 0.333252 10.6806 0.333252 6.9987ZM6.99992 2.9987C7.36811 2.9987 7.66659 3.29717 7.66659 3.66536V6.72256L9.47132 8.52729C9.73167 8.78764 9.73167 9.20975 9.47132 9.4701C9.21097 9.73045 8.78886 9.73045 8.52851 9.4701L6.52851 7.4701C6.40349 7.34508 6.33325 7.17551 6.33325 6.9987V3.66536C6.33325 3.29717 6.63173 2.9987 6.99992 2.9987Z"
                   fill="currentColor"
                 />
               </svg>
-              <time datetime="12:00" class="denhaag-card-calendar__item-footer-time-text">
+              <time datetime="12:00" class="denhaag-calendar__card-footer-time-text">
                 12.00 tot 16.00
               </time>
             </div>
             <svg
-              class="denhaag-card-calendar__item-footer-action"
+              class="denhaag-calendar__card-footer-action"
               width="20"
               height="20"
               viewBox="0 0 20 20"
@@ -725,12 +721,12 @@ import readme from "../../README.md";
               <path
                 d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                 fill="currentColor"
-              ></path>
+              />
             </svg>
-          </div>
-        </div>
+          </footer>
+        </article>
       </div>
-    </div>
+    </section>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -740,22 +736,22 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="4 Items">
-    <div class="denhaag-card-calendar__wrapper">
-      <div class="denhaag-card-calendar__item">
-        <div class="denhaag-card-calendar__item-header">
-          <time datetime="31-12-2023">31 december 2022</time>
-        </div>
-        <div class="denhaag-card-calendar__item-content">
-          <h4 class="denhaag-card-calendar__item-title">
-            <a class="denhaag-card-calendar__item-title-anchor" href="https://www.denhaag.nl">
-              Activity Title
-            </a>
-          </h4>
-          <p class="denhaag-card-calendar__item-description">
-            Hier een korte beschrijving van het evenement in een zin
-          </p>
-          <div class="denhaag-card-calendar__item-footer">
-            <div class="denhaag-card-calendar__item-footer-time">
+    <section class="denhaag-calendar">
+      <div class="denhaag-calendar__wrapper">
+        <article class="denhaag-calendar__card">
+          <header class="denhaag-calendar__card-header">
+            <time datetime="31-12-2023">31 december 2022</time>
+          </header>
+          <div class="denhaag-calendar__card-content">
+            <h4 class="denhaag-calendar__card-title">
+              <a class="denhaag-calendar__card-title-anchor" href="https://www.denhaag.nl">
+                Activity Title
+              </a>
+            </h4>
+            <p class="denhaag-calendar__card-description">Hier een korte beschrijving van het evenement in een zin</p>
+          </div>
+          <footer class="denhaag-calendar__card-footer">
+            <div class="denhaag-calendar__card-footer-time">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -764,19 +760,19 @@ import readme from "../../README.md";
                 viewBox="0 0 14 14"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="denhaag-card-calendar__item-footer-time-icon"
+                class="denhaag-calendar__card-footer-time-icon"
               >
                 <path
                   d="M6.99992 1.66536C4.0544 1.66536 1.66659 4.05318 1.66659 6.9987C1.66659 9.94422 4.0544 12.332 6.99992 12.332C9.94544 12.332 12.3333 9.94422 12.3333 6.9987C12.3333 4.05318 9.94544 1.66536 6.99992 1.66536ZM0.333252 6.9987C0.333252 3.3168 3.31802 0.332031 6.99992 0.332031C10.6818 0.332031 13.6666 3.3168 13.6666 6.9987C13.6666 10.6806 10.6818 13.6654 6.99992 13.6654C3.31802 13.6654 0.333252 10.6806 0.333252 6.9987ZM6.99992 2.9987C7.36811 2.9987 7.66659 3.29717 7.66659 3.66536V6.72256L9.47132 8.52729C9.73167 8.78764 9.73167 9.20975 9.47132 9.4701C9.21097 9.73045 8.78886 9.73045 8.52851 9.4701L6.52851 7.4701C6.40349 7.34508 6.33325 7.17551 6.33325 6.9987V3.66536C6.33325 3.29717 6.63173 2.9987 6.99992 2.9987Z"
                   fill="currentColor"
                 />
               </svg>
-              <time datetime="12:00" class="denhaag-card-calendar__item-footer-time-text">
+              <time datetime="12:00" class="denhaag-calendar__card-footer-time-text">
                 12.00 tot 16.00
               </time>
             </div>
             <svg
-              class="denhaag-card-calendar__item-footer-action"
+              class="denhaag-calendar__card-footer-action"
               width="20"
               height="20"
               viewBox="0 0 20 20"
@@ -789,26 +785,24 @@ import readme from "../../README.md";
               <path
                 d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                 fill="currentColor"
-              ></path>
+              />
             </svg>
+          </footer>
+        </article>
+        <article class="denhaag-calendar__card">
+          <header class="denhaag-calendar__card-header">
+            <time datetime="31-12-2023">31 december 2022</time>
+          </header>
+          <div class="denhaag-calendar__card-content">
+            <h4 class="denhaag-calendar__card-title">
+              <a class="denhaag-calendar__card-title-anchor" href="https://www.denhaag.nl">
+                Activity Title
+              </a>
+            </h4>
+            <p class="denhaag-calendar__card-description">Hier een korte beschrijving van het evenement in een zin</p>
           </div>
-        </div>
-      </div>
-      <div class="denhaag-card-calendar__item">
-        <div class="denhaag-card-calendar__item-header">
-          <time datetime="31-12-2023">31 december 2022</time>
-        </div>
-        <div class="denhaag-card-calendar__item-content">
-          <h4 class="denhaag-card-calendar__item-title">
-            <a class="denhaag-card-calendar__item-title-anchor" href="https://www.denhaag.nl">
-              Activity Title
-            </a>
-          </h4>
-          <p class="denhaag-card-calendar__item-description">
-            Hier een korte beschrijving van het evenement in een zin
-          </p>
-          <div class="denhaag-card-calendar__item-footer">
-            <div class="denhaag-card-calendar__item-footer-time">
+          <footer class="denhaag-calendar__card-footer">
+            <div class="denhaag-calendar__card-footer-time">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -817,19 +811,19 @@ import readme from "../../README.md";
                 viewBox="0 0 14 14"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="denhaag-card-calendar__item-footer-time-icon"
+                class="denhaag-calendar__card-footer-time-icon"
               >
                 <path
                   d="M6.99992 1.66536C4.0544 1.66536 1.66659 4.05318 1.66659 6.9987C1.66659 9.94422 4.0544 12.332 6.99992 12.332C9.94544 12.332 12.3333 9.94422 12.3333 6.9987C12.3333 4.05318 9.94544 1.66536 6.99992 1.66536ZM0.333252 6.9987C0.333252 3.3168 3.31802 0.332031 6.99992 0.332031C10.6818 0.332031 13.6666 3.3168 13.6666 6.9987C13.6666 10.6806 10.6818 13.6654 6.99992 13.6654C3.31802 13.6654 0.333252 10.6806 0.333252 6.9987ZM6.99992 2.9987C7.36811 2.9987 7.66659 3.29717 7.66659 3.66536V6.72256L9.47132 8.52729C9.73167 8.78764 9.73167 9.20975 9.47132 9.4701C9.21097 9.73045 8.78886 9.73045 8.52851 9.4701L6.52851 7.4701C6.40349 7.34508 6.33325 7.17551 6.33325 6.9987V3.66536C6.33325 3.29717 6.63173 2.9987 6.99992 2.9987Z"
                   fill="currentColor"
                 />
               </svg>
-              <time datetime="12:00" class="denhaag-card-calendar__item-footer-time-text">
+              <time datetime="12:00" class="denhaag-calendar__card-footer-time-text">
                 12.00 tot 16.00
               </time>
             </div>
             <svg
-              class="denhaag-card-calendar__item-footer-action"
+              class="denhaag-calendar__card-footer-action"
               width="20"
               height="20"
               viewBox="0 0 20 20"
@@ -842,26 +836,24 @@ import readme from "../../README.md";
               <path
                 d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                 fill="currentColor"
-              ></path>
+              />
             </svg>
+          </footer>
+        </article>
+        <article class="denhaag-calendar__card">
+          <header class="denhaag-calendar__card-header">
+            <time datetime="31-12-2023">31 december 2022</time>
+          </header>
+          <div class="denhaag-calendar__card-content">
+            <h4 class="denhaag-calendar__card-title">
+              <a class="denhaag-calendar__card-title-anchor" href="https://www.denhaag.nl">
+                Activity Title
+              </a>
+            </h4>
+            <p class="denhaag-calendar__card-description">Hier een korte beschrijving van het evenement in een zin</p>
           </div>
-        </div>
-      </div>
-      <div class="denhaag-card-calendar__item">
-        <div class="denhaag-card-calendar__item-header">
-          <time datetime="31-12-2023">31 december 2022</time>
-        </div>
-        <div class="denhaag-card-calendar__item-content">
-          <h4 class="denhaag-card-calendar__item-title">
-            <a class="denhaag-card-calendar__item-title-anchor" href="https://www.denhaag.nl">
-              Activity Title
-            </a>
-          </h4>
-          <p class="denhaag-card-calendar__item-description">
-            Hier een korte beschrijving van het evenement in een zin
-          </p>
-          <div class="denhaag-card-calendar__item-footer">
-            <div class="denhaag-card-calendar__item-footer-time">
+          <footer class="denhaag-calendar__card-footer">
+            <div class="denhaag-calendar__card-footer-time">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -870,19 +862,19 @@ import readme from "../../README.md";
                 viewBox="0 0 14 14"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="denhaag-card-calendar__item-footer-time-icon"
+                class="denhaag-calendar__card-footer-time-icon"
               >
                 <path
                   d="M6.99992 1.66536C4.0544 1.66536 1.66659 4.05318 1.66659 6.9987C1.66659 9.94422 4.0544 12.332 6.99992 12.332C9.94544 12.332 12.3333 9.94422 12.3333 6.9987C12.3333 4.05318 9.94544 1.66536 6.99992 1.66536ZM0.333252 6.9987C0.333252 3.3168 3.31802 0.332031 6.99992 0.332031C10.6818 0.332031 13.6666 3.3168 13.6666 6.9987C13.6666 10.6806 10.6818 13.6654 6.99992 13.6654C3.31802 13.6654 0.333252 10.6806 0.333252 6.9987ZM6.99992 2.9987C7.36811 2.9987 7.66659 3.29717 7.66659 3.66536V6.72256L9.47132 8.52729C9.73167 8.78764 9.73167 9.20975 9.47132 9.4701C9.21097 9.73045 8.78886 9.73045 8.52851 9.4701L6.52851 7.4701C6.40349 7.34508 6.33325 7.17551 6.33325 6.9987V3.66536C6.33325 3.29717 6.63173 2.9987 6.99992 2.9987Z"
                   fill="currentColor"
                 />
               </svg>
-              <time datetime="12:00" class="denhaag-card-calendar__item-footer-time-text">
+              <time datetime="12:00" class="denhaag-calendar__card-footer-time-text">
                 12.00 tot 16.00
               </time>
             </div>
             <svg
-              class="denhaag-card-calendar__item-footer-action"
+              class="denhaag-calendar__card-footer-action"
               width="20"
               height="20"
               viewBox="0 0 20 20"
@@ -895,26 +887,24 @@ import readme from "../../README.md";
               <path
                 d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                 fill="currentColor"
-              ></path>
+              />
             </svg>
+          </footer>
+        </article>
+        <article class="denhaag-calendar__card">
+          <header class="denhaag-calendar__card-header">
+            <time datetime="31-12-2023">31 december 2022</time>
+          </header>
+          <div class="denhaag-calendar__card-content">
+            <h4 class="denhaag-calendar__card-title">
+              <a class="denhaag-calendar__card-title-anchor" href="https://www.denhaag.nl">
+                Activity Title
+              </a>
+            </h4>
+            <p class="denhaag-calendar__card-description">Hier een korte beschrijving van het evenement in een zin</p>
           </div>
-        </div>
-      </div>
-      <div class="denhaag-card-calendar__item">
-        <div class="denhaag-card-calendar__item-header">
-          <time datetime="31-12-2023">31 december 2022</time>
-        </div>
-        <div class="denhaag-card-calendar__item-content">
-          <h4 class="denhaag-card-calendar__item-title">
-            <a class="denhaag-card-calendar__item-title-anchor" href="https://www.denhaag.nl">
-              Activity Title
-            </a>
-          </h4>
-          <p class="denhaag-card-calendar__item-description">
-            Hier een korte beschrijving van het evenement in een zin
-          </p>
-          <div class="denhaag-card-calendar__item-footer">
-            <div class="denhaag-card-calendar__item-footer-time">
+          <footer class="denhaag-calendar__card-footer">
+            <div class="denhaag-calendar__card-footer-time">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -923,19 +913,19 @@ import readme from "../../README.md";
                 viewBox="0 0 14 14"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="denhaag-card-calendar__item-footer-time-icon"
+                class="denhaag-calendar__card-footer-time-icon"
               >
                 <path
                   d="M6.99992 1.66536C4.0544 1.66536 1.66659 4.05318 1.66659 6.9987C1.66659 9.94422 4.0544 12.332 6.99992 12.332C9.94544 12.332 12.3333 9.94422 12.3333 6.9987C12.3333 4.05318 9.94544 1.66536 6.99992 1.66536ZM0.333252 6.9987C0.333252 3.3168 3.31802 0.332031 6.99992 0.332031C10.6818 0.332031 13.6666 3.3168 13.6666 6.9987C13.6666 10.6806 10.6818 13.6654 6.99992 13.6654C3.31802 13.6654 0.333252 10.6806 0.333252 6.9987ZM6.99992 2.9987C7.36811 2.9987 7.66659 3.29717 7.66659 3.66536V6.72256L9.47132 8.52729C9.73167 8.78764 9.73167 9.20975 9.47132 9.4701C9.21097 9.73045 8.78886 9.73045 8.52851 9.4701L6.52851 7.4701C6.40349 7.34508 6.33325 7.17551 6.33325 6.9987V3.66536C6.33325 3.29717 6.63173 2.9987 6.99992 2.9987Z"
                   fill="currentColor"
                 />
               </svg>
-              <time datetime="12:00" class="denhaag-card-calendar__item-footer-time-text">
+              <time datetime="12:00" class="denhaag-calendar__card-footer-time-text">
                 12.00 tot 16.00
               </time>
             </div>
             <svg
-              class="denhaag-card-calendar__item-footer-action"
+              class="denhaag-calendar__card-footer-action"
               width="20"
               height="20"
               viewBox="0 0 20 20"
@@ -948,12 +938,12 @@ import readme from "../../README.md";
               <path
                 d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                 fill="currentColor"
-              ></path>
+              />
             </svg>
-          </div>
-        </div>
+          </footer>
+        </article>
       </div>
-    </div>
+    </section>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
@@ -963,22 +953,22 @@ import readme from "../../README.md";
 <Canvas>
   {/* eslint-disable react/no-unknown-property */}
   <Story name="5 Items">
-    <div class="denhaag-card-calendar__wrapper">
-      <div class="denhaag-card-calendar__item">
-        <div class="denhaag-card-calendar__item-header">
-          <time datetime="31-12-2023">31 december 2022</time>
-        </div>
-        <div class="denhaag-card-calendar__item-content">
-          <h4 class="denhaag-card-calendar__item-title">
-            <a class="denhaag-card-calendar__item-title-anchor" href="https://www.denhaag.nl">
-              Activity Title
-            </a>
-          </h4>
-          <p class="denhaag-card-calendar__item-description">
-            Hier een korte beschrijving van het evenement in een zin
-          </p>
-          <div class="denhaag-card-calendar__item-footer">
-            <div class="denhaag-card-calendar__item-footer-time">
+    <section class="denhaag-calendar">
+      <div class="denhaag-calendar__wrapper">
+        <article class="denhaag-calendar__card">
+          <header class="denhaag-calendar__card-header">
+            <time datetime="31-12-2023">31 december 2022</time>
+          </header>
+          <div class="denhaag-calendar__card-content">
+            <h4 class="denhaag-calendar__card-title">
+              <a class="denhaag-calendar__card-title-anchor" href="https://www.denhaag.nl">
+                Activity Title
+              </a>
+            </h4>
+            <p class="denhaag-calendar__card-description">Hier een korte beschrijving van het evenement in een zin</p>
+          </div>
+          <footer class="denhaag-calendar__card-footer">
+            <div class="denhaag-calendar__card-footer-time">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -987,19 +977,19 @@ import readme from "../../README.md";
                 viewBox="0 0 14 14"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="denhaag-card-calendar__item-footer-time-icon"
+                class="denhaag-calendar__card-footer-time-icon"
               >
                 <path
                   d="M6.99992 1.66536C4.0544 1.66536 1.66659 4.05318 1.66659 6.9987C1.66659 9.94422 4.0544 12.332 6.99992 12.332C9.94544 12.332 12.3333 9.94422 12.3333 6.9987C12.3333 4.05318 9.94544 1.66536 6.99992 1.66536ZM0.333252 6.9987C0.333252 3.3168 3.31802 0.332031 6.99992 0.332031C10.6818 0.332031 13.6666 3.3168 13.6666 6.9987C13.6666 10.6806 10.6818 13.6654 6.99992 13.6654C3.31802 13.6654 0.333252 10.6806 0.333252 6.9987ZM6.99992 2.9987C7.36811 2.9987 7.66659 3.29717 7.66659 3.66536V6.72256L9.47132 8.52729C9.73167 8.78764 9.73167 9.20975 9.47132 9.4701C9.21097 9.73045 8.78886 9.73045 8.52851 9.4701L6.52851 7.4701C6.40349 7.34508 6.33325 7.17551 6.33325 6.9987V3.66536C6.33325 3.29717 6.63173 2.9987 6.99992 2.9987Z"
                   fill="currentColor"
                 />
               </svg>
-              <time datetime="12:00" class="denhaag-card-calendar__item-footer-time-text">
+              <time datetime="12:00" class="denhaag-calendar__card-footer-time-text">
                 12.00 tot 16.00
               </time>
             </div>
             <svg
-              class="denhaag-card-calendar__item-footer-action"
+              class="denhaag-calendar__card-footer-action"
               width="20"
               height="20"
               viewBox="0 0 20 20"
@@ -1012,26 +1002,23 @@ import readme from "../../README.md";
               <path
                 d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                 fill="currentColor"
-              ></path>
+              />
             </svg>
+          </footer>
+        </article>
+        <article class="denhaag-calendar__card">
+          <header class="denhaag-calendar__card-header">
+            <time datetime="31-12-2023">31 december 2022</time>
+          </header>
+          <div class="denhaag-calendar__card-content">
+            <h4 class="denhaag-calendar__card-title">
+              <a class="denhaag-calendar__card-title-anchor" href="https://www.denhaag.nl">
+                Uit je dak dat kun je altijd wel in de Gemeente Den Haag
+              </a>
+            </h4>
           </div>
-        </div>
-      </div>
-      <div class="denhaag-card-calendar__item">
-        <div class="denhaag-card-calendar__item-header">
-          <time datetime="31-12-2023">31 december 2022</time>
-        </div>
-        <div class="denhaag-card-calendar__item-content">
-          <h4 class="denhaag-card-calendar__item-title">
-            <a class="denhaag-card-calendar__item-title-anchor" href="https://www.denhaag.nl">
-              Activity Title
-            </a>
-          </h4>
-          <p class="denhaag-card-calendar__item-description">
-            Hier een korte beschrijving van het evenement in een zin
-          </p>
-          <div class="denhaag-card-calendar__item-footer">
-            <div class="denhaag-card-calendar__item-footer-time">
+          <footer class="denhaag-calendar__card-footer">
+            <div class="denhaag-calendar__card-footer-time">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -1040,19 +1027,19 @@ import readme from "../../README.md";
                 viewBox="0 0 14 14"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="denhaag-card-calendar__item-footer-time-icon"
+                class="denhaag-calendar__card-footer-time-icon"
               >
                 <path
                   d="M6.99992 1.66536C4.0544 1.66536 1.66659 4.05318 1.66659 6.9987C1.66659 9.94422 4.0544 12.332 6.99992 12.332C9.94544 12.332 12.3333 9.94422 12.3333 6.9987C12.3333 4.05318 9.94544 1.66536 6.99992 1.66536ZM0.333252 6.9987C0.333252 3.3168 3.31802 0.332031 6.99992 0.332031C10.6818 0.332031 13.6666 3.3168 13.6666 6.9987C13.6666 10.6806 10.6818 13.6654 6.99992 13.6654C3.31802 13.6654 0.333252 10.6806 0.333252 6.9987ZM6.99992 2.9987C7.36811 2.9987 7.66659 3.29717 7.66659 3.66536V6.72256L9.47132 8.52729C9.73167 8.78764 9.73167 9.20975 9.47132 9.4701C9.21097 9.73045 8.78886 9.73045 8.52851 9.4701L6.52851 7.4701C6.40349 7.34508 6.33325 7.17551 6.33325 6.9987V3.66536C6.33325 3.29717 6.63173 2.9987 6.99992 2.9987Z"
                   fill="currentColor"
                 />
               </svg>
-              <time datetime="12:00" class="denhaag-card-calendar__item-footer-time-text">
+              <time datetime="12:00" class="denhaag-calendar__card-footer-time-text">
                 12.00 tot 16.00
               </time>
             </div>
             <svg
-              class="denhaag-card-calendar__item-footer-action"
+              class="denhaag-calendar__card-footer-action"
               width="20"
               height="20"
               viewBox="0 0 20 20"
@@ -1065,27 +1052,27 @@ import readme from "../../README.md";
               <path
                 d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                 fill="currentColor"
-              ></path>
+              />
             </svg>
+          </footer>
+        </article>
+        <article class="denhaag-calendar__card">
+          <header class="denhaag-calendar__card-header">
+            <time datetime="31-12-2023">31 december 2022</time>
+          </header>
+          <div class="denhaag-calendar__card-content">
+            <h4 class="denhaag-calendar__card-title">
+              <a class="denhaag-calendar__card-title-anchor" href="https://www.denhaag.nl">
+                Activity Title
+              </a>
+            </h4>
+            <p class="denhaag-calendar__card-description">
+              Hier een korte beschrijving van het evenement in een zin Overigens ben ik ook een card met iets meer
+              content, maar de andere cards in deze row moeten hun hoogte behouden.
+            </p>
           </div>
-        </div>
-      </div>
-      <div class="denhaag-card-calendar__item">
-        <div class="denhaag-card-calendar__item-header">
-          <time datetime="31-12-2023">31 december 2022</time>
-        </div>
-        <div class="denhaag-card-calendar__item-content">
-          <h4 class="denhaag-card-calendar__item-title">
-            <a class="denhaag-card-calendar__item-title-anchor" href="https://www.denhaag.nl">
-              Activity Title
-            </a>
-          </h4>
-          <p class="denhaag-card-calendar__item-description">
-            Hier een korte beschrijving van het evenement in een zin Overigens ben ik ook een card met iets meer
-            content, maar de andere cards in deze row moeten hun hoogte behouden.
-          </p>
-          <div class="denhaag-card-calendar__item-footer">
-            <div class="denhaag-card-calendar__item-footer-time">
+          <footer class="denhaag-calendar__card-footer">
+            <div class="denhaag-calendar__card-footer-time">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -1094,19 +1081,19 @@ import readme from "../../README.md";
                 viewBox="0 0 14 14"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="denhaag-card-calendar__item-footer-time-icon"
+                class="denhaag-calendar__card-footer-time-icon"
               >
                 <path
                   d="M6.99992 1.66536C4.0544 1.66536 1.66659 4.05318 1.66659 6.9987C1.66659 9.94422 4.0544 12.332 6.99992 12.332C9.94544 12.332 12.3333 9.94422 12.3333 6.9987C12.3333 4.05318 9.94544 1.66536 6.99992 1.66536ZM0.333252 6.9987C0.333252 3.3168 3.31802 0.332031 6.99992 0.332031C10.6818 0.332031 13.6666 3.3168 13.6666 6.9987C13.6666 10.6806 10.6818 13.6654 6.99992 13.6654C3.31802 13.6654 0.333252 10.6806 0.333252 6.9987ZM6.99992 2.9987C7.36811 2.9987 7.66659 3.29717 7.66659 3.66536V6.72256L9.47132 8.52729C9.73167 8.78764 9.73167 9.20975 9.47132 9.4701C9.21097 9.73045 8.78886 9.73045 8.52851 9.4701L6.52851 7.4701C6.40349 7.34508 6.33325 7.17551 6.33325 6.9987V3.66536C6.33325 3.29717 6.63173 2.9987 6.99992 2.9987Z"
                   fill="currentColor"
                 />
               </svg>
-              <time datetime="12:00" class="denhaag-card-calendar__item-footer-time-text">
+              <time datetime="12:00" class="denhaag-calendar__card-footer-time-text">
                 12.00 tot 16.00
               </time>
             </div>
             <svg
-              class="denhaag-card-calendar__item-footer-action"
+              class="denhaag-calendar__card-footer-action"
               width="20"
               height="20"
               viewBox="0 0 20 20"
@@ -1119,26 +1106,24 @@ import readme from "../../README.md";
               <path
                 d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                 fill="currentColor"
-              ></path>
+              />
             </svg>
+          </footer>
+        </article>
+        <article class="denhaag-calendar__card">
+          <header class="denhaag-calendar__card-header">
+            <time datetime="31-12-2023">31 december 2022</time>
+          </header>
+          <div class="denhaag-calendar__card-content">
+            <h4 class="denhaag-calendar__card-title">
+              <a class="denhaag-calendar__card-title-anchor" href="https://www.denhaag.nl">
+                Activity Title
+              </a>
+            </h4>
+            <p class="denhaag-calendar__card-description">Hier een korte beschrijving van het evenement in een zin.</p>
           </div>
-        </div>
-      </div>
-      <div class="denhaag-card-calendar__item">
-        <div class="denhaag-card-calendar__item-header">
-          <time datetime="31-12-2023">31 december 2022</time>
-        </div>
-        <div class="denhaag-card-calendar__item-content">
-          <h4 class="denhaag-card-calendar__item-title">
-            <a class="denhaag-card-calendar__item-title-anchor" href="https://www.denhaag.nl">
-              Activity Title
-            </a>
-          </h4>
-          <p class="denhaag-card-calendar__item-description">
-            Hier een korte beschrijving van het evenement in een zin.
-          </p>
-          <div class="denhaag-card-calendar__item-footer">
-            <div class="denhaag-card-calendar__item-footer-time">
+          <footer class="denhaag-calendar__card-footer">
+            <div class="denhaag-calendar__card-footer-time">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -1147,19 +1132,19 @@ import readme from "../../README.md";
                 viewBox="0 0 14 14"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="denhaag-card-calendar__item-footer-time-icon"
+                class="denhaag-calendar__card-footer-time-icon"
               >
                 <path
                   d="M6.99992 1.66536C4.0544 1.66536 1.66659 4.05318 1.66659 6.9987C1.66659 9.94422 4.0544 12.332 6.99992 12.332C9.94544 12.332 12.3333 9.94422 12.3333 6.9987C12.3333 4.05318 9.94544 1.66536 6.99992 1.66536ZM0.333252 6.9987C0.333252 3.3168 3.31802 0.332031 6.99992 0.332031C10.6818 0.332031 13.6666 3.3168 13.6666 6.9987C13.6666 10.6806 10.6818 13.6654 6.99992 13.6654C3.31802 13.6654 0.333252 10.6806 0.333252 6.9987ZM6.99992 2.9987C7.36811 2.9987 7.66659 3.29717 7.66659 3.66536V6.72256L9.47132 8.52729C9.73167 8.78764 9.73167 9.20975 9.47132 9.4701C9.21097 9.73045 8.78886 9.73045 8.52851 9.4701L6.52851 7.4701C6.40349 7.34508 6.33325 7.17551 6.33325 6.9987V3.66536C6.33325 3.29717 6.63173 2.9987 6.99992 2.9987Z"
                   fill="currentColor"
                 />
               </svg>
-              <time datetime="12:00" class="denhaag-card-calendar__item-footer-time-text">
+              <time datetime="12:00" class="denhaag-calendar__card-footer-time-text">
                 12.00 tot 16.00
               </time>
             </div>
             <svg
-              class="denhaag-card-calendar__item-footer-action"
+              class="denhaag-calendar__card-footer-action"
               width="20"
               height="20"
               viewBox="0 0 20 20"
@@ -1172,26 +1157,24 @@ import readme from "../../README.md";
               <path
                 d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                 fill="currentColor"
-              ></path>
+              />
             </svg>
+          </footer>
+        </article>
+        <article class="denhaag-calendar__card">
+          <header class="denhaag-calendar__card-header">
+            <time datetime="31-12-2023">31 december 2022</time>
+          </header>
+          <div class="denhaag-calendar__card-content">
+            <h4 class="denhaag-calendar__card-title">
+              <a class="denhaag-calendar__card-title-anchor" href="https://www.denhaag.nl">
+                Activity Title
+              </a>
+            </h4>
+            <p class="denhaag-calendar__card-description">Hier een korte beschrijving van het evenement in een zin</p>
           </div>
-        </div>
-      </div>
-      <div class="denhaag-card-calendar__item">
-        <div class="denhaag-card-calendar__item-header">
-          <time datetime="31-12-2023">31 december 2022</time>
-        </div>
-        <div class="denhaag-card-calendar__item-content">
-          <h4 class="denhaag-card-calendar__item-title">
-            <a class="denhaag-card-calendar__item-title-anchor" href="https://www.denhaag.nl">
-              Activity Title
-            </a>
-          </h4>
-          <p class="denhaag-card-calendar__item-description">
-            Hier een korte beschrijving van het evenement in een zin
-          </p>
-          <div class="denhaag-card-calendar__item-footer">
-            <div class="denhaag-card-calendar__item-footer-time">
+          <footer class="denhaag-calendar__card-footer">
+            <div class="denhaag-calendar__card-footer-time">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -1200,19 +1183,19 @@ import readme from "../../README.md";
                 viewBox="0 0 14 14"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="denhaag-card-calendar__item-footer-time-icon"
+                class="denhaag-calendar__card-footer-time-icon"
               >
                 <path
                   d="M6.99992 1.66536C4.0544 1.66536 1.66659 4.05318 1.66659 6.9987C1.66659 9.94422 4.0544 12.332 6.99992 12.332C9.94544 12.332 12.3333 9.94422 12.3333 6.9987C12.3333 4.05318 9.94544 1.66536 6.99992 1.66536ZM0.333252 6.9987C0.333252 3.3168 3.31802 0.332031 6.99992 0.332031C10.6818 0.332031 13.6666 3.3168 13.6666 6.9987C13.6666 10.6806 10.6818 13.6654 6.99992 13.6654C3.31802 13.6654 0.333252 10.6806 0.333252 6.9987ZM6.99992 2.9987C7.36811 2.9987 7.66659 3.29717 7.66659 3.66536V6.72256L9.47132 8.52729C9.73167 8.78764 9.73167 9.20975 9.47132 9.4701C9.21097 9.73045 8.78886 9.73045 8.52851 9.4701L6.52851 7.4701C6.40349 7.34508 6.33325 7.17551 6.33325 6.9987V3.66536C6.33325 3.29717 6.63173 2.9987 6.99992 2.9987Z"
                   fill="currentColor"
                 />
               </svg>
-              <time datetime="12:00" class="denhaag-card-calendar__item-footer-time-text">
+              <time datetime="12:00" class="denhaag-calendar__card-footer-time-text">
                 12.00 tot 16.00
               </time>
             </div>
             <svg
-              class="denhaag-card-calendar__item-footer-action"
+              class="denhaag-calendar__card-footer-action"
               width="20"
               height="20"
               viewBox="0 0 20 20"
@@ -1225,12 +1208,12 @@ import readme from "../../README.md";
               <path
                 d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                 fill="currentColor"
-              ></path>
+              />
             </svg>
-          </div>
-        </div>
+          </footer>
+        </article>
       </div>
-    </div>
+    </section>
   </Story>
   {/* eslint-enable react/no-unknown-property */}
 </Canvas>
