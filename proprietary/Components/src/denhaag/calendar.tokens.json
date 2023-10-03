@@ -30,7 +30,7 @@
           "value": "{denhaag.space.block.3xl}"
         }
       },
-      "item": {
+      "card": {
         "gap": {
           "value": "{denhaag.space.block.md}"
         },
