@@ -9,6 +9,7 @@
   font-family: var(--denhaag-tabs-tab-font-family);
   line-height: var(--denhaag-tabs-tab-line-height);
   position: relative;
+  cursor: var(--denhaag-tabs-tab-cursor, default);
 }
 
 .denhaag-tabs__tab:hover {
