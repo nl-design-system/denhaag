@@ -1,0 +1,20 @@
+.denhaag-theme {
+  .utrecht-heading-1,
+  .utrecht-heading-2,
+  .utrecht-heading-3,
+  .utrecht-heading-4,
+  .utrecht-heading-5,
+  .utrecht-heading-6,
+  .utrecht-paragraph {
+    /* TODO: Move to container element, make spacing optional */
+    --utrecht-space-around: 1;
+  }
+}
+
+@media (width <= 768px) {
+  .denhaag-theme {
+    --utrecht-heading-1-font-size: var(--denhaag-typography-mobile-scale-3xl-font-size);
+    --utrecht-heading-2-font-size: var(--denhaag-typography-mobile-scale-2xl-font-size);
+    --utrecht-heading-3-font-size: var(--denhaag-typography-mobile-scale-xl-font-size);
+  }
+}
