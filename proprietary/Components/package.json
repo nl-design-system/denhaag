@@ -16,7 +16,8 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "scripts": {
-    "build": "npm-run-all build:*",
+    "build": "npm-run-all --sequential build:style-dictionary build:css build:ts",
+    "build:css": "rollup -c rollup.config.mjs",
     "build:ts": "tsc -b",
     "build:style-dictionary": "style-dictionary build --config style-dictionary.config.js",
     "clean": "rimraf dist tsconfig.tsbuildinfo",
