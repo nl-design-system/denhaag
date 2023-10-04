@@ -47,6 +47,20 @@
           }
         }
       ]
+    },
+    "scss-theme": {
+      "transforms": ["attribute/cti", "name/cti/kebab", "color/hsl-4"],
+      "buildPath": "dist/",
+      "files": [
+        {
+          "destination": "_mixin.scss",
+          "format": "css/variables",
+          "options": {
+            "selector": "@mixin denhaag-theme",
+            "outputReferences": true
+          }
+        }
+      ]
     }
   }
 }
