@@ -10,22 +10,3 @@
 @import "~@utrecht/components/dist/heading-3/css";
 @import "~@utrecht/components/dist/heading-4/css";
 @import "~@utrecht/components/dist/heading-5/css";
-
-.utrecht-heading-1,
-.utrecht-heading-2,
-.utrecht-heading-3,
-.utrecht-heading-4,
-.utrecht-heading-5 {
-  /* TODO: Move to container element, make spacing optional */
-  --utrecht-space-around: 1;
-
-  font-family: var(--utrecht-heading-font-family);
-}
-
-@media (width <= 768px) {
-  .denhaag-theme {
-    --utrecht-heading-1-font-size: var(--denhaag-typography-mobile-scale-3xl-font-size);
-    --utrecht-heading-2-font-size: var(--denhaag-typography-mobile-scale-2xl-font-size);
-    --utrecht-heading-3-font-size: var(--denhaag-typography-mobile-scale-xl-font-size);
-  }
-}
