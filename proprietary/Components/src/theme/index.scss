@@ -1,4 +1,8 @@
+@import "../../dist/mixin";
+
 .denhaag-theme {
+  @include denhaag-theme;
+
   .utrecht-heading-1,
   .utrecht-heading-2,
   .utrecht-heading-3,
