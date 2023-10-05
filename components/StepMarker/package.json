@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/step-marker",
-  "version": "0.0.1-alpha.47",
+  "version": "0.0.1-alpha.48",
   "description": "An atomic Step Marker component used in Status and Form Progress Indicator",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
