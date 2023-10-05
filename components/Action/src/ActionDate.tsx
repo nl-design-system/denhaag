@@ -1,5 +1,5 @@
 import React from 'react';
-import { format, differenceInDays } from 'date-fns';
+import { format, differenceInCalendarDays } from 'date-fns';
 import { nl } from 'date-fns/locale';
 import { AlertTriangleFilledIcon } from '@gemeente-denhaag/icons';
 import { Time } from './index';
@@ -13,7 +13,7 @@ interface Props {
 
 export const ActionDate = ({ dateTime, now = new Date().toISOString(), relative = false, locale = nl }: Props) => {
   const date = new Date(dateTime);
-  const daysDifference = differenceInDays(date, new Date(now));
+  const daysDifference = differenceInCalendarDays(date, new Date(now));
 
   if (relative) {
     if (daysDifference < 0) return null;
