@@ -34,6 +34,8 @@ import { ButtonLink } from "@utrecht/component-library-react";
 
 import clsx from "clsx";
 
+import "./Messages-page.scss";
+
 <Meta
   title="Templates/Messages page"
   parameters={{
@@ -198,6 +200,7 @@ export const newsletterData = {
   buttonLabel: "Aanmelden nieuwsbrief",
   href: "#",
 };
+
 export const contactData = {
   title: "Contact",
   links: [
@@ -207,6 +210,37 @@ export const contactData = {
   buttonLabel: "Contactpagina",
   href: "https://www.denhaag.nl/nl/bestuur-en-organisatie/contact-met-de-gemeente.htm",
 };
+
+export const currentDate = "2023-10-05T06:41:34.427Z";
+export const messages = [
+  {
+    new: true,
+    title: "Herinnering: Informatie geven voor uw aanvraag subsidie geluidsisolatie",
+    dateTime: "2023-10-05T06:41:34.427Z",
+    link: "#example",
+  },
+  {
+    new: true,
+    title: "Betalen van uw parkeerbon",
+    dateTime: "2023-10-04T19:47:36.593Z",
+    link: "#example",
+  },
+  {
+    title: "Informatie geven voor uw aanvraag Ooievaarspas",
+    dateTime: "2023-09-30T19:47:36.593Z",
+    link: "#example",
+  },
+  {
+    title: "Tip: recht op subsidie",
+    dateTime: "2023-08-28T19:47:36.593Z",
+    link: "#example",
+  },
+  {
+    title: "Informatie geven voor uw aanvraag subsidie geluidsisolatie",
+    dateTime: "2023-06-15T19:47:36.593Z",
+    link: "#example",
+  },
+];
 
 export const copyright = "© 2022 Gemeente Den Haag";
 
@@ -254,6 +288,11 @@ export const copyright = "© 2022 Gemeente Den Haag";
           </Sidenav>
           <main className="denhaag-page-content__main">
             <Heading2>Mijn berichten</Heading2>
+            {messages.map((m) => (
+              <Action link={m.link} dateTime={m.dateTime} now={currentDate}>
+                {m.new ? <strong>{m.title}</strong> : m.title}
+              </Action>
+            ))}
           </main>
         </ResponsiveContent>
         <PageFooter>
