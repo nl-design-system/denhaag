@@ -34,6 +34,13 @@
     }
   }
 
+  &__content {
+    b,
+    strong {
+      font-weight: var(--denhaag-action-content-bold-font-weight);
+    }
+  }
+
   &__date {
     display: flex;
     align-items: center;

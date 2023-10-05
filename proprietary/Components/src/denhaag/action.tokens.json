@@ -25,9 +25,11 @@
       "border-style": { "value": "solid" },
       "border-width": { "value": "1px" },
       "border-color": { "value": "{denhaag.color.grey.2}" },
-      "title": {
-        "font-weight": {
-          "value": "{denhaag.typography.weight.semibold}"
+      "content": {
+        "bold": {
+          "font-weight": {
+            "value": "{denhaag.typography.weight.semibold}"
+          }
         }
       },
       "details": {

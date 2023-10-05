@@ -4,4 +4,6 @@ interface ActionContentProps {
   children: React.ReactNode;
 }
 
-export const ActionContent = ({ children }: ActionContentProps) => <div>{children}</div>;
+export const ActionContent = ({ children }: ActionContentProps) => (
+  <div className="denhaag-action__content">{children}</div>
+);
