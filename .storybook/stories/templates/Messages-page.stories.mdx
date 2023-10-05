@@ -30,6 +30,7 @@ import { Status } from "../../../components/ProcessSteps/src";
 import { File } from "../../../components/File/src";
 import { Action } from "../../../components/Action/src";
 import { Button } from "../../../components/Button/src";
+import { Table, TableHead, TableHeader, TableRow } from "../../../components/Table/src";
 import { ButtonLink } from "@utrecht/component-library-react";
 
 import clsx from "clsx";
@@ -288,6 +289,14 @@ export const copyright = "© 2022 Gemeente Den Haag";
           </Sidenav>
           <main className="denhaag-page-content__main">
             <Heading2>Mijn berichten</Heading2>
+            <Table className="denhaag-page-content__table">
+              <TableHead>
+                <TableRow>
+                  <TableHeader>Onderwerp</TableHeader>
+                  <TableHeader className="denhaag-page-content__table-header--right">Datum bericht</TableHeader>
+                </TableRow>
+              </TableHead>
+            </Table>
             {messages.map((m) => (
               <Action link={m.link} dateTime={m.dateTime} now={currentDate}>
                 {m.new ? <strong>{m.title}</strong> : m.title}

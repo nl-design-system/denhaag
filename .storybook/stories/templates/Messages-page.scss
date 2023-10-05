@@ -2,4 +2,16 @@
   .utrecht-heading-2:first-child {
     --utrecht-heading-2-margin-block-end: 24px;
   }
+
+  &__table {
+    display: none;
+
+    @media (width >= 768px) {
+      display: table;
+    }
+  }
+
+  &__table-header--right {
+    text-align: end;
+  }
 }
