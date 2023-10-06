@@ -5,11 +5,11 @@
 
 .denhaag-contact-timeline {
   .denhaag-contact-timeline__step-header__date {
-    width: 96px;
+    min-width: 96px;
   }
 
   .denhaag-contact-timeline__step-header__channel {
-    width: 80px;
+    min-width: 80px;
   }
 
   .denhaag-step-marker__connector--main-to-main {

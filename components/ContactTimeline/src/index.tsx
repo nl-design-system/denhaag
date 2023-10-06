@@ -1,10 +1,16 @@
 import React, { Key, OlHTMLAttributes, ReactNode } from 'react';
 import { StepMarker, StepMarkerConnector } from '@gemeente-denhaag/step-marker';
 import { Step, StepHeader, StepHeading, StepBody } from '@gemeente-denhaag/process-steps';
+import { ChevronDownIcon } from '@gemeente-denhaag/icons';
 import { format, differenceInDays } from 'date-fns';
 import { nl } from 'date-fns/locale';
 import clsx from 'clsx';
 import './index.scss';
+import { ContactTimelineMetaMarker } from './ContactTimelineMetaMarker';
+import { ContactTimelineMetaItem } from './ContactTimelineMetaItem';
+import { ContactTimelineMetaTimeItem } from './ContactTimelineMetaTimeItem';
+import { ContactTimelineMeta } from './ContactTimelineMeta';
+import { ContactTimelineHeaderContent } from './ContactTimelineHeaderContent';
 
 export interface ContactTimelineItemProps {
   id: Key;
@@ -91,20 +97,20 @@ const ContactTimelineListItem: React.FC<ContactTimelineItemProps> = ({
     <Step appearance="default">
       <StepHeader className="denhaag-contact-timeline__step-header">
         <StepMarker appearance="default" nested />
-        <div>
+        <ContactTimelineHeaderContent>
           <StepHeading>{title}</StepHeading>
-          <div className="denhaag-contact-timeline__meta">
+          <ContactTimelineMeta>
             {date ? (
               date
             ) : (
-              <time dateTime={isoDate} className="denhaag-contact-timeline__meta-date">
+              <ContactTimelineMetaTimeItem dateTime={isoDate}>
                 <ContactTimelineDate dateTime={isoDate} todayLabel={todayLabel} />
-              </time>
+              </ContactTimelineMetaTimeItem>
             )}
-            <span className="denhaag-contact-timeline__meta-marker" />
-            <span className="denhaag-contact-timeline__meta-channel">{channel}</span>
-          </div>
-        </div>
+            <ContactTimelineMetaMarker />
+            <ContactTimelineMetaItem>{channel}</ContactTimelineMetaItem>
+          </ContactTimelineMeta>
+        </ContactTimelineHeaderContent>
       </StepHeader>
       <StepBody>{nextItem && <StepMarkerConnector appearance="default" from="main" to="main" />}</StepBody>
     </Step>
@@ -123,19 +129,26 @@ const ContactTimelineListItemDesktop: React.FC<ContactTimelineItemProps> = ({
     <Step appearance="default">
       <StepHeader className="denhaag-contact-timeline__step-header">
         <div className="denhaag-contact-timeline__step-header__date">
-          <time dateTime={isoDate} className="denhaag-contact-timeline__meta-date">
-            <ContactTimelineDate dateTime={isoDate} todayLabel={todayLabel} />
-          </time>
+          <ContactTimelineMetaTimeItem>
+          {date ? (
+              date
+            ) : (
+              <ContactTimelineMetaTimeItem dateTime={isoDate}>
+                <ContactTimelineDate dateTime={isoDate} todayLabel={todayLabel} />
+              </ContactTimelineMetaTimeItem>
+            )}
+          </ContactTimelineMetaTimeItem>
         </div>
         <StepMarker appearance="default" nested />
         <div className="denhaag-contact-timeline__step-header__channel">
-          <span className="denhaag-contact-timeline__meta-channel">{channel}</span>
+          <ContactTimelineMetaItem>{channel}</ContactTimelineMetaItem>
         </div>
         <div>
-          <StepHeading>{title}</StepHeading>
+          <StepHeading>{title}</StepHeading> <ChevronDownIcon />
         </div>
+        {nextItem && <StepMarkerConnector appearance="default" from="main" to="main" />}
       </StepHeader>
-      <StepBody>{nextItem && <StepMarkerConnector appearance="default" from="main" to="main" />}</StepBody>
+      <StepBody></StepBody>
     </Step>
   );
 };
