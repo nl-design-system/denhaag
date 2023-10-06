@@ -30,6 +30,35 @@ export const exampleArgs = {
   ],
 };
 
+export const exampleArgsMobile = {
+  todayLabel: "vandaag",
+  items: [
+    {
+      id: "1",
+      title: "Herinnering: Geef informatie",
+      channel: "mail",
+      isoDate: new Date().toISOString(),
+    },
+    {
+      id: "2",
+      title: "Geef informatie",
+      channel: "mail",
+      isoDate: "2023-01-23T09:17:03.137Z",
+    },
+    {
+      id: "3",
+      title: "Tip: u heeft recht op extra subsidie, zie hier een extra lange regel",
+      channel: "mail",
+      isoDate: "2023-01-06T09:17:03.137Z",
+    },
+    { id: "4", title: "Status is veranderd", channel: "mail", isoDate: "2022-12-01T09:17:03.137Z" },
+    { id: "5", title: "Mijn vraag", channel: "vraag", isoDate: "2022-11-29T09:17:03.137Z" },
+    { id: "6", title: "Gesprek over afspraak met adviseur", channel: "telefoon", isoDate: "2022-11-12T09:17:03.137Z" },
+    { id: "7", title: "Kosten onderzoek en verbeteringen", channel: "brief", isoDate: "2022-11-10T09:17:03.137Z" },
+  ],
+  mobile: true,
+};
+
 export const Template = (args) => {
   return <ContactTimelineMobile {...args}></ContactTimelineMobile>;
 };
@@ -51,7 +80,15 @@ export const Template = (args) => {
 ## Mobile (Work in Progress)
 
 <Canvas>
-  <Story name="Mobile (Work in Progress)" args={exampleArgs}>
+  <Story name="Mobile (Work in Progress)" args={exampleArgsMobile}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Desktop (Work in Progress)
+
+<Canvas>
+  <Story name="Desktop (Work in Progress)" args={exampleArgs}>
     {Template.bind({})}
   </Story>
 </Canvas>

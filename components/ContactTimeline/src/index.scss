@@ -4,6 +4,18 @@
 }
 
 .denhaag-contact-timeline {
+  .denhaag-contact-timeline__step-header__date {
+    width: 96px;
+  }
+
+  .denhaag-contact-timeline__step-header__channel {
+    width: 80px;
+  }
+
+  .denhaag-step-marker__connector--main-to-main {
+    margin-inline-start: 112px;
+  }
+
   &.denhaag-contact-timeline--mobile {
     --denhaag-process-steps-step-distance: var(--denhaag-contact-timeline-mobile-step-distance);
 
@@ -18,6 +30,7 @@
     .denhaag-step-marker__connector--main-to-main {
       top: calc(var(--denhaag-step-marker-size) / 2);
       bottom: var(--denhaag-contact-timeline-mobile-step-marker-connector-bottom);
+      margin-inline-start: 0;
     }
   }
 }
