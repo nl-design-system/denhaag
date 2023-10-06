@@ -29,6 +29,7 @@
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
+    "@gemeente-denhaag/icons": "workspace:*",
     "@gemeente-denhaag/process-steps": "workspace:*",
     "@gemeente-denhaag/step-marker": "workspace:*",
     "@gemeente-denhaag/typography": "workspace:*",
