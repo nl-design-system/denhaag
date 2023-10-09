@@ -2,13 +2,13 @@
   "utrecht": {
     "badge-counter": {
       "background-color": {
-        "value": "{denhaag.color.grey.1}"
+        "value": "{denhaag.color.blue.1}"
       },
       "border-radius": {
         "value": "{denhaag.border-radius}"
       },
       "color": {
-        "value": "{denhaag.color.grey.4}"
+        "value": "{denhaag.color.blue.4}"
       },
       "font-family": {
         "value": "{denhaag.typography.sans-serif.font-family}"
