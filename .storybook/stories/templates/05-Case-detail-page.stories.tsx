@@ -6,11 +6,18 @@ import { HeaderLogic } from '../../../components/Header/src';
 import Footer from '../../../components/Footer/src';
 import ResponsiveContent from '../../../components/ResponsiveContent/src';
 import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '../../../components/Sidenav/src';
-import { ArchiveIcon, GridIcon, UserIcon, BookIcon } from '../../../components/Icons/src';
+import {
+  GridIcon,
+  UserIcon,
+  InboxIcon,
+  ParkingIcon,
+  ArchiveIcon,
+  CircleInformationIcon,
+} from '../../../components/Icons/src';
 import { Status, StatusProps } from '../../../components/ProcessSteps/src';
 import { File } from '../../../components/File/src';
 import { Action } from '../../../components/Action/src';
-import { ButtonLink } from '@utrecht/component-library-react';
+import { BadgeCounter, ButtonLink } from '@utrecht/component-library-react';
 
 import {
   copyright,
@@ -96,6 +103,13 @@ export const ZaakDetailPagina: Story = {
               </SidenavLink>
             </SidenavItem>
             <SidenavItem>
+              <SidenavLink>
+                <InboxIcon />
+                Mijn berichten
+                <BadgeCounter>2</BadgeCounter>
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
               <SidenavLink current={true}>
                 <ArchiveIcon />
                 Mijn lopende zaken
@@ -103,8 +117,26 @@ export const ZaakDetailPagina: Story = {
             </SidenavItem>
             <SidenavItem>
               <SidenavLink>
-                <BookIcon />
-                Mijn thema's
+                <CircleInformationIcon />
+                Belastingszaken
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink>
+                <CircleInformationIcon />
+                WOZ
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink>
+                <ParkingIcon />
+                Parkeren
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink>
+                <CircleInformationIcon />
+                Erfpacht
               </SidenavLink>
             </SidenavItem>
             <SidenavItem>
