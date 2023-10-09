@@ -6,7 +6,16 @@ import { HeaderLogic, HeaderLogicProps } from '../../../components/Header/src';
 import Footer from '../../../components/Footer/src';
 import ResponsiveContent from '../../../components/ResponsiveContent/src';
 import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '../../../components/Sidenav/src';
-import { ArchiveIcon, FavoriteIcon, GridIcon, UserIcon } from '../../../components/Icons/src';
+import {
+  ArchiveIcon,
+  CircleInformationIcon,
+  FavoriteIcon,
+  GridIcon,
+  InboxIcon,
+  ParkingIcon,
+  UserIcon,
+} from '../../../components/Icons/src';
+import { BadgeCounter } from '@utrecht/component-library-react';
 import { copyright, headerProps, footerLegalData, footerSocialData, newsletterData, contactData } from './util';
 
 import './template-story.scss';
@@ -45,20 +54,45 @@ export const OverviewPage: Story = {
             </SidenavItem>
             <SidenavItem>
               <SidenavLink>
-                <ArchiveIcon />
-                Lopende zaken
+                <InboxIcon />
+                Mijn berichten
+                <BadgeCounter>2</BadgeCounter>
               </SidenavLink>
             </SidenavItem>
             <SidenavItem>
               <SidenavLink>
-                <FavoriteIcon />
-                Thema's
+                <ArchiveIcon />
+                Mijn lopende zaken
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink>
+                <CircleInformationIcon />
+                Belastingszaken
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink>
+                <CircleInformationIcon />
+                WOZ
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink>
+                <ParkingIcon />
+                Parkeren
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink>
+                <CircleInformationIcon />
+                Erfpacht
               </SidenavLink>
             </SidenavItem>
             <SidenavItem>
               <SidenavLink>
                 <UserIcon />
-                Mijn account
+                Mijn gegevens
               </SidenavLink>
             </SidenavItem>
           </SidenavList>

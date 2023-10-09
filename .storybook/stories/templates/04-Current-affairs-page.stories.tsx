@@ -4,21 +4,22 @@ import { Page, PageHeader, PageFooter } from '../../../components/Page/src';
 import { HeaderLogic, HeaderLogicProps } from '../../../components/Header/src';
 import Footer from '../../../components/Footer/src';
 import ResponsiveContent from '../../../components/ResponsiveContent/src';
-import { InboxIcon, ArchiveIcon, UserIcon, ParkingIcon, CircleInformationIcon } from '../../../components/Icons/src';
+import {
+  InboxIcon,
+  ArchiveIcon,
+  UserIcon,
+  ParkingIcon,
+  CircleInformationIcon,
+  GridIcon,
+} from '../../../components/Icons/src';
 import { Heading2 } from '../../../components/Typography/src';
 import { CaseCard } from '../../../components/Card/src';
 import { Tabs } from '../../../components/Tab/src';
-import {
-  headerProps,
-  footerLegalData,
-  footerSocialData,
-  newsletterData,
-  contactData,
-  copyright,
-} from '../templates/util';
+import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '../../../components/Sidenav/src';
+import { BadgeCounter } from '@utrecht/component-library-react';
+import { headerProps, footerLegalData, footerSocialData, newsletterData, contactData, copyright } from './util';
 
 import './template-story.scss';
-import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '../../../components/Sidenav/src';
 
 const meta = {
   title: 'Templates/LopendeZaken',
@@ -59,13 +60,20 @@ export const LopendeZaken: Story = {
         <Sidenav>
           <SidenavList>
             <SidenavItem>
-              <SidenavLink current={true}>
-                <InboxIcon />
-                label
+              <SidenavLink>
+                <GridIcon />
+                Overzicht
               </SidenavLink>
             </SidenavItem>
             <SidenavItem>
               <SidenavLink>
+                <InboxIcon />
+                Mijn berichten
+                <BadgeCounter>2</BadgeCounter>
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink current={true}>
                 <ArchiveIcon />
                 Mijn lopende zaken
               </SidenavLink>
