@@ -24,7 +24,13 @@ import { Action } from "../index.tsx";
 ### Single
 
 <Canvas>
-  <Story name="Link">{() => <Action link="#example">Taak</Action>}</Story>
+  <Story name="Link">
+    {() => (
+      <Action link="#example">
+        <strong>Taak</strong>
+      </Action>
+    )}
+  </Story>
 </Canvas>
 
 ### Single - hover
@@ -33,7 +39,7 @@ import { Action } from "../index.tsx";
   <Story name="Single - hover">
     {() => (
       <Action link="#example" classNameName="denhaag-action--hover">
-        Taak
+        <strong>Taak</strong>
       </Action>
     )}
   </Story>
@@ -45,7 +51,7 @@ import { Action } from "../index.tsx";
   <Story name="Single - focus">
     {() => (
       <Action link="#example" classNameName="denhaag-action--focus">
-        Taak
+        <strong>Taak</strong>
       </Action>
     )}
   </Story>
@@ -57,7 +63,7 @@ import { Action } from "../index.tsx";
   <Story name="Single - with date">
     {() => (
       <Action link="#example" dateTime={"2023-09-28T19:47:36.593Z"}>
-        Taak
+        <strong>Taak</strong>
       </Action>
     )}
   </Story>
@@ -69,7 +75,7 @@ import { Action } from "../index.tsx";
   <Story name="Single - with date - relative">
     {() => (
       <Action link="#example" dateTime={"2023-10-02T19:47:36.593Z"} now={"2023-09-28T19:47:36.593Z"} relativeDate>
-        Taak
+        <strong>Taak</strong>
       </Action>
     )}
   </Story>
@@ -81,7 +87,7 @@ import { Action } from "../index.tsx";
   <Story name="Single - with warning date - relative">
     {() => (
       <Action link="#example" dateTime={"2023-09-30T19:47:36.593Z"} now={"2023-09-28T19:47:36.593Z"} relativeDate>
-        Taak
+        <strong>Taak</strong>
       </Action>
     )}
   </Story>
@@ -90,7 +96,13 @@ import { Action } from "../index.tsx";
 ### Multiple
 
 <Canvas>
-  <Story name="Multiple">{() => <Action actions={<ButtonLink href="#example">Actie</ButtonLink>}>Taak</Action>}</Story>
+  <Story name="Multiple">
+    {() => (
+      <Action actions={<ButtonLink href="#example">Actie</ButtonLink>}>
+        <strong>Taak</strong>
+      </Action>
+    )}
+  </Story>
 </Canvas>
 
 ### Multiple - hover
@@ -105,7 +117,7 @@ import { Action } from "../index.tsx";
           </ButtonLink>
         }
       >
-        Taak
+        <strong>Taak</strong>
       </Action>
     )}
   </Story>
@@ -123,7 +135,7 @@ import { Action } from "../index.tsx";
           </ButtonLink>
         }
       >
-        Taak
+        <strong>Taak</strong>
       </Action>
     )}
   </Story>
@@ -139,7 +151,7 @@ import { Action } from "../index.tsx";
         now={"2023-09-28T19:47:36.593Z"}
         actions={<ButtonLink href="#example">Actie</ButtonLink>}
       >
-        Taak
+        <strong>Taak</strong>
       </Action>
     )}
   </Story>
@@ -156,7 +168,7 @@ import { Action } from "../index.tsx";
         now={"2023-09-28T19:47:36.593Z"}
         actions={<ButtonLink href="#example">Actie</ButtonLink>}
       >
-        Taak
+        <strong>Taak</strong>
       </Action>
     )}
   </Story>
@@ -173,7 +185,7 @@ import { Action } from "../index.tsx";
         now={"2023-09-28T19:47:36.593Z"}
         actions={<ButtonLink href="#example">Actie</ButtonLink>}
       >
-        Taak
+        <strong>Taak</strong>
       </Action>
     )}
   </Story>
