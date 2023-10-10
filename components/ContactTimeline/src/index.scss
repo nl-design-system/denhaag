@@ -3,20 +3,22 @@
   --denhaag-step-marker-margin: var(--denhaag-contact-timeline-mobile-step-marker-margin);
 }
 
-.denhaag-contact-timeline--mobile {
-  --denhaag-process-steps-step-distance: var(--denhaag-contact-timeline-mobile-step-distance);
+.denhaag-contact-timeline {
+  &.denhaag-contact-timeline--mobile {
+    --denhaag-process-steps-step-distance: var(--denhaag-contact-timeline-mobile-step-distance);
 
-  .denhaag-process-steps__step {
-    padding-block-end: var(--denhaag-contact-timeline-mobile-step-padding-block-end);
-  }
+    .denhaag-process-steps__step {
+      padding-block-end: var(--denhaag-contact-timeline-mobile-step-padding-block-end);
+    }
 
-  .denhaag-process-steps__step-body {
-    position: unset;
-  }
+    .denhaag-process-steps__step-body {
+      position: unset;
+    }
 
-  .denhaag-step-marker__connector--main-to-main {
-    top: calc(var(--denhaag-step-marker-size) / 2);
-    bottom: var(--denhaag-contact-timeline-mobile-step-marker-connector-bottom);
+    .denhaag-step-marker__connector--main-to-main {
+      top: calc(var(--denhaag-step-marker-size) / 2);
+      bottom: var(--denhaag-contact-timeline-mobile-step-marker-connector-bottom);
+    }
   }
 }
 
