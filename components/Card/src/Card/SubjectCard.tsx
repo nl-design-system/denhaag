@@ -55,7 +55,7 @@ export const SubjectCard: React.FC<SubjectCardProps> = ({ title, subTitle, date,
               <CardDate dateTime={date.toISOString()}>{date.toLocaleDateString()}</CardDate>
             </CardDateWrapper>
           )}
-          <CardAction href={href} Action={Link}>
+          <CardAction aria-label={title} href={href} Action={Link}>
             <ArrowRightIcon className="denhaag-card__arrow-icon" />
           </CardAction>
         </CardActions>
