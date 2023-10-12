@@ -1,6 +1,13 @@
-import React, { Key, OlHTMLAttributes, ReactNode } from 'react';
+import React, { Key, OlHTMLAttributes, ReactNode, useState } from 'react';
 import { StepMarker, StepMarkerConnector } from '@gemeente-denhaag/step-marker';
-import { Step, StepHeader, StepHeading, StepBody } from '@gemeente-denhaag/process-steps';
+import {
+  Step,
+  StepHeader,
+  StepHeading,
+  StepBody,
+  StepHeaderToggle,
+  StepDetails,
+} from '@gemeente-denhaag/process-steps';
 import { ChevronDownIcon } from '@gemeente-denhaag/icons';
 import { format, differenceInDays } from 'date-fns';
 import { nl } from 'date-fns/locale';
@@ -11,29 +18,49 @@ import { ContactTimelineMetaItem } from './ContactTimelineMetaItem';
 import { ContactTimelineMetaTimeItem } from './ContactTimelineMetaTimeItem';
 import { ContactTimelineMeta } from './ContactTimelineMeta';
 import { ContactTimelineHeaderContent } from './ContactTimelineHeaderContent';
+import { ContactTimelineHeaderDate } from './ContactTimelineHeaderDate';
+import { ContactTimelineHeaderChannel } from './ContactTimelineHeaderChannel';
+import { Paragraph } from '@gemeente-denhaag/typography';
 
 export interface ContactTimelineItemProps {
   id: Key;
   title: ReactNode;
+  description?: ReactNode;
   marker?: ReactNode;
   date: ReactNode;
   isoDate: string;
   todayLabel: string;
   channel: ReactNode;
   nextItem?: boolean;
+  expanded?: boolean;
+  toggleExpanded: false | (() => void);
 }
 
 export interface ContactTimelineProps {
   items: ContactTimelineItemProps[];
+  expandedSteps?: Key[];
+  collapsible?: boolean;
   todayLabel: string;
   mobile?: boolean;
 }
 
+const toggleState = (key: Key, collection: Key[], setCollection: React.Dispatch<React.SetStateAction<React.Key[]>>) => {
+  if (collection.includes(key)) {
+    setCollection(collection.filter((item) => item !== key));
+  } else {
+    setCollection([...collection, key]);
+  }
+};
+
 export const ContactTimelineMobile: React.FC<ContactTimelineProps> = ({
   items,
   todayLabel,
+  expandedSteps: initialExpanded = [],
+  collapsible = false,
   mobile = false,
 }: ContactTimelineProps) => {
+  const [expandedSteps, setExpandedSteps] = useState(initialExpanded);
+
   let ListItemComponent: React.FC<ContactTimelineItemProps>;
   if (mobile) {
     ListItemComponent = ContactTimelineListItem;
@@ -45,7 +72,18 @@ export const ContactTimelineMobile: React.FC<ContactTimelineProps> = ({
     <ContactTimelineList mobile={mobile} className="denhaag-process-steps">
       {items.map((item, index) => {
         const nextItem = index < items.length - 1;
-        return <ListItemComponent {...item} key={item.id} nextItem={nextItem} todayLabel={todayLabel} />;
+        return (
+          <ListItemComponent
+            {...item}
+            key={item.id}
+            expanded={collapsible ? expandedSteps.includes(item.id) : true}
+            nextItem={nextItem}
+            todayLabel={todayLabel}
+            toggleExpanded={() => {
+              toggleState(item.id, expandedSteps, setExpandedSteps);
+            }}
+          />
+        );
       })}
     </ContactTimelineList>
   );
@@ -111,26 +149,31 @@ const ContactTimelineListItem: React.FC<ContactTimelineItemProps> = ({
             <ContactTimelineMetaItem>{channel}</ContactTimelineMetaItem>
           </ContactTimelineMeta>
         </ContactTimelineHeaderContent>
+        {nextItem && <StepMarkerConnector appearance="default" from="main" to="main" />}
       </StepHeader>
-      <StepBody>{nextItem && <StepMarkerConnector appearance="default" from="main" to="main" />}</StepBody>
+      <StepBody></StepBody>
     </Step>
   );
 };
 
 const ContactTimelineListItemDesktop: React.FC<ContactTimelineItemProps> = ({
+  id,
   title,
+  description,
   date,
   isoDate,
   todayLabel,
   channel,
   nextItem,
+  expanded = false,
+  toggleExpanded,
 }) => {
   return (
     <Step appearance="default">
       <StepHeader className="denhaag-contact-timeline__step-header">
-        <div className="denhaag-contact-timeline__step-header__date">
+        <ContactTimelineHeaderDate>
           <ContactTimelineMetaTimeItem>
-          {date ? (
+            {date ? (
               date
             ) : (
               <ContactTimelineMetaTimeItem dateTime={isoDate}>
@@ -138,17 +181,36 @@ const ContactTimelineListItemDesktop: React.FC<ContactTimelineItemProps> = ({
               </ContactTimelineMetaTimeItem>
             )}
           </ContactTimelineMetaTimeItem>
-        </div>
+        </ContactTimelineHeaderDate>
         <StepMarker appearance="default" nested />
-        <div className="denhaag-contact-timeline__step-header__channel">
+        <ContactTimelineHeaderChannel>
           <ContactTimelineMetaItem>{channel}</ContactTimelineMetaItem>
-        </div>
-        <div>
-          <StepHeading>{title}</StepHeading> <ChevronDownIcon />
-        </div>
+        </ContactTimelineHeaderChannel>
+        <ContactTimelineHeaderContent>
+          {toggleExpanded && description ? (
+            <StepHeaderToggle ariaControls={`${id}--details`} expanded={expanded} onClick={toggleExpanded}>
+              <StepHeading>{title}</StepHeading>
+            </StepHeaderToggle>
+          ) : (
+            <StepHeading>{title}</StepHeading>
+          )}
+          <ContactTimelineMeta>
+            {date ? (
+              date
+            ) : (
+              <ContactTimelineMetaTimeItem dateTime={isoDate}>
+                <ContactTimelineDate dateTime={isoDate} todayLabel={todayLabel} />
+              </ContactTimelineMetaTimeItem>
+            )}
+            <ContactTimelineMetaMarker />
+            <ContactTimelineMetaItem>{channel}</ContactTimelineMetaItem>
+          </ContactTimelineMeta>
+        </ContactTimelineHeaderContent>
         {nextItem && <StepMarkerConnector appearance="default" from="main" to="main" />}
       </StepHeader>
-      <StepBody></StepBody>
+      <StepDetails id={`${id}--details`} collapsed={!expanded}>
+        <Paragraph>{description}</Paragraph>
+      </StepDetails>
     </Step>
   );
 };

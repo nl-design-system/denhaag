@@ -4,20 +4,50 @@
 }
 
 .denhaag-contact-timeline {
-  .denhaag-contact-timeline__step-header__date {
-    min-width: 96px;
+  .denhaag-process-steps__step-header-toggle {
+    min-block-size: 0;
   }
 
-  .denhaag-contact-timeline__step-header__channel {
-    min-width: 80px;
+  @media (width >= 768px) {
+    .denhaag-contact-timeline__meta {
+      display: none;
+    }
+
+    .denhaag-contact-timeline__step-header__date {
+      min-width: 96px;
+    }
+
+    .denhaag-contact-timeline__step-header__channel {
+      min-width: 80px;
+    }
+
+    .denhaag-step-marker__connector--main-to-main {
+      margin-inline-start: 112px;
+    }
+
+    .denhaag-process-steps__step-details {
+      margin-inline-start: 248px;
+    }
+
+    .denhaag-contact-timeline__step-header__content {
+      display: flex;
+      flex-direction: row;
+      gap: 6px;
+      align-items: center;
+    }
   }
 
-  .denhaag-step-marker__connector--main-to-main {
-    margin-inline-start: 112px;
-  }
-
-  &.denhaag-contact-timeline--mobile {
+  @media (width <= 767px) {
     --denhaag-process-steps-step-distance: var(--denhaag-contact-timeline-mobile-step-distance);
+
+    .denhaag-process-steps__step-details {
+      margin-inline-start: 40px;
+    }
+
+    .denhaag-contact-timeline__step-header__date,
+    .denhaag-contact-timeline__step-header__channel {
+      display: none;
+    }
 
     .denhaag-process-steps__step {
       padding-block-end: var(--denhaag-contact-timeline-mobile-step-padding-block-end);
