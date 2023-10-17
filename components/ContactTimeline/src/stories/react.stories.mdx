@@ -1,10 +1,10 @@
 import { Canvas, Meta, Story } from "@storybook/addon-docs";
-import { ContactTimelineMobile } from "../index";
+import { File } from "../../../File";
+import { ContactTimeline } from "../index";
 import pkg from "../../package.json";
 
 export const exampleArgs = {
   todayLabel: "vandaag",
-  collapsible: true,
   items: [
     {
       id: "1",
@@ -12,6 +12,7 @@ export const exampleArgs = {
       channel: "mail",
       isoDate: new Date().toISOString(),
       description: "Hier komt de uitgebreide beschrijving",
+      sender: "Gemeente Den Haag",
     },
     {
       id: "2",
@@ -19,6 +20,7 @@ export const exampleArgs = {
       channel: "mail",
       isoDate: "2023-01-23T09:17:03.137Z",
       description: "Hier komt de uitgebreide beschrijving",
+      sender: "Gemeente Den Haag",
     },
     {
       id: "3",
@@ -27,6 +29,7 @@ export const exampleArgs = {
       isoDate: "2023-01-06T09:17:03.137Z",
       description:
         "Hier komt de uitgebreide beschrijving, en hier een extra lange uitgebreide beschrijving. Hier komt de uitgebreide beschrijving, en hier een extra lange uitgebreide beschrijving.",
+      sender: "Gemeente Den Haag",
     },
     {
       id: "4",
@@ -34,6 +37,7 @@ export const exampleArgs = {
       channel: "mail",
       isoDate: "2022-12-01T09:17:03.137Z",
       description: "Hier komt de uitgebreide beschrijving",
+      sender: "Gemeente Den Haag",
     },
     {
       id: "5",
@@ -41,6 +45,7 @@ export const exampleArgs = {
       channel: "vraag",
       isoDate: "2022-11-29T09:17:03.137Z",
       description: "Hier komt de uitgebreide beschrijving",
+      sender: "Anna Klap",
     },
     {
       id: "6",
@@ -48,6 +53,7 @@ export const exampleArgs = {
       channel: "telefoon",
       isoDate: "2022-11-12T09:17:03.137Z",
       description: "Hier komt de uitgebreide beschrijving",
+      sender: "Gemeente Den Haag",
     },
     {
       id: "7",
@@ -55,46 +61,18 @@ export const exampleArgs = {
       channel: "brief",
       isoDate: "2022-11-10T09:17:03.137Z",
       description: "Hier komt de uitgebreide beschrijving",
+      sender: "Gemeente Den Haag",
     },
   ],
-};
-
-export const exampleArgsMobile = {
-  todayLabel: "vandaag",
-  items: [
-    {
-      id: "1",
-      title: "Herinnering: Geef informatie",
-      channel: "mail",
-      isoDate: new Date().toISOString(),
-    },
-    {
-      id: "2",
-      title: "Geef informatie",
-      channel: "mail",
-      isoDate: "2023-01-23T09:17:03.137Z",
-    },
-    {
-      id: "3",
-      title: "Tip: u heeft recht op extra subsidie, zie hier een extra lange regel",
-      channel: "mail",
-      isoDate: "2023-01-06T09:17:03.137Z",
-    },
-    { id: "4", title: "Status is veranderd", channel: "mail", isoDate: "2022-12-01T09:17:03.137Z" },
-    { id: "5", title: "Mijn vraag", channel: "vraag", isoDate: "2022-11-29T09:17:03.137Z" },
-    { id: "6", title: "Gesprek over afspraak met adviseur", channel: "telefoon", isoDate: "2022-11-12T09:17:03.137Z" },
-    { id: "7", title: "Kosten onderzoek en verbeteringen", channel: "brief", isoDate: "2022-11-10T09:17:03.137Z" },
-  ],
-  mobile: true,
 };
 
 export const Template = (args) => {
-  return <ContactTimelineMobile {...args}></ContactTimelineMobile>;
+  return <ContactTimeline {...args}></ContactTimeline>;
 };
 
 <Meta
   title="React/Process Steps/Contact Timeline"
-  component={ContactTimelineMobile}
+  component={ContactTimeline}
   parameters={{
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: { source: { type: "dynamic" } },
@@ -106,18 +84,176 @@ export const Template = (args) => {
 
 # Contact Timeline
 
-## Mobile (Work in Progress)
+## Default
 
 <Canvas>
-  <Story name="Mobile (Work in Progress)" args={exampleArgsMobile}>
+  <Story name="Default" args={exampleArgs}>
     {Template.bind({})}
   </Story>
 </Canvas>
 
-## Desktop (Work in Progress)
+## Collapsible
 
 <Canvas>
-  <Story name="Desktop (Work in Progress)" args={exampleArgs}>
+  <Story name="Collapsible" args={{ ...exampleArgs, collapsible: true }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Collapsible with expanded item
+
+<Canvas>
+  <Story name="Collapsible with expanded item" args={{ ...exampleArgs, collapsible: true, expandedItems: ["3"] }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Without sender
+
+<Canvas>
+  <Story
+    name="Without sender"
+    args={{
+      todayLabel: "vandaag",
+      collapsible: true,
+      expandedItems: ["3"],
+      items: [
+        {
+          id: "1",
+          title: "Herinnering: Geef informatie",
+          channel: "mail",
+          isoDate: new Date().toISOString(),
+          description: "Hier komt de uitgebreide beschrijving",
+        },
+        {
+          id: "2",
+          title: "Geef informatie",
+          channel: "mail",
+          isoDate: "2023-01-23T09:17:03.137Z",
+          description: "Hier komt de uitgebreide beschrijving",
+        },
+        {
+          id: "3",
+          title: "Tip: u heeft recht op extra subsidie, zie hier een extra lange regel",
+          channel: "mail",
+          isoDate: "2023-01-06T09:17:03.137Z",
+          description:
+            "Hier komt de uitgebreide beschrijving, en hier een extra lange uitgebreide beschrijving. Hier komt de uitgebreide beschrijving, en hier een extra lange uitgebreide beschrijving.",
+        },
+        {
+          id: "4",
+          title: "Status is veranderd",
+          channel: "mail",
+          isoDate: "2022-12-01T09:17:03.137Z",
+          description: "Hier komt de uitgebreide beschrijving",
+        },
+        {
+          id: "5",
+          title: "Mijn vraag",
+          channel: "vraag",
+          isoDate: "2022-11-29T09:17:03.137Z",
+          description: "Hier komt de uitgebreide beschrijving",
+        },
+        {
+          id: "6",
+          title: "Gesprek over afspraak met adviseur",
+          channel: "telefoon",
+          isoDate: "2022-11-12T09:17:03.137Z",
+          description: "Hier komt de uitgebreide beschrijving",
+        },
+        {
+          id: "7",
+          title: "Kosten onderzoek en verbeteringen",
+          channel: "brief",
+          isoDate: "2022-11-10T09:17:03.137Z",
+          description: "Hier komt de uitgebreide beschrijving",
+        },
+      ],
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## With file
+
+<Canvas>
+  <Story
+    name="With file"
+    args={{
+      todayLabel: "vandaag",
+      collapsible: true,
+      expandedItems: ["3"],
+      items: [
+        {
+          id: "1",
+          title: "Herinnering: Geef informatie",
+          channel: "mail",
+          isoDate: new Date().toISOString(),
+          description: "Hier komt de uitgebreide beschrijving",
+          sender: "Gemeente Den Haag",
+        },
+        {
+          id: "2",
+          title: "Geef informatie",
+          channel: "mail",
+          isoDate: "2023-01-23T09:17:03.137Z",
+          description: "Hier komt de uitgebreide beschrijving",
+          sender: "Gemeente Den Haag",
+        },
+        {
+          id: "3",
+          title: "Tip: u heeft recht op extra subsidie, zie hier een extra lange regel",
+          channel: "mail",
+          isoDate: "2023-01-06T09:17:03.137Z",
+          description:
+            "Hier komt de uitgebreide beschrijving, en hier een extra lange uitgebreide beschrijving. Hier komt de uitgebreide beschrijving, en hier een extra lange uitgebreide beschrijving.",
+          sender: "Gemeente Den Haag",
+          file: (
+            <File
+              name="example3"
+              link="test.png"
+              extension="png"
+              size={2000}
+              lastUpdated="Thu Aug 31 2023 11:22:11 GMT+0200"
+            />
+          ),
+        },
+        {
+          id: "4",
+          title: "Status is veranderd",
+          channel: "mail",
+          isoDate: "2022-12-01T09:17:03.137Z",
+          description: "Hier komt de uitgebreide beschrijving",
+          sender: "Gemeente Den Haag",
+        },
+        {
+          id: "5",
+          title: "Mijn vraag",
+          channel: "vraag",
+          isoDate: "2022-11-29T09:17:03.137Z",
+          description: "Hier komt de uitgebreide beschrijving",
+          sender: "Anna Klap",
+        },
+        {
+          id: "6",
+          title: "Gesprek over afspraak met adviseur",
+          channel: "telefoon",
+          isoDate: "2022-11-12T09:17:03.137Z",
+          description: "Hier komt de uitgebreide beschrijving",
+          sender: "Gemeente Den Haag",
+        },
+        {
+          id: "7",
+          title: "Kosten onderzoek en verbeteringen",
+          channel: "brief",
+          isoDate: "2022-11-10T09:17:03.137Z",
+          description: "Hier komt de uitgebreide beschrijving",
+          sender: "Gemeente Den Haag",
+        },
+      ],
+    }}
+  >
     {Template.bind({})}
   </Story>
 </Canvas>
