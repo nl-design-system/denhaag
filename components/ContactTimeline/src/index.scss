@@ -1,6 +1,7 @@
 .denhaag-contact-timeline__step-header {
   --denhaag-process-steps-step-header-align-items: var(--denhaag-contact-timeline-mobile-step-marker-align-items);
   --denhaag-step-marker-margin: var(--denhaag-contact-timeline-mobile-step-marker-margin);
+  --denhaag-process-steps-step-heading-font-size: 20px;
 }
 
 .denhaag-contact-timeline {
@@ -57,6 +58,10 @@
       position: unset;
     }
 
+    .denhaag-contact-timeline__step-header__content {
+      width: 100%;
+    }
+
     .denhaag-step-marker__connector--main-to-main {
       top: calc(var(--denhaag-step-marker-size) / 2);
       bottom: var(--denhaag-contact-timeline-mobile-step-marker-connector-bottom);
@@ -71,7 +76,18 @@
   align-items: center;
 }
 
-.denhaag-contact-timeline__meta-marker {
+.denhaag-contact-timeline__sender {
+  font-size: 18px;
+  font-weight: 600; //semibold
+  margin-block-start: 16px;
+}
+
+.utrecht-button.denhaag-process-steps__step-header-toggle {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.denhaag-contact-timeline__meta-separator {
   width: var(--denhaag-contact-timeline-mobile-meta-marker-size);
   height: var(--denhaag-contact-timeline-mobile-meta-marker-size);
   background-color: var(--denhaag-contact-timeline-mobile-meta-marker-color);

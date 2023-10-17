@@ -4,16 +4,14 @@ import {
   Step,
   StepHeader,
   StepHeading,
-  StepBody,
   StepHeaderToggle,
   StepDetails,
 } from '@gemeente-denhaag/process-steps';
-import { ChevronDownIcon } from '@gemeente-denhaag/icons';
 import { format, differenceInDays } from 'date-fns';
 import { nl } from 'date-fns/locale';
 import clsx from 'clsx';
 import './index.scss';
-import { ContactTimelineMetaMarker } from './ContactTimelineMetaMarker';
+import { ContactTimelineMetaSeparator } from './ContactTimelineMetaSeparator';
 import { ContactTimelineMetaItem } from './ContactTimelineMetaItem';
 import { ContactTimelineMetaTimeItem } from './ContactTimelineMetaTimeItem';
 import { ContactTimelineMeta } from './ContactTimelineMeta';
@@ -21,12 +19,14 @@ import { ContactTimelineHeaderContent } from './ContactTimelineHeaderContent';
 import { ContactTimelineHeaderDate } from './ContactTimelineHeaderDate';
 import { ContactTimelineHeaderChannel } from './ContactTimelineHeaderChannel';
 import { Paragraph } from '@gemeente-denhaag/typography';
+import { ContactTimelineSender } from './ContactTimelineSender';
 
 export interface ContactTimelineItemProps {
   id: Key;
   title: ReactNode;
   description?: ReactNode;
-  marker?: ReactNode;
+  file?: ReactNode;
+  sender?: ReactNode;
   date: ReactNode;
   isoDate: string;
   todayLabel: string;
@@ -38,10 +38,9 @@ export interface ContactTimelineItemProps {
 
 export interface ContactTimelineProps {
   items: ContactTimelineItemProps[];
-  expandedSteps?: Key[];
+  expandedItems?: Key[];
   collapsible?: boolean;
   todayLabel: string;
-  mobile?: boolean;
 }
 
 const toggleState = (key: Key, collection: Key[], setCollection: React.Dispatch<React.SetStateAction<React.Key[]>>) => {
@@ -52,36 +51,31 @@ const toggleState = (key: Key, collection: Key[], setCollection: React.Dispatch<
   }
 };
 
-export const ContactTimelineMobile: React.FC<ContactTimelineProps> = ({
+export const ContactTimeline: React.FC<ContactTimelineProps> = ({
   items,
   todayLabel,
-  expandedSteps: initialExpanded = [],
+  expandedItems: initialExpanded = [],
   collapsible = false,
-  mobile = false,
 }: ContactTimelineProps) => {
-  const [expandedSteps, setExpandedSteps] = useState(initialExpanded);
-
-  let ListItemComponent: React.FC<ContactTimelineItemProps>;
-  if (mobile) {
-    ListItemComponent = ContactTimelineListItem;
-  } else {
-    ListItemComponent = ContactTimelineListItemDesktop;
-  }
+  const [expandedItems, setexpandedItems] = useState(initialExpanded);
 
   return (
-    <ContactTimelineList mobile={mobile} className="denhaag-process-steps">
+    <ContactTimelineList className="denhaag-process-steps">
       {items.map((item, index) => {
         const nextItem = index < items.length - 1;
         return (
-          <ListItemComponent
+          <ContactTimelineListItem
             {...item}
             key={item.id}
-            expanded={collapsible ? expandedSteps.includes(item.id) : true}
+            expanded={collapsible ? expandedItems.includes(item.id) : false}
             nextItem={nextItem}
             todayLabel={todayLabel}
-            toggleExpanded={() => {
-              toggleState(item.id, expandedSteps, setExpandedSteps);
-            }}
+            toggleExpanded={
+              collapsible &&
+              (() => {
+                toggleState(item.id, expandedItems, setexpandedItems);
+              })
+            }
           />
         );
       })}
@@ -89,17 +83,14 @@ export const ContactTimelineMobile: React.FC<ContactTimelineProps> = ({
   );
 };
 
-export interface ContactTimelineListProps extends OlHTMLAttributes<HTMLOListElement> {
-  mobile?: boolean;
-}
+export interface ContactTimelineListProps extends OlHTMLAttributes<HTMLOListElement> {}
 
 export const ContactTimelineList: React.FC<ContactTimelineListProps> = ({
   className,
-  mobile = false,
   children,
   ...props
 }: ContactTimelineListProps) => (
-  <ol {...props} className={clsx('denhaag-contact-timeline', mobile && 'denhaag-contact-timeline--mobile', className)}>
+  <ol {...props} className={clsx('denhaag-contact-timeline', className)}>
     {children}
   </ol>
 );
@@ -124,44 +115,13 @@ export const ContactTimelineDate = ({ dateTime, now = new Date().toISOString(), 
 };
 
 const ContactTimelineListItem: React.FC<ContactTimelineItemProps> = ({
-  title,
-  date,
-  isoDate,
-  todayLabel,
-  channel,
-  nextItem,
-}) => {
-  return (
-    <Step appearance="default">
-      <StepHeader className="denhaag-contact-timeline__step-header">
-        <StepMarker appearance="default" nested />
-        <ContactTimelineHeaderContent>
-          <StepHeading>{title}</StepHeading>
-          <ContactTimelineMeta>
-            {date ? (
-              date
-            ) : (
-              <ContactTimelineMetaTimeItem dateTime={isoDate}>
-                <ContactTimelineDate dateTime={isoDate} todayLabel={todayLabel} />
-              </ContactTimelineMetaTimeItem>
-            )}
-            <ContactTimelineMetaMarker />
-            <ContactTimelineMetaItem>{channel}</ContactTimelineMetaItem>
-          </ContactTimelineMeta>
-        </ContactTimelineHeaderContent>
-        {nextItem && <StepMarkerConnector appearance="default" from="main" to="main" />}
-      </StepHeader>
-      <StepBody></StepBody>
-    </Step>
-  );
-};
-
-const ContactTimelineListItemDesktop: React.FC<ContactTimelineItemProps> = ({
   id,
   title,
   description,
+  file,
   date,
   isoDate,
+  sender = '',
   todayLabel,
   channel,
   nextItem,
@@ -202,17 +162,19 @@ const ContactTimelineListItemDesktop: React.FC<ContactTimelineItemProps> = ({
                 <ContactTimelineDate dateTime={isoDate} todayLabel={todayLabel} />
               </ContactTimelineMetaTimeItem>
             )}
-            <ContactTimelineMetaMarker />
+            <ContactTimelineMetaSeparator />
             <ContactTimelineMetaItem>{channel}</ContactTimelineMetaItem>
           </ContactTimelineMeta>
         </ContactTimelineHeaderContent>
         {nextItem && <StepMarkerConnector appearance="default" from="main" to="main" />}
       </StepHeader>
       <StepDetails id={`${id}--details`} collapsed={!expanded}>
+        <ContactTimelineSender>{sender}</ContactTimelineSender>
         <Paragraph>{description}</Paragraph>
+        {file}
       </StepDetails>
     </Step>
   );
 };
 
-export default ContactTimelineMobile;
+export default ContactTimeline;
