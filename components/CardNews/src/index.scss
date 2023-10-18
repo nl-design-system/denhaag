@@ -50,7 +50,7 @@
   height: var(--denhaag-card-news-image-container-height);
   overflow: hidden;
   width: var(--denhaag-card-news-image-container-width);
-  z-index: 0;
+  z-index: 0; // Prevents image from overlapping content.
 }
 
 .denhaag-card-news__image {
@@ -81,7 +81,7 @@
 .denhaag-card-news__content {
   display: var(--denhaag-card-news-content-display);
   flex-direction: var(--denhaag-card-news-content-flex-direction);
-  z-index: 1;
+  z-index: 1; // Enables content to overlap image.
 
   @media (min-width: 25.9375rem) {
     padding-block-start: var(--denhaag-card-news-figcaption-padding);
