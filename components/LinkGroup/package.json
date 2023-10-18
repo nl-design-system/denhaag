@@ -3,7 +3,7 @@
   "description": "The Link Group component. List of links.",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
-  "version": "0.1.3-www-denhaag-nl.90",
+  "version": "0.1.3-www-denhaag-nl.91",
   "exports": {
     ".": {
       "types": "./dist/cjs/index.d.ts",
@@ -33,6 +33,6 @@
     "access": "public"
   },
   "devDependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.90"
+    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.91"
   }
 }
