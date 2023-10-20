@@ -30,6 +30,7 @@
     "lint:prettier": "prettier --check .",
     "postinstall": "husky install",
     "postpublish": "pinst --enable",
+    "preinstall": "npx only-allow pnpm",
     "prepublishOnly": "pinst --disable",
     "prettier": "prettier --write .",
     "publish": "lerna publish from-package --yes",
