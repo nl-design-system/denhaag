@@ -4,6 +4,5 @@ node_modules/
 storybook-static/
 .*/
 *.min.js
-yarn.lock
 package-lock.json
 pnpm-lock.yaml
