@@ -1,12 +1,6 @@
 import React, { Key, OlHTMLAttributes, ReactNode, useState } from 'react';
 import { StepMarker, StepMarkerConnector } from '@gemeente-denhaag/step-marker';
-import {
-  Step,
-  StepHeader,
-  StepHeading,
-  StepHeaderToggle,
-  StepDetails,
-} from '@gemeente-denhaag/process-steps';
+import { Step, StepHeader, StepHeading, StepHeaderToggle, StepDetails } from '@gemeente-denhaag/process-steps';
 import { format, differenceInDays } from 'date-fns';
 import { nl } from 'date-fns/locale';
 import clsx from 'clsx';
@@ -19,7 +13,8 @@ import { ContactTimelineHeaderContent } from './ContactTimelineHeaderContent';
 import { ContactTimelineHeaderDate } from './ContactTimelineHeaderDate';
 import { ContactTimelineHeaderChannel } from './ContactTimelineHeaderChannel';
 import { Paragraph } from '@gemeente-denhaag/typography';
-import { ContactTimelineSender } from './ContactTimelineSender';
+import { ContactTimelineItemSender } from './ContactTimelineItemSender';
+import { ContactTimelineItemFile } from './ContactTimelineItemFile';
 
 export interface ContactTimelineItemProps {
   id: Key;
@@ -102,16 +97,20 @@ interface Props {
   locale?: Locale;
 }
 
-// Partially copied version of the Action date. We should make a generic component.
-export const ContactTimelineDate = ({ dateTime, now = new Date().toISOString(), locale = nl, todayLabel }: Props) => {
+export const formatContactTimelineDate = ({
+  dateTime,
+  now = new Date().toISOString(),
+  locale = nl,
+  todayLabel,
+}: Props): string => {
   const date = new Date(dateTime);
   const daysDifference = differenceInDays(date, new Date(now));
 
   if (daysDifference === 0) {
-    return <>{todayLabel}</>;
+    return todayLabel;
   }
 
-  return <>{format(date, 'd-M-yyyy', { locale: locale })}</>;
+  return format(date, 'd-M-yyyy', { locale });
 };
 
 const ContactTimelineListItem: React.FC<ContactTimelineItemProps> = ({
@@ -132,15 +131,13 @@ const ContactTimelineListItem: React.FC<ContactTimelineItemProps> = ({
     <Step appearance="default">
       <StepHeader className="denhaag-contact-timeline__step-header">
         <ContactTimelineHeaderDate>
-          <ContactTimelineMetaTimeItem>
-            {date ? (
-              date
-            ) : (
-              <ContactTimelineMetaTimeItem dateTime={isoDate}>
-                <ContactTimelineDate dateTime={isoDate} todayLabel={todayLabel} />
-              </ContactTimelineMetaTimeItem>
-            )}
-          </ContactTimelineMetaTimeItem>
+          {date ? (
+            date
+          ) : (
+            <ContactTimelineMetaTimeItem dateTime={isoDate}>
+              {formatContactTimelineDate({ dateTime: isoDate, todayLabel: todayLabel })}
+            </ContactTimelineMetaTimeItem>
+          )}
         </ContactTimelineHeaderDate>
         <StepMarker appearance="default" nested />
         <ContactTimelineHeaderChannel>
@@ -148,7 +145,12 @@ const ContactTimelineListItem: React.FC<ContactTimelineItemProps> = ({
         </ContactTimelineHeaderChannel>
         <ContactTimelineHeaderContent>
           {toggleExpanded && description ? (
-            <StepHeaderToggle ariaControls={`${id}--details`} expanded={expanded} onClick={toggleExpanded}>
+            <StepHeaderToggle
+              className="denhaag-contact-timeline__step-header-toggle"
+              ariaControls={`${id}--details`}
+              expanded={expanded}
+              onClick={toggleExpanded}
+            >
               <StepHeading>{title}</StepHeading>
             </StepHeaderToggle>
           ) : (
@@ -159,7 +161,7 @@ const ContactTimelineListItem: React.FC<ContactTimelineItemProps> = ({
               date
             ) : (
               <ContactTimelineMetaTimeItem dateTime={isoDate}>
-                <ContactTimelineDate dateTime={isoDate} todayLabel={todayLabel} />
+                {formatContactTimelineDate({ dateTime: isoDate, todayLabel: todayLabel })}
               </ContactTimelineMetaTimeItem>
             )}
             <ContactTimelineMetaSeparator />
@@ -169,9 +171,9 @@ const ContactTimelineListItem: React.FC<ContactTimelineItemProps> = ({
         {nextItem && <StepMarkerConnector appearance="default" from="main" to="main" />}
       </StepHeader>
       <StepDetails id={`${id}--details`} collapsed={!expanded}>
-        <ContactTimelineSender>{sender}</ContactTimelineSender>
+        <ContactTimelineItemSender>{sender}</ContactTimelineItemSender>
         <Paragraph>{description}</Paragraph>
-        {file}
+        {file && <ContactTimelineItemFile>{file}</ContactTimelineItemFile>}
       </StepDetails>
     </Step>
   );

@@ -1,24 +1,47 @@
 {
   "denhaag": {
     "contact-timeline": {
-      "mobile": {
-        "step": {
-          "marker": {
-            "align-items": { "value": "flex-start" },
-            "margin": { "value": "5px" },
-            "connector": {
-              "bottom": { "value": "0" }
-            }
+      "step": {
+        "header": {
+          "line-height": { "value": "27px" },
+          "date": {
+            "width": { "value": "96px" }
           },
-          "distance": { "value": "0" },
-          "padding-block-end": { "value": "32px" }
-        },
-        "meta": {
-          "gap": { "value": "6px" },
-          "marker": {
-            "size": { "value": "4px" },
-            "color": { "value": "{denhaag.color.black}" }
+          "channel": {
+            "width": { "value": "80px" }
+          },
+          "toggle": {
+            "hover": {
+              "color": { "value": "{denhaag.color.green.3}" }
+            },
+            "focus": {
+              "color": { "value": "{denhaag.color.green.3}" }
+            },
+            "active": {
+              "color": { "value": "{denhaag.color.green.3}" }
+            }
           }
+        },
+        "marker": {
+          "align-items": { "value": "flex-start" },
+          "connector": {
+            "bottom": { "value": "0" },
+            "desktop": {
+              "margin-inline-start": { "value": "112px" }
+            },
+            "mobile": {
+              "margin-inline-start": { "value": "0" }
+            }
+          }
+        },
+        "distance": { "value": "0" },
+        "padding-block-end": { "value": "32px" }
+      },
+      "meta": {
+        "gap": { "value": "6px" },
+        "marker": {
+          "size": { "value": "4px" },
+          "color": { "value": "{denhaag.color.black}" }
         }
       }
     }

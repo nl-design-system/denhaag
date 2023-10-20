@@ -1,12 +1,30 @@
 .denhaag-contact-timeline__step-header {
-  --denhaag-process-steps-step-header-align-items: var(--denhaag-contact-timeline-mobile-step-marker-align-items);
-  --denhaag-step-marker-margin: var(--denhaag-contact-timeline-mobile-step-marker-margin);
+  --denhaag-process-steps-step-header-align-items: var(--denhaag-contact-timeline-step-marker-align-items);
   --denhaag-process-steps-step-heading-font-size: 20px;
+  --denhaag-process-steps-step-heading-line-height: var(--denhaag-contact-timeline-step-header-line-height);
+  --denhaag-step-marker-margin: calc(
+    (var(--denhaag-contact-timeline-step-header-line-height) - var(--denhaag-step-marker-nested-size)) / 2
+  );
+}
+
+.denhaag-contact-timeline__step-header-toggle {
+  --utrecht-button-subtle-hover-color: var(--denhaag-contact-timeline-step-header-toggle-hover-color);
+  --utrecht-button-subtle-focus-color: var(--denhaag-contact-timeline-step-header-toggle-focus-color);
+  --utrecht-button-subtle-active-color: var(--denhaag-contact-timeline-step-header-toggle-active-color);
+  --utrecht-focus-outline-style: var(--denhaag-focus-border);
+  --utrecht-button-min-block-size: 0;
 }
 
 .denhaag-contact-timeline {
-  .denhaag-process-steps__step-header-toggle {
-    min-block-size: 0;
+  --denhaag-process-steps-step-distance: var(--denhaag-contact-timeline-step-distance);
+
+  .denhaag-process-steps__step {
+    padding-block-end: var(--denhaag-contact-timeline-step-padding-block-end);
+  }
+
+  .denhaag-step-marker__connector--main-to-main {
+    top: calc(var(--denhaag-step-marker-size) / 2);
+    bottom: var(--denhaag-contact-timeline-step-marker-connector-bottom);
   }
 
   @media (width >= 768px) {
@@ -15,15 +33,21 @@
     }
 
     .denhaag-contact-timeline__step-header__date {
-      min-width: 96px;
+      min-width: var(--denhaag-contact-timeline-step-header-date-width);
+      max-width: var(--denhaag-contact-timeline-step-header-date-width);
+      line-height: var(--denhaag-contact-timeline-step-header-line-height);
+      overflow-wrap: break-word;
     }
 
     .denhaag-contact-timeline__step-header__channel {
-      min-width: 80px;
+      min-width: var(--denhaag-contact-timeline-step-header-channel-width);
+      max-width: var(--denhaag-contact-timeline-step-header-channel-width);
+      line-height: var(--denhaag-contact-timeline-step-header-line-height);
+      overflow-wrap: break-word;
     }
 
     .denhaag-step-marker__connector--main-to-main {
-      margin-inline-start: 112px;
+      margin-inline-start: var(--denhaag-contact-timeline-step-marker-connector-desktop-margin-inline-start);
     }
 
     .denhaag-process-steps__step-details {
@@ -39,8 +63,6 @@
   }
 
   @media (width <= 767px) {
-    --denhaag-process-steps-step-distance: var(--denhaag-contact-timeline-mobile-step-distance);
-
     .denhaag-process-steps__step-details {
       margin-inline-start: 40px;
     }
@@ -48,10 +70,6 @@
     .denhaag-contact-timeline__step-header__date,
     .denhaag-contact-timeline__step-header__channel {
       display: none;
-    }
-
-    .denhaag-process-steps__step {
-      padding-block-end: var(--denhaag-contact-timeline-mobile-step-padding-block-end);
     }
 
     .denhaag-process-steps__step-body {
@@ -63,23 +81,30 @@
     }
 
     .denhaag-step-marker__connector--main-to-main {
-      top: calc(var(--denhaag-step-marker-size) / 2);
-      bottom: var(--denhaag-contact-timeline-mobile-step-marker-connector-bottom);
-      margin-inline-start: 0;
+      margin-inline-start: var(--denhaag-contact-timeline-step-marker-connector-mobile-margin-inline-start);
+    }
+
+    .denhaag-contact-timeline__step-item-file {
+      margin-block-end: 32px;
     }
   }
 }
 
 .denhaag-contact-timeline__meta {
   display: flex;
-  gap: var(--denhaag-contact-timeline-mobile-meta-gap);
+  gap: var(--denhaag-contact-timeline-meta-gap);
   align-items: center;
 }
 
-.denhaag-contact-timeline__sender {
+.denhaag-contact-timeline__step-item-sender {
   font-size: 18px;
   font-weight: 600; //semibold
   margin-block-start: 16px;
+}
+
+.denhaag-contact-timeline__step-item-file {
+  margin-block-start: 24px;
+  margin-block-end: 24px;
 }
 
 .utrecht-button.denhaag-process-steps__step-header-toggle {
@@ -88,8 +113,8 @@
 }
 
 .denhaag-contact-timeline__meta-separator {
-  width: var(--denhaag-contact-timeline-mobile-meta-marker-size);
-  height: var(--denhaag-contact-timeline-mobile-meta-marker-size);
-  background-color: var(--denhaag-contact-timeline-mobile-meta-marker-color);
+  width: var(--denhaag-contact-timeline-meta-marker-size);
+  height: var(--denhaag-contact-timeline-meta-marker-size);
+  background-color: var(--denhaag-contact-timeline-meta-marker-color);
   border-radius: 50%;
 }
