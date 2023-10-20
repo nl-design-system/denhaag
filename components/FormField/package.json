@@ -29,7 +29,7 @@
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "devDependencies": {
-    "@utrecht/components": "1.0.0-alpha.532"
+    "@utrecht/components": "1.0.0-alpha.563"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"

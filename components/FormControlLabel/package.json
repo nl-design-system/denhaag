@@ -25,7 +25,7 @@
     "dist"
   ],
   "devDependencies": {
-    "@utrecht/components": "1.0.0-alpha.532"
+    "@utrecht/components": "1.0.0-alpha.563"
   },
   "scripts": {
     "build": "rollup -c ../../rollup.config.mjs",
