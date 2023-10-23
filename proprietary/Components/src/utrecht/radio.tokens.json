@@ -1,0 +1,22 @@
+{
+  "utrecht": {
+    "radio-button": {
+      "size": { "value": "{utrecht.custom-checkbox.size}" },
+      "background-color": { "value": "{denhaag.color.white}" },
+      "color": { "value": "{denhaag.color.white}" },
+      "border-width": { "value": "{utrecht.custom-checkbox.border-width}" },
+      "border-color": { "value": "{utrecht.custom-checkbox.border-color}" },
+      "checked": {
+        "background-color": { "value": "{utrecht.custom-checkbox.checked.background-color}" },
+        "border-color": { "value": "{utrecht.custom-checkbox.checked.border-color}" }
+      },
+      "invalid": {
+        "border-color": { "value": "{utrecht.custom-checkbox.invalid.border-color}" }
+      },
+      "disabled": {
+        "background-color": { "value": "{utrecht.custom-checkbox.disabled.background-color}" },
+        "border-color": { "value": "{utrecht.custom-checkbox.disabled.border-color}" }
+      }
+    }
+  }
+}
