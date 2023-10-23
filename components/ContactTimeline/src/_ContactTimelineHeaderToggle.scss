@@ -1,0 +1,11 @@
+.denhaag-process-steps__step-header-toggle {
+  &.denhaag-contact-timeline__step-header-toggle {
+    --utrecht-button-subtle-hover-color: var(--denhaag-contact-timeline-step-header-toggle-hover-color);
+    --utrecht-button-subtle-focus-color: var(--denhaag-contact-timeline-step-header-toggle-focus-color);
+    --utrecht-button-subtle-active-color: var(--denhaag-contact-timeline-step-header-toggle-active-color);
+    --utrecht-button-min-block-size: 0;
+
+    justify-content: space-between;
+    width: 100%;
+  }
+}

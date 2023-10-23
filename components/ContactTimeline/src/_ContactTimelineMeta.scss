@@ -1,0 +1,9 @@
+.denhaag-contact-timeline__meta {
+  display: flex;
+  gap: var(--denhaag-contact-timeline-step-meta-gap);
+  align-items: center;
+
+  @media (width >= 768px) {
+    display: none;
+  }
+}
