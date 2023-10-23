@@ -6,10 +6,14 @@ interface StepDetailsProps extends HTMLAttributes<HTMLDivElement> {
   collapsed?: boolean;
 }
 
-export const StepDetails: React.FC<StepDetailsProps> = ({ id, collapsed = false, children }) => (
+export const StepDetails: React.FC<StepDetailsProps> = ({ id, className, collapsed = false, children }) => (
   <div
     id={id}
-    className={clsx('denhaag-process-steps__step-details', collapsed && 'denhaag-process-steps__step-details--hidden')}
+    className={clsx(
+      'denhaag-process-steps__step-details',
+      collapsed && 'denhaag-process-steps__step-details--hidden',
+      className,
+    )}
   >
     {children}
   </div>

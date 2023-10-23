@@ -128,7 +128,7 @@ const ContactTimelineListItem: React.FC<ContactTimelineItemProps> = ({
   toggleExpanded,
 }) => {
   return (
-    <Step appearance="default">
+    <Step className="denhaag-contact-timeline__step" appearance="default">
       <StepHeader className="denhaag-contact-timeline__step-header">
         <ContactTimelineHeaderDate>
           {date ? (
@@ -168,9 +168,16 @@ const ContactTimelineListItem: React.FC<ContactTimelineItemProps> = ({
             <ContactTimelineMetaItem>{channel}</ContactTimelineMetaItem>
           </ContactTimelineMeta>
         </ContactTimelineHeaderContent>
-        {nextItem && <StepMarkerConnector appearance="default" from="main" to="main" />}
+        {nextItem && (
+          <StepMarkerConnector
+            className="denhaag-contact-timeline__step-marker-connector"
+            appearance="default"
+            from="main"
+            to="main"
+          />
+        )}
       </StepHeader>
-      <StepDetails id={`${id}--details`} collapsed={!expanded}>
+      <StepDetails className="denhaag-contact-timeline__step-details" id={`${id}--details`} collapsed={!expanded}>
         <ContactTimelineItemSender>{sender}</ContactTimelineItemSender>
         <Paragraph>{description}</Paragraph>
         {file && <ContactTimelineItemFile>{file}</ContactTimelineItemFile>}

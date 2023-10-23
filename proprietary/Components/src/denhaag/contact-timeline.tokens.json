@@ -4,6 +4,7 @@
       "step": {
         "header": {
           "line-height": { "value": "27px" },
+          "font-size": { "value": "20px" },
           "date": {
             "width": { "value": "96px" }
           },
@@ -34,15 +35,39 @@
             }
           }
         },
+        "details": {
+          "desktop": {
+            "margin-inline-start": { "value": "248px" }
+          },
+          "mobile": {
+            "margin-inline-start": { "value": "40px" }
+          },
+          "sender": {
+            "font": {
+              "weight": {
+                "value": "{denhaag.typography.weight.semibold}"
+              },
+              "size": { "value": "18px" }
+            },
+            "margin-block-start": { "value": "16px" }
+          },
+          "file": {
+            "margin-block-start": { "value": "24px" },
+            "margin-block-end": { "value": "24px" },
+            "mobile": {
+              "margin-block-end": { "value": "32px" }
+            }
+          }
+        },
+        "meta": {
+          "gap": { "value": "6px" },
+          "marker": {
+            "size": { "value": "4px" },
+            "color": { "value": "{denhaag.color.black}" }
+          }
+        },
         "distance": { "value": "0" },
         "padding-block-end": { "value": "32px" }
-      },
-      "meta": {
-        "gap": { "value": "6px" },
-        "marker": {
-          "size": { "value": "4px" },
-          "color": { "value": "{denhaag.color.black}" }
-        }
       }
     }
   }
