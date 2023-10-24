@@ -528,6 +528,9 @@ importers:
 
   components/ContactTimeline:
     dependencies:
+      '@gemeente-denhaag/file':
+        specifier: workspace:*
+        version: link:../File
       '@gemeente-denhaag/icons':
         specifier: workspace:*
         version: link:../Icons
