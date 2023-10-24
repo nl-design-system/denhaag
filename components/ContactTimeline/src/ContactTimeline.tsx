@@ -22,10 +22,13 @@ export interface ContactTimelineItemProps {
   description?: ReactNode;
   file?: ReactNode;
   sender?: ReactNode;
-  date: ReactNode;
-  isoDate: string;
-  todayLabel: string;
+  date?: ReactNode;
+  isoDate?: string;
   channel: ReactNode;
+}
+
+interface ContactTimelineItemInternalProps extends ContactTimelineItemProps {
+  todayLabel: string;
   nextItem?: boolean;
   expanded?: boolean;
   toggleExpanded: false | (() => void);
@@ -113,7 +116,7 @@ export const formatContactTimelineDate = ({
   return format(date, 'd-M-yyyy', { locale });
 };
 
-const ContactTimelineListItem: React.FC<ContactTimelineItemProps> = ({
+const ContactTimelineListItem: React.FC<ContactTimelineItemInternalProps> = ({
   id,
   title,
   description,
@@ -131,13 +134,13 @@ const ContactTimelineListItem: React.FC<ContactTimelineItemProps> = ({
     <Step className="denhaag-contact-timeline__step" appearance="default">
       <StepHeader className="denhaag-contact-timeline__step-header">
         <ContactTimelineHeaderDate>
-          {date ? (
-            date
-          ) : (
-            <ContactTimelineMetaTimeItem dateTime={isoDate}>
-              {formatContactTimelineDate({ dateTime: isoDate, todayLabel: todayLabel })}
-            </ContactTimelineMetaTimeItem>
-          )}
+          {date
+            ? date
+            : isoDate && (
+                <ContactTimelineMetaTimeItem dateTime={isoDate}>
+                  {formatContactTimelineDate({ dateTime: isoDate, todayLabel: todayLabel })}
+                </ContactTimelineMetaTimeItem>
+              )}
         </ContactTimelineHeaderDate>
         <StepMarker appearance="default" nested />
         <ContactTimelineHeaderChannel>
@@ -157,13 +160,13 @@ const ContactTimelineListItem: React.FC<ContactTimelineItemProps> = ({
             <StepHeading>{title}</StepHeading>
           )}
           <ContactTimelineMeta>
-            {date ? (
-              date
-            ) : (
-              <ContactTimelineMetaTimeItem dateTime={isoDate}>
-                {formatContactTimelineDate({ dateTime: isoDate, todayLabel: todayLabel })}
-              </ContactTimelineMetaTimeItem>
-            )}
+            {date
+              ? date
+              : isoDate && (
+                  <ContactTimelineMetaTimeItem dateTime={isoDate}>
+                    {formatContactTimelineDate({ dateTime: isoDate, todayLabel: todayLabel })}
+                  </ContactTimelineMetaTimeItem>
+                )}
             <ContactTimelineMetaSeparator />
             <ContactTimelineMetaItem>{channel}</ContactTimelineMetaItem>
           </ContactTimelineMeta>
