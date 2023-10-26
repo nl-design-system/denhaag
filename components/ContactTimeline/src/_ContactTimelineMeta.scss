@@ -3,7 +3,7 @@
   gap: var(--denhaag-contact-timeline-step-meta-gap);
   align-items: center;
 
-  @media (width >= 768px) {
+  @media (width >= 1024px) {
     display: none;
   }
 }

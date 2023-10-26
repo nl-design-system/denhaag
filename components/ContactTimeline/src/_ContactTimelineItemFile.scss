@@ -2,7 +2,7 @@
   margin-block-start: var(--denhaag-contact-timeline-step-details-file-margin-block-start);
   margin-block-end: var(--denhaag-contact-timeline-step-details-file-margin-block-end);
 
-  @media (width <= 767px) {
+  @media (width <= 1023px) {
     margin-block-end: var(--denhaag-contact-timeline-step-details-file-mobile-margin-block-end);
   }
 }
