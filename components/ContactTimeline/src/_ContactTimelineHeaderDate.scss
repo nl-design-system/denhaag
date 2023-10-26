@@ -4,7 +4,7 @@
   line-height: var(--denhaag-contact-timeline-step-header-line-height);
   overflow-wrap: break-word;
 
-  @media (width <= 767px) {
+  @media (width <= 1023px) {
     display: none;
   }
 }
