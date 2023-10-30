@@ -147,3 +147,9 @@ li .denhaag-link__icon {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+p > .denhaag-link--with-icon-end.denhaag-link--external,
+.denhaag-unordered-list li > .denhaag-link--with-icon-end.denhaag-link--external,
+.denhaag-ordered-list li > .denhaag-link--with-icon-end.denhaag-link--external {
+  display: inline;
+}
