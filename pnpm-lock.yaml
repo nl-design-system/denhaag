@@ -206,7 +206,7 @@ importers:
         version: 5.62.0(@typescript-eslint/parser@5.62.0)(eslint@8.51.0)(typescript@4.9.5)
       '@typescript-eslint/parser':
         specifier: 5.62.0
-        version: 5.62.0(eslint@8.50.0)(typescript@4.9.4)
+        version: 5.62.0(eslint@8.51.0)(typescript@4.9.5)
       '@utrecht/component-library-react':
         specifier: 1.0.0-alpha.380
         version: 1.0.0-alpha.380(react-dom@17.0.2)(react@17.0.2)
@@ -8499,8 +8499,8 @@ packages:
       react-dom: 17.0.2(react@17.0.2)
     dev: true
 
-  /@utrecht/component-library-react@1.0.0-alpha.380(react-dom@18.2.0)(react@17.0.2):
-    resolution: {integrity: sha512-d713FqsWLFHmhItEdQ+XzpMetZDCeYRU8tt/7pAMKkqs5Mnmj6g+TEc8Y0WrrX0wQBBP6J4R22CkiaQibDuh2g==}
+  /@utrecht/component-library-react@1.0.0-alpha.411(react-dom@18.2.0)(react@17.0.2):
+    resolution: {integrity: sha512-MRMwTlLZnbrAna0lC7m/LttW9ssuo2JaLEqiyL7JVg5yhnEaBNul/l3xZ8WXytfAS5Zzbc5UdRI4twTnykDtXA==}
     peerDependencies:
       date-fns: ^2.30.0
       react: '18'
