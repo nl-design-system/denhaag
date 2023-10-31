@@ -149,7 +149,10 @@ li .denhaag-link__icon {
 }
 
 p > .denhaag-link--with-icon-end.denhaag-link--external,
+.denhaag-note .denhaag-link--with-icon-end.denhaag-link--external,
 .denhaag-unordered-list li > .denhaag-link--with-icon-end.denhaag-link--external,
 .denhaag-ordered-list li > .denhaag-link--with-icon-end.denhaag-link--external {
-  display: inline;
+  --denhaag-link-external-icon-margin-inline-start: 0;
+
+  display: inline-flex;
 }
