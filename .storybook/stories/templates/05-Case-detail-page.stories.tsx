@@ -16,7 +16,7 @@ import {
 } from '../../../components/Icons/src';
 import { Status, StatusProps } from '../../../components/ProcessSteps/src';
 import { File } from '../../../components/File/src';
-import ContactTimeline from '../../../components/ContactTimeline/src';
+import ContactTimeline, { ContactTimelineProps } from '../../../components/ContactTimeline/src';
 import { Action } from '../../../components/Action/src';
 import { BadgeCounter, ButtonLink } from '@utrecht/component-library-react';
 
@@ -85,7 +85,7 @@ const progressStepsData: StatusProps = {
   ],
 };
 
-export const contactTimelineData = {
+const contactTimelineData: ContactTimelineProps = {
   todayLabel: 'vandaag',
   collapsible: true,
   items: [
