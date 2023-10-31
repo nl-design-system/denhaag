@@ -1,9 +1,8 @@
-import React, { Key, OlHTMLAttributes, ReactNode, useState } from 'react';
+import React, { Key, ReactNode, useState } from 'react';
 import { StepMarker, StepMarkerConnector } from '@gemeente-denhaag/step-marker';
 import { Step, StepHeader, StepHeading, StepHeaderToggle, StepDetails } from '@gemeente-denhaag/process-steps';
 import { format, differenceInDays } from 'date-fns';
 import { nl } from 'date-fns/locale';
-import clsx from 'clsx';
 import './index.scss';
 import { ContactTimelineMetaSeparator } from './ContactTimelineMetaSeparator';
 import { ContactTimelineMetaItem } from './ContactTimelineMetaItem';
@@ -15,6 +14,7 @@ import { ContactTimelineHeaderChannel } from './ContactTimelineHeaderChannel';
 import { Paragraph } from '@gemeente-denhaag/typography';
 import { ContactTimelineItemSender } from './ContactTimelineItemSender';
 import { ContactTimelineItemFile } from './ContactTimelineItemFile';
+import { ContactTimelineList } from './ContactTimelineList';
 
 export interface ContactTimelineItemProps {
   id: Key;
@@ -80,18 +80,6 @@ export const ContactTimeline: React.FC<ContactTimelineProps> = ({
     </ContactTimelineList>
   );
 };
-
-export interface ContactTimelineListProps extends OlHTMLAttributes<HTMLOListElement> {}
-
-export const ContactTimelineList: React.FC<ContactTimelineListProps> = ({
-  className,
-  children,
-  ...props
-}: ContactTimelineListProps) => (
-  <ol {...props} className={clsx('denhaag-contact-timeline', className)}>
-    {children}
-  </ol>
-);
 
 interface Props {
   dateTime: string;
