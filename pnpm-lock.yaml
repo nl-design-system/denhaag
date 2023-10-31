@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
@@ -284,9 +288,6 @@ importers:
       prettier:
         specifier: 3.0.3
         version: 3.0.3
-      prop-types:
-        specifier: 15.8.1
-        version: 15.8.1
       raw-loader:
         specifier: 4.0.2
         version: 4.0.2(webpack@5.89.0)
@@ -27959,7 +27960,3 @@ packages:
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: true
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
