@@ -156,3 +156,7 @@ p > .denhaag-link--with-icon-end.denhaag-link--external,
 
   display: inline-flex;
 }
+
+.denhaag-procedure .denhaag-link--external .denhaag-link__icon {
+  --denhaag-link-external-icon-margin-inline-start: 0.25rem;
+}
