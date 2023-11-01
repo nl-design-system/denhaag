@@ -147,3 +147,16 @@ li .denhaag-link__icon {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+p > .denhaag-link--with-icon-end.denhaag-link--external,
+.denhaag-note .denhaag-link--with-icon-end.denhaag-link--external,
+.denhaag-unordered-list li > .denhaag-link--with-icon-end.denhaag-link--external,
+.denhaag-ordered-list li > .denhaag-link--with-icon-end.denhaag-link--external {
+  --denhaag-link-external-icon-margin-inline-start: 0;
+
+  display: inline-flex;
+}
+
+.denhaag-procedure .denhaag-link--external .denhaag-link__icon {
+  --denhaag-link-external-icon-margin-inline-start: 0.25rem;
+}
