@@ -34,7 +34,7 @@
     "@gemeente-denhaag/process-steps": "workspace:*",
     "@gemeente-denhaag/step-marker": "workspace:*",
     "@gemeente-denhaag/typography": "workspace:*",
-    "clsx": "2.0.0",
-    "date-fns": "2.30.0"
+    "@gemeente-denhaag/utils": "workspace:*",
+    "clsx": "2.0.0"
   }
 }

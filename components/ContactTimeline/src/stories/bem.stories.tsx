@@ -7,7 +7,7 @@ import ContactTimeline from '../index';
 import { ContactTimelineProps } from '../ContactTimeline';
 
 const exampleArgs: ContactTimelineProps = {
-  todayLabel: 'vandaag',
+  labels: { today: 'vandaag', yesterday: 'gisteren' },
   items: [
     {
       id: '1',
@@ -21,7 +21,7 @@ const exampleArgs: ContactTimelineProps = {
       id: '2',
       title: 'Geef informatie',
       channel: 'mail',
-      isoDate: '2023-01-23T09:17:03.137Z',
+      isoDate: new Date(Date.now() - 864e5).toISOString(),
       description: 'Hier komt de uitgebreide beschrijving',
       sender: 'Gemeente Den Haag',
     },
@@ -70,7 +70,7 @@ const exampleArgs: ContactTimelineProps = {
 };
 
 const exampleArgsWithoutSender: ContactTimelineProps = {
-  todayLabel: 'vandaag',
+  labels: { today: 'vandaag', yesterday: 'gisteren' },
   collapsible: true,
   expandedItems: ['4'],
   items: [
@@ -85,7 +85,7 @@ const exampleArgsWithoutSender: ContactTimelineProps = {
       id: '2',
       title: 'Geef informatie',
       channel: 'mail',
-      isoDate: '2023-01-23T09:17:03.137Z',
+      isoDate: new Date(Date.now() - 864e5).toISOString(),
       description: 'Hier komt de uitgebreide beschrijving',
     },
     {
@@ -128,7 +128,7 @@ const exampleArgsWithoutSender: ContactTimelineProps = {
 };
 
 const exampleArgsWithFile: ContactTimelineProps = {
-  todayLabel: 'vandaag',
+  labels: { today: 'vandaag', yesterday: 'gisteren' },
   collapsible: true,
   expandedItems: ['4'],
   items: [
@@ -144,7 +144,7 @@ const exampleArgsWithFile: ContactTimelineProps = {
       id: '2',
       title: 'Geef informatie',
       channel: 'mail',
-      isoDate: '2023-01-23T09:17:03.137Z',
+      isoDate: new Date(Date.now() - 864e5).toISOString(),
       description: 'Hier komt de uitgebreide beschrijving',
       sender: 'Gemeente Den Haag',
     },

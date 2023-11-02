@@ -1,8 +1,7 @@
 import React, { Key, ReactNode, useState } from 'react';
 import { StepMarker, StepMarkerConnector } from '@gemeente-denhaag/step-marker';
 import { Step, StepHeader, StepHeading, StepHeaderToggle, StepDetails } from '@gemeente-denhaag/process-steps';
-import { format, differenceInDays } from 'date-fns';
-import { nl } from 'date-fns/locale';
+import { formatDate } from '@gemeente-denhaag/utils';
 import './index.scss';
 import { ContactTimelineMetaSeparator } from './ContactTimelineMetaSeparator';
 import { ContactTimelineMetaItem } from './ContactTimelineMetaItem';
@@ -27,8 +26,13 @@ export interface ContactTimelineItemProps {
   channel: ReactNode;
 }
 
+interface Labels {
+  today: string;
+  yesterday: string;
+}
+
 interface ContactTimelineItemInternalProps extends ContactTimelineItemProps {
-  todayLabel: string;
+  labels: Labels;
   nextItem?: boolean;
   expanded?: boolean;
   toggleExpanded: false | (() => void);
@@ -38,7 +42,7 @@ export interface ContactTimelineProps {
   items: ContactTimelineItemProps[];
   expandedItems?: Key[];
   collapsible?: boolean;
-  todayLabel: string;
+  labels: Labels;
 }
 
 const toggleState = (key: Key, collection: Key[], setCollection: React.Dispatch<React.SetStateAction<React.Key[]>>) => {
@@ -51,7 +55,7 @@ const toggleState = (key: Key, collection: Key[], setCollection: React.Dispatch<
 
 export const ContactTimeline: React.FC<ContactTimelineProps> = ({
   items,
-  todayLabel,
+  labels,
   expandedItems: initialExpanded = [],
   collapsible = false,
 }: ContactTimelineProps) => {
@@ -67,7 +71,7 @@ export const ContactTimeline: React.FC<ContactTimelineProps> = ({
             key={item.id}
             expanded={collapsible ? expandedItems.includes(item.id) : false}
             nextItem={nextItem}
-            todayLabel={todayLabel}
+            labels={labels}
             toggleExpanded={
               collapsible &&
               (() => {
@@ -81,29 +85,6 @@ export const ContactTimeline: React.FC<ContactTimelineProps> = ({
   );
 };
 
-interface Props {
-  dateTime: string;
-  todayLabel: string;
-  now?: string;
-  locale?: Locale;
-}
-
-export const formatContactTimelineDate = ({
-  dateTime,
-  now = new Date().toISOString(),
-  locale = nl,
-  todayLabel,
-}: Props): string => {
-  const date = new Date(dateTime);
-  const daysDifference = differenceInDays(date, new Date(now));
-
-  if (daysDifference === 0) {
-    return todayLabel;
-  }
-
-  return format(date, 'd-M-yyyy', { locale });
-};
-
 const ContactTimelineListItem: React.FC<ContactTimelineItemInternalProps> = ({
   id,
   title,
@@ -112,7 +93,7 @@ const ContactTimelineListItem: React.FC<ContactTimelineItemInternalProps> = ({
   date,
   isoDate,
   sender = '',
-  todayLabel,
+  labels,
   channel,
   nextItem,
   expanded = false,
@@ -126,7 +107,7 @@ const ContactTimelineListItem: React.FC<ContactTimelineItemInternalProps> = ({
             ? date
             : isoDate && (
                 <ContactTimelineMetaTimeItem dateTime={isoDate}>
-                  {formatContactTimelineDate({ dateTime: isoDate, todayLabel: todayLabel })}
+                  {formatDate({ dateTime: isoDate, labels: { ...labels } })}
                 </ContactTimelineMetaTimeItem>
               )}
         </ContactTimelineHeaderDate>
@@ -152,7 +133,7 @@ const ContactTimelineListItem: React.FC<ContactTimelineItemInternalProps> = ({
               ? date
               : isoDate && (
                   <ContactTimelineMetaTimeItem dateTime={isoDate}>
-                    {formatContactTimelineDate({ dateTime: isoDate, todayLabel: todayLabel })}
+                    {formatDate({ dateTime: isoDate, labels: { ...labels } })}
                   </ContactTimelineMetaTimeItem>
                 )}
             <ContactTimelineMetaSeparator />
