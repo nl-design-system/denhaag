@@ -543,12 +543,12 @@ importers:
       '@gemeente-denhaag/typography':
         specifier: workspace:*
         version: link:../Typography
+      '@gemeente-denhaag/utils':
+        specifier: workspace:*
+        version: link:../Utils
       clsx:
         specifier: 2.0.0
         version: 2.0.0
-      date-fns:
-        specifier: 2.30.0
-        version: 2.30.0
 
   components/CtaDownload:
     devDependencies:
@@ -1103,6 +1103,15 @@ importers:
       '@utrecht/components':
         specifier: 1.0.0-alpha.563
         version: 1.0.0-alpha.563
+
+  components/Utils:
+    dependencies:
+      date-fns:
+        specifier: 2.30.0
+        version: 2.30.0
+      react:
+        specifier: ^17.0.0 || ^18.0.0
+        version: 17.0.2
 
   packages/components-css:
     devDependencies:

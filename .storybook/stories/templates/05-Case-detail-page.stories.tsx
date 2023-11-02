@@ -86,7 +86,7 @@ const progressStepsData: StatusProps = {
 };
 
 const contactTimelineData: ContactTimelineProps = {
-  todayLabel: 'vandaag',
+  labels: { today: 'vandaag', yesterday: 'gisteren' },
   collapsible: true,
   items: [
     {
@@ -101,7 +101,7 @@ const contactTimelineData: ContactTimelineProps = {
       id: '2',
       title: 'Geef informatie',
       channel: 'mail',
-      isoDate: '2023-01-23T09:17:03.137Z',
+      isoDate: new Date(Date.now() - 864e5).toISOString(),
       description: 'Hier komt de uitgebreide beschrijving',
       sender: 'Gemeente Den Haag',
     },
