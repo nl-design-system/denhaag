@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { ActionSingle, ActionMulti } from './index';
+import { FormatDateLabels } from '@gemeente-denhaag/utils';
 
 export interface ActionSingleProps extends React.HTMLAttributes<HTMLAnchorElement> {
   children: React.ReactNode;
@@ -8,6 +9,7 @@ export interface ActionSingleProps extends React.HTMLAttributes<HTMLAnchorElemen
   dateTime?: string;
   now?: string;
   relativeDate?: boolean;
+  labels?: FormatDateLabels;
 }
 
 export interface ActionMultiProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -16,6 +18,7 @@ export interface ActionMultiProps extends React.HTMLAttributes<HTMLDivElement> {
   dateTime?: string;
   now?: string;
   relativeDate?: boolean;
+  labels?: FormatDateLabels;
 }
 
 export const Action = (props: ActionSingleProps | ActionMultiProps) => {

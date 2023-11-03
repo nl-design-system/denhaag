@@ -1,7 +1,7 @@
 import { format, differenceInDays } from 'date-fns';
 import { nl } from 'date-fns/locale';
 
-interface Labels {
+export interface FormatDateLabels {
   today?: string;
   yesterday?: string;
   before?: string;
@@ -12,7 +12,7 @@ interface Props {
   dateTime: string;
   now?: string;
   locale?: Locale;
-  labels?: Labels;
+  labels?: FormatDateLabels;
   relative?: boolean;
 }
 
@@ -25,9 +25,6 @@ export const formatDate = ({
 }: Props): [string | null, boolean] => {
   const date = new Date(dateTime);
   const daysDifference = differenceInDays(date, new Date(now));
-
-  console.log(date);
-  console.log(daysDifference);
 
   if (relative) {
     if (daysDifference < 0) {

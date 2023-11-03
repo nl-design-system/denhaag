@@ -5,6 +5,18 @@ import pkg from "../../package.json";
 import readme from "../../README.md";
 import { Action } from "../index.tsx";
 
+export const labels = {
+  today: "vandaag",
+  yesterday: "gisteren",
+  before: "vóór",
+  approachingDeadline: (daysDifference) => {
+    if (daysDifference === 1) {
+      return `nog ${daysDifference} dag`;
+    }
+    return `nog ${daysDifference} dagen`;
+  },
+};
+
 <Meta
   title="React/Actions/Action"
   parameters={{
@@ -62,7 +74,7 @@ import { Action } from "../index.tsx";
 <Canvas>
   <Story name="Single - with date">
     {() => (
-      <Action link="#example" dateTime={"2023-09-28T19:47:36.593Z"}>
+      <Action link="#example" dateTime={"2023-09-28T19:47:36.593Z"} labels={labels}>
         <strong>Taak</strong>
       </Action>
     )}
@@ -74,7 +86,13 @@ import { Action } from "../index.tsx";
 <Canvas>
   <Story name="Single - with date - relative">
     {() => (
-      <Action link="#example" dateTime={"2023-10-02T19:47:36.593Z"} now={"2023-09-28T19:47:36.593Z"} relativeDate>
+      <Action
+        link="#example"
+        dateTime={"2023-10-02T19:47:36.593Z"}
+        now={"2023-09-28T19:47:36.593Z"}
+        relativeDate
+        labels={labels}
+      >
         <strong>Taak</strong>
       </Action>
     )}
@@ -86,7 +104,13 @@ import { Action } from "../index.tsx";
 <Canvas>
   <Story name="Single - with warning date - relative">
     {() => (
-      <Action link="#example" dateTime={"2023-09-30T19:47:36.593Z"} now={"2023-09-28T19:47:36.593Z"} relativeDate>
+      <Action
+        link="#example"
+        dateTime={"2023-09-30T19:47:36.593Z"}
+        now={"2023-09-28T19:47:36.593Z"}
+        relativeDate
+        labels={labels}
+      >
         <strong>Taak</strong>
       </Action>
     )}
@@ -149,6 +173,7 @@ import { Action } from "../index.tsx";
       <Action
         dateTime={"2023-09-28T19:47:36.593Z"}
         now={"2023-09-28T19:47:36.593Z"}
+        labels={labels}
         actions={<ButtonLink href="#example">Actie</ButtonLink>}
       >
         <strong>Taak</strong>
@@ -166,6 +191,7 @@ import { Action } from "../index.tsx";
         relativeDate
         dateTime={"2023-10-02T19:47:36.593Z"}
         now={"2023-09-28T19:47:36.593Z"}
+        labels={labels}
         actions={<ButtonLink href="#example">Actie</ButtonLink>}
       >
         <strong>Taak</strong>
@@ -183,6 +209,7 @@ import { Action } from "../index.tsx";
         relativeDate
         dateTime={"2023-09-30T19:47:36.593Z"}
         now={"2023-09-28T19:47:36.593Z"}
+        labels={labels}
         actions={<ButtonLink href="#example">Actie</ButtonLink>}
       >
         <strong>Taak</strong>

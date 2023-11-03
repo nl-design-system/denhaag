@@ -28,6 +28,7 @@ import {
   newsletterData,
   contactData,
   linkData,
+  dateFormatLabels,
 } from './util';
 
 import './template-story.scss';
@@ -219,6 +220,7 @@ export const ZaakDetailPagina: Story = {
             className="denhaag-page-content__task"
             dateTime={taskDateTime}
             now={taskNow}
+            labels={dateFormatLabels}
             actions={<ButtonLink href="#example">Actie</ButtonLink>}
             relativeDate
           >
@@ -234,6 +236,7 @@ export const ZaakDetailPagina: Story = {
             className="denhaag-page-content__task"
             dateTime={taskDateTime}
             now={taskNow}
+            labels={dateFormatLabels}
             actions={<ButtonLink href="#example">Actie</ButtonLink>}
             relativeDate
           >

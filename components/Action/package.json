@@ -32,6 +32,7 @@
     "@gemeente-denhaag/button": "workspace:*",
     "@gemeente-denhaag/icons": "workspace:*",
     "@gemeente-denhaag/link": "workspace:*",
+    "@gemeente-denhaag/utils": "workspace:*",
     "date-fns": "2.30.0"
   }
 }
