@@ -18,6 +18,7 @@ import {
   BookIcon,
   InboxIcon,
 } from '../../../components/Icons/src';
+import { dateFormatLabels } from './util';
 import { Action } from '../../../components/Action/src';
 import { Table, TableHead, TableHeader, TableRow } from '../../../components/Table/src';
 
@@ -244,7 +245,7 @@ export const MessagesPage: StoryObj<typeof meta> = {
             </TableHead>
           </Table>
           {messages.map((m) => (
-            <Action link={m.link} dateTime={m.dateTime} now={currentDate}>
+            <Action link={m.link} dateTime={m.dateTime} now={currentDate} labels={dateFormatLabels}>
               {m.new ? <strong>{m.title}</strong> : m.title}
             </Action>
           ))}

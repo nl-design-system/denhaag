@@ -128,6 +128,18 @@ export const footerSocialData = {
   ],
 };
 
+export const dateFormatLabels = {
+  today: 'vandaag',
+  yesterday: 'gisteren',
+  before: 'vóór',
+  approachingDeadline: (daysDifference) => {
+    if (daysDifference === 1) {
+      return `nog ${daysDifference} dag`;
+    }
+    return `nog ${daysDifference} dagen`;
+  },
+};
+
 export const newsletterData = {
   title: 'Meld u aan voor de nieuwsbrief',
   text: 'Blijf gemakkelijk op de hoogte van ontwikkelingen in uw stadsdeel en de belangrijkste zaken van Den Haag.',
