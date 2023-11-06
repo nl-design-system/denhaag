@@ -61,7 +61,6 @@
     "@commitlint/config-conventional": "17.8.0",
     "@etchteam/storybook-addon-status": "4.2.4",
     "@gemeente-denhaag/alert": "workspace:*",
-    "@gemeente-denhaag/avatar": "workspace:*",
     "@gemeente-denhaag/badge-counter": "workspace:*",
     "@gemeente-denhaag/baseprops": "workspace:*",
     "@gemeente-denhaag/button": "workspace:*",

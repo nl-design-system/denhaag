@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
@@ -44,9 +48,6 @@ importers:
       '@gemeente-denhaag/alert':
         specifier: workspace:*
         version: link:components/Alert
-      '@gemeente-denhaag/avatar':
-        specifier: workspace:*
-        version: link:components/Avatar
       '@gemeente-denhaag/badge-counter':
         specifier: workspace:*
         version: link:components/BadgeCounter
@@ -406,15 +407,6 @@ importers:
 
   components/AuthenticationBlock: {}
 
-  components/Avatar:
-    dependencies:
-      '@gemeente-denhaag/baseprops':
-        specifier: workspace:*
-        version: link:../BaseProps
-      react:
-        specifier: ^17.0.0 || ^18.0.0
-        version: 17.0.2
-
   components/BadgeCounter:
     dependencies:
       '@gemeente-denhaag/dotindicator':
@@ -494,9 +486,6 @@ importers:
         specifier: ^17.0.0 || ^18.0.0
         version: 17.0.2
     devDependencies:
-      '@gemeente-denhaag/avatar':
-        specifier: workspace:*
-        version: link:../Avatar
       '@gemeente-denhaag/iconbutton':
         specifier: workspace:*
         version: link:../IconButton
@@ -596,9 +585,6 @@ importers:
         specifier: ^17.0.0 || ^18.0.0
         version: 17.0.2
     devDependencies:
-      '@gemeente-denhaag/avatar':
-        specifier: workspace:*
-        version: link:../Avatar
       '@gemeente-denhaag/button':
         specifier: workspace:*
         version: link:../Button
@@ -1283,9 +1269,6 @@ importers:
       '@gemeente-denhaag/alert':
         specifier: workspace:*
         version: link:../../components/Alert
-      '@gemeente-denhaag/avatar':
-        specifier: workspace:*
-        version: link:../../components/Avatar
       '@gemeente-denhaag/badge-counter':
         specifier: workspace:*
         version: link:../../components/BadgeCounter
@@ -27953,7 +27936,3 @@ packages:
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: true
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
