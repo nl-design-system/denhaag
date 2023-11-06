@@ -50,7 +50,6 @@
     "@gemeente-denhaag/posttypelabel": "workspace:*",
     "@gemeente-denhaag/process-steps": "workspace:*",
     "@gemeente-denhaag/radio": "workspace:*",
-    "@gemeente-denhaag/select": "workspace:*",
     "@gemeente-denhaag/sidenav": "workspace:*",
     "@gemeente-denhaag/stylesprovider": "workspace:*",
     "@gemeente-denhaag/tab": "workspace:*",
