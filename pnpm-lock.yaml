@@ -90,9 +90,6 @@ importers:
       '@gemeente-denhaag/icons':
         specifier: workspace:*
         version: link:components/Icons
-      '@gemeente-denhaag/inputlabel':
-        specifier: workspace:*
-        version: link:components/InputLabel
       '@gemeente-denhaag/link':
         specifier: workspace:*
         version: link:components/Link
@@ -720,18 +717,6 @@ importers:
         specifier: workspace:*
         version: link:../Icons
 
-  components/InputLabel:
-    dependencies:
-      '@gemeente-denhaag/baseprops':
-        specifier: workspace:*
-        version: link:../BaseProps
-      '@material-ui/core':
-        specifier: 4.12.4
-        version: 4.12.4(@types/react@17.0.69)(react-dom@17.0.2)(react@17.0.2)
-      react:
-        specifier: ^17.0.0 || ^18.0.0
-        version: 17.0.2
-
   components/LanguageSwitcher:
     dependencies:
       '@gemeente-denhaag/icons':
@@ -1185,9 +1170,6 @@ importers:
       '@gemeente-denhaag/iconbutton':
         specifier: workspace:*
         version: link:../../components/IconButton
-      '@gemeente-denhaag/inputlabel':
-        specifier: workspace:*
-        version: link:../../components/InputLabel
       '@gemeente-denhaag/link':
         specifier: workspace:*
         version: link:../../components/Link

@@ -75,7 +75,6 @@
     "@gemeente-denhaag/formgroup": "workspace:*",
     "@gemeente-denhaag/iconbutton": "workspace:*",
     "@gemeente-denhaag/icons": "workspace:*",
-    "@gemeente-denhaag/inputlabel": "workspace:*",
     "@gemeente-denhaag/link": "workspace:*",
     "@gemeente-denhaag/list": "workspace:*",
     "@gemeente-denhaag/menu": "workspace:*",

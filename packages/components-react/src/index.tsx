@@ -12,7 +12,6 @@ export * from '@gemeente-denhaag/formcontrollabel';
 export * from '@gemeente-denhaag/form-field';
 export * from '@gemeente-denhaag/formgroup';
 export * from '@gemeente-denhaag/form-progress';
-export * from '@gemeente-denhaag/inputlabel';
 export * from '@gemeente-denhaag/iconbutton';
 export * from '@gemeente-denhaag/link';
 export * from '@gemeente-denhaag/list';
