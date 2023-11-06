@@ -971,19 +971,6 @@ importers:
         specifier: ^17.0.0 || ^18.0.0
         version: 17.0.2
 
-  components/TextArea:
-    dependencies:
-      '@gemeente-denhaag/icons':
-        specifier: workspace:*
-        version: link:../Icons
-      react:
-        specifier: ^17.0.0 || ^18.0.0
-        version: 17.0.2
-    devDependencies:
-      '@utrecht/components':
-        specifier: 1.0.0-alpha.563
-        version: 1.0.0-alpha.563
-
   components/TextField:
     dependencies:
       '@gemeente-denhaag/icons':
@@ -1183,9 +1170,6 @@ importers:
       '@gemeente-denhaag/table':
         specifier: workspace:*
         version: link:../../components/Table
-      '@gemeente-denhaag/textarea':
-        specifier: workspace:*
-        version: link:../../components/TextArea
       '@gemeente-denhaag/textfield':
         specifier: workspace:*
         version: link:../../components/TextField
