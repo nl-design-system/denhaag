@@ -66,7 +66,6 @@
     "@gemeente-denhaag/button": "workspace:*",
     "@gemeente-denhaag/card": "workspace:*",
     "@gemeente-denhaag/checkbox": "workspace:*",
-    "@gemeente-denhaag/datepicker": "workspace:*",
     "@gemeente-denhaag/design-tokens-components": "workspace:*",
     "@gemeente-denhaag/divider": "workspace:*",
     "@gemeente-denhaag/form-field": "workspace:*",
