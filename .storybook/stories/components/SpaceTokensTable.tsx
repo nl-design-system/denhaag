@@ -1,8 +1,11 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 export const path2css = (path) => `var(--${path.join('-')})`;
 
-const HorizontalSpaceExample = ({ size }) => (
+interface HorizontalSpaceExampleProps {
+  size: string;
+}
+
+const HorizontalSpaceExample = ({ size }: HorizontalSpaceExampleProps) => (
   <div
     style={{
       backgroundColor: 'black',
@@ -12,11 +15,11 @@ const HorizontalSpaceExample = ({ size }) => (
   ></div>
 );
 
-HorizontalSpaceExample.propTypes = {
-  size: PropTypes.string,
-};
+interface VerticalSpaceExampleProps {
+  size: string;
+}
 
-const VerticalSpaceExample = ({ size }) => (
+const VerticalSpaceExample = ({ size }: VerticalSpaceExampleProps) => (
   <div
     style={{
       backgroundColor: 'black',
@@ -26,11 +29,11 @@ const VerticalSpaceExample = ({ size }) => (
   ></div>
 );
 
-VerticalSpaceExample.propTypes = {
-  size: PropTypes.string,
-};
+interface BlockSpaceExampleProps {
+  size: string;
+}
 
-const BlockSpaceExample = ({ size }) => (
+const BlockSpaceExample = ({ size }: BlockSpaceExampleProps) => (
   <div
     style={{
       backgroundColor: 'black',
@@ -40,11 +43,11 @@ const BlockSpaceExample = ({ size }) => (
   ></div>
 );
 
-BlockSpaceExample.propTypes = {
-  size: PropTypes.string,
-};
+interface InlineSpaceExampleProps {
+  size: string;
+}
 
-const InlineSpaceExample = ({ size }) => (
+const InlineSpaceExample = ({ size }: InlineSpaceExampleProps) => (
   <div
     style={{
       backgroundColor: 'black',
@@ -54,11 +57,17 @@ const InlineSpaceExample = ({ size }) => (
   ></div>
 );
 
-InlineSpaceExample.propTypes = {
-  size: PropTypes.string,
-};
+interface SpaceTokensTableProps {
+  orientation?: 'horizontal' | 'vertical' | 'block' | 'inline';
+  tokens: {
+    comment: string;
+    name: string;
+    path: string;
+    value: string;
+  }[];
+}
 
-export const SpaceTokensTable = ({ tokens, orientation }) => (
+export const SpaceTokensTable = ({ tokens, orientation }: SpaceTokensTableProps) => (
   <table>
     <thead>
       <tr>
@@ -94,15 +103,3 @@ export const SpaceTokensTable = ({ tokens, orientation }) => (
     </tbody>
   </table>
 );
-
-SpaceTokensTable.propTypes = {
-  orientation: PropTypes.string,
-  tokens: PropTypes.arrayOf(
-    PropTypes.shape({
-      comment: PropTypes.string,
-      name: PropTypes.string,
-      path: PropTypes.string,
-      value: PropTypes.string,
-    }),
-  ),
-};

@@ -1,8 +1,16 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 export const path2css = (path) => `var(--${path.join('-')})`;
 
-export const DesignTokensTable = ({ tokens }) => (
+interface DesignTokensTableProps {
+  tokens: {
+    comment: string;
+    name: string;
+    path: string;
+    value: string;
+  }[];
+}
+
+export const DesignTokensTable = ({ tokens }: DesignTokensTableProps) => (
   <table>
     <thead>
       <tr>
@@ -22,14 +30,3 @@ export const DesignTokensTable = ({ tokens }) => (
     </tbody>
   </table>
 );
-
-DesignTokensTable.propTypes = {
-  tokens: PropTypes.arrayOf(
-    PropTypes.shape({
-      comment: PropTypes.string,
-      name: PropTypes.string,
-      path: PropTypes.string,
-      value: PropTypes.string,
-    }),
-  ),
-};
