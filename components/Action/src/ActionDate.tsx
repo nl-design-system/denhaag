@@ -10,7 +10,7 @@ interface Props {
   now?: string;
   relative?: boolean;
   locale?: Locale;
-  labels?: FormatDateLabels;
+  labels: FormatDateLabels;
 }
 
 export const ActionDate = ({

@@ -9,7 +9,7 @@ export interface ActionSingleProps extends React.HTMLAttributes<HTMLAnchorElemen
   dateTime?: string;
   now?: string;
   relativeDate?: boolean;
-  labels?: FormatDateLabels;
+  labels: FormatDateLabels;
 }
 
 export interface ActionMultiProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -18,7 +18,7 @@ export interface ActionMultiProps extends React.HTMLAttributes<HTMLDivElement> {
   dateTime?: string;
   now?: string;
   relativeDate?: boolean;
-  labels?: FormatDateLabels;
+  labels: FormatDateLabels;
 }
 
 export const Action = (props: ActionSingleProps | ActionMultiProps) => {
