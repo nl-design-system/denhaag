@@ -7,7 +7,7 @@ interface ActionDetailsProps {
   dateTime?: string;
   now?: string;
   relativeDate?: boolean;
-  labels?: FormatDateLabels;
+  labels: FormatDateLabels;
 }
 
 export const ActionDetails = ({ children, dateTime, now, relativeDate, labels }: ActionDetailsProps) => {

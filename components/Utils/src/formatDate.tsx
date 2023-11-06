@@ -12,7 +12,7 @@ interface Props {
   dateTime: string;
   now?: string;
   locale?: Locale;
-  labels?: FormatDateLabels;
+  labels: FormatDateLabels;
   relative?: boolean;
 }
 
@@ -20,7 +20,7 @@ export const formatDate = ({
   dateTime,
   now = new Date().toISOString(),
   locale = nl,
-  labels = {},
+  labels,
   relative,
 }: Props): [string | null, boolean] => {
   const date = new Date(dateTime);
