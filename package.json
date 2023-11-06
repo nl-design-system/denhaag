@@ -85,7 +85,6 @@
     "@gemeente-denhaag/select": "workspace:*",
     "@gemeente-denhaag/sidenav": "workspace:*",
     "@gemeente-denhaag/stylesprovider": "workspace:*",
-    "@gemeente-denhaag/switch": "workspace:*",
     "@gemeente-denhaag/tab": "workspace:*",
     "@gemeente-denhaag/textfield": "workspace:*",
     "@gemeente-denhaag/typography": "workspace:*",
