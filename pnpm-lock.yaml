@@ -63,9 +63,6 @@ importers:
       '@gemeente-denhaag/checkbox':
         specifier: workspace:*
         version: link:components/Checkbox
-      '@gemeente-denhaag/datepicker':
-        specifier: workspace:*
-        version: link:components/Datepicker
       '@gemeente-denhaag/design-tokens-components':
         specifier: workspace:*
         version: link:proprietary/Components
@@ -409,9 +406,6 @@ importers:
 
   components/BadgeCounter:
     dependencies:
-      '@gemeente-denhaag/dotindicator':
-        specifier: workspace:*
-        version: link:../DotIndicator
       react:
         specifier: ^17.0.0 || ^18.0.0
         version: 17.0.2
@@ -543,18 +537,6 @@ importers:
         specifier: workspace:*
         version: link:../Icons
 
-  components/Datepicker:
-    dependencies:
-      '@gemeente-denhaag/icons':
-        specifier: workspace:*
-        version: link:../Icons
-      date-fns:
-        specifier: 2.30.0
-        version: 2.30.0
-      react:
-        specifier: ^17.0.0 || ^18.0.0
-        version: 17.0.2
-
   components/DescriptionList: {}
 
   components/Divider:
@@ -575,19 +557,6 @@ importers:
       '@gemeente-denhaag/icons':
         specifier: workspace:*
         version: link:../Icons
-
-  components/DotIndicator:
-    dependencies:
-      '@gemeente-denhaag/baseprops':
-        specifier: workspace:*
-        version: link:../BaseProps
-      react:
-        specifier: ^17.0.0 || ^18.0.0
-        version: 17.0.2
-    devDependencies:
-      '@gemeente-denhaag/button':
-        specifier: workspace:*
-        version: link:../Button
 
   components/DynamicContent:
     devDependencies:
@@ -1140,18 +1109,12 @@ importers:
       '@gemeente-denhaag/ctalink':
         specifier: workspace:*
         version: link:../../components/CtaLink
-      '@gemeente-denhaag/datepicker':
-        specifier: workspace:*
-        version: link:../../components/Datepicker
       '@gemeente-denhaag/descriptionlist':
         specifier: workspace:*
         version: link:../../components/DescriptionList
       '@gemeente-denhaag/divider':
         specifier: workspace:*
         version: link:../../components/Divider
-      '@gemeente-denhaag/dotindicator':
-        specifier: workspace:*
-        version: link:../../components/DotIndicator
       '@gemeente-denhaag/dynamic-content':
         specifier: workspace:*
         version: link:../../components/DynamicContent
@@ -1284,9 +1247,6 @@ importers:
       '@gemeente-denhaag/checkbox':
         specifier: workspace:*
         version: link:../../components/Checkbox
-      '@gemeente-denhaag/datepicker':
-        specifier: workspace:*
-        version: link:../../components/Datepicker
       '@gemeente-denhaag/divider':
         specifier: workspace:*
         version: link:../../components/Divider
