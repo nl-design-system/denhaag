@@ -56,7 +56,6 @@
     "@gemeente-denhaag/switch": "workspace:*",
     "@gemeente-denhaag/tab": "workspace:*",
     "@gemeente-denhaag/textfield": "workspace:*",
-    "@gemeente-denhaag/timeline": "workspace:*",
     "@gemeente-denhaag/typography": "workspace:*"
   },
   "peerDependencies": {

@@ -129,9 +129,6 @@ importers:
       '@gemeente-denhaag/textfield':
         specifier: workspace:*
         version: link:components/TextField
-      '@gemeente-denhaag/timeline':
-        specifier: workspace:*
-        version: link:components/Timeline
       '@gemeente-denhaag/typography':
         specifier: workspace:*
         version: link:components/Typography
@@ -1000,28 +997,6 @@ importers:
         specifier: 1.0.0-alpha.563
         version: 1.0.0-alpha.563
 
-  components/Timeline:
-    dependencies:
-      '@gemeente-denhaag/baseprops':
-        specifier: workspace:*
-        version: link:../BaseProps
-      '@gemeente-denhaag/icons':
-        specifier: workspace:*
-        version: link:../Icons
-      '@gemeente-denhaag/typography':
-        specifier: workspace:*
-        version: link:../Typography
-      '@material-ui/core':
-        specifier: 4.12.4
-        version: 4.12.4(@types/react@17.0.69)(react-dom@17.0.2)(react@17.0.2)
-      react:
-        specifier: ^17.0.0 || ^18.0.0
-        version: 17.0.2
-    devDependencies:
-      '@gemeente-denhaag/button':
-        specifier: workspace:*
-        version: link:../Button
-
   components/Typography:
     dependencies:
       '@gemeente-denhaag/basedatadisplayprops':
@@ -1214,9 +1189,6 @@ importers:
       '@gemeente-denhaag/textfield':
         specifier: workspace:*
         version: link:../../components/TextField
-      '@gemeente-denhaag/timeline':
-        specifier: workspace:*
-        version: link:../../components/Timeline
       '@gemeente-denhaag/typography':
         specifier: workspace:*
         version: link:../../components/Typography
@@ -1310,9 +1282,6 @@ importers:
       '@gemeente-denhaag/textfield':
         specifier: workspace:*
         version: link:../../components/TextField
-      '@gemeente-denhaag/timeline':
-        specifier: workspace:*
-        version: link:../../components/Timeline
       '@gemeente-denhaag/typography':
         specifier: workspace:*
         version: link:../../components/Typography

@@ -26,5 +26,4 @@ export * from '@gemeente-denhaag/switch';
 export * from '@gemeente-denhaag/stylesprovider';
 export * from '@gemeente-denhaag/tab';
 export * from '@gemeente-denhaag/textfield';
-export * from '@gemeente-denhaag/timeline';
 export * from '@gemeente-denhaag/typography';
