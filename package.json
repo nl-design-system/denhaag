@@ -117,7 +117,7 @@
     "@utrecht/component-library-react": "1.0.0-alpha.380",
     "axe-core": "4.8.2",
     "babel-eslint": "10.1.0",
-    "babel-jest": "27.5.1",
+    "babel-jest": "29.7.0",
     "babel-loader": "8.3.0",
     "chokidar-cli": "3.0.0",
     "copyfiles": "2.4.1",
