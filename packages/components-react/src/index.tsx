@@ -17,7 +17,6 @@ export * from '@gemeente-denhaag/iconbutton';
 export * from '@gemeente-denhaag/link';
 export * from '@gemeente-denhaag/list';
 export * from '@gemeente-denhaag/menu';
-export * from '@gemeente-denhaag/posttypelabel';
 export * from '@gemeente-denhaag/process-steps';
 export * from '@gemeente-denhaag/radio';
 export * from '@gemeente-denhaag/sidenav';

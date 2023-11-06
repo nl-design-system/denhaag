@@ -102,9 +102,6 @@ importers:
       '@gemeente-denhaag/menu':
         specifier: workspace:*
         version: link:components/Menu
-      '@gemeente-denhaag/posttypelabel':
-        specifier: workspace:*
-        version: link:components/PosttypeLabel
       '@gemeente-denhaag/process-steps':
         specifier: workspace:*
         version: link:components/ProcessSteps
@@ -834,12 +831,6 @@ importers:
         specifier: workspace:*
         version: link:../Icons
 
-  components/PosttypeLabel:
-    dependencies:
-      react:
-        specifier: ^17.0.0 || ^18.0.0
-        version: 17.0.2
-
   components/ProcessSteps:
     dependencies:
       '@gemeente-denhaag/baseprops':
@@ -1119,9 +1110,6 @@ importers:
       '@gemeente-denhaag/pagination':
         specifier: workspace:*
         version: link:../../components/Pagination
-      '@gemeente-denhaag/posttypelabel':
-        specifier: workspace:*
-        version: link:../../components/PosttypeLabel
       '@gemeente-denhaag/process-steps':
         specifier: workspace:*
         version: link:../../components/ProcessSteps
@@ -1209,9 +1197,6 @@ importers:
       '@gemeente-denhaag/menu':
         specifier: workspace:*
         version: link:../../components/Menu
-      '@gemeente-denhaag/posttypelabel':
-        specifier: workspace:*
-        version: link:../../components/PosttypeLabel
       '@gemeente-denhaag/process-steps':
         specifier: workspace:*
         version: link:../../components/ProcessSteps

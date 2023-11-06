@@ -79,7 +79,6 @@
     "@gemeente-denhaag/link": "workspace:*",
     "@gemeente-denhaag/list": "workspace:*",
     "@gemeente-denhaag/menu": "workspace:*",
-    "@gemeente-denhaag/posttypelabel": "workspace:*",
     "@gemeente-denhaag/process-steps": "workspace:*",
     "@gemeente-denhaag/radio": "workspace:*",
     "@gemeente-denhaag/sidenav": "workspace:*",
