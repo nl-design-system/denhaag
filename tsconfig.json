@@ -11,9 +11,6 @@
       "path": "components/Alert"
     },
     {
-      "path": "components/Avatar"
-    },
-    {
       "path": "components/BadgeCounter"
     },
     {
@@ -36,9 +33,6 @@
     },
     {
       "path": "components/Checkbox"
-    },
-    {
-      "path": "components/Datepicker"
     },
     {
       "path": "components/Divider"
