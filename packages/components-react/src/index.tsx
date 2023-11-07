@@ -7,7 +7,6 @@ export * from '@gemeente-denhaag/card';
 export * from '@gemeente-denhaag/checkbox';
 export * from '@gemeente-denhaag/divider';
 export * from '@gemeente-denhaag/file';
-export * from '@gemeente-denhaag/formcontrol';
 export * from '@gemeente-denhaag/formcontrollabel';
 export * from '@gemeente-denhaag/form-field';
 export * from '@gemeente-denhaag/formgroup';

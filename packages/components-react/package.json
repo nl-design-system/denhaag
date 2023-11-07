@@ -39,7 +39,6 @@
     "@gemeente-denhaag/file": "workspace:*",
     "@gemeente-denhaag/form-field": "workspace:*",
     "@gemeente-denhaag/form-progress": "workspace:*",
-    "@gemeente-denhaag/formcontrol": "workspace:*",
     "@gemeente-denhaag/formcontrollabel": "workspace:*",
     "@gemeente-denhaag/formgroup": "workspace:*",
     "@gemeente-denhaag/iconbutton": "workspace:*",
