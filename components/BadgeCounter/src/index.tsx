@@ -1,4 +1,5 @@
 import React, { HTMLAttributes } from 'react';
+import { DotIndicator } from '@gemeente-denhaag/dotindicator';
 import './index.scss';
 import clsx from 'clsx';
 
@@ -13,7 +14,9 @@ export const BadgeCounter: React.FC<BadgeCounterProps> = (props: BadgeCounterPro
   const rootClassNames = clsx('denhaag-badge-counter', props.className);
   return (
     <div id={props.id} className={rootClassNames}>
-      <div className={'denhaag-badge-counter__counter'}>{props.children}</div>
+      <DotIndicator overlap={'rectangle'}>
+        <div className={'denhaag-badge-counter__counter'}>{props.children}</div>
+      </DotIndicator>
     </div>
   );
 };

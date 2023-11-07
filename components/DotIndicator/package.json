@@ -1,12 +1,12 @@
 {
-  "name": "@gemeente-denhaag/badge-counter",
+  "name": "@gemeente-denhaag/dotindicator",
   "version": "0.1.1-alpha.353",
-  "description": "A Badge component",
+  "description": "A Dot Indicator component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/nl-design-system/denhaag.git",
-    "directory": "components/BadgeCounter"
+    "directory": "components/DotIndicator"
   },
   "license": "EUPL-1.2",
   "author": "Municipality of The Hague",
@@ -29,10 +29,10 @@
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/dotindicator": "workspace:*"
+    "@gemeente-denhaag/baseprops": "workspace:*"
   },
   "devDependencies": {
-    "@utrecht/components": "1.0.0-alpha.563"
+    "@gemeente-denhaag/button": "workspace:*"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"

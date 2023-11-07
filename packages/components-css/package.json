@@ -44,6 +44,7 @@
     "@gemeente-denhaag/ctalink": "workspace:*",
     "@gemeente-denhaag/descriptionlist": "workspace:*",
     "@gemeente-denhaag/divider": "workspace:*",
+    "@gemeente-denhaag/dotindicator": "workspace:*",
     "@gemeente-denhaag/dynamic-content": "workspace:*",
     "@gemeente-denhaag/eventdate": "workspace:*",
     "@gemeente-denhaag/file": "workspace:*",
