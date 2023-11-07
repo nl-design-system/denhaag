@@ -1,4 +1,4 @@
-import { format, differenceInDays } from 'date-fns';
+import { format, differenceInCalendarDays } from 'date-fns';
 import { nl } from 'date-fns/locale';
 
 export interface FormatDateLabels {
@@ -24,7 +24,7 @@ export const formatDate = ({
   relative,
 }: Props): [string | null, boolean] => {
   const date = new Date(dateTime);
-  const daysDifference = differenceInDays(date, new Date(now));
+  const daysDifference = differenceInCalendarDays(date, new Date(now));
 
   if (relative) {
     if (daysDifference < 0) {
