@@ -7,9 +7,6 @@
       "path": "components/Accordion"
     },
     {
-      "path": "components/Avatar"
-    },
-    {
       "path": "components/BadgeCounter"
     },
     {
@@ -28,13 +25,7 @@
       "path": "components/Checkbox"
     },
     {
-      "path": "components/Datepicker"
-    },
-    {
       "path": "components/Divider"
-    },
-    {
-      "path": "components/FormControl"
     },
     {
       "path": "components/FormControlLabel"
@@ -49,9 +40,6 @@
       "path": "components/Icons"
     },
     {
-      "path": "components/InputLabel"
-    },
-    {
       "path": "components/Link"
     },
     {
@@ -64,25 +52,16 @@
       "path": "components/Radio"
     },
     {
-      "path": "components/Select"
-    },
-    {
       "path": "components/Sidenav"
     },
     {
       "path": "components/StylesProvider"
     },
     {
-      "path": "components/Switch"
-    },
-    {
       "path": "components/Tab"
     },
     {
       "path": "components/TextField"
-    },
-    {
-      "path": "components/Timeline"
     },
     {
       "path": "components/Typography"

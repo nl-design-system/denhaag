@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
@@ -44,9 +48,6 @@ importers:
       '@gemeente-denhaag/alert':
         specifier: workspace:*
         version: link:components/Alert
-      '@gemeente-denhaag/avatar':
-        specifier: workspace:*
-        version: link:components/Avatar
       '@gemeente-denhaag/badge-counter':
         specifier: workspace:*
         version: link:components/BadgeCounter
@@ -62,9 +63,6 @@ importers:
       '@gemeente-denhaag/checkbox':
         specifier: workspace:*
         version: link:components/Checkbox
-      '@gemeente-denhaag/datepicker':
-        specifier: workspace:*
-        version: link:components/Datepicker
       '@gemeente-denhaag/design-tokens-components':
         specifier: workspace:*
         version: link:proprietary/Components
@@ -77,9 +75,6 @@ importers:
       '@gemeente-denhaag/form-progress':
         specifier: workspace:*
         version: link:components/FormProgress
-      '@gemeente-denhaag/formcontrol':
-        specifier: workspace:*
-        version: link:components/FormControl
       '@gemeente-denhaag/formcontrollabel':
         specifier: workspace:*
         version: link:components/FormControlLabel
@@ -92,9 +87,6 @@ importers:
       '@gemeente-denhaag/icons':
         specifier: workspace:*
         version: link:components/Icons
-      '@gemeente-denhaag/inputlabel':
-        specifier: workspace:*
-        version: link:components/InputLabel
       '@gemeente-denhaag/link':
         specifier: workspace:*
         version: link:components/Link
@@ -104,36 +96,24 @@ importers:
       '@gemeente-denhaag/menu':
         specifier: workspace:*
         version: link:components/Menu
-      '@gemeente-denhaag/posttypelabel':
-        specifier: workspace:*
-        version: link:components/PosttypeLabel
       '@gemeente-denhaag/process-steps':
         specifier: workspace:*
         version: link:components/ProcessSteps
       '@gemeente-denhaag/radio':
         specifier: workspace:*
         version: link:components/Radio
-      '@gemeente-denhaag/select':
-        specifier: workspace:*
-        version: link:components/Select
       '@gemeente-denhaag/sidenav':
         specifier: workspace:*
         version: link:components/Sidenav
       '@gemeente-denhaag/stylesprovider':
         specifier: workspace:*
         version: link:components/StylesProvider
-      '@gemeente-denhaag/switch':
-        specifier: workspace:*
-        version: link:components/Switch
       '@gemeente-denhaag/tab':
         specifier: workspace:*
         version: link:components/Tab
       '@gemeente-denhaag/textfield':
         specifier: workspace:*
         version: link:components/TextField
-      '@gemeente-denhaag/timeline':
-        specifier: workspace:*
-        version: link:components/Timeline
       '@gemeente-denhaag/typography':
         specifier: workspace:*
         version: link:components/Typography
@@ -409,15 +389,6 @@ importers:
 
   components/AuthenticationBlock: {}
 
-  components/Avatar:
-    dependencies:
-      '@gemeente-denhaag/baseprops':
-        specifier: workspace:*
-        version: link:../BaseProps
-      react:
-        specifier: ^17.0.0 || ^18.0.0
-        version: 17.0.2
-
   components/BadgeCounter:
     dependencies:
       '@gemeente-denhaag/dotindicator':
@@ -497,9 +468,6 @@ importers:
         specifier: ^17.0.0 || ^18.0.0
         version: 17.0.2
     devDependencies:
-      '@gemeente-denhaag/avatar':
-        specifier: workspace:*
-        version: link:../Avatar
       '@gemeente-denhaag/iconbutton':
         specifier: workspace:*
         version: link:../IconButton
@@ -563,18 +531,6 @@ importers:
         specifier: workspace:*
         version: link:../Icons
 
-  components/Datepicker:
-    dependencies:
-      '@gemeente-denhaag/icons':
-        specifier: workspace:*
-        version: link:../Icons
-      date-fns:
-        specifier: 2.30.0
-        version: 2.30.0
-      react:
-        specifier: ^17.0.0 || ^18.0.0
-        version: 17.0.2
-
   components/DescriptionList: {}
 
   components/Divider:
@@ -605,9 +561,6 @@ importers:
         specifier: ^17.0.0 || ^18.0.0
         version: 17.0.2
     devDependencies:
-      '@gemeente-denhaag/avatar':
-        specifier: workspace:*
-        version: link:../Avatar
       '@gemeente-denhaag/button':
         specifier: workspace:*
         version: link:../Button
@@ -652,15 +605,6 @@ importers:
       '@gemeente-denhaag/baseprops':
         specifier: 0.2.3-alpha.353
         version: link:../BaseProps
-
-  components/FormControl:
-    dependencies:
-      '@material-ui/core':
-        specifier: 4.12.4
-        version: 4.12.4(@types/react@17.0.69)(react-dom@17.0.2)(react@17.0.2)
-      react:
-        specifier: ^17.0.0 || ^18.0.0
-        version: 17.0.2
 
   components/FormControlLabel:
     dependencies:
@@ -786,18 +730,6 @@ importers:
         specifier: workspace:*
         version: link:../Icons
 
-  components/InputLabel:
-    dependencies:
-      '@gemeente-denhaag/baseprops':
-        specifier: workspace:*
-        version: link:../BaseProps
-      '@material-ui/core':
-        specifier: 4.12.4
-        version: 4.12.4(@types/react@17.0.69)(react-dom@17.0.2)(react@17.0.2)
-      react:
-        specifier: ^17.0.0 || ^18.0.0
-        version: 17.0.2
-
   components/LanguageSwitcher:
     dependencies:
       '@gemeente-denhaag/icons':
@@ -897,12 +829,6 @@ importers:
         specifier: workspace:*
         version: link:../Icons
 
-  components/PosttypeLabel:
-    dependencies:
-      react:
-        specifier: ^17.0.0 || ^18.0.0
-        version: 17.0.2
-
   components/ProcessSteps:
     dependencies:
       '@gemeente-denhaag/baseprops':
@@ -943,18 +869,6 @@ importers:
       '@gemeente-denhaag/baseprops':
         specifier: workspace:*
         version: link:../BaseProps
-
-  components/Select:
-    dependencies:
-      '@gemeente-denhaag/baseprops':
-        specifier: workspace:*
-        version: link:../BaseProps
-      '@material-ui/core':
-        specifier: 4.12.4
-        version: 4.12.4(@types/react@17.0.69)(react-dom@17.0.2)(react@17.0.2)
-      react:
-        specifier: ^17.0.0 || ^18.0.0
-        version: 17.0.2
 
   components/Sheet:
     dependencies:
@@ -997,18 +911,6 @@ importers:
         specifier: ^17.0.0 || ^18.0.0
         version: 17.0.2
 
-  components/Switch:
-    dependencies:
-      '@gemeente-denhaag/baseprops':
-        specifier: workspace:*
-        version: link:../BaseProps
-      '@material-ui/core':
-        specifier: 4.12.4
-        version: 4.12.4(@types/react@17.0.69)(react-dom@17.0.2)(react@17.0.2)
-      react:
-        specifier: ^17.0.0 || ^18.0.0
-        version: 17.0.2
-
   components/Tab:
     dependencies:
       react:
@@ -1028,19 +930,6 @@ importers:
         specifier: ^17.0.0 || ^18.0.0
         version: 17.0.2
 
-  components/TextArea:
-    dependencies:
-      '@gemeente-denhaag/icons':
-        specifier: workspace:*
-        version: link:../Icons
-      react:
-        specifier: ^17.0.0 || ^18.0.0
-        version: 17.0.2
-    devDependencies:
-      '@utrecht/components':
-        specifier: 1.0.0-alpha.563
-        version: 1.0.0-alpha.563
-
   components/TextField:
     dependencies:
       '@gemeente-denhaag/icons':
@@ -1053,28 +942,6 @@ importers:
       '@utrecht/components':
         specifier: 1.0.0-alpha.563
         version: 1.0.0-alpha.563
-
-  components/Timeline:
-    dependencies:
-      '@gemeente-denhaag/baseprops':
-        specifier: workspace:*
-        version: link:../BaseProps
-      '@gemeente-denhaag/icons':
-        specifier: workspace:*
-        version: link:../Icons
-      '@gemeente-denhaag/typography':
-        specifier: workspace:*
-        version: link:../Typography
-      '@material-ui/core':
-        specifier: 4.12.4
-        version: 4.12.4(@types/react@17.0.69)(react-dom@17.0.2)(react@17.0.2)
-      react:
-        specifier: ^17.0.0 || ^18.0.0
-        version: 17.0.2
-    devDependencies:
-      '@gemeente-denhaag/button':
-        specifier: workspace:*
-        version: link:../Button
 
   components/Typography:
     dependencies:
@@ -1172,9 +1039,6 @@ importers:
       '@gemeente-denhaag/ctalink':
         specifier: workspace:*
         version: link:../../components/CtaLink
-      '@gemeente-denhaag/datepicker':
-        specifier: workspace:*
-        version: link:../../components/Datepicker
       '@gemeente-denhaag/descriptionlist':
         specifier: workspace:*
         version: link:../../components/DescriptionList
@@ -1256,9 +1120,6 @@ importers:
       '@gemeente-denhaag/pagination':
         specifier: workspace:*
         version: link:../../components/Pagination
-      '@gemeente-denhaag/posttypelabel':
-        specifier: workspace:*
-        version: link:../../components/PosttypeLabel
       '@gemeente-denhaag/process-steps':
         specifier: workspace:*
         version: link:../../components/ProcessSteps
@@ -1277,15 +1138,9 @@ importers:
       '@gemeente-denhaag/table':
         specifier: workspace:*
         version: link:../../components/Table
-      '@gemeente-denhaag/textarea':
-        specifier: workspace:*
-        version: link:../../components/TextArea
       '@gemeente-denhaag/textfield':
         specifier: workspace:*
         version: link:../../components/TextField
-      '@gemeente-denhaag/timeline':
-        specifier: workspace:*
-        version: link:../../components/Timeline
       '@gemeente-denhaag/typography':
         specifier: workspace:*
         version: link:../../components/Typography
@@ -1301,9 +1156,6 @@ importers:
       '@gemeente-denhaag/alert':
         specifier: workspace:*
         version: link:../../components/Alert
-      '@gemeente-denhaag/avatar':
-        specifier: workspace:*
-        version: link:../../components/Avatar
       '@gemeente-denhaag/badge-counter':
         specifier: workspace:*
         version: link:../../components/BadgeCounter
@@ -1319,9 +1171,6 @@ importers:
       '@gemeente-denhaag/checkbox':
         specifier: workspace:*
         version: link:../../components/Checkbox
-      '@gemeente-denhaag/datepicker':
-        specifier: workspace:*
-        version: link:../../components/Datepicker
       '@gemeente-denhaag/divider':
         specifier: workspace:*
         version: link:../../components/Divider
@@ -1334,9 +1183,6 @@ importers:
       '@gemeente-denhaag/form-progress':
         specifier: workspace:*
         version: link:../../components/FormProgress
-      '@gemeente-denhaag/formcontrol':
-        specifier: workspace:*
-        version: link:../../components/FormControl
       '@gemeente-denhaag/formcontrollabel':
         specifier: workspace:*
         version: link:../../components/FormControlLabel
@@ -1346,9 +1192,6 @@ importers:
       '@gemeente-denhaag/iconbutton':
         specifier: workspace:*
         version: link:../../components/IconButton
-      '@gemeente-denhaag/inputlabel':
-        specifier: workspace:*
-        version: link:../../components/InputLabel
       '@gemeente-denhaag/link':
         specifier: workspace:*
         version: link:../../components/Link
@@ -1358,36 +1201,24 @@ importers:
       '@gemeente-denhaag/menu':
         specifier: workspace:*
         version: link:../../components/Menu
-      '@gemeente-denhaag/posttypelabel':
-        specifier: workspace:*
-        version: link:../../components/PosttypeLabel
       '@gemeente-denhaag/process-steps':
         specifier: workspace:*
         version: link:../../components/ProcessSteps
       '@gemeente-denhaag/radio':
         specifier: workspace:*
         version: link:../../components/Radio
-      '@gemeente-denhaag/select':
-        specifier: workspace:*
-        version: link:../../components/Select
       '@gemeente-denhaag/sidenav':
         specifier: workspace:*
         version: link:../../components/Sidenav
       '@gemeente-denhaag/stylesprovider':
         specifier: workspace:*
         version: link:../../components/StylesProvider
-      '@gemeente-denhaag/switch':
-        specifier: workspace:*
-        version: link:../../components/Switch
       '@gemeente-denhaag/tab':
         specifier: workspace:*
         version: link:../../components/Tab
       '@gemeente-denhaag/textfield':
         specifier: workspace:*
         version: link:../../components/TextField
-      '@gemeente-denhaag/timeline':
-        specifier: workspace:*
-        version: link:../../components/Timeline
       '@gemeente-denhaag/typography':
         specifier: workspace:*
         version: link:../../components/Typography
@@ -27971,7 +27802,3 @@ packages:
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: true
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false

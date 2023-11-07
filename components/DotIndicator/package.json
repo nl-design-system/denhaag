@@ -32,7 +32,6 @@
     "@gemeente-denhaag/baseprops": "workspace:*"
   },
   "devDependencies": {
-    "@gemeente-denhaag/avatar": "workspace:*",
     "@gemeente-denhaag/button": "workspace:*"
   },
   "peerDependencies": {

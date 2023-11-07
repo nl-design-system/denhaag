@@ -1,6 +1,5 @@
 import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/addon-docs";
 
-import { Avatar } from "@gemeente-denhaag/avatar";
 import Button from "@gemeente-denhaag/button";
 import { DotIndicator } from "../index";
 import pkg from "../../package.json";
@@ -51,35 +50,3 @@ const elementWithNotification = (<DotIndicator overlap="rectangle"><Button>Read 
 </Canvas>
 
 <ArgsTable of={DotIndicator} />
-
-### Dot indicator(on circle)
-
-<Canvas>
-  <Story
-    name="Indicator on circle"
-    args={{
-      overlap: "circle",
-    }}
-    parameters={{
-      docs: {
-        source: {
-          code: `
-import { DotIndicator } from "@gemeente-denhaag/dotindicator";
-const elementWithNotification = <DotIndicator overlap="circle"><Avatar>DH</Avatar</DotIndicator>;
-// This 👆 transpiles into this 👇 in the DOM
-<div class="denhaag-dot-indicator denhaag-dot-indicator--overlap-rectangle">
-  <Avatar>DH</Avatar>
-  <span class="denhaag-dot-indicator__dot"></span>
-</div>
-    `,
-        },
-      },
-    }}
-  >
-    {(args) => (
-      <DotIndicator overlap={"circle"} {...args}>
-        <Avatar>DH</Avatar>
-      </DotIndicator>
-    )}
-  </Story>
-</Canvas>
