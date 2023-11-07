@@ -12,9 +12,6 @@
       "path": "../../components/BaseProps"
     },
     {
-      "path": "../../components/Avatar"
-    },
-    {
       "path": "../../components/Alert"
     },
     {
@@ -22,9 +19,6 @@
     },
     {
       "path": "../../components/BaseProps"
-    },
-    {
-      "path": "../../components/Datepicker"
     },
     {
       "path": "../../components/Divider"
