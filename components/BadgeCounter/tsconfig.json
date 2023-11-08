@@ -10,9 +10,6 @@
   "references": [
     {
       "path": "../DotIndicator"
-    },
-    {
-      "path": "../BaseDataDisplayProps"
     }
   ]
 }

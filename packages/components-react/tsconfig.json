@@ -9,16 +9,10 @@
   "exclude": ["dist", "src/**/*.stories.tsx"],
   "references": [
     {
-      "path": "../../components/BaseProps"
-    },
-    {
       "path": "../../components/Alert"
     },
     {
       "path": "../../components/BadgeCounter"
-    },
-    {
-      "path": "../../components/BaseProps"
     },
     {
       "path": "../../components/Divider"
