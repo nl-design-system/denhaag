@@ -1,10 +1,12 @@
 import React from 'react';
-import BaseDataDisplayProps from '@gemeente-denhaag/basedatadisplayprops';
 import './heading.scss';
 import './space.scss';
 import clsx from 'clsx';
 
-export type Heading3Props = Omit<BaseDataDisplayProps, 'classes'>;
+export interface Heading3Props {
+  className?: string;
+  children?: React.ReactNode;
+}
 
 export const Heading3: React.FC<Heading3Props> = (props: Heading3Props) => {
   const rootClassNames = clsx('utrecht-heading-3', props.className);

@@ -512,9 +512,6 @@ importers:
 
   components/Divider:
     dependencies:
-      '@gemeente-denhaag/basedatadisplayprops':
-        specifier: workspace:*
-        version: link:../BaseDataDisplayProps
       '@gemeente-denhaag/icons':
         specifier: workspace:*
         version: link:../Icons
@@ -884,13 +881,6 @@ importers:
 
   components/Typography:
     dependencies:
-      '@gemeente-denhaag/basedatadisplayprops':
-        specifier: workspace:*
-        version: link:../BaseDataDisplayProps
-      react:
-        specifier: ^17.0.0 || ^18.0.0
-        version: 17.0.2
-    devDependencies:
       '@gemeente-denhaag/design-tokens-common':
         specifier: workspace:*
         version: link:../../proprietary/Common
@@ -900,6 +890,9 @@ importers:
       '@utrecht/components':
         specifier: 1.0.0-alpha.563
         version: 1.0.0-alpha.563
+      react:
+        specifier: ^17.0.0 || ^18.0.0
+        version: 17.0.2
 
   components/UnorderedList:
     devDependencies:

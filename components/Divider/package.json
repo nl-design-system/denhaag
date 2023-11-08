@@ -29,7 +29,6 @@
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/basedatadisplayprops": "workspace:*",
     "@gemeente-denhaag/icons": "workspace:*"
   },
   "peerDependencies": {

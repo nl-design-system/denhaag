@@ -23,7 +23,4 @@ const Template: Story<Heading1Props> = (args: Heading1Props) => (
   <Heading1 {...args}>This is a bit of text inside a Header1 component.</Heading1>
 );
 
-/**
- * Default implementation of Heading1
- */
 export const Default = Template.bind({});
