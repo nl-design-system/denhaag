@@ -113,7 +113,7 @@ export const Switch: React.FC<SwitchProps> = (props: SwitchProps) => {
 To define a dependency version in the package.json file, use the following format:
 
 ```json
- "@material-ui/core": "4.0.0"
+ "clsx": "2.0.0"
 ```
 
 The major, minor and patch version should be defined.

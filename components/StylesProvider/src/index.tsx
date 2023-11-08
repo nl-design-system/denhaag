@@ -1,5 +1,4 @@
 import React from 'react';
-import { StylesProvider as MaterialStylesProvider } from '@material-ui/core';
 import '@utrecht/components/document/css/index.scss';
 
 export interface StylesProviderProps {
@@ -11,14 +10,7 @@ export interface StylesProviderProps {
  * @param props Only allow for children
  */
 export const StylesProvider: React.FC<StylesProviderProps> = (props: StylesProviderProps) => {
-  // React version from Material is not compatible with new React
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  let OldMaterialStylesProvider = MaterialStylesProvider as any;
-  return (
-    <div className={'utrecht-document utrecht-document--surface'}>
-      <OldMaterialStylesProvider injectFirst>{props.children}</OldMaterialStylesProvider>
-    </div>
-  );
+  return <div className={'utrecht-document utrecht-document--surface'}>{props.children}</div>;
 };
 
 /**
