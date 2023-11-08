@@ -41,9 +41,6 @@ importers:
       '@gemeente-denhaag/badge-counter':
         specifier: workspace:*
         version: link:components/BadgeCounter
-      '@gemeente-denhaag/baseprops':
-        specifier: workspace:*
-        version: link:components/BaseProps
       '@gemeente-denhaag/button':
         specifier: workspace:*
         version: link:components/Button
@@ -352,9 +349,6 @@ importers:
 
   components/Alert:
     dependencies:
-      '@gemeente-denhaag/baseprops':
-        specifier: workspace:*
-        version: link:../BaseProps
       '@gemeente-denhaag/button':
         specifier: workspace:*
         version: link:../Button
@@ -394,9 +388,6 @@ importers:
 
   components/BaseDataDisplayProps:
     dependencies:
-      '@gemeente-denhaag/baseprops':
-        specifier: workspace:*
-        version: link:../BaseProps
       react:
         specifier: ^17.0.0 || ^18.0.0
         version: 17.0.2
@@ -430,16 +421,12 @@ importers:
 
   components/Button:
     dependencies:
-      '@gemeente-denhaag/baseprops':
-        specifier: workspace:*
-        version: link:../BaseProps
-      react:
-        specifier: ^17.0.0 || ^18.0.0
-        version: 17.0.2
-    devDependencies:
       '@gemeente-denhaag/icons':
         specifier: workspace:*
         version: link:../Icons
+      react:
+        specifier: ^17.0.0 || ^18.0.0
+        version: 17.0.2
 
   components/ButtonGroup: {}
 
@@ -528,29 +515,21 @@ importers:
       '@gemeente-denhaag/basedatadisplayprops':
         specifier: workspace:*
         version: link:../BaseDataDisplayProps
-      '@gemeente-denhaag/baseprops':
-        specifier: workspace:*
-        version: link:../BaseProps
-      react:
-        specifier: ^17.0.0 || ^18.0.0
-        version: 17.0.2
-    devDependencies:
       '@gemeente-denhaag/icons':
         specifier: workspace:*
         version: link:../Icons
-
-  components/DotIndicator:
-    dependencies:
-      '@gemeente-denhaag/baseprops':
-        specifier: workspace:*
-        version: link:../BaseProps
       react:
         specifier: ^17.0.0 || ^18.0.0
         version: 17.0.2
-    devDependencies:
+
+  components/DotIndicator:
+    dependencies:
       '@gemeente-denhaag/button':
         specifier: workspace:*
         version: link:../Button
+      react:
+        specifier: ^17.0.0 || ^18.0.0
+        version: 17.0.2
 
   components/DynamicContent:
     devDependencies:
@@ -588,10 +567,6 @@ importers:
       '@utrecht/component-library-react':
         specifier: 1.0.0-alpha.411
         version: 1.0.0-alpha.411(react-dom@18.2.0)(react@18.2.0)
-    devDependencies:
-      '@gemeente-denhaag/baseprops':
-        specifier: 0.2.3-alpha.355
-        version: link:../BaseProps
 
   components/FormControlLabel:
     dependencies:
@@ -639,9 +614,6 @@ importers:
 
   components/Header:
     dependencies:
-      '@gemeente-denhaag/baseprops':
-        specifier: workspace:*
-        version: link:../BaseProps
       '@gemeente-denhaag/breadcrumb':
         specifier: workspace:*
         version: link:../Breadcrumb
@@ -731,9 +703,6 @@ importers:
 
   components/Link:
     dependencies:
-      '@gemeente-denhaag/baseprops':
-        specifier: workspace:*
-        version: link:../BaseProps
       '@gemeente-denhaag/icons':
         specifier: workspace:*
         version: link:../Icons
@@ -761,9 +730,6 @@ importers:
 
   components/Menu:
     dependencies:
-      '@gemeente-denhaag/baseprops':
-        specifier: workspace:*
-        version: link:../BaseProps
       '@gemeente-denhaag/button':
         specifier: workspace:*
         version: link:../Button
@@ -815,9 +781,9 @@ importers:
 
   components/ProcessSteps:
     dependencies:
-      '@gemeente-denhaag/baseprops':
+      '@gemeente-denhaag/button':
         specifier: workspace:*
-        version: link:../BaseProps
+        version: link:../Button
       '@gemeente-denhaag/icons':
         specifier: workspace:*
         version: link:../Icons
@@ -830,10 +796,6 @@ importers:
       react:
         specifier: ^17.0.0 || ^18.0.0
         version: 17.0.2
-    devDependencies:
-      '@gemeente-denhaag/button':
-        specifier: workspace:*
-        version: link:../Button
 
   components/Radio:
     dependencies:
@@ -848,11 +810,7 @@ importers:
         specifier: workspace:*
         version: link:../FormControlLabel
 
-  components/ResponsiveContent:
-    dependencies:
-      '@gemeente-denhaag/baseprops':
-        specifier: workspace:*
-        version: link:../BaseProps
+  components/ResponsiveContent: {}
 
   components/Sheet:
     dependencies:
@@ -1140,9 +1098,6 @@ importers:
       '@gemeente-denhaag/badge-counter':
         specifier: workspace:*
         version: link:../../components/BadgeCounter
-      '@gemeente-denhaag/baseprops':
-        specifier: workspace:*
-        version: link:../../components/BaseProps
       '@gemeente-denhaag/button':
         specifier: workspace:*
         version: link:../../components/Button
@@ -27535,7 +27490,3 @@ packages:
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: true
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false

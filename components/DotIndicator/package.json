@@ -29,9 +29,6 @@
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "workspace:*"
-  },
-  "devDependencies": {
     "@gemeente-denhaag/button": "workspace:*"
   },
   "peerDependencies": {

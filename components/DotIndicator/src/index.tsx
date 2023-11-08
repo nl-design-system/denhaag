@@ -1,9 +1,20 @@
 import React from 'react';
 import './index.scss';
 import clsx from 'clsx';
-import BaseProps from '@gemeente-denhaag/baseprops';
 
-export interface DotIndicatorProps extends Omit<BaseProps, 'classes' | 'tabIndex'> {
+export interface DotIndicatorProps {
+  /**
+   * The id attribute is used to specify a unique id for an HTML element.
+   */
+  id?: string;
+  /**
+   * The contents of the component.
+   */
+  children?: React.ReactNode;
+  /**
+   * Extend the styles of the component by adding new classes.
+   */
+  className?: string;
   /**
    * The shape which the dot indicator has to overlap.
    */

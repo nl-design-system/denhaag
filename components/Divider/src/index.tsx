@@ -1,6 +1,6 @@
 import React from 'react';
-import './index.scss';
 import clsx from 'clsx';
+import './index.scss';
 
 export interface DividerProps extends React.HTMLAttributes<HTMLHRElement> {
   /**
