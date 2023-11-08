@@ -3,10 +3,10 @@
     "divider": {
       "border-color": { "value": "{denhaag.color.grey.2}" },
       "border-width": { "value": "1px" },
-      "margin-block-start": { "value": "0px" },
-      "margin-block-end": { "value": "0px" },
-      "margin-inline-start": { "value": "0px" },
-      "margin-inline-end": { "value": "0px" }
+      "margin-block-start": { "value": "16px" },
+      "margin-block-end": { "value": "16px" },
+      "margin-inline-start": { "value": "16px" },
+      "margin-inline-end": { "value": "16px" }
     }
   }
 }
