@@ -60,7 +60,6 @@
     "@etchteam/storybook-addon-status": "4.2.4",
     "@gemeente-denhaag/alert": "workspace:*",
     "@gemeente-denhaag/badge-counter": "workspace:*",
-    "@gemeente-denhaag/baseprops": "workspace:*",
     "@gemeente-denhaag/button": "workspace:*",
     "@gemeente-denhaag/card": "workspace:*",
     "@gemeente-denhaag/checkbox": "workspace:*",

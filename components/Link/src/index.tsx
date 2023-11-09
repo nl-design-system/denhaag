@@ -1,11 +1,41 @@
 import React from 'react';
-import BaseProps, { OverridableComponent } from '@gemeente-denhaag/baseprops';
 import { SvgIconProps } from '@gemeente-denhaag/icons';
 import clsx from 'clsx';
 
 import './index.scss';
 
-export interface LinkProps extends Omit<BaseProps, 'classes'> {
+type OverrideProps<M, C extends React.ElementType> = M & Omit<React.ComponentPropsWithRef<C>, keyof M>;
+
+interface OverridableComponent<M> {
+  <C extends React.ElementType>(
+    props: {
+      /**
+       * The component used for the root node.
+       * Either a string to use a HTML element or a component.
+       */
+      component: C;
+    } & OverrideProps<M, C>,
+  ): JSX.Element;
+  (props: M): JSX.Element;
+}
+
+export interface LinkProps {
+  /**
+   * The id attribute is used to specify a unique id for an HTML element.
+   */
+  id?: string;
+  /**
+   * The contents of the component.
+   */
+  children?: React.ReactNode;
+  /**
+   * Extend the styles of the component by adding new classes.
+   */
+  className?: string;
+  /**
+   * The tab-index applied to the root element of the component.
+   */
+  tabIndex?: number;
   /**
    * The URL that the hyperlink points to. Links are not restricted to HTTP-based
    * URLs — they can use any URL scheme supported by browsers.

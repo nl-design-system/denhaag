@@ -32,8 +32,5 @@
     "@gemeente-denhaag/responsive-content": "workspace:*",
     "@utrecht/component-library-css": "1.0.0-alpha.602",
     "@utrecht/component-library-react": "1.0.0-alpha.411"
-  },
-  "devDependencies": {
-    "@gemeente-denhaag/baseprops": "0.2.3-alpha.355"
   }
 }

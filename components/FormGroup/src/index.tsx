@@ -1,11 +1,14 @@
 import React from 'react';
 import clsx from 'clsx';
-import BaseProps from '@gemeente-denhaag/baseprops';
 import { Heading5, Paragraph } from '@gemeente-denhaag/typography';
 
 import './index.scss';
 
-export interface FormGroupProps extends BaseProps {
+export interface FormGroupProps {
+  /**
+   * The contents of the component.
+   */
+  children?: React.ReactNode;
   /**
    * The formgroup label shown at the top
    */
@@ -40,7 +43,4 @@ export const FormGroup: React.FC<FormGroupProps> = (props: FormGroupProps) => {
   );
 };
 
-/**
- * Default export for FormGroup
- */
 export default FormGroup;

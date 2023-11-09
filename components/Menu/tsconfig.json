@@ -9,9 +9,6 @@
   "exclude": ["dist", "src/**/*.stories.mdx"],
   "references": [
     {
-      "path": "../BaseProps"
-    },
-    {
       "path": "../Icons"
     }
   ]

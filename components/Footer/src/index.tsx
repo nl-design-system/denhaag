@@ -1,5 +1,4 @@
 import React from 'react';
-import BaseProps from '@gemeente-denhaag/baseprops';
 import { ButtonLink } from '@utrecht/component-library-react';
 import ResponsiveContent from '@gemeente-denhaag/responsive-content';
 import clsx from 'clsx';
@@ -10,7 +9,7 @@ export interface FooterListItemData {
   href: string;
 }
 
-export interface FooterLegalProps extends Omit<BaseProps, 'tabIndex' | 'children'> {
+export interface FooterLegalProps {
   legalData?: Array<FooterListItemData>;
   copyrightLabel?: string;
 }
@@ -40,13 +39,14 @@ export interface ContactData {
   href?: string;
 }
 
-export interface FooterContactProps extends Omit<BaseProps, 'tabIndex' | 'children'> {
+export interface FooterContactProps {
   socialData?: FooterSocialData;
   newsletterData?: NewsLetterData;
   contactData?: ContactData;
 }
 
-export interface FooterProps extends Omit<BaseProps, 'tabIndex' | 'children'> {
+export interface FooterProps {
+  className?: string;
   legalData?: Array<FooterListItemData>;
   copyrightLabel?: string;
   socialData?: FooterSocialData;

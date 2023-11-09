@@ -1,10 +1,12 @@
 import React from 'react';
-import BaseDataDisplayProps from '@gemeente-denhaag/basedatadisplayprops';
 import './paragraph.scss';
 import './space.scss';
 import clsx from 'clsx';
 
-export type ParagraphProps = Omit<BaseDataDisplayProps, 'classes'>;
+export interface ParagraphProps {
+  className?: string;
+  children?: React.ReactNode;
+}
 
 export const Paragraph: React.FC<ParagraphProps> = (props: ParagraphProps) => {
   const rootClassNames = clsx('utrecht-paragraph', props.className);
