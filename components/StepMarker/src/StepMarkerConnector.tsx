@@ -3,7 +3,7 @@ import React, { HTMLAttributes } from 'react';
 import clsx from 'clsx';
 
 type MarkerType = 'main' | 'nested';
-type Appearance = 'checked' | 'not-checked' | 'current' | 'warning' | 'error';
+type Appearance = 'checked' | 'not-checked' | 'current' | 'warning' | 'error' | 'default';
 
 interface StepMarkerConnectorProps extends Omit<HTMLAttributes<HTMLDivElement>, 'children'> {
   from: MarkerType;

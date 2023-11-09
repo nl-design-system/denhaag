@@ -1,0 +1,10 @@
+.denhaag-contact-timeline__step-header__channel {
+  min-width: var(--denhaag-contact-timeline-step-header-channel-width);
+  max-width: var(--denhaag-contact-timeline-step-header-channel-width);
+  line-height: var(--denhaag-contact-timeline-step-header-line-height);
+  overflow-wrap: break-word;
+
+  @media (width <= 1023px) {
+    display: none;
+  }
+}

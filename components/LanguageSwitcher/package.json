@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/language-switcher",
-  "version": "0.2.3-alpha.334",
+  "version": "0.2.3-alpha.346",
   "description": "A Language Switcher component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -31,7 +31,7 @@
   "dependencies": {
     "@gemeente-denhaag/icons": "workspace:*",
     "@gemeente-denhaag/link": "workspace:*",
-    "@utrecht/component-library-react": "1.0.0-alpha.380"
+    "@utrecht/component-library-react": "1.0.0-alpha.411"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"

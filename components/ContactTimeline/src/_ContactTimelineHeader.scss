@@ -1,0 +1,8 @@
+.denhaag-contact-timeline__step-header {
+  --denhaag-process-steps-step-header-align-items: var(--denhaag-contact-timeline-step-marker-align-items);
+  --denhaag-process-steps-step-heading-font-size: var(--denhaag-contact-timeline-step-header-font-size);
+  --denhaag-process-steps-step-heading-line-height: var(--denhaag-contact-timeline-step-header-line-height);
+  --denhaag-step-marker-margin: calc(
+    (var(--denhaag-contact-timeline-step-header-line-height) - var(--denhaag-step-marker-nested-size)) / 2
+  );
+}

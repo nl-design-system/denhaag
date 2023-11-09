@@ -2,7 +2,6 @@ import typescript from 'rollup-plugin-typescript2';
 import nodeResolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import svgr from '@svgr/rollup';
-import _ from 'lodash';
 import fs from 'node:fs';
 import path from 'node:path';
 import { cwd } from 'node:process';
@@ -31,7 +30,7 @@ const externalDependencies = [
   '@material-ui/core/transitions',
   '@material-ui/core/OverridableComponent',
 ];
-const internalDependencies = _.keys(tsconfig.compilerOptions.paths);
+const internalDependencies = tsconfig.compilerOptions.paths && Object.keys(tsconfig.compilerOptions.paths);
 const dependencies = externalDependencies.concat(internalDependencies);
 
 const createConfig = ({ dir, format, baseUrl }) => ({

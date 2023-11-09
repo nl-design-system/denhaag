@@ -12,9 +12,6 @@
       "path": "../../components/BaseProps"
     },
     {
-      "path": "../../components/Avatar"
-    },
-    {
       "path": "../../components/Alert"
     },
     {
@@ -22,9 +19,6 @@
     },
     {
       "path": "../../components/BaseProps"
-    },
-    {
-      "path": "../../components/Datepicker"
     },
     {
       "path": "../../components/Divider"
@@ -42,9 +36,6 @@
       "path": "../../components/Checkbox"
     },
     {
-      "path": "../../components/FormControl"
-    },
-    {
       "path": "../../components/FormControlLabel"
     },
     {
@@ -60,19 +51,10 @@
       "path": "../../components/IconButton"
     },
     {
-      "path": "../../components/InputLabel"
-    },
-    {
       "path": "../../components/Radio"
     },
     {
-      "path": "../../components/Select"
-    },
-    {
       "path": "../../components/Sidenav"
-    },
-    {
-      "path": "../../components/Switch"
     },
     {
       "path": "../../components/TextField"
@@ -85,9 +67,6 @@
     },
     {
       "path": "../../components/Tab"
-    },
-    {
-      "path": "../../components/Timeline"
     },
     {
       "path": "../../components/Accordion"

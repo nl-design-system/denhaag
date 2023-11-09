@@ -1,0 +1,7 @@
+.denhaag-contact-timeline__step-details {
+  margin-inline-start: var(--denhaag-contact-timeline-step-details-desktop-margin-inline-start);
+
+  @media (width <= 1023px) {
+    margin-inline-start: var(--denhaag-contact-timeline-step-details-mobile-margin-inline-start);
+  }
+}

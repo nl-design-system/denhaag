@@ -1,0 +1,11 @@
+.denhaag-step-marker__connector {
+  &.denhaag-contact-timeline__step-marker-connector {
+    top: calc(var(--denhaag-step-marker-size) / 2);
+    bottom: var(--denhaag-contact-timeline-step-marker-connector-bottom);
+    margin-inline-start: var(--denhaag-contact-timeline-step-marker-connector-desktop-margin-inline-start);
+
+    @media (width <= 1023px) {
+      margin-inline-start: var(--denhaag-contact-timeline-step-marker-connector-mobile-margin-inline-start);
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/tab",
-  "version": "0.2.3-alpha.342",
+  "version": "0.2.3-alpha.354",
   "description": "A Tab component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -32,7 +32,7 @@
     "uuid": "9.0.1"
   },
   "devDependencies": {
-    "@types/uuid": "9.0.4"
+    "@types/uuid": "9.0.6"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"

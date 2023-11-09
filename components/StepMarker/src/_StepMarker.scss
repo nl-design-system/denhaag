@@ -147,3 +147,21 @@
     color: var(--denhaag-step-marker-error-nested-color, var(--denhaag-step-marker-error-color));
   }
 }
+
+.denhaag-step-marker--default {
+  background-color: var(--denhaag-step-marker-default-background-color);
+  border-color: var(--denhaag-step-marker-default-border-color);
+  color: var(--denhaag-step-marker-default-color);
+
+  &.denhaag-step-marker--nested {
+    background-color: var(
+      --denhaag-step-marker-default-nested-background-color,
+      var(--denhaag-step-marker-default-background-color)
+    );
+    border-color: var(
+      --denhaag-step-marker-default-nested-border-color,
+      var(--denhaag-step-marker-default-border-color)
+    );
+    color: var(--denhaag-step-marker-default-nested-color, var(--denhaag-step-marker-default-color));
+  }
+}

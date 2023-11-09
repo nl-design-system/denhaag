@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/form-field",
-  "version": "0.1.1-alpha.218",
+  "version": "0.1.1-alpha.230",
   "description": "A form field component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -29,7 +29,7 @@
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "devDependencies": {
-    "@utrecht/components": "1.0.0-alpha.532"
+    "@utrecht/components": "1.0.0-alpha.563"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"

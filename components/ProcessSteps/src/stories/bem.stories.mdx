@@ -1,6 +1,4 @@
 import { Canvas, Meta, Story } from "@storybook/blocks";
-import prettierBabel from "prettier/parser-babel";
-import prettier from "prettier/standalone";
 import * as ReactDOMServer from "react-dom/server";
 import { Status } from "../index";
 import pkg from "../../package.json";
@@ -44,10 +42,7 @@ export const Template = (args) => {
       transformSource: (src, storyContext) => {
         // Ensure valid HTML in the Preview source
         if (storyContext.component) {
-          return prettier.format(
-            ReactDOMServer.renderToStaticMarkup(storyContext.component(storyContext.parameters.args)),
-            { parser: "babel", plugins: [prettierBabel] },
-          );
+          return ReactDOMServer.renderToStaticMarkup(storyContext.component(storyContext.parameters.args));
         }
         return src;
       },
