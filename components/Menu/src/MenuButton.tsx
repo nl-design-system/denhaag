@@ -1,5 +1,4 @@
 import React, { ButtonHTMLAttributes } from 'react';
-import BaseProps from '@gemeente-denhaag/baseprops';
 import { ChevronDownIcon } from '@gemeente-denhaag/icons';
 import clsx from 'clsx';
 
@@ -8,7 +7,19 @@ import './index.scss';
 /**
  * The properties of the normal variant of the Menu Button
  */
-export interface MenuButtonProps extends Omit<BaseProps, 'classes' | 'tabIndex'> {
+export interface MenuButtonProps {
+  /**
+   * The id attribute is used to specify a unique id for an HTML element.
+   */
+  id?: string;
+  /**
+   * The contents of the component.
+   */
+  children?: React.ReactNode;
+  /**
+   * Extend the styles of the component by adding new classes.
+   */
+  className?: string;
   /**
    * If the element is active or not. You an use this property to mark the menu
    * item of the current active page.

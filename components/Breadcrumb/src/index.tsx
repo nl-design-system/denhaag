@@ -1,5 +1,4 @@
 import React from 'react';
-import BaseProps from '@gemeente-denhaag/baseprops';
 import ResponsiveContent from '@gemeente-denhaag/responsive-content';
 import { ChevronRightIcon, HouseIcon } from '@gemeente-denhaag/icons';
 import { CustomLink } from '@gemeente-denhaag/link';
@@ -16,7 +15,7 @@ export interface BreadcrumbItemData {
   href?: string;
 }
 
-export interface BreadcrumbProps extends Omit<BaseProps, 'tabIndex' | 'classNames'> {
+export interface BreadcrumbProps {
   /**
    * The navigation path array of JSON object, which includes a label and url.
    */

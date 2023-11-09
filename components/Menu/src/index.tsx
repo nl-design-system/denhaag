@@ -1,9 +1,23 @@
 import React from 'react';
-import BaseProps from '@gemeente-denhaag/baseprops';
 import clsx from 'clsx';
 import './_menu.scss';
 
-export const Menu: React.FC<BaseProps> = (props: Omit<BaseProps, 'classes'>) => {
+interface Props {
+  /**
+   * The id attribute is used to specify a unique id for an HTML element.
+   */
+  id?: string;
+  /**
+   * The contents of the component.
+   */
+  children?: React.ReactNode;
+  /**
+   * Extend the styles of the component by adding new classes.
+   */
+  className?: string;
+}
+
+export const Menu = (props: Props) => {
   const rootClassNames = clsx('denhaag-menu', props.className);
   return (
     <div className={rootClassNames} id={props.id}>
@@ -15,7 +29,6 @@ export const Menu: React.FC<BaseProps> = (props: Omit<BaseProps, 'classes'>) => 
 export default Menu;
 export * from './MenuButton';
 export * from './mobile/MobileMenu';
-
 export * from './mobile/MobileMenuList';
 export * from './mobile/MobileMenuListItem';
 export * from './mobile/MobileSubMenu';

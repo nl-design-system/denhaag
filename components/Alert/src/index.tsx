@@ -1,5 +1,4 @@
 import React from 'react';
-import BaseProps from '@gemeente-denhaag/baseprops';
 import Button from '@gemeente-denhaag/button';
 import { Heading4, Paragraph } from '@gemeente-denhaag/typography';
 import { AlertTriangleIcon, CheckCircleIcon, CircleInformationIcon, CloseIcon } from '@gemeente-denhaag/icons';
@@ -8,7 +7,15 @@ import IconButton from '@gemeente-denhaag/iconbutton';
 import './index.scss';
 import clsx from 'clsx';
 
-export interface AlertProps extends Omit<BaseProps, 'children' | 'classes' | 'tabIndex'> {
+export interface AlertProps {
+  /**
+   * The id attribute is used to specify a unique id for an HTML element.
+   */
+  id?: string;
+  /**
+   * Extend the styles of the component by adding new classes.
+   */
+  className?: string;
   /**
    * The title of the alert.
    */

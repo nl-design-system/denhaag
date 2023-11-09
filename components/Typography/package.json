@@ -29,9 +29,6 @@
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/basedatadisplayprops": "workspace:*"
-  },
-  "devDependencies": {
     "@gemeente-denhaag/design-tokens-common": "workspace:*",
     "@gemeente-denhaag/design-tokens-components": "workspace:*",
     "@utrecht/components": "1.0.0-alpha.563"

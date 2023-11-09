@@ -10,9 +10,6 @@
   "references": [
     {
       "path": "../Icons"
-    },
-    {
-      "path": "../BaseProps"
     }
   ]
 }
