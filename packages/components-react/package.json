@@ -34,6 +34,7 @@
     "@gemeente-denhaag/button": "workspace:*",
     "@gemeente-denhaag/card": "workspace:*",
     "@gemeente-denhaag/checkbox": "workspace:*",
+    "@gemeente-denhaag/contact-timeline": "workspace:*",
     "@gemeente-denhaag/divider": "workspace:*",
     "@gemeente-denhaag/file": "workspace:*",
     "@gemeente-denhaag/form-field": "workspace:*",
