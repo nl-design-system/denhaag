@@ -18,7 +18,7 @@
   "scripts": {
     "build": "npm-run-all build:*",
     "build:css": "rollup -c rollup.config.mjs",
-    "build:clean": "rimraf dist/.tsbuildinfo dist/*.{js,d.ts}",
+    "build:clean": "rimraf --glob dist/.tsbuildinfo dist/*.{js,d.ts}",
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "devDependencies": {
@@ -38,6 +38,7 @@
     "@gemeente-denhaag/card-group": "workspace:*",
     "@gemeente-denhaag/card-news": "workspace:*",
     "@gemeente-denhaag/checkbox": "workspace:*",
+    "@gemeente-denhaag/contact-timeline": "workspace:*",
     "@gemeente-denhaag/cta-event": "workspace:*",
     "@gemeente-denhaag/cta-image-content": "workspace:*",
     "@gemeente-denhaag/ctadownload": "workspace:*",
