@@ -3,7 +3,7 @@
   "description": "Dynamic content component, used to display content in multiple ways.",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
-  "version": "0.1.1-alpha.129",
+  "version": "0.1.1-alpha.130",
   "exports": {
     ".": {
       "types": "./dist/cjs/index.d.ts",
