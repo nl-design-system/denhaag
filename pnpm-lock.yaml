@@ -386,12 +386,6 @@ importers:
         specifier: 1.0.0-alpha.563
         version: 1.0.0-alpha.563
 
-  components/BaseDataDisplayProps:
-    dependencies:
-      react:
-        specifier: ^17.0.0 || ^18.0.0
-        version: 17.0.2
-
   components/BaseProps:
     dependencies:
       react:
