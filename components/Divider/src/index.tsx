@@ -1,9 +1,8 @@
 import React from 'react';
-import { Divider as MaterialDivider } from '@material-ui/core';
 import './index.scss';
-import BaseProps from '@gemeente-denhaag/baseprops';
+import clsx from 'clsx';
 
-export interface DividerProps extends Omit<BaseProps, 'tabIndex' | 'classes' | 'children'> {
+export interface DividerProps extends React.HTMLAttributes<HTMLHRElement> {
   /**
    * The divider orientation.
    */
@@ -15,19 +14,12 @@ export interface DividerProps extends Omit<BaseProps, 'tabIndex' | 'classes' | '
  * @param props The properties of a Divider component.
  * @constructor Constructs an instance of Divider.
  */
-export const Divider: React.FC<DividerProps> = (props: DividerProps) => {
-  const classes = {
-    root: 'denhaag-divider',
-    vertical: 'denhaag-divider--vertical',
-  };
-
+export const Divider: React.FC<DividerProps> = ({ orientation, className, ...props }: DividerProps) => {
   return (
-    <MaterialDivider
-      className={props.className}
-      variant={'fullWidth'}
-      classes={classes}
-      role={'presentation'}
-      orientation={props.orientation}
+    <hr
+      className={clsx('denhaag-divider', { 'denhaag-divider--vertical': orientation === 'vertical' }, className)}
+      role="presentation"
+      {...props}
     />
   );
 };

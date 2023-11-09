@@ -1,11 +1,11 @@
 .denhaag-divider {
-  background: var(--denhaag-divider-border-color);
-  border: 0;
+  width: 100%;
   height: var(--denhaag-divider-border-width);
   margin-block-start: var(--denhaag-divider-margin-block-start);
   margin-block-end: var(--denhaag-divider-margin-block-end);
+  background: var(--denhaag-divider-border-color);
   flex-shrink: 0;
-  width: 100%;
+  border: 0;
 }
 
 .denhaag-divider--vertical {

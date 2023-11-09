@@ -21,15 +21,7 @@ const inputExists = (config) => {
   }
 };
 
-const externalDependencies = [
-  '@material-ui/core',
-  '@material-ui/lab',
-  'react',
-  'react-dom',
-  'date-fns',
-  '@material-ui/core/transitions',
-  '@material-ui/core/OverridableComponent',
-];
+const externalDependencies = ['react', 'react-dom', 'date-fns'];
 const internalDependencies = tsconfig.compilerOptions.paths && Object.keys(tsconfig.compilerOptions.paths);
 const dependencies = externalDependencies.concat(internalDependencies);
 

@@ -46,8 +46,6 @@
     "typecheck:storybook": "tsc --project tsconfig.storybook.json --noEmit"
   },
   "dependencies": {
-    "@material-ui/core": "4.12.4",
-    "@material-ui/lab": "4.11.3-deprecations.1",
     "@utrecht/component-library-css": "1.0.0-alpha.602",
     "@utrecht/components": "1.0.0-alpha.563",
     "clsx": "2.0.0",

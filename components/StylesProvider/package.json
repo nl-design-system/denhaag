@@ -27,9 +27,7 @@
     "directory": "components/StylesProvider"
   },
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
-  "dependencies": {
-    "@material-ui/core": "4.12.4"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"
   },
