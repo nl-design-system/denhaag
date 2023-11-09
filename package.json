@@ -19,7 +19,7 @@
     "build": "pnpm run build:library && pnpm run build:storybook",
     "build:library": "pnpm run --recursive build",
     "build:storybook": "pnpm run --if-present --recursive build:storybook",
-    "clean": "pnpm run --recursive clean --parallel && rimraf .rollup-cache",
+    "clean": "pnpm run --parallel --recursive clean && rimraf .rollup-cache",
     "lint": "npm-run-all --continue-on-error lint:** && pnpm run --recursive lint",
     "lint-fix": "npm-run-all --continue-on-error lint-fix:** prettier",
     "lint-fix:css": "stylelint --fix \"**/*.{css,scss}\"",
