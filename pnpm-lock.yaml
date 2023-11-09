@@ -587,9 +587,6 @@ importers:
 
   components/FormGroup:
     dependencies:
-      '@gemeente-denhaag/baseprops':
-        specifier: workspace:*
-        version: link:../BaseProps
       '@gemeente-denhaag/typography':
         specifier: workspace:*
         version: link:../Typography
