@@ -29,7 +29,7 @@
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "peerDependencies": {
-    "react": "^17.0.0 || ^18.0.0"
+    "react": "^18.0.0"
   },
   "devDependencies": {
     "@gemeente-denhaag/icons": "workspace:*"

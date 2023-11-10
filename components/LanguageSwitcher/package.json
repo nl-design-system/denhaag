@@ -34,6 +34,6 @@
     "@utrecht/component-library-react": "1.0.0-alpha.411"
   },
   "peerDependencies": {
-    "react": "^17.0.0 || ^18.0.0"
+    "react": "^18.0.0"
   }
 }
