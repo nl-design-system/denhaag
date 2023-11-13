@@ -1069,8 +1069,8 @@ importers:
   packages/storybook:
     dependencies:
       '@gemeente-denhaag/components-css':
-        specifier: 0.1.1-alpha.302
-        version: 0.1.1-alpha.302
+        specifier: workspace:*
+        version: link:../components-css
       '@gemeente-denhaag/components-react':
         specifier: workspace:*
         version: link:../components-react
@@ -4634,10 +4634,6 @@ packages:
   /@gar/promisify@1.1.3:
     resolution: {integrity: sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==}
     dev: true
-
-  /@gemeente-denhaag/components-css@0.1.1-alpha.302:
-    resolution: {integrity: sha512-RjeK+wacDhXgsljsmrK101BRJxV9jGy0C8iOB6oov3950e41LrWcHs3I2x37NXWTXXosbFUo2f67U+tK1UzsLg==}
-    dev: false
 
   /@humanwhocodes/config-array@0.11.11:
     resolution: {integrity: sha512-N2brEuAadi0CcdeMXUkhbZB84eskAc8MEX1By6qEchoVywSgXPIjou4rYsl0V3Hj0ZnuGycGCjdNgockbzeWNA==}
