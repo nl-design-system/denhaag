@@ -1,8 +1,9 @@
 import * as ReactDOMServer from "react-dom/server";
 import { Canvas, Meta, Story, ArgsTable } from "@storybook/blocks";
+import "@gemeente-denhaag/components-css";
+
 import { StepMarker } from "../../../../components/StepMarker/src/index";
 import pkg from "../../../../components/StepMarker/package.json";
-import "../index.scss";
 import { AlertTriangleIcon, CheckedIcon, CloseIcon } from "@gemeente-denhaag/icons";
 
 export const Template = (args) => <StepMarker {...args} />;

@@ -1,7 +1,9 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import { ContactTimeline, ContactTimelineProps, File } from '@gemeente-denhaag/components-react';
+import '@gemeente-denhaag/components-css';
 import * as ReactDOMServer from 'react-dom/server';
+
 import readme from '../../../../components/ContactTimeline/README.md?raw';
 
 const exampleArgs: ContactTimelineProps = {
