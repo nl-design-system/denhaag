@@ -1,5 +1,6 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
+
 import { Heading2, Paragraph } from '../../../../components/Typography/src';
 import { Link } from '../../../../components/Link/src';
 import Alert from '../../../../components/Alert/src';

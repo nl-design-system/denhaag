@@ -1,5 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
+import './index.scss';
+import '../../CardAuthentication/src/index.scss';
 
 // TODO Get from `CardAuthentication/src/story-template.jsx`
 

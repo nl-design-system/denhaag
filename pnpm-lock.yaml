@@ -339,7 +339,7 @@ importers:
   components/CardAuthentication: {}
 
   components/CardGroup:
-    devDependencies:
+    dependencies:
       '@gemeente-denhaag/card-authentication':
         specifier: workspace:*
         version: link:../CardAuthentication
@@ -984,6 +984,9 @@ importers:
       '@gemeente-denhaag/card':
         specifier: workspace:*
         version: link:../../components/Card
+      '@gemeente-denhaag/card-group':
+        specifier: workspace:*
+        version: link:../../components/CardGroup
       '@gemeente-denhaag/checkbox':
         specifier: workspace:*
         version: link:../../components/Checkbox

@@ -28,7 +28,7 @@
     "build": "rollup -c ../../rollup.config.mjs",
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
-  "devDependencies": {
+  "dependencies": {
     "@gemeente-denhaag/card-authentication": "workspace:*"
   }
 }
