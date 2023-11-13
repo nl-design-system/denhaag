@@ -17,6 +17,7 @@ import './Messages-page.scss';
 const meta = {
   title: 'Templates/Berichten',
   parameters: {
+    layout: 'fullscreen',
     chromatic: { viewports: [1768, 1280, 768, 360] },
   },
 } as Meta<typeof Page>;

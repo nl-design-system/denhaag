@@ -26,6 +26,7 @@ import './template-story.scss';
 const meta = {
   title: 'Templates/Zaak Detail',
   parameters: {
+    layout: 'fullscreen',
     chromatic: { viewports: [1768, 1280, 768, 360] },
   },
 } as Meta<typeof Page>;
