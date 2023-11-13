@@ -1,7 +1,7 @@
 .denhaag-process-steps__step {
   position: relative;
-  padding-block-end: 0;
-  padding-block-start: 0;
+  padding-block-end: var(--denhaag-process-steps-step-padding-block-end);
+  padding-block-start: var(--denhaag-process-steps-step-padding-block-start);
 }
 
 .denhaag-process-steps__step + .denhaag-process-steps__step {

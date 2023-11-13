@@ -39,9 +39,8 @@
         "margin": { "value": "12px" }
       },
       "step": {
-        "outline-offset": { "value": "2px" },
-        "outline": { "value": "{denhaag.focus.border}" },
-        "padding": { "value": "12px" }
+        "padding-block-end": { "value": "0" },
+        "padding-block-start": { "value": "0" }
       },
       "step-meta": {
         "font-size": { "value": "16px" },

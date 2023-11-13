@@ -1,3 +1,5 @@
 .denhaag-contact-timeline__step {
-  padding-block-end: var(--denhaag-contact-timeline-step-padding-block-end);
+  &.denhaag-process-steps__step {
+    --denhaag-process-steps-step-padding-block-end: var(--denhaag-contact-timeline-step-padding-block-end);
+  }
 }
