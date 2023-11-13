@@ -1,0 +1,173 @@
+import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/blocks";
+
+import { Menu, MenuButton, MenuButtonExpandable } from "../../../../components/Menu/src/index";
+import pkg from "../../../../components/Menu/package.json";
+import readme from "../README.md";
+
+<Meta
+  title="React/Navigation/MenuButton"
+  component={(MenuButton, MenuButtonExpandable)}
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Stories
+
+### Default
+
+<Canvas>
+  <Story
+    name="Default"
+    args={{ href: "https://github.com/nl-design-system/denhaag" }}
+    parameters={{
+      docs: {
+        source: {
+          code: `
+          import { MenuButton } from "@gemeente-denhaag/menubutton";
+          const ReactMenuButton = <MenuButton href="https://github.com/nl-design-system/denhaag" variant="normal">Label</MenuButton>};`,
+        },
+      },
+    }}
+  >
+    {(args) => <MenuButton {...args}>Label</MenuButton>}
+  </Story>
+</Canvas>
+
+<ArgsTable of={MenuButton} />
+
+### Expandable
+
+<Canvas>
+  <Story
+    name="Expandable"
+    parameters={{
+      docs: {
+        source: {
+          code: `
+          import { MenuButtonExpandable } from "@gemeente-denhaag/menubutton";
+          const ReactMenuButton = <MenuButtonExpandable variant='expandable' onclick={() => console.log('Hello from MenuButton 👋')}>Label</MenuButtonExpandable>;`,
+        },
+      },
+    }}
+  >
+    {() => <MenuButtonExpandable onclick={() => console.log("Hello from MenuButton 👋")}>Label</MenuButtonExpandable>}
+  </Story>
+</Canvas>
+
+### Menu
+
+<Canvas>
+  <Story
+    name="Menu"
+    args={{ id: "menu-id" }}
+    parameters={{
+      docs: {
+        source: {
+          code: `
+            <Menu id="menu-id" >
+              <MenuButton href="https://github.com/nl-design-system/denhaag">
+                Label
+              </MenuButton>
+              <MenuButtonExpandable>
+                Label 2
+              </MenuButtonExpandable>
+            </Menu>
+          `,
+        },
+      },
+    }}
+  >
+    {(args) => (
+      <Menu {...args}>
+        <MenuButton href="https://github.com/nl-design-system/denhaag">Label</MenuButton>
+        <MenuButtonExpandable>Label 2</MenuButtonExpandable>
+      </Menu>
+    )}
+  </Story>
+</Canvas>
+
+### HTML Default
+
+<Canvas>
+  <Story name="Default HTML">
+    {() => (
+      <a href="https://github.com/nl-design-system/denhaag" class="denhaag-menu-button">
+        Label
+      </a>
+    )}
+  </Story>
+</Canvas>
+
+### HTML Expandable
+
+<Canvas>
+  <Story name="Expandable HTML">
+    {() => (
+      <button id="button-id" onclick="alert('Hello from MenuButton 👋')" class="denhaag-menu-button">
+        Label
+        <span class="denhaag-menu-button__chevron">
+          <svg
+            width="24"
+            height="24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            shape-rendering="auto"
+            aria-label="ChevronDownIcon"
+          >
+            <path
+              d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </span>
+      </button>
+    )}
+  </Story>
+</Canvas>
+
+### HTML Menu
+
+<Canvas>
+  <Story name="Menu HTML">
+    {() => (
+      <div class="denhaag-menu" id="menu-id">
+        <a href="https://github.com/nl-design-system/denhaag" class="denhaag-menu-button">
+          Label
+        </a>
+        <button class="denhaag-menu-button">
+          Label 2
+          <span class="denhaag-menu-button__chevron">
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              aria-hidden="true"
+              shape-rendering="auto"
+              aria-label="ChevronDownIcon"
+            >
+              <path
+                d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </span>
+        </button>
+      </div>
+    )}
+  </Story>
+</Canvas>

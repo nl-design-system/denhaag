@@ -1,0 +1,78 @@
+import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/blocks";
+import { TextField } from "../../../../components/TextField/src/index";
+import pkg from "../../../../components/TextField/package.json";
+import readme from "../../README.md";
+import { CallIcon } from "@gemeente-denhaag/icons";
+
+<Meta
+  title="React/Input/Textfield"
+  component={TextField}
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Stories
+
+### Default
+
+<Canvas>
+  <Story
+    args={{
+      placeholder: "Placeholder",
+    }}
+    name="Default"
+  >
+    {(args) => <TextField {...args} />}
+  </Story>
+</Canvas>
+
+### Disabled
+
+<Canvas>
+  <Story
+    args={{
+      placeholder: "Placeholder",
+      disabled: true,
+    }}
+    name="Disabled"
+  >
+    {(args) => <TextField {...args} />}
+  </Story>
+</Canvas>
+
+### Invalid input
+
+<Canvas>
+  <Story
+    args={{
+      placeholder: "Placeholder",
+      invalid: true,
+    }}
+    name="Invalid"
+  >
+    {(args) => <TextField {...args} />}
+  </Story>
+</Canvas>
+
+### With descriptive icon
+
+<Canvas>
+  <Story
+    args={{
+      placeholder: "Phone number",
+      icon: <CallIcon />,
+    }}
+    name="With icon"
+  >
+    {(args) => <TextField {...args} />}
+  </Story>
+</Canvas>
+
+<ArgsTable of={TextField} />

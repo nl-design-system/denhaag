@@ -1,0 +1,144 @@
+import { Canvas, Description, Meta, Story } from "@storybook/blocks";
+
+import { action } from "@storybook/addon-actions";
+
+import { Radio } from "../../../../components/Radio/src/index";
+import { FormControlLabel } from "@gemeente-denhaag/formcontrollabel";
+import {
+  FormFieldInput,
+  FormFieldDescription,
+  FormFieldGroup,
+  FormFieldGroupLabel,
+} from "@gemeente-denhaag/form-field";
+import pkg from "../../../../components/Radio/package.json";
+import readme from "../../README.md";
+
+<Meta
+  title="React/Input/Radio"
+  component={Radio}
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Stories
+
+### Default
+
+<Canvas>
+  <Story name="Default" args={{}}>
+    {(args) => (
+      <FormControlLabel
+        label="Radio"
+        input={<Radio id={"radio-1"} onChange={action("Radio action")} name={"radio"} value={"check"} {...args} />}
+      />
+    )}
+  </Story>
+</Canvas>
+
+## Without label
+
+<Canvas>
+  <Story name="Without label" args={{}}>
+    {(args) => <Radio onChange={action("Radio action")} value={"check"} name={"radio"} {...args} />}
+  </Story>
+</Canvas>
+
+### Disabled
+
+<Canvas>
+  <Story name="Disabled" args={{ disabled: true }}>
+    {(args) => (
+      <FormControlLabel
+        label="Radio"
+        disabled="true"
+        input={<Radio id={"radio-1"} onChange={action("Radio action")} name={"radio"} value={"check"} {...args} />}
+      />
+    )}
+  </Story>
+</Canvas>
+
+### With error
+
+<Canvas>
+  <Story name="Error" args={{ error: true }}>
+    {(args) => (
+      <FormControlLabel
+        label="Radio"
+        input={<Radio id={"radio-1"} onChange={action("Radio action")} name={"radio"} value={"check"} {...args} />}
+      />
+    )}
+  </Story>
+</Canvas>
+
+### Group
+
+<Canvas>
+  <Story name="Group" args={{}}>
+    {() => (
+      <FormFieldGroup aria-describedby={"description-2"} role={"radiogroup"}>
+        <FormFieldGroupLabel>Label</FormFieldGroupLabel>
+        <FormFieldInput>
+          <FormControlLabel
+            label="Radio One"
+            input={<Radio id={"radio-1"} onChange={action("Radio One action")} name={"radio"} value={"one"} />}
+          />
+          <FormControlLabel
+            label="Radio Two"
+            input={<Radio id={"radio-2"} onChange={action("Radio Two action")} name={"radio"} value={"two"} />}
+          />
+          <FormControlLabel
+            label="Radio Three"
+            input={<Radio id={"radio-3"} onChange={action("Radio Three action")} name={"radio"} value={"three"} />}
+          />
+        </FormFieldInput>
+        <FormFieldDescription id="description-2">Description</FormFieldDescription>
+      </FormFieldGroup>
+    )}
+  </Story>
+</Canvas>
+
+### Group with error
+
+<Canvas>
+  <Story name="Group with error" args={{}}>
+    {() => (
+      <FormFieldGroup error={true} aria-describedby={"description-2"} role={"radiogroup"}>
+        <FormFieldGroupLabel>Label</FormFieldGroupLabel>
+        <FormFieldInput>
+          <FormControlLabel
+            label="Radio One"
+            input={
+              <Radio id={"radio-1"} error={true} onChange={action("Radio One action")} name={"radio"} value={"one"} />
+            }
+          />
+          <FormControlLabel
+            label="Radio Two"
+            input={
+              <Radio id={"radio-2"} error={true} onChange={action("Radio Two action")} name={"radio"} value={"two"} />
+            }
+          />
+          <FormControlLabel
+            label="Radio Three"
+            input={
+              <Radio
+                id={"radio-3"}
+                error={true}
+                onChange={action("Radio Three action")}
+                name={"radio"}
+                value={"three"}
+              />
+            }
+          />
+        </FormFieldInput>
+        <FormFieldDescription id="description-2">Description</FormFieldDescription>
+      </FormFieldGroup>
+    )}
+  </Story>
+</Canvas>

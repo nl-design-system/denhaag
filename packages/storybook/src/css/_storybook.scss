@@ -18,3 +18,14 @@
   margin-inline-start: -1rem;
   margin-inline-end: -1rem;
 }
+
+/* Only purpose is to show stories correct */
+.denhaag-story--css-components-feedback-modal-wrapper {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.denhaag-story--css-components-feedback-modal-wrapper .denhaag-modal {
+  position: absolute;
+}
