@@ -1,11 +1,8 @@
 import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/blocks";
+import { ArrowLeftIcon, ArrowRightIcon, Paragraph, Link } from "@gemeente-denhaag/components-react";
 
-import { Paragraph } from "@gemeente-denhaag/typography";
-import { ArrowLeftIcon, ArrowRightIcon } from "@gemeente-denhaag/icons";
-
-import { Link } from "../index";
-import pkg from "../../package.json";
-import readme from "../../README.md";
+import pkg from "../../../../components/Link/package.json";
+import readme from "../../../../components/Link/README.md";
 
 <Meta
   title="React/Navigation/Link"
@@ -31,8 +28,7 @@ This component can be used in two ways:
   An example with `react-router-dom`:
 
   ```
-  import { Link } from '@gemeente-denhaag/components-react';
-  import { ArrowRightIcon } from '@gemeente-denhaag/icons';
+  import { Link, ArrowRightIcon } from '@gemeente-denhaag/components-react';
   import {
     BrowserRouter as Router,
     Switch,
@@ -80,8 +76,7 @@ This component can be used in two ways:
       docs: {
         source: {
           code: `
-import { Link } from "@gemeente-denhaag/link";
-import { Paragraph } from "@gemeente-denhaag/typography";
+import { Link, Paragraph } from "@gemeente-denhaag/components-react";
 const ReactParagraph = (
   <Paragraph>
     It is possible to put <Link href="#">a link</Link> in a Paragraph element.
@@ -116,8 +111,7 @@ const ReactParagraph = (
       docs: {
         source: {
           code: `
-import { Link } from "@gemeente-denhaag/link";
-import { Paragraph } from "@gemeente-denhaag/typography";
+import { Link, Paragraph } from "@gemeente-denhaag/components-react";
 const ReactParagraph = (
   <Paragraph>
     It is possible to put <Link href="#" disabled>a link</Link> in a Paragraph element.
@@ -150,9 +144,7 @@ const ReactParagraph = (
       docs: {
         source: {
           code: `
-import { Link } from "@gemeente-denhaag/link";
-import { Paragraph } from "@gemeente-denhaag/typography";
-import { ArrowLeftIcon } from "@gemeente-denhaag/icons";
+import { Link, Paragraph, ArrowLeftIcon } from "@gemeente-denhaag/components-react";
 const ReactParagraph = (
   <Paragraph>
     It is possible to put <Link href="#" icon={<ArrowLeftIcon />} iconAlign="start">a link</Link> in a Paragraph element.
@@ -185,9 +177,7 @@ const ReactParagraph = (
       docs: {
         source: {
           code: `
-import { Link } from "@gemeente-denhaag/link";
-import { Paragraph } from "@gemeente-denhaag/typography";
-import { ArrowRightIcon } from "@gemeente-denhaag/icons";
+import { ArrowRightIcon, Link, Paragraph } from "@gemeente-denhaag/components-react";
 const ReactParagraph = (
   <Paragraph>
     It is possible to put <Link href="#" icon={<ArrowRightIcon />}>a link</Link> in a Paragraph element.

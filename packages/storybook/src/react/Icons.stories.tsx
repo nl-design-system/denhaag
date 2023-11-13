@@ -1,8 +1,8 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import * as Icons from './index';
-import SvgIcon, { SvgIconProps } from './index';
-import pkg from '../package.json';
+import * as Icons from '@gemeente-denhaag/icons';
+import SvgIcon, { SvgIconProps } from '@gemeente-denhaag/icons';
+import pkg from '../../../../components/Icons/package.json';
 
 const allIconNames = Object.keys(Icons).filter((iconName) => (iconName === 'default' ? false : true));
 
@@ -50,7 +50,7 @@ const SingleTemplate: Story<SvgIconProps> = ({ ...props }: SvgIconProps) => {
 
 const defaultCode = `
 // Update RightArrowIcon to the icon you would like to use.
-import { RightArrowIcon } from "@gemeente-denhaag/icons";
+import { RightArrowIcon } from "@gemeente-denhaag/components-react";
 <RightArrowIcon />
 `;
 

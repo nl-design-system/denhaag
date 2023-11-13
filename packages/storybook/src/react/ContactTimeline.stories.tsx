@@ -1,9 +1,7 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import { File } from '@gemeente-denhaag/file';
-import readme from '../../README.md?raw';
-import ContactTimeline from '../index';
-import { ContactTimelineProps } from '../ContactTimeline';
+import { File, ContactTimeline, ContactTimelineProps } from '@gemeente-denhaag/components-react';
+import readme from '../../../../components/ContactTimeline/README.md';
 
 const exampleArgs: ContactTimelineProps = {
   labels: { today: 'vandaag', yesterday: 'gisteren' },

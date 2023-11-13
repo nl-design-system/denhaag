@@ -21,6 +21,7 @@
       "@etchteam/storybook-addon-status": "4.2.4",
       "@gemeente-denhaag/design-tokens-components": "workspace:*",
       "@gemeente-denhaag/components-react": "workspace:*",
+      "@gemeente-denhaag/icons": "workspace:*", 
       "@mdx-js/react": "2.3.0",
       "@storybook/addon-a11y": "7.4.0",
       "@storybook/addon-actions": "7.4.0",

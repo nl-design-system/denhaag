@@ -1,10 +1,8 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import { File } from '@gemeente-denhaag/file';
+import { ContactTimeline, ContactTimelineProps, File } from '@gemeente-denhaag/components-react';
 import * as ReactDOMServer from 'react-dom/server';
-import readme from '../../README.md?raw';
-import ContactTimeline from '../index';
-import { ContactTimelineProps } from '../ContactTimeline';
+import readme from '../../../../components/ContactTimeline/README.md?raw';
 
 const exampleArgs: ContactTimelineProps = {
   labels: { today: 'vandaag', yesterday: 'gisteren' },

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Tab, { TabProps, Tabs } from '../../../../components/Tab/src/index';
+import Tab, { TabProps, Tabs } from '@gemeente-denhaag/components-react';
 import pkg from '../../../../components/Tab/package.json';
 
 export default {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Paragraph, ParagraphProps } from '../../../../components/Typography/src/Paragraph';
+import { Paragraph, ParagraphProps } from '@gemeente-denhaag/components-react';
 import pkg from '../../../../components/Typography/package.json';
 
 export default {

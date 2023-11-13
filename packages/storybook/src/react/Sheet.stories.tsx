@@ -1,9 +1,14 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Sheet, SheetDialog, SheetContainer, SheetProps } from '../../../../components/Sheet/src/index';
-import { ResponsiveContent } from '@gemeente-denhaag/responsive-content';
-import { IconButton } from '@gemeente-denhaag/iconbutton';
-import { CloseIcon } from '@gemeente-denhaag/icons';
+import {
+  Sheet,
+  SheetDialog,
+  SheetContainer,
+  SheetProps,
+  ResponsiveContent,
+  IconButton,
+  CloseIcon,
+} from '@gemeente-denhaag/components-react';
 import pkg from '../../../../components/Sheet/package.json';
 
 export default {

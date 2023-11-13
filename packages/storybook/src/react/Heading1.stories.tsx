@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Heading1, Heading1Props } from '../../../../components/Typography/src/Heading1';
+import { Heading1, Heading1Props } from '@gemeente-denhaag/components-react';
 import pkg from '../../../../components/Typography/package.json';
 
 export default {
