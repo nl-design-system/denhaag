@@ -1,9 +1,9 @@
 import { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
-import { Page, PageHeader, PageFooter } from '../../../components/Page/src';
-import { HeaderLogic, HeaderLogicProps } from '../../../components/Header/src';
-import Footer from '../../../components/Footer/src';
-import ResponsiveContent from '../../../components/ResponsiveContent/src';
+import { Page, PageHeader, PageFooter } from '../../../../components/Page/src';
+import { HeaderLogic, HeaderLogicProps } from '../../../../components/Header/src';
+import Footer from '../../../../components/Footer/src';
+import ResponsiveContent from '../../../../components/ResponsiveContent/src';
 import {
   InboxIcon,
   ArchiveIcon,
@@ -11,24 +11,22 @@ import {
   ParkingIcon,
   CircleInformationIcon,
   GridIcon,
-} from '../../../components/Icons/src';
-import { Heading2 } from '../../../components/Typography/src';
-import { CaseCard } from '../../../components/Card/src';
-import { Tabs } from '../../../components/Tab/src';
-import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '../../../components/Sidenav/src';
+} from '../../../../components/Icons/src';
+import { Heading2 } from '../../../../components/Typography/src';
+import { CaseCard } from '../../../../components/Card/src';
+import { Tabs } from '../../../../components/Tab/src';
+import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '../../../../components/Sidenav/src';
 import { BadgeCounter } from '@utrecht/component-library-react';
 import { headerProps, footerLegalData, footerSocialData, newsletterData, contactData, copyright } from './util';
 
 import './template-story.scss';
 
 const meta = {
-  title: 'Templates/LopendeZaken',
+  title: 'Templates/Zaak Overzicht',
   parameters: {
     chromatic: { viewports: [1768, 1280, 768, 360] },
   },
 } as Meta<typeof Page>;
-
-export default meta;
 
 const zakenHeaderProps: HeaderLogicProps = {
   ...headerProps,
@@ -48,9 +46,7 @@ const tabsProps = {
   ],
 };
 
-type Story = StoryObj<typeof meta>;
-
-export const LopendeZaken: Story = {
+export const ZaakOverzicht: StoryObj<typeof meta> = {
   render: (args) => (
     <Page {...args}>
       <PageHeader>
@@ -131,3 +127,5 @@ export const LopendeZaken: Story = {
     </Page>
   ),
 };
+
+export default meta;

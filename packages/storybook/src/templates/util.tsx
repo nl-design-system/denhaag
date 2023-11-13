@@ -1,6 +1,6 @@
-import { HeaderLogicProps } from '../../../components/Header/src';
-import { FacebookIcon, InstagramIcon, LinkedInIcon, TwitterIcon, YouTubeIcon } from '../../../components/Icons/src';
 import React from 'react';
+import { HeaderLogicProps } from '../../../../components/Header/src';
+import { FacebookIcon, InstagramIcon, LinkedInIcon, TwitterIcon, YouTubeIcon } from '../../../../components/Icons/src';
 
 export const headerProps: HeaderLogicProps = {
   breadcrumbs: {
@@ -132,7 +132,7 @@ export const dateFormatLabels = {
   today: 'vandaag',
   yesterday: 'gisteren',
   before: 'vóór',
-  approachingDeadline: (daysDifference) => {
+  approachingDeadline: (daysDifference: number) => {
     if (daysDifference === 1) {
       return `nog ${daysDifference} dag`;
     }

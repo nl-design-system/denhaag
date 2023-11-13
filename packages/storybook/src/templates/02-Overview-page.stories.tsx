@@ -1,33 +1,30 @@
 import { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
-import { Heading2, Paragraph } from '../../../components/Typography/src';
-import { Page, PageHeader, PageFooter } from '../../../components/Page/src';
-import { HeaderLogic, HeaderLogicProps } from '../../../components/Header/src';
-import Footer from '../../../components/Footer/src';
-import ResponsiveContent from '../../../components/ResponsiveContent/src';
-import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '../../../components/Sidenav/src';
+import { Heading2, Paragraph } from '../../../../components/Typography/src';
+import { Page, PageHeader, PageFooter } from '../../../../components/Page/src';
+import { HeaderLogic, HeaderLogicProps } from '../../../../components/Header/src';
+import Footer from '../../../../components/Footer/src';
+import ResponsiveContent from '../../../../components/ResponsiveContent/src';
+import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '../../../../components/Sidenav/src';
 import {
   ArchiveIcon,
   CircleInformationIcon,
-  FavoriteIcon,
   GridIcon,
   InboxIcon,
   ParkingIcon,
   UserIcon,
-} from '../../../components/Icons/src';
+} from '../../../../components/Icons/src';
 import { BadgeCounter } from '@utrecht/component-library-react';
 import { copyright, headerProps, footerLegalData, footerSocialData, newsletterData, contactData } from './util';
 
 import './template-story.scss';
 
 const meta = {
-  title: 'Templates/OverviewPage',
+  title: 'Templates/Overview',
   parameters: {
     chromatic: { viewports: [1768, 1280, 768, 360] },
   },
 } as Meta<typeof Page>;
-
-export default meta;
 
 const overviewHeaderProps: HeaderLogicProps = {
   ...headerProps,
@@ -35,9 +32,8 @@ const overviewHeaderProps: HeaderLogicProps = {
     navigationPath: [{ label: 'Home', href: 'https://denhaag.nl/' }, { label: 'MijnDenHaag' }],
   },
 };
-type Story = StoryObj<typeof meta>;
 
-export const OverviewPage: Story = {
+export const Overview: StoryObj<typeof meta> = {
   render: () => (
     <Page>
       <PageHeader>
@@ -117,3 +113,5 @@ export const OverviewPage: Story = {
     </Page>
   ),
 };
+
+export default meta;

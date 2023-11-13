@@ -1,11 +1,11 @@
-import { StoryObj } from '@storybook/react';
 import React from 'react';
-import { Heading2, Heading3 } from '../../../components/Typography/src';
-import { Page, PageHeader, PageFooter } from '../../../components/Page/src';
-import { HeaderLogic } from '../../../components/Header/src';
-import Footer from '../../../components/Footer/src';
-import ResponsiveContent from '../../../components/ResponsiveContent/src';
-import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '../../../components/Sidenav/src';
+import { Meta, StoryObj } from '@storybook/react';
+import { Heading2, Heading3 } from '../../../../components/Typography/src';
+import { Page, PageHeader, PageFooter } from '../../../../components/Page/src';
+import { HeaderLogic, HeaderLogicProps } from '../../../../components/Header/src';
+import Footer from '../../../../components/Footer/src';
+import ResponsiveContent from '../../../../components/ResponsiveContent/src';
+import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '../../../../components/Sidenav/src';
 import {
   GridIcon,
   UserIcon,
@@ -13,44 +13,30 @@ import {
   ParkingIcon,
   ArchiveIcon,
   CircleInformationIcon,
-} from '../../../components/Icons/src';
-import { Status, StatusProps } from '../../../components/ProcessSteps/src';
-import { File } from '../../../components/File/src';
-import ContactTimeline, { ContactTimelineProps } from '../../../components/ContactTimeline/src';
-import { Action } from '../../../components/Action/src';
+} from '../../../../components/Icons/src';
+import { Status, StatusProps } from '../../../../components/ProcessSteps/src';
+import { File } from '../../../../components/File/src';
+import ContactTimeline, { ContactTimelineProps } from '../../../../components/ContactTimeline/src';
+import { Action } from '../../../../components/Action/src';
 import { BadgeCounter, ButtonLink } from '@utrecht/component-library-react';
-
-import {
-  copyright,
-  headerProps,
-  footerLegalData,
-  footerSocialData,
-  newsletterData,
-  contactData,
-  linkData,
-  dateFormatLabels,
-} from './util';
+import { headerProps, footerLegalData, footerSocialData, newsletterData, contactData, copyright } from './util';
 
 import './template-story.scss';
 
 const meta = {
-  title: 'Templates/ZaakDetailPagina',
+  title: 'Templates/Zaak Detail',
   parameters: {
     chromatic: { viewports: [1768, 1280, 768, 360] },
   },
-};
+} as Meta<typeof Page>;
 
-export default meta;
-
-type Story = StoryObj<typeof meta>;
-
-const caseDetailPageHeaderProps = {
+const zakenHeaderProps: HeaderLogicProps = {
   ...headerProps,
   breadcrumbs: {
     navigationPath: [
       { label: 'Home', href: 'https://denhaag.nl/' },
-      { label: 'MijnDenHaag', href: '#' },
-      { label: 'Mijn lopende zaken', href: '#' },
+      { label: 'MijnDenHaag', href: 'https://denhaag.nl/' },
+      { label: 'Mijn lopende zaken' },
     ],
   },
 };
@@ -154,11 +140,11 @@ const contactTimelineData: ContactTimelineProps = {
 const taskDateTime = '2023-09-30T19:47:36.593Z';
 const taskNow = '2023-09-28T19:47:36.593Z';
 
-export const ZaakDetailPagina: Story = {
+export const ZaakDetail: StoryObj<typeof meta> = {
   render: () => (
     <Page>
       <PageHeader>
-        <HeaderLogic {...caseDetailPageHeaderProps} />
+        <HeaderLogic {...zakenHeaderProps} />
       </PageHeader>
       <ResponsiveContent className="denhaag-page-content denhaag-responsive-content--sidebar">
         <Sidenav>
@@ -256,3 +242,5 @@ export const ZaakDetailPagina: Story = {
     </Page>
   ),
 };
+
+export default meta;

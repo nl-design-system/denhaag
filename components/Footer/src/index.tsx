@@ -154,7 +154,7 @@ export const FooterContact: React.FC<FooterContactProps> = (props: FooterContact
   );
 };
 
-export const Footer: React.FC<FooterProps> = (props: FooterProps) => {
+export const Footer = (props: FooterProps) => {
   const rootClassNames = clsx('denhaag-footer', props.className);
 
   return (

@@ -4,12 +4,7 @@ const config: StorybookConfig = {
   core: {
     disableTelemetry: true,
   },
-  stories: [
-    '../../../.storybook/stories/**/*.stories.@(js|jsx|ts|tsx|mdx)',
-    '../../../components/*/src/**/*.stories.@(js|jsx|ts|tsx)',
-    '../../../components/*/src/**/*.stories.mdx',
-    '../src/**/*.stories.@(js|jsx|mdx|ts|tsx)',
-  ],
+  stories: ['../../../components/*/src/**/*.stories.@(js|jsx|ts|tsx|mdx)', '../src/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
   features: {
     buildStoriesJson: true,
   },
@@ -28,7 +23,7 @@ const config: StorybookConfig = {
     'storybook-addon-pseudo-states',
     'storybook-addon-themes',
   ],
-  staticDirs: ['../../../.storybook/stories/assets/'],
+  staticDirs: ['../src/assets'],
   docs: {
     autodocs: 'tag',
   },

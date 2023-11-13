@@ -4,7 +4,7 @@ import './index.scss';
 
 export type PageHeaderProps = HTMLAttributes<HTMLDivElement>;
 
-export const PageHeader: React.FC<PageHeaderProps> = (props: PageHeaderProps) => {
+export const PageHeader = (props: PageHeaderProps) => {
   const classNames = clsx('denhaag-page-header', props.className);
   return <div className={classNames}>{props.children}</div>;
 };

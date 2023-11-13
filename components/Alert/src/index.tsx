@@ -51,16 +51,7 @@ export interface AlertProps {
 /**
  * Primary UI component for user interaction
  */
-export const Alert: React.FC<AlertProps> = ({
-  id,
-  title,
-  text,
-  variant,
-  action,
-  close,
-  supportIcon,
-  className,
-}: AlertProps) => {
+export const Alert = ({ id, title, text, variant, action, close, supportIcon, className }: AlertProps) => {
   const rootClassNames = clsx('denhaag-alert', `denhaag-alert--${variant}`, className);
   let icon;
 

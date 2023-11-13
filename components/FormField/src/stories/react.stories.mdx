@@ -1,21 +1,23 @@
 import { Canvas, Description, Meta, Story } from "@storybook/blocks";
-
-import { action } from "@storybook/addon-actions";
-
-import { Checkbox } from "@gemeente-denhaag/checkbox";
-import { FormControlLabel } from "@gemeente-denhaag/formcontrollabel";
+import pkg from "../../package.json";
+import readme from "../../../../components/FormField/README.md";
 import {
+  FormField,
+  FormFieldLabel,
   FormFieldInput,
   FormFieldDescription,
   FormFieldGroup,
   FormFieldGroupLabel,
 } from "@gemeente-denhaag/form-field";
-import pkg from "../../../../components/Checkbox/package.json";
-import readme from "../../../../components/Checkbox/README.md";
+import TextField from "@gemeente-denhaag/textfield";
+import { FormControlLabel } from "@gemeente-denhaag/formcontrollabel";
+import { Checkbox } from "@gemeente-denhaag/checkbox";
+import { CalendarIcon } from "@gemeente-denhaag/icons";
+import { action } from "@storybook/addon-actions";
 
 <Meta
-  title="React/Input/Checkbox"
-  component={Checkbox}
+  title="React/Input/Form Field"
+  component={FormField}
   parameters={{
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: { source: { type: "dynamic" } },
@@ -33,78 +35,49 @@ import readme from "../../../../components/Checkbox/README.md";
 
 <Canvas>
   <Story name="Default" args={{}}>
-    {(args) => (
-      <FormControlLabel
-        label="Checkbox"
-        input={
-          <Checkbox
-            id={"checkbox-1"}
-            onChange={action("Checkbox action")}
-            name={"checkbox"}
-            value={"check"}
-            {...args}
+    {() => (
+      <FormField>
+        <FormFieldLabel htmlFor="textfield-1">Label</FormFieldLabel>
+        <FormFieldInput>
+          <TextField
+            id={"textfield-1"}
+            aria-describedby={"description-1"}
+            placeholder={"Placeholder"}
+            icon={<CalendarIcon />}
           />
-        }
-      />
+        </FormFieldInput>
+        <FormFieldDescription id="description-1">Description</FormFieldDescription>
+      </FormField>
     )}
   </Story>
 </Canvas>
 
-## Without label
+### Error
 
 <Canvas>
-  <Story name="Without label" args={{}}>
-    {(args) => <Checkbox onChange={action("Checkbox action")} value={"check"} name={"checkbox"} {...args} />}
-  </Story>
-</Canvas>
-
-### Disabled
-
-<Canvas>
-  <Story name="Disabled" args={{ disabled: true }}>
-    {(args) => (
-      <FormControlLabel
-        label="Checkbox"
-        disabled="true"
-        input={
-          <Checkbox
-            id={"checkbox-1"}
-            onChange={action("Checkbox action")}
-            name={"checkbox"}
-            value={"check"}
-            {...args}
+  <Story name="Error" args={{}}>
+    {() => (
+      <FormField error={true}>
+        <FormFieldLabel htmlFor="textfield-1">Label</FormFieldLabel>
+        <FormFieldInput>
+          <TextField
+            id={"textfield-1"}
+            aria-describedby={"description-1"}
+            placeholder={"Placeholder"}
+            icon={<CalendarIcon />}
+            invalid={true}
           />
-        }
-      />
+        </FormFieldInput>
+        <FormFieldDescription id="description-1">Description</FormFieldDescription>
+      </FormField>
     )}
   </Story>
 </Canvas>
 
-### With error
+### FormFieldGroup
 
 <Canvas>
-  <Story name="Error" args={{ error: true }}>
-    {(args) => (
-      <FormControlLabel
-        label="Checkbox"
-        input={
-          <Checkbox
-            id={"checkbox-1"}
-            onChange={action("Checkbox action")}
-            name={"checkbox"}
-            value={"check"}
-            {...args}
-          />
-        }
-      />
-    )}
-  </Story>
-</Canvas>
-
-### Group
-
-<Canvas>
-  <Story name="Group" args={{}}>
+  <Story name="FormFieldGroup" args={{}}>
     {() => (
       <FormFieldGroup aria-describedby={"description-1"}>
         <FormFieldGroupLabel>Label</FormFieldGroupLabel>
@@ -139,10 +112,10 @@ import readme from "../../../../components/Checkbox/README.md";
   </Story>
 </Canvas>
 
-### Group with error
+### FormFieldGroup Error
 
 <Canvas>
-  <Story name="Group with error" args={{}}>
+  <Story name="FormFieldGroup Error" args={{}}>
     {() => (
       <FormFieldGroup error={true} aria-describedby={"description-1"}>
         <FormFieldGroupLabel>Label</FormFieldGroupLabel>

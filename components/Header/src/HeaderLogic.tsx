@@ -58,7 +58,7 @@ interface NavigationGroupProps {
   navigation?: Array<NavigationGroupProps>;
 }
 
-export const HeaderLogic: React.FC<HeaderLogicProps> = ({
+export const HeaderLogic = ({
   breadcrumbs,
   userprofileMenu,
   languageSwitcherMenu,

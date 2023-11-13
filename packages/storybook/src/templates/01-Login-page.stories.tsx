@@ -1,27 +1,23 @@
-import { Meta, StoryObj } from '@storybook/react';
-import { Heading2, Paragraph } from '../../../components/Typography/src';
-import { Link } from '../../../components/Link/src';
-import Alert from '../../../components/Alert/src';
 import React from 'react';
-import { Page, PageHeader, PageFooter } from '../../../components/Page/src';
-import { HeaderLogic, HeaderLogicProps } from '../../../components/Header/src';
-import Footer from '../../../components/Footer/src';
-import ResponsiveContent from '../../../components/ResponsiveContent/src';
-import { AuthenticationCardGroup } from '../../../components/CardGroup/src/story-template';
+import { Meta, StoryObj } from '@storybook/react';
+import { Heading2, Paragraph } from '../../../../components/Typography/src';
+import { Link } from '../../../../components/Link/src';
+import Alert from '../../../../components/Alert/src';
+import { Page, PageHeader, PageFooter } from '../../../../components/Page/src';
+import { HeaderLogic, HeaderLogicProps } from '../../../../components/Header/src';
+import Footer from '../../../../components/Footer/src';
+import ResponsiveContent from '../../../../components/ResponsiveContent/src';
+import { AuthenticationCardGroup } from '../../../../components/CardGroup/src/story-template';
 import { headerProps, footerLegalData, footerSocialData, newsletterData, contactData, copyright } from './util';
 
 import './template-story.scss';
 
 const meta = {
-  title: 'Templates/LoginPagina',
+  title: 'Templates/Login',
   parameters: {
     chromatic: { viewports: [1768, 1280, 768, 360] },
   },
 } as Meta<typeof Page>;
-
-export default meta;
-
-type Story = StoryObj<typeof meta>;
 
 const loginPageHeaderProps: HeaderLogicProps = {
   ...headerProps,
@@ -31,7 +27,7 @@ const loginPageHeaderProps: HeaderLogicProps = {
   userprofileMenu: undefined,
 };
 
-export const LoginPagina: Story = {
+export const Login: StoryObj<typeof meta> = {
   render: (args) => (
     <Page {...args}>
       <PageHeader>
@@ -64,3 +60,5 @@ export const LoginPagina: Story = {
     </Page>
   ),
 };
+
+export default meta;

@@ -8,7 +8,7 @@ export interface ParagraphProps {
   children?: React.ReactNode;
 }
 
-export const Paragraph: React.FC<ParagraphProps> = (props: ParagraphProps) => {
+export const Paragraph = (props: ParagraphProps) => {
   const rootClassNames = clsx('utrecht-paragraph', props.className);
   return <p className={rootClassNames}> {props.children}</p>;
 };
