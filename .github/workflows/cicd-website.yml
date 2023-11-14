@@ -53,13 +53,13 @@ jobs:
           pnpm run lint:js
           pnpm run lint:prettier
 
+      - name: typecheck
+        run: |
+          pnpm run typecheck
+
       - name: build library
         run: |
           pnpm run build:library
-
-      - name: typecheck storybook
-        run: |
-          pnpm run typecheck:storybook
 
       - name: build storybook
         run: |
