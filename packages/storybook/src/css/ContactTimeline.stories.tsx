@@ -197,6 +197,7 @@ const meta = {
   id: 'css-contact-timeline',
   component: ContactTimeline,
   args: exampleArgs,
+  tags: ['autodocs'],
   parameters: {
     docs: {
       description: {
