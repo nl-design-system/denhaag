@@ -1,6 +1,5 @@
 import { Canvas, Meta, Story } from "@storybook/blocks";
 import "@gemeente-denhaag/components-css";
-import * as ReactDOMServer from "react-dom/server";
 import { Status } from "../../../../components/ProcessSteps/src/index";
 import pkg from "../../../../components/ProcessSteps/package.json";
 
@@ -40,13 +39,6 @@ export const Template = (args) => {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: { type: "dynamic" },
-      transformSource: (src, storyContext) => {
-        // Ensure valid HTML in the Preview source
-        if (storyContext.component) {
-          return ReactDOMServer.renderToStaticMarkup(storyContext.component(storyContext.parameters.args));
-        }
-        return src;
-      },
     },
     status: {
       type: "ALPHA",

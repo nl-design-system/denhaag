@@ -2,7 +2,6 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import { ContactTimeline, ContactTimelineProps, File } from '@gemeente-denhaag/components-react';
 import '@gemeente-denhaag/components-css';
-import * as ReactDOMServer from 'react-dom/server';
 
 import readme from '../../../../components/ContactTimeline/README.md';
 
@@ -202,14 +201,6 @@ const meta = {
     docs: {
       description: {
         component: readme,
-      },
-      source: { type: 'dynamic' },
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      transformSource: (src: string, storyContext: any) => {
-        if (storyContext.component) {
-          return ReactDOMServer.renderToStaticMarkup(storyContext.component(storyContext.parameters.args));
-        }
-        return src;
       },
     },
   },

@@ -1,4 +1,3 @@
-import * as ReactDOMServer from "react-dom/server";
 import { Canvas, Meta, Story, ArgsTable } from "@storybook/blocks";
 import "@gemeente-denhaag/components-css";
 
@@ -15,13 +14,6 @@ export const Template = (args) => <StepMarker {...args} />;
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       source: { type: "dynamic" },
-      transformSource: (src, storyContext) => {
-        // Ensure valid HTML in the Preview source
-        if (storyContext.component) {
-          return ReactDOMServer.renderToStaticMarkup(storyContext.component(storyContext.parameters.args));
-        }
-        return src;
-      },
     },
     status: {
       type: "ALPHA",
