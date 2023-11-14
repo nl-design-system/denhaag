@@ -1,9 +1,9 @@
 {
   "extends": "./tsconfig.build.json",
-  "compilerOptions": {
-    "jsx": "react"
-  },
   "references": [
+    {
+      "path": "components/Action"
+    },
     {
       "path": "components/Accordion"
     },
@@ -75,6 +75,9 @@
     },
     {
       "path": "components/Tab"
+    },
+    {
+      "path": "components/Table"
     },
     {
       "path": "components/TextField"

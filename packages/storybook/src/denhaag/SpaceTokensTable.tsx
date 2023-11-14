@@ -1,5 +1,5 @@
 import React from 'react';
-export const path2css = (path) => `var(--${path.join('-')})`;
+import { path2css } from './util';
 
 interface HorizontalSpaceExampleProps {
   size: string;
@@ -62,7 +62,7 @@ interface SpaceTokensTableProps {
   tokens: {
     comment: string;
     name: string;
-    path: string;
+    path: string[];
     value: string;
   }[];
 }
@@ -78,28 +78,31 @@ export const SpaceTokensTable = ({ tokens, orientation }: SpaceTokensTableProps)
       </tr>
     </thead>
     <tbody>
-      {tokens.map(({ comment, name, path, value }) => (
-        <tr key={name}>
-          <td>{comment}</td>
-          <td>
-            <code>{path2css(path)}</code>
-          </td>
-          <td>{value}</td>
-          <td>
-            {orientation === 'horizontal' ? (
-              <HorizontalSpaceExample size={value} />
-            ) : orientation === 'vertical' ? (
-              <VerticalSpaceExample size={value} />
-            ) : orientation === 'block' ? (
-              <BlockSpaceExample size={value} />
-            ) : orientation === 'inline' ? (
-              <InlineSpaceExample size={value} />
-            ) : (
-              <HorizontalSpaceExample size={value} />
-            )}
-          </td>
-        </tr>
-      ))}
+      {tokens.map(({ comment, name, path, value }) => {
+        console.log(path);
+        return (
+          <tr key={name}>
+            <td>{comment}</td>
+            <td>
+              <code>{path2css(path)}</code>
+            </td>
+            <td>{value}</td>
+            <td>
+              {orientation === 'horizontal' ? (
+                <HorizontalSpaceExample size={value} />
+              ) : orientation === 'vertical' ? (
+                <VerticalSpaceExample size={value} />
+              ) : orientation === 'block' ? (
+                <BlockSpaceExample size={value} />
+              ) : orientation === 'inline' ? (
+                <InlineSpaceExample size={value} />
+              ) : (
+                <HorizontalSpaceExample size={value} />
+              )}
+            </td>
+          </tr>
+        );
+      })}
     </tbody>
   </table>
 );

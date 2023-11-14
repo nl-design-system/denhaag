@@ -27,6 +27,9 @@
       "path": "../../components/Button"
     },
     {
+      "path": "../../components/CardGroup"
+    },
+    {
       "path": "../../components/Checkbox"
     },
     {

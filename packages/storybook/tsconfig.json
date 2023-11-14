@@ -1,10 +1,85 @@
 {
-  "compilerOptions": {
-    "jsx": "react",
-    "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true
-  },
   "extends": "../../tsconfig.json",
   "include": ["config/**/*", "config/**/*.ts", "config/**/*.tsx", "src/**/*", "src/**/*.ts", "src/**/*.tsx"],
-  "exclude": ["**/node_modules/*"]
+  "exclude": ["**/node_modules/*"],
+  "references": [
+    {
+      "path": "../../components/Action"
+    },
+    {
+      "path": "../../components/Accordion"
+    },
+    {
+      "path": "../../components/BadgeCounter"
+    },
+    {
+      "path": "../../components/Button"
+    },
+    {
+      "path": "../../components/Card"
+    },
+    {
+      "path": "../../components/Checkbox"
+    },
+    {
+      "path": "../../components/ContactTimeline"
+    },
+    {
+      "path": "../../components/Divider"
+    },
+    {
+      "path": "../../components/FormControlLabel"
+    },
+    {
+      "path": "../../components/FormGroup"
+    },
+    {
+      "path": "../../components/IconButton"
+    },
+    {
+      "path": "../../components/Icons"
+    },
+    {
+      "path": "../../components/Link"
+    },
+    {
+      "path": "../../components/List"
+    },
+    {
+      "path": "../../components/Menu"
+    },
+    {
+      "path": "../../components/Radio"
+    },
+    {
+      "path": "../../components/Sidenav"
+    },
+    {
+      "path": "../../components/StylesProvider"
+    },
+    {
+      "path": "../../components/Tab"
+    },
+    {
+      "path": "../../components/Table"
+    },
+    {
+      "path": "../../components/TextField"
+    },
+    {
+      "path": "../../components/Typography"
+    },
+    {
+      "path": "../components-react"
+    },
+    {
+      "path": "../../proprietary/Common"
+    },
+    {
+      "path": "../../proprietary/Components"
+    },
+    {
+      "path": "../../proprietary/Proprietary"
+    }
+  ]
 }

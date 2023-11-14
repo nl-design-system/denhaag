@@ -6,7 +6,7 @@ interface FileProps extends React.HTMLAttributes<HTMLAnchorElement> {
   name: string;
   link: string;
   size?: number;
-  lastUpdated?: Date;
+  lastUpdated?: string;
 }
 
 export const File = ({ name, link, size, lastUpdated, className }: FileProps) => {

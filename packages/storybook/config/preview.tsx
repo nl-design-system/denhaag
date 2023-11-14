@@ -1,8 +1,7 @@
-/* eslint-env node */
 import type { Preview } from '@storybook/react';
 import type { StoryContext } from '@storybook/types';
 import clsx from 'clsx';
-import prettierBabel from 'prettier/parser-babel';
+// import prettierBabel from 'prettier/parser-babel';
 import prettier from 'prettier/standalone';
 import React, { ReactElement } from 'react';
 import * as ReactDOMServer from 'react-dom/server';
@@ -90,7 +89,7 @@ const preview: Preview = {
         state: 'open',
       },
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      transformSource: (src: string, storyContext: StoryContext<any>): string => {
+      transformSource: (src: string, storyContext: StoryContext<any>) => {
         // Ensure valid HTML in the Preview source
         const render =
           typeof storyContext.component === 'function'
@@ -102,7 +101,7 @@ const preview: Preview = {
         if (render) {
           return prettier.format(ReactDOMServer.renderToStaticMarkup(render(storyContext.args)), {
             parser: 'babel',
-            plugins: [prettierBabel],
+            // plugins: [prettierBabel],
           });
         }
         return src;

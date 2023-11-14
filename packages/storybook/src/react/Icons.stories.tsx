@@ -30,7 +30,8 @@ export default {
 
 const AllTemplate: Story<SvgIconProps> = (props: SvgIconProps) => {
   const children = allIconNames.map<React.ReactElement>((iconName) => {
-    const IconElement = Icons[iconName];
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const IconElement = (Icons as any)[iconName];
     return (
       <div style={{ flexBasis: '16.666667%' }} key={iconName}>
         <div style={{ display: 'flex', justifyContent: 'center' }}>

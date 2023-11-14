@@ -4,7 +4,7 @@ import { ContactTimeline, ContactTimelineProps, File } from '@gemeente-denhaag/c
 import '@gemeente-denhaag/components-css';
 import * as ReactDOMServer from 'react-dom/server';
 
-import readme from '../../../../components/ContactTimeline/README.md?raw';
+import readme from '../../../../components/ContactTimeline/README.md';
 
 const exampleArgs: ContactTimelineProps = {
   labels: { today: 'vandaag', yesterday: 'gisteren' },
@@ -164,15 +164,7 @@ const exampleArgsWithFile: ContactTimelineProps = {
       isoDate: '2022-12-01T09:17:03.137Z',
       description: 'Hier komt de uitgebreide beschrijving',
       sender: 'Gemeente Den Haag',
-      file: (
-        <File
-          name="example3"
-          link="test.png"
-          extension="png"
-          size={2000}
-          lastUpdated="Thu Aug 31 2023 11:22:11 GMT+0200"
-        />
-      ),
+      file: <File name="example3" link="test.png" size={2000} lastUpdated="Thu Aug 31 2023 11:22:11 GMT+0200" />,
     },
     {
       id: '5',
@@ -212,7 +204,8 @@ const meta = {
         component: readme,
       },
       source: { type: 'dynamic' },
-      transformSource: (src, storyContext) => {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      transformSource: (src: string, storyContext: any) => {
         if (storyContext.component) {
           return ReactDOMServer.renderToStaticMarkup(storyContext.component(storyContext.parameters.args));
         }

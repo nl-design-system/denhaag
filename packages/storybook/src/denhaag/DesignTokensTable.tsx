@@ -1,11 +1,11 @@
 import React from 'react';
-export const path2css = (path) => `var(--${path.join('-')})`;
+import { path2css } from './util';
 
 interface DesignTokensTableProps {
   tokens: {
     comment: string;
     name: string;
-    path: string;
+    path: string[];
     value: string;
   }[];
 }

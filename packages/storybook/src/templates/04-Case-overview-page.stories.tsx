@@ -1,22 +1,28 @@
-import { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
-import { Page, PageHeader, PageFooter } from '../../../../components/Page/src';
-import { HeaderLogic, HeaderLogicProps } from '../../../../components/Header/src';
-import Footer from '../../../../components/Footer/src';
-import ResponsiveContent from '../../../../components/ResponsiveContent/src';
+import { Meta, StoryObj } from '@storybook/react';
+import { BadgeCounter } from '@utrecht/component-library-react';
 import {
+  Sidenav,
+  SidenavItem,
+  SidenavLink,
+  SidenavList,
+  Tabs,
+  CaseCard,
+  Heading2,
   InboxIcon,
   ArchiveIcon,
   UserIcon,
   ParkingIcon,
   CircleInformationIcon,
   GridIcon,
-} from '../../../../components/Icons/src';
-import { Heading2 } from '../../../../components/Typography/src';
-import { CaseCard } from '../../../../components/Card/src';
-import { Tabs } from '../../../../components/Tab/src';
-import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '../../../../components/Sidenav/src';
-import { BadgeCounter } from '@utrecht/component-library-react';
+  ResponsiveContent,
+  Footer,
+  HeaderLogic,
+  HeaderLogicProps,
+  Page,
+  PageHeader,
+  PageFooter,
+} from '@gemeente-denhaag/components-react';
 import { headerProps, footerLegalData, footerSocialData, newsletterData, contactData, copyright } from './util';
 
 import './template-story.scss';

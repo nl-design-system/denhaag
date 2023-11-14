@@ -1,6 +1,7 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import { File, ContactTimeline, ContactTimelineProps } from '@gemeente-denhaag/components-react';
+
 import readme from '../../../../components/ContactTimeline/README.md';
 
 const exampleArgs: ContactTimelineProps = {
@@ -161,15 +162,7 @@ const exampleArgsWithFile: ContactTimelineProps = {
       isoDate: '2022-12-01T09:17:03.137Z',
       description: 'Hier komt de uitgebreide beschrijving',
       sender: 'Gemeente Den Haag',
-      file: (
-        <File
-          name="example3"
-          link="test.png"
-          extension="png"
-          size={2000}
-          lastUpdated="Thu Aug 31 2023 11:22:11 GMT+0200"
-        />
-      ),
+      file: <File name="example3" link="test.png" size={2000} lastUpdated="Thu Aug 31 2023 11:22:11 GMT+0200" />,
     },
     {
       id: '5',

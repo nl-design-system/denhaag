@@ -1,14 +1,20 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
+import {
+  AuthenticationCardGroup,
+  ResponsiveContent,
+  Footer,
+  HeaderLogic,
+  HeaderLogicProps,
+  Page,
+  PageHeader,
+  PageFooter,
+  Alert,
+  Link,
+  Heading2,
+  Paragraph,
+} from '@gemeente-denhaag/components-react';
 
-import { Heading2, Paragraph } from '../../../../components/Typography/src';
-import { Link } from '../../../../components/Link/src';
-import Alert from '../../../../components/Alert/src';
-import { Page, PageHeader, PageFooter } from '../../../../components/Page/src';
-import { HeaderLogic, HeaderLogicProps } from '../../../../components/Header/src';
-import Footer from '../../../../components/Footer/src';
-import ResponsiveContent from '../../../../components/ResponsiveContent/src';
-import { AuthenticationCardGroup } from '../../../../components/CardGroup/src/story-template';
 import { headerProps, footerLegalData, footerSocialData, newsletterData, contactData, copyright } from './util';
 
 import './template-story.scss';

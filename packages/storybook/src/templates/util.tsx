@@ -1,6 +1,12 @@
 import React from 'react';
-import { HeaderLogicProps } from '../../../../components/Header/src';
-import { FacebookIcon, InstagramIcon, LinkedInIcon, TwitterIcon, YouTubeIcon } from '../../../../components/Icons/src';
+import {
+  FacebookIcon,
+  InstagramIcon,
+  LinkedInIcon,
+  TwitterIcon,
+  YouTubeIcon,
+  HeaderLogicProps,
+} from '@gemeente-denhaag/components-react';
 
 export const headerProps: HeaderLogicProps = {
   breadcrumbs: {
@@ -89,18 +95,11 @@ export const headerProps: HeaderLogicProps = {
   },
 };
 
-type LinkData = {
-  name: string;
-  link: string;
-  size: number;
-  lastUpdated: Date;
-};
-
-export const linkData: LinkData = {
+export const linkData = {
   name: 'Example',
   link: 'test/example.png',
   size: 2000,
-  lastUpdated: new Date('Thu Aug 31 2023 11:22:11 GMT+0200'),
+  lastUpdated: 'Thu Aug 31 2023 11:22:11 GMT+0200',
 };
 
 export const navigationPathData = [

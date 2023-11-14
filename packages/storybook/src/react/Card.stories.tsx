@@ -1,13 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import {
-  Card,
-  CardProps,
-  SubjectCard,
-  SubjectCardProps,
-  CaseCard,
-  CaseCardProps,
-} from '@gemeente-denhaag/components-react';
+import { Card, SubjectCard, SubjectCardProps, CaseCard, CaseCardProps } from '@gemeente-denhaag/components-react';
 import pkg from '../../../../components/Card/package.json';
 
 export default {
@@ -21,7 +14,7 @@ export default {
   component: Card,
 } as Meta;
 
-const Template: Story<SubjectCardProps> = (args: CardProps) => <SubjectCard {...args} />;
+const Template: Story<SubjectCardProps> = (args: SubjectCardProps) => <SubjectCard {...args} />;
 
 const CaseTemplate: Story<CaseCardProps> = (args: CaseCardProps) => <CaseCard {...args} />;
 

@@ -1,25 +1,43 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import { Heading2, Heading3 } from '../../../../components/Typography/src';
-import { Page, PageHeader, PageFooter } from '../../../../components/Page/src';
-import { HeaderLogic, HeaderLogicProps } from '../../../../components/Header/src';
-import Footer from '../../../../components/Footer/src';
-import ResponsiveContent from '../../../../components/ResponsiveContent/src';
-import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '../../../../components/Sidenav/src';
+import { BadgeCounter, ButtonLink } from '@utrecht/component-library-react';
 import {
+  Action,
   GridIcon,
   UserIcon,
   InboxIcon,
   ParkingIcon,
   ArchiveIcon,
   CircleInformationIcon,
-} from '../../../../components/Icons/src';
-import { Status, StatusProps } from '../../../../components/ProcessSteps/src';
-import { File } from '../../../../components/File/src';
-import ContactTimeline, { ContactTimelineProps } from '../../../../components/ContactTimeline/src';
-import { Action } from '../../../../components/Action/src';
-import { BadgeCounter, ButtonLink } from '@utrecht/component-library-react';
-import { headerProps, footerLegalData, footerSocialData, newsletterData, contactData, copyright } from './util';
+  ContactTimeline,
+  ContactTimelineProps,
+  File,
+  Status,
+  StatusProps,
+  Sidenav,
+  SidenavItem,
+  SidenavLink,
+  SidenavList,
+  ResponsiveContent,
+  Footer,
+  HeaderLogic,
+  HeaderLogicProps,
+  Page,
+  PageHeader,
+  PageFooter,
+  Heading2,
+  Heading3,
+} from '@gemeente-denhaag/components-react';
+import {
+  headerProps,
+  footerLegalData,
+  footerSocialData,
+  newsletterData,
+  contactData,
+  copyright,
+  dateFormatLabels,
+  linkData,
+} from './util';
 
 import './template-story.scss';
 

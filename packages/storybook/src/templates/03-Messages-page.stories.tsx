@@ -1,16 +1,39 @@
 import React from 'react';
-import { Meta, StoryObj } from '@storybook/addon-docs';
-import { Heading2 } from '../../../../components/Typography/src';
-import { Page, PageHeader, PageFooter } from '../../../../components/Page/src';
-import { HeaderLogic, HeaderLogicProps } from '../../../../components/Header/src';
-import Footer from '../../../../components/Footer/src';
-import ResponsiveContent from '../../../../components/ResponsiveContent/src';
-import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '../../../../components/Sidenav/src';
-import { ArchiveIcon, GridIcon, UserIcon, BookIcon, InboxIcon } from '../../../../components/Icons/src';
-import { dateFormatLabels } from './util';
-import { Action } from '../../../../components/Action/src';
-import { Table, TableHead, TableHeader, TableRow } from '../../../../components/Table/src';
-import { headerProps, footerLegalData, footerSocialData, newsletterData, contactData, copyright } from './util';
+import { Meta, StoryObj } from '@storybook/react';
+import {
+  Action,
+  Table,
+  TableHead,
+  TableHeader,
+  TableRow,
+  ArchiveIcon,
+  GridIcon,
+  UserIcon,
+  BookIcon,
+  InboxIcon,
+  Sidenav,
+  SidenavItem,
+  SidenavLink,
+  SidenavList,
+  ResponsiveContent,
+  Footer,
+  HeaderLogic,
+  HeaderLogicProps,
+  Page,
+  PageHeader,
+  PageFooter,
+  Heading2,
+} from '@gemeente-denhaag/components-react';
+
+import {
+  headerProps,
+  footerLegalData,
+  footerSocialData,
+  newsletterData,
+  contactData,
+  copyright,
+  dateFormatLabels,
+} from './util';
 
 import './Messages-page.scss';
 
