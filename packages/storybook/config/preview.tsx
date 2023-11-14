@@ -1,7 +1,7 @@
 import type { Preview } from '@storybook/react';
 import type { StoryContext } from '@storybook/types';
 import clsx from 'clsx';
-// import prettierBabel from 'prettier/parser-babel';
+import * as prettierPluginBabel from 'prettier/plugins/babel';
 import prettier from 'prettier/standalone';
 import React, { ReactElement } from 'react';
 import * as ReactDOMServer from 'react-dom/server';
@@ -87,24 +87,24 @@ const preview: Preview = {
       // Stories without concise code snippets can hide the code at Story level.
       source: {
         state: 'open',
-      },
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      transformSource: (src: string, storyContext: StoryContext<any>) => {
-        // Ensure valid HTML in the Preview source
-        const render =
-          typeof storyContext.component === 'function'
-            ? storyContext.component
-            : typeof storyContext.component?.render === 'function'
-            ? storyContext.component?.render
-            : null;
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        transform: (src: string, storyContext: StoryContext<any>) => {
+          // Ensure valid HTML in the Preview source for HTML/CSS stories
+          const render =
+            typeof storyContext.component === 'function'
+              ? storyContext.component
+              : typeof storyContext.component?.render === 'function'
+              ? storyContext.component?.render
+              : null;
 
-        if (render) {
-          return prettier.format(ReactDOMServer.renderToStaticMarkup(render(storyContext.args)), {
-            parser: 'babel',
-            // plugins: [prettierBabel],
-          });
-        }
-        return src;
+          if (render && storyContext.title.startsWith('CSS')) {
+            return prettier.format(ReactDOMServer.renderToStaticMarkup(render(storyContext.args)), {
+              parser: 'babel',
+              plugins: [prettierPluginBabel],
+            });
+          }
+          return src;
+        },
       },
     },
     status: {
