@@ -25,7 +25,7 @@ const config: StorybookConfig = {
   ],
   staticDirs: ['../src/assets'],
   docs: {
-    autodocs: 'tag',
+    autodocs: true,
   },
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   webpackFinal: async (config: any) => {
