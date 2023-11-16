@@ -86,6 +86,9 @@
         "padding": { "value": "0" },
         "padding-block": { "value": "{denhaag.card.title.padding}" },
         "padding-inline": { "value": "{denhaag.card.title.padding}" }
+      },
+      "mobile": {
+        "width": { "value": "312px" }
       }
     }
   }
