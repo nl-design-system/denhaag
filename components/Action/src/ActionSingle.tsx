@@ -15,7 +15,7 @@ export const ActionSingle = ({
 }: ActionSingleProps) => {
   return (
     <a href={link} className={clsx('denhaag-action denhaag-action--single', className)} {...rest}>
-      <ActionContent>{children} testing</ActionContent>
+      <ActionContent>{children}</ActionContent>
       <ActionDetails dateTime={dateTime} now={now} relativeDate={relativeDate} labels={labels} />
     </a>
   );
