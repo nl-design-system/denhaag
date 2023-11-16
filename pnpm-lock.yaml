@@ -433,7 +433,7 @@ importers:
   components/EventDate: {}
 
   components/File:
-    devDependencies:
+    dependencies:
       '@gemeente-denhaag/icons':
         specifier: workspace:*
         version: link:../Icons
@@ -1095,18 +1095,114 @@ importers:
 
   packages/storybook:
     dependencies:
-      '@gemeente-denhaag/components-css':
+      '@gemeente-denhaag/accordion':
         specifier: workspace:*
-        version: link:../components-css
-      '@gemeente-denhaag/components-react':
+        version: link:../../components/Accordion
+      '@gemeente-denhaag/action':
         specifier: workspace:*
-        version: link:../components-react
+        version: link:../../components/Action
+      '@gemeente-denhaag/alert':
+        specifier: workspace:*
+        version: link:../../components/Alert
+      '@gemeente-denhaag/badge-counter':
+        specifier: workspace:*
+        version: link:../../components/BadgeCounter
+      '@gemeente-denhaag/button':
+        specifier: workspace:*
+        version: link:../../components/Button
+      '@gemeente-denhaag/card':
+        specifier: workspace:*
+        version: link:../../components/Card
+      '@gemeente-denhaag/card-group':
+        specifier: workspace:*
+        version: link:../../components/CardGroup
+      '@gemeente-denhaag/checkbox':
+        specifier: workspace:*
+        version: link:../../components/Checkbox
+      '@gemeente-denhaag/contact-timeline':
+        specifier: workspace:*
+        version: link:../../components/ContactTimeline
+      '@gemeente-denhaag/descriptionlist':
+        specifier: workspace:*
+        version: link:../../components/DescriptionList
       '@gemeente-denhaag/design-tokens-components':
         specifier: workspace:*
         version: link:../../proprietary/Components
+      '@gemeente-denhaag/divider':
+        specifier: workspace:*
+        version: link:../../components/Divider
+      '@gemeente-denhaag/dotindicator':
+        specifier: workspace:*
+        version: link:../../components/DotIndicator
+      '@gemeente-denhaag/file':
+        specifier: workspace:*
+        version: link:../../components/File
+      '@gemeente-denhaag/footer':
+        specifier: workspace:*
+        version: link:../../components/Footer
+      '@gemeente-denhaag/form-field':
+        specifier: workspace:*
+        version: link:../../components/FormField
+      '@gemeente-denhaag/form-progress':
+        specifier: workspace:*
+        version: link:../../components/FormProgress
+      '@gemeente-denhaag/formcontrollabel':
+        specifier: workspace:*
+        version: link:../../components/FormControlLabel
+      '@gemeente-denhaag/formgroup':
+        specifier: workspace:*
+        version: link:../../components/FormGroup
+      '@gemeente-denhaag/header':
+        specifier: workspace:*
+        version: link:../../components/Header
+      '@gemeente-denhaag/iconbutton':
+        specifier: workspace:*
+        version: link:../../components/IconButton
       '@gemeente-denhaag/icons':
         specifier: workspace:*
         version: link:../../components/Icons
+      '@gemeente-denhaag/link':
+        specifier: workspace:*
+        version: link:../../components/Link
+      '@gemeente-denhaag/list':
+        specifier: workspace:*
+        version: link:../../components/List
+      '@gemeente-denhaag/menu':
+        specifier: workspace:*
+        version: link:../../components/Menu
+      '@gemeente-denhaag/page':
+        specifier: workspace:*
+        version: link:../../components/Page
+      '@gemeente-denhaag/process-steps':
+        specifier: workspace:*
+        version: link:../../components/ProcessSteps
+      '@gemeente-denhaag/radio':
+        specifier: workspace:*
+        version: link:../../components/Radio
+      '@gemeente-denhaag/responsive-content':
+        specifier: workspace:*
+        version: link:../../components/ResponsiveContent
+      '@gemeente-denhaag/sheet':
+        specifier: workspace:*
+        version: link:../../components/Sheet
+      '@gemeente-denhaag/sidenav':
+        specifier: workspace:*
+        version: link:../../components/Sidenav
+      '@gemeente-denhaag/stylesprovider':
+        specifier: workspace:*
+        version: link:../../components/StylesProvider
+      '@gemeente-denhaag/tab':
+        specifier: workspace:*
+        version: link:../../components/Tab
+      '@gemeente-denhaag/table':
+        specifier: workspace:*
+        version: link:../../components/Table
+      '@gemeente-denhaag/textfield':
+        specifier: workspace:*
+        version: link:../../components/TextField
+      '@gemeente-denhaag/typography':
+        specifier: workspace:*
+        version: link:../../components/Typography
     devDependencies:
       '@babel/core':
         specifier: 7.22.17

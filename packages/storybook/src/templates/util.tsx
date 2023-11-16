@@ -1,12 +1,6 @@
 import React from 'react';
-import {
-  FacebookIcon,
-  InstagramIcon,
-  LinkedInIcon,
-  TwitterIcon,
-  YouTubeIcon,
-  HeaderLogicProps,
-} from '@gemeente-denhaag/components-react';
+import { FacebookIcon, InstagramIcon, LinkedInIcon, TwitterIcon, YouTubeIcon } from '@gemeente-denhaag/icons';
+import { HeaderLogicProps } from '@gemeente-denhaag/header';
 
 export const headerProps: HeaderLogicProps = {
   breadcrumbs: {

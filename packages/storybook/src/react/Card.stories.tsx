@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Card, SubjectCard, SubjectCardProps, CaseCard, CaseCardProps } from '@gemeente-denhaag/components-react';
+import { Card, SubjectCard, SubjectCardProps, CaseCard, CaseCardProps } from '@gemeente-denhaag/card';
 import pkg from '../../../../components/Card/package.json';
 
 export default {

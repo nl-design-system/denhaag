@@ -26,7 +26,8 @@
   ],
   "scripts": {
     "build": "rollup -c ../../rollup.config.mjs",
-    "clean": "rimraf dist tsconfig.tsbuildinfo"
+    "clean": "rimraf dist tsconfig.tsbuildinfo",
+    "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\""
   },
   "dependencies": {}
 }

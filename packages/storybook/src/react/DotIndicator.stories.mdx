@@ -1,6 +1,7 @@
 import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/blocks";
 
-import { Button, DotIndicator } from "@gemeente-denhaag/components-react";
+import { Button } from "@gemeente-denhaag/button";
+import { DotIndicator } from "@gemeente-denhaag/dotindicator";
 import pkg from "../../../../components/DotIndicator/package.json";
 import readme from "../../../../components/DotIndicator/README.md";
 
@@ -29,7 +30,7 @@ import readme from "../../../../components/DotIndicator/README.md";
       docs: {
         source: {
           code: `
-import { DotIndicator } from "@gemeente-denhaag/components-react";
+import { DotIndicator } from "@gemeente-denhaag/dotindicator";
 const elementWithNotification = (<DotIndicator overlap="rectangle"><Button>Read messages</Button></DotIndicator>);
 // This 👆 transpiles into this 👇 in the DOM
 <div class="denhaag-dot-indicator denhaag-dot-indicator--overlap-rectangle">

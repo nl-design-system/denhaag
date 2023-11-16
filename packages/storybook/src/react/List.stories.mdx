@@ -1,7 +1,8 @@
 import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/blocks";
 import { action } from "@storybook/addon-actions";
 
-import { HouseIcon, TrashIcon, List, ListItem, ListSubheader } from "@gemeente-denhaag/components-react";
+import { HouseIcon, TrashIcon } from "@gemeente-denhaag/icons";
+import { List, ListItem, ListSubheader } from "@gemeente-denhaag/list";
 
 import pkg from "../../../../components/List/package.json";
 import readme from "../../../../components/List/README.md";
@@ -41,7 +42,7 @@ This component can be used with multiple (optional) properties for the ListItem:
       docs: {
         source: {
           code: `
-import { List, ListSubheader, ListItem } from "@gemeente-denhaag/components-react";
+import { List, ListSubheader, ListItem } from "@gemeente-denhaag/list";
 <List subheader={<ListSubheader>Subheader</ListSubheader>}>
   <ListItem primaryText="ListItem" />
   <ListItem primaryText="ListItem" />
@@ -74,7 +75,8 @@ import { List, ListSubheader, ListItem } from "@gemeente-denhaag/components-reac
       docs: {
         source: {
           code: `
-import { List, ListSubheader, ListItem, HouseIcon, TrashIcon } from "@gemeente-denhaag/components-react";
+import { List, ListSubheader, ListItem } from "@gemeente-denhaag/list";
+import { HouseIcon, TrashIcon } from "@gemeente-denhaag/icons";
 <List subheader={<ListSubheader>Subheader</ListSubheader>}>
   <ListItem primaryText="ListItem" />
   <ListItem

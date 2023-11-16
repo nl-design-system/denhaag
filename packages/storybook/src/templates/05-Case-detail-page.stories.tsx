@@ -1,33 +1,24 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import { BadgeCounter, ButtonLink } from '@utrecht/component-library-react';
+import { Action } from '@gemeente-denhaag/action';
+import { Heading2, Heading3 } from '@gemeente-denhaag/typography';
+import { Page, PageHeader, PageFooter } from '@gemeente-denhaag/page';
+import { HeaderLogic, HeaderLogicProps } from '@gemeente-denhaag/header';
+import { Footer } from '@gemeente-denhaag/footer';
+import { ResponsiveContent } from '@gemeente-denhaag/responsive-content';
+import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '@gemeente-denhaag/sidenav';
+import { Status, StatusProps } from '@gemeente-denhaag/process-steps';
+import { ContactTimeline, ContactTimelineProps } from '@gemeente-denhaag/contact-timeline';
 import {
-  Action,
   GridIcon,
   UserIcon,
   InboxIcon,
   ParkingIcon,
   ArchiveIcon,
   CircleInformationIcon,
-  ContactTimeline,
-  ContactTimelineProps,
-  File,
-  Status,
-  StatusProps,
-  Sidenav,
-  SidenavItem,
-  SidenavLink,
-  SidenavList,
-  ResponsiveContent,
-  Footer,
-  HeaderLogic,
-  HeaderLogicProps,
-  Page,
-  PageHeader,
-  PageFooter,
-  Heading2,
-  Heading3,
-} from '@gemeente-denhaag/components-react';
+} from '@gemeente-denhaag/icons';
+import { File } from '@gemeente-denhaag/file';
 import {
   headerProps,
   footerLegalData,

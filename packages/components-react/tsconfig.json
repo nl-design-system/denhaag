@@ -36,6 +36,9 @@
       "path": "../../components/FormControlLabel"
     },
     {
+      "path": "../../components/File"
+    },
+    {
       "path": "../../components/FormField"
     },
     {

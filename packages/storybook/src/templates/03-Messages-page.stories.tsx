@@ -1,29 +1,14 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import {
-  Action,
-  Table,
-  TableHead,
-  TableHeader,
-  TableRow,
-  ArchiveIcon,
-  GridIcon,
-  UserIcon,
-  BookIcon,
-  InboxIcon,
-  Sidenav,
-  SidenavItem,
-  SidenavLink,
-  SidenavList,
-  ResponsiveContent,
-  Footer,
-  HeaderLogic,
-  HeaderLogicProps,
-  Page,
-  PageHeader,
-  PageFooter,
-  Heading2,
-} from '@gemeente-denhaag/components-react';
+import { Action } from '@gemeente-denhaag/action';
+import { Heading2 } from '@gemeente-denhaag/typography';
+import { Page, PageHeader, PageFooter } from '@gemeente-denhaag/page';
+import { HeaderLogic, HeaderLogicProps } from '@gemeente-denhaag/header';
+import { Footer } from '@gemeente-denhaag/footer';
+import { ResponsiveContent } from '@gemeente-denhaag/responsive-content';
+import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '@gemeente-denhaag/sidenav';
+import { GridIcon, UserIcon, InboxIcon, ArchiveIcon, BookIcon } from '@gemeente-denhaag/icons';
+import { Table, TableHead, TableRow, TableHeader } from '@gemeente-denhaag/table';
 
 import {
   headerProps,

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import { File, ContactTimeline, ContactTimelineProps } from '@gemeente-denhaag/components-react';
+import { File } from '@gemeente-denhaag/file';
+import { ContactTimeline, ContactTimelineProps } from '@gemeente-denhaag/contact-timeline';
 
 import readme from '../../../../components/ContactTimeline/README.md';
 

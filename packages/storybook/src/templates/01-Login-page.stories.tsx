@@ -1,19 +1,13 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import {
-  AuthenticationCardGroup,
-  ResponsiveContent,
-  Footer,
-  HeaderLogic,
-  HeaderLogicProps,
-  Page,
-  PageHeader,
-  PageFooter,
-  Alert,
-  Link,
-  Heading2,
-  Paragraph,
-} from '@gemeente-denhaag/components-react';
+import { Heading2, Paragraph } from '@gemeente-denhaag/typography';
+import { Page, PageHeader, PageFooter } from '@gemeente-denhaag/page';
+import { HeaderLogic, HeaderLogicProps } from '@gemeente-denhaag/header';
+import { Footer } from '@gemeente-denhaag/footer';
+import { ResponsiveContent } from '@gemeente-denhaag/responsive-content';
+import { AuthenticationCardGroup } from '@gemeente-denhaag/card-group';
+import { Link } from '@gemeente-denhaag/link';
+import { Alert } from '@gemeente-denhaag/alert';
 
 import { headerProps, footerLegalData, footerSocialData, newsletterData, contactData, copyright } from './util';
 

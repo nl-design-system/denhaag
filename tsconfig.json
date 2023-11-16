@@ -32,6 +32,9 @@
       "path": "components/Divider"
     },
     {
+      "path": "components/File"
+    },
+    {
       "path": "components/FormControlLabel"
     },
     {
