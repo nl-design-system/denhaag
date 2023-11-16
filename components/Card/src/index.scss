@@ -1,3 +1,9 @@
+.denhaag-card {
+  @media (width <= 1279px) {
+    --denhaag-card-width: var(--denhaag-card-mobile-width);
+  }
+}
+
 .denhaag-card--focus,
 .denhaag-card:focus-within {
   outline: var(--denhaag-focus-border);
