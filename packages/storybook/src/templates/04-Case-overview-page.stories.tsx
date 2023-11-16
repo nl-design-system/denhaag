@@ -17,6 +17,7 @@ import {
 } from '@gemeente-denhaag/icons';
 import { Tabs } from '@gemeente-denhaag/tab';
 import { CaseCard } from '@gemeente-denhaag/card';
+import '@gemeente-denhaag/card-group';
 import { headerProps, footerLegalData, footerSocialData, newsletterData, contactData, copyright } from './util';
 
 import './template-story.scss';
