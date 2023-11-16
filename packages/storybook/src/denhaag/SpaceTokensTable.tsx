@@ -79,7 +79,6 @@ export const SpaceTokensTable = ({ tokens, orientation }: SpaceTokensTableProps)
     </thead>
     <tbody>
       {tokens.map(({ comment, name, path, value }) => {
-        console.log(path);
         return (
           <tr key={name}>
             <td>{comment}</td>
