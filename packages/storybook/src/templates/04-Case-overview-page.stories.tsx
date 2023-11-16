@@ -43,8 +43,24 @@ const zakenHeaderProps: HeaderLogicProps = {
 
 const tabsProps = {
   tabData: [
-    { label: 'Lopende Zaken', panelContent: '' },
-    { label: 'Afgeronde zaken', panelContent: '' },
+    {
+      label: 'Lopende Zaken',
+      panelContent: (
+        <section className="denhaag-card-group">
+          <CaseCard date={new Date('2020-01-21T00:00:00.000Z')} title="Aanvraag subsidie geluidsisolatie" />
+          <CaseCard date={new Date('2020-01-21T00:00:00.000Z')} title="Aanvraag Ooievaarspas" />
+        </section>
+      ),
+    },
+    {
+      label: 'Afgeronde zaken',
+      panelContent: (
+        <section className="denhaag-card-group">
+          <CaseCard active={false} date={new Date('2019-01-21T00:00:00.000Z')} title="Aanvraag Parkeervergunning" />
+          <CaseCard active={false} date={new Date('2019-01-21T00:00:00.000Z')} title="Aanvraag Omgevingsvergunning" />
+        </section>
+      ),
+    },
   ],
 };
 
@@ -111,10 +127,6 @@ export const ZaakOverzicht: StoryObj<typeof meta> = {
         <main className="denhaag-page-content__main">
           <Heading2>Mijn lopende zaken</Heading2>
           <Tabs {...tabsProps}></Tabs>
-          <section className="denhaag-card-group">
-            <CaseCard date={new Date('2020-01-21T00:00:00.000Z')} title="Aanvraag subsidie geluidsisolatie" />
-            <CaseCard date={new Date('2020-01-21T00:00:00.000Z')} title="Aanvraag Ooievaarspas" />
-          </section>
         </main>
       </ResponsiveContent>
       <PageFooter>
