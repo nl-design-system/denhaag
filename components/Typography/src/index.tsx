@@ -1,3 +1,4 @@
+import './index.scss';
 export * from './Heading1';
 export * from './Heading2';
 export * from './Heading3';

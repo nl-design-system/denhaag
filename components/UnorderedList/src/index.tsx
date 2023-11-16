@@ -1,1 +1,1 @@
-// empty
+import './index.scss';
