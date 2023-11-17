@@ -5,13 +5,13 @@ import { Page, PageHeader, PageFooter } from '@gemeente-denhaag/page';
 import { HeaderLogic, HeaderLogicProps } from '@gemeente-denhaag/header';
 import { Footer } from '@gemeente-denhaag/footer';
 import { ResponsiveContent } from '@gemeente-denhaag/responsive-content';
-import { AuthenticationCardGroup } from '@gemeente-denhaag/card-group';
 import { Link } from '@gemeente-denhaag/link';
 import { Alert } from '@gemeente-denhaag/alert';
 
 import { headerProps, footerLegalData, footerSocialData, newsletterData, contactData, copyright } from './util';
 
 import './template-story.scss';
+import { AuthenticationCardGroup } from '../css/CardGroupUtils';
 
 const meta = {
   title: 'Templates/Login',

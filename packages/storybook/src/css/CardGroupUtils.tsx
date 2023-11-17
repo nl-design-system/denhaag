@@ -1,9 +1,15 @@
 import React from 'react';
+import '@gemeente-denhaag/button';
+import '@gemeente-denhaag/button-group';
+import '@gemeente-denhaag/card-authentication';
+import '@gemeente-denhaag/card-group';
+import '@gemeente-denhaag/icons';
+import '@gemeente-denhaag/image';
+import '@gemeente-denhaag/link';
+import '@gemeente-denhaag/typography';
 import clsx from 'clsx';
-import './index.scss';
-import '../../CardAuthentication/src/index.scss';
 
-// TODO Get from `CardAuthentication/src/story-template.jsx`
+// TODO: create real generic AuthenticationCard and AuthenticationCardGroup components, and move them to the right packages.
 
 type AuthProvider = '' | 'DigiD' | 'eHerkenning' | 'eIDAS';
 
@@ -115,7 +121,7 @@ export const AuthenticationCard = ({ authProvider = '', portrait = false }: Auth
   );
 };
 
-interface AuthenticationCardGroupProps {
+export interface AuthenticationCardGroupProps {
   cards: AuthProvider[];
   rows?: boolean;
   responsive?: boolean;

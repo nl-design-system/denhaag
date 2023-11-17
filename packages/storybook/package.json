@@ -36,6 +36,7 @@
     "@gemeente-denhaag/button": "workspace:*",
     "@gemeente-denhaag/button-group": "workspace:*",
     "@gemeente-denhaag/card": "workspace:*",
+    "@gemeente-denhaag/card-authentication": "workspace:*",
     "@gemeente-denhaag/card-group": "workspace:*",
     "@gemeente-denhaag/card-news": "workspace:*",
     "@gemeente-denhaag/checkbox": "workspace:*",

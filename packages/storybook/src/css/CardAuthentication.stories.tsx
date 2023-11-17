@@ -1,21 +1,13 @@
-import React, { PropsWithChildren } from 'react';
+import React from 'react';
+import { Meta, StoryObj } from '@storybook/react';
+import '@gemeente-denhaag/card';
 import clsx from 'clsx';
+import readme from '../../../../components/CardAuthentication/README.md';
+import { PropsWithChildren } from 'react';
 
-export const argTypes = {
-  portrait: {
-    type: 'boolean',
-  },
-  headingLevel: {
-    type: 'number',
-  },
-  authProvider: {
-    control: { type: 'select' },
-    description: 'Login met',
-    options: ['', 'DigiD', 'eHerkenning', 'eIDAS'],
-  },
-};
+// TODO: create real generic AuthenticationCard and AuthenticationCardGroup components, and move them to the right packages.
 
-export const exampleArgs = {
+const exampleArgs = {
   headingLevel: 3,
   authProvider: '',
 };
@@ -25,7 +17,7 @@ interface VariableHeadingProps {
   className?: string;
 }
 
-export const VariableHeading = ({ level, className, children }: PropsWithChildren<VariableHeadingProps>) => {
+const VariableHeading = ({ level, className, children }: PropsWithChildren<VariableHeadingProps>) => {
   switch (level) {
     case 1:
       return <h1 className={clsx('utrecht-heading-1', className)}>{children}</h1>;
@@ -52,12 +44,12 @@ interface AuthenticationCardProps {
   portrait?: boolean;
 }
 
-export const defaultArgs: AuthenticationCardProps = {
+const defaultArgs: AuthenticationCardProps = {
   authProvider: '',
   portrait: false,
 };
 
-export const AuthenticationCard = ({
+const AuthenticationCard = ({
   headingLevel,
   authProvider = defaultArgs.authProvider,
   portrait = defaultArgs.portrait,
@@ -162,4 +154,51 @@ export const AuthenticationCard = ({
       )}
     </section>
   );
+};
+
+const meta = {
+  title: 'CSS/Cards/Authentication Card',
+  id: 'css-authentication-card',
+  component: AuthenticationCard,
+  args: exampleArgs,
+  tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: readme,
+      },
+    },
+  },
+} as Meta<typeof AuthenticationCard>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+export const Default: Story = {};
+
+export const DigiD: Story = {
+  args: { ...Default.args, authProvider: 'DigiD' },
+  name: 'DigiD',
+};
+
+export const eHerkenning: Story = {
+  args: { ...Default.args, authProvider: 'eHerkenning' },
+  name: 'eHerkenning',
+};
+
+export const eIDAS: Story = {
+  args: { ...Default.args, authProvider: 'eIDAS' },
+  name: 'eIDAS',
+};
+
+export const Portrait: Story = {
+  args: { ...Default.args, portrait: true },
+};
+
+export const PortraitWithLogo: Story = {
+  args: { ...Default.args, authProvider: 'DigiD', portrait: true },
+};
+
+export const AlternativeHeadinglevel: Story = {
+  args: { ...Default.args, headingLevel: 2 },
 };
