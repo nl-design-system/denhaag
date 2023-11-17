@@ -4,10 +4,10 @@
       "background-color": {},
       "border-color": { "value": "{denhaag.color.grey.4}" },
       "border-width": {},
-      "size": { "value": "24px" },
+      "size": { "value": "22px" },
       "margin-block-start": {},
       "icon": {
-        "size": { "value": "0%" }
+        "size": { "value": "35%" }
       },
       "active": {
         "border-color": {},
@@ -17,8 +17,8 @@
       },
       "checked": {
         "border-color": { "value": "{denhaag.color.green.3}" },
-        "border-width": { "value": "9.6px" },
-        "background-color": { "value": "{denhaag.color.white}" },
+        "border-width": { "value": "1px" },
+        "background-color": { "value": "{denhaag.color.green.3}" },
         "color": {},
         "active": {
           "border-color": {},
@@ -59,9 +59,9 @@
       },
       "invalid": {
         "border-color": { "value": "{denhaag.color.red.3}" },
-        "border-width": {},
-        "background-color": { "value": "{denhaag.color.red.3}" },
-        "color": { "value": "{denhaag.color.red.3}" }
+        "border-width": { "value": "1px" },
+        "background-color": {},
+        "color": {}
       }
     }
   }
