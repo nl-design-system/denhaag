@@ -1,6 +1,9 @@
 import React from 'react';
 import { ButtonLink } from '@utrecht/component-library-react';
 import ResponsiveContent from '@gemeente-denhaag/responsive-content';
+import '@gemeente-denhaag/list';
+import '@gemeente-denhaag/link';
+import '@gemeente-denhaag/link-group';
 import clsx from 'clsx';
 import './index.scss';
 
