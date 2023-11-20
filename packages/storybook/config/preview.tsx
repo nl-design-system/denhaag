@@ -38,6 +38,7 @@ const preview: Preview = {
   parameters: {
     // Make the "Docs" tab the default, instead of the "Canvas" tab
     viewMode: 'docs',
+    chromatic: { viewports: [1280] },
 
     previewTabs: {
       // Move the "Docs" tab to the front
