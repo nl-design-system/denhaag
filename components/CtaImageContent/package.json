@@ -30,6 +30,8 @@
     "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\""
   },
   "dependencies": {
-    "@gemeente-denhaag/button": "workspace:*"
+    "@gemeente-denhaag/button": "workspace:*",
+    "@gemeente-denhaag/icons": "workspace:*",
+    "@gemeente-denhaag/typography": "workspace:*"
   }
 }
