@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import '@gemeente-denhaag/card';
 import clsx from 'clsx';
+import '@gemeente-denhaag/card-authentication';
 import readme from '../../../../components/CardAuthentication/README.md';
 import { PropsWithChildren } from 'react';
 
