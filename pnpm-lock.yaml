@@ -405,6 +405,12 @@ importers:
       '@gemeente-denhaag/button':
         specifier: workspace:*
         version: link:../Button
+      '@gemeente-denhaag/icons':
+        specifier: workspace:*
+        version: link:../Icons
+      '@gemeente-denhaag/typography':
+        specifier: workspace:*
+        version: link:../Typography
 
   components/CtaLink:
     devDependencies:
