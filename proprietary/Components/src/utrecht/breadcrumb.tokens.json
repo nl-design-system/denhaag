@@ -1,14 +1,10 @@
 {
   "utrecht": {
-    "breadcrumb": {
-      "block-size": {},
+    "breadcrumb-nav": {
+      "min-block-size": {},
       "font-family": {},
       "font-size": { "value": "{denhaag.typography.scale.base.font-size}" },
       "text-transform": {},
-      "divider": {
-        "content": { "value": "›" },
-        "inline-size": { "value": "24px" }
-      },
       "item": {
         "padding-block-start": {},
         "padding-block-end": {},
@@ -16,11 +12,36 @@
         "padding-inline-start": { "value": "14px" }
       },
       "link": {
-        "background-color": {},
         "color": { "value": "{denhaag.color.blue.4}" },
         "focus": {
           "background-color": {},
-          "color": { "value": "{denhaag.color.blue.3}" }
+          "color": { "value": "{denhaag.color.blue.3}" },
+          "text-decoration": {}
+        },
+        "hover": {
+          "color": {},
+          "text-decoration": {}
+        },
+        "current": {
+          "font-weight": {}
+        },
+        "disabled": {
+          "color": {}
+        }
+      },
+      "separator": {
+        "color": {},
+        "inline-size": { "value": "24px" },
+        "icon": {
+          "size": {}
+        }
+      },
+      "arrows": {
+        "link": {
+          "background-color": {},
+          "focus": {
+            "background-color": {}
+          }
         }
       }
     }
