@@ -1,6 +1,7 @@
 import { Canvas, Description, Meta, Story } from "@storybook/blocks";
 import "@gemeente-denhaag/button";
 import "@gemeente-denhaag/button-group";
+import "@gemeente-denhaag/icons";
 import pkg from "../../../../components/Button/package.json";
 import readme from "../../../../components/Button/README.md";
 
@@ -52,7 +53,7 @@ import readme from "../../../../components/Button/README.md";
               <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
             </svg>
           </span>
-          Button
+          <span class="denhaag-button__label">Button</span>
         </button>
         <button class="denhaag-button denhaag-button--secondary-action denhaag-button--start-icon">
           <span class="denhaag-button__icon">
@@ -68,7 +69,7 @@ import readme from "../../../../components/Button/README.md";
               <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
             </svg>
           </span>
-          Button
+          <span class="denhaag-button__label">Button</span>
         </button>
       </div>
     )}
@@ -81,7 +82,7 @@ import readme from "../../../../components/Button/README.md";
   <Story name="Default - icon right">
     <div class="denhaag-button-group">
       <button class="denhaag-button denhaag-button--end-icon">
-        Button
+        <span class="denhaag-button__label">Button</span>
         <span class="denhaag-button__icon">
           <svg
             width="1em"
@@ -97,7 +98,7 @@ import readme from "../../../../components/Button/README.md";
         </span>
       </button>
       <button class="denhaag-button denhaag-button--secondary-action denhaag-button--end-icon">
-        Button
+        <span class="denhaag-button__label">Button</span>
         <span class="denhaag-button__icon">
           <svg
             width="1em"
@@ -141,7 +142,7 @@ import readme from "../../../../components/Button/README.md";
                 <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
               </svg>
             </span>
-            Button
+            <span class="denhaag-button__label">Button</span>
           </button>
           <button class="denhaag-button denhaag-button--secondary-action denhaag-button--start-icon denhaag-button--hover">
             <span class="denhaag-button__icon">
@@ -157,12 +158,12 @@ import readme from "../../../../components/Button/README.md";
                 <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
               </svg>
             </span>
-            Button
+            <span class="denhaag-button__label">Button</span>
           </button>
         </div>
         <div class="denhaag-button-group">
           <button class="denhaag-button denhaag-button--end-icon denhaag-button--hover">
-            Button
+            <span class="denhaag-button__label">Button</span>
             <span class="denhaag-button__icon">
               <svg
                 width="1em"
@@ -178,7 +179,7 @@ import readme from "../../../../components/Button/README.md";
             </span>
           </button>
           <button class="denhaag-button denhaag-button--secondary-action denhaag-button--end-icon denhaag-button--hover">
-            Button
+            <span class="denhaag-button__label">Button</span>
             <span class="denhaag-button__icon">
               <svg
                 width="1em"
@@ -228,7 +229,7 @@ import readme from "../../../../components/Button/README.md";
                 <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
               </svg>
             </span>
-            Button
+            <span class="denhaag-button__label">Button</span>
           </button>
           <button
             disabled
@@ -247,12 +248,12 @@ import readme from "../../../../components/Button/README.md";
                 <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
               </svg>
             </span>
-            Button
+            <span class="denhaag-button__label">Button</span>
           </button>
         </div>
         <div class="denhaag-button-group">
           <button disabled class="denhaag-button denhaag-button--end-icon denhaag-button--disabled">
-            Button
+            <span class="denhaag-button__label">Button</span>
             <span class="denhaag-button__icon">
               <svg
                 width="1em"
@@ -271,7 +272,7 @@ import readme from "../../../../components/Button/README.md";
             disabled
             class="denhaag-button denhaag-button--secondary-action denhaag-button--end-icon denhaag-button--disabled"
           >
-            Button
+            <span class="denhaag-button__label">Button</span>
             <span class="denhaag-button__icon">
               <svg
                 width="1em"
@@ -317,7 +318,7 @@ import readme from "../../../../components/Button/README.md";
                 <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
               </svg>
             </span>
-            Button
+            <span class="denhaag-button__label">Button</span>
           </button>
           <button class="denhaag-button denhaag-button--secondary-action denhaag-button--start-icon denhaag-button--focus">
             <span class="denhaag-button__icon">
@@ -333,12 +334,12 @@ import readme from "../../../../components/Button/README.md";
                 <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
               </svg>
             </span>
-            Button
+            <span class="denhaag-button__label">Button</span>
           </button>
         </div>
         <div class="denhaag-button-group">
           <button class="denhaag-button denhaag-button--end-icon denhaag-button--focus">
-            Button
+            <span class="denhaag-button__label">Button</span>
             <span class="denhaag-button__icon">
               <svg
                 width="1em"
@@ -354,7 +355,7 @@ import readme from "../../../../components/Button/README.md";
             </span>
           </button>
           <button class="denhaag-button denhaag-button--secondary-action denhaag-button--end-icon denhaag-button--focus">
-            Button
+            <span class="denhaag-button__label">Button</span>
             <span class="denhaag-button__icon">
               <svg
                 width="1em"
@@ -408,7 +409,7 @@ import readme from "../../../../components/Button/README.md";
               <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
             </svg>
           </span>
-          Button
+          <span class="denhaag-button__label">Button</span>
         </button>
         <button class="denhaag-button denhaag-button--large denhaag-button--secondary-action denhaag-button--start-icon">
           <span class="denhaag-button__icon">
@@ -424,7 +425,7 @@ import readme from "../../../../components/Button/README.md";
               <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
             </svg>
           </span>
-          Button
+          <span class="denhaag-button__label">Button</span>
         </button>
       </div>
     )}
@@ -438,7 +439,7 @@ import readme from "../../../../components/Button/README.md";
     {() => (
       <div class="denhaag-button-group">
         <button class="denhaag-button denhaag-button--large denhaag-button--end-icon">
-          Button
+          <span class="denhaag-button__label">Button</span>
           <span class="denhaag-button__icon">
             <svg
               width="1em"
@@ -454,7 +455,7 @@ import readme from "../../../../components/Button/README.md";
           </span>
         </button>
         <button class="denhaag-button denhaag-button--large denhaag-button--secondary-action denhaag-button--end-icon">
-          Button
+          <span class="denhaag-button__label">Button</span>
           <span class="denhaag-button__icon">
             <svg
               width="1em"
@@ -501,7 +502,7 @@ import readme from "../../../../components/Button/README.md";
                 <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
               </svg>
             </span>
-            Button
+            <span class="denhaag-button__label">Button</span>
           </button>
           <button class="denhaag-button denhaag-button--large denhaag-button--secondary-action denhaag-button--start-icon denhaag-button--hover">
             <span class="denhaag-button__icon">
@@ -517,12 +518,12 @@ import readme from "../../../../components/Button/README.md";
                 <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
               </svg>
             </span>
-            Button
+            <span class="denhaag-button__label">Button</span>
           </button>
         </div>
         <div class="denhaag-button-group">
           <button class="denhaag-button denhaag-button--large denhaag-button--end-icon denhaag-button--hover">
-            Button
+            <span class="denhaag-button__label">Button</span>
             <span class="denhaag-button__icon">
               <svg
                 width="1em"
@@ -538,7 +539,7 @@ import readme from "../../../../components/Button/README.md";
             </span>
           </button>
           <button class="denhaag-button denhaag-button--large denhaag-button--secondary-action denhaag-button--end-icon denhaag-button--hover">
-            Button
+            <span class="denhaag-button__label">Button</span>
             <span class="denhaag-button__icon">
               <svg
                 width="1em"
@@ -594,7 +595,7 @@ import readme from "../../../../components/Button/README.md";
                 <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
               </svg>
             </span>
-            Button
+            <span class="denhaag-button__label">Button</span>
           </button>
           <button
             disabled
@@ -613,7 +614,7 @@ import readme from "../../../../components/Button/README.md";
                 <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
               </svg>
             </span>
-            Button
+            <span class="denhaag-button__label">Button</span>
           </button>
         </div>
         <div class="denhaag-button-group">
@@ -621,7 +622,7 @@ import readme from "../../../../components/Button/README.md";
             disabled
             class="denhaag-button denhaag-button--large denhaag-button--end-icon denhaag-button--disabled"
           >
-            Button
+            <span class="denhaag-button__label">Button</span>
             <span class="denhaag-button__icon">
               <svg
                 width="1em"
@@ -640,7 +641,7 @@ import readme from "../../../../components/Button/README.md";
             disabled
             class="denhaag-button denhaag-button--large denhaag-button--secondary-action denhaag-button--end-icon denhaag-button--disabled"
           >
-            Button
+            <span class="denhaag-button__label">Button</span>
             <span class="denhaag-button__icon">
               <svg
                 width="1em"
@@ -688,7 +689,7 @@ import readme from "../../../../components/Button/README.md";
                 <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
               </svg>
             </span>
-            Button
+            <span class="denhaag-button__label">Button</span>
           </button>
           <button class="denhaag-button denhaag-button--large denhaag-button--secondary-action denhaag-button--start-icon denhaag-button--focus">
             <span class="denhaag-button__icon">
@@ -704,12 +705,12 @@ import readme from "../../../../components/Button/README.md";
                 <path d="M11.707 18.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 111.414 1.414L7.414 11H19a1 1 0 110 2H7.414l4.293 4.293a1 1 0 010 1.414z"></path>
               </svg>
             </span>
-            Button
+            <span class="denhaag-button__label">Button</span>
           </button>
         </div>
         <div class="denhaag-button-group">
           <button class="denhaag-button denhaag-button--large denhaag-button--end-icon denhaag-button--focus">
-            Button
+            <span class="denhaag-button__label">Button</span>
             <span class="denhaag-button__icon">
               <svg
                 width="1em"
@@ -725,7 +726,7 @@ import readme from "../../../../components/Button/README.md";
             </span>
           </button>
           <button class="denhaag-button denhaag-button--large denhaag-button--secondary-action denhaag-button--end-icon denhaag-button--focus">
-            Button
+            <span class="denhaag-button__label">Button</span>
             <span class="denhaag-button__icon">
               <svg
                 width="1em"
