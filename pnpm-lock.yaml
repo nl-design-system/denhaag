@@ -262,7 +262,14 @@ importers:
 
   components/AnchorCollapse: {}
 
-  components/AnchorNavigation: {}
+  components/AnchorNavigation:
+    dependencies:
+      '@gemeente-denhaag/button':
+        specifier: workspace:*
+        version: link:../Button
+      '@gemeente-denhaag/icons':
+        specifier: workspace:*
+        version: link:../Icons
 
   components/ArticleMeta: {}
 
