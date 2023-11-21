@@ -472,6 +472,12 @@ importers:
 
   components/Footer:
     dependencies:
+      '@gemeente-denhaag/button-group':
+        specifier: workspace:*
+        version: link:../ButtonGroup
+      '@gemeente-denhaag/icons':
+        specifier: workspace:*
+        version: link:../Icons
       '@gemeente-denhaag/link':
         specifier: workspace:*
         version: link:../Link
