@@ -20,7 +20,8 @@
   ],
   "scripts": {
     "build": "rollup -c ../../rollup.config.mjs",
-    "clean": "rimraf dist tsconfig.tsbuildinfo"
+    "clean": "rimraf dist tsconfig.tsbuildinfo",
+    "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\""
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,9 @@
     "directory": "components/CtaDownload"
   },
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
+  "dependencies": {
+    "@gemeente-denhaag/ctalink": "workspace:*"
+  },
   "devDependencies": {
     "@gemeente-denhaag/icons": "workspace:*"
   },

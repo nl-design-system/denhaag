@@ -1,8 +1,9 @@
+import './index.scss';
 import Status from './Status';
 
 /*
  As some other Design Systems already depend on ProcessSteps
- Let's export Status as default and ProcessSteps 
+ Let's export Status as default and ProcessSteps
  And mark it as deprecated
  */
 

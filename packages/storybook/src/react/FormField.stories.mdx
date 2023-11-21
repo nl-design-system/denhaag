@@ -1,0 +1,164 @@
+import { Canvas, Description, Meta, Story } from "@storybook/blocks";
+import pkg from "../../../../components/FormField/package.json";
+import readme from "../../../../components/FormField/README.md";
+import {
+  FormField,
+  FormFieldLabel,
+  FormFieldInput,
+  FormFieldDescription,
+  FormFieldGroup,
+  FormFieldGroupLabel,
+} from "@gemeente-denhaag/form-field";
+import { TextField } from "@gemeente-denhaag/textfield";
+import { FormControlLabel } from "@gemeente-denhaag/formcontrollabel";
+import { Checkbox } from "@gemeente-denhaag/checkbox";
+import { CalendarIcon } from "@gemeente-denhaag/icons";
+import { action } from "@storybook/addon-actions";
+
+<Meta
+  title="React/Input/Form Field"
+  component={FormField}
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Stories
+
+### Default
+
+<Canvas>
+  <Story name="Default" args={{}}>
+    {() => (
+      <FormField>
+        <FormFieldLabel htmlFor="textfield-1">Label</FormFieldLabel>
+        <FormFieldInput>
+          <TextField
+            id={"textfield-1"}
+            aria-describedby={"description-1"}
+            placeholder={"Placeholder"}
+            icon={<CalendarIcon />}
+          />
+        </FormFieldInput>
+        <FormFieldDescription id="description-1">Description</FormFieldDescription>
+      </FormField>
+    )}
+  </Story>
+</Canvas>
+
+### Error
+
+<Canvas>
+  <Story name="Error" args={{}}>
+    {() => (
+      <FormField error={true}>
+        <FormFieldLabel htmlFor="textfield-1">Label</FormFieldLabel>
+        <FormFieldInput>
+          <TextField
+            id={"textfield-1"}
+            aria-describedby={"description-1"}
+            placeholder={"Placeholder"}
+            icon={<CalendarIcon />}
+            invalid={true}
+          />
+        </FormFieldInput>
+        <FormFieldDescription id="description-1">Description</FormFieldDescription>
+      </FormField>
+    )}
+  </Story>
+</Canvas>
+
+### FormFieldGroup
+
+<Canvas>
+  <Story name="FormFieldGroup" args={{}}>
+    {() => (
+      <FormFieldGroup aria-describedby={"description-1"}>
+        <FormFieldGroupLabel>Label</FormFieldGroupLabel>
+        <FormFieldInput>
+          <FormControlLabel
+            label="Checkbox One"
+            input={
+              <Checkbox id={"checkbox-1"} onChange={action("Checkbox One action")} name={"checkbox"} value={"one"} />
+            }
+          />
+          <FormControlLabel
+            label="Checkbox Two"
+            input={
+              <Checkbox id={"checkbox-2"} onChange={action("Checkbox Two action")} name={"checkbox"} value={"two"} />
+            }
+          />
+          <FormControlLabel
+            label="Checkbox Three"
+            input={
+              <Checkbox
+                id={"checkbox-3"}
+                onChange={action("Checkbox Three action")}
+                name={"checkbox"}
+                value={"three"}
+              />
+            }
+          />
+        </FormFieldInput>
+        <FormFieldDescription id="description-1">Description</FormFieldDescription>
+      </FormFieldGroup>
+    )}
+  </Story>
+</Canvas>
+
+### FormFieldGroup Error
+
+<Canvas>
+  <Story name="FormFieldGroup Error" args={{}}>
+    {() => (
+      <FormFieldGroup error={true} aria-describedby={"description-1"}>
+        <FormFieldGroupLabel>Label</FormFieldGroupLabel>
+        <FormFieldInput>
+          <FormControlLabel
+            label="Checkbox One"
+            input={
+              <Checkbox
+                id={"checkbox-1"}
+                error={true}
+                onChange={action("Checkbox One action")}
+                name={"checkbox"}
+                value={"one"}
+              />
+            }
+          />
+          <FormControlLabel
+            label="Checkbox Two"
+            input={
+              <Checkbox
+                id={"checkbox-2"}
+                error={true}
+                onChange={action("Checkbox Two action")}
+                name={"checkbox"}
+                value={"two"}
+              />
+            }
+          />
+          <FormControlLabel
+            label="Checkbox Three"
+            input={
+              <Checkbox
+                id={"checkbox-3"}
+                error={true}
+                onChange={action("Checkbox Three action")}
+                name={"checkbox"}
+                value={"three"}
+              />
+            }
+          />
+        </FormFieldInput>
+        <FormFieldDescription id="description-1">Description</FormFieldDescription>
+      </FormFieldGroup>
+    )}
+  </Story>
+</Canvas>

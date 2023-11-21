@@ -1,0 +1,192 @@
+import { Canvas, Description, Meta, Story } from "@storybook/blocks";
+
+import { action } from "@storybook/addon-actions";
+
+import { Checkbox } from "@gemeente-denhaag/checkbox";
+import { FormControlLabel } from "@gemeente-denhaag/formcontrollabel";
+import {
+  FormFieldInput,
+  FormFieldDescription,
+  FormFieldGroup,
+  FormFieldGroupLabel,
+} from "@gemeente-denhaag/form-field";
+
+import pkg from "../../../../components/Checkbox/package.json";
+import readme from "../../../../components/Checkbox/README.md";
+
+<Meta
+  title="React/Input/Checkbox"
+  component={Checkbox}
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Stories
+
+### Default
+
+<Canvas>
+  <Story name="Default" args={{}}>
+    {(args) => (
+      <FormControlLabel
+        label="Checkbox"
+        input={
+          <Checkbox
+            id={"checkbox-1"}
+            onChange={action("Checkbox action")}
+            name={"checkbox"}
+            value={"check"}
+            {...args}
+          />
+        }
+      />
+    )}
+  </Story>
+</Canvas>
+
+## Without label
+
+<Canvas>
+  <Story name="Without label" args={{}}>
+    {(args) => <Checkbox onChange={action("Checkbox action")} value={"check"} name={"checkbox"} {...args} />}
+  </Story>
+</Canvas>
+
+### Disabled
+
+<Canvas>
+  <Story name="Disabled" args={{ disabled: true }}>
+    {(args) => (
+      <FormControlLabel
+        label="Checkbox"
+        disabled="true"
+        input={
+          <Checkbox
+            id={"checkbox-1"}
+            onChange={action("Checkbox action")}
+            name={"checkbox"}
+            value={"check"}
+            {...args}
+          />
+        }
+      />
+    )}
+  </Story>
+</Canvas>
+
+### With error
+
+<Canvas>
+  <Story name="Error" args={{ error: true }}>
+    {(args) => (
+      <FormControlLabel
+        label="Checkbox"
+        input={
+          <Checkbox
+            id={"checkbox-1"}
+            onChange={action("Checkbox action")}
+            name={"checkbox"}
+            value={"check"}
+            {...args}
+          />
+        }
+      />
+    )}
+  </Story>
+</Canvas>
+
+### Group
+
+<Canvas>
+  <Story name="Group" args={{}}>
+    {() => (
+      <FormFieldGroup aria-describedby={"description-1"}>
+        <FormFieldGroupLabel>Label</FormFieldGroupLabel>
+        <FormFieldInput>
+          <FormControlLabel
+            label="Checkbox One"
+            input={
+              <Checkbox id={"checkbox-1"} onChange={action("Checkbox One action")} name={"checkbox"} value={"one"} />
+            }
+          />
+          <FormControlLabel
+            label="Checkbox Two"
+            input={
+              <Checkbox id={"checkbox-2"} onChange={action("Checkbox Two action")} name={"checkbox"} value={"two"} />
+            }
+          />
+          <FormControlLabel
+            label="Checkbox Three"
+            input={
+              <Checkbox
+                id={"checkbox-3"}
+                onChange={action("Checkbox Three action")}
+                name={"checkbox"}
+                value={"three"}
+              />
+            }
+          />
+        </FormFieldInput>
+        <FormFieldDescription id="description-1">Description</FormFieldDescription>
+      </FormFieldGroup>
+    )}
+  </Story>
+</Canvas>
+
+### Group with error
+
+<Canvas>
+  <Story name="Group with error" args={{}}>
+    {() => (
+      <FormFieldGroup error={true} aria-describedby={"description-1"}>
+        <FormFieldGroupLabel>Label</FormFieldGroupLabel>
+        <FormFieldInput>
+          <FormControlLabel
+            label="Checkbox One"
+            input={
+              <Checkbox
+                id={"checkbox-1"}
+                error={true}
+                onChange={action("Checkbox One action")}
+                name={"checkbox"}
+                value={"one"}
+              />
+            }
+          />
+          <FormControlLabel
+            label="Checkbox Two"
+            input={
+              <Checkbox
+                id={"checkbox-2"}
+                error={true}
+                onChange={action("Checkbox Two action")}
+                name={"checkbox"}
+                value={"two"}
+              />
+            }
+          />
+          <FormControlLabel
+            label="Checkbox Three"
+            input={
+              <Checkbox
+                id={"checkbox-3"}
+                error={true}
+                onChange={action("Checkbox Three action")}
+                name={"checkbox"}
+                value={"three"}
+              />
+            }
+          />
+        </FormFieldInput>
+        <FormFieldDescription id="description-1">Description</FormFieldDescription>
+      </FormFieldGroup>
+    )}
+  </Story>
+</Canvas>

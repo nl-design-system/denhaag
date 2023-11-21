@@ -1,0 +1,125 @@
+import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/blocks";
+import { Button } from "@gemeente-denhaag/button";
+import { ArrowLeftIcon, ArrowRightIcon } from "@gemeente-denhaag/icons";
+
+import pkg from "../../../../components/Button/package.json";
+import readme from "../../../../components/Button/README.md";
+
+<Meta
+  title="React/Input/Button"
+  component={Button}
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "ALPHA",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Stories
+
+### Default
+
+<Canvas>
+  <Story name="Default" args={{}}>
+    {(args) => <Button {...args}>Button</Button>}
+  </Story>
+</Canvas>
+
+<ArgsTable of={Button} />
+
+### Primary Action
+
+<Canvas>
+  <Story
+    name="Primary Action"
+    args={{
+      variant: "primary-action",
+    }}
+  >
+    {(args) => <Button {...args}>Button</Button>}
+  </Story>
+</Canvas>
+
+### Secondary Action
+
+<Canvas>
+  <Story
+    name="Secondary Action"
+    args={{
+      variant: "secondary-action",
+    }}
+  >
+    {(args) => <Button {...args}>Button</Button>}
+  </Story>
+</Canvas>
+
+### Icon Left
+
+<Canvas>
+  <Story
+    name="Icon Left"
+    args={{
+      icon: <ArrowLeftIcon />,
+    }}
+  >
+    {(args) => <Button {...args}>Button</Button>}
+  </Story>
+</Canvas>
+
+### Icon Right
+
+<Canvas>
+  <Story
+    name="Icon Right"
+    args={{
+      variant: "secondary-action",
+      icon: <ArrowRightIcon />,
+      iconAlign: "end",
+    }}
+  >
+    {(args) => <Button {...args}>Button</Button>}
+  </Story>
+</Canvas>
+
+### Medium
+
+<Canvas>
+  <Story
+    name="Medium"
+    args={{
+      size: "medium",
+    }}
+  >
+    {(args) => <Button {...args}>Button</Button>}
+  </Story>
+</Canvas>
+
+### Large
+
+<Canvas>
+  <Story
+    name="Large"
+    args={{
+      size: "large",
+    }}
+  >
+    {(args) => <Button {...args}>Button</Button>}
+  </Story>
+</Canvas>
+
+### Disabled
+
+<Canvas>
+  <Story
+    name="Disabled"
+    args={{
+      disabled: true,
+    }}
+  >
+    {(args) => <Button {...args}>Button</Button>}
+  </Story>
+</Canvas>

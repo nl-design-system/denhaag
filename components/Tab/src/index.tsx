@@ -1,4 +1,5 @@
 import React, { KeyboardEvent, RefObject, createRef, useEffect, useState } from 'react';
+import './index.scss';
 import { TabsContainer } from './TabsContainer';
 import { TabIndicator } from './TabIndicator';
 import { HTMLAttributes } from 'react';

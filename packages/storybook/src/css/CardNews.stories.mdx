@@ -1,0 +1,147 @@
+import { Canvas, Description, Meta, Story } from "@storybook/blocks";
+import "@gemeente-denhaag/card-news";
+
+import pkg from "../../../../components/CardNews/package.json";
+import readme from "../../../../components/CardNews/README.md";
+import "./_storybook.scss";
+
+<Meta
+  title="CSS/Cards/News Card"
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Stories
+
+### Default
+
+<Canvas>
+  <Story name="Default">
+    {() => (
+      <div class="denhaag-card-news">
+        <img
+          class="denhaag-card-news__image"
+          src="https://images.unsplash.com/photo-1612799675078-ac368b17e488?w=307&h=173"
+          alt=""
+        />
+        <div class="denhaag-card-news__content">
+          <h4 class="utrecht-heading-4 denhaag-card-news__heading">
+            <a class="denhaag-card-news__link" href="#example-url">
+              Fietsflat Rijnstraat: opknappen fietsenstalling
+            </a>
+          </h4>
+          <p class="utrecht-paragraph denhaag-card-news__paragraph">
+            Het weekend van 15 en 16 januari in beide richtingen dicht.
+          </p>
+          <div className="denhaag-card-news__icon">
+            <svg
+              aria-hidden="true"
+              class="denhaag-icon"
+              focusable="false"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    )}
+  </Story>
+</Canvas>
+
+### Hover
+
+<Canvas>
+  <Story name="Hover">
+    {() => (
+      <div class="denhaag-card-news denhaag-card-news--hover">
+        <img
+          class="denhaag-card-news__image"
+          src="https://images.unsplash.com/photo-1612799675078-ac368b17e488?w=307&h=173"
+          alt=""
+        />
+        <div class="denhaag-card-news__content">
+          <h4 class="utrecht-heading-4 denhaag-card-news__heading">
+            <a class="denhaag-card-news__link" href="#example-url">
+              Fietsflat Rijnstraat: opknappen fietsenstalling
+            </a>
+          </h4>
+          <p class="utrecht-paragraph denhaag-card-news__paragraph">
+            Het weekend van 15 en 16 januari in beide richtingen dicht.
+          </p>
+          <div className="denhaag-card-news__icon">
+            <svg
+              aria-hidden="true"
+              class="denhaag-icon"
+              focusable="false"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    )}
+  </Story>
+</Canvas>
+
+### Focus
+
+<Canvas>
+  <Story name="Focus">
+    {() => (
+      <div class="denhaag-card-news denhaag-card-news--focus">
+        <img
+          class="denhaag-card-news__image"
+          src="https://images.unsplash.com/photo-1612799675078-ac368b17e488?w=307&h=173"
+          alt=""
+        />
+        <div class="denhaag-card-news__content">
+          <h4 class="utrecht-heading-4 denhaag-card-news__heading">
+            <a class="denhaag-card-news__link" href="#example-url">
+              Fietsflat Rijnstraat: opknappen fietsenstalling
+            </a>
+          </h4>
+          <p class="utrecht-paragraph denhaag-card-news__paragraph">
+            Het weekend van 15 en 16 januari in beide richtingen dicht.
+          </p>
+          <div className="denhaag-card-news__icon">
+            <svg
+              aria-hidden="true"
+              class="denhaag-icon"
+              focusable="false"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    )}
+  </Story>
+</Canvas>

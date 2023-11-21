@@ -1,6 +1,11 @@
 import React from 'react';
 import { ButtonLink } from '@utrecht/component-library-react';
 import ResponsiveContent from '@gemeente-denhaag/responsive-content';
+import '@gemeente-denhaag/button-group';
+import '@gemeente-denhaag/icons';
+import '@gemeente-denhaag/list';
+import '@gemeente-denhaag/link';
+import '@gemeente-denhaag/link-group';
 import clsx from 'clsx';
 import './index.scss';
 
@@ -154,7 +159,7 @@ export const FooterContact: React.FC<FooterContactProps> = (props: FooterContact
   );
 };
 
-export const Footer: React.FC<FooterProps> = (props: FooterProps) => {
+export const Footer = (props: FooterProps) => {
   const rootClassNames = clsx('denhaag-footer', props.className);
 
   return (

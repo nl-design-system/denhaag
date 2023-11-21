@@ -1,6 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
-import './_menu.scss';
+import './index.scss';
 
 interface Props {
   /**

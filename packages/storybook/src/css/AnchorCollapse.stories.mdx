@@ -1,0 +1,386 @@
+import { Canvas, Description, Meta, Story } from "@storybook/blocks";
+import "@gemeente-denhaag/anchor-collapse";
+
+import pkg from "../../../../components/AnchorCollapse/package.json";
+import readme from "../../../../components/AnchorCollapse/README.md";
+import "../../../../components/AnchorCollapse/src/anchorCollapses";
+import "../../../../components/AnchorCollapse/src/stories.js";
+
+<Meta
+  title="CSS/Navigation/Anchor Collapse"
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Stories
+
+### Default
+
+<Canvas>
+  <Story name="Default">
+    {() => (
+      <>
+        <section class="denhaag-anchor-collapse" id="in-het-kort">
+          <h2 class="denhaag-anchor-collapse__summary">
+            <button
+              aria-controls="denhaag-anchor-collapse-content-in-het-kort"
+              aria-expanded="false"
+              class="denhaag-anchor-collapse__toggle"
+              id="denhaag-anchor-collapse-label-in-het-kort"
+            >
+              In het kort
+            </button>
+            <svg
+              aria-hidden="true"
+              width="12"
+              height="8"
+              viewBox="0 0 12 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.4107 1.07806C5.73614 0.752625 6.26378 0.752625 6.58922 1.07806L11.5892 6.07806C11.9147 6.4035 11.9147 6.93114 11.5892 7.25657C11.2638 7.58201 10.7361 7.58201 10.4107 7.25657L5.99996 2.84583L1.58922 7.25657C1.26378 7.58201 0.736141 7.58201 0.410704 7.25657C0.0852667 6.93114 0.0852667 6.4035 0.410704 6.07806L5.4107 1.07806Z"
+                fill="currentColor"
+              />
+            </svg>
+          </h2>
+          <div
+            aria-labelledby="denhaag-anchor-collapse-label-in-het-kort"
+            class="denhaag-anchor-collapse__content"
+            id="denhaag-anchor-collapse-content-in-het-kort"
+            role="region"
+          >
+            <p class="utrecht-paragraph">
+              Mauris non sagittis ipsum. Donec elementum libero at gravida ullamcorper. Suspendisse consequat gravida
+              est, sed condimentum eros convallis vitae. Cras interdum ornare nisl id hendrerit. Curabitur ullamcorper
+              vel nisi nec malesuada. Integer hendrerit urna ac tincidunt pellentesque. Curabitur laoreet, ipsum ac
+              semper ornare, libero lacus pretium turpis, nec fermentum odio nulla sit amet nisi. In sed facilisis
+              neque, vel maximus risus. Aliquam porttitor magna nec justo facilisis imperdiet. Fusce malesuada purus nec
+              sem auctor pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras malesuada
+              condimentum convallis. Cras dignissim sit amet arcu non ultricies. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Suspendisse auctor ex metus, quis gravida odio elementum sed.
+            </p>
+          </div>
+        </section>
+        <section class="denhaag-anchor-collapse" id="voorwaarden">
+          <h2 class="denhaag-anchor-collapse__summary">
+            <button
+              aria-controls="denhaag-anchor-collapse-content-voorwaarden"
+              aria-expanded="false"
+              class="denhaag-anchor-collapse__toggle"
+              id="denhaag-anchor-collapse-label-voorwaarden"
+            >
+              Voorwaarden
+            </button>
+            <svg
+              aria-hidden="true"
+              width="12"
+              height="8"
+              viewBox="0 0 12 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.4107 1.07806C5.73614 0.752625 6.26378 0.752625 6.58922 1.07806L11.5892 6.07806C11.9147 6.4035 11.9147 6.93114 11.5892 7.25657C11.2638 7.58201 10.7361 7.58201 10.4107 7.25657L5.99996 2.84583L1.58922 7.25657C1.26378 7.58201 0.736141 7.58201 0.410704 7.25657C0.0852667 6.93114 0.0852667 6.4035 0.410704 6.07806L5.4107 1.07806Z"
+                fill="currentColor"
+              />
+            </svg>
+          </h2>
+          <div
+            aria-labelledby="denhaag-anchor-collapse-label-voorwaarden"
+            class="denhaag-anchor-collapse__content"
+            id="denhaag-anchor-collapse-content-voorwaarden"
+            role="region"
+          >
+            <p class="utrecht-paragraph">
+              Mauris non sagittis ipsum. Donec elementum libero at gravida ullamcorper. Suspendisse consequat gravida
+              est, sed condimentum eros convallis vitae. Cras interdum ornare nisl id hendrerit. Curabitur ullamcorper
+              vel nisi nec malesuada. Integer hendrerit urna ac tincidunt pellentesque. Curabitur laoreet, ipsum ac
+              semper ornare, libero lacus pretium turpis, nec fermentum odio nulla sit amet nisi. In sed facilisis
+              neque, vel maximus risus. Aliquam porttitor magna nec justo facilisis imperdiet. Fusce malesuada purus nec
+              sem auctor pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras malesuada
+              condimentum convallis. Cras dignissim sit amet arcu non ultricies. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Suspendisse auctor ex metus, quis gravida odio elementum sed.
+            </p>
+          </div>
+        </section>
+        <section class="denhaag-anchor-collapse" id="process">
+          <h2 class="denhaag-anchor-collapse__summary">
+            <button
+              aria-controls="denhaag-anchor-collapse-content-process"
+              aria-expanded="false"
+              class="denhaag-anchor-collapse__toggle"
+              id="denhaag-anchor-collapse-label-process"
+            >
+              Process
+            </button>
+            <svg
+              aria-hidden="true"
+              width="12"
+              height="8"
+              viewBox="0 0 12 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.4107 1.07806C5.73614 0.752625 6.26378 0.752625 6.58922 1.07806L11.5892 6.07806C11.9147 6.4035 11.9147 6.93114 11.5892 7.25657C11.2638 7.58201 10.7361 7.58201 10.4107 7.25657L5.99996 2.84583L1.58922 7.25657C1.26378 7.58201 0.736141 7.58201 0.410704 7.25657C0.0852667 6.93114 0.0852667 6.4035 0.410704 6.07806L5.4107 1.07806Z"
+                fill="currentColor"
+              />
+            </svg>
+          </h2>
+          <div
+            aria-labelledby="denhaag-anchor-collapse-label-process"
+            class="denhaag-anchor-collapse__content"
+            role="region"
+            id="denhaag-anchor-collapse-content-process"
+          >
+            <p class="utrecht-paragraph">
+              Mauris non sagittis ipsum. Donec elementum libero at gravida ullamcorper. Suspendisse consequat gravida
+              est, sed condimentum eros convallis vitae. Cras interdum ornare nisl id hendrerit. Curabitur ullamcorper
+              vel nisi nec malesuada. Integer hendrerit urna ac tincidunt pellentesque. Curabitur laoreet, ipsum ac
+              semper ornare, libero lacus pretium turpis, nec fermentum odio nulla sit amet nisi. In sed facilisis
+              neque, vel maximus risus. Aliquam porttitor magna nec justo facilisis imperdiet. Fusce malesuada purus nec
+              sem auctor pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras malesuada
+              condimentum convallis. Cras dignissim sit amet arcu non ultricies. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Suspendisse auctor ex metus, quis gravida odio elementum sed.
+            </p>
+          </div>
+        </section>
+        <section class="denhaag-anchor-collapse" id="kosten">
+          <h2 class="denhaag-anchor-collapse__summary">
+            <button
+              aria-controls="denhaag-anchor-collapse-content-kosten"
+              aria-expanded="false"
+              class="denhaag-anchor-collapse__toggle"
+              id="denhaag-anchor-collapse-label-kosten"
+            >
+              Kosten
+            </button>
+            <svg
+              aria-hidden="true"
+              width="12"
+              height="8"
+              viewBox="0 0 12 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.4107 1.07806C5.73614 0.752625 6.26378 0.752625 6.58922 1.07806L11.5892 6.07806C11.9147 6.4035 11.9147 6.93114 11.5892 7.25657C11.2638 7.58201 10.7361 7.58201 10.4107 7.25657L5.99996 2.84583L1.58922 7.25657C1.26378 7.58201 0.736141 7.58201 0.410704 7.25657C0.0852667 6.93114 0.0852667 6.4035 0.410704 6.07806L5.4107 1.07806Z"
+                fill="currentColor"
+              />
+            </svg>
+          </h2>
+          <div
+            aria-labelledby="denhaag-anchor-collapse-label-kosten"
+            class="denhaag-anchor-collapse__content"
+            role="region"
+            id="denhaag-anchor-collapse-content-kosten"
+          >
+            <p class="utrecht-paragraph">
+              Mauris non sagittis ipsum. Donec elementum libero at gravida ullamcorper. Suspendisse consequat gravida
+              est, sed condimentum eros convallis vitae. Cras interdum ornare nisl id hendrerit. Curabitur ullamcorper
+              vel nisi nec malesuada. Integer hendrerit urna ac tincidunt pellentesque. Curabitur laoreet, ipsum ac
+              semper ornare, libero lacus pretium turpis, nec fermentum odio nulla sit amet nisi. In sed facilisis
+              neque, vel maximus risus. Aliquam porttitor magna nec justo facilisis imperdiet. Fusce malesuada purus nec
+              sem auctor pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras malesuada
+              condimentum convallis. Cras dignissim sit amet arcu non ultricies. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Suspendisse auctor ex metus, quis gravida odio elementum sed.
+            </p>
+          </div>
+        </section>
+        <section class="denhaag-anchor-collapse" id="aanvragen">
+          <h2 class="denhaag-anchor-collapse__summary">
+            <button
+              aria-expanded="false"
+              aria-controls="denhaag-anchor-collapse-content-aanvragen"
+              class="denhaag-anchor-collapse__toggle"
+              id="denhaag-anchor-collapse-label-aanvragen"
+            >
+              Aanvragen
+            </button>
+            <svg
+              aria-hidden="true"
+              width="12"
+              height="8"
+              viewBox="0 0 12 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.4107 1.07806C5.73614 0.752625 6.26378 0.752625 6.58922 1.07806L11.5892 6.07806C11.9147 6.4035 11.9147 6.93114 11.5892 7.25657C11.2638 7.58201 10.7361 7.58201 10.4107 7.25657L5.99996 2.84583L1.58922 7.25657C1.26378 7.58201 0.736141 7.58201 0.410704 7.25657C0.0852667 6.93114 0.0852667 6.4035 0.410704 6.07806L5.4107 1.07806Z"
+                fill="currentColor"
+              />
+            </svg>
+          </h2>
+          <div
+            aria-labelledby="denhaag-anchor-collapse-label-aanvragen"
+            class="denhaag-anchor-collapse__content"
+            role="region"
+          >
+            <p class="utrecht-paragraph">
+              Mauris non sagittis ipsum. Donec elementum libero at gravida ullamcorper. Suspendisse consequat gravida
+              est, sed condimentum eros convallis vitae. Cras interdum ornare nisl id hendrerit. Curabitur ullamcorper
+              vel nisi nec malesuada. Integer hendrerit urna ac tincidunt pellentesque. Curabitur laoreet, ipsum ac
+              semper ornare, libero lacus pretium turpis, nec fermentum odio nulla sit amet nisi. In sed facilisis
+              neque, vel maximus risus. Aliquam porttitor magna nec justo facilisis imperdiet. Fusce malesuada purus nec
+              sem auctor pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras malesuada
+              condimentum convallis. Cras dignissim sit amet arcu non ultricies. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Suspendisse auctor ex metus, quis gravida odio elementum sed.
+            </p>
+          </div>
+        </section>
+        <section class="denhaag-anchor-collapse" id="veelgestelde-vragen">
+          <h2 class="denhaag-anchor-collapse__summary">
+            <button
+              aria-controls="denhaag-anchor-collapse-content-veelgestelde-vragen"
+              aria-expanded="false"
+              class="denhaag-anchor-collapse__toggle"
+              id="denhaag-anchor-collapse-label-veelgestelde-vragen"
+            >
+              Veelgestelde vragen
+            </button>
+            <svg
+              aria-hidden="true"
+              width="12"
+              height="8"
+              viewBox="0 0 12 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.4107 1.07806C5.73614 0.752625 6.26378 0.752625 6.58922 1.07806L11.5892 6.07806C11.9147 6.4035 11.9147 6.93114 11.5892 7.25657C11.2638 7.58201 10.7361 7.58201 10.4107 7.25657L5.99996 2.84583L1.58922 7.25657C1.26378 7.58201 0.736141 7.58201 0.410704 7.25657C0.0852667 6.93114 0.0852667 6.4035 0.410704 6.07806L5.4107 1.07806Z"
+                fill="currentColor"
+              />
+            </svg>
+          </h2>
+          <div
+            aria-labelledby="denhaag-anchor-collapse-label-veelgestelde-vragen"
+            class="denhaag-anchor-collapse__content"
+            role="region"
+            id="denhaag-anchor-collapse-content-veelgestelde-vragen"
+          >
+            <p class="utrecht-paragraph">
+              Mauris non sagittis ipsum. Donec elementum libero at gravida ullamcorper. Suspendisse consequat gravida
+              est, sed condimentum eros convallis vitae. Cras interdum ornare nisl id hendrerit. Curabitur ullamcorper
+              vel nisi nec malesuada. Integer hendrerit urna ac tincidunt pellentesque. Curabitur laoreet, ipsum ac
+              semper ornare, libero lacus pretium turpis, nec fermentum odio nulla sit amet nisi. In sed facilisis
+              neque, vel maximus risus. Aliquam porttitor magna nec justo facilisis imperdiet. Fusce malesuada purus nec
+              sem auctor pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras malesuada
+              condimentum convallis. Cras dignissim sit amet arcu non ultricies. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Suspendisse auctor ex metus, quis gravida odio elementum sed.
+            </p>
+          </div>
+        </section>
+      </>
+    )}
+  </Story>
+</Canvas>
+
+### Focus
+
+<Canvas>
+  <Story name="Focus">
+    {() => (
+      <section class="denhaag-anchor-collapse" id="focus">
+        <h2 class="denhaag-anchor-collapse__summary denhaag-anchor-collapse__summary--focus">
+          <button
+            aria-controls="denhaag-anchor-collapse-content-focus"
+            aria-expanded="false"
+            class="denhaag-anchor-collapse__toggle"
+            id="denhaag-anchor-collapse-label-focus"
+          >
+            In het kort
+          </button>
+          <svg
+            aria-hidden="true"
+            width="12"
+            height="8"
+            viewBox="0 0 12 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.4107 1.07806C5.73614 0.752625 6.26378 0.752625 6.58922 1.07806L11.5892 6.07806C11.9147 6.4035 11.9147 6.93114 11.5892 7.25657C11.2638 7.58201 10.7361 7.58201 10.4107 7.25657L5.99996 2.84583L1.58922 7.25657C1.26378 7.58201 0.736141 7.58201 0.410704 7.25657C0.0852667 6.93114 0.0852667 6.4035 0.410704 6.07806L5.4107 1.07806Z"
+              fill="currentColor"
+            />
+          </svg>
+        </h2>
+        <div
+          aria-labelledby="denhaag-anchor-collapse-label-focus"
+          class="denhaag-anchor-collapse__content"
+          id="denhaag-anchor-collapse-content-focus"
+          role="region"
+        >
+          <p class="utrecht-paragraph">
+            Mauris non sagittis ipsum. Donec elementum libero at gravida ullamcorper. Suspendisse consequat gravida est,
+            sed condimentum eros convallis vitae. Cras interdum ornare nisl id hendrerit. Curabitur ullamcorper vel nisi
+            nec malesuada. Integer hendrerit urna ac tincidunt pellentesque. Curabitur laoreet, ipsum ac semper ornare,
+            libero lacus pretium turpis, nec fermentum odio nulla sit amet nisi. In sed facilisis neque, vel maximus
+            risus. Aliquam porttitor magna nec justo facilisis imperdiet. Fusce malesuada purus nec sem auctor pretium.
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras malesuada condimentum convallis. Cras
+            dignissim sit amet arcu non ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            auctor ex metus, quis gravida odio elementum sed.
+          </p>
+        </div>
+      </section>
+    )}
+  </Story>
+</Canvas>
+
+### Hover
+
+<Canvas>
+  <Story name="Hover">
+    {() => (
+      <section class="denhaag-anchor-collapse" id="hover">
+        <h2 class="denhaag-anchor-collapse__summary denhaag-anchor-collapse__summary--hover">
+          <button
+            aria-controls="denhaag-anchor-collapse-content-hover"
+            aria-expanded="false"
+            class="denhaag-anchor-collapse__toggle"
+            id="denhaag-anchor-collapse-label-hover"
+          >
+            In het kort
+          </button>
+          <svg
+            aria-hidden="true"
+            width="12"
+            height="8"
+            viewBox="0 0 12 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.4107 1.07806C5.73614 0.752625 6.26378 0.752625 6.58922 1.07806L11.5892 6.07806C11.9147 6.4035 11.9147 6.93114 11.5892 7.25657C11.2638 7.58201 10.7361 7.58201 10.4107 7.25657L5.99996 2.84583L1.58922 7.25657C1.26378 7.58201 0.736141 7.58201 0.410704 7.25657C0.0852667 6.93114 0.0852667 6.4035 0.410704 6.07806L5.4107 1.07806Z"
+              fill="currentColor"
+            />
+          </svg>
+        </h2>
+        <div
+          aria-labelledby="denhaag-anchor-collapse-label-hover"
+          class="denhaag-anchor-collapse__content"
+          id="denhaag-anchor-collapse-content-hover"
+          role="region"
+        >
+          <p class="utrecht-paragraph">
+            Mauris non sagittis ipsum. Donec elementum libero at gravida ullamcorper. Suspendisse consequat gravida est,
+            sed condimentum eros convallis vitae. Cras interdum ornare nisl id hendrerit. Curabitur ullamcorper vel nisi
+            nec malesuada. Integer hendrerit urna ac tincidunt pellentesque. Curabitur laoreet, ipsum ac semper ornare,
+            libero lacus pretium turpis, nec fermentum odio nulla sit amet nisi. In sed facilisis neque, vel maximus
+            risus. Aliquam porttitor magna nec justo facilisis imperdiet. Fusce malesuada purus nec sem auctor pretium.
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras malesuada condimentum convallis. Cras
+            dignissim sit amet arcu non ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            auctor ex metus, quis gravida odio elementum sed.
+          </p>
+        </div>
+      </section>
+    )}
+  </Story>
+</Canvas>

@@ -1,0 +1,29 @@
+import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/blocks";
+
+import { BadgeCounter } from "@gemeente-denhaag/badge-counter";
+import pkg from "../../../../components/Button/package.json";
+import readme from "../../../../components/Button/README.md";
+
+<Meta
+  title="React/Data Display/Badge Counter"
+  component={BadgeCounter}
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "ALPHA",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Stories
+
+### Default
+
+<Canvas>
+  <Story name="Default">{(args) => <BadgeCounter {...args}>13</BadgeCounter>}</Story>
+</Canvas>
+
+<ArgsTable of={BadgeCounter} />

@@ -1,0 +1,138 @@
+import { Canvas, Description, Meta, Story } from "@storybook/blocks";
+import "@gemeente-denhaag/cta-event";
+
+import "../../../../components/CtaEvent/src/index";
+import pkg from "../../../../components/CtaEvent/package.json";
+import readme from "../../../../components/CtaEvent/README.md";
+
+<Meta
+  title="CSS/Actions/CTA Event"
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Stories
+
+### Default
+
+<Canvas>
+  <Story name="Default">
+    {() => (
+      <a class="denhaag-cta-event" href="#event-url">
+        <div class="denhaag-cta-event__date" aria-hidden="true">
+          <span class="denhaag-cta-event__day">16</span>
+          <span class="denhaag-cta-event__month">sep</span>
+        </div>
+        <div class="denhaag-cta-event__excerpt">
+          <h3 class="denhaag-cta-event__title">Fiets naar je werk dag</h3>
+          <time datetime="2021-09-16">Donderdag 16 september 2021</time>
+        </div>
+      </a>
+    )}
+  </Story>
+</Canvas>
+
+### Hovered
+
+<Canvas>
+  <Story name="Hovered">
+    {() => (
+      <a class="denhaag-cta-event denhaag-cta-event--hover" href="#event-url">
+        <div class="denhaag-cta-event__date" aria-hidden="true">
+          <span class="denhaag-cta-event__day">31</span>
+          <span class="denhaag-cta-event__month">dec</span>
+        </div>
+        <div class="denhaag-cta-event__excerpt">
+          <h3 class="denhaag-cta-event__title">Oudjaarsdag</h3>
+          <time datetime="2021-12-31">Vrijdag 31 december 2021</time>
+        </div>
+      </a>
+    )}
+  </Story>
+</Canvas>
+
+### Focused
+
+<Canvas>
+  <Story name="Focused">
+    {() => (
+      <a class="denhaag-cta-event denhaag-cta-event--focus" href="#event-url">
+        <div class="denhaag-cta-event__date" aria-hidden="true">
+          <span class="denhaag-cta-event__day">31</span>
+          <span class="denhaag-cta-event__month">dec</span>
+        </div>
+        <div class="denhaag-cta-event__excerpt">
+          <h3 class="denhaag-cta-event__title">Oudjaarsdag</h3>
+          <time datetime="2021-12-31">Vrijdag 31 december 2021</time>
+        </div>
+      </a>
+    )}
+  </Story>
+</Canvas>
+
+### Today
+
+<Canvas>
+  <Story name="Today">
+    {() => (
+      <a class="denhaag-cta-event" href="#event-url" aria-current="date">
+        <div class="denhaag-cta-event__date" aria-hidden="true">
+          <span class="denhaag-cta-event__day">16</span>
+          <span class="denhaag-cta-event__month">dec</span>
+        </div>
+        <div class="denhaag-cta-event__excerpt">
+          <h3 class="denhaag-cta-event__title">Werkdag</h3>
+          <time datetime="2021-12-16">Donderdag 16 december 2021</time>
+        </div>
+      </a>
+    )}
+  </Story>
+</Canvas>
+
+### Grouped
+
+<Canvas>
+  <Story name="Grouped">
+    {() => (
+      <>
+        <a class="denhaag-cta-event" href="#event-url">
+          <div class="denhaag-cta-event__date" aria-hidden="true">
+            <span class="denhaag-cta-event__day">26</span>
+            <span class="denhaag-cta-event__month">dec</span>
+          </div>
+          <div class="denhaag-cta-event__excerpt">
+            <h3 class="denhaag-cta-event__title">Kerstdiner</h3>
+            <time datetime="2021-12-26">Zondag 26 december 2021</time>
+          </div>
+        </a>
+        <a class="denhaag-cta-event" href="#event-url">
+          <div class="denhaag-cta-event__date" aria-hidden="true">
+            <span class="denhaag-cta-event__day">31</span>
+            <span class="denhaag-cta-event__month">dec</span>
+          </div>
+          <div class="denhaag-cta-event__excerpt">
+            <h3 class="denhaag-cta-event__title">Oudjaarsdag</h3>
+            <time datetime="2021-12-31">Vrijdag 31 december 2021</time>
+          </div>
+        </a>
+        <a class="denhaag-cta-event" href="#event-url">
+          <div class="denhaag-cta-event__date" aria-hidden="true">
+            <span class="denhaag-cta-event__day">01</span>
+            <span class="denhaag-cta-event__month">jan</span>
+          </div>
+          <div class="denhaag-cta-event__excerpt">
+            <h3 class="denhaag-cta-event__title">Nieuwjaarsdag</h3>
+            <time datetime="2021-01-01">Zaterdag 1 januari 2022</time>
+          </div>
+        </a>
+      </>
+    )}
+  </Story>
+</Canvas>

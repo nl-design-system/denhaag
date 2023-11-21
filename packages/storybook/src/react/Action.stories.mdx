@@ -1,0 +1,219 @@
+import { Canvas, Description, Meta, Story } from "@storybook/blocks";
+import { ButtonLink } from "@utrecht/component-library-react";
+import { Action } from "@gemeente-denhaag/action";
+
+import pkg from "../../../../components/Action/package.json";
+import readme from "../../../../components/Action/README.md";
+
+export const labels = {
+  today: "vandaag",
+  yesterday: "gisteren",
+  before: "vóór",
+  approachingDeadline: (daysDifference) => {
+    if (daysDifference === 1) {
+      return `nog ${daysDifference} dag`;
+    }
+    return `nog ${daysDifference} dagen`;
+  },
+};
+
+<Meta
+  title="React/Actions/Action"
+  parameters={{
+    chromatic: { viewports: [1768, 1280, 768, 360] },
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "ALPHA",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Stories
+
+### Single
+
+<Canvas>
+  <Story name="Link">
+    {() => (
+      <Action link="#example">
+        <strong>Taak</strong>
+      </Action>
+    )}
+  </Story>
+</Canvas>
+
+### Single - hover
+
+<Canvas>
+  <Story name="Single - hover">
+    {() => (
+      <Action link="#example" classNameName="denhaag-action--hover">
+        <strong>Taak</strong>
+      </Action>
+    )}
+  </Story>
+</Canvas>
+
+### Single - focus
+
+<Canvas>
+  <Story name="Single - focus">
+    {() => (
+      <Action link="#example" classNameName="denhaag-action--focus">
+        <strong>Taak</strong>
+      </Action>
+    )}
+  </Story>
+</Canvas>
+
+### Single - with date
+
+<Canvas>
+  <Story name="Single - with date">
+    {() => (
+      <Action link="#example" dateTime={"2023-09-28T19:47:36.593Z"} labels={labels}>
+        <strong>Taak</strong>
+      </Action>
+    )}
+  </Story>
+</Canvas>
+
+### Single - with date - relative
+
+<Canvas>
+  <Story name="Single - with date - relative">
+    {() => (
+      <Action
+        link="#example"
+        dateTime={"2023-10-02T19:47:36.593Z"}
+        now={"2023-09-28T19:47:36.593Z"}
+        relativeDate
+        labels={labels}
+      >
+        <strong>Taak</strong>
+      </Action>
+    )}
+  </Story>
+</Canvas>
+
+### Single - with warning date - relative
+
+<Canvas>
+  <Story name="Single - with warning date - relative">
+    {() => (
+      <Action
+        link="#example"
+        dateTime={"2023-09-30T19:47:36.593Z"}
+        now={"2023-09-28T19:47:36.593Z"}
+        relativeDate
+        labels={labels}
+      >
+        <strong>Taak</strong>
+      </Action>
+    )}
+  </Story>
+</Canvas>
+
+### Multiple
+
+<Canvas>
+  <Story name="Multiple">
+    {() => (
+      <Action actions={<ButtonLink href="#example">Actie</ButtonLink>}>
+        <strong>Taak</strong>
+      </Action>
+    )}
+  </Story>
+</Canvas>
+
+### Multiple - hover
+
+<Canvas>
+  <Story name="Multiple - hover">
+    {() => (
+      <Action
+        actions={
+          <ButtonLink href="#example" className="utrecht-button-link--hover">
+            Actie
+          </ButtonLink>
+        }
+      >
+        <strong>Taak</strong>
+      </Action>
+    )}
+  </Story>
+</Canvas>
+
+### Multiple - focus
+
+<Canvas>
+  <Story name="Multiple - focus">
+    {() => (
+      <Action
+        actions={
+          <ButtonLink href="#example" className="utrecht-button-link--focus">
+            Actie
+          </ButtonLink>
+        }
+      >
+        <strong>Taak</strong>
+      </Action>
+    )}
+  </Story>
+</Canvas>
+
+### Multiple - with date
+
+<Canvas>
+  <Story name="Multiple - with date">
+    {() => (
+      <Action
+        dateTime={"2023-09-28T19:47:36.593Z"}
+        now={"2023-09-28T19:47:36.593Z"}
+        labels={labels}
+        actions={<ButtonLink href="#example">Actie</ButtonLink>}
+      >
+        <strong>Taak</strong>
+      </Action>
+    )}
+  </Story>
+</Canvas>
+
+### Multiple - with date - relative
+
+<Canvas>
+  <Story name="Multiple - with date - relative">
+    {() => (
+      <Action
+        relativeDate
+        dateTime={"2023-10-02T19:47:36.593Z"}
+        now={"2023-09-28T19:47:36.593Z"}
+        labels={labels}
+        actions={<ButtonLink href="#example">Actie</ButtonLink>}
+      >
+        <strong>Taak</strong>
+      </Action>
+    )}
+  </Story>
+</Canvas>
+
+### Multiple - with warning date - relative
+
+<Canvas>
+  <Story name="Multiple - with warning date - relative">
+    {() => (
+      <Action
+        relativeDate
+        dateTime={"2023-09-30T19:47:36.593Z"}
+        now={"2023-09-28T19:47:36.593Z"}
+        labels={labels}
+        actions={<ButtonLink href="#example">Actie</ButtonLink>}
+      >
+        <strong>Taak</strong>
+      </Action>
+    )}
+  </Story>
+</Canvas>

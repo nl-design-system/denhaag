@@ -1,0 +1,811 @@
+import { Canvas, Description, Meta, Story } from "@storybook/blocks";
+import "@gemeente-denhaag/pagination";
+
+import "../../../../components/Pagination/src/index";
+import pkg from "../../../../components/Pagination/package.json";
+import readme from "../../../../components/Pagination/README.md";
+
+<Meta
+  title="CSS/Navigation/Pagination"
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Stories
+
+### Default
+
+<Canvas>
+  <Story name="Default">
+    {() => (
+      <nav class="denhaag-pagination">
+        <a
+          href="#page-2"
+          class="denhaag-pagination__link denhaag-pagination__link--arrow"
+          rel="prev"
+          aria-label="Previous page"
+        >
+          <svg
+            aria-hidden="true"
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 7 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.9921 10.8143C5.36382 11.1914 5.97222 11.1914 6.34393 10.8143C6.7079 10.4451 6.70822 9.8521 6.34466 9.48248L3.36315 6.45123C2.98039 6.06209 2.98039 5.43791 3.36315 5.04877L6.34466 2.01752C6.70822 1.6479 6.7079 1.05492 6.34394 0.685696C5.97222 0.308599 5.36382 0.308599 4.9921 0.685695L0.692003 5.04799C0.308224 5.43732 0.308224 6.06268 0.692003 6.45201L4.9921 10.8143Z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+        <span role="group" class="denhaag-pagination__links">
+          <a class="denhaag-pagination__link" href="#page-1" aria-label="Page 1">
+            1
+          </a>
+          <a class="denhaag-pagination__link" href="#page-2" aria-label="Page 2" rel="prev">
+            2
+          </a>
+          <a
+            class="denhaag-pagination__link denhaag-pagination__link--current"
+            href="#page-3"
+            aria-label="Page 3"
+            aria-current="page"
+          >
+            3
+          </a>
+          <a class="denhaag-pagination__link" href="#page-4" aria-label="Page 4" rel="next">
+            4
+          </a>
+          <a class="denhaag-pagination__link" href="#page-5" aria-label="Page 5">
+            5
+          </a>
+        </span>
+        <a
+          href="#page-4"
+          class="denhaag-pagination__link denhaag-pagination__link--arrow"
+          rel="next"
+          aria-label="Next page"
+        >
+          <svg
+            aria-hidden="true"
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 7 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.0079 1.1857C1.63618 0.8086 1.02778 0.8086 0.656065 1.18569V1.18569C0.292103 1.55492 0.291779 2.1479 0.655339 2.51752L3.63685 5.54877C4.01961 5.93791 4.01961 6.56209 3.63686 6.95123L0.655339 9.98248C0.291779 10.3521 0.292102 10.9451 0.656065 11.3143V11.3143C1.02778 11.6914 1.63618 11.6914 2.0079 11.3143L6.308 6.95201C6.69178 6.56268 6.69178 5.93732 6.308 5.54799L2.0079 1.1857Z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+      </nav>
+    )}
+  </Story>
+</Canvas>
+
+### Disabled
+
+Example of the disabled state, can be reproduced by the `denhaag-pagination__link--disabled` modifier.
+
+<Canvas>
+  <Story name="Disabled">
+    {() => (
+      <nav class="denhaag-pagination">
+        <a
+          href="#page-2"
+          class="denhaag-pagination__link denhaag-pagination__link--arrow denhaag-pagination__link--disabled"
+          rel="prev"
+          aria-label="Previous page"
+        >
+          <svg
+            aria-hidden="true"
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 7 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.9921 10.8143C5.36382 11.1914 5.97222 11.1914 6.34393 10.8143C6.7079 10.4451 6.70822 9.8521 6.34466 9.48248L3.36315 6.45123C2.98039 6.06209 2.98039 5.43791 3.36315 5.04877L6.34466 2.01752C6.70822 1.6479 6.7079 1.05492 6.34394 0.685696C5.97222 0.308599 5.36382 0.308599 4.9921 0.685695L0.692003 5.04799C0.308224 5.43732 0.308224 6.06268 0.692003 6.45201L4.9921 10.8143Z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+        <span role="group" class="denhaag-pagination__links">
+          <a
+            class="denhaag-pagination__link denhaag-pagination__link--current"
+            href="#page-1"
+            aria-current="page"
+            aria-label="Page 1"
+          >
+            1
+          </a>
+          <a
+            class="denhaag-pagination__link"
+            href="#page-2"
+            aria-label="Page 2"
+            rel="next"
+            aria-disabled="true"
+            tabindex="-1"
+          >
+            2
+          </a>
+          <a class="denhaag-pagination__link" href="#page-3" aria-label="Page 3">
+            3
+          </a>
+        </span>
+        <a
+          href="#page-2"
+          class="denhaag-pagination__link denhaag-pagination__link--arrow"
+          rel="next"
+          aria-label="Next page"
+        >
+          <svg
+            aria-hidden="true"
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 7 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.0079 1.1857C1.63618 0.8086 1.02778 0.8086 0.656065 1.18569V1.18569C0.292103 1.55492 0.291779 2.1479 0.655339 2.51752L3.63685 5.54877C4.01961 5.93791 4.01961 6.56209 3.63686 6.95123L0.655339 9.98248C0.291779 10.3521 0.292102 10.9451 0.656065 11.3143V11.3143C1.02778 11.6914 1.63618 11.6914 2.0079 11.3143L6.308 6.95201C6.69178 6.56268 6.69178 5.93732 6.308 5.54799L2.0079 1.1857Z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+      </nav>
+    )}
+  </Story>
+</Canvas>
+
+### Hovered
+
+Example of the hover state, can be reproduced by the `denhaag-pagination__link--hover` modifier.
+
+<Canvas>
+  <Story name="Hovered">
+    {() => (
+      <nav class="denhaag-pagination">
+        <a
+          href="#page-2"
+          class="denhaag-pagination__link denhaag-pagination__link--arrow"
+          rel="prev"
+          aria-label="Previous page"
+        >
+          <svg
+            aria-hidden="true"
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 7 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.9921 10.8143C5.36382 11.1914 5.97222 11.1914 6.34393 10.8143C6.7079 10.4451 6.70822 9.8521 6.34466 9.48248L3.36315 6.45123C2.98039 6.06209 2.98039 5.43791 3.36315 5.04877L6.34466 2.01752C6.70822 1.6479 6.7079 1.05492 6.34394 0.685696C5.97222 0.308599 5.36382 0.308599 4.9921 0.685695L0.692003 5.04799C0.308224 5.43732 0.308224 6.06268 0.692003 6.45201L4.9921 10.8143Z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+        <span role="group" class="denhaag-pagination__links">
+          <a class="denhaag-pagination__link" href="#page-1" aria-label="Page 1">
+            1
+          </a>
+          <a class="denhaag-pagination__link" href="#page-2" aria-label="Page 2" rel="prev">
+            2
+          </a>
+          <a
+            class="denhaag-pagination__link denhaag-pagination__link--current denhaag-pagination__link--hover"
+            href="#page-3"
+            aria-current="page"
+            aria-label="Page 3"
+          >
+            3
+          </a>
+          <a
+            class="denhaag-pagination__link denhaag-pagination__link--hover"
+            href="#page-4"
+            aria-label="Page 4"
+            rel="next"
+          >
+            4
+          </a>
+          <a class="denhaag-pagination__link" href="#page-5" aria-label="Page 5">
+            5
+          </a>
+        </span>
+        <a
+          href="#page-4"
+          class="denhaag-pagination__link denhaag-pagination__link--arrow denhaag-pagination__link--hover"
+          rel="next"
+          aria-label="Next page"
+        >
+          <svg
+            aria-hidden="true"
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 7 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.0079 1.1857C1.63618 0.8086 1.02778 0.8086 0.656065 1.18569V1.18569C0.292103 1.55492 0.291779 2.1479 0.655339 2.51752L3.63685 5.54877C4.01961 5.93791 4.01961 6.56209 3.63686 6.95123L0.655339 9.98248C0.291779 10.3521 0.292102 10.9451 0.656065 11.3143V11.3143C1.02778 11.6914 1.63618 11.6914 2.0079 11.3143L6.308 6.95201C6.69178 6.56268 6.69178 5.93732 6.308 5.54799L2.0079 1.1857Z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+      </nav>
+    )}
+  </Story>
+</Canvas>
+
+### Focused
+
+Example of the focus state, can be reproduced by the `denhaag-pagination__link--focus` modifier.
+
+<Canvas>
+  <Story name="Focused">
+    {() => (
+      <nav class="denhaag-pagination">
+        <a
+          href="#page-2"
+          class="denhaag-pagination__link denhaag-pagination__link--arrow"
+          rel="prev"
+          aria-label="Previous page"
+        >
+          <svg
+            aria-hidden="true"
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 7 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.9921 10.8143C5.36382 11.1914 5.97222 11.1914 6.34393 10.8143C6.7079 10.4451 6.70822 9.8521 6.34466 9.48248L3.36315 6.45123C2.98039 6.06209 2.98039 5.43791 3.36315 5.04877L6.34466 2.01752C6.70822 1.6479 6.7079 1.05492 6.34394 0.685696C5.97222 0.308599 5.36382 0.308599 4.9921 0.685695L0.692003 5.04799C0.308224 5.43732 0.308224 6.06268 0.692003 6.45201L4.9921 10.8143Z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+        <span role="group" class="denhaag-pagination__links">
+          <a class="denhaag-pagination__link" href="#page-1" aria-label="Page 1">
+            1
+          </a>
+          <a class="denhaag-pagination__link" href="#page-2" aria-label="Page 2" rel="prev">
+            2
+          </a>
+          <a
+            class="denhaag-pagination__link denhaag-pagination__link--current denhaag-pagination__link--focus"
+            href="#page-3"
+            aria-current="page"
+            aria-label="Page 3"
+          >
+            3
+          </a>
+          <a
+            class="denhaag-pagination__link denhaag-pagination__link--focus"
+            href="#page-4"
+            aria-label="Page 4"
+            rel="next"
+          >
+            4
+          </a>
+          <a class="denhaag-pagination__link" href="#page-5" aria-label="Page 5">
+            5
+          </a>
+        </span>
+        <a
+          href="#page-4"
+          class="denhaag-pagination__link denhaag-pagination__link--arrow denhaag-pagination__link--focus"
+          rel="next"
+          aria-label="Next page"
+        >
+          <svg
+            aria-hidden="true"
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 7 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.0079 1.1857C1.63618 0.8086 1.02778 0.8086 0.656065 1.18569V1.18569C0.292103 1.55492 0.291779 2.1479 0.655339 2.51752L3.63685 5.54877C4.01961 5.93791 4.01961 6.56209 3.63686 6.95123L0.655339 9.98248C0.291779 10.3521 0.292102 10.9451 0.656065 11.3143V11.3143C1.02778 11.6914 1.63618 11.6914 2.0079 11.3143L6.308 6.95201C6.69178 6.56268 6.69178 5.93732 6.308 5.54799L2.0079 1.1857Z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+      </nav>
+    )}
+  </Story>
+</Canvas>
+
+### RTL
+
+Arrows are flipped when the direction is `rtl`.
+
+<Canvas>
+  <Story name="RTL">
+    {() => (
+      <div dir="rtl">
+        <nav class="denhaag-pagination">
+          <a
+            href="#page-2"
+            class="denhaag-pagination__link denhaag-pagination__link--arrow"
+            rel="prev"
+            aria-label="Previous page"
+          >
+            <svg
+              aria-hidden="true"
+              class="denhaag-icon"
+              width="1em"
+              height="1em"
+              viewBox="0 0 7 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.9921 10.8143C5.36382 11.1914 5.97222 11.1914 6.34393 10.8143C6.7079 10.4451 6.70822 9.8521 6.34466 9.48248L3.36315 6.45123C2.98039 6.06209 2.98039 5.43791 3.36315 5.04877L6.34466 2.01752C6.70822 1.6479 6.7079 1.05492 6.34394 0.685696C5.97222 0.308599 5.36382 0.308599 4.9921 0.685695L0.692003 5.04799C0.308224 5.43732 0.308224 6.06268 0.692003 6.45201L4.9921 10.8143Z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+          <span role="group" class="denhaag-pagination__links">
+            <a class="denhaag-pagination__link" href="#page-1" aria-label="Page 1">
+              1
+            </a>
+            <a class="denhaag-pagination__link" href="#page-2" aria-label="Page 2" rel="prev">
+              2
+            </a>
+            <a
+              class="denhaag-pagination__link denhaag-pagination__link--current"
+              href="#page-3"
+              aria-label="Page 3"
+              aria-current="page"
+            >
+              3
+            </a>
+            <a class="denhaag-pagination__link" href="#page-4" aria-label="Page 4" rel="next">
+              4
+            </a>
+            <a class="denhaag-pagination__link" href="#page-5" aria-label="Page 5">
+              5
+            </a>
+          </span>
+          <a
+            href="#page-4"
+            class="denhaag-pagination__link denhaag-pagination__link--arrow"
+            rel="next"
+            aria-label="Next page"
+          >
+            <svg
+              aria-hidden="true"
+              class="denhaag-icon"
+              width="1em"
+              height="1em"
+              viewBox="0 0 7 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.0079 1.1857C1.63618 0.8086 1.02778 0.8086 0.656065 1.18569V1.18569C0.292103 1.55492 0.291779 2.1479 0.655339 2.51752L3.63685 5.54877C4.01961 5.93791 4.01961 6.56209 3.63686 6.95123L0.655339 9.98248C0.291779 10.3521 0.292102 10.9451 0.656065 11.3143V11.3143C1.02778 11.6914 1.63618 11.6914 2.0079 11.3143L6.308 6.95201C6.69178 6.56268 6.69178 5.93732 6.308 5.54799L2.0079 1.1857Z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+        </nav>
+      </div>
+    )}
+  </Story>
+</Canvas>
+
+### 4 items
+
+Hide items on the left side, since only 4 items (except current item) may be selected.
+
+<Canvas>
+  <Story name="4 items">
+    {() => (
+      <nav class="denhaag-pagination">
+        <a
+          href="#page-21"
+          class="denhaag-pagination__link denhaag-pagination__link--arrow"
+          rel="prev"
+          aria-label="Previous page"
+        >
+          <svg
+            aria-hidden="true"
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 7 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.9921 10.8143C5.36382 11.1914 5.97222 11.1914 6.34393 10.8143C6.7079 10.4451 6.70822 9.8521 6.34466 9.48248L3.36315 6.45123C2.98039 6.06209 2.98039 5.43791 3.36315 5.04877L6.34466 2.01752C6.70822 1.6479 6.7079 1.05492 6.34394 0.685696C5.97222 0.308599 5.36382 0.308599 4.9921 0.685695L0.692003 5.04799C0.308224 5.43732 0.308224 6.06268 0.692003 6.45201L4.9921 10.8143Z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+        <span role="group" class="denhaag-pagination__links">
+          <a class="denhaag-pagination__link" href="#page-1" aria-label="Page 1">
+            1
+          </a>
+          <a class="denhaag-pagination__link" href="#page-20" aria-label="Page 20">
+            20
+          </a>
+          <a class="denhaag-pagination__link" href="#page-21" rel="prev" aria-label="Page 21">
+            21
+          </a>
+          <a
+            class="denhaag-pagination__link denhaag-pagination__link--current"
+            href="#page-22"
+            aria-current="page"
+            aria-label="Page 22"
+          >
+            22
+          </a>
+          <a class="denhaag-pagination__link" href="#page-23" rel="next" aria-label="Page 23">
+            23
+          </a>
+          <a class="denhaag-pagination__link" href="#page-24" aria-label="Page 24">
+            24
+          </a>
+        </span>
+        <a
+          href="#page-23"
+          class="denhaag-pagination__link denhaag-pagination__link--arrow"
+          rel="next"
+          aria-label="Next page"
+        >
+          <svg
+            aria-hidden="true"
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 7 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.0079 1.1857C1.63618 0.8086 1.02778 0.8086 0.656065 1.18569V1.18569C0.292103 1.55492 0.291779 2.1479 0.655339 2.51752L3.63685 5.54877C4.01961 5.93791 4.01961 6.56209 3.63686 6.95123L0.655339 9.98248C0.291779 10.3521 0.292102 10.9451 0.656065 11.3143V11.3143C1.02778 11.6914 1.63618 11.6914 2.0079 11.3143L6.308 6.95201C6.69178 6.56268 6.69178 5.93732 6.308 5.54799L2.0079 1.1857Z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+      </nav>
+    )}
+  </Story>
+</Canvas>
+
+### 5 items
+
+Hide items on both side, since only 4 items (except current item) may be selected.
+
+<Canvas>
+  <Story name="5 items">
+    {() => (
+      <nav class="denhaag-pagination">
+        <a
+          href="#page-51"
+          class="denhaag-pagination__link denhaag-pagination__link--arrow"
+          rel="prev"
+          aria-label="Previous page"
+        >
+          <svg
+            aria-hidden="true"
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 7 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.9921 10.8143C5.36382 11.1914 5.97222 11.1914 6.34393 10.8143C6.7079 10.4451 6.70822 9.8521 6.34466 9.48248L3.36315 6.45123C2.98039 6.06209 2.98039 5.43791 3.36315 5.04877L6.34466 2.01752C6.70822 1.6479 6.7079 1.05492 6.34394 0.685696C5.97222 0.308599 5.36382 0.308599 4.9921 0.685695L0.692003 5.04799C0.308224 5.43732 0.308224 6.06268 0.692003 6.45201L4.9921 10.8143Z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+        <span role="group" class="denhaag-pagination__links">
+          <a class="denhaag-pagination__link" href="#page-1" aria-label="Page 1">
+            1
+          </a>
+          <a class="denhaag-pagination__link" href="#page-50" aria-label="Page 50">
+            50
+          </a>
+          <a class="denhaag-pagination__link" href="#page-51" rel="prev" aria-label="Page 51">
+            51
+          </a>
+          <a
+            class="denhaag-pagination__link denhaag-pagination__link--current"
+            href="#page-52"
+            aria-current="page"
+            aria-label="Page 52"
+          >
+            52
+          </a>
+          <a class="denhaag-pagination__link" href="#page-53" rel="next" aria-label="Page 53">
+            53
+          </a>
+          <a class="denhaag-pagination__link" href="#page-54" aria-label="Page 54">
+            54
+          </a>
+          <a class="denhaag-pagination__link" href="#page-100" aria-label="Page 100">
+            100
+          </a>
+        </span>
+        <a
+          href="#page-53"
+          class="denhaag-pagination__link denhaag-pagination__link--arrow"
+          rel="next"
+          aria-label="Next page"
+        >
+          <svg
+            aria-hidden="true"
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 7 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.0079 1.1857C1.63618 0.8086 1.02778 0.8086 0.656065 1.18569V1.18569C0.292103 1.55492 0.291779 2.1479 0.655339 2.51752L3.63685 5.54877C4.01961 5.93791 4.01961 6.56209 3.63686 6.95123L0.655339 9.98248C0.291779 10.3521 0.292102 10.9451 0.656065 11.3143V11.3143C1.02778 11.6914 1.63618 11.6914 2.0079 11.3143L6.308 6.95201C6.69178 6.56268 6.69178 5.93732 6.308 5.54799L2.0079 1.1857Z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+      </nav>
+    )}
+  </Story>
+</Canvas>
+
+### Aligned start
+
+Align the pagination to the start of the parent element by adding the modifier `denhaag-pagination--start`, this is by default event if the modifier isn't added.
+
+<Canvas>
+  <Story name="Aligned left">
+    {() => (
+      <nav class="denhaag-pagination denhaag-pagination--start">
+        <a
+          href="#page-2"
+          class="denhaag-pagination__link denhaag-pagination__link--arrow"
+          rel="prev"
+          aria-label="Previous page"
+        >
+          <svg
+            aria-hidden="true"
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 7 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.9921 10.8143C5.36382 11.1914 5.97222 11.1914 6.34393 10.8143C6.7079 10.4451 6.70822 9.8521 6.34466 9.48248L3.36315 6.45123C2.98039 6.06209 2.98039 5.43791 3.36315 5.04877L6.34466 2.01752C6.70822 1.6479 6.7079 1.05492 6.34394 0.685696C5.97222 0.308599 5.36382 0.308599 4.9921 0.685695L0.692003 5.04799C0.308224 5.43732 0.308224 6.06268 0.692003 6.45201L4.9921 10.8143Z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+        <span role="group" class="denhaag-pagination__links">
+          <a class="denhaag-pagination__link" href="#page-1" aria-label="Page 1">
+            1
+          </a>
+          <a class="denhaag-pagination__link" href="#page-2" aria-label="Page 2" rel="prev">
+            2
+          </a>
+          <a
+            class="denhaag-pagination__link denhaag-pagination__link--current"
+            href="#page-3"
+            aria-label="Page 3"
+            aria-current="page"
+          >
+            3
+          </a>
+          <a class="denhaag-pagination__link" href="#page-4" aria-label="Page 4" rel="next">
+            4
+          </a>
+          <a class="denhaag-pagination__link" href="#page-5" aria-label="Page 5">
+            5
+          </a>
+        </span>
+        <a
+          href="#page-4"
+          class="denhaag-pagination__link denhaag-pagination__link--arrow"
+          rel="next"
+          aria-label="Next page"
+        >
+          <svg
+            aria-hidden="true"
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 7 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.0079 1.1857C1.63618 0.8086 1.02778 0.8086 0.656065 1.18569V1.18569C0.292103 1.55492 0.291779 2.1479 0.655339 2.51752L3.63685 5.54877C4.01961 5.93791 4.01961 6.56209 3.63686 6.95123L0.655339 9.98248C0.291779 10.3521 0.292102 10.9451 0.656065 11.3143V11.3143C1.02778 11.6914 1.63618 11.6914 2.0079 11.3143L6.308 6.95201C6.69178 6.56268 6.69178 5.93732 6.308 5.54799L2.0079 1.1857Z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+      </nav>
+    )}
+  </Story>
+</Canvas>
+
+### Aligned center
+
+Align the pagination in the center of the parent element by adding the modifier `denhaag-pagination--center`.
+
+<Canvas>
+  <Story name="Aligned center">
+    {() => (
+      <nav class="denhaag-pagination denhaag-pagination--center">
+        <a
+          href="#page-2"
+          class="denhaag-pagination__link denhaag-pagination__link--arrow"
+          rel="prev"
+          aria-label="Previous page"
+        >
+          <svg
+            aria-hidden="true"
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 7 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.9921 10.8143C5.36382 11.1914 5.97222 11.1914 6.34393 10.8143C6.7079 10.4451 6.70822 9.8521 6.34466 9.48248L3.36315 6.45123C2.98039 6.06209 2.98039 5.43791 3.36315 5.04877L6.34466 2.01752C6.70822 1.6479 6.7079 1.05492 6.34394 0.685696C5.97222 0.308599 5.36382 0.308599 4.9921 0.685695L0.692003 5.04799C0.308224 5.43732 0.308224 6.06268 0.692003 6.45201L4.9921 10.8143Z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+        <span role="group" class="denhaag-pagination__links">
+          <a class="denhaag-pagination__link" href="#page-1" aria-label="Page 1">
+            1
+          </a>
+          <a class="denhaag-pagination__link" href="#page-2" aria-label="Page 2" rel="prev">
+            2
+          </a>
+          <a
+            class="denhaag-pagination__link denhaag-pagination__link--current"
+            href="#page-3"
+            aria-label="Page 3"
+            aria-current="page"
+          >
+            3
+          </a>
+          <a class="denhaag-pagination__link" href="#page-4" aria-label="Page 4" rel="next">
+            4
+          </a>
+          <a class="denhaag-pagination__link" href="#page-5" aria-label="Page 5">
+            5
+          </a>
+        </span>
+        <a
+          href="#page-4"
+          class="denhaag-pagination__link denhaag-pagination__link--arrow"
+          rel="next"
+          aria-label="Next page"
+        >
+          <svg
+            aria-hidden="true"
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 7 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.0079 1.1857C1.63618 0.8086 1.02778 0.8086 0.656065 1.18569V1.18569C0.292103 1.55492 0.291779 2.1479 0.655339 2.51752L3.63685 5.54877C4.01961 5.93791 4.01961 6.56209 3.63686 6.95123L0.655339 9.98248C0.291779 10.3521 0.292102 10.9451 0.656065 11.3143V11.3143C1.02778 11.6914 1.63618 11.6914 2.0079 11.3143L6.308 6.95201C6.69178 6.56268 6.69178 5.93732 6.308 5.54799L2.0079 1.1857Z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+      </nav>
+    )}
+  </Story>
+</Canvas>
+
+### Aligned end
+
+Align the pagination to the end of the parent element by adding the modifier `denhaag-pagination--end`.
+
+<Canvas>
+  <Story name="Aligned end">
+    {() => (
+      <nav class="denhaag-pagination denhaag-pagination--end">
+        <a
+          href="#page-2"
+          class="denhaag-pagination__link denhaag-pagination__link--arrow"
+          rel="prev"
+          aria-label="Previous page"
+        >
+          <svg
+            aria-hidden="true"
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 7 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.9921 10.8143C5.36382 11.1914 5.97222 11.1914 6.34393 10.8143C6.7079 10.4451 6.70822 9.8521 6.34466 9.48248L3.36315 6.45123C2.98039 6.06209 2.98039 5.43791 3.36315 5.04877L6.34466 2.01752C6.70822 1.6479 6.7079 1.05492 6.34394 0.685696C5.97222 0.308599 5.36382 0.308599 4.9921 0.685695L0.692003 5.04799C0.308224 5.43732 0.308224 6.06268 0.692003 6.45201L4.9921 10.8143Z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+        <span role="group" class="denhaag-pagination__links">
+          <a class="denhaag-pagination__link" href="#page-1" aria-label="Page 1">
+            1
+          </a>
+          <a class="denhaag-pagination__link" href="#page-2" aria-label="Page 2" rel="prev">
+            2
+          </a>
+          <a
+            class="denhaag-pagination__link denhaag-pagination__link--current"
+            href="#page-3"
+            aria-label="Page 3"
+            aria-current="page"
+          >
+            3
+          </a>
+          <a class="denhaag-pagination__link" href="#page-4" aria-label="Page 4" rel="next">
+            4
+          </a>
+          <a class="denhaag-pagination__link" href="#page-5" aria-label="Page 5">
+            5
+          </a>
+        </span>
+        <a
+          href="#page-3"
+          class="denhaag-pagination__link denhaag-pagination__link--arrow"
+          rel="next"
+          aria-label="Next page"
+        >
+          <svg
+            aria-hidden="true"
+            class="denhaag-icon"
+            width="1em"
+            height="1em"
+            viewBox="0 0 7 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.0079 1.1857C1.63618 0.8086 1.02778 0.8086 0.656065 1.18569V1.18569C0.292103 1.55492 0.291779 2.1479 0.655339 2.51752L3.63685 5.54877C4.01961 5.93791 4.01961 6.56209 3.63686 6.95123L0.655339 9.98248C0.291779 10.3521 0.292102 10.9451 0.656065 11.3143V11.3143C1.02778 11.6914 1.63618 11.6914 2.0079 11.3143L6.308 6.95201C6.69178 6.56268 6.69178 5.93732 6.308 5.54799L2.0079 1.1857Z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+      </nav>
+    )}
+  </Story>
+</Canvas>

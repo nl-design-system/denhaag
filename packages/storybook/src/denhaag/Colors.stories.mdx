@@ -1,0 +1,69 @@
+import { Meta, ColorPalette, ColorItem } from "@storybook/blocks";
+import brandTokens from "../../../../proprietary/Proprietary/dist/index.json";
+import { path2css } from "./util.js";
+
+export const brandColorTokens = brandTokens["denhaag"]["color"];
+
+<Meta title="Den Haag/Colors" />
+
+# Colors
+
+## Color Palette
+
+<ColorPalette>
+  <ColorItem title="Green" colors={Object.values(brandColorTokens.green).map(({ value }) => value)} />
+  <ColorItem title="Blue" colors={Object.values(brandColorTokens.blue).map(({ value }) => value)} />
+  <ColorItem title="Ocher" colors={Object.values(brandColorTokens.ocher).map(({ value }) => value)} />
+  <ColorItem title="Red" colors={Object.values(brandColorTokens.red).map(({ value }) => value)} />
+  <ColorItem title="Orange" colors={Object.values(brandColorTokens.orange).map(({ value }) => value)} />
+  <ColorItem title="Grey" colors={Object.values(brandColorTokens.grey).map(({ value }) => value)} />
+  <ColorItem title="White" colors={[brandColorTokens.white.value]} />
+  <ColorItem title="Warm grey" colors={Object.values(brandColorTokens.warmgrey).map(({ value }) => value)} />
+  <ColorItem title="Black" colors={[brandColorTokens.black.value]} />
+</ColorPalette>
+
+## Design Tokens
+
+<ColorPalette>
+  {[
+    brandColorTokens.green[1],
+    brandColorTokens.green[2],
+    brandColorTokens.green[3],
+    brandColorTokens.green[4],
+    brandColorTokens.green[5],
+    brandColorTokens.blue[1],
+    brandColorTokens.blue[2],
+    brandColorTokens.blue[3],
+    brandColorTokens.blue[4],
+    brandColorTokens.blue[5],
+    brandColorTokens.ocher[1],
+    brandColorTokens.ocher[2],
+    brandColorTokens.ocher[3],
+    brandColorTokens.ocher[4],
+    brandColorTokens.ocher[5],
+    brandColorTokens.red[1],
+    brandColorTokens.red[2],
+    brandColorTokens.red[3],
+    brandColorTokens.red[4],
+    brandColorTokens.red[5],
+    brandColorTokens.orange[1],
+    brandColorTokens.orange[2],
+    brandColorTokens.orange[3],
+    brandColorTokens.orange[4],
+    brandColorTokens.orange[5],
+    brandColorTokens.grey[1],
+    brandColorTokens.grey[2],
+    brandColorTokens.grey[3],
+    brandColorTokens.grey[4],
+    brandColorTokens.warmgrey[1],
+    brandColorTokens.white,
+    brandColorTokens.black,
+  ].map(({ original: { name }, value, path }) => {
+    const cssVariable = path2css(path);
+    return <ColorItem key={cssVariable} title={name} subtitle={cssVariable} colors={[value]} />;
+  })}
+</ColorPalette>
+
+## Design Kit
+
+[Figma: Brand Identity / Color](https://figma.com/file/JpoY3waVoQGlLQzQXTL9nn/Design-System-Gemeente-Den-Haag?node-id=3497%3A16154)

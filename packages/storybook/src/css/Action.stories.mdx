@@ -1,0 +1,350 @@
+import { Canvas, Description, Meta, Story } from "@storybook/blocks";
+import "@gemeente-denhaag/action";
+import "@gemeente-denhaag/button";
+
+import pkg from "../../../../components/Action/package.json";
+import readme from "../../../../components/Action/README.md";
+
+<Meta
+  title="CSS/Actions/Action"
+  parameters={{
+    chromatic: { viewports: [1768, 1280, 768, 360] },
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "ALPHA",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Stories
+
+### Single
+
+<Canvas>
+  <Story name="Single">
+    {() => (
+      <a href="#example" class="denhaag-action denhaag-action--single">
+        <div class="denhaag-action__content">Taak</div>
+        <div class="denhaag-action__details">
+          <div class="denhaag-action__actions">
+            <svg
+              class="denhaag-action__link-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="21"
+              viewBox="0 0 20 21"
+              fill="none"
+            >
+              <path
+                d="M10.2438 4.9107C10.5692 4.58527 11.0968 4.58527 11.4223 4.9107L16.4223 9.9107C16.5785 10.067 16.6663 10.2789 16.6663 10.5C16.6663 10.721 16.5785 10.9329 16.4223 11.0892L11.4223 16.0892C11.0968 16.4147 10.5692 16.4147 10.2438 16.0892C9.91831 15.7638 9.91832 15.2361 10.2438 14.9107L13.8212 11.3333L4.16634 11.3333C3.7061 11.3333 3.33301 10.9602 3.33301 10.5C3.33301 10.0397 3.7061 9.66663 4.16634 9.66663L13.8212 9.66663L10.2438 6.08921C9.91831 5.76378 9.91831 5.23614 10.2438 4.9107Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </a>
+    )}
+  </Story>
+</Canvas>
+
+### Single - hover
+
+<Canvas>
+  <Story name="Single - hover">
+    {() => (
+      <a href="#example" class="denhaag-action denhaag-action--single denhaag-action--hover">
+        <div class="denhaag-action__content">Taak</div>
+        <div class="denhaag-action__details">
+          <div class="denhaag-action__actions">
+            <svg
+              class="denhaag-action__link-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="21"
+              viewBox="0 0 20 21"
+              fill="none"
+            >
+              <path
+                d="M10.2438 4.9107C10.5692 4.58527 11.0968 4.58527 11.4223 4.9107L16.4223 9.9107C16.5785 10.067 16.6663 10.2789 16.6663 10.5C16.6663 10.721 16.5785 10.9329 16.4223 11.0892L11.4223 16.0892C11.0968 16.4147 10.5692 16.4147 10.2438 16.0892C9.91831 15.7638 9.91832 15.2361 10.2438 14.9107L13.8212 11.3333L4.16634 11.3333C3.7061 11.3333 3.33301 10.9602 3.33301 10.5C3.33301 10.0397 3.7061 9.66663 4.16634 9.66663L13.8212 9.66663L10.2438 6.08921C9.91831 5.76378 9.91831 5.23614 10.2438 4.9107Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </a>
+    )}
+  </Story>
+</Canvas>
+
+### Single - focus
+
+<Canvas>
+  <Story name="Single - focus">
+    {() => (
+      <a href="#example" class="denhaag-action denhaag-action--single denhaag-action--focus">
+        <div class="denhaag-action__content">Taak</div>
+        <div class="denhaag-action__details">
+          <div class="denhaag-action__actions">
+            <svg
+              class="denhaag-action__link-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="21"
+              viewBox="0 0 20 21"
+              fill="none"
+            >
+              <path
+                d="M10.2438 4.9107C10.5692 4.58527 11.0968 4.58527 11.4223 4.9107L16.4223 9.9107C16.5785 10.067 16.6663 10.2789 16.6663 10.5C16.6663 10.721 16.5785 10.9329 16.4223 11.0892L11.4223 16.0892C11.0968 16.4147 10.5692 16.4147 10.2438 16.0892C9.91831 15.7638 9.91832 15.2361 10.2438 14.9107L13.8212 11.3333L4.16634 11.3333C3.7061 11.3333 3.33301 10.9602 3.33301 10.5C3.33301 10.0397 3.7061 9.66663 4.16634 9.66663L13.8212 9.66663L10.2438 6.08921C9.91831 5.76378 9.91831 5.23614 10.2438 4.9107Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </a>
+    )}
+  </Story>
+</Canvas>
+
+### Single - with date
+
+<Canvas>
+  <Story name="Single - with date">
+    {() => (
+      <a href="#example" class="denhaag-action denhaag-action--single">
+        <div class="denhaag-action__content">Taak</div>
+        <div class="denhaag-action__details">
+          <div class="denhaag-action__date">
+            <span>vóór 1 maart 2023</span>
+          </div>
+          <div class="denhaag-action__actions">
+            <svg
+              class="denhaag-action__link-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="21"
+              viewBox="0 0 20 21"
+              fill="none"
+            >
+              <path
+                d="M10.2438 4.9107C10.5692 4.58527 11.0968 4.58527 11.4223 4.9107L16.4223 9.9107C16.5785 10.067 16.6663 10.2789 16.6663 10.5C16.6663 10.721 16.5785 10.9329 16.4223 11.0892L11.4223 16.0892C11.0968 16.4147 10.5692 16.4147 10.2438 16.0892C9.91831 15.7638 9.91832 15.2361 10.2438 14.9107L13.8212 11.3333L4.16634 11.3333C3.7061 11.3333 3.33301 10.9602 3.33301 10.5C3.33301 10.0397 3.7061 9.66663 4.16634 9.66663L13.8212 9.66663L10.2438 6.08921C9.91831 5.76378 9.91831 5.23614 10.2438 4.9107Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </a>
+    )}
+  </Story>
+</Canvas>
+
+### Single - with warning date
+
+<Canvas>
+  <Story name="Single - with warning date">
+    {() => (
+      <a href="#example" class="denhaag-action denhaag-action--single">
+        <div class="denhaag-action__content">Taak</div>
+        <div class="denhaag-action__details">
+          <div class="denhaag-action__date denhaag-action__date--warning">
+            <svg
+              class="denhaag-action__warning-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="21"
+              viewBox="0 0 20 21"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_35868_30297)">
+                <path
+                  d="M8.57465 3.71672L1.51632 15.5C1.37079 15.7521 1.29379 16.0378 1.29298 16.3288C1.29216 16.6198 1.36756 16.906 1.51167 17.1588C1.65579 17.4116 1.86359 17.6223 2.11441 17.7699C2.36523 17.9175 2.65032 17.9969 2.94132 18H17.058C17.349 17.9969 17.6341 17.9175 17.8849 17.7699C18.1357 17.6223 18.3435 17.4116 18.4876 17.1588C18.6317 16.906 18.7071 16.6198 18.7063 16.3288C18.7055 16.0378 18.6285 15.7521 18.483 15.5L11.4247 3.71672C11.2761 3.4718 11.0669 3.26931 10.8173 3.12879C10.5677 2.98826 10.2861 2.91443 9.99965 2.91443C9.71321 2.91443 9.43159 2.98826 9.18199 3.12879C8.93238 3.26931 8.72321 3.4718 8.57465 3.71672Z"
+                  fill="currentColor"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10 14.6666H10.0083"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10 8V11.3333"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_35868_30297">
+                  <rect width="20" height="20" fill="white" transform="translate(0 0.5)" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span>nog 2 dagen</span>
+          </div>
+          <div class="denhaag-action__actions">
+            <svg
+              class="denhaag-action__link-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="21"
+              viewBox="0 0 20 21"
+              fill="none"
+            >
+              <path
+                d="M10.2438 4.9107C10.5692 4.58527 11.0968 4.58527 11.4223 4.9107L16.4223 9.9107C16.5785 10.067 16.6663 10.2789 16.6663 10.5C16.6663 10.721 16.5785 10.9329 16.4223 11.0892L11.4223 16.0892C11.0968 16.4147 10.5692 16.4147 10.2438 16.0892C9.91831 15.7638 9.91832 15.2361 10.2438 14.9107L13.8212 11.3333L4.16634 11.3333C3.7061 11.3333 3.33301 10.9602 3.33301 10.5C3.33301 10.0397 3.7061 9.66663 4.16634 9.66663L13.8212 9.66663L10.2438 6.08921C9.91831 5.76378 9.91831 5.23614 10.2438 4.9107Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </a>
+    )}
+  </Story>
+</Canvas>
+
+### Multiple
+
+<Canvas>
+  <Story name="Multiple">
+    {() => (
+      <div class="denhaag-action">
+        <div class="denhaag-action__content">Taak</div>
+        <div class="denhaag-action__details">
+          <div class="denhaag-action__actions">
+            <a href="#example" class="denhaag-button">
+              Actie
+            </a>
+          </div>
+        </div>
+      </div>
+    )}
+  </Story>
+</Canvas>
+
+### Multiple - hover
+
+<Canvas>
+  <Story name="Multiple - hover">
+    {() => (
+      <div class="denhaag-action">
+        <div class="denhaag-action__content">Taak</div>
+        <div class="denhaag-action__details">
+          <div class="denhaag-action__actions">
+            <a href="#example" class="denhaag-button denhaag-button--hover">
+              Actie
+            </a>
+          </div>
+        </div>
+      </div>
+    )}
+  </Story>
+</Canvas>
+
+### Multiple - focus
+
+<Canvas>
+  <Story name="Multiple - focus">
+    {() => (
+      <div class="denhaag-action">
+        <div class="denhaag-action__content">Taak</div>
+        <div class="denhaag-action__details">
+          <div class="denhaag-action__actions">
+            <a href="#example" class="denhaag-button denhaag-button--focus">
+              Actie
+            </a>
+          </div>
+        </div>
+      </div>
+    )}
+  </Story>
+</Canvas>
+
+### Multiple - with date
+
+<Canvas>
+  <Story name="Multiple - with date">
+    {() => (
+      <div class="denhaag-action">
+        <div class="denhaag-action__content">Taak</div>
+        <div class="denhaag-action__details">
+          <div class="denhaag-action__date">
+            <span>vóór 1 maart 2023</span>
+          </div>
+          <div class="denhaag-action__actions">
+            <a href="#example" class="denhaag-button">
+              Actie
+            </a>
+          </div>
+        </div>
+      </div>
+    )}
+  </Story>
+</Canvas>
+
+### Multiple - with warning date
+
+<Canvas>
+  <Story name="Multiple - with warning date">
+    {() => (
+      <div class="denhaag-action">
+        <div class="denhaag-action__content">Taak</div>
+        <div class="denhaag-action__details">
+          <div class="denhaag-action__date denhaag-action__date--warning">
+            <svg
+              class="denhaag-action__warning-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="21"
+              viewBox="0 0 20 21"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_35868_30297)">
+                <path
+                  d="M8.57465 3.71672L1.51632 15.5C1.37079 15.7521 1.29379 16.0378 1.29298 16.3288C1.29216 16.6198 1.36756 16.906 1.51167 17.1588C1.65579 17.4116 1.86359 17.6223 2.11441 17.7699C2.36523 17.9175 2.65032 17.9969 2.94132 18H17.058C17.349 17.9969 17.6341 17.9175 17.8849 17.7699C18.1357 17.6223 18.3435 17.4116 18.4876 17.1588C18.6317 16.906 18.7071 16.6198 18.7063 16.3288C18.7055 16.0378 18.6285 15.7521 18.483 15.5L11.4247 3.71672C11.2761 3.4718 11.0669 3.26931 10.8173 3.12879C10.5677 2.98826 10.2861 2.91443 9.99965 2.91443C9.71321 2.91443 9.43159 2.98826 9.18199 3.12879C8.93238 3.26931 8.72321 3.4718 8.57465 3.71672Z"
+                  fill="currentColor"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10 14.6666H10.0083"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10 8V11.3333"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_35868_30297">
+                  <rect width="20" height="20" fill="white" transform="translate(0 0.5)" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span>nog 2 dagen</span>
+          </div>
+          <div class="denhaag-action__actions">
+            <a href="#example" class="denhaag-button">
+              Actie
+            </a>
+          </div>
+        </div>
+      </div>
+    )}
+  </Story>
+</Canvas>

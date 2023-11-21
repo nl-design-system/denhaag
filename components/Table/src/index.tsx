@@ -1,3 +1,4 @@
+import './index.scss';
 export * from './Table';
 export * from './TableCell';
 export * from './TableRow';

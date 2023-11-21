@@ -22,7 +22,8 @@
   flex-direction: column;
   box-sizing: border-box;
   text-decoration: none;
-  height: var(--denhaag-card-height);
+  min-height: var(--denhaag-card-height);
+  height: 100%;
   width: var(--denhaag-card-width);
   border-width: var(--denhaag-card-border-width);
   border-style: solid;
@@ -64,7 +65,7 @@
   color: inherit;
 }
 
-.denhaag-card__subtitle,
+.utrecht-paragraph.denhaag-card__subtitle,
 .denhaag-card__date-wrapper {
   --utrecht-space-around: 0;
 
@@ -147,7 +148,8 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  height: var(--denhaag-card-case-height);
+  min-height: var(--denhaag-card-case-height);
+  height: 100%;
   border: 2px;
   border-radius: var(--denhaag-card-border-radius);
   background: transparent;

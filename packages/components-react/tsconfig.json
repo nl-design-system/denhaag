@@ -27,10 +27,16 @@
       "path": "../../components/Button"
     },
     {
+      "path": "../../components/CardGroup"
+    },
+    {
       "path": "../../components/Checkbox"
     },
     {
       "path": "../../components/FormControlLabel"
+    },
+    {
+      "path": "../../components/File"
     },
     {
       "path": "../../components/FormField"

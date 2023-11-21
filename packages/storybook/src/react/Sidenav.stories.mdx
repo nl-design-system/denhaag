@@ -1,0 +1,64 @@
+import { ArgsTable, Canvas, Meta, Story } from "@storybook/blocks";
+import { BadgeCounter } from "@gemeente-denhaag/badge-counter";
+import { Sidenav, SidenavItem, SidenavLink, SidenavList } from "@gemeente-denhaag/sidenav";
+import { ArchiveIcon, GridIcon, InboxIcon } from "@gemeente-denhaag/icons";
+import { Divider } from "@gemeente-denhaag/divider";
+
+import pkg from "../../../../components/Sidenav/package.json";
+
+<Meta
+  title="React/Navigation/Sidenav"
+  component={Sidenav}
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "ALPHA",
+    },
+  }}
+/>
+
+## Stories
+
+### Default
+
+<Canvas>
+  <Story name="Default">
+    {(args) => (
+      <Sidenav {...args}>
+        <SidenavList>
+          <SidenavItem>
+            <SidenavLink href={"/#"} current>
+              <GridIcon />
+              Overzicht
+            </SidenavLink>
+          </SidenavItem>
+          <SidenavItem>
+            <SidenavLink href={"/#"}>
+              <InboxIcon />
+              Mijn berichten
+              <BadgeCounter>2</BadgeCounter>
+            </SidenavLink>
+          </SidenavItem>
+          <SidenavItem>
+            <SidenavLink href={"/#"}>
+              <ArchiveIcon />
+              Lopende zaken
+            </SidenavLink>
+          </SidenavItem>
+        </SidenavList>
+        <Divider />
+        <SidenavList>
+          <SidenavItem>
+            <SidenavLink href={"/#"}>
+              <ArchiveIcon />
+              Lopende zaken
+            </SidenavLink>
+          </SidenavItem>
+        </SidenavList>
+      </Sidenav>
+    )}
+  </Story>
+</Canvas>
+
+<ArgsTable of={Sidenav} />

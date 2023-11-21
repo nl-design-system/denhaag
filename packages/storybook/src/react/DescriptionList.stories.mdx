@@ -1,0 +1,37 @@
+import { Canvas, Description, Meta, Story } from "@storybook/blocks";
+
+import pkg from "../../../../components/DescriptionList/package.json";
+import readme from "../../../../components/DescriptionList/README.md";
+import { DescriptionList } from "@gemeente-denhaag/descriptionlist";
+
+export const items = [
+  { title: "Beast of Bodmin", detail: "A large feline inhabiting Bodmin Moor." },
+  { title: "Morgawr", detail: "A sea serpent." },
+  { title: "Owlman", detail: "A giant owl-like creature." },
+];
+
+<Meta
+  title="React/Data Display/Description List"
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Stories
+
+### Default
+
+<Canvas>
+  <Story name="Default">{() => <DescriptionList items={items} />}</Story>
+</Canvas>
+
+### With Caption
+
+<Canvas>
+  <Story name="With Caption">{() => <DescriptionList caption="Caption" items={items} />}</Story>
+</Canvas>

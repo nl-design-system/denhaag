@@ -1,0 +1,19 @@
+import { Canvas, Meta, Story } from "@storybook/blocks";
+import "@gemeente-denhaag/page";
+
+<Meta title="CSS/Page Elements/Page" />
+
+### Default
+
+<Canvas>
+  <Story name="Default">
+    {() => (
+      <div class="denhaag-page">
+        <div class="denhaag-page-header">Header area</div>
+        <div class="denhaag-page-content">
+          <main class="denhaag-page-content__main">Content area</main>
+        </div>
+      </div>
+    )}
+  </Story>
+</Canvas>

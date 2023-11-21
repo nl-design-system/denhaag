@@ -1,0 +1,197 @@
+import { Canvas, Description, Meta, Story } from "@storybook/blocks";
+
+import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "@gemeente-denhaag/table";
+import pkg from "../../../../components/Table/package.json";
+import readme from "../../../../components/Table/README.md";
+
+<Meta
+  title="React/Data Display/Table"
+  component={Table}
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Stories
+
+### Default
+
+<Canvas>
+  <Story name="Default">
+    {() => (
+      <Table>
+        <TableCaption>He-Man and Skeletor facts</TableCaption>
+        <TableHead>
+          <TableRow>
+            <TableCell></TableCell>
+            <TableHeader className="heman">He-Man</TableHeader>
+            <TableHeader className="skeletor">Skeletor</TableHeader>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          <TableRow>
+            <TableHeader scope="row">Role</TableHeader>
+            <TableCell>Hero</TableCell>
+            <TableCell>Villain</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableHeader scope="row">Weapon</TableHeader>
+            <TableCell>Power Sword</TableCell>
+            <TableCell>Havoc Staff</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableHeader scope="row">Dark secret</TableHeader>
+            <TableCell>Expert florist</TableCell>
+            <TableCell>Cries at romcoms</TableCell>
+          </TableRow>
+        </TableBody>
+      </Table>
+    )}
+  </Story>
+</Canvas>
+
+### Hover
+
+<Canvas>
+  <Story name="Hover">
+    {() => (
+      <Table>
+        <TableCaption>He-Man and Skeletor facts</TableCaption>
+        <TableHead>
+          <TableRow tabIndex="-1">
+            <TableCell></TableCell>
+            <TableHeader className="heman">He-Man</TableHeader>
+            <TableHeader className="skeletor">Skeletor</TableHeader>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          <TableRow>
+            <TableHeader scope="row">Role</TableHeader>
+            <TableCell>Hero</TableCell>
+            <TableCell>Villain</TableCell>
+          </TableRow>
+          <TableRow className="denhaag-table__row--hover">
+            <TableHeader scope="row">Weapon</TableHeader>
+            <TableCell>Power Sword</TableCell>
+            <TableCell>Havoc Staff</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableHeader scope="row">Dark secret</TableHeader>
+            <TableCell>Expert florist</TableCell>
+            <TableCell>Cries at romcoms</TableCell>
+          </TableRow>
+        </TableBody>
+      </Table>
+    )}
+  </Story>
+</Canvas>
+
+### Focus
+
+<Canvas>
+  <Story name="Focus">
+    {() => (
+      <Table>
+        <TableCaption>He-Man and Skeletor facts</TableCaption>
+        <TableHead>
+          <TableRow tabIndex="-1">
+            <TableCell></TableCell>
+            <TableHeader className="heman">He-Man</TableHeader>
+            <TableHeader className="skeletor">Skeletor</TableHeader>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          <TableRow>
+            <TableHeader scope="row">Role</TableHeader>
+            <TableCell>Hero</TableCell>
+            <TableCell>Villain</TableCell>
+          </TableRow>
+          <TableRow className="denhaag-table__row--focus">
+            <TableHeader scope="row">Weapon</TableHeader>
+            <TableCell>Power Sword</TableCell>
+            <TableCell>Havoc Staff</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableHeader scope="row">Dark secret</TableHeader>
+            <TableCell>Expert florist</TableCell>
+            <TableCell>Cries at romcoms</TableCell>
+          </TableRow>
+        </TableBody>
+      </Table>
+    )}
+  </Story>
+</Canvas>
+
+### Simple
+
+<Canvas>
+  <Story name="Simple">
+    {() => (
+      <Table>
+        <TableCaption>Kosten overzicht</TableCaption>
+        <TableHead>
+          <TableRow tabIndex="-1">
+            <TableHeader>Soort kosten</TableHeader>
+            <TableHeader>Bedrag 2021</TableHeader>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          <TableRow>
+            <TableCell>Beheerkosten (administratie) per jaar</TableCell>
+            <TableCell>&euro; 27,50</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>Afkoopsom beheerkosten</TableCell>
+            <TableCell>&euro; 232</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>Splitsingskosten per appartementsrecht of per recht van erfpacht</TableCell>
+            <TableCell>&euro; 153</TableCell>
+          </TableRow>
+        </TableBody>
+      </Table>
+    )}
+  </Story>
+</Canvas>
+
+### Long title
+
+<Canvas>
+  <Story name="Long title">
+    {() => (
+      <Table>
+        <TableCaption>Voorbeeld met extreem lange titel die je eigenlijk wilt voorkomen.</TableCaption>
+        <TableHead>
+          <TableRow tabIndex="-1">
+            <TableHeader>Titel met een hele lange omschrijving die overloopt</TableHeader>
+            <TableHeader>Tijd</TableHeader>
+            <TableHeader>Leeftijd</TableHeader>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          <TableRow>
+            <TableCell>maandag</TableCell>
+            <TableCell>11.00 tot 12,30</TableCell>
+            <TableCell>Alle leeftijden</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>dinsdag</TableCell>
+            <TableCell>8.30 tot 11,30</TableCell>
+            <TableCell>Alle leeftijden</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>donderdag</TableCell>
+            <TableCell>11.00 tot 12,30</TableCell>
+            <TableCell>Alle leeftijden</TableCell>
+          </TableRow>
+        </TableBody>
+      </Table>
+    )}
+  </Story>
+</Canvas>

@@ -1,0 +1,52 @@
+import { ArgsTable, Canvas, Description, Meta, Story } from "@storybook/blocks";
+
+import { Button } from "@gemeente-denhaag/button";
+import { DotIndicator } from "@gemeente-denhaag/dotindicator";
+import pkg from "../../../../components/DotIndicator/package.json";
+import readme from "../../../../components/DotIndicator/README.md";
+
+<Meta
+  title="React/Data Display/Dot indicator"
+  component={DotIndicator}
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "ALPHA",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Stories
+
+### Dot indicator (on rectangle)
+
+<Canvas>
+  <Story
+    name="Indicator on rectangle"
+    parameters={{
+      docs: {
+        source: {
+          code: `
+import { DotIndicator } from "@gemeente-denhaag/dotindicator";
+const elementWithNotification = (<DotIndicator overlap="rectangle"><Button>Read messages</Button></DotIndicator>);
+// This 👆 transpiles into this 👇 in the DOM
+<div class="denhaag-dot-indicator denhaag-dot-indicator--overlap-rectangle">
+  <button>Read messages</button>
+  <span class="denhaag-dot-indicator__dot"></span>
+</div>`,
+        },
+      },
+    }}
+  >
+    {(args) => (
+      <DotIndicator overlap={"rectangle"} {...args}>
+        <Button variant={"secondary"}>Read messages</Button>
+      </DotIndicator>
+    )}
+  </Story>
+</Canvas>
+
+<ArgsTable of={DotIndicator} />

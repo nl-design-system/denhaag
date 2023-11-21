@@ -1,0 +1,19 @@
+import { Description, Meta } from "@storybook/blocks";
+
+import { FormControlLabel } from "@gemeente-denhaag/formcontrollabel";
+import pkg from "../../../../components/FormControlLabel/package.json";
+import readme from "../../../../components/FormControlLabel/README.md";
+
+<Meta
+  title="React/Input/Form control label"
+  component={FormControlLabel}
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />

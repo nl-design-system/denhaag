@@ -57,9 +57,9 @@ jobs:
         run: |
           pnpm run build:library
 
-      - name: typecheck storybook
+      - name: typecheck
         run: |
-          pnpm run typecheck:storybook
+          pnpm run typecheck
 
       - name: build storybook
         run: |

@@ -18,7 +18,7 @@
   "scripts": {
     "build": "npm-run-all build:*",
     "build:css": "rollup -c rollup.config.mjs",
-    "build:clean": "rimraf dist/.tsbuildinfo dist/*.{js,d.ts}",
+    "build:clean": "rimraf --glob dist/.tsbuildinfo dist/*.{js,d.ts}",
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {

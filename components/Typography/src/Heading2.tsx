@@ -8,7 +8,7 @@ export interface Heading2Props {
   children?: React.ReactNode;
 }
 
-export const Heading2: React.FC<Heading2Props> = (props: Heading2Props) => {
+export const Heading2 = (props: Heading2Props) => {
   const rootClassNames = clsx('utrecht-heading-2', props.className);
   return <h2 className={rootClassNames}>{props.children}</h2>;
 };
