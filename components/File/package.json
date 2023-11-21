@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/file",
-  "version": "0.1.1-alpha.29",
+  "version": "0.1.1-alpha.30",
   "description": "A file displays a link to download an attachment and metadata about the file.",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "author": "Municipality of The Hague",
@@ -27,7 +27,7 @@
   "scripts": {
     "build": "rollup -c ../../rollup.config.mjs",
     "clean": "rimraf dist tsconfig.tsbuildinfo",
-        "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\""
+    "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\""
   },
   "dependencies": {
     "@gemeente-denhaag/icons": "workspace:*"
