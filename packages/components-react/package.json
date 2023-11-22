@@ -59,6 +59,7 @@
     "@gemeente-denhaag/stylesprovider": "workspace:*",
     "@gemeente-denhaag/tab": "workspace:*",
     "@gemeente-denhaag/table": "workspace:*",
+    "@gemeente-denhaag/textbox": "workspace:*",
     "@gemeente-denhaag/textfield": "workspace:*",
     "@gemeente-denhaag/typography": "workspace:*"
   },
