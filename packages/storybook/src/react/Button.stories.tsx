@@ -2,6 +2,7 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import { Button } from '@gemeente-denhaag/button';
 import { ArrowLeftIcon, ArrowRightIcon } from '@gemeente-denhaag/icons';
+
 import readme from '../../../../components/Button/README.md';
 
 const exampleArgs = {
