@@ -1,11 +1,10 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import { ActionSingle, ActionSingleProps } from '@gemeente-denhaag/action';
-import { FormatDateLabels } from '@gemeente-denhaag/utils';
+import { ActionSingle } from '@gemeente-denhaag/action';
 
 import readme from '../../../../components/Action/README.md';
 
-const labels: FormatDateLabels = {
+const labels = {
   today: 'vandaag',
   yesterday: 'gisteren',
   before: 'vóór',
@@ -17,14 +16,14 @@ const labels: FormatDateLabels = {
   },
 };
 
-const exampleArgs: ActionSingleProps = {
+const exampleArgs = {
   children: <strong>Taak</strong>,
   link: '#example',
   labels,
 };
 
 const meta = {
-  id: 'react-action',
+  id: 'react-actions-action',
   title: 'React/Actions/Action',
   component: ActionSingle,
   args: exampleArgs,

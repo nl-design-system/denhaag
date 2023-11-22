@@ -1,12 +1,11 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import { ActionMulti, ActionMultiProps } from '@gemeente-denhaag/action';
-import { FormatDateLabels } from '@gemeente-denhaag/utils';
+import { ActionMulti } from '@gemeente-denhaag/action';
 import { ButtonLink } from '@utrecht/component-library-react';
 
 import readme from '../../../../components/Action/README.md';
 
-const labels: FormatDateLabels = {
+const labels = {
   today: 'vandaag',
   yesterday: 'gisteren',
   before: 'vóór',
@@ -18,14 +17,14 @@ const labels: FormatDateLabels = {
   },
 };
 
-const exampleArgs: ActionMultiProps = {
+const exampleArgs = {
   labels,
   children: <strong>Taak</strong>,
   actions: <ButtonLink href="#example">Actie</ButtonLink>,
 };
 
 const meta = {
-  id: 'react-action-multiple',
+  id: 'react-actions-action-multiple',
   title: 'React/Actions/Action Multiple',
   component: ActionMulti,
   args: exampleArgs,
