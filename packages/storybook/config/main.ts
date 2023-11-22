@@ -13,6 +13,7 @@ const config: StorybookConfig = {
     options: {},
   },
   addons: [
+    '@storybook/addon-actions',
     '@storybook/addon-docs',
     '@storybook/addon-a11y',
     '@storybook/addon-viewport',
