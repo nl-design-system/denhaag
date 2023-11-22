@@ -37,6 +37,14 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {};
 
+export const Checked: Story = {
+  args: { ...Default.args, checked: true },
+};
+
+export const Focus: Story = {
+  args: { ...Default.args, className: 'denhaag-checkbox--focus' },
+};
+
 export const Disabled: Story = {
   args: { ...Default.args, disabled: true },
 };
