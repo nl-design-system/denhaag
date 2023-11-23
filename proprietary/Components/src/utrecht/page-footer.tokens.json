@@ -2,7 +2,7 @@
   "utrecht": {
     "page-footer": {
       "background-color": {
-        "value": "hsl(48deg 94% 48%)"
+        "value": "{denhaag.color.grey.4}"
       },
       "color": {
         "value": "{denhaag.color.black}"
