@@ -23,6 +23,7 @@ export interface IconButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>
  */
 export const IconButton: React.FC<IconButtonProps> = ({ ...props }: IconButtonProps) => {
   const rootClassNames = clsx('denhaag-icon-button', props.className);
+
   return (
     <button {...props} className={rootClassNames}>
       {props.children}
