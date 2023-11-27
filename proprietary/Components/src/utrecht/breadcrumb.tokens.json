@@ -12,15 +12,15 @@
         "padding-inline-start": { "value": "14px" }
       },
       "link": {
-        "color": { "value": "{denhaag.color.blue.4}" },
+        "color": { "value": "{denhaag.color.blue.3}" },
         "focus": {
           "background-color": {},
-          "color": { "value": "{denhaag.color.blue.3}" },
-          "text-decoration": {}
+          "color": {},
+          "text-decoration": { "value": "underline" }
         },
         "hover": {
           "color": {},
-          "text-decoration": {}
+          "text-decoration": { "value": "underline" }
         },
         "current": {
           "font-weight": {}
