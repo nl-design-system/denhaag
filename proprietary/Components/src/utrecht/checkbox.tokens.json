@@ -1,38 +1,56 @@
 {
   "utrecht": {
-    "custom-checkbox": {
+    "checkbox": {
       "background-color": { "value": "{denhaag.color.white}" },
       "border-color": { "value": "{denhaag.color.grey.3}" },
-      "border-radius": { "value": "3px" },
+      "border-radius": { "value": "{denhaag.border.radius}" },
       "border-width": { "value": "1px" },
       "color": { "value": "{denhaag.color.white}" },
       "size": { "value": "20px" },
       "icon": {
-        "size": { "value": "{denhaag.typography.scale.lg.font-size}" }
+        "size": { "value": "16px" }
+      },
+      "active": {
+        "border-color": { "value": "{denhaag.color.green.3}" },
+        "border-width": {},
+        "background-color": { "value": "{denhaag.color.green.3}" },
+        "color": {}
+      },
+      "hover": {
+        "border-color": { "value": "{denhaag.color.grey.4}" },
+        "border-width": {},
+        "background-color": {},
+        "color": {}
+      },
+      "focus": {
+        "border-color": { "value": "{denhaag.color.grey.4}" },
+        "border-width": {},
+        "background-color": {},
+        "color": {}
       },
       "disabled": {
-        "border-color": { "value": "{denhaag.color.grey.3}" },
-        "border-width": { "value": "1px" },
-        "background-color": { "value": "{denhaag.color.grey.1}" },
-        "color": { "value": "{denhaag.color.white}" }
+        "border-color": { "value": "{denhaag.color.grey.4}" },
+        "border-width": {},
+        "background-color": { "value": "{denhaagcolor.grey.1}" },
+        "color": {}
       },
       "checked": {
         "border-color": { "value": "{denhaag.color.green.3}" },
-        "border-width": { "value": "1px" },
+        "border-width": {},
         "background-color": { "value": "{denhaag.color.green.3}" },
-        "color": { "value": "{denhaag.color.white}" }
+        "color": {}
+      },
+      "indeterminate": {
+        "border-color": {},
+        "border-width": {},
+        "background-color": {},
+        "color": {}
       },
       "invalid": {
         "border-color": { "value": "{denhaag.color.red.3}" },
-        "border-width": { "value": "1px" },
-        "background-color": { "value": "{denhaag.color.red.3}" },
-        "color": { "value": "{denhaag.color.white}" }
-      },
-      "focus": {
-        "background-color": { "value": "{denhaag.color.white}" },
-        "border-color": { "value": "{denhaag.color.grey.3}" },
-        "border-width": { "value": "1px" },
-        "color": { "value": "{denhaag.color.white}" }
+        "border-width": {},
+        "background-color": {},
+        "color": {}
       }
     }
   }
