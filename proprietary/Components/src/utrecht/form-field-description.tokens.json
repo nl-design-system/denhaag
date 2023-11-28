@@ -10,12 +10,15 @@
       "font-size": {
         "value": "{denhaag.typography.scale.s.font-size}"
       },
-      "font-weight": {
-        "value": "{denhaag.typography.weight.regular}"
-      },
+      "font-style": {},
+      "margin-block-start": {},
+      "margin-block-end": {},
       "invalid": {
         "color": {
           "value": "{denhaag.color.red.3}"
+        },
+        "valid": {
+          "color": {}
         }
       }
     }
