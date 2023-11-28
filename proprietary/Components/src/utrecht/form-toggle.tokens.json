@@ -7,8 +7,6 @@
       "border-radius": { "value": "12px" },
       "border-width": { "value": "0" },
       "color": { "value": "{denhaag.color.white}" },
-      "height": { "value": "1.5rem" },
-      "width": { "value": "3rem" },
       "track": {
         "border-radius": {},
         "disabled": {
@@ -30,8 +28,8 @@
       },
       "focus": {
         "border-color": { "value": "{denhaag.focus.border-color}" },
-        "border-width": { "value": "{denhaag.focus.border-width}" },
-        "border-style": { "value": "{denhaag.focus.border-style}" }
+        "border-style": { "value": "{denhaag.focus.border-style}" },
+        "border-width": { "value": "{denhaag.focus.border-width}" }
       }
     }
   }
