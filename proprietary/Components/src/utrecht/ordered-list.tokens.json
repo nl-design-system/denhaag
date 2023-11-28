@@ -1,9 +1,15 @@
 {
   "utrecht": {
     "ordered-list": {
+      "font-size": {},
+      "line-height": {},
+      "margin-block-start": {},
+      "margin-block-end": {},
+      "padding-inline-start": {},
       "item": {
         "margin-block-start": { "value": "0" },
-        "margin-block-end": { "value": "0" }
+        "margin-block-end": { "value": "0" },
+        "padding-inline-start": {}
       }
     }
   }
