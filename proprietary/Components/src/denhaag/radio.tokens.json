@@ -1,13 +1,13 @@
 {
   "denhaag": {
     "radio": {
-      "size": { "value": "{utrecht.custom-checkbox.size}" },
+      "size": { "value": "{utrecht.checkbox.size}" },
       "background-color": { "value": "{denhaag.color.white}" },
-      "border-width": { "value": "{utrecht.custom-checkbox.border-width}" },
-      "border-color": { "value": "{utrecht.custom-checkbox.border-color}" },
+      "border-width": { "value": "{utrecht.checkbox.border-width}" },
+      "border-color": { "value": "{utrecht.checkbox.border-color}" },
       "checked": {
-        "background-color": { "value": "{utrecht.custom-checkbox.checked.background-color}" },
-        "border-color": { "value": "{utrecht.custom-checkbox.checked.border-color}" },
+        "background-color": { "value": "{utrecht.checkbox.checked.background-color}" },
+        "border-color": { "value": "{utrecht.checkbox.checked.border-color}" },
         "inner": {
           "size": { "value": "6px" },
           "background-color": { "value": "{denhaag.color.white}" }
@@ -21,11 +21,11 @@
         }
       },
       "invalid": {
-        "border-color": { "value": "{utrecht.custom-checkbox.invalid.border-color}" }
+        "border-color": { "value": "{utrecht.checkbox.invalid.border-color}" }
       },
       "disabled": {
-        "background-color": { "value": "{utrecht.custom-checkbox.disabled.background-color}" },
-        "border-color": { "value": "{utrecht.custom-checkbox.disabled.border-color}" }
+        "background-color": { "value": "{utrecht.checkbox.disabled.background-color}" },
+        "border-color": { "value": "{utrecht.checkbox.disabled.border-color}" }
       },
       "hover": {
         "border-color": { "value": "{denhaag.checkbox.hover.border-color}" },
