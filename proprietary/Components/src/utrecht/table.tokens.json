@@ -3,6 +3,9 @@
     "table": {
       "border-color": { "value": "{denhaag.color.grey.2}" },
       "border-width": { "value": "1px" },
+      "font-family": {},
+      "font-size": {},
+      "line-height": {},
       "margin-block-end": {},
       "margin-block-start": {},
       "caption": {
@@ -15,14 +18,14 @@
         "margin-block-end": { "value": "{denhaag.space.block.xl}" }
       },
       "header": {
-        "font-size": {},
         "font-weight": {},
+        "background-color": {},
         "color": {},
         "text-transform": {},
         "border-block-end-color": { "value": "{denhaag.color.grey.1}" },
         "border-block-end-width": { "value": "1px" }
       },
-      "heading": {
+      "header-cell": {
         "font-size": { "value": "18px" },
         "font-weight": { "value": "700" },
         "color": { "value": "{denhaag.color.green.3}" },
@@ -33,7 +36,10 @@
         "padding-block-end": { "value": "{denhaag.space.block.md}" },
         "padding-block-start": { "value": "{denhaag.space.block.md}" },
         "padding-inline-end": { "value": "{denhaag.space.inline.md}" },
-        "padding-inline-start": { "value": "{denhaag.space.inline.md}" }
+        "padding-inline-start": { "value": "{denhaag.space.inline.md}" },
+        "icon": {
+          "size": {}
+        }
       },
       "row": {
         "border-block-end-color": { "value": "{denhaag.color.grey.1}" },
