@@ -15,11 +15,11 @@
         "color": { "value": "{denhaag.color.blue.3}" },
         "focus": {
           "background-color": {},
-          "color": {},
+          "color": { "value": "{denhaag.color.blue.4}" },
           "text-decoration": { "value": "underline" }
         },
         "hover": {
-          "color": {},
+          "color": { "value": "{denhaag.color.blue.4}" },
           "text-decoration": { "value": "underline" }
         },
         "current": {
