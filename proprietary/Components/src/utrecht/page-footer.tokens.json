@@ -7,9 +7,7 @@
       "background-color": {
         "value": "{denhaag.color.grey.4}"
       },
-      "background-image": {
-        "value": ""
-      },
+      "background-image": {},
       "padding-inline-end": {
         "value": "30px"
       },
