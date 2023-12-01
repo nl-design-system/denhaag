@@ -12,13 +12,30 @@
         "color": {},
         "font-size": { "value": "{denhaag.typography.scale.lg.font-size} " },
         "font-weight": {},
-        "line-height": { "value": "26px" }
+        "line-height": { "value": "26px" },
+
+        "list": {
+          "margin-block-start": { "value": "{denhaag.space.block.2xl}" }
+        },
+        "paragraph": {
+          "margin-block-start": { "value": "{denhaag.space.block.2xl}" }
+        }
       },
       "small": {
         "color": {},
         "font-size": {},
         "font-weight": {},
         "line-height": {}
+      },
+      "distanced": {
+        "margin-block-start": { "value": "0" },
+        "margin-block-end": { "value": "0" }
+      },
+      "list": {
+        "margin-block-start": { "value": "{denhaag.space.block.xl}" }
+      },
+      "paragraph": {
+        "margin-block-start": { "value": "14.24px" }
       }
     }
   }
