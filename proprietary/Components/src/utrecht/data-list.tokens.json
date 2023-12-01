@@ -1,9 +1,7 @@
 {
   "utrecht": {
     "data-list": {
-      "margin-block-end": {
-        "value": "{}"
-      },
+      "margin-block-end": {},
       "margin-block-start": {
         "value": "24px"
       },
