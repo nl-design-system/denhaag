@@ -10,7 +10,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: var(--utrecht-checkbox-size, var(--utrecht-checkbox-size));
+  width: var(--utrecht-checkbox-size);
   margin-inline-start: 0;
   margin-inline-end: 0;
   margin-block-start: 0;
@@ -24,7 +24,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: var(--utrecht-checkbox-size, var(--utrecht-checkbox-size));
+  width: var(--utrecht-checkbox-size);
   aspect-ratio: 1;
   background-color: var(--utrecht-checkbox-background-color, var(--utrecht-form-control-background-color));
   border-width: var(--utrecht-checkbox-border-width, var(--utrecht-form-control-border-width));
