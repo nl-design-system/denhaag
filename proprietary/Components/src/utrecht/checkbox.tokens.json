@@ -30,7 +30,7 @@
       },
       "disabled": {
         "border-color": { "value": "{denhaag.color.grey.4}" },
-        "border-width": {},
+        "border-width": { "value": "1px" },
         "background-color": { "value": "{denhaag.color.grey.1}" },
         "color": {}
       },
