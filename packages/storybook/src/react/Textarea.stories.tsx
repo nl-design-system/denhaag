@@ -1,10 +1,9 @@
-import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import { Textarea } from '@utrecht/component-library-react';
+import Textarea from '@gemeente-denhaag/textarea';
 import readme from '../../../../components/TextField/README.md';
 
 const meta = {
-  title: 'React/Input/Utrecht TextArea',
+  title: 'React/Input/TextArea',
   id: 'react-textarea',
   component: Textarea,
   tags: ['autodocs'],

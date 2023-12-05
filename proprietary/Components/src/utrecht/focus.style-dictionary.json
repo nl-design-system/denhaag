@@ -6,6 +6,7 @@
       "border-color": { "value": "{denhaag.focus.border-color.value}" },
       "border-style": { "value": "{denhaag.focus.border-style.value}" },
       "outline-color": { "value": "{denhaag.focus.border-color.value}" },
+      "outline-offset": { "value": "0" },
       "outline-style": { "value": "{denhaag.focus.border-style.value}" },
       "outline-width": { "value": "{denhaag.focus.border-width.value}" },
       "inverse": {

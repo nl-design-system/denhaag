@@ -29,6 +29,10 @@
     "clean": "rimraf dist tsconfig.tsbuildinfo",
     "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\""
   },
+  "dependencies": {
+    "@utrecht/component-library-react": "2.0.0",
+    "@utrecht/components": "2.0.0"
+  },
   "devDependencies": {
     "@gemeente-denhaag/form-field": "workspace:*",
     "@gemeente-denhaag/formcontrollabel": "workspace:*"
