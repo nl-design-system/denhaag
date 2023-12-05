@@ -1,70 +1,69 @@
-import { Canvas, Description, Meta, Story } from "@storybook/blocks";
+import React from 'react';
+import { Meta, StoryObj } from '@storybook/react';
+import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from '@gemeente-denhaag/table';
+import readme from '../../../../components/Table/README.md';
 
-import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "@gemeente-denhaag/table";
-import pkg from "../../../../components/Table/package.json";
-import readme from "../../../../components/Table/README.md";
+const exampleArgs = {
+  children: (
+    <>
+      <TableCaption>He-Man and Skeletor facts</TableCaption>
+      <TableHead>
+        <TableRow>
+          <TableCell></TableCell>
+          <TableHeader className="heman">He-Man</TableHeader>
+          <TableHeader className="skeletor">Skeletor</TableHeader>
+        </TableRow>
+      </TableHead>
+      <TableBody>
+        <TableRow>
+          <TableHeader scope="row">Role</TableHeader>
+          <TableCell>Hero</TableCell>
+          <TableCell>Villain</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHeader scope="row">Weapon</TableHeader>
+          <TableCell>Power Sword</TableCell>
+          <TableCell>Havoc Staff</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHeader scope="row">Dark secret</TableHeader>
+          <TableCell>Expert florist</TableCell>
+          <TableCell>Cries at romcoms</TableCell>
+        </TableRow>
+      </TableBody>
+    </>
+  ),
+};
 
-<Meta
-  title="React/Data Display/Table"
-  component={Table}
-  parameters={{
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
-    docs: { source: { type: "dynamic" } },
-    status: {
-      type: "WORK IN PROGRESS",
+const meta = {
+  id: 'react-data-display-table',
+  title: 'React/Data Display/Table',
+  component: Table,
+  args: exampleArgs,
+  tags: ['autodocs'],
+  parameters: {
+    chromatic: { viewports: [1768, 1280, 768, 360] },
+    docs: {
+      description: {
+        component: readme,
+      },
     },
-  }}
-/>
+  },
+} as Meta<typeof Table>;
 
-<Description markdown={readme} />
+export default meta;
+type Story = StoryObj<typeof meta>;
 
-## Stories
+export const Default: Story = {};
 
-### Default
-
-<Canvas>
-  <Story name="Default">
-    {() => (
-      <Table>
+export const Hover: Story = {
+  args: {
+    ...Default.args,
+    children: (
+      <>
         <TableCaption>He-Man and Skeletor facts</TableCaption>
         <TableHead>
-          <TableRow>
-            <TableCell></TableCell>
-            <TableHeader className="heman">He-Man</TableHeader>
-            <TableHeader className="skeletor">Skeletor</TableHeader>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          <TableRow>
-            <TableHeader scope="row">Role</TableHeader>
-            <TableCell>Hero</TableCell>
-            <TableCell>Villain</TableCell>
-          </TableRow>
-          <TableRow>
-            <TableHeader scope="row">Weapon</TableHeader>
-            <TableCell>Power Sword</TableCell>
-            <TableCell>Havoc Staff</TableCell>
-          </TableRow>
-          <TableRow>
-            <TableHeader scope="row">Dark secret</TableHeader>
-            <TableCell>Expert florist</TableCell>
-            <TableCell>Cries at romcoms</TableCell>
-          </TableRow>
-        </TableBody>
-      </Table>
-    )}
-  </Story>
-</Canvas>
-
-### Hover
-
-<Canvas>
-  <Story name="Hover">
-    {() => (
-      <Table>
-        <TableCaption>He-Man and Skeletor facts</TableCaption>
-        <TableHead>
-          <TableRow tabIndex="-1">
+          <TableRow tabIndex={-1}>
             <TableCell></TableCell>
             <TableHeader className="heman">He-Man</TableHeader>
             <TableHeader className="skeletor">Skeletor</TableHeader>
@@ -87,20 +86,19 @@ import readme from "../../../../components/Table/README.md";
             <TableCell>Cries at romcoms</TableCell>
           </TableRow>
         </TableBody>
-      </Table>
-    )}
-  </Story>
-</Canvas>
+      </>
+    ),
+  },
+};
 
-### Focus
-
-<Canvas>
-  <Story name="Focus">
-    {() => (
-      <Table>
+export const Focus: Story = {
+  args: {
+    ...Default.args,
+    children: (
+      <>
         <TableCaption>He-Man and Skeletor facts</TableCaption>
         <TableHead>
-          <TableRow tabIndex="-1">
+          <TableRow tabIndex={-1}>
             <TableCell></TableCell>
             <TableHeader className="heman">He-Man</TableHeader>
             <TableHeader className="skeletor">Skeletor</TableHeader>
@@ -123,20 +121,19 @@ import readme from "../../../../components/Table/README.md";
             <TableCell>Cries at romcoms</TableCell>
           </TableRow>
         </TableBody>
-      </Table>
-    )}
-  </Story>
-</Canvas>
+      </>
+    ),
+  },
+};
 
-### Simple
-
-<Canvas>
-  <Story name="Simple">
-    {() => (
-      <Table>
+export const Simple: Story = {
+  args: {
+    ...Default.args,
+    children: (
+      <>
         <TableCaption>Kosten overzicht</TableCaption>
         <TableHead>
-          <TableRow tabIndex="-1">
+          <TableRow tabIndex={-1}>
             <TableHeader>Soort kosten</TableHeader>
             <TableHeader>Bedrag 2021</TableHeader>
           </TableRow>
@@ -155,20 +152,19 @@ import readme from "../../../../components/Table/README.md";
             <TableCell>&euro; 153</TableCell>
           </TableRow>
         </TableBody>
-      </Table>
-    )}
-  </Story>
-</Canvas>
+      </>
+    ),
+  },
+};
 
-### Long title
-
-<Canvas>
-  <Story name="Long title">
-    {() => (
-      <Table>
+export const LongTitle: Story = {
+  args: {
+    ...Default.args,
+    children: (
+      <>
         <TableCaption>Voorbeeld met extreem lange titel die je eigenlijk wilt voorkomen.</TableCaption>
         <TableHead>
-          <TableRow tabIndex="-1">
+          <TableRow tabIndex={-1}>
             <TableHeader>Titel met een hele lange omschrijving die overloopt</TableHeader>
             <TableHeader>Tijd</TableHeader>
             <TableHeader>Leeftijd</TableHeader>
@@ -191,7 +187,7 @@ import readme from "../../../../components/Table/README.md";
             <TableCell>Alle leeftijden</TableCell>
           </TableRow>
         </TableBody>
-      </Table>
-    )}
-  </Story>
-</Canvas>
+      </>
+    ),
+  },
+};
