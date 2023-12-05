@@ -732,6 +732,12 @@ importers:
 
   components/Radio:
     dependencies:
+      '@utrecht/component-library-react':
+        specifier: 2.0.0
+        version: 2.0.0(react-dom@18.2.0)(react@18.2.0)
+      '@utrecht/components':
+        specifier: 2.0.0
+        version: 2.0.0
       react:
         specifier: ^18.0.0
         version: 18.2.0
@@ -815,18 +821,29 @@ importers:
         specifier: 1.0.1-alpha.2
         version: 1.0.1-alpha.2
 
-  components/Textbox:
+  components/Textarea:
     dependencies:
-      react:
-        specifier: ^18.0.0
-        version: 18.2.0
-    devDependencies:
       '@utrecht/component-library-react':
         specifier: 2.0.0
         version: 2.0.0(react-dom@18.2.0)(react@18.2.0)
       '@utrecht/components':
         specifier: 2.0.0
         version: 2.0.0
+      react:
+        specifier: ^18.0.0
+        version: 18.2.0
+
+  components/Textbox:
+    dependencies:
+      '@utrecht/component-library-react':
+        specifier: 2.0.0
+        version: 2.0.0(react-dom@18.2.0)(react@18.2.0)
+      '@utrecht/components':
+        specifier: 2.0.0
+        version: 2.0.0
+      react:
+        specifier: ^18.0.0
+        version: 18.2.0
 
   components/Typography:
     dependencies:
@@ -1022,6 +1039,9 @@ importers:
       '@gemeente-denhaag/table':
         specifier: workspace:*
         version: link:../../components/Table
+      '@gemeente-denhaag/textarea':
+        specifier: workspace:*
+        version: link:../../components/Textarea
       '@gemeente-denhaag/textbox':
         specifier: workspace:*
         version: link:../../components/Textbox
@@ -1130,6 +1150,9 @@ importers:
       '@gemeente-denhaag/table':
         specifier: workspace:*
         version: link:../../components/Table
+      '@gemeente-denhaag/textarea':
+        specifier: workspace:*
+        version: link:../../components/Textarea
       '@gemeente-denhaag/textbox':
         specifier: workspace:*
         version: link:../../components/Textbox
@@ -1346,6 +1369,9 @@ importers:
       '@gemeente-denhaag/table':
         specifier: workspace:*
         version: link:../../components/Table
+      '@gemeente-denhaag/textarea':
+        specifier: workspace:*
+        version: link:../../components/Textarea
       '@gemeente-denhaag/textbox':
         specifier: workspace:*
         version: link:../../components/Textbox
@@ -7827,7 +7853,7 @@ packages:
       lodash.chunk: 4.2.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-    dev: true
+    dev: false
 
   /@utrecht/components@1.0.0-alpha.459:
     resolution: {integrity: sha512-kN7K92t4zdomnyoKsi8tKF0l8v5d45cZmnVycERTdPXTfQIVeV8svEO2nTqv8GtWcsTwO94Am06gjCPMY2QJdA==}
@@ -7844,7 +7870,7 @@ packages:
     resolution: {integrity: sha512-PZmvcmHa5SB4V5xLV/5iqyQfN7rVXN5FKY/pXKX2MopUd/FdRM0uTaVcDmUn62jDOcoisO4UrmttzKe75ysh/Q==}
     dependencies:
       clsx: 1.2.1
-    dev: true
+    dev: false
 
   /@webassemblyjs/ast@1.11.5:
     resolution: {integrity: sha512-LHY/GSAZZRpsNQH+/oHqhRQ5FT7eoULcBqgfyTB5nQHogFnK3/7QoN7dLnwSE/JkUAF0SrRuclT7ODqMFtWxxQ==}

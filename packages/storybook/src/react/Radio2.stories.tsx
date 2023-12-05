@@ -1,13 +1,13 @@
 import { Meta, StoryObj } from '@storybook/react';
-import Textbox from '@gemeente-denhaag/textbox';
 import readme from '../../../../components/TextField/README.md';
+import RadioButton from '@gemeente-denhaag/radio';
 
 const meta = {
-  title: 'React/Input/TextBox',
-  id: 'react-textbox',
-  component: Textbox,
+  title: 'React/Input/Utrecht Radio',
+  id: 'react-radio',
+  component: RadioButton,
   tags: ['autodocs'],
-  args: { placeholder: 'Placeholder' },
+  args: { },
   parameters: {
     docs: {
       description: {
@@ -15,7 +15,7 @@ const meta = {
       },
     },
   },
-} as Meta<typeof Textbox>;
+} as Meta<typeof RadioButton>;
 
 export default meta;
 
