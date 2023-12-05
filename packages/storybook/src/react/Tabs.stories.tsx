@@ -11,8 +11,8 @@ const exampleArgs: TabsProps = {
 };
 
 const meta = {
-  id: 'react-navigation-tab',
-  title: 'React/Navigation/Tab',
+  id: 'react-navigation-tabs',
+  title: 'React/Navigation/Tabs',
   component: Tabs,
   args: exampleArgs,
   tags: ['autodocs'],
