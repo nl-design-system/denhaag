@@ -37,6 +37,30 @@ const createConfig = ({ dir, format, baseUrl }) => ({
     postcss({
       extensions: ['.css', '.scss'],
       minimize: true,
+      inject: (css, { insertAt } = {}) => {
+        return `  
+          const head = document.head || document.getElementsByTagName('head')[0]
+          const style = document.createElement('style')
+          style.type = 'text/css'
+          style.nonce = 'nonce-2RGEq4SsXlbrvR8qi1xM3A=='
+        
+          if (${insertAt}=== 'top') {
+            if (head.firstChild) {
+              head.insertBefore(style, head.firstChild)
+            } else {
+              head.appendChild(style)
+            }
+          } else {
+            head.appendChild(style)
+          }
+        
+          if (style.styleSheet) {
+            style.styleSheet.cssText = ${css}
+          } else {
+            style.appendChild(document.createTextNode(${css}))
+          }
+        `;
+      },
     }),
     nodeResolve(),
     commonjs({ include: /node_modules/ }),
