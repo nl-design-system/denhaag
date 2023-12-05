@@ -18,7 +18,6 @@ const config: StorybookConfig = {
     '@storybook/addon-a11y',
     '@storybook/addon-viewport',
     '@storybook/preset-scss',
-    '@storybook/addon-controls',
     '@etchteam/storybook-addon-status/register',
     '@whitespace/storybook-addon-html',
     '@storybook/addon-links',
