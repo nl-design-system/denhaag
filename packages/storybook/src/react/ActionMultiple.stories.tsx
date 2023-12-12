@@ -30,7 +30,6 @@ const meta = {
   args: exampleArgs,
   tags: ['autodocs'],
   parameters: {
-    chromatic: { viewports: [1768, 1280, 768, 360] },
     docs: {
       description: {
         component: readme,
