@@ -1,7 +1,1 @@
 @import "~@utrecht/components/radio-button/css";
-
-//Override Utrecht settings to fix issues for Den Haag
-.utrecht-radio-button.denhaag-radio-button {
-  min-block-size: 22px;
-  min-inline-size: 22px;
-}
