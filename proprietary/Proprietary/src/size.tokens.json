@@ -1,0 +1,80 @@
+{
+  "denhaag": {
+    "size": {
+      "5xs": {
+        "value": "2px",
+        "type": "sizing"
+      },
+      "4xs": {
+        "value": "4px",
+        "type": "sizing"
+      },
+      "3xs": {
+        "value": "8px",
+        "type": "sizing"
+      },
+      "2xs": {
+        "value": "16px",
+        "type": "sizing"
+      },
+      "xs": {
+        "value": "24px",
+        "type": "sizing"
+      },
+      "sm": {
+        "value": "32px",
+        "type": "sizing"
+      },
+      "md": {
+        "value": "48px",
+        "type": "sizing"
+      },
+      "lg": {
+        "value": "64px",
+        "type": "sizing"
+      },
+      "xl": {
+        "value": "96px",
+        "type": "sizing"
+      },
+      "2xl": {
+        "value": "160px",
+        "type": "sizing"
+      },
+      "icon": {
+        "xs": {
+          "value": "16px",
+          "type": "sizing"
+        },
+        "sm": {
+          "value": "20px",
+          "type": "sizing"
+        },
+        "md": {
+          "value": "24px",
+          "type": "sizing"
+        },
+        "lg": {
+          "value": "24px",
+          "type": "sizing"
+        },
+        "xl": {
+          "value": "24px",
+          "type": "sizing"
+        },
+        "2xl": {
+          "value": "32px",
+          "type": "sizing"
+        },
+        "3xl": {
+          "value": "40px",
+          "type": "sizing"
+        },
+        "4xl": {
+          "value": "48px",
+          "type": "sizing"
+        }
+      }
+    }
+  }
+}

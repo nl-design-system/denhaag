@@ -8,6 +8,7 @@
       "border": {
         "value": "{denhaag.focus.border-width} {denhaag.focus.border-style} {denhaag.focus.border-color}"
       },
+      "offset": { "value": "0" },
       "color": {}
     }
   }
