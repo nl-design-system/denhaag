@@ -52,7 +52,7 @@ export const iconStart: Story = {
   render: (args) => (
     <Paragraph>
       It is possible to put{' '}
-      <Link disabled icon={<ArrowLeftIcon />} iconAlign="start" {...args}>
+      <Link icon={<ArrowLeftIcon />} iconAlign="start" {...args}>
         a link
       </Link>{' '}
       in a Paragraph element.
@@ -64,7 +64,7 @@ export const iconEnd: Story = {
   render: (args) => (
     <Paragraph>
       It is possible to put{' '}
-      <Link disabled icon={<ArrowRightIcon />} {...args}>
+      <Link icon={<ArrowRightIcon />} {...args}>
         a link
       </Link>{' '}
       in a Paragraph element.
