@@ -24,7 +24,7 @@ export interface MenuButtonProps {
    * If the element is active or not. You an use this property to mark the menu
    * item of the current active page.
    */
-  active: boolean;
+  active?: boolean;
   /**
    * The URL that the hyperlink points to. Links are not restricted to HTTP-based
    * URLs — they can use any URL scheme supported by browsers.
@@ -83,7 +83,7 @@ export interface MenuButtonExpandableProps extends ButtonHTMLAttributes<HTMLButt
    * If the element is active or not. You an use this property to mark the menu
    * item of the current active page.
    */
-  active: boolean;
+  active?: boolean;
 }
 
 export const MenuButton: React.FC<MenuButtonProps> = ({ active = false, ...props }: MenuButtonProps) => {

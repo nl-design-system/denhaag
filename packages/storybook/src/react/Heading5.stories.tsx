@@ -1,29 +1,28 @@
-import React from 'react';
-import { Meta, Story } from '@storybook/react';
-import { Heading5, Heading5Props } from '@gemeente-denhaag/typography';
-import pkg from '../../../../components/Typography/package.json';
+import { Meta, StoryObj } from '@storybook/react';
+import { Heading5 } from '@gemeente-denhaag/typography';
 
-export default {
+import readme from '../../../../components/Typography/README.md';
+
+const exampleArgs = {
+  children: 'This is a bit of text inside a Header5 component.',
+};
+
+const meta = {
+  id: 'react-data-display-typography-header-5',
   title: 'React/Data Display/Typography/Heading5',
+  component: Heading5,
+  args: exampleArgs,
+  tags: ['autodocs'],
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
-      source: {
-        type: 'dynamic',
+      description: {
+        component: readme,
       },
     },
-    status: {
-      type: 'ALPHA',
-    },
   },
-  component: Heading5,
-} as Meta;
+} as Meta<typeof Heading5>;
 
-const Template: Story<Heading5Props> = (args: Heading5Props) => (
-  <Heading5 {...args}>This is a bit of text inside a Header5 component.</Heading5>
-);
+export default meta;
+type Story = StoryObj<typeof meta>;
 
-/**
- * Default implementation of Heading5
- */
-export const Default = Template.bind({});
+export const Default: Story = {};

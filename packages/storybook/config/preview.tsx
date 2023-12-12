@@ -39,13 +39,11 @@ const preview: Preview = {
     // Make the "Docs" tab the default, instead of the "Canvas" tab
     viewMode: 'docs',
     chromatic: { viewports: [1280] },
-
     previewTabs: {
       // Move the "Docs" tab to the front
       'storybook/docs/panel': { index: -1, title: 'Documentation' },
       canvas: { title: 'Demo' },
     },
-
     options: {
       storySort: {
         order: [

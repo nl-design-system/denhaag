@@ -1,29 +1,28 @@
-import React from 'react';
-import { Meta, Story } from '@storybook/react';
-import { Heading3, Heading3Props } from '@gemeente-denhaag/typography';
-import pkg from '../../../../components/Typography/package.json';
+import { Meta, StoryObj } from '@storybook/react';
+import { Heading3 } from '@gemeente-denhaag/typography';
 
-export default {
+import readme from '../../../../components/Typography/README.md';
+
+const exampleArgs = {
+  children: 'This is a bit of text inside a Header3 component.',
+};
+
+const meta = {
+  id: 'react-data-display-typography-header-3',
   title: 'React/Data Display/Typography/Heading3',
+  component: Heading3,
+  args: exampleArgs,
+  tags: ['autodocs'],
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
-      source: {
-        type: 'dynamic',
+      description: {
+        component: readme,
       },
     },
-    status: {
-      type: 'ALPHA',
-    },
   },
-  component: Heading3,
-} as Meta;
+} as Meta<typeof Heading3>;
 
-const Template: Story<Heading3Props> = (args: Heading3Props) => (
-  <Heading3 {...args}>This is a bit of text inside a Header3 component.</Heading3>
-);
+export default meta;
+type Story = StoryObj<typeof meta>;
 
-/**
- * Default implementation of Heading3
- */
-export const Default = Template.bind({});
+export const Default: Story = {};

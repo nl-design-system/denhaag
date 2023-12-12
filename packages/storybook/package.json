@@ -85,7 +85,8 @@
     "@gemeente-denhaag/table": "workspace:*",
     "@gemeente-denhaag/textfield": "workspace:*",
     "@gemeente-denhaag/typography": "workspace:*",
-    "@gemeente-denhaag/unorderedlist": "workspace:*"
+    "@gemeente-denhaag/unorderedlist": "workspace:*",
+    "@gemeente-denhaag/utils": "workspace:*"
   },
   "devDependencies": {
     "@babel/core": "7.22.17",
