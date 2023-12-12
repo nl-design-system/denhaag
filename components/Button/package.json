@@ -3,7 +3,7 @@
   "description": "A Button component",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
-  "version": "0.2.3-alpha.358",
+  "version": "0.2.3-alpha.359",
   "exports": {
     ".": {
       "types": "./dist/cjs/index.d.ts",
