@@ -42,7 +42,7 @@ const createConfig = ({ dir, format, baseUrl }) => ({
           const head = document.head || document.getElementsByTagName('head')[0]
           const style = document.createElement('style')
           style.type = 'text/css'
-          style.nonce = 'nonce-2RGEq4SsXlbrvR8qi1xM3A=='
+          style.nonce = window.NONCE
         
           if (${insertAt}=== 'top') {
             if (head.firstChild) {
