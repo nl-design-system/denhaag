@@ -8,11 +8,11 @@
         "value": "{utrecht.document.font-family}"
       },
       "font-size": {
-        "value": "{denhaag.typography.scale.s.font-size}"
+        "value": "{utrecht.document.font-size}"
       },
       "font-style": {},
       "margin-block-start": {},
-      "margin-block-end": {},
+      "margin-block-end": { "value": "{denhaag.size.3xs}" },
       "invalid": {
         "font-weight": {},
         "color": {

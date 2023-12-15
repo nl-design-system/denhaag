@@ -58,6 +58,7 @@
     "@gemeente-denhaag/form-field-description": "workspace:*",
     "@gemeente-denhaag/form-field-error-message": "workspace:*",
     "@gemeente-denhaag/form-field-utrecht": "workspace:*",
+    "@gemeente-denhaag/form-label": "workspace:*",
     "@gemeente-denhaag/form-progress": "workspace:*",
     "@gemeente-denhaag/formcontrollabel": "workspace:*",
     "@gemeente-denhaag/formgroup": "workspace:*",
