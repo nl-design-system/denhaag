@@ -25,15 +25,21 @@
         }
       },
       "disabled": {
-        "background-color": {},
-        "border-color": { "value": "{denhaag.color.grey.2}" },
-        "color": { "value": "{denhaag.color.grey.2}" }
+        "background-color": { "value": "{denhaag.color.grey.1}" },
+        "border-color": { "value": "{denhaag.color.grey.3}" },
+        "color": { "value": "{denhaag.color.grey.4}" }
       },
       "focus": {
         "background-color": {},
         "border-color": {},
         "border-width": {},
         "color": {}
+      },
+      "hover": {
+        "background-color": { "value": "{denhaag.color.warmgrey.1}" },
+        "border-color": { "value": "{denhaag.color.grey.3}" },
+        "border-width": {},
+        "color": { "value": "{denhaag.color.grey.5}" }
       },
       "invalid": {
         "background-color": {},

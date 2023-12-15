@@ -3,7 +3,7 @@
     "form-label": {
       "color": { "value": "{denhaag.color.grey.4}" },
       "font-weight": { "value": "{denhaag.typography.weight.bold}" },
-      "font-size": { "value": "{denhaag.typography.scale.base.font-size}" },
+      "font-size": { "value": "{utrecht.document.font-size}" },
       "checkbox": {
         "color": { "value": "{denhaag.color.grey.4}" },
         "font-weight": { "value": "400" }
