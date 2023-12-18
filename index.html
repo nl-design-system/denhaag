@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta property="csp-nonce" content="<%= nonce %>" />
+    <link rel="stylesheet" href="/proprietary/Common/dist/index.css" nonce="<%= nonce %>" />
+    <link rel="stylesheet" href="/proprietary/Components/dist/index.css" nonce="<%= nonce %>" />
+    <link rel="stylesheet" href="/proprietary/Proprietary/dist/index.css" nonce="<%= nonce %>" />
+  </head>
+  <body>
+    <div id="root">Loading...</div>
+  </body>
+  <script nonce="<%= nonce %>">
+    window.NONCE = "<%= nonce %>";
+  </script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js" nonce="<%= nonce %>"></script>
+  <script
+    async
+    src="https://ga.jspm.io/npm:es-module-shims@1.7.0/dist/es-module-shims.js"
+    nonce="<%= nonce %>"
+  ></script>
+  <script type="importmap" nonce="<%= nonce %>">
+    {
+      "imports": {
+        "react": "https://esm.sh/react?dev",
+        "react-dom/client": "https://esm.sh/react-dom/client?dev",
+        "@gemeente-denhaag/alert": "/components/Alert/dist/mjs/index.js"
+      }
+    }
+  </script>
+  <script type="text/babel" data-type="module" nonce="<%= nonce %>">
+    import React, { StrictMode } from "react";
+    import { createRoot } from "react-dom/client";
+    import { Alert } from "@gemeente-denhaag/alert";
+
+    const root = createRoot(document.getElementById("root"));
+    root.render(
+      <StrictMode>
+        <div className="utrecht-document utrecht-document--surface denhaag-theme">
+          <Alert title="title" text="text" variant="info" />
+        </div>
+      </StrictMode>,
+    );
+  </script>
+</html>

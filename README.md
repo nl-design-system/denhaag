@@ -135,6 +135,14 @@ This file is located here: `components/package.json`
 
 An entry should be structured in the same way as above.
 
+##### Test component in CSP environment
+
+With Express we created an CSP environment to test our components in. This is a local environment that can be used to test our components in a environment with CSP headers in place. To start the CSP environment run the following command:
+
+```bash
+node server.js
+```
+
 ## Cooperation with NL Design System
 
 Certain Components available in this repository may become part of the NL Design System component library. When you contribute to this project you allow your contributions to be made a part of the NL Design System component library. The NL Design System project maintainers decide which components will be included in their component library.
