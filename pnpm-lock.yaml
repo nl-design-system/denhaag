@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
@@ -1373,8 +1377,8 @@ importers:
         specifier: 7.4.0
         version: 7.4.0(@types/react-dom@18.2.7)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)
       '@storybook/addon-links':
-        specifier: 7.4.0
-        version: 7.4.0(react-dom@18.2.0)(react@18.2.0)
+        specifier: 7.6.6
+        version: 7.6.6(react@18.2.0)
       '@storybook/addon-mdx-gfm':
         specifier: 7.4.0
         version: 7.4.0
@@ -7064,28 +7068,17 @@ packages:
       '@storybook/preview-api': 7.4.0
     dev: true
 
-  /@storybook/addon-links@7.4.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-lFj8fiokWKk3jx5YUQ4anQo1uCNDMP1y6nJ/92Y85vnOd1vJr3w4GlLy8eOWMABRE33AKLI5Yp6wcpWZDe7hhQ==}
+  /@storybook/addon-links@7.6.6(react@18.2.0):
+    resolution: {integrity: sha512-NEcqOz6zZ1dJnCcVmYdaQTAMAGIb8NFAZGnr9DU0q+t4B1fTaWUgqLtBM5V6YqIrXGSC/oKLpjWUkS5UpswlHA==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
-      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
     peerDependenciesMeta:
       react:
         optional: true
-      react-dom:
-        optional: true
     dependencies:
-      '@storybook/client-logger': 7.4.0
-      '@storybook/core-events': 7.4.0
-      '@storybook/csf': 0.1.1
+      '@storybook/csf': 0.1.2
       '@storybook/global': 5.0.0
-      '@storybook/manager-api': 7.4.0(react-dom@18.2.0)(react@18.2.0)
-      '@storybook/preview-api': 7.4.0
-      '@storybook/router': 7.4.0(react-dom@18.2.0)(react@18.2.0)
-      '@storybook/types': 7.4.0
-      prop-types: 15.8.1
       react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
       ts-dedent: 2.2.0
     dev: true
 
@@ -7443,7 +7436,7 @@ packages:
       '@babel/core': 7.23.2
       '@babel/preset-env': 7.23.2(@babel/core@7.23.2)
       '@babel/types': 7.23.0
-      '@storybook/csf': 0.1.1
+      '@storybook/csf': 0.1.2
       '@storybook/csf-tools': 7.4.0
       '@storybook/node-logger': 7.4.0
       '@storybook/types': 7.4.0
@@ -7569,7 +7562,7 @@ packages:
       '@storybook/channels': 7.4.0
       '@storybook/core-common': 7.4.0
       '@storybook/core-events': 7.4.0
-      '@storybook/csf': 0.1.1
+      '@storybook/csf': 0.1.2
       '@storybook/csf-tools': 7.4.0
       '@storybook/docs-mdx': 0.1.0
       '@storybook/global': 5.0.0
@@ -7641,7 +7634,7 @@ packages:
       '@babel/parser': 7.23.0
       '@babel/traverse': 7.23.2
       '@babel/types': 7.23.0
-      '@storybook/csf': 0.1.1
+      '@storybook/csf': 0.1.2
       '@storybook/types': 7.4.0
       fs-extra: 11.1.1
       recast: 0.23.4
@@ -7658,6 +7651,12 @@ packages:
 
   /@storybook/csf@0.1.1:
     resolution: {integrity: sha512-4hE3AlNVxR60Wc5KSC68ASYzUobjPqtSKyhV6G+ge0FIXU55N5nTY7dXGRZHQGDBPq+XqchMkIdlkHPRs8nTHg==}
+    dependencies:
+      type-fest: 2.19.0
+    dev: true
+
+  /@storybook/csf@0.1.2:
+    resolution: {integrity: sha512-ePrvE/pS1vsKR9Xr+o+YwdqNgHUyXvg+1Xjx0h9LrVx7Zq4zNe06pd63F5EvzTbCbJsHj7GHr9tkiaqm7U8WRA==}
     dependencies:
       type-fest: 2.19.0
     dev: true
@@ -7693,7 +7692,7 @@ packages:
       '@storybook/channels': 7.4.0
       '@storybook/client-logger': 7.4.0
       '@storybook/core-events': 7.4.0
-      '@storybook/csf': 0.1.1
+      '@storybook/csf': 0.1.2
       '@storybook/global': 5.0.0
       '@storybook/router': 7.4.0(react-dom@18.2.0)(react@18.2.0)
       '@storybook/theming': 7.4.0(react-dom@18.2.0)(react@18.2.0)
@@ -7718,7 +7717,7 @@ packages:
       '@storybook/channels': 7.4.5
       '@storybook/client-logger': 7.4.5
       '@storybook/core-events': 7.4.5
-      '@storybook/csf': 0.1.1
+      '@storybook/csf': 0.1.2
       '@storybook/global': 5.0.0
       '@storybook/router': 7.4.5(react-dom@18.2.0)(react@18.2.0)
       '@storybook/theming': 7.4.5(react-dom@18.2.0)(react@18.2.0)
@@ -7817,7 +7816,7 @@ packages:
       '@storybook/channels': 7.4.0
       '@storybook/client-logger': 7.4.0
       '@storybook/core-events': 7.4.0
-      '@storybook/csf': 0.1.1
+      '@storybook/csf': 0.1.2
       '@storybook/global': 5.0.0
       '@storybook/types': 7.4.0
       '@types/qs': 6.9.7
@@ -7836,7 +7835,7 @@ packages:
       '@storybook/channels': 7.5.3
       '@storybook/client-logger': 7.5.3
       '@storybook/core-events': 7.5.3
-      '@storybook/csf': 0.1.1
+      '@storybook/csf': 0.1.2
       '@storybook/global': 5.0.0
       '@storybook/types': 7.5.3
       '@types/qs': 6.9.7
@@ -26041,7 +26040,3 @@ packages:
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: true
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
