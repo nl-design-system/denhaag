@@ -5,7 +5,7 @@
         "value": "{denhaag.color.blue.1}"
       },
       "border-radius": {
-        "value": "{denhaag.border-radius}"
+        "value": "50px"
       },
       "color": {
         "value": "{denhaag.color.blue.4}"

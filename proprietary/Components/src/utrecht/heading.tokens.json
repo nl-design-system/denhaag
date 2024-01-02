@@ -2,7 +2,6 @@
   "utrecht": {
     "heading": {
       "color": { "value": "{denhaag.heading.color}" },
-      "line-height": {},
       "font-family": { "value": "{denhaag.typography.sans-serif-alternate.font-family}" },
       "font-weight": { "value": "{denhaag.typography.weight.bold}" }
     }

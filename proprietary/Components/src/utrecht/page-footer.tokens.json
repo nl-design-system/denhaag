@@ -1,23 +1,24 @@
 {
   "utrecht": {
     "page-footer": {
-      "background-color": {
-        "value": "hsl(48deg 94% 48%)"
-      },
       "color": {
-        "value": "{denhaag.color.black}"
+        "value": "{denhaag.color.white}"
       },
-      "padding-block-end": {
-        "value": "40px"
+      "background-color": {
+        "value": "{denhaag.color.grey.4}"
       },
-      "padding-block-start": {
-        "value": "30px"
-      },
+      "background-image": {},
       "padding-inline-end": {
         "value": "30px"
       },
       "padding-inline-start": {
         "value": "30px"
+      },
+      "padding-block-start": {
+        "value": "30px"
+      },
+      "padding-block-end": {
+        "value": "40px"
       }
     }
   }

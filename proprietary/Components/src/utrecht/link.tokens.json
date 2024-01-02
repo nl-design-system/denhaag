@@ -4,6 +4,8 @@
       "color": {
         "value": "{denhaag.color.blue.3}"
       },
+      "text-decoration": {},
+      "text-decoration-color": {},
       "text-decoration-thickness": {
         "value": "1px"
       },
@@ -17,14 +19,27 @@
         "color": {
           "value": "{denhaag.color.blue.4}"
         },
+        "text-decoration": {},
         "text-decoration-thickness": {
           "value": "1px"
         }
       },
       "hover": {
+        "color": {},
+        "text-decoration": {},
         "text-decoration-thickness": {
           "value": "1px"
         }
+      },
+      "placeholder": {
+        "color": {},
+        "font-weight": {}
+      },
+      "visited": {
+        "color": {}
+      },
+      "icon": {
+        "size": {}
       }
     }
   }

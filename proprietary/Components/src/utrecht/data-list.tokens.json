@@ -1,11 +1,9 @@
 {
   "utrecht": {
     "data-list": {
-      "margin-block-end": {
-        "value": "{denhaag.space.inline.xs}"
-      },
+      "margin-block-end": {},
       "margin-block-start": {
-        "value": "{denhaag.space.inline.xs}"
+        "value": "24px"
       },
       "item-key": {
         "color": {
@@ -20,9 +18,6 @@
         }
       },
       "item-value": {
-        "color": {
-          "value": "{denhaag.color.grey.4}"
-        },
         "font-size": {},
         "line-height": {
           "value": "1.5"
@@ -31,33 +26,17 @@
       "rows": {
         "item": {
           "margin-block-start": {
-            "value": "{denhaag.space.inline.md}"
+            "value": "16px"
           },
+          "padding-block-end": {},
           "padding-inline-start": {
-            "value": "{denhaag.space.inline.xs}"
+            "value": "16px"
           }
         },
         "item-value": {
           "margin-block-start": {
             "value": "0"
           }
-        },
-        "column": {
-          "inline-size": {
-            "value": "80%"
-          },
-          "min-inline-size": {
-            "value": "25ch"
-          }
-        },
-        "gap": {
-          "value": "{utrecht.space.block.md}"
-        },
-        "border-bottom-width": {
-          "value": "1px"
-        },
-        "border-bottom-color": {
-          "value": "{denhaag.color.grey.2}"
         }
       }
     }
