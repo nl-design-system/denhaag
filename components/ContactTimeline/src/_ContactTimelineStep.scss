@@ -1,5 +1,6 @@
 .denhaag-contact-timeline__step {
   &.denhaag-process-steps__step {
     --denhaag-process-steps-step-padding-block-end: var(--denhaag-contact-timeline-step-padding-block-end);
+    --denhaag-step-marker-size: var(--denhaag-step-marker-nested-size);
   }
 }
