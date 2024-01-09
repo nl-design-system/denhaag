@@ -26,9 +26,9 @@
         "color": {}
       },
       "disabled": {
-        "background-color": { "value": "{denhaag.color.grey.1}" },
-        "border-color": {},
-        "color": {}
+        "border-color": { "value": "{utrecht.form-control.disabled.border-color}" },
+        "background-color": { "value": "{utrecht.form-control.disabled.background-color}" },
+        "color": { "value": "{utrecht.form-control.disabled.color}" }
       },
       "focus": {
         "background-color": {},
@@ -36,10 +36,11 @@
         "color": {}
       },
       "invalid": {
-        "background-color": {},
-        "border-color": { "value": "{denhaag.color.red.3}" },
-        "border-width": {},
-        "color": {}
+        "background-color": { "value": "{utrecht.form-control.invalid.background-color}" },
+        "border-color": { "value": "{utrecht.form-control.invalid.border-color}" },
+        "border-width": { "value": "{utrecht.form-control.invalid.border-width}" },
+        "border-bottom-width": { "value": "{utrecht.form-control.invalid.border-width}" },
+        "color": { "value": "{utrecht.form-control.invalid.color}" }
       },
       "read-only": {
         "background-color": {},

@@ -37,7 +37,8 @@
       "invalid": {
         "background-color": {},
         "border-color": { "value": "{denhaag.color.red.3}" },
-        "border-width": {},
+        "border-width": { "value": "{utrecht.form-control.invalid.border-width}" },
+        "border-bottom-width": { "value": "{utrecht.form-control.invalid.border-width}" },
         "color": {}
       },
       "read-only": {
