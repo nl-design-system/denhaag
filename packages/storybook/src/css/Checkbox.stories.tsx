@@ -29,6 +29,12 @@ export const Checked: Story = {
   },
 };
 
+export const Invalid: Story = {
+  args: {
+    invalid: true,
+  },
+};
+
 export const Disabled: Story = {
   args: {
     disabled: true,
