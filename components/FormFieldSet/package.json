@@ -1,12 +1,12 @@
 {
-  "name": "@gemeente-denhaag/form-field-error-message",
+  "name": "@gemeente-denhaag/form-fieldset",
   "version": "0.3.0-alpha.1",
-  "description": "A form field error message component",
+  "description": "A field set component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/nl-design-system/denhaag.git",
-    "directory": "components/FormFieldErrorMessage"
+    "directory": "components/FormField"
   },
   "license": "EUPL-1.2",
   "author": "Municipality of The Hague",
@@ -29,9 +29,10 @@
     "clean": "rimraf dist tsconfig.tsbuildinfo",
     "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\""
   },
-  "devDependencies": {
-    "@utrecht/components": "3.0.0",
-    "@utrecht/component-library-react": "3.0.0"
+  "dependencies": {
+    "@utrecht/component-library-react": "3.0.0",
+    "@utrecht/components": "3.0.0"
+
   },
   "peerDependencies": {
     "react": "^18.0.0"

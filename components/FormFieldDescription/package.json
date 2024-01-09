@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/form-field-description",
-  "version": "0.2.0-alpha.1",
+  "version": "0.3.0-alpha.1",
   "description": "A form field description component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -30,8 +30,8 @@
     "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\""
   },
   "dependencies": {
-    "@utrecht/components": "2.0.0",
-    "@utrecht/component-library-react": "2.0.0"
+    "@utrecht/component-library-react": "3.0.0",
+    "@utrecht/components": "3.0.0"
   },
   "peerDependencies": {
     "react": "^18.0.0"
