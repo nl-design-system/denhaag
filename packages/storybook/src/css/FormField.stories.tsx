@@ -30,8 +30,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  render: (args) => (
+  render: () => (
     <FormField>
       <FormLabel>Username</FormLabel>
       <Textbox placeholder="Placeholder" />
@@ -40,8 +39,7 @@ export const Default: Story = {
 };
 
 export const WithDescription: Story = {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  render: (args) => (
+  render: () => (
     <FormField>
       <FormLabel>Username</FormLabel>
       <FormFieldDescription>Vul hier uw username in</FormFieldDescription>
@@ -51,8 +49,7 @@ export const WithDescription: Story = {
 };
 
 export const Invalid: Story = {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  render: (args) => (
+  render: () => (
     <FormField invalid>
       <FormLabel>Username</FormLabel>
       <FormFieldDescription>Description</FormFieldDescription>
@@ -63,8 +60,7 @@ export const Invalid: Story = {
 };
 
 export const SingleCheckbox: Story = {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  render: (args) => (
+  render: () => (
     <FormField>
       <FormLabel type="checkbox">
         <Checkbox name="consent" />
@@ -75,8 +71,7 @@ export const SingleCheckbox: Story = {
 };
 
 export const CheckboxGroup: Story = {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  render: (args) => (
+  render: () => (
     <Fieldset>
       <FieldsetLegend className="utrecht-form-fieldset__legend--distanced">
         Hoe wil je dat wij contact opnemen?
@@ -128,8 +123,7 @@ export const CheckboxGroup: Story = {
 };
 
 export const CheckboxGroupWithDescription: Story = {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  render: (args) => (
+  render: () => (
     <Fieldset aria-describedby="d7218515-bf54-45c1-ba57-a72af5d7fd42-description">
       <FieldsetLegend>Hoe wil je dat wij contact opnemen?</FieldsetLegend>
       <FormFieldDescription
@@ -185,8 +179,7 @@ export const CheckboxGroupWithDescription: Story = {
 };
 
 export const RadioButtonGroup: Story = {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  render: (args) => (
+  render: () => (
     <Fieldset>
       <FieldsetLegend className="utrecht-form-fieldset__legend--distanced">
         Hoe wil je dat wij contact opnemen?
@@ -235,8 +228,7 @@ export const RadioButtonGroup: Story = {
 };
 
 export const RadioButtonGroupWithDescription: Story = {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  render: (args) => (
+  render: () => (
     <Fieldset aria-describedby="d7218515-bf54-45c1-ba57-a72af5d7fd42-description">
       <FieldsetLegend>Hoe wil je dat wij contact opnemen?</FieldsetLegend>
       <FormFieldDescription
