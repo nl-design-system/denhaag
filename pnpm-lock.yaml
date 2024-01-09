@@ -221,7 +221,7 @@ importers:
         version: 9.0.1
       webpack:
         specifier: 5.89.0
-        version: 5.89.0
+        version: 5.89.0(@swc/core@1.3.96)(esbuild@0.18.20)
       webpack-dev-server:
         specifier: 4.15.1
         version: 4.15.1(webpack@5.89.0)
@@ -372,11 +372,11 @@ importers:
   components/Checkbox:
     dependencies:
       '@utrecht/component-library-react':
-        specifier: 2.0.0
-        version: 2.0.0(react-dom@18.2.0)(react@18.2.0)
+        specifier: 3.0.0
+        version: 3.0.0(react-dom@18.2.0)(react@18.2.0)
       '@utrecht/components':
-        specifier: 2.0.0
-        version: 2.0.0
+        specifier: 3.0.0
+        version: 3.0.0
       react:
         specifier: ^18.0.0
         version: 18.2.0
@@ -507,24 +507,14 @@ importers:
         specifier: 1.0.2-alpha.0
         version: 1.0.2-alpha.0(react-dom@18.2.0)(react@18.2.0)
 
-  components/FormControlLabel:
-    dependencies:
-      react:
-        specifier: ^18.0.0
-        version: 18.2.0
-    devDependencies:
-      '@utrecht/components':
-        specifier: 1.0.1-alpha.2
-        version: 1.0.1-alpha.2
-
   components/FormField:
     dependencies:
       '@utrecht/component-library-react':
-        specifier: 2.0.0
-        version: 2.0.0(react-dom@18.2.0)(react@18.2.0)
+        specifier: 3.0.0
+        version: 3.0.0(react-dom@18.2.0)(react@18.2.0)
       '@utrecht/components':
-        specifier: 2.0.0
-        version: 2.0.0
+        specifier: 3.0.0
+        version: 3.0.0
       react:
         specifier: ^18.0.0
         version: 18.2.0
@@ -532,11 +522,11 @@ importers:
   components/FormFieldDescription:
     dependencies:
       '@utrecht/component-library-react':
-        specifier: 2.0.0
-        version: 2.0.0(react-dom@18.2.0)(react@18.2.0)
+        specifier: 3.0.0
+        version: 3.0.0(react-dom@18.2.0)(react@18.2.0)
       '@utrecht/components':
-        specifier: 2.0.0
-        version: 2.0.0
+        specifier: 3.0.0
+        version: 3.0.0
       react:
         specifier: ^18.0.0
         version: 18.2.0
@@ -548,30 +538,20 @@ importers:
         version: 18.2.0
     devDependencies:
       '@utrecht/component-library-react':
-        specifier: 2.0.0
-        version: 2.0.0(react-dom@18.2.0)(react@18.2.0)
+        specifier: 3.0.0
+        version: 3.0.0(react-dom@18.2.0)(react@18.2.0)
       '@utrecht/components':
-        specifier: 2.0.0
-        version: 2.0.0
+        specifier: 3.0.0
+        version: 3.0.0
 
-  components/FormFieldUtrecht:
+  components/FormFieldSet:
     dependencies:
-      react:
-        specifier: ^18.0.0
-        version: 18.2.0
-    devDependencies:
       '@utrecht/component-library-react':
-        specifier: 2.0.0
-        version: 2.0.0(react-dom@18.2.0)(react@18.2.0)
+        specifier: 3.0.0
+        version: 3.0.0(react-dom@18.2.0)(react@18.2.0)
       '@utrecht/components':
-        specifier: 2.0.0
-        version: 2.0.0
-
-  components/FormGroup:
-    dependencies:
-      '@gemeente-denhaag/typography':
-        specifier: workspace:*
-        version: link:../Typography
+        specifier: 3.0.0
+        version: 3.0.0
       react:
         specifier: ^18.0.0
         version: 18.2.0
@@ -579,11 +559,11 @@ importers:
   components/FormLabel:
     dependencies:
       '@utrecht/component-library-react':
-        specifier: 2.0.0
-        version: 2.0.0(react-dom@18.2.0)(react@18.2.0)
+        specifier: 3.0.0
+        version: 3.0.0(react-dom@18.2.0)(react@18.2.0)
       '@utrecht/components':
-        specifier: 2.0.0
-        version: 2.0.0
+        specifier: 3.0.0
+        version: 3.0.0
       react:
         specifier: ^18.0.0
         version: 18.2.0
@@ -788,21 +768,14 @@ importers:
   components/Radio:
     dependencies:
       '@utrecht/component-library-react':
-        specifier: 2.0.0
-        version: 2.0.0(react-dom@18.2.0)(react@18.2.0)
+        specifier: 3.0.0
+        version: 3.0.0(react-dom@18.2.0)(react@18.2.0)
       '@utrecht/components':
-        specifier: 2.0.0
-        version: 2.0.0
+        specifier: 3.0.0
+        version: 3.0.0
       react:
         specifier: ^18.0.0
         version: 18.2.0
-    devDependencies:
-      '@gemeente-denhaag/form-field':
-        specifier: workspace:*
-        version: link:../FormField
-      '@gemeente-denhaag/formcontrollabel':
-        specifier: workspace:*
-        version: link:../FormControlLabel
 
   components/ResponsiveContent: {}
 
@@ -865,37 +838,24 @@ importers:
 
   components/TextField:
     dependencies:
-      '@gemeente-denhaag/icons':
-        specifier: workspace:*
-        version: link:../Icons
+      '@utrecht/component-library-react':
+        specifier: 3.0.0
+        version: 3.0.0(react-dom@18.2.0)(react@18.2.0)
+      '@utrecht/components':
+        specifier: 3.0.0
+        version: 3.0.0
       react:
         specifier: ^18.0.0
         version: 18.2.0
-    devDependencies:
-      '@utrecht/components':
-        specifier: 1.0.1-alpha.2
-        version: 1.0.1-alpha.2
 
   components/Textarea:
     dependencies:
       '@utrecht/component-library-react':
-        specifier: 2.0.0
-        version: 2.0.0(react-dom@18.2.0)(react@18.2.0)
+        specifier: 3.0.0
+        version: 3.0.0(react-dom@18.2.0)(react@18.2.0)
       '@utrecht/components':
-        specifier: 2.0.0
-        version: 2.0.0
-      react:
-        specifier: ^18.0.0
-        version: 18.2.0
-
-  components/Textbox:
-    dependencies:
-      '@utrecht/component-library-react':
-        specifier: 2.0.0
-        version: 2.0.0(react-dom@18.2.0)(react@18.2.0)
-      '@utrecht/components':
-        specifier: 2.0.0
-        version: 2.0.0
+        specifier: 3.0.0
+        version: 3.0.0
       react:
         specifier: ^18.0.0
         version: 18.2.0
@@ -1019,15 +979,21 @@ importers:
       '@gemeente-denhaag/form-field':
         specifier: workspace:*
         version: link:../../components/FormField
+      '@gemeente-denhaag/form-field-description':
+        specifier: workspace:*
+        version: link:../../components/FormFieldDescription
+      '@gemeente-denhaag/form-field-error-message':
+        specifier: workspace:*
+        version: link:../../components/FormFieldErrorMessage
+      '@gemeente-denhaag/form-fieldset':
+        specifier: workspace:*
+        version: link:../../components/FormFieldSet
+      '@gemeente-denhaag/form-label':
+        specifier: workspace:*
+        version: link:../../components/FormLabel
       '@gemeente-denhaag/form-progress':
         specifier: workspace:*
         version: link:../../components/FormProgress
-      '@gemeente-denhaag/formcontrollabel':
-        specifier: workspace:*
-        version: link:../../components/FormControlLabel
-      '@gemeente-denhaag/formgroup':
-        specifier: workspace:*
-        version: link:../../components/FormGroup
       '@gemeente-denhaag/header':
         specifier: workspace:*
         version: link:../../components/Header
@@ -1097,9 +1063,6 @@ importers:
       '@gemeente-denhaag/textarea':
         specifier: workspace:*
         version: link:../../components/Textarea
-      '@gemeente-denhaag/textbox':
-        specifier: workspace:*
-        version: link:../../components/Textbox
       '@gemeente-denhaag/textfield':
         specifier: workspace:*
         version: link:../../components/TextField
@@ -1151,15 +1114,21 @@ importers:
       '@gemeente-denhaag/form-field':
         specifier: workspace:*
         version: link:../../components/FormField
+      '@gemeente-denhaag/form-field-description':
+        specifier: workspace:*
+        version: link:../../components/FormFieldDescription
+      '@gemeente-denhaag/form-field-error-message':
+        specifier: workspace:*
+        version: link:../../components/FormFieldErrorMessage
+      '@gemeente-denhaag/form-fieldset':
+        specifier: workspace:*
+        version: link:../../components/FormFieldSet
+      '@gemeente-denhaag/form-label':
+        specifier: workspace:*
+        version: link:../../components/FormLabel
       '@gemeente-denhaag/form-progress':
         specifier: workspace:*
         version: link:../../components/FormProgress
-      '@gemeente-denhaag/formcontrollabel':
-        specifier: workspace:*
-        version: link:../../components/FormControlLabel
-      '@gemeente-denhaag/formgroup':
-        specifier: workspace:*
-        version: link:../../components/FormGroup
       '@gemeente-denhaag/header':
         specifier: workspace:*
         version: link:../../components/Header
@@ -1208,9 +1177,6 @@ importers:
       '@gemeente-denhaag/textarea':
         specifier: workspace:*
         version: link:../../components/Textarea
-      '@gemeente-denhaag/textbox':
-        specifier: workspace:*
-        version: link:../../components/Textbox
       '@gemeente-denhaag/textfield':
         specifier: workspace:*
         version: link:../../components/TextField
@@ -1346,21 +1312,15 @@ importers:
       '@gemeente-denhaag/form-field-error-message':
         specifier: workspace:*
         version: link:../../components/FormFieldErrorMessage
-      '@gemeente-denhaag/form-field-utrecht':
+      '@gemeente-denhaag/form-fieldset':
         specifier: workspace:*
-        version: link:../../components/FormFieldUtrecht
+        version: link:../../components/FormFieldSet
       '@gemeente-denhaag/form-label':
         specifier: workspace:*
         version: link:../../components/FormLabel
       '@gemeente-denhaag/form-progress':
         specifier: workspace:*
         version: link:../../components/FormProgress
-      '@gemeente-denhaag/formcontrollabel':
-        specifier: workspace:*
-        version: link:../../components/FormControlLabel
-      '@gemeente-denhaag/formgroup':
-        specifier: workspace:*
-        version: link:../../components/FormGroup
       '@gemeente-denhaag/header':
         specifier: workspace:*
         version: link:../../components/Header
@@ -1439,9 +1399,6 @@ importers:
       '@gemeente-denhaag/textarea':
         specifier: workspace:*
         version: link:../../components/Textarea
-      '@gemeente-denhaag/textbox':
-        specifier: workspace:*
-        version: link:../../components/Textbox
       '@gemeente-denhaag/textfield':
         specifier: workspace:*
         version: link:../../components/TextField
@@ -7900,8 +7857,8 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
-  /@utrecht/component-library-react@2.0.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-WiZXgMhoDVRUZdPf9aVWBO1FIBVrY+qCNBHhX31lbUHZL83fMmcke4BFneu8Uk5ZB/ckDG+lFdbA23YuC9h0OA==}
+  /@utrecht/component-library-react@3.0.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-7ftpjtQ6ygIMqlB+pWQZAT7psFo1oXkbBSlbVw/uMV5OABRDX5t3V2lN/UDTPjdMRtcj8ZBYl19zPcfkV+Gc5w==}
     peerDependencies:
       date-fns: ^2.30.0
       react: '18'
@@ -7932,8 +7889,8 @@ packages:
     dependencies:
       clsx: 1.2.1
 
-  /@utrecht/components@2.0.0:
-    resolution: {integrity: sha512-PZmvcmHa5SB4V5xLV/5iqyQfN7rVXN5FKY/pXKX2MopUd/FdRM0uTaVcDmUn62jDOcoisO4UrmttzKe75ysh/Q==}
+  /@utrecht/components@3.0.0:
+    resolution: {integrity: sha512-TO39Ti6Af50l+I2gt4S3iacGVuVoxBK/+G/bsK9wvii53fO35NYJul7xB98/IYSBmewaN4GtmyWGphVDdFMt1A==}
     dependencies:
       clsx: 1.2.1
 
@@ -17650,7 +17607,7 @@ packages:
     dependencies:
       loader-utils: 2.0.4
       schema-utils: 3.1.2
-      webpack: 5.89.0
+      webpack: 5.89.0(@swc/core@1.3.96)(esbuild@0.18.20)
     dev: true
 
   /rc-config-loader@4.1.3:
@@ -19978,30 +19935,6 @@ packages:
       webpack: 5.89.0(@swc/core@1.3.96)(esbuild@0.18.20)
     dev: true
 
-  /terser-webpack-plugin@5.3.7(webpack@5.89.0):
-    resolution: {integrity: sha512-AfKwIktyP7Cu50xNjXF/6Qb5lBNzYaWpU6YfoX3uZicTx0zTy0stDDCsvjDapKsSDvOeWo5MEq4TmdBy2cNoHw==}
-    engines: {node: '>= 10.13.0'}
-    peerDependencies:
-      '@swc/core': '*'
-      esbuild: '*'
-      uglify-js: '*'
-      webpack: ^5.1.0
-    peerDependenciesMeta:
-      '@swc/core':
-        optional: true
-      esbuild:
-        optional: true
-      uglify-js:
-        optional: true
-    dependencies:
-      '@jridgewell/trace-mapping': 0.3.18
-      jest-worker: 27.5.1
-      schema-utils: 3.3.0
-      serialize-javascript: 6.0.1
-      terser: 5.17.1
-      webpack: 5.89.0
-    dev: true
-
   /terser@5.17.1:
     resolution: {integrity: sha512-hVl35zClmpisy6oaoKALOpS0rDYLxRFLHhRuDlEGTKey9qHjS1w9GMORjuwIMt70Wan4lwsLYyWDVnWgF+KUEw==}
     engines: {node: '>=10'}
@@ -20949,7 +20882,7 @@ packages:
       mime-types: 2.1.35
       range-parser: 1.2.1
       schema-utils: 4.2.0
-      webpack: 5.89.0
+      webpack: 5.89.0(@swc/core@1.3.96)(esbuild@0.18.20)
     dev: true
 
   /webpack-dev-middleware@6.1.1(webpack@5.89.0):
@@ -21010,7 +20943,7 @@ packages:
       serve-index: 1.9.1
       sockjs: 0.3.24
       spdy: 4.0.2
-      webpack: 5.89.0
+      webpack: 5.89.0(@swc/core@1.3.96)(esbuild@0.18.20)
       webpack-dev-middleware: 5.3.3(webpack@5.89.0)
       ws: 8.14.2
     transitivePeerDependencies:

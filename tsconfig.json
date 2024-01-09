@@ -35,12 +35,6 @@
       "path": "components/File"
     },
     {
-      "path": "components/FormControlLabel"
-    },
-    {
-      "path": "components/FormGroup"
-    },
-    {
       "path": "components/FormField"
     },
     {
