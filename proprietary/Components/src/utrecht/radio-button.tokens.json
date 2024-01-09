@@ -1,48 +1,48 @@
 {
   "utrecht": {
     "radio-button": {
-      "background-color": { "value": "{denhaag.color.white}" },
-      "border-color": { "value": "{denhaag.color.grey.3}" },
-      "border-width": { "value": "1px" },
+      "background-color": { "value": "{utrecht.form-control.background-color}" },
+      "border-color": { "value": "{utrecht.form-control.border-color}" },
+      "border-width": { "value": "{utrecht.form-control.border-width}" },
       "size": { "value": "22px" },
       "margin-block-start": {},
       "icon": {
         "size": { "value": "35%" }
       },
       "active": {
-        "border-color": { "value": "{denhaag.color.grey.3}" },
-        "border-width": { "value": "1px" },
-        "background-color": {},
-        "color": {}
+        "border-color": { "value": "{utrecht.form-control.active.border-color}" },
+        "border-width": { "value": "{utrecht.form-control.active.border-width}" },
+        "background-color": { "value": "{utrecht.form-control.active.background-color}" },
+        "color": { "value": "{utrecht.form-control.active.color}" }
       },
       "checked": {
-        "border-color": { "value": "{denhaag.color.green.3}" },
-        "border-width": { "value": "1px" },
-        "background-color": { "value": "{denhaag.color.green.3}" },
-        "color": { "value": "{denhaag.color.white}" },
+        "border-color": { "value": "{utrecht.form-control.checked.border-color}" },
+        "border-width": { "value": "{utrecht.form-control.checked.border-width}" },
+        "background-color": { "value": "{utrecht.form-control.checked.background-color}" },
+        "color": { "value": "{utrecht.form-control.checked.color}" },
         "active": {
-          "border-color": {},
-          "border-width": {},
-          "background-color": {},
-          "color": {}
+          "border-color": { "value": "{denhaag.color.green.5}" },
+          "border-width": { "value": "{utrecht.form-control.checked.border-width}" },
+          "background-color": { "value": "{denhaag.color.green.5}" },
+          "color": { "value": "{utrecht.form-control.checked.color}" }
         },
         "hover": {
-          "border-color": {},
-          "border-width": {},
-          "background-color": {},
-          "color": {}
+          "border-color": { "value": "{denhaag.color.green.4}" },
+          "border-width": { "value": "{utrecht.form-control.checked.border-width}" },
+          "background-color": { "value": "{denhaag.color.green.4}" },
+          "color": { "value": "{utrecht.form-control.checked.color}" }
         },
         "focus": {
-          "border-color": {},
-          "border-width": {},
-          "background-color": {},
-          "color": {}
+          "border-color": { "value": "{utrecht.form-control.checked.border-color}" },
+          "border-width": { "value": "{utrecht.form-control.checked.border-width}" },
+          "background-color": { "value": "{denhaag.color.green.4}" },
+          "color": { "value": "{utrecht.form-control.checked.color}" }
         }
       },
       "hover": {
-        "border-color": {},
-        "border-width": {},
-        "background-color": {},
+        "border-color": { "value": "{utrecht.form-control.hover.border-color}" },
+        "border-width": { "value": "{utrecht.form-control.hover.border-width}" },
+        "background-color": { "value": "{utrecht.form-control.hover.background-color}" },
         "color": {}
       },
       "focus": {
@@ -52,16 +52,16 @@
         "color": {}
       },
       "disabled": {
-        "border-color": { "value": "{denhaag.color.grey.3}" },
-        "border-width": { "value": "1px" },
-        "background-color": { "value": "{denhaag.color.grey.1}" },
-        "color": { "value": "{denhaag.color.grey.1}" }
+        "border-color": { "value": "{utrecht.form-control.disabled.border-color}" },
+        "border-width": { "value": "{utrecht.form-control.border-width}" },
+        "background-color": { "value": "{utrecht.form-control.disabled.background-color}" },
+        "color": { "value": "{utrecht.form-control.disabled.color}" }
       },
       "invalid": {
-        "border-color": { "value": "{denhaag.color.red.3}" },
-        "border-width": { "value": "1px" },
-        "background-color": { "value": "{denhaag.color.red.2}" },
-        "color": {"value": "{denhaag.color.red.2}"}
+        "border-color": { "value": "{utrecht.form-control.invalid.border-color}" },
+        "border-width": { "value": "{utrecht.form-control.invalid.border-width}" },
+        "background-color": { "value": "{utrecht.form-control.invalid.background-color}" },
+        "color": { "value": "{utrecht.form-control.invalid.color}" }
       }
     }
   }
