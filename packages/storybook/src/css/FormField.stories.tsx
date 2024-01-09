@@ -12,8 +12,8 @@ import { Paragraph } from '@gemeente-denhaag/typography';
 import RadioButton from '@gemeente-denhaag/radio';
 
 const meta = {
-  id: 'react-input-form-field',
-  title: 'React/Input/Form Field',
+  id: 'css-input-form-field',
+  title: 'CSS/Input/Form Field',
   component: FormField,
   args: {},
   tags: ['autodocs'],
