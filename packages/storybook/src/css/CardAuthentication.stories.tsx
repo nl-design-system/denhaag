@@ -57,16 +57,16 @@ const AuthenticationCard = ({
   const title = !authProvider
     ? 'Als gast doorgaan'
     : authProvider === 'eIDAS'
-    ? 'Log in met uw Europese digitale identiteit'
-    : `Inloggen met ${authProvider}`;
+      ? 'Log in met uw Europese digitale identiteit'
+      : `Inloggen met ${authProvider}`;
 
   const subtitle = !authProvider
     ? 'u hoeft niet in te loggen'
     : authProvider === 'DigiD'
-    ? 'Laat zien wie u bent'
-    : authProvider === 'eHerkenning'
-    ? 'Voor bedrijf of instelling'
-    : '';
+      ? 'Laat zien wie u bent'
+      : authProvider === 'eHerkenning'
+        ? 'Voor bedrijf of instelling'
+        : '';
 
   const imageSrc = {
     DigiD: 'digid.svg',
