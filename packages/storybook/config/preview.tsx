@@ -93,8 +93,8 @@ const preview: Preview = {
             typeof storyContext.component === 'function'
               ? storyContext.component
               : typeof storyContext.component?.render === 'function'
-              ? storyContext.component?.render
-              : null;
+                ? storyContext.component?.render
+                : null;
 
           if (render && storyContext.title.startsWith('CSS')) {
             return prettier.format(ReactDOMServer.renderToStaticMarkup(render(storyContext.args)), {
