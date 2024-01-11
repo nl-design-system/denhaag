@@ -22,7 +22,10 @@
 
     &__main {
       flex-grow: 1;
-      max-width: 100%;
+
+      @media (width <= 1023px) {
+        max-width: 100%;
+      }
     }
   }
 
