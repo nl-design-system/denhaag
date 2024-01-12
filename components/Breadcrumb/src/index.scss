@@ -9,8 +9,6 @@
   font-weight: var(--denhaag-breadcrumb-font-weight, 400);
   padding-block-end: var(--denhaag-breadcrumb-padding-block);
   padding-block-start: var(--denhaag-breadcrumb-padding-block);
-  padding-inline-end: var(--denhaag-breadcrumb-padding-inline);
-  padding-inline-start: var(--denhaag-breadcrumb-padding-inline);
 }
 
 .denhaag-breadcrumb__list {
@@ -32,10 +30,14 @@ ol.denhaag-breadcrumb__list {
   padding-block-end: var(--denhaag-breadcrumb-spacing, 8px);
   padding-inline-start: var(--denhaag-breadcrumb-spacing, 8px);
   padding-inline-end: var(--denhaag-breadcrumb-spacing, 8px);
-}
 
-.denhaag-breadcrumb__item--mobile-item {
-  --denhaag-breadcrumb-item-display: flex;
+  &.denhaag-breadcrumb__item--mobile-item {
+    --denhaag-breadcrumb-item-display: flex;
+
+    @media (width <= 480px) {
+      padding-inline-start: 0;
+    }
+  }
 }
 
 .denhaag-breadcrumb__item--mobile-item > .denhaag-breadcrumb__link::before {
