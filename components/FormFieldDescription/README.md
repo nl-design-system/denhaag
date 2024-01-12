@@ -1,5 +1,5 @@
 # Documentatie
 
-https://www.nldesignsystem.nl/form-field-error-message
+https://www.nldesignsystem.nl/form-field-description/
 
-Form field error message is onderdeel van [Form field](https://www.nldesignsystem.nl/form-field)
+Form field description is onderdeel van: [Form field](https://www.nldesignsystem.nl/form-field)
