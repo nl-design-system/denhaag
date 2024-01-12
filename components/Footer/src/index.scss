@@ -53,6 +53,11 @@
     }
   }
 
+  .denhaag-footer__legal-copyright {
+    display: flex;
+    align-items: center;
+  }
+
   /**
   * The footergroup could later become a generic component, not specific to the footer.
   */
