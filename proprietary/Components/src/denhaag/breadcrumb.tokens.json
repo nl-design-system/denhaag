@@ -14,10 +14,7 @@
         "value": "1rem"
       },
       "padding-block-md": {
-        "value": "0.75rem"
-      },
-      "padding-inline": {
-        "value": "0.75rem"
+        "value": "0.25rem"
       },
       "spacing": {
         "value": "{denhaag.space.inline.xs}"
