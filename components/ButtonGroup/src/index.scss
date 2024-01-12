@@ -6,6 +6,8 @@
   padding-block-end: var(--denhaag-button-group-padding, var(--denhaag-button-group-gap));
 
   @media (width <= 767px) {
+    --utrecht-button-max-inline-size: 100%;
+
     width: 100%;
   }
 
