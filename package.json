@@ -47,8 +47,8 @@
     "typecheck": "pnpm run --recursive typecheck"
   },
   "dependencies": {
-    "@utrecht/component-library-css": "1.0.2-alpha.0",
-    "@utrecht/components": "1.0.1-alpha.2",
+    "@utrecht/component-library-css": "3.0.0",
+    "@utrecht/components": "3.0.0",
     "clsx": "2.1.0",
     "sass": "1.69.7"
   },
@@ -71,7 +71,7 @@
     "@types/react-dom": "18.2.18",
     "@typescript-eslint/eslint-plugin": "6.18.1",
     "@typescript-eslint/parser": "6.18.1",
-    "@utrecht/component-library-react": "1.0.2-alpha.0",
+    "@utrecht/component-library-react": "3.0.0",
     "axe-core": "4.8.3",
     "babel-jest": "29.7.0",
     "babel-loader": "9.1.3",
