@@ -21,6 +21,7 @@
     .denhaag-mobile-menu-list-item-link,
     .denhaag-mobile-menu-list-item-button {
       --utrecht-focus-outline-style: var(--denhaag-mobile-menu-list-item-outline-style);
+      --utrecht-button-max-inline-size: 100%;
       --utrecht-button-min-block-size: var(--denhaag-mobile-menu-list-item-min-block-size);
       --utrecht-button-subtle-active-color: var(--denhaag-menu-button-active-color);
       --utrecht-button-subtle-focus-color: var(--denhaag-menu-button-active-color);
@@ -77,16 +78,22 @@
 
     .denhaag-mobile-menu-list-submenu__back-button {
       align-self: var(--denhaag-mobile-menu-list-submenu-back-button-align-self);
+      align-items: var(--denhaag-mobile-menu-list-submenu-back-button-align-items, center);
       background-color: var(--denhaag-mobile-menu-list-submenu-back-button-background-color);
       border: var(--denhaag-mobile-menu-list-submenu-back-button-border);
       padding-block-end: var(--denhaag-mobile-menu-list-submenu-back-button-padding-block-end);
       padding-block-start: var(--denhaag-mobile-menu-list-submenu-back-button-padding-block-start);
       padding-inline-end: var(--denhaag-mobile-menu-list-submenu-back-button-padding-inline-end);
       padding-inline-start: var(--denhaag-mobile-menu-list-submenu-back-button-padding-inline-start);
+
+      .denhaag-link__icon {
+        align-self: unset;
+      }
     }
 
     .denhaag-mobile-menu-list-submenu-list-item-link__icon {
       color: var(--denhaag-mobile-menu-list-submenu-back-button-icon-color);
+      line-height: 0;
     }
   }
 
