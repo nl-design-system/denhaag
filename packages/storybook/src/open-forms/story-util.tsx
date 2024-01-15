@@ -25,12 +25,19 @@ const RenderFormioForm: React.FC<{ form: FormConfiguration }> = ({ form }) => {
   );
 };
 
-export const SingleFormioComponent = (
-  type: string,
-  key: string,
-  label: string,
-  extraComponentProperties: unknown = {},
-) => {
+type SingleFormioComponentProps = {
+  type: string;
+  key: string;
+  label: string;
+  extraComponentProperties?: unknown;
+};
+
+export const SingleFormioComponent: React.FC<SingleFormioComponentProps> = ({
+  type,
+  key,
+  label,
+  extraComponentProperties = {},
+}) => {
   const component = merge({ type, key, label }, extraComponentProperties);
   return <RenderFormioForm form={{ type: 'form', components: [component] }} />;
 };
