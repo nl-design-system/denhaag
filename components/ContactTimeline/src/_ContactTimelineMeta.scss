@@ -2,8 +2,13 @@
   display: flex;
   gap: var(--denhaag-contact-timeline-step-meta-gap);
   align-items: center;
+  overflow-wrap: anywhere;
 
   @media (width >= 1024px) {
     display: none;
   }
+}
+
+.denhaag-contact-timeline__meta.denhaag-contact-timeline__meta-item--time-item {
+  text-wrap: nowrap;
 }
