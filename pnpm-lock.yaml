@@ -1374,8 +1374,8 @@ importers:
         specifier: 7.6.7
         version: 7.6.7
       '@storybook/addon-viewport':
-        specifier: 7.6.7
-        version: 7.6.7
+        specifier: 7.6.8
+        version: 7.6.8
       '@storybook/addons':
         specifier: 7.6.7
         version: 7.6.7(react-dom@18.2.0)(react@18.2.0)
@@ -5288,8 +5288,8 @@ packages:
       - supports-color
     dev: true
 
-  /@storybook/addon-viewport@7.6.7:
-    resolution: {integrity: sha512-Q/BKjJaKzl4RWxH45K2iIXwkicj4ReVAUIpIyd7dPBb/Bx+hEDYZxR5dDg82AMkZdA71x5ttMnuDSuVpmWAE6g==}
+  /@storybook/addon-viewport@7.6.8:
+    resolution: {integrity: sha512-9fvaTudqTA7HYygOWq8gnlmR5XLLjMgK4RoZqMP8OhzX0Vkkg72knPI8lyrnHwze/yMcR1e2lmbdLm55rPq6QA==}
     dependencies:
       memoizerific: 1.11.3
     dev: true
