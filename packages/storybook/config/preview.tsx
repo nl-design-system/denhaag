@@ -5,9 +5,15 @@ import * as prettierPluginBabel from 'prettier/plugins/babel';
 import prettier from 'prettier/standalone';
 import React, { ReactElement } from 'react';
 import * as ReactDOMServer from 'react-dom/server';
-
+import { Formio, Templates } from 'react-formio';
+import { OFLibrary, OpenFormsModule } from '@open-formulieren/sdk';
 import '@utrecht/component-library-css/dist/index.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
+import '@open-formulieren/sdk/styles.css';
+
+// Configure the Formio global to use the OpenForms library
+Formio.use(OpenFormsModule);
+Templates.current = OFLibrary;
 
 const preview: Preview = {
   decorators: [
