@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import { SingleFormioComponent } from './story-util';
+import { SingleFormioComponent } from './StoryUtil';
 
 const meta: Meta = {
   id: 'open-forms-columns',

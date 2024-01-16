@@ -1,15 +1,17 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import { SingleFormioComponent } from './story-util';
+import { SingleFormioComponent } from './StoryUtil';
 
 const meta: Meta = {
-  id: 'open-forms-textfield',
-  title: 'Open Formulieren/Textfield',
+  id: 'open-forms-signature',
+  title: 'Open Formulieren/Signature',
   component: SingleFormioComponent,
   args: {
-    key: 'textfield',
-    type: 'textfield',
-    label: 'Voornaam',
+    type: 'signature',
+    label: 'Handtekening',
+    extraComponentProperties: {
+      description: 'Plaats hierboven uw handtekening',
+    },
   },
 };
 

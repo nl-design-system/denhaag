@@ -1,17 +1,17 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import { SingleFormioComponent } from './story-util';
+import { SingleFormioComponent } from './StoryUtil';
 
 const meta: Meta = {
-  id: 'open-forms-cosign',
-  title: 'Open Formulieren/Cosign',
+  id: 'open-forms-timefield',
+  title: 'Open Formulieren/TimeField',
   component: SingleFormioComponent,
   args: {
-    key: 'cosign',
-    type: 'cosign',
-    label: 'Co-signer email address',
-    validateOn: 'blur',
-    authPlugin: 'digid',
+    type: 'time',
+    label: 'Tijd',
+    extraComponentProperties: {
+      inputType: 'text',
+    },
   },
 };
 
