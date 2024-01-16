@@ -1,15 +1,15 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import { SingleFormioComponent } from './story-util';
+import { SingleFormioComponent } from './StoryUtil';
 
 const meta: Meta = {
-  id: 'open-forms-bsn',
-  title: 'Open Formulieren/BSN',
+  id: 'open-forms-email',
+  title: 'Open Formulieren/Email',
   component: SingleFormioComponent,
   args: {
-    key: 'bsn',
-    type: 'bsn',
-    label: 'Burgerservicenummer (BNS)',
+    key: 'email',
+    type: 'email',
+    label: 'Email',
   },
 };
 
