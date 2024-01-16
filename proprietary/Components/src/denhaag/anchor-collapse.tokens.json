@@ -46,7 +46,7 @@
         },
         "font": {
           "family": {
-            "value": "{denhaag.typography.sans-serif}"
+            "value": "{denhaag.typography.sans-serif.font-family}"
           },
           "size": {
             "value": "{denhaag.typography.scale.lg.font-size}"
