@@ -1,10 +1,31 @@
-import React from 'react';
-import { Form } from 'react-formio';
+import React, { useEffect, useState } from 'react';
+import { Form, Formio, Templates } from 'react-formio';
 import { merge } from 'lodash';
+import { OFLibrary, OpenFormsModule } from '@open-formulieren/sdk';
+import '@open-formulieren/sdk/styles.css';
 
 export type FormConfiguration = { type: string; components: { type: string; key: string; label: string }[] };
 
+const useOpenFormsConfiguration = () => {
+  const [isConfigured, setIsConfigured] = useState(Templates.current === OFLibrary);
+
+  useEffect(() => {
+    if (!isConfigured && Templates.current !== OFLibrary) {
+      Formio.use(OpenFormsModule);
+      Templates.current = OFLibrary;
+      setIsConfigured(true);
+    }
+  }, [isConfigured]);
+
+  return isConfigured;
+};
+
 const RenderFormioForm: React.FC<{ form: FormConfiguration }> = ({ form }) => {
+  const isConfigured = useOpenFormsConfiguration();
+
+  if (!isConfigured) {
+    return null;
+  }
   return (
     <Form
       form={form}
