@@ -9,7 +9,7 @@ const meta: Meta = {
   args: {
     key: 'bsn',
     type: 'bsn',
-    label: 'Burgerservicenummer (BNS)',
+    label: 'Burgerservicenummer (BSN)',
   },
 };
 

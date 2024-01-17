@@ -22,9 +22,6 @@
     "storybook": "storybook dev --config-dir config/ --port 6006",
     "typecheck": "tsc --noEmit"
   },
-  "peerDependencies": {
-    "react-formio": "^4.3.0"
-  },
   "dependencies": {
     "@gemeente-denhaag/accordion": "workspace:*",
     "@gemeente-denhaag/action": "workspace:*",
@@ -131,6 +128,7 @@
     "prettier": "2.8.8",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-formio": "4.3.0",
     "react-syntax-highlighter": "15.5.0",
     "require-from-string": "2.0.2",
     "rimraf": "3.0.2",
