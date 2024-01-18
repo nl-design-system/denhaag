@@ -1,10 +1,10 @@
 import { Meta, StoryObj } from '@storybook/react';
-import readme from '../../../../components/TextField/README.md';
-import RadioButton from '@gemeente-denhaag/radio';
+import readme from '../../../../components/RadioButton/README.md';
+import RadioButton from '@gemeente-denhaag/radio-button';
 
 const meta = {
-  title: 'CSS/Input/Radio',
-  id: 'css-radio',
+  title: 'CSS/Input/Radio Button',
+  id: 'css-radio-button',
   component: RadioButton,
   tags: ['autodocs'],
   args: {},

@@ -761,7 +761,7 @@ importers:
         specifier: ^18.0.0
         version: 18.2.0
 
-  components/Radio:
+  components/RadioButton:
     dependencies:
       '@utrecht/component-library-react':
         specifier: 3.0.0
@@ -832,7 +832,7 @@ importers:
         specifier: ^18.0.0
         version: 18.2.0
 
-  components/TextField:
+  components/TextInput:
     dependencies:
       '@utrecht/component-library-react':
         specifier: 3.0.0
@@ -1041,9 +1041,9 @@ importers:
       '@gemeente-denhaag/process-steps':
         specifier: workspace:*
         version: link:../../components/ProcessSteps
-      '@gemeente-denhaag/radio':
+      '@gemeente-denhaag/radio-button':
         specifier: workspace:*
-        version: link:../../components/Radio
+        version: link:../../components/RadioButton
       '@gemeente-denhaag/responsive-content':
         specifier: workspace:*
         version: link:../../components/ResponsiveContent
@@ -1056,12 +1056,12 @@ importers:
       '@gemeente-denhaag/table':
         specifier: workspace:*
         version: link:../../components/Table
+      '@gemeente-denhaag/text-input':
+        specifier: workspace:*
+        version: link:../../components/TextInput
       '@gemeente-denhaag/textarea':
         specifier: workspace:*
         version: link:../../components/Textarea
-      '@gemeente-denhaag/textfield':
-        specifier: workspace:*
-        version: link:../../components/TextField
       '@gemeente-denhaag/typography':
         specifier: workspace:*
         version: link:../../components/Typography
@@ -1149,9 +1149,9 @@ importers:
       '@gemeente-denhaag/process-steps':
         specifier: workspace:*
         version: link:../../components/ProcessSteps
-      '@gemeente-denhaag/radio':
+      '@gemeente-denhaag/radio-button':
         specifier: workspace:*
-        version: link:../../components/Radio
+        version: link:../../components/RadioButton
       '@gemeente-denhaag/responsive-content':
         specifier: workspace:*
         version: link:../../components/ResponsiveContent
@@ -1170,12 +1170,12 @@ importers:
       '@gemeente-denhaag/table':
         specifier: workspace:*
         version: link:../../components/Table
+      '@gemeente-denhaag/text-input':
+        specifier: workspace:*
+        version: link:../../components/TextInput
       '@gemeente-denhaag/textarea':
         specifier: workspace:*
         version: link:../../components/Textarea
-      '@gemeente-denhaag/textfield':
-        specifier: workspace:*
-        version: link:../../components/TextField
       '@gemeente-denhaag/typography':
         specifier: workspace:*
         version: link:../../components/Typography
@@ -1368,9 +1368,9 @@ importers:
       '@gemeente-denhaag/process-steps':
         specifier: workspace:*
         version: link:../../components/ProcessSteps
-      '@gemeente-denhaag/radio':
+      '@gemeente-denhaag/radio-button':
         specifier: workspace:*
-        version: link:../../components/Radio
+        version: link:../../components/RadioButton
       '@gemeente-denhaag/responsive-content':
         specifier: workspace:*
         version: link:../../components/ResponsiveContent
@@ -1392,12 +1392,12 @@ importers:
       '@gemeente-denhaag/table':
         specifier: workspace:*
         version: link:../../components/Table
+      '@gemeente-denhaag/text-input':
+        specifier: workspace:*
+        version: link:../../components/TextInput
       '@gemeente-denhaag/textarea':
         specifier: workspace:*
         version: link:../../components/Textarea
-      '@gemeente-denhaag/textfield':
-        specifier: workspace:*
-        version: link:../../components/TextField
       '@gemeente-denhaag/typography':
         specifier: workspace:*
         version: link:../../components/Typography
