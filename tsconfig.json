@@ -62,7 +62,7 @@
       "path": "components/ProcessSteps"
     },
     {
-      "path": "components/Radio"
+      "path": "components/RadioButton"
     },
     {
       "path": "components/Sidenav"
@@ -77,7 +77,7 @@
       "path": "components/Table"
     },
     {
-      "path": "components/TextField"
+      "path": "components/TextInput"
     },
     {
       "path": "components/Typography"

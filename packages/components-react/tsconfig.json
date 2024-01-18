@@ -45,13 +45,13 @@
       "path": "../../components/IconButton"
     },
     {
-      "path": "../../components/Radio"
+      "path": "../../components/RadioButton"
     },
     {
       "path": "../../components/Sidenav"
     },
     {
-      "path": "../../components/TextField"
+      "path": "../../components/TextInput"
     },
     {
       "path": "../../components/Link"

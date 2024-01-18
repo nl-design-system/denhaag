@@ -2,14 +2,14 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import FormField from '@gemeente-denhaag/form-field';
 import FormLabel from '@gemeente-denhaag/form-label';
-import Textbox from '@gemeente-denhaag/textfield';
+import TextInput from '@gemeente-denhaag/text-input';
 import Checkbox from '@gemeente-denhaag/checkbox';
 import readme from '../../../../components/FormField/README.md';
 import FormFieldDescription from '@gemeente-denhaag/form-field-description';
 import FormFieldErrorMessage from '@gemeente-denhaag/form-field-error-message';
 import Fieldset, { FieldsetLegend } from '@gemeente-denhaag/form-fieldset';
 import { Paragraph } from '@gemeente-denhaag/typography';
-import RadioButton from '@gemeente-denhaag/radio';
+import RadioButton from '@gemeente-denhaag/radio-button';
 
 const meta = {
   id: 'react-input-form-field',
@@ -33,7 +33,7 @@ export const Default: Story = {
   render: () => (
     <FormField>
       <FormLabel>Username</FormLabel>
-      <Textbox placeholder="Placeholder" />
+      <TextInput placeholder="Placeholder" />
     </FormField>
   ),
 };
@@ -43,7 +43,7 @@ export const WithDescription: Story = {
     <FormField>
       <FormLabel>Username</FormLabel>
       <FormFieldDescription>Vul hier uw username in</FormFieldDescription>
-      <Textbox placeholder="Placeholder" />
+      <TextInput placeholder="Placeholder" />
     </FormField>
   ),
 };
@@ -53,7 +53,7 @@ export const Invalid: Story = {
     <FormField invalid>
       <FormLabel>Username</FormLabel>
       <FormFieldDescription>Description</FormFieldDescription>
-      <Textbox placeholder="Placeholder" invalid />
+      <TextInput placeholder="Placeholder" invalid />
       <FormFieldErrorMessage>Error message</FormFieldErrorMessage>
     </FormField>
   ),

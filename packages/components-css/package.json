@@ -73,13 +73,13 @@
     "@gemeente-denhaag/pagebuttons": "workspace:*",
     "@gemeente-denhaag/pagination": "workspace:*",
     "@gemeente-denhaag/process-steps": "workspace:*",
-    "@gemeente-denhaag/radio": "workspace:*",
+    "@gemeente-denhaag/radio-button": "workspace:*",
     "@gemeente-denhaag/responsive-content": "workspace:*",
     "@gemeente-denhaag/sidenav": "workspace:*",
     "@gemeente-denhaag/tab": "workspace:*",
     "@gemeente-denhaag/table": "workspace:*",
     "@gemeente-denhaag/textarea": "workspace:*",
-    "@gemeente-denhaag/textfield": "workspace:*",
+    "@gemeente-denhaag/text-input": "workspace:*",
     "@gemeente-denhaag/typography": "workspace:*",
     "@gemeente-denhaag/unorderedlist": "workspace:*"
   }

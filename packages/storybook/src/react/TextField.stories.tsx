@@ -1,11 +1,11 @@
 import { Meta, StoryObj } from '@storybook/react';
-import Textbox from '@gemeente-denhaag/textfield';
-import readme from '../../../../components/TextField/README.md';
+import TextInput from '@gemeente-denhaag/text-input';
+import readme from '../../../../components/TextInput/README.md';
 
 const meta = {
-  title: 'React/Input/TextBox',
-  id: 'react-textbox',
-  component: Textbox,
+  title: 'React/Input/TextInput',
+  id: 'react-text-input',
+  component: TextInput,
   tags: ['autodocs'],
   args: { placeholder: 'Placeholder' },
   parameters: {
@@ -15,7 +15,7 @@ const meta = {
       },
     },
   },
-} as Meta<typeof Textbox>;
+} as Meta<typeof TextInput>;
 
 export default meta;
 
