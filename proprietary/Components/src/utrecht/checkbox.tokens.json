@@ -6,6 +6,7 @@
       "border-radius": { "value": "{utrecht.form-control.border-radius}" },
       "border-width": { "value": "{utrecht.form-control.border-width}" },
       "color": { "value": "{denhaag.color.white}" },
+      "margin-inline-end": { "value": "{denhaag.size.3xs}" },
       "size": { "value": "{denhaag.size.xs}" },
       "icon": {
         "size": { "value": "{denhaag.size.xs}" }

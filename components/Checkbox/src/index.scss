@@ -2,9 +2,8 @@
 
 .utrecht-checkbox--custom {
   border-radius: var(--utrecht-checkbox-border-radius);
-  margin-inline-end: 8px;
+}
 
-  &.utrecht-checkbox--disabled {
-    background-color: var(--utrecht-checkbox-disabled-background-color);
-  }
+.utrecht-checkbox--disabled {
+  background-color: var(--utrecht-checkbox-disabled-background-color);
 }
