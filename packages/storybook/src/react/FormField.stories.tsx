@@ -61,11 +61,13 @@ export const Invalid: Story = {
 
 export const SingleCheckbox: Story = {
   render: () => (
-    <FormField>
-      <FormLabel type="checkbox">
-        <Checkbox name="consent" />
-        Ik ga akkoord met de algemene voorwaarden
-      </FormLabel>
+    <FormField type="checkbox">
+      <Paragraph className="utrecht-form-field__label utrecht-form-field__label--checkbox">
+        <FormLabel type="checkbox">
+          <Checkbox name="consent" className="utrecht-form-field__input" />
+          Ik ga akkoord met de algemene voorwaarden
+        </FormLabel>
+      </Paragraph>
     </FormField>
   ),
 };
