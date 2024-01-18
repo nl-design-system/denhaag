@@ -3,8 +3,8 @@ import Textarea from '@gemeente-denhaag/textarea';
 import readme from '../../../../components/Textarea/README.md';
 
 const meta = {
-  title: 'React/Input/Textarea',
-  id: 'react-textarea',
+  title: 'CSS/Input/Textarea',
+  id: 'css-textarea',
   component: Textarea,
   tags: ['autodocs'],
   args: { placeholder: 'Placeholder' },
