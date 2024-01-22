@@ -37,10 +37,10 @@
         },
         "details": {
           "desktop": {
-            "margin-inline-start": { "value": "248px" }
+            "margin-inline-start": { "value": "240px" }
           },
           "mobile": {
-            "margin-inline-start": { "value": "40px" }
+            "margin-inline-start": { "value": "32px" }
           },
           "sender": {
             "font": {
