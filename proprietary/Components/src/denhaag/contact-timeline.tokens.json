@@ -20,7 +20,8 @@
             },
             "active": {
               "color": { "value": "{denhaag.color.green.3}" }
-            }
+            },
+            "gap": { "value": "4px" }
           }
         },
         "marker": {
