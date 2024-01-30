@@ -4,21 +4,6 @@ import clsx from 'clsx';
 
 import './index.scss';
 
-type OverrideProps<M, C extends React.ElementType> = M & Omit<React.ComponentPropsWithRef<C>, keyof M>;
-
-interface OverridableComponent<M> {
-  <C extends React.ElementType>(
-    props: {
-      /**
-       * The component used for the root node.
-       * Either a string to use a HTML element or a component.
-       */
-      component: C;
-    } & OverrideProps<M, C>,
-  ): JSX.Element;
-  (props: M): JSX.Element;
-}
-
 export interface LinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   /**
    * Icon to display at the start or the end of the link
@@ -40,7 +25,7 @@ export interface LinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
  * @param props The properties of a Link component.
  * @constructor Constructs an instance of Link.
  */
-export const Link: OverridableComponent<LinkProps> = ({
+export const Link = ({
   disabled = false,
   icon = undefined,
   iconAlign = 'end',
