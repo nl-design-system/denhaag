@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { AnchorHTMLAttributes } from 'react';
 import { SvgIconProps } from '@gemeente-denhaag/icons';
 import clsx from 'clsx';
 
@@ -19,91 +19,20 @@ interface OverridableComponent<M> {
   (props: M): JSX.Element;
 }
 
-export interface LinkProps {
-  /**
-   * The id attribute is used to specify a unique id for an HTML element.
-   */
-  id?: string;
-  /**
-   * The contents of the component.
-   */
-  children?: React.ReactNode;
-  /**
-   * Extend the styles of the component by adding new classes.
-   */
-  className?: string;
-  /**
-   * The tab-index applied to the root element of the component.
-   */
-  tabIndex?: number;
-  /**
-   * The URL that the hyperlink points to. Links are not restricted to HTTP-based
-   * URLs — they can use any URL scheme supported by browsers.
-   *
-   * [(See MDN Web Docs for details)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-href)
-   */
-  href?: string;
-
-  /**
-   * [See MDN Web Docs for details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-hreflang)
-   */
-  hrefLang?: string;
-
+export interface LinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   /**
    * Icon to display at the start or the end of the link
    */
   icon?: React.ReactElement<SvgIconProps>;
+
+  disabled?: boolean;
 
   /**
    * If an `icon` is specified, should it be aligned on the left or the right?
    */
   iconAlign?: 'start' | 'end';
 
-  /**
-   * Disables the link.
-   */
-  disabled?: boolean;
-
-  /**
-   * [See MDN Web Docs for details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-download)
-   */
-  download?: string | boolean;
-
-  /**
-   * [See MDN Web Docs for details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-media)
-   */
-  media?: string;
-
-  /**
-   * [See MDN Web Docs for details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-ping)
-   */
-  ping?: string;
-
-  /**
-   * [See MDN Web Docs for details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-rel)
-   */
-  rel?: string;
-
-  /**
-   * [See MDN Web Docs for details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-target)
-   */
-  target?: React.HTMLAttributeAnchorTarget;
-
-  /**
-   * [See MDN Web Docs for details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-type)
-   */
-  type?: string;
-
-  /**
-   * ⚠️ Experimental.
-   * [See MDN Web Docs for details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-referrerpolicy)
-   */
-  referrerPolicy?: React.HTMLAttributeReferrerPolicy;
-
-  /**
-   * Override base component
-   */
-  component?: React.ElementType;
+  component?: React.ElementType<AnchorHTMLAttributes<HTMLAnchorElement>> | undefined;
 }
 
 /**
@@ -112,13 +41,12 @@ export interface LinkProps {
  * @constructor Constructs an instance of Link.
  */
 export const Link: OverridableComponent<LinkProps> = ({
-  href,
-  id,
-  children = undefined,
   disabled = false,
   icon = undefined,
   iconAlign = 'end',
   tabIndex = 0,
+  children,
+  component,
   ...props
 }: LinkProps) => {
   const rootClassNames = clsx(
@@ -132,16 +60,18 @@ export const Link: OverridableComponent<LinkProps> = ({
     props.className,
   );
 
+  const Component = component || 'a';
+
   const iconClassName = clsx('denhaag-link__icon');
 
   const iconWrapped = <span className={iconClassName}>{icon}</span>;
 
   return (
-    <a id={id} href={href} tabIndex={disabled ? -1 : tabIndex} {...props} className={rootClassNames}>
+    <Component tabIndex={disabled ? -1 : tabIndex} {...props} className={rootClassNames}>
       {icon !== undefined && iconAlign === 'start' ? iconWrapped : ''}
       <span>{children}</span>
       {icon !== undefined && iconAlign === 'end' ? iconWrapped : ''}
-    </a>
+    </Component>
   );
 };
 
