@@ -4,7 +4,7 @@ import clsx from 'clsx';
 
 export interface CardDateWrapperProps extends HTMLAttributes<HTMLDivElement> {}
 
-export const CardDateWrapper: React.FC<CardDateWrapperProps> = ({ className, ...props }) => {
+export const CardDateWrapper = ({ className, ...props }: CardDateWrapperProps) => {
   const classNames = clsx('denhaag-card__date-wrapper', className);
   return <div className={classNames} {...props}></div>;
 };

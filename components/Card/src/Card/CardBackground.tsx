@@ -4,7 +4,7 @@ import clsx from 'clsx';
 
 export interface CardBackgroundProps extends HTMLAttributes<HTMLDivElement> {}
 
-export const CardBackground: React.FC<CardBackgroundProps> = ({ className, ...props }) => {
+export const CardBackground = ({ className, ...props }: CardBackgroundProps) => {
   const classNames = clsx('denhaag-card__background', className);
   return <div className={classNames} {...props}></div>;
 };

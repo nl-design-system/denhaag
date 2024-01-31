@@ -3,7 +3,7 @@ import '../index.scss';
 
 export interface CardDateProps extends TimeHTMLAttributes<HTMLTimeElement> {}
 
-export const CardDate: React.FC<CardDateProps> = (props) => {
+export const CardDate = ({ ...props }: CardDateProps) => {
   return <time {...props}></time>;
 };
 
