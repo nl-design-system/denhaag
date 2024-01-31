@@ -1,20 +1,13 @@
-import React, { AnchorHTMLAttributes } from 'react';
-import { CustomLink } from '@gemeente-denhaag/link';
+import React, { AnchorHTMLAttributes, ComponentType } from 'react';
+import BasicLink from '@gemeente-denhaag/link';
 import clsx from 'clsx';
 import '../index.scss';
 
 export interface CardActionProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
-  Action?: CustomLink;
+  Action?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
 }
 
-const DefaultLink = ({ children, ...props }: AnchorHTMLAttributes<HTMLAnchorElement>) => <a {...props}>{children}</a>;
-
-export const CardAction: React.FC<CardActionProps> = ({
-  className,
-  children,
-  Action = DefaultLink,
-  ...props
-}: CardActionProps) => {
+export const CardAction = ({ className, children, Action = BasicLink, ...props }: CardActionProps) => {
   const classNames = clsx('denhaag-card__action-link', className);
 
   return (

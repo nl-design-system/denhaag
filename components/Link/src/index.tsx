@@ -1,37 +1,27 @@
-import React, { AnchorHTMLAttributes } from 'react';
+import React, { AnchorHTMLAttributes, ComponentType } from 'react';
 import { SvgIconProps } from '@gemeente-denhaag/icons';
 import clsx from 'clsx';
 
 import './index.scss';
+import BasicLink from './BasicLink';
 
 export interface LinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
-  /**
-   * Icon to display at the start or the end of the link
-   */
   icon?: React.ReactElement<SvgIconProps>;
+
+  iconAlign?: 'start' | 'end';
 
   disabled?: boolean;
 
-  /**
-   * If an `icon` is specified, should it be aligned on the left or the right?
-   */
-  iconAlign?: 'start' | 'end';
-
-  component?: React.ElementType<AnchorHTMLAttributes<HTMLAnchorElement>> | undefined;
+  Link?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
 }
 
-/**
- * An easily customizable anchor element.
- * @param props The properties of a Link component.
- * @constructor Constructs an instance of Link.
- */
 export const Link = ({
   disabled = false,
   icon = undefined,
   iconAlign = 'end',
   tabIndex = 0,
   children,
-  component,
+  Link = BasicLink,
   ...props
 }: LinkProps) => {
   const rootClassNames = clsx(
@@ -45,21 +35,19 @@ export const Link = ({
     props.className,
   );
 
-  const Component = component || 'a';
-
   const iconClassName = clsx('denhaag-link__icon');
 
   const iconWrapped = <span className={iconClassName}>{icon}</span>;
 
   return (
-    <Component tabIndex={disabled ? -1 : tabIndex} {...props} className={rootClassNames}>
+    <Link tabIndex={disabled ? -1 : tabIndex} {...props} className={rootClassNames}>
       {icon !== undefined && iconAlign === 'start' ? iconWrapped : ''}
       <span>{children}</span>
       {icon !== undefined && iconAlign === 'end' ? iconWrapped : ''}
-    </Component>
+    </Link>
   );
 };
 
 export default Link;
 
-export * from './CustomLink';
+export * from './BasicLink';

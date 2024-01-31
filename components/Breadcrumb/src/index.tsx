@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { AnchorHTMLAttributes, ComponentType } from 'react';
 import ResponsiveContent from '@gemeente-denhaag/responsive-content';
 import { ChevronRightIcon, HouseIcon } from '@gemeente-denhaag/icons';
-import { CustomLink } from '@gemeente-denhaag/link';
 import { BreadcrumbNavigation } from './BreadcrumbNavigation';
 import { BreadcrumbListItem } from './BreadcrumbListItem';
 import { BreadcrumbList } from './BreadcrumbList';
@@ -29,7 +28,7 @@ export interface BreadcrumbProps {
   /**
    * Custom Link component used for single-page apps.
    */
-  Link?: CustomLink;
+  Link?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
 }
 
 export const Breadcrumb: React.FC<BreadcrumbProps> = ({ navigationPath, showHomeIcon, Link }: BreadcrumbProps) => {
