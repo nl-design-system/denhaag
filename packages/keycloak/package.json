@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/keycloak",
-  "version": "0.1.1-alpha.310",
+  "version": "0.1.1-alpha.311",
   "description": "A temporary keycloak theme to support NL Design System components and the Municipality of the Hague theme",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
