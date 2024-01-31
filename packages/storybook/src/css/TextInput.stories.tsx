@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import TextInput from '@gemeente-denhaag/text-input';
+import { TextInput } from '@gemeente-denhaag/text-input';
 import readme from '../../../../components/TextInput/README.md';
 
 const meta = {

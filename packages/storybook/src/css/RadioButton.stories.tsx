@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 import readme from '../../../../components/RadioButton/README.md';
-import RadioButton from '@gemeente-denhaag/radio-button';
+import { RadioButton } from '@gemeente-denhaag/radio-button';
 
 const meta = {
   title: 'CSS/Input/Radio Button',

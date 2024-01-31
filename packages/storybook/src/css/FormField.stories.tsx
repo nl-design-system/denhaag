@@ -1,15 +1,15 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import FormField from '@gemeente-denhaag/form-field';
-import FormLabel from '@gemeente-denhaag/form-label';
-import TextInput from '@gemeente-denhaag/text-input';
-import Checkbox from '@gemeente-denhaag/checkbox';
-import readme from '../../../../components/FormField/README.md';
-import FormFieldDescription from '@gemeente-denhaag/form-field-description';
-import FormFieldErrorMessage from '@gemeente-denhaag/form-field-error-message';
-import Fieldset, { FieldsetLegend } from '@gemeente-denhaag/form-fieldset';
+import { Checkbox } from '@gemeente-denhaag/checkbox';
+import { FormField } from '@gemeente-denhaag/form-field';
+import { FormFieldDescription } from '@gemeente-denhaag/form-field-description';
+import { FormFieldErrorMessage } from '@gemeente-denhaag/form-field-error-message';
+import { FormLabel } from '@gemeente-denhaag/form-label';
+import { Fieldset, FieldsetLegend } from '@gemeente-denhaag/form-fieldset';
+import { TextInput } from '@gemeente-denhaag/text-input';
 import { Paragraph } from '@gemeente-denhaag/typography';
-import RadioButton from '@gemeente-denhaag/radio-button';
+import { RadioButton } from '@gemeente-denhaag/radio-button';
+import readme from '../../../../components/FormField/README.md';
 
 const meta = {
   id: 'css-input-form-field',

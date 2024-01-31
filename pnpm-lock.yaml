@@ -1,9 +1,5 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 importers:
 
   .:
@@ -1102,6 +1098,9 @@ importers:
       '@gemeente-denhaag/contact-timeline':
         specifier: workspace:*
         version: link:../../components/ContactTimeline
+      '@gemeente-denhaag/descriptionlist':
+        specifier: workspace:*
+        version: link:../../components/DescriptionList
       '@gemeente-denhaag/divider':
         specifier: workspace:*
         version: link:../../components/Divider
@@ -21391,3 +21390,7 @@ packages:
     dependencies:
       acorn: 8.10.0
     dev: true
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
