@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import readme from '../../../../components/FormFieldDescription/README.md';
-import FormFieldDescription from '@gemeente-denhaag/form-field-description';
+import { FormFieldDescription } from '@gemeente-denhaag/form-field-description';
 import { Paragraph } from '@utrecht/component-library-react';
 
 const meta = {

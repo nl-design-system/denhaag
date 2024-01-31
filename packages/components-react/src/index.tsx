@@ -6,6 +6,7 @@ export * from '@gemeente-denhaag/card';
 export * from '@gemeente-denhaag/card-group';
 export * from '@gemeente-denhaag/checkbox';
 export * from '@gemeente-denhaag/contact-timeline';
+export * from '@gemeente-denhaag/descriptionlist';
 export * from '@gemeente-denhaag/divider';
 export * from '@gemeente-denhaag/file';
 export * from '@gemeente-denhaag/form-field';

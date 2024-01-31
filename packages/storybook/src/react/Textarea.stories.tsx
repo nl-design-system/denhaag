@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import Textarea from '@gemeente-denhaag/textarea';
+import { Textarea } from '@gemeente-denhaag/textarea';
 import readme from '../../../../components/Textarea/README.md';
 
 const meta = {
