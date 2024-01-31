@@ -1,9 +1,8 @@
 import React, { AnchorHTMLAttributes, ComponentType } from 'react';
 import { SvgIconProps } from '@gemeente-denhaag/icons';
-import clsx from 'clsx';
-
-import './index.scss';
 import BasicLink from './BasicLink';
+import clsx from 'clsx';
+import './index.scss';
 
 export interface LinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   icon?: React.ReactElement<SvgIconProps>;
