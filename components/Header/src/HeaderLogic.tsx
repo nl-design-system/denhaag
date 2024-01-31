@@ -1,4 +1,4 @@
-import React, { AnchorHTMLAttributes, useEffect, useRef, useState } from 'react';
+import React, { AnchorHTMLAttributes, ComponentType, useEffect, useRef, useState } from 'react';
 import HeaderLogo from '@gemeente-denhaag/header-logo';
 import ResponsiveContent from '@gemeente-denhaag/responsive-content';
 import Link from '@gemeente-denhaag/link';
@@ -49,7 +49,7 @@ interface MenuProps {
   label: string;
   authorisedLoginLabel?: string;
   navigationGroups: Array<NavigationGroupProps>;
-  CustomLink?: (props: AnchorHTMLAttributes<HTMLAnchorElement>) => JSX.Element;
+  CustomLink?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
 }
 
 interface NavigationGroupProps {

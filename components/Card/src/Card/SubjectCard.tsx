@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { AnchorHTMLAttributes, ComponentType } from 'react';
 import { ArrowRightIcon } from '@gemeente-denhaag/icons';
-import { CustomLink } from '@gemeente-denhaag/link';
+import { BasicLink } from '@gemeente-denhaag/link';
 import { Paragraph } from '@gemeente-denhaag/typography';
 import '../index.scss';
 import Card from './Card';
@@ -35,13 +35,13 @@ export interface SubjectCardProps {
   /**
    * Custom Link component used for single-page apps.
    */
-  Link?: CustomLink;
+  Link?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
 }
 
 /**
  * Primary UI component for user interaction
  */
-export const SubjectCard: React.FC<SubjectCardProps> = ({ title, subTitle, date, href, Link }: SubjectCardProps) => {
+export const SubjectCard = ({ title, subTitle, date, href, Link = BasicLink }: SubjectCardProps) => {
   return (
     <Card className="denhaag-subject-card">
       <CardContent>

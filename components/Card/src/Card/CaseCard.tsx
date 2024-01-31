@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { AnchorHTMLAttributes, ComponentType } from 'react';
 import { ArrowRightIcon } from '@gemeente-denhaag/icons';
-import { CustomLink } from '@gemeente-denhaag/link';
+import { BasicLink } from '@gemeente-denhaag/link';
 import { Paragraph } from '@gemeente-denhaag/typography';
 import clsx from 'clsx';
 import '../index.scss';
@@ -43,20 +43,13 @@ export interface CaseCardProps {
   /**
    * Custom Link component used for single-page apps.
    */
-  Link?: CustomLink;
+  Link?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
 }
 
 /**
  * Primary UI component for user interaction
  */
-export const CaseCard: React.FC<CaseCardProps> = ({
-  title,
-  subTitle,
-  date,
-  href,
-  active = true,
-  Link,
-}: CaseCardProps) => {
+export const CaseCard = ({ title, subTitle, date, href, active = true, Link = BasicLink }: CaseCardProps) => {
   const classNames = clsx('denhaag-case-card', !active && 'denhaag-case-card--archived');
 
   return (
