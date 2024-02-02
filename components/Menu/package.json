@@ -34,7 +34,7 @@
     "@gemeente-denhaag/icons": "workspace:*",
     "@gemeente-denhaag/language-switcher": "workspace:*",
     "@gemeente-denhaag/sheet": "workspace:*",
-    "@types/uuid": "9.0.7",
+    "@types/uuid": "9.0.8",
     "@utrecht/component-library-css": "3.0.0",
     "uuid": "9.0.1"
   },
