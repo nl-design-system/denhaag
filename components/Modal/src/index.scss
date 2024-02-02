@@ -110,7 +110,7 @@
   max-height: calc(100% - (var(--denhaag-modal-offset-y) * 2));
   max-width: var(--denhaag-modal-width);
   position: relative;
-  pointer-events: visiblepainted;
+  pointer-events: visiblePainted;
   width: auto;
 }
 
