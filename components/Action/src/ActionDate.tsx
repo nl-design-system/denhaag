@@ -1,4 +1,5 @@
 import React from 'react';
+import type { Locale } from 'date-fns/locale';
 import { nl } from 'date-fns/locale';
 import { AlertTriangleFilledIcon } from '@gemeente-denhaag/icons';
 import { Time } from './index';
