@@ -1,3 +1,4 @@
+import type { Locale } from 'date-fns/locale';
 import { format, differenceInCalendarDays } from 'date-fns';
 import { nl } from 'date-fns/locale';
 
