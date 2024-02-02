@@ -1452,8 +1452,8 @@ importers:
         specifier: 7.6.7
         version: 7.6.7
       '@storybook/addon-viewport':
-        specifier: 7.6.7
-        version: 7.6.7
+        specifier: 7.6.12
+        version: 7.6.12
       '@storybook/addons':
         specifier: 7.6.7
         version: 7.6.7(react-dom@18.2.0)(react@18.2.0)
@@ -3849,7 +3849,7 @@ packages:
       formiojs: ^4.12.6
     dependencies:
       formiojs: 4.13.12
-      js-interpreter: github.com/formio/JS-Interpreter/0ed5007ada500c12d797ab867a15cfab736e9b25
+      js-interpreter: git@github.com+formio/JS-Interpreter/0ed5007ada500c12d797ab867a15cfab736e9b25
       lodash: 4.17.21
       vm-browserify: 1.1.2
     dev: true
@@ -5840,8 +5840,8 @@ packages:
       - supports-color
     dev: true
 
-  /@storybook/addon-viewport@7.6.7:
-    resolution: {integrity: sha512-Q/BKjJaKzl4RWxH45K2iIXwkicj4ReVAUIpIyd7dPBb/Bx+hEDYZxR5dDg82AMkZdA71x5ttMnuDSuVpmWAE6g==}
+  /@storybook/addon-viewport@7.6.12:
+    resolution: {integrity: sha512-51zsBeoaEzq699SKDCe+GG/2PDAJKKJtpjqxIc4lDskogaCJSb3Ie8LyookHAKYgbi2qealVgK8zaP27KUj3Pg==}
     dependencies:
       memoizerific: 1.11.3
     dev: true
@@ -8556,7 +8556,7 @@ packages:
       '@babel/core': 7.23.7
       find-cache-dir: 4.0.0
       schema-utils: 4.2.0
-      webpack: 5.89.0
+      webpack: 5.89.0(@swc/core@1.3.96)(esbuild@0.18.20)
     dev: true
 
   /babel-plugin-add-react-displayname@0.0.5:
@@ -18545,7 +18545,7 @@ packages:
     dependencies:
       neo-async: 2.6.2
       sass: 1.69.7
-      webpack: 5.89.0
+      webpack: 5.89.0(@swc/core@1.3.96)(esbuild@0.18.20)
     dev: true
 
   /sass@1.69.7:
@@ -21373,8 +21373,8 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: true
 
-  github.com/formio/JS-Interpreter/0ed5007ada500c12d797ab867a15cfab736e9b25:
-    resolution: {tarball: https://codeload.github.com/formio/JS-Interpreter/tar.gz/0ed5007ada500c12d797ab867a15cfab736e9b25}
+  git@github.com+formio/JS-Interpreter/0ed5007ada500c12d797ab867a15cfab736e9b25:
+    resolution: {commit: 0ed5007ada500c12d797ab867a15cfab736e9b25, repo: git@github.com:formio/JS-Interpreter.git, type: git}
     name: js-interpreter
     version: 1.1.0-formio.2
     dependencies:
