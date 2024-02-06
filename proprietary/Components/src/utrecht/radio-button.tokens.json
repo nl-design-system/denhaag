@@ -46,10 +46,10 @@
         "color": {}
       },
       "focus": {
-        "border-color": {},
-        "border-width": {},
-        "background-color": {},
-        "color": {}
+        "background-color": { "value": "{utrecht.form-control.focus.background-color}" },
+        "border-width": { "value": "{utrecht.form-control.focus.border-width}" },
+        "border-color": { "value": "{utrecht.form-control.focus.border-color}" },
+        "color": { "value": "{utrecht.form-control.focus.color}" }
       },
       "disabled": {
         "border-color": { "value": "{utrecht.form-control.disabled.border-color}" },
