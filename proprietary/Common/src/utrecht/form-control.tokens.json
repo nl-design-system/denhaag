@@ -45,7 +45,7 @@
         "border-color": { "value": "{denhaag.color.black}" },
         "border-width": { "value": "2px" },
         "background-color": { "value": "{denhaag.color.white}" },
-        "color": { "value": "{denhaag.color.white}" }
+        "color": { "value": "{denhaag.color.black}" }
       },
       "hover": {
         "background-color": { "value": "{denhaag.color.warmgrey.1}" },
