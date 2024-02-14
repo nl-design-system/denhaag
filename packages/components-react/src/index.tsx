@@ -19,6 +19,7 @@ export * from '@gemeente-denhaag/link';
 export * from '@gemeente-denhaag/list';
 export * from '@gemeente-denhaag/menu';
 export * from '@gemeente-denhaag/page';
+export * from '@gemeente-denhaag/pagination';
 export * from '@gemeente-denhaag/process-steps';
 export * from '@gemeente-denhaag/radio-button';
 export * from '@gemeente-denhaag/responsive-content';

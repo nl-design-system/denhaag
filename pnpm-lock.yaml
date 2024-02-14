@@ -742,10 +742,6 @@ importers:
       react:
         specifier: ^18.0.0
         version: 18.2.0
-    devDependencies:
-      '@gemeente-denhaag/icons':
-        specifier: workspace:*
-        version: link:../Icons
 
   components/ProcessSteps:
     dependencies:
@@ -1153,6 +1149,9 @@ importers:
       '@gemeente-denhaag/page':
         specifier: workspace:*
         version: link:../../components/Page
+      '@gemeente-denhaag/pagination':
+        specifier: 0.1.1-alpha.300
+        version: 0.1.1-alpha.300(react@18.2.0)
       '@gemeente-denhaag/process-steps':
         specifier: workspace:*
         version: link:../../components/ProcessSteps
@@ -3780,6 +3779,14 @@ packages:
   /@gar/promisify@1.1.3:
     resolution: {integrity: sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==}
     dev: true
+
+  /@gemeente-denhaag/pagination@0.1.1-alpha.300(react@18.2.0):
+    resolution: {integrity: sha512-EK0BwfGE4ZkuIXMD3MVtQFZgoGbLwRCrXfrH9kYysNo2IgoCt5gHpd12oWNgvg99OtpR/6gIEb7TmiZZX1UNbg==}
+    peerDependencies:
+      react: ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /@googlemaps/js-api-loader@1.16.2:
     resolution: {integrity: sha512-psGw5u0QM6humao48Hn4lrChOM2/rA43ZCm3tKK9qQsEj1/VzqkCqnvGfEOshDbBQflydfaRovbKwZMF4AyqbA==}
@@ -8478,7 +8485,7 @@ packages:
       '@babel/core': 7.23.9
       find-cache-dir: 4.0.0
       schema-utils: 4.2.0
-      webpack: 5.90.1(@swc/core@1.3.96)(esbuild@0.18.20)
+      webpack: 5.90.1
     dev: true
 
   /babel-plugin-add-react-displayname@0.0.5:
@@ -18585,7 +18592,7 @@ packages:
     dependencies:
       neo-async: 2.6.2
       sass: 1.70.0
-      webpack: 5.90.1(@swc/core@1.3.96)(esbuild@0.18.20)
+      webpack: 5.90.1
     dev: true
 
   /sass@1.70.0:

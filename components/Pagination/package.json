@@ -2,6 +2,7 @@
   "name": "@gemeente-denhaag/pagination",
   "description": "A Pagination navigation component",
   "author": "Municipality of The Hague",
+  "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "license": "EUPL-1.2",
   "version": "0.1.1-alpha.299",
   "exports": {
@@ -18,22 +19,18 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nl-design-system/denhaag.git",
+    "directory": "components/pagination"
+  },
   "scripts": {
     "build": "rollup -c ../../rollup.config.mjs",
     "clean": "rimraf dist tsconfig.tsbuildinfo",
     "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\""
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nl-design-system/denhaag.git",
-    "directory": "components/Pagination"
-  },
-  "bugs": "https://github.com/nl-design-system/denhaag/issues",
-  "devDependencies": {
-    "@gemeente-denhaag/icons": "workspace:*"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "react": "^18.0.0"
-  },
-  "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
+  }
 }
