@@ -104,7 +104,7 @@
     "@storybook/addon-docs": "7.6.12",
     "@storybook/addon-links": "7.6.12",
     "@storybook/addon-mdx-gfm": "7.6.12",
-    "@storybook/addon-viewport": "7.6.12",
+    "@storybook/addon-viewport": "7.6.15",
     "@storybook/addons": "7.6.12",
     "@storybook/api": "7.6.12",
     "@storybook/blocks": "7.6.12",
