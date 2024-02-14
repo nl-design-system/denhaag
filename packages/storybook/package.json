@@ -114,7 +114,7 @@
     "@storybook/mdx2-csf": "1.1.0",
     "@storybook/preset-scss": "1.0.3",
     "@storybook/react": "7.6.12",
-    "@storybook/react-webpack5": "7.6.12",
+    "@storybook/react-webpack5": "7.6.15",
     "@storybook/theming": "7.6.12",
     "@storybook/types": "7.6.12",
     "@tabler/icons-react": "2.47.0",
