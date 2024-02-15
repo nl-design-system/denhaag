@@ -9,8 +9,8 @@ interface Props {
 export const PaginationPrevious = ({ index, onClick }: Props) => {
   return (
     <button
-      className={clsx('denhaag-pagination__link denhaag-pagination__link--arrow', {
-        'denhaag-pagination__link--disabled': index === 0,
+      className={clsx('denhaag-pagination__button denhaag-pagination__button--arrow', {
+        'denhaag-pagination__button--disabled': index === 0,
       })}
       onClick={() => onClick(index - 1)}
       aria-label="Previous page"

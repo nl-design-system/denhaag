@@ -8,12 +8,12 @@ interface Props {
   onClick: (index: number) => void;
 }
 
-export const PaginationLink = ({ page, index, currentIndex, onClick }: Props) => {
+export const PaginationButton = ({ page, index, currentIndex, onClick }: Props) => {
   return (
     <button
       key={page}
-      className={clsx('denhaag-pagination__link', {
-        'denhaag-pagination__link--current': currentIndex === index,
+      className={clsx('denhaag-pagination__button', {
+        'denhaag-pagination__button--current': currentIndex === index,
       })}
       onClick={() => onClick(index)}
       aria-label={`Page ${page}`}

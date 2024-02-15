@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { PaginationPrevious } from './PaginationPrevious';
 import { PaginationNext } from './PaginationNext';
 import { PaginationList } from './PaginationList';
-import { PaginationLink } from './PaginationLink';
+import { PaginationButton } from './PaginationButton';
 import { PaginationNav } from './PaginationNav';
 
 interface Props {
@@ -13,7 +13,7 @@ interface Props {
 }
 
 export const Pagination = ({ index = 0, indexLimit, onChange, className }: Props) => {
-  const [currentIndex, setCurrentIndex] = React.useState(index);
+  const [currentIndex, setCurrentIndex] = useState(index);
   const pages = Array.from({ length: indexLimit + 1 }, (_, i) => i + 1);
 
   useEffect(() => {
@@ -37,7 +37,7 @@ export const Pagination = ({ index = 0, indexLimit, onChange, className }: Props
           }
 
           return (
-            <PaginationLink key={page} page={page} index={index} currentIndex={currentIndex} onClick={changePage} />
+            <PaginationButton key={page} page={page} index={index} currentIndex={currentIndex} onClick={changePage} />
           );
         })}
       </PaginationList>

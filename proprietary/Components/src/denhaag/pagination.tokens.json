@@ -28,7 +28,7 @@
           "value": "{denhaag.space.block.lg}"
         }
       },
-      "link": {
+      "button": {
         "background-color": {
           "value": "transparent"
         },

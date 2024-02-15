@@ -10,8 +10,8 @@ interface Props {
 export const PaginationNext = ({ index, indexLimit, onClick }: Props) => {
   return (
     <button
-      className={clsx('denhaag-pagination__link denhaag-pagination__link--arrow', {
-        'denhaag-pagination__link--disabled': index === indexLimit,
+      className={clsx('denhaag-pagination__button denhaag-pagination__button--arrow', {
+        'denhaag-pagination__button--disabled': index === indexLimit,
       })}
       onClick={() => onClick(index + 1)}
       aria-label="Next page"
