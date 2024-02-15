@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
-import clsx from 'clsx';
 import { PaginationPrevious } from './PaginationPrevious';
 import { PaginationNext } from './PaginationNext';
 import { PaginationList } from './PaginationList';
 import { PaginationLink } from './PaginationLink';
+import { PaginationNav } from './PaginationNav';
 
 interface Props {
   index?: number;
@@ -27,7 +27,7 @@ export const Pagination = ({ index = 0, indexLimit, onChange, className }: Props
   };
 
   return (
-    <nav className={clsx('denhaag-pagination', className)}>
+    <PaginationNav className={className}>
       <PaginationPrevious index={currentIndex} onClick={changePage} />
       <PaginationList>
         {pages.map((page, index) => {
@@ -42,6 +42,6 @@ export const Pagination = ({ index = 0, indexLimit, onChange, className }: Props
         })}
       </PaginationList>
       <PaginationNext index={currentIndex} indexLimit={indexLimit} onClick={changePage} />
-    </nav>
+    </PaginationNav>
   );
 };
