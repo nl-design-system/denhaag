@@ -1,18 +1,19 @@
-import React from 'react';
+import React, { AnchorHTMLAttributes, ComponentType, HTMLAttributes } from 'react';
 
 import { ActionSingle, ActionMulti } from './index';
 import { FormatDateLabels } from '@gemeente-denhaag/utils';
 
-export interface ActionSingleProps extends React.HTMLAttributes<HTMLAnchorElement> {
+export interface ActionSingleProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   children: React.ReactNode;
   link: string;
   dateTime?: string;
   now?: string;
   relativeDate?: boolean;
   labels: FormatDateLabels;
+  Link?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
 }
 
-export interface ActionMultiProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface ActionMultiProps extends HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
   actions: React.ReactNode;
   dateTime?: string;
