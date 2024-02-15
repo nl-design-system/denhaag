@@ -22,18 +22,18 @@
   }
 }
 
-.denhaag-pagination__links {
+.denhaag-pagination__list {
   display: flex;
   flex-direction: row;
 }
 
-.denhaag-pagination__link {
+.denhaag-pagination__button {
   aspect-ratio: 1 / 1;
   align-items: center;
   background-color: var(--denhaag-pagination-background-color, transparent);
   border: 0;
   border-radius: var(--denhaag-pagination-border-radius, var(--denhaag-border-radius));
-  color: var(--denhaag-pagination-color, var(--denhaag-pagination-link-color));
+  color: var(--denhaag-pagination-color, var(--denhaag-pagination-button-color));
   display: flex;
   height: var(--denhaag-pagination-size);
   justify-content: center;
@@ -45,41 +45,42 @@
   font-style: normal;
   font-weight: var(--denhaag-pagination-font-weight);
   font-size: var(--denhaag-pagination-font-size);
+  cursor: pointer;
 }
 
-.denhaag-pagination__link:hover,
-.denhaag-pagination__link--hover {
-  --denhaag-pagination-color: var(--denhaag-pagination-link-hover-color);
+.denhaag-pagination__button:hover,
+.denhaag-pagination__button--hover {
+  --denhaag-pagination-color: var(--denhaag-pagination-button-hover-color);
 }
 
-.denhaag-pagination__link:focus-visible,
-.denhaag-pagination__link--focus {
+.denhaag-pagination__button:focus-visible,
+.denhaag-pagination__button--focus {
   outline: var(--denhaag-link-focus-outline);
   border-radius: 0;
 }
 
-.denhaag-pagination__link:disabled,
-.denhaag-pagination__link--disabled {
-  --denhaag-pagination-color: var(--denhaag-pagination-link-disabled-color);
+.denhaag-pagination__button:disabled,
+.denhaag-pagination__button--disabled {
+  --denhaag-pagination-color: var(--denhaag-pagination-button-disabled-color);
 
   pointer-events: none;
 }
 
-.denhaag-pagination__link--arrow {
+.denhaag-pagination__button--arrow {
   --denhaag-pagination-size: var(--denhaag-pagination-arrow-size);
   --denhaag-pagination-font-size: var(--denhaag-pagination-arrow-font-size);
 }
 
-[dir="rtl"] .denhaag-pagination__link--arrow {
+[dir="rtl"] .denhaag-pagination__button--arrow {
   transform: scaleX(-1);
 }
 
-.denhaag-pagination__link + .denhaag-pagination__links,
-.denhaag-pagination__links + .denhaag-pagination__link {
+.denhaag-pagination__button + .denhaag-pagination__list,
+.denhaag-pagination__list + .denhaag-pagination__button {
   margin-inline-start: var(--denhaag-pagination-margin-inline, 10px);
 }
 
-.denhaag-pagination__link:not(:first-child, :last-child, .denhaag-pagination__link--current, [rel]) {
+.denhaag-pagination__button:not(:first-child, :last-child, .denhaag-pagination__button--current, [rel]) {
   color: transparent; /* Only for Safari */
   overflow: hidden;
   pointer-events: none;
@@ -87,8 +88,8 @@
 }
 
 /* stylelint-disable selector-pseudo-class-parentheses-space-inside */
-.denhaag-pagination__link:not(:first-child, :last-child, .denhaag-pagination__link--current, [rel])::before {
-  color: var(--denhaag-pagination-color, var(--denhaag-pagination-link-color)); /* Only for Safari */
+.denhaag-pagination__button:not(:first-child, :last-child, .denhaag-pagination__button--current, [rel])::before {
+  color: var(--denhaag-pagination-color, var(--denhaag-pagination-button-color)); /* Only for Safari */
   content: "...";
   left: calc(50% - 7px);
   line-height: 0;
@@ -98,15 +99,15 @@
 }
 /* stylelint-enable selector-pseudo-class-parentheses-space-inside */
 
-.denhaag-pagination__link--current {
-  --denhaag-pagination-color: var(--denhaag-pagination-link-current-color);
-  --denhaag-pagination-font-weight: var(--denhaag-pagination-link-current-font-weight);
+.denhaag-pagination__button--current {
+  --denhaag-pagination-color: var(--denhaag-pagination-button-current-color);
+  --denhaag-pagination-font-weight: var(--denhaag-pagination-button-current-font-weight);
 }
 
-.denhaag-pagination__link--current.denhaag-pagination__link:disabled,
-.denhaag-pagination__link--current.denhaag-pagination__link--disabled {
-  --denhaag-pagination-color: var(--denhaag-pagination-link-current-disabled-color);
-  --denhaag-pagination-background-color: var(--denhaag-pagination-link-current-disabled-background-color);
+.denhaag-pagination__button--current.denhaag-pagination__button:disabled,
+.denhaag-pagination__button--current.denhaag-pagination__button--disabled {
+  --denhaag-pagination-color: var(--denhaag-pagination-button-current-disabled-color);
+  --denhaag-pagination-background-color: var(--denhaag-pagination-button-current-disabled-background-color);
 }
 
 .denhaag-pagination .denhaag-icon {

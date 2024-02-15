@@ -742,10 +742,6 @@ importers:
       react:
         specifier: ^18.0.0
         version: 18.2.0
-    devDependencies:
-      '@gemeente-denhaag/icons':
-        specifier: workspace:*
-        version: link:../Icons
 
   components/ProcessSteps:
     dependencies:
@@ -1153,6 +1149,9 @@ importers:
       '@gemeente-denhaag/page':
         specifier: workspace:*
         version: link:../../components/Page
+      '@gemeente-denhaag/pagination':
+        specifier: workspace:*
+        version: link:../../components/Pagination
       '@gemeente-denhaag/process-steps':
         specifier: workspace:*
         version: link:../../components/ProcessSteps
