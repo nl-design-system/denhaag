@@ -1,9 +1,11 @@
-import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
 import { BadgeCounter } from '@gemeente-denhaag/badge-counter';
-import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '@gemeente-denhaag/sidenav';
+import tokens from '@gemeente-denhaag/design-tokens-components/dist/list.json';
 import { ArchiveIcon, CheckCircleIcon, GridIcon, InboxIcon, UserIcon } from '@gemeente-denhaag/icons';
+import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '@gemeente-denhaag/sidenav';
+import { Meta, StoryObj } from '@storybook/react';
+import React from 'react';
 import readme from '../../../../components/Button/README.md';
+import tokensDefinition from '../../../../components/Sidenav/tokens.json';
 
 const exampleArgs = {
   children: (
@@ -61,6 +63,9 @@ const meta = {
         component: readme,
       },
     },
+    tokensPrefix: 'denhaag-sidenav',
+    tokensDefinition,
+    tokens,
   },
 } as Meta<typeof Sidenav>;
 
