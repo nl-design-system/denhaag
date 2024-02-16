@@ -1,8 +1,9 @@
-import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
 import { ActionSingle } from '@gemeente-denhaag/action';
-
+import tokens from '@gemeente-denhaag/design-tokens-components/dist/list.json';
+import { Meta, StoryObj } from '@storybook/react';
+import React from 'react';
 import readme from '../../../../components/Action/README.md';
+import tokensDefinition from '../../../../components/Action/tokens.json';
 
 const labels = {
   today: 'vandaag',
@@ -34,6 +35,9 @@ const meta = {
         component: readme,
       },
     },
+    tokensPrefix: 'denhaag-action',
+    tokensDefinition,
+    tokens,
   },
 } as Meta<typeof ActionSingle>;
 

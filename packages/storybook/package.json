@@ -91,7 +91,8 @@
     "@gemeente-denhaag/textarea": "workspace:*",
     "@gemeente-denhaag/typography": "workspace:*",
     "@gemeente-denhaag/unorderedlist": "workspace:*",
-    "@gemeente-denhaag/utils": "workspace:*"
+    "@gemeente-denhaag/utils": "workspace:*",
+    "@nl-design-system-unstable/theme-toolkit": "1.0.0-alpha.2"
   },
   "devDependencies": {
     "@babel/core": "7.24.0",
