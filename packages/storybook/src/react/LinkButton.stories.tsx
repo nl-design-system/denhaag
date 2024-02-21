@@ -28,21 +28,44 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  args: { children: ['Terug'] },
+  args: { children: <>Terug</> },
 };
 
 export const Inline: Story = {
-  args: { inline: true, children: ['Terug'] },
+  args: { inline: true, children: <>Terug</> },
 };
 
 export const Icon: Story = {
-  args: { children: [<ArrowLeftIcon />, 'Terug'] },
+  args: {
+    children: (
+      <>
+        <ArrowLeftIcon />
+        Terug
+      </>
+    ),
+  },
 };
 
 export const IconBeforeAndInline: Story = {
-  args: { inline: true, children: [<ArrowLeftIcon />, 'Terug'] },
+  args: {
+    inline: true,
+    children: (
+      <>
+        <ArrowLeftIcon />
+        Terug
+      </>
+    ),
+  },
 };
 
 export const IconAfterAndInline: Story = {
-  args: { inline: true, children: ['Ga verder', <ExternalLinkIcon />] },
+  args: {
+    inline: true,
+    children: (
+      <>
+        Ga verder
+        <ExternalLinkIcon />
+      </>
+    ),
+  },
 };
