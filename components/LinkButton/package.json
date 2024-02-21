@@ -1,12 +1,12 @@
 {
   "name": "@gemeente-denhaag/link-button",
-  "version": "0.2.3-alpha.371",
+  "version": "0.0.1-alpha.1",
   "description": "A LinkButton component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/nl-design-system/denhaag.git",
-    "directory": "components/link"
+    "directory": "components/linkButton"
   },
   "license": "EUPL-1.2",
   "author": "Municipality of The Hague",
