@@ -24,7 +24,7 @@
         "color": {}
       },
       "icon": {
-        "gap": {},
+        "gap": { "value": "4px" },
         "size": {}
       },
       "disabled": {
