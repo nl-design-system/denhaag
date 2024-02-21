@@ -4,16 +4,16 @@
       "color": {
         "value": "{denhaag.color.blue.3}"
       },
-      "text-decoration": {},
+      "text-decoration": { "value": "none" },
       "text-decoration-color": {},
       "text-decoration-thickness": {
-        "value": "1px"
+        "value": "auto"
       },
       "text-underline-offset": {
-        "value": "3px"
+        "value": "auto"
       },
       "active": {
-        "color": {}
+        "color": { "value": "{denhaag.color.blue.5}" }
       },
       "focus": {
         "color": {
@@ -25,10 +25,10 @@
         }
       },
       "hover": {
-        "color": {},
-        "text-decoration": {},
+        "color": { "value": "{denhaag.color.blue.4}" },
+        "text-decoration": { "value": "underline" },
         "text-decoration-thickness": {
-          "value": "1px"
+          "value": "auto"
         }
       },
       "placeholder": {
@@ -36,7 +36,7 @@
         "font-weight": {}
       },
       "visited": {
-        "color": {}
+        "color": { "value": "{denhaag.color.blue.3}" }
       },
       "icon": {
         "size": {}
