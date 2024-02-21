@@ -4,7 +4,7 @@
       "color": {
         "value": "{denhaag.color.blue.3}"
       },
-      "text-decoration": { "value": "none" },
+      "text-decoration": { "value": "underline" },
       "text-decoration-color": {},
       "text-decoration-thickness": {
         "value": "auto"
@@ -26,7 +26,7 @@
       },
       "hover": {
         "color": { "value": "{denhaag.color.blue.4}" },
-        "text-decoration": { "value": "underline" },
+        "text-decoration": { "value": "none" },
         "text-decoration-thickness": {
           "value": "auto"
         }
