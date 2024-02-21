@@ -682,9 +682,6 @@ importers:
       '@utrecht/components':
         specifier: 3.0.0
         version: 3.0.0
-      clsx:
-        specifier: 2.1.0
-        version: 2.1.0
       react:
         specifier: ^18.0.0
         version: 18.2.0
