@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
@@ -21419,7 +21423,3 @@ packages:
     dependencies:
       acorn: 8.11.3
     dev: true
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false

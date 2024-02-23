@@ -3,7 +3,7 @@
   "description": "A Breadcrumb component",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
-  "version": "0.1.1-alpha.302",
+  "version": "0.1.1-alpha.303",
   "exports": {
     ".": {
       "types": "./dist/cjs/index.d.ts",
