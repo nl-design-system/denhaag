@@ -26,7 +26,7 @@ export const TableHeader: React.FC<TableHeaderProps> = ({
 
   if (href) {
     return (
-      <th className={rootClassNames} {...props}>
+      <th className={rootClassNames} {...props} scope={scope}>
         <a href={href}>{props.children}</a>
       </th>
     );
