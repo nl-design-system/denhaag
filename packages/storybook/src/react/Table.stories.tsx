@@ -190,3 +190,44 @@ export const LongTitle: Story = {
     ),
   },
 };
+
+export const withLink: Story = {
+  args: {
+    ...Default.args,
+    children: (
+      <>
+        <TableCaption>He-Man and Skeletor facts</TableCaption>
+        <TableHead>
+          <TableRow tabIndex={-1}>
+            <TableCell></TableCell>
+            <TableHeader className="heman">He-Man</TableHeader>
+            <TableHeader className="skeletor">Skeletor</TableHeader>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          <TableRow>
+            <TableHeader scope="row" href="#example">
+              Role
+            </TableHeader>
+            <TableCell href="#example">Hero</TableCell>
+            <TableCell href="#example">Villain</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableHeader scope="row" href="#example">
+              Weapon
+            </TableHeader>
+            <TableCell href="#example">Power Sword</TableCell>
+            <TableCell href="#example">Havoc Staff</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableHeader scope="row" href="#example">
+              Dark secret
+            </TableHeader>
+            <TableCell href="#example">Expert florist</TableCell>
+            <TableCell href="#example">Cries at romcoms</TableCell>
+          </TableRow>
+        </TableBody>
+      </>
+    ),
+  },
+};

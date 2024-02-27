@@ -240,6 +240,64 @@ import readme from "../../../../components/Table/README.md";
   </Story>
 </Canvas>
 
+### With link
+
+<Canvas>
+  <Story name="With link">
+    {() => (
+      <table class="denhaag-table">
+        <caption class="denhaag-table__caption">He-Man and Skeletor facts</caption>
+        <thead class="denhaag-table__head">
+          <tr class="denhaag-table__row">
+            <td class="denhaag-table__cell"></td>
+            <th aria-sort="none" class="denhaag-table__heading" scope="col">
+              He-Man
+            </th>
+            <th aria-sort="none" class="denhaag-table__heading" scope="col">
+              Skeletor
+            </th>
+          </tr>
+        </thead>
+        <tbody class="denhaag-table__body">
+          <tr class="denhaag-table__row">
+            <th class="denhaag-table__heading denhaag-table__heading--link" scope="row">
+              <a href="#example">Role</a>
+            </th>
+            <td class="denhaag-table__cell denhaag-table__cell--link">
+              <a href="#example">Hero</a>
+            </td>
+            <td class="denhaag-table__cell denhaag-table__cell--link">
+              <a href="#example">Villain</a>
+            </td>
+          </tr>
+          <tr class="denhaag-table__row">
+            <th class="denhaag-table__heading denhaag-table__heading--link" scope="row">
+              <a href="#example">Weapon</a>
+            </th>
+            <td class="denhaag-table__cell denhaag-table__cell--link">
+              <a href="#example">Power Sword</a>
+            </td>
+            <td class="denhaag-table__cell denhaag-table__cell--link">
+              <a href="#example">Havoc Staff</a>
+            </td>
+          </tr>
+          <tr class="denhaag-table__row">
+            <th class="denhaag-table__heading denhaag-table__heading--link" scope="row">
+              <a href="#example">Dark secret</a>
+            </th>
+            <td class="denhaag-table__cell denhaag-table__cell--link">
+              <a href="#example">Expert florist</a>
+            </td>
+            <td class="denhaag-table__cell denhaag-table__cell--link">
+              <a href="#example">Cries at romcoms</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    )}
+  </Story>
+</Canvas>
+
 ### Responsive - horizontal scroll
 
 <Canvas>

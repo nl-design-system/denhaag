@@ -71,13 +71,6 @@
   --utrecht-table-caption-margin-block-end: initial;
 }
 
-.denhaag-table__cell {
-  color: var(--denhaag-table-cell-color);
-  font-weight: var(--denhaag-table-cell-font-weight, normal);
-  line-height: var(--utrecht-table-cell-line-height, inherit);
-  min-width: var(--denhaag-table-cell-min-width, 7.5rem);
-}
-
 .denhaag-table__cell,
 .denhaag-table__heading {
   background-color: var(--denhaag-table-row-background-color, inherit);
@@ -89,10 +82,35 @@
   border-block-end: var(--utrecht-table-border-width) solid var(--utrecht-table-border-color);
 }
 
+.denhaag-table__cell {
+  color: var(--denhaag-table-cell-color);
+  font-weight: var(--denhaag-table-cell-font-weight, normal);
+  line-height: var(--utrecht-table-cell-line-height, inherit);
+  min-width: var(--denhaag-table-cell-min-width, 7.5rem);
+}
+
 .denhaag-table__heading {
   color: var(--denhaag-table-heading-color);
   font-weight: var(--utrecht-table-heading-font-weight, bold);
   min-width: var(--denhaag-table-heading-min-width, 7.5rem);
+}
+
+.denhaag-table__cell--link,
+.denhaag-table__heading--link {
+  padding-block-end: 0;
+  padding-block-start: 0;
+  padding-inline-end: 0;
+  padding-inline-start: 0;
+
+  a {
+    display: block;
+    color: inherit;
+    text-decoration: inherit;
+    padding-block-end: var(--utrecht-table-cell-padding-block-end, 0);
+    padding-block-start: var(--utrecht-table-cell-padding-block-start, 0);
+    padding-inline-end: var(--utrecht-table-cell-padding-inline-end, 0);
+    padding-inline-start: var(--utrecht-table-cell-padding-inline-start, 0);
+  }
 }
 
 .denhaag-table__body > .denhaag-table__row--hover .denhaag-table__cell,
