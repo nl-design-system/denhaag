@@ -8,7 +8,7 @@ import { PaginationNav } from './PaginationNav';
 interface Props {
   index?: number;
   indexLimit: number;
-  onChange?: (index: number) => number;
+  onChange?: (index: number) => void;
   className?: string;
 }
 
