@@ -98,7 +98,7 @@
     "@babel/preset-react": "7.23.3",
     "@babel/preset-typescript": "7.23.3",
     "@etchteam/storybook-addon-status": "4.2.4",
-    "@mdx-js/react": "3.0.0",
+    "@mdx-js/react": "3.0.1",
     "@open-formulieren/sdk": "2.1.2",
     "@storybook/addon-a11y": "7.6.12",
     "@storybook/addon-actions": "7.6.12",
