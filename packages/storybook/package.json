@@ -138,7 +138,7 @@
     "rimraf": "5.0.5",
     "sass": "1.70.0",
     "sass-loader": "14.1.0",
-    "storybook": "7.6.12",
+    "storybook": "7.6.17",
     "storybook-addon-pseudo-states": "2.1.2",
     "storybook-addon-themes": "6.1.0",
     "style-loader": "3.3.4",
