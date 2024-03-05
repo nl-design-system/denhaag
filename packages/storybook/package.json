@@ -93,8 +93,8 @@
     "@gemeente-denhaag/utils": "workspace:*"
   },
   "devDependencies": {
-    "@babel/core": "7.23.9",
-    "@babel/preset-env": "7.23.9",
+    "@babel/core": "7.24.0",
+    "@babel/preset-env": "7.24.0",
     "@babel/preset-react": "7.23.3",
     "@babel/preset-typescript": "7.23.3",
     "@etchteam/storybook-addon-status": "4.2.4",
@@ -136,10 +136,10 @@
     "react-syntax-highlighter": "15.5.0",
     "require-from-string": "2.0.2",
     "rimraf": "5.0.5",
-    "sass": "1.70.0",
+    "sass": "1.71.1",
     "sass-loader": "14.1.1",
     "storybook": "7.6.17",
-    "storybook-addon-pseudo-states": "2.1.2",
+    "storybook-addon-pseudo-states": "2.2.1",
     "storybook-addon-themes": "6.1.0",
     "style-loader": "3.3.4",
     "typescript": "5.3.3",
