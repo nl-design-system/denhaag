@@ -2,8 +2,7 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import { BadgeCounter } from '@gemeente-denhaag/badge-counter';
 import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '@gemeente-denhaag/sidenav';
-import { ArchiveIcon, GridIcon, InboxIcon } from '@gemeente-denhaag/icons';
-import { Divider } from '@gemeente-denhaag/divider';
+import { ArchiveIcon, CheckCircleIcon, GridIcon, InboxIcon, UserIcon } from '@gemeente-denhaag/icons';
 import readme from '../../../../components/Button/README.md';
 
 const exampleArgs = {
@@ -16,6 +15,14 @@ const exampleArgs = {
             Overzicht
           </SidenavLink>
         </SidenavItem>
+      </SidenavList>
+      <SidenavList>
+        <SidenavItem>
+          <SidenavLink href={'/#'}>
+            <CheckCircleIcon />
+            Mijn taken
+          </SidenavLink>
+        </SidenavItem>
         <SidenavItem>
           <SidenavLink href={'/#'}>
             <InboxIcon />
@@ -26,16 +33,15 @@ const exampleArgs = {
         <SidenavItem>
           <SidenavLink href={'/#'}>
             <ArchiveIcon />
-            Lopende zaken
+            Mijn lopende zaken
           </SidenavLink>
         </SidenavItem>
       </SidenavList>
-      <Divider />
       <SidenavList>
         <SidenavItem>
           <SidenavLink href={'/#'}>
-            <ArchiveIcon />
-            Lopende zaken
+            <UserIcon />
+            Mijn gegevens
           </SidenavLink>
         </SidenavItem>
       </SidenavList>

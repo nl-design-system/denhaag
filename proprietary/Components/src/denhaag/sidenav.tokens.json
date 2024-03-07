@@ -4,6 +4,7 @@
       "display": { "value": "flex" },
       "flex-direction": { "value": "column" },
       "min-width": { "value": "14.5rem" },
+      "row-gap": { "value": "{denhaag.space.block.xl}" },
       "mobile": {
         "display": { "value": "none" }
       },
