@@ -31,14 +31,6 @@
         "active": {
           "color": { "value": "{denhaag.color.green.3}" },
           "font-weight": { "value": "{denhaag.typography.weight.bold}" }
-        },
-        "child": {
-          "padding-inline-start": { "value": "16px" }
-        }
-      },
-      "list": {
-        "child": {
-          "margin-inline-start": { "value": "24px" }
         }
       }
     }
