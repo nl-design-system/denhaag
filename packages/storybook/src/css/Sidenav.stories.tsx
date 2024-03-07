@@ -50,8 +50,8 @@ const exampleArgs = {
 };
 
 const meta = {
-  id: 'react-navigation-sidenav',
-  title: 'React/Navigation/Sidenav',
+  id: 'css-navigation-sidenav',
+  title: 'CSS/Navigation/Sidenav',
   component: Sidenav,
   args: exampleArgs,
   tags: ['autodocs'],

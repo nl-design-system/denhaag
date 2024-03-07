@@ -1,26 +1,17 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import { BadgeCounter } from '@utrecht/component-library-react';
 import { Heading2 } from '@gemeente-denhaag/typography';
 import { Page, PageHeader, PageFooter } from '@gemeente-denhaag/page';
 import { HeaderLogic, HeaderLogicProps } from '@gemeente-denhaag/header';
 import { Footer } from '@gemeente-denhaag/footer';
 import { ResponsiveContent } from '@gemeente-denhaag/responsive-content';
-import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '@gemeente-denhaag/sidenav';
-import {
-  GridIcon,
-  UserIcon,
-  InboxIcon,
-  ParkingIcon,
-  ArchiveIcon,
-  CircleInformationIcon,
-} from '@gemeente-denhaag/icons';
 import { Tabs } from '@gemeente-denhaag/tab';
 import { CaseCard } from '@gemeente-denhaag/card';
 import '@gemeente-denhaag/card-group';
 import { headerProps, footerLegalData, footerSocialData, newsletterData, contactData, copyright } from './util';
 
 import './template-story.scss';
+import Sidenav from './components/Sidenav';
 
 const meta = {
   title: 'Templates/Zaak Overzicht',
@@ -71,59 +62,7 @@ export const ZaakOverzicht: StoryObj<typeof meta> = {
         <HeaderLogic {...zakenHeaderProps} />
       </PageHeader>
       <ResponsiveContent className="denhaag-page-content denhaag-responsive-content--sidebar">
-        <Sidenav>
-          <SidenavList>
-            <SidenavItem>
-              <SidenavLink>
-                <GridIcon />
-                Overzicht
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink>
-                <InboxIcon />
-                Mijn berichten
-                <BadgeCounter>2</BadgeCounter>
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink current={true}>
-                <ArchiveIcon />
-                Mijn lopende zaken
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink>
-                <CircleInformationIcon />
-                Belastingszaken
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink>
-                <CircleInformationIcon />
-                WOZ
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink>
-                <ParkingIcon />
-                Parkeren
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink>
-                <CircleInformationIcon />
-                Erfpacht
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink>
-                <UserIcon />
-                Mijn gegevens
-              </SidenavLink>
-            </SidenavItem>
-          </SidenavList>
-        </Sidenav>
+        <Sidenav />
         <main className="denhaag-page-content__main">
           <Heading2>Mijn lopende zaken</Heading2>
           <Tabs {...tabsProps}></Tabs>
