@@ -1,23 +1,14 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import { BadgeCounter, ButtonLink } from '@utrecht/component-library-react';
+import { ButtonLink } from '@utrecht/component-library-react';
 import { Action } from '@gemeente-denhaag/action';
 import { Heading2, Heading3 } from '@gemeente-denhaag/typography';
 import { Page, PageHeader, PageFooter } from '@gemeente-denhaag/page';
 import { HeaderLogic, HeaderLogicProps } from '@gemeente-denhaag/header';
 import { Footer } from '@gemeente-denhaag/footer';
 import { ResponsiveContent } from '@gemeente-denhaag/responsive-content';
-import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '@gemeente-denhaag/sidenav';
 import { Status, StatusProps } from '@gemeente-denhaag/process-steps';
 import { ContactTimeline, ContactTimelineProps } from '@gemeente-denhaag/contact-timeline';
-import {
-  GridIcon,
-  UserIcon,
-  InboxIcon,
-  ParkingIcon,
-  ArchiveIcon,
-  CircleInformationIcon,
-} from '@gemeente-denhaag/icons';
 import { File } from '@gemeente-denhaag/file';
 import {
   headerProps,
@@ -31,6 +22,7 @@ import {
 } from './util';
 
 import './template-story.scss';
+import Sidenav from './components/Sidenav';
 
 const meta = {
   title: 'Templates/Zaak Detail',
@@ -157,59 +149,7 @@ export const ZaakDetail: StoryObj<typeof meta> = {
         <HeaderLogic {...zakenHeaderProps} />
       </PageHeader>
       <ResponsiveContent className="denhaag-page-content denhaag-responsive-content--sidebar">
-        <Sidenav>
-          <SidenavList>
-            <SidenavItem>
-              <SidenavLink>
-                <GridIcon />
-                Overzicht
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink>
-                <InboxIcon />
-                Mijn berichten
-                <BadgeCounter>2</BadgeCounter>
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink current={true}>
-                <ArchiveIcon />
-                Mijn lopende zaken
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink>
-                <CircleInformationIcon />
-                Belastingszaken
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink>
-                <CircleInformationIcon />
-                WOZ
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink>
-                <ParkingIcon />
-                Parkeren
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink>
-                <CircleInformationIcon />
-                Erfpacht
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink>
-                <UserIcon />
-                Mijn gegevens
-              </SidenavLink>
-            </SidenavItem>
-          </SidenavList>
-        </Sidenav>
+        <Sidenav />
         <main className="denhaag-page-content__main">
           <Heading2>Aanvraag subsidie geluidsisolatie</Heading2>
           <Action

@@ -6,8 +6,6 @@ import { Page, PageHeader, PageFooter } from '@gemeente-denhaag/page';
 import { HeaderLogic, HeaderLogicProps } from '@gemeente-denhaag/header';
 import { Footer } from '@gemeente-denhaag/footer';
 import { ResponsiveContent } from '@gemeente-denhaag/responsive-content';
-import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '@gemeente-denhaag/sidenav';
-import { GridIcon, UserIcon, InboxIcon, ArchiveIcon, BookIcon } from '@gemeente-denhaag/icons';
 import { Table, TableHead, TableRow, TableHeader } from '@gemeente-denhaag/table';
 
 import {
@@ -21,6 +19,7 @@ import {
 } from './util';
 
 import './Messages-page.scss';
+import Sidenav from './components/Sidenav';
 
 const meta = {
   title: 'Templates/Berichten',
@@ -79,40 +78,7 @@ export const Berichten: StoryObj<typeof meta> = {
         <HeaderLogic {...messagesHeaderProps} />
       </PageHeader>
       <ResponsiveContent className="denhaag-page-content denhaag-responsive-content--sidebar">
-        <Sidenav>
-          <SidenavList>
-            <SidenavItem>
-              <SidenavLink>
-                <GridIcon />
-                Overzicht
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink current={true}>
-                <InboxIcon />
-                Mijn berichten
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink>
-                <ArchiveIcon />
-                Mijn lopende zaken
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink>
-                <BookIcon />
-                Mijn thema&apos;s
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink>
-                <UserIcon />
-                Mijn gegevens
-              </SidenavLink>
-            </SidenavItem>
-          </SidenavList>
-        </Sidenav>
+        <Sidenav />
         <main className="denhaag-page-content__main">
           <Heading2>Mijn berichten</Heading2>
           <Table className="denhaag-page-content__table">
