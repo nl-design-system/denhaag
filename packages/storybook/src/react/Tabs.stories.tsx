@@ -1,8 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { Tabs, TabsProps } from '@gemeente-denhaag/tab';
 import readme from '../../../../components/Tab/README.md';
-import { useEffect, useState } from 'react';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const exampleArgs: TabsProps = {
   tabData: [
