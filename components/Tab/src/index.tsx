@@ -35,7 +35,7 @@ interface CustomCSSProperties extends React.CSSProperties {
  * @constructor Constructs an instance of Tabs.
  */
 export const Tabs: React.FC<TabsProps> = ({ tabData }: TabsProps) => {
-  const [tabs] = useState(
+  const [tabs, setTabs] = useState(
     tabData.map((tab) => {
       const tabRef = createRef<HTMLDivElement>();
       const id = uuidv4();
@@ -53,6 +53,10 @@ export const Tabs: React.FC<TabsProps> = ({ tabData }: TabsProps) => {
   const [focussedTab, setFocussedTab] = useState<TabRef | undefined>();
 
   const [tabIndicatorPosition, setTabIndicatorPosition] = useState<TabIndicatorPosition>();
+
+  useEffect(() => {
+    setTabs(tabs.map((tab, index) => ({ ...tab, tab: { ...tabData[index] } })));
+  }, [tabData]);
 
   useEffect(() => {
     if (focussedTab !== undefined) {
