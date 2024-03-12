@@ -840,6 +840,9 @@ importers:
 
   components/Table:
     dependencies:
+      '@gemeente-denhaag/link':
+        specifier: workspace:*
+        version: link:../Link
       react:
         specifier: ^18.0.0
         version: 18.2.0

@@ -1,15 +1,22 @@
-import React, { TdHTMLAttributes } from 'react';
+import React, { AnchorHTMLAttributes, ComponentType, TdHTMLAttributes } from 'react';
 import clsx from 'clsx';
+import { BasicLink } from '@gemeente-denhaag/link';
 
 export interface TableCellProps extends TdHTMLAttributes<HTMLTableCellElement> {
   href?: string;
+  Link?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
 }
 
 /**
  * TableCell component based on the <td> element.
  * Defines a cell of a table that contains data. It participates in the table model.
  */
-export const TableCell: React.FC<TableCellProps> = ({ className, href, ...props }: TableCellProps) => {
+export const TableCell: React.FC<TableCellProps> = ({
+  className,
+  href,
+  Link = BasicLink,
+  ...props
+}: TableCellProps) => {
   const rootClassNames = clsx('denhaag-table__cell', className, {
     'denhaag-table__cell--link': href,
   });
@@ -17,7 +24,7 @@ export const TableCell: React.FC<TableCellProps> = ({ className, href, ...props 
   if (href) {
     return (
       <td className={rootClassNames} {...props}>
-        <a href={href}>{props.children}</a>
+        <Link href={href}>{props.children}</Link>
       </td>
     );
   }

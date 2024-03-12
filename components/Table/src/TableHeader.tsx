@@ -1,8 +1,10 @@
-import React, { ThHTMLAttributes } from 'react';
+import React, { AnchorHTMLAttributes, ComponentType, ThHTMLAttributes } from 'react';
 import clsx from 'clsx';
+import { BasicLink } from '@gemeente-denhaag/link';
 
 export interface TableHeaderProps extends ThHTMLAttributes<HTMLTableCellElement> {
   href?: string;
+  Link?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
 }
 
 /**
@@ -13,6 +15,7 @@ export const TableHeader: React.FC<TableHeaderProps> = ({
   className,
   scope = 'col',
   href,
+  Link = BasicLink,
   ...props
 }: TableHeaderProps) => {
   const rootClassNames = clsx('denhaag-table__heading', className, {
@@ -27,7 +30,7 @@ export const TableHeader: React.FC<TableHeaderProps> = ({
   if (href) {
     return (
       <th className={rootClassNames} {...props} scope={scope}>
-        <a href={href}>{props.children}</a>
+        <Link href={href}>{props.children}</Link>
       </th>
     );
   }
