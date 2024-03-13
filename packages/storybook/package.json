@@ -35,6 +35,7 @@
     "@gemeente-denhaag/breadcrumb": "workspace:*",
     "@gemeente-denhaag/button": "workspace:*",
     "@gemeente-denhaag/button-group": "workspace:*",
+    "@gemeente-denhaag/button-link": "workspace:*",
     "@gemeente-denhaag/card": "workspace:*",
     "@gemeente-denhaag/card-authentication": "workspace:*",
     "@gemeente-denhaag/card-group": "workspace:*",

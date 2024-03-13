@@ -327,6 +327,18 @@ importers:
 
   components/ButtonGroup: {}
 
+  components/ButtonLink:
+    dependencies:
+      '@utrecht/component-library-react':
+        specifier: 3.0.0
+        version: 3.0.0(react-dom@18.2.0)(react@18.2.0)
+      '@utrecht/components':
+        specifier: 3.0.0
+        version: 3.0.0
+      react:
+        specifier: ^18.0.0
+        version: 18.2.0
+
   components/Card:
     dependencies:
       '@gemeente-denhaag/icons':
@@ -1269,6 +1281,9 @@ importers:
       '@gemeente-denhaag/button-group':
         specifier: workspace:*
         version: link:../../components/ButtonGroup
+      '@gemeente-denhaag/button-link':
+        specifier: workspace:*
+        version: link:../../components/ButtonLink
       '@gemeente-denhaag/card':
         specifier: workspace:*
         version: link:../../components/Card
