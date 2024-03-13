@@ -5,8 +5,8 @@ import readme from '../../../../components/File/README.md';
 
 const exampleArgs = {
   name: 'example3',
-  link: 'test.png',
-  size: 2000,
+  href: 'test.png',
+  size: '2000',
   lastUpdated: 'Thu Aug 31 2023 11:22:11 GMT+0200',
 };
 
@@ -36,4 +36,14 @@ export const Hover: Story = {
 
 export const Focus: Story = {
   args: { ...Default.args, className: 'denhaag-file--focus' },
+};
+
+export const ClickFunction: Story = {
+  args: {
+    ...Default.args,
+    onClick: (event) => {
+      event.preventDefault();
+      console.log('File clicked');
+    },
+  },
 };

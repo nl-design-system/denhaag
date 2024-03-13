@@ -4,13 +4,14 @@ import { FileIcon, ImageIcon, DownloadIcon } from '@gemeente-denhaag/icons';
 
 interface FileProps extends React.HTMLAttributes<HTMLAnchorElement> {
   name: string;
-  link: string;
-  size?: number;
+  href: string;
+  size?: string;
   lastUpdated?: string;
+  onClick?: (event: React.MouseEvent<HTMLAnchorElement>) => void;
 }
 
-export const File = ({ name, link, size, lastUpdated, className }: FileProps) => {
-  const extension = link.lastIndexOf('.') >= 0 ? link.substring(link.lastIndexOf('.') + 1, link.length) : undefined;
+export const File = ({ name, href, size, lastUpdated, className, onClick }: FileProps) => {
+  const extension = href.lastIndexOf('.') >= 0 ? href.substring(href.lastIndexOf('.') + 1, href.length) : undefined;
   const lastUpdatedDate = lastUpdated ? new Date(lastUpdated).toLocaleDateString() : null;
   const FileTypeIcon = ({ ...props }) => {
     switch (extension) {
@@ -23,11 +24,12 @@ export const File = ({ name, link, size, lastUpdated, className }: FileProps) =>
 
   return (
     <a
-      href={link}
+      href={href}
       className={clsx('denhaag-file', className)}
       aria-labelledby="name"
       aria-describedby="description"
       download={name}
+      onClick={onClick}
     >
       <div className="denhaag-file__left">
         <FileTypeIcon className="denhaag-file__icon" />
