@@ -39,7 +39,7 @@ export const Focus: Story = {
   args: { ...Default.args, className: 'denhaag-file--focus' },
 };
 
-export const ClickFunction: Story = {
+export const Button: Story = {
   args: {
     ...Default.args,
     onClick: (event) => {

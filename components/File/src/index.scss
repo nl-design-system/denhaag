@@ -1,8 +1,14 @@
 .denhaag-file {
+  width: 100%;
   display: flex;
   color: inherit;
+  font-size: inherit;
   text-decoration: inherit;
   cursor: pointer;
+  background: none;
+  padding: 0;
+  text-align: start;
+  align-items: normal;
   border-width: var(--denhaag-file-border-width);
   border-color: var(--denhaag-file-border-color);
   border-style: var(--denhaag-file-border-style);
