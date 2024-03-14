@@ -76,3 +76,13 @@ export const WithDateRelative: Story = {
 export const WithDateWarning: Story = {
   args: { ...Default.args, dateTime: '2023-09-30T19:47:36.593Z', now: '2023-09-28T19:47:36.593Z', relativeDate: true },
 };
+
+export const List: Story = {
+  render: () => (
+    <>
+      <ActionMulti {...exampleArgs} />
+      <ActionMulti {...exampleArgs} />
+      <ActionMulti {...exampleArgs} />
+    </>
+  ),
+};

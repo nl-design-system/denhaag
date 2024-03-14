@@ -2,15 +2,17 @@ import React from 'react';
 import clsx from 'clsx';
 import { FileIcon, ImageIcon, DownloadIcon } from '@gemeente-denhaag/icons';
 
-interface FileProps extends React.HTMLAttributes<HTMLAnchorElement> {
+interface FileProps {
+  className?: string;
   name: string;
-  link: string;
-  size?: number;
+  href: string;
+  size?: string;
   lastUpdated?: string;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-export const File = ({ name, link, size, lastUpdated, className }: FileProps) => {
-  const extension = link.lastIndexOf('.') >= 0 ? link.substring(link.lastIndexOf('.') + 1, link.length) : undefined;
+export const File = ({ name, href, size, lastUpdated, className, onClick }: FileProps) => {
+  const extension = href?.lastIndexOf('.') >= 0 ? href.substring(href.lastIndexOf('.') + 1, href.length) : undefined;
   const lastUpdatedDate = lastUpdated ? new Date(lastUpdated).toLocaleDateString() : null;
   const FileTypeIcon = ({ ...props }) => {
     switch (extension) {
@@ -21,14 +23,25 @@ export const File = ({ name, link, size, lastUpdated, className }: FileProps) =>
     }
   };
 
+  const defaultProps = {
+    className: clsx('denhaag-file', className),
+    'aria-labelledby': 'name',
+    'aria-describedby': 'description',
+  };
+
+  const Wrapper = ({ children }: { children: React.ReactNode }) =>
+    onClick ? (
+      <button onClick={onClick} {...defaultProps}>
+        {children}
+      </button>
+    ) : (
+      <a href={href} download={name} {...defaultProps}>
+        {children}
+      </a>
+    );
+
   return (
-    <a
-      href={link}
-      className={clsx('denhaag-file', className)}
-      aria-labelledby="name"
-      aria-describedby="description"
-      download={name}
-    >
+    <Wrapper>
       <div className="denhaag-file__left">
         <FileTypeIcon className="denhaag-file__icon" />
       </div>
@@ -46,6 +59,6 @@ export const File = ({ name, link, size, lastUpdated, className }: FileProps) =>
           </div>
         </div>
       </div>
-    </a>
+    </Wrapper>
   );
 };

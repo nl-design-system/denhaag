@@ -117,4 +117,10 @@
       }
     }
   }
+
+  &--multi {
+    & + & {
+      border-top: none;
+    }
+  }
 }

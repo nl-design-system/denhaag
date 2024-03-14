@@ -14,7 +14,7 @@ export const ActionMulti = ({
   ...rest
 }: ActionMultiProps) => {
   return (
-    <div className={clsx('denhaag-action', className)} {...rest}>
+    <div className={clsx('denhaag-action denhaag-action--multi', className)} {...rest}>
       <ActionContent>{children}</ActionContent>
       <ActionDetails dateTime={dateTime} now={now} relativeDate={relativeDate} labels={labels}>
         {actions}

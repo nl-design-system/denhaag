@@ -1,11 +1,24 @@
 .denhaag-file {
+  width: 100%;
   display: flex;
   color: inherit;
+  font-family: inherit;
+  font-size: inherit;
   text-decoration: inherit;
+  text-align: inherit;
   cursor: pointer;
+  background: none;
+  padding: 0;
+  align-items: normal;
+  line-height: inherit;
+  box-sizing: border-box;
   border-width: var(--denhaag-file-border-width);
   border-color: var(--denhaag-file-border-color);
   border-style: var(--denhaag-file-border-style);
+
+  & + & {
+    border-top: none;
+  }
 
   &--focus,
   &:focus {
