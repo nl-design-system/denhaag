@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import { FileIcon, ImageIcon, DownloadIcon } from '@gemeente-denhaag/icons';
 
 interface FileProps {
-  className: string;
+  className?: string;
   name: string;
   href: string;
   size?: string;
