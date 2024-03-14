@@ -1,3 +1,4 @@
+import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import { File } from '@gemeente-denhaag/file';
 
@@ -46,4 +47,14 @@ export const ClickFunction: Story = {
       console.log('File clicked');
     },
   },
+};
+
+export const List: Story = {
+  render: () => (
+    <>
+      <File {...exampleArgs} />
+      <File {...exampleArgs} />
+      <File {...exampleArgs} />
+    </>
+  ),
 };
