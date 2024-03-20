@@ -5,6 +5,8 @@ import * as prettierPluginBabel from 'prettier/plugins/babel';
 import prettier from 'prettier/standalone';
 import React, { ReactElement } from 'react';
 import * as ReactDOMServer from 'react-dom/server';
+import { Controls, Description, Primary, Stories } from '@storybook/blocks';
+import { DesignTokensBlock } from './DesignTokensBlock';
 
 import '@utrecht/component-library-css/dist/index.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
@@ -104,6 +106,21 @@ const preview: Preview = {
           }
           return src;
         },
+      },
+
+      page: () => {
+        // Exclude `<Title>` because the title comes from the Markdown file
+        return (
+          <>
+            <Description />
+            <Primary />
+            <Controls />
+            <Stories />
+            <div className="denhaag-theme">
+              <DesignTokensBlock />
+            </div>
+          </>
+        );
       },
     },
     status: {
