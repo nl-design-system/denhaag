@@ -64,6 +64,14 @@
 .denhaag-link-grid__title {
   margin-block-start: var(--denhaag-link-grid-title-margin-block-start);
   padding-block-end: var(--denhaag-link-grid-title-padding-bottom);
+
+  @media (min-width: 768px) {
+    max-width: 50%;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 60%;
+  }
 }
 
 .denhaag-link-grid__grid {
@@ -205,6 +213,16 @@
 
   .denhaag-link-grid__container {
     padding-inline-end: 0;
+  }
+
+  .denhaag-link-grid__title {
+    @media (min-width: 768px) {
+      max-width: 100%;
+    }
+
+    @media (min-width: 1024px) {
+      max-width: 100%;
+    }
   }
 
   .denhaag-link-grid__grid {
