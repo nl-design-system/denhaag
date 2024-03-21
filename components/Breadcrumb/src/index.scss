@@ -67,7 +67,6 @@ ol.denhaag-breadcrumb__list {
     );
     content: var(--denhaag-breadcrumb-link-icon-content);
     height: var(--denhaag-breadcrumb-link-icon-height, var(--denhaag-breadcrumb-link-icon-width));
-    margin-inline-end: var(--denhaag-breadcrumb-link-icon-margin-inline, var(--denhaag-breadcrumb-link-icon-width));
     width: var(--denhaag-breadcrumb-link-icon-width);
   }
 }
