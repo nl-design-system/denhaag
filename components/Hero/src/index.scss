@@ -101,6 +101,14 @@
     height: calc(100% - (2 * var(--denhaag-hero-theme-page-content-after-height)));
     transform: translateY(var(--denhaag-hero-theme-page-content-transform, 0));
   }
+
+  .denhaag-link--with-icon {
+    align-items: flex-start;
+
+    .denhaag-link__label {
+      margin-block-start: 2px;
+    }
+  }
 }
 
 .denhaag-hero--theme-page .denhaag-hero__text {
