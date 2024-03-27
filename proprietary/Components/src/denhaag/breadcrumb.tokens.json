@@ -59,9 +59,6 @@
           },
           "width": {
             "value": ".875rem"
-          },
-          "margin-inline": {
-            "value": ".75rem"
           }
         },
         "focus": {
