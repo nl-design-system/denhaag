@@ -33,6 +33,6 @@
     "access": "public"
   },
   "dependencies": {
-    "swiper": "^10.0.4"
+    "swiper": "^10.3.1"
   }
 }

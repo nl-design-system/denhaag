@@ -33,6 +33,6 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "swiper": "^10.0.4"
+    "swiper": "^10.3.1"
   }
 }
