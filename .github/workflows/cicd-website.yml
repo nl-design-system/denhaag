@@ -20,7 +20,7 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v3.2.0
         with:
-          node-version: "16.13.x"
+          node-version: "20.11.x"
 
       - name: yarn install
         run: |
@@ -44,7 +44,7 @@ jobs:
         run: yarn build:storybook
 
       - name: Publish to Chromatic
-        uses: chromaui/action@v1
+        uses: chromaui/action@v10
         if: github.event.pull_request.draft == false
         with:
           autoAcceptChanges: www.denhaag.nl
@@ -64,7 +64,7 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v3.2.0
         with:
-          node-version: "16.13.x"
+          node-version: "20.11.x"
 
       - name: yarn install
         run: |
