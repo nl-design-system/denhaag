@@ -39,6 +39,8 @@ const createConfig = ({ dir, format, baseUrl }) => ({
       minimize: true,
       inject: (css, { insertAt } = {}) => {
         return `  
+        if (typeof document !== 'undefined') { 
+
           const head = document.head || document.getElementsByTagName('head')[0]
           const style = document.createElement('style')
           style.type = 'text/css'
@@ -59,9 +61,11 @@ const createConfig = ({ dir, format, baseUrl }) => ({
           } else {
             style.appendChild(document.createTextNode(${css}))
           }
+        }
         `;
       },
     }),
+
     nodeResolve(),
     commonjs({ include: /node_modules/ }),
     svgr({ icon: true, svgo: true, memo: true }),
