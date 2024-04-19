@@ -139,8 +139,8 @@ importers:
         specifier: 15.2.2
         version: 15.2.2
       npm-check-updates:
-        specifier: 16.14.15
-        version: 16.14.15
+        specifier: 16.14.18
+        version: 16.14.18
       npm-package-json-lint:
         specifier: 7.1.0
         version: 7.1.0(typescript@5.3.3)
@@ -3714,7 +3714,7 @@ packages:
       formiojs: ^4.12.6
     dependencies:
       formiojs: 4.13.12
-      js-interpreter: github.com/formio/JS-Interpreter/0ed5007ada500c12d797ab867a15cfab736e9b25
+      js-interpreter: git/github.com+formio/JS-Interpreter/0ed5007ada500c12d797ab867a15cfab736e9b25
       lodash: 4.17.21
       vm-browserify: 1.1.2
     dev: true
@@ -7429,6 +7429,10 @@ packages:
     resolution: {integrity: sha512-WZLiwShhwLRmeV6zH+GkbOFT6Z6VklCItrDioxUnv+u4Ll+8vKeFySoFyK/0ctcRpOmwAicELfmys1sDc/Rw+A==}
     dev: true
 
+  /@types/semver-utils@1.1.3:
+    resolution: {integrity: sha512-T+YwkslhsM+CeuhYUxyAjWm7mJ5am/K10UX40RuA6k6Lc7eGtq8iY2xOzy7Vq0GOqhl/xZl5l2FwURZMTPTUww==}
+    dev: true
+
   /@types/semver@7.5.8:
     resolution: {integrity: sha512-I8EUhyrgfLrcTkzV3TSsGyl1tSuPrEDzr0yd5m90UgNxQkyDXULk3b6MlQqTCpZpNtWe1K0hzclnZkTcLBe2UQ==}
     dev: true
@@ -8366,7 +8370,7 @@ packages:
       '@babel/core': 7.24.0
       find-cache-dir: 4.0.0
       schema-utils: 4.2.0
-      webpack: 5.90.3(@swc/core@1.4.8)(esbuild@0.18.20)
+      webpack: 5.90.3
     dev: true
 
   /babel-plugin-add-react-displayname@0.0.5:
@@ -15801,11 +15805,12 @@ packages:
       npm-normalize-package-bin: 3.0.1
     dev: true
 
-  /npm-check-updates@16.14.15:
-    resolution: {integrity: sha512-WH0wJ9j6CP7Azl+LLCxWAYqroT2IX02kRIzgK/fg0rPpMbETgHITWBdOPtrv521xmA3JMgeNsQ62zvVtS/nCmQ==}
+  /npm-check-updates@16.14.18:
+    resolution: {integrity: sha512-9iaRe9ohx9ykdbLjPRIYcq1A0RkrPYUx9HmQK1JIXhfxtJCNE/+497H9Z4PGH6GWRALbz5KF+1iZoySK2uSEpQ==}
     engines: {node: '>=14.14'}
     hasBin: true
     dependencies:
+      '@types/semver-utils': 1.1.3
       chalk: 5.3.0
       cli-table3: 0.6.3
       commander: 10.0.1
@@ -18449,7 +18454,7 @@ packages:
     dependencies:
       neo-async: 2.6.2
       sass: 1.71.1
-      webpack: 5.90.3(@swc/core@1.4.8)(esbuild@0.18.20)
+      webpack: 5.90.3
     dev: true
 
   /sass@1.71.1:
@@ -21249,8 +21254,8 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: true
 
-  github.com/formio/JS-Interpreter/0ed5007ada500c12d797ab867a15cfab736e9b25:
-    resolution: {tarball: https://codeload.github.com/formio/JS-Interpreter/tar.gz/0ed5007ada500c12d797ab867a15cfab736e9b25}
+  git/github.com+formio/JS-Interpreter/0ed5007ada500c12d797ab867a15cfab736e9b25:
+    resolution: {commit: 0ed5007ada500c12d797ab867a15cfab736e9b25, repo: git@github.com:formio/JS-Interpreter.git, type: git}
     name: js-interpreter
     version: 1.1.0-formio.2
     dependencies:
