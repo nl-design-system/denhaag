@@ -484,6 +484,9 @@
         "link": {
           "font-size": {
             "value": "1rem"
+          },
+          "font-weight": {
+            "value": "400"
           }
         }
       }

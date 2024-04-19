@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/alert",
-  "version": "0.1.1-www-denhaag-nl.93",
+  "version": "0.1.1-www-denhaag-nl.96",
   "description": "An alert component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "private": false,
@@ -33,11 +33,11 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "0.2.3-www-denhaag-nl.93",
-    "@gemeente-denhaag/button": "0.2.3-www-denhaag-nl.93",
-    "@gemeente-denhaag/iconbutton": "0.2.3-www-denhaag-nl.93",
-    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.93",
-    "@gemeente-denhaag/typography": "0.2.3-www-denhaag-nl.93"
+    "@gemeente-denhaag/baseprops": "0.2.3-www-denhaag-nl.96",
+    "@gemeente-denhaag/button": "0.2.3-www-denhaag-nl.96",
+    "@gemeente-denhaag/iconbutton": "0.2.3-www-denhaag-nl.96",
+    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.96",
+    "@gemeente-denhaag/typography": "0.2.3-www-denhaag-nl.96"
   },
   "peerDependencies": {
     "react": "^17.0.0"
