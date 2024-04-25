@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/header",
-  "version": "0.1.1-www-denhaag-nl.98",
+  "version": "0.1.1-www-denhaag-nl.99",
   "description": "A Header component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "private": false,
@@ -33,7 +33,7 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "devDependencies": {
-    "@gemeente-denhaag/baseprops": "0.2.3-www-denhaag-nl.98",
-    "@gemeente-denhaag/header-logo": "0.1.1-www-denhaag-nl.98"
+    "@gemeente-denhaag/baseprops": "0.2.3-www-denhaag-nl.99",
+    "@gemeente-denhaag/header-logo": "0.1.1-www-denhaag-nl.99"
   }
 }
