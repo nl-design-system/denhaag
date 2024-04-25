@@ -73,6 +73,7 @@
 
 .denhaag-table__cell,
 .denhaag-table__heading {
+  height: var(--utrecht-table-cell-height, 1.6875rem);
   background-color: var(--denhaag-table-row-background-color, inherit);
   padding-block-end: var(--utrecht-table-cell-padding-block-end, 0);
   padding-block-start: var(--utrecht-table-cell-padding-block-start, 0);
