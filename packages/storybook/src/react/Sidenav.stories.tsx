@@ -4,7 +4,7 @@ import { ArchiveIcon, CheckCircleIcon, GridIcon, InboxIcon, UserIcon } from '@ge
 import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '@gemeente-denhaag/sidenav';
 import { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
-import readme from '../../../../components/Button/README.md';
+import readme from '../../../../components/Sidenav/README.md';
 import tokensDefinition from '../../../../components/Sidenav/tokens.json';
 
 const exampleArgs = {
