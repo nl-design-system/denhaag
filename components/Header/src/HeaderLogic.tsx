@@ -227,7 +227,11 @@ export const HeaderLogic = ({
         <>
           <Sheet>
             <ResponsiveContent>
-              <IconButton className="denhaag-sheet__close-button" onClick={handleLanguageSwitcherToggle}>
+              <IconButton
+                aria-label="close"
+                className="denhaag-sheet__close-button"
+                onClick={handleLanguageSwitcherToggle}
+              >
                 <CloseIcon />
               </IconButton>
               <SheetContainer>
@@ -242,7 +246,7 @@ export const HeaderLogic = ({
         <>
           <Sheet>
             <ResponsiveContent>
-              <IconButton className="denhaag-sheet__close-button" onClick={handleWelcomeMenuToggle}>
+              <IconButton aria-label="close" className="denhaag-sheet__close-button" onClick={handleWelcomeMenuToggle}>
                 <CloseIcon />
               </IconButton>
               <SheetContainer>
