@@ -28,7 +28,7 @@
     "lint:js": "eslint --ext .js,.json,.jsx,.mdx,.mjs,.ts,.tsx --report-unused-disable-directives .",
     "lint:package": "npmPkgJsonLint \"**/package.json\"",
     "lint:prettier": "prettier --check .",
-    "postinstall": "husky",
+    "prepare": "husky",
     "postpublish": "pinst --enable",
     "preinstall": "npx only-allow pnpm",
     "prepublishOnly": "pinst --disable",
