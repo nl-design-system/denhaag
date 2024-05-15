@@ -46,9 +46,12 @@ import SettingsSvg from './svg/informational/settings.svg';
 
 // Objects
 import ArchiveSvg from './svg/objects/archive.svg';
+import BasketballSvg from './svg/objects/basketball.svg';
+import BedSvg from './svg/objects/bed.svg';
 import BookSvg from './svg/objects/book.svg';
 import BuildingSVG from './svg/objects/building.svg';
 import CalendarSvg from './svg/objects/calendar.svg';
+import CarSvg from './svg/objects/car.svg';
 import CardSvg from './svg/objects/card.svg';
 import ClipboardSvg from './svg/objects/clipboard.svg';
 import CoronaSvg from './svg/objects/corona.svg';
@@ -123,9 +126,12 @@ export const SettingsIcon: F = (props: SvgIconProps) => buildIcon(SettingsSvg, p
 
 // Objects
 export const ArchiveIcon: F = (props: SvgIconProps) => buildIcon(ArchiveSvg, props);
+export const BasketballIcon: F = (props: SvgIconProps) => buildIcon(BasketballSvg, props);
+export const BedIcon: F = (props: SvgIconProps) => buildIcon(BedSvg, props);
 export const BookIcon: F = (props: SvgIconProps) => buildIcon(BookSvg, props);
 export const BuildingIcon: F = (props: SvgIconProps) => buildIcon(BuildingSVG, props);
 export const CalendarIcon: F = (props: SvgIconProps) => buildIcon(CalendarSvg, props);
+export const CarIcon: F = (props: SvgIconProps) => buildIcon(CarSvg, props);
 export const CardIcon: F = (props: SvgIconProps) => buildIcon(CardSvg, props);
 export const ClipboardIcon: F = (props: SvgIconProps) => buildIcon(ClipboardSvg, props);
 export const CoronaIcon: F = (props: SvgIconProps) => buildIcon(CoronaSvg, props);
