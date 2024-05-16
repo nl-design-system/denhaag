@@ -36,8 +36,8 @@ const exampleArgs = {
 };
 
 const meta = {
-  id: 'react-data-display-table',
-  title: 'React/Data Display/Table',
+  id: 'css-data-display-table',
+  title: 'CSS/Data Display/Table',
   component: Table,
   args: exampleArgs,
   tags: ['autodocs'],
