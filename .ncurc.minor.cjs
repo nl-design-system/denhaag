@@ -1,7 +1,7 @@
-const patchConfig = require('./.ncurc.patch');
+const patchConfig = require("./.ncurc.patch.cjs");
 
 module.exports = {
   ...patchConfig,
   reject: [...patchConfig.reject],
-  target: 'minor',
+  target: "minor",
 };

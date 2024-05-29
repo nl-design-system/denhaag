@@ -1,9 +1,9 @@
 module.exports = {
-  dep: ['dev', 'prod'],
-  install: 'always',
+  dep: ["dev", "prod"],
+  install: "always",
   reject: [],
   root: true,
-  target: 'patch',
+  target: "patch",
   upgrade: true,
   workspaces: true,
 };
