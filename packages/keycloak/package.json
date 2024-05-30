@@ -24,6 +24,6 @@
   "dependencies": {
     "@gemeente-denhaag/components-css": "workspace:*",
     "@gemeente-denhaag/design-tokens-components": "workspace:*",
-    "@utrecht/components": "3.0.0"
+    "@utrecht/components": "4.0.0"
   }
 }

@@ -30,8 +30,8 @@
     "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\""
   },
   "devDependencies": {
-    "@utrecht/component-library-react": "3.0.0",
-    "@utrecht/components": "3.0.0"
+    "@utrecht/component-library-react": "3.1.0",
+    "@utrecht/components": "4.0.0"
   },
   "peerDependencies": {
     "react": "^18.0.0"
