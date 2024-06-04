@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/unorderedlist",
-  "version": "0.1.2-alpha.282",
+  "version": "0.3.0-alpha.283",
   "description": "An unordered list component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -29,7 +29,8 @@
     "clean": "rimraf dist tsconfig.tsbuildinfo",
     "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\""
   },
-  "devDependencies": {
+  "dependencies": {
+    "@utrecht/component-library-react": "3.1.0",
     "@utrecht/components": "4.0.0"
   }
 }
