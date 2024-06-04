@@ -1,28 +1,9 @@
 @import "~@utrecht/components/unordered-list/css";
 
-.denhaag-unordered-list {
-  @extend .utrecht-unordered-list;
+.denhaag-unordered-list--nested {
+  @extend .utrecht-unordered-list--nested;
 
-  color: var(--denhaag-unordered-list-color);
-  margin-block-start: var(--denhaag-unordered-list-margin-block-start, 0);
-}
-
-.utrecht-paragraph + .denhaag-unordered-list {
-  --denhaag-unordered-list-margin-block-start: var(--denhaag-unordered-list-paragraph-margin-block-start);
-}
-
-.utrecht-paragraph--lead + .denhaag-unordered-list {
-  --denhaag-unordered-list-margin-block-start: var(--denhaag-unordered-list-lead-margin-block-start);
-}
-
-.denhaag-unordered-list li {
-  font-weight: var(--denhaag-unordered-list-list-item-font-weight);
-}
-
-.denhaag-unordered-list li::marker {
-  font-size: var(--denhaag-unordered-list-marker-font-size);
-}
-
-.denhaag-unordered-list--lower-alpha {
-  list-style-type: var(--denhaag-unordered-list-lower-alpha-list-style-type);
+  .utrecht-unordered-list__item::marker {
+    content: "○";
+  }
 }

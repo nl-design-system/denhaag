@@ -1,18 +1,18 @@
 {
   "utrecht": {
     "unordered-list": {
-      "font-size": {},
-      "line-height": {},
-      "margin-block-start": { "value": "0" },
-      "margin-block-end": { "value": "14px" },
-      "padding-inline-start": { "value": "20px" },
+      "margin-block-start": {},
+      "margin-block-end": {},
+      "padding-inline-start": {},
+      "font-size": { "value": "{utrecht.document.font-size}" },
+      "line-height": { "value": "{utrecht.document.line-height}" },
       "item": {
-        "margin-block-start": { "value": "5px" },
-        "margin-block-end": { "value": "5px" },
-        "padding-inline-start": { "value": "6px" }
+        "margin-block-start": { "value": "{denhaag.space.block.2xs}" },
+        "margin-block-end": { "value": "{denhaag.space.block.2xs}" },
+        "padding-inline-start": { "value": "{denhaag.space.inline.xl}" }
       },
       "marker": {
-        "color": {}
+        "color": { "value": "{utrecht.document.subtle.color}" }
       }
     }
   }
