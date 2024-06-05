@@ -12,7 +12,7 @@
         "padding-inline-start": { "value": "{denhaag.space.inline.xl}" }
       },
       "marker": {
-        "color": { "value": "{utrecht.document.subtle.color}" }
+        "color": {}
       }
     }
   }
