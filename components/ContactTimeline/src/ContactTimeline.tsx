@@ -107,7 +107,7 @@ const ContactTimelineListItem: React.FC<ContactTimelineItemInternalProps> = ({
             ? date
             : isoDate && (
                 <ContactTimelineMetaTimeItem dateTime={isoDate}>
-                  {formatDate({ dateTime: isoDate, labels: { ...labels } })}
+                  {formatDate({ dateTime: isoDate, format: 'd-M-yyyy', labels: { ...labels } })[0]}
                 </ContactTimelineMetaTimeItem>
               )}
         </ContactTimelineHeaderDate>
@@ -133,7 +133,7 @@ const ContactTimelineListItem: React.FC<ContactTimelineItemInternalProps> = ({
               ? date
               : isoDate && (
                   <ContactTimelineMetaTimeItem dateTime={isoDate}>
-                    {formatDate({ dateTime: isoDate, labels: { ...labels } })}
+                    {formatDate({ dateTime: isoDate, format: 'd-M-yyyy', labels: { ...labels } })[0]}
                   </ContactTimelineMetaTimeItem>
                 )}
             <ContactTimelineMetaSeparator />

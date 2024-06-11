@@ -13,6 +13,7 @@ import CardWrapper from './CardWrapper';
 import CardDateWrapper from './CardDateWrapper';
 import CardDate from './CardDate';
 import { CardAction } from './CardAction';
+import { formatDate } from '@gemeente-denhaag/utils';
 
 export interface CaseCardProps {
   /**
@@ -28,7 +29,7 @@ export interface CaseCardProps {
   /**
    * Determines the date shown on the card
    */
-  date?: Date;
+  date?: string;
 
   /**
    * Determines the url the card points to
@@ -51,6 +52,7 @@ export interface CaseCardProps {
  */
 export const CaseCard = ({ title, subTitle, date, href, active = true, Link = BasicLink }: CaseCardProps) => {
   const classNames = clsx('denhaag-case-card', !active && 'denhaag-case-card--archived');
+  const dateTime = date ? new Date(date) : undefined;
 
   return (
     <Card className={classNames}>
@@ -64,7 +66,7 @@ export const CaseCard = ({ title, subTitle, date, href, active = true, Link = Ba
           <CardActions>
             {date && (
               <CardDateWrapper>
-                <CardDate dateTime={date.toISOString()}>{date.toLocaleDateString()}</CardDate>
+                <CardDate dateTime={dateTime?.toISOString()}>{formatDate({ dateTime: date })[0]}</CardDate>
               </CardDateWrapper>
             )}
             <CardAction aria-label={title} href={href} Action={Link}>

@@ -350,6 +350,9 @@ importers:
       '@gemeente-denhaag/typography':
         specifier: workspace:*
         version: link:../Typography
+      '@gemeente-denhaag/utils':
+        specifier: workspace:*
+        version: link:../Utils
       react:
         specifier: ^18.0.0
         version: 18.2.0
