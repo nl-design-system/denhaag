@@ -21,15 +21,15 @@ interface Props {
 export const formatDate = ({
   dateTime,
   now = new Date().toISOString(),
+  relative,
   locale = nl,
-  format = 'd MMMM yyyy',
+  format = relative ? 'd MMMM yyyy' : 'd-M-yyyy',
   labels = {
     today: 'vandaag',
     yesterday: 'gisteren',
     before: 'vóór',
     approachingDeadline: (daysDifference: number) => `nog ${daysDifference} dag${daysDifference === 1 ? '' : 'en'}`,
   },
-  relative,
 }: Props): [string | null, boolean] => {
   const date = new Date(dateTime);
   const daysDifference = differenceInCalendarDays(date, new Date(now));
