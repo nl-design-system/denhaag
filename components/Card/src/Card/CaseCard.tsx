@@ -66,7 +66,9 @@ export const CaseCard = ({ title, subTitle, date, href, active = true, Link = Ba
           <CardActions>
             {date && (
               <CardDateWrapper>
-                <CardDate dateTime={dateTime?.toISOString()}>{formatDate({ dateTime: date })[0]}</CardDate>
+                <CardDate dateTime={dateTime?.toISOString()}>
+                  {formatDate({ dateTime: date, format: 'd MMMM yyyy' })[0]}
+                </CardDate>
               </CardDateWrapper>
             )}
             <CardAction aria-label={title} href={href} Action={Link}>
