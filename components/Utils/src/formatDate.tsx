@@ -1,5 +1,5 @@
 import type { Locale } from 'date-fns/locale';
-import { format, differenceInCalendarDays } from 'date-fns';
+import { format as dateFormat, differenceInCalendarDays } from 'date-fns';
 import { nl } from 'date-fns/locale';
 
 export interface FormatDateLabels {
@@ -13,7 +13,8 @@ interface Props {
   dateTime: string;
   now?: string;
   locale?: Locale;
-  labels: FormatDateLabels;
+  format?: string;
+  labels?: FormatDateLabels;
   relative?: boolean;
 }
 
@@ -21,7 +22,13 @@ export const formatDate = ({
   dateTime,
   now = new Date().toISOString(),
   locale = nl,
-  labels,
+  format = 'd MMMM yyyy',
+  labels = {
+    today: 'vandaag',
+    yesterday: 'gisteren',
+    before: 'vóór',
+    approachingDeadline: (daysDifference: number) => `nog ${daysDifference} dag${daysDifference === 1 ? '' : 'en'}`,
+  },
   relative,
 }: Props): [string | null, boolean] => {
   const date = new Date(dateTime);
@@ -36,7 +43,7 @@ export const formatDate = ({
       return [labels.approachingDeadline?.(daysDifference) ?? null, true];
     }
 
-    return [`${labels.before} ${format(date, 'd MMMM yyyy', { locale: locale })}`, false];
+    return [`${labels.before} ${dateFormat(date, format, { locale })}`, false];
   }
 
   if (daysDifference === 0) {
@@ -47,5 +54,5 @@ export const formatDate = ({
     return [labels.yesterday || null, false];
   }
 
-  return [format(date, 'd-M-yyyy', { locale }), false];
+  return [dateFormat(date, format, { locale }), false];
 };

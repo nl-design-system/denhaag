@@ -32,7 +32,8 @@
   "dependencies": {
     "@gemeente-denhaag/icons": "workspace:*",
     "@gemeente-denhaag/link": "workspace:*",
-    "@gemeente-denhaag/typography": "workspace:*"
+    "@gemeente-denhaag/typography": "workspace:*",
+    "@gemeente-denhaag/utils": "workspace:*"
   },
   "devDependencies": {
     "@gemeente-denhaag/iconbutton": "workspace:*"
