@@ -4,6 +4,7 @@ import { StatusBadge } from '@utrecht/component-library-react';
 
 const exampleArgs = {
   children: 'Label',
+  status: 'default',
 };
 
 const meta = {
@@ -26,21 +27,21 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {};
 
-export const Informative: Story = {
+export const Neutral: Story = {
   args: {
-    status: 'informative',
+    status: 'neutral',
   },
 };
 
-export const Positive: Story = {
+export const Success: Story = {
   args: {
-    status: 'positive',
+    status: 'success',
   },
 };
 
-export const Negative: Story = {
+export const Error: Story = {
   args: {
-    status: 'negative',
+    status: 'error',
   },
 };
 
