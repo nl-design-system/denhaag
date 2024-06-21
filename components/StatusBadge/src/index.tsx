@@ -1,4 +1,4 @@
-import { StatusBadge } from '@utrecht/component-library-react';
+import { StatusBadge, StatusBadgeProps } from '@utrecht/component-library-react';
 import './index.scss';
 
-export { StatusBadge };
+export { StatusBadge, StatusBadgeProps };
