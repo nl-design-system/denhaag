@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 import readme from '../../../../components/StatusBadge/README.md';
-import { StatusBadge } from '@utrecht/component-library-react';
+import { StatusBadge } from '@gemeente-denhaag/status-badge';
 
 const exampleArgs = {
   children: 'Label',

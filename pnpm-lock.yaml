@@ -1453,6 +1453,9 @@ importers:
       '@gemeente-denhaag/sidenav':
         specifier: workspace:*
         version: link:../../components/Sidenav
+      '@gemeente-denhaag/status-badge':
+        specifier: workspace:*
+        version: link:../../components/StatusBadge
       '@gemeente-denhaag/step-marker':
         specifier: workspace:*
         version: link:../../components/StepMarker
