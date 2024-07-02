@@ -1,0 +1,29 @@
+.denhaag-modal {
+  &__close {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: var(--denhaag-modal-close-gap);
+    color: var(--denhaag-modal-close-color);
+    font-size: var(--denhaag-modal-close-font-size);
+    font-weight: var(--denhaag-modal-close-font-weight);
+
+    &:hover,
+    &--hover {
+      --denhaag-modal-close-color: var(--denhaag-modal-close-hover-color);
+    }
+
+    &:focus-visible,
+    &--focus {
+      outline: var(--denhaag-focus-border);
+    }
+
+    svg {
+      font-size: var(--denhaag-modal-close-size, inherit);
+      pointer-events: none;
+    }
+  }
+}

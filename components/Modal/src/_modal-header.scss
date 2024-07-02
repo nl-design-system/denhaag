@@ -1,0 +1,15 @@
+.denhaag-modal {
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--denhaag-modal-gap, var(--denhaag-modal-header-padding-block));
+    padding-block-start: var(--denhaag-modal-header-padding-block);
+    padding-block-end: var(--denhaag-modal-header-padding-block);
+    padding-inline-start: var(--denhaag-modal-header-padding-inline);
+    padding-inline-end: var(--denhaag-modal-header-padding-inline);
+    border-bottom-style: var(--denhaag-modal-header-border-bottom-style);
+    border-bottom-width: var(--denhaag-modal-header-border-bottom-width);
+    border-bottom-color: var(--denhaag-modal-header-border-bottom-color);
+  }
+}
