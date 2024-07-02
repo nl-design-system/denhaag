@@ -9,7 +9,7 @@
       },
       "offset": {
         "y": {
-          "value": "100px"
+          "value": "68px"
         }
       },
       "padding": {
@@ -22,6 +22,9 @@
       },
       "index": {
         "value": 12
+      },
+      "max-height": {
+        "value": "38.375rem"
       },
       "width": {
         "value": "765px"
