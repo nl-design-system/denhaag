@@ -5,6 +5,7 @@ import readme from '../../../../components/Modal/README.md';
 
 const exampleArgs = {
   open: true,
+  title: 'Modal title',
   children: (
     <>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt, quam eu ultrices lacinia, lorem massa
@@ -100,7 +101,12 @@ export const Button = () => {
   return (
     <>
       <button onClick={() => setOpen(true)}>Open modal</button>
-      <Modal open={open} onToggle={setOpen} actions={[{ label: 'Sluiten', onClick: () => setOpen(false) }]}>
+      <Modal
+        title="Modal title"
+        open={open}
+        onToggle={setOpen}
+        actions={[{ label: 'Sluiten', onClick: () => setOpen(false) }]}
+      >
         <>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt, quam eu ultrices lacinia, lorem
           massa auctor mauris, id pulvinar tellus lacus eget lectus. Pellentesque habitant morbi tristique senectus et

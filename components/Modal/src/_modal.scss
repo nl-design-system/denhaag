@@ -1,0 +1,40 @@
+.denhaag-modal {
+  --denhaag-modal-footer-direction: column;
+
+  align-items: center;
+  box-sizing: border-box;
+  display: var(--denhaag-modal-display);
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  overflow: hidden;
+  outline: 0;
+  padding-block-start: var(--denhaag-modal-padding-block);
+  padding-block-end: var(--denhaag-modal-padding-block);
+  padding-inline-start: var(--denhaag-modal-padding-inline);
+  padding-inline-end: var(--denhaag-modal-padding-inline);
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: var(--denhaag-modal-index);
+
+  @media (width >= 30rem) {
+    --denhaag-modal-footer-direction: row;
+  }
+
+  &--open {
+    --denhaag-modal-display: flex;
+  }
+
+  &::after {
+    background-color: var(--denhaag-modal-overlay-background-color);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
