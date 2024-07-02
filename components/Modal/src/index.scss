@@ -18,144 +18,114 @@
   top: 0;
   width: 100%;
   z-index: var(--denhaag-modal-index);
-}
 
-@media (width >= 30rem) {
-  .denhaag-modal {
+  @media (width >= 30rem) {
     --denhaag-modal-footer-direction: row;
   }
-}
 
-@media (width >= 47.8125rem) {
-  .denhaag-modal {
-    --denhaag-modal-inner-padding-block: var(
-      --denhaag-modal-lg-inner-padding-block,
-      var(--denhaag-modal-padding-block)
-    );
-    --denhaag-modal-inner-padding-inline: var(
-      --denhaag-modal-lg-inner-padding-inline,
-      var(--denhaag-modal-padding-inline)
-    );
+  &--open {
+    --denhaag-modal-display: flex;
   }
-}
 
-.denhaag-modal--open {
-  --denhaag-modal-display: flex;
-}
+  &::after {
+    background-color: var(--denhaag-modal-overlay-background-color);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
 
-.denhaag-modal::after {
-  background-color: var(--denhaag-modal-overlay-background-color);
-  bottom: 0;
-  content: "";
-  left: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
-}
+  &__dialog {
+    max-height: calc(100% - (var(--denhaag-modal-offset-y) * 2));
+    max-width: var(--denhaag-modal-width);
+    position: relative;
+    pointer-events: visiblePainted;
+    width: auto;
+  }
 
-.denhaag-modal__button {
-  background-color: var(--denhaag-modal-icon-background-color);
-  border: var(--denhaag-modal-icon-border-width) var(--denhaag-modal-icon-border-style)
-    var(--denhaag-modal-icon-border-color);
-  color: var(--denhaag-modal-icon-color);
-  cursor: pointer;
-  line-height: 1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding-inline-start: var(--denhaag-modal-icon-padding-inline, var(--denhaag-modal-padding-inline));
-  padding-inline-end: var(--denhaag-modal-icon-padding-inline, var(--denhaag-modal-padding-inline));
-  padding-block-start: var(--denhaag-modal-icon-padding-block, var(--denhaag-modal-padding-block));
-  padding-block-end: var(--denhaag-modal-icon-padding-block, var(--denhaag-modal-padding-block));
-}
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    max-height: var(--denhaag-modal-max-height);
+    background-color: var(--denhaag-modal-background-color);
+    background-clip: padding-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 1;
+  }
 
-.denhaag-modal__button svg {
-  font-size: var(--denhaag-modal-icon-size, inherit);
-  pointer-events: none;
-}
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--denhaag-modal-gap, var(--denhaag-modal-header-padding-block));
+    padding-block-start: var(--denhaag-modal-header-padding-block);
+    padding-block-end: var(--denhaag-modal-header-padding-block);
+    padding-inline-start: var(--denhaag-modal-header-padding-inline);
+    padding-inline-end: var(--denhaag-modal-header-padding-inline);
+    border-bottom-style: var(--denhaag-modal-header-border-bottom-style);
+    border-bottom-width: var(--denhaag-modal-header-border-bottom-width);
+    border-bottom-color: var(--denhaag-modal-header-border-bottom-color);
+  }
 
-.denhaag-modal__button:hover,
-.denhaag-modal__button--hover {
-  --denhaag-modal-icon-color: var(--denhaag-modal-icon-hover-color);
-}
+  &__title {
+    margin: 0;
+    color: var(--denhaag-modal-title-color);
+    font-family: var(--denhaag-modal-title-font-family);
+    font-style: var(--denhaag-modal-title-font-style);
+    font-weight: var(--denhaag-modal-title-font-weight);
+    font-size: var(--denhaag-modal-title-font-size);
+    line-height: var(--denhaag-modal-title-line-height);
+  }
 
-.denhaag-modal__button:focus-visible,
-.denhaag-modal__button--focus {
-  outline: var(--denhaag-focus-border);
-}
+  &__close {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: var(--denhaag-modal-close-gap);
+    color: var(--denhaag-modal-close-color);
+    font-size: var(--denhaag-modal-close-font-size);
+    font-weight: var(--denhaag-modal-close-font-weight);
 
-.denhaag-modal__content {
-  color: var(--denhaag-modal-paragraph-color);
-  flex: 1 1 auto;
-  max-height: 100%;
-  overflow-y: auto;
-}
+    &:hover,
+    &--hover {
+      --denhaag-modal-close-color: var(--denhaag-modal-close-hover-color);
+    }
 
-.denhaag-modal__content p {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  color: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  font-style: inherit;
-  line-height: var(--denhaag-modal-paragraph-line-height);
-}
+    &:focus-visible,
+    &--focus {
+      outline: var(--denhaag-focus-border);
+    }
 
-.denhaag-modal__content p + p {
-  margin-block-start: var(--denhaag-modal-paragraph-margin, var(--denhaag-modal-padding-inline));
-}
+    svg {
+      font-size: var(--denhaag-modal-close-size, inherit);
+      pointer-events: none;
+    }
+  }
 
-.denhaag-modal__dialog {
-  max-height: calc(100% - (var(--denhaag-modal-offset-y) * 2));
-  max-width: var(--denhaag-modal-width);
-  position: relative;
-  pointer-events: visiblePainted;
-  width: auto;
-}
+  &__content {
+    flex: 1 1 auto;
+    max-height: 100%;
+    overflow-y: auto;
+    padding-block-start: var(--denhaag-modal-content-padding-block);
+    padding-block-end: var(--denhaag-modal-content-padding-block);
+    padding-inline-start: var(--denhaag-modal-content-padding-inline);
+    padding-inline-end: var(--denhaag-modal-content-padding-inline);
+  }
 
-.denhaag-modal__header {
-  position: relative;
-}
-
-.denhaag-modal__inner {
-  background-color: var(--denhaag-modal-background-color);
-  background-clip: padding-box;
-  display: flex;
-  flex-direction: column;
-  gap: var(--denhaag-modal-gap, var(--denhaag-modal-padding-block));
-  max-height: var(--denhaag-modal-max-height);
-  overflow-x: hidden;
-  overflow-y: auto;
-  padding-block-start: var(--denhaag-modal-inner-padding-block, var(--denhaag-modal-padding-block));
-  padding-block-end: var(--denhaag-modal-inner-padding-block, var(--denhaag-modal-padding-block));
-  padding-inline-start: var(--denhaag-modal-inner-padding-inline, var(--denhaag-modal-padding-inline));
-  padding-inline-end: var(--denhaag-modal-inner-padding-inline, var(--denhaag-modal-padding-inline));
-  z-index: 1;
-}
-
-.denhaag-modal__footer {
-  display: flex;
-  flex-direction: var(--denhaag-modal-footer-direction);
-  justify-content: flex-end;
-  gap: var(--denhaag-modal-gap, var(--denhaag-modal-padding-block));
-}
-
-.denhaag-modal__title {
-  color: var(--denhaag-modal-title-color);
-  font-family: var(--denhaag-modal-title-font-family);
-  font-style: var(--denhaag-modal-title-font-style);
-  font-weight: var(--denhaag-modal-title-font-weight);
-  font-size: var(--denhaag-modal-title-font-size);
-  line-height: var(--denhaag-modal-title-line-height);
-  margin-block-start: 0;
-  margin-block-end: 0;
-  max-width: calc(
-    100% -
-      (
-        var(--denhaag-modal-icon-size) +
-          (2 * var(--denhaag-modal-icon-padding-inline, var(--denhaag-modal-padding-inline))) +
-          var(--denhaag-modal-gap, var(--denhaag-modal-padding-block))
-      )
-  );
+  &__footer {
+    display: flex;
+    flex-direction: var(--denhaag-modal-footer-direction);
+    gap: var(--denhaag-modal-gap, var(--denhaag-modal-padding-block));
+    padding-block-start: var(--denhaag-modal-footer-padding-block);
+    padding-block-end: var(--denhaag-modal-footer-padding-block);
+    padding-inline-start: var(--denhaag-modal-footer-padding-inline);
+    padding-inline-end: var(--denhaag-modal-footer-padding-inline);
+  }
 }
