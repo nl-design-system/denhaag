@@ -1,5 +1,5 @@
 import React from 'react';
-import '@utrecht/components/document/css/index.scss';
+import '@utrecht/components/dist/document/css/index.css';
 
 export interface StylesProviderProps {
   children?: React.ReactNode;
