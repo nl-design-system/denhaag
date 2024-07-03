@@ -1,11 +1,7 @@
 import React from 'react';
-import clsx from 'clsx';
+import Button, { ButtonProps } from '@gemeente-denhaag/button';
 
-export interface ModalAction {
-  label: string;
-  type?: 'secondary';
-  onClick?: () => void;
-}
+export interface ModalAction extends ButtonProps {}
 
 export interface ModalFooterProps {
   actions?: ModalAction[];
@@ -16,16 +12,8 @@ export const ModalFooter = ({ actions }: ModalFooterProps) => {
 
   return (
     <footer className="denhaag-modal__footer">
-      {actions.map((action) => (
-        <button
-          key={action.label}
-          className={clsx('denhaag-button', {
-            'denhaag-button--secondary-action': action.type === 'secondary',
-          })}
-          onClick={action.onClick}
-        >
-          {action.label}
-        </button>
+      {actions.map((action, index) => (
+        <Button key={`modal-footer-action-${index}`} {...action} />
       ))}
     </footer>
   );
