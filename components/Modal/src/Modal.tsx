@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import clsx from 'clsx';
 import ModalHeader from './ModalHeader';
 import ModalContent from './ModalContent';
 import ModalFooter, { ModalAction } from './ModalFooter';
@@ -27,14 +26,14 @@ export const Modal = ({ open: openProp = false, title, onToggle, children, actio
   };
 
   return (
-    <section className={clsx('denhaag-modal', { 'denhaag-modal--open': open })} tabIndex={-1} aria-hidden={!open}>
+    <dialog className="denhaag-modal" open={open}>
       <ModalBackdrop onClose={() => toggleModal(false)} />
       <ModalDialog>
         <ModalHeader title={title} onClose={() => toggleModal(false)} />
         <ModalContent>{children}</ModalContent>
         <ModalFooter actions={actions} />
       </ModalDialog>
-    </section>
+    </dialog>
   );
 };
 
