@@ -18,12 +18,13 @@
   top: 0;
   width: 100%;
   z-index: var(--denhaag-modal-index);
+  border: none;
 
   @media (width >= 30rem) {
     --denhaag-modal-footer-direction: row;
   }
 
-  &--open {
+  &[open] {
     --denhaag-modal-display: flex;
   }
 }
