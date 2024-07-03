@@ -1,0 +1,11 @@
+.denhaag-modal {
+  &__backdrop {
+    background-color: var(--denhaag-modal-overlay-background-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    pointer-events: all;
+  }
+}

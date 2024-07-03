@@ -4,6 +4,7 @@ import ModalHeader from './ModalHeader';
 import ModalContent from './ModalContent';
 import ModalFooter, { ModalAction } from './ModalFooter';
 import ModalDialog from './ModalDialog';
+import ModalBackdrop from './ModalBackdrop';
 
 export interface ModalProps {
   open?: boolean;
@@ -27,6 +28,7 @@ export const Modal = ({ open: openProp = false, title, onToggle, children, actio
 
   return (
     <section className={clsx('denhaag-modal', { 'denhaag-modal--open': open })} tabIndex={-1} aria-hidden={!open}>
+      <ModalBackdrop onClose={() => toggleModal(false)} />
       <ModalDialog>
         <ModalHeader title={title} onClose={() => toggleModal(false)} />
         <ModalContent>{children}</ModalContent>

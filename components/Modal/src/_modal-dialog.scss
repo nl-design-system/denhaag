@@ -8,5 +8,7 @@
     flex-direction: column;
     background-color: var(--denhaag-modal-background-color);
     background-clip: padding-box;
+    position: relative;
+    z-index: 1;
   }
 }
