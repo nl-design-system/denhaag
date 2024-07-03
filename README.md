@@ -58,8 +58,7 @@ Be sure to install IDE plugins for ESlint, Prettier, JSONLint and Stylelint if a
 The project folders are structured in the following way:
 The `src` folder houses both our `components` and our storybook `stories`, these are both in their own folders.
 Our components are sorted into several categories, where each category has its own parent folder.
-All of our components are their own package and managed with lerna, docs are available [here](https://lerna.js.org/).
-Similarly, each category is its own package managed with lerna.
+All of our components are their own package and managed with pnpm.
 
 #### Adding components
 
@@ -84,7 +83,7 @@ We don't need to re-run the command over-and-over because storybook should detec
 
 ##### Creating a new package for a new component
 
-In order to create a new lerna package we need to create a package.json file for it inside it's folder.
+In order to create a new npm package we need to create a package.json file for it inside it's folder.
 Start by filling it with the following information:
 
 ```json
