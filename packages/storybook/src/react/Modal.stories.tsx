@@ -40,12 +40,12 @@ export const Actions: Story = {
   args: {
     actions: [
       {
-        label: 'Confirm',
+        children: 'Confirm',
         onClick: () => console.log('Confirm'),
       },
       {
-        label: 'Cancel',
-        type: 'secondary',
+        children: 'Cancel',
+        variant: 'secondary-action',
         onClick: () => console.log('Cancel'),
       },
     ],
@@ -105,7 +105,7 @@ export const Button = () => {
         title="Modal title"
         open={open}
         onToggle={setOpen}
-        actions={[{ label: 'Sluiten', onClick: () => setOpen(false) }]}
+        actions={[{ children: 'Sluiten', onClick: () => setOpen(false) }]}
       >
         <>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt, quam eu ultrices lacinia, lorem

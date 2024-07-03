@@ -750,7 +750,14 @@ importers:
         specifier: 9.0.1
         version: 9.0.1
 
-  components/Modal: {}
+  components/Modal:
+    dependencies:
+      '@gemeente-denhaag/button':
+        specifier: workspace:*
+        version: link:../Button
+      react:
+        specifier: ^18.0.0
+        version: 18.2.0
 
   components/Note:
     devDependencies:
