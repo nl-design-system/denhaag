@@ -26,15 +26,4 @@
   &--open {
     --denhaag-modal-display: flex;
   }
-
-  &::after {
-    background-color: var(--denhaag-modal-overlay-background-color);
-    bottom: 0;
-    content: "";
-    left: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-  }
 }

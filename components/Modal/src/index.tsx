@@ -4,6 +4,7 @@ import Modal from './Modal';
 export default Modal;
 
 export * from './Modal';
+export * from './ModalBackdrop';
 export * from './ModalDialog';
 export * from './ModalHeader';
 export * from './ModalTitle';
