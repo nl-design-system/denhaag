@@ -2,7 +2,7 @@
   "utrecht": {
     "heading-3": {
       "color": {},
-      "font-family": {},
+      "font-family": { "value": "{utrecht.heading.font-family}" },
       "font-size": { "value": "{denhaag.typography.scale.xl.font-size}" },
       "font-weight": {},
       "line-height": { "value": "{denhaag.typography.scale.xl.line-height}" },
