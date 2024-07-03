@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import ModalHeader from './ModalHeader';
 import ModalContent from './ModalContent';
 import ModalFooter, { ModalAction } from './ModalFooter';
@@ -14,11 +14,17 @@ export interface ModalProps {
 }
 
 export const Modal = ({ open: openProp = false, title, onToggle, children, actions }: ModalProps) => {
+  const [ref] = useState(useRef<HTMLDialogElement>(null));
   const [open, setOpen] = useState(openProp);
 
   useEffect(() => {
     setOpen(openProp);
   }, [openProp]);
+
+  useEffect(() => {
+    if (open) return ref.current?.showModal();
+    return ref.current?.close();
+  }, [ref, open]);
 
   const toggleModal = (toggle: boolean = !open) => {
     setOpen(toggle);
@@ -26,7 +32,7 @@ export const Modal = ({ open: openProp = false, title, onToggle, children, actio
   };
 
   return (
-    <dialog className="denhaag-modal" open={open}>
+    <dialog ref={ref} className="denhaag-modal">
       <ModalBackdrop onClose={() => toggleModal(false)} />
       <ModalDialog>
         <ModalHeader title={title} onClose={() => toggleModal(false)} />
