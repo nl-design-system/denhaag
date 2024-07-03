@@ -33,7 +33,7 @@ For convenience, all criteria relevant for contributors are listed below, with t
 
   - Version control MUST be maintained for all written code.
   - All decisions MUST be documented using commit messages, so that components can be versioned accordingly. If a contribution stems from an issue or discussion, they MUST always be linked.
-  - Component versioning is done through Lerna, by maintainers of the repository. Collaborators do not need to increment versions.
+  - Component versioning is done through pnpm changesets. Collaborators need to create a changeset using `pnpm -w changeset`.
 
 - **[Use a coherent style](https://standard.publiccode.net/criteria/style.html)**
 
