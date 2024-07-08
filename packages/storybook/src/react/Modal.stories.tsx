@@ -38,7 +38,7 @@ export const Default: Story = {};
 
 export const Actions: Story = {
   args: {
-    actions: [
+    actions: () => [
       {
         children: 'Confirm',
         onClick: () => console.log('Confirm'),
@@ -96,16 +96,12 @@ export const Scrollable: Story = {
 };
 
 export const Button = () => {
-  const [open, setOpen] = React.useState(false);
-
   return (
     <>
-      <button onClick={() => setOpen(true)}>Open modal</button>
       <Modal
         title="Modal title"
-        open={open}
-        onToggle={setOpen}
-        actions={[{ children: 'Sluiten', onClick: () => setOpen(false) }]}
+        trigger={(toggle) => <button onClick={() => toggle(true)}>Open modal</button>}
+        actions={(toggle) => [{ children: 'Sluiten', onClick: () => toggle(false) }]}
       >
         <>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt, quam eu ultrices lacinia, lorem
