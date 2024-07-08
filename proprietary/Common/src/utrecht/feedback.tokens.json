@@ -7,7 +7,7 @@
       },
       "warning": {
         "background-color": { "value": "{denhaag.color.orange.1}" },
-        "color": { "value": "{denhaag.color.orange.4}" }
+        "color": { "value": "{denhaag.color.orange.5}" }
       },
       "safe": {
         "background-color": { "value": "{denhaag.color.green.1}" },
