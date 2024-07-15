@@ -24,7 +24,7 @@ import { Pagination } from '@gemeente-denhaag/pagination';
 import { StatusBadge } from '@gemeente-denhaag/status-badge';
 
 const meta = {
-  title: 'Templates/Berichten',
+  title: 'Templates/Berichten Overzicht',
   parameters: {
     layout: 'fullscreen',
     chromatic: { viewports: [1768, 1280, 768, 360] },
@@ -37,7 +37,7 @@ const messagesHeaderProps: HeaderLogicProps = {
     navigationPath: [
       { label: 'Home', href: 'https://denhaag.nl/' },
       { label: 'MijnDenHaag', href: 'https://denhaag.nl/' },
-      { label: 'Mijn lopende zaken' },
+      { label: 'Mijn berichten' },
     ],
   },
 };
@@ -73,7 +73,7 @@ const messages = [
   },
 ];
 
-export const Berichten: StoryObj<typeof meta> = {
+export const BerichtenOverzicht: StoryObj<typeof meta> = {
   render: (args) => (
     <Page {...args}>
       <PageHeader>
