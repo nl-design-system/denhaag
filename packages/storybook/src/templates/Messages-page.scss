@@ -1,4 +1,14 @@
 .denhaag-page-content {
+  &__header {
+    h2 {
+      margin: 0;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
   .utrecht-heading-2:first-child {
     --utrecht-heading-2-margin-block-end: 24px;
   }
@@ -22,6 +32,10 @@
   &__pagination {
     --denhaag-pagination-align: center !important;
 
+    margin-top: 32px;
+  }
+
+  &__message {
     margin-top: 32px;
   }
 }
