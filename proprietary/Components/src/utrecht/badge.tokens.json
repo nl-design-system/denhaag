@@ -14,7 +14,7 @@
         "value": "{denhaag.typography.sans-serif.font-family}"
       },
       "font-weight": {
-        "value": "{denhaag.typography.weight.medium}"
+        "value": "{denhaag.typography.weight.semibold}"
       },
       "font-size": {
         "value": "{denhaag.typography.scale.s.font-size}"
