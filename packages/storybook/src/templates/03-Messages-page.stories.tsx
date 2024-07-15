@@ -20,6 +20,7 @@ import {
 
 import './Messages-page.scss';
 import Sidenav from './components/Sidenav';
+import { Pagination } from '@gemeente-denhaag/pagination';
 
 const meta = {
   title: 'Templates/Berichten',
@@ -94,6 +95,7 @@ export const Berichten: StoryObj<typeof meta> = {
               {m.new ? <strong>{m.title}</strong> : m.title}
             </Action>
           ))}
+          <Pagination className="denhaag-page-content__pagination" index={0} indexLimit={2} />
         </main>
       </ResponsiveContent>
       <PageFooter>
