@@ -21,6 +21,7 @@ import {
 import './Messages-page.scss';
 import Sidenav from './components/Sidenav';
 import { Pagination } from '@gemeente-denhaag/pagination';
+import { StatusBadge } from '@gemeente-denhaag/status-badge';
 
 const meta = {
   title: 'Templates/Berichten',
@@ -92,7 +93,14 @@ export const Berichten: StoryObj<typeof meta> = {
           </Table>
           {messages.map((m) => (
             <Action key={m.title} link={m.link} dateTime={m.dateTime} now={currentDate} labels={dateFormatLabels}>
-              {m.new ? <strong>{m.title}</strong> : m.title}
+              {m.new ? (
+                <>
+                  <StatusBadge className="denhaag-page-content__badge">Nieuw</StatusBadge>
+                  <strong>{m.title}</strong>
+                </>
+              ) : (
+                m.title
+              )}
             </Action>
           ))}
           <Pagination className="denhaag-page-content__pagination" index={0} indexLimit={2} />
