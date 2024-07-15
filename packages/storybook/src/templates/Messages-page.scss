@@ -14,4 +14,10 @@
   &__table-header--right {
     text-align: end;
   }
+
+  &__pagination {
+    --denhaag-pagination-align: center !important;
+
+    margin-top: 32px;
+  }
 }
