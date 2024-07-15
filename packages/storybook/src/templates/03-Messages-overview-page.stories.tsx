@@ -96,7 +96,7 @@ export const BerichtenOverzicht: StoryObj<typeof meta> = {
               {m.new ? (
                 <>
                   <StatusBadge className="denhaag-page-content__badge">Nieuw</StatusBadge>
-                  <strong>{m.title}</strong>
+                  <b>{m.title}</b>
                 </>
               ) : (
                 m.title
