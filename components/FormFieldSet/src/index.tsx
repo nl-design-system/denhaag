@@ -2,3 +2,4 @@ import { Fieldset, FieldsetProps, FieldsetLegend, FieldsetLegendProps } from '@u
 import './index.scss';
 
 export { Fieldset, FieldsetProps, FieldsetLegend, FieldsetLegendProps };
+export default Fieldset;
