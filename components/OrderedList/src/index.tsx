@@ -2,3 +2,4 @@ import { OrderedList, OrderedListProps, OrderedListItem, OrderedListItemProps } 
 import './index.scss';
 
 export { OrderedList, OrderedListProps, OrderedListItem, OrderedListItemProps };
+export default OrderedList;
