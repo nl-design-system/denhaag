@@ -6,15 +6,11 @@
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nl-design-system/denhaag.git"
+    "url": "https://github.com/nl-design-system/denhaag.git",
+    "directory": "."
   },
   "license": "EUPL-1.2",
   "author": "Municipality of The Hague",
-  "workspaces": [
-    "packages/*",
-    "components/*",
-    "proprietary/*"
-  ],
   "scripts": {
     "build": "pnpm run build:library && pnpm run build:storybook",
     "build:library": "pnpm run --recursive build",
@@ -33,9 +29,7 @@
     "preinstall": "npx only-allow pnpm",
     "prepublishOnly": "pinst --disable",
     "prettier": "prettier --write .",
-    "publish": "lerna publish from-package --yes",
-    "release": "lerna version prerelease --no-changelog --no-private --no-commit-hooks --yes",
-    "release-denhaag-nl": "lerna version prerelease --no-changelog --no-private --no-commit-hooks --yes --no-git-tag-version --preid www-denhaag-nl",
+    "publish": "changeset publish",
     "storybook": "npm-run-all --parallel watch:*",
     "test-update": "npm-run-all --sequential lint build",
     "update-patch": "npm-check-updates --configFileName .ncurc.patch.js",
@@ -56,11 +50,9 @@
     "@babel/core": "7.24.6",
     "@babel/preset-env": "7.24.6",
     "@babel/preset-react": "7.24.6",
+    "@changesets/cli": "2.27.7",
     "@commitlint/cli": "19.3.0",
     "@commitlint/config-conventional": "19.2.2",
-    "@lerna-lite/cli": "3.4.0",
-    "@lerna-lite/publish": "3.4.0",
-    "@lerna-lite/version": "3.4.0",
     "@rollup/plugin-commonjs": "25.0.8",
     "@rollup/plugin-node-resolve": "15.2.3",
     "@svgr/rollup": "8.1.0",

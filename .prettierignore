@@ -11,3 +11,6 @@ package.json
 pnpm-lock.yaml
 yarn.lock
 storybook-static
+
+# Ignore changeset files, because they are temporary and frequently contributed by non-developers
+.changeset/*.md
