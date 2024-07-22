@@ -6,15 +6,17 @@ const sortByName = (a, b) => stringSort(a.name, b.name);
 
 module.exports = {
   ...config,
-  format: {
-    'json/list': function ({ dictionary }) {
-      return JSON.stringify(dictionary.allTokens.sort(sortByName), null, '  ');
+  hooks: {
+    formats: {
+      'json/list': function ({ dictionary }) {
+        return JSON.stringify(dictionary.allTokens.sort(sortByName), null, '  ');
+      },
     },
   },
   platforms: {
     ...config.platforms,
     'json-list': {
-      transforms: ['attribute/cti', 'name/cti/camel', 'color/hsl-4'],
+      transforms: ['attribute/cti', 'name/camel', 'color/hsl-4'],
       buildPath: 'dist/',
       files: [
         {

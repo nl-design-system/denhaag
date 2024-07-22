@@ -30,10 +30,8 @@
     "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\""
   },
   "dependencies": {
-    "@gemeente-denhaag/dotindicator": "workspace:*"
-  },
-  "devDependencies": {
-    "@utrecht/components": "4.0.0"
+    "@gemeente-denhaag/dotindicator": "workspace:*",
+    "@utrecht/components": "6.1.0"
   },
   "peerDependencies": {
     "react": "^18.0.0"
