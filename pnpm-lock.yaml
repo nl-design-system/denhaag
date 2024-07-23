@@ -1494,7 +1494,7 @@ importers:
         version: link:../../components/Utils
       '@nl-design-system-unstable/theme-toolkit':
         specifier: 1.0.0-alpha.27
-        version: 1.0.0-alpha.27(@types/react-dom@18.3.0)(@types/react@18.3.3)(encoding@0.1.13)(prettier@2.8.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 1.0.0-alpha.27(@types/react-dom@18.3.0)(@types/react@18.3.3)(encoding@0.1.13)(prettier@3.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: 7.24.9
@@ -1516,7 +1516,7 @@ importers:
         version: 3.0.1(@types/react@18.3.3)(react@18.3.1)
       '@open-formulieren/sdk':
         specifier: 2.3.1
-        version: 2.3.1(@jest/globals@29.7.0)(@types/jest@29.5.12)(@types/react@18.3.3)(encoding@0.1.13)(formiojs@4.19.1(encoding@0.1.13))(jest@29.7.0(@types/node@20.14.11)(babel-plugin-macros@3.1.0))(prop-types@15.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.8)(storybook@7.6.19(encoding@0.1.13))(typescript@5.5.3)
+        version: 2.3.1(@jest/globals@29.7.0)(@types/jest@29.5.12)(@types/react@18.3.3)(encoding@0.1.13)(formiojs@4.19.1(encoding@0.1.13))(jest@29.7.0(@types/node@20.14.11)(babel-plugin-macros@3.1.0))(prop-types@15.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.8)(storybook@7.6.19(encoding@0.1.13))(typescript@5.5.4)
       '@storybook/addon-a11y':
         specifier: 7.6.19
         version: 7.6.19
@@ -1561,10 +1561,10 @@ importers:
         version: 1.0.3(css-loader@7.1.2(webpack@5.93.0(@swc/core@1.5.0)(esbuild@0.18.20)))(sass-loader@14.2.1(sass@1.77.8)(webpack@5.93.0(@swc/core@1.5.0)(esbuild@0.18.20)))(style-loader@4.0.0(webpack@5.93.0(@swc/core@1.5.0)(esbuild@0.18.20)))
       '@storybook/react':
         specifier: 7.6.19
-        version: 7.6.19(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.3)
+        version: 7.6.19(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       '@storybook/react-webpack5':
         specifier: 7.6.19
-        version: 7.6.19(@babel/core@7.24.9)(@swc/core@1.5.0)(encoding@0.1.13)(esbuild@0.18.20)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@4.22.1)(typescript@5.5.3)(webpack-dev-server@5.0.4(webpack@5.93.0))(webpack-hot-middleware@2.26.1)
+        version: 7.6.19(@babel/core@7.24.9)(@swc/core@1.5.0)(encoding@0.1.13)(esbuild@0.18.20)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@4.22.1)(typescript@5.5.4)(webpack-dev-server@5.0.4(webpack@5.93.0))(webpack-hot-middleware@2.26.1)
       '@storybook/theming':
         specifier: 7.6.19
         version: 7.6.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1585,7 +1585,7 @@ importers:
         version: 18.3.0
       '@whitespace/storybook-addon-html':
         specifier: 6.1.1
-        version: 6.1.1(prettier@2.8.8)(react-syntax-highlighter@15.5.0(react@18.3.1))
+        version: 6.1.1(prettier@3.3.3)(react-syntax-highlighter@15.5.0(react@18.3.1))
       babel-loader:
         specifier: 9.1.3
         version: 9.1.3(@babel/core@7.24.9)(webpack@5.93.0(@swc/core@1.5.0)(esbuild@0.18.20))
@@ -1605,8 +1605,8 @@ importers:
         specifier: 4.6.0
         version: 4.6.0
       prettier:
-        specifier: 2.8.8
-        version: 2.8.8
+        specifier: 3.3.3
+        version: 3.3.3
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -1644,8 +1644,8 @@ importers:
         specifier: 4.0.0
         version: 4.0.0(webpack@5.93.0(@swc/core@1.5.0)(esbuild@0.18.20))
       typescript:
-        specifier: 5.5.3
-        version: 5.5.3
+        specifier: 5.5.4
+        version: 5.5.4
       webpack:
         specifier: 5.93.0
         version: 5.93.0(@swc/core@1.5.0)(esbuild@0.18.20)
@@ -11450,11 +11450,6 @@ packages:
   typedarray@0.0.6:
     resolution: {integrity: sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==}
 
-  typescript@5.5.3:
-    resolution: {integrity: sha512-/hreyEujaB0w76zKo6717l3L0o/qEUtRgdvUBvlkhoWeOVMjMuHNHk0BRBzikzuGDqNmPQbg5ifMEqsHLiIUcQ==}
-    engines: {node: '>=14.17'}
-    hasBin: true
-
   typescript@5.5.4:
     resolution: {integrity: sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==}
     engines: {node: '>=14.17'}
@@ -13423,7 +13418,7 @@ snapshots:
     dependencies:
       tslib: 2.6.3
 
-  '@formatjs/intl@2.10.1(typescript@5.5.3)':
+  '@formatjs/intl@2.10.1(typescript@5.5.4)':
     dependencies:
       '@formatjs/ecma402-abstract': 1.18.2
       '@formatjs/fast-memoize': 2.2.0
@@ -13433,7 +13428,7 @@ snapshots:
       intl-messageformat: 10.5.11
       tslib: 2.6.3
     optionalDependencies:
-      typescript: 5.5.3
+      typescript: 5.5.4
 
   '@formio/bootstrap3@2.12.3':
     dependencies:
@@ -14017,11 +14012,11 @@ snapshots:
       pump: 3.0.0
       tar-fs: 2.1.1
 
-  '@nl-design-system-unstable/theme-toolkit@1.0.0-alpha.27(@types/react-dom@18.3.0)(@types/react@18.3.3)(encoding@0.1.13)(prettier@2.8.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@nl-design-system-unstable/theme-toolkit@1.0.0-alpha.27(@types/react-dom@18.3.0)(@types/react@18.3.3)(encoding@0.1.13)(prettier@3.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.7
       '@gemeente-denhaag/process-steps': 0.1.0-alpha.223(react@18.3.1)
-      '@storybook/blocks': 8.1.9(@types/react-dom@18.3.0)(@types/react@18.3.3)(encoding@0.1.13)(prettier@2.8.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@storybook/blocks': 8.1.9(@types/react-dom@18.3.0)(@types/react@18.3.3)(encoding@0.1.13)(prettier@3.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       color: 3.2.1
       d3-color: 3.1.0
       delta-e: 0.0.8
@@ -14355,7 +14350,7 @@ snapshots:
       leaflet: 1.9.4
       proj4leaflet: 1.0.2
 
-  '@open-formulieren/sdk@2.3.1(@jest/globals@29.7.0)(@types/jest@29.5.12)(@types/react@18.3.3)(encoding@0.1.13)(formiojs@4.19.1(encoding@0.1.13))(jest@29.7.0(@types/node@20.14.11)(babel-plugin-macros@3.1.0))(prop-types@15.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.8)(storybook@7.6.19(encoding@0.1.13))(typescript@5.5.3)':
+  '@open-formulieren/sdk@2.3.1(@jest/globals@29.7.0)(@types/jest@29.5.12)(@types/react@18.3.3)(encoding@0.1.13)(formiojs@4.19.1(encoding@0.1.13))(jest@29.7.0(@types/node@20.14.11)(babel-plugin-macros@3.1.0))(prop-types@15.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.8)(storybook@7.6.19(encoding@0.1.13))(typescript@5.5.4)':
     dependencies:
       '@floating-ui/react': 0.26.16(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@formio/protected-eval': 1.2.2(formiojs@4.19.1(encoding@0.1.13))
@@ -14382,7 +14377,7 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       react-formio: 4.3.0(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      react-intl: 6.6.5(react@18.3.1)(typescript@5.5.3)
+      react-intl: 6.6.5(react@18.3.1)(typescript@5.5.4)
       react-leaflet: 4.2.1(leaflet@1.9.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-modal: 3.16.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-number-format: 5.2.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -15495,14 +15490,14 @@ snapshots:
       - encoding
       - supports-color
 
-  '@storybook/blocks@8.1.9(@types/react-dom@18.3.0)(@types/react@18.3.3)(encoding@0.1.13)(prettier@2.8.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@storybook/blocks@8.1.9(@types/react-dom@18.3.0)(@types/react@18.3.3)(encoding@0.1.13)(prettier@3.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@storybook/channels': 8.1.9
       '@storybook/client-logger': 8.1.9
       '@storybook/components': 8.1.9(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/core-events': 8.1.9
       '@storybook/csf': 0.1.7
-      '@storybook/docs-tools': 8.1.9(encoding@0.1.13)(prettier@2.8.8)
+      '@storybook/docs-tools': 8.1.9(encoding@0.1.13)(prettier@3.3.3)
       '@storybook/global': 5.0.0
       '@storybook/icons': 1.2.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/manager-api': 8.1.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -15553,7 +15548,7 @@ snapshots:
       - encoding
       - supports-color
 
-  '@storybook/builder-webpack5@7.6.19(encoding@0.1.13)(esbuild@0.18.20)(typescript@5.5.3)':
+  '@storybook/builder-webpack5@7.6.19(encoding@0.1.13)(esbuild@0.18.20)(typescript@5.5.4)':
     dependencies:
       '@babel/core': 7.24.9
       '@storybook/channels': 7.6.19
@@ -15575,7 +15570,7 @@ snapshots:
       css-loader: 6.11.0(webpack@5.93.0(@swc/core@1.5.0)(esbuild@0.18.20))
       es-module-lexer: 1.5.0
       express: 4.19.2
-      fork-ts-checker-webpack-plugin: 8.0.0(typescript@5.5.3)(webpack@5.93.0(@swc/core@1.5.0)(esbuild@0.18.20))
+      fork-ts-checker-webpack-plugin: 8.0.0(typescript@5.5.4)(webpack@5.93.0(@swc/core@1.5.0)(esbuild@0.18.20))
       fs-extra: 11.2.0
       html-webpack-plugin: 5.6.0(webpack@5.93.0(@swc/core@1.5.0)(esbuild@0.18.20))
       magic-string: 0.30.10
@@ -15594,7 +15589,7 @@ snapshots:
       webpack-hot-middleware: 2.26.1
       webpack-virtual-modules: 0.5.0
     optionalDependencies:
-      typescript: 5.5.3
+      typescript: 5.5.4
     transitivePeerDependencies:
       - '@rspack/core'
       - '@swc/helpers'
@@ -15808,7 +15803,7 @@ snapshots:
       - encoding
       - supports-color
 
-  '@storybook/core-common@8.1.9(encoding@0.1.13)(prettier@2.8.8)':
+  '@storybook/core-common@8.1.9(encoding@0.1.13)(prettier@3.3.3)':
     dependencies:
       '@storybook/core-events': 8.1.9
       '@storybook/csf-tools': 8.1.9
@@ -15840,7 +15835,7 @@ snapshots:
       ts-dedent: 2.2.0
       util: 0.12.5
     optionalDependencies:
-      prettier: 2.8.8
+      prettier: 3.3.3
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -15984,9 +15979,9 @@ snapshots:
       - encoding
       - supports-color
 
-  '@storybook/docs-tools@8.1.9(encoding@0.1.13)(prettier@2.8.8)':
+  '@storybook/docs-tools@8.1.9(encoding@0.1.13)(prettier@3.3.3)':
     dependencies:
-      '@storybook/core-common': 8.1.9(encoding@0.1.13)(prettier@2.8.8)
+      '@storybook/core-common': 8.1.9(encoding@0.1.13)(prettier@3.3.3)
       '@storybook/core-events': 8.1.9
       '@storybook/preview-api': 8.1.9
       '@storybook/types': 8.1.9
@@ -16084,7 +16079,7 @@ snapshots:
 
   '@storybook/postinstall@7.6.19': {}
 
-  '@storybook/preset-react-webpack@7.6.19(@babel/core@7.24.9)(@swc/core@1.5.0)(encoding@0.1.13)(esbuild@0.18.20)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@4.22.1)(typescript@5.5.3)(webpack-dev-server@5.0.4(webpack@5.93.0))(webpack-hot-middleware@2.26.1)':
+  '@storybook/preset-react-webpack@7.6.19(@babel/core@7.24.9)(@swc/core@1.5.0)(encoding@0.1.13)(esbuild@0.18.20)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@4.22.1)(typescript@5.5.4)(webpack-dev-server@5.0.4(webpack@5.93.0))(webpack-hot-middleware@2.26.1)':
     dependencies:
       '@babel/preset-flow': 7.24.1(@babel/core@7.24.9)
       '@babel/preset-react': 7.24.7(@babel/core@7.24.9)
@@ -16092,8 +16087,8 @@ snapshots:
       '@storybook/core-webpack': 7.6.19(encoding@0.1.13)
       '@storybook/docs-tools': 7.6.19(encoding@0.1.13)
       '@storybook/node-logger': 7.6.19
-      '@storybook/react': 7.6.19(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.3)
-      '@storybook/react-docgen-typescript-plugin': 1.0.6--canary.9.0c3f3b7.0(typescript@5.5.3)(webpack@5.93.0(@swc/core@1.5.0)(esbuild@0.18.20))
+      '@storybook/react': 7.6.19(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+      '@storybook/react-docgen-typescript-plugin': 1.0.6--canary.9.0c3f3b7.0(typescript@5.5.4)(webpack@5.93.0(@swc/core@1.5.0)(esbuild@0.18.20))
       '@types/node': 18.19.31
       '@types/semver': 7.5.8
       babel-plugin-add-react-displayname: 0.0.5
@@ -16107,7 +16102,7 @@ snapshots:
       webpack: 5.93.0(@swc/core@1.5.0)(esbuild@0.18.20)
     optionalDependencies:
       '@babel/core': 7.24.9
-      typescript: 5.5.3
+      typescript: 5.5.4
     transitivePeerDependencies:
       - '@swc/core'
       - '@types/webpack'
@@ -16164,16 +16159,16 @@ snapshots:
 
   '@storybook/preview@7.6.19': {}
 
-  '@storybook/react-docgen-typescript-plugin@1.0.6--canary.9.0c3f3b7.0(typescript@5.5.3)(webpack@5.93.0(@swc/core@1.5.0)(esbuild@0.18.20))':
+  '@storybook/react-docgen-typescript-plugin@1.0.6--canary.9.0c3f3b7.0(typescript@5.5.4)(webpack@5.93.0(@swc/core@1.5.0)(esbuild@0.18.20))':
     dependencies:
       debug: 4.3.5
       endent: 2.1.0
       find-cache-dir: 3.3.2
       flat-cache: 3.2.0
       micromatch: 4.0.7
-      react-docgen-typescript: 2.2.2(typescript@5.5.3)
+      react-docgen-typescript: 2.2.2(typescript@5.5.4)
       tslib: 2.6.3
-      typescript: 5.5.3
+      typescript: 5.5.4
       webpack: 5.93.0(@swc/core@1.5.0)(esbuild@0.18.20)
     transitivePeerDependencies:
       - supports-color
@@ -16183,17 +16178,17 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@storybook/react-webpack5@7.6.19(@babel/core@7.24.9)(@swc/core@1.5.0)(encoding@0.1.13)(esbuild@0.18.20)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@4.22.1)(typescript@5.5.3)(webpack-dev-server@5.0.4(webpack@5.93.0))(webpack-hot-middleware@2.26.1)':
+  '@storybook/react-webpack5@7.6.19(@babel/core@7.24.9)(@swc/core@1.5.0)(encoding@0.1.13)(esbuild@0.18.20)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@4.22.1)(typescript@5.5.4)(webpack-dev-server@5.0.4(webpack@5.93.0))(webpack-hot-middleware@2.26.1)':
     dependencies:
-      '@storybook/builder-webpack5': 7.6.19(encoding@0.1.13)(esbuild@0.18.20)(typescript@5.5.3)
-      '@storybook/preset-react-webpack': 7.6.19(@babel/core@7.24.9)(@swc/core@1.5.0)(encoding@0.1.13)(esbuild@0.18.20)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@4.22.1)(typescript@5.5.3)(webpack-dev-server@5.0.4(webpack@5.93.0))(webpack-hot-middleware@2.26.1)
-      '@storybook/react': 7.6.19(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.3)
+      '@storybook/builder-webpack5': 7.6.19(encoding@0.1.13)(esbuild@0.18.20)(typescript@5.5.4)
+      '@storybook/preset-react-webpack': 7.6.19(@babel/core@7.24.9)(@swc/core@1.5.0)(encoding@0.1.13)(esbuild@0.18.20)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@4.22.1)(typescript@5.5.4)(webpack-dev-server@5.0.4(webpack@5.93.0))(webpack-hot-middleware@2.26.1)
+      '@storybook/react': 7.6.19(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       '@types/node': 18.19.31
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
     optionalDependencies:
       '@babel/core': 7.24.9
-      typescript: 5.5.3
+      typescript: 5.5.4
     transitivePeerDependencies:
       - '@rspack/core'
       - '@swc/core'
@@ -16210,7 +16205,7 @@ snapshots:
       - webpack-hot-middleware
       - webpack-plugin-serve
 
-  '@storybook/react@7.6.19(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.3)':
+  '@storybook/react@7.6.19(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)':
     dependencies:
       '@storybook/client-logger': 7.6.19
       '@storybook/core-client': 7.6.19
@@ -16236,7 +16231,7 @@ snapshots:
       type-fest: 2.19.0
       util-deprecate: 1.0.2
     optionalDependencies:
-      typescript: 5.5.3
+      typescript: 5.5.4
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -17048,9 +17043,9 @@ snapshots:
       '@webassemblyjs/ast': 1.12.1
       '@xtuc/long': 4.2.2
 
-  '@whitespace/storybook-addon-html@6.1.1(prettier@2.8.8)(react-syntax-highlighter@15.5.0(react@18.3.1))':
+  '@whitespace/storybook-addon-html@6.1.1(prettier@3.3.3)(react-syntax-highlighter@15.5.0(react@18.3.1))':
     dependencies:
-      prettier: 2.8.8
+      prettier: 3.3.3
       react-syntax-highlighter: 15.5.0(react@18.3.1)
 
   '@xobotyi/scrollbar-width@1.9.5': {}
@@ -19452,7 +19447,7 @@ snapshots:
       cross-spawn: 7.0.3
       signal-exit: 4.1.0
 
-  fork-ts-checker-webpack-plugin@8.0.0(typescript@5.5.3)(webpack@5.93.0(@swc/core@1.5.0)(esbuild@0.18.20)):
+  fork-ts-checker-webpack-plugin@8.0.0(typescript@5.5.4)(webpack@5.93.0(@swc/core@1.5.0)(esbuild@0.18.20)):
     dependencies:
       '@babel/code-frame': 7.24.7
       chalk: 4.1.2
@@ -19466,7 +19461,7 @@ snapshots:
       schema-utils: 3.3.0
       semver: 7.6.2
       tapable: 2.2.1
-      typescript: 5.5.3
+      typescript: 5.5.4
       webpack: 5.93.0(@swc/core@1.5.0)(esbuild@0.18.20)
 
   form-data-encoder@2.1.4: {}
@@ -23372,9 +23367,9 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  react-docgen-typescript@2.2.2(typescript@5.5.3):
+  react-docgen-typescript@2.2.2(typescript@5.5.4):
     dependencies:
-      typescript: 5.5.3
+      typescript: 5.5.4
 
   react-docgen@7.0.3:
     dependencies:
@@ -23426,11 +23421,11 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  react-intl@6.6.5(react@18.3.1)(typescript@5.5.3):
+  react-intl@6.6.5(react@18.3.1)(typescript@5.5.4):
     dependencies:
       '@formatjs/ecma402-abstract': 1.18.2
       '@formatjs/icu-messageformat-parser': 2.7.6
-      '@formatjs/intl': 2.10.1(typescript@5.5.3)
+      '@formatjs/intl': 2.10.1(typescript@5.5.4)
       '@formatjs/intl-displaynames': 6.6.6
       '@formatjs/intl-listformat': 7.5.5
       '@types/hoist-non-react-statics': 3.3.5
@@ -23440,7 +23435,7 @@ snapshots:
       react: 18.3.1
       tslib: 2.6.3
     optionalDependencies:
-      typescript: 5.5.3
+      typescript: 5.5.4
 
   react-is@16.13.1: {}
 
@@ -25055,8 +25050,6 @@ snapshots:
       is-typedarray: 1.0.0
 
   typedarray@0.0.6: {}
-
-  typescript@5.5.3: {}
 
   typescript@5.5.4: {}
 

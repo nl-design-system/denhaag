@@ -4,14 +4,6 @@ const minorConfig = require('./.ncurc.minor');
 
 module.exports = {
   ...minorConfig,
-  reject: [
-    ...minorConfig.reject,
-    'eslint',
-    'eslint-plugin-json',
-    'prettier',
-    'storybook',
-    '@storybook/*',
-    '@etchteam/storybook-addon-status',
-  ],
+  reject: [...minorConfig.reject, 'storybook', '@storybook/*', '@etchteam/storybook-addon-status'],
   target: 'latest',
 };
