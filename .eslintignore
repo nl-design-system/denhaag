@@ -1,8 +1,0 @@
-build/
-dist/
-node_modules/
-storybook-static/
-.*/
-*.min.js
-package-lock.json
-pnpm-lock.yaml
