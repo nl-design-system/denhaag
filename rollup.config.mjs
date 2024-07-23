@@ -17,6 +17,7 @@ const inputExists = (config) => {
   try {
     return fs.existsSync(config.input);
   } catch (e) {
+    console.error(e);
     return false;
   }
 };
