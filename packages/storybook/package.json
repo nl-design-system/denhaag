@@ -29,7 +29,6 @@
     "@gemeente-denhaag/anchor-collapse": "workspace:*",
     "@gemeente-denhaag/anchor-navigation": "workspace:*",
     "@gemeente-denhaag/article-meta": "workspace:*",
-    "@gemeente-denhaag/authentication-block": "workspace:*",
     "@gemeente-denhaag/badge-counter": "workspace:*",
     "@gemeente-denhaag/blockquote": "workspace:*",
     "@gemeente-denhaag/breadcrumb": "workspace:*",
