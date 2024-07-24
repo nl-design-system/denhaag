@@ -77,6 +77,11 @@ Notes should:
 - Info: Provide additional information to users.
 - Warning: Warn users about important information.
 
+### Aria Live
+
+In case the note has been applied as reference in a form and will be updated by javascript, apply `aria-live="polite"` and `aria-atomic=true"` to the component.
+This way screenreaders will re-read the element when the component has been updated.
+
 ## References
 
 https://www.figma.com/file/JpoY3waVoQGlLQzQXTL9nn/Design-System---Gemeente-Den-Haag?node-id=8123%3A24065

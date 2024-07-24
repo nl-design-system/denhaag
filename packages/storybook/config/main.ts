@@ -1,45 +1,40 @@
-import type { StorybookConfig } from '@storybook/react-webpack5';
+import type { StorybookConfig } from '@storybook/react-vite';
+import path from 'path';
+
+const getAbsolutePath = (packageName: string) => path.dirname(require.resolve(path.join(packageName, 'package.json')));
 
 const config: StorybookConfig = {
   core: {
     disableTelemetry: true,
   },
-  stories: ['../src/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
-  features: {
-    buildStoriesJson: true,
-  },
+  stories: ['../src/**/*.@(stories.@(js|jsx|ts|tsx))'],
   framework: {
-    name: '@storybook/react-webpack5',
+    name: getAbsolutePath('@storybook/react-vite'),
     options: {},
   },
   addons: [
-    '@storybook/addon-actions',
-    '@storybook/addon-docs',
-    '@storybook/addon-a11y',
-    '@storybook/addon-viewport',
-    '@storybook/preset-scss',
-    '@etchteam/storybook-addon-status/register',
-    '@whitespace/storybook-addon-html',
-    '@storybook/addon-links',
-    'storybook-addon-pseudo-states',
-    'storybook-addon-themes',
+    getAbsolutePath('@storybook/addon-actions'),
+    getAbsolutePath('@storybook/addon-docs'),
+    getAbsolutePath('@storybook/addon-a11y'),
+    getAbsolutePath('@storybook/addon-viewport'),
+    getAbsolutePath('@storybook/preset-scss'),
+    getAbsolutePath('@etchteam/storybook-addon-status'),
+    getAbsolutePath('@whitespace/storybook-addon-html'),
+    getAbsolutePath('@storybook/addon-links'),
+    getAbsolutePath('storybook-addon-pseudo-states'),
+    getAbsolutePath('storybook-addon-themes'),
+    getAbsolutePath('@storybook/addon-mdx-gfm'),
   ],
   staticDirs: ['../src/assets'],
-  docs: {
-    autodocs: 'tag',
+  docs: {},
+  typescript: {
+    reactDocgen: getAbsolutePath('react-docgen-typescript'),
   },
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  webpackFinal: async (config: any) => {
-    const rules = config.module.rules;
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const fileLoaderRule = rules.find((rule: any) => rule.test && rule.test.test('.svg'));
-    fileLoaderRule.exclude = /\.svg$/;
-
-    rules.push({
-      test: /\.svg$/,
-      use: ['@svgr/webpack'],
+  async viteFinal(config) {
+    const { mergeConfig } = await import('vite');
+    return mergeConfig(config, {
+      define: { 'process.env': {} },
     });
-    return config;
   },
 };
 
