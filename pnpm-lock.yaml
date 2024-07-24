@@ -267,7 +267,7 @@ importers:
         specifier: workspace:*
         version: link:../Typography
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/AnchorCollapse: {}
@@ -294,13 +294,13 @@ importers:
         specifier: 6.1.0
         version: 6.1.0
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/Blockquote:
     dependencies:
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/Breadcrumb:
@@ -315,7 +315,7 @@ importers:
         specifier: workspace:*
         version: link:../ResponsiveContent
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/Button:
@@ -324,7 +324,7 @@ importers:
         specifier: workspace:*
         version: link:../Icons
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/ButtonGroup: {}
@@ -338,7 +338,7 @@ importers:
         specifier: 6.1.0
         version: 6.1.0
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/Card:
@@ -356,7 +356,7 @@ importers:
         specifier: workspace:*
         version: link:../Utils
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
     devDependencies:
       '@gemeente-denhaag/iconbutton':
@@ -395,7 +395,7 @@ importers:
         specifier: 6.1.0
         version: 6.1.0
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/ContactTimeline:
@@ -460,7 +460,7 @@ importers:
         specifier: workspace:*
         version: link:../Icons
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/DotIndicator:
@@ -469,7 +469,7 @@ importers:
         specifier: workspace:*
         version: link:../Button
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/DynamicContent:
@@ -533,7 +533,7 @@ importers:
         specifier: 6.1.0
         version: 6.1.0
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/FormFieldDescription:
@@ -545,13 +545,13 @@ importers:
         specifier: 6.1.0
         version: 6.1.0
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/FormFieldErrorMessage:
     dependencies:
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
     devDependencies:
       '@utrecht/component-library-react':
@@ -570,7 +570,7 @@ importers:
         specifier: 6.1.0
         version: 6.1.0
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/FormLabel:
@@ -582,7 +582,7 @@ importers:
         specifier: 6.1.0
         version: 6.1.0
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/FormProgress:
@@ -594,7 +594,7 @@ importers:
         specifier: workspace:*
         version: link:../Link
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/Header:
@@ -636,7 +636,7 @@ importers:
         specifier: workspace:*
         version: link:../Typography
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/HeaderLogo: {}
@@ -652,7 +652,7 @@ importers:
   components/IconButton:
     dependencies:
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
     devDependencies:
       '@gemeente-denhaag/icons':
@@ -662,7 +662,7 @@ importers:
   components/Icons:
     dependencies:
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/Image:
@@ -683,7 +683,7 @@ importers:
         specifier: 4.2.0
         version: 4.2.0(@babel/runtime@7.24.7)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/Link:
@@ -692,7 +692,7 @@ importers:
         specifier: workspace:*
         version: link:../Icons
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/LinkButton:
@@ -704,7 +704,7 @@ importers:
         specifier: 6.1.0
         version: 6.1.0
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/LinkGroup:
@@ -722,7 +722,7 @@ importers:
         specifier: workspace:*
         version: link:../Icons
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/Menu:
@@ -746,7 +746,7 @@ importers:
         specifier: 4.1.0
         version: 4.1.0
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
       uuid:
         specifier: 10.0.0
@@ -758,7 +758,7 @@ importers:
         specifier: workspace:*
         version: link:../Button
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/Note:
@@ -783,7 +783,7 @@ importers:
   components/Pagination:
     dependencies:
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/ProcessSteps:
@@ -801,7 +801,7 @@ importers:
         specifier: workspace:*
         version: link:../Typography
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/RadioButton:
@@ -813,7 +813,7 @@ importers:
         specifier: 6.1.0
         version: 6.1.0
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/ResponsiveContent: {}
@@ -821,7 +821,7 @@ importers:
   components/Sheet:
     dependencies:
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
     devDependencies:
       '@gemeente-denhaag/iconbutton':
@@ -837,7 +837,7 @@ importers:
   components/Sidenav:
     dependencies:
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/StatusBadge:
@@ -852,7 +852,7 @@ importers:
   components/StepMarker:
     dependencies:
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
     devDependencies:
       '@gemeente-denhaag/icons':
@@ -862,13 +862,13 @@ importers:
   components/StylesProvider:
     dependencies:
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/Tab:
     dependencies:
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
       uuid:
         specifier: 10.0.0
@@ -884,7 +884,7 @@ importers:
         specifier: workspace:*
         version: link:../Link
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/TextInput:
@@ -896,7 +896,7 @@ importers:
         specifier: 6.1.0
         version: 6.1.0
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/Textarea:
@@ -908,7 +908,7 @@ importers:
         specifier: 6.1.0
         version: 6.1.0
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/Typography:
@@ -923,7 +923,7 @@ importers:
         specifier: 6.1.0
         version: 6.1.0
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   components/UnorderedList:
@@ -941,7 +941,7 @@ importers:
         specifier: 3.6.0
         version: 3.6.0
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   packages/components-css:
@@ -1256,7 +1256,7 @@ importers:
         specifier: workspace:*
         version: link:../../components/Typography
       react:
-        specifier: ^18.3.1
+        specifier: ^18.0.0
         version: 18.3.1
 
   packages/keycloak:
