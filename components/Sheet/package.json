@@ -35,6 +35,6 @@
     "@gemeente-denhaag/responsive-content": "workspace:*"
   },
   "peerDependencies": {
-    "react": "^18.3.1"
+    "react": "^18.0.0"
   }
 }
