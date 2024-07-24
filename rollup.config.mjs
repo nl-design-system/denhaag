@@ -16,8 +16,7 @@ const tsconfig = JSON.parse(readFileSync('./tsconfig.json', 'utf8'));
 const inputExists = (config) => {
   try {
     return fs.existsSync(config.input);
-  } catch (e) {
-    console.error(e);
+  } catch {
     return false;
   }
 };
