@@ -21,7 +21,7 @@ const inputExists = (config) => {
   }
 };
 
-const externalDependencies = ['react', 'react-dom', 'date-fns'];
+const externalDependencies = ['react', 'react-dom'];
 const internalDependencies = tsconfig.compilerOptions.paths && Object.keys(tsconfig.compilerOptions.paths);
 const dependencies = externalDependencies.concat(internalDependencies);
 

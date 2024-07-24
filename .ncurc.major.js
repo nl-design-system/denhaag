@@ -4,6 +4,6 @@ const minorConfig = require('./.ncurc.minor');
 
 module.exports = {
   ...minorConfig,
-  reject: [...minorConfig.reject, 'storybook', '@storybook/*', '@etchteam/storybook-addon-status'],
+  reject: [...minorConfig.reject],
   target: 'latest',
 };
