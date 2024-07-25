@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import '@gemeente-denhaag/anchor-collapse';
 
 import pkg from '../../../../components/AnchorCollapse/package.json';
-import readme from '../../../../components/AnchorCollapse/README.md';
+import readme from '../../../../components/AnchorCollapse/README.md?raw';
 import '../../../../components/AnchorCollapse/src/anchorCollapses';
 import '../../../../components/AnchorCollapse/src/stories.js';
 

@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { CaseCard } from '@gemeente-denhaag/card';
 
-import readme from '../../../../components/Card/README.md';
+import readme from '../../../../components/Card/README.md?raw';
 
 const exampleArgs = {
   title: 'Shrimp and Chorizo Paella',

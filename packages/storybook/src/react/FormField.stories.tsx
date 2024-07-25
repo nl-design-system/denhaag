@@ -9,7 +9,7 @@ import { Fieldset, FieldsetLegend } from '@gemeente-denhaag/form-fieldset';
 import { TextInput } from '@gemeente-denhaag/text-input';
 import { Paragraph } from '@gemeente-denhaag/typography';
 import { RadioButton } from '@gemeente-denhaag/radio-button';
-import readme from '../../../../components/FormField/README.md';
+import readme from '../../../../components/FormField/README.md?raw';
 
 const meta = {
   id: 'react-input-form-field',

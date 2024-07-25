@@ -2,7 +2,7 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import { AlertTriangleIcon, CheckedIcon, CloseIcon } from '@gemeente-denhaag/icons';
 import { StepMarker } from '@gemeente-denhaag/step-marker';
-import readme from '../../../../components/StepMarker/README.md';
+import readme from '../../../../components/StepMarker/README.md?raw';
 
 const exampleArgs = {
   children: 1,

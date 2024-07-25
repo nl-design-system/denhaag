@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import '@gemeente-denhaag/cta-image-content';
 
 import pkg from '../../../../components/CtaImageContent/package.json';
-import readme from '../../../../components/CtaImageContent/README.md';
+import readme from '../../../../components/CtaImageContent/README.md?raw';
 
 const meta = {
   title: 'CSS/Actions/Cta Image Content',

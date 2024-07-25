@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import readme from '../../../../components/FormField/README.md';
+import readme from '../../../../components/FormField/README.md?raw';
 import { UnorderedList, UnorderedListItem } from '@gemeente-denhaag/unorderedlist';
 
 const meta = {

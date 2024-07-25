@@ -4,7 +4,7 @@ import { ArrowLeftIcon, ArrowRightIcon } from '@gemeente-denhaag/icons';
 import { Paragraph } from '@gemeente-denhaag/typography';
 import { Link } from '@gemeente-denhaag/link';
 
-import readme from '../../../../components/Link/README.md';
+import readme from '../../../../components/Link/README.md?raw';
 
 const exampleArgs = {
   href: '#',

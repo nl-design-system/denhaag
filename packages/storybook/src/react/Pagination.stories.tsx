@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { Pagination } from '@gemeente-denhaag/pagination';
 
-import readme from '../../../../components/Pagination/README.md';
+import readme from '../../../../components/Pagination/README.md?raw';
 
 const exampleArgs = {
   indexLimit: 0,

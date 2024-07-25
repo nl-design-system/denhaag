@@ -4,7 +4,7 @@ import { action } from '@storybook/addon-actions';
 import { Alert, AlertProps } from '@gemeente-denhaag/alert';
 import { MegaphoneIcon } from '@gemeente-denhaag/icons';
 
-import readme from '../../../../components/Alert/README.md';
+import readme from '../../../../components/Alert/README.md?raw';
 
 const exampleArgs: AlertProps = {
   title: 'Title',

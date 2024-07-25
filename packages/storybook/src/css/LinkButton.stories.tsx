@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import { ArrowLeftIcon, ExternalLinkIcon } from '@gemeente-denhaag/icons';
 import { LinkButton } from '@gemeente-denhaag/link-button';
 
-import readme from '../../../../components/LinkButton/README.md';
+import readme from '../../../../components/LinkButton/README.md?raw';
 
 const exampleArgs = {
   href: '#',
