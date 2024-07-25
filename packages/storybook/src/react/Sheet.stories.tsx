@@ -5,7 +5,7 @@ import { IconButton } from '@gemeente-denhaag/iconbutton';
 import { Sheet, SheetContainer, SheetDialog, SheetProps } from '@gemeente-denhaag/sheet';
 import { ResponsiveContent } from '@gemeente-denhaag/responsive-content';
 
-import readme from '../../../../components/Sheet/README.md';
+import readme from '../../../../components/Sheet/README.md?raw';
 
 const exampleArgs: SheetProps = {
   children: 'Sheet',

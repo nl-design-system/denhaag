@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import { File } from '@gemeente-denhaag/file';
 import { ContactTimeline, ContactTimelineProps } from '@gemeente-denhaag/contact-timeline';
 
-import readme from '../../../../components/ContactTimeline/README.md';
+import readme from '../../../../components/ContactTimeline/README.md?raw';
 
 const exampleArgs: ContactTimelineProps = {
   labels: { today: 'vandaag', yesterday: 'gisteren' },

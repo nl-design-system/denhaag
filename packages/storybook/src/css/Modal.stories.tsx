@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import { Modal } from '@gemeente-denhaag/modal';
-import readme from '../../../../components/Modal/README.md';
+import readme from '../../../../components/Modal/README.md?raw';
 
 const exampleArgs = {
   open: true,

@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import { BadgeCounter } from '@gemeente-denhaag/badge-counter';
 import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '@gemeente-denhaag/sidenav';
 import { ArchiveIcon, CheckCircleIcon, GridIcon, InboxIcon, UserIcon } from '@gemeente-denhaag/icons';
-import readme from '../../../../components/Sidenav/README.md';
+import readme from '../../../../components/Sidenav/README.md?raw';
 
 const exampleArgs = {
   children: (

@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import '@gemeente-denhaag/breadcrumb';
 
 import pkg from '../../../../components/Breadcrumb/package.json';
-import readme from '../../../../components/Breadcrumb/README.md';
+import readme from '../../../../components/Breadcrumb/README.md?raw';
 
 const meta = {
   title: 'CSS/Navigation/Breadcrumb',

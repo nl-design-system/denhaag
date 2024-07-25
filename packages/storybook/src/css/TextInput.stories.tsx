@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { TextInput } from '@gemeente-denhaag/text-input';
-import readme from '../../../../components/TextInput/README.md';
+import readme from '../../../../components/TextInput/README.md?raw';
 
 const meta = {
   title: 'CSS/Input/TextInput',

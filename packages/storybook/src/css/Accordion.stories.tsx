@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import '@gemeente-denhaag/accordion';
 
 import pkg from '../../../../components/Accordion/package.json';
-import readme from '../../../../components/Accordion/README.md';
+import readme from '../../../../components/Accordion/README.md?raw';
 
 const meta = {
   title: 'CSS/Surfaces/Accordion',

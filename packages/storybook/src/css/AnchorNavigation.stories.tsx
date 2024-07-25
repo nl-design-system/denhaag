@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import '@gemeente-denhaag/anchor-navigation';
 
 import pkg from '../../../../components/AnchorNavigation/package.json';
-import readme from '../../../../components/AnchorNavigation/README.md';
+import readme from '../../../../components/AnchorNavigation/README.md?raw';
 
 const meta = {
   title: 'CSS/Navigation/Anchor Navigation',

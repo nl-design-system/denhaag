@@ -5,7 +5,7 @@ import '@gemeente-denhaag/link';
 import '@gemeente-denhaag/link-group';
 
 import pkg from '../../../../components/LinkGroup/package.json';
-import readme from '../../../../components/LinkGroup/README.md';
+import readme from '../../../../components/LinkGroup/README.md?raw';
 
 const meta = {
   title: 'CSS/Navigation/Link Group',

@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { BadgeCounter } from '@gemeente-denhaag/badge-counter';
 
-import readme from '../../../../components/BadgeCounter/README.md';
+import readme from '../../../../components/BadgeCounter/README.md?raw';
 
 const exampleArgs = {
   children: '13',

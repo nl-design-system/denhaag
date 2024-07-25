@@ -2,7 +2,7 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import { Status } from '@gemeente-denhaag/process-steps';
 
-import readme from '../../../../components/ProcessSteps/README.md';
+import readme from '../../../../components/ProcessSteps/README.md?raw';
 
 const exampleArgs = {
   steps: [

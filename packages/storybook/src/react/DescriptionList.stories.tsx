@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { DescriptionList } from '@gemeente-denhaag/descriptionlist';
-import readme from '../../../../components/DescriptionList/README.md';
+import readme from '../../../../components/DescriptionList/README.md?raw';
 
 const exampleArgs = {
   items: [

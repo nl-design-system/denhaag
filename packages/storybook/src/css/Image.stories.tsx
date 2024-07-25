@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import '@gemeente-denhaag/image';
 
 import pkg from '../../../../components/Image/package.json';
-import readme from '../../../../components/Image/README.md';
+import readme from '../../../../components/Image/README.md?raw';
 
 const meta = {
   title: 'CSS/Data Display/Image',

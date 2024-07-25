@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { Checkbox } from '@gemeente-denhaag/checkbox';
-import readme from '../../../../components/Checkbox/README.md';
+import readme from '../../../../components/Checkbox/README.md?raw';
 
 const meta = {
   id: 'react-input-checkbox',

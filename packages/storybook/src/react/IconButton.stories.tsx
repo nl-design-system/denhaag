@@ -4,7 +4,7 @@ import { action } from '@storybook/addon-actions';
 import { IconButton } from '@gemeente-denhaag/iconbutton';
 import { TrashIcon } from '@gemeente-denhaag/icons';
 
-import readme from '../../../../components/IconButton/README.md';
+import readme from '../../../../components/IconButton/README.md?raw';
 
 const exampleArgs = {
   ariaLabel: 'delete',

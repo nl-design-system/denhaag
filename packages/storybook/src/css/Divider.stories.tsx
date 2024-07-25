@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import { Divider } from '@gemeente-denhaag/divider';
-import readme from '../../../../components/Divider/README.md';
+import readme from '../../../../components/Divider/README.md?raw';
 
 const exampleArgs = {};
 

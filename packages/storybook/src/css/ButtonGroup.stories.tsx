@@ -5,7 +5,7 @@ import '@gemeente-denhaag/button-group';
 import '@gemeente-denhaag/icons';
 
 import pkg from '../../../../components/ButtonGroup/package.json';
-import readme from '../../../../components/ButtonGroup/README.md';
+import readme from '../../../../components/ButtonGroup/README.md?raw';
 
 const meta = {
   title: 'CSS/Input/Button Group',
