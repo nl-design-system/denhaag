@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import readme from '../../../../components/StatusBadge/README.md';
+import readme from '../../../../components/StatusBadge/README.md?raw';
 import { StatusBadge } from '@gemeente-denhaag/status-badge';
 
 const exampleArgs = {

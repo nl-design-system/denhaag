@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { FormProgress } from '@gemeente-denhaag/form-progress';
 
-import readme from '../../../../components/FormProgress/README.md';
+import readme from '../../../../components/FormProgress/README.md?raw';
 
 const exampleArgs = {
   value: 1,

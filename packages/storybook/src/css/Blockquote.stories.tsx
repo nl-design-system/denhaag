@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import '@gemeente-denhaag/blockquote';
 
 import pkg from '../../../../components/Blockquote/package.json';
-import readme from '../../../../components/Blockquote/README.md';
+import readme from '../../../../components/Blockquote/README.md?raw';
 
 const meta = {
   title: 'CSS/Data Display/Blockquote',

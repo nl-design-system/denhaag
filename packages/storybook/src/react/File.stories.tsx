@@ -2,7 +2,7 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import { File } from '@gemeente-denhaag/file';
 
-import readme from '../../../../components/File/README.md';
+import readme from '../../../../components/File/README.md?raw';
 
 const exampleArgs = {
   name: 'example3',

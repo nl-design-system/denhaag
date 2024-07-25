@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import '@gemeente-denhaag/eventdate';
 
 import pkg from '../../../../components/EventDate/package.json';
-import readme from '../../../../components/EventDate/README.md';
+import readme from '../../../../components/EventDate/README.md?raw';
 
 const meta = {
   title: 'CSS/Data Display/Event date',

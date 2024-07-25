@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { Textarea } from '@gemeente-denhaag/textarea';
-import readme from '../../../../components/Textarea/README.md';
+import readme from '../../../../components/Textarea/README.md?raw';
 
 const meta = {
   title: 'React/Input/Textarea',

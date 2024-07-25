@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import readme from '../../../../components/ButtonLink/README.md';
+import readme from '../../../../components/ButtonLink/README.md?raw';
 import { ButtonLink } from '@gemeente-denhaag/button-link';
 
 const exampleArgs = {

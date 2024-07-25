@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import readme from '../../../../components/RadioButton/README.md';
+import readme from '../../../../components/RadioButton/README.md?raw';
 import { RadioButton } from '@gemeente-denhaag/radio-button';
 
 const meta = {

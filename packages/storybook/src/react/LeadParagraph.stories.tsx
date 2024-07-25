@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { LeadParagraph } from '@gemeente-denhaag/typography';
-import readme from '../../../../components/Typography/README.md';
+import readme from '../../../../components/Typography/README.md?raw';
 
 const exampleArgs = {
   children:

@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import '@gemeente-denhaag/ctalink';
 
 import pkg from '../../../../components/CtaLink/package.json';
-import readme from '../../../../components/CtaLink/README.md';
+import readme from '../../../../components/CtaLink/README.md?raw';
 
 const meta = {
   title: 'CSS/Actions/CTA Link',

@@ -5,7 +5,7 @@ import '@gemeente-denhaag/link';
 import '@gemeente-denhaag/note';
 
 import pkg from '../../../../components/Note/package.json';
-import readme from '../../../../components/Note/README.md';
+import readme from '../../../../components/Note/README.md?raw';
 
 const meta = {
   title: 'CSS/Surfaces/Note',

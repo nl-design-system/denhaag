@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import '@gemeente-denhaag/floating-contact';
 
 import pkg from '../../../../components/FloatingContact/package.json';
-import readme from '../../../../components/FloatingContact/README.md';
+import readme from '../../../../components/FloatingContact/README.md?raw';
 import '../../../../components/FloatingContact/src/stories.js';
 import './_storybook.scss';
 

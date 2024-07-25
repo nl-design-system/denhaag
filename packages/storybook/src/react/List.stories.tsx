@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { HouseIcon, TrashIcon } from '@gemeente-denhaag/icons';
 import { List, ListItem, ListSubheader } from '@gemeente-denhaag/list';
-import readme from '../../../../components/List/README.md';
+import readme from '../../../../components/List/README.md?raw';
 
 const exampleArgs = {
   children: (

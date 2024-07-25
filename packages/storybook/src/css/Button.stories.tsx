@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import { Button } from '@gemeente-denhaag/button';
 import { ArrowLeftIcon, ArrowRightIcon } from '@gemeente-denhaag/icons';
 
-import readme from '../../../../components/Button/README.md';
+import readme from '../../../../components/Button/README.md?raw';
 
 const exampleArgs = {
   children: 'Button',

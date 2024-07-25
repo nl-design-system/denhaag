@@ -5,7 +5,7 @@ import '@gemeente-denhaag/hero';
 import '@gemeente-denhaag/icons';
 
 import pkg from '../../../../components/Hero/package.json';
-import readme from '../../../../components/Hero/README.md';
+import readme from '../../../../components/Hero/README.md?raw';
 
 import './_storybook.scss';
 
