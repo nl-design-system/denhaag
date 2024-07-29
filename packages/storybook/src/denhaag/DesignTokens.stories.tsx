@@ -7,6 +7,7 @@ const meta = {
   title: 'Den Haag/Design Tokens',
   tags: ['autodocs', '!dev'],
   parameters: {
+    chromatic: { disableSnapshot: true },
     docs: {
       page: () => <ReactMarkdown>{readme}</ReactMarkdown>,
     },

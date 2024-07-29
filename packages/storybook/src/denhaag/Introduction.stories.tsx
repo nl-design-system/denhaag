@@ -5,6 +5,7 @@ const meta = {
   title: 'Den Haag/Introduction',
   tags: ['autodocs', '!dev'],
   parameters: {
+    chromatic: { disableSnapshot: true },
     docs: {
       page: mdx,
     },

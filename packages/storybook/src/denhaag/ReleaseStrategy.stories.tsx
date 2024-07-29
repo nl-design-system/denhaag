@@ -5,6 +5,7 @@ const meta = {
   title: 'Den Haag/Release strategy',
   tags: ['autodocs', '!dev'],
   parameters: {
+    chromatic: { disableSnapshot: true },
     docs: {
       page: mdx,
     },
