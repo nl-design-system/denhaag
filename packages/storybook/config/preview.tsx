@@ -8,6 +8,7 @@ import React, { ReactElement } from 'react';
 import * as ReactDOMServer from 'react-dom/server';
 import { Controls, Description, Primary, Stories } from '@storybook/blocks';
 import { DesignTokensBlock } from './DesignTokensBlock';
+import { withThemeByClassName } from '@storybook/addon-themes';
 
 import '@utrecht/component-library-css/dist/index.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
@@ -35,11 +36,12 @@ const preview: Preview = {
         </div>
       );
     },
-    // (Story) => (
-    //   <ThemeDecorator config={parameters.themes}>
-    //     <StylesProvider>{<Story />}</StylesProvider>
-    //   </ThemeDecorator>
-    // ),
+    withThemeByClassName({
+      themes: {
+        denhaag: 'denhaag-theme',
+      },
+      defaultTheme: 'denhaag',
+    }),
   ],
   parameters: {
     ...addonViewport,
