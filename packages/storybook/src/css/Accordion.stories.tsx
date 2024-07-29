@@ -560,7 +560,7 @@ export const Open: Story = {
           </p>
         </div>
       </div>
-      <div className="denhaag-accordion__container denhaag-accordion__container--open" open>
+      <div className="denhaag-accordion__container denhaag-accordion__container--open">
         <h3 className="denhaag-accordion__panel">
           <button
             aria-expanded="true"
@@ -683,7 +683,7 @@ export const OpenHover: Story = {
           </p>
         </div>
       </div>
-      <div className="denhaag-accordion__container denhaag-accordion__container--open" open>
+      <div className="denhaag-accordion__container denhaag-accordion__container--open">
         <h3 className="denhaag-accordion__panel denhaag-accordion__panel--hover">
           <button
             aria-expanded="true"
@@ -806,7 +806,7 @@ export const OpenFocus: Story = {
           </p>
         </div>
       </div>
-      <div className="denhaag-accordion__container denhaag-accordion__container--open" open>
+      <div className="denhaag-accordion__container denhaag-accordion__container--open">
         <h3 className="denhaag-accordion__panel">
           <button
             aria-expanded="true"
