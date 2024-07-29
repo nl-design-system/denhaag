@@ -11,6 +11,7 @@ import { DesignTokensBlock } from './DesignTokensBlock';
 
 import '@utrecht/component-library-css/dist/index.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
+import { addonViewport } from './addon-viewports';
 
 const formatCache = new Map<string, string>();
 
@@ -41,14 +42,8 @@ const preview: Preview = {
     // ),
   ],
   parameters: {
-    // Make the "Docs" tab the default, instead of the "Canvas" tab
-    viewMode: 'docs',
+    ...addonViewport,
     chromatic: { viewports: [1280] },
-    previewTabs: {
-      // Move the "Docs" tab to the front
-      'storybook/docs/panel': { index: -1, title: 'Documentation' },
-      canvas: { title: 'Demo' },
-    },
     options: {
       storySort: {
         order: [
