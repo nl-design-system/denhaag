@@ -109,6 +109,7 @@
     "@storybook/addon-docs": "8.2.6",
     "@storybook/addon-links": "8.2.6",
     "@storybook/addon-mdx-gfm": "8.2.6",
+    "@storybook/addon-themes": "8.2.6",
     "@storybook/addon-viewport": "8.2.6",
     "@storybook/blocks": "8.2.6",
     "@storybook/cli": "8.2.6",
@@ -139,8 +140,6 @@
     "sass-loader": "14.2.1",
     "storybook": "8.2.6",
     "storybook-addon-pseudo-states": "3.1.1",
-    "storybook-addon-react-docgen": "1.2.44",
-    "storybook-addon-themes": "6.1.0",
     "typescript": "5.5.4",
     "vite": "5.3.5"
   }
