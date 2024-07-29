@@ -5,6 +5,7 @@ const meta = {
   title: 'Den Haag/Icons',
   tags: ['autodocs', '!dev'],
   parameters: {
+    chromatic: { disableSnapshot: true },
     docs: {
       page: mdx,
     },

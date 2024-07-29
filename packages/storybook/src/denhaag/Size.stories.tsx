@@ -7,6 +7,7 @@ const meta = {
   title: 'Den Haag/Size',
   tags: ['autodocs', '!dev'],
   parameters: {
+    chromatic: { disableSnapshot: true },
     docs: {
       page: () => <ReactMarkdown>{readme}</ReactMarkdown>,
     },
