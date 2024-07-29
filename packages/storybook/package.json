@@ -99,7 +99,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.24.9",
-    "@babel/preset-env": "7.24.8",
+    "@babel/preset-env": "7.25.0",
     "@babel/preset-react": "7.24.7",
     "@babel/preset-typescript": "7.24.7",
     "@etchteam/storybook-addon-status": "5.0.0",
@@ -138,6 +138,7 @@
     "react-docgen-typescript": "2.2.2",
     "react-dom": "18.3.1",
     "react-formio": "4.3.0",
+    "react-markdown": "9.0.1",
     "react-syntax-highlighter": "15.5.0",
     "require-from-string": "2.0.2",
     "rimraf": "6.0.1",
@@ -149,7 +150,7 @@
     "storybook-addon-themes": "6.1.0",
     "style-loader": "4.0.0",
     "typescript": "5.5.4",
-    "vite": "5.3.4",
+    "vite": "5.3.5",
     "vite-plugin-markdown": "2.2.0"
   }
 }
