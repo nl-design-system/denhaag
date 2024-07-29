@@ -28,7 +28,7 @@ const config: StorybookConfig = {
   staticDirs: ['../src/assets'],
   docs: {},
   typescript: {
-    reactDocgen: getAbsolutePath('react-docgen-typescript'),
+    reactDocgen: 'react-docgen-typescript',
   },
   async viteFinal(config) {
     const { mergeConfig } = await import('vite');

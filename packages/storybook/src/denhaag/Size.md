@@ -1,7 +1,3 @@
-import { Meta } from "@storybook/blocks";
-
-<Meta title="Den Haag/Size" />
-
 # Size
 
 ## Design Kit
