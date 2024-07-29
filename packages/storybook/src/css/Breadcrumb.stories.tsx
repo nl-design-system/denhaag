@@ -27,15 +27,15 @@ export const Default: Story = {
   render: () => (
     <nav className="denhaag-breadcrumb" aria-label="Breadcrumb">
       <div className="denhaag-responsive-content">
-        <ol className="denhaag-breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <ol className="denhaag-breadcrumb__list" itemScope itemType="https://schema.org/BreadcrumbList">
           <li
             className="denhaag-breadcrumb__item"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            itemprop="itemListElement"
+            itemScope
+            itemType="https://schema.org/ListItem"
+            itemProp="itemListElement"
           >
-            <a className="denhaag-breadcrumb__link" href="https://example.com/" itemprop="item">
-              <span className="denhaag-breadcrumb__text" itemprop="name">
+            <a className="denhaag-breadcrumb__link" href="https://example.com/" itemProp="item">
+              <span className="denhaag-breadcrumb__text" itemProp="name">
                 Home
               </span>
               <svg
@@ -54,17 +54,17 @@ export const Default: Story = {
                   fill="currentColor"
                 ></path>
               </svg>
-              <meta itemprop="position" content="1" />
+              <meta itemProp="position" content="1" />
             </a>
           </li>
           <li
             className="denhaag-breadcrumb__item denhaag-breadcrumb__item--mobile-item"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            itemprop="itemListElement"
+            itemScope
+            itemType="https://schema.org/ListItem"
+            itemProp="itemListElement"
           >
-            <a className="denhaag-breadcrumb__link" href="https://example.com/a/" itemprop="item">
-              <span className="denhaag-breadcrumb__text" itemprop="name">
+            <a className="denhaag-breadcrumb__link" href="https://example.com/a/" itemProp="item">
+              <span className="denhaag-breadcrumb__text" itemProp="name">
                 Afval
               </span>
               <svg
@@ -83,20 +83,20 @@ export const Default: Story = {
                   fill="currentColor"
                 ></path>
               </svg>
-              <meta itemprop="position" content="2" />
+              <meta itemProp="position" content="2" />
             </a>
           </li>
           <li
             className="denhaag-breadcrumb__item"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            itemprop="itemListElement"
+            itemScope
+            itemType="https://schema.org/ListItem"
+            itemProp="itemListElement"
             aria-current="page"
           >
-            <span className="denhaag-breadcrumb__text" itemprop="name">
+            <span className="denhaag-breadcrumb__text" itemProp="name">
               Kliko&apos;s
             </span>
-            <meta itemprop="position" content="3" />
+            <meta itemProp="position" content="3" />
           </li>
         </ol>
       </div>
@@ -108,19 +108,19 @@ export const HoveredItem: Story = {
   render: () => (
     <nav className="denhaag-breadcrumb" aria-label="Breadcrumb">
       <div className="denhaag-responsive-content">
-        <ol className="denhaag-breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <ol className="denhaag-breadcrumb__list" itemScope itemType="https://schema.org/BreadcrumbList">
           <li
             className="denhaag-breadcrumb__item"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            itemprop="itemListElement"
+            itemScope
+            itemType="https://schema.org/ListItem"
+            itemProp="itemListElement"
           >
             <a
               className="denhaag-breadcrumb__link denhaag-breadcrumb__link--hover"
               href="https://example.com/"
-              itemprop="item"
+              itemProp="item"
             >
-              <span className="denhaag-breadcrumb__text" itemprop="name">
+              <span className="denhaag-breadcrumb__text" itemProp="name">
                 Home
               </span>
               <svg
@@ -139,17 +139,17 @@ export const HoveredItem: Story = {
                   fill="currentColor"
                 ></path>
               </svg>
-              <meta itemprop="position" content="1" />
+              <meta itemProp="position" content="1" />
             </a>
           </li>
           <li
             className="denhaag-breadcrumb__item denhaag-breadcrumb__item--mobile-item"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            itemprop="itemListElement"
+            itemScope
+            itemType="https://schema.org/ListItem"
+            itemProp="itemListElement"
           >
-            <a className="denhaag-breadcrumb__link" href="https://example.com/a/" itemprop="item">
-              <span className="denhaag-breadcrumb__text" itemprop="name">
+            <a className="denhaag-breadcrumb__link" href="https://example.com/a/" itemProp="item">
+              <span className="denhaag-breadcrumb__text" itemProp="name">
                 Afval
               </span>
               <svg
@@ -168,19 +168,19 @@ export const HoveredItem: Story = {
                   fill="currentColor"
                 ></path>
               </svg>
-              <meta itemprop="position" content="2" />
+              <meta itemProp="position" content="2" />
             </a>
           </li>
           <li
             className="denhaag-breadcrumb__item"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            itemprop="itemListElement"
+            itemScope
+            itemType="https://schema.org/ListItem"
+            itemProp="itemListElement"
           >
-            <span className="denhaag-breadcrumb__text" itemprop="name">
+            <span className="denhaag-breadcrumb__text" itemProp="name">
               Kliko&apos;s
             </span>
-            <meta itemprop="position" content="3" />
+            <meta itemProp="position" content="3" />
           </li>
         </ol>
       </div>
@@ -192,19 +192,19 @@ export const FocusedItem: Story = {
   render: () => (
     <nav className="denhaag-breadcrumb" aria-label="Breadcrumb">
       <div className="denhaag-responsive-content">
-        <ol className="denhaag-breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <ol className="denhaag-breadcrumb__list" itemScope itemType="https://schema.org/BreadcrumbList">
           <li
             className="denhaag-breadcrumb__item"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            itemprop="itemListElement"
+            itemScope
+            itemType="https://schema.org/ListItem"
+            itemProp="itemListElement"
           >
             <a
               className="denhaag-breadcrumb__link denhaag-breadcrumb__link--focus"
               href="https://example.com/"
-              itemprop="item"
+              itemProp="item"
             >
-              <span className="denhaag-breadcrumb__text" itemprop="name">
+              <span className="denhaag-breadcrumb__text" itemProp="name">
                 Home
               </span>
               <svg
@@ -223,17 +223,17 @@ export const FocusedItem: Story = {
                   fill="currentColor"
                 ></path>
               </svg>
-              <meta itemprop="position" content="1" />
+              <meta itemProp="position" content="1" />
             </a>
           </li>
           <li
             className="denhaag-breadcrumb__item denhaag-breadcrumb__item--mobile-item"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            itemprop="itemListElement"
+            itemScope
+            itemType="https://schema.org/ListItem"
+            itemProp="itemListElement"
           >
-            <a className="denhaag-breadcrumb__link" href="https://example.com/a/" itemprop="item">
-              <span className="denhaag-breadcrumb__text" itemprop="name">
+            <a className="denhaag-breadcrumb__link" href="https://example.com/a/" itemProp="item">
+              <span className="denhaag-breadcrumb__text" itemProp="name">
                 Afval
               </span>
               <svg
@@ -252,19 +252,19 @@ export const FocusedItem: Story = {
                   fill="currentColor"
                 ></path>
               </svg>
-              <meta itemprop="position" content="2" />
+              <meta itemProp="position" content="2" />
             </a>
           </li>
           <li
             className="denhaag-breadcrumb__item"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            itemprop="itemListElement"
+            itemScope
+            itemType="https://schema.org/ListItem"
+            itemProp="itemListElement"
           >
-            <span className="denhaag-breadcrumb__text" itemprop="name">
+            <span className="denhaag-breadcrumb__text" itemProp="name">
               Kliko&apos;s
             </span>
-            <meta itemprop="position" content="3" />
+            <meta itemProp="position" content="3" />
           </li>
         </ol>
       </div>
@@ -276,19 +276,19 @@ export const RTL: Story = {
   render: () => (
     <nav className="denhaag-breadcrumb" aria-label="Breadcrumb" dir="rtl">
       <div className="denhaag-responsive-content">
-        <ol className="denhaag-breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <ol className="denhaag-breadcrumb__list" itemScope itemType="https://schema.org/BreadcrumbList">
           <li
             className="denhaag-breadcrumb__item"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            itemprop="itemListElement"
+            itemScope
+            itemType="https://schema.org/ListItem"
+            itemProp="itemListElement"
           >
             <a
               className="denhaag-breadcrumb__link denhaag-breadcrumb__link--hover"
               href="https://example.com/"
-              itemprop="item"
+              itemProp="item"
             >
-              <span className="denhaag-breadcrumb__text" itemprop="name">
+              <span className="denhaag-breadcrumb__text" itemProp="name">
                 Home
               </span>
               <svg
@@ -307,17 +307,17 @@ export const RTL: Story = {
                   fill="currentColor"
                 ></path>
               </svg>
-              <meta itemprop="position" content="1" />
+              <meta itemProp="position" content="1" />
             </a>
           </li>
           <li
             className="denhaag-breadcrumb__item denhaag-breadcrumb__item--mobile-item"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            itemprop="itemListElement"
+            itemScope
+            itemType="https://schema.org/ListItem"
+            itemProp="itemListElement"
           >
-            <a className="denhaag-breadcrumb__link" href="https://example.com/a/" itemprop="item">
-              <span className="denhaag-breadcrumb__text" itemprop="name">
+            <a className="denhaag-breadcrumb__link" href="https://example.com/a/" itemProp="item">
+              <span className="denhaag-breadcrumb__text" itemProp="name">
                 Afval
               </span>
               <svg
@@ -336,19 +336,19 @@ export const RTL: Story = {
                   fill="currentColor"
                 ></path>
               </svg>
-              <meta itemprop="position" content="2" />
+              <meta itemProp="position" content="2" />
             </a>
           </li>
           <li
             className="denhaag-breadcrumb__item"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            itemprop="itemListElement"
+            itemScope
+            itemType="https://schema.org/ListItem"
+            itemProp="itemListElement"
           >
-            <span className="denhaag-breadcrumb__text" itemprop="name">
+            <span className="denhaag-breadcrumb__text" itemProp="name">
               Kliko&apos;s
             </span>
-            <meta itemprop="position" content="3" />
+            <meta itemProp="position" content="3" />
           </li>
         </ol>
       </div>
@@ -360,15 +360,15 @@ export const Long: Story = {
   render: () => (
     <nav className="denhaag-breadcrumb" aria-label="Breadcrumb">
       <div className="denhaag-responsive-content">
-        <ol className="denhaag-breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <ol className="denhaag-breadcrumb__list" itemScope itemType="https://schema.org/BreadcrumbList">
           <li
             className="denhaag-breadcrumb__item"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            itemprop="itemListElement"
+            itemScope
+            itemType="https://schema.org/ListItem"
+            itemProp="itemListElement"
           >
-            <a className="denhaag-breadcrumb__link" href="https://example.com/" itemprop="item">
-              <span className="denhaag-breadcrumb__text" itemprop="name">
+            <a className="denhaag-breadcrumb__link" href="https://example.com/" itemProp="item">
+              <span className="denhaag-breadcrumb__text" itemProp="name">
                 Home
               </span>
               <svg
@@ -387,17 +387,17 @@ export const Long: Story = {
                   fill="currentColor"
                 ></path>
               </svg>
-              <meta itemprop="position" content="1" />
+              <meta itemProp="position" content="1" />
             </a>
           </li>
           <li
             className="denhaag-breadcrumb__item denhaag-breadcrumb__item--hidden"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            itemprop="itemListElement"
+            itemScope
+            itemType="https://schema.org/ListItem"
+            itemProp="itemListElement"
           >
-            <a className="denhaag-breadcrumb__link" href="https://example.com/a/" itemprop="item">
-              <span className="denhaag-breadcrumb__text" itemprop="name">
+            <a className="denhaag-breadcrumb__link" href="https://example.com/a/" itemProp="item">
+              <span className="denhaag-breadcrumb__text" itemProp="name">
                 Wonen en leven
               </span>
               <svg
@@ -416,17 +416,17 @@ export const Long: Story = {
                   fill="currentColor"
                 ></path>
               </svg>
-              <meta itemprop="position" content="2" />
+              <meta itemProp="position" content="2" />
             </a>
           </li>
           <li
             className="denhaag-breadcrumb__item denhaag-breadcrumb__item--hidden"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            itemprop="itemListElement"
+            itemScope
+            itemType="https://schema.org/ListItem"
+            itemProp="itemListElement"
           >
-            <a className="denhaag-breadcrumb__link" href="https://example.com/a/" itemprop="item">
-              <span className="denhaag-breadcrumb__text" itemprop="name">
+            <a className="denhaag-breadcrumb__link" href="https://example.com/a/" itemProp="item">
+              <span className="denhaag-breadcrumb__text" itemProp="name">
                 Wonen en leven
               </span>
               <svg
@@ -445,17 +445,17 @@ export const Long: Story = {
                   fill="currentColor"
                 ></path>
               </svg>
-              <meta itemprop="position" content="2" />
+              <meta itemProp="position" content="2" />
             </a>
           </li>
           <li
             className="denhaag-breadcrumb__item"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            itemprop="itemListElement"
+            itemScope
+            itemType="https://schema.org/ListItem"
+            itemProp="itemListElement"
           >
-            <a className="denhaag-breadcrumb__link" href="https://example.com/a/" itemprop="item">
-              <span className="denhaag-breadcrumb__text" itemprop="name">
+            <a className="denhaag-breadcrumb__link" href="https://example.com/a/" itemProp="item">
+              <span className="denhaag-breadcrumb__text" itemProp="name">
                 Wonen en leven
               </span>
               <svg
@@ -474,17 +474,17 @@ export const Long: Story = {
                   fill="currentColor"
                 ></path>
               </svg>
-              <meta itemprop="position" content="2" />
+              <meta itemProp="position" content="2" />
             </a>
           </li>
           <li
             className="denhaag-breadcrumb__item denhaag-breadcrumb__item--mobile-item"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            itemprop="itemListElement"
+            itemScope
+            itemType="https://schema.org/ListItem"
+            itemProp="itemListElement"
           >
-            <a className="denhaag-breadcrumb__link" href="https://example.com/a/b/" itemprop="item">
-              <span className="denhaag-breadcrumb__text" itemprop="name">
+            <a className="denhaag-breadcrumb__link" href="https://example.com/a/b/" itemProp="item">
+              <span className="denhaag-breadcrumb__text" itemProp="name">
                 Afval
               </span>
               <svg
@@ -503,19 +503,19 @@ export const Long: Story = {
                   fill="currentColor"
                 ></path>
               </svg>
-              <meta itemprop="position" content="3" />
+              <meta itemProp="position" content="3" />
             </a>
           </li>
           <li
             className="denhaag-breadcrumb__item"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            itemprop="itemListElement"
+            itemScope
+            itemType="https://schema.org/ListItem"
+            itemProp="itemListElement"
           >
-            <span className="denhaag-breadcrumb__text" itemprop="name">
+            <span className="denhaag-breadcrumb__text" itemProp="name">
               Kliko&apos;s
             </span>
-            <meta itemprop="position" content="4" />
+            <meta itemProp="position" content="4" />
           </li>
         </ol>
       </div>
@@ -527,14 +527,14 @@ export const WithIcon: Story = {
   render: () => (
     <nav className="denhaag-breadcrumb" aria-label="Breadcrumb">
       <div className="denhaag-responsive-content">
-        <ol className="denhaag-breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <ol className="denhaag-breadcrumb__list" itemScope itemType="https://schema.org/BreadcrumbList">
           <li
             className="denhaag-breadcrumb__item"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            itemprop="itemListElement"
+            itemScope
+            itemType="https://schema.org/ListItem"
+            itemProp="itemListElement"
           >
-            <a className="denhaag-breadcrumb__link" href="https://example.com/" itemprop="item" aria-label="Homepage">
+            <a className="denhaag-breadcrumb__link" href="https://example.com/" itemProp="item" aria-label="Homepage">
               <svg
                 width="1em"
                 height="1em"
@@ -565,17 +565,17 @@ export const WithIcon: Story = {
                   fill="currentColor"
                 ></path>
               </svg>
-              <meta itemprop="position" content="1" />
+              <meta itemProp="position" content="1" />
             </a>
           </li>
           <li
             className="denhaag-breadcrumb__item"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            itemprop="itemListElement"
+            itemScope
+            itemType="https://schema.org/ListItem"
+            itemProp="itemListElement"
           >
-            <a className="denhaag-breadcrumb__link" href="https://example.com/a/" itemprop="item">
-              <span className="denhaag-breadcrumb__text" itemprop="name">
+            <a className="denhaag-breadcrumb__link" href="https://example.com/a/" itemProp="item">
+              <span className="denhaag-breadcrumb__text" itemProp="name">
                 Wonen en leven
               </span>
               <svg
@@ -594,17 +594,17 @@ export const WithIcon: Story = {
                   fill="currentColor"
                 ></path>
               </svg>
-              <meta itemprop="position" content="2" />
+              <meta itemProp="position" content="2" />
             </a>
           </li>
           <li
             className="denhaag-breadcrumb__item denhaag-breadcrumb__item--mobile-item"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            itemprop="itemListElement"
+            itemScope
+            itemType="https://schema.org/ListItem"
+            itemProp="itemListElement"
           >
-            <a className="denhaag-breadcrumb__link" href="https://example.com/a/b/" itemprop="item">
-              <span className="denhaag-breadcrumb__text" itemprop="name">
+            <a className="denhaag-breadcrumb__link" href="https://example.com/a/b/" itemProp="item">
+              <span className="denhaag-breadcrumb__text" itemProp="name">
                 Afval
               </span>
               <svg
@@ -623,19 +623,19 @@ export const WithIcon: Story = {
                   fill="currentColor"
                 ></path>
               </svg>
-              <meta itemprop="position" content="3" />
+              <meta itemProp="position" content="3" />
             </a>
           </li>
           <li
             className="denhaag-breadcrumb__item"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            itemprop="itemListElement"
+            itemScope
+            itemType="https://schema.org/ListItem"
+            itemProp="itemListElement"
           >
-            <span className="denhaag-breadcrumb__text" itemprop="name">
+            <span className="denhaag-breadcrumb__text" itemProp="name">
               Kliko&apos;s
             </span>
-            <meta itemprop="position" content="4" />
+            <meta itemProp="position" content="4" />
           </li>
         </ol>
       </div>
@@ -647,17 +647,17 @@ export const WithIconAndFocus: Story = {
   render: () => (
     <nav className="denhaag-breadcrumb" aria-label="Breadcrumb">
       <div className="denhaag-responsive-content">
-        <ol className="denhaag-breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <ol className="denhaag-breadcrumb__list" itemScope itemType="https://schema.org/BreadcrumbList">
           <li
             className="denhaag-breadcrumb__item"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            itemprop="itemListElement"
+            itemScope
+            itemType="https://schema.org/ListItem"
+            itemProp="itemListElement"
           >
             <a
               className="denhaag-breadcrumb__link denhaag-breadcrumb__link--focus"
               href="https://example.com/"
-              itemprop="item"
+              itemProp="item"
               aria-label="Homepage"
             >
               <svg
@@ -689,17 +689,17 @@ export const WithIconAndFocus: Story = {
                   fill="currentColor"
                 ></path>
               </svg>
-              <meta itemprop="position" content="1" />
+              <meta itemProp="position" content="1" />
             </a>
           </li>
           <li
             className="denhaag-breadcrumb__item"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            itemprop="itemListElement"
+            itemScope
+            itemType="https://schema.org/ListItem"
+            itemProp="itemListElement"
           >
-            <a className="denhaag-breadcrumb__link" href="https://example.com/a/" itemprop="item">
-              <span className="denhaag-breadcrumb__text" itemprop="name">
+            <a className="denhaag-breadcrumb__link" href="https://example.com/a/" itemProp="item">
+              <span className="denhaag-breadcrumb__text" itemProp="name">
                 Wonen en leven
               </span>
               <svg
@@ -718,17 +718,17 @@ export const WithIconAndFocus: Story = {
                   fill="currentColor"
                 ></path>
               </svg>
-              <meta itemprop="position" content="2" />
+              <meta itemProp="position" content="2" />
             </a>
           </li>
           <li
             className="denhaag-breadcrumb__item denhaag-breadcrumb__item--mobile-item"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            itemprop="itemListElement"
+            itemScope
+            itemType="https://schema.org/ListItem"
+            itemProp="itemListElement"
           >
-            <a className="denhaag-breadcrumb__link" href="https://example.com/a/b/" itemprop="item">
-              <span className="denhaag-breadcrumb__text" itemprop="name">
+            <a className="denhaag-breadcrumb__link" href="https://example.com/a/b/" itemProp="item">
+              <span className="denhaag-breadcrumb__text" itemProp="name">
                 Afval
               </span>
               <svg
@@ -747,19 +747,19 @@ export const WithIconAndFocus: Story = {
                   fill="currentColor"
                 ></path>
               </svg>
-              <meta itemprop="position" content="3" />
+              <meta itemProp="position" content="3" />
             </a>
           </li>
           <li
             className="denhaag-breadcrumb__item"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            itemprop="itemListElement"
+            itemScope
+            itemType="https://schema.org/ListItem"
+            itemProp="itemListElement"
           >
-            <span className="denhaag-breadcrumb__text" itemprop="name">
+            <span className="denhaag-breadcrumb__text" itemProp="name">
               Kliko&apos;s
             </span>
-            <meta itemprop="position" content="4" />
+            <meta itemProp="position" content="4" />
           </li>
         </ol>
       </div>
@@ -827,15 +827,15 @@ export const WithoutCurrent: Story = {
   render: () => (
     <nav className="denhaag-breadcrumb" aria-label="Breadcrumb">
       <div className="denhaag-responsive-content">
-        <ol className="denhaag-breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <ol className="denhaag-breadcrumb__list" itemScope itemType="https://schema.org/BreadcrumbList">
           <li
             className="denhaag-breadcrumb__item"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            itemprop="itemListElement"
+            itemScope
+            itemType="https://schema.org/ListItem"
+            itemProp="itemListElement"
           >
-            <a className="denhaag-breadcrumb__link" href="https://example.com/" itemprop="item">
-              <span className="denhaag-breadcrumb__text" itemprop="name">
+            <a className="denhaag-breadcrumb__link" href="https://example.com/" itemProp="item">
+              <span className="denhaag-breadcrumb__text" itemProp="name">
                 Home
               </span>
               <svg
@@ -854,20 +854,20 @@ export const WithoutCurrent: Story = {
                   fill="currentColor"
                 ></path>
               </svg>
-              <meta itemprop="position" content="1" />
+              <meta itemProp="position" content="1" />
             </a>
           </li>
           <li
             className="denhaag-breadcrumb__item denhaag-breadcrumb__item--mobile-item"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            itemprop="itemListElement"
+            itemScope
+            itemType="https://schema.org/ListItem"
+            itemProp="itemListElement"
           >
-            <a className="denhaag-breadcrumb__link" href="https://example.com/a/" itemprop="item">
-              <span className="denhaag-breadcrumb__text" itemprop="name">
+            <a className="denhaag-breadcrumb__link" href="https://example.com/a/" itemProp="item">
+              <span className="denhaag-breadcrumb__text" itemProp="name">
                 Afval
               </span>
-              <meta itemprop="position" content="2" />
+              <meta itemProp="position" content="2" />
             </a>
           </li>
         </ol>
