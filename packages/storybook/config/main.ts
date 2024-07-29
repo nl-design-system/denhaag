@@ -20,7 +20,6 @@ const config: StorybookConfig = {
     '@whitespace/storybook-addon-html',
     '@storybook/addon-links',
     'storybook-addon-pseudo-states',
-    '@storybook/addon-mdx-gfm',
   ],
   staticDirs: ['../src/assets'],
   docs: {},

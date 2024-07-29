@@ -108,7 +108,6 @@
     "@storybook/addon-actions": "8.2.6",
     "@storybook/addon-docs": "8.2.6",
     "@storybook/addon-links": "8.2.6",
-    "@storybook/addon-mdx-gfm": "8.2.6",
     "@storybook/addon-themes": "8.2.6",
     "@storybook/addon-viewport": "8.2.6",
     "@storybook/blocks": "8.2.6",
