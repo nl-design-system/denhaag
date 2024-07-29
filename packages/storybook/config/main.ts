@@ -1,7 +1,4 @@
 import type { StorybookConfig } from '@storybook/react-vite';
-import path from 'path';
-
-const getAbsolutePath = (packageName: string) => path.dirname(require.resolve(path.join(packageName, 'package.json')));
 
 const config: StorybookConfig = {
   core: {
@@ -9,21 +6,21 @@ const config: StorybookConfig = {
   },
   stories: ['../src/**/*.@(stories.@(js|jsx|ts|tsx))'],
   framework: {
-    name: getAbsolutePath('@storybook/react-vite'),
+    name: '@storybook/react-vite',
     options: {},
   },
   addons: [
-    getAbsolutePath('@storybook/addon-actions'),
-    getAbsolutePath('@storybook/addon-docs'),
-    getAbsolutePath('@storybook/addon-a11y'),
-    getAbsolutePath('@storybook/addon-viewport'),
-    getAbsolutePath('@storybook/preset-scss'),
-    getAbsolutePath('@etchteam/storybook-addon-status'),
-    getAbsolutePath('@whitespace/storybook-addon-html'),
-    getAbsolutePath('@storybook/addon-links'),
-    getAbsolutePath('storybook-addon-pseudo-states'),
-    getAbsolutePath('storybook-addon-themes'),
-    getAbsolutePath('@storybook/addon-mdx-gfm'),
+    '@storybook/addon-actions',
+    '@storybook/addon-docs',
+    '@storybook/addon-a11y',
+    '@storybook/addon-viewport',
+    '@storybook/preset-scss',
+    '@etchteam/storybook-addon-status',
+    '@whitespace/storybook-addon-html',
+    '@storybook/addon-links',
+    'storybook-addon-pseudo-states',
+    'storybook-addon-themes',
+    '@storybook/addon-mdx-gfm',
   ],
   staticDirs: ['../src/assets'],
   docs: {},
