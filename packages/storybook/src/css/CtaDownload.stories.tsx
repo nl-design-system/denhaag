@@ -5,7 +5,7 @@ import '@gemeente-denhaag/ctadownload';
 import pkg from '../../../../components/CtaDownload/package.json';
 import readme from '../../../../components/CtaDownload/README.md?raw';
 
-export const fileImage = (h: number, w: number) =>
+const fileImage = (h: number, w: number) =>
   `https://images.unsplash.com/photo-1569235186275-626cb53b83ce?fit=crop&w=${w}&h=${h}`;
 
 const meta = {
