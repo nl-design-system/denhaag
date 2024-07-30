@@ -14,13 +14,14 @@ import {
   copyright,
   dateFormatLabels,
 } from './util';
-import './Messages-page.scss';
+import './denhaag-messages-page.scss';
 import Sidenav from './components/Sidenav';
 import { Action } from '@gemeente-denhaag/action';
 import { ButtonLink } from '@gemeente-denhaag/button-link';
 
 const meta = {
   title: 'Templates/Berichten Detail',
+  args: { className: 'denhaag-messages-page' },
   parameters: {
     layout: 'fullscreen',
     chromatic: { viewports: [1768, 1280, 768, 360] },

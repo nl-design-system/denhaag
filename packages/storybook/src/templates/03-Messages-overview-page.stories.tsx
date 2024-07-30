@@ -18,13 +18,14 @@ import {
   dateFormatLabels,
 } from './util';
 
-import './Messages-page.scss';
+import './denhaag-messages-page.scss';
 import Sidenav from './components/Sidenav';
 import { Pagination } from '@gemeente-denhaag/pagination';
 import { StatusBadge } from '@gemeente-denhaag/status-badge';
 
 const meta = {
   title: 'Templates/Berichten Overzicht',
+  args: { className: 'denhaag-messages-page' },
   parameters: {
     layout: 'fullscreen',
     chromatic: { viewports: [1768, 1280, 768, 360] },
