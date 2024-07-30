@@ -9,6 +9,7 @@ import readme from '../../../../components/ButtonGroup/README.md?raw';
 
 const meta = {
   title: 'CSS/Input/Button Group',
+  tags: ['autodocs'],
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {

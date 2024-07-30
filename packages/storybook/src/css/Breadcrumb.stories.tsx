@@ -7,6 +7,7 @@ import readme from '../../../../components/Breadcrumb/README.md?raw';
 
 const meta = {
   title: 'CSS/Navigation/Breadcrumb',
+  tags: ['autodocs'],
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {

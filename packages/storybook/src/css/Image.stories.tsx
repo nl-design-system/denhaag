@@ -7,6 +7,7 @@ import readme from '../../../../components/Image/README.md?raw';
 
 const meta = {
   title: 'CSS/Data Display/Image',
+  tags: ['autodocs'],
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
