@@ -7,6 +7,7 @@ import readme from '../../../../components/Accordion/README.md?raw';
 
 const meta = {
   title: 'CSS/Surfaces/Accordion',
+  tags: ['autodocs'],
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {

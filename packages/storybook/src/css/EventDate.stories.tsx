@@ -7,6 +7,7 @@ import readme from '../../../../components/EventDate/README.md?raw';
 
 const meta = {
   title: 'CSS/Data Display/Event date',
+  tags: ['autodocs'],
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {

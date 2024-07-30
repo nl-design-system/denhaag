@@ -10,6 +10,7 @@ import readme from '../../../../components/HighlightedLinks/README.md?raw';
 
 const meta = {
   title: 'CSS/Navigation/Highlighted Links',
+  tags: ['autodocs'],
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {

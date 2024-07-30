@@ -7,6 +7,7 @@ import readme from '../../../../components/DynamicContent/README.md?raw';
 
 const meta = {
   title: 'CSS/Layout/Dynamic content',
+  tags: ['autodocs'],
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {

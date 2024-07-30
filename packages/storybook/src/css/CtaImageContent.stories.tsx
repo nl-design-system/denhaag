@@ -7,6 +7,7 @@ import readme from '../../../../components/CtaImageContent/README.md?raw';
 
 const meta = {
   title: 'CSS/Actions/Cta Image Content',
+  tags: ['autodocs'],
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
