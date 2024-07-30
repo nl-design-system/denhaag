@@ -7,6 +7,7 @@ import readme from '../../../../components/AnchorNavigation/README.md?raw';
 
 const meta = {
   title: 'CSS/Navigation/Anchor Navigation',
+  tags: ['autodocs'],
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {

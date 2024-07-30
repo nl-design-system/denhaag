@@ -9,6 +9,7 @@ import readme from '../../../../components/LinkGroup/README.md?raw';
 
 const meta = {
   title: 'CSS/Navigation/Link Group',
+  tags: ['autodocs'],
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {

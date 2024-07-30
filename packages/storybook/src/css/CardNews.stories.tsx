@@ -8,6 +8,7 @@ import './_storybook.scss';
 
 const meta = {
   title: 'CSS/Cards/News Card',
+  tags: ['autodocs'],
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {

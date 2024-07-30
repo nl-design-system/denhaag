@@ -9,6 +9,7 @@ import '../../../../components/AnchorCollapse/src/stories.js';
 
 const meta = {
   title: 'CSS/Navigation/Anchor Collapse',
+  tags: ['autodocs'],
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {

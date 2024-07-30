@@ -14,6 +14,7 @@ export const heroImage = (h: number, w: number, id = 'photo-1513384312027-9fa69a
 
 const meta = {
   title: 'CSS/Page Elements/Hero',
+  tags: ['autodocs'],
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {

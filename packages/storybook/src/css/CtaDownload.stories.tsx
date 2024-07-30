@@ -12,6 +12,7 @@ const meta = {
   title: 'CSS/Actions/CTA Download',
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    tags: ['autodocs'],
     docs: {
       description: {
         component: readme,

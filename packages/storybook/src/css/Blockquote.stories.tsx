@@ -7,6 +7,7 @@ import readme from '../../../../components/Blockquote/README.md?raw';
 
 const meta = {
   title: 'CSS/Data Display/Blockquote',
+  tags: ['autodocs'],
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {

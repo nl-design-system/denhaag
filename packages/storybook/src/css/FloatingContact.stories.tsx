@@ -11,6 +11,7 @@ import { useEffect, useMemo } from '@storybook/preview-api';
 
 const meta = {
   title: 'CSS/Page Elements/Floating Contact',
+  tags: ['autodocs'],
   parameters: {
     componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
