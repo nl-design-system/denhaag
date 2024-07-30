@@ -2,7 +2,7 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 
 import { Menu, MenuButton, MenuButtonExpandable } from '@gemeente-denhaag/menu';
-import readme from '../../../../components/Menu/README.md';
+import readme from '../../../../components/Menu/README.md?raw';
 
 const exampleArgs = {
   children: (

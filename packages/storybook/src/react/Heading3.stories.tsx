@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { Heading3 } from '@gemeente-denhaag/typography';
 
-import readme from '../../../../components/Typography/README.md';
+import readme from '../../../../components/Typography/README.md?raw';
 
 const exampleArgs = {
   children: 'This is a bit of text inside a Header3 component.',

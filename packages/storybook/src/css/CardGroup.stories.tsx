@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 import '@gemeente-denhaag/card-group';
-import readme from '../../../../components/CardGroup/README.md';
+import readme from '../../../../components/CardGroup/README.md?raw';
 import { AuthenticationCardGroup } from './CardGroupUtils';
 
 // TODO: create real generic AuthenticationCard and AuthenticationCardGroup components, and move them to the right packages.

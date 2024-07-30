@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from '@gemeente-denhaag/table';
-import readme from '../../../../components/Table/README.md';
+import readme from '../../../../components/Table/README.md?raw';
 
 const exampleArgs = {
   children: (

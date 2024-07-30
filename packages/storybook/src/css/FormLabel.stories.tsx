@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { FormLabel } from '@gemeente-denhaag/form-label';
-import readme from '../../../../components/FormLabel/README.md';
+import readme from '../../../../components/FormLabel/README.md?raw';
 
 const meta = {
   id: 'css-input-form-label',

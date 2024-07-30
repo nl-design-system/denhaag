@@ -2,7 +2,7 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import { Button } from '@gemeente-denhaag/button';
 import { DotIndicator } from '@gemeente-denhaag/dotindicator';
-import readme from '../../../../components/DotIndicator/README.md';
+import readme from '../../../../components/DotIndicator/README.md?raw';
 
 const exampleArgs = {
   overlap: 'rectangle',

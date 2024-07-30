@@ -1,15 +1,12 @@
-import type { StorybookConfig } from '@storybook/react-webpack5';
+import type { StorybookConfig } from '@storybook/react-vite';
 
 const config: StorybookConfig = {
   core: {
     disableTelemetry: true,
   },
-  stories: ['../src/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
-  features: {
-    buildStoriesJson: true,
-  },
+  stories: ['../src/**/*.@(stories.@(js|jsx|ts|tsx))'],
   framework: {
-    name: '@storybook/react-webpack5',
+    name: '@storybook/react-vite',
     options: {},
   },
   addons: [
@@ -17,29 +14,23 @@ const config: StorybookConfig = {
     '@storybook/addon-docs',
     '@storybook/addon-a11y',
     '@storybook/addon-viewport',
+    '@storybook/addon-themes',
     '@storybook/preset-scss',
-    '@etchteam/storybook-addon-status/register',
+    '@etchteam/storybook-addon-status',
     '@whitespace/storybook-addon-html',
     '@storybook/addon-links',
     'storybook-addon-pseudo-states',
-    'storybook-addon-themes',
   ],
   staticDirs: ['../src/assets'],
-  docs: {
-    autodocs: 'tag',
+  docs: {},
+  typescript: {
+    reactDocgen: 'react-docgen-typescript',
   },
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  webpackFinal: async (config: any) => {
-    const rules = config.module.rules;
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const fileLoaderRule = rules.find((rule: any) => rule.test && rule.test.test('.svg'));
-    fileLoaderRule.exclude = /\.svg$/;
-
-    rules.push({
-      test: /\.svg$/,
-      use: ['@svgr/webpack'],
+  async viteFinal(config) {
+    const { mergeConfig } = await import('vite');
+    return mergeConfig(config, {
+      define: { 'process.env': {} },
     });
-    return config;
   },
 };
 

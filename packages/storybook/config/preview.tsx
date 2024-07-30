@@ -2,14 +2,19 @@ import type { Preview } from '@storybook/react';
 import type { StoryContext } from '@storybook/types';
 import clsx from 'clsx';
 import * as prettierPluginBabel from 'prettier/plugins/babel';
+import * as prettierPluginEstree from 'prettier/plugins/estree';
 import prettier from 'prettier/standalone';
 import React, { ReactElement } from 'react';
 import * as ReactDOMServer from 'react-dom/server';
 import { Controls, Description, Primary, Stories } from '@storybook/blocks';
 import { DesignTokensBlock } from './DesignTokensBlock';
+import { withThemeByClassName } from '@storybook/addon-themes';
 
 import '@utrecht/component-library-css/dist/index.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
+import { addonViewport } from './addon-viewports';
+
+const formatCache = new Map<string, string>();
 
 const preview: Preview = {
   decorators: [
@@ -31,21 +36,16 @@ const preview: Preview = {
         </div>
       );
     },
-    // (Story) => (
-    //   <ThemeDecorator config={parameters.themes}>
-    //     <StylesProvider>{<Story />}</StylesProvider>
-    //   </ThemeDecorator>
-    // ),
+    withThemeByClassName({
+      themes: {
+        denhaag: 'denhaag-theme',
+      },
+      defaultTheme: 'denhaag',
+    }),
   ],
   parameters: {
-    // Make the "Docs" tab the default, instead of the "Canvas" tab
-    viewMode: 'docs',
+    ...addonViewport,
     chromatic: { viewports: [1280] },
-    previewTabs: {
-      // Move the "Docs" tab to the front
-      'storybook/docs/panel': { index: -1, title: 'Documentation' },
-      canvas: { title: 'Demo' },
-    },
     options: {
       storySort: {
         order: [
@@ -99,10 +99,31 @@ const preview: Preview = {
                 : null;
 
           if (render && storyContext.title.startsWith('CSS')) {
-            return prettier.format(ReactDOMServer.renderToStaticMarkup(render(storyContext.args)), {
-              parser: 'babel',
-              plugins: [prettierPluginBabel],
-            });
+            const staticMarkup = ReactDOMServer.renderToStaticMarkup(render(storyContext.args));
+
+            // Hacky workaround for the new asynchronous formatting from Prettier, and the lack of support of a async transform function
+            // Start async formatting, when ready: add result to the formatCache map
+            prettier
+              .format(staticMarkup, {
+                parser: 'babel',
+                plugins: [prettierPluginBabel, prettierPluginEstree],
+              })
+              .then((result) => {
+                formatCache.set(storyContext.id, result);
+              })
+              .catch((error) => {
+                console.error('Error formatting code:', error);
+              });
+
+            // Check cache for existing entry
+            const currentCacheEntry = formatCache.get(storyContext.id);
+            if (currentCacheEntry) {
+              // Return formatted snippet from cache
+              return currentCacheEntry;
+            }
+
+            // Return the unformatted code while waiting for async formatting
+            return staticMarkup;
           }
           return src;
         },

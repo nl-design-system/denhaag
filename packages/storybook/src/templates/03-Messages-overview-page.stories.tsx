@@ -25,6 +25,7 @@ import { StatusBadge } from '@gemeente-denhaag/status-badge';
 
 const meta = {
   title: 'Templates/Berichten Overzicht',
+  args: { className: 'denhaag-messages-page' },
   parameters: {
     layout: 'fullscreen',
     chromatic: { viewports: [1768, 1280, 768, 360] },

@@ -21,6 +21,7 @@ import { ButtonLink } from '@gemeente-denhaag/button-link';
 
 const meta = {
   title: 'Templates/Berichten Detail',
+  args: { className: 'denhaag-messages-page' },
   parameters: {
     layout: 'fullscreen',
     chromatic: { viewports: [1768, 1280, 768, 360] },
