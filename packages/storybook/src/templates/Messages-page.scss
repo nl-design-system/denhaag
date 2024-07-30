@@ -1,45 +1,47 @@
-.denhaag-page-content {
-  &__header {
-    h2 {
-      margin: 0;
+.denhaag-messages-page {
+  .denhaag-page-content {
+    &__header {
+      h2 {
+        margin: 0;
+      }
+
+      p {
+        font-size: 14px;
+      }
     }
 
-    p {
-      font-size: 14px;
+    .utrecht-heading-2:first-child {
+      --utrecht-heading-2-margin-block-end: 24px;
     }
-  }
 
-  .utrecht-heading-2:first-child {
-    --utrecht-heading-2-margin-block-end: 24px;
-  }
-
-  &__task {
-    margin-block-start: 32px;
-  }
-
-  &__table {
-    display: none;
-
-    @media (width >= 768px) {
-      display: table;
+    &__task {
+      margin-block-start: 32px;
     }
-  }
 
-  &__table-header--right {
-    text-align: end;
-  }
+    &__table {
+      display: none;
 
-  &__badge {
-    margin-right: 8px;
-  }
+      @media (width >= 768px) {
+        display: table;
+      }
+    }
 
-  &__pagination {
-    --denhaag-pagination-align: center !important;
+    &__table-header--right {
+      text-align: end;
+    }
 
-    margin-top: 32px;
-  }
+    &__badge {
+      margin-right: 8px;
+    }
 
-  &__message {
-    margin-top: 32px;
+    &__pagination {
+      --denhaag-pagination-align: center !important;
+
+      margin-top: 32px;
+    }
+
+    &__message {
+      margin-top: 32px;
+    }
   }
 }
