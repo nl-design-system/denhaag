@@ -18,7 +18,7 @@ import {
   dateFormatLabels,
 } from './util';
 
-import './denhaag-messages-page.scss';
+import './Messages-page.scss';
 import Sidenav from './components/Sidenav';
 import { Pagination } from '@gemeente-denhaag/pagination';
 import { StatusBadge } from '@gemeente-denhaag/status-badge';

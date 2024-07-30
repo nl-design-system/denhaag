@@ -14,7 +14,7 @@ import {
   copyright,
   dateFormatLabels,
 } from './util';
-import './denhaag-messages-page.scss';
+import './Messages-page.scss';
 import Sidenav from './components/Sidenav';
 import { Action } from '@gemeente-denhaag/action';
 import { ButtonLink } from '@gemeente-denhaag/button-link';
