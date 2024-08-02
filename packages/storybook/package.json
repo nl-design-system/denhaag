@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/storybook",
-  "version": "0.1.0-alpha.47",
+  "version": "0.1.0-alpha.48",
   "description": "Storybook for the Municipality of the Hague",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -96,11 +96,11 @@
     "@nl-design-system-unstable/theme-toolkit": "1.0.0-alpha.27"
   },
   "devDependencies": {
-    "@etchteam/storybook-addon-status": "4.2.4",
     "@babel/core": "7.24.9",
     "@babel/preset-env": "7.24.8",
     "@babel/preset-react": "7.24.7",
     "@babel/preset-typescript": "7.24.7",
+    "@etchteam/storybook-addon-status": "4.2.4",
     "@mdx-js/react": "3.0.1",
     "@open-formulieren/sdk": "2.3.1",
     "@storybook/addon-a11y": "7.6.19",
