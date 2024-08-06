@@ -100,5 +100,3 @@ Lists should:
 - Not use the supporting visual to show the state or meta information
 
 ## References
-
-[https://material.io/components/lists](https://material.io/components/lists)

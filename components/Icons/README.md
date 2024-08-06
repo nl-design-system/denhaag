@@ -43,8 +43,6 @@ For example, [`svgr`](https://github.com/gregberge/svgr) is a loader for webpack
 
 ### Further reading material
 
-- https://material-ui.com/api/svg-icon/
-- https://material-ui.com/components/icons/
 - https://github.com/gregberge/svgr
 - https://github.com/svg/svgo
 

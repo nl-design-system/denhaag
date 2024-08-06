@@ -14,7 +14,7 @@ export interface DividerProps extends React.HTMLAttributes<HTMLHRElement> {
  * @param props The properties of a Divider component.
  * @constructor Constructs an instance of Divider.
  */
-export const Divider: React.FC<DividerProps> = ({ orientation, className, ...props }: DividerProps) => {
+export const Divider = ({ orientation, className, ...props }: DividerProps) => {
   return (
     <hr
       className={clsx('denhaag-divider', { 'denhaag-divider--vertical': orientation === 'vertical' }, className)}
