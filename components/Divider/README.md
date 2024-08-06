@@ -66,6 +66,3 @@ And should:
 - Not be overused because it creates visual noise and ultimately diminishes the meaning of the dividers
 
 ## References
-
-[https://material-ui.com/components/dividers/](https://material-ui.com/components/dividers/)
-[https://material.io/archive/guidelines/components/dividers.html](https://material.io/archive/guidelines/components/dividers.html)

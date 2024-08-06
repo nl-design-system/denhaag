@@ -44,5 +44,3 @@ Tekst
 ## Accessibility
 
 ## References
-
-https://material.io/components/sheets-side#usage
