@@ -3,7 +3,6 @@ import json from 'eslint-plugin-json';
 import mdxPlugin from 'eslint-plugin-mdx';
 import importPlugin from 'eslint-plugin-import';
 import reactPlugin from 'eslint-plugin-react';
-//import hooksPlugin from 'eslint-plugin-react-hooks';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 import typescriptParser from '@typescript-eslint/parser';
 import typescriptPlugin from '@typescript-eslint/eslint-plugin';
@@ -44,7 +43,6 @@ export default [
       mdx: mdxPlugin,
       import: importPlugin,
       react: reactPlugin,
-      //'react-hooks': hooksPlugin,
       'jsx-a11y': jsxA11yPlugin,
     },
     settings: {
@@ -55,7 +53,6 @@ export default [
     rules: {
       ...jsxA11yPlugin.configs.recommended.rules,
       ...reactPlugin.configs.recommended.rules,
-      //...hooksPlugin.configs.recommended.rules,
       ...prettierConfig.rules,
       ...jsRules,
       ...reactRules,
@@ -67,7 +64,6 @@ export default [
     plugins: {
       import: importPlugin,
       react: reactPlugin,
-      //'react-hooks': hooksPlugin,
       'jsx-a11y': jsxA11yPlugin,
     },
     settings: {
@@ -78,7 +74,6 @@ export default [
     rules: {
       ...jsxA11yPlugin.configs.recommended.rules,
       ...reactPlugin.configs.recommended.rules,
-      //...hooksPlugin.configs.recommended.rules,
       ...prettierConfig.rules,
       ...jsRules,
       ...reactRules,
@@ -90,7 +85,6 @@ export default [
       '@typescript-eslint': typescriptPlugin,
       import: importPlugin,
       react: reactPlugin,
-      //'react-hooks': hooksPlugin,
       'jsx-a11y': jsxA11yPlugin,
     },
     languageOptions: {
@@ -104,7 +98,6 @@ export default [
     rules: {
       ...jsxA11yPlugin.configs.recommended.rules,
       ...reactPlugin.configs.recommended.rules,
-      //...hooksPlugin.configs.recommended.rules,
       ...prettierConfig.rules,
       ...typescriptPlugin.configs.recommended.rules,
       ...jsRules,

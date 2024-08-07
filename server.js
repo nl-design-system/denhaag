@@ -3,6 +3,8 @@ const helmet = require('helmet');
 const path = require('path');
 const { v4: uuidv4 } = require('uuid');
 
+// Small Express server to test the CSP NONCE function
+
 const app = express();
 
 app.engine('html', require('ejs').renderFile);
