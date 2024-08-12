@@ -5,14 +5,12 @@ import '@gemeente-denhaag/icons';
 import '@gemeente-denhaag/link';
 import '@gemeente-denhaag/link-group';
 
-import pkg from '../../../../components/HighlightedLinks/package.json';
 import readme from '../../../../components/HighlightedLinks/README.md?raw';
 
 const meta = {
   title: 'CSS/Navigation/Highlighted Links',
   tags: ['autodocs'],
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       description: {
         component: readme,

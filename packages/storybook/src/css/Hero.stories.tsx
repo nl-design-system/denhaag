@@ -4,7 +4,6 @@ import '@gemeente-denhaag/button';
 import '@gemeente-denhaag/hero';
 import '@gemeente-denhaag/icons';
 
-import pkg from '../../../../components/Hero/package.json';
 import readme from '../../../../components/Hero/README.md?raw';
 
 import './_storybook.scss';
@@ -16,7 +15,6 @@ const meta = {
   title: 'CSS/Page Elements/Hero',
   tags: ['autodocs'],
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       description: {
         component: readme,

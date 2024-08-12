@@ -2,14 +2,12 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import '@gemeente-denhaag/accordion';
 
-import pkg from '../../../../components/Accordion/package.json';
 import readme from '../../../../components/Accordion/README.md?raw';
 
 const meta = {
   title: 'CSS/Surfaces/Accordion',
   tags: ['autodocs'],
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       description: {
         component: readme,

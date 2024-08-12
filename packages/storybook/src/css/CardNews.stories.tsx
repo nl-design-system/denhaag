@@ -2,7 +2,6 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import '@gemeente-denhaag/card-news';
 
-import pkg from '../../../../components/CardNews/package.json';
 import readme from '../../../../components/CardNews/README.md?raw';
 import './_storybook.scss';
 
@@ -10,7 +9,6 @@ const meta = {
   title: 'CSS/Cards/News Card',
   tags: ['autodocs'],
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       description: {
         component: readme,

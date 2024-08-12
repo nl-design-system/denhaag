@@ -2,14 +2,12 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import '@gemeente-denhaag/dynamic-content';
 
-import pkg from '../../../../components/DynamicContent/package.json';
 import readme from '../../../../components/DynamicContent/README.md?raw';
 
 const meta = {
   title: 'CSS/Layout/Dynamic content',
   tags: ['autodocs'],
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       description: {
         component: readme,

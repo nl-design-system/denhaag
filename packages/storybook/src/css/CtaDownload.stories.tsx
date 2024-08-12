@@ -2,7 +2,6 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import '@gemeente-denhaag/ctadownload';
 
-import pkg from '../../../../components/CtaDownload/package.json';
 import readme from '../../../../components/CtaDownload/README.md?raw';
 
 const fileImage = (h: number, w: number) =>
@@ -11,7 +10,6 @@ const fileImage = (h: number, w: number) =>
 const meta = {
   title: 'CSS/Actions/CTA Download',
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
     tags: ['autodocs'],
     docs: {
       description: {

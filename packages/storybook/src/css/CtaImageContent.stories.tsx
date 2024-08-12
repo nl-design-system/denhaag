@@ -2,14 +2,12 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import '@gemeente-denhaag/cta-image-content';
 
-import pkg from '../../../../components/CtaImageContent/package.json';
 import readme from '../../../../components/CtaImageContent/README.md?raw';
 
 const meta = {
   title: 'CSS/Actions/Cta Image Content',
   tags: ['autodocs'],
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       description: {
         component: readme,
