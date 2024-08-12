@@ -4,13 +4,11 @@ import '@gemeente-denhaag/button';
 import '@gemeente-denhaag/pagebuttons';
 
 import '../../../../components/PageButtons/src/stories.js';
-import pkg from '../../../../components/PageButtons/package.json';
 import readme from '../../../../components/PageButtons/README.md?raw';
 
 const meta = {
   title: 'CSS/Input/PageButtons',
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       description: {
         component: readme,

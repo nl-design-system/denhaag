@@ -4,14 +4,12 @@ import '@gemeente-denhaag/icons';
 import '@gemeente-denhaag/link';
 import '@gemeente-denhaag/note';
 
-import pkg from '../../../../components/Note/package.json';
 import readme from '../../../../components/Note/README.md?raw';
 
 const meta = {
   title: 'CSS/Surfaces/Note',
   tags: ['autodocs'],
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       description: {
         component: readme,

@@ -2,14 +2,12 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import '@gemeente-denhaag/eventdate';
 
-import pkg from '../../../../components/EventDate/package.json';
 import readme from '../../../../components/EventDate/README.md?raw';
 
 const meta = {
   title: 'CSS/Data Display/Event date',
   tags: ['autodocs'],
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       description: {
         component: readme,

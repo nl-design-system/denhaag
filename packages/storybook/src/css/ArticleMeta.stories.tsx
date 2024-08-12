@@ -2,14 +2,12 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import '@gemeente-denhaag/article-meta';
 
-import pkg from '../../../../components/ArticleMeta/package.json';
 import readme from '../../../../components/ArticleMeta/README.md?raw';
 
 const meta = {
   title: 'CSS/Data Display/Article meta',
   tags: ['autodocs'],
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       description: {
         component: readme,

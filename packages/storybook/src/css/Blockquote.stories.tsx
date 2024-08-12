@@ -2,14 +2,12 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import '@gemeente-denhaag/blockquote';
 
-import pkg from '../../../../components/Blockquote/package.json';
 import readme from '../../../../components/Blockquote/README.md?raw';
 
 const meta = {
   title: 'CSS/Data Display/Blockquote',
   tags: ['autodocs'],
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       description: {
         component: readme,

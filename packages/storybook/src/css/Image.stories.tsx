@@ -2,14 +2,12 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import '@gemeente-denhaag/image';
 
-import pkg from '../../../../components/Image/package.json';
 import readme from '../../../../components/Image/README.md?raw';
 
 const meta = {
   title: 'CSS/Data Display/Image',
   tags: ['autodocs'],
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       description: {
         component: readme,

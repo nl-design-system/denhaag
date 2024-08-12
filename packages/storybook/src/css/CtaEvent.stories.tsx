@@ -3,14 +3,12 @@ import { Meta, StoryObj } from '@storybook/react';
 import '@gemeente-denhaag/cta-event';
 
 import '../../../../components/CtaEvent/src/index';
-import pkg from '../../../../components/CtaEvent/package.json';
 import readme from '../../../../components/CtaEvent/README.md?raw';
 
 const meta = {
   title: 'CSS/Actions/CTA Event',
   tags: ['autodocs'],
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       description: {
         component: readme,

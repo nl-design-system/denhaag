@@ -2,7 +2,6 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import '@gemeente-denhaag/floating-contact';
 
-import pkg from '../../../../components/FloatingContact/package.json';
 import readme from '../../../../components/FloatingContact/README.md?raw';
 import '../../../../components/FloatingContact/src/stories.js';
 import './_storybook.scss';
@@ -13,7 +12,6 @@ const meta = {
   title: 'CSS/Page Elements/Floating Contact',
   tags: ['autodocs'],
   parameters: {
-    componentSubtitle: `${pkg.name} - ${pkg.version}`,
     docs: {
       description: {
         component: readme,
