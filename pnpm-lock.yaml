@@ -747,6 +747,18 @@ importers:
 
   components/ResponsiveContent: {}
 
+  components/Select:
+    dependencies:
+      '@utrecht/component-library-react':
+        specifier: 4.2.0
+        version: 4.2.0(@babel/runtime@7.24.7)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/components':
+        specifier: 6.1.0
+        version: 6.1.0
+      react:
+        specifier: ^18.0.0
+        version: 18.3.1
+
   components/Sheet:
     dependencies:
       react:
@@ -1037,6 +1049,9 @@ importers:
       '@gemeente-denhaag/responsive-content':
         specifier: workspace:*
         version: link:../../components/ResponsiveContent
+      '@gemeente-denhaag/select':
+        specifier: workspace:*
+        version: link:../../components/Select
       '@gemeente-denhaag/sidenav':
         specifier: workspace:*
         version: link:../../components/Sidenav
@@ -1157,6 +1172,9 @@ importers:
       '@gemeente-denhaag/responsive-content':
         specifier: workspace:*
         version: link:../../components/ResponsiveContent
+      '@gemeente-denhaag/select':
+        specifier: workspace:*
+        version: link:../../components/Select
       '@gemeente-denhaag/sheet':
         specifier: workspace:*
         version: link:../../components/Sheet
@@ -1382,6 +1400,9 @@ importers:
       '@gemeente-denhaag/responsive-content':
         specifier: workspace:*
         version: link:../../components/ResponsiveContent
+      '@gemeente-denhaag/select':
+        specifier: workspace:*
+        version: link:../../components/Select
       '@gemeente-denhaag/sheet':
         specifier: workspace:*
         version: link:../../components/Sheet
