@@ -1,1 +1,9 @@
 @import "~@utrecht/components/dist/form-field/css";
+
+// TODO: replace with .utrecht-form-field--text-flex when possible
+.denhaag-form-field--flex {
+  --utrecht-space-around: 0;
+
+  display: flex;
+  flex-direction: column;
+}

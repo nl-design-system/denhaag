@@ -10,6 +10,7 @@ import { TextInput } from '@gemeente-denhaag/text-input';
 import { Paragraph } from '@gemeente-denhaag/typography';
 import { RadioButton } from '@gemeente-denhaag/radio-button';
 import readme from '../../../../components/FormField/README.md?raw';
+import Select, { SelectOption } from '@gemeente-denhaag/select';
 
 const meta = {
   id: 'react-input-form-field',
@@ -279,5 +280,20 @@ export const RadioButtonGroupWithDescription: Story = {
         </Paragraph>
       </FormField>
     </Fieldset>
+  ),
+};
+
+export const SelectInput: Story = {
+  render: () => (
+    <FormField flex>
+      <FormLabel>Options</FormLabel>
+      <Select>
+        <SelectOption value="">Select an option</SelectOption>
+        <SelectOption value="1">Option #1</SelectOption>
+        <SelectOption value="2">Option #2</SelectOption>
+        <SelectOption value="3">Option #3</SelectOption>
+        <SelectOption value="4">Option #4</SelectOption>
+      </Select>
+    </FormField>
   ),
 };

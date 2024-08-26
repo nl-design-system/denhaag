@@ -1,1 +1,11 @@
 @import "~@utrecht/components/dist/select/css";
+
+.denhaag-select {
+  &:hover,
+  &--hover {
+    background-color: var(--denhaag-select-hover-background-color);
+    border-color: var(--denhaag-select-hover-border-color);
+    border-width: var(--denhaag-select-hover-border-width);
+    color: var(--denhaag-select-hover-color);
+  }
+}
