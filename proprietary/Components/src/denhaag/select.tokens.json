@@ -1,0 +1,12 @@
+{
+  "denhaag": {
+    "select": {
+      "hover": {
+        "background-color": { "value": "{utrecht.form-control.hover.background-color}" },
+        "border-color": { "value": "{utrecht.form-control.hover.border-color}" },
+        "border-width": { "value": "{utrecht.form-control.hover.border-width}" },
+        "color": { "value": "{utrecht.form-control.hover.color}" }
+      }
+    }
+  }
+}
