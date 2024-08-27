@@ -37,8 +37,8 @@ export const Disabled: Story = { args: { ...Default.args, disabled: true } };
 export const Required: Story = { args: { ...Default.args, required: true } };
 export const RequiredServerSideRendering: Story = { args: { ...Default.args, required: true, noscript: true } };
 export const Invalid: Story = { args: { ...Default.args, invalid: true } };
-export const Focus: Story = { args: { ...Default.args, className: 'utrecht-select--focus' } };
+export const Focus: Story = { args: { ...Default.args, className: 'utrecht-select--focus denhaag-select--focus' } };
 export const FocusVisible: Story = {
-  args: { ...Default.args, className: 'utrecht-select--focus utrecht-select--focus-visible' },
+  args: { ...Default.args, className: 'utrecht-select--focus denhaag-select--focus utrecht-select--focus-visible' },
 };
 export const Hover: Story = { args: { ...Default.args, className: 'denhaag-select--hover' } };
