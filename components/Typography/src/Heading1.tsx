@@ -1,6 +1,5 @@
 import React from 'react';
 import './heading.scss';
-import './space.scss';
 import clsx from 'clsx';
 
 export interface Heading1Props {

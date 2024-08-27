@@ -21,7 +21,7 @@
     "build:ts": "tsc -b",
     "build:style-dictionary": "style-dictionary build --config style-dictionary.config.js",
     "clean": "rimraf dist tsconfig.tsbuildinfo",
-    "watch:style-dictionary": "chokidar --follow-symlinks --initial \"src/**/*.json\" -c \"pnpm run build:style-dictionary\""
+    "watch:style-dictionary": "chokidar --follow-symlinks --initial \"src/**/*.json\" -c \"pnpm run build:style-dictionary && pnpm run build:css\""
   },
   "devDependencies": {
     "@gemeente-denhaag/design-tokens-common": "workspace:*",
