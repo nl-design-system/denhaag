@@ -32,7 +32,8 @@
   "dependencies": {
     "@gemeente-denhaag/design-tokens-common": "workspace:*",
     "@gemeente-denhaag/design-tokens-components": "workspace:*",
-    "@utrecht/components": "6.1.0"
+    "@utrecht/component-library-react": "6.0.0",
+    "@utrecht/components": "7.0.0"
   },
   "peerDependencies": {
     "react": "^18.0.0"

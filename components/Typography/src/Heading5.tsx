@@ -1,13 +1,5 @@
-import React from 'react';
+import { Heading5, Heading5Props } from '@utrecht/component-library-react';
 import './heading.scss';
-import clsx from 'clsx';
 
-export interface Heading5Props {
-  className?: string;
-  children?: React.ReactNode;
-}
-
-export const Heading5: React.FC<Heading5Props> = (props: Heading5Props) => {
-  const rootClassNames = clsx('utrecht-heading-5', props.className);
-  return <h5 className={rootClassNames}>{props.children}</h5>;
-};
+export { Heading5, Heading5Props };
+export default Heading5;

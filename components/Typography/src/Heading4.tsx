@@ -1,13 +1,5 @@
-import React from 'react';
+import { Heading4, Heading4Props } from '@utrecht/component-library-react';
 import './heading.scss';
-import clsx from 'clsx';
 
-export interface Heading4Props {
-  className?: string;
-  children?: React.ReactNode;
-}
-
-export const Heading4: React.FC<Heading4Props> = (props: Heading4Props) => {
-  const rootClassNames = clsx('utrecht-heading-4', props.className);
-  return <h4 className={rootClassNames}>{props.children}</h4>;
-};
+export { Heading4, Heading4Props };
+export default Heading4;
