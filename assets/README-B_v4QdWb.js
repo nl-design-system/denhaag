@@ -8,4 +8,8 @@ Form field bestaat uit verschillende onderdelen.
 [Form field description](https://www.nldesignsystem.nl/form-field-description) (optioneel)
 [Form field error message](https://www.nldesignsystem.nl/form-field-error-message) (invalid state)
 Form input
+
+## Class names
+
+- \`.denhaag-form-field--flex\`
 `;export{e as r};
