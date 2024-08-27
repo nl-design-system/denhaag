@@ -285,7 +285,7 @@ export const RadioButtonGroupWithDescription: Story = {
 
 export const SelectInput: Story = {
   render: () => (
-    <FormField>
+    <FormField className="denhaag-form-field--flex">
       <FormLabel>Options</FormLabel>
       <Select>
         <SelectOption value="">Select an option</SelectOption>
