@@ -1,6 +1,5 @@
 import React from 'react';
 import './paragraph.scss';
-import './space.scss';
 import clsx from 'clsx';
 
 export interface LeadParagraphProps {
