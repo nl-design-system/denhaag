@@ -1,11 +1,19 @@
 @import "~@utrecht/components/dist/select/css";
 
 .denhaag-select {
+  box-sizing: var(--denhaag-select-box-sizing);
+  max-block-size: var(--denhaag-select-max-block-size);
+
   &:hover,
   &--hover {
     background-color: var(--denhaag-select-hover-background-color);
     border-color: var(--denhaag-select-hover-border-color);
     border-width: var(--denhaag-select-hover-border-width);
     color: var(--denhaag-select-hover-color);
+  }
+
+  &:focus,
+  &--focus {
+    border-width: var(--denhaag-select-focus-border-width);
   }
 }

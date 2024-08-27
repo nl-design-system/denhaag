@@ -1,11 +1,16 @@
 {
   "denhaag": {
     "select": {
+      "box-sizing": { "value": "border-box" },
+      "max-block-size": { "value": "3rem" },
       "hover": {
         "background-color": { "value": "{utrecht.form-control.hover.background-color}" },
         "border-color": { "value": "{utrecht.form-control.hover.border-color}" },
         "border-width": { "value": "{utrecht.form-control.hover.border-width}" },
         "color": { "value": "{utrecht.form-control.hover.color}" }
+      },
+      "focus": {
+        "border-width": { "value": "{utrecht.form-control.focus.border-width}" }
       }
     }
   }

@@ -10,7 +10,7 @@
       "color": { "value": "{utrecht.form-control.color}" },
       "font-family": { "value": "{utrecht.document.font-family}" },
       "font-size": { "value": "{utrecht.document.font-size}" },
-      "min-block-size": {},
+      "min-block-size": { "value": "3rem" },
       "max-inline-size": { "value": "400px" },
       "padding-block-end": { "value": "{denhaag.space.block.sm}" },
       "padding-block-start": { "value": "{denhaag.space.block.sm}" },
