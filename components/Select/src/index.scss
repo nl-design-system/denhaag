@@ -4,6 +4,11 @@
   box-sizing: var(--denhaag-select-box-sizing);
   max-block-size: var(--denhaag-select-max-block-size);
 
+  &.utrecht-select {
+    background-position: center right
+      var(--utrecht-select-padding-inline-end, var(--utrecht-form-control-padding-inline-end));
+  }
+
   &:hover,
   &--hover {
     background-color: var(--denhaag-select-hover-background-color);
