@@ -125,7 +125,7 @@ export const Focus: Story = {
   },
 };
 
-export const Align: Story = {
+export const HorizontalAlign: Story = {
   args: {
     ...Default.args,
     children: (
@@ -153,6 +153,63 @@ export const Align: Story = {
             <TableHeader scope="row">Dark secret</TableHeader>
             <TableCell className="denhaag-table__cell--align-center">Expert florist</TableCell>
             <TableCell className="denhaag-table__cell--align-end">Cries at romcoms</TableCell>
+          </TableRow>
+        </TableBody>
+      </>
+    ),
+  },
+};
+
+export const VerticalAlign: Story = {
+  args: {
+    ...Default.args,
+    children: (
+      <>
+        <TableCaption>He-Man and Skeletor facts</TableCaption>
+        <TableHead>
+          <TableRow>
+            <TableHeader></TableHeader>
+            <TableHeader className="heman">He-Man</TableHeader>
+            <TableHeader className="skeletor">Skeletor</TableHeader>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          <TableRow>
+            <TableHeader scope="row">Role</TableHeader>
+            <TableCell>Hero</TableCell>
+            <TableCell>Villain</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableHeader scope="row" className="denhaag-table__cell--align-top">
+              Weapon
+            </TableHeader>
+            <TableCell className="denhaag-table__cell--align-top">
+              Power
+              <br />
+              Sword
+            </TableCell>
+            <TableCell className="denhaag-table__cell--align-top">
+              Havoc
+              <br />
+              Staff
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableHeader scope="row" className="denhaag-table__cell--align-bottom">
+              Dark secret
+            </TableHeader>
+            <TableCell className="denhaag-table__cell--align-bottom">
+              Expert
+              <br />
+              florist
+            </TableCell>
+            <TableCell className="denhaag-table__cell--align-bottom">
+              Cries
+              <br />
+              at
+              <br />
+              romcoms
+            </TableCell>
           </TableRow>
         </TableBody>
       </>

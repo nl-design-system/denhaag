@@ -82,6 +82,14 @@
   text-align: start;
   border-block-end: var(--utrecht-table-border-width) solid var(--utrecht-table-border-color);
 
+  &--align-top {
+    vertical-align: top;
+  }
+
+  &--align-bottom {
+    vertical-align: bottom;
+  }
+
   &--align-center {
     text-align: center;
   }
