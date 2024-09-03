@@ -1,6 +1,7 @@
 .denhaag-modal {
   &__footer {
     display: flex;
+    justify-content: var(--denhaag-modal-footer-justify-content);
     flex-direction: var(--denhaag-modal-footer-direction);
     gap: var(--denhaag-modal-gap, var(--denhaag-modal-padding-block));
     padding-block-start: var(--denhaag-modal-footer-padding-block);
