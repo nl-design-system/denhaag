@@ -141,6 +141,6 @@
     "storybook": "8.2.6",
     "storybook-addon-pseudo-states": "3.1.1",
     "typescript": "5.5.4",
-    "vite": "5.3.5"
+    "vite": "5.3.6"
   }
 }
