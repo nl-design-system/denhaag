@@ -1,8 +1,10 @@
 import React from 'react';
+import tokens from '@gemeente-denhaag/design-tokens-components/dist/list.json';
 import { Meta, StoryObj } from '@storybook/react';
 import { Status } from '@gemeente-denhaag/process-steps';
 
 import readme from '../../../../components/ProcessSteps/README.md?raw';
+import tokensDefinition from '../../../../components/ProcessSteps/src/tokens.json';
 
 const exampleArgs = {
   steps: [
@@ -41,6 +43,9 @@ const meta = {
         component: readme,
       },
     },
+    tokensPrefix: 'denhaag-process-steps',
+    tokensDefinition,
+    tokens,
   },
 } as Meta<typeof Status>;
 
