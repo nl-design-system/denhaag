@@ -2,7 +2,7 @@
   "utrecht": {
     "textbox": {
       "background-color": {},
-      "border-bottom-width": { "value": "1px" },
+      "border-bottom-width": { "value": "0" },
       "border-color": { "value": "{denhaag.color.grey.3}" },
       "border-radius": { "value": "3px" },
       "border-width": { "value": "1px" },
@@ -19,7 +19,7 @@
       "max-inline-size": {},
       "padding-block-end": {},
       "padding-block-start": {},
-      "padding-inline-end": {},
+      "padding-inline-end": { "value": "24px" },
       "padding-inline-start": {},
       "placeholder": {
         "color": {}
@@ -39,7 +39,7 @@
         "background-color": {},
         "border-color": { "value": "{denhaag.color.red.3}" },
         "border-width": { "value": "{utrecht.form-control.invalid.border-width}" },
-        "border-bottom-width": { "value": "{utrecht.form-control.invalid.border-width}" },
+        "border-bottom-width": { "value": "0" },
         "color": {}
       },
       "read-only": {
