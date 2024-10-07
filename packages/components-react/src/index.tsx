@@ -32,4 +32,5 @@ export * from '@gemeente-denhaag/stylesprovider';
 export * from '@gemeente-denhaag/tab';
 export * from '@gemeente-denhaag/table';
 export * from '@gemeente-denhaag/text-input';
+export * from '@gemeente-denhaag/toggletip';
 export * from '@gemeente-denhaag/typography';

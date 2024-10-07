@@ -1,0 +1,50 @@
+.denhaag-toggletip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+
+  &__tip {
+    width: max-content;
+    max-width: var(--denhaag-toggletip-tip-max-width);
+    font-size: var(--denhaag-toggletip-tip-font-size);
+    font-weight: var(--denhaag-toggletip-tip-font-weight);
+    color: var(--denhaag-toggletip-tip-color);
+    background-color: var(--denhaag-toggletip-tip-background-color);
+    padding-inline: var(--denhaag-toggletip-tip-padding-inline);
+    padding-block: var(--denhaag-toggletip-tip-padding-block);
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 50%;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+    opacity: 0%;
+    transition: opacity 300ms;
+    pointer-events: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 4px;
+      border-style: solid;
+      border-color: transparent transparent var(--denhaag-toggletip-tip-background-color) transparent;
+    }
+
+    &--top {
+      top: auto;
+      bottom: calc(100% + 4px);
+
+      &::before {
+        top: auto;
+        bottom: -8px;
+        border-color: var(--denhaag-toggletip-tip-background-color) transparent transparent transparent;
+      }
+    }
+  }
+
+  &:hover .denhaag-toggletip__tip {
+    opacity: 100%;
+  }
+}
