@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/badge-counter",
-  "version": "0.1.1-alpha.411",
+  "version": "0.3.0-alpha.411",
   "description": "A Badge component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -30,8 +30,8 @@
     "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\""
   },
   "dependencies": {
-    "@gemeente-denhaag/dotindicator": "workspace:*",
-    "@utrecht/components": "6.1.0"
+    "@utrecht/component-library-react": "7.0.0",
+    "@utrecht/components": "7.3.0"
   },
   "peerDependencies": {
     "react": "^18.0.0"

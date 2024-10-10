@@ -216,12 +216,12 @@ importers:
 
   components/BadgeCounter:
     dependencies:
-      '@gemeente-denhaag/dotindicator':
-        specifier: workspace:*
-        version: link:../DotIndicator
+      '@utrecht/component-library-react':
+        specifier: 7.0.0
+        version: 7.0.0(@babel/runtime@7.24.7)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/components':
-        specifier: 6.1.0
-        version: 6.1.0
+        specifier: 7.3.0
+        version: 7.3.0
       react:
         specifier: ^18.0.0
         version: 18.3.1
@@ -656,6 +656,9 @@ importers:
 
   components/Menu:
     dependencies:
+      '@gemeente-denhaag/badge-counter':
+        specifier: workspace:*
+        version: link:../BadgeCounter
       '@gemeente-denhaag/button':
         specifier: workspace:*
         version: link:../Button
@@ -4459,6 +4462,23 @@ packages:
       vega:
         optional: true
 
+  '@utrecht/component-library-react@7.0.0':
+    resolution: {integrity: sha512-mPKNpPZqnRv3CIrDuwQwQtDqVvuBnJJkPK+5+vK79nalQmMnRrXMgNhM4vdF0bJ4QHyhWYGRU/WemNXIMRvfbQ==}
+    peerDependencies:
+      '@babel/runtime': ^7.23.6
+      date-fns: ^2.30.0
+      react: '18'
+      react-dom: '18'
+      react-vega: ^7.6.0
+      vega: ^5.25.0
+    peerDependenciesMeta:
+      date-fns:
+        optional: true
+      react-vega:
+        optional: true
+      vega:
+        optional: true
+
   '@utrecht/components@1.0.0':
     resolution: {integrity: sha512-PGrTGpuLT0vGM2GKKoh2T7bkS9cwTsBxV+IdN8ACYNHFmbmN5OGHmoaQLGme/I89iEHUZil8HFCc+C3p8mceJA==}
 
@@ -4470,6 +4490,9 @@ packages:
 
   '@utrecht/components@7.0.0':
     resolution: {integrity: sha512-5Yq9xjWQt5A6zM8Q7HqSyHnuyf/UO4l+jnNxTEtRfj46lAqN4E44Vp4oZdi+mESE+g/fAnVDUbJVhjQChG9jlA==}
+
+  '@utrecht/components@7.3.0':
+    resolution: {integrity: sha512-9Dbhz0AHQBnr6dsM4d3iqwjAzm1wOq9nU1aMk9M+Yf0Ka+wDRA0Bk5nCebGx6l0bYuyuoXv2g4DOkVXnIPPjUA==}
 
   '@vitejs/plugin-react@4.3.1':
     resolution: {integrity: sha512-m/V2syj5CuVnaxcUJOQRel/Wr31FFXRFlnOoq1TVtkCxsY5veGMTEmpWHndrhB2U8ScHtCQB1e+4hWYExQc6Lg==}
@@ -14578,6 +14601,16 @@ snapshots:
     optionalDependencies:
       date-fns: 2.30.0
 
+  '@utrecht/component-library-react@7.0.0(@babel/runtime@7.24.7)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.24.7
+      clsx: 2.1.1
+      lodash.chunk: 4.2.0
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+    optionalDependencies:
+      date-fns: 2.30.0
+
   '@utrecht/components@1.0.0':
     dependencies:
       clsx: 1.2.1
@@ -14591,6 +14624,10 @@ snapshots:
       clsx: 2.1.1
 
   '@utrecht/components@7.0.0':
+    dependencies:
+      clsx: 2.1.1
+
+  '@utrecht/components@7.3.0':
     dependencies:
       clsx: 2.1.1
 

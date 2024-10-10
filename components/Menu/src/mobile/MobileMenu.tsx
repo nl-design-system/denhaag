@@ -1,4 +1,5 @@
 import React, { HTMLAttributes, useState } from 'react';
+import { BadgeCounter } from '@gemeente-denhaag/badge-counter';
 import { SheetContainer } from '@gemeente-denhaag/sheet';
 import { ArrowRightIcon, ChevronDownIcon, ArrowLeftIcon, LogOutIcon } from '@gemeente-denhaag/icons';
 import { MobileMenuList } from './MobileMenuList';
@@ -11,11 +12,13 @@ import { Button } from '@gemeente-denhaag/button';
 
 import useToggleState from './use-togglestate';
 import clsx from 'clsx';
+import MobileMenuLinkLabel from './MobileMenuLinkLabel';
 
 interface NavigationGroupProps {
   label: string;
   href?: string;
   navigation?: Array<NavigationGroupProps>;
+  badgeCounter?: number;
 }
 
 interface LogoutButtonProps {
@@ -61,7 +64,10 @@ const ExpandedListItem = ({ label, navigation, Link, scrollMenu, tabIndex }: Exp
               return (
                 <MobileMenuListItem key={key}>
                   <MobileMenuLink Link={Link} href={l3Nav.href}>
-                    <span>{l3Nav.label}</span>
+                    <MobileMenuLinkLabel>
+                      <span>{l3Nav.label}</span>
+                      {l3Nav.badgeCounter && <BadgeCounter>{l3Nav.badgeCounter}</BadgeCounter>}
+                    </MobileMenuLinkLabel>
                     <span className="denhaag-mobile-menu-list-submenu-list-item-link__icon">
                       <ArrowRightIcon />
                     </span>
@@ -91,7 +97,10 @@ const ExpandedList = ({ label, navigation, Link, scrollMenu, tabIndex }: Expande
             return (
               <MobileMenuListItem key={key}>
                 <MobileMenuLink Link={Link} href={l2Nav.href} tabIndex={tabIndex}>
-                  <span>{l2Nav.label}</span>
+                  <MobileMenuLinkLabel>
+                    <span>{l2Nav.label}</span>
+                    {l2Nav.badgeCounter && <BadgeCounter>{l2Nav.badgeCounter}</BadgeCounter>}
+                  </MobileMenuLinkLabel>
                   <span className="denhaag-mobile-menu-list-submenu-list-item-link__icon">
                     <ArrowRightIcon />
                   </span>

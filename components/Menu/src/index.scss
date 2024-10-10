@@ -53,6 +53,13 @@
       }
     }
 
+    .denhaag-mobile-menu-list-item-link-label {
+      display: flex;
+      flex-direction: row;
+      gap: var(--denhaag-mobile-menu-list-item-button-label-gap);
+      align-items: center;
+    }
+
     .denhaag-mobile-menu-list-item-expanded-list {
       display: var(--denhaag-mobile-menu-list-item-expanded-list-display);
       list-style: var(--denhaag-mobile-menu-list-item-expanded-list-list-style);
