@@ -9,5 +9,5 @@ export interface ParagraphProps {
 
 export const Paragraph = (props: ParagraphProps) => {
   const rootClassNames = clsx('utrecht-paragraph', props.className);
-  return <p className={rootClassNames}> {props.children}</p>;
+  return <p className={rootClassNames}>{props.children}</p>;
 };
