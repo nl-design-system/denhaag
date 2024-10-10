@@ -80,6 +80,7 @@ export const headerProps: HeaderLogicProps = {
         label: 'MijnDenHaag',
         navigation: [
           { label: 'Overzicht', href: 'https://klantportaal.denhaag.nl/overzicht' },
+          { label: 'Mijn berichten', href: 'https://klantportaal.denhaag.nl/berichten', badgeCounter: 3 },
           { label: 'Lopende zaken', href: 'https://klantportaal.denhaag.nl/zaken' },
           { label: "Thema's", href: 'https://klantportaal.denhaag.nl/themas' },
           { label: 'Mijn account', href: 'https://klantportaal.denhaag.nl/account' },

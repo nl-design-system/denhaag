@@ -57,6 +57,9 @@
             "large": {
               "font-size": { "value": "20px" },
               "font-weight": { "value": "700" }
+            },
+            "label": {
+              "gap": { "value": "8px" }
             }
           }
         },
