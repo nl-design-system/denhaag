@@ -1,5 +1,11 @@
 import { ArchiveIcon, CheckCircleIcon, GridIcon, InboxIcon, UserIcon } from '@gemeente-denhaag/icons';
-import { Sidenav as SidenavComponent, SidenavItem, SidenavLink, SidenavList } from '@gemeente-denhaag/sidenav';
+import {
+  Sidenav as SidenavComponent,
+  SidenavItem,
+  SidenavLink,
+  SidenavLinkLabel,
+  SidenavList,
+} from '@gemeente-denhaag/sidenav';
 import { BadgeCounter } from '@utrecht/component-library-react';
 import React from 'react';
 
@@ -24,8 +30,10 @@ const Sidenav = () => {
         <SidenavItem>
           <SidenavLink>
             <InboxIcon />
-            Mijn berichten
-            <BadgeCounter>2</BadgeCounter>
+            <SidenavLinkLabel>
+              Mijn berichten
+              <BadgeCounter>2</BadgeCounter>
+            </SidenavLinkLabel>
           </SidenavLink>
         </SidenavItem>
         <SidenavItem>
