@@ -40,6 +40,11 @@
   padding-block-end: var(--denhaag-sidenav-link-padding-block-end);
 }
 
+.denhaag-sidenav__link-label {
+  display: inline-flex;
+  gap: var(--denhaag-sidenav-link-label-gap);
+}
+
 .denhaag-sidenav__link:hover,
 .denhaag-sidenav__link--hover {
   color: var(--denhaag-sidenav-link-hover-color);

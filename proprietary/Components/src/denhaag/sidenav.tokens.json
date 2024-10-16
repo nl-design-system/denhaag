@@ -22,6 +22,9 @@
         "margin-inline-end": { "value": "0" }
       },
       "link": {
+        "label": {
+          "gap": { "value": "{denhaag.space.inline.xs}" }
+        },
         "padding-block-start": { "value": "12px" },
         "padding-block-end": { "value": "12px" },
         "color": { "value": "{denhaag.color.grey.4}" },

@@ -1,7 +1,7 @@
 import { BadgeCounter } from '@gemeente-denhaag/badge-counter';
 import tokens from '@gemeente-denhaag/design-tokens-components/dist/list.json';
 import { ArchiveIcon, CheckCircleIcon, GridIcon, InboxIcon, UserIcon } from '@gemeente-denhaag/icons';
-import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '@gemeente-denhaag/sidenav';
+import { Sidenav, SidenavItem, SidenavLink, SidenavList, SidenavLinkLabel } from '@gemeente-denhaag/sidenav';
 import { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 import readme from '../../../../components/Sidenav/README.md?raw';
@@ -28,8 +28,10 @@ const exampleArgs = {
         <SidenavItem>
           <SidenavLink href={'/#'}>
             <InboxIcon />
-            Mijn berichten
-            <BadgeCounter>2</BadgeCounter>
+            <SidenavLinkLabel>
+              Mijn berichten
+              <BadgeCounter>2</BadgeCounter>
+            </SidenavLinkLabel>
           </SidenavLink>
         </SidenavItem>
         <SidenavItem>
