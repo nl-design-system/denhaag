@@ -43,6 +43,7 @@
 .denhaag-sidenav__link-label {
   display: flex;
   gap: var(--denhaag-sidenav-link-label-gap);
+  align-items: center;
 }
 
 .denhaag-sidenav__link:hover,
