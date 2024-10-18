@@ -11,6 +11,7 @@ import { Paragraph } from '@gemeente-denhaag/typography';
 import { RadioButton } from '@gemeente-denhaag/radio-button';
 import readme from '../../../../components/FormField/README.md?raw';
 import Select, { SelectOption } from '@gemeente-denhaag/select';
+import { SearchIcon } from '@gemeente-denhaag/icons';
 
 const meta = {
   id: 'css-input-form-field',
@@ -33,8 +34,8 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   render: () => (
     <FormField>
-      <FormLabel>Username</FormLabel>
-      <TextInput placeholder="Placeholder" />
+      <FormLabel htmlFor="input-default">Username</FormLabel>
+      <TextInput id="input-default" placeholder="Placeholder" />
     </FormField>
   ),
 };
@@ -42,9 +43,19 @@ export const Default: Story = {
 export const WithDescription: Story = {
   render: () => (
     <FormField>
-      <FormLabel>Username</FormLabel>
+      <FormLabel htmlFor="input-with-description">Username</FormLabel>
       <FormFieldDescription>Vul hier uw username in</FormFieldDescription>
-      <TextInput placeholder="Placeholder" />
+      <TextInput id="input-with-description" placeholder="Placeholder" />
+    </FormField>
+  ),
+};
+
+export const WithDescriptionAndIcon: Story = {
+  render: () => (
+    <FormField>
+      <FormLabel htmlFor="input-with-description-and-icon">Username</FormLabel>
+      <FormFieldDescription>Vul hier uw username in</FormFieldDescription>
+      <TextInput id="input-with-description-and-icon" placeholder="Placeholder" iconEnd={<SearchIcon />} />
     </FormField>
   ),
 };
@@ -52,9 +63,9 @@ export const WithDescription: Story = {
 export const Invalid: Story = {
   render: () => (
     <FormField invalid>
-      <FormLabel>Username</FormLabel>
+      <FormLabel htmlFor="input-invalid">Username</FormLabel>
       <FormFieldDescription>Description</FormFieldDescription>
-      <TextInput placeholder="Placeholder" invalid />
+      <TextInput id="input-invalid" placeholder="Placeholder" invalid />
       <FormFieldErrorMessage>Error message</FormFieldErrorMessage>
     </FormField>
   ),
