@@ -10,7 +10,7 @@
     "scss/operator-no-newline-after": null,
     "scss/at-extend-no-missing-placeholder": null,
     "custom-property-pattern": "^_?(denhaag|utrecht)-[a-z0-9-]+$",
-    "selector-class-pattern": "^(denhaag|utrecht)-[a-z0-9_-]+$",
+    "selector-class-pattern": "^(denhaag|utrecht|pra)-[a-z0-9_-]+$",
     "keyframes-name-pattern": "^(denhaag|utrecht)-[a-z0-9-]+$",
     "at-rule-no-unknown": null,
     "block-no-empty": [true],
