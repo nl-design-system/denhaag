@@ -1,15 +1,24 @@
-import { Textbox as TextInput } from '@persoonlijke-regelingen-assistent/components-react';
+import React, { forwardRef } from 'react';
+import { Textbox } from '@persoonlijke-regelingen-assistent/components-react';
 import { TextboxProps as UtrechtTextboxProps } from '@utrecht/component-library-react';
-import { InputHTMLAttributes } from 'react';
 import './index.scss';
 
 //PRA doesn't export the props yet, so for now i made a copy.
-interface TextboxSpecificProps {
+interface TextInputProps extends UtrechtTextboxProps {
   iconStart?: JSX.Element;
   iconEnd?: JSX.Element;
-  invalid: UtrechtTextboxProps['invalid'];
 }
-interface TextInputProps extends InputHTMLAttributes<HTMLInputElement>, TextboxSpecificProps {}
+
+const TextInput = forwardRef<HTMLLabelElement, TextInputProps>(function TextInput(
+  { children, invalid = false, ...props },
+  ref,
+) {
+  return (
+    <Textbox ref={ref} invalid={invalid} {...props}>
+      {children}
+    </Textbox>
+  );
+});
 
 export { TextInput, TextInputProps };
 export default TextInput;
