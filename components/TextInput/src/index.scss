@@ -5,4 +5,8 @@
     --utrecht-textbox-border-bottom-width: 0;
     --utrecht-textbox-invalid-border-bottom-width: 0;
   }
+
+  &:has(.utrecht-textbox--invalid) {
+    --utrecht-textbox-border-width: var(--utrecht-textbox-invalid-border-width);
+  }
 }
