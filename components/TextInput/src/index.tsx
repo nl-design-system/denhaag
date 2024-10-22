@@ -1,24 +1,26 @@
-import React, { forwardRef } from 'react';
-import { Textbox } from '@persoonlijke-regelingen-assistent/components-react';
-import { TextboxProps as UtrechtTextboxProps } from '@utrecht/component-library-react';
+import React, { ForwardedRef, forwardRef } from 'react';
+import { Textbox, TextboxProps } from '@utrecht/component-library-react';
 import './index.scss';
 
-//PRA doesn't export the props yet, so for now i made a copy.
-interface TextInputProps extends UtrechtTextboxProps {
+interface TextInputProps extends TextboxProps {
   iconStart?: JSX.Element;
   iconEnd?: JSX.Element;
 }
 
-const TextInput = forwardRef<HTMLLabelElement, TextInputProps>(function TextInput(
-  { children, invalid = false, ...props },
-  ref,
-) {
-  return (
-    <Textbox ref={ref} invalid={invalid} {...props}>
-      {children}
-    </Textbox>
-  );
-});
+const TextInput: React.ForwardRefExoticComponent<TextInputProps & React.RefAttributes<HTMLLabelElement>> = forwardRef(
+  ({ ...props }: TextInputProps, ref: ForwardedRef<HTMLLabelElement>) => {
+    const { iconStart, iconEnd, placeholder, id, ...otherProps } = props;
+    return (
+      <label className="pra-textbox" ref={ref} htmlFor={id}>
+        {iconStart && <span className="pra-icon pra-icon-start">{iconStart}</span>}
+        <Textbox {...otherProps} placeholder={placeholder} type="text" id={id} />
+        {iconEnd && <span className="pra-icon pra-icon-end">{iconEnd}</span>}
+      </label>
+    );
+  },
+);
+
+TextInput.displayName = 'Textbox';
 
 export { TextInput, TextInputProps };
 export default TextInput;
