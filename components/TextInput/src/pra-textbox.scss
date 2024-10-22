@@ -1,0 +1,171 @@
+.pra-textbox {
+  align-items: center;
+  background-color: var(--utrecht-textbox-background-color, var(--utrecht-form-control-background-color));
+  border-block-end-width: var(
+    --utrecht-textbox-border-bottom-width,
+    var(--utrecht-textbox-border-width, var(--utrecht-form-control-border-width))
+  );
+  border-color: var(--utrecht-textbox-border-color, var(--utrecht-form-control-border-color));
+  border-radius: var(--utrecht-textbox-border-radius, var(--utrecht-form-control-border-radius, 0));
+  border-style: solid;
+  border-width: var(--utrecht-textbox-border-width, var(--utrecht-form-control-border-width));
+  display: flex;
+  inline-size: 100%;
+
+  .pra-icon {
+    align-items: center;
+    background-color: transparent;
+    block-size: calc(var(--utrecht-textbox-font-size) * 1.5);
+    display: flex;
+    inline-size: calc(var(--utrecht-textbox-font-size) * 1.5);
+    justify-content: center;
+    svg {
+      path {
+        fill: var(--utrecht-textbox-color);
+      }
+    }
+    &-start {
+      padding-inline-start: calc(var(--utrecht-textbox-padding-inline-start) / 2);
+    }
+    &-end {
+      margin-inline-start: auto;
+      padding-inline-end: calc(var(--utrecht-textbox-padding-inline-end) / 2);
+    }
+  }
+
+  .utrecht-textbox {
+    --utrecht-textbox-border-width: 0;
+    --utrecht-textbox-border-block-end-width: 0;
+
+    &:focus {
+      --utrecht-focus-outline-width: 0;
+      --utrecht-focus-outline-block-end-width: 0;
+    }
+  }
+
+  &:has(.pra-icon-start) .utrecht-textbox {
+    border-end-start-radius: 0;
+    border-start-start-radius: 0;
+    padding-inline-start: calc(var(--utrecht-textbox-padding-inline-start) / 2);
+  }
+
+  &:has(.pra-icon-end) .utrecht-textbox {
+    border-end-end-radius: 0;
+    border-start-end-radius: 0;
+    padding-inline-end: calc(var(--utrecht-textbox-padding-inline-end) / 2);
+  }
+
+  &:focus-within {
+    background-color: var(
+      --utrecht-textbox-focus-background-color,
+      var(
+        --utrecht-form-control-focus-background-color,
+        var(--utrecht-textbox-background-color, var(--utrecht-form-control-background-color))
+      )
+    );
+    box-shadow: var(--utrecht-focus-ring-box-shadow);
+    outline-color: var(--utrecht-focus-outline-color, revert);
+    outline-offset: var(--utrecht-focus-outline-offset, revert);
+    outline-style: var(--utrecht-focus-outline-style, revert);
+    outline-width: var(--utrecht-focus-outline-width, revert);
+    .pra-icon {
+      svg {
+        path {
+          fill: var(--utrecht-textbox-focus-color);
+        }
+      }
+    }
+  }
+
+  &:has(.utrecht-textbox--disabled) {
+    background-color: var(
+      --utrecht-textbox-disabled-background-color,
+      var(
+        --utrecht-form-control-disabled-background-color,
+        var(--utrecht-textbox-background-color, var(--utrecht-form-control-background-color))
+      )
+    );
+    border-color: var(
+      --utrecht-textbox-disabled-border-color,
+      var(
+        --utrecht-form-control-disabled-border-color,
+        var(--utrecht-textbox-border-color, var(--utrecht-form-control-border-color))
+      )
+    );
+    .utrecht-textbox {
+      --_utrecht-textbox-border-width: 0;
+      --_utrecht-textbox-border-block-end-width: 0;
+    }
+    .pra-icon {
+      cursor: var(--utrecht-action-disabled-cursor, not-allowed);
+      svg {
+        path {
+          fill: var(
+            --utrecht-textbox-disabled-color,
+            var(--utrecht-form-control-disabled-color, var(--utrecht-textbox-color, var(--utrecht-form-control-color)))
+          );
+        }
+      }
+    }
+  }
+  &:has(.utrecht-textbox--invalid) {
+    background-color: var(
+      --utrecht-textbox-invalid-background-color,
+      var(
+        --utrecht-form-control-invalid-background-color,
+        var(--utrecht-textbox-background-color, var(--utrecht-form-control-background-color))
+      )
+    );
+    border-color: var(
+      --utrecht-textbox-invalid-border-color,
+      var(
+        --utrecht-form-control-invalid-border-color,
+        var(--utrecht-textbox-border-color, var(--utrecht-form-control-border-color))
+      )
+    );
+    .utrecht-textbox {
+      --_utrecht-textbox-border-width: 0;
+      --_utrecht-textbox-border-block-end-width: 0;
+    }
+    .pra-icon {
+      svg {
+        path {
+          fill: var(
+            --utrecht-textbox-invalid-color,
+            var(--utrecht-form-control-invalid-color, var(--utrecht-textbox-color, var(--utrecht-form-control-color)))
+          );
+        }
+      }
+    }
+  }
+  &:has(.utrecht-textbox--readonly) {
+    background-color: var(
+      --utrecht-textbox-read-only-background-color,
+      var(
+        --utrecht-form-control-read-only-background-color,
+        var(--utrecht-textbox-background-color, var(--utrecht-form-control-background-color))
+      )
+    );
+    border-color: var(
+      --utrecht-textbox-read-only-border-color,
+      var(
+        --utrecht-form-control-read-only-border-color,
+        var(--utrecht-textbox-border-color, var(--utrecht-form-control-border-color))
+      )
+    );
+    .utrecht-textbox {
+      --_utrecht-textbox-border-width: 0;
+      --_utrecht-textbox-border-block-end-width: 0;
+    }
+    .pra-icon {
+      svg {
+        path {
+          fill: var(
+            --utrecht-textbox-read-only-color,
+            var(--utrecht-form-control-read-only-color, var(--utrecht-textbox-color, var(--utrecht-form-control-color)))
+          );
+        }
+      }
+    }
+  }
+}
