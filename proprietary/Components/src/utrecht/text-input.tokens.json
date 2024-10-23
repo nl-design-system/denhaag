@@ -19,8 +19,8 @@
       "max-inline-size": {},
       "padding-block-end": {},
       "padding-block-start": {},
-      "padding-inline-end": { "value": "24px" },
-      "padding-inline-start": {},
+      "padding-inline-end": { "value": "12px" },
+      "padding-inline-start": { "value": "12px" },
       "placeholder": {
         "color": {}
       },
