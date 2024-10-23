@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/status-badge",
-  "version": "0.3.0-alpha.22",
+  "version": "0.3.0-alpha.23",
   "description": "Badge component for displaying status information",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
