@@ -1,6 +1,5 @@
 import React, { ForwardedRef, forwardRef } from 'react';
 import { Textbox, TextboxProps } from '@utrecht/component-library-react';
-import { Textbox as PRATextbox } from '@persoonlijke-regelingen-assistent/components-react';
 import './index.scss';
 
 interface TextInputProps extends TextboxProps {
@@ -23,5 +22,5 @@ const TextInput: React.ForwardRefExoticComponent<TextInputProps & React.RefAttri
 
 TextInput.displayName = 'Textbox';
 
-export { TextInput, TextInputProps, PRATextbox };
+export { TextInput, TextInputProps };
 export default TextInput;
