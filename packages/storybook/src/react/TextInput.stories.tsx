@@ -2,7 +2,7 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import { TextInput } from '@gemeente-denhaag/text-input';
 import readme from '../../../../components/TextInput/README.md?raw';
-import { SearchIcon } from '@gemeente-denhaag/icons';
+import { CallIcon, SearchIcon } from '@gemeente-denhaag/icons';
 
 const meta = {
   title: 'React/Input/TextInput',
@@ -31,6 +31,22 @@ export const Invalid: Story = {
   args: { ...Default.args, invalid: true },
 };
 
+export const Date: Story = {
+  args: { ...Default.args, type: 'date' },
+};
+
+export const Number: Story = {
+  args: { ...Default.args, type: 'number' },
+};
+
+export const Password: Story = {
+  args: { ...Default.args, type: 'password' },
+};
+
 export const WithIconEnd: Story = {
   args: { ...Default.args, iconEnd: <SearchIcon /> },
+};
+
+export const WithIconStart: Story = {
+  args: { ...Default.args, iconStart: <CallIcon /> },
 };
