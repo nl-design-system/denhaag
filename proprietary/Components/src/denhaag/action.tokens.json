@@ -111,7 +111,7 @@
           },
           "lg": {
             "gap": {
-              "value": "{denhaag.space.inline.sm}"
+              "value": "{denhaag.space.inline.xs}"
             }
           }
         }

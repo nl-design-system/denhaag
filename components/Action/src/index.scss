@@ -16,6 +16,7 @@
   @media (width >= 768px) {
     flex-direction: row;
     align-items: center;
+    gap: var(--denhaag-action-lg-gap);
     padding-block-start: var(--denhaag-action-lg-padding-block-start);
     padding-block-end: var(--denhaag-action-lg-padding-block-end);
   }
@@ -29,6 +30,7 @@
     @media (width >= 768px) {
       flex-direction: row;
       align-items: center;
+      gap: var(--denhaag-action-details-lg-gap);
     }
   }
 
@@ -109,6 +111,10 @@
       flex-direction: row;
       justify-content: space-between;
       gap: var(--denhaag-action-single-details-gap);
+
+      @media (width >= 768px) {
+        gap: var(--denhaag-action-single-details-lg-gap);
+      }
     }
   }
 
