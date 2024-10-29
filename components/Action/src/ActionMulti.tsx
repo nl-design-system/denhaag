@@ -8,6 +8,7 @@ export const ActionMulti = ({
   actions,
   dateTime,
   now,
+  locale,
   relativeDate,
   labels,
   className,
@@ -16,7 +17,7 @@ export const ActionMulti = ({
   return (
     <div className={clsx('denhaag-action denhaag-action--multi', className)} {...rest}>
       <ActionContent>{children}</ActionContent>
-      <ActionDetails dateTime={dateTime} now={now} relativeDate={relativeDate} labels={labels}>
+      <ActionDetails dateTime={dateTime} now={now} locale={locale} relativeDate={relativeDate} labels={labels}>
         {actions}
       </ActionDetails>
     </div>

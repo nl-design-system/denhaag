@@ -8,6 +8,7 @@ export interface ActionSingleProps extends AnchorHTMLAttributes<HTMLAnchorElemen
   link: string;
   dateTime?: string;
   now?: string;
+  locale?: string;
   relativeDate?: boolean;
   labels: FormatDateLabels;
   Link?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
@@ -18,6 +19,7 @@ export interface ActionMultiProps extends HTMLAttributes<HTMLDivElement> {
   actions: React.ReactNode;
   dateTime?: string;
   now?: string;
+  locale?: string;
   relativeDate?: boolean;
   labels: FormatDateLabels;
 }
