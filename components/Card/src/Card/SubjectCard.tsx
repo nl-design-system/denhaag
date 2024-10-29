@@ -10,7 +10,7 @@ import CardTextWrapper from './CardTextWrapper';
 import CardDateWrapper from './CardDateWrapper';
 import CardDate from './CardDate';
 import { CardAction } from './CardAction';
-import { formatDate } from '@gemeente-denhaag/utils';
+import { formatDate, longDateOptions } from '@gemeente-denhaag/utils';
 
 export interface SubjectCardProps {
   /**
@@ -29,6 +29,11 @@ export interface SubjectCardProps {
   date?: string;
 
   /**
+   * Determines the date format shown on the card
+   */
+  locale?: string;
+
+  /**
    * Determines the url the card points to
    */
   href?: string;
@@ -42,7 +47,7 @@ export interface SubjectCardProps {
 /**
  * Primary UI component for user interaction
  */
-export const SubjectCard = ({ title, subTitle, date, href, Link = BasicLink }: SubjectCardProps) => {
+export const SubjectCard = ({ title, subTitle, date, locale = 'nl-NL', href, Link = BasicLink }: SubjectCardProps) => {
   const dateTime = date ? new Date(date) : undefined;
 
   return (
@@ -56,7 +61,7 @@ export const SubjectCard = ({ title, subTitle, date, href, Link = BasicLink }: S
           {date && (
             <CardDateWrapper>
               <CardDate dateTime={dateTime?.toISOString()}>
-                {formatDate({ dateTime: date, format: 'd MMMM yyyy' })[0]}
+                {formatDate({ dateTime: date, locale: locale, format: longDateOptions })[0]}
               </CardDate>
             </CardDateWrapper>
           )}

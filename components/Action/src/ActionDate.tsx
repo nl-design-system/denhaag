@@ -1,6 +1,4 @@
 import React from 'react';
-import type { Locale } from 'date-fns/locale';
-import { nl } from 'date-fns/locale';
 import { AlertTriangleFilledIcon } from '@gemeente-denhaag/icons';
 import { Time } from './index';
 import { formatDate, FormatDateLabels } from '@gemeente-denhaag/utils';
@@ -10,7 +8,7 @@ interface Props {
   dateTime: string;
   now?: string;
   relative?: boolean;
-  locale?: Locale;
+  locale?: string;
   labels: FormatDateLabels;
 }
 
@@ -18,7 +16,7 @@ export const ActionDate = ({
   dateTime,
   now = new Date().toISOString(),
   relative = false,
-  locale = nl,
+  locale = 'nl-NL',
   labels,
 }: Props) => {
   const [formattedDate, deadline] = formatDate({ dateTime, labels, relative, locale, now });

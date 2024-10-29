@@ -1,7 +1,7 @@
 import React, { Key, ReactNode, useState } from 'react';
 import { StepMarker, StepMarkerConnector } from '@gemeente-denhaag/step-marker';
 import { Step, StepHeader, StepHeading, StepHeaderToggle, StepDetails } from '@gemeente-denhaag/process-steps';
-import { formatDate } from '@gemeente-denhaag/utils';
+import { formatDate, shortDateOptions } from '@gemeente-denhaag/utils';
 import './index.scss';
 import { ContactTimelineMetaSeparator } from './ContactTimelineMetaSeparator';
 import { ContactTimelineMetaItem } from './ContactTimelineMetaItem';
@@ -23,6 +23,7 @@ export interface ContactTimelineItemProps {
   sender?: ReactNode;
   date?: ReactNode;
   isoDate?: string;
+  locale?: string;
   channel: ReactNode;
 }
 
@@ -92,6 +93,7 @@ const ContactTimelineListItem: React.FC<ContactTimelineItemInternalProps> = ({
   file,
   date,
   isoDate,
+  locale = 'nl-NL',
   sender = '',
   labels,
   channel,
@@ -107,7 +109,14 @@ const ContactTimelineListItem: React.FC<ContactTimelineItemInternalProps> = ({
             ? date
             : isoDate && (
                 <ContactTimelineMetaTimeItem dateTime={isoDate}>
-                  {formatDate({ dateTime: isoDate, format: 'd-M-yyyy', labels: { ...labels } })[0]}
+                  {
+                    formatDate({
+                      dateTime: isoDate,
+                      locale: locale,
+                      format: shortDateOptions,
+                      labels: { ...labels },
+                    })[0]
+                  }
                 </ContactTimelineMetaTimeItem>
               )}
         </ContactTimelineHeaderDate>
@@ -133,7 +142,14 @@ const ContactTimelineListItem: React.FC<ContactTimelineItemInternalProps> = ({
               ? date
               : isoDate && (
                   <ContactTimelineMetaTimeItem dateTime={isoDate}>
-                    {formatDate({ dateTime: isoDate, format: 'd-M-yyyy', labels: { ...labels } })[0]}
+                    {
+                      formatDate({
+                        dateTime: isoDate,
+                        locale: locale,
+                        format: shortDateOptions,
+                        labels: { ...labels },
+                      })[0]
+                    }
                   </ContactTimelineMetaTimeItem>
                 )}
             <ContactTimelineMetaSeparator />
