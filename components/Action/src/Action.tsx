@@ -10,7 +10,7 @@ export interface ActionSingleProps extends AnchorHTMLAttributes<HTMLAnchorElemen
   now?: string;
   locale?: string;
   relativeDate?: boolean;
-  labels: FormatDateLabels;
+  labels?: FormatDateLabels;
   Link?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
 }
 
@@ -21,7 +21,7 @@ export interface ActionMultiProps extends HTMLAttributes<HTMLDivElement> {
   now?: string;
   locale?: string;
   relativeDate?: boolean;
-  labels: FormatDateLabels;
+  labels?: FormatDateLabels;
 }
 
 export const Action = (props: ActionSingleProps | ActionMultiProps) => {
