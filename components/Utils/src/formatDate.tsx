@@ -32,7 +32,7 @@ export const formatDate = ({
   dateTime,
   now = new Date().toISOString(),
   relative,
-  locale = 'nl-NL',
+  locale = navigator.language || 'nl-NL',
   format = relative ? longDateOptions : shortDateOptions,
   labels = {
     today: 'vandaag',
