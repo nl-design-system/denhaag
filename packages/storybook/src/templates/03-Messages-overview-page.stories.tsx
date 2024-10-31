@@ -16,6 +16,7 @@ import {
   contactData,
   copyright,
   dateFormatLabels,
+  templateLocale,
 } from './util';
 
 import './Messages-page.scss';
@@ -93,7 +94,14 @@ export const BerichtenOverzicht: StoryObj<typeof meta> = {
             </TableHead>
           </Table>
           {messages.map((m) => (
-            <Action key={m.title} link={m.link} dateTime={m.dateTime} now={currentDate} labels={dateFormatLabels}>
+            <Action
+              key={m.title}
+              link={m.link}
+              dateTime={m.dateTime}
+              now={currentDate}
+              locale={templateLocale}
+              labels={dateFormatLabels}
+            >
               {m.new ? (
                 <>
                   <StatusBadge className="denhaag-page-content__badge">Nieuw</StatusBadge>

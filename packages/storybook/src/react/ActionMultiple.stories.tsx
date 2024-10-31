@@ -4,6 +4,7 @@ import { ActionMulti } from '@gemeente-denhaag/action';
 import { ButtonLink } from '@utrecht/component-library-react';
 
 import readme from '../../../../components/Action/README.md?raw';
+import { templateLocale } from '../templates/util';
 
 const labels = {
   today: 'vandaag',
@@ -70,11 +71,23 @@ export const WithDate: Story = {
 };
 
 export const WithDateRelative: Story = {
-  args: { ...Default.args, dateTime: '2023-10-02T19:47:36.593Z', now: '2023-09-28T19:47:36.593Z', relativeDate: true },
+  args: {
+    ...Default.args,
+    dateTime: '2023-10-02T19:47:36.593Z',
+    now: '2023-09-28T19:47:36.593Z',
+    locale: templateLocale,
+    relativeDate: true,
+  },
 };
 
 export const WithDateWarning: Story = {
-  args: { ...Default.args, dateTime: '2023-09-30T19:47:36.593Z', now: '2023-09-28T19:47:36.593Z', relativeDate: true },
+  args: {
+    ...Default.args,
+    dateTime: '2023-09-30T19:47:36.593Z',
+    now: '2023-09-28T19:47:36.593Z',
+    locale: templateLocale,
+    relativeDate: true,
+  },
 };
 
 export const List: Story = {

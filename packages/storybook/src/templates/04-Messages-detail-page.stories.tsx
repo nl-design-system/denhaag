@@ -13,6 +13,7 @@ import {
   contactData,
   copyright,
   dateFormatLabels,
+  templateLocale,
 } from './util';
 import './Messages-page.scss';
 import Sidenav from './components/Sidenav';
@@ -59,6 +60,7 @@ export const BerichtenDetail: StoryObj<typeof meta> = {
             className="denhaag-page-content__task"
             dateTime={taskDateTime}
             now={taskNow}
+            locale={templateLocale}
             labels={dateFormatLabels}
             actions={
               <ButtonLink href="#example" external>
@@ -92,6 +94,7 @@ export const BerichtenDetail: StoryObj<typeof meta> = {
             className="denhaag-page-content__task"
             dateTime={taskDateTime}
             now={taskNow}
+            locale={templateLocale}
             labels={dateFormatLabels}
             actions={
               <ButtonLink href="#example" external>

@@ -8,7 +8,15 @@ import { ResponsiveContent } from '@gemeente-denhaag/responsive-content';
 import { Tabs } from '@gemeente-denhaag/tab';
 import { CaseCard } from '@gemeente-denhaag/card';
 import '@gemeente-denhaag/card-group';
-import { headerProps, footerLegalData, footerSocialData, newsletterData, contactData, copyright } from './util';
+import {
+  headerProps,
+  footerLegalData,
+  footerSocialData,
+  newsletterData,
+  contactData,
+  copyright,
+  templateLocale,
+} from './util';
 
 import './template-story.scss';
 import Sidenav from './components/Sidenav';
@@ -38,8 +46,12 @@ const tabsProps = {
       label: 'Lopende Zaken',
       panelContent: (
         <section className="denhaag-card-group">
-          <CaseCard date={'2020-01-21T00:00:00.000Z'} title="Aanvraag subsidie geluidsisolatie" />
-          <CaseCard date={'2020-01-21T00:00:00.000Z'} title="Aanvraag Ooievaarspas" />
+          <CaseCard
+            date={'2020-01-21T00:00:00.000Z'}
+            locale={templateLocale}
+            title="Aanvraag subsidie geluidsisolatie"
+          />
+          <CaseCard date={'2020-01-21T00:00:00.000Z'} locale={templateLocale} title="Aanvraag Ooievaarspas" />
         </section>
       ),
     },
@@ -47,8 +59,18 @@ const tabsProps = {
       label: 'Afgeronde zaken',
       panelContent: (
         <section className="denhaag-card-group">
-          <CaseCard active={false} date={'2019-01-21T00:00:00.000Z'} title="Aanvraag Parkeervergunning" />
-          <CaseCard active={false} date={'2019-01-21T00:00:00.000Z'} title="Aanvraag Omgevingsvergunning" />
+          <CaseCard
+            active={false}
+            date={'2019-01-21T00:00:00.000Z'}
+            locale={templateLocale}
+            title="Aanvraag Parkeervergunning"
+          />
+          <CaseCard
+            active={false}
+            date={'2019-01-21T00:00:00.000Z'}
+            locale={templateLocale}
+            title="Aanvraag Omgevingsvergunning"
+          />
         </section>
       ),
     },
