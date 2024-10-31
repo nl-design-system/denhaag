@@ -77,6 +77,7 @@ const progressStepsData: StatusProps = {
 
 const contactTimelineData: ContactTimelineProps = {
   labels: { today: 'vandaag', yesterday: 'gisteren' },
+  locale: templateLocale,
   collapsible: true,
   items: [
     {

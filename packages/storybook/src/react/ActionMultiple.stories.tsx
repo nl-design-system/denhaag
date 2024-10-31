@@ -67,7 +67,7 @@ export const Focus: Story = {
 };
 
 export const WithDate: Story = {
-  args: { ...Default.args, dateTime: '2023-09-28T19:47:36.593Z' },
+  args: { ...Default.args, dateTime: '2023-09-28T19:47:36.593Z', locale: templateLocale },
 };
 
 export const WithDateRelative: Story = {
