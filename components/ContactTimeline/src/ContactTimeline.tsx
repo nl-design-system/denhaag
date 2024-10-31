@@ -93,7 +93,7 @@ const ContactTimelineListItem: React.FC<ContactTimelineItemInternalProps> = ({
   file,
   date,
   isoDate,
-  locale = 'nl-NL',
+  locale,
   sender = '',
   labels,
   channel,

@@ -47,7 +47,7 @@ export interface SubjectCardProps {
 /**
  * Primary UI component for user interaction
  */
-export const SubjectCard = ({ title, subTitle, date, locale = 'nl-NL', href, Link = BasicLink }: SubjectCardProps) => {
+export const SubjectCard = ({ title, subTitle, date, locale, href, Link = BasicLink }: SubjectCardProps) => {
   const dateTime = date ? new Date(date) : undefined;
 
   return (

@@ -55,15 +55,7 @@ export interface CaseCardProps {
 /**
  * Primary UI component for user interaction
  */
-export const CaseCard = ({
-  title,
-  subTitle,
-  date,
-  locale = 'nl-NL',
-  href,
-  active = true,
-  Link = BasicLink,
-}: CaseCardProps) => {
+export const CaseCard = ({ title, subTitle, date, locale, href, active = true, Link = BasicLink }: CaseCardProps) => {
   const classNames = clsx('denhaag-case-card', !active && 'denhaag-case-card--archived');
   const dateTime = date ? new Date(date) : undefined;
 
