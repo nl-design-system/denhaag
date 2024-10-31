@@ -12,13 +12,7 @@ interface Props {
   labels?: FormatDateLabels;
 }
 
-export const ActionDate = ({
-  dateTime,
-  now = new Date().toISOString(),
-  relative = false,
-  locale = 'nl-NL',
-  labels,
-}: Props) => {
+export const ActionDate = ({ dateTime, now = new Date().toISOString(), relative = false, locale, labels }: Props) => {
   const [formattedDate, deadline] = formatDate({ dateTime, labels, relative, locale, now });
 
   return (
