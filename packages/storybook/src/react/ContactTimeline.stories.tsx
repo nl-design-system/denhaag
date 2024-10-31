@@ -4,9 +4,11 @@ import { File } from '@gemeente-denhaag/file';
 import { ContactTimeline, ContactTimelineProps } from '@gemeente-denhaag/contact-timeline';
 
 import readme from '../../../../components/ContactTimeline/README.md?raw';
+import { templateLocale } from '../templates/util';
 
 const exampleArgs: ContactTimelineProps = {
   labels: { today: 'vandaag', yesterday: 'gisteren' },
+  locale: templateLocale,
   items: [
     {
       id: '1',

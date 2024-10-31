@@ -2,6 +2,8 @@ import React from 'react';
 import { FacebookIcon, InstagramIcon, LinkedInIcon, TwitterIcon, YouTubeIcon } from '@gemeente-denhaag/icons';
 import { HeaderLogicProps } from '@gemeente-denhaag/header';
 
+export const templateLocale = 'nl-NL';
+
 export const headerProps: HeaderLogicProps = {
   breadcrumbs: {
     navigationPath: [{ label: 'Home', href: 'https://denhaag.nl/' }],

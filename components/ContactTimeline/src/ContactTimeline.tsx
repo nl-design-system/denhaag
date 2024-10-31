@@ -23,7 +23,6 @@ export interface ContactTimelineItemProps {
   sender?: ReactNode;
   date?: ReactNode;
   isoDate?: string;
-  locale?: string;
   channel: ReactNode;
 }
 
@@ -34,6 +33,7 @@ interface Labels {
 
 interface ContactTimelineItemInternalProps extends ContactTimelineItemProps {
   labels: Labels;
+  locale?: string;
   nextItem?: boolean;
   expanded?: boolean;
   toggleExpanded: false | (() => void);
@@ -44,6 +44,7 @@ export interface ContactTimelineProps {
   expandedItems?: Key[];
   collapsible?: boolean;
   labels: Labels;
+  locale?: string;
 }
 
 const toggleState = (key: Key, collection: Key[], setCollection: React.Dispatch<React.SetStateAction<React.Key[]>>) => {
@@ -57,6 +58,7 @@ const toggleState = (key: Key, collection: Key[], setCollection: React.Dispatch<
 export const ContactTimeline: React.FC<ContactTimelineProps> = ({
   items,
   labels,
+  locale,
   expandedItems: initialExpanded = [],
   collapsible = false,
 }: ContactTimelineProps) => {
@@ -73,6 +75,7 @@ export const ContactTimeline: React.FC<ContactTimelineProps> = ({
             expanded={collapsible ? expandedItems.includes(item.id) : false}
             nextItem={nextItem}
             labels={labels}
+            locale={locale}
             toggleExpanded={
               collapsible &&
               (() => {

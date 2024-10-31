@@ -19,6 +19,7 @@ import {
   copyright,
   dateFormatLabels,
   linkData,
+  templateLocale,
 } from './util';
 
 import './template-story.scss';
@@ -156,6 +157,7 @@ export const ZaakDetail: StoryObj<typeof meta> = {
             className="denhaag-page-content__task"
             dateTime={taskDateTime}
             now={taskNow}
+            locale={templateLocale}
             labels={dateFormatLabels}
             actions={<ButtonLink href="#example">Actie</ButtonLink>}
             relativeDate
@@ -172,6 +174,7 @@ export const ZaakDetail: StoryObj<typeof meta> = {
             className="denhaag-page-content__task"
             dateTime={taskDateTime}
             now={taskNow}
+            locale={templateLocale}
             labels={dateFormatLabels}
             actions={<ButtonLink href="#example">Actie</ButtonLink>}
             relativeDate
