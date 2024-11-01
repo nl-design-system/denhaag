@@ -1,4 +1,4 @@
-import { differenceInCalendarDays } from 'date-fns';
+import { differenceInCalendarDays, parseISO } from 'date-fns';
 
 export interface FormatDateLabels {
   today?: string;
@@ -43,7 +43,7 @@ export const formatDate = ({
     approachingDeadline: (daysDifference: number) => `nog ${daysDifference} dag${daysDifference === 1 ? '' : 'en'}`,
   },
 }: Props): [string | null, boolean] => {
-  const date = new Date(dateTime);
+  const date = parseISO(dateTime);
   const daysDifference = differenceInCalendarDays(date, new Date(now));
 
   if (relative) {
