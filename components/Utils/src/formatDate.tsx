@@ -26,12 +26,14 @@ interface Props {
   format?: Intl.DateTimeFormatOptions;
   labels?: FormatDateLabels;
   relative?: boolean;
+  namedDays?: boolean;
 }
 
 export const formatDate = ({
   dateTime,
   now = new Date().toISOString(),
   relative,
+  namedDays = true,
   locale = navigator.language || 'nl-NL',
   format = relative ? longDateOptions : shortDateOptions,
   labels = {
@@ -56,12 +58,14 @@ export const formatDate = ({
     return [`${labels.before} ${date.toLocaleString(locale, format)}`, false];
   }
 
-  if (daysDifference === 0) {
-    return [labels.today || null, false];
-  }
+  if (namedDays) {
+    if (daysDifference === 0) {
+      return [labels.today || null, false];
+    }
 
-  if (daysDifference === -1) {
-    return [labels.yesterday || null, false];
+    if (daysDifference === -1) {
+      return [labels.yesterday || null, false];
+    }
   }
 
   return [date.toLocaleString(locale, format), false];
