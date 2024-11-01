@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import Button from '@gemeente-denhaag/button';
 import { Heading4, Paragraph } from '@gemeente-denhaag/typography';
 import { AlertTriangleIcon, CheckCircleIcon, CircleInformationIcon, CloseIcon } from '@gemeente-denhaag/icons';
@@ -19,12 +19,12 @@ export interface AlertProps {
   /**
    * The title of the alert.
    */
-  title: string;
+  title: ReactNode;
 
   /**
    * The main text of the alert.
    */
-  text: string;
+  text: ReactNode;
 
   /**
    * The variant of the alert, determines which color and icon are displayed.
