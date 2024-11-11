@@ -2,19 +2,19 @@
   font-family: var(--denhaag-accordion-font-family, var(--denhaag-typography-sans-serif-font-family));
 
   @media (prefers-reduced-motion: reduce) {
-    --denhaag-accordion-transition-duration: 0;
-    --denhaag-accordion-open-transition-duration: 0;
+    --denhaag-accordion-transition-duration: 0ms;
+    --denhaag-accordion-open-transition-duration: 0ms;
   }
 }
 
 .denhaag-accordion--reduced-motion {
-  --denhaag-accordion-transition-duration: 0;
-  --denhaag-accordion-open-transition-duration: 0;
+  --denhaag-accordion-transition-duration: 0ms;
+  --denhaag-accordion-open-transition-duration: 0ms;
 }
 
 .denhaag-accordion__container {
-  border: var(--denhaag-accordion-container-border);
-  position: var(--denhaag-accordion-container-position);
+  border: 1px solid var(--denhaag-color-grey-3);
+  position: relative;
 }
 
 .denhaag-accordion__container:last-child {
@@ -24,7 +24,7 @@
 }
 
 .denhaag-accordion__container:first-child {
-  --denhaag-accordion-container-border-top: var(--denhaag-accordion-container-border);
+  --denhaag-accordion-container-border-top: 1px solid var(--denhaag-color-grey-3);
 
   border-top-left-radius: var(--denhaag-accordion-container-border-radius, var(--denhaag-border-radius));
   border-top-right-radius: var(--denhaag-accordion-container-border-radius, var(--denhaag-border-radius));
@@ -35,30 +35,26 @@
 }
 
 .denhaag-accordion__panel {
-  position: inherit;
-  width: inherit;
+  align-items: center;
+  display: flex;
   font-family: inherit;
-  font-weight: var(--denhaag-accordion-panel-font-weight, 400);
-  outline: var(--denhaag-accordion-panel-outline);
-  align-items: var(--denhaag-accordion-panel-align-items);
-  text-decoration: var(--denhaag-accordion-panel-text-decoration);
-  background-color: var(--denhaag-accordion-panel-background-color);
-  display: var(--denhaag-accordion-panel-display);
-  padding-block: var(--denhaag-accordion-panel-padding-block);
-  min-height: var(--denhaag-accordion-panel-min-height);
-  margin-block: var(--denhaag-accordion-panel-margin-block);
-  font-size: var(--denhaag-accordion-panel-font-size);
+  font-size: var(--denhaag-typography-scale-base-font-size);
+  font-weight: var(--denhaag-typography-weight-regular);
+  margin-block: 0;
+  min-height: var(--denhaag-space-4xl);
+  outline: 0;
 }
 
 .denhaag-accordion__panel > .denhaag-icon {
   color: inherit;
-  position: var(--denhaag-accordion-icon-position);
+  font-size: var(--denhaag-space-xl);
+  position: absolute;
   pointer-events: none;
-  top: var(--denhaag-accordion-icon-top);
-  right: var(--denhaag-accordion-icon-right);
-  transform: var(--denhaag-accordion-icon-transform);
+  top: var(--denhaag-space-sm);
+  right: var(--denhaag-space-md);
+  transform: var(--denhaag-accordion-icon-transform, rotate(0deg));
   transition: transform var(--denhaag-accordion-transition-duration, 0ms)
-    var(--denhaag-accordion-transition-timing-function, ease);
+    var(--denhaag-accordion-transition-timing-function, ease-in-out);
 }
 
 .denhaag-accordion__title {
@@ -66,17 +62,13 @@
   font-weight: inherit;
   font-size: inherit;
   background: inherit;
-  border: inherit;
+  border: none;
   color: inherit; // Fix for iPhone.
   text-align: inherit;
   hyphens: auto;
-  margin-block: 0;
-  flex-grow: var(--denhaag-accordion-title-flex-grow);
-  padding-block: var(--denhaag-accordion-title-padding-block);
-  padding-inline-start: var(--denhaag-accordion-title-padding-inline);
-  padding-inline-end: calc(
-    (var(--denhaag-accordion-title-padding-inline) * 2) + var(--denhaag-accordion-icon-width, 0)
-  );
+  flex-grow: 1;
+  padding-block: var(--denhaag-spacing-sm);
+  padding-inline: var(--denhaag-space-md) calc((var(--denhaag-space-md) * 2) + var(--denhaag-space-xl));
 }
 
 .denhaag-accordion__title--focus,
@@ -84,12 +76,11 @@
 .denhaag-accordion__panel--hover .denhaag-accordion__title,
 .denhaag-accordion__panel--hover .denhaag-icon,
 .denhaag-accordion__title:focus-visible {
-  color: var(--denhaag-accordion-panel-color);
-  outline: var(--denhaag-accordion-panel-outline);
+  color: var(--denhaag-color-green-3);
+  outline: 0;
 }
 
-.denhaag-accordion__container--open .denhaag-accordion__title,
-.denhaag-accordion__container--open .denhaag-icon {
+.denhaag-accordion__container--open .denhaag-accordion__title {
   color: inherit;
 }
 
@@ -102,24 +93,21 @@
 
 .denhaag-accordion__title:focus-visible,
 .denhaag-accordion__title:focus-visible + .denhaag-icon {
-  color: var(--denhaag-accordion-panel-color);
-  outline: var(--denhaag-accordion-panel-outline);
+  color: var(--denhaag-color-green-3);
+  outline: 0;
 }
 
 .denhaag-accordion__container--open .denhaag-accordion__panel--hover .denhaag-accordion__title,
-.denhaag-accordion__container--open .denhaag-accordion__panel--hover .denhaag-icon {
-  color: var(--denhaag-accordion-container-open-color);
-}
-
+.denhaag-accordion__container--open .denhaag-accordion__panel--hover .denhaag-icon,
 .denhaag-accordion__container--open .denhaag-accordion__panel:hover .denhaag-accordion__title,
 .denhaag-accordion__container--open .denhaag-accordion__panel:hover .denhaag-icon {
-  color: var(--denhaag-accordion-container-open-color);
+  color: var(--denhaag-accordion-container-open-color, var(--denhaag-color-green-4));
 }
 
 .denhaag-accordion__panel:hover .denhaag-accordion__title:not([disabled]),
 .denhaag-accordion__panel:hover .denhaag-accordion__title:not([disabled]) + .denhaag-icon {
-  color: var(--denhaag-accordion-panel-color);
-  outline: var(--denhaag-accordion-panel-outline);
+  color: var(--denhaag-color-green-3);
+  outline: 0;
 }
 
 .denhaag-accordion__title--disabled::before,
@@ -130,49 +118,45 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: var(--denhaag-accordion-title-disabled-background-color);
+  background-color: var(--denhaag-color-grey-1);
   z-index: -1;
 }
 
 .denhaag-accordion__title--focus::after,
 .denhaag-accordion__title:focus-visible::after {
-  border-radius: var(--denhaag-accordion-title-focus-border-radius);
+  border-radius: var(--denhaag-border-radius);
   content: "";
   height: 100%;
   left: 0;
-  outline: var(--denhaag-accordion-title-focus-outline);
+  outline: var(--denhaag-focus-border);
   position: absolute;
   top: 0;
   width: 100%;
 }
 
 .denhaag-accordion__container--open {
-  --denhaag-accordion-title-color: var(--denhaag-accordion-container-open-title-color);
-  --denhaag-accordion-icon-color: var(--denhaag-accordion-container-open-icon-color);
-  --denhaag-accordion-icon-transform: var(--denhaag-accordion-container-open-icon-transform);
+  --denhaag-accordion-icon-transform: rotate(-180deg);
   --denhaag-accordion-transition-duration: var(--denhaag-accordion-open-transition-duration);
   --denhaag-accordion-transition-timing-function: var(--denhaag-accordion-open-transition-timing-function);
   --denhaag-accordion-details-height: var(--denhaag-accordion-details-max-height, 100%); // Value set by JS.
 }
 
 .denhaag-accordion__container--open .denhaag-accordion__panel {
-  --denhaag-accordion-panel-font-weight: var(--denhaag-accordion-container-open-panel-font-weight);
+  --denhaag-accordion-panel-font-weight: var(--denhaag-typography-weight-bold);
 
-  color: var(--denhaag-accordion-container-open-panel-color);
+  color: var(--denhaag-accordion-container-open-panel-color, var(--denhaag-color-green-3));
 }
 
 .denhaag-accordion__details {
-  max-height: var(--denhaag-accordion-details-height, 0);
+  display: none;
+  max-height: var(--denhaag-accordion-details-height);
   overflow: hidden;
   padding-block-start: var(--denhaag-space-3xs);
-  padding-inline-end: var(--denhaag-accordion-details-margin-inline-end);
   transition: max-height var(--denhaag-accordion-transition-duration, 0ms)
-    var(--denhaag-accordion-transition-timing-function, ease);
-  display: var(--denhaag-accordion-details-display);
+    var(--denhaag-accordion-transition-timing-function, ease-in-out);
 }
 
 .denhaag-accordion__details-content {
-  padding-block-start: var(--denhaag-accordion-details-content-padding-block-start);
-  padding-block-end: var(--denhaag-accordion-details-content-padding-block-end);
-  padding-inline: var(--denhaag-accordion-details-content-padding-inline);
+  padding-block: 0 var(--denhaag-space-md);
+  padding-inline: var(--denhaag-space-md);
 }
