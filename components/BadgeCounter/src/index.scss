@@ -1,7 +1,7 @@
 @import "~@utrecht/components/badge-counter/css";
 
 .denhaag-badge-counter {
-  --denhaag-dot-indicator-size: 8px;
+  --denhaag-dot-indicator-size: var(--denhaag-space-xs);
 }
 
 .denhaag-badge-counter__counter {
