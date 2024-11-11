@@ -22,7 +22,7 @@
           "value": "{denhaag.space.block.md}"
         },
         "margin-inline-end": {
-          "value": "{denhaag.space.inline.xl}"
+          "value": "{denhaag.space.xl}"
         },
         "object-fit": {
           "value": "cover"

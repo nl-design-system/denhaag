@@ -128,7 +128,7 @@ ol.denhaag-breadcrumb__list {
 }
 
 .denhaag-breadcrumb__item--hidden .denhaag-breadcrumb__text + .denhaag-icon {
-  margin-inline-start: var(--denhaag-breadcrumb-hidden-icon-margin-inline-start, var(--denhaag-space-inline-2xl));
+  margin-inline-start: var(--denhaag-breadcrumb-hidden-icon-margin-inline-start, var(--denhaag-space-2xl));
 }
 
 [dir="rtl"] .denhaag-breadcrumb__link > .denhaag-breadcrumb__text + .denhaag-icon,
@@ -166,8 +166,8 @@ ol.denhaag-breadcrumb__list {
   font-size: var(--denhaag-breadcrumb-hidden-text-font-size, var(--denhaag-typography-scale-s-font-size));
   line-height: var(--denhaag-breadcrumb-hidden-text-height, var(--denhaag-typography-scale-s-line-height));
   font-weight: var(--denhaag-breadcrumb-hidden-text-font-weight, var(--denhaag-typography-weight-regular));
-  padding-block-start: var(--denhaag-breadcrumb-hidden-text-padding-block, var(--denhaag-space-block-xs));
-  padding-block-end: var(--denhaag-breadcrumb-hidden-text-padding-block, var(--denhaag-space-block-xs));
+  padding-block-start: var(--denhaag-breadcrumb-hidden-text-padding-block, var(--denhaag-space-xs));
+  padding-block-end: var(--denhaag-breadcrumb-hidden-text-padding-block, var(--denhaag-space-xs));
   padding-inline-start: var(--denhaag-breadcrumb-hidden-text-padding-inline, 0.75rem);
   padding-inline-end: var(--denhaag-breadcrumb-hidden-text-padding-inline, 0.75rem);
   transform: var(

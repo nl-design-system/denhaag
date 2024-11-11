@@ -12,8 +12,8 @@
         "font-family": { "value": "{denhaag.typography.sans-serif.font-family}" },
         "padding-block-start": { "value": "{denhaag.space.block.xs}" },
         "padding-block-end": { "value": "{denhaag.space.block.xs}" },
-        "padding-inline-start": { "value": "{denhaag.space.inline.xs}" },
-        "padding-inline-end": { "value": "{denhaag.space.inline.xs}" },
+        "padding-inline-start": { "value": "{denhaag.space.xs}" },
+        "padding-inline-end": { "value": "{denhaag.space.xs}" },
         "selected": {
           "font-weight": { "value": "700" }
         }

@@ -160,12 +160,12 @@
 .denhaag-dynamic-content__card-icon {
   align-self: end;
   color: var(--denhaag-dynamic-content-icon-color);
-  height: var(--denhaag-dynamic-content-icon-size, var(--denhaag-space-block-xl));
+  height: var(--denhaag-dynamic-content-icon-size, var(--denhaag-space-xl));
   opacity: var(--denhaag-dynamic-content-icon-opacity);
   position: relative;
   transition: opacity var(--denhaag-dynamic-content-card-transition-timing-function, ease-in-out)
     var(--denhaag-dynamic-content-card-transition-duration, 200ms);
-  width: var(--denhaag-dynamic-content-icon-size, var(--denhaag-space-block-xl));
+  width: var(--denhaag-dynamic-content-icon-size, var(--denhaag-space-xl));
 }
 
 .denhaag-dynamic-content__card-icon::before {

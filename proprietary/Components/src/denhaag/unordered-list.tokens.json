@@ -6,7 +6,7 @@
       },
       "lead": {
         "margin-block-start": {
-          "value": "{denhaag.space.block.2xl}"
+          "value": "{denhaag.space.2xl}"
         }
       },
       "link-label": {
@@ -32,7 +32,7 @@
       },
       "paragraph": {
         "margin-block-start": {
-          "value": "{denhaag.space.block.md}"
+          "value": "{denhaag.space.md}"
         }
       }
     }

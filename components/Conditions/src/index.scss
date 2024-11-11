@@ -14,7 +14,7 @@
 .denhaag-conditions__label {
   color: var(--denhaag-conditions-label-color);
   display: var(--denhaag-conditions-label-display);
-  height: calc(var(--denhaag-conditions-label-height) - var(--denhaag-space-block-xs));
+  height: calc(var(--denhaag-conditions-label-height) - var(--denhaag-space-xs));
   justify-content: var(--denhaag-conditions-label-justify-content);
   overflow: var(--denhaag-conditions-label-overflow);
   position: var(--denhaag-conditions-label-position);
@@ -26,7 +26,7 @@
   position: var(--denhaag-conditions-label-before-position);
   background-color: var(--denhaag-conditions-label-before-background-color);
   clip-path: var(--denhaag-conditions-label-before-clip-path-xs);
-  height: calc(var(--denhaag-conditions-label-height) - var(--denhaag-space-block-xs));
+  height: calc(var(--denhaag-conditions-label-height) - var(--denhaag-space-xs));
   width: var(--denhaag-conditions-label-width);
 
   @media (min-width: 768px) {
@@ -87,12 +87,12 @@
 
 @media (min-width: 768px) {
   .denhaag-conditions__label {
-    --denhaag-conditions-label-height: var(--denhaag-space-block-5xl);
+    --denhaag-conditions-label-height: var(--denhaag-space-5xl);
     --denhaag-conditions-label-width: var(--denhaag-conditions-label-width-desktop);
   }
 
   .denhaag-conditions__label::before {
-    --denhaag-conditions-label-before-size: var(--denhaag-space-block-5xl);
+    --denhaag-conditions-label-before-size: var(--denhaag-space-5xl);
   }
 
   .denhaag-conditions .denhaag-list__subheader {
@@ -100,14 +100,14 @@
   }
 
   .denhaag-conditions__title {
-    --denhaag-list-item-padding-inline: var(--denhaag-space-inline-2xl);
+    --denhaag-list-item-padding-inline: var(--denhaag-space-2xl);
   }
 
   .denhaag-list.denhaag-conditions__list {
-    --denhaag-conditions-list-padding-block-end: var(--denhaag-space-block-lg);
+    --denhaag-conditions-list-padding-block-end: var(--denhaag-space-lg);
   }
 
   .denhaag-conditions__list-item {
-    --denhaag-list-item-padding-inline: var(--denhaag-space-inline-2xl);
+    --denhaag-list-item-padding-inline: var(--denhaag-space-2xl);
   }
 }

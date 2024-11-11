@@ -23,7 +23,7 @@
         }
       },
       "overflow": { "value": "hidden" },
-      "size": { "value": "{denhaag.space.block.lg}" },
+      "size": { "value": "{denhaag.space.lg}" },
       "border-radius": { "value": "0.1875rem" },
       "transition-duration": { "value": "200ms" },
       "timing-function": { "value": "ease-in" }

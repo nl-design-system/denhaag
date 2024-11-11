@@ -9,7 +9,7 @@
           "value": ".75rem"
         },
         "width": {
-          "value": "{denhaag.space.inline.md}"
+          "value": "{denhaag.space.md}"
         }
       },
       "padding-block": {
@@ -102,7 +102,7 @@
           "value": "{denhaag.typography.scale.lg.line-height}"
         },
         "padding-inline": {
-          "value": "{denhaag.space.inline.xl}"
+          "value": "{denhaag.space.xl}"
         }
       },
       "list": {
@@ -115,7 +115,7 @@
           "value": "normal"
         },
         "padding-inline": {
-          "value": "{denhaag.space.inline.xl}"
+          "value": "{denhaag.space.xl}"
         }
       },
       "item-icon": {
@@ -126,7 +126,7 @@
           "value": "block"
         },
         "margin-inline-end": {
-          "value": "{denhaag.space.inline.xs}"
+          "value": "{denhaag.space.xs}"
         },
         "padding-block-start": {
           "value": "2px"

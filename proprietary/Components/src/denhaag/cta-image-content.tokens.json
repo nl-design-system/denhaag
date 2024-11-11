@@ -25,13 +25,13 @@
       },
       "content": {
         "padding-inline": {
-          "value": "{denhaag.space.inline.2xl}"
+          "value": "{denhaag.space.2xl}"
         },
         "padding-block": {
-          "value": "{denhaag.space.block.2xl}"
+          "value": "{denhaag.space.2xl}"
         },
         "width": {
-          "value": "calc(50% - (2 * {denhaag.space.inline.2xl}))"
+          "value": "calc(50% - (2 * {denhaag.space.2xl}))"
         }
       },
       "heading": {
@@ -58,7 +58,7 @@
       "illustration-variant": {
         "image-container": {
           "margin": {
-            "value": "{denhaag.space.block.2xl}"
+            "value": "{denhaag.space.2xl}"
           }
         }
       }

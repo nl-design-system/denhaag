@@ -87,7 +87,7 @@
           "value": 1
         },
         "padding-inline": {
-          "value": "{denhaag.space.inline.md}"
+          "value": "{denhaag.space.md}"
         },
         "padding-block": {
           "value": "0.75rem"
@@ -117,10 +117,10 @@
           "value": "0.75rem"
         },
         "right": {
-          "value": "{denhaag.space.inline.md}"
+          "value": "{denhaag.space.md}"
         },
         "width": {
-          "value": "{denhaag.space.inline.xl}"
+          "value": "{denhaag.space.xl}"
         }
       },
       "details": {
@@ -130,10 +130,10 @@
             "value": 0
           },
           "padding-block-end": {
-            "value": "{denhaag.space.block.md}"
+            "value": "{denhaag.space.md}"
           },
           "padding-inline": {
-            "value": "{denhaag.space.inline.md}"
+            "value": "{denhaag.space.md}"
           }
         },
         "padding-inline-end": {

@@ -1,162 +1,81 @@
 {
   "denhaag": {
     "space": {
-      "block": {
-        "3xs": {
-          "comment": "Extra Small 3",
-          "css": {
-            "syntax": "<length>",
-            "inherits": true
-          }
-        },
-        "2xs": {
-          "comment": "Extra Small 2",
-          "css": {
-            "syntax": "<length>",
-            "inherits": true
-          }
-        },
-        "xs": {
-          "comment": "Extra Small",
-          "css": {
-            "syntax": "<length>",
-            "inherits": true
-          }
-        },
-        "sm": {
-          "comment": "Small",
-          "css": {
-            "syntax": "<length>",
-            "inherits": true
-          }
-        },
-        "md": {
-          "comment": "Medium",
-          "css": {
-            "syntax": "<length>",
-            "inherits": true
-          }
-        },
-        "lg": {
-          "comment": "Large",
-          "css": {
-            "syntax": "<length>",
-            "inherits": true
-          }
-        },
-        "xl": {
-          "comment": "Extra Large",
-          "css": {
-            "syntax": "<length>",
-            "inherits": true
-          }
-        },
-        "2xl": {
-          "comment": "Extra Large 2",
-          "css": {
-            "syntax": "<length>",
-            "inherits": true
-          }
-        },
-        "3xl": {
-          "comment": "Extra Large 3",
-          "css": {
-            "syntax": "<length>",
-            "inherits": true
-          }
-        },
-        "4xl": {
-          "comment": "Extra Large 4",
-          "css": {
-            "syntax": "<length>",
-            "inherits": true
-          }
-        },
-        "5xl": {
-          "comment": "Extra Large 5",
-          "css": {
-            "syntax": "<length>",
-            "inherits": true
-          }
+      "3xs": {
+        "comment": "Extra Small 3",
+        "css": {
+          "syntax": "<length>",
+          "inherits": true
         }
       },
-      "inline": {
-        "3xs": {
-          "comment": "Extra Small 3",
-          "css": {
-            "syntax": "<length>",
-            "inherits": true
-          }
-        },
-        "2xs": {
-          "comment": "Extra Small 2",
-          "css": {
-            "syntax": "<length>",
-            "inherits": true
-          }
-        },
-        "xs": {
-          "comment": "Extra Small",
-          "css": {
-            "syntax": "<length>",
-            "inherits": true
-          }
-        },
-        "sm": {
-          "comment": "Small",
-          "css": {
-            "syntax": "<length>",
-            "inherits": true
-          }
-        },
-        "md": {
-          "comment": "Medium",
-          "css": {
-            "syntax": "<length>",
-            "inherits": true
-          }
-        },
-        "lg": {
-          "comment": "Large",
-          "css": {
-            "syntax": "<length>",
-            "inherits": true
-          }
-        },
-        "xl": {
-          "comment": "Extra Large",
-          "css": {
-            "syntax": "<length>",
-            "inherits": true
-          }
-        },
-        "2xl": {
-          "comment": "Extra Large 2",
-          "css": {
-            "syntax": "<length>",
-            "inherits": true
-          }
-        },
-        "3xl": {
-          "comment": "Extra Large 3",
-          "css": {
-            "syntax": "<length>",
-            "inherits": true
-          }
-        },
-        "4xl": {
-          "comment": "Extra Large 4",
-          "css": {
-            "syntax": "<length>",
-            "inherits": true
-          }
-        },
-        "5xl": {
-          "comment": "Extra Large 5",
-          "css": {
-            "syntax": "<length>",
-            "inherits": true
-          }
+      "2xs": {
+        "comment": "Extra Small 2",
+        "css": {
+          "syntax": "<length>",
+          "inherits": true
+        }
+      },
+      "xs": {
+        "comment": "Extra Small",
+        "css": {
+          "syntax": "<length>",
+          "inherits": true
+        }
+      },
+      "sm": {
+        "comment": "Small",
+        "css": {
+          "syntax": "<length>",
+          "inherits": true
+        }
+      },
+      "md": {
+        "comment": "Medium",
+        "css": {
+          "syntax": "<length>",
+          "inherits": true
+        }
+      },
+      "lg": {
+        "comment": "Large",
+        "css": {
+          "syntax": "<length>",
+          "inherits": true
+        }
+      },
+      "xl": {
+        "comment": "Extra Large",
+        "css": {
+          "syntax": "<length>",
+          "inherits": true
+        }
+      },
+      "2xl": {
+        "comment": "Extra Large 2",
+        "css": {
+          "syntax": "<length>",
+          "inherits": true
+        }
+      },
+      "3xl": {
+        "comment": "Extra Large 3",
+        "css": {
+          "syntax": "<length>",
+          "inherits": true
+        }
+      },
+      "4xl": {
+        "comment": "Extra Large 4",
+        "css": {
+          "syntax": "<length>",
+          "inherits": true
+        }
+      },
+      "5xl": {
+        "comment": "Extra Large 5",
+        "css": {
+          "syntax": "<length>",
+          "inherits": true
         }
       }
     }

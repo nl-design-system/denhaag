@@ -8,7 +8,7 @@
         "color": { "value": "{denhaag.color.grey.4}" },
         "font-weight": { "value": "{denhaag.typography.weight.regular}" },
         "gap": {
-          "value": "{denhaag.space.block.2xs}"
+          "value": "{denhaag.space.2xs}"
         },
         "min-width": { "value": "7.5rem" },
         "outline-color": { "value": "{denhaag.focus.border-color}" },
@@ -18,18 +18,18 @@
           "padding": {
             "block": {
               "end": {
-                "value": "{denhaag.space.block.2xs}"
+                "value": "{denhaag.space.2xs}"
               },
               "start": {
-                "value": "{denhaag.space.block.2xs}"
+                "value": "{denhaag.space.2xs}"
               }
             },
             "inline": {
               "end": {
-                "value": "{denhaag.space.block.xs}"
+                "value": "{denhaag.space.xs}"
               },
               "start": {
-                "value": "{denhaag.space.block.xs}"
+                "value": "{denhaag.space.xs}"
               }
             }
           }
@@ -63,7 +63,7 @@
           "display": { "value": "contents" }
         },
         "shadow": {
-          "width": { "value": "{denhaag.space.inline.5xl}" },
+          "width": { "value": "{denhaag.space.5xl}" },
           "height": { "value": "inherit" },
           "position": { "value": "absolute" },
           "background": { "value": "linear-gradient(270deg, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0) 76.92%)" },

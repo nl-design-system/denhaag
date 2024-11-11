@@ -48,7 +48,7 @@
   .denhaag-button,
   .denhaag-link--with-icon-start {
     margin-block-end: 0;
-    margin-block-start: var(--denhaag-space-block-xl);
+    margin-block-start: var(--denhaag-space-xl);
 
     &::after {
       content: "";
@@ -82,8 +82,8 @@
     --denhaag-cta-image-content-border: 0;
     --denhaag-cta-image-content-heading-font-size: var(--denhaag-typography-scale-xl-font-size);
     --denhaag-cta-image-content-heading-line-height: var(--denhaag-typography-scale-xl-line-height);
-    --denhaag-cta-image-content-content-padding-block: var(--denhaag-space-block-xl);
-    --denhaag-cta-image-content-content-padding-inline: var(--denhaag-space-inline-xl);
+    --denhaag-cta-image-content-content-padding-block: var(--denhaag-space-xl);
+    --denhaag-cta-image-content-content-padding-inline: var(--denhaag-space-xl);
     --denhaag-cta-image-content-image-aspect-ratio: 248 / 176;
 
     @media (min-width: 768px) {
@@ -123,7 +123,7 @@
         --denhaag-cta-image-content-image-width: calc(
           50% - (2 * var(--denhaag-cta-image-content-illustration-variant-image-container-margin))
         );
-        --denhaag-cta-image-content-illustration-variant-image-container-margin: var(--denhaag-space-block-4xl);
+        --denhaag-cta-image-content-illustration-variant-image-container-margin: var(--denhaag-space-4xl);
 
         width: var(--denhaag-cta-image-content-image-width);
       }

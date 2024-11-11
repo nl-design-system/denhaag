@@ -22,18 +22,18 @@
         "value": 1.3
       },
       "gap": {
-        "value": "{denhaag.space.block.lg}"
+        "value": "{denhaag.space.lg}"
       },
       "padding": {
         "block": {
-          "value": "{denhaag.space.block.xl}"
+          "value": "{denhaag.space.xl}"
         },
         "inline": {
-          "value": "{denhaag.space.inline.md}"
+          "value": "{denhaag.space.md}"
         }
       },
       "width": {
-        "value": "{denhaag.space.block.5xl}"
+        "value": "{denhaag.space.5xl}"
       },
       "focus": {
         "dot": {
@@ -81,7 +81,7 @@
       },
       "excerpt": {
         "gap": {
-          "value": "{denhaag.space.block.2xs}"
+          "value": "{denhaag.space.2xs}"
         }
       },
       "title": {

@@ -19,14 +19,14 @@
         }
       },
       "gap": {
-        "value": "{denhaag.space.block.lg}"
+        "value": "{denhaag.space.lg}"
       },
       "padding": {
         "block": {
-          "value": "{denhaag.space.block.xl}"
+          "value": "{denhaag.space.xl}"
         },
         "inline": {
-          "value": "{denhaag.space.inline.md}"
+          "value": "{denhaag.space.md}"
         }
       },
       "highlight": {
@@ -38,7 +38,7 @@
         }
       },
       "width": {
-        "value": "{denhaag.space.block.5xl}"
+        "value": "{denhaag.space.5xl}"
       },
       "focus": {
         "highlight": {
@@ -64,7 +64,7 @@
       },
       "icon": {
         "size": {
-          "value": "{denhaag.space.block.lg}"
+          "value": "{denhaag.space.lg}"
         }
       },
       "text-decoration": {

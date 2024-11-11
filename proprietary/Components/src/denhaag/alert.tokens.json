@@ -10,24 +10,24 @@
         }
       },
       "padding-block-start": {
-        "value": "{denhaag.space.block.xl}"
+        "value": "{denhaag.space.xl}"
       },
       "padding-block-end": {
-        "value": "{denhaag.space.block.xl}"
+        "value": "{denhaag.space.xl}"
       },
       "padding-inline-start": {
-        "value": "{denhaag.space.block.xl}"
+        "value": "{denhaag.space.xl}"
       },
       "padding-inline-end": {
-        "value": "{denhaag.space.block.xl}"
+        "value": "{denhaag.space.xl}"
       },
       "content": {
         "margin-inline": {
           "start": {
-            "value": "{denhaag.space.block.xl}"
+            "value": "{denhaag.space.xl}"
           },
           "end": {
-            "value": "{denhaag.space.block.xl}"
+            "value": "{denhaag.space.xl}"
           }
         }
       },
@@ -35,7 +35,7 @@
         "padding": {
           "block": {
             "start": {
-              "value": "{denhaag.space.block.md}"
+              "value": "{denhaag.space.md}"
             }
           }
         }
@@ -56,10 +56,10 @@
           }
         },
         "padding-block-start": {
-          "value": "{denhaag.space.block.2xs}"
+          "value": "{denhaag.space.2xs}"
         },
         "padding-inline-start": {
-          "value": "{denhaag.space.inline.xl}"
+          "value": "{denhaag.space.xl}"
         }
       },
       "error": {

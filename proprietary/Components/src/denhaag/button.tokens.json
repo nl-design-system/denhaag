@@ -8,8 +8,8 @@
       "font-size": {
         "value": "{denhaag.typography.scale.base.font-size}"
       },
-      "padding-block": { "value": "{denhaag.space.block.xs}" },
-      "padding-inline": { "value": "{denhaag.space.inline.md}" },
+      "padding-block": { "value": "{denhaag.space.xs}" },
+      "padding-inline": { "value": "{denhaag.space.md}" },
       "focus": {
         "border-color": { "value": "{denhaag.focus.border-color}" },
         "border-width": { "value": "{denhaag.focus.border-width}" },
@@ -55,7 +55,7 @@
       },
       "large-size": {
         "padding-block": { "value": "0.40625rem" },
-        "padding-inline": { "value": "{denhaag.space.inline.lg}" },
+        "padding-inline": { "value": "{denhaag.space.lg}" },
         "line-height": { "value": "1.75" }
       },
       "medium-size": {
@@ -65,7 +65,7 @@
       "icon-only": {
         "height": { "value": "2.6875rem" },
         "icon": {
-          "height": { "value": "{denhaag.space.block.lg}" }
+          "height": { "value": "{denhaag.space.lg}" }
         }
       },
       "transition": {

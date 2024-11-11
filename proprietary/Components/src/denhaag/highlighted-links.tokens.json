@@ -2,7 +2,7 @@
   "denhaag": {
     "highlighted-links": {
       "background-color": { "value": "{denhaag.color.warmgrey.1}" },
-      "padding-block-start": { "value": "{denhaag.space.block.3xl}" },
+      "padding-block-start": { "value": "{denhaag.space.3xl}" },
       "padding-block-end": { "value": "{denhaag.space.block.3xl}" },
       "width": { "value": "100%" },
       "list": {

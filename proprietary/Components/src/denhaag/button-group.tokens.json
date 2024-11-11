@@ -2,10 +2,10 @@
   "denhaag": {
     "button-group": {
       "padding": {
-        "value": "{denhaag.space.block.md}"
+        "value": "{denhaag.space.md}"
       },
       "gap": {
-        "value": "{denhaag.space.block.md}"
+        "value": "{denhaag.space.md}"
       }
     }
   }

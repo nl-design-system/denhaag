@@ -14,19 +14,19 @@
       },
       "container": {
         "gutter": {
-          "value": "{denhaag.space.inline.xs}"
+          "value": "{denhaag.space.xs}"
         },
         "gutter-s": {
-          "value": "{denhaag.space.inline.md}"
+          "value": "{denhaag.space.md}"
         },
         "gutter-m": {
-          "value": "{denhaag.space.inline.xl}"
+          "value": "{denhaag.space.xl}"
         },
         "gutter-l": {
-          "value": "{denhaag.space.inline.2xl}"
+          "value": "{denhaag.space.2xl}"
         },
         "gutter-xl": {
-          "value": "{denhaag.space.inline.3xl}"
+          "value": "{denhaag.space.3xl}"
         },
         "max-width": {
           "value": "100%"
@@ -47,7 +47,7 @@
           "value": "98rem"
         },
         "padding": {
-          "value": "{denhaag.space.inline.xl}"
+          "value": "{denhaag.space.xl}"
         },
         "padding-l": {
           "value": 0
@@ -72,7 +72,7 @@
               "value": "5.75rem"
             },
             "block-s": {
-              "value": "{denhaag.space.block.3xl}"
+              "value": "{denhaag.space.3xl}"
             }
           },
           "column": {
@@ -152,10 +152,10 @@
           },
           "padding": {
             "block": {
-              "value": "{denhaag.space.block.xl}"
+              "value": "{denhaag.space.xl}"
             },
             "block-s": {
-              "value": "{denhaag.space.block.3xl}"
+              "value": "{denhaag.space.3xl}"
             }
           },
           "column": {
@@ -297,13 +297,13 @@
             "value": "4rem"
           },
           "padding-block-s": {
-            "value": "{denhaag.space.block.3xl}"
+            "value": "{denhaag.space.3xl}"
           },
           "padding-inline-start": {
-            "value": "{denhaag.space.inline.md}"
+            "value": "{denhaag.space.md}"
           },
           "padding-inline-end": {
-            "value": "{denhaag.space.inline.md}"
+            "value": "{denhaag.space.md}"
           },
           "transform": {
             "value": "2rem"
@@ -311,7 +311,7 @@
         },
         "title": {
           "padding-block-end": {
-            "value": "{denhaag.space.block.md}"
+            "value": "{denhaag.space.md}"
           },
           "font-size-m": {
             "value": "{denhaag.typography.scale.3xl.font-size}"
@@ -325,7 +325,7 @@
             "value": "{denhaag.typography.scale.xl.font-size}"
           },
           "padding-block-end": {
-            "value": "{denhaag.space.block.2xl}"
+            "value": "{denhaag.space.2xl}"
           },
           "line-height": {
             "value": "{denhaag.typography.scale.s.line-height}"
@@ -380,7 +380,7 @@
             "value": "auto"
           },
           "padding-inline": {
-            "value": "{denhaag.space.inline.3xl}"
+            "value": "{denhaag.space.3xl}"
           },
           "padding-inline-end-s": {
             "value": "0"
@@ -403,13 +403,13 @@
             "value": " polygon(0 0, 100% 0, 100% 97%, 0% 100%)"
           },
           "padding-block-end": {
-            "value": "{denhaag.space.block.4xl}"
+            "value": "{denhaag.space.4xl}"
           },
           "padding-block-start": {
-            "value": "{denhaag.space.block.2xl}"
+            "value": "{denhaag.space.2xl}"
           },
           "padding-inline": {
-            "value": "{denhaag.space.inline.2xl}"
+            "value": "{denhaag.space.2xl}"
           },
           "position": {
             "value": "absolute"
@@ -466,7 +466,7 @@
           }
         },
         "margin-block-end": {
-          "value": "{denhaag.space.block.4xl}"
+          "value": "{denhaag.space.4xl}"
         },
         "title": {
           "font-size": {

@@ -14,7 +14,7 @@
       "xl": {
         "gap": { "value": "40px" }
       },
-      "margin-block": { "value": "{denhaag.space.block.lg}" }
+      "margin-block": { "value": "{denhaag.space.lg}" }
     }
   }
 }

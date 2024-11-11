@@ -16,7 +16,7 @@
       "focus": {
         "transition": { "value": "none" }
       },
-      "gap": { "value": "{denhaag.space.block.md}" },
+      "gap": { "value": "{denhaag.space.md}" },
       "icon": {
         "align-self": { "value": "end" },
         "border-radius": { "value": "0.1875rem" },

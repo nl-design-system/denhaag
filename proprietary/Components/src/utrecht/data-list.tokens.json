@@ -2,10 +2,10 @@
   "utrecht": {
     "data-list": {
       "margin-block-end": {
-        "value": "{denhaag.space.inline.xs}"
+        "value": "{denhaag.space.xs}"
       },
       "margin-block-start": {
-        "value": "{denhaag.space.inline.xs}"
+        "value": "{denhaag.space.xs}"
       },
       "item-key": {
         "color": {
@@ -31,10 +31,10 @@
       "rows": {
         "item": {
           "margin-block-start": {
-            "value": "{denhaag.space.inline.md}"
+            "value": "{denhaag.space.md}"
           },
           "padding-inline-start": {
-            "value": "{denhaag.space.inline.xs}"
+            "value": "{denhaag.space.xs}"
           }
         },
         "item-value": {

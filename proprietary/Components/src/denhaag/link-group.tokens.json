@@ -2,7 +2,7 @@
   "denhaag": {
     "link-group": {
       "image": {
-        "margin-block-end": { "value": "{denhaag.space.block.md}" },
+        "margin-block-end": { "value": "{denhaag.space.md}" },
         "size": { "value": "8.75rem" },
         "object-fit": { "value": "cover" }
       },
@@ -10,13 +10,13 @@
         "margin-block": { "value": "0" }
       },
       "list": {
-        "margin-block-start": { "value": "{denhaag.space.block.xs}" },
-        "margin-block-end": { "value": "{denhaag.space.block.md}" },
+        "margin-block-start": { "value": "{denhaag.space.xs}" },
+        "margin-block-end": { "value": "{denhaag.space.md}" },
         "list-style": { "value": "none" },
         "padding-inline-start": { "value": "0" }
       },
       "list-item": {
-        "padding-block": { "value": "{denhaag.space.block.xs}" },
+        "padding-block": { "value": "{denhaag.space.xs}" },
         "font-weight": { "value": "{denhaag.typography.weight.regular}" }
       },
       "dark": {
@@ -37,7 +37,7 @@
       },
       "link-icon-denhaag-icon": {
         "align-self": { "value": "start" },
-        "padding-block-start": { "value": "{denhaag.space.block.3xs}" },
+        "padding-block-start": { "value": "{denhaag.space.3xs}" },
         "height": { "value": "0.85rem" }
       }
     }

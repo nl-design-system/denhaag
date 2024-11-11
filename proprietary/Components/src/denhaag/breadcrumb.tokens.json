@@ -11,10 +11,10 @@
         "value": "{denhaag.typography.weight.regular}"
       },
       "gap": {
-        "value": "{denhaag.space.inline.xs}"
+        "value": "{denhaag.space.xs}"
       },
       "padding-block": {
-        "value": "{denhaag.space.block.md}"
+        "value": "{denhaag.space.md}"
       },
       "padding-block-md": {
         "value": "0.75rem"
@@ -23,7 +23,7 @@
         "value": "0.75rem"
       },
       "spacing": {
-        "value": "{denhaag.space.inline.2xs}"
+        "value": "{denhaag.space.2xs}"
       },
       "current": {
         "color": {
@@ -124,7 +124,7 @@
         },
         "icon": {
           "margin-inline-start": {
-            "value": "{denhaag.space.inline.2xl}"
+            "value": "{denhaag.space.2xl}"
           }
         },
         "text": {
@@ -177,7 +177,7 @@
             "value": "{denhaag.typography.weight.regular}"
           },
           "padding-block": {
-            "value": "{denhaag.space.block.xs}"
+            "value": "{denhaag.space.xs}"
           },
           "padding-inline": {
             "value": "0.75rem"

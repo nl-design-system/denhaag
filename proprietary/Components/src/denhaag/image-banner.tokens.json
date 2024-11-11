@@ -8,7 +8,7 @@
         "value": "grid"
       },
       "grid-gap": {
-        "value": "{denhaag.space.block.md}"
+        "value": "{denhaag.space.md}"
       },
       "grid-template-columns": {
         "value": "repeat(auto-fill, minmax(312px, 1fr))"
@@ -129,25 +129,25 @@
           "value": "grid"
         },
         "grid-gap": {
-          "value": "{denhaag.space.block.2xs}"
+          "value": "{denhaag.space.2xs}"
         },
         "max-height": {
           "value": "155px"
         },
         "margin-block-end": {
-          "value": "{denhaag.space.block.xl}"
+          "value": "{denhaag.space.xl}"
         },
         "margin-inline": {
-          "value": "{denhaag.space.inline.xl}"
+          "value": "{denhaag.space.xl}"
         },
         "padding-inline": {
-          "value": "{denhaag.space.inline.md}"
+          "value": "{denhaag.space.md}"
         },
         "padding-block-end": {
-          "value": "{denhaag.space.block.xs}"
+          "value": "{denhaag.space.xs}"
         },
         "padding-block-start": {
-          "value": "{denhaag.space.block.md}"
+          "value": "{denhaag.space.md}"
         },
         "width": {
           "value": "100%"

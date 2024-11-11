@@ -17,7 +17,7 @@
         "value": "0"
       },
       "grid-gutter": {
-        "value": "{denhaag.space.inline.xs}"
+        "value": "{denhaag.space.xs}"
       },
       "max-width": {
         "value": "100%"

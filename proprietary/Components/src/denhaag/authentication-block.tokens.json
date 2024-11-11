@@ -5,13 +5,13 @@
         "value": "{denhaag.color.grey.2}"
       },
       "gap": {
-        "value": "{denhaag.space.block.xl}"
+        "value": "{denhaag.space.xl}"
       },
       "gap-small": {
-        "value": "{denhaag.space.block.md}"
+        "value": "{denhaag.space.md}"
       },
       "gap-sm": {
-        "value": "{denhaag.space.block.2xl}"
+        "value": "{denhaag.space.2xl}"
       },
       "item": {
         "image-width": {
@@ -28,7 +28,7 @@
           },
           "padding": {
             "block": {
-              "value": "{denhaag.space.block.xs}"
+              "value": "{denhaag.space.xs}"
             },
             "inline": {
               "value": "0.875rem"

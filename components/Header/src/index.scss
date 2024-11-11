@@ -33,18 +33,16 @@
   justify-content: space-between;
 
   @media (min-width: 360px) {
-    --denhaag-header-max-width: calc(
-      100vw - (2 * (var(--denhaag-space-inline-xl) - var(--denhaag-header-grid-gutter)))
-    );
+    --denhaag-header-max-width: calc(100vw - (2 * (var(--denhaag-space-xl) - var(--denhaag-header-grid-gutter))));
   }
 
   @media (min-width: 768px) {
-    --denhaag-header-grid-gutter: var(--denhaag-space-inline-md);
+    --denhaag-header-grid-gutter: var(--denhaag-space-md);
     --denhaag-header-max-width: 40.5rem;
   }
 
   @media (min-width: 1024px) {
-    --denhaag-header-grid-gutter: var(--denhaag-space-inline-xl);
+    --denhaag-header-grid-gutter: var(--denhaag-space-xl);
     --denhaag-header-max-width: 56.5rem;
     --denhaag-header-hypens: none;
 
@@ -53,17 +51,17 @@
   }
 
   @media (min-width: 1280px) {
-    --denhaag-header-grid-gutter: var(--denhaag-space-inline-2xl);
+    --denhaag-header-grid-gutter: var(--denhaag-space-2xl);
     --denhaag-header-max-width: 67.5rem;
   }
 
   @media (min-width: 1768px) {
-    --denhaag-header-grid-gutter: var(--denhaag-space-inline-3xl);
+    --denhaag-header-grid-gutter: var(--denhaag-space-3xl);
     --denhaag-header-max-width: 98rem;
   }
 
   @media (min-width: 2160px) {
-    --denhaag-header-grid-gutter: var(--denhaag-space-inline-4xl);
+    --denhaag-header-grid-gutter: var(--denhaag-space-4xl);
   }
 }
 

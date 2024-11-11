@@ -2,7 +2,7 @@
   "denhaag": {
     "floating-contact": {
       "offset": {
-        "value": "{denhaag.space.block.md}"
+        "value": "{denhaag.space.md}"
       },
       "color": {
         "value": "{denhaag.color.green.5}"
@@ -37,7 +37,7 @@
           "value": "center"
         },
         "gap": {
-          "value": "{denhaag.space.inline.lg}"
+          "value": "{denhaag.space.lg}"
         },
         "icon-size": {
           "value": "1.75rem"
@@ -142,10 +142,10 @@
         },
         "padding": {
           "block": {
-            "value": "{denhaag.space.block.md}"
+            "value": "{denhaag.space.md}"
           },
           "inline": {
-            "value": "{denhaag.space.inline.md}"
+            "value": "{denhaag.space.md}"
           }
         },
         "icon": {
@@ -196,7 +196,7 @@
         },
         "arrow": {
           "width": {
-            "value": "{denhaag.space.block.2xl}"
+            "value": "{denhaag.space.2xl}"
           }
         },
         "background": {
@@ -217,14 +217,14 @@
         },
         "padding": {
           "block": {
-            "value": "{denhaag.space.block.2xl}"
+            "value": "{denhaag.space.2xl}"
           },
           "inline": {
-            "value": "{denhaag.space.inline.xl}"
+            "value": "{denhaag.space.xl}"
           }
         },
         "gap": {
-          "value": "{denhaag.space.inline.xl}"
+          "value": "{denhaag.space.xl}"
         },
         "width": {
           "value": "17.25rem"

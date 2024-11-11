@@ -21,7 +21,7 @@
           "value": "{denhaag.typography.scale.s.line-height}"
         },
         "margin-block-end": {
-          "value": "{denhaag.space.block.xl}"
+          "value": "{denhaag.space.xl}"
         },
         "margin-block-start": {
           "value": "0"

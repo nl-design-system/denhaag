@@ -24,10 +24,10 @@
       "padding": {
         "inline": {
           "end": {
-            "value": "{denhaag.space.inline.xs}"
+            "value": "{denhaag.space.xs}"
           },
           "start": {
-            "value": "{denhaag.space.inline.xs}"
+            "value": "{denhaag.space.xs}"
           }
         }
       },
@@ -51,7 +51,7 @@
         },
         "margin": {
           "block-end": {
-            "value": "{denhaag.space.inline.xl}"
+            "value": "{denhaag.space.xl}"
           }
         }
       },
@@ -62,7 +62,7 @@
               "value": "0.75rem"
             },
             "start": {
-              "value": "{denhaag.space.inline.2xs}"
+              "value": "{denhaag.space.2xs}"
             }
           }
         }
@@ -74,7 +74,7 @@
         "padding": {
           "block": {
             "end": {
-              "value": "{denhaag.space.inline.2xs}"
+              "value": "{denhaag.space.2xs}"
             },
             "start": {
               "value": "0.75rem"
@@ -86,10 +86,10 @@
         "padding": {
           "inline": {
             "end": {
-              "value": "{denhaag.space.inline.md}"
+              "value": "{denhaag.space.md}"
             },
             "start": {
-              "value": "{denhaag.space.inline.md}"
+              "value": "{denhaag.space.md}"
             }
           }
         },
@@ -97,10 +97,10 @@
           "padding": {
             "block": {
               "end": {
-                "value": "{denhaag.space.inline.md}"
+                "value": "{denhaag.space.md}"
               },
               "start": {
-                "value": "{denhaag.space.inline.md}"
+                "value": "{denhaag.space.md}"
               }
             }
           }
@@ -109,10 +109,10 @@
           "padding": {
             "block": {
               "end": {
-                "value": "{denhaag.space.inline.md}"
+                "value": "{denhaag.space.md}"
               },
               "start": {
-                "value": "{denhaag.space.inline.md}"
+                "value": "{denhaag.space.md}"
               }
             }
           }
