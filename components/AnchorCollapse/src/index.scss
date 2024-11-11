@@ -1,6 +1,6 @@
 .denhaag-anchor-collapse {
-  border-bottom: var(--denhaag-anchor-collapse-border-width) var(--denhaag-anchor-collapse-border-style)
-    var(--denhaag-anchor-collapse-border-color);
+  border-bottom: var(--denhaag-anchor-collapse-border-width, 1px) solid
+    var(--denhaag-anchor-collapse-border-color, var(--denhaag-color-grey-2));
 
   @media (prefers-reduced-motion: reduce) {
     --denhaag-anchor-collapse-transition-duration: 0;
@@ -14,50 +14,56 @@
 }
 
 .denhaag-anchor-collapse:first-child {
-  border-top: var(--denhaag-anchor-collapse-border-width) var(--denhaag-anchor-collapse-border-style)
-    var(--denhaag-anchor-collapse-border-color);
+  border-top: var(--denhaag-anchor-collapse-border-width, 1px) solid
+    var(--denhaag-anchor-collapse-border-color, var(--denhaag-color-grey-2));
 }
 
 .denhaag-anchor-collapse--active {
   --denhaag-anchor-collapse-rotate: 0deg;
-  --denhaag-anchor-collapse-summary-color: var(--denhaag-anchor-collapse-summary-active-color);
-  --denhaag-anchor-collapse-transition-duration: var(--denhaag-anchor-collapse-open-transition-duration);
-  --denhaag-anchor-collapse-transition-timing-function: var(--denhaag-anchor-collapse-open-transition-timing-function);
+  --denhaag-anchor-collapse-summary-color: var(
+    --denhaag-anchor-collapse-summary-active-color,
+    var(--denhaag-color-green-3)
+  );
+  --denhaag-anchor-collapse-transition-duration: var(--denhaag-anchor-collapse-open-transition-duration, 500ms);
   --denhaag-anchor-collapse-details-height: var(--denhaag-anchor-collapse-details-max-height, 100%); // Value set by JS.
 }
 
 .denhaag-anchor-collapse__toggle {
   background-color: transparent;
   border: 0;
-  color: var(--denhaag-anchor-collapse-summary-color);
+  color: var(--denhaag-anchor-collapse-summary-color, var(--denhaag-color-grey-5));
   cursor: pointer;
-  font-family: var(--denhaag-anchor-collapse-summary-font-family, inherit);
-  font-size: var(--denhaag-anchor-collapse-summary-font-size, inherit);
-  font-weight: var(--denhaag-anchor-collapse-summary-font-weight, normal);
+  font-family: var(--denhaag-anchor-collapse-summary-font-family, var(--denhaag-typography-sans-serif));
+  font-size: var(--denhaag-anchor-collapse-summary-font-size, var(--denhaag-typography-scale-lg-font-size));
+  font-weight: var(--denhaag-anchor-collapse-summary-font-weight, var(--denhaag-typography-weight-bold));
   margin-block-start: var(--denhaag-anchor-collapse-summary-margin-block-start, 0);
-  padding-block-end: var(--denhaag-anchor-collapse-summary-padding-block);
-  padding-block-start: var(--denhaag-anchor-collapse-summary-padding-block);
-  padding-inline-end: calc(2 * var(--denhaag-anchor-collapse-summary-padding-inline));
-  padding-inline-start: var(--denhaag-anchor-collapse-summary-padding-inline);
+  padding-block: var(--denhaag-anchor-collapse-summary-padding-block, var(--denhaag-space-md));
+  padding-inline: var(--denhaag-anchor-collapse-summary-padding-inline, var(--denhaag-space-xl))
+    calc(2 * var(--denhaag-anchor-collapse-summary-padding-inline, var(--denhaag-space-xl)));
   pointer-events: var(--denhaag-anchor-collapse-summary-pointer-events, auto);
-  text-align: var(--denhaag-anchor-collapse-summary-text-align);
+  text-align: initial;
   width: 100%;
 }
 
 .denhaag-anchor-collapse__summary {
-  margin-block-start: 0;
-  margin-block-end: 0;
+  margin-block: 0;
   position: relative;
 }
 
 .denhaag-anchor-collapse__toggle:hover,
 .denhaag-anchor-collapse__summary--hover {
-  --denhaag-anchor-collapse-summary-color: var(--denhaag-anchor-collapse-summary-hover-color);
+  --denhaag-anchor-collapse-summary-color: var(
+    --denhaag-anchor-collapse-summary-hover-color,
+    var(--denhaag-color-green-3)
+  );
 }
 
 .denhaag-anchor-collapse__toggle:focus-visible,
 .denhaag-anchor-collapse__summary--focus {
-  --denhaag-anchor-collapse-summary-color: var(--denhaag-anchor-collapse-summary-focus-color);
+  --denhaag-anchor-collapse-summary-color: var(
+    --denhaag-anchor-collapse-summary-focus-color,
+    var(--denhaag-color-green-3)
+  );
 
   outline: var(--denhaag-anchor-collapse-summary-focus-outline, var(--denhaag-focus-border));
 }
@@ -65,53 +71,39 @@
 .denhaag-anchor-collapse__summary > svg {
   display: var(--denhaag-anchor-collapse-icon-display, block);
   position: absolute;
+  pointer-events: none;
   top: 50%;
-  right: var(--denhaag-anchor-collapse-summary-padding-inline);
-  transform: translate(-50%, -50%) rotate(var(--denhaag-anchor-collapse-rotate));
-  transition: transform var(--denhaag-anchor-collapse-transition-duration, 0ms)
-    var(--denhaag-anchor-collapse-transition-timing-function, ease);
+  right: var(--denhaag-anchor-collapse-summary-padding-inline, var(--denhaag-space-xl));
+  transform: translate(-50%, -50%) rotate(var(--denhaag-anchor-collapse-rotate, 180deg));
+  transition: transform var(--denhaag-anchor-collapse-transition-duration, 400ms)
+    var(--denhaag-anchor-collapse-transition-timing-function, ease-in-out);
 }
 
 .denhaag-anchor-collapse__content {
-  border-top: var(--denhaag-anchor-collapse-border-width) var(--denhaag-anchor-collapse-border-style)
-    var(--denhaag-anchor-collapse-border-color);
+  border-top: var(--denhaag-anchor-collapse-border-width, 1px) solid
+    var(--denhaag-anchor-collapse-border-color, var(--denhaag-color-grey-2));
   max-height: var(--denhaag-anchor-collapse-details-height, 0);
   overflow: hidden;
-  transition: max-height var(--denhaag-anchor-collapse-transition-duration, 0ms)
-    var(--denhaag-anchor-collapse-transition-timing-function, ease);
+  transition: max-height var(--denhaag-anchor-collapse-transition-duration, 400ms)
+    var(--denhaag-anchor-collapse-transition-timing-function, ease-in-out);
 }
 
 .denhaag-anchor-collapse__content-content {
-  padding-block-end: var(
-    --denhaag-anchor-collapse-content-padding-block-end,
-    var(--denhaag-anchor-collapse-summary-padding-block)
-  );
-  padding-block-start: var(
-    --denhaag-anchor-collapse-content-padding-block-start,
-    var(--denhaag-anchor-collapse-summary-padding-block)
-  );
-  padding-inline-end: var(
-    --denhaag-anchor-collapse-content-padding-inline-end,
-    var(--denhaag-anchor-collapse-summary-padding-inline)
-  );
-  padding-inline-start: var(
-    --denhaag-anchor-collapse-content-padding-inline-start,
-    var(--denhaag-anchor-collapse-summary-padding-inline)
-  );
+  padding-block: var(--denhaag-anchor-collapse-content-padding-block, var(--denhaag-space-md))
+    var(--denhaag-anchor-collapse-content-padding-block, var(--denhaag-space-xl));
+  padding-inline: var(--denhaag-anchor-collapse-content-padding-inline, var(--denhaag-space-xl));
 }
 
 @media (min-width: 768px) {
   .denhaag-anchor-collapse {
     --denhaag-anchor-collapse-border-color: transparent;
     --denhaag-anchor-collapse-icon-display: none;
-    --denhaag-anchor-collapse-content-padding-block-end: 0;
-    --denhaag-anchor-collapse-content-padding-block-start: 0;
-    --denhaag-anchor-collapse-content-padding-inline-end: 0;
-    --denhaag-anchor-collapse-content-padding-inline-start: 0;
+    --denhaag-anchor-collapse-content-padding-block: 0;
+    --denhaag-anchor-collapse-content-padding-inline: 0;
     --denhaag-anchor-collapse-details-height: 100%;
     --denhaag-anchor-collapse-summary-pointer-events: none;
-    --denhaag-anchor-collapse-summary-padding-block: 0;
-    --denhaag-anchor-collapse-summary-padding-inline: 0;
+    --denhaag-anchor-collapse-summary-padding-block: 0px;
+    --denhaag-anchor-collapse-summary-padding-inline: 0px;
 
     // Must always be the same as the H2 styles.
     --denhaag-anchor-collapse-summary-color: var(--utrecht-heading-2-color, var(--utrecht-heading-color));
@@ -128,6 +120,6 @@
   }
 
   .denhaag-anchor-collapse__content {
-    margin-block-start: var(--denhaag-anchor-collapse-content-margin-block-start, 0.5rem);
+    margin-block-start: var(--denhaag-space-xs);
   }
 }
