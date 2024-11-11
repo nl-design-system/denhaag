@@ -16,7 +16,7 @@
         "value": "0"
       },
       "border-block-start": {
-        "value": "{denhaag.space.block.xs} solid {denhaag.color.green.3}"
+        "value": "{denhaag.space.xs} solid {denhaag.color.green.3}"
       },
       "label-container": {
         "display": {
@@ -82,10 +82,10 @@
       },
       "subheader": {
         "padding-block-start-s": {
-          "value": "{denhaag.space.block.xl}"
+          "value": "{denhaag.space.xl}"
         },
         "padding-block-start-m": {
-          "value": "{denhaag.space.block.md}"
+          "value": "{denhaag.space.md}"
         }
       },
       "title": {

@@ -39,7 +39,7 @@
         },
         "padding": {
           "block": {
-            "value": "{denhaag.space.block.xs}"
+            "value": "{denhaag.space.xs}"
           },
           "inline": {
             "end": {

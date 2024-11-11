@@ -10,8 +10,8 @@
         "font-weight": { "value": "400" },
         "font-size": { "value": "{denhaag.typography.scale.base.font-size}" },
         "font-family": { "value": "{denhaag.typography.sans-serif.font-family}" },
-        "padding-block-start": { "value": "{denhaag.space.block.xs}" },
-        "padding-block-end": { "value": "{denhaag.space.block.xs}" },
+        "padding-block-start": { "value": "{denhaag.space.xs}" },
+        "padding-block-end": { "value": "{denhaag.space.xs}" },
         "padding-inline-start": { "value": "{denhaag.space.xs}" },
         "padding-inline-end": { "value": "{denhaag.space.xs}" },
         "selected": {

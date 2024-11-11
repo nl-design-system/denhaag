@@ -1,5 +1,5 @@
 .denhaag-accordion {
-  font-family: var(--denhaag-accordion-font-family);
+  font-family: var(--denhaag-accordion-font-family, var(--denhaag-typography-sans-serif-font-family));
 
   @media (prefers-reduced-motion: reduce) {
     --denhaag-accordion-transition-duration: 0;
@@ -18,16 +18,16 @@
 }
 
 .denhaag-accordion__container:last-child {
-  border-bottom-left-radius: var(--denhaag-accordion-container-border-radius);
-  border-bottom-right-radius: var(--denhaag-accordion-container-border-radius);
+  border-bottom-left-radius: var(--denhaag-accordion-container-border-radius, var(--denhaag-border-radius));
+  border-bottom-right-radius: var(--denhaag-accordion-container-border-radius, var(--denhaag-border-radius));
   border-top: var(--denhaag-accordion-container-border-top);
 }
 
 .denhaag-accordion__container:first-child {
   --denhaag-accordion-container-border-top: var(--denhaag-accordion-container-border);
 
-  border-top-left-radius: var(--denhaag-accordion-container-border-radius);
-  border-top-right-radius: var(--denhaag-accordion-container-border-radius);
+  border-top-left-radius: var(--denhaag-accordion-container-border-radius, var(--denhaag-border-radius));
+  border-top-right-radius: var(--denhaag-accordion-container-border-radius, var(--denhaag-border-radius));
 }
 
 .denhaag-accordion__container + .denhaag-accordion__container {
@@ -41,16 +41,12 @@
   font-weight: var(--denhaag-accordion-panel-font-weight, 400);
   outline: var(--denhaag-accordion-panel-outline);
   align-items: var(--denhaag-accordion-panel-align-items);
-  border-radius: var(--denhaag-accordion-panel-border-radius);
   text-decoration: var(--denhaag-accordion-panel-text-decoration);
   background-color: var(--denhaag-accordion-panel-background-color);
   display: var(--denhaag-accordion-panel-display);
-  padding-block-start: var(--denhaag-accordion-panel-padding-block);
-  padding-block-end: var(--denhaag-accordion-panel-padding-block);
-  padding-inline-end: var(--denhaag-accordion-panel-padding-inline);
+  padding-block: var(--denhaag-accordion-panel-padding-block);
   min-height: var(--denhaag-accordion-panel-min-height);
-  margin-block-start: var(--denhaag-accordion-panel-margin-block);
-  margin-block-end: var(--denhaag-accordion-panel-margin-block);
+  margin-block: var(--denhaag-accordion-panel-margin-block);
   font-size: var(--denhaag-accordion-panel-font-size);
 }
 
@@ -74,11 +70,9 @@
   color: inherit; // Fix for iPhone.
   text-align: inherit;
   hyphens: auto;
-  margin-block-start: 0;
-  margin-block-end: 0;
+  margin-block: 0;
   flex-grow: var(--denhaag-accordion-title-flex-grow);
-  padding-block-start: var(--denhaag-accordion-title-padding-block);
-  padding-block-end: var(--denhaag-accordion-title-padding-block);
+  padding-block: var(--denhaag-accordion-title-padding-block);
   padding-inline-start: var(--denhaag-accordion-title-padding-inline);
   padding-inline-end: calc(
     (var(--denhaag-accordion-title-padding-inline) * 2) + var(--denhaag-accordion-icon-width, 0)
@@ -170,6 +164,7 @@
 .denhaag-accordion__details {
   max-height: var(--denhaag-accordion-details-height, 0);
   overflow: hidden;
+  padding-block-start: var(--denhaag-space-3xs);
   padding-inline-end: var(--denhaag-accordion-details-margin-inline-end);
   transition: max-height var(--denhaag-accordion-transition-duration, 0ms)
     var(--denhaag-accordion-transition-timing-function, ease);
@@ -179,6 +174,5 @@
 .denhaag-accordion__details-content {
   padding-block-start: var(--denhaag-accordion-details-content-padding-block-start);
   padding-block-end: var(--denhaag-accordion-details-content-padding-block-end);
-  padding-inline-start: var(--denhaag-accordion-details-content-padding-inline);
-  padding-inline-end: var(--denhaag-accordion-details-content-padding-inline);
+  padding-inline: var(--denhaag-accordion-details-content-padding-inline);
 }

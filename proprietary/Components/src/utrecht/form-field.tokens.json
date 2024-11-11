@@ -1,10 +1,10 @@
 {
   "utrecht": {
     "form-field": {
-      "margin-block-start": { "value": "{denhaag.space.block.lg}" },
-      "margin-block-end": { "value": "{denhaag.space.block.lg}" },
+      "margin-block-start": { "value": "{denhaag.space.lg}" },
+      "margin-block-end": { "value": "{denhaag.space.lg}" },
       "label": {
-        "margin-block-end": { "value": "{denhaag.space.block.2xs}" }
+        "margin-block-end": { "value": "{denhaag.space.2xs}" }
       }
     }
   }

@@ -18,14 +18,14 @@
         "value": "0.625rem"
       },
       "size": {
-        "value": "{denhaag.space.block.2xl}"
+        "value": "{denhaag.space.2xl}"
       },
       "arrow": {
         "font-size": {
           "value": "{denhaag.typography.scale.lg.font-size}"
         },
         "size": {
-          "value": "{denhaag.space.block.lg}"
+          "value": "{denhaag.space.lg}"
         }
       },
       "link": {

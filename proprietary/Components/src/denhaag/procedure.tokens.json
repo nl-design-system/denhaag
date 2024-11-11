@@ -125,7 +125,7 @@
       "step-marker": {
         "mobile": {
           "size": {
-            "value": "{denhaag.space.block.xl}"
+            "value": "{denhaag.space.xl}"
           },
           "font-size": {
             "value": "{denhaag.typography.scale.s.font-size}"
@@ -133,7 +133,7 @@
         },
         "desktop": {
           "size": {
-            "value": "{denhaag.space.block.2xl}"
+            "value": "{denhaag.space.2xl}"
           },
           "font-size": {
             "value": "{denhaag.typography.scale.base.font-size}"

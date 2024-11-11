@@ -1,15 +1,9 @@
 {
   "denhaag": {
     "accordion": {
-      "font-family": {
-        "value": "{denhaag.typography.sans-serif.font-family}"
-      },
       "container": {
         "border": {
           "value": "1px solid {denhaag.color.grey.3}"
-        },
-        "border-radius": {
-          "value": "{denhaag.border-radius}"
         },
         "border-top": {
           "value": 0
@@ -50,9 +44,6 @@
         },
         "background-color": {
           "value": "transparent"
-        },
-        "border-radius": {
-          "value": 0
         },
         "color": {
           "value": "{denhaag.color.green.3}"

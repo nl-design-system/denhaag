@@ -29,13 +29,13 @@
         "value": "{denhaag.typography.scale.base.line-height}"
       },
       "padding-block-start": {
-        "value": "{denhaag.space.block.md}"
+        "value": "{denhaag.space.md}"
       },
       "padding-block-end": {
-        "value": "{denhaag.space.block.5xl}"
+        "value": "{denhaag.space.5xl}"
       },
       "margin-block-start": {
-        "value": "{denhaag.space.block.2xl}"
+        "value": "{denhaag.space.2xl}"
       },
       "horizontal": {
         "item": {

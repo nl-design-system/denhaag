@@ -19,7 +19,7 @@
       },
       "image": {
         "margin-block-end": {
-          "value": "{denhaag.space.block.md}"
+          "value": "{denhaag.space.md}"
         },
         "margin-inline-end": {
           "value": "{denhaag.space.xl}"
@@ -32,7 +32,7 @@
         "value": "start"
       },
       "margin-block-start": {
-        "value": "{denhaag.space.block.4xl}"
+        "value": "{denhaag.space.4xl}"
       }
     }
   }
