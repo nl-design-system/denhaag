@@ -53,8 +53,7 @@
   top: var(--denhaag-space-sm);
   right: var(--denhaag-space-md);
   transform: var(--denhaag-accordion-icon-transform, rotate(0deg));
-  transition: transform var(--denhaag-accordion-transition-duration, 0ms)
-    var(--denhaag-accordion-transition-timing-function, ease-in-out);
+  transition: transform var(--denhaag-accordion-transition-duration, 400ms) ease-in-out;
 }
 
 .denhaag-accordion__title {
@@ -101,7 +100,7 @@
 .denhaag-accordion__container--open .denhaag-accordion__panel--hover .denhaag-icon,
 .denhaag-accordion__container--open .denhaag-accordion__panel:hover .denhaag-accordion__title,
 .denhaag-accordion__container--open .denhaag-accordion__panel:hover .denhaag-icon {
-  color: var(--denhaag-accordion-container-open-color, var(--denhaag-color-green-4));
+  color: var(--denhaag-color-green-4);
 }
 
 .denhaag-accordion__panel:hover .denhaag-accordion__title:not([disabled]),
@@ -136,8 +135,7 @@
 
 .denhaag-accordion__container--open {
   --denhaag-accordion-icon-transform: rotate(-180deg);
-  --denhaag-accordion-transition-duration: var(--denhaag-accordion-open-transition-duration);
-  --denhaag-accordion-transition-timing-function: var(--denhaag-accordion-open-transition-timing-function);
+  --denhaag-accordion-transition-duration: var(--denhaag-accordion-open-transition-duration, 500ms);
   --denhaag-accordion-details-height: var(--denhaag-accordion-details-max-height, 100%); // Value set by JS.
 }
 
@@ -152,8 +150,7 @@
   max-height: var(--denhaag-accordion-details-height);
   overflow: hidden;
   padding-block-start: var(--denhaag-space-3xs);
-  transition: max-height var(--denhaag-accordion-transition-duration, 0ms)
-    var(--denhaag-accordion-transition-timing-function, ease-in-out);
+  transition: max-height var(--denhaag-accordion-transition-duration, 400ms) ease-in-out;
 }
 
 .denhaag-accordion__details-content {

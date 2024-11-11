@@ -1,18 +1,5 @@
 {
   "denhaag": {
-    "accordion": {
-      "transition": {
-        "duration": {
-          "value": "400ms"
-        }
-      },
-      "open": {
-        "transition": {
-          "duration": {
-            "value": "500ms"
-          }
-        }
-      }
-    }
+    "accordion": {}
   }
 }
