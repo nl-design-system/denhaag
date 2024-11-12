@@ -25,7 +25,7 @@ export const Default: Story = {
           <div className="denhaag-footer-group">
             <div className="denhaag-link-group denhaag-link-group--dark">
               <h4 className="utrecht-heading-4 denhaag-link-group__caption">Caption</h4>
-              <ul className="utrecht-link-list utrecht-link-list--html-ul denhaag-link-group__list">
+              <ul className="denhaag-link-group__list">
                 <li className="denhaag-link-group__list-item">
                   <a
                     href="#example-link"
@@ -160,7 +160,7 @@ export const Default: Story = {
             </div>
             <div className="denhaag-link-group denhaag-link-group--dark">
               <h4 className="utrecht-heading-4 denhaag-link-group__caption">Caption</h4>
-              <ul className="utrecht-link-list utrecht-link-list--html-ul denhaag-link-group__list">
+              <ul className="denhaag-link-group__list">
                 <li className="denhaag-link-group__list-item">
                   <a
                     href="#example-link"
@@ -295,7 +295,7 @@ export const Default: Story = {
             </div>
             <div className="denhaag-link-group denhaag-link-group--dark">
               <h4 className="utrecht-heading-4 denhaag-link-group__caption">Caption</h4>
-              <ul className="utrecht-link-list utrecht-link-list--html-ul denhaag-link-group__list">
+              <ul className="denhaag-link-group__list">
                 <li className="denhaag-link-group__list-item">
                   <a
                     href="#example-link"
@@ -430,7 +430,7 @@ export const Default: Story = {
             </div>
             <div className="denhaag-link-group denhaag-link-group--dark">
               <h4 className="utrecht-heading-4 denhaag-link-group__caption">Caption</h4>
-              <ul className="utrecht-link-list utrecht-link-list--html-ul denhaag-link-group__list">
+              <ul className="denhaag-link-group__list">
                 <li className="denhaag-link-group__list-item">
                   <a
                     href="#example-link"
@@ -565,7 +565,7 @@ export const Default: Story = {
             </div>
             <div className="denhaag-link-group denhaag-link-group--dark">
               <h4 className="utrecht-heading-4 denhaag-link-group__caption">Caption</h4>
-              <ul className="utrecht-link-list utrecht-link-list--html-ul denhaag-link-group__list">
+              <ul className="denhaag-link-group__list">
                 <li className="denhaag-link-group__list-item">
                   <a
                     href="#example-link"
@@ -700,7 +700,7 @@ export const Default: Story = {
             </div>
             <div className="denhaag-link-group denhaag-link-group--dark">
               <h4 className="utrecht-heading-4 denhaag-link-group__caption">Caption</h4>
-              <ul className="utrecht-link-list utrecht-link-list--html-ul denhaag-link-group__list">
+              <ul className="denhaag-link-group__list">
                 <li className="denhaag-link-group__list-item">
                   <a
                     href="#example-link"
@@ -970,7 +970,7 @@ export const Default: Story = {
             </div>
             <div className="denhaag-link-group denhaag-link-group--dark">
               <h4 className="utrecht-heading-4 denhaag-link-group__caption">Contact</h4>
-              <ul className="utrecht-link-list utrecht-link-list--html-ul denhaag-link-group__list">
+              <ul className="denhaag-link-group__list">
                 <li className="denhaag-link-group__list-item">
                   <a
                     href="#example-link"

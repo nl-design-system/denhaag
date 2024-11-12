@@ -28,7 +28,7 @@ export const Default: Story = {
   render: () => (
     <div className="denhaag-link-group">
       <h4 className="utrecht-heading-4 denhaag-link-group__caption">Caption</h4>
-      <ul className="utrecht-link-list utrecht-link-list--html-ul denhaag-link-group__list">
+      <ul className="denhaag-link-group__list">
         <li className="denhaag-link-group__list-item">
           <a
             href="https://nl-design-system.github.io/denhaag/"
@@ -173,7 +173,7 @@ export const WithImage: Story = {
         alt="placeholder"
       />
       <h4 className="utrecht-heading-4 denhaag-link-group__caption">Caption</h4>
-      <ul className="utrecht-link-list utrecht-link-list--html-ul denhaag-link-group__list">
+      <ul className="denhaag-link-group__list">
         <li className="denhaag-link-group__list-item">
           <a
             href="https://nl-design-system.github.io/denhaag/"
@@ -319,7 +319,7 @@ export const DarkBackground: Story = {
       style={{ backgroundColor: '#2D2D2D', padding: '1rem' }}
     >
       <h4 className="utrecht-heading-4 denhaag-link-group__caption">Caption</h4>
-      <ul className="utrecht-link-list utrecht-link-list--html-ul denhaag-link-group__list">
+      <ul className="denhaag-link-group__list">
         <li className="denhaag-link-group__list-item">
           <a
             href="https://nl-design-system.github.io/denhaag/"
