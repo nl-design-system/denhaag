@@ -1,31 +1,32 @@
 .denhaag-alert {
-  border-width: 0;
-  border-radius: var(--denhaag-alert-border-radius);
-  padding-inline-start: var(--denhaag-alert-padding-inline-start);
-  padding-inline-end: var(--denhaag-alert-padding-inline-end);
-  padding-block-start: var(--denhaag-alert-padding-block-start);
-  padding-block-end: var(--denhaag-alert-padding-block-end);
+  --utrecht-paragraph-margin-block-end: 0;
+  --utrecht-heading-4-margin-block-start: 0;
+
+  border-radius: var(--denhaag-alert-border-radius, 1px);
+  padding-inline: var(--denhaag-space-xl);
+  padding-block: var(--denhaag-space-xl);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
-  --utrecht-paragraph-margin-block-end: 0;
-  --utrecht-heading-4-margin-block-start: 0;
 }
 
 .denhaag-alert--error {
-  background-color: var(--denhaag-alert-error-background-color);
+  background-color: var(--denhaag-alert-error-background-color, var(--denhaag-color-red-1));
 
-  --utrecht-paragraph-color: var(--denhaag-alert-error-paragraph-color);
-  --utrecht-heading-4-color: var(--denhaag-alert-error-title-color);
-  --denhaag-button-primary-action-background-color: var(--denhaag-alert-error-action-button-background-color);
-  --denhaag-button-primary-action-color: var(--denhaag-alert-error-action-button-color);
-  --denhaag-button-primary-action-hover-background-color: var(
-    --denhaag-alert-error-action-button-hover-background-color
+  --utrecht-paragraph-color: var(--denhaag-alert-error-paragraph-color, var(--denhaag-color-red-5));
+  --utrecht-heading-4-color: var(--denhaag-alert-error-title-color, var(--denhaag-color-red-5));
+  --denhaag-button-primary-action-background-color: var(
+    --denhaag-alert-error-action-button-background-color,
+    var(--denhaag-color-red-3)
   );
-  --denhaag-icon-button-color: var(--denhaag-alert-error-close-icon-color);
-  --denhaag-icon-button-hover-color: var(--denhaag-alert-error-close-icon-color);
-  --denhaag-icon-button-focus-color: var(--denhaag-alert-error-close-icon-color);
+  --denhaag-button-primary-action-color: var(--denhaag-alert-error-action-button-color var(--denhaag-color-white));
+  --denhaag-button-primary-action-hover-background-color: var(
+    --denhaag-alert-error-action-button-hover-background-color,
+    var(--denhaag-color-red-4)
+  );
+  --denhaag-icon-button-color: var(--denhaag-alert-error-close-icon-color, var(--denhaag-color-red-5));
+  --denhaag-icon-button-hover-color: var(--denhaag-alert-error-close-icon-color, var(--denhaag-color-red-5));
+  --denhaag-icon-button-focus-color: var(--denhaag-alert-error-close-icon-color, var(--denhaag-color-red-5));
 }
 
 .denhaag-alert__main-content {
@@ -40,78 +41,89 @@
 }
 
 .denhaag-alert__close {
-  padding-block-start: var(--denhaag-alert-close-padding-block-start);
-  padding-inline-start: var(--denhaag-alert-close-padding-inline-start);
+  padding-block-start: var(--denhaag-alert-close-padding-block-start, var(--denhaag-space-2xs));
+  padding-inline-start: var(--denhaag-alert-close-padding-inline-start, var(--denhaag-space-xl));
 }
 
 .denhaag-alert .denhaag-button {
-  margin-block-start: var(--denhaag-alert-action-padding-block-start);
+  margin-block-start: var(--denhaag-alert-action-padding-block-start, var(--denhaag-space-md));
 }
 
 .denhaag-alert--error .denhaag-alert__icon {
-  color: var(--denhaag-alert-error-icon-color);
+  color: var(--denhaag-alert-error-icon-color var(--denhaag-color-red-3));
 }
 
 .denhaag-alert--info {
-  background-color: var(--denhaag-alert-info-background-color);
+  background-color: var(--denhaag-alert-info-background-color, var(--denhaag-color-blue-1));
 
-  --utrecht-paragraph-color: var(--denhaag-alert-info-paragraph-color);
-  --utrecht-heading-4-color: var(--denhaag-alert-info-title-color);
-  --denhaag-button-primary-action-background-color: var(--denhaag-alert-info-action-button-background-color);
-  --denhaag-button-primary-action-color: var(--denhaag-alert-info-action-button-color);
-  --denhaag-button-primary-action-hover-background-color: var(
-    --denhaag-alert-info-action-button-hover-background-color
+  --utrecht-paragraph-color: var(--denhaag-alert-info-paragraph-color, var(--denhaag-color-blue-5));
+  --utrecht-heading-4-color: var(--denhaag-alert-info-title-color, var(--denhaag-color-blue-5));
+  --denhaag-button-primary-action-background-color: var(
+    --denhaag-alert-info-action-button-background-color,
+    var(--denhaag-color-blue-3)
   );
-  --denhaag-icon-button-color: var(--denhaag-alert-info-close-icon-color);
-  --denhaag-icon-button-hover-color: var(--denhaag-alert-info-close-icon-color);
-  --denhaag-icon-button-focus-color: var(--denhaag-alert-info-close-icon-color);
+  --denhaag-button-primary-action-color: var(--denhaag-alert-info-action-button-color, var(--denhaag-color-white));
+  --denhaag-button-primary-action-hover-background-color: var(
+    --denhaag-alert-info-action-button-hover-background-color,
+    var(--denhaag-color-blue-4)
+  );
+  --denhaag-icon-button-color: var(--denhaag-alert-info-close-icon-color, var(--denhaag-color-blue-5));
+  --denhaag-icon-button-hover-color: var(--denhaag-alert-info-close-icon-color, var(--denhaag-color-blue-5));
+  --denhaag-icon-button-focus-color: var(--denhaag-alert-info-close-icon-color, var(--denhaag-color-blue-5));
 }
 
 .denhaag-alert--info .denhaag-alert__icon {
-  color: var(--denhaag-alert-info-icon-color);
+  color: var(--denhaag-alert-info-icon-color, var(--denhaag-color-blue-3));
 }
 
 .denhaag-alert--success {
-  background-color: var(--denhaag-alert-success-background-color);
+  background-color: var(--denhaag-color-green-1);
 
-  --utrecht-paragraph-color: var(--denhaag-alert-success-paragraph-color);
-  --utrecht-heading-4-color: var(--denhaag-alert-success-title-color);
-  --denhaag-button-primary-action-background-color: var(--denhaag-alert-success-action-button-background-color);
-  --denhaag-button-primary-action-color: var(--denhaag-alert-success-action-button-color);
-  --denhaag-button-primary-action-hover-background-color: var(
-    --denhaag-alert-success-action-button-hover-background-color
+  --utrecht-paragraph-color: var(--denhaag-alert-success-paragraph-color, var(--denhaag-color-green-5));
+  --utrecht-heading-4-color: var(--denhaag-alert-success-title-color, var(--denhaag-color-green-5));
+  --denhaag-button-primary-action-background-color: var(
+    --denhaag-alert-success-action-button-background-color,
+    var(--denhaag-color-green-3)
   );
-  --denhaag-icon-button-color: var(--denhaag-alert-success-close-icon-color);
-  --denhaag-icon-button-hover-color: var(--denhaag-alert-success-close-icon-color);
-  --denhaag-icon-button-focus-color: var(--denhaag-alert-success-close-icon-color);
+  --denhaag-button-primary-action-color: var(--denhaag-alert-success-action-button-color, var(--denhaag-color-white));
+  --denhaag-button-primary-action-hover-background-color: var(
+    --denhaag-alert-success-action-button-hover-background-color,
+    var(--denhaag-color-green-4)
+  );
+  --denhaag-icon-button-color: var(--denhaag-alert-success-close-icon-color, var(--denhaag-color-green-5));
+  --denhaag-icon-button-hover-color: var(--denhaag-alert-success-close-icon-color, var(--denhaag-color-green-5));
+  --denhaag-icon-button-focus-color: var(--denhaag-alert-success-close-icon-color, var(--denhaag-color-green-5));
 }
 
 .denhaag-alert--success .denhaag-alert__icon {
-  color: var(--denhaag-alert-success-icon-color);
+  color: var(--denhaag-alert-success-icon-color, var(--denhaag-color-green-3));
 }
 
 .denhaag-alert--warning {
-  background-color: var(--denhaag-alert-warning-background-color);
+  background-color: var(--denhaag-color-orange-1);
 
-  --utrecht-paragraph-color: var(--denhaag-alert-warning-paragraph-color);
-  --utrecht-heading-4-color: var(--denhaag-alert-warning-title-color);
-  --denhaag-button-primary-action-background-color: var(--denhaag-alert-warning-action-button-background-color);
-  --denhaag-button-primary-action-color: var(--denhaag-alert-warning-action-button-color);
-  --denhaag-button-primary-action-hover-background-color: var(
-    --denhaag-alert-warning-action-button-hover-background-color
+  --utrecht-paragraph-color: var(--denhaag-alert-warning-paragraph-color, var(--denhaag-color-orange-5));
+  --utrecht-heading-4-color: var(--denhaag-alert-warning-title-color, var(--denhaag-color-orange-5));
+  --denhaag-button-primary-action-background-color: var(
+    --denhaag-alert-warning-action-button-background-color,
+    var(--denhaag-color-orange-5)
   );
-  --denhaag-icon-button-color: var(--denhaag-alert-warning-close-icon-color);
-  --denhaag-icon-button-hover-color: var(--denhaag-alert-warning-close-icon-color);
-  --denhaag-icon-button-focus-color: var(--denhaag-alert-warning-close-icon-color);
+  --denhaag-button-primary-action-color: var(--denhaag-alert-warning-action-button-color, var(--denhaag-color-white));
+  --denhaag-button-primary-action-hover-background-color: var(
+    --denhaag-alert-warning-action-button-hover-background-color,
+    var(--denhaag-color-orange-5)
+  );
+  --denhaag-icon-button-color: var(--denhaag-alert-warning-close-icon-color, var(--denhaag-color-orange-5));
+  --denhaag-icon-button-hover-color: var(--denhaag-alert-warning-close-icon-color, var(--denhaag-color-orange-5));
+  --denhaag-icon-button-focus-color: var(--denhaag-alert-warning-close-icon-color, var(--denhaag-color-orange-5));
 }
 
 .denhaag-alert--warning .denhaag-alert__icon {
-  color: var(--denhaag-alert-warning-icon-color);
+  color: var(--denhaag-alert-warning-icon-color, var(--denhaag-color-orange-3));
 }
 
 .denhaag-alert__content {
-  margin-inline-start: var(--denhaag-alert-content-margin-inline-start);
-  margin-inline-end: var(--denhaag-alert-content-margin-inline-end);
+  margin-inline: var(--denhaag-space-xl);
 }
 
 [class^="utrecht-heading-"] {
