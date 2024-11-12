@@ -1,14 +1,12 @@
 import React from 'react';
 import clsx from 'clsx';
 
-export interface LinkListItemProps {
-  children: React.ReactNode;
-}
+export interface LinkListItemProps extends React.HTMLAttributes<HTMLLIElement> {}
 
-export const LinkListItem = ({ children }: LinkListItemProps) => {
-  const classNames = clsx('utrecht-link-list__item');
+export const LinkListItem = ({ className, ...props }: LinkListItemProps) => {
+  const classNames = clsx('utrecht-link-list__item', className);
 
-  return <li className={classNames}>{children}</li>;
+  return <li className={classNames} {...props} />;
 };
 
 export default LinkListItem;
