@@ -117,7 +117,7 @@ export const FooterContact: React.FC<FooterContactProps> = (props: FooterContact
           {props.contactData && (
             <div className="denhaag-link-group denhaag-link-group--dark">
               <h4 className="utrecht-heading-4 denhaag-link-group__caption">{props.contactData.title}</h4>
-              <ul className="utrecht-link-list utrecht-link-list--html-ul denhaag-link-group__list">
+              <ul className="denhaag-link-group__list">
                 {props.contactData.links.map((item, key) => (
                   <li className="denhaag-link-group__list-item" key={key}>
                     <a href={item.href} className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start">
