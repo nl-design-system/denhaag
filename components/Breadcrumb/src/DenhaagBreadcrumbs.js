@@ -153,7 +153,6 @@ class DenhaagBreadcrumbs {
       -1 * (el.querySelector(`.${this.classList.text}`).offsetWidth / 2 - 4),
     ); // it has a 4 pixel correction.
 
-    console.log(el);
     el.style.setProperty('--denhaag-breadcrumb-hidden-text-left', `${calculateTooltipPositioning}px`);
   }
 
