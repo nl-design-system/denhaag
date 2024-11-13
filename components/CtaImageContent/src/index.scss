@@ -90,15 +90,18 @@
       --denhaag-cta-image-content-heading-font-size: var(--denhaag-typography-scale-2xl-font-size);
       --denhaag-cta-image-content-heading-line-height: var(--denhaag-typography-scale-2xl-line-height);
       --denhaag-button-font-size: var(--denhaag-typograpshy-scale-lg-font-size);
-      --denhaag-button-medium-size-padding-block: var(--denhaag-button-large-size-padding-block);
-      --denhaag-button-medium-size-padding-inline: var(--denhaag-button-large-size-padding-inline);
+      --denhaag-button-medium-size-padding-block: var(--denhaag-button-large-size-padding-block, 0.4063rem);
+      --denhaag-button-medium-size-padding-inline: var(
+        --denhaag-button-large-size-padding-inline,
+        var(--denhaag-space-lg)
+      );
       --denhaag-cta-image-content-content-padding-block: 3.5rem;
       --denhaag-cta-image-content-paragraph-font-size: var(--denhaag-typography-scale-lg-font-size);
       --denhaag-cta-image-content-paragraph-line-height: var(--denhaag-typography-scale-lg-line-height);
       --denhaag-cta-image-content-flex-direction: initial;
 
       .denhaag-button {
-        line-height: var(--denhaag-button-large-size-line-height);
+        line-height: var(--denhaag-button-large-size-line-height, 1.75);
       }
 
       .denhaag-cta-image-content__image {
