@@ -5,25 +5,20 @@
  */
 
 @mixin denhaag-card-authentication {
-  background-color: var(--denhaag-card-authentication-background-color, var(--denhaag-card-background-color));
-  border-color: var(--denhaag-card-authentication-border-color, var(--denhaag-card-wrapper-border-color));
-  border-radius: var(--denhaag-card-authentication-border-radius, var(--denhaag-card-wrapper-border-radius));
-  border-width: var(--denhaag-card-authentication-border-width, var(--denhaag-card-border-width));
-  color: var(--denhaag-card-authentication-color, var(--denhaag-card-wrapper-color));
-  min-width: var(--denhaag-card-authentication-min-width);
-  min-height: var(--denhaag-card-authentication-min-height);
-  padding-inline-start: var(--denhaag-card-authentication-padding-inline, var(--denhaag-card-wrapper-padding-inline));
-  padding-inline-end: var(--denhaag-card-authentication-padding-inline, var(--denhaag-card-wrapper-padding-inline));
-  padding-block-start: var(--denhaag-card-authentication-padding-block, var(--denhaag-card-wrapper-padding-block));
-  padding-block-end: var(--denhaag-card-authentication-padding-block, var(--denhaag-card-wrapper-padding-block));
-  border-style: solid;
+  background-color: var(--denhaag-card-authentication-background-color, var(--denhaag-color-white));
+  border: var(--denhaag-card-authentication-border-width, var(--denhaag-card-border-width, 1px)) solid
+    var(--denhaag-card-authentication-border-color, var(--denhaag-color-grey-2));
+  border-radius: var(--denhaag-card-authentication-border-radius);
   box-sizing: border-box;
+  color: var(--denhaag-card-authentication-color, var(--denhaag-color-grey-4));
+  padding-inline: var(--denhaag-card-authentication-padding-inline, var(--denhaag-space-xl));
+  padding-block: var(--denhaag-card-authentication-padding-block, var(--denhaag-space-xl));
 
   .denhaag-card-authentication__header {
-    grid-template-areas: "card-heading card-logo";
     display: grid;
+    grid-template-areas: "card-heading card-logo";
     grid-template-columns: 1fr auto;
-    margin-block-end: var(--denhaag-card-authentication-header-margin-block-end);
+    margin-block-end: var(--denhaag-card-authentication-header-margin-block-end, var(--denhaag-space-md));
   }
 
   .denhaag-card-authentication__heading {
@@ -31,28 +26,31 @@
   }
 
   .denhaag-card-authentication__title {
+    color: var(--denhaag-card-authentication-title-color, var(--denhaag-color-grey-5));
+    font-family: var(
+      --denhaag-card-authentication-title-font-family,
+      var(--denhaag-typography-sans-serif-alternate-font-family)
+    );
+    font-size: var(--denhaag-card-authentication-title-font-size, var(--denhaag-typography-scale-xl-font-size));
+    font-weight: var(--denhaag-card-authentication-title-font-weight, var(--denhaag-typography-weight-bold));
     margin-block-start: 0;
-    font-family: var(--denhaag-card-authentication-title-font-family);
-    font-size: var(--denhaag-card-authentication-title-font-size);
-    font-weight: var(--denhaag-card-authentication-title-font-weight);
-    color: var(--denhaag-card-authentication-title-color);
   }
 
   .denhaag-card-authentication__logo {
+    aspect-ratio: 1;
     grid-area: card-logo;
-    height: var(--denhaag-card-authentication-logo-size);
-    width: var(--denhaag-card-authentication-logo-size);
-    margin-block-start: 0;
-    margin-block-end: 0;
+    height: var(--denhaag-card-authentication-logo-size, 3.5rem);
+    width: var(--denhaag-card-authentication-logo-size, 3.5rem);
+    margin-block: 0;
   }
 
   .denhaag-card-authentication__footer {
-    margin-block-start: var(--denhaag-card-authentication-footer-margin-block-start);
+    margin-block-start: var(--denhaag-card-authentication-footer-margin-block-start, var(--denhaag-space-xl));
   }
 }
 
 @mixin denhaag-card-authentication-portrait {
-  min-block-size: var(--denhaag-card-authentication-portrait-min-block-size);
+  min-block-size: var(--denhaag-card-authentication-portrait-min-block-size, 415px);
   text-align: center;
 
   .denhaag-card-authentication__header {
@@ -61,22 +59,22 @@
       "card-heading";
     grid-template-rows:
       calc(
-        var(--denhaag-card-authentication-portrait-logo-size) +
-          var(--denhaag-card-authentication-portrait-logo-margin-block-end)
+        var(--denhaag-card-authentication-portrait-logo-size, 5rem) +
+          var(--denhaag-card-authentication-portrait-logo-margin-block-end, var(--denhaag-space-xl))
       )
       auto;
-    margin-block-end: var(--denhaag-card-authentication-portrait-header-margin-block-end);
+    margin-block-end: var(--denhaag-card-authentication-portrait-header-margin-block-end, var(--denhaag-space-xl));
   }
 
   .denhaag-card-authentication__logo {
-    height: var(--denhaag-card-authentication-portrait-logo-size);
-    width: var(--denhaag-card-authentication-portrait-logo-size);
-    margin-inline-start: auto;
-    margin-inline-end: auto;
-    margin-block-end: var(--denhaag-card-authentication-portrait-logo-margin-block-end);
+    aspect-ratio: 1;
+    height: var(--denhaag-card-authentication-portrait-logo-size, 5rem);
+    width: var(--denhaag-card-authentication-portrait-logo-size, 5rem);
+    margin-inline: auto;
+    margin-block-end: var(--denhaag-card-authentication-portrait-logo-margin-block-end, var(--denhaag-space-xl));
   }
 
   .denhaag-card-authentication__footer {
-    margin-block-start: var(--denhaag-card-authentication-portrait-footer-margin-block-start);
+    margin-block-start: var(--denhaag-card-authentication-portrait-footer-margin-block-start, var(--denhaag-space-2xl));
   }
 }

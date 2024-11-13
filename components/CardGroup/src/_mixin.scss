@@ -5,14 +5,13 @@
  */
 
 @mixin denhaag-card-group {
-  --denhaag-card-group-distanced: 0;
-
   display: grid;
-  gap: var(--_denhaag-card-group-responsive-gap, var(--denhaag-card-group-gap));
-  margin-block-start: calc(var(--denhaag-card-group-distanced) * var(--denhaag-card-group-margin-block));
-  margin-block-end: calc(var(--denhaag-card-group-distanced) * var(--denhaag-card-group-margin-block));
-  margin-inline-start: calc(var(--denhaag-card-group-distanced) * var(--denhaag-card-group-margin-inline));
-  margin-inline-end: calc(var(--denhaag-card-group-distanced) * var(--denhaag-card-group-margin-inline));
+  grid-template-columns: 1fr;
+  gap: var(--denhaag-card-group-responsive-gap, var(--denhaag-card-group-gap));
+  margin-block: calc(
+    var(--denhaag-card-group-distanced, 0) * var(--denhaag-card-group-margin-block, var(--denhaag-space-lg))
+  );
+  margin-inline: calc(var(--denhaag-card-group-distanced, 0) * var(--denhaag-card-group-margin-inlinem, 0px));
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
