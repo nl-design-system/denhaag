@@ -229,7 +229,7 @@
           "margin-inline": { "value": "8px" },
           "border": { "value": "1px solid" },
           "border-color": { "value": "{denhaag.color.green.3}" },
-          "border-radius": { "value": "3px" },
+          "border-radius": { "value": "{denhaag.border-radius}" },
           "color": { "value": "{denhaag.color.green.3}" },
           "hover": {
             "cursor": { "value": "pointer" },
@@ -251,7 +251,7 @@
           "width": { "value": "44px" },
           "height": { "value": "44px" },
           "border": { "value": "none" },
-          "border-radius": { "value": "3px" },
+          "border-radius": { "value": "{denhaag.border-radius}" },
           "color": { "value": "{denhaag.color.white}" },
           "hover": {
             "cursor": { "value": "pointer" },

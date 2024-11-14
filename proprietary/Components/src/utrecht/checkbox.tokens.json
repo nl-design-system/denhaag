@@ -3,7 +3,7 @@
     "custom-checkbox": {
       "background-color": { "value": "{denhaag.color.white}" },
       "border-color": { "value": "{denhaag.color.grey.3}" },
-      "border-radius": { "value": "3px" },
+      "border-radius": { "value": "{denhaag.border-radius}" },
       "border-width": { "value": "1px" },
       "color": { "value": "{denhaag.color.white}" },
       "size": { "value": "20px" },

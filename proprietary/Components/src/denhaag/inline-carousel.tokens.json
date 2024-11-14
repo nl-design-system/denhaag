@@ -92,7 +92,7 @@
         "background-color": { "value": "{denhaag.color.green.3}" },
         "width": { "value": "44px" },
         "height": { "value": "44px" },
-        "border-radius": { "value": "3px" },
+        "border-radius": { "value": "{denhaag.border-radius}" },
         "z-index": { "value": "10" },
         "color": { "value": "{denhaag.color.white}" },
         "outlined": { "value": "none" },
