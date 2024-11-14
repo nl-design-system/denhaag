@@ -120,13 +120,13 @@
   border-width: var(--denhaag-datepicker-input-hover-border-width, 2px);
   padding-inline-start: calc(
     var(--denhaag-datepicker-input-padding-inline, var(--denhaag-space-sm)) -
-      var(--denhaag-datepicker-input-hover-border-width) + var(--denhaag-datepicker-input-border-width, 1px)
+      var(--denhaag-datepicker-input-hover-border-width, 2px) + var(--denhaag-datepicker-input-border-width, 1px)
   );
   padding-inline-end: calc(
     var(--denhaag-datepicker-button-font-size, var(--denhaag-typography-scale-lg-font-size)) +
       var(--denhaag-datepicker-button-inset-inline-end, var(--denhaag-space-sm)) +
       var(--denhaag-datepicker-input-padding-inline, var(--denhaag-space-sm)) -
-      var(--denhaag-datepicker-input-hover-border-width) + var(--denhaag-datepicker-input-border-width, 1px)
+      var(--denhaag-datepicker-input-hover-border-width, 2px) + var(--denhaag-datepicker-input-border-width, 1px)
   );
 }
 
@@ -144,7 +144,7 @@
       var(--denhaag-datepicker-error-icon-inset-inline-end, var(--denhaag-space-xs)) +
       var(--denhaag-datepicker-error-icon-font-size, var(--denhaag-typography-scale-base-font-size)) +
       var(--denhaag-datepicker-input-padding-inline, var(--denhaag-space-sm)) -
-      var(--denhaag-datepicker-input-hover-border-width) + var(--denhaag-datepicker-input-border-width, 1px)
+      var(--denhaag-datepicker-input-hover-border-width, 2px) + var(--denhaag-datepicker-input-border-width, 1px)
   );
 }
 
