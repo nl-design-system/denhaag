@@ -1,23 +1,5 @@
 {
   "denhaag": {
-    "datepicker": {
-      "calendar": {
-        "day": {
-          "current": {
-            "background-color": { "value": "{denhaag.color.grey.1}" }
-          },
-          "hover": {
-            "color": { "value": "{denhaag.color.green.3}" }
-          },
-          "selected": {
-            "background-color": { "value": "{denhaag.color.green.3}" },
-            "color": { "value": "{denhaag.color.white}" },
-            "hover": {
-              "background-color": { "value": "{denhaag.color.green.4}" }
-            }
-          }
-        }
-      }
-    }
+    "datepicker": {}
   }
 }
