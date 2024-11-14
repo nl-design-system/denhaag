@@ -1,6 +1,11 @@
 class DenhaagBreadcrumbs {
   constructor(id = 'denhaag-breadcrumb') {
     this.breadcrumbWrapper = document.getElementById(id);
+
+    if (!this.breadcrumbWrapper) {
+      return;
+    }
+
     document.addEventListener('keydown', (e) => {
       if (e.code === 'Escape') {
         this.hideToolTip();
@@ -9,10 +14,6 @@ class DenhaagBreadcrumbs {
       }
     });
     document.addEventListener('click', () => this.resetTooltips());
-
-    if (!this.breadcrumbWrapper) {
-      return;
-    }
 
     this.classList = {
       list: `${id}__list`,
@@ -31,7 +32,6 @@ class DenhaagBreadcrumbs {
     this.windowWidth = window.innerWidth;
     this.resizeEvents();
     this.windowEvents();
-    this.documentEvents();
   }
 
   /**
@@ -152,6 +152,7 @@ class DenhaagBreadcrumbs {
     const calculateTooltipPositioning = Math.round(
       -1 * (el.querySelector(`.${this.classList.text}`).offsetWidth / 2 - 4),
     ); // it has a 4 pixel correction.
+
     el.style.setProperty('--denhaag-breadcrumb-hidden-text-left', `${calculateTooltipPositioning}px`);
   }
 
