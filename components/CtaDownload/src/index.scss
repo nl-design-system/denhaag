@@ -15,10 +15,8 @@
   line-height: var(--denhaag-cta-download-line-height, 1.3);
   gap: var(--denhaag-cta-download-gap, var(--denhaag-space-lg));
   overflow-wrap: break-word;
-  padding-block-start: var(--denhaag-cta-download-padding-block, var(--denhaag-space-xl));
-  padding-block-end: var(--denhaag-cta-download-padding-block, var(--denhaag-space-xl));
-  padding-inline-start: var(--denhaag-cta-download-padding-inline, var(--denhaag-space-md));
-  padding-inline-end: var(--denhaag-cta-download-padding-inline, var(--denhaag-space-md));
+  padding-block: var(--denhaag-cta-download-padding-block, var(--denhaag-space-xl));
+  padding-inline: var(--denhaag-cta-download-padding-inline, var(--denhaag-space-md));
   text-decoration: none;
   word-wrap: break-word;
 }
@@ -76,6 +74,5 @@
   color: var(--denhaag-cta-download-title-color, var(--denhaag-color-grey-5));
   font-size: var(--denhaag-cta-download-title-font-size, var(--denhaag-typography-scale-lg-font-size));
   font-weight: var(--denhaag-cta-download-title-font-weight, var(--denhaag-typography-weight-bold));
-  margin-block-start: 0;
-  margin-block-end: 0;
+  margin-block: 0;
 }
