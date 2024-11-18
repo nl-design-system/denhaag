@@ -35,14 +35,3 @@ CardWithoutDate.args = {
   title: Default.args.title,
   subTitle: Default.args.subTitle,
 };
-
-/**
- * Case variant of Card component
- */
-export const Case: Story<CardProps> = Template.bind({});
-Case.args = {
-  title: Default.args.title,
-  subTitle: Default.args.subTitle,
-  date: Default.args.date,
-  variant: 'case',
-};
