@@ -1,13 +1,5 @@
 {
   "denhaag": {
-    "dot-indicator": {
-      "size": { "value": "12px" },
-      "background-color": { "value": "{denhaag.color.red.3}" },
-      "border-size": { "value": "2px" },
-      "border-color": { "value": "{denhaag.color.white}" },
-      "border": {
-        "value": "{denhaag.dot-indicator.border-size} solid {denhaag.dot-indicator.border-color}"
-      }
-    }
+    "dot-indicator": {}
   }
 }

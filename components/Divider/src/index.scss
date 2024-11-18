@@ -1,16 +1,14 @@
 .denhaag-divider {
-  background: var(--denhaag-divider-border-color);
+  background: var(--denhaag-divider-border-color, var(--denhaag-color-grey-2));
   border: 0;
-  height: var(--denhaag-divider-border-width);
-  margin-block-start: var(--denhaag-divider-margin-block-start);
-  margin-block-end: var(--denhaag-divider-margin-block-end);
+  height: var(--denhaag-divider-border-width, 1px);
+  margin-block: var(--denhaag-divider-margin-block, 16px);
   flex-shrink: 0;
   width: 100%;
 }
 
 .denhaag-divider--vertical {
-  margin-inline-start: var(--denhaag-divider-margin-inline-start);
-  margin-inline-end: var(--denhaag-divider-margin-inline-end);
-  width: var(--denhaag-divider-border-width);
+  margin-inline: var(--denhaag-divider-margin-inline, 16px);
+  width: var(--denhaag-divider-border-width, 1px);
   height: inherit;
 }
