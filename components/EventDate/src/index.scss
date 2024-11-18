@@ -3,10 +3,10 @@
 }
 
 .denhaag-event-date__icon {
-  color: var(--denhaag-event-date-icon-color, inherit);
-  margin-inline-end: var(--denhaag-event-date-icon-margin-inline-end);
+  color: var(--denhaag-event-date-icon-color, var(--denhaag-color-blue-3));
+  margin-inline-end: var(--denhaag-event-date-icon-margin-inline-end, 0.5rem);
 }
 
 .denhaag-event-date__text {
-  line-height: var(--denhaag-event-date-text-line-height);
+  line-height: var(--denhaag-event-date-text-line-height, 1.75);
 }
