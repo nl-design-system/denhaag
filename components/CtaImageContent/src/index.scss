@@ -1,11 +1,11 @@
 .denhaag-cta-image-content {
-  background-color: var(--denhaag-cta-image-content-background-color);
-  border: var(--denhaag-cta-image-content-border);
+  background-color: var(--denhaag-cta-image-content-background-color, var(--denhaag-color-white));
+  border: var(--denhaag-cta-image-content-border, 1px solid var(--denhaag-color-grey-2));
   display: flex;
-  flex-direction: var(--denhaag-cta-image-content-flex-direction);
+  flex-direction: var(--denhaag-cta-image-content-flex-direction, column-reverse);
   position: relative;
-  transition: box-shadow ease-in-out var(--denhaag-cta-image-content-transition-duration),
-    transform ease-in-out var(--denhaag-cta-image-content-transition-duration);
+  transition: box-shadow ease-in-out var(--denhaag-cta-image-content-transition-duration, 200ms),
+    transform ease-in-out var(--denhaag-cta-image-content-transition-duration, 200ms);
 
   @media (prefers-reduced-motion: reduce) {
     --denhaag-cta-image-content-transition-duration: 0ms;
@@ -20,16 +20,16 @@
   }
 
   &__content {
-    padding-inline: var(--denhaag-cta-image-content-content-padding-inline);
-    padding-block: var(--denhaag-cta-image-content-content-padding-block);
+    padding-inline: var(--denhaag-cta-image-content-content-padding-inline, var(--denhaag-space-2xl));
+    padding-block: var(--denhaag-cta-image-content-content-padding-block, var(--denhaag-space-2xl));
 
     @media (min-width: 768px) {
-      width: calc(50% - (2 * var(--denhaag-cta-image-content-content-padding-inline)));
+      width: var(--denhaag-cta-image-content-content-width, calc(50% - (2 * var(--denhaag-space-2xl))));
     }
   }
 
   &__image-container {
-    width: var(--denhaag-cta-image-content-image-container-width);
+    width: var(--denhaag-cta-image-content-image-container-width, 100%);
     overflow: hidden;
 
     @media (min-width: 768px) {
@@ -38,11 +38,11 @@
   }
 
   &__image {
-    aspect-ratio: var(--denhaag-cta-image-content-image-aspect-ratio);
+    aspect-ratio: var(--denhaag-cta-image-content-image-aspect-ratio, 16 / 9);
     height: 100%;
     object-fit: cover;
-    width: var(--denhaag-cta-image-content-image-width);
-    transition: transform ease-in-out var(--denhaag-cta-image-content-transition-duration);
+    width: var(--denhaag-cta-image-content-image-width, 100%);
+    transition: transform ease-in-out var(--denhaag-cta-image-content-transition-duration, 200ms);
   }
 
   .denhaag-button,
@@ -61,13 +61,13 @@
   }
 
   [class^="utrecht-heading-"] {
-    font-size: var(--denhaag-cta-image-content-heading-font-size);
-    line-height: var(--denhaag-cta-image-content-heading-line-height);
+    font-size: var(--denhaag-cta-image-content-heading-font-size, var(--denhaag-typography-scale-xl-font-size));
+    line-height: var(--denhaag-cta-image-content-heading-line-height, var(--denhaag-typography-scale-xl-line-height));
   }
 
   .utrecht-paragraph {
-    font-size: var(--denhaag-cta-image-content-paragraph-font-size);
-    line-height: var(--denhaag-cta-image-content-paragraph-line-height);
+    font-size: var(--denhaag-cta-image-content-paragraph-font-size, var(--denhaag-typography-scale-lg-font-size));
+    line-height: var(--denhaag-cta-image-content-paragraph-line-height, var(--denhaag-typography-scale-lg-line-height));
   }
 
   &--image-variant-large {
@@ -118,13 +118,20 @@
     }
 
     .denhaag-cta-image-content__image-container {
-      margin-block: var(--denhaag-cta-image-content-illustration-variant-image-container-margin);
-      margin-inline: var(--denhaag-cta-image-content-illustration-variant-image-container-margin);
+      margin-block: var(
+        --denhaag-cta-image-content-illustration-variant-image-container-margin,
+        var(--denhaag-space-2xl)
+      );
+      margin-inline: var(
+        --denhaag-cta-image-content-illustration-variant-image-container-margin,
+        var(--denhaag-space-2xl)
+      );
       width: auto;
 
       @media (min-width: 768px) {
         --denhaag-cta-image-content-image-width: calc(
-          50% - (2 * var(--denhaag-cta-image-content-illustration-variant-image-container-margin))
+          50% -
+            (2 * var(--denhaag-cta-image-content-illustration-variant-image-container-margin, var(--denhaag-space-2xl)))
         );
         --denhaag-cta-image-content-illustration-variant-image-container-margin: var(--denhaag-space-4xl);
 
