@@ -1,6 +1,9 @@
+import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import { DescriptionList } from '@gemeente-denhaag/descriptionlist';
 import readme from '../../../../components/DescriptionList/README.md?raw';
+import Link from '@gemeente-denhaag/link';
+import { EditIcon } from '@gemeente-denhaag/icons';
 
 const exampleArgs = {
   items: [
@@ -32,4 +35,22 @@ export const Default: Story = {};
 
 export const WithCaption: Story = {
   args: { ...Default.args, caption: 'Caption' },
+};
+
+export const MultipleColumns: Story = {
+  args: {
+    ...Default.args,
+    items: [
+      {
+        title: 'Owlman',
+        detail: 'A giant owl-like creature.',
+        action: (
+          <Link icon={<EditIcon />} iconAlign="start" href="#test">
+            Aanpassen
+          </Link>
+        ),
+      },
+      ...exampleArgs.items,
+    ],
+  },
 };

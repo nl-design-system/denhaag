@@ -5,3 +5,4 @@ export * from './DescriptionListBase';
 export * from './DescriptionListCaption';
 export * from './DescriptionListTitle';
 export * from './DescriptionListDetail';
+export * from './DescriptionListItem';
