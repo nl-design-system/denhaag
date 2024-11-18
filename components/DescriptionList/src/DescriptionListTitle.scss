@@ -9,9 +9,3 @@
   padding-inline-end: var(--denhaag-description-list-padding-inline-end, var(--denhaag-description-list-padding));
   padding-inline-start: var(--denhaag-description-list-padding-inline-start, var(--denhaag-description-list-padding));
 }
-
-@media (width >= 768px) {
-  .denhaag-description-list__title {
-    border-bottom: 1px solid var(--denhaag-description-list-border-color, lightgrey);
-  }
-}

@@ -1,7 +1,5 @@
 .denhaag-description-list {
   color: var(--denhaag-description-list-color);
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
   font-family: var(--denhaag-description-list-font-family);
   font-size: var(--denhaag-description-list-font-size);
   font-weight: var(--denhaag-description-list-font-weight);
@@ -20,7 +18,10 @@
     --denhaag-description-list-title-padding-block-start: var(--denhaag-description-list-lg-title-padding-block-start);
     --denhaag-description-list-padding-inline-end: var(--denhaag-description-list-lg-padding-inline-end);
     --denhaag-description-list-padding-inline-start: var(--denhaag-description-list-lg-padding-inline-start);
+  }
 
-    grid-template-columns: 1fr 2fr;
+  .denhaag-description-list-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.5fr;
   }
 }

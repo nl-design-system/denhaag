@@ -1,19 +1,21 @@
-import React, { Fragment, HTMLAttributes } from 'react';
+import React, { HTMLAttributes } from 'react';
 import { DescriptionListCaption } from './DescriptionListCaption';
 import { DescriptionListTitle } from './DescriptionListTitle';
 import { DescriptionListDetail } from './DescriptionListDetail';
 import { DescriptionListBase } from './DescriptionListBase';
 
 import './index.scss';
+import { DescriptionListItem } from './DescriptionListItem';
 
-type DescriptionListItem = {
+type DescriptionListElement = {
   title: React.ReactNode;
   detail: React.ReactNode;
+  action?: React.ReactNode;
 };
 
 export type DescriptionListProps = HTMLAttributes<HTMLDivElement> & {
   caption?: string;
-  items: DescriptionListItem[];
+  items: DescriptionListElement[];
 };
 
 export const DescriptionList: React.FC<DescriptionListProps> = ({ caption, items }: DescriptionListProps) => {
@@ -22,10 +24,11 @@ export const DescriptionList: React.FC<DescriptionListProps> = ({ caption, items
       {caption && <DescriptionListCaption>{caption}</DescriptionListCaption>}
       <DescriptionListBase>
         {items.map((item, index) => (
-          <Fragment key={index}>
+          <DescriptionListItem key={index}>
             <DescriptionListTitle>{item.title}</DescriptionListTitle>
             <DescriptionListDetail>{item.detail}</DescriptionListDetail>
-          </Fragment>
+            {item.action && <DescriptionListDetail>{item.action}</DescriptionListDetail>}
+          </DescriptionListItem>
         ))}
       </DescriptionListBase>
     </>
