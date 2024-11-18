@@ -1,5 +1,13 @@
 # @gemeente-denhaag/storybook
 
+## 0.1.1
+
+### Patch Changes
+
+- dc3fde7: Added DescriptionList story for action dd item
+- Updated dependencies [dc3fde7]
+  - @gemeente-denhaag/descriptionlist@1.0.0
+
 ## 0.1.0
 
 ### Patch Changes
