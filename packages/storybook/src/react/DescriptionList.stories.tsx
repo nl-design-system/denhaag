@@ -37,7 +37,7 @@ export const WithCaption: Story = {
   args: { ...Default.args, caption: 'Caption' },
 };
 
-export const MultipleColumns: Story = {
+export const WithAction: Story = {
   args: {
     ...Default.args,
     items: [
