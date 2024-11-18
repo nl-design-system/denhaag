@@ -19,9 +19,4 @@
     --denhaag-description-list-padding-inline-end: var(--denhaag-description-list-lg-padding-inline-end);
     --denhaag-description-list-padding-inline-start: var(--denhaag-description-list-lg-padding-inline-start);
   }
-
-  .denhaag-description-list-item {
-    display: grid;
-    grid-template-columns: 1fr 2fr 0.5fr;
-  }
 }
