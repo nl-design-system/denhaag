@@ -1,10 +1,11 @@
 .denhaag-event-date {
   display: inline-flex;
+  align-items: center;
 }
 
 .denhaag-event-date__icon {
   color: var(--denhaag-event-date-icon-color, var(--denhaag-color-blue-3));
-  margin-inline-end: var(--denhaag-event-date-icon-margin-inline-end, 0.5rem);
+  margin-inline-end: var(--denhaag-event-date-icon-margin-inline-end, var(--denhaag-space-xs));
 }
 
 .denhaag-event-date__text {
