@@ -1,16 +1,9 @@
-# @gemeente-denhaag/alert
+# @gemeente-denhaag/list
 
-## 0.1.2
+## 0.2.3
 
 ### Patch Changes
 
 - Updated dependencies [281fa34]
   - @gemeente-denhaag/icons@1.0.0
-  - @gemeente-denhaag/button@0.2.3
   - @gemeente-denhaag/iconbutton@0.2.3-alpha.422
-
-## 0.1.1
-
-### Patch Changes
-
-- @gemeente-denhaag/typography@0.2.3
