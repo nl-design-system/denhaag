@@ -242,24 +242,6 @@
           "xxs": {
             "margin-inline": { "value": "0px" }
           }
-        },
-        "arrows": {
-          "display": { "value": "flex" },
-          "justify-content": { "value": "center" },
-          "align-items": { "value": "center" },
-          "background-color": { "value": "{denhaag.color.green.3}" },
-          "width": { "value": "44px" },
-          "height": { "value": "44px" },
-          "border": { "value": "none" },
-          "border-radius": { "value": "{denhaag.border-radius}" },
-          "color": { "value": "{denhaag.color.white}" },
-          "hover": {
-            "cursor": { "value": "pointer" },
-            "background-color": { "value": "{denhaag.color.green.4}" }
-          },
-          "xxs": {
-            "display": { "value": "none" }
-          }
         }
       },
       "pagination": {
