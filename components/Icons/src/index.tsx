@@ -69,6 +69,7 @@ import ParkingSvg from './svg/objects/parking.svg';
 import StaffSvg from './svg/objects/staff.svg';
 import UserLoggedInSvg from './svg/objects/user-logged-in.svg';
 import UserSvg from './svg/objects/user.svg';
+import WalletSvg from './svg/objects/wallet.svg';
 
 // Social
 import FacebookSvg from './svg/social/facebook.svg';
@@ -148,6 +149,7 @@ export const ParkingIcon: F = (props: SvgIconProps) => buildIcon(ParkingSvg, pro
 export const StaffIcon: F = (props: SvgIconProps) => buildIcon(StaffSvg, props);
 export const UserLoggedInIcon: F = (props: SvgIconProps) => buildIcon(UserLoggedInSvg, props);
 export const UserIcon: F = (props: SvgIconProps) => buildIcon(UserSvg, props);
+export const WalletIcon: F = (props: SvgIconProps) => buildIcon(WalletSvg, props);
 
 // Social
 export const FacebookIcon: F = (props: SvgIconProps) => buildIcon(FacebookSvg, props);
