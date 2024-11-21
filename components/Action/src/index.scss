@@ -63,7 +63,10 @@
     display: flex;
     align-items: center;
     gap: var(--denhaag-action-actions-gap);
-    margin-inline-start: auto;
+
+    &:not(:has(a)) {
+      margin-inline-start: auto;
+    }
 
     & > a {
       width: 100%;
