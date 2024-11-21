@@ -160,7 +160,7 @@
   align-self: end;
   color: var(--denhaag-dynamic-content-icon-color);
   height: var(--denhaag-dynamic-content-icon-size, var(--denhaag-space-xl));
-  opacity: var(--denhaag-dynamic-content-icon-opacit, 0%);
+  opacity: var(--denhaag-dynamic-content-icon-opacity, 0%);
   position: relative;
   transition: opacity var(--denhaag-dynamic-content-card-transition-timing-function, ease-in-out)
     var(--denhaag-dynamic-content-card-transition-duration, 200ms);
