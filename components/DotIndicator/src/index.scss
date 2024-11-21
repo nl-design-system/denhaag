@@ -7,12 +7,12 @@
 
 .denhaag-dot-indicator__dot {
   position: absolute;
-  background-color: var(--denhaag-dot-indicator-background-color);
-  width: var(--denhaag-dot-indicator-size);
-  height: var(--denhaag-dot-indicator-size);
+  background-color: var(--denhaag-dot-indicator-background-color, var(--denhaag-color-red-3));
+  width: var(--denhaag-dot-indicator-size, 12px);
+  height: var(--denhaag-dot-indicator-size, 12px);
   transform: scale(1) translate(50%, -50%);
   border-radius: 50%;
-  border: var(--denhaag-dot-indicator-border);
+  border: 2px solid var(--denhaag-color-white);
 }
 
 .denhaag-dot-indicator--overlap-rectangle .denhaag-dot-indicator__dot {
