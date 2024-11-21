@@ -1,39 +1,5 @@
 {
   "denhaag": {
-    "header": {
-      "background-color": {
-        "value": "{denhaag.color.white}"
-      },
-      "border-color": {
-        "value": "{denhaag.color.grey.1}"
-      },
-      "padding-block": {
-        "value": "0.875rem"
-      },
-      "position": {
-        "value": "absolute"
-      },
-      "top": {
-        "value": "0"
-      },
-      "grid-gutter": {
-        "value": "{denhaag.space.xs}"
-      },
-      "max-width": {
-        "value": "100%"
-      },
-      "hypens": {
-        "value": "auto"
-      },
-      "secondary-gap": {
-        "value": "0"
-      },
-      "logo-height": {
-        "value": "{denhaag.space.4xl}"
-      },
-      "logo-width": {
-        "value": "9.5rem"
-      }
-    }
+    "header": {}
   }
 }
