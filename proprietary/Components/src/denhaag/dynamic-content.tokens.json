@@ -1,17 +1,9 @@
 {
   "denhaag": {
     "dynamic-content": {
-      "icon": {
-        "opacity": {
-          "value": "0%"
-        }
-      },
       "grid": {
         "columns": {
           "value": 1
-        },
-        "gap": {
-          "value": "{denhaag.space.md}"
         }
       },
       "row": {
