@@ -1,5 +1,11 @@
 # @gemeente-denhaag/action
 
+## 0.1.2
+
+### Patch Changes
+
+- 4c60c49: Align arrow to right on mobile
+
 ## 0.1.1
 
 ### Patch Changes
