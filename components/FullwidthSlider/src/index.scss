@@ -1,125 +1,127 @@
 @keyframes denhaag-angled-image-next {
   0% {
-    clip-path: var(--denhaag-fullwidth-slider-animation-start-clip-path);
+    clip-path: var(--denhaag-fullwidth-slider-animation-start-clip-path, polygon(5% 0, 100% 0, 100% 100%, 0% 100%));
   }
 
   55% {
-    clip-path: var(--denhaag-fullwidth-slider-animation-start-clip-path);
+    clip-path: var(--denhaag-fullwidth-slider-animation-start-clip-path, polygon(5% 0, 100% 0, 100% 100%, 0% 100%));
   }
 
   100% {
-    clip-path: var(--denhaag-fullwidth-slider-animation-end-clip-path);
+    clip-path: var(--denhaag-fullwidth-slider-animation-end-clip-path, polygon(0 0, 100% 0, 100% 100%, 0% 100%));
   }
 }
 
 .denhaag-fullwidth-slider {
-  position: var(--denhaag-fullwidth-slider-position);
-  font-family: var(--denhaag-fullwidth-slider-font-family);
-  font-weight: var(--denhaag-fullwidth-slider-font-weight);
-  font-size: var(--denhaag-fullwidth-slider-font-size);
-  color: var(--denhaag-fullwidth-slider-color);
-  overflow: var(--denhaag-fullwidth-slider-overflow);
-  max-width: var(--denhaag-fullwidth-slider-max-width-xs);
-  touch-action: var(--denhaag-fullwidth-slider-touch-action);
-  padding-block-start: var(--denhaag-fullwidth-slider-padding-block-xs);
-  padding-block-end: var(--denhaag-fullwidth-slider-padding-block-xs);
+  position: relative;
+  font-family: var(--denhaag-fullwidth-slider-font-family, var(--denhaag-typography-sans-serif-font-family));
+  font-weight: var(--denhaag-fullwidth-slider-font-weight, var(--denhaag-typography-weight-regular));
+  font-size: var(--denhaag-fullwidth-slider-font-size, var(--denhaag-typography-scale-s-font-size));
+  color: var(--denhaag-fullwidth-slider-color, var(--denhaag-color-grey-4));
+  overflow: clip;
+  max-width: var(--denhaag-fullwidth-slider-max-width, 100%);
+  touch-action: pan-y;
+  padding-block: var(--denhaag-fullwidth-slider-padding-block, 32px);
   width: 100%;
 
   @media (min-width: 1768px) {
-    max-width: var(--denhaag-fullwidth-slider-max-width-xl);
-    margin-inline-start: var(--denhaag-fullwidth-slider-margin-inline-xl);
-    margin-inline-end: var(--denhaag-fullwidth-slider-margin-inline-xl);
-    padding-block-start: var(--denhaag-fullwidth-slider-padding-block-sm);
-    padding-block-end: var(--denhaag-fullwidth-slider-padding-block-sm);
+    --denhaag-fullwidth-slider-max-width: 1280px;
+    --denhaag-fullwidth-slider-padding-block: 64px;
+
+    margin-inline: var(--denhaag-fullwidth-slider-margin-inline, auto);
   }
 }
 
 .denhaag-fullwidth-slider__wrapper {
-  position: var(--denhaag-fullwidth-slider-wrapper-position);
+  position: relative;
 }
 
 .denhaag-fullwidth-slider__slide {
-  width: var(--denhaag-fullwidth-slider-slide-width);
+  width: var(--denhaag-fullwidth-slider-slide-width, 100%);
 }
 
 .denhaag-fullwidth-slider__card {
-  position: var(--denhaag-fullwidth-slider-card-position);
-  padding-inline-start: var(--denhaag-fullwidth-slider-card-padding);
-  padding-inline-end: var(--denhaag-fullwidth-slider-card-padding);
-  padding-block-start: var(--denhaag-fullwidth-slider-card-padding);
-  padding-block-end: var(--denhaag-fullwidth-slider-card-padding);
-  display: var(--denhaag-fullwidth-slider-card-display);
-  justify-content: var(--denhaag-fullwidth-slider-card-justify-content);
-  border-bottom: var(--denhaag-fullwidth-slider-card-border-bottom);
-  border-color: var(--denhaag-fullwidth-slider-card-border-color);
-  opacity: var(--denhaag-fullwidth-slider-card-opacity);
-  pointer-events: var(--denhaag-fullwidth-slider-card-pointer-events);
-  background-color: var(--denhaag-fullwidth-slider-card-background-color);
-  transition: var(--denhaag-fullwidth-slider-card-transition);
-  transform: var(--denhaag-fullwidth-slider-card-transform);
-  margin-block-start: var(--denhaag-fullwidth-slider-card-margin-block-start-xs);
-  margin-inline: var(--denhaag-fullwidth-slider-card-margin-inline-xs);
-  width: var(--denhaag-fullwidth-slider-card-width-xs);
+  position: relative;
+  padding-inline: var(--denhaag-fullwidth-slider-card-padding, 16px);
+  padding-block: var(--denhaag-fullwidth-slider-card-padding, 16px);
+  display: flex;
+  justify-content: space-between;
+  border-bottom: var(--denhaag-fullwidth-slider-card-border-bottom, 1px solid);
+  border-color: var(--denhaag-fullwidth-slider-card-border-color, var(--denhaag-color-grey-2));
+  opacity: var(--denhaag-fullwidth-slider-card-opacity, 0);
+  pointer-events: var(--denhaag-fullwidth-slider-card-pointer-events, none);
+  background-color: var(--denhaag-fullwidth-slider-card-background-color, var(--denhaag-color-white));
+  transition: var(--denhaag-fullwidth-slider-card-transition, all 500ms ease-in-out);
+  transform: var(--denhaag-fullwidth-slider-card-transform, translateX(12px));
+  margin-block-start: var(--denhaag-fullwidth-slider-card-margin-block-start, -32px);
+  margin-inline: var(--denhaag-fullwidth-slider-card-margin-inline, 24px);
+  width: var(--denhaag-fullwidth-slider-card-width, auto);
 
   @media (prefers-reduced-motion) {
-    transition-delay: var(--denhaag-fullwidth-slider-slide-active-card-prefers-reduced-motion-transition-delay);
-    transition-duration: var(--denhaag-fullwidth-slider-slide-active-card-prefers-reduced-motion-transition-duration);
+    transition-delay: var(--denhaag-fullwidth-slider-slide-active-card-prefers-reduced-motion-transition-delay, 0ms);
+    transition-duration: var(
+      --denhaag-fullwidth-slider-slide-active-card-prefers-reduced-motion-transition-duration,
+      0,
+      0,
+      200ms
+    );
   }
 
   @media (min-width: 768px) {
-    margin-block-start: var(--denhaag-fullwidth-slider-card-margin-block-start-sm);
-    margin-inline: var(--denhaag-fullwidth-slider-card-margin-inline-sm);
-    width: var(--denhaag-fullwidth-slider-card-width-sm);
+    --denhaag-fullwidth-slider-card-margin-block-start: -64px;
+    --denhaag-fullwidth-slider-card-margin-inline: 60px;
+    --denhaag-fullwidth-slider-card-width: 523px;
   }
 
   @media (min-width: 1024px) {
-    margin-block-start: var(--denhaag-fullwidth-slider-card-margin-block-start-lg);
-    margin-inline: var(--denhaag-fullwidth-slider-card-margin-inline-lg);
+    --denhaag-fullwidth-slider-card-margin-block-start: -72px;
   }
 
   @media (min-width: 1280px) {
-    margin-inline: var(--denhaag-fullwidth-slider-card-margin-inline-xl);
+    --denhaag-fullwidth-slider-card-margin-inline: 100px;
   }
 
   &:hover,
   &--hover {
-    cursor: var(--denhaag-fullwidth-slider-card-hover-cursor);
-    box-shadow: var(--denhaag-fullwidth-slider-card-hover-box-shadow);
+    cursor: var(--denhaag-fullwidth-slider-card-hover-cursor, pointer);
+    box-shadow: var(--denhaag-fullwidth-slider-card-hover-box-shadow, 0px 4px 16px 0px rgba(0, 0, 0, 0.16));
 
     .denhaag-fullwidth-slider__card-arrow {
-      transform: var(--denhaag-fullwidth-slider-card-arrow-hover-transform);
+      transform: var(--denhaag-fullwidth-slider-card-arrow-hover-transform, translateX(4px));
     }
   }
 
   &--no-action {
     &:hover {
-      cursor: var(--denhaag-fullwidth-slider-card-no-action-cursor);
-      box-shadow: var(--denhaag-fullwidth-slider-card-no-action-box-shadow);
+      cursor: var(--denhaag-fullwidth-slider-card-no-action-cursor, inherit);
+      box-shadow: var(--denhaag-fullwidth-slider-card-no-action-box-shadow, none);
     }
   }
 }
 
 .denhaag-fullwidth-slider__card-content {
-  display: var(--denhaag-fullwidth-slider-card-content-display);
-  flex-direction: var(--denhaag-fullwidth-slider-card-content-flex-direction);
-  margin-block-start: var(--denhaag-fullwidth-slider-card-content-margin-block-start-xs);
-  margin-inline-start: var(--denhaag-fullwidth-slider-card-content-margin-inline-start-xs);
-  padding-inline-end: var(--denhaag-fullwidth-slider-card-content-padding-inline-end);
+  display: flex;
+  flex-direction: column;
+  margin-block-start: var(--denhaag-fullwidth-slider-card-content-margin-block-start, 8px);
+  margin-inline-start: var(--denhaag-fullwidth-slider-card-content-margin-inline-start, 8px);
+  padding-inline-end: var(--denhaag-fullwidth-slider-card-content-padding-inline-end, 48px);
 
   @media (min-width: 768px) {
-    margin-block-start: var(--denhaag-fullwidth-slider-card-content-margin-block-start-sm);
-    margin-inline-start: var(--denhaag-fullwidth-slider-card-content-margin-inline-start-sm);
+    --denhaag-fullwidth-slider-card-content-margin-block-start: 16px;
+    --denhaag-fullwidth-slider-card-content-margin-inline-start: 16px;
   }
 }
 
 .denhaag-fullwidth-slider__card-content__title {
-  font-family: var(--denhaag-fullwidth-slider-card-content-title-font-family);
-  font-size: var(--denhaag-fullwidth-slider-card-content-title-font-size);
-  font-weight: var(--denhaag-fullwidth-slider-card-content-title-font-weight);
-  margin-block-start: var(--denhaag-fullwidth-slider-card-content-title-margin-block);
-  margin-block-end: var(--denhaag-fullwidth-slider-card-content-title-margin-block);
-  padding-block-end: var(--denhaag-fullwidth-slider-card-content-title-padding-bottom);
-  color: var(--denhaag-fullwidth-slider-card-content-title-color);
+  font-family: var(
+    --denhaag-fullwidth-slider-card-content-title-font-family,
+    var(--denhaag-typography-sans-serif-alternate-font-family)
+  );
+  font-size: var(--denhaag-fullwidth-slider-card-content-title-font-size, var(--denhaag-typography-scale-lg-font-size));
+  font-weight: var(--denhaag-fullwidth-slider-card-content-title-font-weight, var(--denhaag-typography-weight-bold));
+  margin-block: var(--denhaag-fullwidth-slider-card-content-title-margin-block, 0px);
+  padding-block-end: var(--denhaag-fullwidth-slider-card-content-title-padding-bottom, 16px);
+  color: var(--denhaag-fullwidth-slider-card-content-title-color, var(--denhaag-color-grey-5));
 
   &--focus-visible {
     a {
@@ -128,196 +130,212 @@
   }
 
   a {
-    text-decoration: var(--denhaag-fullwidth-slider-card-content-title-anchor-text-decoration);
-    color: var(--denhaag-fullwidth-slider-card-content-title-anchor-color);
+    text-decoration: var(--denhaag-fullwidth-slider-card-content-title-anchor-text-decoration, none);
+    color: var(--denhaag-fullwidth-slider-card-content-title-anchor-color, var(--denhaag-color-grey-5));
 
     &:focus-visible {
       outline: var(--denhaag-focus-border);
     }
 
     &::after {
-      content: var(--denhaag-fullwidth-slider-card-content-title-after-content);
-      position: var(--denhaag-fullwidth-slider-card-content-title-after-position);
-      top: var(--denhaag-fullwidth-slider-card-content-title-after-top);
-      bottom: var(--denhaag-fullwidth-slider-card-content-title-after-bottom);
-      left: var(--denhaag-fullwidth-slider-card-content-title-after-left);
-      right: var(--denhaag-fullwidth-slider-card-content-title-after-right);
-      transition: var(--denhaag-fullwidth-slider-card-content-title-after-transition);
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transition: var(--denhaag-fullwidth-slider-card-content-title-after-transition, box-shadow 350ms ease);
     }
   }
 }
 
 .denhaag-fullwidth-slider__card-content__author {
-  font-family: var(--denhaag-fullwidth-slider-card-content-author-font-family);
-  font-size: var(--denhaag-fullwidth-slider-card-content-author-font-size);
-  font-weight: var(--denhaag-fullwidth-slider-card-content-author-font-weight);
-  font-style: var(--denhaag-fullwidth-slider-card-content-author-font-style);
-  color: var(--denhaag-fullwidth-slider-card-content-author-color);
-  margin-block-end: var(--denhaag-fullwidth-slider-card-content-author-margin-block-end);
+  font-family: var(
+    --denhaag-fullwidth-slider-card-content-author-font-family,
+    var(--denhaag-typography-sans-serif-font-family)
+  );
+  font-size: var(
+    --denhaag-fullwidth-slider-card-content-author-font-size,
+    var(--denhaag-typography-scale-base-font-size)
+  );
+  font-weight: var(
+    --denhaag-fullwidth-slider-card-content-author-font-weight,
+    var(--denhaag-typography-weight-regular)
+  );
+  font-style: var(--denhaag-fullwidth-slider-card-content-author-font-style, normal);
+  color: var(--denhaag-fullwidth-slider-card-content-author-color, var(--denhaag-color-green-4));
+  margin-block-end: var(--denhaag-fullwidth-slider-card-content-author-margin-block-end, 24px);
 }
 
 .denhaag-fullwidth-slider__card-arrow {
-  color: var(--denhaag-fullwidth-slider-card-arrow-color);
-  position: var(--denhaag-fullwidth-slider-card-arrow-position);
-  bottom: var(--denhaag-fullwidth-slider-card-padding);
-  right: var(--denhaag-fullwidth-slider-card-padding);
-  pointer-events: var(--denhaag-fullwidth-slider-card-arrow-pointer-events);
-  transition: var(--denhaag-fullwidth-slider-card-arrow-transition);
+  color: var(--denhaag-fullwidth-slider-card-arrow-color, var(--denhaag-color-blue-3));
+  position: absolute;
+  bottom: var(--denhaag-fullwidth-slider-card-padding, 16px);
+  right: var(--denhaag-fullwidth-slider-card-padding, 16px);
+  pointer-events: none;
+  transition: var(--denhaag-fullwidth-slider-card-arrow-transition, transform 350ms ease);
 }
 
 .denhaag-fullwidth-slider__slide-image {
-  width: var(--denhaag-fullwidth-slider-slide-image-width);
-  height: var(--denhaag-fullwidth-slider-slide-image-height-xs);
+  width: var(--denhaag-fullwidth-slider-slide-image-width, 100%);
+  height: var(--denhaag-fullwidth-slider-slide-image-height, 202px);
 
   @media (min-width: 768px) {
-    height: var(--denhaag-fullwidth-slider-slide-image-height-sm);
+    --denhaag-fullwidth-slider-slide-image-height: 432px;
   }
 
   @media (min-width: 1024px) {
-    height: var(--denhaag-fullwidth-slider-slide-image-height-lg);
+    --denhaag-fullwidth-slider-slide-image-height: 576px;
   }
 
   img {
-    width: var(--denhaag-fullwidth-slider-slide-image-img-width);
-    height: var(--denhaag-fullwidth-slider-slide-image-img-height);
-    object-fit: var(--denhaag-fullwidth-slider-slide-image-img-object-fit);
+    width: 100%;
+    height: 100%;
+    object-fit: var(--denhaag-fullwidth-slider-slide-image-img-object-fit, cover);
   }
 
   &.denhaag-fullwidth-slider__slide-image--portrait {
-    position: var(--denhaag-fullwidth-slider-slide-image-portrait-position);
-    overflow: var(--denhaag-fullwidth-slider-slide-image-portrait-overflow);
+    position: relative;
+    overflow: hidden;
 
     &::before {
-      content: var(--denhaag-fullwidth-slider-slide-image-portrait-before-content);
-      position: var(--denhaag-fullwidth-slider-slide-image-portrait-before-position);
-      left: var(--denhaag-fullwidth-slider-slide-image-portrait-before-left);
-      top: var(--denhaag-fullwidth-slider-slide-image-portrait-before-top);
-      width: var(--denhaag-fullwidth-slider-slide-image-portrait-before-width);
-      height: var(--denhaag-fullwidth-slider-slide-image-portrait-before-height);
-      z-index: var(--denhaag-fullwidth-slider-slide-image-portrait-before-z-index);
-      background-size: var(--denhaag-fullwidth-slider-slide-image-portrait-before-background-size);
-      background-position: var(--denhaag-fullwidth-slider-slide-image-portrait-before-background-position);
-      filter: var(--denhaag-fullwidth-slider-slide-image-portrait-before-filter);
-      transform: var(--denhaag-fullwidth-slider-slide-image-portrait-before-transform);
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-size: var(--denhaag-fullwidth-slider-slide-image-portrait-before-background-size, cover);
+      background-position: var(--denhaag-fullwidth-slider-slide-image-portrait-before-background-position, center);
+      filter: var(--denhaag-fullwidth-slider-slide-image-portrait-before-filter, blur(10px));
+      transform: var(--denhaag-fullwidth-slider-slide-image-portrait-before-transform, scale(1.2));
       background-image: var(--denhaag-fullwidth-slider-background-image-url);
     }
 
     img {
-      object-fit: var(--denhaag-fullwidth-slider-slide-image-portrait-img-object-fit);
+      object-fit: var(--denhaag-fullwidth-slider-slide-image-portrait-img-object-fit, contain);
     }
   }
 }
 
 .denhaag-fullwidth-slider__reverse-slide-direction {
-  animation: var(--denhaag-fullwidth-slider-wrapper-reversed-animation);
-  animation-duration: var(--denhaag-fullwidth-slider-wrapper-reversed-animation-duration);
+  animation: var(--denhaag-fullwidth-slider-wrapper-reversed-animation, var(--denhaag-angled-image-next));
+  animation-duration: var(--denhaag-fullwidth-slider-wrapper-reversed-animation-duration, 1000ms);
 }
 
 .denhaag-fullwidth-slider__slide--active {
   &:not(.denhaag-fullwidth-slider__remove-animation) {
     .denhaag-fullwidth-slider__slide-image {
-      position: var(--denhaag-fullwidth-slider-slide-active-image-position);
-      animation: var(--denhaag-fullwidth-slider-slide-active-image-animation);
-      animation-duration: var(--denhaag-fullwidth-slider-slide-active-image-animation-duration);
+      position: relative;
+      animation: var(--denhaag-fullwidth-slider-slide-active-image-animation, var(--denhaag-angled-image-next));
+      animation-duration: var(--denhaag-fullwidth-slider-slide-active-image-animation-duration, 1000ms);
     }
   }
 
   .denhaag-fullwidth-slider__card {
-    transform: var(--denhaag-fullwidth-slider-slide-active-card-transform);
-    opacity: var(--denhaag-fullwidth-slider-slide-active-card-opacity);
-    transition-property: var(--denhaag-fullwidth-slider-slide-active-card-transition-property);
-    transition-duration: var(--denhaag-fullwidth-slider-slide-active-card-transition-duration);
-    transition-delay: var(--denhaag-fullwidth-slider-slide-active-card-transition-delay);
+    transform: var(--denhaag-fullwidth-slider-slide-active-card-transform, translateX(0));
+    opacity: var(--denhaag-fullwidth-slider-slide-active-card-opacity, 100%);
+    transition-property: var(
+      --denhaag-fullwidth-slider-slide-active-card-transition-property,
+      transform,
+      opacity,
+      box-shadow
+    );
+    transition-duration: var(--denhaag-fullwidth-slider-slide-active-card-transition-duration, 750ms, 350ms, 200ms);
+    transition-delay: var(--denhaag-fullwidth-slider-slide-active-card-transition-delay, 350ms, 350ms, 0ms);
     pointer-events: inherit;
   }
 }
 
 .denhaag-fullwidth-slider--prefers-reduced-motion {
   .denhaag-fullwidth-slider__card {
-    transition-delay: var(--denhaag-fullwidth-slider-slide-active-card-prefers-reduced-motion-transition-delay);
-    transition-duration: var(--denhaag-fullwidth-slider-slide-active-card-prefers-reduced-motion-transition-duration);
+    transition-delay: var(--denhaag-fullwidth-slider-slide-active-card-prefers-reduced-motion-transition-delay, 0ms);
+    transition-duration: var(
+      --denhaag-fullwidth-slider-slide-active-card-prefers-reduced-motion-transition-duration,
+      0ms,
+      0ms,
+      200ms
+    );
   }
 }
 
 .denhaag-fullwidth-slider__top {
-  display: var(--denhaag-fullwidth-slider-top-display);
-  grid-template-columns: var(--denhaag-fullwidth-slider-top-grid-template-columns-xs);
-  column-gap: var(--denhaag-fullwidth-slider-top-column-gap);
-  align-items: var(--denhaag-fullwidth-slider-top-align-items);
-  overflow-x: var(--denhaag-fullwidth-slider-top-overflow-x);
-  margin-block-end: var(--denhaag-fullwidth-slider-top-margin-block-end);
-  margin-inline-start: var(--denhaag-fullwidth-slider-top-margin-inline-xs);
-  margin-inline-end: var(--denhaag-fullwidth-slider-top-margin-inline-xs);
+  display: grid;
+  grid-template-columns: var(--denhaag-fullwidth-slider-top-grid-template-columns, repeat(2, 1fr));
+  column-gap: var(--denhaag-fullwidth-slider-top-column-gap, 48px);
+  align-items: var(--denhaag-fullwidth-slider-top-align-items, center);
+  overflow-x: var(--denhaag-fullwidth-slider-top-overflow-x, hidden);
+  margin-block-end: var(--denhaag-fullwidth-slider-top-margin-block-end, 24px);
+  margin-inline: var(--denhaag-fullwidth-slider-top-margin-inline, 24px);
 
   @media (min-width: 768px) {
-    grid-template-columns: var(--denhaag-fullwidth-slider-top-grid-template-columns-sm);
-    margin-inline-start: var(--denhaag-fullwidth-slider-top-margin-inline-sm);
-    margin-inline-end: var(--denhaag-fullwidth-slider-top-margin-inline-sm);
+    --denhaag-fullwidth-slider-top-grid-template-columns: repeat(3, 1fr);
+    --denhaag-fullwidth-slider-top-margin-inline: 60px;
   }
 
   @media (min-width: 1280px) {
-    margin-inline-start: var(--denhaag-fullwidth-slider-top-margin-inline-xl);
-    margin-inline-end: var(--denhaag-fullwidth-slider-top-margin-inline-xl);
+    --denhaag-fullwidth-slider-top-margin-inline: 100px;
   }
 
   @media (min-width: 1768px) {
-    margin-inline-start: var(--denhaag-fullwidth-slider-top-margin-inline-xxl);
-    margin-inline-end: var(--denhaag-fullwidth-slider-top-margin-inline-xxl);
+    --denhaag-fullwidth-slider-top-margin-inline: 0px;
   }
 
   &--no-title {
-    display: var(--denhaag-fullwidth-slider-top-no-title-display);
-    justify-content: var(--denhaag-fullwidth-slider-top-no-title-justify-content);
+    display: flex;
+    justify-content: space-between;
 
     .denhaag-fullwidth-slider__pagination {
-      margin-inline-start: var(--denhaag-fullwidth-slider-top-no-title-pagination-margin-inline-start);
+      margin-inline-start: var(--denhaag-fullwidth-slider-top-no-title-pagination-margin-inline-start, 0px);
     }
   }
 }
 
 .denhaag-fullwidth-slider__top-title {
-  font-family: var(--denhaag-fullwidth-slider-top-title-font-family);
-  font-size: var(--denhaag-fullwidth-slider-top-title-font-size);
-  font-weight: var(--denhaag-fullwidth-slider-top-title-font-weight);
-  color: var(--denhaag-fullwidth-slider-top-title-color);
-  margin-block-start: var(--denhaag-fullwidth-slider-top-title-margin-block-start);
-  margin-block-end: var(--denhaag-fullwidth-slider-top-title-margin-block-end-sm);
-  grid-column: var(--denhaag-fullwidth-slider-top-title-grid-column-sm);
+  font-family: var(
+    --denhaag-fullwidth-slider-top-title-font-family,
+    var(--denhaag-typography-sans-serif-alternate-font-family)
+  );
+  font-size: var(--denhaag-fullwidth-slider-top-title-font-size, var(--denhaag-typography-scale-2xl-font-size));
+  font-weight: var(--denhaag-fullwidth-slider-top-title-font-weight, var(--denhaag-typography-weight-bold));
+  color: var(--denhaag-fullwidth-slider-top-title-color, var(--denhaag-color-grey-5));
+  margin-block-start: var(--denhaag-fullwidth-slider-top-title-margin-block-start, 0px);
+  margin-block-end: var(--denhaag-fullwidth-slider-top-title-margin-block-end, 0px);
+  grid-column: var(--denhaag-fullwidth-slider-top-title-grid-column, span 1);
 
   @media (max-width: 767px) {
-    grid-column: var(--denhaag-fullwidth-slider-top-title-grid-column-xs);
-    margin-block-end: var(--denhaag-fullwidth-slider-top-title-margin-block-end-xs);
+    --denhaag-fullwidth-slider-top-title-margin-block-end: 24px;
+    --denhaag-fullwidth-slider-top-title-grid-column: span 2;
   }
 }
 
 .denhaag-fullwidth-slider__controls {
-  display: var(--denhaag-fullwidth-slider-controls-display);
-  justify-content: var(--denhaag-fullwidth-slider-controls-justify-content);
+  display: flex;
+  justify-content: var(--denhaag-fullwidth-slider-controls-justify-content, flex-end);
 }
 
 .denhaag-fullwidth-slider__controls-playpause {
-  display: var(--denhaag-fullwidth-slider-controls-playpause-display);
-  justify-content: var(--denhaag-fullwidth-slider-controls-playpause-justify-content);
-  align-items: var(--denhaag-fullwidth-slider-controls-playpause-align-items);
-  background-color: var(--denhaag-fullwidth-slider-controls-playpause-background-color);
-  width: var(--denhaag-fullwidth-slider-controls-playpause-width);
-  height: var(--denhaag-fullwidth-slider-controls-playpause-height);
-  margin-inline-start: var(--denhaag-fullwidth-slider-controls-playpause-margin-inline);
-  margin-inline-end: var(--denhaag-fullwidth-slider-controls-playpause-margin-inline);
-  border: var(--denhaag-fullwidth-slider-controls-playpause-border);
-  border-color: var(--denhaag-fullwidth-slider-controls-playpause-border-color);
-  border-radius: var(--denhaag-fullwidth-slider-controls-playpause-border-radius);
-  color: var(--denhaag-fullwidth-slider-controls-playpause-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--denhaag-fullwidth-slider-controls-playpause-width, 43px);
+  height: var(--denhaag-fullwidth-slider-controls-playpause-height, 43px);
+  margin-inline: var(--denhaag-fullwidth-slider-controls-playpause-margin-inline, 8px);
+  border: var(--denhaag-fullwidth-slider-controls-playpause-border, 1px solid);
+  border-color: var(--denhaag-fullwidth-slider-controls-playpause-border-color, var(--denhaag-color-green-3));
+  border-radius: var(--denhaag-fullwidth-slider-controls-playpause-border-radius, var(--denhaag-border-radius));
+  color: var(--denhaag-fullwidth-slider-controls-playpause-color, var(--denhaag-color-green-3));
 
   &--hide {
-    display: var(--denhaag-fullwidth-slider-controls-playpause-hide-display);
+    display: none;
   }
 
   &:hover,
   &--hover {
-    cursor: var(--denhaag-fullwidth-slider-controls-playpause-hover-cursor);
-    color: var(--denhaag-fullwidth-slider-controls-playpause-hover-color);
-    border-color: var(--denhaag-fullwidth-slider-controls-playpause-hover-border-color);
+    cursor: pointer;
+    color: var(--denhaag-fullwidth-slider-controls-playpause-hover-color, var(--denhaag-color-green-4));
+    border-color: var(--denhaag-fullwidth-slider-controls-playpause-hover-border-color, var(--denhaag-color-green-4));
   }
 
   &:focus-visible,
@@ -326,26 +344,28 @@
   }
 
   @media (max-width: 359px) {
-    margin-inline-start: var(--denhaag-fullwidth-slider-controls-playpause-xxs-margin-inline);
-    margin-inline-end: var(--denhaag-fullwidth-slider-controls-playpause-xxs-margin-inline);
+    --denhaag-fullwidth-slider-controls-playpause-margin-inline: 0px;
   }
 }
 
 .denhaag-fullwidth-slider__controls-arrows {
-  display: var(--denhaag-fullwidth-slider-controls-arrows-display);
-  justify-content: var(--denhaag-fullwidth-slider-controls-arrows-justify-content);
-  align-items: var(--denhaag-fullwidth-slider-controls-arrows-align-items);
-  background-color: var(--denhaag-fullwidth-slider-controls-arrows-background-color);
-  width: var(--denhaag-fullwidth-slider-controls-arrows-width);
-  height: var(--denhaag-fullwidth-slider-controls-arrows-height);
-  border: var(--denhaag-fullwidth-slider-controls-arrows-border);
-  border-radius: var(--denhaag-fullwidth-slider-controls-arrows-border-radius);
-  color: var(--denhaag-fullwidth-slider-controls-arrows-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--denhaag-fullwidth-slider-controls-arrows-background-color, var(--denhaag-color-green-3));
+  width: var(--denhaag-fullwidth-slider-controls-arrows-width, 44px);
+  height: var(--denhaag-fullwidth-slider-controls-arrows-height, 44px);
+  border: var(--denhaag-fullwidth-slider-controls-arrows-border, none);
+  border-radius: var(--denhaag-fullwidth-slider-controls-arrows-border-radius, var(--denhaag-border-radius));
+  color: var(--denhaag-fullwidth-slider-controls-arrows-color, var(--denhaag-color-white));
 
   &:hover,
   &--hover {
-    cursor: var(--denhaag-fullwidth-slider-controls-arrows-hover-cursor);
-    background-color: var(--denhaag-fullwidth-slider-controls-arrows-hover-background-color);
+    cursor: pointer;
+    background-color: var(
+      --denhaag-fullwidth-slider-controls-arrows-hover-background-color,
+      var(--denhaag-color-green-4)
+    );
   }
 
   &:focus-visible,
@@ -354,85 +374,87 @@
   }
 
   @media (max-width: 359px) {
-    display: var(--denhaag-fullwidth-slider-controls-arrows-xxs-display);
+    display: none;
   }
 }
 
 .denhaag-fullwidth-slider__pagination {
-  display: var(--denhaag-fullwidth-slider-pagination-display);
-  align-items: var(--denhaag-fullwidth-slider-pagination-align-items);
-  justify-content: var(--denhaag-fullwidth-slider-pagination-justify-content-xs);
-  transform: var(--denhaag-fullwidth-slider-pagination-transform) !important;
-  width: var(--denhaag-fullwidth-slider-pagination-width) !important;
-  min-height: var(--denhaag-fullwidth-slider-pagination-min-height);
+  display: flex;
+  align-items: center;
+  justify-content: var(--denhaag-fullwidth-slider-pagination-justify-content, flex-start);
+  transform: var(--denhaag-fullwidth-slider-pagination-transform, translateX(0)) !important;
+  width: var(--denhaag-fullwidth-slider-pagination-width, fit-content) !important;
+  min-height: var(--denhaag-fullwidth-slider-pagination-min-height, 48px);
 
   @media (min-width: 768px) {
-    justify-content: var(--denhaag-fullwidth-slider-pagination-justify-content-sm);
-    margin-inline-start: var(--denhaag-fullwidth-slider-pagination-margin-inline);
-    margin-inline-end: var(--denhaag-fullwidth-slider-pagination-margin-inline);
+    --denhaag-fullwidth-slider-pagination-justify-content: center;
+
+    margin-inline: var(--denhaag-fullwidth-slider-pagination-margin-inline, auto);
   }
 
   &.denhaag-fullwidth-slider__pagination--dynamic {
     @media (max-width: 767px) {
-      margin-left: var(--denhaag-fullwidth-slider-pagination-dynamic-margin-left);
+      margin-left: var(--denhaag-fullwidth-slider-pagination-dynamic-margin-left, -40px);
     }
   }
 
   .denhaag-fullwidth-slider__pagination-bullet {
-    position: var(--denhaag-fullwidth-slider-pagination-bullet-position);
-    opacity: var(--denhaag-fullwidth-slider-pagination-bullet-opacity);
-    width: var(--denhaag-fullwidth-slider-pagination-bullet-width);
-    height: var(--denhaag-fullwidth-slider-pagination-bullet-height);
-    border-radius: var(--denhaag-fullwidth-slider-pagination-bullet-border-radius);
-    margin-inline-start: var(--denhaag-fullwidth-slider-pagination-bullet-margin-inline);
-    margin-inline-end: var(--denhaag-fullwidth-slider-pagination-bullet-margin-inline);
-    border: var(--denhaag-fullwidth-slider-pagination-bullet-border);
-    border-color: var(--denhaag-fullwidth-slider-pagination-bullet-border-color);
+    position: relative;
+    opacity: var(--denhaag-fullwidth-slider-pagination-bullet-opacity, 1);
+    width: var(--denhaag-fullwidth-slider-pagination-bullet-width, 12px);
+    height: var(--denhaag-fullwidth-slider-pagination-bullet-height, 12px);
+    border-radius: var(--denhaag-fullwidth-slider-pagination-bullet-border-radius, 50%);
+    margin-inline: var(--denhaag-fullwidth-slider-pagination-bullet-margin-inline, 4px);
+    border: var(--denhaag-fullwidth-slider-pagination-bullet-border, 1px solid);
+    border-color: var(--denhaag-fullwidth-slider-pagination-bullet-border-color, var(--denhaag-color-green-3));
   }
 
   .denhaag-fullwidth-slider__pagination-bullet--active {
-    opacity: var(--denhaag-fullwidth-slider-pagination-bullet-active-opacity);
-    transform: var(--denhaag-fullwidth-slider-pagination-bullet-active-transform);
-    background-color: var(--denhaag-fullwidth-slider-pagination-bullet-active-background-color);
+    opacity: var(--denhaag-fullwidth-slider-pagination-bullet-active-opacity, 1);
+    background-color: var(
+      --denhaag-fullwidth-slider-pagination-bullet-active-background-color,
+      var(--denhaag-color-green-3)
+    );
   }
 
   &.swiper-pagination-bullets-dynamic {
     .denhaag-fullwidth-slider__pagination-bullet {
-      transition: var(--denhaag-fullwidth-slider-pagination-bullet-transition);
-      opacity: var(--denhaag-fullwidth-slider-pagination-bullet-dynamic-opacity);
+      transition: var(--denhaag-fullwidth-slider-pagination-bullet-transition, all 200ms);
+      opacity: var(--denhaag-fullwidth-slider-pagination-bullet-dynamic-opacity, 0);
     }
 
     .denhaag-fullwidth-slider__pagination-bullet--active-main {
-      opacity: var(--denhaag-fullwidth-slider-pagination-bullet-active-main-opacity);
-      transform: var(--denhaag-fullwidth-slider-pagination-bullet-active-main-transform);
-      background-color: var(--denhaag-fullwidth-slider-pagination-bullet-active-main-background-color);
-      border: var(--denhaag-fullwidth-slider-pagination-bullet-border);
-      border-color: var(--denhaag-fullwidth-slider-pagination-bullet-border-color);
-      width: var(--denhaag-fullwidth-slider-pagination-bullet-width);
-      height: var(--denhaag-fullwidth-slider-pagination-bullet-height);
+      opacity: var(--denhaag-fullwidth-slider-pagination-bullet-active-main-opacity, 1);
+      border: var(--denhaag-fullwidth-slider-pagination-bullet-border, 1px solid);
+      border-color: var(--denhaag-fullwidth-slider-pagination-bullet-border-color, var(--denhaag-color-green-3));
+      width: var(--denhaag-fullwidth-slider-pagination-bullet-width, 12px);
+      height: var(--denhaag-fullwidth-slider-pagination-bullet-height, 12px);
 
       &.denhaag-fullwidth-slider__pagination-bullet--active {
-        opacity: var(--denhaag-fullwidth-slider-pagination-bullet-active-opacity);
-        background-color: var(--denhaag-fullwidth-slider-pagination-bullet-active-background-color);
+        opacity: var(--denhaag-fullwidth-slider-pagination-bullet-active-opacity, 1);
+        background-color: var(
+          --denhaag-fullwidth-slider-pagination-bullet-active-background-color,
+          var(--denhaag-color-green-3)
+        );
       }
     }
 
     .denhaag-fullwidth-slider__pagination-bullet--active-prev,
     .denhaag-fullwidth-slider__pagination-bullet--active-next {
-      opacity: var(--denhaag-fullwidth-slider-pagination-bullet-active-opacity);
-      width: var(--denhaag-fullwidth-slider-pagination-bullet-active-next-prev-width);
-      height: var(--denhaag-fullwidth-slider-pagination-bullet-active-next-prev-height);
-      border: var(--denhaag-fullwidth-slider-pagination-bullet-border);
-      border-color: var(--denhaag-fullwidth-slider-pagination-bullet-border-color);
+      opacity: var(--denhaag-fullwidth-slider-pagination-bullet-active-opacity, 1);
+      width: var(--denhaag-fullwidth-slider-pagination-bullet-active-next-prev-width, 8px);
+      height: var(--denhaag-fullwidth-slider-pagination-bullet-active-next-prev-height, 8px);
+      border: var(--denhaag-fullwidth-slider-pagination-bullet-border, 1px solid);
+      border-color: var(--denhaag-fullwidth-slider-pagination-bullet-border-color, var(--denhaag-color-green-3));
     }
 
     .denhaag-fullwidth-slider__pagination-bullet--active-prev-prev,
     .denhaag-fullwidth-slider__pagination-bullet--active-next-next {
-      opacity: var(--denhaag-fullwidth-slider-pagination-bullet-active-opacity);
-      width: var(--denhaag-fullwidth-slider-pagination-bullet-active-next-next-prev-prev-width);
-      height: var(--denhaag-fullwidth-slider-pagination-bullet-active-next-next-prev-prev-height);
-      border: var(--denhaag-fullwidth-slider-pagination-bullet-border);
-      border-color: var(--denhaag-fullwidth-slider-pagination-bullet-border-color);
+      opacity: var(--denhaag-fullwidth-slider-pagination-bullet-active-opacity, 1);
+      width: var(--denhaag-fullwidth-slider-pagination-bullet-active-next-next-prev-prev-width, 4px);
+      height: var(--denhaag-fullwidth-slider-pagination-bullet-active-next-next-prev-prev-height, 4px);
+      border: var(--denhaag-fullwidth-slider-pagination-bullet-border, 1px solid);
+      border-color: var(--denhaag-fullwidth-slider-pagination-bullet-border-color, var(--denhaag-color-green-3));
     }
   }
 }
