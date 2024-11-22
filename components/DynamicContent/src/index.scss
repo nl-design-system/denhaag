@@ -1,11 +1,10 @@
 .denhaag-dynamic-content {
-  padding-block-start: var(--denhaag-dynamic-content-padding-block);
-  padding-block-end: var(--denhaag-dynamic-content-padding-block);
+  padding-block: var(--denhaag-dynamic-content-padding-block, var(--denhaag-space-2xl));
 }
 
 .denhaag-dynamic-content--list {
   --denhaag-dynamic-content-grid-columns: 1;
-  --denhaag-dynamic-content-row-gap: var(--denhaag-dynamic-content-list-gap);
+  --denhaag-dynamic-content-row-gap: var(--denhaag-space-md);
 }
 
 .denhaag-dynamic-content--list .denhaag-link {
@@ -22,9 +21,9 @@
 .denhaag-dynamic-content__grid {
   display: grid;
   grid-template-columns: repeat(var(--denhaag-dynamic-content-grid-columns, 1), 1fr);
-  grid-column-gap: var(--denhaag-dynamic-content-grid-gap, 0);
-  grid-row-gap: var(--denhaag-dynamic-content-row-gap);
-  scroll-margin-top: var(--denhaag-dynamic-content-row-gap);
+  grid-column-gap: var(--denhaag-dynamic-content-grid-gap, var(--denhaag-space-md));
+  grid-row-gap: var(--denhaag-dynamic-content-row-gap, var(--denhaag-space-2xl));
+  scroll-margin-top: var(--denhaag-dynamic-content-row-gap, var(--denhaag-space-2xl));
 }
 
 .denhaag-dynamic-content__card {
@@ -45,7 +44,7 @@
 
 .denhaag-dynamic-content__card--hover,
 .denhaag-dynamic-content__card:hover {
-  --denhaag-dynamic-content-icon-opacity: var(--denhaag-dynamic-content-hover-icon-opacity);
+  --denhaag-dynamic-content-icon-opacity: 100%;
   --denhaag-dynamic-content-image-translate: translateY(-0.125rem);
 }
 
@@ -63,21 +62,21 @@
 }
 
 .denhaag-dynamic-content__card-image-container {
-  height: var(--denhaag-dynamic-content-image-container-height);
-  overflow: var(--denhaag-dynamic-content-image-container-overflow);
-  width: var(--denhaag-dynamic-content-image-container-width);
+  height: var(--denhaag-dynamic-content-image-container-height, auto);
+  overflow: var(--denhaag-dynamic-content-image-container-overflow, hidden);
+  width: var(--denhaag-dynamic-content-image-container-width, 100%);
 }
 
 .denhaag-dynamic-content__card-image {
   aspect-ratio: 16 / 9;
-  background: var(--denhaag-dynamic-content-image-background-color);
+  background: var(--denhaag-dynamic-content-image-background-color, var(--denhaag-color-grey-1));
   object-fit: cover;
   transition: transform var(--denhaag-dynamic-content-card-transition-timing-function, ease-in-out)
     var(--denhaag-dynamic-content-transition-card-duration, 200ms);
 }
 
 .denhaag-dynamic-content__card--reduced-motion .denhaag-dynamic-content__card-image {
-  transition-duration: var(--denhaag-dynamic-content-card-transition-duration);
+  transition-duration: var(--denhaag-dynamic-content-card-transition-duration, 200ms);
 }
 
 .denhaag-dynamic-content__card--hover .denhaag-dynamic-content__card-image,
@@ -86,17 +85,15 @@
 }
 
 .denhaag-dynamic-content__card-image--placeholder {
-  padding-block-start: var(--denhaag-dynamic-content-image-placeholder-padding-block);
-  padding-block-end: var(--denhaag-dynamic-content-image-placeholder-padding-block);
-  padding-inline-start: var(--denhaag-dynamic-content-image-placeholder-padding-inline);
-  padding-inline-end: var(--denhaag-dynamic-content-image-placeholder-padding-inline);
+  padding-block: var(--denhaag-dynamic-content-image-placeholder-padding-block, var(--denhaag-space-xl));
+  padding-inline: var(--denhaag-dynamic-content-image-placeholder-padding-inline, var(--denhaag-space-xl));
 }
 
 .denhaag-dynamic-content__card .denhaag-icon {
   --denhaag-dynamic-content-card-icon-translate: translateX(-0.1875rem);
 
   align-self: end;
-  color: var(--denhaag-dynamic-content-icon-color);
+  color: var(--denhaag-dynamic-content-icon-color, var(--denhaag-color-blue-3));
   transition: transform var(--denhaag-dynamic-content-card-transition-timing-function, ease-in-out)
       var(--denhaag-dynamic-content-card-transition-duration, 200ms),
     opacity var(--denhaag-dynamic-content-card-transition-timing-function, ease-in-out)
@@ -112,48 +109,50 @@
 .denhaag-dynamic-content__card--focus,
 .denhaag-dynamic-content__card:focus-within,
 .denhaag-dynamic-content__card-link:focus-visible {
-  --denhaag-dynamic-content-icon-opacity: var(--denhaag-dynamic-content-focus-icon-opacity);
+  --denhaag-dynamic-content-icon-opacity: 100%;
 
   outline: none;
 
   /* stylelint-disable-next-line no-descending-specificity */
   & .denhaag-icon,
   & .denhaag-dynamic-content__card-image-container {
-    outline: var(--denhaag-dynamic-content-focus-outline);
+    outline: var(--denhaag-dynamic-content-focus-outline, var(--denhaag-focus-border));
   }
 }
 
 .denhaag-dynamic-content__card-link:focus:not(:focus-within) {
-  --denhaag-dynamic-content-icon-opacity: var(--denhaag-dynamic-content-focus-icon-opacity);
+  --denhaag-dynamic-content-icon-opacity: 100%;
 
   outline: none;
 }
 
 .denhaag-dynamic-content__card-content {
-  color: var(--denhaag-dynamic-content-card-content-color);
+  color: var(--denhaag-dynamic-content-card-content-color, var(--denhaag-color-grey-4));
   display: flex;
   flex-direction: row;
-  gap: var(--denhaag-dynamic-content-card-content-gap);
-  padding-block-start: var(--denhaag-dynamic-content-card-content-padding);
+  gap: var(--denhaag-dynamic-content-card-content-gap, var(--denhaag-space-lg));
+  padding-block-start: var(--denhaag-dynamic-content-card-content-padding, var(--denhaag-space-md));
 }
 
 .denhaag-dynamic-content__card-caption {
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
-  font-size: var(--denhaag-dynamic-content-card-caption-font-size);
-  font-weight: var(--denhaag-dynamic-content-card-caption-font-size);
-  line-height: var(--denhaag-dynamic-content-card-caption-line-height);
+  font-size: var(--denhaag-dynamic-content-card-caption-font-size, var(--denhaag-typography-scale-base-font-size));
+  font-weight: var(--denhaag-dynamic-content-card-caption-font-weight, var(--denhaag-typography-weight-regular));
+  line-height: var(
+    --denhaag-dynamic-content-card-caption-line-height,
+    var(--denhaag-typography-scale-base-line-height)
+  );
 }
 
 .denhaag-dynamic-content__card-title {
-  color: var(--denhaag-dynamic-content-card-title-color);
-  font-size: var(--denhaag-dynamic-content-card-title-font-size);
-  font-weight: var(--denhaag-dynamic-content-card-title-font-weight);
-  hyphens: var(--denhaag-dynamic-content-card-title-hyphens);
-  line-height: var(--denhaag-dynamic-content-card-title-line-height);
-  margin-block-start: 0;
-  margin-block-end: 0;
+  color: var(--denhaag-dynamic-content-card-title-color, var(--denhaag-color-grey-5));
+  font-size: var(--denhaag-dynamic-content-card-title-font-size, var(--denhaag-typography-scale-xl-font-size));
+  font-weight: var(--denhaag-dynamic-content-card-title-font-weight, var(--denhaag-typography-weight-bold));
+  hyphens: var(--denhaag-dynamic-content-card-title-hyphens, auto);
+  line-height: var(--denhaag-dynamic-content-card-title-line-height, var(--denhaag-typography-scale-s-line-height));
+  margin-block: 0;
   word-break: break-word; // Fixes hypens issue for Chrome & safari on windows device.
 }
 
@@ -161,7 +160,7 @@
   align-self: end;
   color: var(--denhaag-dynamic-content-icon-color);
   height: var(--denhaag-dynamic-content-icon-size, var(--denhaag-space-xl));
-  opacity: var(--denhaag-dynamic-content-icon-opacity);
+  opacity: var(--denhaag-dynamic-content-icon-opacity, 0%);
   position: relative;
   transition: opacity var(--denhaag-dynamic-content-card-transition-timing-function, ease-in-out)
     var(--denhaag-dynamic-content-card-transition-duration, 200ms);
@@ -186,16 +185,16 @@
 }
 
 .denhaag-dynamic-content__pagination {
-  padding-block-start: var(--denhaag-dynamic-content-pagination-padding-block);
+  padding-block-start: var(--denhaag-dynamic-content-pagination-padding-block, var(--denhaag-space-5xl));
 }
 
 @media (min-width: 768px) {
   .denhaag-dynamic-content {
-    --denhaag-dynamic-content-grid-gap: var(--denhaag-dynamic-content-s-grid-gap);
+    --denhaag-dynamic-content-grid-gap: var(--denhaag-space-md);
   }
 
   .denhaag-dynamic-content--grid {
-    --denhaag-dynamic-content-grid-columns: var(--denhaag-dynamic-content-s-grid-columns);
+    --denhaag-dynamic-content-grid-columns: 2;
   }
 
   .denhaag-dynamic-content--list-2 {
@@ -203,16 +202,16 @@
   }
 
   .denhaag-dynamic-content__card .denhaag-icon {
-    opacity: var(--denhaag-dynamic-content-icon-opacity);
+    opacity: var(--denhaag-dynamic-content-icon-opacity, 0%);
   }
 }
 
 @media (min-width: 1024px) {
   .denhaag-dynamic-content {
-    --denhaag-dynamic-content-grid-gap: var(--denhaag-dynamic-content-m-grid-gap);
+    --denhaag-dynamic-content-grid-gap: var(--denhaag-space-xl);
   }
 
   .denhaag-dynamic-content--grid {
-    --denhaag-dynamic-content-grid-columns: var(--denhaag-dynamic-content-m-grid-columns);
+    --denhaag-dynamic-content-grid-columns: 3;
   }
 }
