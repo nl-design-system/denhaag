@@ -1,5 +1,11 @@
 # @gemeente-denhaag/card
 
+## 0.2.5
+
+### Patch Changes
+
+- @gemeente-denhaag/typography@0.2.4
+
 ## 0.2.4
 
 ### Patch Changes
