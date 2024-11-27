@@ -7,9 +7,9 @@ import { Heading1, Heading2, Heading3, Paragraph } from '@gemeente-denhaag/typog
 const exampleArgs = {
   children: (
     <>
-      <Heading1 className="utrecht-heading-1">Heading 1</Heading1>
-      <Heading2 className="utrecht-heading-2">Heading 2</Heading2>
-      <Heading3 className="utrecht-heading-3">Heading 3</Heading3>
+      <Heading1>Heading 1</Heading1>
+      <Heading2>Heading 2</Heading2>
+      <Heading3>Heading 3</Heading3>
       <Paragraph>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus laboriosam sapiente dolor rerum illo eius error
         autem inventore esse! Iusto iure aperiam optio dicta rerum quibusdam quaerat animi ipsam fugiat!
