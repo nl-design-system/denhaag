@@ -1,5 +1,23 @@
 # @gemeente-denhaag/storybook
 
+## 0.1.5
+
+### Patch Changes
+
+- 44c70e2: Add rich text design tokens
+- Updated dependencies [44c70e2]
+  - @gemeente-denhaag/design-tokens-components@0.2.4
+  - @gemeente-denhaag/rich-text@1.0.1
+  - @gemeente-denhaag/typography@0.2.4
+  - @gemeente-denhaag/alert@0.1.3
+  - @gemeente-denhaag/card@0.2.5
+  - @gemeente-denhaag/contact-timeline@0.1.3
+  - @gemeente-denhaag/cta-image-content@0.1.3
+  - @gemeente-denhaag/header@0.1.3
+  - @gemeente-denhaag/process-steps@0.1.2
+  - @gemeente-denhaag/card-authentication@0.1.3
+  - @gemeente-denhaag/card-group@0.1.3
+
 ## 0.1.4
 
 ### Patch Changes

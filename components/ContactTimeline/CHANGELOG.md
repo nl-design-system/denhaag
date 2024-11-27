@@ -1,5 +1,12 @@
 # @gemeente-denhaag/contact-timeline
 
+## 0.1.3
+
+### Patch Changes
+
+- @gemeente-denhaag/typography@0.2.4
+- @gemeente-denhaag/process-steps@0.1.2
+
 ## 0.1.2
 
 ### Patch Changes
