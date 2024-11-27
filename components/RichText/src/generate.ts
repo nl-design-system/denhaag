@@ -3,12 +3,12 @@ import path from 'path';
 import spacingMatrix from './spacing-matrix.json';
 
 const spaceMap = {
-  NVT: undefined,
-  Onbekenden: 'stranger',
-  Kennissen: 'acquaintance',
-  Vrienden: 'friend',
-  Besties: 'best-friend',
   Kind: 'confidant',
+  Besties: 'best-friend',
+  Vrienden: 'friend',
+  Kennissen: 'acquaintance',
+  Onbekenden: 'stranger',
+  NVT: undefined,
 };
 
 interface Spacing {
@@ -43,7 +43,7 @@ fs.writeFileSync(
   .${component}:has(+ .${sibling}, + .${sibling.replace('denhaag', 'utrecht')}),
   .${component.replace('denhaag', 'utrecht')}:has(+ .${sibling}, + .${sibling.replace('denhaag', 'utrecht')}) {
     --${component}-margin-block-end: var(--denhaag-rich-text-${spacing}-margin-block-end);
-    --${component.replace('denhaag', 'utrecht')}-margin-block-end: var(--utrecht-rich-text-${spacing}-margin-block-end);
+    --${component.replace('denhaag', 'utrecht')}-margin-block-end: var(--denhaag-rich-text-${spacing}-margin-block-end);
   }
 `,
       );
