@@ -82,6 +82,7 @@
     "@gemeente-denhaag/process-steps": "workspace:*",
     "@gemeente-denhaag/radio-button": "workspace:*",
     "@gemeente-denhaag/responsive-content": "workspace:*",
+    "@gemeente-denhaag/rich-text": "workspace:*",
     "@gemeente-denhaag/select": "workspace:*",
     "@gemeente-denhaag/sheet": "workspace:*",
     "@gemeente-denhaag/sidenav": "workspace:*",
