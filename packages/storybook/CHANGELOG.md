@@ -1,5 +1,13 @@
 # @gemeente-denhaag/storybook
 
+## 0.1.4
+
+### Patch Changes
+
+- cfbee04: New rich text component
+- Updated dependencies [cfbee04]
+  - @gemeente-denhaag/rich-text@1.0.0
+
 ## 0.1.3
 
 ### Patch Changes
