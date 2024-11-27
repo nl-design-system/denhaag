@@ -1,0 +1,37 @@
+@import "./mixin";
+
+.denhaag-rich-text {
+  --denhaag-space-around: 1;
+  @include denhaag-heading-1;
+  @include denhaag-heading-2;
+  @include denhaag-heading-3;
+  @include denhaag-heading-4;
+  @include denhaag-heading-5;
+  @include denhaag-heading-6;
+  @include denhaag-accordion;
+  @include denhaag-alert;
+  @include denhaag-badge-list;
+  @include denhaag-blockquote;
+  @include denhaag-breadcrumb-nav;
+  @include denhaag-button;
+  @include denhaag-button-group;
+  @include denhaag-data-list;
+  @include denhaag-figure;
+  @include denhaag-form-field;
+  @include denhaag-form-field-description;
+  @include denhaag-form-field-error-message;
+  @include denhaag-form-label;
+  @include denhaag-img;
+  @include denhaag-link;
+  @include denhaag-ordered-list;
+  @include denhaag-pagination;
+  @include denhaag-paragraph;
+  @include denhaag-select;
+  @include denhaag-separator;
+  @include denhaag-sidenav;
+  @include denhaag-badge-status;
+  @include denhaag-table;
+  @include denhaag-textarea;
+  @include denhaag-textbox;
+  @include denhaag-unordered-list;
+}
