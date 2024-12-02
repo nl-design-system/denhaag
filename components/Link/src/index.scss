@@ -120,7 +120,7 @@ li .denhaag-link__icon {
   pointer-events: none;
 }
 
-.denhaag-link__icon > svg {
+.denhaag-link__icon > :first-of-type {
   aspect-ratio: 1 / 1;
   font-size: var(--denhaag-link-icon-font-size);
   height: var(--denhaag-link-icon-size);
