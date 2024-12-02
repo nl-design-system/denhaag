@@ -1,6 +1,5 @@
 .denhaag-dynamic-content {
-  padding-block-start: var(--denhaag-dynamic-content-padding-block);
-  padding-block-end: var(--denhaag-dynamic-content-padding-block);
+  padding-block: var(--denhaag-dynamic-content-padding-block);
 }
 
 .denhaag-dynamic-content--list {
@@ -29,6 +28,7 @@
 
 .denhaag-dynamic-content__card {
   --denhaag-dynamic-content-card-icon-opacity: 0;
+  --denhaag-link-icon-size: 1.5rem;
 
   display: flex;
   flex-direction: column;
@@ -86,10 +86,8 @@
 }
 
 .denhaag-dynamic-content__card-image--placeholder {
-  padding-block-start: var(--denhaag-dynamic-content-image-placeholder-padding-block);
-  padding-block-end: var(--denhaag-dynamic-content-image-placeholder-padding-block);
-  padding-inline-start: var(--denhaag-dynamic-content-image-placeholder-padding-inline);
-  padding-inline-end: var(--denhaag-dynamic-content-image-placeholder-padding-inline);
+  padding-block: var(--denhaag-dynamic-content-image-placeholder-padding-block);
+  padding-inline: var(--denhaag-dynamic-content-image-placeholder-padding-inline);
 }
 
 .denhaag-dynamic-content__card .denhaag-icon {
@@ -152,9 +150,8 @@
   font-weight: var(--denhaag-dynamic-content-card-title-font-weight);
   hyphens: var(--denhaag-dynamic-content-card-title-hyphens);
   line-height: var(--denhaag-dynamic-content-card-title-line-height);
-  margin-block-start: 0;
-  margin-block-end: 0;
-  word-break: break-word; // Fixes hypens issue for Chrome & safari on windows device.
+  margin-block: 0;
+  word-break: break-word; // Fixes hyphens issue for Chrome & safari on windows device.
 }
 
 .denhaag-dynamic-content__card-icon {
