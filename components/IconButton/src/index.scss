@@ -1,10 +1,8 @@
 .denhaag-icon-button {
   display: inline-flex;
-  color: var(--denhaag-icon-button-color);
-  padding-inline-start: var(--denhaag-icon-button-padding-inline-start);
-  padding-inline-end: var(--denhaag-icon-button-padding-inline-end);
-  padding-block-start: var(--denhaag-icon-button-padding-block-start);
-  padding-block-end: var(--denhaag-icon-button-padding-block-end);
+  color: var(--denhaag-icon-button-color, var(--denhaag-color-grey-4));
+  padding-inline: var(--denhaag-icon-button-padding-inline, 2px);
+  padding-block: var(--denhaag-icon-button-padding-block, 2px);
   border: 0;
   border-radius: 0;
   outline: 0;
@@ -15,14 +13,14 @@
 
 .denhaag-icon-button:hover,
 .denhaag-icon-button--hover {
-  color: var(--denhaag-icon-button-hover-color);
+  color: var(--denhaag-icon-button-hover-color, var(--denhaag-color-blue-4));
 }
 
 .denhaag-icon-button:focus-visible,
 .denhaag-icon-button--focus {
   color: var(--denhaag-icon-button-focus-color);
-  outline-color: var(--denhaag-icon-button-focus-outline-color);
-  outline-width: var(--denhaag-icon-button-focus-outline-width);
-  outline-style: var(--denhaag-icon-button-focus-outline-style);
-  outline-offset: var(--denhaag-icon-button-focus-outline-offset);
+  outline-color: var(--denhaag-icon-button-focus-outline-color, var(--denhaag-focus-border-color));
+  outline-width: var(--denhaag-icon-button-focus-outline-width, var(--denhaag-focus-border-width));
+  outline-style: var(--denhaag-icon-button-focus-outline-style, var(--denhaag-focus-border-style));
+  outline-offset: var(--denhaag-icon-button-focus-outline-offset, 0);
 }
