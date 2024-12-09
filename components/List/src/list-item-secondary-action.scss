@@ -1,12 +1,10 @@
 .denhaag-list__secondary-action {
   flex-shrink: 0;
   display: flex;
-  margin-inline-start: calc(var(--denhaag-list-item-secondary-action-margin-inline-start));
-  color: var(--denhaag-list-item-secondary-action-color);
+  margin-inline-start: var(--denhaag-list-item-secondary-action-margin-inline-start, 24px);
+  color: var(--denhaag-list-item-secondary-action-color, var(--denhaag-color-grey-4));
 
-  --denhaag-icon-button-padding-inline-start: 0;
-  --denhaag-icon-button-padding-inline-end: 0;
-  --denhaag-icon-button-padding-block-start: 0;
-  --denhaag-icon-button-padding-block-end: 0;
-  --denhaag-icon-button-hover-color: var(--denhaag-list-item-hover-color);
+  --denhaag-icon-button-padding-inline: 0;
+  --denhaag-icon-button-padding-block: 0;
+  --denhaag-icon-button-hover-color: var(--denhaag-list-item-hover-color, var(--denhaag-color-blue-3));
 }
