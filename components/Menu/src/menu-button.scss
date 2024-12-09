@@ -2,12 +2,12 @@
   display: inline-block;
   background-color: inherit;
   border: inherit;
-  color: var(--denhaag-menu-button-color);
+  color: var(--denhaag-menu-button-color, var(--denhaag-color-grey-4));
   cursor: pointer;
-  font-family: var(--denhaag-menu-button-font-family);
-  font-size: var(--denhaag-menu-button-font-size);
-  font-weight: var(--denhaag-menu-button-font-size);
-  line-height: var(--denhaag-menu-button-line-height);
+  font-family: var(--denhaag-menu-button-font-family, var(--denhaag-typography-sans-serif-font-family));
+  font-size: var(--denhaag-menu-button-font-size, var(--denhaag-typography-scale-base-font-size));
+  font-weight: var(--denhaag-menu-button-font-weight, 500);
+  line-height: var(--denhaag-menu-button-line-height, 21px);
   padding-block-end: 0;
   padding-block-start: 0;
   padding-inline-end: 0;
@@ -19,8 +19,8 @@
 
 .denhaag-menu-button:active,
 .denhaag-menu-button--active {
-  color: var(--denhaag-menu-button-active-color);
-  font-weight: var(--denhaag-menu-button-active-font-weight);
+  color: var(--denhaag-menu-button-active-color, var(--denhaag-color-blue-3));
+  font-weight: var(--denhaag-menu-button-active-font-weight, 700);
 }
 
 .denhaag-menu-button:focus,
@@ -30,25 +30,31 @@
 
 .denhaag-menu-button:hover,
 .denhaag-menu-button--hover {
-  color: var(--denhaag-menu-button-hover-color);
+  color: var(--denhaag-menu-button-hover-color, var(--denhaag-menu-button-active-color, var(--denhaag-color-blue-3)));
   text-decoration: none;
 }
 
 .denhaag-menu-button__chevron .denhaag-icon {
-  height: var(--denhaag-menu-button-chevron-size);
-  width: var(--denhaag-menu-button-chevron-size);
-  padding-inline-start: var(--denhaag-menu-button-chevron-padding-inline-start);
+  height: var(--denhaag-menu-button-chevron-size, 12px);
+  width: var(--denhaag-menu-button-chevron-size, 12px);
+  padding-inline-start: var(--denhaag-menu-button-chevron-padding-inline-start, 4px);
 }
 
 .denhaag-menu-button--active .denhaag-menu-button__chevron,
 .denhaag-menu-button:active .denhaag-menu-button__chevron {
-  color: var(--denhaag-menu-button-chevron-active-color);
+  color: var(
+    --denhaag-menu-button-chevron-active-color,
+    var(--denhaag-menu-button-active-color, var(--denhaag-color-blue-3))
+  );
 }
 
 /* stylelint-disable-next-line no-descending-specificity */
 .denhaag-menu-button--hover .denhaag-menu-button__chevron,
 .denhaag-menu-button:hover .denhaag-menu-button__chevron {
-  color: var(--denhaag-menu-button-chevron-hover-color);
+  color: var(
+    --denhaag-menu-button-chevron-hover-color,
+    var(--denhaag-menu-button-active-color, var(--denhaag-color-blue-3))
+  );
 }
 
 .denhaag-menu-button::after {
@@ -56,13 +62,13 @@
   display: block;
   height: 1px;
   color: transparent;
-  font-weight: var(--denhaag-menu-button-active-font-weight);
+  font-weight: var(--denhaag-menu-button-active-font-weight, 700);
   overflow: hidden;
   visibility: hidden;
 }
 
 .denhaag-menu-button--expandable::after {
   padding-inline-end: calc(
-    var(--denhaag-menu-button-chevron-size) + var(--denhaag-menu-button-chevron-padding-inline-start)
+    var(--denhaag-menu-button-chevron-size, 12px) + var(--denhaag-menu-button-chevron-padding-inline-start, 4px)
   );
 }

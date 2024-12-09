@@ -1,4 +1,4 @@
 .denhaag-menu {
   display: flex;
-  column-gap: var(--denhaag-menu-group-spacing);
+  column-gap: var(--denhaag-menu-group-spacing, 40px);
 }

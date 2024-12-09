@@ -1,7 +1,5 @@
 {
   "denhaag": {
-    "menu": {
-      "group-spacing": { "value": "40px" }
-    }
+    "menu": {}
   }
 }
