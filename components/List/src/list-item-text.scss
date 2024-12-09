@@ -6,18 +6,18 @@
 }
 
 .denhaag-list__item-text-primary {
-  color: var(--denhaag-list-item-text-primary-color);
-  font-family: var(--denhaag-list-font-family);
-  font-weight: var(--denhaag-list-item-text-primary-font-weight);
-  font-size: var(--denhaag-list-item-text-primary-font-size);
-  line-height: var(--denhaag-list-item-text-primary-line-height);
+  color: var(--denhaag-list-item-text-primary-color, var(--denhaag-color-grey-4));
+  font-family: var(--denhaag-list-font-family, var(--denhaag-typography-sans-serif-font-family));
+  font-weight: var(--denhaag-list-item-text-primary-font-weight, 400);
+  font-size: var(--denhaag-list-item-text-primary-font-size, 1rem);
+  line-height: var(--denhaag-list-item-text-primary-line-height, var(--denhaag-typography-scale-base-line-height));
 }
 
 .denhaag-list__item-text-secondary {
-  color: var(--denhaag-list-item-text-secondary-color);
-  font-family: var(--denhaag-list-font-family);
-  font-weight: var(--denhaag-list-item-text-secondary-font-weight);
-  font-size: var(--denhaag-list-item-text-secondary-font-size);
-  line-height: var(--denhaag-list-item-text-secondary-line-height);
-  padding-block-end: var(--denhaag-list-item-text-secondary-padding-block-end);
+  color: var(--denhaag-list-item-text-secondary-color, var(--denhaag-color-grey-4));
+  font-family: var(--denhaag-list-font-family, var(--denhaag-typography-sans-serif-font-family));
+  font-weight: var(--denhaag-list-item-text-secondary-font-weight, 400);
+  font-size: var(--denhaag-list-item-text-secondary-font-size, var(--denhaag-typography-scale-s-font-size));
+  line-height: var(--denhaag-list-item-text-secondary-line-height, 16px);
+  padding-block-end: var(--denhaag-list-item-text-secondary-padding-block-end, 8px);
 }
