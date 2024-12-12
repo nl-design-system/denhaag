@@ -1,11 +1,11 @@
 .denhaag-page-content__main {
-  margin-block-start: var(--denhaag-page-content-main-margin-block-start);
+  margin-block-start: var(--denhaag-page-content-main-margin-block-start, 1rem);
 
   @media (min-width: 768px) {
-    margin-block-start: var(--denhaag-page-content-main-sm-margin-block-start);
+    margin-block-start: var(--denhaag-page-content-main-sm-margin-block-start, 3.5rem);
   }
 
   @media (min-width: 1024px) {
-    margin-block-start: var(--denhaag-page-content-main-md-margin-block-start);
+    margin-block-start: var(--denhaag-page-content-main-md-margin-block-start, 4em);
   }
 }
