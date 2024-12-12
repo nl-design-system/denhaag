@@ -8,7 +8,8 @@
             var(--denhaag-hero-columns, 12) -
               (var(--denhaag-hero-content-column-end, 12) + var(--denhaag-hero-content-column-offset, 0))
           )
-      ) + var(--denhaag-hero-image-path, 0)
+      ) +
+      var(--denhaag-hero-image-path, 0)
   );
 
   background-color: var(--denhaag-hero-background-color);
@@ -58,7 +59,8 @@
     (
         (var(--denhaag-hero-container-max-width) / var(--denhaag-hero-columns, 12)) *
           var(--denhaag-hero-theme-page-image-start)
-      ) + var(--denhaag-hero-image-path, 0)
+      ) +
+      var(--denhaag-hero-image-path, 0)
   );
   --denhaag-hero-theme-page-content-padding-inline: calc(
     (var(--denhaag-hero-container-max-width) / var(--denhaag-hero-columns, 12)) * 1
@@ -252,7 +254,8 @@
       (
           (var(--denhaag-hero-container-max-width) / var(--denhaag-hero-columns, 12)) *
             var(--denhaag-hero-routing-shape-start, 1)
-        ) + var(--denhaag-hero-container-gutter)
+        ) +
+        var(--denhaag-hero-container-gutter)
     );
     --denhaag-hero-theme-page-image-start: var(--denhaag-hero-theme-page-image-start-m);
 

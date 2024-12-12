@@ -1,9 +1,7 @@
 const minorConfig = require('./.ncurc.minor');
 
-// Prettier v3 breaks storybook: https://github.com/whitespace-se/storybook-addon-html/issues/104
-
 module.exports = {
   ...minorConfig,
-  reject: [...minorConfig.reject],
+  reject: [...minorConfig.reject, '@utrecht/component-library-react'],
   target: 'latest',
 };

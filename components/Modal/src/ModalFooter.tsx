@@ -1,7 +1,7 @@
 import React from 'react';
 import Button, { ButtonProps } from '@gemeente-denhaag/button';
 
-export interface ModalAction extends ButtonProps {}
+export type ModalAction = ButtonProps;
 
 export interface ModalFooterProps {
   actions?: ModalAction[];
