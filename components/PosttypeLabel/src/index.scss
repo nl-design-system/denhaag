@@ -1,9 +1,9 @@
 .denhaag-posttypelabel {
-  color: var(--denhaag-posttypelabel-color, #1261a3);
-  font-family: var(--denhaag-posttypelabel-font-family, inherit);
-  font-weight: var(--denhaag-posttypelabel-font-weight);
-  font-size: var(--denhaag-posttypelabel-font-size, 0.75rem);
-  line-height: var(--denhaag-posttypelabel-line-height);
-  letter-spacing: var(--denhaag-posttypelabel-letter-spacing);
-  text-transform: var(--denhaag-posttypelabel-text-transform);
+  color: var(--denhaag-posttypelabel-color, var(--denhaag-color-blue-3));
+  font-family: var(--denhaag-posttypelabel-font-family, var(--denhaag-typography-sans-serif-font-family));
+  font-weight: var(--denhaag-posttypelabel-font-weight, var(--denhaag-typography-weight-bold));
+  font-size: var(--denhaag-posttypelabel-font-size, var(--denhaag-typography-scale-s-font-size));
+  line-height: var(--denhaag-posttypelabel-line-height, var(--denhaag-typography-scale-base-line-height));
+  letter-spacing: var(--denhaag-posttypelabel-letter-spacing, 1px);
+  text-transform: var(--denhaag-posttypelabel-text-transform, uppercase);
 }
