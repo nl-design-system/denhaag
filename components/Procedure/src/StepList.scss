@@ -1,8 +1,8 @@
 /* tokens copy-pasted from main branch process-steps.tokens.json to www.denhaag.nl branch procedure.tokens.json */
 .denhaag-procedure {
-  font-family: var(--denhaag-procedure-font-family);
-  font-size: var(--denhaag-procedure-font-size);
-  line-height: var(--denhaag-procedure-line-height);
+  font-family: var(--denhaag-procedure-font-family, var(--denhaag-typography-sans-serif-font-family));
+  font-size: var(--denhaag-procedure-font-size, var(--denhaag-typography-scale-base-font-size));
+  line-height: var(--denhaag-procedure-line-height, 24px);
   list-style: none;
   margin-block-start: 0; /* reset <ol> */
   margin-block-end: 0; /* reset <ol> */

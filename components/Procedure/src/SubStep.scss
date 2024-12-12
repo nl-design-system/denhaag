@@ -5,5 +5,5 @@
   display: flex;
   flex-direction: row;
   gap: 23px;
-  margin-block-start: var(--denhaag-procedure-sub-step-distance);
+  margin-block-start: var(--denhaag-procedure-sub-step-distance, 24px);
 }
