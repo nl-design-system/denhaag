@@ -2,7 +2,7 @@ import React, { LiHTMLAttributes } from 'react';
 import clsx from 'clsx';
 import './index.scss';
 
-export interface BreadcrumbListItemProps extends LiHTMLAttributes<HTMLLIElement> {}
+export type BreadcrumbListItemProps = LiHTMLAttributes<HTMLLIElement>;
 
 export const BreadcrumbListItem: React.FC<BreadcrumbListItemProps> = ({
   hidden,
