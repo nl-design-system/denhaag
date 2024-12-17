@@ -10,94 +10,93 @@ import "../scripts/story.js";
 ### Default
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Default Slider">
     <Notification />
-    <div class="denhaag-fullwidth-slider">
-      <div class="denhaag-fullwidth-slider__top">
-        <h2 class="denhaag-fullwidth-slider__top-title">Slider title here</h2>
-        <div class="denhaag-fullwidth-slider__pagination"></div>
-        <div class="denhaag-fullwidth-slider__controls">
+    <div className="denhaag-fullwidth-slider">
+      <div className="denhaag-fullwidth-slider__top">
+        <h2 className="denhaag-fullwidth-slider__top-title">Slider title here</h2>
+        <div className="denhaag-fullwidth-slider__pagination"></div>
+        <div className="denhaag-fullwidth-slider__controls">
           <button
             aria-label="Vorige carousel afbeelding"
-            class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__prev-slide"
+            className="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__prev-slide"
           >
             <PrevIcon />
           </button>
-          <button aria-label="Carousel afspelen" class="denhaag-fullwidth-slider__controls-playpause">
+          <button aria-label="Carousel afspelen" className="denhaag-fullwidth-slider__controls-playpause">
             <PlayIcon />
           </button>
           <button
             aria-label="Volgende carousel afbeelding"
-            class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__next-slide"
+            className="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__next-slide"
           >
             <NextIcon />
           </button>
         </div>
       </div>
-      <div class="swiper-wrapper">
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+      <div className="swiper-wrapper">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://images.unsplash.com/photo-1551039495-a95308f3f6b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">
+          <div className="denhaag-fullwidth-slider__card">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">
                 <a aria-label="Link title goes here" href="https://www.denhaag.nl">
                   Carousel title
                 </a>
               </h4>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+              <span className="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
+            <div className="denhaag-fullwidth-slider__card-arrow">
               <ArrowRightIcon />
             </div>
           </div>
         </div>
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://plus.unsplash.com/premium_photo-1661957925180-dfcf3737a617?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">
+          <div className="denhaag-fullwidth-slider__card">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">
                 <a aria-label="Link title goes here" href="https://www.denhaag.nl">
                   Carousel title
                 </a>
               </h4>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+              <span className="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
+            <div className="denhaag-fullwidth-slider__card-arrow">
               <ArrowRightIcon />
             </div>
           </div>
         </div>
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://www.denhaag.nl/upload/40d142e4-1a8e-4f11-80ce-69792e4cf12b_den-haag-hofvijver-lente-headerfoto.jpg"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">
+          <div className="denhaag-fullwidth-slider__card">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">
                 <a aria-label="Link title goes here" href="https://www.denhaag.nl">
                   Carousel title
                 </a>
               </h4>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+              <span className="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
+            <div className="denhaag-fullwidth-slider__card-arrow">
               <ArrowRightIcon />
             </div>
           </div>
@@ -105,100 +104,98 @@ import "../scripts/story.js";
       </div>
     </div>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Portrait Image
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Portrait Image Slider">
     <Notification />
-    <div class="denhaag-fullwidth-slider">
-      <div class="denhaag-fullwidth-slider__top">
-        <h2 class="denhaag-fullwidth-slider__top-title">Slider title here</h2>
-        <div class="denhaag-fullwidth-slider__pagination"></div>
-        <div class="denhaag-fullwidth-slider__controls">
+    <div className="denhaag-fullwidth-slider">
+      <div className="denhaag-fullwidth-slider__top">
+        <h2 className="denhaag-fullwidth-slider__top-title">Slider title here</h2>
+        <div className="denhaag-fullwidth-slider__pagination"></div>
+        <div className="denhaag-fullwidth-slider__controls">
           <button
             aria-label="Vorige carousel afbeelding"
-            class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__prev-slide"
+            className="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__prev-slide"
           >
             <PrevIcon />
           </button>
-          <button aria-label="Carousel afspelen" class="denhaag-fullwidth-slider__controls-playpause">
+          <button aria-label="Carousel afspelen" className="denhaag-fullwidth-slider__controls-playpause">
             <PlayIcon />
           </button>
           <button
             aria-label="Volgende carousel afbeelding"
-            class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__next-slide"
+            className="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__next-slide"
           >
             <NextIcon />
           </button>
         </div>
       </div>
-      <div class="swiper-wrapper">
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image denhaag-fullwidth-slider__slide-image--portrait">
+      <div className="swiper-wrapper">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image denhaag-fullwidth-slider__slide-image--portrait">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://images.unsplash.com/photo-1553589703-43ef53bb6f6f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">
+          <div className="denhaag-fullwidth-slider__card">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">
                 <a aria-label="Link title goes here" href="https://www.denhaag.nl">
                   Carousel title
                 </a>
               </h4>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+              <span className="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
+            <div className="denhaag-fullwidth-slider__card-arrow">
               <ArrowRightIcon />
             </div>
           </div>
         </div>
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image denhaag-fullwidth-slider__slide-image--portrait">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image denhaag-fullwidth-slider__slide-image--portrait">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://images.unsplash.com/photo-1582800637124-acfc936b70c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">
+          <div className="denhaag-fullwidth-slider__card">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">
                 <a aria-label="Link title goes here" href="https://www.denhaag.nl">
                   Carousel title
                 </a>
               </h4>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+              <span className="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
+            <div className="denhaag-fullwidth-slider__card-arrow">
               <ArrowRightIcon />
             </div>
           </div>
         </div>
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image denhaag-fullwidth-slider__slide-image--portrait">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image denhaag-fullwidth-slider__slide-image--portrait">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://images.unsplash.com/photo-1609950812426-8a7302772725?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">
+          <div className="denhaag-fullwidth-slider__card">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">
                 <a aria-label="Link title goes here" href="https://www.denhaag.nl">
                   Carousel title
                 </a>
               </h4>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+              <span className="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
+            <div className="denhaag-fullwidth-slider__card-arrow">
               <ArrowRightIcon />
             </div>
           </div>
@@ -206,232 +203,230 @@ import "../scripts/story.js";
       </div>
     </div>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Slider > 5 slides
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Slider with > 5 slides">
     <Notification />
-    <div class="denhaag-fullwidth-slider">
-      <div class="denhaag-fullwidth-slider__top">
-        <h2 class="denhaag-fullwidth-slider__top-title">Slider title here</h2>
-        <div class="denhaag-fullwidth-slider__pagination"></div>
-        <div class="denhaag-fullwidth-slider__controls">
+    <div className="denhaag-fullwidth-slider">
+      <div className="denhaag-fullwidth-slider__top">
+        <h2 className="denhaag-fullwidth-slider__top-title">Slider title here</h2>
+        <div className="denhaag-fullwidth-slider__pagination"></div>
+        <div className="denhaag-fullwidth-slider__controls">
           <button
             aria-label="Vorige carousel afbeelding"
-            class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__prev-slide"
+            className="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__prev-slide"
           >
             <PrevIcon />
           </button>
-          <button aria-label="Carousel afspelen" class="denhaag-fullwidth-slider__controls-playpause">
+          <button aria-label="Carousel afspelen" className="denhaag-fullwidth-slider__controls-playpause">
             <PlayIcon />
           </button>
           <button
             aria-label="Volgende carousel afbeelding"
-            class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__next-slide"
+            className="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__next-slide"
           >
             <NextIcon />
           </button>
         </div>
       </div>
-      <div class="swiper-wrapper">
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+      <div className="swiper-wrapper">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://images.unsplash.com/photo-1586174035695-35ab9e19215c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2030&q=80"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">
+          <div className="denhaag-fullwidth-slider__card">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">
                 <a aria-label="Link title goes here" href="https://www.denhaag.nl">
                   Very very long Carousel title with some more information
                 </a>
               </h4>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+              <span className="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
+            <div className="denhaag-fullwidth-slider__card-arrow">
               <ArrowRightIcon />
             </div>
           </div>
         </div>
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://images.unsplash.com/photo-1551039495-a95308f3f6b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">
+          <div className="denhaag-fullwidth-slider__card">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">
                 <a aria-label="Link title goes here" href="https://www.denhaag.nl">
                   Carousel title
                 </a>
               </h4>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+              <span className="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
+            <div className="denhaag-fullwidth-slider__card-arrow">
               <ArrowRightIcon />
             </div>
           </div>
         </div>
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://plus.unsplash.com/premium_photo-1661957925180-dfcf3737a617?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">
+          <div className="denhaag-fullwidth-slider__card">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">
                 <a aria-label="Link title goes here" href="https://www.denhaag.nl">
                   Carousel title
                 </a>
               </h4>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+              <span className="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
+            <div className="denhaag-fullwidth-slider__card-arrow">
               <ArrowRightIcon />
             </div>
           </div>
         </div>
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://images.unsplash.com/photo-1586174035695-35ab9e19215c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2030&q=80"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">
+          <div className="denhaag-fullwidth-slider__card">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">
                 <a aria-label="Link title goes here" href="https://www.denhaag.nl">
                   Carousel title
                 </a>
               </h4>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+              <span className="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
+            <div className="denhaag-fullwidth-slider__card-arrow">
               <ArrowRightIcon />
             </div>
           </div>
         </div>
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://images.unsplash.com/photo-1551039495-a95308f3f6b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">
+          <div className="denhaag-fullwidth-slider__card">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">
                 <a aria-label="Link title goes here" href="https://www.denhaag.nl">
                   Carousel title
                 </a>
               </h4>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+              <span className="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
+            <div className="denhaag-fullwidth-slider__card-arrow">
               <ArrowRightIcon />
             </div>
           </div>
         </div>
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://www.denhaag.nl/upload/d86b841d-7afa-4caa-bd74-acd0144516f1_Den-Haag-Scheveningen%20strand-Kurhaus.jpg"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">
+          <div className="denhaag-fullwidth-slider__card">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">
                 <a aria-label="Link title goes here" href="https://www.denhaag.nl">
                   Carousel title
                 </a>
               </h4>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+              <span className="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
+            <div className="denhaag-fullwidth-slider__card-arrow">
               <ArrowRightIcon />
             </div>
           </div>
         </div>
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://images.unsplash.com/photo-1551039495-a95308f3f6b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">
+          <div className="denhaag-fullwidth-slider__card">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">
                 <a aria-label="Link title goes here" href="https://www.denhaag.nl">
                   Carousel title
                 </a>
               </h4>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+              <span className="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
+            <div className="denhaag-fullwidth-slider__card-arrow">
               <ArrowRightIcon />
             </div>
           </div>
         </div>
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://plus.unsplash.com/premium_photo-1661957925180-dfcf3737a617?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">
+          <div className="denhaag-fullwidth-slider__card">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">
                 <a aria-label="Link title goes here" href="https://www.denhaag.nl">
                   Carousel title
                 </a>
               </h4>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+              <span className="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
+            <div className="denhaag-fullwidth-slider__card-arrow">
               <ArrowRightIcon />
             </div>
           </div>
         </div>
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://www.denhaag.nl/upload/40d142e4-1a8e-4f11-80ce-69792e4cf12b_den-haag-hofvijver-lente-headerfoto.jpg"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">
+          <div className="denhaag-fullwidth-slider__card">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">
                 <a aria-label="Link title goes here" href="https://www.denhaag.nl">
                   Carousel title
                 </a>
               </h4>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+              <span className="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
+            <div className="denhaag-fullwidth-slider__card-arrow">
               <ArrowRightIcon />
             </div>
           </div>
@@ -439,56 +434,54 @@ import "../scripts/story.js";
       </div>
     </div>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Only 1 Slide
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="1 Slide (no controls)">
     <Notification />
-    <div class="denhaag-fullwidth-slider">
-      <div class="denhaag-fullwidth-slider__top">
-        <h2 class="denhaag-fullwidth-slider__top-title">Slider title here</h2>
-        <div class="denhaag-fullwidth-slider__pagination"></div>
-        <div class="denhaag-fullwidth-slider__controls">
+    <div className="denhaag-fullwidth-slider">
+      <div className="denhaag-fullwidth-slider__top">
+        <h2 className="denhaag-fullwidth-slider__top-title">Slider title here</h2>
+        <div className="denhaag-fullwidth-slider__pagination"></div>
+        <div className="denhaag-fullwidth-slider__controls">
           <button
             aria-label="Vorige carousel afbeelding"
-            class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__prev-slide"
+            className="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__prev-slide"
           >
             <PrevIcon />
           </button>
-          <button aria-label="Carousel afspelen" class="denhaag-fullwidth-slider__controls-playpause">
+          <button aria-label="Carousel afspelen" className="denhaag-fullwidth-slider__controls-playpause">
             <PlayIcon />
           </button>
           <button
             aria-label="Volgende carousel afbeelding"
-            class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__next-slide"
+            className="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__next-slide"
           >
             <NextIcon />
           </button>
         </div>
       </div>
-      <div class="swiper-wrapper">
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+      <div className="swiper-wrapper">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://images.unsplash.com/photo-1551039495-a95308f3f6b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">
+          <div className="denhaag-fullwidth-slider__card">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">
                 <a aria-label="Link title goes here" href="https://www.denhaag.nl">
                   Carousel title
                 </a>
               </h4>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+              <span className="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
+            <div className="denhaag-fullwidth-slider__card-arrow">
               <ArrowRightIcon />
             </div>
           </div>
@@ -496,56 +489,54 @@ import "../scripts/story.js";
       </div>
     </div>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Card hover
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Card hover">
     <Notification />
-    <div class="denhaag-fullwidth-slider">
-      <div class="denhaag-fullwidth-slider__top">
-        <h2 class="denhaag-fullwidth-slider__top-title">Slider title here</h2>
-        <div class="denhaag-fullwidth-slider__pagination"></div>
-        <div class="denhaag-fullwidth-slider__controls">
+    <div className="denhaag-fullwidth-slider">
+      <div className="denhaag-fullwidth-slider__top">
+        <h2 className="denhaag-fullwidth-slider__top-title">Slider title here</h2>
+        <div className="denhaag-fullwidth-slider__pagination"></div>
+        <div className="denhaag-fullwidth-slider__controls">
           <button
             aria-label="Vorige carousel afbeelding"
-            class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__prev-slide"
+            className="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__prev-slide"
           >
             <PrevIcon />
           </button>
-          <button aria-label="Carousel afspelen" class="denhaag-fullwidth-slider__controls-playpause">
+          <button aria-label="Carousel afspelen" className="denhaag-fullwidth-slider__controls-playpause">
             <PlayIcon />
           </button>
           <button
             aria-label="Volgende carousel afbeelding"
-            class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__next-slide"
+            className="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__next-slide"
           >
             <NextIcon />
           </button>
         </div>
       </div>
-      <div class="swiper-wrapper">
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+      <div className="swiper-wrapper">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://images.unsplash.com/photo-1551039495-a95308f3f6b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card denhaag-fullwidth-slider__card--hover">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">
+          <div className="denhaag-fullwidth-slider__card denhaag-fullwidth-slider__card--hover">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">
                 <a aria-label="Link title goes here" href="https://www.denhaag.nl">
                   Carousel title
                 </a>
               </h4>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+              <span className="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
+            <div className="denhaag-fullwidth-slider__card-arrow">
               <ArrowRightIcon />
             </div>
           </div>
@@ -553,56 +544,54 @@ import "../scripts/story.js";
       </div>
     </div>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Card Focus
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Card Focus">
     <Notification />
-    <div class="denhaag-fullwidth-slider">
-      <div class="denhaag-fullwidth-slider__top">
-        <h2 class="denhaag-fullwidth-slider__top-title">Slider title here</h2>
-        <div class="denhaag-fullwidth-slider__pagination"></div>
-        <div class="denhaag-fullwidth-slider__controls">
+    <div className="denhaag-fullwidth-slider">
+      <div className="denhaag-fullwidth-slider__top">
+        <h2 className="denhaag-fullwidth-slider__top-title">Slider title here</h2>
+        <div className="denhaag-fullwidth-slider__pagination"></div>
+        <div className="denhaag-fullwidth-slider__controls">
           <button
             aria-label="Vorige carousel afbeelding"
-            class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__prev-slide"
+            className="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__prev-slide"
           >
             <PrevIcon />
           </button>
-          <button aria-label="Carousel afspelen" class="denhaag-fullwidth-slider__controls-playpause">
+          <button aria-label="Carousel afspelen" className="denhaag-fullwidth-slider__controls-playpause">
             <PlayIcon />
           </button>
           <button
             aria-label="Volgende carousel afbeelding"
-            class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__next-slide"
+            className="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__next-slide"
           >
             <NextIcon />
           </button>
         </div>
       </div>
-      <div class="swiper-wrapper">
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+      <div className="swiper-wrapper">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://images.unsplash.com/photo-1551039495-a95308f3f6b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title denhaag-fullwidth-slider__card-content__title--focus-visible">
+          <div className="denhaag-fullwidth-slider__card denhaag-fullwidth-slider__card">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title denhaag-fullwidth-slider__card-content__title--focus-visible">
                 <a aria-label="Link title goes here" href="https://www.denhaag.nl">
                   Carousel title
                 </a>
               </h4>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+              <span className="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
+            <div className="denhaag-fullwidth-slider__card-arrow">
               <ArrowRightIcon />
             </div>
           </div>
@@ -610,100 +599,98 @@ import "../scripts/story.js";
       </div>
     </div>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Long slider title
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Long Slider Title">
     <Notification />
-    <div class="denhaag-fullwidth-slider">
-      <div class="denhaag-fullwidth-slider__top">
-        <h2 class="denhaag-fullwidth-slider__top-title">This is a very long slider title, maybe a bit too long</h2>
-        <div class="denhaag-fullwidth-slider__pagination"></div>
-        <div class="denhaag-fullwidth-slider__controls">
+    <div className="denhaag-fullwidth-slider">
+      <div className="denhaag-fullwidth-slider__top">
+        <h2 className="denhaag-fullwidth-slider__top-title">This is a very long slider title, maybe a bit too long</h2>
+        <div className="denhaag-fullwidth-slider__pagination"></div>
+        <div className="denhaag-fullwidth-slider__controls">
           <button
             aria-label="Vorige carousel afbeelding"
-            class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__prev-slide"
+            className="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__prev-slide"
           >
             <PrevIcon />
           </button>
-          <button aria-label="Carousel afspelen" class="denhaag-fullwidth-slider__controls-playpause">
+          <button aria-label="Carousel afspelen" className="denhaag-fullwidth-slider__controls-playpause">
             <PlayIcon />
           </button>
           <button
             aria-label="Volgende carousel afbeelding"
-            class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__next-slide"
+            className="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__next-slide"
           >
             <NextIcon />
           </button>
         </div>
       </div>
-      <div class="swiper-wrapper">
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+      <div className="swiper-wrapper">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://images.unsplash.com/photo-1551039495-a95308f3f6b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">
+          <div className="denhaag-fullwidth-slider__card">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">
                 <a aria-label="Link title goes here" href="https://www.denhaag.nl">
                   Carousel title
                 </a>
               </h4>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+              <span className="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
+            <div className="denhaag-fullwidth-slider__card-arrow">
               <ArrowRightIcon />
             </div>
           </div>
         </div>
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://plus.unsplash.com/premium_photo-1661957925180-dfcf3737a617?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">
+          <div className="denhaag-fullwidth-slider__card">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">
                 <a aria-label="Link title goes here" href="https://www.denhaag.nl">
                   Carousel title
                 </a>
               </h4>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+              <span className="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
+            <div className="denhaag-fullwidth-slider__card-arrow">
               <ArrowRightIcon />
             </div>
           </div>
         </div>
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://www.denhaag.nl/upload/40d142e4-1a8e-4f11-80ce-69792e4cf12b_den-haag-hofvijver-lente-headerfoto.jpg"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">
+          <div className="denhaag-fullwidth-slider__card">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">
                 <a aria-label="Link title goes here" href="https://www.denhaag.nl">
                   Carousel title
                 </a>
               </h4>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+              <span className="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
+            <div className="denhaag-fullwidth-slider__card-arrow">
               <ArrowRightIcon />
             </div>
           </div>
@@ -711,99 +698,97 @@ import "../scripts/story.js";
       </div>
     </div>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### No Slider Title
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="No Slider Title">
     <Notification />
-    <div class="denhaag-fullwidth-slider">
-      <div class="denhaag-fullwidth-slider__top denhaag-fullwidth-slider__top--no-title">
-        <div class="denhaag-fullwidth-slider__pagination"></div>
-        <div class="denhaag-fullwidth-slider__controls">
+    <div className="denhaag-fullwidth-slider">
+      <div className="denhaag-fullwidth-slider__top denhaag-fullwidth-slider__top--no-title">
+        <div className="denhaag-fullwidth-slider__pagination"></div>
+        <div className="denhaag-fullwidth-slider__controls">
           <button
             aria-label="Vorige carousel afbeelding"
-            class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__prev-slide"
+            className="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__prev-slide"
           >
             <PrevIcon />
           </button>
-          <button aria-label="Carousel afspelen" class="denhaag-fullwidth-slider__controls-playpause">
+          <button aria-label="Carousel afspelen" className="denhaag-fullwidth-slider__controls-playpause">
             <PlayIcon />
           </button>
           <button
             aria-label="Volgende carousel afbeelding"
-            class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__next-slide"
+            className="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__next-slide"
           >
             <NextIcon />
           </button>
         </div>
       </div>
-      <div class="swiper-wrapper">
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+      <div className="swiper-wrapper">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://images.unsplash.com/photo-1551039495-a95308f3f6b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">
+          <div className="denhaag-fullwidth-slider__card">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">
                 <a aria-label="Link title goes here" href="https://www.denhaag.nl">
                   Carousel title
                 </a>
               </h4>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+              <span className="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
+            <div className="denhaag-fullwidth-slider__card-arrow">
               <ArrowRightIcon />
             </div>
           </div>
         </div>
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://plus.unsplash.com/premium_photo-1661957925180-dfcf3737a617?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">
+          <div className="denhaag-fullwidth-slider__card">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">
                 <a aria-label="Link title goes here" href="https://www.denhaag.nl">
                   Carousel title
                 </a>
               </h4>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+              <span className="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
+            <div className="denhaag-fullwidth-slider__card-arrow">
               <ArrowRightIcon />
             </div>
           </div>
         </div>
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://www.denhaag.nl/upload/40d142e4-1a8e-4f11-80ce-69792e4cf12b_den-haag-hofvijver-lente-headerfoto.jpg"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">
+          <div className="denhaag-fullwidth-slider__card">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">
                 <a aria-label="Link title goes here" href="https://www.denhaag.nl">
                   Carousel title
                 </a>
               </h4>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+              <span className="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
+            <div className="denhaag-fullwidth-slider__card-arrow">
               <ArrowRightIcon />
             </div>
           </div>
@@ -811,57 +796,55 @@ import "../scripts/story.js";
       </div>
     </div>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Long Card Title
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Long Card Title">
     <Notification />
-    <div class="denhaag-fullwidth-slider">
-      <div class="denhaag-fullwidth-slider__top">
-        <h2 class="denhaag-fullwidth-slider__top-title">This is slider title</h2>
-        <div class="denhaag-fullwidth-slider__pagination"></div>
-        <div class="denhaag-fullwidth-slider__controls">
+    <div className="denhaag-fullwidth-slider">
+      <div className="denhaag-fullwidth-slider__top">
+        <h2 className="denhaag-fullwidth-slider__top-title">This is slider title</h2>
+        <div className="denhaag-fullwidth-slider__pagination"></div>
+        <div className="denhaag-fullwidth-slider__controls">
           <button
             aria-label="Vorige carousel afbeelding"
-            class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__prev-slide"
+            className="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__prev-slide"
           >
             <PrevIcon />
           </button>
-          <button aria-label="Carousel afspelen" class="denhaag-fullwidth-slider__controls-playpause">
+          <button aria-label="Carousel afspelen" className="denhaag-fullwidth-slider__controls-playpause">
             <PlayIcon />
           </button>
           <button
             aria-label="Volgende carousel afbeelding"
-            class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__next-slide"
+            className="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__next-slide"
           >
             <NextIcon />
           </button>
         </div>
       </div>
-      <div class="swiper-wrapper">
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+      <div className="swiper-wrapper">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://images.unsplash.com/photo-1551039495-a95308f3f6b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">
+          <div className="denhaag-fullwidth-slider__card">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">
                 <a aria-label="Link title goes here" href="https://www.denhaag.nl">
                   Carousel title, but a very long one. There is no reason to have such a long title on a card at all.
                   Something mwill note gone wrong.
                 </a>
               </h4>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+              <span className="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
+            <div className="denhaag-fullwidth-slider__card-arrow">
               <ArrowRightIcon />
             </div>
           </div>
@@ -869,40 +852,38 @@ import "../scripts/story.js";
       </div>
     </div>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Slider without captions
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Slider Without Cards (captions)">
     <Notification />
-    <div class="denhaag-fullwidth-slider">
-      <div class="denhaag-fullwidth-slider__top">
-        <h2 class="denhaag-fullwidth-slider__top-title">Slider title here</h2>
-        <div class="denhaag-fullwidth-slider__pagination"></div>
-        <div class="denhaag-fullwidth-slider__controls">
+    <div className="denhaag-fullwidth-slider">
+      <div className="denhaag-fullwidth-slider__top">
+        <h2 className="denhaag-fullwidth-slider__top-title">Slider title here</h2>
+        <div className="denhaag-fullwidth-slider__pagination"></div>
+        <div className="denhaag-fullwidth-slider__controls">
           <button
             aria-label="Vorige carousel afbeelding"
-            class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__prev-slide"
+            className="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__prev-slide"
           >
             <PrevIcon />
           </button>
-          <button aria-label="Carousel afspelen" class="denhaag-fullwidth-slider__controls-playpause">
+          <button aria-label="Carousel afspelen" className="denhaag-fullwidth-slider__controls-playpause">
             <PlayIcon />
           </button>
           <button
             aria-label="Volgende carousel afbeelding"
-            class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__next-slide"
+            className="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__next-slide"
           >
             <NextIcon />
           </button>
         </div>
       </div>
-      <div class="swiper-wrapper">
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+      <div className="swiper-wrapper">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
@@ -910,8 +891,8 @@ import "../scripts/story.js";
             />
           </div>
         </div>
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
@@ -919,8 +900,8 @@ import "../scripts/story.js";
             />
           </div>
         </div>
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
@@ -931,184 +912,180 @@ import "../scripts/story.js";
       </div>
     </div>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Slider with actions
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Slider Without Actions">
     <Notification />
-    <div class="denhaag-fullwidth-slider">
-      <div class="denhaag-fullwidth-slider__top">
-        <h2 class="denhaag-fullwidth-slider__top-title">Slider title here</h2>
-        <div class="denhaag-fullwidth-slider__pagination"></div>
-        <div class="denhaag-fullwidth-slider__controls">
+    <div className="denhaag-fullwidth-slider">
+      <div className="denhaag-fullwidth-slider__top">
+        <h2 className="denhaag-fullwidth-slider__top-title">Slider title here</h2>
+        <div className="denhaag-fullwidth-slider__pagination"></div>
+        <div className="denhaag-fullwidth-slider__controls">
           <button
             aria-label="Vorige carousel afbeelding"
-            class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__prev-slide"
+            className="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__prev-slide"
           >
             <PrevIcon />
           </button>
-          <button aria-label="Carousel afspelen" class="denhaag-fullwidth-slider__controls-playpause">
+          <button aria-label="Carousel afspelen" className="denhaag-fullwidth-slider__controls-playpause">
             <PlayIcon />
           </button>
           <button
             aria-label="Volgende carousel afbeelding"
-            class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__next-slide"
+            className="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__next-slide"
           >
             <NextIcon />
           </button>
         </div>
       </div>
-      <div class="swiper-wrapper">
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+      <div className="swiper-wrapper">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://images.unsplash.com/photo-1551039495-a95308f3f6b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">
+          <div className="denhaag-fullwidth-slider__card">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">
                 This slide has an arrow (so an action), the next one does not
               </h4>
             </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
+            <div className="denhaag-fullwidth-slider__card-arrow">
               <ArrowRightIcon />
             </div>
           </div>
         </div>
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://plus.unsplash.com/premium_photo-1661957925180-dfcf3737a617?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card denhaag-fullwidth-slider__card--no-action">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">
+          <div className="denhaag-fullwidth-slider__card denhaag-fullwidth-slider__card--no-action">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">
                 You can hover me all you like, but I will not do anything at all.
               </h4>
             </div>
           </div>
         </div>
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://www.denhaag.nl/upload/40d142e4-1a8e-4f11-80ce-69792e4cf12b_den-haag-hofvijver-lente-headerfoto.jpg"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card denhaag-fullwidth-slider__card--no-action">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">Same here, I will not budge..!</h4>
+          <div className="denhaag-fullwidth-slider__card denhaag-fullwidth-slider__card--no-action">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">Same here, I will not budge..!</h4>
             </div>
           </div>
         </div>
       </div>
     </div>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Prefers Reduced Motion
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Prefers Reduced Motion">
     <Notification />
-    <div class="denhaag-fullwidth-slider denhaag-fullwidth-slider--prefers-reduced-motion">
-      <div class="denhaag-fullwidth-slider__top">
-        <h2 class="denhaag-fullwidth-slider__top-title">Slider title here</h2>
-        <div class="denhaag-fullwidth-slider__pagination"></div>
-        <div class="denhaag-fullwidth-slider__controls">
+    <div className="denhaag-fullwidth-slider denhaag-fullwidth-slider--prefers-reduced-motion">
+      <div className="denhaag-fullwidth-slider__top">
+        <h2 className="denhaag-fullwidth-slider__top-title">Slider title here</h2>
+        <div className="denhaag-fullwidth-slider__pagination"></div>
+        <div className="denhaag-fullwidth-slider__controls">
           <button
             aria-label="Vorige carousel afbeelding"
-            class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__prev-slide"
+            className="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__prev-slide"
           >
             <PrevIcon />
           </button>
-          <button aria-label="Carousel afspelen" class="denhaag-fullwidth-slider__controls-playpause">
+          <button aria-label="Carousel afspelen" className="denhaag-fullwidth-slider__controls-playpause">
             <PlayIcon />
           </button>
           <button
             aria-label="Volgende carousel afbeelding"
-            class="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__next-slide"
+            className="denhaag-fullwidth-slider__controls-arrows denhaag-fullwidth-slider__next-slide"
           >
             <NextIcon />
           </button>
         </div>
       </div>
-      <div class="swiper-wrapper">
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+      <div className="swiper-wrapper">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://images.unsplash.com/photo-1551039495-a95308f3f6b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">
+          <div className="denhaag-fullwidth-slider__card">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">
                 <a aria-label="Link title goes here" href="https://www.denhaag.nl">
                   Carousel title 2
                 </a>
               </h4>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+              <span className="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
+            <div className="denhaag-fullwidth-slider__card-arrow">
               <ArrowRightIcon />
             </div>
           </div>
         </div>
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://plus.unsplash.com/premium_photo-1661957925180-dfcf3737a617?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">
+          <div className="denhaag-fullwidth-slider__card">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">
                 <a aria-label="Link title goes here" href="https://www.denhaag.nl">
                   Carousel title 3
                 </a>
               </h4>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+              <span className="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
+            <div className="denhaag-fullwidth-slider__card-arrow">
               <ArrowRightIcon />
             </div>
           </div>
         </div>
-        <div class="denhaag-fullwidth-slider__slide swiper-slide">
-          <div class="denhaag-fullwidth-slider__slide-image">
+        <div className="denhaag-fullwidth-slider__slide swiper-slide">
+          <div className="denhaag-fullwidth-slider__slide-image">
             <img
               loading="lazy"
               alt="Afbeelding 1"
               src="https://www.denhaag.nl/upload/40d142e4-1a8e-4f11-80ce-69792e4cf12b_den-haag-hofvijver-lente-headerfoto.jpg"
             />
           </div>
-          <div class="denhaag-fullwidth-slider__card">
-            <div class="denhaag-fullwidth-slider__card-content">
-              <h4 class="denhaag-fullwidth-slider__card-content__title">
+          <div className="denhaag-fullwidth-slider__card">
+            <div className="denhaag-fullwidth-slider__card-content">
+              <h4 className="denhaag-fullwidth-slider__card-content__title">
                 <a aria-label="Link title goes here" href="https://www.denhaag.nl">
                   Carousel title
                 </a>
               </h4>
-              <span class="denhaag-fullwidth-slider__card-content__author">Author</span>
+              <span className="denhaag-fullwidth-slider__card-content__author">Author</span>
             </div>
-            <div class="denhaag-fullwidth-slider__card-arrow">
+            <div className="denhaag-fullwidth-slider__card-arrow">
               <ArrowRightIcon />
             </div>
           </div>
@@ -1116,5 +1093,4 @@ import "../scripts/story.js";
       </div>
     </div>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>

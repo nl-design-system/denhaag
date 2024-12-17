@@ -32,23 +32,22 @@ Otherwise you will not be able to keep receiving CSS updates without breaking ch
 ### Default
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Default">
-    <div class="denhaag-authentication denhaag-authentication--landscape">
-      <div class="denhaag-authentication__card">
-        <header class="denhaag-authentication__header">
-          <h3 class="utrecht-heading-3">Title</h3>
-          <p class="utrecht-paragraph">Subtitle</p>
+    <div className="denhaag-authentication denhaag-authentication--landscape">
+      <div className="denhaag-authentication__card">
+        <header className="denhaag-authentication__header">
+          <h3 className="utrecht-heading-3">Title</h3>
+          <p className="utrecht-paragraph">Subtitle</p>
         </header>
-        <div class="denhaag-authentication__content">
-          <div class="denhaag-button-group denhaag-button-group--single">
+        <div className="denhaag-authentication__content">
+          <div className="denhaag-button-group denhaag-button-group--single">
             <a
-              class="denhaag-button denhaag-button--end-icon denhaag-button--large"
+              className="denhaag-button denhaag-button--end-icon denhaag-button--large"
               href="#example-link"
               target="_self"
             >
               Internal link
-              <span class="denhaag-button__icon">
+              <span className="denhaag-button__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                   <path
                     d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
@@ -62,29 +61,27 @@ Otherwise you will not be able to keep receiving CSS updates without breaking ch
       </div>
     </div>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Multiple buttons
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Multiple buttons">
-    <div class="denhaag-authentication denhaag-authentication--landscape">
-      <div class="denhaag-authentication__card">
-        <header class="denhaag-authentication__header">
-          <h3 class="utrecht-heading-3">Title</h3>
-          <p class="utrecht-paragraph">Subtitle</p>
+    <div className="denhaag-authentication denhaag-authentication--landscape">
+      <div className="denhaag-authentication__card">
+        <header className="denhaag-authentication__header">
+          <h3 className="utrecht-heading-3">Title</h3>
+          <p className="utrecht-paragraph">Subtitle</p>
         </header>
-        <div class="denhaag-authentication__content">
-          <div class="denhaag-button-group denhaag-button-group--multiple">
+        <div className="denhaag-authentication__content">
+          <div className="denhaag-button-group denhaag-button-group--multiple">
             <a
-              class="denhaag-button denhaag-button--end-icon denhaag-button--large"
+              className="denhaag-button denhaag-button--end-icon denhaag-button--large"
               href="#example-link"
               target="_self"
             >
               Internal link
-              <span class="denhaag-button__icon">
+              <span className="denhaag-button__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                   <path
                     d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
@@ -94,12 +91,12 @@ Otherwise you will not be able to keep receiving CSS updates without breaking ch
               </span>
             </a>
             <a
-              class="denhaag-button denhaag-button--end-icon denhaag-button--large"
+              className="denhaag-button denhaag-button--end-icon denhaag-button--large"
               href="#example-link"
               target="_blank"
             >
               External link
-              <span class="denhaag-button__icon">
+              <span className="denhaag-button__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                   <path
                     d="M11 2C10.4477 2 10 1.55228 10 1C10 0.447715 10.4477 0 11 0H17C17.2652 0 17.5196 0.105357 17.7071 0.292894C17.8946 0.48043 18 0.734784 18 1L18 7C18 7.55229 17.5523 8 17 8C16.4477 8 16 7.55228 16 7L16 3.41422L6.70711 12.7071C6.31658 13.0976 5.68342 13.0976 5.29289 12.7071C4.90237 12.3166 4.90237 11.6834 5.29289 11.2929L14.5858 2H11ZM0 4C0 2.89543 0.895431 2 2 2H7C7.55228 2 8 2.44772 8 3C8 3.55228 7.55228 4 7 4H2V16H14V11C14 10.4477 14.4477 10 15 10C15.5523 10 16 10.4477 16 11V16C16 17.1046 15.1046 18 14 18H2C0.895431 18 0 17.1046 0 16V4Z"
@@ -113,39 +110,37 @@ Otherwise you will not be able to keep receiving CSS updates without breaking ch
       </div>
     </div>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### With image
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="With image">
-    <div class="denhaag-authentication denhaag-authentication--landscape">
-      <div class="denhaag-authentication__card">
-        <header class="denhaag-authentication__header">
-          <figure class="denhaag-image">
+    <div className="denhaag-authentication denhaag-authentication--landscape">
+      <div className="denhaag-authentication__card">
+        <header className="denhaag-authentication__header">
+          <figure className="denhaag-image">
             <img
               width="80"
               height="80"
               src={brandImage(80, 80)}
-              class="denhaag-image__image"
+              className="denhaag-image__image"
               alt="regenboog merk"
               loading="lazy"
             />
           </figure>
-          <h3 class="utrecht-heading-3">Title</h3>
-          <p class="utrecht-paragraph">Subtitle</p>
+          <h3 className="utrecht-heading-3">Title</h3>
+          <p className="utrecht-paragraph">Subtitle</p>
         </header>
-        <div class="denhaag-authentication__content">
-          <div class="denhaag-button-group denhaag-button-group--multiple">
+        <div className="denhaag-authentication__content">
+          <div className="denhaag-button-group denhaag-button-group--multiple">
             <a
-              class="denhaag-button denhaag-button--end-icon denhaag-button--large"
+              className="denhaag-button denhaag-button--end-icon denhaag-button--large"
               href="#example-link"
               target="_self"
             >
               Internal link
-              <span class="denhaag-button__icon">
+              <span className="denhaag-button__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                   <path
                     d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
@@ -155,12 +150,12 @@ Otherwise you will not be able to keep receiving CSS updates without breaking ch
               </span>
             </a>
             <a
-              class="denhaag-button denhaag-button--end-icon denhaag-button--large"
+              className="denhaag-button denhaag-button--end-icon denhaag-button--large"
               href="#example-link"
               target="_blank"
             >
               External link
-              <span class="denhaag-button__icon">
+              <span className="denhaag-button__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                   <path
                     d="M11 2C10.4477 2 10 1.55228 10 1C10 0.447715 10.4477 0 11 0H17C17.2652 0 17.5196 0.105357 17.7071 0.292894C17.8946 0.48043 18 0.734784 18 1L18 7C18 7.55229 17.5523 8 17 8C16.4477 8 16 7.55228 16 7L16 3.41422L6.70711 12.7071C6.31658 13.0976 5.68342 13.0976 5.29289 12.7071C4.90237 12.3166 4.90237 11.6834 5.29289 11.2929L14.5858 2H11ZM0 4C0 2.89543 0.895431 2 2 2H7C7.55228 2 8 2.44772 8 3C8 3.55228 7.55228 4 7 4H2V16H14V11C14 10.4477 14.4477 10 15 10C15.5523 10 16 10.4477 16 11V16C16 17.1046 15.1046 18 14 18H2C0.895431 18 0 17.1046 0 16V4Z"
@@ -174,39 +169,37 @@ Otherwise you will not be able to keep receiving CSS updates without breaking ch
       </div>
     </div>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Extra link
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Extra link">
-    <div class="denhaag-authentication denhaag-authentication--landscape">
-      <div class="denhaag-authentication__card">
-        <header class="denhaag-authentication__header">
-          <figure class="denhaag-image">
+    <div className="denhaag-authentication denhaag-authentication--landscape">
+      <div className="denhaag-authentication__card">
+        <header className="denhaag-authentication__header">
+          <figure className="denhaag-image">
             <img
               width="80"
               height="80"
               src={brandImage(80, 80)}
-              class="denhaag-image__image"
+              className="denhaag-image__image"
               alt="regenboog merk"
               loading="lazy"
             />
           </figure>
-          <h3 class="utrecht-heading-3">Title</h3>
-          <p class="utrecht-paragraph">Subtitle</p>
+          <h3 className="utrecht-heading-3">Title</h3>
+          <p className="utrecht-paragraph">Subtitle</p>
         </header>
-        <div class="denhaag-authentication__content">
-          <div class="denhaag-button-group denhaag-button-group--multiple">
+        <div className="denhaag-authentication__content">
+          <div className="denhaag-button-group denhaag-button-group--multiple">
             <a
-              class="denhaag-button denhaag-button--end-icon denhaag-button--large"
+              className="denhaag-button denhaag-button--end-icon denhaag-button--large"
               href="#example-link"
               target="_self"
             >
               Internal link
-              <span class="denhaag-button__icon">
+              <span className="denhaag-button__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                   <path
                     d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
@@ -216,12 +209,12 @@ Otherwise you will not be able to keep receiving CSS updates without breaking ch
               </span>
             </a>
             <a
-              class="denhaag-button denhaag-button--end-icon denhaag-button--large"
+              className="denhaag-button denhaag-button--end-icon denhaag-button--large"
               href="#example-link"
               target="_blank"
             >
               External link
-              <span class="denhaag-button__icon">
+              <span className="denhaag-button__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                   <path
                     d="M11 2C10.4477 2 10 1.55228 10 1C10 0.447715 10.4477 0 11 0H17C17.2652 0 17.5196 0.105357 17.7071 0.292894C17.8946 0.48043 18 0.734784 18 1L18 7C18 7.55229 17.5523 8 17 8C16.4477 8 16 7.55228 16 7L16 3.41422L6.70711 12.7071C6.31658 13.0976 5.68342 13.0976 5.29289 12.7071C4.90237 12.3166 4.90237 11.6834 5.29289 11.2929L14.5858 2H11ZM0 4C0 2.89543 0.895431 2 2 2H7C7.55228 2 8 2.44772 8 3C8 3.55228 7.55228 4 7 4H2V16H14V11C14 10.4477 14.4477 10 15 10C15.5523 10 16 10.4477 16 11V16C16 17.1046 15.1046 18 14 18H2C0.895431 18 0 17.1046 0 16V4Z"
@@ -232,13 +225,13 @@ Otherwise you will not be able to keep receiving CSS updates without breaking ch
             </a>
           </div>
         </div>
-        <footer class="denhaag-authentication__footer">
-          <div class="denhaag-authentication__footer-divider">
-            <hr class="denhaag-divider" role="presentation" />
-            <div class="denhaag-authentication__footer-label">or</div>
+        <footer className="denhaag-authentication__footer">
+          <div className="denhaag-authentication__footer-divider">
+            <hr className="denhaag-divider" role="presentation" />
+            <div className="denhaag-authentication__footer-label">or</div>
           </div>
           <a
-            class="denhaag-authentication-item"
+            className="denhaag-authentication-item"
             href="#example-link"
             target="_blank"
             title="Gebruik een Europees erkend middel"
@@ -248,14 +241,14 @@ Otherwise you will not be able to keep receiving CSS updates without breaking ch
               width="40"
               height="40"
               src={brandImage(40, 40)}
-              class="denhaag-authentication-item__image"
+              className="denhaag-authentication-item__image"
               alt="regenboog merk"
               loading="lazy"
             />
             Gebruik een Europees erkend middel
             <svg
               aria-hidden="true"
-              class="denhaag-icon"
+              className="denhaag-icon"
               focusable="false"
               height="1em"
               viewBox="0 0 24 24"
@@ -272,39 +265,37 @@ Otherwise you will not be able to keep receiving CSS updates without breaking ch
       </div>
     </div>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Portrait
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Portrait">
-    <div class="denhaag-authentication denhaag-authentication--portrait">
-      <div class="denhaag-authentication__card">
-        <header class="denhaag-authentication__header">
-          <figure class="denhaag-image">
+    <div className="denhaag-authentication denhaag-authentication--portrait">
+      <div className="denhaag-authentication__card">
+        <header className="denhaag-authentication__header">
+          <figure className="denhaag-image">
             <img
               width="80"
               height="80"
               src={brandImage(80, 80)}
-              class="denhaag-image__image"
+              className="denhaag-image__image"
               alt="regenboog merk"
               loading="lazy"
             />
           </figure>
-          <h3 class="utrecht-heading-3">Title</h3>
-          <p class="utrecht-paragraph">Subtitle</p>
+          <h3 className="utrecht-heading-3">Title</h3>
+          <p className="utrecht-paragraph">Subtitle</p>
         </header>
-        <div class="denhaag-authentication__content">
-          <div class="denhaag-button-group denhaag-button-group--single">
+        <div className="denhaag-authentication__content">
+          <div className="denhaag-button-group denhaag-button-group--single">
             <a
-              class="denhaag-button denhaag-button--end-icon denhaag-button--large"
+              className="denhaag-button denhaag-button--end-icon denhaag-button--large"
               href="#example-link"
               target="_self"
             >
               Internal link
-              <span class="denhaag-button__icon">
+              <span className="denhaag-button__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                   <path
                     d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
@@ -315,13 +306,13 @@ Otherwise you will not be able to keep receiving CSS updates without breaking ch
             </a>
           </div>
         </div>
-        <footer class="denhaag-authentication__footer">
-          <div class="denhaag-authentication__footer-divider">
-            <hr class="denhaag-divider" role="presentation" />
-            <div class="denhaag-authentication__footer-label">or</div>
+        <footer className="denhaag-authentication__footer">
+          <div className="denhaag-authentication__footer-divider">
+            <hr className="denhaag-divider" role="presentation" />
+            <div className="denhaag-authentication__footer-label">or</div>
           </div>
           <a
-            class="denhaag-authentication-item"
+            className="denhaag-authentication-item"
             href="#example-link"
             target="_blank"
             title="Gebruik een Europees erkend middel"
@@ -331,14 +322,14 @@ Otherwise you will not be able to keep receiving CSS updates without breaking ch
               width="40"
               height="40"
               src={brandImage(40, 40)}
-              class="denhaag-authentication-item__image"
+              className="denhaag-authentication-item__image"
               alt="regenboog merk"
               loading="lazy"
             />
             Gebruik een Europees erkend middel
             <svg
               aria-hidden="true"
-              class="denhaag-icon"
+              className="denhaag-icon"
               focusable="false"
               height="1em"
               viewBox="0 0 24 24"
@@ -355,39 +346,37 @@ Otherwise you will not be able to keep receiving CSS updates without breaking ch
       </div>
     </div>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Portrait multiple
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Portrait multiple">
-    <div class="denhaag-authentication denhaag-authentication--portrait">
-      <div class="denhaag-authentication__card">
-        <header class="denhaag-authentication__header">
-          <figure class="denhaag-image">
+    <div className="denhaag-authentication denhaag-authentication--portrait">
+      <div className="denhaag-authentication__card">
+        <header className="denhaag-authentication__header">
+          <figure className="denhaag-image">
             <img
               width="80"
               height="80"
               src={brandImage(80, 80)}
-              class="denhaag-image__image"
+              className="denhaag-image__image"
               alt="regenboog merk"
               loading="lazy"
             />
           </figure>
-          <h3 class="utrecht-heading-3">Title</h3>
-          <p class="utrecht-paragraph">Subtitle</p>
+          <h3 className="utrecht-heading-3">Title</h3>
+          <p className="utrecht-paragraph">Subtitle</p>
         </header>
-        <div class="denhaag-authentication__content">
-          <div class="denhaag-button-group denhaag-button-group--single">
+        <div className="denhaag-authentication__content">
+          <div className="denhaag-button-group denhaag-button-group--single">
             <a
-              class="denhaag-button denhaag-button--end-icon denhaag-button--large"
+              className="denhaag-button denhaag-button--end-icon denhaag-button--large"
               href="#example-link"
               target="_self"
             >
               Internal link
-              <span class="denhaag-button__icon">
+              <span className="denhaag-button__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                   <path
                     d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
@@ -398,13 +387,13 @@ Otherwise you will not be able to keep receiving CSS updates without breaking ch
             </a>
           </div>
         </div>
-        <footer class="denhaag-authentication__footer">
-          <div class="denhaag-authentication__footer-divider">
-            <hr class="denhaag-divider" role="presentation" />
-            <div class="denhaag-authentication__footer-label">or</div>
+        <footer className="denhaag-authentication__footer">
+          <div className="denhaag-authentication__footer-divider">
+            <hr className="denhaag-divider" role="presentation" />
+            <div className="denhaag-authentication__footer-label">or</div>
           </div>
           <a
-            class="denhaag-authentication-item"
+            className="denhaag-authentication-item"
             href="#example-link"
             target="_blank"
             title="Gebruik een Europees erkend middel"
@@ -414,14 +403,14 @@ Otherwise you will not be able to keep receiving CSS updates without breaking ch
               width="40"
               height="40"
               src={brandImage(40, 40)}
-              class="denhaag-authentication-item__image"
+              className="denhaag-authentication-item__image"
               alt="regenboog merk"
               loading="lazy"
             />
             Gebruik een Europees erkend middel
             <svg
               aria-hidden="true"
-              class="denhaag-icon"
+              className="denhaag-icon"
               focusable="false"
               height="1em"
               viewBox="0 0 24 24"
@@ -436,30 +425,30 @@ Otherwise you will not be able to keep receiving CSS updates without breaking ch
           </a>
         </footer>
       </div>
-      <div class="denhaag-authentication__card">
-        <header class="denhaag-authentication__header">
-          <figure class="denhaag-image">
+      <div className="denhaag-authentication__card">
+        <header className="denhaag-authentication__header">
+          <figure className="denhaag-image">
             <img
               width="80"
               height="80"
               src={brandImage(80, 80)}
-              class="denhaag-image__image"
+              className="denhaag-image__image"
               alt="regenboog merk"
               loading="lazy"
             />
           </figure>
-          <h3 class="utrecht-heading-3">Title</h3>
-          <p class="utrecht-paragraph">Subtitle</p>
+          <h3 className="utrecht-heading-3">Title</h3>
+          <p className="utrecht-paragraph">Subtitle</p>
         </header>
-        <div class="denhaag-authentication__content">
-          <div class="denhaag-button-group denhaag-button-group--single">
+        <div className="denhaag-authentication__content">
+          <div className="denhaag-button-group denhaag-button-group--single">
             <a
-              class="denhaag-button denhaag-button--end-icon denhaag-button--large"
+              className="denhaag-button denhaag-button--end-icon denhaag-button--large"
               href="#example-link"
               target="_self"
             >
               Internal link
-              <span class="denhaag-button__icon">
+              <span className="denhaag-button__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                   <path
                     d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
@@ -470,13 +459,13 @@ Otherwise you will not be able to keep receiving CSS updates without breaking ch
             </a>
           </div>
         </div>
-        <footer class="denhaag-authentication__footer">
-          <div class="denhaag-authentication__footer-divider">
-            <hr class="denhaag-divider" role="presentation" />
-            <div class="denhaag-authentication__footer-label">or</div>
+        <footer className="denhaag-authentication__footer">
+          <div className="denhaag-authentication__footer-divider">
+            <hr className="denhaag-divider" role="presentation" />
+            <div className="denhaag-authentication__footer-label">or</div>
           </div>
           <a
-            class="denhaag-authentication-item"
+            className="denhaag-authentication-item"
             href="#example-link"
             target="_blank"
             title="Gebruik een Europees erkend middel"
@@ -486,14 +475,14 @@ Otherwise you will not be able to keep receiving CSS updates without breaking ch
               width="40"
               height="40"
               src={brandImage(40, 40)}
-              class="denhaag-authentication-item__image"
+              className="denhaag-authentication-item__image"
               alt="regenboog merk"
               loading="lazy"
             />
             Gebruik een Europees erkend middel
             <svg
               aria-hidden="true"
-              class="denhaag-icon"
+              className="denhaag-icon"
               focusable="false"
               height="1em"
               viewBox="0 0 24 24"
@@ -508,30 +497,30 @@ Otherwise you will not be able to keep receiving CSS updates without breaking ch
           </a>
         </footer>
       </div>
-      <div class="denhaag-authentication__card">
-        <header class="denhaag-authentication__header">
-          <figure class="denhaag-image">
+      <div className="denhaag-authentication__card">
+        <header className="denhaag-authentication__header">
+          <figure className="denhaag-image">
             <img
               width="80"
               height="80"
               src={brandImage(80, 80)}
-              class="denhaag-image__image"
+              className="denhaag-image__image"
               alt="regenboog merk"
               loading="lazy"
             />
           </figure>
-          <h3 class="utrecht-heading-3">Title</h3>
-          <p class="utrecht-paragraph">Subtitle</p>
+          <h3 className="utrecht-heading-3">Title</h3>
+          <p className="utrecht-paragraph">Subtitle</p>
         </header>
-        <div class="denhaag-authentication__content">
-          <div class="denhaag-button-group denhaag-button-group--single">
+        <div className="denhaag-authentication__content">
+          <div className="denhaag-button-group denhaag-button-group--single">
             <a
-              class="denhaag-button denhaag-button--end-icon denhaag-button--large"
+              className="denhaag-button denhaag-button--end-icon denhaag-button--large"
               href="#example-link"
               target="_self"
             >
               Internal link
-              <span class="denhaag-button__icon">
+              <span className="denhaag-button__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                   <path
                     d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
@@ -542,13 +531,13 @@ Otherwise you will not be able to keep receiving CSS updates without breaking ch
             </a>
           </div>
         </div>
-        <footer class="denhaag-authentication__footer">
-          <div class="denhaag-authentication__footer-divider">
-            <hr class="denhaag-divider" role="presentation" />
-            <div class="denhaag-authentication__footer-label">or</div>
+        <footer className="denhaag-authentication__footer">
+          <div className="denhaag-authentication__footer-divider">
+            <hr className="denhaag-divider" role="presentation" />
+            <div className="denhaag-authentication__footer-label">or</div>
           </div>
           <a
-            class="denhaag-authentication-item"
+            className="denhaag-authentication-item"
             href="#example-link"
             target="_blank"
             title="Gebruik een Europees erkend middel"
@@ -558,14 +547,14 @@ Otherwise you will not be able to keep receiving CSS updates without breaking ch
               width="40"
               height="40"
               src={brandImage(40, 40)}
-              class="denhaag-authentication-item__image"
+              className="denhaag-authentication-item__image"
               alt="regenboog merk"
               loading="lazy"
             />
             Gebruik een Europees erkend middel
             <svg
               aria-hidden="true"
-              class="denhaag-icon"
+              className="denhaag-icon"
               focusable="false"
               height="1em"
               viewBox="0 0 24 24"
@@ -582,5 +571,4 @@ Otherwise you will not be able to keep receiving CSS updates without breaking ch
       </div>
     </div>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>

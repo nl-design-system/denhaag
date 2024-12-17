@@ -23,18 +23,16 @@ import readme from "../../README.md";
 ### Default
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Default">
     {() => (
-      <div class="denhaag-badge-counter">
-        <div class="denhaag-dot-indicator denhaag-dot-indicator--overlap-rectangle">
-          <div class="denhaag-badge-counter__counter">220</div>
-          <div class="denhaag-dot-indicator__dot"></div>
+      <div className="denhaag-badge-counter">
+        <div className="denhaag-dot-indicator denhaag-dot-indicator--overlap-rectangle">
+          <div className="denhaag-badge-counter__counter">220</div>
+          <div className="denhaag-dot-indicator__dot"></div>
         </div>
       </div>
     )}
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 <ArgsTable of={BadgeCounter} />
