@@ -2,22 +2,21 @@
   position: relative;
   z-index: 1;
   align-items: center;
-  background-color: var(--denhaag-process-steps-step-marker-background-color);
-  block-size: var(--denhaag-process-steps-step-marker-size, 2em);
+  background-color: var(--denhaag-process-steps-step-marker-background-color, var(--denhaag-color-grey-1));
+  block-size: var(--denhaag-process-steps-step-marker-size, 20px);
   border-style: solid;
   border-width: 2px;
   border-color: var(--denhaag-process-steps-step-marker-border-color, transparent);
   border-radius: 50%;
   box-sizing: border-box;
-  color: var(--denhaag-process-steps-step-marker-color);
+  color: var(--denhaag-process-steps-step-marker-color, var(--denhaag-color-grey-4));
   display: flex;
   flex-grow: 0;
   font-size: var(--denhaag-process-steps-step-marker-font-size);
   font-weight: 400;
-  inline-size: var(--denhaag-process-steps-step-marker-size, 2em);
+  inline-size: var(--denhaag-process-steps-step-marker-size, 20px);
   justify-content: center;
-  margin-block-end: var(--denhaag-process-steps-step-marker-margin);
-  margin-block-start: var(--denhaag-process-steps-step-marker-margin);
+  margin-block: var(--denhaag-process-steps-step-marker-margin, auto);
   padding-inline-end: 0;
   min-inline-size: 32px;
   min-block-size: 32px;
@@ -29,21 +28,12 @@
 }
 
 .denhaag-process-steps__step-marker--checked {
-  background-color: var(
-    --denhaag-process-steps-step-marker-checked-background-color,
-    var(--denhaag-process-steps-step-marker-background-color)
-  );
-  border-color: var(
-    --denhaag-process-steps-step-marker-checked-border-color,
-    var(--denhaag-process-steps-step-marker-border-color, transparent)
-  );
-  color: var(--denhaag-process-steps-step-marker-checked-color, var(--denhaag-process-steps-step-marker-color));
+  background-color: var(--denhaag-process-steps-step-marker-checked-background-color, var(--denhaag-color-white));
+  border-color: var(--denhaag-process-steps-step-marker-checked-border-color, var(--denhaag-color-green-3));
+  color: var(--denhaag-process-steps-step-marker-checked-color, var(--denhaag-color-green-3));
 }
 
 .denhaag-process-steps__step-marker--current {
-  background-color: var(
-    --denhaag-process-steps-step-marker-current-background-color,
-    var(--denhaag-process-steps-step-marker-background-color)
-  );
-  color: var(--denhaag-process-steps-step-marker-current-color, var(--denhaag-process-steps-step-marker-color));
+  background-color: var(--denhaag-process-steps-step-marker-current-background-color, var(--denhaag-color-green-3));
+  color: var(--denhaag-process-steps-step-marker-current-color, var(--denhaag-color-white));
 }
