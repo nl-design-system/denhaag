@@ -1,5 +1,6 @@
 .denhaag-button {
   --denhaag-button-focus-border-offset: calc(-1 * var(--denhaag-focus-border-width, 1px));
+  --denhaag-icon-size: var(--denhaag-typography-scale-lg-font-size);
 
   align-items: center;
   background-color: var(--denhaag-button-primary-action-background-color, var(--denhaag-color-green-3));
@@ -105,6 +106,7 @@ a.denhaag-button {
   --denhaag-button-font-size: var(--denhaag-typography-scale-lg-font-size);
   --denhaag-button-medium-size-padding-block: var(--denhaag-button-large-size-padding-block, 0.4063rem);
   --denhaag-button-medium-size-padding-inline: var(--denhaag-button-large-size-padding-inline, var(--denhaag-space-lg));
+  --denhaag-icon-size: var(--denhaag-typography-scale-xl-font-size);
 
   line-height: var(--denhaag-button-large-size-line-height, 1.75);
 }
@@ -116,14 +118,6 @@ a.denhaag-button {
   --denhaag-button-medium-size-padding-inline: calc(
     var(--denhaag-button-large-size-padding-inline, var(--denhaag-space-lg)) - var(--denhaag-button-border-width, 1px)
   );
-}
-
-.denhaag-button__icon > *:first-child {
-  font-size: var(--denhaag-typography-scale-lg-font-size);
-}
-
-.denhaag-button--large .denhaag-button__icon > *:first-child {
-  font-size: var(--denhaag-typography-scale-xl-font-size);
 }
 
 .denhaag-button--start-icon .denhaag-button__icon {
