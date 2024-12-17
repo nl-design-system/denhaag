@@ -107,20 +107,6 @@
   content: counter(denhaag-step-marker);
 }
 
-.denhaag-procedure .denhaag-link--external {
-  --denhaag-link-external-display: var(--denhaag-procedure-link-external-display, inline-flex);
-}
-
-.denhaag-procedure .denhaag-link--external .denhaag-link__icon {
-  --denhaag-link-icon-align: var(--denhaag-procedure-link-external-icon-align, bottom);
-
-  align-self: var(--denhaag-procedure-link-external-icon-align-self, unset);
-  width: var(
-    --denhaag-procedure-link-external-icon-width,
-    0.625rem
-  ) !important; /* because default uses --denhaag-link-icon-size for width and height */
-}
-
 @media (max-width: 767px) {
   .denhaag-procedure .denhaag-process-steps__step + .denhaag-process-steps__step::after {
     left: calc(var(--denhaag-step-marker-size, 32px) / 2);

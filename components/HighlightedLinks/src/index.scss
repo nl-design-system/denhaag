@@ -4,28 +4,20 @@
   width: 100%;
 }
 
-.denhaag-highlighted-links__list {
-  --denhaag-link-group-navigation-list-margin-block-end: 0;
-
-  display: grid;
-  gap: var(--denhaag-highlighted-links-list-gap, 0 var(--denhaag-space-3xl));
-  grid-template-columns: repeat(var(--denhaag-highlighted-links-columns, 1), 1fr);
-}
-
 @media (min-width: 48rem) {
   .denhaag-highlighted-links {
-    --denhaag-highlighted-links-columns: var(--denhaag-highlighted-links-columns-sm, 2);
+    --denhaag-link-group-list-columns: var(--denhaag-highlighted-links-columns-sm, 2);
   }
 }
 
 @media (min-width: 68.875rem) {
   .denhaag-highlighted-links {
-    --denhaag-highlighted-links-columns: var(--denhaag-highlighted-links-columns-md, 2);
+    --denhaag-link-group-list-columns: var(--denhaag-highlighted-links-columns-md, 2);
   }
 }
 
 @media (min-width: 80rem) {
   .denhaag-highlighted-links {
-    --denhaag-highlighted-links-columns: var(--denhaag-highlighted-links-columns-lg, 3);
+    --denhaag-link-group-list-columns: var(--denhaag-highlighted-links-columns-lg, 3);
   }
 }

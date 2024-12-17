@@ -1,6 +1,8 @@
 @import "~@utrecht/components/unordered-list/css";
 
 .denhaag-unordered-list {
+  --denhaag-link-with-icon-vertical-align: baseline;
+
   @extend .utrecht-unordered-list;
 
   color: var(--denhaag-unordered-list-color);
@@ -8,16 +10,6 @@
 
   .denhaag-link__label {
     hyphens: var(--denhaag-unordered-list-link-label-hyphens);
-  }
-
-  .denhaag-link--with-icon {
-    --denhaag-link-with-icon-vertical-align: baseline;
-
-    display: var(--denhaag-unordered-list-link-with-icon-display);
-  }
-
-  .denhaag-link__icon {
-    flex: unset;
   }
 }
 
