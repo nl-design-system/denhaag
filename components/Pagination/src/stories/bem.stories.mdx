@@ -27,18 +27,17 @@ import readme from "../../README.md";
 ### Default
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Default">
-    <nav class="denhaag-pagination" aria-label="Pagination">
+    <nav className="denhaag-pagination" aria-label="Pagination">
       <a
         href="#page-2"
-        class="denhaag-pagination__link denhaag-pagination__link--arrow"
+        className="denhaag-pagination__link denhaag-pagination__link--arrow"
         rel="prev"
         aria-label="Previous page"
       >
         <svg
           aria-hidden="true"
-          class="denhaag-icon"
+          className="denhaag-icon"
           width="1em"
           height="1em"
           viewBox="0 0 7 12"
@@ -51,40 +50,40 @@ import readme from "../../README.md";
           />
         </svg>
       </a>
-      <ol class="denhaag-pagination__links">
+      <ol className="denhaag-pagination__links">
         <li>
-          <a class="denhaag-pagination__link" href="#page-1" aria-label="Page 1">
+          <a className="denhaag-pagination__link" href="#page-1" aria-label="Page 1">
             1
           </a>
         </li>
         <li>
-          <a class="denhaag-pagination__link" href="#page-2" aria-label="Page 2" rel="prev">
+          <a className="denhaag-pagination__link" href="#page-2" aria-label="Page 2" rel="prev">
             2
           </a>
         </li>
         <li aria-current="page">
-          <span class="denhaag-pagination__link denhaag-pagination__link--current">3</span>
+          <span className="denhaag-pagination__link denhaag-pagination__link--current">3</span>
         </li>
         <li>
-          <a class="denhaag-pagination__link" href="#page-4" aria-label="Page 4" rel="next">
+          <a className="denhaag-pagination__link" href="#page-4" aria-label="Page 4" rel="next">
             4
           </a>
         </li>
         <li>
-          <a class="denhaag-pagination__link" href="#page-5" aria-label="Page 5">
+          <a className="denhaag-pagination__link" href="#page-5" aria-label="Page 5">
             5
           </a>
         </li>
       </ol>
       <a
         href="#page-4"
-        class="denhaag-pagination__link denhaag-pagination__link--arrow"
+        className="denhaag-pagination__link denhaag-pagination__link--arrow"
         rel="next"
         aria-label="Next page"
       >
         <svg
           aria-hidden="true"
-          class="denhaag-icon"
+          className="denhaag-icon"
           width="1em"
           height="1em"
           viewBox="0 0 7 12"
@@ -99,7 +98,6 @@ import readme from "../../README.md";
       </a>
     </nav>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Disabled
@@ -107,16 +105,15 @@ import readme from "../../README.md";
 Example of the disabled state, can be reproduced by the `denhaag-pagination__link--disabled` modifier.
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Disabled">
-    <nav class="denhaag-pagination" aria-label="Pagination">
+    <nav className="denhaag-pagination" aria-label="Pagination">
       <span
-        class="denhaag-pagination__link denhaag-pagination__link--arrow denhaag-pagination__link--disabled"
+        className="denhaag-pagination__link denhaag-pagination__link--arrow denhaag-pagination__link--disabled"
         aria-hidden="true"
       >
         <svg
           aria-hidden="true"
-          class="denhaag-icon"
+          className="denhaag-icon"
           width="1em"
           height="1em"
           viewBox="0 0 7 12"
@@ -129,37 +126,37 @@ Example of the disabled state, can be reproduced by the `denhaag-pagination__lin
           />
         </svg>
       </span>
-      <ol class="denhaag-pagination__links">
+      <ol className="denhaag-pagination__links">
         <li aria-current="page">
-          <span class="denhaag-pagination__link denhaag-pagination__link--current">1</span>
+          <span className="denhaag-pagination__link denhaag-pagination__link--current">1</span>
         </li>
         <li>
           <a
-            class="denhaag-pagination__link denhaag-pagination__link--disabled"
+            className="denhaag-pagination__link denhaag-pagination__link--disabled"
             href="#page-2"
             aria-label="Page 2"
             rel="next"
             aria-disabled="true"
-            tabindex="-1"
+            tabIndex="-1"
           >
             2
           </a>
         </li>
         <li>
-          <a class="denhaag-pagination__link" href="#page-3" aria-label="Page 3">
+          <a className="denhaag-pagination__link" href="#page-3" aria-label="Page 3">
             3
           </a>
         </li>
       </ol>
       <a
         href="#page-2"
-        class="denhaag-pagination__link denhaag-pagination__link--arrow"
+        className="denhaag-pagination__link denhaag-pagination__link--arrow"
         rel="next"
         aria-label="Next page"
       >
         <svg
           aria-hidden="true"
-          class="denhaag-icon"
+          className="denhaag-icon"
           width="1em"
           height="1em"
           viewBox="0 0 7 12"
@@ -174,7 +171,6 @@ Example of the disabled state, can be reproduced by the `denhaag-pagination__lin
       </a>
     </nav>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Hovered
@@ -182,18 +178,17 @@ Example of the disabled state, can be reproduced by the `denhaag-pagination__lin
 Example of the hover state, can be reproduced by the `denhaag-pagination__link--hover` modifier.
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Hovered">
-    <nav class="denhaag-pagination" aria-label="Pagination">
+    <nav className="denhaag-pagination" aria-label="Pagination">
       <a
         href="#page-2"
-        class="denhaag-pagination__link denhaag-pagination__link--arrow"
+        className="denhaag-pagination__link denhaag-pagination__link--arrow"
         rel="prev"
         aria-label="Previous page"
       >
         <svg
           aria-hidden="true"
-          class="denhaag-icon"
+          className="denhaag-icon"
           width="1em"
           height="1em"
           viewBox="0 0 7 12"
@@ -206,25 +201,25 @@ Example of the hover state, can be reproduced by the `denhaag-pagination__link--
           />
         </svg>
       </a>
-      <ol class="denhaag-pagination__links">
+      <ol className="denhaag-pagination__links">
         <li>
-          <a class="denhaag-pagination__link" href="#page-1" aria-label="Page 1">
+          <a className="denhaag-pagination__link" href="#page-1" aria-label="Page 1">
             1
           </a>
         </li>
         <li>
-          <a class="denhaag-pagination__link" href="#page-2" aria-label="Page 2" rel="prev">
+          <a className="denhaag-pagination__link" href="#page-2" aria-label="Page 2" rel="prev">
             2
           </a>
         </li>
         <li aria-current="page">
-          <span class="denhaag-pagination__link denhaag-pagination__link--current denhaag-pagination__link--hover">
+          <span className="denhaag-pagination__link denhaag-pagination__link--current denhaag-pagination__link--hover">
             3
           </span>
         </li>
         <li>
           <a
-            class="denhaag-pagination__link denhaag-pagination__link--hover"
+            className="denhaag-pagination__link denhaag-pagination__link--hover"
             href="#page-4"
             aria-label="Page 4"
             rel="next"
@@ -233,20 +228,20 @@ Example of the hover state, can be reproduced by the `denhaag-pagination__link--
           </a>
         </li>
         <li>
-          <a class="denhaag-pagination__link" href="#page-5" aria-label="Page 5">
+          <a className="denhaag-pagination__link" href="#page-5" aria-label="Page 5">
             5
           </a>
         </li>
       </ol>
       <a
         href="#page-4"
-        class="denhaag-pagination__link denhaag-pagination__link--arrow denhaag-pagination__link--hover"
+        className="denhaag-pagination__link denhaag-pagination__link--arrow denhaag-pagination__link--hover"
         rel="next"
         aria-label="Next page"
       >
         <svg
           aria-hidden="true"
-          class="denhaag-icon"
+          className="denhaag-icon"
           width="1em"
           height="1em"
           viewBox="0 0 7 12"
@@ -261,7 +256,6 @@ Example of the hover state, can be reproduced by the `denhaag-pagination__link--
       </a>
     </nav>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Focused
@@ -269,18 +263,17 @@ Example of the hover state, can be reproduced by the `denhaag-pagination__link--
 Example of the focus state, can be reproduced by the `denhaag-pagination__link--focus` modifier.
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Focused">
-    <nav class="denhaag-pagination" aria-label="Pagination">
+    <nav className="denhaag-pagination" aria-label="Pagination">
       <a
         href="#page-2"
-        class="denhaag-pagination__link denhaag-pagination__link--arrow"
+        className="denhaag-pagination__link denhaag-pagination__link--arrow"
         rel="prev"
         aria-label="Previous page"
       >
         <svg
           aria-hidden="true"
-          class="denhaag-icon"
+          className="denhaag-icon"
           width="1em"
           height="1em"
           viewBox="0 0 7 12"
@@ -293,23 +286,23 @@ Example of the focus state, can be reproduced by the `denhaag-pagination__link--
           />
         </svg>
       </a>
-      <ol class="denhaag-pagination__links">
+      <ol className="denhaag-pagination__links">
         <li>
-          <a class="denhaag-pagination__link" href="#page-1" aria-label="Page 1">
+          <a className="denhaag-pagination__link" href="#page-1" aria-label="Page 1">
             1
           </a>
         </li>
         <li>
-          <a class="denhaag-pagination__link" href="#page-2" aria-label="Page 2" rel="prev">
+          <a className="denhaag-pagination__link" href="#page-2" aria-label="Page 2" rel="prev">
             2
           </a>
         </li>
         <li aria-current="page">
-          <span class="denhaag-pagination__link denhaag-pagination__link--current">3</span>
+          <span className="denhaag-pagination__link denhaag-pagination__link--current">3</span>
         </li>
         <li>
           <a
-            class="denhaag-pagination__link denhaag-pagination__link--focus"
+            className="denhaag-pagination__link denhaag-pagination__link--focus"
             href="#page-4"
             aria-label="Page 4"
             rel="next"
@@ -318,20 +311,20 @@ Example of the focus state, can be reproduced by the `denhaag-pagination__link--
           </a>
         </li>
         <li>
-          <a class="denhaag-pagination__link" href="#page-5" aria-label="Page 5">
+          <a className="denhaag-pagination__link" href="#page-5" aria-label="Page 5">
             5
           </a>
         </li>
       </ol>
       <a
         href="#page-4"
-        class="denhaag-pagination__link denhaag-pagination__link--arrow denhaag-pagination__link--focus"
+        className="denhaag-pagination__link denhaag-pagination__link--arrow denhaag-pagination__link--focus"
         rel="next"
         aria-label="Next page"
       >
         <svg
           aria-hidden="true"
-          class="denhaag-icon"
+          className="denhaag-icon"
           width="1em"
           height="1em"
           viewBox="0 0 7 12"
@@ -346,7 +339,6 @@ Example of the focus state, can be reproduced by the `denhaag-pagination__link--
       </a>
     </nav>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### RTL
@@ -354,19 +346,18 @@ Example of the focus state, can be reproduced by the `denhaag-pagination__link--
 Arrows are flipped when the direction is `rtl`.
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="RTL">
     <div dir="rtl">
-      <nav class="denhaag-pagination" aria-label="Pagination">
+      <nav className="denhaag-pagination" aria-label="Pagination">
         <a
           href="#page-2"
-          class="denhaag-pagination__link denhaag-pagination__link--arrow"
+          className="denhaag-pagination__link denhaag-pagination__link--arrow"
           rel="prev"
           aria-label="Previous page"
         >
           <svg
             aria-hidden="true"
-            class="denhaag-icon"
+            className="denhaag-icon"
             width="1em"
             height="1em"
             viewBox="0 0 7 12"
@@ -379,40 +370,40 @@ Arrows are flipped when the direction is `rtl`.
             />
           </svg>
         </a>
-        <ol class="denhaag-pagination__links">
+        <ol className="denhaag-pagination__links">
           <li>
-            <a class="denhaag-pagination__link" href="#page-1" aria-label="Page 1">
+            <a className="denhaag-pagination__link" href="#page-1" aria-label="Page 1">
               1
             </a>
           </li>
           <li>
-            <a class="denhaag-pagination__link" href="#page-2" aria-label="Page 2" rel="prev">
+            <a className="denhaag-pagination__link" href="#page-2" aria-label="Page 2" rel="prev">
               2
             </a>
           </li>
           <li aria-current="page">
-            <span class="denhaag-pagination__link denhaag-pagination__link--current">3</span>
+            <span className="denhaag-pagination__link denhaag-pagination__link--current">3</span>
           </li>
           <li>
-            <a class="denhaag-pagination__link" href="#page-4" aria-label="Page 4" rel="next">
+            <a className="denhaag-pagination__link" href="#page-4" aria-label="Page 4" rel="next">
               4
             </a>
           </li>
           <li>
-            <a class="denhaag-pagination__link" href="#page-5" aria-label="Page 5">
+            <a className="denhaag-pagination__link" href="#page-5" aria-label="Page 5">
               5
             </a>
           </li>
         </ol>
         <a
           href="#page-4"
-          class="denhaag-pagination__link denhaag-pagination__link--arrow"
+          className="denhaag-pagination__link denhaag-pagination__link--arrow"
           rel="next"
           aria-label="Next page"
         >
           <svg
             aria-hidden="true"
-            class="denhaag-icon"
+            className="denhaag-icon"
             width="1em"
             height="1em"
             viewBox="0 0 7 12"
@@ -428,7 +419,6 @@ Arrows are flipped when the direction is `rtl`.
       </nav>
     </div>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### 4 items
@@ -436,18 +426,17 @@ Arrows are flipped when the direction is `rtl`.
 Hide items on the left side, since only 4 items (except current item) may be selected.
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="4 items">
-    <nav class="denhaag-pagination" aria-label="Pagination">
+    <nav className="denhaag-pagination" aria-label="Pagination">
       <a
         href="#page-21"
-        class="denhaag-pagination__link denhaag-pagination__link--arrow"
+        className="denhaag-pagination__link denhaag-pagination__link--arrow"
         rel="prev"
         aria-label="Previous page"
       >
         <svg
           aria-hidden="true"
-          class="denhaag-icon"
+          className="denhaag-icon"
           width="1em"
           height="1em"
           viewBox="0 0 7 12"
@@ -460,43 +449,43 @@ Hide items on the left side, since only 4 items (except current item) may be sel
           />
         </svg>
       </a>
-      <ol class="denhaag-pagination__links">
+      <ol className="denhaag-pagination__links">
         <li>
-          <a class="denhaag-pagination__link" href="#page-1" aria-label="Page 1">
+          <a className="denhaag-pagination__link" href="#page-1" aria-label="Page 1">
             1
           </a>
         </li>
         <li aria-hidden="true">
-          <span class="denhaag-pagination__dots">…</span>
+          <span className="denhaag-pagination__dots">…</span>
         </li>
         <li>
-          <a class="denhaag-pagination__link" href="#page-21" rel="prev" aria-label="Page 21">
+          <a className="denhaag-pagination__link" href="#page-21" rel="prev" aria-label="Page 21">
             21
           </a>
         </li>
         <li aria-current="page">
-          <span class="denhaag-pagination__link denhaag-pagination__link--current">2</span>
+          <span className="denhaag-pagination__link denhaag-pagination__link--current">2</span>
         </li>
         <li>
-          <a class="denhaag-pagination__link" href="#page-23" rel="next" aria-label="Page 23">
+          <a className="denhaag-pagination__link" href="#page-23" rel="next" aria-label="Page 23">
             23
           </a>
         </li>
         <li>
-          <a class="denhaag-pagination__link" href="#page-24" aria-label="Page 24">
+          <a className="denhaag-pagination__link" href="#page-24" aria-label="Page 24">
             24
           </a>
         </li>
       </ol>
       <a
         href="#page-23"
-        class="denhaag-pagination__link denhaag-pagination__link--arrow"
+        className="denhaag-pagination__link denhaag-pagination__link--arrow"
         rel="next"
         aria-label="Next page"
       >
         <svg
           aria-hidden="true"
-          class="denhaag-icon"
+          className="denhaag-icon"
           width="1em"
           height="1em"
           viewBox="0 0 7 12"
@@ -511,7 +500,6 @@ Hide items on the left side, since only 4 items (except current item) may be sel
       </a>
     </nav>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### 5 items
@@ -519,18 +507,17 @@ Hide items on the left side, since only 4 items (except current item) may be sel
 Hide items on both side, since only 4 items (except current item) may be selected.
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="5 items">
-    <nav class="denhaag-pagination" aria-label="Pagination">
+    <nav className="denhaag-pagination" aria-label="Pagination">
       <a
         href="#page-51"
-        class="denhaag-pagination__link denhaag-pagination__link--arrow"
+        className="denhaag-pagination__link denhaag-pagination__link--arrow"
         rel="prev"
         aria-label="Previous page"
       >
         <svg
           aria-hidden="true"
-          class="denhaag-icon"
+          className="denhaag-icon"
           width="1em"
           height="1em"
           viewBox="0 0 7 12"
@@ -543,46 +530,46 @@ Hide items on both side, since only 4 items (except current item) may be selecte
           />
         </svg>
       </a>
-      <ol class="denhaag-pagination__links">
+      <ol className="denhaag-pagination__links">
         <li>
-          <a class="denhaag-pagination__link" href="#page-1" aria-label="Page 1">
+          <a className="denhaag-pagination__link" href="#page-1" aria-label="Page 1">
             1
           </a>
         </li>
         <li aria-hidden="true">
-          <span class="denhaag-pagination__dots">…</span>
+          <span className="denhaag-pagination__dots">…</span>
         </li>
         <li>
-          <a class="denhaag-pagination__link" href="#page-51" rel="prev" aria-label="Page 51">
+          <a className="denhaag-pagination__link" href="#page-51" rel="prev" aria-label="Page 51">
             51
           </a>
         </li>
         <li aria-current="page">
-          <span class="denhaag-pagination__link denhaag-pagination__link--current">52</span>
+          <span className="denhaag-pagination__link denhaag-pagination__link--current">52</span>
         </li>
         <li>
-          <a class="denhaag-pagination__link" href="#page-53" rel="next" aria-label="Page 53">
+          <a className="denhaag-pagination__link" href="#page-53" rel="next" aria-label="Page 53">
             53
           </a>
         </li>
         <li aria-hidden="true">
-          <span class="denhaag-pagination__dots">…</span>
+          <span className="denhaag-pagination__dots">…</span>
         </li>
         <li>
-          <a class="denhaag-pagination__link" href="#page-100" aria-label="Page 100">
+          <a className="denhaag-pagination__link" href="#page-100" aria-label="Page 100">
             100
           </a>
         </li>
       </ol>
       <a
         href="#page-53"
-        class="denhaag-pagination__link denhaag-pagination__link--arrow"
+        className="denhaag-pagination__link denhaag-pagination__link--arrow"
         rel="next"
         aria-label="Next page"
       >
         <svg
           aria-hidden="true"
-          class="denhaag-icon"
+          className="denhaag-icon"
           width="1em"
           height="1em"
           viewBox="0 0 7 12"
@@ -597,7 +584,6 @@ Hide items on both side, since only 4 items (except current item) may be selecte
       </a>
     </nav>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Aligned start
@@ -605,18 +591,17 @@ Hide items on both side, since only 4 items (except current item) may be selecte
 Align the pagination to the start of the parent element by adding the modifier `denhaag-pagination--start`, this is by default event if the modifier isn't added.
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Aligned left">
-    <nav class="denhaag-pagination denhaag-pagination--start">
+    <nav className="denhaag-pagination denhaag-pagination--start">
       <a
         href="#page-2"
-        class="denhaag-pagination__link denhaag-pagination__link--arrow"
+        className="denhaag-pagination__link denhaag-pagination__link--arrow"
         rel="prev"
         aria-label="Previous page"
       >
         <svg
           aria-hidden="true"
-          class="denhaag-icon"
+          className="denhaag-icon"
           width="1em"
           height="1em"
           viewBox="0 0 7 12"
@@ -629,40 +614,40 @@ Align the pagination to the start of the parent element by adding the modifier `
           />
         </svg>
       </a>
-      <ol class="denhaag-pagination__links">
+      <ol className="denhaag-pagination__links">
         <li>
-          <a class="denhaag-pagination__link" href="#page-1" aria-label="Page 1">
+          <a className="denhaag-pagination__link" href="#page-1" aria-label="Page 1">
             1
           </a>
         </li>
         <li>
-          <a class="denhaag-pagination__link" href="#page-2" aria-label="Page 2" rel="prev">
+          <a className="denhaag-pagination__link" href="#page-2" aria-label="Page 2" rel="prev">
             2
           </a>
         </li>
         <li aria-current="page">
-          <span class="denhaag-pagination__link denhaag-pagination__link--current">3</span>
+          <span className="denhaag-pagination__link denhaag-pagination__link--current">3</span>
         </li>
         <li>
-          <a class="denhaag-pagination__link" href="#page-4" aria-label="Page 4" rel="next">
+          <a className="denhaag-pagination__link" href="#page-4" aria-label="Page 4" rel="next">
             4
           </a>
         </li>
         <li>
-          <a class="denhaag-pagination__link" href="#page-5" aria-label="Page 5">
+          <a className="denhaag-pagination__link" href="#page-5" aria-label="Page 5">
             5
           </a>
         </li>
       </ol>
       <a
         href="#page-4"
-        class="denhaag-pagination__link denhaag-pagination__link--arrow"
+        className="denhaag-pagination__link denhaag-pagination__link--arrow"
         rel="next"
         aria-label="Next page"
       >
         <svg
           aria-hidden="true"
-          class="denhaag-icon"
+          className="denhaag-icon"
           width="1em"
           height="1em"
           viewBox="0 0 7 12"
@@ -677,7 +662,6 @@ Align the pagination to the start of the parent element by adding the modifier `
       </a>
     </nav>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Aligned center
@@ -685,18 +669,17 @@ Align the pagination to the start of the parent element by adding the modifier `
 Align the pagination in the center of the parent element by adding the modifier `denhaag-pagination--center`.
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Aligned center">
-    <nav class="denhaag-pagination denhaag-pagination--center">
+    <nav className="denhaag-pagination denhaag-pagination--center">
       <a
         href="#page-2"
-        class="denhaag-pagination__link denhaag-pagination__link--arrow"
+        className="denhaag-pagination__link denhaag-pagination__link--arrow"
         rel="prev"
         aria-label="Previous page"
       >
         <svg
           aria-hidden="true"
-          class="denhaag-icon"
+          className="denhaag-icon"
           width="1em"
           height="1em"
           viewBox="0 0 7 12"
@@ -709,40 +692,40 @@ Align the pagination in the center of the parent element by adding the modifier 
           />
         </svg>
       </a>
-      <ol class="denhaag-pagination__links">
+      <ol className="denhaag-pagination__links">
         <li>
-          <a class="denhaag-pagination__link" href="#page-1" aria-label="Page 1">
+          <a className="denhaag-pagination__link" href="#page-1" aria-label="Page 1">
             1
           </a>
         </li>
         <li>
-          <a class="denhaag-pagination__link" href="#page-2" aria-label="Page 2" rel="prev">
+          <a className="denhaag-pagination__link" href="#page-2" aria-label="Page 2" rel="prev">
             2
           </a>
         </li>
         <li aria-current="page">
-          <span class="denhaag-pagination__link denhaag-pagination__link--current">3</span>
+          <span className="denhaag-pagination__link denhaag-pagination__link--current">3</span>
         </li>
         <li>
-          <a class="denhaag-pagination__link" href="#page-4" aria-label="Page 4" rel="next">
+          <a className="denhaag-pagination__link" href="#page-4" aria-label="Page 4" rel="next">
             4
           </a>
         </li>
         <li>
-          <a class="denhaag-pagination__link" href="#page-5" aria-label="Page 5">
+          <a className="denhaag-pagination__link" href="#page-5" aria-label="Page 5">
             5
           </a>
         </li>
       </ol>
       <a
         href="#page-4"
-        class="denhaag-pagination__link denhaag-pagination__link--arrow"
+        className="denhaag-pagination__link denhaag-pagination__link--arrow"
         rel="next"
         aria-label="Next page"
       >
         <svg
           aria-hidden="true"
-          class="denhaag-icon"
+          className="denhaag-icon"
           width="1em"
           height="1em"
           viewBox="0 0 7 12"
@@ -757,7 +740,6 @@ Align the pagination in the center of the parent element by adding the modifier 
       </a>
     </nav>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Aligned end
@@ -765,18 +747,17 @@ Align the pagination in the center of the parent element by adding the modifier 
 Align the pagination to the end of the parent element by adding the modifier `denhaag-pagination--end`.
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Aligned end">
-    <nav class="denhaag-pagination denhaag-pagination--end">
+    <nav className="denhaag-pagination denhaag-pagination--end">
       <a
         href="#page-2"
-        class="denhaag-pagination__link denhaag-pagination__link--arrow"
+        className="denhaag-pagination__link denhaag-pagination__link--arrow"
         rel="prev"
         aria-label="Previous page"
       >
         <svg
           aria-hidden="true"
-          class="denhaag-icon"
+          className="denhaag-icon"
           width="1em"
           height="1em"
           viewBox="0 0 7 12"
@@ -789,40 +770,40 @@ Align the pagination to the end of the parent element by adding the modifier `de
           />
         </svg>
       </a>
-      <ol class="denhaag-pagination__links">
+      <ol className="denhaag-pagination__links">
         <li>
-          <a class="denhaag-pagination__link" href="#page-1" aria-label="Page 1">
+          <a className="denhaag-pagination__link" href="#page-1" aria-label="Page 1">
             1
           </a>
         </li>
         <li>
-          <a class="denhaag-pagination__link" href="#page-2" aria-label="Page 2" rel="prev">
+          <a className="denhaag-pagination__link" href="#page-2" aria-label="Page 2" rel="prev">
             2
           </a>
         </li>
         <li aria-current="page">
-          <span class="denhaag-pagination__link denhaag-pagination__link--current">3</span>
+          <span className="denhaag-pagination__link denhaag-pagination__link--current">3</span>
         </li>
         <li>
-          <a class="denhaag-pagination__link" href="#page-4" aria-label="Page 4" rel="next">
+          <a className="denhaag-pagination__link" href="#page-4" aria-label="Page 4" rel="next">
             4
           </a>
         </li>
         <li>
-          <a class="denhaag-pagination__link" href="#page-5" aria-label="Page 5">
+          <a className="denhaag-pagination__link" href="#page-5" aria-label="Page 5">
             5
           </a>
         </li>
       </ol>
       <a
         href="#page-3"
-        class="denhaag-pagination__link denhaag-pagination__link--arrow"
+        className="denhaag-pagination__link denhaag-pagination__link--arrow"
         rel="next"
         aria-label="Next page"
       >
         <svg
           aria-hidden="true"
-          class="denhaag-icon"
+          className="denhaag-icon"
           width="1em"
           height="1em"
           viewBox="0 0 7 12"
@@ -837,5 +818,4 @@ Align the pagination to the end of the parent element by adding the modifier `de
       </a>
     </nav>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>

@@ -57,13 +57,13 @@ import readme from "../README.md";
         source: {
           code: `
           import { MenuButtonExpandable } from "@gemeente-denhaag/menubutton";
-          const ReactMenuButton = <MenuButtonExpandable variant='expandable' onclick={() => alert('Hello from MenuButton 👋')}>Label</MenuButtonExpandable>;`,
+          const ReactMenuButton = <MenuButtonExpandable variant='expandable' onClick={() => alert('Hello from MenuButton 👋')}>Label</MenuButtonExpandable>;`,
         },
       },
     }}
   >
     {() => (
-      <MenuButtonExpandable onclick={() => alert("Hello from MenuButton 👋") /* eslint-disable-line no-alert */}>
+      <MenuButtonExpandable onClick={() => alert("Hello from MenuButton") /* eslint-disable-line no-alert */}>
         Label
       </MenuButtonExpandable>
     )}
@@ -106,13 +106,9 @@ import readme from "../README.md";
 
 <Canvas>
   <Story name="Default HTML">
-    {/* eslint-disable react/no-unknown-property */}
-    {() => (
-      <a href="https://github.com/nl-design-system/denhaag" class="denhaag-menu-button">
-        Label
-      </a>
-    )}
-    {/* eslint-enable react/no-unknown-property */}
+    <a href="https://github.com/nl-design-system/denhaag" className="denhaag-menu-button">
+      Label
+    </a>
   </Story>
 </Canvas>
 
@@ -120,21 +116,52 @@ import readme from "../README.md";
 
 <Canvas>
   <Story name="Expandable HTML">
-    {/* eslint-disable react/no-unknown-property */}
-    {() => (
-      <button id="button-id" onclick="alert('Hello from MenuButton 👋')" class="denhaag-menu-button">
+    <button id="button-id" onClick="alert('Hello from MenuButton')" className="denhaag-menu-button">
+      Label
+      <span className="denhaag-menu-button__chevron">
+        <svg
+          width="24"
+          height="24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="MuiSvgIcon-root"
+          focusable="false"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+          shapeRendering="auto"
+          aria-label="ChevronDownIcon"
+        >
+          <path
+            d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </span>
+    </button>
+  </Story>
+</Canvas>
+
+### HTML Menu
+
+<Canvas>
+  <Story name="Menu HTML">
+    <div className="denhaag-menu" id="menu-id">
+      <a href="https://github.com/nl-design-system/denhaag" className="denhaag-menu-button">
         Label
-        <span class="denhaag-menu-button__chevron">
+      </a>
+      <button className="denhaag-menu-button">
+        Label 2
+        <span className="denhaag-menu-button__chevron">
           <svg
-            width="24"
-            height="24"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            class="MuiSvgIcon-root"
+            className="MuiSvgIcon-root"
             focusable="false"
-            viewBox="0 0 24 24"
             aria-hidden="true"
-            shape-rendering="auto"
+            shapeRendering="auto"
             aria-label="ChevronDownIcon"
           >
             <path
@@ -144,45 +171,6 @@ import readme from "../README.md";
           </svg>
         </span>
       </button>
-    )}
-    {/* eslint-enable react/no-unknown-property */}
-  </Story>
-</Canvas>
-
-### HTML Menu
-
-<Canvas>
-  <Story name="Menu HTML">
-    {/* eslint-disable react/no-unknown-property */}
-    {() => (
-      <div class="denhaag-menu" id="menu-id">
-        <a href="https://github.com/nl-design-system/denhaag" class="denhaag-menu-button">
-          Label
-        </a>
-        <button class="denhaag-menu-button">
-          Label 2
-          <span class="denhaag-menu-button__chevron">
-            <svg
-              width="1em"
-              height="1em"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              aria-hidden="true"
-              shape-rendering="auto"
-              aria-label="ChevronDownIcon"
-            >
-              <path
-                d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </span>
-        </button>
-      </div>
-    )}
-    {/* eslint-enable react/no-unknown-property */}
+    </div>
   </Story>
 </Canvas>
