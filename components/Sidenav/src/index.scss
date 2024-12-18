@@ -6,21 +6,19 @@
 
 .denhaag-sidenav__list {
   list-style: none;
-  margin-block-end: 0;
-  margin-block-start: 0;
-  padding-block-end: 0;
-  padding-block-start: 0;
+  margin-block: 0;
+  padding-block: 0;
   padding-inline-start: 0;
 }
 
 .denhaag-sidenav__list--child {
-  margin-inline-start: var(--denhaag-sidenav-list-child-margin-inline-start);
+  margin-inline-start: var(--denhaag-sidenav-list-child-margin-inline-start, 24px);
 }
 
 .denhaag-sidenav__item {
-  font-family: var(--denhaag-sidenav-item-font-family, sans-serif);
-  font-size: var(--denhaag-sidenav-item-font-size);
-  font-weight: var(--denhaag-sidenav-item-font-weight, normal);
+  font-family: var(--denhaag-sidenav-item-font-family, var(--denhaag-typography-sans-serif-font-family));
+  font-size: var(--denhaag-sidenav-item-font-size, var(--denhaag-typography-scale-base-font-size));
+  font-weight: var(--denhaag-sidenav-item-font-weight, var(--denhaag-typography-weight-regular));
   line-height: 1.5;
   display: flex;
   flex-direction: row;
@@ -29,19 +27,18 @@
 
 .denhaag-sidenav__link {
   text-decoration: none;
-  color: var(--denhaag-sidenav-link-color);
+  color: var(--denhaag-sidenav-link-color, var(--denhaag-color-grey-4));
   display: flex;
   flex-direction: row;
   flex-grow: 1;
   align-items: center;
   column-gap: 16px;
-  padding-block-start: var(--denhaag-sidenav-link-padding-block-start);
-  padding-block-end: var(--denhaag-sidenav-link-padding-block-end);
+  padding-block: var(--denhaag-sidenav-link-padding-block-start, 12px);
 }
 
 .denhaag-sidenav__link:hover,
 .denhaag-sidenav__link--hover {
-  color: var(--denhaag-sidenav-link-hover-color);
+  color: var(--denhaag-sidenav-link-hover-color, var(--denhaag-color-blue-3));
   cursor: pointer;
 }
 
@@ -51,9 +48,9 @@
 }
 
 .denhaag-sidenav__link--current {
-  color: var(--denhaag-sidenav-link-active-color);
+  color: var(--denhaag-sidenav-link-active-color, var(--denhaag-color-blue-3));
 }
 
 .denhaag-sidenav__link--child {
-  padding-inline-start: var(--denhaag-sidenav-link-child-padding-inline-start);
+  padding-inline-start: var(--denhaag-sidenav-link-child-padding-inline-start, 16px);
 }
