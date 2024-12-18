@@ -4,7 +4,7 @@
 
 .denhaag-timeline__step--focus,
 .denhaag-timeline__step:focus-visible {
-  outline: var(--denhaag-timeline-step-outline, var(--denhaag-focus-border));
+  outline: var(--denhaag-focus-border);
   outline-offset: var(--denhaag-timeline-step-outline-offset, 0.13rem);
 }
 

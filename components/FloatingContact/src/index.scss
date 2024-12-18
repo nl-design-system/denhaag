@@ -91,7 +91,7 @@
     var(--denhaag-color-green-4)
   );
 
-  outline: var(--denhaag-floating-contact-switch-outline, var(--denhaag-focus-border));
+  outline: var(--denhaag-focus-border);
 }
 
 .denhaag-floating-contact-switch[aria-expanded="true"] {
@@ -269,8 +269,7 @@
 
 .denhaag-floating-contact__item-link:focus-visible::after,
 .denhaag-floating-contact__item--focus .denhaag-floating-contact__item-link::after {
-  outline: var(--denhaag-floating-contact-link-outline-width, var(--denhaag-focus-border-width))
-    var(--denhaag-floating-contact-link-outline-style, var(--denhaag-focus-border-style))
+  outline: var(--denhaag-focus-border-width) var(--denhaag-focus-border-style)
     var(--denhaag-floating-contact-link-outline-color, currentColor);
   outline-offset: var(--denhaag-floating-contact-link-outline-width, var(--denhaag-focus-border-width));
 }

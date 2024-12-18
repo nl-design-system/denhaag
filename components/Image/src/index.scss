@@ -49,7 +49,7 @@
 }
 
 .denhaag-image__figcaption-download:focus-visible {
-  outline: var(--denhaag-image-figcaption-download-outline, var(--denhaag-focus-border));
+  outline: var(--denhaag-focus-border);
 }
 
 .denhaag-image__download-text {

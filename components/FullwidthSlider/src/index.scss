@@ -123,10 +123,8 @@
   padding-block-end: var(--denhaag-fullwidth-slider-card-content-title-padding-bottom, var(--denhaag-space-md));
   color: var(--denhaag-fullwidth-slider-card-content-title-color, var(--denhaag-color-grey-5));
 
-  &--focus-visible {
-    a {
-      outline: var(--denhaag-focus-border);
-    }
+  &--focus-visible a {
+    outline: var(--denhaag-focus-border);
   }
 
   a {
