@@ -1,31 +1,31 @@
 .denhaag-responsive-content {
-  --denhaag-responsive-content-padding: var(--denhaag-responsive-content-2xs-padding);
+  --denhaag-responsive-content-padding: var(--denhaag-responsive-content-2xs-padding, 0.75rem);
 
   @media (min-width: 360px) {
-    --denhaag-responsive-content-padding: var(--denhaag-responsive-content-xs-padding);
+    --denhaag-responsive-content-padding: var(--denhaag-responsive-content-xs-padding, 1.5rem);
   }
 
   @media (max-width: 767px) {
-    padding-inline-start: var(--denhaag-responsive-content-padding);
-    padding-inline-end: var(--denhaag-responsive-content-padding);
+    padding-inline-start: var(--denhaag-responsive-content-padding, 0.75rem);
+    padding-inline-end: var(--denhaag-responsive-content-padding, 0.75rem);
     width: 100%;
     box-sizing: border-box;
   }
 
   @media (min-width: 768px) {
-    --denhaag-responsive-content-max-width: var(--denhaag-responsive-content-sm-max-width);
+    --denhaag-responsive-content-max-width: var(--denhaag-responsive-content-sm-max-width, 40.5rem);
 
     margin-inline-end: auto;
     margin-inline-start: auto;
     max-width: 100%;
-    width: var(--denhaag-responsive-content-max-width, 100%);
+    width: var(--denhaag-responsive-content-max-width, 40.5rem);
   }
 
   @media (min-width: 1024px) {
-    --denhaag-responsive-content-max-width: var(--denhaag-responsive-content-md-max-width);
+    --denhaag-responsive-content-max-width: var(--denhaag-responsive-content-md-max-width, 56.5rem);
   }
 
   @media (min-width: 1280px) {
-    --denhaag-responsive-content-max-width: var(--denhaag-responsive-content-lg-max-width);
+    --denhaag-responsive-content-max-width: var(--denhaag-responsive-content-lg-max-width, 67.5rem);
   }
 }
