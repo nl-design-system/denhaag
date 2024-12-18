@@ -117,7 +117,7 @@
   /* stylelint-disable-next-line no-descending-specificity */
   & .denhaag-icon,
   & .denhaag-dynamic-content__card-image-container {
-    outline: var(--denhaag-dynamic-content-focus-outline, var(--denhaag-focus-border));
+    outline: var(--denhaag-focus-border);
   }
 }
 

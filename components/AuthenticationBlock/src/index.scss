@@ -167,7 +167,7 @@
     }
 
     &:focus-visible {
-      outline: var(--denhaag-authentication-item-focus-outline, var(--denhaag-link-focus-outline));
+      outline: var(--denhaag-focus-border);
     }
 
     // CSS support may there be more than one item is added.

@@ -236,8 +236,7 @@
 .denhaag-datepicker__calendar-navigation.denhaag-datepicker__calendar-navigation--focus,
 .denhaag-datepicker__calendar-navigation:focus-visible {
   color: var(--denhaag-icon-button-focus-color);
-  outline: var(--denhaag-icon-button-focus-outline-color) var(--denhaag-icon-button-focus-outline-style)
-    var(--denhaag-icon-button-focus-outline-width);
+  outline: var(--denhaag-focus-border);
   outline-offset: var(--denhaag-icon-button-focus-outline-offset);
 }
 

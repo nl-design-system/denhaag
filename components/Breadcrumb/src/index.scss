@@ -84,7 +84,7 @@ ol.denhaag-breadcrumb__list {
   --denhaag-breadcrumb-link-color: var(--denhaag-breadcrumb-link-focus-color, var(--denhaag-color-blue-4));
   --denhaag-breadcrumb-link-text-decoration: var(--denhaag-breadcrumb-link-focus-text-decoration, underline);
 
-  outline: var(--denhaag-breadcrumb-link-focus-outline, var(--denhaag-link-focus-outline));
+  outline: var(--denhaag-focus-border);
 }
 
 .denhaag-breadcrumb__link--current .denhaag-breadcrumb__link,
