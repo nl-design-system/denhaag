@@ -1,14 +1,14 @@
 .denhaag-timeline__step-label--active {
-  font-weight: var(--denhaag-timeline-step-label-active-font-weight);
-  color: var(--denhaag-timeline-step-label-active-color);
+  font-weight: var(--denhaag-timeline-step-label-active-font-weight, var(--denhaag-typography-weight-bold));
+  color: var(--denhaag-timeline-step-label-active-color, var(--denhaag-color-blue-3));
 }
 
 .denhaag-timeline__step-label--completed--hover,
 .denhaag-timeline__step-label--completed:not(:only-child):hover {
-  color: var(--denhaag-timeline-step-label-completed-hover-color);
+  color: var(--denhaag-timeline-step-label-completed-hover-color, var(--denhaag-color-blue-3));
   cursor: pointer;
 }
 
 .denhaag-timeline__step-label--disabled {
-  color: var(--denhaag-timeline-step-label-disabled-color);
+  color: var(--denhaag-timeline-step-label-disabled-color, var(--denhaag-color-grey-2));
 }

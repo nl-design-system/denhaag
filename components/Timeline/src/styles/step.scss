@@ -1,16 +1,15 @@
 .denhaag-timeline__step {
-  padding-block-start: var(--denhaag-timeline-step-padding);
-  padding-block-end: var(--denhaag-timeline-step-padding);
+  padding-block: var(--denhaag-timeline-step-padding, 0.75rem);
 }
 
 .denhaag-timeline__step--focus,
 .denhaag-timeline__step:focus-visible {
-  outline: var(--denhaag-timeline-step-outline);
-  outline-offset: var(--denhaag-timeline-step-outline-offset);
+  outline: var(--denhaag-timeline-step-outline, var(--denhaag-focus-border));
+  outline-offset: var(--denhaag-timeline-step-outline-offset, 0.13rem);
 }
 
 .denhaag-timeline__step-collapse-icon {
-  padding-inline-start: var(--denhaag-timeline-step-collapse-icon-padding);
-  height: var(--denhaag-timeline-step-collapse-icon-size);
-  width: var(--denhaag-timeline-step-collapse-icon-size);
+  padding-inline-start: var(--denhaag-timeline-step-collapse-icon-padding, var(--denhaag-space-inline-2xs));
+  height: var(--denhaag-timeline-step-collapse-icon-size, 1rem);
+  width: var(--denhaag-timeline-step-collapse-icon-size, 1rem);
 }
