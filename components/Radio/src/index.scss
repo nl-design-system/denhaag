@@ -18,31 +18,30 @@
   cursor: pointer;
   height: auto;
   left: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
+  margin-inline: 0;
+  margin-block: 0;
   opacity: 0%;
   position: absolute;
   top: 0;
-  width: var(--denhaag-radio-size);
+  width: var(--denhaag-radio-size, var(--utrecht-custom-checkbox-size));
   z-index: 1;
 }
 
 .denhaag-radio__icon {
   aspect-ratio: 1;
-  background-color: var(--denhaag-radio-background-color);
-  border: var(--denhaag-radio-border-width) solid var(--denhaag-radio-border-color);
+  background-color: var(--denhaag-radio-background-color, var(--denhaag-color-white));
+  border: var(--denhaag-radio-border-width, var(--utrecht-custom-checkbox-border-width)) solid
+    var(--denhaag-radio-border-color, var(--utrecht-custom-checkbox-border-color));
   border-radius: 50%;
   box-sizing: border-box;
   cursor: pointer;
   height: auto;
-  width: var(--denhaag-radio-size);
+  width: var(--denhaag-radio-size, var(--utrecht-custom-checkbox-size));
 }
 
 .denhaag-radio__icon-inner {
   aspect-ratio: 1;
-  background-color: var(--denhaag-radio-checked-inner-background-color);
+  background-color: var(--denhaag-radio-checked-inner-background-color, var(--denhaag-color-white));
   border-radius: 50%;
   height: auto;
   left: 50%;
@@ -50,12 +49,16 @@
   top: 50%;
   transform: translate(-50%, -50%);
   transform-origin: center;
-  transition: width var(--denhaag-radio-transition-duration) var(--denhaag-radio-transition-timing-function);
-  width: var(--denhaag-radio-checked-inner-size);
+  transition: width var(--denhaag-radio-transition-duration, 250ms)
+    var(--denhaag-radio-transition-timing-function, ease-in-out);
+  width: var(--denhaag-radio-checked-inner-size, 8px);
 }
 
 .denhaag-radio__input:not(:checked) + .denhaag-radio__icon {
-  --denhaag-radio-checked-inner-size: calc(var(--denhaag-radio-size) - (var(--denhaag-radio-border-width) * 2));
+  --denhaag-radio-checked-inner-size: calc(
+    var(--denhaag-radio-size, var(--utrecht-custom-checkbox-size)) -
+      (var(--denhaag-radio-border-width, var(--utrecht-custom-checkbox-border-width)) * 2)
+  );
 }
 
 .denhaag-radio__input:disabled {
@@ -63,12 +66,15 @@
 }
 
 .denhaag-radio__input:checked + .denhaag-radio__icon {
-  background-color: var(--denhaag-radio-checked-background-color);
-  border-color: var(--denhaag-radio-checked-border-color);
+  background-color: var(
+    --denhaag-radio-checked-background-color,
+    var(--utrecht-custom-checkbox-checked-background-color)
+  );
+  border-color: var(--denhaag-radio-checked-border-color, var(--utrecht-custom-checkbox-checked-border-color));
 }
 
 .denhaag-radio.denhaag-radio--error .denhaag-radio__icon {
-  border-color: var(--denhaag-radio-invalid-border-color);
+  border-color: var(--denhaag-radio-invalid-border-color, var(--utrecht-custom-checkbox-invalid-border-color));
 }
 
 .denhaag-radio__input:focus-visible ~ .denhaag-radio__icon,
@@ -79,39 +85,57 @@
 .denhaag-radio:hover .denhaag-radio__icon,
 .denhaag-radio.denhaag-radio--hover .denhaag-radio__icon,
 .denhaag-form-control-label:hover .denhaag-radio__icon {
-  border-color: var(--denhaag-radio-hover-border-color);
+  border-color: var(--denhaag-radio-hover-border-color, var(--denhaag-checkbox-hover-border-color));
 }
 
 .denhaag-radio__input:disabled:not(:checked) + .denhaag-radio__icon {
-  --denhaag-radio-checked-inner-background-color: var(--denhaag-radio-disabled-background-color);
+  --denhaag-radio-checked-inner-background-color: var(
+    --denhaag-radio-disabled-background-color,
+    var(--utrecht-custom-checkbox-disabled-background-color)
+  );
 }
 
 .denhaag-radio .denhaag-radio__input:disabled + .denhaag-radio__icon {
-  background-color: var(--denhaag-radio-disabled-background-color);
-  border-color: var(--denhaag-radio-border-color);
+  background-color: var(
+    --denhaag-radio-disabled-background-color,
+    var(--utrecht-custom-checkbox-disabled-background-color)
+  );
+  border-color: var(--denhaag-radio-border-color, var(--utrecht-custom-checkbox-border-color));
   cursor: default;
 }
 
 .denhaag-radio.denhaag-radio--error:hover .denhaag-radio__icon,
 .denhaag-radio.denhaag-radio--error.denhaag-radio.denhaag-radio--hover .denhaag-radio__icon,
 .denhaag-form-control-label:hover .denhaag-radio.denhaag-radio--error .denhaag-radio__icon {
-  border-color: var(--denhaag-radio-hover-invalid-border-color);
+  border-color: var(--denhaag-radio-hover-invalid-border-color, var(--denhaag-checkbox-hover-invalid-border-color));
 }
 
 .denhaag-radio:hover .denhaag-radio__input:checked + .denhaag-radio__icon,
 .denhaag-radio.denhaag-radio--hover .denhaag-radio__input:checked + .denhaag-radio__icon,
 .denhaag-form-control-label:hover .denhaag-radio__input:checked + .denhaag-radio__icon {
-  background-color: var(--denhaag-radio-hover-checked-background-color);
-  border-color: var(--denhaag-radio-hover-checked-border-color);
+  background-color: var(
+    --denhaag-radio-hover-checked-background-color,
+    var(--denhaag-checkbox-hover-checked-background-color)
+  );
+  border-color: var(--denhaag-radio-hover-checked-border-color, var(--denhaag-checkbox-hover-checked-border-color));
 }
 
 .denhaag-radio .denhaag-radio__input:checked:disabled + .denhaag-radio__icon {
-  background-color: var(--denhaag-radio-checked-disabled-background-color);
-  border-color: var(--denhaag-radio-checked-disabled-border-color);
+  background-color: var(
+    --denhaag-radio-checked-disabled-background-color,
+    var(--denhaag-checkbox-checked-disabled-background-color)
+  );
+  border-color: var(
+    --denhaag-radio-checked-disabled-border-color,
+    var(--denhaag-checkbox-checked-disabled-border-color)
+  );
 }
 
 .denhaag-radio.denhaag-radio--error .denhaag-radio__input:checked + .denhaag-radio__icon {
-  background-color: var(--denhaag-radio-checked-invalid-background-color);
+  background-color: var(
+    --denhaag-radio-checked-invalid-background-color,
+    var(--denhaag-checkbox-checked-invalid-background-color)
+  );
 }
 
 .denhaag-radio.denhaag-radio--error:hover .denhaag-radio__input:checked + .denhaag-radio__icon,
@@ -120,6 +144,9 @@
   .denhaag-radio.denhaag-radio--error
   .denhaag-radio__input:checked
   + .denhaag-radio__icon {
-  background-color: var(--denhaag-radio-hover-invalid-background-color);
-  border-color: var(--denhaag-radio-hover-invalid-border-color);
+  background-color: var(
+    --denhaag-radio-hover-invalid-background-color,
+    var(--denhaag-checkbox-hover-invalid-background-color)
+  );
+  border-color: var(--denhaag-radio-hover-invalid-border-color, var(--denhaag-checkbox-hover-invalid-border-color));
 }
