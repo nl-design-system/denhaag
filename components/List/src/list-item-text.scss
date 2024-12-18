@@ -18,6 +18,6 @@
   font-family: var(--denhaag-list-font-family, var(--denhaag-typography-sans-serif-font-family));
   font-weight: var(--denhaag-list-item-text-secondary-font-weight, var(--denhaag-typography-weight-regular));
   font-size: var(--denhaag-list-item-text-secondary-font-size, var(--denhaag-typography-scale-s-font-size));
-  line-height: var(--denhaag-list-item-text-secondary-line-height, 16px);
-  padding-block-end: var(--denhaag-list-item-text-secondary-padding-block-end, 8px);
+  line-height: var(--denhaag-list-item-text-secondary-line-height, var(--denhaag-space-md));
+  padding-block-end: var(--denhaag-list-item-text-secondary-padding-block-end, var(--denhaag-space-xs));
 }

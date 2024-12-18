@@ -2,13 +2,13 @@
   background: var(--denhaag-divider-border-color, var(--denhaag-color-grey-2));
   border: 0;
   height: var(--denhaag-divider-border-width, 1px);
-  margin-block: var(--denhaag-divider-margin-block, 16px);
+  margin-block: var(--denhaag-divider-margin-block, var(--denhaag-space-md));
   flex-shrink: 0;
   width: 100%;
 }
 
 .denhaag-divider--vertical {
-  margin-inline: var(--denhaag-divider-margin-inline, 16px);
+  margin-inline: var(--denhaag-divider-margin-inline, var(--denhaag-space-md));
   width: var(--denhaag-divider-border-width, 1px);
   height: inherit;
 }

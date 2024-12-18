@@ -1,8 +1,8 @@
 .denhaag-icon-button {
   display: inline-flex;
   color: var(--denhaag-icon-button-color, var(--denhaag-color-grey-4));
-  padding-inline: var(--denhaag-icon-button-padding-inline, 2px);
-  padding-block: var(--denhaag-icon-button-padding-block, 2px);
+  padding-inline: var(--denhaag-icon-button-padding-inline, var(--denhaag-space-3xs));
+  padding-block: var(--denhaag-icon-button-padding-block, var(--denhaag-space-3xs));
   border: 0;
   border-radius: 0;
   outline: 0;

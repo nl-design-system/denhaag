@@ -4,8 +4,8 @@
   display: inline-block;
   position: relative;
   width: 100%;
-  margin-block-start: var(--denhaag-form-input-margin-block-start);
-  margin-block-end: var(--denhaag-form-input-margin-block-end);
+  margin-block: var(--denhaag-form-input-margin-block-start, var(--denhaag-form-input-margin-block, 0))
+    var(--denhaag-form-input-margin-block-end, var(--denhaag-form-input-margin-block, 0));
 }
 
 .denhaag-textfield--focus-within::after,
@@ -24,15 +24,11 @@
 .denhaag-textfield__input {
   @extend .utrecht-textbox;
 
-  line-height: var(--denhaag-form-input-line-height);
-  margin-block-start: 0;
-  margin-block-end: 0;
+  line-height: var(--denhaag-form-input-line-height, var(--denhaag-typography-scale-base-line-height));
+  margin-block: 0;
 }
 
-.denhaag-textfield__input:focus {
-  outline: none;
-}
-
+.denhaag-textfield__input:focus,
 .denhaag-textfield__input:focus-visible {
   outline: none;
 }
@@ -56,7 +52,8 @@
   @extend .utrecht-textbox--invalid;
 
   padding-inline-end: calc(
-    (var(--utrecht-form-input-padding-inline-end) * 2) + (var(--denhaag-form-input-icon-font-size) * 2)
+    (var(--utrecht-form-input-padding-inline-end) * 2) +
+      (var(--denhaag-form-input-icon-font-size, var(--denhaag-typography-scale-lg-font-size)) * 2)
   );
 }
 
@@ -74,7 +71,7 @@
 }
 
 .denhaag-textfield__icons svg {
-  font-size: var(--denhaag-form-input-icon-font-size);
+  font-size: var(--denhaag-form-input-icon-font-size, var(--denhaag-typography-scale-lg-font-size));
 }
 
 .denhaag-textfield__invalid-icon {

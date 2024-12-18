@@ -85,5 +85,5 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: var(--denhaag-anchor-navigation-link-width, 2px);
+  width: var(--denhaag-anchor-navigation-link-width, var(--denhaag-space-3xs));
 }

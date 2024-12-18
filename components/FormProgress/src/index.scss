@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-block-end: var(--denhaag-form-progress-header-margin-block-end);
+  margin-block-end: var(--denhaag-form-progress-header-margin-block-end, var(--denhaag-space-lg));
 }
 
 /* Den Haag S */
@@ -24,26 +24,26 @@
 }
 
 .denhaag-form-progress__label {
-  font-family: var(--denhaag-form-progress-label-font-family);
-  font-size: var(--denhaag-form-progress-label-font-size);
-  font-weight: var(--denhaag-form-progress-label-font-weight);
-  color: var(--denhaag-form-progress-label-color);
-  line-height: var(--denhaag-form-progress-label-line-height);
+  font-family: var(--denhaag-form-progress-label-font-family, var(--denhaag-typography-sans-serif-font-family));
+  font-size: var(--denhaag-form-progress-label-font-size, var(--denhaag-typography-scale-base-font-size));
+  font-weight: var(--denhaag-form-progress-label-font-weight, var(--denhaag-typography-weight-regular));
+  color: var(--denhaag-form-progress-label-color, var(--denhaag-color-grey-4));
+  line-height: var(--denhaag-form-progress-label-line-height, var(--denhaag-typography-scale-base-line-height));
 }
 
 .denhaag-form-progress__progress {
   width: 100%;
-  height: var(--denhaag-form-progress-progress-height);
+  height: var(--denhaag-form-progress-progress-height, var(--denhaag-space-3xs));
   appearance: none;
   border: none;
-  background-color: var(--denhaag-form-progress-progress-background-color);
+  background-color: var(--denhaag-form-progress-progress-background-color, var(--denhaag-color-grey-2));
 
   &::-webkit-progress-bar {
-    background-color: var(--denhaag-form-progress-progress-background-color);
+    background-color: var(--denhaag-form-progress-progress-background-color, var(--denhaag-color-grey-2));
   }
 
   &::-webkit-progress-value,
   &::-moz-progress-bar {
-    background-color: var(--denhaag-form-progress-progress-bar-background-color);
+    background-color: var(--denhaag-form-progress-progress-bar-background-color, var(--denhaag-color-green-3));
   }
 }

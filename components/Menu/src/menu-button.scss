@@ -35,9 +35,9 @@
 }
 
 .denhaag-menu-button__chevron .denhaag-icon {
-  height: var(--denhaag-menu-button-chevron-size, 12px);
-  width: var(--denhaag-menu-button-chevron-size, 12px);
-  padding-inline-start: var(--denhaag-menu-button-chevron-padding-inline-start, 4px);
+  height: var(--denhaag-menu-button-chevron-size, var(--denhaag-space-sm));
+  width: var(--denhaag-menu-button-chevron-size, var(--denhaag-space-sm));
+  padding-inline-start: var(--denhaag-menu-button-chevron-padding-inline-start, var(--denhaag-space-2xs));
 }
 
 .denhaag-menu-button--active .denhaag-menu-button__chevron,
@@ -69,6 +69,7 @@
 
 .denhaag-menu-button--expandable::after {
   padding-inline-end: calc(
-    var(--denhaag-menu-button-chevron-size, 12px) + var(--denhaag-menu-button-chevron-padding-inline-start, 4px)
+    var(--denhaag-menu-button-chevron-size, var(--denhaag-space-sm)) +
+      var(--denhaag-menu-button-chevron-padding-inline-start, var(--denhaag-space-2xs))
   );
 }
