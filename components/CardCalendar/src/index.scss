@@ -39,7 +39,7 @@
 }
 
 .denhaag-calendar__card {
-  --denhaag-icon-size: 1.25rem;
+  --denhaag-icon-size: var(--denhaag-space-lg);
 
   display: flex;
   flex-direction: column;
@@ -181,7 +181,7 @@
 }
 
 .denhaag-calendar__card-footer-time {
-  --denhaag-icon-size: 1rem;
+  --denhaag-icon-size: var(--denhaag-space-md);
 
   align-items: var(--denhaag-calendar-card-footer-time-align-items);
   color: var(--denhaag-calendar-card-footer-time-color);

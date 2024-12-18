@@ -1,4 +1,4 @@
 .denhaag-timeline__step-content:not(:empty) {
-  margin-block-start: var(--denhaag-timeline-step-content-margin, 0.75rem);
+  margin-block-start: var(--denhaag-timeline-step-content-margin, var(--denhaag-space-sm));
   color: var(--denhaag-timeline-step-content-color, var(--denhaag-color-grey-4));
 }

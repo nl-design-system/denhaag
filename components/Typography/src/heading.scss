@@ -24,7 +24,7 @@
 
 .utrecht-heading-1:first-child {
   /* overwriting root :root .utrecht-heading-1:first-child */
-  --utrecht-heading-1-margin-block-start: var(--denhaag-space-xs, 0.5rem) !important;
+  --utrecht-heading-1-margin-block-start: var(--denhaag-space-xs) !important;
 }
 
 *:not(.denhaag-columns):not(.denhaag-button-group):not(.denhaag-featured-posts):not(.denhaag-page-buttons):not(.denhaag-image)

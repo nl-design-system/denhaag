@@ -3,7 +3,7 @@
 
   font-family: var(--denhaag-image-font-family, var(--denhaag-typography-sans-serif-font-family));
   margin-inline: var(--denhaag-image-margin-inline, 0);
-  margin-block-end: var(--denhaag-image-margin-block-end-mobile, 1.5rem);
+  margin-block-end: var(--denhaag-image-margin-block-end-mobile, var(--denhaag-space-xl));
 }
 
 .denhaag-image--figcaption-only {
@@ -21,10 +21,10 @@
   align-items: var(--denhaag-image-figcaption-align-items, start);
   display: grid;
   font-weight: var(--denhaag-image-figcaption-font-weight, var(--denhaag-typography-weight-regular));
-  gap: var(--denhaag-image-figcaption-gap, 1rem);
+  gap: var(--denhaag-image-figcaption-gap, var(--denhaag-space-md));
   grid-template-areas: var(--denhaag-image-figcaption-template-areas);
   justify-content: var(--denhaag-image-figcaption-justify-content, space-between);
-  padding-block-start: var(--denhaag-image-figcaption-padding-block, 1rem);
+  padding-block-start: var(--denhaag-image-figcaption-padding-block, var(--denhaag-space-md));
 }
 
 .denhaag-image__figcaption-text {
@@ -37,7 +37,7 @@
 .denhaag-image__figcaption-download {
   align-items: var(--denhaag-image-figcaption-download-align-items, flex-end);
   display: flex;
-  gap: var(--denhaag-image-figcaption-download-gap, 0.5rem);
+  gap: var(--denhaag-image-figcaption-download-gap, var(--denhaag-space-xs));
   grid-area: image-download;
   text-decoration: var(--denhaag-image-figcaption-download-text-decoration, none);
 }
@@ -76,6 +76,6 @@
   .denhaag-image {
     --denhaag-image-download-text-display-mobile: var(--denhaag-image-download-text-display-desktop, inline);
 
-    margin-block-end: var(--denhaag-image-margin-block-end-desktop, 2rem);
+    margin-block-end: var(--denhaag-image-margin-block-end-desktop, var(--denhaag-space-2xl));
   }
 }

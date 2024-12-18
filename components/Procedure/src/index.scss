@@ -41,7 +41,7 @@
   flex-grow: 0;
   font-family: var(--denhaag-step-marker-font-family, var(--denhaag-typography-sans-serif-font-family));
   font-size: var(--denhaag-step-marker-font-size, var(--denhaag-typography-scale-s-font-size));
-  font-weight: var(--denhaag-step-marker-font-weight, 400);
+  font-weight: var(--denhaag-step-marker-font-weight, var(--denhaag-typography-weight-regular));
   inline-size: var(--denhaag-step-marker-size, 32px);
   justify-content: center;
   margin-block: var(--denhaag-step-marker-margin, auto);

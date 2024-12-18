@@ -5,7 +5,7 @@
   padding-inline: var(--denhaag-list-item-padding-inline, 16px);
   font-family: var(--denhaag-typography-sans-serif-font-family);
   font-size: var(--denhaag-typography-scale-base-font-size);
-  font-weight: var(--denhaag-list-subheader-font-weight, 700);
+  font-weight: var(--denhaag-list-subheader-font-weight, var(--denhaag-typography-weight-bold));
   line-height: var(--denhaag-list-subheader-line-height, var(--denhaag-typography-scale-base-line-height));
   color: var(--denhaag-list-subheader-color, var(--denhaag-color-grey-4));
 }

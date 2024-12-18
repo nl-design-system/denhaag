@@ -1,5 +1,5 @@
 .denhaag-link {
-  --denhaag-icon-size: 1.25rem;
+  --denhaag-icon-size: var(--denhaag-space-lg);
 
   position: relative;
   color: var(--denhaag-link-color, var(--denhaag-color-blue-3));
@@ -11,8 +11,7 @@
 }
 
 .denhaag-link--with-small-icon {
-  --denhaag-link-icon-font-size: var(--denhaag-link-small-icon-font-size, var(--denhaag-space-xs));
-  --denhaag-link-icon-size: var(--denhaag-link-small-icon-size, 0.5rem);
+  --denhaag-link-icon-size: var(--denhaag-link-small-icon-size, var(--denhaag-space-xs));
 }
 
 .denhaag-link--with-icon-start {
@@ -66,9 +65,9 @@
       calc(
         (
             (
-                var(--denhaag-link-font-size, var(--denhaag-typography-scale-base-font-size, 1rem)) *
+                var(--denhaag-link-font-size, var(--denhaag-typography-scale-base-font-size, var(--denhaag-space-md))) *
                   var(--denhaag-link-line-height, var(--denhaag-typography-scale-base-line-height, 1))
-              ) - var(--denhaag-icon-size, 1.5rem)
+              ) - var(--denhaag-icon-size, var(--denhaag-space-xl))
           ) / 2
       )
     );

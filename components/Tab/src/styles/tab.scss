@@ -3,13 +3,13 @@
   padding-inline: var(--denhaag-tabs-tab-padding-inline, var(--denhaag-space-xs));
   color: var(--denhaag-tabs-tab-color, var(--denhaag-color-grey-4));
   font-size: var(--denhaag-tabs-tab-font-size, var(--denhaag-typography-scale-base-font-size));
-  font-weight: var(--denhaag-tabs-tab-font-weight, 400);
+  font-weight: var(--denhaag-tabs-tab-font-weight, var(--denhaag-typography-weight-regular));
   font-family: var(--denhaag-tabs-tab-font-family, var(--denhaag-typography-sans-serif-font-family));
   line-height: 1.5;
 }
 
 .denhaag-tabs__tab.denhaag-tabs__tab--selected {
-  font-weight: var(--denhaag-tabs-tab-selected-font-weight, 700);
+  font-weight: var(--denhaag-tabs-tab-selected-font-weight, var(--denhaag-typography-weight-bold));
 }
 
 .denhaag-tabs__tab--focus::after,
