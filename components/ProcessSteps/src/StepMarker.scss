@@ -3,27 +3,25 @@
   z-index: 1;
   align-items: center;
   background-color: var(--denhaag-process-steps-step-marker-background-color, var(--denhaag-color-grey-1));
-  block-size: var(--denhaag-process-steps-step-marker-size, 20px);
-  border-style: solid;
-  border-width: 2px;
-  border-color: var(--denhaag-process-steps-step-marker-border-color, transparent);
+  block-size: var(--denhaag-process-steps-step-marker-size, var(--denhaag-space-lg));
+  border: 2px solid var(--denhaag-process-steps-step-marker-border-color, transparent);
   border-radius: 50%;
   box-sizing: border-box;
   color: var(--denhaag-process-steps-step-marker-color, var(--denhaag-color-grey-4));
   display: flex;
   flex-grow: 0;
   font-size: var(--denhaag-process-steps-step-marker-font-size);
-  font-weight: 400;
-  inline-size: var(--denhaag-process-steps-step-marker-size, 20px);
+  font-weight: var(--denhaag-typography-weight-regular);
+  inline-size: var(--denhaag-process-steps-step-marker-size, var(--denhaag-space-lg));
   justify-content: center;
   margin-block: var(--denhaag-process-steps-step-marker-margin, auto);
   padding-inline-end: 0;
-  min-inline-size: 32px;
-  min-block-size: 32px;
+  min-inline-size: var(--denhaag-space-2xl);
+  min-block-size: var(--denhaag-space-2xl);
 
   .denhaag-icon {
-    block-size: 20px;
-    inline-size: 20px;
+    block-size: var(--denhaag-space-xl);
+    inline-size: var(--denhaag-space-xl);
   }
 }
 

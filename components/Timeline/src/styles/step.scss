@@ -1,5 +1,5 @@
 .denhaag-timeline__step {
-  padding-block: var(--denhaag-timeline-step-padding, 0.75rem);
+  padding-block: var(--denhaag-timeline-step-padding, var(--denhaag-space-sm));
 }
 
 .denhaag-timeline__step--focus,
@@ -10,6 +10,6 @@
 
 .denhaag-timeline__step-collapse-icon {
   padding-inline-start: var(--denhaag-timeline-step-collapse-icon-padding, var(--denhaag-space-inline-2xs));
-  height: var(--denhaag-timeline-step-collapse-icon-size, 1rem);
-  width: var(--denhaag-timeline-step-collapse-icon-size, 1rem);
+  height: var(--denhaag-timeline-step-collapse-icon-size, var(--denhaag-space-md));
+  width: var(--denhaag-timeline-step-collapse-icon-size, var(--denhaag-space-md));
 }

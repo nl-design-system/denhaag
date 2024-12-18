@@ -30,9 +30,9 @@
   z-index: 1;
   align-items: center;
   background-color: var(--denhaag-step-marker-background-color);
-  block-size: var(--denhaag-step-marker-size, 32px);
+  block-size: var(--denhaag-step-marker-size, var(--denhaag-space-2xl));
   border-style: solid;
-  border-width: var(--denhaag-step-marker-border-width, 2px);
+  border-width: var(--denhaag-step-marker-border-width, var(--denhaag-space-3xs));
   border-color: var(--denhaag-step-marker-border-color, transparent);
   border-radius: var(--denhaag-step-marker-border-radius, 50%);
   box-sizing: border-box;
@@ -41,13 +41,13 @@
   flex-grow: 0;
   font-family: var(--denhaag-step-marker-font-family, var(--denhaag-typography-sans-serif-font-family));
   font-size: var(--denhaag-step-marker-font-size, var(--denhaag-typography-scale-s-font-size));
-  font-weight: var(--denhaag-step-marker-font-weight, 400);
-  inline-size: var(--denhaag-step-marker-size, 32px);
+  font-weight: var(--denhaag-step-marker-font-weight, var(--denhaag-typography-weight-regular));
+  inline-size: var(--denhaag-step-marker-size, var(--denhaag-space-2xl));
   justify-content: center;
   margin-block: var(--denhaag-step-marker-margin, auto);
   padding-inline-end: 0;
-  min-inline-size: var(--denhaag-step-marker-min-size, var(--denhaag-step-marker-size, 32px));
-  min-block-size: var(--denhaag-step-marker-min-size, var(--denhaag-step-marker-size, 32px));
+  min-inline-size: var(--denhaag-step-marker-min-size, var(--denhaag-step-marker-size, var(--denhaag-space-2xl)));
+  min-block-size: var(--denhaag-step-marker-min-size, var(--denhaag-step-marker-size, var(--denhaag-space-2xl)));
 }
 
 .denhaag-procedure .denhaag-step-marker--current {
@@ -58,7 +58,7 @@
 
 .denhaag-procedure .denhaag-step-marker__connector {
   position: absolute;
-  left: calc(var(--denhaag-step-marker-size, 32px) / 2);
+  left: calc(var(--denhaag-step-marker-size, var(--denhaag-space-2xl)) / 2);
   top: 0;
   height: 100%;
   outline: var(--denhaag-step-marker-connector-width, 1px) var(--denhaag-step-marker-connector-style, dashed)
@@ -67,7 +67,9 @@
 
 .denhaag-procedure .denhaag-step-marker__connector--main-to-nested {
   top: calc(-1 * var(--denhaag-step-marker-size) / 2);
-  padding-block-end: calc(var(--denhaag-process-steps-step-distance) + var(--denhaag-step-marker-nested-size, 16px));
+  padding-block-end: calc(
+    var(--denhaag-process-steps-step-distance) + var(--denhaag-step-marker-nested-size, var(--denhaag-space-md))
+  );
 }
 
 .denhaag-procedure .denhaag-step-marker__connector--checked,
@@ -109,7 +111,7 @@
 
 @media (max-width: 767px) {
   .denhaag-procedure .denhaag-process-steps__step + .denhaag-process-steps__step::after {
-    left: calc(var(--denhaag-step-marker-size, 32px) / 2);
+    left: calc(var(--denhaag-step-marker-size, var(--denhaag-space-2xl)) / 2);
   }
 }
 

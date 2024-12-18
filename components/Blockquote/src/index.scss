@@ -1,6 +1,6 @@
 .denhaag-blockquote {
-  border-inline-start: var(--denhaag-blockquote-border-width, 4px) var(--denhaag-blockquote-border-style, solid)
-    var(--denhaag-blockquote-border-color, var(--denhaag-color-green-1));
+  border-inline-start: var(--denhaag-blockquote-border-width, var(--denhaag-space-2xs))
+    var(--denhaag-blockquote-border-style, solid) var(--denhaag-blockquote-border-color, var(--denhaag-color-green-1));
   padding-block: var(--denhaag-blockquote-padding-block, var(--denhaag-space-md));
   padding-inline: var(--denhaag-blockquote-padding-inline, var(--denhaag-space-md));
   margin-inline: 0;

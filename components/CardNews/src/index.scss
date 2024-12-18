@@ -27,7 +27,7 @@
   --denhaag-card-news-icon-opacity: 100%;
 
   box-shadow: var(--denhaag-box-shadow-default);
-  transform: var(--denhaag-card-news-translate, translateY(-0.125rem));
+  transform: var(--denhaag-card-news-translate, translateY(calc(0px - var(--denhaag-space-3xs))));
 }
 
 .denhaag-card-news:focus-visible,
@@ -55,7 +55,7 @@
 
 .denhaag-card-news--hover .denhaag-card-news__image,
 .denhaag-card-news:hover .denhaag-card-news__image {
-  transform: var(--denhaag-card-news-translate, translateY(-0.125rem)) scale(1.02);
+  transform: var(--denhaag-card-news-translate, translateY(calc(0px - var(--denhaag-space-3xs)))) scale(1.02);
 }
 
 .denhaag-card-news .denhaag-icon {
@@ -63,7 +63,7 @@
 
   transition: transform var(--denhaag-card-news-transition-timing-function, ease-in-out)
     var(--denhaag-card-news-transition-duration, 200ms);
-  transform: var(--denhaag-card-news-icon-translate, translateY(-0.125rem));
+  transform: var(--denhaag-card-news-icon-translate, translateY(calc(0px - var(--denhaag-space-3xs))));
 }
 
 .denhaag-card-news--hover .denhaag-icon,

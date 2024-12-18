@@ -1,6 +1,6 @@
 .denhaag-list__wrapper {
-  margin-block: var(--denhaag-list-wrapper-margin-block, 8px);
-  padding-block: var(--denhaag-list-wrapper-padding-block, 8px);
+  margin-block: var(--denhaag-list-wrapper-margin-block, var(--denhaag-space-xs));
+  padding-block: var(--denhaag-list-wrapper-padding-block, var(--denhaag-space-xs));
 }
 
 .denhaag-list__wrapper.denhaag-list__wrapper--with-subheader {

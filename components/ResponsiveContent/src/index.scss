@@ -1,13 +1,12 @@
 .denhaag-responsive-content {
-  --denhaag-responsive-content-padding: var(--denhaag-responsive-content-2xs-padding, 0.75rem);
+  --denhaag-responsive-content-padding: var(--denhaag-responsive-content-2xs-padding, var(--denhaag-space-sm));
 
   @media (min-width: 360px) {
-    --denhaag-responsive-content-padding: var(--denhaag-responsive-content-xs-padding, 1.5rem);
+    --denhaag-responsive-content-padding: var(--denhaag-responsive-content-xs-padding, var(--denhaag-space-xl));
   }
 
   @media (max-width: 767px) {
-    padding-inline-start: var(--denhaag-responsive-content-padding, 0.75rem);
-    padding-inline-end: var(--denhaag-responsive-content-padding, 0.75rem);
+    padding-inline: var(--denhaag-responsive-content-padding, var(--denhaag-space-sm));
     width: 100%;
     box-sizing: border-box;
   }
@@ -15,10 +14,8 @@
   @media (min-width: 768px) {
     --denhaag-responsive-content-max-width: var(--denhaag-responsive-content-sm-max-width, 40.5rem);
 
-    margin-inline-end: auto;
-    margin-inline-start: auto;
-    max-width: 100%;
-    width: var(--denhaag-responsive-content-max-width, 40.5rem);
+    margin-inline: auto;
+    width: min(var(--denhaag-responsive-content-max-width, 40.5rem), 100%);
   }
 
   @media (min-width: 1024px) {

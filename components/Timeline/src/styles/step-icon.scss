@@ -1,8 +1,8 @@
 .denhaag-timeline__step-icon {
   color: var(--denhaag-timeline-step-icon-color, var(--denhaag-color-grey-3));
-  height: var(--denhaag-timeline-step-icon-size, 1.25rem);
-  width: var(--denhaag-timeline-step-icon-size, 1.25rem);
-  padding-inline-end: var(--denhaag-timeline-step-icon-padding, 0.75rem);
+  height: var(--denhaag-timeline-step-icon-size, var(--denhaag-space-lg));
+  width: var(--denhaag-timeline-step-icon-size, var(--denhaag-space-lg));
+  padding-inline-end: var(--denhaag-timeline-step-icon-padding, var(--denhaag-space-sm));
   margin-block: var(--denhaag-timeline-step-icon-margin, auto);
 }
 

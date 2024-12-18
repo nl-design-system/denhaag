@@ -1,7 +1,9 @@
 {
   "denhaag": {
     "button": {
-      "border-width": { "value": "1px" }
+      "border-width": {
+        "value": "1px"
+      }
     }
   }
 }

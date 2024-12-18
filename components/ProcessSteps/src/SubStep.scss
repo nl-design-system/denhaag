@@ -12,9 +12,10 @@
   content: "";
   position: absolute;
   top: calc(
-    -1 * (var(--denhaag-process-steps-sub-step-distance) + var(--denhaag-process-steps-sub-step-marker-size, 16px) / 2)
+    -1 * (var(--denhaag-process-steps-sub-step-distance) +
+          var(--denhaag-process-steps-sub-step-marker-size, var(--denhaag-space-md)) / 2)
   );
-  left: calc(max(var(--denhaag-process-steps-step-marker-size, 20px), 32px) / 2);
+  left: calc(max(var(--denhaag-process-steps-step-marker-size, var(--denhaag-space-lg)), var(--denhaag-space-2xl)) / 2);
   height: calc(var(--denhaag-process-steps-sub-step-distance) + 15px);
   outline: 1px solid var(--denhaag-process-steps-sub-step-line-color, var(--denhaag-color-green-3));
 }
