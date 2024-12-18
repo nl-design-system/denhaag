@@ -13,37 +13,40 @@
 }
 
 .denhaag-table__container-shadow-group {
-  width: var(--denhaag-table-container-shadow-group-width, inherit);
-  position: var(--denhaag-table-container-shadow-group-position, absolute);
-  bottom: var(--denhaag-table-container-shadow-group-bottom, 0);
-  display: var(--denhaag-table-container-shadow-group-display, contents);
+  width: inherit;
+  position: absolute;
+  bottom: 0;
+  display: contents;
 }
 
 .denhaag-table__container-shadow {
-  width: var(--denhaag-table-container-shadow-width, 4rem);
-  height: var(--denhaag-table-container-shadow-height, inherit);
-  position: var(--denhaag-table-container-shadow-position, absolute);
-  background: var(--denhaag-table-container-shadow-background, transparent);
-  bottom: var(--denhaag-table-container-shadow-bottom, 0);
+  width: var(--denhaag-table-container-shadow-width, var(--denhaag-space-5xl));
+  height: inherit;
+  position: absolute;
+  background: var(
+    --denhaag-table-container-shadow-background,
+    linear-gradient(270deg, rgb(0 0 0 / 10%) 0%, rgb(255 255 255 / 0%) 76.92%)
+  );
+  bottom: 0;
 }
 
 .denhaag-table__container-shadow--left {
-  left: var(--denhaag-table-container-shadow-left-left, 0);
-  transform: var(--denhaag-table-container-shadow-left-transform);
+  left: 0;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .denhaag-table__container-shadow--right {
-  right: var(--denhaag-table-container-shadow-right-right, 0);
+  right: 0;
 }
 
 .denhaag-table {
   border-spacing: var(--denhaag-table-border-spacing, 0);
   width: var(--denhaag-table-width, 100%);
-  max-width: var(--denhaag-table-max-width, 100%);
+  max-width: 100%;
 }
 
 .denhaag-table__scroll-buttons {
-  flex-direction: var(--denhaag-table-scroll-buttons-flex-direction, initial);
+  flex-direction: initial;
   justify-content: var(--denhaag-table-scroll-buttons-justify-content, flex-end);
 }
 
@@ -64,7 +67,7 @@
 }
 
 .denhaag-table-wrapper {
-  position: var(--denhaag-table-wrapper-position, relative);
+  position: relative;
 }
 
 .denhaag-table-wrapper .denhaag-table__caption {
@@ -72,25 +75,25 @@
 }
 
 .denhaag-table__cell {
-  color: var(--denhaag-table-cell-color);
-  font-weight: var(--denhaag-table-cell-font-weight, normal);
+  color: var(--denhaag-table-cell-color, var(--denhaag-color-grey-4));
+  font-weight: var(--denhaag-table-cell-font-weight, var(--denhaag-typography-weight-regular));
   line-height: var(--utrecht-table-cell-line-height, inherit);
   min-width: var(--denhaag-table-cell-min-width, 7.5rem);
 }
 
 .denhaag-table__cell,
 .denhaag-table__heading {
-  background-color: var(--denhaag-table-row-background-color, inherit);
-  padding-block-end: var(--utrecht-table-cell-padding-block-end, 0);
-  padding-block-start: var(--utrecht-table-cell-padding-block-start, 0);
-  padding-inline-end: var(--utrecht-table-cell-padding-inline-end, 0);
-  padding-inline-start: var(--utrecht-table-cell-padding-inline-start, 0);
+  background-color: var(--denhaag-table-row-background-color, var(--denhaag-color-white));
+  padding-block-end: var(--utrecht-table-cell-padding-block-end, var(--denhaag-space-2xs));
+  padding-block-start: var(--utrecht-table-cell-padding-block-start, var(--denhaag-space-2xs));
+  padding-inline-end: var(--utrecht-table-cell-padding-inline-end, var(--denhaag-space-xs));
+  padding-inline-start: var(--utrecht-table-cell-padding-inline-start, var(--denhaag-space-xs));
   text-align: start;
   border-block-end: var(--utrecht-table-border-width) solid var(--utrecht-table-border-color);
 }
 
 .denhaag-table__heading {
-  color: var(--denhaag-table-heading-color);
+  color: var(--denhaag-table-heading-color, var(--denhaag-color-grey-5));
   font-weight: var(--utrecht-table-heading-font-weight, bold);
   min-width: var(--denhaag-table-heading-min-width, 7.5rem);
 }
@@ -104,6 +107,7 @@
 
 .denhaag-table__row--focus,
 .denhaag-table__row:focus {
-  outline: var(--denhaag-table-cell-outline-color) var(--denhaag-table-cell-outline-style)
-    var(--denhaag-table-cell-outline-width);
+  outline: var(--denhaag-table-cell-outline-color, var(--denhaag-focus-border-color))
+    var(--denhaag-table-cell-outline-style, var(--denhaag-focus-border-style))
+    var(--denhaag-table-cell-outline-width, var(--denhaag-focus-border-width));
 }
