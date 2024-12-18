@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import React, { OlHTMLAttributes } from 'react';
 
-export interface ContactTimelineListProps extends OlHTMLAttributes<HTMLOListElement> {}
+export type ContactTimelineListProps = OlHTMLAttributes<HTMLOListElement>;
 
 export const ContactTimelineList: React.FC<ContactTimelineListProps> = ({
   className,
