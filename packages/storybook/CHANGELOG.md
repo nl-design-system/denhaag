@@ -1,5 +1,12 @@
 # @gemeente-denhaag/storybook
 
+## 0.1.6
+
+### Patch Changes
+
+- Updated dependencies [f4de3d9]
+  - @gemeente-denhaag/header@0.1.4
+
 ## 0.1.5
 
 ### Patch Changes
