@@ -1,6 +1,4 @@
 .denhaag-tabs__tab-panel {
-  padding-block-start: var(--denhaag-tabs-tab-panel-padding-block-start);
-  padding-inline-start: var(--denhaag-tabs-tab-panel-padding-inline-start);
-  padding-block-end: var(--denhaag-tabs-tab-panel-padding-block-end);
-  padding-inline-end: var(--denhaag-tabs-tab-panel-padding-inline-end);
+  padding-block: var(--denhaag-tabs-tab-panel-padding-block, 0);
+  padding-inline: var(--denhaag-tabs-tab-panel-padding-inline, 0);
 }

@@ -1,26 +1,21 @@
 .denhaag-tabs__tab {
-  padding-block-start: var(--denhaag-tabs-tab-padding-block-start);
-  padding-inline-start: var(--denhaag-tabs-tab-padding-inline-start);
-  padding-block-end: var(--denhaag-tabs-tab-padding-block-end);
-  padding-inline-end: var(--denhaag-tabs-tab-padding-inline-end);
-  color: var(--denhaag-tabs-tab-color);
-  font-size: var(--denhaag-tabs-tab-font-size);
-  font-weight: var(--denhaag-tabs-tab-font-weight);
-  font-family: var(--denhaag-tabs-tab-font-family);
+  padding-block: var(--denhaag-tabs-tab-padding-block, var(--denhaag-space-xs));
+  padding-inline: var(--denhaag-tabs-tab-padding-inline, var(--denhaag-space-xs));
+  color: var(--denhaag-tabs-tab-color, var(--denhaag-color-grey-4));
+  font-size: var(--denhaag-tabs-tab-font-size, var(--denhaag-typography-scale-base-font-size));
+  font-weight: var(--denhaag-tabs-tab-font-weight, 400);
+  font-family: var(--denhaag-tabs-tab-font-family, var(--denhaag-typography-sans-serif-font-family));
   line-height: 1.5;
 }
 
 .denhaag-tabs__tab.denhaag-tabs__tab--selected {
-  font-weight: var(--denhaag-tabs-tab-selected-font-weight);
+  font-weight: var(--denhaag-tabs-tab-selected-font-weight, 700);
 }
 
 .denhaag-tabs__tab--focus::after,
 .denhaag-tabs__tab:focus::after {
   content: "";
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  inset: 0;
   border: var(--denhaag-focus-border);
 }

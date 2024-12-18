@@ -1,8 +1,9 @@
 .denhaag-tabs__container {
-  border-bottom: var(--denhaag-tabs-border-width) var(--denhaag-tabs-border-style) var(--denhaag-tabs-border-color);
+  border-bottom: var(--denhaag-tabs-border-width, 2px) var(--denhaag-tabs-border-style, solid)
+    var(--denhaag-tabs-border-color, var(--denhaag-color-grey-2));
 }
 
 .denhaag-tabs__tab-indicator {
-  background-color: var(--denhaag-tabs-tab-indicator-border-color);
-  height: var(--denhaag-tabs-tab-indicator-border-width);
+  background-color: var(--denhaag-tabs-tab-indicator-border-color, var(--denhaag-color-blue-3));
+  height: var(--denhaag-tabs-tab-indicator-border-width, 2px);
 }
