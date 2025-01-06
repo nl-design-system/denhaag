@@ -34,7 +34,7 @@ jobs:
           pnpm ls --recursive
 
       - name: Changeset available
-        uses: changesets/action@v1
+        uses: changesets/action@aba318e9165b45b7948c60273e0b72fce0a64eb9 # v1.4.7
         env:
           GITHUB_TOKEN: ${{ secrets.GH_ADMIN_TOKEN }}
 
