@@ -1,5 +1,11 @@
 # @gemeente-denhaag/header
 
+## 0.1.4
+
+### Patch Changes
+
+- f4de3d9: Change Header props to accept ReactNode
+
 ## 0.1.3
 
 ### Patch Changes

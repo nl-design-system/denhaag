@@ -46,8 +46,8 @@ interface HeaderMobileMenuProps extends MobileMenuProps {
 }
 
 interface MenuProps {
-  label: string;
-  authorisedLoginLabel?: string;
+  label: React.ReactNode;
+  authorisedLoginLabel?: React.ReactNode;
   navigationGroups: Array<NavigationGroupProps>;
   CustomLink?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
 }
