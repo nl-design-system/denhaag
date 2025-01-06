@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import React, { TimeHTMLAttributes } from 'react';
 
-type ContactTimelineMetaTimeItemProps = TimeHTMLAttributes<HTMLTimeElement>;
+interface ContactTimelineMetaTimeItemProps extends TimeHTMLAttributes<HTMLTimeElement> {}
 
 export const ContactTimelineMetaTimeItem: React.FC<ContactTimelineMetaTimeItemProps> = ({
   children,

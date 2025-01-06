@@ -2,7 +2,7 @@ import React, { HTMLAttributes, forwardRef } from 'react';
 import './styles/_tabs.scss';
 import clsx from 'clsx';
 
-export type TabListProps = HTMLAttributes<HTMLDivElement>;
+export interface TabListProps extends HTMLAttributes<HTMLDivElement> {}
 
 /**
  * TabList make it easy to explore and switch between different views.

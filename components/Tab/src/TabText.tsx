@@ -1,9 +1,9 @@
 import clsx from 'clsx';
 import React, { HTMLAttributes } from 'react';
 
-type TabTextProps = HTMLAttributes<HTMLSpanElement>;
+interface TabTextProps extends HTMLAttributes<HTMLSpanElement> {}
 
-export const TabText = ({ children, ...props }: TabTextProps) => {
+export const TabText: React.FC<TabTextProps> = ({ children, ...props }) => {
   return (
     <span {...props} className={clsx('denhaag-tabs__tab-text')}>
       {children}

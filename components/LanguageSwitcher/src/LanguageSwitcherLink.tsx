@@ -1,7 +1,7 @@
 import React, { AnchorHTMLAttributes } from 'react';
 import './index.scss';
 
-export type Link = (props: AnchorHTMLAttributes<HTMLAnchorElement>) => React.ReactNode;
+export type Link = (props: AnchorHTMLAttributes<HTMLAnchorElement>) => JSX.Element;
 
 export interface LanguageSwitcherLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   Link?: Link;
