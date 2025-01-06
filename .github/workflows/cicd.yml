@@ -33,11 +33,6 @@ jobs:
           pnpm install --frozen-lockfile
           pnpm ls --recursive
 
-      - name: Changeset available
-        uses: changesets/action@aba318e9165b45b7948c60273e0b72fce0a64eb9 # v1.4.7
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_ADMIN_TOKEN }}
-
       - name: run linters
         run: |
           pnpm run lint:css
