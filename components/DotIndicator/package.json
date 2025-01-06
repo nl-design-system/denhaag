@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/dotindicator",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "A Dot Indicator component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
