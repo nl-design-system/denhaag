@@ -1,5 +1,53 @@
 # @gemeente-denhaag/components-react
 
+## 1.0.0
+
+### Major Changes
+
+- ceb7b03: Upgrade packages. Including React 19
+
+### Patch Changes
+
+- Updated dependencies [ceb7b03]
+  - @gemeente-denhaag/form-field-error-message@1.0.0
+  - @gemeente-denhaag/form-field-description@1.0.0
+  - @gemeente-denhaag/contact-timeline@1.0.0
+  - @gemeente-denhaag/descriptionlist@2.0.0
+  - @gemeente-denhaag/stylesprovider@1.0.0
+  - @gemeente-denhaag/badge-counter@1.0.0
+  - @gemeente-denhaag/form-fieldset@1.0.0
+  - @gemeente-denhaag/form-progress@1.0.0
+  - @gemeente-denhaag/process-steps@1.0.0
+  - @gemeente-denhaag/radio-button@1.0.0
+  - @gemeente-denhaag/status-badge@1.0.0
+  - @gemeente-denhaag/iconbutton@1.0.0
+  - @gemeente-denhaag/link-button@1.0.0
+  - @gemeente-denhaag/pagination@1.0.0
+  - @gemeente-denhaag/typography@1.0.0
+  - @gemeente-denhaag/form-field@1.0.0
+  - @gemeente-denhaag/form-label@1.0.0
+  - @gemeente-denhaag/text-input@1.0.0
+  - @gemeente-denhaag/checkbox@1.0.0
+  - @gemeente-denhaag/textarea@1.0.0
+  - @gemeente-denhaag/divider@1.0.0
+  - @gemeente-denhaag/sidenav@1.0.0
+  - @gemeente-denhaag/action@1.0.0
+  - @gemeente-denhaag/button@1.0.0
+  - @gemeente-denhaag/footer@1.0.0
+  - @gemeente-denhaag/header@1.0.0
+  - @gemeente-denhaag/select@1.0.0
+  - @gemeente-denhaag/alert@1.0.0
+  - @gemeente-denhaag/icons@2.0.0
+  - @gemeente-denhaag/sheet@1.0.0
+  - @gemeente-denhaag/table@1.0.0
+  - @gemeente-denhaag/card@1.0.0
+  - @gemeente-denhaag/link@1.0.0
+  - @gemeente-denhaag/list@1.0.0
+  - @gemeente-denhaag/menu@1.0.0
+  - @gemeente-denhaag/tab@1.0.0
+  - @gemeente-denhaag/file@0.1.2
+  - @gemeente-denhaag/card-group@0.1.4
+
 ## 0.1.6
 
 ### Patch Changes
