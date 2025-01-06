@@ -1,0 +1,3 @@
+import{j as a}from"./jsx-runtime-BlAj40OV.js";import"./index-D7lB6d1r.js";import"./index-Cs7sjTYM.js";import"./_commonjsHelpers-BosuxZz1.js";const m={title:"CSS/Page Elements/Responsive Content wrapper"},e={render:()=>a.jsx("div",{className:"denhaag-responsive-content",children:"Content Area"})};var r,t,s;e.parameters={...e.parameters,docs:{...(r=e.parameters)==null?void 0:r.docs,source:{originalSource:`{
+  render: () => <div className="denhaag-responsive-content">Content Area</div>
+}`,...(s=(t=e.parameters)==null?void 0:t.docs)==null?void 0:s.source}}};const c=["Default"];export{e as Default,c as __namedExportsOrder,m as default};
