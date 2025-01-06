@@ -3,8 +3,8 @@ import { Textbox, TextboxProps } from '@utrecht/component-library-react';
 import './index.scss';
 
 interface TextInputProps extends TextboxProps {
-  iconStart?: React.ReactNode;
-  iconEnd?: React.ReactNode;
+  iconStart?: JSX.Element;
+  iconEnd?: JSX.Element;
 }
 
 const TextInput: React.ForwardRefExoticComponent<TextInputProps & React.RefAttributes<HTMLLabelElement>> = forwardRef(

@@ -79,7 +79,9 @@ import TwitterSvg from './svg/social/twitter.svg';
 import WhatsAppSvg from './svg/social/whatsapp.svg';
 import YouTubeSvg from './svg/social/youtube.svg';
 
-const buildIcon = (svg: React.ElementType, props: SvgIconProps) => <SvgIcon component={svg} {...props} />;
+const buildIcon: React.ElementType = (svg: React.ElementType, props: SvgIconProps) => (
+  <SvgIcon component={svg} {...props} />
+);
 type F = React.FunctionComponent<SvgIconProps>; // less typing
 
 // Arrows
