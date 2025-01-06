@@ -33,6 +33,9 @@ jobs:
           pnpm install --frozen-lockfile
           pnpm ls --recursive
 
+      - name: Changeset available
+        run: pnpm changeset:check
+
       - name: run linters
         run: |
           pnpm run lint:css
