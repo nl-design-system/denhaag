@@ -34,7 +34,9 @@ jobs:
           pnpm ls --recursive
 
       - name: Changeset available
-        run: pnpm changeset:check
+        uses: changesets/action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_ADMIN_TOKEN }}
 
       - name: run linters
         run: |
