@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import React, { HTMLAttributes } from 'react';
 
-type TabIndicatorProps = HTMLAttributes<HTMLDivElement>;
+interface TabIndicatorProps extends HTMLAttributes<HTMLDivElement> {}
 
 export const TabIndicator: React.FC<TabIndicatorProps> = ({ children, ...props }) => {
   return (

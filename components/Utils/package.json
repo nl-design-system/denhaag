@@ -30,7 +30,7 @@
     "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\""
   },
   "dependencies": {
-    "date-fns": "4.1.0"
+    "date-fns": "3.6.0"
   },
   "peerDependencies": {
     "react": "^18.0.0"

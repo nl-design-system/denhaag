@@ -30,7 +30,7 @@
     "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\""
   },
   "dependencies": {
-    "uuid": "11.0.3"
+    "uuid": "10.0.0"
   },
   "devDependencies": {
     "@types/uuid": "10.0.0"

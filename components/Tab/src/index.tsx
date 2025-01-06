@@ -20,7 +20,7 @@ export interface TabsProps extends HTMLAttributes<HTMLDivElement> {
   tabData: Array<{ label: string; panelContent: React.ReactNode }>;
 }
 
-type TabRef = RefObject<HTMLDivElement | null>;
+type TabRef = RefObject<HTMLDivElement>;
 
 type TabIndicatorPosition = { left?: number; width?: number };
 

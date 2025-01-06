@@ -1,7 +1,7 @@
 import React, { AnchorHTMLAttributes } from 'react';
 import clsx from 'clsx';
 
-export type Link = (props: AnchorHTMLAttributes<HTMLAnchorElement>) => React.ReactNode;
+export type Link = (props: AnchorHTMLAttributes<HTMLAnchorElement>) => JSX.Element;
 
 export interface MobileMenuLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   large?: boolean;

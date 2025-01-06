@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const HeaderLogo = () => {
+export const HeaderLogo: React.VoidFunctionComponent = () => {
   return (
     <svg
       className="denhaag-header__logo"

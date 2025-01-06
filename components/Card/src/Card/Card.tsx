@@ -2,7 +2,7 @@ import React, { HTMLAttributes } from 'react';
 import '../index.scss';
 import clsx from 'clsx';
 
-export type CardProps = HTMLAttributes<HTMLDivElement>;
+export interface CardProps extends HTMLAttributes<HTMLDivElement> {}
 
 export const Card = ({ className, ...props }: CardProps) => {
   const classNames = clsx('denhaag-card', className);
