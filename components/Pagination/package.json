@@ -3,7 +3,7 @@
   "description": "A Pagination navigation component",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
-  "version": "0.1.1-www-denhaag-nl.102",
+  "version": "0.1.1-www-denhaag-nl.103",
   "exports": {
     ".": {
       "types": "./dist/cjs/index.d.ts",
@@ -33,7 +33,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.102"
+    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.103"
   },
   "peerDependencies": {
     "react": "^17.0.0"
