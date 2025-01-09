@@ -33,9 +33,10 @@
 }
 
 .denhaag-unordered-list li::marker {
-  font-size: var(--denhaag-unordered-list-marker-font-size, 1rem);
+  font-size: var(--denhaag-unordered-list-marker-font-size, var(--denhaag-space-md));
 }
 
+
 .denhaag-unordered-list--lower-alpha {
-  list-style-type: var(--denhaag-unordered-list-lower-alpha-list-style-type, lower-alpha);
+  list-style-type: lower-alpha;
 }

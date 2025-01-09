@@ -1,10 +1,10 @@
 /* tokens copy-pasted from main branch process-steps.tokens.json to www.denhaag.nl branch procedure.tokens.json */
 .denhaag-procedure .denhaag-process-steps__step-meta {
   position: relative;
-  margin-inline-start: calc(var(--denhaag-step-marker-size, 32px) + 16px);
-  font-size: var(--denhaag-procedure-step-meta-font-size, 16px);
+  margin-inline-start: calc(var(--denhaag-step-marker-size, var(--denhaag-space-2xl)) + 16px);
+  font-size: var(--denhaag-procedure-step-meta-font-size, var(--denhaag-space-md));
 }
 
 .denhaag-procedure .denhaag-process-steps__step-meta--date {
-  font-size: var(--denhaag-procedure-step-meta-date-font-size, 20px);
+  font-size: var(--denhaag-procedure-step-meta-date-font-size, var(--denhaag-space-lg));
 }

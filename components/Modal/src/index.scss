@@ -123,8 +123,8 @@
   max-height: var(--denhaag-modal-max-height, 38.375rem);
   overflow-x: hidden;
   overflow-y: auto;
-  padding-block: var(--denhaag-modal-inner-padding-block, 1rem);
-  padding-inline: var(--denhaag-modal-inner-padding-inline, 1rem);
+  padding-block: var(--denhaag-modal-inner-padding-block, var(--denhaag-space-md));
+  padding-inline: var(--denhaag-modal-inner-padding-inline, var(--denhaag-space-md));
   z-index: 1;
 }
 
@@ -139,7 +139,7 @@
   color: var(--denhaag-modal-title-color, var(--denhaag-color-blue-3));
   font-family: var(--denhaag-modal-title-font-family, var(--denhaag-typography-sans-serif-alternate-font-family));
   font-style: var(--denhaag-modal-title-font-style, normal);
-  font-weight: var(--denhaag-modal-title-font-weight, 700);
+  font-weight: var(--denhaag-modal-title-font-weight, var(--denhaag-typography-weight-bold));
   font-size: var(--denhaag-modal-title-font-size, var(--denhaag-typography-scale-xl-font-size));
   line-height: var(--denhaag-modal-title-line-height, 1.3);
   margin-block-start: 0;

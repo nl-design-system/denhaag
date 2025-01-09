@@ -117,16 +117,18 @@
 .denhaag-datepicker__input.denhaag-datepicker__input--hover,
 .denhaag-datepicker__input:hover {
   border-color: var(--denhaag-datepicker-input-hover-border-color, var(--denhaag-color-blue-3));
-  border-width: var(--denhaag-datepicker-input-hover-border-width, 2px);
+  border-width: var(--denhaag-datepicker-input-hover-border-width, var(--denhaag-space-3xs));
   padding-inline-start: calc(
     var(--denhaag-datepicker-input-padding-inline, var(--denhaag-space-sm)) -
-      var(--denhaag-datepicker-input-hover-border-width, 2px) + var(--denhaag-datepicker-input-border-width, 1px)
+      var(--denhaag-datepicker-input-hover-border-width, var(--denhaag-space-3xs)) +
+      var(--denhaag-datepicker-input-border-width, 1px)
   );
   padding-inline-end: calc(
     var(--denhaag-datepicker-button-font-size, var(--denhaag-typography-scale-lg-font-size)) +
       var(--denhaag-datepicker-button-inset-inline-end, var(--denhaag-space-sm)) +
       var(--denhaag-datepicker-input-padding-inline, var(--denhaag-space-sm)) -
-      var(--denhaag-datepicker-input-hover-border-width, 2px) + var(--denhaag-datepicker-input-border-width, 1px)
+      var(--denhaag-datepicker-input-hover-border-width, var(--denhaag-space-3xs)) +
+      var(--denhaag-datepicker-input-border-width, 1px)
   );
 }
 
@@ -144,7 +146,8 @@
       var(--denhaag-datepicker-error-icon-inset-inline-end, var(--denhaag-space-xs)) +
       var(--denhaag-datepicker-error-icon-font-size, var(--denhaag-typography-scale-base-font-size)) +
       var(--denhaag-datepicker-input-padding-inline, var(--denhaag-space-sm)) -
-      var(--denhaag-datepicker-input-hover-border-width, 2px) + var(--denhaag-datepicker-input-border-width, 1px)
+      var(--denhaag-datepicker-input-hover-border-width, var(--denhaag-space-3xs)) +
+      var(--denhaag-datepicker-input-border-width, 1px)
   );
 }
 
@@ -233,8 +236,7 @@
 .denhaag-datepicker__calendar-navigation.denhaag-datepicker__calendar-navigation--focus,
 .denhaag-datepicker__calendar-navigation:focus-visible {
   color: var(--denhaag-icon-button-focus-color);
-  outline: var(--denhaag-icon-button-focus-outline-color) var(--denhaag-icon-button-focus-outline-style)
-    var(--denhaag-icon-button-focus-outline-width);
+  outline: var(--denhaag-focus-border);
   outline-offset: var(--denhaag-icon-button-focus-outline-offset);
 }
 

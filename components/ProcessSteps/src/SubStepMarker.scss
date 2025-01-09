@@ -8,15 +8,15 @@
   display: flex;
   flex-grow: 0;
   justify-content: center;
-  min-block-size: var(--denhaag-process-steps-sub-step-marker-size, 16px);
-  min-inline-size: var(--denhaag-process-steps-sub-step-marker-size, 16px);
+  min-block-size: var(--denhaag-process-steps-sub-step-marker-size, var(--denhaag-space-md));
+  min-inline-size: var(--denhaag-process-steps-sub-step-marker-size, var(--denhaag-space-md));
   border-width: 2px;
   border-style: solid;
   border-color: var(--denhaag-process-steps-sub-step-marker-border-color, var(--denhaag-color-grey-4));
   margin-inline-start: calc(
     (
-        max(var(--denhaag-process-steps-step-marker-size, 20px), 32px) -
-          var(--denhaag-process-steps-sub-step-marker-size, 16px)
+        max(var(--denhaag-process-steps-step-marker-size, var(--denhaag-space-lg)), var(--denhaag-space-2xl)) -
+          var(--denhaag-process-steps-sub-step-marker-size, var(--denhaag-space-md))
       ) / 2
   );
 }

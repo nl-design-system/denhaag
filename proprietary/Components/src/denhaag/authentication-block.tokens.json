@@ -1,14 +1,5 @@
 {
   "denhaag": {
-    "authentication": {
-      "logo-size": {
-        "value": "3.5rem"
-      },
-      "portrait": {
-        "logo-size": {
-          "value": "5rem"
-        }
-      }
-    }
+    "authentication": {}
   }
 }

@@ -1,16 +1,5 @@
 {
   "denhaag": {
-    "dynamic-content": {
-      "grid": {
-        "columns": {
-          "value": 1
-        }
-      },
-      "row": {
-        "gap": {
-          "value": "{denhaag.space.2xl}"
-        }
-      }
-    }
+    "dynamic-content": {}
   }
 }

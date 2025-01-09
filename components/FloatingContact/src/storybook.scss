@@ -1,9 +1,7 @@
 /* This file is meant only for storybook overwrites. NOT FOR EXPORT! */
 .denhaag-storybook-floating-contact-wrapper {
-  height: calc(100dvh + 2rem);
-  width: calc(100dvw + 2rem);
-  margin-block-start: -1rem;
-  margin-block-end: -1rem;
-  margin-inline-start: -1rem;
-  margin-inline-end: -1rem;
+  height: calc(100svh + var(--denhaag-space-2xl));
+  width: calc(100svw + var(--denhaag-space-2xl));
+  margin-block: calc(0px - var(--denhaag-space-md));
+  margin-inline: calc(0px - var(--denhaag-space-md));
 }

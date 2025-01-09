@@ -65,7 +65,7 @@
     var(--denhaag-color-green-3)
   );
 
-  outline: var(--denhaag-anchor-collapse-summary-focus-outline, var(--denhaag-focus-border));
+  outline: var(--denhaag-focus-border);
 }
 
 .denhaag-anchor-collapse__summary > svg {

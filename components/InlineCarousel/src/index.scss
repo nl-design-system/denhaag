@@ -62,7 +62,7 @@
 }
 
 .denhaag-inline-carousel__content {
-  margin-block: var(--denhaag-inline-carousel-content-margin-block, 16px);
+  margin-block: var(--denhaag-inline-carousel-content-margin-block, var(--denhaag-space-md));
   display: flex;
   justify-content: var(--denhaag-inline-carousel-content-justify-content, space-between);
   align-items: var(--denhaag-inline-carousel-content-caption-align-items, center);
@@ -99,7 +99,10 @@
 
   &:focus-visible,
   &--focus-visible {
-    margin-inline-end: var(--denhaag-inline-carousel-content-download-focus-margin-inline-end, 2px);
+    margin-inline-end: var(
+      --denhaag-inline-carousel-content-download-focus-margin-inline-end,
+      var(--denhaag-space-3xs)
+    );
     outline: var(--denhaag-focus-border);
   }
 
@@ -147,14 +150,14 @@
 }
 
 .denhaag-inline-carousel__next-slide {
-  right: var(--denhaag-inline-carousel-arrows-next-right-xs, 12px);
+  right: var(--denhaag-inline-carousel-arrows-next-right-xs, var(--denhaag-space-sm));
   @media (min-width: 768px) {
     right: var(--denhaag-inline-carousel-arrows-next-right-sm, 24px);
   }
 }
 
 .denhaag-inline-carousel__prev-slide {
-  left: var(--denhaag-inline-carousel-arrows-prev-left-xs, 12px);
+  left: var(--denhaag-inline-carousel-arrows-prev-left-xs, var(--denhaag-space-sm));
   @media (min-width: 768px) {
     left: var(--denhaag-inline-carousel-arrows-prev-left-sm, 24px);
   }
@@ -169,7 +172,7 @@
   height: calc(var(--denhaag-inline-carousel-pagination-bullet-height, 11px) + 4px);
   top: calc(
     var(--denhaag-inline-carousel-slide-image-height-xs, 175px) -
-      var(--denhaag-inline-carousel-pagination-bottom-xs, 16px) -
+      var(--denhaag-inline-carousel-pagination-bottom-xs, var(--denhaag-space-md)) -
       var(--denhaag-inline-carousel-pagination-bullet-height, 11px)
   ) !important;
 
@@ -188,8 +191,8 @@
     width: var(--denhaag-inline-carousel-pagination-bullet-width, 11px);
     height: var(--denhaag-inline-carousel-pagination-bullet-height, 11px);
     border-radius: var(--denhaag-inline-carousel-pagination-bullet-border-radius, 50%);
-    margin-inline-start: var(--denhaag-inline-carousel-pagination-bullet-margin-inline, 4px);
-    margin-inline-end: var(--denhaag-inline-carousel-pagination-bullet-margin-inline, 4px);
+    margin-inline-start: var(--denhaag-inline-carousel-pagination-bullet-margin-inline, var(--denhaag-space-2xs));
+    margin-inline-end: var(--denhaag-inline-carousel-pagination-bullet-margin-inline, var(--denhaag-space-2xs));
     border: var(--denhaag-inline-carousel-pagination-bullet-border, 1px solid);
     border-color: var(--denhaag-inline-carousel-pagination-bullet-border-color, var(--denhaag-color-green-3));
   }
@@ -201,10 +204,10 @@
       --denhaag-inline-carousel-pagination-bullet-active-background-color,
       var(--denhaag-color-green-3)
     );
-    border: var(--denhaag-inline-carousel-pagination-bullet-active-border, 2px solid);
+    border: var(--denhaag-inline-carousel-pagination-bullet-active-border, var(--denhaag-space-3xs) solid);
     border-color: var(--denhaag-inline-carousel-pagination-bullet-active-border-color, var(--denhaag-color-white));
-    width: var(--denhaag-inline-carousel-pagination-bullet-active-width, 12px);
-    height: var(--denhaag-inline-carousel-pagination-bullet-active-height, 12px);
+    width: var(--denhaag-inline-carousel-pagination-bullet-active-width, var(--denhaag-space-sm));
+    height: var(--denhaag-inline-carousel-pagination-bullet-active-height, var(--denhaag-space-sm));
     margin-inline: var(--denhaag-inline-carousel-pagination-bullet-active-margin-inline, 3px);
   }
 
@@ -231,7 +234,7 @@
           --denhaag-inline-carousel-pagination-bullet-active-background-color,
           var(--denhaag-color-green-3)
         );
-        border: var(--denhaag-inline-carousel-pagination-bullet-active-border, 2px solid);
+        border: var(--denhaag-inline-carousel-pagination-bullet-active-border, var(--denhaag-space-3xs) solid);
         border-color: var(--denhaag-inline-carousel-pagination-bullet-active-border-color, var(--denhaag-color-white));
       }
     }
@@ -239,23 +242,36 @@
     .denhaag-inline-carousel__pagination-bullet-active-prev,
     .denhaag-inline-carousel__pagination-bullet-active-next {
       opacity: var(--denhaag-inline-carousel-pagination-bullet-active-opacity, 1);
-      width: var(--denhaag-inline-carousel-pagination-bullet-active-next-prev-width, 8px);
-      min-width: var(--denhaag-inline-carousel-pagination-bullet-active-next-prev-width, 8px);
-      height: var(--denhaag-inline-carousel-pagination-bullet-active-next-prev-height, 8px);
+      width: var(--denhaag-inline-carousel-pagination-bullet-active-next-prev-width, var(--denhaag-space-xs));
+      min-width: var(--denhaag-inline-carousel-pagination-bullet-active-next-prev-width, var(--denhaag-space-xs));
+      height: var(--denhaag-inline-carousel-pagination-bullet-active-next-prev-height, var(--denhaag-space-xs));
       border: var(--denhaag-inline-carousel-pagination-bullet-border, 1px solid);
       border-color: var(--denhaag-inline-carousel-pagination-bullet-border-color, var(--denhaag-color-green-3));
-      margin-inline: calc(var(--denhaag-inline-carousel-pagination-bullet-margin-inline, 4px) + 2px);
+      margin-inline: calc(
+        var(--denhaag-inline-carousel-pagination-bullet-margin-inline, var(--denhaag-space-2xs)) + 2px
+      );
     }
 
     .denhaag-inline-carousel__pagination-bullet-active-prev-prev,
     .denhaag-inline-carousel__pagination-bullet-active-next-next {
       opacity: var(--denhaag-inline-carousel-pagination-bullet-active-opacity, 1);
-      width: var(--denhaag-inline-carousel-pagination-bullet-active-next-next-prev-prev-width, 4px);
-      min-width: var(--denhaag-inline-carousel-pagination-bullet-active-next-next-prev-prev-width, 4px);
-      height: var(--denhaag-inline-carousel-pagination-bullet-active-next-next-prev-prev-height, 4px);
+      width: var(
+        --denhaag-inline-carousel-pagination-bullet-active-next-next-prev-prev-width,
+        var(--denhaag-space-2xs)
+      );
+      min-width: var(
+        --denhaag-inline-carousel-pagination-bullet-active-next-next-prev-prev-width,
+        var(--denhaag-space-2xs)
+      );
+      height: var(
+        --denhaag-inline-carousel-pagination-bullet-active-next-next-prev-prev-height,
+        var(--denhaag-space-2xs)
+      );
       border: var(--denhaag-inline-carousel-pagination-bullet-border, 1px solid);
       border-color: var(--denhaag-inline-carousel-pagination-bullet-border-color, var(--denhaag-color-green-3));
-      margin-inline: calc(var(--denhaag-inline-carousel-pagination-bullet-margin-inline, 4px) + 2px);
+      margin-inline: calc(
+        var(--denhaag-inline-carousel-pagination-bullet-margin-inline, var(--denhaag-space-2xs)) + 2px
+      );
     }
   }
 }

@@ -3,7 +3,7 @@
 .denhaag-form-control-label {
   display: flex;
   align-items: flex-start;
-  margin-block-end: var(--denhaag-form-control-label-margin-block-end);
+  margin-block-end: var(--denhaag-form-control-label-margin-block-end, var(--denhaag-space-xs));
   cursor: pointer;
 }
 
@@ -11,7 +11,7 @@
   display: inline-flex;
   align-items: center;
   height: calc(var(--denhaag-typography-scale-base-line-height) * var(--utrecht-form-label-font-size));
-  margin-inline-end: var(--denhaag-form-control-label-input-margin-inline-end);
+  margin-inline-end: var(--denhaag-form-control-label-input-margin-inline-end, var(--denhaag-space-xs));
 }
 
 .denhaag-form-control-label__label {

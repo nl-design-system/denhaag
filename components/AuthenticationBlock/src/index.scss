@@ -1,14 +1,14 @@
 .denhaag-authentication {
   // Calculation between Block CSS variables.
   --denhaag-authentication-logo-with-gap: calc(
-    var(--denhaag-authentication-gap-small, var(--denhaag-space-md)) + var(--denhaag-authentication-logo-size)
+    var(--denhaag-authentication-gap-small, var(--denhaag-space-md)) + var(--denhaag-authentication-logo-size, 3.5rem)
   );
 
   // Overrule CSS variables of used innerblocks.
   --denhaag-button-group-padding: 0;
   --denhaag-image-image-aspect-ratio: #{1} / #{1};
   --denhaag-image-image-height: auto;
-  --denhaag-image-image-width: var(--denhaag-authentication-logo-size);
+  --denhaag-image-image-width: var(--denhaag-authentication-logo-size, 3.5rem);
   --denhaag-image-margin-inline: 0;
 
   display: grid;
@@ -40,7 +40,7 @@
 
   .denhaag-image {
     margin-block: 0 var(--denhaag-authentication-image-spacing-end);
-    max-width: var(--denhaag-authentication-logo-size);
+    max-width: var(--denhaag-authentication-logo-size, 3.5rem);
   }
 
   // Remove unnecessary of existing blocks.
@@ -67,7 +67,7 @@
 
     @media (min-width: 375px) {
       .denhaag-image + * {
-        margin-block-start: calc(-1 * var(--denhaag-authentication-logo-size));
+        margin-block-start: calc(-1 * var(--denhaag-authentication-logo-size, 3.5rem));
       }
     }
   }
@@ -83,7 +83,7 @@
     --denhaag-button-group-flex-direction: unset;
 
     @media (min-width: 375px) {
-      --denhaag-authentication-logo-size: var(--denhaag-authentication-portrait-logo-size);
+      --denhaag-authentication-logo-size: var(--denhaag-authentication-portrait-logo-size, 5rem);
 
       align-items: center;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -100,7 +100,7 @@
         align-self: flex-end;
 
         & + * {
-          margin-block-start: calc(-1 * var(--denhaag-authentication-logo-size));
+          margin-block-start: calc(-1 * var(--denhaag-authentication-logo-size, 3.5rem));
         }
       }
     }
@@ -167,7 +167,7 @@
     }
 
     &:focus-visible {
-      outline: var(--denhaag-authentication-item-focus-outline, var(--denhaag-link-focus-outline));
+      outline: var(--denhaag-focus-border);
     }
 
     // CSS support may there be more than one item is added.

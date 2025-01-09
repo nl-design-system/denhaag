@@ -54,7 +54,7 @@
   --denhaag-hero-background-color: var(--denhaag-button-primary-action-hover-background-color);
   --denhaag-hero-content-column-start: var(--denhaag-hero-theme-page-content-column-start, 1);
   --denhaag-hero-content-column-end: var(--denhaag-hero-theme-page-content-column-end, 12);
-  --denhaag-hero-content-padding-block: var(--denhaag-hero-theme-page-content-padding-block, 4rem);
+  --denhaag-hero-content-padding-block: var(--denhaag-hero-theme-page-content-padding-block, var(--denhaag-space-5xl));
   --denhaag-hero-content-padding-inline: var(
     --denhaag-hero-theme-page-content-padding-inline,
     var(--denhaag-space-2xl)
@@ -99,7 +99,7 @@
     background-color: var(--denhaag-hero-theme-page-content-background-color, var(--denhaag-color-white));
     box-shadow: var(--denhaag-hero-theme-page-content-box-shadow, 0 1px 0 var(--denhaag-color-grey-2));
     height: calc(100% - (2 * var(--denhaag-hero-theme-page-content-after-height)));
-    transform: translateY(var(--denhaag-hero-theme-page-content-transform, 2rem));
+    transform: translateY(var(--denhaag-hero-theme-page-content-transform, var(--denhaag-space-2xl)));
   }
 
   /* stylelint-disable-next-line no-descending-specificity */
@@ -175,7 +175,7 @@
 }
 
 .denhaag-hero--theme-image .denhaag-hero__container {
-  --denhaag-hero-theme-image-container-padding-inline: 1.5rem;
+  --denhaag-hero-theme-image-container-padding-inline: var(--denhaag-space-xl);
 
   align-items: var(--denhaag-hero-theme-image-container-align-items, center);
   display: flex;
@@ -218,8 +218,8 @@
 }
 
 .denhaag-hero--theme-image .denhaag-link {
-  font-size: var(--denhaag-hero-theme-image-link-font-size, 1rem);
-  font-weight: var(--denhaag-hero-theme-image-link-font-weight, 400);
+  font-size: var(--denhaag-hero-theme-image-link-font-size, var(--denhaag-space-md));
+  font-weight: var(--denhaag-hero-theme-image-link-font-weight, var(--denhaag-typography-weight-regular));
 }
 
 @media (max-width: 768px) {
@@ -315,7 +315,7 @@
     --denhaag-hero-container-max-width: var(--denhaag-hero-theme-image-container-max-width-s, 370px);
     --denhaag-hero-container-padding: var(--denhaag-hero-theme-image-container-padding-inline-end-s, 0);
     --denhaag-hero-container-padding-block-start: var(--denhaag-hero-theme-image-container-padding-block-start-s, 10px);
-    --denhaag-hero-theme-image-container-padding-inline: 1rem;
+    --denhaag-hero-theme-image-container-padding-inline: var(--denhaag-space-md);
 
     padding-inline-start: var(--denhaag-hero-theme-image-container-padding-inline-start-s, 75px);
   }

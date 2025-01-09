@@ -147,10 +147,10 @@
 
 .denhaag-cta-image-content--hover,
 .denhaag-cta-image-content:hover {
-  transform: translateY(-0.125rem);
+  transform: translateY(calc(0px - var(--denhaag-space-3xs)));
 
   .denhaag-cta-image-content__image {
-    transform: translateY(-0.125rem) scale(1.02);
+    transform: translateY(calc(0px - var(--denhaag-space-3xs))) scale(1.02);
   }
 }
 

@@ -46,7 +46,7 @@
 .denhaag-dynamic-content__card--hover,
 .denhaag-dynamic-content__card:hover {
   --denhaag-dynamic-content-icon-opacity: 100%;
-  --denhaag-dynamic-content-image-translate: translateY(-0.125rem);
+  --denhaag-dynamic-content-image-translate: translateY(calc(0px - var(--denhaag-space-3xs)));
 }
 
 .denhaag-dynamic-content__card-link {
@@ -117,7 +117,7 @@
   /* stylelint-disable-next-line no-descending-specificity */
   & .denhaag-icon,
   & .denhaag-dynamic-content__card-image-container {
-    outline: var(--denhaag-dynamic-content-focus-outline, var(--denhaag-focus-border));
+    outline: var(--denhaag-focus-border);
   }
 }
 
@@ -173,11 +173,11 @@
   border-radius: var(--denhaag-dynamic-content-icon-border-radius, var(--denhaag-border-radius));
   content: "";
   display: block;
-  height: 0.125rem;
+  height: var(--denhaag-space-3xs);
   left: 0;
   position: absolute;
   top: 0.6875rem;
-  width: 0.5rem;
+  width: var(--denhaag-space-xs);
 }
 
 .denhaag-dynamic-content__card--hover .denhaag-dynamic-content__card-icon,

@@ -5,7 +5,7 @@
   flex-direction: row;
   font-family: var(--denhaag-note-font-family, var(--denhaag-typography-sans-serif-font-family));
   font-size: var(--denhaag-note-font-size, 1.125rem);
-  font-weight: var(--denhaag-note-font-weight, 400);
+  font-weight: var(--denhaag-note-font-weight, var(--denhaag-typography-weight-regular));
   line-height: var(--denhaag-note-line-height, 1.5);
   gap: var(--denhaag-note-icon-spacing, var(--denhaag-space-xs));
   padding-block: var(--denhaag-note-padding-block, var(--denhaag-space-2xs));

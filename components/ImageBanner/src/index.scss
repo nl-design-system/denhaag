@@ -24,7 +24,7 @@
 
 .denhaag-image-banner__card--focus,
 .denhaag-image-banner__card:focus-visible {
-  outline: var(--denhaag-image-banner-card-focus-outline, var(--denhaag-focus-border));
+  outline: var(--denhaag-focus-border);
 }
 
 .denhaag-image-banner__image {
