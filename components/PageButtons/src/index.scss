@@ -1,25 +1,26 @@
 .denhaag-page-buttons {
   display: flex;
   flex-direction: column;
-  margin-block-start: var(--denhaag-page-buttons-margin-block-start);
-  margin-block-end: var(--denhaag-page-buttons-margin-block-end);
+  margin-block-start: var(--denhaag-page-buttons-margin-block-start, var(--denhaag-space-sm));
+  margin-block-end: var(--denhaag-page-buttons-margin-block-end, var(--denhaag-space-2xl));
 }
 
 .denhaag-page-buttons__outline-dark-action {
-  background-color: var(--denhaag-page-buttons-outline-dark-action-background-color);
-  border: var(--denhaag-button-border-width) solid var(--denhaag-page-buttons-outline-dark-action-border-color);
-  color: var(--denhaag-page-buttons-outline-dark-action-color);
-  min-width: var(--denhaag-page-buttons-outline-dark-action-min-width);
-  margin-inline-end: var(--denhaag-page-buttons-outline-dark-action-margin-inline-end);
   align-self: baseline;
-  margin-block-end: var(--denhaag-page-buttons-outline-dark-action-margin-block-end);
+  background-color: var(--denhaag-page-buttons-outline-dark-action-background-color, var(--denhaag-color-white));
+  border: var(--denhaag-button-border-width) solid
+    var(--denhaag-page-buttons-outline-dark-action-border-color, var(--denhaag-color-grey-2));
+  color: var(--denhaag-page-buttons-outline-dark-action-color, var(--denhaag-color-grey-4));
+  min-width: var(--denhaag-page-buttons-outline-dark-action-min-width, 6.25rem);
+  margin-inline-end: var(--denhaag-page-buttons-outline-dark-action-margin-inline-end, var(--denhaag-space-sm));
+  margin-block-end: var(--denhaag-page-buttons-outline-dark-action-margin-block-end, var(--denhaag-space-sm));
 }
 
 .denhaag-page-buttons__outline-dark-action.denhaag-button--hover,
 .denhaag-page-buttons__outline-dark-action:hover {
-  background-color: var(--denhaag-button-secondary-action-hover-background-color);
-  border-color: var(--denhaag-button-secondary-action-hover-border-color);
-  color: var(--denhaag-button-secondary-action-hover-color);
+  background-color: var(--denhaag-button-secondary-action-hover-background-color, var(--denhaag-color-white));
+  border-color: var(--denhaag-button-secondary-action-hover-border-color, var(--denhaag-color-green-3));
+  color: var(--denhaag-button-secondary-action-hover-color, var(--denhaag-color-green-3));
 }
 
 /* Due to the accessibility focus outline overlapping with the border, the outline needs to be repositioned for the border variant */
@@ -32,9 +33,9 @@
 }
 
 .denhaag-page-buttons__outline-dark-action__icon {
-  margin-inline-end: var(--denhaag-page-buttons-icon-margin-inline-end);
-  max-height: var(--denhaag-page-buttons-icon-max-height);
-  max-width: var(--denhaag-page-buttons-icon-max-width);
+  margin-inline-end: var(--denhaag-page-buttons-icon-margin-inline-end, var(--denhaag-space-sm));
+  max-height: var(--denhaag-page-buttons-icon-max-height, var(--denhaag-space-lg));
+  max-width: var(--denhaag-page-buttons-icon-max-width, 1.1875rem);
 }
 
 .denhaag-share-button__options {
@@ -50,15 +51,15 @@
   padding-block-end: 0;
   padding-inline-start: 0;
   padding-inline-end: 0;
-  min-width: var(--denhaag-page-buttons-option-min-width);
-  min-height: var(--denhaag-page-buttons-option-min-height);
+  min-width: var(--denhaag-page-buttons-option-min-width, 2.75rem);
+  min-height: var(--denhaag-page-buttons-option-min-height, 2.594rem);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .denhaag-share-button__option:not(:first-of-type) {
-  margin-inline-start: var(--denhaag-page-buttons-option-margin-inline-start);
+  margin-inline-start: var(--denhaag-page-buttons-option-margin-inline-start, var(--denhaag-space-xs));
 }
 
 .denhaag-share-button__option__icon {

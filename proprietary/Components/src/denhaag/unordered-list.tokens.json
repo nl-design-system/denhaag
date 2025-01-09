@@ -1,40 +1,5 @@
 {
   "denhaag": {
-    "unordered-list": {
-      "color": {
-        "value": "{denhaag.color.grey.4}"
-      },
-      "lead": {
-        "margin-block-start": {
-          "value": "{denhaag.space.block.2xl}"
-        }
-      },
-      "link-label": {
-        "hyphens": {
-          "value": "auto"
-        }
-      },
-      "link-with-icon": {
-        "display": {
-          "value": "inline-flex"
-        }
-      },
-      "list-item": {
-        "font-weight": {
-          "value": "{denhaag.typography.weight.regular}"
-        }
-      },
-      "lower-alpha-list-style-type": {
-        "value": "lower-alpha"
-      },
-      "marker-font-size": {
-        "value": "1rem"
-      },
-      "paragraph": {
-        "margin-block-start": {
-          "value": "{denhaag.space.block.md}"
-        }
-      }
-    }
+    "unordered-list": {}
   }
 }

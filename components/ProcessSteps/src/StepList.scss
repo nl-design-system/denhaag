@@ -2,12 +2,11 @@
   --denhaag-process-steps-step-distance: 40px;
   --denhaag-process-steps-sub-step-distance: 24px;
 
-  font-family: var(--denhaag-process-steps-font-family);
-  font-size: var(--denhaag-process-steps-font-size);
-  line-height: var(--denhaag-process-steps-line-height);
+  font-family: var(--denhaag-process-steps-font-family, var(--denhaag-typography-sans-serif-font-family));
+  font-size: var(--denhaag-process-steps-font-size, var(--denhaag-typography-scale-base-font-size));
+  line-height: var(--denhaag-process-steps-line-height, 24px);
   list-style: none;
-  margin-block-start: 0; /* reset <ol> */
-  margin-block-end: 0; /* reset <ol> */
+  margin-block: 0; /* reset <ol> */
   padding-inline-start: 0; /* reset <ol> */
   position: relative;
 }

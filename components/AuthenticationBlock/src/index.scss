@@ -1,61 +1,57 @@
 .denhaag-authentication {
   // Calculation between Block CSS variables.
   --denhaag-authentication-logo-with-gap: calc(
-    var(--denhaag-authentication-gap-small) + var(--denhaag-authentication-logo-size)
+    var(--denhaag-authentication-gap-small, var(--denhaag-space-md)) + var(--denhaag-authentication-logo-size, 3.5rem)
   );
 
   // Overrule CSS variables of used innerblocks.
   --denhaag-button-group-padding: 0;
   --denhaag-image-image-aspect-ratio: #{1} / #{1};
   --denhaag-image-image-height: auto;
-  --denhaag-image-image-width: var(--denhaag-authentication-logo-size);
+  --denhaag-image-image-width: var(--denhaag-authentication-logo-size, 3.5rem);
   --denhaag-image-margin-inline: 0;
 
   display: grid;
-  gap: var(--denhaag-authentication-gap);
+  gap: var(--denhaag-authentication-gap, var(--denhaag-space-xl));
 
   @media (min-width: 375px) {
-    --denhaag-authentication-gap: var(--denhaag-authentication-gap-sm, 32px);
+    --denhaag-authentication-gap: var(--denhaag-authentication-gap-sm, var(--denhaag-space-2xl));
   }
 
   & + & {
-    margin-block-start: var(--denhaag-authentication-gap);
+    margin-block-start: var(--denhaag-authentication-gap, var(--denhaag-space-xl));
   }
 
   &__card {
     align-self: stretch;
-    border: 1px solid var(--denhaag-authentication-border-color);
+    border: 1px solid var(--denhaag-authentication-border-color, var(--denhaag-color-grey-2));
     display: flex;
     flex-direction: column;
-    gap: var(--denhaag-authentication-gap-small);
-    padding-inline-start: var(--denhaag-authentication-gap);
-    padding-inline-end: var(--denhaag-authentication-gap);
-    padding-block-start: var(--denhaag-authentication-gap);
-    padding-block-end: var(--denhaag-authentication-gap);
+    gap: var(--denhaag-authentication-gap-small, var(--denhaag-space-md));
+    padding-inline: var(--denhaag-authentication-gap, var(--denhaag-space-xl));
+    padding-block: var(--denhaag-authentication-gap, var(--denhaag-space-xl));
   }
 
   &__content {
     display: flex;
     flex-direction: column;
-    gap: var(--denhaag-authentication-gap);
+    gap: var(--denhaag-authentication-gap, var(--denhaag-space-xl));
   }
 
   .denhaag-image {
-    margin-block-start: 0;
-    margin-block-end: var(--denhaag-authentication-image-spacing-end, 0);
-    max-width: var(--denhaag-authentication-logo-size);
+    margin-block: 0 var(--denhaag-authentication-image-spacing-end);
+    max-width: var(--denhaag-authentication-logo-size, 3.5rem);
   }
 
   // Remove unnecessary of existing blocks.
   .utrecht-heading-3,
   p {
-    margin-block-end: 0;
-    margin-block-start: 0;
+    margin-block: 0;
   }
 
   // Modifiers & child-elements based on the modifier.
   &--landscape {
-    --denhaag-authentication-image-spacing-end: var(--denhaag-authentication-gap);
+    --denhaag-authentication-image-spacing-end: var(--denhaag-authentication-gap, var(--denhaag-space-xl));
     @media (min-width: 375px) {
       --denhaag-authentication-image-spacing-end: 0;
     }
@@ -71,7 +67,7 @@
 
     @media (min-width: 375px) {
       .denhaag-image + * {
-        margin-block-start: calc(-1 * var(--denhaag-authentication-logo-size));
+        margin-block-start: calc(-1 * var(--denhaag-authentication-logo-size, 3.5rem));
       }
     }
   }
@@ -87,7 +83,7 @@
     --denhaag-button-group-flex-direction: unset;
 
     @media (min-width: 375px) {
-      --denhaag-authentication-logo-size: var(--denhaag-authentication-portrait-logo-size-sm, 80px);
+      --denhaag-authentication-logo-size: var(--denhaag-authentication-portrait-logo-size, 5rem);
 
       align-items: center;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -104,14 +100,14 @@
         align-self: flex-end;
 
         & + * {
-          margin-block-start: calc(-1 * var(--denhaag-authentication-logo-size));
+          margin-block-start: calc(-1 * var(--denhaag-authentication-logo-size, 3.5rem));
         }
       }
     }
 
     @media (min-width: 375px) {
       align-items: center;
-      gap: 24px;
+      gap: var(--denhaag-spacing-xl);
     }
   }
 
@@ -147,12 +143,10 @@
   }
 
   &__footer-label {
-    background: var(--denhaag-authentication-divider-label-background);
+    background: var(--denhaag-authentication-divider-label-background, var(--denhaag-color-white));
     left: 50%;
-    padding-block-end: var(--denhaag-authentication-divider-label-padding-block);
-    padding-block-start: var(--denhaag-authentication-divider-label-padding-block);
-    padding-inline-end: var(--denhaag-authentication-divider-label-padding-inline);
-    padding-inline-start: var(--denhaag-authentication-divider-label-padding-inline);
+    padding-block: var(--denhaag-authentication-divider-label-padding-block, var(--denhaag-space-xs));
+    padding-inline: var(--denhaag-authentication-divider-label-padding-inline, 0.875rem);
     pointer-events: none;
     position: absolute;
     top: 50%;
@@ -164,7 +158,7 @@
     color: var(--denhaag-authentication-item-color, var(--denhaag-link-color));
     display: flex;
     flex-direction: row;
-    gap: var(--denhaag-authentication-item-gap, var(--denhaag-authentication-gap-small));
+    gap: var(--denhaag-authentication-item-gap, var(--denhaag-spacing-sm));
     text-decoration: none;
     width: 100%;
 
@@ -173,18 +167,18 @@
     }
 
     &:focus-visible {
-      outline: var(--denhaag-authentication-item-focus-outline, var(--denhaag-link-focus-outline));
+      outline: var(--denhaag-focus-border);
     }
 
     // CSS support may there be more than one item is added.
     & + & {
-      margin-block-start: var(--denhaag-authentication-item-gap, var(--denhaag-authentication-gap-small));
+      margin-block-start: var(--denhaag-authentication-item-gap, var(--denhaag-spacing-sm));
     }
   }
 
   &-item svg,
   &-item__image {
     height: auto;
-    max-width: var(--denhaag-authentication-item-image-width);
+    max-width: var(--denhaag-authentication-item-image-width, 2.375rem);
   }
 }

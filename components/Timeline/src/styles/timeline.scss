@@ -1,5 +1,5 @@
 .denhaag-timeline {
-  font-family: var(--denhaag-timeline-font-family);
-  font-size: var(--denhaag-timeline-font-size);
-  line-height: var(--denhaag-timeline-line-height);
+  font-family: var(--denhaag-timeline-font-family, var(--denhaag-typography-sans-serif-font-family));
+  font-size: var(--denhaag-timeline-font-size, var(--denhaag-typography-scale-base-font-size));
+  line-height: var(--denhaag-timeline-line-height, var(--denhaag-typography-scale-base-line-height));
 }

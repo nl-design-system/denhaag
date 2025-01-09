@@ -1,4 +1,6 @@
 .denhaag-calendar {
+  --denhaag-calendar-card-footer-action-transition-duration: 100ms;
+
   container: calendar / inline-size;
 
   @media (prefers-reduced-motion: reduce) {
@@ -11,7 +13,7 @@
 @container calendar (min-width: 600px) {
   .denhaag-calendar__wrapper {
     --denhaag-calendar-columns: 2;
-    --denhaag-calendar-gap: var(--denhaag-calendar-md-gap);
+    --denhaag-calendar-gap: var(--denhaag-space-lg);
   }
 }
 
@@ -20,7 +22,7 @@
 @container calendar (min-width: 904px) {
   .denhaag-calendar__wrapper {
     --denhaag-calendar-columns: 3;
-    --denhaag-calendar-gap: var(--denhaag-calendar-lg-gap);
+    --denhaag-calendar-gap: var(--denhaag-space-2xl);
   }
 }
 
@@ -28,119 +30,120 @@
 /* stylelint-disable-next-line */
 @container calendar (min-width: 1080px) {
   .denhaag-calendar__wrapper {
-    --denhaag-calendar-gap: var(--denhaag-calendar-xl-gap);
+    --denhaag-calendar-gap: var(--denhaag-space-3xl);
   }
 }
 
 .denhaag-calendar__wrapper {
   display: grid;
-  gap: var(--denhaag-calendar-gap);
+  gap: var(--denhaag-calendar-gap, var(--denhaag-space-md));
   grid-template-columns: repeat(var(--denhaag-calendar-columns, 1), 1fr);
 }
 
 .denhaag-calendar__card {
+  --denhaag-icon-size: var(--denhaag-space-lg);
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   align-self: stretch;
-  gap: var(--denhaag-calendar-card-gap);
+  gap: var(--denhaag-space-md);
   position: relative;
-  padding-inline: var(--denhaag-calendar-card-padding-inline);
-  padding-block-start: var(--denhaag-calendar-card-padding-block-start);
-  padding-block-end: var(--denhaag-calendar-card-padding-block-end);
-  border: var(--denhaag-calendar-card-border);
-  border-color: var(--denhaag-calendar-card-border-color);
-  border-radius: var(--denhaag-calendar-card-border-radius);
-  font-family: var(--denhaag-calendar-card-font-family);
+  padding-inline: var(--denhaag-space-xs);
+  padding-block: var(--denhaag-space-xs) var(--denhaag-space-lg);
+  border: 1px solid var(--denhaag-color-grey-2);
+  border-radius: var(--denhaag-space-xs);
+  font-family: var(--denhaag-typography-sans-serif-font-family);
 
   &::after {
     position: absolute;
     content: "";
-    left: var(--denhaag-calendar-card-underline-inline);
-    right: var(--denhaag-calendar-card-underline-inline);
-    bottom: var(--denhaag-calendar-card-underline-bottom);
-    height: var(--denhaag-calendar-card-underline-height);
-    background-color: var(--denhaag-calendar-card-underline-background-color);
+    inset-inline: var(--denhaag-space-md);
+    bottom: calc(0px - var(--denhaag-space-2xs));
+    height: 1px;
+    background-color: var(--denhaag-color-grey-2);
   }
 
   &:focus-visible,
   &--focus {
-    --denhaag-calendar-card-header-background-color: var(--denhaag-calendar-card-header-active-background-color);
+    --denhaag-calendar-card-header-background-color: var(--denhaag-color-green-1);
 
     outline: none;
+  }
+
+  .denhaag-icon {
+    transition: var(--denhaag-calendar-card-footer-action-transition-property, transform)
+      var(--denhaag-calendar-card-footer-action-transition-duration)
+      var(--denhaag-calendar-card-footer-action-transition-ease, ease-in-out);
   }
 }
 
 .denhaag-calendar__card-header {
   align-items: flex-start;
   align-self: stretch;
+  background-color: var(--denhaag-calendar-card-header-background-color, var(--denhaag-color-grey-1));
+  border-radius: var(--denhaag-space-2xs) var(--denhaag-space-2xs) 0 0;
+  color: var(--denhaag-calendar-card-header-color, var(--denhaag-color-green-3));
   display: flex;
+  font-family: var(--denhaag-typography-sans-serif-alternate-font-family);
+  font-weight: var(--denhaag-typography-weight-bold);
+  font-size: var(--denhaag-typography-scale-lg-font-size);
   justify-content: center;
+  padding-inline: var(--denhaag-space-xl);
+  padding-block: var(--denhaag-space-md);
   position: relative;
-  border-radius: var(--denhaag-calendar-card-header-border-radius);
-  background-color: var(--denhaag-calendar-card-header-background-color);
-  padding-inline: var(--denhaag-calendar-card-header-padding-inline);
-  padding-block: var(--denhaag-calendar-card-header-padding-block);
-  text-align: var(--denhaag-calendar-card-header-text-align);
-
-  time {
-    font-family: var(--denhaag-calendar-card-header-text-font-family);
-    font-weight: var(--denhaag-calendar-card-header-text-font-weight);
-    font-size: var(--denhaag-calendar-card-header-text-font-size);
-    color: var(--denhaag-calendar-card-header-text-color);
-  }
+  text-align: center;
 
   &::before,
   &::after {
-    background-color: var(--denhaag-calendar-card-header-circles-background-color);
-    border: var(--denhaag-calendar-card-header-circles-border);
-    border-radius: var(--denhaag-calendar-card-header-circles-border-radius);
+    aspect-ratio: 1;
+    background-color: var(--denhaag-calendar-card-header-circles-background-color, var(--denhaag-color-white));
+    border: var(--denhaag-calendar-card-header-circles-border, 1px solid var(--denhaag-color-grey-2));
+    border-radius: var(--denhaag-space-xs);
     content: "";
-    height: var(--denhaag-calendar-card-header-circles-size);
+    height: var(--denhaag-space-xs);
     position: absolute;
-    top: var(--denhaag-calendar-card-header-circles-offset);
-    width: var(--denhaag-calendar-card-header-circles-size);
+    top: var(--denhaag-space-sm);
+    width: var(--denhaag-space-xs);
   }
 
   &::before {
-    left: var(--denhaag-calendar-card-header-circles-offset);
+    left: var(--denhaag-space-sm);
   }
 
   &::after {
-    right: var(--denhaag-calendar-card-header-circles-offset);
+    right: var(--denhaag-space-sm);
   }
 }
 
 .denhaag-calendar__card-content {
   display: flex;
   flex-direction: column;
-  gap: var(--denhaag-calendar-card-content-gap);
+  gap: var(--denhaag-space-2xs);
   height: 100%;
-  padding-inline: calc(
-    var(--denhaag-calendar-card-content-padding-inline) - var(--denhaag-calendar-card-padding-inline)
-  );
+  padding-inline: calc(var(--denhaag-space-xl) - var(--denhaag-space-xs));
 }
 
 .denhaag-calendar__card-title {
-  color: var(--denhaag-calendar-card-title-color);
+  color: var(--denhaag-calendar-card-title-color, var(--denhaag-color-grey-5));
   margin-block: 0;
   margin-inline: 0;
-  font-size: var(--denhaag-calendar-card-title-font-size);
-  font-weight: var(--denhaag-calendar-card-title-font-weight);
-  overflow-wrap: var(--denhaag-calendar-card-title-word-break);
-  word-wrap: var(--denhaag-calendar-card-title-word-break);
-  -ms-word-break: var(--denhaag-calendar-card-title-ms-word-break);
-  word-break: var(--denhaag-calendar-card-title-word-break);
+  font-size: var(--denhaag-typography-scale-base-font-size);
+  font-weight: var(--denhaag-typography-weight-bold);
+  overflow-wrap: var(--denhaag-calendar-card-title-word-break, break-word);
+  word-wrap: var(--denhaag-calendar-card-title-word-break, break-word);
+  -ms-word-break: var(--denhaag-calendar-card-title-ms-word-break, break-all);
+  word-break: var(--denhaag-calendar-card-title-word-break, break-word);
   -ms-hyphens: auto;
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
-  line-height: var(--denhaag-calendar-card-title-line-height);
+  line-height: var(--denhaag-typography-scale-base-line-height);
 }
 
 .denhaag-calendar__card-title-anchor {
-  color: var(--denhaag-calendar-card-title-color);
-  text-decoration: var(--denhaag-calendar-card-title-anchor-text-decoration);
+  color: var(--denhaag-calendar-card-title-color, var(--denhaag-color-grey-5));
+  text-decoration: none;
   outline: 0;
 
   &::after {
@@ -154,58 +157,48 @@
 }
 
 .denhaag-calendar__card-description {
-  color: var(--denhaag-calendar-card-description-color);
+  color: var(--denhaag-color-grey-4);
   margin-block: 0;
   margin-inline: 0;
 }
 
 .denhaag-calendar__card-footer {
   align-self: stretch;
-  align-items: var(--denhaag-calendar-card-footer-align-items);
-  color: var(--denhaag-calendar-card-footer-color);
+  align-items: center;
+  color: var(--denhaag-color-blue-3);
   display: flex;
-  gap: var(--denhaag-calendar-card-footer-gap);
-  justify-content: var(--denhaag-calendar-card-footer-justify-content);
-  padding-inline: calc(
-    var(--denhaag-calendar-card-content-padding-inline) - var(--denhaag-calendar-card-padding-inline)
-  );
-  padding-block-start: var(--denhaag-calendar-card-footer-padding-block-start);
+  font-size: var(--denhaag-typography-scale-s-font-size);
+  font-weight: var(--denhaag-typography-weight-regular);
+  gap: var(--denhaag-space-md);
+  justify-content: flex-end;
+  padding-inline: calc(var(--denhaag-space-xl) - var(--denhaag-space-xs));
+  padding-block-start: var(--denhaag-space-xs);
 }
 
 .denhaag-calendar__card-footer-time {
-  align-items: var(--denhaag-calendar-card-footer-time-align-items);
-  color: var(--denhaag-calendar-card-footer-time-color);
-  display: flex;
-  font-family: var(--denhaag-calendar-card-footer-time-font-family);
-  font-size: var(--denhaag-calendar-card-footer-time-font-size);
-  font-weight: var(--denhaag-calendar-card-footer-time-font-weight);
-  gap: var(--denhaag-calendar-card-footer-time-gap);
-  width: 100%;
-}
+  --denhaag-icon-size: var(--denhaag-space-md);
 
-.denhaag-calendar__card-footer-action {
+  align-items: center;
+  color: var(--denhaag-color-grey-4);
   display: flex;
-  justify-content: var(--denhaag-calendar-card-footer-action-justify-content);
-  transition: var(--denhaag-calendar-card-footer-action-transition-property)
-    var(--denhaag-calendar-card-footer-action-transition-duration)
-    var(--denhaag-calendar-card-footer-action-transition-ease);
+  gap: var(--denhaag-space-2xs);
+  width: 100%;
 }
 
 .denhaag-calendar__card--hover,
 .denhaag-calendar__card:hover {
-  --denhaag-calendar-card-header-background-color: var(--denhaag-calendar-card-header-active-background-color);
+  --denhaag-calendar-card-header-background-color: var(--denhaag-color-green-1);
 
-  cursor: var(--denhaag-calendar-card-hover-cursor);
+  cursor: pointer;
   box-shadow: var(--denhaag-calendar-card-hover-box-shadow, var(--denhaag-box-shadow-default));
 
-  .denhaag-calendar__card-footer-action {
-    transform: var(--denhaag-calendar-card-footer-action-hover-transform);
+  .denhaag-icon:last-child {
+    transform: translateX(var(--denhaag-space-2xs));
   }
 }
 
 .denhaag-calendar__card--focus-visible,
 .denhaag-calendar__card:focus-within {
-  border: var(--denhaag-calendar-card-focus-border);
-  border-color: var(--denhaag-calendar-card-focus-border-color);
-  box-shadow: var(--denhaag-calendar-card-focus-box-shadow, var(--denhaag-box-shadow-default));
+  border: var(--denhaag-focus-border);
+  box-shadow: var(--denhaag-box-shadow-default);
 }

@@ -13,8 +13,8 @@
 }
 
 .denhaag-process-steps__step-header--current {
-  font-weight: var(--denhaag-process-steps-step-heading-current-font-weight);
-  color: var(--denhaag-process-steps-step-heading-current-color);
+  font-weight: var(--denhaag-process-steps-step-heading-current-font-weight, var(--denhaag-typography-weight-bold));
+  color: var(--denhaag-process-steps-step-heading-current-color, var(--denhaag-color-green-3));
 }
 
 .denhaag-process-steps__step-header--checked {

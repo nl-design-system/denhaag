@@ -1,17 +1,5 @@
 {
   "denhaag": {
-    "page": {
-      "content": {
-        "main": {
-          "margin-block-start": { "value": "1rem" },
-          "sm": {
-            "margin-block-start": { "value": "3.5rem" }
-          },
-          "md": {
-            "margin-block-start": { "value": "4em" }
-          }
-        }
-      }
-    }
+    "page": {}
   }
 }

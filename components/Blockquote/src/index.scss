@@ -1,36 +1,33 @@
 .denhaag-blockquote {
-  border-inline-start: var(--denhaag-blockquote-border-width) var(--denhaag-blockquote-border-style)
-    var(--denhaag-blockquote-border-color);
-  padding-block-start: var(--denhaag-blockquote-padding-block-start);
-  padding-block-end: var(--denhaag-blockquote-padding-block-end);
-  padding-inline-start: var(--denhaag-blockquote-padding-inline-start);
-  padding-inline-end: var(--denhaag-blockquote-padding-inline-end);
-  margin-inline-start: 0;
-  margin-inline-end: 0;
+  border-inline-start: var(--denhaag-blockquote-border-width, var(--denhaag-space-2xs))
+    var(--denhaag-blockquote-border-style, solid) var(--denhaag-blockquote-border-color, var(--denhaag-color-green-1));
+  padding-block: var(--denhaag-blockquote-padding-block, var(--denhaag-space-md));
+  padding-inline: var(--denhaag-blockquote-padding-inline, var(--denhaag-space-md));
+  margin-inline: 0;
 }
 
 .denhaag-blockquote__content {
-  margin-block-start: var(--denhaag-blockquote-margin-block-start);
-  margin-block-end: var(--denhaag-blockquote-margin-block-end);
-  margin-inline-start: var(--denhaag-blockquote-margin-inline-start);
-  margin-inline-end: var(--denhaag-blockquote-margin-inline-end);
+  margin-block: var(--denhaag-blockquote-margin-block);
+  margin-inline: var(--denhaag-blockquote-margin-inline);
 }
 
 .denhaag-blockquote__content p {
-  color: var(--denhaag-blockquote-paragraph-color);
-  font-family: var(--denhaag-blockquote-paragraph-font-family);
-  font-size: var(--denhaag-blockquote-paragraph-font-size, 1.25rem);
-  font-weight: var(--denhaag-blockquote-paragraph-font-weight);
-  line-height: var(--denhaag-blockquote-paragraph-line-height);
-  margin-block-start: var(--denhaag-blockquote-margin-block-start);
-  margin-block-end: var(--denhaag-blockquote-margin-block-end);
+  color: var(--denhaag-blockquote-paragraph-color, var(--denhaag-color-green-4));
+  font-family: var(
+    --denhaag-blockquote-paragraph-font-family,
+    var(--denhaag-typography-sans-serif-alternate-font-family)
+  );
+  font-size: var(--denhaag-blockquote-paragraph-font-size, var(--denhaag-typography-scale-base-font-size));
+  font-weight: var(--denhaag-blockquote-paragraph-font-weight, var(--denhaag-typography-weight-bold));
+  line-height: var(--denhaag-blockquote-paragraph-line-height, var(--denhaag-typography-scale-s-line-height));
+  margin-block: var(--denhaag-blockquote-margin-block);
 }
 
 .denhaag-blockquote__attribution {
-  color: var(--denhaag-blockquote-attribution-color, #4b4b4b);
-  font-family: var(--denhaag-blockquote-attribution-font-family);
-  font-size: var(--denhaag-blockquote-attribution-font-size, 0.75rem);
-  font-weight: var(--denhaag-blockquote-attribution-font-weight);
-  line-height: var(--denhaag-blockquote-attribution-line-height);
-  margin-block-start: var(--denhaag-blockquote-attribution-margin-block-start);
+  color: var(--denhaag-blockquote-attribution-color, var(--denhaag-color-grey-4));
+  font-family: var(--denhaag-blockquote-attribution-font-family, var(--denhaag-typography-sans-serif-font-family));
+  font-size: var(--denhaag-blockquote-attribution-font-size, var(--denhaag-typography-scale-s-font-size));
+  font-weight: var(--denhaag-blockquote-attribution-font-weight, var(--denhaag-typography-weight-regular));
+  line-height: var(--denhaag-blockquote-attribution-line-height, var(--denhaag-typography-scale-base-line-height));
+  margin-block-start: var(--denhaag-blockquote-attribution-margin-block-start, var(--denhaag-space-md));
 }

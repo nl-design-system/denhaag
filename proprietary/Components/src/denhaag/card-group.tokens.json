@@ -1,20 +1,5 @@
 {
   "denhaag": {
-    "card-group": {
-      "gap": { "value": "32px" },
-      "s": {
-        "gap": { "value": "16px" }
-      },
-      "m": {
-        "gap": { "value": "24px" }
-      },
-      "l": {
-        "gap": { "value": "32px" }
-      },
-      "xl": {
-        "gap": { "value": "40px" }
-      },
-      "margin-block": { "value": "{denhaag.space.block.lg}" }
-    }
+    "card-group": {}
   }
 }

@@ -1,34 +1,35 @@
 .denhaag-illustrated-list-block {
-  display: var(--denhaag-illustrated-list-block-display);
-  flex-direction: var(--denhaag-illustrated-list-block-flex-direction);
+  --utrecht-heading-font-family: var(
+    --denhaag-illustrated-list-block-content-heading-font-family,
+    var(--denhaag-typography-sans-serif-font-family)
+  );
+
+  display: flex;
+  flex-direction: var(--denhaag-illustrated-list-block-flex-direction, column-reverse);
 
   &__image {
-    margin-block-end: var(--denhaag-illustrated-list-block-image-margin-block-end);
-    object-fit: var(--denhaag-illustrated-list-block-image-object-fit);
+    margin-block-end: var(--denhaag-illustrated-list-block-image-margin-block-end, var(--denhaag-space-md));
+    object-fit: cover;
 
     @media (min-width: 768px) {
       --denhaag-illustrated-list-block-image-margin-block-end: 0;
 
-      margin-inline-end: var(--denhaag-illustrated-list-block-image-margin-inline-end);
+      margin-inline-end: var(--denhaag-illustrated-list-block-image-margin-inline-end, var(--denhaag-space-xl));
     }
   }
 
-  [class^="utrecht-heading"] {
-    font-family: var(--denhaag-illustrated-list-block-content-heading-font-family);
-  }
-
   + .denhaag-illustrated-list-block {
-    margin-block-start: var(--denhaag-illustrated-list-block-margin-block-start);
+    margin-block-start: var(--denhaag-illustrated-list-block-margin-block-start, var(--denhaag-space-4xl));
 
     @media (min-width: 768px) {
-      --denhaag-illustrated-list-block-margin-block-start: var(--denhaag-space-block-2xl);
+      --denhaag-illustrated-list-block-margin-block-start: var(--denhaag-space-2xl);
     }
   }
 
   @media (min-width: 768px) {
     --denhaag-illustrated-list-block-flex-direction: row-reverse;
 
-    align-items: var(--denhaag-illustrated-list-block-align-items);
-    justify-content: var(--denhaag-illustrated-list-block-justify-content);
+    align-items: var(--denhaag-illustrated-list-block-align-items, center);
+    justify-content: var(--denhaag-illustrated-list-block-justify-content, start);
   }
 }

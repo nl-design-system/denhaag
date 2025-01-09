@@ -1,38 +1,5 @@
 {
   "denhaag": {
-    "card-authentication": {
-      "background-color": { "value": "{denhaag.color.white}" },
-      "border-color": { "value": "{denhaag.color.grey.2}" },
-      "portrait": {
-        "max-inline-size": { "value": "362px" },
-        "min-block-size": { "value": "415px" },
-        "min-inline-size": { "value": "283px" },
-        "footer": {
-          "margin-block-start": { "value": "32px" }
-        },
-        "header": {
-          "margin-block-end": { "value": "24px" }
-        },
-        "logo": {
-          "size": { "value": "80px" },
-          "margin-block-end": { "value": "24px" }
-        }
-      },
-      "footer": {
-        "margin-block-start": { "value": "24px" }
-      },
-      "header": {
-        "margin-block-end": { "value": "16px" }
-      },
-      "logo": {
-        "size": { "value": "56px" }
-      },
-      "title": {
-        "font-family": { "value": "{utrecht.heading-3.font-family}" },
-        "font-size": { "value": "{utrecht.heading-3.font-size}" },
-        "font-weight": { "value": "{utrecht.heading.font-weight}" },
-        "color": { "value": "{utrecht.heading-3.color}" }
-      }
-    }
+    "card-authentication": {}
   }
 }

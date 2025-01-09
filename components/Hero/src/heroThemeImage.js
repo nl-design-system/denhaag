@@ -5,8 +5,8 @@ const HeroThemeImage = (mainclass = '.denhaag-hero--theme-image') => {
   const contentElement = document.querySelector(`${mainclass} .denhaag-hero__content`);
 
   // Get realtime element heights.
-  const imageElementHeight = imageElement?.clientHeight;
-  const contentElementHeight = contentElement?.clientHeight;
+  const imageElementHeight = imageElement?.clientHeight || 0;
+  const contentElementHeight = contentElement?.clientHeight || 0;
 
   // Set height of heroImageElement.
   if (contentElementHeight > imageElementHeight) {

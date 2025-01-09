@@ -1,39 +1,5 @@
 {
   "denhaag": {
-    "illustrated-list-block": {
-      "align-items": {
-        "value": "center"
-      },
-      "content": {
-        "heading": {
-          "font-family": {
-            "value": "{denhaag.typography.sans-serif.font-family}"
-          }
-        }
-      },
-      "display": {
-        "value": "flex"
-      },
-      "flex-direction": {
-        "value": "column-reverse"
-      },
-      "image": {
-        "margin-block-end": {
-          "value": "{denhaag.space.block.md}"
-        },
-        "margin-inline-end": {
-          "value": "{denhaag.space.inline.xl}"
-        },
-        "object-fit": {
-          "value": "cover"
-        }
-      },
-      "justify-content": {
-        "value": "start"
-      },
-      "margin-block-start": {
-        "value": "{denhaag.space.block.4xl}"
-      }
-    }
+    "illustrated-list-block": {}
   }
 }

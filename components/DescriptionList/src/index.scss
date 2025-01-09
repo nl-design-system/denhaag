@@ -1,66 +1,70 @@
 .denhaag-description-list {
-  color: var(--denhaag-description-list-color);
+  color: var(--denhaag-description-list-color, var(--denhaag-color-grey-4));
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  font-family: var(--denhaag-description-list-font-family);
-  font-size: var(--denhaag-description-list-font-size);
-  font-weight: var(--denhaag-description-list-font-weight);
-  line-height: var(--denhaag-description-list-line-height);
-  margin-block-end: 0;
-  margin-block-start: 0;
+  font-family: var(--denhaag-description-list-font-family, var(--denhaag-typography-sans-serif-font-family));
+  font-size: var(--denhaag-description-list-font-size, var(--denhaag-typography-scale-base-font-size));
+  font-weight: var(--denhaag-description-list-font-weight, var(--denhaag-typography-weight-regular));
+  line-height: var(--denhaag-description-list-line-height, var(--denhaag-typography-scale-base-line-height));
+  margin-block: 0;
 }
 
-.denhaag-description-list__caption {
-  color: var(--denhaag-description-list-caption-color);
-  font-family: var(--denhaag-description-list-caption-font-family, var(--denhaag-description-list-font-family));
-  font-size: var(
-    --denhaag-description-list-caption-font-size,
-    calc(var(--denhaag-description-list-font-size, 1em) * 1.33)
+.denhaag-description-list-caption {
+  color: var(--denhaag-description-list-caption-color, var(--denhaag-color-black));
+  font-family: var(
+    --denhaag-description-list-caption-font-family,
+    var(--denhaag-typography-sans-serif-alternate-font-family)
   );
-  font-weight: var(--denhaag-description-list-caption-font-weight, bold);
-  line-height: var(--denhaag-description-list-caption-line-height, var(--denhaag-description-list-line-height));
-  margin-block-start: 0;
-  margin-block-end: var(--denhaag-description-list-caption-margin-block-end, 1em);
+  font-size: var(--denhaag-description-list-caption-font-size, var(--denhaag-typography-scale-xl-font-size));
+  font-weight: var(--denhaag-description-list-caption-font-weight, var(--denhaag-typography-weight-bold));
+  line-height: var(--denhaag-description-list-caption-line-height, var(--denhaag-typography-scale-s-line-height));
+  margin-block: 0 var(--denhaag-description-list-caption-margin-block-end, var(--denhaag-space-xl));
 }
 
 .denhaag-description-list__detail {
-  border-bottom: 1px solid var(--denhaag-description-list-border-color, lightgrey);
+  border-bottom: 1px solid var(--denhaag-description-list-border-color, var(--denhaag-color-grey-2));
   margin-inline-start: 0;
-  padding-block-end: var(--denhaag-description-list-detail-padding-block-end, var(--denhaag-description-list-padding));
-  padding-block-start: var(
-    --denhaag-description-list-detail-padding-block-start,
-    var(--denhaag-description-list-padding)
-  );
-  padding-inline-end: var(--denhaag-description-list-padding-inline-end, var(--denhaag-description-list-padding));
-  padding-inline-start: var(--denhaag-description-list-padding-inline-end, var(--denhaag-description-list-padding));
+  padding-block: var(--denhaag-description-list-detail-padding-block-start, var(--denhaag-space-2xs))
+    var(--denhaag-description-list-detail-padding-block-end, var(--denhaag-space-sm));
+  padding-inline: var(--denhaag-description-list-padding-inline, var(--denhaag-space-xs));
 }
 
 .denhaag-description-list__title {
-  font-weight: var(--denhaag-description-list-title-font-weight, bold);
-  padding-block-end: var(--denhaag-description-list-title-padding-block-end, var(--denhaag-description-list-padding));
-  padding-block-start: var(
-    --denhaag-description-list-title-padding-block-start,
-    var(--denhaag-description-list-padding)
-  );
-  padding-inline-end: var(--denhaag-description-list-padding-inline-end, var(--denhaag-description-list-padding));
-  padding-inline-start: var(--denhaag-description-list-padding-inline-start, var(--denhaag-description-list-padding));
+  font-weight: var(--denhaag-description-list-title-font-weight, var(--denhaag-typography-weight-bold));
+  padding-block: var(--denhaag-description-list-title-padding-block-start, var(--denhaag-space-sm))
+    var(--denhaag-description-list-title-padding-block-end, var(--denhaag-space-2xs));
+  padding-inline: var(--denhaag-description-list-padding-inline, var(--denhaag-space-xs));
 }
 
 @media (min-width: 640px) {
   .denhaag-description-list {
-    --denhaag-description-list-detail-padding-block-end: var(--denhaag-description-list-lg-detail-padding-block-end);
-    --denhaag-description-list-detail-padding-block-start: var(
-      --denhaag-description-list-lg-detail-padding-block-start
+    --denhaag-description-list-padding-inline: var(
+      --denhaag-description-list-lg-padding-inline-end,
+      var(--denhaag-space-md)
     );
-    --denhaag-description-list-title-padding-block-end: var(--denhaag-description-list-lg-title-padding-block-end);
-    --denhaag-description-list-title-padding-block-start: var(--denhaag-description-list-lg-title-padding-block-start);
-    --denhaag-description-list-padding-inline-end: var(--denhaag-description-list-lg-padding-inline-end);
-    --denhaag-description-list-padding-inline-start: var(--denhaag-description-list-lg-padding-inline-start);
+
+    // Keep variables due they're not equal on smaller sizes?
+    --denhaag-description-list-detail-padding-block-end: var(
+      --denhaag-description-list-lg-detail-padding-block-end,
+      var(--denhaag-space-md)
+    );
+    --denhaag-description-list-detail-padding-block-start: var(
+      --denhaag-description-list-lg-detail-padding-block-start,
+      var(--denhaag-space-md)
+    );
+    --denhaag-description-list-title-padding-block-end: var(
+      --denhaag-description-list-lg-title-padding-block-end,
+      var(--denhaag-space-md)
+    );
+    --denhaag-description-list-title-padding-block-start: var(
+      --denhaag-description-list-lg-title-padding-block-start,
+      var(--denhaag-space-md)
+    );
 
     grid-template-columns: 1fr 2fr;
   }
 
   .denhaag-description-list__title {
-    border-bottom: 1px solid var(--denhaag-description-list-border-color, lightgrey);
+    border-bottom: 1px solid var(--denhaag-description-list-border-color, var(--denhaag-color-grey-2));
   }
 }

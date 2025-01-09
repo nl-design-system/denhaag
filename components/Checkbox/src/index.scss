@@ -1,11 +1,12 @@
 .denhaag-checkbox {
+  aspect-ratio: 1;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   position: relative;
   overflow: var(--denhaag-checkbox-overflow, hidden);
-  width: var(--denhaag-checkbox-size, 1.25rem);
-  height: var(--denhaag-checkbox-size, 1.25rem);
+  width: var(--denhaag-checkbox-size, var(--denhaag-space-lg));
+  height: var(--denhaag-checkbox-size, var(--denhaag-space-lg));
   border-radius: var(--denhaag-checkbox-border-radius, var(--denhaag-border-radius));
 }
 
@@ -62,7 +63,7 @@
     var(--denhaag-checkbox-timing-function, ease-in);
   content: "";
   width: inherit;
-  height: var(--denhaag-checkbox-size, 1.25rem);
+  height: var(--denhaag-checkbox-size, var(--denhaag-space-lg));
   background-color: inherit;
   position: absolute;
   bottom: 0;

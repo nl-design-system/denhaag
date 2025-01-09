@@ -26,7 +26,7 @@ import { useEffect, useMemo } from "@storybook/client-api";
           applied = true;
         });
         useMemo( () => {
-          document.body.insertAdjacentHTML("beforeend", `<!-- BEGIN LIVECOM COMMUNICATION SCRIPT --><span class="lc5element"><!-- lcType="page" lcAccount="pZoMWhgBAAA=" lcTag="Storybook" --></span><span class="lc5element"><!-- lcType="mod" lcKey="LTR" lcGroup="1" --></span><div style="display: none;" id="LCcopyright"><a href="http://www.livecom.net">livecom.net chat</a></div><script charset="ISO-8859-1" type="text/javascript" defer="defer" src="//c60.livecom.net/5g/ws/pZoMWhgBAAA"></script><!-- END LIVECOM COMMUNICATION SCRIPT -->`);
+          document.body.insertAdjacentHTML("beforeend", `<!-- BEGIN LIVECOM COMMUNICATION SCRIPT --><span className="lc5element"><!-- lcType="page" lcAccount="pZoMWhgBAAA=" lcTag="Storybook" --></span><span className="lc5element"><!-- lcType="mod" lcKey="LTR" lcGroup="1" --></span><div style="display: none;" id="LCcopyright"><a href="http://www.livecom.net">livecom.net chat</a></div><script charset="ISO-8859-1" type="text/javascript" defer="defer" src="//c60.livecom.net/5g/ws/pZoMWhgBAAA"></script><!-- END LIVECOM COMMUNICATION SCRIPT -->`);
         }, [applied])
       }
       return <Story />;
@@ -45,24 +45,23 @@ import { useEffect, useMemo } from "@storybook/client-api";
 ### Default
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Default">
-    <main class="denhaag-storybook-floating-contact-wrapper">
-      <div id="denhaag-floating-contact" class="denhaag-floating-contact">
+    <main className="denhaag-storybook-floating-contact-wrapper">
+      <div id="denhaag-floating-contact" className="denhaag-floating-contact">
         <button
           id="denhaag-floating-contact-switch"
-          class="denhaag-floating-contact-switch"
+          className="denhaag-floating-contact-switch"
           aria-expanded="false"
           aria-label="Contact"
         >
-          <div id="denhaag-floating-contact__label" class="denhaag-floating-contact-switch__label">
+          <div id="denhaag-floating-contact__label" className="denhaag-floating-contact-switch__label">
             Contact
           </div>
-          <div class="denhaag-floating-contact-switch__icons">
-            <div class="denhaag-floating-contact-switch__icons-inner">
-              <div class="denhaag-floating-contact-switch__icon">
+          <div className="denhaag-floating-contact-switch__icons">
+            <div className="denhaag-floating-contact-switch__icons-inner">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="14"
                   height="13"
@@ -76,9 +75,9 @@ import { useEffect, useMemo } from "@storybook/client-api";
                   />
                 </svg>
               </div>
-              <div class="denhaag-floating-contact-switch__icon">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="14"
                   height="14"
@@ -92,9 +91,9 @@ import { useEffect, useMemo } from "@storybook/client-api";
                   />
                 </svg>
               </div>
-              <div class="denhaag-floating-contact-switch__icon">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="14"
                   height="12"
@@ -109,10 +108,10 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 </svg>
               </div>
             </div>
-            <div class="denhaag-floating-contact-switch__icons-inner">
-              <div class="denhaag-floating-contact-switch__icon">
+            <div className="denhaag-floating-contact-switch__icons-inner">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="10"
                   height="10"
@@ -129,12 +128,14 @@ import { useEffect, useMemo } from "@storybook/client-api";
             </div>
           </div>
         </button>
-        <div class="denhaag-floating-contact-overlay">
-          <h2 class="denhaag-floating-contact__heading denhaag-floating-contact__heading--zoomed-visible">Contact</h2>
-          <h3 class="denhaag-floating-contact__heading">Hoe kunnen we je helpen?</h3>
-          <div class="denhaag-floating-contact__item denhaag-floating-contact__item--online">
+        <div className="denhaag-floating-contact-overlay">
+          <h2 className="denhaag-floating-contact__heading denhaag-floating-contact__heading--zoomed-visible">
+            Contact
+          </h2>
+          <h3 className="denhaag-floating-contact__heading">Hoe kunnen we je helpen?</h3>
+          <div className="denhaag-floating-contact__item denhaag-floating-contact__item--online">
             <svg
-              class="denhaag-icon"
+              className="denhaag-icon"
               aria-hidden="true"
               width="28"
               height="25"
@@ -147,16 +148,16 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 fill="white"
               />
             </svg>
-            <div class="denhaag-floating-contact__item-meta">
-              <h4 class="denhaag-floating-contact__item-title">Chat</h4>
-              <a class="denhaag-floating-contact__item-link" tabindex="-1" href="#example-link">
+            <div className="denhaag-floating-contact__item-meta">
+              <h4 className="denhaag-floating-contact__item-title">Chat</h4>
+              <a className="denhaag-floating-contact__item-link" tabIndex="-1" href="#example-link">
                 Open chatgesprek
               </a>
             </div>
           </div>
-          <div class="denhaag-floating-contact__item">
+          <div className="denhaag-floating-contact__item">
             <svg
-              class="denhaag-icon"
+              className="denhaag-icon"
               aria-hidden="true"
               width="28"
               height="28"
@@ -169,16 +170,16 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 fill="white"
               />
             </svg>
-            <div class="denhaag-floating-contact__item-meta">
-              <h4 class="denhaag-floating-contact__item-title">Telefoon</h4>
-              <a class="denhaag-floating-contact__item-link" tabindex="-1" href="tel:+3107014070">
+            <div className="denhaag-floating-contact__item-meta">
+              <h4 className="denhaag-floating-contact__item-title">Telefoon</h4>
+              <a className="denhaag-floating-contact__item-link" tabIndex="-1" href="tel:+3107014070">
                 070 14 070
               </a>
             </div>
           </div>
-          <div class="denhaag-floating-contact__item">
+          <div className="denhaag-floating-contact__item">
             <svg
-              class="denhaag-icon"
+              className="denhaag-icon"
               aria-hidden="true"
               width="28"
               height="23"
@@ -191,9 +192,9 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 fill="#F8F7F5"
               />
             </svg>
-            <div class="denhaag-floating-contact__item-meta">
-              <h4 class="denhaag-floating-contact__item-title">Contactformulier</h4>
-              <a class="denhaag-floating-contact__item-link" tabindex="-1" href="#example-link">
+            <div className="denhaag-floating-contact__item-meta">
+              <h4 className="denhaag-floating-contact__item-title">Contactformulier</h4>
+              <a className="denhaag-floating-contact__item-link" tabIndex="-1" href="#example-link">
                 Stel uw vraag aan de gemeente
               </a>
             </div>
@@ -202,30 +203,28 @@ import { useEffect, useMemo } from "@storybook/client-api";
       </div>
     </main>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Hover
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Hover">
-    <main class="denhaag-storybook-floating-contact-wrapper">
-      <div id="denhaag-floating-contact" class="denhaag-floating-contact">
+    <main className="denhaag-storybook-floating-contact-wrapper">
+      <div id="denhaag-floating-contact" className="denhaag-floating-contact">
         <button
           id="denhaag-floating-contact-switch"
-          class="denhaag-floating-contact-switch denhaag-floating-contact-switch--hover"
+          className="denhaag-floating-contact-switch denhaag-floating-contact-switch--hover"
           aria-expanded="false"
           aria-label="Contact"
         >
-          <div id="denhaag-floating-contact__label" class="denhaag-floating-contact-switch__label">
+          <div id="denhaag-floating-contact__label" className="denhaag-floating-contact-switch__label">
             Contact
           </div>
-          <div class="denhaag-floating-contact-switch__icons">
-            <div class="denhaag-floating-contact-switch__icons-inner">
-              <div class="denhaag-floating-contact-switch__icon">
+          <div className="denhaag-floating-contact-switch__icons">
+            <div className="denhaag-floating-contact-switch__icons-inner">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="14"
                   height="13"
@@ -239,9 +238,9 @@ import { useEffect, useMemo } from "@storybook/client-api";
                   />
                 </svg>
               </div>
-              <div class="denhaag-floating-contact-switch__icon">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="14"
                   height="14"
@@ -255,9 +254,9 @@ import { useEffect, useMemo } from "@storybook/client-api";
                   />
                 </svg>
               </div>
-              <div class="denhaag-floating-contact-switch__icon">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="14"
                   height="12"
@@ -272,10 +271,10 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 </svg>
               </div>
             </div>
-            <div class="denhaag-floating-contact-switch__icons-inner">
-              <div class="denhaag-floating-contact-switch__icon">
+            <div className="denhaag-floating-contact-switch__icons-inner">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="10"
                   height="10"
@@ -292,12 +291,14 @@ import { useEffect, useMemo } from "@storybook/client-api";
             </div>
           </div>
         </button>
-        <div class="denhaag-floating-contact-overlay">
-          <h2 class="denhaag-floating-contact__heading denhaag-floating-contact__heading--zoomed-visible">Contact</h2>
-          <h3 class="denhaag-floating-contact__heading">Hoe kunnen we je helpen?</h3>
-          <div class="denhaag-floating-contact__item denhaag-floating-contact__item--online">
+        <div className="denhaag-floating-contact-overlay">
+          <h2 className="denhaag-floating-contact__heading denhaag-floating-contact__heading--zoomed-visible">
+            Contact
+          </h2>
+          <h3 className="denhaag-floating-contact__heading">Hoe kunnen we je helpen?</h3>
+          <div className="denhaag-floating-contact__item denhaag-floating-contact__item--online">
             <svg
-              class="denhaag-icon"
+              className="denhaag-icon"
               aria-hidden="true"
               width="28"
               height="25"
@@ -310,16 +311,16 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 fill="white"
               />
             </svg>
-            <div class="denhaag-floating-contact__item-meta">
-              <h4 class="denhaag-floating-contact__item-title">Chat</h4>
-              <a class="denhaag-floating-contact__item-link" tabindex="-1" href="#example-link">
+            <div className="denhaag-floating-contact__item-meta">
+              <h4 className="denhaag-floating-contact__item-title">Chat</h4>
+              <a className="denhaag-floating-contact__item-link" tabIndex="-1" href="#example-link">
                 Open chatgesprek
               </a>
             </div>
           </div>
-          <div class="denhaag-floating-contact__item">
+          <div className="denhaag-floating-contact__item">
             <svg
-              class="denhaag-icon"
+              className="denhaag-icon"
               aria-hidden="true"
               width="28"
               height="28"
@@ -332,16 +333,16 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 fill="white"
               />
             </svg>
-            <div class="denhaag-floating-contact__item-meta">
-              <h4 class="denhaag-floating-contact__item-title">Telefoon</h4>
-              <a class="denhaag-floating-contact__item-link" tabindex="-1" href="tel:+3107014070">
+            <div className="denhaag-floating-contact__item-meta">
+              <h4 className="denhaag-floating-contact__item-title">Telefoon</h4>
+              <a className="denhaag-floating-contact__item-link" tabIndex="-1" href="tel:+3107014070">
                 070 14 070
               </a>
             </div>
           </div>
-          <div class="denhaag-floating-contact__item">
+          <div className="denhaag-floating-contact__item">
             <svg
-              class="denhaag-icon"
+              className="denhaag-icon"
               aria-hidden="true"
               width="28"
               height="23"
@@ -354,9 +355,9 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 fill="#F8F7F5"
               />
             </svg>
-            <div class="denhaag-floating-contact__item-meta">
-              <h4 class="denhaag-floating-contact__item-title">Contactformulier</h4>
-              <a class="denhaag-floating-contact__item-link" tabindex="-1" href="#example-link">
+            <div className="denhaag-floating-contact__item-meta">
+              <h4 className="denhaag-floating-contact__item-title">Contactformulier</h4>
+              <a className="denhaag-floating-contact__item-link" tabIndex="-1" href="#example-link">
                 Stel uw vraag aan de gemeente
               </a>
             </div>
@@ -365,30 +366,28 @@ import { useEffect, useMemo } from "@storybook/client-api";
       </div>
     </main>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Focus
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Focus">
-    <main class="denhaag-storybook-floating-contact-wrapper">
-      <div id="denhaag-floating-contact" class="denhaag-floating-contact">
+    <main className="denhaag-storybook-floating-contact-wrapper">
+      <div id="denhaag-floating-contact" className="denhaag-floating-contact">
         <button
           id="denhaag-floating-contact-switch"
-          class="denhaag-floating-contact-switch denhaag-floating-contact-switch--focus"
+          className="denhaag-floating-contact-switch denhaag-floating-contact-switch--focus"
           aria-expanded="false"
           aria-label="Contact"
         >
-          <div id="denhaag-floating-contact__label" class="denhaag-floating-contact-switch__label">
+          <div id="denhaag-floating-contact__label" className="denhaag-floating-contact-switch__label">
             Contact
           </div>
-          <div class="denhaag-floating-contact-switch__icons">
-            <div class="denhaag-floating-contact-switch__icons-inner">
-              <div class="denhaag-floating-contact-switch__icon">
+          <div className="denhaag-floating-contact-switch__icons">
+            <div className="denhaag-floating-contact-switch__icons-inner">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="14"
                   height="13"
@@ -402,9 +401,9 @@ import { useEffect, useMemo } from "@storybook/client-api";
                   />
                 </svg>
               </div>
-              <div class="denhaag-floating-contact-switch__icon">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="14"
                   height="14"
@@ -418,9 +417,9 @@ import { useEffect, useMemo } from "@storybook/client-api";
                   />
                 </svg>
               </div>
-              <div class="denhaag-floating-contact-switch__icon">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="14"
                   height="12"
@@ -435,10 +434,10 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 </svg>
               </div>
             </div>
-            <div class="denhaag-floating-contact-switch__icons-inner">
-              <div class="denhaag-floating-contact-switch__icon">
+            <div className="denhaag-floating-contact-switch__icons-inner">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="10"
                   height="10"
@@ -455,12 +454,14 @@ import { useEffect, useMemo } from "@storybook/client-api";
             </div>
           </div>
         </button>
-        <div class="denhaag-floating-contact-overlay">
-          <h2 class="denhaag-floating-contact__heading denhaag-floating-contact__heading--zoomed-visible">Contact</h2>
-          <h3 class="denhaag-floating-contact__heading">Hoe kunnen we je helpen?</h3>
-          <div class="denhaag-floating-contact__item denhaag-floating-contact__item--online">
+        <div className="denhaag-floating-contact-overlay">
+          <h2 className="denhaag-floating-contact__heading denhaag-floating-contact__heading--zoomed-visible">
+            Contact
+          </h2>
+          <h3 className="denhaag-floating-contact__heading">Hoe kunnen we je helpen?</h3>
+          <div className="denhaag-floating-contact__item denhaag-floating-contact__item--online">
             <svg
-              class="denhaag-icon"
+              className="denhaag-icon"
               aria-hidden="true"
               width="28"
               height="25"
@@ -473,16 +474,16 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 fill="white"
               />
             </svg>
-            <div class="denhaag-floating-contact__item-meta">
-              <h4 class="denhaag-floating-contact__item-title">Chat</h4>
-              <a class="denhaag-floating-contact__item-link" tabindex="-1" href="#example-link">
+            <div className="denhaag-floating-contact__item-meta">
+              <h4 className="denhaag-floating-contact__item-title">Chat</h4>
+              <a className="denhaag-floating-contact__item-link" tabIndex="-1" href="#example-link">
                 Open chatgesprek
               </a>
             </div>
           </div>
-          <div class="denhaag-floating-contact__item">
+          <div className="denhaag-floating-contact__item">
             <svg
-              class="denhaag-icon"
+              className="denhaag-icon"
               aria-hidden="true"
               width="28"
               height="28"
@@ -495,16 +496,16 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 fill="white"
               />
             </svg>
-            <div class="denhaag-floating-contact__item-meta">
-              <h4 class="denhaag-floating-contact__item-title">Telefoon</h4>
-              <a class="denhaag-floating-contact__item-link" tabindex="-1" href="tel:+3107014070">
+            <div className="denhaag-floating-contact__item-meta">
+              <h4 className="denhaag-floating-contact__item-title">Telefoon</h4>
+              <a className="denhaag-floating-contact__item-link" tabIndex="-1" href="tel:+3107014070">
                 070 14 070
               </a>
             </div>
           </div>
-          <div class="denhaag-floating-contact__item">
+          <div className="denhaag-floating-contact__item">
             <svg
-              class="denhaag-icon"
+              className="denhaag-icon"
               aria-hidden="true"
               width="28"
               height="23"
@@ -517,9 +518,9 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 fill="#F8F7F5"
               />
             </svg>
-            <div class="denhaag-floating-contact__item-meta">
-              <h4 class="denhaag-floating-contact__item-title">Contactformulier</h4>
-              <a class="denhaag-floating-contact__item-link" tabindex="-1" href="#example-link">
+            <div className="denhaag-floating-contact__item-meta">
+              <h4 className="denhaag-floating-contact__item-title">Contactformulier</h4>
+              <a className="denhaag-floating-contact__item-link" tabIndex="-1" href="#example-link">
                 Stel uw vraag aan de gemeente
               </a>
             </div>
@@ -528,30 +529,28 @@ import { useEffect, useMemo } from "@storybook/client-api";
       </div>
     </main>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Chat offline
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Chat offline">
-    <main class="denhaag-storybook-floating-contact-wrapper">
-      <div id="denhaag-floating-contact" class="denhaag-floating-contact">
+    <main className="denhaag-storybook-floating-contact-wrapper">
+      <div id="denhaag-floating-contact" className="denhaag-floating-contact">
         <button
           id="denhaag-floating-contact-switch"
-          class="denhaag-floating-contact-switch"
+          className="denhaag-floating-contact-switch"
           aria-expanded="false"
           aria-label="Contact"
         >
-          <div id="denhaag-floating-contact__label" class="denhaag-floating-contact-switch__label">
+          <div id="denhaag-floating-contact__label" className="denhaag-floating-contact-switch__label">
             Contact
           </div>
-          <div class="denhaag-floating-contact-switch__icons">
-            <div class="denhaag-floating-contact-switch__icons-inner">
-              <div class="denhaag-floating-contact-switch__icon">
+          <div className="denhaag-floating-contact-switch__icons">
+            <div className="denhaag-floating-contact-switch__icons-inner">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="14"
                   height="13"
@@ -565,9 +564,9 @@ import { useEffect, useMemo } from "@storybook/client-api";
                   />
                 </svg>
               </div>
-              <div class="denhaag-floating-contact-switch__icon">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="14"
                   height="14"
@@ -581,9 +580,9 @@ import { useEffect, useMemo } from "@storybook/client-api";
                   />
                 </svg>
               </div>
-              <div class="denhaag-floating-contact-switch__icon">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="14"
                   height="12"
@@ -598,10 +597,10 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 </svg>
               </div>
             </div>
-            <div class="denhaag-floating-contact-switch__icons-inner">
-              <div class="denhaag-floating-contact-switch__icon">
+            <div className="denhaag-floating-contact-switch__icons-inner">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="10"
                   height="10"
@@ -618,12 +617,14 @@ import { useEffect, useMemo } from "@storybook/client-api";
             </div>
           </div>
         </button>
-        <div class="denhaag-floating-contact-overlay">
-          <h2 class="denhaag-floating-contact__heading denhaag-floating-contact__heading--zoomed-visible">Contact</h2>
-          <h3 class="denhaag-floating-contact__heading">Hoe kunnen we je helpen?</h3>
-          <div class="denhaag-floating-contact__item denhaag-floating-contact__item--offline">
+        <div className="denhaag-floating-contact-overlay">
+          <h2 className="denhaag-floating-contact__heading denhaag-floating-contact__heading--zoomed-visible">
+            Contact
+          </h2>
+          <h3 className="denhaag-floating-contact__heading">Hoe kunnen we je helpen?</h3>
+          <div className="denhaag-floating-contact__item denhaag-floating-contact__item--offline">
             <svg
-              class="denhaag-icon"
+              className="denhaag-icon"
               aria-hidden="true"
               width="28"
               height="25"
@@ -636,14 +637,14 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 fill="white"
               />
             </svg>
-            <div class="denhaag-floating-contact__item-meta">
-              <h4 class="denhaag-floating-contact__item-title">Chat</h4>
+            <div className="denhaag-floating-contact__item-meta">
+              <h4 className="denhaag-floating-contact__item-title">Chat</h4>
               Offline
             </div>
           </div>
-          <div class="denhaag-floating-contact__item">
+          <div className="denhaag-floating-contact__item">
             <svg
-              class="denhaag-icon"
+              className="denhaag-icon"
               aria-hidden="true"
               width="28"
               height="28"
@@ -656,16 +657,16 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 fill="white"
               />
             </svg>
-            <div class="denhaag-floating-contact__item-meta">
-              <h4 class="denhaag-floating-contact__item-title">Telefoon</h4>
-              <a class="denhaag-floating-contact__item-link" tabindex="-1" href="tel:+3107014070">
+            <div className="denhaag-floating-contact__item-meta">
+              <h4 className="denhaag-floating-contact__item-title">Telefoon</h4>
+              <a className="denhaag-floating-contact__item-link" tabIndex="-1" href="tel:+3107014070">
                 070 14 070
               </a>
             </div>
           </div>
-          <div class="denhaag-floating-contact__item">
+          <div className="denhaag-floating-contact__item">
             <svg
-              class="denhaag-icon"
+              className="denhaag-icon"
               aria-hidden="true"
               width="28"
               height="23"
@@ -678,9 +679,9 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 fill="#F8F7F5"
               />
             </svg>
-            <div class="denhaag-floating-contact__item-meta">
-              <h4 class="denhaag-floating-contact__item-title">Contactformulier</h4>
-              <a class="denhaag-floating-contact__item-link" tabindex="-1" href="#example-link">
+            <div className="denhaag-floating-contact__item-meta">
+              <h4 className="denhaag-floating-contact__item-title">Contactformulier</h4>
+              <a className="denhaag-floating-contact__item-link" tabIndex="-1" href="#example-link">
                 Stel uw vraag aan de gemeente
               </a>
             </div>
@@ -689,30 +690,28 @@ import { useEffect, useMemo } from "@storybook/client-api";
       </div>
     </main>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Item Hover
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Item Hover">
-    <main class="denhaag-storybook-floating-contact-wrapper">
-      <div id="denhaag-floating-contact" class="denhaag-floating-contact">
+    <main className="denhaag-storybook-floating-contact-wrapper">
+      <div id="denhaag-floating-contact" className="denhaag-floating-contact">
         <button
           id="denhaag-floating-contact-switch"
-          class="denhaag-floating-contact-switch"
+          className="denhaag-floating-contact-switch"
           aria-expanded="true"
           aria-label="Contact"
         >
-          <div id="denhaag-floating-contact__label" class="denhaag-floating-contact-switch__label">
+          <div id="denhaag-floating-contact__label" className="denhaag-floating-contact-switch__label">
             Contact
           </div>
-          <div class="denhaag-floating-contact-switch__icons">
-            <div class="denhaag-floating-contact-switch__icons-inner">
-              <div class="denhaag-floating-contact-switch__icon">
+          <div className="denhaag-floating-contact-switch__icons">
+            <div className="denhaag-floating-contact-switch__icons-inner">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="14"
                   height="13"
@@ -726,9 +725,9 @@ import { useEffect, useMemo } from "@storybook/client-api";
                   />
                 </svg>
               </div>
-              <div class="denhaag-floating-contact-switch__icon">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="14"
                   height="14"
@@ -742,9 +741,9 @@ import { useEffect, useMemo } from "@storybook/client-api";
                   />
                 </svg>
               </div>
-              <div class="denhaag-floating-contact-switch__icon">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="14"
                   height="12"
@@ -759,10 +758,10 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 </svg>
               </div>
             </div>
-            <div class="denhaag-floating-contact-switch__icons-inner">
-              <div class="denhaag-floating-contact-switch__icon">
+            <div className="denhaag-floating-contact-switch__icons-inner">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="10"
                   height="10"
@@ -779,12 +778,14 @@ import { useEffect, useMemo } from "@storybook/client-api";
             </div>
           </div>
         </button>
-        <div class="denhaag-floating-contact-overlay">
-          <h2 class="denhaag-floating-contact__heading denhaag-floating-contact__heading--zoomed-visible">Contact</h2>
-          <h3 class="denhaag-floating-contact__heading">Hoe kunnen we je helpen?</h3>
-          <div class="denhaag-floating-contact__item denhaag-floating-contact__item--online">
+        <div className="denhaag-floating-contact-overlay">
+          <h2 className="denhaag-floating-contact__heading denhaag-floating-contact__heading--zoomed-visible">
+            Contact
+          </h2>
+          <h3 className="denhaag-floating-contact__heading">Hoe kunnen we je helpen?</h3>
+          <div className="denhaag-floating-contact__item denhaag-floating-contact__item--online">
             <svg
-              class="denhaag-icon"
+              className="denhaag-icon"
               aria-hidden="true"
               width="28"
               height="25"
@@ -797,16 +798,16 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 fill="white"
               />
             </svg>
-            <div class="denhaag-floating-contact__item-meta">
-              <h4 class="denhaag-floating-contact__item-title">Chat</h4>
-              <a class="denhaag-floating-contact__item-link" tabindex="0" href="#example-link">
+            <div className="denhaag-floating-contact__item-meta">
+              <h4 className="denhaag-floating-contact__item-title">Chat</h4>
+              <a className="denhaag-floating-contact__item-link" tabIndex="0" href="#example-link">
                 Open chatgesprek
               </a>
             </div>
           </div>
-          <div class="denhaag-floating-contact__item denhaag-floating-contact__item--hover">
+          <div className="denhaag-floating-contact__item denhaag-floating-contact__item--hover">
             <svg
-              class="denhaag-icon"
+              className="denhaag-icon"
               aria-hidden="true"
               width="28"
               height="28"
@@ -819,16 +820,16 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 fill="white"
               />
             </svg>
-            <div class="denhaag-floating-contact__item-meta">
-              <h4 class="denhaag-floating-contact__item-title">Telefoon</h4>
-              <a class="denhaag-floating-contact__item-link" tabindex="0" href="tel:+3107014070">
+            <div className="denhaag-floating-contact__item-meta">
+              <h4 className="denhaag-floating-contact__item-title">Telefoon</h4>
+              <a className="denhaag-floating-contact__item-link" tabIndex="0" href="tel:+3107014070">
                 070 14 070
               </a>
             </div>
           </div>
-          <div class="denhaag-floating-contact__item">
+          <div className="denhaag-floating-contact__item">
             <svg
-              class="denhaag-icon"
+              className="denhaag-icon"
               aria-hidden="true"
               width="28"
               height="23"
@@ -841,9 +842,9 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 fill="#F8F7F5"
               />
             </svg>
-            <div class="denhaag-floating-contact__item-meta">
-              <h4 class="denhaag-floating-contact__item-title">Contactformulier</h4>
-              <a class="denhaag-floating-contact__item-link" tabindex="0" href="#example-link">
+            <div className="denhaag-floating-contact__item-meta">
+              <h4 className="denhaag-floating-contact__item-title">Contactformulier</h4>
+              <a className="denhaag-floating-contact__item-link" tabIndex="0" href="#example-link">
                 Stel uw vraag aan de gemeente
               </a>
             </div>
@@ -852,30 +853,28 @@ import { useEffect, useMemo } from "@storybook/client-api";
       </div>
     </main>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Item Focus
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Item Focus">
-    <main class="denhaag-storybook-floating-contact-wrapper">
-      <div id="denhaag-floating-contact" class="denhaag-floating-contact">
+    <main className="denhaag-storybook-floating-contact-wrapper">
+      <div id="denhaag-floating-contact" className="denhaag-floating-contact">
         <button
           id="denhaag-floating-contact-switch"
-          class="denhaag-floating-contact-switch"
+          className="denhaag-floating-contact-switch"
           aria-expanded="true"
           aria-label="Contact"
         >
-          <div id="denhaag-floating-contact__label" class="denhaag-floating-contact-switch__label">
+          <div id="denhaag-floating-contact__label" className="denhaag-floating-contact-switch__label">
             Contact
           </div>
-          <div class="denhaag-floating-contact-switch__icons">
-            <div class="denhaag-floating-contact-switch__icons-inner">
-              <div class="denhaag-floating-contact-switch__icon">
+          <div className="denhaag-floating-contact-switch__icons">
+            <div className="denhaag-floating-contact-switch__icons-inner">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="14"
                   height="13"
@@ -889,9 +888,9 @@ import { useEffect, useMemo } from "@storybook/client-api";
                   />
                 </svg>
               </div>
-              <div class="denhaag-floating-contact-switch__icon">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="14"
                   height="14"
@@ -905,9 +904,9 @@ import { useEffect, useMemo } from "@storybook/client-api";
                   />
                 </svg>
               </div>
-              <div class="denhaag-floating-contact-switch__icon">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="14"
                   height="12"
@@ -922,10 +921,10 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 </svg>
               </div>
             </div>
-            <div class="denhaag-floating-contact-switch__icons-inner">
-              <div class="denhaag-floating-contact-switch__icon">
+            <div className="denhaag-floating-contact-switch__icons-inner">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="10"
                   height="10"
@@ -942,12 +941,14 @@ import { useEffect, useMemo } from "@storybook/client-api";
             </div>
           </div>
         </button>
-        <div class="denhaag-floating-contact-overlay">
-          <h2 class="denhaag-floating-contact__heading denhaag-floating-contact__heading--zoomed-visible">Contact</h2>
-          <h3 class="denhaag-floating-contact__heading">Hoe kunnen we je helpen?</h3>
-          <div class="denhaag-floating-contact__item denhaag-floating-contact__item--online">
+        <div className="denhaag-floating-contact-overlay">
+          <h2 className="denhaag-floating-contact__heading denhaag-floating-contact__heading--zoomed-visible">
+            Contact
+          </h2>
+          <h3 className="denhaag-floating-contact__heading">Hoe kunnen we je helpen?</h3>
+          <div className="denhaag-floating-contact__item denhaag-floating-contact__item--online">
             <svg
-              class="denhaag-icon"
+              className="denhaag-icon"
               aria-hidden="true"
               width="28"
               height="25"
@@ -960,16 +961,16 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 fill="white"
               />
             </svg>
-            <div class="denhaag-floating-contact__item-meta">
-              <h4 class="denhaag-floating-contact__item-title">Chat</h4>
-              <a class="denhaag-floating-contact__item-link" tabindex="0" href="#example-link">
+            <div className="denhaag-floating-contact__item-meta">
+              <h4 className="denhaag-floating-contact__item-title">Chat</h4>
+              <a className="denhaag-floating-contact__item-link" tabIndex="0" href="#example-link">
                 Open chatgesprek
               </a>
             </div>
           </div>
-          <div class="denhaag-floating-contact__item denhaag-floating-contact__item--focus">
+          <div className="denhaag-floating-contact__item denhaag-floating-contact__item--focus">
             <svg
-              class="denhaag-icon"
+              className="denhaag-icon"
               aria-hidden="true"
               width="28"
               height="28"
@@ -982,16 +983,16 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 fill="white"
               />
             </svg>
-            <div class="denhaag-floating-contact__item-meta">
-              <h4 class="denhaag-floating-contact__item-title">Telefoon</h4>
-              <a class="denhaag-floating-contact__item-link" tabindex="0" href="tel:+3107014070">
+            <div className="denhaag-floating-contact__item-meta">
+              <h4 className="denhaag-floating-contact__item-title">Telefoon</h4>
+              <a className="denhaag-floating-contact__item-link" tabIndex="0" href="tel:+3107014070">
                 070 14 070
               </a>
             </div>
           </div>
-          <div class="denhaag-floating-contact__item">
+          <div className="denhaag-floating-contact__item">
             <svg
-              class="denhaag-icon"
+              className="denhaag-icon"
               aria-hidden="true"
               width="28"
               height="23"
@@ -1004,9 +1005,9 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 fill="#F8F7F5"
               />
             </svg>
-            <div class="denhaag-floating-contact__item-meta">
-              <h4 class="denhaag-floating-contact__item-title">Contactformulier</h4>
-              <a class="denhaag-floating-contact__item-link" tabindex="0" href="#example-link">
+            <div className="denhaag-floating-contact__item-meta">
+              <h4 className="denhaag-floating-contact__item-title">Contactformulier</h4>
+              <a className="denhaag-floating-contact__item-link" tabIndex="0" href="#example-link">
                 Stel uw vraag aan de gemeente
               </a>
             </div>
@@ -1015,30 +1016,28 @@ import { useEffect, useMemo } from "@storybook/client-api";
       </div>
     </main>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Live Chat
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Live Chat">
-    <main class="denhaag-storybook-floating-contact-wrapper">
-      <div id="denhaag-floating-contact" class="denhaag-floating-contact">
+    <main className="denhaag-storybook-floating-contact-wrapper">
+      <div id="denhaag-floating-contact" className="denhaag-floating-contact">
         <button
           id="denhaag-floating-contact-switch"
-          class="denhaag-floating-contact-switch"
+          className="denhaag-floating-contact-switch"
           aria-expanded="true"
           aria-label="Contact"
         >
-          <div id="denhaag-floating-contact__label" class="denhaag-floating-contact-switch__label">
+          <div id="denhaag-floating-contact__label" className="denhaag-floating-contact-switch__label">
             Contact
           </div>
-          <div class="denhaag-floating-contact-switch__icons">
-            <div class="denhaag-floating-contact-switch__icons-inner">
-              <div class="denhaag-floating-contact-switch__icon">
+          <div className="denhaag-floating-contact-switch__icons">
+            <div className="denhaag-floating-contact-switch__icons-inner">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="14"
                   height="13"
@@ -1052,9 +1051,9 @@ import { useEffect, useMemo } from "@storybook/client-api";
                   />
                 </svg>
               </div>
-              <div class="denhaag-floating-contact-switch__icon">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="14"
                   height="14"
@@ -1068,9 +1067,9 @@ import { useEffect, useMemo } from "@storybook/client-api";
                   />
                 </svg>
               </div>
-              <div class="denhaag-floating-contact-switch__icon">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="14"
                   height="12"
@@ -1085,10 +1084,10 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 </svg>
               </div>
             </div>
-            <div class="denhaag-floating-contact-switch__icons-inner">
-              <div class="denhaag-floating-contact-switch__icon">
+            <div className="denhaag-floating-contact-switch__icons-inner">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="10"
                   height="10"
@@ -1105,12 +1104,14 @@ import { useEffect, useMemo } from "@storybook/client-api";
             </div>
           </div>
         </button>
-        <div class="denhaag-floating-contact-overlay">
-          <h2 class="denhaag-floating-contact__heading denhaag-floating-contact__heading--zoomed-visible">Contact</h2>
-          <h3 class="denhaag-floating-contact__heading">Hoe kunnen we je helpen?</h3>
-          <div class="denhaag-floating-contact__item denhaag-floating-contact__item--online">
+        <div className="denhaag-floating-contact-overlay">
+          <h2 className="denhaag-floating-contact__heading denhaag-floating-contact__heading--zoomed-visible">
+            Contact
+          </h2>
+          <h3 className="denhaag-floating-contact__heading">Hoe kunnen we je helpen?</h3>
+          <div className="denhaag-floating-contact__item denhaag-floating-contact__item--online">
             <svg
-              class="denhaag-icon"
+              className="denhaag-icon"
               aria-hidden="true"
               width="28"
               height="25"
@@ -1123,16 +1124,16 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 fill="white"
               />
             </svg>
-            <div class="denhaag-floating-contact__item-meta">
-              <h4 class="denhaag-floating-contact__item-title">Chat</h4>
-              <a id="livecom-trigger" class="denhaag-floating-contact__item-link" tabindex="0" href="#example-link">
+            <div className="denhaag-floating-contact__item-meta">
+              <h4 className="denhaag-floating-contact__item-title">Chat</h4>
+              <a id="livecom-trigger" className="denhaag-floating-contact__item-link" tabIndex="0" href="#example-link">
                 Open chatgesprek
               </a>
             </div>
           </div>
-          <div class="denhaag-floating-contact__item">
+          <div className="denhaag-floating-contact__item">
             <svg
-              class="denhaag-icon"
+              className="denhaag-icon"
               aria-hidden="true"
               width="28"
               height="28"
@@ -1145,16 +1146,16 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 fill="white"
               />
             </svg>
-            <div class="denhaag-floating-contact__item-meta">
-              <h4 class="denhaag-floating-contact__item-title">Telefoon</h4>
-              <a class="denhaag-floating-contact__item-link" tabindex="0" href="tel:+3107014070">
+            <div className="denhaag-floating-contact__item-meta">
+              <h4 className="denhaag-floating-contact__item-title">Telefoon</h4>
+              <a className="denhaag-floating-contact__item-link" tabIndex="0" href="tel:+3107014070">
                 070 14 070
               </a>
             </div>
           </div>
-          <div class="denhaag-floating-contact__item">
+          <div className="denhaag-floating-contact__item">
             <svg
-              class="denhaag-icon"
+              className="denhaag-icon"
               aria-hidden="true"
               width="28"
               height="23"
@@ -1167,9 +1168,9 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 fill="#F8F7F5"
               />
             </svg>
-            <div class="denhaag-floating-contact__item-meta">
-              <h4 class="denhaag-floating-contact__item-title">Contactformulier</h4>
-              <a class="denhaag-floating-contact__item-link" tabindex="0" href="#example-link">
+            <div className="denhaag-floating-contact__item-meta">
+              <h4 className="denhaag-floating-contact__item-title">Contactformulier</h4>
+              <a className="denhaag-floating-contact__item-link" tabIndex="0" href="#example-link">
                 Stel uw vraag aan de gemeente
               </a>
             </div>
@@ -1178,30 +1179,28 @@ import { useEffect, useMemo } from "@storybook/client-api";
       </div>
     </main>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>
 
 ### Zoomed
 
 <Canvas>
-  {/* eslint-disable react/no-unknown-property */}
   <Story name="Zoomed">
-    <main class="denhaag-storybook-floating-contact-wrapper">
-      <div id="denhaag-floating-contact" class="denhaag-floating-contact denhaag-floating-contact--zoomed">
+    <main className="denhaag-storybook-floating-contact-wrapper">
+      <div id="denhaag-floating-contact" className="denhaag-floating-contact denhaag-floating-contact--zoomed">
         <button
           id="denhaag-floating-contact-switch"
-          class="denhaag-floating-contact-switch"
+          className="denhaag-floating-contact-switch"
           aria-expanded="false"
           aria-label="Contact"
         >
-          <div id="denhaag-floating-contact__label" class="denhaag-floating-contact-switch__label">
+          <div id="denhaag-floating-contact__label" className="denhaag-floating-contact-switch__label">
             Contact
           </div>
-          <div class="denhaag-floating-contact-switch__icons">
-            <div class="denhaag-floating-contact-switch__icons-inner">
-              <div class="denhaag-floating-contact-switch__icon">
+          <div className="denhaag-floating-contact-switch__icons">
+            <div className="denhaag-floating-contact-switch__icons-inner">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="14"
                   height="13"
@@ -1215,9 +1214,9 @@ import { useEffect, useMemo } from "@storybook/client-api";
                   />
                 </svg>
               </div>
-              <div class="denhaag-floating-contact-switch__icon">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="14"
                   height="14"
@@ -1231,9 +1230,9 @@ import { useEffect, useMemo } from "@storybook/client-api";
                   />
                 </svg>
               </div>
-              <div class="denhaag-floating-contact-switch__icon">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="14"
                   height="12"
@@ -1248,10 +1247,10 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 </svg>
               </div>
             </div>
-            <div class="denhaag-floating-contact-switch__icons-inner">
-              <div class="denhaag-floating-contact-switch__icon">
+            <div className="denhaag-floating-contact-switch__icons-inner">
+              <div className="denhaag-floating-contact-switch__icon">
                 <svg
-                  class="denhaag-icon"
+                  className="denhaag-icon"
                   aria-hidden="true"
                   width="10"
                   height="10"
@@ -1268,12 +1267,14 @@ import { useEffect, useMemo } from "@storybook/client-api";
             </div>
           </div>
         </button>
-        <div class="denhaag-floating-contact-overlay">
-          <h2 class="denhaag-floating-contact__heading denhaag-floating-contact__heading--zoomed-visible">Contact</h2>
-          <h3 class="denhaag-floating-contact__heading">Hoe kunnen we je helpen?</h3>
-          <div class="denhaag-floating-contact__item denhaag-floating-contact__item--online">
+        <div className="denhaag-floating-contact-overlay">
+          <h2 className="denhaag-floating-contact__heading denhaag-floating-contact__heading--zoomed-visible">
+            Contact
+          </h2>
+          <h3 className="denhaag-floating-contact__heading">Hoe kunnen we je helpen?</h3>
+          <div className="denhaag-floating-contact__item denhaag-floating-contact__item--online">
             <svg
-              class="denhaag-icon"
+              className="denhaag-icon"
               aria-hidden="true"
               width="28"
               height="25"
@@ -1286,16 +1287,16 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 fill="white"
               />
             </svg>
-            <div class="denhaag-floating-contact__item-meta">
-              <h4 class="denhaag-floating-contact__item-title">Chat</h4>
-              <a class="denhaag-floating-contact__item-link" tabindex="-1" href="#example-link">
+            <div className="denhaag-floating-contact__item-meta">
+              <h4 className="denhaag-floating-contact__item-title">Chat</h4>
+              <a className="denhaag-floating-contact__item-link" tabIndex="-1" href="#example-link">
                 Open chatgesprek
               </a>
             </div>
           </div>
-          <div class="denhaag-floating-contact__item">
+          <div className="denhaag-floating-contact__item">
             <svg
-              class="denhaag-icon"
+              className="denhaag-icon"
               aria-hidden="true"
               width="28"
               height="28"
@@ -1308,16 +1309,16 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 fill="white"
               />
             </svg>
-            <div class="denhaag-floating-contact__item-meta">
-              <h4 class="denhaag-floating-contact__item-title">Telefoon</h4>
-              <a class="denhaag-floating-contact__item-link" tabindex="-1" href="tel:+3107014070">
+            <div className="denhaag-floating-contact__item-meta">
+              <h4 className="denhaag-floating-contact__item-title">Telefoon</h4>
+              <a className="denhaag-floating-contact__item-link" tabIndex="-1" href="tel:+3107014070">
                 070 14 070
               </a>
             </div>
           </div>
-          <div class="denhaag-floating-contact__item">
+          <div className="denhaag-floating-contact__item">
             <svg
-              class="denhaag-icon"
+              className="denhaag-icon"
               aria-hidden="true"
               width="28"
               height="23"
@@ -1330,9 +1331,9 @@ import { useEffect, useMemo } from "@storybook/client-api";
                 fill="#F8F7F5"
               />
             </svg>
-            <div class="denhaag-floating-contact__item-meta">
-              <h4 class="denhaag-floating-contact__item-title">Contactformulier</h4>
-              <a class="denhaag-floating-contact__item-link" tabindex="-1" href="#example-link">
+            <div className="denhaag-floating-contact__item-meta">
+              <h4 className="denhaag-floating-contact__item-title">Contactformulier</h4>
+              <a className="denhaag-floating-contact__item-link" tabIndex="-1" href="#example-link">
                 Stel uw vraag aan de gemeente
               </a>
             </div>
@@ -1341,5 +1342,4 @@ import { useEffect, useMemo } from "@storybook/client-api";
       </div>
     </main>
   </Story>
-  {/* eslint-enable react/no-unknown-property */}
 </Canvas>

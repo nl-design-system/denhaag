@@ -1,24 +1,19 @@
 @mixin inline-start-separator {
-  border-inline-start: var(--denhaag-article-meta-horizontal-item-border-width)
-    var(--denhaag-article-meta-horizontal-item-border-style, solid)
-    var(--denhaag-article-meta-horizontal-item-border-color, var(--denhaag-article-meta-border-color));
-  padding-inline-start: var(--denhaag-article-meta-gap);
+  border-inline-start: var(--denhaag-article-meta-border-width, 1px) solid
+    var(--denhaag-article-meta-border-color, var(--denhaag-color-grey-2));
+  padding-inline-start: var(--denhaag-article-meta-gap, var(--denhaag-space-sm));
 }
 
 .denhaag-article-meta {
-  border-block-start: var(--denhaag-article-meta-border-width) var(--denhaag-article-meta-border-style)
-    var(--denhaag-article-meta-border-color);
-  color: var(--denhaag-article-meta-color);
+  border-block-start: var(--denhaag-article-meta-border-width, 1px) solid
+    var(--denhaag-article-meta-border-color, var(--denhaag-color-grey-2));
+  color: var(--denhaag-article-meta-color, var(--denhaag-color-grey-4));
   display: flex;
   flex-direction: column;
-  line-height: var(--denhaag-article-meta-line-height);
-  gap: var(--denhaag-article-meta-gap);
-  font-family: var(--denhaag-article-meta-font-family);
-  font-weight: var(--denhaag-article-meta-font-weight);
-  font-size: var(--denhaag-article-meta-font-size);
-  padding-block-start: var(--denhaag-article-meta-padding-block-start);
-  padding-block-end: var(--denhaag-article-meta-padding-block-end);
-  margin-block-start: var(--denhaag-article-meta-margin-block-start);
+  line-height: var(--denhaag-typography-scale-base-line-height);
+  gap: var(--denhaag-article-meta-gap, var(--denhaag-space-sm));
+  padding-block: var(--denhaag-space-md) var(--denhaag-space-5xl);
+  margin-block-start: var(--denhaag-article-meta-margin-block-start, var(--denhaag-space-2xl));
 }
 
 .denhaag-article-meta--horizontal {
@@ -26,8 +21,7 @@
 }
 
 .denhaag-article-meta__item {
-  margin-block-start: 0;
-  margin-block-end: 0;
+  margin-block: 0;
 }
 
 .denhaag-article-meta--horizontal > .denhaag-article-meta__item + .denhaag-article-meta__item {

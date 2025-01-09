@@ -1,12 +1,5 @@
 {
   "denhaag": {
-    "button-group": {
-      "padding": {
-        "value": "{denhaag.space.block.md}"
-      },
-      "gap": {
-        "value": "{denhaag.space.block.md}"
-      }
-    }
+    "button-group": {}
   }
 }
