@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/badge-counter",
-  "version": "0.1.1-www-denhaag-nl.100",
+  "version": "0.1.1-www-denhaag-nl.102",
   "description": "A Badge component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "private": false,
@@ -33,7 +33,7 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/dotindicator": "0.1.1-www-denhaag-nl.100"
+    "@gemeente-denhaag/dotindicator": "0.1.1-www-denhaag-nl.102"
   },
   "peerDependencies": {
     "react": "^17.0.0"
