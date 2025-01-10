@@ -1,9 +1,6 @@
 @import "~@utrecht/components/dist/select/css";
 
 .denhaag-select {
-  box-sizing: var(--denhaag-select-box-sizing);
-  max-block-size: var(--denhaag-select-max-block-size);
-
   &.utrecht-select {
     background-position: center right
       var(--utrecht-select-padding-inline-end, var(--utrecht-form-control-padding-inline-end));
