@@ -42,3 +42,4 @@ export const FocusVisible: Story = {
   args: { ...Default.args, className: 'utrecht-select--focus denhaag-select--focus utrecht-select--focus-visible' },
 };
 export const Hover: Story = { args: { ...Default.args, className: 'denhaag-select--hover' } };
+export const Multiple: Story = { args: { ...Default.args, multiple: true } };
