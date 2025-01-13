@@ -32,5 +32,8 @@
   "dependencies": {
     "@utrecht/component-library-react": "4.2.0",
     "@utrecht/components": "7.4.0"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0"
   }
 }

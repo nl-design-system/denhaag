@@ -38,5 +38,8 @@
     "@gemeente-denhaag/responsive-content": "workspace:*",
     "@utrecht/component-library-css": "7.0.0",
     "@utrecht/component-library-react": "4.2.0"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0"
   }
 }

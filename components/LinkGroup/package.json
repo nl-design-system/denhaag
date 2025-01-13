@@ -31,5 +31,8 @@
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "devDependencies": {
     "@gemeente-denhaag/icons": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0"
   }
 }
