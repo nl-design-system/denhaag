@@ -35,5 +35,8 @@
     "@gemeente-denhaag/link": "workspace:*",
     "@gemeente-denhaag/utils": "workspace:*",
     "date-fns": "4.1.0"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0"
   }
 }
