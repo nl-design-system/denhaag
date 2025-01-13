@@ -1,5 +1,18 @@
 # @gemeente-denhaag/contact-timeline
 
+## 1.0.1
+
+### Patch Changes
+
+- 1489449: Changed peerdependency from React 19 to React 18 or 19
+- Updated dependencies [1489449]
+  - @gemeente-denhaag/process-steps@1.0.1
+  - @gemeente-denhaag/step-marker@1.0.1
+  - @gemeente-denhaag/typography@1.0.1
+  - @gemeente-denhaag/icons@2.0.1
+  - @gemeente-denhaag/utils@1.0.1
+  - @gemeente-denhaag/file@0.1.3
+
 ## 1.0.0
 
 ### Major Changes

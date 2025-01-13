@@ -1,5 +1,13 @@
 # @gemeente-denhaag/dotindicator
 
+## 1.0.1
+
+### Patch Changes
+
+- 1489449: Changed peerdependency from React 19 to React 18 or 19
+- Updated dependencies [1489449]
+  - @gemeente-denhaag/button@1.0.1
+
 ## 1.0.0
 
 ### Major Changes

@@ -1,5 +1,14 @@
 # @gemeente-denhaag/list
 
+## 1.0.1
+
+### Patch Changes
+
+- 1489449: Changed peerdependency from React 19 to React 18 or 19
+- Updated dependencies [1489449]
+  - @gemeente-denhaag/iconbutton@1.0.1
+  - @gemeente-denhaag/icons@2.0.1
+
 ## 1.0.0
 
 ### Major Changes

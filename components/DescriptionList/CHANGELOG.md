@@ -1,5 +1,11 @@
 # @gemeente-denhaag/descriptionlist
 
+## 2.0.1
+
+### Patch Changes
+
+- 1489449: Changed peerdependency from React 19 to React 18 or 19
+
 ## 2.0.0
 
 ### Major Changes

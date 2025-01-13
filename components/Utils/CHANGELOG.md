@@ -1,5 +1,11 @@
 # @gemeente-denhaag/utils
 
+## 1.0.1
+
+### Patch Changes
+
+- 1489449: Changed peerdependency from React 19 to React 18 or 19
+
 ## 1.0.0
 
 ### Major Changes
