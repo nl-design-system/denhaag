@@ -1,5 +1,17 @@
 # @gemeente-denhaag/menu
 
+## 1.0.1
+
+### Patch Changes
+
+- 1489449: Changed peerdependency from React 19 to React 18 or 19
+- Updated dependencies [1489449]
+  - @gemeente-denhaag/language-switcher@1.0.1
+  - @gemeente-denhaag/badge-counter@1.0.1
+  - @gemeente-denhaag/button@1.0.1
+  - @gemeente-denhaag/icons@2.0.1
+  - @gemeente-denhaag/sheet@1.0.1
+
 ## 1.0.0
 
 ### Major Changes

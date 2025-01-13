@@ -1,5 +1,74 @@
 # @gemeente-denhaag/storybook
 
+## 1.0.1
+
+### Patch Changes
+
+- 1489449: Changed peerdependency from React 19 to React 18 or 19
+- Updated dependencies [1489449]
+- Updated dependencies [1489449]
+  - @gemeente-denhaag/select@1.0.1
+  - @gemeente-denhaag/form-field-error-message@1.0.1
+  - @gemeente-denhaag/form-field-description@1.0.1
+  - @gemeente-denhaag/responsive-content@0.1.1
+  - @gemeente-denhaag/contact-timeline@1.0.1
+  - @gemeente-denhaag/descriptionlist@2.0.1
+  - @gemeente-denhaag/stylesprovider@1.0.1
+  - @gemeente-denhaag/unorderedlist@1.0.1
+  - @gemeente-denhaag/badge-counter@1.0.1
+  - @gemeente-denhaag/dotindicator@1.0.1
+  - @gemeente-denhaag/form-fieldset@1.0.1
+  - @gemeente-denhaag/form-progress@1.0.1
+  - @gemeente-denhaag/process-steps@1.0.1
+  - @gemeente-denhaag/orderedlist@1.0.1
+  - @gemeente-denhaag/radio-button@1.0.1
+  - @gemeente-denhaag/status-badge@1.0.1
+  - @gemeente-denhaag/blockquote@1.0.1
+  - @gemeente-denhaag/breadcrumb@1.0.1
+  - @gemeente-denhaag/button-link@1.0.1
+  - @gemeente-denhaag/iconbutton@1.0.1
+  - @gemeente-denhaag/link-button@1.0.1
+  - @gemeente-denhaag/pagination@1.0.1
+  - @gemeente-denhaag/step-marker@1.0.1
+  - @gemeente-denhaag/typography@1.0.1
+  - @gemeente-denhaag/form-field@1.0.1
+  - @gemeente-denhaag/form-label@1.0.1
+  - @gemeente-denhaag/link-group@0.1.3
+  - @gemeente-denhaag/text-input@1.0.1
+  - @gemeente-denhaag/checkbox@1.0.1
+  - @gemeente-denhaag/link-list@2.0.1
+  - @gemeente-denhaag/rich-text@2.0.1
+  - @gemeente-denhaag/textarea@1.0.1
+  - @gemeente-denhaag/divider@1.0.1
+  - @gemeente-denhaag/sidenav@1.0.1
+  - @gemeente-denhaag/action@1.0.1
+  - @gemeente-denhaag/button@1.0.1
+  - @gemeente-denhaag/footer@1.0.1
+  - @gemeente-denhaag/header@1.0.1
+  - @gemeente-denhaag/alert@1.0.1
+  - @gemeente-denhaag/icons@2.0.1
+  - @gemeente-denhaag/modal@1.0.1
+  - @gemeente-denhaag/sheet@1.0.1
+  - @gemeente-denhaag/table@1.0.1
+  - @gemeente-denhaag/utils@1.0.1
+  - @gemeente-denhaag/card@1.0.1
+  - @gemeente-denhaag/file@0.1.3
+  - @gemeente-denhaag/link@1.0.1
+  - @gemeente-denhaag/list@1.0.1
+  - @gemeente-denhaag/menu@1.0.1
+  - @gemeente-denhaag/page@0.1.1
+  - @gemeente-denhaag/tab@1.0.1
+  - @gemeente-denhaag/dynamic-content@0.1.1-alpha.196
+  - @gemeente-denhaag/cta-image-content@0.1.5
+  - @gemeente-denhaag/anchor-navigation@0.1.3
+  - @gemeente-denhaag/card-authentication@0.1.5
+  - @gemeente-denhaag/ctadownload@0.1.1-alpha.334
+  - @gemeente-denhaag/ctalink@0.1.1-alpha.337
+  - @gemeente-denhaag/highlighted-links@0.1.1-alpha.245
+  - @gemeente-denhaag/image@0.1.1-alpha.331
+  - @gemeente-denhaag/note@0.1.1-alpha.335
+  - @gemeente-denhaag/card-group@0.1.5
+
 ## 1.0.0
 
 ### Major Changes
