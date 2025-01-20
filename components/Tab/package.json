@@ -36,7 +36,7 @@
     "@types/uuid": "10.0.0"
   },
   "peerDependencies": {
-    "react": "^18.0.0 || ^19.0.0"
+    "react": "18 || 19"
   },
   "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
 }
