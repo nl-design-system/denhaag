@@ -1,5 +1,13 @@
 # @gemeente-denhaag/file
 
+## 0.1.4
+
+### Patch Changes
+
+- 216a26f: Fix issues with using the React components in an application with React 18
+- Updated dependencies [216a26f]
+  - @gemeente-denhaag/icons@2.0.2
+
 ## 0.1.3
 
 ### Patch Changes
