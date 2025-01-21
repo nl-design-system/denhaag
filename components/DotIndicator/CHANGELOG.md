@@ -1,5 +1,13 @@
 # @gemeente-denhaag/dotindicator
 
+## 1.0.2
+
+### Patch Changes
+
+- 216a26f: Fix issues with using the React components in an application with React 18
+- Updated dependencies [216a26f]
+  - @gemeente-denhaag/button@1.0.2
+
 ## 1.0.1
 
 ### Patch Changes

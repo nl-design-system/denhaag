@@ -1,5 +1,17 @@
 # @gemeente-denhaag/menu
 
+## 1.0.2
+
+### Patch Changes
+
+- 216a26f: Fix issues with using the React components in an application with React 18
+- Updated dependencies [216a26f]
+  - @gemeente-denhaag/language-switcher@1.0.2
+  - @gemeente-denhaag/badge-counter@1.0.2
+  - @gemeente-denhaag/button@1.0.2
+  - @gemeente-denhaag/icons@2.0.2
+  - @gemeente-denhaag/sheet@1.0.2
+
 ## 1.0.1
 
 ### Patch Changes

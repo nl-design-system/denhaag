@@ -1,5 +1,14 @@
 # @gemeente-denhaag/card-authentication
 
+## 0.1.6
+
+### Patch Changes
+
+- Updated dependencies [216a26f]
+  - @gemeente-denhaag/button@1.0.2
+  - @gemeente-denhaag/card@1.0.2
+  - @gemeente-denhaag/link@1.0.2
+
 ## 0.1.5
 
 ### Patch Changes

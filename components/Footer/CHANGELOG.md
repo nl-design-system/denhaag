@@ -1,5 +1,17 @@
 # @gemeente-denhaag/footer
 
+## 1.0.2
+
+### Patch Changes
+
+- 216a26f: Fix issues with using the React components in an application with React 18
+- Updated dependencies [216a26f]
+  - @gemeente-denhaag/responsive-content@0.1.2
+  - @gemeente-denhaag/link-group@0.1.4
+  - @gemeente-denhaag/icons@2.0.2
+  - @gemeente-denhaag/link@1.0.2
+  - @gemeente-denhaag/list@1.0.2
+
 ## 1.0.1
 
 ### Patch Changes
