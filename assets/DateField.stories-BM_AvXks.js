@@ -1,0 +1,3 @@
+import{j as n}from"./jsx-runtime-D_zvdyIk.js";import{S as a}from"./StoryUtil-ZTEZNgE7.js";import"./index-raSRI-5R.js";import"./_commonjsHelpers-BosuxZz1.js";import"./index-Chjiymov.js";const c={id:"open-forms-date-field",title:"Open Formulieren/DateField",component:a,args:{type:"date",extraComponentProperties:{enableTime:!1,datePicker:{minDate:null,maxDate:null},format:"dd-MM-yyyy",placeholder:"dd-mm-yyyy"}}},e={render:m=>n.jsx(a,{...m})};var r,o,t;e.parameters={...e.parameters,docs:{...(r=e.parameters)==null?void 0:r.docs,source:{originalSource:`{
+  render: args => <SingleFormioComponent {...args} />
+}`,...(t=(o=e.parameters)==null?void 0:o.docs)==null?void 0:t.source}}};const u=["Default"];export{e as Default,u as __namedExportsOrder,c as default};

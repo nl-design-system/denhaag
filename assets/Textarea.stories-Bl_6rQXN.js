@@ -1,3 +1,0 @@
-import{j as s}from"./jsx-runtime-D_zvdyIk.js";import{S as a}from"./StoryUtil-CqwgRIUC.js";import"./index-raSRI-5R.js";import"./_commonjsHelpers-BosuxZz1.js";import"./index-Chjiymov.js";const l={id:"open-forms-textarea",title:"Open Formulieren/Textarea",component:a,args:{type:"textarea",label:"Textarea",extraComponentProperties:{description:"Plaats hierboven uw handtekening"}}},e={render:n=>s.jsx(a,{...n})};var r,o,t;e.parameters={...e.parameters,docs:{...(r=e.parameters)==null?void 0:r.docs,source:{originalSource:`{
-  render: args => <SingleFormioComponent {...args} />
-}`,...(t=(o=e.parameters)==null?void 0:o.docs)==null?void 0:t.source}}};const x=["Default"];export{e as Default,x as __namedExportsOrder,l as default};

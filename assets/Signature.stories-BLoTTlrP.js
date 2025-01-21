@@ -1,0 +1,3 @@
+import{j as s}from"./jsx-runtime-D_zvdyIk.js";import{S as n}from"./StoryUtil-ZTEZNgE7.js";import"./index-raSRI-5R.js";import"./_commonjsHelpers-BosuxZz1.js";import"./index-Chjiymov.js";const c={id:"open-forms-signature",title:"Open Formulieren/Signature",component:n,args:{type:"signature",label:"Handtekening",extraComponentProperties:{description:"Plaats hierboven uw handtekening"}}},e={render:a=>s.jsx(n,{...a})};var r,o,t;e.parameters={...e.parameters,docs:{...(r=e.parameters)==null?void 0:r.docs,source:{originalSource:`{
+  render: args => <SingleFormioComponent {...args} />
+}`,...(t=(o=e.parameters)==null?void 0:o.docs)==null?void 0:t.source}}};const g=["Default"];export{e as Default,g as __namedExportsOrder,c as default};
