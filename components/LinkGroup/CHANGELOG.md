@@ -1,5 +1,11 @@
 # @gemeente-denhaag/link-group
 
+## 0.1.5
+
+### Patch Changes
+
+- f0bbe8f: Peer dependency change react-dom
+
 ## 0.1.4
 
 ### Patch Changes

@@ -1,5 +1,14 @@
 # @gemeente-denhaag/form-progress
 
+## 1.0.3
+
+### Patch Changes
+
+- f0bbe8f: Peer dependency change react-dom
+- Updated dependencies [f0bbe8f]
+  - @gemeente-denhaag/icons@2.0.3
+  - @gemeente-denhaag/link@1.0.3
+
 ## 1.0.2
 
 ### Patch Changes

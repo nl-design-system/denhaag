@@ -1,5 +1,13 @@
 # @gemeente-denhaag/file
 
+## 0.1.5
+
+### Patch Changes
+
+- f0bbe8f: Peer dependency change react-dom
+- Updated dependencies [f0bbe8f]
+  - @gemeente-denhaag/icons@2.0.3
+
 ## 0.1.4
 
 ### Patch Changes

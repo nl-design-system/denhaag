@@ -1,5 +1,17 @@
 # @gemeente-denhaag/menu
 
+## 1.0.3
+
+### Patch Changes
+
+- f0bbe8f: Peer dependency change react-dom
+- Updated dependencies [f0bbe8f]
+  - @gemeente-denhaag/language-switcher@1.0.3
+  - @gemeente-denhaag/badge-counter@1.0.3
+  - @gemeente-denhaag/button@1.0.3
+  - @gemeente-denhaag/icons@2.0.3
+  - @gemeente-denhaag/sheet@1.0.3
+
 ## 1.0.2
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @gemeente-denhaag/unorderedlist
 
+## 1.0.3
+
+### Patch Changes
+
+- f0bbe8f: Peer dependency change react-dom
+
 ## 1.0.2
 
 ### Patch Changes

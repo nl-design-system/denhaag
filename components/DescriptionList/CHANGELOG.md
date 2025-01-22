@@ -1,5 +1,11 @@
 # @gemeente-denhaag/descriptionlist
 
+## 2.0.3
+
+### Patch Changes
+
+- f0bbe8f: Peer dependency change react-dom
+
 ## 2.0.2
 
 ### Patch Changes
