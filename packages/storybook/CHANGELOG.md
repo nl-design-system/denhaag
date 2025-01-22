@@ -1,5 +1,13 @@
 # @gemeente-denhaag/storybook
 
+## 1.0.4
+
+### Patch Changes
+
+- 8ae9a7b: Improved header stories
+- Updated dependencies [8ae9a7b]
+  - @gemeente-denhaag/header@1.0.4
+
 ## 1.0.3
 
 ### Patch Changes
