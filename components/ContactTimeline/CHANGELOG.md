@@ -1,5 +1,18 @@
 # @gemeente-denhaag/contact-timeline
 
+## 1.0.3
+
+### Patch Changes
+
+- f0bbe8f: Peer dependency change react-dom
+- Updated dependencies [f0bbe8f]
+  - @gemeente-denhaag/process-steps@1.0.3
+  - @gemeente-denhaag/step-marker@1.0.3
+  - @gemeente-denhaag/typography@1.0.3
+  - @gemeente-denhaag/icons@2.0.3
+  - @gemeente-denhaag/utils@1.0.3
+  - @gemeente-denhaag/file@0.1.5
+
 ## 1.0.2
 
 ### Patch Changes

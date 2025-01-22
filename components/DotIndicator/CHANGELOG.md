@@ -1,5 +1,13 @@
 # @gemeente-denhaag/dotindicator
 
+## 1.0.3
+
+### Patch Changes
+
+- f0bbe8f: Peer dependency change react-dom
+- Updated dependencies [f0bbe8f]
+  - @gemeente-denhaag/button@1.0.3
+
 ## 1.0.2
 
 ### Patch Changes
