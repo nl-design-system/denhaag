@@ -21,6 +21,20 @@
     }
   }
 
+  .denhaag-header__navigation {
+    display: var(--denhaag-header-actions-display, none);
+
+    @media (width >= 1024px) {
+      display: var(--denhaag-header-actions-desktop-display, flex);
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .denhaag-header__navigation-item {
+      margin-inline-start: var(--denhaag-header-actions-desktop-action-margin-inline-start);
+    }
+  }
+
   .denhaag-header__actions {
     display: var(--denhaag-header-actions-display);
 
