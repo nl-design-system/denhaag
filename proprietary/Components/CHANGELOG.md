@@ -1,5 +1,11 @@
 # @gemeente-denhaag/design-tokens-components
 
+## 1.0.1
+
+### Patch Changes
+
+- 9af51d1: Made link disabled color accessible
+
 ## 1.0.0
 
 ### Major Changes
