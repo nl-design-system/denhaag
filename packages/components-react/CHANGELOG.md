@@ -1,5 +1,17 @@
 # @gemeente-denhaag/components-react
 
+## 1.1.1
+
+### Patch Changes
+
+- @gemeente-denhaag/typography@1.1.1
+- @gemeente-denhaag/alert@1.1.1
+- @gemeente-denhaag/card@1.1.1
+- @gemeente-denhaag/contact-timeline@1.1.1
+- @gemeente-denhaag/header@1.1.1
+- @gemeente-denhaag/process-steps@1.1.1
+- @gemeente-denhaag/card-group@0.1.9
+
 ## 1.1.0
 
 ### Minor Changes
