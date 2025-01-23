@@ -1,5 +1,17 @@
 # @gemeente-denhaag/list
 
+## 1.1.0
+
+### Minor Changes
+
+- 29c7807: Revert support for React 19 due to issues
+
+### Patch Changes
+
+- Updated dependencies [29c7807]
+  - @gemeente-denhaag/iconbutton@1.1.0
+  - @gemeente-denhaag/icons@2.1.0
+
 ## 1.0.3
 
 ### Patch Changes

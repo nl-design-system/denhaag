@@ -1,5 +1,11 @@
 # @gemeente-denhaag/page
 
+## 0.2.0
+
+### Minor Changes
+
+- 29c7807: Revert support for React 19 due to issues
+
 ## 0.1.3
 
 ### Patch Changes

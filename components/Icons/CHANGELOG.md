@@ -1,5 +1,11 @@
 # @gemeente-denhaag/icons
 
+## 2.1.0
+
+### Minor Changes
+
+- 29c7807: Revert support for React 19 due to issues
+
 ## 2.0.3
 
 ### Patch Changes
