@@ -1,5 +1,11 @@
 # @gemeente-denhaag/card-group
 
+## 0.1.8
+
+### Patch Changes
+
+- @gemeente-denhaag/card-authentication@0.1.8
+
 ## 0.1.7
 
 ### Patch Changes

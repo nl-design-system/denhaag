@@ -1,5 +1,27 @@
 # @gemeente-denhaag/header
 
+## 1.1.0
+
+### Minor Changes
+
+- 29c7807: Revert support for React 19 due to issues
+
+### Patch Changes
+
+- Updated dependencies [29c7807]
+  - @gemeente-denhaag/responsive-content@0.2.0
+  - @gemeente-denhaag/language-switcher@1.1.0
+  - @gemeente-denhaag/breadcrumb@1.1.0
+  - @gemeente-denhaag/header-logo@1.1.0
+  - @gemeente-denhaag/iconbutton@1.1.0
+  - @gemeente-denhaag/typography@1.1.0
+  - @gemeente-denhaag/link-group@0.2.0
+  - @gemeente-denhaag/button@1.1.0
+  - @gemeente-denhaag/icons@2.1.0
+  - @gemeente-denhaag/sheet@1.1.0
+  - @gemeente-denhaag/link@1.1.0
+  - @gemeente-denhaag/menu@1.1.0
+
 ## 1.0.4
 
 ### Patch Changes

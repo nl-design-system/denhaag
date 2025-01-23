@@ -1,5 +1,11 @@
 # @gemeente-denhaag/step-marker
 
+## 1.1.0
+
+### Minor Changes
+
+- 29c7807: Revert support for React 19 due to issues
+
 ## 1.0.3
 
 ### Patch Changes
