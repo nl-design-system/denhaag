@@ -4,6 +4,7 @@
   border-radius: 50%;
   block-size: var(--denhaag-dot-size, var(--denhaag-space-xs));
   border: var(--denhaag-dot-border-size, 1px) solid var(--denhaag-border-color, var(--denhaag-color-red-1));
+  box-sizing: border-box;
   display: block;
   inline-size: var(--denhaag-dot-size, var(--denhaag-space-xs));
 }
@@ -18,6 +19,6 @@
 .denhaag-dot--large {
   --denhaag-dot-size: var(--denhaag-space-md);
   --denhaag-dot-border-size: calc(
-    var(--denhaag-dot-size) / 2
-  ); // Half of the size, so it's always half the size of the dot
+    var(--denhaag-dot-size) / 4
+  ); // Half of the size, so it's always half the size of the dot, therefor we take 1/4th of the size.
 }
