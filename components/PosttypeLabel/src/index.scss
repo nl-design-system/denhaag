@@ -1,9 +1,42 @@
-.denhaag-posttypelabel {
-  color: var(--denhaag-posttypelabel-color, var(--denhaag-color-blue-3));
-  font-family: var(--denhaag-posttypelabel-font-family, var(--denhaag-typography-sans-serif-font-family));
-  font-weight: var(--denhaag-posttypelabel-font-weight, var(--denhaag-typography-weight-bold));
-  font-size: var(--denhaag-posttypelabel-font-size, var(--denhaag-typography-scale-s-font-size));
-  line-height: var(--denhaag-posttypelabel-line-height, var(--denhaag-typography-scale-base-line-height));
-  letter-spacing: var(--denhaag-posttypelabel-letter-spacing, 1px);
-  text-transform: var(--denhaag-posttypelabel-text-transform, uppercase);
+.denhaag-post-info {
+  display: flex;
+  align-items: center;
+
+  > :not(:first-child)::before {
+    color: var(--denhaag-color-blue-2);
+    content: "|";
+    padding-inline: var(--denhaag-space-md);
+  }
+
+  &__label {
+    color: var(--denhaag-post-info-color, var(--denhaag-color-blue-4));
+    font-family: var(--denhaag-post-info-font-family, var(--denhaag-typography-sans-serif-font-family));
+    font-weight: var(--denhaag-post-info-font-weight, var(--denhaag-typography-weight-bold));
+    font-size: var(--denhaag-post-info-font-size, var(--denhaag-typography-scale-s-font-size));
+    line-height: var(--denhaag-post-info-line-height, var(--denhaag-typography-scale-base-line-height));
+    letter-spacing: var(--denhaag-post-info-letter-spacing, 1px);
+    text-transform: var(--denhaag-post-info-text-transform, uppercase);
+  }
+
+  &__date {
+    display: flex;
+    align-items: center;
+    color: var(--denhaag-post-info-icon-color, var(--denhaag-color-blue-4));
+    margin-inline-end: var(--denhaag-post-info-icon-margin-inline-end, var(--denhaag-space-xs));
+
+    .denhaag-icon {
+      font-size: var(--denhaag-typography-scale-base-font-size);
+      padding-inline-end: var(--denhaag-space-xs);
+    }
+  }
+
+  &__text {
+    color: var(--denhaag-post-info-text-color, var(--denhaag-color-blue-4));
+    font-family: var(--denhaag-post-info-text-font-family, var(--denhaag-typography-sans-serif-font-family));
+    font-size: var(--denhaag-post-info-text-font-size, var(--denhaag-typography-scale-s-font-size));
+    font-weight: var(--denhaag-post-info-text-font-weight, var(--denhaag-typography-weight-bold));
+    letter-spacing: var(--denhaag-post-info-text-letter-spacing, 1px);
+    line-height: var(--denhaag-post-info-text-line-height, 1.75);
+    text-transform: var(--denhaag-post-info-text-text-transform, uppercase);
+  }
 }
