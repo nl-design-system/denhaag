@@ -1,0 +1,23 @@
+[class*="denhaag-dot"]:not([class*="-indicator"]) {
+  aspect-ratio: 1;
+  background: var(--denhaag-dot-background, var(--denhaag-color-red-3));
+  border-radius: 50%;
+  block-size: var(--denhaag-dot-size, var(--denhaag-space-xs));
+  border: var(--denhaag-dot-border-size, 1px) solid var(--denhaag-border-color, var(--denhaag-color-red-1));
+  display: block;
+  inline-size: var(--denhaag-dot-size, var(--denhaag-space-xs));
+}
+
+@each $modifier, $color in ("active", "green"), ("pending", "blue") {
+  .denhaag-dot--#{$modifier} {
+    --denhaag-dot-background: var(--denhaag-color-#{$color}-3);
+    --denhaag-border-color: var(--denhaag-color-#{$color}-1);
+  }
+}
+
+.denhaag-dot--large {
+  --denhaag-dot-size: var(--denhaag-space-md);
+  --denhaag-dot-border-size: calc(
+    var(--denhaag-dot-size) / 2
+  ); // Half of the size, so it's always half the size of the dot
+}
