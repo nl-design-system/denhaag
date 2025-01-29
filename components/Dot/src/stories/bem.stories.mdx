@@ -1,0 +1,64 @@
+import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+import pkg from "../../package.json";
+import "../index.scss";
+import readme from "../../README.md";
+
+<Meta
+  title="CSS/Data Display/Dot"
+  parameters={{
+    componentSubtitle: `${pkg.name} - ${pkg.version}`,
+    docs: { source: { type: "dynamic" } },
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+  }}
+/>
+
+<Description markdown={readme} />
+
+## Design Tokens
+
+<DesignTokenDocBlock categoryName="Dot" viewType="table" />
+
+## Stories
+
+### Default
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Default">
+    <span class="denhaag-dot"></span>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Large
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Large">
+    <span class="denhaag-dot--large"></span>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Active
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Active">
+    <span class="denhaag-dot--active"></span>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
+
+### Pending
+
+<Canvas>
+  {/* eslint-disable react/no-unknown-property */}
+  <Story name="Pending">
+    <span class="denhaag-dot--pending"></span>
+  </Story>
+  {/* eslint-enable react/no-unknown-property */}
+</Canvas>
