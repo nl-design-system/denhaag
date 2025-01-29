@@ -3,11 +3,18 @@
   align-items: center;
 }
 
-.denhaag-event-date__icon {
-  color: var(--denhaag-event-date-icon-color, var(--denhaag-color-blue-3));
+.denhaag-event-date__icon,
+.denhaag-event-date > svg {
+  color: var(--denhaag-event-date-icon-color, var(--denhaag-color-blue-4));
   margin-inline-end: var(--denhaag-event-date-icon-margin-inline-end, var(--denhaag-space-xs));
 }
 
 .denhaag-event-date__text {
+  color: var(--denhaag-event-date-text-color, var(--denhaag-color-blue-4));
+  font-family: var(-denhaag-event-date-text-font-family, var(--denhaag-typography-sans-serif-font-family));
+  font-size: var(-denhaag-event-date-text-font-size, var(--denhaag-typography-scale-s-font-size));
+  font-weight: var(-denhaag-event-date-text-font-weight, var(--denhaag-typography-weight-bold));
+  letter-spacing: var(-denhaag-event-date-text-letter-spacing, 1px);
   line-height: var(--denhaag-event-date-text-line-height, 1.75);
+  text-transform: var(-denhaag-event-date-text-text-transform, uppercase);
 }
