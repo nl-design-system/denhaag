@@ -1,4 +1,4 @@
-import{j as t}from"./jsx-runtime-BjgbQsUx.js";import{T as b}from"./index-Ct35JBj4.js";import{r as a}from"./index-B3p8u_35.js";import"./index-D2MAbzvX.js";import"./_commonjsHelpers-BosuxZz1.js";const m=`# Tabs
+import{j as t}from"./jsx-runtime-BjgbQsUx.js";import{T as b}from"./index-CT5azC_k.js";import{r as a}from"./index-B3p8u_35.js";import"./index-D2MAbzvX.js";import"./_commonjsHelpers-BosuxZz1.js";const m=`# Tabs
 
 Tabs organise and allow users to move between content without having to navigate away from a page.
 
