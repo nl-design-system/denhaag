@@ -92,7 +92,7 @@
   },
   "engines": {
     "node": "^20",
-    "pnpm": "^9"
+    "pnpm": "^10"
   },
-  "packageManager": "pnpm@9.1.1+sha256.9551e803dcb7a1839fdf5416153a844060c7bce013218ce823410532504ac10b"
+  "packageManager": "pnpm@10.2.0+sha256.72f1630812107c8723eb5be4517725f3e13f09cfd8f71571cf29f23ce318bdb7"
 }
