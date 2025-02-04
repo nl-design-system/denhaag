@@ -2,7 +2,6 @@ import React, { KeyboardEvent, RefObject, createRef, useEffect, useState } from 
 import './index.scss';
 import { TabsContainer } from './TabsContainer';
 import { TabIndicator } from './TabIndicator';
-import { HTMLAttributes } from 'react';
 import { TabList } from './TabList';
 import Tab from './Tab';
 import TabPanel from './TabPanel';
@@ -16,8 +15,9 @@ export * from './TabPanel';
 export * from './TabsContainer';
 export * from './TabText';
 
-export interface TabsProps extends HTMLAttributes<HTMLDivElement> {
+export interface TabsProps {
   tabData: Array<{ label: string; panelContent: React.ReactNode }>;
+  onChange?: (index: number) => void;
 }
 
 type TabRef = RefObject<HTMLDivElement | null>;
@@ -34,7 +34,7 @@ interface CustomCSSProperties extends React.CSSProperties {
  * @param props The properties of a Tabs component.
  * @constructor Constructs an instance of Tabs.
  */
-export const Tabs: React.FC<TabsProps> = ({ tabData }: TabsProps) => {
+export const Tabs = ({ tabData, onChange }: TabsProps) => {
   const [tabs, setTabs] = useState(
     tabData.map((tab) => {
       const tabRef = createRef<HTMLDivElement>();
@@ -83,6 +83,7 @@ export const Tabs: React.FC<TabsProps> = ({ tabData }: TabsProps) => {
   const handleTabChange = (tabRef: TabRef) => {
     setSelectedTab(tabRef);
     setFocussedTab(tabRef);
+    onChange?.(tabs.findIndex(({ tabRef: ref }) => ref === tabRef));
   };
 
   const handleKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
