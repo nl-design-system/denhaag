@@ -1,5 +1,11 @@
 # @gemeente-denhaag/tab
 
+## 1.1.1
+
+### Patch Changes
+
+- 316e825: Add onChange prop to Tabs component
+
 ## 1.1.0
 
 ### Minor Changes
