@@ -74,6 +74,15 @@
   }
 }
 
+.denhaag-link:has(.denhaag-link__label ~ .denhaag-icon),
+.denhaag-link--external:has(.denhaag-link__label ~ .denhaag-icon) {
+  display: inline;
+
+  .denhaag-icon {
+    margin-inline-start: var(--denhaag-link-icon-gap, var(--denhaag-space-2xs));
+  }
+}
+
 .denhaag-link--disabled,
 .denhaag-link--disabled--hover,
 .denhaag-link--disabled:hover {
