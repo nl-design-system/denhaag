@@ -54,9 +54,6 @@ importers:
       '@typescript-eslint/parser':
         specifier: 8.18.0
         version: 8.18.0(eslint@9.16.0(jiti@2.4.2))(typescript@5.7.2)
-      '@utrecht/component-library-react':
-        specifier: 4.2.0
-        version: 4.2.0(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       chokidar-cli:
         specifier: 3.0.0
         version: 3.0.0
@@ -1675,6 +1672,9 @@ importers:
       '@storybook/preview-api':
         specifier: 8.4.7
         version: 8.4.7(storybook@8.4.7(prettier@3.4.2))
+      '@utrecht/component-library-react':
+        specifier: '4.2'
+        version: 4.2.0(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: 7.26.0
@@ -4324,8 +4324,8 @@ packages:
     peerDependencies:
       '@babel/runtime': ^7.23.6
       date-fns: ^2.30.0
-      react: ^18.3.1
-      react-dom: ^18.3.1
+      react: '18'
+      react-dom: '18'
       react-vega: ^7.6.0
       vega: ^5.25.0
     peerDependenciesMeta:
@@ -7139,6 +7139,7 @@ packages:
 
   lodash.isequal@4.5.0:
     resolution: {integrity: sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==}
+    deprecated: This package is deprecated. Use require('node:util').isDeepStrictEqual instead.
 
   lodash.isplainobject@4.0.6:
     resolution: {integrity: sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==}

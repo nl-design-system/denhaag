@@ -1,3 +1,4 @@
+import BadgeCounter from '@gemeente-denhaag/badge-counter';
 import { ArchiveIcon, CheckCircleIcon, GridIcon, InboxIcon, UserIcon } from '@gemeente-denhaag/icons';
 import {
   Sidenav as SidenavComponent,
@@ -6,7 +7,6 @@ import {
   SidenavLinkLabel,
   SidenavList,
 } from '@gemeente-denhaag/sidenav';
-import { BadgeCounter } from '@utrecht/component-library-react';
 import React from 'react';
 
 const Sidenav = () => {

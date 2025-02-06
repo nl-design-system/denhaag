@@ -1,6 +1,5 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import { ButtonLink } from '@utrecht/component-library-react';
 import { Action } from '@gemeente-denhaag/action';
 import { Heading2, Heading3 } from '@gemeente-denhaag/typography';
 import { Page, PageHeader, PageFooter } from '@gemeente-denhaag/page';
@@ -24,6 +23,7 @@ import {
 
 import './template-story.scss';
 import Sidenav from './components/Sidenav';
+import ButtonLink from '@gemeente-denhaag/button-link';
 
 const meta = {
   title: 'Templates/Zaak Detail',
