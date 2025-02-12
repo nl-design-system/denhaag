@@ -7,13 +7,15 @@ import { PaginationNav } from './PaginationNav';
 
 interface Props {
   index?: number;
-  indexLimit: number;
+  indexLimit?: number;
   onChange?: (index: number) => void;
   className?: string;
 }
 
 export const Pagination = ({ index = 0, indexLimit, onChange, className }: Props) => {
   const [currentIndex, setCurrentIndex] = useState(index);
+
+  if (indexLimit === undefined) return null;
   const pages = Array.from({ length: indexLimit + 1 }, (_, i) => i + 1);
 
   useEffect(() => {
