@@ -1,5 +1,13 @@
 # @gemeente-denhaag/storybook
 
+## 1.1.3
+
+### Patch Changes
+
+- Updated dependencies [aa19c19]
+  - @gemeente-denhaag/pagination@1.1.1
+  - @gemeente-denhaag/dynamic-content@0.1.1-alpha.196
+
 ## 1.1.2
 
 ### Patch Changes
