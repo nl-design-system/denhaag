@@ -1,5 +1,11 @@
 # @gemeente-denhaag/pagination
 
+## 1.1.1
+
+### Patch Changes
+
+- aa19c19: Made indexLimit prop optional and return null if undefined, so the state can be kept inside the component
+
 ## 1.1.0
 
 ### Minor Changes
