@@ -1733,9 +1733,6 @@ importers:
       '@storybook/types':
         specifier: 8.4.7
         version: 8.4.7(storybook@8.4.7(prettier@3.4.2))
-      '@types/lodash':
-        specifier: 4.17.13
-        version: 4.17.13
       '@types/react':
         specifier: 18.3.18
         version: 18.3.18
@@ -1754,9 +1751,6 @@ importers:
       clsx:
         specifier: 2.1.1
         version: 2.1.1
-      lodash:
-        specifier: 4.17.21
-        version: 4.17.21
       prettier:
         specifier: 3.4.2
         version: 3.4.2

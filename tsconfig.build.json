@@ -20,5 +20,8 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true
+  },
+  "paths": {
+    "rollup/parseAst": ["./node_modules/.pnpm/rollup@4.28.1/node_modules/rollup/dist/parseAst"]
   }
 }
