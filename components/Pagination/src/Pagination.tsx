@@ -14,21 +14,16 @@ interface Props {
 
 export const Pagination = ({ index = 0, indexLimit, onChange, className }: Props) => {
   const [currentIndex, setCurrentIndex] = useState(index);
-  const [safeIndexLimit, setSafeIndexLimit] = useState(indexLimit ?? 0);
-  const pages = Array.from({ length: safeIndexLimit + 1 }, (_, i) => i + 1);
 
-  useEffect(() => {
-    if (indexLimit !== undefined) {
-      setSafeIndexLimit(indexLimit);
-    }
-  }, [indexLimit]);
+  if (indexLimit === undefined) return null;
+  const pages = Array.from({ length: indexLimit + 1 }, (_, i) => i + 1);
 
   useEffect(() => {
     setCurrentIndex(index);
   }, [index]);
 
   const changePage = (index: number) => {
-    if (index < 0 || index > safeIndexLimit) return;
+    if (index < 0 || index > indexLimit) return;
     setCurrentIndex(index);
     onChange?.(index);
   };
@@ -38,7 +33,7 @@ export const Pagination = ({ index = 0, indexLimit, onChange, className }: Props
       <PaginationPrevious index={currentIndex} onClick={changePage} />
       <PaginationList>
         {pages.map((page, index) => {
-          if (index !== 0 && index !== safeIndexLimit) {
+          if (index !== 0 && index !== indexLimit) {
             if (index < currentIndex - 2) return null;
             if (index > currentIndex + 2) return null;
           }
@@ -48,7 +43,7 @@ export const Pagination = ({ index = 0, indexLimit, onChange, className }: Props
           );
         })}
       </PaginationList>
-      <PaginationNext index={currentIndex} indexLimit={safeIndexLimit} onClick={changePage} />
+      <PaginationNext index={currentIndex} indexLimit={indexLimit} onClick={changePage} />
     </PaginationNav>
   );
 };
