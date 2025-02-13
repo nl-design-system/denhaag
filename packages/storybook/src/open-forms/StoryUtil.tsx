@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Form, Formio, Templates } from 'react-formio';
-import { merge } from 'lodash';
 import { OFLibrary, OpenFormsModule } from '@open-formulieren/sdk';
 import '@open-formulieren/sdk/styles.css';
 
@@ -50,7 +49,7 @@ type SingleFormioComponentProps = {
   type: string;
   key: string;
   label: string;
-  extraComponentProperties?: unknown;
+  extraComponentProperties?: object;
 };
 
 export const SingleFormioComponent: React.FC<SingleFormioComponentProps> = ({
@@ -59,6 +58,6 @@ export const SingleFormioComponent: React.FC<SingleFormioComponentProps> = ({
   label,
   extraComponentProperties = {},
 }) => {
-  const component = merge({ type, key, label }, extraComponentProperties);
+  const component = { type, key, label, ...extraComponentProperties };
   return <RenderFormioForm form={{ type: 'form', components: [component] }} />;
 };
