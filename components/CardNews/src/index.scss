@@ -78,19 +78,51 @@
   z-index: 1; // Enables content to overlap image.
 }
 
-.denhaag-card-news__date {
+.denhaag-card-news__meta {
+  align-items: center;
   color: var(--denhaag-card-news-date-color, var(--denhaag-color-green-4));
+  display: flex;
   font: var(
     --denhaag-card-news-date-font,
     normal var(--denhaag-typography-weight-regular) var(--denhaag-typography-scale-s-font-size) /
       var(--denhaag-typography-scale-s-line-height) var(--denhaag-typography-sans-serif-font-family)
   );
+  gap: var(--denhaag-space-sm);
   order: 1;
+
+  & > * {
+    // All children of the meta element must be display-flex
+    display: inline-flex;
+    gap: var(--denhaag-space-xs);
+  }
+
+  & > :has([class*="denhaag-dot"]) {
+    color: var(--denhaag-color-red-3);
+    font-weight: var(--denhaag-typography-weight-bold);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  @each $modifier, $color in ("active", "green"), ("pending", "blue") {
+    & > :has(.denhaag-dot--#{$modifier}) {
+      color: var(--denhaag-color-#{$color}-3);
+    }
+  }
+
+  & > :not(:first-child)::before {
+    // Using a pseudo element to create a separator between the items.
+    // Set background instead of content: '|', to avoid a blurry line.
+    background-color: var(--denhaag-color-blue-2);
+    content: "";
+    block-size: var(--denhaag-space-md);
+    inline-size: 1px;
+    inset-inline-start: 1px;
+  }
 }
 
 .denhaag-card-news__heading {
-  margin-block-end: var(--denhaag-card-news-text-margin-block-end, var(--denhaag-space-xs));
-  margin-block-start: var(--denhaag-card-news-heading-margin-block-start, var(--denhaag-space-xs));
+  margin-block: var(--denhaag-card-news-heading-margin-block-start, var(--denhaag-space-xs))
+    var(--denhaag-card-news-text-margin-block-end, var(--denhaag-space-xs));
   order: 2;
 }
 
