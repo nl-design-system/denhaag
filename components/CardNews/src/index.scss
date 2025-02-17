@@ -41,6 +41,7 @@
 }
 
 .denhaag-card-news__image-container {
+  overflow: hidden; // Prevents image from overflowing card and show the placeholder image when image is loaded.
   z-index: 0; // Prevents image from overlapping content.
 }
 
@@ -158,4 +159,68 @@
 .denhaag-card-news--focus .denhaag-card-news__link::after,
 .denhaag-card-news:focus-within .denhaag-card-news__link:focus-visible::after {
   outline: var(--denhaag-focus-border);
+}
+
+.denhaag-featured-posts {
+  container: container / inline-size;
+}
+
+@container container (min-width: 700px) {
+  .denhaag-card-news--featured {
+    --denhaag-card-news-image-aspect-ratio: 4 / 3;
+    --utrecht-heading-4-font-family: var(--utrecht-heading-2-font-family);
+    --utrecht-heading-4-font-size: var(--utrecht-heading-2-font-size);
+    --utrecht-heading-4-font-style: var(--utrecht-heading-2-font-style);
+    --utrecht-heading-4-font-weight: var(--utrecht-heading-2-font-weight);
+    --utrecht-heading-4-line-height: var(--utrecht-heading-2-line-height);
+
+    align-items: center;
+    column-gap: var(--denhaag-space-3xl);
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image content";
+
+    [class^="utrecht-heading-"] {
+      --utrecht-space-around: 0;
+
+      margin-block-start: 8px;
+    }
+
+    .denhaag-card-news__image-container {
+      aspect-ratio: var(--denhaag-card-news-image-aspect-ratio); // overwrite hard-coded variable.
+      grid-area: image;
+    }
+
+    .denhaag-card-news__content {
+      grid-area: content;
+      position: relative;
+      padding-inline-end: calc(var(--denhaag-space-sm) + var(--denhaag-space-md) + var(--denhaag-space-xl));
+
+      .denhaag-card-news__icon {
+        position: absolute;
+        bottom: 0;
+        right: var(--denhaag-space-sm);
+      }
+    }
+
+    .denhaag-card-news__paragraph {
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      display: -webkit-box;
+    }
+  }
+}
+
+@container container (min-width: 800px) {
+  .denhaag-card-news--featured {
+    column-gap: var(--denhaag-space-4xl);
+  }
+}
+
+@container container (min-width: 1024px) {
+  .denhaag-card-news--featured {
+    column-gap: var(--denhaag-space-5xl);
+  }
 }

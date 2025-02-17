@@ -1,4 +1,8 @@
 /* This file is meant only for storybook overwrites. NOT FOR EXPORT! */
 .denhaag-card-news {
-  max-width: 320px;
+  max-inline-size: 320px;
+}
+
+.denhaag-featured-posts .denhaag-card-news {
+  max-inline-size: 1024px;
 }
