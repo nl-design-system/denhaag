@@ -3,7 +3,7 @@
   "description": "Component to group buttons.",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
-  "version": "0.1.1-www-denhaag-nl.107",
+  "version": "0.1.1-www-denhaag-nl.108",
   "exports": {
     ".": {
       "types": "./dist/cjs/index.d.ts",
