@@ -78,7 +78,6 @@
     "style-dictionary": "4.3.0",
     "stylelint": "16.11.0",
     "stylelint-config-standard-scss": "14.0.0",
-    "tslib": "2.8.1",
     "typescript": "5.7.2",
     "uuid": "11.0.3"
   },
