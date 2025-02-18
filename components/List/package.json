@@ -31,7 +31,8 @@
   },
   "dependencies": {
     "@gemeente-denhaag/iconbutton": "workspace:*",
-    "@gemeente-denhaag/icons": "workspace:*"
+    "@gemeente-denhaag/icons": "workspace:*",
+    "clsx": "2.1.1"
   },
   "peerDependencies": {
     "react": "18",

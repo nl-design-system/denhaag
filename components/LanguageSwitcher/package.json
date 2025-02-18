@@ -32,7 +32,8 @@
   "dependencies": {
     "@gemeente-denhaag/icons": "workspace:*",
     "@gemeente-denhaag/link": "workspace:*",
-    "@utrecht/component-library-react": "4.2.0"
+    "@utrecht/component-library-react": "4.2.0",
+    "clsx": "2.1.1"
   },
   "peerDependencies": {
     "react": "18",

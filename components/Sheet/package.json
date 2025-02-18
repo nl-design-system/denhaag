@@ -29,10 +29,11 @@
     "clean": "rimraf dist tsconfig.tsbuildinfo",
     "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\""
   },
-  "devDependencies": {
+  "dependencies": {
     "@gemeente-denhaag/iconbutton": "workspace:*",
     "@gemeente-denhaag/icons": "workspace:*",
-    "@gemeente-denhaag/responsive-content": "workspace:*"
+    "@gemeente-denhaag/responsive-content": "workspace:*",
+    "clsx": "2.1.1"
   },
   "peerDependencies": {
     "react": "18",

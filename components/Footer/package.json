@@ -37,7 +37,8 @@
     "@gemeente-denhaag/list": "workspace:*",
     "@gemeente-denhaag/responsive-content": "workspace:*",
     "@utrecht/component-library-css": "7.0.0",
-    "@utrecht/component-library-react": "4.2.0"
+    "@utrecht/component-library-react": "4.2.0",
+    "clsx": "2.1.1"
   },
   "peerDependencies": {
     "react": "18",

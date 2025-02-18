@@ -41,7 +41,8 @@
     "@gemeente-denhaag/menu": "workspace:*",
     "@gemeente-denhaag/responsive-content": "workspace:*",
     "@gemeente-denhaag/sheet": "workspace:*",
-    "@gemeente-denhaag/typography": "workspace:*"
+    "@gemeente-denhaag/typography": "workspace:*",
+    "clsx": "2.1.1"
   },
   "peerDependencies": {
     "react": "18",

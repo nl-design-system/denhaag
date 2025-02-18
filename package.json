@@ -40,7 +40,6 @@
     "typecheck": "pnpm run --recursive typecheck"
   },
   "dependencies": {
-    "clsx": "2.1.1",
     "sass": "1.82.0"
   },
   "devDependencies": {

@@ -1,6 +1,7 @@
 {
   "name": "@gemeente-denhaag/link-group",
   "description": "The Link Group component. List of links.",
+  "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
   "version": "0.2.0",
@@ -28,9 +29,9 @@
     "url": "https://github.com/nl-design-system/denhaag.git",
     "directory": "components/LinkGroup"
   },
-  "bugs": "https://github.com/nl-design-system/denhaag/issues",
-  "devDependencies": {
-    "@gemeente-denhaag/icons": "workspace:*"
+  "dependencies": {
+    "@gemeente-denhaag/icons": "workspace:*",
+    "clsx": "2.1.1"
   },
   "peerDependencies": {
     "react": "18",

@@ -33,7 +33,8 @@
     "@gemeente-denhaag/button": "workspace:*",
     "@gemeente-denhaag/iconbutton": "workspace:*",
     "@gemeente-denhaag/icons": "workspace:*",
-    "@gemeente-denhaag/typography": "workspace:*"
+    "@gemeente-denhaag/typography": "workspace:*",
+    "clsx": "2.1.1"
   },
   "peerDependencies": {
     "react": "18",

@@ -29,6 +29,9 @@
     "clean": "rimraf dist tsconfig.tsbuildinfo",
     "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\""
   },
+  "dependencies": {
+    "clsx": "2.1.1"
+  },
   "peerDependencies": {
     "react": "18",
     "react-dom": "18"
