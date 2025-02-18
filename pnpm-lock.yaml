@@ -26,6 +26,9 @@ importers:
       '@svgr/rollup':
         specifier: 8.1.0
         version: 8.1.0(rollup@4.28.1)(typescript@5.7.2)
+      '@types/react':
+        specifier: 18.3.18
+        version: 18.3.18
       '@typescript-eslint/eslint-plugin':
         specifier: 8.18.0
         version: 8.18.0(@typescript-eslint/parser@8.18.0(eslint@9.16.0(jiti@2.4.2))(typescript@5.7.2))(eslint@9.16.0(jiti@2.4.2))(typescript@5.7.2)

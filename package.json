@@ -47,6 +47,7 @@
     "@rollup/plugin-commonjs": "28.0.1",
     "@rollup/plugin-node-resolve": "15.3.0",
     "@svgr/rollup": "8.1.0",
+    "@types/react": "18.3.18",
     "@typescript-eslint/eslint-plugin": "8.18.0",
     "@typescript-eslint/parser": "8.18.0",
     "chokidar-cli": "3.0.0",
