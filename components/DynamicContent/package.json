@@ -26,7 +26,8 @@
   "scripts": {
     "build": "rollup -c ../../rollup.config.mjs",
     "clean": "rimraf dist tsconfig.tsbuildinfo",
-    "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\""
+    "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\"",
+    "typecheck": "tsc --noEmit"
   },
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "dependencies": {

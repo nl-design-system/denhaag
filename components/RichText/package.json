@@ -28,7 +28,8 @@
     "generate": "tsc src/generate.ts --resolveJsonModule --esModuleInterop --outDir dist && node dist/generate.js",
     "build": "rollup -c ../../rollup.config.mjs",
     "clean": "rimraf dist tsconfig.tsbuildinfo",
-    "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\""
+    "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\"",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@utrecht/component-library-react": "4.2.0",

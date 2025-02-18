@@ -5,7 +5,7 @@
     "outDir": "dist",
     "composite": true
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "src/spacing-matrix.json"],
   "exclude": ["dist", "src/**/*.stories.tsx"],
   "references": []
 }
