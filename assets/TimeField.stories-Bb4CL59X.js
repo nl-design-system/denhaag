@@ -1,3 +1,0 @@
-import{j as n}from"./jsx-runtime-BjgbQsUx.js";import{S as m}from"./StoryUtil-BwjWwC7W.js";import"./index-D2MAbzvX.js";import"./index-B3p8u_35.js";import"./_commonjsHelpers-BosuxZz1.js";import"./index-Chjiymov.js";const u={id:"open-forms-timefield",title:"Open Formulieren/TimeField",component:m,args:{type:"time",label:"Tijd",extraComponentProperties:{inputType:"text"}}},e={render:i=>n.jsx(m,{...i})};var r,o,t;e.parameters={...e.parameters,docs:{...(r=e.parameters)==null?void 0:r.docs,source:{originalSource:`{
-  render: args => <SingleFormioComponent {...args} />
-}`,...(t=(o=e.parameters)==null?void 0:o.docs)==null?void 0:t.source}}};const f=["Default"];export{e as Default,f as __namedExportsOrder,u as default};
