@@ -122,6 +122,9 @@ importers:
       stylelint-config-standard-scss:
         specifier: 14.0.0
         version: 14.0.0(postcss@8.4.49)(stylelint@16.11.0(typescript@5.7.2))
+      tslib:
+        specifier: 2.8.1
+        version: 2.8.1
       typescript:
         specifier: 5.7.2
         version: 5.7.2
