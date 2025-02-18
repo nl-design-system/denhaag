@@ -15,6 +15,7 @@ export interface ResponsiveContentProps {
 
 export const ResponsiveContent = (props: ResponsiveContentProps) => {
   const classNames = clsx('denhaag-responsive-content', props.className);
+
   return <div className={classNames}>{props.children}</div>;
 };
 
