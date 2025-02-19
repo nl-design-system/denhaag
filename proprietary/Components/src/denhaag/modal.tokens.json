@@ -50,7 +50,7 @@
           }
         }
       },
-      "overlay": {
+      "backdrop": {
         "background-color": {
           "value": "rgb(0 0 0 / 50%)"
         }
