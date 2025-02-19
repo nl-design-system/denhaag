@@ -52,7 +52,7 @@
       },
       "overlay": {
         "background-color": {
-          "value": "{denhaag.color.grey.2.value}"
+          "value": "rgb(0 0 0 / 50%)"
         }
       },
       "header": {
