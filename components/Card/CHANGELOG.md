@@ -1,5 +1,16 @@
 # @gemeente-denhaag/card
 
+## 1.1.2
+
+### Patch Changes
+
+- 4bbb7fa: Package maintenance
+- Updated dependencies [4bbb7fa]
+  - @gemeente-denhaag/typography@1.1.2
+  - @gemeente-denhaag/icons@2.1.1
+  - @gemeente-denhaag/utils@1.1.1
+  - @gemeente-denhaag/link@1.1.1
+
 ## 1.1.1
 
 ### Patch Changes

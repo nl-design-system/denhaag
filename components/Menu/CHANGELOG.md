@@ -1,5 +1,17 @@
 # @gemeente-denhaag/menu
 
+## 1.1.1
+
+### Patch Changes
+
+- 4bbb7fa: Package maintenance
+- Updated dependencies [4bbb7fa]
+  - @gemeente-denhaag/language-switcher@1.1.1
+  - @gemeente-denhaag/badge-counter@1.1.1
+  - @gemeente-denhaag/button@1.1.1
+  - @gemeente-denhaag/icons@2.1.1
+  - @gemeente-denhaag/sheet@1.1.1
+
 ## 1.1.0
 
 ### Minor Changes

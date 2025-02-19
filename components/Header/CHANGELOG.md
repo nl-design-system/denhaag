@@ -1,5 +1,24 @@
 # @gemeente-denhaag/header
 
+## 1.1.2
+
+### Patch Changes
+
+- 4bbb7fa: Package maintenance
+- Updated dependencies [4bbb7fa]
+  - @gemeente-denhaag/responsive-content@0.2.1
+  - @gemeente-denhaag/language-switcher@1.1.1
+  - @gemeente-denhaag/breadcrumb@1.1.1
+  - @gemeente-denhaag/header-logo@1.1.1
+  - @gemeente-denhaag/iconbutton@1.1.1
+  - @gemeente-denhaag/typography@1.1.2
+  - @gemeente-denhaag/link-group@0.2.1
+  - @gemeente-denhaag/button@1.1.1
+  - @gemeente-denhaag/icons@2.1.1
+  - @gemeente-denhaag/sheet@1.1.1
+  - @gemeente-denhaag/link@1.1.1
+  - @gemeente-denhaag/menu@1.1.1
+
 ## 1.1.1
 
 ### Patch Changes

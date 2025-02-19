@@ -1,5 +1,11 @@
 # @gemeente-denhaag/responsive-content
 
+## 0.2.1
+
+### Patch Changes
+
+- 4bbb7fa: Package maintenance
+
 ## 0.2.0
 
 ### Minor Changes

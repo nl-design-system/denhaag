@@ -1,5 +1,11 @@
 # @gemeente-denhaag/icons
 
+## 2.1.1
+
+### Patch Changes
+
+- 4bbb7fa: Package maintenance
+
 ## 2.1.0
 
 ### Minor Changes

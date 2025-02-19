@@ -1,5 +1,18 @@
 # @gemeente-denhaag/contact-timeline
 
+## 1.1.2
+
+### Patch Changes
+
+- 4bbb7fa: Package maintenance
+- Updated dependencies [4bbb7fa]
+  - @gemeente-denhaag/process-steps@1.1.2
+  - @gemeente-denhaag/step-marker@1.1.1
+  - @gemeente-denhaag/typography@1.1.2
+  - @gemeente-denhaag/icons@2.1.1
+  - @gemeente-denhaag/utils@1.1.1
+  - @gemeente-denhaag/file@0.2.1
+
 ## 1.1.1
 
 ### Patch Changes

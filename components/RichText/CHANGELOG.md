@@ -1,5 +1,11 @@
 # @gemeente-denhaag/rich-text
 
+## 2.1.1
+
+### Patch Changes
+
+- 4bbb7fa: Package maintenance
+
 ## 2.1.0
 
 ### Minor Changes
