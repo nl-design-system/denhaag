@@ -1,5 +1,13 @@
 # @gemeente-denhaag/typography
 
+## 1.1.2
+
+### Patch Changes
+
+- 4bbb7fa: Package maintenance
+- Updated dependencies [73010fc]
+  - @gemeente-denhaag/design-tokens-components@1.0.2
+
 ## 1.1.1
 
 ### Patch Changes

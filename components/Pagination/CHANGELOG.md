@@ -1,5 +1,12 @@
 # @gemeente-denhaag/pagination
 
+## 1.1.2
+
+### Patch Changes
+
+- 4bbb7fa: Package maintenance
+- f9ff0f0: Revert changes with indexLimit
+
 ## 1.1.1
 
 ### Patch Changes

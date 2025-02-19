@@ -1,5 +1,13 @@
 # @gemeente-denhaag/keycloak
 
+## 1.0.2
+
+### Patch Changes
+
+- Updated dependencies [73010fc]
+  - @gemeente-denhaag/design-tokens-components@1.0.2
+  - @gemeente-denhaag/components-css@0.1.1-alpha.372
+
 ## 1.0.1
 
 ### Patch Changes

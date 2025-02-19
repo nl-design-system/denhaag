@@ -1,5 +1,11 @@
 # @gemeente-denhaag/design-tokens-components
 
+## 1.0.2
+
+### Patch Changes
+
+- 73010fc: Made Modal backdrop transparent
+
 ## 1.0.1
 
 ### Patch Changes

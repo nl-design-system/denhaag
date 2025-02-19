@@ -1,5 +1,14 @@
 # @gemeente-denhaag/anchor-navigation
 
+## 0.1.7
+
+### Patch Changes
+
+- 4bbb7fa: Package maintenance
+- Updated dependencies [4bbb7fa]
+  - @gemeente-denhaag/button@1.1.1
+  - @gemeente-denhaag/icons@2.1.1
+
 ## 0.1.6
 
 ### Patch Changes

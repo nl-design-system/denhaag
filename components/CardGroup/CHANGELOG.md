@@ -1,5 +1,13 @@
 # @gemeente-denhaag/card-group
 
+## 0.1.10
+
+### Patch Changes
+
+- 4bbb7fa: Package maintenance
+- Updated dependencies [4bbb7fa]
+  - @gemeente-denhaag/card-authentication@0.1.10
+
 ## 0.1.9
 
 ### Patch Changes

@@ -1,5 +1,15 @@
 # @gemeente-denhaag/breadcrumb
 
+## 1.1.1
+
+### Patch Changes
+
+- 4bbb7fa: Package maintenance
+- Updated dependencies [4bbb7fa]
+  - @gemeente-denhaag/responsive-content@0.2.1
+  - @gemeente-denhaag/icons@2.1.1
+  - @gemeente-denhaag/link@1.1.1
+
 ## 1.1.0
 
 ### Minor Changes

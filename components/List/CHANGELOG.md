@@ -1,5 +1,14 @@
 # @gemeente-denhaag/list
 
+## 1.1.1
+
+### Patch Changes
+
+- 4bbb7fa: Package maintenance
+- Updated dependencies [4bbb7fa]
+  - @gemeente-denhaag/iconbutton@1.1.1
+  - @gemeente-denhaag/icons@2.1.1
+
 ## 1.1.0
 
 ### Minor Changes

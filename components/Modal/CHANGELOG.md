@@ -1,5 +1,14 @@
 # @gemeente-denhaag/modal
 
+## 1.1.1
+
+### Patch Changes
+
+- 4bbb7fa: Package maintenance
+- 73010fc: Made Modal backdrop transparent
+- Updated dependencies [4bbb7fa]
+  - @gemeente-denhaag/button@1.1.1
+
 ## 1.1.0
 
 ### Minor Changes

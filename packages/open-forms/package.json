@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/open-forms",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A temporary Open-forms theme to support NL Design System components and the Municipality of the Hague theme",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {

@@ -1,5 +1,11 @@
 # @gemeente-denhaag/text-input
 
+## 1.1.1
+
+### Patch Changes
+
+- 4bbb7fa: Package maintenance
+
 ## 1.1.0
 
 ### Minor Changes
