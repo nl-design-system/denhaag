@@ -1,5 +1,12 @@
 # @gemeente-denhaag/storybook
 
+## 1.1.5
+
+### Patch Changes
+
+- Updated dependencies [fa64b5c]
+  - @gemeente-denhaag/modal@1.1.2
+
 ## 1.1.4
 
 ### Patch Changes
