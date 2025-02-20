@@ -8,13 +8,22 @@ import ModalBackdrop from './ModalBackdrop';
 export interface ModalProps {
   open?: boolean;
   title?: string;
+  closeLabel?: string;
   children?: React.ReactNode;
   actions?: (toggle: (toggle?: boolean) => void) => ModalAction[];
   trigger?: (toggle: (toggle?: boolean) => void) => React.ReactNode;
   onToggle?: (open: boolean) => void;
 }
 
-export const Modal = ({ open: openProp = false, title, children, actions, trigger, onToggle }: ModalProps) => {
+export const Modal = ({
+  open: openProp = false,
+  title,
+  closeLabel,
+  children,
+  actions,
+  trigger,
+  onToggle,
+}: ModalProps) => {
   const [ref] = useState(useRef<HTMLDialogElement>(null));
   const [open, setOpen] = useState(openProp);
 
@@ -38,7 +47,7 @@ export const Modal = ({ open: openProp = false, title, children, actions, trigge
       <dialog ref={ref} className="denhaag-modal">
         <ModalBackdrop onClose={() => toggle(false)} />
         <ModalDialog>
-          <ModalHeader title={title} onClose={() => toggle(false)} />
+          <ModalHeader title={title} closeLabel={closeLabel} onClose={() => toggle(false)} />
           <ModalContent>{children}</ModalContent>
           <ModalFooter actions={actions?.(toggle)} />
         </ModalDialog>
