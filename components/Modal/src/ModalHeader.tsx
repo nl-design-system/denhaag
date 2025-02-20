@@ -1,9 +1,9 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import ModalTitle from './ModalTitle';
 import ModalClose from './ModalClose';
 
 export interface ModalHeaderProps {
-  title?: ReactNode;
+  title?: string;
   onClose?: () => void;
 }
 
