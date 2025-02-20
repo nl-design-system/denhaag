@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { ReactNode, useEffect, useRef, useState } from 'react';
 import ModalHeader from './ModalHeader';
 import ModalContent from './ModalContent';
 import ModalFooter, { ModalAction } from './ModalFooter';
@@ -7,7 +7,7 @@ import ModalBackdrop from './ModalBackdrop';
 
 export interface ModalProps {
   open?: boolean;
-  title?: string;
+  title?: ReactNode;
   children?: React.ReactNode;
   actions?: (toggle: (toggle?: boolean) => void) => ModalAction[];
   trigger?: (toggle: (toggle?: boolean) => void) => React.ReactNode;
