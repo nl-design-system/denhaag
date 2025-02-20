@@ -96,18 +96,18 @@
     "@gemeente-denhaag/typography": "workspace:*",
     "@gemeente-denhaag/unorderedlist": "workspace:*",
     "@gemeente-denhaag/utils": "workspace:*",
-    "@nl-design-system-unstable/theme-toolkit": "1.0.0-alpha.27",
+    "@nl-design-system-unstable/theme-toolkit": "1.0.0",
     "@storybook/manager-api": "8.4.7",
     "@storybook/preview-api": "8.4.7",
     "@utrecht/component-library-css": "7.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.26.0",
-    "@babel/preset-env": "7.26.0",
+    "@babel/core": "7.26.9",
+    "@babel/preset-env": "7.26.9",
     "@babel/preset-react": "7.26.3",
     "@babel/preset-typescript": "7.26.0",
     "@etchteam/storybook-addon-status": "5.0.0",
-    "@open-formulieren/sdk": "2.4.2",
+    "@open-formulieren/sdk": "2.4.3",
     "@storybook/addon-a11y": "8.4.7",
     "@storybook/addon-actions": "8.4.7",
     "@storybook/addon-docs": "8.4.7",
@@ -134,14 +134,14 @@
     "react-docgen-typescript": "2.2.2",
     "react-dom": "18.3.1",
     "react-formio": "4.3.0",
-    "react-markdown": "9.0.1",
+    "react-markdown": "9.0.3",
     "react-syntax-highlighter": "15.6.1",
     "rimraf": "6.0.1",
     "sass": "1.82.0",
-    "sass-loader": "16.0.4",
+    "sass-loader": "16.0.5",
     "storybook": "8.4.7",
     "storybook-addon-pseudo-states": "4.0.2",
-    "typescript": "5.7.2",
-    "vite": "6.0.3"
+    "typescript": "5.7.3",
+    "vite": "6.0.11"
   }
 }
