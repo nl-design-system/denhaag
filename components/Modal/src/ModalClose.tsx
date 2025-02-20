@@ -1,10 +1,11 @@
 import React from 'react';
 
 export interface ModalCloseProps {
+  label?: string;
   onClick?: () => void;
 }
 
-export const ModalClose = ({ onClick }: ModalCloseProps) => {
+export const ModalClose = ({ label = 'Sluiten', onClick }: ModalCloseProps) => {
   return (
     <button className="denhaag-modal__close" type="button" aria-label="Close" onClick={onClick}>
       <svg
@@ -20,7 +21,7 @@ export const ModalClose = ({ onClick }: ModalCloseProps) => {
           fill="currentColor"
         />
       </svg>
-      Sluiten
+      {label}
     </button>
   );
 };
