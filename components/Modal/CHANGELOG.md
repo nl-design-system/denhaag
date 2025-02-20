@@ -1,5 +1,11 @@
 # @gemeente-denhaag/modal
 
+## 1.1.2
+
+### Patch Changes
+
+- fa64b5c: Added closeLabel prop
+
 ## 1.1.1
 
 ### Patch Changes
