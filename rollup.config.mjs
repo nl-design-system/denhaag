@@ -7,6 +7,7 @@ import path from 'node:path';
 import { cwd } from 'node:process';
 import postcss from 'rollup-plugin-postcss';
 import discardDuplicates from 'postcss-discard-duplicates';
+import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 
 import { readFileSync } from 'node:fs';
 import summary from 'rollup-plugin-summary';
@@ -34,6 +35,7 @@ const createConfig = ({ dir, format, baseUrl }) => ({
     compact: true,
   },
   plugins: [
+    peerDepsExternal(),
     postcss({
       extensions: ['.css', '.scss'],
       minimize: true,

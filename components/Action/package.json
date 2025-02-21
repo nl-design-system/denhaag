@@ -39,7 +39,7 @@
     "date-fns": "4.1.0"
   },
   "peerDependencies": {
-    "react": "18",
-    "react-dom": "18"
+    "react": "18 || 19",
+    "react-dom": "18 || 19"
   }
 }
