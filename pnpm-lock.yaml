@@ -30,8 +30,8 @@ importers:
         specifier: 22.13.4
         version: 22.13.4
       '@types/react':
-        specifier: 18.3.18
-        version: 18.3.18
+        specifier: 19.0.10
+        version: 19.0.10
       '@typescript-eslint/eslint-plugin':
         specifier: 8.24.1
         version: 8.24.1(@typescript-eslint/parser@8.24.1(eslint@9.20.1(jiti@2.4.2))(typescript@5.7.3))(eslint@9.20.1(jiti@2.4.2))(typescript@5.7.3)
@@ -104,6 +104,9 @@ importers:
       rollup:
         specifier: 4.34.8
         version: 4.34.8
+      rollup-plugin-peer-deps-external:
+        specifier: 2.2.4
+        version: 2.2.4(rollup@4.34.8)
       rollup-plugin-postcss:
         specifier: 4.0.2
         version: 4.0.2(postcss@8.5.3)
@@ -158,11 +161,11 @@ importers:
         specifier: 4.1.0
         version: 4.1.0
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/Alert:
     dependencies:
@@ -182,11 +185,11 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/AnchorCollapse: {}
 
@@ -205,25 +208,25 @@ importers:
     dependencies:
       '@utrecht/component-library-react':
         specifier: 9.0.1
-        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@utrecht/components':
         specifier: 7.4.0
         version: 7.4.0
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/Blockquote:
     dependencies:
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/Breadcrumb:
     dependencies:
@@ -240,11 +243,11 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/Button:
     dependencies:
@@ -255,11 +258,11 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/ButtonGroup: {}
 
@@ -267,16 +270,16 @@ importers:
     dependencies:
       '@utrecht/component-library-react':
         specifier: 9.0.1
-        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@utrecht/components':
         specifier: 7.4.0
         version: 7.4.0
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/Card:
     dependencies:
@@ -296,11 +299,11 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
     devDependencies:
       '@gemeente-denhaag/iconbutton':
         specifier: workspace:*
@@ -333,16 +336,16 @@ importers:
     dependencies:
       '@utrecht/component-library-react':
         specifier: 9.0.1
-        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@utrecht/components':
         specifier: 7.4.0
         version: 7.4.0
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/ContactTimeline:
     dependencies:
@@ -368,11 +371,11 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/CtaDownload:
     dependencies:
@@ -410,11 +413,11 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/Divider:
     dependencies:
@@ -425,11 +428,11 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/DotIndicator:
     dependencies:
@@ -440,11 +443,11 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/DynamicContent:
     dependencies:
@@ -475,11 +478,11 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/FloatingContact: {}
 
@@ -508,59 +511,59 @@ importers:
         version: 7.1.0
       '@utrecht/component-library-react':
         specifier: 9.0.1
-        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       clsx:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/FormField:
     dependencies:
       '@utrecht/component-library-react':
         specifier: 9.0.1
-        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@utrecht/components':
         specifier: 7.4.0
         version: 7.4.0
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/FormFieldDescription:
     dependencies:
       '@utrecht/component-library-react':
         specifier: 9.0.1
-        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@utrecht/components':
         specifier: 7.4.0
         version: 7.4.0
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/FormFieldErrorMessage:
     dependencies:
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
     devDependencies:
       '@utrecht/component-library-react':
         specifier: 9.0.1
-        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@utrecht/components':
         specifier: 7.4.0
         version: 7.4.0
@@ -569,31 +572,31 @@ importers:
     dependencies:
       '@utrecht/component-library-react':
         specifier: 9.0.1
-        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@utrecht/components':
         specifier: 7.4.0
         version: 7.4.0
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/FormLabel:
     dependencies:
       '@utrecht/component-library-react':
         specifier: 9.0.1
-        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@utrecht/components':
         specifier: 7.4.0
         version: 7.4.0
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/FormProgress:
     dependencies:
@@ -604,11 +607,11 @@ importers:
         specifier: workspace:*
         version: link:../Link
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/Header:
     dependencies:
@@ -652,20 +655,20 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/HeaderLogo:
     dependencies:
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/Hero: {}
 
@@ -684,11 +687,11 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/Icons:
     dependencies:
@@ -696,11 +699,11 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/Image:
     devDependencies:
@@ -718,16 +721,16 @@ importers:
         version: link:../Link
       '@utrecht/component-library-react':
         specifier: 9.0.1
-        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       clsx:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/Link:
     dependencies:
@@ -738,26 +741,26 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/LinkButton:
     dependencies:
       '@utrecht/component-library-react':
         specifier: 9.0.1
-        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@utrecht/components':
         specifier: 7.4.0
         version: 7.4.0
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/LinkGroup:
     dependencies:
@@ -768,17 +771,17 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/LinkList:
     dependencies:
       '@utrecht/component-library-react':
         specifier: 9.0.1
-        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@utrecht/components':
         specifier: 7.4.0
         version: 7.4.0
@@ -786,11 +789,11 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/List:
     dependencies:
@@ -804,11 +807,11 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/Menu:
     dependencies:
@@ -837,11 +840,11 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
       uuid:
         specifier: 11.1.0
         version: 11.1.0
@@ -852,11 +855,11 @@ importers:
         specifier: workspace:*
         version: link:../Button
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/Note:
     devDependencies:
@@ -868,16 +871,16 @@ importers:
     dependencies:
       '@utrecht/component-library-react':
         specifier: 9.0.1
-        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@utrecht/components':
         specifier: 7.4.0
         version: 7.4.0
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/Page:
     dependencies:
@@ -885,11 +888,11 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/PageButtons: {}
 
@@ -899,11 +902,11 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/ProcessSteps:
     dependencies:
@@ -923,26 +926,26 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/RadioButton:
     dependencies:
       '@utrecht/component-library-react':
         specifier: 9.0.1
-        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@utrecht/components':
         specifier: 7.4.0
         version: 7.4.0
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/ResponsiveContent:
     dependencies:
@@ -950,32 +953,32 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/RichText:
     dependencies:
       '@utrecht/component-library-react':
         specifier: 9.0.1
-        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@utrecht/components':
         specifier: 7.4.0
         version: 7.4.0
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/Select:
     dependencies:
       '@utrecht/component-library-react':
         specifier: 9.0.1
-        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@utrecht/components':
         specifier: 7.4.0
         version: 7.4.0
@@ -983,11 +986,11 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/Sheet:
     dependencies:
@@ -1004,11 +1007,11 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/Sidenav:
     dependencies:
@@ -1016,26 +1019,26 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/StatusBadge:
     dependencies:
       '@utrecht/component-library-react':
         specifier: 9.0.1
-        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@utrecht/components':
         specifier: 7.4.0
         version: 7.4.0
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/StepMarker:
     dependencies:
@@ -1046,20 +1049,20 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/StylesProvider:
     dependencies:
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/Tab:
     dependencies:
@@ -1067,11 +1070,11 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
       uuid:
         specifier: 11.1.0
         version: 11.1.0
@@ -1089,41 +1092,41 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/TextInput:
     dependencies:
       '@utrecht/component-library-react':
         specifier: 9.0.1
-        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@utrecht/components':
         specifier: 7.4.0
         version: 7.4.0
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/Textarea:
     dependencies:
       '@utrecht/component-library-react':
         specifier: 9.0.1
-        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@utrecht/components':
         specifier: 7.4.0
         version: 7.4.0
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/Typography:
     dependencies:
@@ -1135,7 +1138,7 @@ importers:
         version: link:../../proprietary/Components
       '@utrecht/component-library-react':
         specifier: 9.0.1
-        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@utrecht/components':
         specifier: 7.4.0
         version: 7.4.0
@@ -1143,17 +1146,17 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/UnorderedList:
     dependencies:
       '@utrecht/component-library-react':
         specifier: 9.0.1
-        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@utrecht/components':
         specifier: 7.4.0
         version: 7.4.0
@@ -1161,11 +1164,11 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   components/Utils:
     dependencies:
@@ -1173,11 +1176,11 @@ importers:
         specifier: 4.1.0
         version: 4.1.0
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   packages/components-css:
     devDependencies:
@@ -1497,11 +1500,11 @@ importers:
         specifier: workspace:*
         version: link:../../components/Typography
       react:
-        specifier: '18'
-        version: 18.3.1
+        specifier: 18 || 19
+        version: 19.0.0
       react-dom:
-        specifier: '18'
-        version: 18.3.1(react@18.3.1)
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
 
   packages/keycloak:
     dependencies:
@@ -1772,7 +1775,7 @@ importers:
         version: 5.0.0
       '@open-formulieren/sdk':
         specifier: 3.0.0
-        version: 3.0.0(@types/react@18.3.18)(formiojs@4.21.6)(prop-types@15.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.85.0)(storybook@8.5.8(prettier@3.5.1))(typescript@5.7.3)
+        version: 3.0.0(@types/react@19.0.10)(formiojs@4.21.6)(prop-types@15.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.85.0)(storybook@8.5.8(prettier@3.5.1))(typescript@5.7.3)
       '@storybook/addon-a11y':
         specifier: 8.5.8
         version: 8.5.8(storybook@8.5.8(prettier@3.5.1))
@@ -1781,7 +1784,7 @@ importers:
         version: 8.5.8(storybook@8.5.8(prettier@3.5.1))
       '@storybook/addon-docs':
         specifier: 8.5.8
-        version: 8.5.8(@types/react@18.3.18)(storybook@8.5.8(prettier@3.5.1))
+        version: 8.5.8(@types/react@19.0.10)(storybook@8.5.8(prettier@3.5.1))
       '@storybook/addon-links':
         specifier: 8.5.8
         version: 8.5.8(react@18.3.1)(storybook@8.5.8(prettier@3.5.1))
@@ -1819,11 +1822,11 @@ importers:
         specifier: 8.5.8
         version: 8.5.8(storybook@8.5.8(prettier@3.5.1))
       '@types/react':
-        specifier: 18.3.18
-        version: 18.3.18
+        specifier: 19.0.10
+        version: 19.0.10
       '@types/react-dom':
-        specifier: 18.3.5
-        version: 18.3.5(@types/react@18.3.18)
+        specifier: 19.0.4
+        version: 19.0.4(@types/react@19.0.10)
       '@vitejs/plugin-react':
         specifier: 4.3.4
         version: 4.3.4(vite@6.1.1(@types/node@22.13.4)(jiti@2.4.2)(sass@1.85.0)(terser@5.37.0)(yaml@2.7.0))
@@ -1853,7 +1856,7 @@ importers:
         version: 4.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-markdown:
         specifier: 10.0.0
-        version: 10.0.0(@types/react@18.3.18)(react@18.3.1)
+        version: 10.0.0(@types/react@19.0.10)(react@18.3.1)
       react-syntax-highlighter:
         specifier: 15.6.1
         version: 15.6.1(react@18.3.1)
@@ -3848,10 +3851,10 @@ packages:
   '@types/prop-types@15.7.14':
     resolution: {integrity: sha512-gNMvNH49DJ7OJYv+KAKn0Xp45p8PLl6zo2YnvDIbTd4J6MER2BmWN49TG7n9LvkyihINxeKW8+3bfS2yDC9dzQ==}
 
-  '@types/react-dom@18.3.5':
-    resolution: {integrity: sha512-P4t6saawp+b/dFrUr2cvkVsfvPguwsxtH6dNIYRllMsefqFzkZk5UIjzyDOv5g1dXIPdG4Sp1yCR4Z6RCUsG/Q==}
+  '@types/react-dom@19.0.4':
+    resolution: {integrity: sha512-4fSQ8vWFkg+TGhePfUzVmat3eC14TXYSsiiDSLI0dVLsrm9gZFABjPy/Qu6TKgl1tq1Bu1yDsuQgY3A3DOjCcg==}
     peerDependencies:
-      '@types/react': ^18.0.0
+      '@types/react': ^19.0.0
 
   '@types/react-transition-group@4.4.12':
     resolution: {integrity: sha512-8TV6R3h2j7a91c+1DXdJi3Syo69zzIZbz7Lg5tORM5LEJG7X/E6a1V3drRyBRZq7/utz7A+c4OgYLiLcYGHG6w==}
@@ -3860,6 +3863,9 @@ packages:
 
   '@types/react@18.3.18':
     resolution: {integrity: sha512-t4yC+vtgnkYjNSKlFx1jkAhH8LgTo2N/7Qvi83kdEaUtMDiwpbLAktKDaAMlRcJ5eSxZkH74eEGt1ky31d7kfQ==}
+
+  '@types/react@19.0.10':
+    resolution: {integrity: sha512-JuRQ9KXLEjaUNjTWpzuR231Z2WpIwczOkBEIvbHNCzQefFIT0L8IqE6NV6ULLyC1SI/i234JnDoMkfg+RjQj2g==}
 
   '@types/resolve@1.20.2':
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
@@ -8025,6 +8031,11 @@ packages:
     peerDependencies:
       react: ^18.3.1
 
+  react-dom@19.0.0:
+    resolution: {integrity: sha512-4GV5sHFG0e/0AD4X+ySy6UJd3jVl1iNsNHdpad0qhABJ11twS3TTBnseqsKurKcsNqCEFeGL3uLpVChpIO3QfQ==}
+    peerDependencies:
+      react: ^19.0.0
+
   react-fast-compare@2.0.4:
     resolution: {integrity: sha512-suNP+J1VU1MWFKcyt7RtjiSWUjvidmQSlqu+eHslq+342xCbGTYmC0mEhPCOHxlW0CywylOC1u2DFAT+bv4dBw==}
 
@@ -8126,6 +8137,10 @@ packages:
 
   react@18.3.1:
     resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
+    engines: {node: '>=0.10.0'}
+
+  react@19.0.0:
+    resolution: {integrity: sha512-V8AVnmPIICiWpGfm6GLzCR/W5FXLchHop40W4nXBmdlEceh16rCN8O8LNWm5bh5XUX91fh7KpA+W0TgMKmgTpQ==}
     engines: {node: '>=0.10.0'}
 
   read-package-json-fast@3.0.2:
@@ -8289,6 +8304,11 @@ packages:
     engines: {node: 20 || >=22}
     hasBin: true
 
+  rollup-plugin-peer-deps-external@2.2.4:
+    resolution: {integrity: sha512-AWdukIM1+k5JDdAqV/Cxd+nejvno2FVLVeZ74NKggm3Q5s9cbbcOgUPGdbxPi4BXu7xGaZ8HG12F+thImYu/0g==}
+    peerDependencies:
+      rollup: '*'
+
   rollup-plugin-postcss@4.0.2:
     resolution: {integrity: sha512-05EaY6zvZdmvPUDi3uCcAQoESDcYnv8ogJJQRp6V5kZ6J6P7uAVJlrTZcaaA20wTH527YTnKfkAoPxWI/jPp4w==}
     engines: {node: '>=10'}
@@ -8374,6 +8394,9 @@ packages:
 
   scheduler@0.23.2:
     resolution: {integrity: sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==}
+
+  scheduler@0.25.0:
+    resolution: {integrity: sha512-xFVuu11jh+xcO7JOAGJNOXld8/TcEHK/4CituBUeUb5hqxJLj9YuemAEuvm9gQ/+pgXYfbQuqAkiYu+u7YEsNA==}
 
   schema-utils@3.3.0:
     resolution: {integrity: sha512-pN/yOAvcC+5rQ5nERGuwrjLlYvLTbCibnZ1I7B1LaiAz9BRBlE9GMgE/eqV30P7aJQUf7Ddimy/RsbYO/GrVGg==}
@@ -10567,7 +10590,7 @@ snapshots:
 
   '@emotion/memoize@0.9.0': {}
 
-  '@emotion/react@11.14.0(@types/react@18.3.18)(react@18.3.1)':
+  '@emotion/react@11.14.0(@types/react@19.0.10)(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.26.0
       '@emotion/babel-plugin': 11.13.5
@@ -10579,7 +10602,7 @@ snapshots:
       hoist-non-react-statics: 3.3.2
       react: 18.3.1
     optionalDependencies:
-      '@types/react': 18.3.18
+      '@types/react': 19.0.10
     transitivePeerDependencies:
       - supports-color
 
@@ -10965,10 +10988,10 @@ snapshots:
       globby: 11.1.0
       read-yaml-file: 1.1.0
 
-  '@mdx-js/react@3.1.0(@types/react@18.3.18)(react@18.3.1)':
+  '@mdx-js/react@3.1.0(@types/react@19.0.10)(react@18.3.1)':
     dependencies:
       '@types/mdx': 2.0.13
-      '@types/react': 18.3.18
+      '@types/react': 19.0.10
       react: 18.3.1
 
   '@nl-design-system-unstable/theme-toolkit@1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.5.8(prettier@3.5.1))':
@@ -11102,7 +11125,7 @@ snapshots:
       leaflet: 1.9.4
       proj4leaflet: 1.0.2
 
-  '@open-formulieren/sdk@3.0.0(@types/react@18.3.18)(formiojs@4.21.6)(prop-types@15.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.85.0)(storybook@8.5.8(prettier@3.5.1))(typescript@5.7.3)':
+  '@open-formulieren/sdk@3.0.0(@types/react@19.0.10)(formiojs@4.21.6)(prop-types@15.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.85.0)(storybook@8.5.8(prettier@3.5.1))(typescript@5.7.3)':
     dependencies:
       '@floating-ui/react': 0.26.28(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@formio/protected-eval': 1.2.2(formiojs@4.21.6)
@@ -11134,7 +11157,7 @@ snapshots:
       react-modal: 3.16.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-number-format: 5.2.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-router-dom: 6.28.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      react-select: 5.9.0(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react-select: 5.9.0(@types/react@19.0.10)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-use: 17.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       state-pool: 0.8.1(react@18.3.1)
       use-immer: 0.9.0(immer@9.0.21)(react@18.3.1)
@@ -11391,9 +11414,9 @@ snapshots:
       storybook: 8.5.8(prettier@3.5.1)
       uuid: 9.0.1
 
-  '@storybook/addon-docs@8.5.8(@types/react@18.3.18)(storybook@8.5.8(prettier@3.5.1))':
+  '@storybook/addon-docs@8.5.8(@types/react@19.0.10)(storybook@8.5.8(prettier@3.5.1))':
     dependencies:
-      '@mdx-js/react': 3.1.0(@types/react@18.3.18)(react@18.3.1)
+      '@mdx-js/react': 3.1.0(@types/react@19.0.10)(react@18.3.1)
       '@storybook/blocks': 8.5.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.5.8(prettier@3.5.1))
       '@storybook/csf-plugin': 8.5.8(storybook@8.5.8(prettier@3.5.1))
       '@storybook/react-dom-shim': 8.5.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.5.8(prettier@3.5.1))
@@ -11854,7 +11877,7 @@ snapshots:
 
   '@types/hoist-non-react-statics@3.3.6':
     dependencies:
-      '@types/react': 18.3.18
+      '@types/react': 19.0.10
       hoist-non-react-statics: 3.3.2
 
   '@types/is-empty@1.2.3': {}
@@ -11893,17 +11916,21 @@ snapshots:
 
   '@types/prop-types@15.7.14': {}
 
-  '@types/react-dom@18.3.5(@types/react@18.3.18)':
+  '@types/react-dom@19.0.4(@types/react@19.0.10)':
     dependencies:
-      '@types/react': 18.3.18
+      '@types/react': 19.0.10
 
-  '@types/react-transition-group@4.4.12(@types/react@18.3.18)':
+  '@types/react-transition-group@4.4.12(@types/react@19.0.10)':
     dependencies:
-      '@types/react': 18.3.18
+      '@types/react': 19.0.10
 
   '@types/react@18.3.18':
     dependencies:
       '@types/prop-types': 15.7.14
+      csstype: 3.1.3
+
+  '@types/react@19.0.10':
+    dependencies:
       csstype: 3.1.3
 
   '@types/resolve@1.20.2': {}
@@ -12032,37 +12059,37 @@ snapshots:
 
   '@utrecht/button-link-css@1.3.0': {}
 
-  '@utrecht/button-react@2.0.6(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/button-react@2.0.6(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@babel/runtime': 7.26.0
       '@utrecht/button-css': 2.3.0
       clsx: 2.1.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
 
   '@utrecht/calendar-css@1.4.0': {}
 
-  '@utrecht/calendar-react@1.0.10(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/calendar-react@1.0.10(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@babel/runtime': 7.26.0
-      '@utrecht/button-react': 2.0.6(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/button-react': 2.0.6(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@utrecht/calendar-css': 1.4.0
       clsx: 2.1.1
       date-fns: 2.30.0
       lodash-es: 4.17.21
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
 
   '@utrecht/checkbox-css@1.6.0': {}
 
-  '@utrecht/checkbox-react@1.0.7(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/checkbox-react@1.0.7(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@babel/runtime': 7.26.0
       '@utrecht/checkbox-css': 1.6.0
       '@utrecht/custom-checkbox-css': 1.3.1
       clsx: 2.1.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
 
   '@utrecht/code-block-css@1.5.0': {}
 
@@ -12074,17 +12101,17 @@ snapshots:
 
   '@utrecht/combobox-css@1.4.0': {}
 
-  '@utrecht/combobox-react@0.0.7(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/combobox-react@0.0.7(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@babel/runtime': 7.26.0
       '@utrecht/combobox-css': 1.4.0
       clsx: 2.1.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
 
   '@utrecht/component-library-css@7.1.0': {}
 
-  '@utrecht/component-library-react@9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/component-library-react@9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@babel/runtime': 7.26.0
       '@utrecht/accordion-css': 1.6.0
@@ -12100,32 +12127,32 @@ snapshots:
       '@utrecht/breadcrumb-nav-css': 1.4.0
       '@utrecht/button-group-css': 1.4.0
       '@utrecht/button-link-css': 1.3.0
-      '@utrecht/button-react': 2.0.6(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@utrecht/calendar-react': 1.0.10(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@utrecht/checkbox-react': 1.0.7(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/button-react': 2.0.6(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@utrecht/calendar-react': 1.0.10(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@utrecht/checkbox-react': 1.0.7(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@utrecht/code-block-css': 1.5.0
       '@utrecht/code-css': 1.5.0
       '@utrecht/color-sample-css': 1.4.0
       '@utrecht/column-layout-css': 1.5.0
-      '@utrecht/combobox-react': 0.0.7(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/combobox-react': 0.0.7(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@utrecht/currency-data-css': 1.3.0
       '@utrecht/custom-checkbox-css': 1.3.1
       '@utrecht/data-badge-css': 1.0.0
-      '@utrecht/data-badge-react': 1.0.3(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/data-badge-react': 1.0.3(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@utrecht/data-list-css': 1.4.0
       '@utrecht/data-placeholder-css': 1.4.0
       '@utrecht/digid-button-css': 1.4.0
       '@utrecht/document-css': 1.5.0
       '@utrecht/drawer-css': 1.4.0
       '@utrecht/emphasis-css': 1.5.0
-      '@utrecht/fieldset-react': 1.0.6(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/fieldset-react': 1.0.6(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@utrecht/figure-css': 1.5.0
       '@utrecht/focus-ring-css': 2.3.0
-      '@utrecht/form-field-checkbox-react': 1.0.9(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@utrecht/form-field-description-react': 1.0.6(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@utrecht/form-field-error-message-react': 1.0.6(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@utrecht/form-field-react': 1.0.6(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@utrecht/form-label-react': 1.0.6(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/form-field-checkbox-react': 1.0.9(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@utrecht/form-field-description-react': 1.0.6(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@utrecht/form-field-error-message-react': 1.0.6(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@utrecht/form-field-react': 1.0.6(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@utrecht/form-label-react': 1.0.6(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@utrecht/form-toggle-css': 1.5.0
       '@utrecht/heading-1-css': 1.5.0
       '@utrecht/heading-2-css': 1.5.0
@@ -12141,10 +12168,10 @@ snapshots:
       '@utrecht/index-char-nav-css': 1.4.0
       '@utrecht/link-button-css': 1.4.0
       '@utrecht/link-list-css': 2.3.0
-      '@utrecht/link-react': 1.0.6(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/link-react': 1.0.6(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@utrecht/link-social-css': 1.4.0
       '@utrecht/list-social-css': 1.4.0
-      '@utrecht/listbox-react': 1.0.9(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/listbox-react': 1.0.9(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@utrecht/logo-button-css': 1.4.0
       '@utrecht/logo-css': 1.4.0
       '@utrecht/logo-image-css': 1.4.0
@@ -12165,7 +12192,7 @@ snapshots:
       '@utrecht/paragraph-css': 2.3.0
       '@utrecht/pre-heading-css': 1.4.0
       '@utrecht/preserve-data-css': 1.3.0
-      '@utrecht/radio-button-react': 1.0.6(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/radio-button-react': 1.0.6(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@utrecht/rich-text-css': 1.3.0
       '@utrecht/search-bar-css': 2.2.0
       '@utrecht/select-css': 1.8.0
@@ -12178,7 +12205,7 @@ snapshots:
       '@utrecht/table-css': 1.5.0
       '@utrecht/table-of-contents-css': 0.3.0
       '@utrecht/textarea-css': 2.3.0
-      '@utrecht/textbox-react': 1.0.6(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/textbox-react': 1.0.6(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@utrecht/top-task-link-css': 1.4.0
       '@utrecht/top-task-nav-css': 1.3.0
       '@utrecht/unordered-list-css': 1.5.0
@@ -12186,8 +12213,8 @@ snapshots:
       '@utrecht/vega-visualization-css': 1.4.0
       clsx: 2.1.1
       lodash.chunk: 4.2.0
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
     optionalDependencies:
       date-fns: 2.30.0
 
@@ -12209,13 +12236,13 @@ snapshots:
 
   '@utrecht/data-badge-css@1.0.0': {}
 
-  '@utrecht/data-badge-react@1.0.3(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/data-badge-react@1.0.3(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@babel/runtime': 7.26.0
       '@utrecht/data-badge-css': 1.0.0
       clsx: 2.1.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
 
   '@utrecht/data-list-css@1.4.0': {}
 
@@ -12229,71 +12256,71 @@ snapshots:
 
   '@utrecht/emphasis-css@1.5.0': {}
 
-  '@utrecht/fieldset-react@1.0.6(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/fieldset-react@1.0.6(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@babel/runtime': 7.26.0
       '@utrecht/form-fieldset-css': 1.5.0
       clsx: 2.1.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
 
   '@utrecht/figure-css@1.5.0': {}
 
   '@utrecht/focus-ring-css@2.3.0': {}
 
-  '@utrecht/form-field-checkbox-react@1.0.9(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/form-field-checkbox-react@1.0.9(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@babel/runtime': 7.26.0
-      '@utrecht/checkbox-react': 1.0.7(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@utrecht/form-field-description-react': 1.0.6(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@utrecht/form-field-error-message-react': 1.0.6(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@utrecht/form-field-react': 1.0.6(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@utrecht/form-label-react': 1.0.6(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/checkbox-react': 1.0.7(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@utrecht/form-field-description-react': 1.0.6(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@utrecht/form-field-error-message-react': 1.0.6(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@utrecht/form-field-react': 1.0.6(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@utrecht/form-label-react': 1.0.6(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       clsx: 2.1.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
 
   '@utrecht/form-field-css@1.5.0': {}
 
   '@utrecht/form-field-description-css@1.5.0': {}
 
-  '@utrecht/form-field-description-react@1.0.6(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/form-field-description-react@1.0.6(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@babel/runtime': 7.26.0
       '@utrecht/form-field-description-css': 1.5.0
       clsx: 2.1.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
 
   '@utrecht/form-field-error-message-css@1.5.0': {}
 
-  '@utrecht/form-field-error-message-react@1.0.6(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/form-field-error-message-react@1.0.6(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@babel/runtime': 7.26.0
       '@utrecht/form-field-error-message-css': 1.5.0
       clsx: 2.1.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
 
-  '@utrecht/form-field-react@1.0.6(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/form-field-react@1.0.6(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@babel/runtime': 7.26.0
       '@utrecht/form-field-css': 1.5.0
       clsx: 2.1.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
 
   '@utrecht/form-fieldset-css@1.5.0': {}
 
   '@utrecht/form-label-css@1.6.0': {}
 
-  '@utrecht/form-label-react@1.0.6(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/form-label-react@1.0.6(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@babel/runtime': 7.26.0
       '@utrecht/form-label-css': 1.6.0
       clsx: 2.1.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
 
   '@utrecht/form-toggle-css@1.5.0': {}
 
@@ -12327,13 +12354,13 @@ snapshots:
 
   '@utrecht/link-list-css@2.3.0': {}
 
-  '@utrecht/link-react@1.0.6(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/link-react@1.0.6(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@babel/runtime': 7.26.0
       '@utrecht/link-css': 1.6.0
       clsx: 2.1.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
 
   '@utrecht/link-social-css@1.4.0': {}
 
@@ -12341,13 +12368,13 @@ snapshots:
 
   '@utrecht/listbox-css@1.5.1': {}
 
-  '@utrecht/listbox-react@1.0.9(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/listbox-react@1.0.9(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@babel/runtime': 7.26.0
       '@utrecht/listbox-css': 1.5.1
       clsx: 2.1.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
 
   '@utrecht/logo-button-css@1.4.0': {}
 
@@ -12391,13 +12418,13 @@ snapshots:
 
   '@utrecht/radio-button-css@1.6.0': {}
 
-  '@utrecht/radio-button-react@1.0.6(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/radio-button-react@1.0.6(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@babel/runtime': 7.26.0
       '@utrecht/radio-button-css': 1.6.0
       clsx: 2.1.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
 
   '@utrecht/rich-text-css@1.3.0': {}
 
@@ -12425,13 +12452,13 @@ snapshots:
 
   '@utrecht/textbox-css@1.6.0': {}
 
-  '@utrecht/textbox-react@1.0.6(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/textbox-react@1.0.6(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@babel/runtime': 7.26.0
       '@utrecht/textbox-css': 1.6.0
       clsx: 2.1.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
 
   '@utrecht/top-task-link-css@1.4.0': {}
 
@@ -16626,6 +16653,11 @@ snapshots:
       react: 18.3.1
       scheduler: 0.23.2
 
+  react-dom@19.0.0(react@19.0.0):
+    dependencies:
+      react: 19.0.0
+      scheduler: 0.25.0
+
   react-fast-compare@2.0.4: {}
 
   react-formio@4.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
@@ -16670,11 +16702,11 @@ snapshots:
 
   react-lifecycles-compat@3.0.4: {}
 
-  react-markdown@10.0.0(@types/react@18.3.18)(react@18.3.1):
+  react-markdown@10.0.0(@types/react@19.0.10)(react@18.3.1):
     dependencies:
       '@types/hast': 3.0.4
       '@types/mdast': 4.0.4
-      '@types/react': 18.3.18
+      '@types/react': 19.0.10
       devlop: 1.1.0
       hast-util-to-jsx-runtime: 2.3.2
       html-url-attributes: 3.0.1
@@ -16717,19 +16749,19 @@ snapshots:
       '@remix-run/router': 1.21.1
       react: 18.3.1
 
-  react-select@5.9.0(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  react-select@5.9.0(@types/react@19.0.10)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@babel/runtime': 7.26.0
       '@emotion/cache': 11.14.0
-      '@emotion/react': 11.14.0(@types/react@18.3.18)(react@18.3.1)
+      '@emotion/react': 11.14.0(@types/react@19.0.10)(react@18.3.1)
       '@floating-ui/dom': 1.6.13
-      '@types/react-transition-group': 4.4.12(@types/react@18.3.18)
+      '@types/react-transition-group': 4.4.12(@types/react@19.0.10)
       memoize-one: 6.0.0
       prop-types: 15.8.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       react-transition-group: 4.4.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      use-isomorphic-layout-effect: 1.2.0(@types/react@18.3.18)(react@18.3.1)
+      use-isomorphic-layout-effect: 1.2.0(@types/react@19.0.10)(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
       - supports-color
@@ -16780,6 +16812,8 @@ snapshots:
   react@18.3.1:
     dependencies:
       loose-envify: 1.4.0
+
+  react@19.0.0: {}
 
   read-package-json-fast@3.0.2:
     dependencies:
@@ -16981,6 +17015,10 @@ snapshots:
       glob: 11.0.1
       package-json-from-dist: 1.0.1
 
+  rollup-plugin-peer-deps-external@2.2.4(rollup@4.34.8):
+    dependencies:
+      rollup: 4.34.8
+
   rollup-plugin-postcss@4.0.2(postcss@8.5.3):
     dependencies:
       chalk: 4.1.2
@@ -17108,6 +17146,8 @@ snapshots:
   scheduler@0.23.2:
     dependencies:
       loose-envify: 1.4.0
+
+  scheduler@0.25.0: {}
 
   schema-utils@3.3.0:
     dependencies:
@@ -17981,11 +18021,11 @@ snapshots:
       immer: 9.0.21
       react: 18.3.1
 
-  use-isomorphic-layout-effect@1.2.0(@types/react@18.3.18)(react@18.3.1):
+  use-isomorphic-layout-effect@1.2.0(@types/react@19.0.10)(react@18.3.1):
     dependencies:
       react: 18.3.1
     optionalDependencies:
-      '@types/react': 18.3.18
+      '@types/react': 19.0.10
 
   util-deprecate@1.0.2: {}
 
