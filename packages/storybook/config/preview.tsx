@@ -2,7 +2,7 @@ import type { Preview } from '@storybook/react';
 import type { StoryContext } from '@storybook/types';
 import clsx from 'clsx';
 import * as prettierPluginBabel from 'prettier/plugins/babel';
-import * as prettierPluginEstree from 'prettier/plugins/estree';
+import prettierPluginEstree from 'prettier/plugins/estree';
 import prettier from 'prettier/standalone';
 import React, { ReactElement } from 'react';
 import * as ReactDOMServer from 'react-dom/server';
