@@ -3,6 +3,7 @@
     "rootDir": "./",
     "outDir": "./dist",
     "lib": ["dom", "esnext"],
+    "module": "ESNext",
     "moduleResolution": "bundler",
     "jsx": "react",
     "declaration": true,
