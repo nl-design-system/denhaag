@@ -1,5 +1,16 @@
 # @gemeente-denhaag/open-forms
 
+## 1.0.0
+
+### Major Changes
+
+- fbac8ba: Upgrade packages to latest
+
+### Patch Changes
+
+- Updated dependencies [fbac8ba]
+  - @gemeente-denhaag/design-tokens-components@2.0.0
+
 ## 0.1.5
 
 ### Patch Changes

@@ -1,5 +1,17 @@
 # @gemeente-denhaag/keycloak
 
+## 2.0.0
+
+### Major Changes
+
+- fbac8ba: Upgrade packages to latest
+
+### Patch Changes
+
+- Updated dependencies [fbac8ba]
+  - @gemeente-denhaag/design-tokens-components@2.0.0
+  - @gemeente-denhaag/components-css@1.0.0
+
 ## 1.0.2
 
 ### Patch Changes

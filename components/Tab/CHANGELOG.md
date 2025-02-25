@@ -1,5 +1,11 @@
 # @gemeente-denhaag/tab
 
+## 2.0.0
+
+### Major Changes
+
+- fbac8ba: Upgrade packages to latest
+
 ## 1.1.2
 
 ### Patch Changes

@@ -1,5 +1,16 @@
 # @gemeente-denhaag/link-group
 
+## 1.0.0
+
+### Major Changes
+
+- fbac8ba: Upgrade packages to latest
+
+### Patch Changes
+
+- Updated dependencies [fbac8ba]
+  - @gemeente-denhaag/icons@3.0.0
+
 ## 0.2.1
 
 ### Patch Changes

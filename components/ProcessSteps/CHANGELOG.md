@@ -1,5 +1,19 @@
 # @gemeente-denhaag/process-steps
 
+## 2.0.0
+
+### Major Changes
+
+- fbac8ba: Upgrade packages to latest
+
+### Patch Changes
+
+- Updated dependencies [fbac8ba]
+  - @gemeente-denhaag/typography@2.0.0
+  - @gemeente-denhaag/button@2.0.0
+  - @gemeente-denhaag/icons@3.0.0
+  - @gemeente-denhaag/step-marker@2.0.0
+
 ## 1.1.2
 
 ### Patch Changes
