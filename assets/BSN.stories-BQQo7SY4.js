@@ -1,0 +1,3 @@
+import{j as m}from"./jsx-runtime-D_zvdyIk.js";import{S as n}from"./StoryUtil-BECfzbDE.js";import"./index-raSRI-5R.js";import"./_commonjsHelpers-BosuxZz1.js";const l={id:"open-forms-bsn",title:"Open Formulieren/BSNField",component:n,args:{key:"bsn",type:"bsn",label:"Burgerservicenummer (BSN)"}},e={render:t=>m.jsx(n,{...t})};var r,o,s;e.parameters={...e.parameters,docs:{...(r=e.parameters)==null?void 0:r.docs,source:{originalSource:`{
+  render: args => <SingleFormioComponent {...args} />
+}`,...(s=(o=e.parameters)==null?void 0:o.docs)==null?void 0:s.source}}};const d=["Default"];export{e as Default,d as __namedExportsOrder,l as default};
