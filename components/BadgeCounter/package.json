@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/badge-counter",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "description": "A Badge component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {

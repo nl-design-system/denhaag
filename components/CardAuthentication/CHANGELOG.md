@@ -1,5 +1,19 @@
 # @gemeente-denhaag/card-authentication
 
+## 1.0.0
+
+### Major Changes
+
+- fbac8ba: Upgrade packages to latest
+
+### Patch Changes
+
+- Updated dependencies [fbac8ba]
+  - @gemeente-denhaag/button@2.0.0
+  - @gemeente-denhaag/button-group@1.0.0
+  - @gemeente-denhaag/card@2.0.0
+  - @gemeente-denhaag/link@2.0.0
+
 ## 0.1.10
 
 ### Patch Changes

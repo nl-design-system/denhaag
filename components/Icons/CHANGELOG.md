@@ -1,5 +1,11 @@
 # @gemeente-denhaag/icons
 
+## 3.0.0
+
+### Major Changes
+
+- fbac8ba: Upgrade packages to latest
+
 ## 2.1.1
 
 ### Patch Changes

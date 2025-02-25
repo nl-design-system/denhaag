@@ -1,5 +1,16 @@
 # @gemeente-denhaag/card-group
 
+## 1.0.0
+
+### Major Changes
+
+- fbac8ba: Upgrade packages to latest
+
+### Patch Changes
+
+- Updated dependencies [fbac8ba]
+  - @gemeente-denhaag/card-authentication@1.0.0
+
 ## 0.1.10
 
 ### Patch Changes
