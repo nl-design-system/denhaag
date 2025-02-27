@@ -8,6 +8,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  & + [class*="-paragraph"],
+  [class*="-paragraph"] + &,
+  & + [class*="-list"],
+  [class*="-list"] + & {
+    margin-block-start: var(--denhaag-space-xl); // Not in design? But the client wishes to have marges.
+  }
 }
 
 .denhaag-alert--error {
@@ -19,7 +26,7 @@
     --denhaag-alert-error-action-button-background-color,
     var(--denhaag-color-red-3)
   );
-  --denhaag-button-primary-action-color: var(--denhaag-alert-error-action-button-color var(--denhaag-color-white));
+  --denhaag-button-primary-action-color: var(--denhaag-alert-error-action-button-color, var(--denhaag-color-white));
   --denhaag-button-primary-action-hover-background-color: var(
     --denhaag-alert-error-action-button-hover-background-color,
     var(--denhaag-color-red-4)
@@ -50,7 +57,7 @@
 }
 
 .denhaag-alert--error .denhaag-alert__icon {
-  color: var(--denhaag-alert-error-icon-color var(--denhaag-color-red-3));
+  color: var(--denhaag-alert-error-icon-color, var(--denhaag-color-red-3));
 }
 
 .denhaag-alert--info {
@@ -124,8 +131,4 @@
 
 .denhaag-alert__content {
   margin-inline: var(--denhaag-space-xl);
-}
-
-[class^="utrecht-heading-"] {
-  margin-block-end: var(--denhaag-alert-heading-margin-block-end);
 }
