@@ -126,7 +126,7 @@
 }
 
 .denhaag-image-banner--big {
-  --denhaag-image-banner-grid-template-columns: var(--denhaag-image-banner-big-grid-template-columns, unset);
+  --denhaag-image-banner-grid-template-columns: var(--denhaag-image-banner-big-grid-template-columns, 1);
 
   .denhaag-image-banner__card {
     --denhaag-image-banner-card-height: var(--denhaag-image-banner-big-card-height, 413px);
