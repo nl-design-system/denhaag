@@ -17,10 +17,7 @@
 .utrecht-paragraph--denhaag-detail {
   --utrecht-paragraph-font-family: var(--denhaag-posttypelabel-font-family, inherit);
   --utrecht-paragraph-font-size: var(--denhaag-posttypelabel-font-size, var(--denhaag-space-sm));
-  --utrecht-paragraph-line-height: var(
-    --denhaag-posttypelabel-line-height,
-    var(--denhaag-typography-scale-base-line-height)
-  );
+  --utrecht-paragraph-line-height: var(--denhaag-posttypelabel-line-height, 1.5);
 
   letter-spacing: var(--denhaag-posttypelabel-letter-spacing, 1px);
   text-transform: var(--denhaag-posttypelabel-text-transform, uppercase);
