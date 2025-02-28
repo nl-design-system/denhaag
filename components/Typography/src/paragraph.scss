@@ -8,6 +8,10 @@
 .utrecht-paragraph {
   /* TODO: Move `space-around` to container element */
   --utrecht-space-around: 1;
+
+  & + & {
+    --utrecht-paragraph-margin-block-start: var(--utrecht-paragraph-paragraph-margin-block-start, 1em);
+  }
 }
 
 .utrecht-paragraph--denhaag-detail {
@@ -19,28 +23,23 @@
   text-transform: var(--denhaag-posttypelabel-text-transform, uppercase);
 }
 
-.utrecht-paragraph + .utrecht-paragraph {
-  --utrecht-paragraph-margin-block-start: var(--utrecht-paragraph-paragraph-margin-block-start, 1em);
-}
-
-.utrecht-paragraph--lead + .utrecht-paragraph {
+[class*="--lead"] + .utrecht-paragraph {
   --utrecht-paragraph-margin-block-start: var(
     --utrecht-paragraph-lead-paragraph-margin-block-start,
     var(--denhaag-space-xl)
   );
 }
 
-.denhaag-ordered-list + .utrecht-paragraph,
-.denhaag-unordered-list + .utrecht-paragraph,
-.denhaag-list + .utrecht-paragraph,
-.denhaag-list__wrapper + .utrecht-paragraph {
+.denhaag-image + [class*="utrecht-paragraph"] {
+  // Inherit the paragraph-paragraph-margin-block-start from the paragraph component.
+  --utrecht-paragraph-margin-block-start: var(--utrecht-paragraph-paragraph-margin-block-start, 1em);
+}
+
+[class*="-list"] + .utrecht-paragraph {
   --utrecht-paragraph-margin-block-start: var(--utrecht-paragraph-list-margin-block-start, var(--denhaag-space-xl));
 }
 
-.denhaag-ordered-list + .utrecht-paragraph--lead,
-.denhaag-unordered-list + .utrecht-paragraph--lead,
-.denhaag-list + .utrecht-paragraph--lead,
-.denhaag-list__wrapper + .utrecht-paragraph--lead {
+[class*="-list"] + .utrecht-paragraph--lead {
   --utrecht-paragraph-margin-block-start: var(
     --utrecht-paragraph-lead-list-margin-block-start,
     var(--denhaag-space-xl)

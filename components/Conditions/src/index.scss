@@ -24,17 +24,21 @@
   display: flex;
   height: calc(var(--denhaag-conditions-label-height, 3.5rem) - var(--denhaag-space-xs));
   justify-content: center;
-  overflow: clip;
+  position: relative;
   width: var(--denhaag-conditions-label-width, 4.5rem);
+
+  &::before {
+    background: var(--denhaag-conditions-variant-color);
+    content: "";
+    height: 1px;
+    position: absolute;
+    top: -1px;
+    width: 100%;
+  }
 
   @media (min-width: 768px) {
     clip-path: var(--denhaag-conditions-label-clip-path-m, polygon(100% 0, 100% 57.14%, 50% 100%, 0% 57.14%, 0 0));
   }
-}
-
-.denhaag-conditions__label::before {
-  height: calc(var(--denhaag-conditions-label-height, 3.5rem) - var(--denhaag-space-xs));
-  width: var(--denhaag-conditions-label-width, 4.5rem);
 }
 
 .denhaag-conditions__label-icon {
