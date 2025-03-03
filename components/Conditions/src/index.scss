@@ -20,24 +20,18 @@
 .denhaag-conditions__label {
   background-color: var(--denhaag-conditions-variant-color);
   color: var(--denhaag-conditions-label-color, var(--denhaag-color-white));
-  clip-path: var(--denhaag-conditions-label-clip-path-xs, polygon(100% 0, 100% 50%, 50% 100%, 0% 50%, 0 0));
+  clip-path: var(--denhaag-conditions-label-clip-path-xs, polygon(100% -2px, 100% 50%, 50% 100%, 0% 50%, 0 -2px));
   display: flex;
   height: calc(var(--denhaag-conditions-label-height, 3.5rem) - var(--denhaag-space-xs));
   justify-content: center;
   position: relative;
   width: var(--denhaag-conditions-label-width, 4.5rem);
 
-  &::before {
-    background: var(--denhaag-conditions-variant-color);
-    content: "";
-    height: 1px;
-    position: absolute;
-    top: -1px;
-    width: 100%;
-  }
-
   @media (min-width: 768px) {
-    clip-path: var(--denhaag-conditions-label-clip-path-m, polygon(100% 0, 100% 57.14%, 50% 100%, 0% 57.14%, 0 0));
+    clip-path: var(
+      --denhaag-conditions-label-clip-path-m,
+      polygon(100% -2px, 100% 57.14%, 50% 100%, 0% 57.14%, 0 -2px)
+    );
   }
 }
 
@@ -108,10 +102,6 @@
   .denhaag-conditions__label {
     --denhaag-conditions-label-height: var(--denhaag-space-5xl);
     --denhaag-conditions-label-width: var(--denhaag-conditions-label-width-desktop, 5rem);
-  }
-
-  .denhaag-conditions__label::before {
-    --denhaag-conditions-label-before-size: var(--denhaag-space-5xl);
   }
 
   .denhaag-conditions .denhaag-list__subheader {
