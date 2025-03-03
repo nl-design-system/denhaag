@@ -4,10 +4,6 @@
   background-color: var(--denhaag-highlighted-links-background-color, var(--denhaag-color-warmgrey-1));
   padding-block: var(--denhaag-highlighted-links-padding-block, var(--denhaag-space-3xl));
   width: 100%;
-
-  [class^="utrecht-heading-"] {
-    --utrecht-space-around: 0; // Sadly we need to reset this on the heading component. Not really a reusable variable.
-  }
 }
 
 @media (min-width: 48rem) {
