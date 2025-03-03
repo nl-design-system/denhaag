@@ -41,11 +41,14 @@
   .denhaag-image {
     margin-block: 0 var(--denhaag-authentication-image-spacing-end);
     max-width: var(--denhaag-authentication-logo-size, 3.5rem);
+
+    & + [class^="utrecht-heading-"] {
+      margin-block-start: 0; // Reset margin of the heading after an image.
+    }
   }
 
   // Remove unnecessary of existing blocks.
-  .utrecht-heading-3,
-  p {
+  [class^="utrecht-"] {
     margin-block: 0;
   }
 
