@@ -1,5 +1,5 @@
 .denhaag-process-steps {
-  --denhaag-process-steps-step-distance: 40px;
+  --denhaag-process-steps-step-distance: var(--denhaag-space-2xl);
   --denhaag-process-steps-sub-step-distance: 24px;
 
   font-family: var(--denhaag-process-steps-font-family, var(--denhaag-typography-sans-serif-font-family));

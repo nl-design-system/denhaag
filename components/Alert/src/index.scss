@@ -9,11 +9,11 @@
   flex-direction: row;
   justify-content: space-between;
 
-  & + [class*="-paragraph"],
-  [class*="-paragraph"] + &,
+  & + [class^="utrecht-"],
+  [class^="utrecht-"] + &,
   & + [class*="-list"],
   [class*="-list"] + & {
-    margin-block-start: var(--denhaag-space-xl); // Not in design? But the client wishes to have marges.
+    margin-block-start: var(--denhaag-space-2xl); // Not in design? But the client wishes to have marges.
   }
 }
 
