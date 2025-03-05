@@ -138,7 +138,14 @@ importers:
         specifier: 11.1.0
         version: 11.1.0
 
-  components/Accordion: {}
+  components/Accordion:
+    dependencies:
+      '@gemeente-denhaag/icons':
+        specifier: 3.0.0
+        version: 3.0.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      clsx:
+        specifier: 2.1.1
+        version: 2.1.1
 
   components/Action:
     dependencies:
@@ -3015,6 +3022,12 @@ packages:
     resolution: {integrity: sha512-NDU9GXKNlwwRBBAyYSqJhjLgX2CG28N15GRdQHR+LbU+z0av6YOE5RBQK6kCNaEXFZX1ah01DY6+4TcGgwDxXg==}
     peerDependencies:
       react: ^18.0.0
+
+  '@gemeente-denhaag/icons@3.0.0':
+    resolution: {integrity: sha512-saR1NdvSu7JZ7GVDQ94rFNoMaErqIXQa0atpVkj3jJVZbGpdkjmVAVJ3flXZ+3dWvpUkpk0TdK/sEYJx5o+cdg==}
+    peerDependencies:
+      react: 18 || 19
+      react-dom: 18 || 19
 
   '@gemeente-denhaag/process-steps@0.1.0-alpha.227':
     resolution: {integrity: sha512-zBcjU/zTrhT+Oquw3EZIPUo6nM3JQKQhXGk25ZSYC6B5i7rZrhMqeoMnIXIFQzMeeU4fBWlJuYlfJ27Y/DU2jQ==}
@@ -10864,6 +10877,12 @@ snapshots:
   '@gemeente-denhaag/icons@0.2.3-alpha.398(react@19.0.0)':
     dependencies:
       react: 19.0.0
+
+  '@gemeente-denhaag/icons@3.0.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+    dependencies:
+      clsx: 2.1.1
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
 
   '@gemeente-denhaag/process-steps@0.1.0-alpha.227(react@19.0.0)':
     dependencies:

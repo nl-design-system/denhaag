@@ -1,0 +1,8 @@
+.denhaag-accordion-section {
+  border: var(--denhaag-accordion-section-border, 1px solid #f9f9fa);
+  inline-size: 100%;
+}
+
+.denhaag-accordion .denhaag-accordion-section:not(:last-child) {
+  border-bottom: none;
+}
