@@ -13,7 +13,7 @@ import CardWrapper from './CardWrapper';
 import CardDateWrapper from './CardDateWrapper';
 import CardDate from './CardDate';
 import { CardAction } from './CardAction';
-import { formatDate, longDateOptions } from '@gemeente-denhaag/utils';
+import { formatDate, FormatDateLabels, longDateOptions } from '@gemeente-denhaag/utils';
 
 export interface CaseCardProps {
   /**
@@ -30,6 +30,11 @@ export interface CaseCardProps {
    * Determines the date shown on the card
    */
   date?: string;
+
+  /**
+   * Determines the date format shown on the card
+   */
+  dateLabels?: FormatDateLabels;
 
   /**
    * Determines the date format shown on the card
@@ -55,7 +60,16 @@ export interface CaseCardProps {
 /**
  * Primary UI component for user interaction
  */
-export const CaseCard = ({ title, subTitle, date, locale, href, active = true, Link = BasicLink }: CaseCardProps) => {
+export const CaseCard = ({
+  title,
+  subTitle,
+  date,
+  dateLabels,
+  locale,
+  href,
+  active = true,
+  Link = BasicLink,
+}: CaseCardProps) => {
   const classNames = clsx('denhaag-case-card', !active && 'denhaag-case-card--archived');
   const dateTime = date ? new Date(date) : undefined;
 
@@ -72,7 +86,7 @@ export const CaseCard = ({ title, subTitle, date, locale, href, active = true, L
             {date && (
               <CardDateWrapper>
                 <CardDate dateTime={dateTime?.toISOString()}>
-                  {formatDate({ dateTime: date, locale: locale, format: longDateOptions })[0]}
+                  {formatDate({ dateTime: date, locale: locale, format: longDateOptions, labels: dateLabels })[0]}
                 </CardDate>
               </CardDateWrapper>
             )}
