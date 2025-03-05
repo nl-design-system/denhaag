@@ -1,5 +1,13 @@
 # @gemeente-denhaag/components-react
 
+## 2.0.1
+
+### Patch Changes
+
+- Updated dependencies [2a50d58]
+  - @gemeente-denhaag/card@2.0.1
+  - @gemeente-denhaag/card-group@1.0.1
+
 ## 2.0.0
 
 ### Major Changes
