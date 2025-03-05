@@ -1,8 +1,6 @@
 import { Accordion, AccordionSection } from '@gemeente-denhaag/accordion';
 import tokens from '@gemeente-denhaag/design-tokens-components/dist/list.json';
 import { Meta, StoryObj } from '@storybook/react';
-import readme from '../../../../components/Action/README.md?raw';
-import tokensDefinition from '../../../../components/Action/tokens.json';
 import React from 'react';
 import { Paragraph } from '@gemeente-denhaag/typography';
 
@@ -29,13 +27,7 @@ const meta = {
   args: exampleArgs,
   tags: ['autodocs'],
   parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
     tokensPrefix: 'denhaag-accordion',
-    tokensDefinition,
     tokens,
   },
 } as Meta<typeof Accordion>;

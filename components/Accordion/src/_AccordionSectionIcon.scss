@@ -1,0 +1,15 @@
+.denhaag-accordion-section__icon {
+  background: transparent;
+  border: none;
+
+  .denhaag-icon {
+    transform: var(--denhaag-accordion-section-header-icon-transform, rotate(0deg));
+    transition: var(--denhaag-accordion-section-header-icon-transition, transform 400ms ease-in-out);
+  }
+
+  &--expanded {
+    .denhaag-icon {
+      transform: var(--denhaag-accordion-section-header-icon-expanded-transform, rotate(180deg));
+    }
+  }
+}
