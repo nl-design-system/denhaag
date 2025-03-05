@@ -1,0 +1,18 @@
+.denhaag-accordion-section__header {
+  align-items: start;
+  background-color: var(--denhaag-accordion-section-header-background-color, #f9f9fa);
+  border: none;
+  column-gap: var(--denhaag-accordion-section-header-column-gap, 8px);
+  cursor: var(--denhaag-accordion-section-header-cursor, pointer);
+  display: flex;
+  font-family: inherit;
+  font-size: var(--denhaag-accordion-section-header-font-size, 18px);
+  justify-content: flex-start;
+  line-height: var(--denhaag-accordion-section-header-line-height, 24px);
+  padding-block-end: var(--denhaag-accordion-section-header-padding-block-end, 12px);
+  padding-block-start: var(--denhaag-accordion-section-header-padding-block-start, 12px);
+  padding-inline-end: var(--denhaag-accordion-section-header-padding-inline-end, 16);
+  padding-inline-start: var(--denhaag-accordion-section-header-padding-inline-start, 16);
+  text-align: inherit;
+  width: 100%;
+}

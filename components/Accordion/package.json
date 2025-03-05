@@ -29,5 +29,9 @@
     "clean": "rimraf dist tsconfig.tsbuildinfo",
     "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\"",
     "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@gemeente-denhaag/icons": "3.0.0",
+    "clsx": "2.1.1"
   }
 }
