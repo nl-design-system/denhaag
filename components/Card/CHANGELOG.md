@@ -1,5 +1,11 @@
 # @gemeente-denhaag/card
 
+## 2.0.1
+
+### Patch Changes
+
+- 2a50d58: Add property for language labels
+
 ## 2.0.0
 
 ### Major Changes
