@@ -20,8 +20,7 @@
   min-block-size: var(--denhaag-space-2xl);
 
   .denhaag-icon {
-    block-size: var(--denhaag-space-xl);
-    inline-size: var(--denhaag-space-xl);
+    --denhaag-icon-size: var(--denhaag-space-xl);
   }
 }
 
