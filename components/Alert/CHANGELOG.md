@@ -1,5 +1,11 @@
 # @gemeente-denhaag/alert
 
+## 2.0.1
+
+### Patch Changes
+
+- @gemeente-denhaag/typography@2.0.1
+
 ## 2.0.0
 
 ### Major Changes

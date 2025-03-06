@@ -1,5 +1,26 @@
 # @gemeente-denhaag/storybook
 
+## 2.1.0
+
+### Minor Changes
+
+- c55d464: Replaced Accordion with a new version + added a React version
+
+### Patch Changes
+
+- Updated dependencies [c55d464]
+  - @gemeente-denhaag/accordion@2.0.0
+  - @gemeente-denhaag/design-tokens-components@2.1.0
+  - @gemeente-denhaag/typography@2.0.1
+  - @gemeente-denhaag/alert@2.0.1
+  - @gemeente-denhaag/card@2.0.2
+  - @gemeente-denhaag/contact-timeline@2.0.1
+  - @gemeente-denhaag/cta-image-content@1.0.1
+  - @gemeente-denhaag/header@2.0.1
+  - @gemeente-denhaag/process-steps@2.0.1
+  - @gemeente-denhaag/card-authentication@1.0.2
+  - @gemeente-denhaag/card-group@1.0.2
+
 ## 2.0.1
 
 ### Patch Changes
