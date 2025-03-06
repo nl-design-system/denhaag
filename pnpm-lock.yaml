@@ -143,6 +143,9 @@ importers:
       '@gemeente-denhaag/icons':
         specifier: 3.0.0
         version: 3.0.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@utrecht/focus-ring-css':
+        specifier: 2.3.0
+        version: 2.3.0
       clsx:
         specifier: 2.1.1
         version: 2.1.1

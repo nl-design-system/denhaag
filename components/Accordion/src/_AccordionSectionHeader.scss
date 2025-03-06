@@ -1,3 +1,5 @@
+@import "~@utrecht/focus-ring-css/src/mixin";
+
 .denhaag-accordion-section__header {
   align-items: start;
   background-color: var(--denhaag-accordion-section-header-background-color, #f9f9fa);
@@ -15,4 +17,12 @@
   padding-inline-start: var(--denhaag-accordion-section-header-padding-inline-start, 16);
   text-align: inherit;
   width: 100%;
+
+  &:focus {
+    @include utrecht-focus;
+  }
+
+  &:focus-visible {
+    @include utrecht-focus-visible;
+  }
 }
