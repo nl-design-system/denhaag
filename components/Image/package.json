@@ -3,7 +3,7 @@
   "description": "Image component",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
-  "version": "0.1.1-www-denhaag-nl.117",
+  "version": "0.1.1-www-denhaag-nl.118",
   "exports": {
     ".": {
       "types": "./dist/cjs/index.d.ts",
@@ -33,6 +33,6 @@
     "access": "public"
   },
   "devDependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.117"
+    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.118"
   }
 }
