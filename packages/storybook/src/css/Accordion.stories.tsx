@@ -38,29 +38,6 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {};
 
 export const Standalone: Story = {
-  parameters: {
-    docs: {
-      code: `document.addEventListener('DOMContentLoaded', function () {
-  // Select all header buttons in the accordion
-  const headers = document.querySelectorAll('.denhaag-accordion-section__header');
-
-  headers.forEach((header) => {
-    header.addEventListener('click', function () {
-      const section = header.closest('.denhaag-accordion-section');
-      const controlsId = header.getAttribute('aria-controls');
-      const content = document.getElementById(controlsId);
-
-      const isExpanded = header.getAttribute('aria-expanded') === 'true';
-
-      header.setAttribute('aria-expanded', String(!isExpanded));
-      content.setAttribute('aria-expanded', String(!isExpanded));
-
-      section.classList.toggle('denhaag-accordion-section--expanded', !isExpanded);
-    });
-  });
-});`,
-    },
-  },
   render: () => (
     <>
       <Accordion>
