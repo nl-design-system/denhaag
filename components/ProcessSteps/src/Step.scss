@@ -12,8 +12,11 @@
   content: "";
   position: absolute;
   left: calc(max(var(--denhaag-process-steps-step-marker-size, var(--denhaag-space-lg)), var(--denhaag-space-2xl)) / 2);
-  top: calc(0px - var(--denhaag-process-steps-step-distance));
-  height: var(--denhaag-process-steps-step-distance);
+  top: calc(-1px - var(--denhaag-process-steps-step-distance)); // The 1px is the width of the outline.
+  height: calc(
+    var(--denhaag-process-steps-step-distance) +
+      var(--denhaag-step-marker-min-size, var(--denhaag-step-marker-size, var(--denhaag-space-2xl)))
+  );
   outline: 1px dashed var(--denhaag-process-steps-step-line-color, var(--denhaag-color-grey-1));
 }
 
