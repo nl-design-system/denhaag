@@ -1,5 +1,11 @@
 # @gemeente-denhaag/design-tokens-components
 
+## 2.1.0
+
+### Minor Changes
+
+- c55d464: Replaced Accordion with a new version + added a React version
+
 ## 2.0.0
 
 ### Major Changes
