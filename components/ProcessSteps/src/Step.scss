@@ -1,7 +1,6 @@
 .denhaag-process-steps__step {
   position: relative;
-  padding-block-end: 0;
-  padding-block-start: 0;
+  padding-block: 0;
 }
 
 .denhaag-process-steps__step + .denhaag-process-steps__step {
@@ -13,8 +12,8 @@
   content: "";
   position: absolute;
   left: calc(max(var(--denhaag-process-steps-step-marker-size, var(--denhaag-space-lg)), var(--denhaag-space-2xl)) / 2);
-  top: calc(-1 * (var(--denhaag-process-steps-step-distance) + 10px));
-  height: calc(var(--denhaag-process-steps-step-distance) + 10px);
+  top: calc(0px - var(--denhaag-process-steps-step-distance));
+  height: var(--denhaag-process-steps-step-distance);
   outline: 1px dashed var(--denhaag-process-steps-step-line-color, var(--denhaag-color-grey-1));
 }
 
