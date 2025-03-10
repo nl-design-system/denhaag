@@ -1,5 +1,11 @@
 # @gemeente-denhaag/text-input
 
+## 2.1.0
+
+### Minor Changes
+
+- 1d680b0: Moved ref from the wrapping label to the actual input field
+
 ## 2.0.0
 
 ### Major Changes

@@ -1,5 +1,12 @@
 # @gemeente-denhaag/components-react
 
+## 2.0.3
+
+### Patch Changes
+
+- Updated dependencies [1d680b0]
+  - @gemeente-denhaag/text-input@2.1.0
+
 ## 2.0.2
 
 ### Patch Changes
