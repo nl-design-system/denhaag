@@ -1,5 +1,12 @@
 # @gemeente-denhaag/storybook
 
+## 2.1.1
+
+### Patch Changes
+
+- Updated dependencies [1d680b0]
+  - @gemeente-denhaag/text-input@2.1.0
+
 ## 2.1.0
 
 ### Minor Changes

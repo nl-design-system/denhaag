@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/storybook",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Storybook for the Municipality of the Hague",
   "type": "module",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
