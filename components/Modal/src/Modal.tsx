@@ -9,7 +9,7 @@ export interface ModalProps {
   open?: boolean;
   title?: string;
   closeLabel?: string;
-  children?: React.ReactNode;
+  children?: (toggle: (toggle?: boolean) => void) => React.ReactNode;
   actions?: (toggle: (toggle?: boolean) => void) => ModalAction[];
   trigger?: (toggle: (toggle?: boolean) => void) => React.ReactNode;
   onToggle?: (open: boolean) => void;
@@ -48,7 +48,7 @@ export const Modal = ({
         <ModalBackdrop onClose={() => toggle(false)} />
         <ModalDialog>
           <ModalHeader title={title} closeLabel={closeLabel} onClose={() => toggle(false)} />
-          <ModalContent>{children}</ModalContent>
+          <ModalContent>{children?.(toggle)}</ModalContent>
           <ModalFooter actions={actions?.(toggle)} />
         </ModalDialog>
       </dialog>
