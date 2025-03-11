@@ -1,5 +1,5 @@
 ---
-"@gemeente-denhaag/modal": minor
+"@gemeente-denhaag/modal": patch
 "@gemeente-denhaag/storybook": patch
 ---
 
