@@ -1,5 +1,11 @@
 # @gemeente-denhaag/modal
 
+## 2.0.1
+
+### Patch Changes
+
+- 3446e18: Added setOpen to children of modal
+
 ## 2.0.0
 
 ### Major Changes
