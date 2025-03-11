@@ -6,7 +6,7 @@ import readme from '../../../../components/Modal/README.md?raw';
 const exampleArgs = {
   open: true,
   title: 'Modal title',
-  children: (
+  children: () => (
     <>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt, quam eu ultrices lacinia, lorem massa
       auctor mauris, id pulvinar tellus lacus eget lectus. Pellentesque habitant morbi tristique senectus et netus et
@@ -54,7 +54,7 @@ export const Actions: Story = {
 
 export const Scrollable: Story = {
   args: {
-    children: (
+    children: () => (
       <>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt, quam eu ultrices lacinia, lorem massa
         auctor mauris, id pulvinar tellus lacus eget lectus. Pellentesque habitant morbi tristique senectus et netus et
@@ -103,12 +103,14 @@ export const Button = () => {
         trigger={(toggle) => <button onClick={() => toggle(true)}>Open modal</button>}
         actions={(toggle) => [{ children: 'Sluiten', onClick: () => toggle(false) }]}
       >
-        <>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt, quam eu ultrices lacinia, lorem
-          massa auctor mauris, id pulvinar tellus lacus eget lectus. Pellentesque habitant morbi tristique senectus et
-          netus et malesuada fames ac turpis egestas. Proin sodales euismod ante eu finibus. Ut quis elit eu dui
-          pellentesque pharetra eget non nunc.
-        </>
+        {() => (
+          <>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt, quam eu ultrices lacinia, lorem
+            massa auctor mauris, id pulvinar tellus lacus eget lectus. Pellentesque habitant morbi tristique senectus et
+            netus et malesuada fames ac turpis egestas. Proin sodales euismod ante eu finibus. Ut quis elit eu dui
+            pellentesque pharetra eget non nunc.
+          </>
+        )}
       </Modal>
     </>
   );
