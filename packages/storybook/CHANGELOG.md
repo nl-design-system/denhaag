@@ -1,5 +1,13 @@
 # @gemeente-denhaag/storybook
 
+## 2.1.2
+
+### Patch Changes
+
+- 3446e18: Added setOpen to children of modal
+- Updated dependencies [3446e18]
+  - @gemeente-denhaag/modal@2.0.1
+
 ## 2.1.1
 
 ### Patch Changes
