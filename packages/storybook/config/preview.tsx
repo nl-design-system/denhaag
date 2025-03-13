@@ -98,7 +98,7 @@ const preview: Preview = {
                 ? storyContext.component?.render
                 : null;
 
-          if (render && storyContext.title.startsWith('CSS')) {
+          if (render && storyContext.title.toLowerCase().startsWith('css')) {
             const staticMarkup = ReactDOMServer.renderToStaticMarkup(render(storyContext.args));
 
             // Hacky workaround for the new asynchronous formatting from Prettier, and the lack of support of a async transform function

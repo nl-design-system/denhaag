@@ -918,6 +918,19 @@ importers:
         specifier: 18 || 19
         version: 19.0.0(react@19.0.0)
 
+  components/Paragraph:
+    dependencies:
+      react:
+        specifier: 18 || 19
+        version: 19.0.0
+      react-dom:
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
+    devDependencies:
+      '@nl-design-system-candidate/paragraph-react':
+        specifier: 2.1.0
+        version: 2.1.0(@babel/runtime@7.26.0)(react@19.0.0)
+
   components/ProcessSteps:
     dependencies:
       '@gemeente-denhaag/button':
@@ -1704,6 +1717,9 @@ importers:
       '@gemeente-denhaag/pagination':
         specifier: workspace:*
         version: link:../../components/Pagination
+      '@gemeente-denhaag/paragraph':
+        specifier: workspace:*
+        version: link:../../components/Paragraph
       '@gemeente-denhaag/process-steps':
         specifier: workspace:*
         version: link:../../components/ProcessSteps
@@ -3136,6 +3152,12 @@ packages:
     peerDependencies:
       '@types/react': '>=16'
       react: '>=16'
+
+  '@nl-design-system-candidate/paragraph-react@2.1.0':
+    resolution: {integrity: sha512-+ElezF07SbdTjC2X50sFrDLkAqXxKt3QQWhV+e0sCFmKTuJRxKYRjDvB0TrfrvNosIH86XnWILtQyPrWfPElbA==}
+    peerDependencies:
+      '@babel/runtime': ^7
+      react: ^18
 
   '@nl-design-system-unstable/theme-toolkit@1.0.0':
     resolution: {integrity: sha512-RzyneDefAIMgJ7zsR/EkZ6Gpx6sbTLKrgmt427ZTNksqfe6rxp7USDOXo8zKWHhpF/HZTwH1OUs2oEHpXq51dw==}
@@ -11002,6 +11024,12 @@ snapshots:
     dependencies:
       '@types/mdx': 2.0.13
       '@types/react': 19.0.10
+      react: 19.0.0
+
+  '@nl-design-system-candidate/paragraph-react@2.1.0(@babel/runtime@7.26.0)(react@19.0.0)':
+    dependencies:
+      '@babel/runtime': 7.26.0
+      clsx: 2.1.1
       react: 19.0.0
 
   '@nl-design-system-unstable/theme-toolkit@1.0.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(storybook@8.5.8(prettier@3.5.1))':
