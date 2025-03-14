@@ -66,6 +66,7 @@
 
     .denhaag-image {
       align-self: flex-end;
+      aspect-ratio: var(--denhaag-image-image-aspect-ratio);
     }
 
     @media (min-width: 375px) {
