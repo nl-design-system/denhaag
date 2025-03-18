@@ -62,6 +62,7 @@
     "@gemeente-denhaag/form-label": "workspace:*",
     "@gemeente-denhaag/form-progress": "workspace:*",
     "@gemeente-denhaag/header": "workspace:*",
+    "@gemeente-denhaag/heading": "workspace:*",
     "@gemeente-denhaag/hero": "workspace:*",
     "@gemeente-denhaag/highlighted-links": "workspace:*",
     "@gemeente-denhaag/iconbutton": "workspace:*",
