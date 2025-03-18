@@ -4,8 +4,9 @@ import * as Icons from '@gemeente-denhaag/icons';
 import { ArrowRightIcon, ArrowLeftIcon } from '@gemeente-denhaag/icons';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
 import { Link } from '@gemeente-denhaag/link';
-
 import readme from '../../../../components/Link/README.md?raw';
+
+type Story = StoryObj<typeof meta>;
 
 const exampleArgs = {
   href: '#',
@@ -51,7 +52,6 @@ const meta: Meta<typeof Link> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   render: (args) => {

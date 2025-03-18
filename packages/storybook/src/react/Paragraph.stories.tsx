@@ -32,6 +32,8 @@ const meta: Meta<typeof Paragraph> = {
   },
 };
 
+export default meta;
+
 export const Default: Story = {};
 
 export const Lead: Story = {
@@ -39,5 +41,3 @@ export const Lead: Story = {
     purpose: 'lead',
   },
 };
-
-export default meta;
