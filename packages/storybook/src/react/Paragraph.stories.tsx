@@ -12,6 +12,7 @@ const exampleArgs = {
 
 const meta: Meta<typeof Paragraph> = {
   component: Paragraph,
+  tags: ['autodocs'],
   args: exampleArgs,
   argTypes: {
     purpose: {
@@ -22,7 +23,6 @@ const meta: Meta<typeof Paragraph> = {
       },
     },
   },
-  tags: ['autodocs'],
   parameters: {
     docs: {
       description: {
