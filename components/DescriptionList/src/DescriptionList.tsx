@@ -13,16 +13,16 @@ type DescriptionListElement = {
   action?: React.ReactNode;
 };
 
-export type DescriptionListProps = HTMLAttributes<HTMLDivElement> & {
+export type DescriptionListProps = HTMLAttributes<HTMLDListElement> & {
   caption?: string;
   items: DescriptionListElement[];
 };
 
-export const DescriptionList: React.FC<DescriptionListProps> = ({ caption, items }: DescriptionListProps) => {
+export const DescriptionList: React.FC<DescriptionListProps> = ({ caption, items, ...props }: DescriptionListProps) => {
   return (
     <>
       {caption && <DescriptionListCaption>{caption}</DescriptionListCaption>}
-      <DescriptionListBase>
+      <DescriptionListBase {...props}>
         {items.map((item, index) => (
           <DescriptionListItem key={index}>
             <DescriptionListTitle>{item.title}</DescriptionListTitle>
