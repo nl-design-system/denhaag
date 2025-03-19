@@ -1,5 +1,23 @@
 # @gemeente-denhaag/storybook
 
+## 2.1.3
+
+### Patch Changes
+
+- 88e0970: Added open/close animation option to accordion
+- Updated dependencies [88e0970]
+  - @gemeente-denhaag/accordion@3.0.0
+  - @gemeente-denhaag/design-tokens-components@2.1.1
+  - @gemeente-denhaag/typography@2.0.2
+  - @gemeente-denhaag/alert@2.0.2
+  - @gemeente-denhaag/card@2.0.3
+  - @gemeente-denhaag/contact-timeline@2.0.2
+  - @gemeente-denhaag/cta-image-content@1.0.2
+  - @gemeente-denhaag/header@2.0.2
+  - @gemeente-denhaag/process-steps@2.0.2
+  - @gemeente-denhaag/card-authentication@1.0.3
+  - @gemeente-denhaag/card-group@1.0.3
+
 ## 2.1.2
 
 ### Patch Changes

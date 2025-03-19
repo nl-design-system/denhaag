@@ -1,5 +1,11 @@
 # @gemeente-denhaag/accordion
 
+## 3.0.0
+
+### Major Changes
+
+- 88e0970: Added open/close animation option to accordion
+
 ## 2.0.0
 
 ### Major Changes

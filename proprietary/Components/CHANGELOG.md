@@ -1,5 +1,11 @@
 # @gemeente-denhaag/design-tokens-components
 
+## 2.1.1
+
+### Patch Changes
+
+- 88e0970: Added open/close animation option to accordion
+
 ## 2.1.0
 
 ### Minor Changes
