@@ -14,7 +14,8 @@
           "padding-block-end": { "value": "24px" },
           "padding-block-start": { "value": "24px" },
           "padding-inline-end": { "value": "16px" },
-          "padding-inline-start": { "value": "16px" }
+          "padding-inline-start": { "value": "16px" },
+          "transition": { "value": "grid-template-rows 400ms ease-in-out" }
         },
         "header": {
           "background-color": { "value": "{denhaag.color.white}" },
