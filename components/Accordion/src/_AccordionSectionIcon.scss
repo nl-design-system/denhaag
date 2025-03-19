@@ -1,6 +1,7 @@
 .denhaag-accordion-section__icon {
   background: transparent;
   border: none;
+  color: var(--denhaag-accordion-section-header-icon-color);
 
   .denhaag-icon {
     transform: var(--denhaag-accordion-section-header-icon-transform, rotate(0deg));
