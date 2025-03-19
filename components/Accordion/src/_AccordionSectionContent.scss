@@ -1,12 +1,14 @@
 .denhaag-accordion-section__content {
   background-color: var(--denhaag-accordion-section-content-background-color, #fff);
-  display: none;
-  padding-block-end: var(--denhaag-accordion-section-content-padding-block-end, 24px);
-  padding-block-start: var(--denhaag-accordion-section-content-padding-block-start, 24px);
-  padding-inline-end: var(--denhaag-accordion-section-content-padding-inline-end, 16px);
-  padding-inline-start: var(--denhaag-accordion-section-content-padding-inline-start, 16px);
+  display: grid;
+  transition: var(--denhaag-accordion-section-content-transition, grid-template-rows 400ms ease-in-out);
+  grid-template-rows: 0fr;
+
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
 
   &--expanded {
-    display: block;
+    grid-template-rows: 1fr;
   }
 }
