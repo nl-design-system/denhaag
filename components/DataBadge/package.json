@@ -1,12 +1,12 @@
 {
-  "name": "@gemeente-denhaag/heading",
+  "name": "@gemeente-denhaag/data-badge",
   "version": "0.0.0",
-  "description": "A heading component",
+  "description": "A data badge component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/nl-design-system/denhaag.git",
-    "directory": "components/Heading"
+    "directory": "components/DataBadge"
   },
   "license": "EUPL-1.2",
   "author": "Municipality of The Hague",
@@ -31,7 +31,7 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@nl-design-system-candidate/heading-react": "1.1.0"
+    "@nl-design-system-candidate/data-badge-react": "1.1.1"
   },
   "peerDependencies": {
     "react": "18 || 19",

@@ -1,6 +1,6 @@
 # Heading
 
-Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.<br /><sub>Ook bekend als: Titel, Kop en Kopje</sub>
+Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.<br /><sub>Ook bekend als: Titel, Kop en Kopje.</sub>
 
 ## References
 
