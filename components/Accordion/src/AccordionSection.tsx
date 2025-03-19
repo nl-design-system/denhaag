@@ -31,7 +31,7 @@ export const AccordionSection = ({ title, description, children }: PropsWithChil
       >
         {title}
       </AccordionSectionHeader>
-      <AccordionSectionContent id={id} isExpanded={isExpanded}>
+      <AccordionSectionContent id={id} isExpanded={isExpanded} aria-hidden={!isExpanded}>
         <AccordionSectionContentContainer>
           <AccordionSectionContentBody>{children}</AccordionSectionContentBody>
         </AccordionSectionContentContainer>
