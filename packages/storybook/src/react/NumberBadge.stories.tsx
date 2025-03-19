@@ -1,20 +1,20 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { DataBadge } from '@gemeente-denhaag/data-badge';
-import readme from '../../../../components/DataBadge/README.md?raw';
+import { NumberBadge } from '@gemeente-denhaag/number-badge';
+import readme from '../../../../components/NumberBadge/README.md?raw';
 
 type Story = StoryObj<typeof meta>;
 
-const meta: Meta<typeof DataBadge> = {
-  component: DataBadge,
+const meta: Meta<typeof NumberBadge> = {
+  component: NumberBadge,
   tags: ['autodocs'],
   argTypes: {
-    value: {
+    children: {
       type: 'string',
       control: {
         type: 'text',
       },
     },
-    dateTime: {
+    value: {
       type: 'string',
       control: {
         type: 'text',
@@ -34,8 +34,7 @@ export default meta;
 
 export const Default: Story = {
   args: {
-    children: 'Label',
-    value: undefined,
-    dateTime: undefined,
+    children: '13',
+    value: '13',
   },
 };

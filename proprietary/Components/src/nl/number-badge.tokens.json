@@ -1,0 +1,42 @@
+{
+  "nl": {
+    "number-badge": {
+      "background-color": {
+        "value": "{denhaag.color.blue.1}"
+      },
+      "border-color": {
+        "value": ""
+      },
+      "border-radius": {
+        "value": "50px"
+      },
+      "border-width": {
+        "value": "0"
+      },
+      "color": {
+        "value": "{denhaag.color.blue.4}"
+      },
+      "font-family": {
+        "value": "{denhaag.typography.sans-serif.font-family}"
+      },
+      "font-size": {
+        "value": "{denhaag.typography.scale.s.font-size}"
+      },
+      "font-weight": {
+        "value": "{denhaag.typography.weight.bold}"
+      },
+      "min-block-size": {
+        "value": ""
+      },
+      "min-inline-size": {
+        "value": ""
+      },
+      "padding-block": {
+        "value": "5px"
+      },
+      "padding-inline": {
+        "value": "6px"
+      }
+    }
+  }
+}
