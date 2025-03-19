@@ -916,6 +916,19 @@ importers:
         specifier: workspace:*
         version: link:../Icons
 
+  components/NumberBadge:
+    dependencies:
+      react:
+        specifier: 18 || 19
+        version: 19.0.0
+      react-dom:
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
+    devDependencies:
+      '@nl-design-system-candidate/number-badge-react':
+        specifier: 1.2.1
+        version: 1.2.1(@babel/runtime@7.26.0)(react@19.0.0)
+
   components/OrderedList:
     dependencies:
       '@utrecht/component-library-react':
@@ -1777,6 +1790,9 @@ importers:
       '@gemeente-denhaag/note':
         specifier: workspace:*
         version: link:../../components/Note
+      '@gemeente-denhaag/number-badge':
+        specifier: workspace:*
+        version: link:../../components/NumberBadge
       '@gemeente-denhaag/orderedlist':
         specifier: workspace:*
         version: link:../../components/OrderedList
@@ -3255,6 +3271,12 @@ packages:
 
   '@nl-design-system-candidate/link-react@1.1.0':
     resolution: {integrity: sha512-UZjQOq2bqHyNrWJRuNfemetH+B6B+Dv/ISImeKMFyj/eZF0sZQCpBIyx/j0KEV9gTbItOLbWp97kvj/Ugut3MQ==}
+    peerDependencies:
+      '@babel/runtime': ^7
+      react: ^18
+
+  '@nl-design-system-candidate/number-badge-react@1.2.1':
+    resolution: {integrity: sha512-4ASxHUiFrHPc5TfNxgOPCsnDq10SQCARUjSDrchbCN4w+P8WliZYBioZynwFYLuiTCpf7v/+Zi7V9590ISyHuA==}
     peerDependencies:
       '@babel/runtime': ^7
       react: ^18
@@ -11157,6 +11179,12 @@ snapshots:
       react: 19.0.0
 
   '@nl-design-system-candidate/link-react@1.1.0(@babel/runtime@7.26.0)(react@19.0.0)':
+    dependencies:
+      '@babel/runtime': 7.26.0
+      clsx: 2.1.1
+      react: 19.0.0
+
+  '@nl-design-system-candidate/number-badge-react@1.2.1(@babel/runtime@7.26.0)(react@19.0.0)':
     dependencies:
       '@babel/runtime': 7.26.0
       clsx: 2.1.1
