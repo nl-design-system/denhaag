@@ -1,4 +1,5 @@
 .denhaag-description-list {
+  display: block;
   color: var(--denhaag-description-list-color);
   font-family: var(--denhaag-description-list-font-family);
   font-size: var(--denhaag-description-list-font-size);
@@ -18,5 +19,10 @@
     --denhaag-description-list-title-padding-block-start: var(--denhaag-description-list-lg-title-padding-block-start);
     --denhaag-description-list-padding-inline-end: var(--denhaag-description-list-lg-padding-inline-end);
     --denhaag-description-list-padding-inline-start: var(--denhaag-description-list-lg-padding-inline-start);
+
+    display: grid;
+    grid-template-columns: var(--denhaag-description-list-item-first-column-width, 240px) 1fr auto;
+    grid-auto-rows: auto;
+    grid-auto-flow: row;
   }
 }
