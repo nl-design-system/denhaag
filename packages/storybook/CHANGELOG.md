@@ -1,5 +1,14 @@
 # @gemeente-denhaag/storybook
 
+## 2.1.4
+
+### Patch Changes
+
+- Updated dependencies [8b8a558]
+- Updated dependencies [8b8a558]
+  - @gemeente-denhaag/descriptionlist@3.0.1
+  - @gemeente-denhaag/accordion@3.0.1
+
 ## 2.1.3
 
 ### Patch Changes

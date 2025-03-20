@@ -1,5 +1,11 @@
 # @gemeente-denhaag/descriptionlist
 
+## 3.0.1
+
+### Patch Changes
+
+- 8b8a558: Pass props to DescriptionListBase to allow extra classnames
+
 ## 3.0.0
 
 ### Major Changes
