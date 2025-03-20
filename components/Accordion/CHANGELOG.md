@@ -1,5 +1,11 @@
 # @gemeente-denhaag/accordion
 
+## 3.0.1
+
+### Patch Changes
+
+- 8b8a558: Added aria-hidden to accordion content
+
 ## 3.0.0
 
 ### Major Changes
