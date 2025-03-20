@@ -1,12 +1,11 @@
 .denhaag-description-list-item {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  display: block;
   border-bottom: 1px solid var(--denhaag-description-list-border-color, lightgrey);
 }
 
 @media (width >= 768px) {
   .denhaag-description-list-item {
-    display: grid;
-    grid-template-columns: var(--denhaag-description-list-item-first-column-width, 240px) 1fr auto;
+    display: contents;
+    border: none;
   }
 }
