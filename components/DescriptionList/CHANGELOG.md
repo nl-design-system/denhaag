@@ -1,5 +1,11 @@
 # @gemeente-denhaag/descriptionlist
 
+## 3.1.0
+
+### Minor Changes
+
+- f8054cf: Change Description List grid to always align columns
+
 ## 3.0.1
 
 ### Patch Changes
