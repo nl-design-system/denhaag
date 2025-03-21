@@ -9,7 +9,7 @@
   padding-inline-start: var(--denhaag-description-list-padding-inline-end, var(--denhaag-description-list-padding));
 }
 
-@media (width >= 768px) {
+@container description-list (width >= 480px) {
   // By default: grid column 2 and 3
   .denhaag-description-list__detail {
     border-bottom: 1px solid var(--denhaag-description-list-border-color, lightgrey);

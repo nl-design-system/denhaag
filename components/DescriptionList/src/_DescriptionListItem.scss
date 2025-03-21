@@ -3,7 +3,7 @@
   border-bottom: 1px solid var(--denhaag-description-list-border-color, lightgrey);
 }
 
-@media (width >= 768px) {
+@container description-list (width >= 480px) {
   .denhaag-description-list-item {
     display: contents;
     border: none;

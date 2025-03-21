@@ -9,7 +9,7 @@
   margin-block-end: var(--denhaag-description-list-margin-block-end);
 }
 
-@media (width >= 768px) {
+@container description-list (width >= 480px) {
   .denhaag-description-list {
     --denhaag-description-list-detail-padding-block-end: var(--denhaag-description-list-lg-detail-padding-block-end);
     --denhaag-description-list-detail-padding-block-start: var(
