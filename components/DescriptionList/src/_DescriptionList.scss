@@ -1,12 +1,13 @@
 .denhaag-description-list {
-  display: block;
   color: var(--denhaag-description-list-color);
+  display: block;
   font-family: var(--denhaag-description-list-font-family);
   font-size: var(--denhaag-description-list-font-size);
   font-weight: var(--denhaag-description-list-font-weight);
   line-height: var(--denhaag-description-list-line-height);
-  margin-block-start: var(--denhaag-description-list-margin-block-start);
   margin-block-end: var(--denhaag-description-list-margin-block-end);
+  margin-block-start: var(--denhaag-description-list-margin-block-start);
+  word-break: var(--denhaag-description-list-word-break, break-word);
 }
 
 @container description-list (width >= 480px) {
