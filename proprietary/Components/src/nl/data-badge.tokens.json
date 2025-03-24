@@ -39,6 +39,38 @@
       },
       "padding-inline": {
         "value": "8px"
+      },
+      "neutral": {
+        "background-color": {
+          "value": "{denhaag.color.blue.1}"
+        },
+        "color": {
+          "value": "{denhaag.color.blue.4}"
+        }
+      },
+      "success": {
+        "background-color": {
+          "value": "{denhaag.color.green.1}"
+        },
+        "color": {
+          "value": "{denhaag.color.green.4}"
+        }
+      },
+      "warning": {
+        "background-color": {
+          "value": "{denhaag.color.orange.1}"
+        },
+        "color": {
+          "value": "{denhaag.color.orange.5}"
+        }
+      },
+      "error": {
+        "background-color": {
+          "value": "{denhaag.color.red.1}"
+        },
+        "color": {
+          "value": "{denhaag.color.red.4}"
+        }
       }
     }
   }
