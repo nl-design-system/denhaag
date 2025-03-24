@@ -1,5 +1,11 @@
 # @gemeente-denhaag/descriptionlist
 
+## 3.2.0
+
+### Minor Changes
+
+- 0a36ab9: Replaced media queries with container queries
+
 ## 3.1.0
 
 ### Minor Changes

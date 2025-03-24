@@ -1,5 +1,12 @@
 # @gemeente-denhaag/components-react
 
+## 2.0.7
+
+### Patch Changes
+
+- Updated dependencies [0a36ab9]
+  - @gemeente-denhaag/descriptionlist@3.2.0
+
 ## 2.0.6
 
 ### Patch Changes
