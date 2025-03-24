@@ -419,6 +419,9 @@ importers:
 
   components/DataBadge:
     dependencies:
+      clsx:
+        specifier: 2.1.1
+        version: 2.1.1
       react:
         specifier: 18 || 19
         version: 19.0.0

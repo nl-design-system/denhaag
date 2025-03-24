@@ -17,7 +17,7 @@ const meta: Meta<typeof Heading> = {
     },
     appearance: {
       type: 'string',
-      options: ['level-1', 'level-2', 'level-3', 'level-4', 'level-5', 'level-6'],
+      options: [undefined, 'level-1', 'level-2', 'level-3', 'level-4', 'level-5', 'level-6'],
       control: {
         type: 'select',
       },

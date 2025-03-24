@@ -14,21 +14,21 @@ const meta: Meta<typeof Link> = {
   argTypes: {
     disabled: {
       type: 'boolean',
-      options: [true, false],
+      options: [undefined, true, false],
       control: {
         type: 'select',
       },
     },
     icon: {
       type: 'string',
-      options: [...Object.keys(Icons)],
+      options: [undefined, ...Object.keys(Icons)],
       control: {
         type: 'select',
       },
     },
     iconAlign: {
       type: 'string',
-      options: ['start', 'end'],
+      options: [undefined, 'start', 'end'],
       control: {
         type: 'select',
       },
