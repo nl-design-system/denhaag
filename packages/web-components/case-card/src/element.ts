@@ -6,7 +6,6 @@ export interface CardData {
   href: string;
   heading: string;
 }
-// const html = (str: string) => str;
 
 export const QUOTATION_MARK = 0x0022;
 export const AMPERSAND = 0x0026;
@@ -71,73 +70,82 @@ export const escapeXML = function escapeXML(xml: string) {
   return xml.replace(/[\0-\t\u000B\u000C\u000E-\u00C0"&<>\uFFFE\uFFFF]/g, escapeChar);
 };
 
+const sheet = new CSSStyleSheet();
+sheet.replaceSync(css);
+
 export class DenhaagCaseCardElement extends HTMLElement implements CardData {
   dateTime: string;
   href: string;
   heading: string;
   _shadow: ShadowRoot;
   _div: HTMLElement;
+
   constructor() {
     super();
-    this._shadow = this.attachShadow({
-      mode: 'closed',
-    });
-    const style = this.ownerDocument.createElement('style');
-    style.textContent = css;
-    this._shadow.appendChild(style);
-    this._div = this._shadow.appendChild(this.ownerDocument.createElement('div'));
-
     this.dateTime = this.getAttribute('datetime') || '';
     this.href = this.getAttribute('href') || '';
     this.heading = this.getAttribute('heading') || '';
-    console.log(42);
+
+    this._shadow = this.attachShadow({
+      mode: 'closed',
+    });
+
+    this._shadow.adoptedStyleSheets = [sheet];
+
+    this._div = this._shadow.appendChild(this.ownerDocument.createElement('div'));
   }
+
   connectedCallback() {
-    //
     this.render();
   }
+
   _getLang() {
     // TODO: Get current language from DOM tree
     return 'nl-NL';
   }
+
   render() {
     const formattedDate = new Intl.DateTimeFormat(this._getLang()).format(new Date(this.dateTime));
 
     this._div.innerHTML = `
-    <div class="denhaag-card denhaag-case-card">
-  <div class="denhaag-card__wrapper">
-    <div class="denhaag-card__background"></div>
-    <div class="denhaag-card__content">
-      <div class="denhaag-card__text-wrapper">
-        <p class="utrecht-paragraph denhaag-card__title"><slot name="heading"></slot></p>
-        <p class="utrecht-paragraph denhaag-card__subtitle">
-          This impressive paella is a perfect party dish and a fun meal to cook.
-          <date datetime="${escapeXML(this.dateTime)}">${escapeXML(formattedDate)}</date>
-        </p>
+      <div class="denhaag-card denhaag-case-card">
+        <div class="denhaag-card__wrapper">
+          <div class="denhaag-card__background"></div>
+          <div class="denhaag-card__content">
+            <div class="denhaag-card__text-wrapper">
+              <p class="utrecht-paragraph denhaag-card__title">
+                <slot name="heading"></slot>
+              </p>
+              <p class="utrecht-paragraph denhaag-card__subtitle">
+                <slot name="subtitle"></slot>
+              </p>
+              <date datetime="${escapeXML(this.dateTime)}">${escapeXML(formattedDate)}</date>
+            </div>
+            <div class="denhaag-card__actions">
+              <a aria-label="Shrimp and Chorizo Paella" href="${escapeXML(this.href)}" class="denhaag-card__action-link"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  class="denhaag-icon denhaag-card__arrow-icon"
+                  focusable="false"
+                  aria-hidden="true"
+                  shape-rendering="auto"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12.293 5.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L16.586 13H5a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414"
+                  ></path>
+                </svg
+                >
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="denhaag-card__actions">
-        <a aria-label="Shrimp and Chorizo Paella" href="${escapeXML(this.href)}" class="denhaag-card__action-link"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1em"
-            height="1em"
-            fill="none"
-            viewBox="0 0 24 24"
-            class="denhaag-icon denhaag-card__arrow-icon"
-            focusable="false"
-            aria-hidden="true"
-            shape-rendering="auto"
-          >
-            <path
-              fill="currentColor"
-              d="M12.293 5.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L16.586 13H5a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414"
-            ></path></svg
-        ></a>
-      </div>
-    </div>
-  </div>
-</div>
-
     `;
   }
 }
