@@ -1108,7 +1108,7 @@ importers:
         specifier: 18 || 19
         version: 19.0.0(react@19.0.0)
 
-  components/TextArea:
+  components/TextInput:
     dependencies:
       '@utrecht/component-library-react':
         specifier: 9.0.1
@@ -1123,7 +1123,7 @@ importers:
         specifier: 18 || 19
         version: 19.0.0(react@19.0.0)
 
-  components/TextInput:
+  components/Textarea:
     dependencies:
       '@utrecht/component-library-react':
         specifier: 9.0.1
@@ -1376,7 +1376,7 @@ importers:
         version: link:../../components/TextInput
       '@gemeente-denhaag/textarea':
         specifier: workspace:*
-        version: link:../../components/TextArea
+        version: link:../../components/Textarea
       '@gemeente-denhaag/typography':
         specifier: workspace:*
         version: link:../../components/Typography
@@ -1505,7 +1505,7 @@ importers:
         version: link:../../components/TextInput
       '@gemeente-denhaag/textarea':
         specifier: workspace:*
-        version: link:../../components/TextArea
+        version: link:../../components/Textarea
       '@gemeente-denhaag/typography':
         specifier: workspace:*
         version: link:../../components/Typography
@@ -1745,7 +1745,7 @@ importers:
         version: link:../../components/TextInput
       '@gemeente-denhaag/textarea':
         specifier: workspace:*
-        version: link:../../components/TextArea
+        version: link:../../components/Textarea
       '@gemeente-denhaag/typography':
         specifier: workspace:*
         version: link:../../components/Typography
