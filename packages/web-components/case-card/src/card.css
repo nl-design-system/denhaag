@@ -45,6 +45,7 @@
 .denhaag-card__title {
   --utrecht-paragraph-font-family: var(--denhaag-typography-sans-serif-alternate-font-family);
   --utrecht-paragraph-font-size: var(--denhaag-card-title-font-size);
+
   font-size: var(--denhaag-card-title-font-size);
   line-height: var(--denhaag-card-title-line-height);
   /* stylelint-disable-next-line value-no-vendor-prefix */
@@ -67,6 +68,7 @@
 .utrecht-paragraph.denhaag-card__subtitle,
 .denhaag-card__date-wrapper {
   --utrecht-space-around: 0;
+
   font-size: var(--denhaag-card-subtitle-font-size);
   font-weight: var(--denhaag-card-subtitle-font-weight);
   line-height: var(--denhaag-card-subtitle-line-height);
@@ -104,6 +106,7 @@
     --denhaag-card-case-action-link-padding-block-start,
     var(--denhaag-card-wrapper-padding-block)
   );
+
   content: "";
   position: absolute;
   inset-block-start: calc(0px - var(--denhaag-card-action-link-padding-block--before));
@@ -206,6 +209,7 @@
 .denhaag-case-card .denhaag-card__title {
   --utrecht-paragraph-font-weight: var(--denhaag-card-title-font-weight);
   --utrecht-paragraph-line-height: var(--denhaag-card-title-line-height);
+
   color: var(--denhaag-card-case-title-color);
   padding-block-end: var(--denhaag-card-title-padding-block);
   padding-block-start: var(--denhaag-card-title-padding-block);
@@ -216,6 +220,7 @@
 .denhaag-case-card .denhaag-card__subtitle,
 .denhaag-case-card .denhaag-card__date-wrapper {
   --utrecht-paragraph-line-height: var(--denhaag-card-subtitle-line-height);
+
   color: var(--denhaag-card-case-color);
   padding-block-start: var(--denhaag-card-subtitle-padding);
   padding-block-end: var(--denhaag-card-subtitle-padding);
