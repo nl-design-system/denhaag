@@ -2,3 +2,4 @@ packages:
   - "components/**"
   - "packages/*"
   - "proprietary/*"
+  - "packages/web-components/*"
