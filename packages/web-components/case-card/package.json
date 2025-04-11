@@ -1,12 +1,12 @@
 {
   "name": "@gemeente-denhaag/case-card-element",
   "version": "0.0.0",
-  "description": "A Case Card component",
+  "description": "A Case Card web component component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/nl-design-system/denhaag.git",
-    "directory": "components/Card"
+    "directory": "packages/web-components/case-card"
   },
   "license": "EUPL-1.2",
   "author": "Municipality of The Hague",
