@@ -2,6 +2,7 @@
 import css from './css.js';
 
 export interface CardData {
+  lang: string;
   dateTime: string;
   href: string;
   heading: string;
@@ -82,6 +83,7 @@ export class DenhaagCaseCardElement extends HTMLElement implements CardData {
 
   constructor() {
     super();
+    this.lang = this.getAttribute('lang') || 'nl-NL'; // maybe get the lang from the document as fallback
     this.dateTime = this.getAttribute('datetime') || '';
     this.href = this.getAttribute('href') || '';
     this.heading = this.getAttribute('heading') || '';
@@ -99,13 +101,8 @@ export class DenhaagCaseCardElement extends HTMLElement implements CardData {
     this.render();
   }
 
-  _getLang() {
-    // TODO: Get current language from DOM tree
-    return 'nl-NL';
-  }
-
   render() {
-    const formattedDate = new Intl.DateTimeFormat(this._getLang()).format(new Date(this.dateTime));
+    const formattedDate = new Intl.DateTimeFormat(this.lang).format(new Date(this.dateTime));
 
     this._div.innerHTML = `
       <div class="denhaag-card denhaag-case-card">
@@ -119,9 +116,9 @@ export class DenhaagCaseCardElement extends HTMLElement implements CardData {
               <p class="utrecht-paragraph denhaag-card__subtitle">
                 <slot name="subtitle"></slot>
               </p>
-              <date datetime="${escapeXML(this.dateTime)}">${escapeXML(formattedDate)}</date>
             </div>
             <div class="denhaag-card__actions">
+              ${this.dateTime && `<div class="denhaag-card__date-wrapper"><date datetime="${escapeXML(this.dateTime)}">${escapeXML(formattedDate)}</date></div>`}
               <a aria-label="Shrimp and Chorizo Paella" href="${escapeXML(this.href)}" class="denhaag-card__action-link"
               >
                 <svg
