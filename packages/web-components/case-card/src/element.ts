@@ -1,7 +1,7 @@
-// import css from '@gemeente-denhaag/card/src/css.mjs';
 import css from './css.js';
 
 export interface CardData {
+  linkAriaLabel: string;
   lang: string;
   dateTime: string;
   href: string;
@@ -77,12 +77,14 @@ sheet.replaceSync(css);
 export class DenhaagCaseCardElement extends HTMLElement implements CardData {
   dateTime: string;
   href: string;
+  linkAriaLabel: string;
   heading: string;
   _shadow: ShadowRoot;
   _div: HTMLElement;
 
   constructor() {
     super();
+    this.linkAriaLabel = this.getAttribute('linkAriaLabel') || '';
     this.lang = this.getAttribute('lang') || 'nl-NL'; // maybe get the lang from the document as fallback
     this.dateTime = this.getAttribute('datetime') || '';
     this.href = this.getAttribute('href') || '';
@@ -119,7 +121,7 @@ export class DenhaagCaseCardElement extends HTMLElement implements CardData {
             </div>
             <div class="denhaag-card__actions">
               ${this.dateTime && `<div class="denhaag-card__date-wrapper"><date datetime="${escapeXML(this.dateTime)}">${escapeXML(formattedDate)}</date></div>`}
-              <a aria-label="Shrimp and Chorizo Paella" href="${escapeXML(this.href)}" class="denhaag-card__action-link"
+              <a aria-label=${this.linkAriaLabel} href="${escapeXML(this.href)}" class="denhaag-card__action-link"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
