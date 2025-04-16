@@ -1897,6 +1897,9 @@ importers:
       '@gemeente-denhaag/card':
         specifier: workspace:*
         version: link:../../../components/Card
+      '@utrecht/paragraph-css':
+        specifier: 2.3.0
+        version: 2.3.0
     devDependencies:
       '@nl-design-system/tsconfig':
         specifier: 1.0.3

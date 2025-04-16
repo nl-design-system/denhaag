@@ -1,4 +1,9 @@
-import css from './css.js';
+/*
+Temporary utrecht css import.
+It should be taken from node_modules/@utrecht/paragraph-css/dist/index.mjs,
+but the module resolution is not working yet
+ */
+import css, { utrechtParagraphCss, denhaagIconCss } from './css.js';
 
 export interface CardData {
   linkAriaLabel: string;
@@ -74,6 +79,12 @@ export const escapeXML = function escapeXML(xml: string) {
 const sheet = new CSSStyleSheet();
 sheet.replaceSync(css);
 
+const utrechtParagraphSheet = new CSSStyleSheet();
+utrechtParagraphSheet.replaceSync(utrechtParagraphCss);
+
+const denhaagIconSheet = new CSSStyleSheet();
+denhaagIconSheet.replaceSync(denhaagIconCss);
+
 export class DenhaagCaseCardElement extends HTMLElement implements CardData {
   dateTime: string;
   href: string;
@@ -94,7 +105,7 @@ export class DenhaagCaseCardElement extends HTMLElement implements CardData {
       mode: 'closed',
     });
 
-    this._shadow.adoptedStyleSheets = [sheet];
+    this._shadow.adoptedStyleSheets = [sheet, utrechtParagraphSheet, denhaagIconSheet];
 
     this._div = this._shadow.appendChild(this.ownerDocument.createElement('div'));
   }
