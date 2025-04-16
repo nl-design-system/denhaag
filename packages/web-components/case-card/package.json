@@ -29,7 +29,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@gemeente-denhaag/card": "workspace:*"
+    "@gemeente-denhaag/card": "workspace:*",
+    "@utrecht/paragraph-css": "2.3.0"
   },
   "devDependencies": {
     "@nl-design-system/tsconfig": "1.0.3"
