@@ -22,49 +22,21 @@
 <div class="utrecht-document utrecht-document--surface">
   <h2>My cases</h2>
   <div class="grid">
+    <h3>All attributes</h3>
     <denhaag-case-card dateTime="2025-04-09T09:39:22.006Z" href="https://example.com/">
       <span slot="heading">Hello world!</span>
       <span slot="subtitle"> This impressive paella is a perfect party dish and a fun meal to cook. </span>
     </denhaag-case-card>
-  </div>
-</div>
 
-<h1>Comparison</h1>
-<div class="utrecht-document utrecht-document--surface denhaag-theme">
-  <div class="denhaag-card denhaag-case-card">
-    <div class="denhaag-card__wrapper">
-      <div class="denhaag-card__background"></div>
-      <div class="denhaag-card__content">
-        <div class="denhaag-card__text-wrapper">
-          <p class="utrecht-paragraph denhaag-card__title">Shrimp and Chorizo Paella</p>
-          <p class="utrecht-paragraph denhaag-card__subtitle">
-            This impressive paella is a perfect party dish and a fun meal to cook.
-          </p>
-        </div>
-        <div class="denhaag-card__actions">
-          <div class="denhaag-card__date-wrapper">
-            <time datetime="2020-01-22T00:00:00.000Z">22 januari 2020</time>
-          </div>
-          <a aria-label="Shrimp and Chorizo Paella" href="#" class="denhaag-card__action-link">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="1em"
-              height="1em"
-              fill="none"
-              viewBox="0 0 24 24"
-              class="denhaag-icon denhaag-card__arrow-icon"
-              focusable="false"
-              aria-hidden="true"
-              shape-rendering="auto"
-            >
-              <path
-                fill="currentColor"
-                d="M12.293 5.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L16.586 13H5a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414"
-              ></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
+    <h3>No datetime</h3>
+    <denhaag-case-card href="https://example.com/">
+      <span slot="heading">Hello world!</span>
+      <span slot="subtitle"> This impressive paella is a perfect party dish and a fun meal to cook. </span>
+    </denhaag-case-card>
+
+    <h3>No subtitle</h3>
+    <denhaag-case-card dateTime="2025-04-09T09:39:22.006Z" href="https://example.com/">
+      <span slot="heading">Hello world!</span>
+    </denhaag-case-card>
   </div>
 </div>
