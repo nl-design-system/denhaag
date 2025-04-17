@@ -31,6 +31,7 @@ import LogOutSvg from './svg/functional/log-out.svg';
 import SearchSvg from './svg/functional/search.svg';
 import ShareSvg from './svg/functional/share.svg';
 import ShowSvg from './svg/functional/show.svg';
+import SpinnerSvg from './svg/functional/spinner.svg';
 import StarterSvg from './svg/functional/starter.svg';
 import TrashSvg from './svg/functional/trash.svg';
 import UncheckedBoxSvg from './svg/functional/uncheckedbox.svg';
@@ -110,6 +111,7 @@ export const LogOutIcon: F = (props: SvgIconProps) => buildIcon(LogOutSvg, props
 export const SearchIcon: F = (props: SvgIconProps) => buildIcon(SearchSvg, props);
 export const ShareIcon: F = (props: SvgIconProps) => buildIcon(ShareSvg, props);
 export const ShowIcon: F = (props: SvgIconProps) => buildIcon(ShowSvg, props);
+export const SpinnerIcon: F = (props: SvgIconProps) => buildIcon(SpinnerSvg, props);
 export const StarterIcon: F = (props: SvgIconProps) => buildIcon(StarterSvg, props);
 export const TrashIcon: F = (props: SvgIconProps) => buildIcon(TrashSvg, props);
 export const UncheckedBoxIcon: F = (props: SvgIconProps) => buildIcon(UncheckedBoxSvg, props);
