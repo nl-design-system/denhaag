@@ -1,5 +1,12 @@
 # @gemeente-denhaag/header
 
+## 2.0.3
+
+### Patch Changes
+
+- Updated dependencies [4357576]
+  - @gemeente-denhaag/menu@2.1.0
+
 ## 2.0.2
 
 ### Patch Changes
