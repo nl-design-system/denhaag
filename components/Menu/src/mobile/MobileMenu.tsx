@@ -18,6 +18,7 @@ interface NavigationGroupProps {
   label: string;
   href?: string;
   navigation?: Array<NavigationGroupProps>;
+  defaultExpanded?: boolean;
   badgeCounter?: number;
 }
 
@@ -40,7 +41,7 @@ interface ExpandedListItemProps extends NavigationGroupProps {
 }
 
 const ExpandedListItem = ({ label, navigation, Link, scrollMenu, tabIndex }: ExpandedListItemProps) => {
-  const toggle = useToggleState(scrollMenu);
+  const toggle = useToggleState(false, scrollMenu);
 
   return (
     <MobileMenuListItem>
@@ -82,8 +83,15 @@ const ExpandedListItem = ({ label, navigation, Link, scrollMenu, tabIndex }: Exp
   );
 };
 
-const ExpandedList = ({ label, navigation, Link, scrollMenu, tabIndex }: ExpandedListItemProps) => {
-  const toggle = useToggleState();
+const ExpandedList = ({
+  label,
+  navigation,
+  defaultExpanded = false,
+  Link,
+  scrollMenu,
+  tabIndex,
+}: ExpandedListItemProps) => {
+  const toggle = useToggleState(defaultExpanded);
 
   return (
     <MobileMenuListItem active={toggle.open}>
