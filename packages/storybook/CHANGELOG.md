@@ -1,5 +1,14 @@
 # @gemeente-denhaag/storybook
 
+## 2.1.7
+
+### Patch Changes
+
+- 4357576: Added option to auto expand menu level 1 item
+- Updated dependencies [4357576]
+  - @gemeente-denhaag/menu@2.1.0
+  - @gemeente-denhaag/header@2.0.3
+
 ## 2.1.6
 
 ### Patch Changes

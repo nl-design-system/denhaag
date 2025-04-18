@@ -1,5 +1,11 @@
 # @gemeente-denhaag/menu
 
+## 2.1.0
+
+### Minor Changes
+
+- 4357576: Added option to auto expand menu level 1 item
+
 ## 2.0.0
 
 ### Major Changes
