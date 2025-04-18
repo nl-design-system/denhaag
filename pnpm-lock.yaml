@@ -264,6 +264,9 @@ importers:
       '@gemeente-denhaag/icons':
         specifier: workspace:*
         version: link:../Icons
+      '@utrecht/focus-ring-css':
+        specifier: 2.3.0
+        version: 2.3.0
       clsx:
         specifier: 2.1.1
         version: 2.1.1
