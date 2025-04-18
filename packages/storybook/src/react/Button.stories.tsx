@@ -58,6 +58,46 @@ export const LoadingAnimation: Story = {
       setState('loading');
 
       setTimeout(() => {
+        setState('default');
+      }, 4000);
+    };
+
+    return (
+      <LoadingStateButton currentState={state} onClick={handleClick} icon={<StarterIcon />} iconAlign="end">
+        Button
+      </LoadingStateButton>
+    );
+  },
+};
+
+export const LoadingAnimationWithSuccess: Story = {
+  render: () => {
+    const [state, setState] = useState<States>('default');
+
+    const handleClick = () => {
+      setState('loading');
+
+      setTimeout(() => {
+        setState('success');
+      }, 4000);
+    };
+
+    return (
+      <LoadingStateButton currentState={state} onClick={handleClick} icon={<StarterIcon />} iconAlign="end">
+        Button
+      </LoadingStateButton>
+    );
+  },
+};
+
+export const LoadingAnimationWithError: Story = {
+  render: () => {
+    const [state, setState] = useState<States>('default');
+
+    const handleClick = () => {
+      setState('loading');
+
+      setTimeout(() => {
         setState('error');
       }, 4000);
     };
