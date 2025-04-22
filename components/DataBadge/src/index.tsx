@@ -6,7 +6,7 @@ import {
   DataBadgeProps as NLDataBadgeProps,
 } from '@nl-design-system-candidate/data-badge-react';
 export * from '@nl-design-system-candidate/data-badge-react';
-export * from '@nl-design-system-candidate/data-badge-react/css';
+import '@nl-design-system-candidate/data-badge-css/data-badge.css';
 
 export type DataBadgeProps = NLDataBadgeProps & {
   status?: 'neutral' | 'success' | 'warning' | 'error';
