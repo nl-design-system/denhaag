@@ -432,6 +432,9 @@ importers:
         specifier: 18 || 19
         version: 19.0.0(react@19.0.0)
     devDependencies:
+      '@nl-design-system-candidate/data-badge-css':
+        specifier: 1.0.2
+        version: 1.0.2
       '@nl-design-system-candidate/data-badge-react':
         specifier: 1.1.1
         version: 1.1.1(@babel/runtime@7.26.0)(react@19.0.0)
@@ -3265,6 +3268,9 @@ packages:
     peerDependencies:
       '@types/react': '>=16'
       react: '>=16'
+
+  '@nl-design-system-candidate/data-badge-css@1.0.2':
+    resolution: {integrity: sha512-504WE8ZS/9fYpTa8b9KqMwO7Is1DfZVydZVnfQDBTji85TJ6jpVy9R+sXIJz+kAce6gcUACBRFjaFJusKd+Dvg==}
 
   '@nl-design-system-candidate/data-badge-react@1.1.1':
     resolution: {integrity: sha512-2G3xn4XmUyyNxMt4eiZqG9e2nkFEdb4hw94pumDe8VBn+YP9MgSuLOHG56FAMvTKfWPgQaUP1XNDUkMVrvTgoQ==}
@@ -11180,6 +11186,8 @@ snapshots:
       '@types/mdx': 2.0.13
       '@types/react': 19.0.10
       react: 19.0.0
+
+  '@nl-design-system-candidate/data-badge-css@1.0.2': {}
 
   '@nl-design-system-candidate/data-badge-react@1.1.1(@babel/runtime@7.26.0)(react@19.0.0)':
     dependencies:
