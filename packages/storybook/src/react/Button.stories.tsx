@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import { Button, LoadingStateButton, States } from '@gemeente-denhaag/button';
+import { Button, StatusButton, States } from '@gemeente-denhaag/button';
 import { ArrowLeftIcon, ArrowRightIcon } from '@gemeente-denhaag/icons';
 
 import readme from '../../../../components/Button/README.md?raw';
@@ -63,9 +63,9 @@ export const LoadingAnimation: Story = {
     };
 
     return (
-      <LoadingStateButton currentState={state} onClick={handleClick} icon={<StarterIcon />} iconAlign="end">
+      <StatusButton currentState={state} onClick={handleClick} icon={<StarterIcon />} iconAlign="end">
         Button
-      </LoadingStateButton>
+      </StatusButton>
     );
   },
 };
@@ -83,9 +83,9 @@ export const LoadingAnimationWithSuccess: Story = {
     };
 
     return (
-      <LoadingStateButton currentState={state} onClick={handleClick} icon={<StarterIcon />} iconAlign="end">
+      <StatusButton currentState={state} onClick={handleClick} icon={<StarterIcon />} iconAlign="end">
         Button
-      </LoadingStateButton>
+      </StatusButton>
     );
   },
 };
@@ -103,9 +103,9 @@ export const LoadingAnimationWithError: Story = {
     };
 
     return (
-      <LoadingStateButton currentState={state} onClick={handleClick} icon={<StarterIcon />} iconAlign="end">
+      <StatusButton currentState={state} onClick={handleClick} icon={<StarterIcon />} iconAlign="end">
         Button
-      </LoadingStateButton>
+      </StatusButton>
     );
   },
 };
