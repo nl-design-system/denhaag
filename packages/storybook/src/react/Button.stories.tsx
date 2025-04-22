@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import { Button, StatusButton, States } from '@gemeente-denhaag/button';
+import { Button, StatusButton, LoadingState } from '@gemeente-denhaag/button';
 import { ArrowLeftIcon, ArrowRightIcon } from '@gemeente-denhaag/icons';
 
 import readme from '../../../../components/Button/README.md?raw';
@@ -52,7 +52,7 @@ export const Disabled: Story = {
 
 export const LoadingAnimation: Story = {
   render: () => {
-    const [state, setState] = useState<States>('default');
+    const [state, setState] = useState<LoadingState>('default');
 
     const handleClick = () => {
       setState('loading');
@@ -63,7 +63,7 @@ export const LoadingAnimation: Story = {
     };
 
     return (
-      <StatusButton currentState={state} onClick={handleClick} icon={<StarterIcon />} iconAlign="end">
+      <StatusButton currentState={state} onClick={handleClick} icon={<StarterIcon />}>
         Button
       </StatusButton>
     );
@@ -72,7 +72,7 @@ export const LoadingAnimation: Story = {
 
 export const LoadingAnimationWithSuccess: Story = {
   render: () => {
-    const [state, setState] = useState<States>('default');
+    const [state, setState] = useState<LoadingState>('default');
 
     const handleClick = () => {
       setState('loading');
@@ -83,7 +83,7 @@ export const LoadingAnimationWithSuccess: Story = {
     };
 
     return (
-      <StatusButton currentState={state} onClick={handleClick} icon={<StarterIcon />} iconAlign="end">
+      <StatusButton currentState={state} onClick={handleClick} icon={<StarterIcon />}>
         Button
       </StatusButton>
     );
@@ -92,7 +92,7 @@ export const LoadingAnimationWithSuccess: Story = {
 
 export const LoadingAnimationWithError: Story = {
   render: () => {
-    const [state, setState] = useState<States>('default');
+    const [state, setState] = useState<LoadingState>('default');
 
     const handleClick = () => {
       setState('loading');
@@ -103,7 +103,7 @@ export const LoadingAnimationWithError: Story = {
     };
 
     return (
-      <StatusButton currentState={state} onClick={handleClick} icon={<StarterIcon />} iconAlign="end">
+      <StatusButton currentState={state} onClick={handleClick} icon={<StarterIcon />}>
         Button
       </StatusButton>
     );
