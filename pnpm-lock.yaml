@@ -928,6 +928,9 @@ importers:
         specifier: 18 || 19
         version: 19.0.0(react@19.0.0)
     devDependencies:
+      '@nl-design-system-candidate/number-badge-css':
+        specifier: 1.1.2
+        version: 1.1.2
       '@nl-design-system-candidate/number-badge-react':
         specifier: 1.2.1
         version: 1.2.1(@babel/runtime@7.26.0)(react@19.0.0)
@@ -3246,6 +3249,9 @@ packages:
     peerDependencies:
       '@babel/runtime': ^7
       react: ^18
+
+  '@nl-design-system-candidate/number-badge-css@1.1.2':
+    resolution: {integrity: sha512-4H/8PrY34mViCKsxS+4imDxeaDWsB8/vmb3KVzcuNqNfM9v6j0BJRxTN6AyennpIR4fWtEQQLuvG6UeJ3MCM9w==}
 
   '@nl-design-system-candidate/number-badge-react@1.2.1':
     resolution: {integrity: sha512-4ASxHUiFrHPc5TfNxgOPCsnDq10SQCARUjSDrchbCN4w+P8WliZYBioZynwFYLuiTCpf7v/+Zi7V9590ISyHuA==}
@@ -11152,6 +11158,8 @@ snapshots:
       '@babel/runtime': 7.26.0
       clsx: 2.1.1
       react: 19.0.0
+
+  '@nl-design-system-candidate/number-badge-css@1.1.2': {}
 
   '@nl-design-system-candidate/number-badge-react@1.2.1(@babel/runtime@7.26.0)(react@19.0.0)':
     dependencies:
