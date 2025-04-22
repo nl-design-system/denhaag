@@ -795,9 +795,12 @@ importers:
         specifier: 18 || 19
         version: 19.0.0(react@19.0.0)
     devDependencies:
+      '@nl-design-system-candidate/link-css':
+        specifier: 1.0.2
+        version: 1.0.2
       '@nl-design-system-candidate/link-react':
-        specifier: 1.1.0
-        version: 1.1.0(@babel/runtime@7.26.0)(react@19.0.0)
+        specifier: 1.1.1
+        version: 1.1.1(@babel/runtime@7.26.0)(react@19.0.0)
 
   components/LinkButton:
     dependencies:
@@ -3287,8 +3290,11 @@ packages:
       '@babel/runtime': ^7
       react: ^18
 
-  '@nl-design-system-candidate/link-react@1.1.0':
-    resolution: {integrity: sha512-UZjQOq2bqHyNrWJRuNfemetH+B6B+Dv/ISImeKMFyj/eZF0sZQCpBIyx/j0KEV9gTbItOLbWp97kvj/Ugut3MQ==}
+  '@nl-design-system-candidate/link-css@1.0.2':
+    resolution: {integrity: sha512-QbGnbdqmIbpvhddvr+8DXCpeEKTLIMcImpHsPdVzlviZdWrdY1JYB11+tggsDLiMOVQIXCdkXjXik0Cmo1H5MA==}
+
+  '@nl-design-system-candidate/link-react@1.1.1':
+    resolution: {integrity: sha512-l0seBlSTN1XOSPdssQXBluYMAur6wp2ZjXu7Sa+KbN94y3vpvDzHjVUibRWBINUBSIOOcoGML0mvMq50G2afig==}
     peerDependencies:
       '@babel/runtime': ^7
       react: ^18
@@ -11203,7 +11209,9 @@ snapshots:
       clsx: 2.1.1
       react: 19.0.0
 
-  '@nl-design-system-candidate/link-react@1.1.0(@babel/runtime@7.26.0)(react@19.0.0)':
+  '@nl-design-system-candidate/link-css@1.0.2': {}
+
+  '@nl-design-system-candidate/link-react@1.1.1(@babel/runtime@7.26.0)(react@19.0.0)':
     dependencies:
       '@babel/runtime': 7.26.0
       clsx: 2.1.1
