@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import Button from '@gemeente-denhaag/button';
-import { Heading4, Paragraph } from '@gemeente-denhaag/typography';
+import { Heading4 } from '@gemeente-denhaag/typography';
 import { AlertTriangleIcon, CheckCircleIcon, CircleInformationIcon, CloseIcon } from '@gemeente-denhaag/icons';
 import IconButton from '@gemeente-denhaag/iconbutton';
 
@@ -80,7 +80,7 @@ export const Alert = ({ id, title, text, variant, action, close, supportIcon, cl
         <div className="denhaag-alert__icon">{icon}</div>
         <div className="denhaag-alert__content">
           <Heading4>{title}</Heading4>
-          <Paragraph>{text}</Paragraph>
+          {text}
           {action && (
             <Button type="button" onClick={() => action.onClick()}>
               {action.buttonText}
