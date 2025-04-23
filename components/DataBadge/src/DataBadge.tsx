@@ -11,8 +11,8 @@ export type DataBadgeProps = NLDataBadgeProps & {
   status?: 'neutral' | 'success' | 'warning' | 'error';
 };
 
-export const DataBadge = ({ status, ...props }: DataBadgeProps) => {
-  const classes = clsx({
+export const DataBadge = ({ status, className, ...props }: DataBadgeProps) => {
+  const classes = clsx(className, {
     'nl-data-badge--neutral': status === 'neutral',
     'nl-data-badge--success': status === 'success',
     'nl-data-badge--warning': status === 'warning',
