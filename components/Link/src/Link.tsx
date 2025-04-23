@@ -1,7 +1,8 @@
 import React, { ComponentType } from 'react';
 import { SvgIconProps } from '@gemeente-denhaag/icons';
-import BasicLink, { LinkProps as CandidateLinkProps } from './BasicLink';
+import BasicLink from './BasicLink';
 import clsx from 'clsx';
+import { LinkProps as CandidateLinkProps } from '@nl-design-system-candidate/link-react';
 
 export interface LinkProps extends CandidateLinkProps {
   icon?: React.ReactElement<SvgIconProps>;
