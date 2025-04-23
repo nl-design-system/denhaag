@@ -3,7 +3,9 @@ Temporary utrecht css import.
 It should be taken from node_modules/@utrecht/paragraph-css/dist/index.mjs,
 but the module resolution is not working yet
  */
-import css, { utrechtParagraphCss, denhaagIconCss } from './css.js';
+import paragraphCss from '@utrecht/paragraph-css/dist/index.mjs';
+import iconCss from '@gemeente-denhaag/icons/dist/css.mjs';
+import cardCss from '@gemeente-denhaag/card/dist/css.mjs';
 import { escapeXML } from './util.js';
 
 export interface CardData {
@@ -14,13 +16,13 @@ export interface CardData {
 }
 
 const sheet = new CSSStyleSheet();
-sheet.replaceSync(css);
+sheet.replaceSync(cardCss);
 
 const utrechtParagraphSheet = new CSSStyleSheet();
-utrechtParagraphSheet.replaceSync(utrechtParagraphCss);
+utrechtParagraphSheet.replaceSync(paragraphCss);
 
 const denhaagIconSheet = new CSSStyleSheet();
-denhaagIconSheet.replaceSync(denhaagIconCss);
+denhaagIconSheet.replaceSync(iconCss);
 
 export class DenhaagCaseCardElement extends HTMLElement implements CardData {
   dateTime: string;
