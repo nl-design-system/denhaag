@@ -3,9 +3,7 @@ Temporary utrecht css import.
 It should be taken from node_modules/@utrecht/paragraph-css/dist/index.mjs,
 but the module resolution is not working yet
  */
-import paragraphCss from '@utrecht/paragraph-css/dist/index.mjs';
-import iconCss from '@gemeente-denhaag/icons/dist/css.mjs';
-import cardCss from '@gemeente-denhaag/card/dist/css.mjs';
+import cardCss, { utrechtParagraphCss } from './css.js';
 import { escapeXML } from './util.js';
 
 export interface CardData {
@@ -13,16 +11,14 @@ export interface CardData {
   linkLabel: string;
   dateTime?: string;
   href: string;
+  inactive?: boolean;
 }
 
 const sheet = new CSSStyleSheet();
 sheet.replaceSync(cardCss);
 
 const utrechtParagraphSheet = new CSSStyleSheet();
-utrechtParagraphSheet.replaceSync(paragraphCss);
-
-const denhaagIconSheet = new CSSStyleSheet();
-denhaagIconSheet.replaceSync(iconCss);
+utrechtParagraphSheet.replaceSync(utrechtParagraphCss);
 
 export class DenhaagCaseCardElement extends HTMLElement implements CardData {
   dateTime: string;
@@ -42,7 +38,7 @@ export class DenhaagCaseCardElement extends HTMLElement implements CardData {
       mode: 'closed',
     });
 
-    this._shadow.adoptedStyleSheets = [sheet, utrechtParagraphSheet, denhaagIconSheet];
+    this._shadow.adoptedStyleSheets = [sheet, utrechtParagraphSheet];
 
     this._div = this._shadow.appendChild(this.ownerDocument.createElement('div'));
   }
@@ -86,23 +82,7 @@ export class DenhaagCaseCardElement extends HTMLElement implements CardData {
               ${this.getDateTimeElement()}
               <a aria-label=${this.linkLabel} href="${escapeXML(this.href)}" class="denhaag-card__action-link"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="1em"
-                  height="1em"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  class="denhaag-icon denhaag-card__arrow-icon"
-                  focusable="false"
-                  aria-hidden="true"
-                  shape-rendering="auto"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M12.293 5.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L16.586 13H5a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414"
-                  ></path>
-                </svg
-                >
+              <slot name="icon"></slot>
               </a>
             </div>
           </div>
