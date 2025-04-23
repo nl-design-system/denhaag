@@ -80,6 +80,7 @@ export class DenhaagCaseCardElement extends HTMLElement implements CardData {
                 <slot name="heading"></slot>
               </p>
               ${subtitleSlot}
+              <slot></slot>
             </div>
             <div class="denhaag-card__actions">
               ${this.getDateTimeElement()}
