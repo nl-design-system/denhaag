@@ -3,7 +3,7 @@ Temporary utrecht css import.
 It should be taken from node_modules/@utrecht/paragraph-css/dist/index.mjs,
 but the module resolution is not working yet
  */
-import cardCss, { utrechtParagraphCss } from './css.js';
+import cardCss from './css.js';
 import { escapeXML } from './util.js';
 
 export interface CardData {
@@ -16,9 +16,6 @@ export interface CardData {
 
 const sheet = new CSSStyleSheet();
 sheet.replaceSync(cardCss);
-
-const utrechtParagraphSheet = new CSSStyleSheet();
-utrechtParagraphSheet.replaceSync(utrechtParagraphCss);
 
 export class DenhaagCaseCardElement extends HTMLElement implements CardData {
   dateTime: string;
@@ -38,7 +35,7 @@ export class DenhaagCaseCardElement extends HTMLElement implements CardData {
       mode: 'closed',
     });
 
-    this._shadow.adoptedStyleSheets = [sheet, utrechtParagraphSheet];
+    this._shadow.adoptedStyleSheets = [sheet];
 
     this._div = this._shadow.appendChild(this.ownerDocument.createElement('div'));
   }
@@ -61,9 +58,9 @@ export class DenhaagCaseCardElement extends HTMLElement implements CardData {
 
   render() {
     const subtitleSlot = this.querySelector('[slot="subtitle"]')
-      ? `<p class="utrecht-paragraph denhaag-card__subtitle">
+      ? `<div class="denhaag-card__subtitle">
           <slot name="subtitle"></slot>
-        </p>`
+        </div>`
       : '';
 
     this._div.innerHTML = `
@@ -72,9 +69,9 @@ export class DenhaagCaseCardElement extends HTMLElement implements CardData {
           <div class="denhaag-card__background"></div>
           <div class="denhaag-card__content">
             <div class="denhaag-card__text-wrapper">
-              <p class="utrecht-paragraph denhaag-card__title">
+              <div class="denhaag-card__title">
                 <slot name="heading"></slot>
-              </p>
+              </div>
               ${subtitleSlot}
               <slot></slot>
             </div>
