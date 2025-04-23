@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import { BadgeCounter } from '@gemeente-denhaag/badge-counter';
+import { NumberBadge } from '@gemeente-denhaag/number-badge';
 import { Sidenav, SidenavItem, SidenavLink, SidenavList, SidenavLinkLabel } from '@gemeente-denhaag/sidenav';
 import { ArchiveIcon, CheckCircleIcon, GridIcon, InboxIcon, UserIcon } from '@gemeente-denhaag/icons';
 import readme from '../../../../components/Sidenav/README.md?raw';
@@ -28,7 +28,7 @@ const exampleArgs = {
             <InboxIcon />
             <SidenavLinkLabel>
               Mijn berichten
-              <BadgeCounter>2</BadgeCounter>
+              <NumberBadge>2</NumberBadge>
             </SidenavLinkLabel>
           </SidenavLink>
         </SidenavItem>

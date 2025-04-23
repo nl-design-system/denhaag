@@ -876,9 +876,6 @@ importers:
 
   components/Menu:
     dependencies:
-      '@gemeente-denhaag/badge-counter':
-        specifier: workspace:*
-        version: link:../BadgeCounter
       '@gemeente-denhaag/button':
         specifier: workspace:*
         version: link:../Button
@@ -888,6 +885,9 @@ importers:
       '@gemeente-denhaag/language-switcher':
         specifier: workspace:*
         version: link:../LanguageSwitcher
+      '@gemeente-denhaag/number-badge':
+        specifier: workspace:*
+        version: link:../NumberBadge
       '@gemeente-denhaag/sheet':
         specifier: workspace:*
         version: link:../Sheet
@@ -1667,9 +1667,6 @@ importers:
       '@gemeente-denhaag/article-meta':
         specifier: workspace:*
         version: link:../../components/ArticleMeta
-      '@gemeente-denhaag/badge-counter':
-        specifier: workspace:*
-        version: link:../../components/BadgeCounter
       '@gemeente-denhaag/blockquote':
         specifier: workspace:*
         version: link:../../components/Blockquote
