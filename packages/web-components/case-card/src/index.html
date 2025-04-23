@@ -4,7 +4,7 @@
     http-equiv="Content-Security-Policy"
     content="
   default-src 'none';
-  script-src 'self';
+  script-src 'self' https://unpkg.com;
   style-src 'self' https://unpkg.com;
   img-src 'self' data:;
   font-src 'self';
@@ -15,10 +15,13 @@
 "
   />
 </head>
-<script type="module" src="../dist/index.js"></script>
-<link rel="stylesheet" href="../node_modules/@gemeente-denhaag/card/dist/index.css" />
-<link rel="stylesheet" href="https://unpkg.com/@utrecht/component-library-css/dist/index.css" />
+
+<!-- ook beschikbaar op npm `npm install @gemeente-denhaag/case-card-element`-->
+<script type="module" src="https://unpkg.com/@gemeente-denhaag/case-card-element/dist/index.js"></script>
+
+<!-- design token thema nodig voor huisstijl van den haag -->
 <link rel="stylesheet" href="https://unpkg.com/@gemeente-denhaag/design-tokens-components@2.1.1/dist/index.css" />
+
 <div class="utrecht-document utrecht-document--surface">
   <h2>My cases</h2>
   <div class="grid">
