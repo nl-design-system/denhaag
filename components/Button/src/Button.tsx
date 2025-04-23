@@ -1,39 +1,37 @@
-import React from 'react';
+import React, { RefAttributes } from 'react';
 import './index.scss';
 import clsx from 'clsx';
 import { SvgIconProps } from '@gemeente-denhaag/icons';
 
-export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  /**
-   * Simple click handler
-   */
-  onClick?: (event: React.MouseEvent<HTMLButtonElement> | React.TouchEvent<HTMLButtonElement>) => void;
+export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
+  RefAttributes<HTMLButtonElement> & {
+    /**
+     * Simple click handler
+     */
+    onClick?: (event: React.MouseEvent<HTMLButtonElement> | React.TouchEvent<HTMLButtonElement>) => void;
 
-  /**
-   * Size of the component
-   */
-  size?: 'medium' | 'large';
+    /**
+     * Size of the component
+     */
+    size?: 'medium' | 'large';
 
-  /**
-   * Button variant
-   */
-  variant?: 'primary-action' | 'secondary-action';
+    /**
+     * Button variant
+     */
+    variant?: 'primary-action' | 'secondary-action';
 
-  /**
-   * Icon to display at the start or the end of the button
-   */
-  icon?: React.ReactElement<SvgIconProps>;
+    /**
+     * Icon to display at the start or the end of the button
+     */
+    icon?: React.ReactElement<SvgIconProps>;
 
-  /**
-   * If an `icon` is specified, should it be aligned on the left or the right?
-   */
-  iconAlign?: 'start' | 'end';
-}
+    /**
+     * If an `icon` is specified, should it be aligned on the left or the right?
+     */
+    iconAlign?: 'start' | 'end';
+  };
 
-export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(function Button(
-  { icon, className, type = 'button', iconAlign = 'start', ...props },
-  ref,
-) {
+export const Button = ({ icon, className, type = 'button', iconAlign = 'start', ref, ...props }: ButtonProps) => {
   const buttonClassNames = clsx(
     'denhaag-button',
     {
@@ -54,7 +52,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(function 
       {iconAlign === 'end' ? iconWrapped : ''}
     </button>
   );
-});
+};
 
 /**
  * Default export for Button

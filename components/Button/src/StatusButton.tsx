@@ -13,7 +13,7 @@ export interface LoadingStateButtonLabels {
 
 export type LoadingState = keyof LoadingStateButtonLabels;
 
-export interface LoadingStateButtonProps extends Omit<ButtonProps, 'id' | 'size' | 'iconAlign'> {
+export interface StatusButtonProps extends Omit<ButtonProps, 'id' | 'iconAlign'> {
   labels?: LoadingStateButtonLabels;
   currentState?: LoadingState;
 }
@@ -25,10 +25,14 @@ const DEFAULT_LABELS: LoadingStateButtonLabels = {
   error: 'Error',
 };
 
-export const StatusButton = React.forwardRef<HTMLButtonElement, LoadingStateButtonProps>(function StatusButton(
-  { labels = DEFAULT_LABELS, currentState = 'default', disabled, icon = <StarterIcon />, className, ...props },
-  ref,
-) {
+export const StatusButton = ({
+  labels = DEFAULT_LABELS,
+  currentState = 'default',
+  disabled,
+  icon = <StarterIcon />,
+  className,
+  ...props
+}: StatusButtonProps) => {
   const generatedId = useId();
 
   const currentIcon = useMemo(() => {
@@ -52,11 +56,9 @@ export const StatusButton = React.forwardRef<HTMLButtonElement, LoadingStateButt
   return (
     <Button
       {...props}
-      size="large"
       icon={currentIcon}
       iconAlign="end"
       id={generatedId}
-      ref={ref}
       disabled={disabled || currentState === 'loading'}
       aria-busy={currentState === 'loading'}
       aria-live="polite"
@@ -74,6 +76,6 @@ export const StatusButton = React.forwardRef<HTMLButtonElement, LoadingStateButt
       </div>
     </Button>
   );
-});
+};
 
 export default StatusButton;

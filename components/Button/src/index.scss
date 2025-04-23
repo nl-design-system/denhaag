@@ -49,13 +49,13 @@
     align-items: center;
   }
 
-  &.denhaag-button--error {
-    --denhaag-button-primary-action-background-color: var(--denhaag-color-red-3);
-  }
-
   &.denhaag-status-button {
     display: flex;
     justify-content: space-between;
+
+    &.denhaag-status-button--error {
+      --denhaag-button-primary-action-background-color: var(--denhaag-color-red-3);
+    }
 
     &.denhaag-status-button--loading {
       --denhaag-button-primary-action-disabled-background-color: var(--denhaag-button-primary-action-background-color);
