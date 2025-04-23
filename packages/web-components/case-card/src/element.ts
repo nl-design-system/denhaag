@@ -72,9 +72,7 @@ export class DenhaagCaseCardElement extends HTMLElement implements CardData {
           <div class="denhaag-card__background"></div>
           <div class="denhaag-card__content">
             <div class="denhaag-card__text-wrapper">
-              <p class="utrecht-paragraph denhaag-card__title">
-                <slot name="heading"></slot>
-              </p>
+              <div class="denhaag-card__title"><slot name="heading"></slot></div>
               ${subtitleSlot}
               <slot></slot>
             </div>
