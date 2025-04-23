@@ -1900,6 +1900,9 @@ importers:
       '@gemeente-denhaag/card':
         specifier: workspace:*
         version: link:../../../components/Card
+      '@gemeente-denhaag/icons':
+        specifier: workspace:*
+        version: link:../../../components/Icons
       '@utrecht/paragraph-css':
         specifier: 2.3.0
         version: 2.3.0

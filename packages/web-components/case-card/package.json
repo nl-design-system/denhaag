@@ -11,13 +11,16 @@
   "license": "EUPL-1.2",
   "author": "Municipality of The Hague",
   "exports": {
-    ".": {
+    "./dist/element.mjs": {
+      "types": "./dist/element.d.ts",
+      "import": "./dist/element.js",
+      "default": "./dist/element.js"
+    },
+    "./dist/index.mjs": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "default": "./dist/index.js"
-    },
-    "./dist/index.mjs": "./dist/index.js",
-    "./dist/loader.mjs": "./dist/index.js"
+    }
   },
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -32,6 +35,7 @@
   },
   "dependencies": {
     "@gemeente-denhaag/card": "workspace:*",
+    "@gemeente-denhaag/icons": "workspace:*",
     "@utrecht/paragraph-css": "2.3.0"
   },
   "devDependencies": {
