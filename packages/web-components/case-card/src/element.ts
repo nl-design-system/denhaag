@@ -3,7 +3,8 @@ Temporary utrecht css import.
 It should be taken from node_modules/@utrecht/paragraph-css/dist/index.mjs,
 but the module resolution is not working yet
  */
-import { utrechtParagraphCss, denhaagIconCss as iconCss } from './css.js';
+import { utrechtParagraphCss } from './css.js';
+import iconCss from '@gemeente-denhaag/icons/dist/css.mjs';
 import cardCss from '@gemeente-denhaag/card/dist/css.mjs';
 import { escapeXML } from './util.js';
 
