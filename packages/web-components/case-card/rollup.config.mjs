@@ -9,7 +9,7 @@ const config = {
     format: 'esm',
     compact: true,
   },
-  plugins: [nodeResolve(), typescript()],
+  plugins: [nodeResolve(), typescript({ tsconfig: './tsconfig.build.json' })],
 };
 
 export default config;
