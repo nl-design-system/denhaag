@@ -77,6 +77,7 @@ import FacebookSvg from './svg/social/facebook.svg';
 import InstagramSvg from './svg/social/instagram.svg';
 import LinkedInSvg from './svg/social/linkedin.svg';
 import TwitterSvg from './svg/social/twitter.svg';
+import TwitterXSvg from './svg/social/twitter-x.svg';
 import WhatsAppSvg from './svg/social/whatsapp.svg';
 import YouTubeSvg from './svg/social/youtube.svg';
 
@@ -156,6 +157,7 @@ export const FacebookIcon: F = (props: SvgIconProps) => buildIcon(FacebookSvg, p
 export const InstagramIcon: F = (props: SvgIconProps) => buildIcon(InstagramSvg, props);
 export const LinkedInIcon: F = (props: SvgIconProps) => buildIcon(LinkedInSvg, props);
 export const TwitterIcon: F = (props: SvgIconProps) => buildIcon(TwitterSvg, props);
+export const TwitterXIcon: F = (props: SvgIconProps) => buildIcon(TwitterXSvg, props);
 export const WhatsAppIcon: F = (props: SvgIconProps) => buildIcon(WhatsAppSvg, props);
 export const YouTubeIcon: F = (props: SvgIconProps) => buildIcon(YouTubeSvg, props);
 
