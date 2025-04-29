@@ -17,7 +17,7 @@
 </head>
 
 <!-- ook beschikbaar op npm `npm install @gemeente-denhaag/case-card-element`-->
-<script type="module" src="../dist/index.js"></script>
+<script type="module" src="../dist/index.mjs"></script>
 
 <!-- design token thema nodig voor huisstijl van den haag -->
 <link rel="stylesheet" href="https://unpkg.com/@gemeente-denhaag/design-tokens-components@2.1.1/dist/index.css" />
@@ -33,7 +33,9 @@
     <h3>All attributes</h3>
     <denhaag-case-card dateTime="2025-04-09T09:39:22.006Z" href="https://example.com/">
       <p slot="heading" class="utrecht-paragraph">Shrimp and Chorizo Paella</p>
-      <span slot="subtitle" class="utrecht-paragraph"> This impressive paella is a perfect party dish and a fun meal to cook.</span>
+      <span slot="subtitle" class="utrecht-paragraph">
+        This impressive paella is a perfect party dish and a fun meal to cook.</span
+      >
       <span slot="icon">
         <svg
           xmlns="http://www.w3.org/2000/svg"
