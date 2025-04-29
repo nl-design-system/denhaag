@@ -1,5 +1,11 @@
 # @gemeente-denhaag/design-tokens-components
 
+## 2.2.0
+
+### Minor Changes
+
+- 13b0618: Added button loading state variant + new spinner icon
+
 ## 2.1.1
 
 ### Patch Changes

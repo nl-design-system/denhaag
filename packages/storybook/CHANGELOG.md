@@ -1,5 +1,48 @@
 # @gemeente-denhaag/storybook
 
+## 2.1.8
+
+### Patch Changes
+
+- 13b0618: Added button loading state variant + new spinner icon
+- Updated dependencies [13b0618]
+  - @gemeente-denhaag/design-tokens-components@2.2.0
+  - @gemeente-denhaag/button@2.1.0
+  - @gemeente-denhaag/icons@3.0.1
+  - @gemeente-denhaag/typography@2.0.3
+  - @gemeente-denhaag/action@2.0.1
+  - @gemeente-denhaag/alert@2.0.3
+  - @gemeente-denhaag/anchor-navigation@1.0.1
+  - @gemeente-denhaag/card-authentication@1.0.4
+  - @gemeente-denhaag/cta-image-content@1.0.3
+  - @gemeente-denhaag/dotindicator@2.0.1
+  - @gemeente-denhaag/header@2.0.4
+  - @gemeente-denhaag/menu@2.1.1
+  - @gemeente-denhaag/modal@2.0.2
+  - @gemeente-denhaag/process-steps@2.0.3
+  - @gemeente-denhaag/accordion@3.0.2
+  - @gemeente-denhaag/breadcrumb@2.0.1
+  - @gemeente-denhaag/card@2.0.4
+  - @gemeente-denhaag/contact-timeline@2.0.3
+  - @gemeente-denhaag/ctadownload@1.0.0
+  - @gemeente-denhaag/ctalink@1.0.0
+  - @gemeente-denhaag/divider@2.0.1
+  - @gemeente-denhaag/dynamic-content@1.0.1
+  - @gemeente-denhaag/file@1.0.1
+  - @gemeente-denhaag/footer@2.0.1
+  - @gemeente-denhaag/form-progress@2.0.1
+  - @gemeente-denhaag/highlighted-links@1.0.0
+  - @gemeente-denhaag/iconbutton@2.0.1
+  - @gemeente-denhaag/image@1.0.0
+  - @gemeente-denhaag/link@2.0.1
+  - @gemeente-denhaag/link-group@1.0.1
+  - @gemeente-denhaag/list@2.0.1
+  - @gemeente-denhaag/note@1.0.0
+  - @gemeente-denhaag/sheet@2.0.1
+  - @gemeente-denhaag/step-marker@2.0.1
+  - @gemeente-denhaag/card-group@1.0.4
+  - @gemeente-denhaag/table@2.0.1
+
 ## 2.1.7
 
 ### Patch Changes

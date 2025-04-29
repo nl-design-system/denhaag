@@ -1,5 +1,21 @@
 # @gemeente-denhaag/header
 
+## 2.0.4
+
+### Patch Changes
+
+- Updated dependencies [13b0618]
+  - @gemeente-denhaag/button@2.1.0
+  - @gemeente-denhaag/icons@3.0.1
+  - @gemeente-denhaag/typography@2.0.3
+  - @gemeente-denhaag/menu@2.1.1
+  - @gemeente-denhaag/breadcrumb@2.0.1
+  - @gemeente-denhaag/iconbutton@2.0.1
+  - @gemeente-denhaag/language-switcher@2.0.1
+  - @gemeente-denhaag/link@2.0.1
+  - @gemeente-denhaag/link-group@1.0.1
+  - @gemeente-denhaag/sheet@2.0.1
+
 ## 2.0.3
 
 ### Patch Changes
