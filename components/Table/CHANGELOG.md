@@ -1,5 +1,11 @@
 # @gemeente-denhaag/table
 
+## 2.0.1
+
+### Patch Changes
+
+- @gemeente-denhaag/link@2.0.1
+
 ## 2.0.0
 
 ### Major Changes
