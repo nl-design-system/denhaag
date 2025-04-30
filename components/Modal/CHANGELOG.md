@@ -1,5 +1,11 @@
 # @gemeente-denhaag/modal
 
+## 2.0.3
+
+### Patch Changes
+
+- @gemeente-denhaag/button@2.1.1
+
 ## 2.0.2
 
 ### Patch Changes

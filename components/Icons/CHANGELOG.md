@@ -1,5 +1,11 @@
 # @gemeente-denhaag/icons
 
+## 3.0.2
+
+### Patch Changes
+
+- 3d9fb01: Added Twitter/X icon
+
 ## 3.0.1
 
 ### Patch Changes
