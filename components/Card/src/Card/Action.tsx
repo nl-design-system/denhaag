@@ -3,12 +3,12 @@ import BasicLink from '@gemeente-denhaag/link';
 import clsx from 'clsx';
 import '../index.scss';
 
-export interface CardActionProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
+export interface ActionProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   Action?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
 }
 
-export const CardAction = ({ className, children, Action = BasicLink, ...props }: CardActionProps) => {
-  const classNames = clsx('denhaag-card__action-link', className);
+export const Action = ({ className, children, Action = BasicLink, ...props }: ActionProps) => {
+  const classNames = clsx('denhaag-case-card__action', className);
 
   return (
     <Action {...props} className={classNames}>
@@ -17,4 +17,4 @@ export const CardAction = ({ className, children, Action = BasicLink, ...props }
   );
 };
 
-export default CardAction;
+export default Action;

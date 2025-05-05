@@ -1,21 +1,49 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { CaseCard } from '@gemeente-denhaag/card';
-
 import readme from '../../../../components/Card/README.md?raw';
 import { templateLocale } from '../templates/util';
 
-const exampleArgs = {
-  title: 'Shrimp and Chorizo Paella',
-  subTitle: 'This impressive paella is a perfect party dish and a fun meal to cook.',
-  href: '#',
-};
+type Story = StoryObj<typeof meta>;
 
-const meta = {
-  id: 'react-cards-case-card',
-  title: 'React/Cards/Case Card',
+const meta: Meta<typeof CaseCard> = {
   component: CaseCard,
-  args: exampleArgs,
   tags: ['autodocs'],
+  argTypes: {
+    title: {
+      type: 'string',
+    },
+    subTitle: {
+      type: 'string',
+    },
+    date: {
+      type: 'string',
+      control: {
+        type: 'date',
+      },
+    },
+    dateLabels: {
+      control: {
+        type: 'object',
+      },
+    },
+    locale: {
+      type: 'string',
+      options: [undefined, 'nl-NL', 'en-US'],
+      control: {
+        type: 'select',
+      },
+    },
+    href: {
+      type: 'string',
+    },
+    active: {
+      type: 'boolean',
+      options: [true, false],
+      control: {
+        type: 'radio',
+      },
+    },
+  },
   parameters: {
     docs: {
       description: {
@@ -23,12 +51,17 @@ const meta = {
       },
     },
   },
-} as Meta<typeof CaseCard>;
+};
 
 export default meta;
-type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {};
+export const Default: Story = {
+  args: {
+    title: 'Shrimp and Chorizo Paella',
+    subTitle: 'This impressive paella is a perfect party dish and a fun meal to cook.',
+    href: '#',
+  },
+};
 
 export const WithDate: Story = {
   args: { ...Default.args, date: '2020-01-22', locale: templateLocale },
