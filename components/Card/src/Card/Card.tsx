@@ -5,7 +5,7 @@ import clsx from 'clsx';
 export type CardProps = HTMLAttributes<HTMLDivElement>;
 
 export const Card = ({ className, ...props }: CardProps) => {
-  const classNames = clsx('denhaag-card', className);
+  const classNames = clsx('denhaag-case-card', className);
   return <div className={classNames} {...props}></div>;
 };
 
