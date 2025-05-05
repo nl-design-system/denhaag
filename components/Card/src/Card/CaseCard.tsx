@@ -20,7 +20,7 @@ export interface CaseCardProps {
   dateLabels?: FormatDateLabels;
   locale?: string;
   href?: string;
-  active?: boolean;
+  appearance?: 'default' | 'archived';
   Link?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
 }
 
@@ -31,10 +31,10 @@ export const CaseCard = ({
   dateLabels,
   locale,
   href,
-  active = true,
+  appearance = 'default',
   Link = BasicLink,
 }: CaseCardProps) => {
-  const classNames = clsx({ 'denhaag-case-card--archived': !active });
+  const classNames = clsx({ 'denhaag-case-card--archived': appearance === 'archived' });
   const dateTime = date ? new Date(date) : undefined;
 
   return (
