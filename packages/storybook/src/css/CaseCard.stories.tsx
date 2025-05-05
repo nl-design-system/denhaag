@@ -7,4 +7,11 @@ const meta: typeof reactMeta = {
 
 export default meta;
 
-export { Default, WithDate, Inactive } from '../react/CaseCard.stories';
+export {
+  Default,
+  WithDate,
+  WithCaseNumber,
+  Inactive,
+  InactiveWithDate,
+  InactiveWithCaseNumber,
+} from '../react/CaseCard.stories';
