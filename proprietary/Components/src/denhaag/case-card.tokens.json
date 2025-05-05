@@ -54,6 +54,9 @@
         "subtitle": {
           "color": { "value": "{denhaag.color.grey.4}" }
         },
+        "context": {
+          "color": { "value": "{denhaag.color.grey.4}" }
+        },
         "action": {
           "color": { "value": "{denhaag.color.grey.4}" },
           "active": {

@@ -6,36 +6,22 @@ import clsx from 'clsx';
 import '../index.scss';
 import Card from './Card';
 import Footer from './Footer';
-import CardDateWrapper from './CardDateWrapper';
-import CardDate from './CardDate';
 import Action from './Action';
-import { formatDate, FormatDateLabels, longDateOptions } from '@gemeente-denhaag/utils';
 import Wrapper from './Wrapper';
 import Background from './Background';
+import Context from './Context';
 
 export interface CaseCardProps {
   title: string;
   subTitle?: string;
-  date?: string;
-  dateLabels?: FormatDateLabels;
-  locale?: string;
+  context?: React.ReactNode;
   href?: string;
-  appearance?: 'default' | 'archived';
+  appearance?: 'archived';
   Link?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
 }
 
-export const CaseCard = ({
-  title,
-  subTitle,
-  date,
-  dateLabels,
-  locale,
-  href,
-  appearance = 'default',
-  Link = BasicLink,
-}: CaseCardProps) => {
+export const CaseCard = ({ title, subTitle, context, href, appearance, Link = BasicLink }: CaseCardProps) => {
   const classNames = clsx({ 'denhaag-case-card--archived': appearance === 'archived' });
-  const dateTime = date ? new Date(date) : undefined;
 
   return (
     <Card className={classNames}>
@@ -46,13 +32,7 @@ export const CaseCard = ({
           <Paragraph className="denhaag-case-card__subtitle">{subTitle}</Paragraph>
         </div>
         <Footer>
-          {date && (
-            <CardDateWrapper>
-              <CardDate dateTime={dateTime?.toISOString()}>
-                {formatDate({ dateTime: date, locale: locale, format: longDateOptions, labels: dateLabels })[0]}
-              </CardDate>
-            </CardDateWrapper>
-          )}
+          <Context>{context}</Context>
           <Action aria-label={title} href={href} Action={Link}>
             <ArrowRightIcon className="denhaag-case-card__arrow" />
           </Action>
