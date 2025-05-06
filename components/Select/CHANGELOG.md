@@ -1,5 +1,11 @@
 # @gemeente-denhaag/select
 
+## 2.0.1
+
+### Patch Changes
+
+- 75fc8c1: Added Ref to Select
+
 ## 2.0.0
 
 ### Major Changes

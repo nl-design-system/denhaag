@@ -1,5 +1,12 @@
 # @gemeente-denhaag/components-react
 
+## 2.0.11
+
+### Patch Changes
+
+- Updated dependencies [75fc8c1]
+  - @gemeente-denhaag/select@2.0.1
+
 ## 2.0.10
 
 ### Patch Changes
