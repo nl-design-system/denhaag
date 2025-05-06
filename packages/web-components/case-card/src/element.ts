@@ -3,9 +3,9 @@ import { escapeXML } from './util.js';
 
 export interface CardData {
   lang?: string;
-  linkLabel: string;
   dateTime?: string;
   href: string;
+  linkLabel?: string;
   inactive?: boolean;
 }
 
@@ -13,14 +13,15 @@ const sheet = new CSSStyleSheet();
 sheet.replaceSync(cardCss);
 
 export class DenhaagCaseCardElement extends HTMLElement implements CardData {
-  dateTime: string;
+  dateTime?: string;
   href: string;
-  linkLabel: string;
+  linkLabel?: string;
   _shadow: ShadowRoot;
   _div: HTMLElement;
 
   constructor() {
     super();
+
     this.dateTime = this.getAttribute('datetime') || '';
     this.href = this.getAttribute('href') || '';
     this.lang = this.getAttribute('lang') || 'nl-NL'; // maybe get the lang from the document as fallback
@@ -72,7 +73,10 @@ export class DenhaagCaseCardElement extends HTMLElement implements CardData {
             </div>
             <div class="denhaag-card__actions">
               ${this.getDateTimeElement()}
-              <a aria-label=${this.linkLabel} href="${escapeXML(this.href)}" class="denhaag-card__action-link"
+              <a
+                ${this.linkLabel && `aria-label="${escapeXML(this.linkLabel)}"`}
+                href="${escapeXML(this.href)}"
+                class="denhaag-card__action-link"
               >
               <slot name="icon"></slot>
               </a>
