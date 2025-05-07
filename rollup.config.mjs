@@ -86,6 +86,20 @@ const createConfig = ({ dir, format, baseUrl }) => ({
 
 const baseUrl = cwd();
 
+function emitCssDts() {
+  return {
+    name: 'emit-css-dts',
+    generateBundle() {
+      const dtsSource = `declare const css: string;\nexport default css;\nexport const stylesheet: string;\n`;
+      this.emitFile({
+        type: 'asset',
+        fileName: 'css.mjs.d.ts',
+        source: dtsSource,
+      });
+    },
+  };
+}
+
 const configs = [
   createConfig({ format: 'cjs', dir: './dist/cjs', baseUrl }),
   createConfig({ format: 'esm', dir: './dist/mjs', baseUrl }),
@@ -100,6 +114,7 @@ const configs = [
     plugins: [
       postcss({
         extensions: ['.css', '.scss'],
+        plugins: [discardDuplicates()],
         extract: true,
       }),
     ],
@@ -107,17 +122,19 @@ const configs = [
   {
     input: 'src/index.scss',
     output: {
-      dir: './dist',
+      dir: './dist/mjs',
       sourcemap: false,
+      entryFileNames: 'css.mjs',
       format: 'esm',
       compact: true,
     },
     plugins: [
       postcss({
         extensions: ['.css', '.scss'],
-        plugins: [discardDuplicates()],
-        extract: true,
+        extract: false,
+        inject: false,
       }),
+      emitCssDts(),
     ],
   },
 ]
