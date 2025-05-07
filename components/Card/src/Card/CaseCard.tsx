@@ -16,12 +16,15 @@ export interface CaseCardProps {
   subTitle?: string;
   context?: React.ReactNode;
   href?: string;
-  appearance?: 'archived';
+  appearance?: 'archived' | 'list';
   Link?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
 }
 
 export const CaseCard = ({ title, subTitle, context, href, appearance, Link = BasicLink }: CaseCardProps) => {
-  const classNames = clsx({ 'denhaag-case-card--archived': appearance === 'archived' });
+  const classNames = clsx({
+    'denhaag-case-card--archived': appearance === 'archived',
+    'denhaag-case-card--list': appearance === 'list',
+  });
 
   return (
     <Card className={classNames}>

@@ -44,7 +44,7 @@ export default meta;
 
 export const Default: Story = {
   args: {
-    title: 'Shrimp and Chorizo Paella',
+    title: 'Shrimp and Chorizo Paella fwaefawef awef awe',
     subTitle: 'This impressive paella is a perfect party dish and a fun meal to cook.',
     context: '',
     href: '#',
@@ -89,6 +89,33 @@ export const InactiveWithCaseNumber: Story = {
   args: {
     ...Default.args,
     appearance: 'archived',
+    context: 'VTH-TEST-2024-02437',
+  },
+};
+
+export const List: Story = {
+  args: {
+    ...Default.args,
+    appearance: 'list',
+  },
+};
+
+export const ListWithDate: Story = {
+  args: {
+    ...Default.args,
+    appearance: 'list',
+    context: (
+      <time dateTime={new Date('2020-01-22').toISOString()}>
+        {formatDate({ dateTime: '2020-01-22', locale: templateLocale, format: longDateOptions })[0]}
+      </time>
+    ),
+  },
+};
+
+export const ListWithCaseNumber: Story = {
+  args: {
+    ...Default.args,
+    appearance: 'list',
     context: 'VTH-TEST-2024-02437',
   },
 };
