@@ -8,6 +8,10 @@
   [class^="utrecht-heading-"] {
     --utrecht-space-around: 0; // Sadly we need to reset this on the heading component. Not really a reusable variable.
   }
+
+  .denhaag-link {
+    text-decoration: none;
+  }
 }
 
 .denhaag-link-group__image {
