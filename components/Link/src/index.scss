@@ -56,7 +56,6 @@
   align-items: var(--denhaag-link-align-items, baseline);
   display: inline-flex;
   gap: var(--denhaag-link-icon-gap, var(--denhaag-space-2xs));
-  text-decoration: none;
   vertical-align: var(--denhaag-link-with-icon-vertical-align, bottom);
 
   .denhaag-icon {
