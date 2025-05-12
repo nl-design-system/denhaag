@@ -1,8 +1,8 @@
 import './index.scss';
 
-export * from './Card/CaseCardBase';
-export * from './Card/CaseCardAction';
-export * from './Card/CaseCardFooter';
-export * from './Card/CaseCardBackground';
-export * from './Card/CaseCardContext';
-export * from './Card/CaseCard';
+export * from './CaseCardBase';
+export * from './CaseCardAction';
+export * from './CaseCardFooter';
+export * from './CaseCardBackground';
+export * from './CaseCardContext';
+export * from './CaseCard';

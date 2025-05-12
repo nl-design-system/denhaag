@@ -1,5 +1,4 @@
 import React, { HTMLAttributes } from 'react';
-import '../index.scss';
 import clsx from 'clsx';
 
 export type CaseCardContainerProps = HTMLAttributes<HTMLDivElement>;
