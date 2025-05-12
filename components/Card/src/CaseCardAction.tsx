@@ -1,7 +1,6 @@
 import React, { AnchorHTMLAttributes, ComponentType } from 'react';
 import BasicLink from '@gemeente-denhaag/link';
 import clsx from 'clsx';
-import '../index.scss';
 
 export interface CaseCardActionProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   Action?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
