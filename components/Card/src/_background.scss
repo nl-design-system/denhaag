@@ -1,0 +1,36 @@
+.denhaag-case-card__background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: 50% 100%;
+  border-radius: var(--denhaag-case-card-border-radius);
+  border-top-left-radius: 0;
+  background: var(--denhaag-case-card-background-background-color);
+
+  &::before {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    display: block;
+    width: 60%;
+    height: 25px;
+    content: "";
+    border-top-left-radius: var(--denhaag-case-card-border-radius);
+    background: var(--denhaag-case-card-background-background-color);
+  }
+
+  &::after {
+    position: absolute;
+    top: -20px;
+    left: 55%;
+    display: block;
+    width: 10%;
+    height: 22px;
+    content: "";
+    transform: skewX(30deg);
+    background: var(--denhaag-case-card-background-background-color);
+  }
+}
