@@ -1,0 +1,16 @@
+.denhaag-case-card__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: var(--denhaag-case-card-wrapper-flex-direction, column);
+  justify-content: space-between;
+  box-sizing: border-box;
+  gap: var(--denhaag-case-card-wrapper-gap, 0);
+  border-radius: var(--denhaag-case-card-border-radius);
+  padding-block-start: var(--denhaag-case-card-wrapper-padding-block-start);
+  padding-block-end: var(--denhaag-case-card-wrapper-padding-block-end);
+  padding-inline-start: var(--denhaag-case-card-wrapper-padding-inline-start);
+  padding-inline-end: var(--denhaag-case-card-wrapper-padding-inline-end);
+  background: transparent;
+  perspective: 1800px;
+}

@@ -1,0 +1,105 @@
+@mixin list-view {
+  --denhaag-case-card-width: none;
+  --denhaag-case-card-height: none;
+  --denhaag-case-card-background-color: none;
+  --denhaag-case-card-padding-block-start: 0px;
+  --denhaag-case-card-border-style: var(--denhaag-case-card-list-border-style);
+  --denhaag-case-card-border-width: var(--denhaag-case-card-list-border-width);
+  --denhaag-case-card-border-color: var(--denhaag-case-card-list-border-color);
+  --denhaag-case-card-before-display: none;
+  --denhaag-case-card-wrapper-gap: var(--denhaag-case-card-list-wrapper-gap);
+  --denhaag-case-card-wrapper-flex-direction: var(--denhaag-case-card-list-wrapper-flex-direction);
+  --denhaag-case-card-wrapper-padding-block-start: var(--denhaag-case-card-list-wrapper-padding-block-start);
+  --denhaag-case-card-wrapper-padding-block-end: var(--denhaag-case-card-list-wrapper-padding-block-end);
+  --denhaag-case-card-wrapper-padding-inline-start: var(--denhaag-case-card-list-wrapper-padding-inline-start);
+  --denhaag-case-card-wrapper-padding-inline-end: var(--denhaag-case-card-list-wrapper-padding-inline-end);
+  --denhaag-case-card-background-background-color: none;
+  --denhaag-case-card-background-hover-transform: none;
+  --denhaag-case-card-background-hover-background-color: var(
+    --denhaag-case-card-list-background-hover-background-color
+  );
+  --denhaag-case-card-title-color: var(--denhaag-case-card-list-title-color);
+  --denhaag-case-card-title-font-size: var(--denhaag-case-card-list-title-font-size);
+  --denhaag-case-card-subtitle-color: var(--denhaag-case-card-list-subtitle-color);
+  --denhaag-case-card-footer-gap: var(--denhaag-case-card-list-footer-gap);
+  --denhaag-case-card-context-color: var(--denhaag-case-card-list-context-color);
+}
+
+.denhaag-case-card {
+  width: 100%;
+  height: var(--denhaag-case-card-height);
+  max-width: var(--denhaag-case-card-width);
+  background: var(--denhaag-case-card-background-color);
+  padding-block-start: var(--denhaag-case-card-padding-block-start);
+  border-radius: var(--denhaag-case-card-border-radius);
+  border-bottom-style: var(--denhaag-case-card-border-style, none);
+  border-bottom-width: var(--denhaag-case-card-border-width, 0);
+  border-bottom-color: var(--denhaag-case-card-border-color, none);
+  position: relative;
+  box-sizing: border-box;
+
+  &::before {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: var(--denhaag-case-card-before-display, block);
+    width: 50%;
+    height: 20px;
+    content: "";
+    border-radius: 0 var(--denhaag-case-card-border-radius) 0 0;
+    background: var(--denhaag-case-card-paper-color);
+  }
+
+  @container (max-width: 360px) {
+    @include list-view;
+  }
+
+  &--list {
+    @include list-view;
+  }
+
+  &--archived {
+    --denhaag-case-card-background-color: var(--denhaag-case-card-archived-background-color);
+    --denhaag-case-card-color: var(--denhaag-case-card-archived-color);
+    --denhaag-case-card-background-background-color: var(--denhaag-case-card-archived-background-background-color);
+    --denhaag-case-card-title-color: var(--denhaag-case-card-archived-title-color);
+    --denhaag-case-card-subtitle-color: var(--denhaag-case-card-archived-subtitle-color);
+    --denhaag-case-card-context-color: var(--denhaag-case-card-archived-context-color);
+    --denhaag-case-card-action-color: var(--denhaag-case-card-archived-action-color);
+    --denhaag-case-card-action-active-color: var(--denhaag-case-card-archived-action-color);
+  }
+
+  &--focus,
+  &:focus-within {
+    outline: var(--denhaag-focus-border);
+  }
+
+  &--hover,
+  &:hover,
+  &:hover:focus {
+    cursor: pointer;
+  }
+
+  &--hover,
+  &--focus,
+  &:hover,
+  &:focus-within {
+    &::before {
+      top: 12px;
+      transform: rotate(-2.45deg);
+      transform-origin: right;
+    }
+
+    .denhaag-case-card__background {
+      transform: var(--denhaag-case-card-background-hover-transform, rotateX(-20deg));
+      background-color: var(
+        --denhaag-case-card-background-hover-background-color,
+        var(--denhaag-case-card-background-background-color)
+      );
+    }
+
+    .denhaag-case-card__action {
+      color: var(--denhaag-case-card-action-active-color);
+    }
+  }
+}
