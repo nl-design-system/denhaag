@@ -10,17 +10,17 @@
     --denhaag-card-authentication-padding-inline: 32px;
   }
 
-  background-color: var(--denhaag-card-authentication-background-color, var(--denhaag-card-background-color));
-  border-color: var(--denhaag-card-authentication-border-color, var(--denhaag-card-wrapper-border-color));
-  border-radius: var(--denhaag-card-authentication-border-radius, var(--denhaag-card-wrapper-border-radius));
-  border-width: var(--denhaag-card-authentication-border-width, var(--denhaag-card-border-width));
-  color: var(--denhaag-card-authentication-color, var(--denhaag-card-wrapper-color));
+  background-color: var(--denhaag-card-authentication-background-color);
+  border-color: var(--denhaag-card-authentication-border-color);
+  border-radius: var(--denhaag-card-authentication-border-radius);
+  border-width: var(--denhaag-card-authentication-border-width);
+  color: var(--denhaag-card-authentication-color);
   min-width: var(--denhaag-card-authentication-min-width);
   min-height: var(--denhaag-card-authentication-min-height);
-  padding-inline-start: var(--denhaag-card-authentication-padding-inline, var(--denhaag-card-wrapper-padding-inline));
-  padding-inline-end: var(--denhaag-card-authentication-padding-inline, var(--denhaag-card-wrapper-padding-inline));
-  padding-block-start: var(--denhaag-card-authentication-padding-block, var(--denhaag-card-wrapper-padding-block));
-  padding-block-end: var(--denhaag-card-authentication-padding-block, var(--denhaag-card-wrapper-padding-block));
+  padding-inline-start: var(--denhaag-card-authentication-padding-inline,);
+  padding-inline-end: var(--denhaag-card-authentication-padding-inline,);
+  padding-block-start: var(--denhaag-card-authentication-padding-block);
+  padding-block-end: var(--denhaag-card-authentication-padding-block);
   border-style: solid;
   box-sizing: border-box;
 
