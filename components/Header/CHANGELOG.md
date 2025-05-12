@@ -1,5 +1,16 @@
 # @gemeente-denhaag/header
 
+## 2.1.0
+
+### Minor Changes
+
+- aacf6f8: Added option to show flat mobile menu without collapsible title
+
+### Patch Changes
+
+- Updated dependencies [aacf6f8]
+  - @gemeente-denhaag/menu@2.2.0
+
 ## 2.0.5
 
 ### Patch Changes

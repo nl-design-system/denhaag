@@ -1,5 +1,13 @@
 # @gemeente-denhaag/components-react
 
+## 2.0.12
+
+### Patch Changes
+
+- Updated dependencies [aacf6f8]
+  - @gemeente-denhaag/header@2.1.0
+  - @gemeente-denhaag/menu@2.2.0
+
 ## 2.0.11
 
 ### Patch Changes

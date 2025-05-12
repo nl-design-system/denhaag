@@ -1,5 +1,14 @@
 # @gemeente-denhaag/storybook
 
+## 2.1.11
+
+### Patch Changes
+
+- aacf6f8: Added option to show flat mobile menu without collapsible title
+- Updated dependencies [aacf6f8]
+  - @gemeente-denhaag/header@2.1.0
+  - @gemeente-denhaag/menu@2.2.0
+
 ## 2.1.10
 
 ### Patch Changes
