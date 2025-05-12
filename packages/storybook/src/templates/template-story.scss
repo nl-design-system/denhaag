@@ -3,6 +3,12 @@
   margin-block-end: 32px;
 }
 
+.denhaag-card-group {
+  @media (width >= 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .denhaag-authentication__alert {
   margin-block-start: 24px;
 }

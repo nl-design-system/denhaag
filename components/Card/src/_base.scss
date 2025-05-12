@@ -26,8 +26,9 @@
 }
 
 .denhaag-case-card {
-  width: var(--denhaag-case-card-width);
+  width: 100%;
   height: var(--denhaag-case-card-height);
+  max-width: var(--denhaag-case-card-width);
   background: var(--denhaag-case-card-background-color);
   padding-block-start: var(--denhaag-case-card-padding-block-start);
   border-radius: var(--denhaag-case-card-border-radius);
