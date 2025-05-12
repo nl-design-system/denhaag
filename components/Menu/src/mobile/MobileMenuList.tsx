@@ -6,7 +6,7 @@ export interface MobileMenuListProps extends HTMLAttributes<HTMLUListElement> {
   active?: boolean;
 }
 
-export const MobileMenuList: React.FC<MobileMenuListProps> = ({ expandable, active, children, ...props }) => {
+export const MobileMenuList = ({ expandable, active, children, ...props }: MobileMenuListProps) => {
   const classNames = clsx(
     'denhaag-mobile-menu-list',
     expandable && 'denhaag-mobile-menu-list-expandable',

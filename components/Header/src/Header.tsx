@@ -4,12 +4,12 @@ import './index.scss';
 
 export type HeaderProps = HTMLAttributes<HTMLDivElement>;
 
-export const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
-  const classNames = clsx('denhaag-header', props.className);
+export const Header = ({ children, className, ...props }: HeaderProps) => {
+  const classNames = clsx('denhaag-header', className);
 
   return (
-    <header id="site-header" className={classNames}>
-      {props.children}
+    <header {...props} id="site-header" className={classNames}>
+      {children}
     </header>
   );
 };

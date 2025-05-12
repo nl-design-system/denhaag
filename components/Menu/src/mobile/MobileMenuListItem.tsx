@@ -5,7 +5,7 @@ export interface MobileMenuListItemProps extends LiHTMLAttributes<HTMLLIElement>
   active?: boolean;
 }
 
-export const MobileMenuListItem: React.FC<MobileMenuListItemProps> = ({ active, children, ...props }) => {
+export const MobileMenuListItem = ({ active, children, ...props }: MobileMenuListItemProps) => {
   const classNames = clsx('denhaag-mobile-menu-list-item', active ? 'denhaag-mobile-menu-list-item--active' : '');
 
   return (

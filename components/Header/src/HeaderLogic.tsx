@@ -53,7 +53,7 @@ interface MenuProps {
 }
 
 interface NavigationGroupProps {
-  label: string;
+  label?: string;
   href?: string;
   navigation?: Array<NavigationGroupProps>;
 }

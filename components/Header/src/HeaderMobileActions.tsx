@@ -4,10 +4,14 @@ import './index.scss';
 
 export type HeaderMobileActionsProps = HTMLAttributes<HTMLDivElement>;
 
-export const HeaderMobileActions: React.FC<HeaderMobileActionsProps> = (props: HeaderMobileActionsProps) => {
-  const classNames = clsx('denhaag-header__mobile-actions', props.className);
+export const HeaderMobileActions = ({ children, className, ...props }: HeaderMobileActionsProps) => {
+  const classNames = clsx('denhaag-header__mobile-actions', className);
 
-  return <div className={classNames}>{props.children}</div>;
+  return (
+    <div className={classNames} {...props}>
+      {children}
+    </div>
+  );
 };
 
 export default HeaderMobileActions;
