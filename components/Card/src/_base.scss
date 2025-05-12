@@ -1,5 +1,5 @@
 @mixin list-view {
-  --denhaag-case-card-width: none;
+  --denhaag-case-card-width: 100%;
   --denhaag-case-card-height: none;
   --denhaag-case-card-background-color: none;
   --denhaag-case-card-padding-block-start: 0px;
@@ -26,9 +26,8 @@
 }
 
 .denhaag-case-card {
-  width: 100%;
+  width: var(--denhaag-case-card-width);
   height: var(--denhaag-case-card-height);
-  max-width: var(--denhaag-case-card-width);
   background: var(--denhaag-case-card-background-color);
   padding-block-start: var(--denhaag-case-card-padding-block-start);
   border-radius: var(--denhaag-case-card-border-radius);
@@ -50,8 +49,10 @@
     background: var(--denhaag-case-card-paper-color);
   }
 
-  @container (max-width: 360px) {
+  @media (width <= 480px) {
     @include list-view;
+
+    --denhaag-case-card-list-wrapper-flex-direction: column;
   }
 
   &--list {
