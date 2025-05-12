@@ -2,11 +2,11 @@ import React, { HTMLAttributes } from 'react';
 import '../index.scss';
 import clsx from 'clsx';
 
-export type CardProps = HTMLAttributes<HTMLDivElement> & {
+export type CaseCardBaseProps = HTMLAttributes<HTMLDivElement> & {
   appearance?: 'archived' | 'list';
 };
 
-export const Card = ({ appearance, className, ...props }: CardProps) => {
+export const CaseCardBase = ({ appearance, className, ...props }: CaseCardBaseProps) => {
   const classNames = clsx(
     'denhaag-case-card',
     {
@@ -19,4 +19,4 @@ export const Card = ({ appearance, className, ...props }: CardProps) => {
   return <div className={classNames} {...props}></div>;
 };
 
-export default Card;
+export default CaseCardBase;

@@ -2,11 +2,11 @@ import React, { HTMLAttributes } from 'react';
 import '../index.scss';
 import clsx from 'clsx';
 
-export type WrapperProps = HTMLAttributes<HTMLDivElement>;
+export type CaseCardWrapperProps = HTMLAttributes<HTMLDivElement>;
 
-export const Wrapper = ({ className, ...props }: WrapperProps) => {
+export const CaseCardWrapper = ({ className, ...props }: CaseCardWrapperProps) => {
   const classNames = clsx('denhaag-case-card__wrapper', className);
   return <div className={classNames} {...props}></div>;
 };
 
-export default Wrapper;
+export default CaseCardWrapper;
