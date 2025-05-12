@@ -3,6 +3,8 @@
     "card-authentication": {
       "background-color": { "value": "{denhaag.color.white}" },
       "border-color": { "value": "{denhaag.color.grey.2}" },
+      "padding-block": { "value": "24px" },
+      "padding-inline": { "value": "24px" },
       "portrait": {
         "max-inline-size": { "value": "362px" },
         "min-block-size": { "value": "415px" },
