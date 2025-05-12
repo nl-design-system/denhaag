@@ -1,6 +1,8 @@
 .denhaag-form-progress {
   display: flex;
   flex-direction: column;
+
+  --denhaag-link-text-decoration: none;
 }
 
 .denhaag-form-progress__header {
