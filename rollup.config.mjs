@@ -93,8 +93,31 @@ function emitCssDts() {
       const dtsSource = `declare const css: string;\nexport default css;\nexport const stylesheet: string;\n`;
       this.emitFile({
         type: 'asset',
-        fileName: 'css.mjs.d.ts',
+        fileName: 'css.d.mts',
         source: dtsSource,
+      });
+    },
+  };
+}
+
+function emitStylesheetLoader() {
+  return {
+    name: 'emit-stylesheet-loader',
+    generateBundle(options, bundle) {
+      const css = bundle['css.mjs'].code;
+      const cssWithoutExport = css.replace(/export\s*{.*};/, '');
+      const constructedStylesheetCode = `const constructedStylesheet = new CSSStyleSheet();\nconstructedStylesheet.replaceSync(stylesheet);\nexport default constructedStylesheet;`;
+
+      this.emitFile({
+        type: 'asset',
+        fileName: 'stylesheet.mjs',
+        source: cssWithoutExport + constructedStylesheetCode,
+      });
+
+      this.emitFile({
+        type: 'asset',
+        fileName: 'stylesheet.d.mts',
+        source: `declare const constructedStylesheet: CSSStyleSheet;\nexport default constructedStylesheet;\n`,
       });
     },
   };
@@ -135,6 +158,7 @@ const configs = [
         inject: false,
       }),
       emitCssDts(),
+      emitStylesheetLoader(),
     ],
   },
 ]

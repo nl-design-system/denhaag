@@ -1,4 +1,4 @@
-import cardCss from '@gemeente-denhaag/card/dist/css.mjs';
+import stylesheet from '@gemeente-denhaag/card/dist/stylesheet.mjs';
 import { escapeXML } from './util.js';
 
 export interface CardData {
@@ -6,11 +6,7 @@ export interface CardData {
   dateTime?: string;
   href: string;
   linkLabel?: string;
-  inactive?: boolean;
 }
-
-const sheet = new CSSStyleSheet();
-sheet.replaceSync(cardCss);
 
 export class DenhaagCaseCardElement extends HTMLElement implements CardData {
   dateTime?: string;
@@ -31,7 +27,7 @@ export class DenhaagCaseCardElement extends HTMLElement implements CardData {
       mode: 'closed',
     });
 
-    this._shadow.adoptedStyleSheets = [sheet];
+    this._shadow.adoptedStyleSheets = [stylesheet];
 
     this._div = this._shadow.appendChild(this.ownerDocument.createElement('div'));
   }
