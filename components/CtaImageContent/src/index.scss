@@ -1,6 +1,7 @@
 .denhaag-cta-image-content {
   --utrecht-paragraph-font-size: var(--denhaag-typography-scale-lg-font-size);
   --utrecht-paragraph-line-height: var(--denhaag-typography-scale-lg-line-height);
+  --denhaag-link-text-decoration: none;
 
   background-color: var(--denhaag-color-white);
   border: var(--denhaag-cta-image-content-border, 1px solid var(--denhaag-color-grey-2));

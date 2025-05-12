@@ -1,5 +1,6 @@
 .denhaag-link-group {
   --denhaag-link-line-height: var(--denhaag-typography-scale-base-line-height);
+  --denhaag-link-text-decoration: none;
 
   @media (min-width: 1114px) {
     --denhaag-link-group-list-margin-block-start: var(--denhaag-space-sm);
@@ -7,10 +8,6 @@
 
   [class^="utrecht-heading-"] {
     --utrecht-space-around: 0; // Sadly we need to reset this on the heading component. Not really a reusable variable.
-  }
-
-  .denhaag-link {
-    text-decoration: none;
   }
 }
 
