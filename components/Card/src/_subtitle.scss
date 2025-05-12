@@ -1,12 +1,11 @@
 .denhaag-case-card__subtitle {
-  --utrecht-space-around: 0 !important;
   --utrecht-paragraph-font-family: var(--denhaag-case-card-subtitle-font-family);
   --utrecht-paragraph-font-size: var(--denhaag-case-card-subtitle-font-size);
   --utrecht-paragraph-font-weight: var(--denhaag-case-card-subtitle-font-weight);
   --utrecht-paragraph-line-height: var(--denhaag-case-card-subtitle-line-height);
   --utrecht-paragraph-color: var(--denhaag-case-card-subtitle-color);
+  --utrecht-paragraph-paragraph-margin-block-start: var(--denhaag-case-card-subtitle-margin-block-start);
 
-  margin-block-start: var(--denhaag-case-card-subtitle-margin-block-start) !important;
   display: -webkit-box;
   line-clamp: 2;
   -webkit-line-clamp: 2;
