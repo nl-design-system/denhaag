@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/iconbutton",
-  "version": "0.2.3-www-denhaag-nl.119",
+  "version": "0.2.3-www-denhaag-nl.120",
   "description": "An IconButton component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "private": false,
@@ -36,7 +36,7 @@
     "react": "^17.0.0"
   },
   "devDependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.119"
+    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.120"
   },
   "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
 }
