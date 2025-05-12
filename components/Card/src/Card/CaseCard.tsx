@@ -11,16 +11,25 @@ import Background from './CaseCardBackground';
 import Context from './CaseCardContext';
 import Container from './CaseCardContainer';
 
+export type CaseCardAppearance = 'default' | 'archived' | 'list';
+
 export interface CaseCardProps {
   title: string;
   subTitle?: string;
   context?: React.ReactNode;
   href?: string;
-  appearance?: 'archived' | 'list';
+  appearance?: CaseCardAppearance;
   Link?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
 }
 
-export const CaseCard = ({ title, subTitle, context, href, appearance, Link = BasicLink }: CaseCardProps) => {
+export const CaseCard = ({
+  title,
+  subTitle,
+  context,
+  href,
+  appearance = 'default',
+  Link = BasicLink,
+}: CaseCardProps) => {
   return (
     <Container>
       <Card appearance={appearance}>

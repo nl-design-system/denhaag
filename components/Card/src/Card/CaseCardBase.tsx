@@ -1,9 +1,10 @@
 import React, { HTMLAttributes } from 'react';
 import '../index.scss';
 import clsx from 'clsx';
+import { CaseCardAppearance } from './CaseCard';
 
 export type CaseCardBaseProps = HTMLAttributes<HTMLDivElement> & {
-  appearance?: 'archived' | 'list';
+  appearance?: CaseCardAppearance;
 };
 
 export const CaseCardBase = ({ appearance, className, ...props }: CaseCardBaseProps) => {
