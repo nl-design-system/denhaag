@@ -7,7 +7,7 @@ export type CaseCardBaseProps = HTMLAttributes<HTMLDivElement> & {
   appearance?: CaseCardAppearance;
 };
 
-export const CaseCardBase = ({ appearance, className, ...props }: CaseCardBaseProps) => {
+export const CaseCardBase = ({ appearance = 'default', className, ...props }: CaseCardBaseProps) => {
   const classNames = clsx(
     'denhaag-case-card',
     {
