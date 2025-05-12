@@ -2,11 +2,11 @@ import React, { HTMLAttributes } from 'react';
 import '../index.scss';
 import clsx from 'clsx';
 
-export type FooterProps = HTMLAttributes<HTMLDivElement>;
+export type CaseCardFooterProps = HTMLAttributes<HTMLDivElement>;
 
-export const Footer = ({ className, ...props }: FooterProps) => {
+export const CaseCardFooter = ({ className, ...props }: CaseCardFooterProps) => {
   const classNames = clsx('denhaag-case-card__footer', className);
   return <div className={classNames} {...props}></div>;
 };
 
-export default Footer;
+export default CaseCardFooter;

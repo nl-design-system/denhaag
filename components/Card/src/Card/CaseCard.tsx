@@ -3,13 +3,13 @@ import { ArrowRightIcon } from '@gemeente-denhaag/icons';
 import { BasicLink } from '@gemeente-denhaag/link';
 import { Paragraph } from '@gemeente-denhaag/typography';
 import '../index.scss';
-import Card from './Card';
-import Footer from './Footer';
-import Action from './Action';
-import Wrapper from './Wrapper';
-import Background from './Background';
-import Context from './Context';
-import Container from './Container';
+import Card from './CaseCardBase';
+import Footer from './CaseCardFooter';
+import Action from './CaseCardAction';
+import Wrapper from './CaseCardWrapper';
+import Background from './CaseCardBackground';
+import Context from './CaseCardContext';
+import Container from './CaseCardContainer';
 
 export interface CaseCardProps {
   title: string;
