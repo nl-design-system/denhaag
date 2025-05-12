@@ -15,7 +15,7 @@ import clsx from 'clsx';
 import MobileMenuLinkLabel from './MobileMenuLinkLabel';
 
 interface NavigationGroupProps {
-  label: string;
+  label?: string;
   href?: string;
   navigation?: Array<NavigationGroupProps>;
   defaultExpanded?: boolean;
@@ -95,10 +95,12 @@ const ExpandedList = ({
 
   return (
     <MobileMenuListItem active={toggle.open}>
-      <MobileMenuButton {...toggle.buttonProps} tabIndex={tabIndex} large>
-        <p className="denhaag-mobile-menu-list-item-button-text">{label}</p>
-        <ChevronDownIcon />
-      </MobileMenuButton>
+      {label && (
+        <MobileMenuButton {...toggle.buttonProps} tabIndex={tabIndex} large>
+          <p className="denhaag-mobile-menu-list-item-button-text">{label}</p>
+          <ChevronDownIcon />
+        </MobileMenuButton>
+      )}
       <MobileMenuList {...toggle.expandableAreaProps} expandable>
         {navigation?.map((l2Nav, key) => {
           if (l2Nav.href) {
@@ -124,12 +126,7 @@ const ExpandedList = ({
   );
 };
 
-export const MobileMenu: React.FC<MobileMenuProps> = ({
-  navigation,
-  languageSwitcherMenu,
-  logoutButton,
-  Link,
-}: MobileMenuProps) => {
+export const MobileMenu = ({ navigation, languageSwitcherMenu, logoutButton, Link }: MobileMenuProps) => {
   const [menuScrolled, setMenuScrolled] = useState(false);
 
   const classNames = clsx('denhaag-mobile-menu', menuScrolled ? 'denhaag-mobile-menu--scrolled' : '');

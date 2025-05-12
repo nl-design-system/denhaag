@@ -1,13 +1,17 @@
 import tokens from '@gemeente-denhaag/design-tokens-components/dist/list.json';
 import { Meta, StoryObj } from '@storybook/react';
-import { headerProps } from '../templates/util';
+import { headerProps, headerFlatMobileMenuProps } from '../templates/util';
 import { HeaderLogic, HeaderLogicProps } from '@gemeente-denhaag/header';
+
+const breadcrumbs = {
+  breadcrumbs: {
+    navigationPath: [{ label: 'Overzicht' }],
+  },
+};
 
 const overviewHeaderProps: HeaderLogicProps = {
   ...headerProps,
-  breadcrumbs: {
-    navigationPath: [{ label: 'Home', href: 'https://denhaag.nl/' }, { label: 'MijnDenHaag' }],
-  },
+  ...breadcrumbs,
 };
 
 const meta = {
@@ -26,3 +30,10 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {};
+
+export const FlatMobileMenu: Story = {
+  args: {
+    ...headerFlatMobileMenuProps,
+    ...breadcrumbs,
+  },
+};

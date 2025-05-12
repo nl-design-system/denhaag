@@ -4,10 +4,14 @@ import './index.scss';
 
 export type HeaderLogoContainerProps = HTMLAttributes<HTMLDivElement>;
 
-export const HeaderLogoContainer: React.FC<HeaderLogoContainerProps> = (props: HeaderLogoContainerProps) => {
-  const classNames = clsx('denhaag-header__logo-container', props.className);
+export const HeaderLogoContainer = ({ children, className, ...props }: HeaderLogoContainerProps) => {
+  const classNames = clsx('denhaag-header__logo-container', className);
 
-  return <div className={classNames}>{props.children}</div>;
+  return (
+    <div className={classNames} {...props}>
+      {children}
+    </div>
+  );
 };
 
 export default HeaderLogoContainer;
