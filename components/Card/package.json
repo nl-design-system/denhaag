@@ -18,9 +18,14 @@
     },
     "./index.css": "./dist/index.css",
     "./dist/css.mjs": {
-      "types": "./dist/mjs/css.mjs.d.ts",
+      "types": "./dist/mjs/css.d.mts",
       "import": "./dist/mjs/css.mjs",
       "default": "./dist/mjs/css.mjs"
+    },
+    "./dist/stylesheet.mjs": {
+      "types": "./dist/mjs/stylesheet.d.mts",
+      "import": "./dist/mjs/stylesheet.mjs",
+      "default": "./dist/mjs/stylesheet.mjs"
     }
   },
   "main": "dist/cjs/index.js",
