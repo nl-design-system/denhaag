@@ -15,7 +15,7 @@ import {
   dateFormatLabels,
   templateLocale,
 } from './util';
-import './Messages-page.scss';
+import './messages.scss';
 import Sidenav from './components/Sidenav';
 import { Action } from '@gemeente-denhaag/action';
 import { ButtonLink } from '@gemeente-denhaag/button-link';
