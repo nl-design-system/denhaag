@@ -1,5 +1,11 @@
 # @gemeente-denhaag/design-tokens-components
 
+## 3.0.0
+
+### Major Changes
+
+- f3721da: Refactor case card component
+
 ## 2.2.0
 
 ### Minor Changes
