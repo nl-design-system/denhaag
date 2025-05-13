@@ -22,6 +22,8 @@
   display: block;
   height: var(--denhaag-image-image-height, auto);
   width: var(--denhaag-image-image-width, 100%);
+  object-fit: var(--denhaag-image-object-fit, cover);
+  object-position: var(--denhaag-image-focal-x, 50%) var(--denhaag-image-focal-y, 50%);
 }
 
 .denhaag-image__figcaption {
