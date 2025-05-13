@@ -42,6 +42,14 @@ const meta: Meta<typeof CaseCard> = {
 
 export default meta;
 
+const decorators = [
+  (Story) => (
+    <div style={{ maxWidth: '360px' }}>
+      <Story />
+    </div>
+  ),
+];
+
 export const Default: Story = {
   args: {
     title: 'Shrimp and Chorizo Paella fwaefawef awef awe',
@@ -49,6 +57,7 @@ export const Default: Story = {
     context: '',
     href: '#',
   },
+  decorators,
 };
 
 export const WithDate: Story = {
@@ -60,6 +69,7 @@ export const WithDate: Story = {
       </time>
     ),
   },
+  decorators,
 };
 
 export const WithCaseNumber: Story = {
@@ -67,10 +77,12 @@ export const WithCaseNumber: Story = {
     ...Default.args,
     context: 'VTH-TEST-2024-02437',
   },
+  decorators,
 };
 
 export const Inactive: Story = {
   args: { ...Default.args, appearance: 'archived' },
+  decorators,
 };
 
 export const InactiveWithDate: Story = {
@@ -83,6 +95,7 @@ export const InactiveWithDate: Story = {
       </time>
     ),
   },
+  decorators,
 };
 
 export const InactiveWithCaseNumber: Story = {
@@ -91,6 +104,7 @@ export const InactiveWithCaseNumber: Story = {
     appearance: 'archived',
     context: 'VTH-TEST-2024-02437',
   },
+  decorators,
 };
 
 export const List: Story = {

@@ -1,5 +1,4 @@
 @mixin list-view {
-  --denhaag-case-card-width: 100%;
   --denhaag-case-card-height: none;
   --denhaag-case-card-background-color: none;
   --denhaag-case-card-padding-block-start: 0px;
@@ -28,7 +27,6 @@
 .denhaag-case-card {
   width: 100%;
   height: var(--denhaag-case-card-height);
-  max-width: var(--denhaag-case-card-width);
   background: var(--denhaag-case-card-background-color);
   padding-block-start: var(--denhaag-case-card-padding-block-start);
   border-radius: var(--denhaag-case-card-border-radius);
