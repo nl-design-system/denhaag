@@ -1,5 +1,25 @@
 # @gemeente-denhaag/storybook
 
+## 3.0.0
+
+### Major Changes
+
+- f3721da: Refactor case card component
+
+### Patch Changes
+
+- Updated dependencies [f3721da]
+  - @gemeente-denhaag/design-tokens-components@3.0.0
+  - @gemeente-denhaag/card@3.0.0
+  - @gemeente-denhaag/typography@2.0.4
+  - @gemeente-denhaag/card-authentication@1.0.6
+  - @gemeente-denhaag/alert@2.0.5
+  - @gemeente-denhaag/contact-timeline@2.0.5
+  - @gemeente-denhaag/cta-image-content@1.0.5
+  - @gemeente-denhaag/header@2.1.1
+  - @gemeente-denhaag/process-steps@2.0.5
+  - @gemeente-denhaag/card-group@1.0.6
+
 ## 2.1.11
 
 ### Patch Changes

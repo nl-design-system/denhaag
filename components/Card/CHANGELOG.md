@@ -1,5 +1,15 @@
 # @gemeente-denhaag/card
 
+## 3.0.0
+
+### Major Changes
+
+- f3721da: Refactor case card component
+
+### Patch Changes
+
+- @gemeente-denhaag/typography@2.0.4
+
 ## 2.0.5
 
 ### Patch Changes
