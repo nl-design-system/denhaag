@@ -19,7 +19,7 @@ import {
 } from './util';
 
 import './template-story.scss';
-import './cases-page.scss';
+import './cases.scss';
 import Sidenav from './components/Sidenav';
 import { formatDate, longDateOptions } from '@gemeente-denhaag/utils';
 
