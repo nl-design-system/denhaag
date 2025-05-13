@@ -1,7 +1,6 @@
 {
   "denhaag": {
     "case-card": {
-      "width": { "value": "364px" },
       "height": { "value": "240px" },
       "border-radius": { "value": "3px" },
       "background-color": { "value": "{denhaag.color.blue.2}" },
