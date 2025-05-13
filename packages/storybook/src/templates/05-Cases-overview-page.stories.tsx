@@ -19,11 +19,13 @@ import {
 } from './util';
 
 import './template-story.scss';
+import './cases-page.scss';
 import Sidenav from './components/Sidenav';
 import { formatDate, longDateOptions } from '@gemeente-denhaag/utils';
 
 const meta = {
   title: 'Templates/Zaak Overzicht',
+  args: { className: 'denhaag-cases-page' },
   parameters: {
     layout: 'fullscreen',
     chromatic: { viewports: [1768, 1280, 768, 360] },
