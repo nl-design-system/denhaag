@@ -38,13 +38,6 @@ const meta: Meta<typeof CaseCard> = {
       },
     },
   },
-  decorators: [
-    (Story) => (
-      <div style={{ maxWidth: '360px' }}>
-        <Story />
-      </div>
-    ),
-  ],
 };
 
 export default meta;
