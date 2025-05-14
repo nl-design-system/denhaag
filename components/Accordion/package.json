@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@gemeente-denhaag/icons": "workspace:*",
-    "@utrecht/focus-ring-css": "2.3.0",
+    "@utrecht/focus-ring-css": "2.3.1",
     "clsx": "2.1.1"
   }
 }
