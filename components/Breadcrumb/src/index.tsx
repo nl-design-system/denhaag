@@ -1,20 +1,23 @@
 import React, { AnchorHTMLAttributes, ComponentType } from 'react';
 import ResponsiveContent from '@gemeente-denhaag/responsive-content';
 import { ChevronRightIcon, HouseIcon } from '@gemeente-denhaag/icons';
-import { BreadcrumbNavigation } from './BreadcrumbNavigation';
+import { BreadcrumbNavigation, BreadcrumbNavigationProps } from './BreadcrumbNavigation';
 import { BreadcrumbListItem } from './BreadcrumbListItem';
 import { BreadcrumbList } from './BreadcrumbList';
 import { BreadcrumbLink } from './BreadcrumbLink';
 import { BreadcrumbText } from './BreadcrumbText';
 
 import './index.scss';
+import clsx from 'clsx';
 
 export interface BreadcrumbItemData {
   label: string;
   href?: string;
+  hover?: boolean;
+  focus?: boolean;
 }
 
-export interface BreadcrumbProps {
+export interface BreadcrumbProps extends BreadcrumbNavigationProps {
   /**
    * The navigation path array of JSON object, which includes a label and url.
    */
@@ -25,19 +28,22 @@ export interface BreadcrumbProps {
    */
   showHomeIcon?: boolean;
 
+  showCurrent?: boolean;
+
   /**
    * Custom Link component used for single-page apps.
    */
   Link?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
 }
 
-export const Breadcrumb: React.FC<BreadcrumbProps> = ({ navigationPath, showHomeIcon, Link }: BreadcrumbProps) => {
-  const nrBreadcrumbItems = navigationPath.length;
-  const listItems = navigationPath.map((item, index) => {
+export const Breadcrumb = ({ navigationPath, showCurrent = true, showHomeIcon, Link, ...props }: BreadcrumbProps) => {
+  const breadcrumbs = showCurrent ? navigationPath : navigationPath.slice(0, -1);
+  const nrBreadcrumbItems = breadcrumbs.length;
+  const mobileIndex = (showCurrent ? nrBreadcrumbItems - 1 : nrBreadcrumbItems) - 1;
+  const listItems = breadcrumbs.map((item, index) => {
     const isFirstItem = index === 0;
     const isLastItem = index === nrBreadcrumbItems - 1;
-    // MobileItem is the item which shows as a backbutton on a small viewport. This is the last item, in case that item has a href. Otherwise, it's the last item with a href. (Without current page vs normal breadcrumbs)
-    const mobileItem = (isLastItem && item.href) || (!isLastItem && !navigationPath[index + 1].href);
+    const mobileItem = index === mobileIndex;
     const shouldCollapseItem = nrBreadcrumbItems > 4 && !isFirstItem && index < nrBreadcrumbItems - 2;
     const contentNumber = index + 1;
 
@@ -54,6 +60,12 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({ navigationPath, showHome
           <BreadcrumbLink
             Link={Link}
             aria-label={isFirstItem && showHomeIcon ? item.label : undefined}
+            aria-current={isLastItem && showCurrent ? 'page' : undefined}
+            className={clsx({
+              'denhaag-breadcrumb__link--disabled': isLastItem && showCurrent,
+              'denhaag-breadcrumb__link--focus': item.focus,
+              'denhaag-breadcrumb__link--hover': item.hover,
+            })}
             href={item.href}
           >
             {isFirstItem && showHomeIcon ? (
@@ -75,7 +87,7 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({ navigationPath, showHome
   });
 
   return (
-    <BreadcrumbNavigation aria-label="Breadcrumb">
+    <BreadcrumbNavigation aria-label="Breadcrumb" {...props}>
       <ResponsiveContent>
         <BreadcrumbList itemScope itemType="https://schema.org/BreadcrumbList">
           {listItems}

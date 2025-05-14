@@ -60,6 +60,13 @@ ol.denhaag-breadcrumb__list {
   text-decoration: var(--denhaag-breadcrumb-link-text-decoration, none);
 }
 
+.denhaag-breadcrumb__link--disabled {
+  --denhaag-breadcrumb-link-color: var(--denhaag-breadcrumb-current-color);
+
+  cursor: none;
+  pointer-events: none;
+}
+
 .denhaag-breadcrumb__link:hover,
 .denhaag-breadcrumb__link--hover {
   --denhaag-breadcrumb-link-color: var(--denhaag-breadcrumb-link-hover-color, inherit);

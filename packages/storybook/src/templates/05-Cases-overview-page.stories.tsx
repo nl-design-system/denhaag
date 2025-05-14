@@ -38,7 +38,7 @@ const zakenHeaderProps: HeaderLogicProps = {
     navigationPath: [
       { label: 'Home', href: 'https://denhaag.nl/' },
       { label: 'MijnDenHaag', href: 'https://denhaag.nl/' },
-      { label: 'Mijn lopende zaken' },
+      { label: 'Mijn lopende zaken', href: 'https://denhaag.nl/' },
     ],
   },
 };
