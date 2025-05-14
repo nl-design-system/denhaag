@@ -1,4 +1,4 @@
-import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{c as a}from"./clsx-B-dksMZM.js";import"./index-DUxwRzBe.js";import"./index-raSRI-5R.js";import"./_commonjsHelpers-BosuxZz1.js";const B=`# Authentication block
+import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{c as a}from"./clsx-B-dksMZM.js";import"./index-CtVCO2hP.js";import"./index-raSRI-5R.js";import"./_commonjsHelpers-BosuxZz1.js";const B=`# Authentication block
 
 This authentication block adequately sends the user an authentication flow necessary to perform a task or action on the website or when logging in. He stands out and offers help if needed. By making the choice between authentication service already on the detail page where the task is listed, you can reduce the number of clicks and place the choice more in the context of the task.
 

@@ -1,4 +1,4 @@
-import"./index-CMBaHEP0.js";import{A as d}from"./CardGroupUtils-Bh0VgJKC.js";import"./jsx-runtime-D_zvdyIk.js";import"./index-6XnYJJGO.js";import"./index-raSRI-5R.js";import"./_commonjsHelpers-BosuxZz1.js";import"./index-Mas5QbYc.js";import"./index-DUxwRzBe.js";import"./index-BNdFKZij.js";import"./index-BiJOcIA0.js";import"./index-CoUGp_r7.js";import"./index-CNu5sYmo.js";import"./clsx-B-dksMZM.js";const g=`# Card Group
+import"./index-CMBaHEP0.js";import{A as d}from"./CardGroupUtils-Beonzhpa.js";import"./jsx-runtime-D_zvdyIk.js";import"./index-6XnYJJGO.js";import"./index-raSRI-5R.js";import"./_commonjsHelpers-BosuxZz1.js";import"./index-Mas5QbYc.js";import"./index-CtVCO2hP.js";import"./index-BNdFKZij.js";import"./index-BiJOcIA0.js";import"./index-CoUGp_r7.js";import"./index-CNu5sYmo.js";import"./clsx-B-dksMZM.js";const g=`# Card Group
 
 ## When to use
 
