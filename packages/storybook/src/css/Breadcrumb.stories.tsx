@@ -3,30 +3,26 @@ import '@gemeente-denhaag/breadcrumb';
 import readme from '../../../../components/Breadcrumb/README.md?raw';
 import Breadcrumb from '@gemeente-denhaag/breadcrumb';
 
-const breadcrumbArgs = (hover = false, focus = false) => ({
-  navigationPath: [
-    {
-      label: 'Home',
-      href: 'https://denhaag.nl',
-      hover: hover,
-      focus: focus,
-    },
-    {
-      label: 'Afval',
-      href: 'https://denhaag.nl/afval',
-    },
-    {
-      label: "Kliko's",
-      href: 'https://denhaag.nl/afval/klikos',
-    },
-  ],
-});
-
 const meta = {
   id: 'css-navigation-breadcrumb',
   title: 'CSS/Navigation/Breadcrumb',
   component: Breadcrumb,
-  args: breadcrumbArgs(),
+  args: {
+    navigationPath: [
+      {
+        label: 'Home',
+        href: 'https://denhaag.nl',
+      },
+      {
+        label: 'Afval',
+        href: 'https://denhaag.nl/afval',
+      },
+      {
+        label: "Kliko's",
+        href: 'https://denhaag.nl/afval/klikos',
+      },
+    ],
+  },
   tags: ['autodocs'],
   parameters: {
     docs: {
@@ -44,14 +40,6 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {};
-
-export const HoveredItem: Story = {
-  args: breadcrumbArgs(true),
-};
-
-export const FocusedItem: Story = {
-  args: breadcrumbArgs(false, true),
-};
 
 export const RTL: Story = {
   args: { ...Default.args, dir: 'rtl' },
@@ -86,10 +74,6 @@ export const Long: Story = {
 
 export const WithIcon: Story = {
   args: { ...Default.args, showHomeIcon: true },
-};
-
-export const WithIconAndFocus: Story = {
-  args: { ...breadcrumbArgs(false, true), showHomeIcon: true },
 };
 
 export const WithoutCurrent: Story = {

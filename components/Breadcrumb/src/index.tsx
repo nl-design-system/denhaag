@@ -13,8 +13,6 @@ import clsx from 'clsx';
 export interface BreadcrumbItemData {
   label: string;
   href?: string;
-  hover?: boolean;
-  focus?: boolean;
 }
 
 export interface BreadcrumbProps extends BreadcrumbNavigationProps {
@@ -63,8 +61,6 @@ export const Breadcrumb = ({ navigationPath, showCurrent = true, showHomeIcon, L
             aria-current={isLastItem && showCurrent ? 'page' : undefined}
             className={clsx({
               'denhaag-breadcrumb__link--disabled': isLastItem && showCurrent,
-              'denhaag-breadcrumb__link--focus': item.focus,
-              'denhaag-breadcrumb__link--hover': item.hover,
             })}
             href={item.href}
           >
