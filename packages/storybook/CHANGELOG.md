@@ -1,5 +1,22 @@
 # @gemeente-denhaag/storybook
 
+## 3.0.1
+
+### Patch Changes
+
+- aed39ad: Case card full width
+- Updated dependencies [aed39ad]
+  - @gemeente-denhaag/design-tokens-components@3.0.1
+  - @gemeente-denhaag/card@3.0.1
+  - @gemeente-denhaag/typography@2.0.5
+  - @gemeente-denhaag/card-authentication@1.0.7
+  - @gemeente-denhaag/alert@2.0.6
+  - @gemeente-denhaag/contact-timeline@2.0.6
+  - @gemeente-denhaag/cta-image-content@1.0.6
+  - @gemeente-denhaag/header@2.1.2
+  - @gemeente-denhaag/process-steps@2.0.6
+  - @gemeente-denhaag/card-group@1.0.7
+
 ## 3.0.0
 
 ### Major Changes

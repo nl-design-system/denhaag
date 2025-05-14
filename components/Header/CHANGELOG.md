@@ -1,5 +1,11 @@
 # @gemeente-denhaag/header
 
+## 2.1.2
+
+### Patch Changes
+
+- @gemeente-denhaag/typography@2.0.5
+
 ## 2.1.1
 
 ### Patch Changes
