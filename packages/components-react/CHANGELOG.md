@@ -1,5 +1,18 @@
 # @gemeente-denhaag/components-react
 
+## 2.0.14
+
+### Patch Changes
+
+- Updated dependencies [aed39ad]
+  - @gemeente-denhaag/card@3.0.1
+  - @gemeente-denhaag/typography@2.0.5
+  - @gemeente-denhaag/alert@2.0.6
+  - @gemeente-denhaag/contact-timeline@2.0.6
+  - @gemeente-denhaag/header@2.1.2
+  - @gemeente-denhaag/process-steps@2.0.6
+  - @gemeente-denhaag/card-group@1.0.7
+
 ## 2.0.13
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @gemeente-denhaag/cta-image-content
 
+## 1.0.6
+
+### Patch Changes
+
+- @gemeente-denhaag/typography@2.0.5
+
 ## 1.0.5
 
 ### Patch Changes

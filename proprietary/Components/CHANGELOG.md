@@ -1,5 +1,11 @@
 # @gemeente-denhaag/design-tokens-components
 
+## 3.0.1
+
+### Patch Changes
+
+- aed39ad: Case card full width
+
 ## 3.0.0
 
 ### Major Changes
