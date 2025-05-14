@@ -1,5 +1,11 @@
 # @gemeente-denhaag/breadcrumb
 
+## 3.0.0
+
+### Major Changes
+
+- 44e0447: Added support for breadcrumbs with and without current, accessibility fix, story refactor
+
 ## 2.0.2
 
 ### Patch Changes

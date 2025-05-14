@@ -1,5 +1,11 @@
 # @gemeente-denhaag/components-react
 
+## 2.0.15
+
+### Patch Changes
+
+- @gemeente-denhaag/header@2.1.3
+
 ## 2.0.14
 
 ### Patch Changes

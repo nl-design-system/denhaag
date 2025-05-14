@@ -1,5 +1,17 @@
 # @gemeente-denhaag/storybook
 
+## 3.1.0
+
+### Minor Changes
+
+- 44e0447: Added support for breadcrumbs with and without current, accessibility fix, story refactor
+
+### Patch Changes
+
+- Updated dependencies [44e0447]
+  - @gemeente-denhaag/breadcrumb@3.0.0
+  - @gemeente-denhaag/header@2.1.3
+
 ## 3.0.1
 
 ### Patch Changes
