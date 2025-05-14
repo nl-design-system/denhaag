@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@gemeente-denhaag/card": "workspace:*",
-    "@utrecht/paragraph-css": "2.3.0"
+    "@utrecht/paragraph-css": "2.3.1"
   },
   "devDependencies": {
     "@nl-design-system/tsconfig": "1.0.3"
