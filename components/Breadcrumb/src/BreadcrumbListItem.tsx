@@ -4,11 +4,7 @@ import './index.scss';
 
 export type BreadcrumbListItemProps = LiHTMLAttributes<HTMLLIElement>;
 
-export const BreadcrumbListItem: React.FC<BreadcrumbListItemProps> = ({
-  hidden,
-  className,
-  ...props
-}: BreadcrumbListItemProps) => {
+export const BreadcrumbListItem = ({ hidden, className, ...props }: BreadcrumbListItemProps) => {
   const classNames = clsx('denhaag-breadcrumb__item', hidden ? 'denhaag-breadcrumb__item--hidden' : '', className);
   return (
     <li {...props} className={classNames}>

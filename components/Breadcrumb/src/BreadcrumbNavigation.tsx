@@ -4,13 +4,9 @@ import './index.scss';
 
 export type BreadcrumbNavigationProps = HTMLAttributes<HTMLDivElement>;
 
-export const BreadcrumbNavigation: React.FC<BreadcrumbNavigationProps> = (props: BreadcrumbNavigationProps) => {
-  const classNames = clsx('denhaag-breadcrumb', props.className);
-  return (
-    <nav aria-label="Breadcrumb" className={classNames}>
-      {props.children}
-    </nav>
-  );
+export const BreadcrumbNavigation = ({ className, ...props }: BreadcrumbNavigationProps) => {
+  const classNames = clsx('denhaag-breadcrumb', className);
+  return <nav aria-label="Breadcrumb" className={classNames} {...props} />;
 };
 
 export default BreadcrumbNavigation;

@@ -23,8 +23,8 @@ const breadcrumbArgs = (hover = false, focus = false) => ({
 });
 
 const meta = {
-  id: 'css-navigation-breadcrumb',
-  title: 'CSS/Navigation/Breadcrumb',
+  id: 'react-navigation-breadcrumb',
+  title: 'React/Navigation/Breadcrumb',
   component: Breadcrumb,
   args: breadcrumbArgs(),
   tags: ['autodocs'],
