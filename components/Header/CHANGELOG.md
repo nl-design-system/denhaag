@@ -1,5 +1,12 @@
 # @gemeente-denhaag/header
 
+## 2.1.3
+
+### Patch Changes
+
+- Updated dependencies [44e0447]
+  - @gemeente-denhaag/breadcrumb@3.0.0
+
 ## 2.1.2
 
 ### Patch Changes
