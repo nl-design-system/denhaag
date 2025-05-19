@@ -1,5 +1,13 @@
 # @gemeente-denhaag/case-card-element
 
+## 1.1.0
+
+### Minor Changes
+
+- ddfefa7: - Added slot for icon
+  - Removed utrecht styles
+  - Add types and created new stylesheet mjs export
+
 ## 1.0.4
 
 ### Patch Changes
