@@ -78,16 +78,6 @@
     var(--denhaag-step-marker-connector-checked-outline-width, var(--denhaag-step-marker-connector-outline-width, 1px));
 }
 
-/* procedure specific styling */
-.denhaag-procedure__heading {
-  font-family: var(--denhaag-procedure-heading-font-family, var(--denhaag-typography-sans-serif-alternate-font-family));
-  font-weight: var(--denhaag-procedure-heading-font-weight, var(--denhaag-typography-weight-bold));
-  font-size: var(--denhaag-procedure-heading-font-size, var(--denhaag-typography-scale-2xl-font-size));
-  line-height: var(--denhaag-procedure-heading-line-height, var(--denhaag-typography-scale-s-line-height));
-  margin-block-end: var(--denhaag-procedure-heading-margin-block-end, var(--denhaag-space-xl));
-  margin-block-start: var(--denhaag-procedure-heading-margin-block-start, 0);
-}
-
 .denhaag-procedure .denhaag-process-steps__step-header {
   cursor: unset;
 }

@@ -44,22 +44,6 @@
   padding-block-start: var(--denhaag-conditions-subheader-padding-block-start-s, var(--denhaag-space-xl));
 }
 
-.denhaag-conditions__title {
-  --denhaag-typography-scale-base-font-size: var(
-    --denhaag-conditions-title-font-size,
-    var(--denhaag-typography-scale-2xl-font-size)
-  );
-  --denhaag-list-subheader-color: var(--denhaag-conditions-title-color, var(--denhaag-color-green-5));
-  --denhaag-typography-sans-serif-font-family: var(
-    --denhaag-conditions-title-font-family,
-    var(--denhaag-typography-sans-serif-alternate-font-family)
-  );
-  --denhaag-list-subheader-line-height: var(
-    --denhaag-conditions-title-line-height,
-    var(--denhaag-typography-scale-lg-line-height)
-  );
-}
-
 .denhaag-list.denhaag-conditions__list {
   padding-block-end: var(--denhaag-conditions-list-padding-block-end, var(--denhaag-space-sm));
 }
