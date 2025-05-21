@@ -170,6 +170,7 @@
   color: var(--denhaag-link-grid-action-color, var(--denhaag-color-blue-3));
   transition: var(--denhaag-link-grid-action-transition, transform 35ms ease-in-out);
   transform: translateX(4px);
+  pointer-events: none;
 }
 
 .denhaag-link-grid__item--hover {
