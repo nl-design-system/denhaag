@@ -1,0 +1,24 @@
+.denhaag-theme {
+  --denhaag-container-inline-size: calc(100% - var(--denhaag-space-4xl)); // 100% - 48px
+  --denhaag-container-max-inline-size: calc(
+    120rem - (3 * var(--denhaag-space-5xl) + var(--denhaag-space-xs))
+  ); // 1920px - 200px
+
+  @media (min-width: 768px) {
+    --denhaag-container-inline-size: calc(
+      100% - (var(--denhaag-space-4xl) + var(--denhaag-space-3xl) + var(--denhaag-space-2xl))
+    ); // 100% - 120px
+  }
+
+  @media (min-width: 1280px) {
+    --denhaag-container-inline-size: calc(
+      100% - (3 * var(--denhaag-space-5xl) + var(--denhaag-space-xs))
+    ); // 100% - 200px
+  }
+}
+
+.denhaag-container {
+  box-sizing: border-box;
+  inline-size: min(var(--denhaag-container-inline-size), var(--denhaag-container-max-inline-size));
+  margin-inline: auto;
+}

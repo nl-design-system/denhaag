@@ -20,11 +20,6 @@
 }
 
 .denhaag-header__container {
-  margin-inline-end: auto;
-  margin-inline-start: auto;
-  padding-inline: var(--denhaag-header-grid-gutter, var(--denhaag-space-xs));
-  width: min(var(--denhaag-header-max-width, 100%), 100%);
-  max-width: var(--denhaag-header-max-width, 100%);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -44,9 +39,6 @@
   @media (min-width: 1024px) {
     --denhaag-header-grid-gutter: var(--denhaag-space-xl);
     --denhaag-header-max-width: 56.5rem;
-
-    padding-inline-end: 0;
-    padding-inline-start: 0;
   }
 
   @media (min-width: 1280px) {
