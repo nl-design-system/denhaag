@@ -33,6 +33,6 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "devDependencies": {
-    "@gemeente-denhaag/container": "0.2.3-www-denhaag-nl.123"
+    "@gemeente-denhaag/container": "0.2.3-www-denhaag-nl.125"
   }
 }
