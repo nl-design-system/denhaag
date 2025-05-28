@@ -10,6 +10,11 @@
 
   background-color: var(--denhaag-conditions-background-color, #f9fbf9); // 15% of var(--denhaag-color-green-1).
   border-block-start: var(--denhaag-space-xs) solid var(--denhaag-conditions-variant-color);
+
+  [class*="utrecht-heading-"] + & {
+    --denhaag-list-wrapper-margin-block-start: var(--denhaag-space-md);
+    --denhaag-list-wrapper-margin-block: var(--denhaag-list-wrapper-margin-block-start) var(--denhaag-space-xs);
+  }
 }
 
 .denhaag-conditions__label-container {
@@ -42,22 +47,6 @@
 
 .denhaag-conditions .denhaag-list__subheader {
   padding-block-start: var(--denhaag-conditions-subheader-padding-block-start-s, var(--denhaag-space-xl));
-}
-
-.denhaag-conditions__title {
-  --denhaag-typography-scale-base-font-size: var(
-    --denhaag-conditions-title-font-size,
-    var(--denhaag-typography-scale-2xl-font-size)
-  );
-  --denhaag-list-subheader-color: var(--denhaag-conditions-title-color, var(--denhaag-color-green-5));
-  --denhaag-typography-sans-serif-font-family: var(
-    --denhaag-conditions-title-font-family,
-    var(--denhaag-typography-sans-serif-alternate-font-family)
-  );
-  --denhaag-list-subheader-line-height: var(
-    --denhaag-conditions-title-line-height,
-    var(--denhaag-typography-scale-lg-line-height)
-  );
 }
 
 .denhaag-list.denhaag-conditions__list {

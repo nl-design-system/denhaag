@@ -163,13 +163,14 @@
 }
 
 .denhaag-link-grid__item-action {
+  color: var(--denhaag-link-grid-action-color, var(--denhaag-color-blue-3));
   display: flex;
   justify-content: flex-end;
-  width: 100%;
   margin-block-start: var(--denhaag-link-grid-action-margin-block-start, var(--denhaag-space-md));
-  color: var(--denhaag-link-grid-action-color, var(--denhaag-color-blue-3));
+  pointer-events: none; // Disabling pointer events to allow the link to be clickable
   transition: var(--denhaag-link-grid-action-transition, transform 35ms ease-in-out);
   transform: translateX(4px);
+  width: 100%;
 }
 
 .denhaag-link-grid__item--hover {
