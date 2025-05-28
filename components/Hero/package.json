@@ -31,5 +31,8 @@
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+  },
+  "devDependencies": {
+    "@gemeente-denhaag/container": "0.2.3-www-denhaag-nl.123"
   }
 }
