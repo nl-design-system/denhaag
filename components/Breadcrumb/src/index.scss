@@ -85,7 +85,6 @@ ol.denhaag-breadcrumb__list {
   outline: var(--denhaag-focus-border);
 }
 
-.denhaag-breadcrumb__link--current .denhaag-breadcrumb__link,
 .denhaag-breadcrumb__item:last-child .denhaag-breadcrumb__link {
   pointer-events: bounding-box;
 }
@@ -104,12 +103,6 @@ ol.denhaag-breadcrumb__list {
     --denhaag-breadcrumb-dots-hover-background-color,
     var(--denhaag-color-grey-2)
   );
-}
-
-.denhaag-breadcrumb__link--current,
-.denhaag-breadcrumb__link.denhaag-link--current,
-.denhaag-breadcrumb__item:last-child > .denhaag-breadcrumb__link {
-  --denhaag-breadcrumb-link-color: var(--denhaag-breadcrumb-current-color, var(--denhaag-color-grey-4));
 }
 
 // SVG for the separator.
@@ -136,6 +129,10 @@ ol.denhaag-breadcrumb__list {
   position: var(--denhaag-breadcrumb-text-position, relative); // absolute on hidden items.
   text-overflow: var(--denhaag-breadcrumb-text-text-overflow, ellipsis);
   white-space: var(--denhaag-breadcrumb-text-white-space, nowrap);
+}
+
+.denhaag-breadcrumb__item > .denhaag-breadcrumb__text {
+  padding-inline-start: var(--denhaag-breadcrumb-spacing, var(--denhaag-space-2xs));
 }
 
 .denhaag-breadcrumb__item--hidden .denhaag-breadcrumb__text {
