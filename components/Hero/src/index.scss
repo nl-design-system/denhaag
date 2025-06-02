@@ -82,20 +82,6 @@
   position: relative;
 }
 
-.denhaag-hero__container {
-  display: grid;
-  grid-auto-flow: dense;
-  grid-gap: var(--denhaag-hero-container-gutter, var(--denhaag-space-xs));
-  grid-template-columns: repeat(var(--denhaag-hero-columns, 12), 1fr);
-  margin-inline: auto;
-  max-width: var(--denhaag-hero-container-max-width, 100%);
-  padding-block-end: var(--denhaag-hero-container-padding-block-end);
-  padding-block-start: var(--denhaag-hero-container-padding-block-start);
-  padding-inline: var(--denhaag-hero-container-padding, var(--denhaag-space-xl));
-  position: relative;
-  width: 100%;
-}
-
 .denhaag-hero__content {
   align-self: var(--denhaag-hero-content-align-self, center);
   grid-column-start: var(--denhaag-hero-content-column-start, 1);
