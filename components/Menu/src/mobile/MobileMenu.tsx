@@ -54,9 +54,7 @@ const ExpandedListItem = ({ label, navigation, Link, scrollMenu, tabIndex }: Exp
             onClick={toggle.toggleState}
             className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start denhaag-mobile-menu-list-submenu__back-button"
           >
-            <span className="denhaag-link__icon">
-              <ArrowLeftIcon />
-            </span>
+            <ArrowLeftIcon className="denhaag-link__icon" />
             <span className="denhaag-link__label">Terug</span>
           </button>
           <span className="denhaag-mobile-menu-list-submenu-title">{label}</span>

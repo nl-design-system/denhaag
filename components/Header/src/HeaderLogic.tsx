@@ -158,9 +158,7 @@ export const HeaderLogic = ({
               href={navigationLink.href}
               className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
             >
-              <span className="denhaag-link__icon">
-                <ArrowRightIcon />
-              </span>
+              <ArrowRightIcon className="denhaag-link__icon" />
               <span>{navigationLink.label}</span>
             </CustomLink>
           ) : (
