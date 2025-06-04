@@ -23,8 +23,8 @@
 
 .denhaag-link-grid__background-image {
   position: absolute;
-  top: 0;
-  right: 0;
+  inset-block: 0;
+  inset-inline-end: 0;
   width: var(--denhaag-link-grid-background-image-width, 41.66%);
   height: 100%;
   object-fit: cover;
