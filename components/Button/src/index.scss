@@ -215,11 +215,11 @@
   );
 }
 
-.denhaag-button__icon > *:first-child {
+.denhaag-icon.denhaag-button__icon > *:first-child {
   font-size: var(--denhaag-typography-scale-lg-font-size);
 }
 
-.denhaag-button--large .denhaag-button__icon > *:first-child {
+.denhaag-button--large .denhaag-icon.denhaag-button__icon > *:first-child {
   font-size: var(--denhaag-typography-scale-xl-font-size);
 }
 
@@ -231,6 +231,6 @@
   padding-inline-end: var(--denhaag-button-medium-size-padding-inline);
 }
 
-.denhaag-button--icon-only .denhaag-button__icon {
+.denhaag-button--icon-only .denhaag-icon.denhaag-button__icon {
   height: var(--denhaag-button-icon-only-icon-height);
 }

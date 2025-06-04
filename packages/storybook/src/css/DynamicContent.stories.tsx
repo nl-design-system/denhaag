@@ -45,7 +45,7 @@ export const Default: Story = {
             </div>
             <svg
               aria-hidden="true"
-              className="denhaag-icon"
+              className="denhaag-icon denhaag-link__icon"
               focusable="false"
               height="1em"
               viewBox="0 0 24 24"
@@ -78,7 +78,7 @@ export const Default: Story = {
             </div>
             <svg
               aria-hidden="true"
-              className="denhaag-icon"
+              className="denhaag-icon denhaag-link__icon"
               focusable="false"
               height="1em"
               viewBox="0 0 24 24"
@@ -111,7 +111,7 @@ export const Default: Story = {
             </div>
             <svg
               aria-hidden="true"
-              className="denhaag-icon"
+              className="denhaag-icon denhaag-link__icon"
               focusable="false"
               height="1em"
               viewBox="0 0 24 24"
@@ -144,7 +144,7 @@ export const Default: Story = {
             </div>
             <svg
               aria-hidden="true"
-              className="denhaag-icon"
+              className="denhaag-icon denhaag-link__icon"
               focusable="false"
               height="1em"
               viewBox="0 0 24 24"
@@ -177,7 +177,7 @@ export const Default: Story = {
             </div>
             <svg
               aria-hidden="true"
-              className="denhaag-icon"
+              className="denhaag-icon denhaag-link__icon"
               focusable="false"
               height="1em"
               viewBox="0 0 24 24"
@@ -210,7 +210,7 @@ export const Default: Story = {
             </div>
             <svg
               aria-hidden="true"
-              className="denhaag-icon"
+              className="denhaag-icon denhaag-link__icon"
               focusable="false"
               height="1em"
               viewBox="0 0 24 24"
@@ -238,22 +238,20 @@ export const List: Story = {
           className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
           title="Proin vel purus posuere elit gravida pellentesque."
         >
-          <span className="denhaag-link__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-link__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
           <span className="denhaag-link__label">Proin vel purus posuere elit gravida pellentesque.</span>
         </a>
         <a
@@ -261,22 +259,20 @@ export const List: Story = {
           className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start denhaag-link--hover"
           title="Mauris pharetra luctus nulla, at tristique nulla cursus."
         >
-          <span className="denhaag-link__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-link__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
           <span className="denhaag-link__label">Mauris pharetra luctus nulla, at tristique nulla cursus.</span>
         </a>
         <a
@@ -284,22 +280,20 @@ export const List: Story = {
           className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start denhaag-link--focus"
           title="Example link"
         >
-          <span className="denhaag-link__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-link__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
           <span className="denhaag-link__label">Example link</span>
         </a>
         <a
@@ -307,22 +301,20 @@ export const List: Story = {
           className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
           title="Example link"
         >
-          <span className="denhaag-link__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-link__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
           <span className="denhaag-link__label">Example link</span>
         </a>
         <a
@@ -330,22 +322,20 @@ export const List: Story = {
           className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
           title="Example link"
         >
-          <span className="denhaag-link__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-link__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
           <span className="denhaag-link__label">Example link</span>
         </a>
         <a
@@ -353,22 +343,20 @@ export const List: Story = {
           className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
           title="Example link"
         >
-          <span className="denhaag-link__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-link__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
           <span className="denhaag-link__label">Example link</span>
         </a>
         <a
@@ -376,22 +364,20 @@ export const List: Story = {
           className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
           title="Sed in ante convallis, aliquet ante imperdiet."
         >
-          <span className="denhaag-link__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-link__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
           <span className="denhaag-link__label">Sed in ante convallis, aliquet ante imperdiet.</span>
         </a>
         <a
@@ -399,22 +385,20 @@ export const List: Story = {
           className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
           title="Example link"
         >
-          <span className="denhaag-link__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-link__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
           <span className="denhaag-link__label">Example link</span>
         </a>
         <a
@@ -422,22 +406,20 @@ export const List: Story = {
           className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
           title="Example link"
         >
-          <span className="denhaag-link__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-link__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
           <span className="denhaag-link__label">Example link</span>
         </a>
         <a
@@ -445,22 +427,20 @@ export const List: Story = {
           className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
           title="Sed in ante convallis, aliquet ante imperdiet."
         >
-          <span className="denhaag-link__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-link__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
           <span className="denhaag-link__label">Sed in ante convallis, aliquet ante imperdiet.</span>
         </a>
         <a
@@ -468,22 +448,20 @@ export const List: Story = {
           className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
           title="Example link"
         >
-          <span className="denhaag-link__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-link__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
           <span className="denhaag-link__label">Example link</span>
         </a>
         <a
@@ -491,22 +469,20 @@ export const List: Story = {
           className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
           title="Phasellus cursus pulvinar lacus et."
         >
-          <span className="denhaag-link__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-link__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
           <span className="denhaag-link__label">Phasellus cursus pulvinar lacus et.</span>
         </a>
         <a
@@ -514,22 +490,20 @@ export const List: Story = {
           className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
           title="Example link"
         >
-          <span className="denhaag-link__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-link__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
           <span className="denhaag-link__label">Example link</span>
         </a>
         <a
@@ -537,22 +511,20 @@ export const List: Story = {
           className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
           title="Phasellus cursus pulvinar lacus et."
         >
-          <span className="denhaag-link__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-link__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
           <span className="denhaag-link__label">Phasellus cursus pulvinar lacus et.</span>
         </a>
       </div>
@@ -569,22 +541,20 @@ export const ListMultipleColumns: Story = {
           className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
           title="Proin vel purus posuere elit gravida pellentesque."
         >
-          <span className="denhaag-link__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-link__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
           <span className="denhaag-link__label">Proin vel purus posuere elit gravida pellentesque.</span>
         </a>
         <a
@@ -592,22 +562,20 @@ export const ListMultipleColumns: Story = {
           className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start denhaag-link--hover"
           title="Mauris pharetra luctus nulla, at tristique nulla cursus."
         >
-          <span className="denhaag-link__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-link__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
           <span className="denhaag-link__label">Mauris pharetra luctus nulla, at tristique nulla cursus.</span>
         </a>
         <a
@@ -615,22 +583,20 @@ export const ListMultipleColumns: Story = {
           className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start denhaag-link--focus"
           title="Example link"
         >
-          <span className="denhaag-link__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-link__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
           <span className="denhaag-link__label">Example link</span>
         </a>
         <a
@@ -638,22 +604,20 @@ export const ListMultipleColumns: Story = {
           className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
           title="Example link"
         >
-          <span className="denhaag-link__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-link__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
           <span className="denhaag-link__label">Example link</span>
         </a>
         <a
@@ -661,22 +625,20 @@ export const ListMultipleColumns: Story = {
           className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
           title="Example link"
         >
-          <span className="denhaag-link__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-link__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
           <span className="denhaag-link__label">Example link</span>
         </a>
         <a
@@ -684,22 +646,20 @@ export const ListMultipleColumns: Story = {
           className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
           title="Example link"
         >
-          <span className="denhaag-link__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-link__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
           <span className="denhaag-link__label">Example link</span>
         </a>
         <a
@@ -707,22 +667,20 @@ export const ListMultipleColumns: Story = {
           className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
           title="Sed in ante convallis, aliquet ante imperdiet."
         >
-          <span className="denhaag-link__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-link__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
           <span className="denhaag-link__label">Sed in ante convallis, aliquet ante imperdiet.</span>
         </a>
         <a
@@ -730,22 +688,20 @@ export const ListMultipleColumns: Story = {
           className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
           title="Example link"
         >
-          <span className="denhaag-link__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-link__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
           <span className="denhaag-link__label">Example link</span>
         </a>
         <a
@@ -753,22 +709,20 @@ export const ListMultipleColumns: Story = {
           className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
           title="Example link"
         >
-          <span className="denhaag-link__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-link__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
           <span className="denhaag-link__label">Example link</span>
         </a>
         <a
@@ -776,22 +730,20 @@ export const ListMultipleColumns: Story = {
           className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
           title="Sed in ante convallis, aliquet ante imperdiet."
         >
-          <span className="denhaag-link__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-link__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
           <span className="denhaag-link__label">Sed in ante convallis, aliquet ante imperdiet.</span>
         </a>
         <a
@@ -799,22 +751,20 @@ export const ListMultipleColumns: Story = {
           className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
           title="Example link"
         >
-          <span className="denhaag-link__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-link__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
           <span className="denhaag-link__label">Example link</span>
         </a>
         <a
@@ -822,22 +772,20 @@ export const ListMultipleColumns: Story = {
           className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
           title="Phasellus cursus pulvinar lacus et."
         >
-          <span className="denhaag-link__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-link__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
           <span className="denhaag-link__label">Phasellus cursus pulvinar lacus et.</span>
         </a>
         <a
@@ -845,22 +793,20 @@ export const ListMultipleColumns: Story = {
           className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
           title="Example link"
         >
-          <span className="denhaag-link__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-link__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
           <span className="denhaag-link__label">Example link</span>
         </a>
         <a
@@ -868,22 +814,20 @@ export const ListMultipleColumns: Story = {
           className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
           title="Phasellus cursus pulvinar lacus et."
         >
-          <span className="denhaag-link__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-link__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
           <span className="denhaag-link__label">Phasellus cursus pulvinar lacus et.</span>
         </a>
       </div>
@@ -914,7 +858,7 @@ export const Pagination: Story = {
             </div>
             <svg
               aria-hidden="true"
-              className="denhaag-icon"
+              className="denhaag-icon denhaag-link__icon"
               focusable="false"
               height="1em"
               viewBox="0 0 24 24"
@@ -947,7 +891,7 @@ export const Pagination: Story = {
             </div>
             <svg
               aria-hidden="true"
-              className="denhaag-icon"
+              className="denhaag-icon denhaag-link__icon"
               focusable="false"
               height="1em"
               viewBox="0 0 24 24"
@@ -980,7 +924,7 @@ export const Pagination: Story = {
             </div>
             <svg
               aria-hidden="true"
-              className="denhaag-icon"
+              className="denhaag-icon denhaag-link__icon"
               focusable="false"
               height="1em"
               viewBox="0 0 24 24"
@@ -1013,7 +957,7 @@ export const Pagination: Story = {
             </div>
             <svg
               aria-hidden="true"
-              className="denhaag-icon"
+              className="denhaag-icon denhaag-link__icon"
               focusable="false"
               height="1em"
               viewBox="0 0 24 24"
@@ -1046,7 +990,7 @@ export const Pagination: Story = {
             </div>
             <svg
               aria-hidden="true"
-              className="denhaag-icon"
+              className="denhaag-icon denhaag-link__icon"
               focusable="false"
               height="1em"
               viewBox="0 0 24 24"
@@ -1079,7 +1023,7 @@ export const Pagination: Story = {
             </div>
             <svg
               aria-hidden="true"
-              className="denhaag-icon"
+              className="denhaag-icon denhaag-link__icon"
               focusable="false"
               height="1em"
               viewBox="0 0 24 24"
@@ -1102,7 +1046,7 @@ export const Pagination: Story = {
         >
           <svg
             aria-hidden="true"
-            className="denhaag-icon"
+            className="denhaag-icon denhaag-link__icon"
             fill="none"
             height="1em"
             viewBox="0 0 7 12"
@@ -1144,7 +1088,7 @@ export const Pagination: Story = {
         >
           <svg
             aria-hidden="true"
-            className="denhaag-icon"
+            className="denhaag-icon denhaag-link__icon"
             fill="none"
             height="1em"
             viewBox="0 0 7 12"

@@ -34,15 +34,11 @@ export const Link = ({
     props.className,
   );
 
-  const iconClassName = clsx('denhaag-link__icon');
-
-  const iconWrapped = <span className={iconClassName}>{icon}</span>;
-
   return (
     <Link tabIndex={disabled ? -1 : tabIndex} {...props} className={rootClassNames}>
-      {icon !== undefined && iconAlign === 'start' ? iconWrapped : ''}
-      <span>{children}</span>
-      {icon !== undefined && iconAlign === 'end' ? iconWrapped : ''}
+      {icon !== undefined && iconAlign === 'start' ? icon : ''}
+      {children}
+      {icon !== undefined && iconAlign === 'end' ? icon : ''}
     </Link>
   );
 };

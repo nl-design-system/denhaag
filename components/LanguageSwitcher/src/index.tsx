@@ -1,11 +1,11 @@
-import React, { AnchorHTMLAttributes } from 'react';
+import React, { AnchorHTMLAttributes, ComponentType } from 'react';
 import LanguageSwitcher from './LanguageSwitcher';
 import './index.scss';
 import LanguageSwitcherTitle from './LanguageSwitcherTitle';
 import LanguageSwitcherList from './LanguageSwitcherList';
 import LanguageSwitcherListItem from './LanguageSwitcherListItem';
-import LanguageSwitcherLink, { Link } from './LanguageSwitcherLink';
 import { ArrowRightIcon, CheckedIcon } from '@gemeente-denhaag/icons';
+import Link from '@gemeente-denhaag/link';
 import { LinkButton } from '@utrecht/component-library-react';
 import clsx from 'clsx';
 
@@ -21,7 +21,7 @@ export interface LanguageSwitcherLogicProps {
   languages: Array<Language>;
   mobileMenuScrolled?: boolean;
   variant?: 'link' | 'button';
-  Link?: Link;
+  LinkComponent?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
   onLanguageChange?: (language: string) => void;
 }
 
@@ -30,20 +30,16 @@ interface ListItemContentProps extends Language {
 }
 
 const ListItemContent = ({ variant, label, active }: ListItemContentProps) => {
-  const className = variant === 'link' ? 'denhaag-link__icon' : 'utrecht-icon';
+  const classNames = clsx('denhaag-language-switcher-icon', {
+    'denhaag-link__icon': variant === 'link',
+    'utrecht-icon': variant === 'button',
+  });
+
   return (
     <>
-      {!active && (
-        <span className={className}>
-          <ArrowRightIcon className="denhaag-language-switcher-icon" />
-        </span>
-      )}
+      {!active && <ArrowRightIcon className={classNames} />}
       <span>{label}</span>
-      {active && (
-        <span className={className}>
-          <CheckedIcon className="denhaag-language-switcher-icon" />
-        </span>
-      )}
+      {active && <CheckedIcon className={classNames} />}
     </>
   );
 };
@@ -53,7 +49,7 @@ export const LanguageSwitcherLogic = ({
   languages = [],
   mobileMenuScrolled,
   variant = 'link',
-  Link,
+  LinkComponent,
   onLanguageChange,
 }: LanguageSwitcherLogicProps) => {
   const languageListContent = languages.map((language, key) => {
@@ -81,9 +77,9 @@ export const LanguageSwitcherLogic = ({
     return (
       <LanguageSwitcherListItem key={key}>
         {variant === 'link' ? (
-          <LanguageSwitcherLink Link={Link} tabIndex={tabIndex} {...language.linkProps} className={linkClassNames}>
+          <Link Link={LinkComponent} tabIndex={tabIndex} {...language.linkProps} className={linkClassNames}>
             <ListItemContent {...language} variant={variant} />
-          </LanguageSwitcherLink>
+          </Link>
         ) : (
           <LinkButton
             className={buttonClassNames}

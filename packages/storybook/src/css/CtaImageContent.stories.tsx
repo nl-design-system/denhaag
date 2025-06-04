@@ -41,19 +41,17 @@ export const Default: Story = {
           className="denhaag-button denhaag-button--large denhaag-button--end-icon denhaag-cta-image-content__button"
         >
           Link text
-          <span className="denhaag-button__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" />
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-button__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" />
+          </svg>
         </a>
       </div>
     </div>
@@ -79,19 +77,17 @@ export const Filled: Story = {
           className="denhaag-button denhaag-button--large denhaag-button--end-icon denhaag-cta-image-content__button"
         >
           Link text
-          <span className="denhaag-button__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" />
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-button__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" />
+          </svg>
         </a>
       </div>
     </div>
@@ -136,19 +132,17 @@ export const Focus: Story = {
           className="denhaag-button denhaag-button--large denhaag-button--end-icon denhaag-cta-image-content__button"
         >
           Link text
-          <span className="denhaag-button__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" />
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-button__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" />
+          </svg>
         </a>
       </div>
     </div>
@@ -174,19 +168,17 @@ export const Hover: Story = {
           className="denhaag-button denhaag-button--large denhaag-button--end-icon denhaag-cta-image-content__button"
         >
           Link text
-          <span className="denhaag-button__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" />
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-button__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" />
+          </svg>
         </a>
       </div>
     </div>
@@ -214,19 +206,17 @@ export const Small: Story = {
           className="denhaag-button denhaag-button--large denhaag-button--end-icon denhaag-cta-image-content__button"
         >
           Link text
-          <span className="denhaag-button__icon">
-            <svg
-              aria-hidden="true"
-              className="denhaag-icon"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" />
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="denhaag-icon denhaag-button__icon"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" />
+          </svg>
         </a>
       </div>
     </div>
