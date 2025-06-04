@@ -23,8 +23,8 @@
 
 .denhaag-link-grid__background-image {
   position: absolute;
-  top: 0;
-  right: 0;
+  inset-block: 0;
+  inset-inline-end: 0;
   width: var(--denhaag-link-grid-background-image-width, 41.66%);
   height: 100%;
   object-fit: cover;
@@ -145,12 +145,9 @@
 }
 
 .denhaag-link-grid__item-link::after {
-  position: absolute;
   content: "";
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  inset: 0;
+  position: absolute;
 }
 
 .denhaag-link-grid__item-title {
@@ -181,10 +178,10 @@
   }
 }
 
-.denhaag-link-grid__item--focus {
+.denhaag-link-grid__item:has(:focus-visible) {
   background-color: var(--denhaag-link-grid-item-focus-background-color, var(--denhaag-color-blue-1));
-  border: var(--denhaag-link-grid-item-focus-border, var(--denhaag-space-3xs) dashed)
-    var(--denhaag-link-grid-item-focus-border-color, var(--denhaag-color-ocher-5)) !important;
+  outline: var(--denhaag-focus-border);
+  z-index: 1;
 
   .denhaag-link-grid__item-action {
     transform: translateX(12px);
@@ -194,16 +191,6 @@
 .denhaag-link-grid__item:hover {
   background-color: var(--denhaag-link-grid-item-hover-background-color, var(--denhaag-color-blue-1));
   cursor: pointer;
-
-  .denhaag-link-grid__item-action {
-    transform: translateX(12px);
-  }
-}
-
-.denhaag-link-grid__item:focus-visible {
-  background-color: var(--denhaag-link-grid-item-focus-background-color, var(--denhaag-color-blue-1));
-  border: var(--denhaag-link-grid-item-focus-border, var(--denhaag-space-3xs) dashed)
-    var(--denhaag-link-grid-item-focus-border-color, var(--denhaag-color-ocher-5)) !important;
 
   .denhaag-link-grid__item-action {
     transform: translateX(12px);
