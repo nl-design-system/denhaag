@@ -1,24 +1,25 @@
-import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import LinkList, { LinkListItem } from '@gemeente-denhaag/link-list';
+import LinkList, { LinkListProps } from '@gemeente-denhaag/link-list';
 
 import readme from '../../../../components/LinkList/README.md?raw';
 
 const exampleArgs = {
-  children: (
-    <>
-      <LinkListItem>
-        <a href="#example">Link 1</a>
-      </LinkListItem>
-      <LinkListItem>
-        <a href="#example">Link 2</a>
-      </LinkListItem>
-      <LinkListItem>
-        <a href="#example">Link 3</a>
-      </LinkListItem>
-    </>
-  ),
-};
+  items: [
+    {
+      label: 'Link internal 1',
+      href: '#example',
+    },
+    {
+      label: 'Link external',
+      href: '#example',
+      external: true,
+    },
+    {
+      label: 'Link internal 2',
+      href: '#example',
+    },
+  ],
+} as LinkListProps;
 
 const meta = {
   id: 'react-navigation-link-list',
