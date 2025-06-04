@@ -50,16 +50,16 @@
   padding-block-end: var(--denhaag-link-group-link-with-icon-start-padding-block-end);
 }
 
-// .denhaag-link-group .denhaag-link__icon {
-//   font-size: var(--denhaag-link-group-link-icon-font-size);
-//   width: var(--denhaag-link-group-link-icon-width);
-// }
+.denhaag-link-group .denhaag-link__icon {
+  font-size: var(--denhaag-link-group-link-icon-font-size);
+  width: var(--denhaag-link-group-link-icon-width);
+}
 
-// .denhaag-link-group .denhaag-link__icon .denhaag-icon {
-//   align-self: var(--denhaag-link-group-link-icon-denhaag-icon-align-self);
-//   padding-block-start: var(--denhaag-link-group-link-icon-denhaag-icon-padding-block-start);
-//   height: var(--denhaag-link-group-link-icon-denhaag-icon-height);
-// }
+.denhaag-link-group .denhaag-link__icon .denhaag-icon {
+  align-self: var(--denhaag-link-group-link-icon-denhaag-icon-align-self);
+  padding-block-start: var(--denhaag-link-group-link-icon-denhaag-icon-padding-block-start);
+  height: var(--denhaag-link-group-link-icon-denhaag-icon-height);
+}
 
 .denhaag-link-group--dark .denhaag-link-group__caption {
   color: var(--denhaag-link-group-dark-caption-color);

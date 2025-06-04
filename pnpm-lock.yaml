@@ -792,12 +792,6 @@ importers:
 
   components/LinkList:
     dependencies:
-      '@gemeente-denhaag/icons':
-        specifier: workspace:*
-        version: link:../Icons
-      '@gemeente-denhaag/link':
-        specifier: workspace:*
-        version: link:../Link
       '@utrecht/component-library-react':
         specifier: 9.0.1
         version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
