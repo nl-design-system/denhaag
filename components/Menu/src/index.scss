@@ -93,9 +93,9 @@
       padding-inline-end: var(--denhaag-mobile-menu-list-submenu-back-button-padding-inline-end);
       padding-inline-start: var(--denhaag-mobile-menu-list-submenu-back-button-padding-inline-start);
 
-      // .denhaag-link__icon {
-      //   align-self: unset;
-      // }
+      .denhaag-link__icon {
+        align-self: unset;
+      }
     }
 
     .denhaag-mobile-menu-list-submenu-list-item-link__icon {

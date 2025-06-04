@@ -1,6 +1,4 @@
 .denhaag-link {
-  align-items: center;
-  display: inline-flex;
   position: relative;
   color: var(--denhaag-link-color);
   cursor: var(--denhaag-link-cursor, pointer);
@@ -14,6 +12,8 @@
 }
 
 .denhaag-link--with-icon {
+  align-items: center;
+  display: inline-flex;
   gap: var(--denhaag-link-icon-gap);
   text-decoration: none;
   vertical-align: var(--denhaag-link-with-icon-vertical-align, baseline);
@@ -68,7 +68,7 @@
   pointer-events: none;
 }
 
-.denhaag-icon.denhaag-link__icon {
+.denhaag-link__icon {
   align-items: var(--denhaag-link-icon-align);
   display: inline-flex;
   height: var(--denhaag-link-icon-size);
@@ -79,7 +79,12 @@
   width: var(--denhaag-link-icon-size);
 }
 
-.denhaag-icon.denhaag-link__icon > :first-child {
+li .denhaag-link__icon {
+  align-self: start;
+  flex: 1 0 auto;
+}
+
+.denhaag-link__icon > :first-child {
   aspect-ratio: 1 / 1;
   font-size: var(--denhaag-link-icon-font-size);
   height: var(--denhaag-link-icon-size);
@@ -87,6 +92,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .denhaag-link__sr-only {

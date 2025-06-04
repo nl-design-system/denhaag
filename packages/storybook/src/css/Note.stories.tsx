@@ -291,22 +291,24 @@ export const IconLink: Story = {
           tabIndex={0}
           className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-end"
         >
-          <svg
-            width="1em"
-            height="1em"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="denhaag-icon denhaag-link__icon"
-            focusable="false"
-            aria-hidden="true"
-            shape-rendering="auto"
-          >
-            <path
-              d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-              fill="currentColor"
-            ></path>
-          </svg>
+          <span className="denhaag-link__icon">
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="denhaag-icon"
+              focusable="false"
+              aria-hidden="true"
+              shape-rendering="auto"
+            >
+              <path
+                d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </span>
           <span>Link with icon after</span>
         </a>
       </div>
