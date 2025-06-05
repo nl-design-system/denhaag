@@ -2,7 +2,6 @@ import React, { ReactNode } from 'react';
 import LinkListBase, { LinkListBaseProps } from './LinkListBase';
 import LinkListItem from './LinkListItem';
 import { ArrowRightIcon, ExternalLinkIcon } from '@gemeente-denhaag/icons';
-import LinkListItemText from './LinkListItemText';
 import Link from '@gemeente-denhaag/link';
 
 type Items = {
@@ -26,7 +25,7 @@ export const LinkList = ({ items, ...props }: LinkListProps) => {
         .map((item) => (
           <LinkListItem key={item.href}>
             <Link icon={item.external ? <ExternalLinkIcon /> : <ArrowRightIcon />} iconAlign="start" href={item.href}>
-              <LinkListItemText>{item.label}</LinkListItemText>
+              {item.label}
             </Link>
           </LinkListItem>
         ))}
