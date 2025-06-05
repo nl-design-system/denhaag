@@ -1,5 +1,29 @@
 # @gemeente-denhaag/storybook
 
+## 3.2.0
+
+### Minor Changes
+
+- d9476a8: Added smart LinkList component, changed link styling
+
+### Patch Changes
+
+- Updated dependencies [d9476a8]
+  - @gemeente-denhaag/link-list@4.0.0
+  - @gemeente-denhaag/link-group@1.1.0
+  - @gemeente-denhaag/link@2.1.0
+  - @gemeente-denhaag/header@2.1.4
+  - @gemeente-denhaag/menu@2.2.1
+  - @gemeente-denhaag/footer@2.0.3
+  - @gemeente-denhaag/action@2.0.3
+  - @gemeente-denhaag/breadcrumb@3.0.1
+  - @gemeente-denhaag/card@3.0.2
+  - @gemeente-denhaag/card-authentication@1.0.8
+  - @gemeente-denhaag/dynamic-content@1.0.3
+  - @gemeente-denhaag/form-progress@2.0.3
+  - @gemeente-denhaag/table@2.0.3
+  - @gemeente-denhaag/card-group@1.0.8
+
 ## 3.1.0
 
 ### Minor Changes

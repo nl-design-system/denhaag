@@ -1,5 +1,16 @@
 # @gemeente-denhaag/language-switcher
 
+## 2.1.0
+
+### Minor Changes
+
+- d9476a8: Added smart LinkList component, changed link styling
+
+### Patch Changes
+
+- Updated dependencies [d9476a8]
+  - @gemeente-denhaag/link@2.1.0
+
 ## 2.0.2
 
 ### Patch Changes
