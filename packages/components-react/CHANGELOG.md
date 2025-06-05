@@ -1,5 +1,20 @@
 # @gemeente-denhaag/components-react
 
+## 2.0.16
+
+### Patch Changes
+
+- Updated dependencies [d9476a8]
+  - @gemeente-denhaag/link@2.1.0
+  - @gemeente-denhaag/header@2.1.4
+  - @gemeente-denhaag/menu@2.2.1
+  - @gemeente-denhaag/footer@2.0.3
+  - @gemeente-denhaag/action@2.0.3
+  - @gemeente-denhaag/card@3.0.2
+  - @gemeente-denhaag/form-progress@2.0.3
+  - @gemeente-denhaag/table@2.0.3
+  - @gemeente-denhaag/card-group@1.0.8
+
 ## 2.0.15
 
 ### Patch Changes

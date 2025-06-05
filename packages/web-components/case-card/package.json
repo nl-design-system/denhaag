@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/case-card-element",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A Case Card web component component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
