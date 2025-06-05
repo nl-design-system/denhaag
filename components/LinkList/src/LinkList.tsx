@@ -25,7 +25,7 @@ export const LinkList = ({ items, ...props }: LinkListProps) => {
         })
         .map((item) => (
           <LinkListItem key={item.href}>
-            <Link icon={<ArrowRightIcon className="denhaag-link__icon" />} iconAlign="start" href={item.href}>
+            <Link icon={<ArrowRightIcon />} iconAlign="start" href={item.href}>
               <LinkListItemText>{item.label}</LinkListItemText>
             </Link>
           </LinkListItem>
