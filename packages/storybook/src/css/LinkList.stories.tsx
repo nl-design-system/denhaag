@@ -1,42 +1,12 @@
-import { Meta, StoryObj } from '@storybook/react';
-import LinkList, { LinkListProps } from '@gemeente-denhaag/link-list';
+import reactMeta from '../react/LinkList.stories';
 
-import readme from '../../../../components/LinkList/README.md?raw';
-
-const exampleArgs = {
-  items: [
-    {
-      label: 'Link internal 1',
-      href: '#example',
-    },
-    {
-      label: 'Link external',
-      href: '#example',
-      external: true,
-    },
-    {
-      label: 'Link internal 2',
-      href: '#example',
-    },
-  ],
-} as LinkListProps;
-
-const meta = {
+const meta: typeof reactMeta = {
+  ...reactMeta,
   id: 'css-navigation-link-list',
   title: 'CSS/Navigation/Link List',
-  component: LinkList,
-  args: exampleArgs,
   tags: ['autodocs'],
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
-} as Meta<typeof LinkList>;
+};
 
 export default meta;
-type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {};
+export { Default } from '../react/LinkList.stories';
