@@ -79,11 +79,6 @@
   width: var(--denhaag-link-icon-size);
 }
 
-li .denhaag-link__icon {
-  align-self: start;
-  flex: 1 0 auto;
-}
-
 .denhaag-link__icon > :first-child {
   aspect-ratio: 1 / 1;
   font-size: var(--denhaag-link-icon-font-size);
