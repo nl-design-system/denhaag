@@ -31,7 +31,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@utrecht/component-library-react": "9.0.1",
+    "@utrecht/component-library-react": "10.2.0",
     "@utrecht/components": "7.4.0"
   },
   "peerDependencies": {
