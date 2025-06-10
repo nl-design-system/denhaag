@@ -1,14 +1,16 @@
 .denhaag-description-list {
   color: var(--denhaag-description-list-color);
+  display: block;
   font-family: var(--denhaag-description-list-font-family);
   font-size: var(--denhaag-description-list-font-size);
   font-weight: var(--denhaag-description-list-font-weight);
   line-height: var(--denhaag-description-list-line-height);
-  margin-block-start: var(--denhaag-description-list-margin-block-start);
   margin-block-end: var(--denhaag-description-list-margin-block-end);
+  margin-block-start: var(--denhaag-description-list-margin-block-start);
+  word-break: var(--denhaag-description-list-word-break, break-word);
 }
 
-@media (width >= 768px) {
+@container description-list (width >= 480px) {
   .denhaag-description-list {
     --denhaag-description-list-detail-padding-block-end: var(--denhaag-description-list-lg-detail-padding-block-end);
     --denhaag-description-list-detail-padding-block-start: var(
@@ -18,5 +20,10 @@
     --denhaag-description-list-title-padding-block-start: var(--denhaag-description-list-lg-title-padding-block-start);
     --denhaag-description-list-padding-inline-end: var(--denhaag-description-list-lg-padding-inline-end);
     --denhaag-description-list-padding-inline-start: var(--denhaag-description-list-lg-padding-inline-start);
+
+    display: grid;
+    grid-template-columns: var(--denhaag-description-list-item-first-column-width, 240px) 1fr auto;
+    grid-auto-rows: auto;
+    grid-auto-flow: row;
   }
 }

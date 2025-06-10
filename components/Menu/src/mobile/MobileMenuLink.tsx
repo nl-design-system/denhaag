@@ -8,12 +8,12 @@ export interface MobileMenuLinkProps extends AnchorHTMLAttributes<HTMLAnchorElem
   Link?: Link;
 }
 
-export const MobileMenuLink: React.FC<MobileMenuLinkProps> = ({
+export const MobileMenuLink = ({
   large,
   children,
   Link = ({ children, ...props }) => <a {...props}>{children}</a>,
   ...props
-}) => {
+}: MobileMenuLinkProps) => {
   const classNames = clsx(
     'utrecht-button utrecht-button--subtle denhaag-mobile-menu-list-item-link',
     large ? 'denhaag-mobile-menu-list-item-link--large' : '',

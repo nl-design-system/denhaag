@@ -86,6 +86,43 @@ const createConfig = ({ dir, format, baseUrl }) => ({
 
 const baseUrl = cwd();
 
+function emitCssDts() {
+  return {
+    name: 'emit-css-dts',
+    generateBundle() {
+      const dtsSource = `declare const css: string;\nexport default css;\nexport const stylesheet: string;\n`;
+      this.emitFile({
+        type: 'asset',
+        fileName: 'css.d.mts',
+        source: dtsSource,
+      });
+    },
+  };
+}
+
+function emitStylesheetLoader() {
+  return {
+    name: 'emit-stylesheet-loader',
+    generateBundle(options, bundle) {
+      const css = bundle['css.mjs'].code;
+      const cssWithoutExport = css.replace(/export\s*{.*};/, '');
+      const constructedStylesheetCode = `const constructedStylesheet = new CSSStyleSheet();\nconstructedStylesheet.replaceSync(stylesheet);\nexport default constructedStylesheet;`;
+
+      this.emitFile({
+        type: 'asset',
+        fileName: 'stylesheet.mjs',
+        source: cssWithoutExport + constructedStylesheetCode,
+      });
+
+      this.emitFile({
+        type: 'asset',
+        fileName: 'stylesheet.d.mts',
+        source: `declare const constructedStylesheet: CSSStyleSheet;\nexport default constructedStylesheet;\n`,
+      });
+    },
+  };
+}
+
 const configs = [
   createConfig({ format: 'cjs', dir: './dist/cjs', baseUrl }),
   createConfig({ format: 'esm', dir: './dist/mjs', baseUrl }),
@@ -100,6 +137,7 @@ const configs = [
     plugins: [
       postcss({
         extensions: ['.css', '.scss'],
+        plugins: [discardDuplicates()],
         extract: true,
       }),
     ],
@@ -107,17 +145,20 @@ const configs = [
   {
     input: 'src/index.scss',
     output: {
-      dir: './dist',
+      dir: './dist/mjs',
       sourcemap: false,
+      entryFileNames: 'css.mjs',
       format: 'esm',
       compact: true,
     },
     plugins: [
       postcss({
         extensions: ['.css', '.scss'],
-        plugins: [discardDuplicates()],
-        extract: true,
+        extract: false,
+        inject: false,
       }),
+      emitCssDts(),
+      emitStylesheetLoader(),
     ],
   },
 ]

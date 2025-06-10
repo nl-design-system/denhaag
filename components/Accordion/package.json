@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/accordion",
-  "version": "2.0.0",
+  "version": "3.0.3",
   "description": "An Accordion component.",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -31,7 +31,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@gemeente-denhaag/icons": "3.0.0",
+    "@gemeente-denhaag/icons": "workspace:*",
     "@utrecht/focus-ring-css": "2.3.0",
     "clsx": "2.1.1"
   }

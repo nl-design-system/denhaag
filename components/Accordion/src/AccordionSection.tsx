@@ -2,6 +2,8 @@ import React, { PropsWithChildren, ReactNode, useId, useState } from 'react';
 import AccordionSectionContent from './AccordionSectionContent';
 import AccordionSectionHeader from './AccordionSectionHeader';
 import clsx from 'clsx';
+import AccordionSectionContentContainer from './AccordionSectionContentContainer';
+import AccordionSectionContentBody from './AccordionSectionContentBody';
 
 export interface AccordionSectionProps {
   title: ReactNode;
@@ -29,8 +31,10 @@ export const AccordionSection = ({ title, description, children }: PropsWithChil
       >
         {title}
       </AccordionSectionHeader>
-      <AccordionSectionContent id={id} isExpanded={isExpanded}>
-        {children}
+      <AccordionSectionContent id={id} isExpanded={isExpanded} aria-hidden={!isExpanded}>
+        <AccordionSectionContentContainer>
+          <AccordionSectionContentBody>{children}</AccordionSectionContentBody>
+        </AccordionSectionContentContainer>
       </AccordionSectionContent>
     </div>
   );

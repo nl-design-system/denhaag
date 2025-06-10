@@ -1,5 +1,211 @@
 # @gemeente-denhaag/storybook
 
+## 3.1.0
+
+### Minor Changes
+
+- 44e0447: Added support for breadcrumbs with and without current, accessibility fix, story refactor
+
+### Patch Changes
+
+- Updated dependencies [44e0447]
+  - @gemeente-denhaag/breadcrumb@3.0.0
+  - @gemeente-denhaag/header@2.1.3
+
+## 3.0.1
+
+### Patch Changes
+
+- aed39ad: Case card full width
+- Updated dependencies [aed39ad]
+  - @gemeente-denhaag/design-tokens-components@3.0.1
+  - @gemeente-denhaag/card@3.0.1
+  - @gemeente-denhaag/typography@2.0.5
+  - @gemeente-denhaag/card-authentication@1.0.7
+  - @gemeente-denhaag/alert@2.0.6
+  - @gemeente-denhaag/contact-timeline@2.0.6
+  - @gemeente-denhaag/cta-image-content@1.0.6
+  - @gemeente-denhaag/header@2.1.2
+  - @gemeente-denhaag/process-steps@2.0.6
+  - @gemeente-denhaag/card-group@1.0.7
+
+## 3.0.0
+
+### Major Changes
+
+- f3721da: Refactor case card component
+
+### Patch Changes
+
+- Updated dependencies [f3721da]
+  - @gemeente-denhaag/design-tokens-components@3.0.0
+  - @gemeente-denhaag/card@3.0.0
+  - @gemeente-denhaag/typography@2.0.4
+  - @gemeente-denhaag/card-authentication@1.0.6
+  - @gemeente-denhaag/alert@2.0.5
+  - @gemeente-denhaag/contact-timeline@2.0.5
+  - @gemeente-denhaag/cta-image-content@1.0.5
+  - @gemeente-denhaag/header@2.1.1
+  - @gemeente-denhaag/process-steps@2.0.5
+  - @gemeente-denhaag/card-group@1.0.6
+
+## 2.1.11
+
+### Patch Changes
+
+- aacf6f8: Added option to show flat mobile menu without collapsible title
+- Updated dependencies [aacf6f8]
+  - @gemeente-denhaag/header@2.1.0
+  - @gemeente-denhaag/menu@2.2.0
+
+## 2.1.10
+
+### Patch Changes
+
+- Updated dependencies [75fc8c1]
+  - @gemeente-denhaag/select@2.0.1
+
+## 2.1.9
+
+### Patch Changes
+
+- Updated dependencies [3d9fb01]
+  - @gemeente-denhaag/icons@3.0.2
+  - @gemeente-denhaag/accordion@3.0.3
+  - @gemeente-denhaag/action@2.0.2
+  - @gemeente-denhaag/alert@2.0.4
+  - @gemeente-denhaag/anchor-navigation@1.0.2
+  - @gemeente-denhaag/breadcrumb@2.0.2
+  - @gemeente-denhaag/button@2.1.1
+  - @gemeente-denhaag/card@2.0.5
+  - @gemeente-denhaag/contact-timeline@2.0.4
+  - @gemeente-denhaag/ctadownload@1.0.0
+  - @gemeente-denhaag/cta-image-content@1.0.4
+  - @gemeente-denhaag/ctalink@1.0.0
+  - @gemeente-denhaag/divider@2.0.2
+  - @gemeente-denhaag/dynamic-content@1.0.2
+  - @gemeente-denhaag/file@1.0.2
+  - @gemeente-denhaag/footer@2.0.2
+  - @gemeente-denhaag/form-progress@2.0.2
+  - @gemeente-denhaag/header@2.0.5
+  - @gemeente-denhaag/highlighted-links@1.0.0
+  - @gemeente-denhaag/iconbutton@2.0.2
+  - @gemeente-denhaag/image@1.0.0
+  - @gemeente-denhaag/link@2.0.2
+  - @gemeente-denhaag/link-group@1.0.2
+  - @gemeente-denhaag/list@2.0.2
+  - @gemeente-denhaag/menu@2.1.2
+  - @gemeente-denhaag/note@1.0.0
+  - @gemeente-denhaag/process-steps@2.0.4
+  - @gemeente-denhaag/sheet@2.0.2
+  - @gemeente-denhaag/step-marker@2.0.2
+  - @gemeente-denhaag/card-authentication@1.0.5
+  - @gemeente-denhaag/dotindicator@2.0.2
+  - @gemeente-denhaag/modal@2.0.3
+  - @gemeente-denhaag/table@2.0.2
+  - @gemeente-denhaag/card-group@1.0.5
+
+## 2.1.8
+
+### Patch Changes
+
+- 13b0618: Added button loading state variant + new spinner icon
+- Updated dependencies [13b0618]
+  - @gemeente-denhaag/design-tokens-components@2.2.0
+  - @gemeente-denhaag/button@2.1.0
+  - @gemeente-denhaag/icons@3.0.1
+  - @gemeente-denhaag/typography@2.0.3
+  - @gemeente-denhaag/action@2.0.1
+  - @gemeente-denhaag/alert@2.0.3
+  - @gemeente-denhaag/anchor-navigation@1.0.1
+  - @gemeente-denhaag/card-authentication@1.0.4
+  - @gemeente-denhaag/cta-image-content@1.0.3
+  - @gemeente-denhaag/dotindicator@2.0.1
+  - @gemeente-denhaag/header@2.0.4
+  - @gemeente-denhaag/menu@2.1.1
+  - @gemeente-denhaag/modal@2.0.2
+  - @gemeente-denhaag/process-steps@2.0.3
+  - @gemeente-denhaag/accordion@3.0.2
+  - @gemeente-denhaag/breadcrumb@2.0.1
+  - @gemeente-denhaag/card@2.0.4
+  - @gemeente-denhaag/contact-timeline@2.0.3
+  - @gemeente-denhaag/ctadownload@1.0.0
+  - @gemeente-denhaag/ctalink@1.0.0
+  - @gemeente-denhaag/divider@2.0.1
+  - @gemeente-denhaag/dynamic-content@1.0.1
+  - @gemeente-denhaag/file@1.0.1
+  - @gemeente-denhaag/footer@2.0.1
+  - @gemeente-denhaag/form-progress@2.0.1
+  - @gemeente-denhaag/highlighted-links@1.0.0
+  - @gemeente-denhaag/iconbutton@2.0.1
+  - @gemeente-denhaag/image@1.0.0
+  - @gemeente-denhaag/link@2.0.1
+  - @gemeente-denhaag/link-group@1.0.1
+  - @gemeente-denhaag/list@2.0.1
+  - @gemeente-denhaag/note@1.0.0
+  - @gemeente-denhaag/sheet@2.0.1
+  - @gemeente-denhaag/step-marker@2.0.1
+  - @gemeente-denhaag/card-group@1.0.4
+  - @gemeente-denhaag/table@2.0.1
+
+## 2.1.7
+
+### Patch Changes
+
+- 4357576: Added option to auto expand menu level 1 item
+- Updated dependencies [4357576]
+  - @gemeente-denhaag/menu@2.1.0
+  - @gemeente-denhaag/header@2.0.3
+
+## 2.1.6
+
+### Patch Changes
+
+- Updated dependencies [0a36ab9]
+  - @gemeente-denhaag/descriptionlist@3.2.0
+
+## 2.1.5
+
+### Patch Changes
+
+- Updated dependencies [f8054cf]
+  - @gemeente-denhaag/descriptionlist@3.1.0
+
+## 2.1.4
+
+### Patch Changes
+
+- Updated dependencies [8b8a558]
+- Updated dependencies [8b8a558]
+  - @gemeente-denhaag/descriptionlist@3.0.1
+  - @gemeente-denhaag/accordion@3.0.1
+
+## 2.1.3
+
+### Patch Changes
+
+- 88e0970: Added open/close animation option to accordion
+- Updated dependencies [88e0970]
+  - @gemeente-denhaag/accordion@3.0.0
+  - @gemeente-denhaag/design-tokens-components@2.1.1
+  - @gemeente-denhaag/typography@2.0.2
+  - @gemeente-denhaag/alert@2.0.2
+  - @gemeente-denhaag/card@2.0.3
+  - @gemeente-denhaag/contact-timeline@2.0.2
+  - @gemeente-denhaag/cta-image-content@1.0.2
+  - @gemeente-denhaag/header@2.0.2
+  - @gemeente-denhaag/process-steps@2.0.2
+  - @gemeente-denhaag/card-authentication@1.0.3
+  - @gemeente-denhaag/card-group@1.0.3
+
+## 2.1.2
+
+### Patch Changes
+
+- 3446e18: Added setOpen to children of modal
+- Updated dependencies [3446e18]
+  - @gemeente-denhaag/modal@2.0.1
+
 ## 2.1.1
 
 ### Patch Changes

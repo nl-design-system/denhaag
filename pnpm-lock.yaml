@@ -141,8 +141,8 @@ importers:
   components/Accordion:
     dependencies:
       '@gemeente-denhaag/icons':
-        specifier: 3.0.0
-        version: 3.0.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        specifier: workspace:*
+        version: link:../Icons
       '@utrecht/focus-ring-css':
         specifier: 2.3.0
         version: 2.3.0
@@ -264,6 +264,9 @@ importers:
       '@gemeente-denhaag/icons':
         specifier: workspace:*
         version: link:../Icons
+      '@utrecht/focus-ring-css':
+        specifier: 2.3.0
+        version: 2.3.0
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -831,6 +834,12 @@ importers:
 
   components/LinkList:
     dependencies:
+      '@gemeente-denhaag/icons':
+        specifier: workspace:*
+        version: link:../Icons
+      '@gemeente-denhaag/link':
+        specifier: workspace:*
+        version: link:../Link
       '@utrecht/component-library-react':
         specifier: 9.0.1
         version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -1975,6 +1984,25 @@ importers:
         specifier: 6.1.1
         version: 6.1.1(@types/node@22.13.4)(jiti@2.4.2)(sass@1.85.0)(terser@5.37.0)(yaml@2.7.0)
 
+  packages/web-components/case-card:
+    dependencies:
+      '@gemeente-denhaag/card':
+        specifier: workspace:*
+        version: link:../../../components/Card
+      '@gemeente-denhaag/icons':
+        specifier: workspace:*
+        version: link:../../../components/Icons
+      '@utrecht/paragraph-css':
+        specifier: 2.3.0
+        version: 2.3.0
+    devDependencies:
+      '@nl-design-system/tsconfig':
+        specifier: 1.0.3
+        version: 1.0.3(typescript@5.7.3)
+      '@rollup/plugin-typescript':
+        specifier: 12.1.2
+        version: 12.1.2(rollup@4.34.8)(tslib@2.8.1)(typescript@5.7.3)
+
   proprietary/Common:
     devDependencies:
       '@gemeente-denhaag/design-tokens-proprietary':
@@ -3109,12 +3137,6 @@ packages:
     peerDependencies:
       react: ^18.0.0
 
-  '@gemeente-denhaag/icons@3.0.0':
-    resolution: {integrity: sha512-saR1NdvSu7JZ7GVDQ94rFNoMaErqIXQa0atpVkj3jJVZbGpdkjmVAVJ3flXZ+3dWvpUkpk0TdK/sEYJx5o+cdg==}
-    peerDependencies:
-      react: 18 || 19
-      react-dom: 18 || 19
-
   '@gemeente-denhaag/process-steps@0.1.0-alpha.227':
     resolution: {integrity: sha512-zBcjU/zTrhT+Oquw3EZIPUo6nM3JQKQhXGk25ZSYC6B5i7rZrhMqeoMnIXIFQzMeeU4fBWlJuYlfJ27Y/DU2jQ==}
     peerDependencies:
@@ -3269,6 +3291,11 @@ packages:
     resolution: {integrity: sha512-RzyneDefAIMgJ7zsR/EkZ6Gpx6sbTLKrgmt427ZTNksqfe6rxp7USDOXo8zKWHhpF/HZTwH1OUs2oEHpXq51dw==}
     peerDependencies:
       react: ^18
+
+  '@nl-design-system/tsconfig@1.0.3':
+    resolution: {integrity: sha512-Ejt9+yETgYXjE3O5WQEeiVOVE/BFU2MSgS0WIIq+kgiaBWduN0f+ze5F+s2VzvFNYimMAWwaYE4a+cqrphcm8Q==}
+    peerDependencies:
+      typescript: ^5.4
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -3444,6 +3471,19 @@ packages:
       rollup: ^2.78.0||^3.0.0||^4.0.0
     peerDependenciesMeta:
       rollup:
+        optional: true
+
+  '@rollup/plugin-typescript@12.1.2':
+    resolution: {integrity: sha512-cdtSp154H5sv637uMr1a8OTWB0L1SWDSm1rDGiyfcGcvQ6cuTs4MDk2BVEBGysUWago4OJN4EQZqOTl/QY3Jgg==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^2.14.0||^3.0.0||^4.0.0
+      tslib: '*'
+      typescript: '>=3.7.0'
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+      tslib:
         optional: true
 
   '@rollup/pluginutils@4.2.1':
@@ -11009,12 +11049,6 @@ snapshots:
     dependencies:
       react: 19.0.0
 
-  '@gemeente-denhaag/icons@3.0.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
-    dependencies:
-      clsx: 2.1.1
-      react: 19.0.0
-      react-dom: 19.0.0(react@19.0.0)
-
   '@gemeente-denhaag/process-steps@0.1.0-alpha.227(react@19.0.0)':
     dependencies:
       '@gemeente-denhaag/button': 0.2.3-alpha.398(react@19.0.0)
@@ -11191,6 +11225,10 @@ snapshots:
     transitivePeerDependencies:
       - react-dom
       - storybook
+
+  '@nl-design-system/tsconfig@1.0.3(typescript@5.7.3)':
+    dependencies:
+      typescript: 5.7.3
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -11447,6 +11485,15 @@ snapshots:
       resolve: 1.22.10
     optionalDependencies:
       rollup: 4.34.8
+
+  '@rollup/plugin-typescript@12.1.2(rollup@4.34.8)(tslib@2.8.1)(typescript@5.7.3)':
+    dependencies:
+      '@rollup/pluginutils': 5.1.4(rollup@4.34.8)
+      resolve: 1.22.10
+      typescript: 5.7.3
+    optionalDependencies:
+      rollup: 4.34.8
+      tslib: 2.8.1
 
   '@rollup/pluginutils@4.2.1':
     dependencies:

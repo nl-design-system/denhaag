@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import { Button } from '@gemeente-denhaag/button';
+import { Button, StatusButton, LoadingState } from '@gemeente-denhaag/button';
 import { ArrowLeftIcon, ArrowRightIcon } from '@gemeente-denhaag/icons';
 
 import readme from '../../../../components/Button/README.md?raw';
+import { StarterIcon } from '@gemeente-denhaag/icons';
 
 const exampleArgs = {
   children: 'Button',
@@ -47,4 +48,64 @@ export const Large: Story = {
 
 export const Disabled: Story = {
   args: { ...Default.args, disabled: true },
+};
+
+export const LoadingAnimation: Story = {
+  render: () => {
+    const [state, setState] = useState<LoadingState>('default');
+
+    const handleClick = () => {
+      setState('loading');
+
+      setTimeout(() => {
+        setState('default');
+      }, 4000);
+    };
+
+    return (
+      <StatusButton currentState={state} onClick={handleClick} icon={<StarterIcon />}>
+        Button
+      </StatusButton>
+    );
+  },
+};
+
+export const LoadingAnimationWithSuccess: Story = {
+  render: () => {
+    const [state, setState] = useState<LoadingState>('default');
+
+    const handleClick = () => {
+      setState('loading');
+
+      setTimeout(() => {
+        setState('success');
+      }, 4000);
+    };
+
+    return (
+      <StatusButton currentState={state} onClick={handleClick} icon={<StarterIcon />}>
+        Button
+      </StatusButton>
+    );
+  },
+};
+
+export const LoadingAnimationWithError: Story = {
+  render: () => {
+    const [state, setState] = useState<LoadingState>('default');
+
+    const handleClick = () => {
+      setState('loading');
+
+      setTimeout(() => {
+        setState('error');
+      }, 4000);
+    };
+
+    return (
+      <StatusButton currentState={state} onClick={handleClick} icon={<StarterIcon />}>
+        Button
+      </StatusButton>
+    );
+  },
 };

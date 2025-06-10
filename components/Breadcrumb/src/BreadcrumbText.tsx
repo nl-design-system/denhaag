@@ -4,12 +4,12 @@ import './index.scss';
 
 export type BreadcrumbTextProps = HTMLAttributes<HTMLDivElement>;
 
-export const BreadcrumbText: React.FC<BreadcrumbTextProps> = (props: BreadcrumbTextProps) => {
-  const classNames = clsx('denhaag-breadcrumb__text', props.className);
+export const BreadcrumbText = ({ children, className, ...props }: BreadcrumbTextProps) => {
+  const classNames = clsx('denhaag-breadcrumb__text', className);
 
   return (
     <span {...props} className={classNames}>
-      {props.children}
+      {children}
     </span>
   );
 };

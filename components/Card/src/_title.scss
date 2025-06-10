@@ -1,0 +1,13 @@
+.denhaag-case-card__title {
+  --utrecht-paragraph-font-family: var(--denhaag-case-card-title-font-family);
+  --utrecht-paragraph-font-size: var(--denhaag-case-card-title-font-size);
+  --utrecht-paragraph-font-weight: var(--denhaag-case-card-title-font-weight);
+  --utrecht-paragraph-line-height: var(--denhaag-case-card-title-line-height);
+  --utrecht-paragraph-color: var(--denhaag-case-card-title-color);
+
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

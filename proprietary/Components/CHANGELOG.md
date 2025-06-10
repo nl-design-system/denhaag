@@ -1,5 +1,29 @@
 # @gemeente-denhaag/design-tokens-components
 
+## 3.0.1
+
+### Patch Changes
+
+- aed39ad: Case card full width
+
+## 3.0.0
+
+### Major Changes
+
+- f3721da: Refactor case card component
+
+## 2.2.0
+
+### Minor Changes
+
+- 13b0618: Added button loading state variant + new spinner icon
+
+## 2.1.1
+
+### Patch Changes
+
+- 88e0970: Added open/close animation option to accordion
+
 ## 2.1.0
 
 ### Minor Changes

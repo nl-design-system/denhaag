@@ -15,9 +15,10 @@ import clsx from 'clsx';
 import MobileMenuLinkLabel from './MobileMenuLinkLabel';
 
 interface NavigationGroupProps {
-  label: string;
+  label?: string;
   href?: string;
   navigation?: Array<NavigationGroupProps>;
+  defaultExpanded?: boolean;
   badgeCounter?: number;
 }
 
@@ -40,7 +41,7 @@ interface ExpandedListItemProps extends NavigationGroupProps {
 }
 
 const ExpandedListItem = ({ label, navigation, Link, scrollMenu, tabIndex }: ExpandedListItemProps) => {
-  const toggle = useToggleState(scrollMenu);
+  const toggle = useToggleState(false, scrollMenu);
 
   return (
     <MobileMenuListItem>
@@ -82,15 +83,24 @@ const ExpandedListItem = ({ label, navigation, Link, scrollMenu, tabIndex }: Exp
   );
 };
 
-const ExpandedList = ({ label, navigation, Link, scrollMenu, tabIndex }: ExpandedListItemProps) => {
-  const toggle = useToggleState();
+const ExpandedList = ({
+  label,
+  navigation,
+  defaultExpanded = false,
+  Link,
+  scrollMenu,
+  tabIndex,
+}: ExpandedListItemProps) => {
+  const toggle = useToggleState(defaultExpanded);
 
   return (
     <MobileMenuListItem active={toggle.open}>
-      <MobileMenuButton {...toggle.buttonProps} tabIndex={tabIndex} large>
-        <p className="denhaag-mobile-menu-list-item-button-text">{label}</p>
-        <ChevronDownIcon />
-      </MobileMenuButton>
+      {label && (
+        <MobileMenuButton {...toggle.buttonProps} tabIndex={tabIndex} large>
+          <p className="denhaag-mobile-menu-list-item-button-text">{label}</p>
+          <ChevronDownIcon />
+        </MobileMenuButton>
+      )}
       <MobileMenuList {...toggle.expandableAreaProps} expandable>
         {navigation?.map((l2Nav, key) => {
           if (l2Nav.href) {
@@ -116,12 +126,7 @@ const ExpandedList = ({ label, navigation, Link, scrollMenu, tabIndex }: Expande
   );
 };
 
-export const MobileMenu: React.FC<MobileMenuProps> = ({
-  navigation,
-  languageSwitcherMenu,
-  logoutButton,
-  Link,
-}: MobileMenuProps) => {
+export const MobileMenu = ({ navigation, languageSwitcherMenu, logoutButton, Link }: MobileMenuProps) => {
   const [menuScrolled, setMenuScrolled] = useState(false);
 
   const classNames = clsx('denhaag-mobile-menu', menuScrolled ? 'denhaag-mobile-menu--scrolled' : '');

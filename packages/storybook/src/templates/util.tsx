@@ -80,6 +80,75 @@ export const headerProps: HeaderLogicProps = {
       },
       {
         label: 'MijnDenHaag',
+        defaultExpanded: true,
+        navigation: [
+          { label: 'Overzicht', href: 'https://klantportaal.denhaag.nl/overzicht' },
+          { label: 'Mijn berichten', href: 'https://klantportaal.denhaag.nl/berichten', badgeCounter: 3 },
+          { label: 'Lopende zaken', href: 'https://klantportaal.denhaag.nl/zaken' },
+          { label: "Thema's", href: 'https://klantportaal.denhaag.nl/themas' },
+          { label: 'Mijn account', href: 'https://klantportaal.denhaag.nl/account' },
+        ],
+      },
+    ],
+  },
+};
+
+export const headerFlatMobileMenuProps: HeaderLogicProps = {
+  breadcrumbs: {
+    navigationPath: [{ label: 'Home', href: 'https://denhaag.nl/' }],
+  },
+  userprofileMenu: {
+    label: 'Welkom Anne Klap',
+    authorisedLoginLabel: 'Ingelogd namens Jason Verploeg',
+    navigationGroups: [
+      {
+        label: 'MijnDenHaag',
+        navigation: [
+          { label: 'Overzicht', href: '' },
+          { label: 'Lopende zaken', href: '' },
+          { label: "Thema's", href: '' },
+          { label: 'Mijn account', href: '' },
+        ],
+      },
+    ],
+  },
+  languageSwitcherMenu: {
+    currentLanguageLabel: 'NL',
+    languageSwitcherProps: {
+      variant: 'button',
+      label: 'Kies uw voorkeurstaal',
+      languages: [
+        {
+          id: 'nl',
+          label: 'Nederlands',
+          linkProps: { href: '#nl', lang: 'nl', hrefLang: 'nl-NL' },
+          active: true,
+        },
+        {
+          id: 'en',
+          label: 'Engels',
+          linkProps: { href: '#en', lang: 'en', hrefLang: 'en-GB' },
+          active: false,
+        },
+        {
+          id: 'fr',
+          label: 'Français',
+          linkProps: { href: '#fr', lang: 'fr', hrefLang: 'fr-FR' },
+          active: false,
+        },
+      ],
+    },
+  },
+  logoutButton: {
+    label: 'Uitloggen',
+    onLogoutClick: () => {},
+  },
+  mobileMenu: {
+    openLabel: 'Menu',
+    closeLabel: 'Sluiten',
+    navigation: [
+      {
+        defaultExpanded: true,
         navigation: [
           { label: 'Overzicht', href: 'https://klantportaal.denhaag.nl/overzicht' },
           { label: 'Mijn berichten', href: 'https://klantportaal.denhaag.nl/berichten', badgeCounter: 3 },

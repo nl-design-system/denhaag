@@ -1,5 +1,45 @@
 # @gemeente-denhaag/card
 
+## 3.0.1
+
+### Patch Changes
+
+- aed39ad: Case card full width
+  - @gemeente-denhaag/typography@2.0.5
+
+## 3.0.0
+
+### Major Changes
+
+- f3721da: Refactor case card component
+
+### Patch Changes
+
+- @gemeente-denhaag/typography@2.0.4
+
+## 2.0.5
+
+### Patch Changes
+
+- Updated dependencies [3d9fb01]
+  - @gemeente-denhaag/icons@3.0.2
+  - @gemeente-denhaag/link@2.0.2
+
+## 2.0.4
+
+### Patch Changes
+
+- Updated dependencies [13b0618]
+  - @gemeente-denhaag/icons@3.0.1
+  - @gemeente-denhaag/typography@2.0.3
+  - @gemeente-denhaag/link@2.0.1
+
+## 2.0.3
+
+### Patch Changes
+
+- @gemeente-denhaag/typography@2.0.2
+
 ## 2.0.2
 
 ### Patch Changes

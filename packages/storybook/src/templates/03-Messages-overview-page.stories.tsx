@@ -19,7 +19,7 @@ import {
   templateLocale,
 } from './util';
 
-import './Messages-page.scss';
+import './messages.scss';
 import Sidenav from './components/Sidenav';
 import { Pagination } from '@gemeente-denhaag/pagination';
 import { DataBadge } from '@gemeente-denhaag/data-badge';

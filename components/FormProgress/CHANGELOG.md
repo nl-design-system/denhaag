@@ -1,5 +1,21 @@
 # @gemeente-denhaag/form-progress
 
+## 2.0.2
+
+### Patch Changes
+
+- Updated dependencies [3d9fb01]
+  - @gemeente-denhaag/icons@3.0.2
+  - @gemeente-denhaag/link@2.0.2
+
+## 2.0.1
+
+### Patch Changes
+
+- Updated dependencies [13b0618]
+  - @gemeente-denhaag/icons@3.0.1
+  - @gemeente-denhaag/link@2.0.1
+
 ## 2.0.0
 
 ### Major Changes

@@ -4,10 +4,14 @@ import './index.scss';
 
 export type HeaderContentContainerProps = HTMLAttributes<HTMLDivElement>;
 
-export const HeaderContentContainer: React.FC<HeaderContentContainerProps> = (props: HeaderContentContainerProps) => {
-  const classNames = clsx('denhaag-header__content-container', props.className);
+export const HeaderContentContainer = ({ children, className, ...props }: HeaderContentContainerProps) => {
+  const classNames = clsx('denhaag-header__content-container', className);
 
-  return <div className={classNames}>{props.children}</div>;
+  return (
+    <div className={classNames} {...props}>
+      {children}
+    </div>
+  );
 };
 
 export default HeaderContentContainer;

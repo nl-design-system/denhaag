@@ -7,12 +7,7 @@ export interface BreadcrumbLinkProps extends AnchorHTMLAttributes<HTMLAnchorElem
   Link?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
 }
 
-export const BreadcrumbLink: React.FC<BreadcrumbLinkProps> = ({
-  className,
-  children,
-  Link = BasicLink,
-  ...props
-}: BreadcrumbLinkProps) => {
+export const BreadcrumbLink = ({ className, children, Link = BasicLink, ...props }: BreadcrumbLinkProps) => {
   const classNames = clsx('denhaag-breadcrumb__link', className);
 
   return (

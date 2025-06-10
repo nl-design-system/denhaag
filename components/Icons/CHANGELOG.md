@@ -1,5 +1,17 @@
 # @gemeente-denhaag/icons
 
+## 3.0.2
+
+### Patch Changes
+
+- 3d9fb01: Added Twitter/X icon
+
+## 3.0.1
+
+### Patch Changes
+
+- 13b0618: Added button loading state variant + new spinner icon
+
 ## 3.0.0
 
 ### Major Changes

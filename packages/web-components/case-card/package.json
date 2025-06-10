@@ -1,0 +1,45 @@
+{
+  "name": "@gemeente-denhaag/case-card-element",
+  "version": "1.1.0",
+  "description": "A Case Card web component component",
+  "bugs": "https://github.com/nl-design-system/denhaag/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nl-design-system/denhaag.git",
+    "directory": "packages/web-components/case-card"
+  },
+  "license": "EUPL-1.2",
+  "author": "Municipality of The Hague",
+  "exports": {
+    "./dist/element.mjs": {
+      "types": "./dist/element.d.ts",
+      "import": "./dist/element.js",
+      "default": "./dist/element.js"
+    },
+    "./dist/index.mjs": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c ./rollup.config.mjs",
+    "clean": "rimraf dist tsconfig.tsbuildinfo",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@gemeente-denhaag/card": "workspace:*",
+    "@gemeente-denhaag/icons": "workspace:*",
+    "@utrecht/paragraph-css": "2.3.0"
+  },
+  "devDependencies": {
+    "@nl-design-system/tsconfig": "1.0.3",
+    "@rollup/plugin-typescript": "12.1.2"
+  }
+}

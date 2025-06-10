@@ -86,7 +86,7 @@ export interface MenuButtonExpandableProps extends ButtonHTMLAttributes<HTMLButt
   active?: boolean;
 }
 
-export const MenuButton: React.FC<MenuButtonProps> = ({ active = false, ...props }: MenuButtonProps) => {
+export const MenuButton = ({ active = false, ...props }: MenuButtonProps) => {
   const className = clsx(
     'denhaag-menu-button',
     {

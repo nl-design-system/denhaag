@@ -1,5 +1,23 @@
 # @gemeente-denhaag/descriptionlist
 
+## 3.2.0
+
+### Minor Changes
+
+- 0a36ab9: Replaced media queries with container queries
+
+## 3.1.0
+
+### Minor Changes
+
+- f8054cf: Change Description List grid to always align columns
+
+## 3.0.1
+
+### Patch Changes
+
+- 8b8a558: Pass props to DescriptionListBase to allow extra classnames
+
 ## 3.0.0
 
 ### Major Changes

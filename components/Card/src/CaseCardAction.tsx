@@ -1,14 +1,13 @@
 import React, { AnchorHTMLAttributes, ComponentType } from 'react';
 import BasicLink from '@gemeente-denhaag/link';
 import clsx from 'clsx';
-import '../index.scss';
 
-export interface CardActionProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
+export interface CaseCardActionProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   Action?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
 }
 
-export const CardAction = ({ className, children, Action = BasicLink, ...props }: CardActionProps) => {
-  const classNames = clsx('denhaag-card__action-link', className);
+export const CaseCardAction = ({ className, children, Action = BasicLink, ...props }: CaseCardActionProps) => {
+  const classNames = clsx('denhaag-case-card__action', className);
 
   return (
     <Action {...props} className={classNames}>
@@ -17,4 +16,4 @@ export const CardAction = ({ className, children, Action = BasicLink, ...props }
   );
 };
 
-export default CardAction;
+export default CaseCardAction;

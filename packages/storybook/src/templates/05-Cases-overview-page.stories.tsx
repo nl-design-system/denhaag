@@ -19,10 +19,13 @@ import {
 } from './util';
 
 import './template-story.scss';
+import './cases.scss';
 import Sidenav from './components/Sidenav';
+import { formatDate, longDateOptions } from '@gemeente-denhaag/utils';
 
 const meta = {
   title: 'Templates/Zaak Overzicht',
+  args: { className: 'denhaag-cases-page' },
   parameters: {
     layout: 'fullscreen',
     chromatic: { viewports: [1768, 1280, 768, 360] },
@@ -35,7 +38,7 @@ const zakenHeaderProps: HeaderLogicProps = {
     navigationPath: [
       { label: 'Home', href: 'https://denhaag.nl/' },
       { label: 'MijnDenHaag', href: 'https://denhaag.nl/' },
-      { label: 'Mijn lopende zaken' },
+      { label: 'Mijn lopende zaken', href: 'https://denhaag.nl/' },
     ],
   },
 };
@@ -47,11 +50,21 @@ const tabsProps = {
       panelContent: (
         <section className="denhaag-card-group">
           <CaseCard
-            date={'2020-01-21T00:00:00.000Z'}
-            locale={templateLocale}
+            context={
+              <time dateTime={new Date('2020-01-21').toISOString()}>
+                {formatDate({ dateTime: '2020-01-21', locale: templateLocale, format: longDateOptions })[0]}
+              </time>
+            }
             title="Aanvraag subsidie geluidsisolatie"
           />
-          <CaseCard date={'2020-01-21T00:00:00.000Z'} locale={templateLocale} title="Aanvraag Ooievaarspas" />
+          <CaseCard
+            context={
+              <time dateTime={new Date('2020-01-21').toISOString()}>
+                {formatDate({ dateTime: '2020-01-21', locale: templateLocale, format: longDateOptions })[0]}
+              </time>
+            }
+            title="Aanvraag Ooievaarspas"
+          />
         </section>
       ),
     },
@@ -60,16 +73,22 @@ const tabsProps = {
       panelContent: (
         <section className="denhaag-card-group">
           <CaseCard
-            active={false}
-            date={'2019-01-21T00:00:00.000Z'}
-            locale={templateLocale}
+            appearance="archived"
             title="Aanvraag Parkeervergunning"
+            context={
+              <time dateTime={new Date('2020-01-21').toISOString()}>
+                {formatDate({ dateTime: '2020-01-21', locale: templateLocale, format: longDateOptions })[0]}
+              </time>
+            }
           />
           <CaseCard
-            active={false}
-            date={'2019-01-21T00:00:00.000Z'}
-            locale={templateLocale}
+            appearance="archived"
             title="Aanvraag Omgevingsvergunning"
+            context={
+              <time dateTime={new Date('2020-01-21').toISOString()}>
+                {formatDate({ dateTime: '2020-01-21', locale: templateLocale, format: longDateOptions })[0]}
+              </time>
+            }
           />
         </section>
       ),

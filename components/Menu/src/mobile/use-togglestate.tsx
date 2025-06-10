@@ -1,10 +1,9 @@
 import { useCallback, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
-export const useToggleState = (callback?: () => void) => {
-  const [open, setOpen] = useState(false);
+export const useToggleState = (defaultExpanded = false, callback?: () => void) => {
+  const [open, setOpen] = useState(defaultExpanded);
   const handleCallback = useCallback(() => callback?.(), [callback]);
-
   const ariaControls = uuidv4();
 
   const toggleState = () => {

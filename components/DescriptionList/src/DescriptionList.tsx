@@ -3,9 +3,9 @@ import { DescriptionListCaption } from './DescriptionListCaption';
 import { DescriptionListTitle } from './DescriptionListTitle';
 import { DescriptionListDetail } from './DescriptionListDetail';
 import { DescriptionListBase } from './DescriptionListBase';
-
-import './index.scss';
 import { DescriptionListItem } from './DescriptionListItem';
+import { DescriptionListContainer } from './DescriptionListContainer';
+import './index.scss';
 
 type DescriptionListElement = {
   title: React.ReactNode;
@@ -13,16 +13,16 @@ type DescriptionListElement = {
   action?: React.ReactNode;
 };
 
-export type DescriptionListProps = HTMLAttributes<HTMLDivElement> & {
+export type DescriptionListProps = HTMLAttributes<HTMLDListElement> & {
   caption?: string;
   items: DescriptionListElement[];
 };
 
-export const DescriptionList: React.FC<DescriptionListProps> = ({ caption, items }: DescriptionListProps) => {
+export const DescriptionList = ({ caption, items, ...props }: DescriptionListProps) => {
   return (
-    <>
+    <DescriptionListContainer>
       {caption && <DescriptionListCaption>{caption}</DescriptionListCaption>}
-      <DescriptionListBase>
+      <DescriptionListBase {...props}>
         {items.map((item, index) => (
           <DescriptionListItem key={index}>
             <DescriptionListTitle>{item.title}</DescriptionListTitle>
@@ -31,6 +31,6 @@ export const DescriptionList: React.FC<DescriptionListProps> = ({ caption, items
           </DescriptionListItem>
         ))}
       </DescriptionListBase>
-    </>
+    </DescriptionListContainer>
   );
 };

@@ -1,5 +1,79 @@
 # @gemeente-denhaag/header
 
+## 2.1.3
+
+### Patch Changes
+
+- Updated dependencies [44e0447]
+  - @gemeente-denhaag/breadcrumb@3.0.0
+
+## 2.1.2
+
+### Patch Changes
+
+- @gemeente-denhaag/typography@2.0.5
+
+## 2.1.1
+
+### Patch Changes
+
+- @gemeente-denhaag/typography@2.0.4
+
+## 2.1.0
+
+### Minor Changes
+
+- aacf6f8: Added option to show flat mobile menu without collapsible title
+
+### Patch Changes
+
+- Updated dependencies [aacf6f8]
+  - @gemeente-denhaag/menu@2.2.0
+
+## 2.0.5
+
+### Patch Changes
+
+- Updated dependencies [3d9fb01]
+  - @gemeente-denhaag/icons@3.0.2
+  - @gemeente-denhaag/breadcrumb@2.0.2
+  - @gemeente-denhaag/button@2.1.1
+  - @gemeente-denhaag/iconbutton@2.0.2
+  - @gemeente-denhaag/language-switcher@2.0.2
+  - @gemeente-denhaag/link@2.0.2
+  - @gemeente-denhaag/link-group@1.0.2
+  - @gemeente-denhaag/menu@2.1.2
+  - @gemeente-denhaag/sheet@2.0.2
+
+## 2.0.4
+
+### Patch Changes
+
+- Updated dependencies [13b0618]
+  - @gemeente-denhaag/button@2.1.0
+  - @gemeente-denhaag/icons@3.0.1
+  - @gemeente-denhaag/typography@2.0.3
+  - @gemeente-denhaag/menu@2.1.1
+  - @gemeente-denhaag/breadcrumb@2.0.1
+  - @gemeente-denhaag/iconbutton@2.0.1
+  - @gemeente-denhaag/language-switcher@2.0.1
+  - @gemeente-denhaag/link@2.0.1
+  - @gemeente-denhaag/link-group@1.0.1
+  - @gemeente-denhaag/sheet@2.0.1
+
+## 2.0.3
+
+### Patch Changes
+
+- Updated dependencies [4357576]
+  - @gemeente-denhaag/menu@2.1.0
+
+## 2.0.2
+
+### Patch Changes
+
+- @gemeente-denhaag/typography@2.0.2
+
 ## 2.0.1
 
 ### Patch Changes

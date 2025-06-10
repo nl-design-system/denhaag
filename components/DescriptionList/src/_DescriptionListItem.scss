@@ -1,0 +1,11 @@
+.denhaag-description-list-item {
+  display: block;
+  border-bottom: 1px solid var(--denhaag-description-list-border-color, lightgrey);
+}
+
+@container description-list (width >= 480px) {
+  .denhaag-description-list-item {
+    display: contents;
+    border: none;
+  }
+}

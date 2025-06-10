@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/icons",
-  "version": "3.0.0",
+  "version": "3.0.2",
   "description": "The icon set of the Municipality of The Hague",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -16,7 +16,12 @@
       "import": "./dist/mjs/index.js",
       "default": "./dist/cjs/index.js"
     },
-    "./index.css": "./dist/index.css"
+    "./index.css": "./dist/index.css",
+    "./dist/css.mjs": {
+      "types": "./dist/mjs/css.mjs.d.ts",
+      "import": "./dist/mjs/css.mjs",
+      "default": "./dist/mjs/css.mjs"
+    }
   },
   "main": "dist/cjs/index.js",
   "module": "dist/mjs/index.js",

@@ -4,12 +4,12 @@ import './index.scss';
 
 export type BreadcrumbListProps = OlHTMLAttributes<HTMLOListElement>;
 
-export const BreadcrumbList: React.FC<BreadcrumbListProps> = (props: BreadcrumbListProps) => {
-  const classNames = clsx('denhaag-breadcrumb__list', props.className);
+export const BreadcrumbList = ({ children, className, ...props }: BreadcrumbListProps) => {
+  const classNames = clsx('denhaag-breadcrumb__list', className);
 
   return (
     <ol {...props} className={classNames}>
-      {props.children}
+      {children}
     </ol>
   );
 };

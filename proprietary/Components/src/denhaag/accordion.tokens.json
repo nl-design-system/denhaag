@@ -14,7 +14,8 @@
           "padding-block-end": { "value": "24px" },
           "padding-block-start": { "value": "24px" },
           "padding-inline-end": { "value": "16px" },
-          "padding-inline-start": { "value": "16px" }
+          "padding-inline-start": { "value": "16px" },
+          "transition": { "value": "grid-template-rows 400ms ease-in-out" }
         },
         "header": {
           "background-color": { "value": "{denhaag.color.white}" },
@@ -27,6 +28,7 @@
           "padding-inline-end": { "value": "16px" },
           "padding-inline-start": { "value": "16px" },
           "icon": {
+            "color": { "value": "{denhaag.color.green.3}" },
             "transform": { "value": "rotate(0deg)" },
             "transition": { "value": "transform 400ms ease-in-out" },
             "expanded": {
@@ -34,7 +36,12 @@
             }
           }
         },
+        "description": {
+          "color": { "value": "{denhaag.color.grey.5}" },
+          "font-size": { "value": "inherit" }
+        },
         "title": {
+          "color": { "value": "{denhaag.color.green.3}" },
           "font-size": { "value": "inherit" }
         }
       }

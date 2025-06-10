@@ -1,0 +1,30 @@
+.denhaag-description-list__detail {
+  margin-inline-start: 0;
+  padding-block-end: var(--denhaag-description-list-detail-padding-block-end, var(--denhaag-description-list-padding));
+  padding-block-start: var(
+    --denhaag-description-list-detail-padding-block-start,
+    var(--denhaag-description-list-padding)
+  );
+  padding-inline-end: var(--denhaag-description-list-padding-inline-end, var(--denhaag-description-list-padding));
+  padding-inline-start: var(--denhaag-description-list-padding-inline-end, var(--denhaag-description-list-padding));
+}
+
+@container description-list (width >= 480px) {
+  // By default: grid column 2 and 3
+  .denhaag-description-list__detail {
+    border-bottom: 1px solid var(--denhaag-description-list-border-color, lightgrey);
+    grid-column: 2 / 4;
+  }
+
+  // When action: grid column 2 for first detail, and column 3 for second detail
+  .denhaag-description-list__title:has(+ .denhaag-description-list__detail + .denhaag-description-list__detail)
+    + .denhaag-description-list__detail {
+    grid-column: 2;
+  }
+
+  .denhaag-description-list__title:has(+ .denhaag-description-list__detail + .denhaag-description-list__detail)
+    + .denhaag-description-list__detail
+    + .denhaag-description-list__detail {
+    grid-column: 3;
+  }
+}
