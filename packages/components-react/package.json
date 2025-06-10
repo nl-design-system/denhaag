@@ -31,7 +31,6 @@
     "@gemeente-denhaag/accordion": "workspace:*",
     "@gemeente-denhaag/action": "workspace:*",
     "@gemeente-denhaag/alert": "workspace:*",
-    "@gemeente-denhaag/badge-counter": "workspace:*",
     "@gemeente-denhaag/button": "workspace:*",
     "@gemeente-denhaag/card": "workspace:*",
     "@gemeente-denhaag/card-group": "workspace:*",
