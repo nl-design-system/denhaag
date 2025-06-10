@@ -24,6 +24,6 @@
 
 .denhaag-container {
   box-sizing: border-box;
-  inline-size: min(var(--denhaag-container-inline-size), var(--denhaag-container-max-inline-size));
+  inline-size: min(var(--denhaag-container-inline-size), var(--denhaag-container-max-inline-size), 100%);
   margin-inline: auto;
 }
