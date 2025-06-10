@@ -1,0 +1,42 @@
+{
+  "name": "@gemeente-denhaag/page-index",
+  "description": "A Page Index component",
+  "author": "Municipality of The Hague",
+  "bugs": "https://github.com/nl-design-system/denhaag/issues",
+  "license": "EUPL-1.2",
+  "version": "0.0.1",
+  "exports": {
+    ".": {
+      "types": "./dist/cjs/index.d.ts",
+      "import": "./dist/mjs/index.js",
+      "default": "./dist/cjs/index.js"
+    },
+    "./index.css": "./dist/index.css"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/mjs/index.js",
+  "types": "dist/cjs/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nl-design-system/denhaag.git",
+    "directory": "components/PageIndex"
+  },
+  "scripts": {
+    "build": "rollup -c ../../rollup.config.mjs",
+    "clean": "rimraf dist tsconfig.tsbuildinfo",
+    "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@gemeente-denhaag/link": "workspace:*",
+    "@gemeente-denhaag/unorderedlist": "workspace:*",
+    "clsx": "2.1.1"
+  },
+  "peerDependencies": {
+    "react": "18 || 19",
+    "react-dom": "18 || 19"
+  }
+}
