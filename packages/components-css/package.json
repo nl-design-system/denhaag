@@ -71,6 +71,7 @@
     "@gemeente-denhaag/note": "workspace:*",
     "@gemeente-denhaag/orderedlist": "workspace:*",
     "@gemeente-denhaag/page": "workspace:*",
+    "@gemeente-denhaag/page-index": "workspace:*",
     "@gemeente-denhaag/pagebuttons": "workspace:*",
     "@gemeente-denhaag/pagination": "workspace:*",
     "@gemeente-denhaag/process-steps": "workspace:*",

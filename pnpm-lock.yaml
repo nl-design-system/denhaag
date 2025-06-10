@@ -915,6 +915,24 @@ importers:
 
   components/PageButtons: {}
 
+  components/PageIndex:
+    dependencies:
+      '@gemeente-denhaag/link':
+        specifier: workspace:*
+        version: link:../Link
+      '@gemeente-denhaag/unorderedlist':
+        specifier: workspace:*
+        version: link:../UnorderedList
+      clsx:
+        specifier: 2.1.1
+        version: 2.1.1
+      react:
+        specifier: 18 || 19
+        version: 19.0.0
+      react-dom:
+        specifier: 18 || 19
+        version: 19.0.0(react@19.0.0)
+
   components/Pagination:
     dependencies:
       clsx:
@@ -1350,6 +1368,9 @@ importers:
       '@gemeente-denhaag/page':
         specifier: workspace:*
         version: link:../../components/Page
+      '@gemeente-denhaag/page-index':
+        specifier: workspace:*
+        version: link:../../components/PageIndex
       '@gemeente-denhaag/pagebuttons':
         specifier: workspace:*
         version: link:../../components/PageButtons
@@ -1476,6 +1497,9 @@ importers:
       '@gemeente-denhaag/page':
         specifier: workspace:*
         version: link:../../components/Page
+      '@gemeente-denhaag/page-index':
+        specifier: workspace:*
+        version: link:../../components/PageIndex
       '@gemeente-denhaag/pagination':
         specifier: workspace:*
         version: link:../../components/Pagination
@@ -1707,6 +1731,9 @@ importers:
       '@gemeente-denhaag/page':
         specifier: workspace:*
         version: link:../../components/Page
+      '@gemeente-denhaag/page-index':
+        specifier: workspace:*
+        version: link:../../components/PageIndex
       '@gemeente-denhaag/pagebuttons':
         specifier: workspace:*
         version: link:../../components/PageButtons
