@@ -1,5 +1,30 @@
 # @gemeente-denhaag/components-react
 
+## 2.1.0
+
+### Minor Changes
+
+- 3b694d1: Added PageIndex component
+
+### Patch Changes
+
+- Updated dependencies [3b694d1]
+- Updated dependencies [d9476a8]
+  - @gemeente-denhaag/page-index@1.0.0
+  - @gemeente-denhaag/link@2.1.0
+  - @gemeente-denhaag/typography@2.0.6
+  - @gemeente-denhaag/header@2.1.4
+  - @gemeente-denhaag/menu@2.2.1
+  - @gemeente-denhaag/footer@2.0.3
+  - @gemeente-denhaag/action@2.0.3
+  - @gemeente-denhaag/card@3.0.2
+  - @gemeente-denhaag/form-progress@2.0.3
+  - @gemeente-denhaag/table@2.0.3
+  - @gemeente-denhaag/alert@2.0.7
+  - @gemeente-denhaag/contact-timeline@2.0.7
+  - @gemeente-denhaag/process-steps@2.0.7
+  - @gemeente-denhaag/card-group@1.0.8
+
 ## 2.0.15
 
 ### Patch Changes

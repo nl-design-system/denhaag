@@ -1,5 +1,12 @@
 # @gemeente-denhaag/breadcrumb
 
+## 3.0.1
+
+### Patch Changes
+
+- Updated dependencies [d9476a8]
+  - @gemeente-denhaag/link@2.1.0
+
 ## 3.0.0
 
 ### Major Changes
