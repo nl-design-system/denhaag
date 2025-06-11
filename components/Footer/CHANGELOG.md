@@ -1,5 +1,13 @@
 # @gemeente-denhaag/footer
 
+## 2.0.3
+
+### Patch Changes
+
+- Updated dependencies [d9476a8]
+  - @gemeente-denhaag/link-group@1.1.0
+  - @gemeente-denhaag/link@2.1.0
+
 ## 2.0.2
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @gemeente-denhaag/design-tokens-components
 
+## 3.1.0
+
+### Minor Changes
+
+- 3b694d1: Added PageIndex component
+
 ## 3.0.1
 
 ### Patch Changes
