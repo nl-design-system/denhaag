@@ -920,6 +920,9 @@ importers:
       '@gemeente-denhaag/link':
         specifier: workspace:*
         version: link:../Link
+      '@gemeente-denhaag/typography':
+        specifier: workspace:*
+        version: link:../Typography
       '@gemeente-denhaag/unorderedlist':
         specifier: workspace:*
         version: link:../UnorderedList

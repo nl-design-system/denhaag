@@ -1,10 +1,9 @@
-import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import { PageIndex, PageIndexProps } from '@gemeente-denhaag/page-index';
-import { Heading3 } from '@gemeente-denhaag/typography';
 
 const exampleArgs = {
-  heading: <Heading3>Op deze pagina</Heading3>,
+  heading: 'Op deze pagina',
+  headingAs: 'h3',
   items: [
     {
       label: 'Contactgegevens',
