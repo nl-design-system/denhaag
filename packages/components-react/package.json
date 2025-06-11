@@ -67,8 +67,7 @@
     "@gemeente-denhaag/tab": "workspace:*",
     "@gemeente-denhaag/table": "workspace:*",
     "@gemeente-denhaag/text-input": "workspace:*",
-    "@gemeente-denhaag/textarea": "workspace:*",
-    "@gemeente-denhaag/typography": "workspace:*"
+    "@gemeente-denhaag/textarea": "workspace:*"
   },
   "peerDependencies": {
     "react": "18 || 19",

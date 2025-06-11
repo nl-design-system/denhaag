@@ -9,14 +9,14 @@
   flex-direction: row;
   justify-content: space-between;
 
-  --utrecht-paragraph-margin-block-end: 0;
+  --nl-paragraph-margin-block-end: 0;
 }
 
 .denhaag-alert--error {
   background-color: var(--denhaag-alert-error-background-color);
 
-  --utrecht-paragraph-color: var(--denhaag-alert-error-paragraph-color);
-  --utrecht-heading-4-color: var(--denhaag-alert-error-title-color);
+  --nl-paragraph-color: var(--denhaag-alert-error-paragraph-color);
+  --nl-heading-level-4-color: var(--denhaag-alert-error-title-color);
   --denhaag-button-primary-action-background-color: var(--denhaag-alert-error-action-button-background-color);
   --denhaag-button-primary-action-color: var(--denhaag-alert-error-action-button-color);
   --denhaag-button-primary-action-hover-background-color: var(
@@ -52,8 +52,8 @@
 .denhaag-alert--info {
   background-color: var(--denhaag-alert-info-background-color);
 
-  --utrecht-paragraph-color: var(--denhaag-alert-info-paragraph-color);
-  --utrecht-heading-4-color: var(--denhaag-alert-info-title-color);
+  --nl-paragraph-color: var(--denhaag-alert-info-paragraph-color);
+  --nl-heading-level-4-color: var(--denhaag-alert-info-title-color);
   --denhaag-button-primary-action-background-color: var(--denhaag-alert-info-action-button-background-color);
   --denhaag-button-primary-action-color: var(--denhaag-alert-info-action-button-color);
   --denhaag-button-primary-action-hover-background-color: var(
@@ -71,8 +71,8 @@
 .denhaag-alert--success {
   background-color: var(--denhaag-alert-success-background-color);
 
-  --utrecht-paragraph-color: var(--denhaag-alert-success-paragraph-color);
-  --utrecht-heading-4-color: var(--denhaag-alert-success-title-color);
+  --nl-paragraph-color: var(--denhaag-alert-success-paragraph-color);
+  --nl-heading-level-4-color: var(--denhaag-alert-success-title-color);
   --denhaag-button-primary-action-background-color: var(--denhaag-alert-success-action-button-background-color);
   --denhaag-button-primary-action-color: var(--denhaag-alert-success-action-button-color);
   --denhaag-button-primary-action-hover-background-color: var(
@@ -90,8 +90,8 @@
 .denhaag-alert--warning {
   background-color: var(--denhaag-alert-warning-background-color);
 
-  --utrecht-paragraph-color: var(--denhaag-alert-warning-paragraph-color);
-  --utrecht-heading-4-color: var(--denhaag-alert-warning-title-color);
+  --nl-paragraph-color: var(--denhaag-alert-warning-paragraph-color);
+  --nl-heading-level-4-color: var(--denhaag-alert-warning-title-color);
   --denhaag-button-primary-action-background-color: var(--denhaag-alert-warning-action-button-background-color);
   --denhaag-button-primary-action-color: var(--denhaag-alert-warning-action-button-color);
   --denhaag-button-primary-action-hover-background-color: var(
@@ -107,6 +107,8 @@
 }
 
 .denhaag-alert__content {
+  --nl-heading-level-4-margin-block-end: var(--denhaag-alert-title-margin-block-end);
+
   margin-inline-start: var(--denhaag-alert-content-margin-inline-start);
   margin-inline-end: var(--denhaag-alert-content-margin-inline-end);
 }

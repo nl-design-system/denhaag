@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import { Action } from '@gemeente-denhaag/action';
-import { Heading2 } from '@gemeente-denhaag/typography';
+import { Heading } from '@gemeente-denhaag/heading';
 import { Page, PageHeader, PageFooter } from '@gemeente-denhaag/page';
 import { HeaderLogic, HeaderLogicProps } from '@gemeente-denhaag/header';
 import { Footer } from '@gemeente-denhaag/footer';
@@ -84,7 +84,7 @@ export const BerichtenOverzicht: StoryObj<typeof meta> = {
       <ResponsiveContent className="denhaag-page-content denhaag-responsive-content--sidebar">
         <Sidenav />
         <main className="denhaag-page-content__main">
-          <Heading2>Mijn berichten</Heading2>
+          <Heading level={2}>Mijn berichten</Heading>
           <Table className="denhaag-page-content__table">
             <TableHead>
               <TableRow>

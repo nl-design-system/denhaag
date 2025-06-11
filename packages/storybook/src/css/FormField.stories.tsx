@@ -7,7 +7,7 @@ import { FormFieldErrorMessage } from '@gemeente-denhaag/form-field-error-messag
 import { FormLabel } from '@gemeente-denhaag/form-label';
 import { Fieldset, FieldsetLegend } from '@gemeente-denhaag/form-fieldset';
 import { TextInput } from '@gemeente-denhaag/text-input';
-import { Paragraph } from '@gemeente-denhaag/typography';
+import { Paragraph } from '@gemeente-denhaag/paragraph';
 import { RadioButton } from '@gemeente-denhaag/radio-button';
 import readme from '../../../../components/FormField/README.md?raw';
 import Select, { SelectOption } from '@gemeente-denhaag/select';
