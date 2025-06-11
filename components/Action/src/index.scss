@@ -13,6 +13,9 @@
   border-width: var(--denhaag-action-border-width);
   border-color: var(--denhaag-action-border-color);
 
+  --nl-link-text-decoration-line: none;
+  --nl-link-hover-text-decoration-line: none;
+
   @media (width >= 768px) {
     flex-direction: row;
     align-items: center;
@@ -97,7 +100,6 @@
     border-top: none;
     border-left: none;
     border-right: none;
-    text-decoration: none;
 
     &:hover,
     &.denhaag-action--hover {

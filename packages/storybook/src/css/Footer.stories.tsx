@@ -9,6 +9,7 @@ import '@gemeente-denhaag/link';
 import '@gemeente-denhaag/link-group';
 import '@gemeente-denhaag/responsive-content';
 import '@utrecht/component-library-css/dist/index.css';
+import { Paragraph } from '@gemeente-denhaag/paragraph';
 
 const meta = {
   title: 'CSS/Page Elements/Footer',
@@ -841,10 +842,10 @@ export const Default: Story = {
           <div className="denhaag-footer-group">
             <div className="denhaag-link-group denhaag-link-group--dark">
               <h4 className="utrecht-heading-4 denhaag-link-group__caption">Meld u aan voor de nieuwsbrief</h4>
-              <p className="utrecht-paragraph">
+              <Paragraph>
                 Blijf gemakkelijk op de hoogte van ontwikkelingen in uw stadsdeel en de belangrijkste zaken van Den
                 Haag.
-              </p>
+              </Paragraph>
               <div className="denhaag-button-group">
                 <a href="#example-link" className="denhaag-button denhaag-button--primary-action">
                   Aanmelden nieuwsbrief
@@ -1063,7 +1064,7 @@ export const Default: Story = {
             </li>
           </ul>
           <div className="denhaag-footer__legal-copyright">
-            <p className="utrecht-paragraph">© 2021 Gemeente Den Haag</p>
+            <Paragraph>© 2021 Gemeente Den Haag</Paragraph>
           </div>
         </div>
       </section>

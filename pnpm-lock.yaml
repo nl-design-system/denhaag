@@ -513,6 +513,9 @@ importers:
       '@gemeente-denhaag/list':
         specifier: workspace:*
         version: link:../List
+      '@gemeente-denhaag/paragraph':
+        specifier: workspace:*
+        version: link:../Paragraph
       '@gemeente-denhaag/responsive-content':
         specifier: workspace:*
         version: link:../ResponsiveContent
