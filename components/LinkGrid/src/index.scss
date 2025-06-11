@@ -206,6 +206,7 @@
 
   .denhaag-link-grid__container {
     padding-inline-end: 0;
+    margin-inline: 0;
   }
 
   .denhaag-link-grid__title {
@@ -261,8 +262,8 @@
         border-left: var(--denhaag-link-grid-item-no-border);
       }
       &:nth-child(4n + 1) {
-        border-left: var(--denhaag-link-grid-item-default-border, 1px solid) var
-          (--denhaag-link-grid-item-border-color, var(--denhaag-color-blue-1));
+        border-left: var(--denhaag-link-grid-item-default-border, 1px solid)
+          var(--denhaag-link-grid-item-border-color, var(--denhaag-color-blue-1)) !important;
       }
     }
 
