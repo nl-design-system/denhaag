@@ -98,17 +98,17 @@
     --denhaag-anchor-collapse-content-padding-inline-start: 0;
 
     /* Must always be the same as the H2 styles. */
-    --denhaag-anchor-collapse-summary-color: var(--utrecht-heading-2-color, var(--utrecht-heading-color));
+    --denhaag-anchor-collapse-summary-color: var(--nl-heading-level-2-color, var(--nl-heading-color));
     --denhaag-anchor-collapse-summary-font-family: var(
-      --utrecht-heading-2-font-family,
-      var(--utrecht-heading-font-family, var(--utrecht-document-font-family))
+      --nl-heading-level-2-font-family,
+      var(--nl-heading-font-family, var(--utrecht-document-font-family))
     );
-    --denhaag-anchor-collapse-summary-font-size: var(--utrecht-heading-2-font-size);
+    --denhaag-anchor-collapse-summary-font-size: var(--nl-heading-level-2-font-size);
     --denhaag-anchor-collapse-summary-font-weight: var(
-      --utrecht-heading-2-font-weight,
-      var(--utrecht-heading-font-weight, bold)
+      --nl-heading-level-2-font-weight,
+      var(--nl-heading-font-weight, bold)
     );
-    --denhaag-anchor-collapse-summary-margin-block-start: var(--utrecht-heading-2-margin-block-start);
+    --denhaag-anchor-collapse-summary-margin-block-start: var(--nl-heading-level-2-margin-block-start);
   }
 
   .denhaag-anchor-collapse__content {

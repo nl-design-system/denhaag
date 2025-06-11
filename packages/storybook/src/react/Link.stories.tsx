@@ -1,21 +1,39 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import { ArrowLeftIcon, ArrowRightIcon } from '@gemeente-denhaag/icons';
-import { Paragraph } from '@gemeente-denhaag/typography';
+import * as Icons from '@gemeente-denhaag/icons';
+import { ArrowRightIcon, ArrowLeftIcon } from '@gemeente-denhaag/icons';
+import { Paragraph } from '@gemeente-denhaag/paragraph';
 import { Link } from '@gemeente-denhaag/link';
-
 import readme from '../../../../components/Link/README.md?raw';
 
-const exampleArgs = {
-  href: '#',
-};
+type Story = StoryObj<typeof meta>;
 
-const meta = {
-  id: 'react-navigation-link',
-  title: 'React/Navigation/Link',
+const meta: Meta<typeof Link> = {
   component: Link,
-  args: exampleArgs,
   tags: ['autodocs'],
+  argTypes: {
+    disabled: {
+      type: 'boolean',
+      options: [undefined, true, false],
+      control: {
+        type: 'select',
+      },
+    },
+    icon: {
+      type: 'string',
+      options: [undefined, ...Object.keys(Icons)],
+      control: {
+        type: 'select',
+      },
+    },
+    iconAlign: {
+      type: 'string',
+      options: [undefined, 'start', 'end'],
+      control: {
+        type: 'select',
+      },
+    },
+  },
   parameters: {
     docs: {
       description: {
@@ -23,51 +41,48 @@ const meta = {
       },
     },
   },
-} as Meta<typeof Link>;
+};
 
 export default meta;
-type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: (args) => (
-    <Paragraph>
-      It is possible to put <Link {...args}>a link</Link> in a Paragraph element.
-    </Paragraph>
-  ),
+  args: {
+    href: '#',
+  },
+  render: (args) => {
+    const Icon = Icons[args.icon as unknown as keyof typeof Icons];
+    args.icon = Icon ? <Icon /> : args.icon || undefined;
+
+    return (
+      <Paragraph>
+        It is possible to put <Link {...args}>a link</Link> in a Paragraph element.
+      </Paragraph>
+    );
+  },
 };
 
-export const disabled: Story = {
-  render: (args) => (
-    <Paragraph>
-      It is possible to put{' '}
-      <Link disabled {...args}>
-        a link
-      </Link>{' '}
-      in a Paragraph element.
-    </Paragraph>
-  ),
+export const Disabled: Story = {
+  ...Default,
+  args: {
+    ...Default.args,
+    disabled: true,
+  },
 };
 
-export const iconStart: Story = {
-  render: (args) => (
-    <Paragraph>
-      It is possible to put{' '}
-      <Link icon={<ArrowLeftIcon />} iconAlign="start" {...args}>
-        a link
-      </Link>{' '}
-      in a Paragraph element.
-    </Paragraph>
-  ),
+export const IconStart: Story = {
+  ...Default,
+  args: {
+    ...Default.args,
+    icon: <ArrowLeftIcon />,
+    iconAlign: 'start',
+  },
 };
 
-export const iconEnd: Story = {
-  render: (args) => (
-    <Paragraph>
-      It is possible to put{' '}
-      <Link icon={<ArrowRightIcon />} {...args}>
-        a link
-      </Link>{' '}
-      in a Paragraph element.
-    </Paragraph>
-  ),
+export const IconEnd: Story = {
+  ...Default,
+  args: {
+    ...Default.args,
+    icon: <ArrowRightIcon />,
+    iconAlign: 'end',
+  },
 };

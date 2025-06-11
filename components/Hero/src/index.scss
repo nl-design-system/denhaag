@@ -1,5 +1,5 @@
 .denhaag-hero {
-  --utrecht-heading-color: var(--denhaag-hero-color);
+  --nl-heading-color: var(--denhaag-hero-color);
   --denhaag-hero-image-display: none;
   --denhaag-hero-image-width: calc(
     (
@@ -28,8 +28,8 @@
   --denhaag-hero-min-height: var(--denhaag-hero-home-min-height);
   --denhaag-hero-title-margin-block-end: var(--denhaag-hero-home-title-margin-block-end);
   --denhaag-hero-title-margin-block-start: var(--denhaag-hero-home-title-margin-block-start);
-  --utrecht-heading-1-font-weight: var(--denhaag-hero-home-title-weight);
-  --utrecht-heading-1-line-height: var(--denhaag-hero-home-title-line-height);
+  --nl-heading-level-1-font-weight: var(--denhaag-hero-home-title-weight);
+  --nl-heading-level-1-line-height: var(--denhaag-hero-home-title-line-height);
 
   background:
     linear-gradient(59deg, var(--denhaag-color-green-3) 30%, transparent 30%),
@@ -152,7 +152,7 @@
 
 @media (width <= 768px) {
   .denhaag-hero--routing {
-    --utrecht-heading-1-font-size: var(--denhaag-hero-routing-title-font-size-xs);
+    --nl-heading-level-1-font-size: var(--denhaag-hero-routing-title-font-size-xs);
   }
 
   .denhaag-hero--theme-page .denhaag-hero__content {
@@ -181,7 +181,7 @@
 
 @media (width >= 540px) {
   .denhaag-hero--theme-page {
-    --utrecht-heading-1-font-size: var(--denhaag-hero-theme-page-title-font-size-m);
+    --nl-heading-level-1-font-size: var(--denhaag-hero-theme-page-title-font-size-m);
   }
 }
 

@@ -2,7 +2,7 @@ import { Accordion, AccordionSection } from '@gemeente-denhaag/accordion';
 import tokens from '@gemeente-denhaag/design-tokens-components/dist/list.json';
 import { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
-import { Paragraph } from '@gemeente-denhaag/typography';
+import { Paragraph } from '@gemeente-denhaag/paragraph';
 import { DescriptionList } from '@gemeente-denhaag/descriptionlist';
 
 const exampleArgs = {

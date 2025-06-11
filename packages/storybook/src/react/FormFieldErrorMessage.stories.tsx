@@ -2,7 +2,7 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import readme from '../../../../components/FormFieldErrorMessage/README.md?raw';
 import { FormFieldErrorMessage } from '@gemeente-denhaag/form-field-error-message';
-import { Paragraph } from '@gemeente-denhaag/typography';
+import { Paragraph } from '@gemeente-denhaag/paragraph';
 
 const exampleArgs = {
   children: <Paragraph>This is a required field and must not be left empty.</Paragraph>,

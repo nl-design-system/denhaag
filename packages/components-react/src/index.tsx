@@ -1,6 +1,5 @@
 export * from '@gemeente-denhaag/action';
 export * from '@gemeente-denhaag/alert';
-export * from '@gemeente-denhaag/badge-counter';
 export * from '@gemeente-denhaag/button';
 export * from '@gemeente-denhaag/card';
 export * from '@gemeente-denhaag/card-group';
@@ -28,9 +27,7 @@ export * from '@gemeente-denhaag/responsive-content';
 export * from '@gemeente-denhaag/select';
 export * from '@gemeente-denhaag/sheet';
 export * from '@gemeente-denhaag/sidenav';
-export * from '@gemeente-denhaag/status-badge';
 export * from '@gemeente-denhaag/stylesprovider';
 export * from '@gemeente-denhaag/tab';
 export * from '@gemeente-denhaag/table';
 export * from '@gemeente-denhaag/text-input';
-export * from '@gemeente-denhaag/typography';

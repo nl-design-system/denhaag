@@ -1,18 +1,21 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { Paragraph } from '@gemeente-denhaag/typography';
-import readme from '../../../../components/Typography/README.md?raw';
+import { Paragraph } from '@gemeente-denhaag/paragraph';
+import readme from '../../../../components/Paragraph/README.md?raw';
 
-const exampleArgs = {
-  children:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum mi velit, at facilisis nulla blandit ac. Praesent elementum tellus diam, aliquet bibendum erat pretium id. Etiam vitae ex nec quam scelerisque ultricies. Curabitur blandit gravida tellus, ac ullamcorper ex fermentum molestie. Mauris nec ligula sapien. Fusce faucibusodio purus, eget dapibus massa lacinia non. Cras rutrum eget lectus interdum dapibus.',
-};
+type Story = StoryObj<typeof meta>;
 
-const meta = {
-  id: 'react-data-display-typography-paragraph',
-  title: 'React/Data Display/Typography/Paragraph',
+const meta: Meta<typeof Paragraph> = {
   component: Paragraph,
-  args: exampleArgs,
   tags: ['autodocs'],
+  argTypes: {
+    purpose: {
+      type: 'string',
+      options: [undefined, 'lead'],
+      control: {
+        type: 'select',
+      },
+    },
+  },
   parameters: {
     docs: {
       description: {
@@ -20,9 +23,21 @@ const meta = {
       },
     },
   },
-} as Meta<typeof Paragraph>;
+};
 
 export default meta;
-type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {};
+export const Default: Story = {
+  args: {
+    children:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum mi velit, at facilisis nulla blandit ac. Praesent elementum tellus diam, aliquet bibendum erat pretium id. Etiam vitae ex nec quam scelerisque ultricies. Curabitur blandit gravida tellus, ac ullamcorper ex fermentum molestie. Mauris nec ligula sapien. Fusce faucibusodio purus, eget dapibus massa lacinia non. Cras rutrum eget lectus interdum dapibus.',
+    purpose: undefined,
+  },
+};
+
+export const Lead: Story = {
+  args: {
+    ...Default.args,
+    purpose: 'lead',
+  },
+};
