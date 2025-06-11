@@ -1,5 +1,16 @@
 # @gemeente-denhaag/link-list
 
+## 4.0.0
+
+### Major Changes
+
+- d9476a8: Added smart LinkList component, changed link styling
+
+### Patch Changes
+
+- Updated dependencies [d9476a8]
+  - @gemeente-denhaag/link@2.1.0
+
 ## 3.0.0
 
 ### Major Changes

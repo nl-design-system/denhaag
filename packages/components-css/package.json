@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/components-css",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A CSS library for the components from the Municipality of the Hague",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -70,6 +70,7 @@
     "@gemeente-denhaag/note": "workspace:*",
     "@gemeente-denhaag/orderedlist": "workspace:*",
     "@gemeente-denhaag/page": "workspace:*",
+    "@gemeente-denhaag/page-index": "workspace:*",
     "@gemeente-denhaag/pagebuttons": "workspace:*",
     "@gemeente-denhaag/pagination": "workspace:*",
     "@gemeente-denhaag/process-steps": "workspace:*",

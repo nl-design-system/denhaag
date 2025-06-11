@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/components-react",
-  "version": "2.0.15",
+  "version": "2.1.0",
   "description": "A library of React components for the Municipality of the Hague",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -54,6 +54,7 @@
     "@gemeente-denhaag/list": "workspace:*",
     "@gemeente-denhaag/menu": "workspace:*",
     "@gemeente-denhaag/page": "workspace:*",
+    "@gemeente-denhaag/page-index": "workspace:*",
     "@gemeente-denhaag/pagination": "workspace:*",
     "@gemeente-denhaag/process-steps": "workspace:*",
     "@gemeente-denhaag/radio-button": "workspace:*",

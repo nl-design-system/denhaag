@@ -1,15 +1,10 @@
 {
-  "name": "@gemeente-denhaag/link-list",
-  "version": "4.0.0",
-  "description": "Link list component",
-  "bugs": "https://github.com/nl-design-system/denhaag/issues",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nl-design-system/denhaag.git",
-    "directory": "components/link-list"
-  },
-  "license": "EUPL-1.2",
+  "name": "@gemeente-denhaag/page-index",
+  "description": "A Page Index component",
   "author": "Municipality of The Hague",
+  "bugs": "https://github.com/nl-design-system/denhaag/issues",
+  "license": "EUPL-1.2",
+  "version": "1.0.0",
   "exports": {
     ".": {
       "types": "./dist/cjs/index.d.ts",
@@ -24,6 +19,11 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nl-design-system/denhaag.git",
+    "directory": "components/PageIndex"
+  },
   "scripts": {
     "build": "rollup -c ../../rollup.config.mjs",
     "clean": "rimraf dist tsconfig.tsbuildinfo",
@@ -31,10 +31,9 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@gemeente-denhaag/icons": "workspace:*",
     "@gemeente-denhaag/link": "workspace:*",
-    "@utrecht/component-library-react": "9.0.1",
-    "@utrecht/components": "7.4.0",
+    "@gemeente-denhaag/typography": "workspace:*",
+    "@gemeente-denhaag/unorderedlist": "workspace:*",
     "clsx": "2.1.1"
   },
   "peerDependencies": {

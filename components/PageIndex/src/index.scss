@@ -1,0 +1,11 @@
+.denhaag-page-index {
+  background-color: var(--denhaag-page-index-background-color);
+  padding-block-end: var(--denhaag-page-index-padding-block-end);
+  padding-block-start: var(--denhaag-page-index-padding-block-start);
+  padding-inline-end: var(--denhaag-page-index-padding-inline-end);
+  padding-inline-start: var(--denhaag-page-index-padding-inline-start);
+
+  .denhaag-page-index__list {
+    margin-block-start: var(--denhaag-page-index-list-margin-block-start);
+  }
+}
