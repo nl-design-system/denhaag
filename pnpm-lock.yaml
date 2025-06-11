@@ -1096,21 +1096,6 @@ importers:
         specifier: 18 || 19
         version: 19.0.0(react@19.0.0)
 
-  components/StatusBadge:
-    dependencies:
-      '@utrecht/component-library-react':
-        specifier: 9.0.1
-        version: 9.0.1(@babel/runtime@7.26.0)(date-fns@2.30.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      '@utrecht/components':
-        specifier: 7.4.0
-        version: 7.4.0
-      react:
-        specifier: 18 || 19
-        version: 19.0.0
-      react-dom:
-        specifier: 18 || 19
-        version: 19.0.0(react@19.0.0)
-
   components/StepMarker:
     dependencies:
       '@gemeente-denhaag/icons':
@@ -1420,9 +1405,6 @@ importers:
       '@gemeente-denhaag/sidenav':
         specifier: workspace:*
         version: link:../../components/Sidenav
-      '@gemeente-denhaag/status-badge':
-        specifier: workspace:*
-        version: link:../../components/StatusBadge
       '@gemeente-denhaag/tab':
         specifier: workspace:*
         version: link:../../components/Tab
@@ -1540,9 +1522,6 @@ importers:
       '@gemeente-denhaag/sidenav':
         specifier: workspace:*
         version: link:../../components/Sidenav
-      '@gemeente-denhaag/status-badge':
-        specifier: workspace:*
-        version: link:../../components/StatusBadge
       '@gemeente-denhaag/stylesprovider':
         specifier: workspace:*
         version: link:../../components/StylesProvider
@@ -1783,9 +1762,6 @@ importers:
       '@gemeente-denhaag/sidenav':
         specifier: workspace:*
         version: link:../../components/Sidenav
-      '@gemeente-denhaag/status-badge':
-        specifier: workspace:*
-        version: link:../../components/StatusBadge
       '@gemeente-denhaag/step-marker':
         specifier: workspace:*
         version: link:../../components/StepMarker
