@@ -263,7 +263,7 @@
       }
       &:nth-child(4n + 1) {
         border-left: var(--denhaag-link-grid-item-default-border, 1px solid)
-          var(--denhaag-link-grid-item-border-color, var(--denhaag-color-blue-1)) !important;
+          var(--denhaag-link-grid-item-border-color, var(--denhaag-color-blue-1));
       }
     }
 
