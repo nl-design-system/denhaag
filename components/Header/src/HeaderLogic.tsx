@@ -1,7 +1,7 @@
 import React, { AnchorHTMLAttributes, ComponentType, useEffect, useRef, useState } from 'react';
 import HeaderLogo from '@gemeente-denhaag/header-logo';
 import ResponsiveContent from '@gemeente-denhaag/responsive-content';
-import Link from '@gemeente-denhaag/link';
+import { Link } from '@gemeente-denhaag/link';
 import { MenuButtonExpandable, MobileMenu, MobileMenuProps } from '@gemeente-denhaag/menu';
 import './index.scss';
 import Header from './Header';
@@ -17,7 +17,8 @@ import IconButton from '@gemeente-denhaag/iconbutton';
 import { CloseIcon, ArrowRightIcon, LogOutIcon } from '@gemeente-denhaag/icons';
 import { LinkGroup, LinkGroupList, LinkGroupListItem } from '@gemeente-denhaag/link-group';
 import { LanguageSwitcherLogic, LanguageSwitcherLogicProps } from '@gemeente-denhaag/language-switcher';
-import { Heading4, Paragraph } from '@gemeente-denhaag/typography';
+import { Heading } from '@gemeente-denhaag/heading';
+import { Paragraph } from '@gemeente-denhaag/paragraph';
 import { Button } from '@gemeente-denhaag/button';
 import './index.scss';
 
@@ -174,7 +175,7 @@ export const HeaderLogic = ({
 
     return (
       <LinkGroup>
-        <Heading4>{props.label}</Heading4>
+        <Heading level={4}>{props.label}</Heading>
         <LinkGroupList>{navigationLinks}</LinkGroupList>
       </LinkGroup>
     );

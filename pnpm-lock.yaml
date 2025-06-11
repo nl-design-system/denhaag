@@ -182,15 +182,15 @@ importers:
       '@gemeente-denhaag/button':
         specifier: workspace:*
         version: link:../Button
+      '@gemeente-denhaag/heading':
+        specifier: workspace:*
+        version: link:../Heading
       '@gemeente-denhaag/iconbutton':
         specifier: workspace:*
         version: link:../IconButton
       '@gemeente-denhaag/icons':
         specifier: workspace:*
         version: link:../Icons
-      '@gemeente-denhaag/typography':
-        specifier: workspace:*
-        version: link:../Typography
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -287,9 +287,9 @@ importers:
       '@gemeente-denhaag/link':
         specifier: workspace:*
         version: link:../Link
-      '@gemeente-denhaag/typography':
+      '@gemeente-denhaag/paragraph':
         specifier: workspace:*
-        version: link:../Typography
+        version: link:../Paragraph
       '@gemeente-denhaag/utils':
         specifier: workspace:*
         version: link:../Utils
@@ -302,10 +302,6 @@ importers:
       react-dom:
         specifier: 18 || 19
         version: 19.0.0(react@19.0.0)
-    devDependencies:
-      '@gemeente-denhaag/iconbutton':
-        specifier: workspace:*
-        version: link:../IconButton
 
   components/CardAuthentication:
     dependencies:
@@ -353,15 +349,15 @@ importers:
       '@gemeente-denhaag/icons':
         specifier: workspace:*
         version: link:../Icons
+      '@gemeente-denhaag/paragraph':
+        specifier: workspace:*
+        version: link:../Paragraph
       '@gemeente-denhaag/process-steps':
         specifier: workspace:*
         version: link:../ProcessSteps
       '@gemeente-denhaag/step-marker':
         specifier: workspace:*
         version: link:../StepMarker
-      '@gemeente-denhaag/typography':
-        specifier: workspace:*
-        version: link:../Typography
       '@gemeente-denhaag/utils':
         specifier: workspace:*
         version: link:../Utils
@@ -395,9 +391,6 @@ importers:
       '@gemeente-denhaag/icons':
         specifier: workspace:*
         version: link:../Icons
-      '@gemeente-denhaag/typography':
-        specifier: workspace:*
-        version: link:../Typography
 
   components/CtaLink:
     devDependencies:
@@ -641,6 +634,9 @@ importers:
       '@gemeente-denhaag/header-logo':
         specifier: workspace:*
         version: link:../HeaderLogo
+      '@gemeente-denhaag/heading':
+        specifier: workspace:*
+        version: link:../Heading
       '@gemeente-denhaag/iconbutton':
         specifier: workspace:*
         version: link:../IconButton
@@ -659,15 +655,15 @@ importers:
       '@gemeente-denhaag/menu':
         specifier: workspace:*
         version: link:../Menu
+      '@gemeente-denhaag/paragraph':
+        specifier: workspace:*
+        version: link:../Paragraph
       '@gemeente-denhaag/responsive-content':
         specifier: workspace:*
         version: link:../ResponsiveContent
       '@gemeente-denhaag/sheet':
         specifier: workspace:*
         version: link:../Sheet
-      '@gemeente-denhaag/typography':
-        specifier: workspace:*
-        version: link:../Typography
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -767,12 +763,6 @@ importers:
 
   components/Link:
     dependencies:
-      '@gemeente-denhaag/icons':
-        specifier: workspace:*
-        version: link:../Icons
-      clsx:
-        specifier: 2.1.1
-        version: 2.1.1
       react:
         specifier: 18 || 19
         version: 19.0.0
@@ -780,12 +770,18 @@ importers:
         specifier: 18 || 19
         version: 19.0.0(react@19.0.0)
     devDependencies:
+      '@gemeente-denhaag/icons':
+        specifier: workspace:*
+        version: link:../Icons
       '@nl-design-system-candidate/link-css':
-        specifier: 1.0.2
-        version: 1.0.2
+        specifier: 2.0.0
+        version: 2.0.0
       '@nl-design-system-candidate/link-react':
-        specifier: 1.1.1
-        version: 1.1.1(@babel/runtime@7.26.0)(react@19.0.0)
+        specifier: 1.1.2
+        version: 1.1.2(@babel/runtime@7.26.0)(react@19.0.0)
+      clsx:
+        specifier: 2.1.1
+        version: 2.1.1
 
   components/LinkButton:
     dependencies:
@@ -997,9 +993,6 @@ importers:
       '@gemeente-denhaag/step-marker':
         specifier: workspace:*
         version: link:../StepMarker
-      '@gemeente-denhaag/typography':
-        specifier: workspace:*
-        version: link:../Typography
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -1442,9 +1435,6 @@ importers:
       '@gemeente-denhaag/textarea':
         specifier: workspace:*
         version: link:../../components/Textarea
-      '@gemeente-denhaag/typography':
-        specifier: workspace:*
-        version: link:../../components/Typography
       '@gemeente-denhaag/unorderedlist':
         specifier: workspace:*
         version: link:../../components/UnorderedList
@@ -1568,9 +1558,6 @@ importers:
       '@gemeente-denhaag/textarea':
         specifier: workspace:*
         version: link:../../components/Textarea
-      '@gemeente-denhaag/typography':
-        specifier: workspace:*
-        version: link:../../components/Typography
       react:
         specifier: 18 || 19
         version: 19.0.0
@@ -1796,6 +1783,9 @@ importers:
       '@gemeente-denhaag/sidenav':
         specifier: workspace:*
         version: link:../../components/Sidenav
+      '@gemeente-denhaag/status-badge':
+        specifier: workspace:*
+        version: link:../../components/StatusBadge
       '@gemeente-denhaag/step-marker':
         specifier: workspace:*
         version: link:../../components/StepMarker
@@ -3236,11 +3226,11 @@ packages:
       '@babel/runtime': ^7
       react: ^18
 
-  '@nl-design-system-candidate/link-css@1.0.2':
-    resolution: {integrity: sha512-QbGnbdqmIbpvhddvr+8DXCpeEKTLIMcImpHsPdVzlviZdWrdY1JYB11+tggsDLiMOVQIXCdkXjXik0Cmo1H5MA==}
+  '@nl-design-system-candidate/link-css@2.0.0':
+    resolution: {integrity: sha512-56dgQRXmo1z6Boen25vZ1eOhPRDV0GG+QCB4rH7WuALE3IcQuINYMx4+xJqQm8Fu5k/De9QBV0mE1uPs9bHy1w==}
 
-  '@nl-design-system-candidate/link-react@1.1.1':
-    resolution: {integrity: sha512-l0seBlSTN1XOSPdssQXBluYMAur6wp2ZjXu7Sa+KbN94y3vpvDzHjVUibRWBINUBSIOOcoGML0mvMq50G2afig==}
+  '@nl-design-system-candidate/link-react@1.1.2':
+    resolution: {integrity: sha512-8KVR6dI0QlXOeriws6XkfRgI9TCCJNVqazT2An/qmb15snXNcKEwiAtcSJq8Kw0HxNczDsGKpG+e35IWZW/nfw==}
     peerDependencies:
       '@babel/runtime': ^7
       react: ^18
@@ -4217,12 +4207,15 @@ packages:
 
   '@utrecht/components@1.0.0':
     resolution: {integrity: sha512-PGrTGpuLT0vGM2GKKoh2T7bkS9cwTsBxV+IdN8ACYNHFmbmN5OGHmoaQLGme/I89iEHUZil8HFCc+C3p8mceJA==}
+    deprecated: 'The @utrecht/components package has been deprecated. To migrate: the SCSS files are now only available in the npm package for the specific component. For example: @utrecht/button-css/src/_mixin.scss. The entire component library is now available in @utrecht/component-library-css/dist/index.css.'
 
   '@utrecht/components@4.0.0':
     resolution: {integrity: sha512-vpw8p5FEU/yrSGL5JU+x6bDXIreEPU6WPEagOkcdqbFGMovWS8uUHNWmv+PY1xJIOjOb98RebSsbFDoA4zllVQ==}
+    deprecated: 'The @utrecht/components package has been deprecated. To migrate: the SCSS files are now only available in the npm package for the specific component. For example: @utrecht/button-css/src/_mixin.scss. The entire component library is now available in @utrecht/component-library-css/dist/index.css.'
 
   '@utrecht/components@7.4.0':
     resolution: {integrity: sha512-LWFJjJ7TF0eaoWq5TGrg7rNYnG+G5yIEJhuiwFlbICwSx2n+gZVbAE1dAW8YG2mGqveXZk38hBC2FWNE1tj1BQ==}
+    deprecated: 'The @utrecht/components package has been deprecated. To migrate: the SCSS files are now only available in the npm package for the specific component. For example: @utrecht/button-css/src/_mixin.scss. The entire component library is now available in @utrecht/component-library-css/dist/index.css.'
 
   '@utrecht/currency-data-css@1.3.0':
     resolution: {integrity: sha512-9PrVvMLIy1YBd+IK8XsnJHCshKvGHUQVbX53hnkVvR76vaIrSMMUqmzu/GK6SXVlA9hb/ZjKkKPMBPfsJ3YLvA==}
@@ -11158,9 +11151,9 @@ snapshots:
       clsx: 2.1.1
       react: 19.0.0
 
-  '@nl-design-system-candidate/link-css@1.0.2': {}
+  '@nl-design-system-candidate/link-css@2.0.0': {}
 
-  '@nl-design-system-candidate/link-react@1.1.1(@babel/runtime@7.26.0)(react@19.0.0)':
+  '@nl-design-system-candidate/link-react@1.1.2(@babel/runtime@7.26.0)(react@19.0.0)':
     dependencies:
       '@babel/runtime': 7.26.0
       clsx: 2.1.1

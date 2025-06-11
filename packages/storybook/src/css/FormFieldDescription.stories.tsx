@@ -2,7 +2,7 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import readme from '../../../../components/FormFieldDescription/README.md?raw';
 import { FormFieldDescription } from '@gemeente-denhaag/form-field-description';
-import { Paragraph } from '@gemeente-denhaag/typography';
+import { Paragraph } from '@gemeente-denhaag/paragraph';
 
 const meta = {
   title: 'CSS/Input/Form field description',

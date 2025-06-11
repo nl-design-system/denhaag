@@ -1,9 +1,8 @@
 import React, { ReactNode } from 'react';
 import Button from '@gemeente-denhaag/button';
-import { Heading4 } from '@gemeente-denhaag/typography';
+import { Heading } from '@gemeente-denhaag/heading';
 import { AlertTriangleIcon, CheckCircleIcon, CircleInformationIcon, CloseIcon } from '@gemeente-denhaag/icons';
 import IconButton from '@gemeente-denhaag/iconbutton';
-
 import './index.scss';
 import clsx from 'clsx';
 
@@ -79,7 +78,7 @@ export const Alert = ({ id, title, text, variant, action, close, supportIcon, cl
       <div className="denhaag-alert__main-content">
         <div className="denhaag-alert__icon">{icon}</div>
         <div className="denhaag-alert__content">
-          <Heading4>{title}</Heading4>
+          <Heading level={4}>{title}</Heading>
           {text}
           {action && (
             <Button type="button" onClick={() => action.onClick()}>
