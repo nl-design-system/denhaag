@@ -6,6 +6,10 @@
     --denhaag-anchor-collapse-transition-duration: 0;
     --denhaag-anchor-collapse-open-transition-duration: 0;
   }
+
+  &:first-of-type {
+    padding-block-start: var(--denhaag-space-2xl);
+  }
 }
 
 .denhaag-anchor-collapse--reduced-motion {
