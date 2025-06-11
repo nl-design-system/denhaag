@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import { PageIndexNav, PageIndexNavProps } from './PageIndexNav';
 import UnorderedList, { UnorderedListItem } from '@gemeente-denhaag/unorderedlist';
-import Link from '@gemeente-denhaag/link';
+import { Link } from '@gemeente-denhaag/link';
 import clsx from 'clsx';
 import { Heading1, Heading2, Heading3, Heading4, Heading5 } from '@gemeente-denhaag/typography';
 
