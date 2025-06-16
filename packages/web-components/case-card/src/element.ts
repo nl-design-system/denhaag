@@ -1,10 +1,13 @@
 import stylesheet from '@gemeente-denhaag/card/dist/stylesheet.mjs';
 
+export type CaseCardAppearance = 'default' | 'archived' | 'list';
+
 export interface CardData {
   lang?: string;
   dateTime?: string;
   href: string;
   linkLabel?: string;
+  appearance?: CaseCardAppearance;
 }
 
 /**
@@ -15,6 +18,7 @@ export interface CardData {
  * @attr {string} href - URL for the action link
  * @attr {string} lang - Language code for date formatting (defaults to document language or 'nl-NL')
  * @attr {string} linklabel - Accessible label for the action link
+ * @attr {string} appearance - Visual appearance of the card ('default' | 'archived' | 'list')
  *
  * @slot heading - The main title content
  * @slot subtitle - Optional subtitle content
@@ -22,7 +26,7 @@ export interface CardData {
  * @slot - Default slot for additional content
  *
  * @example
- * <denhaag-case-card href="/case/123" datetime="2024-01-15">
+ * <denhaag-case-card href="/case/123" datetime="2024-01-15" appearance="archived">
  *   <h3 slot="heading">Case Title</h3>
  *   <span slot="subtitle">Case subtitle</span>
  * </denhaag-case-card>
@@ -31,6 +35,7 @@ export class DenhaagCaseCardElement extends HTMLElement implements CardData {
   dateTime?: string;
   href: string;
   linkLabel?: string;
+  appearance?: CaseCardAppearance;
   _shadow: ShadowRoot;
   _container: HTMLDivElement;
 
@@ -41,6 +46,7 @@ export class DenhaagCaseCardElement extends HTMLElement implements CardData {
     this.href = this.getAttribute('href') || '';
     this.lang = this.getAttribute('lang') || document.documentElement.lang || 'nl-NL';
     this.linkLabel = this.getAttribute('linkLabel') || '';
+    this.appearance = (this.getAttribute('appearance') as CaseCardAppearance) || 'default';
 
     this._shadow = this.attachShadow({
       mode: 'closed',
@@ -78,20 +84,20 @@ export class DenhaagCaseCardElement extends HTMLElement implements CardData {
     return contextDiv;
   }
 
-  createSubtitleElement(): HTMLParagraphElement | null {
+  createSubtitleElement(): HTMLDivElement | null {
     const hasSubtitle = this.querySelector('[slot="subtitle"]');
     if (!hasSubtitle) {
       return null;
     }
 
-    const subtitleP = this.ownerDocument.createElement('p');
-    subtitleP.className = 'utrecht-paragraph denhaag-case-card__subtitle';
+    const subtitleDiv = this.ownerDocument.createElement('div');
+    subtitleDiv.className = 'denhaag-case-card__subtitle';
 
     const subtitleSlot = this.ownerDocument.createElement('slot');
     subtitleSlot.setAttribute('name', 'subtitle');
 
-    subtitleP.appendChild(subtitleSlot);
-    return subtitleP;
+    subtitleDiv.appendChild(subtitleSlot);
+    return subtitleDiv;
   }
 
   createActionLink(): HTMLAnchorElement {
@@ -150,7 +156,14 @@ export class DenhaagCaseCardElement extends HTMLElement implements CardData {
     this._container.innerHTML = '';
 
     const card = this.ownerDocument.createElement('div');
-    card.className = 'denhaag-case-card';
+
+    const classNames = ['denhaag-case-card'];
+    if (this.appearance === 'archived') {
+      classNames.push('denhaag-case-card--archived');
+    } else if (this.appearance === 'list') {
+      classNames.push('denhaag-case-card--list');
+    }
+    card.className = classNames.join(' ');
 
     const wrapper = this.ownerDocument.createElement('div');
     wrapper.className = 'denhaag-case-card__wrapper';
@@ -160,14 +173,14 @@ export class DenhaagCaseCardElement extends HTMLElement implements CardData {
 
     const contentDiv = this.ownerDocument.createElement('div');
 
-    const title = this.ownerDocument.createElement('p');
-    title.className = 'utrecht-paragraph denhaag-case-card__title';
+    const titleDiv = this.ownerDocument.createElement('div');
+    titleDiv.className = 'denhaag-case-card__title';
 
     const headingSlot = this.ownerDocument.createElement('slot');
     headingSlot.setAttribute('name', 'heading');
-    title.appendChild(headingSlot);
+    titleDiv.appendChild(headingSlot);
 
-    contentDiv.appendChild(title);
+    contentDiv.appendChild(titleDiv);
 
     const subtitle = this.createSubtitleElement();
     if (subtitle) {
@@ -200,7 +213,7 @@ export class DenhaagCaseCardElement extends HTMLElement implements CardData {
   }
 
   static get observedAttributes() {
-    return ['datetime', 'href', 'lang', 'linklabel'];
+    return ['datetime', 'href', 'lang', 'linklabel', 'appearance'];
   }
 
   attributeChangedCallback(name: string, oldValue: string | null, newValue: string | null) {
@@ -219,6 +232,13 @@ export class DenhaagCaseCardElement extends HTMLElement implements CardData {
       case 'linklabel':
         this.linkLabel = newValue || '';
         break;
+      case 'appearance': {
+        const validAppearances: CaseCardAppearance[] = ['default', 'archived', 'list'];
+        this.appearance = validAppearances.includes(newValue as CaseCardAppearance)
+          ? (newValue as CaseCardAppearance)
+          : 'default';
+        break;
+      }
     }
 
     if (this.isConnected) {

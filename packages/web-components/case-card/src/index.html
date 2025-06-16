@@ -24,7 +24,6 @@
 <link rel="stylesheet" href="https://unpkg.com/@gemeente-denhaag/icons@3.0.0/dist/index.css" />
 <link rel="stylesheet" href="https://unpkg.com/@utrecht/document-css@1.5.0/dist/index.css" />
 <link rel="stylesheet" href="https://unpkg.com/@utrecht/paragraph-css@2.3.0/dist/index.css" />
-
 <link rel="stylesheet" href="https://unpkg.com/@utrecht/document-css@1.5.0/dist/index.css" />
 
 <div class="utrecht-document utrecht-document--surface">
@@ -57,7 +56,7 @@
     </denhaag-case-card>
 
     <h3>No datetime</h3>
-    <denhaag-case-card href="https://example.com/">
+    <denhaag-case-card href="https://example.com/" appearance="archived">
       <p slot="heading" class="utrecht-paragraph">Shrimp and Chorizo Paella</p>
       <p slot="subtitle" class="utrecht-paragraph">
         This impressive paella is a perfect party dish and a fun meal to cook.
@@ -65,8 +64,11 @@
     </denhaag-case-card>
 
     <h3>No subtitle</h3>
-    <denhaag-case-card dateTime="2025-04-09T09:39:22.006Z" href="https://example.com/">
-      <span slot="heading" class="utrecht-paragraph">Shrimp and Chorizo Paella</span>
+    <denhaag-case-card dateTime="2025-04-09T09:39:22.006Z" href="https://example.com/" appearance="list">
+      <p slot="heading" class="utrecht-paragraph">Shrimp and Chorizo Paella</p>
+      <p slot="subtitle" class="utrecht-paragraph">
+        This impressive paella is a perfect party dish and a fun meal to cook.
+      </p>
       <span slot="icon">
         <svg
           xmlns="http://www.w3.org/2000/svg"
