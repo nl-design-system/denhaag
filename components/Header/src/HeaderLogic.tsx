@@ -20,6 +20,7 @@ import { LanguageSwitcherLogic, LanguageSwitcherLogicProps } from '@gemeente-den
 import { Heading4, Paragraph } from '@gemeente-denhaag/typography';
 import { Button } from '@gemeente-denhaag/button';
 import './index.scss';
+import clsx from 'clsx';
 
 export interface HeaderLogicProps {
   breadcrumbs?: BreadcrumbProps;
@@ -28,6 +29,7 @@ export interface HeaderLogicProps {
   mobileMenu?: HeaderMobileMenuProps;
   logoutButton?: LogoutButtonProps;
   mobileBreakpoint?: number;
+  logo?: AnchorHTMLAttributes<HTMLAnchorElement>;
 }
 
 interface LogoutButtonProps {
@@ -65,6 +67,7 @@ export const HeaderLogic = ({
   mobileMenu,
   logoutButton,
   mobileBreakpoint = 1024,
+  logo = { href: 'https://www.denhaag.nl', 'aria-label': 'Gemeente Den Haag', children: <HeaderLogo /> },
 }: HeaderLogicProps) => {
   const menuConstants = {
     WELCOME: 'WELCOME',
@@ -180,16 +183,14 @@ export const HeaderLogic = ({
     );
   };
 
+  const { className: logoClassName, ...logoProps } = logo;
+
   return (
     <Header>
       <HeaderContentContainer>
         <HeaderContent className="denhaag-responsive-content">
           <HeaderLogoContainer>
-            <Link
-              href="https://www.denhaag.nl"
-              className="denhaag-logo denhaag-header__link"
-              aria-label="Gemeente Den Haag"
-            >
+            <Link className={clsx('denhaag-logo denhaag-header__link', logoClassName)} {...logoProps}>
               <HeaderLogo />
             </Link>
           </HeaderLogoContainer>
@@ -273,11 +274,7 @@ export const HeaderLogic = ({
             <ResponsiveContent>
               <HeaderContent>
                 <HeaderLogoContainer>
-                  <Link
-                    href="https://www.denhaag.nl"
-                    className="denhaag-logo denhaag-header__link"
-                    aria-label="Gemeente Den Haag"
-                  >
+                  <Link className={clsx('denhaag-logo denhaag-header__link', logoClassName)} {...logoProps}>
                     <HeaderLogo />
                   </Link>
                 </HeaderLogoContainer>
