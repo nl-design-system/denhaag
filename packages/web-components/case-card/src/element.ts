@@ -7,6 +7,26 @@ export interface CardData {
   linkLabel?: string;
 }
 
+/**
+ * Custom element for displaying case cards with Den Haag styling
+ * @element denhaag-case-card
+ *
+ * @attr {string} datetime - ISO 8601 date string for the case
+ * @attr {string} href - URL for the action link
+ * @attr {string} lang - Language code for date formatting (defaults to document language or 'nl-NL')
+ * @attr {string} linklabel - Accessible label for the action link
+ *
+ * @slot heading - The main title content
+ * @slot subtitle - Optional subtitle content
+ * @slot icon - Optional custom icon for the action link (defaults to arrow)
+ * @slot - Default slot for additional content
+ *
+ * @example
+ * <denhaag-case-card href="/case/123" datetime="2024-01-15">
+ *   <h3 slot="heading">Case Title</h3>
+ *   <span slot="subtitle">Case subtitle</span>
+ * </denhaag-case-card>
+ */
 export class DenhaagCaseCardElement extends HTMLElement implements CardData {
   dateTime?: string;
   href: string;
@@ -83,7 +103,6 @@ export class DenhaagCaseCardElement extends HTMLElement implements CardData {
       link.setAttribute('aria-label', this.linkLabel);
     }
 
-    // Check if icon slot exists
     const hasIcon = this.querySelector('[slot="icon"]');
     if (hasIcon) {
       const iconSlot = this.ownerDocument.createElement('slot');
@@ -101,7 +120,27 @@ export class DenhaagCaseCardElement extends HTMLElement implements CardData {
 
       link.appendChild(iconSlot);
     } else {
-      link.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" class="denhaag-icon denhaag-case-card__arrow" focusable="false" aria-hidden="true" shape-rendering="auto"><path fill="currentColor" d="M12.293 5.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L16.586 13H5a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414"></path></svg>`;
+      // Default arrow icon
+      const svg = this.ownerDocument.createElementNS('http://www.w3.org/2000/svg', 'svg');
+      svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+      svg.setAttribute('width', '1em');
+      svg.setAttribute('height', '1em');
+      svg.setAttribute('fill', 'none');
+      svg.setAttribute('viewBox', '0 0 24 24');
+      svg.setAttribute('class', 'denhaag-icon denhaag-case-card__arrow');
+      svg.setAttribute('focusable', 'false');
+      svg.setAttribute('aria-hidden', 'true');
+      svg.setAttribute('shape-rendering', 'auto');
+
+      const path = this.ownerDocument.createElementNS('http://www.w3.org/2000/svg', 'path');
+      path.setAttribute('fill', 'currentColor');
+      path.setAttribute(
+        'd',
+        'M12.293 5.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L16.586 13H5a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414',
+      );
+
+      svg.appendChild(path);
+      link.appendChild(svg);
     }
 
     return link;
