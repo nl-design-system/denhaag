@@ -1,5 +1,11 @@
 # @gemeente-denhaag/header
 
+## 2.2.0
+
+### Minor Changes
+
+- 756b18a: Added option to make logo configurable in header
+
 ## 2.1.4
 
 ### Patch Changes

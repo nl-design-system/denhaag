@@ -1,5 +1,13 @@
 # @gemeente-denhaag/case-card-element
 
+## 2.0.0
+
+### Major Changes
+
+- a295d37: - Implement new case card css in web component
+  - Add appearance property
+  - Improve slots usability
+
 ## 1.1.1
 
 ### Patch Changes
