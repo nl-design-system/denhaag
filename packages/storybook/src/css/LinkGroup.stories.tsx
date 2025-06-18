@@ -27,7 +27,7 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   render: () => (
     <div className="denhaag-link-group">
-      <h4 className="utrecht-heading-4 denhaag-link-group__caption">Caption</h4>
+      <h4 className="nl-heading-level-4 denhaag-link-group__caption">Caption</h4>
       <ul className="denhaag-link-group__list">
         <li className="denhaag-link-group__list-item">
           <a
@@ -172,7 +172,7 @@ export const WithImage: Story = {
         src="https://images.unsplash.com/photo-1569235186275-626cb53b83ce?w=140&h=140"
         alt="placeholder"
       />
-      <h4 className="utrecht-heading-4 denhaag-link-group__caption">Caption</h4>
+      <h4 className="nl-heading-level-4 denhaag-link-group__caption">Caption</h4>
       <ul className="denhaag-link-group__list">
         <li className="denhaag-link-group__list-item">
           <a
@@ -318,7 +318,7 @@ export const DarkBackground: Story = {
       className="denhaag-link-group denhaag-link-group--dark"
       style={{ backgroundColor: '#2D2D2D', padding: '1rem' }}
     >
-      <h4 className="utrecht-heading-4 denhaag-link-group__caption">Caption</h4>
+      <h4 className="nl-heading-level-4 denhaag-link-group__caption">Caption</h4>
       <ul className="denhaag-link-group__list">
         <li className="denhaag-link-group__list-item">
           <a
