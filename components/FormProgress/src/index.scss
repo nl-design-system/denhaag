@@ -21,6 +21,8 @@
 .denhaag-form-progress__previous {
   position: absolute;
   inset-inline-start: 0;
+
+  --nl-link-text-decoration-line: none;
 }
 
 .denhaag-form-progress__label {

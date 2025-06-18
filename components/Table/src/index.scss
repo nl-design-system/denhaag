@@ -82,6 +82,9 @@
   text-align: start;
   border-block-end: var(--utrecht-table-border-width) solid var(--utrecht-table-border-color);
 
+  --nl-link-color: var(--denhaag-table-cell-color);
+  --nl-link-text-decoration-line: none;
+
   &--align-top {
     vertical-align: top;
   }
