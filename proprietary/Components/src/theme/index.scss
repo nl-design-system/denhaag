@@ -32,6 +32,26 @@
     --nl-heading-level-6-margin-block-start: 0;
   }
 
+  .nl-heading--level-1 + .nl-paragraph {
+    --nl-paragraph-margin-block-start: calc(var(--nl-heading-level-1-font-size) / 4);
+  }
+
+  .nl-heading--level-2 + .nl-paragraph {
+    --nl-paragraph-margin-block-start: calc(var(--nl-heading-level-2-font-size) / 4);
+  }
+
+  .nl-heading--level-3 + .nl-paragraph {
+    --nl-paragraph-margin-block-start: calc(var(--nl-heading-level-3-font-size) / 4);
+  }
+
+  .nl-heading--level-4 + .nl-paragraph {
+    --nl-paragraph-margin-block-start: calc(var(--nl-heading-level-4-font-size) / 4);
+  }
+
+  .nl-heading--level-5 + .nl-paragraph {
+    --nl-paragraph-margin-block-start: calc(var(--nl-heading-level-5-font-size) / 4);
+  }
+
   .utrecht-heading-1:first-child {
     --utrecht-heading-1-margin-block-start: 0;
   }
