@@ -34,15 +34,16 @@
     "@gemeente-denhaag/breadcrumb": "workspace:*",
     "@gemeente-denhaag/button": "workspace:*",
     "@gemeente-denhaag/header-logo": "workspace:*",
+    "@gemeente-denhaag/heading": "workspace:*",
     "@gemeente-denhaag/iconbutton": "workspace:*",
     "@gemeente-denhaag/icons": "workspace:*",
     "@gemeente-denhaag/language-switcher": "workspace:*",
     "@gemeente-denhaag/link": "workspace:*",
     "@gemeente-denhaag/link-group": "workspace:*",
     "@gemeente-denhaag/menu": "workspace:*",
+    "@gemeente-denhaag/paragraph": "workspace:*",
     "@gemeente-denhaag/responsive-content": "workspace:*",
     "@gemeente-denhaag/sheet": "workspace:*",
-    "@gemeente-denhaag/typography": "workspace:*",
     "clsx": "2.1.1"
   },
   "peerDependencies": {

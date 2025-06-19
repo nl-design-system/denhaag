@@ -1,6 +1,7 @@
 import React from 'react';
 import { ButtonLink } from '@utrecht/component-library-react';
 import ResponsiveContent from '@gemeente-denhaag/responsive-content';
+import { Paragraph } from '@gemeente-denhaag/paragraph';
 import '@gemeente-denhaag/button-group';
 import '@gemeente-denhaag/icons';
 import '@gemeente-denhaag/list';
@@ -76,7 +77,7 @@ export const FooterLegal: React.FC<FooterLegalProps> = (props: FooterLegalProps)
         )}
         {props.copyrightLabel && (
           <div className="denhaag-footer__legal-copyright">
-            <p className="utrecht-paragraph">{props.copyrightLabel}</p>
+            <Paragraph>{props.copyrightLabel}</Paragraph>
           </div>
         )}
       </ResponsiveContent>
@@ -91,8 +92,8 @@ export const FooterContact: React.FC<FooterContactProps> = (props: FooterContact
         <div className="denhaag-footer-group">
           {props.newsletterData && (
             <div className="denhaag-link-group denhaag-link-group--dark">
-              <h4 className="utrecht-heading-4 denhaag-link-group__caption">{props.newsletterData.title}</h4>
-              <p className="utrecht-paragraph">{props.newsletterData.text}</p>
+              <h4 className="nl-heading-level-4 denhaag-link-group__caption">{props.newsletterData.title}</h4>
+              <Paragraph>{props.newsletterData.text}</Paragraph>
               <div className="denhaag-button-group">
                 <ButtonLink appearance="primary-action-button" href={props.newsletterData.href}>
                   {props.newsletterData.buttonLabel}
@@ -102,7 +103,7 @@ export const FooterContact: React.FC<FooterContactProps> = (props: FooterContact
           )}
           {props.socialData && (
             <div className="denhaag-link-group denhaag-link-group--dark">
-              <h4 className="utrecht-heading-4 denhaag-link-group__caption">{props.socialData.title}</h4>
+              <h4 className="nl-heading-level-4 denhaag-link-group__caption">{props.socialData.title}</h4>
               <ul className="utrecht-list-social">
                 {props.socialData.links.map((item, key) => (
                   <li className="utrecht-list-social__item" key={key}>
@@ -116,7 +117,7 @@ export const FooterContact: React.FC<FooterContactProps> = (props: FooterContact
           )}
           {props.contactData && (
             <div className="denhaag-link-group denhaag-link-group--dark">
-              <h4 className="utrecht-heading-4 denhaag-link-group__caption">{props.contactData.title}</h4>
+              <h4 className="nl-heading-level-4 denhaag-link-group__caption">{props.contactData.title}</h4>
               <ul className="denhaag-link-group__list">
                 {props.contactData.links.map((item, key) => (
                   <li className="denhaag-link-group__list-item" key={key}>

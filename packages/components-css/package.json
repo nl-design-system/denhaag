@@ -28,7 +28,6 @@
     "@gemeente-denhaag/anchor-collapse": "workspace:*",
     "@gemeente-denhaag/anchor-navigation": "workspace:*",
     "@gemeente-denhaag/article-meta": "workspace:*",
-    "@gemeente-denhaag/badge-counter": "workspace:*",
     "@gemeente-denhaag/blockquote": "workspace:*",
     "@gemeente-denhaag/breadcrumb": "workspace:*",
     "@gemeente-denhaag/button": "workspace:*",
@@ -79,12 +78,10 @@
     "@gemeente-denhaag/responsive-content": "workspace:*",
     "@gemeente-denhaag/select": "workspace:*",
     "@gemeente-denhaag/sidenav": "workspace:*",
-    "@gemeente-denhaag/status-badge": "workspace:*",
     "@gemeente-denhaag/tab": "workspace:*",
     "@gemeente-denhaag/table": "workspace:*",
     "@gemeente-denhaag/text-input": "workspace:*",
     "@gemeente-denhaag/textarea": "workspace:*",
-    "@gemeente-denhaag/typography": "workspace:*",
     "@gemeente-denhaag/unorderedlist": "workspace:*"
   }
 }

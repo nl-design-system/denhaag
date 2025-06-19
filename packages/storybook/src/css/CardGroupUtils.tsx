@@ -6,7 +6,6 @@ import '@gemeente-denhaag/card-group';
 import '@gemeente-denhaag/icons';
 import '@gemeente-denhaag/image';
 import '@gemeente-denhaag/link';
-import '@gemeente-denhaag/typography';
 import clsx from 'clsx';
 
 // TODO: create real generic AuthenticationCard and AuthenticationCardGroup components, and move them to the right packages.

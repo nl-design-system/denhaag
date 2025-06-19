@@ -1,5 +1,5 @@
 import React, { HTMLAttributes } from 'react';
-import Link from '@gemeente-denhaag/link';
+import { Link } from '@gemeente-denhaag/link';
 import { ArrowLeftIcon } from '@gemeente-denhaag/icons';
 import './index.scss';
 

@@ -29,5 +29,8 @@
     "clean": "rimraf dist tsconfig.tsbuildinfo",
     "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\"",
     "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@gemeente-denhaag/heading": "workspace:*"
   }
 }

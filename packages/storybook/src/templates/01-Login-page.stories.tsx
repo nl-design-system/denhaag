@@ -1,12 +1,13 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import { Heading2, Paragraph } from '@gemeente-denhaag/typography';
+import { Paragraph } from '@gemeente-denhaag/paragraph';
 import { Page, PageHeader, PageFooter } from '@gemeente-denhaag/page';
 import { HeaderLogic, HeaderLogicProps } from '@gemeente-denhaag/header';
 import { Footer } from '@gemeente-denhaag/footer';
 import { ResponsiveContent } from '@gemeente-denhaag/responsive-content';
 import { Link } from '@gemeente-denhaag/link';
 import { Alert } from '@gemeente-denhaag/alert';
+import { Heading } from '@gemeente-denhaag/heading';
 
 import { headerProps, footerLegalData, footerSocialData, newsletterData, contactData, copyright } from './util';
 
@@ -36,12 +37,12 @@ export const Login: StoryObj<typeof meta> = {
         <HeaderLogic {...loginPageHeaderProps} />
       </PageHeader>
       <ResponsiveContent className="denhaag-page-content">
-        <Heading2>Inloggen</Heading2>
+        <Heading level={2}>Inloggen</Heading>
         <Paragraph>
           Bent u gemachtigd? <Link href="#">Log in plaats hiervan in als gemachtigde.</Link>
         </Paragraph>
         <AuthenticationCardGroup cards={['DigiD', 'eHerkenning', 'eIDAS']} responsive />
-        <Heading2>Inloggen als gemachtigde</Heading2>
+        <Heading level={2}>Inloggen als gemachtigde</Heading>
         <Alert
           text=""
           title="Om in te loggen als gemachtigde heeft u een geldige machtiging nodig."

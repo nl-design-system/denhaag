@@ -1,5 +1,5 @@
 import React, { HTMLAttributes, useState } from 'react';
-import { BadgeCounter } from '@gemeente-denhaag/badge-counter';
+import { NumberBadge } from '@gemeente-denhaag/number-badge';
 import { SheetContainer } from '@gemeente-denhaag/sheet';
 import { ArrowRightIcon, ChevronDownIcon, ArrowLeftIcon, LogOutIcon } from '@gemeente-denhaag/icons';
 import { MobileMenuList } from './MobileMenuList';
@@ -67,7 +67,7 @@ const ExpandedListItem = ({ label, navigation, Link, scrollMenu, tabIndex }: Exp
                   <MobileMenuLink Link={Link} href={l3Nav.href}>
                     <MobileMenuLinkLabel>
                       <span>{l3Nav.label}</span>
-                      {l3Nav.badgeCounter && <BadgeCounter>{l3Nav.badgeCounter}</BadgeCounter>}
+                      {l3Nav.badgeCounter && <NumberBadge>{l3Nav.badgeCounter}</NumberBadge>}
                     </MobileMenuLinkLabel>
                     <span className="denhaag-mobile-menu-list-submenu-list-item-link__icon">
                       <ArrowRightIcon />
@@ -109,7 +109,7 @@ const ExpandedList = ({
                 <MobileMenuLink Link={Link} href={l2Nav.href} tabIndex={tabIndex}>
                   <MobileMenuLinkLabel>
                     <span>{l2Nav.label}</span>
-                    {l2Nav.badgeCounter && <BadgeCounter>{l2Nav.badgeCounter}</BadgeCounter>}
+                    {l2Nav.badgeCounter && <NumberBadge>{l2Nav.badgeCounter}</NumberBadge>}
                   </MobileMenuLinkLabel>
                   <span className="denhaag-mobile-menu-list-submenu-list-item-link__icon">
                     <ArrowRightIcon />

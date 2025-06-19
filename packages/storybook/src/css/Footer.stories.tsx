@@ -9,6 +9,7 @@ import '@gemeente-denhaag/link';
 import '@gemeente-denhaag/link-group';
 import '@gemeente-denhaag/responsive-content';
 import '@utrecht/component-library-css/dist/index.css';
+import { Paragraph } from '@gemeente-denhaag/paragraph';
 
 const meta = {
   title: 'CSS/Page Elements/Footer',
@@ -24,7 +25,7 @@ export const Default: Story = {
         <div className="denhaag-responsive-content">
           <div className="denhaag-footer-group">
             <div className="denhaag-link-group denhaag-link-group--dark">
-              <h4 className="utrecht-heading-4 denhaag-link-group__caption">Caption</h4>
+              <h4 className="nl-heading-level-4 denhaag-link-group__caption">Caption</h4>
               <ul className="denhaag-link-group__list">
                 <li className="denhaag-link-group__list-item">
                   <a
@@ -159,7 +160,7 @@ export const Default: Story = {
               </ul>
             </div>
             <div className="denhaag-link-group denhaag-link-group--dark">
-              <h4 className="utrecht-heading-4 denhaag-link-group__caption">Caption</h4>
+              <h4 className="nl-heading-level-4 denhaag-link-group__caption">Caption</h4>
               <ul className="denhaag-link-group__list">
                 <li className="denhaag-link-group__list-item">
                   <a
@@ -294,7 +295,7 @@ export const Default: Story = {
               </ul>
             </div>
             <div className="denhaag-link-group denhaag-link-group--dark">
-              <h4 className="utrecht-heading-4 denhaag-link-group__caption">Caption</h4>
+              <h4 className="nl-heading-level-4 denhaag-link-group__caption">Caption</h4>
               <ul className="denhaag-link-group__list">
                 <li className="denhaag-link-group__list-item">
                   <a
@@ -429,7 +430,7 @@ export const Default: Story = {
               </ul>
             </div>
             <div className="denhaag-link-group denhaag-link-group--dark">
-              <h4 className="utrecht-heading-4 denhaag-link-group__caption">Caption</h4>
+              <h4 className="nl-heading-level-4 denhaag-link-group__caption">Caption</h4>
               <ul className="denhaag-link-group__list">
                 <li className="denhaag-link-group__list-item">
                   <a
@@ -564,7 +565,7 @@ export const Default: Story = {
               </ul>
             </div>
             <div className="denhaag-link-group denhaag-link-group--dark">
-              <h4 className="utrecht-heading-4 denhaag-link-group__caption">Caption</h4>
+              <h4 className="nl-heading-level-4 denhaag-link-group__caption">Caption</h4>
               <ul className="denhaag-link-group__list">
                 <li className="denhaag-link-group__list-item">
                   <a
@@ -699,7 +700,7 @@ export const Default: Story = {
               </ul>
             </div>
             <div className="denhaag-link-group denhaag-link-group--dark">
-              <h4 className="utrecht-heading-4 denhaag-link-group__caption">Caption</h4>
+              <h4 className="nl-heading-level-4 denhaag-link-group__caption">Caption</h4>
               <ul className="denhaag-link-group__list">
                 <li className="denhaag-link-group__list-item">
                   <a
@@ -840,11 +841,11 @@ export const Default: Story = {
         <div className="denhaag-responsive-content">
           <div className="denhaag-footer-group">
             <div className="denhaag-link-group denhaag-link-group--dark">
-              <h4 className="utrecht-heading-4 denhaag-link-group__caption">Meld u aan voor de nieuwsbrief</h4>
-              <p className="utrecht-paragraph">
+              <h4 className="nl-heading-level-4 denhaag-link-group__caption">Meld u aan voor de nieuwsbrief</h4>
+              <Paragraph>
                 Blijf gemakkelijk op de hoogte van ontwikkelingen in uw stadsdeel en de belangrijkste zaken van Den
                 Haag.
-              </p>
+              </Paragraph>
               <div className="denhaag-button-group">
                 <a href="#example-link" className="denhaag-button denhaag-button--primary-action">
                   Aanmelden nieuwsbrief
@@ -852,7 +853,7 @@ export const Default: Story = {
               </div>
             </div>
             <div className="denhaag-link-group denhaag-link-group--dark">
-              <h4 className="utrecht-heading-4 denhaag-link-group__caption">Volg ons op social media</h4>
+              <h4 className="nl-heading-level-4 denhaag-link-group__caption">Volg ons op social media</h4>
               <ul className="utrecht-list-social">
                 <li className="utrecht-list-social__item">
                   <a href="https://www.facebook.com/gemeenteDH/" className="utrecht-link-social" title="Facebook">
@@ -969,7 +970,7 @@ export const Default: Story = {
               </ul>
             </div>
             <div className="denhaag-link-group denhaag-link-group--dark">
-              <h4 className="utrecht-heading-4 denhaag-link-group__caption">Contact</h4>
+              <h4 className="nl-heading-level-4 denhaag-link-group__caption">Contact</h4>
               <ul className="denhaag-link-group__list">
                 <li className="denhaag-link-group__list-item">
                   <a
@@ -1063,7 +1064,7 @@ export const Default: Story = {
             </li>
           </ul>
           <div className="denhaag-footer__legal-copyright">
-            <p className="utrecht-paragraph">© 2021 Gemeente Den Haag</p>
+            <Paragraph>© 2021 Gemeente Den Haag</Paragraph>
           </div>
         </div>
       </section>
