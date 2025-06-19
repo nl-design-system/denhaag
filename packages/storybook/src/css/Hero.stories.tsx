@@ -84,7 +84,7 @@ export const ThemePage: Story = {
       <div className="denhaag-hero__container">
         <div className="denhaag-hero__content">
           <h1 className="denhaag-hero__title nl-heading nl-heading--level-1">Parkeren</h1>
-          <p className="utrecht-paragraph denhaag-hero__text">
+          <p className="nl-paragraph denhaag-hero__text">
             Et fugit est tenetur labore corporis. Magnam doloremque cum sapiente et quisquam saepe rerum. Dolorum
             tenetur incidunt a dolorum incidunt sit.
           </p>
