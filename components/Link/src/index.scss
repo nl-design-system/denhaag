@@ -16,6 +16,7 @@
   display: inline-flex;
   gap: var(--denhaag-link-icon-gap);
   vertical-align: var(--denhaag-link-with-icon-vertical-align, baseline);
+  text-decoration: none;
 
   --nl-link-text-decoration-line: none;
 }
