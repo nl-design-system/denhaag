@@ -57,12 +57,13 @@ ol.denhaag-breadcrumb__list {
   display: flex;
   pointer-events: var(--denhaag-breadcrumb-link-pointer-events);
   position: relative;
+  text-decoration: var(--denhaag-breadcrumb-link-text-decoration, none);
 
   --nl-link-text-decoration-line: var(--denhaag-breadcrumb-link-text-decoration, none);
 }
 
 .denhaag-breadcrumb__link--disabled {
-  --denhaag-breadcrumb-link-color: var(--denhaag-breadcrumb-current-color);
+  --nl-link-color: var(--denhaag-breadcrumb-current-color);
 
   cursor: none;
   pointer-events: none;
