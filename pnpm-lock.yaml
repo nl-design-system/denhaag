@@ -683,18 +683,6 @@ importers:
         specifier: 18 || 19
         version: 19.0.0(react@19.0.0)
 
-  components/Heading:
-    dependencies:
-      '@nl-design-system-candidate/heading-react':
-        specifier: 1.1.0
-        version: 1.1.0(@babel/runtime@7.26.0)(react@19.0.0)
-      react:
-        specifier: 18 || 19
-        version: 19.0.0
-      react-dom:
-        specifier: 18 || 19
-        version: 19.0.0(react@19.0.0)
-
   components/Hero: {}
 
   components/HighlightedLinks:
@@ -1718,9 +1706,6 @@ importers:
       '@gemeente-denhaag/header':
         specifier: workspace:*
         version: link:../../components/Header
-      '@gemeente-denhaag/heading':
-        specifier: workspace:*
-        version: link:../../components/Heading
       '@gemeente-denhaag/hero':
         specifier: workspace:*
         version: link:../../components/Hero
@@ -3223,12 +3208,6 @@ packages:
     peerDependencies:
       '@types/react': '>=16'
       react: '>=16'
-
-  '@nl-design-system-candidate/heading-react@1.1.0':
-    resolution: {integrity: sha512-0qhPs9bzgljBardDbJ8KyOM6mP/XViZfX3V1iFITiajGb7Lll2McujtthC2ciYlODBBu7p/EXHb+s7EEKmSM6w==}
-    peerDependencies:
-      '@babel/runtime': ^7
-      react: ^18
 
   '@nl-design-system-candidate/link-react@1.1.0':
     resolution: {integrity: sha512-UZjQOq2bqHyNrWJRuNfemetH+B6B+Dv/ISImeKMFyj/eZF0sZQCpBIyx/j0KEV9gTbItOLbWp97kvj/Ugut3MQ==}
@@ -11119,12 +11098,6 @@ snapshots:
     dependencies:
       '@types/mdx': 2.0.13
       '@types/react': 19.0.10
-      react: 19.0.0
-
-  '@nl-design-system-candidate/heading-react@1.1.0(@babel/runtime@7.26.0)(react@19.0.0)':
-    dependencies:
-      '@babel/runtime': 7.26.0
-      clsx: 2.1.1
       react: 19.0.0
 
   '@nl-design-system-candidate/link-react@1.1.0(@babel/runtime@7.26.0)(react@19.0.0)':
