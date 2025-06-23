@@ -31,7 +31,6 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@nl-design-system-candidate/number-badge-css": "1.1.2",
     "@nl-design-system-candidate/number-badge-react": "1.2.1"
   },
   "peerDependencies": {
