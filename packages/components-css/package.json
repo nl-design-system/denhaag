@@ -78,6 +78,7 @@
     "@gemeente-denhaag/responsive-content": "workspace:*",
     "@gemeente-denhaag/select": "workspace:*",
     "@gemeente-denhaag/sidenav": "workspace:*",
+    "@gemeente-denhaag/status-badge": "workspace:*",
     "@gemeente-denhaag/tab": "workspace:*",
     "@gemeente-denhaag/table": "workspace:*",
     "@gemeente-denhaag/text-input": "workspace:*",
