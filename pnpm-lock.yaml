@@ -1003,12 +1003,9 @@ importers:
         specifier: 18 || 19
         version: 19.0.0(react@19.0.0)
     devDependencies:
-      '@nl-design-system-candidate/paragraph-css':
-        specifier: 2.1.0
-        version: 2.1.0
       '@nl-design-system-candidate/paragraph-react':
-        specifier: 2.1.1
-        version: 2.1.1(@babel/runtime@7.26.0)(react@19.0.0)
+        specifier: 2.1.0
+        version: 2.1.0(@babel/runtime@7.26.0)(react@19.0.0)
 
   components/ProcessSteps:
     dependencies:
@@ -3287,11 +3284,8 @@ packages:
       '@babel/runtime': ^7
       react: ^18
 
-  '@nl-design-system-candidate/paragraph-css@2.1.0':
-    resolution: {integrity: sha512-7C2IbcspDdyukvc5OXNNU+JMkHrPZi3UMpalyoTf7f7ynXHD0SNVYkOAoW13tCEon1DCkcC6BqNQT5bO8n748g==}
-
-  '@nl-design-system-candidate/paragraph-react@2.1.1':
-    resolution: {integrity: sha512-AB1p7d+Ml3bMrutxc0/tKcv0NKsjweLFWIoR4hH4qND7mvabOGanT7ocvc5ZxKwDCNR7HSdATdzWB4Q8VBgUpw==}
+  '@nl-design-system-candidate/paragraph-react@2.1.0':
+    resolution: {integrity: sha512-+ElezF07SbdTjC2X50sFrDLkAqXxKt3QQWhV+e0sCFmKTuJRxKYRjDvB0TrfrvNosIH86XnWILtQyPrWfPElbA==}
     peerDependencies:
       '@babel/runtime': ^7
       react: ^18
@@ -11199,9 +11193,7 @@ snapshots:
       clsx: 2.1.1
       react: 19.0.0
 
-  '@nl-design-system-candidate/paragraph-css@2.1.0': {}
-
-  '@nl-design-system-candidate/paragraph-react@2.1.1(@babel/runtime@7.26.0)(react@19.0.0)':
+  '@nl-design-system-candidate/paragraph-react@2.1.0(@babel/runtime@7.26.0)(react@19.0.0)':
     dependencies:
       '@babel/runtime': 7.26.0
       clsx: 2.1.1

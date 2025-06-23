@@ -9,12 +9,8 @@
       "lead": {
         "font-size": { "value": "{denhaag.typography.scale.lg.font-size} " },
         "font-weight": {},
-        "line-height": { "value": "{denhaag.typography.scale.lg.line-height}" },
-        "margin-block-start": {},
-        "margin-block-end": {}
-      },
-      "margin-block-start": { "value": 0 },
-      "margin-block-end": { "value": 0 }
+        "line-height": { "value": "{denhaag.typography.scale.lg.line-height}" }
+      }
     }
   }
 }
