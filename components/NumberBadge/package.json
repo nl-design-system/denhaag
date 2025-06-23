@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@nl-design-system-candidate/number-badge-css": "1.1.2",
-    "@nl-design-system-candidate/number-badge-react": "1.2.2"
+    "@nl-design-system-candidate/number-badge-react": "1.2.3"
   },
   "peerDependencies": {
     "react": "18 || 19",
