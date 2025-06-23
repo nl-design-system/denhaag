@@ -1,0 +1,1 @@
+import t from"./PageIndex.stories-YZtXBnMj.js";import{Default as s}from"./PageIndex.stories-YZtXBnMj.js";import"./index-raSRI-5R.js";import"./_commonjsHelpers-BosuxZz1.js";import"./jsx-runtime-D_zvdyIk.js";const r={...t,id:"css-navigation-page-index",title:"CSS/Navigation/Page Index",tags:["autodocs"]},m=["Default"];export{s as Default,m as __namedExportsOrder,r as default};
