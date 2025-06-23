@@ -36,7 +36,6 @@
     "@gemeente-denhaag/link": "workspace:*",
     "@gemeente-denhaag/link-group": "workspace:*",
     "@gemeente-denhaag/list": "workspace:*",
-    "@gemeente-denhaag/paragraph": "workspace:*",
     "@gemeente-denhaag/responsive-content": "workspace:*",
     "@utrecht/component-library-css": "7.1.0",
     "@utrecht/component-library-react": "9.0.1",
