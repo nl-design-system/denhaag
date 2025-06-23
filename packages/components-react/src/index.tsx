@@ -1,5 +1,6 @@
 export * from '@gemeente-denhaag/action';
 export * from '@gemeente-denhaag/alert';
+export * from '@gemeente-denhaag/badge-counter';
 export * from '@gemeente-denhaag/button';
 export * from '@gemeente-denhaag/card';
 export * from '@gemeente-denhaag/card-group';

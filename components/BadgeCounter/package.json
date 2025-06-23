@@ -1,12 +1,12 @@
 {
-  "name": "@gemeente-denhaag/number-badge",
-  "version": "0.0.0",
-  "description": "A number badge component",
+  "name": "@gemeente-denhaag/badge-counter",
+  "version": "2.0.0",
+  "description": "A Badge component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/nl-design-system/denhaag.git",
-    "directory": "components/NumberBadge"
+    "directory": "components/BadgeCounter"
   },
   "license": "EUPL-1.2",
   "author": "Municipality of The Hague",
@@ -30,12 +30,13 @@
     "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\"",
     "typecheck": "tsc --noEmit"
   },
-  "devDependencies": {
-    "@nl-design-system-candidate/number-badge-css": "1.1.2",
-    "@nl-design-system-candidate/number-badge-react": "1.2.1"
+  "dependencies": {
+    "@utrecht/component-library-react": "9.0.1",
+    "@utrecht/components": "7.4.0"
   },
   "peerDependencies": {
     "react": "18 || 19",
     "react-dom": "18 || 19"
-  }
+  },
+  "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f"
 }
