@@ -4,7 +4,7 @@ import readme from '../../../../components/DataBadge/README.md?raw';
 
 type Story = StoryObj<typeof meta>;
 
-const meta = {
+const meta: Meta<typeof DataBadge> = {
   component: DataBadge,
   tags: ['autodocs'],
   argTypes: {
@@ -20,13 +20,6 @@ const meta = {
         type: 'text',
       },
     },
-    status: {
-      type: 'string',
-      options: [undefined, 'neutral', 'success', 'warning', 'error'],
-      control: {
-        type: 'select',
-      },
-    },
   },
   parameters: {
     docs: {
@@ -35,54 +28,14 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof DataBadge>;
+};
 
 export default meta;
 
 export const Default: Story = {
   args: {
     children: 'Label',
-  },
-};
-
-export const Value: Story = {
-  args: {
-    ...Default.args,
-    value: 'value',
-  },
-};
-
-export const DateTime: Story = {
-  args: {
-    ...Default.args,
-    dateTime: '2023-10-01',
-  },
-};
-
-export const Neutral: Story = {
-  args: {
-    ...Default.args,
-    status: 'neutral',
-  },
-};
-
-export const Success: Story = {
-  args: {
-    ...Default.args,
-    status: 'success',
-  },
-};
-
-export const Warning: Story = {
-  args: {
-    ...Default.args,
-    status: 'warning',
-  },
-};
-
-export const Error: Story = {
-  args: {
-    ...Default.args,
-    status: 'error',
+    value: undefined,
+    dateTime: undefined,
   },
 };
