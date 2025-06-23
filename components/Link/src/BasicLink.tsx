@@ -1,7 +1,7 @@
-import React from 'react';
-import { LinkProps } from '@nl-design-system-candidate/link-react';
-import { Link } from '@nl-design-system-candidate/link-react/css';
+import React, { AnchorHTMLAttributes } from 'react';
 
-export const BasicLink = ({ ...props }: LinkProps) => <Link {...props} />;
+export const BasicLink = ({ children, ...props }: AnchorHTMLAttributes<HTMLAnchorElement>) => (
+  <a {...props}>{children}</a>
+);
 
 export default BasicLink;
