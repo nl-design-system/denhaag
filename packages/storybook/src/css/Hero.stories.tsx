@@ -34,7 +34,7 @@ export const Routing: Story = {
     <section className="denhaag-hero denhaag-hero--routing">
       <div className="denhaag-hero__container">
         <div className="denhaag-hero__content">
-          <h1 className="denhaag-hero__title nl-heading nl-heading--level-1">Parkeren</h1>
+          <h1 className="denhaag-hero__title utrecht-heading-1">Parkeren</h1>
         </div>
       </div>
       <img
@@ -51,7 +51,7 @@ export const RoutingMultiline: Story = {
     <section className="denhaag-hero denhaag-hero--routing">
       <div className="denhaag-hero__container">
         <div className="denhaag-hero__content">
-          <h1 className="denhaag-hero__title nl-heading nl-heading--level-1">Betalen, wijzigen of opzeggen</h1>
+          <h1 className="denhaag-hero__title utrecht-heading-1">Betalen, wijzigen of opzeggen</h1>
         </div>
       </div>
       <img
@@ -68,7 +68,7 @@ export const Home: Story = {
     <section className="denhaag-hero denhaag-hero--home">
       <div className="denhaag-hero__container">
         <div className="denhaag-hero__content">
-          <h1 className="denhaag-hero__title nl-heading nl-heading--level-1">
+          <h1 className="denhaag-hero__title utrecht-heading-1">
             <strong>Goedemorgen!</strong> Waar bent u naar op zoek?
           </h1>
         </div>
@@ -83,7 +83,7 @@ export const ThemePage: Story = {
     <section className="denhaag-hero denhaag-hero--theme-page">
       <div className="denhaag-hero__container">
         <div className="denhaag-hero__content">
-          <h1 className="denhaag-hero__title nl-heading nl-heading--level-1">Parkeren</h1>
+          <h1 className="denhaag-hero__title utrecht-heading-1">Parkeren</h1>
           <p className="utrecht-paragraph denhaag-hero__text">
             Et fugit est tenetur labore corporis. Magnam doloremque cum sapiente et quisquam saepe rerum. Dolorum
             tenetur incidunt a dolorum incidunt sit.

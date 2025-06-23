@@ -110,8 +110,7 @@
 }
 
 .denhaag-table__heading {
-  --nl-link-color: var(--denhaag-table-heading-color);
-
+  color: var(--denhaag-table-heading-color);
   font-weight: var(--utrecht-table-heading-font-weight, bold);
   min-width: var(--denhaag-table-heading-min-width, 7.5rem);
 }
