@@ -92,7 +92,7 @@ export const FooterContact: React.FC<FooterContactProps> = (props: FooterContact
         <div className="denhaag-footer-group">
           {props.newsletterData && (
             <div className="denhaag-link-group denhaag-link-group--dark">
-              <h4 className="nl-heading-level-4 denhaag-link-group__caption">{props.newsletterData.title}</h4>
+              <h4 className="utrecht-heading-4 denhaag-link-group__caption">{props.newsletterData.title}</h4>
               <Paragraph>{props.newsletterData.text}</Paragraph>
               <div className="denhaag-button-group">
                 <ButtonLink appearance="primary-action-button" href={props.newsletterData.href}>
@@ -103,7 +103,7 @@ export const FooterContact: React.FC<FooterContactProps> = (props: FooterContact
           )}
           {props.socialData && (
             <div className="denhaag-link-group denhaag-link-group--dark">
-              <h4 className="nl-heading-level-4 denhaag-link-group__caption">{props.socialData.title}</h4>
+              <h4 className="utrecht-heading-4 denhaag-link-group__caption">{props.socialData.title}</h4>
               <ul className="utrecht-list-social">
                 {props.socialData.links.map((item, key) => (
                   <li className="utrecht-list-social__item" key={key}>
@@ -117,7 +117,7 @@ export const FooterContact: React.FC<FooterContactProps> = (props: FooterContact
           )}
           {props.contactData && (
             <div className="denhaag-link-group denhaag-link-group--dark">
-              <h4 className="nl-heading-level-4 denhaag-link-group__caption">{props.contactData.title}</h4>
+              <h4 className="utrecht-heading-4 denhaag-link-group__caption">{props.contactData.title}</h4>
               <ul className="denhaag-link-group__list">
                 {props.contactData.links.map((item, key) => (
                   <li className="denhaag-link-group__list-item" key={key}>

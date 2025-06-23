@@ -28,7 +28,7 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   render: () => (
     <div className="denhaag-link-group denhaag-highlighted-links">
-      <h4 className="nl-heading-level-4 denhaag-link-group__caption">Caption</h4>
+      <h4 className="utrecht-heading-4 denhaag-link-group__caption">Caption</h4>
       <ul className="utrecht-link-list utrecht-link-list--html-ul denhaag-link-group__list denhaag-highlighted-links__list">
         <li className="denhaag-link-group__list-item">
           <a
