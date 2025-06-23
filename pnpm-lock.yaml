@@ -420,19 +420,6 @@ importers:
         specifier: workspace:*
         version: link:../Icons
 
-  components/DataBadge:
-    dependencies:
-      react:
-        specifier: 18 || 19
-        version: 19.0.0
-      react-dom:
-        specifier: 18 || 19
-        version: 19.0.0(react@19.0.0)
-    devDependencies:
-      '@nl-design-system-candidate/data-badge-react':
-        specifier: 1.1.1
-        version: 1.1.1(@babel/runtime@7.26.0)(react@19.0.0)
-
   components/DescriptionList:
     dependencies:
       clsx:
@@ -698,16 +685,15 @@ importers:
 
   components/Heading:
     dependencies:
+      '@nl-design-system-candidate/heading-react':
+        specifier: 1.1.0
+        version: 1.1.0(@babel/runtime@7.26.0)(react@19.0.0)
       react:
         specifier: 18 || 19
         version: 19.0.0
       react-dom:
         specifier: 18 || 19
         version: 19.0.0(react@19.0.0)
-    devDependencies:
-      '@nl-design-system-candidate/heading-react':
-        specifier: 1.1.0
-        version: 1.1.0(@babel/runtime@7.26.0)(react@19.0.0)
 
   components/Hero: {}
 
@@ -1684,9 +1670,6 @@ importers:
       '@gemeente-denhaag/ctalink':
         specifier: workspace:*
         version: link:../../components/CtaLink
-      '@gemeente-denhaag/data-badge':
-        specifier: workspace:*
-        version: link:../../components/DataBadge
       '@gemeente-denhaag/descriptionlist':
         specifier: workspace:*
         version: link:../../components/DescriptionList
@@ -3240,12 +3223,6 @@ packages:
     peerDependencies:
       '@types/react': '>=16'
       react: '>=16'
-
-  '@nl-design-system-candidate/data-badge-react@1.1.1':
-    resolution: {integrity: sha512-2G3xn4XmUyyNxMt4eiZqG9e2nkFEdb4hw94pumDe8VBn+YP9MgSuLOHG56FAMvTKfWPgQaUP1XNDUkMVrvTgoQ==}
-    peerDependencies:
-      '@babel/runtime': ^7
-      react: ^18
 
   '@nl-design-system-candidate/heading-react@1.1.0':
     resolution: {integrity: sha512-0qhPs9bzgljBardDbJ8KyOM6mP/XViZfX3V1iFITiajGb7Lll2McujtthC2ciYlODBBu7p/EXHb+s7EEKmSM6w==}
@@ -11142,12 +11119,6 @@ snapshots:
     dependencies:
       '@types/mdx': 2.0.13
       '@types/react': 19.0.10
-      react: 19.0.0
-
-  '@nl-design-system-candidate/data-badge-react@1.1.1(@babel/runtime@7.26.0)(react@19.0.0)':
-    dependencies:
-      '@babel/runtime': 7.26.0
-      clsx: 2.1.1
       react: 19.0.0
 
   '@nl-design-system-candidate/heading-react@1.1.0(@babel/runtime@7.26.0)(react@19.0.0)':

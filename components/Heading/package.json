@@ -30,11 +30,11 @@
     "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\"",
     "typecheck": "tsc --noEmit"
   },
-  "devDependencies": {
-    "@nl-design-system-candidate/heading-react": "1.1.0"
-  },
   "peerDependencies": {
     "react": "18 || 19",
     "react-dom": "18 || 19"
+  },
+  "dependencies": {
+    "@nl-design-system-candidate/heading-react": "1.1.0"
   }
 }
