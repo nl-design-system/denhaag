@@ -12,6 +12,9 @@
       "path": "../../components/Alert"
     },
     {
+      "path": "../../components/BadgeCounter"
+    },
+    {
       "path": "../../components/Divider"
     },
     {

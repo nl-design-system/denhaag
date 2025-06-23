@@ -10,7 +10,7 @@ import { ContactTimelineMeta } from './ContactTimelineMeta';
 import { ContactTimelineHeaderContent } from './ContactTimelineHeaderContent';
 import { ContactTimelineHeaderDate } from './ContactTimelineHeaderDate';
 import { ContactTimelineHeaderChannel } from './ContactTimelineHeaderChannel';
-import { Paragraph } from '@gemeente-denhaag/paragraph';
+import { Paragraph } from '@gemeente-denhaag/typography';
 import { ContactTimelineItemSender } from './ContactTimelineItemSender';
 import { ContactTimelineItemFile } from './ContactTimelineItemFile';
 import { ContactTimelineList } from './ContactTimelineList';

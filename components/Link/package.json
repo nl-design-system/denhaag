@@ -30,11 +30,13 @@
     "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\"",
     "typecheck": "tsc --noEmit"
   },
-  "devDependencies": {
+  "dependencies": {
     "@gemeente-denhaag/icons": "workspace:*",
-    "@nl-design-system-candidate/link-css": "2.0.0",
-    "@nl-design-system-candidate/link-react": "1.1.2",
     "clsx": "2.1.1"
+  },
+  "devDependencies": {
+    "@nl-design-system-candidate/link-css": "1.0.2",
+    "@nl-design-system-candidate/link-react": "1.1.1"
   },
   "peerDependencies": {
     "react": "18 || 19",

@@ -12,11 +12,6 @@
           "end": { "value": "{denhaag.space.block.xl}" }
         }
       },
-      "title": {
-        "margin-block": {
-          "end": { "value": "{denhaag.space.block.2xs}" }
-        }
-      },
       "action": {
         "padding": {
           "block": {

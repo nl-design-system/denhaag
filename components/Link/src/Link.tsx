@@ -1,12 +1,13 @@
-import React, { AnchorHTMLAttributes, ComponentType } from 'react';
+import React, { ComponentType } from 'react';
 import { SvgIconProps } from '@gemeente-denhaag/icons';
-import { BasicLink, BasicLinkProps } from './BasicLink';
+import BasicLink from './BasicLink';
 import clsx from 'clsx';
+import { LinkProps as CandidateLinkProps } from '@nl-design-system-candidate/link-react';
 
-export interface LinkProps extends BasicLinkProps {
+export interface LinkProps extends CandidateLinkProps {
   icon?: React.ReactElement<SvgIconProps>;
   iconAlign?: 'start' | 'end';
-  Link?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
+  Link?: ComponentType<CandidateLinkProps>;
 }
 
 export const Link = ({ icon = undefined, iconAlign = 'end', children, Link = BasicLink, ...props }: LinkProps) => {
@@ -31,3 +32,5 @@ export const Link = ({ icon = undefined, iconAlign = 'end', children, Link = Bas
     </Link>
   );
 };
+
+export default Link;

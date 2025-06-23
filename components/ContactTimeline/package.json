@@ -33,9 +33,9 @@
   "dependencies": {
     "@gemeente-denhaag/file": "workspace:*",
     "@gemeente-denhaag/icons": "workspace:*",
-    "@gemeente-denhaag/paragraph": "workspace:*",
     "@gemeente-denhaag/process-steps": "workspace:*",
     "@gemeente-denhaag/step-marker": "workspace:*",
+    "@gemeente-denhaag/typography": "workspace:*",
     "@gemeente-denhaag/utils": "workspace:*",
     "clsx": "2.1.1"
   },

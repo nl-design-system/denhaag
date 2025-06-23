@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import LinkListBase, { LinkListBaseProps } from './LinkListBase';
 import LinkListItem from './LinkListItem';
 import { ArrowRightIcon, ExternalLinkIcon } from '@gemeente-denhaag/icons';
-import { Link } from '@gemeente-denhaag/link';
+import Link from '@gemeente-denhaag/link';
 
 type Items = {
   label: ReactNode;

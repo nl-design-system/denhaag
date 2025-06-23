@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import { Action } from '@gemeente-denhaag/action';
-import { Heading } from '@gemeente-denhaag/heading';
+import { Heading2, Heading3 } from '@gemeente-denhaag/typography';
 import { Page, PageHeader, PageFooter } from '@gemeente-denhaag/page';
 import { HeaderLogic, HeaderLogicProps } from '@gemeente-denhaag/header';
 import { Footer } from '@gemeente-denhaag/footer';
@@ -153,7 +153,7 @@ export const ZaakDetail: StoryObj<typeof meta> = {
       <ResponsiveContent className="denhaag-page-content denhaag-responsive-content--sidebar">
         <Sidenav />
         <main className="denhaag-page-content__main">
-          <Heading level={2}>Aanvraag subsidie geluidsisolatie</Heading>
+          <Heading2>Aanvraag subsidie geluidsisolatie</Heading2>
           <Action
             className="denhaag-page-content__task"
             dateTime={taskDateTime}
@@ -165,17 +165,11 @@ export const ZaakDetail: StoryObj<typeof meta> = {
           >
             Geef informatie voor uw aanvraag subsidie geluidsisolatie
           </Action>
-          <Heading level={3} className="denhaag-page-content__heading">
-            Status
-          </Heading>
+          <Heading3 className="denhaag-page-content__heading">Status</Heading3>
           <Status {...progressStepsData}></Status>
-          <Heading level={3} className="denhaag-page-content__heading">
-            Documenten
-          </Heading>
+          <Heading3 className="denhaag-page-content__heading">Documenten</Heading3>
           <File {...linkData} />
-          <Heading level={3} className="denhaag-page-content__heading">
-            Eerdere contactmomenten
-          </Heading>
+          <Heading3 className="denhaag-page-content__heading">Eerdere contactmomenten</Heading3>
           <ContactTimeline {...contactTimelineData} />
           <Action
             className="denhaag-page-content__task"

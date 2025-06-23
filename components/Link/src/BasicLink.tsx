@@ -1,11 +1,7 @@
-import React, { AnchorHTMLAttributes } from 'react';
+import React from 'react';
 import { Link, LinkProps } from '@nl-design-system-candidate/link-react';
 import '@nl-design-system-candidate/link-css/link.css';
 
-export interface BasicLinkProps extends Omit<LinkProps, 'href'> {
-  href?: AnchorHTMLAttributes<HTMLAnchorElement>['href'];
-}
+export const BasicLink = ({ ...props }: LinkProps) => <Link {...props} />;
 
-export const BasicLink = ({ href, ...props }: BasicLinkProps) => {
-  return <Link href={href} {...props} />;
-};
+export default BasicLink;

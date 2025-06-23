@@ -1,12 +1,11 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import { Paragraph } from '@gemeente-denhaag/paragraph';
+import { Heading2, Paragraph } from '@gemeente-denhaag/typography';
 import { Page, PageHeader, PageFooter } from '@gemeente-denhaag/page';
 import { HeaderLogic, HeaderLogicProps } from '@gemeente-denhaag/header';
 import { Footer } from '@gemeente-denhaag/footer';
 import { ResponsiveContent } from '@gemeente-denhaag/responsive-content';
 import { copyright, headerProps, footerLegalData, footerSocialData, newsletterData, contactData } from './util';
-import { Heading } from '@gemeente-denhaag/heading';
 
 import './template-story.scss';
 import Sidenav from './components/Sidenav';
@@ -35,7 +34,7 @@ export const Overview: StoryObj<typeof meta> = {
       <ResponsiveContent className="denhaag-page-content denhaag-responsive-content--sidebar">
         <Sidenav />
         <main className="denhaag-page-content__main">
-          <Heading level={2}>Hallo, Anne Klap!</Heading>
+          <Heading2>Hallo, Anne Klap!</Heading2>
           <Paragraph>
             In MijnDenHaag kunt u zelf u persoonlijke zaken regelen wanneer u het uitkomt. Denk aan zaken zoals het zien
             wanneer uw aanvraag klaar is of het bijkopen van extra parkeertegoed.

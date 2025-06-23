@@ -1,7 +1,7 @@
 import React, { AnchorHTMLAttributes, ComponentType } from 'react';
 import { ArrowRightIcon } from '@gemeente-denhaag/icons';
 import { BasicLink } from '@gemeente-denhaag/link';
-import { Paragraph } from '@gemeente-denhaag/paragraph';
+import { Paragraph } from '@gemeente-denhaag/typography';
 import Base from './CaseCardBase';
 import Footer from './CaseCardFooter';
 import Action from './CaseCardAction';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import { Paragraph } from '@gemeente-denhaag/paragraph';
+import { Heading2, Paragraph } from '@gemeente-denhaag/typography';
 import { Page, PageHeader, PageFooter } from '@gemeente-denhaag/page';
 import { HeaderLogic, HeaderLogicProps } from '@gemeente-denhaag/header';
 import { Footer } from '@gemeente-denhaag/footer';
@@ -19,7 +19,6 @@ import './messages.scss';
 import Sidenav from './components/Sidenav';
 import { Action } from '@gemeente-denhaag/action';
 import { ButtonLink } from '@gemeente-denhaag/button-link';
-import { Heading } from '@gemeente-denhaag/heading';
 
 const meta = {
   title: 'Templates/Berichten Detail',
@@ -54,7 +53,7 @@ export const BerichtenDetail: StoryObj<typeof meta> = {
         <Sidenav />
         <main className="denhaag-page-content__main">
           <div className="denhaag-page-content__header">
-            <Heading level={2}>Betalen van uw parkeerbon</Heading>
+            <Heading2>Betalen van uw parkeerbon</Heading2>
             <Paragraph>Bericht ontvangen op 15 januari 2023 om 15.24 uur</Paragraph>
           </div>
           <Action

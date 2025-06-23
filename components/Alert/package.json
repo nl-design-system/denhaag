@@ -32,9 +32,9 @@
   },
   "dependencies": {
     "@gemeente-denhaag/button": "workspace:*",
-    "@gemeente-denhaag/heading": "workspace:*",
     "@gemeente-denhaag/iconbutton": "workspace:*",
     "@gemeente-denhaag/icons": "workspace:*",
+    "@gemeente-denhaag/typography": "workspace:*",
     "clsx": "2.1.1"
   },
   "peerDependencies": {
