@@ -57,8 +57,7 @@ ol.denhaag-breadcrumb__list {
   display: flex;
   pointer-events: var(--denhaag-breadcrumb-link-pointer-events);
   position: relative;
-
-  --nl-link-text-decoration-line: var(--denhaag-breadcrumb-link-text-decoration, none);
+  text-decoration: var(--denhaag-breadcrumb-link-text-decoration, none);
 }
 
 .denhaag-breadcrumb__link--disabled {

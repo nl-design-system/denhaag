@@ -15,9 +15,8 @@
   align-items: center;
   display: inline-flex;
   gap: var(--denhaag-link-icon-gap);
+  text-decoration: none;
   vertical-align: var(--denhaag-link-with-icon-vertical-align, baseline);
-
-  --nl-link-text-decoration-line: none;
 }
 
 .denhaag-link--with-small-icon {
