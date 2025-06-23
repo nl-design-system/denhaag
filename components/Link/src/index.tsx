@@ -1,8 +1,9 @@
 import React, { ComponentType } from 'react';
 import { SvgIconProps } from '@gemeente-denhaag/icons';
-import BasicLink, { LinkProps as CandidateLinkProps } from './BasicLink';
+import BasicLink from './BasicLink';
 import clsx from 'clsx';
 import './index.scss';
+import { LinkProps as CandidateLinkProps } from '@nl-design-system-candidate/link-react';
 
 export interface LinkProps extends CandidateLinkProps {
   icon?: React.ReactElement<SvgIconProps>;
@@ -27,7 +28,7 @@ export const Link = ({ icon = undefined, iconAlign = 'end', children, Link = Bas
   return (
     <Link className={rootClassNames} {...props}>
       {icon !== undefined && iconAlign === 'start' ? iconWrapped : ''}
-      {children}
+      <span>{children}</span>
       {icon !== undefined && iconAlign === 'end' ? iconWrapped : ''}
     </Link>
   );
