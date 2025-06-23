@@ -22,7 +22,7 @@ import {
 import './messages.scss';
 import Sidenav from './components/Sidenav';
 import { Pagination } from '@gemeente-denhaag/pagination';
-import { DataBadge } from '@gemeente-denhaag/data-badge';
+import { StatusBadge } from '@gemeente-denhaag/status-badge';
 
 const meta = {
   title: 'Templates/Berichten Overzicht',
@@ -104,9 +104,7 @@ export const BerichtenOverzicht: StoryObj<typeof meta> = {
             >
               {m.new ? (
                 <>
-                  <DataBadge className="denhaag-page-content__badge" status="neutral">
-                    Nieuw
-                  </DataBadge>
+                  <StatusBadge className="denhaag-page-content__badge">Nieuw</StatusBadge>
                   <b>{m.title}</b>
                 </>
               ) : (
