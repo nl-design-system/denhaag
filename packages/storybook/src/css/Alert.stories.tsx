@@ -5,15 +5,10 @@ import { Alert, AlertProps } from '@gemeente-denhaag/alert';
 import { MegaphoneIcon } from '@gemeente-denhaag/icons';
 
 import readme from '../../../../components/Alert/README.md?raw';
-import { Paragraph } from '@gemeente-denhaag/paragraph';
 
 const exampleArgs: AlertProps = {
   title: 'Title',
-  text: (
-    <Paragraph>
-      Here comes text. This text provides additional details and actionable steps the user can take.
-    </Paragraph>
-  ),
+  text: 'Here comes text. This text provides additional details and actionable steps the user can take.',
   variant: 'info',
 };
 
