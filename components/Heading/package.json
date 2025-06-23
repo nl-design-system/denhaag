@@ -31,8 +31,7 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@nl-design-system-candidate/heading-css": "1.1.0",
-    "@nl-design-system-candidate/heading-react": "1.1.1"
+    "@nl-design-system-candidate/heading-react": "1.1.0"
   },
   "peerDependencies": {
     "react": "18 || 19",
