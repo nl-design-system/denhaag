@@ -31,10 +31,10 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@gemeente-denhaag/badge-counter": "workspace:*",
     "@gemeente-denhaag/button": "workspace:*",
     "@gemeente-denhaag/icons": "workspace:*",
     "@gemeente-denhaag/language-switcher": "workspace:*",
-    "@gemeente-denhaag/number-badge": "workspace:*",
     "@gemeente-denhaag/sheet": "workspace:*",
     "@types/uuid": "10.0.0",
     "@utrecht/component-library-css": "7.1.0",

@@ -1,4 +1,4 @@
-import { NumberBadge } from '@gemeente-denhaag/number-badge';
+import { BadgeCounter } from '@gemeente-denhaag/badge-counter';
 import tokens from '@gemeente-denhaag/design-tokens-components/dist/list.json';
 import { ArchiveIcon, CheckCircleIcon, GridIcon, InboxIcon, UserIcon } from '@gemeente-denhaag/icons';
 import { Sidenav, SidenavItem, SidenavLink, SidenavList, SidenavLinkLabel } from '@gemeente-denhaag/sidenav';
@@ -30,7 +30,7 @@ const exampleArgs = {
             <InboxIcon />
             <SidenavLinkLabel>
               Mijn berichten
-              <NumberBadge>2</NumberBadge>
+              <BadgeCounter>2</BadgeCounter>
             </SidenavLinkLabel>
           </SidenavLink>
         </SidenavItem>
