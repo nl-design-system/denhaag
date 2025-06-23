@@ -77,7 +77,6 @@
     "@gemeente-denhaag/menu": "workspace:*",
     "@gemeente-denhaag/modal": "workspace:*",
     "@gemeente-denhaag/note": "workspace:*",
-    "@gemeente-denhaag/number-badge": "workspace:*",
     "@gemeente-denhaag/orderedlist": "workspace:*",
     "@gemeente-denhaag/page": "workspace:*",
     "@gemeente-denhaag/page-index": "workspace:*",

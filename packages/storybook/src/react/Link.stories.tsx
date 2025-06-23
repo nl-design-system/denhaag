@@ -8,11 +8,17 @@ import readme from '../../../../components/Link/README.md?raw';
 
 type Story = StoryObj<typeof meta>;
 
+const exampleArgs = {
+  href: '#',
+};
+
 const meta: Meta<typeof Link> = {
   component: Link,
   tags: ['autodocs'],
+  args: exampleArgs,
   argTypes: {
     disabled: {
+      order: 1,
       type: 'boolean',
       options: [true, false],
       control: {
@@ -20,6 +26,7 @@ const meta: Meta<typeof Link> = {
       },
     },
     icon: {
+      order: 2,
       type: 'string',
       options: [...Object.keys(Icons)],
       control: {
@@ -27,6 +34,7 @@ const meta: Meta<typeof Link> = {
       },
     },
     iconAlign: {
+      order: 3,
       type: 'string',
       options: ['start', 'end'],
       control: {
@@ -46,9 +54,6 @@ const meta: Meta<typeof Link> = {
 export default meta;
 
 export const Default: Story = {
-  args: {
-    href: '#',
-  },
   render: (args) => {
     const Icon = Icons[args.icon as unknown as keyof typeof Icons];
     args.icon = Icon ? <Icon /> : args.icon || undefined;

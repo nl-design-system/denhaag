@@ -1,12 +1,18 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { Heading, headingLevels } from '@gemeente-denhaag/heading';
-import readme from '../../../../components/Heading/README.md?raw';
+import readme from '../../../../components/Paragraph/README.md?raw';
 
 type Story = StoryObj<typeof meta>;
+
+const exampleArgs = {
+  children: 'This is a bit of text inside a Header component.',
+  level: headingLevels[0],
+};
 
 const meta: Meta<typeof Heading> = {
   component: Heading,
   tags: ['autodocs'],
+  args: exampleArgs,
   argTypes: {
     level: {
       type: 'number',
@@ -34,44 +40,34 @@ const meta: Meta<typeof Heading> = {
 
 export default meta;
 
-export const Level1: Story = {
-  args: {
-    children: 'This is a bit of text inside a Header component.',
-    level: headingLevels[0],
-  },
-};
+export const Level1: Story = {};
 
 export const Level2: Story = {
   args: {
-    ...Level1.args,
     level: headingLevels[1],
   },
 };
 
 export const Level3: Story = {
   args: {
-    ...Level1.args,
     level: headingLevels[2],
   },
 };
 
 export const Level4: Story = {
   args: {
-    ...Level1.args,
     level: headingLevels[3],
   },
 };
 
 export const Level5: Story = {
   args: {
-    ...Level1.args,
     level: headingLevels[4],
   },
 };
 
 export const Level6: Story = {
   args: {
-    ...Level1.args,
     level: headingLevels[5],
   },
 };
