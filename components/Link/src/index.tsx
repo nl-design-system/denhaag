@@ -34,3 +34,5 @@ export const Link = ({ icon = undefined, iconAlign = 'end', children, Link = Bas
 };
 
 export default Link;
+
+export * from './BasicLink';
