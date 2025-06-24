@@ -3,7 +3,7 @@
   "description": "Common design tokens for the Den Haag Component Library",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
-  "version": "0.2.3-www-denhaag-nl.135",
+  "version": "0.2.3-www-denhaag-nl.136",
   "repository": {
     "type": "git",
     "url": "https://github.com/nl-design-system/denhaag.git",
@@ -27,6 +27,6 @@
     "watch:style-dictionary": "yarn chokidar --follow-symlinks --initial \"src/**/*.json\" -c \"yarn build:style-dictionary\""
   },
   "devDependencies": {
-    "@gemeente-denhaag/design-tokens-proprietary": "0.2.3-www-denhaag-nl.135"
+    "@gemeente-denhaag/design-tokens-proprietary": "0.2.3-www-denhaag-nl.136"
   }
 }
