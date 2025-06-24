@@ -23,7 +23,7 @@
 <link rel="stylesheet" href="https://unpkg.com/@gemeente-denhaag/design-tokens-components@3.0.1/dist/index.css" />
 <link rel="stylesheet" href="https://unpkg.com/@gemeente-denhaag/icons@3.0.0/dist/index.css" />
 <link rel="stylesheet" href="https://unpkg.com/@utrecht/document-css@1.5.0/dist/index.css" />
-<link rel="stylesheet" href="https://unpkg.com/@utrecht/paragraph-css@2.3.0/dist/index.css" />
+<link rel="stylesheet" href="https://unpkg.com/@nl-design-system-candidate/paragraph-css@2.1.0/dist/paragraph.css" />
 <link rel="stylesheet" href="https://unpkg.com/@utrecht/document-css@1.5.0/dist/index.css" />
 
 <div class="utrecht-document utrecht-document--surface">
@@ -31,8 +31,8 @@
   <div class="grid" style="max-width: 360px">
     <h3>All attributes</h3>
     <denhaag-case-card dateTime="2025-04-09T09:39:22.006Z" href="https://example.com/">
-      <p slot="heading" class="utrecht-paragraph">Shrimp and Chorizo Paella</p>
-      <span slot="subtitle" class="utrecht-paragraph">
+      <span slot="heading" class="nl-paragraph">Shrimp and Chorizo Paella</span>
+      <span slot="subtitle" class="nl-paragraph">
         This impressive paella is a perfect party dish and a fun meal to cook.</span
       >
       <span slot="icon">
@@ -57,35 +57,9 @@
 
     <h3>No datetime</h3>
     <denhaag-case-card href="https://example.com/" appearance="archived">
-      <p slot="heading" class="utrecht-paragraph">Shrimp and Chorizo Paella</p>
-      <p slot="subtitle" class="utrecht-paragraph">
+      <span slot="heading" class="nl-paragraph">Shrimp and Chorizo Paella</span>
+      <span slot="subtitle" class="nl-paragraph">
         This impressive paella is a perfect party dish and a fun meal to cook.
-      </p>
-    </denhaag-case-card>
-
-    <h3>No subtitle</h3>
-    <denhaag-case-card dateTime="2025-04-09T09:39:22.006Z" href="https://example.com/" appearance="list">
-      <p slot="heading" class="utrecht-paragraph">Shrimp and Chorizo Paella</p>
-      <p slot="subtitle" class="utrecht-paragraph">
-        This impressive paella is a perfect party dish and a fun meal to cook.
-      </p>
-      <span slot="icon">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="1em"
-          height="1em"
-          fill="none"
-          viewBox="0 0 24 24"
-          class="denhaag-icon denhaag-card__arrow-icon"
-          focusable="false"
-          aria-hidden="true"
-          shape-rendering="auto"
-        >
-          <path
-            fill="currentColor"
-            d="M12.293 5.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L16.586 13H5a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414"
-          ></path>
-        </svg>
       </span>
     </denhaag-case-card>
   </div>
