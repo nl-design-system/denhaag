@@ -25,7 +25,7 @@ type HeadingProps = {
   children?: ReactNode;
 };
 
-// Temporary fix, should be replaced with the Candidate Heading when finished
+// TODO: Temporary fix, should be replaced with the Candidate Heading when finished
 const Heading = ({ as = 'h1', size = as, children }: HeadingProps) => {
   const classes = clsx({
     [`utrecht-heading-${size.replace('h', '')}`]: as !== size,
