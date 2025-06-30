@@ -1,5 +1,13 @@
 # @gemeente-denhaag/typography
 
+## 2.0.7
+
+### Patch Changes
+
+- Updated dependencies [cb9b954]
+  - @gemeente-denhaag/design-tokens-common@3.0.0
+  - @gemeente-denhaag/design-tokens-components@4.0.0
+
 ## 2.0.6
 
 ### Patch Changes
