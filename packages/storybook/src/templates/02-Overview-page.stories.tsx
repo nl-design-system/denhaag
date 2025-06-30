@@ -9,7 +9,7 @@ import { copyright, headerProps, footerLegalData, footerSocialData, newsletterDa
 import { Heading } from '@gemeente-denhaag/heading';
 
 import './template-story.scss';
-import Sidenav from './components/Sidenav';
+import SideNavigation from './components/SideNavigation';
 
 const meta = {
   title: 'Templates/Overview',
@@ -33,7 +33,7 @@ export const Overview: StoryObj<typeof meta> = {
         <HeaderLogic {...overviewHeaderProps} />
       </PageHeader>
       <ResponsiveContent className="denhaag-page-content denhaag-responsive-content--sidebar">
-        <Sidenav />
+        <SideNavigation />
         <main className="denhaag-page-content__main">
           <Heading level={2}>Hallo, Anne Klap!</Heading>
           <Paragraph>

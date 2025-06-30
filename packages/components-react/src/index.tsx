@@ -26,7 +26,7 @@ export * from '@gemeente-denhaag/radio-button';
 export * from '@gemeente-denhaag/responsive-content';
 export * from '@gemeente-denhaag/select';
 export * from '@gemeente-denhaag/sheet';
-export * from '@gemeente-denhaag/sidenav';
+export * from '@gemeente-denhaag/side-navigation';
 export * from '@gemeente-denhaag/stylesprovider';
 export * from '@gemeente-denhaag/tab';
 export * from '@gemeente-denhaag/table';

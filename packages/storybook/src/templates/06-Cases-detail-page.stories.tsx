@@ -22,7 +22,7 @@ import {
 } from './util';
 
 import './template-story.scss';
-import Sidenav from './components/Sidenav';
+import SideNavigation from './components/SideNavigation';
 import ButtonLink from '@gemeente-denhaag/button-link';
 
 const meta = {
@@ -151,7 +151,7 @@ export const ZaakDetail: StoryObj<typeof meta> = {
         <HeaderLogic {...zakenHeaderProps} />
       </PageHeader>
       <ResponsiveContent className="denhaag-page-content denhaag-responsive-content--sidebar">
-        <Sidenav />
+        <SideNavigation />
         <main className="denhaag-page-content__main">
           <Heading level={2}>Aanvraag subsidie geluidsisolatie</Heading>
           <Action

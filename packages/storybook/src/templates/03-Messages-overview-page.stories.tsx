@@ -20,7 +20,7 @@ import {
 } from './util';
 
 import './messages.scss';
-import Sidenav from './components/Sidenav';
+import SideNavigation from './components/SideNavigation';
 import { Pagination } from '@gemeente-denhaag/pagination';
 import { DataBadge } from '@gemeente-denhaag/data-badge';
 
@@ -82,7 +82,7 @@ export const BerichtenOverzicht: StoryObj<typeof meta> = {
         <HeaderLogic {...messagesHeaderProps} />
       </PageHeader>
       <ResponsiveContent className="denhaag-page-content denhaag-responsive-content--sidebar">
-        <Sidenav />
+        <SideNavigation />
         <main className="denhaag-page-content__main">
           <Heading level={2}>Mijn berichten</Heading>
           <Table className="denhaag-page-content__table">

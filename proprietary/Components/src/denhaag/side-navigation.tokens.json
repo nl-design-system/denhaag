@@ -1,6 +1,6 @@
 {
   "denhaag": {
-    "sidenav": {
+    "side-navigation": {
       "display": { "value": "flex" },
       "flex-direction": { "value": "column" },
       "min-width": { "value": "14.5rem" },

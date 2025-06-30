@@ -20,7 +20,7 @@ import {
 
 import './template-story.scss';
 import './cases.scss';
-import Sidenav from './components/Sidenav';
+import SideNavigation from './components/SideNavigation';
 import { formatDate, longDateOptions } from '@gemeente-denhaag/utils';
 
 const meta = {
@@ -103,7 +103,7 @@ export const ZaakOverzicht: StoryObj<typeof meta> = {
         <HeaderLogic {...zakenHeaderProps} />
       </PageHeader>
       <ResponsiveContent className="denhaag-page-content denhaag-responsive-content--sidebar">
-        <Sidenav />
+        <SideNavigation />
         <main className="denhaag-page-content__main">
           <Heading level={2}>Mijn lopende zaken</Heading>
           <Tabs {...tabsProps}></Tabs>

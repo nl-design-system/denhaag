@@ -61,7 +61,7 @@
     "@gemeente-denhaag/responsive-content": "workspace:*",
     "@gemeente-denhaag/select": "workspace:*",
     "@gemeente-denhaag/sheet": "workspace:*",
-    "@gemeente-denhaag/sidenav": "workspace:*",
+    "@gemeente-denhaag/side-navigation": "workspace:*",
     "@gemeente-denhaag/stylesprovider": "workspace:*",
     "@gemeente-denhaag/tab": "workspace:*",
     "@gemeente-denhaag/table": "workspace:*",

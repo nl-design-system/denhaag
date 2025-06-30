@@ -1,12 +1,12 @@
 {
-  "name": "@gemeente-denhaag/sidenav",
+  "name": "@gemeente-denhaag/side-navigation",
   "version": "2.0.0",
-  "description": "A sidenav component",
+  "description": "A side navigation component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/nl-design-system/denhaag.git",
-    "directory": "components/Sidenav"
+    "directory": "components/SideNavigation"
   },
   "license": "EUPL-1.2",
   "author": "Municipality of The Hague",
@@ -31,6 +31,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@gemeente-denhaag/number-badge": "workspace:*",
     "clsx": "2.1.1"
   },
   "peerDependencies": {
