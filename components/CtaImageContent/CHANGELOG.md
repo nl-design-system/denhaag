@@ -1,5 +1,17 @@
 # @gemeente-denhaag/cta-image-content
 
+## 2.0.0
+
+### Major Changes
+
+- cb9b954: Used the new candidate components from NLDS:
+
+  - Link
+  - Heading
+  - Paragraph
+  - Data badge
+  - Number badge
+
 ## 1.0.7
 
 ### Patch Changes

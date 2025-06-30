@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/data-badge",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A data badge component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {

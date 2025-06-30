@@ -1,5 +1,36 @@
 # @gemeente-denhaag/components-react
 
+## 3.0.0
+
+### Major Changes
+
+- cb9b954: Used the new candidate components from NLDS:
+
+  - Link
+  - Heading
+  - Paragraph
+  - Data badge
+  - Number badge
+
+### Patch Changes
+
+- Updated dependencies [cb9b954]
+- Updated dependencies [756b18a]
+  - @gemeente-denhaag/page-index@2.0.0
+  - @gemeente-denhaag/action@3.0.0
+  - @gemeente-denhaag/alert@3.0.0
+  - @gemeente-denhaag/card@4.0.0
+  - @gemeente-denhaag/contact-timeline@3.0.0
+  - @gemeente-denhaag/footer@3.0.0
+  - @gemeente-denhaag/form-progress@3.0.0
+  - @gemeente-denhaag/header@3.0.0
+  - @gemeente-denhaag/link@3.0.0
+  - @gemeente-denhaag/menu@3.0.0
+  - @gemeente-denhaag/process-steps@3.0.0
+  - @gemeente-denhaag/sheet@3.0.0
+  - @gemeente-denhaag/table@3.0.0
+  - @gemeente-denhaag/card-group@1.0.9
+
 ## 2.1.0
 
 ### Minor Changes

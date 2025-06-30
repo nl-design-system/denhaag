@@ -3,7 +3,7 @@
   "description": "Component design tokens for the Den Haag Component Library",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
-  "version": "3.1.0",
+  "version": "4.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/nl-design-system/denhaag.git",

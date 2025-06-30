@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/action",
-  "version": "2.0.3",
+  "version": "3.0.0",
   "description": "Action component to navigate to different pages",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "author": "Municipality of The Hague",

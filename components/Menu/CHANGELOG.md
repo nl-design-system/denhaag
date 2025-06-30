@@ -1,5 +1,24 @@
 # @gemeente-denhaag/menu
 
+## 3.0.0
+
+### Major Changes
+
+- cb9b954: Used the new candidate components from NLDS:
+
+  - Link
+  - Heading
+  - Paragraph
+  - Data badge
+  - Number badge
+
+### Patch Changes
+
+- Updated dependencies [cb9b954]
+  - @gemeente-denhaag/number-badge@1.0.0
+  - @gemeente-denhaag/sheet@3.0.0
+  - @gemeente-denhaag/language-switcher@2.1.1
+
 ## 2.2.1
 
 ### Patch Changes

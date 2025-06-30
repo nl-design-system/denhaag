@@ -1,5 +1,23 @@
 # @gemeente-denhaag/card
 
+## 4.0.0
+
+### Major Changes
+
+- cb9b954: Used the new candidate components from NLDS:
+
+  - Link
+  - Heading
+  - Paragraph
+  - Data badge
+  - Number badge
+
+### Patch Changes
+
+- Updated dependencies [cb9b954]
+  - @gemeente-denhaag/link@3.0.0
+  - @gemeente-denhaag/paragraph@1.0.0
+
 ## 3.0.2
 
 ### Patch Changes

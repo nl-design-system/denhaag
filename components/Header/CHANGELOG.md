@@ -1,5 +1,32 @@
 # @gemeente-denhaag/header
 
+## 3.0.0
+
+### Major Changes
+
+- cb9b954: Used the new candidate components from NLDS:
+
+  - Link
+  - Heading
+  - Paragraph
+  - Data badge
+  - Number badge
+
+### Minor Changes
+
+- 756b18a: Added option to make logo configurable in header
+
+### Patch Changes
+
+- Updated dependencies [cb9b954]
+  - @gemeente-denhaag/breadcrumb@4.0.0
+  - @gemeente-denhaag/heading@1.0.0
+  - @gemeente-denhaag/link@3.0.0
+  - @gemeente-denhaag/menu@3.0.0
+  - @gemeente-denhaag/paragraph@1.0.0
+  - @gemeente-denhaag/sheet@3.0.0
+  - @gemeente-denhaag/language-switcher@2.1.1
+
 ## 2.1.4
 
 ### Patch Changes
