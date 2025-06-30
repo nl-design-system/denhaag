@@ -1,5 +1,17 @@
 # @gemeente-denhaag/process-steps
 
+## 3.0.0
+
+### Major Changes
+
+- cb9b954: Used the new candidate components from NLDS:
+
+  - Link
+  - Heading
+  - Paragraph
+  - Data badge
+  - Number badge
+
 ## 2.0.7
 
 ### Patch Changes

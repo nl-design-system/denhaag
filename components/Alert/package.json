@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/alert",
-  "version": "2.0.7",
+  "version": "3.0.0",
   "description": "An alert component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
