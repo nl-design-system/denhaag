@@ -1,4 +1,4 @@
-# @gemeente-denhaag/sidenav
+# @gemeente-denhaag/side-navigation
 
 ## 2.0.0
 

@@ -16,7 +16,7 @@ import {
   templateLocale,
 } from './util';
 import './messages.scss';
-import Sidenav from './components/Sidenav';
+import SideNavigation from './components/SideNavigation';
 import { Action } from '@gemeente-denhaag/action';
 import { ButtonLink } from '@gemeente-denhaag/button-link';
 import { Heading } from '@gemeente-denhaag/heading';
@@ -51,7 +51,7 @@ export const BerichtenDetail: StoryObj<typeof meta> = {
         <HeaderLogic {...messagesHeaderProps} />
       </PageHeader>
       <ResponsiveContent className="denhaag-page-content denhaag-responsive-content--sidebar">
-        <Sidenav />
+        <SideNavigation />
         <main className="denhaag-page-content__main">
           <div className="denhaag-page-content__header">
             <Heading level={2}>Betalen van uw parkeerbon</Heading>

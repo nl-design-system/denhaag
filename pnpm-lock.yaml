@@ -1112,8 +1112,11 @@ importers:
         specifier: 18 || 19
         version: 19.0.0(react@19.0.0)
 
-  components/Sidenav:
+  components/SideNavigation:
     dependencies:
+      '@gemeente-denhaag/number-badge':
+        specifier: workspace:*
+        version: link:../NumberBadge
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -1433,9 +1436,9 @@ importers:
       '@gemeente-denhaag/select':
         specifier: workspace:*
         version: link:../../components/Select
-      '@gemeente-denhaag/sidenav':
+      '@gemeente-denhaag/side-navigation':
         specifier: workspace:*
-        version: link:../../components/Sidenav
+        version: link:../../components/SideNavigation
       '@gemeente-denhaag/tab':
         specifier: workspace:*
         version: link:../../components/Tab
@@ -1553,9 +1556,9 @@ importers:
       '@gemeente-denhaag/sheet':
         specifier: workspace:*
         version: link:../../components/Sheet
-      '@gemeente-denhaag/sidenav':
+      '@gemeente-denhaag/side-navigation':
         specifier: workspace:*
-        version: link:../../components/Sidenav
+        version: link:../../components/SideNavigation
       '@gemeente-denhaag/stylesprovider':
         specifier: workspace:*
         version: link:../../components/StylesProvider
@@ -1796,9 +1799,9 @@ importers:
       '@gemeente-denhaag/sheet':
         specifier: workspace:*
         version: link:../../components/Sheet
-      '@gemeente-denhaag/sidenav':
+      '@gemeente-denhaag/side-navigation':
         specifier: workspace:*
-        version: link:../../components/Sidenav
+        version: link:../../components/SideNavigation
       '@gemeente-denhaag/step-marker':
         specifier: workspace:*
         version: link:../../components/StepMarker

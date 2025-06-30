@@ -62,7 +62,7 @@
       "path": "components/RadioButton"
     },
     {
-      "path": "components/Sidenav"
+      "path": "components/SideNavigation"
     },
     {
       "path": "components/StylesProvider"
