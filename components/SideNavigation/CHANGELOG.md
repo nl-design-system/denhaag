@@ -1,5 +1,11 @@
 # @gemeente-denhaag/side-navigation
 
+## 3.0.0
+
+### Major Changes
+
+- 24231ad: Renamed SideNavigation and opt for reuse
+
 ## 2.0.0
 
 ### Major Changes

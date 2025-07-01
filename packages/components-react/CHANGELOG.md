@@ -1,5 +1,14 @@
 # @gemeente-denhaag/components-react
 
+## 3.0.1
+
+### Patch Changes
+
+- 24231ad: Renamed SideNavigation and opt for reuse
+- Updated dependencies [24231ad]
+  - @gemeente-denhaag/side-navigation@3.0.0
+  - @gemeente-denhaag/page-index@2.0.1
+
 ## 3.0.0
 
 ### Major Changes
