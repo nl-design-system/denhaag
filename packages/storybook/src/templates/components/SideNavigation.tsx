@@ -9,7 +9,7 @@ import {
 } from '@gemeente-denhaag/side-navigation';
 import React from 'react';
 
-const Sidenav = () => {
+const SideNavigation = () => {
   return (
     <SideNavigationBase>
       <SideNavigationList>
@@ -55,4 +55,4 @@ const Sidenav = () => {
   );
 };
 
-export default Sidenav;
+export default SideNavigation;

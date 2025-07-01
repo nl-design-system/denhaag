@@ -396,7 +396,7 @@
   - @gemeente-denhaag/process-steps@2.0.0
   - @gemeente-denhaag/responsive-content@1.0.0
   - @gemeente-denhaag/sheet@2.0.0
-  - @gemeente-denhaag/sidenav@2.0.0
+  - @gemeente-denhaag/side-navigation@2.0.0
   - @gemeente-denhaag/step-marker@2.0.0
   - @gemeente-denhaag/stylesprovider@2.0.0
   - @gemeente-denhaag/table@2.0.0
@@ -466,7 +466,7 @@
   - @gemeente-denhaag/textarea@1.1.1
   - @gemeente-denhaag/ctalink@0.1.1
   - @gemeente-denhaag/divider@1.1.1
-  - @gemeente-denhaag/sidenav@1.1.1
+  - @gemeente-denhaag/side-navigation@1.1.1
   - @gemeente-denhaag/action@1.1.1
   - @gemeente-denhaag/button@1.1.1
   - @gemeente-denhaag/footer@1.1.1
@@ -562,7 +562,7 @@
   - @gemeente-denhaag/rich-text@2.1.0
   - @gemeente-denhaag/textarea@1.1.0
   - @gemeente-denhaag/divider@1.1.0
-  - @gemeente-denhaag/sidenav@1.1.0
+  - @gemeente-denhaag/side-navigation@1.1.0
   - @gemeente-denhaag/action@1.1.0
   - @gemeente-denhaag/button@1.1.0
   - @gemeente-denhaag/footer@1.1.0
@@ -637,7 +637,7 @@
   - @gemeente-denhaag/rich-text@2.0.3
   - @gemeente-denhaag/textarea@1.0.3
   - @gemeente-denhaag/divider@1.0.3
-  - @gemeente-denhaag/sidenav@1.0.3
+  - @gemeente-denhaag/side-navigation@1.0.3
   - @gemeente-denhaag/action@1.0.3
   - @gemeente-denhaag/button@1.0.3
   - @gemeente-denhaag/footer@1.0.3
@@ -704,7 +704,7 @@
   - @gemeente-denhaag/rich-text@2.0.2
   - @gemeente-denhaag/textarea@1.0.2
   - @gemeente-denhaag/divider@1.0.2
-  - @gemeente-denhaag/sidenav@1.0.2
+  - @gemeente-denhaag/side-navigation@1.0.2
   - @gemeente-denhaag/action@1.0.2
   - @gemeente-denhaag/button@1.0.2
   - @gemeente-denhaag/footer@1.0.2
@@ -774,7 +774,7 @@
   - @gemeente-denhaag/rich-text@2.0.1
   - @gemeente-denhaag/textarea@1.0.1
   - @gemeente-denhaag/divider@1.0.1
-  - @gemeente-denhaag/sidenav@1.0.1
+  - @gemeente-denhaag/side-navigation@1.0.1
   - @gemeente-denhaag/action@1.0.1
   - @gemeente-denhaag/button@1.0.1
   - @gemeente-denhaag/footer@1.0.1
@@ -843,7 +843,7 @@
   - @gemeente-denhaag/rich-text@2.0.0
   - @gemeente-denhaag/textarea@1.0.0
   - @gemeente-denhaag/divider@1.0.0
-  - @gemeente-denhaag/sidenav@1.0.0
+  - @gemeente-denhaag/side-navigation@1.0.0
   - @gemeente-denhaag/action@1.0.0
   - @gemeente-denhaag/button@1.0.0
   - @gemeente-denhaag/footer@1.0.0
