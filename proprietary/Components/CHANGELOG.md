@@ -1,5 +1,11 @@
 # @gemeente-denhaag/design-tokens-components
 
+## 4.0.1
+
+### Patch Changes
+
+- 24231ad: Renamed SideNavigation and opt for reuse
+
 ## 4.0.0
 
 ### Major Changes
