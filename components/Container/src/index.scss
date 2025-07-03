@@ -1,7 +1,7 @@
 .denhaag-theme {
   --denhaag-container-size-unit: 100vw;
   --denhaag-container-inline-size: calc(var(--denhaag-container-size-unit) - var(--denhaag-space-4xl));
-  --denhaag-container-max-inline-size: calc(120rem - (6 * var(--denhaag-space-5xl) + var(--denhaag-space-md)));
+  --denhaag-container-max-inline-size: calc(120rem - (4 * var(--denhaag-space-5xl) + var(--denhaag-space-xl)));
 
   @supports (inline-size: 100svi) {
     /* stylelint-disable-next-line unit-no-unknown */
@@ -17,7 +17,7 @@
 
   @media (min-width: 1280px) {
     --denhaag-container-inline-size: calc(
-      var(--denhaag-container-size-unit) - (6 * var(--denhaag-space-5xl) + var(--denhaag-space-md))
+      var(--denhaag-container-size-unit) - (4 * var(--denhaag-space-5xl) + var(--denhaag-space-xl))
     );
   }
 }
@@ -26,4 +26,5 @@
   box-sizing: border-box;
   inline-size: min(var(--denhaag-container-inline-size), var(--denhaag-container-max-inline-size), 100%);
   margin-inline: auto;
+  container: denhaag-container / inline-size;
 }
