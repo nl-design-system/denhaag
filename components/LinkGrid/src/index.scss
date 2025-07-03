@@ -36,7 +36,6 @@
 
 .denhaag-link-grid__container {
   z-index: 1;
-  width: 100%;
   height: 100%;
   margin-inline: var(--denhaag-link-grid-container-margin-xs, var(--denhaag-space-xl));
 
@@ -52,7 +51,6 @@
   @media (min-width: 1280px) {
     margin-inline: var(--denhaag-link-grid-container-margin-lg, 100px);
     padding-inline-end: var(--denhaag-link-grid-container-padding-right-lg, 277px);
-    max-width: var(--denhaag-link-grid-container-width-lg, 1298px);
   }
 
   @media (min-width: 1768px) {
@@ -191,6 +189,7 @@
 
 .denhaag-link-grid__no-image {
   background-color: transparent;
+  max-width: none;
 
   .denhaag-link-grid__background-image {
     display: none;
@@ -216,7 +215,7 @@
       grid-template-columns: var(--denhaag-link-grid-table-grid-template-columns-md-no-image, repeat(3, 1fr));
     }
 
-    @container denhaag-container (min-width: 1000px) and (max-width: 1487px) {
+    @container denhaag-container (min-width: 1000px) {
       grid-template-columns: var(--denhaag-link-grid-table-grid-template-columns-lg-no-image, repeat(4, 1fr));
     }
   }
@@ -290,33 +289,24 @@
           var(--denhaag-link-grid-item-border-color, var(--denhaag-color-blue-1));
       }
     }
-
-    @container denhaag-container (min-width: 1488px) {
-      border-block-end: var(--denhaag-link-grid-item-default-border, 1px solid)
-        var(--denhaag-link-grid-item-border-color, var(--denhaag-color-blue-1));
-
-      &:nth-child(4) {
-        border-block-start: none;
-      }
-
-      &:nth-child(odd) {
-        border-inline-start: var(--denhaag-link-grid-item-no-border);
-      }
-
-      &:nth-child(3n + 1) {
-        border-inline-start: var(--denhaag-link-grid-item-default-border, 1px solid)
-          var(--denhaag-link-grid-item-border-color, var(--denhaag-color-blue-1));
-      }
-    }
   }
 }
 
-.denhaag-link-grid:not(.denhaag-link-grid__no-image) .denhaag-link-grid__grid {
-  @media (min-width: 768px) {
-    grid-template-columns: var(--denhaag-link-grid-table-grid-template-columns-md, repeat(2, 1fr));
+.denhaag-link-grid:not(.denhaag-link-grid__no-image) {
+  .denhaag-link-grid__container {
+    inline-size: 100%;
+    @media (min-width: 1280px) {
+      max-inline-size: var(--denhaag-link-grid-container-width-lg, 1298px);
+    }
   }
 
-  @media (min-width: 1280px) {
-    grid-template-columns: var(--denhaag-link-grid-table-grid-template-columns-lg, repeat(3, 1fr));
+  .denhaag-link-grid__grid {
+    @media (min-width: 768px) {
+      grid-template-columns: var(--denhaag-link-grid-table-grid-template-columns-md, repeat(2, 1fr));
+    }
+
+    @media (min-width: 1280px) {
+      grid-template-columns: var(--denhaag-link-grid-table-grid-template-columns-lg, repeat(3, 1fr));
+    }
   }
 }
