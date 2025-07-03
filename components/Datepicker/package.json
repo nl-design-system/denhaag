@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/datepicker",
-  "version": "0.1.1-www-denhaag-nl.137",
+  "version": "0.1.1-www-denhaag-nl.138",
   "description": "A Datepicker component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "private": false,
@@ -33,7 +33,7 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.137",
+    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.138",
     "date-fns": "2.28.0"
   },
   "peerDependencies": {

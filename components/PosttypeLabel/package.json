@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/posttypelabel",
-  "version": "0.1.1-www-denhaag-nl.137",
+  "version": "0.1.1-www-denhaag-nl.138",
   "description": "A posttype label component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "private": false,
@@ -33,13 +33,13 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "0.2.3-www-denhaag-nl.137"
+    "@gemeente-denhaag/baseprops": "0.2.3-www-denhaag-nl.138"
   },
   "peerDependencies": {
     "react": "^17.0.0"
   },
   "devDependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.137"
+    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.138"
   },
   "gitHead": ""
 }
