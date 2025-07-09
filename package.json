@@ -78,7 +78,6 @@
     "rollup-plugin-postcss": "4.0.2",
     "rollup-plugin-summary": "3.0.0",
     "rollup-plugin-typescript2": "0.36.0",
-    "rollup-plugin-visualizer": "6.0.3",
     "sass": "1.85.0",
     "style-dictionary": "4.3.3",
     "stylelint": "16.14.1",
