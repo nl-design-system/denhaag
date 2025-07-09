@@ -9,7 +9,6 @@ import postcss from 'rollup-plugin-postcss';
 import discardDuplicates from 'postcss-discard-duplicates';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import nodeExternal from 'rollup-plugin-node-externals';
-// import { visualizer } from 'rollup-plugin-visualizer';
 import summary from 'rollup-plugin-summary';
 
 const inputExists = (config) => {
@@ -80,7 +79,6 @@ const createConfig = ({ dir, format, baseUrl, sourcemap, globals }) => ({
       },
     }),
     summary(),
-    //visualizer({ open: true }),
   ],
 });
 
