@@ -8,11 +8,9 @@ import { cwd } from 'node:process';
 import postcss from 'rollup-plugin-postcss';
 import discardDuplicates from 'postcss-discard-duplicates';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
-
-import { readFileSync } from 'node:fs';
+import nodeExternal from 'rollup-plugin-node-externals';
+// import { visualizer } from 'rollup-plugin-visualizer';
 import summary from 'rollup-plugin-summary';
-
-const tsconfig = JSON.parse(readFileSync('./tsconfig.json', 'utf8'));
 
 const inputExists = (config) => {
   try {
@@ -22,20 +20,24 @@ const inputExists = (config) => {
   }
 };
 
-const externalDependencies = ['react', 'react-dom'];
-const internalDependencies = tsconfig.compilerOptions.paths && Object.keys(tsconfig.compilerOptions.paths);
-const dependencies = externalDependencies.concat(internalDependencies);
+export const outputGlobals = {
+  react: 'React',
+  'react-dom': 'ReactDOM',
+};
 
-const createConfig = ({ dir, format, baseUrl }) => ({
+const createConfig = ({ dir, format, baseUrl, sourcemap, globals }) => ({
   input: path.join(baseUrl, 'src/index.tsx'),
   output: {
     dir,
-    sourcemap: false,
+    sourcemap,
     format,
     compact: true,
+    globals,
   },
   plugins: [
-    peerDepsExternal(),
+    peerDepsExternal({ includeDependencies: true }),
+    nodeExternal(),
+    nodeResolve({ browser: true }),
     postcss({
       extensions: ['.css', '.scss'],
       minimize: true,
@@ -67,8 +69,6 @@ const createConfig = ({ dir, format, baseUrl }) => ({
         `;
       },
     }),
-
-    nodeResolve(),
     commonjs({ include: /node_modules/ }),
     svgr({ icon: true, svgo: true, memo: true }),
     typescript({
@@ -80,8 +80,8 @@ const createConfig = ({ dir, format, baseUrl }) => ({
       },
     }),
     summary(),
+    //visualizer({ open: true }),
   ],
-  external: dependencies,
 });
 
 const baseUrl = cwd();
@@ -124,8 +124,7 @@ function emitStylesheetLoader() {
 }
 
 const configs = [
-  createConfig({ format: 'cjs', dir: './dist/cjs', baseUrl }),
-  createConfig({ format: 'esm', dir: './dist/mjs', baseUrl }),
+  createConfig({ format: 'esm', dir: './dist/mjs', baseUrl, sourcemap: true, globals: outputGlobals }),
   {
     input: 'src/index.scss',
     output: {
