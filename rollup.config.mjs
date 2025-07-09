@@ -122,6 +122,7 @@ function emitStylesheetLoader() {
 }
 
 const configs = [
+  createConfig({ format: 'cjs', dir: './dist/cjs', baseUrl, sourcemap: true, globals: outputGlobals }),
   createConfig({ format: 'esm', dir: './dist/mjs', baseUrl, sourcemap: true, globals: outputGlobals }),
   {
     input: 'src/index.scss',
