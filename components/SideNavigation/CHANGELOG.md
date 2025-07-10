@@ -1,5 +1,16 @@
 # @gemeente-denhaag/side-navigation
 
+## 3.1.0
+
+### Minor Changes
+
+- 154dfe5: Build changes: made bundle sizes smaller
+
+### Patch Changes
+
+- Updated dependencies [154dfe5]
+  - @gemeente-denhaag/number-badge@1.1.0
+
 ## 3.0.0
 
 ### Major Changes

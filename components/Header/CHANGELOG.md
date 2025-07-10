@@ -1,5 +1,28 @@
 # @gemeente-denhaag/header
 
+## 3.1.0
+
+### Minor Changes
+
+- 154dfe5: Build changes: made bundle sizes smaller
+
+### Patch Changes
+
+- Updated dependencies [154dfe5]
+  - @gemeente-denhaag/breadcrumb@4.1.0
+  - @gemeente-denhaag/button@2.2.0
+  - @gemeente-denhaag/header-logo@2.1.0
+  - @gemeente-denhaag/heading@1.1.0
+  - @gemeente-denhaag/iconbutton@2.1.0
+  - @gemeente-denhaag/icons@3.1.0
+  - @gemeente-denhaag/language-switcher@2.2.0
+  - @gemeente-denhaag/link@3.1.0
+  - @gemeente-denhaag/link-group@1.2.0
+  - @gemeente-denhaag/menu@3.1.0
+  - @gemeente-denhaag/paragraph@1.1.0
+  - @gemeente-denhaag/responsive-content@1.1.0
+  - @gemeente-denhaag/sheet@3.1.0
+
 ## 3.0.0
 
 ### Major Changes

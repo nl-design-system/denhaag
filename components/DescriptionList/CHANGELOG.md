@@ -1,5 +1,11 @@
 # @gemeente-denhaag/descriptionlist
 
+## 3.3.0
+
+### Minor Changes
+
+- 154dfe5: Build changes: made bundle sizes smaller
+
 ## 3.2.0
 
 ### Minor Changes

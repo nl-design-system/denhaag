@@ -1,5 +1,19 @@
 # @gemeente-denhaag/dynamic-content
 
+## 1.1.0
+
+### Minor Changes
+
+- 154dfe5: Build changes: made bundle sizes smaller
+
+### Patch Changes
+
+- Updated dependencies [154dfe5]
+  - @gemeente-denhaag/icons@3.1.0
+  - @gemeente-denhaag/image@1.1.0
+  - @gemeente-denhaag/link@3.1.0
+  - @gemeente-denhaag/pagination@2.1.0
+
 ## 1.0.4
 
 ### Patch Changes

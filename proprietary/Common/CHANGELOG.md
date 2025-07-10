@@ -1,5 +1,11 @@
 # @gemeente-denhaag/design-tokens-common
 
+## 3.1.0
+
+### Minor Changes
+
+- 154dfe5: Build changes: made bundle sizes smaller
+
 ## 3.0.0
 
 ### Major Changes

@@ -1,5 +1,11 @@
 # @gemeente-denhaag/utils
 
+## 2.1.0
+
+### Minor Changes
+
+- 154dfe5: Build changes: made bundle sizes smaller
+
 ## 2.0.0
 
 ### Major Changes

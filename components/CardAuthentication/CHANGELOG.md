@@ -1,5 +1,19 @@
 # @gemeente-denhaag/card-authentication
 
+## 1.1.0
+
+### Minor Changes
+
+- 154dfe5: Build changes: made bundle sizes smaller
+
+### Patch Changes
+
+- Updated dependencies [154dfe5]
+  - @gemeente-denhaag/button@2.2.0
+  - @gemeente-denhaag/button-group@1.1.0
+  - @gemeente-denhaag/card@4.1.0
+  - @gemeente-denhaag/link@3.1.0
+
 ## 1.0.9
 
 ### Patch Changes

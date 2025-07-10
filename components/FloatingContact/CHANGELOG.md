@@ -1,5 +1,11 @@
 # @gemeente-denhaag/floating-contact
 
+## 1.1.0
+
+### Minor Changes
+
+- 154dfe5: Build changes: made bundle sizes smaller
+
 ## 1.0.0
 
 ### Major Changes

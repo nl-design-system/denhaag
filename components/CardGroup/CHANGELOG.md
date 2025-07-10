@@ -1,5 +1,16 @@
 # @gemeente-denhaag/card-group
 
+## 1.1.0
+
+### Minor Changes
+
+- 154dfe5: Build changes: made bundle sizes smaller
+
+### Patch Changes
+
+- Updated dependencies [154dfe5]
+  - @gemeente-denhaag/card-authentication@1.1.0
+
 ## 1.0.9
 
 ### Patch Changes

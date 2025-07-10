@@ -1,5 +1,18 @@
 # @gemeente-denhaag/page-index
 
+## 2.1.0
+
+### Minor Changes
+
+- 154dfe5: Build changes: made bundle sizes smaller
+
+### Patch Changes
+
+- Updated dependencies [154dfe5]
+  - @gemeente-denhaag/link@3.1.0
+  - @gemeente-denhaag/typography@2.1.0
+  - @gemeente-denhaag/unorderedlist@2.1.0
+
 ## 2.0.1
 
 ### Patch Changes

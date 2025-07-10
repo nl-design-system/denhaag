@@ -3,7 +3,7 @@
   "description": "Highlighted links are important links at the top of your page.",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "exports": {
     ".": {
       "types": "./dist/cjs/index.d.ts",
