@@ -16,6 +16,7 @@
   --nl-link-color: var(--denhaag-action-color);
   --nl-link-text-decoration-line: none;
   --nl-link-hover-text-decoration-line: none;
+  --nl-link-hover-color: var(--denhaag-action-color);
 
   @media (width >= 768px) {
     flex-direction: row;
