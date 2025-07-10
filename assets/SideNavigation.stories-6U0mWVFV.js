@@ -1,1 +1,0 @@
-import t from"./SideNavigation.stories-DN3BHP9o.js";import{Default as u}from"./SideNavigation.stories-DN3BHP9o.js";import"./jsx-runtime-D_zvdyIk.js";import"./index-pFg5POhM.js";import"./index-raSRI-5R.js";import"./_commonjsHelpers-BosuxZz1.js";import"./index-B3tI_8Rh.js";const i={...t,tags:["autodocs"]},s=["Default"];export{u as Default,s as __namedExportsOrder,i as default};
