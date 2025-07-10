@@ -1,5 +1,16 @@
 # @gemeente-denhaag/open-forms
 
+## 1.1.0
+
+### Minor Changes
+
+- 154dfe5: Build changes: made bundle sizes smaller
+
+### Patch Changes
+
+- Updated dependencies [154dfe5]
+  - @gemeente-denhaag/design-tokens-components@4.1.0
+
 ## 1.0.8
 
 ### Patch Changes

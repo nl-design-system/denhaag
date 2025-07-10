@@ -1,5 +1,16 @@
 # @gemeente-denhaag/dotindicator
 
+## 2.1.0
+
+### Minor Changes
+
+- 154dfe5: Build changes: made bundle sizes smaller
+
+### Patch Changes
+
+- Updated dependencies [154dfe5]
+  - @gemeente-denhaag/button@2.2.0
+
 ## 2.0.2
 
 ### Patch Changes

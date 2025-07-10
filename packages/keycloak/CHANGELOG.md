@@ -1,5 +1,17 @@
 # @gemeente-denhaag/keycloak
 
+## 2.1.0
+
+### Minor Changes
+
+- 154dfe5: Build changes: made bundle sizes smaller
+
+### Patch Changes
+
+- Updated dependencies [154dfe5]
+  - @gemeente-denhaag/components-css@2.1.0
+  - @gemeente-denhaag/design-tokens-components@4.1.0
+
 ## 2.0.8
 
 ### Patch Changes

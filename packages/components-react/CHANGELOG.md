@@ -1,5 +1,54 @@
 # @gemeente-denhaag/components-react
 
+## 3.1.0
+
+### Minor Changes
+
+- 154dfe5: Build changes: made bundle sizes smaller
+
+### Patch Changes
+
+- Updated dependencies [154dfe5]
+  - @gemeente-denhaag/accordion@3.1.0
+  - @gemeente-denhaag/action@3.1.0
+  - @gemeente-denhaag/alert@3.1.0
+  - @gemeente-denhaag/button@2.2.0
+  - @gemeente-denhaag/card@4.1.0
+  - @gemeente-denhaag/card-group@1.1.0
+  - @gemeente-denhaag/checkbox@2.1.0
+  - @gemeente-denhaag/contact-timeline@3.1.0
+  - @gemeente-denhaag/descriptionlist@3.3.0
+  - @gemeente-denhaag/divider@2.1.0
+  - @gemeente-denhaag/file@1.1.0
+  - @gemeente-denhaag/footer@3.1.0
+  - @gemeente-denhaag/form-field@2.1.0
+  - @gemeente-denhaag/form-field-description@2.1.0
+  - @gemeente-denhaag/form-field-error-message@2.1.0
+  - @gemeente-denhaag/form-fieldset@2.1.0
+  - @gemeente-denhaag/form-label@2.1.0
+  - @gemeente-denhaag/form-progress@3.1.0
+  - @gemeente-denhaag/header@3.1.0
+  - @gemeente-denhaag/iconbutton@2.1.0
+  - @gemeente-denhaag/icons@3.1.0
+  - @gemeente-denhaag/link@3.1.0
+  - @gemeente-denhaag/link-button@2.1.0
+  - @gemeente-denhaag/list@2.1.0
+  - @gemeente-denhaag/menu@3.1.0
+  - @gemeente-denhaag/page@1.1.0
+  - @gemeente-denhaag/page-index@2.1.0
+  - @gemeente-denhaag/pagination@2.1.0
+  - @gemeente-denhaag/process-steps@3.1.0
+  - @gemeente-denhaag/radio-button@2.1.0
+  - @gemeente-denhaag/responsive-content@1.1.0
+  - @gemeente-denhaag/select@2.1.0
+  - @gemeente-denhaag/sheet@3.1.0
+  - @gemeente-denhaag/side-navigation@3.1.0
+  - @gemeente-denhaag/stylesprovider@2.1.0
+  - @gemeente-denhaag/tab@2.1.0
+  - @gemeente-denhaag/table@3.1.0
+  - @gemeente-denhaag/text-input@2.2.0
+  - @gemeente-denhaag/textarea@2.1.0
+
 ## 3.0.1
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @gemeente-denhaag/design-tokens-components
 
+## 4.1.0
+
+### Minor Changes
+
+- 154dfe5: Build changes: made bundle sizes smaller
+
 ## 4.0.1
 
 ### Patch Changes

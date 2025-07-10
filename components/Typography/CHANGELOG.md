@@ -1,5 +1,17 @@
 # @gemeente-denhaag/typography
 
+## 2.1.0
+
+### Minor Changes
+
+- 154dfe5: Build changes: made bundle sizes smaller
+
+### Patch Changes
+
+- Updated dependencies [154dfe5]
+  - @gemeente-denhaag/design-tokens-common@3.1.0
+  - @gemeente-denhaag/design-tokens-components@4.1.0
+
 ## 2.0.8
 
 ### Patch Changes
