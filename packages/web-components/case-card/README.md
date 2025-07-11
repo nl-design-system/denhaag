@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # `denhaag-case-card` Web Component
 
 Use this web component in your page as follows:
