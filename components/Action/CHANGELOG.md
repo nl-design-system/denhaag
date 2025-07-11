@@ -1,5 +1,11 @@
 # @gemeente-denhaag/action
 
+## 3.1.1
+
+### Patch Changes
+
+- f830218: Remove hover color in Action link
+
 ## 3.1.0
 
 ### Minor Changes

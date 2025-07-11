@@ -1,5 +1,11 @@
 # @gemeente-denhaag/case-card-element
 
+## 2.1.1
+
+### Patch Changes
+
+- 3e69163: Include the CC0.1.0 license at the top of the component README, using <!-- @license CC0-1.0 --> so that anyone is allowed to freely use the component.
+
 ## 2.1.0
 
 ### Minor Changes
