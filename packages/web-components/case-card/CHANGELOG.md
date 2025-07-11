@@ -1,5 +1,12 @@
 # @gemeente-denhaag/case-card-element
 
+## 2.1.2
+
+### Patch Changes
+
+- Updated dependencies [9fd7b1a]
+  - @gemeente-denhaag/card@4.1.1
+
 ## 2.1.1
 
 ### Patch Changes

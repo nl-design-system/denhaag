@@ -1,5 +1,14 @@
 # @gemeente-denhaag/storybook
 
+## 4.1.2
+
+### Patch Changes
+
+- Updated dependencies [9fd7b1a]
+  - @gemeente-denhaag/card@4.1.1
+  - @gemeente-denhaag/card-authentication@1.1.1
+  - @gemeente-denhaag/card-group@1.1.1
+
 ## 4.1.1
 
 ### Patch Changes
