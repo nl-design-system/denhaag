@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import md from '../../../LICENSE.md?raw';
+import md from '../../../../LICENSE.md?raw';
 
 const meta = {
   title: 'Den Haag/License',
