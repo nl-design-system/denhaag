@@ -1,5 +1,14 @@
 # @gemeente-denhaag/storybook
 
+## 4.1.1
+
+### Patch Changes
+
+- Updated dependencies [f830218]
+- Updated dependencies [6430b16]
+  - @gemeente-denhaag/action@3.1.1
+  - @gemeente-denhaag/side-navigation@3.1.1
+
 ## 4.1.0
 
 ### Minor Changes

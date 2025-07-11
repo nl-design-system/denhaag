@@ -1,5 +1,11 @@
 # @gemeente-denhaag/side-navigation
 
+## 3.1.1
+
+### Patch Changes
+
+- 6430b16: Include the CC0.1.0 license at the top of the component README, using <!-- @license CC0-1.0 --> so that anyone is allowed to freely use the component.
+
 ## 3.1.0
 
 ### Minor Changes
