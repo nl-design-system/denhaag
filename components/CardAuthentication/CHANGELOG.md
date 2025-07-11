@@ -1,5 +1,12 @@
 # @gemeente-denhaag/card-authentication
 
+## 1.1.1
+
+### Patch Changes
+
+- Updated dependencies [9fd7b1a]
+  - @gemeente-denhaag/card@4.1.1
+
 ## 1.1.0
 
 ### Minor Changes

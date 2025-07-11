@@ -1,5 +1,11 @@
 # @gemeente-denhaag/card
 
+## 4.1.1
+
+### Patch Changes
+
+- 9fd7b1a: Include the CC0.1.0 license at the top of the component README, using <!-- @license CC0-1.0 --> so that anyone is allowed to freely use the component.
+
 ## 4.1.0
 
 ### Minor Changes
