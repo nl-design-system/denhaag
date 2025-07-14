@@ -1,5 +1,13 @@
 # @gemeente-denhaag/components-react
 
+## 3.1.2
+
+### Patch Changes
+
+- Updated dependencies [9fd7b1a]
+  - @gemeente-denhaag/card@4.1.1
+  - @gemeente-denhaag/card-group@1.1.1
+
 ## 3.1.1
 
 ### Patch Changes
