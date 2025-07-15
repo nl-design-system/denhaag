@@ -10,7 +10,7 @@ import { TextInput } from '@gemeente-denhaag/text-input';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
 import { RadioButton } from '@gemeente-denhaag/radio-button';
 import readme from '../../../../components/FormField/README.md?raw';
-import Select, { SelectOption } from '@gemeente-denhaag/select';
+import { Select, SelectOption } from '@gemeente-denhaag/select';
 import { SearchIcon } from '@gemeente-denhaag/icons';
 
 const meta = {

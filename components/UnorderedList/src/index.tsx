@@ -18,4 +18,3 @@ const UnorderedList = ({ className, nested, ...props }: UnorderedListProps) => {
 };
 
 export { UnorderedList, UnorderedListProps, UnorderedListItem, UnorderedListItemProps };
-export default UnorderedList;

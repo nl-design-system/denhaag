@@ -1,6 +1,6 @@
 import React, { HTMLAttributes } from 'react';
 import { ChevronRightIcon } from '@gemeente-denhaag/icons';
-import IconButton from '@gemeente-denhaag/iconbutton';
+import { IconButton } from '@gemeente-denhaag/iconbutton';
 import { ListItemIcon } from './ListItemIcon';
 import { ListItemSecondaryAction } from './ListItemSecondaryAction';
 import { ListItemText } from './ListItemText';

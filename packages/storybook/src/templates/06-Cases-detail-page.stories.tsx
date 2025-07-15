@@ -23,7 +23,7 @@ import {
 
 import './template-story.scss';
 import SideNavigation from './components/SideNavigation';
-import ButtonLink from '@gemeente-denhaag/button-link';
+import { ButtonLink } from '@gemeente-denhaag/button-link';
 
 const meta = {
   title: 'Templates/Zaak Detail',
