@@ -4,6 +4,20 @@
   padding-block: var(--denhaag-blockquote-padding-block, var(--denhaag-space-md));
   padding-inline: var(--denhaag-blockquote-padding-inline, var(--denhaag-space-md));
   margin-inline: 0;
+
+  .utrecht-paragraph + & {
+    margin-block-start: var(
+      --denhaag-blockquote-margin-block-start,
+      var(--utrecht-paragraph-paragraph-margin-block-start, 0.89em)
+    );
+  }
+
+  & + .utrecht-paragraph {
+    margin-block-end: var(
+      --denhaag-blockquote-margin-block-start,
+      var(--utrecht-paragraph-paragraph-margin-block-end, 0.89em)
+    );
+  }
 }
 
 .denhaag-blockquote__content {
