@@ -7,6 +7,7 @@
   );
   --denhaag-list-item-padding-inline: var(--denhaag-conditions-list-item-padding-inline, var(--denhaag-space-xl));
   --denhaag-list-wrapper-padding-block: 0;
+  --denhaag-list-wrapper-margin-block: 0;
 
   background-color: var(--denhaag-conditions-background-color, #f9fbf9); // 15% of var(--denhaag-color-green-1).
   border-block-start: var(--denhaag-space-xs) solid var(--denhaag-conditions-variant-color);
