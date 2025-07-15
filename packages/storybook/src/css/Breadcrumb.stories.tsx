@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 import '@gemeente-denhaag/breadcrumb';
 import readme from '../../../../components/Breadcrumb/README.md?raw';
-import Breadcrumb from '@gemeente-denhaag/breadcrumb';
+import { Breadcrumb } from '@gemeente-denhaag/breadcrumb';
 
 const meta = {
   id: 'css-navigation-breadcrumb',

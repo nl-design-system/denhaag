@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import LinkList, { LinkListProps } from '@gemeente-denhaag/link-list';
+import { LinkList, LinkListProps } from '@gemeente-denhaag/link-list';
 
 import readme from '../../../../components/LinkList/README.md?raw';
 

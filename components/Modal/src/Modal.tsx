@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
-import ModalHeader from './ModalHeader';
-import ModalContent from './ModalContent';
-import ModalFooter, { ModalAction } from './ModalFooter';
-import ModalDialog from './ModalDialog';
-import ModalBackdrop from './ModalBackdrop';
+import { ModalHeader } from './ModalHeader';
+import { ModalContent } from './ModalContent';
+import { ModalAction, ModalFooter } from './ModalFooter';
+import { ModalDialog } from './ModalDialog';
+import { ModalBackdrop } from './ModalBackdrop';
 
 export interface ModalProps {
   open?: boolean;

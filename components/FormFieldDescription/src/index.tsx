@@ -2,4 +2,3 @@ import { FormFieldDescription, FormFieldDescriptionProps } from '@utrecht/form-f
 import './index.scss';
 
 export { FormFieldDescription, FormFieldDescriptionProps };
-export default FormFieldDescription;

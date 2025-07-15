@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import { ActionMulti } from '@gemeente-denhaag/action';
 import readme from '../../../../components/Action/README.md?raw';
 import { templateLocale } from '../templates/util';
-import ButtonLink from '@gemeente-denhaag/button-link';
+import { ButtonLink } from '@gemeente-denhaag/button-link';
 
 const labels = {
   today: 'vandaag',

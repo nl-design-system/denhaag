@@ -16,4 +16,3 @@ const Select = ({ className, ...props }: SelectProps) => {
 };
 
 export { Select, SelectProps, SelectOption, SelectOptionProps };
-export default Select;

@@ -2,4 +2,3 @@ import { FormFieldErrorMessage, FormFieldErrorMessageProps } from '@utrecht/form
 import './index.scss';
 
 export { FormFieldErrorMessage, FormFieldErrorMessageProps };
-export default FormFieldErrorMessage;

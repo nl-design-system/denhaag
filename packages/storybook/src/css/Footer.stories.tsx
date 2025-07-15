@@ -8,7 +8,6 @@ import '@gemeente-denhaag/list';
 import '@gemeente-denhaag/link';
 import '@gemeente-denhaag/link-group';
 import '@gemeente-denhaag/responsive-content';
-import '@utrecht/component-library-css/dist/index.css';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
 
 const meta = {
