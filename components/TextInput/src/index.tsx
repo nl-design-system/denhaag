@@ -1,5 +1,5 @@
 import React, { ForwardedRef, forwardRef } from 'react';
-import { Textbox, TextboxProps } from '@utrecht/component-library-react';
+import { Textbox, TextboxProps } from '@utrecht/textbox-react';
 import './index.scss';
 
 interface TextInputProps extends TextboxProps {

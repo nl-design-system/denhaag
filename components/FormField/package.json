@@ -31,8 +31,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@utrecht/component-library-react": "9.0.1",
-    "@utrecht/components": "7.4.0"
+    "@utrecht/form-field-css": "1.5.1",
+    "@utrecht/form-field-react": "1.0.7"
   },
   "peerDependencies": {
     "react": "18 || 19",

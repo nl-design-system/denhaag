@@ -1,4 +1,4 @@
-import { FormFieldErrorMessage, FormFieldErrorMessageProps } from '@utrecht/component-library-react';
+import { FormFieldErrorMessage, FormFieldErrorMessageProps } from '@utrecht/form-field-error-message-react';
 import './index.scss';
 
 export { FormFieldErrorMessage, FormFieldErrorMessageProps };

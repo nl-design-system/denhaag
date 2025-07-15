@@ -1,8 +1,6 @@
-@import "~@utrecht/components/dist/unordered-list/css";
+@import "@utrecht/unordered-list-css/index.min.css";
 
 .denhaag-unordered-list--nested {
-  @extend .utrecht-unordered-list--nested;
-
   .utrecht-unordered-list__item::marker {
     content: "○";
   }
