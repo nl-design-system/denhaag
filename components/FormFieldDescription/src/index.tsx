@@ -1,4 +1,4 @@
-import { FormFieldDescription, FormFieldDescriptionProps } from '@utrecht/component-library-react';
+import { FormFieldDescription, FormFieldDescriptionProps } from '@utrecht/form-field-description-react';
 import './index.scss';
 
 export { FormFieldDescription, FormFieldDescriptionProps };

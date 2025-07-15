@@ -29,6 +29,9 @@
     "directory": "components/StylesProvider"
   },
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
+  "dependencies": {
+    "@utrecht/document-css": "1.5.1"
+  },
   "peerDependencies": {
     "react": "18 || 19",
     "react-dom": "18 || 19"
