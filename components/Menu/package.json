@@ -37,7 +37,6 @@
     "@gemeente-denhaag/number-badge": "workspace:*",
     "@gemeente-denhaag/sheet": "workspace:*",
     "@types/uuid": "10.0.0",
-    "@utrecht/component-library-css": "7.1.0",
     "clsx": "2.1.1",
     "uuid": "11.1.0"
   },
