@@ -102,7 +102,7 @@
     "@nl-design-system-unstable/theme-toolkit": "1.0.0",
     "@storybook/manager-api": "8.5.8",
     "@storybook/preview-api": "8.5.8",
-    "@utrecht/component-library-css": "7.1.0"
+    "@utrecht/component-library-css": "7.4.0"
   },
   "devDependencies": {
     "@babel/core": "7.26.9",
