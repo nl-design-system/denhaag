@@ -1,6 +1,6 @@
 import globals from 'globals';
 import json from 'eslint-plugin-json';
-import mdxPlugin from 'eslint-plugin-mdx';
+import * as mdxPlugin from 'eslint-plugin-mdx';
 import importPlugin from 'eslint-plugin-import';
 import reactPlugin from 'eslint-plugin-react';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
@@ -47,7 +47,7 @@ export default [
     },
     settings: {
       react: {
-        version: 'detect',
+        version: '19.0.1',
       },
     },
     rules: {
@@ -68,7 +68,7 @@ export default [
     },
     settings: {
       react: {
-        version: 'detect',
+        version: '19.0.1',
       },
     },
     rules: {
@@ -92,7 +92,7 @@ export default [
     },
     settings: {
       react: {
-        version: 'detect',
+        version: '19.0.1',
       },
     },
     rules: {

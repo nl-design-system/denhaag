@@ -40,6 +40,6 @@
   },
   "devDependencies": {
     "@nl-design-system/tsconfig": "1.0.3",
-    "@rollup/plugin-typescript": "12.1.2"
+    "@rollup/plugin-typescript": "12.1.4"
   }
 }
