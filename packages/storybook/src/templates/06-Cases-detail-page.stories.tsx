@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import { Action } from '@gemeente-denhaag/action';
 import { Heading } from '@gemeente-denhaag/heading';
 import { Page, PageHeader, PageFooter } from '@gemeente-denhaag/page';

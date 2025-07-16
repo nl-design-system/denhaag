@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 
 import { Menu, MenuButton, MenuButtonExpandable } from '@gemeente-denhaag/menu';
 import readme from '../../../../components/Menu/README.md?raw';

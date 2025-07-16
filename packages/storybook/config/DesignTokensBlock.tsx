@@ -1,6 +1,6 @@
 import { ComponentTokensSection } from '@nl-design-system-unstable/theme-toolkit';
-import { useOf } from '@storybook/blocks';
-import { StoryObj } from '@storybook/react';
+import { useOf } from '@storybook/addon-docs/blocks';
+import { StoryObj } from '@storybook/react-vite';
 import React from 'react';
 
 export function DesignTokensBlock() {

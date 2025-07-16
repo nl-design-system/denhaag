@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import { File } from '@gemeente-denhaag/file';
 import { ContactTimeline, ContactTimelineProps } from '@gemeente-denhaag/contact-timeline';
 

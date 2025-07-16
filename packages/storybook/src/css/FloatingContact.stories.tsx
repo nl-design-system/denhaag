@@ -1,12 +1,12 @@
 import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import '@gemeente-denhaag/floating-contact';
 
 import readme from '../../../../components/FloatingContact/README.md?raw';
 import '../../../../components/FloatingContact/src/stories.js';
 import './_storybook.scss';
 
-import { useEffect, useMemo } from '@storybook/preview-api';
+import { useEffect, useMemo } from 'storybook/preview-api';
 
 const meta = {
   title: 'CSS/Page Elements/Floating Contact',

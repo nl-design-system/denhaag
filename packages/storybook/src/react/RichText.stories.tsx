@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import { RichText } from '@gemeente-denhaag/rich-text';
 import readme from '../../../../components/RichText/README.md?raw';
 import { Heading1, Heading2, Heading3, Paragraph } from '@gemeente-denhaag/typography';

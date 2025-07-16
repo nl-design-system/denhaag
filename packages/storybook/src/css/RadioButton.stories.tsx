@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import readme from '../../../../components/RadioButton/README.md?raw';
 import { RadioButton } from '@gemeente-denhaag/radio-button';
 

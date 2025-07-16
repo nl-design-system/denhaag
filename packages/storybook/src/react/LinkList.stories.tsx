@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import { LinkList, LinkListProps } from '@gemeente-denhaag/link-list';
 
 import readme from '../../../../components/LinkList/README.md?raw';

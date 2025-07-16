@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import { CloseIcon } from '@gemeente-denhaag/icons';
 import { IconButton } from '@gemeente-denhaag/iconbutton';
 import { Sheet, SheetContainer, SheetDialog, SheetProps } from '@gemeente-denhaag/sheet';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import '@gemeente-denhaag/anchor-collapse';
 
 import readme from '../../../../components/AnchorCollapse/README.md?raw';

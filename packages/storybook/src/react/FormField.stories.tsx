@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import { Checkbox } from '@gemeente-denhaag/checkbox';
 import { FormField } from '@gemeente-denhaag/form-field';
 import { FormFieldDescription } from '@gemeente-denhaag/form-field-description';

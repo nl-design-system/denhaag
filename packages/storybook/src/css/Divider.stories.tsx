@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import { Divider } from '@gemeente-denhaag/divider';
 import readme from '../../../../components/Divider/README.md?raw';
 

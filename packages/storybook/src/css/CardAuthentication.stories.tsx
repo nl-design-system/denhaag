@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import clsx from 'clsx';
 import '@gemeente-denhaag/card-authentication';
 import readme from '../../../../components/CardAuthentication/README.md?raw';

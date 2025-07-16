@@ -4,6 +4,7 @@ import * as mdxPlugin from 'eslint-plugin-mdx';
 import importPlugin from 'eslint-plugin-import';
 import reactPlugin from 'eslint-plugin-react';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
+import storybook from 'eslint-plugin-storybook';
 import typescriptParser from '@typescript-eslint/parser';
 import typescriptPlugin from '@typescript-eslint/eslint-plugin';
 import prettierConfig from 'eslint-config-prettier';
@@ -89,6 +90,9 @@ export default [
     },
     languageOptions: {
       parser: typescriptParser,
+      parserOptions: {
+        project: './tsconfig.build.json',
+      },
     },
     settings: {
       react: {
@@ -105,4 +109,5 @@ export default [
       ...reactRules,
     },
   },
+  ...storybook.configs['flat/recommended'],
 ];
