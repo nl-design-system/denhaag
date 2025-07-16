@@ -1,4 +1,4 @@
-@import "@utrecht/unordered-list-css/index.min.css";
+@use "~@utrecht/unordered-list-css/dist/index.min.css" as unorderedlist;
 
 .denhaag-unordered-list--nested {
   .utrecht-unordered-list__item::marker {
