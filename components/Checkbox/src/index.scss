@@ -1,4 +1,4 @@
-@import "~@utrecht/checkbox-css/index.min.css";
+@use "~@utrecht/checkbox-css/dist/index.min.css" as checkbox;
 
 .utrecht-checkbox--custom {
   border-radius: var(--utrecht-checkbox-border-radius);

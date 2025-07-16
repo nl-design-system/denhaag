@@ -3,7 +3,7 @@
  * Copyright (c) 2021 The Knights Who Say NIH! B.V.
  */
 
-@import "~@utrecht/paragraph-css/index.min.css";
+@use "~@utrecht/paragraph-css/dist/index.min.css" as paragraph;
 
 .utrecht-paragraph--denhaag-detail {
   --utrecht-paragraph-font-family: var(--denhaag-posttypelabel-font-family, inherit);

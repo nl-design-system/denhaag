@@ -1,4 +1,4 @@
-@import "~@utrecht/select-css/index.min.css";
+@use "~@utrecht/select-css/dist/index.min.css" as select;
 
 .denhaag-select {
   &.utrecht-select {

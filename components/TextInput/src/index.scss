@@ -1,4 +1,4 @@
-@import "~@utrecht/textbox-css/index.min.css";
+@use "~@utrecht/textbox-css/dist/index.min.css" as textbox;
 @import "./pra-textbox";
 
 .pra-textbox {

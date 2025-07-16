@@ -1,4 +1,4 @@
-@import "~@utrecht/form-fieldset-css/index.min.css";
+@use "~@utrecht/form-fieldset-css/dist/index.min.css" as formfieldset;
 
 .utrecht-form-fieldset__legend--distanced {
   --utrecht-space-around: 1;
