@@ -1,5 +1,5 @@
 import tokens from '@gemeente-denhaag/design-tokens-components/dist/list.json';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import { headerProps, headerFlatMobileMenuProps } from '../templates/util';
 import { HeaderLogic, HeaderLogicProps } from '@gemeente-denhaag/header';
 

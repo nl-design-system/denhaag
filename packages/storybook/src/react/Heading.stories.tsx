@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import { Heading, headingLevels } from '@gemeente-denhaag/heading';
 import readme from '../../../../components/Heading/README.md?raw';
 

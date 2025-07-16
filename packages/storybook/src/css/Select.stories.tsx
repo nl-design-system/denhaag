@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import { Select, SelectOption } from '@gemeente-denhaag/select';
 import readme from '../../../../components/Select/README.md?raw';
 

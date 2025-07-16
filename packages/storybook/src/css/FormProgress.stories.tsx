@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import { FormProgress } from '@gemeente-denhaag/form-progress';
 
 import readme from '../../../../components/FormProgress/README.md?raw';

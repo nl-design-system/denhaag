@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import '@gemeente-denhaag/card-group';
 import readme from '../../../../components/CardGroup/README.md?raw';
 import { AuthenticationCardGroup } from './CardGroupUtils';

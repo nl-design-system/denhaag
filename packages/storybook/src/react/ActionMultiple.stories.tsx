@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import { ActionMulti } from '@gemeente-denhaag/action';
 import readme from '../../../../components/Action/README.md?raw';
 import { templateLocale } from '../templates/util';

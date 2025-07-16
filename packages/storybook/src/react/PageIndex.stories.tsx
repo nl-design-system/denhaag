@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import { PageIndex, PageIndexProps } from '@gemeente-denhaag/page-index';
 
 const exampleArgs = {

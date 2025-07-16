@@ -1,6 +1,6 @@
 import { ArchiveIcon, CheckCircleIcon, GridIcon, InboxIcon, UserIcon } from '@gemeente-denhaag/icons';
 import { SideNavigation } from '@gemeente-denhaag/side-navigation';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import React from 'react';
 import readme from '../../../../components/SideNavigation/README.md?raw';
 

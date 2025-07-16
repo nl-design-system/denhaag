@@ -1,12 +1,12 @@
-import type { Preview } from '@storybook/react';
-import type { StoryContext } from '@storybook/types';
+import type { Preview } from '@storybook/react-vite';
+import type { StoryContext } from 'storybook/internal/types';
 import clsx from 'clsx';
 import * as prettierPluginBabel from 'prettier/plugins/babel';
 import prettierPluginEstree from 'prettier/plugins/estree';
 import prettier from 'prettier/standalone';
 import React, { ReactElement } from 'react';
 import * as ReactDOMServer from 'react-dom/server';
-import { Controls, Description, Primary, Stories } from '@storybook/blocks';
+import { Controls, Description, Primary, Stories } from '@storybook/addon-docs/blocks';
 import { DesignTokensBlock } from './DesignTokensBlock';
 import { withThemeByClassName } from '@storybook/addon-themes';
 
