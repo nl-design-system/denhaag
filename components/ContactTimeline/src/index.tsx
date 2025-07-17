@@ -1,7 +1,4 @@
 import './index.scss';
-import ContactTimeline from './ContactTimeline';
-
-export default ContactTimeline;
 
 export * from './ContactTimeline';
 export * from './ContactTimelineHeaderChannel';

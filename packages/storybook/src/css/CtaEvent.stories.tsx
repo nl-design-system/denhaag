@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import '@gemeente-denhaag/cta-event';
 
 import '../../../../components/CtaEvent/src/index';

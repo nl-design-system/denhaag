@@ -1,6 +1,6 @@
 import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
+import { Meta, StoryObj } from '@storybook/react-vite';
+import { action } from 'storybook/actions';
 import { IconButton } from '@gemeente-denhaag/iconbutton';
 import { TrashIcon } from '@gemeente-denhaag/icons';
 

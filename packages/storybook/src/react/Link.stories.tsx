@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import * as Icons from '@gemeente-denhaag/icons';
 import { ArrowRightIcon, ArrowLeftIcon } from '@gemeente-denhaag/icons';
 import { Paragraph } from '@gemeente-denhaag/paragraph';

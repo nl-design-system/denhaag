@@ -1,5 +1,4 @@
-import { Checkbox, CheckboxProps } from '@utrecht/component-library-react';
+import { Checkbox, CheckboxProps } from '@utrecht/checkbox-react';
 import './index.scss';
 
 export { Checkbox, CheckboxProps };
-export default Checkbox;

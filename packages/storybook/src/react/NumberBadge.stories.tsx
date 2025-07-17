@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import { NumberBadge } from '@gemeente-denhaag/number-badge';
 import readme from '../../../../components/NumberBadge/README.md?raw';
 

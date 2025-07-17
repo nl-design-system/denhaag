@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import { CaseCard } from '@gemeente-denhaag/card';
 import readme from '../../../../components/Card/README.md?raw';
 import { templateLocale } from '../templates/util';

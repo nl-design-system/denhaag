@@ -31,10 +31,13 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@gemeente-denhaag/design-tokens-common": "workspace:*",
-    "@gemeente-denhaag/design-tokens-components": "workspace:*",
-    "@utrecht/component-library-react": "9.0.1",
-    "@utrecht/components": "7.4.0",
+    "@utrecht/component-library-react": "10.2.1",
+    "@utrecht/heading-1-css": "1.5.1",
+    "@utrecht/heading-2-css": "1.5.1",
+    "@utrecht/heading-3-css": "1.5.1",
+    "@utrecht/heading-4-css": "1.5.1",
+    "@utrecht/heading-5-css": "1.5.1",
+    "@utrecht/paragraph-css": "2.3.1",
     "clsx": "2.1.1"
   },
   "peerDependencies": {

@@ -41,8 +41,3 @@ export const FormProgress: React.FC<FormProgressProps> = ({
     </div>
   );
 };
-
-/**
- * Default export for FormProgress
- */
-export default FormProgress;

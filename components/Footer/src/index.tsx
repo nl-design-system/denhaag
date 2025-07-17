@@ -1,6 +1,6 @@
 import React from 'react';
 import { ButtonLink } from '@utrecht/component-library-react';
-import ResponsiveContent from '@gemeente-denhaag/responsive-content';
+import { ResponsiveContent } from '@gemeente-denhaag/responsive-content';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
 import '@gemeente-denhaag/button-group';
 import '@gemeente-denhaag/icons';

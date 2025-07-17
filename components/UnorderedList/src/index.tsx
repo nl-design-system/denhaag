@@ -13,9 +13,8 @@ interface UnorderedListProps extends UtrechtUnorderedListProps {
 }
 
 const UnorderedList = ({ className, nested, ...props }: UnorderedListProps) => {
-  const classNames = clsx(className, { 'denhaag-unordered-list--nested': nested });
+  const classNames = clsx(className, nested && ['denhaag-unordered-list--nested', 'utrecht-unordered-list--nested']);
   return <UtrechtUnorderedList className={classNames} {...props} />;
 };
 
 export { UnorderedList, UnorderedListProps, UnorderedListItem, UnorderedListItemProps };
-export default UnorderedList;

@@ -1,6 +1,6 @@
 import { ActionSingle } from '@gemeente-denhaag/action';
 import tokens from '@gemeente-denhaag/design-tokens-components/dist/list.json';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import React from 'react';
 import readme from '../../../../components/Action/README.md?raw';
 import tokensDefinition from '../../../../components/Action/tokens.json';

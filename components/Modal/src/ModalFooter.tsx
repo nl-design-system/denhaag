@@ -1,5 +1,5 @@
 import React from 'react';
-import Button, { ButtonProps } from '@gemeente-denhaag/button';
+import { Button, ButtonProps } from '@gemeente-denhaag/button';
 
 export type ModalAction = ButtonProps;
 

@@ -9,10 +9,9 @@ import { MobileMenuButton } from './MobileMenuButton';
 import { MobileMenuLink, Link } from './MobileMenuLink';
 import { LanguageSwitcherLogic, LanguageSwitcherLogicProps } from '@gemeente-denhaag/language-switcher';
 import { Button } from '@gemeente-denhaag/button';
-
-import useToggleState from './use-togglestate';
 import clsx from 'clsx';
-import MobileMenuLinkLabel from './MobileMenuLinkLabel';
+import { useToggleState } from './use-togglestate';
+import { MobileMenuLinkLabel } from './MobileMenuLinkLabel';
 
 interface NavigationGroupProps {
   label?: string;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import { Button, StatusButton, LoadingState } from '@gemeente-denhaag/button';
 import { ArrowLeftIcon, ArrowRightIcon } from '@gemeente-denhaag/icons';
 

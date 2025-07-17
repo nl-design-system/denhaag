@@ -1,5 +1,5 @@
 import React, { AnchorHTMLAttributes, ComponentType } from 'react';
-import ResponsiveContent from '@gemeente-denhaag/responsive-content';
+import { ResponsiveContent } from '@gemeente-denhaag/responsive-content';
 import { ChevronRightIcon, HouseIcon } from '@gemeente-denhaag/icons';
 import { BreadcrumbNavigation, BreadcrumbNavigationProps } from './BreadcrumbNavigation';
 import { BreadcrumbListItem } from './BreadcrumbListItem';
@@ -92,8 +92,6 @@ export const Breadcrumb = ({ navigationPath, showCurrent = true, showHomeIcon, L
     </BreadcrumbNavigation>
   );
 };
-
-export default Breadcrumb;
 
 export * from './BreadcrumbLink';
 export * from './BreadcrumbList';

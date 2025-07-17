@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import { Status } from '@gemeente-denhaag/process-steps';
 
 import readme from '../../../../components/ProcessSteps/README.md?raw';

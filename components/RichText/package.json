@@ -31,10 +31,6 @@
     "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\"",
     "typecheck": "tsc --noEmit"
   },
-  "dependencies": {
-    "@utrecht/component-library-react": "9.0.1",
-    "@utrecht/components": "7.4.0"
-  },
   "peerDependencies": {
     "react": "18 || 19",
     "react-dom": "18 || 19"

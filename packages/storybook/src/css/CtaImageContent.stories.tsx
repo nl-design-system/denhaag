@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import '@gemeente-denhaag/cta-image-content';
 
 import readme from '../../../../components/CtaImageContent/README.md?raw';

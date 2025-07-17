@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
 import readme from '../../../../components/Paragraph/README.md?raw';
 

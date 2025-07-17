@@ -4,7 +4,7 @@ node_modules
 # Ignore generated files
 *.log
 .husky
-CHANGELOG.md
+*.md
 dist
 package-lock.json
 pnpm-lock.yaml

@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
-import LinkListBase, { LinkListBaseProps } from './LinkListBase';
-import LinkListItem from './LinkListItem';
+import { LinkListBase, LinkListBaseProps } from './LinkListBase';
+import { LinkListItem } from './LinkListItem';
 import { ArrowRightIcon, ExternalLinkIcon } from '@gemeente-denhaag/icons';
 import { Link } from '@gemeente-denhaag/link';
 

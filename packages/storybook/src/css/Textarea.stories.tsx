@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import { Textarea } from '@gemeente-denhaag/textarea';
 import readme from '../../../../components/Textarea/README.md?raw';
 

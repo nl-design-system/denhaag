@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import { Pagination } from '@gemeente-denhaag/pagination';
 
 import readme from '../../../../components/Pagination/README.md?raw';

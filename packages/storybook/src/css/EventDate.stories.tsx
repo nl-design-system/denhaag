@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import '@gemeente-denhaag/eventdate';
 
 import readme from '../../../../components/EventDate/README.md?raw';

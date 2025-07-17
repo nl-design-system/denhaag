@@ -1,9 +1,9 @@
 import React, { ReactNode } from 'react';
-import SideNavigationBase from './SideNavigationBase';
-import SideNavigationList from './SideNavigationList';
-import SideNavigationItem from './SideNavigationItem';
-import SideNavigationLink from './SideNavigationLink';
-import SideNavigationLinkLabel from './SideNavigationLinkLabel';
+import { SideNavigationBase } from './SideNavigationBase';
+import { SideNavigationList } from './SideNavigationList';
+import { SideNavigationItem } from './SideNavigationItem';
+import { SideNavigationLink } from './SideNavigationLink';
+import { SideNavigationLinkLabel } from './SideNavigationLinkLabel';
 import { NumberBadge } from '@gemeente-denhaag/number-badge';
 
 export interface SideNavigationProps {
@@ -41,5 +41,3 @@ export const SideNavigation = ({ items }: SideNavigationProps) => {
     </SideNavigationBase>
   );
 };
-
-export default SideNavigation;

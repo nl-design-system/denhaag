@@ -5,8 +5,8 @@
  * Copyright (c) 2021 The Knights Who Say NIH! B.V.
  */
 
-@import "~@utrecht/components/dist/heading-1/css";
-@import "~@utrecht/components/dist/heading-2/css";
-@import "~@utrecht/components/dist/heading-3/css";
-@import "~@utrecht/components/dist/heading-4/css";
-@import "~@utrecht/components/dist/heading-5/css";
+@use "~@utrecht/heading-1-css/dist/index.min.css" as heading1;
+@use "~@utrecht/heading-2-css/dist/index.min.css" as heading2;
+@use "~@utrecht/heading-3-css/dist/index.min.css" as heading3;
+@use "~@utrecht/heading-4-css/dist/index.min.css" as heading4;
+@use "~@utrecht/heading-5-css/dist/index.min.css" as heading5;

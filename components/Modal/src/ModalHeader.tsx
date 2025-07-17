@@ -1,6 +1,6 @@
 import React from 'react';
-import ModalTitle from './ModalTitle';
-import ModalClose from './ModalClose';
+import { ModalTitle } from './ModalTitle';
+import { ModalClose } from './ModalClose';
 
 export interface ModalHeaderProps {
   title?: string;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import readme from '../../../../components/FormFieldErrorMessage/README.md?raw';
 import { FormFieldErrorMessage } from '@gemeente-denhaag/form-field-error-message';
 import { Paragraph } from '@gemeente-denhaag/paragraph';

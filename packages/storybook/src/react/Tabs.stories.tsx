@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import { Tabs, TabsProps } from '@gemeente-denhaag/tab';
 import readme from '../../../../components/Tab/README.md?raw';
 import React, { useEffect, useState } from 'react';

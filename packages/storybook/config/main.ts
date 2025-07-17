@@ -10,14 +10,13 @@ const config: StorybookConfig = {
     options: {},
   },
   addons: [
-    '@storybook/addon-actions',
     '@storybook/addon-docs',
     '@storybook/addon-a11y',
-    '@storybook/addon-viewport',
     '@storybook/addon-themes',
     '@storybook/preset-scss',
-    '@etchteam/storybook-addon-status',
-    '@whitespace/storybook-addon-html',
+    // TODO enable when upgraded to storybook 9
+    //'@etchteam/storybook-addon-status',
+    // '@whitespace/storybook-addon-html',
     '@storybook/addon-links',
     'storybook-addon-pseudo-states',
   ],

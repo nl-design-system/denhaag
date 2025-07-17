@@ -1,4 +1,4 @@
-@import "~@utrecht/components/dist/form-field/css";
+@use "~@utrecht/form-field-css/dist/index.min.css" as formfield;
 
 // TODO: replace with .utrecht-form-field--text-flex when possible
 .denhaag-form-field--flex {

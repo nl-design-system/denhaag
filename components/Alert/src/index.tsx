@@ -1,8 +1,8 @@
 import React, { ReactNode } from 'react';
-import Button from '@gemeente-denhaag/button';
+import { Button } from '@gemeente-denhaag/button';
 import { Heading } from '@gemeente-denhaag/heading';
 import { AlertTriangleIcon, CheckCircleIcon, CircleInformationIcon, CloseIcon } from '@gemeente-denhaag/icons';
-import IconButton from '@gemeente-denhaag/iconbutton';
+import { IconButton } from '@gemeente-denhaag/iconbutton';
 import './index.scss';
 import clsx from 'clsx';
 
@@ -97,5 +97,3 @@ export const Alert = ({ id, title, text, variant, action, close, supportIcon, cl
     </div>
   );
 };
-
-export default Alert;

@@ -1,10 +1,10 @@
 import React, { AnchorHTMLAttributes } from 'react';
-import LanguageSwitcher from './LanguageSwitcher';
+import { LanguageSwitcher } from './LanguageSwitcher';
 import './index.scss';
-import LanguageSwitcherTitle from './LanguageSwitcherTitle';
-import LanguageSwitcherList from './LanguageSwitcherList';
-import LanguageSwitcherListItem from './LanguageSwitcherListItem';
-import LanguageSwitcherLink, { Link } from './LanguageSwitcherLink';
+import { LanguageSwitcherTitle } from './LanguageSwitcherTitle';
+import { LanguageSwitcherList } from './LanguageSwitcherList';
+import { LanguageSwitcherListItem } from './LanguageSwitcherListItem';
+import { LanguageSwitcherLink, Link } from './LanguageSwitcherLink';
 import { ArrowRightIcon, CheckedIcon } from '@gemeente-denhaag/icons';
 import { LinkButton } from '@utrecht/component-library-react';
 import clsx from 'clsx';
@@ -105,8 +105,6 @@ export const LanguageSwitcherLogic = ({
     </LanguageSwitcher>
   );
 };
-
-export default LanguageSwitcherLogic;
 
 export * from './LanguageSwitcher';
 export * from './LanguageSwitcherTitle';

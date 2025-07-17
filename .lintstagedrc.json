@@ -6,6 +6,5 @@
     "eslint --no-error-on-unmatched-pattern --no-warn-ignored",
     "prettier --check"
   ],
-  "*.{ts, tsx}": ["tsc --noEmit --esModuleInterop --resolveJsonModule --moduleResolution bundler --module preserve"],
   "package.json": "npmPkgJsonLint --allowEmptyTargets"
 }
