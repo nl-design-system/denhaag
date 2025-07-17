@@ -7,7 +7,7 @@
   line-height: var(--denhaag-description-list-line-height);
   margin-block-end: var(--denhaag-description-list-margin-block-end);
   margin-block-start: var(--denhaag-description-list-margin-block-start);
-  word-break: var(--denhaag-description-list-word-break, break-word);
+  overflow-wrap: var(--denhaag-description-list-overflow-wrap, break-word);
 }
 
 @container description-list (width >= 480px) {
