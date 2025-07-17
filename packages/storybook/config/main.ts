@@ -16,7 +16,7 @@ const config: StorybookConfig = {
     '@storybook/preset-scss',
     // TODO enable when upgraded to storybook 9
     //'@etchteam/storybook-addon-status',
-    '@whitespace/storybook-addon-html',
+    // '@whitespace/storybook-addon-html',
     '@storybook/addon-links',
     'storybook-addon-pseudo-states',
   ],
