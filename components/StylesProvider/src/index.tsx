@@ -12,8 +12,3 @@ export interface StylesProviderProps {
 export const StylesProvider: React.FC<StylesProviderProps> = (props: StylesProviderProps) => {
   return <div className={'utrecht-document utrecht-document--surface'}>{props.children}</div>;
 };
-
-/**
- * Default export
- */
-export default StylesProvider;

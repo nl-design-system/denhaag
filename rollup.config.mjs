@@ -24,6 +24,8 @@ export const outputGlobals = {
   'react-dom': 'ReactDOM',
 };
 
+// TODO search for rollup-plugin-postcss alternatives if the legacy-js-api deprecation warnings will not be fixed.
+
 const createConfig = ({ dir, format, baseUrl, sourcemap, globals }) => ({
   input: path.join(baseUrl, 'src/index.tsx'),
   output: {
@@ -40,6 +42,11 @@ const createConfig = ({ dir, format, baseUrl, sourcemap, globals }) => ({
     postcss({
       extensions: ['.css', '.scss'],
       minimize: true,
+      use: {
+        sass: {
+          silenceDeprecations: ['legacy-js-api'],
+        },
+      },
       inject: (css, { insertAt } = {}) => {
         return `  
         if (typeof document !== 'undefined') { 
@@ -137,6 +144,11 @@ const configs = [
         extensions: ['.css', '.scss'],
         plugins: [discardDuplicates()],
         extract: true,
+        use: {
+          sass: {
+            silenceDeprecations: ['legacy-js-api'],
+          },
+        },
       }),
     ],
   },
@@ -154,6 +166,11 @@ const configs = [
         extensions: ['.css', '.scss'],
         extract: false,
         inject: false,
+        use: {
+          sass: {
+            silenceDeprecations: ['legacy-js-api'],
+          },
+        },
       }),
       emitCssDts(),
       emitStylesheetLoader(),

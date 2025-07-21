@@ -42,5 +42,3 @@ export const DotIndicator: React.FC<DotIndicatorProps> = (props: DotIndicatorPro
     </span>
   );
 };
-
-export default DotIndicator;

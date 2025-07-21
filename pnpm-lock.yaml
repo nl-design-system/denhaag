@@ -155,6 +155,12 @@ importers:
       clsx:
         specifier: 2.1.1
         version: 2.1.1
+      react:
+        specifier: 18 || 19
+        version: 19.1.0
+      react-dom:
+        specifier: 18 || 19
+        version: 19.1.0(react@19.1.0)
 
   components/Action:
     dependencies:

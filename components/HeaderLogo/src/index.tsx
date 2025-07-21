@@ -517,5 +517,3 @@ export const HeaderLogo = () => {
     </svg>
   );
 };
-
-export default HeaderLogo;

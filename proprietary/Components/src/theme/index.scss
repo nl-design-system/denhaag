@@ -1,4 +1,4 @@
-@import "../../dist/mixin";
+@use "../../dist/mixin" as *;
 
 .denhaag-theme {
   @include denhaag-theme;

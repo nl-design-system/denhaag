@@ -1,6 +1,6 @@
 import React, { AnchorHTMLAttributes, ComponentType, HTMLAttributes } from 'react';
-
-import { ActionSingle, ActionMulti } from './index';
+import { ActionSingle } from './ActionSingle';
+import { ActionMulti } from './ActionMulti';
 import { FormatDateLabels } from '@gemeente-denhaag/utils';
 
 export interface ActionSingleProps extends AnchorHTMLAttributes<HTMLAnchorElement> {

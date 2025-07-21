@@ -1,4 +1,4 @@
-@import "~@utrecht/focus-ring-css/src/mixin";
+@use "~@utrecht/focus-ring-css/src/mixin" as *;
 
 .denhaag-accordion-section__header {
   align-items: start;

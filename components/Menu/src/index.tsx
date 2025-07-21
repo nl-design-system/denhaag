@@ -26,7 +26,6 @@ export const Menu = (props: Props) => {
   );
 };
 
-export default Menu;
 export * from './MenuButton';
 export * from './mobile/MobileMenu';
 export * from './mobile/MobileMenuList';

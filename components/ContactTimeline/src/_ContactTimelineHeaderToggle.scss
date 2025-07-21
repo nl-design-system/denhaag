@@ -6,13 +6,13 @@
     --utrecht-button-min-block-size: 0;
     --utrecht-button-max-inline-size: 100%;
 
+    justify-content: space-between;
+    width: 100%;
+
     @media (width >= 1024px) {
       --utrecht-button-max-inline-size: fit-content;
 
       gap: var(--denhaag-contact-timeline-step-header-toggle-gap);
     }
-
-    justify-content: space-between;
-    width: 100%;
   }
 }
