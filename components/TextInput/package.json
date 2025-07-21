@@ -31,8 +31,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@utrecht/textbox-css": "1.7.1",
-    "@utrecht/textbox-react": "1.0.8"
+    "@utrecht/textbox-css": "2.0.0",
+    "@utrecht/textbox-react": "1.0.9"
   },
   "peerDependencies": {
     "react": "18 || 19",
