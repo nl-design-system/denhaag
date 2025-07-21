@@ -14,7 +14,7 @@ export interface SvgIconProps extends SVGAttributes<SVGElement> {
   useDefaultClass?: boolean;
 }
 
-const SvgIcon: React.FC<SvgIconProps> = ({
+export const SvgIcon: React.FC<SvgIconProps> = ({
   className,
   component = 'svg',
   focusable = 'false',
@@ -36,5 +36,3 @@ const SvgIcon: React.FC<SvgIconProps> = ({
     </Component>
   );
 };
-
-export default SvgIcon;

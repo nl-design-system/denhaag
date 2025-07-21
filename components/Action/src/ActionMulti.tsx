@@ -1,7 +1,8 @@
 import React from 'react';
 import clsx from 'clsx';
-
-import { ActionMultiProps, ActionContent, ActionDetails } from './index';
+import { ActionMultiProps } from './Action';
+import { ActionContent } from './ActionContent';
+import { ActionDetails } from './ActionDetails';
 
 export const ActionMulti = ({
   children,

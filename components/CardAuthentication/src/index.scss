@@ -4,7 +4,7 @@
  * Copyright (c) 2020-2022 Frameless B.V.
  */
 
-@import "./mixin";
+@use "./mixin" as *;
 
 .denhaag-card-authentication {
   @include denhaag-card-authentication;

@@ -171,5 +171,3 @@ export const Status = ({
     </StepList>
   );
 };
-
-export default Status;

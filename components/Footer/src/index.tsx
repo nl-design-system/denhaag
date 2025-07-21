@@ -174,5 +174,3 @@ export const Footer = (props: FooterProps) => {
     </footer>
   );
 };
-
-export default Footer;

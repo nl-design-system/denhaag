@@ -23,4 +23,3 @@ const TextInput: React.ForwardRefExoticComponent<TextInputProps & React.RefAttri
 TextInput.displayName = 'Textbox';
 
 export { TextInput, TextInputProps };
-export default TextInput;

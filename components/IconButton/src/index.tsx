@@ -30,5 +30,3 @@ export const IconButton: React.FC<IconButtonProps> = ({ ...props }: IconButtonPr
     </button>
   );
 };
-
-export default IconButton;

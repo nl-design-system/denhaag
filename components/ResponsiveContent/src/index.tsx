@@ -18,5 +18,3 @@ export const ResponsiveContent = (props: ResponsiveContentProps) => {
 
   return <div className={classNames}>{props.children}</div>;
 };
-
-export default ResponsiveContent;

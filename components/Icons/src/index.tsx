@@ -1,5 +1,5 @@
 import React from 'react';
-import SvgIcon, { SvgIconProps } from './SvgIcon';
+import { SvgIcon, SvgIconProps } from './SvgIcon';
 
 import './index.scss';
 
@@ -164,5 +164,4 @@ export const YouTubeIcon: F = (props: SvgIconProps) => buildIcon(YouTubeSvg, pro
 // Misc
 export const MegaphoneIcon: F = (props: SvgIconProps) => buildIcon(MegaphoneSvg, props);
 
-export default SvgIcon;
 export * from './SvgIcon';

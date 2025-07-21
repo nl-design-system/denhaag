@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react-vite';
 import * as Icons from '@gemeente-denhaag/icons';
-import SvgIcon, { ArrowLeftIcon } from '@gemeente-denhaag/icons';
+import { SvgIcon, ArrowLeftIcon } from '@gemeente-denhaag/icons';
 import readme from '../../../../components/Icons/README.md?raw';
 
 const allIcons = Object.entries(Icons).filter(([key]) => (key === 'default' ? false : true));

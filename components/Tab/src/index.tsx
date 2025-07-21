@@ -149,5 +149,3 @@ export const Tabs = ({ tabData, onChange }: TabsProps) => {
     </>
   );
 };
-
-export default Tabs;

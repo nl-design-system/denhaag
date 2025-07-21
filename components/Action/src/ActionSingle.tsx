@@ -1,7 +1,8 @@
 import React from 'react';
 import clsx from 'clsx';
-
-import { ActionSingleProps, ActionContent, ActionDetails } from './index';
+import { ActionSingleProps } from './Action';
+import { ActionContent } from './ActionContent';
+import { ActionDetails } from './ActionDetails';
 import { BasicLink } from '@gemeente-denhaag/link';
 
 export const ActionSingle = ({

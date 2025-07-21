@@ -1,5 +1,6 @@
 import React from 'react';
-import { ActionDate, ActionActions } from './index';
+import { ActionDate } from './ActionDate';
+import { ActionActions } from './ActionActions';
 import { FormatDateLabels } from '@gemeente-denhaag/utils';
 
 interface ActionDetailsProps {

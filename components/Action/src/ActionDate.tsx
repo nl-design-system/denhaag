@@ -1,6 +1,6 @@
 import React from 'react';
 import { AlertTriangleFilledIcon } from '@gemeente-denhaag/icons';
-import { Time } from './index';
+import { Time } from './Time';
 import { formatDate, FormatDateLabels } from '@gemeente-denhaag/utils';
 import clsx from 'clsx';
 
