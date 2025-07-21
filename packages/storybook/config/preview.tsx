@@ -5,7 +5,7 @@ import * as prettierPluginBabel from 'prettier/plugins/babel';
 import prettierPluginEstree from 'prettier/plugins/estree';
 import prettier from 'prettier/standalone';
 import React, { ReactElement } from 'react';
-import * as ReactDOMServer from 'react-dom/server';
+import * as ReactDOMServer from 'react-dom/server.browser';
 import { Controls, Description, Primary, Stories } from '@storybook/addon-docs/blocks';
 import { DesignTokensBlock } from './DesignTokensBlock';
 import { withThemeByClassName } from '@storybook/addon-themes';
@@ -99,7 +99,7 @@ const preview: Preview = {
                 : null;
 
           if (render && storyContext.title.toLowerCase().startsWith('css')) {
-            const staticMarkup = ReactDOMServer.renderToStaticMarkup(render(storyContext.args));
+            const staticMarkup = ReactDOMServer.renderToStaticMarkup(React.createElement(render, storyContext.args));
 
             // Hacky workaround for the new asynchronous formatting from Prettier, and the lack of support of a async transform function
             // Start async formatting, when ready: add result to the formatCache map
