@@ -1,5 +1,12 @@
 # @gemeente-denhaag/storybook
 
+## 5.0.1
+
+### Patch Changes
+
+- Updated dependencies [a73ed54]
+  - @gemeente-denhaag/stylesprovider@3.0.1
+
 ## 5.0.0
 
 ### Major Changes

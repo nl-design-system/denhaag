@@ -1,5 +1,12 @@
 # @gemeente-denhaag/components-react
 
+## 4.0.1
+
+### Patch Changes
+
+- Updated dependencies [a73ed54]
+  - @gemeente-denhaag/stylesprovider@3.0.1
+
 ## 4.0.0
 
 ### Major Changes
