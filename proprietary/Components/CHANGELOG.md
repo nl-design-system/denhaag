@@ -1,5 +1,11 @@
 # @gemeente-denhaag/design-tokens-components
 
+## 5.0.0
+
+### Major Changes
+
+- 73b2123: Updated all dependencies, upgraded Storybook, removed mixed named and default exports, removed deprecated dependencies
+
 ## 4.1.0
 
 ### Minor Changes
@@ -17,7 +23,6 @@
 ### Major Changes
 
 - cb9b954: Used the new candidate components from NLDS:
-
   - Link
   - Heading
   - Paragraph

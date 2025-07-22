@@ -1,5 +1,11 @@
 # @gemeente-denhaag/form-fieldset
 
+## 3.0.0
+
+### Major Changes
+
+- 73b2123: Updated all dependencies, upgraded Storybook, removed mixed named and default exports, removed deprecated dependencies
+
 ## 2.1.0
 
 ### Minor Changes

@@ -1,5 +1,90 @@
 # @gemeente-denhaag/storybook
 
+## 5.0.0
+
+### Major Changes
+
+- 73b2123: Updated all dependencies, upgraded Storybook, removed mixed named and default exports, removed deprecated dependencies
+
+### Patch Changes
+
+- Updated dependencies [73b2123]
+  - @gemeente-denhaag/form-field-error-message@3.0.0
+  - @gemeente-denhaag/form-field-description@3.0.0
+  - @gemeente-denhaag/card-authentication@2.0.0
+  - @gemeente-denhaag/responsive-content@2.0.0
+  - @gemeente-denhaag/contact-timeline@4.0.0
+  - @gemeente-denhaag/descriptionlist@4.0.0
+  - @gemeente-denhaag/dynamic-content@2.0.0
+  - @gemeente-denhaag/side-navigation@4.0.0
+  - @gemeente-denhaag/stylesprovider@3.0.0
+  - @gemeente-denhaag/unorderedlist@3.0.0
+  - @gemeente-denhaag/dotindicator@3.0.0
+  - @gemeente-denhaag/form-fieldset@3.0.0
+  - @gemeente-denhaag/form-progress@4.0.0
+  - @gemeente-denhaag/process-steps@4.0.0
+  - @gemeente-denhaag/number-badge@2.0.0
+  - @gemeente-denhaag/orderedlist@3.0.0
+  - @gemeente-denhaag/radio-button@3.0.0
+  - @gemeente-denhaag/design-tokens-components@5.0.0
+  - @gemeente-denhaag/breadcrumb@5.0.0
+  - @gemeente-denhaag/button-link@3.0.0
+  - @gemeente-denhaag/iconbutton@3.0.0
+  - @gemeente-denhaag/link-button@3.0.0
+  - @gemeente-denhaag/step-marker@3.0.0
+  - @gemeente-denhaag/typography@3.0.0
+  - @gemeente-denhaag/accordion@4.0.0
+  - @gemeente-denhaag/card-group@2.0.0
+  - @gemeente-denhaag/data-badge@2.0.0
+  - @gemeente-denhaag/form-field@3.0.0
+  - @gemeente-denhaag/form-label@3.0.0
+  - @gemeente-denhaag/page-index@3.0.0
+  - @gemeente-denhaag/paragraph@2.0.0
+  - @gemeente-denhaag/text-input@3.0.0
+  - @gemeente-denhaag/checkbox@3.0.0
+  - @gemeente-denhaag/link-list@6.0.0
+  - @gemeente-denhaag/rich-text@4.0.0
+  - @gemeente-denhaag/textarea@3.0.0
+  - @gemeente-denhaag/heading@2.0.0
+  - @gemeente-denhaag/action@4.0.0
+  - @gemeente-denhaag/button@3.0.0
+  - @gemeente-denhaag/footer@4.0.0
+  - @gemeente-denhaag/header@4.0.0
+  - @gemeente-denhaag/select@3.0.0
+  - @gemeente-denhaag/alert@4.0.0
+  - @gemeente-denhaag/icons@4.0.0
+  - @gemeente-denhaag/modal@3.0.0
+  - @gemeente-denhaag/table@4.0.0
+  - @gemeente-denhaag/link@4.0.0
+  - @gemeente-denhaag/list@3.0.0
+  - @gemeente-denhaag/menu@4.0.0
+  - @gemeente-denhaag/tab@3.0.0
+  - @gemeente-denhaag/anchor-collapse@3.0.0
+  - @gemeente-denhaag/anchor-navigation@2.0.0
+  - @gemeente-denhaag/article-meta@2.0.0
+  - @gemeente-denhaag/blockquote@3.0.0
+  - @gemeente-denhaag/button-group@2.0.0
+  - @gemeente-denhaag/card@5.0.0
+  - @gemeente-denhaag/card-news@2.0.0
+  - @gemeente-denhaag/ctadownload@2.0.0
+  - @gemeente-denhaag/cta-event@2.0.0
+  - @gemeente-denhaag/cta-image-content@3.0.0
+  - @gemeente-denhaag/ctalink@2.0.0
+  - @gemeente-denhaag/divider@3.0.0
+  - @gemeente-denhaag/eventdate@2.0.0
+  - @gemeente-denhaag/file@2.0.0
+  - @gemeente-denhaag/floating-contact@2.0.0
+  - @gemeente-denhaag/hero@4.0.0
+  - @gemeente-denhaag/highlighted-links@2.0.0
+  - @gemeente-denhaag/image@2.0.0
+  - @gemeente-denhaag/link-group@2.0.0
+  - @gemeente-denhaag/note@2.0.0
+  - @gemeente-denhaag/page@2.0.0
+  - @gemeente-denhaag/pagebuttons@2.0.0
+  - @gemeente-denhaag/pagination@3.0.0
+  - @gemeente-denhaag/sheet@4.0.0
+  - @gemeente-denhaag/utils@3.0.0
+
 ## 4.1.2
 
 ### Patch Changes
@@ -119,7 +204,6 @@
 ### Major Changes
 
 - cb9b954: Used the new candidate components from NLDS:
-
   - Link
   - Heading
   - Paragraph
