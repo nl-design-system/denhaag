@@ -1,5 +1,21 @@
 # @gemeente-denhaag/contact-timeline
 
+## 4.0.0
+
+### Major Changes
+
+- 73b2123: Updated all dependencies, upgraded Storybook, removed mixed named and default exports, removed deprecated dependencies
+
+### Patch Changes
+
+- Updated dependencies [73b2123]
+  - @gemeente-denhaag/process-steps@4.0.0
+  - @gemeente-denhaag/step-marker@3.0.0
+  - @gemeente-denhaag/paragraph@2.0.0
+  - @gemeente-denhaag/icons@4.0.0
+  - @gemeente-denhaag/file@2.0.0
+  - @gemeente-denhaag/utils@3.0.0
+
 ## 3.1.0
 
 ### Minor Changes
@@ -21,7 +37,6 @@
 ### Major Changes
 
 - cb9b954: Used the new candidate components from NLDS:
-
   - Link
   - Heading
   - Paragraph

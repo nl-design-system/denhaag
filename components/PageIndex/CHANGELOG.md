@@ -1,5 +1,18 @@
 # @gemeente-denhaag/page-index
 
+## 3.0.0
+
+### Major Changes
+
+- 73b2123: Updated all dependencies, upgraded Storybook, removed mixed named and default exports, removed deprecated dependencies
+
+### Patch Changes
+
+- Updated dependencies [73b2123]
+  - @gemeente-denhaag/unorderedlist@3.0.0
+  - @gemeente-denhaag/typography@3.0.0
+  - @gemeente-denhaag/link@4.0.0
+
 ## 2.1.0
 
 ### Minor Changes
@@ -24,7 +37,6 @@
 ### Major Changes
 
 - cb9b954: Used the new candidate components from NLDS:
-
   - Link
   - Heading
   - Paragraph

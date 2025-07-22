@@ -1,5 +1,28 @@
 # @gemeente-denhaag/header
 
+## 4.0.0
+
+### Major Changes
+
+- 73b2123: Updated all dependencies, upgraded Storybook, removed mixed named and default exports, removed deprecated dependencies
+
+### Patch Changes
+
+- Updated dependencies [73b2123]
+  - @gemeente-denhaag/responsive-content@2.0.0
+  - @gemeente-denhaag/language-switcher@3.0.0
+  - @gemeente-denhaag/breadcrumb@5.0.0
+  - @gemeente-denhaag/header-logo@3.0.0
+  - @gemeente-denhaag/iconbutton@3.0.0
+  - @gemeente-denhaag/paragraph@2.0.0
+  - @gemeente-denhaag/heading@2.0.0
+  - @gemeente-denhaag/button@3.0.0
+  - @gemeente-denhaag/icons@4.0.0
+  - @gemeente-denhaag/link@4.0.0
+  - @gemeente-denhaag/menu@4.0.0
+  - @gemeente-denhaag/link-group@2.0.0
+  - @gemeente-denhaag/sheet@4.0.0
+
 ## 3.1.0
 
 ### Minor Changes
@@ -28,7 +51,6 @@
 ### Major Changes
 
 - cb9b954: Used the new candidate components from NLDS:
-
   - Link
   - Heading
   - Paragraph

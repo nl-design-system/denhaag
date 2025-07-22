@@ -1,5 +1,19 @@
 # @gemeente-denhaag/card-authentication
 
+## 2.0.0
+
+### Major Changes
+
+- 73b2123: Updated all dependencies, upgraded Storybook, removed mixed named and default exports, removed deprecated dependencies
+
+### Patch Changes
+
+- Updated dependencies [73b2123]
+  - @gemeente-denhaag/button@3.0.0
+  - @gemeente-denhaag/link@4.0.0
+  - @gemeente-denhaag/button-group@2.0.0
+  - @gemeente-denhaag/card@5.0.0
+
 ## 1.1.1
 
 ### Patch Changes
