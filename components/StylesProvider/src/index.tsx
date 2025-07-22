@@ -1,5 +1,5 @@
 import React from 'react';
-import '@utrecht/document-css/index.min.css';
+import '@utrecht/document-css';
 
 export interface StylesProviderProps {
   children?: React.ReactNode;
