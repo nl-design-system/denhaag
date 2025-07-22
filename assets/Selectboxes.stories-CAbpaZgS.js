@@ -1,0 +1,3 @@
+import{j as a}from"./iframe-B5uynrhk.js";import{S as r}from"./StoryUtil-DyBQzNX5.js";const n={id:"open-forms-select",title:"Open Formulieren/Select",component:r,args:{type:"select",extraComponentProperties:{data:{values:[{label:"Optie A",value:"radioA"},{label:"Optie B",value:"radioB"},{label:"Optie C",value:"radioC"}]}}}},e={render:o=>a.jsx(r,{...o})};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+  render: args => <SingleFormioComponent {...args} />
+}`,...e.parameters?.docs?.source}}};const l=["Default"];export{e as Default,l as __namedExportsOrder,n as default};
