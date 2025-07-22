@@ -1,5 +1,11 @@
 # @gemeente-denhaag/stylesprovider
 
+## 3.0.1
+
+### Patch Changes
+
+- a73ed54: Fix @utrecht/document-css import to prevent crashing builds
+
 ## 3.0.0
 
 ### Major Changes
