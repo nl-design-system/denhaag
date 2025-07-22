@@ -1,5 +1,5 @@
 import React from 'react';
-import { ButtonLink } from '@utrecht/component-library-react';
+import { ButtonLink } from '@gemeente-denhaag/button-link';
 import { ResponsiveContent } from '@gemeente-denhaag/responsive-content';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
 import '@gemeente-denhaag/button-group';
@@ -7,6 +7,8 @@ import '@gemeente-denhaag/icons';
 import '@gemeente-denhaag/list';
 import '@gemeente-denhaag/link';
 import '@gemeente-denhaag/link-group';
+import '@utrecht/link-social-css';
+import '@utrecht/list-social-css';
 import clsx from 'clsx';
 import './index.scss';
 

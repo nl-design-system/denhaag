@@ -6,7 +6,7 @@ import { LanguageSwitcherList } from './LanguageSwitcherList';
 import { LanguageSwitcherListItem } from './LanguageSwitcherListItem';
 import { LanguageSwitcherLink, Link } from './LanguageSwitcherLink';
 import { ArrowRightIcon, CheckedIcon } from '@gemeente-denhaag/icons';
-import { LinkButton } from '@utrecht/component-library-react';
+import { LinkButton } from '@gemeente-denhaag/link-button';
 import clsx from 'clsx';
 
 interface Language {

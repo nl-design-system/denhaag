@@ -32,13 +32,15 @@
   },
   "dependencies": {
     "@gemeente-denhaag/button-group": "workspace:*",
+    "@gemeente-denhaag/button-link": "workspace:*",
     "@gemeente-denhaag/icons": "workspace:*",
     "@gemeente-denhaag/link": "workspace:*",
     "@gemeente-denhaag/link-group": "workspace:*",
     "@gemeente-denhaag/list": "workspace:*",
     "@gemeente-denhaag/paragraph": "workspace:*",
     "@gemeente-denhaag/responsive-content": "workspace:*",
-    "@utrecht/component-library-react": "10.2.2",
+    "@utrecht/link-social-css": "1.4.1",
+    "@utrecht/list-social-css": "1.4.1",
     "clsx": "2.1.1"
   },
   "peerDependencies": {
