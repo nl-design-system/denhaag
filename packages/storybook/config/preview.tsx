@@ -9,10 +9,9 @@ import * as ReactDOMServer from 'react-dom/server.browser';
 import { Controls, Description, Primary, Stories } from '@storybook/addon-docs/blocks';
 import { DesignTokensBlock } from './DesignTokensBlock';
 import { withThemeByClassName } from '@storybook/addon-themes';
-
-import '@utrecht/component-library-css/dist/index.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
 import { addonViewport } from './addon-viewports';
+import { StylesProvider } from '@gemeente-denhaag/stylesprovider';
 
 const formatCache = new Map<string, string>();
 
@@ -27,13 +26,13 @@ const preview: Preview = {
       storyContext.parameters['args'] = storyContext.args;
 
       return (
-        <div
+        <StylesProvider
           className={clsx('utrecht-document', 'utrecht-document--surface', 'denhaag-theme', {
             'utrecht-reduced-motion': ['1', 'true'].includes(process.env['STORYBOOK_REDUCED_MOTION'] ?? ''),
           })}
         >
           {Story()}
-        </div>
+        </StylesProvider>
       );
     },
     withThemeByClassName({

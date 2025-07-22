@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
+import clsx from 'clsx';
 import '@utrecht/document-css';
 
-export interface StylesProviderProps {
+export interface StylesProviderProps extends HTMLAttributes<HTMLDivElement> {
   children?: React.ReactNode;
 }
 
@@ -9,6 +10,6 @@ export interface StylesProviderProps {
  * Styles provider to be placed at the root of your application in which all other denhaag-components will exist.
  * @param props Only allow for children
  */
-export const StylesProvider: React.FC<StylesProviderProps> = (props: StylesProviderProps) => {
-  return <div className={'utrecht-document utrecht-document--surface'}>{props.children}</div>;
+export const StylesProvider = ({ className, ...props }: StylesProviderProps) => {
+  return <div className={clsx('utrecht-document', 'utrecht-document--surface', className)} {...props} />;
 };
