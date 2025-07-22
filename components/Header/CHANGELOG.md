@@ -1,5 +1,15 @@
 # @gemeente-denhaag/header
 
+## 4.0.1
+
+### Patch Changes
+
+- Updated dependencies [ac293ff]
+  - @gemeente-denhaag/language-switcher@3.0.1
+  - @gemeente-denhaag/paragraph@2.0.1
+  - @gemeente-denhaag/heading@2.0.1
+  - @gemeente-denhaag/menu@4.0.1
+
 ## 4.0.0
 
 ### Major Changes

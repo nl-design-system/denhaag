@@ -1,5 +1,11 @@
 # @gemeente-denhaag/case-card-element
 
+## 3.0.1
+
+### Patch Changes
+
+- @gemeente-denhaag/card@5.0.1
+
 ## 3.0.0
 
 ### Major Changes
