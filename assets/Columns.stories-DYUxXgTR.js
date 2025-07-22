@@ -1,0 +1,3 @@
+import{j as r}from"./iframe-B23N8OI0.js";import{S as o}from"./StoryUtil-D_8LxAV2.js";const m={id:"open-forms-columns",title:"Open Formulieren/Columns",component:o,args:{key:"cosign",type:"columns",extraComponentProperties:{columns:[{size:3,sizeMobile:6,components:[{key:"postcode",type:"postcode",label:"Postcode"}]},{size:3,sizeMobile:6,components:[{key:"number",type:"textfield",label:"Huisnummer"}]}]}}},e={render:s=>r.jsx(o,{...s})};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+  render: args => <SingleFormioComponent {...args} />
+}`,...e.parameters?.docs?.source}}};const a=["Default"];export{e as Default,a as __namedExportsOrder,m as default};

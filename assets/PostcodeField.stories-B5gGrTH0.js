@@ -1,3 +1,0 @@
-import{j as a}from"./jsx-runtime-D_zvdyIk.js";import{S as s}from"./StoryUtil-BECfzbDE.js";import"./index-raSRI-5R.js";import"./_commonjsHelpers-BosuxZz1.js";const d={id:"open-forms-postcode",title:"Open Formulieren/PostcodeField",component:s,args:{key:"postcode",type:"postcode",label:"Postcode",extraComponentProperties:{inputMask:null}}},e={render:n=>a.jsx(s,{...n})};var o,r,t;e.parameters={...e.parameters,docs:{...(o=e.parameters)==null?void 0:o.docs,source:{originalSource:`{
-  render: args => <SingleFormioComponent {...args} />
-}`,...(t=(r=e.parameters)==null?void 0:r.docs)==null?void 0:t.source}}};const l=["Default"];export{e as Default,l as __namedExportsOrder,d as default};
