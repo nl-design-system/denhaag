@@ -27,7 +27,7 @@ const preview: Preview = {
 
       return (
         <StylesProvider
-          className={clsx('utrecht-document', 'utrecht-document--surface', 'denhaag-theme', {
+          className={clsx('denhaag-theme', {
             'utrecht-reduced-motion': ['1', 'true'].includes(process.env['STORYBOOK_REDUCED_MOTION'] ?? ''),
           })}
         >
