@@ -4,7 +4,6 @@ import {
   DataBadge as NLDataBadge,
   DataBadgeProps as NLDataBadgeProps,
 } from '@nl-design-system-candidate/data-badge-react';
-export * from '@nl-design-system-candidate/data-badge-react';
 import '@nl-design-system-candidate/data-badge-css/data-badge.css';
 
 export type DataBadgeProps = NLDataBadgeProps & {
