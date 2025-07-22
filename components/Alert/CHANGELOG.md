@@ -1,5 +1,12 @@
 # @gemeente-denhaag/alert
 
+## 4.0.1
+
+### Patch Changes
+
+- Updated dependencies [ac293ff]
+  - @gemeente-denhaag/heading@2.0.1
+
 ## 4.0.0
 
 ### Major Changes

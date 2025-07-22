@@ -1,5 +1,11 @@
 # @gemeente-denhaag/language-switcher
 
+## 3.0.1
+
+### Patch Changes
+
+- ac293ff: Import only needed utrecht styling, fix exports of nlds components, fix stylesprovider
+
 ## 3.0.0
 
 ### Major Changes

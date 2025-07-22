@@ -1,5 +1,12 @@
 # @gemeente-denhaag/contact-timeline
 
+## 4.0.1
+
+### Patch Changes
+
+- Updated dependencies [ac293ff]
+  - @gemeente-denhaag/paragraph@2.0.1
+
 ## 4.0.0
 
 ### Major Changes

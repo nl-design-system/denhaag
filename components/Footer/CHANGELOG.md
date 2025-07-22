@@ -1,5 +1,13 @@
 # @gemeente-denhaag/footer
 
+## 4.0.1
+
+### Patch Changes
+
+- ac293ff: Import only needed utrecht styling, fix exports of nlds components, fix stylesprovider
+- Updated dependencies [ac293ff]
+  - @gemeente-denhaag/paragraph@2.0.1
+
 ## 4.0.0
 
 ### Major Changes

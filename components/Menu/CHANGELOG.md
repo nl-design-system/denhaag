@@ -1,5 +1,13 @@
 # @gemeente-denhaag/menu
 
+## 4.0.1
+
+### Patch Changes
+
+- Updated dependencies [ac293ff]
+  - @gemeente-denhaag/language-switcher@3.0.1
+  - @gemeente-denhaag/number-badge@2.0.1
+
 ## 4.0.0
 
 ### Major Changes

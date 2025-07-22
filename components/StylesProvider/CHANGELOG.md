@@ -1,5 +1,11 @@
 # @gemeente-denhaag/stylesprovider
 
+## 3.0.2
+
+### Patch Changes
+
+- ac293ff: Import only needed utrecht styling, fix exports of nlds components, fix stylesprovider
+
 ## 3.0.1
 
 ### Patch Changes
