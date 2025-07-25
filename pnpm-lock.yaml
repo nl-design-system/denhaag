@@ -1787,8 +1787,8 @@ importers:
         specifier: 5.0.0
         version: 5.0.0
       '@open-formulieren/sdk':
-        specifier: 3.1.1
-        version: 3.1.1(@types/react@19.0.10)(@utrecht/button-group-react@1.0.1(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(formiojs@4.21.6)(prop-types@15.8.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3)
+        specifier: 3.1.2
+        version: 3.1.2(@types/react@19.0.10)(@utrecht/button-group-react@1.0.1(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(formiojs@4.21.6)(prop-types@15.8.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3)
       '@storybook/addon-a11y':
         specifier: 8.5.8
         version: 8.5.8(storybook@8.5.8(prettier@3.5.1))
@@ -1852,6 +1852,9 @@ importers:
       clsx:
         specifier: 2.1.1
         version: 2.1.1
+      lodash:
+        specifier: 4.17.21
+        version: 4.17.21
       prettier:
         specifier: 3.5.1
         version: 3.5.1
@@ -3213,8 +3216,8 @@ packages:
     peerDependencies:
       leaflet: ^1.7.1
 
-  '@open-formulieren/sdk@3.1.1':
-    resolution: {integrity: sha512-jVj56Plu25MFC07rCJfcbhkHJw527BhoJcVYRVhm0ik3gt1IHXBw+0Vg5ppk5VdpFU2h8b7bL0npCLBYPAdaHA==}
+  '@open-formulieren/sdk@3.1.2':
+    resolution: {integrity: sha512-v6YNYh0TwkzjXyRcXSCP2wUkkJ2RI0S/waEdijPRdvQ5+x3kFh3j/DCeTNw66BU8jyQ4sIbayWD1eN+5b9nC4g==}
     peerDependencies:
       prop-types: ^15.7.2
       react: ^18.0.0
@@ -4112,12 +4115,15 @@ packages:
 
   '@utrecht/components@1.0.0':
     resolution: {integrity: sha512-PGrTGpuLT0vGM2GKKoh2T7bkS9cwTsBxV+IdN8ACYNHFmbmN5OGHmoaQLGme/I89iEHUZil8HFCc+C3p8mceJA==}
+    deprecated: 'The @utrecht/components package has been deprecated. To migrate: the SCSS files are now only available in the npm package for the specific component. For example: @utrecht/button-css/src/_mixin.scss. The entire component library is now available in @utrecht/component-library-css/dist/index.css.'
 
   '@utrecht/components@4.0.0':
     resolution: {integrity: sha512-vpw8p5FEU/yrSGL5JU+x6bDXIreEPU6WPEagOkcdqbFGMovWS8uUHNWmv+PY1xJIOjOb98RebSsbFDoA4zllVQ==}
+    deprecated: 'The @utrecht/components package has been deprecated. To migrate: the SCSS files are now only available in the npm package for the specific component. For example: @utrecht/button-css/src/_mixin.scss. The entire component library is now available in @utrecht/component-library-css/dist/index.css.'
 
   '@utrecht/components@7.4.0':
     resolution: {integrity: sha512-LWFJjJ7TF0eaoWq5TGrg7rNYnG+G5yIEJhuiwFlbICwSx2n+gZVbAE1dAW8YG2mGqveXZk38hBC2FWNE1tj1BQ==}
+    deprecated: 'The @utrecht/components package has been deprecated. To migrate: the SCSS files are now only available in the npm package for the specific component. For example: @utrecht/button-css/src/_mixin.scss. The entire component library is now available in @utrecht/component-library-css/dist/index.css.'
 
   '@utrecht/currency-data-css@1.3.0':
     resolution: {integrity: sha512-9PrVvMLIy1YBd+IK8XsnJHCshKvGHUQVbX53hnkVvR76vaIrSMMUqmzu/GK6SXVlA9hb/ZjKkKPMBPfsJ3YLvA==}
@@ -11182,7 +11188,7 @@ snapshots:
       leaflet: 1.9.4
       proj4leaflet: 1.0.2
 
-  '@open-formulieren/sdk@3.1.1(@types/react@19.0.10)(@utrecht/button-group-react@1.0.1(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(formiojs@4.21.6)(prop-types@15.8.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3)':
+  '@open-formulieren/sdk@3.1.2(@types/react@19.0.10)(@utrecht/button-group-react@1.0.1(@babel/runtime@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(formiojs@4.21.6)(prop-types@15.8.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3)':
     dependencies:
       '@floating-ui/react': 0.27.8(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@formio/protected-eval': 1.2.2(formiojs@4.21.6)
