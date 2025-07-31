@@ -1,7 +1,7 @@
 import React, { AnchorHTMLAttributes, ComponentType, useEffect, useRef, useState } from 'react';
 import { HeaderLogo } from '@gemeente-denhaag/header-logo';
 import { ResponsiveContent } from '@gemeente-denhaag/responsive-content';
-import { Link } from '@gemeente-denhaag/link';
+import { Link, LinkProps } from '@gemeente-denhaag/link';
 import { MenuButtonExpandable, MobileMenu, MobileMenuProps } from '@gemeente-denhaag/menu';
 import './index.scss';
 import { Header } from './Header';
@@ -30,7 +30,7 @@ export interface HeaderLogicProps {
   mobileMenu?: HeaderMobileMenuProps;
   logoutButton?: LogoutButtonProps;
   mobileBreakpoint?: number;
-  logo?: AnchorHTMLAttributes<HTMLAnchorElement>;
+  logo?: LinkProps;
 }
 
 interface LogoutButtonProps {
@@ -191,9 +191,7 @@ export const HeaderLogic = ({
       <HeaderContentContainer>
         <HeaderContent className="denhaag-responsive-content">
           <HeaderLogoContainer>
-            <Link className={clsx('denhaag-logo denhaag-header__link', logoClassName)} {...logoProps}>
-              <HeaderLogo />
-            </Link>
+            <Link className={clsx('denhaag-logo denhaag-header__link', logoClassName)} {...logoProps} />
           </HeaderLogoContainer>
           <HeaderActions>
             {languageSwitcherMenu && (
@@ -275,9 +273,7 @@ export const HeaderLogic = ({
             <ResponsiveContent>
               <HeaderContent>
                 <HeaderLogoContainer>
-                  <Link className={clsx('denhaag-logo denhaag-header__link', logoClassName)} {...logoProps}>
-                    <HeaderLogo />
-                  </Link>
+                  <Link className={clsx('denhaag-logo denhaag-header__link', logoClassName)} {...logoProps} />
                 </HeaderLogoContainer>
                 <HeaderMobileActions>
                   <Button
