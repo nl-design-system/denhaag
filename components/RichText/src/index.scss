@@ -2,6 +2,7 @@
 
 .denhaag-rich-text {
   --denhaag-space-around: 1;
+  --utrecht-space-around: 1;
   @include denhaag-heading-1;
   @include denhaag-heading-2;
   @include denhaag-heading-3;

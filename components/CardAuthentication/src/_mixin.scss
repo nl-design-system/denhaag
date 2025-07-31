@@ -37,6 +37,7 @@
 
   .denhaag-card-authentication__title {
     margin-block-start: 0;
+    margin-block-end: var(--denhaag-card-authentication-title-margin-block-end);
     font-family: var(--denhaag-card-authentication-title-font-family);
     font-size: var(--denhaag-card-authentication-title-font-size);
     font-weight: var(--denhaag-card-authentication-title-font-weight);
