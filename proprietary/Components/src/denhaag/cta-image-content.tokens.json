@@ -23,6 +23,7 @@
       },
       "title": {
         "margin-block-start": { "value": "initial" },
+        "margin-block-end": { "value": "{denhaag.space.block.xs}" },
         "small": {
           "font-size": { "value": "{denhaag.typography.scale.xl.font-size}" }
         }

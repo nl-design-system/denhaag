@@ -35,7 +35,7 @@
         "font-size": { "value": "{utrecht.heading-3.font-size}" },
         "font-weight": { "value": "{utrecht.heading.font-weight}" },
         "color": {},
-        "margin-block-end": { "value": "18px" }
+        "margin-block-end": { "value": "6px" }
       }
     }
   }
