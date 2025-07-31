@@ -1,5 +1,11 @@
 # @gemeente-denhaag/header
 
+## 4.0.2
+
+### Patch Changes
+
+- f2ef433: Fix headerlogic logo prop
+
 ## 4.0.1
 
 ### Patch Changes
