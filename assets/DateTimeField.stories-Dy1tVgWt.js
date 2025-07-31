@@ -1,0 +1,3 @@
+import{j as o}from"./iframe-DX91hpwz.js";import{S as r}from"./StoryUtil-C8HYAl8B.js";const n={id:"open-forms-date-time-field",title:"Open Formulieren/DateTimeField",component:r,args:{type:"date",extraComponentProperties:{type:"datetime",extraComponentProperties:{datePicker:{minDate:null,maxDate:null},enableTime:!0,format:"dd-MM-yyyy HH:mm",placeholder:"dd-MM-yyyy HH:mm",time_24hr:!0,timePicker:{hourStep:1,minuteStep:1,showMeridian:!1,readonlyInput:!1,mousewheel:!0,arrowkeys:!0}}}}},e={render:t=>o.jsx(r,{...t})};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+  render: args => <SingleFormioComponent {...args} />
+}`,...e.parameters?.docs?.source}}};const s=["Default"];export{e as Default,s as __namedExportsOrder,n as default};
