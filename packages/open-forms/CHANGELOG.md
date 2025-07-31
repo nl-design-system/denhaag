@@ -1,5 +1,12 @@
 # @gemeente-denhaag/open-forms
 
+## 2.0.1
+
+### Patch Changes
+
+- Updated dependencies [56928d4]
+  - @gemeente-denhaag/design-tokens-components@5.0.1
+
 ## 2.0.0
 
 ### Major Changes

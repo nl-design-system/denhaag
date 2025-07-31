@@ -1,5 +1,11 @@
 # @gemeente-denhaag/card-authentication
 
+## 2.0.2
+
+### Patch Changes
+
+- 56928d4: Removed the global heading/paragraph styling
+
 ## 2.0.1
 
 ### Patch Changes
