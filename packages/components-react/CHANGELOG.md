@@ -1,5 +1,13 @@
 # @gemeente-denhaag/components-react
 
+## 4.0.4
+
+### Patch Changes
+
+- Updated dependencies [56928d4]
+  - @gemeente-denhaag/alert@4.0.2
+  - @gemeente-denhaag/card-group@2.0.2
+
 ## 4.0.3
 
 ### Patch Changes

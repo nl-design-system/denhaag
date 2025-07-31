@@ -1,5 +1,11 @@
 # @gemeente-denhaag/rich-text
 
+## 4.0.1
+
+### Patch Changes
+
+- 56928d4: Removed the global heading/paragraph styling
+
 ## 4.0.0
 
 ### Major Changes

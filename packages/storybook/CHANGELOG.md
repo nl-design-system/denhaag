@@ -1,5 +1,19 @@
 # @gemeente-denhaag/storybook
 
+## 5.0.4
+
+### Patch Changes
+
+- 56928d4: Removed the global heading/paragraph styling
+- Updated dependencies [56928d4]
+  - @gemeente-denhaag/card-authentication@2.0.2
+  - @gemeente-denhaag/cta-image-content@3.0.1
+  - @gemeente-denhaag/anchor-collapse@3.0.1
+  - @gemeente-denhaag/design-tokens-components@5.0.1
+  - @gemeente-denhaag/rich-text@4.0.1
+  - @gemeente-denhaag/alert@4.0.2
+  - @gemeente-denhaag/card-group@2.0.2
+
 ## 5.0.3
 
 ### Patch Changes
