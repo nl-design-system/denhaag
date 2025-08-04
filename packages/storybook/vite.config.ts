@@ -1,6 +1,6 @@
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
-import lodashTemplate from 'lodash/template.js';
+import { template } from 'lodash-es';
 
 // copied from open-formulieren/open-forms-sdk:vite.config.mts
 const ejsPlugin = () => ({
@@ -13,8 +13,7 @@ const ejsPlugin = () => ({
       escape: /\{\{\{([\s\S]+?)\}\}\}/g,
     };
     if (id.endsWith('.ejs')) {
-      // @ts-ignore
-      const code = lodashTemplate(src, options);
+      const code = template(src, options);
       return { code: `export default ${code}`, map: null };
     }
     return undefined;
