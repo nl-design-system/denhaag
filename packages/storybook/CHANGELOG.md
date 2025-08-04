@@ -1,5 +1,11 @@
 # @gemeente-denhaag/storybook
 
+## 5.0.5
+
+### Patch Changes
+
+- 777c8b9: Update OpenFormulieren SDK
+
 ## 5.0.4
 
 ### Patch Changes
