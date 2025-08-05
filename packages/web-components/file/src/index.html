@@ -1,0 +1,187 @@
+<!doctype html>
+<head>
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="
+  default-src 'none';
+  script-src 'self' https://unpkg.com;
+  style-src 'self' 'unsafe-inline' https://unpkg.com;
+  img-src 'self' data:;
+  font-src 'self';
+  connect-src 'self';
+  object-src 'none';
+  base-uri 'self';
+  form-action 'self';
+"
+  />
+</head>
+
+<!-- ook beschikbaar op npm `npm install @gemeente-denhaag/file-element`-->
+<script type="module" src="../dist/index.js"></script>
+
+<!-- design token thema nodig voor huisstijl van den haag -->
+<link rel="stylesheet" href="https://unpkg.com/@gemeente-denhaag/design-tokens-components@3.0.1/dist/index.css" />
+<link rel="stylesheet" href="https://unpkg.com/@gemeente-denhaag/icons@3.0.0/dist/index.css" />
+<link rel="stylesheet" href="https://unpkg.com/@utrecht/document-css@1.5.0/dist/index.css" />
+
+<div class="utrecht-document utrecht-document--surface">
+  <h2>My documents</h2>
+  <div style="display: flex; flex-direction: column; gap: 1rem; max-width: 480px">
+    <denhaag-file name="Rapport.pdf" href="/files/rapport.pdf">
+      <svg
+        slot="file-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        fill="none"
+        viewBox="0 0 24 25"
+        class="denhaag-icon denhaag-file__icon"
+        focusable="false"
+        aria-hidden="true"
+        shape-rendering="auto"
+        style="fill: none"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M19 3.5H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-14a2 2 0 0 0-2-2"
+        ></path>
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M8.5 10.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M21 15.5l-5-5-11 11"
+        ></path>
+      </svg>
+      <div slot="download-content" style="display: flex; align-items: center; gap: 0.5rem">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="1em"
+          height="1em"
+          class="denhaag-icon denhaag-file__link__icon"
+          focusable="false"
+          aria-hidden="true"
+          shape-rendering="auto"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 13v4a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-4M5 8l5 5 5-5M10 13V1"
+          ></path>
+        </svg>
+        <span class="utrecht-link" tabindex="-1">Download</span>
+      </div>
+    </denhaag-file>
+    <denhaag-file name="Bewijs 1.jpg" href="/files/foto.jpg">
+      <svg
+        slot="file-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        fill="none"
+        viewBox="0 0 24 25"
+        class="denhaag-icon denhaag-file__icon"
+        focusable="false"
+        aria-hidden="true"
+        shape-rendering="auto"
+        style="fill: none"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M19 3.5H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-14a2 2 0 0 0-2-2"
+        ></path>
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M8.5 10.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M21 15.5l-5-5-11 11"
+        ></path>
+      </svg>
+      <div slot="download-content" style="display: flex; align-items: center; gap: 0.5rem">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="1em"
+          height="1em"
+          class="denhaag-icon denhaag-file__link__icon"
+          focusable="false"
+          aria-hidden="true"
+          shape-rendering="auto"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 13v4a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-4M5 8l5 5 5-5M10 13V1"
+          ></path>
+        </svg>
+        <span class="utrecht-link" tabindex="-1">Download</span>
+      </div>
+    </denhaag-file>
+    <denhaag-file name="Bewijs 2.png" href="/files/bewijs.png">
+      <svg
+        slot="file-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        fill="none"
+        viewBox="0 0 24 25"
+        class="denhaag-icon denhaag-file__icon"
+        focusable="false"
+        aria-hidden="true"
+        shape-rendering="auto"
+        style="fill: none"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M19 3.5H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-14a2 2 0 0 0-2-2"
+        ></path>
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M8.5 10.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M21 15.5l-5-5-11 11"
+        ></path>
+      </svg>
+      <div slot="download-content" style="display: flex; align-items: center; gap: 0.5rem">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="1em"
+          height="1em"
+          class="denhaag-icon denhaag-file__link__icon"
+          focusable="false"
+          aria-hidden="true"
+          shape-rendering="auto"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 13v4a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-4M5 8l5 5 5-5M10 13V1"
+          ></path>
+        </svg>
+        <span class="utrecht-link" tabindex="-1">Download</span>
+      </div>
+    </denhaag-file>
+  </div>
+</div>
