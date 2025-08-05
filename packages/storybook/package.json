@@ -54,6 +54,7 @@
     "@gemeente-denhaag/eventdate": "workspace:*",
     "@gemeente-denhaag/file": "workspace:*",
     "@gemeente-denhaag/floating-contact": "workspace:*",
+    "@gemeente-denhaag/fonts": "workspace:*",
     "@gemeente-denhaag/footer": "workspace:*",
     "@gemeente-denhaag/form-field": "workspace:*",
     "@gemeente-denhaag/form-field-description": "workspace:*",

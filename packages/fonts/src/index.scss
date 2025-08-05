@@ -1,0 +1,59 @@
+$denhaag-font-base-path: "./fonts" !default;
+$denhaag-font-family-default: "TheSans" !default;
+$denhaag-font-family-alternative: "TheMix" !default;
+
+@font-face {
+  font-family: $denhaag-font-family-default;
+  src: url("#{$denhaag-font-base-path}/TheSans-4_SemiLight.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $denhaag-font-family-default;
+  src: url("#{$denhaag-font-base-path}/TheSans-5_Plain.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $denhaag-font-family-default;
+  src: url("#{$denhaag-font-base-path}/TheSans-6_SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $denhaag-font-family-default;
+  src: url("#{$denhaag-font-base-path}/TheSans-7_Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $denhaag-font-family-alternative;
+  src: url("#{$denhaag-font-base-path}/TheMix-3_Light.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $denhaag-font-family-alternative;
+  src: url("#{$denhaag-font-base-path}/TheMix-5_Plain.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $denhaag-font-family-alternative;
+  src: url("#{$denhaag-font-base-path}/TheMix-7_Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
