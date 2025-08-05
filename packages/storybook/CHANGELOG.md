@@ -1,5 +1,16 @@
 # @gemeente-denhaag/storybook
 
+## 5.1.0
+
+### Minor Changes
+
+- 3ec85bc: Added font package and integrated Den Haag fonts into storybook
+
+### Patch Changes
+
+- Updated dependencies [3ec85bc]
+  - @gemeente-denhaag/fonts@1.0.0
+
 ## 5.0.5
 
 ### Patch Changes
