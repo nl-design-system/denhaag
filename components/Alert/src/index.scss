@@ -7,9 +7,11 @@
   padding-block-end: var(--denhaag-alert-padding-block-end);
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: var(--denhaag-alert-gap, 24px);
 
   --nl-heading-level-4-margin-block-start: 0;
+  --nl-heading-level-4-margin-block-end: 0;
+  --nl-heading-level-4-line-height: 24px;
   --nl-paragraph-margin-block-end: 0;
 }
 
@@ -28,22 +30,24 @@
   --denhaag-icon-button-focus-color: var(--denhaag-alert-error-close-icon-color);
 }
 
-.denhaag-alert__main-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.denhaag-alert__icon svg {
+  display: block;
 }
 
-/* optical alignment icons */
-.denhaag-alert .denhaag-alert__icon {
-  margin-block-start: 4px;
+.denhaag-alert__centre {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: flex-start;
+  gap: var(--denhaag-alert-centre-gap, 16px);
 }
-.denhaag-alert__close {
-  padding-block-start: 4px;
+
+.denhaag-alert__content {
+  gap: var(--denhaag-alert-content-gap, 4px);
 }
 
 .denhaag-alert .denhaag-button {
-  margin-block-start: var(--denhaag-alert-action-padding-block-start);
+  margin-block-start: 0;
 }
 
 .denhaag-alert--error .denhaag-alert__icon {
@@ -105,11 +109,4 @@
 
 .denhaag-alert--warning .denhaag-alert__icon {
   color: var(--denhaag-alert-warning-icon-color);
-}
-
-.denhaag-alert__content {
-  --nl-heading-level-4-margin-block-end: var(--denhaag-alert-title-margin-block-end);
-
-  margin-inline-start: var(--denhaag-alert-content-margin-inline-start);
-  margin-inline-end: var(--denhaag-alert-content-margin-inline-end);
 }

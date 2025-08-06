@@ -6,23 +6,12 @@
       "padding-block-end": { "value": "{denhaag.space.block.xl}" },
       "padding-inline-start": { "value": "{denhaag.space.block.xl}" },
       "padding-inline-end": { "value": "{denhaag.space.block.xl}" },
+      "gap": { "value": "{denhaag.space.block.xl}" },
+      "centre": {
+        "gap": { "value": "{denhaag.space.block.md}" }
+      },
       "content": {
-        "margin-inline": {
-          "start": { "value": "{denhaag.space.block.xl}" },
-          "end": { "value": "{denhaag.space.block.xl}" }
-        }
-      },
-      "title": {
-        "margin-block": {
-          "end": { "value": "{denhaag.space.block.2xs}" }
-        }
-      },
-      "action": {
-        "padding": {
-          "block": {
-            "start": { "value": "{denhaag.space.block.md}" }
-          }
-        }
+        "gap": { "value": "{denhaag.space.block.sm}" }
       },
       "close": {
         "focus": {

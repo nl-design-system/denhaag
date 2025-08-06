@@ -75,17 +75,17 @@ export const Alert = ({ id, title, text, variant, action, close, supportIcon, cl
 
   return (
     <div id={id} className={rootClassNames}>
-      <div className="denhaag-alert__main-content">
-        <div className="denhaag-alert__icon">{icon}</div>
+      <div className="denhaag-alert__icon">{icon}</div>
+      <div className="denhaag-alert__centre">
         <div className="denhaag-alert__content">
           <Heading level={4}>{title}</Heading>
           <div>{text}</div>
-          {action && (
-            <Button type="button" onClick={() => action.onClick()}>
-              {action.buttonText}
-            </Button>
-          )}
         </div>
+        {action && (
+          <Button type="button" onClick={() => action.onClick()}>
+            {action.buttonText}
+          </Button>
+        )}
       </div>
       {close && (
         <div className="denhaag-alert__close">
