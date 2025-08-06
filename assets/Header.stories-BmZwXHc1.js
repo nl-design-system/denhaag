@@ -1,0 +1,6 @@
+import{t}from"./list-DvzMh2YN.js";import{h as a,a as s}from"./util-BdW4s14x.js";import{H as m}from"./index-BaKUxTre.js";import"./iframe-BQETwlMg.js";import"./index-5vx2ARGr.js";import"./index-BaT7NAga.js";import"./index-Ccakz0sg.js";import"./index-CuuSR96B.js";import"./index-Bu3c38-R.js";import"./index-CFkS-Z8K.js";import"./index-CtDF9jUV.js";import"./index-CTto4t_9.js";import"./index-CFoklmhZ.js";import"./index-C33cBlDL.js";import"./index-VQqn6VyW.js";import"./index-aVZShb_A.js";import"./index-7y1LDgjU.js";import"./v4-BKrj-4V8.js";import"./index-_-ZqmTlo.js";import"./index-DiTYzKXM.js";import"./index-C8HL874s.js";import"./index-CdoPEZIX.js";import"./index-DkmGFTb1.js";const o={breadcrumbs:{navigationPath:[{label:"Overzicht"}]}},p={...a,...o},y={id:"react-page-elements-header",title:"React/Page Elements/Header",component:m,args:p,tags:["autodocs"],parameters:{layout:"fullscreen",tokens:t}},r={},e={args:{...s,...o}};r.parameters={...r.parameters,docs:{...r.parameters?.docs,source:{originalSource:"{}",...r.parameters?.docs?.source}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+  args: {
+    ...headerFlatMobileMenuProps,
+    ...breadcrumbs
+  }
+}`,...e.parameters?.docs?.source}}};const z=["Default","FlatMobileMenu"];export{r as Default,e as FlatMobileMenu,z as __namedExportsOrder,y as default};

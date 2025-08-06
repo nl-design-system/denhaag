@@ -1,3 +1,0 @@
-import{j as t}from"./iframe-INLwGkTz.js";import{S as o}from"./StoryUtil-C84XPJNL.js";import"./index-Bg_L1suY.js";import"./index-D0ukYYic.js";import"./index-8mDqA0SA.js";import"./index-CmgF6CBt.js";import"./index-Cs2afCeU.js";import"./parseISO-BBPDwbcZ.js";import"./client-CCnIuDmO.js";const g={id:"open-forms-cosign",title:"Open Formulieren/Cosign",component:o,args:{key:"cosign",type:"cosign",label:"Co-signer email address",validateOn:"blur",authPlugin:"digid"}},r={render:e=>t.jsx(o,{...e})};r.parameters={...r.parameters,docs:{...r.parameters?.docs,source:{originalSource:`{
-  render: args => <SingleFormioComponent {...args} />
-}`,...r.parameters?.docs?.source}}};const u=["Default"];export{r as Default,u as __namedExportsOrder,g as default};
