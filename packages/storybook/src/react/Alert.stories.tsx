@@ -80,3 +80,11 @@ export const WithCustomIcon: Story = {
     supportIcon: <MegaphoneIcon />,
   },
 };
+
+export const TitleOnly: Story = {
+  args: {
+    ...Default.args,
+    title: 'This is a very long title that should be truncated if it exceeds the maximum width of the alert component',
+    text: undefined,
+  },
+};

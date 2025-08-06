@@ -80,3 +80,10 @@ export const WithCustomIcon: Story = {
     supportIcon: <MegaphoneIcon />,
   },
 };
+
+export const TitleOnly: Story = {
+  args: {
+    ...Default.args,
+    text: undefined,
+  },
+};
