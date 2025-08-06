@@ -79,7 +79,7 @@ export const Alert = ({ id, title, text, variant, action, close, supportIcon, cl
         <div className="denhaag-alert__icon">{icon}</div>
         <div className="denhaag-alert__content">
           <Heading level={4}>{title}</Heading>
-          {text}
+          <div>{text}</div>
           {action && (
             <Button type="button" onClick={() => action.onClick()}>
               {action.buttonText}
