@@ -33,7 +33,7 @@
   "devDependencies": {
     "@gemeente-denhaag/icons": "workspace:*",
     "@nl-design-system-candidate/link-css": "2.0.0",
-    "@nl-design-system-candidate/link-react": "1.1.3",
+    "@nl-design-system-candidate/link-react": "1.1.4",
     "clsx": "2.1.1"
   },
   "peerDependencies": {
