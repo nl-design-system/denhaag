@@ -1,5 +1,12 @@
 # @gemeente-denhaag/components-react
 
+## 4.0.5
+
+### Patch Changes
+
+- Updated dependencies [4a56dcc]
+  - @gemeente-denhaag/alert@4.0.3
+
 ## 4.0.4
 
 ### Patch Changes
