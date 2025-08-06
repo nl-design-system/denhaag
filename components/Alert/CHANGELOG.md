@@ -1,5 +1,11 @@
 # @gemeente-denhaag/alert
 
+## 4.0.3
+
+### Patch Changes
+
+- 4a56dcc: Fix styling issue alert with button
+
 ## 4.0.2
 
 ### Patch Changes
