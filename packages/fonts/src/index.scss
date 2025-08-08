@@ -1,6 +1,7 @@
 $denhaag-font-base-path: "./fonts" !default;
 $denhaag-font-family-default: "TheSans" !default;
 $denhaag-font-family-alternative: "TheMix" !default;
+$denhaag-the-sans-features: '"cv06" 1, "cv08" 1, "cv11" 1' !default;
 
 @font-face {
   font-family: $denhaag-font-family-default;
@@ -8,6 +9,7 @@ $denhaag-font-family-alternative: "TheMix" !default;
   font-weight: 400;
   font-style: normal;
   font-display: swap;
+  font-feature-settings: #{$denhaag-the-sans-features};
 }
 
 @font-face {
@@ -16,6 +18,7 @@ $denhaag-font-family-alternative: "TheMix" !default;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
+  font-feature-settings: #{$denhaag-the-sans-features};
 }
 
 @font-face {
@@ -24,6 +27,7 @@ $denhaag-font-family-alternative: "TheMix" !default;
   font-weight: 600;
   font-style: normal;
   font-display: swap;
+  font-feature-settings: #{$denhaag-the-sans-features};
 }
 
 @font-face {
@@ -32,6 +36,7 @@ $denhaag-font-family-alternative: "TheMix" !default;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
+  font-feature-settings: #{$denhaag-the-sans-features};
 }
 
 @font-face {
