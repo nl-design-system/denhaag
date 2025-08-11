@@ -1,5 +1,12 @@
 # @gemeente-denhaag/page-index
 
+## 3.0.1
+
+### Patch Changes
+
+- Updated dependencies [667f7f4]
+  - @gemeente-denhaag/unorderedlist@3.0.1
+
 ## 3.0.0
 
 ### Major Changes
