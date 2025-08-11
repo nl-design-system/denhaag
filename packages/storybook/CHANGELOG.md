@@ -1,5 +1,14 @@
 # @gemeente-denhaag/storybook
 
+## 5.1.2
+
+### Patch Changes
+
+- Updated dependencies [667f7f4]
+  - @gemeente-denhaag/unorderedlist@3.0.1
+  - @gemeente-denhaag/fonts@1.0.1
+  - @gemeente-denhaag/page-index@3.0.1
+
 ## 5.1.1
 
 ### Patch Changes

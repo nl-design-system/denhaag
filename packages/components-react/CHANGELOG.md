@@ -1,5 +1,11 @@
 # @gemeente-denhaag/components-react
 
+## 4.0.6
+
+### Patch Changes
+
+- @gemeente-denhaag/page-index@3.0.1
+
 ## 4.0.5
 
 ### Patch Changes

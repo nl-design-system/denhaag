@@ -1,5 +1,11 @@
 # @gemeente-denhaag/unorderedlist
 
+## 3.0.1
+
+### Patch Changes
+
+- 667f7f4: Fix unordered list large marker size, use correct a, g and y fonts
+
 ## 3.0.0
 
 ### Major Changes
