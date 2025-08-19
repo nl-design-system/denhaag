@@ -46,6 +46,10 @@
         "font-size": { "value": "16px" },
         "date": {
           "font-size": { "value": "20px" }
+        },
+        "nested": {
+          "margin-block-start": { "value": "{denhaag.space.block.2xs}" },
+          "font-size": { "value": "14px" }
         }
       }
     }
