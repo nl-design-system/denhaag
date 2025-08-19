@@ -21,8 +21,13 @@ const exampleArgs = {
       title: 'Onderzoek naar geluidsoverlast',
       status: 'current',
       steps: [
-        { title: 'Afspraak meten geluidsoverlast gemaakt', status: 'checked' },
-        { title: 'Geluidsoverlast gemeten' },
+        {
+          title:
+            'Afspraak meten geluidsoverlast gemaakt dfawef awef waefaw ef waefawef awef awef awefawef awef waefwaefwefawef',
+          status: 'checked',
+          date: 'Op 1 april 2023',
+        },
+        { title: 'Geluidsoverlast gemeten', date: 'Op 1 april 2023' },
         { title: 'Onderzoek resultaten verwerkt' },
       ],
     },

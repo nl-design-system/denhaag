@@ -9,3 +9,9 @@
   font-size: var(--denhaag-process-steps-step-meta-date-font-size, var(--denhaag-process-steps-step-meta-font-size));
   color: var(--denhaag-process-steps-step-meta-date-color, var(--denhaag-process-steps-step-meta-color));
 }
+
+.denhaag-process-steps__step-meta--nested {
+  font-size: var(--denhaag-process-steps-step-meta-nested-font-size, var(--denhaag-process-steps-step-meta-font-size));
+  margin-block-start: var(--denhaag-process-steps-step-meta-nested-margin-block-start);
+  margin-inline-start: 48px;
+}

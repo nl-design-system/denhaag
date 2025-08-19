@@ -101,10 +101,12 @@ const StatusStep = ({ step, nextStep, expanded = true, toggleExpanded }: StatusS
               const nextStatus = nextSubStep?.status || nextStep?.status;
               return (
                 <SubStep key={index}>
-                  <StepMarker appearance={substep.status} nested>
-                    {substep.status === 'checked' && <CheckedIcon />}
-                  </StepMarker>
-                  <SubStepHeading>{substep.title}</SubStepHeading>
+                  <StepHeader nested>
+                    <StepMarker appearance={substep.status} nested>
+                      {substep.status === 'checked' && <CheckedIcon />}
+                    </StepMarker>
+                    <SubStepHeading>{substep.title}</SubStepHeading>
+                  </StepHeader>
                   {(nextSubStep || nextStep) && (
                     <StepMarkerConnector
                       from="nested"
@@ -115,6 +117,7 @@ const StatusStep = ({ step, nextStep, expanded = true, toggleExpanded }: StatusS
                       })}
                     />
                   )}
+                  <StepMeta nested>{substep.date}</StepMeta>
                 </SubStep>
               );
             })}
