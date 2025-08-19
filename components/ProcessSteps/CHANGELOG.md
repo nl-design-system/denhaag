@@ -1,5 +1,11 @@
 # @gemeente-denhaag/process-steps
 
+## 4.1.0
+
+### Minor Changes
+
+- 0542aa1: Add date option to sub step
+
 ## 4.0.0
 
 ### Major Changes
