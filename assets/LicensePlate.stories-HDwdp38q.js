@@ -1,0 +1,3 @@
+import{j as t}from"./iframe-CsVA0H5Z.js";import{S as r}from"./StoryUtil-BoecuAHA.js";import"./index-dO85comC.js";import"./index-Cckk09db.js";import"./index-rAKRGMrG.js";import"./index-JssLsMJw.js";import"./index-M29D1eXz.js";import"./parseISO-BBPDwbcZ.js";import"./client-DLg8fLrE.js";const u={id:"open-forms-license-plate",title:"Open Formulieren/LicensePlateField",component:r,args:{key:"licenseplate",type:"licenseplate",label:"Kentekennummer"}},e={render:o=>t.jsx(r,{...o})};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+  render: args => <SingleFormioComponent {...args} />
+}`,...e.parameters?.docs?.source}}};const f=["Default"];export{e as Default,f as __namedExportsOrder,u as default};

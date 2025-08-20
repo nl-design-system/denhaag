@@ -1,3 +1,0 @@
-import{j as t}from"./iframe-DY871a0d.js";import{S as r}from"./StoryUtil-Bgl2empO.js";import"./index-Betx4yvd.js";import"./index-CLV12OgP.js";import"./index-CTY_Y-XM.js";import"./index-CUqEUie5.js";import"./index-CCkANMYa.js";import"./parseISO-BBPDwbcZ.js";import"./client-s-qF4sNU.js";const x={id:"open-forms-textarea",title:"Open Formulieren/Textarea",component:r,args:{type:"textarea",label:"Textarea",extraComponentProperties:{description:"Plaats hierboven uw handtekening"}}},e={render:o=>t.jsx(r,{...o})};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
-  render: args => <SingleFormioComponent {...args} />
-}`,...e.parameters?.docs?.source}}};const u=["Default"];export{e as Default,u as __namedExportsOrder,x as default};
