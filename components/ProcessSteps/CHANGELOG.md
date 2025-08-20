@@ -1,5 +1,15 @@
 # @gemeente-denhaag/process-steps
 
+## 4.2.0
+
+### Minor Changes
+
+- eadef31: Add date option to sub step
+
+### Patch Changes
+
+- e953fd0: Fix substep guard
+
 ## 4.1.0
 
 ### Minor Changes
