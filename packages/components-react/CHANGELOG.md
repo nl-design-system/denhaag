@@ -1,5 +1,14 @@
 # @gemeente-denhaag/components-react
 
+## 4.0.8
+
+### Patch Changes
+
+- Updated dependencies [e953fd0]
+- Updated dependencies [eadef31]
+  - @gemeente-denhaag/process-steps@4.2.0
+  - @gemeente-denhaag/contact-timeline@4.0.3
+
 ## 4.0.7
 
 ### Patch Changes
