@@ -93,7 +93,7 @@ const StatusStep = ({ step, nextStep, expanded = true, toggleExpanded }: StatusS
         {step.meta && <StepMeta>{step.meta}</StepMeta>}
         {step.date && <StepMeta date>{step.date}</StepMeta>}
       </StepBody>
-      {step.steps?.length && (
+      {Boolean(step.steps?.length) && (
         <StepDetails id={`${step.id}--details`} collapsed={!expanded}>
           <StepList>
             {step.steps?.map((substep, index, substeps) => {
