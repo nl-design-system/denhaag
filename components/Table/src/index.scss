@@ -84,6 +84,8 @@
 
   --nl-link-color: var(--denhaag-table-cell-color);
   --nl-link-text-decoration-line: none;
+  --nl-link-hover-color: var(--denhaag-table-cell-color);
+  --nl-link-hover-text-decoration-line: none;
 
   &--align-top {
     vertical-align: top;
