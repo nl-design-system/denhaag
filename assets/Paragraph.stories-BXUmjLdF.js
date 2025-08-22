@@ -1,0 +1,1 @@
+import t from"./Paragraph.stories-CasbWixF.js";import{Default as s,Lead as f}from"./Paragraph.stories-CasbWixF.js";import"./index-CeMW6Qcz.js";import"./iframe-DV0EJx8w.js";const r={...t,tags:["autodocs"]},m=["Default","Lead"];export{s as Default,f as Lead,m as __namedExportsOrder,r as default};
