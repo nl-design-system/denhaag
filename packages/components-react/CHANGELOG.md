@@ -1,5 +1,12 @@
 # @gemeente-denhaag/components-react
 
+## 4.0.9
+
+### Patch Changes
+
+- Updated dependencies [fc8c213]
+  - @gemeente-denhaag/table@4.0.1
+
 ## 4.0.8
 
 ### Patch Changes
