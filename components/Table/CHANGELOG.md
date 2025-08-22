@@ -1,5 +1,11 @@
 # @gemeente-denhaag/table
 
+## 4.0.1
+
+### Patch Changes
+
+- fc8c213: Fix table link hover color
+
 ## 4.0.0
 
 ### Major Changes
