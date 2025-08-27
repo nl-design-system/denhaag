@@ -5,6 +5,43 @@
     border-bottom-style: var(--denhaag-header-border-bottom-style);
   }
 
+  &__logo-container {
+    height: var(--denhaag-header-height);
+    display: flex;
+    align-items: center;
+    padding-block-start: var(--denhaag-header-logo-container-padding-block-start, var(--denhaag-space-block-sm));
+    padding-block-end: var(--denhaag-header-logo-container-padding-block-end, var(--denhaag-space-block-sm));
+    box-sizing: border-box;
+    overflow: hidden;
+
+    --denhaag-header-logo-height: var(--denhaag-header-height);
+
+    @media (width >= 768px) {
+      height: var(--denhaag-header-sm-height);
+
+      --denhaag-header-logo-height: var(--denhaag-header-sm-height);
+    }
+
+    @media (width >= 1024px) {
+      height: var(--denhaag-header-md-height);
+
+      --denhaag-header-logo-height: var(--denhaag-header-md-height);
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    img,
+    svg {
+      width: auto;
+      max-height: 100%;
+    }
+  }
+
   &__content {
     align-items: var(--denhaag-header-content-align-items);
     display: var(--denhaag-header-content-display);
