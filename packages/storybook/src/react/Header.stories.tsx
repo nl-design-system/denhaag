@@ -1,4 +1,3 @@
-import tokens from '@gemeente-denhaag/design-tokens-components/dist/list.json';
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { headerProps, headerFlatMobileMenuProps } from '../templates/util';
 import { HeaderLogic, HeaderLogicProps } from '@gemeente-denhaag/header';
@@ -15,14 +14,11 @@ const overviewHeaderProps: HeaderLogicProps = {
 };
 
 const meta = {
-  id: 'react-page-elements-header',
-  title: 'React/Page Elements/Header',
   component: HeaderLogic,
   args: overviewHeaderProps,
   tags: ['autodocs'],
   parameters: {
     layout: 'fullscreen',
-    tokens,
   },
 } as Meta<typeof HeaderLogic>;
 
@@ -35,5 +31,8 @@ export const FlatMobileMenu: Story = {
   args: {
     ...headerFlatMobileMenuProps,
     ...breadcrumbs,
+  },
+  globals: {
+    viewport: { value: 'mobile2', isRotated: false },
   },
 };
