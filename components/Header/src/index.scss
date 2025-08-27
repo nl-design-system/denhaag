@@ -28,17 +28,17 @@
       --denhaag-header-logo-height: var(--denhaag-header-md-height);
     }
 
-    a {
-      display: flex;
-      align-items: center;
-      height: 100%;
-      overflow: hidden;
-    }
-
     img,
     svg {
+      display: block;
       width: auto;
-      max-height: 100%;
+      max-height: calc(
+        var(--denhaag-header-logo-height) -
+          (
+            var(--denhaag-header-logo-container-padding-block-start, var(--denhaag-space-block-sm)) +
+              var(--denhaag-header-logo-container-padding-block-end, var(--denhaag-space-block-sm))
+          )
+      );
     }
   }
 
