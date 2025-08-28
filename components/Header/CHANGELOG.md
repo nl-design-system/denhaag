@@ -1,5 +1,11 @@
 # @gemeente-denhaag/header
 
+## 4.0.3
+
+### Patch Changes
+
+- aa74960: Header logo max height fix
+
 ## 4.0.2
 
 ### Patch Changes
