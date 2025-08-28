@@ -1,5 +1,13 @@
 # @gemeente-denhaag/storybook
 
+## 5.1.6
+
+### Patch Changes
+
+- aa74960: Header logo max height fix
+- Updated dependencies [aa74960]
+  - @gemeente-denhaag/header@4.0.3
+
 ## 5.1.5
 
 ### Patch Changes
