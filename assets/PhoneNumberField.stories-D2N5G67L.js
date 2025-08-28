@@ -1,3 +1,0 @@
-import{j as t}from"./iframe-DV0EJx8w.js";import{S as r}from"./StoryUtil-CFdoioxf.js";import"./index-DO6cL0zg.js";import"./index-C-B7Cx64.js";import"./index-C7i3aGfH.js";import"./index-CUooPTW9.js";import"./index-Cl1nOoiR.js";import"./parseISO-BBPDwbcZ.js";import"./client-C-jOG6RQ.js";const d={id:"open-forms-phone-number",title:"Open Formulieren/PhoneNumber",component:r,args:{key:"phone-number",type:"phoneNumber",label:"Telefoonnummer",extraComponentProperties:{inputMask:null}}},e={render:o=>t.jsx(r,{...o})};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
-  render: args => <SingleFormioComponent {...args} />
-}`,...e.parameters?.docs?.source}}};const f=["Default"];export{e as Default,f as __namedExportsOrder,d as default};

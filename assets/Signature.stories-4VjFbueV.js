@@ -1,0 +1,3 @@
+import{j as t}from"./iframe-4dTl_QDg.js";import{S as r}from"./StoryUtil-Bn4HL48k.js";import"./index-Cd3MLc7T.js";import"./index-DBvBfRtG.js";import"./index-L8rARX-F.js";import"./index-qb3INt4p.js";import"./index-Cy_wnrjM.js";import"./parseISO-BBPDwbcZ.js";import"./client-DS9BYM5w.js";const g={id:"open-forms-signature",title:"Open Formulieren/Signature",component:r,args:{type:"signature",label:"Handtekening",extraComponentProperties:{description:"Plaats hierboven uw handtekening"}}},e={render:o=>t.jsx(r,{...o})};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+  render: args => <SingleFormioComponent {...args} />
+}`,...e.parameters?.docs?.source}}};const l=["Default"];export{e as Default,l as __namedExportsOrder,g as default};
