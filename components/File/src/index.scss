@@ -32,6 +32,7 @@
     align-items: center;
     color: var(--denhaag-file-link-color);
     gap: var(--denhaag-file-link-gap);
+    word-break: initial;
 
     --utrecht-link-text-decoration: none;
 
