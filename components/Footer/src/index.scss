@@ -74,5 +74,9 @@
     @media (width >= 1024px) {
       grid-template-columns: repeat(3, 1fr);
     }
+
+    .denhaag-footer-group-item {
+      --nl-heading-level-4-color: var(--denhaag-footer-heading-color);
+    }
   }
 }

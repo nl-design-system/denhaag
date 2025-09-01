@@ -6,11 +6,12 @@ import '@gemeente-denhaag/button-group';
 import '@gemeente-denhaag/icons';
 import '@gemeente-denhaag/list';
 import '@gemeente-denhaag/link';
-import '@gemeente-denhaag/link-group';
 import '@utrecht/link-social-css';
 import '@utrecht/list-social-css';
 import clsx from 'clsx';
 import './index.scss';
+import { LinkList } from '@gemeente-denhaag/link-list';
+import { Heading } from '@gemeente-denhaag/heading';
 
 export interface FooterListItemData {
   label: string;
@@ -93,8 +94,8 @@ export const FooterContact: React.FC<FooterContactProps> = (props: FooterContact
       <ResponsiveContent>
         <div className="denhaag-footer-group">
           {props.newsletterData && (
-            <div className="denhaag-link-group denhaag-link-group--dark">
-              <h4 className="nl-heading-level-4 denhaag-link-group__caption">{props.newsletterData.title}</h4>
+            <div className="denhaag-footer-group-item">
+              <Heading level={4}>{props.newsletterData.title}</Heading>
               <Paragraph>{props.newsletterData.text}</Paragraph>
               <div className="denhaag-button-group">
                 <ButtonLink appearance="primary-action-button" href={props.newsletterData.href}>
@@ -104,8 +105,8 @@ export const FooterContact: React.FC<FooterContactProps> = (props: FooterContact
             </div>
           )}
           {props.socialData && (
-            <div className="denhaag-link-group denhaag-link-group--dark">
-              <h4 className="nl-heading-level-4 denhaag-link-group__caption">{props.socialData.title}</h4>
+            <div className="denhaag-footer-group-item">
+              <Heading level={4}>{props.socialData.title}</Heading>
               <ul className="utrecht-list-social">
                 {props.socialData.links.map((item, key) => (
                   <li className="utrecht-list-social__item" key={key}>
@@ -118,35 +119,9 @@ export const FooterContact: React.FC<FooterContactProps> = (props: FooterContact
             </div>
           )}
           {props.contactData && (
-            <div className="denhaag-link-group denhaag-link-group--dark">
-              <h4 className="nl-heading-level-4 denhaag-link-group__caption">{props.contactData.title}</h4>
-              <ul className="denhaag-link-group__list">
-                {props.contactData.links.map((item, key) => (
-                  <li className="denhaag-link-group__list-item" key={key}>
-                    <a href={item.href} className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start">
-                      <span className="denhaag-link__icon">
-                        <svg
-                          width="1em"
-                          height="1em"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="denhaag-icon"
-                          focusable="false"
-                          aria-hidden="true"
-                          shapeRendering="auto"
-                        >
-                          <path
-                            d="M12.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L16.586 13H5a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                            fill="currentColor"
-                          ></path>
-                        </svg>
-                      </span>
-                      <span className="denhaag-link__label">{item.label}</span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
+            <div className="denhaag-footer-group-item">
+              <Heading level={4}>{props.contactData.title}</Heading>
+              <LinkList items={props.contactData.links} />
               {props.contactData.buttonLabel && props.contactData.href && (
                 <div className="denhaag-button-group">
                   <ButtonLink appearance="primary-action-button" href={props.contactData.href}>
