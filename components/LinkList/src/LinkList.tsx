@@ -4,7 +4,7 @@ import { LinkListItem } from './LinkListItem';
 import { ArrowRightIcon, ExternalLinkIcon } from '@gemeente-denhaag/icons';
 import { Link } from '@gemeente-denhaag/link';
 
-type Items = {
+export type Items = {
   label: ReactNode;
   href: string;
   external?: boolean;

@@ -723,12 +723,6 @@ importers:
         specifier: workspace:*
         version: link:../Heading
 
-  components/HighlightedLinks:
-    devDependencies:
-      '@gemeente-denhaag/icons':
-        specifier: workspace:*
-        version: link:../Icons
-
   components/IconButton:
     dependencies:
       '@gemeente-denhaag/icons':
@@ -1397,9 +1391,6 @@ importers:
       '@gemeente-denhaag/hero':
         specifier: workspace:*
         version: link:../../components/Hero
-      '@gemeente-denhaag/highlighted-links':
-        specifier: workspace:*
-        version: link:../../components/HighlightedLinks
       '@gemeente-denhaag/iconbutton':
         specifier: workspace:*
         version: link:../../components/IconButton
@@ -1787,9 +1778,6 @@ importers:
       '@gemeente-denhaag/hero':
         specifier: workspace:*
         version: link:../../components/Hero
-      '@gemeente-denhaag/highlighted-links':
-        specifier: workspace:*
-        version: link:../../components/HighlightedLinks
       '@gemeente-denhaag/iconbutton':
         specifier: workspace:*
         version: link:../../components/IconButton
