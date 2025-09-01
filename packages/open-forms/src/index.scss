@@ -11,3 +11,4 @@
 @use "~@utrecht/table-css/dist/index.min.css" as table;
 @use "~@utrecht/textbox-css/dist/index.min.css" as textbox;
 @use "~@gemeente-denhaag/design-tokens-components/dist/theme/index" as designTokenComponents;
+@use "./open-forms" as openForms;
