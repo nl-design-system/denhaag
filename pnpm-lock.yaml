@@ -516,15 +516,18 @@ importers:
       '@gemeente-denhaag/button-link':
         specifier: workspace:*
         version: link:../ButtonLink
+      '@gemeente-denhaag/heading':
+        specifier: workspace:*
+        version: link:../Heading
       '@gemeente-denhaag/icons':
         specifier: workspace:*
         version: link:../Icons
       '@gemeente-denhaag/link':
         specifier: workspace:*
         version: link:../Link
-      '@gemeente-denhaag/link-group':
+      '@gemeente-denhaag/link-list':
         specifier: workspace:*
-        version: link:../LinkGroup
+        version: link:../LinkList
       '@gemeente-denhaag/list':
         specifier: workspace:*
         version: link:../List
