@@ -670,9 +670,9 @@ importers:
       '@gemeente-denhaag/link':
         specifier: workspace:*
         version: link:../Link
-      '@gemeente-denhaag/link-group':
+      '@gemeente-denhaag/link-list':
         specifier: workspace:*
-        version: link:../LinkGroup
+        version: link:../LinkList
       '@gemeente-denhaag/menu':
         specifier: workspace:*
         version: link:../Menu
@@ -810,21 +810,6 @@ importers:
       '@utrecht/link-button-css':
         specifier: 1.4.1
         version: 1.4.1
-      react:
-        specifier: 18 || 19
-        version: 19.1.0
-      react-dom:
-        specifier: 18 || 19
-        version: 19.1.0(react@19.1.0)
-
-  components/LinkGroup:
-    dependencies:
-      '@gemeente-denhaag/icons':
-        specifier: workspace:*
-        version: link:../Icons
-      clsx:
-        specifier: 2.1.1
-        version: 2.1.1
       react:
         specifier: 18 || 19
         version: 19.1.0
@@ -1409,9 +1394,9 @@ importers:
       '@gemeente-denhaag/link-button':
         specifier: workspace:*
         version: link:../../components/LinkButton
-      '@gemeente-denhaag/link-group':
+      '@gemeente-denhaag/link-list':
         specifier: workspace:*
-        version: link:../../components/LinkGroup
+        version: link:../../components/LinkList
       '@gemeente-denhaag/list':
         specifier: workspace:*
         version: link:../../components/List
@@ -1541,6 +1526,9 @@ importers:
       '@gemeente-denhaag/link-button':
         specifier: workspace:*
         version: link:../../components/LinkButton
+      '@gemeente-denhaag/link-list':
+        specifier: workspace:*
+        version: link:../../components/LinkList
       '@gemeente-denhaag/list':
         specifier: workspace:*
         version: link:../../components/List
@@ -1796,9 +1784,6 @@ importers:
       '@gemeente-denhaag/link-button':
         specifier: workspace:*
         version: link:../../components/LinkButton
-      '@gemeente-denhaag/link-group':
-        specifier: workspace:*
-        version: link:../../components/LinkGroup
       '@gemeente-denhaag/link-list':
         specifier: workspace:*
         version: link:../../components/LinkList

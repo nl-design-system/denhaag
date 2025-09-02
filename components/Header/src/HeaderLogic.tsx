@@ -14,14 +14,14 @@ import { HeaderAction } from './HeaderAction';
 import { Breadcrumb, BreadcrumbProps } from '@gemeente-denhaag/breadcrumb';
 import { Sheet, SheetOverlay, SheetContainer, SheetDialog, useEscapeKey, useScreenSize } from '@gemeente-denhaag/sheet';
 import { IconButton } from '@gemeente-denhaag/iconbutton';
-import { CloseIcon, ArrowRightIcon, LogOutIcon } from '@gemeente-denhaag/icons';
-import { LinkGroup, LinkGroupList, LinkGroupListItem } from '@gemeente-denhaag/link-group';
+import { CloseIcon, LogOutIcon } from '@gemeente-denhaag/icons';
 import { LanguageSwitcherLogic, LanguageSwitcherLogicProps } from '@gemeente-denhaag/language-switcher';
 import { Heading } from '@gemeente-denhaag/heading';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
 import { Button } from '@gemeente-denhaag/button';
 import './index.scss';
 import clsx from 'clsx';
+import { LinkList } from '@gemeente-denhaag/link-list';
 
 export interface HeaderLogicProps {
   breadcrumbs?: BreadcrumbProps;
@@ -153,34 +153,19 @@ export const HeaderLogic = ({
   const renderMobileMenu = mobileMenu || languageSwitcherMenu || logoutButton;
 
   const CustomLink = userprofileMenu?.CustomLink;
-  const NavigationGroup: React.FC<NavigationGroupProps> = (props: NavigationGroupProps) => {
-    const navigationLinks = props.navigation?.map((navigationLink, key) => {
-      return (
-        <LinkGroupListItem key={key}>
-          {CustomLink ? (
-            <CustomLink
-              href={navigationLink.href}
-              className="denhaag-link denhaag-link--with-icon denhaag-link--with-icon-start"
-            >
-              <span className="denhaag-link__icon">
-                <ArrowRightIcon />
-              </span>
-              <span>{navigationLink.label}</span>
-            </CustomLink>
-          ) : (
-            <Link icon={<ArrowRightIcon />} iconAlign="start" href={navigationLink.href}>
-              {navigationLink.label}
-            </Link>
-          )}
-        </LinkGroupListItem>
-      );
-    });
+  const NavigationGroup = ({ label, navigation }: NavigationGroupProps) => {
+    if (!navigation) return null;
 
     return (
-      <LinkGroup>
-        <Heading level={4}>{props.label}</Heading>
-        <LinkGroupList>{navigationLinks}</LinkGroupList>
-      </LinkGroup>
+      <>
+        <Heading level={4}>{label}</Heading>
+        <LinkList
+          items={navigation.map((navigationLink) => {
+            return { label: navigationLink.label, href: navigationLink.href! };
+          })}
+          Link={CustomLink}
+        />
+      </>
     );
   };
 
@@ -249,7 +234,7 @@ export const HeaderLogic = ({
               <IconButton aria-label="close" className="denhaag-sheet__close-button" onClick={handleWelcomeMenuToggle}>
                 <CloseIcon />
               </IconButton>
-              <SheetContainer>
+              <SheetContainer className="denhaag-header-sheet-container">
                 {userprofileMenu.navigationGroups.map((group, key) => {
                   return <NavigationGroup {...group} key={key} />;
                 })}
