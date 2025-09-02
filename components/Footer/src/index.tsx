@@ -2,6 +2,8 @@ import React from 'react';
 import { ButtonLink } from '@gemeente-denhaag/button-link';
 import { ResponsiveContent } from '@gemeente-denhaag/responsive-content';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
+import { LinkList } from '@gemeente-denhaag/link-list';
+import { Heading } from '@gemeente-denhaag/heading';
 import '@gemeente-denhaag/button-group';
 import '@gemeente-denhaag/icons';
 import '@gemeente-denhaag/list';
@@ -10,8 +12,6 @@ import '@utrecht/link-social-css';
 import '@utrecht/list-social-css';
 import clsx from 'clsx';
 import './index.scss';
-import { LinkList } from '@gemeente-denhaag/link-list';
-import { Heading } from '@gemeente-denhaag/heading';
 
 export interface FooterListItemData {
   label: string;
