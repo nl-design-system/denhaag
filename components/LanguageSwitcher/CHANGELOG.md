@@ -1,5 +1,11 @@
 # @gemeente-denhaag/language-switcher
 
+## 3.1.0
+
+### Minor Changes
+
+- 653501b: Removed link-group and highlightedlinks, since they are replaced with the link-list
+
 ## 3.0.1
 
 ### Patch Changes

@@ -1,5 +1,12 @@
 # @gemeente-denhaag/menu
 
+## 4.0.2
+
+### Patch Changes
+
+- Updated dependencies [653501b]
+  - @gemeente-denhaag/language-switcher@3.1.0
+
 ## 4.0.1
 
 ### Patch Changes

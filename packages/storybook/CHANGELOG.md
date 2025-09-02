@@ -1,5 +1,17 @@
 # @gemeente-denhaag/storybook
 
+## 5.1.7
+
+### Patch Changes
+
+- 653501b: Removed link-group and highlightedlinks, since they are replaced with the link-list
+- Updated dependencies [653501b]
+  - @gemeente-denhaag/design-tokens-components@5.1.0
+  - @gemeente-denhaag/link-list@6.1.0
+  - @gemeente-denhaag/footer@4.1.0
+  - @gemeente-denhaag/header@4.1.0
+  - @gemeente-denhaag/menu@4.0.2
+
 ## 5.1.6
 
 ### Patch Changes

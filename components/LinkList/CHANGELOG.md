@@ -1,5 +1,11 @@
 # @gemeente-denhaag/link-list
 
+## 6.1.0
+
+### Minor Changes
+
+- 653501b: Removed link-group and highlightedlinks, since they are replaced with the link-list
+
 ## 6.0.0
 
 ### Major Changes
