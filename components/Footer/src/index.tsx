@@ -63,13 +63,13 @@ export interface FooterProps {
   contactData?: ContactData;
 }
 
-export const FooterLegal: React.FC<FooterLegalProps> = (props: FooterLegalProps) => {
+export const FooterLegal = ({ legalData, copyrightLabel }: FooterLegalProps) => {
   return (
     <section className="denhaag-footer__legal">
       <ResponsiveContent className="denhaag-footer__legal-container">
-        {props.legalData && (
+        {legalData && (
           <ul className="denhaag-list denhaag-footer__legal-links">
-            {props.legalData?.map((item, key) => (
+            {legalData?.map((item, key) => (
               <li className="denhaag-list__item" key={key}>
                 <a href={item.href} className="denhaag-link">
                   <span className="denhaag-link__label">{item.label}</span>
@@ -78,9 +78,9 @@ export const FooterLegal: React.FC<FooterLegalProps> = (props: FooterLegalProps)
             ))}
           </ul>
         )}
-        {props.copyrightLabel && (
+        {copyrightLabel && (
           <div className="denhaag-footer__legal-copyright">
-            <Paragraph>{props.copyrightLabel}</Paragraph>
+            <Paragraph>{copyrightLabel}</Paragraph>
           </div>
         )}
       </ResponsiveContent>
@@ -88,27 +88,27 @@ export const FooterLegal: React.FC<FooterLegalProps> = (props: FooterLegalProps)
   );
 };
 
-export const FooterContact: React.FC<FooterContactProps> = (props: FooterContactProps) => {
+export const FooterContact = ({ newsletterData, socialData, contactData }: FooterContactProps) => {
   return (
     <section className="denhaag-footer__contact">
       <ResponsiveContent>
         <div className="denhaag-footer-group">
-          {props.newsletterData && (
+          {newsletterData && (
             <div className="denhaag-footer-group-item">
-              <Heading level={4}>{props.newsletterData.title}</Heading>
-              <Paragraph>{props.newsletterData.text}</Paragraph>
+              <Heading level={4}>{newsletterData.title}</Heading>
+              <Paragraph>{newsletterData.text}</Paragraph>
               <div className="denhaag-button-group">
-                <ButtonLink appearance="primary-action-button" href={props.newsletterData.href}>
-                  {props.newsletterData.buttonLabel}
+                <ButtonLink appearance="primary-action-button" href={newsletterData.href}>
+                  {newsletterData.buttonLabel}
                 </ButtonLink>
               </div>
             </div>
           )}
-          {props.socialData && (
+          {socialData && (
             <div className="denhaag-footer-group-item">
-              <Heading level={4}>{props.socialData.title}</Heading>
+              <Heading level={4}>{socialData.title}</Heading>
               <ul className="utrecht-list-social">
-                {props.socialData.links.map((item, key) => (
+                {socialData.links.map((item, key) => (
                   <li className="utrecht-list-social__item" key={key}>
                     <a href={item.href} className="utrecht-link-social" title={item.label}>
                       {item.icon}
@@ -118,14 +118,14 @@ export const FooterContact: React.FC<FooterContactProps> = (props: FooterContact
               </ul>
             </div>
           )}
-          {props.contactData && (
+          {contactData && (
             <div className="denhaag-footer-group-item">
-              <Heading level={4}>{props.contactData.title}</Heading>
-              <LinkList items={props.contactData.links} />
-              {props.contactData.buttonLabel && props.contactData.href && (
+              <Heading level={4}>{contactData.title}</Heading>
+              <LinkList items={contactData.links} />
+              {contactData.buttonLabel && contactData.href && (
                 <div className="denhaag-button-group">
-                  <ButtonLink appearance="primary-action-button" href={props.contactData.href}>
-                    {props.contactData.buttonLabel}
+                  <ButtonLink appearance="primary-action-button" href={contactData.href}>
+                    {contactData.buttonLabel}
                   </ButtonLink>
                 </div>
               )}
@@ -137,17 +137,20 @@ export const FooterContact: React.FC<FooterContactProps> = (props: FooterContact
   );
 };
 
-export const Footer = (props: FooterProps) => {
-  const rootClassNames = clsx('denhaag-footer', props.className);
+export const Footer = ({
+  className,
+  socialData,
+  newsletterData,
+  contactData,
+  legalData,
+  copyrightLabel,
+}: FooterProps) => {
+  const rootClassNames = clsx('denhaag-footer', className);
 
   return (
     <footer className={rootClassNames}>
-      <FooterContact
-        socialData={props.socialData}
-        newsletterData={props.newsletterData}
-        contactData={props.contactData}
-      />
-      <FooterLegal legalData={props.legalData} copyrightLabel={props.copyrightLabel} />
+      <FooterContact socialData={socialData} newsletterData={newsletterData} contactData={contactData} />
+      <FooterLegal legalData={legalData} copyrightLabel={copyrightLabel} />
     </footer>
   );
 };
