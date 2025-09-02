@@ -48,15 +48,6 @@
       }
     }
 
-    .denhaag-link__icon {
-      font-size: var(--denhaag-link-group-link-icon-font-size);
-      width: var(--denhaag-link-group-link-icon-width);
-    }
-
-    .denhaag-link__icon .denhaag-icon {
-      height: var(--denhaag-link-group-link-icon-denhaag-icon-height);
-    }
-
     .denhaag-language-switcher__list-item-link--active {
       color: var(--denhaag-language-switcher-list-item-link-active-color);
       font-weight: var(--denhaag-language-switcher-list-item-link-active-font-weight, bold);

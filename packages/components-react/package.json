@@ -51,6 +51,7 @@
     "@gemeente-denhaag/icons": "workspace:*",
     "@gemeente-denhaag/link": "workspace:*",
     "@gemeente-denhaag/link-button": "workspace:*",
+    "@gemeente-denhaag/link-list": "workspace:*",
     "@gemeente-denhaag/list": "workspace:*",
     "@gemeente-denhaag/menu": "workspace:*",
     "@gemeente-denhaag/page": "workspace:*",

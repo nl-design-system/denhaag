@@ -1,9 +1,9 @@
 {
   "utrecht": {
     "link-list": {
-      "margin-block-start": {},
-      "margin-block-end": {},
-      "row-gap": { "value": "{denhaag.space.block.sm}" },
+      "margin-block-start": { "value": "{denhaag.space.block.xs}" },
+      "margin-block-end": { "value": "{denhaag.space.block.xs}" },
+      "row-gap": { "value": "{denhaag.space.block.xs}" },
       "link": {
         "column-gap": {},
         "font-weight": {},
