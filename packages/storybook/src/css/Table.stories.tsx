@@ -283,7 +283,7 @@ export const LongTitle: Story = {
   },
 };
 
-export const withLink: Story = {
+export const WithLink: Story = {
   args: {
     ...Default.args,
     children: (

@@ -181,11 +181,13 @@ export const DigiD: Story = {
   name: 'DigiD',
 };
 
+// eslint-disable-next-line storybook/prefer-pascal-case
 export const eHerkenning: Story = {
   args: { ...Default.args, authProvider: 'eHerkenning' },
   name: 'eHerkenning',
 };
 
+// eslint-disable-next-line storybook/prefer-pascal-case
 export const eIDAS: Story = {
   args: { ...Default.args, authProvider: 'eIDAS' },
   name: 'eIDAS',
