@@ -1,5 +1,18 @@
 # @gemeente-denhaag/header
 
+## 4.1.0
+
+### Minor Changes
+
+- 653501b: Removed link-group and highlightedlinks, since they are replaced with the link-list
+
+### Patch Changes
+
+- Updated dependencies [653501b]
+  - @gemeente-denhaag/language-switcher@3.1.0
+  - @gemeente-denhaag/link-list@6.1.0
+  - @gemeente-denhaag/menu@4.0.2
+
 ## 4.0.3
 
 ### Patch Changes

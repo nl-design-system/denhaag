@@ -1,5 +1,11 @@
 # @gemeente-denhaag/components-css
 
+## 4.0.0
+
+### Major Changes
+
+- 653501b: Removed link-group and highlightedlinks, since they are replaced with the link-list
+
 ## 3.0.0
 
 ### Major Changes

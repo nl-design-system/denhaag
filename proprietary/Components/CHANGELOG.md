@@ -1,5 +1,11 @@
 # @gemeente-denhaag/design-tokens-components
 
+## 5.1.0
+
+### Minor Changes
+
+- 653501b: Removed link-group and highlightedlinks, since they are replaced with the link-list
+
 ## 5.0.1
 
 ### Patch Changes
