@@ -2,6 +2,7 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from '@gemeente-denhaag/table';
 import readme from '../../../../components/Table/README.md?raw';
+import { Link } from '@gemeente-denhaag/link';
 
 const exampleArgs = {
   children: (
@@ -36,8 +37,6 @@ const exampleArgs = {
 };
 
 const meta = {
-  id: 'react-data-display-table',
-  title: 'React/Data Display/Table',
   component: Table,
   args: exampleArgs,
   tags: ['autodocs'],
@@ -317,6 +316,47 @@ export const WithLink: Story = {
             </TableHeader>
             <TableCell href="#example">Expert florist</TableCell>
             <TableCell href="#example">Cries at romcoms</TableCell>
+          </TableRow>
+        </TableBody>
+      </>
+    ),
+  },
+};
+
+export const WithActions: Story = {
+  args: {
+    ...Default.args,
+    children: (
+      <>
+        <TableCaption>He-Man and Skeletor facts</TableCaption>
+        <TableHead>
+          <TableRow tabIndex={-1}>
+            <TableCell></TableCell>
+            <TableHeader className="heman">He-Man</TableHeader>
+            <TableHeader className="skeletor">Skeletor</TableHeader>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          <TableRow>
+            <TableHeader scope="row">Role</TableHeader>
+            <TableCell>Hero</TableCell>
+            <TableCell>
+              <Link href="#example">Villain</Link>
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableHeader scope="row">Weapon</TableHeader>
+            <TableCell>Power Sword</TableCell>
+            <TableCell>
+              <Link href="#example">Havoc Staff</Link>
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableHeader scope="row">Dark secret</TableHeader>
+            <TableCell>Expert florist</TableCell>
+            <TableCell>
+              <Link href="#example">Cries at romcoms</Link>
+            </TableCell>
           </TableRow>
         </TableBody>
       </>
