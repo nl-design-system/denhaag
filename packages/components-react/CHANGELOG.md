@@ -1,5 +1,12 @@
 # @gemeente-denhaag/components-react
 
+## 5.0.1
+
+### Patch Changes
+
+- Updated dependencies [0b25018]
+  - @gemeente-denhaag/table@4.0.2
+
 ## 5.0.0
 
 ### Major Changes

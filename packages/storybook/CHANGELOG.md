@@ -1,5 +1,13 @@
 # @gemeente-denhaag/storybook
 
+## 5.1.8
+
+### Patch Changes
+
+- 0b25018: Fix table link styling
+- Updated dependencies [0b25018]
+  - @gemeente-denhaag/table@4.0.2
+
 ## 5.1.7
 
 ### Patch Changes
