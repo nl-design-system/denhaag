@@ -12,7 +12,7 @@ const exampleArgs = {
 
 const meta = {
   id: 'react-input-button',
-  title: 'React/Input/Button',
+  title: 'React/Button',
   component: Button,
   args: exampleArgs,
   tags: ['autodocs'],

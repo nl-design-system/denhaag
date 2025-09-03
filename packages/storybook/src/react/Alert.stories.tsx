@@ -19,7 +19,7 @@ const exampleArgs: AlertProps = {
 
 const meta = {
   id: 'react-data-display-alert',
-  title: 'React/Data Display/Alert',
+  title: 'React/Alert',
   component: Alert,
   args: exampleArgs,
   tags: ['autodocs'],

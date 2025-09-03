@@ -4,7 +4,7 @@ import readme from '../../../../components/FormLabel/README.md?raw';
 
 const meta = {
   id: 'react-input-form-label',
-  title: 'React/Input/Form Label',
+  title: 'React/Form Label',
   component: FormLabel,
   args: { children: 'Username' },
   tags: ['autodocs'],

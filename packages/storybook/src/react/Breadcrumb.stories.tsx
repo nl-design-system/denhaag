@@ -5,7 +5,7 @@ import { Breadcrumb } from '@gemeente-denhaag/breadcrumb';
 
 const meta = {
   id: 'react-navigation-breadcrumb',
-  title: 'React/Navigation/Breadcrumb',
+  title: 'React/Breadcrumb',
   component: Breadcrumb,
   args: {
     navigationPath: [

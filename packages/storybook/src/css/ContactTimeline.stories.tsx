@@ -195,7 +195,7 @@ const exampleArgsWithFile: ContactTimelineProps = {
 };
 
 const meta = {
-  title: 'CSS/Process Steps/Contact Timeline',
+  title: 'CSS/Contact Timeline',
   id: 'css-contact-timeline',
   component: ContactTimeline,
   args: exampleArgs,

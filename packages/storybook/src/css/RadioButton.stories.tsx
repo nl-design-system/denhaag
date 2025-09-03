@@ -3,7 +3,7 @@ import readme from '../../../../components/RadioButton/README.md?raw';
 import { RadioButton } from '@gemeente-denhaag/radio-button';
 
 const meta = {
-  title: 'CSS/Input/Radio Button',
+  title: 'CSS/Radio Button',
   id: 'css-radio-button',
   component: RadioButton,
   tags: ['autodocs'],

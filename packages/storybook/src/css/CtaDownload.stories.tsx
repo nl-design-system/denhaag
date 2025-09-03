@@ -8,7 +8,7 @@ const fileImage = (h: number, w: number) =>
   `https://images.unsplash.com/photo-1569235186275-626cb53b83ce?fit=crop&w=${w}&h=${h}`;
 
 const meta = {
-  title: 'CSS/Actions/CTA Download',
+  title: 'CSS/CTA Download',
   parameters: {
     tags: ['autodocs'],
     docs: {

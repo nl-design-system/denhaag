@@ -15,7 +15,7 @@ const exampleArgs = {
 
 const meta = {
   id: 'react-navigation-menu',
-  title: 'React/Navigation/Menu',
+  title: 'React/Menu',
   component: Menu,
   args: exampleArgs,
   tags: ['autodocs'],

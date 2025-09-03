@@ -5,7 +5,7 @@ import { UnorderedList, UnorderedListItem } from '@gemeente-denhaag/unorderedlis
 
 const meta = {
   id: 'css-data-display-unordered-list',
-  title: 'CSS/Data Display/Unordered List',
+  title: 'CSS/Unordered List',
   component: UnorderedList,
   args: {},
   tags: ['autodocs'],

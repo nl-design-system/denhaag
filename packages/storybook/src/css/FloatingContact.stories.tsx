@@ -9,7 +9,7 @@ import './_storybook.scss';
 import { useEffect, useMemo } from 'storybook/preview-api';
 
 const meta = {
-  title: 'CSS/Page Elements/Floating Contact',
+  title: 'CSS/Floating Contact',
   tags: ['autodocs'],
   parameters: {
     docs: {

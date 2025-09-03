@@ -7,7 +7,7 @@ const exampleArgs = {};
 
 const meta = {
   id: 'css-data-display-divider',
-  title: 'CSS/Data Display/Divider',
+  title: 'CSS/Divider',
   component: Divider,
   args: exampleArgs,
   tags: ['autodocs'],

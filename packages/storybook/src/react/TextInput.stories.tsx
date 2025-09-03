@@ -5,7 +5,7 @@ import readme from '../../../../components/TextInput/README.md?raw';
 import { CallIcon, SearchIcon } from '@gemeente-denhaag/icons';
 
 const meta = {
-  title: 'React/Input/TextInput',
+  title: 'React/TextInput',
   id: 'react-text-input',
   component: TextInput,
   tags: ['autodocs'],

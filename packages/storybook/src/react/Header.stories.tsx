@@ -14,6 +14,8 @@ const overviewHeaderProps: HeaderLogicProps = {
 };
 
 const meta = {
+  id: 'react-page-elements-header',
+  title: 'React/Header',
   component: HeaderLogic,
   args: overviewHeaderProps,
   tags: ['autodocs'],

@@ -12,7 +12,7 @@ const exampleArgs = {
 
 const meta = {
   id: 'css-process-steps-step-marker',
-  title: 'CSS/Process Steps/StepMarker',
+  title: 'CSS/StepMarker',
   component: StepMarker,
   args: exampleArgs,
   tags: ['autodocs'],

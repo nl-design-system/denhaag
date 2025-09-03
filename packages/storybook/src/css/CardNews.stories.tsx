@@ -6,7 +6,7 @@ import readme from '../../../../components/CardNews/README.md?raw';
 import './_storybook.scss';
 
 const meta = {
-  title: 'CSS/Cards/News Card',
+  title: 'CSS/News Card',
   tags: ['autodocs'],
   parameters: {
     docs: {

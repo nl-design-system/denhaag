@@ -5,7 +5,7 @@ import { OrderedList, OrderedListItem } from '@gemeente-denhaag/orderedlist';
 
 const meta = {
   id: 'react-data-display-ordered-list',
-  title: 'React/Data Display/Ordered List',
+  title: 'React/Ordered List',
   component: OrderedList,
   args: {},
   tags: ['autodocs'],

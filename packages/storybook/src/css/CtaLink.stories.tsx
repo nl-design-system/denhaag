@@ -5,7 +5,7 @@ import '@gemeente-denhaag/ctalink';
 import readme from '../../../../components/CtaLink/README.md?raw';
 
 const meta = {
-  title: 'CSS/Actions/CTA Link',
+  title: 'CSS/CTA Link',
   tags: ['autodocs'],
   parameters: {
     docs: {

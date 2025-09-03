@@ -4,7 +4,7 @@ import { Select, SelectOption } from '@gemeente-denhaag/select';
 import readme from '../../../../components/Select/README.md?raw';
 
 const meta = {
-  title: 'React/Input/Select',
+  title: 'React/Select',
   id: 'react-select',
   component: Select,
   tags: ['autodocs'],

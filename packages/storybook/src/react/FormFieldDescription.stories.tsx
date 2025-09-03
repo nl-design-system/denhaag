@@ -5,7 +5,7 @@ import { FormFieldDescription } from '@gemeente-denhaag/form-field-description';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
 
 const meta = {
-  title: 'React/Input/Form field description',
+  title: 'React/Form field description',
   id: 'react-form-field-description',
   component: FormFieldDescription,
   tags: ['autodocs'],

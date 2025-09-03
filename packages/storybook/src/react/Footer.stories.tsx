@@ -11,7 +11,7 @@ const exampleArgs = {
 
 const meta = {
   id: 'react-page-elements-footer',
-  title: 'React/Page Elements/Footer',
+  title: 'React/Footer',
   component: Footer,
   args: exampleArgs,
   tags: ['autodocs'],

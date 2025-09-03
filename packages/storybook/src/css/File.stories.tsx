@@ -13,7 +13,7 @@ const exampleArgs = {
 
 const meta = {
   id: 'css-surfaces-files',
-  title: 'CSS/Surfaces/Files',
+  title: 'CSS/Files',
   component: File,
   args: exampleArgs,
   tags: ['autodocs'],

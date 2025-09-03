@@ -5,7 +5,7 @@ import '@gemeente-denhaag/blockquote';
 import readme from '../../../../components/Blockquote/README.md?raw';
 
 const meta = {
-  title: 'CSS/Data Display/Blockquote',
+  title: 'CSS/Blockquote',
   tags: ['autodocs'],
   parameters: {
     docs: {
