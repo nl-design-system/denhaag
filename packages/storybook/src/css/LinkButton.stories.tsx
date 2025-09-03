@@ -11,7 +11,7 @@ const exampleArgs = {
 
 const meta = {
   id: 'css-navigation-link-button',
-  title: 'CSS/Navigation/LinkButton',
+  title: 'CSS/LinkButton',
   component: LinkButton,
   args: exampleArgs,
   tags: ['autodocs'],

@@ -5,7 +5,7 @@ import '@gemeente-denhaag/anchor-navigation';
 import readme from '../../../../components/AnchorNavigation/README.md?raw';
 
 const meta = {
-  title: 'CSS/Navigation/Anchor Navigation',
+  title: 'CSS/Anchor Navigation',
   tags: ['autodocs'],
   parameters: {
     docs: {

@@ -3,7 +3,7 @@ import reactMeta from '../react/LinkList.stories';
 const meta: typeof reactMeta = {
   ...reactMeta,
   id: 'css-navigation-link-list',
-  title: 'CSS/Navigation/Link List',
+  title: 'CSS/Link List',
   tags: ['autodocs'],
 };
 

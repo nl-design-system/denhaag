@@ -5,7 +5,7 @@ import { UnorderedList, UnorderedListItem } from '@gemeente-denhaag/unorderedlis
 
 const meta = {
   id: 'react-data-display-unordered-list',
-  title: 'React/Data Display/Unordered List',
+  title: 'React/Unordered List',
   component: UnorderedList,
   args: {},
   tags: ['autodocs'],

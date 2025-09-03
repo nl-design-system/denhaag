@@ -15,7 +15,7 @@ import { SearchIcon } from '@gemeente-denhaag/icons';
 
 const meta = {
   id: 'react-input-form-field',
-  title: 'React/Input/Form Field',
+  title: 'React/Form Field',
   component: FormField,
   args: {},
   tags: ['autodocs'],

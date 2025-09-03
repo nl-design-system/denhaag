@@ -14,7 +14,7 @@ const exampleArgs = {
 
 const meta = {
   id: 'react-input-icon-button',
-  title: 'React/Input/Icon button',
+  title: 'React/Icon button',
   component: IconButton,
   args: exampleArgs,
   tags: ['autodocs'],

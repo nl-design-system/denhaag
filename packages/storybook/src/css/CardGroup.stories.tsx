@@ -8,7 +8,7 @@ import { AuthenticationCardGroup } from './CardGroupUtils';
 const exampleArgs = { cards: ['DigiD', 'eHerkenning', ''] };
 
 const meta = {
-  title: 'CSS/Cards/Card Group',
+  title: 'CSS/Card Group',
   id: 'css-card-group',
   component: AuthenticationCardGroup,
   args: exampleArgs,

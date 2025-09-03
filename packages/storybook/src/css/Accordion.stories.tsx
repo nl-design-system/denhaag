@@ -38,7 +38,7 @@ const exampleArgs = {
 
 const meta = {
   id: 'css-surfaces-accordion',
-  title: 'CSS/Surfaces/Accordion',
+  title: 'CSS/Accordion',
   component: Accordion,
   args: exampleArgs,
   tags: ['autodocs'],

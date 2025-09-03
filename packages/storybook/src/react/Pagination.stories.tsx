@@ -9,7 +9,7 @@ const exampleArgs = {
 
 const meta = {
   id: 'react-navigation-pagination',
-  title: 'React/Navigation/Pagination',
+  title: 'React/Pagination',
   component: Pagination,
   args: exampleArgs,
   tags: ['autodocs'],

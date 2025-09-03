@@ -7,7 +7,7 @@ import '@gemeente-denhaag/icons';
 import readme from '../../../../components/ButtonGroup/README.md?raw';
 
 const meta = {
-  title: 'CSS/Input/Button Group',
+  title: 'CSS/Button Group',
   tags: ['autodocs'],
   parameters: {
     docs: {

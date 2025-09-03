@@ -7,7 +7,7 @@ import '../../../../components/PageButtons/src/stories.js';
 import readme from '../../../../components/PageButtons/README.md?raw';
 
 const meta = {
-  title: 'CSS/Input/PageButtons',
+  title: 'CSS/PageButtons',
   parameters: {
     docs: {
       description: {

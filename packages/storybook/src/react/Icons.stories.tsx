@@ -10,7 +10,7 @@ const exampleArgs = {};
 
 const meta = {
   id: 'react-data-display-icons',
-  title: 'React/Data Display/Icons',
+  title: 'React/Icons',
   component: SvgIcon,
   args: exampleArgs,
   tags: ['autodocs'],

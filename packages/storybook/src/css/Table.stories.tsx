@@ -2,6 +2,8 @@ import reactMeta from '../react/Table.stories';
 
 const meta: typeof reactMeta = {
   ...reactMeta,
+  id: 'css-data-display-table',
+  title: 'CSS/Table',
   tags: ['autodocs'],
 };
 

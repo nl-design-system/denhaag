@@ -3,7 +3,7 @@ import reactMeta from '../react/Footer.stories';
 const meta: typeof reactMeta = {
   ...reactMeta,
   id: 'css-page-elements-footer',
-  title: 'CSS/Page Elements/Footer',
+  title: 'CSS/Footer',
   tags: ['autodocs'],
 };
 

@@ -20,7 +20,7 @@ const exampleArgs = {
 
 const meta = {
   id: 'css-page-elements-rich-text',
-  title: 'CSS/Page Elements/Rich Text',
+  title: 'CSS/Rich Text',
   component: RichText,
   args: exampleArgs,
   tags: ['autodocs'],

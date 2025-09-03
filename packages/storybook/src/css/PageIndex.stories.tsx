@@ -3,7 +3,7 @@ import reactMeta from '../react/PageIndex.stories';
 const meta: typeof reactMeta = {
   ...reactMeta,
   id: 'css-navigation-page-index',
-  title: 'CSS/Navigation/Page Index',
+  title: 'CSS/Page Index',
   tags: ['autodocs'],
 };
 

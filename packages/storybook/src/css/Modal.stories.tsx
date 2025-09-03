@@ -18,7 +18,7 @@ const exampleArgs = {
 
 const meta = {
   id: 'css-feedback-modal',
-  title: 'CSS/Feedback/Modal',
+  title: 'CSS/Modal',
   component: Modal,
   args: exampleArgs,
   tags: ['autodocs'],

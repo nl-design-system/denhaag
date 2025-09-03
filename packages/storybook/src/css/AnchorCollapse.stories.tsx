@@ -7,7 +7,7 @@ import '../../../../components/AnchorCollapse/src/anchorCollapses';
 import '../../../../components/AnchorCollapse/src/stories.js';
 
 const meta = {
-  title: 'CSS/Navigation/Anchor Collapse',
+  title: 'CSS/Anchor Collapse',
   tags: ['autodocs'],
   parameters: {
     docs: {

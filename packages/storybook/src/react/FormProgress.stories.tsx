@@ -11,7 +11,7 @@ const exampleArgs = {
 
 const meta = {
   id: 'react-input-form-progress',
-  title: 'React/Input/Form Progress',
+  title: 'React/Form Progress',
   component: FormProgress,
   args: exampleArgs,
   tags: ['autodocs'],

@@ -4,7 +4,7 @@ import readme from '../../../../components/Checkbox/README.md?raw';
 
 const meta = {
   id: 'react-input-checkbox',
-  title: 'React/Input/Checkbox',
+  title: 'React/Checkbox',
   component: Checkbox,
   args: {},
   tags: ['autodocs'],

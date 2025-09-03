@@ -11,7 +11,7 @@ const exampleArgs = {
 
 const meta = {
   id: 'css-input-button',
-  title: 'CSS/Input/Button',
+  title: 'CSS/Button',
   component: Button,
   args: exampleArgs,
   tags: ['autodocs'],

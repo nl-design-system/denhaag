@@ -13,7 +13,7 @@ const exampleArgs: SheetProps = {
 
 const meta = {
   id: 'react-page-elements-sheet',
-  title: 'React/Page Elements/Sheet',
+  title: 'React/Sheet',
   component: Sheet,
   args: exampleArgs,
   tags: ['autodocs'],

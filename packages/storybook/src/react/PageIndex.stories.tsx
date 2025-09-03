@@ -22,7 +22,7 @@ const exampleArgs = {
 
 const meta = {
   id: 'react-navigation-page-index',
-  title: 'React/Navigation/Page Index',
+  title: 'React/Page Index',
   component: PageIndex,
   args: exampleArgs,
   tags: ['autodocs'],

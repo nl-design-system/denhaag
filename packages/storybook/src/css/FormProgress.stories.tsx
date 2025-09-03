@@ -11,7 +11,7 @@ const exampleArgs = {
 
 const meta = {
   id: 'css-input-form-progress',
-  title: 'CSS/Input/Form Progress',
+  title: 'CSS/Form Progress',
   component: FormProgress,
   args: exampleArgs,
   tags: ['autodocs'],
