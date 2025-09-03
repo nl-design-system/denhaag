@@ -1,5 +1,11 @@
 # @gemeente-denhaag/table
 
+## 4.0.2
+
+### Patch Changes
+
+- 0b25018: Fix table link styling
+
 ## 4.0.1
 
 ### Patch Changes
