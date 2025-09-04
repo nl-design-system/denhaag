@@ -5,6 +5,8 @@ import readme from '../../../../components/Paragraph/README.md?raw';
 type Story = StoryObj<typeof meta>;
 
 const meta: Meta<typeof Paragraph> = {
+  title: 'React/Paragraph',
+  id: 'react-paragraph',
   component: Paragraph,
   tags: ['autodocs'],
   argTypes: {

@@ -45,6 +45,8 @@ const exampleArgs = {
 };
 
 const meta = {
+  title: 'React/SideNavigation',
+  id: 'react-sidenavigation',
   component: SideNavigation,
   args: exampleArgs,
   tags: ['autodocs'],

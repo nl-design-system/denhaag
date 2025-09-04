@@ -2,6 +2,8 @@ import reactMeta from '../react/Heading.stories';
 
 const meta: typeof reactMeta = {
   ...reactMeta,
+  title: 'CSS/Heading',
+  id: 'css-heading',
   tags: ['autodocs'],
 };
 
