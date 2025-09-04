@@ -5,6 +5,8 @@ import readme from '../../../../components/NumberBadge/README.md?raw';
 type Story = StoryObj<typeof meta>;
 
 const meta: Meta<typeof NumberBadge> = {
+  title: 'React/NumberBadge',
+  id: 'react-numberbadge',
   component: NumberBadge,
   tags: ['autodocs'],
   argTypes: {
