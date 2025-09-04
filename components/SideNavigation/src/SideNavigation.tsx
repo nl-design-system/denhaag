@@ -28,7 +28,7 @@ export const SideNavigation = ({ items }: SideNavigationProps) => {
                 {subItem.counter && subItem.counter > 0 ? (
                   <SideNavigationLinkLabel>
                     {subItem.label}
-                    <NumberBadge>2</NumberBadge>
+                    <NumberBadge>{subItem.counter}</NumberBadge>
                   </SideNavigationLinkLabel>
                 ) : (
                   subItem.label
