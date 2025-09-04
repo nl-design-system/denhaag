@@ -25,7 +25,8 @@
 }
 
 .denhaag-procedure-container {
-  [class*="utrecht-heading-"] + & {
+  [class*="utrecht-heading-"] + &,
+  .utrecht-paragraph + & {
     --denhaag-procedure-margin-block-start: var(--denhaag-space-md);
   }
 }
