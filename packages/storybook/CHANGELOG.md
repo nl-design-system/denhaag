@@ -1,5 +1,12 @@
 # @gemeente-denhaag/storybook
 
+## 5.1.9
+
+### Patch Changes
+
+- Updated dependencies [3c7861e]
+  - @gemeente-denhaag/side-navigation@4.0.2
+
 ## 5.1.8
 
 ### Patch Changes

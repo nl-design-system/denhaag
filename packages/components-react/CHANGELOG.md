@@ -1,5 +1,12 @@
 # @gemeente-denhaag/components-react
 
+## 5.0.2
+
+### Patch Changes
+
+- Updated dependencies [3c7861e]
+  - @gemeente-denhaag/side-navigation@4.0.2
+
 ## 5.0.1
 
 ### Patch Changes

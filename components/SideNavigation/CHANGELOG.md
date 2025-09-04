@@ -1,5 +1,11 @@
 # @gemeente-denhaag/side-navigation
 
+## 4.0.2
+
+### Patch Changes
+
+- 3c7861e: Fix hardcoded number in badge in side navigation
+
 ## 4.0.1
 
 ### Patch Changes
