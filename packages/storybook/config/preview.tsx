@@ -50,7 +50,13 @@ const preview: Preview = {
     options: {
       storySort: {
         method: 'alphabetical',
-        order: ['Den Haag', 'Templates', 'React', 'CSS'],
+        order: [
+          'Den Haag',
+          'Templates',
+          ['Login', 'Overview', 'Zaak Overzicht', 'Zaak Detail', 'Berichten Overzicht', 'Berichten Detail'],
+          'React',
+          'CSS',
+        ],
       },
     },
 
