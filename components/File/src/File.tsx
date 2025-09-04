@@ -5,7 +5,6 @@ import { URLData } from '@utrecht/component-library-react/dist';
 
 interface FileProps {
   className?: string;
-  download?: string;
   name: string | ReactNode;
   href: string;
   size?: string;
@@ -13,7 +12,7 @@ interface FileProps {
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-export const File = ({ download, name, href, size, lastUpdated, className, onClick }: FileProps) => {
+export const File = ({ name, href, size, lastUpdated, className, onClick }: FileProps) => {
   const extension = href?.lastIndexOf('.') >= 0 ? href.substring(href.lastIndexOf('.') + 1, href.length) : undefined;
   const lastUpdatedDate = lastUpdated ? new Date(lastUpdated).toLocaleDateString() : null;
   const FileTypeIcon = ({ ...props }) => {
@@ -37,7 +36,7 @@ export const File = ({ download, name, href, size, lastUpdated, className, onCli
         {children}
       </button>
     ) : (
-      <a href={href} download={download || name} {...defaultProps}>
+      <a href={href} download={name} {...defaultProps}>
         {children}
       </a>
     );
@@ -49,7 +48,7 @@ export const File = ({ download, name, href, size, lastUpdated, className, onCli
       </div>
       <div className="denhaag-file__right">
         <div className="denhaag-file__label">
-          <span id="name">{download ? name : <URLData>{name}</URLData>}</span>
+          <span id="name">{<URLData>{name}</URLData>}</span>
           {(extension || size || lastUpdated) && (
             <span id="description">({[extension, size, lastUpdatedDate].filter(Boolean).join(', ')})</span>
           )}
