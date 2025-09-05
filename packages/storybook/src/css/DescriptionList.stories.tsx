@@ -14,8 +14,6 @@ const exampleArgs = {
 };
 
 const meta = {
-  id: 'css-data-display-description-list',
-  title: 'CSS/Data Display/Description List',
   component: DescriptionList,
   args: exampleArgs,
   tags: ['autodocs'],

@@ -3,8 +3,6 @@ import { FormLabel } from '@gemeente-denhaag/form-label';
 import readme from '../../../../components/FormLabel/README.md?raw';
 
 const meta = {
-  id: 'css-input-form-label',
-  title: 'CSS/Input/Form Label',
   component: FormLabel,
   args: { children: 'Username' },
   tags: ['autodocs'],

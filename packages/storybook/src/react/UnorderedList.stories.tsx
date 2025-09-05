@@ -4,8 +4,6 @@ import readme from '../../../../components/FormField/README.md?raw';
 import { UnorderedList, UnorderedListItem } from '@gemeente-denhaag/unorderedlist';
 
 const meta = {
-  id: 'react-data-display-unordered-list',
-  title: 'React/Data Display/Unordered List',
   component: UnorderedList,
   args: {},
   tags: ['autodocs'],

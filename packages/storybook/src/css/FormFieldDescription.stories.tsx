@@ -5,8 +5,6 @@ import { FormFieldDescription } from '@gemeente-denhaag/form-field-description';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
 
 const meta = {
-  title: 'CSS/Input/Form field description',
-  id: 'css-form-field-description',
   component: FormFieldDescription,
   tags: ['autodocs'],
   args: {},

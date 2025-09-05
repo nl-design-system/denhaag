@@ -6,7 +6,6 @@ import '../../../../components/CtaEvent/src/index';
 import readme from '../../../../components/CtaEvent/README.md?raw';
 
 const meta = {
-  title: 'CSS/Actions/CTA Event',
   tags: ['autodocs'],
   parameters: {
     docs: {

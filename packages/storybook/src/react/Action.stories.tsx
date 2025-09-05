@@ -25,8 +25,6 @@ const exampleArgs = {
 };
 
 const meta = {
-  id: 'react-actions-action',
-  title: 'React/Actions/Action',
   component: ActionSingle,
   args: exampleArgs,
   tags: ['autodocs'],

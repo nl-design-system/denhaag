@@ -12,7 +12,6 @@ const heroImage = (h: number, w: number, id = 'photo-1513384312027-9fa69a360337'
   `https://images.unsplash.com/${id}?fit=crop&w=${w}&h=${h}`;
 
 const meta = {
-  title: 'CSS/Page Elements/Hero',
   tags: ['autodocs'],
   parameters: {
     docs: {

@@ -3,8 +3,6 @@ import readme from '../../../../components/RadioButton/README.md?raw';
 import { RadioButton } from '@gemeente-denhaag/radio-button';
 
 const meta = {
-  title: 'React/Input/Radio Button',
-  id: 'react-radio-button',
   component: RadioButton,
   tags: ['autodocs'],
   args: {},

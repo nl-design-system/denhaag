@@ -3,8 +3,6 @@ import { Checkbox } from '@gemeente-denhaag/checkbox';
 import readme from '../../../../components/Checkbox/README.md?raw';
 
 const meta = {
-  id: 'css-input-checkbox',
-  title: 'CSS/Input/Checkbox',
   component: Checkbox,
   args: {},
   tags: ['autodocs'],
