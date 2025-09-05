@@ -5,7 +5,6 @@ import '@gemeente-denhaag/cta-image-content';
 import readme from '../../../../components/CtaImageContent/README.md?raw';
 
 const meta = {
-  title: 'CSS/Cta Image Content',
   tags: ['autodocs'],
   parameters: {
     docs: {

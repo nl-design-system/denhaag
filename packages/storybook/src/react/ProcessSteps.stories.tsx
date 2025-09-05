@@ -37,8 +37,6 @@ const exampleArgs = {
 };
 
 const meta = {
-  id: 'react-process-steps-status',
-  title: 'React/Status',
   component: Status,
   args: exampleArgs,
   tags: ['autodocs'],

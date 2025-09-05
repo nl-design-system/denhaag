@@ -2,8 +2,6 @@ import reactMeta from '../react/DataBadge.stories';
 
 const meta: typeof reactMeta = {
   ...reactMeta,
-  title: 'CSS/DataBadge',
-  id: 'css-databadge',
   tags: ['autodocs'],
 };
 

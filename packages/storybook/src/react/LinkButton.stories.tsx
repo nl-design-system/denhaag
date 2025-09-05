@@ -10,8 +10,6 @@ const exampleArgs = {
 };
 
 const meta = {
-  id: 'react-navigation-link-button',
-  title: 'React/LinkButton',
   component: LinkButton,
   args: exampleArgs,
   tags: ['autodocs'],

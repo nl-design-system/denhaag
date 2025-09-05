@@ -4,8 +4,6 @@ import readme from '../../../../components/FormField/README.md?raw';
 import { OrderedList, OrderedListItem } from '@gemeente-denhaag/orderedlist';
 
 const meta = {
-  id: 'react-data-display-ordered-list',
-  title: 'React/Ordered List',
   component: OrderedList,
   args: {},
   tags: ['autodocs'],

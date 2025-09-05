@@ -8,8 +8,6 @@ import React from 'react';
 type Story = StoryObj<typeof meta>;
 
 const meta: Meta<typeof CaseCard> = {
-  title: 'React/CaseCard',
-  id: 'react-casecard',
   component: CaseCard,
   tags: ['autodocs'],
   argTypes: {

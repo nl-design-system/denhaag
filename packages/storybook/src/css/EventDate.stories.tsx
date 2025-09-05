@@ -5,7 +5,6 @@ import '@gemeente-denhaag/eventdate';
 import readme from '../../../../components/EventDate/README.md?raw';
 
 const meta = {
-  title: 'CSS/Event date',
   tags: ['autodocs'],
   parameters: {
     docs: {

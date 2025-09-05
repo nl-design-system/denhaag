@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 import '@gemeente-denhaag/responsive-content';
 
 const meta = {
-  title: 'CSS/Responsive Content wrapper',
+  tags: ['autodocs'],
 } as Meta;
 
 export default meta;

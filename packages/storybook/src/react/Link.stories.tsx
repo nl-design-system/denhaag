@@ -9,8 +9,6 @@ import readme from '../../../../components/Link/README.md?raw';
 type Story = StoryObj<typeof meta>;
 
 const meta: Meta<typeof Link> = {
-  title: 'React/Link',
-  id: 'react-link',
   component: Link,
   tags: ['autodocs'],
   argTypes: {

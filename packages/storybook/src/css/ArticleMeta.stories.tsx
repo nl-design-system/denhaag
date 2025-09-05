@@ -5,7 +5,6 @@ import '@gemeente-denhaag/article-meta';
 import readme from '../../../../components/ArticleMeta/README.md?raw';
 
 const meta = {
-  title: 'CSS/Article meta',
   tags: ['autodocs'],
   parameters: {
     docs: {

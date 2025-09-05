@@ -9,8 +9,6 @@ const allIcons = Object.entries(Icons).filter(([key]) => (key === 'default' ? fa
 const exampleArgs = {};
 
 const meta = {
-  id: 'react-data-display-icons',
-  title: 'React/Icons',
   component: SvgIcon,
   args: exampleArgs,
   tags: ['autodocs'],

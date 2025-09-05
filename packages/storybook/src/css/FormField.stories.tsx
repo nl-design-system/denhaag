@@ -14,8 +14,6 @@ import { Select, SelectOption } from '@gemeente-denhaag/select';
 import { SearchIcon } from '@gemeente-denhaag/icons';
 
 const meta = {
-  id: 'css-input-form-field',
-  title: 'CSS/Form Field',
   component: FormField,
   args: {},
   tags: ['autodocs'],

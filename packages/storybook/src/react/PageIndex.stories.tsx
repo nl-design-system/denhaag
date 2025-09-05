@@ -21,8 +21,6 @@ const exampleArgs = {
 } as PageIndexProps;
 
 const meta = {
-  id: 'react-navigation-page-index',
-  title: 'React/Page Index',
   component: PageIndex,
   args: exampleArgs,
   tags: ['autodocs'],

@@ -5,7 +5,6 @@ import '@gemeente-denhaag/dynamic-content';
 import readme from '../../../../components/DynamicContent/README.md?raw';
 
 const meta = {
-  title: 'CSS/Dynamic content',
   tags: ['autodocs'],
   parameters: {
     docs: {

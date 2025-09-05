@@ -22,8 +22,6 @@ const exampleArgs = {
 } as LinkListProps;
 
 const meta = {
-  id: 'react-navigation-link-list',
-  title: 'React/Link List',
   component: LinkList,
   args: exampleArgs,
   tags: ['autodocs'],
