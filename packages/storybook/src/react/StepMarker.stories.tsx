@@ -11,8 +11,6 @@ const exampleArgs = {
 };
 
 const meta = {
-  id: 'react-process-steps-step-marker',
-  title: 'React/StepMarker',
   component: StepMarker,
   args: exampleArgs,
   tags: ['autodocs'],

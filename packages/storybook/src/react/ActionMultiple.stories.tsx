@@ -24,8 +24,6 @@ const exampleArgs = {
 };
 
 const meta = {
-  id: 'react-actions-action-multiple',
-  title: 'React/Action Multiple',
   component: ActionMulti,
   args: exampleArgs,
   tags: ['autodocs'],

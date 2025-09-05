@@ -8,8 +8,6 @@ const exampleArgs = {
 };
 
 const meta = {
-  id: 'css-navigation-pagination',
-  title: 'CSS/Pagination',
   component: Pagination,
   args: exampleArgs,
   tags: ['autodocs'],

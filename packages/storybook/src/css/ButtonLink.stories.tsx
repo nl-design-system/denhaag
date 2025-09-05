@@ -8,8 +8,6 @@ const exampleArgs = {
 };
 
 const meta = {
-  title: 'CSS/Button Link',
-  id: 'css-input-button-link',
   component: ButtonLink,
   tags: ['autodocs'],
   args: exampleArgs,

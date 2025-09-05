@@ -14,8 +14,6 @@ const exampleArgs = {
 };
 
 const meta = {
-  id: 'react-data-display-description-list',
-  title: 'React/Description List',
   component: DescriptionList,
   args: exampleArgs,
   tags: ['autodocs'],

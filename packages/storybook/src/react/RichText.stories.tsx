@@ -19,8 +19,6 @@ const exampleArgs = {
 };
 
 const meta = {
-  id: 'react-page-elements-rich-text',
-  title: 'React/Rich Text',
   component: RichText,
   args: exampleArgs,
   tags: ['autodocs'],

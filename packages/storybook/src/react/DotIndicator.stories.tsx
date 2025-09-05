@@ -9,8 +9,6 @@ const exampleArgs = {
 };
 
 const meta = {
-  id: 'react-data-display-dot-indicator',
-  title: 'React/Dot indicator',
   component: DotIndicator,
   args: exampleArgs,
   tags: ['autodocs'],

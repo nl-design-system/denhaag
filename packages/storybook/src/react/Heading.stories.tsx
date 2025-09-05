@@ -6,8 +6,6 @@ type Story = StoryObj<typeof meta>;
 
 const meta: Meta<typeof Heading> = {
   component: Heading,
-  title: 'React/Heading',
-  id: 'react-heading',
   tags: ['autodocs'],
   argTypes: {
     level: {

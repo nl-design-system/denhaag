@@ -2,8 +2,6 @@ import reactMeta from '../react/Link.stories';
 
 const meta: typeof reactMeta = {
   ...reactMeta,
-  title: 'CSS/Link',
-  id: 'css-link',
   tags: ['autodocs'],
 };
 

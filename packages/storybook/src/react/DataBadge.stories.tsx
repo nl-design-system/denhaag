@@ -5,8 +5,6 @@ import readme from '../../../../components/DataBadge/README.md?raw';
 type Story = StoryObj<typeof meta>;
 
 const meta = {
-  title: 'React/DataBadge',
-  id: 'react-databadge',
   component: DataBadge,
   tags: ['autodocs'],
   argTypes: {

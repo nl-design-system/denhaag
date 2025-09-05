@@ -4,8 +4,6 @@ import readme from '../../../../components/Breadcrumb/README.md?raw';
 import { Breadcrumb } from '@gemeente-denhaag/breadcrumb';
 
 const meta = {
-  id: 'react-navigation-breadcrumb',
-  title: 'React/Breadcrumb',
   component: Breadcrumb,
   args: {
     navigationPath: [

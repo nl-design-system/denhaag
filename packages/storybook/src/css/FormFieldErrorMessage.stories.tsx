@@ -9,8 +9,6 @@ const exampleArgs = {
 };
 
 const meta = {
-  title: 'CSS/Form field error message',
-  id: 'css-form-field-error-message',
   component: FormFieldErrorMessage,
   tags: ['autodocs'],
   args: exampleArgs,

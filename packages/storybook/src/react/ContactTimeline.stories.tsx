@@ -195,8 +195,6 @@ const exampleArgsWithFile: ContactTimelineProps = {
 };
 
 const meta = {
-  title: 'React/Contact Timeline',
-  id: 'react-contact-timeline',
   component: ContactTimeline,
   args: exampleArgs,
   tags: ['autodocs'],

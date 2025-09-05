@@ -16,8 +16,6 @@ const exampleArgs = {
 };
 
 const meta = {
-  id: 'css-data-display-list',
-  title: 'CSS/List',
   component: List,
   args: exampleArgs,
   tags: ['autodocs'],
