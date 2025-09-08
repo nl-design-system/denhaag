@@ -1,5 +1,11 @@
 # @gemeente-denhaag/storybook
 
+## 5.1.11
+
+### Patch Changes
+
+- 17577fc: Cleanup folder structure in Storybook
+
 ## 5.1.10
 
 ### Patch Changes
