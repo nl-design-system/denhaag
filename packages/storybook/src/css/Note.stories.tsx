@@ -7,7 +7,6 @@ import '@gemeente-denhaag/note';
 import readme from '../../../../components/Note/README.md?raw';
 
 const meta = {
-  title: 'CSS/Surfaces/Note',
   tags: ['autodocs'],
   parameters: {
     docs: {

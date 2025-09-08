@@ -1,5 +1,26 @@
 # @gemeente-denhaag/storybook
 
+## 5.1.11
+
+### Patch Changes
+
+- 17577fc: Cleanup folder structure in Storybook
+
+## 5.1.10
+
+### Patch Changes
+
+- Updated dependencies [3aa490f]
+  - @gemeente-denhaag/file@2.1.0
+  - @gemeente-denhaag/contact-timeline@4.0.4
+
+## 5.1.9
+
+### Patch Changes
+
+- Updated dependencies [3c7861e]
+  - @gemeente-denhaag/side-navigation@4.0.2
+
 ## 5.1.8
 
 ### Patch Changes

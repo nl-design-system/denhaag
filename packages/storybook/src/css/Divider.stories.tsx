@@ -6,8 +6,6 @@ import readme from '../../../../components/Divider/README.md?raw';
 const exampleArgs = {};
 
 const meta = {
-  id: 'css-data-display-divider',
-  title: 'CSS/Data Display/Divider',
   component: Divider,
   args: exampleArgs,
   tags: ['autodocs'],

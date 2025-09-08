@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import clsx from 'clsx';
 import { FileIcon, ImageIcon, DownloadIcon } from '@gemeente-denhaag/icons';
+import { URLData } from '@utrecht/component-library-react/dist';
 
 interface FileProps {
   className?: string;
-  name: string;
+  name: string | ReactNode;
   href: string;
   size?: string;
   lastUpdated?: string;
@@ -47,7 +48,7 @@ export const File = ({ name, href, size, lastUpdated, className, onClick }: File
       </div>
       <div className="denhaag-file__right">
         <div className="denhaag-file__label">
-          <span id="name">{name} </span>
+          <span id="name">{<URLData>{name}</URLData>}</span>
           {(extension || size || lastUpdated) && (
             <span id="description">({[extension, size, lastUpdatedDate].filter(Boolean).join(', ')})</span>
           )}

@@ -18,8 +18,6 @@ const exampleArgs: AlertProps = {
 };
 
 const meta = {
-  id: 'css-data-display-alert',
-  title: 'CSS/Data Display/Alert',
   component: Alert,
   args: exampleArgs,
   tags: ['autodocs'],

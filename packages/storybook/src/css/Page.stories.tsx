@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 import '@gemeente-denhaag/page';
 
 const meta = {
-  title: 'CSS/Page Elements/Page',
+  tags: ['autodocs'],
 } as Meta;
 
 export default meta;

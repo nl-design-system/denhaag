@@ -5,7 +5,6 @@ import '@gemeente-denhaag/image';
 import readme from '../../../../components/Image/README.md?raw';
 
 const meta = {
-  title: 'CSS/Data Display/Image',
   tags: ['autodocs'],
   parameters: {
     docs: {

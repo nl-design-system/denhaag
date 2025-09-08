@@ -157,8 +157,6 @@ const AuthenticationCard = ({
 };
 
 const meta = {
-  title: 'CSS/Cards/Authentication Card',
-  id: 'css-authentication-card',
   component: AuthenticationCard,
   args: exampleArgs,
   tags: ['autodocs'],

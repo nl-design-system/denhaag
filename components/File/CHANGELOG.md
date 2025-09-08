@@ -1,5 +1,11 @@
 # @gemeente-denhaag/file
 
+## 2.1.0
+
+### Minor Changes
+
+- 3aa490f: add url data component to file component
+
 ## 2.0.0
 
 ### Major Changes

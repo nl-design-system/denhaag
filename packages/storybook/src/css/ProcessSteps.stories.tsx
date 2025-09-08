@@ -30,8 +30,6 @@ const exampleArgs = {
 };
 
 const meta = {
-  id: 'css-process-steps-status',
-  title: 'CSS/Process Steps/Status',
   component: Status,
   args: exampleArgs,
   tags: ['autodocs'],

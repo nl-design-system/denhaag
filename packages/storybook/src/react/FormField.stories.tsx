@@ -14,8 +14,6 @@ import { Select, SelectOption } from '@gemeente-denhaag/select';
 import { SearchIcon } from '@gemeente-denhaag/icons';
 
 const meta = {
-  id: 'react-input-form-field',
-  title: 'React/Input/Form Field',
   component: FormField,
   args: {},
   tags: ['autodocs'],
