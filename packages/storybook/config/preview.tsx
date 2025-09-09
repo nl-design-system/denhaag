@@ -52,10 +52,12 @@ const preview: Preview = {
         method: 'alphabetical',
         order: [
           'Den Haag',
+          'Proprietary Tokens',
           'Templates',
           ['Login', 'Overview', 'Zaak Overzicht', 'Zaak Detail', 'Berichten Overzicht', 'Berichten Detail'],
           'React',
           'CSS',
+          'Open Formulieren',
         ],
       },
     },
