@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
-import tokens from '../../../../proprietary/Proprietary/dist/index.json';
+import tokens from '../../../../proprietary/tokens/dist/index.json';
 import { ColorPalette, ColorItem, Title } from '@storybook/addon-docs/blocks';
 import React from 'react';
 
