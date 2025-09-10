@@ -10,10 +10,6 @@
   "references": [
     {
       "path": "../Icons"
-    },
-
-    {
-      "path": "../../proprietary/Components"
     }
   ]
 }
