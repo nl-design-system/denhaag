@@ -52,7 +52,7 @@ const preview: Preview = {
         method: 'alphabetical',
         order: [
           'Den Haag',
-          'Proprietary Tokens',
+          'Brand Tokens',
           'Templates',
           ['Login', 'Overview', 'Zaak Overzicht', 'Zaak Detail', 'Berichten Overzicht', 'Berichten Detail'],
           'React',
