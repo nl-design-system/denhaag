@@ -37,6 +37,7 @@ const exampleArgs = {
 };
 
 const meta = {
+  title: 'React/Accordion',
   component: Accordion,
   args: exampleArgs,
   tags: ['autodocs'],
