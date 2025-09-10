@@ -2000,23 +2000,6 @@ importers:
         specifier: 12.1.4
         version: 12.1.4(rollup@4.45.1)(tslib@2.8.1)(typescript@5.8.3)
 
-  proprietary/Common:
-    devDependencies:
-      '@gemeente-denhaag/design-tokens-proprietary':
-        specifier: workspace:*
-        version: link:../Proprietary
-
-  proprietary/Components:
-    devDependencies:
-      '@gemeente-denhaag/design-tokens-common':
-        specifier: workspace:*
-        version: link:../Common
-      '@gemeente-denhaag/design-tokens-proprietary':
-        specifier: workspace:*
-        version: link:../Proprietary
-
-  proprietary/Proprietary: {}
-
   proprietary/tokens: {}
 
 packages:

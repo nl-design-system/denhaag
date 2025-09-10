@@ -65,15 +65,6 @@
     },
     {
       "path": "../components-react"
-    },
-    {
-      "path": "../../proprietary/Common"
-    },
-    {
-      "path": "../../proprietary/Components"
-    },
-    {
-      "path": "../../proprietary/Proprietary"
     }
   ]
 }
