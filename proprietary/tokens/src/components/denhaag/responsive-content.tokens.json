@@ -1,0 +1,21 @@
+{
+  "denhaag": {
+    "responsive-content": {
+      "2xs": {
+        "padding": { "value": "0.75rem" }
+      },
+      "xs": {
+        "padding": { "value": "1.5rem" }
+      },
+      "sm": {
+        "max-width": { "value": "40.5rem" }
+      },
+      "md": {
+        "max-width": { "value": "56.5rem" }
+      },
+      "lg": {
+        "max-width": { "value": "67.5rem" }
+      }
+    }
+  }
+}

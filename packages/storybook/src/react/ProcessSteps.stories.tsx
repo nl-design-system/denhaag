@@ -1,5 +1,5 @@
 import React from 'react';
-import tokens from '@gemeente-denhaag/design-tokens-components/dist/list.json';
+import tokens from '@gemeente-denhaag/design-tokens/dist/list.json';
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { Status } from '@gemeente-denhaag/process-steps';
 

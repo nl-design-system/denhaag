@@ -1,0 +1,17 @@
+{
+  "utrecht": {
+    "link-social": {
+      "background-color": { "value": "transparent" },
+      "border-width": { "value": "5px" },
+      "border-color": { "value": "transparent" },
+      "size": {},
+      "margin-inline-start": {},
+      "color": { "value": "{denhaag.color.white}" },
+      "hover": {
+        "scale": {},
+        "background-color": {},
+        "color": { "value": "{denhaag.color.ocher.2}" }
+      }
+    }
+  }
+}

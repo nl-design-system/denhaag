@@ -1,0 +1,60 @@
+{
+  "utrecht": {
+    "table": {
+      "border-color": { "value": "{denhaag.color.grey.2}" },
+      "border-width": { "value": "1px" },
+      "font-family": {},
+      "font-size": {},
+      "line-height": {},
+      "margin-block-end": {},
+      "margin-block-start": {},
+      "caption": {
+        "font-weight": { "value": "700" },
+        "font-family": { "value": "{denhaag.typography.sans-serif.font-family}" },
+        "font-size": { "value": "{denhaag.typography.scale.xl.font-size}" },
+        "color": { "value": "{denhaag.color.black}" },
+        "line-height": { "value": "{denhaag.typography.scale.s.line-height}" },
+        "text-align": { "value": "start" },
+        "margin-block-end": { "value": "{denhaag.space.block.xl}" }
+      },
+      "header": {
+        "font-weight": {},
+        "background-color": {},
+        "color": {},
+        "text-transform": {},
+        "border-block-end-color": { "value": "{denhaag.color.grey.1}" },
+        "border-block-end-width": { "value": "1px" }
+      },
+      "header-cell": {
+        "font-size": { "value": "18px" },
+        "font-weight": { "value": "700" },
+        "color": { "value": "{denhaag.color.green.3}" },
+        "text-transform": {}
+      },
+      "cell": {
+        "line-height": { "value": "{denhaag.typography.scale.base.line-height}" },
+        "padding-block-end": { "value": "{denhaag.space.block.md}" },
+        "padding-block-start": { "value": "{denhaag.space.block.md}" },
+        "padding-inline-end": { "value": "{denhaag.space.inline.md}" },
+        "padding-inline-start": { "value": "{denhaag.space.inline.md}" },
+        "icon": {
+          "size": {}
+        }
+      },
+      "row": {
+        "border-block-end-color": { "value": "{denhaag.color.grey.1}" },
+        "border-block-end-width": { "value": "1px" },
+        "padding-inline-end": { "value": "{denhaag.space.inline.xl}" },
+        "padding-inline-start": { "value": "{denhaag.space.inline.xl}" },
+        "alternate-odd": {
+          "background-color": { "value": "rgb(250, 250, 250)" },
+          "color": {}
+        },
+        "alternate-even": {
+          "background-color": { "value": "rgb(255, 255, 255)" },
+          "color": {}
+        }
+      }
+    }
+  }
+}

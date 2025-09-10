@@ -1,0 +1,90 @@
+{
+  "denhaag": {
+    "anchor-collapse": {
+      "border": {
+        "color": {
+          "value": "{denhaag.color.grey.2}"
+        },
+        "style": {
+          "value": "solid"
+        },
+        "width": {
+          "value": "1px"
+        }
+      },
+      "rotate": {
+        "value": "-180deg"
+      },
+      "content": {
+        "margin": {
+          "block": {
+            "start": { "value": "{denhaag.space.block.xs}" }
+          }
+        },
+        "padding": {
+          "block": {
+            "start": {
+              "value": "{denhaag.space.block.md}"
+            },
+            "end": {
+              "value": "{denhaag.space.block.xl}"
+            }
+          },
+          "inline": {
+            "start": {
+              "value": "{denhaag.space.inline.xl}"
+            },
+            "end": {
+              "value": "{denhaag.space.inline.xl}"
+            }
+          }
+        }
+      },
+      "summary": {
+        "color": {
+          "value": "{denhaag.color.grey.5}"
+        },
+        "font": {
+          "family": {
+            "value": "{denhaag.typography.sans-serif.font-family}"
+          },
+          "size": {
+            "value": "{denhaag.typography.scale.lg.font-size}"
+          },
+          "weight": {
+            "value": "{denhaag.typography.weight.bold}"
+          }
+        },
+        "text-align": {
+          "value": "left"
+        },
+        "padding": {
+          "block": {
+            "value": "{denhaag.space.block.md}"
+          },
+          "inline": {
+            "value": "{denhaag.space.inline.xl}"
+          }
+        },
+        "active": {
+          "color": {
+            "value": "{denhaag.color.green.3}"
+          }
+        },
+        "hover": {
+          "color": {
+            "value": "{denhaag.color.green.3}"
+          }
+        },
+        "focus": {
+          "color": {
+            "value": "{denhaag.color.green.3}"
+          },
+          "outline": {
+            "value": "{denhaag.focus.border}"
+          }
+        }
+      }
+    }
+  }
+}

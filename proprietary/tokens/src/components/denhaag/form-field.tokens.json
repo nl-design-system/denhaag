@@ -1,0 +1,35 @@
+{
+  "denhaag": {
+    "form-field": {
+      "margin-block-start": {},
+      "margin-block-end": {},
+      "label": {
+        "margin-block-end": {
+          "value": "{denhaag.space.block.2xs}"
+        }
+      },
+      "description": {
+        "color": {
+          "value": "{denhaag.color.grey.4}"
+        },
+        "font-family": {
+          "value": "{utrecht.document.font-family}"
+        },
+        "font-size": {
+          "value": "{denhaag.typography.scale.s.font-size}"
+        },
+        "font-weight": {
+          "value": "{denhaag.typography.weight.regular}"
+        },
+        "line-height": {
+          "value": "{denhaag.typography.scale.s.line-height}"
+        },
+        "error": {
+          "color": {
+            "value": "{denhaag.color.red.3}"
+          }
+        }
+      }
+    }
+  }
+}

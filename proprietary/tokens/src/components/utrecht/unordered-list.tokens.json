@@ -1,0 +1,19 @@
+{
+  "utrecht": {
+    "unordered-list": {
+      "margin-block-start": {},
+      "margin-block-end": {},
+      "padding-inline-start": {},
+      "font-size": { "value": "{utrecht.document.font-size}" },
+      "line-height": { "value": "{utrecht.document.line-height}" },
+      "item": {
+        "margin-block-start": { "value": "{denhaag.space.block.2xs}" },
+        "margin-block-end": { "value": "{denhaag.space.block.2xs}" },
+        "padding-inline-start": { "value": "{denhaag.space.inline.xl}" }
+      },
+      "marker": {
+        "color": {}
+      }
+    }
+  }
+}

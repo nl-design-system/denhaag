@@ -1,0 +1,53 @@
+{
+  "denhaag": {
+    "language-switcher": {
+      "mobile-title": {
+        "display": { "value": "none" }
+      },
+      "list": {
+        "padding-block-start": { "value": "16px" },
+        "margin-block-start": { "value": "0" },
+        "margin-block-end": { "value": "16px" },
+        "margin-inline-start": { "value": "0" },
+        "padding-inline-start": { "value": "0" },
+        "item": {
+          "list-style": { "value": "none" },
+          "padding-block-start": { "value": "8px" },
+          "padding-block-end": { "value": "8px" },
+          "tablet": {
+            "padding-block-start": { "value": "12px" },
+            "padding-block-end": { "value": "12px" }
+          },
+          "mobile": {
+            "padding-block-start": { "value": "16px" },
+            "padding-block-end": { "value": "16px" }
+          },
+          "link": {
+            "active": {
+              "color": { "value": "{denhaag.color.green.3}" },
+              "font-weight": { "value": "{utrecht.heading.font-weight}" },
+              "icon": {
+                "margin-block-start": { "value": "auto" },
+                "margin-block-end": { "value": "auto" },
+                "margin-inline-start": { "value": "auto" },
+                "margin-inline-end": { "value": "auto" },
+                "padding-inline-start": { "value": "5px" },
+                "padding-block-start": { "value": "0" }
+              }
+            }
+          },
+          "button": {
+            "hover-text-decoration": { "value": "underline" },
+            "text-decoration": { "value": "none" },
+            "text-underline-offset": { "value": "1px" },
+            "icon": {
+              "gap": { "value": "6px" },
+              "inset-block-start": { "value": "-1px" },
+              "size": { "value": "1rem" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

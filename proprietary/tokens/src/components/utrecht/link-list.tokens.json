@@ -1,0 +1,18 @@
+{
+  "utrecht": {
+    "link-list": {
+      "margin-block-start": { "value": "{denhaag.space.block.xs}" },
+      "margin-block-end": { "value": "{denhaag.space.block.xs}" },
+      "row-gap": { "value": "{denhaag.space.block.xs}" },
+      "link": {
+        "column-gap": {},
+        "font-weight": {},
+        "text-decoration": {}
+      },
+      "icon": {
+        "size": {},
+        "inset-block-start": {}
+      }
+    }
+  }
+}

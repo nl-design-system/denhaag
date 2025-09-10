@@ -1,0 +1,9 @@
+{
+  "denhaag": {
+    "event-date": {
+      "icon-color": { "value": "{denhaag.color.blue.3}" },
+      "icon-margin-inline-end": { "value": "0.5rem" },
+      "text-line-height": { "value": "1.75" }
+    }
+  }
+}

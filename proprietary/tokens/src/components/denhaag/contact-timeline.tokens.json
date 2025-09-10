@@ -1,0 +1,75 @@
+{
+  "denhaag": {
+    "contact-timeline": {
+      "step": {
+        "header": {
+          "line-height": { "value": "27px" },
+          "font-size": { "value": "20px" },
+          "date": {
+            "width": { "value": "96px" }
+          },
+          "channel": {
+            "width": { "value": "80px" }
+          },
+          "toggle": {
+            "hover": {
+              "color": { "value": "{denhaag.color.green.3}" }
+            },
+            "focus": {
+              "color": { "value": "{denhaag.color.green.3}" }
+            },
+            "active": {
+              "color": { "value": "{denhaag.color.green.3}" }
+            },
+            "gap": { "value": "4px" }
+          }
+        },
+        "marker": {
+          "align-items": { "value": "flex-start" },
+          "connector": {
+            "bottom": { "value": "0" },
+            "desktop": {
+              "margin-inline-start": { "value": "112px" }
+            },
+            "mobile": {
+              "margin-inline-start": { "value": "0" }
+            }
+          }
+        },
+        "details": {
+          "desktop": {
+            "margin-inline-start": { "value": "240px" }
+          },
+          "mobile": {
+            "margin-inline-start": { "value": "32px" }
+          },
+          "sender": {
+            "font": {
+              "weight": {
+                "value": "{denhaag.typography.weight.semibold}"
+              },
+              "size": { "value": "18px" }
+            },
+            "margin-block-start": { "value": "16px" }
+          },
+          "file": {
+            "margin-block-start": { "value": "24px" },
+            "margin-block-end": { "value": "24px" },
+            "mobile": {
+              "margin-block-end": { "value": "32px" }
+            }
+          }
+        },
+        "meta": {
+          "gap": { "value": "6px" },
+          "marker": {
+            "size": { "value": "4px" },
+            "color": { "value": "{denhaag.color.black}" }
+          }
+        },
+        "distance": { "value": "0" },
+        "padding-block-end": { "value": "32px" }
+      }
+    }
+  }
+}
