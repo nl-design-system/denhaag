@@ -1,0 +1,33 @@
+{
+  "utrecht": {
+    "badge": {
+      "background-color": {
+        "value": "{denhaag.color.grey.1}"
+      },
+      "color": {
+        "value": "{denhaag.color.grey.5}"
+      },
+      "border-radius": {
+        "value": "{denhaag.border-radius}"
+      },
+      "font-family": {
+        "value": "{denhaag.typography.sans-serif.font-family}"
+      },
+      "font-weight": {
+        "value": "{denhaag.typography.weight.semibold}"
+      },
+      "font-size": {
+        "value": "{denhaag.typography.scale.s.font-size}"
+      },
+      "line-height": {
+        "value": "{denhaag.typography.scale.base.line-height}"
+      },
+      "padding-block": {
+        "value": "2px"
+      },
+      "padding-inline": {
+        "value": "8px"
+      }
+    }
+  }
+}

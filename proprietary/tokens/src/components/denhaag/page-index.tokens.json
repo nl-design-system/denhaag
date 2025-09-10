@@ -1,0 +1,14 @@
+{
+  "denhaag": {
+    "page-index": {
+      "background-color": { "value": "{denhaag.color.blue.1}" },
+      "padding-block-end": { "value": "{denhaag.space.block.xl}" },
+      "padding-block-start": { "value": "{denhaag.space.block.xl}" },
+      "padding-inline-end": { "value": "{denhaag.space.inline.xl}" },
+      "padding-inline-start": { "value": "{denhaag.space.inline.xl}" },
+      "list": {
+        "margin-block-start": { "value": "{denhaag.space.block.md}" }
+      }
+    }
+  }
+}

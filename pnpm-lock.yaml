@@ -1598,18 +1598,18 @@ importers:
       '@gemeente-denhaag/components-css':
         specifier: workspace:*
         version: link:../components-css
-      '@gemeente-denhaag/design-tokens-components':
+      '@gemeente-denhaag/design-tokens':
         specifier: workspace:*
-        version: link:../../proprietary/Components
+        version: link:../../proprietary/tokens
       '@utrecht/document-css':
         specifier: 1.5.1
         version: 1.5.1
 
   packages/open-forms:
     dependencies:
-      '@gemeente-denhaag/design-tokens-components':
+      '@gemeente-denhaag/design-tokens':
         specifier: workspace:*
-        version: link:../../proprietary/Components
+        version: link:../../proprietary/tokens
       '@utrecht/button-css':
         specifier: 2.3.1
         version: 2.3.1
@@ -1718,9 +1718,9 @@ importers:
       '@gemeente-denhaag/descriptionlist':
         specifier: workspace:*
         version: link:../../components/DescriptionList
-      '@gemeente-denhaag/design-tokens-components':
+      '@gemeente-denhaag/design-tokens':
         specifier: workspace:*
-        version: link:../../proprietary/Components
+        version: link:../../proprietary/tokens
       '@gemeente-denhaag/divider':
         specifier: workspace:*
         version: link:../../components/Divider
@@ -2016,6 +2016,8 @@ importers:
         version: link:../Proprietary
 
   proprietary/Proprietary: {}
+
+  proprietary/tokens: {}
 
 packages:
 

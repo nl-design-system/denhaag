@@ -1,0 +1,13 @@
+{
+  "utrecht": {
+    "heading-4": {
+      "color": {},
+      "font-family": { "value": "{utrecht.heading.font-family}" },
+      "font-size": { "value": "{denhaag.typography.scale.lg.font-size}" },
+      "font-weight": {},
+      "line-height": { "value": "{denhaag.typography.scale.lg.line-height}" },
+      "margin-block-end": { "value": "0.3125rem" },
+      "margin-block-start": { "value": "1.1125rem" }
+    }
+  }
+}

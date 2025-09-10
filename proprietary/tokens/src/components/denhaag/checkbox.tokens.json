@@ -1,0 +1,27 @@
+{
+  "denhaag": {
+    "checkbox": {
+      "checked": {
+        "invalid": {
+          "background-color": { "value": "{denhaag.color.red.3}" }
+        },
+        "disabled": {
+          "background-color": { "value": "{denhaag.color.grey.2}" },
+          "border-color": { "value": "{denhaag.color.grey.2}" }
+        }
+      },
+      "hover": {
+        "border-color": { "value": "{denhaag.color.grey.4}" },
+        "border-width": { "value": "1px" },
+        "checked": {
+          "background-color": { "value": "{denhaag.color.green.4}" },
+          "border-color": { "value": "{denhaag.color.green.4}" }
+        },
+        "invalid": {
+          "background-color": { "value": "{denhaag.color.red.4}" },
+          "border-color": { "value": "{denhaag.color.red.4}" }
+        }
+      }
+    }
+  }
+}

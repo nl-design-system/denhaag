@@ -1,0 +1,24 @@
+{
+  "of": {
+    "button": {
+      "primary": {
+        "bg": { "value": "{denhaag.color.green.3}" },
+        "fg": { "value": "{denhaag.color.white}" },
+        "active": {
+          "bg": { "value": "{denhaag.color.green.4}" },
+          "fg": { "value": "{denhaag.color.white}" },
+          "color-border": { "value": "{denhaag.color.ocher.5}" }
+        },
+        "hover": {
+          "bg": { "value": "{denhaag.color.green.4}" },
+          "color-border": { "value": "{denhaag.color.ocher.5}" }
+        }
+      },
+      "anchor": {
+        "color-border": { "value": "transparent" },
+        "bg": { "value": "transparent" },
+        "fg": { "value": "{denhaag.link.color}" }
+      }
+    }
+  }
+}

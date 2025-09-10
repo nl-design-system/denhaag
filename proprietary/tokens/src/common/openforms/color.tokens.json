@@ -1,0 +1,16 @@
+{
+  "of": {
+    "color": {
+      "primary": { "value": "{denhaag.color.green.3}" },
+      "secondary": { "value": "{denhaag.color.grey.2}" },
+      "info": { "value": "{denhaag.color.blue.4}" },
+      "success": { "value": "{denhaag.color.green.4}" },
+      "warning": { "value": "{denhaag.color.orange.4}" },
+      "danger": { "value": "{denhaag.color.red.4}" },
+      "bg": { "value": "{denhaag.color.white}" },
+      "fg": { "value": "{denhaag.color.black}" },
+      "fg-muted": { "value": "{denhaag.color.grey.4}" },
+      "border": { "value": "{denhaag.color.grey.3}" }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "utrecht": {
+    "focus": {
+      "background-color": {},
+      "color": { "value": "inherit" },
+      "border-color": { "value": "{denhaag.focus.border-color.value}" },
+      "border-style": { "value": "{denhaag.focus.border-style.value}" },
+      "outline-color": { "value": "{denhaag.focus.border-color.value}" },
+      "outline-offset": { "value": "{denhaag.focus.offset}" },
+      "outline-style": { "value": "{denhaag.focus.border-style.value}" },
+      "outline-width": { "value": "{denhaag.focus.border-width.value}" },
+      "inverse": {
+        "outline-color": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "utrecht": {
+    "separator": {
+      "color": { "value": "{denhaag.color.grey.2}" },
+      "block-size": { "value": "1px" },
+      "margin-block-start": { "value": "16px" },
+      "margin-block-end": { "value": "16px" }
+    }
+  }
+}

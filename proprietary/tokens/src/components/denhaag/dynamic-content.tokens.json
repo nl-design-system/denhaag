@@ -1,0 +1,144 @@
+{
+  "denhaag": {
+    "dynamic-content": {
+      "card": {
+        "content": {
+          "color": {
+            "value": "{denhaag.color.grey.4}"
+          },
+          "gap": {
+            "value": "{denhaag.space.inline.lg}"
+          },
+          "padding": {
+            "value": "{denhaag.space.block.md}"
+          }
+        },
+        "gap": {
+          "value": "{denhaag.space.block.md}"
+        },
+        "caption": {
+          "font": {
+            "size": {
+              "value": "{denhaag.typography.scale.base.font-size}"
+            },
+            "weight": {
+              "value": "{denhaag.typography.weight.regular}"
+            }
+          },
+          "line-height": {
+            "value": "{denhaag.typography.scale.base.line-height}"
+          }
+        },
+        "title": {
+          "color": {
+            "value": "{denhaag.color.grey.5}"
+          },
+          "font": {
+            "size": {
+              "value": "{denhaag.typography.scale.xl.font-size}"
+            },
+            "weight": {
+              "value": "{denhaag.typography.weight.bold}"
+            }
+          },
+          "hyphens": {
+            "value": "auto"
+          },
+          "line-height": {
+            "value": "{denhaag.typography.scale.s.line-height}"
+          }
+        }
+      },
+      "padding": {
+        "block": {
+          "value": "{denhaag.space.inline.2xl}"
+        }
+      },
+      "icon": {
+        "color": {
+          "value": "{denhaag.color.blue.3}"
+        },
+        "opacity": {
+          "value": 0
+        }
+      },
+      "image": {
+        "background-color": {
+          "value": "{denhaag.color.grey.1}"
+        },
+        "placeholder": {
+          "padding": {
+            "block": {
+              "value": "{denhaag.space.block.xl}"
+            },
+            "inline": {
+              "value": "{denhaag.space.inline.xl}"
+            }
+          }
+        }
+      },
+      "list": {
+        "gap": {
+          "value": "{denhaag.space.inline.md}"
+        }
+      },
+      "grid": {
+        "columns": {
+          "value": 1
+        },
+        "gap": {
+          "value": "{denhaag.space.inline.md}"
+        }
+      },
+      "row": {
+        "gap": {
+          "value": "{denhaag.space.block.2xl}"
+        }
+      },
+      "pagination": {
+        "padding": {
+          "block": {
+            "value": "{denhaag.space.block.5xl}"
+          }
+        }
+      },
+      "s": {
+        "grid": {
+          "columns:": {
+            "value": 2
+          },
+          "gap": {
+            "value": "{denhaag.space.inline.md}"
+          }
+        }
+      },
+      "m": {
+        "grid": {
+          "columns:": {
+            "value": 3
+          },
+          "gap": {
+            "value": "{denhaag.space.inline.xl}"
+          }
+        }
+      },
+      "hover": {
+        "icon": {
+          "opacity": {
+            "value": 1
+          }
+        }
+      },
+      "focus": {
+        "outline": {
+          "value": "{denhaag.focus.border}"
+        },
+        "icon": {
+          "opacity": {
+            "value": 1
+          }
+        }
+      }
+    }
+  }
+}

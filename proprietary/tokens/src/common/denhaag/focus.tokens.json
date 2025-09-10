@@ -1,0 +1,15 @@
+{
+  "denhaag": {
+    "focus": {
+      "background-color": {},
+      "border-color": { "value": "{denhaag.color.ocher.5}" },
+      "border-width": { "value": "2px" },
+      "border-style": { "value": "dashed" },
+      "border": {
+        "value": "{denhaag.focus.border-width} {denhaag.focus.border-style} {denhaag.focus.border-color}"
+      },
+      "offset": { "value": "0" },
+      "color": {}
+    }
+  }
+}

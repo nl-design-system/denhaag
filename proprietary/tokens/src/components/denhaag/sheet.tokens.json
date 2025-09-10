@@ -1,0 +1,64 @@
+{
+  "denhaag": {
+    "sheet": {
+      "background-color": { "value": "{denhaag.color.white}" },
+      "left": { "value": "flex0" },
+      "margin-block-start": { "value": "{denhaag.header.border-bottom.width}" },
+      "min-height": { "value": "100vh" },
+      "overflow-x": { "value": "hidden" },
+      "position": { "value": "absolute" },
+      "top": { "value": "4.5rem" },
+      "width": { "value": "100%" },
+      "z-index": { "value": "3" },
+      "title": {
+        "font-size": { "value": "18px" },
+        "font-weight": { "value": "{denhaag.typography.weight.bold}" },
+        "margin-block-end": { "value": "16px" }
+      },
+      "desktop": {
+        "min-height": { "value": "15rem" },
+        "padding-block-start": { "value": "24px" },
+        "top": { "value": "7.5rem" }
+      },
+      "dialog": {
+        "border": { "value": "none" },
+        "margin-block-start": { "value": "0" },
+        "max-height": { "value": "fit-content" },
+        "max-width": { "value": "100%" },
+        "overflow-y": { "value": "hidden" },
+        "padding-block-end": { "value": "0" },
+        "padding-block-start": { "value": "0" },
+        "padding-inline-end": { "value": "0" },
+        "padding-inline-start": { "value": "0" },
+        "top": { "value": "0" },
+        "backdrop": {
+          "top": { "value": "0" }
+        }
+      },
+      "container": {
+        "margin-block-end": { "value": "4rem" },
+        "menu": {
+          "display": { "value": "grid" }
+        }
+      },
+      "close-button": {
+        "float": { "value": "right" }
+      },
+      "overlay": {
+        "background-color": { "value": "rgb(0 0 0 / 50%)" },
+        "height": { "value": "100vh" },
+        "left": { "value": "0" },
+        "position": { "value": "fixed" },
+        "top": { "value": "4.5rem" },
+        "width": { "value": "100vw" },
+        "z-index": { "value": "1" },
+        "tablet": {
+          "top": { "value": "6rem" }
+        },
+        "desktop": {
+          "top": { "value": "7.5rem" }
+        }
+      }
+    }
+  }
+}

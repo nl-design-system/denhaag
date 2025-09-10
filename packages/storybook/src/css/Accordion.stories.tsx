@@ -1,5 +1,5 @@
 import { Accordion, AccordionSection } from '@gemeente-denhaag/accordion';
-import tokens from '@gemeente-denhaag/design-tokens-components/dist/list.json';
+import tokens from '@gemeente-denhaag/design-tokens/dist/list.json';
 import { Meta, StoryObj } from '@storybook/react-vite';
 import React from 'react';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
