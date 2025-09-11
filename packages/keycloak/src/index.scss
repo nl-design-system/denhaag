@@ -1,5 +1,5 @@
 @use "~@utrecht/document-css/dist/index.min.css" as document;
 @use "./keycloak";
 @use "./fonts";
-@use "~@gemeente-denhaag/design-tokens-components/dist/theme/index" as designTokenComponents;
+@use "~@gemeente-denhaag/design-tokens/dist/theme/index" as designTokenComponents;
 @use "~@gemeente-denhaag/components-css/dist/index" as componentsCss;

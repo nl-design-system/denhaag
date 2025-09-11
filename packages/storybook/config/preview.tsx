@@ -10,7 +10,7 @@ import { Controls, Description, Primary, Stories } from '@storybook/addon-docs/b
 import { DesignTokensBlock } from './DesignTokensBlock';
 import { withThemeByClassName } from '@storybook/addon-themes';
 import '@utrecht/component-library-css/dist/index.css';
-import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
+import '@gemeente-denhaag/design-tokens/dist/theme/index.css';
 import { addonViewport } from './addon-viewports';
 import { StylesProvider } from '@gemeente-denhaag/stylesprovider';
 import '@gemeente-denhaag/fonts/dist/index.css';
@@ -52,10 +52,12 @@ const preview: Preview = {
         method: 'alphabetical',
         order: [
           'Den Haag',
+          'Brand Tokens',
           'Templates',
           ['Login', 'Overview', 'Zaak Overzicht', 'Zaak Detail', 'Berichten Overzicht', 'Berichten Detail'],
           'React',
           'CSS',
+          'Open Formulieren',
         ],
       },
     },

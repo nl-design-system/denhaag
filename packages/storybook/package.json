@@ -47,7 +47,7 @@
     "@gemeente-denhaag/ctalink": "workspace:*",
     "@gemeente-denhaag/data-badge": "workspace:*",
     "@gemeente-denhaag/descriptionlist": "workspace:*",
-    "@gemeente-denhaag/design-tokens-components": "workspace:*",
+    "@gemeente-denhaag/design-tokens": "workspace:*",
     "@gemeente-denhaag/divider": "workspace:*",
     "@gemeente-denhaag/dotindicator": "workspace:*",
     "@gemeente-denhaag/dynamic-content": "workspace:*",

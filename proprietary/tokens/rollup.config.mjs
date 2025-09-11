@@ -2,7 +2,7 @@ import postcss from 'rollup-plugin-postcss';
 import discardDuplicates from 'postcss-discard-duplicates';
 
 export default {
-  input: 'src/theme/index.scss',
+  input: 'src/index.scss',
   output: {
     dir: './dist/theme/',
     sourcemap: false,

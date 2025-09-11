@@ -22,7 +22,7 @@
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/design-tokens-components": "workspace:*"
+    "@gemeente-denhaag/design-tokens": "workspace:*"
   },
   "peerDependencies": {
     "@utrecht/button-css": "2.3.1",
