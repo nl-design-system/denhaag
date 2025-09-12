@@ -2000,6 +2000,25 @@ importers:
         specifier: 12.1.4
         version: 12.1.4(rollup@4.45.1)(tslib@2.8.1)(typescript@5.8.3)
 
+  packages/web-components/file:
+    dependencies:
+      '@gemeente-denhaag/file':
+        specifier: workspace:*
+        version: link:../../../components/File
+      '@gemeente-denhaag/icons':
+        specifier: workspace:*
+        version: link:../../../components/Icons
+      '@utrecht/paragraph-css':
+        specifier: 2.3.0
+        version: 2.3.0
+    devDependencies:
+      '@nl-design-system/tsconfig':
+        specifier: 1.0.3
+        version: 1.0.3(typescript@5.7.3)
+      '@rollup/plugin-typescript':
+        specifier: 12.1.2
+        version: 12.1.2(rollup@4.34.8)(tslib@2.8.1)(typescript@5.7.3)
+
   proprietary/Common:
     devDependencies:
       '@gemeente-denhaag/design-tokens-proprietary':
