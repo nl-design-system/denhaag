@@ -1,5 +1,11 @@
 # @gemeente-denhaag/divider
 
+## 3.0.1
+
+### Patch Changes
+
+- 946c3df: Merge tokens to one single package
+
 ## 3.0.0
 
 ### Major Changes

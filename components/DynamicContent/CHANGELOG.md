@@ -1,5 +1,13 @@
 # @gemeente-denhaag/dynamic-content
 
+## 2.0.1
+
+### Patch Changes
+
+- 946c3df: Merge tokens to one single package
+- Updated dependencies [946c3df]
+  - @gemeente-denhaag/image@2.0.1
+
 ## 2.0.0
 
 ### Major Changes

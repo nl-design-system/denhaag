@@ -1,5 +1,14 @@
 # @gemeente-denhaag/header
 
+## 4.1.1
+
+### Patch Changes
+
+- Updated dependencies [946c3df]
+  - @gemeente-denhaag/breadcrumb@5.0.1
+  - @gemeente-denhaag/button@3.0.1
+  - @gemeente-denhaag/menu@4.0.3
+
 ## 4.1.0
 
 ### Minor Changes

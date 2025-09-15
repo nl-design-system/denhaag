@@ -1,5 +1,46 @@
 # @gemeente-denhaag/storybook
 
+## 5.1.12
+
+### Patch Changes
+
+- 946c3df: Merge tokens to one single package
+- Updated dependencies [946c3df]
+  - @gemeente-denhaag/design-tokens@1.0.0
+  - @gemeente-denhaag/anchor-navigation@2.0.1
+  - @gemeente-denhaag/descriptionlist@4.0.1
+  - @gemeente-denhaag/floating-contact@2.0.1
+  - @gemeente-denhaag/anchor-collapse@3.0.2
+  - @gemeente-denhaag/dynamic-content@2.0.1
+  - @gemeente-denhaag/unorderedlist@3.0.2
+  - @gemeente-denhaag/article-meta@2.0.1
+  - @gemeente-denhaag/button-group@2.0.1
+  - @gemeente-denhaag/orderedlist@3.0.1
+  - @gemeente-denhaag/blockquote@3.0.1
+  - @gemeente-denhaag/breadcrumb@5.0.1
+  - @gemeente-denhaag/typography@3.0.1
+  - @gemeente-denhaag/eventdate@2.0.1
+  - @gemeente-denhaag/card-news@2.0.1
+  - @gemeente-denhaag/divider@3.0.1
+  - @gemeente-denhaag/action@4.0.1
+  - @gemeente-denhaag/button@3.0.1
+  - @gemeente-denhaag/image@2.0.1
+  - @gemeente-denhaag/file@2.1.1
+  - @gemeente-denhaag/hero@4.0.1
+  - @gemeente-denhaag/note@2.0.1
+  - @gemeente-denhaag/page-index@3.0.2
+  - @gemeente-denhaag/card-authentication@2.0.3
+  - @gemeente-denhaag/footer@4.1.1
+  - @gemeente-denhaag/header@4.1.1
+  - @gemeente-denhaag/alert@4.0.4
+  - @gemeente-denhaag/cta-image-content@3.0.2
+  - @gemeente-denhaag/dotindicator@3.0.1
+  - @gemeente-denhaag/menu@4.0.3
+  - @gemeente-denhaag/modal@3.0.1
+  - @gemeente-denhaag/process-steps@4.2.1
+  - @gemeente-denhaag/contact-timeline@4.0.5
+  - @gemeente-denhaag/card-group@2.0.3
+
 ## 5.1.11
 
 ### Patch Changes

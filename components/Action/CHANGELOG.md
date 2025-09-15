@@ -1,5 +1,13 @@
 # @gemeente-denhaag/action
 
+## 4.0.1
+
+### Patch Changes
+
+- 946c3df: Merge tokens to one single package
+- Updated dependencies [946c3df]
+  - @gemeente-denhaag/button@3.0.1
+
 ## 4.0.0
 
 ### Major Changes

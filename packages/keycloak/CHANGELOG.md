@@ -1,5 +1,14 @@
 # @gemeente-denhaag/keycloak
 
+## 3.0.3
+
+### Patch Changes
+
+- 946c3df: Merge tokens to one single package
+- Updated dependencies [946c3df]
+  - @gemeente-denhaag/design-tokens@1.0.0
+  - @gemeente-denhaag/components-css@4.0.0
+
 ## 3.0.2
 
 ### Patch Changes

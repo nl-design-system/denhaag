@@ -1,5 +1,11 @@
 # @gemeente-denhaag/floating-contact
 
+## 2.0.1
+
+### Patch Changes
+
+- 946c3df: Merge tokens to one single package
+
 ## 2.0.0
 
 ### Major Changes
