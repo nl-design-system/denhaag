@@ -1,5 +1,11 @@
 # @gemeente-denhaag/breadcrumb
 
+## 5.0.1
+
+### Patch Changes
+
+- 946c3df: Merge tokens to one single package
+
 ## 5.0.0
 
 ### Major Changes

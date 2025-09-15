@@ -1,5 +1,12 @@
 # @gemeente-denhaag/footer
 
+## 4.1.1
+
+### Patch Changes
+
+- Updated dependencies [946c3df]
+  - @gemeente-denhaag/button-group@2.0.1
+
 ## 4.1.0
 
 ### Minor Changes

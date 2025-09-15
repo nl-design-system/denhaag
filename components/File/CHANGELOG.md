@@ -1,5 +1,11 @@
 # @gemeente-denhaag/file
 
+## 2.1.1
+
+### Patch Changes
+
+- 946c3df: Merge tokens to one single package
+
 ## 2.1.0
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 # @gemeente-denhaag/descriptionlist
 
+## 4.0.1
+
+### Patch Changes
+
+- 946c3df: Merge tokens to one single package
+
 ## 4.0.0
 
 ### Major Changes
