@@ -18,7 +18,7 @@ const colors = [...multiColors, ...singleColors] as const;
 const colorTokens: ColorTokens = tokens['denhaag']['color'];
 
 const meta: Meta = {
-  title: 'Brand Tokens/Colors',
+  title: 'Primitive Tokens/Colors',
   tags: ['autodocs', '!dev'],
   parameters: {
     chromatic: { disableSnapshot: true },
