@@ -9,7 +9,6 @@ type Tokens = typeof tokens;
 type SizeTokens = Tokens['denhaag']['size'];
 
 const sizeTokens: SizeTokens = tokens['denhaag']['size'];
-console.log(sizeTokens);
 const sizeTokensSorted = Object.entries(sizeTokens).sort((a, b) => {
   const aValue = parseFloat(a[1].value);
   const bValue = parseFloat(b[1].value);
