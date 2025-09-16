@@ -1,80 +1,21 @@
 {
   "denhaag": {
     "size": {
-      "5xs": {
-        "value": "2px",
-        "type": "sizing"
-      },
-      "4xs": {
-        "value": "4px",
-        "type": "sizing"
-      },
-      "3xs": {
-        "value": "8px",
-        "type": "sizing"
-      },
-      "2xs": {
-        "value": "16px",
-        "type": "sizing"
-      },
-      "xs": {
-        "value": "24px",
-        "type": "sizing"
-      },
-      "sm": {
-        "value": "32px",
-        "type": "sizing"
-      },
-      "md": {
-        "value": "48px",
-        "type": "sizing"
-      },
-      "lg": {
-        "value": "64px",
-        "type": "sizing"
-      },
-      "xl": {
-        "value": "96px",
-        "type": "sizing"
-      },
-      "2xl": {
-        "value": "160px",
-        "type": "sizing"
-      },
-      "icon": {
-        "xs": {
-          "value": "16px",
-          "type": "sizing"
-        },
-        "sm": {
-          "value": "20px",
-          "type": "sizing"
-        },
-        "md": {
-          "value": "24px",
-          "type": "sizing"
-        },
-        "lg": {
-          "value": "24px",
-          "type": "sizing"
-        },
-        "xl": {
-          "value": "24px",
-          "type": "sizing"
-        },
-        "2xl": {
-          "value": "32px",
-          "type": "sizing"
-        },
-        "3xl": {
-          "value": "40px",
-          "type": "sizing"
-        },
-        "4xl": {
-          "value": "48px",
-          "type": "sizing"
-        }
-      }
+      "0_125": { "value": "1px", "name": "Size 0.125" },
+      "0_25": { "value": "2px", "name": "Size 0.25" },
+      "0_5": { "value": "4px", "name": "Size 0.5" },
+      "1": { "value": "8px", "name": "Size 1" },
+      "1_5": { "value": "12px", "name": "Size 1.5" },
+      "2": { "value": "16px", "name": "Size 2" },
+      "2_5": { "value": "20px", "name": "Size 2.5" },
+      "3": { "value": "24px", "name": "Size 3" },
+      "4": { "value": "32px", "name": "Size 4" },
+      "5": { "value": "40px", "name": "Size 5" },
+      "6": { "value": "48px", "name": "Size 6" },
+      "7": { "value": "56px", "name": "Size 7" },
+      "8": { "value": "64px", "name": "Size 8" },
+      "9": { "value": "72px", "name": "Size 9" },
+      "10": { "value": "80px", "name": "Size 10" }
     }
   }
 }
