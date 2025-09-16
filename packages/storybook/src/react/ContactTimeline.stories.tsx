@@ -67,6 +67,14 @@ const exampleArgs: ContactTimelineProps = {
       description: 'Hier komt de uitgebreide beschrijving',
       sender: 'Gemeente Den Haag',
     },
+    {
+      id: '8',
+      title: 'Kosten onderzoek en verbeteringen',
+      channel: 'whatsapp',
+      isoDate: '2022-11-10T09:17:03.137Z',
+      description: 'Hier komt de uitgebreide beschrijving',
+      sender: 'Gemeente Den Haag',
+    },
   ],
 };
 
