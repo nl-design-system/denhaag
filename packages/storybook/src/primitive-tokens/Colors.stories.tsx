@@ -3,6 +3,7 @@ import tokens from '../../../../proprietary/tokens/dist/index.json';
 import { ColorPalette, ColorItem, Title } from '@storybook/addon-docs/blocks';
 import React from 'react';
 
+type Story = StoryObj<typeof meta>;
 type Tokens = typeof tokens;
 type ColorToken = Tokens['denhaag']['color']['black'];
 type SingleColorToken = { [key in (typeof singleColors)[number]]: ColorToken };
@@ -10,7 +11,6 @@ type MultiColorTokens = {
   [key in (typeof multiColors)[number]]: Partial<Record<'1' | '2' | '3' | '4' | '5', ColorToken>>;
 };
 type ColorTokens = SingleColorToken & MultiColorTokens;
-type Story = StoryObj<typeof meta>;
 
 const singleColors = ['white', 'black'] as const;
 const multiColors = ['ocher', 'green', 'red', 'orange', 'blue', 'grey', 'warmgrey'] as const;
