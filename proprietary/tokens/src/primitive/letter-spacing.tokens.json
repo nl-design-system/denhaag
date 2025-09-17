@@ -1,0 +1,8 @@
+{
+  "denhaag": {
+    "letter-spacing": {
+      "normal": { "value": "0px", "name": "Letter spacing normal" },
+      "wide": { "value": "1px", "name": "Letter spacing wide" }
+    }
+  }
+}
