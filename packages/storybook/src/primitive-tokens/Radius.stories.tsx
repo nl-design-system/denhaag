@@ -23,7 +23,7 @@ const meta: Meta = {
     docs: {
       page: () => (
         <>
-          <Title>Sizes</Title>
+          <Title>Radius</Title>
           <table>
             <thead>
               <tr>

@@ -1,0 +1,15 @@
+{
+  "denhaag": {
+    "border": {
+      "width": {
+        "sm": { "value": "0.5px", "name": "Border width thin" },
+        "md": { "value": "1px", "name": "Border width thick" },
+        "lg": { "value": "2px", "name": "Border width heavy" }
+      },
+      "style": {
+        "solid": { "value": "solid", "name": "Border style solid" },
+        "dashed": { "value": "dashed", "name": "Border style dashed" }
+      }
+    }
+  }
+}
