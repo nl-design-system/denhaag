@@ -1,5 +1,17 @@
 # @gemeente-denhaag/storybook
 
+## 5.1.13
+
+### Patch Changes
+
+- fe721cc: Create new primitive size tokens
+- a9c94c2: Refactor the primitive tokens
+- Updated dependencies [9260fd0]
+- Updated dependencies [fe721cc]
+- Updated dependencies [a9c94c2]
+  - @gemeente-denhaag/descriptionlist@4.0.2
+  - @gemeente-denhaag/design-tokens@1.0.1
+
 ## 5.1.12
 
 ### Patch Changes
