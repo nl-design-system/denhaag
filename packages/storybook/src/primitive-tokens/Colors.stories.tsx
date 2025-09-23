@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 import tokens from '../../../../proprietary/tokens/dist/index.json';
-import { ColorPalette, ColorItem, Title } from '@storybook/addon-docs/blocks';
-import React from 'react';
+import { ColorPalette, ColorItem, Title, Subtitle } from '@storybook/addon-docs/blocks';
+import React, { Fragment } from 'react';
 
 type Story = StoryObj<typeof meta>;
 type Tokens = typeof tokens;
@@ -23,35 +23,39 @@ const meta: Meta = {
   parameters: {
     chromatic: { disableSnapshot: true },
     docs: {
-      page: () =>
-        colors.map((color) => {
-          const colorGroup = colorTokens[color];
-          const colorItems =
-            'value' in colorGroup ? (
-              <ColorItem
-                key={color}
-                title={color}
-                subtitle={`var(--denhaag-color-${color})`}
-                colors={[colorGroup.value]}
-              />
-            ) : (
-              Object.values(colorGroup).map((item: ColorToken, index: number) => (
+      page: () => (
+        <>
+          <Title />
+          {colors.map((color) => {
+            const colorGroup = colorTokens[color];
+            const colorItems =
+              'value' in colorGroup ? (
                 <ColorItem
-                  key={item.key}
-                  title={`${color} ${index + 1}`}
-                  subtitle={`var(--${item.path.join('-')})`}
-                  colors={[item.value]}
+                  key={color}
+                  title={color}
+                  subtitle={`var(--denhaag-color-${color})`}
+                  colors={[colorGroup.value]}
                 />
-              ))
-            );
+              ) : (
+                Object.values(colorGroup).map((item: ColorToken, index: number) => (
+                  <ColorItem
+                    key={item.key}
+                    title={`${color} ${index + 1}`}
+                    subtitle={`var(--${item.path.join('-')})`}
+                    colors={[item.value]}
+                  />
+                ))
+              );
 
-          return (
-            <>
-              <Title>{color.charAt(0).toUpperCase() + color.slice(1)}</Title>
-              <ColorPalette key={color}>{colorItems}</ColorPalette>
-            </>
-          );
-        }),
+            return (
+              <Fragment key={color}>
+                <Subtitle>{color.charAt(0).toUpperCase() + color.slice(1)}</Subtitle>
+                <ColorPalette key={color}>{colorItems}</ColorPalette>
+              </Fragment>
+            );
+          })}
+        </>
+      ),
     },
   },
 };

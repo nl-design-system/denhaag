@@ -44,7 +44,7 @@ const meta: Meta = {
             <tbody>
               {borderWidthTokensSorted.map(([key, width]) => (
                 <tr key={key}>
-                  <td>{width.original.name}</td>
+                  <td>{key}</td>
                   <td>
                     <code>{path2css(width.path)}</code>
                   </td>
@@ -77,7 +77,7 @@ const meta: Meta = {
             <tbody>
               {borderStyleTokensSorted.map(([key, style]) => (
                 <tr key={key}>
-                  <td>{style.original.name}</td>
+                  <td>{key}</td>
                   <td>
                     <code>{path2css(style.path)}</code>
                   </td>

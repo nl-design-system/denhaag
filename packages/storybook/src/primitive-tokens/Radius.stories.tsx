@@ -36,7 +36,7 @@ const meta: Meta = {
             <tbody>
               {radiusTokensSorted.map(([key, radius]) => (
                 <tr key={key}>
-                  <td>{radius.original.name}</td>
+                  <td>{key}</td>
                   <td>
                     <code>{path2css(radius.path)}</code>
                   </td>

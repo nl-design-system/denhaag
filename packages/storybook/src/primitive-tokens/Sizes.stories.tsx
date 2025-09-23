@@ -36,7 +36,7 @@ const meta: Meta = {
             <tbody>
               {sizeTokensSorted.map(([key, size]) => (
                 <tr key={key}>
-                  <td>{size.original.name}</td>
+                  <td>{key}</td>
                   <td>
                     <code>{path2css(size.path)}</code>
                   </td>

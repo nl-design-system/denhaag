@@ -14,20 +14,20 @@ const letterSpacingTokensSorted = Object.entries(letterSpacingTokens).sort((a, b
   return aValue - bValue;
 });
 
-console.log(letterSpacingTokensSorted);
-
 const meta: Meta = {
   title: 'Primitive Tokens/Letter Spacing',
   tags: ['autodocs', '!dev'],
+  component: Typeset,
   parameters: {
+    title: 'Letter Spacing',
     chromatic: { disableSnapshot: true },
     docs: {
       page: () => (
         <>
-          <Title>Letter Spacing</Title>
+          <Title />
           {letterSpacingTokensSorted.map(([key, token]) => (
             <React.Fragment key={key}>
-              <Subtitle>{key}</Subtitle>
+              <Subtitle>{key.charAt(0).toUpperCase() + key.slice(1)}</Subtitle>
               <div style={{ letterSpacing: token.value }}>
                 <Typeset
                   fontFamily="'TheSans', sans-serif"
@@ -44,4 +44,4 @@ const meta: Meta = {
 
 export default meta;
 
-export const Default: Story = {};
+export const Normal: Story = {};
