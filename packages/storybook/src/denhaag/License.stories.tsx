@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
-import md from '../../../../LICENSE.md?raw';
+import mdx from '../../../../LICENSE.md?raw';
 
 const meta = {
   title: 'Den Haag/License',
@@ -7,7 +7,7 @@ const meta = {
   parameters: {
     chromatic: { disableSnapshot: true },
     docs: {
-      page: md,
+      page: mdx,
     },
   },
 } as Meta;

@@ -6,24 +6,24 @@ import { path2css } from '../denhaag/util';
 
 type Story = StoryObj<typeof meta>;
 type Tokens = typeof tokens;
-type SizeTokens = Tokens['denhaag']['size'];
+type RadiusTokens = Tokens['denhaag']['radius'];
 
-const sizeTokens: SizeTokens = tokens['denhaag']['size'];
-const sizeTokensSorted = Object.entries(sizeTokens).sort((a, b) => {
+const radiusTokens: RadiusTokens = tokens['denhaag']['radius'];
+const radiusTokensSorted = Object.entries(radiusTokens).sort((a, b) => {
   const aValue = parseFloat(a[1].value);
   const bValue = parseFloat(b[1].value);
   return aValue - bValue;
 });
 
 const meta: Meta = {
-  title: 'Primitive Tokens/Sizes',
+  title: 'Primitive Tokens/Radius',
   tags: ['autodocs', '!dev'],
   parameters: {
     chromatic: { disableSnapshot: true },
     docs: {
       page: () => (
         <>
-          <Title>Sizes</Title>
+          <Title>Radius</Title>
           <table>
             <thead>
               <tr>
@@ -34,20 +34,21 @@ const meta: Meta = {
               </tr>
             </thead>
             <tbody>
-              {sizeTokensSorted.map(([key, size]) => (
+              {radiusTokensSorted.map(([key, radius]) => (
                 <tr key={key}>
                   <td>{key}</td>
                   <td>
-                    <code>{path2css(size.path)}</code>
+                    <code>{path2css(radius.path)}</code>
                   </td>
-                  <td>{size.value}</td>
+                  <td>{radius.value}</td>
                   <td>
                     <div
                       style={{
                         margin: '0 auto',
                         backgroundColor: 'black',
-                        height: size.value,
-                        width: size.value,
+                        height: '40px',
+                        width: '40px',
+                        borderRadius: radius.value,
                       }}
                     ></div>
                   </td>

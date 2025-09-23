@@ -1,0 +1,12 @@
+{
+  "denhaag": {
+    "radius": {
+      "none": { "value": "0px", "name": "Radius none" },
+      "sm": { "value": "1px", "name": "Radius small" },
+      "md": { "value": "3px", "name": "Radius medium" },
+      "lg": { "value": "5px", "name": "Radius large" },
+      "xl": { "value": "8px", "name": "Radius extra large" },
+      "full": { "value": "100%", "name": "Radius full" }
+    }
+  }
+}
