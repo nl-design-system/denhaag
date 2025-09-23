@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Data list
 
 Data lists organize and display information into rows.
