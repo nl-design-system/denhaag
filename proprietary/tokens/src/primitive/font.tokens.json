@@ -1,0 +1,56 @@
+{
+  "denhaag": {
+    "font": {
+      "family": {
+        "text": {
+          "value": "\"TheSans\", sans-serif",
+          "name": "Font Family Text"
+        },
+        "heading": {
+          "value": "\"TheMix\", sans-serif",
+          "name": "Font Family Heading"
+        }
+      },
+      "size": {
+        "xs": {
+          "value": "12px",
+          "name": "Font Size XS"
+        },
+        "sm": {
+          "value": "14px",
+          "name": "Font Size SM"
+        },
+        "md": {
+          "value": "18px",
+          "name": "Font Size MD"
+        },
+        "lg": {
+          "value": "20px",
+          "name": "Font Size LG"
+        },
+        "xl": {
+          "value": "24px",
+          "name": "Font Size XL"
+        },
+        "2xl": {
+          "value": "32px",
+          "name": "Font Size 2XL"
+        },
+        "3xl": {
+          "value": "48px",
+          "name": "Font Size 3XL"
+        }
+      },
+      "weight": {
+        "default": {
+          "value": "400",
+          "name": "Font Weight Default"
+        },
+        "bold": {
+          "value": "700",
+          "name": "Font Weight Bold"
+        }
+      }
+    }
+  }
+}
