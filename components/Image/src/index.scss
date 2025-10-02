@@ -28,7 +28,7 @@
 
 .denhaag-image__figcaption {
   align-items: var(--denhaag-image-figcaption-align-items, start);
-  display: grid;
+  display: var(--denhaag-image-figcaption-display, grid);
   font-weight: var(--denhaag-image-figcaption-font-weight, var(--denhaag-typography-weight-regular));
   gap: var(--denhaag-image-figcaption-gap, var(--denhaag-space-md));
   grid-template-areas: var(--denhaag-image-figcaption-template-areas);
