@@ -61,9 +61,6 @@
       "path": "../../components/TextInput"
     },
     {
-      "path": "../../components/Typography"
-    },
-    {
       "path": "../components-react"
     }
   ]

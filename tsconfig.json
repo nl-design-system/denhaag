@@ -77,19 +77,7 @@
       "path": "components/TextInput"
     },
     {
-      "path": "components/Typography"
-    },
-    {
       "path": "packages/components-react"
-    },
-    {
-      "path": "proprietary/Common"
-    },
-    {
-      "path": "proprietary/Components"
-    },
-    {
-      "path": "proprietary/Proprietary"
     }
   ]
 }

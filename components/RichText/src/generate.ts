@@ -40,18 +40,15 @@ fs.writeFileSync(
       const componentName = space[0].component;
       const mixins = space.map(
         ({ component, sibling, spacing }) => `
-  .${component}:has(+ .${sibling}, + .${sibling.replace('denhaag', 'utrecht')}),
-  .${component.replace('denhaag', 'utrecht')}:has(+ .${sibling}, + .${sibling.replace('denhaag', 'utrecht')}) {
-    --${component}-margin-block-end: var(--denhaag-rich-text-${spacing}-margin-block-end);
-    --${component.replace('denhaag', 'utrecht')}-margin-block-end: var(--denhaag-rich-text-${spacing}-margin-block-end);
+  .${component}:has(+ .${sibling}) {
+    --${component.replace('--', '-')}-margin-block-end: var(--denhaag-rich-text-${spacing}-margin-block-end);
   }
 `,
       );
 
       return `@mixin ${componentName} {
   .${componentName}:first-child {
-    --${componentName}-margin-block-start: 0;
-    --${componentName.replace('denhaag', 'utrecht')}-margin-block-start: 0;
+    --${componentName.replace('--', '-')}-margin-block-start: 0;
   }
 ${mixins.join('')}
 }`;
