@@ -2,8 +2,8 @@ import React from 'react';
 import {
   UnorderedList as UtrechtUnorderedList,
   UnorderedListProps as UtrechtUnorderedListProps,
-  UnorderedListItem,
-  UnorderedListItemProps,
+  UnorderedListItem as UtrechtUnorderedListItem,
+  UnorderedListItemProps as UtrechtUnorderedListItemProps,
 } from '@utrecht/component-library-react';
 import './index.scss';
 import clsx from 'clsx';
@@ -19,6 +19,13 @@ const UnorderedList = ({ className, nested, ...props }: UnorderedListProps) => {
     nested && ['denhaag-unordered-list--nested', 'utrecht-unordered-list--nested'],
   );
   return <UtrechtUnorderedList className={classNames} {...props} />;
+};
+
+type UnorderedListItemProps = UtrechtUnorderedListItemProps;
+
+const UnorderedListItem = ({ className, ...props }: UnorderedListItemProps) => {
+  const classNames = clsx(className, 'denhaag-unordered-list__item');
+  return <UtrechtUnorderedListItem className={classNames} {...props} />;
 };
 
 export { UnorderedList, UnorderedListProps, UnorderedListItem, UnorderedListItemProps };

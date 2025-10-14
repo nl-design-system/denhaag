@@ -1,14 +1,13 @@
-@use "./mixin" as *;
+@import "./mixin";
 
 .denhaag-rich-text {
   --denhaag-space-around: 1;
-  --utrecht-space-around: 1;
-  @include denhaag-heading-1;
-  @include denhaag-heading-2;
-  @include denhaag-heading-3;
-  @include denhaag-heading-4;
-  @include denhaag-heading-5;
-  @include denhaag-heading-6;
+  @include nl-heading--level-1;
+  @include nl-heading--level-2;
+  @include nl-heading--level-3;
+  @include nl-heading--level-4;
+  @include nl-heading--level-5;
+  @include nl-heading--level-6;
   @include denhaag-accordion;
   @include denhaag-alert;
   @include denhaag-badge-list;
@@ -23,10 +22,10 @@
   @include denhaag-form-field-error-message;
   @include denhaag-form-label;
   @include denhaag-img;
-  @include denhaag-link;
+  @include nl-link;
   @include denhaag-ordered-list;
   @include denhaag-pagination;
-  @include denhaag-paragraph;
+  @include nl-paragraph;
   @include denhaag-select;
   @include denhaag-separator;
   @include denhaag-sidenav;

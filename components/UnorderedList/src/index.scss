@@ -1,11 +1,15 @@
 @use "~@utrecht/unordered-list-css/dist/index.min.css" as unorderedlist;
 
-.denhaag-unordered-list .utrecht-unordered-list__item::marker {
-  font-family: var(--denhaag-unordered-list-marker-font-family, Arial);
+.denhaag-unordered-list {
+  margin-block-end: var(--denhaag-unordered-list-margin-block-end);
+
+  .denhaag-unordered-list__item::marker {
+    font-family: var(--denhaag-unordered-list-marker-font-family, Arial);
+  }
 }
 
 .denhaag-unordered-list--nested {
-  .utrecht-unordered-list__item::marker {
+  .denhaag-unordered-list__item::marker {
     content: "○";
   }
 }
