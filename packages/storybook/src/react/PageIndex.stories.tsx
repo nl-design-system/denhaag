@@ -3,7 +3,7 @@ import { PageIndex, PageIndexProps } from '@gemeente-denhaag/page-index';
 
 const exampleArgs = {
   heading: 'Op deze pagina',
-  headingAs: 'h3',
+  headingLevel: 3,
   items: [
     {
       label: 'Contactgegevens',
