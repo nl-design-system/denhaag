@@ -1,5 +1,11 @@
 # @gemeente-denhaag/unorderedlist
 
+## 3.1.0
+
+### Minor Changes
+
+- 97ba8b5: Upgrade RichText component. It no longer use the old Typograhy package. Removed package
+
 ## 3.0.2
 
 ### Patch Changes

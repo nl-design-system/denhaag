@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/unorderedlist",
-  "version": "3.0.2",
+  "version": "3.1.0",
   "description": "An unordered list component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {

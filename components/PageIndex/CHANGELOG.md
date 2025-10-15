@@ -1,5 +1,16 @@
 # @gemeente-denhaag/page-index
 
+## 4.0.0
+
+### Major Changes
+
+- 97ba8b5: Upgrade RichText component. It no longer use the old Typograhy package. Removed package
+
+### Patch Changes
+
+- Updated dependencies [97ba8b5]
+  - @gemeente-denhaag/unorderedlist@3.1.0
+
 ## 3.0.2
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @gemeente-denhaag/accordion
 
+## 4.0.1
+
+### Patch Changes
+
+- 97ba8b5: Upgrade RichText component. It no longer use the old Typograhy package. Removed package
+
 ## 4.0.0
 
 ### Major Changes

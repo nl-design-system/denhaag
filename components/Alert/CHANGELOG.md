@@ -1,5 +1,11 @@
 # @gemeente-denhaag/alert
 
+## 4.0.5
+
+### Patch Changes
+
+- 97ba8b5: Upgrade RichText component. It no longer use the old Typograhy package. Removed package
+
 ## 4.0.4
 
 ### Patch Changes
