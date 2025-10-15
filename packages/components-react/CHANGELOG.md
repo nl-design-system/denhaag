@@ -1,5 +1,17 @@
 # @gemeente-denhaag/components-react
 
+## 5.0.6
+
+### Patch Changes
+
+- 97ba8b5: Upgrade RichText component. It no longer use the old Typograhy package. Removed package
+- Updated dependencies [97ba8b5]
+  - @gemeente-denhaag/page-index@4.0.0
+  - @gemeente-denhaag/contact-timeline@4.0.6
+  - @gemeente-denhaag/process-steps@4.2.2
+  - @gemeente-denhaag/accordion@4.0.1
+  - @gemeente-denhaag/alert@4.0.5
+
 ## 5.0.5
 
 ### Patch Changes

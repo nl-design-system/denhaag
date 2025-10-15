@@ -1,5 +1,11 @@
 # @gemeente-denhaag/process-steps
 
+## 4.2.2
+
+### Patch Changes
+
+- 97ba8b5: Upgrade RichText component. It no longer use the old Typograhy package. Removed package
+
 ## 4.2.1
 
 ### Patch Changes
