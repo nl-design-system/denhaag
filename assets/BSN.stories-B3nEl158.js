@@ -1,3 +1,0 @@
-import{j as t}from"./iframe-DL4oFGf8.js";import{S as e}from"./StoryUtil-C-mBn1pi.js";import"./index-CIeD5tX-.js";import"./parseISO-BBPDwbcZ.js";import"./index-Tu3Ud5G7.js";import"./client-BmheRjjI.js";import"./index-Bs2gcdbW.js";import"./index-rCszFGw5.js";import"./index-DeIT22Cq.js";import"./index-BTD-kZIR.js";import"./index-D1LIEsdZ.js";const f={id:"open-forms-bsn",title:"Open Formulieren/BSNField",component:e,args:{key:"bsn",type:"bsn",label:"Burgerservicenummer (BSN)"}},r={render:o=>t.jsx(e,{...o})};r.parameters={...r.parameters,docs:{...r.parameters?.docs,source:{originalSource:`{
-  render: args => <SingleFormioComponent {...args} />
-}`,...r.parameters?.docs?.source}}};const S=["Default"];export{r as Default,S as __namedExportsOrder,f as default};
