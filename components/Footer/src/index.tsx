@@ -64,6 +64,8 @@ export interface FooterProps {
 }
 
 export const FooterLegal = ({ legalData, copyrightLabel }: FooterLegalProps) => {
+  if (!legalData && !copyrightLabel) return null;
+
   return (
     <section className="denhaag-footer__legal">
       <ResponsiveContent className="denhaag-footer__legal-container">
@@ -89,6 +91,8 @@ export const FooterLegal = ({ legalData, copyrightLabel }: FooterLegalProps) => 
 };
 
 export const FooterContact = ({ newsletterData, socialData, contactData }: FooterContactProps) => {
+  if (!newsletterData && !socialData && !contactData) return null;
+
   return (
     <section className="denhaag-footer__contact">
       <ResponsiveContent>
