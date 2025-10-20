@@ -3,7 +3,7 @@
 
   font-family: var(--denhaag-image-font-family, var(--denhaag-typography-sans-serif-font-family));
   margin-inline: var(--denhaag-image-margin-inline, 0);
-  margin-block-end: var(--denhaag-image-margin-block-end-mobile, var(--denhaag-space-xl));
+  margin-block-start: 0;
 }
 
 .denhaag-image--figcaption-only {

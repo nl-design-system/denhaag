@@ -17,6 +17,8 @@
 .denhaag-link-group__list {
   display: grid;
   grid-template-columns: repeat(var(--denhaag-link-group-list-columns, 1), 1fr);
+  margin-block-start: var(--denhaag-link-group-list-margin-block-start);
+  margin-block-end: var(--denhaag-link-group-list-margin-block-end);
   list-style: none;
   padding-inline-start: var(--denhaag-link-group-list-padding-inline-start, 0);
   row-gap: var(--denhaag-space-xs);
@@ -30,6 +32,11 @@
   *:hover,
   *:focus-visible {
     --denhaag-link-color: var(--denhaag-link-group-dark-link-color, var(--denhaag-color-white));
+  }
+
+  .denhaag-link-group__list {
+    --denhaag-link-group-list-margin-block-start: var(--denhaag-space-xs);
+    --denhaag-link-group-list-margin-block-end: var(--denhaag-space-md);
   }
 }
 
