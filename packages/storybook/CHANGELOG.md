@@ -1,5 +1,13 @@
 # @gemeente-denhaag/storybook
 
+## 5.2.1
+
+### Patch Changes
+
+- fd3029a: Hide parts of footer when empty
+- Updated dependencies [fd3029a]
+  - @gemeente-denhaag/footer@4.1.2
+
 ## 5.2.0
 
 ### Minor Changes

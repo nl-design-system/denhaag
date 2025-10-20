@@ -1,5 +1,11 @@
 # @gemeente-denhaag/footer
 
+## 4.1.2
+
+### Patch Changes
+
+- fd3029a: Hide parts of footer when empty
+
 ## 4.1.1
 
 ### Patch Changes
