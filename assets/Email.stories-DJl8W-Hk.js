@@ -1,3 +1,0 @@
-import{j as m}from"./iframe-DkEPan55.js";import{S as e}from"./StoryUtil-B235FucN.js";import"./index-CKyqRdbY.js";import"./parseISO-BBPDwbcZ.js";import"./index-CetCJ7LA.js";import"./client-CClyKdvu.js";import"./index-DXm311Ao.js";import"./index-DLU5N1Ul.js";import"./index-BecZjmQe.js";import"./index-CVfcjSwL.js";import"./index-DS3WZguw.js";const g={id:"open-forms-email",title:"Open Formulieren/Email",component:e,args:{key:"email",type:"email",label:"Email"}},r={render:o=>m.jsx(e,{...o})};r.parameters={...r.parameters,docs:{...r.parameters?.docs,source:{originalSource:`{
-  render: args => <SingleFormioComponent {...args} />
-}`,...r.parameters?.docs?.source}}};const x=["Default"];export{r as Default,x as __namedExportsOrder,g as default};
