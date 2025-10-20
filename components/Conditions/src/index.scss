@@ -11,11 +11,6 @@
 
   background-color: var(--denhaag-conditions-background-color, #f9fbf9); // 15% of var(--denhaag-color-green-1).
   border-block-start: var(--denhaag-space-xs) solid var(--denhaag-conditions-variant-color);
-
-  [class*="utrecht-heading-"] + & {
-    --denhaag-list-wrapper-margin-block-start: var(--denhaag-space-md);
-    --denhaag-list-wrapper-margin-block: var(--denhaag-list-wrapper-margin-block-start) var(--denhaag-space-xs);
-  }
 }
 
 .denhaag-conditions__label-container {

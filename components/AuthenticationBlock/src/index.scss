@@ -18,10 +18,6 @@
     --denhaag-authentication-gap: var(--denhaag-authentication-gap-sm, var(--denhaag-space-2xl));
   }
 
-  & + & {
-    margin-block-start: var(--denhaag-authentication-gap, var(--denhaag-space-xl));
-  }
-
   &__card {
     align-self: stretch;
     border: 1px solid var(--denhaag-authentication-border-color, var(--denhaag-color-grey-2));

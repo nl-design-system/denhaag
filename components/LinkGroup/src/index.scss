@@ -2,21 +2,8 @@
   --denhaag-link-line-height: var(--denhaag-typography-scale-base-line-height);
   --denhaag-link-text-decoration: none;
 
-  @media (min-width: 1114px) {
-    --denhaag-link-group-list-margin-block-start: var(--denhaag-space-sm);
-  }
-
   [class^="utrecht-heading-"] {
     --utrecht-space-around: 0; // Sadly we need to reset this on the heading component. Not really a reusable variable.
-  }
-
-  [class*="utrecht-heading-"] + & {
-    --denhaag-link-group-list-margin-block-start: var(--denhaag-space-md);
-  }
-
-  .denhaag-anchor-collapse__content-content > &:first-child {
-    --denhaag-link-group-list-margin-block-start: 0;
-    --denhaag-link-group-list-margin-block-end: 0;
   }
 }
 
@@ -30,8 +17,6 @@
 .denhaag-link-group__list {
   display: grid;
   grid-template-columns: repeat(var(--denhaag-link-group-list-columns, 1), 1fr);
-  margin-block-start: var(--denhaag-link-group-list-margin-block-start, var(--denhaag-space-xs));
-  margin-block-end: var(--denhaag-link-group-list-margin-block-end, var(--denhaag-space-md));
   list-style: none;
   padding-inline-start: var(--denhaag-link-group-list-padding-inline-start, 0);
   row-gap: var(--denhaag-space-xs);

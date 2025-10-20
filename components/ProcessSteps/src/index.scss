@@ -7,9 +7,3 @@
 @import "./SubStepHeading";
 @import "./SubStepList";
 @import "./SubStepMarker";
-
-.denhaag-procedure-container:not(:last-child) + * {
-  margin-block-start: var(
-    --denhaag-space-2xl
-  ); // When not the last element within the parent, It must have a margin-top of 2xl.
-}

@@ -19,10 +19,8 @@
   }
 
   + .denhaag-illustrated-list-block {
-    margin-block-start: var(--denhaag-illustrated-list-block-margin-block-start, var(--denhaag-space-4xl));
-
-    @media (min-width: 768px) {
-      --denhaag-illustrated-list-block-margin-block-start: var(--denhaag-space-2xl);
+    @media (max-width: 767px) {
+      margin-block-end: var(--denhaag-space-4xl);
     }
   }
 

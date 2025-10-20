@@ -4,13 +4,6 @@
   font-family: var(--denhaag-image-font-family, var(--denhaag-typography-sans-serif-font-family));
   margin-inline: var(--denhaag-image-margin-inline, 0);
   margin-block-end: var(--denhaag-image-margin-block-end-mobile, var(--denhaag-space-xl));
-
-  & + [class^="utrecht-"],
-  [class^="utrecht-"] + &,
-  & + [class*="-list"],
-  [class*="-list"] + & {
-    margin-block-start: var(--denhaag-space-2xl); // Not in design? But the client wishes to have marges.
-  }
 }
 
 .denhaag-image--figcaption-only {
@@ -84,7 +77,5 @@
 @media (min-width: 550px) {
   .denhaag-image {
     --denhaag-image-download-text-display-mobile: var(--denhaag-image-download-text-display-desktop, inline);
-
-    margin-block-end: var(--denhaag-image-margin-block-end-desktop, var(--denhaag-space-2xl));
   }
 }
