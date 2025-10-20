@@ -19,3 +19,21 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {};
+
+export const TopOnly: Story = {
+  args: {
+    contactData: contactData,
+    socialData: footerSocialData,
+    newsletterData: newsletterData,
+    legalData: undefined,
+  },
+};
+
+export const BottomOnly: Story = {
+  args: {
+    contactData: undefined,
+    socialData: undefined,
+    newsletterData: undefined,
+    legalData: footerLegalData,
+  },
+};

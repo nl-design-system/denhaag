@@ -7,4 +7,4 @@ const meta: typeof reactMeta = {
 
 export default meta;
 
-export { Default } from '../react/Footer.stories';
+export { Default, TopOnly, BottomOnly } from '../react/Footer.stories';
