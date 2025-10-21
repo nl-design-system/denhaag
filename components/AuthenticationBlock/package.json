@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/authentication-block",
-  "version": "0.1.1-www-denhaag-nl.144",
+  "version": "0.1.1-www-denhaag-nl.145",
   "description": "The Authentication block component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "private": false,

@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/hero",
-  "version": "0.1.1-www-denhaag-nl.144",
+  "version": "0.1.1-www-denhaag-nl.145",
   "description": "A hero component with multiple variations",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "private": false,
@@ -33,6 +33,6 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "devDependencies": {
-    "@gemeente-denhaag/container": "0.2.3-www-denhaag-nl.144"
+    "@gemeente-denhaag/container": "0.2.3-www-denhaag-nl.145"
   }
 }
