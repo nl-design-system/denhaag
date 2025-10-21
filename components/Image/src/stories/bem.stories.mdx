@@ -2,6 +2,7 @@ import { Canvas, Description, Meta, Story } from "@storybook/addon-docs";
 import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
 
 import "../index.scss";
+import "../storybook.scss";
 import pkg from "../../package.json";
 import readme from "../../README.md";
 
@@ -224,65 +225,73 @@ import readme from "../../README.md";
 
 <Canvas>
   <Story name="Between Paragraphs">
-    <p className="utrecht-paragraph">
-      Aliquam ullamcorper quis orci vitae porta. Praesent sagittis sit amet mi tempus tincidunt. Mauris lectus turpis,
-      accumsan quis nisi at, tempor aliquet mauris. Proin vulputate gravida efficitur. Pellentesque in eleifend magna,
-      ac tristique dolor. Nulla eget sem sit amet enim tempor elementum eget sit amet nisl. Praesent scelerisque at
-      nulla a pulvinar. Donec porttitor justo eu massa sollicitudin, accumsan consequat odio volutpat. Curabitur
-      facilisis lectus at dui commodo, id consectetur quam ornare. Mauris rutrum risus quis nulla posuere sodales.
-      Praesent congue sodales scelerisque. Nulla quis facilisis nulla. Integer finibus vitae neque eget dapibus. Donec
-      tincidunt venenatis nunc, sit amet fermentum nulla.
-    </p>
-    <figure className="denhaag-image">
-      <img
-        className="denhaag-image__image"
-        srcSet="https://images.unsplash.com/photo-1562013042-abdaf4dc98b9?w=480 480w,
-                https://images.unsplash.com/photo-1562013042-abdaf4dc98b9?w=768 768w,
-                https://images.unsplash.com/photo-1562013042-abdaf4dc98b9?w=1290 1290w"
-        src="https://images.unsplash.com/photo-1562013042-abdaf4dc98b9?w=1290"
-        alt="Distinctio cupiditate"
-        loading="lazy"
-      />
-      <figcaption className="denhaag-image__figcaption">
-        <span className="denhaag-image__figcaption-text">
-          Distinctio cupiditate repellat placeat itaque velit iure qui Distinctio cupiditate repellat placeat itaque
-          velit iure qui.
-        </span>
-        <a
-          className="denhaag-image__figcaption-download"
-          href="https://images.unsplash.com/photo-1611402881804-8fde5b755174"
-          download="distinctio-cupiditate"
-          type="application/image"
-          aria-label="Download image: [READABLE_FILENAME] ([FILE_EXTENSION], [FILE_SIZE])"
-        >
-          <svg
-            className="denhaag-image__icon"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
+    <div className="denhaag-storybook-content-wrapper">
+      <p className="utrecht-paragraph">
+        Aliquam ullamcorper quis orci vitae porta. Praesent sagittis sit amet mi tempus tincidunt. Mauris lectus turpis,
+        accumsan quis nisi at, tempor aliquet mauris. Proin vulputate gravida efficitur. Pellentesque in eleifend magna,
+        ac tristique dolor. Nulla eget sem sit amet enim tempor elementum eget sit amet nisl. Praesent scelerisque at
+        nulla a pulvinar. Donec porttitor justo eu massa sollicitudin, accumsan consequat odio volutpat. Curabitur
+        facilisis lectus at dui commodo, id consectetur quam ornare. Mauris rutrum risus quis nulla posuere sodales.
+        Praesent congue sodales scelerisque. Nulla quis facilisis nulla. Integer finibus vitae neque eget dapibus. Donec
+        tincidunt venenatis nunc, sit amet fermentum nulla.
+      </p>
+      <figure className="denhaag-image">
+        <img
+          className="denhaag-image__image"
+          srcSet="https://images.unsplash.com/photo-1562013042-abdaf4dc98b9?w=480 480w,
+                  https://images.unsplash.com/photo-1562013042-abdaf4dc98b9?w=768 768w,
+                  https://images.unsplash.com/photo-1562013042-abdaf4dc98b9?w=1290 1290w"
+          src="https://images.unsplash.com/photo-1562013042-abdaf4dc98b9?w=1290"
+          alt="Distinctio cupiditate"
+          loading="lazy"
+        />
+        <figcaption className="denhaag-image__figcaption">
+          <span className="denhaag-image__figcaption-text">
+            Distinctio cupiditate repellat placeat itaque velit iure qui Distinctio cupiditate repellat placeat itaque
+            velit iure qui.
+          </span>
+          <a
+            className="denhaag-image__figcaption-download"
+            href="https://images.unsplash.com/photo-1611402881804-8fde5b755174"
+            download="distinctio-cupiditate"
+            type="application/image"
+            aria-label="Download image: [READABLE_FILENAME] ([FILE_EXTENSION], [FILE_SIZE])"
           >
-            <path
-              d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15"
-              stroke="#1261A3"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path d="M7 10L12 15L17 10" stroke="#1261A3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            <path d="M12 15V3" stroke="#1261A3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-          <span className="denhaag-image__download-text">Download afbeelding</span>
-        </a>
-      </figcaption>
-    </figure>
-    <p className="utrecht-paragraph">
-      Vestibulum iaculis mauris non ultricies pretium. Nunc id varius neque, non dignissim nibh. Ut et tortor semper ex
-      gravida consectetur eget et leo. Donec sit amet enim eu ipsum mattis consectetur. Ut semper arcu et venenatis
-      commodo. Curabitur sed dolor malesuada, eleifend enim ut, tincidunt mi. In at gravida eros, vel porta lacus. Fusce
-      nulla tellus, viverra at consectetur laoreet, fermentum in turpis.
-    </p>
+            <svg
+              className="denhaag-image__icon"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15"
+                stroke="#1261A3"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M7 10L12 15L17 10"
+                stroke="#1261A3"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path d="M12 15V3" stroke="#1261A3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+            <span className="denhaag-image__download-text">Download afbeelding</span>
+          </a>
+        </figcaption>
+      </figure>
+      <p className="utrecht-paragraph">
+        Vestibulum iaculis mauris non ultricies pretium. Nunc id varius neque, non dignissim nibh. Ut et tortor semper
+        ex gravida consectetur eget et leo. Donec sit amet enim eu ipsum mattis consectetur. Ut semper arcu et venenatis
+        commodo. Curabitur sed dolor malesuada, eleifend enim ut, tincidunt mi. In at gravida eros, vel porta lacus.
+        Fusce nulla tellus, viverra at consectetur laoreet, fermentum in turpis.
+      </p>
+    </div>
   </Story>
 </Canvas>

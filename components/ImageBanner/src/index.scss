@@ -8,10 +8,6 @@
   @media (prefers-reduced-motion: reduce) {
     --denhaag-image-banner-transition: none;
   }
-
-  .utrecht-paragraph + & {
-    margin-block-start: var(--denhaag-space-2xl); // Set to "friendly" margin.
-  }
 }
 
 .denhaag-image-banner--reduced-motion {
