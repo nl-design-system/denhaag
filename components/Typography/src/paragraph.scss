@@ -8,10 +8,6 @@
 .utrecht-paragraph {
   /* TODO: Move `space-around` to container element */
   --utrecht-space-around: 1;
-
-  & + & {
-    --utrecht-paragraph-margin-block-start: var(--utrecht-paragraph-paragraph-margin-block-start, 1em);
-  }
 }
 
 .utrecht-paragraph--denhaag-detail {
@@ -21,27 +17,4 @@
 
   letter-spacing: var(--denhaag-posttypelabel-letter-spacing, 1px);
   text-transform: var(--denhaag-posttypelabel-text-transform, uppercase);
-}
-
-[class*="--lead"] + .utrecht-paragraph {
-  --utrecht-paragraph-margin-block-start: var(
-    --utrecht-paragraph-lead-paragraph-margin-block-start,
-    var(--denhaag-space-xl)
-  );
-}
-
-.denhaag-image + [class*="utrecht-paragraph"] {
-  // Inherit the paragraph-paragraph-margin-block-start from the paragraph component.
-  --utrecht-paragraph-margin-block-start: var(--utrecht-paragraph-paragraph-margin-block-start, 1em);
-}
-
-[class*="-list"] + .utrecht-paragraph {
-  --utrecht-paragraph-margin-block-start: var(--utrecht-paragraph-list-margin-block-start, var(--denhaag-space-xl));
-}
-
-[class*="-list"] + .utrecht-paragraph--lead {
-  --utrecht-paragraph-margin-block-start: var(
-    --utrecht-paragraph-lead-list-margin-block-start,
-    var(--denhaag-space-xl)
-  );
 }

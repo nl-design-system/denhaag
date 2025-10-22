@@ -6,25 +6,10 @@
   @extend .utrecht-unordered-list;
 
   color: var(--denhaag-unordered-list-color, var(--denhaag-color-grey-4));
-  margin-block-start: var(--denhaag-unordered-list-margin-block-start, 0);
 
   .denhaag-link__label {
     hyphens: var(--denhaag-unordered-list-link-label-hyphens, auto);
   }
-}
-
-.utrecht-paragraph + .denhaag-unordered-list {
-  --denhaag-unordered-list-margin-block-start: var(
-    --denhaag-unordered-list-paragraph-margin-block-start,
-    var(--denhaag-space-md)
-  );
-}
-
-.utrecht-paragraph--lead + .denhaag-unordered-list {
-  --denhaag-unordered-list-margin-block-start: var(
-    --denhaag-unordered-list-lead-margin-block-start,
-    var(--denhaag-space-xl)
-  );
 }
 
 .denhaag-unordered-list li {
