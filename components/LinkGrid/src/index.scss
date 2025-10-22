@@ -6,19 +6,6 @@
   overflow-x: hidden;
   text-decoration: none;
   background-color: var(--denhaag-link-grid-background-color, var(--denhaag-color-ocher-3));
-  padding-block: var(--denhaag-link-grid-padding-block-sm, var(--denhaag-space-4xl));
-
-  @media (min-width: 1024px) {
-    padding-block: var(--denhaag-link-grid-padding-block-md, 56px);
-  }
-
-  @media (min-width: 1280px) {
-    padding-block: var(--denhaag-link-grid-padding-block-lg, 64px);
-  }
-
-  @media (min-width: 1768px) {
-    padding-block: var(--denhaag-link-grid-padding-block-xl, 72px);
-  }
 }
 
 .denhaag-link-grid__background-image {
@@ -293,6 +280,20 @@
 }
 
 .denhaag-link-grid:not(.denhaag-link-grid__no-image) {
+  padding-block: var(--denhaag-link-grid-padding-block-sm, var(--denhaag-space-4xl));
+
+  @media (min-width: 1024px) {
+    padding-block: var(--denhaag-link-grid-padding-block-md, 56px);
+  }
+
+  @media (min-width: 1280px) {
+    padding-block: var(--denhaag-link-grid-padding-block-lg, 64px);
+  }
+
+  @media (min-width: 1768px) {
+    padding-block: var(--denhaag-link-grid-padding-block-xl, 72px);
+  }
+
   .denhaag-link-grid__container {
     inline-size: 100%;
     @media (min-width: 1280px) {
