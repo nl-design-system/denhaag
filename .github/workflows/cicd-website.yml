@@ -119,11 +119,6 @@ jobs:
           pnpm run release-denhaag-nl
 
       - name: lerna publish
-        with:
-          node-version-file: ".nvmrc"
-          cache: "npm"
-          registry-url: "https://npm.pkg.github.com/"
-          scope: "@gemeente-denhaag"
         env:
           GH_ADMIN_TOKEN: ${{ secrets.GH_ADMIN_TOKEN }}
         run: |
