@@ -1,0 +1,7 @@
+.denhaag-storybook-content-wrapper > .denhaag-anchor-collapse:not(:first-child) {
+  margin-block-start: 0;
+
+  @media (min-width: 768px) {
+    margin-block-start: var(--denhaag-space-5xl);
+  }
+}
