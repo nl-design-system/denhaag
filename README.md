@@ -41,7 +41,7 @@ class Example extends Component {
 #### Setting up the development environment
 
 1. Clone this repository
-2. Install npm go [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) for instructions. Make sure to install version `16.13.0` or higher.
+2. Install npm go [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) for instructions. Make sure to install version `20` or higher.
 3. Install yarn go [here](https://yarnpkg.com/getting-started/install) for instructions. Make sure to install version `1.22.17` or higher.
 4. Run the following command to install all development dependencies:
 
