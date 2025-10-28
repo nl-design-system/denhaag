@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@utrecht/checkbox-css": "1.6.1",
-    "@utrecht/checkbox-react": "1.0.8"
+    "@utrecht/checkbox-react": "1.0.10"
   },
   "peerDependencies": {
     "react": "18 || 19",
