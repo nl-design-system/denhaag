@@ -1,5 +1,14 @@
 # @gemeente-denhaag/components-react
 
+## 5.0.8
+
+### Patch Changes
+
+- @gemeente-denhaag/action@4.0.2
+- @gemeente-denhaag/card@5.0.2
+- @gemeente-denhaag/contact-timeline@4.0.7
+- @gemeente-denhaag/card-group@2.0.4
+
 ## 5.0.7
 
 ### Patch Changes

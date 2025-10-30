@@ -1,5 +1,11 @@
 # @gemeente-denhaag/card-authentication
 
+## 2.0.4
+
+### Patch Changes
+
+- @gemeente-denhaag/card@5.0.2
+
 ## 2.0.3
 
 ### Patch Changes

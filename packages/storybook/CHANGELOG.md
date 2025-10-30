@@ -1,5 +1,17 @@
 # @gemeente-denhaag/storybook
 
+## 5.2.2
+
+### Patch Changes
+
+- Updated dependencies [24d1bc4]
+  - @gemeente-denhaag/utils@3.0.1
+  - @gemeente-denhaag/action@4.0.2
+  - @gemeente-denhaag/card@5.0.2
+  - @gemeente-denhaag/contact-timeline@4.0.7
+  - @gemeente-denhaag/card-authentication@2.0.4
+  - @gemeente-denhaag/card-group@2.0.4
+
 ## 5.2.1
 
 ### Patch Changes
