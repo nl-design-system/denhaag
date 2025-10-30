@@ -1,5 +1,11 @@
 # @gemeente-denhaag/utils
 
+## 3.0.1
+
+### Patch Changes
+
+- 24d1bc4: Internal changes.
+
 ## 3.0.0
 
 ### Major Changes

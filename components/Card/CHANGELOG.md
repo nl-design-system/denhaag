@@ -1,5 +1,12 @@
 # @gemeente-denhaag/card
 
+## 5.0.2
+
+### Patch Changes
+
+- Updated dependencies [24d1bc4]
+  - @gemeente-denhaag/utils@3.0.1
+
 ## 5.0.1
 
 ### Patch Changes
