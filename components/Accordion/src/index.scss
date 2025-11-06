@@ -94,7 +94,7 @@
   outline: 0;
 }
 
-.denhaag-accordion__container[open] > .denhaag-icon {
+.denhaag-accordion__container[open] .denhaag-accordion__panel .denhaag-icon {
   --denhaag-accordion-icon-transform: rotate(180deg);
 
   color: var(--denhaag-color-green-3);
