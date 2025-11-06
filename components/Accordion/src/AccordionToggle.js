@@ -1,59 +1,25 @@
-const AccordionToggle = (className = 'denhaag-accordion__title') => {
-  // Select all clickable elements.
-  [...document.getElementsByClassName(className)]?.forEach((element) => {
-    const wrapper = element.closest('.denhaag-accordion__container');
-    let accordionHeight = `${wrapper.querySelector('.denhaag-accordion__details-content').offsetHeight}px`;
+export default class Accordion {
+  constructor(className = 'denhaag-accordion__container') {
+    this.collapses = document.getElementsByClassName(className);
+  }
 
-    const setAccordionHeight = (el, newHeight) => {
-      el.style.setProperty('--denhaag-accordion-details-max-height', newHeight);
-    };
+  events() {
+    Array.from(this.collapses).forEach((collapse) => {
+      collapse.addEventListener('toggle', () => {
+        this.toggleAttributes(collapse);
+      });
+    });
+  }
 
-    const setAccordionDisplay = (el, value) => {
-      const content = el.querySelector('.denhaag-accordion__details');
-      content.style.display = value;
-    };
+  toggleAttributes(collapse) {
+    if (!collapse) return;
+    const collapseButton = collapse.querySelector('.denhaag-accordion__panel');
+    const collapseContent = collapse.querySelector('.denhaag-accordion__details');
 
-    // Set max-height property.
-    if (wrapper.querySelector('.denhaag-accordion__details-content')) {
-      setAccordionHeight(wrapper, accordionHeight);
-    }
+    const isCollapseOpen = collapse.open;
 
-    // Toggle accordion-item.
-    element.onclick = () => {
-      const expanded = element.getAttribute('aria-expanded') === 'false' ? 'true' : 'false';
+    collapseButton.setAttribute('aria-expanded', !!isCollapseOpen);
 
-      if (expanded === 'false') {
-        // Return correct height to show closing animation
-        setAccordionHeight(wrapper, accordionHeight);
-
-        setTimeout(() => {
-          wrapper.classList.toggle('denhaag-accordion__container--open');
-        }, 50);
-
-        setTimeout(() => {
-          setAccordionDisplay(wrapper, 'none');
-        }, 500);
-      }
-
-      if (expanded === 'true') {
-        setAccordionDisplay(wrapper, 'block');
-        setTimeout(() => {
-          const dynamicHeight = `${wrapper.querySelector('.denhaag-accordion__details-content').offsetHeight}px`;
-          accordionHeight = dynamicHeight;
-          setAccordionHeight(wrapper, dynamicHeight);
-          wrapper.classList.toggle('denhaag-accordion__container--open');
-        }, 50);
-
-        // Wait 500 ms (transition duration) to set height to auto, to ensure the animation works
-        setTimeout(() => {
-          setAccordionHeight(wrapper, 'auto');
-        }, 550);
-      }
-
-      // Set opposite aria-expanded.
-      element.setAttribute('aria-expanded', expanded);
-    };
-  });
-};
-
-export default AccordionToggle;
+    collapseContent.inert = !isCollapseOpen;
+  }
+}
