@@ -1,14 +1,18 @@
 export default class Accordion {
   constructor(className = 'denhaag-accordion__container') {
     this.collapses = document.getElementsByClassName(className);
+
+    this.events();
   }
 
   events() {
-    Array.from(this.collapses).forEach((collapse) => {
-      collapse.addEventListener('toggle', () => {
-        this.toggleAttributes(collapse);
-      });
-    });
+    if (!this.collapses || !this.collapses.length) {
+      return;
+    }
+
+    Array.from(this.collapses).forEach((collapse) =>
+      collapse.addEventListener('toggle', () => this.toggleAttributes(collapse)),
+    );
   }
 
   toggleAttributes(collapse) {
