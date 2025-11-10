@@ -20,7 +20,7 @@ jobs:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
 
       - name: Set up Node.js version
-        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
+        uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903 # v6.0.0
         with:
           node-version: "20.11.x"
 
@@ -46,7 +46,7 @@ jobs:
         run: yarn build:storybook
 
       - name: Publish to Chromatic
-        uses: chromaui/action@57a72947e9d7a6d213906cd506276c707e0c580f # v11.4.0
+        uses: chromaui/action@ac86f2ff0a458ffbce7b40698abd44c0fa34d4b6 # v13.3.3
         if: |
           github.event.pull_request.draft == false &&
           github.action != 'dependabot[bot]'
@@ -68,7 +68,7 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
 
       - name: Set up Node.js version
-        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
+        uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903 # v6.0.0
         with:
           node-version: "20.11.x"
 
