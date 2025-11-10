@@ -55,7 +55,7 @@ jobs:
           path: storybook-static
 
       - name: Publish to Chromatic
-        uses: chromaui/action@57a72947e9d7a6d213906cd506276c707e0c580f # v11.4.0
+        uses: chromaui/action@ac86f2ff0a458ffbce7b40698abd44c0fa34d4b6 # v13.3.3
         if: |
           github.event.pull_request.draft == false &&
           github.action != 'dependabot[bot]'
