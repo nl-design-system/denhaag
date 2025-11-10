@@ -34,16 +34,9 @@ import readme from "../../README.md";
 <Canvas>
   <Story name="Default">
     <div className="denhaag-accordion">
-      <div className="denhaag-accordion__container">
-        <h3 className="denhaag-accordion__panel">
-          <button
-            aria-expanded="false"
-            aria-controls="default-accordion-details-one"
-            className="denhaag-accordion__title"
-            id="default-accordion1id"
-          >
-            Accordion
-          </button>
+      <details className="denhaag-accordion__container">
+        <summary className="denhaag-accordion__panel" aria-expanded="false">
+          <h3 className="denhaag-accordion__title">Accordion</h3>
           <svg
             className="denhaag-icon"
             width="1em"
@@ -60,13 +53,8 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </h3>
-        <div
-          id="default-accordion-details-one"
-          role="region"
-          aria-labelledby="default-accordion1id"
-          className="denhaag-accordion__details"
-        >
+        </summary>
+        <div className="denhaag-accordion__details" inert="">
           <div className="denhaag-accordion__details-content">
             <p className="utrecht-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
@@ -74,17 +62,10 @@ import readme from "../../README.md";
             </p>
           </div>
         </div>
-      </div>
-      <div className="denhaag-accordion__container">
-        <h3 className="denhaag-accordion__panel">
-          <button
-            aria-expanded="false"
-            aria-controls="default-accordion-details-two"
-            className="denhaag-accordion__title"
-            id="default-accordion2id"
-          >
-            Accordion
-          </button>
+      </details>
+      <details className="denhaag-accordion__container">
+        <summary className="denhaag-accordion__panel" aria-expanded="false">
+          <h3 className="denhaag-accordion__title">Accordion</h3>
           <svg
             className="denhaag-icon"
             width="1em"
@@ -101,13 +82,8 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </h3>
-        <div
-          id="default-accordion-details-two"
-          role="region"
-          aria-labelledby="default-accordion2id"
-          className="denhaag-accordion__details"
-        >
+        </summary>
+        <div className="denhaag-accordion__details" inert="">
           <div className="denhaag-accordion__details-content">
             <p className="utrecht-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
@@ -134,17 +110,12 @@ import readme from "../../README.md";
             </p>
           </div>
         </div>
-      </div>
-      <div className="denhaag-accordion__container">
-        <h3 className="denhaag-accordion__panel">
-          <button
-            aria-expanded="false"
-            aria-controls="default-accordion-details-three"
-            className="denhaag-accordion__title"
-            id="default-accordion3id"
-          >
+      </details>
+      <details className="denhaag-accordion__container">
+        <summary className="denhaag-accordion__panel" aria-expanded="false">
+          <h3 className="denhaag-accordion__title">
             Integer blandit libero quis risus maximus auctor. Proin ullamcorper, metus.
-          </button>
+          </h3>
           <svg
             className="denhaag-icon"
             width="1em"
@@ -161,13 +132,8 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </h3>
-        <div
-          id="default-accordion-details-three"
-          role="region"
-          aria-labelledby="default-accordion3id"
-          className="denhaag-accordion__details"
-        >
+        </summary>
+        <div className="denhaag-accordion__details" inert="">
           <div className="denhaag-accordion__details-content">
             <p className="utrecht-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
@@ -175,7 +141,7 @@ import readme from "../../README.md";
             </p>
           </div>
         </div>
-      </div>
+      </details>
     </div>
   </Story>
 </Canvas>
@@ -185,16 +151,9 @@ import readme from "../../README.md";
 <Canvas>
   <Story name="Disabled">
     <div className="denhaag-accordion">
-      <div className="denhaag-accordion__container">
-        <h3 className="denhaag-accordion__panel">
-          <button
-            aria-expanded="false"
-            aria-controls="disabled-accordion-details-one"
-            className="denhaag-accordion__title"
-            id="disabled-accordion1id"
-          >
-            Accordion
-          </button>
+      <details className="denhaag-accordion__container">
+        <summary className="denhaag-accordion__panel" aria-expanded="false">
+          <h3 className="denhaag-accordion__title">Accordion</h3>
           <svg
             className="denhaag-icon"
             width="1em"
@@ -211,13 +170,8 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </h3>
-        <div
-          id="disabled-accordion-details-one"
-          role="region"
-          aria-labelledby="disabled-accordion1id"
-          className="denhaag-accordion__details"
-        >
+        </summary>
+        <div className="denhaag-accordion__details" inert="">
           <div className="denhaag-accordion__details-content">
             <p className="utrecht-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
@@ -225,18 +179,10 @@ import readme from "../../README.md";
             </p>
           </div>
         </div>
-      </div>
-      <div className="denhaag-accordion__container">
-        <h3 className="denhaag-accordion__panel">
-          <button
-            aria-expanded="false"
-            aria-controls="disabled-accordion-details-two"
-            className="denhaag-accordion__title denhaag-accordion__title--disabled"
-            id="disabled-accordion2id"
-            disabled
-          >
-            Accordion
-          </button>
+      </details>
+      <details className="denhaag-accordion__container denhaag-accordion__container--disabled" inert="">
+        <summary className="denhaag-accordion__panel" aria-expanded="false">
+          <h3 className="denhaag-accordion__title denhaag-accordion__title">Accordion</h3>
           <svg
             className="denhaag-icon"
             width="1em"
@@ -253,13 +199,8 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </h3>
-        <div
-          id="disabled-accordion-details-two"
-          role="region"
-          aria-labelledby="disabled-accordion2id"
-          className="denhaag-accordion__details"
-        >
+        </summary>
+        <div className="denhaag-accordion__details" inert="">
           <div className="denhaag-accordion__details-content">
             <p className="utrecht-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
@@ -267,17 +208,10 @@ import readme from "../../README.md";
             </p>
           </div>
         </div>
-      </div>
-      <div className="denhaag-accordion__container">
-        <h3 className="denhaag-accordion__panel">
-          <button
-            aria-expanded="false"
-            aria-controls="disabled-accordion-details-three"
-            className="denhaag-accordion__title"
-            id="disabled-accordion3id"
-          >
-            Accordion
-          </button>
+      </details>
+      <details className="denhaag-accordion__container">
+        <summary className="denhaag-accordion__panel" aria-expanded="false" disabled id="disabled-accordion3id">
+          <h3 className="denhaag-accordion__title">Accordion</h3>
           <svg
             className="denhaag-icon"
             width="1em"
@@ -294,13 +228,8 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </h3>
-        <div
-          id="disabled-accordion-details-three"
-          role="region"
-          aria-labelledby="disabled-accordion3id"
-          className="denhaag-accordion__details"
-        >
+        </summary>
+        <div className="denhaag-accordion__details" inert="">
           <div className="denhaag-accordion__details-content">
             <p className="utrecht-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
@@ -308,7 +237,7 @@ import readme from "../../README.md";
             </p>
           </div>
         </div>
-      </div>
+      </details>
     </div>
   </Story>
 </Canvas>
@@ -318,16 +247,9 @@ import readme from "../../README.md";
 <Canvas>
   <Story name="Focus">
     <div className="denhaag-accordion">
-      <div className="denhaag-accordion__container">
-        <h3 className="denhaag-accordion__panel">
-          <button
-            aria-expanded="false"
-            aria-controls="focus-accordion-details-one"
-            className="denhaag-accordion__title"
-            id="focus-accordion1id"
-          >
-            Accordion
-          </button>
+      <details className="denhaag-accordion__container">
+        <summary className="denhaag-accordion__panel" aria-expanded="false">
+          <h3 className="denhaag-accordion__title">Accordion</h3>
           <svg
             className="denhaag-icon"
             width="1em"
@@ -344,13 +266,8 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </h3>
-        <div
-          id="focus-accordion-details-one"
-          role="region"
-          aria-labelledby="focus-accordion1id"
-          className="denhaag-accordion__details"
-        >
+        </summary>
+        <div className="denhaag-accordion__details">
           <div className="denhaag-accordion__details-content">
             <p className="utrecht-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
@@ -358,17 +275,10 @@ import readme from "../../README.md";
             </p>
           </div>
         </div>
-      </div>
-      <div className="denhaag-accordion__container">
-        <h3 className="denhaag-accordion__panel">
-          <button
-            aria-expanded="false"
-            aria-controls="focus-accordion-details-two"
-            className="denhaag-accordion__title denhaag-accordion__title--focus"
-            id="focus-accordion2id"
-          >
-            Accordion
-          </button>
+      </details>
+      <details className="denhaag-accordion__container">
+        <summary className="denhaag-accordion__panel denhaag-accordion__panel--focus">
+          <h3 className="denhaag-accordion__title">Accordion</h3>
           <svg
             className="denhaag-icon"
             width="1em"
@@ -385,13 +295,8 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </h3>
-        <div
-          id="focus-accordion-details-two"
-          role="region"
-          aria-labelledby="focus-accordion2id"
-          className="denhaag-accordion__details"
-        >
+        </summary>
+        <div className="denhaag-accordion__details">
           <div className="denhaag-accordion__details-content">
             <p className="utrecht-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
@@ -399,17 +304,10 @@ import readme from "../../README.md";
             </p>
           </div>
         </div>
-      </div>
-      <div className="denhaag-accordion__container">
-        <h3 className="denhaag-accordion__panel">
-          <button
-            aria-expanded="false"
-            aria-controls="focus-accordion-details-three"
-            className="denhaag-accordion__title"
-            id="focus-accordion3id"
-          >
-            Accordion
-          </button>
+      </details>
+      <details className="denhaag-accordion__container">
+        <summary className="denhaag-accordion__panel">
+          <h3 className="denhaag-accordion__title">Accordion</h3>
           <svg
             className="denhaag-icon"
             width="1em"
@@ -426,13 +324,8 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </h3>
-        <div
-          id="focus-accordion-details-three"
-          role="region"
-          aria-labelledby="focus-accordion3id"
-          className="denhaag-accordion__details"
-        >
+        </summary>
+        <div className="denhaag-accordion__details">
           <div className="denhaag-accordion__details-content">
             <p className="utrecht-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
@@ -440,7 +333,7 @@ import readme from "../../README.md";
             </p>
           </div>
         </div>
-      </div>
+      </details>
     </div>
   </Story>
 </Canvas>
@@ -450,16 +343,9 @@ import readme from "../../README.md";
 <Canvas>
   <Story name="Hover">
     <div className="denhaag-accordion">
-      <div className="denhaag-accordion__container">
-        <h3 className="denhaag-accordion__panel">
-          <button
-            aria-expanded="false"
-            aria-controls="hover-accordion-details-one"
-            className="denhaag-accordion__title"
-            id="hover-accordion1id"
-          >
-            Accordion
-          </button>
+      <details className="denhaag-accordion__container">
+        <summary className="denhaag-accordion__panel" aria-expanded="false">
+          <h3 className="denhaag-accordion__title">Accordion</h3>
           <svg
             className="denhaag-icon"
             width="1em"
@@ -476,13 +362,8 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </h3>
-        <div
-          id="hover-accordion-details-one"
-          role="region"
-          aria-labelledby="hover-accordion1id"
-          className="denhaag-accordion__details"
-        >
+        </summary>
+        <div className="denhaag-accordion__details" inert="">
           <div className="denhaag-accordion__details-content">
             <p className="utrecht-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
@@ -490,17 +371,10 @@ import readme from "../../README.md";
             </p>
           </div>
         </div>
-      </div>
-      <div className="denhaag-accordion__container">
-        <h3 className="denhaag-accordion__panel denhaag-accordion__panel--hover">
-          <button
-            aria-expanded="false"
-            aria-controls="hover-accordion-details-two"
-            className="denhaag-accordion__title"
-            id="hover-accordion2id"
-          >
-            Accordion
-          </button>
+      </details>
+      <details className="denhaag-accordion__container">
+        <summary className="denhaag-accordion__panel denhaag-accordion__panel--hover" aria-expanded="false">
+          <h3 className="denhaag-accordion__title">Accordion</h3>
           <svg
             className="denhaag-icon"
             width="1em"
@@ -517,13 +391,8 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </h3>
-        <div
-          id="hover-accordion-details-two"
-          role="region"
-          aria-labelledby="hover-accordion2id"
-          className="denhaag-accordion__details"
-        >
+        </summary>
+        <div className="denhaag-accordion__details" inert="">
           <div className="denhaag-accordion__details-content">
             <p className="utrecht-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
@@ -531,17 +400,10 @@ import readme from "../../README.md";
             </p>
           </div>
         </div>
-      </div>
-      <div className="denhaag-accordion__container">
-        <h3 className="denhaag-accordion__panel">
-          <button
-            aria-expanded="false"
-            aria-controls="hover-accordion-details-three"
-            className="denhaag-accordion__title"
-            id="hover-accordion3id"
-          >
-            Accordion
-          </button>
+      </details>
+      <details className="denhaag-accordion__container">
+        <summary className="denhaag-accordion__panel" aria-expanded="false">
+          <h3 className="denhaag-accordion__title">Accordion</h3>
           <svg
             className="denhaag-icon"
             width="1em"
@@ -558,13 +420,8 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </h3>
-        <div
-          id="hover-accordion-details-three"
-          role="region"
-          aria-labelledby="hover-accordion3id"
-          className="denhaag-accordion__details"
-        >
+        </summary>
+        <div className="denhaag-accordion__details" inert="">
           <div className="denhaag-accordion__details-content">
             <p className="utrecht-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
@@ -572,7 +429,7 @@ import readme from "../../README.md";
             </p>
           </div>
         </div>
-      </div>
+      </details>
     </div>
   </Story>
 </Canvas>
@@ -582,16 +439,9 @@ import readme from "../../README.md";
 <Canvas>
   <Story name="Open">
     <div className="denhaag-accordion">
-      <div className="denhaag-accordion__container">
-        <h3 className="denhaag-accordion__panel">
-          <button
-            aria-expanded="false"
-            aria-controls="open-accordion-details-one"
-            className="denhaag-accordion__title"
-            id="open-accordion1id"
-          >
-            Accordion
-          </button>
+      <details className="denhaag-accordion__container">
+        <summary className="denhaag-accordion__panel" aria-expanded="false">
+          <h3 className="denhaag-accordion__title">Accordion</h3>
           <svg
             className="denhaag-icon"
             width="1em"
@@ -608,13 +458,8 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </h3>
-        <div
-          id="open-accordion-details-one"
-          role="region"
-          aria-labelledby="open-accordion1id"
-          className="denhaag-accordion__details"
-        >
+        </summary>
+        <div className="denhaag-accordion__details" inert="">
           <div className="denhaag-accordion__details-content">
             <p className="utrecht-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
@@ -622,17 +467,10 @@ import readme from "../../README.md";
             </p>
           </div>
         </div>
-      </div>
-      <div className="denhaag-accordion__container denhaag-accordion__container--open" open>
-        <h3 className="denhaag-accordion__panel">
-          <button
-            aria-expanded="true"
-            aria-controls="open-accordion-details-two"
-            className="denhaag-accordion__title"
-            id="open-accordion2id"
-          >
-            Accordion
-          </button>
+      </details>
+      <details className="denhaag-accordion__container denhaag-accordion__container--open" open>
+        <summary className="denhaag-accordion__panel" aria-expanded="true">
+          <h3 className="denhaag-accordion__title">Accordion</h3>
           <svg
             className="denhaag-icon"
             width="1em"
@@ -649,13 +487,8 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </h3>
-        <div
-          id="open-accordion-details-two"
-          role="region"
-          aria-labelledby="open-accordion2id"
-          className="denhaag-accordion__details"
-        >
+        </summary>
+        <div className="denhaag-accordion__details">
           <div className="denhaag-accordion__details-content">
             <p className="utrecht-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
@@ -663,17 +496,10 @@ import readme from "../../README.md";
             </p>
           </div>
         </div>
-      </div>
-      <div className="denhaag-accordion__container">
-        <h3 className="denhaag-accordion__panel">
-          <button
-            aria-expanded="false"
-            aria-controls="open-accordion-details-three"
-            className="denhaag-accordion__title"
-            id="open-accordion3id"
-          >
-            Accordion
-          </button>
+      </details>
+      <details className="denhaag-accordion__container">
+        <summary className="denhaag-accordion__panel" aria-expanded="false">
+          <h3 className="denhaag-accordion__title">Accordion</h3>
           <svg
             className="denhaag-icon"
             width="1em"
@@ -690,13 +516,8 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </h3>
-        <div
-          id="open-accordion-details-three"
-          role="region"
-          aria-labelledby="open-accordion3id"
-          className="denhaag-accordion__details"
-        >
+        </summary>
+        <div className="denhaag-accordion__details" inert="">
           <div className="denhaag-accordion__details-content">
             <p className="utrecht-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
@@ -704,7 +525,7 @@ import readme from "../../README.md";
             </p>
           </div>
         </div>
-      </div>
+      </details>
     </div>
   </Story>
 </Canvas>
@@ -714,16 +535,9 @@ import readme from "../../README.md";
 <Canvas>
   <Story name="Open - hover">
     <div className="denhaag-accordion">
-      <div className="denhaag-accordion__container">
-        <h3 className="denhaag-accordion__panel">
-          <button
-            aria-expanded="false"
-            aria-controls="open-accordion-details-one"
-            className="denhaag-accordion__title"
-            id="open-accordion1id"
-          >
-            Accordion
-          </button>
+      <details className="denhaag-accordion__container">
+        <summary className="denhaag-accordion__panel" aria-expanded="false">
+          <h3 className="denhaag-accordion__title">Accordion</h3>
           <svg
             className="denhaag-icon"
             width="1em"
@@ -740,13 +554,8 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </h3>
-        <div
-          id="open-accordion-details-one"
-          role="region"
-          aria-labelledby="open-accordion1id"
-          className="denhaag-accordion__details"
-        >
+        </summary>
+        <div className="denhaag-accordion__details" inert="">
           <div className="denhaag-accordion__details-content">
             <p className="utrecht-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
@@ -754,17 +563,10 @@ import readme from "../../README.md";
             </p>
           </div>
         </div>
-      </div>
-      <div className="denhaag-accordion__container denhaag-accordion__container--open" open>
-        <h3 className="denhaag-accordion__panel denhaag-accordion__panel--hover">
-          <button
-            aria-expanded="true"
-            aria-controls="open-accordion-details-two"
-            className="denhaag-accordion__title"
-            id="open-accordion2id"
-          >
-            Accordion
-          </button>
+      </details>
+      <details className="denhaag-accordion__container denhaag-accordion__container--open" open>
+        <summary className="denhaag-accordion__panel denhaag-accordion__panel--hover" aria-expanded="true">
+          <h3 className="denhaag-accordion__title">Accordion</h3>
           <svg
             className="denhaag-icon"
             width="1em"
@@ -781,13 +583,8 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </h3>
-        <div
-          id="open-accordion-details-two"
-          role="region"
-          aria-labelledby="open-accordion2id"
-          className="denhaag-accordion__details"
-        >
+        </summary>
+        <div className="denhaag-accordion__details">
           <div className="denhaag-accordion__details-content">
             <p className="utrecht-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
@@ -795,17 +592,10 @@ import readme from "../../README.md";
             </p>
           </div>
         </div>
-      </div>
-      <div className="denhaag-accordion__container">
-        <h3 className="denhaag-accordion__panel">
-          <button
-            aria-expanded="false"
-            aria-controls="open-accordion-details-three"
-            className="denhaag-accordion__title"
-            id="open-accordion3id"
-          >
-            Accordion
-          </button>
+      </details>
+      <details className="denhaag-accordion__container">
+        <summary className="denhaag-accordion__panel" aria-expanded="false">
+          <h3 className="denhaag-accordion__title">Accordion</h3>
           <svg
             className="denhaag-icon"
             width="1em"
@@ -822,13 +612,8 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </h3>
-        <div
-          id="open-accordion-details-three"
-          role="region"
-          aria-labelledby="open-accordion3id"
-          className="denhaag-accordion__details"
-        >
+        </summary>
+        <div className="denhaag-accordion__details" inert="">
           <div className="denhaag-accordion__details-content">
             <p className="utrecht-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
@@ -836,7 +621,7 @@ import readme from "../../README.md";
             </p>
           </div>
         </div>
-      </div>
+      </details>
     </div>
   </Story>
 </Canvas>
@@ -846,16 +631,9 @@ import readme from "../../README.md";
 <Canvas>
   <Story name="Open - focus">
     <div className="denhaag-accordion">
-      <div className="denhaag-accordion__container">
-        <h3 className="denhaag-accordion__panel">
-          <button
-            aria-expanded="false"
-            aria-controls="open-accordion-details-one"
-            className="denhaag-accordion__title"
-            id="open-accordion1id"
-          >
-            Accordion
-          </button>
+      <details className="denhaag-accordion__container">
+        <summary className="denhaag-accordion__panel" aria-expanded="false">
+          <h3 className="denhaag-accordion__title">Accordion</h3>
           <svg
             className="denhaag-icon"
             width="1em"
@@ -872,13 +650,8 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </h3>
-        <div
-          id="open-accordion-details-one"
-          role="region"
-          aria-labelledby="open-accordion1id"
-          className="denhaag-accordion__details"
-        >
+        </summary>
+        <div className="denhaag-accordion__details" inert="">
           <div className="denhaag-accordion__details-content">
             <p className="utrecht-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
@@ -886,17 +659,10 @@ import readme from "../../README.md";
             </p>
           </div>
         </div>
-      </div>
-      <div className="denhaag-accordion__container denhaag-accordion__container--open" open>
-        <h3 className="denhaag-accordion__panel">
-          <button
-            aria-expanded="true"
-            aria-controls="open-accordion-details-two"
-            className="denhaag-accordion__title denhaag-accordion__title--focus"
-            id="open-accordion2id"
-          >
-            Accordion
-          </button>
+      </details>
+      <details className="denhaag-accordion__container denhaag-accordion__container--open" open>
+        <summary className="denhaag-accordion__panel denhaag-accordion__panel--focus" aria-expanded="true">
+          <h3 className="denhaag-accordion__title">Accordion</h3>
           <svg
             className="denhaag-icon"
             width="1em"
@@ -913,13 +679,8 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </h3>
-        <div
-          id="open-accordion-details-two"
-          role="region"
-          aria-labelledby="open-accordion2id"
-          className="denhaag-accordion__details"
-        >
+        </summary>
+        <div className="denhaag-accordion__details">
           <div className="denhaag-accordion__details-content">
             <p className="utrecht-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
@@ -927,17 +688,10 @@ import readme from "../../README.md";
             </p>
           </div>
         </div>
-      </div>
-      <div className="denhaag-accordion__container">
-        <h3 className="denhaag-accordion__panel">
-          <button
-            aria-expanded="false"
-            aria-controls="open-accordion-details-three"
-            className="denhaag-accordion__title"
-            id="open-accordion3id"
-          >
-            Accordion
-          </button>
+      </details>
+      <details className="denhaag-accordion__container">
+        <summary className="denhaag-accordion__panel" aria-expanded="false">
+          <h3 className="denhaag-accordion__title">Accordion</h3>
           <svg
             className="denhaag-icon"
             width="1em"
@@ -954,13 +708,8 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </h3>
-        <div
-          id="open-accordion-details-three"
-          role="region"
-          aria-labelledby="open-accordion3id"
-          className="denhaag-accordion__details"
-        >
+        </summary>
+        <div className="denhaag-accordion__details" inert="">
           <div className="denhaag-accordion__details-content">
             <p className="utrecht-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
@@ -968,7 +717,7 @@ import readme from "../../README.md";
             </p>
           </div>
         </div>
-      </div>
+      </details>
     </div>
   </Story>
 </Canvas>
@@ -978,16 +727,9 @@ import readme from "../../README.md";
 <Canvas>
   <Story name="Reduced motion">
     <div className="denhaag-accordion denhaag-accordion--reduced-motion">
-      <div className="denhaag-accordion__container">
-        <h3 className="denhaag-accordion__panel">
-          <button
-            aria-expanded="false"
-            aria-controls="default-accordion-details-one"
-            className="denhaag-accordion__title"
-            id="default-accordion1id"
-          >
-            Accordion
-          </button>
+      <details className="denhaag-accordion__container">
+        <summary className="denhaag-accordion__panel" aria-expanded="false">
+          <h3 className="denhaag-accordion__title">Accordion</h3>
           <svg
             className="denhaag-icon"
             width="1em"
@@ -1004,13 +746,8 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </h3>
-        <div
-          id="default-accordion-details-one"
-          role="region"
-          aria-labelledby="default-accordion1id"
-          className="denhaag-accordion__details"
-        >
+        </summary>
+        <div className="denhaag-accordion__details" inert="">
           <div className="denhaag-accordion__details-content">
             <p className="utrecht-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
@@ -1018,17 +755,10 @@ import readme from "../../README.md";
             </p>
           </div>
         </div>
-      </div>
-      <div className="denhaag-accordion__container">
-        <h3 className="denhaag-accordion__panel">
-          <button
-            aria-expanded="false"
-            aria-controls="default-accordion-details-two"
-            className="denhaag-accordion__title"
-            id="default-accordion2id"
-          >
-            Accordion
-          </button>
+      </details>
+      <details className="denhaag-accordion__container">
+        <summary className="denhaag-accordion__panel" aria-expanded="false">
+          <h3 className="denhaag-accordion__title">Accordion</h3>
           <svg
             className="denhaag-icon"
             width="1em"
@@ -1045,13 +775,8 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </h3>
-        <div
-          id="default-accordion-details-two"
-          role="region"
-          aria-labelledby="default-accordion2id"
-          className="denhaag-accordion__details"
-        >
+        </summary>
+        <div className="denhaag-accordion__details" inert="">
           <div className="denhaag-accordion__details-content">
             <p className="utrecht-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
@@ -1077,17 +802,12 @@ import readme from "../../README.md";
             </p>
           </div>
         </div>
-      </div>
-      <div className="denhaag-accordion__container">
-        <h3 className="denhaag-accordion__panel">
-          <button
-            aria-expanded="false"
-            aria-controls="default-accordion-details-three"
-            className="denhaag-accordion__title"
-            id="default-accordion3id"
-          >
+      </details>
+      <details className="denhaag-accordion__container">
+        <summary className="denhaag-accordion__panel" aria-expanded="false">
+          <h3 className="denhaag-accordion__title">
             Integer blandit libero quis risus maximus auctor. Proin ullamcorper, metus.
-          </button>
+          </h3>
           <svg
             className="denhaag-icon"
             width="1em"
@@ -1104,13 +824,8 @@ import readme from "../../README.md";
               fill="currentColor"
             ></path>
           </svg>
-        </h3>
-        <div
-          id="default-accordion-details-three"
-          role="region"
-          aria-labelledby="default-accordion3id"
-          className="denhaag-accordion__details"
-        >
+        </summary>
+        <div className="denhaag-accordion__details" inert="">
           <div className="denhaag-accordion__details-content">
             <p className="utrecht-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit
@@ -1118,7 +833,7 @@ import readme from "../../README.md";
             </p>
           </div>
         </div>
-      </div>
+      </details>
     </div>
   </Story>
 </Canvas>

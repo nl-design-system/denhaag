@@ -17,6 +17,14 @@
   position: relative;
 }
 
+.denhaag-accordion__container::details-content {
+  content-visibility: visible !important;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows var(--denhaag-accordion-transition-duration, 400ms) ease;
+}
+
 .denhaag-accordion__container:last-child {
   border-bottom-left-radius: var(--denhaag-accordion-container-border-radius, var(--denhaag-border-radius));
   border-bottom-right-radius: var(--denhaag-accordion-container-border-radius, var(--denhaag-border-radius));
@@ -68,61 +76,47 @@
   flex-grow: 1;
   padding-block: var(--denhaag-space-sm);
   padding-inline: var(--denhaag-space-md) calc((var(--denhaag-space-md) * 2) + var(--denhaag-space-xl));
+  margin-block: 0;
 }
 
-.denhaag-accordion__title--focus,
-.denhaag-accordion__title--focus + .denhaag-icon,
-.denhaag-accordion__panel--hover .denhaag-accordion__title,
-.denhaag-accordion__panel--hover .denhaag-icon,
-.denhaag-accordion__title:focus-visible {
+.denhaag-accordion__panel--hover .denhaag-accordion__title {
   color: var(--denhaag-color-green-3);
   outline: 0;
 }
 
-.denhaag-accordion__container--open .denhaag-accordion__title {
-  color: inherit;
+.denhaag-accordion__container[open] .denhaag-accordion__title {
+  color: var(--denhaag-color-green-3);
+  font-weight: var(--denhaag-typography-weight-bold);
 }
 
-.denhaag-accordion__title--disabled,
-.denhaag-accordion__title[disabled],
-.denhaag-accordion__title--disabled + .denhaag-icon,
-.denhaag-accordion__title[disabled] + .denhaag-icon {
-  z-index: 1;
-}
-
-.denhaag-accordion__title:focus-visible,
-.denhaag-accordion__title:focus-visible + .denhaag-icon {
+.denhaag-accordion__panel--hover > .denhaag-icon {
   color: var(--denhaag-color-green-3);
   outline: 0;
 }
 
-.denhaag-accordion__container--open .denhaag-accordion__panel--hover .denhaag-accordion__title,
-.denhaag-accordion__container--open .denhaag-accordion__panel--hover .denhaag-icon,
-.denhaag-accordion__container--open .denhaag-accordion__panel:hover .denhaag-accordion__title,
-.denhaag-accordion__container--open .denhaag-accordion__panel:hover .denhaag-icon {
-  color: var(--denhaag-color-green-4);
-}
+.denhaag-accordion__container[open] .denhaag-accordion__panel > .denhaag-icon {
+  --denhaag-accordion-icon-transform: rotate(180deg);
 
-.denhaag-accordion__panel:hover .denhaag-accordion__title:not([disabled]),
-.denhaag-accordion__panel:hover .denhaag-accordion__title:not([disabled]) + .denhaag-icon {
   color: var(--denhaag-color-green-3);
-  outline: 0;
 }
 
-.denhaag-accordion__title--disabled::before,
-.denhaag-accordion__title[disabled]::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+.denhaag-accordion__container--disabled,
+.denhaag-accordion__container[inert] {
   background-color: var(--denhaag-color-grey-1);
-  z-index: -1;
 }
 
-.denhaag-accordion__title--focus::after,
-.denhaag-accordion__title:focus-visible::after {
+.denhaag-accordion__container[open]::details-content {
+  grid-template-rows: 1fr;
+}
+
+.denhaag-accordion__container:not([inert]) .denhaag-accordion__panel:hover .denhaag-accordion__title,
+.denhaag-accordion__container:not([inert]) .denhaag-accordion__panel:hover .denhaag-icon {
+  color: var(--denhaag-color-green-3);
+  outline: 0;
+}
+
+.denhaag-accordion__panel--focus::after,
+.denhaag-accordion__panel:focus-visible::after {
   border-radius: var(--denhaag-border-radius);
   content: "";
   height: 100%;
@@ -133,24 +127,9 @@
   width: 100%;
 }
 
-.denhaag-accordion__container--open {
-  --denhaag-accordion-icon-transform: rotate(-180deg);
-  --denhaag-accordion-transition-duration: var(--denhaag-accordion-open-transition-duration, 500ms);
-  --denhaag-accordion-details-height: var(--denhaag-accordion-details-max-height, 100%); // Value set by JS.
-}
-
-.denhaag-accordion__container--open .denhaag-accordion__panel {
-  --denhaag-accordion-panel-font-weight: var(--denhaag-typography-weight-bold);
-
-  color: var(--denhaag-accordion-container-open-panel-color, var(--denhaag-color-green-3));
-}
-
 .denhaag-accordion__details {
-  display: none;
-  max-height: var(--denhaag-accordion-details-height);
   overflow: hidden;
   padding-block-start: var(--denhaag-space-3xs);
-  transition: max-height var(--denhaag-accordion-transition-duration, 400ms) ease-in-out;
 }
 
 .denhaag-accordion__details-content {
