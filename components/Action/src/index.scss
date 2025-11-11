@@ -35,15 +35,22 @@
     }
   }
 
+  &__context {
+    display: flex;
+    flex-shrink: 0;
+    gap: var(--denhaag-action-context-gap);
+
+    @media (width >= 768px) {
+      align-items: center;
+    }
+  }
+
   &__details {
     display: flex;
     flex-shrink: 0;
-    flex-direction: column;
     gap: var(--denhaag-action-details-gap);
 
     @media (width >= 768px) {
-      flex-direction: row;
-      align-items: center;
       gap: var(--denhaag-action-details-lg-gap);
     }
   }

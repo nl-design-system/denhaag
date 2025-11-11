@@ -5,6 +5,7 @@ import { ActionContent } from './ActionContent';
 import { ActionDetails } from './ActionDetails';
 import { BasicLink } from '@gemeente-denhaag/link';
 import { ActionActions } from './ActionActions';
+import { ActionContext } from './ActionContext';
 
 export const ActionSingle = ({
   children,
@@ -22,10 +23,12 @@ export const ActionSingle = ({
   return (
     <Link href={link} className={clsx('denhaag-action denhaag-action--single', className)} {...rest}>
       <ActionContent>{children}</ActionContent>
-      <ActionDetails dateTime={dateTime} now={now} locale={locale} relativeDate={relativeDate} labels={labels}>
-        {details}
-      </ActionDetails>
-      <ActionActions />
+      <ActionContext>
+        <ActionDetails dateTime={dateTime} now={now} locale={locale} relativeDate={relativeDate} labels={labels}>
+          {details}
+        </ActionDetails>
+        <ActionActions />
+      </ActionContext>
     </Link>
   );
 };
