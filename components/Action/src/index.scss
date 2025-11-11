@@ -26,6 +26,15 @@
     padding-block-end: var(--denhaag-action-lg-padding-block-end);
   }
 
+  &__content {
+    flex-grow: 1;
+
+    b,
+    strong {
+      font-weight: var(--denhaag-action-content-bold-font-weight);
+    }
+  }
+
   &__details {
     display: flex;
     flex-shrink: 0;
@@ -36,13 +45,6 @@
       flex-direction: row;
       align-items: center;
       gap: var(--denhaag-action-details-lg-gap);
-    }
-  }
-
-  &__content {
-    b,
-    strong {
-      font-weight: var(--denhaag-action-content-bold-font-weight);
     }
   }
 

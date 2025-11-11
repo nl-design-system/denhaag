@@ -4,6 +4,7 @@ import { ActionMulti } from '@gemeente-denhaag/action';
 import readme from '../../../../components/Action/README.md?raw';
 import { templateLocale } from '../templates/util';
 import { ButtonLink } from '@gemeente-denhaag/button-link';
+import { DataBadge } from '@gemeente-denhaag/data-badge';
 
 const labels = {
   today: 'vandaag',
@@ -61,6 +62,10 @@ export const Focus: Story = {
       </ButtonLink>
     ),
   },
+};
+
+export const WithBadge: Story = {
+  args: { ...Default.args, details: <DataBadge status="neutral">Test</DataBadge> },
 };
 
 export const WithDate: Story = {

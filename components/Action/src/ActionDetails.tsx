@@ -1,6 +1,5 @@
 import React from 'react';
 import { ActionDate } from './ActionDate';
-import { ActionActions } from './ActionActions';
 import { FormatDateLabels } from '@gemeente-denhaag/utils';
 
 interface ActionDetailsProps {
@@ -15,8 +14,8 @@ interface ActionDetailsProps {
 export const ActionDetails = ({ children, dateTime, now, locale, relativeDate, labels }: ActionDetailsProps) => {
   return (
     <div className="denhaag-action__details">
+      {children}
       {dateTime && <ActionDate dateTime={dateTime} now={now} locale={locale} relative={relativeDate} labels={labels} />}
-      <ActionActions>{children}</ActionActions>
     </div>
   );
 };
