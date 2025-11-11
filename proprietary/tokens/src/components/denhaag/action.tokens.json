@@ -2,7 +2,7 @@
   "denhaag": {
     "action": {
       "gap": {
-        "value": "{denhaag.space.inline.xs}"
+        "value": "{denhaag.space.inline.md}"
       },
       "color": {
         "value": "{denhaag.color.grey.5}"
@@ -30,6 +30,11 @@
           "font-weight": {
             "value": "{denhaag.typography.weight.semibold}"
           }
+        }
+      },
+      "context": {
+        "gap": {
+          "value": "{denhaag.space.inline.sm}"
         }
       },
       "details": {
@@ -118,7 +123,7 @@
       },
       "lg": {
         "gap": {
-          "value": "{denhaag.space.inline.xl}"
+          "value": "{denhaag.space.inline.2xl}"
         },
         "padding-block-start": {
           "value": "{denhaag.space.block.sm}"
