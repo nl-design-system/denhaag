@@ -52,7 +52,7 @@ const decorators: typeof meta.decorators = [
 
 export const Default: Story = {
   args: {
-    title: 'Shrimp and Chorizo Paella fwaefawef awef awe',
+    title: 'Shrimp and Chorizo Paella',
     subTitle: 'This impressive paella is a perfect party dish and a fun meal to cook.',
     context: '',
     href: '#',
