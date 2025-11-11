@@ -1,5 +1,15 @@
 # @gemeente-denhaag/action
 
+## 4.1.0
+
+### Minor Changes
+
+- d2d9ff9: Action component now has a details prop
+
+### Patch Changes
+
+- 3446d8d: Fix shrink date
+
 ## 4.0.2
 
 ### Patch Changes
