@@ -5,6 +5,7 @@ import React from 'react';
 import readme from '../../../../components/Action/README.md?raw';
 import tokensDefinition from '../../../../components/Action/tokens.json';
 import { templateLocale } from '../templates/util';
+import { DataBadge } from '@gemeente-denhaag/data-badge';
 
 const labels = {
   today: 'vandaag',
@@ -51,6 +52,10 @@ export const Hover: Story = {
 
 export const Focus: Story = {
   args: { ...Default.args, className: 'denhaag-action--focus' },
+};
+
+export const WithBadge: Story = {
+  args: { ...Default.args, details: <DataBadge status="neutral">Test</DataBadge> },
 };
 
 export const WithDate: Story = {
