@@ -4,6 +4,7 @@ import { ActionMultiProps } from './Action';
 import { ActionContent } from './ActionContent';
 import { ActionDetails } from './ActionDetails';
 import { ActionActions } from './ActionActions';
+import { ActionContext } from './ActionContext';
 
 export const ActionMulti = ({
   children,
@@ -20,10 +21,12 @@ export const ActionMulti = ({
   return (
     <div className={clsx('denhaag-action denhaag-action--multi', className)} {...rest}>
       <ActionContent>{children}</ActionContent>
-      <ActionDetails dateTime={dateTime} now={now} locale={locale} relativeDate={relativeDate} labels={labels}>
-        {details}
-      </ActionDetails>
-      <ActionActions>{actions}</ActionActions>
+      <ActionContext>
+        <ActionDetails dateTime={dateTime} now={now} locale={locale} relativeDate={relativeDate} labels={labels}>
+          {details}
+        </ActionDetails>
+        <ActionActions>{actions}</ActionActions>
+      </ActionContext>
     </div>
   );
 };
