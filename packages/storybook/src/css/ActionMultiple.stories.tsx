@@ -1,4 +1,4 @@
-import reactMeta from '../react/Action.stories';
+import reactMeta from '../react/ActionMultiple.stories';
 
 const meta: typeof reactMeta = {
   ...reactMeta,
@@ -14,6 +14,6 @@ export {
   WithDateRelative,
   WithDateWarning,
   List,
-} from '../react/Action.stories';
+} from '../react/ActionMultiple.stories';
 
 export default meta;
