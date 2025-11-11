@@ -34,7 +34,12 @@
       },
       "context": {
         "gap": {
-          "value": "{denhaag.space.inline.sm}"
+          "value": "{denhaag.space.inline.md}"
+        },
+        "lg": {
+          "gap": {
+            "value": "{denhaag.space.inline.sm}"
+          }
         }
       },
       "details": {
@@ -43,7 +48,7 @@
         },
         "lg": {
           "gap": {
-            "value": "{denhaag.space.inline.xl}"
+            "value": "{denhaag.space.inline.sm}"
           }
         }
       },
