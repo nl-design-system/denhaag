@@ -1,5 +1,12 @@
 # @gemeente-denhaag/page-index
 
+## 4.0.1
+
+### Patch Changes
+
+- Updated dependencies [b400f45]
+  - @gemeente-denhaag/link@4.0.1
+
 ## 4.0.0
 
 ### Major Changes

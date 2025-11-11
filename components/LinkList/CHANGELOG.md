@@ -1,5 +1,12 @@
 # @gemeente-denhaag/link-list
 
+## 6.1.1
+
+### Patch Changes
+
+- Updated dependencies [b400f45]
+  - @gemeente-denhaag/link@4.0.1
+
 ## 6.1.0
 
 ### Minor Changes

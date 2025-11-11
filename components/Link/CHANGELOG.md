@@ -1,5 +1,11 @@
 # @gemeente-denhaag/link
 
+## 4.0.1
+
+### Patch Changes
+
+- b400f45: Bump version to test npm publish
+
 ## 4.0.0
 
 ### Major Changes
