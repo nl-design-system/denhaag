@@ -1,5 +1,21 @@
 # @gemeente-denhaag/storybook
 
+## 5.3.0
+
+### Minor Changes
+
+- d2d9ff9: Action component now has a details prop
+
+### Patch Changes
+
+- 3446d8d: Fix shrink date
+- Updated dependencies [3446d8d]
+- Updated dependencies [d2d9ff9]
+  - @gemeente-denhaag/action@4.1.0
+  - @gemeente-denhaag/card@5.0.3
+  - @gemeente-denhaag/card-authentication@2.0.5
+  - @gemeente-denhaag/card-group@2.0.5
+
 ## 5.2.2
 
 ### Patch Changes

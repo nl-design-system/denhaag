@@ -1,5 +1,11 @@
 # @gemeente-denhaag/card
 
+## 5.0.3
+
+### Patch Changes
+
+- 3446d8d: Fix shrink date
+
 ## 5.0.2
 
 ### Patch Changes
