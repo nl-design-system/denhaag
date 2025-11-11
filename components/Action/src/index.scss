@@ -37,19 +37,19 @@
 
   &__context {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: var(--denhaag-action-context-gap);
 
     @media (width >= 768px) {
+      flex-direction: row;
+      align-items: center;
       gap: var(--denhaag-action-context-lg-gap);
     }
   }
 
   &__details {
     display: flex;
-    flex-grow: 1;
-    flex-shrink: 0;
-    align-items: center;
+    flex: 1 0 auto;
     gap: var(--denhaag-action-details-gap);
 
     @media (width >= 768px) {
@@ -124,6 +124,16 @@
       outline-color: var(--denhaag-file-focus-outline-color);
       outline-width: var(--denhaag-file-focus-outline-width);
       outline-style: var(--denhaag-file-focus-outline-style);
+    }
+
+    .denhaag-action__context {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: var(--denhaag-action-single-details-gap);
+
+      @media (width >= 768px) {
+        gap: var(--denhaag-action-single-details-lg-gap);
+      }
     }
   }
 
