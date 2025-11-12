@@ -31,5 +31,10 @@
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+  },
+  "devDependencies": {
+    "@gemeente-denhaag/button": "0.2.3-www-denhaag-nl.149",
+    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.149",
+    "@gemeente-denhaag/link": "0.2.3-www-denhaag-nl.149"
   }
 }

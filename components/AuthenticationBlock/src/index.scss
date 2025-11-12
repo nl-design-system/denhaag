@@ -138,6 +138,13 @@
     }
   }
 
+  &__footer {
+    --denhaag-link-with-icon-vertical-align: center;
+    --denhaag-link-align-items: center;
+    --denhaag-link-icon-gap: var(--denhaag-space-xs);
+    --denhaag-link-line-height: 1.25;
+  }
+
   &__footer-divider {
     position: relative;
   }
