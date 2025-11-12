@@ -35,6 +35,6 @@
   "devDependencies": {
     "@gemeente-denhaag/button": "0.2.3-www-denhaag-nl.149",
     "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.149",
-    "@gemeente-denhaag/link": "0.1.1-www-denhaag-nl.149"
+    "@gemeente-denhaag/link": "0.2.3-www-denhaag-nl.149"
   }
 }
