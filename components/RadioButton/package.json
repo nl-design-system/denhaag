@@ -31,7 +31,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@utrecht/component-library-react": "10.2.2",
+    "@utrecht/component-library-react": "10.3.9",
     "@utrecht/radio-button-css": "1.6.1"
   },
   "peerDependencies": {
