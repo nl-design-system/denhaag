@@ -3,7 +3,7 @@
   "description": "Call To Action Event component",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
-  "version": "0.1.1-www-denhaag-nl.151",
+  "version": "0.1.1-www-denhaag-nl.152",
   "exports": {
     ".": {
       "types": "./dist/cjs/index.d.ts",
