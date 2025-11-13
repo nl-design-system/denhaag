@@ -3,8 +3,7 @@
   --utrecht-heading-4-margin-block-start: 0;
 
   border-radius: var(--denhaag-alert-border-radius, 1px);
-  padding-inline: var(--denhaag-space-xl);
-  padding-block: var(--denhaag-space-xl);
+  padding: var(--denhaag-space-xl);
   display: flex;
   flex-direction: row;
   justify-content: space-between;

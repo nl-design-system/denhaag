@@ -8,10 +8,8 @@
   font-size: var(--denhaag-menu-button-font-size, var(--denhaag-typography-scale-base-font-size));
   font-weight: var(--denhaag-menu-button-font-weight, 500);
   line-height: var(--denhaag-menu-button-line-height, 21px);
-  padding-block-end: 0;
-  padding-block-start: 0;
-  padding-inline-end: 0;
-  padding-inline-start: 0;
+  padding-block: 0;
+  padding-inline: 0;
   text-decoration: none;
   user-select: none;
   text-align: center;
