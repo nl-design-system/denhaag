@@ -35,3 +35,7 @@ tsconfig.tsbuildinfo
 
 # story-book build output
 storybook-static
+
+# AI init files.
+CLAUDE.md
+.qodo
