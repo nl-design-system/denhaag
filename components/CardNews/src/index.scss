@@ -5,8 +5,7 @@
   justify-content: flex-end;
   gap: var(--denhaag-card-news-gap, var(--denhaag-space-md));
   height: var(--denhaag-card-news-height);
-  padding-block: var(--denhaag-card-news-padding, var(--denhaag-space-md));
-  padding-inline: var(--denhaag-card-news-padding, var(--denhaag-space-md));
+  padding: var(--denhaag-card-news-padding, var(--denhaag-space-md));
   position: relative;
   text-decoration: none;
   transition-duration: var(--denhaag-card-news-transition-duration, 200ms);
@@ -83,8 +82,7 @@
 .denhaag-card-news__content {
   display: flex;
   flex-direction: column;
-  padding-block: var(--denhaag-space-sm);
-  padding-inline: var(--denhaag-space-sm);
+  padding: var(--denhaag-space-sm);
   z-index: 1; // Enables content to overlap image.
 }
 
