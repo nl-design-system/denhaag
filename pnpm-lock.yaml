@@ -1577,6 +1577,9 @@ importers:
       '@gemeente-denhaag/design-tokens':
         specifier: workspace:*
         version: link:../../proprietary/tokens
+      '@gemeente-denhaag/fonts':
+        specifier: 1.0.1
+        version: 1.0.1
       '@utrecht/button-css':
         specifier: 2.3.1
         version: 2.3.1
@@ -1613,6 +1616,10 @@ importers:
       '@utrecht/textbox-css':
         specifier: 1.7.1
         version: 1.7.1
+    devDependencies:
+      rollup-plugin-copy:
+        specifier: 3.5.0
+        version: 3.5.0
 
   packages/storybook:
     dependencies:
@@ -3073,6 +3080,9 @@ packages:
 
   '@gemeente-denhaag/design-tokens-components@0.2.3-alpha.400':
     resolution: {integrity: sha512-YtrtyDxhyszyBakn2q+PA+40l63JcxA0laNo7//hy8yWUWmk3w05l8eOynjryJU/0tyGCgA3GgxIuVW5NCWaEQ==}
+
+  '@gemeente-denhaag/fonts@1.0.1':
+    resolution: {integrity: sha512-HHi1fsirXadkOvOEiSj1ceNbCHdI38ROttOZSDE31DRmraKUFAfo4j7xDuTpLeojGTsv9Va165YMeXXii+NNqA==}
 
   '@gemeente-denhaag/icons@0.2.3-alpha.398':
     resolution: {integrity: sha512-NDU9GXKNlwwRBBAyYSqJhjLgX2CG28N15GRdQHR+LbU+z0av6YOE5RBQK6kCNaEXFZX1ah01DY6+4TcGgwDxXg==}
@@ -10936,6 +10946,8 @@ snapshots:
   '@gemeente-denhaag/design-tokens-common@0.2.3-alpha.400': {}
 
   '@gemeente-denhaag/design-tokens-components@0.2.3-alpha.400': {}
+
+  '@gemeente-denhaag/fonts@1.0.1': {}
 
   '@gemeente-denhaag/icons@0.2.3-alpha.398(react@19.1.0)':
     dependencies:
