@@ -3,3 +3,21 @@ packages:
   - "packages/*"
   - "proprietary/*"
   - "packages/web-components/*"
+
+# Configure pnpm so it only installs package versions that have been published on the npm registry for at least 24 hours
+# (1440 minutes). This helps mitigate the risk of supply chain attacks by avoiding newly published, potentially
+# malicious versions. Keep this in sync with npm-check-updates's `cooldown` configuration.
+minimumReleaseAge: 1440
+
+# Make an exception for trusted packages, notably our own
+minimumReleaseAgeExclude:
+  - "@amsterdam/*"
+  - "@gemeente-denhaag/*"
+  - "@gemeente-rotterdam/*"
+  - "@nl-design-system/*"
+  - "@nl-design-system-candidate/*"
+  - "@nl-design-system-community/*"
+  - "@nl-design-system-unstable/*"
+  - "@nl-rvo/*"
+  - "@rijkshuisstijl-community/*"
+  - "@utrecht/*"
