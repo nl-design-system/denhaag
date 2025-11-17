@@ -9,10 +9,6 @@ packages:
 # Configure pnpm so peer dependencies must be explicitly added instead of being automatically installed.
 autoInstallPeers: false
 
-# Configure pnpm so that it will not install any package that claims to not be compatible with the current Node.js
-# version.
-engineStrict: true
-
 # Configure pnpm so it only installs package versions that have been published on the npm registry for at least 24 hours
 # (1440 minutes). This helps mitigate the risk of supply chain attacks by avoiding newly published, potentially
 # malicious versions. Keep this in sync with npm-check-updates's `cooldown` configuration.
