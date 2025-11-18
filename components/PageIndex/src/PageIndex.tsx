@@ -12,7 +12,7 @@ type Item = {
 export interface PageIndexProps extends PageIndexNavProps {
   heading: string;
   headingLevel: HeadingLevel;
-  headingAppearance: HeadingAppearance;
+  headingAppearance?: HeadingAppearance;
   items: Item[];
 }
 
