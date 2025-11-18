@@ -4,7 +4,7 @@
       "background-color": { "value": "{denhaag.color.green.3}" },
       "border-color": {},
       "border-radius": { "value": "{denhaag.border-radius}" },
-      "border-width": { "value": "0" },
+      "border-width": { "value": "0px" },
       "color": { "value": "{denhaag.color.white}" },
       "font-family": { "value": "{denhaag.typography.sans-serif.font-family}" },
       "font-size": {},
