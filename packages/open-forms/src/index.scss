@@ -195,8 +195,7 @@ legend {
 
 .denhaag-theme .utrecht-page {
   --utrecht-page-max-inline-size: 100%;
-  --utrecht-page-background-color: var(--of-view-background,
-      var(--of-layout-background, #e6e6e6));
+  --utrecht-page-background-color: var(--of-view-background, var(--of-layout-background, #e6e6e6));
   margin-block-end: var(--of-utrecht-page-margin-block-end, 0);
   margin-block-start: var(--of-utrecht-page-margin-block-start, 0);
   background-color: var(--of-layout-background-color, var(--utrecht-page-background-color));
@@ -216,15 +215,15 @@ legend {
   box-sizing: border-box;
 }
 
-.denhaag-theme .utrecht-page>.utrecht-page__content {
+.denhaag-theme .utrecht-page > .utrecht-page__content {
   flex-grow: 1;
   inline-size: 100%;
   margin-inline-end: auto;
   margin-inline-start: auto;
 }
 
-.denhaag-theme .utrecht-page>.utrecht-page-header,
-.denhaag-theme .utrecht-page>.page-footer {
+.denhaag-theme .utrecht-page > .utrecht-page-header,
+.denhaag-theme .utrecht-page > .page-footer {
   flex-shrink: 0;
   align-items: stretch;
 }
@@ -246,17 +245,20 @@ legend {
   padding-inline-start: calc(var(--of-utrecht-form-field-description-padding-inline) - var(--_border-left-width));
 }
 
-.denhaag-theme [ref='component'].has-error>.utrecht-form-field.utrecht-form-field--openforms,
-.denhaag-theme [ref='component'].formio-error-wrapper>.utrecht-form-field.utrecht-form-field--openforms {
+.denhaag-theme [ref="component"].has-error > .utrecht-form-field.utrecht-form-field--openforms,
+.denhaag-theme [ref="component"].formio-error-wrapper > .utrecht-form-field.utrecht-form-field--openforms {
   background-color: var(--of-utrecht-form-field-background-color, unset);
 }
 
-.denhaag-theme [ref='component'].has-error>.utrecht-form-field.utrecht-form-field--openforms.utrecht-form-field--invalid,
-.denhaag-theme [ref='component'].has-error>.utrecht-form-field.utrecht-form-field--openforms,
-.denhaag-theme [ref='component'].formio-error-wrapper>.utrecht-form-field.utrecht-form-field--openforms.utrecht-form-field--invalid,
-.denhaag-theme [ref='component'].formio-error-wrapper>.utrecht-form-field.utrecht-form-field--openforms {
-  --of-utrecht-form-field-background-color: var(--utrecht-alert-error-background-color,
-      var(--of-alert-error-bg));
+.denhaag-theme
+  [ref="component"].has-error
+  > .utrecht-form-field.utrecht-form-field--openforms.utrecht-form-field--invalid,
+.denhaag-theme [ref="component"].has-error > .utrecht-form-field.utrecht-form-field--openforms,
+.denhaag-theme
+  [ref="component"].formio-error-wrapper
+  > .utrecht-form-field.utrecht-form-field--openforms.utrecht-form-field--invalid,
+.denhaag-theme [ref="component"].formio-error-wrapper > .utrecht-form-field.utrecht-form-field--openforms {
+  --of-utrecht-form-field-background-color: var(--utrecht-alert-error-background-color, var(--of-alert-error-bg));
   padding-inline-end: var(--utrecht-form-field-invalid-padding-inline-start);
   padding-block-start: var(--utrecht-form-field-invalid-padding-inline-start);
   padding-block-end: var(--utrecht-form-field-invalid-padding-inline-start);
