@@ -1,0 +1,10 @@
+{
+  "utrecht": {
+    "page-content": {
+      "padding-block-start": { "value": "20px" },
+      "padding-block-end": { "value": "20px" },
+      "padding-inline-start": { "value": "20px" },
+      "padding-inline-end": { "value": "20px" }
+    }
+  }
+}
