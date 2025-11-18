@@ -1,5 +1,11 @@
 # @gemeente-denhaag/action
 
+## 4.1.1
+
+### Patch Changes
+
+- b55e74b: forgot to add changeset to release new version
+
 ## 4.1.0
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 # @gemeente-denhaag/card
 
+## 5.0.4
+
+### Patch Changes
+
+- b55e74b: forgot to add changeset to release new version
+
 ## 5.0.3
 
 ### Patch Changes

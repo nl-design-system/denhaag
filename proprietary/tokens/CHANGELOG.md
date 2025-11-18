@@ -1,5 +1,11 @@
 # @gemeente-denhaag/design-tokens
 
+## 1.0.2
+
+### Patch Changes
+
+- b55e74b: forgot to add changeset to release new version
+
 ## 1.0.1
 
 ### Patch Changes
