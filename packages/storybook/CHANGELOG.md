@@ -1,5 +1,44 @@
 # @gemeente-denhaag/storybook
 
+## 5.3.0
+
+### Minor Changes
+
+- d2d9ff9: Action component now has a details prop
+
+### Patch Changes
+
+- 3446d8d: Fix shrink date
+- Updated dependencies [3446d8d]
+- Updated dependencies [d2d9ff9]
+  - @gemeente-denhaag/action@4.1.0
+  - @gemeente-denhaag/card@5.0.3
+  - @gemeente-denhaag/card-authentication@2.0.5
+  - @gemeente-denhaag/card-group@2.0.5
+
+## 5.2.2
+
+### Patch Changes
+
+- Updated dependencies [24d1bc4]
+- Updated dependencies [b400f45]
+  - @gemeente-denhaag/utils@3.0.1
+  - @gemeente-denhaag/link@4.0.1
+  - @gemeente-denhaag/action@4.0.2
+  - @gemeente-denhaag/card@5.0.2
+  - @gemeente-denhaag/contact-timeline@4.0.7
+  - @gemeente-denhaag/breadcrumb@5.0.2
+  - @gemeente-denhaag/card-authentication@2.0.4
+  - @gemeente-denhaag/dynamic-content@2.0.2
+  - @gemeente-denhaag/footer@4.1.3
+  - @gemeente-denhaag/form-progress@4.0.1
+  - @gemeente-denhaag/header@4.1.2
+  - @gemeente-denhaag/link-list@6.1.1
+  - @gemeente-denhaag/page-index@4.0.1
+  - @gemeente-denhaag/table@4.0.3
+  - @gemeente-denhaag/card-group@2.0.4
+  - @gemeente-denhaag/menu@4.0.4
+
 ## 5.2.1
 
 ### Patch Changes

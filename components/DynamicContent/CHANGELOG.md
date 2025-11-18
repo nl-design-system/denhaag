@@ -1,5 +1,12 @@
 # @gemeente-denhaag/dynamic-content
 
+## 2.0.2
+
+### Patch Changes
+
+- Updated dependencies [b400f45]
+  - @gemeente-denhaag/link@4.0.1
+
 ## 2.0.1
 
 ### Patch Changes
