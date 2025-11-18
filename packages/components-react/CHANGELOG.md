@@ -1,5 +1,15 @@
 # @gemeente-denhaag/components-react
 
+## 5.0.10
+
+### Patch Changes
+
+- Updated dependencies [b55e74b]
+  - @gemeente-denhaag/page-index@4.0.2
+  - @gemeente-denhaag/action@4.1.1
+  - @gemeente-denhaag/card@5.0.4
+  - @gemeente-denhaag/card-group@2.0.6
+
 ## 5.0.9
 
 ### Patch Changes
