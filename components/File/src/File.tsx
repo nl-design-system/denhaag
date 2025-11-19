@@ -48,7 +48,10 @@ export const File = ({ name, href, size, lastUpdated, className, onClick }: File
       </div>
       <div className="denhaag-file__right">
         <div className="denhaag-file__label">
-          <span id="name">{<URLData>{name}</URLData>}</span>
+          <span id="name">
+            <URLData>{name}</URLData>
+          </span>
+          <span> </span>
           {(extension || size || lastUpdated) && (
             <span id="description">({[extension, size, lastUpdatedDate].filter(Boolean).join(', ')})</span>
           )}
