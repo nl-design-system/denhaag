@@ -1,5 +1,13 @@
 # @gemeente-denhaag/storybook
 
+## 5.3.2
+
+### Patch Changes
+
+- Updated dependencies [675ae64]
+  - @gemeente-denhaag/file@2.1.2
+  - @gemeente-denhaag/contact-timeline@4.0.8
+
 ## 5.3.1
 
 ### Patch Changes
