@@ -1,5 +1,11 @@
 # @gemeente-denhaag/file
 
+## 2.1.2
+
+### Patch Changes
+
+- 675ae64: Fix File space between name and description
+
 ## 2.1.1
 
 ### Patch Changes
