@@ -1,5 +1,11 @@
 # @gemeente-denhaag/open-forms
 
+## 2.1.2
+
+### Patch Changes
+
+- 14c4efa: Updated pnpm configuration
+
 ## 2.1.1
 
 ### Patch Changes
