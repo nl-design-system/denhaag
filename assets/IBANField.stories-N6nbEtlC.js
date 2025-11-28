@@ -1,0 +1,3 @@
+import{j as t}from"./iframe-BQ5wZTvG.js";import{S as o}from"./StoryUtil-BkPxi60V.js";import"./index-OfmRYSzY.js";import"./parseISO-BBPDwbcZ.js";import"./index-YVVuO61E.js";import"./client-CncIfRar.js";import"./index-DssLDEeg.js";import"./index-BD67wy42.js";import"./index-DWOSw3wv.js";import"./index-Bxv8hkJ5.js";import"./index-DYGEN201.js";const g={id:"open-forms-iban",title:"Open Formulieren/IBANField",component:o,args:{key:"iban",type:"iban",label:"IBAN"}},r={render:e=>t.jsx(o,{...e})};r.parameters={...r.parameters,docs:{...r.parameters?.docs,source:{originalSource:`{
+  render: args => <SingleFormioComponent {...args} />
+}`,...r.parameters?.docs?.source}}};const x=["Default"];export{r as Default,x as __namedExportsOrder,g as default};
