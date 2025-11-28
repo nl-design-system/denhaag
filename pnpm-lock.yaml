@@ -1237,6 +1237,42 @@ importers:
         specifier: 1.0.1
         version: 1.0.1
     devDependencies:
+      '@utrecht/button-css':
+        specifier: 2.3.1
+        version: 2.3.1
+      '@utrecht/button-link-css':
+        specifier: 1.3.1
+        version: 1.3.1
+      '@utrecht/document-css':
+        specifier: 1.5.1
+        version: 1.5.1
+      '@utrecht/form-field-css':
+        specifier: 1.5.1
+        version: 1.5.1
+      '@utrecht/form-field-description-css':
+        specifier: 1.5.1
+        version: 1.5.1
+      '@utrecht/form-label-css':
+        specifier: 1.6.1
+        version: 1.6.1
+      '@utrecht/img-css':
+        specifier: 1.3.1
+        version: 1.3.1
+      '@utrecht/link-button-css':
+        specifier: 1.4.1
+        version: 1.4.1
+      '@utrecht/link-css':
+        specifier: 1.6.1
+        version: 1.6.1
+      '@utrecht/select-css':
+        specifier: 1.8.1
+        version: 1.8.1
+      '@utrecht/table-css':
+        specifier: 1.6.1
+        version: 1.6.1
+      '@utrecht/textbox-css':
+        specifier: 1.7.1
+        version: 1.7.1
       rollup-plugin-copy:
         specifier: 3.5.0
         version: 3.5.0
@@ -4174,6 +4210,9 @@ packages:
 
   '@utrecht/textarea-css@2.3.2':
     resolution: {integrity: sha512-//1PLWGMvTqS6exirU0OUO3l9odc7S2Wg1kg4I82v5oeoniUbn2gNgVfvDonPx4l9IywPNhIjlMM/9VfgU8T+Q==}
+
+  '@utrecht/textbox-css@1.7.1':
+    resolution: {integrity: sha512-MBM/NfMgdMSsaVJvE1Yk48Z0aAby2Bz4Vyt9CSFV38UZQU3C/kPwuQde3oJePCBnVJPx+K1YM8WhGcHF+c0Y4g==}
 
   '@utrecht/textbox-css@2.0.0':
     resolution: {integrity: sha512-z4ewJ6WxC3TMTG2jR4I7k73O5NijdjE/ydR1lovzPr4/Wa27l3I7pM0qjymSarKtc5IapfXsFhIpwV/kKbPPSA==}
@@ -12214,6 +12253,8 @@ snapshots:
   '@utrecht/table-of-contents-css@0.3.1': {}
 
   '@utrecht/textarea-css@2.3.2': {}
+
+  '@utrecht/textbox-css@1.7.1': {}
 
   '@utrecht/textbox-css@2.0.0': {}
 
