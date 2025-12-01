@@ -89,6 +89,7 @@
     "@gemeente-denhaag/select": "workspace:*",
     "@gemeente-denhaag/sheet": "workspace:*",
     "@gemeente-denhaag/side-navigation": "workspace:*",
+    "@gemeente-denhaag/skip-link": "workspace:*",
     "@gemeente-denhaag/step-marker": "workspace:*",
     "@gemeente-denhaag/stylesprovider": "workspace:*",
     "@gemeente-denhaag/tab": "workspace:*",
