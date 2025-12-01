@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@utrecht/form-field-description-css": "1.5.1",
-    "@utrecht/form-field-description-react": "1.0.7"
+    "@utrecht/form-field-description-react": "1.0.10"
   },
   "peerDependencies": {
     "react": "18 || 19",
