@@ -828,6 +828,15 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
 
+  components/SkipLink:
+    devDependencies:
+      '@nl-design-system-candidate/skip-link-css':
+        specifier: 1.0.3
+        version: 1.0.3
+      '@nl-design-system-candidate/skip-link-react':
+        specifier: 1.1.5
+        version: 1.1.5(@babel/runtime@7.28.4)(react@19.1.0)
+
   components/StepMarker:
     dependencies:
       '@gemeente-denhaag/icons':
@@ -1474,6 +1483,9 @@ importers:
       '@gemeente-denhaag/side-navigation':
         specifier: workspace:*
         version: link:../../components/SideNavigation
+      '@gemeente-denhaag/skip-link':
+        specifier: workspace:*
+        version: link:../../components/SkipLink
       '@gemeente-denhaag/step-marker':
         specifier: workspace:*
         version: link:../../components/StepMarker
@@ -2912,6 +2924,15 @@ packages:
 
   '@nl-design-system-candidate/paragraph-react@2.1.3':
     resolution: {integrity: sha512-MSMBCpQHW892/WY+Lrqg4S43K9iDtkvYD3cYF82OmS554OcPQwNkDUSF5a+fdilpHporFUEDwOOjC0twirPA8A==}
+    peerDependencies:
+      '@babel/runtime': ^7
+      react: ^18
+
+  '@nl-design-system-candidate/skip-link-css@1.0.3':
+    resolution: {integrity: sha512-1cj/9LIm2NMphL7sq1SBsD2G9DYtXSKKETmHP4/yvuT/qw0xP93HLNam8n5gWQmoFCc8h4K6JsQJY/bxudxOMQ==}
+
+  '@nl-design-system-candidate/skip-link-react@1.1.5':
+    resolution: {integrity: sha512-zJFAm16NFswU7WfaTVBjus5vs4PoV2mUP8haYp4LwqilUs+/gy8JpYRx1DMUrfs3/E79LjGZx/I4A/a+0bi10A==}
     peerDependencies:
       '@babel/runtime': ^7
       react: ^18
@@ -10568,6 +10589,14 @@ snapshots:
   '@nl-design-system-candidate/paragraph-css@2.1.0': {}
 
   '@nl-design-system-candidate/paragraph-react@2.1.3(@babel/runtime@7.28.4)(react@19.1.0)':
+    dependencies:
+      '@babel/runtime': 7.28.4
+      clsx: 2.1.1
+      react: 19.1.0
+
+  '@nl-design-system-candidate/skip-link-css@1.0.3': {}
+
+  '@nl-design-system-candidate/skip-link-react@1.1.5(@babel/runtime@7.28.4)(react@19.1.0)':
     dependencies:
       '@babel/runtime': 7.28.4
       clsx: 2.1.1
