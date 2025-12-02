@@ -1,0 +1,1 @@
+import t from"./Paragraph.stories-DTEcBIE6.js";import{Default as s,Lead as f}from"./Paragraph.stories-DTEcBIE6.js";import"./index-CyzjS4oc.js";import"./iframe-BxWp1SVR.js";const r={...t,tags:["autodocs"]},m=["Default","Lead"];export{s as Default,f as Lead,m as __namedExportsOrder,r as default};
