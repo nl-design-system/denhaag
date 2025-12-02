@@ -1,18 +1,31 @@
 import React, { ReactNode } from 'react';
 import clsx from 'clsx';
-import { FileIcon, ImageIcon, DownloadIcon } from '@gemeente-denhaag/icons';
+import { FileIcon, ImageIcon, DownloadIcon, SpinnerIcon, TrashIcon } from '@gemeente-denhaag/icons';
 import { URLData } from '@utrecht/component-library-react/dist';
 
 interface FileProps {
   className?: string;
   name: string | ReactNode;
-  href: string;
+  href?: string;
   size?: string;
   lastUpdated?: string;
+  loading?: boolean;
+  removable?: boolean;
+  removableLabel?: string;
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-export const File = ({ name, href, size, lastUpdated, className, onClick }: FileProps) => {
+export const File = ({
+  name,
+  href = '#',
+  size,
+  lastUpdated,
+  className,
+  loading,
+  removable,
+  removableLabel = 'Verwijderen',
+  onClick,
+}: FileProps) => {
   const extension = href?.lastIndexOf('.') >= 0 ? href.substring(href.lastIndexOf('.') + 1, href.length) : undefined;
   const lastUpdatedDate = lastUpdated ? new Date(lastUpdated).toLocaleDateString() : null;
   const FileTypeIcon = ({ ...props }) => {
@@ -25,7 +38,7 @@ export const File = ({ name, href, size, lastUpdated, className, onClick }: File
   };
 
   const defaultProps = {
-    className: clsx('denhaag-file', className),
+    className: clsx('denhaag-file', { 'denhaag-file--loading': loading }, className),
     'aria-labelledby': 'name',
     'aria-describedby': 'description',
   };
@@ -44,7 +57,7 @@ export const File = ({ name, href, size, lastUpdated, className, onClick }: File
   return (
     <Wrapper>
       <div className="denhaag-file__left">
-        <FileTypeIcon className="denhaag-file__icon" />
+        {loading ? <SpinnerIcon /> : <FileTypeIcon className="denhaag-file__icon" />}
       </div>
       <div className="denhaag-file__right">
         <div className="denhaag-file__label">
@@ -56,12 +69,25 @@ export const File = ({ name, href, size, lastUpdated, className, onClick }: File
             <span id="description">({[extension, size, lastUpdatedDate].filter(Boolean).join(', ')})</span>
           )}
         </div>
-        <div className="denhaag-file__link">
-          <DownloadIcon className="denhaag-file__link__icon" />
-          <div className="utrecht-link" tabIndex={-1}>
-            Download
-          </div>
-        </div>
+        {!loading && (
+          <>
+            {!removable ? (
+              <div className="denhaag-file__link">
+                <DownloadIcon className="denhaag-file__link__icon" />
+                <div className="utrecht-link" tabIndex={-1}>
+                  Download
+                </div>
+              </div>
+            ) : (
+              <div className="denhaag-file__link denhaag-file__link--remove">
+                <TrashIcon className="denhaag-file__link__icon" />
+                <div className="utrecht-link" tabIndex={-1}>
+                  {removableLabel}
+                </div>
+              </div>
+            )}
+          </>
+        )}
       </div>
     </Wrapper>
   );

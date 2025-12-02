@@ -12,6 +12,8 @@ import { RadioButton } from '@gemeente-denhaag/radio-button';
 import readme from '../../../../components/FormField/README.md?raw';
 import { Select, SelectOption } from '@gemeente-denhaag/select';
 import { SearchIcon } from '@gemeente-denhaag/icons';
+import { FileUpload as FileUploadComponent } from '@gemeente-denhaag/file-upload';
+import { File } from '@gemeente-denhaag/file';
 
 const meta = {
   component: FormField,
@@ -318,6 +320,33 @@ export const SelectMultipleInput: Story = {
         <SelectOption value="3">Option #3</SelectOption>
         <SelectOption value="4">Option #4</SelectOption>
       </Select>
+    </FormField>
+  ),
+};
+
+export const FileUpload: Story = {
+  render: () => (
+    <FormField invalid>
+      <FormLabel htmlFor="input-invalid">Identiteitsbewijs</FormLabel>
+      <FormFieldDescription>
+        Paspoort, ID-kaart of rijbewijs. <br />
+        (png, jpg, doc, docx of pdf max 20mb)
+      </FormFieldDescription>
+      <FileUploadComponent />
+    </FormField>
+  ),
+};
+
+export const FileUploadMultipleWithUploadedFile: Story = {
+  render: () => (
+    <FormField invalid>
+      <FormLabel htmlFor="input-invalid">Identiteitsbewijs</FormLabel>
+      <FormFieldDescription>
+        Paspoort, ID-kaart of rijbewijs. <br />
+        (png, jpg, doc, docx of pdf max 20mb)
+      </FormFieldDescription>
+      <FileUploadComponent />
+      <File href="#" name="Identiteitsbewijs.pdf" removable />
     </FormField>
   ),
 };
