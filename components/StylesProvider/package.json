@@ -3,7 +3,7 @@
   "description": "The StylesProvider component to properly apply our CSS to MUI components",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
-  "version": "3.0.2",
+  "version": "3.1.0",
   "exports": {
     ".": {
       "types": "./dist/cjs/index.d.ts",
