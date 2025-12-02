@@ -1,14 +1,11 @@
 {
   "nl": {
     "skip-link": {
-      "inset": {
-        "value": "16px"
-      },
       "background-color": {
-        "value": "{denhaag.button.primary-action.background-color}"
+        "value": "{denhaag.button.secondary-action.background-color}"
       },
       "color": {
-        "value": "{denhaag.button.primary-action.color}"
+        "value": "{denhaag.button.secondary-action.color}"
       },
       "font-size": {
         "value": "{denhaag.button.font-size}"
@@ -28,9 +25,7 @@
       "padding-inline": {
         "value": "{denhaag.button.padding-inline}"
       },
-      "text-decoration-thickness": {
-        "value": "none"
-      },
+      "text-decoration-thickness": {},
       "text-underline-offset": {}
     }
   }

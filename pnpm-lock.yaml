@@ -851,6 +851,9 @@ importers:
       '@utrecht/document-css':
         specifier: 1.5.1
         version: 1.5.1
+      '@utrecht/focus-ring-css':
+        specifier: 2.3.1
+        version: 2.3.1
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -2769,6 +2772,7 @@ packages:
 
   '@gemeente-denhaag/typography@0.2.3-alpha.398':
     resolution: {integrity: sha512-LN0HNjXOzZbpv5KJHWf305h+nAtCBqlSM33C+Tuv3y04+xJ+ZWYFz4uul9TMLI35DYnd03sZV9YHtWV1vyOS8w==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       react: ^18.0.0
 

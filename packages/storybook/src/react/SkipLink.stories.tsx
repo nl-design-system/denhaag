@@ -7,6 +7,7 @@ const meta = {
   component: SkipLink,
   tags: ['autodocs'],
   args: {
+    href: '#',
     children: 'Skip to main content',
     style: { marginTop: '1rem', marginLeft: '1rem' },
   },
@@ -56,5 +57,17 @@ export const Default: Story = {
         </main>
       </>
     );
+  },
+};
+
+export const Focus: Story = {
+  play: async ({ canvasElement }) => {
+    const link = canvasElement.querySelector('a');
+
+    // Simuleer keyboard interaction
+    link?.dispatchEvent(new KeyboardEvent('keydown', { key: 'Tab', bubbles: true }));
+
+    // Geef focus
+    link?.focus();
   },
 };
