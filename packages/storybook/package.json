@@ -53,6 +53,7 @@
     "@gemeente-denhaag/dynamic-content": "workspace:*",
     "@gemeente-denhaag/eventdate": "workspace:*",
     "@gemeente-denhaag/file": "workspace:*",
+    "@gemeente-denhaag/file-upload": "workspace:*",
     "@gemeente-denhaag/floating-contact": "workspace:*",
     "@gemeente-denhaag/fonts": "workspace:*",
     "@gemeente-denhaag/footer": "workspace:*",

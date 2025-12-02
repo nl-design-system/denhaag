@@ -418,6 +418,18 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
 
+  components/FileUpload:
+    dependencies:
+      '@gemeente-denhaag/button':
+        specifier: workspace:*
+        version: link:../Button
+      '@gemeente-denhaag/icons':
+        specifier: workspace:*
+        version: link:../Icons
+      clsx:
+        specifier: 2.1.1
+        version: 2.1.1
+
   components/FloatingContact: {}
 
   components/Footer:
@@ -1366,6 +1378,9 @@ importers:
       '@gemeente-denhaag/file':
         specifier: workspace:*
         version: link:../../components/File
+      '@gemeente-denhaag/file-upload':
+        specifier: workspace:*
+        version: link:../../components/FileUpload
       '@gemeente-denhaag/floating-contact':
         specifier: workspace:*
         version: link:../../components/FloatingContact

@@ -83,4 +83,25 @@
   &__label {
     flex-grow: 1;
   }
+
+  &--loading {
+    pointer-events: none;
+
+    .denhaag-file__right {
+      opacity: 60%;
+    }
+
+    .denhaag-icon {
+      animation: denhaag-rotation 1000ms linear infinite;
+    }
+  }
+}
+
+@keyframes denhaag-rotation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
