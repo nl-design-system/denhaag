@@ -1,5 +1,6 @@
 import React, { HTMLAttributes } from 'react';
 import clsx from 'clsx';
+import './index.scss';
 import '@utrecht/document-css';
 
 export interface StylesProviderProps extends HTMLAttributes<HTMLDivElement> {
@@ -11,5 +12,10 @@ export interface StylesProviderProps extends HTMLAttributes<HTMLDivElement> {
  * @param props Only allow for children
  */
 export const StylesProvider = ({ className, ...props }: StylesProviderProps) => {
-  return <div className={clsx('utrecht-document', 'utrecht-document--surface', className)} {...props} />;
+  return (
+    <div
+      className={clsx('denhaag-styles-provider', 'utrecht-document', 'utrecht-document--surface', className)}
+      {...props}
+    />
+  );
 };
