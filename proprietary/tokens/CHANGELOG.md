@@ -1,5 +1,11 @@
 # @gemeente-denhaag/design-tokens
 
+## 1.0.3
+
+### Patch Changes
+
+- 1ed7367: Add new SkipLink component
+
 ## 1.0.2
 
 ### Patch Changes

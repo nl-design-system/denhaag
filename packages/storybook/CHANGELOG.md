@@ -1,5 +1,15 @@
 # @gemeente-denhaag/storybook
 
+## 5.3.3
+
+### Patch Changes
+
+- 1ed7367: Add new SkipLink component
+- Updated dependencies [1ed7367]
+  - @gemeente-denhaag/skip-link@1.0.0
+  - @gemeente-denhaag/stylesprovider@3.1.0
+  - @gemeente-denhaag/design-tokens@1.0.3
+
 ## 5.3.2
 
 ### Patch Changes
