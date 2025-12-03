@@ -80,6 +80,21 @@
           "background-color": {},
           "border-color": {},
           "color": {}
+        },
+        "danger": {
+          "background-color": { "value": "{denhaag.color.red.3}" },
+          "border-color": {},
+          "color": {},
+          "hover": {
+            "background-color": { "value": "{denhaag.color.red.4}" },
+            "border-color": {},
+            "color": {}
+          },
+          "focus": {
+            "background-color": { "value": "{denhaag.color.red.4}" },
+            "border-color": {},
+            "color": {}
+          }
         }
       },
       "secondary-action": {
