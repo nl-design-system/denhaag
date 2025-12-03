@@ -13,6 +13,11 @@
 @use "~@utrecht/textbox-css/dist/index.min.css" as textbox;
 @use "~@gemeente-denhaag/design-tokens/dist/theme/index" as designTokenComponents;
 
+// Tijdelijke fix voor gekke root font-size issues met utrecht-document die op html tag staat
+:root {
+  font-size: 16px;
+}
+
 /* ==== RESET USER AGENT STYLES ==== */
 
 /* Basis reset voor alle elementen */
@@ -233,16 +238,17 @@ legend {
 }
 
 .denhaag-theme .utrecht-form-field-description--openforms-helptext {
-  --_border-left-width: var(--of-utrecht-form-field-description-border-left-width);
   line-height: var(--of-utrecht-form-field-description-line-height, 1.5);
   background-color: var(--of-utrecht-form-field-description-background-color);
   border-left-style: none;
   border-left-color: var(--of-utrecht-form-field-description-border-left-color);
-  border-left-width: var(--_border-left-width);
+  border-left-width: var(--of-utrecht-form-field-description-border-left-width);
   padding-block-end: var(--of-utrecht-form-field-description-padding-block);
   padding-block-start: var(--of-utrecht-form-field-description-padding-block);
   padding-inline-end: var(--of-utrecht-form-field-description-padding-inline);
-  padding-inline-start: calc(var(--of-utrecht-form-field-description-padding-inline) - var(--_border-left-width));
+  padding-inline-start: calc(
+    var(--of-utrecht-form-field-description-padding-inline) - var(--of-utrecht-form-field-description-border-left-width)
+  );
 }
 
 .denhaag-theme [ref="component"].has-error > .utrecht-form-field.utrecht-form-field--openforms,

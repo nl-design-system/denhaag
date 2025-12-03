@@ -3,8 +3,8 @@
     "page-header": {
       "background-color": {},
       "color": {},
-      "padding-start": {},
-      "padding-block-end": {}
+      "padding-block-start": { "value": "32px" },
+      "padding-block-end": { "value": "32px" }
     }
   }
 }
