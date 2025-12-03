@@ -4,7 +4,7 @@
       "color": {
         "value": "{denhaag.color.blue.3}"
       },
-      "text-decoration": { "value": "underline" },
+      "text-decoration": { "value": "none" },
       "text-decoration-color": {},
       "text-decoration-thickness": {
         "value": "auto"
@@ -32,7 +32,7 @@
         }
       },
       "placeholder": {
-        "color": {},
+        "color": { "value": "{denhaag.color.grey.3}" },
         "font-weight": {}
       },
       "visited": {

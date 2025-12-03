@@ -148,10 +148,11 @@ legend {
 .utrecht-page {
   --of-page-header-logo-return-url-min-inline-size: 150px;
   --of-page-header-logo-return-url-min-block-size: 50px;
+  --of-page-header-logo-return-url-mobile-min-inline-size: 60px;
+  --of-page-header-logo-return-url-mobile-min-block-size: 40px;
   --of-header-logo-height: auto;
   --of-header-logo-width: auto;
   --utrecht-logo-max-height: 97px;
-
   --of-utrecht-form-label-checkbox-padding-inline-end: 0;
   --of-utrecht-form-label-checkbox-padding-inline-start: 12px;
   --of-utrecht-form-label-checkbox-padding-block-end: 11px;
@@ -167,12 +168,10 @@ legend {
   --of-utrecht-form-label-radio-focus-within-outline: 1px solid var(--denhaag-color-blue-4);
   --of-utrecht-form-field-radio-margin-block-start: 8px;
   --of-file-upload-drop-area-padding: 15px;
-  --utrecht-button-primary-action-danger-background-color: var(--denhaag-color-red-3);
-  --utrecht-link-text-underline-offset: 3px;
-  /* deze wordt eerder al op auto gezet  ... ai */
-  --utrecht-link-text-decoration-thickness: 1px;
-  /* deze wordt eerder al op auto gezet  ... ai */
-  --utrecht-link-placeholder-color: var(--denhaag-color-grey-3);
+  --of-previous-link-display-start: flex;
+  --of-previous-link-display-end: none;
+  --of-utrecht-page-header-mobile-padding-block-end: 0;
+  --of-utrecht-page-header-mobile-padding-block-start: 0;
 }
 
 .denhaag-theme .utrecht-page-footer__navigation .utrecht-link-list {
