@@ -426,6 +426,9 @@ importers:
       '@gemeente-denhaag/icons':
         specifier: workspace:*
         version: link:../Icons
+      '@gemeente-denhaag/paragraph':
+        specifier: workspace:*
+        version: link:../Paragraph
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -2748,9 +2751,11 @@ packages:
 
   '@gemeente-denhaag/design-tokens-common@0.2.3-alpha.400':
     resolution: {integrity: sha512-ptmBqqn2NeerkyGFnp+QSgE7gkY1oIN4tiiRjTG6kwgcNQ/WakB9N+p49W/a2rcF+Fz0XsqWAd5CzBCFH+aZIA==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   '@gemeente-denhaag/design-tokens-components@0.2.3-alpha.400':
     resolution: {integrity: sha512-YtrtyDxhyszyBakn2q+PA+40l63JcxA0laNo7//hy8yWUWmk3w05l8eOynjryJU/0tyGCgA3GgxIuVW5NCWaEQ==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   '@gemeente-denhaag/fonts@1.0.1':
     resolution: {integrity: sha512-HHi1fsirXadkOvOEiSj1ceNbCHdI38ROttOZSDE31DRmraKUFAfo4j7xDuTpLeojGTsv9Va165YMeXXii+NNqA==}
@@ -2772,6 +2777,7 @@ packages:
 
   '@gemeente-denhaag/typography@0.2.3-alpha.398':
     resolution: {integrity: sha512-LN0HNjXOzZbpv5KJHWf305h+nAtCBqlSM33C+Tuv3y04+xJ+ZWYFz4uul9TMLI35DYnd03sZV9YHtWV1vyOS8w==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       react: ^18.0.0
 
@@ -3922,7 +3928,7 @@ packages:
 
   '@utrecht/components@4.0.0':
     resolution: {integrity: sha512-vpw8p5FEU/yrSGL5JU+x6bDXIreEPU6WPEagOkcdqbFGMovWS8uUHNWmv+PY1xJIOjOb98RebSsbFDoA4zllVQ==}
-    deprecated: 'The @utrecht/components package has been deprecated. To migrate: the SCSS files are now only available in the npm package for the specific component. For example: @utrecht/button-css/src/_mixin.scss. The entire component library is now available in @utrecht/component-library-css/dist/index.css.'
+    deprecated: 'Deprecated. Replaced by a separate package for each component, following the pattern: @utrecht/*-css. For example: @utrecht/button-css.'
 
   '@utrecht/currency-data-css@1.3.1':
     resolution: {integrity: sha512-QXXcRjRxnAab/jXqOWciokv0bCaVxxAOlF6hQC3OW76w4aaVVSXWRE3mBw+7g3AQ7nLGsfloTGwTshenF0g6+w==}
