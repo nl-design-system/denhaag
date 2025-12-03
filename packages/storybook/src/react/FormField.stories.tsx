@@ -14,6 +14,7 @@ import { Select, SelectOption } from '@gemeente-denhaag/select';
 import { SearchIcon } from '@gemeente-denhaag/icons';
 import { FileUpload as FileUploadComponent } from '@gemeente-denhaag/file-upload';
 import { File } from '@gemeente-denhaag/file';
+import { Alert } from '@gemeente-denhaag/alert';
 
 const meta = {
   component: FormField,
@@ -326,27 +327,79 @@ export const SelectMultipleInput: Story = {
 
 export const FileUpload: Story = {
   render: () => (
-    <FormField invalid>
-      <FormLabel htmlFor="input-invalid">Identiteitsbewijs</FormLabel>
+    <FormField>
+      <FormLabel htmlFor="input-fileupload">Identiteitsbewijs</FormLabel>
       <FormFieldDescription>
         Paspoort, ID-kaart of rijbewijs. <br />
         (png, jpg, doc, docx of pdf max 20mb)
       </FormFieldDescription>
-      <FileUploadComponent />
+      <FileUploadComponent id="input-fileupload" />
+    </FormField>
+  ),
+};
+
+export const FileUploadSingleWithUploadedFile: Story = {
+  render: () => (
+    <FormField>
+      <FormLabel htmlFor="input-fileupload-multiple">Identiteitsbewijs</FormLabel>
+      <FormFieldDescription>
+        Paspoort, ID-kaart of rijbewijs. <br />
+        (png, jpg, doc, docx of pdf max 20mb)
+      </FormFieldDescription>
+      <File href="#" name="Identiteitsbewijs.pdf" removable />
     </FormField>
   ),
 };
 
 export const FileUploadMultipleWithUploadedFile: Story = {
   render: () => (
-    <FormField invalid>
-      <FormLabel htmlFor="input-invalid">Identiteitsbewijs</FormLabel>
+    <FormField>
+      <FormLabel htmlFor="input-fileupload-multiple">Identiteitsbewijs</FormLabel>
       <FormFieldDescription>
         Paspoort, ID-kaart of rijbewijs. <br />
         (png, jpg, doc, docx of pdf max 20mb)
       </FormFieldDescription>
-      <FileUploadComponent />
+      <FileUploadComponent id="input-fileupload-multiple" />
       <File href="#" name="Identiteitsbewijs.pdf" removable />
+    </FormField>
+  ),
+};
+
+export const FileUploadMultipleLoading: Story = {
+  render: () => (
+    <FormField>
+      <FormLabel htmlFor="input-fileupload-multiple">Identiteitsbewijs</FormLabel>
+      <FormFieldDescription>
+        Paspoort, ID-kaart of rijbewijs. <br />
+        (png, jpg, doc, docx of pdf max 20mb)
+      </FormFieldDescription>
+      <FileUploadComponent id="input-fileupload-multiple" />
+      <File href="#" name="Identiteitsbewijs.pdf" removable />
+      <File href="#" name="Paspoort.pdf" loading />
+    </FormField>
+  ),
+};
+
+export const FileUploadError: Story = {
+  render: () => (
+    <FormField invalid>
+      <FormLabel htmlFor="input-fileupload-error">Identiteitsbewijs</FormLabel>
+      <FormFieldDescription>
+        Paspoort, ID-kaart of rijbewijs. <br />
+        (png, jpg, doc, docx of pdf max 20mb)
+      </FormFieldDescription>
+      <Alert
+        close={() => {}}
+        text={
+          <Paragraph>
+            Title Het document dummy.xlsx werd niet geüpload omdat dit document type niet ondersteund wordt Here comes
+            text. This text provides additional details and actionable steps the user can take.
+          </Paragraph>
+        }
+        title=""
+        variant="error"
+      />
+      <FileUploadComponent id="input-fileupload-error" />
     </FormField>
   ),
 };

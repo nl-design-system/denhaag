@@ -1,20 +1,27 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { InputHTMLAttributes, useEffect, useRef, useState } from 'react';
 import { Button } from '@gemeente-denhaag/button';
 import './index.scss';
+import { Paragraph } from '@gemeente-denhaag/paragraph';
 
-type FileUploadProps = {
+type FileUploadProps = InputHTMLAttributes<HTMLInputElement> & {
+  text?: string;
+  buttonLabel?: string;
   onFilesSelected?: (files: FileList | null) => void;
-  renderButton?: (props: { openFileDialog: () => void }) => React.ReactNode;
 };
 
-export const FileUpload = ({ onFilesSelected, renderButton }: FileUploadProps) => {
-  const inputRef = useRef<HTMLInputElement>(null);
-  const zoneRef = useRef<HTMLDivElement>(null);
-
+export const FileUpload = ({
+  text = 'Sleep uw bestand hier of',
+  buttonLabel = 'Kies een bestand',
+  onFilesSelected,
+  ...props
+}: FileUploadProps) => {
   const [isDragging, setIsDragging] = useState(false);
   const [isDraggingWithin, setIsDraggingWithin] = useState(false);
 
-  const openFileDialog = () => inputRef.current?.click();
+  const inputRef = useRef<HTMLInputElement>(null);
+  const zoneRef = useRef<HTMLDivElement>(null);
+
+  const openFileDialog = () => inputRef?.current?.click();
 
   const handleFiles = (files: FileList | null) => {
     if (!files || files.length === 0) return;
@@ -41,16 +48,23 @@ export const FileUpload = ({ onFilesSelected, renderButton }: FileUploadProps) =
       }
     };
 
+    const handleDragOverEvent = (event: DragEvent) => {
+      event.preventDefault();
+    };
+    window.addEventListener('blur', clearGlobalDragState);
+    window.addEventListener('dragover', handleDragOverEvent);
     window.addEventListener('dragenter', handleGlobalDragEnter);
-    window.addEventListener('drop', clearGlobalDragState);
-    window.addEventListener('dragend', clearGlobalDragState);
     window.addEventListener('dragleave', handleGlobalDragLeave);
+    window.addEventListener('drop', clearGlobalDragState, true);
+    window.addEventListener('dragend', clearGlobalDragState, true);
 
     return () => {
+      window.removeEventListener('blur', clearGlobalDragState);
+      window.removeEventListener('dragover', handleDragOverEvent);
       window.removeEventListener('dragenter', handleGlobalDragEnter);
-      window.removeEventListener('drop', clearGlobalDragState);
-      window.removeEventListener('dragend', clearGlobalDragState);
       window.removeEventListener('dragleave', handleGlobalDragLeave);
+      window.removeEventListener('drop', clearGlobalDragState, true);
+      window.removeEventListener('dragend', clearGlobalDragState, true);
     };
   }, []);
 
@@ -105,20 +119,15 @@ export const FileUpload = ({ onFilesSelected, renderButton }: FileUploadProps) =
       onDragLeave={handleZoneDragLeave}
       onDrop={handleZoneDrop}
     >
-      <p>Sleep uw bestand hier of</p>
-
-      {renderButton ? (
-        renderButton({ openFileDialog })
-      ) : (
-        <Button variant="secondary-action" onClick={openFileDialog}>
-          Kies een bestand
-        </Button>
-      )}
-
+      <Paragraph>{text}</Paragraph>
+      <Button variant="secondary-action" onClick={openFileDialog}>
+        {buttonLabel}
+      </Button>
       <input
+        {...props}
         type="file"
         ref={inputRef}
-        style={{ display: 'none' }}
+        className="denhaag-file-upload__input"
         onChange={(event) => handleFiles(event.target.files)}
       />
     </div>

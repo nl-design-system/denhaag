@@ -1,8 +1,11 @@
 .denhaag-file-upload {
+  --nl-paragraph-margin-block-end: 10px;
+
   border-color: var(--denhaag-file-upload-border-color);
   border-radius: var(--denhaag-file-upload-border-radius);
   border-style: solid;
   border-width: var(--denhaag-file-upload-border-width);
+  margin-block-start: var(--denhaag-file-upload-margin-block-start);
   margin-block-end: var(--denhaag-file-upload-margin-block-end);
   padding-block: var(--denhaag-file-upload-padding-block);
   padding-inline: var(--denhaag-file-upload-padding-inline);
@@ -20,5 +23,9 @@
     border-width: var(--denhaag-file-upload-drag-file-within-border-width);
     border-style: var(--denhaag-file-upload-drag-file-within-border-style);
     border-color: var(--denhaag-file-upload-drag-file-within-border-color);
+  }
+
+  &__input {
+    display: none;
   }
 }

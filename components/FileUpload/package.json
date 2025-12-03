@@ -33,6 +33,7 @@
   "dependencies": {
     "@gemeente-denhaag/button": "workspace:*",
     "@gemeente-denhaag/icons": "workspace:*",
+    "@gemeente-denhaag/paragraph": "workspace:*",
     "clsx": "2.1.1"
   },
   "peerDependencies": {
