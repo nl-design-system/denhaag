@@ -38,6 +38,7 @@
   position: absolute;
   inset: var(--denhaag-image-banner-focus-inset, 0);
   outline: var(--denhaag-focus-border);
+  outline-offset: var(--denhaag-focus-border-width);
   pointer-events: none;
   z-index: var(--denhaag-image-banner-focus-z-index, 10);
 }
