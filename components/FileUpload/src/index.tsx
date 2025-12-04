@@ -29,6 +29,11 @@ export const FileUpload = ({
   };
 
   useEffect(() => {
+    const clearGlobalDragState = () => {
+      setIsDragging(false);
+      setIsDraggingWithin(false);
+    };
+
     const handleGlobalDragEnter = (event: DragEvent) => {
       if (!event.dataTransfer) return;
       const hasFiles = Array.from(event.dataTransfer.types).includes('Files');
@@ -36,14 +41,11 @@ export const FileUpload = ({
       setIsDragging(true);
     };
 
-    const clearGlobalDragState = () => {
-      setIsDragging(false);
-      setIsDraggingWithin(false);
-    };
-
     const handleGlobalDragLeave = (event: DragEvent) => {
-      const target = event.target as Node | null;
-      if (!event.relatedTarget && (target === document.documentElement || target === document.body)) {
+      const { clientX, clientY } = event;
+      const outOfWindow = clientX <= 0 || clientY <= 0 || clientX >= window.innerWidth || clientY >= window.innerHeight;
+
+      if (outOfWindow) {
         clearGlobalDragState();
       }
     };
@@ -51,18 +53,17 @@ export const FileUpload = ({
     const handleDragOverEvent = (event: DragEvent) => {
       event.preventDefault();
     };
-    window.addEventListener('blur', clearGlobalDragState);
-    window.addEventListener('dragover', handleDragOverEvent);
-    window.addEventListener('dragenter', handleGlobalDragEnter);
-    window.addEventListener('dragleave', handleGlobalDragLeave);
+
+    document.addEventListener('dragenter', handleGlobalDragEnter);
+    document.addEventListener('dragover', handleDragOverEvent);
+    document.addEventListener('dragleave', handleGlobalDragLeave);
     window.addEventListener('drop', clearGlobalDragState, true);
     window.addEventListener('dragend', clearGlobalDragState, true);
 
     return () => {
-      window.removeEventListener('blur', clearGlobalDragState);
-      window.removeEventListener('dragover', handleDragOverEvent);
-      window.removeEventListener('dragenter', handleGlobalDragEnter);
-      window.removeEventListener('dragleave', handleGlobalDragLeave);
+      document.removeEventListener('dragenter', handleGlobalDragEnter);
+      document.removeEventListener('dragover', handleDragOverEvent);
+      document.removeEventListener('dragleave', handleGlobalDragLeave);
       window.removeEventListener('drop', clearGlobalDragState, true);
       window.removeEventListener('dragend', clearGlobalDragState, true);
     };
