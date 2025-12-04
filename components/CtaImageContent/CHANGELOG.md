@@ -1,5 +1,13 @@
 # @gemeente-denhaag/cta-image-content
 
+## 3.0.3
+
+### Patch Changes
+
+- Updated dependencies [71c6fad]
+  - @gemeente-denhaag/icons@4.0.1
+  - @gemeente-denhaag/button@3.0.2
+
 ## 3.0.2
 
 ### Patch Changes

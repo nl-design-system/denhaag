@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/iconbutton",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "An IconButton component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {

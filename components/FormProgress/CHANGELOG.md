@@ -1,5 +1,13 @@
 # @gemeente-denhaag/form-progress
 
+## 4.0.2
+
+### Patch Changes
+
+- Updated dependencies [71c6fad]
+  - @gemeente-denhaag/icons@4.0.1
+  - @gemeente-denhaag/link@4.0.1
+
 ## 4.0.1
 
 ### Patch Changes

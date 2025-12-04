@@ -1,5 +1,14 @@
 # @gemeente-denhaag/action
 
+## 4.1.2
+
+### Patch Changes
+
+- Updated dependencies [71c6fad]
+  - @gemeente-denhaag/icons@4.0.1
+  - @gemeente-denhaag/button@3.0.2
+  - @gemeente-denhaag/link@4.0.1
+
 ## 4.1.1
 
 ### Patch Changes

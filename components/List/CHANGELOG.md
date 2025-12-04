@@ -1,5 +1,13 @@
 # @gemeente-denhaag/list
 
+## 3.0.1
+
+### Patch Changes
+
+- Updated dependencies [71c6fad]
+  - @gemeente-denhaag/icons@4.0.1
+  - @gemeente-denhaag/iconbutton@3.0.1
+
 ## 3.0.0
 
 ### Major Changes

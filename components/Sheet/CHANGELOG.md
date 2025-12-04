@@ -1,5 +1,13 @@
 # @gemeente-denhaag/sheet
 
+## 4.0.1
+
+### Patch Changes
+
+- Updated dependencies [71c6fad]
+  - @gemeente-denhaag/icons@4.0.1
+  - @gemeente-denhaag/iconbutton@3.0.1
+
 ## 4.0.0
 
 ### Major Changes

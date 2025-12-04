@@ -1,5 +1,11 @@
 # @gemeente-denhaag/dotindicator
 
+## 3.0.2
+
+### Patch Changes
+
+- @gemeente-denhaag/button@3.0.2
+
 ## 3.0.1
 
 ### Patch Changes
