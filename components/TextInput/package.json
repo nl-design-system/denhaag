@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@utrecht/textbox-css": "2.0.0",
-    "@utrecht/textbox-react": "1.0.9"
+    "@utrecht/textbox-react": "1.0.12"
   },
   "peerDependencies": {
     "react": "18 || 19",
