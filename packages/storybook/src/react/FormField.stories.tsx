@@ -26,6 +26,7 @@ const meta = {
         component: readme,
       },
     },
+    chromatic: { viewports: [1280, 360] },
   },
 } as Meta<typeof FormField>;
 
