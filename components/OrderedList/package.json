@@ -31,7 +31,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@utrecht/component-library-react": "10.2.2",
+    "@utrecht/component-library-react": "10.3.10",
     "@utrecht/ordered-list-css": "1.5.2"
   },
   "peerDependencies": {
