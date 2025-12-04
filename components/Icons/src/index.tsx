@@ -23,6 +23,7 @@ import DownloadSvg from './svg/functional/download.svg';
 import EditSvg from './svg/functional/edit.svg';
 import ExternalLinkSvg from './svg/functional/external-link.svg';
 import FavoriteSvg from './svg/functional/favorite.svg';
+import FolderSvg from './svg/functional/folder.svg';
 import GridSvg from './svg/functional/grid.svg';
 import HamburgerSvg from './svg/functional/hamburger.svg';
 import HideSvg from './svg/functional/hide.svg';
@@ -104,6 +105,7 @@ export const DownloadIcon: F = (props: SvgIconProps) => buildIcon(DownloadSvg, p
 export const EditIcon: F = (props: SvgIconProps) => buildIcon(EditSvg, props);
 export const ExternalLinkIcon: F = (props: SvgIconProps) => buildIcon(ExternalLinkSvg, props);
 export const FavoriteIcon: F = (props: SvgIconProps) => buildIcon(FavoriteSvg, props);
+export const FolderIcon: F = (props: SvgIconProps) => buildIcon(FolderSvg, props);
 export const GridIcon: F = (props: SvgIconProps) => buildIcon(GridSvg, props);
 export const HamburgerIcon: F = (props: SvgIconProps) => buildIcon(HamburgerSvg, props);
 export const HideIcon: F = (props: SvgIconProps) => buildIcon(HideSvg, props);

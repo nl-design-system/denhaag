@@ -1,6 +1,7 @@
 import React, { InputHTMLAttributes, useEffect, useRef, useState } from 'react';
 import { Button } from '@gemeente-denhaag/button';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
+import { FolderIcon } from '@gemeente-denhaag/icons';
 import './index.scss';
 
 type FileUploadProps = InputHTMLAttributes<HTMLInputElement> & {
@@ -121,7 +122,7 @@ export const FileUpload = ({
       onDrop={handleZoneDrop}
     >
       <Paragraph className="denhaag-file-upload__label">{text}</Paragraph>
-      <Button variant="secondary-action" onClick={openFileDialog}>
+      <Button variant="secondary-action" icon={<FolderIcon />} onClick={openFileDialog}>
         {buttonLabel}
       </Button>
       <input
