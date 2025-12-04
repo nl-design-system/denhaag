@@ -1,0 +1,3 @@
+import{j as t}from"./iframe-StdiXSPA.js";import{S as r}from"./StoryUtil-CCftyKjb.js";import"./index-BmtovwrE.js";import"./parseISO-BBPDwbcZ.js";import"./index-CAeXHyWp.js";import"./client-DxRRjWUX.js";import"./index-DM1e1wC1.js";import"./index-DVnXMkbe.js";import"./index-DuWawXk9.js";import"./index-CVNUbTBG.js";import"./index-D5cgg07W.js";const u={id:"open-forms-textfield",title:"Open Formulieren/Textfield",component:r,args:{key:"textfield",type:"textfield",label:"Voornaam"}},e={render:o=>t.jsx(r,{...o})};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+  render: args => <SingleFormioComponent {...args} />
+}`,...e.parameters?.docs?.source}}};const g=["Default"];export{e as Default,g as __namedExportsOrder,u as default};

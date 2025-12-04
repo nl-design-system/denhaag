@@ -1,0 +1,1 @@
+import t from"./SkipLink.stories-5igGf1pC.js";import{Default as f}from"./SkipLink.stories-5igGf1pC.js";import"./iframe-StdiXSPA.js";const e={...t,tags:["autodocs"]},r=["Default"];export{f as Default,r as __namedExportsOrder,e as default};
