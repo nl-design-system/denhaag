@@ -1,1 +1,0 @@
-import t from"./SkipLink.stories-DHV-hT2s.js";import{Default as f}from"./SkipLink.stories-DHV-hT2s.js";import"./iframe-D_4PSq6r.js";const e={...t,tags:["autodocs"]},r=["Default"];export{f as Default,r as __namedExportsOrder,e as default};
