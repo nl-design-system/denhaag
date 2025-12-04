@@ -1,7 +1,7 @@
 import React, { InputHTMLAttributes, useEffect, useRef, useState } from 'react';
 import { Button } from '@gemeente-denhaag/button';
-import './index.scss';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
+import './index.scss';
 
 type FileUploadProps = InputHTMLAttributes<HTMLInputElement> & {
   text?: string;
@@ -120,7 +120,7 @@ export const FileUpload = ({
       onDragLeave={handleZoneDragLeave}
       onDrop={handleZoneDrop}
     >
-      <Paragraph>{text}</Paragraph>
+      <Paragraph className="denhaag-file-upload__label">{text}</Paragraph>
       <Button variant="secondary-action" onClick={openFileDialog}>
         {buttonLabel}
       </Button>
