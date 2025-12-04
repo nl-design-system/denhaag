@@ -1,5 +1,11 @@
 # @gemeente-denhaag/design-tokens
 
+## 1.0.4
+
+### Patch Changes
+
+- 7267b24: Added FileUpload component
+
 ## 1.0.3
 
 ### Patch Changes

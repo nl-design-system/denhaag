@@ -1,5 +1,13 @@
 # @gemeente-denhaag/components-react
 
+## 5.0.13
+
+### Patch Changes
+
+- Updated dependencies [7267b24]
+  - @gemeente-denhaag/file@2.2.0
+  - @gemeente-denhaag/contact-timeline@4.0.9
+
 ## 5.0.12
 
 ### Patch Changes

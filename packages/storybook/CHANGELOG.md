@@ -1,5 +1,17 @@
 # @gemeente-denhaag/storybook
 
+## 5.3.4
+
+### Patch Changes
+
+- 7267b24: Added FileUpload component
+- Updated dependencies [7267b24]
+- Updated dependencies [7267b24]
+  - @gemeente-denhaag/file@2.2.0
+  - @gemeente-denhaag/file-upload@1.0.0
+  - @gemeente-denhaag/design-tokens@1.0.4
+  - @gemeente-denhaag/contact-timeline@4.0.9
+
 ## 5.3.3
 
 ### Patch Changes

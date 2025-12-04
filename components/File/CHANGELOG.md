@@ -1,5 +1,11 @@
 # @gemeente-denhaag/file
 
+## 2.2.0
+
+### Minor Changes
+
+- 7267b24: Added removable and loading props
+
 ## 2.1.2
 
 ### Patch Changes
