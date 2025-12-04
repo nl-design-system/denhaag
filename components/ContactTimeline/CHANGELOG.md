@@ -1,5 +1,15 @@
 # @gemeente-denhaag/contact-timeline
 
+## 4.0.10
+
+### Patch Changes
+
+- Updated dependencies [71c6fad]
+  - @gemeente-denhaag/icons@4.0.1
+  - @gemeente-denhaag/file@2.2.1
+  - @gemeente-denhaag/process-steps@4.2.3
+  - @gemeente-denhaag/step-marker@3.0.1
+
 ## 4.0.9
 
 ### Patch Changes

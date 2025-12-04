@@ -1,5 +1,12 @@
 # @gemeente-denhaag/file
 
+## 2.2.1
+
+### Patch Changes
+
+- Updated dependencies [71c6fad]
+  - @gemeente-denhaag/icons@4.0.1
+
 ## 2.2.0
 
 ### Minor Changes

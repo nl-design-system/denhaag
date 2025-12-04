@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/file-upload",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A file upload component for the NL Design System themed for the Municipality of The Hague",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "author": "Municipality of The Hague",

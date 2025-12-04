@@ -1,5 +1,11 @@
 # @gemeente-denhaag/icons
 
+## 4.0.1
+
+### Patch Changes
+
+- 71c6fad: Added mobile styling to fileupload and added new folder icon
+
 ## 4.0.0
 
 ### Major Changes
