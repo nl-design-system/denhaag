@@ -1,4 +1,5 @@
 .denhaag-image {
+  --denhaag-icon-size: var(--denhaag-space-lg);
   --denhaag-image-figcaption-template-areas: "image-figcaption image-download";
 
   font-family: var(--denhaag-image-font-family, var(--denhaag-typography-sans-serif-font-family));
@@ -38,6 +39,7 @@
 
 .denhaag-image__figcaption-download {
   align-items: var(--denhaag-image-figcaption-download-align-items, flex-end);
+  color: var(--denhaag-image-figcaption-download-color, var(--denhaag-color-blue-3));
   display: flex;
   gap: var(--denhaag-image-figcaption-download-gap, var(--denhaag-space-xs));
   grid-area: image-download;
@@ -55,7 +57,6 @@
 }
 
 .denhaag-image__download-text {
-  color: var(--denhaag-image-figcaption-download-color, var(--denhaag-color-blue-3));
   font-size: var(--denhaag-image-figcaption-download-font-size, 1.125rem);
   line-height: var(--denhaag-image-figcaption-download-line-height, 1);
   display: var(--denhaag-image-download-text-display-mobile, none);
@@ -69,7 +70,7 @@
   );
 }
 
-.denhaag-image__figcaption-download:only-child .denhaag-image__icon,
+.denhaag-image__figcaption-download:only-child .denhaag-icon,
 .denhaag-image__figcaption-download:only-child .denhaag-image__download-text {
   vertical-align: var(--denhaag-image-figcaption-download-only-vertical-align, bottom);
 }
