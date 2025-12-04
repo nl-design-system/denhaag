@@ -1,97 +1,168 @@
 export default class AnchorCollapses {
   constructor(className = 'denhaag-anchor-collapse') {
-    this.panels = document.getElementsByClassName(className);
+    this.panelClassName = className;
+    this.contentClassName = `${className}__content`;
+    this.summaryClassName = `${className}__summary`;
+    this.panels = [];
+  }
 
-    if (!this.panels) {
-      return;
-    }
+  /**
+   * Set up event listeners for custom events to control collapse panels.
+   */
+  setupEventListeners() {
+    window.addEventListener('anchorCollapse:toggle', (e) => {
+      const panel = this.getPanel(e.detail.id);
+      if (panel) {
+        panel.open = !panel.open;
+      }
+    });
 
-    this.classNames = {
-      active: `${className}--active`,
-      toggle: `${className}__toggle`,
-      content: `${className}__content-content`, // Used for retrieving the content height.
-    };
+    window.addEventListener('anchorCollapse:open', (e) => this.openCollapse(e.detail.id));
+    window.addEventListener('anchorCollapse:close', (e) => this.closeCollapse(e.detail.id));
+    window.addEventListener('anchorCollapse:openAll', () => this.forceOpenAll());
+    window.addEventListener('anchorCollapse:closeAll', () => this.forceCloseAll());
+  }
+
+  /**
+   * Initialize the AnchorCollapses by selecting panels and setting up event listeners.
+   */
+  initialize() {
+    this.panels = [...document.querySelectorAll(`.${this.panelClassName}`)];
+
+    this.panels.forEach((panel) => {
+      // Listen to native toggle event
+      panel.addEventListener('toggle', () => this.updatePanelState(panel));
+
+      // Handle Escape key in content
+      panel.querySelector(`.${this.contentClassName}`)?.addEventListener('keydown', (e) => {
+        if (e.code === 'Escape') {
+          e.preventDefault();
+          panel.open = false;
+          panel.querySelector(`.${this.summaryClassName}`)?.focus();
+        }
+      });
+    });
 
     this.openOrCloseCollapses();
-    this.clickEvents();
-    this.windowEvents();
-  }
-
-  windowEvents() {
-    const self = this,
-      ww = window.innerWidth;
-
-    this.windowEventsLoop();
-    window.addEventListener('resize', async () => {
-      // Check for width, for mobile devices where the url-bar overlay counts as resize.
-      if (ww !== window.innerWidth) {
-        self.openOrCloseCollapses();
-        self.windowEventsLoop();
-      }
-    });
-    window.addEventListener('orientationchange', async () => {
-      self.openOrCloseCollapses();
-      self.windowEventsLoop();
-    });
   }
 
   /**
-   * Update openCollapses check.
+   * Get a panel by its ID.
+   * @param {string} id The ID of the panel.
+   * @return {*}
    */
-  openOrCloseCollapses() {
-    this.openCollapses = window.matchMedia('(min-width: 768px)').matches;
+  getPanel(id) {
+    return this.panels.find((panel) => panel.id === id);
   }
 
   /**
-   * Fired on click events.
+   * Update the state of a panel based on its open attribute.
+   *
+   * @param {HTMLElement} panel The panel to update.
+   * @param {boolean} summaryInert The inert state for the summary element.
    */
-  clickEvents() {
-    [...this.panels].forEach((panel) => {
-      [...panel.getElementsByClassName(this.classNames.toggle)].forEach(
-        (toggle) =>
-          (toggle.onclick = () => {
-            if (!this.openCollapses) {
-              this.setHeight(panel);
-            }
+  updatePanelState(panel, summaryInert = false) {
+    const isOpen = panel.open;
+    panel.setAttribute('aria-expanded', String(isOpen));
 
-            toggle.setAttribute('aria-expanded', toggle.getAttribute('aria-expanded') === 'false' ? 'true' : 'false');
-            panel.classList.toggle(this.classNames.active);
-          }),
-      );
-    });
+    const content = panel.querySelector(`.${this.contentClassName}`);
+    if (content) {
+      content.inert = !isOpen;
+    }
+
+    const summary = panel.querySelector(`.${this.summaryClassName}`);
+    if (summary) {
+      summary.inert = summaryInert;
+    }
   }
 
   /**
-   * Loop through panels and close them based on the windowWidth.
+   * Handle resize event to open or close collapses based on viewport size.
    */
-  windowEventsLoop() {
-    [...this.panels].forEach((panel) => {
-      let expanded = null;
-
-      if (!!this.openCollapses && !panel.classList.contains(this.classNames.active)) {
-        panel.classList.add(this.classNames.active);
-        expanded = 'true';
-      } else if (panel.classList.contains(this.classNames.active)) {
-        panel.classList.remove(this.classNames.active);
-        expanded = 'false';
-      }
-
-      if (expanded) {
-        [...panel.getElementsByClassName(this.classNames.toggle)].forEach((toggle) =>
-          toggle.setAttribute('aria-expanded', expanded),
-        );
-      }
-    });
-  }
-
-  setHeight(panel) {
-    const content = panel.querySelector(`.${this.classNames.content}`);
-
-    // Set max-height property.
-    if (!content) {
+  resize() {
+    if (!this.panels.length) {
       return;
     }
 
-    panel.style.setProperty('--denhaag-anchor-collapse-details-max-height', `${content.offsetHeight}px`);
+    this.openOrCloseCollapses();
+  }
+
+  /**
+   * Open or close collapse panels based on viewport size.
+   */
+  openOrCloseCollapses() {
+    if (!this.panels.length) {
+      return;
+    }
+
+    if (window.matchMedia('(min-width: 768px)').matches) {
+      this.forceOpenAll();
+    } else {
+      this.forceCloseAll();
+    }
+
+    const { hash } = window.location;
+    if (hash) {
+      const cleanedHash = hash.replace('#', '');
+      const targetPanel =
+        this.getPanel(cleanedHash) || document.getElementById(cleanedHash)?.closest(`.${this.panelClassName}`);
+
+      if (targetPanel) {
+        this.openCollapse(targetPanel.id);
+        setTimeout(() => targetPanel.scrollIntoView({ behavior: 'smooth' }), 300);
+      }
+    }
+  }
+
+  /**
+   * Force open all collapse panels.
+   */
+  forceOpenAll() {
+    if (!this.panels.length) {
+      // Do nothing if there are no panels.
+      return;
+    }
+
+    this.panels?.forEach((panel) => {
+      panel.open = true;
+      this.updatePanelState(panel, true);
+    });
+  }
+
+  /**
+   * Force close all collapse panels.
+   */
+  forceCloseAll() {
+    if (!this.panels.length) {
+      // Do nothing if there are no panels.
+      return;
+    }
+
+    this.panels?.forEach((panel) => {
+      panel.open = false;
+      this.updatePanelState(panel, false);
+    });
+  }
+
+  /**
+   * Open a specific collapse panel by its ID.
+   * @param {string} id The ID of the collapse panel to open.
+   */
+  openCollapse(id) {
+    const panel = this.getPanel(id);
+    if (panel && !panel.open) {
+      panel.open = true;
+    }
+  }
+
+  /**
+   * Close a specific collapse panel by its ID.
+   * @param {string} id The ID of the collapse panel to close.
+   */
+  closeCollapse(id) {
+    const panel = this.getPanel(id);
+    if (panel && panel.open) {
+      panel.open = false;
+    }
   }
 }

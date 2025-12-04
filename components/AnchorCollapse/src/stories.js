@@ -1,7 +1,9 @@
 import AnchorCollapses from './anchorCollapses';
 
-window.addEventListener('DOMContentLoaded', async () => {
-  setTimeout(() => {
-    new AnchorCollapses('denhaag-anchor-collapse');
-  }, 500);
+const anchorCollapses = new AnchorCollapses('denhaag-anchor-collapse');
+
+window.addEventListener('DOMContentLoaded', () => {
+  anchorCollapses.initialize();
+  anchorCollapses.setupEventListeners();
 });
+window.addEventListener('resize', () => anchorCollapses.resize());
