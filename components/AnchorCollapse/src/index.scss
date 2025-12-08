@@ -131,6 +131,8 @@
       --utrecht-heading-2-font-weight,
       var(--utrecht-heading-font-weight, bold)
     );
+
+    scroll-margin-top: var(--denhaag-anchor-collapse-scroll-margin-top, var(--denhaag-space-2xl));
   }
 
   .denhaag-anchor-collapse__content {
