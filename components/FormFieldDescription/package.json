@@ -31,7 +31,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@utrecht/form-field-description-css": "1.5.1",
+    "@utrecht/form-field-description-css": "2.0.1",
     "@utrecht/form-field-description-react": "1.0.10"
   },
   "peerDependencies": {

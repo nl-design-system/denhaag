@@ -100,7 +100,7 @@
     "@gemeente-denhaag/unorderedlist": "workspace:*",
     "@gemeente-denhaag/utils": "workspace:*",
     "@nl-design-system-unstable/theme-toolkit": "1.0.0",
-    "@utrecht/component-library-css": "7.5.1"
+    "@utrecht/component-library-css": "8.2.1"
   },
   "devDependencies": {
     "@babel/core": "7.28.5",

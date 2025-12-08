@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@utrecht/component-library-react": "10.3.10",
-    "@utrecht/textarea-css": "2.3.2"
+    "@utrecht/textarea-css": "3.0.1"
   },
   "peerDependencies": {
     "react": "18 || 19",

@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@utrecht/component-library-react": "10.3.10",
-    "@utrecht/unordered-list-css": "1.5.1",
+    "@utrecht/unordered-list-css": "2.0.1",
     "clsx": "2.1.1"
   },
   "peerDependencies": {
