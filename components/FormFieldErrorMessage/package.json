@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@utrecht/form-field-error-message-react": "1.0.10",
-    "@utrecht/form-field-error-message-css": "1.5.1"
+    "@utrecht/form-field-error-message-css": "2.0.1"
   },
   "peerDependencies": {
     "react": "18 || 19",

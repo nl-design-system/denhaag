@@ -26,18 +26,18 @@
     "@gemeente-denhaag/fonts": "1.0.1"
   },
   "devDependencies": {
-    "@utrecht/button-css": "2.3.1",
-    "@utrecht/button-link-css": "1.3.1",
-    "@utrecht/document-css": "1.5.1",
-    "@utrecht/form-field-css": "1.5.1",
-    "@utrecht/form-field-description-css": "1.5.1",
-    "@utrecht/form-label-css": "1.6.1",
-    "@utrecht/img-css": "1.3.1",
-    "@utrecht/link-button-css": "1.4.1",
-    "@utrecht/link-css": "1.6.1",
-    "@utrecht/select-css": "1.8.1",
-    "@utrecht/table-css": "1.6.1",
-    "@utrecht/textbox-css": "1.7.1",
+    "@utrecht/button-css": "3.0.1",
+    "@utrecht/button-link-css": "2.0.1",
+    "@utrecht/document-css": "2.0.1",
+    "@utrecht/form-field-css": "2.0.1",
+    "@utrecht/form-field-description-css": "2.0.1",
+    "@utrecht/form-label-css": "2.0.1",
+    "@utrecht/img-css": "2.0.1",
+    "@utrecht/link-button-css": "2.0.1",
+    "@utrecht/link-css": "2.0.1",
+    "@utrecht/select-css": "2.0.1",
+    "@utrecht/table-css": "2.0.1",
+    "@utrecht/textbox-css": "3.0.1",
     "rollup-plugin-copy": "3.5.0"
   }
 }
