@@ -3,57 +3,72 @@
     var(--denhaag-anchor-collapse-border-color, var(--denhaag-color-grey-2));
 
   @media (prefers-reduced-motion: reduce) {
-    --denhaag-anchor-collapse-transition-duration: 0;
-    --denhaag-anchor-collapse-open-transition-duration: 0;
+    --denhaag-anchor-collapse-transition-duration: 0ms;
   }
 
-  &:first-of-type {
+  &:first-child {
+    border-top: var(--denhaag-anchor-collapse-border-width, 1px) solid
+      var(--denhaag-anchor-collapse-border-color, var(--denhaag-color-grey-2));
     padding-block-start: var(--denhaag-space-2xl);
   }
 }
 
 .denhaag-anchor-collapse--reduced-motion {
-  --denhaag-anchor-collapse-transition-duration: 0;
-  --denhaag-anchor-collapse-open-transition-duration: 0;
+  --denhaag-anchor-collapse-transition-duration: 0ms;
 }
 
-.denhaag-anchor-collapse:first-child {
-  border-top: var(--denhaag-anchor-collapse-border-width, 1px) solid
-    var(--denhaag-anchor-collapse-border-color, var(--denhaag-color-grey-2));
+.denhaag-anchor-collapse::details-content {
+  content-visibility: visible !important;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows var(--denhaag-anchor-collapse-transition-duration, 400ms)
+    var(--denhaag-anchor-collapse-transition-timing-function, ease-in-out);
 }
 
-.denhaag-anchor-collapse--active {
-  --denhaag-anchor-collapse-rotate: 0deg;
-  --denhaag-anchor-collapse-summary-color: var(
-    --denhaag-anchor-collapse-summary-active-color,
-    var(--denhaag-color-green-3)
-  );
-  --denhaag-anchor-collapse-transition-duration: var(--denhaag-anchor-collapse-open-transition-duration, 500ms);
-  --denhaag-anchor-collapse-details-height: var(--denhaag-anchor-collapse-details-max-height, 100%); // Value set by JS.
+.denhaag-anchor-collapse[open]::details-content {
+  grid-template-rows: 1fr;
 }
 
-.denhaag-anchor-collapse__toggle {
-  background-color: transparent;
-  border: 0;
-  color: var(--denhaag-anchor-collapse-summary-color, var(--denhaag-color-grey-5));
-  cursor: pointer;
-  font-family: var(--denhaag-anchor-collapse-summary-font-family, var(--denhaag-typography-sans-serif));
-  font-size: var(--denhaag-anchor-collapse-summary-font-size, var(--denhaag-typography-scale-lg-font-size));
-  font-weight: var(--denhaag-anchor-collapse-summary-font-weight, var(--denhaag-typography-weight-bold));
-  padding-block: var(--denhaag-anchor-collapse-summary-padding-block, var(--denhaag-space-md));
-  padding-inline: var(--denhaag-anchor-collapse-summary-padding-inline, var(--denhaag-space-xl))
-    calc(2 * var(--denhaag-anchor-collapse-summary-padding-inline, var(--denhaag-space-xl)));
-  pointer-events: var(--denhaag-anchor-collapse-summary-pointer-events, auto);
-  text-align: initial;
-  width: 100%;
+@media (max-width: 767px) {
+  .denhaag-anchor-collapse[open] {
+    --denhaag-anchor-collapse-rotate: 0deg;
+    --denhaag-anchor-collapse-summary-color: var(
+      --denhaag-anchor-collapse-summary-active-color,
+      var(--denhaag-color-green-3)
+    );
+  }
 }
 
 .denhaag-anchor-collapse__summary {
+  align-items: center;
+  box-shadow: 0 0 0 var(--denhaag-anchor-collapse-border-width, 1px)
+    var(--denhaag-anchor-collapse-border-color, var(--denhaag-color-grey-2));
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
   margin-block: 0;
-  position: relative;
+  padding-block: var(--denhaag-anchor-collapse-summary-padding-block, var(--denhaag-space-md));
+  padding-inline: var(--denhaag-anchor-collapse-summary-padding-inline, var(--denhaag-space-xl));
+  pointer-events: var(--denhaag-anchor-collapse-summary-pointer-events, auto);
+
+  &::-webkit-details-marker,
+  &::marker {
+    display: none;
+  }
+
+  > svg {
+    display: var(--denhaag-anchor-collapse-icon-display, block);
+    flex-shrink: 0;
+    pointer-events: none;
+    transform: rotate(var(--denhaag-anchor-collapse-rotate, 180deg));
+    transition: transform var(--denhaag-anchor-collapse-transition-duration, 400ms)
+      var(--denhaag-anchor-collapse-transition-timing-function, ease-in-out);
+  }
 }
 
-.denhaag-anchor-collapse__toggle:hover,
+.denhaag-anchor-collapse__summary:hover,
 .denhaag-anchor-collapse__summary--hover {
   --denhaag-anchor-collapse-summary-color: var(
     --denhaag-anchor-collapse-summary-hover-color,
@@ -61,7 +76,7 @@
   );
 }
 
-.denhaag-anchor-collapse__toggle:focus-visible,
+.denhaag-anchor-collapse__summary:focus-visible,
 .denhaag-anchor-collapse__summary--focus {
   --denhaag-anchor-collapse-summary-color: var(
     --denhaag-anchor-collapse-summary-focus-color,
@@ -71,29 +86,27 @@
   outline: var(--denhaag-focus-border);
 }
 
-.denhaag-anchor-collapse__summary > svg {
-  display: var(--denhaag-anchor-collapse-icon-display, block);
-  position: absolute;
-  pointer-events: none;
-  top: 50%;
-  right: var(--denhaag-anchor-collapse-summary-padding-inline, var(--denhaag-space-xl));
-  transform: translate(-50%, -50%) rotate(var(--denhaag-anchor-collapse-rotate, 180deg));
-  transition: transform var(--denhaag-anchor-collapse-transition-duration, 400ms)
-    var(--denhaag-anchor-collapse-transition-timing-function, ease-in-out);
+.denhaag-anchor-collapse__toggle {
+  color: var(--denhaag-anchor-collapse-summary-color, var(--denhaag-color-grey-5));
+  font-family: var(--denhaag-anchor-collapse-summary-font-family, var(--denhaag-typography-sans-serif));
+  font-size: var(--denhaag-anchor-collapse-summary-font-size, var(--denhaag-typography-scale-lg-font-size));
+  font-weight: var(--denhaag-anchor-collapse-summary-font-weight, var(--denhaag-typography-weight-bold));
+  margin: 0;
 }
 
 .denhaag-anchor-collapse__content {
-  border-top: var(--denhaag-anchor-collapse-border-width, 1px) solid
-    var(--denhaag-anchor-collapse-border-color, var(--denhaag-color-grey-2));
-  max-height: var(--denhaag-anchor-collapse-details-height, 0);
+  min-height: 0;
   overflow: hidden;
-  transition: max-height var(--denhaag-anchor-collapse-transition-duration, 400ms)
-    var(--denhaag-anchor-collapse-transition-timing-function, ease-in-out);
-}
-
-.denhaag-anchor-collapse__content-content {
   padding-inline: var(--denhaag-anchor-collapse-content-padding-inline, var(--denhaag-space-xl));
 
+  @media (max-width: 767px) {
+    padding-block: 0;
+    transition: padding-block var(--denhaag-anchor-collapse-transition-duration, 400ms)
+      var(--denhaag-anchor-collapse-transition-timing-function, ease-in-out);
+  }
+}
+
+.denhaag-anchor-collapse[open] .denhaag-anchor-collapse__content {
   @media (max-width: 767px) {
     padding-block: var(--denhaag-anchor-collapse-content-padding-block, var(--denhaag-space-md))
       var(--denhaag-anchor-collapse-content-padding-block, var(--denhaag-space-xl));
@@ -105,12 +118,9 @@
     --denhaag-anchor-collapse-border-color: transparent;
     --denhaag-anchor-collapse-icon-display: none;
     --denhaag-anchor-collapse-content-padding-inline: 0;
-    --denhaag-anchor-collapse-details-height: 100%;
     --denhaag-anchor-collapse-summary-pointer-events: none;
-    --denhaag-anchor-collapse-summary-padding-block: 0px;
-    --denhaag-anchor-collapse-summary-padding-inline: 0px;
-
-    // Must always be the same as the H2 styles.
+    --denhaag-anchor-collapse-summary-padding-block: 0;
+    --denhaag-anchor-collapse-summary-padding-inline: 0;
     --denhaag-anchor-collapse-summary-color: var(--utrecht-heading-2-color, var(--utrecht-heading-color));
     --denhaag-anchor-collapse-summary-font-family: var(
       --utrecht-heading-2-font-family,

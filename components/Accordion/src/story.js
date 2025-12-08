@@ -1,6 +1,3 @@
 import Accordion from './AccordionToggle';
 
-window.addEventListener('DOMContentLoaded', () => {
-  const accordion = new Accordion();
-  accordion();
-});
+window.addEventListener('DOMContentLoaded', () => new Accordion());
