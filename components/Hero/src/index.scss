@@ -71,7 +71,7 @@
 .denhaag-hero__container {
   display: grid;
   grid-auto-flow: dense;
-  grid-gap: var(--denhaag-hero-container-gutter);
+  gap: var(--denhaag-hero-container-gutter);
   grid-template-columns: repeat(var(--denhaag-hero-columns, 12), 1fr);
   margin-block-end: 0;
   margin-block-start: 0;
