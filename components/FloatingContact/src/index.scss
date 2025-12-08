@@ -23,7 +23,6 @@
 
 .denhaag-floating-contact {
   // Variables will be overwritten in the same file.
-  --denhaag-floating-contact-heading-zoomed-clip: rect(0, 0, 0, 0);
   --denhaag-floating-contact-heading-zoomed-clip-path: inset(50%);
   --denhaag-floating-contact-heading-zoomed-height: 1px;
   --denhaag-floating-contact-heading-zoomed-position: absolute;
@@ -183,7 +182,6 @@
 
 .denhaag-floating-contact__heading--zoomed-visible {
   border: 0;
-  clip: var(--denhaag-floating-contact-heading-zoomed-clip);
   clip-path: var(--denhaag-floating-contact-heading-zoomed-clip-path);
   height: var(--denhaag-floating-contact-heading-zoomed-height);
   overflow: hidden;
