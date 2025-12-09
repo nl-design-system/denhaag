@@ -1,5 +1,11 @@
 # @gemeente-denhaag/hero
 
+## 4.1.0
+
+### Minor Changes
+
+- 13b2cf1: Updated dependencies
+
 ## 4.0.1
 
 ### Patch Changes

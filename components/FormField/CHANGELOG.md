@@ -1,5 +1,11 @@
 # @gemeente-denhaag/form-field
 
+## 3.1.0
+
+### Minor Changes
+
+- 13b2cf1: Updated dependencies
+
 ## 3.0.0
 
 ### Major Changes
