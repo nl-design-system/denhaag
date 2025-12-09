@@ -1,0 +1,39 @@
+---
+"@gemeente-denhaag/case-card-element": minor
+"@gemeente-denhaag/form-field-error-message": minor
+"@gemeente-denhaag/form-field-description": minor
+"@gemeente-denhaag/floating-contact": minor
+"@gemeente-denhaag/dynamic-content": minor
+"@gemeente-denhaag/stylesprovider": minor
+"@gemeente-denhaag/unorderedlist": minor
+"@gemeente-denhaag/form-fieldset": minor
+"@gemeente-denhaag/ctadownload": minor
+"@gemeente-denhaag/number-badge": minor
+"@gemeente-denhaag/orderedlist": minor
+"@gemeente-denhaag/radio-button": minor
+"@gemeente-denhaag/button-link": minor
+"@gemeente-denhaag/link-button": minor
+"@gemeente-denhaag/data-badge": minor
+"@gemeente-denhaag/form-field": minor
+"@gemeente-denhaag/form-label": minor
+"@gemeente-denhaag/paragraph": minor
+"@gemeente-denhaag/text-input": minor
+"@gemeente-denhaag/checkbox": minor
+"@gemeente-denhaag/cta-event": minor
+"@gemeente-denhaag/link-list": minor
+"@gemeente-denhaag/skip-link": minor
+"@gemeente-denhaag/textarea": minor
+"@gemeente-denhaag/open-forms": minor
+"@gemeente-denhaag/heading": minor
+"@gemeente-denhaag/storybook": minor
+"@gemeente-denhaag/footer": minor
+"@gemeente-denhaag/select": minor
+"@gemeente-denhaag/keycloak": minor
+"@gemeente-denhaag/file": minor
+"@gemeente-denhaag/hero": minor
+"@gemeente-denhaag/link": minor
+"@gemeente-denhaag/menu": minor
+"@gemeente-denhaag/tab": minor
+---
+
+Updated dependencies
