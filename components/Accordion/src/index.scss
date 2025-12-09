@@ -51,6 +51,11 @@
   margin-block: 0;
   min-height: var(--denhaag-space-4xl);
   outline: 0;
+
+  &::-webkit-details-marker,
+  &::marker {
+    display: none;
+  }
 }
 
 .denhaag-accordion__panel > .denhaag-icon {
