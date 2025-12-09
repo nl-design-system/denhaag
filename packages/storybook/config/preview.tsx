@@ -1,8 +1,6 @@
 import type { Preview } from '@storybook/react-vite';
 import type { StoryContext } from 'storybook/internal/types';
 import clsx from 'clsx';
-import * as prettierPluginBabel from 'prettier/plugins/babel';
-import prettierPluginEstree from 'prettier/plugins/estree';
 import prettier from 'prettier/standalone';
 import React, { ReactElement } from 'react';
 import * as ReactDOMServer from 'react-dom/server.browser';
@@ -13,6 +11,7 @@ import '@utrecht/component-library-css/dist/index.css';
 import '@gemeente-denhaag/design-tokens/dist/theme/index.css';
 import { addonViewport } from './addon-viewports';
 import { StylesProvider } from '@gemeente-denhaag/stylesprovider';
+import * as prettierHtml from 'prettier/plugins/html';
 import '@gemeente-denhaag/fonts/dist/index.css';
 
 const formatCache = new Map<string, string>();
@@ -71,22 +70,18 @@ const preview: Preview = {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         transform: (src: string, storyContext: StoryContext<any>) => {
           // Ensure valid HTML in the Preview source for HTML/CSS stories
-          const render =
-            typeof storyContext.component === 'function'
-              ? storyContext.component
-              : typeof storyContext.component?.render === 'function'
-                ? storyContext.component?.render
-                : null;
+          const storyElement =
+            storyContext.render?.(storyContext.args) ?? storyContext.originalStoryFn?.(storyContext.args, storyContext);
 
-          if (render && storyContext.title.toLowerCase().startsWith('css')) {
-            const staticMarkup = ReactDOMServer.renderToStaticMarkup(React.createElement(render, storyContext.args));
+          if (storyElement && storyContext.title.toLowerCase().startsWith('css')) {
+            const staticMarkup = ReactDOMServer.renderToStaticMarkup(storyElement as React.ReactElement);
 
             // Hacky workaround for the new asynchronous formatting from Prettier, and the lack of support of a async transform function
             // Start async formatting, when ready: add result to the formatCache map
             prettier
               .format(staticMarkup, {
-                parser: 'babel',
-                plugins: [prettierPluginBabel, prettierPluginEstree],
+                parser: 'html',
+                plugins: [prettierHtml],
               })
               .then((result) => {
                 formatCache.set(storyContext.id, result);
