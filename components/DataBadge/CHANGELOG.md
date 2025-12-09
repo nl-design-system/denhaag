@@ -1,5 +1,11 @@
 # @gemeente-denhaag/data-badge
 
+## 2.1.0
+
+### Minor Changes
+
+- 13b2cf1: Updated dependencies
+
 ## 2.0.1
 
 ### Patch Changes

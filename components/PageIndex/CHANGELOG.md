@@ -1,5 +1,14 @@
 # @gemeente-denhaag/page-index
 
+## 4.0.3
+
+### Patch Changes
+
+- Updated dependencies [13b2cf1]
+  - @gemeente-denhaag/unorderedlist@3.2.0
+  - @gemeente-denhaag/heading@2.1.0
+  - @gemeente-denhaag/link@4.1.0
+
 ## 4.0.2
 
 ### Patch Changes

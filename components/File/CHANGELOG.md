@@ -1,5 +1,11 @@
 # @gemeente-denhaag/file
 
+## 2.3.0
+
+### Minor Changes
+
+- 13b2cf1: Updated dependencies
+
 ## 2.2.1
 
 ### Patch Changes

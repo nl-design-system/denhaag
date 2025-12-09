@@ -1,5 +1,59 @@
 # @gemeente-denhaag/storybook
 
+## 5.4.0
+
+### Minor Changes
+
+- 13b2cf1: Updated dependencies
+
+### Patch Changes
+
+- Updated dependencies [13b2cf1]
+  - @gemeente-denhaag/form-field-error-message@3.1.0
+  - @gemeente-denhaag/form-field-description@3.1.0
+  - @gemeente-denhaag/floating-contact@2.1.0
+  - @gemeente-denhaag/dynamic-content@2.1.0
+  - @gemeente-denhaag/stylesprovider@3.2.0
+  - @gemeente-denhaag/unorderedlist@3.2.0
+  - @gemeente-denhaag/form-fieldset@3.1.0
+  - @gemeente-denhaag/ctadownload@2.1.0
+  - @gemeente-denhaag/number-badge@2.1.0
+  - @gemeente-denhaag/orderedlist@3.1.0
+  - @gemeente-denhaag/radio-button@3.1.0
+  - @gemeente-denhaag/button-link@3.1.0
+  - @gemeente-denhaag/link-button@3.1.0
+  - @gemeente-denhaag/data-badge@2.1.0
+  - @gemeente-denhaag/form-field@3.1.0
+  - @gemeente-denhaag/form-label@3.1.0
+  - @gemeente-denhaag/paragraph@2.1.0
+  - @gemeente-denhaag/text-input@3.1.0
+  - @gemeente-denhaag/checkbox@3.1.0
+  - @gemeente-denhaag/cta-event@2.1.0
+  - @gemeente-denhaag/link-list@6.2.0
+  - @gemeente-denhaag/skip-link@1.1.0
+  - @gemeente-denhaag/textarea@3.1.0
+  - @gemeente-denhaag/heading@2.1.0
+  - @gemeente-denhaag/footer@4.2.0
+  - @gemeente-denhaag/select@3.1.0
+  - @gemeente-denhaag/file@2.3.0
+  - @gemeente-denhaag/hero@4.1.0
+  - @gemeente-denhaag/link@4.1.0
+  - @gemeente-denhaag/menu@4.1.0
+  - @gemeente-denhaag/tab@3.1.0
+  - @gemeente-denhaag/page-index@4.0.3
+  - @gemeente-denhaag/side-navigation@4.0.3
+  - @gemeente-denhaag/card@5.0.6
+  - @gemeente-denhaag/contact-timeline@4.0.11
+  - @gemeente-denhaag/file-upload@1.0.2
+  - @gemeente-denhaag/header@4.1.4
+  - @gemeente-denhaag/alert@4.0.7
+  - @gemeente-denhaag/action@4.1.3
+  - @gemeente-denhaag/breadcrumb@5.0.4
+  - @gemeente-denhaag/card-authentication@2.0.8
+  - @gemeente-denhaag/form-progress@4.0.3
+  - @gemeente-denhaag/table@4.0.4
+  - @gemeente-denhaag/card-group@2.0.8
+
 ## 5.3.5
 
 ### Patch Changes

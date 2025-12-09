@@ -1,5 +1,13 @@
 # @gemeente-denhaag/card
 
+## 5.0.6
+
+### Patch Changes
+
+- Updated dependencies [13b2cf1]
+  - @gemeente-denhaag/paragraph@2.1.0
+  - @gemeente-denhaag/link@4.1.0
+
 ## 5.0.5
 
 ### Patch Changes
