@@ -18,6 +18,12 @@
   font-size: 16px;
 }
 
+.denhaag-theme {
+  --utrecht-form-field-invalid-border-inline-start-color: var(--denhaag-color-red-3);
+  --utrecht-form-field-invalid-border-inline-start-width: 4px;
+  --utrecht-form-field-invalid-padding-inline-start: 16px;
+}
+
 .utrecht-page {
   --of-page-header-logo-return-url-min-inline-size: 150px;
   --of-page-header-logo-return-url-min-block-size: 50px;
