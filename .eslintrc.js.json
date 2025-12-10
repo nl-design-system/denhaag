@@ -73,7 +73,7 @@
     "no-unreachable": "error",
     "no-unsafe-finally": "error",
     "no-unsafe-negation": "error",
-    "no-unused-expressions": "error",
+    "no-unused-expressions": ["error", { "allowTernary": true }],
     "no-unused-labels": "error",
     "no-unused-vars": "error",
     "no-useless-call": "error",

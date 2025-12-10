@@ -25,6 +25,10 @@
   transition: grid-template-rows var(--denhaag-accordion-transition-duration, 400ms) ease;
 }
 
+.denhaag-accordion__container:not([open])::details-content {
+  interactivity: inert; // Will be overwritten by `inert` attribute if set. Somehow needed to be added here as well for proper functionality.
+}
+
 .denhaag-accordion__container:last-child {
   border-bottom-left-radius: var(--denhaag-accordion-container-border-radius, var(--denhaag-border-radius));
   border-bottom-right-radius: var(--denhaag-accordion-container-border-radius, var(--denhaag-border-radius));

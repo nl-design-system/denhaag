@@ -38,7 +38,12 @@
     "no-empty-source": [true],
     "no-extra-semicolons": null,
     "no-invalid-double-slash-comments": [true],
-    "property-no-unknown": [true],
+    "property-no-unknown": [
+      true,
+      {
+        "ignoreProperties": ["interactivity"]
+      }
+    ],
     "property-no-vendor-prefix": null,
     "selector-pseudo-class-no-unknown": [true],
     "selector-pseudo-element-no-unknown": [

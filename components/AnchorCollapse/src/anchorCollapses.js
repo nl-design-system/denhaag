@@ -4,6 +4,7 @@ export default class AnchorCollapses {
     this.contentClassName = `${className}__content`;
     this.summaryClassName = `${className}__summary`;
     this.panels = [];
+    this.summaries = [];
   }
 
   /**
@@ -29,9 +30,15 @@ export default class AnchorCollapses {
   initialize() {
     this.panels = [...document.querySelectorAll(`.${this.panelClassName}`)];
 
-    this.panels.forEach((panel) => {
-      // Listen to native toggle event
+    this.panels.forEach((panel, index) => {
+      // Listen to native toggle event.
       panel.addEventListener('toggle', () => this.updatePanelState(panel));
+
+      const summary = panel.querySelector(`.${this.summaryClassName}`);
+      if (summary) {
+        this.summaries.push(summary);
+        summary.addEventListener('keydown', (event) => this.handleKeydown(event, index));
+      }
 
       // Handle Escape key in content
       panel.querySelector(`.${this.contentClassName}`)?.addEventListener('keydown', (e) => {
@@ -44,6 +51,51 @@ export default class AnchorCollapses {
     });
 
     this.openOrCloseCollapses();
+  }
+
+  /**
+   * Handle keyboard navigation within the anchor collapses.
+   * Only active when viewport is below 768px.
+   *
+   * @param {object} event The keyboard event object.
+   * @param {number} index The index of the current panel.
+   */
+  handleKeydown(event, index) {
+    if (window.matchMedia('(min-width: 768px)').matches) {
+      return;
+    }
+
+    let targetIndex;
+
+    switch (event.key) {
+      case 'ArrowDown':
+        event.preventDefault();
+        targetIndex = (index + 1) % this.summaries.length;
+        break;
+      case 'ArrowUp':
+        event.preventDefault();
+        targetIndex = (index - 1 + this.summaries.length) % this.summaries.length;
+        break;
+      case 'Home':
+        event.preventDefault();
+        targetIndex = 0;
+        break;
+      case 'End':
+        event.preventDefault();
+        targetIndex = this.summaries.length - 1;
+        break;
+      case 'ArrowLeft':
+      case 'Escape':
+        this.closeCollapse(this.panels[index].id);
+        return;
+      case 'ArrowRight':
+        this.openCollapse(this.panels[index].id);
+        return;
+      default:
+        return;
+    }
+
+    this.summaries[targetIndex]?.focus();
   }
 
   /**
@@ -62,7 +114,9 @@ export default class AnchorCollapses {
    * @param {boolean} summaryInert The inert state for the summary element.
    */
   updatePanelState(panel, summaryInert = false) {
-    const isOpen = panel.open;
+    if (!panel) return;
+
+    const isOpen = panel.open || false;
     panel.setAttribute('aria-expanded', String(isOpen));
 
     const content = panel.querySelector(`.${this.contentClassName}`);

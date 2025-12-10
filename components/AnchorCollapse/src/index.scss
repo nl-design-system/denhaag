@@ -30,6 +30,10 @@
   grid-template-rows: 1fr;
 }
 
+.denhaag-anchor-collapse:not([open])::details-content {
+  interactivity: inert; // Will be overwritten by `inert` attribute if set. Somehow needed to be added here as well for proper functionality.
+}
+
 @media (max-width: 767px) {
   .denhaag-anchor-collapse[open] {
     --denhaag-anchor-collapse-rotate: 0deg;
