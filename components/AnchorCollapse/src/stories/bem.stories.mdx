@@ -274,3 +274,303 @@ import "../storybook.scss";
     </details>
   </Story>
 </Canvas>
+
+### Containing Accordions
+
+<Canvas>
+  <Story name="Containing Accordions">
+    <div className="denhaag-storybook-content-wrapper">
+      <details className="denhaag-anchor-collapse" id="in-het-kort">
+        <summary className="denhaag-anchor-collapse__summary">
+          <h2 className="denhaag-anchor-collapse__toggle">In het kort</h2>
+          <svg
+            aria-hidden="true"
+            width="12"
+            height="8"
+            viewBox="0 0 12 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.4107 1.07806C5.73614 0.752625 6.26378 0.752625 6.58922 1.07806L11.5892 6.07806C11.9147 6.4035 11.9147 6.93114 11.5892 7.25657C11.2638 7.58201 10.7361 7.58201 10.4107 7.25657L5.99996 2.84583L1.58922 7.25657C1.26378 7.58201 0.736141 7.58201 0.410704 7.25657C0.0852667 6.93114 0.0852667 6.4035 0.410704 6.07806L5.4107 1.07806Z"
+              fill="currentColor"
+            />
+          </svg>
+        </summary>
+        <div className="denhaag-anchor-collapse__content" role="region" inert="inert">
+          <p className="utrecht-paragraph">
+            Mauris non sagittis ipsum. Donec elementum libero at gravida ullamcorper. Suspendisse consequat gravida est,
+            sed condimentum eros convallis vitae. Cras interdum ornare nisl id hendrerit. Curabitur ullamcorper vel nisi
+            nec malesuada. Integer hendrerit urna ac tincidunt pellentesque. Curabitur laoreet, ipsum ac semper ornare,
+            libero lacus pretium turpis, nec fermentum odio nulla sit amet nisi. In sed facilisis neque, vel maximus
+            risus. Aliquam porttitor magna nec justo facilisis imperdiet. Fusce malesuada purus nec sem auctor pretium.
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras malesuada condimentum convallis. Cras
+            dignissim sit amet arcu non ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            auctor ex metus, quis gravida odio elementum sed.
+          </p>
+          <div className="denhaag-accordion">
+            <details className="denhaag-accordion__container">
+              <summary className="denhaag-accordion__panel" aria-expanded="false">
+                <h3 className="denhaag-accordion__title">Accordion</h3>
+                <svg
+                  className="denhaag-icon"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  focusable="false"
+                  aria-hidden="true"
+                  shapeRendering="auto"
+                >
+                  <path
+                    d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </summary>
+              <div className="denhaag-accordion__details" inert="">
+                <div className="denhaag-accordion__details-content">
+                  <p className="utrecht-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet
+                    blandit leo lobortis eget.
+                  </p>
+                </div>
+              </div>
+            </details>
+            <details className="denhaag-accordion__container">
+              <summary className="denhaag-accordion__panel" aria-expanded="false">
+                <h3 className="denhaag-accordion__title">Accordion</h3>
+                <svg
+                  className="denhaag-icon"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  focusable="false"
+                  aria-hidden="true"
+                  shapeRendering="auto"
+                >
+                  <path
+                    d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </summary>
+              <div className="denhaag-accordion__details" inert="">
+                <div className="denhaag-accordion__details-content">
+                  <p className="utrecht-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet
+                    blandit leo lobortis eget.
+                  </p>
+                  <p className="utrecht-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet
+                    blandit leo lobortis eget.
+                  </p>
+                  <p className="utrecht-paragraph">
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec justo
+                    nisi, tincidunt vel nulla et, tristique ornare enim. Vestibulum accumsan ac nibh sit amet fringilla.
+                    Vestibulum efficitur mattis tempus. Duis pretium et erat sit amet fermentum. Vivamus blandit euismod
+                    elit et aliquam. Vestibulum a lectus nibh. <a href="/">Focus me</a> Quisque pharetra tellus a
+                    lacinia ultricies. Maecenas sed aliquet ipsum. Curabitur ultricies viverra ante sit amet
+                    consectetur.
+                  </p>
+                  <p className="utrecht-paragraph">
+                    Etiam a egestas dolor. Morbi at lobortis orci. Phasellus vel magna dignissim, dictum neque vel,
+                    rutrum augue. Nunc egestas <a href="/">Focus me too</a> a tortor non euismod. Integer ornare purus
+                    at ex porttitor tincidunt. Curabitur sit amet rutrum orci, molestie auctor elit. Vestibulum sit amet
+                    pulvinar ligula. Suspendisse ultricies egestas blandit. Sed tempor, tellus eget molestie mollis,
+                    nibh mi varius <a href="/">Focus me three</a> urna, ut suscipit sapien nisi sed justo. Phasellus sem
+                    risus, bibendum et turpis eget, eleifend tempor felis.
+                  </p>
+                </div>
+              </div>
+            </details>
+            <details className="denhaag-accordion__container">
+              <summary className="denhaag-accordion__panel" aria-expanded="false">
+                <h3 className="denhaag-accordion__title">
+                  Integer blandit libero quis risus maximus auctor. Proin ullamcorper, metus.
+                </h3>
+                <svg
+                  className="denhaag-icon"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  focusable="false"
+                  aria-hidden="true"
+                  shapeRendering="auto"
+                >
+                  <path
+                    d="M5.293 8.293a1 1 0 011.414 0L12 13.586l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </summary>
+              <div className="denhaag-accordion__details" inert="">
+                <div className="denhaag-accordion__details-content">
+                  <p className="utrecht-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet
+                    blandit leo lobortis eget.
+                  </p>
+                </div>
+              </div>
+            </details>
+          </div>
+        </div>
+      </details>
+      <details className="denhaag-anchor-collapse" id="voorwaarden">
+        <summary className="denhaag-anchor-collapse__summary">
+          <h2 className="denhaag-anchor-collapse__toggle">Voorwaarden</h2>
+          <svg
+            aria-hidden="true"
+            width="12"
+            height="8"
+            viewBox="0 0 12 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.4107 1.07806C5.73614 0.752625 6.26378 0.752625 6.58922 1.07806L11.5892 6.07806C11.9147 6.4035 11.9147 6.93114 11.5892 7.25657C11.2638 7.58201 10.7361 7.58201 10.4107 7.25657L5.99996 2.84583L1.58922 7.25657C1.26378 7.58201 0.736141 7.58201 0.410704 7.25657C0.0852667 6.93114 0.0852667 6.4035 0.410704 6.07806L5.4107 1.07806Z"
+              fill="currentColor"
+            />
+          </svg>
+        </summary>
+        <div className="denhaag-anchor-collapse__content" role="region" inert="inert">
+          <p className="utrecht-paragraph">
+            Mauris non sagittis ipsum. Donec elementum libero at gravida ullamcorper. Suspendisse consequat gravida est,
+            sed condimentum eros convallis vitae. Cras interdum ornare nisl id hendrerit. Curabitur ullamcorper vel nisi
+            nec malesuada. Integer hendrerit urna ac tincidunt pellentesque. Curabitur laoreet, ipsum ac semper ornare,
+            libero lacus pretium turpis, nec fermentum odio nulla sit amet nisi. In sed facilisis neque, vel maximus
+            risus. Aliquam porttitor magna nec justo facilisis imperdiet. Fusce malesuada purus nec sem auctor pretium.
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras malesuada condimentum convallis. Cras
+            dignissim sit amet arcu non ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            auctor ex metus, quis gravida odio elementum sed.
+          </p>
+        </div>
+      </details>
+      <details className="denhaag-anchor-collapse" id="process">
+        <summary className="denhaag-anchor-collapse__summary">
+          <h2 className="denhaag-anchor-collapse__toggle">Process</h2>
+          <svg
+            aria-hidden="true"
+            width="12"
+            height="8"
+            viewBox="0 0 12 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.4107 1.07806C5.73614 0.752625 6.26378 0.752625 6.58922 1.07806L11.5892 6.07806C11.9147 6.4035 11.9147 6.93114 11.5892 7.25657C11.2638 7.58201 10.7361 7.58201 10.4107 7.25657L5.99996 2.84583L1.58922 7.25657C1.26378 7.58201 0.736141 7.58201 0.410704 7.25657C0.0852667 6.93114 0.0852667 6.4035 0.410704 6.07806L5.4107 1.07806Z"
+              fill="currentColor"
+            />
+          </svg>
+        </summary>
+        <div className="denhaag-anchor-collapse__content" role="region" inert="inert">
+          <p className="utrecht-paragraph">
+            Mauris non sagittis ipsum. Donec elementum libero at gravida ullamcorper. Suspendisse consequat gravida est,
+            sed condimentum eros convallis vitae. Cras interdum ornare nisl id hendrerit. Curabitur ullamcorper vel nisi
+            nec malesuada. Integer hendrerit urna ac tincidunt pellentesque. Curabitur laoreet, ipsum ac semper ornare,
+            libero lacus pretium turpis, nec fermentum odio nulla sit amet nisi. In sed facilisis neque, vel maximus
+            risus. Aliquam porttitor magna nec justo facilisis imperdiet. Fusce malesuada purus nec sem auctor pretium.
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras malesuada condimentum convallis. Cras
+            dignissim sit amet arcu non ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            auctor ex metus, quis gravida odio elementum sed.
+          </p>
+        </div>
+      </details>
+      <details className="denhaag-anchor-collapse" id="kosten">
+        <summary className="denhaag-anchor-collapse__summary">
+          <h2 className="denhaag-anchor-collapse__toggle">Kosten</h2>
+          <svg
+            aria-hidden="true"
+            width="12"
+            height="8"
+            viewBox="0 0 12 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.4107 1.07806C5.73614 0.752625 6.26378 0.752625 6.58922 1.07806L11.5892 6.07806C11.9147 6.4035 11.9147 6.93114 11.5892 7.25657C11.2638 7.58201 10.7361 7.58201 10.4107 7.25657L5.99996 2.84583L1.58922 7.25657C1.26378 7.58201 0.736141 7.58201 0.410704 7.25657C0.0852667 6.93114 0.0852667 6.4035 0.410704 6.07806L5.4107 1.07806Z"
+              fill="currentColor"
+            />
+          </svg>
+        </summary>
+        <div className="denhaag-anchor-collapse__content" role="region" inert="inert">
+          <p className="utrecht-paragraph">
+            Mauris non sagittis ipsum. Donec elementum libero at gravida ullamcorper. Suspendisse consequat gravida est,
+            sed condimentum eros convallis vitae. Cras interdum ornare nisl id hendrerit. Curabitur ullamcorper vel nisi
+            nec malesuada. Integer hendrerit urna ac tincidunt pellentesque. Curabitur laoreet, ipsum ac semper ornare,
+            libero lacus pretium turpis, nec fermentum odio nulla sit amet nisi. In sed facilisis neque, vel maximus
+            risus. Aliquam porttitor magna nec justo facilisis imperdiet. Fusce malesuada purus nec sem auctor pretium.
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras malesuada condimentum convallis. Cras
+            dignissim sit amet arcu non ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            auctor ex metus, quis gravida odio elementum sed.
+          </p>
+        </div>
+      </details>
+      <details className="denhaag-anchor-collapse" id="aanvragen">
+        <summary className="denhaag-anchor-collapse__summary">
+          <h2 className="denhaag-anchor-collapse__toggle">Aanvragen</h2>
+          <svg
+            aria-hidden="true"
+            width="12"
+            height="8"
+            viewBox="0 0 12 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.4107 1.07806C5.73614 0.752625 6.26378 0.752625 6.58922 1.07806L11.5892 6.07806C11.9147 6.4035 11.9147 6.93114 11.5892 7.25657C11.2638 7.58201 10.7361 7.58201 10.4107 7.25657L5.99996 2.84583L1.58922 7.25657C1.26378 7.58201 0.736141 7.58201 0.410704 7.25657C0.0852667 6.93114 0.0852667 6.4035 0.410704 6.07806L5.4107 1.07806Z"
+              fill="currentColor"
+            />
+          </svg>
+        </summary>
+        <div className="denhaag-anchor-collapse__content" role="region" inert="inert">
+          <p className="utrecht-paragraph">
+            Mauris non sagittis ipsum. Donec elementum libero at gravida ullamcorper. Suspendisse consequat gravida est,
+            sed condimentum eros convallis vitae. Cras interdum ornare nisl id hendrerit. Curabitur ullamcorper vel nisi
+            nec malesuada. Integer hendrerit urna ac tincidunt pellentesque. Curabitur laoreet, ipsum ac semper ornare,
+            libero lacus pretium turpis, nec fermentum odio nulla sit amet nisi. In sed facilisis neque, vel maximus
+            risus. Aliquam porttitor magna nec justo facilisis imperdiet. Fusce malesuada purus nec sem auctor pretium.
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras malesuada condimentum convallis. Cras
+            dignissim sit amet arcu non ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            auctor ex metus, quis gravida odio elementum sed.
+          </p>
+        </div>
+      </details>
+      <details className="denhaag-anchor-collapse" id="veelgestelde-vragen">
+        <summary className="denhaag-anchor-collapse__summary">
+          <h2 className="denhaag-anchor-collapse__toggle">Veelgestelde vragen</h2>
+          <svg
+            aria-hidden="true"
+            width="12"
+            height="8"
+            viewBox="0 0 12 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.4107 1.07806C5.73614 0.752625 6.26378 0.752625 6.58922 1.07806L11.5892 6.07806C11.9147 6.4035 11.9147 6.93114 11.5892 7.25657C11.2638 7.58201 10.7361 7.58201 10.4107 7.25657L5.99996 2.84583L1.58922 7.25657C1.26378 7.58201 0.736141 7.58201 0.410704 7.25657C0.0852667 6.93114 0.0852667 6.4035 0.410704 6.07806L5.4107 1.07806Z"
+              fill="currentColor"
+            />
+          </svg>
+        </summary>
+        <div className="denhaag-anchor-collapse__content" role="region" inert="inert">
+          <p className="utrecht-paragraph">
+            Mauris non sagittis ipsum. Donec elementum libero at gravida ullamcorper. Suspendisse consequat gravida est,
+            sed condimentum eros convallis vitae. Cras interdum ornare nisl id hendrerit. Curabitur ullamcorper vel nisi
+            nec malesuada. Integer hendrerit urna ac tincidunt pellentesque. Curabitur laoreet, ipsum ac semper ornare,
+            libero lacus pretium turpis, nec fermentum odio nulla sit amet nisi. In sed facilisis neque, vel maximus
+            risus. Aliquam porttitor magna nec justo facilisis imperdiet. Fusce malesuada purus nec sem auctor pretium.
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras malesuada condimentum convallis. Cras
+            dignissim sit amet arcu non ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            auctor ex metus, quis gravida odio elementum sed.
+          </p>
+        </div>
+      </details>
+    </div>
+  </Story>
+</Canvas>
