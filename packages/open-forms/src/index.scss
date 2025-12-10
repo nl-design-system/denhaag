@@ -52,6 +52,16 @@
   --of-previous-link-display-end: none;
   --of-utrecht-page-header-mobile-padding-block-end: 0;
   --of-utrecht-page-header-mobile-padding-block-start: 0;
+  --of-summary-header-mobile-row-gap: 8px;
+  --of-summary-header-padding-block-end: 12px;
+  --of-summary-header-border-block-end-width: 1px;
+  --of-summary-header-border-block-end-style: solid;
+  --of-summary-step-name-font-size: var(--utrecht-heading-3-font-size);
+  --of-summary-step-name-line-height: 1.17;
+  --of-utrecht-data-list-padding-block-start: 15px;
+  --of-utrecht-data-list-gap: 15px;
+  --of-utrecht-data-list-padding-block-end: 30px;
+  --of-utrecht-data-list-laptop-display: flex;
 }
 
 .denhaag-theme .utrecht-page-footer__navigation .utrecht-link-list {
