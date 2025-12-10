@@ -18,9 +18,9 @@
 }
 
 .denhaag-anchor-collapse::details-content {
-  content-visibility: visible !important;
+  content-visibility: visible !important; // Override user agent style.
   overflow: hidden;
-  display: grid;
+  display: grid !important; // Override user agent style.
   grid-template-rows: 0fr;
   transition: grid-template-rows var(--denhaag-anchor-collapse-transition-duration, 400ms)
     var(--denhaag-anchor-collapse-transition-timing-function, ease-in-out);
