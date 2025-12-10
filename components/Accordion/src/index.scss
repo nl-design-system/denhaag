@@ -18,9 +18,9 @@
 }
 
 .denhaag-accordion__container::details-content {
-  content-visibility: visible !important;
+  content-visibility: visible !important; // Override user agent style.
   overflow: hidden;
-  display: grid;
+  display: grid !important; // Override user agent style.
   grid-template-rows: 0fr;
   transition: grid-template-rows var(--denhaag-accordion-transition-duration, 400ms) ease;
 }
@@ -51,6 +51,11 @@
   margin-block: 0;
   min-height: var(--denhaag-space-4xl);
   outline: 0;
+
+  &::-webkit-details-marker,
+  &::marker {
+    display: none;
+  }
 }
 
 .denhaag-accordion__panel > .denhaag-icon {

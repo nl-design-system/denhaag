@@ -18,9 +18,9 @@
 }
 
 .denhaag-anchor-collapse::details-content {
-  content-visibility: visible !important;
+  content-visibility: visible !important; // Override user agent style.
   overflow: hidden;
-  display: grid;
+  display: grid !important; // Override user agent style.
   grid-template-rows: 0fr;
   transition: grid-template-rows var(--denhaag-anchor-collapse-transition-duration, 400ms)
     var(--denhaag-anchor-collapse-transition-timing-function, ease-in-out);
@@ -115,9 +115,15 @@
 
 @media (min-width: 768px) {
   .denhaag-anchor-collapse {
+    // Component.
     --denhaag-anchor-collapse-border-color: transparent;
     --denhaag-anchor-collapse-icon-display: none;
+    --denhaag-anchor-collapse-transition-duration: 0ms; // Disable animation on desktop for better UX when navigating with anchor links.
+
+    // Content.
     --denhaag-anchor-collapse-content-padding-inline: 0;
+
+    // Summary.
     --denhaag-anchor-collapse-summary-pointer-events: none;
     --denhaag-anchor-collapse-summary-padding-block: 0;
     --denhaag-anchor-collapse-summary-padding-inline: 0;
