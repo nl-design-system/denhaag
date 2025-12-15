@@ -1,5 +1,17 @@
 # @gemeente-denhaag/stylesprovider
 
+## 3.2.0
+
+### Minor Changes
+
+- 13b2cf1: Updated dependencies
+
+## 3.1.0
+
+### Minor Changes
+
+- 1ed7367: Add new SkipLink component
+
 ## 3.0.2
 
 ### Patch Changes

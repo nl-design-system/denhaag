@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/open-forms",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "A temporary Open-forms theme to support NL Design System components and the Municipality of the Hague theme",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -28,7 +28,6 @@
   "devDependencies": {
     "@utrecht/button-css": "3.0.1",
     "@utrecht/button-link-css": "2.0.1",
-    "@utrecht/data-list-css": "2.0.1",
     "@utrecht/document-css": "2.0.1",
     "@utrecht/form-field-css": "2.0.1",
     "@utrecht/form-field-description-css": "2.0.1",

@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/link-button",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "A LinkButton component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -31,8 +31,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@utrecht/component-library-react": "10.2.2",
-    "@utrecht/link-button-css": "1.4.1"
+    "@utrecht/component-library-react": "10.3.10",
+    "@utrecht/link-button-css": "2.0.1"
   },
   "peerDependencies": {
     "react": "18 || 19",

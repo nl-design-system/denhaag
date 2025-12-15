@@ -1,0 +1,32 @@
+{
+  "nl": {
+    "skip-link": {
+      "background-color": {
+        "value": "{denhaag.button.secondary-action.background-color}"
+      },
+      "color": {
+        "value": "{denhaag.button.secondary-action.color}"
+      },
+      "font-size": {
+        "value": "{denhaag.button.font-size}"
+      },
+      "line-height": {
+        "value": "{}"
+      },
+      "min-block-size": {
+        "value": "{}"
+      },
+      "min-inline-size": {
+        "value": "{}"
+      },
+      "padding-block": {
+        "value": "{denhaag.button.padding-block}"
+      },
+      "padding-inline": {
+        "value": "{denhaag.button.padding-inline}"
+      },
+      "text-decoration-thickness": {},
+      "text-underline-offset": {}
+    }
+  }
+}

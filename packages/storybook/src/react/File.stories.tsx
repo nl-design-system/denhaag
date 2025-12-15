@@ -56,3 +56,11 @@ export const List: Story = {
     </>
   ),
 };
+
+export const Loading: Story = {
+  args: { ...Default.args, loading: true },
+};
+
+export const Removable: Story = {
+  args: { ...Default.args, removable: true },
+};

@@ -1,5 +1,24 @@
 # @gemeente-denhaag/link-list
 
+## 6.2.0
+
+### Minor Changes
+
+- 13b2cf1: Updated dependencies
+
+### Patch Changes
+
+- Updated dependencies [13b2cf1]
+  - @gemeente-denhaag/link@4.1.0
+
+## 6.1.2
+
+### Patch Changes
+
+- Updated dependencies [71c6fad]
+  - @gemeente-denhaag/icons@4.0.1
+  - @gemeente-denhaag/link@4.0.1
+
 ## 6.1.1
 
 ### Patch Changes

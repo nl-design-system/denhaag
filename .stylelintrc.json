@@ -64,6 +64,12 @@
     "declaration-block-no-redundant-longhand-properties": null,
     "at-rule-empty-line-before": null,
     "rule-empty-line-before": null,
-    "property-no-vendor-prefix": null
+    "property-no-vendor-prefix": null,
+    "no-invalid-position-declaration": [
+      true,
+      {
+        "ignoreAtRules": ["mixin", "include", "if", "else", "function", "for", "each", "while"]
+      }
+    ]
   }
 }

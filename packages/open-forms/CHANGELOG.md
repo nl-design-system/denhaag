@@ -1,5 +1,38 @@
 # @gemeente-denhaag/open-forms
 
+## 2.2.0
+
+### Minor Changes
+
+- 13b2cf1: Updated dependencies
+
+## 2.1.4
+
+### Patch Changes
+
+- Updated dependencies [7267b24]
+  - @gemeente-denhaag/design-tokens@1.0.4
+
+## 2.1.3
+
+### Patch Changes
+
+- Updated dependencies [1ed7367]
+  - @gemeente-denhaag/design-tokens@1.0.3
+
+## 2.1.2
+
+### Patch Changes
+
+- 14c4efa: Updated pnpm configuration
+
+## 2.1.1
+
+### Patch Changes
+
+- Updated dependencies [b55e74b]
+  - @gemeente-denhaag/design-tokens@1.0.2
+
 ## 2.1.0
 
 ### Minor Changes

@@ -1,5 +1,144 @@
 # @gemeente-denhaag/storybook
 
+## 5.4.0
+
+### Minor Changes
+
+- 13b2cf1: Updated dependencies
+
+### Patch Changes
+
+- Updated dependencies [13b2cf1]
+  - @gemeente-denhaag/form-field-error-message@3.1.0
+  - @gemeente-denhaag/form-field-description@3.1.0
+  - @gemeente-denhaag/floating-contact@2.1.0
+  - @gemeente-denhaag/dynamic-content@2.1.0
+  - @gemeente-denhaag/stylesprovider@3.2.0
+  - @gemeente-denhaag/unorderedlist@3.2.0
+  - @gemeente-denhaag/form-fieldset@3.1.0
+  - @gemeente-denhaag/ctadownload@2.1.0
+  - @gemeente-denhaag/number-badge@2.1.0
+  - @gemeente-denhaag/orderedlist@3.1.0
+  - @gemeente-denhaag/radio-button@3.1.0
+  - @gemeente-denhaag/button-link@3.1.0
+  - @gemeente-denhaag/link-button@3.1.0
+  - @gemeente-denhaag/data-badge@2.1.0
+  - @gemeente-denhaag/form-field@3.1.0
+  - @gemeente-denhaag/form-label@3.1.0
+  - @gemeente-denhaag/paragraph@2.1.0
+  - @gemeente-denhaag/text-input@3.1.0
+  - @gemeente-denhaag/checkbox@3.1.0
+  - @gemeente-denhaag/cta-event@2.1.0
+  - @gemeente-denhaag/link-list@6.2.0
+  - @gemeente-denhaag/skip-link@1.1.0
+  - @gemeente-denhaag/textarea@3.1.0
+  - @gemeente-denhaag/heading@2.1.0
+  - @gemeente-denhaag/footer@4.2.0
+  - @gemeente-denhaag/select@3.1.0
+  - @gemeente-denhaag/file@2.3.0
+  - @gemeente-denhaag/hero@4.1.0
+  - @gemeente-denhaag/link@4.1.0
+  - @gemeente-denhaag/menu@4.1.0
+  - @gemeente-denhaag/tab@3.1.0
+  - @gemeente-denhaag/page-index@4.0.3
+  - @gemeente-denhaag/side-navigation@4.0.3
+  - @gemeente-denhaag/card@5.0.6
+  - @gemeente-denhaag/contact-timeline@4.0.11
+  - @gemeente-denhaag/file-upload@1.0.2
+  - @gemeente-denhaag/header@4.1.4
+  - @gemeente-denhaag/alert@4.0.7
+  - @gemeente-denhaag/action@4.1.3
+  - @gemeente-denhaag/breadcrumb@5.0.4
+  - @gemeente-denhaag/card-authentication@2.0.8
+  - @gemeente-denhaag/form-progress@4.0.3
+  - @gemeente-denhaag/table@4.0.4
+  - @gemeente-denhaag/card-group@2.0.8
+
+## 5.3.5
+
+### Patch Changes
+
+- 71c6fad: Added mobile styling to fileupload and added new folder icon
+- 2ed142e: Update React version
+- Updated dependencies [71c6fad]
+- Updated dependencies [e938a10]
+  - @gemeente-denhaag/file-upload@1.0.1
+  - @gemeente-denhaag/icons@4.0.1
+  - @gemeente-denhaag/accordion@4.0.2
+  - @gemeente-denhaag/action@4.1.2
+  - @gemeente-denhaag/alert@4.0.6
+  - @gemeente-denhaag/anchor-navigation@2.0.2
+  - @gemeente-denhaag/breadcrumb@5.0.3
+  - @gemeente-denhaag/button@3.0.2
+  - @gemeente-denhaag/card@5.0.5
+  - @gemeente-denhaag/contact-timeline@4.0.10
+  - @gemeente-denhaag/ctadownload@2.0.0
+  - @gemeente-denhaag/cta-image-content@3.0.3
+  - @gemeente-denhaag/ctalink@2.0.0
+  - @gemeente-denhaag/divider@3.0.2
+  - @gemeente-denhaag/dynamic-content@2.0.3
+  - @gemeente-denhaag/file@2.2.1
+  - @gemeente-denhaag/footer@4.1.4
+  - @gemeente-denhaag/form-progress@4.0.2
+  - @gemeente-denhaag/header@4.1.3
+  - @gemeente-denhaag/iconbutton@3.0.1
+  - @gemeente-denhaag/image@2.0.1
+  - @gemeente-denhaag/link@4.0.1
+  - @gemeente-denhaag/link-list@6.1.2
+  - @gemeente-denhaag/list@3.0.1
+  - @gemeente-denhaag/menu@4.0.5
+  - @gemeente-denhaag/note@2.0.1
+  - @gemeente-denhaag/process-steps@4.2.3
+  - @gemeente-denhaag/sheet@4.0.1
+  - @gemeente-denhaag/step-marker@3.0.1
+  - @gemeente-denhaag/card-authentication@2.0.7
+  - @gemeente-denhaag/dotindicator@3.0.2
+  - @gemeente-denhaag/modal@3.0.2
+  - @gemeente-denhaag/card-group@2.0.7
+
+## 5.3.4
+
+### Patch Changes
+
+- 7267b24: Added FileUpload component
+- Updated dependencies [7267b24]
+- Updated dependencies [7267b24]
+  - @gemeente-denhaag/file@2.2.0
+  - @gemeente-denhaag/file-upload@1.0.0
+  - @gemeente-denhaag/design-tokens@1.0.4
+  - @gemeente-denhaag/contact-timeline@4.0.9
+
+## 5.3.3
+
+### Patch Changes
+
+- 1ed7367: Add new SkipLink component
+- Updated dependencies [1ed7367]
+  - @gemeente-denhaag/skip-link@1.0.0
+  - @gemeente-denhaag/stylesprovider@3.1.0
+  - @gemeente-denhaag/design-tokens@1.0.3
+
+## 5.3.2
+
+### Patch Changes
+
+- Updated dependencies [675ae64]
+  - @gemeente-denhaag/file@2.1.2
+  - @gemeente-denhaag/contact-timeline@4.0.8
+
+## 5.3.1
+
+### Patch Changes
+
+- b55e74b: forgot to add changeset to release new version
+- Updated dependencies [b55e74b]
+  - @gemeente-denhaag/page-index@4.0.2
+  - @gemeente-denhaag/design-tokens@1.0.2
+  - @gemeente-denhaag/action@4.1.1
+  - @gemeente-denhaag/card@5.0.4
+  - @gemeente-denhaag/card-authentication@2.0.6
+  - @gemeente-denhaag/card-group@2.0.6
+
 ## 5.3.0
 
 ### Minor Changes

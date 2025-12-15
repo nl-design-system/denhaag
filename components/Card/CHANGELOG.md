@@ -1,5 +1,27 @@
 # @gemeente-denhaag/card
 
+## 5.0.6
+
+### Patch Changes
+
+- Updated dependencies [13b2cf1]
+  - @gemeente-denhaag/paragraph@2.1.0
+  - @gemeente-denhaag/link@4.1.0
+
+## 5.0.5
+
+### Patch Changes
+
+- Updated dependencies [71c6fad]
+  - @gemeente-denhaag/icons@4.0.1
+  - @gemeente-denhaag/link@4.0.1
+
+## 5.0.4
+
+### Patch Changes
+
+- b55e74b: forgot to add changeset to release new version
+
 ## 5.0.3
 
 ### Patch Changes

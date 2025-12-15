@@ -3,7 +3,7 @@
   "description": "The StylesProvider component to properly apply our CSS to MUI components",
   "author": "Municipality of The Hague",
   "license": "EUPL-1.2",
-  "version": "3.0.2",
+  "version": "3.2.0",
   "exports": {
     ".": {
       "types": "./dist/cjs/index.d.ts",
@@ -30,7 +30,8 @@
   },
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "dependencies": {
-    "@utrecht/document-css": "1.5.1",
+    "@utrecht/document-css": "2.0.1",
+    "@utrecht/focus-ring-css": "3.0.1",
     "clsx": "2.1.1"
   },
   "peerDependencies": {

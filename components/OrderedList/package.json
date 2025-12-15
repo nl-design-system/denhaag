@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/orderedlist",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "description": "An ordered list component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -31,8 +31,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@utrecht/component-library-react": "10.2.2",
-    "@utrecht/ordered-list-css": "1.5.2"
+    "@utrecht/component-library-react": "10.3.10",
+    "@utrecht/ordered-list-css": "3.0.1"
   },
   "peerDependencies": {
     "react": "18 || 19",

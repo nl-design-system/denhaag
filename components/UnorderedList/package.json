@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/unorderedlist",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "An unordered list component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -31,8 +31,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@utrecht/component-library-react": "10.2.2",
-    "@utrecht/unordered-list-css": "1.5.1",
+    "@utrecht/component-library-react": "10.3.10",
+    "@utrecht/unordered-list-css": "2.0.1",
     "clsx": "2.1.1"
   },
   "peerDependencies": {

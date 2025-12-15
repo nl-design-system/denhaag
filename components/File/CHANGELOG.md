@@ -1,5 +1,30 @@
 # @gemeente-denhaag/file
 
+## 2.3.0
+
+### Minor Changes
+
+- 13b2cf1: Updated dependencies
+
+## 2.2.1
+
+### Patch Changes
+
+- Updated dependencies [71c6fad]
+  - @gemeente-denhaag/icons@4.0.1
+
+## 2.2.0
+
+### Minor Changes
+
+- 7267b24: Added removable and loading props
+
+## 2.1.2
+
+### Patch Changes
+
+- 675ae64: Fix File space between name and description
+
 ## 2.1.1
 
 ### Patch Changes

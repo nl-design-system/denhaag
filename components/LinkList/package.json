@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/link-list",
-  "version": "6.1.1",
+  "version": "6.2.0",
   "description": "Link list component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -33,8 +33,8 @@
   "dependencies": {
     "@gemeente-denhaag/icons": "workspace:*",
     "@gemeente-denhaag/link": "workspace:*",
-    "@utrecht/component-library-react": "10.2.2",
-    "@utrecht/link-list-css": "2.3.1",
+    "@utrecht/component-library-react": "10.3.10",
+    "@utrecht/link-list-css": "3.0.1",
     "clsx": "2.1.1"
   },
   "peerDependencies": {

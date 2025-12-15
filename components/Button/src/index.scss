@@ -1,5 +1,3 @@
-@use "~@utrecht/focus-ring-css/src/mixin" as *;
-
 .denhaag-button {
   --_denhaag-button-padding-inline-end: var(
     --denhaag-button-medium-size-padding-inline,
@@ -86,14 +84,6 @@
         height: 0;
       }
     }
-  }
-
-  &:focus {
-    @include utrecht-focus;
-  }
-
-  &:focus-visible {
-    @include utrecht-focus-visible;
   }
 }
 

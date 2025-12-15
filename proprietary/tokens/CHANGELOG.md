@@ -1,5 +1,23 @@
 # @gemeente-denhaag/design-tokens
 
+## 1.0.4
+
+### Patch Changes
+
+- 7267b24: Added FileUpload component
+
+## 1.0.3
+
+### Patch Changes
+
+- 1ed7367: Add new SkipLink component
+
+## 1.0.2
+
+### Patch Changes
+
+- b55e74b: forgot to add changeset to release new version
+
 ## 1.0.1
 
 ### Patch Changes

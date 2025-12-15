@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/menu",
-  "version": "4.0.4",
+  "version": "4.1.0",
   "description": "A Menu component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -36,9 +36,9 @@
     "@gemeente-denhaag/language-switcher": "workspace:*",
     "@gemeente-denhaag/number-badge": "workspace:*",
     "@gemeente-denhaag/sheet": "workspace:*",
-    "@types/uuid": "10.0.0",
+    "@types/uuid": "11.0.0",
     "clsx": "2.1.1",
-    "uuid": "11.1.0"
+    "uuid": "13.0.0"
   },
   "peerDependencies": {
     "react": "18 || 19",

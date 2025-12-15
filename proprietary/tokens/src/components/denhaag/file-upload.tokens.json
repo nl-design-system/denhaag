@@ -1,0 +1,58 @@
+{
+  "denhaag": {
+    "file-upload": {
+      "margin-block-end": {
+        "value": "12px"
+      },
+      "margin-block-start": {
+        "value": "12px"
+      },
+      "padding-block": {
+        "value": "32px"
+      },
+      "padding-inline": {
+        "value": "40px"
+      },
+      "border-radius": {
+        "value": "3px"
+      },
+      "border-width": {
+        "value": "1px"
+      },
+      "border-color": {
+        "value": "{denhaag.color.grey.3}"
+      },
+      "text-align": {
+        "value": "center"
+      },
+      "drag-file": {
+        "border-width": {
+          "value": "2px"
+        },
+        "border-style": {
+          "value": "dashed"
+        },
+        "border-color": {
+          "value": "{denhaag.color.grey.3}"
+        },
+        "background-color": {
+          "value": "{denhaag.color.warmgrey.1}"
+        }
+      },
+      "drag-file-within": {
+        "border-width": {
+          "value": "2px"
+        },
+        "border-style": {
+          "value": "dashed"
+        },
+        "border-color": {
+          "value": "{denhaag.color.green.3}"
+        },
+        "background-color": {
+          "value": "{denhaag.color.green.1}"
+        }
+      }
+    }
+  }
+}

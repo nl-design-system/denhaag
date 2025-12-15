@@ -1,5 +1,27 @@
 # @gemeente-denhaag/action
 
+## 4.1.3
+
+### Patch Changes
+
+- Updated dependencies [13b2cf1]
+  - @gemeente-denhaag/link@4.1.0
+
+## 4.1.2
+
+### Patch Changes
+
+- Updated dependencies [71c6fad]
+  - @gemeente-denhaag/icons@4.0.1
+  - @gemeente-denhaag/button@3.0.2
+  - @gemeente-denhaag/link@4.0.1
+
+## 4.1.1
+
+### Patch Changes
+
+- b55e74b: forgot to add changeset to release new version
+
 ## 4.1.0
 
 ### Minor Changes

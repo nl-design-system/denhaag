@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/case-card-element",
-  "version": "3.0.3",
+  "version": "3.1.0",
   "description": "A Case Card web component component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -36,10 +36,10 @@
   "dependencies": {
     "@gemeente-denhaag/card": "workspace:*",
     "@gemeente-denhaag/icons": "workspace:*",
-    "@utrecht/paragraph-css": "2.3.1"
+    "@utrecht/paragraph-css": "3.0.1"
   },
   "devDependencies": {
-    "@nl-design-system/tsconfig": "1.0.4",
-    "@rollup/plugin-typescript": "12.1.4"
+    "@nl-design-system/tsconfig": "1.0.5",
+    "@rollup/plugin-typescript": "12.3.0"
   }
 }
