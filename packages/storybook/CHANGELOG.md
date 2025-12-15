@@ -1,5 +1,12 @@
 # @gemeente-denhaag/storybook
 
+## 5.4.1
+
+### Patch Changes
+
+- Updated dependencies [ab6b60d]
+  - @gemeente-denhaag/design-tokens@1.1.0
+
 ## 5.4.0
 
 ### Minor Changes

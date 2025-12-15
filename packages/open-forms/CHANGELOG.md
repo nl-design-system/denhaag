@@ -1,5 +1,16 @@
 # @gemeente-denhaag/open-forms
 
+## 2.3.0
+
+### Minor Changes
+
+- ab6b60d: merged all custom openforms css with mdh css
+
+### Patch Changes
+
+- Updated dependencies [ab6b60d]
+  - @gemeente-denhaag/design-tokens@1.1.0
+
 ## 2.2.0
 
 ### Minor Changes

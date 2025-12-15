@@ -1,5 +1,11 @@
 # @gemeente-denhaag/design-tokens
 
+## 1.1.0
+
+### Minor Changes
+
+- ab6b60d: merged all custom openforms css with mdh css
+
 ## 1.0.4
 
 ### Patch Changes
