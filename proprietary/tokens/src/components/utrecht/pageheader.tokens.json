@@ -3,7 +3,7 @@
     "page-header": {
       "background-color": {},
       "color": {},
-      "padding-start": {},
+      "padding-block-start": { "value": "10px" },
       "padding-block-end": {}
     }
   }

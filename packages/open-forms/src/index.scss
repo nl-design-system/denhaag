@@ -1,6 +1,7 @@
 @use "~@gemeente-denhaag/fonts/dist/index.css" as fonts;
 @use "~@utrecht/button-css/dist/index.min.css" as button;
 @use "~@utrecht/button-link-css/dist/index.min.css" as buttonlink;
+@use "~@utrecht/data-list-css/dist/index.min.css" as datalist;
 @use "~@utrecht/document-css/dist/index.min.css" as document;
 @use "~@utrecht/form-field-css/dist/index.min.css" as formfield;
 @use "~@utrecht/form-field-description-css/dist/index.min.css" as formfielddescription;
@@ -12,3 +13,171 @@
 @use "~@utrecht/table-css/dist/index.min.css" as table;
 @use "~@utrecht/textbox-css/dist/index.min.css" as textbox;
 @use "~@gemeente-denhaag/design-tokens/dist/theme/index" as designTokenComponents;
+
+// Tijdelijke fix voor gekke root font-size issues met utrecht-document die op html tag staat
+:root {
+  font-size: 16px;
+}
+
+.denhaag-theme {
+  --utrecht-form-field-invalid-border-inline-start-color: var(--denhaag-color-red-3);
+  --utrecht-form-field-invalid-border-inline-start-width: 4px;
+  --utrecht-form-field-invalid-padding-inline-start: 16px;
+}
+
+.utrecht-page {
+  --of-page-header-logo-return-url-min-inline-size: 150px;
+  --of-page-header-logo-return-url-min-block-size: 50px;
+  --of-page-header-logo-return-url-mobile-min-inline-size: 60px;
+  --of-page-header-logo-return-url-mobile-min-block-size: 40px;
+  --of-header-logo-height: auto;
+  --of-header-logo-width: auto;
+  --utrecht-logo-max-height: 97px;
+  --of-utrecht-form-label-checkbox-padding-inline-end: 0;
+  --of-utrecht-form-label-checkbox-padding-inline-start: 12px;
+  --of-utrecht-form-label-checkbox-padding-block-end: 11px;
+  --of-utrecht-form-label-checkbox-padding-block-start: 11px;
+  --of-utrecht-form-field-checkbox-margin-block-start: 0;
+  --of-utrecht-form-label-checkbox-focus-within-outline: 1px solid var(--denhaag-color-blue-4);
+  --of-utrecht-form-field-checkbox-label-margin-block-end: 0;
+  --of-utrecht-form-label-radio-padding-block-start: 4px;
+  --of-utrecht-form-label-radio-padding-inline-start: 4px;
+  --of-utrecht-form-label-radio-padding-block-end: 4px;
+  --of-utrecht-form-label-radio-padding-inline-end: 4px;
+  --of-utrecht-form-field-radio-label-margin-block-end: 0;
+  --of-utrecht-form-label-radio-focus-within-outline: 1px solid var(--denhaag-color-blue-4);
+  --of-utrecht-form-field-radio-margin-block-start: 8px;
+  --of-file-upload-drop-area-padding: 15px;
+  --of-previous-link-display-start: flex;
+  --of-previous-link-display-end: none;
+  --of-utrecht-page-header-mobile-padding-block-end: 0;
+  --of-utrecht-page-header-mobile-padding-block-start: 0;
+  --of-summary-header-mobile-row-gap: 8px;
+  --of-summary-header-padding-block-end: 12px;
+  --of-summary-header-border-block-end-width: 1px;
+  --of-summary-header-border-block-end-style: solid;
+  --of-summary-step-name-font-size: var(--utrecht-heading-3-font-size);
+  --of-summary-step-name-line-height: 1.17;
+  --of-utrecht-data-list-padding-block-start: 15px;
+  --of-utrecht-data-list-gap: 15px;
+  --of-utrecht-data-list-padding-block-end: 30px;
+  --of-utrecht-data-list-laptop-display: flex;
+}
+
+.denhaag-theme .utrecht-page-footer__navigation .utrecht-link-list {
+  font-size: 1.125rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+@media (width<=767px) {
+  .denhaag-theme .utrecht-page-footer__navigation .utrecht-link-list {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+}
+
+.denhaag-theme .utrecht-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.denhaag-theme .utrecht-page {
+  --utrecht-page-max-inline-size: 100%;
+  --utrecht-page-background-color: var(--of-view-background, var(--of-layout-background, #e6e6e6));
+
+  margin-block-end: var(--of-utrecht-page-margin-block-end, 0);
+  margin-block-start: var(--of-utrecht-page-margin-block-start, 0);
+  background-color: var(--of-layout-background-color, var(--utrecht-page-background-color));
+  display: flex;
+  flex-direction: column;
+  min-block-size: 100vh;
+  max-inline-size: 100vw;
+}
+
+@media (width>= 1200px) {
+  .denhaag-theme .utrecht-page {
+    --utrecht-page-max-inline-size: 1200px;
+  }
+}
+
+.denhaag-theme .utrecht-page .utrecht-page-content {
+  box-sizing: border-box;
+}
+
+.denhaag-theme .utrecht-page > .utrecht-page__content {
+  flex-grow: 1;
+  inline-size: 100%;
+  margin-inline-end: auto;
+  margin-inline-start: auto;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.denhaag-theme .cookie-group__title {
+  margin-block-end: 1rem !important;
+}
+
+.denhaag-theme .utrecht-form-field-description--openforms-helptext {
+  line-height: var(--of-utrecht-form-field-description-line-height, 1.5);
+  background-color: var(--of-utrecht-form-field-description-background-color);
+  border-left-style: none;
+  border-left-color: var(--of-utrecht-form-field-description-border-left-color);
+  border-left-width: var(--of-utrecht-form-field-description-border-left-width);
+  padding-block-end: var(--of-utrecht-form-field-description-padding-block);
+  padding-block-start: var(--of-utrecht-form-field-description-padding-block);
+  padding-inline-end: var(--of-utrecht-form-field-description-padding-inline);
+  padding-inline-start: calc(
+    var(--of-utrecht-form-field-description-padding-inline) - var(--of-utrecht-form-field-description-border-left-width)
+  );
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.denhaag-theme [ref="component"].has-error>.utrecht-form-field.utrecht-form-field--openforms,
+/* stylelint-disable-next-line selector-class-pattern */
+.denhaag-theme [ref="component"].formio-error-wrapper>.utrecht-form-field.utrecht-form-field--openforms {
+  background-color: var(--of-utrecht-form-field-background-color, unset);
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.denhaag-theme [ref="component"].has-error>.utrecht-form-field.utrecht-form-field--openforms.utrecht-form-field--invalid,
+/* stylelint-disable-next-line selector-class-pattern */
+.denhaag-theme [ref="component"].has-error>.utrecht-form-field.utrecht-form-field--openforms,
+/* stylelint-disable-next-line selector-class-pattern */
+.denhaag-theme [ref="component"].formio-error-wrapper>.utrecht-form-field.utrecht-form-field--openforms.utrecht-form-field--invalid,
+/* stylelint-disable-next-line selector-class-pattern */
+.denhaag-theme [ref="component"].formio-error-wrapper>.utrecht-form-field.utrecht-form-field--openforms {
+  --of-utrecht-form-field-background-color: var(--utrecht-alert-error-background-color, var(--of-alert-error-bg));
+
+  padding-inline-end: var(--utrecht-form-field-invalid-padding-inline-start);
+  padding-block-start: var(--utrecht-form-field-invalid-padding-inline-start);
+  padding-block-end: var(--utrecht-form-field-invalid-padding-inline-start);
+}
+
+.denhaag-theme .openforms-toolbar {
+  --utrecht-button-min-inline-size: 120px;
+}
+
+.denhaag-theme .openforms-fieldset__legend {
+  display: table;
+  inline-size: 100%;
+  padding-inline-end: 0;
+  padding-inline-start: 0;
+  margin-inline-start: 0;
+  border-block-end-width: 1px;
+  border-block-end-style: solid;
+  border-block-end-color: var(--denhaag-color-grey-3, currentColor);
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.denhaag-theme .of-previous-link {
+  padding: bottom 24px;
+}
+
+// Nieuwe CSS:
+.openforms-progress-indicator-item {
+  --utrecht-link-text-decoration: none;
+}

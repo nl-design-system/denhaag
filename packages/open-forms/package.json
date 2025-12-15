@@ -28,6 +28,7 @@
   "devDependencies": {
     "@utrecht/button-css": "3.0.1",
     "@utrecht/button-link-css": "2.0.1",
+    "@utrecht/data-list-css": "2.0.1",
     "@utrecht/document-css": "2.0.1",
     "@utrecht/form-field-css": "2.0.1",
     "@utrecht/form-field-description-css": "2.0.1",
