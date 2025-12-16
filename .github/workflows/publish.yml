@@ -131,7 +131,7 @@ jobs:
           node-version: 24
 
       - name: Publish to GitHub repository
-        uses: changesets/action@aba318e9165b45b7948c60273e0b72fce0a64eb9 # v1.4.7
+        uses: changesets/action@e0145edc7d9d8679003495b11f87bd8ef63c0cba # v1.5.3
         id: changeset
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
