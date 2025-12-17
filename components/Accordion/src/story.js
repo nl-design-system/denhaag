@@ -1,3 +1,5 @@
 import Accordion from './AccordionToggle';
 
-window.addEventListener('DOMContentLoaded', () => new Accordion());
+new Accordion();
+
+window.addEventListener('DOMContentLoaded', () => window.dispatchEvent(new CustomEvent('nlds-accordion:init')));
