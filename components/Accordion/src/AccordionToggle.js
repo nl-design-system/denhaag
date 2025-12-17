@@ -1,44 +1,142 @@
-export default class Accordion {
+/* global WeakSet */
+class Accordion {
   constructor(className = 'denhaag-accordion__container') {
-    this.collapses = document.getElementsByClassName(className);
-    this.summaries = [];
+    this.debug = this.isDebugMode();
+    this.eventPrefix = 'nlds-accordion';
+    this.className = className;
 
-    this.events();
+    this.collapses = [];
+    this.summaries = [];
+    this.initialized = new WeakSet();
+
+    this.setupEventListeners();
   }
 
-  events() {
+  /**
+   * Setup any additional event listeners if needed.
+   */
+  setupEventListeners() {
+    window.addEventListener(`${this.eventPrefix}:init`, this.initialize.bind(this));
+    window.addEventListener(`${this.eventPrefix}:reinit`, this.reinitialize.bind(this));
+    window.addEventListener(`${this.eventPrefix}:toggleDebug`, this.toggleDebugMode.bind(this));
+
+    window.addEventListener(`${this.eventPrefix}:open`, (event) => this.openCollapse(event?.detail?.collapse));
+    window.addEventListener(`${this.eventPrefix}:close`, (event) => this.closeCollapse(event?.detail?.collapse));
+  }
+
+  /**
+   * Initialize the accordion functionality.
+   */
+  initialize() {
+    if (!this.className) {
+      if (this.debug) console.warn('Accordion className is not defined.');
+      return;
+    }
+
+    this.collapses = document.getElementsByClassName(this.className);
+    this.summaries = [];
+
     if (!this.collapses || !this.collapses.length) {
       return;
     }
 
-    Array.from(this.collapses)?.forEach((collapse, index) => {
-      collapse.addEventListener('toggle', () => this.toggleAttributes(collapse));
-
+    Array.from(this.collapses)?.forEach((collapse) => {
+      const isNew = !this.initialized.has(collapse);
       const header = collapse?.querySelector('.denhaag-accordion__panel');
+
       if (header) {
         this.summaries.push(header);
-        header.addEventListener('keydown', (event) => this.handleKeydown(event, index));
+        if (isNew) {
+          header.addEventListener('keydown', (event) => this.handleKeydown(event, collapse));
+        }
+      }
+
+      if (isNew) {
+        this.initialized.add(collapse);
+        collapse.addEventListener('toggle', () => this.toggleAttributes(collapse));
       }
     });
+
+    if (this.initialized && this.debug) console.info(`Initialized accordion with ${this.collapses.length} items.`);
+  }
+
+  /**
+   * Reinitialize the accordion, useful when new elements are added to the DOM.
+   * Used within components like OWS.
+   */
+  reinitialize() {
+    this.summaries = [];
+    this.initialize();
+  }
+
+  /**
+   * Dispatch a custom event with optional data.
+   *
+   * @param {string} name The name of the event to dispatch.
+   * @param {Object} data Optional data to include with the event.
+   */
+  dispatchEvent(name, data = {}) {
+    if (!name) {
+      return;
+    }
+
+    if (this.debug) console.group(`Dispatching event: ${name}`);
+    if (this.debug) console.info(data);
+
+    // Split name on `:` to add prefix if missing. (internal or external event).
+    let eventName = name;
+    if (name.indexOf(':') === -1) {
+      eventName = `${this.eventPrefix}:${name}`;
+    }
+
+    window.dispatchEvent(
+      new CustomEvent(eventName, {
+        detail: data,
+        bubbles: true,
+      }),
+    );
+
+    if (this.debug) console.groupEnd();
+  }
+
+  /**
+   * Check if debug mode is enabled via URL parameter.
+   *
+   * @return {boolean}
+   */
+  isDebugMode() {
+    return new URLSearchParams(window.location.search).get('debug') === 'nlds:accordion';
+  }
+
+  /**
+   * Toggle debug mode on or off.
+   */
+  toggleDebugMode() {
+    this.debug = !this.debug;
   }
 
   /**
    * Handle keyboard navigation within the accordion.
    *
    * @param {object} event The keyboard event object.
-   * @param {number} index The index of the current accordion item.
+   * @param {HTMLElement} collapse The current accordion item.
    */
-  handleKeydown(event, index) {
+  handleKeydown(event, collapse) {
+    const scope = collapse.closest('.denhaag-accordion');
+    const scopedSummaries = scope
+      ? Array.from(scope.querySelectorAll(':scope > .denhaag-accordion__container > .denhaag-accordion__panel'))
+      : this.summaries;
+    const index = scopedSummaries.indexOf(event.target);
     let targetIndex;
 
     switch (event.key) {
       case 'ArrowDown':
         event.preventDefault();
-        targetIndex = (index + 1) % this.summaries.length;
+        targetIndex = (index + 1) % scopedSummaries.length;
         break;
       case 'ArrowUp':
         event.preventDefault();
-        targetIndex = (index - 1 + this.summaries.length) % this.summaries.length;
+        targetIndex = (index - 1 + scopedSummaries.length) % scopedSummaries.length;
         break;
       case 'Home':
         event.preventDefault();
@@ -46,21 +144,24 @@ export default class Accordion {
         break;
       case 'End':
         event.preventDefault();
-        targetIndex = this.summaries.length - 1;
+        targetIndex = scopedSummaries.length - 1;
         break;
       case 'ArrowLeft':
       case 'Escape':
-        this.closeCollapse(this.collapses[index]);
+        this.dispatchEvent('close', { collapse });
         return;
       case 'ArrowRight':
-        this.openCollapse(this.collapses[index]);
+        this.dispatchEvent('open', { collapse });
+        return;
+      case ' ':
+        event.preventDefault();
+        this.dispatchEvent(!collapse.open ? 'open' : 'close', { collapse });
         return;
       default:
-        // Do nothing for other keys.
         return;
     }
 
-    this.summaries[targetIndex]?.focus();
+    scopedSummaries[targetIndex]?.focus();
   }
 
   /**
@@ -69,9 +170,7 @@ export default class Accordion {
    */
   toggleAttributes(collapse) {
     if (!collapse) return;
-
-    const isCollapseOpen = collapse.open;
-    isCollapseOpen ? this.openCollapse(collapse) : this.closeCollapse(collapse);
+    this.dispatchEvent(collapse.open ? 'open' : 'close', { collapse });
   }
 
   /**
@@ -102,3 +201,5 @@ export default class Accordion {
     collapseContent.inert = true;
   }
 }
+
+export default Accordion;
