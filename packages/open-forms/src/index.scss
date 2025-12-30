@@ -181,3 +181,22 @@
 .openforms-progress-indicator-item {
   --utrecht-link-text-decoration: none;
 }
+
+.utrecht-form-field--checkbox:focus-within :is(*, *::before, *::after) {
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+.utrecht-form-field--checkbox:focus-within {
+  outline: 3px dashed #8a6f1d;
+  border-radius: 8px;
+  outline-offset: -6px;
+}
+
+@media (max-width: 768px) {
+  .openforms-title {
+    font-size: 28px;
+    padding-bottom: 20px;
+  }
+}
