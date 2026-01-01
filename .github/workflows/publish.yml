@@ -85,7 +85,7 @@ jobs:
           path: storybook-static
 
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@5c6e9e9f3672ce8fd37b9856193d2a537941e66c # v4.6.1
+        uses: JamesIves/github-pages-deploy-action@4a3abc783e1a24aeb44c16e869ad83caf6b4cc23 # v4.7.4
         with:
           branch: gh-pages
           folder: storybook-static
