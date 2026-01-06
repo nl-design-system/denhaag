@@ -3,7 +3,7 @@
   --utrecht-paragraph-line-height: var(--denhaag-typography-scale-lg-line-height);
   --denhaag-link-text-decoration: none;
 
-  background-color: var(--denhaag-color-white);
+  background-color: var(--denhaag-cta-image-content-background-color, var(--denhaag-color-white));
   border: var(--denhaag-cta-image-content-border, 1px solid var(--denhaag-color-grey-2));
   display: flex;
   flex-direction: var(--denhaag-cta-image-content-flex-direction, column-reverse);
@@ -77,12 +77,14 @@
 
   &--illustration-variant {
     --denhaag-cta-image-content-background-color: var(--denhaag-color-warmgrey-1);
-    --denhaag-cta-image-content-border: 0;
+    --denhaag-cta-image-content-border: 1px solid var(--denhaag-color-grey-3);
     --denhaag-cta-image-content-heading-font-size: var(--denhaag-typography-scale-xl-font-size);
     --denhaag-cta-image-content-heading-line-height: var(--denhaag-typography-scale-xl-line-height);
     --denhaag-cta-image-content-content-padding-block: var(--denhaag-space-xl);
     --denhaag-cta-image-content-content-padding-inline: var(--denhaag-space-xl);
     --denhaag-cta-image-content-image-aspect-ratio: 248 / 176;
+
+    outline-offset: 3px;
 
     @media (min-width: 768px) {
       --denhaag-cta-image-content-heading-font-size: var(--denhaag-typography-scale-2xl-font-size);
