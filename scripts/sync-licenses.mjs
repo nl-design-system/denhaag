@@ -1,8 +1,8 @@
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { access, lstat, readlink, readdir, symlink, unlink } from 'node:fs/promises';
+import { access, lstat, readFile, readdir, unlink, writeFile } from 'node:fs/promises';
 
-// Creates LICENSE.md symlinks for each component package.
+// Writes a clickable LICENSE.md stub into each component package.
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, '..');
 const componentsDir = path.join(rootDir, 'components');
@@ -17,31 +17,31 @@ async function exists(filePath) {
   }
 }
 
-async function ensureLicenseLink(componentPath) {
+async function ensureLicenseFile(componentPath) {
   const destination = path.join(componentPath, 'LICENSE.md');
   const relativeTarget = path.relative(componentPath, licensePath);
+  const content = `This component is licensed under EUPL-1.2. See [LICENSE](${relativeTarget}).\n`;
 
   if (await exists(destination)) {
     const stats = await lstat(destination);
 
     if (stats.isSymbolicLink()) {
-      const currentTarget = await readlink(destination);
-      const resolvedTarget = path.resolve(componentPath, currentTarget);
+      await unlink(destination);
+    } else {
+      const existing = await readFile(destination, 'utf8');
 
-      if (resolvedTarget === path.resolve(licensePath)) {
-        console.log(`Already linked: ${destination}`);
+      if (existing === content) {
+        console.log(`Already up to date: ${destination}`);
         return;
       }
 
-      await unlink(destination);
-    } else {
       console.warn(`Skipping ${destination}: file exists and is not a symlink`);
       return;
     }
   }
 
-  await symlink(relativeTarget, destination);
-  console.log(`Linked ${destination} -> ${relativeTarget}`);
+  await writeFile(destination, content, 'utf8');
+  console.log(`Wrote license stub at ${destination}`);
 }
 
 async function main() {
@@ -63,7 +63,7 @@ async function main() {
       continue;
     }
 
-    await ensureLicenseLink(componentPath);
+    await ensureLicenseFile(componentPath);
   }
 }
 
