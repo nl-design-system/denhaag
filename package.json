@@ -30,6 +30,7 @@
     "preinstall": "npx only-allow pnpm",
     "prettier": "prettier --write .",
     "publish": "changeset publish",
+    "sync:licenses": "node ./scripts/sync-licenses.mjs",
     "storybook": "npm-run-all --parallel watch:*",
     "test-update": "npm-run-all --sequential lint typecheck build",
     "update-patch": "npm-check-updates --configFileName .ncurc.patch.js",
