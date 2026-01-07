@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Action
 
 ![npm (scoped)](https://img.shields.io/npm/v/@gemeente-denhaag/alert?logo=npm&style=flat-square)

@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Dot indicator
 
 ![npm (scoped)](https://img.shields.io/npm/v/@gemeente-denhaag/dotindicator?logo=npm&style=flat-square)

@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Anchor collapse
 
 The anchor collapse for mobile devices, used in combination with the anchor navigation.

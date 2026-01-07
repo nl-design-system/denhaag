@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Introduction
 
 ![npm (scoped)](https://img.shields.io/npm/v/@gemeente-denhaag/menu?logo=npm&style=flat-square)

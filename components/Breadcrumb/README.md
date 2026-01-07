@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Navigation Link
 
 [Figma Design](https://www.figma.com/file/JpoY3waVoQGlLQzQXTL9nn/Design-System-Gemeente-Den-Haag?node-id=1569%3A5671)

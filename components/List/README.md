@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # List
 
 Lists present multiple line items vertically as a single continuous element. The types of lists are one-line and two-line.

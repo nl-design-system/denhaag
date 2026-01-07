@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Navigation Link
 
 ![npm (scoped)](https://img.shields.io/npm/v/@gemeente-denhaag/link?logo=npm&style=flat-square)

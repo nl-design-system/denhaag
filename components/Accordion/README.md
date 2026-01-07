@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Accordion
 
 An accordion is a vertically stacked list of headers that reveal or hide associated sections of content.

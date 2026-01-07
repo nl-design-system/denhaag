@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Divider
 
 A divider is a thin line that groups content in lists and layouts. They separate content into clear groups.

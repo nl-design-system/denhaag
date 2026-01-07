@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Image
 
 Four image variants: image only, image with caption, image, image with download, image with caption and download.

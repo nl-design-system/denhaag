@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Call To Action Event
 
 A calendar event is a standalone link that shows what kind of event is on which date. It links to a content evenement page.

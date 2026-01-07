@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Button
 
 ![npm (scoped)](https://img.shields.io/npm/v/@gemeente-denhaag/button?logo=npm&style=flat-square)

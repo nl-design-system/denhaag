@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Heading
 
 Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.<br /><sub>Ook bekend als: Titel, Kop en Kopje.</sub>

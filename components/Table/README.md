@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Table
 
 Tables organize and display information from a data set into rows and columns.

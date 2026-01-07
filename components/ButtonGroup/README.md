@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Button Group
 
 Button groups are used to group buttons.

@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Ordered List element
 
 Lists are vertical groupings of related content. List items begin with either a number or a bullet.
