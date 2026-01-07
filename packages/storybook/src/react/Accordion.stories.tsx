@@ -4,6 +4,8 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 import React from 'react';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
 import { DescriptionList } from '@gemeente-denhaag/descriptionlist';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/Accordion/package.json';
 
 const exampleArgs = {
   children: (
@@ -44,6 +46,7 @@ const meta = {
   parameters: {
     tokensPrefix: 'denhaag-accordion',
     tokens,
+    docs: { description: { component: getComponentDescription(pkg.name, pkg.version) } },
   },
 } as Meta<typeof Accordion>;
 

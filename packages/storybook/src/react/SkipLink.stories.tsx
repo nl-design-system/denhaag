@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { SkipLink } from '@gemeente-denhaag/skip-link';
 import readme from '../../../../components/SkipLink/README.md?raw';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/SkipLink/package.json';
 
 const meta = {
   component: SkipLink,
@@ -14,7 +16,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
   },

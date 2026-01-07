@@ -2,6 +2,8 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 import { FormProgress } from '@gemeente-denhaag/form-progress';
 
 import readme from '../../../../components/FormProgress/README.md?raw';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/FormProgress/package.json';
 
 const exampleArgs = {
   value: 1,
@@ -16,7 +18,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
   },

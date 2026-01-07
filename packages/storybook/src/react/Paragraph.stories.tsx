@@ -1,6 +1,8 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
 import readme from '../../../../components/Paragraph/README.md?raw';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/Paragraph/package.json';
 
 type Story = StoryObj<typeof meta>;
 
@@ -19,7 +21,7 @@ const meta: Meta<typeof Paragraph> = {
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
   },

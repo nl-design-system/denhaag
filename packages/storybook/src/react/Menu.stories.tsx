@@ -3,6 +3,8 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 
 import { Menu, MenuButton, MenuButtonExpandable } from '@gemeente-denhaag/menu';
 import readme from '../../../../components/Menu/README.md?raw';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/Menu/package.json';
 
 const exampleArgs = {
   children: (
@@ -20,7 +22,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
   },

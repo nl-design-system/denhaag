@@ -2,6 +2,8 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from '@gemeente-denhaag/table';
 import readme from '../../../../components/Table/README.md?raw';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/Table/package.json';
 import { Link } from '@gemeente-denhaag/link';
 
 const exampleArgs = {
@@ -43,7 +45,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
   },

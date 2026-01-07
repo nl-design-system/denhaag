@@ -2,6 +2,8 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react-vite';
 import readme from '../../../../components/FormField/README.md?raw';
 import { OrderedList, OrderedListItem } from '@gemeente-denhaag/orderedlist';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/OrderedList/package.json';
 
 const meta = {
   component: OrderedList,
@@ -10,7 +12,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
   },

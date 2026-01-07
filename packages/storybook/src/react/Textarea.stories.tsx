@@ -1,6 +1,8 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { Textarea } from '@gemeente-denhaag/textarea';
 import readme from '../../../../components/Textarea/README.md?raw';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/Textarea/package.json';
 
 const meta = {
   component: Textarea,
@@ -9,7 +11,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
   },

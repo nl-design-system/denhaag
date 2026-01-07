@@ -4,6 +4,8 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 import { Status } from '@gemeente-denhaag/process-steps';
 
 import readme from '../../../../components/ProcessSteps/README.md?raw';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/ProcessSteps/package.json';
 import tokensDefinition from '../../../../components/ProcessSteps/src/tokens.json';
 
 const exampleArgs = {
@@ -43,7 +45,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
     tokensPrefix: 'denhaag-process-steps',

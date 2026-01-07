@@ -2,6 +2,8 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 import { FileUpload } from '@gemeente-denhaag/file-upload';
 
 import readme from '../../../../components/File/README.md?raw';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/FileUpload/package.json';
 
 const exampleArgs = {};
 
@@ -12,7 +14,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
     chromatic: { viewports: [1280, 360] },

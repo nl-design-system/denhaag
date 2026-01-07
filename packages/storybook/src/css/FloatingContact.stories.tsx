@@ -3,6 +3,8 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 import '@gemeente-denhaag/floating-contact';
 
 import readme from '../../../../components/FloatingContact/README.md?raw';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/FloatingContact/package.json';
 import '../../../../components/FloatingContact/src/stories.js';
 import './_storybook.scss';
 
@@ -13,7 +15,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
     status: {

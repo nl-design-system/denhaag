@@ -5,6 +5,8 @@ import readme from '../../../../components/Action/README.md?raw';
 import { templateLocale } from '../templates/util';
 import { ButtonLink } from '@gemeente-denhaag/button-link';
 import { DataBadge } from '@gemeente-denhaag/data-badge';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/Action/package.json';
 
 const labels = {
   today: 'vandaag',
@@ -31,7 +33,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
   },

@@ -2,6 +2,8 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 import { Pagination } from '@gemeente-denhaag/pagination';
 
 import readme from '../../../../components/Pagination/README.md?raw';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/Pagination/package.json';
 
 const exampleArgs = {
   indexLimit: 0,
@@ -14,7 +16,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
   },

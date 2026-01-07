@@ -3,6 +3,8 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 import { AlertTriangleIcon, CheckedIcon, CloseIcon } from '@gemeente-denhaag/icons';
 import { StepMarker } from '@gemeente-denhaag/step-marker';
 import readme from '../../../../components/StepMarker/README.md?raw';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/StepMarker/package.json';
 
 const exampleArgs = {
   children: 1,
@@ -17,7 +19,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
   },
