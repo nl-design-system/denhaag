@@ -4,6 +4,8 @@ import readme from '../../../../components/Card/README.md?raw';
 import { templateLocale } from '../templates/util';
 import { formatDate, longDateOptions } from '@gemeente-denhaag/utils';
 import React from 'react';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/Card/package.json';
 
 type Story = StoryObj<typeof meta>;
 
@@ -34,7 +36,7 @@ const meta: Meta<typeof CaseCard> = {
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
   },

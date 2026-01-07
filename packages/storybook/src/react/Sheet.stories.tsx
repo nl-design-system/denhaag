@@ -6,6 +6,8 @@ import { Sheet, SheetContainer, SheetDialog, SheetProps } from '@gemeente-denhaa
 import { ResponsiveContent } from '@gemeente-denhaag/responsive-content';
 
 import readme from '../../../../components/Sheet/README.md?raw';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/Sheet/package.json';
 
 const exampleArgs: SheetProps = {
   children: 'Sheet',
@@ -18,7 +20,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
   },

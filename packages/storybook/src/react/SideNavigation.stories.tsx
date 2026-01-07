@@ -3,6 +3,8 @@ import { SideNavigation } from '@gemeente-denhaag/side-navigation';
 import { Meta, StoryObj } from '@storybook/react-vite';
 import React from 'react';
 import readme from '../../../../components/SideNavigation/README.md?raw';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/SideNavigation/package.json';
 
 type Story = StoryObj<typeof meta>;
 
@@ -51,7 +53,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
   },

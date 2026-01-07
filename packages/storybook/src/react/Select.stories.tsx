@@ -2,6 +2,8 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { Select, SelectOption } from '@gemeente-denhaag/select';
 import readme from '../../../../components/Select/README.md?raw';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/Select/package.json';
 
 const meta = {
   component: Select,
@@ -20,7 +22,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
   },

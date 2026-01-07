@@ -3,13 +3,15 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 import '@gemeente-denhaag/ctalink';
 
 import readme from '../../../../components/CtaLink/README.md?raw';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/CtaLink/package.json';
 
 const meta = {
   tags: ['autodocs'],
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
     status: {

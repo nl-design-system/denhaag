@@ -5,13 +5,15 @@ import '@gemeente-denhaag/button-group';
 import '@gemeente-denhaag/icons';
 
 import readme from '../../../../components/ButtonGroup/README.md?raw';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/ButtonGroup/package.json';
 
 const meta = {
   tags: ['autodocs'],
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
     status: {

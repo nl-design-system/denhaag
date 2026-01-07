@@ -3,6 +3,8 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 import '@gemeente-denhaag/ctadownload';
 
 import readme from '../../../../components/CtaDownload/README.md?raw';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/CtaDownload/package.json';
 
 const fileImage = (h: number, w: number) =>
   `https://images.unsplash.com/photo-1569235186275-626cb53b83ce?fit=crop&w=${w}&h=${h}`;
@@ -12,7 +14,7 @@ const meta = {
     tags: ['autodocs'],
     docs: {
       description: {
-        component: readme,
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
     status: {

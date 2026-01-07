@@ -1,6 +1,8 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 import '@gemeente-denhaag/card-group';
 import readme from '../../../../components/CardGroup/README.md?raw';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/CardGroup/package.json';
 import { AuthenticationCardGroup } from './CardGroupUtils';
 
 // TODO: create real generic AuthenticationCard and AuthenticationCardGroup components, and move them to the right packages.
@@ -14,7 +16,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
   },

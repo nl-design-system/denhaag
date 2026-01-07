@@ -1,6 +1,8 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { DataBadge } from '@gemeente-denhaag/data-badge';
 import readme from '../../../../components/DataBadge/README.md?raw';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/DataBadge/package.json';
 
 type Story = StoryObj<typeof meta>;
 
@@ -31,7 +33,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
   },

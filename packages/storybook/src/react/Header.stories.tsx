@@ -1,6 +1,8 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { headerProps, headerFlatMobileMenuProps } from '../templates/util';
 import { HeaderLogic, HeaderLogicProps } from '@gemeente-denhaag/header';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/Header/package.json';
 
 const breadcrumbs = {
   breadcrumbs: {
@@ -19,6 +21,11 @@ const meta = {
   tags: ['autodocs'],
   parameters: {
     layout: 'fullscreen',
+    docs: {
+      description: {
+        component: getComponentDescription(pkg.name, pkg.version),
+      },
+    },
   },
 } as Meta<typeof HeaderLogic>;
 

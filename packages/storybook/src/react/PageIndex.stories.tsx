@@ -1,5 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { PageIndex, PageIndexProps } from '@gemeente-denhaag/page-index';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/PageIndex/package.json';
 
 const exampleArgs = {
   heading: 'Op deze pagina',
@@ -24,6 +26,13 @@ const meta = {
   component: PageIndex,
   args: exampleArgs,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: getComponentDescription(pkg.name, pkg.version),
+      },
+    },
+  },
 } as Meta<typeof PageIndex>;
 
 export default meta;

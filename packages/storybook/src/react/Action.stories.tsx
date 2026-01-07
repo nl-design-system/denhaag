@@ -3,9 +3,11 @@ import tokens from '@gemeente-denhaag/design-tokens/dist/list.json';
 import { Meta, StoryObj } from '@storybook/react-vite';
 import React from 'react';
 import readme from '../../../../components/Action/README.md?raw';
+import pkg from '../../../../components/Action/package.json';
 import tokensDefinition from '../../../../components/Action/tokens.json';
 import { templateLocale } from '../templates/util';
 import { DataBadge } from '@gemeente-denhaag/data-badge';
+import { getComponentDescription } from '../utils/getPackage';
 
 const labels = {
   today: 'vandaag',
@@ -32,7 +34,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
     tokensPrefix: 'denhaag-action',

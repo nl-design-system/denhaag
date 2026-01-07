@@ -1,6 +1,8 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { Checkbox } from '@gemeente-denhaag/checkbox';
 import readme from '../../../../components/Checkbox/README.md?raw';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/Checkbox/package.json';
 
 const meta = {
   component: Checkbox,
@@ -9,7 +11,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
   },

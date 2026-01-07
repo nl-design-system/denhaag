@@ -5,6 +5,8 @@ import { ContactTimeline, ContactTimelineProps } from '@gemeente-denhaag/contact
 
 import readme from '../../../../components/ContactTimeline/README.md?raw';
 import { templateLocale } from '../templates/util';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/ContactTimeline/package.json';
 
 const exampleArgs: ContactTimelineProps = {
   labels: { today: 'vandaag', yesterday: 'gisteren' },
@@ -201,7 +203,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
   },

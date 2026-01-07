@@ -2,6 +2,8 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { RichText } from '@gemeente-denhaag/rich-text';
 import readme from '../../../../components/RichText/README.md?raw';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/RichText/package.json';
 import { Heading } from '@gemeente-denhaag/heading';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
 import { UnorderedList, UnorderedListItem } from '@gemeente-denhaag/unorderedlist';
@@ -37,7 +39,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
   },

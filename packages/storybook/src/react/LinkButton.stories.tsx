@@ -4,6 +4,8 @@ import { ArrowLeftIcon, ExternalLinkIcon } from '@gemeente-denhaag/icons';
 import { LinkButton } from '@gemeente-denhaag/link-button';
 
 import readme from '../../../../components/LinkButton/README.md?raw';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/LinkButton/package.json';
 
 const exampleArgs = {
   href: '#',
@@ -16,7 +18,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
   },

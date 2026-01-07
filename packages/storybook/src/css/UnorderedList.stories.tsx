@@ -2,6 +2,8 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react-vite';
 import readme from '../../../../components/FormField/README.md?raw';
 import { UnorderedList, UnorderedListItem } from '@gemeente-denhaag/unorderedlist';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/UnorderedList/package.json';
 
 const meta = {
   component: UnorderedList,
@@ -10,7 +12,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
   },

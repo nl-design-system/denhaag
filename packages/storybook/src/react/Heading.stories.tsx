@@ -1,6 +1,8 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { Heading, headingLevels } from '@gemeente-denhaag/heading';
 import readme from '../../../../components/Heading/README.md?raw';
+import { getComponentDescription } from '../utils/getPackage';
+import pkg from '../../../../components/Heading/package.json';
 
 type Story = StoryObj<typeof meta>;
 
@@ -26,7 +28,7 @@ const meta: Meta<typeof Heading> = {
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
   },
