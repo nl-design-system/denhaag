@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Authentication block
 
 This authentication block adequately sends the user an authentication flow necessary to perform a task or action on the website or when logging in. He stands out and offers help if needed. By making the choice between authentication service already on the detail page where the task is listed, you can reduce the number of clicks and place the choice more in the context of the task.

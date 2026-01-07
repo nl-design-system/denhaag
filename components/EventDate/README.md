@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Event Date
 
 It shows the publication date (closing) when it comes to a news page.

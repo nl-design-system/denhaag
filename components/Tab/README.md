@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Tabs
 
 Tabs organise and allow users to move between content without having to navigate away from a page.

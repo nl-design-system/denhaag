@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Modal
 
 Modals are overlays that prevent users from interacting with the rest of the application until a specific action is taken.

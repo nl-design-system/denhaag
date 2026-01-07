@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Dynamic content
 
 An image list card highlights people or other subjects including a photo in a list.

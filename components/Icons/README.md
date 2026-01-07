@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Icons component
 
 [📕 View this component in Storybook](http://dhreactstorybook.azurewebsites.net/?path=/story/components-data-display-icons)

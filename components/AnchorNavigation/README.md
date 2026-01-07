@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Anchor navigation
 
 The anchor navigation shows which subjects there are on the page and how far you are.

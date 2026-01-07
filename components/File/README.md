@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # File
 
 A file displays a link to download an attachment and shows metadata about the file.

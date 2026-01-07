@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Blockquote
 
 A blockquote shows a highlight or quote in a page that should stand out.

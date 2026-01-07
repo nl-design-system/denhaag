@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Call To Action Link
 
 A CTA icon is a standalone link that links to another page within the website or an external website related to the current page or to a video.

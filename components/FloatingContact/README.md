@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Floating Contact
 
 The floating contact button is to provide the user several contact options at all time.

@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Publication Date
 
 The page closing/publication date is a part of a content page.
