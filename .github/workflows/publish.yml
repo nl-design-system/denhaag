@@ -63,7 +63,7 @@ jobs:
         uses: chromaui/action@ac86f2ff0a458ffbce7b40698abd44c0fa34d4b6 # v13.3.3
         if: |
           github.event.pull_request.draft == false &&
-          github.action != 'dependabot[bot]'
+          github.actor != 'dependabot[bot]'
         with:
           autoAcceptChanges: main
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
