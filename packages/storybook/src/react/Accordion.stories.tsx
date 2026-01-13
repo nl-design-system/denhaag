@@ -6,6 +6,7 @@ import { Paragraph } from '@gemeente-denhaag/paragraph';
 import { DescriptionList } from '@gemeente-denhaag/descriptionlist';
 import { getComponentDescription } from '../utils/getPackage';
 import pkg from '../../../../components/Accordion/package.json';
+import readme from '../../../../components/Accordion/README.md?raw';
 
 const exampleArgs = {
   children: (
@@ -46,7 +47,7 @@ const meta = {
   parameters: {
     tokensPrefix: 'denhaag-accordion',
     tokens,
-    docs: { description: { component: getComponentDescription(pkg.name, pkg.version) } },
+    docs: { description: { component: getComponentDescription(pkg.name, pkg.version, readme) } },
   },
 } as Meta<typeof Accordion>;
 
