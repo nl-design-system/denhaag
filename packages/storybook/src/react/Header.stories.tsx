@@ -3,6 +3,7 @@ import { headerProps, headerFlatMobileMenuProps } from '../templates/util';
 import { HeaderLogic, HeaderLogicProps } from '@gemeente-denhaag/header';
 import { getComponentDescription } from '../utils/getPackage';
 import pkg from '../../../../components/Header/package.json';
+import readme from '../../../../components/Header/README.md?raw';
 
 const breadcrumbs = {
   breadcrumbs: {
@@ -23,7 +24,7 @@ const meta = {
     layout: 'fullscreen',
     docs: {
       description: {
-        component: getComponentDescription(pkg.name, pkg.version),
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
   },

@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { FileUpload } from '@gemeente-denhaag/file-upload';
 
-import readme from '../../../../components/File/README.md?raw';
+import readme from '../../../../components/FileUpload/README.md?raw';
 import { getComponentDescription } from '../utils/getPackage';
 import pkg from '../../../../components/FileUpload/package.json';
 

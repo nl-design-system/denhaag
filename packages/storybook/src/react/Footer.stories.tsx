@@ -3,6 +3,7 @@ import { Footer } from '@gemeente-denhaag/footer';
 import { contactData, footerLegalData, footerSocialData, newsletterData } from '../templates/util';
 import { getComponentDescription } from '../utils/getPackage';
 import pkg from '../../../../components/Footer/package.json';
+import readme from '../../../../components/Footer/README.md?raw';
 
 const exampleArgs = {
   contactData: contactData,
@@ -18,7 +19,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: getComponentDescription(pkg.name, pkg.version),
+        component: getComponentDescription(pkg.name, pkg.version, readme),
       },
     },
   },
