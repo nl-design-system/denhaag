@@ -1,8 +1,8 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { Tabs, TabsProps } from '@gemeente-denhaag/tab';
-import readme from '../../../../components/Tabs/README.md?raw';
+import readme from '../../../../components/Tab/README.md?raw';
 import { getComponentDescription } from '../utils/getPackage';
-import pkg from '../../../../components/Tabs/package.json';
+import pkg from '../../../../components/Tab/package.json';
 import React, { useEffect, useState } from 'react';
 
 const exampleArgs: TabsProps = {
