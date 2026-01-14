@@ -2,7 +2,7 @@
 
 # Icons component
 
-[📕 View this component in Storybook](http://dhreactstorybook.azurewebsites.net/?path=/story/components-data-display-icons)
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/icons.svg)](https://www.npmjs.com/package/@gemeente-denhaag/icons)
 
 [✏️ View the icons in Figma](https://www.figma.com/file/JpoY3waVoQGlLQzQXTL9nn/Design-System-Gemeente-Den-Haag?node-id=119%3A676)
 

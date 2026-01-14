@@ -2,11 +2,13 @@
 
 # Blockquote
 
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/blockquote.svg)](https://www.npmjs.com/package/@gemeente-denhaag/blockquote)
+
 A blockquote shows a highlight or quote in a page that should stand out.
 
 ## When to use
 
-Use a blockquote when there is a quote in the text you want to highlight, to tease the next alinea or highlight an important line. Mostly used in an journalistic way, to decorate the page.
+Use a blockquote when there is a quote in the text you want to highlight, to tease the next alinea or highlight an important line.Mostly used in an journalistic way, to decorate the page.
 
 ## Alternatives and related components
 

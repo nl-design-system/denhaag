@@ -2,6 +2,8 @@
 
 # Image
 
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/image.svg)](https://www.npmjs.com/package/@gemeente-denhaag/image)
+
 Four image variants: image only, image with caption, image, image with download, image with caption and download.
 
 ## When to use

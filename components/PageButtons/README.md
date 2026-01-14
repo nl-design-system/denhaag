@@ -2,6 +2,8 @@
 
 # Share Button
 
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/page-buttons.svg)](https://www.npmjs.com/package/@gemeente-denhaag/page-buttons)
+
 ## When to use
 
 Below you will find which element you should use on which page:

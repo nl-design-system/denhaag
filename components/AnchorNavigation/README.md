@@ -1,7 +1,7 @@
 <!-- @license CC0-1.0 -->
 
 # Anchor navigation
-
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/anchor-navigation.svg)](https://www.npmjs.com/package/@gemeente-denhaag/anchor-navigation)
 The anchor navigation shows which subjects there are on the page and how far you are.
 
 ## When to use

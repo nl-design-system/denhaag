@@ -2,6 +2,8 @@
 
 # Navigation Link
 
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/breadcrumb.svg)](https://www.npmjs.com/package/@gemeente-denhaag/breadcrumb)
+
 [Figma Design](https://www.figma.com/file/JpoY3waVoQGlLQzQXTL9nn/Design-System-Gemeente-Den-Haag?node-id=1569%3A5671)
 
 # Breadcrumbs

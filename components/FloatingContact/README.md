@@ -2,6 +2,8 @@
 
 # Floating Contact
 
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/floating-contact.svg)](https://www.npmjs.com/package/@gemeente-denhaag/floating-contact)
+
 The floating contact button is to provide the user several contact options at all time.
 
 ## When to use

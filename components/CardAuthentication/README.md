@@ -2,6 +2,8 @@
 
 # Authentication block
 
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/card-authentication.svg)](https://www.npmjs.com/package/@gemeente-denhaag/card-authentication)
+
 This authentication block adequately sends the user an authentication flow necessary to perform a task or action on the website or when logging in. He stands out and offers help if needed. By making the choice between authentication service already on the detail page where the task is listed, you can reduce the number of clicks and place the choice more in the context of the task.
 
 ## When to use
