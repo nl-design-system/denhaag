@@ -2,6 +2,8 @@
 
 # Heading
 
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/heading.svg)](https://www.npmjs.com/package/@gemeente-denhaag/heading)
+
 Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.<br /><sub>Ook bekend als: Titel, Kop en Kopje.</sub>
 
 ## References

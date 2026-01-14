@@ -2,6 +2,8 @@
 
 # Button Group
 
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/button-group.svg)](https://www.npmjs.com/package/@gemeente-denhaag/button-group)
+
 Button groups are used to group buttons.
 
 ## When to use

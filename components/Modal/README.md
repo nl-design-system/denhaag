@@ -2,6 +2,8 @@
 
 # Modal
 
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/modal.svg)](https://www.npmjs.com/package/@gemeente-denhaag/modal)
+
 Modals are overlays that prevent users from interacting with the rest of the application until a specific action is taken.
 
 ## When to use

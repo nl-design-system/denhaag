@@ -2,6 +2,8 @@
 
 # News card
 
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/card-news.svg)](https://www.npmjs.com/package/@gemeente-denhaag/card-news)
+
 ## Introduction
 
 A newcard is used to display a newsitem on another page.

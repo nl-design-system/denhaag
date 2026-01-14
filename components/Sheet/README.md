@@ -2,6 +2,8 @@
 
 # Sheet
 
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/sheet.svg)](https://www.npmjs.com/package/@gemeente-denhaag/sheet)
+
 ## When to use
 
 Use sheets when expanding menu links or when opening a function that will be hidden and shown on the same page. So you can use it to show the topics, for the language switcher or for the search.

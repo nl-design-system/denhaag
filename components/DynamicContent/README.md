@@ -2,6 +2,8 @@
 
 # Dynamic content
 
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/dynamic-content.svg)](https://www.npmjs.com/package/@gemeente-denhaag/dynamic-content)
+
 An image list card highlights people or other subjects including a photo in a list.
 
 ## When to use
