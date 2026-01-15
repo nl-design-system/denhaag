@@ -2,8 +2,6 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 import '@gemeente-denhaag/breadcrumb';
 import readme from '../../../../components/Breadcrumb/README.md?raw';
 import { Breadcrumb } from '@gemeente-denhaag/breadcrumb';
-import { getComponentDescription } from '../utils/getPackage';
-import pkg from '../../../../components/Breadcrumb/package.json';
 
 const meta = {
   component: Breadcrumb,
@@ -27,7 +25,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: getComponentDescription(pkg.name, pkg.version, readme),
+        component: readme,
       },
     },
     status: {

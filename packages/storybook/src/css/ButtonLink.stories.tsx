@@ -1,7 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 import readme from '../../../../components/ButtonLink/README.md?raw';
-import { getComponentDescription } from '../utils/getPackage';
-import pkg from '../../../../components/ButtonLink/package.json';
 import { ButtonLink } from '@gemeente-denhaag/button-link';
 
 const exampleArgs = {
@@ -16,7 +14,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: getComponentDescription(pkg.name, pkg.version, readme),
+        component: readme,
       },
     },
   },

@@ -5,8 +5,6 @@ import { Alert, AlertProps } from '@gemeente-denhaag/alert';
 import { MegaphoneIcon } from '@gemeente-denhaag/icons';
 
 import readme from '../../../../components/Alert/README.md?raw';
-import { getComponentDescription } from '../utils/getPackage';
-import pkg from '../../../../components/Alert/package.json';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
 
 const exampleArgs: AlertProps = {
@@ -26,7 +24,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: getComponentDescription(pkg.name, pkg.version, readme),
+        component: readme,
       },
     },
   },

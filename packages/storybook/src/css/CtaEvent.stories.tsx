@@ -4,15 +4,13 @@ import '@gemeente-denhaag/cta-event';
 
 import '../../../../components/CtaEvent/src/index';
 import readme from '../../../../components/CtaEvent/README.md?raw';
-import { getComponentDescription } from '../utils/getPackage';
-import pkg from '../../../../components/CtaEvent/package.json';
 
 const meta = {
   tags: ['autodocs'],
   parameters: {
     docs: {
       description: {
-        component: getComponentDescription(pkg.name, pkg.version, readme),
+        component: readme,
       },
     },
     status: {

@@ -3,8 +3,6 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 import readme from '../../../../components/FormFieldDescription/README.md?raw';
 import { FormFieldDescription } from '@gemeente-denhaag/form-field-description';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
-import { getComponentDescription } from '../utils/getPackage';
-import pkg from '../../../../components/FormFieldDescription/package.json';
 
 const meta = {
   component: FormFieldDescription,
@@ -13,7 +11,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: getComponentDescription(pkg.name, pkg.version, readme),
+        component: readme,
       },
     },
   },

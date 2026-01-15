@@ -2,8 +2,6 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { TextInput } from '@gemeente-denhaag/text-input';
 import readme from '../../../../components/TextInput/README.md?raw';
-import { getComponentDescription } from '../utils/getPackage';
-import pkg from '../../../../components/TextInput/package.json';
 import { CallIcon, SearchIcon } from '@gemeente-denhaag/icons';
 
 const meta = {
@@ -13,7 +11,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: getComponentDescription(pkg.name, pkg.version, readme),
+        component: readme,
       },
     },
   },

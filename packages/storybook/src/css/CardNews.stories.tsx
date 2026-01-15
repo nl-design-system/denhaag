@@ -3,8 +3,6 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 import '@gemeente-denhaag/card-news';
 
 import readme from '../../../../components/CardNews/README.md?raw';
-import { getComponentDescription } from '../utils/getPackage';
-import pkg from '../../../../components/CardNews/package.json';
 import './_storybook.scss';
 
 const meta = {
@@ -12,7 +10,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: getComponentDescription(pkg.name, pkg.version, readme),
+        component: readme,
       },
     },
     status: {

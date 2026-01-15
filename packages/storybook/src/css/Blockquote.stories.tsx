@@ -3,15 +3,13 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 import '@gemeente-denhaag/blockquote';
 
 import readme from '../../../../components/Blockquote/README.md?raw';
-import { getComponentDescription } from '../utils/getPackage';
-import pkg from '../../../../components/Blockquote/package.json';
 
 const meta = {
   tags: ['autodocs'],
   parameters: {
     docs: {
       description: {
-        component: getComponentDescription(pkg.name, pkg.version, readme),
+        component: readme,
       },
     },
     status: {

@@ -3,8 +3,6 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 import { File } from '@gemeente-denhaag/file';
 
 import readme from '../../../../components/File/README.md?raw';
-import { getComponentDescription } from '../utils/getPackage';
-import pkg from '../../../../components/File/package.json';
 
 const exampleArgs = {
   name: 'example3',
@@ -20,7 +18,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: getComponentDescription(pkg.name, pkg.version, readme),
+        component: readme,
       },
     },
   },

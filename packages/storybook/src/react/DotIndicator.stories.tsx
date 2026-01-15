@@ -3,8 +3,6 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 import { Button } from '@gemeente-denhaag/button';
 import { DotIndicator } from '@gemeente-denhaag/dotindicator';
 import readme from '../../../../components/DotIndicator/README.md?raw';
-import { getComponentDescription } from '../utils/getPackage';
-import pkg from '../../../../components/DotIndicator/package.json';
 
 const exampleArgs = {
   overlap: 'rectangle',
@@ -17,7 +15,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: getComponentDescription(pkg.name, pkg.version, readme),
+        component: readme,
       },
     },
   },
