@@ -5,8 +5,6 @@ import '@gemeente-denhaag/hero';
 import '@gemeente-denhaag/icons';
 
 import readme from '../../../../components/Hero/README.md?raw';
-import { getComponentDescription } from '../utils/getPackage';
-import pkg from '../../../../components/Hero/package.json';
 
 import './_storybook.scss';
 
@@ -18,7 +16,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: getComponentDescription(pkg.name, pkg.version, readme),
+        component: readme,
       },
     },
     status: {

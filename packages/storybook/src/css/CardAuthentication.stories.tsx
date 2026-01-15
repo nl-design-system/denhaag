@@ -4,8 +4,6 @@ import clsx from 'clsx';
 import '@gemeente-denhaag/card-authentication';
 import readme from '../../../../components/CardAuthentication/README.md?raw';
 import { PropsWithChildren } from 'react';
-import { getComponentDescription } from '../utils/getPackage';
-import pkg from '../../../../components/CardAuthentication/package.json';
 
 // TODO: create real generic AuthenticationCard and AuthenticationCardGroup components, and move them to the right packages.
 
@@ -165,7 +163,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: getComponentDescription(pkg.name, pkg.version, readme),
+        component: readme,
       },
     },
   },

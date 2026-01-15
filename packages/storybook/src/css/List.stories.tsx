@@ -4,8 +4,6 @@ import { action } from 'storybook/actions';
 import { HouseIcon, TrashIcon } from '@gemeente-denhaag/icons';
 import { List, ListItem, ListSubheader } from '@gemeente-denhaag/list';
 import readme from '../../../../components/List/README.md?raw';
-import { getComponentDescription } from '../utils/getPackage';
-import pkg from '../../../../components/List/package.json';
 
 const exampleArgs = {
   children: (
@@ -24,7 +22,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: getComponentDescription(pkg.name, pkg.version, readme),
+        component: readme,
       },
     },
   },

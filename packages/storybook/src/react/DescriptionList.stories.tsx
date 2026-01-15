@@ -4,8 +4,6 @@ import { DescriptionList } from '@gemeente-denhaag/descriptionlist';
 import readme from '../../../../components/DescriptionList/README.md?raw';
 import { Link } from '@gemeente-denhaag/link';
 import { EditIcon } from '@gemeente-denhaag/icons';
-import { getComponentDescription } from '../utils/getPackage';
-import pkg from '../../../../components/DescriptionList/package.json';
 
 const exampleArgs = {
   items: [
@@ -22,7 +20,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: getComponentDescription(pkg.name, pkg.version, readme),
+        component: readme,
       },
     },
   },

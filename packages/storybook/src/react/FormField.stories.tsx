@@ -10,8 +10,6 @@ import { TextInput } from '@gemeente-denhaag/text-input';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
 import { RadioButton } from '@gemeente-denhaag/radio-button';
 import readme from '../../../../components/FormField/README.md?raw';
-import { getComponentDescription } from '../utils/getPackage';
-import pkg from '../../../../components/FormField/package.json';
 import { Select, SelectOption } from '@gemeente-denhaag/select';
 import { SearchIcon } from '@gemeente-denhaag/icons';
 import { FileUpload as FileUploadComponent } from '@gemeente-denhaag/file-upload';
@@ -25,7 +23,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: getComponentDescription(pkg.name, pkg.version, readme),
+        component: readme,
       },
     },
     chromatic: { viewports: [1280, 360] },

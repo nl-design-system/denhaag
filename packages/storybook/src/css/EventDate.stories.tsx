@@ -3,15 +3,13 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 import '@gemeente-denhaag/eventdate';
 
 import readme from '../../../../components/EventDate/README.md?raw';
-import { getComponentDescription } from '../utils/getPackage';
-import pkg from '../../../../components/EventDate/package.json';
 
 const meta = {
   tags: ['autodocs'],
   parameters: {
     docs: {
       description: {
-        component: getComponentDescription(pkg.name, pkg.version, readme),
+        component: readme,
       },
     },
     status: {

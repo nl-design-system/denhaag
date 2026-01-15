@@ -3,8 +3,6 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 import * as Icons from '@gemeente-denhaag/icons';
 import { SvgIcon, ArrowLeftIcon } from '@gemeente-denhaag/icons';
 import readme from '../../../../components/Icons/README.md?raw';
-import { getComponentDescription } from '../utils/getPackage';
-import pkg from '../../../../components/Icons/package.json';
 
 const allIcons = Object.entries(Icons).filter(([key]) => (key === 'default' ? false : true));
 
@@ -17,7 +15,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: getComponentDescription(pkg.name, pkg.version, readme),
+        component: readme,
       },
     },
   },

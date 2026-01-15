@@ -3,8 +3,6 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 import { action } from 'storybook/actions';
 import { IconButton } from '@gemeente-denhaag/iconbutton';
 import { TrashIcon } from '@gemeente-denhaag/icons';
-import { getComponentDescription } from '../utils/getPackage';
-import pkg from '../../../../components/IconButton/package.json';
 
 import readme from '../../../../components/IconButton/README.md?raw';
 
@@ -21,7 +19,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: getComponentDescription(pkg.name, pkg.version, readme),
+        component: readme,
       },
     },
   },

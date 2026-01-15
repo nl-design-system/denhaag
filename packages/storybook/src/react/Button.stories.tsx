@@ -5,8 +5,6 @@ import { ArrowLeftIcon, ArrowRightIcon } from '@gemeente-denhaag/icons';
 
 import readme from '../../../../components/Button/README.md?raw';
 import { StarterIcon } from '@gemeente-denhaag/icons';
-import { getComponentDescription } from '../utils/getPackage';
-import pkg from '../../../../components/Button/package.json';
 
 const exampleArgs = {
   children: 'Button',
@@ -19,7 +17,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: getComponentDescription(pkg.name, pkg.version, readme),
+        component: readme,
       },
     },
   },

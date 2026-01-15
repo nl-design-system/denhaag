@@ -5,14 +5,12 @@ import '@gemeente-denhaag/pagebuttons';
 
 import '../../../../components/PageButtons/src/stories.js';
 import readme from '../../../../components/PageButtons/README.md?raw';
-import { getComponentDescription } from '../utils/getPackage';
-import pkg from '../../../../components/PageButtons/package.json';
 
 const meta = {
   parameters: {
     docs: {
       description: {
-        component: getComponentDescription(pkg.name, pkg.version, readme),
+        component: readme,
       },
     },
     status: {

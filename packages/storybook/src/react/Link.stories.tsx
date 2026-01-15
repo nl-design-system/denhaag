@@ -5,8 +5,6 @@ import { ArrowRightIcon, ArrowLeftIcon } from '@gemeente-denhaag/icons';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
 import { Link } from '@gemeente-denhaag/link';
 import readme from '../../../../components/Link/README.md?raw';
-import { getComponentDescription } from '../utils/getPackage';
-import pkg from '../../../../components/Link/package.json';
 
 type Story = StoryObj<typeof meta>;
 
@@ -39,7 +37,7 @@ const meta: Meta<typeof Link> = {
   parameters: {
     docs: {
       description: {
-        component: getComponentDescription(pkg.name, pkg.version, readme),
+        component: readme,
       },
     },
   },

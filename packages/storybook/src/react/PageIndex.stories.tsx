@@ -1,7 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { PageIndex, PageIndexProps } from '@gemeente-denhaag/page-index';
-import { getComponentDescription } from '../utils/getPackage';
-import pkg from '../../../../components/PageIndex/package.json';
+
 import readme from '../../../../components/PageIndex/README.md?raw';
 
 const exampleArgs = {
@@ -30,7 +29,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: getComponentDescription(pkg.name, pkg.version, readme),
+        component: readme,
       },
     },
   },

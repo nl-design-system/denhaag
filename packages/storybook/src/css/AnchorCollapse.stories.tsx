@@ -3,8 +3,6 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 import '@gemeente-denhaag/anchor-collapse';
 
 import readme from '../../../../components/AnchorCollapse/README.md?raw';
-import { getComponentDescription } from '../utils/getPackage';
-import pkg from '../../../../components/AnchorCollapse/package.json';
 import '../../../../components/AnchorCollapse/src/anchorCollapses';
 import '../../../../components/AnchorCollapse/src/stories.js';
 
@@ -13,7 +11,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: getComponentDescription(pkg.name, pkg.version, readme),
+        component: readme,
       },
     },
     status: {

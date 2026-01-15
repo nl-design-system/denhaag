@@ -1,7 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 import readme from '../../../../components/RadioButton/README.md?raw';
-import { getComponentDescription } from '../utils/getPackage';
-import pkg from '../../../../components/RadioButton/package.json';
 import { RadioButton } from '@gemeente-denhaag/radio-button';
 
 const meta = {
@@ -11,7 +9,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: getComponentDescription(pkg.name, pkg.version, readme),
+        component: readme,
       },
     },
   },
