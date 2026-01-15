@@ -1,0 +1,1 @@
+import t from"./NumberBadge.stories-DnB5OY6h.js";import{Default as d}from"./NumberBadge.stories-DnB5OY6h.js";import"./index-DAHIz2Nn.js";import"./iframe-BXjMMOGN.js";import"./preload-helper-PPVm8Dsz.js";const m={...t,tags:["autodocs"]},p=["Default"];export{d as Default,p as __namedExportsOrder,m as default};

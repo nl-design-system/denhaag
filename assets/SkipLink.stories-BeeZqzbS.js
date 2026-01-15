@@ -1,1 +1,0 @@
-import t from"./SkipLink.stories-wEtb_wMB.js";import{Default as f}from"./SkipLink.stories-wEtb_wMB.js";import"./iframe-BB-mnPB5.js";import"./preload-helper-PPVm8Dsz.js";const e={...t,tags:["autodocs"]},m=["Default"];export{f as Default,m as __namedExportsOrder,e as default};
