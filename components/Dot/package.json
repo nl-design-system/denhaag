@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/dot",
-  "version": "0.1.1-www-denhaag-nl.159",
+  "version": "0.1.1-www-denhaag-nl.160",
   "description": "A Dot component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "private": false,
@@ -33,7 +33,7 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@gemeente-denhaag/baseprops": "0.2.3-www-denhaag-nl.159"
+    "@gemeente-denhaag/baseprops": "0.2.3-www-denhaag-nl.160"
   },
   "peerDependencies": {
     "react": "^17.0.0"
