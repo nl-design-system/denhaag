@@ -13,6 +13,10 @@
   --nl-heading-level-4-margin-block-end: 0;
   --nl-heading-level-4-line-height: 24px;
   --nl-paragraph-margin-block-end: 0;
+
+  svg {
+    display: block;
+  }
 }
 
 .denhaag-alert--error {
