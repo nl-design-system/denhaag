@@ -30,10 +30,6 @@
   --denhaag-icon-button-focus-color: var(--denhaag-alert-error-close-icon-color);
 }
 
-.denhaag-alert__icon svg {
-  display: block;
-}
-
 .denhaag-alert__centre {
   display: flex;
   flex-direction: column;
