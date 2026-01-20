@@ -84,6 +84,8 @@
     --denhaag-cta-image-content-content-padding-inline: var(--denhaag-space-xl);
     --denhaag-cta-image-content-image-aspect-ratio: 248 / 176;
 
+    outline-offset: var(--denhaag-focus-border-width);
+
     @media (min-width: 768px) {
       --denhaag-cta-image-content-heading-font-size: var(--denhaag-typography-scale-2xl-font-size);
       --denhaag-cta-image-content-heading-line-height: var(--denhaag-typography-scale-2xl-line-height);
