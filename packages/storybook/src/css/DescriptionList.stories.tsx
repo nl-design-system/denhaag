@@ -2,6 +2,7 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { DescriptionList } from '@gemeente-denhaag/descriptionlist';
 import readme from '../../../../components/DescriptionList/README.md?raw';
+
 import { Link } from '@gemeente-denhaag/link';
 import { EditIcon } from '@gemeente-denhaag/icons';
 

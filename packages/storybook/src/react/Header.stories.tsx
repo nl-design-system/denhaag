@@ -1,6 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { headerProps, headerFlatMobileMenuProps } from '../templates/util';
 import { HeaderLogic, HeaderLogicProps } from '@gemeente-denhaag/header';
+import readme from '../../../../components/Header/README.md?raw';
 
 const breadcrumbs = {
   breadcrumbs: {
@@ -19,6 +20,11 @@ const meta = {
   tags: ['autodocs'],
   parameters: {
     layout: 'fullscreen',
+    docs: {
+      description: {
+        component: readme,
+      },
+    },
   },
 } as Meta<typeof HeaderLogic>;
 

@@ -1,4 +1,8 @@
+<!-- @license CC0-1.0 -->
+
 # Call To Action Link
+
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/cta-link.svg)](https://www.npmjs.com/package/@gemeente-denhaag/cta-link)
 
 A CTA icon is a standalone link that links to another page within the website or an external website related to the current page or to a video.
 

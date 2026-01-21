@@ -1,4 +1,8 @@
+<!-- @license CC0-1.0 -->
+
 # Skip Link
+
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/skip-link.svg)](https://www.npmjs.com/package/@gemeente-denhaag/skip-link)
 
 Verborgen mogelijkheid om snel naar een ander deel van de pagina te navigeren zonder gebruik te maken van een muis of touchscreen.
 

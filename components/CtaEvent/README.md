@@ -1,4 +1,8 @@
+<!-- @license CC0-1.0 -->
+
 # Call To Action Event
+
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/cta-event.svg)](https://www.npmjs.com/package/@gemeente-denhaag/cta-event)
 
 A calendar event is a standalone link that shows what kind of event is on which date. It links to a content evenement page.
 

@@ -1,4 +1,8 @@
+<!-- @license CC0-1.0 -->
+
 # List
+
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/list.svg)](https://www.npmjs.com/package/@gemeente-denhaag/list)
 
 Lists present multiple line items vertically as a single continuous element. The types of lists are one-line and two-line.
 

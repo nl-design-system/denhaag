@@ -4,6 +4,7 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 import React from 'react';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
 import { DescriptionList } from '@gemeente-denhaag/descriptionlist';
+import readme from '../../../../components/Accordion/README.md?raw';
 
 const exampleArgs = {
   children: (
@@ -44,6 +45,7 @@ const meta = {
   parameters: {
     tokensPrefix: 'denhaag-accordion',
     tokens,
+    docs: { description: { component: readme } },
   },
 } as Meta<typeof Accordion>;
 

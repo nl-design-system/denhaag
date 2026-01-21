@@ -1,3 +1,5 @@
+# License
+
 Copyright (C) 2021 Gemeente Den Haag (https://denhaag.nl)
 @gemeente-denhaag/components-react
 

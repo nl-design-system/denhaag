@@ -1,4 +1,8 @@
+<!-- @license CC0-1.0 -->
+
 # Tabs
+
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/tab.svg)](https://www.npmjs.com/package/@gemeente-denhaag/tab)
 
 Tabs organise and allow users to move between content without having to navigate away from a page.
 

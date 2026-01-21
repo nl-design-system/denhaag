@@ -1,4 +1,8 @@
+<!-- @license CC0-1.0 -->
+
 # Accordion
+
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/accordion.svg)](https://www.npmjs.com/package/@gemeente-denhaag/accordion)
 
 An accordion is a vertically stacked list of headers that reveal or hide associated sections of content.
 

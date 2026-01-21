@@ -1,4 +1,8 @@
+<!-- @license CC0-1.0 -->
+
 # Event Date
+
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/event-date.svg)](https://www.npmjs.com/package/@gemeente-denhaag/event-date)
 
 It shows the publication date (closing) when it comes to a news page.
 

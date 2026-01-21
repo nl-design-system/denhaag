@@ -1,6 +1,8 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { PageIndex, PageIndexProps } from '@gemeente-denhaag/page-index';
 
+import readme from '../../../../components/PageIndex/README.md?raw';
+
 const exampleArgs = {
   heading: 'Op deze pagina',
   headingLevel: 3,
@@ -24,6 +26,13 @@ const meta = {
   component: PageIndex,
   args: exampleArgs,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: readme,
+      },
+    },
+  },
 } as Meta<typeof PageIndex>;
 
 export default meta;

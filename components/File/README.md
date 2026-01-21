@@ -1,4 +1,8 @@
+<!-- @license CC0-1.0 -->
+
 # File
+
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/file.svg)](https://www.npmjs.com/package/@gemeente-denhaag/file)
 
 A file displays a link to download an attachment and shows metadata about the file.
 

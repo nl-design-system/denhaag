@@ -1,4 +1,8 @@
+<!-- @license CC0-1.0 -->
+
 # Divider
+
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/divider.svg)](https://www.npmjs.com/package/@gemeente-denhaag/divider)
 
 A divider is a thin line that groups content in lists and layouts. They separate content into clear groups.
 

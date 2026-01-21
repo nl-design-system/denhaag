@@ -1,4 +1,8 @@
+<!-- @license CC0-1.0 -->
+
 # Anchor collapse
+
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/anchor-collapse.svg)](https://www.npmjs.com/package/@gemeente-denhaag/anchor-collapse)
 
 The anchor collapse for mobile devices, used in combination with the anchor navigation.
 

@@ -1,5 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
-import mdx from '../../../../LICENSE.md?raw';
+import md from '../../../../LICENSE.md?raw';
+import ReactMarkdown from 'react-markdown';
+import React from 'react';
 
 const meta = {
   title: 'Den Haag/License',
@@ -7,7 +9,7 @@ const meta = {
   parameters: {
     chromatic: { disableSnapshot: true },
     docs: {
-      page: mdx,
+      page: () => <ReactMarkdown>{md}</ReactMarkdown>,
     },
   },
 } as Meta;

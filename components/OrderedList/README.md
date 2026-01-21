@@ -1,4 +1,8 @@
+<!-- @license CC0-1.0 -->
+
 # Ordered List element
+
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/orderedlist.svg)](https://www.npmjs.com/package/@gemeente-denhaag/orderedlist)
 
 Lists are vertical groupings of related content. List items begin with either a number or a bullet.
 

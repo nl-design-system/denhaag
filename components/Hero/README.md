@@ -1,6 +1,8 @@
+<!-- @license CC0-1.0 -->
+
 # Hero
 
-![npm (scoped)](https://img.shields.io/npm/v/@gemeente-denhaag/hero?logo=npm&style=flat-square)
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/hero.svg)](https://www.npmjs.com/package/@gemeente-denhaag/hero)
 ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/nl-design-system/denhaag/Build%20and%20deploy%20Storybook%20to%20Azure%20Web%20App/main?logo=github&style=flat-square)
 
 [Figma Design - Home](https://www.figma.com/file/JpoY3waVoQGlLQzQXTL9nn/Design-System---Gemeente-Den-Haag?node-id=13150%3A85110)

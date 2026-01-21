@@ -1,4 +1,8 @@
+<!-- @license CC0-1.0 -->
+
 # Sheet
+
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/sheet.svg)](https://www.npmjs.com/package/@gemeente-denhaag/sheet)
 
 ## When to use
 

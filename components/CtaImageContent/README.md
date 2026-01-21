@@ -1,5 +1,7 @@
-# Cta Image Content
+<!-- @license CC0-1.0 -->
 
+# Cta Image Content
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/cta-image-content.svg)](https://www.npmjs.com/package/@gemeente-denhaag/cta-image-content)
 ## Introduction
 
 An image content link is a link in combination with a photo that stands out more than a regular link.

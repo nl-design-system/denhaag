@@ -1,4 +1,8 @@
+<!-- @license CC0-1.0 -->
+
 # Pagination
+
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/pagination.svg)](https://www.npmjs.com/package/@gemeente-denhaag/pagination)
 
 Pagination is used for splitting up content or data into several pages, with a control for navigating to the next or previous page.
 

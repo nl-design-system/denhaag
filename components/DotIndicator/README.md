@@ -1,6 +1,8 @@
+<!-- @license CC0-1.0 -->
+
 # Dot indicator
 
-![npm (scoped)](https://img.shields.io/npm/v/@gemeente-denhaag/dotindicator?logo=npm&style=flat-square)
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/dotindicator.svg)](https://www.npmjs.com/package/@gemeente-denhaag/dotindicator)
 ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/nl-design-system/denhaag/Build%20and%20deploy%20Storybook%20to%20Azure%20Web%20App/main?logo=github&style=flat-square)
 
 Dot indicators are used to show that there is a notification. Dot indicators are commonly used in combination with badges.

@@ -1,5 +1,19 @@
 # @gemeente-denhaag/storybook
 
+## 5.4.2
+
+### Patch Changes
+
+- effabda: Fix license page
+- 3b26319: Added package names and versions to stories
+
+## 5.4.1
+
+### Patch Changes
+
+- Updated dependencies [ab6b60d]
+  - @gemeente-denhaag/design-tokens@1.1.0
+
 ## 5.4.0
 
 ### Minor Changes

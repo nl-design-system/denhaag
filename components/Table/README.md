@@ -1,4 +1,8 @@
+<!-- @license CC0-1.0 -->
+
 # Table
+
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/table.svg)](https://www.npmjs.com/package/@gemeente-denhaag/table)
 
 Tables organize and display information from a data set into rows and columns.
 

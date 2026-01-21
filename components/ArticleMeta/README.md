@@ -1,4 +1,8 @@
+<!-- @license CC0-1.0 -->
+
 # Publication Date
+
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/article-meta.svg)](https://www.npmjs.com/package/@gemeente-denhaag/article-meta)
 
 The page closing/publication date is a part of a content page.
 It shows the publication date (closing) when it comes to a news page.

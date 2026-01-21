@@ -1,4 +1,8 @@
+<!-- @license CC0-1.0 -->
+
 # Call To Action Download
+
+[![npm version](https://img.shields.io/npm/v/@gemeente-denhaag/cta-download.svg)](https://www.npmjs.com/package/@gemeente-denhaag/cta-download)
 
 A download displays a link to download an attachment and metadata about the file. The metadata shows users how big the file is so they can decide if they want to download it.
 
