@@ -1,5 +1,12 @@
 # @gemeente-denhaag/components-react
 
+## 5.0.16
+
+### Patch Changes
+
+- Updated dependencies [fde9e6b]
+  - @gemeente-denhaag/alert@4.0.8
+
 ## 5.0.15
 
 ### Patch Changes
