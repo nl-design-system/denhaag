@@ -1,5 +1,11 @@
 # @gemeente-denhaag/alert
 
+## 4.0.8
+
+### Patch Changes
+
+- fde9e6b: svg block
+
 ## 4.0.7
 
 ### Patch Changes
