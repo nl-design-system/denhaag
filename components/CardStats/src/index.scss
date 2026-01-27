@@ -1,0 +1,37 @@
+.denhaag-stats-cards {
+  --denhaag-stats-card-min-inline-size: 350px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--denhaag-stats-card-min-inline-size), 1fr));
+  gap: var(--denhaag-space-xl);
+}
+
+.denhaag-stats-card {
+  padding: var(--denhaag-space-xl);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--denhaag-color-warmgrey-1);
+  gap: var(--denhaag-space-xs);
+  color: var(--denhaag-color-green-5);
+  border-radius: var(--denhaag-border-radius);
+  margin-block: 0;
+
+  &__value {
+    margin-inline-start: 0;
+  }
+
+  &__number {
+    font-size: var(--denhaag-typography-scale-3xl-font-size);
+    font-family: var(--utrecht-heading-font-family), sans-serif;
+    font-weight: var(--utrecht-heading-font-weight);
+  }
+
+  &__icon {
+    margin-inline-start: var(--denhaag-space-xs);
+  }
+
+  &__label {
+    line-height: 1.5em;
+    order: 1;
+  }
+}
