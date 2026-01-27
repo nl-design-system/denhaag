@@ -4,7 +4,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--denhaag-stats-card-min-inline-size), 1fr));
   gap: var(--denhaag-space-xl);
-  margin-block: 0;
 }
 
 .denhaag-stats-card {
@@ -15,6 +14,7 @@
   gap: var(--denhaag-space-xs);
   color: var(--denhaag-color-green-5);
   border-radius: var(--denhaag-border-radius);
+  margin-block: 0;
 
   &__value {
     margin-inline-start: 0;

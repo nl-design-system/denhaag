@@ -28,6 +28,9 @@
   "files": [
     "dist"
   ],
+  "dependencies": {
+    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.160"
+  },
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
