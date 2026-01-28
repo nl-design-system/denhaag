@@ -1,1 +1,26 @@
 @use "~@utrecht/form-label-css/dist/index.min.css" as formlabel;
+@use "~@utrecht/focus-ring-css/src/mixin" as *;
+
+.utrecht-form-label--checkbox,
+.utrecht-form-label--radio {
+  border-radius: var(--utrecht-form-label-border-radius, var(--utrecht-form-control-border-radius, 0));
+  display: inline-flex;
+}
+
+.utrecht-form-label--checkbox > .utrecht-form-field__input,
+.utrecht-form-label--radio > .utrecht-form-field__input {
+  margin-block-start: var(--utrecht-form-label-input-margin-block-start, 1px);
+  order: 0;
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.utrecht-form-label--checkbox:focus-within,
+.utrecht-form-label--radio:focus-within {
+  --utrecht-focus-outline-offset: var(--utrecht-form-label-focus-outline-offset, 2px);
+
+  @include utrecht-focus-visible;
+}
