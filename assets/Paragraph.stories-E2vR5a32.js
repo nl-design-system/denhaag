@@ -1,1 +1,0 @@
-import t from"./Paragraph.stories-DS-zRJta.js";import{Default as f,Lead as i}from"./Paragraph.stories-DS-zRJta.js";import"./index-C5RjU-d1.js";import"./iframe-DQBiwy74.js";import"./preload-helper-PPVm8Dsz.js";const m={...t,tags:["autodocs"]},p=["Default","Lead"];export{f as Default,i as Lead,p as __namedExportsOrder,m as default};
