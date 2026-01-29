@@ -1,5 +1,12 @@
 # @gemeente-denhaag/components-react
 
+## 5.0.17
+
+### Patch Changes
+
+- Updated dependencies [68291cf]
+  - @gemeente-denhaag/form-label@3.2.0
+
 ## 5.0.16
 
 ### Patch Changes
