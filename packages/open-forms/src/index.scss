@@ -1,23 +1,23 @@
-@use "~@gemeente-denhaag/fonts/dist/index.css" as fonts;
-@use "~@utrecht/button-css/dist/index.min.css" as button;
-@use "~@utrecht/button-link-css/dist/index.min.css" as buttonlink;
 @use "~@gemeente-denhaag/checkbox/dist/index.css" as checkbox;
-@use "~@utrecht/data-list-css/dist/index.min.css" as datalist;
-@use "~@utrecht/document-css/dist/index.min.css" as document;
-@use "~@gemeente-denhaag/form-field/dist/index.css" as formfield;
+@use "~@gemeente-denhaag/design-tokens/dist/theme/index" as designTokenComponents;
+@use "~@gemeente-denhaag/fonts/dist/index.css" as fonts;
 @use "~@gemeente-denhaag/form-field-description/dist/index.css" as formfielddescription;
 @use "~@gemeente-denhaag/form-field-error-message/dist/index.css" as formfielderrormessage;
+@use "~@gemeente-denhaag/form-field/dist/index.css" as formfield;
 @use "~@gemeente-denhaag/form-fieldset/dist/index.css" as formfieldset;
 @use "~@gemeente-denhaag/form-label/dist/index.css" as formlabel;
+@use "~@gemeente-denhaag/radio-button/dist/index.css" as radiobutton;
+@use "~@gemeente-denhaag/select/dist/index.css" as select;
+@use "~@gemeente-denhaag/text-input/dist/index.css" as textinput;
+@use "~@gemeente-denhaag/textarea/dist/index.css" as textarea;
+@use "~@utrecht/button-css/dist/index.min.css" as button;
+@use "~@utrecht/button-link-css/dist/index.min.css" as buttonlink;
+@use "~@utrecht/data-list-css/dist/index.min.css" as datalist;
+@use "~@utrecht/document-css/dist/index.min.css" as document;
 @use "~@utrecht/img-css/dist/index.min.css" as img;
 @use "~@utrecht/link-button-css/dist/index.min.css" as linkbutton;
 @use "~@utrecht/link-css/dist/index.min.css" as link;
-@use "~@gemeente-denhaag/radio-button/dist/index.css" as radiobutton;
-@use "~@gemeente-denhaag/select/dist/index.css" as select;
 @use "~@utrecht/table-css/dist/index.min.css" as table;
-@use "~@gemeente-denhaag/text-input/dist/index.css" as textinput;
-@use "~@gemeente-denhaag/textarea/dist/index.css" as textarea;
-@use "~@gemeente-denhaag/design-tokens/dist/theme/index" as designTokenComponents;
 
 // Tijdelijke fix voor gekke root font-size issues met utrecht-document die op html tag staat
 :root {
