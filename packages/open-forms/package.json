@@ -26,19 +26,24 @@
     "@gemeente-denhaag/fonts": "1.0.1"
   },
   "devDependencies": {
+    "@gemeente-denhaag/checkbox": "workspace:*",
+    "@gemeente-denhaag/form-field-description": "workspace:*",
+    "@gemeente-denhaag/form-field-error-message": "workspace:*",
+    "@gemeente-denhaag/form-field": "workspace:*",
+    "@gemeente-denhaag/form-fieldset": "workspace:*",
+    "@gemeente-denhaag/form-label": "workspace:*",
+    "@gemeente-denhaag/radio-button": "workspace:*",
+    "@gemeente-denhaag/select": "workspace:*",
+    "@gemeente-denhaag/text-input": "workspace:*",
+    "@gemeente-denhaag/textarea": "workspace:*",
     "@utrecht/button-css": "3.0.1",
     "@utrecht/button-link-css": "2.0.1",
     "@utrecht/data-list-css": "2.0.1",
     "@utrecht/document-css": "2.0.1",
-    "@utrecht/form-field-css": "2.0.1",
-    "@utrecht/form-field-description-css": "2.0.1",
-    "@utrecht/form-label-css": "2.0.1",
     "@utrecht/img-css": "2.0.1",
     "@utrecht/link-button-css": "2.0.1",
     "@utrecht/link-css": "2.0.1",
-    "@utrecht/select-css": "2.0.1",
     "@utrecht/table-css": "2.0.1",
-    "@utrecht/textbox-css": "3.0.1",
     "rollup-plugin-copy": "3.5.0"
   }
 }

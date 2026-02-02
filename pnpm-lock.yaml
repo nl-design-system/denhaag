@@ -1261,6 +1261,36 @@ importers:
         specifier: 1.0.1
         version: 1.0.1
     devDependencies:
+      '@gemeente-denhaag/checkbox':
+        specifier: workspace:*
+        version: link:../../components/Checkbox
+      '@gemeente-denhaag/form-field':
+        specifier: workspace:*
+        version: link:../../components/FormField
+      '@gemeente-denhaag/form-field-description':
+        specifier: workspace:*
+        version: link:../../components/FormFieldDescription
+      '@gemeente-denhaag/form-field-error-message':
+        specifier: workspace:*
+        version: link:../../components/FormFieldErrorMessage
+      '@gemeente-denhaag/form-fieldset':
+        specifier: workspace:*
+        version: link:../../components/FormFieldSet
+      '@gemeente-denhaag/form-label':
+        specifier: workspace:*
+        version: link:../../components/FormLabel
+      '@gemeente-denhaag/radio-button':
+        specifier: workspace:*
+        version: link:../../components/RadioButton
+      '@gemeente-denhaag/select':
+        specifier: workspace:*
+        version: link:../../components/Select
+      '@gemeente-denhaag/text-input':
+        specifier: workspace:*
+        version: link:../../components/TextInput
+      '@gemeente-denhaag/textarea':
+        specifier: workspace:*
+        version: link:../../components/Textarea
       '@utrecht/button-css':
         specifier: 3.0.1
         version: 3.0.1
@@ -1273,15 +1303,6 @@ importers:
       '@utrecht/document-css':
         specifier: 2.0.1
         version: 2.0.1
-      '@utrecht/form-field-css':
-        specifier: 2.0.1
-        version: 2.0.1
-      '@utrecht/form-field-description-css':
-        specifier: 2.0.1
-        version: 2.0.1
-      '@utrecht/form-label-css':
-        specifier: 2.0.1
-        version: 2.0.1
       '@utrecht/img-css':
         specifier: 2.0.1
         version: 2.0.1
@@ -1291,15 +1312,9 @@ importers:
       '@utrecht/link-css':
         specifier: 2.0.1
         version: 2.0.1
-      '@utrecht/select-css':
-        specifier: 2.0.1
-        version: 2.0.1
       '@utrecht/table-css':
         specifier: 2.0.1
         version: 2.0.1
-      '@utrecht/textbox-css':
-        specifier: 3.0.1
-        version: 3.0.1
       rollup-plugin-copy:
         specifier: 3.5.0
         version: 3.5.0
