@@ -1,5 +1,11 @@
 # @gemeente-denhaag/open-forms
 
+## 2.4.0
+
+### Minor Changes
+
+- 525b965: Use the gemeente-denhaag packages instead of the utrecht packages for form components
+
 ## 2.3.0
 
 ### Minor Changes

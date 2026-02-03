@@ -1,5 +1,11 @@
 # @gemeente-denhaag/form-label
 
+## 3.2.0
+
+### Minor Changes
+
+- 68291cf: Moved focus ring to the label + input, instead of only the input
+
 ## 3.1.0
 
 ### Minor Changes

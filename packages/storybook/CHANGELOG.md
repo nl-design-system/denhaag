@@ -1,5 +1,12 @@
 # @gemeente-denhaag/storybook
 
+## 5.4.4
+
+### Patch Changes
+
+- Updated dependencies [68291cf]
+  - @gemeente-denhaag/form-label@3.2.0
+
 ## 5.4.3
 
 ### Patch Changes
