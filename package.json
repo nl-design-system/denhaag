@@ -88,6 +88,11 @@
     "typescript": "5.9.3",
     "uuid": "13.0.0"
   },
+  "pnpm": {
+    "overrides": {
+      "@isaacs/brace-expansion@<=5.0.0": "^5.0.1"
+    }
+  },
   "engines": {
     "node": ">=24 <=25",
     "pnpm": "^10.17.0"
