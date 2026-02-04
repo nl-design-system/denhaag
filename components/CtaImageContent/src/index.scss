@@ -29,6 +29,7 @@
     padding-block: var(--denhaag-cta-image-content-content-padding-block, var(--denhaag-space-2xl));
 
     @media (min-width: 768px) {
+      align-content: center;
       width: var(--denhaag-cta-image-content-content-width, calc(50% - (2 * var(--denhaag-space-2xl))));
     }
   }
