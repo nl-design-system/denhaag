@@ -1,4 +1,4 @@
-import React, { KeyboardEvent, RefObject, createRef, useEffect, useState } from 'react';
+import React, { KeyboardEvent, RefObject, createRef, useEffect, useLayoutEffect, useState } from 'react';
 import './index.scss';
 import { TabsContainer } from './TabsContainer';
 import { TabIndicator } from './TabIndicator';
@@ -49,9 +49,7 @@ export const Tabs = ({ tabData, onChange }: TabsProps) => {
   const [selectedTab, setSelectedTab] = useState<TabRef | undefined>(() => {
     return tabs.length > 0 ? tabs[0].tabRef : undefined;
   });
-
   const [focussedTab, setFocussedTab] = useState<TabRef | undefined>();
-
   const [tabIndicatorPosition, setTabIndicatorPosition] = useState<TabIndicatorPosition>();
 
   useEffect(() => {
@@ -64,11 +62,24 @@ export const Tabs = ({ tabData, onChange }: TabsProps) => {
     }
   }, [focussedTab]);
 
-  useEffect(() => {
-    if (selectedTab !== undefined) {
-      setTabIndicatorPosition({ left: selectedTab.current?.offsetLeft, width: selectedTab.current?.offsetWidth });
-    }
-  }, [selectedTab]);
+  useLayoutEffect(() => {
+    if (!selectedTab?.current) return undefined;
+
+    const updateIndicator = () => {
+      if (!selectedTab?.current) return;
+      setTabIndicatorPosition({
+        left: selectedTab.current.offsetLeft,
+        width: selectedTab.current.offsetWidth,
+      });
+    };
+
+    const resizeObserver = new ResizeObserver(updateIndicator);
+    resizeObserver.observe(selectedTab.current);
+
+    return () => {
+      resizeObserver.disconnect();
+    };
+  }, [selectedTab, tabs.length]);
 
   const findNextOrFirst = <T,>(array: T[], callback: (item: T, index: number) => boolean): T => {
     const index = array.findIndex(callback);
