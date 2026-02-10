@@ -1,5 +1,11 @@
 # @gemeente-denhaag/tab
 
+## 3.1.1
+
+### Patch Changes
+
+- 4c09547: Fix selectedIndicator width
+
 ## 3.1.0
 
 ### Minor Changes

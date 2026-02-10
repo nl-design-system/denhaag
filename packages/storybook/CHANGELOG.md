@@ -1,5 +1,12 @@
 # @gemeente-denhaag/storybook
 
+## 5.4.5
+
+### Patch Changes
+
+- Updated dependencies [4c09547]
+  - @gemeente-denhaag/tab@3.1.1
+
 ## 5.4.4
 
 ### Patch Changes

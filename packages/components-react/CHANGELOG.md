@@ -1,5 +1,12 @@
 # @gemeente-denhaag/components-react
 
+## 5.0.18
+
+### Patch Changes
+
+- Updated dependencies [4c09547]
+  - @gemeente-denhaag/tab@3.1.1
+
 ## 5.0.17
 
 ### Patch Changes
