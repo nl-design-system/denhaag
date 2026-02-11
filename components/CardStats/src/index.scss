@@ -1,8 +1,8 @@
 .denhaag-stats-cards {
-  --denhaag-stats-card-min-inline-size: 300px;
+  --denhaag-stats-card-min-inline-size: 225px;
 
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(var(--denhaag-stats-card-min-inline-size), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(var(--denhaag-stats-card-min-inline-size), 1fr));
   gap: var(--denhaag-space-xl);
 }
 
