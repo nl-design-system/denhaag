@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/card-stats",
-  "version": "0.1.1-www-denhaag-nl.163",
+  "version": "0.1.1-www-denhaag-nl.164",
   "description": "Card with statistics",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "private": false,
@@ -29,7 +29,7 @@
     "dist"
   ],
   "dependencies": {
-    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.163"
+    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.164"
   },
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
