@@ -152,3 +152,7 @@ a.denhaag-button {
 .denhaag-button--icon-only .denhaag-button__icon {
   height: var(--denhaag-button-icon-only-icon-height, var(--denhaag-space-lg));
 }
+
+.denhaag-button__icon:empty {
+  display: none;
+}
