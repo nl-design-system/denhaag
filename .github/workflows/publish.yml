@@ -53,10 +53,9 @@ jobs:
       - name: build storybook
         run: pnpm run build:storybook
 
-      - name: Upload storybook
-        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
+      - name: Upload artifact for GitHub Pages
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4.0.0
         with:
-          name: storybook
           path: storybook-static
 
       - name: Publish to Chromatic
@@ -74,21 +73,18 @@ jobs:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
 
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy-pages.outputs.page_url }}
+
+    permissions:
+      id-token: write
+      pages: write
+
     steps:
-      - name: Checkout branch
-        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
-
-      - name: Download storybook artifact
-        uses: actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131 # v7.0.0
-        with:
-          name: storybook
-          path: storybook-static
-
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@9d877eea73427180ae43cf98e8914934fe157a1a # v4.7.6
-        with:
-          branch: gh-pages
-          folder: storybook-static
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5
+        id: deploy-pages
 
   publish-npm:
     runs-on: ubuntu-latest
