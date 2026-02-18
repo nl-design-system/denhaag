@@ -3,10 +3,13 @@
   --denhaag-icon-size: var(--denhaag-typography-scale-lg-font-size);
 
   align-items: center;
-  background-color: var(--denhaag-button-primary-action-background-color, var(--denhaag-color-green-3));
+  background-color: var(
+    --denhaag-button-background-color,
+    var(--denhaag-button-primary-action-background-color, var(--denhaag-color-green-3))
+  );
   border: 0;
   border-radius: var(--denhaag-button-border-radius, var(--denhaag-border-radius));
-  color: var(--denhaag-button-primary-action-color, var(--denhaag-color-white));
+  color: var(--denhaag-button-color, var(--denhaag-button-primary-action-color, var(--denhaag-color-white)));
   cursor: var(--denhaag-button-cursor, default);
   display: inline-flex;
   font-family: var(--denhaag-button-font-family, var(--denhaag-typography-sans-serif-font-family));
@@ -14,8 +17,14 @@
   font-size: var(--denhaag-button-font-size, var(--denhaag-typography-scale-base-font-size));
   justify-content: center;
   line-height: 1.5;
-  padding-block: var(--denhaag-button-medium-size-padding-block, var(--denhaag-space-xs));
-  padding-inline: var(--denhaag-button-medium-size-padding-inline, var(--denhaag-space-md));
+  padding-block: var(
+    --denhaag-button-padding-block,
+    var(--denhaag-button-medium-size-padding-block, var(--denhaag-space-xs))
+  );
+  padding-inline: var(
+    --denhaag-button-padding-inline,
+    var(--denhaag-button-medium-size-padding-inline, var(--denhaag-space-md))
+  );
   position: relative;
   text-decoration: none;
   transition-property: background-color, border-color, color, transform;
@@ -39,22 +48,21 @@ a.denhaag-button {
 
 .denhaag-button.denhaag-button--hover,
 .denhaag-button:hover {
+  --denhaag-button-background-color: var(
+    --denhaag-button-primary-action-hover-background-color,
+    var(--denhaag-color-green-4)
+  );
+  --denhaag-button-color: var(--denhaag-button-primary-action-hover-color, var(--denhaag-color-white));
   --denhaag-button-transform-y: var(--denhaag-button-hover-transform-y, -2px);
-
-  background-color: var(--denhaag-button-primary-action-hover-background-color, var(--denhaag-color-green-4));
-  color: var(--denhaag-button-primary-action-hover-color, var(--denhaag-color-white));
 }
 
 .denhaag-button--focus-visible::after,
 .denhaag-button:focus-visible::after {
   border: var(--denhaag-focus-border);
-  bottom: var(--denhaag-button-focus-border-offset);
+  inset: var(--denhaag-button-focus-border-offset);
   content: "";
-  display: block;
-  left: var(--denhaag-button-focus-border-offset);
+  display: block; // position:absolute is always block by default, not sure why we need to explicitly set it, but it is needed for the focus outline to be visible when the button has `display: inline-flex`.
   position: absolute;
-  right: var(--denhaag-button-focus-border-offset);
-  top: var(--denhaag-button-focus-border-offset);
 }
 
 .denhaag-button--focus,
@@ -68,54 +76,98 @@ a.denhaag-button {
 
 .denhaag-button.denhaag-button--disabled,
 .denhaag-button.denhaag-button:disabled {
-  background-color: var(--denhaag-button-primary-action-disabled-background-color, var(--denhaag-color-grey-2));
-  color: var(--denhaag-button-primary-action-disabled-color, var(--denhaag-color-white));
+  --denhaag-button-background-color: var(
+    --denhaag-button-primary-action-disabled-background-color,
+    var(--denhaag-color-grey-2)
+  );
+  --denhaag-button-color: var(--denhaag-button-primary-action-disabled-color, var(--denhaag-color-white));
 }
 
 .denhaag-button--secondary-action {
   // Due to the accessibility focus outline overlapping with the border, the outline needs to be repositioned for the border variant.
   --denhaag-button-focus-border-offset: calc(-1 * (var(--denhaag-focus-border-width, 1px) * 1.5));
-
-  background-color: var(--denhaag-button-secondary-action-background-color, var(--denhaag-color-white));
-  border: var(--denhaag-button-border, var(--denhaag-border-width, 1px)) solid
-    var(--denhaag-button-secondary-action-border-color, var(--denhaag-color-green-3));
-  color: var(--denhaag-button-secondary-action-color, var(--denhaag-color-green-3));
-  padding-block: calc(
+  --denhaag-button-background-color: var(
+    --denhaag-button-secondary-action-background-color,
+    var(--denhaag-color-white)
+  );
+  --denhaag-button-color: var(--denhaag-button-secondary-action-color, var(--denhaag-color-green-3));
+  --denhaag-button-padding-block: calc(
     var(--denhaag-button-medium-size-padding-block, var(--denhaag-space-xs)) - var(--denhaag-button-border-width)
   );
-  padding-inline: calc(
+  --denhaag-button-padding-inline: calc(
     var(--denhaag-button-medium-size-padding-inline, var(--denhaag-space-md)) - var(--denhaag-button-border-width)
   );
+
+  border: var(--denhaag-button-border, var(--denhaag-border-width, 1px)) solid
+    var(--denhaag-button-secondary-action-border-color, var(--denhaag-color-green-3));
 }
 
 .denhaag-button--secondary-action.denhaag-button--hover,
 .denhaag-button--secondary-action:hover {
-  background-color: var(--denhaag-button-secondary-action-hover-background-color, var(--denhaag-color-white));
+  --denhaag-button-background-color: var(
+    --denhaag-button-secondary-action-hover-background-color,
+    var(--denhaag-color-white)
+  );
+  --denhaag-button-color: var(--denhaag-button-secondary-action-hover-color, var(--denhaag-color-green-4));
+
   border-color: var(--denhaag-button-secondary-action-hover-border-color, var(--denhaag-color-green-4));
-  color: var(--denhaag-button-secondary-action-hover-color, var(--denhaag-color-green-4));
 }
 
 .denhaag-button--secondary-action.denhaag-button--disabled,
-.denhaag-button--secondary-action.denhaag-button:disabled {
-  background-color: var(--denhaag-button-secondary-action-disabled-background-color, var(--denhaag-color-white));
+.denhaag-button--secondary-action.denhaag-button:disabled,
+.denhaag-button--tertiary-action.denhaag-button--disabled,
+.denhaag-button--tertiary-action.denhaag-button:disabled {
+  --denhaag-button-background-color: var(
+    --denhaag-button-secondary-action-disabled-background-color,
+    var(--denhaag-color-white)
+  );
+  --denhaag-button-color: var(--denhaag-button-secondary-action-disabled-color, var(--denhaag-color-grey-2));
+
   border-color: var(--denhaag-button-secondary-action-disabled-border-color, var(--denhaag-color-grey-2));
-  color: var(--denhaag-button-secondary-action-disabled-color, var(--denhaag-color-grey-2));
+}
+
+.denhaag-button--tertiary-action {
+  --denhaag-button-background-color: var(
+    --denhaag-page-buttons-outline-dark-action-background-color,
+    var(--denhaag-color-white)
+  );
+  --denhaag-button-color: var(--denhaag-page-buttons-outline-dark-action-color, var(--denhaag-color-grey-4));
+
+  border: var(--denhaag-button-border-width) solid
+    var(--denhaag-page-buttons-outline-dark-action-border-color, var(--denhaag-color-grey-2));
+}
+
+.denhaag-button--tertiary-action.denhaag-button--hover,
+.denhaag-button--tertiary-action:hover {
+  --denhaag-button-background-color: var(
+    --denhaag-button-secondary-action-hover-background-color,
+    var(--denhaag-color-white)
+  );
+  --denhaag-button-color: var(--denhaag-button-secondary-action-hover-color, var(--denhaag-color-green-3));
+
+  border-color: currentcolor;
+}
+
+/* Due to the accessibility focus outline overlapping with the border, the outline needs to be repositioned for the border variant */
+.denhaag-button--tertiary-action.denhaag-button--focus::after,
+.denhaag-button--tertiary-action:focus::after {
+  inset: -3px;
 }
 
 .denhaag-button--large {
   --denhaag-button-font-size: var(--denhaag-typography-scale-lg-font-size);
-  --denhaag-button-medium-size-padding-block: var(--denhaag-button-large-size-padding-block, 0.4063rem);
-  --denhaag-button-medium-size-padding-inline: var(--denhaag-button-large-size-padding-inline, var(--denhaag-space-lg));
+  --denhaag-button-padding-block: var(--denhaag-button-large-size-padding-block, 0.4063rem);
+  --denhaag-button-padding-inline: var(--denhaag-button-large-size-padding-inline, var(--denhaag-space-lg));
   --denhaag-icon-size: var(--denhaag-typography-scale-xl-font-size);
 
   line-height: var(--denhaag-button-large-size-line-height, 1.75);
 }
 
 .denhaag-button--large.denhaag-button--secondary-action {
-  --denhaag-button-medium-size-padding-block: calc(
+  --denhaag-button-padding-block: calc(
     var(--denhaag-button-large-size-padding-block, 0.4063rem) - var(--denhaag-button-border-width)
   );
-  --denhaag-button-medium-size-padding-inline: calc(
+  --denhaag-button-padding-inline: calc(
     var(--denhaag-button-large-size-padding-inline, var(--denhaag-space-lg)) - var(--denhaag-button-border-width)
   );
 }
@@ -134,8 +186,8 @@ a.denhaag-button {
 
 .denhaag-button__sr-only {
   position: absolute;
-  width: 1px;
-  height: 1px;
+  inline-size: 1px;
+  block-size: 1px;
   padding: 0;
   margin: -1px;
   overflow: hidden;
@@ -144,13 +196,15 @@ a.denhaag-button {
 }
 
 .denhaag-button--icon-only {
-  --denhaag-button-medium-size-padding-inline: var(--denhaag-space-sm);
+  --denhaag-button-padding-inline: var(--denhaag-space-sm);
 
-  height: var(--denhaag-button-icon-only-height, 2.6875rem);
+  block-size: var(--denhaag-button-icon-only-height, 2.6875rem);
+  display: grid;
+  place-content: center;
 }
 
 .denhaag-button--icon-only .denhaag-button__icon {
-  height: var(--denhaag-button-icon-only-icon-height, var(--denhaag-space-lg));
+  block-size: var(--denhaag-button-icon-only-icon-height, var(--denhaag-space-lg));
 }
 
 .denhaag-button__icon:empty {
