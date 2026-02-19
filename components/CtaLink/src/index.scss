@@ -1,4 +1,6 @@
 .denhaag-cta-link {
+  --denhaag-icon-size: var(--denhaag-cta-icon-size, var(--denhaag-cta-link-gap, var(--denhaag-space-lg)));
+
   align-items: center;
   border-left: 1px solid var(--denhaag-cta-link-border-color, var(--denhaag-color-grey-2));
   border-right: 1px solid var(--denhaag-cta-link-border-color, var(--denhaag-color-grey-2));
@@ -45,11 +47,6 @@
   height: auto;
   justify-content: center;
   width: var(--denhaag-cta-link-width, var(--denhaag-space-5xl));
-}
-
-.denhaag-cta-link__dot > svg,
-.denhaag-cta-link__dot .denhaag-icon {
-  font-size: var(--denhaag-cta-icon-size, var(--denhaag-cta-link-gap, var(--denhaag-space-lg)));
 }
 
 .denhaag-cta-link__excerpt {
