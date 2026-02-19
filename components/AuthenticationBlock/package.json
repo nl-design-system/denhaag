@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/authentication-block",
-  "version": "0.1.1-www-denhaag-nl.166",
+  "version": "0.1.1-www-denhaag-nl.167",
   "description": "The Authentication block component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "private": false,
@@ -33,8 +33,8 @@
     "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
   },
   "devDependencies": {
-    "@gemeente-denhaag/button": "0.2.3-www-denhaag-nl.166",
-    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.166",
-    "@gemeente-denhaag/link": "0.2.3-www-denhaag-nl.166"
+    "@gemeente-denhaag/button": "0.2.3-www-denhaag-nl.167",
+    "@gemeente-denhaag/icons": "0.2.3-www-denhaag-nl.167",
+    "@gemeente-denhaag/link": "0.2.3-www-denhaag-nl.167"
   }
 }
