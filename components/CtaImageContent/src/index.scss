@@ -64,12 +64,14 @@
   .denhaag-button,
   .denhaag-link {
     margin-block-start: var(--denhaag-space-xl);
+    border: none;
     position: static;
     transform: none;
 
     &::after {
       content: "";
       position: absolute;
+      border: none;
       left: 0;
       top: 0;
       right: 0;
@@ -138,12 +140,17 @@
 .denhaag-cta-image-content:hover {
   transform: translateY(calc(0px - var(--denhaag-space-3xs)));
 
-  .denhaag-cta-image-content__image {
-    transform: translateY(calc(0px - var(--denhaag-space-3xs))) scale(1.02);
+  &:is(.denhaag-cta-image-content--illustration-variant) .denhaag-cta-image-content__image {
+    transform: scale(1.02);
+    transform-origin: center;
   }
 }
 
-.denhaag-cta-image-content:focus-within:not(:focus-visible),
-.denhaag-cta-image-content--focus {
+.denhaag-cta-image-content--focus,
+.denhaag-cta-image-content:focus-within:not(:focus-visible) {
   outline: var(--denhaag-focus-border);
+
+  .denhaag-link {
+    outline: none;
+  }
 }
