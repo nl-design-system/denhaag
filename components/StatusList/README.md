@@ -1,0 +1,100 @@
+# Status List
+
+A Status List is a component similar to the accordion, where you can show the status of action points (planned, active, finished) and show a description in each item's collapsible content.
+
+## When to use
+
+A Status List is used to:
+
+- Organize action points.
+
+## Alternatives and related components
+
+None.
+
+## Anatomy
+
+The status list consists of:
+
+1. Indicator: shows the status of each item and contains numbering.
+2. Title: contains the section title and is control for revealing the panel.
+3. Icon: indicates if the panel is open or closed.
+4. Panel: the section of content associated with an accordion header.
+5. Container
+
+## (Interactive) states
+
+The accordion contains the states inactive, active, hover, disabled and focus.
+
+## Design properties
+
+### Typography
+
+- Title inactive: TheSans/lg/400
+- Title active: TheSans/lg/700
+- Panel: TheSans/md/400
+
+### Color
+
+- Title: text color Grey/4
+- Icon: svg color Grey/4
+- Panel: text color Grey/4
+- Container: border color Blue/2
+
+### Interactive states
+
+- Hover: title text color Green/3, icon svg color Green/3
+- Disabled: title text color Grey/2, icon svg color Grey/2
+- Focus: title text color Grey/4, icon svg color Grey/4, container border color Ocher/5
+
+### Structure
+
+- Title inactive: padding-top and padding-bottom 12px, height 48px
+- Title active: padding top and padding-bottom 16px
+- Title: margin-left 16px
+- Icon: height and width 24px, padding-right 16px
+- Panel: padding-right 16px
+- Container: border 1px
+
+## Accessibility
+
+Availability of accordion content to assistive technology requires the use of aria-controls and toggling aria-expanded as regions are expanded and collapsed.
+
+## Content guidelines
+
+### Title
+
+Accordion titles should:
+
+- Be clear because it hides content
+- Be as brief as possible while still being clear and descriptive.
+
+If you struggle to come up with clear titles, it might be because the way you’ve separated the content is not clear.
+
+### Panel
+
+Content inside of a section may be split into paragraphs and include sub-headers if needed.
+
+## Best practices
+
+### Dos
+
+Status List should:
+
+- Have an overview of multiple, related sections of content.
+- Show and hide those sections as needed.
+- Open as many panels as needed.
+
+### Don’ts
+
+Status List should:
+
+- Not be used for anything else than action points (use Accordion instead).
+- Not be used if you can keep the content on a single page.
+- Not be used to split up a series of questions into sections.
+- Not hide content which is essential to all users.
+
+## References
+
+[https://design-system.service.gov.uk/components/accordion/](https://design-system.service.gov.uk/components/accordion/)
+[https://www.nngroup.com/articles/accordions-complex-content/](https://www.nngroup.com/articles/accordions-complex-content/)

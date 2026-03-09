@@ -1,0 +1,110 @@
+.denhaag-status-list {
+  --denhaag-status-list-border-color: var(--denhaag-color-blue-2);
+  --denhaag-accordion-container-border-radius: 0;
+  --denhaag-status-list-padding-block: var(--denhaag-space-md);
+  --denhaag-status-list-padding-inline: var(--denhaag-space-xl);
+
+  counter-reset: status-list-counter;
+  border-color: var(--denhaag-status-list-border-color);
+}
+
+.denhaag-status-list-item__indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  inline-size: 1.25rem;
+  block-size: 1.25rem;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.denhaag-status-list-item {
+  counter-increment: status-list-counter;
+  border-color: var(--denhaag-status-list-border-color);
+
+  &--status-active {
+    color: var(--denhaag-color-green-3);
+
+    .denhaag-status-list-item__indicator {
+      background-color: var(--denhaag-color-green-3);
+      color: var(--denhaag-color-white);
+
+      &::before {
+        content: counter(status-list-counter);
+      }
+    }
+  }
+
+  &--status-planned {
+    .denhaag-status-list-item__indicator {
+      border: 1px solid;
+
+      &::before {
+        content: counter(status-list-counter);
+      }
+    }
+  }
+
+  &--status-finished {
+    .denhaag-status-list-item__indicator {
+      color: var(--denhaag-color-green-3);
+    }
+  }
+
+  .denhaag-accordion__title {
+    padding-block: var(--denhaag-status-list-padding-block);
+  }
+
+  .denhaag-accordion__panel {
+    padding-inline-start: var(--denhaag-status-list-padding-inline);
+
+    > .denhaag-icon {
+      right: var(--denhaag-status-list-padding-inline);
+      top: var(--denhaag-status-list-padding-block);
+      color: var(--utrecht-heading-color);
+    }
+  }
+
+  .denhaag-accordion__details-content {
+    padding-block: 0 var(--denhaag-status-list-padding-block);
+    padding-inline: var(--denhaag-status-list-padding-inline);
+  }
+}
+
+.denhaag-status-list__torn-paper {
+  position: relative;
+  height: 2.875rem;
+  border-color: var(--denhaag-status-list-border-color);
+  border-width: 0 1px;
+  border-style: solid;
+}
+
+.denhaag-status-list__torn-paper-content {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  border-block-end: solid 5px var(--denhaag-status-list-border-color);
+  border-image-source: url('data:image/svg+xml,<svg width="77.763939mm" height="1.4719063mm" viewBox="0 0 77.763939 1.4719063" version="1.1" id="svg1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"><defs id="defs1" /><g id="layer1" transform="translate(-66.396347,-153.044)"><g style="fill:none" id="g1" transform="matrix(0.26458333,0,0,0.26458333,61.647917,142.34659)"><path d="m 18.3046,42.3612 c 1.8664,-1.9118 4.8925,-1.9118 6.7589,0 l 1.6646,1.705 c 1.8664,1.9117 4.8924,1.9117 6.7589,0 l 1.6664,-1.7069 c 1.8664,-1.9118 4.8925,-1.9118 6.7589,0 l 1.6664,1.7069 c 1.8664,1.9117 4.8925,1.9117 6.7589,0 l 1.6645,-1.705 c 1.8665,-1.9118 4.8925,-1.9118 6.7589,0 l 1.6646,1.705 c 1.8664,1.9117 4.8925,1.9117 6.7589,0 l 1.6664,-1.7069 c 1.8664,-1.9118 4.8925,-1.9118 6.7589,0 l 1.6664,1.7069 c 1.8664,1.9117 4.8925,1.9117 6.7589,0 l 1.6664,-1.7069 c 1.8665,-1.9118 4.8925,-1.9118 6.7589,0 l 1.6665,1.7069 c 1.8664,1.9117 4.8924,1.9117 6.7591,0 l 1.664,-1.705 c 1.867,-1.9118 4.893,-1.9118 6.759,0 l 1.665,1.705 c 1.866,1.9117 4.892,1.9117 6.759,0 l 1.666,-1.7069 c 1.866,-1.9118 4.893,-1.9118 6.759,0 l 1.666,1.7069 c 1.867,1.9117 4.893,1.9117 6.759,0 l 1.667,-1.7069 c 1.866,-1.9118 4.892,-1.9118 6.759,0 l 1.666,1.7069 c 1.866,1.9117 4.892,1.9117 6.759,0 l 1.664,-1.705 c 1.867,-1.9118 4.893,-1.9118 6.759,0 l 1.665,1.705 c 1.866,1.9117 4.892,1.9117 6.759,0 l 1.666,-1.7069 c 1.867,-1.9118 4.893,-1.9118 6.759,0 l 1.667,1.7069 c 1.866,1.9117 4.892,1.9117 6.758,0 l 1.665,-1.705 c 1.866,-1.9118 4.892,-1.9118 6.759,0 l 1.664,1.705 c 1.867,1.9117 4.893,1.9117 6.759,0 l 1.667,-1.7069 c 1.866,-1.9118 4.892,-1.9118 6.759,0 l 1.666,1.7069 c 1.866,1.9117 4.893,1.9117 6.759,0 l 1.666,-1.7069 c 1.867,-1.9118 4.893,-1.9118 6.759,-10e-5 l 1.667,1.707 c 1.866,1.9117 4.892,1.9117 6.759,0 l 1.664,-1.705 c 1.867,-1.9118 4.893,-1.9118 6.759,0 l 1.665,1.705 c 1.866,1.9117 4.892,1.9117 6.759,0 l 1.666,-1.7069 c 1.866,-1.9118 4.892,-1.9118 6.759,0 l 1.666,1.7069 c 1.867,1.9117 4.893,1.9117 6.759,0 l 1.665,-1.705 c 1.866,-1.9118 4.892,-1.9118 6.759,0 l 1.664,1.705 c 1.867,1.9117 4.893,1.9117 6.759,0 l 1.666,-1.7069 c 1.867,-1.9118 4.893,-1.9118 6.759,0 l 1.667,1.7069 c 1.866,1.9117 4.892,1.9117 6.759,0 l 1.666,-1.7069 c 1.867,-1.9118 4.893,-1.9118 6.759,0" stroke="%23adcded" id="path1" /></g></g></svg>');
+  border-image-slice: 12;
+  border-image-repeat: repeat;
+}
+
+.denhaag-status-list-item[open],
+.denhaag-status-list-item.denhaag-accordion__container--open {
+  .denhaag-accordion__title {
+    font-weight: 400;
+    color: var(--utrecht-heading-color);
+  }
+
+  .denhaag-accordion__panel {
+    > .denhaag-icon {
+      color: var(--utrecht-heading-color);
+    }
+  }
+}
