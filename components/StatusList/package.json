@@ -1,0 +1,38 @@
+{
+  "name": "@gemeente-denhaag/status-list",
+  "version": "0.2.3-www-denhaag-nl.171",
+  "description": "An Accordion component for showing action points and their statuses.",
+  "bugs": "https://github.com/nl-design-system/denhaag/issues",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nl-design-system/denhaag.git",
+    "directory": "components/StatusList"
+  },
+  "license": "EUPL-1.2",
+  "author": "Municipality of The Hague",
+  "exports": {
+    ".": {
+      "types": "./dist/cjs/index.d.ts",
+      "import": "./dist/mjs/index.js",
+      "default": "./dist/cjs/index.js"
+    },
+    "./index.css": "./dist/index.css"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/mjs/index.js",
+  "types": "dist/cjs/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@gemeente-denhaag/accordion": "0.2.3-www-denhaag-nl.171"
+  },
+  "scripts": {
+    "build": "rollup -c ../../rollup.config.js",
+    "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+  }
+}

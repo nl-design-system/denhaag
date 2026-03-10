@@ -1,0 +1,120 @@
+.denhaag-status-list {
+  --denhaag-status-list-border-color: var(--denhaag-color-blue-2);
+  --denhaag-accordion-container-border-radius: 0;
+  --denhaag-status-list-padding-block: var(--denhaag-space-md);
+  --denhaag-status-list-padding-inline: var(--denhaag-space-xl);
+
+  counter-reset: status-list-counter;
+  border-color: var(--denhaag-status-list-border-color);
+}
+
+.denhaag-status-list-item__indicator {
+  display: grid;
+  place-content: center;
+  flex-shrink: 0;
+  inline-size: 1.25rem;
+  block-size: 1.25rem;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1;
+
+  .denhaag-icon {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.denhaag-status-list-item {
+  counter-increment: status-list-counter;
+  border-color: var(--denhaag-status-list-border-color);
+
+  &--status-active {
+    color: var(--denhaag-color-green-3);
+
+    .denhaag-status-list-item__indicator {
+      background-color: var(--denhaag-color-green-3);
+      color: var(--denhaag-color-white);
+
+      &::before {
+        content: counter(status-list-counter);
+      }
+    }
+  }
+
+  &--status-planned {
+    .denhaag-status-list-item__indicator {
+      border: 1px solid;
+
+      &::before {
+        content: counter(status-list-counter);
+      }
+    }
+  }
+
+  &--status-finished {
+    .denhaag-status-list-item__indicator {
+      color: var(--denhaag-color-green-3);
+    }
+  }
+
+  .denhaag-accordion__title {
+    padding-block: var(--denhaag-status-list-padding-block);
+  }
+
+  .denhaag-accordion__panel {
+    padding-inline-start: var(--denhaag-status-list-padding-inline);
+
+    > .denhaag-icon {
+      right: var(--denhaag-status-list-padding-inline);
+      top: var(--denhaag-status-list-padding-block);
+      color: var(--utrecht-heading-color);
+    }
+  }
+
+  .denhaag-accordion__details-content {
+    padding-block: 0 var(--denhaag-status-list-padding-block);
+    padding-inline: var(--denhaag-status-list-padding-inline);
+  }
+}
+
+.denhaag-status-list__torn-paper {
+  position: relative;
+  height: 2.875rem;
+  border-color: var(--denhaag-status-list-border-color);
+  border-width: 0 1px;
+  border-style: solid;
+}
+
+.denhaag-status-list__torn-paper-content {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  border-style: solid;
+  border-width: 0 0 5px;
+  border-image-source: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="41" height="5.5" viewBox="0 0 10.893412 1.4718897"><g transform="translate(-66.396347,-153.04401)"><g fill="none" transform="matrix(0.26458333,0,0,0.26458333,61.647917,142.34659)"><path d="m 18.3046,42.3612 c 1.8664,-1.9118 4.8925,-1.9118 6.7589,0 l 1.6646,1.705 c 1.8664,1.9117 4.8924,1.9117 6.7589,0 l 1.6664,-1.7069 c 1.8664,-1.9118 4.8925,-1.9118 6.7589,0 l 1.6664,1.7069 c 1.8664,1.9117 4.8925,1.9117 6.7589,0 l 1.6645,-1.705 c 1.8665,-1.9118 4.8925,-1.9118 6.7589,0" stroke="%23adcded"/></g></g></svg>');
+  border-image-slice: 0 20 100% 4;
+  border-image-repeat: repeat;
+}
+
+.denhaag-status-list-item[open],
+.denhaag-status-list-item.denhaag-accordion__container--open {
+  .denhaag-accordion__title {
+    font-weight: 400;
+  }
+
+  &:not(.denhaag-status-list-item--status-active) {
+    .denhaag-accordion__title {
+      color: var(--utrecht-heading-color);
+    }
+  }
+
+  .denhaag-accordion__panel {
+    > .denhaag-icon {
+      color: var(--utrecht-heading-color);
+    }
+  }
+}
