@@ -36,14 +36,14 @@
     "@gemeente-denhaag/select": "workspace:*",
     "@gemeente-denhaag/text-input": "workspace:*",
     "@gemeente-denhaag/textarea": "workspace:*",
-    "@utrecht/button-css": "3.0.1",
+    "@utrecht/button-css": "3.1.0",
     "@utrecht/button-link-css": "2.0.1",
     "@utrecht/data-list-css": "2.0.1",
     "@utrecht/document-css": "2.0.1",
     "@utrecht/img-css": "2.0.1",
     "@utrecht/link-button-css": "2.0.1",
     "@utrecht/link-css": "2.0.1",
-    "@utrecht/table-css": "2.0.1",
+    "@utrecht/table-css": "2.0.2",
     "rollup-plugin-copy": "3.5.0"
   }
 }
