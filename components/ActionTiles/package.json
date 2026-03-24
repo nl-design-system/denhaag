@@ -1,0 +1,35 @@
+{
+  "name": "@gemeente-denhaag/action-tiles",
+  "description": "Action tiles are navigational elements that present key actions or topics in a responsive grid layout.",
+  "author": "Municipality of The Hague",
+  "license": "EUPL-1.2",
+  "version": "0.1.0",
+  "exports": {
+    ".": {
+      "types": "./dist/cjs/index.d.ts",
+      "import": "./dist/mjs/index.js",
+      "default": "./dist/cjs/index.js"
+    },
+    "./index.css": "./dist/index.css"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/mjs/index.js",
+  "types": "dist/cjs/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c ../../rollup.config.js",
+    "clean": "yarn rimraf dist tsconfig.tsbuildinfo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nl-design-system/denhaag.git",
+    "directory": "components/ActionTiles"
+  },
+  "bugs": "https://github.com/nl-design-system/denhaag/issues",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  }
+}
