@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/status-list",
-  "version": "0.2.3-www-denhaag-nl.172",
+  "version": "0.2.3-www-denhaag-nl.173",
   "description": "An Accordion component for showing action points and their statuses.",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "private": false,
@@ -29,7 +29,7 @@
     "dist"
   ],
   "dependencies": {
-    "@gemeente-denhaag/accordion": "0.2.3-www-denhaag-nl.172"
+    "@gemeente-denhaag/accordion": "0.2.3-www-denhaag-nl.173"
   },
   "scripts": {
     "build": "rollup -c ../../rollup.config.js",
