@@ -3,6 +3,7 @@
     "file": {
       "border-width": { "value": "1px" },
       "border-color": { "value": "{denhaag.color.grey.2}" },
+      "border-radius": { "value": "0" },
       "border-style": { "value": "solid" },
       "hover": {
         "color": { "value": "{denhaag.color.blue.4}" }

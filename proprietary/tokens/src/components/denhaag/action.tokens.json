@@ -13,6 +13,9 @@
       "font-family": {
         "value": "{denhaag.typography.sans-serif.font-family}"
       },
+      "border-radius": {
+        "value": "0"
+      },
       "padding-inline-start": {
         "value": "{denhaag.space.inline.md}"
       },
