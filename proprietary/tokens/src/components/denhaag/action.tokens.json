@@ -10,6 +10,9 @@
       "background-color": {
         "value": "{denhaag.color.white}"
       },
+      "font-family": {
+        "value": "{denhaag.typography.sans-serif.font-family}"
+      },
       "padding-inline-start": {
         "value": "{denhaag.space.inline.md}"
       },
