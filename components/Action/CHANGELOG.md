@@ -1,5 +1,12 @@
 # @gemeente-denhaag/action
 
+## 4.2.0
+
+### Minor Changes
+
+- bf18fb2: Add border-radius token to File and Action (Task Navigation)
+- 3fb7778: Add font-family token to Action (Task Navigation)
+
 ## 4.1.3
 
 ### Patch Changes

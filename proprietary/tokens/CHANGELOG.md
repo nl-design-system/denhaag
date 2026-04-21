@@ -1,5 +1,11 @@
 # @gemeente-denhaag/design-tokens
 
+## 1.2.0
+
+### Minor Changes
+
+- bf18fb2: Add border-radius token to File and Action (Task Navigation)
+
 ## 1.1.0
 
 ### Minor Changes

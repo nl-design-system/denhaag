@@ -1,5 +1,16 @@
 # @gemeente-denhaag/storybook
 
+## 5.4.6
+
+### Patch Changes
+
+- Updated dependencies [bf18fb2]
+- Updated dependencies [3fb7778]
+  - @gemeente-denhaag/design-tokens@1.2.0
+  - @gemeente-denhaag/action@4.2.0
+  - @gemeente-denhaag/file@2.4.0
+  - @gemeente-denhaag/contact-timeline@4.0.12
+
 ## 5.4.5
 
 ### Patch Changes
