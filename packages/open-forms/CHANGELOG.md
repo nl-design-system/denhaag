@@ -1,5 +1,12 @@
 # @gemeente-denhaag/open-forms
 
+## 2.4.1
+
+### Patch Changes
+
+- Updated dependencies [bf18fb2]
+  - @gemeente-denhaag/design-tokens@1.2.0
+
 ## 2.4.0
 
 ### Minor Changes
