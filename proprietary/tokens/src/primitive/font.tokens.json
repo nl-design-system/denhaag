@@ -12,33 +12,45 @@
         }
       },
       "size": {
-        "xs": {
-          "value": "12px",
-          "name": "Font Size XS"
+        "12": {
+          "value": "0,75rem",
+          "name": "Font Size 12"
         },
-        "sm": {
-          "value": "14px",
-          "name": "Font Size SM"
+        "14": {
+          "value": "0,875rem",
+          "name": "Font Size 14"
         },
-        "md": {
-          "value": "18px",
-          "name": "Font Size MD"
+        "18": {
+          "value": "1,125rem",
+          "name": "Font Size 18"
         },
-        "lg": {
-          "value": "20px",
-          "name": "Font Size LG"
+        "20": {
+          "value": "1,25rem",
+          "name": "Font Size 20"
         },
-        "xl": {
-          "value": "24px",
-          "name": "Font Size XL"
+        "23": {
+          "value": "1,4375rem",
+          "name": "Font Size 23"
         },
-        "2xl": {
-          "value": "32px",
-          "name": "Font Size 2XL"
+        "24": {
+          "value": "1,5rem",
+          "name": "Font Size 24"
         },
-        "3xl": {
-          "value": "48px",
-          "name": "Font Size 3XL"
+        "28": {
+          "value": "1,75rem",
+          "name": "Font Size 28"
+        },
+        "32": {
+          "value": "2rem",
+          "name": "Font Size 32"
+        },
+        "36": {
+          "value": "2,25rem",
+          "name": "Font Size 36"
+        },
+        "48": {
+          "value": "3rem",
+          "name": "Font Size 48"
         }
       },
       "weight": {
