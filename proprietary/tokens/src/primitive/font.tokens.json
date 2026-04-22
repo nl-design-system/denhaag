@@ -54,9 +54,9 @@
         }
       },
       "weight": {
-        "default": {
+        "regular": {
           "value": "400",
-          "name": "Font Weight Default"
+          "name": "Font Weight Regular"
         },
         "bold": {
           "value": "700",
