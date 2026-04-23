@@ -74,7 +74,7 @@
     "postcss-discard-duplicates": "7.0.2",
     "prettier": "3.7.4",
     "rimraf": "6.1.2",
-    "rollup": "4.53.3",
+    "rollup": "4.59.0",
     "rollup-plugin-node-externals": "8.1.2",
     "rollup-plugin-peer-deps-external": "2.2.4",
     "rollup-plugin-postcss": "4.0.2",
