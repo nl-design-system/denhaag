@@ -1,18 +1,18 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 import tokens from '../../../../proprietary/tokens/dist/index.json';
-import { Stories, Title } from '@storybook/addon-docs/blocks';
+import { Title, Stories } from '@storybook/addon-docs/blocks';
 import React from 'react';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
 import { path2css } from '../denhaag/util';
 
-type StoryType = StoryObj<typeof meta>;
+type Story = StoryObj<typeof meta>;
 type Tokens = typeof tokens;
-type LetterSpacingTokens = Tokens['denhaag']['letter-spacing'];
+type FontWeightTokens = Tokens['denhaag']['font-weight'];
 
-const letterSpacingTokens: LetterSpacingTokens = tokens['denhaag']['letter-spacing'];
+const fontWeightTokens: FontWeightTokens = tokens['denhaag']['font-weight'];
 
 const meta: Meta = {
-  title: 'Primitive Tokens/Letter Spacing',
+  title: 'Primitive Tokens/Font Weight',
   tags: ['autodocs', '!dev'],
   component: Paragraph,
   args: {
@@ -25,7 +25,7 @@ const meta: Meta = {
       canvas: { sourceState: 'none' },
       page: () => (
         <>
-          <Title>Letter Spacing</Title>
+          <Title>Font Weight</Title>
           <Stories title={<></>} />
         </>
       ),
@@ -35,28 +35,54 @@ const meta: Meta = {
 
 export default meta;
 
-export const Normal: StoryType = {
+export const Regular: Story = {
   parameters: {
     docs: {
       description: {
-        story: path2css(letterSpacingTokens.normal.path),
+        story: path2css(fontWeightTokens.regular.path),
       },
     },
   },
   args: {
-    style: { letterSpacing: letterSpacingTokens.normal.value },
+    style: { fontWeight: fontWeightTokens.regular.value },
   },
 };
 
-export const Wide: StoryType = {
+export const Medium: Story = {
   parameters: {
     docs: {
       description: {
-        story: path2css(letterSpacingTokens.wide.path),
+        story: path2css(fontWeightTokens.medium.path),
       },
     },
   },
   args: {
-    style: { letterSpacing: letterSpacingTokens.wide.value },
+    style: { fontWeight: fontWeightTokens.medium.value },
+  },
+};
+
+export const Semibold: Story = {
+  parameters: {
+    docs: {
+      description: {
+        story: path2css(fontWeightTokens.semibold.path),
+      },
+    },
+  },
+  args: {
+    style: { fontWeight: fontWeightTokens.semibold.value },
+  },
+};
+
+export const Bold: Story = {
+  parameters: {
+    docs: {
+      description: {
+        story: path2css(fontWeightTokens.bold.path),
+      },
+    },
+  },
+  args: {
+    style: { fontWeight: fontWeightTokens.bold.value },
   },
 };
