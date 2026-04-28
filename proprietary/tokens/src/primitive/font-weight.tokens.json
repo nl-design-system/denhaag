@@ -1,0 +1,22 @@
+{
+  "denhaag": {
+    "font-weight": {
+      "regular": {
+        "value": "400",
+        "name": "Regular"
+      },
+      "medium": {
+        "value": "500",
+        "name": "Medium"
+      },
+      "semibold": {
+        "value": "600",
+        "name": "Semibold"
+      },
+      "bold": {
+        "value": "700",
+        "name": "Bold"
+      }
+    }
+  }
+}
