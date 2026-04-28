@@ -1,0 +1,34 @@
+{
+  "basis": {
+    "text": {
+      "font-size": {
+        "xs": {
+          "value": "{denhaag.font-size.12}"
+        },
+        "sm": {
+          "value": "{denhaag.font-size.14}"
+        },
+        "md": {
+          "value": "{denhaag.font-size.18}"
+        },
+        "lg": {
+          "value": "{denhaag.font-size.20}"
+        },
+        "xl": {
+          "value": "{denhaag.font-size.23}"
+        },
+        "2xl": {
+          "value": "{denhaag.font-size.28}"
+        },
+        "3xl": {
+          "value": "{denhaag.font-size.36}"
+        }
+      }
+    }
+  },
+  "form-control": {
+    "font-size": {
+      "value": "{denhaag.font-size.18}"
+    }
+  }
+}
