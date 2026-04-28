@@ -1,0 +1,14 @@
+{
+  "denhaag": {
+    "font-family": {
+      "text": {
+        "value": "\"TheSans\", sans-serif",
+        "name": "Font Family Text"
+      },
+      "heading": {
+        "value": "\"TheMix\", sans-serif",
+        "name": "Font Family Heading"
+      }
+    }
+  }
+}
