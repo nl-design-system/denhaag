@@ -1,0 +1,19 @@
+{
+  "basis": {
+    "text": {
+      "font-family": {
+        "value": "{denhaag.font-family.text}"
+      }
+    },
+    "heading": {
+      "font-family": {
+        "value": "{denhaag.font-family.heading}"
+      }
+    },
+    "form-control": {
+      "font-family": {
+        "value": "{denhaag.font-family.text}"
+      }
+    }
+  }
+}
