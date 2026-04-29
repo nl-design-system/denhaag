@@ -9,15 +9,15 @@
       "400": { "value": "16px", "name": "Size 400" },
       "500": { "value": "20px", "name": "Size 500" },
       "600": { "value": "24px", "name": "Size 600" },
-      "800": { "value": "40px", "name": "Size 800" },
-      "1000": { "value": "56px", "name": "Size 1000" },
-      "1200": { "value": "72px", "name": "Size 1200" },
-      "1400": { "value": "88px", "name": "Size 1400" },
-      "1600": { "value": "104px", "name": "Size 1600" },
-      "1800": { "value": "120px", "name": "Size 1800" },
-      "2000": { "value": "136px", "name": "Size 2000" },
-      "2400": { "value": "168px", "name": "Size 2400" },
-      "4000": { "value": "224px", "name": "Size 4000" }
+      "800": { "value": "32px", "name": "Size 800" },
+      "1000": { "value": "40px", "name": "Size 1000" },
+      "1200": { "value": "48px", "name": "Size 1200" },
+      "1400": { "value": "56px", "name": "Size 1400" },
+      "1600": { "value": "64px", "name": "Size 1600" },
+      "1800": { "value": "72px", "name": "Size 1800" },
+      "2000": { "value": "80px", "name": "Size 2000" },
+      "2400": { "value": "96px", "name": "Size 2400" },
+      "4000": { "value": "160px", "name": "Size 4000" }
     }
   }
 }

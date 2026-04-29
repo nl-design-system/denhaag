@@ -2,7 +2,12 @@
   "basis": {
     "text": {
       "font-family": {
-        "value": "{denhaag.font-family.text}"
+        "default": {
+          "value": "{denhaag.font-family.text}"
+        },
+        "monospace": {
+          "value": "{denhaag.font-family.text}"
+        }
       }
     },
     "heading": {
