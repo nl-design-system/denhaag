@@ -23,5 +23,8 @@
   },
   "devDependencies": {
     "rollup-plugin-copy": "3.5.0"
+  },
+  "publishConfig": {
+    "provenance": true
   }
 }

@@ -45,5 +45,8 @@
     "@utrecht/link-css": "2.0.1",
     "@utrecht/table-css": "2.0.1",
     "rollup-plugin-copy": "3.5.0"
+  },
+  "publishConfig": {
+    "provenance": true
   }
 }

@@ -41,5 +41,8 @@
   "devDependencies": {
     "@nl-design-system/tsconfig": "1.0.5",
     "@rollup/plugin-typescript": "12.3.0"
+  },
+  "publishConfig": {
+    "provenance": true
   }
 }
