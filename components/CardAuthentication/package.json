@@ -38,6 +38,7 @@
     "@gemeente-denhaag/link": "workspace:*"
   },
   "publishConfig": {
+    "access": "public",
     "provenance": true
   }
 }

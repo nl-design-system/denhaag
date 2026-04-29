@@ -43,6 +43,7 @@
     "@rollup/plugin-typescript": "12.3.0"
   },
   "publishConfig": {
+    "access": "public",
     "provenance": true
   }
 }

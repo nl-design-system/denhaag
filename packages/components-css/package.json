@@ -84,6 +84,7 @@
     "@gemeente-denhaag/unorderedlist": "workspace:*"
   },
   "publishConfig": {
+    "access": "public",
     "provenance": true
   }
 }

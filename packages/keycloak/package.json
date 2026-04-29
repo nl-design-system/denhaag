@@ -27,6 +27,7 @@
     "@utrecht/document-css": "2.0.1"
   },
   "publishConfig": {
+    "access": "public",
     "provenance": true
   }
 }

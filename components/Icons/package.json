@@ -43,6 +43,7 @@
     "react-dom": "18 || 19"
   },
   "publishConfig": {
+    "access": "public",
     "provenance": true
   }
 }

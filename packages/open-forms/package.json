@@ -47,6 +47,7 @@
     "rollup-plugin-copy": "3.5.0"
   },
   "publishConfig": {
+    "access": "public",
     "provenance": true
   }
 }
