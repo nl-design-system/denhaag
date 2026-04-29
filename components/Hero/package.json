@@ -32,5 +32,8 @@
   },
   "devDependencies": {
     "@gemeente-denhaag/heading": "workspace:*"
+  },
+  "publishConfig": {
+    "provenance": true
   }
 }

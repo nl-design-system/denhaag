@@ -32,5 +32,8 @@
   },
   "dependencies": {
     "@gemeente-denhaag/card-authentication": "workspace:*"
+  },
+  "publishConfig": {
+    "provenance": true
   }
 }

@@ -82,5 +82,8 @@
     "@gemeente-denhaag/text-input": "workspace:*",
     "@gemeente-denhaag/textarea": "workspace:*",
     "@gemeente-denhaag/unorderedlist": "workspace:*"
+  },
+  "publishConfig": {
+    "provenance": true
   }
 }
