@@ -39,7 +39,7 @@ const meta: Meta = {
       canvas: { sourceState: 'none' },
       page: () => (
         <>
-          <Title>Font Size</Title>
+          <Title />
           <Stories title={<></>} />
         </>
       ),

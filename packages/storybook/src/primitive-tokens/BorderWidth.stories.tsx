@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 import tokens from '../../../../proprietary/tokens/dist/index.json';
-import { Subtitle, Title } from '@storybook/addon-docs/blocks';
+import { Title } from '@storybook/addon-docs/blocks';
 import React from 'react';
 import { path2css } from '../denhaag/util';
 
@@ -23,8 +23,7 @@ const meta: Meta = {
     docs: {
       page: () => (
         <>
-          <Title>Border</Title>
-          <Subtitle>Width</Subtitle>
+          <Title />
           <table>
             <thead>
               <tr>

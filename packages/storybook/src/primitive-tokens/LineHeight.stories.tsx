@@ -25,7 +25,7 @@ const meta: Meta = {
       canvas: { sourceState: 'none' },
       page: () => (
         <>
-          <Title>Line Height</Title>
+          <Title />
           <Stories title={<></>} />
         </>
       ),
