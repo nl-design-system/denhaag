@@ -30,20 +30,14 @@ const meta: Meta = {
               }
             `}
           </style>
-          <Title>Fonts</Title>
-          <p>
-            {fontFamilyTokens.text.value}
-            <br />
-            {path2css(fontFamilyTokens.text.path)}
-          </p>
+          <Title />
+          <h3>{fontFamilyTokens.text.value}</h3>
+          <p>{path2css(fontFamilyTokens.text.path)}</p>
           <div className="font-typeset-aligned" style={{ fontFamily: fontFamilyTokens.text.value }}>
             <Typeset fontFamily={fontFamilyTokens.text.value} fontSizes={fontSizes} />
           </div>
-          <p>
-            {fontFamilyTokens.heading.value}
-            <br />
-            {path2css(fontFamilyTokens.heading.path)}
-          </p>
+          <h3>{fontFamilyTokens.heading.value}</h3>
+          <p>{path2css(fontFamilyTokens.heading.path)}</p>
           <div className="font-typeset-aligned" style={{ fontFamily: fontFamilyTokens.heading.value }}>
             <Typeset fontFamily={fontFamilyTokens.heading.value} fontSizes={fontSizes} />
           </div>
