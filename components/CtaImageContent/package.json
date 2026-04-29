@@ -33,5 +33,9 @@
   "dependencies": {
     "@gemeente-denhaag/button": "workspace:*",
     "@gemeente-denhaag/icons": "workspace:*"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
   }
 }

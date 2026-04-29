@@ -36,5 +36,9 @@
     "@gemeente-denhaag/button-group": "workspace:*",
     "@gemeente-denhaag/card": "workspace:*",
     "@gemeente-denhaag/link": "workspace:*"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
   }
 }
