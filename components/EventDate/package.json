@@ -30,5 +30,8 @@
     "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\"",
     "typecheck": "tsc --noEmit"
   },
-  "gitHead": ""
+  "gitHead": "",
+  "publishConfig": {
+    "provenance": true
+  }
 }
