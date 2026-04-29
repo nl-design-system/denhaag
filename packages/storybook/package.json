@@ -140,6 +140,7 @@
     "vite": "8.0.16"
   },
   "publishConfig": {
+    "access": "public",
     "provenance": true
   }
 }
