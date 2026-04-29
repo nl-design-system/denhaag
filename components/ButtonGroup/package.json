@@ -30,6 +30,7 @@
     "directory": "components/ButtonGroup"
   },
   "publishConfig": {
+    "access": "public",
     "provenance": true
   }
 }
