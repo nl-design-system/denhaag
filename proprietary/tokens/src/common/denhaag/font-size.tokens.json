@@ -24,11 +24,11 @@
           "value": "{denhaag.font-size.36}"
         }
       }
-    }
-  },
-  "form-control": {
-    "font-size": {
-      "value": "{denhaag.font-size.18}"
+    },
+    "form-control": {
+      "font-size": {
+        "value": "{denhaag.font-size.18}"
+      }
     }
   }
 }
