@@ -24,11 +24,11 @@
           "value": "{denhaag.line-height.single}"
         }
       }
-    }
-  },
-  "form-control": {
-    "line-height": {
-      "value": "{denhaag.line-height.double}"
+    },
+    "form-control": {
+      "line-height": {
+        "value": "{denhaag.line-height.double}"
+      }
     }
   }
 }

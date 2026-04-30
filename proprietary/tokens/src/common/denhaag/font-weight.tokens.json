@@ -2,7 +2,12 @@
   "basis": {
     "text": {
       "font-weight": {
-        "value": "{denhaag.font-weight.regular}"
+        "default": {
+          "value": "{denhaag.font-weight.regular}"
+        },
+        "bold": {
+          "value": "{denhaag.font-weight.bold}"
+        }
       }
     },
     "heading": {
