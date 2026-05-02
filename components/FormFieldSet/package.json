@@ -31,7 +31,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@utrecht/fieldset-react": "1.0.10",
+    "@utrecht/fieldset-react": "1.0.12",
     "@utrecht/form-fieldset-css": "2.0.1"
   },
   "peerDependencies": {

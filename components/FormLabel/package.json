@@ -33,7 +33,7 @@
   "dependencies": {
     "@utrecht/focus-ring-css": "3.0.1",
     "@utrecht/form-label-css": "2.0.1",
-    "@utrecht/form-label-react": "1.0.10"
+    "@utrecht/form-label-react": "1.0.11"
   },
   "peerDependencies": {
     "react": "18 || 19",
