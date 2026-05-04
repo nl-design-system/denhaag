@@ -6,7 +6,7 @@
       },
       "font": {
         "family": {
-          "value": "{denhaag.typography.sans-serif.font-family}"
+          "value": "{basis.text.font-family.default}"
         },
         "size": {
           "value": "1.125rem"

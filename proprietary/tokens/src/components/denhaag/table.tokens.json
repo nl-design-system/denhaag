@@ -6,7 +6,7 @@
       "border-spacing": { "value": "0" },
       "cell": {
         "color": { "value": "{denhaag.color.grey.4}" },
-        "font-weight": { "value": "{denhaag.typography.weight.regular}" },
+        "font-weight": { "value": "{basis.text.font-weight.default}" },
         "gap": {
           "value": "{denhaag.space.block.2xs}"
         },

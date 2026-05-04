@@ -10,10 +10,10 @@
       },
       "item": {
         "font-family": {
-          "value": "{denhaag.typography.sans-serif.font-family}"
+          "value": "{basis.text.font-family.default}"
         },
-        "font-size": { "value": "{denhaag.typography.scale.base.font-size}" },
-        "font-weight": { "value": "{denhaag.typography.weight.regular}" },
+        "font-size": { "value": "{basis.text.font-size.md}" },
+        "font-weight": { "value": "{basis.text.font-weight.default}" },
         "height": { "value": "48px" },
         "line-height": { "value": "1.5" },
         "margin-block-start": { "value": "0" },
@@ -33,7 +33,7 @@
         },
         "active": {
           "color": { "value": "{denhaag.color.green.3}" },
-          "font-weight": { "value": "{denhaag.typography.weight.bold}" }
+          "font-weight": { "value": "{basis.text.font-weight.bold}" }
         }
       }
     }

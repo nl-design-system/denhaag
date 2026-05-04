@@ -3,9 +3,9 @@
     "heading-1": {
       "color": {},
       "font-family": { "value": "{utrecht.heading.font-family}" },
-      "font-size": { "value": "{denhaag.typography.scale.3xl.font-size}" },
+      "font-size": { "value": "{basis.text.font-size.3xl}" },
       "font-weight": {},
-      "line-height": { "value": "{denhaag.typography.scale.3xl.line-height}" },
+      "line-height": { "value": "{basis.text.line-height.3xl}" },
       "margin-block-end": {},
       "margin-block-start": {}
     }

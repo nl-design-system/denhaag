@@ -25,14 +25,14 @@
         "margin-block-start": { "value": "initial" },
         "margin-block-end": { "value": "{denhaag.space.block.xs}" },
         "small": {
-          "font-size": { "value": "{denhaag.typography.scale.xl.font-size}" }
+          "font-size": { "value": "{basis.text.font-size.xl}" }
         }
       },
       "text": {
-        "font-size": { "value": "{denhaag.typography.scale.xl.font-size}" },
+        "font-size": { "value": "{basis.text.font-size.xl}" },
         "line-height": { "value": "1.3" },
         "small": {
-          "font-size": { "value": "{denhaag.typography.scale.lg.font-size}" }
+          "font-size": { "value": "{basis.text.font-size.lg}" }
         }
       },
       "button": {

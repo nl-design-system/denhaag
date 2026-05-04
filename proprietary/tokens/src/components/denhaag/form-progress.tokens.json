@@ -8,9 +8,9 @@
       },
       "label": {
         "color": { "value": "{denhaag.color.grey.4}" },
-        "font-weight": { "value": "{denhaag.typography.weight.regular}" },
-        "font-size": { "value": "{denhaag.typography.scale.base.font-size}" },
-        "font-family": { "value": "{denhaag.typography.sans-serif.font-family}" }
+        "font-weight": { "value": "{basis.text.font-weight.default}" },
+        "font-size": { "value": "{basis.text.font-size.md}" },
+        "font-family": { "value": "{basis.text.font-family.default}" }
       },
       "progress": {
         "height": {

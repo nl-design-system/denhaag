@@ -6,7 +6,7 @@
       "border-radius": { "value": "{denhaag.border-radius}" },
       "border-width": { "value": "0px" },
       "color": { "value": "{denhaag.color.white}" },
-      "font-family": { "value": "{denhaag.typography.sans-serif.font-family}" },
+      "font-family": { "value": "{basis.text.font-family.default}" },
       "font-size": {},
       "font-weight": {},
       "inline-size": {},

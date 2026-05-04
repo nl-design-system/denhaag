@@ -2,8 +2,8 @@
   "utrecht": {
     "heading": {
       "color": { "value": "{denhaag.heading.color}" },
-      "font-family": { "value": "{denhaag.typography.sans-serif-alternate.font-family}" },
-      "font-weight": { "value": "{denhaag.typography.weight.bold}" }
+      "font-family": { "value": "{basis.heading.font-family}" },
+      "font-weight": { "value": "{basis.text.font-weight.bold}" }
     }
   }
 }

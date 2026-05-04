@@ -3,12 +3,12 @@
     "menu-button": {
       "active": {
         "color": { "value": "{denhaag.color.green.3}" },
-        "font-weight": { "value": "{denhaag.typography.weight.bold}" }
+        "font-weight": { "value": "{basis.text.font-weight.bold}" }
       },
       "color": { "value": "{denhaag.color.grey.4}" },
-      "font-family": { "value": "{denhaag.typography.sans-serif.font-family}" },
-      "font-size": { "value": "{denhaag.typography.scale.base.font-size}" },
-      "font-weight": { "value": "{denhaag.typography.weight.regular}" },
+      "font-family": { "value": "{basis.text.font-family.default}" },
+      "font-size": { "value": "{basis.text.font-size.md}" },
+      "font-weight": { "value": "{basis.text.font-weight.default}" },
       "hover": {
         "color": { "value": "{denhaag.menu-button.active.color}" }
       },
