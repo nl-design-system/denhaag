@@ -17,7 +17,7 @@
   display: inline-flex;
   font-family: var(--denhaag-button-font-family);
   font-weight: var(--denhaag-button-font-weight, 400);
-  font-size: var(--denhaag-button-font-size, var(--denhaag-typography-scale-base-font-size));
+  font-size: var(--denhaag-button-font-size, var(--basis-text-font-size-md));
   gap: var(--denhaag-button-gap);
   justify-content: center;
   line-height: 1.5;
@@ -160,7 +160,7 @@
     var(--denhaag-button-padding-inline)
   );
 
-  font-size: var(--denhaag-button-large-size-font-size, var(--denhaag-typography-scale-lg-font-size));
+  font-size: var(--denhaag-button-large-size-font-size, var(--basis-text-font-size-lg));
   padding-block-end: var(--denhaag-button-large-size-padding-block, var(--denhaag-button-padding-block));
   padding-block-start: var(--denhaag-button-large-size-padding-block, var(--denhaag-button-padding-block));
   padding-inline-end: var(--_denhaag-button-padding-inline-end);
@@ -206,11 +206,11 @@
 }
 
 .denhaag-button__icon > *:first-child {
-  font-size: var(--denhaag-typography-scale-lg-font-size);
+  font-size: var(--basis-text-font-size-lg);
 }
 
 .denhaag-button--large .denhaag-button__icon > *:first-child {
-  font-size: var(--denhaag-typography-scale-xl-font-size);
+  font-size: var(--basis-text-font-size-xl);
 }
 
 .denhaag-button--icon-only {
