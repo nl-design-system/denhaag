@@ -13,7 +13,10 @@ type FormControlTokens = Tokens['basis']['form-control'];
 const basisTokens: TextTokens = tokens['basis']['text'];
 const headingTokens: HeadingTokens = tokens['basis']['heading'];
 const formControlTokens: FormControlTokens = tokens['basis']['form-control'];
-const fontSizes = Object.values(basisTokens['font-size']).map((size) => size.value);
+const fontSizes = Object.values(basisTokens['font-size']).map((size) => {
+  if (size.value.startsWith('clamp')) return size.value.replace('clamp(', '').replace(')', '').split(',')[0];
+  return size.value;
+});
 
 const meta: Meta = {
   title: 'Common Tokens/Font Family',
