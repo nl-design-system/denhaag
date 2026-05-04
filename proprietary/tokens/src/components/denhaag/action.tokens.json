@@ -63,7 +63,7 @@
           "value": "{denhaag.color.grey.4}"
         },
         "font-weight": {
-          "value": "{basis.text.font-weight.bold}"
+          "value": "{basis.text.font-weight.default}"
         },
         "warning": {
           "gap": {
