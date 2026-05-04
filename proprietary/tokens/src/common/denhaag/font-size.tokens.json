@@ -18,10 +18,10 @@
           "value": "clamp({denhaag.font-size.23}, 1.413rem + 0.1087vw, {denhaag.font-size.24})"
         },
         "2xl": {
-          "value": "clamp({denhaag.font-size.28}, 1.6522rem + 0.4348vw, {denhaag.font-size.32});"
+          "value": "clamp({denhaag.font-size.28}, 1.6522rem + 0.4348vw, {denhaag.font-size.32})"
         },
         "3xl": {
-          "value": "clamp({denhaag.font-size.36}, 1.9565rem + 1.3043vw, {denhaag.font-size.48});"
+          "value": "clamp({denhaag.font-size.36}, 1.9565rem + 1.3043vw, {denhaag.font-size.48})"
         }
       }
     },
