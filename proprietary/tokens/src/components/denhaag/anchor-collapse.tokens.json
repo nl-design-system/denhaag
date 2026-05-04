@@ -46,13 +46,13 @@
         },
         "font": {
           "family": {
-            "value": "{denhaag.typography.sans-serif.font-family}"
+            "value": "{basis.text.font-family.default}"
           },
           "size": {
-            "value": "{denhaag.typography.scale.lg.font-size}"
+            "value": "{basis.text.font-size.lg}"
           },
           "weight": {
-            "value": "{denhaag.typography.weight.bold}"
+            "value": "{basis.text.font-weight.bold}"
           }
         },
         "text-align": {

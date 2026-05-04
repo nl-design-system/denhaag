@@ -2,7 +2,7 @@
   "utrecht": {
     "form-label": {
       "color": { "value": "{denhaag.color.grey.4}" },
-      "font-weight": { "value": "{denhaag.typography.weight.bold}" },
+      "font-weight": { "value": "{basis.text.font-weight.bold}" },
       "font-size": { "value": "{utrecht.document.font-size}" },
       "checkbox": {
         "color": { "value": "{denhaag.color.grey.4}" },

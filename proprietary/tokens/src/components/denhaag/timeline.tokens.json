@@ -1,8 +1,8 @@
 {
   "denhaag": {
     "timeline": {
-      "font-family": { "value": "{denhaag.typography.sans-serif.font-family}" },
-      "font-size": { "value": "{denhaag.typography.scale.base.font-size}" },
+      "font-family": { "value": "{basis.text.font-family.default}" },
+      "font-size": { "value": "{basis.text.font-size.md}" },
       "line-height": { "value": "24px" },
       "step-icon": {
         "color": { "value": "{denhaag.color.grey.3}" },
@@ -47,7 +47,7 @@
         "margin": { "value": "12px" }
       },
       "step-icon-text": {
-        "font-size": { "value": "{denhaag.typography.scale.s.font-size}" }
+        "font-size": { "value": "{basis.text.font-size.sm}" }
       },
       "step": {
         "outline-offset": { "value": "2px" },

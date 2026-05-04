@@ -11,7 +11,7 @@
         "margin-block-start": { "value": "{denhaag.space.block.2xl}" }
       },
       "list-item": {
-        "font-weight": { "value": "{denhaag.typography.weight.regular}" }
+        "font-weight": { "value": "{basis.text.font-weight.default}" }
       }
     }
   }

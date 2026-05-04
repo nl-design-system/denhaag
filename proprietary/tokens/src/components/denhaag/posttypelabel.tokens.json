@@ -3,9 +3,9 @@
     "posttypelabel": {
       "color": { "value": "{denhaag.color.blue.3}" },
       "font": {
-        "family": { "value": "{denhaag.typography.sans-serif.font-family}" },
+        "family": { "value": "{basis.text.font-family.default}" },
         "weight": { "value": "700" },
-        "size": { "value": "{denhaag.typography.scale.s.font-size}" }
+        "size": { "value": "{basis.text.font-size.sm}" }
       },
       "line-height": { "value": "1.5" },
       "letter-spacing": { "value": "1px" },

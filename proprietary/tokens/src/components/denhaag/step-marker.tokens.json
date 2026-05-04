@@ -2,9 +2,9 @@
   "denhaag": {
     "step-marker": {
       "border-width": { "value": "2px" },
-      "font-family": { "value": "{denhaag.typography.sans-serif.font-family}" },
+      "font-family": { "value": "{basis.text.font-family.default}" },
       "font-weight": { "value": "400" },
-      "font-size": { "value": "{denhaag.typography.scale.s.font-size}" },
+      "font-size": { "value": "{basis.text.font-size.sm}" },
       "margin": { "value": "0" },
       "padding": { "value": "12px" },
       "size": { "value": "32px" },

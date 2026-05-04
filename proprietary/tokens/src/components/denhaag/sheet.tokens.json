@@ -12,7 +12,7 @@
       "z-index": { "value": "3" },
       "title": {
         "font-size": { "value": "18px" },
-        "font-weight": { "value": "{denhaag.typography.weight.bold}" },
+        "font-weight": { "value": "{basis.text.font-weight.bold}" },
         "margin-block-end": { "value": "16px" }
       },
       "desktop": {

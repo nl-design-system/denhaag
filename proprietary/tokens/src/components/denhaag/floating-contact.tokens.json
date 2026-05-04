@@ -22,17 +22,17 @@
       "heading": {
         "font": {
           "family": {
-            "value": "{denhaag.typography.sans-serif-alternate.font-family}"
+            "value": "{basis.heading.font-family}"
           },
           "size": {
-            "value": "{denhaag.typography.scale.2xl.font-size}"
+            "value": "{basis.text.font-size.2xl}"
           },
           "weight": {
-            "value": "{denhaag.typography.weight.bold}"
+            "value": "{basis.text.font-weight.bold}"
           }
         },
         "line-height": {
-          "value": "{denhaag.typography.scale.base.line-height}"
+          "value": "{basis.text.line-height.md}"
         }
       },
       "item": {
@@ -55,17 +55,17 @@
         },
         "font": {
           "family": {
-            "value": "{denhaag.typography.sans-serif.font-family}"
+            "value": "{basis.text.font-family.default}"
           },
           "size": {
-            "value": "{denhaag.typography.scale.base.font-size}"
+            "value": "{basis.text.font-size.md}"
           },
           "weight": {
-            "value": "{denhaag.typography.weight.regular}"
+            "value": "{basis.text.font-weight.default}"
           }
         },
         "line-height": {
-          "value": "{denhaag.typography.scale.base.line-height}"
+          "value": "{basis.text.line-height.md}"
         },
         "outline": {
           "style": {
@@ -82,7 +82,7 @@
         "hover": {
           "font": {
             "weight": {
-              "value": "{denhaag.typography.weight.bold}"
+              "value": "{basis.text.font-weight.bold}"
             }
           }
         }
@@ -120,13 +120,13 @@
         },
         "font": {
           "family": {
-            "value": "{denhaag.typography.sans-serif.font-family}"
+            "value": "{basis.text.font-family.default}"
           },
           "size": {
-            "value": "{denhaag.typography.scale.base.font-size}"
+            "value": "{basis.text.font-size.md}"
           },
           "weight": {
-            "value": "{denhaag.typography.weight.bold}"
+            "value": "{basis.text.font-weight.bold}"
           }
         },
         "gap": {
