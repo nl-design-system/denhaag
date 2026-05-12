@@ -39,7 +39,7 @@ export const Regular: Story = {
   parameters: {
     docs: {
       description: {
-        story: path2css(fontWeightTokens.regular.path),
+        story: `${fontWeightTokens.regular.value}<br />${path2css(fontWeightTokens.regular.path)}`,
       },
     },
   },
@@ -52,7 +52,7 @@ export const Medium: Story = {
   parameters: {
     docs: {
       description: {
-        story: path2css(fontWeightTokens.medium.path),
+        story: `${fontWeightTokens.medium.value}<br />${path2css(fontWeightTokens.medium.path)}`,
       },
     },
   },
@@ -65,7 +65,7 @@ export const Semibold: Story = {
   parameters: {
     docs: {
       description: {
-        story: path2css(fontWeightTokens.semibold.path),
+        story: `${fontWeightTokens.semibold.value}<br />${path2css(fontWeightTokens.semibold.path)}`,
       },
     },
   },
@@ -78,7 +78,7 @@ export const Bold: Story = {
   parameters: {
     docs: {
       description: {
-        story: path2css(fontWeightTokens.bold.path),
+        story: `${fontWeightTokens.bold.value}<br />${path2css(fontWeightTokens.bold.path)}`,
       },
     },
   },

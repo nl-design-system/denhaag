@@ -22,6 +22,9 @@
         },
         "3xl": {
           "value": "{denhaag.letter-spacing.normal}"
+        },
+        "4xl": {
+          "value": "{denhaag.letter-spacing.normal}"
         }
       }
     }

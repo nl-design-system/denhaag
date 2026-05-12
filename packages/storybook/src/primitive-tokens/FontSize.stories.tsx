@@ -16,7 +16,7 @@ const createFontSizeStory = (token: FontSizeTokens[keyof FontSizeTokens], name: 
   parameters: {
     docs: {
       description: {
-        story: `rem ${token.value}<br />${path2css(token.path)}`,
+        story: `${token.value}<br />${path2css(token.path)}`,
       },
     },
   },

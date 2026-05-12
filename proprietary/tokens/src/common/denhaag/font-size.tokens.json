@@ -22,6 +22,9 @@
         },
         "3xl": {
           "value": "clamp({denhaag.font-size.36}, 1.9565rem + 1.3043vw, {denhaag.font-size.48})"
+        },
+        "4xl": {
+          "value": "clamp({denhaag.font-size.36}, 1.9565rem + 1.3043vw, {denhaag.font-size.48})"
         }
       }
     },

@@ -39,7 +39,7 @@ export const Normal: StoryType = {
   parameters: {
     docs: {
       description: {
-        story: path2css(letterSpacingTokens.normal.path),
+        story: `${letterSpacingTokens.normal.value}<br />${path2css(letterSpacingTokens.normal.path)}`,
       },
     },
   },
@@ -52,7 +52,7 @@ export const Wide: StoryType = {
   parameters: {
     docs: {
       description: {
-        story: path2css(letterSpacingTokens.wide.path),
+        story: `${letterSpacingTokens.wide.value}<br />${path2css(letterSpacingTokens.wide.path)}`,
       },
     },
   },

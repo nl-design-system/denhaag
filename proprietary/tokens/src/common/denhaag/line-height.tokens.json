@@ -22,6 +22,9 @@
         },
         "3xl": {
           "value": "{denhaag.line-height.single}"
+        },
+        "4xl": {
+          "value": "{denhaag.line-height.single}"
         }
       }
     },

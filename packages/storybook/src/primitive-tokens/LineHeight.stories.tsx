@@ -39,7 +39,7 @@ export const Single: Story = {
   parameters: {
     docs: {
       description: {
-        story: path2css(lineHeightTokens.single.path),
+        story: `${lineHeightTokens.single.value}<br />${path2css(lineHeightTokens.single.path)}`,
       },
     },
   },
@@ -52,7 +52,7 @@ export const Double: Story = {
   parameters: {
     docs: {
       description: {
-        story: path2css(lineHeightTokens.double.path),
+        story: `${lineHeightTokens.double.value}<br />${path2css(lineHeightTokens.double.path)}`,
       },
     },
   },
