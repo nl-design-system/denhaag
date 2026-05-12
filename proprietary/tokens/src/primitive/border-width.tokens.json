@@ -1,0 +1,10 @@
+{
+  "denhaag": {
+    "border-width": {
+      "none": { "value": "0px", "name": "Border width 0px" },
+      "thin": { "value": "0.5px", "name": "Border width 0.5px" },
+      "standaard": { "value": "1px", "name": "Border width 1px" },
+      "bold": { "value": "2px", "name": "Border width 2px" }
+    }
+  }
+}

@@ -3,6 +3,7 @@ import tokens from '../../../../proprietary/tokens/dist/index.json';
 import { Title, Stories } from '@storybook/addon-docs/blocks';
 import React from 'react';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
+import { path2css } from '../denhaag/util';
 
 type Story = StoryObj<typeof meta>;
 type Tokens = typeof tokens;
@@ -24,7 +25,7 @@ const meta: Meta = {
       canvas: { sourceState: 'none' },
       page: () => (
         <>
-          <Title>Line Height</Title>
+          <Title />
           <Stories title={<></>} />
         </>
       ),
@@ -35,12 +36,26 @@ const meta: Meta = {
 export default meta;
 
 export const Single: Story = {
+  parameters: {
+    docs: {
+      description: {
+        story: `${lineHeightTokens.single.value}<br />${path2css(lineHeightTokens.single.path)}`,
+      },
+    },
+  },
   args: {
     style: { lineHeight: lineHeightTokens.single.value },
   },
 };
 
 export const Double: Story = {
+  parameters: {
+    docs: {
+      description: {
+        story: `${lineHeightTokens.double.value}<br />${path2css(lineHeightTokens.double.path)}`,
+      },
+    },
+  },
   args: {
     style: { lineHeight: lineHeightTokens.double.value },
   },

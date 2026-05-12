@@ -11,7 +11,7 @@
         "value": "{denhaag.color.white}"
       },
       "font-family": {
-        "value": "{denhaag.typography.sans-serif.font-family}"
+        "value": "{basis.text.font-family.default}"
       },
       "border-radius": {
         "value": "0"
@@ -34,7 +34,7 @@
       "content": {
         "bold": {
           "font-weight": {
-            "value": "{denhaag.typography.weight.semibold}"
+            "value": "{basis.text.font-weight.bold}"
           }
         }
       },
@@ -63,7 +63,7 @@
           "value": "{denhaag.color.grey.4}"
         },
         "font-weight": {
-          "value": "{denhaag.typography.weight.medium}"
+          "value": "{basis.text.font-weight.default}"
         },
         "warning": {
           "gap": {
@@ -73,7 +73,7 @@
             "value": "{denhaag.color.orange.5}"
           },
           "font-weight": {
-            "value": "{denhaag.typography.weight.semibold}"
+            "value": "{basis.text.font-weight.bold}"
           }
         }
       },

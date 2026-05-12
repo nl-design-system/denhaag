@@ -46,7 +46,7 @@
           "sender": {
             "font": {
               "weight": {
-                "value": "{denhaag.typography.weight.semibold}"
+                "value": "{basis.text.font-weight.bold}"
               },
               "size": { "value": "18px" }
             },

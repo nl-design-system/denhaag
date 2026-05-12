@@ -15,13 +15,13 @@
       },
       "font": {
         "family": {
-          "value": "{denhaag.typography.sans-serif.font-family}"
+          "value": "{basis.text.font-family.default}"
         },
         "size": {
           "value": "1.125rem"
         },
         "weight": {
-          "value": "{denhaag.typography.weight.regular}"
+          "value": "{basis.text.font-weight.default}"
         }
       },
       "line-height": {
@@ -43,13 +43,13 @@
         },
         "font": {
           "family": {
-            "value": "{denhaag.typography.sans-serif-alternate.font-family}"
+            "value": "{basis.heading.font-family}"
           },
           "size": {
-            "value": "{denhaag.typography.scale.xl.font-size}"
+            "value": "{basis.text.font-size.xl}"
           },
           "weight": {
-            "value": "{denhaag.typography.weight.bold}"
+            "value": "{basis.text.font-weight.bold}"
           }
         },
         "line-height": {
@@ -78,7 +78,7 @@
           "value": "{denhaag.color.grey.5}"
         },
         "font-weight": {
-          "value": "{denhaag.typography.weight.bold}"
+          "value": "{basis.text.font-weight.bold}"
         },
         "padding": {
           "block": {

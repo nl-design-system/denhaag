@@ -12,10 +12,10 @@
       },
       "font": {
         "family": {
-          "value": "{denhaag.typography.sans-serif.font-family}"
+          "value": "{basis.text.font-family.default}"
         },
         "weight": {
-          "value": "{denhaag.typography.weight.regular}"
+          "value": "{basis.text.font-weight.default}"
         }
       },
       "gap": {
@@ -34,7 +34,7 @@
           "value": "{denhaag.color.blue.3}"
         },
         "font-weight": {
-          "value": "{denhaag.typography.weight.bold}"
+          "value": "{basis.text.font-weight.bold}"
         }
       },
       "width": {

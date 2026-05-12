@@ -1,12 +1,13 @@
 {
   "denhaag": {
     "radius": {
-      "none": { "value": "0px", "name": "Radius none" },
-      "sm": { "value": "1px", "name": "Radius small" },
-      "md": { "value": "3px", "name": "Radius medium" },
-      "lg": { "value": "5px", "name": "Radius large" },
-      "xl": { "value": "8px", "name": "Radius extra large" },
-      "full": { "value": "100%", "name": "Radius full" }
+      "none": { "value": "0px", "name": "Radius 0px" },
+      "1": { "value": "1px", "name": "Radius 1px" },
+      "2": { "value": "2px", "name": "Radius 2px" },
+      "3": { "value": "3px", "name": "Radius 3px" },
+      "5": { "value": "5px", "name": "Radius 5px" },
+      "8": { "value": "8px", "name": "Radius 8px" },
+      "full": { "value": "100%", "name": "Radius 100%" }
     }
   }
 }

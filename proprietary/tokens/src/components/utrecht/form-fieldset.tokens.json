@@ -17,14 +17,14 @@
       "legend": {
         "color": { "value": "{denhaag.color.grey.5}" },
         "font-family": {
-          "value": "{denhaag.typography.sans-serif-alternate.font-family}"
+          "value": "{basis.heading.font-family}"
         },
         "font-size": {
-          "value": "{denhaag.typography.scale.base.font-size}"
+          "value": "{basis.text.font-size.md}"
         },
-        "font-weight": { "value": "{denhaag.typography.weight.bold}" },
+        "font-weight": { "value": "{basis.text.font-weight.bold}" },
         "line-height": {
-          "value": "{denhaag.typography.scale.base.line-height}"
+          "value": "{basis.text.line-height.md}"
         },
         "margin-block-end": { "value": "8px" },
         "margin-block-start": {},

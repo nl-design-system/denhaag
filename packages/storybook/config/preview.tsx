@@ -53,6 +53,7 @@ const preview: Preview = {
           'Den Haag',
           ['Introduction', 'License', 'Release strategy'],
           'Primitive Tokens',
+          'Common Tokens',
           'Templates',
           ['Login', 'Overview', 'Zaak Overzicht', 'Zaak Detail', 'Berichten Overzicht', 'Berichten Detail'],
           'React',

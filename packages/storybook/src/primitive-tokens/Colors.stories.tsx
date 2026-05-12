@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 import tokens from '../../../../proprietary/tokens/dist/index.json';
-import { ColorPalette, ColorItem, Title, Subtitle } from '@storybook/addon-docs/blocks';
+import { ColorPalette, ColorItem, Title } from '@storybook/addon-docs/blocks';
 import React, { Fragment } from 'react';
 
 type Story = StoryObj<typeof meta>;
@@ -49,7 +49,7 @@ const meta: Meta = {
 
             return (
               <Fragment key={color}>
-                <Subtitle>{color.charAt(0).toUpperCase() + color.slice(1)}</Subtitle>
+                <h3>{color.charAt(0).toUpperCase() + color.slice(1)}</h3>
                 <ColorPalette key={color}>{colorItems}</ColorPalette>
               </Fragment>
             );

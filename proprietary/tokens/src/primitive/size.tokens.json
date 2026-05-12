@@ -1,21 +1,23 @@
 {
   "denhaag": {
     "size": {
-      "0_125": { "value": "1px", "name": "Size 0.125" },
-      "0_25": { "value": "2px", "name": "Size 0.25" },
-      "0_5": { "value": "4px", "name": "Size 0.5" },
-      "1": { "value": "8px", "name": "Size 1" },
-      "1_5": { "value": "12px", "name": "Size 1.5" },
-      "2": { "value": "16px", "name": "Size 2" },
-      "2_5": { "value": "20px", "name": "Size 2.5" },
-      "3": { "value": "24px", "name": "Size 3" },
-      "4": { "value": "32px", "name": "Size 4" },
-      "5": { "value": "40px", "name": "Size 5" },
-      "6": { "value": "48px", "name": "Size 6" },
-      "7": { "value": "56px", "name": "Size 7" },
-      "8": { "value": "64px", "name": "Size 8" },
-      "9": { "value": "72px", "name": "Size 9" },
-      "10": { "value": "80px", "name": "Size 10" }
+      "25": { "value": "1px", "name": "Size 25" },
+      "50": { "value": "2px", "name": "Size 50" },
+      "100": { "value": "4px", "name": "Size 100" },
+      "200": { "value": "8px", "name": "Size 200" },
+      "300": { "value": "12px", "name": "Size 300" },
+      "400": { "value": "16px", "name": "Size 400" },
+      "500": { "value": "20px", "name": "Size 500" },
+      "600": { "value": "24px", "name": "Size 600" },
+      "800": { "value": "32px", "name": "Size 800" },
+      "1000": { "value": "40px", "name": "Size 1000" },
+      "1200": { "value": "48px", "name": "Size 1200" },
+      "1400": { "value": "56px", "name": "Size 1400" },
+      "1600": { "value": "64px", "name": "Size 1600" },
+      "1800": { "value": "72px", "name": "Size 1800" },
+      "2000": { "value": "80px", "name": "Size 2000" },
+      "2400": { "value": "96px", "name": "Size 2400" },
+      "4000": { "value": "160px", "name": "Size 4000" }
     }
   }
 }

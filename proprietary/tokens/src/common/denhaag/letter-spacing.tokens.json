@@ -1,0 +1,32 @@
+{
+  "basis": {
+    "text": {
+      "letter-spacing": {
+        "xs": {
+          "value": "{denhaag.letter-spacing.wide}"
+        },
+        "sm": {
+          "value": "{denhaag.letter-spacing.normal}"
+        },
+        "md": {
+          "value": "{denhaag.letter-spacing.normal}"
+        },
+        "lg": {
+          "value": "{denhaag.letter-spacing.normal}"
+        },
+        "xl": {
+          "value": "{denhaag.letter-spacing.normal}"
+        },
+        "2xl": {
+          "value": "{denhaag.letter-spacing.normal}"
+        },
+        "3xl": {
+          "value": "{denhaag.letter-spacing.normal}"
+        },
+        "4xl": {
+          "value": "{denhaag.letter-spacing.normal}"
+        }
+      }
+    }
+  }
+}

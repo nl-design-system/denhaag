@@ -4,9 +4,9 @@
       "cursor": { "value": "pointer" },
       "border-radius": { "value": "{denhaag.border-radius}" },
       "border-width": { "value": "1px" },
-      "font-family": { "value": "{denhaag.typography.sans-serif.font-family}" },
-      "font-size": { "value": "{denhaag.typography.scale.base.font-size}" },
-      "font-weight": { "value": "{denhaag.typography.weight.regular}" },
+      "font-family": { "value": "{basis.text.font-family.default}" },
+      "font-size": { "value": "{basis.text.font-size.md}" },
+      "font-weight": { "value": "{basis.text.font-weight.default}" },
       "gap": { "value": "{denhaag.space.inline.xs}" },
       "padding-block": { "value": "{denhaag.space.block.xs}" },
       "padding-inline": { "value": "{denhaag.space.inline.md}" },
@@ -52,7 +52,7 @@
         }
       },
       "large-size": {
-        "font-size": { "value": "{denhaag.typography.scale.lg.font-size}" },
+        "font-size": { "value": "{basis.text.font-size.lg}" },
         "padding-block": { "value": "0.40625rem" },
         "padding-inline": { "value": "{denhaag.space.inline.lg}" },
         "line-height": { "value": "1.75" }

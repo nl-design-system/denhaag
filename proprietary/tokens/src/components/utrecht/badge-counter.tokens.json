@@ -11,13 +11,13 @@
         "value": "{denhaag.color.blue.4}"
       },
       "font-family": {
-        "value": "{denhaag.typography.sans-serif.font-family}"
+        "value": "{basis.text.font-family.default}"
       },
       "font-weight": {
         "value": "700"
       },
       "font-size": {
-        "value": "{denhaag.typography.scale.s.font-size}"
+        "value": "{basis.text.font-size.sm}"
       },
       "padding-block": {
         "value": "5px"

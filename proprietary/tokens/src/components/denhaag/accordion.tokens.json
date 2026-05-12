@@ -2,7 +2,7 @@
   "denhaag": {
     "accordion": {
       "font-family": {
-        "value": "{denhaag.typography.sans-serif.font-family}"
+        "value": "{basis.text.font-family.default}"
       },
       "margin-block-end": { "value": "{denhaag.space.block.xl}" },
       "section": {

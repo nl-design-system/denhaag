@@ -113,13 +113,13 @@
             "value": "{denhaag.color.white}"
           },
           "line-height": {
-            "value": "{denhaag.typography.scale.s.line-height}"
+            "value": "{basis.text.line-height.sm}"
           },
           "font-size-xs": {
-            "value": "{denhaag.typography.scale.2xl.font-size}"
+            "value": "{basis.text.font-size.2xl}"
           },
           "weight": {
-            "value": "{denhaag.typography.weight.regular}"
+            "value": "{basis.text.font-weight.default}"
           },
           "margin": {
             "block": {
@@ -190,7 +190,7 @@
         },
         "title": {
           "font-size-xs": {
-            "value": "{denhaag.typography.scale.2xl.font-size}"
+            "value": "{basis.text.font-size.2xl}"
           },
           "margin": {
             "block": {
@@ -279,13 +279,13 @@
         },
         "title": {
           "padding-block-end": { "value": "{denhaag.space.block.md}" },
-          "font-size-m": { "value": "{denhaag.typography.scale.3xl.font-size}" }
+          "font-size-m": { "value": "{basis.text.font-size.3xl}" }
         },
         "text": {
-          "font-size": { "value": "{denhaag.typography.scale.lg.font-size}" },
-          "font-size-m": { "value": "{denhaag.typography.scale.xl.font-size}" },
+          "font-size": { "value": "{basis.text.font-size.lg}" },
+          "font-size-m": { "value": "{basis.text.font-size.xl}" },
           "padding-block-end": { "value": "{denhaag.space.block.2xl}" },
-          "line-height": { "value": "{denhaag.typography.scale.s.line-height}" }
+          "line-height": { "value": "{basis.text.line-height.sm}" }
         }
       }
     }

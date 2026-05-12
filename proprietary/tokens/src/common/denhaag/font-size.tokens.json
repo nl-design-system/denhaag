@@ -1,0 +1,37 @@
+{
+  "basis": {
+    "text": {
+      "font-size": {
+        "xs": {
+          "value": "{denhaag.font-size.12}"
+        },
+        "sm": {
+          "value": "{denhaag.font-size.14}"
+        },
+        "md": {
+          "value": "{denhaag.font-size.18}"
+        },
+        "lg": {
+          "value": "{denhaag.font-size.20}"
+        },
+        "xl": {
+          "value": "clamp({denhaag.font-size.23}, 1.413rem + 0.1087vw, {denhaag.font-size.24})"
+        },
+        "2xl": {
+          "value": "clamp({denhaag.font-size.28}, 1.6522rem + 0.4348vw, {denhaag.font-size.32})"
+        },
+        "3xl": {
+          "value": "clamp({denhaag.font-size.36}, 1.9565rem + 1.3043vw, {denhaag.font-size.48})"
+        },
+        "4xl": {
+          "value": "clamp({denhaag.font-size.36}, 1.9565rem + 1.3043vw, {denhaag.font-size.48})"
+        }
+      }
+    },
+    "form-control": {
+      "font-size": {
+        "value": "{denhaag.font-size.18}"
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "basis": {
+    "text": {
+      "font-weight": {
+        "default": {
+          "value": "{denhaag.font-weight.regular}"
+        },
+        "bold": {
+          "value": "{denhaag.font-weight.bold}"
+        }
+      }
+    },
+    "heading": {
+      "font-weight": {
+        "value": "{denhaag.font-weight.bold}"
+      }
+    },
+    "form-control": {
+      "font-weight": {
+        "value": "{denhaag.font-weight.regular}"
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "denhaag": {
+    "border-style": {
+      "solid": { "value": "solid", "name": "Border style solid" },
+      "dashed": { "value": "dashed", "name": "Border style dashed" }
+    }
+  }
+}

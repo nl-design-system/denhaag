@@ -16,13 +16,13 @@
           "value": "{utrecht.document.font-family}"
         },
         "font-size": {
-          "value": "{denhaag.typography.scale.s.font-size}"
+          "value": "{basis.text.font-size.sm}"
         },
         "font-weight": {
-          "value": "{denhaag.typography.weight.regular}"
+          "value": "{basis.text.font-weight.default}"
         },
         "line-height": {
-          "value": "{denhaag.typography.scale.s.line-height}"
+          "value": "{basis.text.line-height.sm}"
         },
         "error": {
           "color": {

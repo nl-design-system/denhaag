@@ -3,7 +3,7 @@
     "breadcrumb-nav": {
       "min-block-size": {},
       "font-family": {},
-      "font-size": { "value": "{denhaag.typography.scale.base.font-size}" },
+      "font-size": { "value": "{basis.text.font-size.md}" },
       "text-transform": {},
       "item": {
         "padding-block-start": {},

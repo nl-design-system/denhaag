@@ -2,14 +2,14 @@
   "nl": {
     "paragraph": {
       "color": {},
-      "font-family": { "value": "{denhaag.typography.sans-serif.font-family}" },
-      "font-size": { "value": "{denhaag.typography.scale.base.font-size}" },
-      "font-weight": { "value": "{denhaag.typography.weight.regular}" },
-      "line-height": { "value": "{denhaag.typography.scale.base.line-height}" },
+      "font-family": { "value": "{basis.text.font-family.default}" },
+      "font-size": { "value": "{basis.text.font-size.md}" },
+      "font-weight": { "value": "{basis.text.font-weight.default}" },
+      "line-height": { "value": "{basis.text.line-height.md}" },
       "lead": {
-        "font-size": { "value": "{denhaag.typography.scale.lg.font-size} " },
+        "font-size": { "value": "{basis.text.font-size.lg} " },
         "font-weight": {},
-        "line-height": { "value": "{denhaag.typography.scale.lg.line-height}" },
+        "line-height": { "value": "{basis.text.line-height.lg}" },
         "margin-block-start": {},
         "margin-block-end": {}
       },
