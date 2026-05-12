@@ -1,12 +1,10 @@
 .denhaag-file {
   width: 100%;
   display: flex;
-  color: inherit;
   font-family: inherit;
   font-size: inherit;
-  text-decoration: inherit;
   text-align: inherit;
-  cursor: pointer;
+  cursor: default;
   background: none;
   padding: 0;
   align-items: normal;
@@ -16,16 +14,10 @@
   border-width: var(--denhaag-file-border-width);
   border-color: var(--denhaag-file-border-color);
   border-style: var(--denhaag-file-border-style);
+  position: relative;
 
   & + & {
     border-top: none;
-  }
-
-  &--focus,
-  &:focus {
-    outline-color: var(--denhaag-file-focus-outline-color);
-    outline-width: var(--denhaag-file-focus-outline-width);
-    outline-style: var(--denhaag-file-focus-outline-style);
   }
 
   &__link {
@@ -34,11 +26,45 @@
     color: var(--denhaag-file-link-color);
     gap: var(--denhaag-file-link-gap);
     word-break: initial;
+    text-decoration: none;
 
     --utrecht-link-text-decoration: none;
 
     & &__icon {
       width: var(--denhaag-file-link-icon-width);
+    }
+
+    &:focus {
+      outline-color: var(--denhaag-file-focus-outline-color);
+      outline-width: var(--denhaag-file-focus-outline-width);
+      outline-style: var(--denhaag-file-focus-outline-style);
+    }
+
+    &--remove {
+      background-color: var(--denhaag-file-link-remove-background-color);
+      border-width: var(--denhaag-file-link-remove-border-width);
+      border-style: none;
+      font-family: inherit;
+      font-size: inherit;
+      padding: 0;
+      margin: 0;
+      cursor: pointer;
+
+      &:focus {
+        outline-color: var(--denhaag-file-focus-outline-color);
+        outline-width: var(--denhaag-file-focus-outline-width);
+        outline-style: var(--denhaag-file-focus-outline-style);
+      }
+    }
+  }
+
+  &:not(&--removable) {
+    .denhaag-file__link {
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+      }
     }
   }
 
@@ -58,7 +84,8 @@
     align-items: center;
     padding-inline-start: var(--denhaag-file-left-padding-inline-start);
     padding-inline-end: var(--denhaag-file-left-padding-inline-end);
-    background-color: var(--denhaag-file-left-background-color, --denhaag-color-warmgrey-1);
+    background-color: var(--denhaag-file-left-background-color);
+    border-radius: var(--denhaag-file-border-radius);
 
     .denhaag-file__icon {
       fill: none;
