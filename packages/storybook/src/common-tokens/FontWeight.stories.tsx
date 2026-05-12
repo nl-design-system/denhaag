@@ -38,11 +38,11 @@ const meta: Meta = {
 
 export default meta;
 
-export const TextRegular: Story = {
+export const Regular: Story = {
   parameters: {
     docs: {
       description: {
-        story: path2css(basisTokens['font-weight'].default.path),
+        story: `${basisTokens['font-weight'].default.value}<br />${path2css(basisTokens['font-weight'].default.path)}`,
       },
     },
   },
@@ -51,11 +51,11 @@ export const TextRegular: Story = {
   },
 };
 
-export const TextBold: Story = {
+export const Bold: Story = {
   parameters: {
     docs: {
       description: {
-        story: path2css(basisTokens['font-weight'].bold.path),
+        story: `${basisTokens['font-weight'].bold.value}<br />${path2css(basisTokens['font-weight'].bold.path)}`,
       },
     },
   },
@@ -68,7 +68,7 @@ export const Heading: Story = {
   parameters: {
     docs: {
       description: {
-        story: path2css(headingTokens['font-weight'].path),
+        story: `${headingTokens['font-weight'].value}<br />${path2css(headingTokens['font-weight'].path)}`,
       },
     },
   },
@@ -81,7 +81,7 @@ export const FormControl: Story = {
   parameters: {
     docs: {
       description: {
-        story: path2css(formControlTokens['font-weight'].path),
+        story: `${formControlTokens['font-weight'].value}<br />${path2css(formControlTokens['font-weight'].path)}`,
       },
     },
   },

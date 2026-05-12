@@ -35,11 +35,11 @@ const meta: Meta = {
 
 export default meta;
 
-export const TextXS: Story = {
+export const XS: Story = {
   parameters: {
     docs: {
       description: {
-        story: path2css(basisTokens.xs.path),
+        story: `${basisTokens.xs.value}<br />${path2css(basisTokens.xs.path)}`,
       },
     },
   },
@@ -48,11 +48,11 @@ export const TextXS: Story = {
   },
 };
 
-export const TextSM: Story = {
+export const SM: Story = {
   parameters: {
     docs: {
       description: {
-        story: path2css(basisTokens.sm.path),
+        story: `${basisTokens.sm.value}<br />${path2css(basisTokens.sm.path)}`,
       },
     },
   },
@@ -61,11 +61,11 @@ export const TextSM: Story = {
   },
 };
 
-export const TextMD: Story = {
+export const MD: Story = {
   parameters: {
     docs: {
       description: {
-        story: path2css(basisTokens.md.path),
+        story: `${basisTokens.md.value}<br />${path2css(basisTokens.md.path)}`,
       },
     },
   },
@@ -74,11 +74,11 @@ export const TextMD: Story = {
   },
 };
 
-export const TextLG: Story = {
+export const LG: Story = {
   parameters: {
     docs: {
       description: {
-        story: path2css(basisTokens.lg.path),
+        story: `${basisTokens.lg.value}<br />${path2css(basisTokens.lg.path)}`,
       },
     },
   },
@@ -87,11 +87,11 @@ export const TextLG: Story = {
   },
 };
 
-export const TextXL: Story = {
+export const XL: Story = {
   parameters: {
     docs: {
       description: {
-        story: path2css(basisTokens.xl.path),
+        story: `${basisTokens.xl.value}<br />${path2css(basisTokens.xl.path)}`,
       },
     },
   },
@@ -101,10 +101,11 @@ export const TextXL: Story = {
 };
 
 export const Text2XL: Story = {
+  name: '2XL',
   parameters: {
     docs: {
       description: {
-        story: path2css(basisTokens['2xl'].path),
+        story: `${basisTokens['2xl'].value}<br />${path2css(basisTokens['2xl'].path)}`,
       },
     },
   },
@@ -114,14 +115,29 @@ export const Text2XL: Story = {
 };
 
 export const Text3XL: Story = {
+  name: '3XL',
   parameters: {
     docs: {
       description: {
-        story: path2css(basisTokens['3xl'].path),
+        story: `${basisTokens['3xl'].value}<br />${path2css(basisTokens['3xl'].path)}`,
       },
     },
   },
   args: {
     style: { letterSpacing: basisTokens['3xl'].value },
+  },
+};
+
+export const Text4XL: Story = {
+  name: '4XL',
+  parameters: {
+    docs: {
+      description: {
+        story: `${basisTokens['4xl'].value}<br />${path2css(basisTokens['4xl'].path)}`,
+      },
+    },
+  },
+  args: {
+    style: { letterSpacing: basisTokens['4xl'].value },
   },
 };

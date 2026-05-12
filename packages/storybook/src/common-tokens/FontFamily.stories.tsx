@@ -1,8 +1,9 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 import tokens from '../../../../proprietary/tokens/dist/index.json';
-import { Title, Typeset } from '@storybook/addon-docs/blocks';
+import { Stories, Title } from '@storybook/addon-docs/blocks';
 import React from 'react';
 import { path2css } from '../denhaag/util';
+import { Paragraph } from '@gemeente-denhaag/paragraph';
 
 type Story = StoryObj<typeof meta>;
 type Tokens = typeof tokens;
@@ -13,65 +14,23 @@ type FormControlTokens = Tokens['basis']['form-control'];
 const basisTokens: TextTokens = tokens['basis']['text'];
 const headingTokens: HeadingTokens = tokens['basis']['heading'];
 const formControlTokens: FormControlTokens = tokens['basis']['form-control'];
-const fontSizes = Object.values(basisTokens['font-size']).map((size) => {
-  if (size.value.startsWith('clamp')) return size.value.replace('clamp(', '').replace(')', '').split(',')[0];
-  return size.value;
-});
 
 const meta: Meta = {
   title: 'Common Tokens/Font Family',
   tags: ['autodocs', '!dev'],
-  component: Typeset,
+  component: Paragraph,
+  args: {
+    children:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+  },
   parameters: {
     chromatic: { disableSnapshot: true },
     docs: {
+      canvas: { sourceState: 'none' },
       page: () => (
         <>
-          <style>
-            {`
-              .font-typeset-aligned .docblock-typeset > div {
-                display: grid;
-                grid-template-columns: 8ch 1fr;
-              }
-            `}
-          </style>
           <Title />
-          <h3>Text default</h3>
-          <p>
-            {basisTokens['font-family'].default.value}
-            <br />
-            {path2css(basisTokens['font-family'].default.path)}
-          </p>
-          <div className="font-typeset-aligned" style={{ fontFamily: basisTokens['font-family'].default.value }}>
-            <Typeset fontFamily={basisTokens['font-family'].default.value} fontSizes={fontSizes} />
-          </div>
-          <h3>Text monospace</h3>
-          <p>
-            {basisTokens['font-family'].monospace.value}
-            <br />
-            {path2css(basisTokens['font-family'].monospace.path)}
-          </p>
-          <div className="font-typeset-aligned" style={{ fontFamily: basisTokens['font-family'].monospace.value }}>
-            <Typeset fontFamily={basisTokens['font-family'].monospace.value} fontSizes={fontSizes} />
-          </div>
-          <h3>Heading</h3>
-          <p>
-            {headingTokens['font-family'].value}
-            <br />
-            {path2css(headingTokens['font-family'].path)}
-          </p>
-          <div className="font-typeset-aligned" style={{ fontFamily: headingTokens['font-family'].value }}>
-            <Typeset fontFamily={headingTokens['font-family'].value} fontSizes={fontSizes} />
-          </div>
-          <h3>Form control</h3>
-          <p>
-            {formControlTokens['font-family'].value}
-            <br />
-            {path2css(formControlTokens['font-family'].path)}
-          </p>
-          <div className="font-typeset-aligned" style={{ fontFamily: formControlTokens['font-family'].value }}>
-            <Typeset fontFamily={formControlTokens['font-family'].value} fontSizes={fontSizes} />
-          </div>
+          <Stories title={<></>} />
         </>
       ),
     },
@@ -80,4 +39,54 @@ const meta: Meta = {
 
 export default meta;
 
-export const Normal: Story = {};
+export const Default: Story = {
+  parameters: {
+    docs: {
+      description: {
+        story: `${basisTokens['font-family'].default.value}<br />${path2css(basisTokens['font-family'].default.path)}`,
+      },
+    },
+  },
+  args: {
+    style: { fontFamily: basisTokens['font-family'].default.value },
+  },
+};
+
+export const Monospace: Story = {
+  parameters: {
+    docs: {
+      description: {
+        story: `${basisTokens['font-family'].monospace.value}<br />${path2css(basisTokens['font-family'].monospace.path)}`,
+      },
+    },
+  },
+  args: {
+    style: { fontFamily: basisTokens['font-family'].monospace.value },
+  },
+};
+
+export const Heading: Story = {
+  parameters: {
+    docs: {
+      description: {
+        story: `${headingTokens['font-family'].value}<br />${path2css(headingTokens['font-family'].path)}`,
+      },
+    },
+  },
+  args: {
+    style: { fontFamily: headingTokens['font-family'].value },
+  },
+};
+
+export const FormControl: Story = {
+  parameters: {
+    docs: {
+      description: {
+        story: `${formControlTokens['font-family'].value}<br />${path2css(formControlTokens['font-family'].path)}`,
+      },
+    },
+  },
+  args: {
+    style: { fontFamily: formControlTokens['font-family'].value },
+  },
+};
