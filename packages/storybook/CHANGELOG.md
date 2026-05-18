@@ -1,5 +1,34 @@
 # @gemeente-denhaag/storybook
 
+## 5.4.7
+
+### Patch Changes
+
+- 56e8a14: Change token names
+- 16a41e6: Change tokens
+- Updated dependencies [56e8a14]
+- Updated dependencies [16a41e6]
+  - @gemeente-denhaag/descriptionlist@4.0.3
+  - @gemeente-denhaag/ctalink@2.0.1
+  - @gemeente-denhaag/design-tokens@1.2.1
+  - @gemeente-denhaag/button@3.0.3
+  - @gemeente-denhaag/list@3.0.2
+  - @gemeente-denhaag/ctadownload@2.1.1
+  - @gemeente-denhaag/action@4.2.1
+  - @gemeente-denhaag/alert@4.0.9
+  - @gemeente-denhaag/anchor-navigation@2.0.3
+  - @gemeente-denhaag/card-authentication@2.0.9
+  - @gemeente-denhaag/cta-image-content@3.0.4
+  - @gemeente-denhaag/dotindicator@3.0.3
+  - @gemeente-denhaag/file-upload@1.0.3
+  - @gemeente-denhaag/header@4.1.5
+  - @gemeente-denhaag/menu@4.1.1
+  - @gemeente-denhaag/modal@3.0.3
+  - @gemeente-denhaag/process-steps@4.2.4
+  - @gemeente-denhaag/footer@4.2.1
+  - @gemeente-denhaag/card-group@2.0.9
+  - @gemeente-denhaag/contact-timeline@4.0.13
+
 ## 5.4.6
 
 ### Patch Changes

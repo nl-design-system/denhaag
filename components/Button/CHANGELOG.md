@@ -1,5 +1,12 @@
 # @gemeente-denhaag/button
 
+## 3.0.3
+
+### Patch Changes
+
+- 56e8a14: Change token names
+- 16a41e6: Change tokens
+
 ## 3.0.2
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # @gemeente-denhaag/process-steps
 
+## 4.2.4
+
+### Patch Changes
+
+- Updated dependencies [56e8a14]
+- Updated dependencies [16a41e6]
+  - @gemeente-denhaag/button@3.0.3
+
 ## 4.2.3
 
 ### Patch Changes
