@@ -1,5 +1,13 @@
 # @gemeente-denhaag/anchor-navigation
 
+## 2.0.3
+
+### Patch Changes
+
+- Updated dependencies [56e8a14]
+- Updated dependencies [16a41e6]
+  - @gemeente-denhaag/button@3.0.3
+
 ## 2.0.2
 
 ### Patch Changes

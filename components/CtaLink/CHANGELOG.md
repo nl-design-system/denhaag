@@ -1,5 +1,12 @@
 # @gemeente-denhaag/ctalink
 
+## 2.0.1
+
+### Patch Changes
+
+- 56e8a14: Change token names
+- 16a41e6: Change tokens
+
 ## 2.0.0
 
 ### Major Changes

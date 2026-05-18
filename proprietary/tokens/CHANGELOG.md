@@ -1,5 +1,12 @@
 # @gemeente-denhaag/design-tokens
 
+## 1.2.1
+
+### Patch Changes
+
+- 56e8a14: Change token names
+- 16a41e6: Change tokens
+
 ## 1.2.0
 
 ### Minor Changes
