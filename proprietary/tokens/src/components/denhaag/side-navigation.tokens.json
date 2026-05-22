@@ -21,6 +21,9 @@
         "margin-inline-start": { "value": "0" },
         "margin-inline-end": { "value": "0" }
       },
+      "list": {
+        "margin-inline-start": { "value": "{denhaag.space.inline.3xl}" }
+      },
       "link": {
         "label": {
           "gap": { "value": "{denhaag.space.inline.xs}" }
@@ -35,6 +38,23 @@
           "color": { "value": "{denhaag.color.green.3}" },
           "font-weight": { "value": "{basis.text.font-weight.bold}" }
         }
+      },
+      "expand-button": {
+        "block-size": { "value": "{denhaag.space.block.3xl}" },
+        "inline-size": { "value": "{denhaag.space.inline.3xl}" },
+        "transform": { "value": "rotate(0deg)" },
+        "transition": { "value": "transform 400ms ease-in-out" },
+        "expanded": {
+          "transform": { "value": "rotate(180deg)" }
+        }
+      },
+      "expand-separator": {
+        "color": { "value": "{denhaag.color.grey.2}" },
+        "inline-size": { "value": "{denhaag.size.25}" },
+        "margin-inline-end": { "value": "{denhaag.space.inline.xs}" },
+        "margin-inline-start": { "value": "{denhaag.space.inline.xs}" },
+        "padding-block-end": { "value": "{denhaag.side-navigation.link.padding-block-end}" },
+        "padding-block-start": { "value": "{denhaag.side-navigation.link.padding-block-start}" }
       }
     }
   }
