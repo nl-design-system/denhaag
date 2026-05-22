@@ -31,6 +31,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@gemeente-denhaag/iconbutton": "workspace:*",
+    "@gemeente-denhaag/icons": "workspace:*",
     "@gemeente-denhaag/number-badge": "workspace:*",
     "clsx": "2.1.1"
   },
