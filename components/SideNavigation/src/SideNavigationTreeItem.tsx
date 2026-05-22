@@ -1,4 +1,4 @@
-import React, { ReactNode, useId, useState } from 'react';
+import React, { KeyboardEvent, ReactNode, useId, useRef, useState } from 'react';
 import { SideNavigationItem } from './SideNavigationItem';
 import { SideNavigationLink } from './SideNavigationLink';
 import { SideNavigationLinkLabel } from './SideNavigationLinkLabel';
@@ -15,17 +15,35 @@ export interface SideNavigationTreeItemProps {
   counter?: number;
   expanded?: boolean;
   items?: SideNavigationTreeItemProps[];
+  closeParent?: () => void;
 }
 
 export const SideNavigationTreeItem = (props: SideNavigationTreeItemProps) => {
   const id = useId();
+  const toggleRef = useRef<HTMLButtonElement>(null);
   const [isExpanded, setIsExpanded] = useState<boolean>(Boolean(props.expanded));
 
   const togglePanel = () => setIsExpanded(!isExpanded);
+  const closePanel = () => {
+    setIsExpanded(false);
+    toggleRef?.current?.focus();
+  };
+
+  const handleEscapeOnToggle = (event: KeyboardEvent<HTMLAnchorElement | HTMLButtonElement>) => {
+    if (event.code === 'Escape') {
+      closePanel();
+    }
+  };
+
+  const handleEscapeOnLink = (event: KeyboardEvent<HTMLAnchorElement | HTMLButtonElement>) => {
+    if (event.code === 'Escape') {
+      props?.closeParent?.();
+    }
+  };
 
   return (
     <SideNavigationItem>
-      <SideNavigationLink href={props.href} current={props.current}>
+      <SideNavigationLink href={props.href} current={props.current} onKeyDown={handleEscapeOnLink}>
         {props.icon}
         {props.counter && props.counter > 0 ? (
           <SideNavigationLinkLabel>
@@ -40,11 +58,17 @@ export const SideNavigationTreeItem = (props: SideNavigationTreeItemProps) => {
       {props.items?.length && (
         <>
           <SideNavigationExpandSeparator />
-          <SideNavigationExpandButton onClick={togglePanel} aria-expanded={isExpanded} />
+          <SideNavigationExpandButton
+            ref={toggleRef}
+            onClick={togglePanel}
+            aria-label={`${isExpanded ? 'Sluit' : 'Open'} submenu ${props.label}`}
+            aria-expanded={isExpanded}
+            onKeyDown={handleEscapeOnToggle}
+          />
           {isExpanded && (
             <SideNavigationList id={id}>
               {props.items.map((subItem, subIndex) => (
-                <SideNavigationTreeItem key={subIndex} {...subItem} />
+                <SideNavigationTreeItem key={subIndex} {...subItem} closeParent={closePanel} />
               ))}
             </SideNavigationList>
           )}
