@@ -60,3 +60,40 @@ const meta = {
 export default meta;
 
 export const Default: Story = {};
+
+const nestedArgs = [
+  [
+    {
+      href: '#',
+      label: 'Mijn taken',
+      icon: <CheckCircleIcon />,
+    },
+    {
+      href: '#',
+      label: 'Mijn berichten',
+      icon: <InboxIcon />,
+      counter: 2,
+      items: [
+        {
+          href: '#',
+          label: 'Inbox',
+          counter: 2,
+          icon: <InboxIcon />,
+        },
+        {
+          href: '#',
+          label: 'Archief',
+          icon: <InboxIcon />,
+        },
+      ],
+    },
+    {
+      href: '#',
+      label: 'Mijn zaken',
+      icon: <ArchiveIcon />,
+    },
+  ],
+];
+export const Nested: Story = {
+  args: { items: nestedArgs },
+};
