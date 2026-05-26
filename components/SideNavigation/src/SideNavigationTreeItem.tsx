@@ -16,6 +16,8 @@ export interface SideNavigationTreeItemProps {
   expanded?: boolean;
   items?: SideNavigationTreeItemProps[];
   closeParent?: () => void;
+  openLabel?: string;
+  closeLabel?: string;
 }
 
 export const SideNavigationTreeItem = (props: SideNavigationTreeItemProps) => {
@@ -61,7 +63,7 @@ export const SideNavigationTreeItem = (props: SideNavigationTreeItemProps) => {
           <SideNavigationExpandButton
             ref={toggleRef}
             onClick={togglePanel}
-            aria-label={`${isExpanded ? 'Sluit' : 'Open'} submenu ${props.label}`}
+            aria-label={`${isExpanded ? props.closeLabel || 'Sluit' : props.openLabel || 'Open'} submenu ${props.label}`}
             aria-expanded={isExpanded}
             onKeyDown={handleEscapeOnToggle}
           />
