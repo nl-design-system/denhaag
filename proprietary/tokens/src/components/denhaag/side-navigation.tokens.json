@@ -43,7 +43,7 @@
         "block-size": { "value": "{denhaag.space.block.3xl}" },
         "inline-size": { "value": "{denhaag.space.inline.3xl}" },
         "transform": { "value": "rotate(0deg)" },
-        "transition": { "value": "transform 400ms ease-in-out" },
+        "transition": { "value": "transform 200ms ease-in-out" },
         "expanded": {
           "transform": { "value": "rotate(180deg)" }
         }

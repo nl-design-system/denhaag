@@ -45,36 +45,39 @@ export const SideNavigationTreeItem = (props: SideNavigationTreeItemProps) => {
 
   return (
     <SideNavigationItem>
-      <SideNavigationLink href={props.href} current={props.current} onKeyDown={handleEscapeOnLink}>
-        {props.icon}
-        {props.counter && props.counter > 0 ? (
-          <SideNavigationLinkLabel>
-            {props.label}
-            <NumberBadge>{props.counter}</NumberBadge>
-          </SideNavigationLinkLabel>
-        ) : (
-          props.label
-        )}
-      </SideNavigationLink>
-
-      {props.items?.length && (
-        <>
-          <SideNavigationExpandSeparator />
-          <SideNavigationExpandButton
-            ref={toggleRef}
-            onClick={togglePanel}
-            aria-label={`${isExpanded ? props.closeLabel || 'Sluit' : props.openLabel || 'Open'} submenu ${props.label}`}
-            aria-expanded={isExpanded}
-            onKeyDown={handleEscapeOnToggle}
-          />
-          {isExpanded && (
-            <SideNavigationList id={id}>
-              {props.items.map((subItem, subIndex) => (
-                <SideNavigationTreeItem key={subIndex} {...subItem} closeParent={closePanel} />
-              ))}
-            </SideNavigationList>
+      <span className="denhaag-side-navigation__tree-item-label-wrapper">
+        <SideNavigationLink href={props.href} current={props.current} onKeyDown={handleEscapeOnLink}>
+          {props.icon}
+          {props.counter && props.counter > 0 ? (
+            <SideNavigationLinkLabel>
+              {props.label}
+              <NumberBadge>{props.counter}</NumberBadge>
+            </SideNavigationLinkLabel>
+          ) : (
+            props.label
           )}
-        </>
+        </SideNavigationLink>
+
+        {props.items?.length && (
+          <>
+            <SideNavigationExpandSeparator />
+            <SideNavigationExpandButton
+              ref={toggleRef}
+              onClick={togglePanel}
+              aria-label={`${isExpanded ? props.closeLabel || 'Sluit' : props.openLabel || 'Open'} submenu ${props.label}`}
+              aria-expanded={isExpanded}
+              onKeyDown={handleEscapeOnToggle}
+            />
+          </>
+        )}
+      </span>
+
+      {props.items?.length && isExpanded && (
+        <SideNavigationList id={id}>
+          {props.items.map((subItem, subIndex) => (
+            <SideNavigationTreeItem key={subIndex} {...subItem} closeParent={closePanel} />
+          ))}
+        </SideNavigationList>
       )}
     </SideNavigationItem>
   );
