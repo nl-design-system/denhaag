@@ -38,7 +38,7 @@
     "@gemeente-denhaag/sheet": "workspace:*",
     "@types/uuid": "11.0.0",
     "clsx": "2.1.1",
-    "uuid": "13.0.0"
+    "uuid": "14.0.0"
   },
   "peerDependencies": {
     "react": "18 || 19",
