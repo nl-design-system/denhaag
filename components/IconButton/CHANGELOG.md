@@ -1,5 +1,11 @@
 # @gemeente-denhaag/iconbutton
 
+## 3.1.0
+
+### Minor Changes
+
+- c6b1147: Added a forwardRef so the `<button>` element can be focused from a parent component
+
 ## 3.0.1
 
 ### Patch Changes

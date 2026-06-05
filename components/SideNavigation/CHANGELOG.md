@@ -1,5 +1,16 @@
 # @gemeente-denhaag/side-navigation
 
+## 4.1.0
+
+### Minor Changes
+
+- c6b1147: Allow `subItems` to be added to an item in order to render a sub menu
+
+### Patch Changes
+
+- Updated dependencies [c6b1147]
+  - @gemeente-denhaag/iconbutton@3.1.0
+
 ## 4.0.3
 
 ### Patch Changes
