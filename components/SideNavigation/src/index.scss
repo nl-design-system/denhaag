@@ -26,6 +26,22 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  &:has(> .denhaag-side-navigation__list) {
+    flex-wrap: wrap;
+  }
+
+  & > .denhaag-side-navigation__list {
+    flex-basis: 100%;
+    margin-inline-start: var(--denhaag-side-navigation-list-margin-inline-start);
+  }
+}
+
+.denhaag-side-navigation__tree-item-label-wrapper {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: row;
+  align-items: center;
 }
 
 .denhaag-side-navigation__link {
@@ -60,4 +76,35 @@
 .denhaag-side-navigation__link--current {
   color: var(--denhaag-side-navigation-link-active-color);
   font-weight: var(--denhaag-side-navigation-link-active-font-weight);
+}
+
+.denhaag-side-navigation__expand-button {
+  inline-size: var(--denhaag-side-navigation-expand-button-inline-size);
+  block-size: var(--denhaag-side-navigation-expand-button-inline-size);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transform: var(--denhaag-side-navigation-expand-button-transform, rotate(0deg));
+  transition: var(--denhaag-side-navigation-expand-button-transition, "transform 200ms ease-in-out");
+
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
+}
+
+.denhaag-side-navigation__expand-button[aria-expanded="true"],
+.denhaag-side-navigation__expand-button--expanded {
+  transform: var(--denhaag-side-navigation-expand-button-expanded-transform, rotate(180deg));
+}
+
+.denhaag-side-navigation__expand-separator {
+  flex-shrink: 0;
+  display: inline-block;
+  color: var(--denhaag-side-navigation-expand-separator-color);
+  background-color: currentColor;
+  inline-size: var(--denhaag-side-navigation-expand-separator-inline-size, 1px);
+  padding-block-end: var(--denhaag-side-navigation-expand-separator-padding-block-end, 8px);
+  padding-block-start: var(--denhaag-side-navigation-expand-separator-padding-block-start, 8px);
+  margin-inline-end: var(--denhaag-side-navigation-expand-separator-margin-block-end, 8px);
+  margin-inline-start: var(--denhaag-side-navigation-expand-separator-margin-block-start, 8px);
 }

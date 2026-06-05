@@ -836,6 +836,12 @@ importers:
 
   components/SideNavigation:
     dependencies:
+      '@gemeente-denhaag/iconbutton':
+        specifier: workspace:*
+        version: link:../IconButton
+      '@gemeente-denhaag/icons':
+        specifier: workspace:*
+        version: link:../Icons
       '@gemeente-denhaag/number-badge':
         specifier: workspace:*
         version: link:../NumberBadge
