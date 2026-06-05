@@ -1,5 +1,11 @@
 # @gemeente-denhaag/footer
 
+## 4.2.2
+
+### Patch Changes
+
+- @gemeente-denhaag/list@3.0.3
+
 ## 4.2.1
 
 ### Patch Changes

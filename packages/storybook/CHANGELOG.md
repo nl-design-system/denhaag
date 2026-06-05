@@ -1,5 +1,20 @@
 # @gemeente-denhaag/storybook
 
+## 5.4.8
+
+### Patch Changes
+
+- Updated dependencies [c6b1147]
+- Updated dependencies [c6b1147]
+  - @gemeente-denhaag/side-navigation@4.1.0
+  - @gemeente-denhaag/iconbutton@3.1.0
+  - @gemeente-denhaag/alert@4.0.10
+  - @gemeente-denhaag/header@4.1.6
+  - @gemeente-denhaag/list@3.0.3
+  - @gemeente-denhaag/sheet@4.0.2
+  - @gemeente-denhaag/footer@4.2.2
+  - @gemeente-denhaag/menu@4.1.2
+
 ## 5.4.7
 
 ### Patch Changes

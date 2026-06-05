@@ -1,5 +1,11 @@
 # @gemeente-denhaag/menu
 
+## 4.1.2
+
+### Patch Changes
+
+- @gemeente-denhaag/sheet@4.0.2
+
 ## 4.1.1
 
 ### Patch Changes
