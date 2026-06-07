@@ -40,5 +40,9 @@
   },
   "dependencies": {
     "clsx": "2.1.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
   }
 }
