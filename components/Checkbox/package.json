@@ -31,7 +31,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@utrecht/checkbox-css": "2.0.2",
+    "@utrecht/checkbox-css": "3.0.1",
     "@utrecht/checkbox-react": "1.0.14"
   },
   "peerDependencies": {
