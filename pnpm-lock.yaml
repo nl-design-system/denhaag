@@ -5,7 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  '@isaacs/brace-expansion@<=5.0.0': ^5.0.1
+  '@isaacs/brace-expansion': '>=5.0.1'
 
 importers:
 
@@ -6954,8 +6954,8 @@ packages:
   js-cookie@2.2.1:
     resolution: {integrity: sha512-HvdH2LzI/EAZcUwA8+0nKNtWHqS+ZmijLA30RwZA0bo7ToCckjK5MkGhjED9KoRcXO6BaGI3I9UIzSA1FKFPOQ==}
 
-  js-interpreter@git+https://github.com/formio/JS-Interpreter.git#0ed5007ada500c12d797ab867a15cfab736e9b25:
-    resolution: {commit: 0ed5007ada500c12d797ab867a15cfab736e9b25, repo: https://github.com/formio/JS-Interpreter.git, type: git}
+  js-interpreter@https://codeload.github.com/formio/JS-Interpreter/tar.gz/0ed5007ada500c12d797ab867a15cfab736e9b25:
+    resolution: {tarball: https://codeload.github.com/formio/JS-Interpreter/tar.gz/0ed5007ada500c12d797ab867a15cfab736e9b25}
     version: 1.1.0-formio.2
 
   js-tokens@4.0.0:
@@ -11111,7 +11111,7 @@ snapshots:
   '@formio/protected-eval@1.2.2(formiojs@4.21.7)':
     dependencies:
       formiojs: 4.21.7
-      js-interpreter: git+https://github.com/formio/JS-Interpreter.git#0ed5007ada500c12d797ab867a15cfab736e9b25
+      js-interpreter: https://codeload.github.com/formio/JS-Interpreter/tar.gz/0ed5007ada500c12d797ab867a15cfab736e9b25
       lodash: 4.17.21
       vm-browserify: 1.1.2
 
@@ -15506,7 +15506,7 @@ snapshots:
 
   js-cookie@2.2.1: {}
 
-  js-interpreter@git+https://github.com/formio/JS-Interpreter.git#0ed5007ada500c12d797ab867a15cfab736e9b25:
+  js-interpreter@https://codeload.github.com/formio/JS-Interpreter/tar.gz/0ed5007ada500c12d797ab867a15cfab736e9b25:
     dependencies:
       acorn: 8.15.0
 
