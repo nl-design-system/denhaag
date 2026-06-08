@@ -17,7 +17,7 @@
     "build:storybook": "pnpm run --if-present --recursive build:storybook",
     "changeset": "changeset",
     "clean": "pnpm run --parallel --recursive clean && rimraf .rollup-cache",
-    "lint": "npm-run-all --continue-on-error lint:** && pnpm run --recursive lint",
+    "lint": "npm-run-all --continue-on-error lint:** && pnpm run --recursive --if-present lint",
     "lint-fix": "npm-run-all --continue-on-error lint-fix:** prettier",
     "lint-fix:css": "stylelint --fix \"**/*.{css,scss}\" --config .stylelintrc.json",
     "lint-fix:js": "eslint --fix --report-unused-disable-directives .",
