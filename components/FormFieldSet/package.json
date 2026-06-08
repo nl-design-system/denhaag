@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@utrecht/fieldset-react": "1.0.13",
-    "@utrecht/form-fieldset-css": "2.0.2"
+    "@utrecht/form-fieldset-css": "3.0.1"
   },
   "peerDependencies": {
     "react": "18 || 19",
