@@ -20,6 +20,8 @@
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "typeRoots": ["./@types", "./node_modules/@types"],
+    "types": ["assets", "node"]
   }
 }
