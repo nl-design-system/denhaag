@@ -6,6 +6,11 @@ packages:
   - "proprietary/*"
   - "packages/web-components/*"
 
+allowBuilds:
+  "@parcel/watcher": true
+  core-js: false
+  esbuild: true
+
 # Configure pnpm so peer dependencies must be explicitly added instead of being automatically installed.
 autoInstallPeers: false
 
@@ -30,6 +35,9 @@ minimumReleaseAgeExclude:
   - "react-dom@19.2.3"
   - "@isaacs/brace-expansion@5.0.1"
 
+overrides:
+  "@isaacs/brace-expansion@<=5.0.0": ^5.0.1
+
 # Configure pnpm to save exact version numbers (not including ^ or ~) in package.json. Lock dependencies to specific
 # versions to ensure reproducible installs and prevent automatic upgrades to newer minor or patch releases.
 saveExact: true
@@ -37,3 +45,8 @@ savePrefix: ""
 
 # Configure pnpm to not fail when there are missing or invalid peer dependencies in the tree.
 strictPeerDependencies: false
+
+provenance: true
+
+# Temporary disable blockExoticSubdeps until @open-formulieren/sdk is upgraded to >3.5.0
+blockExoticSubdeps: false
