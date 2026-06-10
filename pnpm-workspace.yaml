@@ -39,7 +39,9 @@ savePrefix: ""
 strictPeerDependencies: false
 
 overrides:
+  "@formio/protected-eval": "1.2.3-rc.2"
   "@isaacs/brace-expansion@<=5.0.0": "^5.0.1"
+  "shell-quote": ">=1.8.4"
 
 allowBuilds:
   "@parcel/watcher": true
