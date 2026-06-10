@@ -37,14 +37,26 @@ export const Focus: Story = {
   args: { ...Default.args, className: 'denhaag-file--focus' },
 };
 
-export const Button: Story = {
+export const Removable: Story = {
   args: {
     ...Default.args,
+    removable: true,
     onClick: (event) => {
       event.preventDefault();
-      console.log('File clicked');
+      console.log('File removed');
     },
   },
+};
+
+export const WithoutLink: Story = {
+  args: {
+    ...Default.args,
+    href: undefined,
+  },
+};
+
+export const Loading: Story = {
+  args: { ...Default.args, loading: true },
 };
 
 export const List: Story = {
@@ -55,12 +67,4 @@ export const List: Story = {
       <File {...exampleArgs} />
     </>
   ),
-};
-
-export const Loading: Story = {
-  args: { ...Default.args, loading: true },
-};
-
-export const Removable: Story = {
-  args: { ...Default.args, removable: true },
 };

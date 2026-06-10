@@ -17,7 +17,7 @@ interface FileProps {
 
 export const File = ({
   name,
-  href = '#',
+  href,
   size,
   lastUpdated,
   className,
@@ -26,7 +26,7 @@ export const File = ({
   removableLabel = 'Verwijderen',
   onClick,
 }: FileProps) => {
-  const extension = href?.lastIndexOf('.') >= 0 ? href.substring(href.lastIndexOf('.') + 1, href.length) : undefined;
+  const extension = href && href.lastIndexOf('.') >= 0 ? href.substring(href.lastIndexOf('.') + 1) : undefined;
   const lastUpdatedDate = lastUpdated ? new Date(lastUpdated).toLocaleDateString() : null;
   const FileTypeIcon = ({ ...props }) => {
     switch (extension) {
@@ -37,58 +37,46 @@ export const File = ({
     }
   };
 
-  const defaultProps = {
-    className: clsx('denhaag-file', { 'denhaag-file--loading': loading }, className),
-    'aria-labelledby': 'name',
-    'aria-describedby': 'description',
-  };
-
-  const Wrapper = ({ children }: { children: React.ReactNode }) =>
-    onClick ? (
-      <button onClick={onClick} {...defaultProps}>
-        {children}
-      </button>
-    ) : (
-      <a href={href} download={name} {...defaultProps}>
-        {children}
-      </a>
-    );
-
   return (
-    <Wrapper>
+    <div
+      className={clsx(
+        'denhaag-file',
+        {
+          'denhaag-file--loading': loading,
+          'denhaag-file--removable': removable,
+        },
+        className,
+      )}
+    >
       <div className="denhaag-file__left">
         {loading ? <SpinnerIcon /> : <FileTypeIcon className="denhaag-file__icon" />}
       </div>
       <div className="denhaag-file__right">
         <div className="denhaag-file__label">
-          <span id="name">
+          <span>
             <URLData>{name}</URLData>
           </span>
           <span> </span>
           {(extension || size || lastUpdated) && (
-            <span id="description">({[extension, size, lastUpdatedDate].filter(Boolean).join(', ')})</span>
+            <span>({[extension, size, lastUpdatedDate].filter(Boolean).join(', ')})</span>
           )}
         </div>
         {!loading && (
           <>
-            {!removable ? (
-              <div className="denhaag-file__link">
-                <DownloadIcon className="denhaag-file__link__icon" />
-                <div className="utrecht-link" tabIndex={-1}>
-                  Download
-                </div>
-              </div>
-            ) : (
-              <div className="denhaag-file__link denhaag-file__link--remove">
+            {removable ? (
+              <button className="denhaag-file__link denhaag-file__link--remove" onClick={onClick} type="button">
                 <TrashIcon className="denhaag-file__link__icon" />
-                <div className="utrecht-link" tabIndex={-1}>
-                  {removableLabel}
-                </div>
-              </div>
-            )}
+                <span>{removableLabel}</span>
+              </button>
+            ) : href ? (
+              <a href={href} download={typeof name === 'string' ? name : undefined} className="denhaag-file__link">
+                <DownloadIcon className="denhaag-file__link__icon" />
+                <span>Download</span>
+              </a>
+            ) : null}
           </>
         )}
       </div>
-    </Wrapper>
+    </div>
   );
 };

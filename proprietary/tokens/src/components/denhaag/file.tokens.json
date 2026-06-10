@@ -31,6 +31,10 @@
         "icon": {
           "width": { "value": "20px" }
         }
+      },
+      "remove": {
+        "background-color": { "value": "transparent" },
+        "border-width": { "value": "0" }
       }
     }
   }
