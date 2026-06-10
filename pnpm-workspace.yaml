@@ -37,3 +37,11 @@ savePrefix: ""
 
 # Configure pnpm to not fail when there are missing or invalid peer dependencies in the tree.
 strictPeerDependencies: false
+
+overrides:
+  "@isaacs/brace-expansion@<=5.0.0": "^5.0.1"
+
+allowBuilds:
+  "@parcel/watcher": true
+  core-js: true
+  esbuild: true
