@@ -6,6 +6,6 @@
     "module": "Preserve",
     "moduleResolution": "bundler"
   },
-  "extends": "@nl-design-system/tsconfig",
+  "extends": "../../../tsconfig.json",
   "include": ["./src/"]
 }
