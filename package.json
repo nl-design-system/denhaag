@@ -92,5 +92,5 @@
     "node": ">=24 <=25",
     "pnpm": ">=11"
   },
-  "packageManager": "pnpm@11.2.0"
+  "packageManager": "pnpm@11.5.1"
 }
