@@ -1,0 +1,13 @@
+diff --git a/dist/esm/EditControl.js b/dist/esm/EditControl.js
+index 697a0d307d2a949160fd976b57f97b0d6c7b9381..962ec9028ed2c88b2e53f980b6ac66894e13c6a4 100644
+--- a/dist/esm/EditControl.js
++++ b/dist/esm/EditControl.js
+@@ -5,7 +5,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
+ function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+ 
+ import { PropTypes } from 'prop-types';
+-import Draw from 'leaflet-draw'; // eslint-disable-line
++import 'leaflet-draw'; // eslint-disable-line
+ 
+ import isEqual from 'fast-deep-equal';
+ import React, { useRef } from 'react';
