@@ -5,12 +5,12 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  '@isaacs/brace-expansion': '>=5.0.1'
+  '@formio/protected-eval': 1.2.3-rc.2
+  '@isaacs/brace-expansion@<=5.0.0': ^5.0.1
+  shell-quote: '>=1.8.4'
 
 patchedDependencies:
-  react-leaflet-draw@0.20.6:
-    hash: 82f2567a5dc2b3080255106beea7b858e29ed4835ce9d77b7d89bb9070d66cab
-    path: patches/react-leaflet-draw@0.20.6.patch
+  react-leaflet-draw@0.20.6: 82f2567a5dc2b3080255106beea7b858e29ed4835ce9d77b7d89bb9070d66cab
 
 importers:
 
@@ -844,6 +844,12 @@ importers:
 
   components/SideNavigation:
     dependencies:
+      '@gemeente-denhaag/iconbutton':
+        specifier: workspace:*
+        version: link:../IconButton
+      '@gemeente-denhaag/icons':
+        specifier: workspace:*
+        version: link:../Icons
       '@gemeente-denhaag/number-badge':
         specifier: workspace:*
         version: link:../NumberBadge
@@ -2799,8 +2805,11 @@ packages:
   '@formio/choices.js@9.0.1':
     resolution: {integrity: sha512-+JQRWH0yhaeemVJGE1L4oPe9KPFhipzDlms3Pd31gePXpy8q7Mf3Is54/f0fc88+mWeMjK4GyIhcKIKmuGx5Xw==}
 
-  '@formio/protected-eval@1.2.2':
-    resolution: {integrity: sha512-Nv1Lo90Om3PXjJOuj+ynsr74MTeO9id6OSjWD1akuMXI0Jfhs1936seBLRxwb+iQ/gJj5K5KBxOJbJW+FR7QVw==}
+  '@formio/js-interpreter@1.1.0-formio.4':
+    resolution: {integrity: sha512-Gm3rRYumQq/yr58Ry21XRbQeWOTNoauK8EPJDcdEMiAG4s+DkLsQciEjwBZkFe8hzqedW4DCmDvh0PJfNAy+gg==}
+
+  '@formio/protected-eval@1.2.3-rc.2':
+    resolution: {integrity: sha512-VNTqlTHnNrBUyt4djDtg812hN+V7ixnuxFQSwol75+8BisEvwfjjrRCe5+pI7fy9RNca8xP109vLc18hQKuNHg==}
     peerDependencies:
       formiojs: ^4.12.6
 
@@ -6732,10 +6741,6 @@ packages:
   js-cookie@2.2.1:
     resolution: {integrity: sha512-HvdH2LzI/EAZcUwA8+0nKNtWHqS+ZmijLA30RwZA0bo7ToCckjK5MkGhjED9KoRcXO6BaGI3I9UIzSA1FKFPOQ==}
 
-  js-interpreter@https://codeload.github.com/formio/JS-Interpreter/tar.gz/0ed5007ada500c12d797ab867a15cfab736e9b25:
-    resolution: {tarball: https://codeload.github.com/formio/JS-Interpreter/tar.gz/0ed5007ada500c12d797ab867a15cfab736e9b25}
-    version: 1.1.0-formio.2
-
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
@@ -8496,8 +8501,8 @@ packages:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
 
-  shell-quote@1.8.3:
-    resolution: {integrity: sha512-ObmnIF4hXNg1BqhnHmgbDETF8dLPCggZWBjkQfhZpbszZnYur5DUljTcCHii5LC3J5E0yeO/1LIMyH+UvHQgyw==}
+  shell-quote@1.8.4:
+    resolution: {integrity: sha512-VsC6n6vz1ihYYyZZwX7YZSF5l5x36ca17OC+a69h94YqB7X6XLwf+5MOgynYir2SLFUbl8gIYvBo8K8RoNQ6bQ==}
     engines: {node: '>= 0.4'}
 
   side-channel-list@1.0.0:
@@ -10840,11 +10845,15 @@ snapshots:
       fuse.js: 3.6.1
       redux: 4.2.1
 
-  '@formio/protected-eval@1.2.2(formiojs@4.21.7)':
+  '@formio/js-interpreter@1.1.0-formio.4':
     dependencies:
+      acorn: 8.16.0
+
+  '@formio/protected-eval@1.2.3-rc.2(formiojs@4.21.7)':
+    dependencies:
+      '@formio/js-interpreter': 1.1.0-formio.4
       formiojs: 4.21.7
-      js-interpreter: https://codeload.github.com/formio/JS-Interpreter/tar.gz/0ed5007ada500c12d797ab867a15cfab736e9b25
-      lodash: 4.17.21
+      lodash: 4.18.1
       vm-browserify: 1.1.2
 
   '@formio/semantic@2.6.1': {}
@@ -11263,7 +11272,7 @@ snapshots:
     dependencies:
       '@date-fns/tz': 1.5.0
       '@floating-ui/react': 0.27.16(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      '@formio/protected-eval': 1.2.2(formiojs@4.21.7)
+      '@formio/protected-eval': 1.2.3-rc.2(formiojs@4.21.7)
       '@fortawesome/fontawesome-free': 6.7.2
       '@open-formulieren/design-tokens': 0.66.0
       '@open-formulieren/formio-renderer': 1.6.1(cb91cad919be1ec08dfddb5f58a12852)
@@ -15195,10 +15204,6 @@ snapshots:
 
   js-cookie@2.2.1: {}
 
-  js-interpreter@https://codeload.github.com/formio/JS-Interpreter/tar.gz/0ed5007ada500c12d797ab867a15cfab736e9b25:
-    dependencies:
-      acorn: 8.16.0
-
   js-tokens@4.0.0: {}
 
   js-yaml@3.14.1:
@@ -16051,7 +16056,7 @@ snapshots:
       minimatch: 3.1.5
       pidtree: 0.3.1
       read-pkg: 3.0.0
-      shell-quote: 1.8.3
+      shell-quote: 1.8.4
       string.prototype.padend: 3.1.6
 
   nth-check@2.1.1:
@@ -17282,7 +17287,7 @@ snapshots:
 
   shebang-regex@3.0.0: {}
 
-  shell-quote@1.8.3: {}
+  shell-quote@1.8.4: {}
 
   side-channel-list@1.0.0:
     dependencies:
