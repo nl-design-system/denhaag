@@ -35,7 +35,7 @@ overrides:
 
 allowBuilds:
   "@parcel/watcher": true
-  core-js: true
+  core-js: false
   esbuild: true
 
 # Apply patches to fix issues in dependencies that have not yet been resolved by the maintainers. This allows us to
