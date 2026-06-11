@@ -1,5 +1,12 @@
 # @gemeente-denhaag/step-marker
 
+## 3.0.2
+
+### Patch Changes
+
+- Updated dependencies [de81258]
+  - @gemeente-denhaag/icons@4.1.0
+
 ## 3.0.1
 
 ### Patch Changes

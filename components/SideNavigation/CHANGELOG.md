@@ -1,5 +1,13 @@
 # @gemeente-denhaag/side-navigation
 
+## 4.1.1
+
+### Patch Changes
+
+- Updated dependencies [de81258]
+  - @gemeente-denhaag/icons@4.1.0
+  - @gemeente-denhaag/iconbutton@3.1.1
+
 ## 4.1.0
 
 ### Minor Changes
