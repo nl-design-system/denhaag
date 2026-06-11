@@ -1,5 +1,11 @@
 # @gemeente-denhaag/icons
 
+## 4.1.0
+
+### Minor Changes
+
+- de81258: Add new FileText icon
+
 ## 4.0.1
 
 ### Patch Changes

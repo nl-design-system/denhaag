@@ -1,5 +1,21 @@
 # @gemeente-denhaag/menu
 
+## 4.1.3
+
+### Patch Changes
+
+- Updated dependencies [de81258]
+  - @gemeente-denhaag/icons@4.1.0
+  - @gemeente-denhaag/button@3.0.4
+  - @gemeente-denhaag/language-switcher@3.1.4
+  - @gemeente-denhaag/sheet@4.0.3
+
+## 4.1.2
+
+### Patch Changes
+
+- @gemeente-denhaag/sheet@4.0.2
+
 ## 4.1.1
 
 ### Patch Changes

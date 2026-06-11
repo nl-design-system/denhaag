@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/side-navigation",
-  "version": "4.0.3",
+  "version": "4.1.1",
   "description": "A side navigation component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -31,6 +31,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@gemeente-denhaag/iconbutton": "workspace:*",
+    "@gemeente-denhaag/icons": "workspace:*",
     "@gemeente-denhaag/number-badge": "workspace:*",
     "clsx": "2.1.1"
   },

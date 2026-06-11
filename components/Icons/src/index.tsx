@@ -61,6 +61,7 @@ import DocumentSvg from './svg/objects/document.svg';
 import EuroSvg from './svg/objects/euro.svg';
 import FilestorageSVG from './svg/objects/filestorage.svg';
 import FileSvg from './svg/objects/file.svg';
+import FileTextSvg from './svg/objects/file-text.svg';
 import HouseSvg from './svg/objects/house.svg';
 import HouseWithEuroSvg from './svg/objects/house-with-euro.svg';
 import ImageSvg from './svg/objects/image.svg';
@@ -143,6 +144,7 @@ export const DocumentIcon: F = (props: SvgIconProps) => buildIcon(DocumentSvg, p
 export const EuroIcon: F = (props: SvgIconProps) => buildIcon(EuroSvg, props);
 export const FilestorageIcon: F = (props: SvgIconProps) => buildIcon(FilestorageSVG, props);
 export const FileIcon: F = (props: SvgIconProps) => buildIcon(FileSvg, props);
+export const FileTextIcon: F = (props: SvgIconProps) => buildIcon(FileTextSvg, props);
 export const HouseIcon: F = (props: SvgIconProps) => buildIcon(HouseSvg, props);
 export const HouseWithEuroIcon: F = (props: SvgIconProps) => buildIcon(HouseWithEuroSvg, props);
 export const MapIcon: F = (props: SvgIconProps) => buildIcon(MapSvg, props);

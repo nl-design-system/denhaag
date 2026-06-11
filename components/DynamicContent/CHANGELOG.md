@@ -1,5 +1,14 @@
 # @gemeente-denhaag/dynamic-content
 
+## 2.1.1
+
+### Patch Changes
+
+- Updated dependencies [de81258]
+  - @gemeente-denhaag/icons@4.1.0
+  - @gemeente-denhaag/image@2.0.1
+  - @gemeente-denhaag/link@4.1.0
+
 ## 2.1.0
 
 ### Minor Changes

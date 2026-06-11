@@ -21,12 +21,16 @@ export interface IconButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>
  * @param props The properties of an IconButton component.
  * @constructor Constructs an instance of IconButton.
  */
-export const IconButton: React.FC<IconButtonProps> = ({ ...props }: IconButtonProps) => {
+export const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>(({ ...props }, ref) => {
   const rootClassNames = clsx('denhaag-icon-button', props.className);
 
   return (
-    <button {...props} className={rootClassNames}>
+    <button ref={ref} {...props} className={rootClassNames}>
       {props.children}
     </button>
   );
-};
+});
+
+IconButton.displayName = 'IconButton';
+
+export default IconButton;
