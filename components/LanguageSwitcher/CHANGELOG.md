@@ -1,5 +1,13 @@
 # @gemeente-denhaag/language-switcher
 
+## 3.1.4
+
+### Patch Changes
+
+- Updated dependencies [de81258]
+  - @gemeente-denhaag/icons@4.1.0
+  - @gemeente-denhaag/link@4.1.0
+
 ## 3.1.3
 
 ### Patch Changes
