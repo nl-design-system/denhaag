@@ -21,5 +21,10 @@ const ejsPlugin = () => ({
 });
 
 export default defineConfig({
+  css: {
+    lightningcss: {
+      errorRecovery: true,
+    },
+  },
   plugins: [react(), ejsPlugin()],
 });
