@@ -31,8 +31,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@utrecht/component-library-react": "10.3.10",
-    "@utrecht/link-button-css": "2.0.1"
+    "@utrecht/component-library-react": "14.0.1",
+    "@utrecht/link-button-css": "3.0.1"
   },
   "peerDependencies": {
     "react": "18 || 19",

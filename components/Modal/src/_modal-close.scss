@@ -11,13 +11,14 @@
     font-size: var(--denhaag-modal-close-font-size);
     font-weight: var(--denhaag-modal-close-font-weight);
 
-    &:hover,
-    &--hover {
+    &--hover,
+    &:hover {
       --denhaag-modal-close-color: var(--denhaag-modal-close-hover-color);
     }
 
-    &:focus-visible,
-    &--focus {
+    /* stylelint-disable-next-line no-descending-specificity */
+    &--focus,
+    &:focus-visible {
       outline: var(--denhaag-focus-border);
     }
 

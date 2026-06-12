@@ -31,7 +31,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "date-fns": "4.1.0"
+    "date-fns": "4.4.0"
   },
   "peerDependencies": {
     "react": "18 || 19",

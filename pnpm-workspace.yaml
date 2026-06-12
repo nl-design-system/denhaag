@@ -6,6 +6,11 @@ packages:
   - "proprietary/*"
   - "packages/web-components/*"
 
+allowBuilds:
+  "@parcel/watcher": true
+  core-js: false
+  esbuild: true
+
 # Configure pnpm so peer dependencies must be explicitly added instead of being automatically installed.
 autoInstallPeers: false
 
@@ -26,9 +31,17 @@ minimumReleaseAgeExclude:
   - "@nl-rvo/*"
   - "@rijkshuisstijl-community/*"
   - "@utrecht/*"
-  - "react@19.2.3"
-  - "react-dom@19.2.3"
-  - "@isaacs/brace-expansion@5.0.1"
+
+# Override vulnerable dependency versions.
+overrides:
+  "@formio/protected-eval": "1.2.3-rc.2"
+  "@isaacs/brace-expansion@<=5.0.0": "^5.0.1"
+  "shell-quote": ">=1.8.4"
+
+# Apply patches to fix issues in dependencies that have not yet been resolved by the maintainers. This allows us to
+# continue using the affected packages while waiting for official fixes.
+patchedDependencies:
+  react-leaflet-draw@0.20.6: patches/react-leaflet-draw@0.20.6.patch
 
 # Configure pnpm to save exact version numbers (not including ^ or ~) in package.json. Lock dependencies to specific
 # versions to ensure reproducible installs and prevent automatic upgrades to newer minor or patch releases.
@@ -38,12 +51,7 @@ savePrefix: ""
 # Configure pnpm to not fail when there are missing or invalid peer dependencies in the tree.
 strictPeerDependencies: false
 
-overrides:
-  "@formio/protected-eval": "1.2.3-rc.2"
-  "@isaacs/brace-expansion@<=5.0.0": "^5.0.1"
-  "shell-quote": ">=1.8.4"
+provenance: true
 
-allowBuilds:
-  "@parcel/watcher": true
-  core-js: true
-  esbuild: true
+# Temporary disable blockExoticSubdeps until @open-formulieren/sdk is upgraded to >3.5.0
+blockExoticSubdeps: false
