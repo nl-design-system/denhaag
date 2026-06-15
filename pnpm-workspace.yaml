@@ -53,5 +53,4 @@ strictPeerDependencies: false
 
 provenance: true
 
-# Temporary disable blockExoticSubdeps until @open-formulieren/sdk is upgraded to >3.5.0
-blockExoticSubdeps: false
+workspaceConcurrency: 8
