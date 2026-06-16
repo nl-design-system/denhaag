@@ -26,15 +26,24 @@ export const outputGlobals = {
 
 // TODO search for rollup-plugin-postcss alternatives if the legacy-js-api deprecation warnings will not be fixed.
 
-const createConfig = ({ dir, format, baseUrl, sourcemap, globals }) => ({
+const createConfig = ({ baseUrl, sourcemap, globals }) => ({
   input: path.join(baseUrl, 'src/index.tsx'),
-  output: {
-    dir,
-    sourcemap,
-    format,
-    compact: true,
-    globals,
-  },
+  output: [
+    {
+      dir: './dist/cjs',
+      sourcemap,
+      format: 'cjs',
+      compact: true,
+      globals,
+    },
+    {
+      dir: './dist/mjs',
+      sourcemap,
+      format: 'esm',
+      compact: true,
+      globals,
+    },
+  ],
   plugins: [
     peerDepsExternal({ includeDependencies: true }),
     nodeExternal(),
@@ -78,12 +87,7 @@ const createConfig = ({ dir, format, baseUrl, sourcemap, globals }) => ({
     commonjs({ include: /node_modules/ }),
     svgr({ icon: true, svgo: true, memo: true }),
     typescript({
-      cacheDir: path.join(path.dirname(import.meta.url), '.rollup-cache'),
       tsconfig: path.join(baseUrl, 'tsconfig.json'),
-      tsBuildInfoFile: path.join(baseUrl, '.tsbuildinfo'),
-      compilerOptions: {
-        outDir: dir,
-      },
     }),
     summary(),
   ],
@@ -129,8 +133,7 @@ function emitStylesheetLoader() {
 }
 
 const configs = [
-  createConfig({ format: 'cjs', dir: './dist/cjs', baseUrl, sourcemap: true, globals: outputGlobals }),
-  createConfig({ format: 'esm', dir: './dist/mjs', baseUrl, sourcemap: true, globals: outputGlobals }),
+  createConfig({ baseUrl, sourcemap: true, globals: outputGlobals }),
   {
     input: 'src/index.scss',
     output: {
