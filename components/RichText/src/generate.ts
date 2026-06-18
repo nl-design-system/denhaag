@@ -59,7 +59,7 @@ ${mixins.join('')}
 fs.writeFileSync(
   path.resolve('src/index.scss'),
   `
-@import "./mixin";
+@use "./mixin" as *;
 
 .denhaag-rich-text {
   --denhaag-space-around: 1;
