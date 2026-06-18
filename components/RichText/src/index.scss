@@ -1,4 +1,4 @@
-@import "./mixin";
+@use "./mixin" as *;
 
 .denhaag-rich-text {
   --denhaag-space-around: 1;

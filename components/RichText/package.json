@@ -25,9 +25,9 @@
     "dist"
   ],
   "scripts": {
-    "generate": "tsc src/generate.ts --resolveJsonModule --esModuleInterop --outDir dist && node dist/generate.js",
+    "generate": "rimraf .generate && tsc src/generate.ts --ignoreConfig --types node --resolveJsonModule --esModuleInterop --module nodenext --moduleResolution nodenext --target es2022 --outDir .generate && node .generate/generate.js && rimraf .generate",
     "build": "rollup -c ../../rollup.config.mjs",
-    "clean": "rimraf dist tsconfig.tsbuildinfo",
+    "clean": "rimraf dist .generate tsconfig.tsbuildinfo",
     "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\"",
     "typecheck": "tsc --noEmit"
   },
