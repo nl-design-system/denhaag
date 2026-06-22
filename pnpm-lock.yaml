@@ -1621,6 +1621,9 @@ importers:
       '@vitejs/plugin-react':
         specifier: 6.0.2
         version: 6.0.2(vite@8.0.16(@types/node@25.9.3)(jiti@2.6.1)(sass@1.101.0)(terser@5.44.0)(yaml@2.9.0))
+      '@whitespace/storybook-addon-html':
+        specifier: 9.0.0
+        version: 9.0.0(prettier@3.8.4)(storybook@10.4.4(@types/react@19.2.17)(prettier@3.8.4)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))
       babel-loader:
         specifier: 10.1.1
         version: 10.1.1(@babel/core@7.29.7)
@@ -5063,6 +5066,12 @@ packages:
 
   '@webcontainer/env@1.1.1':
     resolution: {integrity: sha512-6aN99yL695Hi9SuIk1oC88l9o0gmxL1nGWWQ/kNy81HigJ0FoaoTXpytCj6ItzgyCEwA9kF1wixsTuv5cjsgng==}
+
+  '@whitespace/storybook-addon-html@9.0.0':
+    resolution: {integrity: sha512-GX2lk5EgE46Lqbs1sa/7mWDWo6g/tPiIH8SyYvzBgMlUmq/q1mulHLxowQeN/HYpdlFMeUskUlYhMmE64qi44w==}
+    peerDependencies:
+      prettier: ^3.7.1
+      storybook: ^10
 
   '@xobotyi/scrollbar-width@1.9.5':
     resolution: {integrity: sha512-N8tkAACJx2ww8vFMneJmaAgmjAG1tnVBZJRLRcx061tmsLRZHSEZSLuGWnwPtunsSLvSqXQ2wfp7Mgqg1I+2dQ==}
@@ -14288,6 +14297,11 @@ snapshots:
       tinyrainbow: 2.0.0
 
   '@webcontainer/env@1.1.1': {}
+
+  '@whitespace/storybook-addon-html@9.0.0(prettier@3.8.4)(storybook@10.4.4(@types/react@19.2.17)(prettier@3.8.4)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))':
+    dependencies:
+      prettier: 3.8.4
+      storybook: 10.4.4(@types/react@19.2.17)(prettier@3.8.4)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
 
   '@xobotyi/scrollbar-width@1.9.5': {}
 
