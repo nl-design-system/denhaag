@@ -10,6 +10,7 @@
   },
   "license": "EUPL-1.2",
   "author": "Municipality of The Hague",
+  "type": "module",
   "exports": {
     "./dist/element.mjs": {
       "types": "./dist/element.d.ts",
