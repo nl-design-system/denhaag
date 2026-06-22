@@ -108,7 +108,7 @@
     "@babel/preset-react": "8.0.1",
     "@babel/preset-typescript": "8.0.1",
     "@etchteam/storybook-addon-status": "8.1.0",
-    "@open-formulieren/sdk": "3.5.3",
+    "@open-formulieren/sdk": "3.5.4",
     "@storybook/addon-a11y": "10.4.6",
     "@storybook/addon-docs": "10.4.6",
     "@storybook/addon-links": "10.4.6",
