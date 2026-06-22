@@ -120,6 +120,7 @@
     "@types/react": "19.2.17",
     "@types/react-dom": "19.2.3",
     "@vitejs/plugin-react": "6.0.2",
+    "@whitespace/storybook-addon-html": "9.0.0",
     "babel-loader": "10.1.1",
     "clsx": "2.1.1",
     "lodash-es": "4.18.1",
