@@ -1,12 +1,15 @@
 {
   "denhaag": {
     "size": {
+      "0": { "value": "0px", "name": "Size 0" },
       "25": { "value": "1px", "name": "Size 25" },
       "50": { "value": "2px", "name": "Size 50" },
       "100": { "value": "4px", "name": "Size 100" },
       "200": { "value": "8px", "name": "Size 200" },
       "300": { "value": "12px", "name": "Size 300" },
+      "350": { "value": "14px", "name": "Size 350" },
       "400": { "value": "16px", "name": "Size 400" },
+      "450": { "value": "18px", "name": "Size 450" },
       "500": { "value": "20px", "name": "Size 500" },
       "600": { "value": "24px", "name": "Size 600" },
       "800": { "value": "32px", "name": "Size 800" },
