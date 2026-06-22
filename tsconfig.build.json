@@ -14,7 +14,6 @@
     "strictNullChecks": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "allowSyntheticDefaultImports": true,
     "target": "es2023",
     "allowJs": true,
     "skipLibCheck": true,
