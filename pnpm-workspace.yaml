@@ -34,8 +34,12 @@ minimumReleaseAgeExclude:
 
 # Override vulnerable dependency versions.
 overrides:
+  "@babel/runtime@<7.26.10": "^7.26.10"
   "@formio/protected-eval": "1.2.3-rc.2"
-  "shell-quote": ">=1.8.4"
+  "dompurify@<3.4.11": "^3.4.11"
+  "js-yaml@<4.1.2": "^4.1.2"
+  "shell-quote@<1.8.4": "^1.8.4"
+  "uuid@<11.1.1": "^11.1.1"
 
 # Apply patches to fix issues in dependencies that have not yet been resolved by the maintainers. This allows us to
 # continue using the affected packages while waiting for official fixes.
