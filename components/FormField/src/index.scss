@@ -7,3 +7,9 @@
   display: flex;
   flex-direction: column;
 }
+
+// TODO: Temporary fix to keep spacing consistent. Permanent fix upon implementation of all new common and component tokens.
+.utrecht-form-field__label--checkbox,
+.utrecht-form-field__label--radio {
+  --nl-paragraph-margin-block-end: var(--utrecht-form-field-label-margin-block-end);
+}
