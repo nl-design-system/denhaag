@@ -6,6 +6,11 @@ packages:
   - "proprietary/*"
   - "packages/web-components/*"
 
+allowBuilds:
+  "@parcel/watcher": true
+  core-js: false
+  esbuild: true
+
 # Configure pnpm so peer dependencies must be explicitly added instead of being automatically installed.
 autoInstallPeers: false
 
@@ -43,7 +48,7 @@ overrides:
   "@isaacs/brace-expansion@<=5.0.0": "^5.0.1"
   "shell-quote": ">=1.8.4"
 
-allowBuilds:
-  "@parcel/watcher": true
-  core-js: true
-  esbuild: true
+provenance: true
+
+# Temporary disable blockExoticSubdeps until @open-formulieren/sdk is upgraded to >3.5.0
+blockExoticSubdeps: false
