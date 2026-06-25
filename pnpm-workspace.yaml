@@ -44,6 +44,7 @@ overrides:
 
 # Apply patches to fix issues in dependencies that have not yet been resolved by the maintainers. This allows us to
 # continue using the affected packages while waiting for official fixes.
+# See https://github.com/alex3165/react-leaflet-draw/issues/195
 patchedDependencies:
   react-leaflet-draw@0.20.6: patches/react-leaflet-draw@0.20.6.patch
 
