@@ -15,9 +15,14 @@ on:
       # run steps that are skipped in draft PRs.
       - ready_for_review
 
+permissions: {}
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
     steps:
       - name: Checkout branch
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
@@ -80,11 +85,9 @@ jobs:
     needs: build
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-
     environment:
       name: github-pages
       url: ${{ steps.deploy-pages.outputs.page_url }}
-
     permissions:
       id-token: write
       pages: write
