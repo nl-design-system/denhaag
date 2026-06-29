@@ -17,6 +17,7 @@
         "padding-block-end": { "value": "{denhaag.space.block.xs}" },
         "padding-inline-start": { "value": "{denhaag.space.inline.md}" },
         "padding-inline-end": { "value": "{denhaag.space.inline.md}" },
+        "gap": { "value": "{denhaag.space.inline.xs}" },
         "selected": {
           "font-weight": { "value": "{basis.text.font-weight.bold}" },
           "color": { "value": "{denhaag.color.green.3}" }

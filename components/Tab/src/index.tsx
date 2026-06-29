@@ -16,7 +16,7 @@ export * from './TabsContainer';
 export * from './TabText';
 
 export interface TabsProps {
-  tabData: Array<{ label: string; panelContent: React.ReactNode }>;
+  tabData: Array<{ label: string; indicator?: React.ReactNode; panelContent: React.ReactNode }>;
   onChange?: (index: number) => void;
 }
 
@@ -140,6 +140,7 @@ export const Tabs = ({ tabData, onChange }: TabsProps) => {
               onFocus={() => handleTabFocus(tabRef)}
             >
               <TabText>{tab.label}</TabText>
+              {tab.indicator}
             </Tab>
           ))}
         </TabList>

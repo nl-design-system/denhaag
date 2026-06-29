@@ -1,9 +1,12 @@
 .denhaag-tabs__tab {
+  display: flex;
+  align-items: center;
   padding-block-start: var(--denhaag-tabs-tab-padding-block-start);
   padding-inline-start: var(--denhaag-tabs-tab-padding-inline-start);
   padding-block-end: var(--denhaag-tabs-tab-padding-block-end);
   padding-inline-end: var(--denhaag-tabs-tab-padding-inline-end);
   color: var(--denhaag-tabs-tab-color);
+  gap: var(--denhaag-tabs-tab-gap);
   font-size: var(--denhaag-tabs-tab-font-size);
   font-weight: var(--denhaag-tabs-tab-font-weight);
   font-family: var(--denhaag-tabs-tab-font-family);

@@ -1,4 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
+import { NumberBadge } from '@gemeente-denhaag/number-badge';
 import { Tabs, TabsProps } from '@gemeente-denhaag/tab';
 import readme from '../../../../components/Tab/README.md?raw';
 import React, { useEffect, useState } from 'react';
@@ -28,6 +29,16 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {};
+
+export const WithBadge: Story = {
+  args: {
+    tabData: [
+      { label: 'Open doelen', indicator: <NumberBadge value="3">3</NumberBadge>, panelContent: 'Item One' },
+      { label: 'Afgerond', indicator: <NumberBadge value="0">0</NumberBadge>, panelContent: 'Item Two' },
+      { label: 'Yet another tab', panelContent: 'Item Three' },
+    ],
+  },
+};
 
 export const UpdateTabContent: Story = {
   render: () => {
