@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@gemeente-denhaag/design-tokens": "workspace:*",
-    "@gemeente-denhaag/fonts": "1.0.1"
+    "@gemeente-denhaag/fonts": "workspace:*"
   },
   "devDependencies": {
     "@gemeente-denhaag/checkbox": "workspace:*",
