@@ -1,5 +1,18 @@
 # @gemeente-denhaag/file-upload
 
+## 1.1.0
+
+### Minor Changes
+
+- 2d64bbd: Dependency updates, solved all vulnerabilities in dependencies, optimised build
+
+### Patch Changes
+
+- Updated dependencies [2d64bbd]
+  - @gemeente-denhaag/paragraph@2.2.0
+  - @gemeente-denhaag/icons@4.2.0
+  - @gemeente-denhaag/button@3.1.0
+
 ## 1.0.4
 
 ### Patch Changes

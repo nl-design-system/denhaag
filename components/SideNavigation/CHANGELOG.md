@@ -1,5 +1,18 @@
 # @gemeente-denhaag/side-navigation
 
+## 4.2.0
+
+### Minor Changes
+
+- 2d64bbd: Dependency updates, solved all vulnerabilities in dependencies, optimised build
+
+### Patch Changes
+
+- Updated dependencies [2d64bbd]
+  - @gemeente-denhaag/number-badge@2.2.0
+  - @gemeente-denhaag/icons@4.2.0
+  - @gemeente-denhaag/iconbutton@3.2.0
+
 ## 4.1.1
 
 ### Patch Changes

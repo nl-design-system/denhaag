@@ -1,5 +1,28 @@
 # @gemeente-denhaag/header
 
+## 4.2.0
+
+### Minor Changes
+
+- 2d64bbd: Dependency updates, solved all vulnerabilities in dependencies, optimised build
+
+### Patch Changes
+
+- Updated dependencies [2d64bbd]
+  - @gemeente-denhaag/paragraph@2.2.0
+  - @gemeente-denhaag/link-list@6.3.0
+  - @gemeente-denhaag/heading@2.2.0
+  - @gemeente-denhaag/icons@4.2.0
+  - @gemeente-denhaag/link@4.2.0
+  - @gemeente-denhaag/menu@4.2.0
+  - @gemeente-denhaag/breadcrumb@5.1.0
+  - @gemeente-denhaag/button@3.1.0
+  - @gemeente-denhaag/header-logo@3.1.0
+  - @gemeente-denhaag/iconbutton@3.2.0
+  - @gemeente-denhaag/language-switcher@3.2.0
+  - @gemeente-denhaag/responsive-content@2.1.0
+  - @gemeente-denhaag/sheet@4.1.0
+
 ## 4.1.7
 
 ### Patch Changes

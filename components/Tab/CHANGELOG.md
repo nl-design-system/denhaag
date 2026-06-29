@@ -1,5 +1,11 @@
 # @gemeente-denhaag/tab
 
+## 3.2.0
+
+### Minor Changes
+
+- 2d64bbd: Dependency updates, solved all vulnerabilities in dependencies, optimised build
+
 ## 3.1.1
 
 ### Patch Changes

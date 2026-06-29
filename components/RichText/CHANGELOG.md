@@ -1,5 +1,11 @@
 # @gemeente-denhaag/rich-text
 
+## 5.1.0
+
+### Minor Changes
+
+- 2d64bbd: Dependency updates, solved all vulnerabilities in dependencies, optimised build
+
 ## 5.0.0
 
 ### Major Changes

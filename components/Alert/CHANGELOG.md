@@ -1,5 +1,19 @@
 # @gemeente-denhaag/alert
 
+## 4.1.0
+
+### Minor Changes
+
+- 2d64bbd: Dependency updates, solved all vulnerabilities in dependencies, optimised build
+
+### Patch Changes
+
+- Updated dependencies [2d64bbd]
+  - @gemeente-denhaag/heading@2.2.0
+  - @gemeente-denhaag/icons@4.2.0
+  - @gemeente-denhaag/button@3.1.0
+  - @gemeente-denhaag/iconbutton@3.2.0
+
 ## 4.0.11
 
 ### Patch Changes

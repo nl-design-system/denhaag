@@ -1,5 +1,17 @@
 # @gemeente-denhaag/case-card-element
 
+## 3.2.0
+
+### Minor Changes
+
+- 2d64bbd: Dependency updates, solved all vulnerabilities in dependencies, optimised build
+
+### Patch Changes
+
+- Updated dependencies [2d64bbd]
+  - @gemeente-denhaag/icons@4.2.0
+  - @gemeente-denhaag/card@5.1.0
+
 ## 3.1.1
 
 ### Patch Changes

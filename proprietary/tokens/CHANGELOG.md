@@ -1,5 +1,11 @@
 # @gemeente-denhaag/design-tokens
 
+## 1.3.0
+
+### Minor Changes
+
+- 2d64bbd: Dependency updates, solved all vulnerabilities in dependencies, optimised build
+
 ## 1.2.1
 
 ### Patch Changes

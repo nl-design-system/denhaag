@@ -1,5 +1,24 @@
 # @gemeente-denhaag/footer
 
+## 4.3.0
+
+### Minor Changes
+
+- 2d64bbd: Dependency updates, solved all vulnerabilities in dependencies, optimised build
+
+### Patch Changes
+
+- Updated dependencies [2d64bbd]
+  - @gemeente-denhaag/button-link@3.2.0
+  - @gemeente-denhaag/paragraph@2.2.0
+  - @gemeente-denhaag/link-list@6.3.0
+  - @gemeente-denhaag/heading@2.2.0
+  - @gemeente-denhaag/icons@4.2.0
+  - @gemeente-denhaag/link@4.2.0
+  - @gemeente-denhaag/button-group@2.1.0
+  - @gemeente-denhaag/list@3.1.0
+  - @gemeente-denhaag/responsive-content@2.1.0
+
 ## 4.2.3
 
 ### Patch Changes
