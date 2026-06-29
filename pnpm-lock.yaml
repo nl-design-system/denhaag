@@ -1282,8 +1282,8 @@ importers:
         specifier: workspace:*
         version: link:../../proprietary/tokens
       '@gemeente-denhaag/fonts':
-        specifier: 1.0.1
-        version: 1.0.1
+        specifier: workspace:*
+        version: link:../fonts
     devDependencies:
       '@gemeente-denhaag/checkbox':
         specifier: workspace:*
@@ -3376,9 +3376,6 @@ packages:
   '@gemeente-denhaag/design-tokens-components@0.2.3-alpha.400':
     resolution: {integrity: sha512-YtrtyDxhyszyBakn2q+PA+40l63JcxA0laNo7//hy8yWUWmk3w05l8eOynjryJU/0tyGCgA3GgxIuVW5NCWaEQ==}
     deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
-
-  '@gemeente-denhaag/fonts@1.0.1':
-    resolution: {integrity: sha512-HHi1fsirXadkOvOEiSj1ceNbCHdI38ROttOZSDE31DRmraKUFAfo4j7xDuTpLeojGTsv9Va165YMeXXii+NNqA==}
 
   '@gemeente-denhaag/icons@0.2.3-alpha.398':
     resolution: {integrity: sha512-NDU9GXKNlwwRBBAyYSqJhjLgX2CG28N15GRdQHR+LbU+z0av6YOE5RBQK6kCNaEXFZX1ah01DY6+4TcGgwDxXg==}
@@ -11989,8 +11986,6 @@ snapshots:
   '@gemeente-denhaag/design-tokens-common@0.2.3-alpha.400': {}
 
   '@gemeente-denhaag/design-tokens-components@0.2.3-alpha.400': {}
-
-  '@gemeente-denhaag/fonts@1.0.1': {}
 
   '@gemeente-denhaag/icons@0.2.3-alpha.398(react@19.2.7)':
     dependencies:
