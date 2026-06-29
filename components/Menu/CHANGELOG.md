@@ -1,5 +1,20 @@
 # @gemeente-denhaag/menu
 
+## 4.2.0
+
+### Minor Changes
+
+- 2d64bbd: Dependency updates, solved all vulnerabilities in dependencies, optimised build
+
+### Patch Changes
+
+- Updated dependencies [2d64bbd]
+  - @gemeente-denhaag/number-badge@2.2.0
+  - @gemeente-denhaag/icons@4.2.0
+  - @gemeente-denhaag/button@3.1.0
+  - @gemeente-denhaag/language-switcher@3.2.0
+  - @gemeente-denhaag/sheet@4.1.0
+
 ## 4.1.3
 
 ### Patch Changes

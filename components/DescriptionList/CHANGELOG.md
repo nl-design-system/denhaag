@@ -1,5 +1,11 @@
 # @gemeente-denhaag/descriptionlist
 
+## 4.1.0
+
+### Minor Changes
+
+- 2d64bbd: Dependency updates, solved all vulnerabilities in dependencies, optimised build
+
 ## 4.0.3
 
 ### Patch Changes

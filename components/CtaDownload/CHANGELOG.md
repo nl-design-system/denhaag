@@ -1,5 +1,16 @@
 # @gemeente-denhaag/ctadownload
 
+## 2.2.0
+
+### Minor Changes
+
+- 2d64bbd: Dependency updates, solved all vulnerabilities in dependencies, optimised build
+
+### Patch Changes
+
+- Updated dependencies [2d64bbd]
+  - @gemeente-denhaag/ctalink@2.1.0
+
 ## 2.1.1
 
 ### Patch Changes

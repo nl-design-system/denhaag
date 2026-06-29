@@ -1,5 +1,21 @@
 # @gemeente-denhaag/contact-timeline
 
+## 4.1.0
+
+### Minor Changes
+
+- 2d64bbd: Dependency updates, solved all vulnerabilities in dependencies, optimised build
+
+### Patch Changes
+
+- Updated dependencies [2d64bbd]
+  - @gemeente-denhaag/paragraph@2.2.0
+  - @gemeente-denhaag/icons@4.2.0
+  - @gemeente-denhaag/utils@3.1.0
+  - @gemeente-denhaag/file@2.5.0
+  - @gemeente-denhaag/process-steps@4.3.0
+  - @gemeente-denhaag/step-marker@3.1.0
+
 ## 4.0.14
 
 ### Patch Changes

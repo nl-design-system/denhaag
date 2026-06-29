@@ -1,5 +1,17 @@
 # @gemeente-denhaag/keycloak
 
+## 3.2.0
+
+### Minor Changes
+
+- 2d64bbd: Dependency updates, solved all vulnerabilities in dependencies, optimised build
+
+### Patch Changes
+
+- Updated dependencies [2d64bbd]
+  - @gemeente-denhaag/design-tokens@1.3.0
+  - @gemeente-denhaag/components-css@4.1.0
+
 ## 3.1.3
 
 ### Patch Changes

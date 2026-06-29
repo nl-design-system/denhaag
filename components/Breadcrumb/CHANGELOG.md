@@ -1,5 +1,18 @@
 # @gemeente-denhaag/breadcrumb
 
+## 5.1.0
+
+### Minor Changes
+
+- 2d64bbd: Dependency updates, solved all vulnerabilities in dependencies, optimised build
+
+### Patch Changes
+
+- Updated dependencies [2d64bbd]
+  - @gemeente-denhaag/icons@4.2.0
+  - @gemeente-denhaag/link@4.2.0
+  - @gemeente-denhaag/responsive-content@2.1.0
+
 ## 5.0.5
 
 ### Patch Changes

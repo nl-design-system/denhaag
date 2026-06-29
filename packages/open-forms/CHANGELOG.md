@@ -1,5 +1,18 @@
 # @gemeente-denhaag/open-forms
 
+## 2.5.0
+
+### Minor Changes
+
+- 2d64bbd: Dependency updates, solved all vulnerabilities in dependencies, optimised build
+
+### Patch Changes
+
+- 859891a: Trigger build
+- Updated dependencies [2d64bbd]
+  - @gemeente-denhaag/design-tokens@1.3.0
+  - @gemeente-denhaag/fonts@1.1.0
+
 ## 2.4.2
 
 ### Patch Changes

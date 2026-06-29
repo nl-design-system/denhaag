@@ -1,5 +1,16 @@
 # @gemeente-denhaag/file
 
+## 2.5.0
+
+### Minor Changes
+
+- 2d64bbd: Dependency updates, solved all vulnerabilities in dependencies, optimised build
+
+### Patch Changes
+
+- Updated dependencies [2d64bbd]
+  - @gemeente-denhaag/icons@4.2.0
+
 ## 2.4.1
 
 ### Patch Changes
