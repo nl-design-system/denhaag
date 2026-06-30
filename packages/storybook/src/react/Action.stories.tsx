@@ -6,6 +6,7 @@ import readme from '../../../../components/Action/README.md?raw';
 import tokensDefinition from '../../../../components/Action/tokens.json';
 import { templateLocale } from '../templates/util';
 import { DataBadge } from '@gemeente-denhaag/data-badge';
+import { CheckedIcon } from '@gemeente-denhaag/icons';
 
 const labels = {
   today: 'vandaag',
@@ -60,6 +61,16 @@ export const WithBadge: Story = {
 
 export const WithDate: Story = {
   args: { ...Default.args, dateTime: '2023-09-28T19:47:36.593Z', locale: templateLocale },
+};
+
+export const WithIndicatorAndDate: Story = {
+  args: {
+    ...Default.args,
+    indicator: <CheckedIcon />,
+    hasIndicator: true,
+    dateTime: '2023-09-28T19:47:36.593Z',
+    locale: templateLocale,
+  },
 };
 
 export const WithDateRelative: Story = {

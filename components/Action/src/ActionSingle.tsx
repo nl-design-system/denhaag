@@ -6,6 +6,7 @@ import { ActionDetails } from './ActionDetails';
 import { BasicLink } from '@gemeente-denhaag/link';
 import { ActionActions } from './ActionActions';
 import { ActionContext } from './ActionContext';
+import { ActionIndicator } from './ActionIndicator';
 
 export const ActionSingle = ({
   children,
@@ -17,12 +18,25 @@ export const ActionSingle = ({
   locale,
   relativeDate,
   labels,
+  indicator,
+  hasIndicator = false,
   className,
   ...rest
 }: ActionSingleProps) => {
   return (
-    <Link href={link} className={clsx('denhaag-action denhaag-action--single', className)} {...rest}>
-      <ActionContent>{children}</ActionContent>
+    <Link
+      href={link}
+      className={clsx(
+        'denhaag-action denhaag-action--single',
+        hasIndicator && 'denhaag-action--with-indicator',
+        className,
+      )}
+      {...rest}
+    >
+      <div className="denhaag-action__row">
+        <ActionIndicator>{indicator}</ActionIndicator>
+        <ActionContent>{children}</ActionContent>
+      </div>
       <ActionContext>
         <ActionDetails dateTime={dateTime} now={now} locale={locale} relativeDate={relativeDate} labels={labels}>
           {details}

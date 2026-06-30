@@ -77,6 +77,17 @@
           }
         }
       },
+      "indicator": {
+        "gap": {
+          "value": "{denhaag.space.inline.sm}"
+        },
+        "width": {
+          "value": "20px"
+        },
+        "color": {
+          "value": "{denhaag.color.blue.3}"
+        }
+      },
       "actions": {
         "gap": {
           "value": "{denhaag.space.inline.xs}"

@@ -13,6 +13,8 @@ export interface ActionSingleProps extends AnchorHTMLAttributes<HTMLAnchorElemen
   locale?: string;
   relativeDate?: boolean;
   labels?: FormatDateLabels;
+  indicator?: React.ReactNode;
+  hasIndicator?: boolean;
 }
 
 export interface ActionMultiProps extends HTMLAttributes<HTMLDivElement> {

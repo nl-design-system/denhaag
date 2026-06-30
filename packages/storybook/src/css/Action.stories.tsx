@@ -11,6 +11,7 @@ export {
   Focus,
   WithBadge,
   WithDate,
+  WithIndicatorAndDate,
   WithDateRelative,
   WithDateWarning,
   List,

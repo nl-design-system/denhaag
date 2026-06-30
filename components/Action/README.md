@@ -24,7 +24,11 @@ Een task is een interactief element dat je navigeert naar een andere pagina en a
 
 Een task bestaat uit:
 
-1. Leading icon (optional): biedt ondersteuning bij de bevestiging.
+1. Leading icon (optional): biedt ondersteuning bij de bevestiging. In de React-implementatie bestaat dit uit twee samenwerkende props op `ActionSingle`:
+   - `indicator` (`React.ReactNode`): bepaalt wélk icoon wordt getoond, bijvoorbeeld een `CheckedIcon` uit `@gemeente-denhaag/icons` bij een afgeronde taak. De implementatie bepaalt zelf welk icoon bij welke status hoort; het component schrijft geen vaste set statussen voor.
+   - `hasIndicator` (`boolean`): bepaalt of er ruimte voor het leading icon wordt gereserveerd in de layout, onafhankelijk van wat er als `indicator` wordt meegegeven. Wanneer `hasIndicator` `true` is, schuift de datum/context-sectie mee op zodat deze uitlijnt onder de label-tekst in plaats van onder het icoon — ook op smalle schermen.
+
+   Beide props zijn nodig om de component correct weer te geven. `indicator` bepaalt welk icoon wordt getoond, terwijl `hasIndicator` aangeeft dat er ruimte voor een indicator moet worden gereserveerd, zodat de inhoud correct wordt uitgelijnd. Gebruik daarom altijd beide props samenm voor een correcte uitlijning.
 2. Label: communiceert de taak die je gaat uitvoeren.
 3. Subtext: biedt ondersteuning aan de label.
 4. Deadline icon (optional): geeft weer dat er een waarschuwing is waar je op moet letten.
@@ -43,6 +47,8 @@ De task bevat de staten:
 - checked
 - focus
 
+De `checked` status wordt niet automatisch afgeleid door het component; de implementatie geeft zelf aan of een taak is afgerond door zowel `hasIndicator={true}` te zetten als een geschikt icoon (bijvoorbeeld `CheckedIcon`) mee te geven via de `indicator` prop. Wanneer `hasIndicator` niet wordt meegegeven (of `false` is), wordt er geen ruimte voor een leading icon gereserveerd en valt de layout terug op het standaardgedrag zonder indicator.
+
 ## Design properties
 
 **Typography**
@@ -59,6 +65,7 @@ Default:
 
 - Label: text color Grey/5
 - Subtext: text color Grey/4
+- Leading icon: svg color Blue/3 (standaardwaarde; via design tokens per implementatie aan te passen, bijvoorbeeld naar een groene kleur om een afgeronde status te benadrukken)
 - Deadline icon: svg color Orange/4
 - Date:
 - Default: text color Grey/4
@@ -130,3 +137,5 @@ Gebruik contrastrijke kleuren voor tekst en achtergronden om ervoor te zorgen da
 Zorg ervoor dat alle functionaliteit binnen de taakcomponent toegankelijk is via een toetsenbord. Gebruikers die geen muis kunnen gebruiken, vertrouwen op toetsenbordnavigatie voor interactie met webpagina's.
 
 Test met hulptechnologieën: test de taakcomponent met behulp van schermlezers en andere hulptechnologieën om ervoor te zorgen dat deze bruikbaar is voor gebruikers met een handicap.
+
+Het leading icon (bijvoorbeeld een vinkje bij een afgeronde taak) mag nooit de enige indicatie van status zijn. Zorg dat de status ook op een andere manier kenbaar wordt gemaakt, bijvoorbeeld via tekst (zoals het label "Afgerond" in eventueel bovenliggende tabs) of via een `aria-label`/visueel verborgen tekst op het icoon zelf, zodat schermlezergebruikers de status ook meekrijgen.

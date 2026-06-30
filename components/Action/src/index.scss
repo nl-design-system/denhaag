@@ -28,6 +28,19 @@
     padding-block-end: var(--denhaag-action-lg-padding-block-end);
   }
 
+  &__row {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 1;
+    gap: var(--denhaag-action-indicator-gap);
+  }
+
+  &__indicator {
+    flex-shrink: 0;
+    width: var(--denhaag-action-indicator-width);
+    color: var(--denhaag-action-indicator-color);
+  }
+
   &__content {
     flex-grow: 1;
 
@@ -137,6 +150,10 @@
       @media (width >= 768px) {
         gap: var(--denhaag-action-single-details-lg-gap);
       }
+    }
+
+    &.denhaag-action--with-indicator .denhaag-action__context {
+      margin-inline-start: calc(var(--denhaag-action-indicator-width) + var(--denhaag-action-indicator-gap));
     }
   }
 
