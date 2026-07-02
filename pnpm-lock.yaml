@@ -102,8 +102,8 @@ importers:
         specifier: 17.0.8
         version: 17.0.8
       npm-check-updates:
-        specifier: 22.2.7
-        version: 22.2.7
+        specifier: 22.2.9
+        version: 22.2.9
       npm-package-json-lint:
         specifier: 10.4.1
         version: 10.4.1(typescript@6.0.3)
@@ -6692,6 +6692,7 @@ packages:
   git-raw-commits@5.0.1:
     resolution: {integrity: sha512-Y+csSm2GD/PCSh6Isd/WiMjNAydu0VBiG9J7EdQsNA5P9uXvLayqjmTsNlK5Gs9IhblFZqOU0yid5Il5JPoLiQ==}
     engines: {node: '>=18'}
+    deprecated: Deprecated and no longer maintained. Use @conventional-changelog/git-client instead.
     hasBin: true
 
   glob-parent@5.1.2:
@@ -7891,8 +7892,8 @@ packages:
     resolution: {integrity: sha512-DlL+XwOy3NxAQ8xuC0okPgK46iuVNAK01YN7RueYBqqFeGsBjV9XmCAzAdgt+667bCl5kPh9EqKKDwnaPG1I7A==}
     engines: {node: '>=10'}
 
-  npm-check-updates@22.2.7:
-    resolution: {integrity: sha512-Pzs/lTswEe23hT8JUXABl4vgrr0WRKOhw55wAldwngUflk8CwP+grXJt00yGjYiZf2wD1HIfdPa3xaOi1RCyZQ==}
+  npm-check-updates@22.2.9:
+    resolution: {integrity: sha512-DVeZ0KirHfliSsHuR2o7cHE+tW439sVHfJjF6cGWeDiY0Wyl3BI/jS4zV0eixtcMOquFbcF1Su/FsxOvk5MoYA==}
     engines: {node: ^20.19.0 || ^22.12.0 || >=24.0.0, npm: '>=10.0.0'}
     hasBin: true
 
@@ -17065,7 +17066,7 @@ snapshots:
 
   normalize-url@6.1.0: {}
 
-  npm-check-updates@22.2.7: {}
+  npm-check-updates@22.2.9: {}
 
   npm-install-checks@6.3.0:
     dependencies:
