@@ -19,7 +19,6 @@ export const ActionSingle = ({
   relativeDate,
   labels,
   indicator,
-  hasIndicator = false,
   className,
   ...rest
 }: ActionSingleProps) => {
@@ -28,7 +27,7 @@ export const ActionSingle = ({
       href={link}
       className={clsx(
         'denhaag-action denhaag-action--single',
-        hasIndicator && 'denhaag-action--with-indicator',
+        indicator && 'denhaag-action--with-indicator',
         className,
       )}
       {...rest}

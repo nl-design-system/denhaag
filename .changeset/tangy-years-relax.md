@@ -4,4 +4,4 @@
 "@gemeente-denhaag/action": minor
 ---
 
-Add optional `indicator` and `hasIndicator` props to ActionSingle to display a leading status icon (e.g. for completed tasks), with corresponding layout and design tokens.
+Add optional `indicator` prop to ActionSingle to display a leading status icon (e.g. for completed tasks), with corresponding layout, design tokens, and Storybook stories.

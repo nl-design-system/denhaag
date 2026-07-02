@@ -67,7 +67,6 @@ export const WithIndicatorAndDate: Story = {
   args: {
     ...Default.args,
     indicator: <CheckedIcon />,
-    hasIndicator: true,
     dateTime: '2023-09-28T19:47:36.593Z',
     locale: templateLocale,
   },
@@ -99,6 +98,15 @@ export const List: Story = {
       <ActionSingle {...exampleArgs} />
       <ActionSingle {...exampleArgs} />
       <ActionSingle {...exampleArgs} />
+      <ActionSingle
+        {...exampleArgs}
+        link="#taak-4"
+        indicator={<CheckedIcon />}
+        dateTime="2026-10-15T19:47:36.593Z"
+        locale={templateLocale}
+      >
+        <strong>Taak checked</strong>
+      </ActionSingle>
     </>
   ),
 };
