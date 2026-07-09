@@ -4,4 +4,4 @@
 "@gemeente-denhaag/tab": minor
 ---
 
-Add optional `indicator` prop to `Tabs` component to support rendering a badge or any React node alongside the tab label.
+Add optional `indicator` prop to `Tabs` component to support rendering a number badge alongside the tab label.
