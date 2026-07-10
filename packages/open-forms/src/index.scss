@@ -28,6 +28,10 @@
   --utrecht-form-field-invalid-border-inline-start-color: var(--denhaag-color-red-3);
   --utrecht-form-field-invalid-border-inline-start-width: 4px;
   --utrecht-form-field-invalid-padding-inline-start: 16px;
+
+  @media screen and (width<= 480px) {
+    --utrecht-heading-1-font-size: 2rem;
+  }
 }
 
 .utrecht-page {
@@ -43,7 +47,6 @@
   --of-utrecht-form-label-checkbox-padding-block-end: 11px;
   --of-utrecht-form-label-checkbox-padding-block-start: 11px;
   --of-utrecht-form-field-checkbox-margin-block-start: 0;
-  --of-utrecht-form-label-checkbox-focus-within-outline: 1px solid var(--denhaag-color-blue-4);
   --of-utrecht-form-field-checkbox-label-margin-block-end: 0;
   --of-utrecht-form-label-radio-padding-block-start: 4px;
   --of-utrecht-form-label-radio-padding-inline-start: 4px;
