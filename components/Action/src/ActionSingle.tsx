@@ -6,6 +6,7 @@ import { ActionDetails } from './ActionDetails';
 import { BasicLink } from '@gemeente-denhaag/link';
 import { ActionActions } from './ActionActions';
 import { ActionContext } from './ActionContext';
+import { ActionRow } from './ActionRow';
 import { ActionIndicator } from './ActionIndicator';
 
 export const ActionSingle = ({
@@ -32,10 +33,10 @@ export const ActionSingle = ({
       )}
       {...rest}
     >
-      <div className="denhaag-action__row">
+      <ActionRow>
         <ActionIndicator>{indicator}</ActionIndicator>
         <ActionContent>{children}</ActionContent>
-      </div>
+      </ActionRow>
       <ActionContext>
         <ActionDetails dateTime={dateTime} now={now} locale={locale} relativeDate={relativeDate} labels={labels}>
           {details}

@@ -79,7 +79,12 @@
       },
       "indicator": {
         "gap": {
-          "value": "{denhaag.space.inline.sm}"
+          "value": "8px"
+        },
+        "lg": {
+          "gap": {
+            "value": "16px"
+          }
         },
         "width": {
           "value": "20px"

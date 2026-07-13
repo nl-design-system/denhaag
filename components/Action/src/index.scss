@@ -33,12 +33,20 @@
     align-items: flex-start;
     flex-grow: 1;
     gap: var(--denhaag-action-indicator-gap);
+
+    @media (width >= 768px) {
+      gap: var(--denhaag-action-indicator-lg-gap, 16px);
+    }
   }
 
   &__indicator {
     flex-shrink: 0;
     width: var(--denhaag-action-indicator-width);
     color: var(--denhaag-action-indicator-color);
+
+    svg {
+      display: block;
+    }
   }
 
   &__content {
@@ -153,7 +161,7 @@
     }
 
     &.denhaag-action--with-indicator .denhaag-action__context {
-      margin-inline-start: calc(var(--denhaag-action-indicator-width) + var(--denhaag-action-indicator-gap));
+      margin-inline-start: calc(var(--denhaag-action-indicator-width, 20px) + var(--denhaag-action-indicator-gap, 8px));
     }
   }
 
