@@ -1,5 +1,6 @@
 import React, { KeyboardEvent, RefObject, createRef, useEffect, useLayoutEffect, useState } from 'react';
 import './index.scss';
+import { NumberBadge } from '@gemeente-denhaag/number-badge';
 import { TabsContainer } from './TabsContainer';
 import { TabIndicator } from './TabIndicator';
 import { TabList } from './TabList';
@@ -16,7 +17,7 @@ export * from './TabsContainer';
 export * from './TabText';
 
 export interface TabsProps {
-  tabData: Array<{ label: string; panelContent: React.ReactNode }>;
+  tabData: Array<{ label: string; indicator?: number; panelContent: React.ReactNode }>;
   onChange?: (index: number) => void;
 }
 
@@ -140,6 +141,7 @@ export const Tabs = ({ tabData, onChange }: TabsProps) => {
               onFocus={() => handleTabFocus(tabRef)}
             >
               <TabText>{tab.label}</TabText>
+              {tab.indicator !== undefined && <NumberBadge>{tab.indicator}</NumberBadge>}
             </Tab>
           ))}
         </TabList>

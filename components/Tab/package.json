@@ -31,6 +31,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@gemeente-denhaag/number-badge": "workspace:*",
     "clsx": "2.1.1",
     "uuid": "14.0.1"
   },

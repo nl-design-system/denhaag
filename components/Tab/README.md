@@ -22,6 +22,7 @@ Tabs consists of:
 2. Line: this line shows the state of a tab
 3. Trailing icon: this icon shows that it is possible to view all tabs that are not visible on the screen
 4. Container
+5. Badge (optional): a numeric badge that can be added to a tab label to communicate a count, such as the number of open items. Any component can be passed here, but the NumberBadge component is recommended.
 
 ## (Interactive) states
 
@@ -111,5 +112,7 @@ Tabs should:
 ## References
 
 [https://www.bbc.co.uk/gel/guidelines/tabs](https://www.bbc.co.uk/gel/guidelines/tabs)
+
 [https://www.carbondesignsystem.com/components/tabs/usage](https://www.carbondesignsystem.com/components/tabs/usage)
+
 [https://www.freshconsulting.com/insights/blog/uiux-principle-21-when-and-when-not-to-use-tabs/](https://www.freshconsulting.com/insights/blog/uiux-principle-21-when-and-when-not-to-use-tabs/)

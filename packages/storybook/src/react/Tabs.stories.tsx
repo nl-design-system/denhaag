@@ -29,6 +29,16 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {};
 
+export const WithBadge: Story = {
+  args: {
+    tabData: [
+      { label: 'Open doelen', indicator: 3, panelContent: 'Item One' },
+      { label: 'Afgerond', indicator: 0, panelContent: 'Item Two' },
+      { label: 'Yet another tab', panelContent: 'Item Three' },
+    ],
+  },
+};
+
 export const UpdateTabContent: Story = {
   render: () => {
     const [seconds, setSeconds] = useState(1);

@@ -896,6 +896,9 @@ importers:
 
   components/Tab:
     dependencies:
+      '@gemeente-denhaag/number-badge':
+        specifier: workspace:*
+        version: link:../NumberBadge
       clsx:
         specifier: 2.1.1
         version: 2.1.1
