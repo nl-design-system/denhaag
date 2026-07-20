@@ -43,6 +43,7 @@
     flex-shrink: 0;
     width: var(--denhaag-action-indicator-width);
     color: var(--denhaag-action-indicator-color);
+    background-color: var(--denhaag-action-indicator-background-color, transparent);
 
     svg {
       display: block;
