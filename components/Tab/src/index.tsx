@@ -1,6 +1,6 @@
 import React, { KeyboardEvent, RefObject, createRef, useEffect, useLayoutEffect, useState } from 'react';
 import './index.scss';
-import { NumberBadge } from '@nl-design-system-candidate/number-badge-react';
+import { NumberBadge } from '@gemeente-denhaag/number-badge';
 import { TabsContainer } from './TabsContainer';
 import { TabIndicator } from './TabIndicator';
 import { TabList } from './TabList';
