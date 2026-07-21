@@ -1,0 +1,59 @@
+{
+  "name": "@gemeente-denhaag/base-card",
+  "version": "5.1.0",
+  "description": "A universal Card component",
+  "bugs": "https://github.com/nl-design-system/denhaag/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nl-design-system/denhaag.git",
+    "directory": "components/Card"
+  },
+  "license": "EUPL-1.2",
+  "author": "Municipality of The Hague",
+  "exports": {
+    ".": {
+      "types": "./dist/cjs/index.d.ts",
+      "import": "./dist/mjs/index.js",
+      "default": "./dist/cjs/index.js"
+    },
+    "./index.css": "./dist/index.css",
+    "./dist/css.mjs": {
+      "types": "./dist/mjs/css.d.mts",
+      "import": "./dist/mjs/css.mjs",
+      "default": "./dist/mjs/css.mjs"
+    },
+    "./dist/stylesheet.mjs": {
+      "types": "./dist/mjs/stylesheet.d.mts",
+      "import": "./dist/mjs/stylesheet.mjs",
+      "default": "./dist/mjs/stylesheet.mjs"
+    }
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/mjs/index.js",
+  "types": "dist/cjs/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c ../../rollup.config.mjs",
+    "clean": "rimraf dist tsconfig.tsbuildinfo",
+    "watch:components": "chokidar --silent --follow-symlinks \"src/**/*\" -c \"pnpm run build\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@gemeente-denhaag/icons": "workspace:*",
+    "@gemeente-denhaag/link": "workspace:*",
+    "@gemeente-denhaag/paragraph": "workspace:*",
+    "@gemeente-denhaag/utils": "workspace:*",
+    "clsx": "2.1.1"
+  },
+  "peerDependencies": {
+    "react": "18 || 19",
+    "react-dom": "18 || 19"
+  },
+  "gitHead": "dcf72a9b79266c1ebede35aff4a02dd9121a980f",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
