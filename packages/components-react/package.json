@@ -33,6 +33,7 @@
     "@gemeente-denhaag/alert": "workspace:*",
     "@gemeente-denhaag/button": "workspace:*",
     "@gemeente-denhaag/card": "workspace:*",
+    "@gemeente-denhaag/card-as-link": "workspace:*",
     "@gemeente-denhaag/card-group": "workspace:*",
     "@gemeente-denhaag/checkbox": "workspace:*",
     "@gemeente-denhaag/contact-timeline": "workspace:*",

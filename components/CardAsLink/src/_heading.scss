@@ -1,0 +1,29 @@
+.denhaag-card-as-link__heading {
+  // The candidate `nl-heading` package (via @gemeente-denhaag/heading) scopes
+  // its styling per level. So the very specific --nl-heading-level-3-color, not a single
+  // generic --nl-heading-color. Since the Card's `headingLevel` prop is
+  // user-configurable (2 through 6), we don't know in advance which level's variables
+  //  the rendered <Heading> will actually read. Setting only one level's variables
+  // would work for that level only. So this loop sets the same card heading tokens
+  // for every possible level.
+  @each $level in 2, 3, 4, 5, 6 {
+    --nl-heading-level-#{$level}-color: var(--denhaag-card-as-link-heading-color);
+    --nl-heading-level-#{$level}-font-family: var(--denhaag-card-as-link-heading-font-family);
+    --nl-heading-level-#{$level}-font-size: var(--denhaag-card-as-link-heading-font-size);
+    --nl-heading-level-#{$level}-font-weight: var(--denhaag-card-as-link-heading-font-weight);
+    --nl-heading-level-#{$level}-line-height: var(--denhaag-card-as-link-heading-line-height);
+    --nl-heading-level-#{$level}-margin-block-start: 0;
+    --nl-heading-level-#{$level}-margin-block-end: 0;
+  }
+
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+// When user hovers any part of the card, the Heading will get an underline on hover
+.denhaag-card-as-link:hover .denhaag-card-as-link__heading {
+  text-decoration: var(--denhaag-card-as-link-heading-hover-text-decoration, underline);
+}
