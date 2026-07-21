@@ -1,0 +1,12 @@
+.denhaag-base-card__pre-heading {
+  --nl-paragraph-font-family: var(--denhaag-base-card-pre-heading-font-family);
+  --nl-paragraph-font-size: var(--denhaag-base-card-pre-heading-font-size);
+  --nl-paragraph-font-weight: var(--denhaag-base-card-pre-heading-font-weight);
+  --nl-paragraph-line-height: var(--denhaag-base-card-pre-heading-line-height);
+  --nl-paragraph-color: var(--denhaag-base-card-pre-heading-color);
+  --nl-paragraph-paragraph-margin-block-start: 0;
+  --nl-paragraph-paragraph-margin-block-end: var(--denhaag-base-card-pre-heading-margin-block-end);
+
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
