@@ -1,0 +1,17 @@
+.denhaag-card-as-link__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--denhaag-card-as-link-body-row-gap);
+  padding-block-start: var(--denhaag-card-as-link-body-padding-block-start);
+  padding-block-end: var(--denhaag-card-as-link-body-padding-block-end);
+  padding-inline-start: var(--denhaag-card-as-link-body-padding-inline-start);
+  padding-inline-end: var(--denhaag-card-as-link-body-padding-inline-end);
+
+  // Padding reset for Case-Extended cards that contai na DL in the slot
+  .denhaag-description-list__title,
+  .denhaag-description-list__detail {
+    padding-block-start: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+  }
+}
