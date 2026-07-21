@@ -1,0 +1,20 @@
+.denhaag-base-card__description {
+  --nl-paragraph-font-size: var(--denhaag-base-card-description-font-size);
+  --nl-paragraph-line-height: var(--denhaag-base-card-description-line-height);
+  --nl-paragraph-color: var(--denhaag-base-card-color);
+  --nl-paragraph-paragraph-margin-block-start: var(--denhaag-base-card-description-margin-block-start);
+
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
