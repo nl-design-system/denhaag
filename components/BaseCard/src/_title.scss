@@ -1,0 +1,13 @@
+.denhaag-base-card__title {
+  --nl-paragraph-font-family: var(--denhaag-base-card-title-font-family);
+  --nl-paragraph-font-size: var(--denhaag-base-card-title-font-size);
+  --nl-paragraph-font-weight: var(--denhaag-base-card-title-font-weight);
+  --nl-paragraph-line-height: var(--denhaag-base-card-title-line-height);
+  --nl-paragraph-color: var(--denhaag-base-card-title-color);
+
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
