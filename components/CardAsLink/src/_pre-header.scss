@@ -1,0 +1,18 @@
+.denhaag-card-as-link__pre-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--denhaag-card-as-link-pre-header-row-gap);
+  padding-block-start: var(--denhaag-card-as-link-pre-header-padding-block-start);
+  padding-block-end: var(--denhaag-card-as-link-pre-header-padding-block-end);
+  padding-inline-start: var(--denhaag-card-as-link-pre-header-padding-inline-start);
+  padding-inline-end: var(--denhaag-card-as-link-pre-header-padding-inline-end);
+
+  // case-extended has this element AFTER the Heading in the DOM (for
+  // accessible reading order — see CardAsLink.tsx), but it must still
+  // visually appear where it always does: above the Heading. This uses
+  // order only to restore that visual position; the DOM order itself
+  // remains what a screen reader should follow.
+  &--visually-first {
+    order: -1;
+  }
+}
