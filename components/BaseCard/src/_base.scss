@@ -1,0 +1,107 @@
+@mixin list-view {
+  --denhaag-base-card-height: none;
+  --denhaag-base-card-background-color: none;
+  --denhaag-base-card-padding-block-start: 0px;
+  --denhaag-base-card-border-style: var(--denhaag-base-card-list-border-style);
+  --denhaag-base-card-border-width: var(--denhaag-base-card-list-border-width);
+  --denhaag-base-card-border-color: var(--denhaag-base-card-list-border-color);
+  --denhaag-base-card-before-display: none;
+  --denhaag-base-card-wrapper-gap: var(--denhaag-base-card-list-wrapper-gap);
+  --denhaag-base-card-wrapper-flex-direction: var(--denhaag-base-card-list-wrapper-flex-direction);
+  --denhaag-base-card-wrapper-padding-block-start: var(--denhaag-base-card-list-wrapper-padding-block-start);
+  --denhaag-base-card-wrapper-padding-block-end: var(--denhaag-base-card-list-wrapper-padding-block-end);
+  --denhaag-base-card-wrapper-padding-inline-start: var(--denhaag-base-card-list-wrapper-padding-inline-start);
+  --denhaag-base-card-wrapper-padding-inline-end: var(--denhaag-base-card-list-wrapper-padding-inline-end);
+  --denhaag-base-card-background-background-color: none;
+  --denhaag-base-card-background-hover-transform: none;
+  --denhaag-base-card-background-hover-background-color: var(
+    --denhaag-base-card-list-background-hover-background-color
+  );
+  --denhaag-base-card-title-color: var(--denhaag-base-card-list-title-color);
+  --denhaag-base-card-title-font-size: var(--denhaag-base-card-list-title-font-size);
+  --denhaag-base-card-subtitle-color: var(--denhaag-base-card-list-subtitle-color);
+  --denhaag-base-card-eyebrow-font-size: var(--denhaag-base-card-list-eyebrow-font-size);
+  --denhaag-base-card-footer-gap: var(--denhaag-base-card-list-footer-gap);
+  --denhaag-base-card-context-color: var(--denhaag-base-card-list-context-color);
+}
+
+.denhaag-base-card {
+  width: 100%;
+  height: var(--denhaag-base-card-height);
+  background: var(--denhaag-base-card-background-color);
+  padding-block-start: var(--denhaag-base-card-padding-block-start);
+  border-radius: var(--denhaag-base-card-border-radius);
+  border-bottom-style: var(--denhaag-base-card-border-style, none);
+  border-bottom-width: var(--denhaag-base-card-border-width, 0);
+  border-bottom-color: var(--denhaag-base-card-border-color, none);
+  position: relative;
+  box-sizing: border-box;
+
+  &::before {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: var(--denhaag-base-card-before-display, block);
+    width: 50%;
+    height: 20px;
+    content: "";
+    border-radius: 0 var(--denhaag-base-card-border-radius) 0 0;
+    background: var(--denhaag-base-card-paper-color);
+  }
+
+  @media (width <= 480px) {
+    @include list-view;
+
+    --denhaag-base-card-list-wrapper-flex-direction: column;
+  }
+
+  &--list {
+    @include list-view;
+  }
+
+  &--archived {
+    --denhaag-base-card-background-color: var(--denhaag-base-card-archived-background-color);
+    --denhaag-base-card-color: var(--denhaag-base-card-archived-color);
+    --denhaag-base-card-background-background-color: var(--denhaag-base-card-archived-background-background-color);
+    --denhaag-base-card-title-color: var(--denhaag-base-card-archived-title-color);
+    --denhaag-base-card-subtitle-color: var(--denhaag-base-card-archived-subtitle-color);
+    --denhaag-base-card-eyebrow-color: var(--denhaag-base-card-archived-eyebrow-color);
+    --denhaag-base-card-context-color: var(--denhaag-base-card-archived-context-color);
+    --denhaag-base-card-action-color: var(--denhaag-base-card-archived-action-color);
+    --denhaag-base-card-action-active-color: var(--denhaag-base-card-archived-action-color);
+  }
+
+  &--focus,
+  &:focus-within {
+    outline: var(--denhaag-focus-border);
+  }
+
+  &--hover,
+  &:hover,
+  &:hover:focus {
+    cursor: pointer;
+  }
+
+  &--hover,
+  &--focus,
+  &:hover,
+  &:focus-within {
+    &::before {
+      top: 12px;
+      transform: rotate(-2.45deg);
+      transform-origin: right;
+    }
+
+    .denhaag-base-card__background {
+      transform: var(--denhaag-base-card-background-hover-transform, rotateX(-20deg));
+      background-color: var(
+        --denhaag-base-card-background-hover-background-color,
+        var(--denhaag-base-card-background-background-color)
+      );
+    }
+
+    .denhaag-base-card__action {
+      color: var(--denhaag-base-card-action-active-color);
+    }
+  }
+}
