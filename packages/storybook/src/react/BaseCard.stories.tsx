@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
-// TODO: change to base-card package whe npublished
-import { CaseCard as BaseCard } from '@gemeente-denhaag/card';
+// TODO: change to @gemeente-denhaag/base-card package when published
+import { BaseCard } from '../../../../components/BaseCard/src/BaseCard';
 import readme from '../../../../components/BaseCard/README.md?raw';
 import { templateLocale } from '../templates/util';
 import { formatDate, longDateOptions } from '@gemeente-denhaag/utils';
@@ -9,14 +9,22 @@ import React from 'react';
 type Story = StoryObj<typeof meta>;
 
 const meta: Meta<typeof BaseCard> = {
+  title: 'React/BaseCard',
   component: BaseCard,
   tags: ['autodocs'],
   argTypes: {
+    eyebrow: {
+      type: 'string',
+    },
     title: {
       type: 'string',
     },
     subTitle: {
       type: 'string',
+    },
+    headingLevel: {
+      control: 'select',
+      options: [undefined, 2, 3, 4, 5, 6],
     },
     context: {
       type: 'string',
@@ -26,7 +34,7 @@ const meta: Meta<typeof BaseCard> = {
     },
     appearance: {
       type: 'string',
-      options: [undefined, 'archived'],
+      options: [undefined, 'archived', 'list'],
       control: {
         type: 'select',
       },
@@ -57,6 +65,23 @@ export const Default: Story = {
     subTitle: 'This impressive paella is a perfect party dish and a fun meal to cook.',
     context: '',
     href: '#',
+  },
+  decorators,
+};
+
+export const WithEyebrow: Story = {
+  args: {
+    ...Default.args,
+    eyebrow: 'Lopende aanvraag',
+  },
+  decorators,
+};
+
+export const WithHeadingLevel: Story = {
+  args: {
+    ...Default.args,
+    eyebrow: 'Lopende aanvraag',
+    headingLevel: 2,
   },
   decorators,
 };
@@ -132,5 +157,25 @@ export const ListWithBaseNumber: Story = {
     ...Default.args,
     appearance: 'list',
     context: 'VTH-TEST-2024-02437',
+  },
+};
+
+export const Hover: Story = {
+  args: {
+    ...Default.args,
+  },
+  decorators,
+  parameters: {
+    pseudo: { hover: true },
+  },
+};
+
+export const Active: Story = {
+  args: {
+    ...Default.args,
+  },
+  decorators,
+  parameters: {
+    pseudo: { active: true },
   },
 };
