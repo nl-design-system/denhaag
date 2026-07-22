@@ -1,0 +1,57 @@
+{
+  "basic": {
+    "none": "{denhaag.size.none}",
+    "inline": {
+      "2xs": "{denhaag.size.25}",
+      "xs": "{denhaag.size.50}",
+      "sm": "{denhaag.size.100}",
+      "md": "{denhaag.size.200}",
+      "lg": "{denhaag.size.300}",
+      "xl": "{denhaag.size.400}",
+      "2xl": "{denhaag.size.500}",
+      "3xl": "{denhaag.size.600}",
+      "4xl": "{denhaag.size.800}",
+      "5xl": "{denhaag.size.1200}",
+      "6xl": "{denhaag.size.1600}"
+    },
+    "inline.min": {
+      "2xs": "{denhaag.size.25}",
+      "xs": "{denhaag.size.50}",
+      "sm": "{denhaag.size.100}",
+      "md": "{denhaag.size.200}",
+      "lg": "{denhaag.size.300}",
+      "xl": "{denhaag.size.400}",
+      "2xl": "{denhaag.size.500}",
+      "3xl": "{denhaag.size.600}",
+      "4xl": "{denhaag.size.800}",
+      "5xl": "{denhaag.size.1200}",
+      "6xl": "{denhaag.size.1600}"
+    },
+    "inline.max": {
+      "2xs": "{denhaag.size.50}",
+      "xs": "{denhaag.size.100}",
+      "sm": "{denhaag.size.200}",
+      "md": "{denhaag.size.400}",
+      "lg": "{denhaag.size.600}",
+      "xl": "{denhaag.size.800}",
+      "2xl": "{denhaag.size.1000}",
+      "3xl": "{denhaag.size.1200}",
+      "4xl": "{denhaag.size.1600}",
+      "5xl": "{denhaag.size.2400}",
+      "6xl": "{denhaag.size.2400}"
+    },
+    "block": {
+      "2xs": "{denhaag.size.25}",
+      "xs": "{denhaag.size.50}",
+      "sm": "{denhaag.size.100}",
+      "md": "{denhaag.size.200}",
+      "lg": "{denhaag.size.300}",
+      "xl": "{denhaag.size.400}",
+      "2xl": "{denhaag.size.500}",
+      "3xl": "{denhaag.size.600}",
+      "4xl": "{denhaag.size.800}",
+      "5xl": "{denhaag.size.1200}",
+      "6xl": "{denhaag.size.1600}"
+    }
+  }
+}
