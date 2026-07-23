@@ -123,10 +123,10 @@ export function DesignTokensBlock() {
   if (storyObj && tokensDefinition) {
     return (
       <JsonTokensSection
-        copyLabel={storyObj.parameters.tokensJsonCopyLabel}
+        copyLabel={storyObj.parameters?.tokensJsonCopyLabel}
         definition={tokensDefinition}
-        description={storyObj.parameters.tokensJsonDescription}
-        title={storyObj.parameters.tokensJsonTitle}
+        description={storyObj.parameters?.tokensJsonDescription}
+        title={storyObj.parameters?.tokensJsonTitle}
       />
     );
   }
