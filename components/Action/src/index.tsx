@@ -8,4 +8,6 @@ export * from './ActionContext';
 export * from './ActionDetails';
 export * from './ActionDate';
 export * from './ActionActions';
+export * from './ActionRow';
+export * from './ActionIndicator';
 export * from './Time';

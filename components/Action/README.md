@@ -24,7 +24,7 @@ Een task is een interactief element dat je navigeert naar een andere pagina en a
 
 Een task bestaat uit:
 
-1. Leading icon (optional): biedt ondersteuning bij de bevestiging.
+1. Leading icon (optional): biedt ondersteuning bij de bevestiging. In de React-implementatie wordt dit gerenderd via de `indicator` prop op `ActionSingle`. De prop accepteert elk React-element, bijvoorbeeld een `CheckedIcon` uit `@gemeente-denhaag/icons` bij een afgeronde taak. Het component schrijft geen vaste set statussen voor; de implementatie bepaalt zelf welk icoon bij welke status hoort. Wanneer `indicator` aanwezig is, wordt automatisch ruimte gereserveerd in de layout en schuift de datum/context-sectie op zodat deze uitlijnt onder de label-tekst — ook op smalle schermen. Wanneer geen `indicator` wordt meegegeven, valt de layout terug op het standaardgedrag zonder inspringing.
 2. Label: communiceert de taak die je gaat uitvoeren.
 3. Subtext: biedt ondersteuning aan de label.
 4. Deadline icon (optional): geeft weer dat er een waarschuwing is waar je op moet letten.
@@ -43,6 +43,8 @@ De task bevat de staten:
 - checked
 - focus
 
+De `checked` status wordt niet automatisch afgeleid door het component; de implementatie geeft zelf aan of een taak is afgerond door een geschikt icoon (bijvoorbeeld `CheckedIcon`) mee te geven via de `indicator` prop. Wanneer geen `indicator` wordt meegegeven, wordt er geen leading icon getoond en valt de layout terug op het standaardgedrag zonder inspringing.
+
 ## Design properties
 
 **Typography**
@@ -59,10 +61,11 @@ Default:
 
 - Label: text color Grey/5
 - Subtext: text color Grey/4
+- Leading icon: svg color Blue/3 (standaardwaarde; via design tokens per implementatie aan te passen, bijvoorbeeld naar een groene kleur om een afgeronde status te benadrukken)
 - Deadline icon: svg color Orange/4
 - Date:
-- Default: text color Grey/4
-- Deadline: text color Orange/5
+  - Default: text color Grey/4
+  - Deadline: text color Orange/5
 - Trailing icon: svg color Blue/3
 - Buttons: zoals beschreven staat bij het component Buttons.
 - Container: border color Grey/2
@@ -123,10 +126,12 @@ Datum:
 
 ## Accessibility
 
-Gebruik semantische HTML-tags om de taakcomponent te structureren, zoals <form>, <label> en <input>. Dit maakt het voor schermlezers en andere ondersteunende technologieën gemakkelijker om het doel van de component te begrijpen.
+Gebruik semantische HTML-tags om de taakcomponent te structureren, zoals `<form>`, `<label>` en `<input>`. Dit maakt het voor schermlezers en andere ondersteunende technologieën gemakkelijker om het doel van de component te begrijpen.
 
 Gebruik contrastrijke kleuren voor tekst en achtergronden om ervoor te zorgen dat de taakcomponent gemakkelijk leesbaar is voor gebruikers met visuele beperkingen. Test het onderdeel met een kleurcontrastcontrole om er zeker van te zijn dat het voldoet aan de toegankelijkheidsrichtlijnen.
 
 Zorg ervoor dat alle functionaliteit binnen de taakcomponent toegankelijk is via een toetsenbord. Gebruikers die geen muis kunnen gebruiken, vertrouwen op toetsenbordnavigatie voor interactie met webpagina's.
 
 Test met hulptechnologieën: test de taakcomponent met behulp van schermlezers en andere hulptechnologieën om ervoor te zorgen dat deze bruikbaar is voor gebruikers met een handicap.
+
+Het leading icon (bijvoorbeeld een vinkje bij een afgeronde taak) mag nooit de enige indicatie van status zijn. Zorg dat de status ook op een andere manier kenbaar wordt gemaakt, bijvoorbeeld via tekst (zoals het label "Afgerond" in eventueel bovenliggende tabs) of via een `aria-label`/visueel verborgen tekst op het icoon zelf, zodat schermlezergebruikers de status ook meekrijgen.
