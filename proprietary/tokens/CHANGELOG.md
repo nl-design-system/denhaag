@@ -1,5 +1,16 @@
 # @gemeente-denhaag/design-tokens
 
+## 1.4.0
+
+### Minor Changes
+
+- 2a4984d: Add optional `indicator` prop to `Tabs` component to support rendering a number badge alongside the tab label.
+- a05cf80: Add optional `indicator` prop to ActionSingle to display a leading status icon (e.g. for completed tasks), with corresponding layout, design tokens, and Storybook stories.
+
+### Patch Changes
+
+- 80d20a5: Ensure package is published with provenance
+
 ## 1.3.0
 
 ### Minor Changes

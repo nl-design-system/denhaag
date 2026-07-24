@@ -1,5 +1,17 @@
 # @gemeente-denhaag/menu
 
+## 4.2.1
+
+### Patch Changes
+
+- 80d20a5: Ensure package is published with provenance
+- Updated dependencies [80d20a5]
+  - @gemeente-denhaag/language-switcher@3.2.1
+  - @gemeente-denhaag/number-badge@2.2.1
+  - @gemeente-denhaag/button@3.1.1
+  - @gemeente-denhaag/icons@4.2.1
+  - @gemeente-denhaag/sheet@4.1.1
+
 ## 4.2.0
 
 ### Minor Changes

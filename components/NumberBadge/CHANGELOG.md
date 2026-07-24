@@ -1,5 +1,11 @@
 # @gemeente-denhaag/number-badge
 
+## 2.2.1
+
+### Patch Changes
+
+- 80d20a5: Ensure package is published with provenance
+
 ## 2.2.0
 
 ### Minor Changes
