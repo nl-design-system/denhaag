@@ -1,5 +1,17 @@
 # @gemeente-denhaag/tab
 
+## 3.3.0
+
+### Minor Changes
+
+- 2a4984d: Add optional `indicator` prop to `Tabs` component to support rendering a number badge alongside the tab label.
+
+### Patch Changes
+
+- 80d20a5: Ensure package is published with provenance
+- Updated dependencies [80d20a5]
+  - @gemeente-denhaag/number-badge@2.2.1
+
 ## 3.2.0
 
 ### Minor Changes

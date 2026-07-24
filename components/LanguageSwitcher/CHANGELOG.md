@@ -1,5 +1,15 @@
 # @gemeente-denhaag/language-switcher
 
+## 3.2.1
+
+### Patch Changes
+
+- 80d20a5: Ensure package is published with provenance
+- Updated dependencies [80d20a5]
+  - @gemeente-denhaag/link-button@3.2.1
+  - @gemeente-denhaag/icons@4.2.1
+  - @gemeente-denhaag/link@4.2.1
+
 ## 3.2.0
 
 ### Minor Changes

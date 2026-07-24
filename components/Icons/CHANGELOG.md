@@ -1,5 +1,11 @@
 # @gemeente-denhaag/icons
 
+## 4.2.1
+
+### Patch Changes
+
+- 80d20a5: Ensure package is published with provenance
+
 ## 4.2.0
 
 ### Minor Changes

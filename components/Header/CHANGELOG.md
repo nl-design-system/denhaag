@@ -1,5 +1,25 @@
 # @gemeente-denhaag/header
 
+## 4.2.1
+
+### Patch Changes
+
+- 80d20a5: Ensure package is published with provenance
+- Updated dependencies [80d20a5]
+  - @gemeente-denhaag/responsive-content@2.1.1
+  - @gemeente-denhaag/language-switcher@3.2.1
+  - @gemeente-denhaag/breadcrumb@5.1.1
+  - @gemeente-denhaag/header-logo@3.1.1
+  - @gemeente-denhaag/iconbutton@3.2.1
+  - @gemeente-denhaag/paragraph@2.2.1
+  - @gemeente-denhaag/link-list@6.3.1
+  - @gemeente-denhaag/heading@2.2.1
+  - @gemeente-denhaag/button@3.1.1
+  - @gemeente-denhaag/icons@4.2.1
+  - @gemeente-denhaag/sheet@4.1.1
+  - @gemeente-denhaag/link@4.2.1
+  - @gemeente-denhaag/menu@4.2.1
+
 ## 4.2.0
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 # @gemeente-denhaag/stylesprovider
 
+## 3.3.1
+
+### Patch Changes
+
+- 80d20a5: Ensure package is published with provenance
+
 ## 3.3.0
 
 ### Minor Changes

@@ -1,5 +1,16 @@
 # @gemeente-denhaag/card-authentication
 
+## 2.1.1
+
+### Patch Changes
+
+- 80d20a5: Ensure package is published with provenance
+- Updated dependencies [80d20a5]
+  - @gemeente-denhaag/button-group@2.1.1
+  - @gemeente-denhaag/button@3.1.1
+  - @gemeente-denhaag/card@5.1.1
+  - @gemeente-denhaag/link@4.2.1
+
 ## 2.1.0
 
 ### Minor Changes
