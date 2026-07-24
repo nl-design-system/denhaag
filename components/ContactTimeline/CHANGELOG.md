@@ -1,5 +1,18 @@
 # @gemeente-denhaag/contact-timeline
 
+## 4.1.1
+
+### Patch Changes
+
+- 80d20a5: Ensure package is published with provenance
+- Updated dependencies [80d20a5]
+  - @gemeente-denhaag/process-steps@4.3.1
+  - @gemeente-denhaag/step-marker@3.1.1
+  - @gemeente-denhaag/paragraph@2.2.1
+  - @gemeente-denhaag/icons@4.2.1
+  - @gemeente-denhaag/utils@3.1.1
+  - @gemeente-denhaag/file@2.5.1
+
 ## 4.1.0
 
 ### Minor Changes

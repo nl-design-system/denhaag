@@ -1,5 +1,11 @@
 # @gemeente-denhaag/rich-text
 
+## 5.1.1
+
+### Patch Changes
+
+- 80d20a5: Ensure package is published with provenance
+
 ## 5.1.0
 
 ### Minor Changes

@@ -1,5 +1,54 @@
 # @gemeente-denhaag/components-react
 
+## 5.1.1
+
+### Patch Changes
+
+- 80d20a5: Ensure package is published with provenance
+- Updated dependencies [2a4984d]
+- Updated dependencies [80d20a5]
+- Updated dependencies [a05cf80]
+  - @gemeente-denhaag/tab@3.3.0
+  - @gemeente-denhaag/form-field-error-message@3.2.1
+  - @gemeente-denhaag/form-field-description@3.2.1
+  - @gemeente-denhaag/responsive-content@2.1.1
+  - @gemeente-denhaag/contact-timeline@4.1.1
+  - @gemeente-denhaag/descriptionlist@4.1.1
+  - @gemeente-denhaag/side-navigation@4.2.1
+  - @gemeente-denhaag/stylesprovider@3.3.1
+  - @gemeente-denhaag/form-fieldset@3.2.1
+  - @gemeente-denhaag/form-progress@4.1.1
+  - @gemeente-denhaag/process-steps@4.3.1
+  - @gemeente-denhaag/radio-button@3.2.1
+  - @gemeente-denhaag/iconbutton@3.2.1
+  - @gemeente-denhaag/link-button@3.2.1
+  - @gemeente-denhaag/pagination@3.1.1
+  - @gemeente-denhaag/accordion@4.1.1
+  - @gemeente-denhaag/card-group@2.1.1
+  - @gemeente-denhaag/form-field@3.2.1
+  - @gemeente-denhaag/form-label@3.3.1
+  - @gemeente-denhaag/page-index@4.1.1
+  - @gemeente-denhaag/text-input@3.2.1
+  - @gemeente-denhaag/checkbox@3.2.1
+  - @gemeente-denhaag/link-list@6.3.1
+  - @gemeente-denhaag/textarea@3.2.1
+  - @gemeente-denhaag/divider@3.1.1
+  - @gemeente-denhaag/action@4.4.0
+  - @gemeente-denhaag/button@3.1.1
+  - @gemeente-denhaag/footer@4.3.1
+  - @gemeente-denhaag/header@4.2.1
+  - @gemeente-denhaag/select@3.2.1
+  - @gemeente-denhaag/alert@4.1.1
+  - @gemeente-denhaag/icons@4.2.1
+  - @gemeente-denhaag/sheet@4.1.1
+  - @gemeente-denhaag/table@4.1.1
+  - @gemeente-denhaag/card@5.1.1
+  - @gemeente-denhaag/file@2.5.1
+  - @gemeente-denhaag/link@4.2.1
+  - @gemeente-denhaag/list@3.1.1
+  - @gemeente-denhaag/menu@4.2.1
+  - @gemeente-denhaag/page@2.1.1
+
 ## 5.1.0
 
 ### Minor Changes
