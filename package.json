@@ -55,7 +55,7 @@
     "baseline-browser-mapping": "2.10.38",
     "chokidar-cli": "3.0.0",
     "ejs": "6.0.1",
-    "eslint": "9.39.4",
+    "eslint": "10.6.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-import": "2.32.0",
     "eslint-plugin-json": "4.0.1",
