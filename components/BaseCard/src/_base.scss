@@ -12,10 +12,10 @@
   --denhaag-base-card-wrapper-padding-block-end: var(--denhaag-base-card-list-wrapper-padding-block-end);
   --denhaag-base-card-wrapper-padding-inline-start: var(--denhaag-base-card-list-wrapper-padding-inline-start);
   --denhaag-base-card-wrapper-padding-inline-end: var(--denhaag-base-card-list-wrapper-padding-inline-end);
-  --denhaag-base-card-background-background-color: none;
-  --denhaag-base-card-background-hover-transform: none;
-  --denhaag-base-card-background-hover-background-color: var(
-    --denhaag-base-card-list-background-hover-background-color
+  --denhaag-base-card-decoration-background-color: none;
+  --denhaag-base-card-decoration-hover-transform: none;
+  --denhaag-base-card-decoration-hover-background-color: var(
+    --denhaag-base-card-list-decoration-hover-background-color
   );
   --denhaag-base-card-title-color: var(--denhaag-base-card-list-title-color);
   --denhaag-base-card-title-font-size: var(--denhaag-base-card-list-title-font-size);
@@ -62,7 +62,7 @@
   &--archived {
     --denhaag-base-card-background-color: var(--denhaag-base-card-archived-background-color);
     --denhaag-base-card-color: var(--denhaag-base-card-archived-color);
-    --denhaag-base-card-background-background-color: var(--denhaag-base-card-archived-background-background-color);
+    --denhaag-base-card-decoration-background-color: var(--denhaag-base-card-archived-decoration-background-color);
     --denhaag-base-card-title-color: var(--denhaag-base-card-archived-title-color);
     --denhaag-base-card-subtitle-color: var(--denhaag-base-card-archived-subtitle-color);
     --denhaag-base-card-eyebrow-color: var(--denhaag-base-card-archived-eyebrow-color);
@@ -92,11 +92,11 @@
       transform-origin: right;
     }
 
-    .denhaag-base-card__background {
-      transform: var(--denhaag-base-card-background-hover-transform, rotateX(-20deg));
+    .denhaag-base-card__decoration {
+      transform: var(--denhaag-base-card-decoration-hover-transform, rotateX(-20deg));
       background-color: var(
-        --denhaag-base-card-background-hover-background-color,
-        var(--denhaag-base-card-background-background-color)
+        --denhaag-base-card-decoration-hover-background-color,
+        var(--denhaag-base-card-decoration-background-color)
       );
     }
 

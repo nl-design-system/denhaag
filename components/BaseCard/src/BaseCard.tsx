@@ -6,16 +6,16 @@ import Base from './BaseCardBase';
 import Footer from './BaseCardFooter';
 import Action from './BaseCardAction';
 import Wrapper from './BaseCardWrapper';
-import Background from './BaseCardBackground';
+import Decoration from './BaseCardDecoration';
 import Context from './BaseCardContext';
 
 export type BaseCardAppearance = 'default' | 'archived' | 'list';
 
-/** Only allow real heading levels, never h1 (that belongs to the page itself) */
+/** Allow real heading levels, never h1 (that belongs to the page itself) */
 export type BaseCardHeadingLevel = 2 | 3 | 4 | 5 | 6;
 
 export interface BaseCardProps {
-  /** Small line of text above the title, e.g. a status label */
+  /** Small line of text above the title, e.g. a status or pre-heading */
   eyebrow?: string;
   title: string;
   subTitle?: string;
@@ -49,7 +49,7 @@ export const BaseCard = ({
   return (
     <Base appearance={appearance}>
       <Wrapper>
-        <Background />
+        <Decoration />
         <div>
           {eyebrow && headingLevel ? (
             // Only group when the title is actually a heading; otherwise there is

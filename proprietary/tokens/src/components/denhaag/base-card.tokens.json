@@ -22,7 +22,7 @@
         "padding-inline-start": { "value": "24px" },
         "padding-inline-end": { "value": "24px" }
       },
-      "background": {
+      "decoration": {
         "background-color": { "value": "{denhaag.color.blue.1}" }
       },
       "title": {
@@ -52,7 +52,7 @@
       "archived": {
         "color": { "value": "{denhaag.color.grey.4}" },
         "background-color": { "value": "{denhaag.color.grey.2}" },
-        "background": {
+        "decoration": {
           "background-color": { "value": "{denhaag.color.grey.1}" }
         },
         "title": {
@@ -83,7 +83,7 @@
           "padding-inline-start": { "value": "{denhaag.space.block.md}" },
           "padding-inline-end": { "value": "{denhaag.space.block.md}" }
         },
-        "background": {
+        "decoration": {
           "hover": {
             "background-color": { "value": "{denhaag.color.grey.1}" }
           }
