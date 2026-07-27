@@ -1,4 +1,4 @@
-.denhaag-base-card__background {
+.denhaag-base-card__decoration {
   position: absolute;
   z-index: -1;
   top: 0;
@@ -8,7 +8,7 @@
   transform-origin: 50% 100%;
   border-radius: var(--denhaag-base-card-border-radius);
   border-top-left-radius: 0;
-  background: var(--denhaag-base-card-background-background-color);
+  background: var(--denhaag-base-card-decoration-background-color);
 
   &::before {
     position: absolute;
@@ -19,7 +19,7 @@
     height: 25px;
     content: "";
     border-top-left-radius: var(--denhaag-base-card-border-radius);
-    background: var(--denhaag-base-card-background-background-color);
+    background: var(--denhaag-base-card-decoration-background-color);
   }
 
   &::after {
@@ -31,6 +31,6 @@
     height: 22px;
     content: "";
     transform: skewX(30deg);
-    background: var(--denhaag-base-card-background-background-color);
+    background: var(--denhaag-base-card-decoration-background-color);
   }
 }

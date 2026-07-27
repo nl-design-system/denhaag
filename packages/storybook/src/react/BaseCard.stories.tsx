@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 // TODO: change to @gemeente-denhaag/base-card package when published
-import { BaseCard } from '../../../../components/BaseCard/src/BaseCard';
+import { BaseCard } from '../../../../components/BaseCard/src';
 import readme from '../../../../components/BaseCard/README.md?raw';
 import { templateLocale } from '../templates/util';
 import { formatDate, longDateOptions } from '@gemeente-denhaag/utils';
