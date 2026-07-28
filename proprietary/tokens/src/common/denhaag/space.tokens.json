@@ -26,6 +26,32 @@
         "3xl": { "value": "2.5rem" },
         "4xl": { "value": "3rem" },
         "5xl": { "value": "4rem" }
+      },
+      "row": {
+        "3xs": { "value": "{denhaag.space.block.3xs}" },
+        "2xs": { "value": "{denhaag.space.block.2xs}" },
+        "xs": { "value": "{denhaag.space.block.xs}" },
+        "sm": { "value": "{denhaag.space.block.sm}" },
+        "md": { "value": "{denhaag.space.block.md}" },
+        "lg": { "value": "{denhaag.space.block.lg}" },
+        "xl": { "value": "{denhaag.space.block.xl}" },
+        "2xl": { "value": "{denhaag.space.block.2xl}" },
+        "3xl": { "value": "{denhaag.space.block.3xl}" },
+        "4xl": { "value": "{denhaag.space.block.4xl}" },
+        "5xl": { "value": "{denhaag.space.block.5xl}" }
+      },
+      "column": {
+        "3xs": { "value": "{denhaag.space.inline.3xs}" },
+        "2xs": { "value": "{denhaag.space.inline.2xs}" },
+        "xs": { "value": "{denhaag.space.inline.xs}" },
+        "sm": { "value": "{denhaag.space.inline.sm}" },
+        "md": { "value": "{denhaag.space.inline.md}" },
+        "lg": { "value": "{denhaag.space.inline.lg}" },
+        "xl": { "value": "{denhaag.space.inline.xl}" },
+        "2xl": { "value": "{denhaag.space.inline.2xl}" },
+        "3xl": { "value": "{denhaag.space.inline.3xl}" },
+        "4xl": { "value": "{denhaag.space.inline.4xl}" },
+        "5xl": { "value": "{denhaag.space.inline.5xl}" }
       }
     }
   }

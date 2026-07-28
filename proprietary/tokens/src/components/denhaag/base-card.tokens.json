@@ -16,6 +16,14 @@
         "line-height": { "value": "1.5" },
         "margin-block-end": { "value": "{denhaag.space.block.3xs}" }
       },
+      "pre-header": {
+        "padding-block-start": { "value": "0px" },
+        "padding-block-end": { "value": "0px" },
+        "padding-inline-start": { "value": "0px" },
+        "padding-inline-end": { "value": "0px" },
+        "column-gap": { "value": "{basis.space.column.xl}" },
+        "row-gap": { "value": "{basis.space.row.md}" }
+      },
       "wrapper": {
         "padding-block-start": { "value": "12px" },
         "padding-block-end": { "value": "24px" },
