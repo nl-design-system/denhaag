@@ -11,6 +11,9 @@ import Context from './BaseCardContext';
 
 export type BaseCardAppearance = 'default' | 'archived' | 'list';
 
+/** Which color theme the card uses; more variants (e.g. 'plan') will be added later */
+export type BaseCardVariant = 'case';
+
 /** Allow real heading levels, never h1 (that belongs to the page itself) */
 export type BaseCardHeadingLevel = 2 | 3 | 4 | 5 | 6;
 
@@ -28,6 +31,8 @@ export interface BaseCardProps {
   context?: React.ReactNode;
   href?: string;
   appearance?: BaseCardAppearance;
+  /** Which color theme the card uses */
+  variant?: BaseCardVariant;
   /** For projects that want to inject their own Link component (e.g. react-router) */
   Link?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
 }
@@ -40,6 +45,7 @@ export const BaseCard = ({
   context,
   href,
   appearance = 'default',
+  variant = 'case',
   Link = BasicLink,
 }: BaseCardProps) => {
   const TitleTag = headingLevel ? (`h${headingLevel}` as const) : 'p';
@@ -47,7 +53,7 @@ export const BaseCard = ({
   const titleElement = <TitleTag className="denhaag-base-card__title">{title}</TitleTag>;
 
   return (
-    <Base appearance={appearance}>
+    <Base appearance={appearance} variant={variant}>
       <Wrapper>
         <Decoration />
         <div>

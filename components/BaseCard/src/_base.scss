@@ -55,6 +55,25 @@
     --denhaag-base-card-list-wrapper-flex-direction: column;
   }
 
+  &--case {
+    --denhaag-base-card-background-color: var(--denhaag-base-card-case-background-color);
+    --denhaag-base-card-decoration-background-color: var(--denhaag-base-card-case-decoration-background-color);
+    --denhaag-base-card-title-color: var(--denhaag-base-card-case-title-color);
+    --denhaag-base-card-title-font-family: var(--denhaag-base-card-case-title-font-family);
+    --denhaag-base-card-title-font-size: var(--denhaag-base-card-case-title-font-size);
+    --denhaag-base-card-title-font-weight: var(--denhaag-base-card-case-title-font-weight);
+    --denhaag-base-card-title-line-height: var(--denhaag-base-card-case-title-line-height);
+    --denhaag-base-card-subtitle-color: var(--denhaag-base-card-case-subtitle-color);
+    --denhaag-base-card-subtitle-font-family: var(--denhaag-base-card-case-subtitle-font-family);
+    --denhaag-base-card-subtitle-font-size: var(--denhaag-base-card-case-subtitle-font-size);
+    --denhaag-base-card-subtitle-font-weight: var(--denhaag-base-card-case-subtitle-font-weight);
+    --denhaag-base-card-subtitle-line-height: var(--denhaag-base-card-case-subtitle-line-height);
+    --denhaag-base-card-subtitle-margin-block-start: var(--denhaag-base-card-case-subtitle-margin-block-start);
+    --denhaag-base-card-context-color: var(--denhaag-base-card-case-context-color);
+    --denhaag-base-card-action-color: var(--denhaag-base-card-case-action-color);
+    --denhaag-base-card-action-active-color: var(--denhaag-base-card-case-action-active-color);
+  }
+
   &--list {
     @include list-view;
   }
