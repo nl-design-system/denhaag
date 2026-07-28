@@ -6,6 +6,7 @@ import React from 'react';
 
 type JsonTokensSectionProps = {
   copyLabel?: React.ReactNode;
+  copyEmptyLabel?: React.ReactNode;
   definition: Parameters<typeof createEmptyDesignTokenTree>[0];
   description?: React.ReactNode;
   title?: React.ReactNode;
@@ -79,21 +80,24 @@ const reactTokenDefinitionPaths: Record<string, string | string[]> = {
 
 function JsonTokensSection({
   copyLabel = 'Copy JSON',
+  copyEmptyLabel = 'Copy empty JSON',
   definition,
   description,
   title = <>Tokens</>,
 }: JsonTokensSectionProps) {
-  const code = JSON.stringify(createEmptyDesignTokenTree(definition), null, '  ');
+  const codeWithValue = JSON.stringify(definition, null, '  ');
+  const codeEmpty = JSON.stringify(createEmptyDesignTokenTree(definition), null, '  ');
 
   return (
     <section>
       <h2>{title}</h2>
       {description}
       <br />
-      <pre>{code}</pre>
+      <pre>{codeWithValue}</pre>
       <br />
-      <div>
-        <CopyButton value={code} textContent={copyLabel} />
+      <div style={{ display: 'flex', gap: '1rem' }}>
+        <CopyButton value={codeWithValue} textContent={copyLabel} />
+        <CopyButton value={codeEmpty} textContent={copyEmptyLabel} />
       </div>
     </section>
   );
