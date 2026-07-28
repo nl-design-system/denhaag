@@ -1,14 +1,16 @@
 import React, { HTMLAttributes } from 'react';
 import clsx from 'clsx';
-import { BaseCardAppearance } from './BaseCard';
+import { BaseCardAppearance, BaseCardVariant } from './BaseCard';
 
 export type BaseCardBaseProps = HTMLAttributes<HTMLDivElement> & {
   appearance?: BaseCardAppearance;
+  variant?: BaseCardVariant;
 };
 
-export const BaseCardBase = ({ appearance = 'default', className, ...props }: BaseCardBaseProps) => {
+export const BaseCardBase = ({ appearance = 'default', variant = 'case', className, ...props }: BaseCardBaseProps) => {
   const classNames = clsx(
     'denhaag-base-card',
+    `denhaag-base-card--${variant}`,
     {
       'denhaag-base-card--archived': appearance === 'archived',
       'denhaag-base-card--list': appearance === 'list',

@@ -3,10 +3,13 @@
     "base-card": {
       "height": { "value": "240px" },
       "border-radius": { "value": "3px" },
-      "background-color": { "value": "{denhaag.color.blue.2}" },
+      "background-color": { "value": "{denhaag.color.white}" },
       "padding-block-start": { "value": "20px" },
       "paper": {
         "color": { "value": "{denhaag.color.white}" }
+      },
+      "decoration": {
+        "background-color": { "value": "{denhaag.color.grey.1}" }
       },
       "eyebrow": {
         "color": { "value": "{denhaag.color.blue.4}" },
@@ -30,31 +33,34 @@
         "padding-inline-start": { "value": "24px" },
         "padding-inline-end": { "value": "24px" }
       },
-      "decoration": {
-        "background-color": { "value": "{denhaag.color.blue.1}" }
-      },
-      "title": {
-        "color": { "value": "{denhaag.color.blue.5}" },
-        "font-family": { "value": "{basis.heading.font-family}" },
-        "font-size": { "value": "{basis.text.font-size.xl}" },
-        "font-weight": { "value": "{basis.text.font-weight.bold}" },
-        "line-height": { "value": "1.5" }
-      },
-      "subtitle": {
-        "color": { "value": "{denhaag.color.blue.4}" },
-        "font-family": { "value": "{basis.text.font-family.default}" },
-        "font-size": { "value": "{basis.text.font-size.md}" },
-        "font-weight": { "value": "{basis.text.font-weight.default}" },
-        "line-height": { "value": "1.5" },
-        "margin-block-start": { "value": "{denhaag.space.block.2xs}" }
-      },
-      "context": {
-        "color": { "value": "{denhaag.color.blue.4}" }
-      },
-      "action": {
-        "color": { "value": "{denhaag.color.blue.3}" },
-        "active": {
+      "case": {
+        "background-color": { "value": "{denhaag.color.blue.2}" },
+        "decoration": {
+          "background-color": { "value": "{denhaag.color.blue.1}" }
+        },
+        "title": {
+          "color": { "value": "{denhaag.color.blue.5}" },
+          "font-family": { "value": "{basis.heading.font-family}" },
+          "font-size": { "value": "{basis.text.font-size.xl}" },
+          "font-weight": { "value": "{basis.text.font-weight.bold}" },
+          "line-height": { "value": "1.5" }
+        },
+        "subtitle": {
+          "color": { "value": "{denhaag.color.blue.4}" },
+          "font-family": { "value": "{basis.text.font-family.default}" },
+          "font-size": { "value": "{basis.text.font-size.md}" },
+          "font-weight": { "value": "{basis.text.font-weight.default}" },
+          "line-height": { "value": "1.5" },
+          "margin-block-start": { "value": "{denhaag.space.block.2xs}" }
+        },
+        "context": {
           "color": { "value": "{denhaag.color.blue.4}" }
+        },
+        "action": {
+          "color": { "value": "{denhaag.color.blue.3}" },
+          "active": {
+            "color": { "value": "{denhaag.color.blue.4}" }
+          }
         }
       },
       "archived": {

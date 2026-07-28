@@ -39,6 +39,13 @@ const meta: Meta<typeof BaseCard> = {
         type: 'select',
       },
     },
+    variant: {
+      type: 'string',
+      options: ['case'],
+      control: {
+        type: 'select',
+      },
+    },
   },
   parameters: {
     docs: {
@@ -65,6 +72,7 @@ export const Default: Story = {
     subTitle: 'This impressive paella is a perfect party dish and a fun meal to cook.',
     context: '',
     href: '#',
+    variant: 'case',
   },
   decorators,
 };
