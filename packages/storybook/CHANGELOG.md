@@ -1,5 +1,11 @@
 # @gemeente-denhaag/storybook
 
+## 5.6.1
+
+### Patch Changes
+
+- 3054381: Add tokens to story docs
+
 ## 5.6.0
 
 ### Minor Changes
