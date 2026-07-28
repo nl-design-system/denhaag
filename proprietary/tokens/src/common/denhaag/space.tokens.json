@@ -1,4 +1,34 @@
 {
+  "denhaag": {
+    "space": {
+      "block": {
+        "3xs": { "value": ".125rem" },
+        "2xs": { "value": ".25rem" },
+        "xs": { "value": ".5rem" },
+        "sm": { "value": ".75rem" },
+        "md": { "value": "1rem" },
+        "lg": { "value": "1.25rem" },
+        "xl": { "value": "1.5rem" },
+        "2xl": { "value": "2rem" },
+        "3xl": { "value": "2.5rem" },
+        "4xl": { "value": "3rem" },
+        "5xl": { "value": "4rem" }
+      },
+      "inline": {
+        "3xs": { "value": ".125rem" },
+        "2xs": { "value": ".25rem" },
+        "xs": { "value": ".5rem" },
+        "sm": { "value": ".75rem" },
+        "md": { "value": "1rem" },
+        "lg": { "value": "1.25rem" },
+        "xl": { "value": "1.5rem" },
+        "2xl": { "value": "2rem" },
+        "3xl": { "value": "2.5rem" },
+        "4xl": { "value": "3rem" },
+        "5xl": { "value": "4rem" }
+      }
+    }
+  },
   "basis": {
     "space": {
       "none": { "value": "{denhaag.size.0}" },
@@ -171,18 +201,10 @@
       }
     },
     "form-control": {
-      "padding-block-end": {
-        "value": "{denhaag.size.300}"
-      },
-      "padding-block-start": {
-        "value": "{denhaag.size.300}"
-      },
-      "padding-inline-end": {
-        "value": "{denhaag.size.300}"
-      },
-      "padding-inline-start": {
-        "value": "{denhaag.size.300}"
-      }
+      "padding-block-end": { "value": "{denhaag.size.300}" },
+      "padding-block-start": { "value": "{denhaag.size.300}" },
+      "padding-inline-end": { "value": "{denhaag.size.300}" },
+      "padding-inline-start": { "value": "{denhaag.size.300}" }
     }
   }
 }
