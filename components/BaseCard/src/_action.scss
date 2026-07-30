@@ -1,0 +1,30 @@
+.denhaag-base-card__action {
+  display: block;
+  margin-inline-start: auto;
+  color: var(--denhaag-base-card-action-color);
+
+  &:focus {
+    outline: none;
+  }
+
+  &::before {
+    --denhaag-base-card-action-before-padding-block: calc(
+      var(--denhaag-base-card-padding-block-start) + var(--denhaag-base-card-wrapper-padding-block-start)
+    );
+
+    content: "";
+    position: absolute;
+    inset-block-start: calc(0px - var(--denhaag-base-card-padding-block-start));
+    inset-block-end: 0;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    padding-block-start: var(--denhaag-base-card-action-before-padding-block);
+    padding-block-end: var(--denhaag-base-card-wrapper-padding-block-end);
+    padding-inline-start: var(--denhaag-base-card-wrapper-padding-inline-start);
+    padding-inline-end: var(--denhaag-base-card-wrapper-padding-inline-end);
+  }
+
+  svg {
+    display: block !important;
+  }
+}
