@@ -80,6 +80,23 @@
     --denhaag-base-card-list-wrapper-flex-direction: column;
   }
 
+  &--default {
+    @include variant-default("default");
+
+    &:hover {
+      @include variant-state("default", "hover");
+    }
+
+    &:active {
+      @include variant-state("default", "active");
+    }
+
+    &:has(:focus-visible),
+    &:focus-within {
+      @include variant-state("default", "focus-visible");
+    }
+  }
+
   &--case {
     --denhaag-base-card-min-block-size: var(--denhaag-base-card-case-min-block-size);
     --denhaag-base-card-title-font-family: var(--denhaag-base-card-case-title-font-family);

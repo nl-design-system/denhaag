@@ -11,8 +11,8 @@ import Context from './BaseCardContext';
 
 export type BaseCardAppearance = 'default' | 'archived' | 'list';
 
-/** Which color theme the card uses; more variants (e.g. 'plan') will be added later */
-export type BaseCardVariant = 'case';
+/** Which color theme the card uses; more variants (e.g. 'plan', 'product') will be added later */
+export type BaseCardVariant = 'default' | 'case';
 
 /** Allow real heading levels, never h1 (that belongs to the page itself) */
 export type BaseCardHeadingLevel = 2 | 3 | 4 | 5 | 6;

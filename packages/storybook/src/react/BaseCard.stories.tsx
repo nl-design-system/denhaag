@@ -41,7 +41,7 @@ const meta: Meta<typeof BaseCard> = {
     },
     variant: {
       type: 'string',
-      options: ['case'],
+      options: ['default', 'case'],
       control: {
         type: 'select',
       },
@@ -66,13 +66,16 @@ const decorators: typeof meta.decorators = [
   ),
 ];
 
+// Default color theme, no decoration/paper fold — matches the
+// "Tokens" (shared, non-variant-specific) styling from the NLDS core team's
+// card-as-link proposal.
 export const Default: Story = {
   args: {
     title: 'Shrimp and Chorizo Paella',
     subTitle: 'This impressive paella is a perfect party dish and a fun meal to cook.',
     context: '',
     href: '#',
-    variant: 'case',
+    variant: 'default',
   },
   decorators,
 };
@@ -86,6 +89,42 @@ export const Case: Story = {
     variant: 'case',
   },
   decorators,
+};
+
+// --hover / --active / --focus-visible are not real DOM classes rendered by
+// the component itself — they only exist as CSS modifier classes in the
+// stylesheet as a fallback for consumers who can't rely on native
+// :hover/:active/:focus-visible (e.g. some test setups). In the browser and
+// in these stories, the native pseudo-classes are what actually apply, via
+// the addon-pseudo-states `pseudo` parameter below.
+export const CaseHover: Story = {
+  args: {
+    ...Case.args,
+  },
+  decorators,
+  parameters: {
+    pseudo: { hover: true },
+  },
+};
+
+export const CaseActive: Story = {
+  args: {
+    ...Case.args,
+  },
+  decorators,
+  parameters: {
+    pseudo: { active: true },
+  },
+};
+
+export const CaseFocusVisible: Story = {
+  args: {
+    ...Case.args,
+  },
+  decorators,
+  parameters: {
+    pseudo: { focusVisible: true },
+  },
 };
 
 export const WithEyebrow: Story = {
@@ -133,6 +172,39 @@ export const Archived: Story = {
     appearance: 'archived',
   },
   decorators,
+};
+
+// Same pseudo-state caveat as CaseHover/CaseActive/CaseFocusVisible above:
+// these simulate the native :hover/:active/:focus-visible pseudo-classes,
+// not the --hover/--active/--focus-visible fallback modifier classes.
+export const ArchivedHover: Story = {
+  args: {
+    ...Archived.args,
+  },
+  decorators,
+  parameters: {
+    pseudo: { hover: true },
+  },
+};
+
+export const ArchivedActive: Story = {
+  args: {
+    ...Archived.args,
+  },
+  decorators,
+  parameters: {
+    pseudo: { active: true },
+  },
+};
+
+export const ArchivedFocusVisible: Story = {
+  args: {
+    ...Archived.args,
+  },
+  decorators,
+  parameters: {
+    pseudo: { focusVisible: true },
+  },
 };
 
 export const Inactive: Story = {
