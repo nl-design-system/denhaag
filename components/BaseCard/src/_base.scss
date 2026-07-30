@@ -13,10 +13,6 @@
   --denhaag-base-card-wrapper-padding-inline-start: var(--denhaag-base-card-list-wrapper-padding-inline-start);
   --denhaag-base-card-wrapper-padding-inline-end: var(--denhaag-base-card-list-wrapper-padding-inline-end);
   --denhaag-base-card-decoration-background-color: none;
-  --denhaag-base-card-decoration-hover-transform: none;
-  --denhaag-base-card-decoration-hover-background-color: var(
-    --denhaag-base-card-list-decoration-hover-background-color
-  );
   --denhaag-base-card-title-color: var(--denhaag-base-card-list-title-color);
   --denhaag-base-card-title-font-size: var(--denhaag-base-card-list-title-font-size);
   --denhaag-base-card-subtitle-color: var(--denhaag-base-card-list-subtitle-color);
@@ -25,15 +21,44 @@
   --denhaag-base-card-context-color: var(--denhaag-base-card-list-context-color);
 }
 
+@mixin variant-default($variant) {
+  --denhaag-base-card-background-color: var(--denhaag-base-card-#{$variant}-default-background-color);
+  --denhaag-base-card-border-style: var(--denhaag-base-card-#{$variant}-default-border-style);
+  --denhaag-base-card-border-width: var(--denhaag-base-card-#{$variant}-default-border-width);
+  --denhaag-base-card-border-color: var(--denhaag-base-card-#{$variant}-default-border-color);
+  --denhaag-base-card-decoration-background-color: var(
+    --denhaag-base-card-#{$variant}-default-decoration-background-color
+  );
+  --denhaag-base-card-decoration-paper-color: var(--denhaag-base-card-#{$variant}-default-decoration-paper-color);
+  --denhaag-base-card-title-color: var(--denhaag-base-card-#{$variant}-default-title-color);
+  --denhaag-base-card-subtitle-color: var(--denhaag-base-card-#{$variant}-default-subtitle-color);
+  --denhaag-base-card-context-color: var(--denhaag-base-card-#{$variant}-default-context-color);
+  --denhaag-base-card-label-color: var(--denhaag-base-card-#{$variant}-default-label-color);
+  --denhaag-base-card-link-icon-color: var(--denhaag-base-card-#{$variant}-default-link-icon-color);
+}
+
+@mixin variant-state($variant, $state) {
+  --denhaag-base-card-background-color: var(--denhaag-base-card-#{$variant}-#{$state}-background-color);
+  --denhaag-base-card-border-style: var(--denhaag-base-card-#{$variant}-#{$state}-border-style);
+  --denhaag-base-card-border-width: var(--denhaag-base-card-#{$variant}-#{$state}-border-width);
+  --denhaag-base-card-border-color: var(--denhaag-base-card-#{$variant}-#{$state}-border-color);
+  --denhaag-base-card-decoration-background-color: var(
+    --denhaag-base-card-#{$variant}-#{$state}-decoration-background-color
+  );
+  --denhaag-base-card-decoration-paper-color: var(--denhaag-base-card-#{$variant}-#{$state}-decoration-paper-color);
+  --denhaag-base-card-title-color: var(--denhaag-base-card-#{$variant}-#{$state}-title-color);
+  --denhaag-base-card-label-color: var(--denhaag-base-card-#{$variant}-#{$state}-label-color);
+  --denhaag-base-card-link-icon-color: var(--denhaag-base-card-#{$variant}-#{$state}-link-icon-color);
+}
+
 .denhaag-base-card {
   width: 100%;
-  height: var(--denhaag-base-card-height);
+  min-block-size: var(--denhaag-base-card-min-block-size);
   background: var(--denhaag-base-card-background-color);
   padding-block-start: var(--denhaag-base-card-padding-block-start);
   border-radius: var(--denhaag-base-card-border-radius);
-  border-bottom-style: var(--denhaag-base-card-border-style, none);
-  border-bottom-width: var(--denhaag-base-card-border-width, 0);
-  border-bottom-color: var(--denhaag-base-card-border-color, none);
+  border: var(--denhaag-base-card-border-width, 0) var(--denhaag-base-card-border-style, none)
+    var(--denhaag-base-card-border-color, none);
   position: relative;
   box-sizing: border-box;
 
@@ -56,71 +81,77 @@
   }
 
   &--case {
-    --denhaag-base-card-background-color: var(--denhaag-base-card-case-background-color);
-    --denhaag-base-card-decoration-background-color: var(--denhaag-base-card-case-decoration-background-color);
-    --denhaag-base-card-title-color: var(--denhaag-base-card-case-title-color);
+    --denhaag-base-card-min-block-size: var(--denhaag-base-card-case-min-block-size);
     --denhaag-base-card-title-font-family: var(--denhaag-base-card-case-title-font-family);
     --denhaag-base-card-title-font-size: var(--denhaag-base-card-case-title-font-size);
     --denhaag-base-card-title-font-weight: var(--denhaag-base-card-case-title-font-weight);
     --denhaag-base-card-title-line-height: var(--denhaag-base-card-case-title-line-height);
-    --denhaag-base-card-subtitle-color: var(--denhaag-base-card-case-subtitle-color);
     --denhaag-base-card-subtitle-font-family: var(--denhaag-base-card-case-subtitle-font-family);
     --denhaag-base-card-subtitle-font-size: var(--denhaag-base-card-case-subtitle-font-size);
     --denhaag-base-card-subtitle-font-weight: var(--denhaag-base-card-case-subtitle-font-weight);
     --denhaag-base-card-subtitle-line-height: var(--denhaag-base-card-case-subtitle-line-height);
     --denhaag-base-card-subtitle-margin-block-start: var(--denhaag-base-card-case-subtitle-margin-block-start);
-    --denhaag-base-card-context-color: var(--denhaag-base-card-case-context-color);
-    --denhaag-base-card-action-color: var(--denhaag-base-card-case-action-color);
-    --denhaag-base-card-action-active-color: var(--denhaag-base-card-case-action-active-color);
+
+    @include variant-default("case");
+
+    &:hover {
+      @include variant-state("case", "hover");
+    }
+
+    &:active {
+      @include variant-state("case", "active");
+    }
+
+    &:has(:focus-visible),
+    &:focus-within {
+      @include variant-state("case", "focus-visible");
+    }
+  }
+
+  &--archived {
+    @include variant-default("archived");
+
+    &:hover {
+      @include variant-state("archived", "hover");
+    }
+
+    &:active {
+      @include variant-state("archived", "active");
+    }
+
+    &:has(:focus-visible),
+    &:focus-within {
+      @include variant-state("archived", "focus-visible");
+    }
   }
 
   &--list {
     @include list-view;
   }
 
-  &--archived {
-    --denhaag-base-card-background-color: var(--denhaag-base-card-archived-background-color);
-    --denhaag-base-card-color: var(--denhaag-base-card-archived-color);
-    --denhaag-base-card-decoration-background-color: var(--denhaag-base-card-archived-decoration-background-color);
-    --denhaag-base-card-title-color: var(--denhaag-base-card-archived-title-color);
-    --denhaag-base-card-subtitle-color: var(--denhaag-base-card-archived-subtitle-color);
-    --denhaag-base-card-eyebrow-color: var(--denhaag-base-card-archived-eyebrow-color);
-    --denhaag-base-card-context-color: var(--denhaag-base-card-archived-context-color);
-    --denhaag-base-card-action-color: var(--denhaag-base-card-archived-action-color);
-    --denhaag-base-card-action-active-color: var(--denhaag-base-card-archived-action-color);
+  &:hover {
+    cursor: pointer;
   }
 
-  &--focus,
+  &:has(:focus-visible),
   &:focus-within {
     outline: var(--denhaag-focus-border);
   }
 
-  &--hover,
   &:hover,
-  &:hover:focus {
-    cursor: pointer;
-  }
-
-  &--hover,
-  &--focus,
-  &:hover,
+  &:active,
+  &:has(:focus-visible),
   &:focus-within {
-    &::before {
-      top: 12px;
-      transform: rotate(-2.45deg);
-      transform-origin: right;
+    .denhaag-base-card__title {
+      color: var(--denhaag-base-card-title-color);
     }
 
-    .denhaag-base-card__decoration {
-      transform: var(--denhaag-base-card-decoration-hover-transform, rotateX(-20deg));
-      background-color: var(
-        --denhaag-base-card-decoration-hover-background-color,
-        var(--denhaag-base-card-decoration-background-color)
-      );
+    .denhaag-base-card__label {
+      color: var(--denhaag-base-card-label-color);
     }
 
     .denhaag-base-card__action {
-      color: var(--denhaag-base-card-action-active-color);
+      color: var(--denhaag-base-card-link-icon-color);
     }
   }
 }
