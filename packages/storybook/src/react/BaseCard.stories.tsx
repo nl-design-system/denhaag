@@ -77,6 +77,17 @@ export const Default: Story = {
   decorators,
 };
 
+// Explicit alias for Default, so the "case" color theme has its own
+// clearly-named entry in the sidebar (identical args to Default for now,
+// since Default already defaults to variant: 'case').
+export const Case: Story = {
+  args: {
+    ...Default.args,
+    variant: 'case',
+  },
+  decorators,
+};
+
 export const WithEyebrow: Story = {
   args: {
     ...Default.args,
@@ -110,6 +121,16 @@ export const WithBaseNumber: Story = {
   args: {
     ...Default.args,
     context: 'VTH-TEST-2024-02437',
+  },
+  decorators,
+};
+
+// Explicit, clearly-named archived story (kept alongside the existing
+// "Inactive*" stories below, which use the same appearance="archived").
+export const Archived: Story = {
+  args: {
+    ...Default.args,
+    appearance: 'archived',
   },
   decorators,
 };
@@ -168,6 +189,12 @@ export const ListWithBaseNumber: Story = {
   },
 };
 
+// --hover / --active / --focus-visible are not real DOM classes rendered by
+// the component itself — they only exist as CSS modifier classes in the
+// stylesheet as a fallback for consumers who can't rely on native
+// :hover/:active/:focus-visible (e.g. some test setups). In the browser and
+// in these stories, the native pseudo-classes are what actually apply, via
+// the addon-pseudo-states `pseudo` parameter below.
 export const Hover: Story = {
   args: {
     ...Default.args,
@@ -185,5 +212,15 @@ export const Active: Story = {
   decorators,
   parameters: {
     pseudo: { active: true },
+  },
+};
+
+export const FocusVisible: Story = {
+  args: {
+    ...Default.args,
+  },
+  decorators,
+  parameters: {
+    pseudo: { focusVisible: true },
   },
 };
