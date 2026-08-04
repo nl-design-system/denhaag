@@ -17,9 +17,9 @@
         }
       },
       "focus": {
-        "border-color": { "value": "{denhaag.focus.border-color}" },
-        "border-width": { "value": "{denhaag.focus.border-width}" },
-        "border-style": { "value": "{denhaag.focus.border-style}" }
+        "border-color": { "value": "{denhaag.color.ocher.5}" },
+        "border-width": { "value": "{basis.border-width.xl}" },
+        "border-style": { "value": "{denhaag.border-style.dashed}" }
       },
       "disabled": {
         "color": {}
