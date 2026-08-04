@@ -172,16 +172,16 @@
     },
     "form-control": {
       "padding-block-end": {
-        "value": { "value": "{denhaag.size.300}" }
+        "value": "{denhaag.size.300}"
       },
       "padding-block-start": {
-        "value": { "value": "{denhaag.size.300}" }
+        "value": "{denhaag.size.300}"
       },
       "padding-inline-end": {
-        "value": { "value": "{denhaag.size.300}" }
+        "value": "{denhaag.size.300}"
       },
       "padding-inline-start": {
-        "value": { "value": "{denhaag.size.300}" }
+        "value": "{denhaag.size.300}"
       }
     }
   }
