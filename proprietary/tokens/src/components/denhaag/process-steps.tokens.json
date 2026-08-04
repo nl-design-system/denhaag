@@ -48,7 +48,7 @@
           "font-size": { "value": "20px" }
         },
         "nested": {
-          "margin-block-start": { "value": "{denhaag.space.block.2xs}" },
+          "margin-block-start": { "value": "{basis.space.block.xs}" },
           "font-size": { "value": "14px" }
         }
       }

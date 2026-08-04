@@ -14,7 +14,7 @@
       "font-weight": {
         "value": "{utrecht.document.font-weight}"
       },
-      "margin-block-start": { "value": "{denhaag.space.block.xs}" },
+      "margin-block-start": { "value": "{basis.space.block.sm}" },
       "margin-block-end": {},
       "padding-block-start": {},
       "padding-block-end": {},

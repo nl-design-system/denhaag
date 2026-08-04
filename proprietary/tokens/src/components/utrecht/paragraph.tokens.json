@@ -15,10 +15,10 @@
         "line-height": { "value": "26px" },
 
         "list": {
-          "margin-block-start": { "value": "{denhaag.space.block.2xl}" }
+          "margin-block-start": { "value": "{basis.space.block.xl}" }
         },
         "paragraph": {
-          "margin-block-start": { "value": "{denhaag.space.block.2xl}" }
+          "margin-block-start": { "value": "{basis.space.block.xl}" }
         }
       },
       "small": {
@@ -32,7 +32,7 @@
         "margin-block-end": { "value": "0" }
       },
       "list": {
-        "margin-block-start": { "value": "{denhaag.space.block.xl}" }
+        "margin-block-start": { "value": "{basis.space.block.lg}" }
       },
       "paragraph": {
         "margin-block-start": { "value": "14.24px" }

@@ -12,7 +12,7 @@
       },
       "font-style": {},
       "margin-block-start": {},
-      "margin-block-end": { "value": "{denhaag.space.block.xs}" },
+      "margin-block-end": { "value": "{basis.space.block.sm}" },
       "invalid": {
         "font-weight": {},
         "color": {

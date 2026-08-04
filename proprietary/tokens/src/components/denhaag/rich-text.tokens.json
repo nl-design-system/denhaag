@@ -5,16 +5,16 @@
         "margin-block-end": { "value": "0px" }
       },
       "best-friend": {
-        "margin-block-end": { "value": "{denhaag.space.block.xs}" }
+        "margin-block-end": { "value": "{basis.space.block.sm}" }
       },
       "friend": {
-        "margin-block-end": { "value": "{denhaag.space.block.md}" }
+        "margin-block-end": { "value": "{basis.space.block.md}" }
       },
       "acquaintance": {
-        "margin-block-end": { "value": "{denhaag.space.block.xl}" }
+        "margin-block-end": { "value": "{basis.space.block.lg}" }
       },
       "stranger": {
-        "margin-block-end": { "value": "{denhaag.space.block.2xl}" }
+        "margin-block-end": { "value": "{basis.space.block.xl}" }
       }
     }
   }

@@ -4,7 +4,7 @@
       "display": { "value": "flex" },
       "flex-direction": { "value": "column" },
       "min-width": { "value": "14.5rem" },
-      "row-gap": { "value": "{denhaag.space.block.xl}" },
+      "row-gap": { "value": "{basis.space.block.lg}" },
       "mobile": {
         "display": { "value": "none" }
       },
@@ -22,11 +22,11 @@
         "margin-inline-end": { "value": "0" }
       },
       "list": {
-        "margin-inline-start": { "value": "{denhaag.space.inline.3xl}" }
+        "margin-inline-start": { "value": "{basis.space.inline.2xl}" }
       },
       "link": {
         "label": {
-          "gap": { "value": "{denhaag.space.inline.xs}" }
+          "gap": { "value": "{basis.space.inline.sm}" }
         },
         "padding-block-start": { "value": "12px" },
         "padding-block-end": { "value": "12px" },
@@ -40,8 +40,8 @@
         }
       },
       "expand-button": {
-        "block-size": { "value": "{denhaag.space.block.3xl}" },
-        "inline-size": { "value": "{denhaag.space.inline.3xl}" },
+        "block-size": { "value": "{basis.space.block.2xl}" },
+        "inline-size": { "value": "{basis.space.inline.2xl}" },
         "transform": { "value": "rotate(0deg)" },
         "transition": { "value": "transform 200ms ease-in-out" },
         "expanded": {
@@ -51,8 +51,8 @@
       "expand-separator": {
         "color": { "value": "{denhaag.color.grey.2}" },
         "inline-size": { "value": "{denhaag.size.25}" },
-        "margin-inline-end": { "value": "{denhaag.space.inline.xs}" },
-        "margin-inline-start": { "value": "{denhaag.space.inline.xs}" },
+        "margin-inline-end": { "value": "{basis.space.inline.sm}" },
+        "margin-inline-start": { "value": "{basis.space.inline.sm}" },
         "padding-block-end": { "value": "{denhaag.side-navigation.link.padding-block-end}" },
         "padding-block-start": { "value": "{denhaag.side-navigation.link.padding-block-start}" }
       }

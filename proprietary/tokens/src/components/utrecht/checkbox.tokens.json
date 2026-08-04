@@ -6,10 +6,10 @@
       "border-radius": { "value": "{utrecht.form-control.border-radius}" },
       "border-width": { "value": "{utrecht.form-control.border-width}" },
       "color": { "value": "{denhaag.color.white}" },
-      "margin-inline-end": { "value": "{denhaag.space.inline.xs}" },
-      "size": { "value": "{denhaag.space.block.xl}" },
+      "margin-inline-end": { "value": "{basis.space.inline.sm}" },
+      "size": { "value": "{basis.space.block.lg}" },
       "icon": {
-        "size": { "value": "{denhaag.space.block.xl}" }
+        "size": { "value": "{basis.space.block.lg}" }
       },
       "active": {
         "border-color": { "value": "{utrecht.form-control.active.border-color}" },

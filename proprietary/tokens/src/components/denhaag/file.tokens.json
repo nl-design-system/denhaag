@@ -14,20 +14,20 @@
         "outline-style": { "value": "{denhaag.focus.border-style}" }
       },
       "left": {
-        "padding-inline-start": { "value": "{denhaag.space.inline.sm}" },
-        "padding-inline-end": { "value": "{denhaag.space.inline.sm}" },
+        "padding-inline-start": { "value": "{denhaag.size.300}" },
+        "padding-inline-end": { "value": "{denhaag.size.300}" },
         "background-color": { "value": "{denhaag.color.warmgrey.1}" }
       },
       "right": {
-        "gap": { "value": "{denhaag.space.inline.xs}" },
-        "padding-block-start": { "value": "{denhaag.space.block.sm}" },
-        "padding-block-end": { "value": "{denhaag.space.block.sm}" },
-        "padding-inline-start": { "value": "{denhaag.space.inline.sm}" },
-        "padding-inline-end": { "value": "{denhaag.space.inline.sm}" }
+        "gap": { "value": "{basis.space.inline.sm}" },
+        "padding-block-start": { "value": "{denhaag.size.300}" },
+        "padding-block-end": { "value": "{denhaag.size.300}" },
+        "padding-inline-start": { "value": "{denhaag.size.300}" },
+        "padding-inline-end": { "value": "{denhaag.size.300}" }
       },
       "link": {
         "color": { "value": "{denhaag.color.blue.3}" },
-        "gap": { "value": "{denhaag.space.inline.2xs}" },
+        "gap": { "value": "{basis.space.inline.xs}" },
         "icon": {
           "width": { "value": "20px" }
         }

@@ -30,10 +30,10 @@
       "padding": {
         "inline": {
           "end": {
-            "value": "{denhaag.space.inline.xs}"
+            "value": "{basis.space.inline.sm}"
           },
           "start": {
-            "value": "{denhaag.space.inline.xs}"
+            "value": "{basis.space.inline.sm}"
           }
         }
       },
@@ -57,7 +57,7 @@
         },
         "margin": {
           "block-end": {
-            "value": "{denhaag.space.inline.xl}"
+            "value": "{basis.space.inline.lg}"
           }
         }
       },
@@ -68,7 +68,7 @@
               "value": "0.75rem"
             },
             "start": {
-              "value": "{denhaag.space.inline.2xs}"
+              "value": "{basis.space.inline.xs}"
             }
           }
         }
@@ -83,7 +83,7 @@
         "padding": {
           "block": {
             "end": {
-              "value": "{denhaag.space.inline.2xs}"
+              "value": "{basis.space.inline.xs}"
             },
             "start": {
               "value": "0.75rem"
@@ -95,10 +95,10 @@
         "padding": {
           "inline": {
             "end": {
-              "value": "{denhaag.space.inline.md}"
+              "value": "{basis.space.inline.md}"
             },
             "start": {
-              "value": "{denhaag.space.inline.md}"
+              "value": "{basis.space.inline.md}"
             }
           }
         },
@@ -106,10 +106,10 @@
           "padding": {
             "block": {
               "end": {
-                "value": "{denhaag.space.inline.md}"
+                "value": "{basis.space.inline.md}"
               },
               "start": {
-                "value": "{denhaag.space.inline.md}"
+                "value": "{basis.space.inline.md}"
               }
             }
           }
@@ -118,10 +118,10 @@
           "padding": {
             "block": {
               "end": {
-                "value": "{denhaag.space.inline.md}"
+                "value": "{basis.space.inline.md}"
               },
               "start": {
-                "value": "{denhaag.space.inline.md}"
+                "value": "{basis.space.inline.md}"
               }
             }
           }

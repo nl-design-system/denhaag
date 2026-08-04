@@ -14,19 +14,19 @@
       },
       "container": {
         "gutter": {
-          "value": "{denhaag.space.inline.xs}"
+          "value": "{basis.space.inline.sm}"
         },
         "gutter-s": {
-          "value": "{denhaag.space.inline.md}"
+          "value": "{basis.space.inline.md}"
         },
         "gutter-m": {
-          "value": "{denhaag.space.inline.xl}"
+          "value": "{basis.space.inline.lg}"
         },
         "gutter-l": {
-          "value": "{denhaag.space.inline.2xl}"
+          "value": "{basis.space.inline.xl}"
         },
         "gutter-xl": {
-          "value": "{denhaag.space.inline.3xl}"
+          "value": "{basis.space.inline.2xl}"
         },
         "max-width": {
           "value": "100%"
@@ -47,7 +47,7 @@
           "value": "98rem"
         },
         "padding": {
-          "value": "{denhaag.space.inline.xl}"
+          "value": "{basis.space.inline.lg}"
         },
         "padding-l": {
           "value": 0
@@ -72,7 +72,7 @@
               "value": "5.75rem"
             },
             "block-s": {
-              "value": "{denhaag.space.block.3xl}"
+              "value": "{basis.space.block.2xl}"
             }
           },
           "column": {
@@ -152,10 +152,10 @@
           },
           "padding": {
             "block": {
-              "value": "{denhaag.space.block.xl}"
+              "value": "{basis.space.block.lg}"
             },
             "block-s": {
-              "value": "{denhaag.space.block.3xl}"
+              "value": "{basis.space.block.2xl}"
             }
           },
           "column": {
@@ -270,21 +270,21 @@
           },
           "text-align": { "value": "center" },
           "padding-block": { "value": "4rem" },
-          "padding-block-s": { "value": "{denhaag.space.block.3xl}" },
-          "padding-inline-start": { "value": "{denhaag.space.inline.md}" },
-          "padding-inline-end": { "value": "{denhaag.space.inline.md}" },
+          "padding-block-s": { "value": "{basis.space.block.2xl}" },
+          "padding-inline-start": { "value": "{basis.space.inline.md}" },
+          "padding-inline-end": { "value": "{basis.space.inline.md}" },
           "transform": {
             "value": "2rem"
           }
         },
         "title": {
-          "padding-block-end": { "value": "{denhaag.space.block.md}" },
+          "padding-block-end": { "value": "{basis.space.block.md}" },
           "font-size-m": { "value": "{basis.text.font-size.3xl}" }
         },
         "text": {
           "font-size": { "value": "{basis.text.font-size.lg}" },
           "font-size-m": { "value": "{basis.text.font-size.xl}" },
-          "padding-block-end": { "value": "{denhaag.space.block.2xl}" },
+          "padding-block-end": { "value": "{basis.space.block.xl}" },
           "line-height": { "value": "{basis.text.line-height.sm}" }
         }
       }

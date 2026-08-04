@@ -17,13 +17,13 @@
         "object-fit": { "value": "cover" }
       },
       "content": {
-        "padding-inline": { "value": "{denhaag.space.inline.2xl}" },
-        "padding-block": { "value": "{denhaag.space.block.2xl}" },
-        "width": { "value": "calc(50% - (2 * {denhaag.space.inline.2xl}))" }
+        "padding-inline": { "value": "{basis.space.inline.xl}" },
+        "padding-block": { "value": "{basis.space.block.xl}" },
+        "width": { "value": "calc(50% - (2 * {basis.space.inline.xl}))" }
       },
       "title": {
         "margin-block-start": { "value": "initial" },
-        "margin-block-end": { "value": "{denhaag.space.block.xs}" },
+        "margin-block-end": { "value": "{basis.space.block.sm}" },
         "small": {
           "font-size": { "value": "{basis.text.font-size.xl}" }
         }
@@ -36,7 +36,7 @@
         }
       },
       "button": {
-        "margin-block-start": { "value": "{denhaag.space.block.xl}" },
+        "margin-block-start": { "value": "{basis.space.block.lg}" },
         "position": { "value": "initial" },
         "after": {
           "position": { "value": "absolute" },
