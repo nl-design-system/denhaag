@@ -1,0 +1,37 @@
+{
+  "basis": {
+    "size": {
+      "6xs": "{denhaag.size.50}",
+      "5xs": "{denhaag.size.100}",
+      "4xs": "{denhaag.size.200}",
+      "3xs": "{denhaag.size.300}",
+      "2xs": "{denhaag.size.400}",
+      "xs": "{denhaag.size.600}",
+      "sm": "{denhaag.size.800}",
+      "md": "{denhaag.size.1200}",
+      "lg": "{denhaag.size.1600}",
+      "xl": "{denhaag.size.2400}",
+      "2xl": "{denhaag.size.4000}"
+    },
+    "size.icon": {
+      "xs": "{denhaag.size.300}",
+      "sm": "{denhaag.size.400}",
+      "md": "{denhaag.size.450}",
+      "lg": "{denhaag.size.500}",
+      "xl": "{denhaag.size.600}",
+      "2xl": "{denhaag.size.800}",
+      "3xl": "{denhaag.size.1200}",
+      "4xl": "{denhaag.size.1200}"
+    },
+    "form-control": {
+      "max-inline-size": "25rem"
+    },
+    "page": {
+      "max-inline-size": "1080px"
+    },
+    "pointer-target": {
+      "min-block-size": "{denhaag.size.1200}",
+      "min-inline-size": "{denhaag.size.1200}"
+    }
+  }
+}
