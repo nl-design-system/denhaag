@@ -1,7 +1,7 @@
 {
   "basis": {
     "space": {
-      "none": { "value": "{denhaag.size.0" },
+      "none": { "value": "{denhaag.size.0}" },
       "inline": {
         "2xs": { "value": "{denhaag.size.25}" },
         "xs": { "value": "{denhaag.size.50}" },
