@@ -9,8 +9,8 @@
     height: var(--denhaag-header-height);
     display: flex;
     align-items: center;
-    padding-block-start: var(--denhaag-header-logo-container-padding-block-start, var(--denhaag-space-block-sm));
-    padding-block-end: var(--denhaag-header-logo-container-padding-block-end, var(--denhaag-space-block-sm));
+    padding-block-start: var(--denhaag-header-logo-container-padding-block-start, var(--basis-size-3xs));
+    padding-block-end: var(--denhaag-header-logo-container-padding-block-end, var(--basis-size-3xs));
     box-sizing: border-box;
     overflow: hidden;
 
@@ -35,8 +35,8 @@
       max-height: calc(
         var(--denhaag-header-logo-height) -
           (
-            var(--denhaag-header-logo-container-padding-block-start, var(--denhaag-space-block-sm)) +
-              var(--denhaag-header-logo-container-padding-block-end, var(--denhaag-space-block-sm))
+            var(--denhaag-header-logo-container-padding-block-start, var(--basis-size-3xs)) +
+              var(--denhaag-header-logo-container-padding-block-end, var(--basis-size-3xs))
           )
       );
     }

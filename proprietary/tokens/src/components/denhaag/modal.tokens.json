@@ -14,10 +14,10 @@
       },
       "padding": {
         "block": {
-          "value": "{denhaag.space.block.md}"
+          "value": "{basis.space.block.md}"
         },
         "inline": {
-          "value": "{denhaag.space.block.md}"
+          "value": "{basis.space.block.md}"
         }
       },
       "index": {
@@ -31,7 +31,7 @@
           "value": "{denhaag.color.green.3}"
         },
         "gap": {
-          "value": "{denhaag.space.inline.xs}"
+          "value": "{basis.space.inline.sm}"
         },
         "font": {
           "size": {
@@ -58,10 +58,10 @@
       "header": {
         "padding": {
           "block": {
-            "value": "{denhaag.space.block.md}"
+            "value": "{basis.space.block.md}"
           },
           "inline": {
-            "value": "{denhaag.space.inline.md}"
+            "value": "{basis.space.inline.md}"
           }
         },
         "border-bottom": {
@@ -101,20 +101,20 @@
       "content": {
         "padding": {
           "block": {
-            "value": "{denhaag.space.block.xl}"
+            "value": "{basis.space.block.lg}"
           },
           "inline": {
-            "value": "{denhaag.space.inline.md}"
+            "value": "{basis.space.inline.md}"
           }
         }
       },
       "footer": {
         "padding": {
           "block": {
-            "value": "{denhaag.space.block.md}"
+            "value": "{basis.space.block.md}"
           },
           "inline": {
-            "value": "{denhaag.space.inline.md}"
+            "value": "{basis.space.inline.md}"
           }
         },
         "justify-content": {

@@ -13,11 +13,11 @@
         "font-size": { "value": "{basis.text.font-size.md}" },
         "font-family": { "value": "{basis.text.font-family.default}" },
         "line-height": { "value": "1.5" },
-        "padding-block-start": { "value": "{denhaag.space.block.xs}" },
-        "padding-block-end": { "value": "{denhaag.space.block.xs}" },
-        "padding-inline-start": { "value": "{denhaag.space.inline.md}" },
-        "padding-inline-end": { "value": "{denhaag.space.inline.md}" },
-        "gap": { "value": "{denhaag.space.inline.xs}" },
+        "padding-block-start": { "value": "{basis.space.block.sm}" },
+        "padding-block-end": { "value": "{basis.space.block.sm}" },
+        "padding-inline-start": { "value": "{basis.space.inline.md}" },
+        "padding-inline-end": { "value": "{basis.space.inline.md}" },
+        "gap": { "value": "{basis.space.inline.sm}" },
         "selected": {
           "font-weight": { "value": "{basis.text.font-weight.bold}" },
           "color": { "value": "{denhaag.color.green.3}" }

@@ -7,9 +7,9 @@
       "font-size": { "value": "{utrecht.document.font-size}" },
       "line-height": { "value": "{utrecht.document.line-height}" },
       "item": {
-        "margin-block-start": { "value": "{denhaag.space.block.2xs}" },
-        "margin-block-end": { "value": "{denhaag.space.block.2xs}" },
-        "padding-inline-start": { "value": "{denhaag.space.inline.xl}" }
+        "margin-block-start": { "value": "{basis.space.block.xs}" },
+        "margin-block-end": { "value": "{basis.space.block.xs}" },
+        "padding-inline-start": { "value": "{basis.space.inline.lg}" }
       },
       "marker": {
         "color": {}

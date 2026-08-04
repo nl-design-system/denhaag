@@ -15,7 +15,7 @@
         "color": { "value": "{denhaag.color.black}" },
         "line-height": { "value": "{basis.text.line-height.sm}" },
         "text-align": { "value": "start" },
-        "margin-block-end": { "value": "{denhaag.space.block.xl}" }
+        "margin-block-end": { "value": "{basis.space.block.lg}" }
       },
       "header": {
         "font-weight": {},
@@ -33,10 +33,10 @@
       },
       "cell": {
         "line-height": { "value": "{basis.text.line-height.md}" },
-        "padding-block-end": { "value": "{denhaag.space.block.md}" },
-        "padding-block-start": { "value": "{denhaag.space.block.md}" },
-        "padding-inline-end": { "value": "{denhaag.space.inline.md}" },
-        "padding-inline-start": { "value": "{denhaag.space.inline.md}" },
+        "padding-block-end": { "value": "{basis.space.block.md}" },
+        "padding-block-start": { "value": "{basis.space.block.md}" },
+        "padding-inline-end": { "value": "{basis.space.inline.md}" },
+        "padding-inline-start": { "value": "{basis.space.inline.md}" },
         "icon": {
           "size": {}
         }
@@ -44,8 +44,8 @@
       "row": {
         "border-block-end-color": { "value": "{denhaag.color.grey.1}" },
         "border-block-end-width": { "value": "1px" },
-        "padding-inline-end": { "value": "{denhaag.space.inline.xl}" },
-        "padding-inline-start": { "value": "{denhaag.space.inline.xl}" },
+        "padding-inline-end": { "value": "{basis.space.inline.lg}" },
+        "padding-inline-start": { "value": "{basis.space.inline.lg}" },
         "alternate-odd": {
           "background-color": { "value": "rgb(250, 250, 250)" },
           "color": {}

@@ -5,7 +5,7 @@
         "margin": {
           "block": {
             "start": {
-              "value": "{denhaag.space.block.md}"
+              "value": "{basis.space.block.md}"
             }
           }
         }
@@ -39,7 +39,7 @@
         },
         "padding": {
           "block": {
-            "value": "{denhaag.space.block.xs}"
+            "value": "{basis.space.block.sm}"
           },
           "inline": {
             "end": {

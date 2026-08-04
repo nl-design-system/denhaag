@@ -5,10 +5,10 @@
       "marker-font-size": { "value": "1rem" },
       "lower-alpha-list-style-type": { "value": "lower-alpha" },
       "paragraph": {
-        "margin-block-start": { "value": "{denhaag.space.block.md}" }
+        "margin-block-start": { "value": "{basis.space.block.md}" }
       },
       "lead": {
-        "margin-block-start": { "value": "{denhaag.space.block.2xl}" }
+        "margin-block-start": { "value": "{basis.space.block.xl}" }
       },
       "list-item": {
         "font-weight": { "value": "{basis.text.font-weight.default}" }

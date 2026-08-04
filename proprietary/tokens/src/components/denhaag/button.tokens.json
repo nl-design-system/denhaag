@@ -7,13 +7,13 @@
       "font-family": { "value": "{basis.text.font-family.default}" },
       "font-size": { "value": "{basis.text.font-size.md}" },
       "font-weight": { "value": "{basis.text.font-weight.default}" },
-      "gap": { "value": "{denhaag.space.inline.xs}" },
-      "padding-block": { "value": "{denhaag.space.block.xs}" },
-      "padding-inline": { "value": "{denhaag.space.inline.md}" },
+      "gap": { "value": "{basis.space.inline.sm}" },
+      "padding-block": { "value": "{basis.space.block.sm}" },
+      "padding-inline": { "value": "{basis.space.inline.md}" },
       "icon": {
         "padding-inline": {
-          "medium": { "value": "{denhaag.space.inline.sm}" },
-          "large": { "value": "{denhaag.space.inline.md}" }
+          "medium": { "value": "{denhaag.size.300}" },
+          "large": { "value": "{basis.space.inline.md}" }
         }
       },
       "focus": {
@@ -54,7 +54,7 @@
       "large-size": {
         "font-size": { "value": "{basis.text.font-size.lg}" },
         "padding-block": { "value": "0.40625rem" },
-        "padding-inline": { "value": "{denhaag.space.inline.lg}" },
+        "padding-inline": { "value": "{denhaag.size.500}" },
         "line-height": { "value": "1.75" }
       },
       "medium-size": {
@@ -64,7 +64,7 @@
       "icon-only": {
         "height": { "value": "2.6875rem" },
         "icon": {
-          "height": { "value": "{denhaag.space.block.lg}" }
+          "height": { "value": "{denhaag.size.500}" }
         }
       }
     }

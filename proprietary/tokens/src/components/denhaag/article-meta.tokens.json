@@ -29,13 +29,13 @@
         "value": "{basis.text.line-height.md}"
       },
       "padding-block-start": {
-        "value": "{denhaag.space.block.md}"
+        "value": "{basis.space.block.md}"
       },
       "padding-block-end": {
-        "value": "{denhaag.space.block.5xl}"
+        "value": "{basis.space.block.4xl}"
       },
       "margin-block-start": {
-        "value": "{denhaag.space.block.2xl}"
+        "value": "{basis.space.block.xl}"
       },
       "horizontal": {
         "item": {

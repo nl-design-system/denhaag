@@ -5,10 +5,10 @@
       "line-height": { "value": "{utrecht.document.line-height}" },
       "margin-block-start": {},
       "margin-block-end": {},
-      "padding-inline-start": { "value": "{denhaag.space.inline.xl}" },
+      "padding-inline-start": { "value": "{basis.space.inline.lg}" },
       "item": {
-        "margin-block-start": { "value": "{denhaag.space.block.2xs}" },
-        "margin-block-end": { "value": "{denhaag.space.block.2xs}" },
+        "margin-block-start": { "value": "{basis.space.block.xs}" },
+        "margin-block-end": { "value": "{basis.space.block.xs}" },
         "padding-inline-start": {}
       }
     }

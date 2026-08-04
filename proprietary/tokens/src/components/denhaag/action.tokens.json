@@ -2,7 +2,7 @@
   "denhaag": {
     "action": {
       "gap": {
-        "value": "{denhaag.space.inline.md}"
+        "value": "{basis.space.inline.md}"
       },
       "color": {
         "value": "{denhaag.color.grey.5}"
@@ -17,16 +17,16 @@
         "value": "0"
       },
       "padding-inline-start": {
-        "value": "{denhaag.space.inline.md}"
+        "value": "{basis.space.inline.md}"
       },
       "padding-inline-end": {
-        "value": "{denhaag.space.inline.md}"
+        "value": "{basis.space.inline.md}"
       },
       "padding-block-start": {
-        "value": "{denhaag.space.block.md}"
+        "value": "{basis.space.block.md}"
       },
       "padding-block-end": {
-        "value": "{denhaag.space.block.md}"
+        "value": "{basis.space.block.md}"
       },
       "border-style": { "value": "solid" },
       "border-width": { "value": "1px" },
@@ -40,21 +40,21 @@
       },
       "context": {
         "gap": {
-          "value": "{denhaag.space.inline.md}"
+          "value": "{basis.space.inline.md}"
         },
         "lg": {
           "gap": {
-            "value": "{denhaag.space.inline.sm}"
+            "value": "{denhaag.size.300}"
           }
         }
       },
       "details": {
         "gap": {
-          "value": "{denhaag.space.inline.md}"
+          "value": "{basis.space.inline.md}"
         },
         "lg": {
           "gap": {
-            "value": "{denhaag.space.inline.sm}"
+            "value": "{denhaag.size.300}"
           }
         }
       },
@@ -67,7 +67,7 @@
         },
         "warning": {
           "gap": {
-            "value": "{denhaag.space.inline.xs}"
+            "value": "{basis.space.inline.sm}"
           },
           "color": {
             "value": "{denhaag.color.orange.5}"
@@ -98,7 +98,7 @@
       },
       "actions": {
         "gap": {
-          "value": "{denhaag.space.inline.xs}"
+          "value": "{basis.space.inline.sm}"
         }
       },
       "link-icon": {
@@ -119,16 +119,16 @@
       },
       "single": {
         "padding-inline-start": {
-          "value": "{denhaag.space.inline.md}"
+          "value": "{basis.space.inline.md}"
         },
         "padding-inline-end": {
-          "value": "{denhaag.space.inline.md}"
+          "value": "{basis.space.inline.md}"
         },
         "padding-block-start": {
-          "value": "{denhaag.space.block.md}"
+          "value": "{basis.space.block.md}"
         },
         "padding-block-end": {
-          "value": "{denhaag.space.block.md}"
+          "value": "{basis.space.block.md}"
         },
         "hover": {
           "background-color": {
@@ -142,24 +142,24 @@
         },
         "details": {
           "gap": {
-            "value": "{denhaag.space.inline.xs}"
+            "value": "{basis.space.inline.sm}"
           },
           "lg": {
             "gap": {
-              "value": "{denhaag.space.inline.xs}"
+              "value": "{basis.space.inline.sm}"
             }
           }
         }
       },
       "lg": {
         "gap": {
-          "value": "{denhaag.space.inline.2xl}"
+          "value": "{basis.space.inline.xl}"
         },
         "padding-block-start": {
-          "value": "{denhaag.space.block.sm}"
+          "value": "{denhaag.size.300}"
         },
         "padding-block-end": {
-          "value": "{denhaag.space.block.sm}"
+          "value": "{denhaag.size.300}"
         }
       }
     }
