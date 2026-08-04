@@ -1,0 +1,42 @@
+{
+  "basis": {
+    "border-width": {
+      "none": "{denhaag.border-width.none}",
+      "sm": "{denhaag.border-width.thin}",
+      "md": "{denhaag.border-width.standard}",
+      "lg": "{denhaag.border-width.semibold}",
+      "xl": "{denhaag.border-width.bold}",
+      "2xl": "{denhaag.border-width.extrabold}"
+    },
+    "focus": {
+      "outline-width": {
+        "value": "{denhaag.border-width.bold}"
+      }
+    },
+    "form-control": {
+      "border-width": {
+        "value": "{denhaag.border-width.standard}"
+      },
+      "active": {
+        "border-width": {
+          "value": "{denhaag.border-width.standaard}"
+        }
+      },
+      "focus": {
+        "border-width": {
+          "value": "{denhaag.border-width.standaard}"
+        }
+      },
+      "hover": {
+        "border-width": {
+          "value": "{denhaag.border-width.standaard}"
+        }
+      },
+      "invalid": {
+        "border-width": {
+          "value": "{denhaag.border-width.standaard}"
+        }
+      }
+    }
+  }
+}

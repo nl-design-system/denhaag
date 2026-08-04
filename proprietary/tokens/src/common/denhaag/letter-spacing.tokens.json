@@ -27,6 +27,11 @@
           "value": "{denhaag.letter-spacing.normal}"
         }
       }
+    },
+    "form-control": {
+      "letter-spacing": {
+        "value": "{denhaag.letter-spacing.normal}"
+      }
     }
   }
 }
