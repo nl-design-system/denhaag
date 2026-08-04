@@ -19,22 +19,22 @@
       },
       "active": {
         "border-width": {
-          "value": "{denhaag.border-width.standaard}"
+          "value": "{denhaag.border-width.standard}"
         }
       },
       "focus": {
         "border-width": {
-          "value": "{denhaag.border-width.standaard}"
+          "value": "{denhaag.border-width.standard}"
         }
       },
       "hover": {
         "border-width": {
-          "value": "{denhaag.border-width.standaard}"
+          "value": "{denhaag.border-width.standard}"
         }
       },
       "invalid": {
         "border-width": {
-          "value": "{denhaag.border-width.standaard}"
+          "value": "{denhaag.border-width.standard}"
         }
       }
     }

@@ -2,24 +2,24 @@
   "basis": {
     "border-radius": {
       "none": {
-        "value": "{denhaag.border-radius.none}"
+        "value": "{denhaag.radius.none}"
       },
       "sm": {
-        "value": "{denhaag.border-radius.2}"
+        "value": "{denhaag.radius.2}"
       },
       "md": {
-        "value": "{denhaag.border-radius.3}"
+        "value": "{denhaag.radius.3}"
       },
       "lg": {
-        "value": "{denhaag.border-radius.5}"
+        "value": "{denhaag.radius.5}"
       },
       "round": {
-        "value": "{denhaag.border-radius.full}"
+        "value": "{denhaag.radius.full}"
       }
     },
     "form-control": {
       "border-radius": {
-        "value": "{denhaag.border-radius.3}"
+        "value": "{denhaag.radius.3}"
       }
     }
   }
