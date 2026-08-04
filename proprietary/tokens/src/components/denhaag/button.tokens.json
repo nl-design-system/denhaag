@@ -2,7 +2,7 @@
   "denhaag": {
     "button": {
       "cursor": { "value": "pointer" },
-      "border-radius": { "value": "{denhaag.border-radius}" },
+      "border-radius": { "value": "{basis.border-radius.md}" },
       "border-width": { "value": "1px" },
       "font-family": { "value": "{basis.text.font-family.default}" },
       "font-size": { "value": "{basis.text.font-size.md}" },

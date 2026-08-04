@@ -3,7 +3,7 @@
     "form-control": {
       "background-color": { "value": "{denhaag.color.white}" },
       "border-color": { "value": "{denhaag.color.grey.3}" },
-      "border-radius": { "value": "{denhaag.border-radius}" },
+      "border-radius": { "value": "{basis.border-radius.md}" },
       "border-width": { "value": "1px" },
       "color": { "value": "{denhaag.color.grey.4}" },
       "font-family": { "value": "{utrecht.document.font-family}" },

@@ -1,7 +1,26 @@
 {
-  "denhaag": {
+  "basis": {
     "border-radius": {
-      "value": "3px"
+      "none": {
+        "value": "{denhaag.border-radius.none}"
+      },
+      "sm": {
+        "value": "{denhaag.border-radius.2}"
+      },
+      "md": {
+        "value": "{denhaag.border-radius.3}"
+      },
+      "lg": {
+        "value": "{denhaag.border-radius.5}"
+      },
+      "round": {
+        "value": "{denhaag.border-radius.full}"
+      }
+    },
+    "form-control": {
+      "border-radius": {
+        "value": "{denhaag.border-radius.3}"
+      }
     }
   }
 }
