@@ -8,7 +8,7 @@
       "border-block-end-width": {},
       "border-bottom-width": { "value": "auto" },
       "border-color": { "value": "{utrecht.form-control.border-color}" },
-      "border-radius": { "value": "{denhaag.border-radius}" },
+      "border-radius": { "value": "{basis.border-radius.md}" },
       "border-width": { "value": "{utrecht.form-control.border-width}" },
       "color": { "value": "{utrecht.form-control.color}" },
       "font-family": { "value": "{utrecht.document.font-family}" },
