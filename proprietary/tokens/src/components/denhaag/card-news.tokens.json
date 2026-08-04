@@ -7,7 +7,9 @@
       "text-decoration": { "value": "none" },
       "padding": { "value": "{basis.space.block.md}" },
       "margin": { "value": "0" },
-      "outline": { "value": "{denhaag.link.focus.outline}" },
+      "outline-color": { "value": "{denhaag.link.focus.outline-color}" },
+      "outline-style": { "value": "{denhaag.link.focus.outline-style}" },
+      "outline-width": { "value": "{denhaag.link.focus.outline-width}" },
       "image": {
         "width": { "value": "100%" },
         "height": { "value": "auto" },

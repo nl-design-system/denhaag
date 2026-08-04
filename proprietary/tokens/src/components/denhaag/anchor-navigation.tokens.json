@@ -34,9 +34,9 @@
         "font-weight": {
           "value": "{basis.text.font-weight.default}"
         },
-        "outline": {
-          "value": "{denhaag.focus.border}"
-        },
+        "outline-color": { "value": "{denhaag.color.ocher.5}" },
+        "outline-style": { "value": "{denhaag.border-style.dashed}" },
+        "outline-width": { "value": "{basis.border-width.xl}" },
         "padding": {
           "block": {
             "value": "{basis.space.block.sm}"

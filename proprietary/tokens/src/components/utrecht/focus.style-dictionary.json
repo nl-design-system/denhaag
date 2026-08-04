@@ -3,12 +3,12 @@
     "focus": {
       "background-color": {},
       "color": { "value": "inherit" },
-      "border-color": { "value": "{denhaag.focus.border-color.value}" },
-      "border-style": { "value": "{denhaag.focus.border-style.value}" },
-      "outline-color": { "value": "{denhaag.focus.border-color.value}" },
-      "outline-offset": { "value": "{denhaag.focus.offset}" },
-      "outline-style": { "value": "{denhaag.focus.border-style.value}" },
-      "outline-width": { "value": "{denhaag.focus.border-width.value}" },
+      "border-color": { "value": "{denhaag.color.ocher.5}" },
+      "border-style": { "value": "{denhaag.border-style.dashed}" },
+      "outline-color": { "value": "{denhaag.color.ocher.5}" },
+      "outline-offset": { "value": "0" },
+      "outline-style": { "value": "{denhaag.border-style.dashed}" },
+      "outline-width": { "value": "{basis.border-width.xl}" },
       "inverse": {
         "outline-color": {}
       }

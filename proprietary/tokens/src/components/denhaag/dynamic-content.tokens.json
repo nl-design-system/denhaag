@@ -130,9 +130,9 @@
         }
       },
       "focus": {
-        "outline": {
-          "value": "{denhaag.focus.border}"
-        },
+        "outline-color": { "value": "{denhaag.color.ocher.5}" },
+        "outline-style": { "value": "{denhaag.border-style.dashed}" },
+        "outline-width": { "value": "{basis.border-width.xl}" },
         "icon": {
           "opacity": {
             "value": 1

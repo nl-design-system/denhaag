@@ -69,10 +69,10 @@
         },
         "outline": {
           "style": {
-            "value": "{denhaag.focus.border-style}"
+            "value": "{denhaag.border-style.dashed}"
           },
           "width": {
-            "value": "{denhaag.focus.border-width}"
+            "value": "{basis.border-width.xl}"
           },
           "color": {
             "value": "currentColor"
@@ -135,9 +135,9 @@
         "line-height": {
           "value": 1
         },
-        "outline": {
-          "value": "{denhaag.focus.border}"
-        },
+        "outline-color": { "value": "{denhaag.color.ocher.5}" },
+        "outline-style": { "value": "{denhaag.border-style.dashed}" },
+        "outline-width": { "value": "{basis.border-width.xl}" },
         "padding": {
           "block": {
             "value": "{basis.space.block.md}"

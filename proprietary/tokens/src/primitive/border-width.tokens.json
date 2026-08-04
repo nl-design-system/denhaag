@@ -4,7 +4,9 @@
       "none": { "value": "0px", "name": "Border width 0px" },
       "thin": { "value": "0.5px", "name": "Border width 0.5px" },
       "standard": { "value": "1px", "name": "Border width 1px" },
-      "bold": { "value": "2px", "name": "Border width 2px" }
+      "semibold": { "value": "1.5px", "name": "Border width 1.5px" },
+      "bold": { "value": "2px", "name": "Border width 2px" },
+      "extrabold": { "value": "4px", "name": "Border width 4px" }
     }
   }
 }
