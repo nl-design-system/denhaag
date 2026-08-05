@@ -34,20 +34,20 @@ const meta: Meta = {
               </tr>
             </thead>
             <tbody>
-              {sizeTokensSorted.map(([key, size]) => (
+              {sizeTokensSorted.map(([key, token]) => (
                 <tr key={key}>
                   <td>{key}</td>
                   <td>
-                    <code>{path2css(size.path)}</code>
+                    <code>{path2css(token.path)}</code>
                   </td>
-                  <td>{size.value}</td>
+                  <td>{token.value}</td>
                   <td>
                     <div
                       style={{
                         margin: '0 auto',
                         backgroundColor: 'black',
-                        height: size.value,
-                        width: size.value,
+                        height: token.value,
+                        width: token.value,
                       }}
                     ></div>
                   </td>

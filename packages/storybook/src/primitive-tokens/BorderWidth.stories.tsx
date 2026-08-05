@@ -34,13 +34,13 @@ const meta: Meta = {
               </tr>
             </thead>
             <tbody>
-              {borderWidthTokensSorted.map(([key, width]) => (
+              {borderWidthTokensSorted.map(([key, token]) => (
                 <tr key={key}>
                   <td>{key}</td>
                   <td>
-                    <code>{path2css(width.path)}</code>
+                    <code>{path2css(token.path)}</code>
                   </td>
-                  <td>{width.value}</td>
+                  <td>{token.value}</td>
                   <td>
                     <div
                       style={{
@@ -48,7 +48,7 @@ const meta: Meta = {
                         height: '40px',
                         width: '40px',
                         borderStyle: 'solid',
-                        borderWidth: width.value,
+                        borderWidth: token.value,
                       }}
                     ></div>
                   </td>
