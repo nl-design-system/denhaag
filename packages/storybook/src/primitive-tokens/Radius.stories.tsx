@@ -34,13 +34,13 @@ const meta: Meta = {
               </tr>
             </thead>
             <tbody>
-              {radiusTokensSorted.map(([key, radius]) => (
+              {radiusTokensSorted.map(([key, token]) => (
                 <tr key={key}>
                   <td>{key}</td>
                   <td>
-                    <code>{path2css(radius.path)}</code>
+                    <code>{path2css(token.path)}</code>
                   </td>
-                  <td>{radius.value}</td>
+                  <td>{token.value}</td>
                   <td>
                     <div
                       style={{
@@ -48,7 +48,7 @@ const meta: Meta = {
                         backgroundColor: 'black',
                         height: '40px',
                         width: '40px',
-                        borderRadius: radius.value,
+                        borderRadius: token.value,
                       }}
                     ></div>
                   </td>
