@@ -1,5 +1,5 @@
-import { IconGallery, IconItem } from "@storybook/addon-docs/blocks";
-import * as Icons from "../../../../components/Icons/";
+import { IconGallery, IconItem } from '@storybook/addon-docs/blocks';
+import * as Icons from '../../../../components/Icons/';
 
 # Icons
 
@@ -7,9 +7,9 @@ The icons are available as SVG image and as React component.
 
 <IconGallery>
   {Object.entries(Icons)
-    .filter(([name]) => name !== "default")
+    .filter(([name]) => name !== 'default')
     .map(([name, Icon]) => (
-      <IconItem key={name} name={name.replace(/^(.+)Icon$/, "$1")}>
+      <IconItem key={name} name={name.replace(/^(.+)Icon$/, '$1')}>
         {<Icon />}
       </IconItem>
     ))}
