@@ -1,0 +1,57 @@
+/**
+ * @type {import('prettier').Config}
+ */
+export default {
+  overrides: [
+    {
+      files: ['*.css', '*.scss'],
+      options: {
+        tabWidth: 2,
+      },
+    },
+    {
+      files: ['*.html'],
+      options: {
+        parser: 'html',
+        printWidth: 120,
+        tabWidth: 2,
+      },
+    },
+    {
+      files: ['*.js', '*.jsx', '*.mjs'],
+      options: {
+        parser: 'flow',
+        printWidth: 120,
+        trailingComma: 'all',
+        tabWidth: 2,
+        singleQuote: true,
+      },
+    },
+    {
+      files: ['*.ts', '*.tsx'],
+      options: {
+        parser: 'typescript',
+        printWidth: 120,
+        trailingComma: 'all',
+        tabWidth: 2,
+        singleQuote: true,
+      },
+    },
+    {
+      files: ['*.json'],
+      options: {
+        parser: 'json',
+        printWidth: 120,
+        tabWidth: 2,
+      },
+    },
+    {
+      files: ['package.json'],
+      options: {
+        parser: 'json-stringify',
+        tabWidth: 2,
+        useTabs: false,
+      },
+    },
+  ],
+};
