@@ -82,7 +82,8 @@
     --denhaag-floating-contact-switch-focus-icons-background-color
   );
 
-  outline: var(--denhaag-floating-contact-switch-outline);
+  outline: var(--denhaag-floating-contact-switch-outline-width) var(--denhaag-floating-contact-switch-outline-style)
+    var(--denhaag-floating-contact-switch-outline-color);
 }
 
 .denhaag-floating-contact-switch[aria-expanded="true"] {

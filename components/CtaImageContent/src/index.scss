@@ -55,7 +55,7 @@
 }
 
 .denhaag-cta-image-content--focus .denhaag-button::after {
-  border: var(--denhaag-focus-border);
+  border: var(--basis-border-width-xl) var(--denhaag-border-style-dashed) var(--denhaag-color-ocher-5);
 }
 
 .denhaag-cta-image-content__image {

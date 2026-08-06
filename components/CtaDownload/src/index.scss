@@ -42,7 +42,8 @@
     var(--denhaag-cta-download-hover-dot-background-color)
   );
 
-  outline: var(--denhaag-cta-download-focus-outline);
+  outline: var(--denhaag-cta-download-focus-outline-width) var(--denhaag-cta-download-focus-outline-style)
+    var(--denhaag-cta-download-focus-outline-color);
 }
 
 .denhaag-cta-download__dot {
