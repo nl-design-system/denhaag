@@ -1,5 +1,11 @@
 # @gemeente-denhaag/floating-contact
 
+## 2.2.2
+
+### Patch Changes
+
+- 9ce6607: Update common tokens to new format
+
 ## 2.2.1
 
 ### Patch Changes
