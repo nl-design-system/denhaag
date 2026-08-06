@@ -1,5 +1,15 @@
 # @gemeente-denhaag/storybook
 
+## 5.6.2
+
+### Patch Changes
+
+- 9ce6607: Update common tokens to new format
+- Updated dependencies [9ce6607]
+  - @gemeente-denhaag/floating-contact@2.2.2
+  - @gemeente-denhaag/design-tokens@1.4.1
+  - @gemeente-denhaag/header@4.2.2
+
 ## 5.6.1
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @gemeente-denhaag/header
 
+## 4.2.2
+
+### Patch Changes
+
+- 9ce6607: Update common tokens to new format
+
 ## 4.2.1
 
 ### Patch Changes
