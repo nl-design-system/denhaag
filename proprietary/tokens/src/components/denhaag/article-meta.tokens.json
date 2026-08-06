@@ -29,19 +29,25 @@
         "value": "{basis.text.line-height.md}"
       },
       "padding-block-start": {
-        "value": "{basis.space.block.md}"
+        "value": "{basis.space.block.xl}"
       },
       "padding-block-end": {
-        "value": "{basis.space.block.4xl}"
+        "value": "{basis.space.block.6xl}"
       },
       "margin-block-start": {
-        "value": "{basis.space.block.xl}"
+        "value": "{basis.space.block.4xl}"
       },
       "horizontal": {
         "item": {
-          "border-width": { "value": "1px" },
-          "border-style": { "value": "solid" },
-          "border-color": { "value": "{denhaag.color.grey.2}" }
+          "border-width": {
+            "value": "1px"
+          },
+          "border-style": {
+            "value": "solid"
+          },
+          "border-color": {
+            "value": "{denhaag.color.grey.2}"
+          }
         }
       }
     }

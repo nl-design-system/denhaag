@@ -1,9 +1,15 @@
 {
   "utrecht": {
     "link-list": {
-      "margin-block-start": { "value": "{basis.space.block.sm}" },
-      "margin-block-end": { "value": "{basis.space.block.sm}" },
-      "row-gap": { "value": "{basis.space.block.sm}" },
+      "margin-block-start": {
+        "value": "{basis.space.block.md}"
+      },
+      "margin-block-end": {
+        "value": "{basis.space.block.md}"
+      },
+      "row-gap": {
+        "value": "{basis.space.block.md}"
+      },
       "link": {
         "column-gap": {},
         "font-weight": {},

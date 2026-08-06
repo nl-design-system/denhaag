@@ -16,20 +16,28 @@
         }
       },
       "icon": {
-        "color": { "value": "{denhaag.color.grey.4}" },
-        "info-color": { "value": "{denhaag.color.white}" },
-        "warning-color": { "value": "{denhaag.color.white}" }
+        "color": {
+          "value": "{denhaag.color.grey.4}"
+        },
+        "info-color": {
+          "value": "{denhaag.color.white}"
+        },
+        "warning-color": {
+          "value": "{denhaag.color.white}"
+        }
       },
       "line-height": {
         "value": "1.5"
       },
       "padding-block": {
-        "value": "{basis.space.block.xs}"
-      },
-      "icon-spacing": {
         "value": "{basis.space.block.sm}"
       },
-      "icon-end-margin-inline-end": { "value": "{basis.space.inline.xs}" }
+      "icon-spacing": {
+        "value": "{basis.space.block.md}"
+      },
+      "icon-end-margin-inline-end": {
+        "value": "{basis.space.inline.sm}"
+      }
     }
   }
 }

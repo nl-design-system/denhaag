@@ -1,31 +1,67 @@
 {
   "denhaag": {
     "card-news": {
-      "border": { "value": "1px solid {denhaag.color.grey.2}" },
-      "box-shadow": { "value": "0 0 0.5rem {denhaag.color.grey.2}" },
-      "gap": { "value": "{basis.space.block.md}" },
-      "text-decoration": { "value": "none" },
-      "padding": { "value": "{basis.space.block.md}" },
-      "margin": { "value": "0" },
-      "outline-color": { "value": "{denhaag.link.focus.outline-color}" },
-      "outline-style": { "value": "{denhaag.link.focus.outline-style}" },
-      "outline-width": { "value": "{denhaag.link.focus.outline-width}" },
+      "border": {
+        "value": "1px solid {denhaag.color.grey.2}"
+      },
+      "box-shadow": {
+        "value": "0 0 0.5rem {denhaag.color.grey.2}"
+      },
+      "gap": {
+        "value": "{basis.space.block.xl}"
+      },
+      "text-decoration": {
+        "value": "none"
+      },
+      "padding": {
+        "value": "{basis.space.block.xl}"
+      },
+      "margin": {
+        "value": "0"
+      },
+      "outline-color": {
+        "value": "{denhaag.link.focus.outline-color}"
+      },
+      "outline-style": {
+        "value": "{denhaag.link.focus.outline-style}"
+      },
+      "outline-width": {
+        "value": "{denhaag.link.focus.outline-width}"
+      },
       "image": {
-        "width": { "value": "100%" },
-        "height": { "value": "auto" },
-        "object-fit": { "value": "cover" },
-        "aspect-ratio": { "value": "16 / 9" }
+        "width": {
+          "value": "100%"
+        },
+        "height": {
+          "value": "auto"
+        },
+        "object-fit": {
+          "value": "cover"
+        },
+        "aspect-ratio": {
+          "value": "16 / 9"
+        }
       },
       "content": {
-        "padding": { "value": "0.75rem" }
+        "padding": {
+          "value": "0.75rem"
+        }
       },
       "text": {
-        "margin-block-end": { "value": "{basis.space.block.sm}" }
+        "margin-block-end": {
+          "value": "{basis.space.block.md}"
+        }
       },
       "icon": {
-        "height": { "value": "{basis.space.block.md}" },
-        "text-align": { "value": "right" },
-        "color": { "value": "{denhaag.color.blue.3}" }
+        "height": {
+          "value": "{basis.space.block.xl}"
+        },
+        "text-align": {
+          "value": "right"
+        },
+        "color": {
+          "value": "{denhaag.color.blue.3}"
+        }
       }
     }
   }

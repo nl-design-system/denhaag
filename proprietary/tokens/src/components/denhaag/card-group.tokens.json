@@ -1,20 +1,32 @@
 {
   "denhaag": {
     "card-group": {
-      "gap": { "value": "32px" },
+      "gap": {
+        "value": "32px"
+      },
       "s": {
-        "gap": { "value": "16px" }
+        "gap": {
+          "value": "16px"
+        }
       },
       "m": {
-        "gap": { "value": "24px" }
+        "gap": {
+          "value": "24px"
+        }
       },
       "l": {
-        "gap": { "value": "32px" }
+        "gap": {
+          "value": "32px"
+        }
       },
       "xl": {
-        "gap": { "value": "40px" }
+        "gap": {
+          "value": "40px"
+        }
       },
-      "margin-block": { "value": "{denhaag.size.500}" }
+      "margin-block": {
+        "value": "{basis.space.block.2xl}"
+      }
     }
   }
 }

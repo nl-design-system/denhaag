@@ -7,14 +7,14 @@
             "value": "{denhaag.color.grey.4}"
           },
           "gap": {
-            "value": "{denhaag.size.500}"
+            "value": "{basis.space.inline.2xl}"
           },
           "padding": {
-            "value": "{basis.space.block.md}"
+            "value": "{basis.space.block.xl}"
           }
         },
         "gap": {
-          "value": "{basis.space.block.md}"
+          "value": "{basis.space.block.xl}"
         },
         "caption": {
           "font": {
@@ -51,7 +51,7 @@
       },
       "padding": {
         "block": {
-          "value": "{basis.space.inline.xl}"
+          "value": "{basis.space.inline.4xl}"
         }
       },
       "icon": {
@@ -69,17 +69,17 @@
         "placeholder": {
           "padding": {
             "block": {
-              "value": "{basis.space.block.lg}"
+              "value": "{basis.space.block.3xl}"
             },
             "inline": {
-              "value": "{basis.space.inline.lg}"
+              "value": "{basis.space.inline.3xl}"
             }
           }
         }
       },
       "list": {
         "gap": {
-          "value": "{basis.space.inline.md}"
+          "value": "{basis.space.inline.xl}"
         }
       },
       "grid": {
@@ -87,18 +87,18 @@
           "value": 1
         },
         "gap": {
-          "value": "{basis.space.inline.md}"
+          "value": "{basis.space.inline.xl}"
         }
       },
       "row": {
         "gap": {
-          "value": "{basis.space.block.xl}"
+          "value": "{basis.space.block.4xl}"
         }
       },
       "pagination": {
         "padding": {
           "block": {
-            "value": "{basis.space.block.4xl}"
+            "value": "{basis.space.block.6xl}"
           }
         }
       },
@@ -108,7 +108,7 @@
             "value": 2
           },
           "gap": {
-            "value": "{basis.space.inline.md}"
+            "value": "{basis.space.inline.xl}"
           }
         }
       },
@@ -118,7 +118,7 @@
             "value": 3
           },
           "gap": {
-            "value": "{basis.space.inline.lg}"
+            "value": "{basis.space.inline.3xl}"
           }
         }
       },
@@ -130,9 +130,15 @@
         }
       },
       "focus": {
-        "outline-color": { "value": "{denhaag.color.ocher.5}" },
-        "outline-style": { "value": "{denhaag.border-style.dashed}" },
-        "outline-width": { "value": "{basis.border-width.xl}" },
+        "outline-color": {
+          "value": "{denhaag.color.ocher.5}"
+        },
+        "outline-style": {
+          "value": "{denhaag.border-style.dashed}"
+        },
+        "outline-width": {
+          "value": "{basis.border-width.xl}"
+        },
         "icon": {
           "opacity": {
             "value": 1

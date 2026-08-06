@@ -1,8 +1,12 @@
 {
   "utrecht": {
     "form-field": {
-      "margin-block-start": { "value": "{denhaag.size.500}" },
-      "margin-block-end": { "value": "{denhaag.size.500}" },
+      "margin-block-start": {
+        "value": "{basis.space.block.2xl}"
+      },
+      "margin-block-end": {
+        "value": "{basis.space.block.2xl}"
+      },
       "max-inline-size": {},
       "invalid": {
         "border-inline-start-color": {
@@ -12,7 +16,9 @@
         "padding-inline-start": {}
       },
       "label": {
-        "margin-block-end": { "value": "{basis.space.block.xs}" }
+        "margin-block-end": {
+          "value": "{basis.space.block.sm}"
+        }
       }
     }
   }
