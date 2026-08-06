@@ -51,7 +51,9 @@
 .denhaag-anchor-collapse__summary--focus {
   --denhaag-anchor-collapse-summary-color: var(--denhaag-anchor-collapse-summary-focus-color);
 
-  outline: var(--denhaag-anchor-collapse-summary-focus-outline, var(--denhaag-focus-border));
+  outline: var(--denhaag-anchor-collapse-summary-focus-outline-width)
+    var(--denhaag-anchor-collapse-summary-focus-outline-style)
+    var(--denhaag-anchor-collapse-summary-focus-outline-color);
 }
 
 .denhaag-anchor-collapse__summary > svg {

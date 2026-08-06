@@ -52,7 +52,8 @@
 .denhaag-link:focus-visible {
   --denhaag-link-color: var(--denhaag-link-focus-color);
 
-  outline: var(--denhaag-link-focus-outline);
+  outline: var(--denhaag-link-focus-outline-width) var(--denhaag-link-focus-outline-style)
+    var(--denhaag-link-focus-outline-color);
 }
 
 .denhaag-link--hover,

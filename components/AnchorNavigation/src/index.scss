@@ -64,7 +64,8 @@
   --denhaag-anchor-navigation-link-color: var(--denhaag-anchor-navigation-link-focus-color);
   --denhaag-anchor-navigation-link-background-color: var(--denhaag-anchor-navigation-link-focus-color);
 
-  outline: var(--denhaag-anchor-navigation-link-outline);
+  outline: var(--denhaag-anchor-navigation-link-outline-width) var(--denhaag-anchor-navigation-link-outline-style)
+    var(--denhaag-anchor-navigation-link-outline-color);
 }
 
 .denhaag-anchor-navigation__link:focus:not(:focus-visible) {

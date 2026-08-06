@@ -93,5 +93,6 @@
 
 .denhaag-card-news--focus .denhaag-card-news__link::after,
 .denhaag-card-news:focus-within .denhaag-card-news__link:focus-visible::after {
-  outline: var(--denhaag-card-news-outline);
+  outline: var(--denhaag-card-news-outline-width) var(--denhaag-card-news-outline-style)
+    var(--denhaag-card-news-outline-color);
 }

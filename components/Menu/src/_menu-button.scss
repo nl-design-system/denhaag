@@ -25,7 +25,7 @@
 
 .denhaag-menu-button:focus,
 .denhaag-menu-button--focus {
-  outline: var(--denhaag-focus-border);
+  outline: var(--basis-border-width-xl) var(--denhaag-border-style-dashed) var(--denhaag-color-ocher-5);
 }
 
 .denhaag-menu-button:hover,

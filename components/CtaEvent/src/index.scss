@@ -38,7 +38,8 @@
     var(--denhaag-cta-event-hover-dot-background-color)
   );
 
-  outline: var(--denhaag-cta-event-focus-outline);
+  outline: var(--denhaag-cta-event-focus-outline-width) var(--denhaag-cta-event-focus-outline-style)
+    var(--denhaag-cta-event-focus-outline-color);
 }
 
 .denhaag-cta-event__date {

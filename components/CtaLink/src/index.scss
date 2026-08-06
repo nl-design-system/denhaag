@@ -31,7 +31,8 @@
     var(--denhaag-cta-link-hover-highlight-color)
   );
 
-  outline: var(--denhaag-cta-link-focus-outline);
+  outline: var(--denhaag-cta-link-focus-outline-width) var(--denhaag-cta-link-focus-outline-style)
+    var(--denhaag-cta-link-focus-outline-color);
 }
 
 .denhaag-cta-link__dot {

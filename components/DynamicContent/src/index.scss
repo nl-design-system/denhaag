@@ -73,7 +73,8 @@
 
   & .denhaag-icon,
   & .denhaag-dynamic-content__card-image {
-    outline: var(--denhaag-dynamic-content-focus-outline);
+    outline: var(--denhaag-dynamic-content-focus-outline-width) var(--denhaag-dynamic-content-focus-outline-style)
+      var(--denhaag-dynamic-content-focus-outline-color);
   }
 }
 

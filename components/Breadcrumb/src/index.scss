@@ -80,7 +80,8 @@ ol.denhaag-breadcrumb__list {
   --denhaag-breadcrumb-link-color: var(--denhaag-breadcrumb-link-focus-color, inherit);
   --denhaag-breadcrumb-link-text-decoration: var(--denhaag-breadcrumb-link-focus-text-decoration, underline);
 
-  outline: var(--denhaag-breadcrumb-link-focus-outline, var(--denhaag-link-focus-outline));
+  outline: var(--denhaag-breadcrumb-link-focus-outline-width) var(--denhaag-breadcrumb-link-focus-outline-style)
+    var(--denhaag-breadcrumb-link-focus-outline-color);
 }
 
 .denhaag-breadcrumb__item:nth-child(1) {

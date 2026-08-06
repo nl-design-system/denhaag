@@ -55,7 +55,8 @@
 
 .denhaag-pagination__button:focus-visible,
 .denhaag-pagination__button--focus {
-  outline: var(--denhaag-link-focus-outline);
+  outline: var(--denhaag-link-focus-outline-width) var(--denhaag-link-focus-outline-style)
+    var(--denhaag-link-focus-outline-color);
   border-radius: 0;
 }
 
