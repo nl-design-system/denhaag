@@ -2,7 +2,7 @@
   "denhaag": {
     "action": {
       "gap": {
-        "value": "{basis.space.inline.md}"
+        "value": "{basis.space.inline.xl}"
       },
       "color": {
         "value": "{denhaag.color.grey.5}"
@@ -17,20 +17,26 @@
         "value": "0"
       },
       "padding-inline-start": {
-        "value": "{basis.space.inline.md}"
+        "value": "{basis.space.inline.xl}"
       },
       "padding-inline-end": {
-        "value": "{basis.space.inline.md}"
+        "value": "{basis.space.inline.xl}"
       },
       "padding-block-start": {
-        "value": "{basis.space.block.md}"
+        "value": "{basis.space.block.xl}"
       },
       "padding-block-end": {
-        "value": "{basis.space.block.md}"
+        "value": "{basis.space.block.xl}"
       },
-      "border-style": { "value": "solid" },
-      "border-width": { "value": "1px" },
-      "border-color": { "value": "{denhaag.color.grey.2}" },
+      "border-style": {
+        "value": "solid"
+      },
+      "border-width": {
+        "value": "1px"
+      },
+      "border-color": {
+        "value": "{denhaag.color.grey.2}"
+      },
       "content": {
         "bold": {
           "font-weight": {
@@ -40,21 +46,21 @@
       },
       "context": {
         "gap": {
-          "value": "{basis.space.inline.md}"
+          "value": "{basis.space.inline.xl}"
         },
         "lg": {
           "gap": {
-            "value": "{denhaag.size.300}"
+            "value": "{basis.space.inline.lg}"
           }
         }
       },
       "details": {
         "gap": {
-          "value": "{basis.space.inline.md}"
+          "value": "{basis.space.inline.xl}"
         },
         "lg": {
           "gap": {
-            "value": "{denhaag.size.300}"
+            "value": "{basis.space.inline.lg}"
           }
         }
       },
@@ -67,7 +73,7 @@
         },
         "warning": {
           "gap": {
-            "value": "{basis.space.inline.sm}"
+            "value": "{basis.space.inline.md}"
           },
           "color": {
             "value": "{denhaag.color.orange.5}"
@@ -98,7 +104,7 @@
       },
       "actions": {
         "gap": {
-          "value": "{basis.space.inline.sm}"
+          "value": "{basis.space.inline.md}"
         }
       },
       "link-icon": {
@@ -119,16 +125,16 @@
       },
       "single": {
         "padding-inline-start": {
-          "value": "{basis.space.inline.md}"
+          "value": "{basis.space.inline.xl}"
         },
         "padding-inline-end": {
-          "value": "{basis.space.inline.md}"
+          "value": "{basis.space.inline.xl}"
         },
         "padding-block-start": {
-          "value": "{basis.space.block.md}"
+          "value": "{basis.space.block.xl}"
         },
         "padding-block-end": {
-          "value": "{basis.space.block.md}"
+          "value": "{basis.space.block.xl}"
         },
         "hover": {
           "background-color": {
@@ -136,30 +142,36 @@
           }
         },
         "focus": {
-          "outline-color": { "value": "{denhaag.color.ocher.5}" },
-          "outline-width": { "value": "{basis.border-width.xl}" },
-          "outline-style": { "value": "{denhaag.border-style.dashed}" }
+          "outline-color": {
+            "value": "{denhaag.color.ocher.5}"
+          },
+          "outline-width": {
+            "value": "{basis.border-width.xl}"
+          },
+          "outline-style": {
+            "value": "{denhaag.border-style.dashed}"
+          }
         },
         "details": {
           "gap": {
-            "value": "{basis.space.inline.sm}"
+            "value": "{basis.space.inline.md}"
           },
           "lg": {
             "gap": {
-              "value": "{basis.space.inline.sm}"
+              "value": "{basis.space.inline.md}"
             }
           }
         }
       },
       "lg": {
         "gap": {
-          "value": "{basis.space.inline.xl}"
+          "value": "{basis.space.inline.4xl}"
         },
         "padding-block-start": {
-          "value": "{denhaag.size.300}"
+          "value": "{basis.space.block.lg}"
         },
         "padding-block-end": {
-          "value": "{denhaag.size.300}"
+          "value": "{basis.space.block.lg}"
         }
       }
     }

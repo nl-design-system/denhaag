@@ -5,7 +5,7 @@
         "margin": {
           "block": {
             "start": {
-              "value": "{basis.space.block.md}"
+              "value": "{basis.space.block.xl}"
             }
           }
         }
@@ -34,12 +34,18 @@
         "font-weight": {
           "value": "{basis.text.font-weight.default}"
         },
-        "outline-color": { "value": "{denhaag.color.ocher.5}" },
-        "outline-style": { "value": "{denhaag.border-style.dashed}" },
-        "outline-width": { "value": "{basis.border-width.xl}" },
+        "outline-color": {
+          "value": "{denhaag.color.ocher.5}"
+        },
+        "outline-style": {
+          "value": "{denhaag.border-style.dashed}"
+        },
+        "outline-width": {
+          "value": "{basis.border-width.xl}"
+        },
         "padding": {
           "block": {
-            "value": "{basis.space.block.sm}"
+            "value": "{basis.space.block.md}"
           },
           "inline": {
             "end": {

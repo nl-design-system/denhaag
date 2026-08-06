@@ -30,10 +30,10 @@
       "padding": {
         "inline": {
           "end": {
-            "value": "{basis.space.inline.sm}"
+            "value": "{basis.space.inline.md}"
           },
           "start": {
-            "value": "{basis.space.inline.sm}"
+            "value": "{basis.space.inline.md}"
           }
         }
       },
@@ -57,7 +57,7 @@
         },
         "margin": {
           "block-end": {
-            "value": "{basis.space.inline.lg}"
+            "value": "{basis.space.inline.3xl}"
           }
         }
       },
@@ -68,7 +68,7 @@
               "value": "0.75rem"
             },
             "start": {
-              "value": "{basis.space.inline.xs}"
+              "value": "{basis.space.inline.sm}"
             }
           }
         }
@@ -83,7 +83,7 @@
         "padding": {
           "block": {
             "end": {
-              "value": "{basis.space.inline.xs}"
+              "value": "{basis.space.inline.sm}"
             },
             "start": {
               "value": "0.75rem"
@@ -95,10 +95,10 @@
         "padding": {
           "inline": {
             "end": {
-              "value": "{basis.space.inline.md}"
+              "value": "{basis.space.inline.xl}"
             },
             "start": {
-              "value": "{basis.space.inline.md}"
+              "value": "{basis.space.inline.xl}"
             }
           }
         },
@@ -106,10 +106,10 @@
           "padding": {
             "block": {
               "end": {
-                "value": "{basis.space.inline.md}"
+                "value": "{basis.space.inline.xl}"
               },
               "start": {
-                "value": "{basis.space.inline.md}"
+                "value": "{basis.space.inline.xl}"
               }
             }
           }
@@ -118,10 +118,10 @@
           "padding": {
             "block": {
               "end": {
-                "value": "{basis.space.inline.md}"
+                "value": "{basis.space.inline.xl}"
               },
               "start": {
-                "value": "{basis.space.inline.md}"
+                "value": "{basis.space.inline.xl}"
               }
             }
           }

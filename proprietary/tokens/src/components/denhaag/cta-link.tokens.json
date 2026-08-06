@@ -19,14 +19,14 @@
         }
       },
       "gap": {
-        "value": "{denhaag.size.500}"
+        "value": "{basis.space.block.2xl}"
       },
       "padding": {
         "block": {
-          "value": "{basis.space.block.lg}"
+          "value": "{basis.space.block.3xl}"
         },
         "inline": {
-          "value": "{basis.space.inline.md}"
+          "value": "{basis.space.inline.xl}"
         }
       },
       "highlight": {
@@ -38,7 +38,7 @@
         }
       },
       "width": {
-        "value": "{basis.space.block.4xl}"
+        "value": "{basis.space.block.6xl}"
       },
       "focus": {
         "highlight": {
@@ -46,9 +46,15 @@
             "value": "{denhaag.color.blue.4}"
           }
         },
-        "outline-color": { "value": "{denhaag.color.ocher.5}" },
-        "outline-style": { "value": "{denhaag.border-style.dashed}" },
-        "outline-width": { "value": "{basis.border-width.xl}" }
+        "outline-color": {
+          "value": "{denhaag.color.ocher.5}"
+        },
+        "outline-style": {
+          "value": "{denhaag.border-style.dashed}"
+        },
+        "outline-width": {
+          "value": "{basis.border-width.xl}"
+        }
       },
       "hover": {
         "highlight": {
@@ -64,7 +70,7 @@
       },
       "icon": {
         "size": {
-          "value": "{denhaag.size.500}"
+          "value": "{basis.space.block.2xl}"
         }
       },
       "text-decoration": {

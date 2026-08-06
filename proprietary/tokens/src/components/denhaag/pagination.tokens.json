@@ -18,14 +18,14 @@
         "value": "0.625rem"
       },
       "size": {
-        "value": "{basis.space.block.xl}"
+        "value": "{basis.space.block.4xl}"
       },
       "arrow": {
         "font-size": {
           "value": "{basis.text.font-size.sm}"
         },
         "size": {
-          "value": "{denhaag.size.500}"
+          "value": "{basis.space.block.2xl}"
         }
       },
       "button": {
@@ -49,7 +49,9 @@
           "color": {
             "value": "{denhaag.color.green.3}"
           },
-          "font-weight": { "value": "{basis.text.font-weight.bold}" },
+          "font-weight": {
+            "value": "{basis.text.font-weight.bold}"
+          },
           "disabled": {
             "background-color": {
               "value": "{denhaag.color.grey.2}"

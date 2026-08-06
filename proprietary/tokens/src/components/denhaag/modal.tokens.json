@@ -14,10 +14,10 @@
       },
       "padding": {
         "block": {
-          "value": "{basis.space.block.md}"
+          "value": "{basis.space.block.xl}"
         },
         "inline": {
-          "value": "{basis.space.block.md}"
+          "value": "{basis.space.block.xl}"
         }
       },
       "index": {
@@ -31,7 +31,7 @@
           "value": "{denhaag.color.green.3}"
         },
         "gap": {
-          "value": "{basis.space.inline.sm}"
+          "value": "{basis.space.inline.md}"
         },
         "font": {
           "size": {
@@ -58,10 +58,10 @@
       "header": {
         "padding": {
           "block": {
-            "value": "{basis.space.block.md}"
+            "value": "{basis.space.block.xl}"
           },
           "inline": {
-            "value": "{basis.space.inline.md}"
+            "value": "{basis.space.inline.xl}"
           }
         },
         "border-bottom": {
@@ -101,20 +101,20 @@
       "content": {
         "padding": {
           "block": {
-            "value": "{basis.space.block.lg}"
+            "value": "{basis.space.block.3xl}"
           },
           "inline": {
-            "value": "{basis.space.inline.md}"
+            "value": "{basis.space.inline.xl}"
           }
         }
       },
       "footer": {
         "padding": {
           "block": {
-            "value": "{basis.space.block.md}"
+            "value": "{basis.space.block.xl}"
           },
           "inline": {
-            "value": "{basis.space.inline.md}"
+            "value": "{basis.space.inline.xl}"
           }
         },
         "justify-content": {

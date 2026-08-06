@@ -12,7 +12,9 @@
       },
       "font-style": {},
       "margin-block-start": {},
-      "margin-block-end": { "value": "{basis.space.block.sm}" },
+      "margin-block-end": {
+        "value": "{basis.space.block.md}"
+      },
       "invalid": {
         "font-weight": {},
         "color": {

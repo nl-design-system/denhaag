@@ -1,7 +1,9 @@
 {
   "denhaag": {
     "link": {
-      "cursor": { "value": "pointer" },
+      "cursor": {
+        "value": "pointer"
+      },
       "text-decoration": {
         "value": "underline"
       },
@@ -12,9 +14,15 @@
         "color": {
           "value": "{denhaag.color.blue.4}"
         },
-        "outline-color": { "value": "{denhaag.color.ocher.5}" },
-        "outline-style": { "value": "{denhaag.border-style.dashed}" },
-        "outline-width": { "value": "{basis.border-width.xl}" }
+        "outline-color": {
+          "value": "{denhaag.color.ocher.5}"
+        },
+        "outline-style": {
+          "value": "{denhaag.border-style.dashed}"
+        },
+        "outline-width": {
+          "value": "{basis.border-width.xl}"
+        }
       },
       "hover": {
         "color": {
@@ -31,10 +39,10 @@
           "value": "flex-start"
         },
         "margin-start": {
-          "value": "{basis.space.inline.sm}"
+          "value": "{basis.space.inline.md}"
         },
         "margin-end": {
-          "value": "{basis.space.inline.sm}"
+          "value": "{basis.space.inline.md}"
         },
         "font-size": {
           "value": "1em"
@@ -43,7 +51,7 @@
           "value": "1.25rem"
         },
         "gap": {
-          "value": "{basis.space.inline.xs}"
+          "value": "{basis.space.inline.sm}"
         }
       },
       "with-icon": {
@@ -54,7 +62,7 @@
       "small": {
         "icon": {
           "font-size": {
-            "value": "{basis.space.block.sm}"
+            "value": "{basis.space.block.md}"
           },
           "size": {
             "value": "0.5rem"

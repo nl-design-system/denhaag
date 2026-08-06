@@ -5,7 +5,7 @@
       "margin-block-end": {},
       "label": {
         "margin-block-end": {
-          "value": "{basis.space.block.xs}"
+          "value": "{basis.space.block.sm}"
         }
       },
       "description": {

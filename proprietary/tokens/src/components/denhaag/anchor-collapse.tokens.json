@@ -18,24 +18,26 @@
       "content": {
         "margin": {
           "block": {
-            "start": { "value": "{basis.space.block.sm}" }
+            "start": {
+              "value": "{basis.space.block.md}"
+            }
           }
         },
         "padding": {
           "block": {
             "start": {
-              "value": "{basis.space.block.md}"
+              "value": "{basis.space.block.xl}"
             },
             "end": {
-              "value": "{basis.space.block.lg}"
+              "value": "{basis.space.block.3xl}"
             }
           },
           "inline": {
             "start": {
-              "value": "{basis.space.inline.lg}"
+              "value": "{basis.space.inline.3xl}"
             },
             "end": {
-              "value": "{basis.space.inline.lg}"
+              "value": "{basis.space.inline.3xl}"
             }
           }
         }
@@ -60,10 +62,10 @@
         },
         "padding": {
           "block": {
-            "value": "{basis.space.block.md}"
+            "value": "{basis.space.block.xl}"
           },
           "inline": {
-            "value": "{basis.space.inline.lg}"
+            "value": "{basis.space.inline.3xl}"
           }
         },
         "active": {
@@ -80,9 +82,15 @@
           "color": {
             "value": "{denhaag.color.green.3}"
           },
-          "outline-color": { "value": "{denhaag.color.ocher.5}" },
-          "outline-style": { "value": "{denhaag.border-style.dashed}" },
-          "outline-width": { "value": "{basis.border-width.xl}" }
+          "outline-color": {
+            "value": "{denhaag.color.ocher.5}"
+          },
+          "outline-style": {
+            "value": "{denhaag.border-style.dashed}"
+          },
+          "outline-width": {
+            "value": "{basis.border-width.xl}"
+          }
         }
       }
     }
