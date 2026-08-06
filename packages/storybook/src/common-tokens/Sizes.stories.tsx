@@ -2,15 +2,20 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 import tokens from '../../../../proprietary/tokens/dist/index.json';
 import { Title } from '@storybook/addon-docs/blocks';
 import React from 'react';
-import { getTokenGroup, getTokenRows, path2css } from '../denhaag/util';
+import { getTokenGroup, getTokenRows, isDesignToken, path2css } from '../denhaag/util';
 
 type Story = StoryObj<typeof meta>;
 type Tokens = typeof tokens;
 type SizeTokens = Tokens['basis']['size'];
 type SizeIconTokens = Tokens['basis']['size']['icon'];
+type SizeToken = Extract<SizeTokens[keyof SizeTokens], { value: string }>;
 
 const sizeTokens: SizeTokens = tokens['basis']['size'];
-const sizeTokensSorted = Object.entries(sizeTokens)
+const sizeTokenEntries = Object.entries(sizeTokens).filter((entry): entry is [string, SizeToken] =>
+  isDesignToken(entry[1]),
+);
+
+const sizeTokensSorted = sizeTokenEntries
   .filter(([key]) => key !== 'icon')
   .filter(([key]) => key !== 'form-control')
   .filter(([key]) => key !== 'page')
