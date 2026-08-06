@@ -42,7 +42,7 @@
           "value": "{basis.space.block.4xl}"
         },
         "width": {
-          "value": "calc(50% - (2 * {basis.space.inline.xl}))"
+          "value": "calc(50% - (2 * {basis.space.inline.4xl}))"
         }
       },
       "title": {
