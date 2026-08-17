@@ -2,9 +2,6 @@
   "basis": {
     "text": {
       "font-size": {
-        "xs": {
-          "value": "{denhaag.font-size.12}"
-        },
         "sm": {
           "value": "{denhaag.font-size.14}"
         },

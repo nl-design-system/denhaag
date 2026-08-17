@@ -1,0 +1,29 @@
+.denhaag-quick-links .denhaag-quick-links__item {
+  display: flex;
+  align-items: center;
+  gap: var(--denhaag-quick-links-item-gap, 12px);
+  color: var(--denhaag-quick-links-item-color, inherit);
+  padding-inline-start: var(--denhaag-quick-links-item-padding-inline-start, 16px);
+  padding-inline-end: var(--denhaag-quick-links-item-padding-inline-end, 16px);
+  padding-block-start: var(--denhaag-quick-links-item-padding-block-start, 16px);
+  padding-block-end: var(--denhaag-quick-links-item-padding-block-end, 16px);
+  border-bottom-style: var(--denhaag-quick-links-item-border-bottom-style, solid);
+  border-bottom-width: var(--denhaag-quick-links-item-border-bottom-width, 1px);
+  border-bottom-color: var(--denhaag-quick-links-item-border-bottom-color, none);
+  text-decoration: none;
+
+  &:hover {
+    transition: var(--denhaag-quick-links-item-hover-transition, ease-in-out 200ms);
+    color: var(--denhaag-quick-links-item-hover-color, --denhaag-color-green-3);
+  }
+
+  &:active {
+    transition: var(--denhaag-quick-links-item-active-transition, ease-in-out 200ms);
+    color: var(--denhaag-quick-links-item-active-color, --denhaag-color-green-4);
+    background-color: var(--denhaag-quick-links-item-active-background-color, none);
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}

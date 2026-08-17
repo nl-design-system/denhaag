@@ -1,0 +1,42 @@
+{
+  "basis": {
+    "border-width": {
+      "none": { "value": "{denhaag.border-width.none}" },
+      "sm": { "value": "{denhaag.border-width.thin}" },
+      "md": { "value": "{denhaag.border-width.standard}" },
+      "lg": { "value": "{denhaag.border-width.semibold}" },
+      "xl": { "value": "{denhaag.border-width.bold}" },
+      "2xl": { "value": "{denhaag.border-width.extrabold}" }
+    },
+    "focus": {
+      "outline-width": {
+        "value": "{denhaag.border-width.bold}"
+      }
+    },
+    "form-control": {
+      "border-width": {
+        "value": "{denhaag.border-width.standard}"
+      },
+      "active": {
+        "border-width": {
+          "value": "{denhaag.border-width.standard}"
+        }
+      },
+      "focus": {
+        "border-width": {
+          "value": "{denhaag.border-width.standard}"
+        }
+      },
+      "hover": {
+        "border-width": {
+          "value": "{denhaag.border-width.standard}"
+        }
+      },
+      "invalid": {
+        "border-width": {
+          "value": "{denhaag.border-width.standard}"
+        }
+      }
+    }
+  }
+}
