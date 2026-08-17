@@ -1,0 +1,107 @@
+{
+  "denhaag": {
+    "quick-links": {
+      "border-radius": {
+        "value": "{common.border-radius.xl}"
+      },
+      "border-color": {
+        "value": "{denhaag.color.grey.2}"
+      },
+      "border-width": {
+        "value": "{basis.border-width.md}"
+      },
+      "border-style": {
+        "value": "{denhaag.border-style.solid}"
+      },
+      "drop-shadow": {
+        "value": "0 1px 0 0 #d2d2d2"
+      },
+      "item": {
+        "gap": {
+          "value": "{basis.space.column.lg}"
+        },
+        "color": {
+          "value": "{denhaag.color.grey.4}"
+        },
+        "padding-inline-start": {
+          "value": "{basis.space.inline.xl}"
+        },
+        "padding-inline-end": {
+          "value": "{basis.space.inline.xl}"
+        },
+        "padding-block-start": {
+          "value": "{basis.space.block.xl}"
+        },
+        "padding-block-end": {
+          "value": "{basis.space.block.xl}"
+        },
+        "border-bottom-style": {
+          "value": "{denhaag.border-style.solid}"
+        },
+        "border-bottom-width": {
+          "value": "{basis.border-width.md}"
+        },
+        "border-bottom-color": {
+          "value": "{denhaag.color.grey.2}"
+        },
+        "hover": {
+          "transition": {
+            "value": "ease-in-out 0.2s"
+          },
+          "color": {
+            "value": "{denhaag.color.green.3}"
+          }
+        },
+        "active": {
+          "transition": {
+            "value": "ease-in-out 0.2s"
+          },
+          "color": {
+            "value": "{denhaag.color.green.4}"
+          },
+          "background-color": {
+            "value": "{denhaag.color.grey.1}"
+          }
+        }
+      },
+      "icon": {
+        "color": {
+          "value": ""
+        },
+        "font-size": {
+          "value": "{basis.size.icon.xl}"
+        }
+      },
+      "icon-wrapper": {
+        "min-width": {
+          "value": "{basis.space.inline.min.3xl}"
+        }
+      },
+      "label": {
+        "color": {
+          "value": ""
+        },
+        "font-family": {
+          "value": "{basis.text.font-family.default}"
+        },
+        "font-size": {
+          "value": "{basis.text.font-size.md}"
+        },
+        "font-weight": {
+          "value": "{basis.text.font-weight.default}"
+        },
+        "line-height": {
+          "value": "{basis.text.line-height.md}"
+        }
+      },
+      "arrow": {
+        "color": {
+          "value": ""
+        },
+        "font-size": {
+          "value": "{basis.size.icon.lg}"
+        }
+      }
+    }
+  }
+}

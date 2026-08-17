@@ -84,6 +84,7 @@
     "@gemeente-denhaag/pagination": "workspace:*",
     "@gemeente-denhaag/paragraph": "workspace:*",
     "@gemeente-denhaag/process-steps": "workspace:*",
+    "@gemeente-denhaag/quick-links": "workspace:*",
     "@gemeente-denhaag/radio-button": "workspace:*",
     "@gemeente-denhaag/responsive-content": "workspace:*",
     "@gemeente-denhaag/rich-text": "workspace:*",

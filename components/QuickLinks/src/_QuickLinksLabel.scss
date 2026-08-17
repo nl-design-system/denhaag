@@ -1,0 +1,8 @@
+.denhaag-quick-links .denhaag-quick-links__label {
+  flex: 1;
+  color: var(--denhaag-quick-links-label-color, inherit);
+  font-family: var(--denhaag-quick-links-label-font-family, inherit);
+  font-size: var(--denhaag-quick-links-label-font-size, 18px);
+  font-weight: var(--denhaag-quick-links-label-font-weight, 400);
+  line-height: var(--denhaag-quick-links-label-line-height, 24px);
+}

@@ -1,4 +1,11 @@
 {
+  "common": {
+    "border-radius": {
+      "xl": {
+        "value": "{denhaag.radius.8}"
+      }
+    }
+  },
   "basis": {
     "border-radius": {
       "none": {
