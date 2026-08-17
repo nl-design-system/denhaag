@@ -19,7 +19,7 @@
     /* stylelint-disable-next-line no-descending-specificity */
     &--focus,
     &:focus-visible {
-      outline: var(--basis-border-width-xl) var(--denhaag-border-style-dashed) var(--denhaag-color-ocher-5);
+      outline: var(--common-border-width-xl) var(--denhaag-border-style-dashed) var(--denhaag-color-ocher-5);
     }
 
     svg {

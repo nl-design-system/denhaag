@@ -1,4 +1,13 @@
 {
+  "common": {
+    "text": {
+      "font-size": {
+        "xs": {
+          "value": "{denhaag.font-size.12}"
+        }
+      }
+    }
+  },
   "basis": {
     "text": {
       "font-size": {

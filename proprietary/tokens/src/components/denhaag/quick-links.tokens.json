@@ -46,7 +46,7 @@
         },
         "hover": {
           "transition": {
-            "value": "ease-in-out 0.2s"
+            "value": "ease-in-out 200ms"
           },
           "color": {
             "value": "{denhaag.color.green.3}"
@@ -54,7 +54,7 @@
         },
         "active": {
           "transition": {
-            "value": "ease-in-out 0.2s"
+            "value": "ease-in-out 200ms"
           },
           "color": {
             "value": "{denhaag.color.green.4}"

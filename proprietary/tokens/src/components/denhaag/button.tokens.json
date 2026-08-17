@@ -43,7 +43,7 @@
           "value": "{denhaag.color.ocher.5}"
         },
         "border-width": {
-          "value": "{basis.border-width.xl}"
+          "value": "{common.border-width.xl}"
         },
         "border-style": {
           "value": "{denhaag.border-style.dashed}"

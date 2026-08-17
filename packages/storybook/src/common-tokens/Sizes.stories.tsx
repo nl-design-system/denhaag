@@ -6,13 +6,19 @@ import { getTokenGroup, getTokenRows, isDesignToken, path2css } from '../denhaag
 
 type Story = StoryObj<typeof meta>;
 type Tokens = typeof tokens;
-type SizeTokens = Tokens['basis']['size'];
-type SizeIconTokens = Tokens['basis']['size']['icon'];
-type SizeToken = Extract<SizeTokens[keyof SizeTokens], { value: string }>;
+type CommonSizeTokens = Tokens['common']['size'];
+type BasisSizeTokens = Tokens['basis']['size'];
+type CommonSizeIconTokens = Tokens['common']['size']['icon'];
+type BasisSizeIconTokens = Tokens['basis']['size']['icon'];
+type SizeToken = Extract<
+  CommonSizeTokens[keyof CommonSizeTokens] | BasisSizeTokens[keyof BasisSizeTokens],
+  { value: string }
+>;
 
-const sizeTokens: SizeTokens = tokens['basis']['size'];
-const sizeTokenEntries = Object.entries(sizeTokens).filter((entry): entry is [string, SizeToken] =>
-  isDesignToken(entry[1]),
+const commonSizeTokens: CommonSizeTokens = tokens['common']['size'];
+const basisSizeTokens: BasisSizeTokens = tokens['basis']['size'];
+const sizeTokenEntries = [...Object.entries(basisSizeTokens), ...Object.entries(commonSizeTokens)].filter(
+  (entry): entry is [string, SizeToken] => isDesignToken(entry[1]),
 );
 
 const sizeTokensSorted = sizeTokenEntries
@@ -26,8 +32,10 @@ const sizeTokensSorted = sizeTokenEntries
     return aValue - bValue;
   });
 
-const sizeIconTokens: SizeIconTokens = tokens['basis']['size']['icon'];
-const sizeIconTokensSorted = Object.entries(sizeIconTokens).sort((a, b) => {
+const commonSizeIconTokens: CommonSizeIconTokens = tokens['common']['size']['icon'];
+const basisSizeIconTokens: BasisSizeIconTokens = tokens['basis']['size']['icon'];
+const sizeIconTokenEntries = [...Object.entries(basisSizeIconTokens), ...Object.entries(commonSizeIconTokens)];
+const sizeIconTokensSorted = sizeIconTokenEntries.sort((a, b) => {
   const aValue = parseFloat(a[1].value);
   const bValue = parseFloat(b[1].value);
   return aValue - bValue;
