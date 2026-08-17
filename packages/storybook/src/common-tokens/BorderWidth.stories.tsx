@@ -6,9 +6,12 @@ import { getTokenGroup, getTokenRows, path2css } from '../denhaag/util';
 
 type Story = StoryObj<typeof meta>;
 type Tokens = typeof tokens;
-type BorderWidthTokens = Tokens['basis']['border-width'];
+type CommonBorderWidthTokens = Tokens['common']['border-width'];
+type BasisBorderWidthTokens = Tokens['basis']['border-width'];
 
-const borderWidthTokens: BorderWidthTokens = tokens['basis']['border-width'];
+const commonBorderWidthTokens: CommonBorderWidthTokens = tokens['common']['border-width'];
+const basisBorderWidthTokens: BasisBorderWidthTokens = tokens['basis']['border-width'];
+const borderWidthTokens = { ...basisBorderWidthTokens, ...commonBorderWidthTokens };
 const borderWidthTokensSorted = Object.entries(borderWidthTokens).sort((a, b) => {
   const aValue = parseFloat(a[1].value);
   const bValue = parseFloat(b[1].value);

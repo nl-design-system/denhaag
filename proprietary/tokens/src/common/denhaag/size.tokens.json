@@ -1,7 +1,14 @@
 {
+  "common": {
+    "size": {
+      "6xs": { "value": "{denhaag.size.50}" }
+    },
+    "size.icon": {
+      "xs": { "value": "{denhaag.size.300}" }
+    }
+  },
   "basis": {
     "size": {
-      "6xs": { "value": "{denhaag.size.50}" },
       "5xs": { "value": "{denhaag.size.100}" },
       "4xs": { "value": "{denhaag.size.200}" },
       "3xs": { "value": "{denhaag.size.300}" },
@@ -14,7 +21,6 @@
       "2xl": { "value": "{denhaag.size.4000}" }
     },
     "size.icon": {
-      "xs": { "value": "{denhaag.size.300}" },
       "sm": { "value": "{denhaag.size.400}" },
       "md": { "value": "{denhaag.size.450}" },
       "lg": { "value": "{denhaag.size.500}" },

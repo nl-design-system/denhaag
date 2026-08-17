@@ -137,7 +137,7 @@
           "value": "{denhaag.border-style.dashed}"
         },
         "outline-width": {
-          "value": "{basis.border-width.xl}"
+          "value": "{common.border-width.xl}"
         },
         "icon": {
           "opacity": {

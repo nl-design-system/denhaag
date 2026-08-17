@@ -29,7 +29,7 @@
       "focus": {
         "border-color": { "value": "{denhaag.color.ocher.5}" },
         "border-style": { "value": "{denhaag.border-style.dashed}" },
-        "border-width": { "value": "{basis.border-width.xl}" }
+        "border-width": { "value": "{common.border-width.xl}" }
       }
     }
   }

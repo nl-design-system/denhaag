@@ -7,9 +7,11 @@ import { path2css } from '../denhaag/util';
 
 type Story = StoryObj<typeof meta>;
 type Tokens = typeof tokens;
+type CommonTokens = Tokens['common']['text']['font-size'];
 type BasisTokens = Tokens['basis']['text']['font-size'];
 type FormControlTokens = Tokens['basis']['form-control']['font-size'];
 
+const commonTokens: CommonTokens = tokens['common']['text']['font-size'];
 const basisTokens: BasisTokens = tokens['basis']['text']['font-size'];
 const formControlTokens: FormControlTokens = tokens['basis']['form-control']['font-size'];
 
@@ -41,12 +43,12 @@ export const XS: Story = {
   parameters: {
     docs: {
       description: {
-        story: `${basisTokens.xs.value}<br />${path2css(basisTokens.xs.path)}`,
+        story: `${commonTokens.xs.value}<br />${path2css(commonTokens.xs.path)}`,
       },
     },
   },
   args: {
-    style: { fontSize: basisTokens.xs.value },
+    style: { fontSize: commonTokens.xs.value },
   },
 };
 

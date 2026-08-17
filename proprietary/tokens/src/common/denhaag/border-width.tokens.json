@@ -1,12 +1,16 @@
 {
+  "common": {
+    "border-width": {
+      "xl": { "value": "{denhaag.border-width.bold}" },
+      "2xl": { "value": "{denhaag.border-width.extrabold}" }
+    }
+  },
   "basis": {
     "border-width": {
       "none": { "value": "{denhaag.border-width.none}" },
       "sm": { "value": "{denhaag.border-width.thin}" },
       "md": { "value": "{denhaag.border-width.standard}" },
-      "lg": { "value": "{denhaag.border-width.semibold}" },
-      "xl": { "value": "{denhaag.border-width.bold}" },
-      "2xl": { "value": "{denhaag.border-width.extrabold}" }
+      "lg": { "value": "{denhaag.border-width.semibold}" }
     },
     "focus": {
       "outline-width": {
