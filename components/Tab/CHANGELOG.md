@@ -1,5 +1,11 @@
 # @gemeente-denhaag/tab
 
+## 3.3.1
+
+### Patch Changes
+
+- 38aa5c8: Update tokens
+
 ## 3.3.0
 
 ### Minor Changes

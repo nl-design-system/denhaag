@@ -1,5 +1,11 @@
 # @gemeente-denhaag/card
 
+## 5.1.2
+
+### Patch Changes
+
+- 38aa5c8: Update tokens
+
 ## 5.1.1
 
 ### Patch Changes

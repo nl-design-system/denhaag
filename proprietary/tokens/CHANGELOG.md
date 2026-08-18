@@ -1,5 +1,11 @@
 # @gemeente-denhaag/design-tokens
 
+## 1.4.2
+
+### Patch Changes
+
+- 38aa5c8: Update tokens
+
 ## 1.4.1
 
 ### Patch Changes
