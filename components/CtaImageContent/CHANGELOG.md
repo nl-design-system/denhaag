@@ -1,5 +1,11 @@
 # @gemeente-denhaag/cta-image-content
 
+## 3.1.2
+
+### Patch Changes
+
+- 38aa5c8: Update tokens
+
 ## 3.1.1
 
 ### Patch Changes

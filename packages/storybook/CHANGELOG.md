@@ -1,5 +1,26 @@
 # @gemeente-denhaag/storybook
 
+## 5.6.3
+
+### Patch Changes
+
+- 38aa5c8: Update tokens
+- Updated dependencies [38aa5c8]
+- Updated dependencies [38aa5c8]
+  - @gemeente-denhaag/quick-links@1.0.0
+  - @gemeente-denhaag/cta-image-content@3.1.2
+  - @gemeente-denhaag/side-navigation@4.2.2
+  - @gemeente-denhaag/design-tokens@1.4.2
+  - @gemeente-denhaag/modal@3.1.2
+  - @gemeente-denhaag/card@5.1.2
+  - @gemeente-denhaag/list@3.1.2
+  - @gemeente-denhaag/menu@4.2.2
+  - @gemeente-denhaag/tab@3.3.1
+  - @gemeente-denhaag/card-authentication@2.1.2
+  - @gemeente-denhaag/footer@4.3.2
+  - @gemeente-denhaag/header@4.2.3
+  - @gemeente-denhaag/card-group@2.1.2
+
 ## 5.6.2
 
 ### Patch Changes

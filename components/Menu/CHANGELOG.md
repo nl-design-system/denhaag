@@ -1,5 +1,11 @@
 # @gemeente-denhaag/menu
 
+## 4.2.2
+
+### Patch Changes
+
+- 38aa5c8: Update tokens
+
 ## 4.2.1
 
 ### Patch Changes
