@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { AnchorHTMLAttributes, ComponentType } from 'react';
+import { BasicLink } from '@gemeente-denhaag/link';
 
-export type QuickLinksItemProps = React.AnchorHTMLAttributes<HTMLAnchorElement>;
+export interface QuickLinksItemProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+  Link?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
+}
 
-export const QuickLinksItem = ({ children, ...props }: QuickLinksItemProps) => (
-  <a className="denhaag-quick-links__item" {...props}>
+export const QuickLinksItem = ({ children, Link = BasicLink, ...props }: QuickLinksItemProps) => (
+  <Link className="denhaag-quick-links__item" {...props}>
     {children}
-  </a>
+  </Link>
 );
 
 export default QuickLinksItem;

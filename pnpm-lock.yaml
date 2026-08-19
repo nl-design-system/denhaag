@@ -810,6 +810,9 @@ importers:
       '@gemeente-denhaag/icons':
         specifier: workspace:*
         version: link:../Icons
+      '@gemeente-denhaag/link':
+        specifier: workspace:*
+        version: link:../Link
       '@gemeente-denhaag/number-badge':
         specifier: workspace:*
         version: link:../NumberBadge
