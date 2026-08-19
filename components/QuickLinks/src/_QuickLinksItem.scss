@@ -10,7 +10,11 @@
   border-bottom-style: var(--denhaag-quick-links-item-border-bottom-style, solid);
   border-bottom-width: var(--denhaag-quick-links-item-border-bottom-width, 1px);
   border-bottom-color: var(--denhaag-quick-links-item-border-bottom-color, none);
-  text-decoration: none;
+
+  &:any-link {
+    color: inherit;
+    text-decoration: none;
+  }
 
   &:hover {
     transition: var(--denhaag-quick-links-item-hover-transition, ease-in-out 200ms);
