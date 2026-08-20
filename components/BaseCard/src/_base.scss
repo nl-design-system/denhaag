@@ -1,0 +1,162 @@
+@mixin list-view {
+  --denhaag-base-card-min-block-size: none;
+  --denhaag-base-card-background-color: none;
+  --denhaag-base-card-padding-block-start: 0px;
+  --denhaag-base-card-border-style: var(--denhaag-base-card-list-border-style);
+  --denhaag-base-card-border-width: var(--denhaag-base-card-list-border-width);
+  --denhaag-base-card-border-color: var(--denhaag-base-card-list-border-color);
+  --denhaag-base-card-before-display: none;
+  --denhaag-base-card-wrapper-gap: var(--denhaag-base-card-list-wrapper-gap);
+  --denhaag-base-card-wrapper-flex-direction: var(--denhaag-base-card-list-wrapper-flex-direction);
+  --denhaag-base-card-wrapper-padding-block-start: var(--denhaag-base-card-list-wrapper-padding-block-start);
+  --denhaag-base-card-wrapper-padding-block-end: var(--denhaag-base-card-list-wrapper-padding-block-end);
+  --denhaag-base-card-wrapper-padding-inline-start: var(--denhaag-base-card-list-wrapper-padding-inline-start);
+  --denhaag-base-card-wrapper-padding-inline-end: var(--denhaag-base-card-list-wrapper-padding-inline-end);
+  --denhaag-base-card-decoration-background-color: none;
+  --denhaag-base-card-color: var(--denhaag-base-card-list-color);
+  --denhaag-base-card-heading-color: var(--denhaag-base-card-list-heading-color);
+  --denhaag-base-card-heading-font-size: var(--denhaag-base-card-list-heading-font-size);
+  --denhaag-base-card-pre-heading-font-size: var(--denhaag-base-card-list-pre-heading-font-size);
+  --denhaag-base-card-footer-gap: var(--denhaag-base-card-list-footer-gap);
+}
+
+@mixin case-default {
+  --denhaag-base-card-background-color: var(--denhaag-base-card-case-background-color);
+  --denhaag-base-card-border-width: var(--denhaag-base-card-case-border-width);
+  --denhaag-base-card-border-color: var(--denhaag-base-card-case-border-color);
+  --denhaag-base-card-color: var(--denhaag-base-card-case-color);
+  --denhaag-base-card-min-block-size: var(--denhaag-base-card-case-min-block-size);
+  --denhaag-base-card-decoration-background-color: var(--denhaag-base-card-case-decoration-background-color);
+  --denhaag-base-card-decoration-paper-background-color: var(
+    --denhaag-base-card-case-decoration-paper-background-color
+  );
+  --denhaag-base-card-heading-color: var(--denhaag-base-card-case-heading-color);
+  --denhaag-base-card-heading-font-family: var(--denhaag-base-card-case-heading-font-family);
+  --denhaag-base-card-heading-font-size: var(--denhaag-base-card-case-heading-font-size);
+  --denhaag-base-card-heading-font-weight: var(--denhaag-base-card-case-heading-font-weight);
+  --denhaag-base-card-heading-line-height: var(--denhaag-base-card-case-heading-line-height);
+  --denhaag-base-card-description-font-family: var(--denhaag-base-card-case-description-font-family);
+  --denhaag-base-card-description-font-size: var(--denhaag-base-card-case-description-font-size);
+  --denhaag-base-card-description-font-weight: var(--denhaag-base-card-case-description-font-weight);
+  --denhaag-base-card-description-line-height: var(--denhaag-base-card-case-description-line-height);
+  --denhaag-base-card-description-margin-block-start: var(--denhaag-base-card-case-description-margin-block-start);
+  --denhaag-base-card-context-color: var(--denhaag-base-card-case-context-color);
+  --denhaag-base-card-link-icon-color: var(--denhaag-base-card-case-link-icon-color);
+}
+
+@mixin case-hover {
+  --denhaag-base-card-background-color: var(--denhaag-base-card-case-hover-background-color);
+  --denhaag-base-card-border-color: var(--denhaag-base-card-case-hover-border-color);
+}
+
+@mixin case-active {
+  --denhaag-base-card-background-color: var(--denhaag-base-card-case-active-background-color);
+  --denhaag-base-card-border-color: var(--denhaag-base-card-case-active-border-color);
+}
+
+@mixin case-archived-default {
+  --denhaag-base-card-background-color: var(--denhaag-base-card-case-archived-background-color);
+  --denhaag-base-card-border-color: var(--denhaag-base-card-case-archived-border-color);
+  --denhaag-base-card-color: var(--denhaag-base-card-case-archived-color);
+  --denhaag-base-card-decoration-background-color: var(--denhaag-base-card-case-archived-decoration-background-color);
+  --denhaag-base-card-heading-color: var(--denhaag-base-card-case-archived-heading-color);
+  --denhaag-base-card-link-icon-color: var(--denhaag-base-card-case-archived-link-icon-color);
+}
+
+@mixin case-archived-hover {
+  --denhaag-base-card-background-color: var(--denhaag-base-card-case-archived-hover-background-color);
+  --denhaag-base-card-border-color: var(--denhaag-base-card-case-archived-hover-border-color);
+}
+
+@mixin case-archived-active {
+  --denhaag-base-card-background-color: var(--denhaag-base-card-case-archived-active-background-color);
+  --denhaag-base-card-border-color: var(--denhaag-base-card-case-archived-active-border-color);
+}
+
+.denhaag-base-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-inline-size: var(--denhaag-base-card-max-inline-size);
+  min-block-size: var(--denhaag-base-card-min-block-size);
+  background: var(--denhaag-base-card-background-color);
+  color: var(--denhaag-base-card-color);
+  border-radius: var(--denhaag-base-card-border-radius);
+  border: var(--denhaag-base-card-border-width, 0) solid var(--denhaag-base-card-border-color, transparent);
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: var(--denhaag-base-card-before-display, block);
+    width: 50%;
+    height: 20px;
+    content: "";
+    border-radius: 0 var(--denhaag-base-card-border-radius) 0 0;
+    background: var(--denhaag-base-card-paper-color);
+  }
+
+  @media (width <= 480px) {
+    @include list-view;
+  }
+
+  &--list {
+    @include list-view;
+  }
+
+  // These only ever update the custom properties consumed by the base
+  // rule's `background: var(...)` / `border: var(...)` declarations above —
+  // never the literal background-color/border-color properties directly.
+  // That keeps the cascade consistent with the --case/--archived blocks
+  // below, which do the same. Mixing literal property overrides here with
+  // custom-property overrides there caused the more specific --case:hover
+  // rule to lose every time, since it only updates the custom property
+  // while a literal declaration on a less specific selector still wins.
+  &:hover {
+    cursor: pointer;
+
+    --denhaag-base-card-background-color: var(--denhaag-base-card-hover-background-color);
+    --denhaag-base-card-border-color: var(--denhaag-base-card-hover-border-color);
+  }
+
+  &:active {
+    --denhaag-base-card-background-color: var(--denhaag-base-card-active-background-color);
+    --denhaag-base-card-border-color: var(--denhaag-base-card-active-border-color);
+  }
+
+  &:has(:focus-visible),
+  &:focus-within {
+    outline: var(--denhaag-focus-border);
+
+    --denhaag-base-card-background-color: var(--denhaag-base-card-focus-background-color);
+    --denhaag-base-card-border-color: var(--denhaag-base-card-focus-border-color);
+    --denhaag-base-card-color: var(--denhaag-base-card-focus-color);
+  }
+
+  &--case {
+    @include case-default;
+
+    &:hover {
+      @include case-hover;
+    }
+
+    &:active {
+      @include case-active;
+    }
+
+    &.denhaag-base-card--archived {
+      @include case-archived-default;
+
+      &:hover {
+        @include case-archived-hover;
+      }
+
+      &:active {
+        @include case-archived-active;
+      }
+    }
+  }
+}

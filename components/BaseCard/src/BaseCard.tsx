@@ -1,0 +1,91 @@
+import React, { AnchorHTMLAttributes, ComponentType } from 'react';
+import { ArrowRightIcon } from '@gemeente-denhaag/icons';
+import { BasicLink } from '@gemeente-denhaag/link';
+import { Paragraph } from '@gemeente-denhaag/paragraph';
+import Base from './BaseCardBase';
+import Footer from './BaseCardFooter';
+import Action from './BaseCardAction';
+import Wrapper from './BaseCardWrapper';
+import Decoration from './BaseCardDecoration';
+import Context from './BaseCardContext';
+
+export type BaseCardAppearance = 'default' | 'archived' | 'list';
+
+/** Which color theme the card uses */
+export type BaseCardVariant = 'default' | 'case';
+
+/** Allow real heading levels, never h1 (that belongs to the page itself) */
+export type BaseCardHeadingLevel = 2 | 3 | 4 | 5 | 6;
+
+export interface BaseCardProps {
+  /** Small line of text above the heading/label, e.g. a status or pre-heading */
+  eyebrow?: string;
+  title: string;
+  subTitle?: string;
+  /**
+   * Without this prop the title is rendered as a label paragraph (for WCAG).
+   * Set this prop if the title should also be a real heading in the page
+   * structure, e.g. headingLevel={2} for an <h2>.
+   */
+  headingLevel?: BaseCardHeadingLevel;
+  context?: React.ReactNode;
+  href?: string;
+  appearance?: BaseCardAppearance;
+  /** Which color theme the card uses */
+  variant?: BaseCardVariant;
+  /** For projects that want to inject their own Link component (e.g. react-router) */
+  Link?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
+}
+
+export const BaseCard = ({
+  eyebrow,
+  title,
+  subTitle,
+  headingLevel,
+  context,
+  href,
+  appearance = 'default',
+  variant = 'default',
+  Link = BasicLink,
+}: BaseCardProps) => {
+  const titleElement = headingLevel ? (
+    React.createElement(`h${headingLevel}`, { className: 'denhaag-base-card__heading' }, title)
+  ) : (
+    <p className="denhaag-base-card__label">{title}</p>
+  );
+
+  return (
+    <Base appearance={appearance} variant={variant}>
+      <Wrapper>
+        <Decoration />
+        <div>
+          {eyebrow && headingLevel ? (
+            // Only group when the title is actually a heading; otherwise there is
+            // no heading to semantically attach the pre-heading to.
+            <hgroup role="group" aria-roledescription="Heading group">
+              <p aria-roledescription="pre-heading" className="denhaag-base-card__pre-heading">
+                {eyebrow}
+              </p>
+              {titleElement}
+            </hgroup>
+          ) : (
+            <>
+              {eyebrow && <p className="denhaag-base-card__pre-heading">{eyebrow}</p>}
+              {titleElement}
+            </>
+          )}
+
+          {subTitle && <Paragraph className="denhaag-base-card__description">{subTitle}</Paragraph>}
+        </div>
+        <Footer>
+          <Context>{context}</Context>
+          <Action aria-label={title} href={href} Action={Link}>
+            <ArrowRightIcon className="denhaag-base-card__arrow" />
+          </Action>
+        </Footer>
+      </Wrapper>
+    </Base>
+  );
+};
+
+export default BaseCard;
