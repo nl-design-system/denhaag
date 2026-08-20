@@ -1,0 +1,9 @@
+{
+  "basis": {
+    "focus": {
+      "background-color": { "value": "{denhaag.color.white}" },
+      "border-color": { "value": "{denhaag.color.ocher.5}" },
+      "color": { "value": "{denhaag.color.blue.4}" }
+    }
+  }
+}

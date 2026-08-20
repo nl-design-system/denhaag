@@ -164,11 +164,14 @@ export const WithBaseNumber: Story = {
   decorators,
 };
 
-// Explicit, clearly-named archived story (kept alongside the existing
-// "Inactive*" stories below, which use the same appearance="archived").
+// Archived only has real styling nested under the "case" variant right now
+// (denhaag-base-card--case.denhaag-base-card--archived in _base.scss) — the
+// kernteam tokens nest archived per-variant (case.archived.*), there is no
+// bare/"default"-variant archived styling yet. So these use variant: 'case'
+// explicitly, via Case.args, not Default.args' variant: 'default'.
 export const Archived: Story = {
   args: {
-    ...Default.args,
+    ...Case.args,
     appearance: 'archived',
   },
   decorators,
@@ -208,13 +211,13 @@ export const ArchivedFocusVisible: Story = {
 };
 
 export const Inactive: Story = {
-  args: { ...Default.args, appearance: 'archived' },
+  args: { ...Case.args, appearance: 'archived' },
   decorators,
 };
 
 export const InactiveWithDate: Story = {
   args: {
-    ...Default.args,
+    ...Case.args,
     appearance: 'archived',
     context: (
       <time dateTime={new Date('2020-01-22').toISOString()}>
@@ -227,13 +230,18 @@ export const InactiveWithDate: Story = {
 
 export const InactiveWithBaseNumber: Story = {
   args: {
-    ...Default.args,
+    ...Case.args,
     appearance: 'archived',
     context: 'VTH-TEST-2024-02437',
   },
   decorators,
 };
 
+// TODO: the "list" appearance is currently color-neutral (only affects
+// layout) and does not force a specific variant — it inherits whichever
+// variant is active. These stories use Default.args (variant: 'default')
+// to show list layout on its own; add a CaseList story if a combined
+// case+list example is needed.
 export const List: Story = {
   args: {
     ...Default.args,

@@ -16,7 +16,31 @@
         "color-hover": { "value": "{denhaag.color.grey.5}" },
         "color-active": { "value": "{denhaag.color.grey.5}" },
         "color-subtle": { "value": "{denhaag.color.grey.4}" }
+      },
+      "transparent": { "value": "transparent" },
+      "accent-1": {
+        "bg-default": { "value": "{denhaag.color.blue.2}" },
+        "bg-hover": { "value": "{denhaag.color.blue.1}" },
+        "bg-active": { "value": "{denhaag.color.blue.1}" }
+      },
+      "action-2": {
+        "color-default": { "value": "{denhaag.color.blue.3}" }
+      },
+      "info": {
+        "bg-default": { "value": "{denhaag.color.blue.1}" },
+        "color-default": { "value": "{denhaag.color.blue.5}" }
+      },
+      "positive": {
+        "bg-default": { "value": "{denhaag.color.green.1}" },
+        "color-default": { "value": "{denhaag.color.green.5}" }
+      },
+      "warning": {
+        "bg-default": { "value": "{denhaag.color.orange.1}" },
+        "color-default": { "value": "{denhaag.color.orange.5}" }
       }
+    },
+    "heading": {
+      "color": { "value": "{denhaag.heading.color}" }
     }
   }
 }

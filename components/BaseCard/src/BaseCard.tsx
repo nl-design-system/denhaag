@@ -11,19 +11,19 @@ import Context from './BaseCardContext';
 
 export type BaseCardAppearance = 'default' | 'archived' | 'list';
 
-/** Which color theme the card uses; more variants (e.g. 'plan', 'product') will be added later */
+/** Which color theme the card uses */
 export type BaseCardVariant = 'default' | 'case';
 
 /** Allow real heading levels, never h1 (that belongs to the page itself) */
 export type BaseCardHeadingLevel = 2 | 3 | 4 | 5 | 6;
 
 export interface BaseCardProps {
-  /** Small line of text above the title, e.g. a status or pre-heading */
+  /** Small line of text above the heading/label, e.g. a status or pre-heading */
   eyebrow?: string;
   title: string;
   subTitle?: string;
   /**
-   * Without this prop the title is rendered as a paragraph (for WCAG).
+   * Without this prop the title is rendered as a label paragraph (for WCAG).
    * Set this prop if the title should also be a real heading in the page
    * structure, e.g. headingLevel={2} for an <h2>.
    */
@@ -45,12 +45,14 @@ export const BaseCard = ({
   context,
   href,
   appearance = 'default',
-  variant = 'case',
+  variant = 'default',
   Link = BasicLink,
 }: BaseCardProps) => {
-  const TitleTag = headingLevel ? (`h${headingLevel}` as const) : 'p';
-
-  const titleElement = <TitleTag className="denhaag-base-card__title">{title}</TitleTag>;
+  const titleElement = headingLevel ? (
+    React.createElement(`h${headingLevel}`, { className: 'denhaag-base-card__heading' }, title)
+  ) : (
+    <p className="denhaag-base-card__label">{title}</p>
+  );
 
   return (
     <Base appearance={appearance} variant={variant}>
@@ -59,21 +61,21 @@ export const BaseCard = ({
         <div>
           {eyebrow && headingLevel ? (
             // Only group when the title is actually a heading; otherwise there is
-            // no heading to semantically attach the eyebrow to.
+            // no heading to semantically attach the pre-heading to.
             <hgroup role="group" aria-roledescription="Heading group">
-              <p aria-roledescription="eyebrow" className="denhaag-base-card__eyebrow">
+              <p aria-roledescription="pre-heading" className="denhaag-base-card__pre-heading">
                 {eyebrow}
               </p>
               {titleElement}
             </hgroup>
           ) : (
             <>
-              {eyebrow && <p className="denhaag-base-card__eyebrow">{eyebrow}</p>}
+              {eyebrow && <p className="denhaag-base-card__pre-heading">{eyebrow}</p>}
               {titleElement}
             </>
           )}
 
-          {subTitle && <Paragraph className="denhaag-base-card__subtitle">{subTitle}</Paragraph>}
+          {subTitle && <Paragraph className="denhaag-base-card__description">{subTitle}</Paragraph>}
         </div>
         <Footer>
           <Context>{context}</Context>

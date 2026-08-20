@@ -7,11 +7,16 @@ export type BaseCardBaseProps = HTMLAttributes<HTMLDivElement> & {
   variant?: BaseCardVariant;
 };
 
-export const BaseCardBase = ({ appearance = 'default', variant = 'case', className, ...props }: BaseCardBaseProps) => {
+export const BaseCardBase = ({
+  appearance = 'default',
+  variant = 'default',
+  className,
+  ...props
+}: BaseCardBaseProps) => {
   const classNames = clsx(
     'denhaag-base-card',
-    `denhaag-base-card--${variant}`,
     {
+      'denhaag-base-card--case': variant === 'case',
       'denhaag-base-card--archived': appearance === 'archived',
       'denhaag-base-card--list': appearance === 'list',
     },
