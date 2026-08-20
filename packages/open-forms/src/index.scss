@@ -186,3 +186,9 @@
 .openforms-progress-indicator-item {
   --utrecht-link-text-decoration: none;
 }
+
+@media (width<= 768px) {
+  .utrecht-heading-1 {
+    font-size: var(--utrecht-heading-2-font-size);
+  }
+}
