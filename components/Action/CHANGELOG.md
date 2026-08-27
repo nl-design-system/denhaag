@@ -1,5 +1,16 @@
 # @gemeente-denhaag/action
 
+## 4.4.1
+
+### Patch Changes
+
+- 5b7fe62: Fix some icons
+- Updated dependencies [1c01ca2]
+- Updated dependencies [5b7fe62]
+  - @gemeente-denhaag/icons@4.2.2
+  - @gemeente-denhaag/button@3.1.2
+  - @gemeente-denhaag/link@4.2.1
+
 ## 4.4.0
 
 ### Minor Changes

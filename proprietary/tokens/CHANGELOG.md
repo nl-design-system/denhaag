@@ -1,5 +1,11 @@
 # @gemeente-denhaag/design-tokens
 
+## 1.4.3
+
+### Patch Changes
+
+- 5b7fe62: Fix some icons
+
 ## 1.4.2
 
 ### Patch Changes

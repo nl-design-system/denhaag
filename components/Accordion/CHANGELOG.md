@@ -1,5 +1,13 @@
 # @gemeente-denhaag/accordion
 
+## 4.1.2
+
+### Patch Changes
+
+- Updated dependencies [1c01ca2]
+- Updated dependencies [5b7fe62]
+  - @gemeente-denhaag/icons@4.2.2
+
 ## 4.1.1
 
 ### Patch Changes

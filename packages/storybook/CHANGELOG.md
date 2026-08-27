@@ -1,5 +1,48 @@
 # @gemeente-denhaag/storybook
 
+## 5.6.5
+
+### Patch Changes
+
+- Updated dependencies [1c01ca2]
+- Updated dependencies [5b7fe62]
+  - @gemeente-denhaag/icons@4.2.2
+  - @gemeente-denhaag/design-tokens@1.4.3
+  - @gemeente-denhaag/action@4.4.1
+  - @gemeente-denhaag/accordion@4.1.2
+  - @gemeente-denhaag/alert@4.1.2
+  - @gemeente-denhaag/anchor-navigation@2.1.2
+  - @gemeente-denhaag/breadcrumb@5.1.2
+  - @gemeente-denhaag/button@3.1.2
+  - @gemeente-denhaag/card@5.1.3
+  - @gemeente-denhaag/contact-timeline@4.1.2
+  - @gemeente-denhaag/ctadownload@2.2.1
+  - @gemeente-denhaag/cta-image-content@3.1.3
+  - @gemeente-denhaag/ctalink@2.1.1
+  - @gemeente-denhaag/divider@3.1.2
+  - @gemeente-denhaag/dynamic-content@2.2.2
+  - @gemeente-denhaag/file@2.5.2
+  - @gemeente-denhaag/file-upload@1.1.2
+  - @gemeente-denhaag/footer@4.3.3
+  - @gemeente-denhaag/form-progress@4.1.2
+  - @gemeente-denhaag/header@4.2.4
+  - @gemeente-denhaag/iconbutton@3.2.2
+  - @gemeente-denhaag/image@2.1.1
+  - @gemeente-denhaag/link@4.2.1
+  - @gemeente-denhaag/link-list@6.3.2
+  - @gemeente-denhaag/list@3.1.3
+  - @gemeente-denhaag/menu@4.2.3
+  - @gemeente-denhaag/note@2.1.1
+  - @gemeente-denhaag/process-steps@4.3.2
+  - @gemeente-denhaag/quick-links@1.1.0
+  - @gemeente-denhaag/sheet@4.1.2
+  - @gemeente-denhaag/side-navigation@4.2.3
+  - @gemeente-denhaag/step-marker@3.1.2
+  - @gemeente-denhaag/card-authentication@2.1.3
+  - @gemeente-denhaag/dotindicator@3.1.2
+  - @gemeente-denhaag/modal@3.1.3
+  - @gemeente-denhaag/card-group@2.1.3
+
 ## 5.6.4
 
 ### Patch Changes
