@@ -19,12 +19,7 @@ const labels = {
 };
 
 const exampleArgs = {
-  children: (
-    <strong>
-      Taak fawef awefwa efaw efawefawefaw efaw efawef awef awefawef awefawefwa e fawefaw efaw efawefa wefawefawefawef
-      awef awef
-    </strong>
-  ),
+  children: <strong>Taak</strong>,
   link: '#example',
   labels,
 };
