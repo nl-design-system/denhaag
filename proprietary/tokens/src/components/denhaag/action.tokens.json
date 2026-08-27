@@ -38,6 +38,9 @@
         "value": "{denhaag.color.grey.2}"
       },
       "content": {
+        "line-height": {
+          "value": "{basis.text.line-height.md}"
+        },
         "bold": {
           "font-weight": {
             "value": "{basis.text.font-weight.bold}"
@@ -91,9 +94,6 @@
           "gap": {
             "value": "16px"
           }
-        },
-        "width": {
-          "value": "20px"
         },
         "color": {
           "value": "{denhaag.color.blue.3}"

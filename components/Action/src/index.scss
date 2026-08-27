@@ -33,6 +33,7 @@
     align-items: flex-start;
     flex-grow: 1;
     gap: var(--denhaag-action-indicator-gap);
+    line-height: var(--denhaag-action-content-line-height);
 
     @media (width >= 768px) {
       gap: var(--denhaag-action-indicator-lg-gap, 16px);
@@ -41,7 +42,7 @@
 
   &__indicator {
     flex-shrink: 0;
-    width: var(--denhaag-action-indicator-width);
+    height: var(--denhaag-action-content-line-height);
     color: var(--denhaag-action-indicator-color);
     background-color: var(--denhaag-action-indicator-background-color, transparent);
 
