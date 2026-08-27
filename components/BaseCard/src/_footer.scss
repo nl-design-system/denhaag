@@ -9,3 +9,18 @@
   padding-inline-start: var(--denhaag-base-card-footer-padding-inline-start);
   padding-inline-end: var(--denhaag-base-card-footer-padding-inline-end);
 }
+
+// Always present, always the left zone — even when empty, so the right
+// zone (__link-icon) still gets pushed to the right by justify-content:
+// space-between, without relying on margin tricks.
+.denhaag-base-card__footer-meta {
+  display: flex;
+  align-items: center;
+}
+
+// Always the right zone, whatever is inside it (arrow icon, plain text
+// link, an icon from a different icon library, etc.).
+.denhaag-base-card__footer-link-icon {
+  display: flex;
+  align-items: center;
+}

@@ -5,6 +5,8 @@ import readme from '../../../../components/BaseCard/README.md?raw';
 import { templateLocale } from '../templates/util';
 import { formatDate, longDateOptions } from '@gemeente-denhaag/utils';
 import React from 'react';
+import { Alert } from '@gemeente-denhaag/alert';
+import '@gemeente-denhaag/image';
 
 type Story = StoryObj<typeof meta>;
 
@@ -41,7 +43,7 @@ const meta: Meta<typeof BaseCard> = {
     },
     variant: {
       type: 'string',
-      options: ['default', 'case'],
+      options: ['default', 'case', 'case-extended'],
       control: {
         type: 'select',
       },
@@ -84,6 +86,21 @@ export const DefaultWithFooterLink: Story = {
     href: '#',
     variant: 'default',
     headingLevel: 2,
+  },
+  decorators,
+};
+
+export const DefaultWithImage: Story = {
+  args: {
+    ...DefaultWithFooterLink.args,
+    preHeaderImage: (
+      <img
+        className="denhaag-image__image"
+        src="https://images.unsplash.com/photo-1562013042-abdaf4dc98b9?w=1290"
+        alt="Betekenisvolle beschrijving van treinstation-afbeelding die niet decoratief bedoeld is"
+        loading="lazy"
+      />
+    ),
   },
   decorators,
 };
@@ -242,6 +259,22 @@ export const CaseArchivedWithMetaData: Story = {
   args: {
     ...CaseArchived.args,
     metadata: 'VTH-TEST-2024-02437',
+  },
+  decorators,
+};
+
+export const CaseExtendedWithDescriptionListAndStatus: Story = {
+  args: {
+    title: 'Shrimp and Chorizo Paella',
+    href: '#',
+    variant: 'case-extended',
+    headingLevel: 2,
+    preHeaderStatus: <Alert title="In behandeling" text="" variant="info" />,
+    descriptionList: [
+      { title: 'Ingediend op', detail: '22 januari 2026' },
+      { title: 'Zaaknummer', detail: 'VTH-TEST-2024-02437' },
+    ],
+    linkText: 'Bekijk aanvraag',
   },
   decorators,
 };

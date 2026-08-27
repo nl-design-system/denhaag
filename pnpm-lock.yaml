@@ -225,6 +225,9 @@ importers:
 
   components/BaseCard:
     dependencies:
+      '@gemeente-denhaag/descriptionlist':
+        specifier: workspace:*
+        version: link:../DescriptionList
       '@gemeente-denhaag/heading':
         specifier: workspace:*
         version: link:../Heading

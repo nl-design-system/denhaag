@@ -11,3 +11,8 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+// When user hovers any part of the card, the Label will get an underline on hover
+denhaag-base-card:hover .denhaag-base-card__label {
+  text-decoration: var(--denhaag-base-card-label-hover-text-decoration, underline);
+}

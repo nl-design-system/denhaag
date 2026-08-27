@@ -11,8 +11,8 @@
   // In small viewports, the card stacks vertically instead of showing
   // Header/Body next to Footer in a row.
   // The Wrapper only handles the layout structure, not any spacing.
+  // It also handles the layout when the Card changes into a list-view on smaller screens.
   --denhaag-base-card-wrapper-flex-direction: column;
-  --denhaag-base-card-wrapper-gap: var(--denhaag-base-card-list-wrapper-gap);
 
   // The Wrapper itself has no padding at all. Instead, Header supplies
   // the top and left space around the whole block, and Footer supplies
@@ -133,7 +133,7 @@
     height: 20px;
     content: "";
     border-radius: 0 var(--denhaag-base-card-border-radius) 0 0;
-    background: var(--denhaag-base-card-paper-color);
+    background: var(--denhaag-base-card-decoration-paper-background-color);
   }
 
   @media (width <= 480px) {
