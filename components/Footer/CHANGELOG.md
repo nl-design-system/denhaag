@@ -1,5 +1,16 @@
 # @gemeente-denhaag/footer
 
+## 4.3.3
+
+### Patch Changes
+
+- Updated dependencies [1c01ca2]
+- Updated dependencies [5b7fe62]
+  - @gemeente-denhaag/icons@4.2.2
+  - @gemeente-denhaag/link@4.2.1
+  - @gemeente-denhaag/link-list@6.3.2
+  - @gemeente-denhaag/list@3.1.3
+
 ## 4.3.2
 
 ### Patch Changes

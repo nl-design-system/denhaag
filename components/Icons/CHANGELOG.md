@@ -1,5 +1,12 @@
 # @gemeente-denhaag/icons
 
+## 4.2.2
+
+### Patch Changes
+
+- 1c01ca2: fix icons
+- 5b7fe62: Fix some icons
+
 ## 4.2.1
 
 ### Patch Changes

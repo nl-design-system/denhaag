@@ -1,5 +1,15 @@
 # @gemeente-denhaag/process-steps
 
+## 4.3.2
+
+### Patch Changes
+
+- Updated dependencies [1c01ca2]
+- Updated dependencies [5b7fe62]
+  - @gemeente-denhaag/icons@4.2.2
+  - @gemeente-denhaag/button@3.1.2
+  - @gemeente-denhaag/step-marker@3.1.2
+
 ## 4.3.1
 
 ### Patch Changes
