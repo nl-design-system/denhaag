@@ -45,7 +45,7 @@
     height: 20px;
     content: "";
     border-radius: 0 var(--denhaag-case-card-border-radius) 0 0;
-    background: var(--denhaag-case-card-paper-color);
+    background: var(--denhaag-case-card-decoration-paper-background-color);
   }
 
   @media (width <= 480px) {

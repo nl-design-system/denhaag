@@ -29,6 +29,7 @@
 }
 
 // The skewed element, needs to also change color same as the base
+// The @mixin "case-default" sets --denhaag-base-card-background-color to var(--denhaag-base-card-case-background-color)
 .denhaag-base-card__decoration::after {
   content: "";
   position: absolute;

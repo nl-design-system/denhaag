@@ -17,6 +17,7 @@ export const BaseCardBase = ({
     'denhaag-base-card',
     {
       'denhaag-base-card--case': variant === 'case',
+      'denhaag-base-card--case-extended': variant === 'case-extended',
       'denhaag-base-card--archived': appearance === 'archived',
       'denhaag-base-card--list': appearance === 'list',
     },

@@ -6,4 +6,12 @@
   padding-block-end: var(--denhaag-base-card-body-padding-block-end);
   padding-inline-start: var(--denhaag-base-card-body-padding-inline-start);
   padding-inline-end: var(--denhaag-base-card-body-padding-inline-end);
+
+  // Padding reset for Case-Extended cards that contai na DL in the slot
+  .denhaag-description-list__title,
+  .denhaag-description-list__detail {
+    padding-block-start: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+  }
 }

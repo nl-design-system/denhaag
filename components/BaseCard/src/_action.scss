@@ -1,6 +1,6 @@
 .denhaag-base-card__action {
   display: block;
-  color: red;
+  color: var(--denhaag-base-card-link-icon-color);
 
   &:focus {
     outline: none;

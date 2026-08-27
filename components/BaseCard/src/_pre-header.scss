@@ -1,0 +1,18 @@
+.denhaag-base-card__pre-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--denhaag-base-card-pre-header-row-gap);
+  padding-block-start: var(--denhaag-base-card-pre-header-padding-block-start);
+  padding-block-end: var(--denhaag-base-card-pre-header-padding-block-end);
+  padding-inline-start: var(--denhaag-base-card-pre-header-padding-inline-start);
+  padding-inline-end: var(--denhaag-base-card-pre-header-padding-inline-end);
+
+  // case-extended has this element AFTER the Heading in the DOM (for
+  // accessible reading order — see BaseCard.tsx), but it must still
+  // visually appear where it always does: above the Heading. This uses
+  // order only to restore that visual position; the DOM order itself
+  // remains what a screen reader should follow.
+  &--visually-first {
+    order: -1;
+  }
+}

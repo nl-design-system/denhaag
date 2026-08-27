@@ -22,3 +22,8 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+// When user hovers any part of the card, the Heading will get an underline on hover
+.denhaag-base-card:hover .denhaag-base-card__heading {
+  text-decoration: var(--denhaag-base-card-heading-hover-text-decoration, underline);
+}
