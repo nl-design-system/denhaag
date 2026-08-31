@@ -4,6 +4,7 @@ import { ResponsiveContent } from '@gemeente-denhaag/responsive-content';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
 import { LinkList } from '@gemeente-denhaag/link-list';
 import { Heading } from '@gemeente-denhaag/heading';
+import { Link } from '@gemeente-denhaag/link';
 import '@gemeente-denhaag/button-group';
 import '@gemeente-denhaag/icons';
 import '@gemeente-denhaag/list';
@@ -73,9 +74,9 @@ export const FooterLegal = ({ legalData, copyrightLabel }: FooterLegalProps) => 
           <ul className="denhaag-list denhaag-footer__legal-links">
             {legalData?.map((item, key) => (
               <li className="denhaag-list__item" key={key}>
-                <a href={item.href} className="denhaag-link">
+                <Link href={item.href}>
                   <span className="denhaag-link__label">{item.label}</span>
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
