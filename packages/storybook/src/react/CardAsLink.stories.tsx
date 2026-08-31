@@ -42,7 +42,7 @@ const meta: Meta<typeof CardAsLink> = {
     },
     variant: {
       type: 'string',
-      options: ['default', 'case', 'case-extended'],
+      options: ['default', 'case', 'case-extended', 'plan'],
       control: {
         type: 'select',
       },
@@ -258,6 +258,63 @@ export const CaseArchivedWithMetaData: Story = {
   args: {
     ...CaseArchived.args,
     metadata: 'VTH-TEST-2024-02437',
+  },
+  decorators,
+};
+
+// Plan uses the same base structure as Case, but with a different
+// decoration shape (a "clipboard clip" instead of a paper fold — see
+// _decoration.scss) and a thicker, differently colored border around the
+// whole card.
+export const Plan: Story = {
+  args: {
+    title: 'Mijn ontwikkelplan met zeer lange heading voor overflow',
+    preHeading: 'Financiële hulpverlening',
+    variant: 'plan',
+    headingLevel: 2,
+    metadata: '1 maart 2026',
+    href: '#',
+  },
+  decorators,
+};
+
+export const PlanHover: Story = {
+  args: {
+    ...Plan.args,
+  },
+  decorators,
+  parameters: {
+    pseudo: { hover: true },
+  },
+};
+
+export const PlanActive: Story = {
+  args: {
+    ...Plan.args,
+  },
+  decorators,
+  parameters: {
+    pseudo: { active: true },
+  },
+};
+
+export const PlanFocusVisible: Story = {
+  args: {
+    ...Plan.args,
+  },
+  decorators,
+  parameters: {
+    pseudo: { focusVisible: true },
+  },
+};
+
+// Archived is a grey state of the Plan variant, not its own color theme —
+// same pattern as CaseArchived.
+export const PlanArchived: Story = {
+  args: {
+    ...Plan.args,
+    headingLevel: 3,
+    appearance: 'archived',
   },
   decorators,
 };

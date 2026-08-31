@@ -37,3 +37,42 @@
   transform: skewX(20deg);
   transform-origin: top;
 }
+
+// Plan's decoration is a completely different shape: a "clipboard clip"
+// made of two small rectangles poking out above the top edge, both the
+// same single color (unlike Case's decoration.
+// This overrides the generic .denhaag-card-as-link__decoration rules
+// above by scoping to the outer --plan class.
+// Decoration stays a plain, variant-
+// unaware element, and the outer card class (already present) decides
+// which shape shows.
+.denhaag-card-as-link--plan .denhaag-card-as-link__decoration {
+  height: 8px;
+  overflow: visible !important;
+  background: none;
+
+  // Large block for the Clip
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 40%;
+    height: 8px;
+    background: var(--denhaag-card-as-link-decoration-clip-color);
+    border-radius: 4px 4px 0 0;
+  }
+
+  // Small block for the Clip
+  &::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 42%;
+    width: 16%;
+    height: 8px;
+    background: var(--denhaag-card-as-link-decoration-clip-color);
+    border-radius: 4px 4px 0 0;
+    transform: none;
+  }
+}
