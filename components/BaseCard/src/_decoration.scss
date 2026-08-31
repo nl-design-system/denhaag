@@ -9,33 +9,27 @@
   background: var(--denhaag-base-card-decoration-background-color);
 }
 
-.denhaag-base-card__decoration-rim {
+// The 'paper' element, is always white and makes the remaining decoration-block look like a line.
+.denhaag-base-card__decoration::before {
+  content: "";
   position: absolute;
-  inset-block-start: 0;
-  inset-inline-end: 0;
-  box-sizing: border-box;
-  width: 33%;
-  height: 25px;
-  padding-block-start: var(--denhaag-base-card-decoration-rim-width, 7px);
-  padding-inline-end: var(--denhaag-base-card-decoration-rim-width, 7px);
-  background: var(--denhaag-base-card-decoration-rim-background-color);
-}
-
-.denhaag-base-card__decoration-paper {
-  display: block;
-  width: 100%;
-  height: 100%;
+  display: inline-block;
+  width: 108px;
+  height: 16px;
+  right: 8px;
+  top: 8px;
   background: var(--denhaag-base-card-decoration-paper-background-color);
+  border-radius: var(--denhaag-base-card-decoration-paper-border-radius);
 }
 
-// The skewed element, needs to also change color same as the base
+// The skewed element, needs change color same as the base.
 // The @mixin "case-default" sets --denhaag-base-card-background-color to var(--denhaag-base-card-case-background-color)
 .denhaag-base-card__decoration::after {
   content: "";
   position: absolute;
   inset-block-start: 0;
   inset-inline-end: calc(33% - 6px);
-  width: 18px;
+  width: 48px;
   height: 100%;
   background: var(--denhaag-base-card-background-color);
   transform: skewX(20deg);

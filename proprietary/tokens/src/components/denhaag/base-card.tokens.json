@@ -151,10 +151,7 @@
           "border-color": { "value": "{denhaag.base-card.case.border-color}" }
         },
         "decoration": {
-          "background-color": { "value": "{basis.color.accent-1.bg-default}" },
-          "rim": {
-            "background-color": { "value": "{basis.color.accent-1.bg-hover}" }
-          },
+          "background-color": { "value": "{basis.color.accent-1.bg-active}" },
           "paper": {
             "background-color": { "value": "#FFFFFF" },
             "border-radius": { "value": "{basis.border-radius.none}" }

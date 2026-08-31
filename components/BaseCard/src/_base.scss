@@ -34,7 +34,6 @@
   // The decoration strip should not take up space in the stacked list layout.
   --denhaag-base-card-decoration-display: none;
   --denhaag-base-card-decoration-background-color: none;
-  --denhaag-base-card-decoration-rim-background-color: none;
   --denhaag-base-card-decoration-paper-background-color: none;
   --denhaag-base-card-color: var(--denhaag-base-card-list-color);
   --denhaag-base-card-heading-color: var(--denhaag-base-card-list-heading-color);
@@ -53,7 +52,6 @@
   --denhaag-base-card-decoration-paper-background-color: var(
     --denhaag-base-card-case-decoration-paper-background-color
   );
-  --denhaag-base-card-decoration-rim-background-color: var(--denhaag-base-card-case-decoration-rim-background-color);
   --denhaag-base-card-heading-color: var(--denhaag-base-card-case-heading-color);
   --denhaag-base-card-heading-font-family: var(--denhaag-base-card-case-heading-font-family);
   --denhaag-base-card-heading-font-size: var(--denhaag-base-card-case-heading-font-size);
@@ -71,7 +69,6 @@
 @mixin case-hover {
   --denhaag-base-card-background-color: var(--denhaag-base-card-case-hover-background-color);
   --denhaag-base-card-border-color: var(--denhaag-base-card-case-hover-border-color);
-  --denhaag-base-card-decoration-background-color: var(--denhaag-base-card-case-hover-background-color);
 }
 
 @mixin case-active {
@@ -85,15 +82,13 @@
   --denhaag-base-card-border-color: var(--denhaag-base-card-focus-border-color);
   --denhaag-base-card-color: var(--denhaag-base-card-focus-color);
   --denhaag-base-card-decoration-background-color: var(--denhaag-base-card-focus-background-color);
-  --denhaag-base-card-decoration-rim-background-color: var(--denhaag-base-card-focus-background-color);
 }
 
 @mixin case-archived-default {
   --denhaag-base-card-background-color: var(--denhaag-base-card-case-archived-background-color);
   --denhaag-base-card-border-color: var(--denhaag-base-card-case-archived-border-color);
   --denhaag-base-card-color: var(--denhaag-base-card-case-archived-color);
-  --denhaag-base-card-decoration-background-color: var(--denhaag-base-card-case-archived-background-color);
-  --denhaag-base-card-decoration-rim-background-color: var(--denhaag-base-card-case-archived-hover-background-color);
+  --denhaag-base-card-decoration-background-color: var(--denhaag-base-card-case-archived-decoration-background-color);
   --denhaag-base-card-heading-color: var(--denhaag-base-card-case-archived-heading-color);
   --denhaag-base-card-link-icon-color: var(--denhaag-base-card-case-archived-link-icon-color);
 }
@@ -101,7 +96,6 @@
 @mixin case-archived-hover {
   --denhaag-base-card-background-color: var(--denhaag-base-card-case-archived-hover-background-color);
   --denhaag-base-card-border-color: var(--denhaag-base-card-case-archived-hover-border-color);
-  --denhaag-base-card-decoration-background-color: var(--denhaag-base-card-case-archived-hover-background-color);
 }
 
 @mixin case-archived-active {
@@ -123,18 +117,6 @@
   position: relative;
   box-sizing: border-box;
   overflow: hidden;
-
-  &::before {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    display: var(--denhaag-base-card-before-display, block);
-    width: 50%;
-    height: 20px;
-    content: "";
-    border-radius: 0 var(--denhaag-base-card-border-radius) 0 0;
-    background: var(--denhaag-base-card-decoration-paper-background-color);
-  }
 
   @media (width <= 480px) {
     @include list-view;
@@ -159,7 +141,6 @@
     --denhaag-base-card-border-color: var(--denhaag-base-card-focus-border-color);
     --denhaag-base-card-color: var(--denhaag-base-card-focus-color);
     --denhaag-base-card-decoration-background-color: var(--denhaag-base-card-focus-background-color);
-    --denhaag-base-card-decoration-rim-background-color: var(--denhaag-base-card-focus-background-color);
 
     @media (width <= 480px) {
       @include list-view;
@@ -175,6 +156,19 @@
 
   &--case {
     @include case-default;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: var(--denhaag-base-card-before-display, block);
+      width: 210px;
+      height: 24px;
+      content: "";
+      border-radius: 0 var(--denhaag-base-card-border-radius) 0 0;
+      background: var(--denhaag-base-card-background-color);
+      z-index: 1;
+    }
 
     @media (width <= 480px) {
       @include list-view;
