@@ -1,2 +1,0 @@
-# @gemeente-denhaag/base-card
-

@@ -1,6 +1,6 @@
 {
   "denhaag": {
-    "base-card": {
+    "card-as-link": {
       "background-color": { "value": "{basis.color.default.bg-document}" },
       "border-color": { "value": "{basis.color.default.border-subtle}" },
       "border-radius": { "value": "{basis.border-radius.md}" },
@@ -10,11 +10,11 @@
       "min-block-size": { "value": "{basis.pointer-target.min-block-size}" },
       "active": {
         "background-color": { "value": "{basis.color.default.bg-active}" },
-        "border-color": { "value": "{denhaag.base-card.border-color}" }
+        "border-color": { "value": "{denhaag.card-as-link.border-color}" }
       },
       "hover": {
         "background-color": { "value": "{basis.color.default.bg-hover}" },
-        "border-color": { "value": "{denhaag.base-card.border-color}" }
+        "border-color": { "value": "{denhaag.card-as-link.border-color}" }
       },
       "focus": {
         "background-color": { "value": "{basis.focus.background-color}" },
@@ -32,7 +32,7 @@
         }
       },
       "label": {
-        "color": { "value": "{denhaag.base-card.color}" },
+        "color": { "value": "{denhaag.card-as-link.color}" },
         "font-family": { "value": "{basis.text.font-family.default}" },
         "font-size": { "value": "{basis.text.font-size.md}" },
         "font-weight": { "value": "{basis.text.font-weight.bold}" },
@@ -46,14 +46,14 @@
         "line-height": { "value": "{basis.text.line-height.md}" }
       },
       "pre-heading": {
-        "color": { "value": "{denhaag.base-card.color}" },
+        "color": { "value": "{denhaag.card-as-link.color}" },
         "font-family": { "value": "{basis.text.font-family.default}" },
         "font-size": { "value": "{basis.text.font-size.sm}" },
         "font-weight": { "value": "{basis.text.font-weight.bold}" },
         "line-height": { "value": "1.5" }
       },
       "icon": {
-        "color": { "value": "{denhaag.base-card.color}" },
+        "color": { "value": "{denhaag.card-as-link.color}" },
         "size": { "value": "{basis.size.icon.md}" }
       },
       "link-icon": {
@@ -144,11 +144,11 @@
         "min-block-size": { "value": "12rem" },
         "active": {
           "background-color": { "value": "{basis.color.accent-1.bg-active}" },
-          "border-color": { "value": "{denhaag.base-card.case.border-color}" }
+          "border-color": { "value": "{denhaag.card-as-link.case.border-color}" }
         },
         "hover": {
           "background-color": { "value": "{basis.color.accent-1.bg-hover}" },
-          "border-color": { "value": "{denhaag.base-card.case.border-color}" }
+          "border-color": { "value": "{denhaag.card-as-link.case.border-color}" }
         },
         "decoration": {
           "background-color": { "value": "{basis.color.accent-1.bg-active}" },
@@ -166,11 +166,11 @@
           "color": { "value": "{basis.color.default.color-document}" },
           "active": {
             "background-color": { "value": "{basis.color.default.bg-active}" },
-            "border-color": { "value": "{denhaag.base-card.case.border-color}" }
+            "border-color": { "value": "{denhaag.card-as-link.case.border-color}" }
           },
           "hover": {
             "background-color": { "value": "{basis.color.default.bg-hover}" },
-            "border-color": { "value": "{denhaag.base-card.case.border-color}" }
+            "border-color": { "value": "{denhaag.card-as-link.case.border-color}" }
           },
           "decoration": {
             "background-color": { "value": "{basis.color.default.bg-active}" }

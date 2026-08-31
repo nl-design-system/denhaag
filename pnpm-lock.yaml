@@ -223,7 +223,7 @@ importers:
 
   components/ArticleMeta: {}
 
-  components/BaseCard:
+  components/CardAsLink:
     dependencies:
       '@gemeente-denhaag/descriptionlist':
         specifier: workspace:*

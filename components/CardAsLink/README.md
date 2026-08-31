@@ -45,49 +45,49 @@ The 'real link' is in the footer and then covers the card with CSS (this styling
 
 ### Typography
 
-  --denhaag-base-card-heading-font-family: var(--denhaag-base-card-case-heading-font-family);
+  --denhaag-card-as-link-heading-font-family: var(--denhaag-card-as-link-case-heading-font-family);
 
-  --denhaag-base-card-heading-font-size: var(--denhaag-base-card-case-heading-font-size);
+  --denhaag-card-as-link-heading-font-size: var(--denhaag-card-as-link-case-heading-font-size);
 
-  --denhaag-base-card-heading-font-weight: var(--denhaag-base-card-case-heading-font-weight);
+  --denhaag-card-as-link-heading-font-weight: var(--denhaag-card-as-link-case-heading-font-weight);
 
-  --denhaag-base-card-heading-line-height: var(--denhaag-base-card-case-heading-line-height);
+  --denhaag-card-as-link-heading-line-height: var(--denhaag-card-as-link-case-heading-line-height);
 
-  --denhaag-base-card-description-font-family: var(--denhaag-base-card-case-description-font-family);
+  --denhaag-card-as-link-description-font-family: var(--denhaag-card-as-link-case-description-font-family);
 
-  --denhaag-base-card-description-font-size: var(--denhaag-base-card-case-description-font-size);
+  --denhaag-card-as-link-description-font-size: var(--denhaag-card-as-link-case-description-font-size);
 
-  --denhaag-base-card-description-font-weight: var(--denhaag-base-card-case-description-font-weight);
+  --denhaag-card-as-link-description-font-weight: var(--denhaag-card-as-link-case-description-font-weight);
 
-  --denhaag-base-card-description-line-height: var(--denhaag-base-card-case-description-line-height);
+  --denhaag-card-as-link-description-line-height: var(--denhaag-card-as-link-case-description-line-height);
 
 ### Colors
 
---denhaag-base-card-background-color
+--denhaag-card-as-link-background-color
 
---denhaag-base-card-border-color
+--denhaag-card-as-link-border-color
 
---denhaag-base-card-decoration-background-color
+--denhaag-card-as-link-decoration-background-color
 
---denhaag-base-card-color
+--denhaag-card-as-link-color
 
---denhaag-base-card-heading-color
+--denhaag-card-as-link-heading-color
 
---denhaag-base-card-case-background-color
+--denhaag-card-as-link-case-background-color
 
---denhaag-base-card-case-border-color
+--denhaag-card-as-link-case-border-color
 
---denhaag-base-card-case-color
+--denhaag-card-as-link-case-color
 
---denhaag-base-card-case-decoration-background-color
+--denhaag-card-as-link-case-decoration-background-color
 
---denhaag-base-card-case-decoration-paper-background-color
+--denhaag-card-as-link-case-decoration-paper-background-color
 
---denhaag-base-card-case-heading-color
+--denhaag-card-as-link-case-heading-color
 
---denhaag-base-card-case-context-color
+--denhaag-card-as-link-case-context-color
 
---denhaag-base-card-case-link-icon-color
+--denhaag-card-as-link-case-link-icon-color
 
 ### Interactive states
 
