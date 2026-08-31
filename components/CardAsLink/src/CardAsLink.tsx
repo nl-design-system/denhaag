@@ -17,7 +17,7 @@ import Metadata from './CardAsLinkMetadata';
 export type CardAsLinkAppearance = 'default' | 'archived' | 'list';
 
 /** Which color theme/layout the card uses */
-export type CardAsLinkVariant = 'default' | 'case' | 'case-extended' | 'plan';
+export type CardAsLinkVariant = 'default' | 'case' | 'case-extended' | 'plan' | 'product';
 
 /** Allow real heading levels, never h1 (that belongs to the page itself) */
 export type CardAsLinkHeadingLevel = 2 | 3 | 4 | 5 | 6;
