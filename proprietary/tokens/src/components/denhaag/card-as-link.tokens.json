@@ -245,6 +245,11 @@
             }
           }
         }
+      },
+      "product": {
+        "border-block-start-color": { "value": "{basis.color.accent-1.border-default}" },
+        "border-block-start-width": { "value": "{basis.border-width.lg}" },
+        "border-radius": { "value": "{basis.border-radius.none}" }
       }
     }
   }

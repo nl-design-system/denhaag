@@ -42,7 +42,7 @@ const meta: Meta<typeof CardAsLink> = {
     },
     variant: {
       type: 'string',
-      options: ['default', 'case', 'case-extended', 'plan'],
+      options: ['default', 'case', 'case-extended', 'plan', 'product'],
       control: {
         type: 'select',
       },
@@ -317,6 +317,53 @@ export const PlanArchived: Story = {
     appearance: 'archived',
   },
   decorators,
+};
+
+// Product is the simplest variant: no Decoration component at all, just a
+// thick top border and square corners (no border-radius). It has no
+// hover/active-specific tokens in the kernteam proposal, so it relies on
+// the generic, bare hover/active/focus tokens that .denhaag-card-as-link
+// already has.
+export const Product: Story = {
+  args: {
+    title: 'Parkeervergunning bewoners',
+    subTitle: '34-FJT-23',
+    variant: 'product',
+    headingLevel: 2,
+    metadata: '1 april 2026',
+    href: '#',
+  },
+  decorators,
+};
+
+export const ProductHover: Story = {
+  args: {
+    ...Product.args,
+  },
+  decorators,
+  parameters: {
+    pseudo: { hover: true },
+  },
+};
+
+export const ProductActive: Story = {
+  args: {
+    ...Product.args,
+  },
+  decorators,
+  parameters: {
+    pseudo: { active: true },
+  },
+};
+
+export const ProductFocusVisible: Story = {
+  args: {
+    ...Product.args,
+  },
+  decorators,
+  parameters: {
+    pseudo: { focusVisible: true },
+  },
 };
 
 export const CaseExtendedWithDescriptionListAndStatus: Story = {

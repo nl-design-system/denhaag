@@ -22,7 +22,8 @@
         "bg-default": { "value": "{denhaag.color.blue.1}" },
         "bg-hover": { "value": "{denhaag.color.blue.2}" },
         "bg-active": { "value": "{denhaag.color.blue.3}" },
-        "border-subtle": { "value": "{denhaag.color.blue.2}" }
+        "border-subtle": { "value": "{denhaag.color.blue.2}" },
+        "border-default": { "value": "{denhaag.color.green.3}" }
       },
       "action-2": {
         "color-default": { "value": "{denhaag.color.blue.3}" }

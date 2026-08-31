@@ -148,6 +148,10 @@
   --denhaag-card-as-link-border-color: var(--denhaag-card-as-link-plan-archived-active-border-color);
 }
 
+@mixin product-default {
+  --denhaag-card-as-link-border-radius: var(--denhaag-card-as-link-product-border-radius);
+}
+
 .denhaag-card-as-link {
   display: flex;
   flex-direction: column;
@@ -361,5 +365,12 @@
         }
       }
     }
+  }
+
+  &--product {
+    @include product-default;
+
+    border-block-start: var(--denhaag-card-as-link-product-border-block-start-width) solid
+      var(--denhaag-card-as-link-product-border-block-start-color);
   }
 }
