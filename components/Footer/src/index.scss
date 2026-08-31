@@ -34,7 +34,9 @@
   }
 
   .denhaag-link {
-    color: #fff;
+    --nl-link-color: var(--denhaag-footer-color);
+    --nl-link-hover-color: var(--denhaag-footer-color);
+
     font-size: var(--denhaag-footer-font-size);
     text-decoration-line: none;
 
