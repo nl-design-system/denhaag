@@ -108,6 +108,46 @@
   --denhaag-card-as-link-decoration-background-color: var(--denhaag-card-as-link-case-archived-active-background-color);
 }
 
+@mixin plan-default {
+  --denhaag-card-as-link-background-color: var(--denhaag-card-as-link-plan-background-color);
+  --denhaag-card-as-link-border-width: var(--denhaag-card-as-link-plan-border-width);
+  --denhaag-card-as-link-border-color: var(--denhaag-card-as-link-plan-border-color);
+  --denhaag-card-as-link-color: var(--denhaag-card-as-link-plan-color);
+  --denhaag-card-as-link-min-block-size: var(--denhaag-card-as-link-plan-min-block-size);
+  --denhaag-card-as-link-decoration-clip-color: var(--denhaag-card-as-link-plan-decoration-clip-color);
+  --denhaag-card-as-link-heading-color: var(--denhaag-card-as-link-plan-heading-color);
+  --denhaag-card-as-link-link-icon-color: var(--denhaag-card-as-link-plan-link-icon-color);
+}
+
+@mixin plan-hover {
+  --denhaag-card-as-link-background-color: var(--denhaag-card-as-link-plan-hover-background-color);
+  --denhaag-card-as-link-border-color: var(--denhaag-card-as-link-plan-hover-border-color);
+}
+
+@mixin plan-active {
+  --denhaag-card-as-link-background-color: var(--denhaag-card-as-link-plan-active-background-color);
+  --denhaag-card-as-link-border-color: var(--denhaag-card-as-link-plan-active-border-color);
+}
+
+@mixin plan-archived-default {
+  --denhaag-card-as-link-background-color: var(--denhaag-card-as-link-plan-archived-background-color);
+  --denhaag-card-as-link-border-color: var(--denhaag-card-as-link-plan-archived-border-color);
+  --denhaag-card-as-link-color: var(--denhaag-card-as-link-plan-archived-color);
+  --denhaag-card-as-link-decoration-clip-color: var(--denhaag-card-as-link-plan-archived-decoration-clip-color);
+  --denhaag-card-as-link-heading-color: var(--denhaag-card-as-link-plan-archived-heading-color);
+  --denhaag-card-as-link-link-icon-color: var(--denhaag-card-as-link-plan-archived-link-icon-color);
+}
+
+@mixin plan-archived-hover {
+  --denhaag-card-as-link-background-color: var(--denhaag-card-as-link-plan-archived-hover-background-color);
+  --denhaag-card-as-link-border-color: var(--denhaag-card-as-link-plan-archived-hover-border-color);
+}
+
+@mixin plan-archived-active {
+  --denhaag-card-as-link-background-color: var(--denhaag-card-as-link-plan-archived-active-background-color);
+  --denhaag-card-as-link-border-color: var(--denhaag-card-as-link-plan-archived-active-border-color);
+}
+
 .denhaag-card-as-link {
   display: flex;
   flex-direction: column;
@@ -239,6 +279,82 @@
       // Both states can apply at once, and the last matching rule wins.
       &:active {
         @include case-archived-active;
+
+        @media (width <= 480px) {
+          @include list-view;
+        }
+      }
+    }
+  }
+
+  &--plan {
+    overflow: visible;
+
+    @include plan-default;
+
+    @media (width <= 480px) {
+      @include list-view;
+    }
+
+    &:hover {
+      @include plan-hover;
+
+      @media (width <= 480px) {
+        @include list-view;
+      }
+    }
+
+    &:has(:focus-visible),
+    &:focus-within {
+      outline: var(--denhaag-focus-border);
+
+      @include case-focus;
+
+      @media (width <= 480px) {
+        @include list-view;
+      }
+    }
+
+    // Same as above. Active must come after focus so it remains visible while clicking.
+    // Both states can apply at once, and the last matching rule wins.
+    &:active {
+      @include plan-active;
+
+      @media (width <= 480px) {
+        @include list-view;
+      }
+    }
+
+    &.denhaag-card-as-link--archived {
+      @include plan-archived-default;
+
+      @media (width <= 480px) {
+        @include list-view;
+      }
+
+      &:hover {
+        @include plan-archived-hover;
+
+        @media (width <= 480px) {
+          @include list-view;
+        }
+      }
+
+      &:has(:focus-visible),
+      &:focus-within {
+        outline: var(--denhaag-focus-border);
+
+        @include case-focus;
+
+        @media (width <= 480px) {
+          @include list-view;
+        }
+      }
+
+      // Same as above again. Active must come after focus so it remains visible while clicking.
+      // Both states can apply at once, and the last matching rule wins.
+      &:active {
+        @include plan-archived-active;
 
         @media (width <= 480px) {
           @include list-view;

@@ -19,6 +19,7 @@ export const CardAsLinkBase = ({
       'denhaag-card-as-link--case': variant === 'case',
       'denhaag-card-as-link--case-extended': variant === 'case-extended',
       'denhaag-card-as-link--archived': appearance === 'archived',
+      'denhaag-card-as-link--plan': variant === 'plan',
       'denhaag-card-as-link--list': appearance === 'list',
     },
     className,

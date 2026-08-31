@@ -17,7 +17,7 @@ import Metadata from './CardAsLinkMetadata';
 export type CardAsLinkAppearance = 'default' | 'archived' | 'list';
 
 /** Which color theme/layout the card uses */
-export type CardAsLinkVariant = 'default' | 'case' | 'case-extended';
+export type CardAsLinkVariant = 'default' | 'case' | 'case-extended' | 'plan';
 
 /** Allow real heading levels, never h1 (that belongs to the page itself) */
 export type CardAsLinkHeadingLevel = 2 | 3 | 4 | 5 | 6;
@@ -61,8 +61,8 @@ export interface CardAsLinkProps {
 
 // Only variants that have a paper-fold decoration render <Decoration />.
 // The "default" variant has no fold — it will get a pre-header image slot
-// instead. ToDo: Extend list once "plan" gets its own decoration.
-const VARIANTS_WITH_DECORATION: CardAsLinkVariant[] = ['case'];
+// instead.
+const VARIANTS_WITH_DECORATION: CardAsLinkVariant[] = ['case', 'plan'];
 
 export const CardAsLink = ({
   preHeading,
