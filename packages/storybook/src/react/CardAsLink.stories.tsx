@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
-// TODO: change to @gemeente-denhaag/base-card package when published
-import { BaseCard } from '../../../../components/BaseCard/src';
-import readme from '../../../../components/BaseCard/README.md?raw';
+// TODO: change to @gemeente-denhaag/card-as-link package when published
+import { CardAsLink } from '../../../../components/CardAsLink/src';
+import readme from '../../../../components/CardAsLink/README.md?raw';
 import { templateLocale } from '../templates/util';
 import { formatDate, longDateOptions } from '@gemeente-denhaag/utils';
 import React from 'react';
@@ -10,9 +10,8 @@ import '@gemeente-denhaag/image';
 
 type Story = StoryObj<typeof meta>;
 
-const meta: Meta<typeof BaseCard> = {
-  title: 'React/BaseCard',
-  component: BaseCard,
+const meta: Meta<typeof CardAsLink> = {
+  component: CardAsLink,
   tags: ['autodocs'],
   argTypes: {
     preHeading: {
@@ -202,7 +201,7 @@ export const CaseWithMetaData: Story = {
 
 // Archived is a grey state of the Case variant, not its own color theme —
 // hence "CaseArchived", not a standalone "Archived". Real styling for this
-// only exists nested under --case (denhaag-base-card--case.denhaag-base-card--archived
+// only exists nested under --case (denhaag-card-as-link--case.denhaag-card-as-link--archived
 // in _base.scss).
 export const CaseArchived: Story = {
   args: {

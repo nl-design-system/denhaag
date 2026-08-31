@@ -2,12 +2,12 @@ import React, { AnchorHTMLAttributes, ComponentType } from 'react';
 import { BasicLink } from '@gemeente-denhaag/link';
 import clsx from 'clsx';
 
-export interface BaseCardActionProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
+export interface CardAsLinkActionProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   Action?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
 }
 
-export const BaseCardAction = ({ className, children, Action = BasicLink, ...props }: BaseCardActionProps) => {
-  const classNames = clsx('denhaag-base-card__action', className);
+export const CardAsLinkAction = ({ className, children, Action = BasicLink, ...props }: CardAsLinkActionProps) => {
+  const classNames = clsx('denhaag-card-as-link__action', className);
 
   return (
     <Action {...props} className={classNames}>
@@ -16,4 +16,4 @@ export const BaseCardAction = ({ className, children, Action = BasicLink, ...pro
   );
 };
 
-export default BaseCardAction;
+export default CardAsLinkAction;

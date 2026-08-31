@@ -4,25 +4,25 @@ import { BasicLink } from '@gemeente-denhaag/link';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
 import { Heading } from '@gemeente-denhaag/heading';
 import { DescriptionList, DescriptionListProps } from '@gemeente-denhaag/descriptionlist';
-import Base from './BaseCardBase';
-import Footer from './BaseCardFooter';
-import Action from './BaseCardAction';
-import Wrapper from './BaseCardWrapper';
-import Decoration from './BaseCardDecoration';
-import PreHeader from './BaseCardPreHeader';
-import Header from './BaseCardHeader';
-import Body from './BaseCardBody';
-import Metadata from './BaseCardMetadata';
+import Base from './CardAsLinkBase';
+import Footer from './CardAsLinkFooter';
+import Action from './CardAsLinkAction';
+import Wrapper from './CardAsLinkWrapper';
+import Decoration from './CardAsLinkDecoration';
+import PreHeader from './CardAsLinkPreHeader';
+import Header from './CardAsLinkHeader';
+import Body from './CardAsLinkBody';
+import Metadata from './CardAsLinkMetadata';
 
-export type BaseCardAppearance = 'default' | 'archived' | 'list';
+export type CardAsLinkAppearance = 'default' | 'archived' | 'list';
 
 /** Which color theme/layout the card uses */
-export type BaseCardVariant = 'default' | 'case' | 'case-extended';
+export type CardAsLinkVariant = 'default' | 'case' | 'case-extended';
 
 /** Allow real heading levels, never h1 (that belongs to the page itself) */
-export type BaseCardHeadingLevel = 2 | 3 | 4 | 5 | 6;
+export type CardAsLinkHeadingLevel = 2 | 3 | 4 | 5 | 6;
 
-export interface BaseCardProps {
+export interface CardAsLinkProps {
   /** Small line of text above the heading/label, e.g. a status ("Pre-heading" in NLDS terms — not to be confused with the Pre-header image slot) */
   preHeading?: string;
   title: string;
@@ -32,12 +32,12 @@ export interface BaseCardProps {
    * Set this prop if the title should be a real HTML heading in the page
    * structure, e.g. headingLevel={2} for an <h2>.
    */
-  headingLevel?: BaseCardHeadingLevel;
+  headingLevel?: CardAsLinkHeadingLevel;
   metadata?: React.ReactNode;
   href?: string;
-  appearance?: BaseCardAppearance;
+  appearance?: CardAsLinkAppearance;
   /** Which color theme/layout the card uses */
-  variant?: BaseCardVariant;
+  variant?: CardAsLinkVariant;
   /** Only used when variant="default" — content shown in the pre-header slot, e.g. an <img> */
   preHeaderImage?: React.ReactNode;
   /** Only used when variant="case-extended" — content shown in the pre-header slot, e.g. a status badge */
@@ -62,9 +62,9 @@ export interface BaseCardProps {
 // Only variants that have a paper-fold decoration render <Decoration />.
 // The "default" variant has no fold — it will get a pre-header image slot
 // instead. ToDo: Extend list once "plan" gets its own decoration.
-const VARIANTS_WITH_DECORATION: BaseCardVariant[] = ['case'];
+const VARIANTS_WITH_DECORATION: CardAsLinkVariant[] = ['case'];
 
-export const BaseCard = ({
+export const CardAsLink = ({
   preHeading,
   title,
   subTitle,
@@ -78,7 +78,7 @@ export const BaseCard = ({
   descriptionList,
   linkText,
   Link = BasicLink,
-}: BaseCardProps) => {
+}: CardAsLinkProps) => {
   const hasDecoration = VARIANTS_WITH_DECORATION.includes(variant);
   const hasPreHeaderImage = variant === 'default' && Boolean(preHeaderImage);
   const hasPreHeaderStatus = variant === 'case-extended' && Boolean(preHeaderStatus);
@@ -86,11 +86,11 @@ export const BaseCard = ({
   const hasFooter = Boolean(metadata || href);
 
   const titleElement = headingLevel ? (
-    <Heading level={headingLevel} className="denhaag-base-card__heading">
+    <Heading level={headingLevel} className="denhaag-card-as-link__heading">
       {title}
     </Heading>
   ) : (
-    <p className="denhaag-base-card__label">{title}</p>
+    <p className="denhaag-card-as-link__label">{title}</p>
   );
 
   return (
@@ -105,12 +105,12 @@ export const BaseCard = ({
         <Header>
           {preHeading && headingLevel ? (
             <hgroup>
-              <Paragraph className="denhaag-base-card__pre-heading">{preHeading}</Paragraph>
+              <Paragraph className="denhaag-card-as-link__pre-heading">{preHeading}</Paragraph>
               {titleElement}
             </hgroup>
           ) : (
             <>
-              {preHeading && <Paragraph className="denhaag-base-card__pre-heading">{preHeading}</Paragraph>}
+              {preHeading && <Paragraph className="denhaag-card-as-link__pre-heading">{preHeading}</Paragraph>}
               {titleElement}
             </>
           )}
@@ -136,7 +136,7 @@ export const BaseCard = ({
         ) : (
           subTitle && (
             <Body>
-              <Paragraph className="denhaag-base-card__description">{subTitle}</Paragraph>
+              <Paragraph className="denhaag-card-as-link__description">{subTitle}</Paragraph>
             </Body>
           )
         )}
@@ -153,7 +153,7 @@ export const BaseCard = ({
             icon, a plain text link, an icon from a different icon
             library, etc.).
           */}
-            <div className="denhaag-base-card__footer-meta">
+            <div className="denhaag-card-as-link__footer-meta">
               {isCaseExtended
                 ? href && (
                     <Action aria-label={title} href={href} Action={Link}>
@@ -162,10 +162,10 @@ export const BaseCard = ({
                   )
                 : metadata && <Metadata>{metadata}</Metadata>}
             </div>
-            <div className="denhaag-base-card__footer-link-icon">
+            <div className="denhaag-card-as-link__footer-link-icon">
               {!isCaseExtended && href && (
                 <Action aria-label={title} href={href} Action={Link}>
-                  <ArrowRightIcon className="denhaag-base-card__arrow" />
+                  <ArrowRightIcon className="denhaag-card-as-link__arrow" />
                 </Action>
               )}
             </div>
@@ -176,4 +176,4 @@ export const BaseCard = ({
   );
 };
 
-export default BaseCard;
+export default CardAsLink;

@@ -1,5 +1,5 @@
 {
-  "name": "@gemeente-denhaag/base-card",
+  "name": "@gemeente-denhaag/card-as-link",
   "version": "5.1.0",
   "description": "A universal Card component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
