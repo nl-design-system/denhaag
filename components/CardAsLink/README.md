@@ -25,18 +25,18 @@ If the cards do not have any link or have more than 1 link, use the 'Card' wrapp
 
 The Card-as-link consists of:
 
-1. Pre-header (optional) — content-agnostic slot rendered before the Header. Used for a paper-fold/clipboard-style Decoration (`case`, `plan`), an `<img>` (`default`), or a status component such as `Alert`/`DataBadge` (`case-extended`, where it is placed after the Heading in the DOM for accessible reading order — see Accessibility below).
-2. Header — contains the optional pre-heading and the Heading/Label.
-3. Body (optional) — contains either a description paragraph (`subTitle`) or a `DescriptionList` (`case-extended`, via the `descriptionList` prop).
-4. Footer (optional, shown when there is `metadata` and/or an `href`) — always has two fixed zones: `__footer-meta` (left) and `__footer-link-icon` (right), so alignment stays correct regardless of which zone is empty.
+1. Pre-header (optional) - content-agnostic slot rendered before the Header. Used for a paper-fold/clipboard-style Decoration (`case`, `plan`), an `<img>` (`default`), or a status component such as `Alert`/`DataBadge` (`case-extended`, where it is placed after the Heading in the DOM for accessible reading order - see Accessibility below).
+2. Header (optional) - contains the optional pre-heading and the Heading/Label.
+3. Body (optional) - contains either a description paragraph (`subTitle`) or a `DescriptionList` (`case-extended`, via the `descriptionList` prop).
+4. Footer (optional, shown when there is `metadata` and/or any `href`) - has two fixed zones: `__footer-meta` (left) and `__footer-link-icon` (right), so alignment stays correct regardless of which zone is empty.
 
 ## Variants
 
-- `default` — no decoration, plain white/document background. Can optionally show an image in the Pre-header slot (`preHeaderImage`).
-- `case` — matches the visual style of the old Case Card: a colored background with a paper-fold decoration in the Pre-header. No hover-animation (removed compared to the old Case Card).
-- `case-extended` — visually close to `default` (white background, no decoration), but always shows a Pre-header slot (typically a status component) and renders a `DescriptionList` in the Body instead of a description paragraph. Its footer link is plain text (`linkText` prop), with no arrow icon.
-- `plan` — colored background with a thick, colored border around the entire card, and a "clipboard clip" decoration (two small rectangles) instead of a paper fold.
-- `product` — the simplest variant: no Decoration at all, just a thick top border and square corners (no border-radius).
+- `default` - no decoration, plain white/document background. Can optionally show an image in the Pre-header slot (`preHeaderImage`).
+- `case` - has the visual style of a folder: a colored background with a paper-fold decoration in the Pre-header.
+- `case-extended` - visually close to `default` (white background, no decoration), but always shows extened information, with Pre-header slot (typically a status component) and renders a `DescriptionList` in the Body. Its footer link is plain text (`linkText` prop), with no arrow icon.
+- `plan` - has the visual style of a clipboard, with colored background and a border around the entire card, and a "clipboard clip" decoration.
+- `product` - looks like Default, no Decoration, just a thick top border and optional border-radius.
 
 ## (Interactive) states
 
@@ -49,6 +49,8 @@ Important: note that this Card-as-link is currently covered with one large click
 The 'real link' is in the footer and then covers the card with CSS (this styling trick is inside _action.scss). Screenreaders will read the text coming from the `aria-label`.
 
 ## Design properties
+
+On small screens each card has a media query that transforms it into the List style.
 
 ### Typography
 
@@ -176,7 +178,7 @@ todo.card-as-link.focus.background-color	{basis.focus.background-color}
 todo.card-as-link.focus.border-color	{basis.color.transparent}
 todo.card-as-link.focus.color	{basis.focus.color}
 
-Focus uses one shared, ocher-toned set of colors across all variants (Case, Plan, Product, Default) — there is no per-variant focus color yet for each type of card.
+Focus uses one shared, ocher-toned set of colors across all variants (Case, Plan, Product, Default) - there is no per-variant focus color yet for each type of card.
 
 Not yet defined: Plan's decoration clip color currently does not change on focus (there is no `plan.focus.decoration.clip.color` token yet).
 
@@ -203,7 +205,7 @@ _Card_
 
 ## Accessibility
 
-Semantic HTML Headings may only be used if there is actual content in the Card. If there is no content: use 'label' (=paragraph) so as not to offer an empty hierarchy list to screen-readers.
+Semantic HTML Headings may only be used if there is actual content in the Card. If there is no content: use 'label' (=paragraph) so as not to offer an empty hierarchy list to screen-readers. Use the `labelVisualLevel` prop instead of the `headingLevel` prop in order to force this. This will result in a Paragraph that is visually styled like a Heading.
 
 Also be weary of the order in which the Card is built: HTML order should always be meaningful (order can be reversed in CSS so 'pre-heading' looks visually as if it comes before the Heading, but in HTML the Heading needs to always come first).
 

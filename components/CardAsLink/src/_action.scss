@@ -6,6 +6,9 @@
     outline: none;
   }
 
+  // This "whole-card click trick" works in any footer zone.
+  // (Both in left __footer-meta or right __footer-link-icon).
+  // It always stretches over the full card.
   &::before {
     content: "";
     position: absolute;

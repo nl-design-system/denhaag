@@ -12,7 +12,27 @@
   overflow: hidden;
 }
 
+// When labelVisualLevel is set, the Label is given nl-heading--level-N
+// classes (see CardAsLink.tsx) purely for visual styling, without
+// becoming a semantic heading. These variables reuse the exact same
+// heading tokens the real <Heading> component uses — we deliberately do
+// not introduce any new, level-specific tokens here, since the kernteam
+// proposal has no separate "label styled as heading" concept, and our
+// own Heading styling is already identical across all levels (level only
+// changes which HTML tag renders, not its appearance).
+.denhaag-card-as-link__label.nl-heading {
+  @each $level in 2, 3, 4, 5, 6 {
+    --nl-heading-level-#{$level}-color: var(--denhaag-card-as-link-heading-color);
+    --nl-heading-level-#{$level}-font-family: var(--denhaag-card-as-link-heading-font-family);
+    --nl-heading-level-#{$level}-font-size: var(--denhaag-card-as-link-heading-font-size);
+    --nl-heading-level-#{$level}-font-weight: var(--denhaag-card-as-link-heading-font-weight);
+    --nl-heading-level-#{$level}-line-height: var(--denhaag-card-as-link-heading-line-height);
+    --nl-heading-level-#{$level}-margin-block-start: 0;
+    --nl-heading-level-#{$level}-margin-block-end: 0;
+  }
+}
+
 // When user hovers any part of the card, the Label will get an underline on hover
-denhaag-card-as-link:hover .denhaag-card-as-link__label {
+.denhaag-card-as-link:hover .denhaag-card-as-link__label.nl-heading {
   text-decoration: var(--denhaag-card-as-link-label-hover-text-decoration, underline);
 }

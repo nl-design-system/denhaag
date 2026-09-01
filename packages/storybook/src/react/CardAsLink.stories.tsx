@@ -78,20 +78,20 @@ export const Default: Story = {
   decorators,
 };
 
-export const DefaultWithFooterLink: Story = {
+export const DefaultWithoutContentWithFooterLink: Story = {
   args: {
     title: 'Delicious dishes',
     metadata: '',
     href: '#',
     variant: 'default',
-    headingLevel: 2,
+    labelVisualLevel: 3,
   },
   decorators,
 };
 
 export const DefaultWithImage: Story = {
   args: {
-    ...DefaultWithFooterLink.args,
+    ...DefaultWithoutContentWithFooterLink.args,
     preHeaderImage: (
       <img
         className="denhaag-image__image"
@@ -208,6 +208,7 @@ export const CaseArchived: Story = {
     ...Case.args,
     headingLevel: 3,
     appearance: 'archived',
+    metadata: 'VTH-TEST-2024-02437',
   },
   decorators,
 };
@@ -240,26 +241,6 @@ export const CaseArchivedFocusVisible: Story = {
   parameters: {
     pseudo: { focusVisible: true },
   },
-};
-
-export const CaseArchivedWithDate: Story = {
-  args: {
-    ...CaseArchived.args,
-    metadata: (
-      <time dateTime={new Date('2020-01-22').toISOString()}>
-        {formatDate({ dateTime: '2020-01-22', locale: templateLocale, format: longDateOptions })[0]}
-      </time>
-    ),
-  },
-  decorators,
-};
-
-export const CaseArchivedWithMetaData: Story = {
-  args: {
-    ...CaseArchived.args,
-    metadata: 'VTH-TEST-2024-02437',
-  },
-  decorators,
 };
 
 // Plan uses the same base structure as Case, but with a different
