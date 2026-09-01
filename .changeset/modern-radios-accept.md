@@ -1,7 +1,7 @@
 ---
-"@gemeente-denhaag/card-as-link": minor
-"@gemeente-denhaag/storybook": minor
-"@gemeente-denhaag/design-tokens": minor
+"@gemeente-denhaag/card-as-link": major
+"@gemeente-denhaag/storybook": major
+"@gemeente-denhaag/design-tokens": major
 ---
 
-Setup for new universal Card
+Setup for new universal Card As Link

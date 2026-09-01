@@ -1,4 +1,5 @@
 import React, { AnchorHTMLAttributes, ComponentType } from 'react';
+import clsx from 'clsx';
 import { ArrowRightIcon } from '@gemeente-denhaag/icons';
 import { BasicLink } from '@gemeente-denhaag/link';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
@@ -33,6 +34,17 @@ export interface CardAsLinkProps {
    * structure, e.g. headingLevel={2} for an <h2>.
    */
   headingLevel?: CardAsLinkHeadingLevel;
+  /**
+   * Only relevant when headingLevel is not set — i.e. when the title
+   * renders as a Label, not a real Heading, because there is no other
+   * content in the card. This applies the *visual* styling of that
+   * heading level (via nl-heading--level-N, the same styling engine the
+   * real Heading uses) to the Label, WITHOUT making it a semantic
+   * heading — no <h*> tag, no entry in the page's heading structure.
+   * Purely cosmetic, for cards that should look visually consistent with
+   * heading-bearing cards even though they have no heading-worthy content.
+   */
+  labelVisualLevel?: CardAsLinkHeadingLevel;
   metadata?: React.ReactNode;
   href?: string;
   appearance?: CardAsLinkAppearance;
@@ -69,6 +81,7 @@ export const CardAsLink = ({
   title,
   subTitle,
   headingLevel,
+  labelVisualLevel,
   metadata,
   href,
   appearance = 'default',
@@ -90,7 +103,14 @@ export const CardAsLink = ({
       {title}
     </Heading>
   ) : (
-    <p className="denhaag-card-as-link__label">{title}</p>
+    <p
+      className={clsx(
+        'denhaag-card-as-link__label',
+        labelVisualLevel && `nl-heading nl-heading--level-${labelVisualLevel}`,
+      )}
+    >
+      {title}
+    </p>
   );
 
   return (

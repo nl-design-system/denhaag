@@ -223,30 +223,6 @@ importers:
 
   components/ArticleMeta: {}
 
-  components/CardAsLink:
-    dependencies:
-      '@gemeente-denhaag/descriptionlist':
-        specifier: workspace:*
-        version: link:../DescriptionList
-      '@gemeente-denhaag/heading':
-        specifier: workspace:*
-        version: link:../Heading
-      '@gemeente-denhaag/icons':
-        specifier: workspace:*
-        version: link:../Icons
-      '@gemeente-denhaag/link':
-        specifier: workspace:*
-        version: link:../Link
-      '@gemeente-denhaag/paragraph':
-        specifier: workspace:*
-        version: link:../Paragraph
-      '@gemeente-denhaag/utils':
-        specifier: workspace:*
-        version: link:../Utils
-      clsx:
-        specifier: 2.1.1
-        version: 2.1.1
-
   components/Blockquote: {}
 
   components/Breadcrumb:
@@ -286,6 +262,30 @@ importers:
 
   components/Card:
     dependencies:
+      '@gemeente-denhaag/icons':
+        specifier: workspace:*
+        version: link:../Icons
+      '@gemeente-denhaag/link':
+        specifier: workspace:*
+        version: link:../Link
+      '@gemeente-denhaag/paragraph':
+        specifier: workspace:*
+        version: link:../Paragraph
+      '@gemeente-denhaag/utils':
+        specifier: workspace:*
+        version: link:../Utils
+      clsx:
+        specifier: 2.1.1
+        version: 2.1.1
+
+  components/CardAsLink:
+    dependencies:
+      '@gemeente-denhaag/descriptionlist':
+        specifier: workspace:*
+        version: link:../DescriptionList
+      '@gemeente-denhaag/heading':
+        specifier: workspace:*
+        version: link:../Heading
       '@gemeente-denhaag/icons':
         specifier: workspace:*
         version: link:../Icons
@@ -1194,6 +1194,9 @@ importers:
       '@gemeente-denhaag/card':
         specifier: workspace:*
         version: link:../../components/Card
+      '@gemeente-denhaag/card-as-link':
+        specifier: workspace:*
+        version: link:../../components/CardAsLink
       '@gemeente-denhaag/card-group':
         specifier: workspace:*
         version: link:../../components/CardGroup
