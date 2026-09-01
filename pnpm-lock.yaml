@@ -260,7 +260,30 @@ importers:
         specifier: 14.0.1
         version: 14.0.1(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
 
-  components/Card:
+  components/CardAuthentication:
+    dependencies:
+      '@gemeente-denhaag/button':
+        specifier: workspace:*
+        version: link:../Button
+      '@gemeente-denhaag/button-group':
+        specifier: workspace:*
+        version: link:../ButtonGroup
+      '@gemeente-denhaag/card':
+        specifier: workspace:*
+        version: link:../CaseCard
+      '@gemeente-denhaag/link':
+        specifier: workspace:*
+        version: link:../Link
+
+  components/CardGroup:
+    dependencies:
+      '@gemeente-denhaag/card-authentication':
+        specifier: workspace:*
+        version: link:../CardAuthentication
+
+  components/CardNews: {}
+
+  components/CaseCard:
     dependencies:
       '@gemeente-denhaag/icons':
         specifier: workspace:*
@@ -277,29 +300,6 @@ importers:
       clsx:
         specifier: 2.1.1
         version: 2.1.1
-
-  components/CardAuthentication:
-    dependencies:
-      '@gemeente-denhaag/button':
-        specifier: workspace:*
-        version: link:../Button
-      '@gemeente-denhaag/button-group':
-        specifier: workspace:*
-        version: link:../ButtonGroup
-      '@gemeente-denhaag/card':
-        specifier: workspace:*
-        version: link:../Card
-      '@gemeente-denhaag/link':
-        specifier: workspace:*
-        version: link:../Link
-
-  components/CardGroup:
-    dependencies:
-      '@gemeente-denhaag/card-authentication':
-        specifier: workspace:*
-        version: link:../CardAuthentication
-
-  components/CardNews: {}
 
   components/Checkbox:
     dependencies:
@@ -1004,7 +1004,7 @@ importers:
         version: link:../../components/ButtonGroup
       '@gemeente-denhaag/card':
         specifier: workspace:*
-        version: link:../../components/Card
+        version: link:../../components/CaseCard
       '@gemeente-denhaag/card-authentication':
         specifier: workspace:*
         version: link:../../components/CardAuthentication
@@ -1169,7 +1169,7 @@ importers:
         version: link:../../components/Button
       '@gemeente-denhaag/card':
         specifier: workspace:*
-        version: link:../../components/Card
+        version: link:../../components/CaseCard
       '@gemeente-denhaag/card-group':
         specifier: workspace:*
         version: link:../../components/CardGroup
@@ -1398,7 +1398,7 @@ importers:
         version: link:../../components/ButtonLink
       '@gemeente-denhaag/card':
         specifier: workspace:*
-        version: link:../../components/Card
+        version: link:../../components/CaseCard
       '@gemeente-denhaag/card-authentication':
         specifier: workspace:*
         version: link:../../components/CardAuthentication
@@ -1708,7 +1708,7 @@ importers:
     dependencies:
       '@gemeente-denhaag/card':
         specifier: workspace:*
-        version: link:../../../components/Card
+        version: link:../../../components/CaseCard
       '@gemeente-denhaag/icons':
         specifier: workspace:*
         version: link:../../../components/Icons
@@ -6429,6 +6429,7 @@ packages:
   eslint@9.39.4:
     resolution: {integrity: sha512-XoMjdBOwe/esVgEvLmNsD3IRHkm7fbKIUGvrleloJXUZgDHig2IPWNniv+GwjyJXzuNqVjlr5+4yVUZjycJwfQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
     peerDependencies:
       jiti: '*'
