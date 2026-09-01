@@ -1,5 +1,12 @@
 # @gemeente-denhaag/components-react
 
+## 5.1.5
+
+### Patch Changes
+
+- Updated dependencies [ebc3879]
+  - @gemeente-denhaag/footer@4.3.4
+
 ## 5.1.4
 
 ### Patch Changes

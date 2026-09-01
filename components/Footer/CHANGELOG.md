@@ -1,5 +1,11 @@
 # @gemeente-denhaag/footer
 
+## 4.3.4
+
+### Patch Changes
+
+- ebc3879: Fix link color conflict in footer
+
 ## 4.3.3
 
 ### Patch Changes
