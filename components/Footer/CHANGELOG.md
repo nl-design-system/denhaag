@@ -1,5 +1,11 @@
 # @gemeente-denhaag/footer
 
+## 4.3.5
+
+### Patch Changes
+
+- 8f778ba: More footer link style fixes
+
 ## 4.3.4
 
 ### Patch Changes
