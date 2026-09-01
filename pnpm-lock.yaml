@@ -260,6 +260,27 @@ importers:
         specifier: 14.0.1
         version: 14.0.1(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
 
+  components/Card:
+    dependencies:
+      '@gemeente-denhaag/heading':
+        specifier: workspace:*
+        version: link:../Heading
+      '@gemeente-denhaag/icons':
+        specifier: workspace:*
+        version: link:../Icons
+      '@gemeente-denhaag/link':
+        specifier: workspace:*
+        version: link:../Link
+      '@gemeente-denhaag/paragraph':
+        specifier: workspace:*
+        version: link:../Paragraph
+      '@gemeente-denhaag/utils':
+        specifier: workspace:*
+        version: link:../Utils
+      clsx:
+        specifier: 2.1.1
+        version: 2.1.1
+
   components/CardAuthentication:
     dependencies:
       '@gemeente-denhaag/button':
