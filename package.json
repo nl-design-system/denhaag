@@ -42,7 +42,7 @@
     "typecheck": "pnpm run --recursive typecheck"
   },
   "devDependencies": {
-    "@changesets/cli": "2.31.0",
+    "@changesets/cli": "3.0.1",
     "@commitlint/cli": "21.0.2",
     "@commitlint/config-conventional": "21.0.2",
     "@rollup/plugin-commonjs": "29.0.3",
