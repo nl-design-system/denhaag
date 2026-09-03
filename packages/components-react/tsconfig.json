@@ -21,6 +21,9 @@
       "path": "../../components/Button"
     },
     {
+      "path": "../../components/Card"
+    },
+    {
       "path": "../../components/CardGroup"
     },
     {
@@ -60,7 +63,7 @@
       "path": "../../components/Accordion"
     },
     {
-      "path": "../../components/Card"
+      "path": "../../components/CaseCard"
     },
     {
       "path": "../../components/StylesProvider"

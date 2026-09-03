@@ -16,6 +16,9 @@
       "path": "../../components/Card"
     },
     {
+      "path": "../../components/CaseCard"
+    },
+    {
       "path": "../../components/Checkbox"
     },
     {
