@@ -2,7 +2,7 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
 import { Page, PageHeader, PageFooter } from '@gemeente-denhaag/page';
-import { HeaderLogic, HeaderLogicProps } from '@gemeente-denhaag/header';
+import { Header, HeaderProps } from '@gemeente-denhaag/header';
 import { Footer } from '@gemeente-denhaag/footer';
 import { ResponsiveContent } from '@gemeente-denhaag/responsive-content';
 import { copyright, headerProps, footerLegalData, footerSocialData, newsletterData, contactData } from './util';
@@ -19,7 +19,7 @@ const meta = {
   },
 } as Meta<typeof Page>;
 
-const overviewHeaderProps: HeaderLogicProps = {
+const overviewHeaderProps: HeaderProps = {
   ...headerProps,
   breadcrumbs: {
     navigationPath: [{ label: 'Home', href: 'https://denhaag.nl/' }, { label: 'MijnDenHaag' }],
@@ -30,7 +30,7 @@ export const Overview: StoryObj<typeof meta> = {
   render: () => (
     <Page>
       <PageHeader>
-        <HeaderLogic {...overviewHeaderProps} />
+        <Header {...overviewHeaderProps} />
       </PageHeader>
       <ResponsiveContent className="denhaag-page-content denhaag-responsive-content--sidebar">
         <SideNavigation />

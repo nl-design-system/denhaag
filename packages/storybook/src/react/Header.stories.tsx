@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { headerProps, headerFlatMobileMenuProps } from '../templates/util';
-import { HeaderLogic, HeaderLogicProps } from '@gemeente-denhaag/header';
+import { Header, HeaderProps } from '@gemeente-denhaag/header';
 import readme from '../../../../components/Header/README.md?raw';
 
 const breadcrumbs = {
@@ -9,13 +9,13 @@ const breadcrumbs = {
   },
 };
 
-const overviewHeaderProps: HeaderLogicProps = {
+const overviewHeaderProps: HeaderProps = {
   ...headerProps,
   ...breadcrumbs,
 };
 
 const meta = {
-  component: HeaderLogic,
+  component: Header,
   args: overviewHeaderProps,
   tags: ['autodocs'],
   parameters: {
@@ -26,7 +26,7 @@ const meta = {
       },
     },
   },
-} as Meta<typeof HeaderLogic>;
+} as Meta<typeof Header>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

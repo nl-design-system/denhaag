@@ -2,7 +2,7 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { Heading } from '@gemeente-denhaag/heading';
 import { Page, PageHeader, PageFooter } from '@gemeente-denhaag/page';
-import { HeaderLogic, HeaderLogicProps } from '@gemeente-denhaag/header';
+import { Header, HeaderProps } from '@gemeente-denhaag/header';
 import { Footer } from '@gemeente-denhaag/footer';
 import { ResponsiveContent } from '@gemeente-denhaag/responsive-content';
 import { Tabs } from '@gemeente-denhaag/tab';
@@ -32,7 +32,7 @@ const meta = {
   },
 } as Meta<typeof Page>;
 
-const zakenHeaderProps: HeaderLogicProps = {
+const zakenHeaderProps: HeaderProps = {
   ...headerProps,
   breadcrumbs: {
     navigationPath: [
@@ -100,7 +100,7 @@ export const ZaakOverzicht: StoryObj<typeof meta> = {
   render: (args) => (
     <Page {...args}>
       <PageHeader>
-        <HeaderLogic {...zakenHeaderProps} />
+        <Header {...zakenHeaderProps} />
       </PageHeader>
       <ResponsiveContent className="denhaag-page-content denhaag-responsive-content--sidebar">
         <SideNavigation />

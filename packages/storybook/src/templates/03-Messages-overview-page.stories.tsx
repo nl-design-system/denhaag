@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 import { Action } from '@gemeente-denhaag/action';
 import { Heading } from '@gemeente-denhaag/heading';
 import { Page, PageHeader, PageFooter } from '@gemeente-denhaag/page';
-import { HeaderLogic, HeaderLogicProps } from '@gemeente-denhaag/header';
+import { Header, HeaderProps } from '@gemeente-denhaag/header';
 import { Footer } from '@gemeente-denhaag/footer';
 import { ResponsiveContent } from '@gemeente-denhaag/responsive-content';
 import { Table, TableHead, TableRow, TableHeader } from '@gemeente-denhaag/table';
@@ -33,7 +33,7 @@ const meta = {
   },
 } as Meta<typeof Page>;
 
-const messagesHeaderProps: HeaderLogicProps = {
+const messagesHeaderProps: HeaderProps = {
   ...headerProps,
   breadcrumbs: {
     navigationPath: [
@@ -79,7 +79,7 @@ export const BerichtenOverzicht: StoryObj<typeof meta> = {
   render: (args) => (
     <Page {...args}>
       <PageHeader>
-        <HeaderLogic {...messagesHeaderProps} />
+        <Header {...messagesHeaderProps} />
       </PageHeader>
       <ResponsiveContent className="denhaag-page-content denhaag-responsive-content--sidebar">
         <SideNavigation />
