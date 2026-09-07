@@ -2,7 +2,7 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
 import { Page, PageHeader, PageFooter } from '@gemeente-denhaag/page';
-import { HeaderLogic, HeaderLogicProps } from '@gemeente-denhaag/header';
+import { Header, HeaderProps } from '@gemeente-denhaag/header';
 import { Footer } from '@gemeente-denhaag/footer';
 import { ResponsiveContent } from '@gemeente-denhaag/responsive-content';
 import { Link } from '@gemeente-denhaag/link';
@@ -22,7 +22,7 @@ const meta = {
   },
 } as Meta<typeof Page>;
 
-const loginPageHeaderProps: HeaderLogicProps = {
+const loginPageHeaderProps: HeaderProps = {
   ...headerProps,
   breadcrumbs: {
     navigationPath: [{ label: 'Home', href: 'https://denhaag.nl/' }, { label: 'Inloggen bij MijnDenHaag' }],
@@ -34,7 +34,7 @@ export const Login: StoryObj<typeof meta> = {
   render: (args) => (
     <Page {...args}>
       <PageHeader>
-        <HeaderLogic {...loginPageHeaderProps} />
+        <Header {...loginPageHeaderProps} />
       </PageHeader>
       <ResponsiveContent className="denhaag-page-content">
         <Heading level={2}>Inloggen</Heading>
