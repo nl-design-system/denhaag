@@ -129,8 +129,8 @@ export const MenuButtonExpandable: React.FC<MenuButtonExpandableProps> = ({
   );
 
   return (
-    <button className={rootClassNames} {...props}>
-      {props.children}
+    <button className={rootClassNames} title={props.children?.toString()} {...props}>
+      <span className="denhaag-menu-button__label">{props.children}</span>
       <span className="denhaag-menu-button__chevron">
         <ChevronDownIcon aria-label="ChevronDownIcon" />
       </span>
