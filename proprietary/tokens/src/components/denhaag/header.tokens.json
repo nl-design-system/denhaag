@@ -1,6 +1,7 @@
 {
   "denhaag": {
     "header": {
+      "color": { "value": "{denhaag.color.black}" },
       "border-bottom": {
         "color": { "value": "{denhaag.color.grey.1}" },
         "width": { "value": "1px" },
@@ -13,6 +14,12 @@
       "md": {
         "height": { "value": "7.5rem" }
       },
+      "logo": {
+        "height": { "value": "2rem" },
+        "sm": {
+          "height": { "value": "3rem" }
+        }
+      },
       "content": {
         "align-items": { "value": "center" },
         "display": { "value": "flex" },
@@ -20,12 +27,10 @@
         "justify-content": { "value": "space-between" }
       },
       "actions": {
+        "gap": { "value": "24px" },
         "display": { "value": "none" },
         "desktop": {
-          "display": { "value": "flex" },
-          "action": {
-            "margin-inline-start": { "value": "24px" }
-          }
+          "display": { "value": "flex" }
         }
       },
       "mobile-actions": {

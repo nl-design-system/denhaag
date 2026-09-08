@@ -7,14 +7,13 @@ import './index.scss';
 import { HeaderBase } from './HeaderBase';
 import { HeaderContentContainer } from './HeaderContentContainer';
 import { HeaderContent } from './HeaderContent';
-import { HeaderLogoContainer } from './HeaderLogoContainer';
 import { HeaderActions } from './HeaderActions';
 import { HeaderMobileActions } from './HeaderMobileActions';
 import { HeaderAction } from './HeaderAction';
 import { Breadcrumb, BreadcrumbProps } from '@gemeente-denhaag/breadcrumb';
 import { Sheet, SheetOverlay, SheetContainer, SheetDialog, useEscapeKey, useScreenSize } from '@gemeente-denhaag/sheet';
 import { IconButton } from '@gemeente-denhaag/iconbutton';
-import { CloseIcon, LogOutIcon } from '@gemeente-denhaag/icons';
+import { CloseIcon, LogOutIcon, UserIcon } from '@gemeente-denhaag/icons';
 import { LanguageSwitcherLogic, LanguageSwitcherLogicProps } from '@gemeente-denhaag/language-switcher';
 import { Heading } from '@gemeente-denhaag/heading';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
@@ -28,9 +27,15 @@ export interface HeaderProps {
   userprofileMenu?: MenuProps;
   languageSwitcherMenu?: LanguageSwitcherProps;
   mobileMenu?: HeaderMobileMenuProps;
+  userButton?: UserButtonProps;
   logoutButton?: LogoutButtonProps;
   mobileBreakpoint?: number;
   logo?: LinkProps;
+}
+
+interface UserButtonProps {
+  icon?: React.ElementType;
+  href?: string;
 }
 
 interface LogoutButtonProps {
@@ -66,6 +71,7 @@ export const Header = ({
   userprofileMenu,
   languageSwitcherMenu,
   mobileMenu,
+  userButton = { icon: UserIcon, href: '#' },
   logoutButton,
   mobileBreakpoint = 1024,
   logo = { href: 'https://www.denhaag.nl', 'aria-label': 'Gemeente Den Haag', children: <HeaderLogo /> },
@@ -170,31 +176,35 @@ export const Header = ({
   };
 
   const { className: logoClassName, ...logoProps } = logo;
+  const CustomUserIcon = userButton.icon ?? UserIcon;
 
   return (
     <HeaderBase>
       <HeaderContentContainer>
         <HeaderContent className="denhaag-responsive-content">
-          <HeaderLogoContainer>
-            <Link className={clsx('denhaag-logo denhaag-header__link', logoClassName)} {...logoProps} />
-          </HeaderLogoContainer>
+          <Link className={clsx('denhaag-logo', logoClassName)} {...logoProps} />
           <HeaderActions>
             {languageSwitcherMenu && (
-              <HeaderAction className="denhaag-header__actions-action-language-switcher">
+              <HeaderAction className="denhaag-header__action">
                 <MenuButtonExpandable active={languageSwitcherActive} onClick={handleLanguageSwitcherToggle}>
                   {languageSwitcherMenu.currentLanguageLabel}
                 </MenuButtonExpandable>
               </HeaderAction>
             )}
             {userprofileMenu && (
-              <HeaderAction className="denhaag-header__actions-action-user-menu">
+              <HeaderAction className="denhaag-header__action">
                 <MenuButtonExpandable active={welcomeMenuActive} onClick={handleWelcomeMenuToggle}>
                   {userprofileMenu.label}
                 </MenuButtonExpandable>
               </HeaderAction>
             )}
+            {userButton && (
+              <Link href={userButton.href} className="denhaag-header__action denhaag-header__action--mobile-only">
+                <CustomUserIcon />
+              </Link>
+            )}
           </HeaderActions>
-          {renderMobileMenu && (
+          {/* {renderMobileMenu && (
             <HeaderMobileActions>
               <Button
                 className="denhaag-button denhaag-button--primary-action"
@@ -204,7 +214,7 @@ export const Header = ({
                 {mobileMenu?.openLabel}
               </Button>
             </HeaderMobileActions>
-          )}
+          )} */}
         </HeaderContent>
       </HeaderContentContainer>
       {breadcrumbs && <Breadcrumb {...breadcrumbs} />}
@@ -257,9 +267,7 @@ export const Header = ({
           <SheetDialog ref={mobileMenuDialogRef} onClose={handleMobileMenuToggle}>
             <ResponsiveContent>
               <HeaderContent>
-                <HeaderLogoContainer>
-                  <Link className={clsx('denhaag-logo denhaag-header__link', logoClassName)} {...logoProps} />
-                </HeaderLogoContainer>
+                <Link className={clsx('denhaag-logo denhaag-header__link', logoClassName)} {...logoProps} />
                 <HeaderMobileActions>
                   <Button
                     className="denhaag-button denhaag-button--secondary-action"

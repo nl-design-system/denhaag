@@ -1,44 +1,21 @@
 .denhaag-header {
+  color: var(--denhaag-header-color);
+
+  --nl-link-color: var(--denhaag-header-color);
+
   &__content-container {
     border-bottom-color: var(--denhaag-header-border-bottom-color);
     border-bottom-width: var(--denhaag-header-border-bottom-width);
     border-bottom-style: var(--denhaag-header-border-bottom-style);
   }
 
-  &__logo-container {
-    height: var(--denhaag-header-height);
-    display: flex;
-    align-items: center;
-    padding-block-start: var(--denhaag-header-logo-container-padding-block-start, var(--basis-size-3xs));
-    padding-block-end: var(--denhaag-header-logo-container-padding-block-end, var(--basis-size-3xs));
-    box-sizing: border-box;
-    overflow: hidden;
-
-    --denhaag-header-logo-height: var(--denhaag-header-height);
+  &__logo {
+    width: auto;
+    display: block;
+    height: var(--denhaag-header-logo-height);
 
     @media (width >= 768px) {
-      height: var(--denhaag-header-sm-height);
-
-      --denhaag-header-logo-height: var(--denhaag-header-sm-height);
-    }
-
-    @media (width >= 1024px) {
-      height: var(--denhaag-header-md-height);
-
-      --denhaag-header-logo-height: var(--denhaag-header-md-height);
-    }
-
-    img,
-    svg {
-      display: block;
-      width: auto;
-      max-height: calc(
-        var(--denhaag-header-logo-height) -
-          (
-            var(--denhaag-header-logo-container-padding-block-start, var(--basis-size-3xs)) +
-              var(--denhaag-header-logo-container-padding-block-end, var(--basis-size-3xs))
-          )
-      );
+      height: var(--denhaag-header-logo-sm-height);
     }
   }
 
@@ -58,6 +35,33 @@
     }
   }
 
+  .denhaag-header__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--denhaag-header-actions-gap);
+
+    svg {
+      width: auto;
+      display: block;
+    }
+  }
+
+  .denhaag-header__action {
+    display: none;
+
+    @media (width >= 1024px) {
+      display: block;
+    }
+
+    &--mobile-only {
+      display: block;
+
+      @media (width >= 1024px) {
+        display: none;
+      }
+    }
+  }
+
   .denhaag-header__navigation {
     display: var(--denhaag-header-actions-display, none);
 
@@ -68,18 +72,6 @@
     }
 
     .denhaag-header__navigation-item {
-      margin-inline-start: var(--denhaag-header-actions-desktop-action-margin-inline-start);
-    }
-  }
-
-  .denhaag-header__actions {
-    display: var(--denhaag-header-actions-display);
-
-    @media (width >= 1024px) {
-      display: var(--denhaag-header-actions-desktop-display);
-    }
-
-    .denhaag-header__actions-action {
       margin-inline-start: var(--denhaag-header-actions-desktop-action-margin-inline-start);
     }
   }
