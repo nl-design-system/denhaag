@@ -2,10 +2,8 @@
   "extends": "../../tsconfig.build.json",
   "compilerOptions": {
     "rootDir": "src",
-    "outDir": "dist",
-    "composite": true
+    "outDir": "dist"
   },
   "include": ["src/**/*"],
-  "exclude": ["dist", "src/*.stories.tsx"],
-  "references": []
+  "exclude": ["dist", "src/*.stories.tsx"]
 }
