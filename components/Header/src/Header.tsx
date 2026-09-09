@@ -13,7 +13,7 @@ import { HeaderAction } from './HeaderAction';
 import { Breadcrumb, BreadcrumbProps } from '@gemeente-denhaag/breadcrumb';
 import { Sheet, SheetOverlay, SheetContainer, SheetDialog, useEscapeKey, useScreenSize } from '@gemeente-denhaag/sheet';
 import { IconButton } from '@gemeente-denhaag/iconbutton';
-import { CloseIcon, LogOutIcon, UserIcon } from '@gemeente-denhaag/icons';
+import { AvatarIcon, CloseIcon, LogOutIcon, UserIcon } from '@gemeente-denhaag/icons';
 import { LanguageSwitcherLogic, LanguageSwitcherLogicProps } from '@gemeente-denhaag/language-switcher';
 import { Heading } from '@gemeente-denhaag/heading';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
@@ -36,6 +36,7 @@ export interface HeaderProps {
 interface UserButtonProps {
   icon?: React.ElementType;
   href?: string;
+  CustomLink?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
 }
 
 interface LogoutButtonProps {
@@ -71,7 +72,7 @@ export const Header = ({
   userprofileMenu,
   languageSwitcherMenu,
   mobileMenu,
-  userButton = { icon: UserIcon, href: '#' },
+  userButton = { icon: AvatarIcon, href: '#' },
   logoutButton,
   mobileBreakpoint = 1024,
   logo = { href: 'https://www.denhaag.nl', 'aria-label': 'Gemeente Den Haag', children: <HeaderLogo /> },
@@ -176,7 +177,7 @@ export const Header = ({
   };
 
   const { className: logoClassName, ...logoProps } = logo;
-  const CustomUserIcon = userButton.icon ?? UserIcon;
+  const CustomAvatarIcon = userButton.icon ?? UserIcon;
 
   return (
     <HeaderBase>
@@ -199,22 +200,15 @@ export const Header = ({
               </HeaderAction>
             )}
             {userButton && (
-              <Link href={userButton.href} className="denhaag-header__action denhaag-header__action--mobile-only">
-                <CustomUserIcon />
+              <Link
+                href={userButton.href}
+                Link={CustomLink}
+                className="denhaag-header__action denhaag-header__action--mobile-only"
+              >
+                <CustomAvatarIcon />
               </Link>
             )}
           </HeaderActions>
-          {/* {renderMobileMenu && (
-            <HeaderMobileActions>
-              <Button
-                className="denhaag-button denhaag-button--primary-action"
-                onClick={handleMobileMenuToggle}
-                ref={menuButtonRef}
-              >
-                {mobileMenu?.openLabel}
-              </Button>
-            </HeaderMobileActions>
-          )} */}
         </HeaderContent>
       </HeaderContentContainer>
       {breadcrumbs && <Breadcrumb {...breadcrumbs} />}

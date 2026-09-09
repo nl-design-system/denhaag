@@ -48,6 +48,7 @@ import SettingsSvg from './svg/informational/settings.svg';
 
 // Objects
 import ArchiveSvg from './svg/objects/archive.svg';
+import AvatarSvg from './svg/objects/avatar.svg';
 import BasketballSvg from './svg/objects/basketball.svg';
 import BedSvg from './svg/objects/bed.svg';
 import BookSvg from './svg/objects/book.svg';
@@ -131,6 +132,7 @@ export const SettingsIcon: F = (props: SvgIconProps) => buildIcon(SettingsSvg, p
 
 // Objects
 export const ArchiveIcon: F = (props: SvgIconProps) => buildIcon(ArchiveSvg, props);
+export const AvatarIcon: F = (props: SvgIconProps) => buildIcon(AvatarSvg, props);
 export const BasketballIcon: F = (props: SvgIconProps) => buildIcon(BasketballSvg, props);
 export const BedIcon: F = (props: SvgIconProps) => buildIcon(BedSvg, props);
 export const BookIcon: F = (props: SvgIconProps) => buildIcon(BookSvg, props);
