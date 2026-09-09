@@ -2,68 +2,8 @@
   "extends": "../../tsconfig.build.json",
   "compilerOptions": {
     "rootDir": "src",
-    "outDir": "dist",
-    "composite": true
+    "outDir": "dist"
   },
   "include": ["src/**/*"],
-  "exclude": ["dist", "src/**/*.stories.tsx"],
-  "references": [
-    {
-      "path": "../../components/Alert"
-    },
-    {
-      "path": "../../components/Divider"
-    },
-    {
-      "path": "../../components/List"
-    },
-    {
-      "path": "../../components/Button"
-    },
-    {
-      "path": "../../components/CardGroup"
-    },
-    {
-      "path": "../../components/Checkbox"
-    },
-    {
-      "path": "../../components/File"
-    },
-    {
-      "path": "../../components/FormField"
-    },
-    {
-      "path": "../../components/Footer"
-    },
-    {
-      "path": "../../components/IconButton"
-    },
-    {
-      "path": "../../components/RadioButton"
-    },
-    {
-      "path": "../../components/SideNavigation"
-    },
-    {
-      "path": "../../components/TextInput"
-    },
-    {
-      "path": "../../components/Link"
-    },
-    {
-      "path": "../../components/Menu"
-    },
-    {
-      "path": "../../components/Tab"
-    },
-    {
-      "path": "../../components/Accordion"
-    },
-    {
-      "path": "../../components/Card"
-    },
-    {
-      "path": "../../components/StylesProvider"
-    }
-  ]
+  "exclude": ["dist", "src/**/*.stories.tsx"]
 }
