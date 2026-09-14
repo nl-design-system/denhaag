@@ -1,5 +1,11 @@
 # @gemeente-denhaag/design-tokens
 
+## 1.4.4
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+
 ## 1.4.3
 
 ### Patch Changes

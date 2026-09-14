@@ -1,5 +1,11 @@
 # @gemeente-denhaag/orderedlist
 
+## 3.2.2
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+
 ## 3.2.1
 
 ### Patch Changes

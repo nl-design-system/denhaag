@@ -1,5 +1,11 @@
 # @gemeente-denhaag/icons
 
+## 4.2.3
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+
 ## 4.2.2
 
 ### Patch Changes

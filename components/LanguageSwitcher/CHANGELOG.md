@@ -1,5 +1,15 @@
 # @gemeente-denhaag/language-switcher
 
+## 3.2.3
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+- Updated dependencies [068c53d]
+  - @gemeente-denhaag/icons@4.2.3
+  - @gemeente-denhaag/link@4.2.2
+  - @gemeente-denhaag/link-button@3.2.2
+
 ## 3.2.2
 
 ### Patch Changes

@@ -1,5 +1,18 @@
 # @gemeente-denhaag/contact-timeline
 
+## 4.1.3
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+- Updated dependencies [068c53d]
+  - @gemeente-denhaag/file@2.5.3
+  - @gemeente-denhaag/icons@4.2.3
+  - @gemeente-denhaag/paragraph@2.2.2
+  - @gemeente-denhaag/process-steps@4.3.3
+  - @gemeente-denhaag/step-marker@3.1.3
+  - @gemeente-denhaag/utils@3.1.2
+
 ## 4.1.2
 
 ### Patch Changes

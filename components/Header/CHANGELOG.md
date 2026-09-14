@@ -1,5 +1,25 @@
 # @gemeente-denhaag/header
 
+## 4.2.5
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+- Updated dependencies [068c53d]
+  - @gemeente-denhaag/breadcrumb@5.1.3
+  - @gemeente-denhaag/button@3.1.3
+  - @gemeente-denhaag/header-logo@3.1.2
+  - @gemeente-denhaag/heading@2.2.2
+  - @gemeente-denhaag/iconbutton@3.2.3
+  - @gemeente-denhaag/icons@4.2.3
+  - @gemeente-denhaag/language-switcher@3.2.3
+  - @gemeente-denhaag/link@4.2.2
+  - @gemeente-denhaag/link-list@6.3.3
+  - @gemeente-denhaag/menu@4.2.4
+  - @gemeente-denhaag/paragraph@2.2.2
+  - @gemeente-denhaag/responsive-content@2.1.2
+  - @gemeente-denhaag/sheet@4.1.3
+
 ## 4.2.4
 
 ### Patch Changes

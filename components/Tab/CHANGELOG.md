@@ -1,5 +1,13 @@
 # @gemeente-denhaag/tab
 
+## 3.3.2
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+- Updated dependencies [068c53d]
+  - @gemeente-denhaag/number-badge@2.2.2
+
 ## 3.3.1
 
 ### Patch Changes

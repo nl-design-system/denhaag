@@ -1,5 +1,16 @@
 # @gemeente-denhaag/card-authentication
 
+## 2.1.4
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+- Updated dependencies [068c53d]
+  - @gemeente-denhaag/button@3.1.3
+  - @gemeente-denhaag/button-group@2.1.2
+  - @gemeente-denhaag/card@5.1.4
+  - @gemeente-denhaag/link@4.2.2
+
 ## 2.1.3
 
 ### Patch Changes

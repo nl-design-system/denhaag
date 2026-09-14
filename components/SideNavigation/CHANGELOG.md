@@ -1,5 +1,15 @@
 # @gemeente-denhaag/side-navigation
 
+## 4.2.4
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+- Updated dependencies [068c53d]
+  - @gemeente-denhaag/iconbutton@3.2.3
+  - @gemeente-denhaag/icons@4.2.3
+  - @gemeente-denhaag/number-badge@2.2.2
+
 ## 4.2.3
 
 ### Patch Changes

@@ -1,5 +1,15 @@
 # @gemeente-denhaag/file-upload
 
+## 1.1.3
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+- Updated dependencies [068c53d]
+  - @gemeente-denhaag/button@3.1.3
+  - @gemeente-denhaag/icons@4.2.3
+  - @gemeente-denhaag/paragraph@2.2.2
+
 ## 1.1.2
 
 ### Patch Changes

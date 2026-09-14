@@ -1,5 +1,13 @@
 # @gemeente-denhaag/case-card-element
 
+## 3.2.4
+
+### Patch Changes
+
+- Updated dependencies [068c53d]
+  - @gemeente-denhaag/card@5.1.4
+  - @gemeente-denhaag/icons@4.2.3
+
 ## 3.2.3
 
 ### Patch Changes
