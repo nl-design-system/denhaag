@@ -1,9 +1,5 @@
 {
   "extends": "../../tsconfig.build.json",
-  "compilerOptions": {
-    "rootDir": "src",
-    "outDir": "dist"
-  },
   "include": ["src/**/*"],
   "exclude": ["dist", "src/spacing-matrix.json", "src/generate.ts"]
 }

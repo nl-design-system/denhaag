@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "rootDir": "./",
-    "outDir": "./dist",
+    "rootDir": "${configDir}/src",
+    "outDir": "${configDir}/dist",
     "lib": ["dom", "esnext"],
     "module": "ESNext",
     "moduleResolution": "bundler",
