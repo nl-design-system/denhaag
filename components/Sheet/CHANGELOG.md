@@ -1,5 +1,15 @@
 # @gemeente-denhaag/sheet
 
+## 4.1.3
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+- Updated dependencies [068c53d]
+  - @gemeente-denhaag/iconbutton@3.2.3
+  - @gemeente-denhaag/icons@4.2.3
+  - @gemeente-denhaag/responsive-content@2.1.2
+
 ## 4.1.2
 
 ### Patch Changes

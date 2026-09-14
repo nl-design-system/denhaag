@@ -1,5 +1,13 @@
 # @gemeente-denhaag/accordion
 
+## 4.1.3
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+- Updated dependencies [068c53d]
+  - @gemeente-denhaag/icons@4.2.3
+
 ## 4.1.2
 
 ### Patch Changes

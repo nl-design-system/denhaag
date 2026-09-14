@@ -1,5 +1,11 @@
 # @gemeente-denhaag/rich-text
 
+## 5.1.2
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+
 ## 5.1.1
 
 ### Patch Changes

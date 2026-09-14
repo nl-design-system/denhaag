@@ -1,5 +1,11 @@
 # @gemeente-denhaag/floating-contact
 
+## 2.2.3
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+
 ## 2.2.2
 
 ### Patch Changes

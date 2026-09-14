@@ -1,5 +1,52 @@
 # @gemeente-denhaag/components-react
 
+## 5.1.7
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+- Updated dependencies [068c53d]
+  - @gemeente-denhaag/accordion@4.1.3
+  - @gemeente-denhaag/action@4.4.2
+  - @gemeente-denhaag/alert@4.1.3
+  - @gemeente-denhaag/button@3.1.3
+  - @gemeente-denhaag/card@5.1.4
+  - @gemeente-denhaag/card-group@2.1.4
+  - @gemeente-denhaag/checkbox@3.2.2
+  - @gemeente-denhaag/contact-timeline@4.1.3
+  - @gemeente-denhaag/descriptionlist@4.1.2
+  - @gemeente-denhaag/divider@3.1.3
+  - @gemeente-denhaag/file@2.5.3
+  - @gemeente-denhaag/footer@4.3.6
+  - @gemeente-denhaag/form-field@3.2.2
+  - @gemeente-denhaag/form-field-description@3.2.2
+  - @gemeente-denhaag/form-field-error-message@3.2.2
+  - @gemeente-denhaag/form-fieldset@3.2.2
+  - @gemeente-denhaag/form-label@3.3.2
+  - @gemeente-denhaag/form-progress@4.1.3
+  - @gemeente-denhaag/header@4.2.5
+  - @gemeente-denhaag/iconbutton@3.2.3
+  - @gemeente-denhaag/icons@4.2.3
+  - @gemeente-denhaag/link@4.2.2
+  - @gemeente-denhaag/link-button@3.2.2
+  - @gemeente-denhaag/link-list@6.3.3
+  - @gemeente-denhaag/list@3.1.4
+  - @gemeente-denhaag/menu@4.2.4
+  - @gemeente-denhaag/page@2.1.2
+  - @gemeente-denhaag/page-index@4.1.2
+  - @gemeente-denhaag/pagination@3.1.2
+  - @gemeente-denhaag/process-steps@4.3.3
+  - @gemeente-denhaag/radio-button@3.2.2
+  - @gemeente-denhaag/responsive-content@2.1.2
+  - @gemeente-denhaag/select@3.2.2
+  - @gemeente-denhaag/sheet@4.1.3
+  - @gemeente-denhaag/side-navigation@4.2.4
+  - @gemeente-denhaag/stylesprovider@3.3.2
+  - @gemeente-denhaag/tab@3.3.2
+  - @gemeente-denhaag/table@4.1.2
+  - @gemeente-denhaag/text-input@3.2.2
+  - @gemeente-denhaag/textarea@3.2.2
+
 ## 5.1.6
 
 ### Patch Changes

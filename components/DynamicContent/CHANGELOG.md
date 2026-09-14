@@ -1,5 +1,16 @@
 # @gemeente-denhaag/dynamic-content
 
+## 2.2.3
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+- Updated dependencies [068c53d]
+  - @gemeente-denhaag/icons@4.2.3
+  - @gemeente-denhaag/image@2.1.2
+  - @gemeente-denhaag/link@4.2.2
+  - @gemeente-denhaag/pagination@3.1.2
+
 ## 2.2.2
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @gemeente-denhaag/unorderedlist
 
+## 3.3.2
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+
 ## 3.3.1
 
 ### Patch Changes

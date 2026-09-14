@@ -1,5 +1,16 @@
 # @gemeente-denhaag/action
 
+## 4.4.2
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+- Updated dependencies [068c53d]
+  - @gemeente-denhaag/button@3.1.3
+  - @gemeente-denhaag/icons@4.2.3
+  - @gemeente-denhaag/link@4.2.2
+  - @gemeente-denhaag/utils@3.1.2
+
 ## 4.4.1
 
 ### Patch Changes
