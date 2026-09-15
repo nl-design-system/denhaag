@@ -36,7 +36,7 @@ export const Breadcrumb = ({
   ...props
 }: BreadcrumbProps) => {
   const [windowWidth] = useScreenSize();
-  const breadcrumbs = showCurrent && windowWidth < mobileBreakpoint ? navigationPath : navigationPath.slice(0, -1);
+  const breadcrumbs = showCurrent || windowWidth < mobileBreakpoint ? navigationPath : navigationPath.slice(0, -1);
   const nrBreadcrumbItems = breadcrumbs.length;
   const mobileIndex = nrBreadcrumbItems - 1;
   const listItems = breadcrumbs.map((item, index) => {
