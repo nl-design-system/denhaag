@@ -47,7 +47,8 @@
         "1": { "value": "hsl(40 18% 97%)", "name": "Warm Grey 1" }
       },
       "black": { "value": "hsl(0 0% 0%)", "name": "Black" },
-      "white": { "value": "hsl(0 0% 100%)", "name": "White" }
+      "white": { "value": "hsl(0 0% 100%)", "name": "White" },
+      "transparent": { "value": "hsl(0 0% 100% / 0)", "name": "Transparent" }
     }
   }
 }
