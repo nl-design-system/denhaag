@@ -3,6 +3,12 @@
 
   --nl-link-color: var(--denhaag-header-color);
 
+  @media (width < 1024px) {
+    position: sticky;
+    top: calc(-1 * var(--denhaag-header-height));
+    z-index: 10;
+  }
+
   &__content-container {
     border-bottom-color: var(--denhaag-header-border-bottom-color);
     border-bottom-width: var(--denhaag-header-border-bottom-width);

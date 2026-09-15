@@ -1,3 +1,4 @@
+import React from 'react';
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { headerProps, headerFlatMobileMenuProps } from '../templates/util';
 import { Header, HeaderProps } from '@gemeente-denhaag/header';
@@ -40,5 +41,13 @@ export const FlatMobileMenu: Story = {
   },
   globals: {
     viewport: { value: 'mobile2', isRotated: false },
+  },
+  render: (args) => {
+    return (
+      <div style={{ height: '150vh', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+        <Header {...args} />
+        Footer
+      </div>
+    );
   },
 };
