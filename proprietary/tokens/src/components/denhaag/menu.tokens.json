@@ -6,10 +6,13 @@
     "mobile-menu": {
       "transition-duration": { "value": "200ms" },
       "will-change": { "value": "transform" },
+      "gap": { "value": "{basis.space.row.4xl}" },
       "scrolled": {
         "transform": { "value": "translateX(-100vw)" }
       },
       "list": {
+        "margin-block-start": { "value": "0" },
+        "margin-block-end": { "value": "0" },
         "expandable": {
           "display": { "value": "none" },
           "open": {
@@ -21,6 +24,7 @@
         },
         "padding-inline-start": { "value": "0" },
         "item": {
+          "color": { "value": "{denhaag.color.grey.4}" },
           "border-bottom": { "value": "1px solid {denhaag.color.grey.1}" },
           "display": { "value": "flex" },
           "flex-direction": { "value": "column" },
@@ -45,13 +49,14 @@
             "color": { "value": "auto" },
             "align-items": { "value": "center" },
             "appearance": { "value": "none" },
-            "border": { "value": "0" },
+            "border-bottom": { "value": "1px solid {denhaag.color.grey.1}" },
             "display": { "value": "flex" },
-            "justify-content": { "value": "space-between" },
+            "gap": { "value": "{basis.space.column.lg}" },
+            "justify-content": { "value": "flex-start" },
             "margin-block": { "value": "0" },
             "margin-inline": { "value": "0" },
             "padding-block": { "value": "0" },
-            "padding-inline": { "value": "0" },
+            "padding-inline": { "value": "{basis.space.inline.md}" },
             "text-decoration": { "value": "none" },
             "width": { "value": "100%" },
             "large": {
@@ -61,6 +66,9 @@
             "label": {
               "gap": { "value": "8px" }
             }
+          },
+          "link-icon": {
+            "font-size": { "value": "16px" }
           }
         },
         "submenu": {
@@ -84,10 +92,7 @@
             "padding-block-start": { "value": "20px" },
             "padding-block-end": { "value": "20px" },
             "padding-inline-start": { "value": "0" },
-            "padding-inline-end": { "value": "24px" },
-            "icon": {
-              "color": { "value": "{denhaag.color.blue.3}" }
-            }
+            "padding-inline-end": { "value": "24px" }
           }
         }
       }

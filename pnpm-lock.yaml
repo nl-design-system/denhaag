@@ -236,6 +236,9 @@ importers:
       '@gemeente-denhaag/responsive-content':
         specifier: workspace:*
         version: link:../ResponsiveContent
+      '@gemeente-denhaag/sheet':
+        specifier: workspace:*
+        version: link:../Sheet
       clsx:
         specifier: 2.1.1
         version: 2.1.1

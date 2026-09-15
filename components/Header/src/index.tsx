@@ -6,3 +6,4 @@ export * from './HeaderAction';
 export * from './HeaderActions';
 export * from './HeaderContent';
 export * from './HeaderMobileActions';
+export * from './HeaderMobileToggle';

@@ -21,6 +21,7 @@ import { Button } from '@gemeente-denhaag/button';
 import './index.scss';
 import clsx from 'clsx';
 import { LinkList } from '@gemeente-denhaag/link-list';
+import HeaderMobileToggle from './HeaderMobileToggle';
 
 export interface HeaderProps {
   breadcrumbs?: BreadcrumbProps;
@@ -211,7 +212,9 @@ export const Header = ({
           </HeaderActions>
         </HeaderContent>
       </HeaderContentContainer>
-      {breadcrumbs && <Breadcrumb {...breadcrumbs} />}
+      {breadcrumbs && (
+        <Breadcrumb mobileBreakpoint={mobileBreakpoint} toggleMobileMenu={handleMobileMenuToggle} {...breadcrumbs} />
+      )}
       {languageSwitcherMenu && languageSwitcherActive && (
         <>
           <Sheet>
@@ -261,19 +264,15 @@ export const Header = ({
           <SheetDialog ref={mobileMenuDialogRef} onClose={handleMobileMenuToggle}>
             <ResponsiveContent>
               <HeaderContent>
-                <Link className={clsx('denhaag-logo denhaag-header__link', logoClassName)} {...logoProps} />
+                <Heading level={2}>Mijn den haag</Heading>
                 <HeaderMobileActions>
-                  <Button
-                    className="denhaag-button denhaag-button--secondary-action"
-                    onClick={handleMobileMenuToggle}
-                    ref={closeButtonRef}
-                  >
-                    {mobileMenu?.closeLabel}
-                  </Button>
+                  <HeaderMobileToggle onClick={handleMobileMenuToggle} aria-label="Close mobile menu">
+                    <CloseIcon />
+                  </HeaderMobileToggle>
                 </HeaderMobileActions>
               </HeaderContent>
             </ResponsiveContent>
-            <ResponsiveContent>
+            <ResponsiveContent className="denhaag-header__mobile-menu-bottom">
               <MobileMenu
                 navigation={mobileMenu?.navigation}
                 languageSwitcherMenu={languageSwitcherMenu?.languageSwitcherProps}

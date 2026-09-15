@@ -8,15 +8,12 @@
         "style": { "value": "solid" }
       },
       "height": { "value": "4.5rem" },
-      "sm": {
-        "height": { "value": "6rem" }
-      },
-      "md": {
+      "lg": {
         "height": { "value": "7.5rem" }
       },
       "logo": {
         "height": { "value": "2rem" },
-        "sm": {
+        "lg": {
           "height": { "value": "3rem" }
         }
       },
@@ -38,6 +35,10 @@
         "desktop": {
           "display": { "value": "none" }
         }
+      },
+      "mobile-menu-bottom": {
+        "padding-inline-start": { "value": "{basis.space.inline.xl}" },
+        "padding-inline-end": { "value": "{basis.space.inline.xl}" }
       }
     }
   }
