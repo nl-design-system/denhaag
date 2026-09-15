@@ -1,5 +1,16 @@
 import React from 'react';
-import { FacebookIcon, InstagramIcon, LinkedInIcon, TwitterIcon, YouTubeIcon } from '@gemeente-denhaag/icons';
+import {
+  FacebookIcon,
+  FilestorageIcon,
+  HouseIcon,
+  InboxIcon,
+  InstagramIcon,
+  LinkedInIcon,
+  ListIcon,
+  TwitterIcon,
+  UserIcon,
+  YouTubeIcon,
+} from '@gemeente-denhaag/icons';
 import { HeaderProps } from '@gemeente-denhaag/header';
 
 export const templateLocale = 'nl-NL';
@@ -150,11 +161,16 @@ export const headerFlatMobileMenuProps: HeaderProps = {
       {
         defaultExpanded: true,
         navigation: [
-          { label: 'Overzicht', href: 'https://klantportaal.denhaag.nl/overzicht' },
-          { label: 'Mijn berichten', href: 'https://klantportaal.denhaag.nl/berichten', badgeCounter: 3 },
-          { label: 'Lopende zaken', href: 'https://klantportaal.denhaag.nl/zaken' },
-          { label: "Thema's", href: 'https://klantportaal.denhaag.nl/themas' },
-          { label: 'Mijn account', href: 'https://klantportaal.denhaag.nl/account' },
+          { icon: HouseIcon, label: 'Overzicht', href: 'https://klantportaal.denhaag.nl/overzicht' },
+          {
+            icon: InboxIcon,
+            label: 'Mijn berichten',
+            href: 'https://klantportaal.denhaag.nl/berichten',
+            badgeCounter: 3,
+          },
+          { icon: FilestorageIcon, label: 'Lopende zaken', href: 'https://klantportaal.denhaag.nl/zaken' },
+          { icon: ListIcon, label: "Thema's", href: 'https://klantportaal.denhaag.nl/themas' },
+          { icon: UserIcon, label: 'Mijn account', href: 'https://klantportaal.denhaag.nl/account' },
         ],
       },
     ],
