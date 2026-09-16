@@ -262,15 +262,13 @@ export const Header = ({
       {renderMobileMenu && mobileMenuActive && (
         <>
           <SheetDialog ref={mobileMenuDialogRef} onClose={handleMobileMenuToggle}>
-            <ResponsiveContent>
-              <HeaderContent>
-                <Heading level={2}>Mijn den haag</Heading>
-                <HeaderMobileActions>
-                  <HeaderMobileToggle onClick={handleMobileMenuToggle} aria-label="Close mobile menu">
-                    <CloseIcon />
-                  </HeaderMobileToggle>
-                </HeaderMobileActions>
-              </HeaderContent>
+            <ResponsiveContent className="denhaag-header__mobile-menu-top">
+              <Heading level={2}>Mijn den haag</Heading>
+              <HeaderMobileActions>
+                <HeaderMobileToggle onClick={handleMobileMenuToggle} aria-label="Close mobile menu">
+                  <CloseIcon />
+                </HeaderMobileToggle>
+              </HeaderMobileActions>
             </ResponsiveContent>
             <ResponsiveContent className="denhaag-header__mobile-menu-bottom">
               <MobileMenu
