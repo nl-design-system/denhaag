@@ -34,6 +34,7 @@
     "@gemeente-denhaag/icons": "workspace:*",
     "@gemeente-denhaag/link": "workspace:*",
     "@gemeente-denhaag/responsive-content": "workspace:*",
+    "@gemeente-denhaag/sheet": "workspace:*",
     "clsx": "2.1.1"
   },
   "peerDependencies": {

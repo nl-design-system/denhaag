@@ -14,6 +14,7 @@ import { useToggleState } from './use-togglestate';
 import { MobileMenuLinkLabel } from './MobileMenuLinkLabel';
 
 interface NavigationGroupProps {
+  icon?: React.ElementType;
   label?: string;
   href?: string;
   navigation?: Array<NavigationGroupProps>;
@@ -106,6 +107,7 @@ const ExpandedList = ({
             return (
               <MobileMenuListItem key={key}>
                 <MobileMenuLink Link={Link} href={l2Nav.href} tabIndex={tabIndex}>
+                  {l2Nav.icon && <l2Nav.icon className="denhaag-mobile-menu-list-item__icon" />}
                   <MobileMenuLinkLabel>
                     <span>{l2Nav.label}</span>
                     {l2Nav.badgeCounter && <NumberBadge>{l2Nav.badgeCounter}</NumberBadge>}

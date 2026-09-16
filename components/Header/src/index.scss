@@ -1,60 +1,66 @@
 .denhaag-header {
+  color: var(--denhaag-header-color);
+
+  --nl-link-color: var(--denhaag-header-color);
+
+  @media (width < 1024px) {
+    position: sticky;
+    top: calc(-1 * var(--denhaag-header-height));
+    z-index: 10;
+  }
+
   &__content-container {
     border-bottom-color: var(--denhaag-header-border-bottom-color);
     border-bottom-width: var(--denhaag-header-border-bottom-width);
     border-bottom-style: var(--denhaag-header-border-bottom-style);
   }
 
-  &__logo-container {
-    height: var(--denhaag-header-height);
-    display: flex;
-    align-items: center;
-    padding-block-start: var(--denhaag-header-logo-container-padding-block-start, var(--basis-size-3xs));
-    padding-block-end: var(--denhaag-header-logo-container-padding-block-end, var(--basis-size-3xs));
-    box-sizing: border-box;
-    overflow: hidden;
-
-    --denhaag-header-logo-height: var(--denhaag-header-height);
-
-    @media (width >= 768px) {
-      height: var(--denhaag-header-sm-height);
-
-      --denhaag-header-logo-height: var(--denhaag-header-sm-height);
-    }
+  &__logo {
+    width: auto;
+    display: block;
+    height: var(--denhaag-header-logo-height);
 
     @media (width >= 1024px) {
-      height: var(--denhaag-header-md-height);
-
-      --denhaag-header-logo-height: var(--denhaag-header-md-height);
-    }
-
-    img,
-    svg {
-      display: block;
-      width: auto;
-      max-height: calc(
-        var(--denhaag-header-logo-height) -
-          (
-            var(--denhaag-header-logo-container-padding-block-start, var(--basis-size-3xs)) +
-              var(--denhaag-header-logo-container-padding-block-end, var(--basis-size-3xs))
-          )
-      );
+      height: var(--denhaag-header-logo-lg-height);
     }
   }
 
   &__content {
+    height: var(--denhaag-header-height);
     align-items: var(--denhaag-header-content-align-items);
     display: var(--denhaag-header-content-display);
     flex-direction: var(--denhaag-header-content-flex-direction);
-    height: var(--denhaag-header-height);
     justify-content: var(--denhaag-header-content-justify-content);
 
-    @media (width >= 768px) {
-      height: var(--denhaag-header-sm-height);
+    @media (width >= 1024px) {
+      height: var(--denhaag-header-lg-height);
     }
+  }
+
+  .denhaag-header__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--denhaag-header-actions-gap);
+
+    svg {
+      width: auto;
+      display: block;
+    }
+  }
+
+  .denhaag-header__action {
+    display: none;
 
     @media (width >= 1024px) {
-      height: var(--denhaag-header-md-height);
+      display: block;
+    }
+
+    &--mobile-only {
+      display: block;
+
+      @media (width >= 1024px) {
+        display: none;
+      }
     }
   }
 
@@ -72,18 +78,6 @@
     }
   }
 
-  .denhaag-header__actions {
-    display: var(--denhaag-header-actions-display);
-
-    @media (width >= 1024px) {
-      display: var(--denhaag-header-actions-desktop-display);
-    }
-
-    .denhaag-header__actions-action {
-      margin-inline-start: var(--denhaag-header-actions-desktop-action-margin-inline-start);
-    }
-  }
-
   .denhaag-header__mobile-actions {
     display: var(--denhaag-header-mobile-actions-display);
 
@@ -92,7 +86,33 @@
     }
   }
 
+  .denhaag-header__mobile-toggle {
+    width: var(--denhaag-header-mobile-toggle-width, var(--basis-size-sm));
+    height: var(--denhaag-header-mobile-toggle-height, var(--basis-size-sm));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--denhaag-header-mobile-toggle-border-radius, var(--basis-border-radius-md));
+    border-width: var(--denhaag-header-mobile-toggle-border-size, 1px);
+    border-style: var(--denhaag-header-mobile-toggle-border-style, solid);
+    border-color: var(--denhaag-header-mobile-toggle-border-color, var(--denhaag-color-grey-2));
+    background: var(--denhaag-header-mobile-toggle-background-color, transparent);
+    color: var(--denhaag-header-mobile-toggle-color, var(--denhaag-color-green-3));
+  }
+
   .denhaag-header-sheet-container {
     --utrecht-space-around: 1;
+  }
+
+  &__mobile-menu-top {
+    height: var(--denhaag-header-mobile-menu-top-height, 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__mobile-menu-bottom {
+    padding-inline-start: var(--denhaag-header-mobile-menu-bottom-padding-inline-start);
+    padding-inline-end: var(--denhaag-header-mobile-menu-bottom-padding-inline-end);
   }
 }
