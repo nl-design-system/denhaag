@@ -5,10 +5,11 @@
   --denhaag-breadcrumb-link-pointer-events: bounding-box;
   --denhaag-breadcrumb-item-display: none;
 
+  display: flex;
+  justify-content: center;
+  height: var(--denhaag-breadcrumb-height, 80px);
   color: var(--denhaag-breadcrumb-color, inherit);
   font-weight: var(--denhaag-breadcrumb-font-weight, 400);
-  padding-block-start: var(--denhaag-breadcrumb-padding-block-start, var(--basis-space-block-xl));
-  padding-block-end: var(--denhaag-breadcrumb-padding-block-end, var(--basis-space-block-xl));
   border-bottom-width: var(--denhaag-breadcrumb-border-bottom-width, 1px);
   border-bottom-style: var(--denhaag-breadcrumb-border-bottom-style, solid);
   border-bottom-color: var(--denhaag-breadcrumb-border-bottom-color, var(--denhaag-color-grey-1, #f1f1f1));
@@ -19,6 +20,7 @@
     --denhaag-breadcrumb-chevron-display: inline-block;
     --denhaag-breadcrumb-link-icon-content: unset;
 
+    height: auto;
     padding-block-start: var(--denhaag-breadcrumb-lg-padding-block-start, var(--basis-space-block-lg));
     padding-block-end: var(--denhaag-breadcrumb-lg-padding-block-end, var(--basis-space-block-lg));
     border-bottom-width: var(--denhaag-breadcrumb-lg-border-bottom-width);

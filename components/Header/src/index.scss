@@ -26,10 +26,10 @@
   }
 
   &__content {
+    height: var(--denhaag-header-height);
     align-items: var(--denhaag-header-content-align-items);
     display: var(--denhaag-header-content-display);
     flex-direction: var(--denhaag-header-content-flex-direction);
-    height: var(--denhaag-header-height);
     justify-content: var(--denhaag-header-content-justify-content);
 
     @media (width >= 1024px) {
@@ -102,6 +102,13 @@
 
   .denhaag-header-sheet-container {
     --utrecht-space-around: 1;
+  }
+
+  &__mobile-menu-top {
+    height: var(--denhaag-header-mobile-menu-top-height, 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   &__mobile-menu-bottom {

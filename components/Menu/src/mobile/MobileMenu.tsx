@@ -97,7 +97,7 @@ const ExpandedList = ({
     <MobileMenuListItem active={toggle.open}>
       {label && (
         <MobileMenuButton {...toggle.buttonProps} tabIndex={tabIndex} large>
-          <p className="denhaag-mobile-menu-list-item-button-text">{label} test</p>
+          <p className="denhaag-mobile-menu-list-item-button-text">{label}</p>
           <ChevronDownIcon />
         </MobileMenuButton>
       )}
