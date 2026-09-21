@@ -1,11 +1,14 @@
 import { ChevronDownIcon } from '@gemeente-denhaag/icons';
-import React from 'react';
+import clsx from 'clsx';
+import React, { HTMLAttributes } from 'react';
 
-export type BreadcrumbToggleButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
+export type BreadcrumbToggleButtonProps = HTMLAttributes<HTMLButtonElement>;
 
-export const BreadcrumbToggleButton = (props: BreadcrumbToggleButtonProps) => {
+export const BreadcrumbToggleButton = ({ className, ...props }: BreadcrumbToggleButtonProps) => {
+  const classNames = clsx('denhaag-breadcrumb__toggle-button', className);
+
   return (
-    <button className="denhaag-breadcrumb__toggle-button" aria-label="Toggle breadcrumb" {...props}>
+    <button className={classNames} aria-label="Toggle breadcrumb" {...props}>
       <ChevronDownIcon />
     </button>
   );
