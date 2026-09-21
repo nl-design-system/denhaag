@@ -31,7 +31,7 @@
     }
 
     .denhaag-mobile-menu-list-item__icon {
-      font-size: 24px;
+      font-size: var(--denhaag-mobile-menu-list-item-icon, var(--basis-size-icon-xl));
     }
 
     .denhaag-mobile-menu-list-item-link,
