@@ -200,7 +200,7 @@ export const Header = ({
                 </MenuButtonExpandable>
               </HeaderAction>
             )}
-            {userButton && (
+            {userprofileMenu && userButton && (
               <Link
                 href={userButton.href}
                 Link={CustomLink}
