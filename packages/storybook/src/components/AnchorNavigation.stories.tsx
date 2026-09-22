@@ -1,7 +1,6 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react-vite';
 import '@gemeente-denhaag/anchor-navigation';
-
 import readme from '../../../../components/AnchorNavigation/README.md?raw';
 
 const meta = {
@@ -11,9 +10,6 @@ const meta = {
       description: {
         component: readme,
       },
-    },
-    status: {
-      type: 'WORK IN PROGRESS',
     },
   },
 } as Meta;
