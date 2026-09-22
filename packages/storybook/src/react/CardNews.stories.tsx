@@ -1,9 +1,7 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react-vite';
 import '@gemeente-denhaag/card-news';
-
 import readme from '../../../../components/CardNews/README.md?raw';
-import './_storybook.scss';
 
 const meta = {
   tags: ['autodocs'],
@@ -13,10 +11,14 @@ const meta = {
         component: readme,
       },
     },
-    status: {
-      type: 'WORK IN PROGRESS',
-    },
   },
+  decorators: [
+    (Story) => (
+      <div style={{ maxWidth: '320px' }}>
+        <Story />
+      </div>
+    ),
+  ],
 } as Meta;
 
 export default meta;
