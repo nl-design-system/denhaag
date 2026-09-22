@@ -15,9 +15,6 @@ const meta = {
         component: readme,
       },
     },
-    status: {
-      type: 'WORK IN PROGRESS',
-    },
   },
 } as Meta;
 
