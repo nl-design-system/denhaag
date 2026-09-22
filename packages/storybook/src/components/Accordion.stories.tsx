@@ -1,5 +1,4 @@
 import { Accordion, AccordionSection } from '@gemeente-denhaag/accordion';
-import tokens from '@gemeente-denhaag/design-tokens/dist/list.json';
 import { Meta, StoryObj } from '@storybook/react-vite';
 import React from 'react';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
@@ -38,13 +37,10 @@ const exampleArgs = {
 };
 
 const meta = {
-  title: 'CSS/Accordion',
   component: Accordion,
   args: exampleArgs,
   tags: ['autodocs'],
   parameters: {
-    tokensPrefix: 'denhaag-accordion',
-    tokens,
     docs: { description: { component: readme } },
   },
 } as Meta<typeof Accordion>;
@@ -70,6 +66,7 @@ export const Standalone: Story = {
           title="Meldingen"
           description="Stel in waarvoor u meldingen wilt ontvangen en op welke manier"
         >
+          <Paragraph>Meldingen</Paragraph>
           <DescriptionList
             items={[
               { title: 'Beast of Bodmin', detail: 'A large feline inhabiting Bodmin Moor.' },
