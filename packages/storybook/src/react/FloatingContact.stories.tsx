@@ -1,11 +1,8 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react-vite';
 import '@gemeente-denhaag/floating-contact';
-
 import readme from '../../../../components/FloatingContact/README.md?raw';
 import '../../../../components/FloatingContact/src/stories.js';
-import './_storybook.scss';
-
 import { useEffect, useMemo } from 'storybook/preview-api';
 
 const meta = {
@@ -15,9 +12,6 @@ const meta = {
       description: {
         component: readme,
       },
-    },
-    status: {
-      type: 'WORK IN PROGRESS',
     },
   },
   decorators: [
@@ -45,7 +39,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   render: () => (
-    <main className="denhaag-storybook-floating-contact-wrapper">
+    <main>
       <div id="denhaag-floating-contact" className="denhaag-floating-contact">
         <button
           id="denhaag-floating-contact-switch"
@@ -206,7 +200,7 @@ export const Default: Story = {
 
 export const Hover: Story = {
   render: () => (
-    <main className="denhaag-storybook-floating-contact-wrapper">
+    <main>
       <div id="denhaag-floating-contact" className="denhaag-floating-contact">
         <button
           id="denhaag-floating-contact-switch"
@@ -367,7 +361,7 @@ export const Hover: Story = {
 
 export const Focus: Story = {
   render: () => (
-    <main className="denhaag-storybook-floating-contact-wrapper">
+    <main>
       <div id="denhaag-floating-contact" className="denhaag-floating-contact">
         <button
           id="denhaag-floating-contact-switch"
@@ -528,7 +522,7 @@ export const Focus: Story = {
 
 export const ChatOffline: Story = {
   render: () => (
-    <main className="denhaag-storybook-floating-contact-wrapper">
+    <main>
       <div id="denhaag-floating-contact" className="denhaag-floating-contact">
         <button
           id="denhaag-floating-contact-switch"
@@ -687,7 +681,7 @@ export const ChatOffline: Story = {
 
 export const ItemHover: Story = {
   render: () => (
-    <main className="denhaag-storybook-floating-contact-wrapper">
+    <main>
       <div id="denhaag-floating-contact" className="denhaag-floating-contact">
         <button
           id="denhaag-floating-contact-switch"
@@ -848,7 +842,7 @@ export const ItemHover: Story = {
 
 export const ItemFocus: Story = {
   render: () => (
-    <main className="denhaag-storybook-floating-contact-wrapper">
+    <main>
       <div id="denhaag-floating-contact" className="denhaag-floating-contact">
         <button
           id="denhaag-floating-contact-switch"
@@ -1009,7 +1003,7 @@ export const ItemFocus: Story = {
 
 export const LiveChat: Story = {
   render: () => (
-    <main className="denhaag-storybook-floating-contact-wrapper">
+    <main>
       <div id="denhaag-floating-contact" className="denhaag-floating-contact">
         <button
           id="denhaag-floating-contact-switch"
@@ -1170,7 +1164,7 @@ export const LiveChat: Story = {
 
 export const Zoomed: Story = {
   render: () => (
-    <main className="denhaag-storybook-floating-contact-wrapper">
+    <main>
       <div id="denhaag-floating-contact" className="denhaag-floating-contact denhaag-floating-contact--zoomed">
         <button
           id="denhaag-floating-contact-switch"

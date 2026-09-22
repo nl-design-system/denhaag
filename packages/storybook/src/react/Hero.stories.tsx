@@ -3,10 +3,7 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 import '@gemeente-denhaag/button';
 import '@gemeente-denhaag/hero';
 import '@gemeente-denhaag/icons';
-
 import readme from '../../../../components/Hero/README.md?raw';
-
-import './_storybook.scss';
 
 const heroImage = (h: number, w: number, id = 'photo-1513384312027-9fa69a360337') =>
   `https://images.unsplash.com/${id}?fit=crop&w=${w}&h=${h}`;
@@ -18,9 +15,6 @@ const meta = {
       description: {
         component: readme,
       },
-    },
-    status: {
-      type: 'WORK IN PROGRESS',
     },
   },
 } as Meta;
