@@ -1,5 +1,15 @@
 # @gemeente-denhaag/icons
 
+## 4.3.0
+
+### Minor Changes
+
+- 12c575c: Refactor mobile view: Header, Breadcrumb, Menu
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+
 ## 4.2.2
 
 ### Patch Changes

@@ -1,15 +1,14 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
-import { Page, PageHeader, PageFooter } from '@gemeente-denhaag/page';
-import { HeaderLogic, HeaderLogicProps } from '@gemeente-denhaag/header';
-import { Footer } from '@gemeente-denhaag/footer';
+import { Page, PageHeader } from '@gemeente-denhaag/page';
+import { Header, HeaderProps } from '@gemeente-denhaag/header';
 import { ResponsiveContent } from '@gemeente-denhaag/responsive-content';
 import { Link } from '@gemeente-denhaag/link';
 import { Alert } from '@gemeente-denhaag/alert';
 import { Heading } from '@gemeente-denhaag/heading';
 
-import { headerProps, footerLegalData, footerSocialData, newsletterData, contactData, copyright } from './util';
+import { headerProps } from './util';
 
 import './template-story.scss';
 import { AuthenticationCardGroup } from '../components/CardGroupUtils';
@@ -22,19 +21,21 @@ const meta = {
   },
 } as Meta<typeof Page>;
 
-const loginPageHeaderProps: HeaderLogicProps = {
+const loginPageHeaderProps: HeaderProps = {
   ...headerProps,
   breadcrumbs: {
-    navigationPath: [{ label: 'Home', href: 'https://denhaag.nl/' }, { label: 'Inloggen bij MijnDenHaag' }],
+    navigationPath: [{ label: 'Home', href: 'https://denhaag.nl/' }, { label: 'Inloggen' }],
   },
   userprofileMenu: undefined,
+  mobileMenu: undefined,
+  logoutButton: undefined,
 };
 
 export const Login: StoryObj<typeof meta> = {
   render: (args) => (
     <Page {...args}>
       <PageHeader>
-        <HeaderLogic {...loginPageHeaderProps} />
+        <Header {...loginPageHeaderProps} />
       </PageHeader>
       <ResponsiveContent className="denhaag-page-content">
         <Heading level={2}>Inloggen</Heading>
@@ -51,15 +52,6 @@ export const Login: StoryObj<typeof meta> = {
         />
         <AuthenticationCardGroup cards={['DigiD', 'eHerkenning']} responsive />
       </ResponsiveContent>
-      <PageFooter>
-        <Footer
-          newsletterData={newsletterData}
-          contactData={contactData}
-          legalData={footerLegalData}
-          copyrightLabel={copyright}
-          socialData={footerSocialData}
-        />
-      </PageFooter>
     </Page>
   ),
 };

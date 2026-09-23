@@ -1,5 +1,15 @@
 # @gemeente-denhaag/cta-image-content
 
+## 3.1.4
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+- Updated dependencies [12c575c]
+- Updated dependencies [068c53d]
+  - @gemeente-denhaag/icons@4.3.0
+  - @gemeente-denhaag/button@3.1.3
+
 ## 3.1.3
 
 ### Patch Changes

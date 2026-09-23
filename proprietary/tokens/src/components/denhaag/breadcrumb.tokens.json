@@ -1,27 +1,26 @@
 {
   "denhaag": {
     "breadcrumb": {
-      "background-color": {
-        "value": "{denhaag.color.warmgrey.1}"
-      },
       "color": {
         "value": "{denhaag.color.grey.4}"
-      },
-      "font-weight": {
-        "value": "{basis.text.font-weight.default}"
       },
       "padding-block": {
         "value": "1rem"
       },
-      "padding-block-md": {
-        "value": "0.25rem"
-      },
       "spacing": {
         "value": "{basis.space.inline.md}"
+      },
+      "box-shadow": {
+        "value": "0 2px 0 0 rgba(0, 0, 0, 0.06)"
       },
       "current": {
         "color": {
           "value": "{denhaag.color.grey.4}"
+        }
+      },
+      "lg": {
+        "padding-block": {
+          "value": "0.25rem"
         }
       },
       "dots": {

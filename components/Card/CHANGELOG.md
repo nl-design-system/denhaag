@@ -1,5 +1,17 @@
 # @gemeente-denhaag/card
 
+## 5.1.4
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+- Updated dependencies [12c575c]
+- Updated dependencies [068c53d]
+  - @gemeente-denhaag/icons@4.3.0
+  - @gemeente-denhaag/link@4.2.2
+  - @gemeente-denhaag/paragraph@2.2.2
+  - @gemeente-denhaag/utils@3.1.2
+
 ## 5.1.3
 
 ### Patch Changes

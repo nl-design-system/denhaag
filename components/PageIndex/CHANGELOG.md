@@ -1,5 +1,15 @@
 # @gemeente-denhaag/page-index
 
+## 4.1.2
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+- Updated dependencies [068c53d]
+  - @gemeente-denhaag/heading@2.2.2
+  - @gemeente-denhaag/link@4.2.2
+  - @gemeente-denhaag/unorderedlist@3.3.2
+
 ## 4.1.1
 
 ### Patch Changes

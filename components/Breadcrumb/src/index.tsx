@@ -1,14 +1,16 @@
 import React, { AnchorHTMLAttributes, ComponentType } from 'react';
-import { ResponsiveContent } from '@gemeente-denhaag/responsive-content';
 import { ChevronRightIcon, HouseIcon } from '@gemeente-denhaag/icons';
+import { useScreenSize } from '@gemeente-denhaag/sheet';
 import { BreadcrumbNavigation, BreadcrumbNavigationProps } from './BreadcrumbNavigation';
 import { BreadcrumbListItem } from './BreadcrumbListItem';
 import { BreadcrumbList } from './BreadcrumbList';
 import { BreadcrumbLink } from './BreadcrumbLink';
 import { BreadcrumbText } from './BreadcrumbText';
-
 import './index.scss';
 import clsx from 'clsx';
+import BreadcrumbTitle from './BreadcrumbTitle';
+import BreadcrumbContent from './BreadcrumbContent';
+import BreadcrumbToggleButton from './BreadcrumbToggleButton';
 
 export interface BreadcrumbItemData {
   label: string;
@@ -16,28 +18,27 @@ export interface BreadcrumbItemData {
 }
 
 export interface BreadcrumbProps extends BreadcrumbNavigationProps {
-  /**
-   * The navigation path array of JSON object, which includes a label and url.
-   */
   navigationPath: Array<BreadcrumbItemData>;
-
-  /**
-   * Boolean which determined if the home icon or label is shown.
-   */
   showHomeIcon?: boolean;
-
   showCurrent?: boolean;
-
-  /**
-   * Custom Link component used for single-page apps.
-   */
+  mobileBreakpoint?: number;
+  toggleMobileMenu?: () => void;
   Link?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
 }
 
-export const Breadcrumb = ({ navigationPath, showCurrent = true, showHomeIcon, Link, ...props }: BreadcrumbProps) => {
-  const breadcrumbs = showCurrent ? navigationPath : navigationPath.slice(0, -1);
+export const Breadcrumb = ({
+  navigationPath,
+  showCurrent = true,
+  showHomeIcon,
+  mobileBreakpoint = 1024,
+  toggleMobileMenu,
+  Link,
+  ...props
+}: BreadcrumbProps) => {
+  const [windowWidth] = useScreenSize();
+  const breadcrumbs = showCurrent || windowWidth < mobileBreakpoint ? navigationPath : navigationPath.slice(0, -1);
   const nrBreadcrumbItems = breadcrumbs.length;
-  const mobileIndex = (showCurrent ? nrBreadcrumbItems - 1 : nrBreadcrumbItems) - 1;
+  const mobileIndex = nrBreadcrumbItems - 1;
   const listItems = breadcrumbs.map((item, index) => {
     const isFirstItem = index === 0;
     const isLastItem = index === nrBreadcrumbItems - 1;
@@ -84,17 +85,24 @@ export const Breadcrumb = ({ navigationPath, showCurrent = true, showHomeIcon, L
 
   return (
     <BreadcrumbNavigation aria-label="Breadcrumb" {...props}>
-      <ResponsiveContent>
-        <BreadcrumbList itemScope itemType="https://schema.org/BreadcrumbList">
-          {listItems}
-        </BreadcrumbList>
-      </ResponsiveContent>
+      <BreadcrumbContent>
+        <div>
+          <BreadcrumbTitle>Mijn Den Haag</BreadcrumbTitle>
+          <BreadcrumbList itemScope itemType="https://schema.org/BreadcrumbList">
+            {listItems}
+          </BreadcrumbList>
+        </div>
+        <BreadcrumbToggleButton onClick={toggleMobileMenu} />
+      </BreadcrumbContent>
     </BreadcrumbNavigation>
   );
 };
 
+export * from './BreadcrumbContent';
 export * from './BreadcrumbLink';
 export * from './BreadcrumbList';
 export * from './BreadcrumbListItem';
 export * from './BreadcrumbNavigation';
 export * from './BreadcrumbText';
+export * from './BreadcrumbTitle';
+export * from './BreadcrumbToggleButton';

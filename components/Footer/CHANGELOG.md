@@ -1,5 +1,22 @@
 # @gemeente-denhaag/footer
 
+## 4.3.6
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+- Updated dependencies [12c575c]
+- Updated dependencies [068c53d]
+  - @gemeente-denhaag/icons@4.3.0
+  - @gemeente-denhaag/button-group@2.1.2
+  - @gemeente-denhaag/button-link@3.2.2
+  - @gemeente-denhaag/heading@2.2.2
+  - @gemeente-denhaag/link@4.2.2
+  - @gemeente-denhaag/link-list@6.3.3
+  - @gemeente-denhaag/list@3.1.4
+  - @gemeente-denhaag/paragraph@2.2.2
+  - @gemeente-denhaag/responsive-content@2.1.2
+
 ## 4.3.5
 
 ### Patch Changes
