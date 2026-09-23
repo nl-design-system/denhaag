@@ -1,5 +1,22 @@
 # @gemeente-denhaag/menu
 
+## 4.3.0
+
+### Minor Changes
+
+- 12c575c: Refactor mobile view: Header, Breadcrumb, Menu
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+- Updated dependencies [12c575c]
+- Updated dependencies [068c53d]
+  - @gemeente-denhaag/icons@4.3.0
+  - @gemeente-denhaag/button@3.1.3
+  - @gemeente-denhaag/language-switcher@3.2.3
+  - @gemeente-denhaag/number-badge@2.2.2
+  - @gemeente-denhaag/sheet@4.1.3
+
 ## 4.2.3
 
 ### Patch Changes

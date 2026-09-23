@@ -1,3 +1,8 @@
+## 1.1.1
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
 ## 1.1.0
 
 ### Minor Changes

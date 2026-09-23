@@ -1,5 +1,11 @@
 # @gemeente-denhaag/responsive-content
 
+## 2.1.2
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+
 ## 2.1.1
 
 ### Patch Changes

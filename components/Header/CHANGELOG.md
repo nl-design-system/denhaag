@@ -1,5 +1,34 @@
 # @gemeente-denhaag/header
 
+## 5.0.0
+
+### Major Changes
+
+- cdbbf81: Refactor mobile view: Header, Breadcrumb, Menu
+
+### Minor Changes
+
+- 12c575c: Refactor mobile view: Header, Breadcrumb, Menu
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+- Updated dependencies [12c575c]
+- Updated dependencies [068c53d]
+  - @gemeente-denhaag/breadcrumb@5.2.0
+  - @gemeente-denhaag/icons@4.3.0
+  - @gemeente-denhaag/menu@4.3.0
+  - @gemeente-denhaag/button@3.1.3
+  - @gemeente-denhaag/header-logo@3.1.2
+  - @gemeente-denhaag/heading@2.2.2
+  - @gemeente-denhaag/iconbutton@3.2.3
+  - @gemeente-denhaag/language-switcher@3.2.3
+  - @gemeente-denhaag/link@4.2.2
+  - @gemeente-denhaag/link-list@6.3.3
+  - @gemeente-denhaag/paragraph@2.2.2
+  - @gemeente-denhaag/responsive-content@2.1.2
+  - @gemeente-denhaag/sheet@4.1.3
+
 ## 4.2.4
 
 ### Patch Changes

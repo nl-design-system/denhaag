@@ -1,5 +1,15 @@
 # @gemeente-denhaag/design-tokens
 
+## 1.5.0
+
+### Minor Changes
+
+- 12c575c: Refactor mobile view: Header, Breadcrumb, Menu
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+
 ## 1.4.3
 
 ### Patch Changes

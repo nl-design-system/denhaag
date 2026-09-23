@@ -1,5 +1,13 @@
 # @gemeente-denhaag/ctadownload
 
+## 2.2.2
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+- Updated dependencies [068c53d]
+  - @gemeente-denhaag/ctalink@2.1.2
+
 ## 2.2.1
 
 ### Patch Changes

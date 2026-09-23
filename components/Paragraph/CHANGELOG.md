@@ -1,5 +1,11 @@
 # @gemeente-denhaag/paragraph
 
+## 2.2.2
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+
 ## 2.2.1
 
 ### Patch Changes
