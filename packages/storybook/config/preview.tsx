@@ -1,7 +1,7 @@
 import type { Preview } from '@storybook/react-vite';
 import clsx from 'clsx';
 import React, { ReactElement } from 'react';
-import { Controls, Description, Primary, Stories } from '@storybook/addon-docs/blocks';
+import { Description, Stories } from '@storybook/addon-docs/blocks';
 import { DesignTokensBlock } from './DesignTokensBlock';
 import { withThemeByClassName } from '@storybook/addon-themes';
 import '@utrecht/component-library-css/dist/index.css';
@@ -65,8 +65,6 @@ const preview: Preview = {
         return (
           <>
             <Description />
-            <Primary />
-            <Controls />
             <Stories />
             <div className="denhaag-theme">
               <DesignTokensBlock />
