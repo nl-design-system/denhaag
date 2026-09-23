@@ -1,5 +1,8 @@
 import { addons, types } from 'storybook/manager-api';
 import { create } from 'storybook/theming';
+import React from 'react';
+import { DesignTokensPanel } from './DesignTokensPanel';
+import { DESIGN_TOKENS_PANEL_ID } from './designTokensConstants';
 import theme from './theme';
 
 addons.setConfig({
@@ -9,8 +12,15 @@ addons.setConfig({
 });
 
 // Keep the addon panels in a predictable order and give the built-in Docs code
-// panel a framework-specific title so it pairs clearly with the rendered HTML panel.
+// panel a framework-specific title so it pairs clearly with the HTML and Tokens panels.
 addons.register('denhaag/react-code-panel-title', () => {
+  addons.add(DESIGN_TOKENS_PANEL_ID, {
+    type: types.PANEL,
+    title: 'Tokens',
+    match: ({ viewMode }) => viewMode === 'story',
+    render: ({ active }) => React.createElement(DesignTokensPanel, { active }),
+  });
+
   const panels = addons.getElements(types.PANEL);
   const panelOrder = [
     'storybook/controls/panel',
@@ -18,6 +28,7 @@ addons.register('denhaag/react-code-panel-title', () => {
     'storybook/interactions/panel',
     'storybook/docs/panel',
     'storybook/html/panel',
+    DESIGN_TOKENS_PANEL_ID,
     'storybook/a11y/panel',
   ];
   const registeredPanels = { ...panels };

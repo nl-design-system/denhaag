@@ -2,16 +2,17 @@ import type { Preview } from '@storybook/react-vite';
 import clsx from 'clsx';
 import React, { ReactElement } from 'react';
 import { Description, Stories } from '@storybook/addon-docs/blocks';
-import { DesignTokensBlock } from './DesignTokensBlock';
 import { withThemeByClassName } from '@storybook/addon-themes';
 import '@utrecht/component-library-css/dist/index.css';
 import '@gemeente-denhaag/design-tokens/dist/theme/index.css';
 import { addonViewport } from './addon-viewports';
 import { StylesProvider } from '@gemeente-denhaag/stylesprovider';
 import '@gemeente-denhaag/fonts/dist/index.css';
+import { withDesignTokens } from './withDesignTokens';
 
 const preview: Preview = {
   decorators: [
+    withDesignTokens,
     // Enable `utrecht-document` component as backdrop
     // Enable `utrecht-theme` to configure the design tokens
     // Ensure old html templates will be rendered as react component
@@ -66,9 +67,6 @@ const preview: Preview = {
           <>
             <Description />
             <Stories />
-            <div className="denhaag-theme">
-              <DesignTokensBlock />
-            </div>
           </>
         );
       },
