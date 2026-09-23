@@ -1,5 +1,11 @@
 # @gemeente-denhaag/header-logo
 
+## 3.1.2
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+
 ## 3.1.1
 
 ### Patch Changes

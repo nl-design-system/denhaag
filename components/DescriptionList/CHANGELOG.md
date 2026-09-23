@@ -1,5 +1,11 @@
 # @gemeente-denhaag/descriptionlist
 
+## 4.1.2
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+
 ## 4.1.1
 
 ### Patch Changes

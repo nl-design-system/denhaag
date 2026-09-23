@@ -1,5 +1,13 @@
 # @gemeente-denhaag/card-group
 
+## 2.1.4
+
+### Patch Changes
+
+- 068c53d: Internal tsconfig changes
+- Updated dependencies [068c53d]
+  - @gemeente-denhaag/card-authentication@2.1.4
+
 ## 2.1.3
 
 ### Patch Changes
