@@ -1,0 +1,11 @@
+.denhaag-card-as-link__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: var(--denhaag-card-as-link-wrapper-flex-direction, column);
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-radius: var(--denhaag-card-as-link-border-radius);
+  background: transparent;
+  perspective: 1800px;
+}

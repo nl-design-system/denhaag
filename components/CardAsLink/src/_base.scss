@@ -1,0 +1,376 @@
+@mixin list-view {
+  --denhaag-card-as-link-min-block-size: none;
+  --denhaag-card-as-link-background-color: none;
+  --denhaag-card-as-link-padding-block-start: 0px;
+  --denhaag-card-as-link-border-style: var(--denhaag-card-as-link-list-border-style);
+  --denhaag-card-as-link-border-width: var(--denhaag-card-as-link-list-border-width);
+  --denhaag-card-as-link-border-color: var(--denhaag-card-as-link-list-border-color);
+  --denhaag-card-as-link-before-display: none;
+
+  // The outer Wrapper switches to a column layout here.
+  // In small viewports, the card stacks vertically instead of showing
+  // Header/Body next to Footer in a row.
+  // The Wrapper only handles the layout structure, not any spacing.
+  // It also handles the layout when the Card changes into a list-view on smaller screens.
+  --denhaag-card-as-link-wrapper-flex-direction: column;
+
+  // The Wrapper itself has no padding at all. Instead, Header supplies
+  // the top and left space around the whole block, and Footer supplies
+  // the bottom and right space. Body has no padding of its own, it just
+  // lines up with Header on the left.
+  --denhaag-card-as-link-header-padding-block-start: var(--denhaag-card-as-link-list-wrapper-padding-block-start);
+  --denhaag-card-as-link-header-padding-block-end: 0px;
+  --denhaag-card-as-link-header-padding-inline-start: var(--denhaag-card-as-link-list-wrapper-padding-inline-start);
+  --denhaag-card-as-link-header-padding-inline-end: 0px;
+  --denhaag-card-as-link-body-padding-block-start: 0px;
+  --denhaag-card-as-link-body-padding-block-end: 0px;
+  --denhaag-card-as-link-body-padding-inline-start: var(--denhaag-card-as-link-list-wrapper-padding-inline-start);
+  --denhaag-card-as-link-body-padding-inline-end: 0px;
+  --denhaag-card-as-link-footer-padding-block-start: 0px;
+  --denhaag-card-as-link-footer-padding-block-end: var(--denhaag-card-as-link-list-wrapper-padding-block-end);
+  --denhaag-card-as-link-footer-padding-inline-start: var(--denhaag-card-as-link-list-wrapper-padding-inline-start);
+  --denhaag-card-as-link-footer-padding-inline-end: var(--denhaag-card-as-link-list-wrapper-padding-inline-end);
+
+  // The decoration strip should not take up space in the stacked list layout.
+  --denhaag-card-as-link-decoration-display: none;
+  --denhaag-card-as-link-decoration-background-color: none;
+  --denhaag-card-as-link-decoration-paper-background-color: none;
+  --denhaag-card-as-link-color: var(--denhaag-card-as-link-list-color);
+  --denhaag-card-as-link-heading-color: var(--denhaag-card-as-link-list-heading-color);
+  --denhaag-card-as-link-heading-font-size: var(--denhaag-card-as-link-list-heading-font-size);
+  --denhaag-card-as-link-pre-heading-font-size: var(--denhaag-card-as-link-list-pre-heading-font-size);
+  --denhaag-card-as-link-footer-gap: var(--denhaag-card-as-link-list-footer-gap);
+}
+
+@mixin case-default {
+  --denhaag-card-as-link-background-color: var(--denhaag-card-as-link-case-background-color);
+  --denhaag-card-as-link-border-width: var(--denhaag-card-as-link-case-border-width);
+  --denhaag-card-as-link-border-color: var(--denhaag-card-as-link-case-border-color);
+  --denhaag-card-as-link-color: var(--denhaag-card-as-link-case-color);
+  --denhaag-card-as-link-min-block-size: var(--denhaag-card-as-link-case-min-block-size);
+  --denhaag-card-as-link-decoration-background-color: var(--denhaag-card-as-link-case-decoration-background-color);
+  --denhaag-card-as-link-decoration-paper-background-color: var(
+    --denhaag-card-as-link-case-decoration-paper-background-color
+  );
+  --denhaag-card-as-link-heading-color: var(--denhaag-card-as-link-case-heading-color);
+  --denhaag-card-as-link-heading-font-family: var(--denhaag-card-as-link-case-heading-font-family);
+  --denhaag-card-as-link-heading-font-size: var(--denhaag-card-as-link-case-heading-font-size);
+  --denhaag-card-as-link-heading-font-weight: var(--denhaag-card-as-link-case-heading-font-weight);
+  --denhaag-card-as-link-heading-line-height: var(--denhaag-card-as-link-case-heading-line-height);
+  --denhaag-card-as-link-description-font-family: var(--denhaag-card-as-link-case-description-font-family);
+  --denhaag-card-as-link-description-font-size: var(--denhaag-card-as-link-case-description-font-size);
+  --denhaag-card-as-link-description-font-weight: var(--denhaag-card-as-link-case-description-font-weight);
+  --denhaag-card-as-link-description-line-height: var(--denhaag-card-as-link-case-description-line-height);
+  --denhaag-card-as-link-description-margin-block-start: var(
+    --denhaag-card-as-link-case-description-margin-block-start
+  );
+  --denhaag-card-as-link-metadata-color: var(--denhaag-card-as-link-case-metadata-color);
+  --denhaag-card-as-link-link-icon-color: var(--denhaag-card-as-link-case-link-icon-color);
+}
+
+@mixin case-hover {
+  --denhaag-card-as-link-background-color: var(--denhaag-card-as-link-case-hover-background-color);
+  --denhaag-card-as-link-border-color: var(--denhaag-card-as-link-case-hover-border-color);
+}
+
+@mixin case-active {
+  --denhaag-card-as-link-background-color: var(--denhaag-card-as-link-case-active-background-color);
+  --denhaag-card-as-link-border-color: var(--denhaag-card-as-link-case-active-border-color);
+  --denhaag-card-as-link-decoration-background-color: var(--denhaag-card-as-link-case-active-background-color);
+}
+
+@mixin case-focus {
+  --denhaag-card-as-link-background-color: var(--denhaag-card-as-link-focus-background-color);
+  --denhaag-card-as-link-border-color: var(--denhaag-card-as-link-focus-border-color);
+  --denhaag-card-as-link-color: var(--denhaag-card-as-link-focus-color);
+  --denhaag-card-as-link-decoration-background-color: var(--denhaag-card-as-link-focus-background-color);
+}
+
+@mixin case-archived-default {
+  --denhaag-card-as-link-background-color: var(--denhaag-card-as-link-case-archived-background-color);
+  --denhaag-card-as-link-border-color: var(--denhaag-card-as-link-case-archived-border-color);
+  --denhaag-card-as-link-color: var(--denhaag-card-as-link-case-archived-color);
+  --denhaag-card-as-link-decoration-background-color: var(
+    --denhaag-card-as-link-case-archived-decoration-background-color
+  );
+  --denhaag-card-as-link-heading-color: var(--denhaag-card-as-link-case-archived-heading-color);
+  --denhaag-card-as-link-link-icon-color: var(--denhaag-card-as-link-case-archived-link-icon-color);
+}
+
+@mixin case-archived-hover {
+  --denhaag-card-as-link-background-color: var(--denhaag-card-as-link-case-archived-hover-background-color);
+  --denhaag-card-as-link-border-color: var(--denhaag-card-as-link-case-archived-hover-border-color);
+}
+
+@mixin case-archived-active {
+  --denhaag-card-as-link-background-color: var(--denhaag-card-as-link-case-archived-active-background-color);
+  --denhaag-card-as-link-border-color: var(--denhaag-card-as-link-case-archived-active-border-color);
+  --denhaag-card-as-link-decoration-background-color: var(--denhaag-card-as-link-case-archived-active-background-color);
+}
+
+@mixin plan-default {
+  --denhaag-card-as-link-background-color: var(--denhaag-card-as-link-plan-background-color);
+  --denhaag-card-as-link-border-width: var(--denhaag-card-as-link-plan-border-width);
+  --denhaag-card-as-link-border-color: var(--denhaag-card-as-link-plan-border-color);
+  --denhaag-card-as-link-color: var(--denhaag-card-as-link-plan-color);
+  --denhaag-card-as-link-min-block-size: var(--denhaag-card-as-link-plan-min-block-size);
+  --denhaag-card-as-link-decoration-clip-color: var(--denhaag-card-as-link-plan-decoration-clip-color);
+  --denhaag-card-as-link-heading-color: var(--denhaag-card-as-link-plan-heading-color);
+  --denhaag-card-as-link-link-icon-color: var(--denhaag-card-as-link-plan-link-icon-color);
+}
+
+@mixin plan-hover {
+  --denhaag-card-as-link-background-color: var(--denhaag-card-as-link-plan-hover-background-color);
+  --denhaag-card-as-link-border-color: var(--denhaag-card-as-link-plan-hover-border-color);
+}
+
+@mixin plan-active {
+  --denhaag-card-as-link-background-color: var(--denhaag-card-as-link-plan-active-background-color);
+  --denhaag-card-as-link-border-color: var(--denhaag-card-as-link-plan-active-border-color);
+}
+
+@mixin plan-archived-default {
+  --denhaag-card-as-link-background-color: var(--denhaag-card-as-link-plan-archived-background-color);
+  --denhaag-card-as-link-border-color: var(--denhaag-card-as-link-plan-archived-border-color);
+  --denhaag-card-as-link-color: var(--denhaag-card-as-link-plan-archived-color);
+  --denhaag-card-as-link-decoration-clip-color: var(--denhaag-card-as-link-plan-archived-decoration-clip-color);
+  --denhaag-card-as-link-heading-color: var(--denhaag-card-as-link-plan-archived-heading-color);
+  --denhaag-card-as-link-link-icon-color: var(--denhaag-card-as-link-plan-archived-link-icon-color);
+}
+
+@mixin plan-archived-hover {
+  --denhaag-card-as-link-background-color: var(--denhaag-card-as-link-plan-archived-hover-background-color);
+  --denhaag-card-as-link-border-color: var(--denhaag-card-as-link-plan-archived-hover-border-color);
+}
+
+@mixin plan-archived-active {
+  --denhaag-card-as-link-background-color: var(--denhaag-card-as-link-plan-archived-active-background-color);
+  --denhaag-card-as-link-border-color: var(--denhaag-card-as-link-plan-archived-active-border-color);
+}
+
+@mixin product-default {
+  --denhaag-card-as-link-border-radius: var(--denhaag-card-as-link-product-border-radius);
+}
+
+.denhaag-card-as-link {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-inline-size: var(--denhaag-card-as-link-max-inline-size);
+  min-block-size: var(--denhaag-card-as-link-min-block-size);
+  background: var(--denhaag-card-as-link-background-color);
+  color: var(--denhaag-card-as-link-color);
+  border-radius: var(--denhaag-card-as-link-border-radius);
+  border: var(--denhaag-card-as-link-border-width, 0) solid var(--denhaag-card-as-link-border-color, transparent);
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  @media (width <= 480px) {
+    @include list-view;
+  }
+
+  &--list {
+    @include list-view;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    --denhaag-card-as-link-background-color: var(--denhaag-card-as-link-hover-background-color);
+    --denhaag-card-as-link-border-color: var(--denhaag-card-as-link-hover-border-color);
+  }
+
+  &:has(:focus-visible),
+  &:focus-within {
+    outline: var(--denhaag-focus-border);
+
+    --denhaag-card-as-link-background-color: var(--denhaag-card-as-link-focus-background-color);
+    --denhaag-card-as-link-border-color: var(--denhaag-card-as-link-focus-border-color);
+    --denhaag-card-as-link-color: var(--denhaag-card-as-link-focus-color);
+    --denhaag-card-as-link-decoration-background-color: var(--denhaag-card-as-link-focus-background-color);
+
+    @media (width <= 480px) {
+      @include list-view;
+    }
+  }
+
+  // Active must come after focus so it remains visible while clicking.
+  // Both states can apply at once, and the last matching rule wins.
+  &:active {
+    --denhaag-card-as-link-background-color: var(--denhaag-card-as-link-active-background-color);
+    --denhaag-card-as-link-border-color: var(--denhaag-card-as-link-active-border-color);
+  }
+
+  &--case {
+    @include case-default;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: var(--denhaag-card-as-link-before-display, block);
+
+      // width: 200px; = too narrow for wider screens
+      width: 65%;
+      height: 24px;
+      content: "";
+      border-radius: 0 var(--denhaag-card-as-link-border-radius) 0 0;
+      background: var(--denhaag-card-as-link-background-color);
+      z-index: 1;
+    }
+
+    @media (width <= 480px) {
+      @include list-view;
+    }
+
+    &:hover {
+      @include case-hover;
+
+      @media (width <= 480px) {
+        @include list-view;
+      }
+    }
+
+    &:has(:focus-visible),
+    &:focus-within {
+      outline: var(--denhaag-focus-border);
+
+      @include case-focus;
+
+      @media (width <= 480px) {
+        @include list-view;
+      }
+    }
+
+    // Same as above. Active must come after focus so it remains visible while clicking.
+    // Both states can apply at once, and the last matching rule wins.
+    &:active {
+      @include case-active;
+
+      @media (width <= 480px) {
+        @include list-view;
+      }
+    }
+
+    &.denhaag-card-as-link--archived {
+      @include case-archived-default;
+
+      @media (width <= 480px) {
+        @include list-view;
+      }
+
+      &:hover {
+        @include case-archived-hover;
+
+        @media (width <= 480px) {
+          @include list-view;
+        }
+      }
+
+      &:has(:focus-visible),
+      &:focus-within {
+        outline: var(--denhaag-focus-border);
+
+        @include case-focus;
+
+        @media (width <= 480px) {
+          @include list-view;
+        }
+      }
+
+      // Same as above again. Active must come after focus so it remains visible while clicking.
+      // Both states can apply at once, and the last matching rule wins.
+      &:active {
+        @include case-archived-active;
+
+        @media (width <= 480px) {
+          @include list-view;
+        }
+      }
+    }
+  }
+
+  &--plan {
+    overflow: visible;
+
+    @include plan-default;
+
+    @media (width <= 480px) {
+      @include list-view;
+    }
+
+    &:hover {
+      @include plan-hover;
+
+      @media (width <= 480px) {
+        @include list-view;
+      }
+    }
+
+    &:has(:focus-visible),
+    &:focus-within {
+      outline: var(--denhaag-focus-border);
+
+      @include case-focus;
+
+      @media (width <= 480px) {
+        @include list-view;
+      }
+    }
+
+    // Same as above. Active must come after focus so it remains visible while clicking.
+    // Both states can apply at once, and the last matching rule wins.
+    &:active {
+      @include plan-active;
+
+      @media (width <= 480px) {
+        @include list-view;
+      }
+    }
+
+    &.denhaag-card-as-link--archived {
+      @include plan-archived-default;
+
+      @media (width <= 480px) {
+        @include list-view;
+      }
+
+      &:hover {
+        @include plan-archived-hover;
+
+        @media (width <= 480px) {
+          @include list-view;
+        }
+      }
+
+      &:has(:focus-visible),
+      &:focus-within {
+        outline: var(--denhaag-focus-border);
+
+        @include case-focus;
+
+        @media (width <= 480px) {
+          @include list-view;
+        }
+      }
+
+      // Same as above again. Active must come after focus so it remains visible while clicking.
+      // Both states can apply at once, and the last matching rule wins.
+      &:active {
+        @include plan-archived-active;
+
+        @media (width <= 480px) {
+          @include list-view;
+        }
+      }
+    }
+  }
+
+  &--product {
+    @include product-default;
+
+    border-block-start: var(--denhaag-card-as-link-product-border-block-start-width) solid
+      var(--denhaag-card-as-link-product-border-block-start-color);
+  }
+}
