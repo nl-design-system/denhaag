@@ -1,15 +1,13 @@
 import { useAddonState, useChannel, useStorybookState } from 'storybook/manager-api';
 import { AddonPanel } from 'storybook/internal/components';
-import { createEmptyDesignTokenTree } from '@nl-design-system-unstable/theme-toolkit/dist/design-tokens.js';
 import React from 'react';
 import { CodePanel } from './CodePanel';
+import { createEmptyDesignTokenTree, type DesignTokenTree } from './designTokensUtils';
 import { DESIGN_TOKENS_ADDON_ID, DESIGN_TOKENS_UPDATE_EVENT } from './designTokensConstants';
-
-type TokenDefinition = Parameters<typeof createEmptyDesignTokenTree>[0];
 
 type DesignTokensState = {
   storyId?: string;
-  tokensDefinition?: TokenDefinition;
+  tokensDefinition?: DesignTokenTree;
 };
 
 type DesignTokensPanelProps = {
