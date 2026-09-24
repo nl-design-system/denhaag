@@ -11,10 +11,10 @@ const config: StorybookConfig = {
   },
   addons: [
     '@storybook/addon-docs',
+    '@whitespace/storybook-addon-html',
     '@storybook/addon-a11y',
     '@storybook/addon-themes',
     '@storybook/preset-scss',
-    '@whitespace/storybook-addon-html',
     '@storybook/addon-links',
     'storybook-addon-pseudo-states',
   ],

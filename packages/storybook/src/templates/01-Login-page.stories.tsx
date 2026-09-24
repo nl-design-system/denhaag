@@ -11,7 +11,7 @@ import { Heading } from '@gemeente-denhaag/heading';
 import { headerProps } from './util';
 
 import './template-story.scss';
-import { AuthenticationCardGroup } from '../css/CardGroupUtils';
+import { AuthenticationCardGroup } from '../components/CardGroupUtils';
 
 const meta = {
   title: 'Templates/Login',
