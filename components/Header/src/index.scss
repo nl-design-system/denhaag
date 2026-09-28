@@ -21,6 +21,11 @@
     @media (width >= 1024px) {
       height: var(--denhaag-header-logo-lg-height);
     }
+
+    & > * {
+      width: auto;
+      height: 100%;
+    }
   }
 
   &__content {

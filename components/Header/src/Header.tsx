@@ -184,7 +184,7 @@ export const Header = ({
     <HeaderBase>
       <HeaderContentContainer>
         <HeaderContent className="denhaag-responsive-content">
-          <Link className={clsx('denhaag-logo', logoClassName)} {...logoProps} />
+          <Link className={clsx('denhaag-header__logo', logoClassName)} {...logoProps} />
           <HeaderActions>
             {languageSwitcherMenu && (
               <HeaderAction className="denhaag-header__action">
