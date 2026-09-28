@@ -1,5 +1,11 @@
 # @gemeente-denhaag/menu
 
+## 4.3.1
+
+### Patch Changes
+
+- c8369c2: Small fixes
+
 ## 4.3.0
 
 ### Minor Changes

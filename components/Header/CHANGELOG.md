@@ -1,5 +1,14 @@
 # @gemeente-denhaag/header
 
+## 5.0.1
+
+### Patch Changes
+
+- c8369c2: Small fixes
+- Updated dependencies [c8369c2]
+  - @gemeente-denhaag/header-logo@3.1.3
+  - @gemeente-denhaag/menu@4.3.1
+
 ## 5.0.0
 
 ### Major Changes
