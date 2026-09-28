@@ -1,5 +1,18 @@
 # @gemeente-denhaag/storybook
 
+## 6.0.0
+
+### Major Changes
+
+- c1f8b55: Merge react and css stories to new components folder
+
+### Patch Changes
+
+- c8369c2: Small fixes
+- Updated dependencies [c8369c2]
+  - @gemeente-denhaag/header@5.0.1
+  - @gemeente-denhaag/menu@4.3.1
+
 ## 5.7.0
 
 ### Minor Changes

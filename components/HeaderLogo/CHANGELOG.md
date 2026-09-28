@@ -1,5 +1,11 @@
 # @gemeente-denhaag/header-logo
 
+## 3.1.3
+
+### Patch Changes
+
+- c8369c2: Small fixes
+
 ## 3.1.2
 
 ### Patch Changes
