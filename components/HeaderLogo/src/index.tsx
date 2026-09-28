@@ -2,14 +2,7 @@ import React from 'react';
 
 export const HeaderLogo = () => {
   return (
-    <svg
-      className="denhaag-header__logo"
-      xmlns="http://www.w3.org/2000/svg"
-      width="153"
-      height="48"
-      viewBox="0 0 153 48"
-      fill="none"
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" width="153" height="48" viewBox="0 0 153 48" fill="none">
       <path
         fillRule="evenodd"
         clipRule="evenodd"
