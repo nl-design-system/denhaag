@@ -4,6 +4,22 @@ import clsx from 'clsx';
 
 import './index.scss';
 
+const getTextContent = (children: React.ReactNode): string => {
+  if (typeof children === 'string' || typeof children === 'number') {
+    return String(children);
+  }
+
+  if (Array.isArray(children)) {
+    return children.map(getTextContent).filter(Boolean).join('') || '';
+  }
+
+  if (React.isValidElement<{ children?: React.ReactNode }>(children)) {
+    return getTextContent(children.props.children);
+  }
+
+  return '';
+};
+
 /**
  * The properties of the normal variant of the Menu Button
  */
@@ -108,7 +124,7 @@ export const MenuButton = ({ active = false, ...props }: MenuButtonProps) => {
       type={props.type}
       referrerPolicy={props.referrerPolicy}
       className={className}
-      title={props.children?.toString()}
+      title={getTextContent(props.children)}
     >
       {props.children}
     </a>
@@ -129,7 +145,7 @@ export const MenuButtonExpandable: React.FC<MenuButtonExpandableProps> = ({
   );
 
   return (
-    <button className={rootClassNames} title={props.children?.toString()} {...props}>
+    <button className={rootClassNames} title={getTextContent(props.children)} {...props}>
       <span className="denhaag-menu-button__label">{props.children}</span>
       <span className="denhaag-menu-button__chevron">
         <ChevronDownIcon aria-label="ChevronDownIcon" />

@@ -20,7 +20,11 @@ export const headerProps: HeaderProps = {
     navigationPath: [{ label: 'Home', href: 'https://denhaag.nl/' }],
   },
   userprofileMenu: {
-    label: 'Welkom Anne Klap',
+    label: (
+      <>
+        Welkom <span>Anne Klap</span>
+      </>
+    ),
     authorisedLoginLabel: 'Ingelogd namens Jason Verploeg',
     navigationGroups: [
       {
