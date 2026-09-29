@@ -110,6 +110,7 @@
     "@etchteam/storybook-addon-status": "8.1.0",
     "@open-formulieren/sdk": "3.5.4",
     "@storybook/addon-a11y": "10.4.6",
+    "@storybook/addon-designs": "11.1.4",
     "@storybook/addon-docs": "10.4.6",
     "@storybook/addon-links": "10.4.6",
     "@storybook/addon-themes": "10.4.6",
