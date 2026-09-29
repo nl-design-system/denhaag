@@ -72,16 +72,6 @@ export const Default: Story = {
     title: 'Shrimp and Chorizo Paella',
     subTitle: 'This impressive paella is a perfect party dish and a fun meal to cook.',
     metadata: '',
-    variant: 'default',
-    headingLevel: 2,
-  },
-  decorators,
-};
-
-export const DefaultWithoutContentWithFooterLink: Story = {
-  args: {
-    title: 'Delicious dishes',
-    metadata: '',
     href: '#',
     variant: 'default',
     labelVisualLevel: 3,
@@ -91,7 +81,7 @@ export const DefaultWithoutContentWithFooterLink: Story = {
 
 export const DefaultWithImage: Story = {
   args: {
-    ...DefaultWithoutContentWithFooterLink.args,
+    ...Default.args,
     preHeaderImage: (
       <img
         className="denhaag-image__image"
