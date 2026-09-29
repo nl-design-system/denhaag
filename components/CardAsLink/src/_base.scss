@@ -83,7 +83,7 @@
   --denhaag-card-as-link-background-color: var(--denhaag-card-as-link-focus-background-color);
   --denhaag-card-as-link-border-color: var(--denhaag-card-as-link-focus-border-color);
   --denhaag-card-as-link-color: var(--denhaag-card-as-link-focus-color);
-  --denhaag-card-as-link-decoration-background-color: var(--denhaag-card-as-link-focus-background-color);
+  --denhaag-card-as-link-decoration-background-color: var(--denhaag-card-as-link-focus-decoration-background-color);
 }
 
 @mixin case-archived-default {
@@ -188,7 +188,7 @@
     --denhaag-card-as-link-background-color: var(--denhaag-card-as-link-focus-background-color);
     --denhaag-card-as-link-border-color: var(--denhaag-card-as-link-focus-border-color);
     --denhaag-card-as-link-color: var(--denhaag-card-as-link-focus-color);
-    --denhaag-card-as-link-decoration-background-color: var(--denhaag-card-as-link-focus-background-color);
+    --denhaag-card-as-link-decoration-background-color: var(--denhaag-card-as-link-focus-decoration-background-color);
 
     @media (width <= 480px) {
       @include list-view;
