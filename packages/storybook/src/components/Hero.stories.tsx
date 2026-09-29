@@ -23,6 +23,12 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Routing: Story = {
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/design/eSl0Sclc8t03X76qM1cWyz/%F0%9F%93%95-HDS-Library?node-id=2941-38703',
+    },
+  },
   render: () => (
     <section className="denhaag-hero denhaag-hero--routing">
       <div className="denhaag-hero__container">
@@ -40,6 +46,12 @@ export const Routing: Story = {
 };
 
 export const RoutingMultiline: Story = {
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/design/eSl0Sclc8t03X76qM1cWyz/%F0%9F%93%95-HDS-Library?node-id=2941-38703',
+    },
+  },
   render: () => (
     <section className="denhaag-hero denhaag-hero--routing">
       <div className="denhaag-hero__container">
@@ -57,6 +69,12 @@ export const RoutingMultiline: Story = {
 };
 
 export const Home: Story = {
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/design/eSl0Sclc8t03X76qM1cWyz/%F0%9F%93%95-HDS-Library?node-id=2913-31571',
+    },
+  },
   render: () => (
     <section className="denhaag-hero denhaag-hero--home">
       <div className="denhaag-hero__container">
@@ -72,6 +90,12 @@ export const Home: Story = {
 };
 
 export const ThemePage: Story = {
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/design/eSl0Sclc8t03X76qM1cWyz/%F0%9F%93%95-HDS-Library?node-id=2943-39098',
+    },
+  },
   render: () => (
     <section className="denhaag-hero denhaag-hero--theme-page">
       <div className="denhaag-hero__container">

@@ -7,6 +7,10 @@ import readme from '../../../../components/Image/README.md?raw';
 const meta = {
   tags: ['autodocs'],
   parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/design/eSl0Sclc8t03X76qM1cWyz/%F0%9F%93%95-HDS-Library?node-id=3007-8988',
+    },
     docs: {
       description: {
         component: readme,
