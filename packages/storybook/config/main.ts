@@ -17,6 +17,7 @@ const config: StorybookConfig = {
     '@storybook/preset-scss',
     '@storybook/addon-links',
     'storybook-addon-pseudo-states',
+    '@storybook/addon-designs',
   ],
   staticDirs: ['../src/assets'],
   docs: {},

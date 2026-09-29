@@ -31,6 +31,7 @@ addons.register('denhaag/react-code-panel-title', (api) => {
     'storybook/docs/panel',
     'storybook/html/panel',
     DESIGN_TOKENS_PANEL_ID,
+    'STORYBOOK_ADDON_DESIGNS/panel',
     'storybook/a11y/panel',
   ];
   const registeredPanels = { ...panels };
