@@ -12,6 +12,10 @@ const meta = {
     style: { marginTop: '1rem', marginLeft: '1rem' },
   },
   parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/design/eSl0Sclc8t03X76qM1cWyz/%F0%9F%93%95-HDS-Library?node-id=7235-52944',
+    },
     docs: {
       description: {
         component: readme,
