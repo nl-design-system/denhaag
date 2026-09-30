@@ -1,7 +1,7 @@
 {
   "of": {
     "page-footer": {
-      "bg": { "value": "{denhaag.color.grey.5}" }
+      "bg": { "value": "{denhaag.color.grey.700}" }
     }
   }
 }

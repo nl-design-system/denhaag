@@ -5,7 +5,7 @@
         "value": "{common.border-radius.xl}"
       },
       "border-color": {
-        "value": "{denhaag.color.grey.2}"
+        "value": "{denhaag.color.grey.300}"
       },
       "border-width": {
         "value": "{basis.border-width.md}"
@@ -21,7 +21,7 @@
           "value": "{basis.space.column.lg}"
         },
         "color": {
-          "value": "{denhaag.color.grey.4}"
+          "value": "{denhaag.color.grey.600}"
         },
         "padding-inline-start": {
           "value": "{basis.space.inline.xl}"
@@ -42,14 +42,14 @@
           "value": "{basis.border-width.md}"
         },
         "border-bottom-color": {
-          "value": "{denhaag.color.grey.2}"
+          "value": "{denhaag.color.grey.300}"
         },
         "hover": {
           "transition": {
             "value": "ease-in-out 200ms"
           },
           "color": {
-            "value": "{denhaag.color.green.3}"
+            "value": "{denhaag.color.green.500}"
           }
         },
         "active": {
@@ -57,10 +57,10 @@
             "value": "ease-in-out 200ms"
           },
           "color": {
-            "value": "{denhaag.color.green.4}"
+            "value": "{denhaag.color.green.600}"
           },
           "background-color": {
-            "value": "{denhaag.color.grey.1}"
+            "value": "{denhaag.color.grey.100}"
           }
         }
       },

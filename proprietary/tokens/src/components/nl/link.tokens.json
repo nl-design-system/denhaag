@@ -2,7 +2,7 @@
   "nl": {
     "link": {
       "color": {
-        "value": "{denhaag.color.blue.3}"
+        "value": "{denhaag.color.blue.500}"
       },
       "text-decoration-color": {
         "value": ""
@@ -32,7 +32,7 @@
       },
       "disabled": {
         "color": {
-          "value": "{denhaag.color.grey.3}"
+          "value": "{denhaag.color.grey.500}"
         },
         "cursor": {
           "value": ""
@@ -43,7 +43,7 @@
           "value": ""
         },
         "color": {
-          "value": "{denhaag.color.blue.4}"
+          "value": "{denhaag.color.blue.600}"
         },
         "text-decoration-line": {
           "value": "underline"
@@ -54,7 +54,7 @@
       },
       "hover": {
         "color": {
-          "value": "{denhaag.color.blue.4}"
+          "value": "{denhaag.color.blue.600}"
         },
         "text-decoration-line": {
           "value": "underline"

@@ -1,16 +1,16 @@
 {
   "of": {
     "color": {
-      "primary": { "value": "{denhaag.color.green.3}" },
-      "secondary": { "value": "{denhaag.color.grey.2}" },
-      "info": { "value": "{denhaag.color.blue.4}" },
-      "success": { "value": "{denhaag.color.green.4}" },
-      "warning": { "value": "{denhaag.color.orange.4}" },
-      "danger": { "value": "{denhaag.color.red.4}" },
-      "bg": { "value": "{denhaag.color.white}" },
-      "fg": { "value": "{denhaag.color.black}" },
-      "fg-muted": { "value": "{denhaag.color.grey.4}" },
-      "border": { "value": "{denhaag.color.grey.3}" }
+      "primary": { "value": "{denhaag.color.green.500}" },
+      "secondary": { "value": "{denhaag.color.grey.300}" },
+      "info": { "value": "{denhaag.color.blue.600}" },
+      "success": { "value": "{denhaag.color.green.600}" },
+      "warning": { "value": "{denhaag.color.orange.600}" },
+      "danger": { "value": "{denhaag.color.red.600}" },
+      "bg": { "value": "{denhaag.color.neutrals.white}" },
+      "fg": { "value": "{denhaag.color.neutrals.black}" },
+      "fg-muted": { "value": "{denhaag.color.grey.600}" },
+      "border": { "value": "{denhaag.color.grey.500}" }
     }
   }
 }

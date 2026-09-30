@@ -1,7 +1,7 @@
 {
   "denhaag": {
     "posttypelabel": {
-      "color": { "value": "{denhaag.color.blue.3}" },
+      "color": { "value": "{denhaag.color.blue.500}" },
       "font": {
         "family": { "value": "{basis.text.font-family.default}" },
         "weight": { "value": "700" },

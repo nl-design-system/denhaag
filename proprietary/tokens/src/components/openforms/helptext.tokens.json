@@ -1,7 +1,7 @@
 {
   "of": {
     "helptext": {
-      "bg": { "value": "{denhaag.color.blue.1}" }
+      "bg": { "value": "{denhaag.color.blue.100}" }
     }
   }
 }

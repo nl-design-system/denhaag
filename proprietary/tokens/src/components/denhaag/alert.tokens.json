@@ -47,161 +47,161 @@
       },
       "error": {
         "background-color": {
-          "value": "{denhaag.color.red.1}"
+          "value": "{denhaag.color.red.100}"
         },
         "title": {
           "color": {
-            "value": "{denhaag.color.red.5}"
+            "value": "{denhaag.color.red.700}"
           }
         },
         "paragraph": {
           "color": {
-            "value": "{denhaag.color.red.5}"
+            "value": "{denhaag.color.red.700}"
           }
         },
         "icon": {
           "color": {
-            "value": "{denhaag.color.red.3}"
+            "value": "{denhaag.color.red.500}"
           }
         },
         "action": {
           "button": {
             "color": {
-              "value": "{denhaag.color.white}"
+              "value": "{denhaag.color.neutrals.white}"
             },
             "background-color": {
-              "value": "{denhaag.color.red.3}"
+              "value": "{denhaag.color.red.500}"
             },
             "hover-background": {
               "color": {
-                "value": "{denhaag.color.red.4}"
+                "value": "{denhaag.color.red.600}"
               }
             }
           }
         },
         "close-icon": {
           "color": {
-            "value": "{denhaag.color.red.5}"
+            "value": "{denhaag.color.red.700}"
           }
         }
       },
       "info": {
         "background-color": {
-          "value": "{denhaag.color.blue.1}"
+          "value": "{denhaag.color.blue.100}"
         },
         "title": {
           "color": {
-            "value": "{denhaag.color.blue.5}"
+            "value": "{denhaag.color.blue.700}"
           }
         },
         "paragraph": {
           "color": {
-            "value": "{denhaag.color.blue.5}"
+            "value": "{denhaag.color.blue.700}"
           }
         },
         "icon": {
           "color": {
-            "value": "{denhaag.color.blue.3}"
+            "value": "{denhaag.color.blue.500}"
           }
         },
         "action": {
           "button": {
             "color": {
-              "value": "{denhaag.color.white}"
+              "value": "{denhaag.color.neutrals.white}"
             },
             "background-color": {
-              "value": "{denhaag.color.blue.3}"
+              "value": "{denhaag.color.blue.500}"
             },
             "hover": {
               "background-color": {
-                "value": "{denhaag.color.blue.4}"
+                "value": "{denhaag.color.blue.600}"
               }
             }
           }
         },
         "close-icon": {
           "color": {
-            "value": "{denhaag.color.blue.5}"
+            "value": "{denhaag.color.blue.700}"
           }
         }
       },
       "success": {
         "background-color": {
-          "value": "{denhaag.color.green.1}"
+          "value": "{denhaag.color.green.100}"
         },
         "title": {
           "color": {
-            "value": "{denhaag.color.green.5}"
+            "value": "{denhaag.color.green.700}"
           }
         },
         "paragraph": {
           "color": {
-            "value": "{denhaag.color.green.5}"
+            "value": "{denhaag.color.green.700}"
           }
         },
         "icon": {
           "color": {
-            "value": "{denhaag.color.green.3}"
+            "value": "{denhaag.color.green.500}"
           }
         },
         "action": {
           "button": {
             "color": {
-              "value": "{denhaag.color.white}"
+              "value": "{denhaag.color.neutrals.white}"
             },
             "background-color": {
-              "value": "{denhaag.color.green.3}"
+              "value": "{denhaag.color.green.500}"
             },
             "hover": {
               "background-color": {
-                "value": "{denhaag.color.green.4}"
+                "value": "{denhaag.color.green.600}"
               }
             }
           }
         },
         "close-icon": {
           "color": {
-            "value": "{denhaag.color.green.5}"
+            "value": "{denhaag.color.green.700}"
           }
         }
       },
       "warning": {
         "background-color": {
-          "value": "{denhaag.color.orange.1}"
+          "value": "{denhaag.color.orange.100}"
         },
         "title": {
           "color": {
-            "value": "{denhaag.color.orange.5}"
+            "value": "{denhaag.color.orange.700}"
           }
         },
         "paragraph": {
           "color": {
-            "value": "{denhaag.color.orange.5}"
+            "value": "{denhaag.color.orange.700}"
           }
         },
         "icon": {
           "color": {
-            "value": "{denhaag.color.orange.5}"
+            "value": "{denhaag.color.orange.700}"
           }
         },
         "action": {
           "button": {
             "color": {
-              "value": "{denhaag.color.white}"
+              "value": "{denhaag.color.neutrals.white}"
             },
             "background-color": {
-              "value": "{denhaag.color.orange.5}"
+              "value": "{denhaag.color.orange.700}"
             },
             "hover": {
               "background-color": {
-                "value": "{denhaag.color.orange.5}"
+                "value": "{denhaag.color.orange.700}"
               }
             }
           }
         },
         "close-icon": {
           "color": {
-            "value": "{denhaag.color.orange.5}"
+            "value": "{denhaag.color.orange.700}"
           }
         }
       }

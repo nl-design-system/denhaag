@@ -100,9 +100,9 @@
     border-radius: var(--denhaag-header-mobile-toggle-border-radius, var(--basis-border-radius-md));
     border-width: var(--denhaag-header-mobile-toggle-border-size, 1px);
     border-style: var(--denhaag-header-mobile-toggle-border-style, solid);
-    border-color: var(--denhaag-header-mobile-toggle-border-color, var(--denhaag-color-grey-2));
+    border-color: var(--denhaag-header-mobile-toggle-border-color, var(--denhaag-color-grey-300));
     background: var(--denhaag-header-mobile-toggle-background-color, transparent);
-    color: var(--denhaag-header-mobile-toggle-color, var(--denhaag-color-green-3));
+    color: var(--denhaag-header-mobile-toggle-color, var(--denhaag-color-green-500));
   }
 
   .denhaag-header-sheet-container {

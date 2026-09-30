@@ -17,12 +17,12 @@
 
   &:hover {
     transition: var(--denhaag-quick-links-item-hover-transition, ease-in-out 200ms);
-    color: var(--denhaag-quick-links-item-hover-color, --denhaag-color-green-3);
+    color: var(--denhaag-quick-links-item-hover-color, --denhaag-color-green-500);
   }
 
   &:active {
     transition: var(--denhaag-quick-links-item-active-transition, ease-in-out 200ms);
-    color: var(--denhaag-quick-links-item-active-color, --denhaag-color-green-4);
+    color: var(--denhaag-quick-links-item-active-color, --denhaag-color-green-600);
     background-color: var(--denhaag-quick-links-item-active-background-color, none);
   }
 

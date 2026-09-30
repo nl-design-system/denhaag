@@ -5,10 +5,10 @@
         "value": "relative"
       },
       "background-color": {
-        "value": "{denhaag.color.white}"
+        "value": "{denhaag.color.neutrals.white}"
       },
       "border": {
-        "value": "1px solid {denhaag.color.grey.2}"
+        "value": "1px solid {denhaag.color.grey.300}"
       },
       "display": {
         "value": "block"
@@ -20,7 +20,7 @@
       },
       "filled": {
         "background-color": {
-          "value": "{denhaag.color.warmgrey.1}"
+          "value": "{denhaag.color.neutrals.warm-grey}"
         },
         "border": {
           "value": "0"

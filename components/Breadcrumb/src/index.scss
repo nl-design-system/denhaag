@@ -12,8 +12,8 @@
   font-weight: var(--denhaag-breadcrumb-font-weight, 400);
   border-bottom-width: var(--denhaag-breadcrumb-border-bottom-width, 1px);
   border-bottom-style: var(--denhaag-breadcrumb-border-bottom-style, solid);
-  border-bottom-color: var(--denhaag-breadcrumb-border-bottom-color, var(--denhaag-color-grey-1, #f1f1f1));
-  background-color: var(--denhaag-breadcrumb-background-color, var(--denhaag-color-white, #fff));
+  border-bottom-color: var(--denhaag-breadcrumb-border-bottom-color, var(--denhaag-color-grey-100, #f1f1f1));
+  background-color: var(--denhaag-breadcrumb-background-color, var(--denhaag-color-neutrals-white, #fff));
   box-shadow: var(--denhaag-breadcrumb-box-shadow, 0 2px 0 0 rgb(0 0 0 / 6%));
 
   @media (width >= 1024px) {
@@ -26,7 +26,7 @@
     border-bottom-width: var(--denhaag-breadcrumb-lg-border-bottom-width);
     border-bottom-style: var(--denhaag-breadcrumb-lg-border-bottom-style);
     border-bottom-color: var(--denhaag-breadcrumb-lg-border-bottom-color);
-    background-color: var(--denhaag-breadcrumb-lg-background-color, var(--denhaag-color-warmgrey-1));
+    background-color: var(--denhaag-breadcrumb-lg-background-color, var(--denhaag-color-neutrals-warm-grey));
     box-shadow: var(--denhaag-breadcrumb-lg-box-shadow);
   }
 }
@@ -129,9 +129,9 @@ ol.denhaag-breadcrumb__list {
   border-radius: var(--denhaag-breadcrumb-toggle-button-border-radius, var(--basis-border-radius-md));
   border-width: var(--denhaag-breadcrumb-toggle-button-border-size, 1px);
   border-style: var(--denhaag-breadcrumb-toggle-button-border-style, solid);
-  border-color: var(--denhaag-breadcrumb-toggle-button-border-color, var(--denhaag-color-grey-2));
+  border-color: var(--denhaag-breadcrumb-toggle-button-border-color, var(--denhaag-color-grey-300));
   background: var(--denhaag-breadcrumb-toggle-button-background-color, transparent);
-  color: var(--denhaag-breadcrumb-toggle-button-color, var(--denhaag-color-green-3));
+  color: var(--denhaag-breadcrumb-toggle-button-color, var(--denhaag-color-green-500));
 
   @media (width >= 1024px) {
     display: none;

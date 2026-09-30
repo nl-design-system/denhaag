@@ -3,14 +3,14 @@
     "hero": {
       "background": {
         "color": {
-          "value": "{denhaag.color.green.3}"
+          "value": "{denhaag.color.green.500}"
         }
       },
       "columns": {
         "value": 12
       },
       "color": {
-        "value": "{denhaag.color.black}"
+        "value": "{denhaag.color.neutrals.black}"
       },
       "container": {
         "gutter": {
@@ -110,7 +110,7 @@
         },
         "title": {
           "color": {
-            "value": "{denhaag.color.white}"
+            "value": "{denhaag.color.neutrals.white}"
           },
           "line-height": {
             "value": "{basis.text.line-height.sm}"
@@ -135,7 +135,7 @@
       },
       "routing": {
         "background-color": {
-          "value": "{denhaag.color.ocher.3}"
+          "value": "{denhaag.color.ocher.500}"
         },
         "min-height": {
           "value": "9rem"
@@ -265,10 +265,10 @@
         },
         "content": {
           "background-color": {
-            "value": "{denhaag.color.white}"
+            "value": "{denhaag.color.neutrals.white}"
           },
           "box-shadow": {
-            "value": "0px 1px 0px {denhaag.color.grey.2}"
+            "value": "0px 1px 0px {denhaag.color.grey.300}"
           },
           "column": {
             "start": {

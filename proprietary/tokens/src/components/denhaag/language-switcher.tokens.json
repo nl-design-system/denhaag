@@ -24,7 +24,7 @@
           },
           "link": {
             "active": {
-              "color": { "value": "{denhaag.color.green.3}" },
+              "color": { "value": "{denhaag.color.green.500}" },
               "font-weight": { "value": "{utrecht.heading.font-weight}" },
               "icon": {
                 "margin-block-start": { "value": "auto" },

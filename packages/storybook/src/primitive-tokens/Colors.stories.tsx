@@ -4,18 +4,8 @@ import { ColorPalette, ColorItem, Title } from '@storybook/addon-docs/blocks';
 import React, { Fragment } from 'react';
 
 type Story = StoryObj<typeof meta>;
-type Tokens = typeof tokens;
-type ColorToken = Tokens['denhaag']['color']['black'];
-type SingleColorToken = { [key in (typeof singleColors)[number]]: ColorToken };
-type MultiColorTokens = {
-  [key in (typeof multiColors)[number]]: Partial<Record<'1' | '2' | '3' | '4' | '5', ColorToken>>;
-};
-type ColorTokens = SingleColorToken & MultiColorTokens;
-
-const singleColors = ['white', 'black'] as const;
-const multiColors = ['ocher', 'green', 'red', 'orange', 'blue', 'grey', 'warmgrey'] as const;
-const colors = [...multiColors, ...singleColors] as const;
-const colorTokens: ColorTokens = tokens['denhaag']['color'];
+const colorTokens = tokens.denhaag.color;
+const colors = ['ocher', 'green', 'red', 'orange', 'blue', 'grey', 'neutrals'] as const;
 
 const meta: Meta = {
   title: 'Primitive Tokens/Colors',
@@ -28,24 +18,14 @@ const meta: Meta = {
           <Title />
           {colors.map((color) => {
             const colorGroup = colorTokens[color];
-            const colorItems =
-              'value' in colorGroup ? (
-                <ColorItem
-                  key={color}
-                  title={color}
-                  subtitle={`var(--denhaag-color-${color})`}
-                  colors={[colorGroup.value]}
-                />
-              ) : (
-                Object.values(colorGroup).map((item: ColorToken, index: number) => (
-                  <ColorItem
-                    key={item.key}
-                    title={`${color} ${index + 1}`}
-                    subtitle={`var(--${item.path.join('-')})`}
-                    colors={[item.value]}
-                  />
-                ))
-              );
+            const colorItems = Object.entries(colorGroup).map(([shade, item]) => (
+              <ColorItem
+                key={item.key}
+                title={`${color} ${shade}`}
+                subtitle={`var(--${item.path.join('-')})`}
+                colors={[item.value]}
+              />
+            ));
 
             return (
               <Fragment key={color}>

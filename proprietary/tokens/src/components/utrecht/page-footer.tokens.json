@@ -2,10 +2,10 @@
   "utrecht": {
     "page-footer": {
       "color": {
-        "value": "{denhaag.color.white}"
+        "value": "{denhaag.color.neutrals.white}"
       },
       "background-color": {
-        "value": "{denhaag.color.grey.4}"
+        "value": "{denhaag.color.grey.600}"
       },
       "background-image": {},
       "padding-inline-end": {
