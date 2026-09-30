@@ -1,0 +1,39 @@
+{
+  "denhaag": {
+    "card": {
+      "border-radius": {
+        "value": "3px"
+      },
+      "padding-block-start": {
+        "value": "20px"
+      },
+      "title": {
+        "color": {
+          "value": "{denhaag.color.blue.5}"
+        },
+        "font-family": {
+          "value": "{basis.heading.font-family}"
+        },
+        "font-size": {
+          "value": "{basis.text.font-size.xl}"
+        },
+        "font-weight": {
+          "value": "{basis.text.font-weight.bold}"
+        },
+        "line-height": {
+          "value": "1.5"
+        }
+      },
+      "action": {
+        "color": {
+          "value": "{denhaag.color.blue.3}"
+        },
+        "active": {
+          "color": {
+            "value": "{denhaag.color.blue.4}"
+          }
+        }
+      }
+    }
+  }
+}
