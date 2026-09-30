@@ -2,7 +2,7 @@
   "denhaag": {
     "unordered-list": {
       "color": {
-        "value": "{denhaag.color.grey.4}"
+        "value": "{denhaag.color.grey.600}"
       },
       "marker-font-size": {
         "value": "1rem"

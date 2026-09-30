@@ -2,7 +2,7 @@
   "denhaag": {
     "page": {
       "header": {
-        "background-color": { "value": "{denhaag.color.white}" },
+        "background-color": { "value": "{denhaag.color.neutrals.white}" },
         "index": { "value": "2" }
       },
       "content": {

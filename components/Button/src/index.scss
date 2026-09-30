@@ -52,7 +52,7 @@
     justify-content: space-between;
 
     &.denhaag-status-button--error {
-      --denhaag-button-primary-action-background-color: var(--denhaag-color-red-3);
+      --denhaag-button-primary-action-background-color: var(--denhaag-color-red-500);
     }
 
     &.denhaag-status-button--loading {

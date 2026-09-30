@@ -5,7 +5,7 @@
         "value": "1px"
       },
       "border-color": {
-        "value": "{denhaag.color.grey.2}"
+        "value": "{denhaag.color.grey.300}"
       },
       "border-radius": {
         "value": "0"
@@ -15,12 +15,12 @@
       },
       "hover": {
         "color": {
-          "value": "{denhaag.color.blue.4}"
+          "value": "{denhaag.color.blue.600}"
         }
       },
       "focus": {
         "outline-color": {
-          "value": "{denhaag.color.ocher.5}"
+          "value": "{denhaag.color.ocher.700}"
         },
         "outline-width": {
           "value": "{common.border-width.xl}"
@@ -37,7 +37,7 @@
           "value": "{basis.space.inline.lg}"
         },
         "background-color": {
-          "value": "{denhaag.color.warmgrey.1}"
+          "value": "{denhaag.color.neutrals.warm-grey}"
         }
       },
       "right": {
@@ -59,7 +59,7 @@
       },
       "link": {
         "color": {
-          "value": "{denhaag.color.blue.3}"
+          "value": "{denhaag.color.blue.500}"
         },
         "gap": {
           "value": "{basis.space.inline.sm}"

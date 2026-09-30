@@ -2,20 +2,20 @@
   "utrecht": {
     "feedback": {
       "danger": {
-        "background-color": { "value": "{denhaag.color.red.1}" },
-        "color": { "value": "{denhaag.color.red.4}" }
+        "background-color": { "value": "{denhaag.color.red.100}" },
+        "color": { "value": "{denhaag.color.red.600}" }
       },
       "warning": {
-        "background-color": { "value": "{denhaag.color.orange.1}" },
-        "color": { "value": "{denhaag.color.orange.5}" }
+        "background-color": { "value": "{denhaag.color.orange.100}" },
+        "color": { "value": "{denhaag.color.orange.700}" }
       },
       "safe": {
-        "background-color": { "value": "{denhaag.color.green.1}" },
-        "color": { "value": "{denhaag.color.green.4}" }
+        "background-color": { "value": "{denhaag.color.green.100}" },
+        "color": { "value": "{denhaag.color.green.600}" }
       },
       "neutral": {
-        "background-color": { "value": "{denhaag.color.blue.1}" },
-        "color": { "value": "{denhaag.color.blue.4}" }
+        "background-color": { "value": "{denhaag.color.blue.100}" },
+        "color": { "value": "{denhaag.color.blue.600}" }
       }
     }
   }

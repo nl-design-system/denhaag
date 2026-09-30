@@ -1,7 +1,7 @@
 {
   "denhaag": {
     "heading": {
-      "color": { "value": "{denhaag.color.grey.5}" },
+      "color": { "value": "{denhaag.color.grey.700}" },
       "line-height": { "value": "{basis.text.line-height.sm}" }
     }
   }

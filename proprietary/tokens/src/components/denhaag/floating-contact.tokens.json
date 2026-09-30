@@ -5,7 +5,7 @@
         "value": "{basis.space.block.xl}"
       },
       "color": {
-        "value": "{denhaag.color.green.5}"
+        "value": "{denhaag.color.green.700}"
       },
       "gap": {
         "value": "0.75rem"
@@ -48,7 +48,7 @@
       },
       "link": {
         "color": {
-          "value": "{denhaag.color.white}"
+          "value": "{denhaag.color.neutrals.white}"
         },
         "decoration": {
           "value": "underline"
@@ -97,12 +97,12 @@
         },
         "background": {
           "color": {
-            "value": "{denhaag.color.green.1}"
+            "value": "{denhaag.color.green.100}"
           }
         },
         "border": {
           "color": {
-            "value": "{denhaag.color.green.2}"
+            "value": "{denhaag.color.green.300}"
           },
           "style": {
             "value": "solid"
@@ -135,7 +135,7 @@
           "value": 1
         },
         "outline-color": {
-          "value": "{denhaag.color.ocher.5}"
+          "value": "{denhaag.color.ocher.700}"
         },
         "outline-style": {
           "value": "{denhaag.border-style.dashed}"
@@ -159,11 +159,11 @@
         "icons": {
           "background": {
             "color": {
-              "value": "{denhaag.color.green.3}"
+              "value": "{denhaag.color.green.500}"
             }
           },
           "color": {
-            "value": "{denhaag.color.white}"
+            "value": "{denhaag.color.neutrals.white}"
           },
           "display": {
             "value": "none"
@@ -176,7 +176,7 @@
           "icons": {
             "background": {
               "color": {
-                "value": "{denhaag.color.green.4}"
+                "value": "{denhaag.color.green.600}"
               }
             }
           }
@@ -185,7 +185,7 @@
           "icons": {
             "background": {
               "color": {
-                "value": "{denhaag.color.green.4}"
+                "value": "{denhaag.color.green.600}"
               }
             }
           }
@@ -204,11 +204,11 @@
         },
         "background": {
           "color": {
-            "value": "{denhaag.color.green.3}"
+            "value": "{denhaag.color.green.500}"
           }
         },
         "color": {
-          "value": "{denhaag.color.green.1}"
+          "value": "{denhaag.color.green.100}"
         },
         "border": {
           "radius": {
@@ -261,18 +261,18 @@
         },
         "offline": {
           "background-color": {
-            "value": "{denhaag.color.red.3}"
+            "value": "{denhaag.color.red.500}"
           },
           "border-color": {
-            "value": "{denhaag.color.red.1}"
+            "value": "{denhaag.color.red.100}"
           }
         },
         "online": {
           "background-color": {
-            "value": "{denhaag.color.green.3}"
+            "value": "{denhaag.color.green.500}"
           },
           "border-color": {
-            "value": "{denhaag.color.green.1}"
+            "value": "{denhaag.color.green.100}"
           }
         }
       }

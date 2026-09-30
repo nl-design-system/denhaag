@@ -13,13 +13,13 @@
           },
           "toggle": {
             "hover": {
-              "color": { "value": "{denhaag.color.green.3}" }
+              "color": { "value": "{denhaag.color.green.500}" }
             },
             "focus": {
-              "color": { "value": "{denhaag.color.green.3}" }
+              "color": { "value": "{denhaag.color.green.500}" }
             },
             "active": {
-              "color": { "value": "{denhaag.color.green.3}" }
+              "color": { "value": "{denhaag.color.green.500}" }
             },
             "gap": { "value": "4px" }
           }
@@ -64,7 +64,7 @@
           "gap": { "value": "6px" },
           "marker": {
             "size": { "value": "4px" },
-            "color": { "value": "{denhaag.color.black}" }
+            "color": { "value": "{denhaag.color.neutrals.black}" }
           }
         },
         "distance": { "value": "0" },

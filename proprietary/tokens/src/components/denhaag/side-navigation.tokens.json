@@ -65,16 +65,16 @@
           "value": "12px"
         },
         "color": {
-          "value": "{denhaag.color.grey.4}"
+          "value": "{denhaag.color.grey.600}"
         },
         "hover": {
           "color": {
-            "value": "{denhaag.color.green.3}"
+            "value": "{denhaag.color.green.500}"
           }
         },
         "active": {
           "color": {
-            "value": "{denhaag.color.green.3}"
+            "value": "{denhaag.color.green.500}"
           },
           "font-weight": {
             "value": "{basis.text.font-weight.bold}"
@@ -102,7 +102,7 @@
       },
       "expand-separator": {
         "color": {
-          "value": "{denhaag.color.grey.2}"
+          "value": "{denhaag.color.grey.300}"
         },
         "inline-size": {
           "value": "{denhaag.size.25}"

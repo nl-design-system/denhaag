@@ -1,7 +1,7 @@
 {
   "denhaag": {
     "sheet": {
-      "background-color": { "value": "{denhaag.color.white}" },
+      "background-color": { "value": "{denhaag.color.neutrals.white}" },
       "left": { "value": "flex0" },
       "margin-block-start": { "value": "{denhaag.header.border-bottom.width}" },
       "min-height": { "value": "100vh" },

@@ -3,9 +3,9 @@
     "focus": {
       "background-color": {},
       "color": { "value": "inherit" },
-      "border-color": { "value": "{denhaag.color.ocher.5}" },
+      "border-color": { "value": "{denhaag.color.ocher.700}" },
       "border-style": { "value": "{denhaag.border-style.dashed}" },
-      "outline-color": { "value": "{denhaag.color.ocher.5}" },
+      "outline-color": { "value": "{denhaag.color.ocher.700}" },
       "outline-offset": { "value": "0" },
       "outline-style": { "value": "{denhaag.border-style.dashed}" },
       "outline-width": { "value": "{common.border-width.xl}" },

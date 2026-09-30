@@ -2,7 +2,7 @@
   "utrecht": {
     "form-field-description": {
       "color": {
-        "value": "{denhaag.color.grey.4}"
+        "value": "{denhaag.color.grey.600}"
       },
       "font-family": {
         "value": "{utrecht.document.font-family}"
@@ -18,7 +18,7 @@
       "invalid": {
         "font-weight": {},
         "color": {
-          "value": "{denhaag.color.red.3}"
+          "value": "{denhaag.color.red.500}"
         },
         "valid": {
           "color": {}

@@ -1,11 +1,11 @@
 {
   "utrecht": {
     "form-label": {
-      "color": { "value": "{denhaag.color.grey.4}" },
+      "color": { "value": "{denhaag.color.grey.600}" },
       "font-weight": { "value": "{basis.text.font-weight.bold}" },
       "font-size": { "value": "{utrecht.document.font-size}" },
       "checkbox": {
-        "color": { "value": "{denhaag.color.grey.4}" },
+        "color": { "value": "{denhaag.color.grey.600}" },
         "font-weight": { "value": "400" }
       },
       "checked": {
@@ -15,7 +15,7 @@
         "color": {}
       },
       "radio": {
-        "color": { "value": "{denhaag.color.grey.4}" },
+        "color": { "value": "{denhaag.color.grey.600}" },
         "font-weight": { "value": "400" }
       }
     }

@@ -14,7 +14,7 @@
         "value": "{utrecht.form-control.border-width}"
       },
       "color": {
-        "value": "{denhaag.color.white}"
+        "value": "{denhaag.color.neutrals.white}"
       },
       "margin-inline-end": {
         "value": "{basis.space.inline.md}"

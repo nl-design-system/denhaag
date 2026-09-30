@@ -3,23 +3,23 @@
     "checkbox": {
       "checked": {
         "invalid": {
-          "background-color": { "value": "{denhaag.color.red.3}" }
+          "background-color": { "value": "{denhaag.color.red.500}" }
         },
         "disabled": {
-          "background-color": { "value": "{denhaag.color.grey.2}" },
-          "border-color": { "value": "{denhaag.color.grey.2}" }
+          "background-color": { "value": "{denhaag.color.grey.300}" },
+          "border-color": { "value": "{denhaag.color.grey.300}" }
         }
       },
       "hover": {
-        "border-color": { "value": "{denhaag.color.grey.4}" },
+        "border-color": { "value": "{denhaag.color.grey.600}" },
         "border-width": { "value": "1px" },
         "checked": {
-          "background-color": { "value": "{denhaag.color.green.4}" },
-          "border-color": { "value": "{denhaag.color.green.4}" }
+          "background-color": { "value": "{denhaag.color.green.600}" },
+          "border-color": { "value": "{denhaag.color.green.600}" }
         },
         "invalid": {
-          "background-color": { "value": "{denhaag.color.red.4}" },
-          "border-color": { "value": "{denhaag.color.red.4}" }
+          "background-color": { "value": "{denhaag.color.red.600}" },
+          "border-color": { "value": "{denhaag.color.red.600}" }
         }
       }
     }

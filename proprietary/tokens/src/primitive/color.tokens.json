@@ -2,52 +2,118 @@
   "denhaag": {
     "color": {
       "green": {
-        "1": { "value": "hsl(117 28% 87%)", "name": "Green 1" },
-        "2": { "value": "hsl(118 28% 60%)", "name": "Green 2" },
-        "3": { "value": "hsl(138 58% 33%)", "name": "Green 3" },
-        "4": { "value": "hsl(138 57% 27%)", "name": "Green 4" },
-        "5": { "value": "hsl(139 100% 9%)", "name": "Green 5" }
-      },
-      "blue": {
-        "1": { "value": "hsl(208 76% 92%)", "name": "Blue 1" },
-        "2": { "value": "hsl(210 64% 80%)", "name": "Blue 2" },
-        "3": { "value": "hsl(207 80% 35%)", "name": "Blue 3" },
-        "4": { "value": "hsl(207 87% 27%)", "name": "Blue 4" },
-        "5": { "value": "hsl(207 93% 16%)", "name": "Blue 5" }
+        "100": {
+          "value": "#d5e7d4"
+        },
+        "300": {
+          "value": "#7eb57c"
+        },
+        "500": {
+          "value": "#248641"
+        },
+        "600": {
+          "value": "#1d6b34"
+        },
+        "700": {
+          "value": "#00300f"
+        }
       },
       "ocher": {
-        "1": { "value": "hsl(50 100% 91%)", "name": "Ocher 1" },
-        "2": { "value": "hsl(50 100% 76%)", "name": "Ocher 2" },
-        "3": { "value": "hsl(50 94% 57%)", "name": "Ocher 3" },
-        "4": { "value": "hsl(47 100% 40%)", "name": "Ocher 4" },
-        "5": { "value": "hsl(47 100% 25%)", "name": "Ocher 5" }
+        "100": {
+          "value": "#fff7d1"
+        },
+        "300": {
+          "value": "#ffeb85"
+        },
+        "500": {
+          "value": "#f8d62d"
+        },
+        "600": {
+          "value": "#cca000"
+        },
+        "700": {
+          "value": "#7d6200"
+        }
       },
       "red": {
-        "1": { "value": "hsl(4 100% 92%)", "name": "Red 1" },
-        "2": { "value": "hsl(5 75% 72%)", "name": "Red 2" },
-        "3": { "value": "hsl(6 93% 42%)", "name": "Red 3" },
-        "4": { "value": "hsl(2 100% 32%)", "name": "Red 4" },
-        "5": { "value": "hsl(1 100% 16%)", "name": "Red 5" }
+        "100": {
+          "value": "#ffd7d4"
+        },
+        "300": {
+          "value": "#ed8980"
+        },
+        "500": {
+          "value": "#cf1c08"
+        },
+        "600": {
+          "value": "#a30500"
+        },
+        "700": {
+          "value": "#540200"
+        }
       },
       "orange": {
-        "1": { "value": "hsl(34 100% 84%)", "name": "Orange 1" },
-        "2": { "value": "hsl(34 100% 68%)", "name": "Orange 2" },
-        "3": { "value": "hsl(34 100% 47%)", "name": "Orange 3" },
-        "4": { "value": "hsl(23 99% 44%)", "name": "Orange 4" },
-        "5": { "value": "hsl(23 100% 27%)", "name": "Orange 5" }
+        "100": {
+          "value": "#ffdbad"
+        },
+        "300": {
+          "value": "#ffb85e"
+        },
+        "500": {
+          "value": "#f18700"
+        },
+        "600": {
+          "value": "#e15601"
+        },
+        "700": {
+          "value": "#8c3600"
+        }
+      },
+      "blue": {
+        "100": {
+          "value": "#daebfa"
+        },
+        "300": {
+          "value": "#adcded"
+        },
+        "500": {
+          "value": "#1261a3"
+        },
+        "600": {
+          "value": "#094b81"
+        },
+        "700": {
+          "value": "#032c4e"
+        }
       },
       "grey": {
-        "1": { "value": "hsl(0 0% 95%)", "name": "Grey 1" },
-        "2": { "value": "hsl(0 0% 82%)", "name": "Grey 2" },
-        "3": { "value": "hsl(0 0% 48%)", "name": "Grey 3" },
-        "4": { "value": "hsl(0 0% 29%)", "name": "Grey 4" },
-        "5": { "value": "hsla(0, 0%, 18%, 1)", "name": "Grey 5" }
+        "100": {
+          "value": "#f1f1f1"
+        },
+        "300": {
+          "value": "#d2d2d2"
+        },
+        "500": {
+          "value": "#7a7a7a"
+        },
+        "600": {
+          "value": "#4b4b4b"
+        },
+        "700": {
+          "value": "#2d2d2d"
+        }
       },
-      "warmgrey": {
-        "1": { "value": "hsl(40 18% 97%)", "name": "Warm Grey 1" }
-      },
-      "black": { "value": "hsl(0 0% 0%)", "name": "Black" },
-      "white": { "value": "hsl(0 0% 100%)", "name": "White" }
+      "neutrals": {
+        "warm-grey": {
+          "value": "#f8f7f5"
+        },
+        "white": {
+          "value": "#ffffff"
+        },
+        "black": {
+          "value": "#000000"
+        }
+      }
     }
   }
 }

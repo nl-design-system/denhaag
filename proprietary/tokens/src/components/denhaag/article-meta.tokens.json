@@ -8,10 +8,10 @@
         "value": "solid"
       },
       "border-color": {
-        "value": "{denhaag.color.grey.2}"
+        "value": "{denhaag.color.grey.300}"
       },
       "color": {
-        "value": "{denhaag.color.grey.4}"
+        "value": "{denhaag.color.grey.600}"
       },
       "font-family": {
         "value": "{basis.text.font-family.default}"
@@ -46,7 +46,7 @@
             "value": "solid"
           },
           "border-color": {
-            "value": "{denhaag.color.grey.2}"
+            "value": "{denhaag.color.grey.300}"
           }
         }
       }

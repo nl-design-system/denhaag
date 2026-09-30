@@ -1,9 +1,9 @@
 {
   "denhaag": {
     "header": {
-      "color": { "value": "{denhaag.color.black}" },
+      "color": { "value": "{denhaag.color.neutrals.black}" },
       "border-bottom": {
-        "color": { "value": "{denhaag.color.grey.1}" },
+        "color": { "value": "{denhaag.color.grey.100}" },
         "width": { "value": "1px" },
         "style": { "value": "solid" }
       },
