@@ -1,5 +1,11 @@
 # @gemeente-denhaag/storybook
 
+## 6.1.0
+
+### Minor Changes
+
+- 6cea113: Add Figma designs to stories
+
 ## 6.0.0
 
 ### Major Changes
