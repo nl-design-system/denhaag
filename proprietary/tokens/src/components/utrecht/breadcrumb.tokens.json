@@ -12,14 +12,14 @@
         "padding-inline-start": { "value": "14px" }
       },
       "link": {
-        "color": { "value": "{denhaag.color.blue.3}" },
+        "color": { "value": "{denhaag.color.blue.500}" },
         "focus": {
           "background-color": {},
-          "color": { "value": "{denhaag.color.blue.4}" },
+          "color": { "value": "{denhaag.color.blue.600}" },
           "text-decoration": { "value": "underline" }
         },
         "hover": {
-          "color": { "value": "{denhaag.color.blue.4}" },
+          "color": { "value": "{denhaag.color.blue.600}" },
           "text-decoration": { "value": "underline" }
         },
         "current": {

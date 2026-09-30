@@ -2,13 +2,13 @@
   "of": {
     "alert": {
       "error": {
-        "bg": { "value": "{denhaag.color.red.1}" }
+        "bg": { "value": "{denhaag.color.red.100}" }
       },
       "warning": {
-        "bg": { "value": "{denhaag.color.orange.1}" }
+        "bg": { "value": "{denhaag.color.orange.100}" }
       },
       "info": {
-        "bg": { "value": "{denhaag.color.blue.1}" }
+        "bg": { "value": "{denhaag.color.blue.100}" }
       }
     }
   }

@@ -9,11 +9,11 @@
       },
       "section": {
         "border": {
-          "value": "1px solid {denhaag.color.grey.3}"
+          "value": "1px solid {denhaag.color.grey.500}"
         },
         "content": {
           "background-color": {
-            "value": "{denhaag.color.white}"
+            "value": "{denhaag.color.neutrals.white}"
           },
           "padding-block-end": {
             "value": "24px"
@@ -33,7 +33,7 @@
         },
         "header": {
           "background-color": {
-            "value": "{denhaag.color.white}"
+            "value": "{denhaag.color.neutrals.white}"
           },
           "column-gap": {
             "value": "8px"
@@ -61,7 +61,7 @@
           },
           "icon": {
             "color": {
-              "value": "{denhaag.color.green.3}"
+              "value": "{denhaag.color.green.500}"
             },
             "transform": {
               "value": "rotate(0deg)"
@@ -78,7 +78,7 @@
         },
         "description": {
           "color": {
-            "value": "{denhaag.color.grey.5}"
+            "value": "{denhaag.color.grey.700}"
           },
           "font-size": {
             "value": "inherit"
@@ -86,7 +86,7 @@
         },
         "title": {
           "color": {
-            "value": "{denhaag.color.green.3}"
+            "value": "{denhaag.color.green.500}"
           },
           "font-size": {
             "value": "inherit"

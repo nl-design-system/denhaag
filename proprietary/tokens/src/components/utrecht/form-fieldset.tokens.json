@@ -15,7 +15,7 @@
         "color": {}
       },
       "legend": {
-        "color": { "value": "{denhaag.color.grey.5}" },
+        "color": { "value": "{denhaag.color.grey.700}" },
         "font-family": {
           "value": "{basis.heading.font-family}"
         },

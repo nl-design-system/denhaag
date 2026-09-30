@@ -2,7 +2,7 @@
   "denhaag": {
     "modal": {
       "background-color": {
-        "value": "{denhaag.color.white}"
+        "value": "{denhaag.color.neutrals.white}"
       },
       "display": {
         "value": "none"
@@ -28,7 +28,7 @@
       },
       "close": {
         "color": {
-          "value": "{denhaag.color.green.3}"
+          "value": "{denhaag.color.green.500}"
         },
         "gap": {
           "value": "{basis.space.inline.md}"
@@ -46,7 +46,7 @@
         },
         "hover": {
           "color": {
-            "value": "{denhaag.color.green.4}"
+            "value": "{denhaag.color.green.600}"
           }
         }
       },
@@ -66,7 +66,7 @@
         },
         "border-bottom": {
           "color": {
-            "value": "{denhaag.color.grey.2}"
+            "value": "{denhaag.color.grey.300}"
           },
           "style": {
             "value": "solid"
@@ -78,7 +78,7 @@
       },
       "title": {
         "color": {
-          "value": "{denhaag.color.black}"
+          "value": "{denhaag.color.neutrals.black}"
         },
         "font": {
           "family": {

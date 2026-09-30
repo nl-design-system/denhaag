@@ -1,7 +1,7 @@
 {
   "of": {
     "field": {
-      "border-color": { "value": "{denhaag.color.grey.3}" }
+      "border-color": { "value": "{denhaag.color.grey.500}" }
     }
   }
 }

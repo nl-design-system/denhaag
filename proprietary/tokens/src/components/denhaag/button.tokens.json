@@ -40,7 +40,7 @@
       },
       "focus": {
         "border-color": {
-          "value": "{denhaag.color.ocher.5}"
+          "value": "{denhaag.color.ocher.700}"
         },
         "border-width": {
           "value": "{common.border-width.xl}"
@@ -54,58 +54,58 @@
       },
       "primary-action": {
         "background-color": {
-          "value": "{denhaag.color.green.3}"
+          "value": "{denhaag.color.green.500}"
         },
         "color": {
-          "value": "{denhaag.color.white}"
+          "value": "{denhaag.color.neutrals.white}"
         },
         "hover": {
           "background-color": {
-            "value": "{denhaag.color.green.4}"
+            "value": "{denhaag.color.green.600}"
           },
           "color": {
-            "value": "{denhaag.color.white}"
+            "value": "{denhaag.color.neutrals.white}"
           }
         },
         "disabled": {
           "background-color": {
-            "value": "{denhaag.color.grey.2}"
+            "value": "{denhaag.color.grey.300}"
           },
           "color": {
-            "value": "{denhaag.color.white}"
+            "value": "{denhaag.color.neutrals.white}"
           }
         }
       },
       "secondary-action": {
         "background-color": {
-          "value": "{denhaag.color.white}"
+          "value": "{denhaag.color.neutrals.white}"
         },
         "color": {
-          "value": "{denhaag.color.green.3}"
+          "value": "{denhaag.color.green.500}"
         },
         "border-color": {
-          "value": "{denhaag.color.green.3}"
+          "value": "{denhaag.color.green.500}"
         },
         "hover": {
           "background-color": {
-            "value": "{denhaag.color.white}"
+            "value": "{denhaag.color.neutrals.white}"
           },
           "border-color": {
-            "value": "{denhaag.color.green.4}"
+            "value": "{denhaag.color.green.600}"
           },
           "color": {
-            "value": "{denhaag.color.green.4}"
+            "value": "{denhaag.color.green.600}"
           }
         },
         "disabled": {
           "background-color": {
-            "value": "{denhaag.color.white}"
+            "value": "{denhaag.color.neutrals.white}"
           },
           "border-color": {
-            "value": "{denhaag.color.grey.2}"
+            "value": "{denhaag.color.grey.300}"
           },
           "color": {
-            "value": "{denhaag.color.grey.2}"
+            "value": "{denhaag.color.grey.300}"
           }
         }
       },

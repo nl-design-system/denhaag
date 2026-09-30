@@ -3,7 +3,7 @@
     "anchor-collapse": {
       "border": {
         "color": {
-          "value": "{denhaag.color.grey.2}"
+          "value": "{denhaag.color.grey.300}"
         },
         "style": {
           "value": "solid"
@@ -44,7 +44,7 @@
       },
       "summary": {
         "color": {
-          "value": "{denhaag.color.grey.5}"
+          "value": "{denhaag.color.grey.700}"
         },
         "font": {
           "family": {
@@ -70,20 +70,20 @@
         },
         "active": {
           "color": {
-            "value": "{denhaag.color.green.3}"
+            "value": "{denhaag.color.green.500}"
           }
         },
         "hover": {
           "color": {
-            "value": "{denhaag.color.green.3}"
+            "value": "{denhaag.color.green.500}"
           }
         },
         "focus": {
           "color": {
-            "value": "{denhaag.color.green.3}"
+            "value": "{denhaag.color.green.500}"
           },
           "outline-color": {
-            "value": "{denhaag.color.ocher.5}"
+            "value": "{denhaag.color.ocher.700}"
           },
           "outline-style": {
             "value": "{denhaag.border-style.dashed}"

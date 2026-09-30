@@ -2,16 +2,16 @@
   "of": {
     "button": {
       "primary": {
-        "bg": { "value": "{denhaag.color.green.3}" },
-        "fg": { "value": "{denhaag.color.white}" },
+        "bg": { "value": "{denhaag.color.green.500}" },
+        "fg": { "value": "{denhaag.color.neutrals.white}" },
         "active": {
-          "bg": { "value": "{denhaag.color.green.4}" },
-          "fg": { "value": "{denhaag.color.white}" },
-          "color-border": { "value": "{denhaag.color.ocher.5}" }
+          "bg": { "value": "{denhaag.color.green.600}" },
+          "fg": { "value": "{denhaag.color.neutrals.white}" },
+          "color-border": { "value": "{denhaag.color.ocher.700}" }
         },
         "hover": {
-          "bg": { "value": "{denhaag.color.green.4}" },
-          "color-border": { "value": "{denhaag.color.ocher.5}" }
+          "bg": { "value": "{denhaag.color.green.600}" },
+          "color-border": { "value": "{denhaag.color.ocher.700}" }
         }
       },
       "anchor": {

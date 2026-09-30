@@ -1,13 +1,13 @@
 {
   "denhaag": {
     "form-group": {
-      "label": { "color": { "value": "{denhaag.color.blue.5}" } },
+      "label": { "color": { "value": "{denhaag.color.blue.700}" } },
       "helper": {
         "text": {
-          "color": { "value": "{denhaag.color.grey.4}" },
+          "color": { "value": "{denhaag.color.grey.600}" },
           "size": { "value": "{basis.text.font-size.sm}" },
           "margin": { "block": { "start": { "value": "4px" } } },
-          "error": { "color": { "value": "{denhaag.color.red.3}" } }
+          "error": { "color": { "value": "{denhaag.color.red.500}" } }
         }
       },
       "margin": {

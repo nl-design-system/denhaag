@@ -2,10 +2,10 @@
   "denhaag": {
     "card-news": {
       "border": {
-        "value": "1px solid {denhaag.color.grey.2}"
+        "value": "1px solid {denhaag.color.grey.300}"
       },
       "box-shadow": {
-        "value": "0 0 0.5rem {denhaag.color.grey.2}"
+        "value": "0 0 0.5rem {denhaag.color.grey.300}"
       },
       "gap": {
         "value": "{basis.space.block.xl}"
@@ -60,7 +60,7 @@
           "value": "right"
         },
         "color": {
-          "value": "{denhaag.color.blue.3}"
+          "value": "{denhaag.color.blue.500}"
         }
       }
     }
