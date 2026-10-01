@@ -33,7 +33,7 @@
   "dependencies": {
     "@gemeente-denhaag/number-badge": "workspace:*",
     "clsx": "2.1.1",
-    "uuid": "14.0.1"
+    "uuid": "14.0.2"
   },
   "devDependencies": {
     "@types/uuid": "11.0.0"
