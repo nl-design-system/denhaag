@@ -1,5 +1,12 @@
 # @gemeente-denhaag/dotindicator
 
+## 3.1.4
+
+### Patch Changes
+
+- Updated dependencies [2076b4f]
+  - @gemeente-denhaag/button@3.2.0
+
 ## 3.1.3
 
 ### Patch Changes

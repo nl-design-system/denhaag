@@ -1,5 +1,18 @@
 # @gemeente-denhaag/header
 
+## 5.1.0
+
+### Minor Changes
+
+- 2076b4f: Update color tokens
+
+### Patch Changes
+
+- Updated dependencies [2076b4f]
+  - @gemeente-denhaag/breadcrumb@5.3.0
+  - @gemeente-denhaag/button@3.2.0
+  - @gemeente-denhaag/menu@4.4.0
+
 ## 5.0.1
 
 ### Patch Changes

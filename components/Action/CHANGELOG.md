@@ -1,5 +1,12 @@
 # @gemeente-denhaag/action
 
+## 4.4.3
+
+### Patch Changes
+
+- Updated dependencies [2076b4f]
+  - @gemeente-denhaag/button@3.2.0
+
 ## 4.4.2
 
 ### Patch Changes

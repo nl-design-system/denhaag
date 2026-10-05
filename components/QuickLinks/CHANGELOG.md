@@ -1,3 +1,8 @@
+## 1.2.0
+
+### Minor Changes
+
+- 2076b4f: Update color tokens
 ## 1.1.1
 
 ### Patch Changes

@@ -1,5 +1,25 @@
 # @gemeente-denhaag/components-react
 
+## 5.1.9
+
+### Patch Changes
+
+- Updated dependencies [2076b4f]
+  - @gemeente-denhaag/button@3.2.0
+  - @gemeente-denhaag/card@5.2.0
+  - @gemeente-denhaag/file@2.6.0
+  - @gemeente-denhaag/header@5.1.0
+  - @gemeente-denhaag/list@3.2.0
+  - @gemeente-denhaag/menu@4.4.0
+  - @gemeente-denhaag/side-navigation@4.3.0
+  - @gemeente-denhaag/tab@3.4.0
+  - @gemeente-denhaag/action@4.4.3
+  - @gemeente-denhaag/alert@4.1.4
+  - @gemeente-denhaag/process-steps@4.3.4
+  - @gemeente-denhaag/contact-timeline@4.1.4
+  - @gemeente-denhaag/footer@4.3.7
+  - @gemeente-denhaag/card-group@2.1.5
+
 ## 5.1.8
 
 ### Patch Changes

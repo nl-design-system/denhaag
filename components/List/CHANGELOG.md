@@ -1,5 +1,11 @@
 # @gemeente-denhaag/list
 
+## 3.2.0
+
+### Minor Changes
+
+- 2076b4f: Update color tokens
+
 ## 3.1.4
 
 ### Patch Changes
