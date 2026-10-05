@@ -1,5 +1,11 @@
 # @gemeente-denhaag/side-navigation
 
+## 4.3.0
+
+### Minor Changes
+
+- 2076b4f: Update color tokens
+
 ## 4.2.4
 
 ### Patch Changes

@@ -1,5 +1,16 @@
 # @gemeente-denhaag/modal
 
+## 3.2.0
+
+### Minor Changes
+
+- 2076b4f: Update color tokens
+
+### Patch Changes
+
+- Updated dependencies [2076b4f]
+  - @gemeente-denhaag/button@3.2.0
+
 ## 3.1.4
 
 ### Patch Changes

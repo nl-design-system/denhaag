@@ -1,5 +1,12 @@
 # @gemeente-denhaag/footer
 
+## 4.3.7
+
+### Patch Changes
+
+- Updated dependencies [2076b4f]
+  - @gemeente-denhaag/list@3.2.0
+
 ## 4.3.6
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @gemeente-denhaag/design-tokens
 
+## 1.6.0
+
+### Minor Changes
+
+- 2076b4f: Update color tokens
+
 ## 1.5.0
 
 ### Minor Changes

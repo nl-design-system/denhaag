@@ -1,5 +1,16 @@
 # @gemeente-denhaag/open-forms
 
+## 2.6.0
+
+### Minor Changes
+
+- 2076b4f: Update color tokens
+
+### Patch Changes
+
+- Updated dependencies [2076b4f]
+  - @gemeente-denhaag/design-tokens@1.6.0
+
 ## 2.5.5
 
 ### Patch Changes
