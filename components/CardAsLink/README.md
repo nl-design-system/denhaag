@@ -124,27 +124,7 @@ Note: Heading and Label each carry their own typography (color, font-family, wei
 
 **Active**
 
-todo.card-as-link.active.background-color	{basis.color.default.bg-active}
-
-todo.card-as-link.active.border-color	{todo.card-as-link.border-color}
-
-todo.card-as-link.case.active.background-color	{basis.color.accent-1.bg-active}
-
-todo.card-as-link.case.active.border-color	{todo.card-as-link.case.border-color}
-
-todo.card-as-link.case.archived.active.background-color	{basis.color.default.bg-active}
-
-todo.card-as-link.case.archived.active.border-color	{todo.card-as-link.case.border-color}
-
-todo.card-as-link.plan.active.background-color	{basis.color.accent-1.bg-active}
-
-todo.card-as-link.plan.active.border-color	{basis.color.accent-1.bg-active}
-
-todo.card-as-link.plan.archived.active.background-color	{basis.color.default.bg-active}
-
-todo.card-as-link.plan.archived.active.border-color	{basis.color.default.bg-active}
-
-Note: `product` has no dedicated active/hover tokens yet. It relies on the generic, bare active/hover/focus tokens above.
+This component does have tokens for active colors/states but this Den Haag version uses the same end-values as the hover colors/states.
 
 **Hover**
 
@@ -152,9 +132,9 @@ todo.card-as-link.hover.background-color	{basis.color.default.bg-hover}
 
 todo.card-as-link.hover.border-color	{todo.card-as-link.border-color}
 
-todo.card-as-link.heading.hover.text-decoration	underline
+todo.card-as-link.heading.hover.text-decoration	only has 'underline' as a fallback
 
-todo.card-as-link.label.hover.text-decoration	underline
+todo.card-as-link.label.hover.text-decoration	only has 'underline' as a fallback
 
 todo.card-as-link.case.hover.background-color	{basis.color.accent-1.bg-hover}
 
@@ -189,7 +169,7 @@ _Card_
   - _Pre-header_ (optional)
     - decoration (Case: paper-fold, Plan: clipboard-clip)
     - image (Default)
-    - status content, e.g. data-badge/alert (Case-extended)
+    - slot for other components like status content, e.g. data-badge/alert (Case-extended)
   - _Header_
     - hgroup (only when preHeading + real Heading are both present)
       - pre-heading
