@@ -1,0 +1,24 @@
+.denhaag-card-as-link__action {
+  display: block;
+  color: var(--denhaag-card-as-link-link-icon-color);
+
+  &:focus {
+    outline: none;
+  }
+
+  // This "whole-card click trick" works in any footer zone.
+  // (Both in left __footer-meta or right __footer-link-icon).
+  // It always stretches over the full card.
+  &::before {
+    content: "";
+    position: absolute;
+    inset-block-start: 0;
+    inset-block-end: 0;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+  }
+
+  svg {
+    display: block !important;
+  }
+}
