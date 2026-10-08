@@ -1,6 +1,6 @@
 {
   "name": "@gemeente-denhaag/card",
-  "version": "0.1.0",
+  "version": "5.1.3",
   "description": "A Card component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
@@ -41,7 +41,6 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@gemeente-denhaag/heading": "workspace:*",
     "@gemeente-denhaag/icons": "workspace:*",
     "@gemeente-denhaag/link": "workspace:*",
     "@gemeente-denhaag/paragraph": "workspace:*",
