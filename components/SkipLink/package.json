@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@nl-design-system-candidate/skip-link-css": "1.0.5",
-    "@nl-design-system-candidate/skip-link-react": "1.1.7"
+    "@nl-design-system-candidate/skip-link-react": "1.1.8"
   },
   "peerDependencies": {
     "react": "18 || 19",
