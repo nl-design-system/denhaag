@@ -1,7 +1,7 @@
 {
   "name": "@gemeente-denhaag/card-as-link",
   "version": "0.1.0",
-  "description": "A universal Card component",
+  "description": "A universal Card component with a single link",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
     "type": "git",

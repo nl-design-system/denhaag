@@ -1,4 +1,4 @@
-import React, { HTMLAttributes } from 'react';
+import React, { HTMLAttributes, PropsWithChildren } from 'react';
 import clsx from 'clsx';
 import { CardAsLinkAppearance, CardAsLinkVariant } from './CardAsLink';
 
@@ -10,9 +10,10 @@ export type CardAsLinkBaseProps = HTMLAttributes<HTMLDivElement> & {
 export const CardAsLinkBase = ({
   appearance = 'default',
   variant = 'default',
+  children,
   className,
   ...props
-}: CardAsLinkBaseProps) => {
+}: PropsWithChildren<CardAsLinkBaseProps>) => {
   const classNames = clsx(
     'denhaag-card-as-link',
     {
@@ -26,7 +27,11 @@ export const CardAsLinkBase = ({
     className,
   );
 
-  return <div className={classNames} {...props}></div>;
+  return (
+    <div className={classNames} {...props}>
+      {children}
+    </div>
+  );
 };
 
 export default CardAsLinkBase;
