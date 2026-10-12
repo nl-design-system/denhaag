@@ -13,7 +13,7 @@ import { HeaderAction } from './HeaderAction';
 import { Breadcrumb, BreadcrumbProps } from '@gemeente-denhaag/breadcrumb';
 import { Sheet, SheetOverlay, SheetContainer, SheetDialog, useEscapeKey, useScreenSize } from '@gemeente-denhaag/sheet';
 import { IconButton } from '@gemeente-denhaag/iconbutton';
-import { AvatarIcon, CloseIcon, LogOutIcon, UserIcon } from '@gemeente-denhaag/icons';
+import { AvatarIcon, CloseIcon, LogOutIcon } from '@gemeente-denhaag/icons';
 import { LanguageSwitcherLogic, LanguageSwitcherLogicProps } from '@gemeente-denhaag/language-switcher';
 import { Heading } from '@gemeente-denhaag/heading';
 import { Paragraph } from '@gemeente-denhaag/paragraph';
@@ -178,7 +178,7 @@ export const Header = ({
   };
 
   const { className: logoClassName, ...logoProps } = logo;
-  const CustomAvatarIcon = userButton.icon ?? UserIcon;
+  const CustomAvatarIcon = userButton.icon;
 
   return (
     <HeaderBase>
@@ -204,7 +204,7 @@ export const Header = ({
               <Link
                 href={userButton.href}
                 Link={CustomLink}
-                className="denhaag-header__action denhaag-header__action--mobile-only"
+                className="denhaag-header__action denhaag-header__action--avatar"
               >
                 <CustomAvatarIcon />
               </Link>

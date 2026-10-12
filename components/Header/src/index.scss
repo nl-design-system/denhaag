@@ -60,8 +60,12 @@
       display: block;
     }
 
-    &--mobile-only {
-      display: block;
+    &--avatar {
+      width: var(--denhaag-header-avatar-width, var(--basis-size-sm));
+      height: var(--denhaag-header-avatar-height, var(--basis-size-sm));
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       @media (width >= 1024px) {
         display: none;
