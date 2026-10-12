@@ -178,7 +178,7 @@ export const Header = ({
   };
 
   const { className: logoClassName, ...logoProps } = logo;
-  const CustomAvatarIcon = userButton.icon;
+  const CustomAvatarIcon = userButton.icon ?? AvatarIcon;
 
   return (
     <HeaderBase>
