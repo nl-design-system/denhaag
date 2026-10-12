@@ -1,5 +1,15 @@
 # @gemeente-denhaag/storybook
 
+## 6.1.1
+
+### Patch Changes
+
+- Updated dependencies [d894705]
+- Updated dependencies [86d250e]
+- Updated dependencies [d894705]
+  - @gemeente-denhaag/header@5.1.1
+  - @gemeente-denhaag/breadcrumb@5.3.1
+
 ## 6.1.0
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 # @gemeente-denhaag/breadcrumb
 
+## 5.3.1
+
+### Patch Changes
+
+- 86d250e: Fix breadcrumb contrast issue
+
 ## 5.3.0
 
 ### Minor Changes
