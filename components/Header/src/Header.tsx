@@ -37,6 +37,7 @@ export interface HeaderProps {
 interface UserButtonProps {
   icon?: React.ElementType;
   href?: string;
+  label?: string;
   CustomLink?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
 }
 
@@ -73,7 +74,7 @@ export const Header = ({
   userprofileMenu,
   languageSwitcherMenu,
   mobileMenu,
-  userButton = { icon: AvatarIcon, href: '#' },
+  userButton = { icon: AvatarIcon, href: '#', label: 'Mijn account' },
   logoutButton,
   mobileBreakpoint = 1024,
   logo = { href: 'https://www.denhaag.nl', 'aria-label': 'Gemeente Den Haag', children: <HeaderLogo /> },
@@ -204,6 +205,7 @@ export const Header = ({
               <Link
                 href={userButton.href}
                 Link={CustomLink}
+                aria-label={userButton.label ?? 'Mijn account'}
                 className="denhaag-header__action denhaag-header__action--avatar"
               >
                 <CustomAvatarIcon />
