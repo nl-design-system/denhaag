@@ -39,7 +39,7 @@
 
 .denhaag-breadcrumb__title {
   font-size: var(--denhaag-breadcrumb-title-font-size, var(--basis-text-font-size-sm));
-  opacity: var(--denhaag-breadcrumb-title-opacity, 50%);
+  color: var(--denhaag-breadcrumb-title-color, var(--denhaag-color-grey-600));
 
   @media (width >= 1024px) {
     display: none;
