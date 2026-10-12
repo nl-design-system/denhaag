@@ -1,4 +1,4 @@
-import React, { AnchorHTMLAttributes, ComponentType } from 'react';
+import React, { AnchorHTMLAttributes, ComponentType, ReactNode } from 'react';
 import clsx from 'clsx';
 import { ArrowRightIcon } from '@gemeente-denhaag/icons';
 import { BasicLink } from '@gemeente-denhaag/link';
@@ -25,35 +25,44 @@ export type CardAsLinkHeadingLevel = 2 | 3 | 4 | 5 | 6;
 
 export interface CardAsLinkProps {
   /** Small line of text above the heading/label, e.g. a status ("Pre-heading" in NLDS terms — not to be confused with the Pre-header image slot) */
-  preHeading?: string;
-  title: string;
-  subTitle?: string;
+  preHeading?: ReactNode;
   /**
-   * Without this prop the title is rendered as a label paragraph (for WCAG).
-   * Set this prop if the title should be a real HTML heading in the page
-   * structure, e.g. headingLevel={2} for an <h2>.
+   * `title`: the card's main title. Always shown, as a heading or as a label. Kept as `string` (not `ReactNode`) because it
+   * also serves as the accessible name (`aria-label`) for the icon-only footer link.
+   */
+  title: string;
+  /** `subTitle`: additional descriptive text shown in the Body, below the title. Optional. */
+  subTitle?: ReactNode;
+  /**
+   * `headingLevel`: controls how `title` is rendered. Without it the title
+   * is a plain label paragraph (<p>), not a heading, so the card does not
+   * add an empty or misleading entry to the page's heading structure for
+   * screen readers. Set it when the card introduces a subject of its own,
+   * e.g. headingLevel={2} renders the title as an <h2>.
    */
   headingLevel?: CardAsLinkHeadingLevel;
   /**
-   * Only relevant when headingLevel is not set — i.e. when the title
-   * renders as a Label, not a real Heading, because there is no other
-   * content in the card. This applies the *visual* styling of that
-   * heading level (via nl-heading--level-N, the same styling engine the
-   * real Heading uses) to the Label, WITHOUT making it a semantic
-   * heading — no <h*> tag, no entry in the page's heading structure.
-   * Purely cosmetic, for cards that should look visually consistent with
-   * heading-bearing cards even though they have no heading-worthy content.
+   * `labelVisualLevel`: only relevant when `headingLevel` is not set, so
+   * the title renders as a label (<p>). Gives that label the visual style
+   * of a heading level (via nl-heading--level-N), without making it a
+   * semantic heading: no <h*> tag and no entry in the page's heading
+   * structure. Purely cosmetic.
    */
   labelVisualLevel?: CardAsLinkHeadingLevel;
-  metadata?: React.ReactNode;
+  metadata?: ReactNode;
+  /**
+   * `body`: renders any content in the Body. Takes priority over
+   * `descriptionList` and `subTitle` when set.
+   */
+  body?: ReactNode;
   href?: string;
   appearance?: CardAsLinkAppearance;
   /** Which color theme/layout the card uses */
   variant?: CardAsLinkVariant;
   /** Only used when variant="default" — content shown in the pre-header slot, e.g. an <img> */
-  preHeaderImage?: React.ReactNode;
+  preHeaderImage?: ReactNode;
   /** Only used when variant="case-extended" — content shown in the pre-header slot, e.g. a status badge */
-  preHeaderStatus?: React.ReactNode;
+  preHeaderStatus?: ReactNode;
   /**
    * Only used when variant="case-extended" — renders a DescriptionList in
    * the Body instead of the subTitle description paragraph.
@@ -66,7 +75,7 @@ export interface CardAsLinkProps {
    * "whole card is clickable" trick is attached to this link instead of
    * the icon-only Action.
    */
-  linkText?: string;
+  linkText?: ReactNode;
   /** For projects that want to inject their own Link component (e.g. react-router) */
   Link?: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>>;
 }
@@ -83,6 +92,7 @@ export const CardAsLink = ({
   headingLevel,
   labelVisualLevel,
   metadata,
+  body,
   href,
   appearance = 'default',
   variant = 'default',
@@ -113,43 +123,46 @@ export const CardAsLink = ({
     </p>
   );
 
+  // The pre-heading and title are the same with or without <hgroup>,
+  // so they are built once here and only wrapped below when needed.
+  const headerContent = (
+    <>
+      {preHeading && <Paragraph className="denhaag-card-as-link__pre-heading">{preHeading}</Paragraph>}
+      {titleElement}
+    </>
+  );
+
   return (
     <Base appearance={appearance} variant={variant}>
       <Wrapper>
+        <Header>
+          {/*
+            <hgroup> needs a real heading (h1–h6) inside it. Without
+            `headingLevel` the title is a plain <p> label, so we only wrap
+            in <hgroup> if both `preHeading` and `headingLevel` are set.
+          */}
+          {preHeading && headingLevel ? <hgroup>{headerContent}</hgroup> : headerContent}
+        </Header>
+        {/*
+          All Pre-header content (Decoration, Image, Status) comes AFTER
+          the Header in the DOM. A screen reader should always hear the
+          card's subject (the Heading) first, and we can't assume an image
+          is purely decorative, it may carry meaningful alt text. The
+          Pre-header restores the usual visual position (above the
+          Heading) via a fixed CSS `order: -1` in _pre-header.scss,
+          without changing DOM/reading order.
+        */}
         {hasDecoration && (
           <PreHeader>
-            <Decoration />
+            <Decoration aria-hidden="true" />
           </PreHeader>
         )}
         {hasPreHeaderImage && <PreHeader>{preHeaderImage}</PreHeader>}
-        <Header>
-          {preHeading && headingLevel ? (
-            <hgroup>
-              <Paragraph className="denhaag-card-as-link__pre-heading">{preHeading}</Paragraph>
-              {titleElement}
-            </hgroup>
-          ) : (
-            <>
-              {preHeading && <Paragraph className="denhaag-card-as-link__pre-heading">{preHeading}</Paragraph>}
-              {titleElement}
-            </>
-          )}
-        </Header>
-        {/*
-        case-extended's pre-header content (e.g. an Alert/status) is
-        meaningful, not decorative, so it comes AFTER the Heading in the
-        DOM — a screen reader should announce the card's subject Heading first,
-        then its status. Default/Case's pre-header content (image,
-        decoration) stays BEFORE the Heading, since that content is
-        either decorative or purely visual framing.
-
-        It must still visually appear above the Heading, like
-        Default/Case's pre-header content does. `visuallyFirst` applies a
-        CSS order to restore that visual position without changing the
-        DOM/reading order set above.
-      */}
-        {hasPreHeaderStatus && <PreHeader visuallyFirst>{preHeaderStatus}</PreHeader>}
-        {descriptionList ? (
+        {hasPreHeaderStatus && <PreHeader>{preHeaderStatus}</PreHeader>}
+        {/* `body` renders any content in the Body and takes priority over `descriptionList` and `subTitle`. */}
+        {body ? (
+          <Body>{body}</Body>
+        ) : descriptionList ? (
           <Body>
             <DescriptionList items={descriptionList} />
           </Body>
@@ -176,7 +189,7 @@ export const CardAsLink = ({
             <div className="denhaag-card-as-link__footer-meta">
               {isCaseExtended
                 ? href && (
-                    <Action aria-label={title} href={href} Action={Link}>
+                    <Action href={href} Action={Link}>
                       {linkText}
                     </Action>
                   )

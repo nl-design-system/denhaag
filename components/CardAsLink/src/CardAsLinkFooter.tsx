@@ -1,11 +1,15 @@
-import React, { HTMLAttributes } from 'react';
+import React, { HTMLAttributes, PropsWithChildren } from 'react';
 import clsx from 'clsx';
 
-export type CardAsLinkFooterProps = HTMLAttributes<HTMLDivElement>;
+export type CardAsLinkFooterProps = HTMLAttributes<HTMLElement>;
 
-export const CardAsLinkFooter = ({ className, ...props }: CardAsLinkFooterProps) => {
+export const CardAsLinkFooter = ({ className, children, ...props }: PropsWithChildren<CardAsLinkFooterProps>) => {
   const classNames = clsx('denhaag-card-as-link__footer', className);
-  return <div className={classNames} {...props}></div>;
+  return (
+    <footer className={classNames} {...props}>
+      {children}
+    </footer>
+  );
 };
 
 export default CardAsLinkFooter;
