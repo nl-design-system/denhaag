@@ -142,6 +142,16 @@ With Express we created an CSP environment to test our components in. This is a 
 node server.js
 ```
 
+#### Changesets
+
+Add a changeset when a change to a package should result in a new release. Run:
+
+```bash
+pnpm changeset
+```
+
+Select the packages that changed, choose the appropriate version bump (`patch`, `minor`, or `major`), and enter a short summary of the change. Commit the generated Markdown file in `.changeset` with your changes. The release workflow uses changesets to create a release pull request and publish packages.
+
 ## Cooperation with NL Design System
 
 Certain Components available in this repository may become part of the NL Design System component library. When you contribute to this project you allow your contributions to be made a part of the NL Design System component library. The NL Design System project maintainers decide which components will be included in their component library.
