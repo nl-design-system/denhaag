@@ -1,5 +1,14 @@
 # @gemeente-denhaag/header
 
+## 5.1.1
+
+### Patch Changes
+
+- d894705: Fix aria label on icon only button
+- d894705: Align mobile avatar
+- Updated dependencies [86d250e]
+  - @gemeente-denhaag/breadcrumb@5.3.1
+
 ## 5.1.0
 
 ### Minor Changes

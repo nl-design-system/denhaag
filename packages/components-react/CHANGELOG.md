@@ -1,5 +1,13 @@
 # @gemeente-denhaag/components-react
 
+## 5.1.10
+
+### Patch Changes
+
+- Updated dependencies [d894705]
+- Updated dependencies [d894705]
+  - @gemeente-denhaag/header@5.1.1
+
 ## 5.1.9
 
 ### Patch Changes
