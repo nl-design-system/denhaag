@@ -28,7 +28,7 @@ The Card-as-link consists of:
 1. Pre-header (optional) - content-agnostic slot rendered before the Header. Used for a paper-fold/clipboard-style Decoration (`case`, `plan`), an `<img>` (`default`), or a status component such as `Alert`/`DataBadge` (`case-extended`, where it is placed after the Heading in the DOM for accessible reading order - see Accessibility below).
 2. Header (optional) - contains the optional pre-heading and the Heading/Label.
 3. Body (optional) - contains either a description paragraph (`subTitle`) or a `DescriptionList` (`case-extended`, via the `descriptionList` prop).
-4. Footer (optional, shown when there is `metadata` and/or any `href`) - has two fixed zones: `__footer-meta` (left) and `__footer-link-icon` (right), so alignment stays correct regardless of which zone is empty.
+4. Footer (optional, shown when there is `metadata` and/or any `href`) - has two fixed zones: `__meta` (left) and `__link-icon` (right), so alignment stays correct regardless of which zone is empty.
 
 ## Variants
 
@@ -180,8 +180,8 @@ _Card_
     - description
     - description-list (Case-extended)
   - _Footer_ (optional)
-    - footer-meta
-    - footer-link-icon
+    - __meta (metadata, can also be a date)
+    - __link-icon
 
 ## Accessibility
 

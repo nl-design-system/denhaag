@@ -1,11 +1,15 @@
-import React, { HTMLAttributes } from 'react';
+import React, { HTMLAttributes, PropsWithChildren } from 'react';
 import clsx from 'clsx';
 
-export type CardAsLinkContextProps = HTMLAttributes<HTMLDivElement>;
+export type CardAsLinkMetaProps = HTMLAttributes<HTMLDivElement>;
 
-export const CardAsLinkMetadata = ({ className, ...props }: CardAsLinkContextProps) => {
-  const classNames = clsx('denhaag-card-as-link__context', className);
-  return <div className={classNames} {...props}></div>;
+export const CardAsLinkMeta = ({ className, children, ...props }: PropsWithChildren<CardAsLinkMetaProps>) => {
+  const classNames = clsx('denhaag-card-as-link__meta', className);
+  return (
+    <div className={classNames} {...props}>
+      {children}
+    </div>
+  );
 };
 
-export default CardAsLinkMetadata;
+export default CardAsLinkMeta;

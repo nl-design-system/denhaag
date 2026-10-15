@@ -13,7 +13,7 @@ import Decoration from './CardAsLinkDecoration';
 import PreHeader from './CardAsLinkPreHeader';
 import Header from './CardAsLinkHeader';
 import Body from './CardAsLinkBody';
-import Metadata from './CardAsLinkMetadata';
+import Meta from './CardAsLinkMetadata';
 
 export type CardAsLinkAppearance = 'default' | 'archived' | 'list';
 
@@ -132,6 +132,15 @@ export const CardAsLink = ({
     </>
   );
 
+  // `body` takes priority over `descriptionList`, which takes priority over `subTitle`.
+  const bodyContent =
+    body ||
+    (descriptionList ? (
+      <DescriptionList items={descriptionList} />
+    ) : (
+      subTitle && <Paragraph className="denhaag-card-as-link__description">{subTitle}</Paragraph>
+    ));
+
   return (
     <Base appearance={appearance} variant={variant}>
       <Wrapper>
@@ -160,24 +169,12 @@ export const CardAsLink = ({
         {hasPreHeaderImage && <PreHeader>{preHeaderImage}</PreHeader>}
         {hasPreHeaderStatus && <PreHeader>{preHeaderStatus}</PreHeader>}
         {/* `body` renders any content in the Body and takes priority over `descriptionList` and `subTitle`. */}
-        {body ? (
-          <Body>{body}</Body>
-        ) : descriptionList ? (
-          <Body>
-            <DescriptionList items={descriptionList} />
-          </Body>
-        ) : (
-          subTitle && (
-            <Body>
-              <Paragraph className="denhaag-card-as-link__description">{subTitle}</Paragraph>
-            </Body>
-          )
-        )}
+        {bodyContent && <Body>{bodyContent}</Body>}
         {hasFooter && (
           <Footer>
             {/*
-            The footer always has two fixed zones — __footer-meta (left)
-            and __footer-link-icon (right) — instead of relying on
+            The footer always has two fixed zones — __meta (left)
+            and __link-icon (right) — instead of relying on
             justify-content: space-between with a variable number of
             children, or a margin-auto trick on the link itself. That way
             the right-hand zone always stays right-aligned, and the
@@ -186,16 +183,16 @@ export const CardAsLink = ({
             icon, a plain text link, an icon from a different icon
             library, etc.).
           */}
-            <div className="denhaag-card-as-link__footer-meta">
+            <Meta>
               {isCaseExtended
                 ? href && (
                     <Action href={href} Action={Link}>
                       {linkText}
                     </Action>
                   )
-                : metadata && <Metadata>{metadata}</Metadata>}
-            </div>
-            <div className="denhaag-card-as-link__footer-link-icon">
+                : metadata}
+            </Meta>
+            <div className="denhaag-card-as-link__link-icon">
               {!isCaseExtended && href && (
                 <Action aria-label={title} href={href} Action={Link}>
                   <ArrowRightIcon className="denhaag-card-as-link__arrow" />
