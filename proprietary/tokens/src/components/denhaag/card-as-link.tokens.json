@@ -62,6 +62,9 @@
         "line-height": { "value": "1.5" },
         "text-transform": { "value": "uppercase" }
       },
+      "meta": {
+        "color": { "value": "{denhaag.color.grey.600}" }
+      },
       "icon": {
         "color": { "value": "{denhaag.color.blue.600}" },
         "size": { "value": "{basis.size.icon.md}" }
@@ -150,9 +153,6 @@
         },
         "footer": {
           "gap": { "value": "{basis.space.block.2xl}" }
-        },
-        "metadata": {
-          "color": { "value": "{denhaag.color.grey.600}" }
         }
       },
       "case": {
