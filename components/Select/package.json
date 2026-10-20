@@ -31,7 +31,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@utrecht/component-library-react": "14.0.2",
+    "@utrecht/component-library-react": "15.0.0",
     "@utrecht/select-css": "3.0.1",
     "clsx": "2.1.1"
   },
