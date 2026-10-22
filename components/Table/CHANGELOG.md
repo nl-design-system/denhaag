@@ -1,5 +1,12 @@
 # @gemeente-denhaag/table
 
+## 4.1.3
+
+### Patch Changes
+
+- Updated dependencies [a3eabd8]
+  - @gemeente-denhaag/link@4.2.3
+
 ## 4.1.2
 
 ### Patch Changes

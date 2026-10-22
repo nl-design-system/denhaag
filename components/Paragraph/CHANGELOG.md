@@ -1,5 +1,11 @@
 # @gemeente-denhaag/paragraph
 
+## 2.2.3
+
+### Patch Changes
+
+- a3eabd8: Update dependencies
+
 ## 2.2.2
 
 ### Patch Changes
