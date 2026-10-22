@@ -1,5 +1,11 @@
 # @gemeente-denhaag/skip-link
 
+## 1.2.3
+
+### Patch Changes
+
+- a3eabd8: Update dependencies
+
 ## 1.2.2
 
 ### Patch Changes

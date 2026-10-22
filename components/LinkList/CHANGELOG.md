@@ -1,5 +1,13 @@
 # @gemeente-denhaag/link-list
 
+## 6.3.4
+
+### Patch Changes
+
+- a3eabd8: Update dependencies
+- Updated dependencies [a3eabd8]
+  - @gemeente-denhaag/link@4.2.3
+
 ## 6.3.3
 
 ### Patch Changes

@@ -1,5 +1,12 @@
 # @gemeente-denhaag/file-upload
 
+## 1.1.5
+
+### Patch Changes
+
+- Updated dependencies [a3eabd8]
+  - @gemeente-denhaag/paragraph@2.2.3
+
 ## 1.1.4
 
 ### Patch Changes

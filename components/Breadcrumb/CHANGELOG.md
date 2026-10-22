@@ -1,5 +1,12 @@
 # @gemeente-denhaag/breadcrumb
 
+## 5.3.2
+
+### Patch Changes
+
+- Updated dependencies [a3eabd8]
+  - @gemeente-denhaag/link@4.2.3
+
 ## 5.3.1
 
 ### Patch Changes
