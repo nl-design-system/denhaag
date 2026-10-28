@@ -28,6 +28,10 @@
   --utrecht-form-field-invalid-border-inline-start-color: var(--denhaag-color-red-500);
   --utrecht-form-field-invalid-border-inline-start-width: 4px;
   --utrecht-form-field-invalid-padding-inline-start: 16px;
+  --of-formio-content-info-padding-inline-start: 0;
+  --of-formio-content-success-padding-inline-start: 0;
+  --of-formio-content-warning-padding-inline-start: 0;
+  --of-formio-content-error-padding-inline-start: 0;
 }
 
 .utrecht-page {
@@ -186,3 +190,121 @@
 .openforms-progress-indicator-item {
   --utrecht-link-text-decoration: none;
 }
+
+.openforms-formio-content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 10px;
+  gap: 10px;
+  padding: 24px 0 24px 0;
+  border-radius: 3px;
+
+
+  p {
+    padding-right: 24px;
+  }
+
+  &::before {
+    font-family: "Font Awesome 6 Free";
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  &>*{
+    grid-column: 2;
+  }
+
+  &--warning {
+    background-color: var(--denhaag-color-orange-1);
+
+    p {
+      color: var(--denhaag-color-orange-5);
+    }
+
+    ul{
+      color: var(--denhaag-color-orange-5);
+    }
+
+    ol{
+      color: var(--denhaag-color-orange-5); 
+    }
+
+    &::before {
+      content: "";
+      font-weight: 900;     
+      color: var(--denhaag-color-orange-3);
+      padding-left: 16px;
+    }
+  }
+
+  &--info {
+    background-color: var(--denhaag-color-blue-1);
+
+    p {
+      color: var(--denhaag-color-blue-5);
+    }
+
+    ol {      
+      color: var(--denhaag-color-blue-5);
+    }
+
+    ul {      
+      color: var(--denhaag-color-blue-5);
+    }
+
+
+    &::before {
+      content: "\f059";
+      color: var(--denhaag-color-blue-3);
+      padding-left: 16px;
+    }
+  }
+
+  
+  &--error {
+    
+    background-color: var(--denhaag-color-red-1);
+    
+
+    p {
+      color: var(--denhaag-color-red-5);
+    }
+    
+    ol {
+      color: var(--denhaag-color-red-5);
+    }
+
+    ul {
+      color: var(--denhaag-color-red-5);
+    }
+
+    &::before {
+      content: "\f057";
+      color: var(--denhaag-color-red-3);
+      padding-left: 16px;
+    }
+  }
+
+  &--success {
+    background-color: var(--denhaag-color-green-1);
+
+    p {
+      color: var(--denhaag-color-green-5);
+    }
+
+    ul {
+      color: var(--denhaag-color-green-5);
+    }
+
+    ol {
+      color: var(--denhaag-color-green-5);
+    }
+
+    &::before {
+      content: "\f058";
+      color: var(--denhaag-color-green-3);
+      padding-left: 16px;
+    }
+  }
+}
+
