@@ -187,26 +187,71 @@
   --utrecht-link-text-decoration: none;
 }
 
-.openforms-formio-content{
-    padding: 20px 5px 20px 0;
+
+.openforms-formio-content {
+  display: flex;
+  gap: 10px;
+  padding: 24px 0;
+  border-radius: 3px;
+
+  p {
+    padding-right: 24px;
+  }
+
+  &::before {
+    font-family: "Font Awesome 6 Free";
+  }
+
+  &--warning {
+    background-color: var(--denhaag-color-orange-1);
+
+    p {
+      color: var(--denhaag-color-orange-5);
+    }
+
+    &::before {
+      content: "\0021";
+      color: var(--denhaag-color-orange-3);
+    }
+  }
+
+  &--info {
+    background-color: var(--denhaag-color-blue-1);
+
+    p {
+      color: var(--denhaag-color-blue-5);
+    }
+
+    &::before {
+      content: "\f059";
+      color: var(--denhaag-color-blue-3);
+    }
+  }
+
+  &--error {
+    background-color: var(--denhaag-color-red-1);
+
+    p {
+      color: var(--denhaag-color-red-5);
+    }
+
+    &::before {
+      content: "\f057";
+      color: var(--denhaag-color-red-3);
+    }
+  }
+
+  &--success {
+    background-color: var(--denhaag-color-green-1);
+
+    p {
+      color: var(--denhaag-color-green-5);
+    }
+
+    &::before {
+      content: "\f058";
+      color: var(--denhaag-color-green-3);
+    }
+  }
 }
 
-//background colour for warning field
-.openforms-formio-content--warning{
-  background-color: var(--denhaag-color-orange-1);
-}
-
-//background colour for info field
-.openforms-formio-content--info{
-  background-color: var(--denhaag-color-blue-1);
-}
-
-//background colour for info field
-.openforms-formio-content--error{
-  background-color: var(--denhaag-color-red-1);
-}
-
-//background colour for info field
-.openforms-formio-content--success{
-  background-color: var(--denhaag-color-green-1);
-}
