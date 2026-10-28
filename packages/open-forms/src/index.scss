@@ -28,6 +28,10 @@
   --utrecht-form-field-invalid-border-inline-start-color: var(--denhaag-color-red-500);
   --utrecht-form-field-invalid-border-inline-start-width: 4px;
   --utrecht-form-field-invalid-padding-inline-start: 16px;
+  --of-formio-content-info-padding-inline-start: 0;
+  --of-formio-content-success-padding-inline-start: 0;
+  --of-formio-content-warning-padding-inline-start: 0;
+  --of-formio-content-error-padding-inline-start: 0;
 }
 
 .utrecht-page {
@@ -229,6 +233,7 @@
       content: "";
       font-weight: 900;     
       color: var(--denhaag-color-orange-3);
+      padding-left: 16px;
     }
   }
 
@@ -251,6 +256,7 @@
     &::before {
       content: "\f059";
       color: var(--denhaag-color-blue-3);
+      padding-left: 16px;
     }
   }
 
@@ -275,6 +281,7 @@
     &::before {
       content: "\f057";
       color: var(--denhaag-color-red-3);
+      padding-left: 16px;
     }
   }
 
@@ -296,6 +303,7 @@
     &::before {
       content: "\f058";
       color: var(--denhaag-color-green-3);
+      padding-left: 16px;
     }
   }
 }
