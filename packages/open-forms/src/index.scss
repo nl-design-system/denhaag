@@ -187,12 +187,14 @@
   --utrecht-link-text-decoration: none;
 }
 
-
 .openforms-formio-content {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 10px;
   gap: 10px;
-  padding: 24px 0;
+  padding: 24px 0 24px 0;
   border-radius: 3px;
+
 
   p {
     padding-right: 24px;
@@ -200,6 +202,12 @@
 
   &::before {
     font-family: "Font Awesome 6 Free";
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  &>*{
+    grid-column: 2;
   }
 
   &--warning {
@@ -207,6 +215,14 @@
 
     p {
       color: var(--denhaag-color-orange-5);
+    }
+
+    ul{
+      color: var(--denhaag-color-orange-5);
+    }
+
+    ol{
+      color: var(--denhaag-color-orange-5); 
     }
 
     &::before {
@@ -222,16 +238,36 @@
       color: var(--denhaag-color-blue-5);
     }
 
+    ol {      
+      color: var(--denhaag-color-blue-5);
+    }
+
+    ul {      
+      color: var(--denhaag-color-blue-5);
+    }
+
+
     &::before {
       content: "\f059";
       color: var(--denhaag-color-blue-3);
     }
   }
 
+  
   &--error {
+    
     background-color: var(--denhaag-color-red-1);
+    
 
     p {
+      color: var(--denhaag-color-red-5);
+    }
+    
+    ol {
+      color: var(--denhaag-color-red-5);
+    }
+
+    ul {
       color: var(--denhaag-color-red-5);
     }
 
@@ -245,6 +281,14 @@
     background-color: var(--denhaag-color-green-1);
 
     p {
+      color: var(--denhaag-color-green-5);
+    }
+
+    ul {
+      color: var(--denhaag-color-green-5);
+    }
+
+    ol {
       color: var(--denhaag-color-green-5);
     }
 
