@@ -226,7 +226,8 @@
     }
 
     &::before {
-      content: "\0021";
+      content: "";
+      font-weight: 900;     
       color: var(--denhaag-color-orange-3);
     }
   }
