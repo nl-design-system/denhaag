@@ -112,6 +112,9 @@
         },
         "black": {
           "value": "hsl(0 0% 0%)"
+        },
+        "transparent": {
+          "value": "hsla(0, 0%, 0%, 0)"
         }
       }
     }
