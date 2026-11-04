@@ -1,0 +1,14 @@
+{
+  "$comment": "TODO: After migrating existing component tokens to common tokens, move this token rule into .stylelintrc.json and remove this staged configuration. During the transition, keep it staged-only so full lint and CI checks do not require migrating the entire codebase at once.",
+  "extends": "./.stylelintrc.json",
+  "rules": {
+    "declaration-property-value-disallowed-list": [
+      {
+        "text-align": ["left", "right"],
+        "/.*/": [
+          "/\\bvar\\(\\s*(?:\\/\\*[\\s\\S]*?\\*\\/\\s*)*--denhaag-(?:color|font-family|font-size|font-weight|line-height|letter-spacing|radius|size|border-width|border-style)-/"
+        ]
+      }
+    ]
+  }
+}
