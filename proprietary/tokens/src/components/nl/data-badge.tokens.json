@@ -14,7 +14,7 @@
         "value": "0"
       },
       "color": {
-        "value": "{basis.heading.color}"
+        "value": "{basis.color.heading.color}"
       },
       "font-family": {
         "value": "{basis.text.font-family.default}"
