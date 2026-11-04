@@ -8,7 +8,7 @@ const colorTokens = tokens.denhaag.color;
 const colors = ['ocher', 'green', 'red', 'orange', 'blue', 'grey', 'neutrals'] as const;
 
 const meta: Meta = {
-  title: 'Primitive Tokens/Colors',
+  title: 'Primitive Tokens/Color',
   tags: ['autodocs', '!dev'],
   parameters: {
     chromatic: { disableSnapshot: true },

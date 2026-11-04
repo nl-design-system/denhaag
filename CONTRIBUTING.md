@@ -9,6 +9,30 @@ We pledge to act and interact in ways that contribute to an open, welcoming, div
 Before you make a commit or PR, run `pnpm run lint` to see if everything is in order.
 Many things can be fixed automatically using `pnpm run lint-fix`. Make separate commits for separate purposes.
 
+## Common token guard
+
+ESLint's `no-restricted-syntax` rule checks token references in every folder under
+`proprietary/tokens/src/components/`: only `{basis.*}` and `{common.*}` are allowed. Literal values
+remain allowed, and the common token layer may reference primitives.
+
+Stylelint's `declaration-property-value-disallowed-list` rule blocks primitive CSS variables by
+their token category (color, size, radius, typography and borders), including nested fallbacks.
+Component CSS variables remain allowed.
+
+Husky runs `lint-staged` before committing. Run `pnpm exec lint-staged` to run
+the same checks manually. Only staged files are selected; each selected file is checked in full,
+so existing violations in that file must be migrated. Unstaged files are excluded and there are
+no migration exceptions.
+
+The token guards live in `eslint.staged.config.mjs` and `.stylelintrc.staged.json`, which extend
+the existing lint configurations. They are used only by `lint-staged`. The existing `pnpm run lint`,
+`lint:css`, `lint:js` and GitHub workflow retain their original checks without the new token guards.
+
+TODO: Once the migration to common tokens is complete, move the staged token rules into
+`eslint.config.mjs` and `.stylelintrc.json`, remove the staged configurations and let `lint-staged`
+use the root configurations again. During the transition, moving these rules would cause full lint
+and CI checks to fail on existing primitive references throughout the codebase.
+
 ## Cooperation with NL Design System
 
 Certain Components available in this repository may become part of the NL Design System component library. When you contribute to this project you allow your contributions to be made a part of the NL Design System component library. The NL Design System project maintainers decide which components will be included in their component library.

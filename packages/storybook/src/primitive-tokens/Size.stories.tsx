@@ -16,7 +16,7 @@ const sizeTokensSorted = Object.entries(sizeTokens).sort((a, b) => {
 });
 
 const meta: Meta = {
-  title: 'Primitive Tokens/Sizes',
+  title: 'Primitive Tokens/Size',
   tags: ['autodocs', '!dev'],
   parameters: {
     chromatic: { disableSnapshot: true },
