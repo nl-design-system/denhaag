@@ -285,9 +285,6 @@ importers:
 
   components/Card:
     dependencies:
-      '@gemeente-denhaag/heading':
-        specifier: workspace:*
-        version: link:../Heading
       '@gemeente-denhaag/icons':
         specifier: workspace:*
         version: link:../Icons
@@ -314,7 +311,7 @@ importers:
         version: link:../ButtonGroup
       '@gemeente-denhaag/card':
         specifier: workspace:*
-        version: link:../CaseCard
+        version: link:../Card
       '@gemeente-denhaag/link':
         specifier: workspace:*
         version: link:../Link
@@ -326,24 +323,6 @@ importers:
         version: link:../CardAuthentication
 
   components/CardNews: {}
-
-  components/CaseCard:
-    dependencies:
-      '@gemeente-denhaag/icons':
-        specifier: workspace:*
-        version: link:../Icons
-      '@gemeente-denhaag/link':
-        specifier: workspace:*
-        version: link:../Link
-      '@gemeente-denhaag/paragraph':
-        specifier: workspace:*
-        version: link:../Paragraph
-      '@gemeente-denhaag/utils':
-        specifier: workspace:*
-        version: link:../Utils
-      clsx:
-        specifier: 2.1.1
-        version: 2.1.1
 
   components/Checkbox:
     dependencies:
@@ -971,6 +950,27 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
 
+  components/TaskWrapper:
+    dependencies:
+      '@gemeente-denhaag/heading':
+        specifier: workspace:*
+        version: link:../Heading
+      '@gemeente-denhaag/icons':
+        specifier: workspace:*
+        version: link:../Icons
+      '@gemeente-denhaag/link':
+        specifier: workspace:*
+        version: link:../Link
+      '@gemeente-denhaag/paragraph':
+        specifier: workspace:*
+        version: link:../Paragraph
+      '@gemeente-denhaag/utils':
+        specifier: workspace:*
+        version: link:../Utils
+      clsx:
+        specifier: 2.1.1
+        version: 2.1.1
+
   components/TextInput:
     dependencies:
       '@utrecht/textbox-css':
@@ -1041,7 +1041,7 @@ importers:
         version: link:../../components/ButtonGroup
       '@gemeente-denhaag/card':
         specifier: workspace:*
-        version: link:../../components/CaseCard
+        version: link:../../components/Card
       '@gemeente-denhaag/card-authentication':
         specifier: workspace:*
         version: link:../../components/CardAuthentication
@@ -1206,7 +1206,7 @@ importers:
         version: link:../../components/Button
       '@gemeente-denhaag/card':
         specifier: workspace:*
-        version: link:../../components/CaseCard
+        version: link:../../components/Card
       '@gemeente-denhaag/card-group':
         specifier: workspace:*
         version: link:../../components/CardGroup
@@ -1435,7 +1435,7 @@ importers:
         version: link:../../components/ButtonLink
       '@gemeente-denhaag/card':
         specifier: workspace:*
-        version: link:../../components/CaseCard
+        version: link:../../components/Card
       '@gemeente-denhaag/card-authentication':
         specifier: workspace:*
         version: link:../../components/CardAuthentication
@@ -1745,7 +1745,7 @@ importers:
     dependencies:
       '@gemeente-denhaag/card':
         specifier: workspace:*
-        version: link:../../../components/CaseCard
+        version: link:../../../components/Card
       '@gemeente-denhaag/icons':
         specifier: workspace:*
         version: link:../../../components/Icons

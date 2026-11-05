@@ -1,8 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
-// TODO: terugzetten naar `import { CaseCard } from '@gemeente-denhaag/card';`
-// zodra het package-naamconflict met de nieuwe universele Card is opgelost.
-import { CaseCard } from '../../../../components/CaseCard/src/CaseCard';
-import readme from '../../../../components/CaseCard/README.md?raw';
+import { CaseCard } from '@gemeente-denhaag/card';
+import readme from '../../../../components/Card/README.md?raw';
 import { templateLocale } from '../templates/util';
 import { formatDate, longDateOptions } from '@gemeente-denhaag/utils';
 import React from 'react';

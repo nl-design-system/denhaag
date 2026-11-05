@@ -1,5 +1,8 @@
 @use "./base";
-@use "./pre-header";
-@use "./body";
-@use "./header";
+@use "./wrapper";
+@use "./background";
+@use "./title";
+@use "./subtitle";
 @use "./footer";
+@use "./context";
+@use "./action";

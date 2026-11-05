@@ -1,12 +1,12 @@
 {
-  "name": "@gemeente-denhaag/card",
-  "version": "5.1.3",
-  "description": "A Card component",
+  "name": "@gemeente-denhaag/task-wrapper",
+  "version": "0.1.0",
+  "description": "A Task Wrapper component",
   "bugs": "https://github.com/nl-design-system/denhaag/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/nl-design-system/denhaag.git",
-    "directory": "components/Card"
+    "directory": "components/TaskWrapper"
   },
   "license": "EUPL-1.2",
   "author": "Municipality of The Hague",
@@ -41,6 +41,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@gemeente-denhaag/heading": "workspace:*",
     "@gemeente-denhaag/icons": "workspace:*",
     "@gemeente-denhaag/link": "workspace:*",
     "@gemeente-denhaag/paragraph": "workspace:*",
