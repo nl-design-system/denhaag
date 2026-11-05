@@ -10,6 +10,8 @@ interface FileProps {
   size?: string;
   lastUpdated?: string;
   loading?: boolean;
+  srLoadingLabel?: string;
+  downloadLabel?: string;
   removable?: boolean;
   removableLabel?: string;
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
@@ -22,6 +24,8 @@ export const File = ({
   lastUpdated,
   className,
   loading,
+  srLoadingLabel = 'Bestand wordt geladen.',
+  downloadLabel = 'Download',
   removable,
   removableLabel = 'Verwijderen',
   onClick,
@@ -39,34 +43,21 @@ export const File = ({
 
   const defaultProps = {
     className: clsx('denhaag-file', { 'denhaag-file--loading': loading }, className),
-    'aria-labelledby': 'name',
-    'aria-describedby': 'description',
   };
 
-  const Wrapper = ({ children }: { children: React.ReactNode }) =>
-    onClick ? (
-      <button onClick={onClick} {...defaultProps}>
-        {children}
-      </button>
-    ) : (
-      <a href={href} download={name} {...defaultProps}>
-        {children}
-      </a>
-    );
-
-  return (
-    <Wrapper>
+  const content = (
+    <>
       <div className="denhaag-file__left">
         {loading ? <SpinnerIcon /> : <FileTypeIcon className="denhaag-file__icon" />}
       </div>
       <div className="denhaag-file__right">
         <div className="denhaag-file__label">
-          <span id="name">
+          <span>
             <URLData>{name}</URLData>
           </span>
           <span> </span>
           {(extension || size || lastUpdated) && (
-            <span id="description">({[extension, size, lastUpdatedDate].filter(Boolean).join(', ')})</span>
+            <span>({[extension, size, lastUpdatedDate].filter(Boolean).join(', ')})</span>
           )}
         </div>
         {!loading && (
@@ -75,7 +66,7 @@ export const File = ({
               <div className="denhaag-file__link">
                 <DownloadIcon className="denhaag-file__link__icon" />
                 <div className="utrecht-link" tabIndex={-1}>
-                  Download
+                  {downloadLabel}
                 </div>
               </div>
             ) : (
@@ -89,6 +80,19 @@ export const File = ({
           </>
         )}
       </div>
-    </Wrapper>
+      <span role="status" aria-atomic="true" className="denhaag-file__sr-only">
+        {loading ? srLoadingLabel : ''}
+      </span>
+    </>
+  );
+
+  return onClick ? (
+    <button type="button" disabled={loading} onClick={onClick} {...defaultProps}>
+      {content}
+    </button>
+  ) : (
+    <a href={loading ? undefined : href} download={name} {...defaultProps}>
+      {content}
+    </a>
   );
 };
