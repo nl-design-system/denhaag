@@ -1,6 +1,6 @@
 {
   "denhaag": {
-    "card": {
+    "task-wrapper": {
       "border-radius": {
         "value": "3px"
       },
@@ -9,7 +9,7 @@
       },
       "title": {
         "color": {
-          "value": "{denhaag.color.blue.5}"
+          "value": "{denhaag.color.blue.700}"
         },
         "font-family": {
           "value": "{basis.heading.font-family}"
@@ -26,11 +26,11 @@
       },
       "action": {
         "color": {
-          "value": "{denhaag.color.blue.3}"
+          "value": "{denhaag.color.blue.500}"
         },
         "active": {
           "color": {
-            "value": "{denhaag.color.blue.4}"
+            "value": "{denhaag.color.blue.600}"
           }
         }
       }

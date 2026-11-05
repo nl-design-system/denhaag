@@ -1,14 +1,12 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
-// TODO: vervangen door `import { Card } from '@gemeente-denhaag/card';` zodra
-// het package-naamconflict met de oude CaseCard is opgelost.
-import { Card } from '../../../../components/Card/src/Card';
-import readme from '../../../../components/Card/README.md?raw';
+import { TaskWrapper } from '../../../../components/TaskWrapper/src/TaskWrapper';
+import readme from '../../../../components/TaskWrapper/README.md?raw';
 import React from 'react';
 
 type Story = StoryObj<typeof meta>;
 
-const meta: Meta<typeof Card> = {
-  component: Card,
+const meta: Meta<typeof TaskWrapper> = {
+  component: TaskWrapper,
   tags: ['autodocs'],
   argTypes: {
     preHeading: {
