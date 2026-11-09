@@ -1,5 +1,13 @@
 # @gemeente-denhaag/tab
 
+## 3.4.1
+
+### Patch Changes
+
+- a3eabd8: Update dependencies
+- Updated dependencies [a3eabd8]
+  - @gemeente-denhaag/number-badge@2.2.3
+
 ## 3.4.0
 
 ### Minor Changes
