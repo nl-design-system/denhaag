@@ -1,5 +1,15 @@
 # @gemeente-denhaag/file
 
+## 2.7.0
+
+### Minor Changes
+
+- 4e7d5d0: File accessibility improvements
+
+### Patch Changes
+
+- a3eabd8: Update dependencies
+
 ## 2.6.0
 
 ### Minor Changes

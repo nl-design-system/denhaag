@@ -1,5 +1,11 @@
 # @gemeente-denhaag/open-forms
 
+## 2.6.1
+
+### Patch Changes
+
+- a3eabd8: Update dependencies
+
 ## 2.6.0
 
 ### Minor Changes
