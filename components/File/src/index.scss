@@ -88,7 +88,7 @@
   &__sr-only {
     block-size: 1px;
     border-width: 0;
-    clip-path: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
     inline-size: 1px;
     margin-block: -1px;
     margin-inline: -1px;
