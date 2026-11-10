@@ -197,7 +197,7 @@
   column-gap: 10px;
   gap: 10px;
   padding: 24px 0 24px 0;
-  border-radius: 3px;
+  border-radius: var(--denhaag-border-radius);
 
 
   p {
@@ -215,94 +215,94 @@
   }
 
   &--warning {
-    background-color: var(--denhaag-color-orange-1);
+    background-color: var(--denhaag-color-orange-100);
 
     p {
-      color: var(--denhaag-color-orange-5);
+      color: var(--denhaag-color-orange-700);
     }
 
     ul{
-      color: var(--denhaag-color-orange-5);
+      color: var(--denhaag-color-orange-700);
     }
 
     ol{
-      color: var(--denhaag-color-orange-5); 
+      color: var(--denhaag-color-orange-700);
     }
 
     &::before {
       content: "";
-      font-weight: 900;     
-      color: var(--denhaag-color-orange-3);
+      font-weight: 900;
+      color: var(--denhaag-color-orange-500);
       padding-left: 16px;
     }
   }
 
   &--info {
-    background-color: var(--denhaag-color-blue-1);
+    background-color: var(--denhaag-color-blue-100);
 
     p {
-      color: var(--denhaag-color-blue-5);
+      color: var(--denhaag-color-blue-700);
     }
 
-    ol {      
-      color: var(--denhaag-color-blue-5);
+    ol {
+      color: var(--denhaag-color-blue-700);
     }
 
-    ul {      
-      color: var(--denhaag-color-blue-5);
+    ul {
+      color: var(--denhaag-color-blue-700);
     }
 
 
     &::before {
       content: "\f059";
-      color: var(--denhaag-color-blue-3);
+      color: var(--denhaag-color-blue-700);
       padding-left: 16px;
     }
   }
 
-  
+
   &--error {
-    
-    background-color: var(--denhaag-color-red-1);
-    
+
+    background-color: var(--denhaag-color-red-100);
+
 
     p {
-      color: var(--denhaag-color-red-5);
+      color: var(--denhaag-color-red-700);
     }
-    
+
     ol {
-      color: var(--denhaag-color-red-5);
+      color: var(--denhaag-color-red-700);
     }
 
     ul {
-      color: var(--denhaag-color-red-5);
+      color: var(--denhaag-color-red-700);
     }
 
     &::before {
       content: "\f057";
-      color: var(--denhaag-color-red-3);
+      color: var(--denhaag-color-red-500);
       padding-left: 16px;
     }
   }
 
   &--success {
-    background-color: var(--denhaag-color-green-1);
+    background-color: var(--denhaag-color-green-100);
 
     p {
-      color: var(--denhaag-color-green-5);
+      color: var(--denhaag-color-green-700);
     }
 
     ul {
-      color: var(--denhaag-color-green-5);
+      color: var(--denhaag-color-green-700);
     }
 
     ol {
-      color: var(--denhaag-color-green-5);
+      color: var(--denhaag-color-green-700);
     }
 
     &::before {
       content: "\f058";
-      color: var(--denhaag-color-green-3);
+      color: var(--denhaag-color-green-500);
       padding-left: 16px;
     }
   }
