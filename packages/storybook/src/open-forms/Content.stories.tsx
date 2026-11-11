@@ -98,11 +98,3 @@ export const Warning: Story = {
     html: 'Controleer uw gegevens voordat u verdergaat. Zorg dat u alle documenten voor uw aanvraag bij de hand heeft.',
   },
 };
-
-export const WithFormatting: Story = {
-  name: 'Met opmaak (HTML)',
-  args: {
-    variant: 'warning',
-    html: '<p><strong>Controleer uw gegevens voordat u verdergaat.</strong> Zorg dat u de volgende documenten heeft:</p><ul><li>Een geldig identiteitsbewijs</li><li>De bijlagen voor uw aanvraag</li></ul><p>Doorloop daarna deze stappen:</p><ol><li>Vul het formulier in.</li><li>Controleer en verstuur uw aanvraag.</li></ol>',
-  },
-};
