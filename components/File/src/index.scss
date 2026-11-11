@@ -85,8 +85,22 @@
     flex-grow: 1;
   }
 
+  &__sr-only {
+    block-size: 1px;
+    border-width: 0;
+    clip-path: inset(50%);
+    inline-size: 1px;
+    margin-block: -1px;
+    margin-inline: -1px;
+    overflow: hidden;
+    padding-block: 0;
+    padding-inline: 0;
+    position: absolute;
+    white-space: nowrap;
+  }
+
   &--loading {
-    pointer-events: none;
+    cursor: default;
 
     .denhaag-file__right {
       opacity: 60%;

@@ -1,5 +1,14 @@
 # @gemeente-denhaag/menu
 
+## 4.4.1
+
+### Patch Changes
+
+- a3eabd8: Update dependencies
+- Updated dependencies [a3eabd8]
+  - @gemeente-denhaag/number-badge@2.2.3
+  - @gemeente-denhaag/language-switcher@3.2.4
+
 ## 4.4.0
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 # @gemeente-denhaag/unorderedlist
 
+## 3.3.3
+
+### Patch Changes
+
+- a3eabd8: Update dependencies
+
 ## 3.3.2
 
 ### Patch Changes
