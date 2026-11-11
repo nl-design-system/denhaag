@@ -7,7 +7,8 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const ignored = new Set(['node_modules', 'dist', 'build', 'coverage', 'storybook-static']);
 const sourceExtension = /\.(?:css|scss|[cm]?js|jsx|ts|tsx)$/;
 const stylesheetExtension = /\.(?:css|scss)$/;
-const relative = (file) => path.relative(path.toNamespacedPath(root), path.toNamespacedPath(file)).split(path.sep).join('/');
+const relative = (file) =>
+  path.relative(path.toNamespacedPath(root), path.toNamespacedPath(file)).split(path.sep).join('/');
 
 async function isFile(file) {
   return stat(file).then(
