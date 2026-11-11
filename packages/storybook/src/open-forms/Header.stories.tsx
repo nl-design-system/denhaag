@@ -3,6 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Header } from '@gemeente-denhaag/header';
 import tokensDefinition from '../../../../proprietary/tokens/src/components/openforms/page-header.tokens.json';
 import './styles';
+import './header.scss';
 
 const meta = {
   title: 'Open Formulieren/Header',

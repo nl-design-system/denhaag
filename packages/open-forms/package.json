@@ -19,8 +19,7 @@
     "build": "npm-run-all build:*",
     "build:css": "rollup -c rollup.config.mjs",
     "build:clean": "rimraf --glob dist/.tsbuildinfo dist/*.{js,d.ts}",
-    "clean": "rimraf dist tsconfig.tsbuildinfo",
-    "watch:components": "chokidar --silent --follow-symlinks \"src/**/*.scss\" -c \"pnpm run build\""
+    "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "dependencies": {
     "@gemeente-denhaag/design-tokens": "workspace:*",
