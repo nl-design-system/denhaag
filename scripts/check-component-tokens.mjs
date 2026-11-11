@@ -211,7 +211,7 @@ async function main() {
   const tokenDirectory = path.join(root, 'proprietary/tokens');
   const config = JSON.parse(await readFile(path.join(root, 'style-dictionary.config.json'), 'utf8'));
   const dictionary = await new StyleDictionary({
-    source: config.source.map((pattern) => path.resolve(tokenDirectory, pattern)),
+    source: config.source.map((pattern) => path.resolve(tokenDirectory, pattern).split(path.sep).join('/')),
     platforms: { css: { transforms: config.platforms.css.transforms } },
     log: { verbosity: 'silent', errors: { brokenReferences: 'throw' } },
   }).getPlatformTokens('css');
