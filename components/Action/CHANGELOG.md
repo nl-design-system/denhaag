@@ -1,5 +1,12 @@
 # @gemeente-denhaag/action
 
+## 4.4.4
+
+### Patch Changes
+
+- Updated dependencies [a3eabd8]
+  - @gemeente-denhaag/link@4.2.3
+
 ## 4.4.3
 
 ### Patch Changes

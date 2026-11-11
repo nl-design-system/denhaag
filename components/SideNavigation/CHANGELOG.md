@@ -1,5 +1,12 @@
 # @gemeente-denhaag/side-navigation
 
+## 4.3.1
+
+### Patch Changes
+
+- Updated dependencies [a3eabd8]
+  - @gemeente-denhaag/number-badge@2.2.3
+
 ## 4.3.0
 
 ### Minor Changes
