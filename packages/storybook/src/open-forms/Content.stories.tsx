@@ -1,26 +1,108 @@
 import React from 'react';
-import { Meta, StoryObj } from '@storybook/react-vite';
+import { renderToStaticMarkup } from 'react-dom/server.browser';
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import { Controls, Description, Primary, Stories } from '@storybook/addon-docs/blocks';
 import { SingleFormioComponent } from './StoryUtil';
 
-const meta: Meta = {
+type ContentVariant = 'default' | 'success' | 'info' | 'error' | 'warning';
+
+const toContentHtml = (content: string) =>
+  /<\/?[a-z][^>]*>/i.test(content)
+    ? content
+    : renderToStaticMarkup(<p style={{ whiteSpace: 'pre-line' }}>{content}</p>);
+
+const ContentPreview = ({ html, variant }: { html: string; variant: ContentVariant }) => (
+  <SingleFormioComponent
+    type="content"
+    key="content-preview"
+    label=""
+    extraComponentProperties={{
+      key: 'content-preview',
+      html: toContentHtml(html),
+      customClass: variant === 'default' ? '' : variant,
+    }}
+  />
+);
+
+const meta = {
   id: 'open-forms-content',
   title: 'Open Formulieren/Content',
-  component: SingleFormioComponent,
-  args: {
-    key: 'content',
-    type: 'content',
-    extraComponentProperties: {
-      html: `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Quisque a felis ante. Nunc dictum, <b>dui et scelerisque euismod</b>, ex dui sodales magna,
-    quis vehicula nulla justo sed urna. <i>Integer maximus tempus tellus</i> vel commodo.
-    Orci varius natoque penatibus et magnis <a href="#">dis parturient montes.</a></p>`,
+  component: ContentPreview,
+  tags: ['autodocs'],
+  argTypes: {
+    html: {
+      name: 'Inhoud',
+      description: 'Typ gewone tekst. Regeleinden blijven behouden. HTML-opmaak is optioneel.',
+      control: { type: 'text' },
     },
+    variant: {
+      name: 'Variant',
+      options: ['default', 'success', 'info', 'error', 'warning'],
+      control: {
+        type: 'select',
+        labels: { default: 'Standaard', success: 'Success', info: 'Info', error: 'Error', warning: 'Warning' },
+      },
+    },
+  },
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'Tekstblokken met de lokale Den Haag-styling voor Open Formulieren. Typ gewone tekst bij Inhoud en kies een Variant. U hoeft geen HTML-tags te gebruiken; de tekstkleur en het icoon passen zich automatisch aan. HTML-opmaak blijft optioneel beschikbaar.',
+      },
+      page: () => (
+        <>
+          <Description />
+          <Primary />
+          <Controls />
+          <Stories includePrimary={false} />
+        </>
+      ),
+    },
+  },
+  args: {
+    variant: 'default',
+    html: 'Vul uw gegevens in om de aanvraag te starten.\nU kunt uw antwoorden controleren voordat u de aanvraag verstuurt.',
+  },
+} satisfies Meta<typeof ContentPreview>;
+
+export default meta;
+type Story = StoryObj<typeof meta>;
+
+export const Default: Story = {};
+
+export const Success: Story = {
+  args: {
+    variant: 'success',
+    html: 'Uw gegevens zijn opgeslagen. U kunt verder met de volgende stap.',
   },
 };
 
-export default meta;
-type Story = StoryObj<typeof SingleFormioComponent>;
+export const Info: Story = {
+  args: {
+    variant: 'info',
+    html: 'Houd uw gegevens bij de hand. U heeft deze nodig om het formulier in te vullen.',
+  },
+};
 
-export const Default: Story = {
-  render: (args) => <SingleFormioComponent {...args} />,
+export const Error: Story = {
+  args: {
+    variant: 'error',
+    html: 'Uw aanvraag is niet verstuurd. Probeer het opnieuw.',
+  },
+};
+
+export const Warning: Story = {
+  args: {
+    variant: 'warning',
+    html: 'Controleer uw gegevens voordat u verdergaat. Zorg dat u alle documenten voor uw aanvraag bij de hand heeft.',
+  },
+};
+
+export const WithFormatting: Story = {
+  name: 'Met opmaak (HTML)',
+  args: {
+    variant: 'warning',
+    html: '<p><strong>Controleer uw gegevens voordat u verdergaat.</strong> Zorg dat u de volgende documenten heeft:</p><ul><li>Een geldig identiteitsbewijs</li><li>De bijlagen voor uw aanvraag</li></ul><p>Doorloop daarna deze stappen:</p><ol><li>Vul het formulier in.</li><li>Controleer en verstuur uw aanvraag.</li></ol>',
+  },
 };
