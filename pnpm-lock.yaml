@@ -1522,6 +1522,9 @@ importers:
       '@gemeente-denhaag/number-badge':
         specifier: workspace:*
         version: link:../../components/NumberBadge
+      '@gemeente-denhaag/open-forms':
+        specifier: workspace:*
+        version: link:../open-forms
       '@gemeente-denhaag/orderedlist':
         specifier: workspace:*
         version: link:../../components/OrderedList
