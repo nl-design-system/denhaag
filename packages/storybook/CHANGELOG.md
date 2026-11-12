@@ -1,5 +1,14 @@
 # @gemeente-denhaag/storybook
 
+## 6.2.1
+
+### Patch Changes
+
+- adb0dd4: Add common tokens for color
+- Updated dependencies [adb0dd4]
+- Updated dependencies [a8d018a]
+  - @gemeente-denhaag/design-tokens@1.6.1
+
 ## 6.2.0
 
 ### Minor Changes

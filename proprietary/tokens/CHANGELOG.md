@@ -1,5 +1,12 @@
 # @gemeente-denhaag/design-tokens
 
+## 1.6.1
+
+### Patch Changes
+
+- adb0dd4: Add common tokens for color
+- a8d018a: Removed unused tokens
+
 ## 1.6.0
 
 ### Minor Changes
