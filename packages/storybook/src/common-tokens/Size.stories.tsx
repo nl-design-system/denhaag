@@ -60,7 +60,7 @@ const sizeTokenRows = getTokenRows({
 });
 
 const meta: Meta = {
-  title: 'Common Tokens/Sizes',
+  title: 'Common Tokens/Size',
   tags: ['autodocs', '!dev'],
   parameters: {
     chromatic: { disableSnapshot: true },

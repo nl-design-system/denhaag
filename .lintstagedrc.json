@@ -1,9 +1,9 @@
 {
   "*.md": ["prettier --check"],
   "*.{yaml,yml}": ["prettier --check"],
-  "*.{css,scss}": ["stylelint --allow-empty-input", "prettier --check"],
+  "*.{css,scss}": ["stylelint --config .stylelintrc.staged.json --allow-empty-input", "prettier --check"],
   "*.{js,cjs,mjs,jsx,json,mdx,ts,tsx}": [
-    "eslint --no-error-on-unmatched-pattern --no-warn-ignored",
+    "eslint --config eslint.staged.config.mjs --no-error-on-unmatched-pattern --no-warn-ignored",
     "prettier --check"
   ],
   "package.json": "npmPkgJsonLint --allowEmptyTargets"

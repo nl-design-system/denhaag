@@ -2,7 +2,7 @@
   "nl": {
     "data-badge": {
       "background-color": {
-        "value": "{denhaag.color.grey.100}"
+        "value": "{basis.color.default.bg-hover}"
       },
       "border-color": {
         "value": ""
@@ -14,7 +14,7 @@
         "value": "0"
       },
       "color": {
-        "value": "{denhaag.color.grey.700}"
+        "value": "{basis.color.heading.color}"
       },
       "font-family": {
         "value": "{basis.text.font-family.default}"
@@ -42,34 +42,34 @@
       },
       "neutral": {
         "background-color": {
-          "value": "{denhaag.color.blue.100}"
+          "value": "{basis.color.info.bg-default}"
         },
         "color": {
-          "value": "{denhaag.color.blue.600}"
+          "value": "{basis.color.info.color-subtle}"
         }
       },
       "success": {
         "background-color": {
-          "value": "{denhaag.color.green.100}"
+          "value": "{basis.color.positive.bg-default}"
         },
         "color": {
-          "value": "{denhaag.color.green.600}"
+          "value": "{basis.color.positive.color-subtle}"
         }
       },
       "warning": {
         "background-color": {
-          "value": "{denhaag.color.orange.100}"
+          "value": "{basis.color.warning.bg-default}"
         },
         "color": {
-          "value": "{denhaag.color.orange.700}"
+          "value": "{basis.color.warning.color-document}"
         }
       },
       "error": {
         "background-color": {
-          "value": "{denhaag.color.red.100}"
+          "value": "{basis.color.negative.bg-default}"
         },
         "color": {
-          "value": "{denhaag.color.red.600}"
+          "value": "{basis.color.negative.color-subtle}"
         }
       }
     }

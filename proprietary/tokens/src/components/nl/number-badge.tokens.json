@@ -2,7 +2,7 @@
   "nl": {
     "number-badge": {
       "background-color": {
-        "value": "{denhaag.color.blue.100}"
+        "value": "{basis.color.info.bg-default}"
       },
       "border-color": {
         "value": ""
@@ -14,7 +14,7 @@
         "value": "0"
       },
       "color": {
-        "value": "{denhaag.color.blue.600}"
+        "value": "{basis.color.info.color-subtle}"
       },
       "font-family": {
         "value": "{basis.text.font-family.default}"
