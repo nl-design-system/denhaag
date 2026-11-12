@@ -1,0 +1,107 @@
+@mixin list-view {
+  --denhaag-task-wrapper-height: none;
+  --denhaag-task-wrapper-background-color: none;
+  --denhaag-task-wrapper-padding-block-start: 0px;
+  --denhaag-task-wrapper-border-style: var(--denhaag-task-wrapper-list-border-style);
+  --denhaag-task-wrapper-border-width: var(--denhaag-task-wrapper-list-border-width);
+  --denhaag-task-wrapper-border-color: var(--denhaag-task-wrapper-list-border-color);
+  --denhaag-task-wrapper-before-display: none;
+  --denhaag-task-wrapper-wrapper-gap: var(--denhaag-task-wrapper-list-wrapper-gap);
+  --denhaag-task-wrapper-wrapper-flex-direction: var(--denhaag-task-wrapper-list-wrapper-flex-direction);
+  --denhaag-task-wrapper-wrapper-padding-block-start: var(--denhaag-task-wrapper-list-wrapper-padding-block-start);
+  --denhaag-task-wrapper-wrapper-padding-block-end: var(--denhaag-task-wrapper-list-wrapper-padding-block-end);
+  --denhaag-task-wrapper-wrapper-padding-inline-start: var(--denhaag-task-wrapper-list-wrapper-padding-inline-start);
+  --denhaag-task-wrapper-wrapper-padding-inline-end: var(--denhaag-task-wrapper-list-wrapper-padding-inline-end);
+  --denhaag-task-wrapper-background-background-color: none;
+  --denhaag-task-wrapper-background-hover-transform: none;
+  --denhaag-task-wrapper-background-hover-background-color: var(
+    --denhaag-task-wrapper-list-background-hover-background-color
+  );
+  --denhaag-task-wrapper-title-color: var(--denhaag-task-wrapper-list-title-color);
+  --denhaag-task-wrapper-title-font-size: var(--denhaag-task-wrapper-list-title-font-size);
+  --denhaag-task-wrapper-subtitle-color: var(--denhaag-task-wrapper-list-subtitle-color);
+  --denhaag-task-wrapper-footer-gap: var(--denhaag-task-wrapper-list-footer-gap);
+  --denhaag-task-wrapper-context-color: var(--denhaag-task-wrapper-list-context-color);
+}
+
+.denhaag-task-wrapper {
+  width: 100%;
+  height: var(--denhaag-task-wrapper-height);
+  background: var(--denhaag-task-wrapper-background-color);
+  padding-block-start: var(--denhaag-task-wrapper-padding-block-start);
+  border-radius: var(--denhaag-task-wrapper-border-radius);
+  border-bottom-style: var(--denhaag-task-wrapper-border-style, none);
+  border-bottom-width: var(--denhaag-task-wrapper-border-width, 0);
+  border-bottom-color: var(--denhaag-task-wrapper-border-color, none);
+  position: relative;
+  box-sizing: border-box;
+
+  &::before {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: var(--denhaag-task-wrapper-before-display, block);
+    width: 50%;
+    height: 20px;
+    content: "";
+    border-radius: 0 var(--denhaag-task-wrapper-border-radius) 0 0;
+    background: var(--denhaag-task-wrapper-paper-color);
+  }
+
+  @media (width <= 480px) {
+    @include list-view;
+
+    --denhaag-task-wrapper-list-wrapper-flex-direction: column;
+  }
+
+  &--list {
+    @include list-view;
+  }
+
+  &--archived {
+    --denhaag-task-wrapper-background-color: var(--denhaag-task-wrapper-archived-background-color);
+    --denhaag-task-wrapper-color: var(--denhaag-task-wrapper-archived-color);
+    --denhaag-task-wrapper-background-background-color: var(
+      --denhaag-task-wrapper-archived-background-background-color
+    );
+    --denhaag-task-wrapper-title-color: var(--denhaag-task-wrapper-archived-title-color);
+    --denhaag-task-wrapper-subtitle-color: var(--denhaag-task-wrapper-archived-subtitle-color);
+    --denhaag-task-wrapper-context-color: var(--denhaag-task-wrapper-archived-context-color);
+    --denhaag-task-wrapper-action-color: var(--denhaag-task-wrapper-archived-action-color);
+    --denhaag-task-wrapper-action-active-color: var(--denhaag-task-wrapper-archived-action-color);
+  }
+
+  &--focus,
+  &:focus-within {
+    outline: var(--common-border-width-xl) var(--denhaag-border-style-dashed) var(--denhaag-color-ocher-5);
+  }
+
+  &--hover,
+  &:hover,
+  &:hover:focus {
+    cursor: pointer;
+  }
+
+  &--hover,
+  &--focus,
+  &:hover,
+  &:focus-within {
+    &::before {
+      top: 12px;
+      transform: rotate(-2.45deg);
+      transform-origin: right;
+    }
+
+    .denhaag-task-wrapper__background {
+      transform: var(--denhaag-task-wrapper-background-hover-transform, rotateX(-20deg));
+      background-color: var(
+        --denhaag-task-wrapper-background-hover-background-color,
+        var(--denhaag-task-wrapper-background-background-color)
+      );
+    }
+
+    .denhaag-task-wrapper__action {
+      color: var(--denhaag-task-wrapper-action-active-color);
+    }
+  }
+}
