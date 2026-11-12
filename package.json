@@ -49,7 +49,7 @@
     "@rollup/plugin-commonjs": "29.0.3",
     "@rollup/plugin-node-resolve": "16.0.3",
     "@svgr/rollup": "8.1.0",
-    "@types/node": "26.6.5",
+    "@types/node": "24.19.2",
     "@types/react": "19.3.0",
     "@typescript-eslint/eslint-plugin": "8.71.2",
     "@typescript-eslint/parser": "8.71.2",
@@ -92,7 +92,7 @@
     "uuid": "14.0.3"
   },
   "engines": {
-    "node": ">=24 <=25",
+    "node": "^24.22.3 || ^26.13.1",
     "pnpm": "^11.4.0"
   },
   "packageManager": "pnpm@11.28.2+sha512.755ce2fe3c05bfd7bb412b42aff3c5c55cd38c529c6eca810475497ae36746c571e4b6e1814e6e7e4b97d7ee864b8a0e44673c3b297a50e0ac28771c5ce15d27"
