@@ -192,6 +192,12 @@
   --utrecht-link-text-decoration: none;
 }
 
+@media (width <= 768px) {
+  .denhaag-theme .openforms-title.utrecht-heading-1 {
+    font-size: var(--utrecht-heading-2-font-size);
+  }
+}
+
 .openforms-formio-content {
   display: grid;
   grid-template-columns: auto 1fr;
