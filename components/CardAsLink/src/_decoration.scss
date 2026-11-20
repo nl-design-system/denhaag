@@ -1,0 +1,78 @@
+.denhaag-card-as-link__decoration {
+  display: var(--denhaag-card-as-link-decoration-display, block);
+  position: relative;
+  width: 100%;
+  height: 24px;
+  overflow: hidden;
+  border-start-start-radius: var(--denhaag-card-as-link-border-radius);
+  border-start-end-radius: var(--denhaag-card-as-link-border-radius);
+  background: var(--denhaag-card-as-link-decoration-background-color);
+}
+
+// The 'paper' element, is always white and makes the remaining decoration-block look like a line.
+.denhaag-card-as-link__decoration::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+
+  // width: 108px; = too narrow for wider screens
+  width: 35%;
+  height: 16px;
+  right: 8px;
+  top: 8px;
+  background: var(--denhaag-card-as-link-decoration-paper-background-color);
+  border-radius: var(--denhaag-card-as-link-decoration-paper-border-radius);
+}
+
+// The skewed element, needs change color same as the base.
+// The @mixin "case-default" sets --denhaag-card-as-link-background-color to var(--denhaag-card-as-link-case-background-color)
+.denhaag-card-as-link__decoration::after {
+  content: "";
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-end: calc(33% - 6px);
+  width: 48px;
+  height: 100%;
+  background: var(--denhaag-card-as-link-background-color);
+  transform: skewX(20deg);
+  transform-origin: top;
+}
+
+// Plan's decoration is a completely different shape: a "clipboard clip"
+// made of two small rectangles poking out above the top edge, both the
+// same single color (unlike Case's decoration.
+// This overrides the generic .denhaag-card-as-link__decoration rules
+// above by scoping to the outer --plan class.
+// Decoration stays a plain, variant-
+// unaware element, and the outer card class (already present) decides
+// which shape shows.
+.denhaag-card-as-link--plan .denhaag-card-as-link__decoration {
+  height: 8px;
+  overflow: visible !important;
+  background: none;
+
+  // Large block for the Clip
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 40%;
+    height: 8px;
+    background: var(--denhaag-card-as-link-decoration-clip-color);
+    border-radius: 4px 4px 0 0;
+  }
+
+  // Small block for the Clip
+  &::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 42%;
+    width: 16%;
+    height: 8px;
+    background: var(--denhaag-card-as-link-decoration-clip-color);
+    border-radius: 4px 4px 0 0;
+    transform: none;
+  }
+}
