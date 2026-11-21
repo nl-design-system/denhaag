@@ -9,6 +9,7 @@ import { NumberBadge } from '@gemeente-denhaag/number-badge';
 
 export interface SideNavigationTreeItemProps {
   href: string;
+  onClick?: () => void;
   label: string;
   icon: ReactNode;
   current?: boolean;
@@ -46,7 +47,12 @@ export const SideNavigationTreeItem = (props: SideNavigationTreeItemProps) => {
   return (
     <SideNavigationItem>
       <span className="denhaag-side-navigation__tree-item-label-wrapper">
-        <SideNavigationLink href={props.href} current={props.current} onKeyDown={handleEscapeOnLink}>
+        <SideNavigationLink
+          href={props.href}
+          current={props.current}
+          onKeyDown={handleEscapeOnLink}
+          onClick={props.items?.length ? togglePanel : props.onClick}
+        >
           {props.icon}
           {props.counter && props.counter > 0 ? (
             <SideNavigationLinkLabel>
