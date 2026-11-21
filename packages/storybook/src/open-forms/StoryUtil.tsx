@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Form, Formio, Templates } from 'react-formio';
 import OpenFormsModule from '@open-formulieren/sdk/formio-module';
 import OFLibrary from '@open-formulieren/sdk/formio-templates';
-import '@open-formulieren/sdk/styles.css';
+import './styles';
 
 export type FormConfiguration = { type: string; components: { type: string; key: string; label: string }[] };
 
