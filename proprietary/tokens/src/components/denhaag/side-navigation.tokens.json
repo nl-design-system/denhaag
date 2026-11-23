@@ -7,9 +7,6 @@
       "flex-direction": {
         "value": "column"
       },
-      "min-width": {
-        "value": "14.5rem"
-      },
       "row-gap": {
         "value": "{basis.space.block.3xl}"
       },

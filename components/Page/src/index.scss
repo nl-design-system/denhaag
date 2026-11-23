@@ -21,7 +21,8 @@
     }
 
     &__main {
-      flex-grow: 1;
+      flex: 1 1 0;
+      min-inline-size: 0;
 
       @media (width <= 1023px) {
         max-width: 100%;
