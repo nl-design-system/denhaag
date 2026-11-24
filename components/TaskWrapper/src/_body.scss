@@ -1,0 +1,21 @@
+.denhaag-task-wrapper__body {
+  display: block;
+
+  // Always show border
+  border-block-start: var(--denhaag-task-wrapper-border-width) var(--denhaag-task-wrapper-border-style)
+    var(--denhaag-task-wrapper-border-color);
+  padding-block-start: var(--denhaag-task-wrapper-body-padding-block-start);
+  padding-block-end: var(--denhaag-task-wrapper-body-padding-block-end);
+  padding-inline-start: var(--denhaag-task-wrapper-body-padding-inline-start);
+  padding-inline-end: var(--denhaag-task-wrapper-body-padding-inline-end);
+
+  // ActionSingle draws a border below itself, but never above itself. This margin solves the double border problem
+  // (it pulls the Body over the wrapper's own bottom border, which `overflow: hidden` on the wrapper then clips).
+  margin-block-end: calc(-1 * var(--denhaag-task-wrapper-border-width));
+}
+
+// The Body is always rendered, so a back-end can fill it later.
+// If body is empty it must not show its border or take up any space.
+.denhaag-task-wrapper__body:empty {
+  display: none;
+}

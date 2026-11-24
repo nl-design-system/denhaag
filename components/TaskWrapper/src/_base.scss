@@ -1,0 +1,17 @@
+.denhaag-task-wrapper {
+  display: block;
+  box-sizing: border-box;
+  background-color: var(--denhaag-task-wrapper-background-color);
+  border-style: var(--denhaag-task-wrapper-border-style);
+  border-width: var(--denhaag-task-wrapper-border-width);
+  border-color: var(--denhaag-task-wrapper-border-color);
+  border-radius: var(--denhaag-task-wrapper-border-radius);
+  padding-block-start: var(--denhaag-task-wrapper-padding-block-start);
+  padding-block-end: var(--denhaag-task-wrapper-padding-block-end);
+  padding-inline-start: var(--denhaag-task-wrapper-padding-inline-start);
+  padding-inline-end: var(--denhaag-task-wrapper-padding-inline-end);
+
+  // Clips the children to the rounded corners, so a task with its own
+  // background or border will not stick out past the wrapper's border-radius.
+  overflow: hidden;
+}

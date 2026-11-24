@@ -1,0 +1,78 @@
+{
+  "denhaag": {
+    "task-wrapper": {
+      "background-color": {
+        "value": "transparent"
+      },
+      "border-color": {
+        "value": "{basis.color.default.border-default}"
+      },
+      "border-style": {
+        "value": "solid"
+      },
+      "border-width": {
+        "value": "{basis.border-width.md}"
+      },
+      "border-radius": {
+        "value": "3px"
+      },
+      "padding-block-start": {
+        "value": "{basis.space.none}"
+      },
+      "padding-block-end": {
+        "value": "{basis.space.none}"
+      },
+      "padding-inline-start": {
+        "value": "{basis.space.none}"
+      },
+      "padding-inline-end": {
+        "value": "{basis.space.none}"
+      },
+      "header": {
+        "padding-block-start": {
+          "value": "{basis.space.block.3xl}"
+        },
+        "padding-block-end": {
+          "value": "{basis.space.block.3xl}"
+        },
+        "padding-inline-start": {
+          "value": "{basis.space.inline.3xl}"
+        },
+        "padding-inline-end": {
+          "value": "{basis.space.inline.3xl}"
+        },
+        "row-gap": {
+          "value": "{basis.space.row.sm}"
+        }
+      },
+      "body": {
+        "padding-block-start": {
+          "value": "{basis.space.none}"
+        },
+        "padding-block-end": {
+          "value": "{basis.space.none}"
+        },
+        "padding-inline-start": {
+          "value": "{basis.space.none}"
+        },
+        "padding-inline-end": {
+          "value": "{basis.space.none}"
+        }
+      },
+      "pre-heading": {
+        "color": {
+          "value": "{basis.color.default.color-default}"
+        },
+        "font-family": {
+          "value": "{basis.text.font-family.default}"
+        },
+        "font-size": {
+          "value": "{basis.text.font-size.md}"
+        },
+        "line-height": {
+          "value": "{basis.text.line-height.md}"
+        }
+      }
+    }
+  }
+}
