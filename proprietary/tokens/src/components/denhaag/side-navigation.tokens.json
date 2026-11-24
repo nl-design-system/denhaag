@@ -7,6 +7,12 @@
       "flex-direction": {
         "value": "column"
       },
+      "min-inline-size": {
+        "value": "14.5rem"
+      },
+      "max-inline-size": {
+        "value": "14.5rem"
+      },
       "row-gap": {
         "value": "{basis.space.block.3xl}"
       },

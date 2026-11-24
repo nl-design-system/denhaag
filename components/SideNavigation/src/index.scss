@@ -2,8 +2,8 @@
   display: var(--denhaag-side-navigation-display);
   flex-direction: var(--denhaag-side-navigation-flex-direction);
   row-gap: var(--denhaag-side-navigation-row-gap);
-  min-inline-size: 0;
-  max-inline-size: 100%;
+  min-inline-size: var(--denhaag-side-navigation-min-inline-size);
+  max-inline-size: var(--denhaag-side-navigation-max-inline-size);
 
   @media (width <= 1023px) {
     display: var(--denhaag-side-navigation-mobile-display);
