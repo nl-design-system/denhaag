@@ -1,5 +1,11 @@
 # @gemeente-denhaag/side-navigation
 
+## 4.3.2
+
+### Patch Changes
+
+- 8f6f7fd: Fix: side navigation wrap text
+
 ## 4.3.1
 
 ### Patch Changes

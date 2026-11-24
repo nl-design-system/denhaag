@@ -1,5 +1,11 @@
 # @gemeente-denhaag/page
 
+## 2.1.3
+
+### Patch Changes
+
+- 8f6f7fd: Fix: side navigation wrap text
+
 ## 2.1.2
 
 ### Patch Changes

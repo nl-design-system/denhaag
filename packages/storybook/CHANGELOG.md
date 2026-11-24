@@ -1,5 +1,14 @@
 # @gemeente-denhaag/storybook
 
+## 6.2.2
+
+### Patch Changes
+
+- Updated dependencies [8f6f7fd]
+  - @gemeente-denhaag/design-tokens@1.6.2
+  - @gemeente-denhaag/page@2.1.3
+  - @gemeente-denhaag/side-navigation@4.3.2
+
 ## 6.2.1
 
 ### Patch Changes
